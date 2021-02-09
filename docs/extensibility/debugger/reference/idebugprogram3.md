@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9da63d54f64a4ef7592fdbc4d36e2b31220f82df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d22a58021a744cc71b8df3acb8e577d853aa2829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889993"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende l' [esecuzione](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornendo informazioni sul thread.
@@ -46,10 +46,10 @@ IDebugProgram3 : IDebugProgram3
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un programma è un contenitore di thread in esecuzione in un'architettura di runtime particolare, mentre un processo è costituito da uno o più programmi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)

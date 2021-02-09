@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c08d7df4a6b05be489f6b9ab06569c085f3b1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5156f905eb5891be64d0718e8aeff4c3c404663b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891254"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Questo metodo restituisce un servizio richiesto.
@@ -28,20 +28,20 @@ Questo metodo restituisce un servizio richiesto.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetEEService(
-   [in] GUID        vendor,
-   [in] GUID        language,
-   [in] GUID        iid,
-   [out] IUnknown** ppService
+HRESULT GetEEService(
+   [in] GUID        vendor,
+   [in] GUID        language,
+   [in] GUID        iid,
+   [out] IUnknown** ppService
 );
 ```
 
 ```csharp
-Int GetEEService(
-   Guid       vendor,
-   Guid       language,
-   Guid       iid,
-   out object ppService
+Int GetEEService(
+   Guid       vendor,
+   Guid       language,
+   Guid       iid,
+   out object ppService
 );
 ```
 
@@ -61,10 +61,10 @@ out Interfaccia per il servizio richiesto.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Passare l'oggetto `IID` per l'interfaccia [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) ( `IID_IEEVisualizerServiceProvider` ) per verificare se il servizio del Visualizzatore di tipi è disponibile. In tal caso, l'analizzatore di espressioni può ottenere l'interfaccia [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) per supportare i visualizzatori di tipi. Per informazioni dettagliate, vedere [visualizzazione e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

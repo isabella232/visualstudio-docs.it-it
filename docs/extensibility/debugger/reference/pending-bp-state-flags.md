@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6da1a956ac958a95dd0c433283a71af0a9b29d1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f603b7a1660f9913ce10b2ecf07adb53f9279d48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890006"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 Specifica i flag di stato del punto di interruzione in sospeso.
@@ -28,7 +28,7 @@ Specifica i flag di stato del punto di interruzione in sospeso.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-enum enum_PENDING_BP_STATE_FLAGS { 
+enum enum_PENDING_BP_STATE_FLAGS { 
    PBPSF_NONE        = 0x0000,
    PBPSF_VIRTUALIZED = 0x0001
 };
@@ -36,7 +36,7 @@ typedef DWORD PENDING_BP_STATE_FLAGS;
 ```
 
 ```csharp
-public enum enum_PENDING_BP_STATE_FLAGS { 
+public enum enum_PENDING_BP_STATE_FLAGS { 
    PBPSF_NONE        = 0x0000,
    PBPSF_VIRTUALIZED = 0x0001
 };
@@ -47,7 +47,7 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 
  `PBPSF_VIRTUALIZED` Specifica un punto di interruzione virtualizzato in sospeso, che deve essere associato ogni volta che viene caricato un nuovo codice.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Utilizzato per il `flags` membro della struttura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -57,6 +57,6 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

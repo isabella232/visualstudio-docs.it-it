@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29ac287462149a20f52a1affdeab7fa6b8333711
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d25068b71689ffbc9e472addbd6ca3663db267c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891280"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 Indica il protocollo utilizzato per la comunicazione tra un server di debug e il pacchetto di debug (DE).
@@ -28,26 +28,26 @@ Indica il protocollo utilizzato per la comunicazione tra un server di debug e il
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-typedef enum tagCONNECTION_PROTOCOL {
-    CONNECTION_NONE    = 0,
-    CONNECTION_UNKNOWN = 1,
-    CONNECTION_LOCAL   = 2,
-    CONNECTION_PIPE    = 3,
-    CONNECTION_TCPIP   = 4,
-    CONNECTION_HTTP    = 5,
-    CONNECTION_OTHER   = 6
-} CONNECTION_PROTOCOL;
+typedef enum tagCONNECTION_PROTOCOL {
+    CONNECTION_NONE    = 0,
+    CONNECTION_UNKNOWN = 1,
+    CONNECTION_LOCAL   = 2,
+    CONNECTION_PIPE    = 3,
+    CONNECTION_TCPIP   = 4,
+    CONNECTION_HTTP    = 5,
+    CONNECTION_OTHER   = 6
+} CONNECTION_PROTOCOL;
 ```
 
 ```csharp
-public enum CONNECTION_PROTOCOL {
-    CONNECTION_NONE    = 0,
-    CONNECTION_UNKNOWN = 1,
-    CONNECTION_LOCAL   = 2,
-    CONNECTION_PIPE    = 3,
-    CONNECTION_TCPIP   = 4,
-    CONNECTION_HTTP    = 5,
-    CONNECTION_OTHER   = 6
+public enum CONNECTION_PROTOCOL {
+    CONNECTION_NONE    = 0,
+    CONNECTION_UNKNOWN = 1,
+    CONNECTION_LOCAL   = 2,
+    CONNECTION_PIPE    = 3,
+    CONNECTION_TCPIP   = 4,
+    CONNECTION_HTTP    = 5,
+    CONNECTION_OTHER   = 6
 };
 ```
 
@@ -73,7 +73,7 @@ La connessione Usa HTTP (tramite un server Web).
 `CONNECTION_OTHER`\
 È stato stabilito un altro tipo di connessione (questo valore non è attualmente in uso).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questi valori vengono restituiti dal metodo [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -83,6 +83,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56b635db6a8b0c24e2604940fe7500bb8f769a1b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 9c10c2bc69086e3c98633ba746c1e6fc8d7f2a20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889694"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estendere il nodo connessioni di SharePoint in Esplora server
   In Visual Studio è possibile connettersi ai siti di SharePoint locali nel computer di sviluppo usando il nodo **connessioni di SharePoint** nella finestra **Esplora server** . In questo nodo vengono visualizzati molti dei componenti dei siti di SharePoint locali in una visualizzazione struttura ad albero gerarchica. Ad esempio, è possibile visualizzare gli elenchi, le raccolte documenti e i tipi di contenuto nei siti locali. Per ulteriori informazioni sull'utilizzo di **Esplora server** per connettersi ai siti di SharePoint locali, vedere [Browse SharePoint connections using Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -69,7 +69,7 @@ ms.locfileid: "94672561"
 
  Per altre informazioni sull'uso della <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà, vedere [associare dati personalizzati con le estensioni degli strumenti di SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: estendere Esplora server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Procedura: estendere un nodo SharePoint in Esplora server](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Procedura: aggiungere un nodo SharePoint personalizzato a Esplora server](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

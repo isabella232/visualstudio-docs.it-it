@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 541f8b51d4ce56b167abd3ecdb28d08bec0c02c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891267"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 Specifica il tipo di nome dei file da recuperare.
@@ -74,7 +74,7 @@ Specifica un titolo del documento, se disponibile.
 `GN_STARTPAGEURL`\
 Ottiene l'URL della pagina iniziale per i processi.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questi valori vengono passati come parametri ai metodi [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) per specificare il tipo di nome da restituire.
 
 ## <a name="requirements"></a>Requisiti
@@ -84,7 +84,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)
 - [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7241a574dc8ac8531c2eb4d88eddb1cf047a80d6
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: fa2cc2555f87d1781712e60463401a38f843635e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889928"
 ---
 # <a name="go-to-line-dialog-box"></a>Vai alla riga (finestra di dialogo)
 
@@ -32,7 +32,7 @@ La finestra di dialogo **Vai alla riga** consente di spostarsi su una riga speci
 
 Nella casella **numero riga (1- \<n> )** immettere il numero della riga nel documento attivo in cui si desidera spostarsi. Il numero immesso deve essere compreso tra 1 e l'ultimo numero di riga nel documento corrente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Trovare codice con i comandi Vai a](../../ide/go-to.md)
 - [Impostare segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)

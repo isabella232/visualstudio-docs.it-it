@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b8725a6336218bdac413b12a20ff201dd0c287
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6b63bbd3396e0a4119e59bd47bde31459b3d2145
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890513"
 ---
 # <a name="visible-timeline-profile"></a>Profilo cronologia visibile
 Il profilo cronologia visibile per la visualizzazione dei blocchi dei thread fornisce informazioni statistiche e collegamenti ai report. Quando si esegue lo zoom avanti o indietro oppure si nascondono o si visualizzano canali, i numeri nella legenda attiva cambiano per riflettere gli elementi presenti nella visualizzazione. Per visualizzare un report su un elemento nella legenda, fare clic sull'elemento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

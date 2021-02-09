@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e018631e24cf7e678072b6b54183fd3c619dc4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890331"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag utilizzato da comandi specifici
 Il comportamento di un numero di funzioni nell'API del plug-in del controllo del codice sorgente può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag. Le varie flag utilizzate dall'API del plug-in del controllo del codice sorgente sono descritte in questo argomento, raggruppate in base alla funzione che le utilizza.
@@ -25,14 +25,14 @@ Il comportamento di un numero di funzioni nell'API del plug-in del controllo del
 ## <a name="checked-out-flag"></a>Flag Estratto
  Questo flag può essere impostato sia per [SccAdd](../extensibility/sccadd-function.md) che per [SccCheckin](../extensibility/scccheckin-function.md).
 
-|Flag|valore|Description|
+|Flag|valore|Descrizione|
 |----------|-----------|-----------------|
 |`SCC_KEEP_CHECKEDOUT`|0x1000|Lasciare il file estratto.|
 
 ## <a name="add-flags"></a>Aggiungi flag
  Questi flag vengono usati da [SccAdd](../extensibility/sccadd-function.md).
 
-|Flag|valore|Description|
+|Flag|valore|Descrizione|
 |----------|-----------|-----------------|
 |`SCC_FILETYPE_AUTO`|0x00|È previsto che il plug-in del controllo del codice sorgente rilevi automaticamente se il file è di tipo text o Binary.|
 |`SCC_FILETYPE_TEXT`|0x01|Il tipo di file è testo.|
@@ -42,7 +42,7 @@ Il comportamento di un numero di funzioni nell'API del plug-in del controllo del
 ## <a name="diff-flags"></a>Flag diff
  [SccDiff](../extensibility/sccdiff-function.md) utilizza questi flag per definire l'ambito di un'operazione diff. I `SCC_DIFF_QD_xxx` flag si escludono a vicenda. Se viene specificato uno di essi, non verrà fornito alcun feedback visivo. In una "diff rapido" (QD), il plug-in non determina come il file è diverso, solo se è diverso. Se non viene specificato alcun flag, viene eseguita una "diff visiva"; le differenze di file dettagliate vengono calcolate e visualizzate. Se la richiesta non è supportata, il plug-in passa a quello più prossimo. Se, ad esempio, l'IDE richiede un checksum e il plug-in non lo supporta, il plug-in esegue un controllo del contenuto completo (ancora molto più veloce rispetto a una visualizzazione visiva).
 
-|Flag|valore|Description|
+|Flag|valore|Descrizione|
 |----------|-----------|-----------------|
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignora differenze tra maiuscole e minuscole.|
 |`SCC_DIFF_IGNORESPACE`|0x0004|Ignora le differenze di spazio vuoto. **Nota:**  I `SCC_DIFF_IGNORECASE` `SCC_DIFF_IGNORESPACE` flag e sono facoltativi flag.|
@@ -54,14 +54,14 @@ Il comportamento di un numero di funzioni nell'API del plug-in del controllo del
 ## <a name="populatelist-flag"></a>Flag popolamento
  Questo flag viene usato da [SccPopulateList](../extensibility/sccpopulatelist-function.md) nel `fOptions` parametro.
 
-|Flag|valore|Description|
+|Flag|valore|Descrizione|
 |----------|-----------|-----------------|
 |`SCC_PL_DIR`|0x00000001L|L'IDE passa le directory, non i file.|
 
 ## <a name="populatedirlist-flags"></a>Flag PopulateDirList
  Questi flag vengono usati da [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) nel `fOptions` parametro.
 
-|Valore dell'opzione|Valore|Description|
+|Valore dell'opzione|Valore|Descrizione|
 |------------------|-----------|-----------------|
 |SCC_PDL_ONELEVEL|0x0000|Esaminare solo un livello di directory per le directory (impostazione predefinita).|
 |SCC_PDL_RECURSIVE|0x0001|Esaminare in modo ricorsivo tutte le directory in ogni directory specificata.|
@@ -70,7 +70,7 @@ Il comportamento di un numero di funzioni nell'API del plug-in del controllo del
 ## <a name="openproject-flags"></a>Flag OpenProject
  Questi flag vengono usati da [SccOpenProject](../extensibility/sccopenproject-function.md) nel `dwFlags` parametro.
 
-|Valore dell'opzione|Valore|Description|
+|Valore dell'opzione|Valore|Descrizione|
 |------------------|-----------|-----------------|
 |SCC_OP_CREATEIFNEW|0x00000001L|Se il progetto non esiste nel controllo del codice sorgente, crearlo. Se questo flag non è impostato, richiedere all'utente il progetto di creare (a meno che non `SCC_OP_SILENTOPEN` sia specificato il flag).|
 |SCC_OP_SILENTOPEN|0x00000002L|Non richiedere all'utente di creare un progetto; Basta restituire `SCC_E_UNKNOWNPROJECT` .|
@@ -78,7 +78,7 @@ Il comportamento di un numero di funzioni nell'API del plug-in del controllo del
 ## <a name="get-flags"></a>Ottenere i flag
  Questi flag vengono usati da [SccGet](../extensibility/sccget-function.md) e [SccCheckout](../extensibility/scccheckout-function.md).
 
-|Flag|valore|Description|
+|Flag|valore|Descrizione|
 |----------|-----------|-----------------|
 |`SCC_GET_ALL`|0x00000001L|L'IDE passa le directory e non i file: recuperare tutti i file in queste directory.|
 |`SCC_GET_RECURSIVE`|0x00000002L|L'IDE passa le directory: ottenere queste directory e tutte le relative sottodirectory.|
@@ -86,7 +86,7 @@ Il comportamento di un numero di funzioni nell'API del plug-in del controllo del
 ## <a name="noption-values"></a>valori nOption
  Questi flag vengono usati da [SccSetOption](../extensibility/sccsetoption-function.md) nel `nOption` parametro.
 
-|Flag|valore|Description|
+|Flag|valore|Descrizione|
 |----------|-----------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Impostare lo stato della coda degli eventi.|
 |`SCC_OPT_USERDATA`|0x00000002L|Specificare i dati utente per `SCC_OPT_NAMECHANGEPFN` .|
@@ -98,7 +98,7 @@ Il comportamento di un numero di funzioni nell'API del plug-in del controllo del
 ## <a name="dwval-bitflags"></a>flag dwVal
  Questi flag vengono usati da [SccSetOption](../extensibility/sccsetoption-function.md) nel `dwVal` parametro.
 
-|Flag|valore|Description|Usato per `nOption` valore|
+|Flag|valore|Descrizione|Usato per `nOption` valore|
 |----------|-----------|-----------------|-----------------------------|
 |`SCC_OPT_EQ_DISABLE`|0x00L|Sospende l'attività della coda di eventi.|`SCC_OPT_EVENTQUEUE`|
 |`SCC_OPT_EQ_ENABLE`|0x01L|Abilita la registrazione della coda degli eventi.|`SCC_OPT_EVENTQUEUE`|
@@ -107,5 +107,5 @@ Il comportamento di un numero di funzioni nell'API del plug-in del controllo del
 |`SCC_OPT_SCO_NO`|0L|Predefinita OK per estrarre dall'interfaccia utente del plug-in. la directory di lavoro è impostata.|`SCC_OPT_SCCCHECKOUTONLY`|
 |`SCC_OPT_SCO_YES`|1L|Nessun checkout dell'interfaccia utente plug-in, nessuna directory di lavoro.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

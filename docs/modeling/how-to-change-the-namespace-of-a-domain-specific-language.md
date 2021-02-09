@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29835e993d287c981ad1c4014af3dc276891af5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890500"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procedura: modificare lo spazio dei nomi di un linguaggio specifico di dominio
 
@@ -25,13 +25,13 @@ ms.locfileid: "90809440"
 
 ## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Per modificare lo spazio dei nomi di un linguaggio specifico di dominio
 
-1. In **DSL Explorer**selezionare il nodo **DSL** .
+1. In **DSL Explorer** selezionare il nodo **DSL** .
 
 2. Nella finestra **Proprietà** modificare la proprietà **spazio dei nomi** .
 
 3. Salvare la soluzione e trasformare i modelli.
 
-4. Scegliere **Proprietà DSL**dal menu **progetto** .
+4. Scegliere **Proprietà DSL** dal menu **progetto** .
 
    Verranno visualizzate le proprietà del progetto.
 
@@ -49,12 +49,12 @@ ms.locfileid: "90809440"
 
 10. Reimpostare l'istanza sperimentale di Visual Studio.
 
-    1. Eliminare **\Users \\ **_{Your Name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**.
+    1. Eliminare **\Users \\**_{Your Name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**.
 
-    2. Dal menu **Start** di Windows scegliere **tutti i programmi**  >  **Microsoft Visual Studio 2010**  >  **strumenti**SDK  >  **Reimposta l'istanza sperimentale**.
+    2. Dal menu **Start** di Windows scegliere **tutti i programmi**  >  **Microsoft Visual Studio 2010**  >  **strumenti** SDK  >  **Reimposta l'istanza sperimentale**.
 
-11. Scegliere **Ricompila soluzione**dal menu **Compila** .
+11. Scegliere **Ricompila soluzione** dal menu **Compila** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Glossario degli strumenti del linguaggio specifico di dominio](/previous-versions/bb126564(v=vs.100))

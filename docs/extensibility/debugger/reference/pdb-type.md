@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f736d7d9b190fc46945e2f4f7c309b88c3e851f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df6a41801f4cce272d896776745ac0cc507d0e38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890019"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
@@ -44,7 +44,7 @@ public struct PDB_TYPE {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
 `ulAppDomainID`\
 ID dell'applicazione da cui è arrivato il simbolo. Viene utilizzato per identificare in modo univoco un'istanza dell'applicazione.
@@ -55,7 +55,7 @@ GUID del modulo che contiene questo campo.
 `symid`\
 ID del simbolo che corrisponde a questo campo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Questa struttura viene visualizzata come parte dell'Unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il `dwKind` campo della `TYPE_INFO` struttura è impostato su `TYPE_KIND_PDB` (un valore dell'enumerazione [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
@@ -67,7 +67,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

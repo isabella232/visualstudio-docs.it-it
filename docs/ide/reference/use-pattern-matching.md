@@ -1,22 +1,22 @@
 ---
-title: Usa criteri di ricerca
+title: Usa i criteri di ricerca
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8cafcb7e4e108258ddfb274ba957024b92fadb01
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 89369eeb07594a9dcac3f0687a6b957adaddec09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889798"
 ---
-# <a name="use-pattern-matching"></a>Usa criteri di ricerca
+# <a name="use-pattern-matching"></a>Usa i criteri di ricerca
 
 Questo refactoring si applica a:
 
@@ -36,8 +36,8 @@ Questo refactoring si applica a:
 
 3. Selezionare **Usa i criteri di ricerca**.
 
-    ![Crea classe astratta](media/use-pattern-matching-not-syntax.png)
+    ![Impostare una classe come astratta](media/use-pattern-matching-not-syntax.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

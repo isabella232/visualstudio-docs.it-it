@@ -23,15 +23,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f05e2035338ea4c2d0e45bb9d135d618b938e4ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889538"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto
   Tutti gli elementi del progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispongono di proprietà che è possibile utilizzare per fornire dati aggiuntivi quando il progetto viene distribuito in SharePoint. Di seguito sono riportate le proprietà:

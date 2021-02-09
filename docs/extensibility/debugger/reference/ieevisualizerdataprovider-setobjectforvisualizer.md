@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50d68b5cdb7399dc391ef90150f0b6a156783301
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718085"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890838"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Questo metodo modifica l'oggetto rappresentato dal visualizzatore.
@@ -28,18 +28,18 @@ Questo metodo modifica l'oggetto rappresentato dal visualizzatore.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT SetObjectForVisualizer(
-   IDebugObject*  pNewObject,
-   BSTR*          error,
-   IDebugObject** pException
+HRESULT SetObjectForVisualizer(
+   IDebugObject*  pNewObject,
+   BSTR*          error,
+   IDebugObject** pException
 );
 ```
 
 ```csharp
-int SetObjectForVisualizer(
-   IDebugObject     pNewObject,
-   out string       error,
-   out IDebugObject pException
+int SetObjectForVisualizer(
+   IDebugObject     pNewObject,
+   out string       error,
+   out IDebugObject pException
 );
 ```
 
@@ -56,9 +56,9 @@ out Se si è verificato un errore, questo oggetto contiene le informazioni sull'
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Spetta all'implementatore determinare il modo in cui vengono restituite le informazioni sugli errori. Tuttavia, è possibile che alcuni chiamanti possano controllare solo se è stato restituito un oggetto eccezione per sapere che si è verificato un errore, pertanto questo metodo deve restituire sempre un oggetto eccezione se si è verificato un errore. È necessario specificare anche la stringa di errore nel caso in cui il chiamante voglia utilizzarlo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

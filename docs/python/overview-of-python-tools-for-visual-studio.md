@@ -6,17 +6,17 @@ ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0283cb4332e9137550b74a85c38d7963f3c77a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890474"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -63,7 +63,7 @@ Per altre informazioni:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Modifica avanzata, IntelliSense e comprensione del codice
 
-Visual Studio mette a disposizione un editor Python di prima classe, con funzionalità di colorazione della sintassi, completamento automatico in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, refactoring, rilevamento di errori con Lint e suggerimenti relativi al tipo. Visual Studio fornisce anche funzionalità univoche come visualizzazione classi, **Vai a definizione**, **Trova tutti i riferimenti**e frammenti di codice. L'integrazione diretta con la [finestra interattiva](#interactive-window) consente di sviluppare rapidamente codice Python già salvato in un file.
+Visual Studio mette a disposizione un editor Python di prima classe, con funzionalità di colorazione della sintassi, completamento automatico in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, refactoring, rilevamento di errori con Lint e suggerimenti relativi al tipo. Visual Studio fornisce anche funzionalità univoche come visualizzazione classi, **Vai a definizione**, **Trova tutti i riferimenti** e frammenti di codice. L'integrazione diretta con la [finestra interattiva](#interactive-window) consente di sviluppare rapidamente codice Python già salvato in un file.
 
 ![Completamento di codice Python in Visual Studio](media/code-editing-completions-simple.png)
 
@@ -144,7 +144,7 @@ Per altre informazioni:
 
 ## <a name="unit-testing-tools"></a>Strumenti per unit test
 
-Consente di individuare, eseguire e gestire i test in **Esplora test**di Visual Studio e di eseguire facilmente il debug degli unit test.
+Consente di individuare, eseguire e gestire i test in **Esplora test** di Visual Studio e di eseguire facilmente il debug degli unit test.
 
 ![Debug di uno unit test Python in Visual Studio](media/unit-test-debugging.png)
 

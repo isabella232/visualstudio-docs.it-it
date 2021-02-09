@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8cb23eeee53990113d779e241adb8dcf1ab0cf16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890305"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce
-È possibile configurare la richiesta di attendibilità ClickOnce per controllare se gli utenti finali hanno la possibilità di installare applicazioni ClickOnce, ad esempio Windows Forms applicazioni, Windows Presentation Foundation applicazioni, applicazioni console, applicazioni browser WPF e soluzioni Office. Per configurare la richiesta di attendibilità, impostare le chiavi del registro di sistema nel computer di ogni utente finale.
+È possibile configurare la richiesta di attendibilità ClickOnce per controllare se gli utenti finali hanno la possibilità di installare applicazioni ClickOnce, ad esempio Windows Form applicazioni, Windows Presentation Foundation applicazioni, applicazioni console, applicazioni browser WPF e soluzioni Office. Per configurare la richiesta di attendibilità, impostare le chiavi del registro di sistema nel computer di ogni utente finale.
 
  Nella tabella seguente vengono illustrate le opzioni di configurazione che è possibile applicare a ognuna delle cinque zone (Internet, UntrustedSites, computer, LocalIntranet e TrustedSites).
 
@@ -38,9 +38,9 @@ ms.locfileid: "94350062"
 |Limitare la richiesta di attendibilità.|`AuthenticodeRequired`|La richiesta di attendibilità ClickOnce viene visualizzata solo se le applicazioni ClickOnce sono firmate con un certificato che identifica il server di pubblicazione.|
 |Disabilitare la richiesta di attendibilità.|`Disabled`|La richiesta di attendibilità ClickOnce non viene visualizzata per le applicazioni ClickOnce che non sono firmate con un certificato attendibile in modo esplicito.|
 
- La tabella seguente illustra il comportamento predefinito per ogni zona. La colonna applicazioni si riferisce Windows Forms applicazioni, Windows Presentation Foundation applicazioni, applicazioni browser WPF e applicazioni console.
+ La tabella seguente illustra il comportamento predefinito per ogni zona. La colonna applicazioni si riferisce Windows Form applicazioni, Windows Presentation Foundation applicazioni, applicazioni browser WPF e applicazioni console.
 
-|Zona|APPLICAZIONI|soluzioni Office|
+|Zona|Applicazioni|soluzioni Office|
 |----------|------------------|----------------------|
 |`MyComputer`|`Enabled`|`Enabled`|
 |`LocalIntranet`|`Enabled`|`Enabled`|
@@ -67,7 +67,7 @@ ms.locfileid: "94350062"
 
      Se la chiave non esiste, crearla.
 
-3. Aggiungere le sottochiavi seguenti come **valore di stringa** , se non esistono già, con i valori associati indicati nella tabella seguente.
+3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
 
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
@@ -126,7 +126,7 @@ ms.locfileid: "94350062"
 
      Se la chiave non esiste, crearla.
 
-3. Aggiungere le sottochiavi seguenti come **valore di stringa** , se non esistono già, con i valori associati indicati nella tabella seguente.
+3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
 
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
@@ -183,7 +183,7 @@ ms.locfileid: "94350062"
 
      Se la chiave non esiste, crearla.
 
-3. Aggiungere le sottochiavi seguenti come **valore di stringa** , se non esistono già, con i valori associati indicati nella tabella seguente.
+3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
 
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
@@ -224,11 +224,11 @@ ms.locfileid: "94350062"
 
 3. Compilare ed eseguire l'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
+- [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
 - [Procedura: Abilitare le impostazioni di sicurezza ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

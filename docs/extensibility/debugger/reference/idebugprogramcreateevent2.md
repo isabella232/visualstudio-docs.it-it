@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b19a7934-6179-4a68-9075-bd7dcd640b05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78088d6e5da61c32302c13b08143c9ed902452e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b73deab28f08ed9268033e941b64b753f64adf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891020"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) a gestione debug sessione (SDM) quando un programma è collegato a.
@@ -34,7 +34,7 @@ IDebugProgramCreateEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Il fornitore della porta DE o Custom crea e invia questo oggetto evento per segnalare la creazione di un programma. Il DE Invia questo evento usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug. Il fornitore della porta personalizzata invia questo evento usando l'interfaccia [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il fornitore della porta DE o Custom pubblica una nuova interfaccia [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) chiamando [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
 
 ## <a name="requirements"></a>Requisiti
@@ -44,7 +44,7 @@ IDebugProgramCreateEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

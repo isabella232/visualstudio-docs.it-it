@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51b47156b73d81f427c08e62006dc6e457e5780b
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 88c37bbdf49fe1c73a3f087058256a2c58ae9602
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889758"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -51,7 +51,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
   Percorso completo e nome del file di progetto.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Questa opzione influisce sull'IDE di Visual Studio nelle proprietà del progetto per **Directory di VC++**. Se si specifica l'opzione `/UseEnv`, il nodo **Directory di VC++** mostra i valori per le variabili di ambiente PATH, INCLUDE, LIBPATH e LIB. Mostra anche i valori per le **directory di origine** e le **directory di esclusione**. In caso contrario, il nodo sostituisce le variabili di ambiente con cinque valori di directory: **directory eseguibili**, **directory di inclusione**, **directory di riferimento**, **directory di libreria** e **directory WinRT della libreria**.
 
@@ -68,7 +68,7 @@ L'esempio seguente avvia Visual Studio e carica le variabili di ambiente nella p
 devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Pagina delle proprietà Directory di VC++ (Windows)](/cpp/build/reference/vcpp-directories-property-page)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304228"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889564"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Unisci XML in manifesti di funzionalità e pacchetto
   Le funzionalità e i pacchetti sono definiti da [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Questi manifesti in pacchetto sono una combinazione di dati generati dalle finestre di progettazione e personalizzati [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] immessi nel modello di manifesto dagli utenti. Al momento della creazione del [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto, unisce le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni personalizzate con la finestra di progettazione fornita [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] per formare il [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto del pacchetto. Gli elementi simili, con le eccezioni annotate più avanti in eccezioni di merge, vengono uniti per evitare [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] errori di convalida dopo la distribuzione dei file in SharePoint e per rendere i file manifesto più piccoli ed efficienti.
@@ -80,6 +80,6 @@ ms.locfileid: "96304228"
 ## <a name="manually-add-deployed-files"></a>Aggiungere manualmente i file distribuiti
  Alcuni elementi del manifesto, ad esempio Elemento ApplicationResourceFile e DwpFiles, specificano un percorso che include un nome file. Tuttavia, se si aggiunge una voce di nome file al modello di manifesto, il file sottostante non viene aggiunto al pacchetto. È necessario aggiungere il file al progetto per includerlo nel pacchetto e impostare la relativa proprietà del tipo di distribuzione di conseguenza.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

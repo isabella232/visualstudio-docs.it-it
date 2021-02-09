@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891189"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Questa interfaccia invia una notifica a un listener (in genere la gestione del debug della sessione [SDM] o un motore di debug) di creazione e distruzione di processi e programmi su una porta specifica. Queste informazioni possono essere usate per presentare una visualizzazione in tempo reale dei processi e dei programmi in esecuzione sulla porta.
@@ -41,7 +41,7 @@ IDebugPortEvents2 : IUnknown
 |------------|-----------------|
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Invia eventi che descrivono la creazione e l'eliminazione di processi e programmi sulla porta.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `IDebugPortEvents2` viene usato anche da SDM per eseguire il debug di programmi eseguiti in un processo di cui è già in corso il debug.
 
  Gli eventi porta vengono passati a SDM da questa interfaccia.
@@ -53,6 +53,6 @@ IDebugPortEvents2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

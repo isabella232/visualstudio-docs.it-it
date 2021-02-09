@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControl element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f08046666ff00d4a0e5489bc78c0c70967774f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889473"
 ---
 # <a name="safecontrol-element"></a>SafeControl (elemento)
   Rappresenta una Web part o un controllo ASPX designato come sicuro per qualsiasi utente per accedere a qualsiasi pagina ASPX nel sito di SharePoint.
@@ -38,7 +38,7 @@ ms.locfileid: "95440623"
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -46,11 +46,11 @@ ms.locfileid: "95440623"
 |**Sicurezza**|Attributo **xs: Boolean** facoltativo.<br /><br /> Specifica se il controllo o la Web part ASPX è protetta per l'accesso agli utenti non attendibili.|
 |**IsSafeAgainstScript**|Attributo **xs: Boolean** facoltativo.<br /><br /> Specifica se gli utenti non attendibili possono visualizzare o modificare le proprietà del controllo o della web part ASPX.|
 |**Nome**|Attributo **xs: String** facoltativo.<br /><br /> Nome della voce di controllo sicura nella raccolta.|
-|**Spazio dei nomi**|Attributo **xs: String** facoltativo.<br /><br /> Spazio dei nomi del controllo o della web part ASPX.|
+|**Namespace**|Attributo **xs: String** facoltativo.<br /><br /> Spazio dei nomi del controllo o della web part ASPX.|
 |**TypeName**|Attributo **xs: String** facoltativo.<br /><br /> Nome del tipo del controllo ASPX o della web part.|
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 

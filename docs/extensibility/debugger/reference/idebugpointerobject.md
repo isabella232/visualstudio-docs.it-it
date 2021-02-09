@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b28189b3f0a07a27f5e4478f64963a63d634db5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 134c1edabb7df7a5cb7f26ce1b7b7487daa78e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890201"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ ms.locfileid: "80725494"
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDebugPointerObject : IDebugObject
+IDebugPointerObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
@@ -46,7 +46,7 @@ IDebugPointerObject : IDebugObject
 |[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Ottiene il valore al quale l'interfaccia punta come una serie di byte consecutivi.|
 |[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Imposta il valore su cui l'interfaccia punta da una serie di byte consecutivi.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un analizzatore di espressioni usa questa interfaccia per rappresentare un puntatore in un albero di analisi.
 
 ## <a name="requirements"></a>Requisiti
@@ -56,6 +56,6 @@ IDebugPointerObject : IDebugObject
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di valutazione delle espressioni](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

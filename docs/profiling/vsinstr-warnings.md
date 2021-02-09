@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ed42588f7135b4664b7f65dfcd8c0d979a523aeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890487"
 ---
 # <a name="vsinstr-warnings"></a>Avvisi di VSInstr
 La tabella seguente elenca gli avvisi generati dallo strumento *VSInstr.exe*. Per impedire la visualizzazione dei messaggi, è possibile usare l'opzione NOWARN insieme al numero di avviso appropriato.
@@ -45,5 +45,5 @@ La tabella seguente elenca gli avvisi generati dallo strumento *VSInstr.exe*. Pe
 |**VSP2013**|La strumentazione di questa immagine ne richiede l'esecuzione come processo a 32 bit. I flag dell'intestazione CLR sono stati aggiornati di conseguenza.<br /><br /> Il profiler modifica il file binario in modo che i sistemi operativi a 64 bit possano aprire il processo a 32 bit nell'emulatore WOW64. Questa operazione può avere esito negativo per le librerie (DLL) caricate in un processo a 64 bit esistente. L'avviso in questione notifica la dipendenza all'utente.|
 |**VSP2014**|L'immagine instrumentata risultante sembra non valida e potrebbe non essere eseguita.<br /><br /> Questo messaggio viene visualizzato quando l'assembly instrumentato finale presenta un'intestazione PE non valida.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSInstr](../profiling/vsinstr.md)

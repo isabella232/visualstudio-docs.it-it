@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2aa1e20dd8639ce089ebe851116a15bf61e35ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ac35b3bd3757e804840478c586100a3f56e656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890929"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Questo metodo ottiene l'oggetto rappresentato da questo visualizzatore.
@@ -28,14 +28,14 @@ Questo metodo ottiene l'oggetto rappresentato da questo visualizzatore.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetObjectForVisualizer(
-   IDebugObject** ppObject
+HRESULT GetObjectForVisualizer(
+   IDebugObject** ppObject
 );
 ```
 
 ```csharp
-int GetObjectForVisualizer(
-   out IDebugObject ppObject
+int GetObjectForVisualizer(
+   out IDebugObject ppObject
 );
 ```
 
@@ -46,10 +46,10 @@ out Oggetto rappresentato da questo visualizzatore
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `GetObjectForVisualizer` è consentita la restituzione di una versione memorizzata nella cache dell'oggetto. Se il chiamante vuole assicurarsi che l'oggetto sia aggiornato, chiamerà [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
