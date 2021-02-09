@@ -6,15 +6,15 @@ ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64a46fc6221f00e6bb130be8010cb2544a00dcc8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 3cecafe64f7ead8157a9cb6c80d2f0a245566390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919716"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Convertire una funzione locale in un metodo
 
@@ -42,7 +42,7 @@ Questo refactoring si applica a:
 
     ![Esempio di risultato della conversione della funzione locale in metodo](media/convert-local-function-to-method-result.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Suggerimenti per gli sviluppatori di .NET](../csharp-developer-productivity.md)

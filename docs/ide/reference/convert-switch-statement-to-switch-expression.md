@@ -6,17 +6,17 @@ ms.date: 06/19/2019
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: add43010fcec04cbe12889672f561f22057efb8c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 56a1b20854cdd2c1821490bb4972d67bbe912056
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919668"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>Convertire un'istruzione switch in un'espressione switch
 
@@ -38,6 +38,6 @@ Questo refactoring si applica a:
 
    ![Convertire un'istruzione switch in un'espressione switch](media/convert-switch-statement-to-switch-expression.png) 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

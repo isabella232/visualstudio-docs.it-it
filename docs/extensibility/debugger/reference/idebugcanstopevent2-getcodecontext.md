@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94c129d7d50bc747291d8a178d73c06655e65414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aefce11ba82cae7529ed1127784d70771add8302
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919977"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 Ottiene il contesto del codice che descrive la posizione di questo evento.
@@ -28,13 +28,13 @@ Ottiene il contesto del codice che descrive la posizione di questo evento.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetCodeContext( 
+HRESULT GetCodeContext( 
    IDebugCodeContext2** ppCodeContext
 );
 ```
 
 ```csharp
-int GetCodeContext( 
+int GetCodeContext( 
    out IDebugCodeContext2 ppCodeContext
 );
 ```
@@ -46,12 +46,12 @@ out Restituisce l'oggetto [IDebugCodeContext2](../../../extensibility/debugger/r
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per la maggior parte delle architetture in fase di esecuzione, un contesto di codice può essere considerato come un indirizzo nel flusso di esecuzione di un programma, puntando a un'istruzione specifica.
 
  Per ottenere il contesto del documento, che è orientato verso le righe del codice sorgente, chiamare il metodo [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)

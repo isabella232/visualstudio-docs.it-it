@@ -8,19 +8,19 @@ ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb98ae063824b29bc3bb8719a034defdeec5293
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 08d26dc394e859862b85f5009a9427f34576fd5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920240"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Selezione diretta in Blend per Visual Studio
 
-Nella tabella seguente sono elencati i tasti di scelta rapida che puoi usare per modificare la forma di un tracciato esistente con lo strumento **Selezione diretta**![strumento Selezione diretta](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Per aggiungere o rimuovere punti in un tracciato esistente oppure per unire due tracciati esistenti, puoi usare lo strumento **Penna** .
+Nella tabella seguente sono elencati i tasti di scelta rapida che puoi usare per modificare la forma di un tracciato esistente con lo strumento **Selezione diretta**![strumento Selezione diretta](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Per aggiungere o rimuovere punti in un tracciato esistente oppure per unire due tracciati esistenti, puoi usare lo strumento **Penna**.
 
 |Per|Procedere nel modo seguente|Puntatore|
 | - |-------------|-------------|
@@ -35,7 +35,7 @@ Nella tabella seguente sono elencati i tasti di scelta rapida che puoi usare per
 |Trasformare un segmento in una curva passante per la posizione del puntatore|Passa con il puntatore del mouse su un segmento di un tracciato, tieni premuto **ALT** e quindi trascina il segmento|![Trasformare un segmento in una curva passante per la posizione del puntatore](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Puntatore di conversione del segmento|
 |Adattare un'estremità della tangente indipendentemente dall'altra parte|Applica la selezione diretta a un punto o a un segmento, tieni premuto **ALT** e quindi trascina un punto di fine della tangente|![Adattare un'estremità della tangente indipendentemente dall'altra parte](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> Puntatore di conversione della tangente|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tasti di modifica della tavola da disegno](../xaml-tools/artboard-modifier-keys-in-blend.md)
 - [Tasti di modifica strumento Penna](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

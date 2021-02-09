@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5ed964905db6aa591252018b408cf67fa43d310
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e73b4c071f28abf80e9d35da05b0b49c96af265
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919969"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 Notifica al destinatario dell'evento che gli attributi del documento sono stati aggiornati.
@@ -28,13 +28,13 @@ Notifica al destinatario dell'evento che gli attributi del documento sono stati 
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT onUpdateDocumentAttributes( 
+HRESULT onUpdateDocumentAttributes( 
    TEXT_DOC_ATTR_2 textdocattr
 );
 ```
 
 ```csharp
-int onUpdateDocumentAttributes( 
+int onUpdateDocumentAttributes( 
    enum_TEXT_DOC_ATTR_2 textdocattr
 );
 ```
@@ -46,6 +46,6 @@ in Combinazione di flag dell'enumerazione [TEXT_DOC_ATTR_2](../../../extensibili
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)
