@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a90d2e08d16ddfb7ac22baafe58cf76b4895d3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 9f83a4f262e394222d420c2fec187e67ddfbfaf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870415"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossibile connettersi al processo
 Impossibile connettersi al processo. Accesso negato per il componente del debugger che si trova sul server durante la connessione a questo computer.
@@ -61,5 +61,5 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 
 7. Chiudere tutte le finestre.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)

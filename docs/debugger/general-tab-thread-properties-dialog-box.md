@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 02ba7d14dad8e4755170ffca7853aa9cc6c85a19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870545"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Scheda Generale, finestra di dialogo Proprietà thread
 Usare questa finestra di dialogo per trovare altre informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una finestra [visualizzazione thread](../debugger/threads-view.md) oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare un nodo thread nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
  La finestra di dialogo **Proprietà thread** contiene un riquadro, ovvero la scheda **generale** . Sono disponibili le impostazioni seguenti:
 
-|Voce|Description|
+|Voce|Descrizione|
 |-----------|-----------------|
 |**Nome del modulo**|Nome del modulo.|
 |**ID thread**|ID univoco del thread. Si noti che i numeri ID del thread vengono riutilizzati. identificano un thread solo per la durata del thread.|

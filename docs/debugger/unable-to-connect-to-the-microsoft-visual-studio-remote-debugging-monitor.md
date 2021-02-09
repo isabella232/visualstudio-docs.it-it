@@ -15,15 +15,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e333bbe4198dfeda9ceb90ed23263ef1b6e06495
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870363"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 Questo messaggio può verificarsi perché Remote Debugging Monitor non è configurato correttamente nel computer remoto o il computer remoto non è accessibile a causa di problemi di rete o della presenza di un firewall.
@@ -182,5 +182,5 @@ Per risolvere il problema, usare uno dei metodi seguenti:
 ## <a name="more-help"></a>Altre informazioni
  Per ottenere ulteriori informazioni sulla guida del debugger remoto, aprire la pagina della guida del debugger remoto (**> utilizzo** nel debugger remoto).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug remoto](../debugger/remote-debugging.md)
