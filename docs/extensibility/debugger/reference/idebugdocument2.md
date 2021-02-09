@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c959c018dd4da0ff088c4fb52c0420de83b4eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884871"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Questa interfaccia rappresenta un documento di origine.
@@ -42,7 +42,7 @@ IDebugDocument2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Ottiene il nome del documento in uno dei diversi formati.|
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Ottiene l'identificatore di classe del documento.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia viene implementata solo quando il DE fornisce il codice sorgente. Ad esempio, quando si esegue il debug di script in una pagina HTML, il DE fornisce il codice sorgente perché l'origine viene scaricata o generata dinamicamente e non esiste come file su disco. Quando si esegue il debug di linguaggi tradizionali, ad esempio C++, non è necessario implementare questa interfaccia.
 
 ## <a name="requirements"></a>Requisiti
@@ -52,7 +52,7 @@ IDebugDocument2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)
 - [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)
 - [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)

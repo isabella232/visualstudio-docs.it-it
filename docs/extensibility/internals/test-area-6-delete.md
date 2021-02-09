@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884481"
 ---
 # <a name="test-area-6-delete"></a>Area di test 6: Eliminare
 Questa area di test del plug-in del controllo del codice sorgente copre le azioni di eliminazione.
@@ -54,5 +54,5 @@ Questa area di test del plug-in del controllo del codice sorgente copre le azion
 |Eliminare un progetto Web del file System|1. creare un progetto Web di file System (usare il pulsante Sfoglia per specificare un percorso UNC).<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. rimuovere l'intero progetto dalla soluzione.<br />4. Ripetere i passaggi da 1 a 3 per un progetto Web locale (esercizi diversi nel codice ma con la stessa interfaccia esterna e il medesimo comportamento).|Comportamento previsto comune.|
 |Eliminare un file da un progetto Web di file System|1. creare un progetto Web di file System.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. eliminare un file dal progetto.<br />4. Ripetere i passaggi da 1 a 3 per un progetto Web locale (esercizi diversi nel codice ma con la stessa interfaccia esterna e il medesimo comportamento).|Comportamento previsto comune.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

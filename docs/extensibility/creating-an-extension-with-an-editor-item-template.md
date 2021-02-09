@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6264cb35e404d69900094513875fc7b79310a4d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: c8bfdcd854cf35c392578d9851a7421bacc8cbfe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884988"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Creare un'estensione con un modello di elemento dell'editor
 È possibile usare i modelli di elemento inclusi in Visual Studio SDK per creare estensioni dell'editor di base che aggiungono classificatori, aree di visualizzazione e margini all'editor. I modelli di elemento dell'editor sono disponibili per i progetti Visual C# o VSIX Visual Basic.
@@ -98,5 +98,5 @@ ms.locfileid: "94973735"
 
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si apre un file di testo, al di sotto della barra di scorrimento orizzontale viene visualizzato un margine verde con le parole **Hello EditorMargin1** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Punti di estensione Editor e servizio di linguaggio](../extensibility/language-service-and-editor-extension-points.md)

@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: 476e3d98-cf35-4338-b124-cd0f3010d854
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a528709769f599219a7b3df2b8157b0ee3a605b1
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: bfb5099bd0fab17cd983af4e16a435fd192a1668
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883870"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Finestra di dialogo Quando il punto di interruzione viene raggiunto
 Con questa finestra di dialogo è possibile personalizzare l'azione che si verifica quando viene raggiunto un punto di interruzione.
@@ -36,6 +36,6 @@ Con questa finestra di dialogo è possibile personalizzare l'azione che si verif
 
  **Continua esecuzione** Questo controllo è abilitato solo quando è selezionata **l'opzione stampa un messaggio** . Con questo controllo selezionato, è possibile usare un punto di interruzione come punto di analisi per tracciare l'esecuzione del programma, anziché interferire quando viene raggiunto il percorso.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Utilizzo di punti di interruzione](../debugger/using-breakpoints.md)
 - [Utilizzo dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

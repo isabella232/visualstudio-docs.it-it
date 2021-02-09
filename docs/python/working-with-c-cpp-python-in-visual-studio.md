@@ -5,17 +5,17 @@ ms.date: 11/19/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885937"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creare un'estensione C++ per Python
 
@@ -134,7 +134,7 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici den
     > Se la scheda C/C++ non è visualizzata nelle proprietà del progetto, il progetto non include alcun file identificato come file di origine C/C++. Questa condizione può verificarsi se si crea un file di origine senza un'estensione *c* o *cpp*. Ad esempio, se è stato immesso accidentalmente `module.coo` anziché `module.cpp` nella finestra di dialogo nuovo elemento in precedenza, Visual Studio crea il file ma non imposta il tipo di file su "C/c + code", che attiva la scheda delle proprietà di c/C++. Tale errata identificazione rimane il caso anche se si rinomina il file con `.cpp` . Per impostare correttamente il tipo di file, fare clic con il pulsante destro del mouse sul file in **Esplora soluzioni**, scegliere **Proprietà** e quindi impostare **Tipo di file** su **Codice C/C++**.
 
     > [!Warning]
-    > Impostare sempre l'opzione della libreria di runtime di generazione del codice **C/C++**  >  **Code Generation**  >  **Runtime Library** per la **DLL multithread (/MD)**, anche per una configurazione di debug, perché questa impostazione è quella in cui vengono compilati i file binari Python non di debug. Con CPython, se si imposta l'opzione per la **dll di debug multithread (/MDD)** , la compilazione di una configurazione di **debug** genera l'errore **C1189: Py_LIMITED_API non è compatibile con Py_DEBUG, Py_TRACE_REFS e Py_REF_DEBUG**. Inoltre, se si rimuove `Py_LIMITED_API` (obbligatorio con CPython, ma non con PyBind11) per evitare l'errore di compilazione, l'esecuzione di Python si arresta in modo anomalo durante il tentativo di importare il modulo. L'arresto anomalo del sistema si verifica all'interno della chiamata della DLL a `PyModule_Create`, come descritto più avanti, con il messaggio di output **Fatal Python error: PyThreadState_Get: no current thread** (Errore irreversibile di Python: PyThreadState_Get: nessun thread corrente).
+    > Impostare sempre l'opzione della libreria di runtime di generazione del codice **C/C++**  >    >   per la **DLL multithread (/MD)**, anche per una configurazione di debug, perché questa impostazione è quella in cui vengono compilati i file binari Python non di debug. Con CPython, se si imposta l'opzione per la **dll di debug multithread (/MDD)** , la compilazione di una configurazione di **debug** genera l'errore **C1189: Py_LIMITED_API non è compatibile con Py_DEBUG, Py_TRACE_REFS e Py_REF_DEBUG**. Inoltre, se si rimuove `Py_LIMITED_API` (obbligatorio con CPython, ma non con PyBind11) per evitare l'errore di compilazione, l'esecuzione di Python si arresta in modo anomalo durante il tentativo di importare il modulo. L'arresto anomalo del sistema si verifica all'interno della chiamata della DLL a `PyModule_Create`, come descritto più avanti, con il messaggio di output **Fatal Python error: PyThreadState_Get: no current thread** (Errore irreversibile di Python: PyThreadState_Get: nessun thread corrente).
     >
     > L'opzione/MDd viene usata per compilare i file binari di debug di Python (ad esempio *python_d.exe*), ma la selezione per una DLL di estensione causa ancora l'errore di compilazione con `Py_LIMITED_API` .
 
@@ -218,7 +218,7 @@ Se si lavora con Python 2.7, fare invece riferimento a [Extending Python 2.7 wit
     };
     ```
 
-1. Aggiungere un metodo chiamato da Python quando carica il modulo, che deve essere denominato `PyInit_<module-name>` , dove &lt; module-name &gt; corrisponde esattamente alla proprietà del nome di **destinazione generale**del progetto C++  >  **Target Name** (ovvero corrisponde al nome del file con *estensione PYD* compilato dal progetto).
+1. Aggiungere un metodo chiamato da Python quando carica il modulo, che deve essere denominato `PyInit_<module-name>` , dove &lt; module-name &gt; corrisponde esattamente alla proprietà del nome di **destinazione generale** del progetto C++  >   (ovvero corrisponde al nome del file con *estensione PYD* compilato dal progetto).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {
@@ -264,9 +264,9 @@ Se è stata completata la procedura della sezione precedente, si sarà notato l'
 
 La compilazione del modulo C++ potrebbe non riuscire per i motivi seguenti:
 
-- Non è possibile individuare *Python.h* (**E1696: Impossibile aprire il file di origine "Python.h"** e/o **C1083: Impossibile aprire il file di inclusione "Python.h": file o directory non esistente**): verificare che il percorso in **C/C++** > **Generale** > **Directory di inclusione aggiuntive** nelle proprietà del progetto punti alla cartella*include* dell'installazione di Python in uso. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-projects).
+- Non è possibile individuare *Python.h* (**E1696: Impossibile aprire il file di origine "Python.h"** e/o **C1083: Impossibile aprire il file di inclusione "Python.h": file o directory non esistente**): verificare che il percorso in **C/C++** > **Generale** > **Directory di inclusione aggiuntive** nelle proprietà del progetto punti alla cartella *include* dell'installazione di Python in uso. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-projects).
 
-- Non è possibile trovare le librerie Python: verificare che il **Linker**percorso nelle directory di  >  **General**  >  **libreria aggiuntive** generali del linker nelle proprietà del progetto punti alla cartella *libs* dell'installazione di Python. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-projects).
+- Non è possibile trovare le librerie Python: verificare che il percorso nelle directory di  >    >  **libreria aggiuntive** generali del linker nelle proprietà del progetto punti alla cartella *libs* dell'installazione di Python. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-projects).
 
 - Errori del linker correlati all'architettura di destinazione: modificare l'architettura di progetto della destinazione C++ in modo che corrisponda a quella dell'installazione di Python in uso. Ad esempio, se il progetto C++ è destinato a x64, ma l'installazione di Python è x86, impostare x86 come destinazione del progetto C++.
 
@@ -379,7 +379,7 @@ Visual Studio supporta il debug di codice Python e C++ insieme. Questa sezione i
 1. Fare clic con il pulsante destro del mouse sul progetto Python in **Esplora soluzioni**, scegliere **Proprietà**, selezionare la scheda **Debug** e quindi selezionare l'opzione **Debug** > **Abilita debug codice nativo**.
 
     > [!Tip]
-    > Quando si Abilita il debug del codice nativo, la finestra di output di Python può scomparire immediatamente quando il programma è stato completato senza visualizzare il normale **tasto premere un tasto qualsiasi per continuare** la pausa. Per forzare una pausa, aggiungere l' `-i` opzione al campo **Esegui**gli  >  **argomenti dell'interprete** nella scheda **debug** quando si Abilita il debug del codice nativo. Questo argomento consente di impostare l'interprete Python in modalità interattiva al termine del codice. a quel punto, attenderà di premere **CTRL** + **Z**  >  **invio** per uscire. In alternativa, se si vuole modificare il codice Python, è possibile aggiungere le istruzioni `import os` e `os.system("pause")` alla fine del programma. Questo codice duplica la richiesta di pausa originale.
+    > Quando si Abilita il debug del codice nativo, la finestra di output di Python può scomparire immediatamente quando il programma è stato completato senza visualizzare il normale **tasto premere un tasto qualsiasi per continuare** la pausa. Per forzare una pausa, aggiungere l' `-i` opzione al campo **Esegui** gli  >  **argomenti dell'interprete** nella scheda **debug** quando si Abilita il debug del codice nativo. Questo argomento consente di impostare l'interprete Python in modalità interattiva al termine del codice. a quel punto, attenderà di premere **CTRL** + **Z**  >  **invio** per uscire. In alternativa, se si vuole modificare il codice Python, è possibile aggiungere le istruzioni `import os` e `os.system("pause")` alla fine del programma. Questo codice duplica la richiesta di pausa originale.
 
 1. Selezionare **file**  >  **Salva** per salvare le modifiche alle proprietà.
 
@@ -389,7 +389,7 @@ Visual Studio supporta il debug di codice Python e C++ insieme. Questa sezione i
 
 1. Dato che l'esecuzione del codice richiede in genere più tempo nel debugger, può essere utile modificare la variabile `COUNT` nel file con estensione *py* impostando un valore inferiore di circa cinque volte, ad esempio modificarlo da `500000` a `100000`.
 
-1. Nel codice C++ impostare un punto di interruzione nella prima riga del metodo `tanh_impl` e quindi avviare il debugger (**F5** o **Debug** > ****). Il debugger interrompe l'esecuzione quando viene chiamato tale codice. Se il punto di interruzione non viene raggiunto, verificare che la configurazione sia impostata su **debug** e che il progetto sia stato salvato, che non si verifica automaticamente all'avvio del debugger.
+1. Nel codice C++ impostare un punto di interruzione nella prima riga del metodo `tanh_impl` e quindi avviare il debugger (**F5** o **Debug** > ). Il debugger interrompe l'esecuzione quando viene chiamato tale codice. Se il punto di interruzione non viene raggiunto, verificare che la configurazione sia impostata su **debug** e che il progetto sia stato salvato, che non si verifica automaticamente all'avvio del debugger.
 
     ![Interruzione in un punto del codice C++](media/cpp-debugging.png)
 
@@ -410,6 +410,6 @@ Esistono svariati modi per creare estensioni di Python, come descritto nella tab
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilità di integrazione, compatibilità PyPy. | Più recente, meno maturo. |
 | [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Simile a cffi con l'uso di C++. | Più recente, potrebbero verificarsi alcuni problemi con Visual Studio 2017. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 L'esempio completato di questa procedura dettagliata è disponibile in [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).

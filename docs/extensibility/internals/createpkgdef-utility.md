@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884533"
 ---
 # <a name="createpkgdef-utility"></a>Utilità CreatePkgDef
 Accetta un file con estensione dll per un'estensione di Visual Studio come parametro e crea un file *pkgdef* per accompagnare il file *dll* . Il file *. pkgdef* contiene tutte le informazioni che altrimenti verrebbero scritte nel registro di sistema durante l'installazione dell'estensione.
@@ -84,5 +84,5 @@ Se la cartella di installazione *è \\ %VSInstallDir%\Common7\IDE\Extensions*, l
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Utilità CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52f655afd35ed316080a3a85ccfae047aa50d87f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883805"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Questa interfaccia rappresenta un riferimento a una proprietà stack frame o a un'altra proprietà.
@@ -54,7 +54,7 @@ IDebugReference2 : IUnknown
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Imposta questo tipo di riferimento.|
 |[Confronta](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Confronta questo riferimento con un altro.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 > [!NOTE]
 > Questo utilizzo di "Property" non deve essere confuso con quello che significa una variabile membro di una classe, sebbene `IDebugReference2` possa rappresentare tale entità.
@@ -72,7 +72,7 @@ IDebugReference2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

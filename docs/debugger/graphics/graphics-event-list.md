@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f987d8dc6decf90e44eef0123f6ad4fc194805
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c964cda5cbe2903cf9511659b9a8f9bfb9f4aad6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884520"
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.
@@ -34,7 +34,7 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 ### <a name="color-coded-events-in-direct3d-12"></a>Eventi contraddistinti dal colore in Direct3D 12
  Direct3D 12 espone più code che corrispondono a funzionalità hardware diverse. Per agevolare l'identificazione della coda associata a un particolare evento di grafica in Direct3D 12, quando si lavora su una cattura di un'app Direct3D 12, all'interno dell'elenco gli eventi sono contraddistinti da colori diversi in base alla coda.
 
-|Coda Direct3D 12|Color|
+|Coda Direct3D 12|Colore|
 |-----------------------|-----------|
 |Coda di rendering|Green|
 |Coda di calcolo|Giallo|

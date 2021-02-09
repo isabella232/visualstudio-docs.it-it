@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cabf32dcbe8b4d2e925bcfd48635063ecd0a5b74
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: e0187a02dd14966ee9354d8865991531f1d66ae6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884897"
 ---
 # <a name="operational-modes"></a>Modalità operative
 Sono disponibili tre modalità in cui l'IDE può funzionare, come indicato di seguito:
@@ -56,5 +56,5 @@ Sono disponibili tre modalità in cui l'IDE può funzionare, come indicato di se
 
  Quando il programma passa alla riga di codice successiva o in una funzione o viene eseguito fino al cursore o a un punto di interruzione impostato, il valore di viene automaticamente reimpostato sulla modalità di interruzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo dell'esecuzione](../../extensibility/debugger/control-of-execution.md)

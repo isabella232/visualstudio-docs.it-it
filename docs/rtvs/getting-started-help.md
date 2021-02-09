@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 551f929e4d42b208dd222f052b27720edb273761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62950569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885768"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Guida di R Tools per Visual Studio
 
@@ -24,7 +24,7 @@ La Guida di R è integrata direttamente nella finestra interattiva in Visual Stu
 > [!Tip]
 > La finestra della Guida, come tutte le finestre di Visual Studio, può essere disposta e ancorata a seconda delle proprie preferenze. Vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Per aprire i risultati della Guida in un browser, selezionare il menu opzioni di **R Tools**  >  **Options** e impostare la proprietà **Guida di R browser** su `External` . Vedere [R Tools for Visual Studio options](options-for-r-tools-in-visual-studio.md) (Opzioni di R Tools per Visual Studio).
+> Per aprire i risultati della Guida in un browser, selezionare il menu opzioni di **R Tools**  >   e impostare la proprietà **Guida di R browser** su `External` . Vedere [R Tools for Visual Studio options](options-for-r-tools-in-visual-studio.md) (Opzioni di R Tools per Visual Studio).
 
 Per eseguire ricerche nella Guida, usare il comando `??` seguito dal termine di ricerca. Se il termine di ricerca contiene spazi, usare le virgolette:
 
@@ -56,7 +56,7 @@ Oltre a eseguire ricerche nella documentazione di R, gli sviluppatori spesso cer
 
 ![Risultati della ricerca nel Web in Visual Studio](media/help-web-search-results.png)
 
-È possibile modificare la stringa di ambito accodata, `R site:stackoverflow` , tramite l'opzione **R Tools**  >  **Opzioni**della  >  **stringa di ricerca Web F1** :
+È possibile modificare la stringa di ambito accodata, `R site:stackoverflow` , tramite l'opzione **R Tools**  >  **Opzioni** della  >  **stringa di ricerca Web F1** :
 
 ![Modifica dell'opzione Stringa di ricerca sul Web F1](media/options-dialog.png)
 

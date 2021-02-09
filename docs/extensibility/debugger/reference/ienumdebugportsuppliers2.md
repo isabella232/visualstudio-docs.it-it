@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de0bfc5b387df9b347e4a58d97601a5e1e70f1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edff2cad101a6a6f0f19a4b384b8f2398b98b2e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883740"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Questa interfaccia enumera i fornitori di porte.
@@ -45,7 +45,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 |[Clone](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Ottiene il numero di fornitori di porte in un enumeratore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In genere non è necessario che un motore di debug ottenga questa interfaccia.
 
 ## <a name="requirements"></a>Requisiti
@@ -55,6 +55,6 @@ IEnumDebugPortSuppliers2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)

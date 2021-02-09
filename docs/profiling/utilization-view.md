@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 52dd5611e5a05de4bdb2d765bbdd2860e54f767e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885898"
 ---
 # <a name="utilization-view"></a>Visualizzazione Utilizzo
 La **visualizzazione Utilizzo** contiene informazioni relative a CPU, GPU e altre risorse di sistema usate dal processo corrente (scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Viene indicato l'utilizzo medio dei core da parte del processo analizzato, del processo inattivo, del processo di sistema e di altri processi in esecuzione nel sistema nel tempo. Non viene indicato quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene usato un solo core logico. La visualizzazione viene generata dividendo il tempo di profilatura in brevi segmenti di tempo. Per ogni segmento, nel grafico viene rappresentato il numero medio di thread di processo in esecuzione nei core logici durante l'intervallo.
@@ -49,6 +49,6 @@ La **visualizzazione Utilizzo** contiene informazioni relative a CPU, GPU e altr
 ## <a name="zoom"></a>Zoom
  Per ingrandire il grafico Utilizzo CPU o il grafico Attività GPU, selezionare una sezione o usare il dispositivo di scorrimento dello zoom sopra il grafico. L'impostazione dello zoom viene mantenuta quando si passa ad altre visualizzazioni. Per eseguire lo zoom indietro, usare il dispositivo di scorrimento dello zoom. È anche possibile eseguire lo zoom usando **CTRL** + **Scroll**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)
 - [Visualizzazione Core](../profiling/cores-view.md)

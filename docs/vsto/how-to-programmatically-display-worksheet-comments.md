@@ -12,15 +12,15 @@ helpviewer_keywords:
 - comments, worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 33ae98f6b6e4508f76323b0b06dab3693f0ac5d0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7de75a1846aa7261a723c87297511b7461c49f47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885508"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Procedura: visualizzare i commenti del foglio di codice a livello di codice
   A livello di codice è possibile visualizzare e nascondere i commenti nei fogli di lavoro di Microsoft Office Excel.
@@ -41,7 +41,7 @@ ms.locfileid: "97525844"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#21)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#21)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
 - [Procedura: aggiungere ed eliminare commenti in un foglio di codice a livello di codice](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)

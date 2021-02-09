@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d9c8ce481ab9ca99b7d456f53418641654369ad
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e527e1aec630faadec6e594f944a6715028c6d82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885053"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Procedura: Impostare un percorso personalizzato per il file di log degli errori della distribuzione ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantiene i file del log di attivazione per tutte le distribuzioni. Questi log documentano gli eventuali errori relativi all'installazione e all'inizializzazione di una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per impostazione predefinita, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Crea un file di log per ogni attivazione della distribuzione. Questi file di log vengono archiviati nella cartella file temporanei Internet. Il file di log per una distribuzione viene visualizzato all'utente quando si verifica un errore di attivazione e l'utente fa clic su **Dettagli** nella finestra di dialogo di errore risultante.
 
- È possibile modificare questo comportamento per un client specifico utilizzando l'editor del registro di sistema ( **regedit.exe** ) per impostare un percorso personalizzato per il file di log. In questo caso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] registra le operazioni riuscite ed errori per tutte le distribuzioni in un singolo file.
+ È possibile modificare questo comportamento per un client specifico utilizzando l'editor del registro di sistema (**regedit.exe**) per impostare un percorso personalizzato per il file di log. In questo caso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] registra le operazioni riuscite ed errori per tutte le distribuzioni in un singolo file.
 
 > [!CAUTION]
 > L'errato utilizzo dell'Editor del Registro di sistema può causare gravi problemi che possono richiedere la reinstallazione del sistema operativo. L'uso dell'editor del Registro di sistema è a rischio e pericolo dell'utente.
@@ -48,5 +48,5 @@ ms.locfileid: "94351037"
 
      Questo percorso deve trovarsi in una directory a cui l'utente dispone dell'accesso in scrittura. In Windows Vista, ad esempio, creare la struttura di cartelle seguente e impostare su `LogFilePath` *C:\Users \\ \<username> \Documents\Logs\ClickOnce\installation.log*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5acac83a6d461f6b7301ff2bfe89d92dc78d00ee
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2d51821597c68a9b8e0c97e4cac3c7dc7ec2b8cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884351"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Creare visualizzazioni personalizzate dei dati nel debugger di Visual Studio (C#, Visual Basic, C++)
 
@@ -40,7 +40,7 @@ Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger fornisce m
 
  I visualizzatori consentono di visualizzare il contenuto di un oggetto o di una variabile in modo significativo. Nel debugger di Visual Studio, un visualizzatore si riferisce alle diverse finestre che è possibile aprire usando l'icona ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icona del Visualizzatore") lente di ingrandimento. Ad esempio, il Visualizzatore HTML Mostra come una stringa HTML verrebbe interpretata e visualizzata in un browser. È possibile accedere ai visualizzatori da suggerimenti dati, la finestra **espressioni di controllo** , la finestra **auto** e la finestra **variabili locali** . La finestra di dialogo controllo **immediato** fornisce anche un visualizzatore. Per altre informazioni, vedere [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Finestra di comando](../ide/reference/command-window.md)

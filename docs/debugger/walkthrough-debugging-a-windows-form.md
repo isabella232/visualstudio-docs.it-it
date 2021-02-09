@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e9293956e2ca47e68ff5bf22502251b22115a827
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884130"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
 Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea un'applicazione Windows standard. È possibile completare questa procedura dettagliata utilizzando Visual Basic, C# o C++.
@@ -59,7 +59,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
 4. Fare clic su **OK**.
 
-     Visual Studio crea un nuovo progetto e visualizza un nuovo modulo nella finestra di progettazione Windows Forms. Per ulteriori informazioni, vedere [Progettazione Windows Form](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
+     Visual Studio crea un nuovo progetto e visualizza un nuovo modulo nella finestra di progettazione Windows Form. Per ulteriori informazioni, vedere [Progettazione Windows Form](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
 
 5. Scegliere **casella degli strumenti** dal menu **Visualizza** .
 
@@ -184,6 +184,6 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
      Il debugger interrompe l'esecuzione di Windows Form in corrispondenza del punto di interruzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

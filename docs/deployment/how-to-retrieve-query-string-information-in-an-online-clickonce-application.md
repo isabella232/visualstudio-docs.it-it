@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a1ba70336b54ce2ce4c4df6678984db9de8bf8
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 49fd3ca9b625b9dec179ec37603e875cfdd296c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885131"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
 La *stringa di query* è la parte di un URL che inizia con un punto interrogativo (?) e contiene informazioni arbitrarie nel formato *nome = valore*. Si supponga di avere un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominata `WindowsApp1` che è ospitare in `servername`e di voler passare un valore per la variabile `username` quando l'applicazione viene avviata. L'aspetto dell'URL potrebbe essere simile al seguente:
@@ -41,7 +41,7 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
 > [!NOTE]
 > Prima di decidere se attivare questa funzionalità, vedere la sezione "Sicurezza" più avanti in questo argomento.
 
- Per informazioni su come creare una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando *Mage.exe* o *MageUI.exe* , vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Per informazioni su come creare una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando *Mage.exe* o *MageUI.exe*, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
 > A partire da .NET Framework 3.5 SP1, è possibile passare argomenti della riga di comando in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] offline. Se si desidera fornire argomenti all'applicazione, è possibile passare parametri al file di collegamento con l'estensione .APPREF-MS.
@@ -80,5 +80,5 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
 ## <a name="net-framework-security"></a>.NET Framework (sicurezza)
  Consentire il passaggio di parametri URL all'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo se si prevede di ripulire l'input da eventuali caratteri dannosi prima di usarlo. Una stringa incorporata con virgolette, barre o punto e virgola, ad esempio, potrebbe eseguire le operazioni di dati arbitrarie se viene impiegata senza essere filtrata in una query SQL su un database. Per altre informazioni sulla sicurezza delle stringhe di query, vedere [Cenni preliminari sugli exploit di script](/previous-versions/w1sw53ds(v=vs.140)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

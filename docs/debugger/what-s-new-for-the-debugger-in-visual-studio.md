@@ -18,16 +18,16 @@ helpviewer_keywords:
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 986ebf20cd49569bfcaf471b9bef994dfe774437
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: bac5c7021146a0b9bc66e98e7de334bdbf05a7b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883948"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novità relative al debugger di Visual Studio 2017
 
@@ -72,7 +72,7 @@ Il debugger include le nuove funzionalità seguenti:
 
 Per ulteriori informazioni su queste nuove funzionalità, vedere le [Note sulla versione [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] di ](/visualstudio/releasenotes/vs2017-relnotes).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

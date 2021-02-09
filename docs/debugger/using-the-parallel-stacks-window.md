@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7b92f4e2faf2043c26c7119b6f9754edd3bdc990
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884390"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Visualizzare i thread e le attività nella finestra stack in parallelo (C#, Visual Basic, C++)
 
@@ -137,7 +137,7 @@ Dalla visualizzazione **thread** o dalla visualizzazione **attività** è possib
 
 Se si passa a una nuova stack frame, questo metodo viene reso il metodo corrente e la **visualizzazione metodo** Mostra tutti i chiamanti e i chiamanti per il nuovo metodo. È possibile che, in conseguenza a ciò, alcuni thread compaiano o scompaiano dalla visualizzazione, a seconda che il metodo sia visualizzato nei relativi stack di chiamate. Per tornare alla visualizzazione dello stack di chiamate, selezionare di nuovo l'icona della barra degli strumenti **visualizzazione metodo** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Introduzione al debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Procedura dettagliata: Eseguire il debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

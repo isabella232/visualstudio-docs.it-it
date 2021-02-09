@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94a13890f0b5e60b1da204b89a01c1cadc6d00c4
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e3fdc5705cad0ec696a520350042d7f18aaec146
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884637"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuire alla finestra di dialogo Aggiungi nuovo elemento
 Un sottotipo di progetto può fornire una nuova directory completa di elementi per la finestra di dialogo **Aggiungi nuovo elemento** registrando Aggiungi modelli di **elemento** nella sottochiave del registro di sistema **progetti** .
@@ -43,6 +43,6 @@ Un sottotipo di progetto può fornire una nuova directory completa di elementi p
 
  È possibile filtrare gli elementi nella finestra di dialogo **Aggiungi nuovo elemento** implementando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> interfaccia nell'oggetto Aggregator del sottotipo di progetto. Ad esempio, un sottotipo di progetto che implementa un progetto di database aggregando un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetto può filtrare gli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] elementi specifici dalla finestra di dialogo **Aggiungi nuovo elemento** implementando filtri e, a sua volta, può aggiungere elementi specifici del progetto di database supportando `VSHPROPID_ AddItemTemplatesGuid` in <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> . Per ulteriori informazioni sul filtro e l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo elemento** , vedere [aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [CATID per gli oggetti che in genere vengono usati per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

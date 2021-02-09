@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe9b1ed3acbe588b342ba6550bc45558a2070d2
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 9d52d04565b03d988d5d01a64e561fc0da8a16e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885248"
 ---
 # <a name="graphics-frame-validation"></a>Convalida di frame grafica
 <!-- VERSIONLESS -->
@@ -32,8 +32,8 @@ Fare clic sul pulsante **Esegui convalida** nell'angolo superiore sinistro per a
 | ID evento | ID che esegue il mapping a una voce nella finestra [elenco eventi](graphics-event-list.md) . |
 | Gravità | Danneggiamento, errore, avviso, informazioni o messaggio. |
 | Category | Applicazione definita, varie, inizializzazione, pulizia, compilazione, creazione dello stato, impostazione dello stato, recupero dello stato, esecuzione, manipolazione delle risorse, shader, ridondante e non usata. |
-| Messaggio | Messaggio associato all'evento. |
-| Event | Evento associato all'errore o all'avviso. |
+| Message | Messaggio associato all'evento. |
+| Evento | Evento associato all'errore o all'avviso. |
 
 ## <a name="see-also"></a>Vedi anche
 [Diagnostica della grafica (Debug grafica DirectX)](visual-studio-graphics-diagnostics.md)

@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cd11e722886b77e9faaace768cc30a74c759903f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149703"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884208"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visualizzare i thread nel debugger di Visual Studio tramite la finestra thread (C#, Visual Basic, C++)
 Nella finestra **thread** è possibile esaminare e utilizzare i thread nell'applicazione di cui si sta eseguendo il debug. Per istruzioni dettagliate su come usare la finestra **thread** , vedere [procedura dettagliata: eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md).
@@ -169,6 +169,6 @@ In un programma multithread ogni thread dispone di un proprio stack di chiamate.
 
 - Nella barra degli strumenti nella parte superiore della finestra **thread** selezionare **Espandi stack di chiamate** o **Comprimi stack di chiamate**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)

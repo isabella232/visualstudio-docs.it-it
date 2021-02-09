@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884286"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procedura dettagliata: debug di un'applicazione parallela in Visual Studio (C#, Visual Basic, C++)
 
@@ -66,7 +66,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
    ::: moniker range=">=vs-2019"
 
-   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
+   Se la finestra di avvio non è aperta,  scegliere > **finestra di avvio** file.
 
    Nella finestra Start scegliere **Crea un nuovo progetto**.
 
@@ -83,8 +83,8 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
    ::: moniker range="vs-2017"
    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** scegliere le opzioni seguenti:
 
-   - Per un'app C#, in **Visual c#** scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
-   - Per un'app Visual Basic, in **Visual Basic**scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
+   - Per un'app C#, in **Visual c#** scegliere **desktop di Windows** e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
+   - Per un'app Visual Basic, in **Visual Basic** scegliere **desktop di Windows** e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
    - Per un'app C++, in **Visual C++** scegliere **desktop di Windows**, quindi scegliere **applicazione console di Windows**.
 
    Se non viene visualizzata l' **app console (.NET Core)** o, per C++, il modello di progetto di **app console** , passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo per **desktop .NET** o **sviluppo desktop con C++** , quindi scegliere **modifica**.
@@ -236,7 +236,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 4. Fare doppio clic su un thread nella finestra **Thread** per far sì che diventi il thread corrente. I thread correnti presentano la freccia gialla. Quando si modifica il thread corrente, le altre finestre vengono aggiornate. Si esamineranno quindi le attività.
 
-5. Scegliere **finestre**dal menu **debug** , quindi fare clic su **attività**. Nella figura seguente viene illustrata la finestra **attività** .
+5. Scegliere **finestre** dal menu **debug** , quindi fare clic su **attività**. Nella figura seguente viene illustrata la finestra **attività** .
 
      ![Quattro attività in esecuzione nella finestra attività](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")
 
@@ -323,7 +323,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 ## <a name="summary"></a>Riepilogo
  In questa procedura dettagliata sono state illustrate le finestre del debugger **Attività in parallelo** e **Stack in parallelo**. Utilizzare queste finestre con progetti reali che a loro volta utilizzano codice multithreading. È possibile esaminare codice parallelo scritto in C++, C# o Visual Basic.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni multithread](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)

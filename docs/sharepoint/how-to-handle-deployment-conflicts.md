@@ -8,15 +8,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885612"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Procedura: gestire i conflitti di distribuzione
   È possibile fornire codice personalizzato per gestire i conflitti di distribuzione per un elemento del progetto SharePoint. Ad esempio, è possibile determinare se i file nell'elemento del progetto corrente sono già presenti nel percorso di distribuzione e quindi eliminare i file distribuiti prima della distribuzione dell'elemento del progetto corrente. Per ulteriori informazioni sui conflitti di distribuzione, vedere estensione della creazione [di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -57,7 +57,7 @@ ms.locfileid: "94903507"
 ## <a name="deploy-the-extension"></a>Distribuzione dell'estensione
  Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto di estensione (VSIX) per l'assembly e qualsiasi altro file che si vuole distribuire con l'estensione. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensione della creazione di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Estendi elementi di progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Procedura: eseguire codice quando vengono eseguiti i passaggi di distribuzione](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)

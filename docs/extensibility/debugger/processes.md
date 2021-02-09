@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a707d62443004795824c8bd437c29802635cf41
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 2fe8d170f6e7b4dcd774773109c4880d4898e0b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884832"
 ---
 # <a name="processes"></a>Processi
 Nell'architettura del debugger, un *processo*:
@@ -36,7 +36,7 @@ Nell'architettura del debugger, un *processo*:
 
   Il pacchetto di debug può alleghiare un motore di debug (DE) a un processo chiamando [Connetti](../../extensibility/debugger/reference/idebugprocess2-attach.md), il che significa che il de si connette a tutti i possibili programmi in esecuzione nel processo che è in grado di gestire. Se, ad esempio, il Common Language Runtime DE si connette a un processo, viene collegato solo ai programmi che eseguono codice gestito.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Programmi](../../extensibility/debugger/programs.md)
 - [Thread](../../extensibility/debugger/threads.md)
 - [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)

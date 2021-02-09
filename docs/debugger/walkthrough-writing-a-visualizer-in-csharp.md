@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: f127d178a8103cfaa01c43970848f5772827440f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884065"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C\#
 
@@ -268,12 +268,12 @@ Prima di tutto, è necessario creare un nuovo progetto libreria di classi.
 
 4. Nella casella **nome** Digitare un nome appropriato, ad esempio SecondVisualizer.cs.
 
-5. Scegliere **Aggiungi**.
+5. Fare clic su **Aggiungi**.
 
    Questo è tutto. Esaminare il file SecondVisualizer.cs e visualizzare il codice aggiunto dal modello. Procedere e sperimentare il codice. Ora che si conoscono le nozioni di base, è possibile creare visualizzatori più complessi e utili.
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)
 - [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)

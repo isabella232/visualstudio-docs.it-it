@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c735fe4a14a0412fbb41b28b5a40e27083c3bca6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884195"
 ---
 # <a name="visualizer-security-considerations"></a>Considerazioni sulla sicurezza del visualizzatore
 La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. Attualmente non sono noti attacchi in grado di sfruttare tali rischi, ma gli sviluppatori devono essere a conoscenza della loro esistenza e adottare misure di sicurezza adeguate come descritto in questo argomento al fine di impedire eventuali attacchi futuri.
@@ -39,7 +39,7 @@ La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. At
 
  Per ovviare a questa vulnerabilità, tenere presenti le interfacce esposte dal visualizzatore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)
 - [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

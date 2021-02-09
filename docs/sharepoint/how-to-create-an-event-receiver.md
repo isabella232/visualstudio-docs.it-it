@@ -16,15 +16,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885703"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Procedura: creare un ricevitore di eventi
   Creando i *ricevitori di eventi*, è possibile rispondere quando un utente interagisce con gli elementi di SharePoint, ad esempio elenchi o elementi di elenco. Ad esempio, il codice in un ricevitore di eventi può essere attivato quando un utente modifica il calendario o Elimina un nome da un elenco di contatti. Seguendo questo argomento, è possibile apprendere come aggiungere un ricevitore di eventi a un'istanza di elenco.
@@ -71,6 +71,6 @@ ms.locfileid: "94849883"
 
      Dopo aver scelto il pulsante **Salva** , la colonna **nome del paziente** viene aggiornata automaticamente con il nome Scott Brown.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
