@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4121ecf719ba8422f1ac8d4544a57e81aaf2efde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928510"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 Crea un enumeratore per i campi del contenitore.
@@ -28,7 +28,7 @@ Crea un enumeratore per i campi del contenitore.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT EnumFields( 
+HRESULT EnumFields( 
    FIELD_KIND         dwKindFilter,
    FIELD_MODIFIERS    dwModifiersFilter,
    LPCOLESTR          pszNameFilter,
@@ -66,10 +66,10 @@ out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK o S_FALSE se non sono presenti campi. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `dwKindFilter` `dwModifiersFilter` `pszNameFilter` È possibile combinare i parametri, e, ad esempio, per selezionare tutti i metodi virtuali pubblici denominati "MyMethod".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

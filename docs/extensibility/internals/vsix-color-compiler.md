@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e50cd1f1c8c3ff7f86cd00e4b384f548c7ec9d21
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487998"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929199"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
 Lo strumento compilatore colori estensione Visual Studio è un'applicazione console che accetta un file con estensione XML che rappresenta i colori dei temi di Visual Studio esistenti e lo converte in un file con estensione pkgdef in modo che tali colori possano essere utilizzati in Visual Studio. Poiché è facile confrontare le differenze tra i file con estensione XML, questo strumento è utile per la gestione dei colori personalizzati nel controllo del codice sorgente. Può anche essere collegato negli ambienti di compilazione in modo che l'output della compilazione sia un file con estensione pkgdef valido.
@@ -52,7 +52,7 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
 </Theme>
 ```
 
-|**Attributo**|**Definizione**|
+|**Attributo**|**Definition**|
 |-|-|
 |Nome|Necessaria Nome del tema|
 |GUID|Necessaria Il GUID del tema (deve corrispondere alla formattazione del GUID)|
@@ -76,7 +76,7 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
  </Category>
 ```
 
-|**Attributo**|**Definizione**|
+|**Attributo**|**Definition**|
 |-|-|
 |Nome|Necessaria Nome della categoria|
 |GUID|Necessaria Il GUID della categoria (deve corrispondere alla formattazione del GUID)|
@@ -92,7 +92,7 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
  </Color>
 ```
 
-|**Attributo**|**Definizione**|
+|**Attributo**|**Definition**|
 |-|-|
 |Nome|Necessaria Nome del colore|
 
@@ -105,9 +105,9 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
 <Foreground Type="type" Source="int" />
 ```
 
-|**Attributo**|**Definizione**|
+|**Attributo**|**Definition**|
 |-|-|
-|Type|Necessaria Tipo di colore. I possibili valori sono i seguenti:<br /><br /> *CT_INVALID:* Il colore non è valido o non è impostato.<br /><br /> *CT_RAW:* Valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Colore di sistema Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|
+|Tipo|Necessaria Tipo di colore. I possibili valori sono i seguenti:<br /><br /> *CT_INVALID:* Il colore non è valido o non è impostato.<br /><br /> *CT_RAW:* Valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Colore di sistema Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|
 |Source (Sorgente)|Necessaria Valore del colore rappresentato in formato esadecimale|
 
  Tutti i valori supportati dall'enumerazione __VSCOLORTYPE sono supportati dallo schema nell'attributo Type. È tuttavia consigliabile utilizzare solo CT_RAW e CT_SYSCOLOR.

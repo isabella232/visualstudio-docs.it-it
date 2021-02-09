@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5cacf6f6774ad1c0f29ff81407848b23cb3b170d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928120"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (modelli di Visual Studio)
 Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)specificato.
@@ -39,10 +39,10 @@ Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGrou
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -86,7 +86,7 @@ Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGrou
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento TemplateGroupID (modelli di Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180162988cbb09f98b7fc2e8f33f6b5d0ed322ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6796e2d4f3a7fa20e4bcab4088b6687866edf570
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928263"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Questa interfaccia viene usata dal motore di debug (DE) per inviare un messaggio a Visual Studio che richiede una risposta da parte dell'utente.
@@ -44,7 +44,7 @@ IDebugMessageEvent2 : IUnknown
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Ottiene il messaggio da visualizzare.|
 |[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Imposta la risposta, se presente, dalla finestra di messaggio.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il DE utilizzerà questa interfaccia se richiede una risposta specifica da parte dell'utente per un determinato messaggio. Se ad esempio il valore DE ottiene un messaggio "accesso negato" dopo un tentativo di connessione remota a un programma, il DE Invia questo messaggio specifico a Visual Studio in un `IDebugMessageEvent2` evento con lo stile della finestra di messaggio `MB_RETRYCANCEL` . Ciò consente all'utente di ritentare o annullare l'operazione di connessione.
 
  Il DE specifica come deve essere gestito questo messaggio seguendo le convenzioni della funzione Win32 `MessageBox` (vedere [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) per informazioni dettagliate).
@@ -58,7 +58,7 @@ IDebugMessageEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

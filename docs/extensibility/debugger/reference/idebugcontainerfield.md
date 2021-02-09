@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a72296517a64c6dcfcb8e347fb00588504aa75a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e7ed9e573236f0bdeff9c9a8433af322a5a5f79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928497"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Questa interfaccia rappresenta un simbolo o un tipo che è un contenitore per altri simboli o tipi.
@@ -25,7 +25,7 @@ Questa interfaccia rappresenta un simbolo o un tipo che è un contenitore per al
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDebugContainerField : IDebugField
+IDebugContainerField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
@@ -41,7 +41,7 @@ IDebugContainerField : IDebugField
 |------------|-----------------|
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Crea un enumeratore per i campi del contenitore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Le matrici (contenitori per le variabili), le classi (contenitori per metodi e variabili) e i metodi (contenitori per parametri e variabili locali) sono tutti esempi di contenitori.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,6 +51,6 @@ IDebugContainerField : IDebugField
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

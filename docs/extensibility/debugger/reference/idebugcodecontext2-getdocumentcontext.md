@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46510ce794ea30fdd365a77007b962a1eafd5d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaac527149d3224370f04d9dec46123b59568ac1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928744"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Ottiene il contesto del documento che corrisponde a questo contesto del codice. Il contesto del documento rappresenta una posizione nel file di origine che corrisponde al codice sorgente che ha generato questa istruzione.
@@ -28,13 +28,13 @@ Ottiene il contesto del documento che corrisponde a questo contesto del codice. 
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetDocumentContext( 
+HRESULT GetDocumentContext( 
    IDebugDocumentContext2** ppSrcCxt
 );
 ```
 
 ```csharp
-int GetDocumentContext( 
+int GetDocumentContext( 
    out IDebugDocumentContext2 ppSrcCxt
 );
 ```
@@ -46,9 +46,9 @@ out Restituisce l'oggetto [IDebugDocumentContext2](../../../extensibility/debugg
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Un motore di debug deve restituire un codice di errore, ad esempio `E_FAIL` quando il `out` parametro è `null` , ad esempio quando al contesto del codice non è associata una posizione di origine.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In genere, il contesto del documento può essere considerato come una posizione in un file di origine mentre il contesto del codice è una posizione di un'istruzione di codice in un flusso di esecuzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

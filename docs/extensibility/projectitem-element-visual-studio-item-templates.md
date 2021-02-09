@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 201f6e7845f1294892836de4cca24195fb0f1596
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672333"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928237"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelli di elemento di Visual Studio)
 Specifica un file incluso nel modello di elemento.
@@ -59,7 +59,7 @@ Specifica un file incluso nel modello di elemento.
 | `TargetFileName` | Attributo facoltativo.<br /><br /> Specifica il nome dell'elemento creato dal modello. Questo attributo è utile per l'utilizzo della sostituzione dei parametri per creare un nome di elemento. |
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -102,7 +102,7 @@ Specifica un file incluso nel modello di elemento.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
 - [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)

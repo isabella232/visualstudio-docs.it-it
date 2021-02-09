@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f0272e86f5c1bbbd840ee222b2048440338302d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b811780bf135a700f0ea451ef148598fe621e4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928354"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 Restituisce il numero di argomenti del parametro di tipo per questa istanza.
@@ -45,8 +45,8 @@ int TypeArgumentCount(
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se, ad esempio, List \<int> , questo metodo restituisce 1 e, se List \<int,float2> questo metodo restituisce 2. Questo metodo restituisce 0 se non sono presenti argomenti di tipo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

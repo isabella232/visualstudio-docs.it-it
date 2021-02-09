@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929212"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff (funzione)
 Questa funzione Visualizza le differenze tra la directory locale corrente nel disco client e il progetto corrispondente nel controllo del codice sorgente.
@@ -69,7 +69,7 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Errore non specifico.|
 |SCC_E_FILENOTEXIST|Impossibile trovare la directory locale.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione viene utilizzata per indicare al plug-in del controllo del codice sorgente di visualizzare all'utente un elenco di modifiche apportate a una directory specificata. Il plug-in apre la propria finestra, in un formato di propria scelta, per visualizzare le differenze tra la directory dell'utente sul disco e il progetto corrispondente nel controllo della versione.
 
  Se un plug-in supporta il confronto di directory, deve supportare il confronto di directory in base a un nome di file anche se le opzioni "Quick-diff" non sono supportate.
@@ -85,5 +85,5 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 > [!NOTE]
 > Questa funzione usa gli stessi flag di comando di [SccDiff](../extensibility/sccdiff-function.md). Tuttavia, un plug-in del controllo del codice sorgente può scegliere di non supportare l'operazione di "confronto rapido" per le directory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

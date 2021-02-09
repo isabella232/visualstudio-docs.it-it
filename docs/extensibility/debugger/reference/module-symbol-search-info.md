@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b296307ff30b045d7bda2db5d3605cf0a63d01e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928171"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
@@ -51,7 +51,7 @@ Combinazione di flag dell'enumerazione [SYMBOL_SEARCH_INFO_FIELDS](../../../exte
 `bstrVerboseSearchInfo`\
 Percorso di ricerca e risultati concatenati in una singola stringa.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Questa struttura viene restituita da una chiamata al metodo [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) .
 
@@ -77,7 +77,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

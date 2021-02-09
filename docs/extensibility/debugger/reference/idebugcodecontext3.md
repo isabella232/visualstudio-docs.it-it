@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3f81168d9af7fbbb93b5c59f3ab19a17107b56b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14bcfb7498ad22156ae18998ebe5958aad1b9026
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928757"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 Estende l'interfaccia [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) per abilitare il recupero delle interfacce del modulo e del processo.
@@ -40,7 +40,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Recupera un riferimento all'interfaccia del modulo di debug.|
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Recupera un riferimento all'interfaccia del processo di debug.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Si tratta di un'interfaccia facoltativa che in genere non è necessario implementare.
 
 ## <a name="requirements"></a>Requisiti

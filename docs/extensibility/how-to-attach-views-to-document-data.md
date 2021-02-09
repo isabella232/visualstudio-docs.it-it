@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e044ecbf2309d4d858c16afbdddc130b4661005
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 97926070bd06e4e8a99a4d6b2fe59e4ea57233ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929225"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Procedura: aggiungere visualizzazioni ai dati del documento
 Se si dispone di una nuova visualizzazione del documento, potrebbe essere possibile collegarla a un oggetto dati del documento esistente.
@@ -44,6 +44,6 @@ Se si dispone di una nuova visualizzazione del documento, potrebbe essere possib
 ## <a name="robust-programming"></a>Programmazione efficiente
  Quando Visual Studio chiama l'implementazione del <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metodo, restituisce un puntatore all'oggetto dati del documento esistente nel `punkDocDataExisting` parametro, se esistente. Esaminare l'oggetto dati del documento restituito in `punkDocDataExisting` per determinare se l'oggetto dati del documento è appropriato per l'editor, come descritto nella nota nel passaggio 4 della procedura descritta in questo argomento. Se è appropriato, la factory dell'editor deve fornire una seconda visualizzazione dei dati, come descritto in [supportare più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md). In caso contrario, verrà visualizzato un messaggio di errore appropriato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Supportare più visualizzazioni di documenti](../extensibility/supporting-multiple-document-views.md)
 - [Documenti e visualizzazione dei documenti negli editor personalizzati](../extensibility/document-data-and-document-view-in-custom-editors.md)

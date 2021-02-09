@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d110e66e937249fdee34f424d4f68a9b914113d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6faa47bc107c8d00864307bdb6802908e085652
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928470"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Questa interfaccia consente di accedere alle informazioni sul server in cui è in esecuzione il processo.
@@ -48,7 +48,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 |[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Recupera un valore che indica il protocollo utilizzato per comunicare con il server.|
 |[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Disabilita tutte le impostazioni di connessione automatica per tutti i motori di debug di cui questo server è a conoscenza.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un fornitore di porte personalizzato riceve l'interfaccia [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) in una chiamata all' [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md). L' `IDebugCoreServer3` interfaccia può essere ottenuta da tale interfaccia.
 
 ## <a name="requirements"></a>Requisiti
@@ -58,6 +58,6 @@ IDebugCoreServer3 : IDebugCoreServer2
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

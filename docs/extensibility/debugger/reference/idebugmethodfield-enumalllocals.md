@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c10de4db63a7706326ff6f387366c75f860408bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928160"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Crea un enumeratore per tutte le variabili locali del metodo, inclusi quelli generati internamente da un compilatore.
@@ -28,7 +28,7 @@ Crea un enumeratore per tutte le variabili locali del metodo, inclusi quelli gen
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT EnumAllLocals( 
+HRESULT EnumAllLocals( 
    IDebugAddress*     pAddress,
    IEnumDebugFields** ppLocals
 );
@@ -51,12 +51,12 @@ out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non sono presenti variabili locali. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Vengono enumerate solo le variabili definite all'interno del blocco che contiene l'indirizzo di debug specificato. Questo metodo include le variabili locali generate dal compilatore. Se sono necessarie tutte le variabili locali definite in modo esplicito nell'origine, chiamare il metodo [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) .
 
  Un metodo può contenere più contesti di ambito o blocchi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
