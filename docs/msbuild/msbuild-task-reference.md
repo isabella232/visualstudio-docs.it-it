@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f26c3c1b8256597c795fa8bcd815fd605f895fa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878383"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 
@@ -33,7 +33,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 | Parametro | Descrizione |
 |-------------------| - |
 | `Condition` | Parametro `String` facoltativo.<br /><br /> `Boolean`Espressione utilizzata dal motore MSBuild per determinare se questa attività verrà eseguita. Per informazioni sulle condizioni supportate da MSBuild, vedere [condizioni](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true** . Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori dall'attività vengono considerati avvisi.<br />-   **ErrorAndContinue** . Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [procedura: ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori dall'attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [procedura: ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -55,7 +55,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [AspNetCompiler (attività)](../msbuild/aspnetcompiler-task.md)
 
- Esegue il wrapping *aspnet_compiler.exe* , un'utilità per la precompilazione delle applicazioni ASP.NET.
+ Esegue il wrapping *aspnet_compiler.exe*, un'utilità per la precompilazione delle applicazioni ASP.NET.
 
 - [AssignCulture (attività)](../msbuild/assignculture-task.md)
 

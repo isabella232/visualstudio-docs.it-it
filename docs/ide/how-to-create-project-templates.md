@@ -10,13 +10,13 @@ helpviewer_keywords:
 - project templates [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 9030a88e67c90fab870613d71d0fe63992166222
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 9dc515b35fd57368e2be4742cb685be9414734ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878695"
 ---
 # <a name="how-to-create-project-templates"></a>Procedura: Creare modelli di progetto
 
@@ -63,7 +63,7 @@ Per trovare il modello nella finestra di dialogo in cui si crea un nuovo progett
 
 Se Visual Studio SDK è installato, è possibile eseguire il wrapping del modello finito in un file VSIX per la distribuzione con il modello **Progetto VSIX**. Per altre informazioni, vedere [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)

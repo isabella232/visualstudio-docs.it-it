@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7398db3c15c58821e05eff839a1022276401d569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e2a6dbd5d5700d4d64625490c016da2d04af6d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878942"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Specifica il modo in cui il motore di debug (DE) deve gestire un'eccezione specificata.
@@ -28,13 +28,13 @@ Specifica il modo in cui il motore di debug (DE) deve gestire un'eccezione speci
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT SetException( 
+HRESULT SetException( 
    EXCEPTION_INFO* pException
 );
 ```
 
 ```csharp
-int SetException( 
+int SetException( 
    EXCEPTION_INFO[] pException
 );
 ```
@@ -46,9 +46,9 @@ in Struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exceptio
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  È possibile che venga richiesto all'utente di arrestare il programma che genera un'eccezione al primo tentativo, alla seconda possibilità o non a tutti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f88cae3610487b92fed0d8390d44c55d3f536c4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93534a40d523c7b67a769ebea319463cf59e4b7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879020"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Crea un punto di interruzione in sospeso nel motore di debug (DE).
@@ -51,7 +51,7 @@ out Restituisce un oggetto [IDebugPendingBreakpoint2](../../../extensibility/deb
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. In genere restituisce `E_FAIL` se il `pBPRequest` parametro non corrisponde ad alcun linguaggio supportato da de di se il `pBPRequest` parametro non è valido o incompleto.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Un punto di interruzione in sospeso è essenzialmente una raccolta di tutte le informazioni necessarie per associare un punto di interruzione al codice. Il punto di interruzione in sospeso restituito da questo metodo non è associato al codice fino a quando non viene chiamato il metodo [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) .
 
 Per ogni punto di interruzione in sospeso impostato dall'utente, la gestione del debug della sessione (SDM) chiama questo metodo in ogni oggetto collegato DE. Per verificare che il punto di interruzione sia valido per i programmi in esecuzione in tale DE, spetta alla DE.
@@ -72,8 +72,8 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-- [Associazione](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Associare](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

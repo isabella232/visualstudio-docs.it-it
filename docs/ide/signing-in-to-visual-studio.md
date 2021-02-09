@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 87c0ad7517bb01aa68d98e0502e34af7c767e962
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 2bc45ae5732db5033a1b123ef18cda27c426fd6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878526"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -81,7 +81,7 @@ A meno che non esegua la disconnessione, l'utente viene automaticamente connesso
 
 Se si verificano problemi durante l'accesso, vedere la pagina relativa al supporto per le [sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ottenere assistenza.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md)
 * [Utilizzare gli account GitHub in Visual Studio](../ide/work-with-github-accounts.md)

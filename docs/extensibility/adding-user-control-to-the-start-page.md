@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879176"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Aggiungere il controllo utente alla pagina iniziale
 
@@ -185,13 +185,13 @@ Per rendere questo controllo disponibile per il progetto di pagina iniziale, nel
 
 3. Al prompt dei comandi di Visual Studio digitare **devenv/rootsuffix exp** per aprire un'istanza sperimentale di Visual Studio.
 
-4. Nell'istanza sperimentale, passare alla **Tools**  >  pagina di avvio dell'ambiente strumenti **Opzioni**  >  **Environment**  >  **Startup** e selezionare il file XAML dall'elenco a discesa **Personalizza pagina iniziale** .
+4. Nell'istanza sperimentale, passare alla   >  pagina di avvio dell'ambiente strumenti **Opzioni**  >    >   e selezionare il file XAML dall'elenco a discesa **Personalizza pagina iniziale** .
 
 5. Scegliere **Pagina iniziale** dal menu **Visualizza**.
 
     Verrà visualizzata la pagina iniziale personalizzata. Se si desidera modificare i file, è necessario chiudere l'istanza sperimentale, apportare le modifiche, copiare e incollare i file modificati e quindi riaprire l'istanza sperimentale per visualizzare le modifiche.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Controlli contenitore WPF](/previous-versions/bb675291(v=vs.110))
 - [Procedura dettagliata: aggiungere XAML personalizzato alla pagina iniziale](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

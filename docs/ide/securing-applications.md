@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07f0c685b61ab72d3db9ada79b29dcb5b4e4a1f1
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: c3d5fe8755450fd5068688064bf36b08c741c862
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878643"
 ---
 # <a name="secure-applications"></a>Proteggere le applicazioni
 
@@ -40,11 +40,11 @@ La sicurezza è anche un aspetto importante del processo di compilazione. Alcuni
 - [Dotfuscator](dotfuscator/index.md) è gratuito e consente di proteggere gli assembly .NET da reverse engineering e uso non autorizzato, come ad esempio debugging non autorizzato.
 - [La firma con nome sicuro](managing-assembly-and-manifest-signing.md) può essere usata per identificare in modo univoco i componenti software, impedendo così lo spoofing dei nomi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza in .NET](/dotnet/standard/security/index)
 - [Sicurezza di Azure](/azure/security/)
 - [Windows 10 Mobile security guide](/windows/security/threat-protection/windows-10-mobile-security-guide) (Guida alla sicurezza di Windows 10 Mobile)
 - [Apache Cordova platform security features](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true) (Funzionalità di sicurezza della piattaforma Apache Cordova)
 - [Sicurezza di ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
-- [Sicurezza Windows Forms](/dotnet/framework/winforms/windows-forms-security)
+- [Sicurezza Windows Form](/dotnet/framework/winforms/windows-forms-security)

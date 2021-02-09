@@ -22,15 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879293"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   L'elemento barra multifunzione (XML) consente di personalizzare una barra multifunzione tramite XML. Utilizzare l'elemento barra multifunzione (XML) se si desidera personalizzare la barra multifunzione in un modo non supportato dall'elemento barra multifunzione (finestra di progettazione visiva). Per un confronto tra le operazioni che è possibile eseguire con ogni elemento, vedere [Cenni preliminari sulla barra multifunzione](../vsto/Ribbon-overview.md).
@@ -145,7 +145,7 @@ ms.locfileid: "97528414"
 |`OnLoad`|Assegna il parametro <xref:Microsoft.Office.Core.IRibbonControl> al campo `Ribbon` . Microsoft Office le applicazioni chiamano questo metodo quando caricano la barra multifunzione personalizzata. È possibile utilizzare questo campo per aggiornare dinamicamente la barra multifunzione personalizzata. Per ulteriori informazioni, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 1 di 3)](/previous-versions/office/developer/office-2007/aa338202(v=office.12)).|
 |`GetResourceText`|Chiamato dal metodo `GetCustomUI` per ottenere il contenuto del file XML della barra multifunzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Procedura dettagliata: creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)

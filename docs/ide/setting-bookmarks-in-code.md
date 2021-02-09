@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ded48fcea0630bf07311cbb92ed2e258cdf4afb1
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 7158e9cf6e25463dd16cf15886b499cd9e6a3f1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878513"
 ---
 # <a name="set-bookmarks-in-code"></a>Impostare segnalibri nel codice
 
-È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni:**View** la **finestra segnalibro** (  >  **finestra segnalibro** visualizzazione) e la barra degli strumenti Editor di testo.
+È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni:la **finestra segnalibro** (  >  **finestra segnalibro** visualizzazione) e la barra degli strumenti Editor di testo.
 
 ![Barra degli strumenti segnalibro](media/bookmark-toolbar.png)
 
@@ -42,6 +42,6 @@ Per capire a colpo d'occhio a cosa si riferisce un segnalibro, è possibile rino
 
 È possibile disattivare i segnalibri (senza rimuoverli) scegliendo il pulsante **Disattiva tutti i segnalibri** nella finestra Segnalibri. È possibile riabilitarli scegliendo lo stesso pulsante (che ora è denominato **Attiva tutti i segnalibri**).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

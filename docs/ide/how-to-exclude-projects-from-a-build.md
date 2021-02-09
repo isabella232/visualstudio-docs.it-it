@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0e164c24770048495d16da852523b3dd50a43a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: aaa36e7089be12cb0775b3300a134eb77b2eb618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878669"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procedura: escludere progetti da una compilazione
 
@@ -58,7 +58,7 @@ Per altre informazioni, vedere [Informazioni sulle configurazioni della build](.
 
 ## <a name="skipped-projects"></a>Progetti ignorati
 
-I progetti possono essere ignorati durante la compilazione perché non sono aggiornati o perché sono esclusi dalla configurazione. Visual Studio USA MSBuild per compilare i progetti. MSBuild compila solo una destinazione se l'output è più vecchio dell'input, come determinato dai timestamp del file. Per forzare una ricompilazione, usare **Build**la  >  **soluzione ricompila**compilazione comando.
+I progetti possono essere ignorati durante la compilazione perché non sono aggiornati o perché sono esclusi dalla configurazione. Visual Studio USA MSBuild per compilare i progetti. MSBuild compila solo una destinazione se l'output è più vecchio dell'input, come determinato dai timestamp del file. Per forzare una ricompilazione, usare la  >  **soluzione ricompila** compilazione comando.
 
 Nel riquadro **compilazione** della finestra di **output** , Visual Studio riporta il numero di progetti aggiornati, il numero che è stato compilato correttamente, il numero che ha avuto esito negativo e il numero ignorato. Il conteggio ignorato non include i progetti non compilati perché sono stati aggiornati. Quando i progetti vengono esclusi dalla configurazione attiva, verranno ignorati durante la compilazione. Nell'output di compilazione viene visualizzato un messaggio che indica che il progetto è stato ignorato:
 
@@ -69,7 +69,7 @@ Nel riquadro **compilazione** della finestra di **output** , Visual Studio ripor
 
 Per individuare il motivo per cui un progetto è stato ignorato, prendere nota della configurazione attiva ( `Debug x86` nell'esempio precedente) e scegliere **Compila**  >  **Configuration Manager**. È possibile visualizzare o modificare i progetti che vengono ignorati per ogni configurazione, come descritto in questo articolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)

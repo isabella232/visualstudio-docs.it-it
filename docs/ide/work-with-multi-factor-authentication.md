@@ -6,16 +6,16 @@ ms.topic: conceptual
 description: Informazioni su come usare Visual Studio con gli account che richiedono l'autenticazione a più fattori.
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 6b85d64d3f84bce34f2a9b30d9caf01127149abc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90093348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878487"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Come usare Visual Studio con gli account che richiedono l'autenticazione a più fattori
 
@@ -83,7 +83,7 @@ Verrà visualizzata la finestra di dialogo **filtro account** , che consente di 
 
 :::image type="content" source="media/select-filter-account.png" alt-text="Selezionare l'account da filtrare.":::
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedi a Visual Studio](signing-in-to-visual-studio.md)
 - [Accesso a Visual Studio per Mac](/visualstudio/mac/signing-in)

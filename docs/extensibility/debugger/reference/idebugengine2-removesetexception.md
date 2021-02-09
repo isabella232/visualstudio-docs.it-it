@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e811ce2e387c299ff3655799bf35185c1d2029b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29756b3be6d2c46d39b581dd3db0af61bfaa18f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878929"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 Rimuove l'eccezione specificata in modo che non venga più gestita dal motore di debug.
@@ -28,13 +28,13 @@ Rimuove l'eccezione specificata in modo che non venga più gestita dal motore di
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT RemoveSetException( 
+HRESULT RemoveSetException( 
    EXCEPTION_INFO* pException
 );
 ```
 
 ```csharp
-int RemoveSetException( 
+int RemoveSetException( 
    EXCEPTION_INFO[] pException
 );
 ```
@@ -46,11 +46,11 @@ in Struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exceptio
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'eccezione da rimuovere deve essere stata precedentemente impostata da una chiamata precedente al metodo [seexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
 
  Per rimuovere tutte le eccezioni set contemporaneamente, chiamare il metodo [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

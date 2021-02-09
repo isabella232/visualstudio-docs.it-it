@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7784b077093660eb5f9c9a0bf471a8965811ba72
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa29746a692357b5ecb1edf7697620b91c045974
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879163"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Aggiungere i comandi di Visual Studio a una pagina iniziale
 
@@ -112,6 +112,6 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 
  Per un esempio, vedere [procedura dettagliata: salvataggio delle impostazioni utente in una pagina iniziale](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiunta del controllo utente alla pagina iniziale](../extensibility/adding-user-control-to-the-start-page.md)

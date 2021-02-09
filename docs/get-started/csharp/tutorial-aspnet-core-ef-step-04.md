@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 9625ce43d94158732c2d6af738a1f1abc84f666e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878773"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Passaggio 4: esporre un'API Web dall'app ASP.NET Core
 
@@ -228,7 +228,7 @@ Nel prossimo video verrà spiegato come distribuire l'app in Azure.
 
 [Passaggio 5: distribuzione dell'app ASP.NET Core in Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Introduzione a Swashbuckle e ad ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio&preserve-view=true)
 - [Pagine della Guida dell'API Web ASP.NET Core con Swagger/OpenAPI](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2&preserve-view=true)

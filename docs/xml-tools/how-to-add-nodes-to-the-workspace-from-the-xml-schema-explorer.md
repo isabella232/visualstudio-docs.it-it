@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: baa4d32d14a85e27bb0bb453c8c81f0bab486379
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f895d29e46556bff8543563841939640c501f84d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879267"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedura: aggiungere nodi all'area di lavoro da XML Schema Explorer
 
-In questo argomento viene illustrato come aggiungere nodi all' [area di lavoro di progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md) da **XML Schema Explorer** . Questa operazione può essere eseguita trascinando i nodi da **XML Schema Explorer** su una visualizzazione di progettazione XSD o tramite il menu di scelta rapida di **XML Schema Explorer** . È inoltre possibile aggiungere nodi evidenziati in seguito a una ricerca eseguita da **XML Schema Explorer** . Per ulteriori informazioni, vedere [procedura: aggiungere nodi dei risultati di ricerca del set di schemi all'area di lavoro](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+In questo argomento viene illustrato come aggiungere nodi all' [area di lavoro di progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md) da **XML Schema Explorer**. Questa operazione può essere eseguita trascinando i nodi da **XML Schema Explorer** su una visualizzazione di progettazione XSD o tramite il menu di scelta rapida di **XML Schema Explorer** . È inoltre possibile aggiungere nodi evidenziati in seguito a una ricerca eseguita da **XML Schema Explorer**. Per ulteriori informazioni, vedere [procedura: aggiungere nodi dei risultati di ricerca del set di schemi all'area di lavoro](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
 > È possibile aggiungere solo nodi globali all' [area di lavoro di progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md).
@@ -28,17 +28,17 @@ In questo argomento viene illustrato come aggiungere nodi all' [area di lavoro d
 
 1. Seguire i passaggi in [procedura: creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo in XSD Explorer. Selezionare **Mostra in visualizzazione grafico** .
+2. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo in XSD Explorer. Selezionare **Mostra in visualizzazione grafico**.
 
      Il nodo `purchaseOrderType` viene visualizzato nell'area di progettazione della visualizzazione grafico.
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Per trascinare e rilasciare un nodo su una visualizzazione
 
-1. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo nella visualizzazione grafico. Selezionare **Mostra in XML Schema Explorer** .
+1. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo nella visualizzazione grafico. Selezionare **Mostra in XML Schema Explorer**.
 
-     Il nodo viene evidenziato in **XML Schema Explorer** .
+     Il nodo viene evidenziato in **XML Schema Explorer**.
 
-2. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo in **XML Schema Explorer** e scegliere **Mostra tutti i riferimenti** .
+2. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo in **XML Schema Explorer** e scegliere **Mostra tutti i riferimenti**.
 
      Il nodo `purchaseOrder` viene evidenziato.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8616dd827f99dfcfbc337cb5cdf5ac5a7d392e88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e43d8d13f34b8477ab870c80842ff33eef72a7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878916"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 Imposta le impostazioni locali del motore di debug (DE).
@@ -28,13 +28,13 @@ Imposta le impostazioni locali del motore di debug (DE).
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT SetLocale( 
+HRESULT SetLocale( 
    WORD wLangID
 );
 ```
 
 ```csharp
-int SetLocale( 
+int SetLocale( 
    ushort wLangID
 );
 ```
@@ -46,8 +46,8 @@ in Specifica le impostazioni locali della lingua. Ad esempio 1033 per l'inglese.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene chiamato da gestione debug sessione (SDM) per propagare le impostazioni locali dell'IDE in modo che le stringhe restituite da DE siano localizzate correttamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
