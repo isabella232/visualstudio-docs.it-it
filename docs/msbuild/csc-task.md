@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901343"
 ---
 # <a name="csc-task"></a>Csc (attività)
 
-Esegue il wrapping di *csc.exe* e produce file eseguibili ( *EXE* ), librerie a collegamento dinamico (file *DLL* ) o moduli di codice (file *NETMODULE* ). Per altre informazioni su *csc.exe* , vedere [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index).
+Esegue il wrapping di *csc.exe* e produce file eseguibili (*EXE*), librerie a collegamento dinamico (file *DLL*) o moduli di codice (file *NETMODULE*). Per altre informazioni su *csc.exe*, vedere [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index).
 
 ## <a name="parameters"></a>Parametri
 
@@ -60,9 +60,9 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .
 | `LinkResources` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Crea un collegamento a una risorsa .NET Framework nel file di output. Il file di risorse non viene inserito nel file di output.<br /><br /> Gli elementi passati a questo parametro possono avere voci di metadati facoltativi denominati `LogicalName` e `Access`. `LogicalName` corrisponde al parametro `identifier` dell'opzione `/linkresource` e `Access` corrisponde al parametro `accessibility-modifier`. Per altre informazioni, vedere [-linkresource (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option). |
 | `MainEntryPoint` | Parametro `String` facoltativo.<br /><br /> Specifica il percorso del metodo `Main`. Per altre informazioni, vedere [-main (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). |
 | `ModuleAssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica il nome dell'assembly di cui fa parte il modulo. |
-| `NoConfig` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, indica al compilatore di non eseguire la compilazione con il file *csc.rsp* . Per altre informazioni, vedere [-noconfig (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option). |
+| `NoConfig` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, indica al compilatore di non eseguire la compilazione con il file *csc.rsp*. Per altre informazioni, vedere [-noconfig (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option). |
 | `NoLogo` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, elimina la visualizzazione dei messaggi informativi del compilatore. Per altre informazioni, vedere [-nologo (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option). |
-| `NoStandardLib` | Parametro `Boolean` facoltativo.<br /><br /> Se `true` , impedisce l'importazione di *mscorlib.dll* , che definisce l'intero spazio dei nomi System. Usare questo parametro se si vuole definire o creare uno spazio dei nomi e oggetti di sistema personalizzati. Per altre informazioni, vedere [-nostdlib (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
+| `NoStandardLib` | Parametro `Boolean` facoltativo.<br /><br /> Se `true` , impedisce l'importazione di *mscorlib.dll*, che definisce l'intero spazio dei nomi System. Usare questo parametro se si vuole definire o creare uno spazio dei nomi e oggetti di sistema personalizzati. Per altre informazioni, vedere [-nostdlib (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
 | `NoWin32Manifest` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, non includere il manifesto Win32 predefinito. |
 | `Optimize` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, abilita le ottimizzazioni. Se `false`, disabilita le ottimizzazioni. Per altre informazioni, vedere [-optimize (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option). |
 | `OutputAssembly` | Parametro di ouput facoltativo `String`.<br /><br /> Specifica il nome del file di output. Per altre informazioni, vedere [-out (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option). |
@@ -80,9 +80,9 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .
 | `WarningLevel` | Parametro `Int32` facoltativo.<br /><br /> Specifica il livello di avviso da visualizzare nel compilatore. Per ulteriori informazioni, vedere [-warn (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option). |
 | `WarningsAsErrors` | Parametro `String` facoltativo.<br /><br /> Specifica un elenco di avvisi da considerare come errori. Per altre informazioni, vedere [-warnaserror (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Questo parametro esegue l'override del parametro `TreatWarningsAsErrors`. |
 | `WarningsNotAsErrors` | Parametro `String` facoltativo.<br /><br /> Specifica un elenco di avvisi che non vengono considerati errori. Per altre informazioni, vedere [-warnaserror (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Questo parametro è utile solo se il parametro `TreatWarningsAsErrors` è impostato su `true`. |
-| `Win32Icon` | Parametro `String` facoltativo.<br /><br /> Inserisce un file con *estensione ico* nell'assembly, che fornisce al file di output l'aspetto desiderato in **Esplora file** . Per altre informazioni, vedere [-win32icon (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
+| `Win32Icon` | Parametro `String` facoltativo.<br /><br /> Inserisce un file con *estensione ico* nell'assembly, che fornisce al file di output l'aspetto desiderato in **Esplora file**. Per altre informazioni, vedere [-win32icon (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
 | `Win32Manifest` | Parametro `String` facoltativo.<br /><br /> Specifica il manifesto Win32 da includere. |
-| `Win32Resource` | Parametro `String` facoltativo.<br /><br /> Inserisce un file di risorse Win32 ( *res* ) nel file di output. Per altre informazioni, vedere [-win32res (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
+| `Win32Resource` | Parametro `String` facoltativo.<br /><br /> Inserisce un file di risorse Win32 (*res*) nel file di output. Per altre informazioni, vedere [-win32res (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
@@ -97,7 +97,7 @@ Nell'esempio seguente viene usata l'attività `Csc` per compilare un eseguibile 
     EmitDebugInformation="true" />
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

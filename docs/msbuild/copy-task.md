@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b83541a98e995a55a38a5d736c97620f15076ead
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901504"
 ---
 # <a name="copy-task"></a>Copy (attività)
 
@@ -78,7 +78,7 @@ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla cl
 
 ## <a name="example-1"></a>Esempio 1
 
-Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination* .
+Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -99,7 +99,7 @@ Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` ve
 
 ## <a name="example-2"></a>Esempio 2
 
-Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da *c:\MySourceTree* a *c:\MyDestinationTree* , mantenendo al tempo stesso la struttura di directory.
+Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da *c:\MySourceTree* a *c:\MyDestinationTree*, mantenendo al tempo stesso la struttura di directory.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -118,7 +118,7 @@ Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsi
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

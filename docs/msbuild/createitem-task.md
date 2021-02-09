@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f2d0e165171cb3619d3690e129e18f778504969e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901392"
 ---
 # <a name="createitem-task"></a>CreateItem (attività)
 
@@ -34,7 +34,7 @@ Inserisce elementi di input nelle raccolte di elementi. Questo consente di copia
 > [!NOTE]
 > Si tratta di un'attività deprecata. A partire da .NET Framework 3.5, è possibile posizionare i gruppi di elementi all'interno di elementi [Target](../msbuild/target-element-msbuild.md). Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
-## <a name="attributes"></a>Attributes
+## <a name="attributes"></a>Attributi
 
  Nella tabella che segue vengono descritti i parametri dell'attività `CreateItem` .
 
@@ -53,7 +53,7 @@ Inserisce elementi di input nelle raccolte di elementi. Questo consente di copia
 
  L'esempio di codice seguente mostra come creare una nuova raccolta di elementi denominata `MySourceItemsWithMetadata` a partire dalla raccolta di elementi `MySourceItems`. L'attività `CreateItem` popola la nuova raccolta con elementi dell'elemento `MySourceItems`. A ogni elemento della nuova raccolta viene poi aggiunto un altro metadato denominato `MyMetadata` di valore `Hello`.
 
- Al termine dell'esecuzione dell'attività, la raccolta di elementi `MySourceItemsWithMetadata` contiene gli elementi *file1.resx* e *file2.resx* , entrambi con voci di metadati per `MyMetadata`. La raccolta di elementi `MySourceItems` rimane invariata.
+ Al termine dell'esecuzione dell'attività, la raccolta di elementi `MySourceItemsWithMetadata` contiene gli elementi *file1.resx* e *file2.resx*, entrambi con voci di metadati per `MyMetadata`. La raccolta di elementi `MySourceItems` rimane invariata.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -82,7 +82,7 @@ Inserisce elementi di input nelle raccolte di elementi. Questo consente di copia
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|*file1. resx* ( `MyMetadata="Hello"` )<br /><br /> *file2. resx* ( `MyMetadata="Hello"` )|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

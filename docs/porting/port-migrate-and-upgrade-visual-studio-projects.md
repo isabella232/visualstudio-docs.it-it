@@ -7,7 +7,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 8182f8982734bd0089d483c9acefc230c9baaa91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901318"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio
 
@@ -104,7 +104,7 @@ Vedere gli articoli seguenti per ulteriori informazioni:
 - [Linee guida per ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Linee guida per la selezione del framework](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Ciclo di vita e manutenzione del prodotto Visual Studio](/visualstudio/releases/2019/servicing/)
@@ -198,7 +198,7 @@ Vedere gli articoli seguenti per ulteriori informazioni:
 - [Linee guida per ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Linee guida per la selezione del framework](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento alla migrazione e all'aggiornamento di un progetto per Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Ciclo di vita e manutenzione del prodotto Visual Studio](/visualstudio/releases/2019/servicing/)
