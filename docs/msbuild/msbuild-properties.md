@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a8f53613c71a51ab2e5bd8441cb4605da795e8a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897754"
 ---
 # <a name="msbuild-properties"></a>proprietà di MSBuild
 
@@ -66,7 +66,7 @@ Le proprietà sono coppie nome-valore che possono essere usate per configurare l
 
 ## <a name="registry-properties"></a>Proprietà del Registro di sistema
 
- È possibile leggere i valori del registro di sistema usando la sintassi seguente, dove `Hive` è l'hive del registro di sistema (ad esempio, **HKEY_LOCAL_MACHINE** ), `MyKey` è il nome della chiave, `MySubKey` è il nome della sottochiave e `Value` è il valore della sottochiave.
+ È possibile leggere i valori del registro di sistema usando la sintassi seguente, dove `Hive` è l'hive del registro di sistema (ad esempio, **HKEY_LOCAL_MACHINE**), `MyKey` è il nome della chiave, `MySubKey` è il nome della sottochiave e `Value` è il valore della sottochiave.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -90,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Proprietà globali
 
- MSBuild consente di impostare le proprietà nella riga di comando usando l'opzione **-Property** (o **-p** ). Questi valori delle proprietà globali eseguono l'override dei valori delle proprietà impostati nel file di progetto. incluse le proprietà di ambiente, ma non le proprietà riservate, che non possono essere modificate.
+ MSBuild consente di impostare le proprietà nella riga di comando usando l'opzione **-Property** (o **-p**). Questi valori delle proprietà globali eseguono l'override dei valori delle proprietà impostati nel file di progetto. incluse le proprietà di ambiente, ma non le proprietà riservate, che non possono essere modificate.
 
  L'esempio seguente imposta la proprietà `Configuration` globale su `DEBUG`.
 

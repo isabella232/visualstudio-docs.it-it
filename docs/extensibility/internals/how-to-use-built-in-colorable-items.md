@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898308"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Procedura: utilizzare elementi colorabili incorporati
 Prima di utilizzare gli elementi colorabili incorporati, è necessario innanzitutto segnalare all'Integrated Development Environment (IDE) che non si forniscono elementi colorabili personalizzati, che in questo caso sarebbero <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> oggetti. A tale scopo, impostare una voce del registro di sistema per il servizio di linguaggio.

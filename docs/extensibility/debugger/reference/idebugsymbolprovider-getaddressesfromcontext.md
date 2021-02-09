@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9a7b3f9096bbbef1c4de2161c6bb3b6a4c59e4d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897199"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Questo metodo esegue il mapping di un contesto di documento in una matrice di indirizzi di debug.
@@ -28,7 +28,7 @@ Questo metodo esegue il mapping di un contesto di documento in una matrice di in
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetAddressesFromContext( 
+HRESULT GetAddressesFromContext( 
    IDebugDocumentContext2* pDocContext,
    BOOL                    fStatmentOnly,
    IEnumDebugAddresses**   ppEnumBegAddresses,
@@ -61,12 +61,12 @@ out Restituisce un enumeratore [IEnumDebugAddresses](../../../extensibility/debu
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un contesto di documento in genere indica un intervallo di righe di origine. Questo metodo fornisce gli indirizzi di debug iniziale e finale associati a queste righe. Alcuni linguaggi consentono istruzioni che si estendono su più righe o righe che contengono più di un'istruzione. Questo metodo fornisce un flag per limitare gli indirizzi di debug a una singola istruzione.
 
  È possibile che una singola istruzione disponga di più indirizzi di debug, come nel caso di modelli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

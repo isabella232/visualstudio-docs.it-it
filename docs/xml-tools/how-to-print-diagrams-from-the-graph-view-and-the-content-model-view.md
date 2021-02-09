@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ecf1c9cf062dec8dd1d83a5b99bb8c498667e0f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 16366780d4f8d62cd139d22b09529e9602d9b3c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897415"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Procedura: stampare i diagrammi dalla visualizzazione grafico e dalla visualizzazione modello di contenuto
 
@@ -31,7 +31,7 @@ In questo argomento viene descritto come stampare un diagramma dalla visualizzaz
 
 3. Stampare l'immagine salvata nel file XPS tramite un visualizzatore XPS.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visualizzazione grafico](../xml-tools/graph-view.md)
 - [Visualizzazione modello di contenuto](../xml-tools/content-model-view.md)

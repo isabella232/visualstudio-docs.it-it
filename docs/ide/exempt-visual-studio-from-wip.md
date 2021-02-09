@@ -6,15 +6,15 @@ ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 34765cc7ac303bd44c3c4ccca87ea7c00a36ccda
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 6ff233b959b4ad691646c5e47c659b398b283b5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898008"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Configurare Visual Studio come app esclusa da WIP
 
@@ -36,6 +36,6 @@ Poiché Visual Studio include più file binari, [creare un file dei criteri di A
 
 Per specificare dove Visual Studio può accedere ai dati aziendali nella rete, seguire questi [passaggi per definire la posizione in cui le app protette possono individuare e inviare i dati aziendali](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Per impedire a Windows di bloccare le connessioni alle risorse cloud attraverso un indirizzo IP, assicurarsi di aggiungere la stringa /\*AppCompat\*/ all'impostazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - Articolo sul [comportamento delle app con WIP](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d7d7e664f0c39a46e1d84df0c5a0842c7270c942
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896895"
 ---
 # <a name="project-model-core-components"></a>Componenti di base del modello di progetto
 Le tabelle seguenti si espandono sul modello di progetto. Le tabelle presentano brevi descrizioni delle interfacce e dei servizi identificati nel modello e delle interfacce e dei servizi associati a oggetti specifici. Inoltre, le tabelle illustrano in dettaglio altre interfacce facoltative per la creazione e la manutenzione di progetti, a seconda dei requisiti del tipo di progetto specifico.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b337d9c6742c1c3b0379a757761955151cc6dc6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898657"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ottiene il nome e l'identificatore del motore di debug (DE) che esegue un programma.
@@ -28,7 +28,7 @@ Ottiene il nome e l'identificatore del motore di debug (DE) che esegue un progra
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetEngineInfo ( 
+HRESULT GetEngineInfo ( 
    BSTR* pbstrEngine,
    GUID* pguidEngine
 );
@@ -51,5 +51,5 @@ out Restituisce l'identificatore univoco globale del DE che esegue il programma 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d527dfcfcd09e4d70adca86436aa56e1852bee70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74a25e4eefe260dd61dc951118cdb6390a61b52d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898493"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 Consente a un nodo del programma di ricevere una notifica di un tentativo di connessione al programma associato.
@@ -41,7 +41,7 @@ IDebugProgramNodeAttach2 : IUnknown
 |------------|-----------------|
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Si connette al programma associato o rinvia il processo di associazione al metodo di [connessione](../../../extensibility/debugger/reference/idebugengine2-attach.md) .|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia è l'alternativa preferita al metodo [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) deprecato. Tutti i motori di debug vengono sempre caricati con la `CoCreateInstance` funzione, ovvero ne viene creata un'istanza fuori dallo spazio degli indirizzi del programma di cui è in corso il debug.
 
  Se un'implementazione precedente del `IDebugProgramNode2::Attach_V7` Metodo stava semplicemente impostando il `GUID` del programma di cui è in corso il debug, è necessario implementare solo il metodo [onconnettit](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .
@@ -55,7 +55,7 @@ IDebugProgramNodeAttach2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f1bd63d6b53359cf3b86f5e3849cb18bd8367f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f801b6fd4b030866886f86b8cd01916645c2219c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898783"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Ottiene il titolo, il nome descrittivo o il nome file del processo di hosting del programma.
@@ -28,14 +28,14 @@ Ottiene il titolo, il nome descrittivo o il nome file del processo di hosting de
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetHostName( 
+HRESULT GetHostName( 
    DWORD dwType,
    BSTR* pbstrHostName
 );
 ```
 
 ```csharp
-int GetHostName( 
+int GetHostName( 
    uint dwType,
    out string pbstrHostName
 );
@@ -51,9 +51,9 @@ out Restituisce il nome richiesto del processo di hosting.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In un'implementazione tipica di questo metodo, il `dwType` parametro viene ignorato e viene restituito un nome descrittivo del computer host. Un'altra possibile implementazione consiste nel passare il `dwType` parametro a una chiamata al metodo [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) per ottenere il nome.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
 - [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

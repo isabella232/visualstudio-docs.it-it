@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f206de825d021d8daa2977a839f96fabd5e9db7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898861"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 Questa interfaccia consente al gestore di debug della sessione di connettersi a un programma e di ottenere il nodo del programma associato a un programma.
@@ -42,7 +42,7 @@ IDebugProgramEx2 : IUnknown
 |[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Connette un programma a una sessione.|
 |[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Ottiene il nodo di programma associato a un programma.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia è privata tra il SDM e il programma.
 
 ## <a name="requirements"></a>Requisiti
@@ -52,6 +52,6 @@ IDebugProgramEx2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

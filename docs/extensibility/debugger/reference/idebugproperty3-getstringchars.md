@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b188b386dea7279530e186073847e26915af63d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897291"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la stringa associata a questa proprietà e la archivia in un buffer fornito dall'utente.
@@ -58,7 +58,7 @@ out Dove viene restituito il numero di caratteri effettivamente archiviati nel b
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 In C++ è necessario prestare attenzione per garantire che il buffer sia costituito da almeno `buflen` caratteri Unicode. Si noti che un carattere Unicode ha una lunghezza di 2 byte.
 
 > [!NOTE]

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 80e511d8-9b40-4a85-aa5d-952fa5ee6ae7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e6eac7c97b9d375f32e36a372d6f31175c79098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e6460653795720f10dca7f304035c49e4d8e035
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898517"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 Questa interfaccia rappresenta un programma di cui è possibile eseguire il debug.
@@ -47,7 +47,7 @@ IDebugProgramNode2 : IUnknown
 |[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)|Ottiene il nome e l'identificatore del DE che esegue questo programma.|
 |[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|Deprecato. NON USARE.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il gestore di debug della sessione (SDM) chiama in genere [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) per ottenere questa interfaccia.
 
 ## <a name="requirements"></a>Requisiti
@@ -57,7 +57,7 @@ IDebugProgramNode2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
 - [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

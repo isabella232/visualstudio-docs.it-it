@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30818627f8ebc293e444b43adb0590db077da4a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898829"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 Alleghi una sessione a un programma.
@@ -28,7 +28,7 @@ Alleghi una sessione a un programma.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Attach( 
+HRESULT Attach( 
    IDebugEventCallback2* pCallback,
    DWORD                 dwReason,
    IDebugSession2*       pSession
@@ -36,7 +36,7 @@ HRESULT Attach( 
 ```
 
 ```csharp
-int Attach( 
+int Attach( 
    IDebugEventCallback2 pCallback,
    uint                 dwReason,
    IDebugSession2       pSession
@@ -56,11 +56,11 @@ in Valore che identifica in modo univoco la sessione che si connette al programm
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Questo metodo deve restituire `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` se il programma è già collegato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La porta che contiene il programma può usare il valore in `pSession` per determinare la sessione che sta tentando di connettersi al programma. Se, ad esempio, una porta consente la connessione di una sola sessione di debug a un processo alla volta, la porta può determinare se la stessa sessione è già collegata ad altri programmi nel processo.
 
 > [!NOTE]
 > L'interfaccia passata deve `pSession` essere considerata solo come un cookie, un valore che identifica in modo univoco il gestore di debug della sessione che si connette al programma; nessuno dei metodi nell'interfaccia fornita è funzionante.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

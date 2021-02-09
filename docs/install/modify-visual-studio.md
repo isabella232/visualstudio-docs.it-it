@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 17a02fb8c05c6f1720aa1b352e30c46e04a8b69d
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: ba8f9ff3bc0aca36aa42582e5c76504aae757c0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897877"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificare Visual Studio aggiungendo o rimuovendo carichi di lavoro e componenti
 
@@ -157,7 +157,7 @@ Per impostazione predefinita, il programma di installazione corrisponde alla lin
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Elenco degli ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
 * [Aggiornare Visual Studio](update-visual-studio.md)

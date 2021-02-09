@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898258"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Colorazione della sintassi in un servizio di linguaggio legacy
 La colorazione della sintassi è una funzionalità che determina la visualizzazione di elementi diversi di un linguaggio di programmazione in un file di origine con colori e stili diversi. Per supportare questa funzionalità, è necessario fornire un parser o uno scanner in grado di identificare i tipi di elementi o token lessicali nel file. Molti linguaggi distinguono le parole chiave, i delimitatori, ad esempio le parentesi o le parentesi graffe, e i commenti per colorarli in modi diversi.

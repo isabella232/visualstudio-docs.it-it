@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1120e62d5dbed45f11b43ea0e131ee3173c1751c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2a9cc66e0e3b56d27c71147bd1b77ee3e559b6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896950"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Questo metodo restituisce una copia dell'enumerazione corrente come oggetto separato.
@@ -46,8 +46,8 @@ int Clone(
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata di questo metodo. Tuttavia, gli Stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

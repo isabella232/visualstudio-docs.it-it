@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7702e221-feb1-446b-a224-cb46c420987e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e02a78350fead837d4540c435b97a423dfdd471
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9fb207539cdc6a12819fad4f87c6da3540f1aba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898844"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
 Ottiene l'identificatore del processo che ospita il programma.
@@ -28,13 +28,13 @@ Ottiene l'identificatore del processo che ospita il programma.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetHostId( 
+HRESULT GetHostId( 
    AD_PROCESS_ID* pdwId
 );
 ```
 
 ```csharp
-int GetHostId( 
+int GetHostId( 
    AD_PROCESS_ID[] pdwId
 );
 ```
@@ -46,6 +46,6 @@ int GetHostId( 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

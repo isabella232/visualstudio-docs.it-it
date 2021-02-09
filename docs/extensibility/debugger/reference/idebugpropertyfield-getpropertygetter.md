@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ab9f861a-42ad-4a82-9ae6-2606176f755a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4120f4b9854eaf43d5c7119bd0a19dd21fbd584
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30ddc04eca7fb3932ae0797aaa18b1e665ce85e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897247"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 Ottiene il metodo che ottiene la proprietà.
@@ -28,7 +28,7 @@ Ottiene il metodo che ottiene la proprietà.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetPropertyGetter( 
+HRESULT GetPropertyGetter( 
    IDebugMethodField** ppField
 );
 ```
@@ -46,10 +46,10 @@ out Restituisce un oggetto [IDebugMethodField](../../../extensibility/debugger/r
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per ottenere il metodo che imposta la proprietà, [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) chiama il metodo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
 - [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

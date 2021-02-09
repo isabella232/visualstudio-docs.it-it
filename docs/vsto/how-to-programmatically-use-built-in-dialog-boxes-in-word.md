@@ -13,15 +13,15 @@ helpviewer_keywords:
 - dialog boxes, Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b2c1a748d38c2b649705fa1ad2de21553b710634
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 18a6176c6472f1587e00364f0e0bd300611eabf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897526"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Procedura: usare finestre di dialogo predefinite in Word a livello di codice
   Quando si lavora con Microsoft Office Word, in alcuni casi è necessario visualizzare le finestre di dialogo per l'input dell'utente. Sebbene sia possibile crearne di personalizzati, è anche possibile adottare l'approccio di utilizzo delle finestre di dialogo predefinite in Word, che vengono esposte nella <xref:Microsoft.Office.Interop.Word.Dialogs> raccolta dell' <xref:Microsoft.Office.Interop.Word.Application> oggetto. In questo modo è possibile accedere a oltre 200 delle finestre di dialogo predefinite, rappresentate come enumerazioni.
@@ -48,7 +48,7 @@ ms.locfileid: "97523623"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: usare le finestre di dialogo di Word in modalità nascosta a livello di codice](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

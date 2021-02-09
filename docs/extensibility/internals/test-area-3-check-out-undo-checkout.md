@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6292051e6ddf11e3ce4b56648574e0207bb5a41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: bb59b0342d67ab9118ffcdba74c177106fcceea0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898116"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Area di test 3: estrarre o annullare l'estrazione
 Questa area di test del plug-in del controllo del codice sorgente illustra la modifica e il ripristino degli elementi dall'archivio delle versioni **usando i comandi Estrai** e **Annulla estrazione** .

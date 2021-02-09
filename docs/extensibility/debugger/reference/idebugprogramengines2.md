@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94df9acc6a0478ba2cb36022bc8618c69be97b8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56c74b265331b67564856baa003632d8d778bfb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898895"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Questa interfaccia viene utilizzata dai nodi del programma per specificare tutti i possibili motori di debug (DE) in grado di eseguire il debug del programma.
@@ -42,7 +42,7 @@ IDebugProgramEngines2 : IUnknown
 |[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Indica tutte le DEs possibili che possono eseguire il debug del programma.|
 |[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Consente di selezionare il DE da usare per il debug del programma.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Una volta scelto dall'utente, tale scelta viene registrata nel nodo del programma chiamando il [motore](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Il motore selezionato diventa il motore restituito da [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
 
 ## <a name="requirements"></a>Requisiti
@@ -52,7 +52,7 @@ IDebugProgramEngines2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)

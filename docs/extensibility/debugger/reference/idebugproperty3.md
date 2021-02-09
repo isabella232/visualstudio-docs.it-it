@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2819724c204631112fd1a3e827126c4bc176972
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f24e7ec1842866011bb4d3735104a043bc77e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897265"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Questa interfaccia fornisce supporto per:
@@ -55,7 +55,7 @@ IDebugProperty3 : IDebugProperty2
 |[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Restituisce l'elenco di visualizzatori personalizzati con cui questa proprietà può essere visualizzata.|
 |[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Imposta il valore di questa proprietà, restituendo un messaggio di errore se si è verificato un problema.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) è la modalità consigliata per la gestione del debug della sessione (SDM) per impostare il valore di una proprietà.
 
 ## <a name="requirements"></a>Requisiti
@@ -65,7 +65,7 @@ IDebugProperty3 : IDebugProperty2
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

@@ -6,15 +6,15 @@ ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 80de8b5c8b5699f4ddbf5148e16afd2da42388f2
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 24e9324444dbeb10a86184f7c15ea8b88e118177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898048"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -191,7 +191,7 @@ Questa generazione di codice si applica a:
 
    ![Screenshot che mostra che il campo o la proprietà è dichiarata e automaticamente denominata in modo che corrisponda ai tipi.](media/constructor5-result-cs.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generazione codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

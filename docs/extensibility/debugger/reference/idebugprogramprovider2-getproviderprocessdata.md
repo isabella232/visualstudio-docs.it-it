@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e958900307f5f7915f58679709c88f80c2abfc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce5bee4f2401e3895570f16a6de5567b5979d98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898292"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Recupera un elenco di programmi in esecuzione da un processo specificato.
@@ -28,22 +28,22 @@ Recupera un elenco di programmi in esecuzione da un processo specificato.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetProviderProcessData(
-   PROVIDER_FLAGS         Flags,
-   IDebugDefaultPort2*    pPort,
-   AD_PROCESS_ID          processId,
-   CONST_GUID_ARRAY       EngineFilter,
-   PROVIDER_PROCESS_DATA* pProcess
+HRESULT GetProviderProcessData(
+   PROVIDER_FLAGS         Flags,
+   IDebugDefaultPort2*    pPort,
+   AD_PROCESS_ID          processId,
+   CONST_GUID_ARRAY       EngineFilter,
+   PROVIDER_PROCESS_DATA* pProcess
 );
 ```
 
 ```csharp
-int GetProviderProcessData(
-   enum_PROVIDER_FLAGS     Flags,
-   IDebugDefaultPort2      pPort,
-   AD_PROCESS_ID           ProcessId,
-   CONST_GUID_ARRAY        EngineFilter,
-   PROVIDER_PROCESS_DATA[] pProcess
+int GetProviderProcessData(
+   enum_PROVIDER_FLAGS     Flags,
+   IDebugDefaultPort2      pPort,
+   AD_PROCESS_ID           ProcessId,
+   CONST_GUID_ARRAY        EngineFilter,
+   PROVIDER_PROCESS_DATA[] pProcess
 );
 ```
 
@@ -73,10 +73,10 @@ out Struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene in genere chiamato da un processo per ottenere un elenco di programmi in esecuzione in tale processo. Le informazioni restituite sono un elenco di oggetti [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

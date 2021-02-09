@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5fe52761-a508-4ab5-abdb-334fb6590334
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dfb8a39af3c030dadddcb148a79a96b57f20e183
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f61a0629ede07b5b6a4e884157dacaea244c2344
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898480"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
 Si connette al programma associato o rinvia il processo di associazione al metodo di [connessione](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
@@ -46,9 +46,9 @@ int OnAttach(
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se il metodo di [connessione](../../../extensibility/debugger/reference/idebugengine2-attach.md) non deve essere chiamato. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene chiamato durante il processo di associazione, prima che venga chiamato il metodo di [associazione](../../../extensibility/debugger/reference/idebugengine2-attach.md) . Il `OnAttach` metodo può eseguire il processo di associazione stesso (in tal caso, questo metodo restituisce `S_FALSE` ) o rinviare il processo di associazione al `IDebugEngine2::Attach` Metodo (il `OnAttach` metodo restituisce `S_OK` ). In entrambi i casi, il `OnAttach` metodo può impostare l'oggetto `GUID` del programma di cui è in corso il debug nell'oggetto specificato `GUID` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
 - [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)

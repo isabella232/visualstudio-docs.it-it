@@ -9,18 +9,18 @@ helpviewer_keywords:
 - IDebugProgramNode2::Attach
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bdee5b224ae38c3474009aeaf26e783ebc5dd139
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b143477dc558b20a302a54d5baecc64d02d33ea3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898633"
 ---
 # <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
@@ -60,7 +60,7 @@ in Valore dell'enumerazione [ATTACH_REASON](../../../extensibility/debugger/refe
 
 Un'implementazione deve sempre restituire `E_NOTIMPL` .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 > [!WARNING]
 > A partire da Visual Studio 2005, questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL` . Vedere l'interfaccia [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) per un approccio alternativo se il nodo del programma deve indicare che non può essere collegato a o se il nodo del programma sta semplicemente impostando il programma `GUID` . In caso contrario, implementare il metodo di [associazione](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
@@ -73,7 +73,7 @@ Quando viene chiamato questo metodo, il DE deve inviare l'oggetto evento [IDebug
 
 Il DE deve chiamare il metodo [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) sull'oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) fornito dall'oggetto evento [IDEBUGPROGRAMCREATEEVENT2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e deve archiviare il GUID del programma nei dati dell'istanza per l' `IDebugProgram2` oggetto implementato da de.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)

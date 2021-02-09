@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e73834888009ff547bb4252aaedafb713ce9c2fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897464"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: generare un frammento XML da un XML Schema
 
@@ -58,11 +58,11 @@ Nei passaggi di questa sezione viene illustrato come utilizzare la funzionalità
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia ( **...** ) nel campo **schemi** .
+3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
 
      Verrà visualizzata la finestra di dialogo **schemi XSD** .
 
-4. Scegliere **Aggiungi**.
+4. Fare clic su **Aggiungi**.
 
      Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
 
@@ -156,7 +156,7 @@ Di seguito sono riportati i dati XML generati in base alle informazioni sullo sc
 </Contact>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [frammenti XML](../xml-tools/xml-snippets.md)
 - [Procedura: utilizzare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)

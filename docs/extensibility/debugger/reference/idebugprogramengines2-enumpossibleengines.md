@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898998"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Restituisce i GUID per tutti i possibili motori di debug (DE) in grado di eseguire il debug del programma.
@@ -28,7 +28,7 @@ Restituisce i GUID per tutti i possibili motori di debug (DE) in grado di esegui
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT EnumPossibleEngines( 
+HRESULT EnumPossibleEngines( 
    DWORD  celtBuffer,
    GUID*  rgguidEngines,
    DWORD* pceltEngines
@@ -36,7 +36,7 @@ HRESULT EnumPossibleEngines( 
 ```
 
 ```csharp
-int EnumPossibleEngines( 
+int EnumPossibleEngines( 
    uint      celtBuffer,
    GUID[]    rgguidEngines,
    ref DWORD pceltEngines
@@ -56,8 +56,8 @@ out Restituisce il numero effettivo di GUID che vengono restituiti.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [C#] 0x8007007a se il buffer non è sufficientemente grande.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per determinare il numero di motori disponibili, chiamare questo metodo una volta con il `celtBuffer` parametro impostato su 0 e il `rgguidEngines` parametro impostato su un valore null. Viene restituito `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007a per C#) e il `pceltEngines` parametro restituisce la dimensione necessaria del buffer.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

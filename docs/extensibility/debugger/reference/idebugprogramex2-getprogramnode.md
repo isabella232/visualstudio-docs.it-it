@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1545ffbf-1422-4b5d-9bb9-314ba8665041
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13fea906a0234186050fc51a8f23c903778fb055
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203992c6ab5ca094b091ece56e810d4fef462456
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898870"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 Ottiene il nodo di programma associato a un programma.
@@ -28,13 +28,13 @@ Ottiene il nodo di programma associato a un programma.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetProgramNode( 
+HRESULT GetProgramNode( 
    IDebugProgramNode2** ppProgramNode
 );
 ```
 
 ```csharp
-int GetProgramNode( 
+int GetProgramNode( 
    out IDebugProgramNode2 ppProgramNode
 );
 ```
@@ -46,6 +46,6 @@ out Restituisce un oggetto [IDebugProgramNode2](../../../extensibility/debugger/
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

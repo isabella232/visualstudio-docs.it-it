@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64db456e0c438f8665f122c3cd1b079c2ad1cea1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0680e0a174716dc79a9819386901d8687422906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898773"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 Questa interfaccia fornisce informazioni sull'host (processo) relative a un programma.
@@ -50,6 +50,6 @@ IDebugProgramHost2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898246"
 ---
 # <a name="template-directory-description-vsdir-files"></a>File (con estensione vsdir) di descrizione della directory dei modelli
 Un file di descrizione della directory dei modelli (. vsdir) è un file di testo che consente all'Integrated Development Environment (IDE) di visualizzare le cartelle, i file con estensione vsz della procedura guidata e i file modello associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Viene eseguito il merge di tutti i file con estensione VSDIR in un percorso a cui viene fatto riferimento, anche se in genere viene fornito un solo file con estensione VSDIR per descrivere più cartelle, procedure guidate o file di modello.

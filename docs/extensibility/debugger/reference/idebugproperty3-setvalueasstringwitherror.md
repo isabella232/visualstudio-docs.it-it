@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4139d3c254c6d824c28e7ceb7fd5fe29b47a3737
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897301"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Imposta il valore di questa proprietà e restituisce un messaggio di errore, se necessario.
@@ -61,7 +61,7 @@ out Se si è verificato un errore durante l'impostazione del valore, questo cont
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Il valore in ingresso potrebbe essere un'espressione da valutare.
 
 ## <a name="example"></a>Esempio
@@ -169,5 +169,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

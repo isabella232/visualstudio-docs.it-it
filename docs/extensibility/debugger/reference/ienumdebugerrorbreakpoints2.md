@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea841a095964b71e301e966bfd0a10c8f7c0c65d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ff6805537327b29b1d43b1bf4009b431452fc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896981"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 Questa interfaccia enumera i punti di interruzione degli errori associati a un punto di interruzione in sospeso.
@@ -45,7 +45,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 |[Clone](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Ottiene il numero di punti di interruzione di errore in un enumeratore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia contiene un elenco di interfacce [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , ognuna delle quali descrive un punto di interruzione che non è stato possibile associare e il motivo per cui non è stato possibile associare. Visual Studio usa l' `IEnumDebugErrorBreakpoint2` interfaccia per aggiornare i punti di interruzione visualizzati nell'IDE.
 
 ## <a name="requirements"></a>Requisiti
@@ -55,7 +55,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

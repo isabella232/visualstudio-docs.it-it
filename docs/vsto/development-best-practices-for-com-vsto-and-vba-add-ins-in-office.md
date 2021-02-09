@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ''
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7387b58bae486588687fe018453fafb5d6571f7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d5470c138d4339356ca9f8c79cb5ab274dd99019
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897561"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure consigliate per lo sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure consigliate per lo sviluppo descritte in questo articolo.   In modo da garantire:

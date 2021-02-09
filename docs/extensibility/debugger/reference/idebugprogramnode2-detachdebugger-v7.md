@@ -9,18 +9,18 @@ helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger_V7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0593a2ee8c519169bd8cb2eb23a83c4f5f3506a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898632"
 ---
 # <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
@@ -31,7 +31,7 @@ ms.locfileid: "80722116"
 
 ```cpp
 HRESULT DetachDebugger_V7 (
-   void 
+   void 
 );
 ```
 
@@ -43,13 +43,13 @@ int DetachDebugger_V7 ();
 
 Un'implementazione deve sempre restituire `E_NOTIMPL` .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 > [!WARNING]
 > A partire da Visual Studio 2005, questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL` .
 
 Questo metodo viene chiamato quando il debugger si chiude in modo imprevisto. Quando viene chiamato questo metodo, il DE deve riprendere il programma come se l'utente fosse scollegato da esso. Non devono essere inviati altri eventi di debug. Il programma deve trovarsi in uno stato in cui può essere collegato da un'altra istanza del debugger.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

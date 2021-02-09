@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe0e7838c3bde048df2514c54e534cf7a9b3475
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ef2baf2158403e8243632bc7ab77e58ea311b67b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898105"
 ---
 # <a name="test-area-4-check-in"></a>Area di test 4: Archiviare
 Questa area di test del plug-in del controllo del codice sorgente illustra l'invio di elementi aggiornati all'archivio delle versioni tramite il comando **Archivia** .
