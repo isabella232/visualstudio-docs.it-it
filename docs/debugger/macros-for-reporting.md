@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 0356f05c3f0dac636813d1632f628dd02dd28923
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893126"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
 Per il debug, è possibile usare le macro **_RPTn** e **_RPTFn** , definite in CRTDBG. H, per sostituire l'utilizzo delle `printf` istruzioni. Non è necessario inserirli nel **#ifdef** s, perché scompaiono automaticamente nella build di rilascio quando **_DEBUG** non è definito.
@@ -81,5 +81,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
 
  È possibile modificare facilmente una macro personalizzata per segnalare più o meno informazioni a destinazioni diverse. Questo approccio è particolarmente utile in quanto i requisiti di debug si evolvono.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)

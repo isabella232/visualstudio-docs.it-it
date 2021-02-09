@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cf8c0fe0b716cecee19c00bb0b300d4ffdc99355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894361"
 ---
 # <a name="workflow-project-templates"></a>Modelli di progetto flusso di lavoro
 
@@ -71,7 +71,7 @@ Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [
 > [!NOTE]
 > Gli ActivityDesigner personalizzati possono essere utilizzati per le attività personalizzate e per le attività .NET predefinite.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Utilizzare Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)
 - [Flussi di lavoro di progettazione (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

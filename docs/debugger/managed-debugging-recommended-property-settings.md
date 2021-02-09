@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3d14a8d4-2925-44d0-be41-ec546d411db9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57740c05e31bde2ae4e5143735e3bba1f3fc112c
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: b3061823a97faa53680bb358475a583493be5b93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893100"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Debug gestito: impostazioni consigliate delle proprietà
 Determinate proprietà devono essere impostate nello stesso modo per tutti gli scenari di debug gestito.
@@ -34,7 +34,7 @@ Determinate proprietà devono essere impostate nello stesso modo per tutti gli s
 
 ### <a name="configuration-properties-on-the-build-c-or-compile-visual-basic-tab"></a>Proprietà di configurazione disponibili nella scheda Compila (C#) o Compila (Visual Basic)
 
-|**Nome proprietà**|**Impostazione**|
+|**Nome della proprietà**|**Impostazione**|
 |-----------------------|-----------------|
 |**Definisci costante DEBUG**|C# e F#: selezionare la casella di controllo per consentire all'applicazione di utilizzare la classe Debug.|
 |**Definisci costante TRACE**|C# e F#: selezionare la casella di controllo per consentire all'applicazione di utilizzare la classe Trace.|
@@ -44,13 +44,13 @@ Determinate proprietà devono essere impostate nello stesso modo per tutti gli s
 
 ### <a name="advanced-compiler-settings-dialog-box"></a>Finestra di dialogo Impostazioni del compilatore avanzate
 
-|**Nome proprietà**|**Impostazione**|
+|**Nome della proprietà**|**Impostazione**|
 |-----------------------|-----------------|
 |**Abilita ottimizzazioni**|Impostare su false per i motivi specificati nell'opzione **Ottimizza codice** nella tabella precedente.|
 |**Genera informazioni di debug**|Selezionare questa casella di controllo se si desidera che durante la compilazione venga impostato il flag /DEBUG. In questo modo verranno generate le informazioni necessarie per semplificare il debug.|
 |**Definisci costante DEBUG**|Selezionare questa casella di controllo per definire la costante `DEBUG`, che consente all'applicazione di utilizzare la classe <xref:System.Diagnostics.Debug>.|
 |**Definisci costante TRACE**|Selezionare questa casella di controllo per definire la costante `TRACE`, che consente all'applicazione di utilizzare la classe <xref:System.Diagnostics.Trace>.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

@@ -20,15 +20,15 @@ helpviewer_keywords:
 - referencing components, assemblies not listed
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 82300d90d890cf632693fe07b5873423a29da0ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893360"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -210,10 +210,10 @@ Quando si esegue un riferimento a un file in un WinMD, il layout previsto preved
 
 Gli **assembly**, **com**, **Windows** e **Browse** supportano ciascuno una scheda **recente** , che enumera l'elenco dei componenti aggiunti di recente ai progetti.
 
-## <a name="search"></a>Ricerca
+## <a name="search"></a>Cerca
 
 La barra di ricerca della finestra di dialogo Gestione riferimenti viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, verranno restituiti risultati solo se la soluzione è costituita da un nome di progetto contenente il termine "sistema".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)

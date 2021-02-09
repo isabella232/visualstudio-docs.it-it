@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c18b73b22d1ce4d4b2a7720d3d80081b4e2c075c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893412"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: aggiungere funzionalità a un editor personalizzato
 Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzionalità.
@@ -53,7 +53,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
         > [!NOTE]
         > Chiamare `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> per ottenere un puntatore a `IVsFileChangeEx` .
 
-7. Coordina gli eventi di modifica del documento con il controllo del codice sorgente. Seguire questa procedura:
+7. Coordina gli eventi di modifica del documento con il controllo del codice sorgente. A tale scopo, seguire questa procedura:
 
     1. Ottenere un puntatore a chiamando `IVsQueryEditQuerySave2` `QueryService` il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -65,13 +65,13 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
          Questo metodo richiede all'utente di salvare il file se non è stato salvato o se è stato modificato dopo l'ultimo salvataggio.
 
-8. Abilitare la finestra **Proprietà** per visualizzare le proprietà per il testo selezionato nell'editor. Seguire questa procedura:
+8. Abilitare la finestra **Proprietà** per visualizzare le proprietà per il testo selezionato nell'editor. A tale scopo, seguire questa procedura:
 
     1. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ogni volta che la selezione del testo viene modificata, passando l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .
 
     2. Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> servizio per ottenere un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Consentire agli utenti di trascinare e rilasciare elementi tra l'editor e la **casella degli strumenti** oppure tra editor esterni (come Microsoft Word) e la **casella degli strumenti**. Seguire questa procedura:
+9. Consentire agli utenti di trascinare e rilasciare elementi tra l'editor e la **casella degli strumenti** oppure tra editor esterni (come Microsoft Word) e la **casella degli strumenti**. A tale scopo, seguire questa procedura:
 
     1. Implementare nell' `IDropTarget` Editor per avvisare l'IDE che l'editor è un obiettivo di rilascio.
 

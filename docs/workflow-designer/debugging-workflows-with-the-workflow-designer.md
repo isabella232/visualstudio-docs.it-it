@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 45219da52cdd1ff87b7243c3cc742bb4c97a74e7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0acc0cb0a37543b1462a4d5241eb63706868d372
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894335"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Eseguire il debug dei flussi di lavoro con il Progettazione flussi di lavoro
 
@@ -39,7 +39,7 @@ Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si
 
 ## <a name="step-through-code"></a>Esecuzione del codice un'istruzione alla volta
 
-- **Esegui istruzione** : eseguire un'istruzione in un'attività premendo **F11**. Il debugger avanza in qualsiasi gestore definito. Se nessun gestore è definito, viene eseguita l'istruzione/routine dell'attività oppure, con CompositeActivity contenenti altre attività, viene eseguita l'istruzione della prima attività in stato di esecuzione.
+- **Esegui istruzione**: eseguire un'istruzione in un'attività premendo **F11**. Il debugger avanza in qualsiasi gestore definito. Se nessun gestore è definito, viene eseguita l'istruzione/routine dell'attività oppure, con CompositeActivity contenenti altre attività, viene eseguita l'istruzione della prima attività in stato di esecuzione.
 
 - Esci **da istruzione/uscita:** Uscire da un'attività premendo **MAIUSC** + **F11**. Uscendo da un'istruzione/routine di un'attività, l'attività corrente e tutte le relative attività di pari livello vengono eseguite fino al completamento. Il debugger reimposta quindi il padre dell'attività corrente. Uscendo da un gestore del codice, il debugger reimposta l'attività alla quale è associato il gestore.
 
@@ -47,4 +47,4 @@ Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si
 
 ## <a name="debug-with-f5"></a>Debug con F5
 
-Se si sta compilando un'app console del flusso di lavoro, è sufficiente premere **F5** per avviare il debug nell'applicazione e nel flusso di lavoro. Se si compila una libreria attività in modo autonomo, è necessario specificare un'applicazione host eseguibile come progetto di avvio. Per impostare un progetto di avvio in **Esplora soluzioni** , fare clic con il pulsante destro del mouse sul nome del progetto dell'host e selezionare **Imposta come progetto di avvio**.
+Se si sta compilando un'app console del flusso di lavoro, è sufficiente premere **F5** per avviare il debug nell'applicazione e nel flusso di lavoro. Se si compila una libreria attività in modo autonomo, è necessario specificare un'applicazione host eseguibile come progetto di avvio. Per impostare un progetto di avvio in **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nome del progetto dell'host e selezionare **Imposta come progetto di avvio**.

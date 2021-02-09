@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8dee33fca027ce47ede8315f7956479ee2394382
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893087"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;&gt;elemento Description (distribuzione ClickOnce)
 Identifica le informazioni sull'applicazione utilizzate per creare una presenza Shell e un elemento **Installazione applicazioni** nel pannello di controllo.
@@ -47,8 +47,8 @@ Identifica le informazioni sull'applicazione utilizzate per creare una presenza 
 |---------------|-----------------|
 |`publisher`|Obbligatorio. Identifica il nome della società usato per il posizionamento delle icone nel menu **Start** di Windows e l'elemento installazione **applicazioni** nel pannello di controllo, quando la distribuzione è configurata per l'installazione.|
 |`product`|Obbligatorio. Identifica il nome completo del prodotto. Utilizzato come titolo per l'icona installata nel menu **Start** di Windows.|
-|`suiteName`|Facoltativa. Identifica una sottocartella all'interno della `publisher` cartella nel menu **Start** di Windows.|
-|`supportUrl`|Facoltativa. Specifica un URL di supporto visualizzato nell'elemento **Installazione applicazioni** nel pannello di controllo. Viene inoltre creato un collegamento a questo URL per il supporto dell'applicazione nel menu **Start** di Windows, quando la distribuzione è configurata per l'installazione.|
+|`suiteName`|facoltativo. Identifica una sottocartella all'interno della `publisher` cartella nel menu **Start** di Windows.|
+|`supportUrl`|facoltativo. Specifica un URL di supporto visualizzato nell'elemento **Installazione applicazioni** nel pannello di controllo. Viene inoltre creato un collegamento a questo URL per il supporto dell'applicazione nel menu **Start** di Windows, quando la distribuzione è configurata per l'installazione.|
 
 ## <a name="remarks"></a>Commenti
  L'elemento Description è obbligatorio in tutte le configurazioni di distribuzione.
@@ -63,5 +63,5 @@ Identifica le informazioni sull'applicazione utilizzate per creare una presenza 
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)

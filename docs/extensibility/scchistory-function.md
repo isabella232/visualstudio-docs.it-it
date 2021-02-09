@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734afefd97e61867076d487acbcf67f10f54e672
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893568"
 ---
 # <a name="scchistory-function"></a>Funzione SccHistory
 Questa funzione Visualizza la cronologia dei file specificati.
@@ -74,7 +74,7 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 |SCC_E_PROJNOTOPEN|Il progetto non è stato aperto.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico. Impossibile ottenere la cronologia file.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il plug-in del controllo del codice sorgente può visualizzare la relativa finestra di dialogo per visualizzare la cronologia di ogni file, usando `hWnd` come finestra padre. In alternativa, è possibile usare la funzione di callback di output di testo facoltativa fornita a [SccOpenProject](../extensibility/sccopenproject-function.md) , se supportata.
 
  Si noti che in determinate circostanze, il file esaminato potrebbe cambiare durante l'esecuzione di questa chiamata. Ad esempio, il [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] comando cronologia offre all'utente la possibilità di ottenere una versione precedente del file. In tal caso, il plug-in del controllo del codice sorgente restituisce un `SCC_I_RELOAD` avviso all'IDE necessario per ricaricare il file.
@@ -82,6 +82,6 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 > [!NOTE]
 > Se il plug-in del controllo del codice sorgente non supporta questa funzione per una matrice di file, è possibile visualizzare solo la cronologia file per il primo file.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

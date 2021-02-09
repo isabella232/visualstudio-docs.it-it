@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: d55acd30a0ea5381e9b14cf10c952c5626922c22
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893607"
 ---
 # <a name="localizing-vsix-packages"></a>Localizzazione di pacchetti VSIX
 
@@ -101,7 +101,7 @@ Nell'esempio seguente vengono illustrate le parti pertinenti di un file con *est
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 |Titolo|Descrizione|
 |-----------|-----------------|

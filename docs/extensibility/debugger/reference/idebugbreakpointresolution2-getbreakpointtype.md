@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5410cbf6147e0c8c6f4cba97b0214c4503f9790b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892996"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Ottiene il tipo del punto di interruzione rappresentato da questa risoluzione.
@@ -28,13 +28,13 @@ Ottiene il tipo del punto di interruzione rappresentato da questa risoluzione.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetBreakpointType( 
+HRESULT GetBreakpointType( 
     BP_TYPE* pBPType
 );
 ```
 
 ```csharp
-int GetBreakpointType( 
+int GetBreakpointType( 
     out enum_ BP_TYPE pBPType
 );
 ```
@@ -46,7 +46,7 @@ out Restituisce un valore dall'enumerazione [BP_TYPE](../../../extensibility/deb
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se il `bpResLocation` campo nella struttura [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) associata non è valido.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Il punto di interruzione può essere un codice o un punto di interruzione dei dati, ad esempio.
 
 ## <a name="example"></a>Esempio
@@ -83,7 +83,7 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

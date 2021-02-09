@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893165"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger in Visual Studio
 
@@ -217,11 +217,11 @@ Per aggiungere eccezioni condizionali:
 
    ![Condizioni aggiuntive per un'eccezione](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Per ogni riga di condizione, digitare il nome del modulo e impostare l'elenco operatore di confronto su **uguale** a o **non uguale** a. È possibile specificare caratteri jolly (* *\\\** _) nel nome per specificare più di un modulo.
+3. Per ogni riga di condizione, digitare il nome del modulo e impostare l'elenco operatore di confronto su **uguale** a o **non uguale** a. È possibile specificare caratteri jolly ( **\\\*** ) nel nome per specificare più di un modulo.
 
-4. Se è necessario eliminare una condizione, scegliere la _ *X** alla fine della riga della condizione.
+4. Se è necessario eliminare una condizione, scegliere la **X** alla fine della riga della condizione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Continuare l'esecuzione dopo un'eccezione](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [Procedura: Esaminare il codice di sistema dopo un'eccezione](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2849b815c38555be6b149544bb9d9953fe85ec4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894400"
 ---
 # <a name="xmlmappedrange-control"></a>Controllo XmlMappedRange
   Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo è un intervallo creato solo quando viene eseguito il mapping di un elemento dello schema non ripetuto su una cella in Microsoft Office Excel. Ad esempio, quando l' `maxOccurs` attributo di un elemento dello schema è uguale a 1. Dopo che Visual Studio ha creato l'intervallo mappato XML, è possibile programmare direttamente su di esso senza dover attraversare il modello a oggetti di Excel. È possibile eliminare un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo all'interno di Excel solo quando viene rimosso il mapping degli elementi.
@@ -57,7 +57,7 @@ ms.locfileid: "97525901"
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [Procedura: aggiungere controlli XMLMappedRange a fogli di foglio](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

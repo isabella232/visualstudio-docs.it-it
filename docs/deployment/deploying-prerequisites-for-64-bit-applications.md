@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c051e57bb6af707e7bd5c096e230966e98498bd2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: abc44c679e65cc49f6a491e9435fdaeffed5e9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893945"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
 La distribuzione ClickOnce supporta l'installazione di applicazioni su piattaforme a 64 bit. Le piattaforme di destinazione sono **x86** per le piattaforme a 32 bit, **x64** per i computer che supportano i set di istruzioni AMD64 ed EM64T e **Itanium** per il processore Itanium a 64 bit.
@@ -43,7 +43,7 @@ La distribuzione ClickOnce supporta l'installazione di applicazioni su piattafor
 | Microsoft .NET Framework 4 (x86 e x64) | Sì | |
 | Microsoft .NET Framework 4 Client Profile (x86 e x64) | Sì | |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Distribuire applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md)
 - [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps)

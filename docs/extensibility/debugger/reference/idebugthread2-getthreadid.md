@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e7dfb6714283fa2db1dc2fd8435a91a5c8dc56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893815"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Ottiene l'identificatore del thread di sistema.
@@ -46,7 +46,7 @@ out Restituisce l'identificatore del thread di sistema.
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Un ID thread viene usato per identificare un thread tra tutti gli altri thread in un processo.
 
 ## <a name="example"></a>Esempio
@@ -59,5 +59,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

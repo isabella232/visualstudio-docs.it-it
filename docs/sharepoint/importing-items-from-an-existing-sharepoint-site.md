@@ -17,15 +17,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ef77fb280021fcfb701a677bc9ce17ec26e39516
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 799589f5eba901a6fa82191507af1397ab1d323a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893347"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importa elementi da un sito di SharePoint esistente
   Il modello di progetto Importa pacchetto di soluzione SharePoint consente di riutilizzare elementi come i campi e i tipi di contenuto da siti di SharePoint esistenti in una nuova soluzione SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Sebbene sia possibile eseguire la maggior parte delle soluzioni importate senza modifiche, esistono alcune limitazioni e problemi da tenere in considerazione, soprattutto se si modificano gli elementi dopo averli importati.
@@ -128,14 +128,14 @@ ms.locfileid: "96304514"
 ## <a name="the-sharepointproductversion-attribute"></a>Attributo SharePointProductVersion
  Quando si importa una soluzione creata in una versione precedente di SharePoint come [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], impostare il valore dell'attributo SharePointProductVersion su 12.0 nel manifesto del pacchetto o inserire un controllo di gestione script in tutte le pagine Web importate e lasciare l'attributo SharePointProductVersion impostato su 14.0. In caso contrario, i Web Form importati non vengono visualizzati in SharePoint.
 
-### <a name="background"></a>Background
+### <a name="background"></a>Sfondo
  Le soluzioni in [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] includono un attributo denominato SharePointProductVersion. In SharePoint questo attributo viene usato nei manifesti di pacchetto per determinare la versione di SharePoint per cui è progettata la soluzione. I due valori validi sono 12.0 e 14.0. Il valore 12.0 indica che l'elemento è progettato per [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], mentre il valore 14.0 indica che l'elemento è progettato per [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
  Per maggiore sicurezza durante il rendering di pagine ASPX, [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] richiedono che tutte le pagine master o ASPX contengano un controllo di gestione di script. Per altre informazioni sul gestore di script, vedere [Panoramica del controllo ScriptManager](/previous-versions/bb398863(v=vs.140)). Dato che il controllo di gestione script non è disponibile in [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] e [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], è necessario aggiungerne uno a qualsiasi pagina di [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] che venga aggiornata a [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]. Le pagine ASPX che usano una pagina master standard non richiedono un controllo di gestione di script perché ne è già stato aggiunto uno alla pagina master standard. Per le pagine ASPX che non usano una pagina master o che usano una pagina master personalizzata, invece, è necessario aggiungere un controllo script per consentirne il funzionamento in [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
  L'assenza di un controllo di gestione di script può costituire un problema quando si importa un progetto di [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] in [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]perché l'attributo SharePointProductVersion di tutti i nuovi progetti viene impostato su 14.0. Se si distribuisce un progetto aggiornato che ha un Web Form senza gestore di script, non sarà possibile visualizzare il form in SharePoint.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: importare elementi da un sito di SharePoint esistente](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)
 - [Linee guida per l'importazione di flussi di lavoro riutilizzabili](../sharepoint/guidelines-for-importing-reusable-workflows.md)
 - [Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8dc5e402fcf3bedabe2b0f7fe606dfe807525ab
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a427b14db5be8081352ce54bf13900fa826202b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894010"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Procedura: utilizzare la finestra di progettazione variabili
 
@@ -33,12 +33,12 @@ La finestra di progettazione variabili consente di creare variabili da usare in 
 
 3. Aprire la finestra di progettazione variabili facendo clic sul pulsante **variabili** nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione variabili.
 
-4. Fare clic sulla riga vuota con etichetta **Crea variabile**. Verrà aggiunta una nuova riga con una nuova variabile usando i valori predefiniti seguenti: VariableX per il **nome** dove x è un numero intero con un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di variabile univoci, **stringa** per il **tipo di variabile** e **sequenza** per l' **ambito**. Per **impostazione predefinita** , non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
+4. Fare clic sulla riga vuota con etichetta **Crea variabile**. Verrà aggiunta una nuova riga con una nuova variabile usando i valori predefiniti seguenti: VariableX per il **nome** dove x è un numero intero con un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di variabile univoci, **stringa** per il **tipo di variabile** e **sequenza** per l' **ambito**. Per **impostazione predefinita**, non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
 
     > [!NOTE]
     > Per eliminare una variabile, selezionarla facendo clic su di essa e quindi premere il tasto **Canc** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Uso di Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)
 - [Variabili e argomenti](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

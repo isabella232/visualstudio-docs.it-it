@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a15f44b33e7109b126b091dcbf7102aa86a649a9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e33ea580f46f09ab3bd4d75ba58a35518c3583c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894140"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procedura: utilizzare l'esplorazione tramite la barra di navigazione
 
@@ -52,4 +52,4 @@ Esistono tre modi principali per modificare il set di attività visualizzate in 
     > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart> , ha rifiutato l'espansione sul posto, la funzionalità associata ai pulsanti **Espandi tutto** e **Comprimi tutto** è disabilitata nella finestra di progettazione **diagramma di flusso** . Per ulteriori informazioni sulla finestra di progettazione **diagramma di flusso** , vedere l'argomento [diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
-    > Expand all ha un effetto speciale anche negli ActivityDesigner **Switch** e **TryCatch** . Quando si fa clic su **Espandi tutto** , vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Se si fa clic su **Ripristina** o **Comprimi tutto** , le finestre di progettazione vengono restituite allo stato predefinito, da cui è possibile fare clic su un singolo case/blocco per visualizzarne il contenuto.
+    > Expand all ha un effetto speciale anche negli ActivityDesigner **Switch** e **TryCatch** . Quando si fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Se si fa clic su **Ripristina** o **Comprimi tutto** , le finestre di progettazione vengono restituite allo stato predefinito, da cui è possibile fare clic su un singolo case/blocco per visualizzarne il contenuto.

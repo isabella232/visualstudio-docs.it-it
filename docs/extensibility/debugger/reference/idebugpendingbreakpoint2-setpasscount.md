@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 732eadc955b9a6c9bdded3d52f038ff58ed9c217
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37aebea3e5dfa9e4693de8ed5b4b6b4b08557a2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893880"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 Imposta o modifica il numero di passaggi associato al punto di interruzione in sospeso.
@@ -29,13 +29,13 @@ Imposta o modifica il numero di passaggi associato al punto di interruzione in s
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT SetPassCount( 
+HRESULT SetPassCount( 
    BP_PASSCOUNT bpPassCount
 );
 ```
 
 ```csharp
-int SetPassCount( 
+int SetPassCount( 
    BP_PASSCOUNT bpPassCount
 );
 ```
@@ -47,9 +47,9 @@ in Struttura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcou
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Qualsiasi numero di passaggi precedentemente associato al punto di interruzione in sospeso viene perso. Tutti i punti di interruzione associati dal punto di interruzione in sospeso vengono chiamati per impostare il numero di passaggi sul `bpPassCount` parametro.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e2285706f2d15c5497a83d27c95cd613191e0fe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893971"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Distribuire componenti COM con ClickOnce
 La distribuzione di componenti COM legacy è stata tradizionalmente un'attività difficile. I componenti devono essere registrati a livello globale e quindi possono causare effetti collaterali indesiderati tra le applicazioni sovrapposte. In genere, questa situazione non è un problema nelle applicazioni .NET Framework perché i componenti sono completamente isolati in un'applicazione o sono compatibili side-by-side. Visual Studio consente di distribuire componenti COM isolati sul sistema operativo Windows XP o versione successiva.
@@ -37,7 +37,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
 ## <a name="registration-free-com"></a>Domini COM senza registrazione
  COM senza registrazione è una nuova tecnologia per la distribuzione e l'attivazione di componenti COM isolati. Funziona inserendo tutte le informazioni di registrazione e la libreria dei tipi del componente, in genere installate nel registro di sistema, in un file XML denominato manifesto, archiviato nella stessa cartella dell'applicazione.
 
- Per isolare un componente COM è necessario che venga registrato nel computer dello sviluppatore, ma non è necessario che sia registrato nel computer dell'utente finale. Per isolare un componente COM, è sufficiente impostare la proprietà **isolata** del riferimento su **true**. Per impostazione predefinita, questa proprietà è impostata su **false** , a indicare che deve essere considerata come un riferimento com registrato. Se questa proprietà è **true** , viene generato un manifesto per il componente in fase di compilazione. Causa inoltre la copia dei file corrispondenti nella cartella dell'applicazione durante l'installazione.
+ Per isolare un componente COM è necessario che venga registrato nel computer dello sviluppatore, ma non è necessario che sia registrato nel computer dell'utente finale. Per isolare un componente COM, è sufficiente impostare la proprietà **isolata** del riferimento su **true**. Per impostazione predefinita, questa proprietà è impostata su **false**, a indicare che deve essere considerata come un riferimento com registrato. Se questa proprietà è **true**, viene generato un manifesto per il componente in fase di compilazione. Causa inoltre la copia dei file corrispondenti nella cartella dell'applicazione durante l'installazione.
 
  Quando il generatore di manifesti rileva un riferimento COM isolato, enumera tutte le `CoClass` voci nella libreria dei tipi del componente, associando ogni voce con i dati di registrazione corrispondenti e generando definizioni di manifesto per tutte le classi com nel file della libreria dei tipi.
 
@@ -97,7 +97,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
 
     Un riferimento **VB6Hello** viene visualizzato nell'elenco riferimenti.
 
-6. Puntare alla **casella degli strumenti** , selezionare un controllo **Button** e trascinarlo nel form **Form1** .
+6. Puntare alla **casella degli strumenti**, selezionare un controllo **Button** e trascinarlo nel form **Form1** .
 
 7. Nella finestra **Proprietà** impostare la proprietà **Text** del pulsante su **Hello**.
 
@@ -118,7 +118,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
 
 ##### <a name="to-isolate-a-com-component"></a>Per isolare un componente COM
 
-1. In **Esplora soluzioni** , nel nodo **riferimenti** , selezionare il riferimento **VB6Hello** .
+1. In **Esplora soluzioni**, nel nodo **riferimenti** , selezionare il riferimento **VB6Hello** .
 
 2. Nella finestra **Proprietà** modificare il valore della proprietà **isolated** da **false** a **true**.
 
@@ -171,7 +171,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
 
   Un componente COM può essere isolato una sola volta per ogni applicazione. Ad esempio, non è possibile isolare lo stesso componente COM da due progetti di **libreria di classi** diversi che fanno parte della stessa applicazione. In questo modo verrà generato un avviso di compilazione e l'applicazione non verrà caricata in fase di esecuzione. Per evitare questo problema, Microsoft consiglia di incapsulare i componenti COM in un'unica libreria di classi.
 
-  Esistono diversi scenari in cui è richiesta la registrazione COM nel computer dello sviluppatore, anche se la distribuzione dell'applicazione non richiede la registrazione. `Isolated`Per la proprietà è necessario che il componente COM sia registrato nel computer dello sviluppatore per generare automaticamente il manifesto durante la compilazione. Non sono disponibili funzionalità di acquisizione delle registrazioni che richiamano la registrazione automatica durante la compilazione. Inoltre, le classi non definite in modo esplicito nella libreria dei tipi non verranno riflesse nel manifesto. Quando si utilizza un componente COM con un manifesto preesistente, ad esempio un riferimento nativo, potrebbe non essere necessario registrare il componente in fase di sviluppo. Tuttavia, la registrazione è obbligatoria se il componente è un controllo ActiveX e si desidera includerlo nella **casella degli strumenti** e nella finestra di progettazione Windows Forms.
+  Esistono diversi scenari in cui è richiesta la registrazione COM nel computer dello sviluppatore, anche se la distribuzione dell'applicazione non richiede la registrazione. `Isolated`Per la proprietà è necessario che il componente COM sia registrato nel computer dello sviluppatore per generare automaticamente il manifesto durante la compilazione. Non sono disponibili funzionalità di acquisizione delle registrazioni che richiamano la registrazione automatica durante la compilazione. Inoltre, le classi non definite in modo esplicito nella libreria dei tipi non verranno riflesse nel manifesto. Quando si utilizza un componente COM con un manifesto preesistente, ad esempio un riferimento nativo, potrebbe non essere necessario registrare il componente in fase di sviluppo. Tuttavia, la registrazione è obbligatoria se il componente è un controllo ActiveX e si desidera includerlo nella **casella degli strumenti** e nella finestra di progettazione Windows Form.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: d5c35d94001ae1e883e2bd76650f248d7e0364d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893893"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;&gt;elemento entryPoint (applicazione ClickOnce)
 Identifica l'assembly che deve essere eseguito quando l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene eseguita su un computer client.
@@ -76,14 +76,14 @@ Identifica l'assembly che deve essere eseguito quando l' [!INCLUDE[ndptecclick](
 | `parameters` | Obbligatorio. Descrive l'azione da eseguire con il punto di ingresso. L'unico valore valido è `run` ; se viene fornita una stringa vuota, `run` si presuppone. |
 
 ## <a name="customhostrequired"></a>customHostRequired
- Facoltativa. Se incluso, specifica che questa distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.
+ facoltativo. Se incluso, specifica che questa distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.
 
  Se questo elemento è presente, `assemblyIdentity` anche gli `commandLine` elementi e non devono essere presenti. In caso affermativo, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] genererà un errore di convalida durante l'installazione.
 
  Questo elemento non ha attributi e nessun elemento figlio.
 
 ## <a name="customux"></a>customUX
- Facoltativa. Specifica che l'applicazione viene installata e gestita da un programma di installazione personalizzato e non crea una voce del menu Start, un collegamento o una voce di installazione applicazioni.
+ facoltativo. Specifica che l'applicazione viene installata e gestita da un programma di installazione personalizzato e non crea una voce del menu Start, un collegamento o una voce di installazione applicazioni.
 
 ```xml
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
@@ -112,5 +112,5 @@ Identifica l'assembly che deve essere eseguito quando l' [!INCLUDE[ndptecclick](
   </entryPoint>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
