@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9904f02183da73df496e858fa8a81e5290a8950c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877395"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Questa interfaccia rappresenta un tipo di puntatore.
@@ -41,7 +41,7 @@ IDebugPointerField : IDebugContainerField
 |------------|-----------------|
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive la destinazione del puntatore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In C/C++ un puntatore può essere un contenitore se viene usato con la notazione di matrice. Ad esempio, dato `char *pString` , `pString` ha un tipo di puntatore a `char` . `pString[3]` dispone del tipo di un contenitore che è un puntatore a `char` che fa riferimento al quarto elemento del contenitore.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,7 +51,7 @@ IDebugPointerField : IDebugContainerField
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

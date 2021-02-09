@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: be772075be27cc8d6e58b6b54bb281a127f4677f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878123"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procedura: aggiungere un nodo SharePoint personalizzato a Esplora server
   È possibile aggiungere nodi personalizzati nel nodo **connessioni di SharePoint** in **Esplora server**. Questa opzione è utile quando si desidera visualizzare componenti aggiuntivi di SharePoint che non vengono visualizzati in **Esplora server** per impostazione predefinita. Per ulteriori informazioni, vedere [estensione del nodo connessioni di SharePoint in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

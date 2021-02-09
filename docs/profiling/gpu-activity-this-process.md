@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 0956edbf-9bcd-4afe-9287-fda628648ca0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfc96f9b29b8fae3bf9a97273ed6c675d1655fb
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: bdb39504cae42e943de1864d8edc308b96e0e742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878136"
 ---
 # <a name="gpu-activity-this-process"></a>Attività GPU (questo processo)
 I segmenti **Attività GPU (questo processo)** nella visualizzazione Thread nel visualizzatore di concorrenza rappresentano i casi in cui la GPU stava eseguendo l'elaborazione delle richieste per conto del processo corrente. Queste richieste vengono inviate alla GPU come pacchetti di accesso diretto alla memoria (DMA). La lunghezza di un segmento rappresenta l'intervallo di tempo per cui la GPU ha elaborato un pacchetto DMA per conto del processo corrente.

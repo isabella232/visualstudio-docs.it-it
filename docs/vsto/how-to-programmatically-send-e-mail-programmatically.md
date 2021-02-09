@@ -14,15 +14,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], sending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5f31fdb92a5acff16b1d6e8001ea88931a9a22ab
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c2b702d2986315ce32a9ab489db239f2c784f3e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877863"
 ---
 # <a name="how-to-programmatically-send-email"></a>Procedura: inviare messaggi di posta elettronica a livello di codice
   Questo esempio Invia un messaggio di posta elettronica ai contatti che hanno il nome di dominio **example.com** nei rispettivi indirizzi di posta elettronica.
@@ -42,7 +42,7 @@ ms.locfileid: "97525379"
 ## <a name="robust-programming"></a>Programmazione efficiente
  Non rimuovere il codice di filtro che cerca il nome di dominio **example.com**. Se si rimuove il filtro, la soluzione invierà messaggi di posta elettronica a tutti i contatti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
 - [Procedura: creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)
 - [Procedura: accedere ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)

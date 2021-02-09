@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877161"
 ---
 # <a name="exec-task"></a>Exec (attività)
 
@@ -37,7 +37,7 @@ La tabella seguente descrive i parametri dell'attività `Exec`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|`Command`|Parametro `String` obbligatorio.<br /><br /> Uno o più comandi da eseguire. Questi possono essere comandi di sistema, ad esempio attrib, o un eseguibile, ad esempio *program.exe*, *runprogram.bat*o *setup.msi*.<br /><br /> Questo parametro può contenere più righe di comandi. In alternativa, è possibile includere più comandi in un file batch ed eseguirlo tramite questo parametro.|
+|`Command`|Parametro `String` obbligatorio.<br /><br /> Uno o più comandi da eseguire. Questi possono essere comandi di sistema, ad esempio attrib, o un eseguibile, ad esempio *program.exe*, *runprogram.bat* o *setup.msi*.<br /><br /> Questo parametro può contenere più righe di comandi. In alternativa, è possibile includere più comandi in un file batch ed eseguirlo tramite questo parametro.|
 |`ConsoleOutput`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ogni output di elemento è una riga del flusso di output standard o di errore standard generato dallo strumento. Viene acquisito solo se `ConsoleToMsBuild` è impostato su `true`.|
 |`ConsoleToMsBuild`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, l'attività acquisisce l'errore standard e l'output standard dello strumento e li rende disponibili nel parametro di output `ConsoleOutput`.<br /><br />Impostazione predefinita: `false`.|
 |`CustomErrorRegularExpression`|Parametro `String` facoltativo.<br /><br /> Specifica un'espressione regolare usata per individuare eventuali righe di errore nell'output dello strumento. È particolarmente utile per gli strumenti che consentono la generazione di output con formattazione insolita.<br /><br />Valore predefinito: `null` (nessuna elaborazione personalizzata).|
@@ -76,7 +76,7 @@ Nell'esempio seguente l'attività `Exec` viene usata per eseguire un comando.
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

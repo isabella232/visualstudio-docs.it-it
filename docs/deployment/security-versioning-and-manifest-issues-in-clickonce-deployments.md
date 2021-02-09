@@ -21,15 +21,15 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 55758f67c845cbf753d51ebfb94b87af6cf55cde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877629"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 
@@ -96,7 +96,7 @@ Se si desidera spostare o copiare un'applicazione, è necessario aggiornare anch
 > [!NOTE]
 > Ogni volta che si aggiorna il manifesto, è necessario firmarlo di nuovo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Risolvere i problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md) 
  [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md) 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: da527da4504d4c2d9375aee0209b0e261fe5fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877933"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una soluzione Office tramite ClickOnce
   L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è consigliabile utilizzare Windows Installer (*MSI*) se più utenti eseguiranno la soluzione nello stesso computer.
@@ -157,7 +157,7 @@ ms.locfileid: "96845648"
 
 2. Scegliere il nome del computer, la cartella **siti Web** o il sito Web che si sta configurando.
 
-3. Sulla barra dei menu scegliere proprietà **azione**  >  **Properties**.
+3. Sulla barra dei menu scegliere proprietà **azione**  >  .
 
 4. Nella scheda **intestazioni HTTP** scegliere il pulsante **tipi MIME** .
 
@@ -426,7 +426,7 @@ ms.locfileid: "96845648"
 
      La casella **valore** contiene l'identificatore del manifesto della distribuzione.
 
-4. Prima dell'identificatore, immettere il percorso completo del documento, seguito da una barra, nell'identificatore del *percorso* di formato, | *Identifier* ad esempio *file://ServerName/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Prima dell'identificatore, immettere il percorso completo del documento, seguito da una barra, nell'identificatore del *percorso* di formato, |  ad esempio *file://ServerName/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Per altre informazioni su come formattare questo identificatore, vedere [Cenni preliminari sulle proprietà personalizzate del documento](../vsto/custom-document-properties-overview.md).
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e6f2c1df37e953a5d8c66bad9d0a3574a463fad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877408"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Questa interfaccia rappresenta un punto di interruzione pronto per l'associazione a una posizione di codice.
@@ -51,7 +51,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Enumera tutti i punti di interruzione di errore derivanti da questo punto di interruzione in sospeso.|
 |[Elimina](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Elimina il punto di interruzione in sospeso e tutti i punti di interruzione associati.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `IDebugPendingBreakpoint2` può essere considerato come un provider di tutte le informazioni necessarie per associare un punto di interruzione al codice che può essere applicato a uno o più programmi.
 
  Un punto di interruzione in sospeso può produrre potenzialmente più di un punto di interruzione associato. Un punto di interruzione in un modello di tipo C++, ad esempio, potrebbe generare un punto di interruzione associato per ogni istanza univoca di tale modello.
@@ -63,7 +63,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)

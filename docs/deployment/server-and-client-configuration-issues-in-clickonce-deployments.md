@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5cebadb35ae5d4cddcd0d4bfb4763979937318
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 469749c28acdb90e835082dd05010102ab50e52b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877616"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 Se si usa Internet Information Services (IIS) in Windows Server e la distribuzione contiene un tipo di file non riconosciuto da Windows, ad esempio un file di Microsoft Word, IIS rifiuterà di trasmettere tale file e la distribuzione avrà esito negativo.
@@ -33,7 +33,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 
  Sebbene questa restrizione non causi problemi per il download di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file principali, ad esempio manifesti e assembly, questa restrizione potrebbe impedire il download dei file di dati inclusi nell' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione. In [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] è possibile risolvere questo errore rimuovendo il gestore che impedisce il download di tali file da Gestione configurazione IIS. Per ulteriori informazioni, vedere la documentazione del server IIS.
 
- Alcuni server Web potrebbero bloccare i file con estensioni, ad esempio *dll* , *config* e *MDF*. Le applicazioni basate su Windows in genere includono file con alcune di queste estensioni. Se un utente tenta di eseguire un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che accede a un file bloccato in un server Web, viene generato un errore. Anziché sbloccare tutte le estensioni di file, pubblica tutti i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file dell'applicazione con un'estensione di file *. deploy* per impostazione predefinita. Pertanto, l'amministratore deve solo configurare il server Web per sbloccare le tre estensioni di file seguenti:
+ Alcuni server Web potrebbero bloccare i file con estensioni, ad esempio *dll*, *config* e *MDF*. Le applicazioni basate su Windows in genere includono file con alcune di queste estensioni. Se un utente tenta di eseguire un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che accede a un file bloccato in un server Web, viene generato un errore. Anziché sbloccare tutte le estensioni di file, pubblica tutti i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file dell'applicazione con un'estensione di file *. deploy* per impostazione predefinita. Pertanto, l'amministratore deve solo configurare il server Web per sbloccare le tre estensioni di file seguenti:
 
 - *. applicazione*
 
@@ -43,7 +43,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 
   Tuttavia, è possibile disabilitare questa opzione deselezionando l'opzione **"Distribuisci" estensione di file** nella finestra di [dialogo Opzioni di pubblicazione](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)). in questo caso, è necessario configurare il server Web per sbloccare tutte le estensioni di file utilizzate nell'applicazione.
 
-  È necessario configurare *. manifest* , *. Application* e *. deploy* , ad esempio se si usa IIS in cui non è stato installato il .NET Framework o se si usa un altro server Web (ad esempio, Apache).
+  È necessario configurare *. manifest*, *. Application* e *. deploy*, ad esempio se si usa IIS in cui non è stato installato il .NET Framework o se si usa un altro server Web (ad esempio, Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce e Secure Sockets Layer (SSL)
  Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione funzionerà correttamente rispetto a SSL, tranne quando Internet Explorer genera una richiesta sul certificato SSL. La richiesta può essere generata quando si verifica un problema con il certificato, ad esempio quando i nomi di sito non corrispondono o il certificato è scaduto. Per eseguire il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lavoro su una connessione SSL, verificare che il certificato sia aggiornato e che i dati del certificato corrispondano ai dati del sito.
@@ -62,7 +62,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 > Mozilla Firefox è supportato se il provider di distribuzione non è vuoto o se è installata l'estensione Microsoft .NET Framework Assistant. Questa estensione è assemblata con .NET Framework 3,5 SP1. Per il supporto di XBAP, il plug-in NPWPF viene attivato quando necessario.
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>Attivazione di applicazioni ClickOnce tramite scripting del browser
- Se è stata sviluppata una pagina Web personalizzata che avvia un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando lo scripting attivo, è possibile che l'applicazione non venga avviata in alcuni computer. Internet Explorer contiene un'impostazione denominata **richiesta automatica di download di file** , che influiscono su questo comportamento. Questa impostazione è disponibile nella scheda **sicurezza** del menu **Opzioni** che influiscono su questo comportamento. Viene chiamato **prompt automatico per i download di file** ed è elencato sotto la categoria **Downloads** . Per impostazione predefinita, la proprietà è impostata su **Abilita** per le pagine Web Intranet e per la **disabilitazione** per le pagine Web Internet. Quando questa impostazione è impostata su **Disabilita** , qualsiasi tentativo di attivare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione a livello di codice (ad esempio, assegnando il relativo URL alla `document.location` proprietà) verrà bloccato. In questa circostanza, gli utenti possono avviare le applicazioni solo tramite un download avviato dall'utente, ad esempio facendo clic su un collegamento ipertestuale impostato sull'URL dell'applicazione.
+ Se è stata sviluppata una pagina Web personalizzata che avvia un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando lo scripting attivo, è possibile che l'applicazione non venga avviata in alcuni computer. Internet Explorer contiene un'impostazione denominata **richiesta automatica di download di file**, che influiscono su questo comportamento. Questa impostazione è disponibile nella scheda **sicurezza** del menu **Opzioni** che influiscono su questo comportamento. Viene chiamato **prompt automatico per i download di file** ed è elencato sotto la categoria **Downloads** . Per impostazione predefinita, la proprietà è impostata su **Abilita** per le pagine Web Intranet e per la **disabilitazione** per le pagine Web Internet. Quando questa impostazione è impostata su **Disabilita**, qualsiasi tentativo di attivare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione a livello di codice (ad esempio, assegnando il relativo URL alla `document.location` proprietà) verrà bloccato. In questa circostanza, gli utenti possono avviare le applicazioni solo tramite un download avviato dall'utente, ad esempio facendo clic su un collegamento ipertestuale impostato sull'URL dell'applicazione.
 
 ## <a name="additional-server-configuration-issues"></a>Problemi di configurazione del server aggiuntivi
 
@@ -112,7 +112,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
  Per impostazione predefinita, in Windows Server non è installato Estensioni del server di FrontPage. Se si desidera utilizzare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per pubblicare in un server Web Windows Server che utilizza http con estensioni del server di FrontPage, è necessario installare prima estensioni del server di FrontPage. È possibile eseguire l'installazione utilizzando lo strumento di amministrazione del server in Windows Server.
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: tipi di contenuto bloccati
- IIS su [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] blocca tutti i tipi di file, ad eccezione di determinati tipi di contenuto noti, ad esempio *htm* , *HTML* , *txt* e così via. Per abilitare la distribuzione delle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni tramite questo server, è necessario modificare le impostazioni di IIS per consentire il download di file di tipo *. Application* , *. manifest* e di qualsiasi altro tipo di file personalizzato usato dall'applicazione.
+ IIS su [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] blocca tutti i tipi di file, ad eccezione di determinati tipi di contenuto noti, ad esempio *htm*, *HTML*, *txt* e così via. Per abilitare la distribuzione delle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni tramite questo server, è necessario modificare le impostazioni di IIS per consentire il download di file di tipo *. Application*, *. manifest* e di qualsiasi altro tipo di file personalizzato usato dall'applicazione.
 
  Se si esegue la distribuzione utilizzando un server IIS, eseguire *inetmgr.exe* e aggiungere nuovi tipi di file per la pagina Web predefinita:
 
@@ -130,11 +130,11 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 ## <a name="http-compression-issues"></a>Problemi di compressione HTTP
  Con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è possibile eseguire download che usano la compressione HTTP, una tecnologia server Web che usa l'algoritmo gzip per comprimere un flusso di dati prima di inviare il flusso al client. Il client, in questo caso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] decomprime il flusso prima di leggere i file.
 
- Se si utilizza IIS, è possibile abilitare facilmente la compressione HTTP. Tuttavia, quando si Abilita la compressione HTTP, questa viene abilitata solo per determinati tipi di file, ovvero file HTML e di testo. Per abilitare la compressione per gli assembly (con *estensione dll* ), i *file XML (XML),* i manifesti della distribuzione ( *. Application* ) e i manifesti dell'applicazione ( *. manifest* ), è necessario aggiungere questi tipi di file all'elenco dei tipi per comprimere IIS. Fino a quando non si aggiungono i tipi di file alla distribuzione, verranno compressi solo i file di testo e HTML.
+ Se si utilizza IIS, è possibile abilitare facilmente la compressione HTTP. Tuttavia, quando si Abilita la compressione HTTP, questa viene abilitata solo per determinati tipi di file, ovvero file HTML e di testo. Per abilitare la compressione per gli assembly (con *estensione dll*), i *file XML (XML),* i manifesti della distribuzione (*. Application*) e i manifesti dell'applicazione (*. manifest*), è necessario aggiungere questi tipi di file all'elenco dei tipi per comprimere IIS. Fino a quando non si aggiungono i tipi di file alla distribuzione, verranno compressi solo i file di testo e HTML.
 
  Per istruzioni dettagliate su IIS, vedere [come specificare tipi di documenti aggiuntivi per la compressione HTTP](https://support.microsoft.com/help/234497).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)

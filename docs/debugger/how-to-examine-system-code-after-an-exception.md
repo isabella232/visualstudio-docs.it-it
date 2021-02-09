@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eceb9f898b4329940408e4063dc73d81e2a604a4
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 3f906fd39ed9b0b0af5a9ade344ab05a33e469a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877681"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Procedura: esaminare il codice di sistema dopo un'eccezione
 Quando si verifica un'eccezione, potrebbe essere necessario esaminare il codice di una chiamata al sistema per determinare la causa dell'eccezione. Nella procedura riportata di seguito viene illustrato come determinare la causa se non sono disponibili simboli caricati per il codice di sistema o se Just My Code è attivato.
@@ -44,5 +44,5 @@ Quando si verifica un'eccezione, potrebbe essere necessario esaminare il codice 
 
 4. È ora possibile esaminare il codice di sistema nella finestra **Stack di chiamate** e in altre finestre. Ad esempio, è possibile fare doppio clic su un frame dello stack di chiamate per visualizzare il codice nella finestra **Disassembly** o nella finestra origine.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)

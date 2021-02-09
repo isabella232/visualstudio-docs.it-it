@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text searches, worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cf3894a2fb6d34678786686fe3c229d2e16a9a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877889"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: ricerca di testo negli intervalli dei fogli di testo a livello di codice
   Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo dell' <xref:Microsoft.Office.Interop.Excel.Range> oggetto consente di cercare testo compreso nell'intervallo. Questo testo può essere costituito anche da qualsiasi stringa di errore che può essere presente in una cella di un foglio di foglio, ad esempio `#NULL!` o `#VALUE!` . Per ulteriori informazioni sulle stringhe di errore, vedere la pagina relativa ai [valori di errore della cella](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).

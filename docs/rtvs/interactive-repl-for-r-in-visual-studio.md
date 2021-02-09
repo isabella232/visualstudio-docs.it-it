@@ -5,21 +5,21 @@ ms.date: 06/28/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0355f1017bb661b4f72325fb74f60653f69cd182
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878177"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Usare la finestra R interattivo
 
 R Tools per Visual Studio (RTVS) offre una finestra R interattivo, nota anche come finestra **REPL** (Read-Evaluate-Print-Loop), in cui è possibile immettere codice R e vedere immediatamente i risultati. Tutti i moduli, la sintassi e le variabili, così come IntelliSense, sono disponibili nella finestra interattiva.
 
-La finestra interattiva è anche integrata con le finestre regolari dell'editor di R. È possibile selezionare il codice e premere **CTRL** + **invio**oppure fare clic con il pulsante destro del mouse e selezionare **Esegui in interattivo**. il codice viene eseguito riga per riga nella finestra interattiva come se fosse stato digitato direttamente. Quando il cursore si trova su una sola riga in una finestra dell'editor, **CTRL** + **invio** invia tale riga alla finestra interattiva, quindi sposta il cursore nella riga successiva. In questo modo è sufficiente premere **Ctrl** + ripetutamente CTRL**invio** per scorrere il codice.
+La finestra interattiva è anche integrata con le finestre regolari dell'editor di R. È possibile selezionare il codice e premere **CTRL** + **invio** oppure fare clic con il pulsante destro del mouse e selezionare **Esegui in interattivo**. il codice viene eseguito riga per riga nella finestra interattiva come se fosse stato digitato direttamente. Quando il cursore si trova su una sola riga in una finestra dell'editor, **CTRL** + **invio** invia tale riga alla finestra interattiva, quindi sposta il cursore nella riga successiva. In questo modo è sufficiente premere  + ripetutamente CTRL **invio** per scorrere il codice.
 
 Per sperimentare queste funzionalità, seguire la procedura dettagliata illustrata in [Introduzione a R](getting-started-with-r.md) o le sezioni in questo articolo. I [frammenti di codice](code-snippets-for-r.md) funzionano anche nella finestra interattiva così come avviene nelle finestre dell'editor di R.
 
@@ -48,12 +48,12 @@ Ecco la finestra interattiva con relativa barra degli strumenti:
 
 ![Finestra interattiva con la barra degli strumenti](media/repl-window.png)
 
-I comandi della barra degli strumenti sono i seguenti, la maggior parte dei quali hanno equivalenti di tastiera e sono disponibili anche nella sessione di **r Tools**  >  **Session** e nei menu di directory di lavoro di **r Tools**  >  **Working Directory** (o come indicato):
+I comandi della barra degli strumenti sono i seguenti, la maggior parte dei quali hanno equivalenti di tastiera e sono disponibili anche nella sessione di **r Tools**  >   e nei menu di directory di lavoro di **r Tools**  >   (o come indicato):
 
 | Pulsante | Comando | Combinazione di tasti | Descrizione |
 | --- | --- | --- | --- |
 | ![Pulsante di reset](media/repl-toolbar-01-reset.png) | Reset | **CTRL** + **Sposta** + **F10** | Reimposta la sessione della finestra interattiva, cancellando tutte le variabili e la cronologia. |
-| ![Pulsante Cancella](media/repl-toolbar-02-clear.png) | Clear | **CTRL** + **L** | Cancella l'output visualizzato nella finestra interattiva. Non ha alcun effetto sulle variabili della sessione o sulla cronologia. |
+| ![Pulsante Cancella](media/repl-toolbar-02-clear.png) | Cancella | **CTRL** + **L** | Cancella l'output visualizzato nella finestra interattiva. Non ha alcun effetto sulle variabili della sessione o sulla cronologia. |
 | ![Pulsanti Cronologia](media/repl-toolbar-03-history.png) | Comando Cronologia precedente<br/>Comando Cronologia successiva | **Freccia SU**, **Freccia GIÙ**<br/>**ALT** + **Su**, **ALT** + **giù** | Scorre la cronologia, con determinati comportamenti per i blocchi di codice su più righe. Vedere [Cronologia](#history). |
 | ![Pulsante Carica area di lavoro](media/repl-toolbar-04-load-workspace.png) | Carica area di lavoro | n/d | Carica un'area di lavoro precedentemente salvata (vedere [Aree di lavoro e sessioni](#workspaces-and-sessions). |
 | ![Pulsante Salva area di lavoro come](media/repl-toolbar-05-save-workspace-as.png)| Salva area di lavoro come | n/d | Salva lo stato corrente della sessione come area di lavoro (vedere [Aree di lavoro e sessioni](#workspaces-and-sessions). |
@@ -79,7 +79,7 @@ Il pulsante **Reimposta** o il comando **R Tools** > **Sessione** > **Reimposta*
 
 ## <a name="working-directory"></a>Directory di lavoro
 
-Gli sviluppatori vogliono in genere modificare la directory di lavoro durante una sessione interattiva. Vari comandi, disponibili sulla barra degli strumenti, **R Tools**il menu della  >  **directory di lavoro** di R Tools e il menu di scelta rapida del progetto consentono di impostare facilmente una directory di lavoro sul percorso di un file di origine, il percorso o il progetto o qualsiasi altra posizione arbitraria. In questo modo è possibile evitare di digitare percorsi completi o percorsi lunghi quando si fa riferimento ai file.
+Gli sviluppatori vogliono in genere modificare la directory di lavoro durante una sessione interattiva. Vari comandi, disponibili sulla barra degli strumenti, il menu della  >  **directory di lavoro** di R Tools e il menu di scelta rapida del progetto consentono di impostare facilmente una directory di lavoro sul percorso di un file di origine, il percorso o il progetto o qualsiasi altra posizione arbitraria. In questo modo è possibile evitare di digitare percorsi completi o percorsi lunghi quando si fa riferimento ai file.
 
 ## <a name="history"></a>Cronologia
 
@@ -91,7 +91,7 @@ La cronologia nella finestra interattiva funziona anche in modo intelligente con
 
 Questo comportamento si adatta al caso tipico di riesecuzione dell'ultimo elemento nella cronologia con una freccia **su e una combinazione di tasti** di direzione, consentendo naturalmente la modifica di un blocco di codice a più righe premendo la freccia su per spostarsi al suo interno.
 
-Per evitare di spostarsi nei blocchi di codice a più righe, usare i pulsanti della barra degli strumenti o **ALT** + **Up** e **ALT**e - **Down**quindi tutti questi blocchi vengono considerati come una singola riga.
+Per evitare di spostarsi nei blocchi di codice a più righe, usare i pulsanti della barra degli strumenti o **ALT** +  e **ALT** e - quindi tutti questi blocchi vengono considerati come una singola riga.
 
 Il modo più semplice per sperimentare le funzionalità della cronologia è provarle nella finestra interattiva. Il codice riportato di seguito include diverse istruzioni a una riga e a più righe. Copiare e incollare ogni istruzione individualmente per creare la cronologia appropriata. È anche possibile incollare il codice in un file di codice separato e quindi inviare le righe alla finestra interattiva con **CTRL** + **Immettere**).
 

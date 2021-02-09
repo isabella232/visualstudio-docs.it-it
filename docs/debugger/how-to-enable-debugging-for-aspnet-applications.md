@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 8ef65fbd9452aef52d807210f84928a4eef14100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877746"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Eseguire il debug di app ASP.NET o ASP.NET Core in Visual Studio
 
@@ -187,7 +187,7 @@ Esistono diversi modi per pubblicare le app in IIS. Questi passaggi illustrano c
 > [!IMPORTANT]
 > La modalità di debug riduce notevolmente le prestazioni dell'app. Per ottenere prestazioni ottimali, impostare `debug="false"` nell' *web.config* e specificare una build di rilascio quando si distribuisce un'app di produzione o si conducono le misurazioni delle prestazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di ASP.NET: requisiti di sistema](aspnet-debugging-system-requirements.md)
 - [Procedura: Eseguire il processo di lavoro con un account utente](how-to-run-the-worker-process-under-a-user-account.md)
 - [Procedura: Trovare il nome del processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)

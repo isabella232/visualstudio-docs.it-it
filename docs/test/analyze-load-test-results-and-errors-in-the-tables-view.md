@@ -22,13 +22,13 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 7787b3b0afaed0bc3592b458646b97151e309905
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 5b501cef5360be08f1b283e9064617b649a33da9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878019"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
@@ -81,7 +81,7 @@ Nella tabella seguente sono elencate le colonne della tabella **Richieste**:
 |**Test**|Nome del test.|Sì|
 |**Totale**|Numero totale relativo a questa richiesta di test delle prestazioni Web emessa durante l'esecuzione del test di carico. Il totale include le richieste riuscite e non riuscite, ma non le richieste memorizzate nella cache, perché non vengono inviate al server Web.|Sì|
 |**Riuscito**|Numero di volte in cui la richiesta è stata emessa ed è riuscita.|No|
-|**Non riuscito**|Numero di volte in cui la richiesta è stata emessa e non è riuscita. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
+|**Operazione non riuscita**|Numero di volte in cui la richiesta è stata emessa e non è riuscita. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
 |**Richieste nella cache**|Numero totale di volte in cui la richiesta è già stata memorizzata nella cache.|No|
 |**Richieste/sec**|Frequenza al secondo della richiesta durante l'esecuzione del test di carico.|No|
 |**Richieste riuscite/sec**|Frequenza al secondo di questa richiesta durante l'esecuzione del test di carico, per le istanze della richiesta che sono riuscite.|No|
@@ -102,7 +102,7 @@ Nella tabella seguente sono elencate le colonne della tabella **Test**.
 |**Scenario**|Nome dello scenario.|Sì|
 |**Totale**|Numero totale di volte in cui il test è stato eseguito nello scenario. Include il numero di volte in cui il test è stato superato e non superato.|Sì|
 |**Riuscito**|Numero totale di volte in cui il test è stato eseguito nello scenario ed è stato superato.|Sì|
-|**Non riuscito**|Numero totale di volte in cui il test è stato eseguito nello scenario e non è stato superato. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
+|**Operazione non riuscita**|Numero totale di volte in cui il test è stato eseguito nello scenario e non è stato superato. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
 |**Test/sec**|Frequenza al secondo del test durante l'esecuzione del test di carico.|Sì|
 |**Richieste riuscite/sec**|Frequenza al secondo di questo test durante l'esecuzione del test di carico, per le istanze del test che sono state superate.|No|
 |**Richieste non riuscite/sec**|Frequenza al secondo di questo test durante l'esecuzione del test di carico, per le istanze del test che non sono state superate.|No|
@@ -148,7 +148,7 @@ La tabella degli errori contiene le seguenti colonne:
 
 |Colonna|Descrizione|Visibile per impostazione predefinita|
 |-|-|-|
-|Type|Il tipo di errore, ad esempio HttpError.|Sì|
+|Tipo|Il tipo di errore, ad esempio HttpError.|Sì|
 |Sottotipo|Il sottotipo di errore, ad esempio LoadTestException.|Sì|
 |Conteggio|Il numero di errori di questo tipo che si sono verificati durante il test di carico. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile fare clic su qualsiasi collegamento ipertestuale per visualizzare un elenco dei singoli errori.|Sì|
 |Ultimo messaggio|Messaggio in cui viene descritto l'errore, ad esempio 404 - NotFound.|Sì|
@@ -241,7 +241,7 @@ In visualizzazione tabella è possibile visualizzare fino a quattro tabelle non 
     > [!NOTE]
     > Non è possibile visualizzare la stessa tabella in più di un pannello. Se si sostituisce la tabella correntemente visualizzata in uno dei pannelli con quella visualizzata in un altro, in quest'ultimo verrà visualizzata la tabella sostituita nel primo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Procedura: accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: ee7acfd6256affee7a8204c2e70e18210c5f3dcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877733"
 ---
 # <a name="command-line-capture-tool"></a>Strumento di acquisizione da riga di comando
 DXCap.exe è uno strumento da riga di comando per l'acquisizione e la riproduzione della diagnostica grafica. Supporta Direct3D dalla versione 10 alla 12 per tutti i livelli di funzionalità.
@@ -92,7 +92,7 @@ DXCap.exe -info
 
  Funzione info ( `-info)` Visualizza i dettagli relativi al computer e le DLL di acquisizione.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 ### <a name="capture-graphics-information-from-a-desktop-app"></a>Acquisizione di informazioni grafiche da un'app desktop
  Usare `-c` per specificare l'app da cui si vogliono acquisire le informazioni grafiche.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877486"
 ---
 # <a name="create-an-options-page"></a>Creare una pagina di opzioni
 
@@ -249,7 +249,7 @@ In questa procedura dettagliata viene creata una semplice pagina strumenti/opzio
 
      Questo codice chiama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> per creare o recuperare un' `OptionPageGrid` istanza di. `OptionPageGrid` chiama <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> per caricare le opzioni, che sono proprietà pubbliche.
 
-2. A questo punto, aggiungere un modello di elemento di comando personalizzato denominato **MyToolsOptionsCommand** per visualizzare il valore. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#**  >  **estensibilità** di Visual C# e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *MyToolsOptionsCommand.cs*.
+2. A questo punto, aggiungere un modello di elemento di comando personalizzato denominato **MyToolsOptionsCommand** per visualizzare il valore. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a   >  **estensibilità** di Visual C# e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *MyToolsOptionsCommand.cs*.
 
 3. Nel file *MyToolsOptionsCommand* sostituire il corpo del metodo del comando `ShowMessageBox` con il codice seguente:
 
@@ -268,6 +268,6 @@ In questa procedura dettagliata viene creata una semplice pagina strumenti/opzio
 
      In una finestra di messaggio viene visualizzato il valore corrente di `OptionInteger` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pagine opzioni e opzioni](../extensibility/internals/options-and-options-pages.md)
