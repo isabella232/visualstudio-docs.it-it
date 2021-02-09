@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], Finder method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879683"
 ---
 # <a name="how-to-add-a-finder-method"></a>Procedura: aggiungere un metodo Finder
   Per abilitare il servizio di integrazione applicativa dei dati per visualizzare un elenco di entità in una Web part o in un elenco, è necessario creare un metodo *Finder* . Un metodo di ricerca è un metodo speciale che restituisce una raccolta di istanze di entità. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).

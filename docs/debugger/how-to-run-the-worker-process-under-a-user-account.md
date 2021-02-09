@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dc3be78534610492dfada954f74a883808b40b
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 0f8642ed1643b88cdcb28bfa8cabef9200a59cb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881308"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.
@@ -87,6 +87,6 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 13. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà file ASP.NET temporanei** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Debug di ASP.NET: requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)

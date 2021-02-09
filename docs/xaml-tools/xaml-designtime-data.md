@@ -5,14 +5,14 @@ ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880411"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati della fase di progettazione con il finestra di progettazione XAML in Visual Studio
 
@@ -189,7 +189,7 @@ Se si verifica un problema non elencato in questa sezione, è possibile segnalar
 
 Provare a chiudere e riaprire il file XAML e a pulire e ricompilare il progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Dati della fase di progettazione con il Visualizzatore anteprima Novell. Forms](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [XAML in all WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

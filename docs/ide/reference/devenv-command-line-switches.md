@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bef72e8889026f8202c7acdf3ea7c6b97c780b75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882173"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 
@@ -94,7 +94,7 @@ Le opzioni della riga di comando seguenti non visualizzano l'IDE.
 |[/Rebuild](rebuild-devenv-exe.md)|Pulisce e compila la soluzione o il progetto specificati in base alla configurazione relativa.<br /><br /> `devenv mysln.sln /rebuild`|
 |[/Upgrade](upgrade-devenv-exe.md)|Aggiorna il file di soluzione specificato e tutti i file di progetto relativi, o il file di progetto specificato, nei formati Visual Studio correnti per tali file.<br /><br /> `devenv mysln.sln /upgrade`|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](general-environment-options-dialog-box.md)
 - [Opzioni della riga di comando devenv per lo sviluppo di pacchetti VSPackage](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

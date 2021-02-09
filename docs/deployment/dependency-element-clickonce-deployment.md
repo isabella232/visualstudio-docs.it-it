@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 172f3ea546565554c5f0701b81a88b9ca99b4100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881100"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;&gt;elemento dependency (distribuzione ClickOnce)
 Identifica la versione dell'applicazione da installare e il percorso del manifesto dell'applicazione.
@@ -83,10 +83,10 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 | Attributo | Descrizione |
 |------------------| - |
 | `preRequisite` | Facoltativa. Specifica che l'assembly deve essere già presente nella GAC. I valori validi sono `true` e `false`. Se `true` e l'assembly specificato non esiste nella GAC, l'esecuzione dell'applicazione non riesce. |
-| `visible` | Facoltativa. Identifica l'identità dell'applicazione di primo livello, incluse le relative dipendenze. Utilizzato internamente da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] per gestire l'attivazione e l'archiviazione dell'applicazione. |
+| `visible` | facoltativo. Identifica l'identità dell'applicazione di primo livello, incluse le relative dipendenze. Utilizzato internamente da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] per gestire l'attivazione e l'archiviazione dell'applicazione. |
 | `dependencyType` | Obbligatorio. Relazione tra la dipendenza e l'applicazione. I valori validi sono:<br /><br /> -   `install`. Il componente rappresenta un'installazione separata dall'applicazione corrente.<br />-   `preRequisite`. Il componente è necessario per l'applicazione corrente. |
-| `codebase` | Facoltativa. Percorso completo del manifesto dell'applicazione. |
-| `size` | Facoltativa. Dimensioni in byte del manifesto dell'applicazione. |
+| `codebase` | facoltativo. Percorso completo del manifesto dell'applicazione. |
+| `size` | facoltativo. Dimensioni in byte del manifesto dell'applicazione. |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
  Obbligatorio. Questo elemento è figlio dell'elemento `dependentAssembly` . Il contenuto di `assemblyIdentity` deve essere uguale a quello descritto nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. La tabella seguente illustra gli attributi dell' `assemblyIdentity` elemento.
@@ -97,8 +97,8 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 |`Version`|Obbligatorio. Specifica il numero di versione dell'applicazione, nel formato seguente: `major.minor.build.revision`|
 |`publicKeyToken`|Obbligatorio. Specifica una stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte dell'hash SHA-1 della chiave pubblica in cui l'applicazione o l'assembly è firmato. La chiave pubblica usata per firmare deve avere una lunghezza massima di 2048 bit.|
 |`processorArchitecture`|Obbligatorio. Specifica il microprocessore. I valori validi sono `x86` per Windows a 32 bit e `IA64` per windows a 64 bit.|
-|`Language`|Facoltativa. Identifica i codici di lingua in due parti dell'assembly. Ad esempio, EN-US, che sta per la lingua inglese (Stati Uniti). Il valore predefinito è `neutral`. Questo elemento si trova nello `asmv2` spazio dei nomi.|
-|`type`|Facoltativa. Per la compatibilità con le versioni precedenti con la tecnologia di installazione side-by-side di Windows. L'unico valore consentito è `win32` .|
+|`Language`|facoltativo. Identifica i codici di lingua in due parti dell'assembly. Ad esempio, EN-US, che sta per la lingua inglese (Stati Uniti). Il valore predefinito è `neutral`. Questo elemento si trova nello `asmv2` spazio dei nomi.|
+|`type`|facoltativo. Per la compatibilità con le versioni precedenti con la tecnologia di installazione side-by-side di Windows. L'unico valore consentito è `win32` .|
 
 ## <a name="hash"></a>hash
  L' `hash` elemento è un elemento figlio facoltativo dell' `file` elemento. L'elemento `hash` non ha attributi.
@@ -182,6 +182,6 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 </dependency>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [\<dependency> elemento](../deployment/dependency-element-clickonce-application.md)

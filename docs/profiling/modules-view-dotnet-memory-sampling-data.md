@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e05a3e1d915853689c436b192de9e266e86b13d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b9c00fd7647d6ba3da62d913e0371dc8cf300ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723296"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879826"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Visualizzazione Moduli: dati di campionamento di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di campionamento raggruppa i dati di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo sono elencate sotto il nodo del modulo.
@@ -42,7 +42,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 |**Byte esclusivi**|- Per una funzione, il numero totale di byte allocati dalla funzione. Il numero non include i byte allocati nelle funzioni chiamate da questa funzione.<br />- Per un modulo, la somma dei byte esclusivi allocati dalle funzioni nel modulo.<br />- Per una riga o un'istruzione, il numero totale di oggetti allocati da questa riga o istruzione.|
 |**% byte esclusivi**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che rappresenta i byte esclusivi del modulo, della funzione, della riga o dell'istruzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)

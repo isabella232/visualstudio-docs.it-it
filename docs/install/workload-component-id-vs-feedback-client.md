@@ -5,7 +5,7 @@ description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studi
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: fe4eec389389622f0d87d30edbbd46d7c5b53d80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83b457582124658285e0769d1907a8643d44fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881763"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Elenco dei componenti di Visual Studio Feedback Client
 
@@ -47,7 +47,7 @@ Per altre informazioni su come usare questi ID, vedere la pagina [Usare i parame
 
 ### <a name="components-included-by-this-workload"></a>Componenti inclusi per questo carico di lavoro
 
-ID componente | Nome | Version | Tipo di dipendenza
+ID componente | Nome | Versione | Tipo di dipendenza
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Necessario
 
@@ -55,13 +55,13 @@ Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback C
 
 Questi sono i componenti non inclusi in alcun carico di lavoro, che possono però essere selezionati come un singolo componente.
 
-ID componente | Nome | Version
+ID componente | Nome | Versione
 --- | --- | ---
 n/d | n/d | n/d
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)

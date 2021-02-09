@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 910b3b5491660cbcd6132aff68ebeabafaeea0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0c1cf29c7579978d5992de46b14c01fee0799c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881646"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Come installare il supporto di Python in Visual Studio in Windows
 
@@ -121,7 +121,7 @@ Se si verificano problemi durante l'installazione o l'esecuzione di Python in Vi
 
 1. Installare la versione appropriata di Python Tools for Visual Studio per la versione in uso di Visual Studio:
 
-    - Visual Studio 2013: [PTVS 2.2.2 per Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2.2). La **File**  >  finestra di dialogo file**nuovo progetto** in Visual Studio 2013 offre un collegamento per questo processo.
+    - Visual Studio 2013: [PTVS 2.2.2 per Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2.2). La   >  finestra di dialogo file **nuovo progetto** in Visual Studio 2013 offre un collegamento per questo processo.
     - Visual Studio 2010 e 2012: [PTVS 2.1.1 per Visual studio 2010 e 2012](https://github.com/Microsoft/PTVS/releases/v2.1.1)
 
 1. [Installare un interprete Python a scelta](installing-python-interpreters.md). Se è già installato un interprete e Visual Studio non lo rileva automaticamente, vedere [Identificazione manuale di un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).

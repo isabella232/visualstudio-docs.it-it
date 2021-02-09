@@ -7,13 +7,13 @@ ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 0e0bdc7b10eb20b149493c8d9e05a6711eb71bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881334"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
 
@@ -36,7 +36,7 @@ Questa tabella elenca i tasti di scelta rapida disponibili per lavorare con gli 
 |Selezionare tutti gli elementi|Premere **CTRL** + **A**|
 |Annullare la selezione di tutti gli elementi|Premere **CTRL** + **MAIUSC** + **A**|
 |Mostrare o nascondere i punti di controllo degli elementi|Premere **F9**|
-|Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo sulla Finestra Proprietà, premere **Tab** . (Usare **CTRL** + **Per impostare** lo stato attivo sulla finestra Proprietà.) È possibile utilizzare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
+|Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo sulla Finestra Proprietà, premere **Tab**. (Usare **CTRL** + **Per impostare** lo stato attivo sulla finestra Proprietà.) È possibile utilizzare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
 
 ## <a name="document-outline-window-shortcuts"></a>Tasti di scelta rapida della finestra Struttura documento
 

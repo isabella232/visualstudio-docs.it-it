@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82796c1d82dc3ca77151abcec3e1dd6ce13ac59d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eeb4a306e7b357c59f8d75a91e2c21c50f1ed16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880086"
 ---
 # <a name="type_info"></a>TYPE_INFO
 Questa struttura specifica vari tipi di informazioni sul tipo di un campo.
@@ -46,7 +46,7 @@ public struct TYPE_INFO {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
  `dwKind`\
  Valore dell'enumerazione [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) che determina come interpretare l'Unione.
 
@@ -68,7 +68,7 @@ public struct TYPE_INFO {
  `unionmember`\
  [Solo C#] Eseguire il marshalling di questo oggetto nel tipo di struttura appropriato in base a `dwKind` .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa struttura viene passata al metodo [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) in cui è compilata. Il modo in cui il contenuto della struttura viene interpretato è basato sul `dwKind` campo.
 
 > [!NOTE]
@@ -113,7 +113,7 @@ namespace MyPackage
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
 - [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)

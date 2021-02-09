@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 52246c1e-a371-40a0-b756-a435cc51876f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f7df253951d90a29c459bf28e6ff1c2279ee54
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 2ec174a03e62cb8cb033be0b92db679fb19f0180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881256"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo
 
@@ -54,6 +54,6 @@ Tra gli utenti attendibili sono inclusi quello che esegue il debug e un set di u
 
  Non connettersi al processo
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

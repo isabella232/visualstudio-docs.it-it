@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734629"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881009"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 Questa interfaccia indica al gestore di debug della sessione (SDM) che un punto di interruzione associato è stato disassociato da un programma caricato.
@@ -42,7 +42,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Ottiene il punto di interruzione che è diventato non associato.|
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Ottiene il motivo per cui il punto di interruzione non è associato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Quando una DLL o una classe del motore di debug viene scaricata, tutti i punti di interruzione associati al codice in tale modulo devono essere disassociati dal programma di cui è in corso il debug. `IDebugBreakpointUnboundEvent2`Viene inviato un oggetto per ogni punto di interruzione non associato.
 
 ## <a name="requirements"></a>Requisiti
@@ -52,7 +52,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

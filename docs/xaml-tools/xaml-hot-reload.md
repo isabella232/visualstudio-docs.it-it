@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 11257561deecdbce4606207c3d59012a6d7c3d09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668872"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880320"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio
 
@@ -47,9 +47,9 @@ La figura seguente illustra l'uso della struttura ad albero visuale attiva per a
 
 Di seguito sono riportate le limitazioni note del ricaricamento a caldo di XAML. Per aggirare le limitazioni che si verificano, arrestare il debugger, quindi completare l'operazione.
 
-|Limitazione|WPF|UWP|Note|
+|Limitazione|WPF|Piattaforma UWP|Note|
 |-|-|-|-|
-|Cablare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportate|Vedere errore: *assicurarsi che l'evento non sia riuscito*. Si noti che in WPF è possibile fare riferimento a un gestore eventi esistente. Nelle app UWP, il riferimento a un gestore eventi esistente non è supportato.|
+|Cablare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportato|Vedere errore: *assicurarsi che l'evento non sia riuscito*. Si noti che in WPF è possibile fare riferimento a un gestore eventi esistente. Nelle app UWP, il riferimento a un gestore eventi esistente non è supportato.|
 |Creazione di oggetti risorsa in un dizionario risorse, ad esempio quelli nella pagina/finestra o nel file *app. XAML* dell'app.|Supportato a partire da Visual Studio 2019 Update 2|Supportato|Esempio: aggiunta di un oggetto a `SolidColorBrush` un dizionario risorse da utilizzare come `StaticResource` .</br>Nota: è possibile applicare/utilizzare risorse statiche, convertitori di stile e altri elementi scritti in un dizionario risorse durante l'utilizzo del ricaricamento a caldo di XAML. Solo la creazione della risorsa non è supportata.</br> Modifica della proprietà del dizionario risorse `Source` .|
 |Aggiunta di nuovi controlli, classi, finestre o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|nessuno|
 |Gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|nessuno|
@@ -66,7 +66,7 @@ Di seguito sono riportate le limitazioni note del ricaricamento a caldo di XAML.
 |Verifica evento non riuscita|Errore indica che si sta tentando di collegare un evento a uno dei controlli, che non è supportato mentre l'applicazione è in esecuzione.|
 |Questa modifica non è supportata dal ricaricamento a caldo di XAML e non verrà applicata durante la sessione di debug.|Errore indica che la modifica che si sta tentando di eseguire non è supportata dal ricaricamento a caldo di XAML. Arrestare la sessione di debug, apportare la modifica e quindi riavviare la sessione di debug. Se si trova uno scenario non supportato che si vuole visualizzare supportato, usare la nuova opzione "Suggerisci una funzionalità" nella community degli sviluppatori di [Visual Studio](https://aka.ms/feedback/suggest?space=8). |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Risoluzione dei problemi relativi al ricaricamento rapido XAML](xaml-hot-reload-troubleshooting.md)
 * [Ricaricamento rapido XAML per Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload)

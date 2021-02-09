@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a259f813d2bfbcb8ec92b039d44af74e431752ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880216"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Questo metodo crea un enumeratore per gli spazi dei nomi associati all'indirizzo di debug.
@@ -28,7 +28,7 @@ Questo metodo crea un enumeratore per gli spazi dei nomi associati all'indirizzo
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetNamespacesUsedAtAddress( 
+HRESULT GetNamespacesUsedAtAddress( 
    IDebugAddress*     pAddress,
    IEnumDebugFields** ppEnum
 );
@@ -51,9 +51,9 @@ out Restituisce un enumeratore [IEnumDebugFields](../../../extensibility/debugge
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  È possibile che siano presenti diversi spazi dei nomi associati a un determinato indirizzo di debug, ad esempio spazi dei nomi annidati o più `using` istruzioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

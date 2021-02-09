@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e31bdd47297a532a2eba69513aef01554791690e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734778"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881048"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Ottiene le informazioni di risoluzione del punto di interruzione che descrivono questo punto di interruzione.
@@ -28,14 +28,14 @@ Ottiene le informazioni di risoluzione del punto di interruzione che descrivono 
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetResolutionInfo( 
+HRESULT GetResolutionInfo( 
    BPRESI_FIELDS       dwFields,
    BP_RESOLUTION_INFO* pBPResolutionInfo
 );
 ```
 
 ```csharp
-int GetResolutionInfo( 
+int GetResolutionInfo( 
    enum BPRESI_FIELDS   dwFields,
    BP_RESOLUTION_INFO[] pBPResolutionInfo
 );
@@ -141,7 +141,7 @@ HRESULT CDebugBreakpointResolution::CopyBP_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

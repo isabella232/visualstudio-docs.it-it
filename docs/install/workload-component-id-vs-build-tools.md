@@ -5,7 +5,7 @@ description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studi
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a23f67a56f4f134a82d28072cda2f7d9fcebb925
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 60baf9fbbda5713e0e647e38caafaa2a0575099a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881931"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Elenco dei componenti di Visual Studio Build Tools
 
@@ -49,7 +49,7 @@ Per installare questi componenti tramite il programma di installazione manuale, 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)

@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: aa3df844d5fad5dc968a9bab5d02e9a3e8e06719
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879969"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Passaggio 3: utilizzare i dati utilizzando Entity Framework
 
@@ -58,7 +58,7 @@ A questo punto, fare clic con il pulsante destro del mouse su giochi e scegliere
 
 ![ASP.NET Core di Visual Studio 2019 - Aggiungere pagine con scaffolding](media/vs-2019/vs2019-add-scaffold.png)
 
-Selezionare la classe modello di gioco e usare l'icona '+' per aggiungere una nuova classe contesto dati. Denominarlo `AppDbContext`. Lasciare le altre impostazioni predefinite e fare clic su **Aggiungi**.
+Selezionare la classe modello di gioco e usare l'icona '+' per aggiungere una nuova classe contesto dati. Denomina tale elemento `AppDbContext`. Lasciare le altre impostazioni predefinite e fare clic su **Aggiungi**.
 
 Nella cartella Games verranno aggiunte le pagine Razor seguenti:
 
@@ -133,7 +133,7 @@ Nel prossimo video si apprenderà come aggiungere il supporto dell'API Web per l
 
 [Passaggio 4: esposizione di un'API Web dall'app ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Razor Pages con Entity Framework Core in ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
 - [ASP.NET Core Razor Pages con Entity Framework Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

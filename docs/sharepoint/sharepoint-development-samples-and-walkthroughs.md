@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a5703958db5d981391c11ae0baceaf83231d3c7
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 7e32bc03728916d7990938e36faa8bb7533357bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881529"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Procedure dettagliate e esempi di sviluppo di SharePoint
   Questa sezione contiene applicazioni di esempio, codice di esempio e procedure dettagliate che illustrano la sintassi, la struttura e le tecniche utilizzate per creare soluzioni SharePoint.
@@ -34,5 +34,5 @@ ms.locfileid: "95440636"
 |[Esempi di sviluppo di SharePoint](../sharepoint/sharepoint-development-samples.md)|Vengono descritte le applicazioni di esempio in cui viene illustrato come utilizzare gli strumenti di sviluppo di SharePoint in Visual Studio.|
 |[Procedure dettagliate sullo sviluppo per SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Vengono elencate procedure dettagliate che offrono un'introduzione agli strumenti di sviluppo di SharePoint in Visual Studio.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)

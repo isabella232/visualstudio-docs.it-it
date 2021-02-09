@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c19109215a9e8824f1648860c39ccb33836ca93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879995"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Questa struttura rappresenta un indirizzo relativo a un `this` puntatore ( `Me` in Visual Basic).
@@ -43,7 +43,7 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
  `dwOffset`\
  Offset di byte da una posizione di base (ad esempio, inizio di una classe vtable).
 
@@ -53,7 +53,7 @@ public struct UNMANAGED_THIS_RELATIVE {
  `dwBitLength`\
  Numero di bit che rappresentano l'indirizzo, sempre 0, a meno che non faccia riferimento a un campo di bit.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisiti
@@ -63,6 +63,6 @@ public struct UNMANAGED_THIS_RELATIVE {
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

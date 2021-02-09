@@ -12,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 35d101a1d8db82e366ec706b3d10fdcac0cdcbaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881412"
 ---
 # <a name="walkthroughs-using-word"></a>Procedure dettagliate con Word
   Le procedure dettagliate seguenti mostrano come usare le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO per automatizzare Microsoft Office Word e personalizzare l'interfaccia utente.
@@ -53,7 +53,7 @@ ms.locfileid: "97522576"
 
 - [Procedura dettagliata: creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) Viene illustrato come creare una scheda personalizzata della barra multifunzione usando un file di descrittore XML in un componente aggiuntivo VSTO.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)
 - [Procedure dettagliate relative ai dati nelle soluzioni Office](../vsto/data-in-office-solutions-walkthroughs.md)
 - [Procedure dettagliate di personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization-walkthroughs.md)

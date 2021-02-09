@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9070fcfbf79fb96ecff87a793c221f3e7a65c2ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 736ef56a67247bac53f1f27f84c994a1bf117b9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880073"
 ---
 # <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
 Questa struttura rappresenta un indirizzo fisico.
@@ -39,11 +39,11 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 }
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
  `offset`\
  Offset a 64 bit in uno spazio di indirizzi fisico.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_UNMANAGED_PHYSICAL` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisiti
@@ -53,6 +53,6 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

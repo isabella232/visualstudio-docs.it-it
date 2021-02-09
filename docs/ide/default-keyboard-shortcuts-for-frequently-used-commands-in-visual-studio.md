@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 12dc587e25fef4e8b62d6ede0a13d5eb4aa7e3fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880502"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida più comuni per Visual Studio
 
@@ -25,7 +25,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 > [!NOTE]
 > È possibile [cercare il tasto di scelta rapida](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e quindi scegliendo **Tastiera**.
 
-## <a name="build"></a>Compilare
+## <a name="build"></a>Compilazione
 
 |Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
@@ -95,7 +95,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 |Edit.SelectCurrentWord|**CTRL + W** [Editor di testo]|
 |Edit.SelectionCancel|**ESC** [Editor di testo, progettazione report, finestra di progettazione impostazioni, progettazione Windows Form, editor risorse gestite]|
 |Edit.SurroundWith|**CTRL + K, CTRL + S** [globale]|
-|Edit.TabLeft|**MAIUSC + TAB** [Editor di testo, progettazione report Windows Forms Editor]|
+|Edit.TabLeft|**MAIUSC + TAB** [Editor di testo, progettazione report Windows Form Editor]|
 |Edit.ToggleAllOutlining|**CTRL + M, CTRL + L** [Editor di testo]|
 |Edit.ToggleBookmark|**Ctrl + k, Ctrl + k** [Editor di testo]|
 |Edit.ToggleCompletionMode|**CTRL + ALT + barra spaziatrice** [Editor di testo]|

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2915938c966bac7f842d0745c973c7d0b7033e2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d3563fb46b9117ff7f142c5822c708deda34fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880996"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 Notifica al motore di debug (DE) se arrestare o meno in corrispondenza della posizione del codice corrente o semplicemente continuare l'esecuzione.
@@ -28,13 +28,13 @@ Notifica al motore di debug (DE) se arrestare o meno in corrispondenza della pos
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CanStop ( 
+HRESULT CanStop ( 
    BOOL fCanStop
 );
 ```
 
 ```csharp
-int CanStop ( 
+int CanStop ( 
    int fCanStop
 );
 ```
@@ -46,12 +46,12 @@ in Diverso da zero ( `TRUE` ) se l'oggetto de deve arrestarsi in corrispondenza 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il ricevitore di questo evento chiama in genere il metodo [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) per determinare il motivo per cui il de vuole arrestare, quindi chiama il `IDebugCanStopEvent2::CanStop` metodo con la risposta appropriata.
 
  Se il valore di si interrompe, viene inviato un evento che descrive il motivo dell'arresto. In genere sono presenti due eventi inviati, un utente o un'interruzione del segnale rappresentata dall'interfaccia [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) e un evento del punto di interruzione rappresentato dall'interfaccia [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

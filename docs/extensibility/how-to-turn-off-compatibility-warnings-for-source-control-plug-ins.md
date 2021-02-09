@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5607f4a92a14b692f20d509e014991d461815bd
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ae293f92d8de3aec2137f26999a3315bb5dc5c08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880736"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procedura: disattivare gli avvisi di compatibilità per i plug-in del controllo del codice sorgente
 
@@ -44,6 +44,6 @@ Un utente può visualizzare diversi avvisi di compatibilità quando utilizza il 
 
      È preferibile supportare la rientranza ( `SCC_CAP_REENTRANT` funzionalità); in questo modo verrà rimosso questo avviso. Tuttavia, se il supporto non è possibile, è possibile impostare queste voci del registro di sistema.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Flag funzionalità](../extensibility/capability-flags.md)

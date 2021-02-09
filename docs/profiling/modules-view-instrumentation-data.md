@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7012f2deffa2e01057fd79f52ec2fcac3674f7eb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 031068d159b7004b7cfe7fcf1c747c2eb582afc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879774"
 ---
 # <a name="modules-view---instrumentation-data"></a>Visualizzazione Moduli - dati di strumentazione
 Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli presenti nei dati di profilatura. Le funzioni del modulo sono elencate sotto il nodo del modulo.
@@ -82,7 +82,7 @@ Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggr
 |**Tempo esclusivo applicazione massimo**|- Per una funzione, il tempo esclusivo applicazione massimo di una chiamata a questa funzione.<br />- Per un modulo, il tempo esclusivo applicazione massimo di tutte le chiamate a funzioni nel modulo.|
 |**Tempo esclusivo applicazione minimo**|- Per una funzione, il tempo esclusivo applicazione minimo di una chiamata a questo modulo o a questa funzione.<br />- Per un modulo, il tempo esclusivo applicazione minimo di tutte le chiamate a funzioni nel modulo.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)

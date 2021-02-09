@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2b498279b085f19cd6ea218b4300301184da8e0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879748"
 ---
 # <a name="modules-view---sampling-data"></a>Visualizzazione Moduli: dati di campionamento
 Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni campionate del modulo sono elencate sotto il nodo del modulo.
@@ -42,7 +42,7 @@ Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i da
 |**Campioni esclusivi**|- Per una funzione, il numero di campioni dello stack di chiamate in cui era in corso l'esecuzione diretta di questa funzione, ovvero il numero di campioni in cui questa funzione era in cima allo stack di chiamate.<br />- Per un modulo, la somma dei campioni esclusivi delle funzioni nel modulo.<br />- Per una riga o istruzione, il numero di campioni in cui era in esecuzione questa riga o istruzione.|
 |**% esempi esclusivi**|- Per una funzione o un modulo, la percentuale di tutti i campioni nell'esecuzione della profilatura che costituivano campioni esclusivi di questa funzione o di questo modulo.<br />- Per una riga o istruzione, la percentuale di tutti i campioni nell'esecuzione di profilatura in cui era in esecuzione questa riga o istruzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)

@@ -28,15 +28,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 504488bdd08e80c34ebeed727e7b95badf12ca37
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 897001a5ac10e8a8e1eef96feca4113afa5e1ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880567"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
 
@@ -44,12 +44,12 @@ ms.locfileid: "94903014"
 
 |**Tipo**|**Membri che può contenere**|
 |--------------| - |
-|Class|metodo, proprietà (per C# e Visual Basic), campo, evento (per C# e Visual Basic), costruttore (metodo), distruttore (metodo), costante|
+|Classe|metodo, proprietà (per C# e Visual Basic), campo, evento (per C# e Visual Basic), costruttore (metodo), distruttore (metodo), costante|
 |Enumerazione|member|
 |Interfaccia|metodo, proprietà, evento (per C# e Visual Basic)|
 |Classe astratta|metodo, proprietà (per C# e Visual Basic), campo, evento (per C# e Visual Basic), costruttore (metodo), distruttore (metodo), costante|
 |Struttura (struct in C#)|metodo, proprietà (per C# e Visual Basic), campo, evento (per C# e Visual Basic), costruttore (metodo), costante|
-|Delegato|parametro|
+|Delegato|parameter|
 |Modulo (solo VB)|metodo, proprietà, campo, evento, costruttore, costante|
 
 > [!NOTE]
@@ -141,7 +141,7 @@ Ciascuna riga di membri visualizza i seguenti elementi:
 
      Ciascun tipo di membro è rappresentato dalla rispettiva icona. Posizionare il cursore del mouse sull'icona del membro per visualizzarne la firma. Fare clic sull'icona del membro o sullo spazio vuoto a sinistra per selezionare la riga.
 
-- **Nome membro**
+- **Nome del membro**
 
      Nella colonna **Nome** della riga di un membro è visualizzato il nome del membro. Questo nome viene visualizzato anche nella proprietà **Nome** nella finestra Proprietà. È possibile utilizzare questa cella per modificare il nome di qualsiasi membro con autorizzazioni di lettura-scrittura.
 
@@ -319,7 +319,7 @@ I metodi parziali non possono essere modificati tramite Progettazione classi o l
 
 Il codice C++ nativo non può essere modificato tramite Progettazione classi o la finestra **Dettagli classe**, ma deve essere modificato con l'editor del codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visualizzazione dei tipi e delle relazioni](designing-and-viewing-classes-and-types.md)
 - [Refactoring di classi e tipi](refactoring-classes-and-types.md)
