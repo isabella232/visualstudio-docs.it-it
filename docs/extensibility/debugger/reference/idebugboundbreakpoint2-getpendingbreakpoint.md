@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4037cff1e080b4af97dbc56de4802f6f73504649
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717081905d55a4df50601bbbfc7336265cef60d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927158"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 Ottiene il punto di interruzione in sospeso dal quale è stato creato il punto di interruzione associato specificato.
@@ -29,13 +29,13 @@ Ottiene il punto di interruzione in sospeso dal quale è stato creato il punto d
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetPendingBreakpoint( 
+HRESULT GetPendingBreakpoint( 
     IDebugPendingBreakpoint2** ppPendingBreakpoint
 );
 ```
 
 ```csharp
-int GetPendingBreakpoint( 
+int GetPendingBreakpoint( 
     out IDebugPendingBreakpoint2 ppPendingBreakpoint
 );
 ```
@@ -47,7 +47,7 @@ out Restituisce l'oggetto [IDebugPendingBreakpoint2](../../../extensibility/debu
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Un punto di interruzione in sospeso può essere considerato come una raccolta di tutte le informazioni necessarie per associare un punto di interruzione al codice che può essere applicato a uno o più programmi.
 
 ## <a name="example"></a>Esempio
@@ -84,6 +84,6 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

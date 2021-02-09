@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7973454d-c957-4123-a0ee-80ebcdbbd2d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91c68e0a0e314015c1f2e6df2a96243c6ce854e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f6f174685ad544a53548a8818a08165d46679b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927041"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 Determina se un processo può essere terminato.
@@ -28,13 +28,13 @@ Determina se un processo può essere terminato.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CanTerminateProcess ( 
+HRESULT CanTerminateProcess ( 
    IDebugProcess2* pProcess
 );
 ```
 
 ```csharp
-int CanTerminateProcess ( 
+int CanTerminateProcess ( 
    IDebugProcess2 pProcess
 );
 ```
@@ -46,10 +46,10 @@ in Oggetto [IDebugProcess2](../../../extensibility/debugger/reference/idebugproc
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `S_FALSE` se il motore non è in grado di terminare il processo, ad esempio perché l'accesso è stato negato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se questo metodo restituisce `S_OK` , è possibile chiamare il metodo [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) per terminare effettivamente il processo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)

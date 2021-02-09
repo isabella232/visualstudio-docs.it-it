@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cef6cd23a1e5ff1e00e2d4d93313ee1e9355ece2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927561"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto del pacchetto
 Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico contiene un singolo file manifesto del prodotto, ma un manifesto del pacchetto per ogni impostazione locale. Le funzionalità condivise tra diverse versioni localizzate dovrebbero essere inserite nel manifesto del prodotto.
@@ -100,5 +100,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)

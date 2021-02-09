@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f46942936f9d4f6b69225953d4f9aa8a974a8723
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 64f2a641d081edba3ff7cc230b8a73b9a22c8097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927301"
 ---
 # <a name="buttons-element"></a>Elemento Buttons
 Elementi del [pulsante](../extensibility/button-element.md) gruppi, che rappresentano i singoli comandi.
@@ -39,7 +39,7 @@ Elementi del [pulsante](../extensibility/button-element.md) gruppi, che rapprese
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

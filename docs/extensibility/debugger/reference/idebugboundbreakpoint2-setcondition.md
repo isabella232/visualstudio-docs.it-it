@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4c90c75d1ddfe4edaeb47e132f5b049ee8d29a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927106"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Imposta o modifica la condizione associata a questo punto di interruzione associato.
@@ -29,13 +29,13 @@ Imposta o modifica la condizione associata a questo punto di interruzione associ
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT SetCondition( 
+HRESULT SetCondition( 
    BP_CONDITION bpCondition
 );
 ```
 
 ```csharp
-int SetCondition( 
+int SetCondition( 
    enum_BP_CONDITION bpCondition
 );
 ```
@@ -47,10 +47,10 @@ in Valore dell'enumerazione [BP_CONDITION](../../../extensibility/debugger/refer
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Qualsiasi condizione precedentemente associata a questo punto di interruzione viene persa.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

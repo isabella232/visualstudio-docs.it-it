@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927665"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: data binding complesse in un progetto a livello di documento
   In questa procedura dettagliata vengono illustrate le nozioni di base di data binding complesse in un progetto a livello di documento. È possibile associare più celle di un foglio di lavoro Microsoft Office Excel ai campi del database di SQL Server Northwind.
@@ -140,7 +140,7 @@ ms.locfileid: "97527119"
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  A questo punto è possibile testare la cartella di lavoro per verificare che i dati vengano visualizzati come previsto e che sia possibile modificare i dati nell'oggetto elenco.
 
 ### <a name="to-test-the-data-binding"></a>Per testare la data binding
@@ -177,7 +177,7 @@ ms.locfileid: "97527119"
 
 1. Selezionare una cella all'interno dell'oggetto elenco.
 
-    Viene visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco (* *\** _) nella prima cella della nuova riga.
+    Viene visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco ( **\*** ) nella prima cella della nuova riga.
 
 2. Aggiungere le informazioni seguenti nella riga vuota.
 
@@ -187,7 +187,7 @@ ms.locfileid: "97527119"
 
 ### <a name="to-delete-rows"></a>Per eliminare righe
 
-- Fare clic con il pulsante destro del mouse sul numero 16 (riga 16) all'estrema sinistra del foglio di lavori, quindi scegliere _ * Elimina * *.
+- Fare clic con il pulsante destro del mouse sul numero 16 (riga 16) all'estrema sinistra del foglio di lavori, quindi scegliere **Elimina**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Per ordinare le righe nell'elenco
 
@@ -226,7 +226,7 @@ ms.locfileid: "97527119"
 
 - Creare una relazione Master-Details tra un campo e una tabella. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di una relazione Master Detail utilizzando un set di dati memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Procedura dettagliata: data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

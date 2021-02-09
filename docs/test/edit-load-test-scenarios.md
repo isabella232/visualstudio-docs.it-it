@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 95e7c612e7379c44c95f17e7b12c36f7a6f07d8c
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 01129ae017dd51a6bc36d966a495eb7fd1afd2f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926898"
 ---
 # <a name="edit-load-test-scenarios"></a>Modificare gli scenari di test di carico
 
@@ -59,7 +59,7 @@ Uno scenario è costituito anche da molte altre proprietà che è possibile modi
 |**Configurare le impostazioni di ritardo per lo scenario:** usando l'**Editor test di carico** e la finestra **Proprietà**, è possibile specificare un ritardo prima di avviare uno scenario in un test di carico. La proprietà **Ritarda ora di inizio** può ad esempio essere utile quando è necessario che in uno scenario venga avviata la produzione di articoli usati in un altro scenario. È possibile ritardare il secondo scenario per consentire al primo di popolare i dati.|-   [Configurare ritardi di avvio di uno scenario](../test/configure-scenario-start-delays.md)|
 |**Specificare computer remoti da usare in uno scenario di test di carico:** dopo aver creato un test di carico, è possibile modificare le proprietà dello scenario di test di carico e indicare gli agenti di test da includere. Per ulteriori informazioni, vedere [test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).|-   [Procedura: Specificare agenti di test da usare](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare i test di carico](../test/edit-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 081d6740aa31a31173b12e467b1b8e32a074604a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528143"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927717"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedura: visualizzare la scheda Developer sulla barra multifunzione
   Per accedere alla scheda **Developer** sulla barra multifunzione di un'applicazione di Office, è necessario configurarla in modo da visualizzare la scheda perché non è visualizzata per impostazione predefinita. Ad esempio, è necessario visualizzare tale scheda per aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalizzazione a livello di documento per Word.
@@ -68,5 +68,5 @@ ms.locfileid: "97528143"
 
 5. Scegliere il pulsante **OK** per chiudere la finestra di dialogo **Opzioni** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)

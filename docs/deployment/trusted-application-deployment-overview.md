@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927405"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
 Questo argomento presenta informazioni generali su come distribuire applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con autorizzazioni elevate usando la tecnologia per la distribuzione di applicazioni attendibili.
@@ -79,7 +79,7 @@ Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione d
 
 - Spazio dei nomi <xref:System.Security.Cryptography?displayProperty=fullName>.
 
-- *CertMgr.exe* , che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per ulteriori informazioni, vedere [Certmgr.exe (strumento Gestione certificati)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per ulteriori informazioni, vedere [Certmgr.exe (strumento Gestione certificati)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Creare un'applicazione ClickOnce
  Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è un .NET Framework applicazione client combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, vedere [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
@@ -103,6 +103,6 @@ Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione d
 ## <a name="limitations-of-trusted-application-deployment"></a>Limitazioni della distribuzione di applicazioni attendibili
  È possibile usare la distribuzione di applicazioni attendibili per concedere un livello di attendibilità elevato alle applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuite tramite Web o tramite una condivisione file aziendale. Non è necessario usare la distribuzione di applicazioni attendibili per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuite con un CD perché, per impostazione predefinita, a queste applicazioni viene concessa l'attendibilità totale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Mage.exe (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

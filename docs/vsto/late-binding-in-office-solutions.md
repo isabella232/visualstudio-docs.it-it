@@ -14,15 +14,15 @@ helpviewer_keywords:
 - casting, object to specific type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927652"
 ---
 # <a name="late-binding-in-office-solutions"></a>Associazione tardiva nelle soluzioni Office
   Alcuni tipi nei modelli a oggetti delle applicazioni di Office forniscono funzionalità disponibili tramite le funzionalità di associazione tardiva. Alcuni metodi e proprietà, ad esempio, possono restituire tipi diversi di oggetti a seconda del contesto dell'applicazione di Office e alcuni tipi possono esporre metodi o proprietà diversi in contesti diversi.
@@ -40,7 +40,7 @@ ms.locfileid: "97523565"
 
  Per informazioni sulla conversione in Visual Basic, vedere [conversioni implicite ed esplicite &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) e la [funzione CType &#40;](/dotnet/visual-basic/language-reference/functions/ctype-function)Visual Basic&#41;.
 
-### <a name="examples"></a>Esempi
+### <a name="examples"></a>Esempio
  Nell'esempio di codice riportato di seguito viene illustrato come eseguire il cast di un oggetto a un tipo specifico in un progetto Visual Basic in cui **Option Strict** è on. In questo tipo di progetto, è necessario eseguire il cast esplicito della <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> proprietà a un oggetto <xref:Microsoft.Office.Interop.Excel.Range> . Questo esempio richiede un progetto di Excel a livello di documento con una classe Worksheet denominata `Sheet1` .
 
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]
@@ -53,7 +53,7 @@ ms.locfileid: "97523565"
 ## <a name="access-members-that-are-available-only-through-late-binding"></a>Accesso ai membri disponibili solo tramite associazione tardiva
  Alcune proprietà e metodi negli assembly di interoperabilità primari di Office sono disponibili solo tramite associazione tardiva. Nei progetti Visual Basic in cui **Option Strict** è disattivato o nei progetti Visual C# destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , è possibile usare le funzionalità di associazione tardiva in questi linguaggi per accedere ai membri ad associazione tardiva. Nei progetti Visual Basic in cui **Option Strict** è impostata su on, è necessario utilizzare la reflection per accedere a questi membri.
 
-### <a name="examples"></a>Esempi
+### <a name="examples"></a>Esempio
  Nell'esempio di codice riportato di seguito viene illustrato come accedere a membri ad associazione tardiva in un progetto Visual Basic in cui **Option Strict** è disattivato o in un progetto Visual C# destinato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . Questo esempio accede alla proprietà **nome** ad associazione tardiva della finestra di dialogo **Apri file** in Word. Per usare questo esempio, eseguirlo dalla `ThisDocument` classe o `ThisAddIn` in un progetto di Word.
 
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
@@ -63,7 +63,7 @@ ms.locfileid: "97523565"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Usare la Guida di programmazione di tipo Dynamic &#40;C&#35;&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)

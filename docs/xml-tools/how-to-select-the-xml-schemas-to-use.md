@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9773df597269d5f7044bf168626f530e4a454020
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1e0d8bf1bca7917c6692d7c9c2398df47c4145e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926547"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
 
@@ -23,7 +23,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory *%VSInstall
 
 Utilizzare la proprietà documento **schemi** per selezionare uno o più schemi di XML Schema Definition Language (XSD). È possibile selezionare gli schemi dalla cache degli schemi o altrove.
 
-Gli schemi specificati vengono salvati in un file di opzioni utente della soluzione (nascosto) (. *suo* ), insieme a tutte le altre proprietà dei documenti XML. Di conseguenza, non è necessario immettere nuovamente questi valori alla successiva apertura della soluzione.
+Gli schemi specificati vengono salvati in un file di opzioni utente della soluzione (nascosto) (.*suo*), insieme a tutte le altre proprietà dei documenti XML. Di conseguenza, non è necessario immettere nuovamente questi valori alla successiva apertura della soluzione.
 
 > [!NOTE]
 > L'editor può essere convalidato utilizzando uno schema inline o uno schema a cui fa riferimento l' `xsd:schemaLocation` attributo. Per ulteriori informazioni, vedere [convalida di documenti XML](../xml-tools/xml-document-validation.md).
@@ -54,7 +54,7 @@ Gli schemi specificati vengono salvati in un file di opzioni utente della soluzi
 
 1. Nella finestra proprietà del documento fare clic sul pulsante nel campo **schemi** .
 
-2. Scegliere **Aggiungi**.
+2. Fare clic su **Aggiungi**.
 
    Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
 
@@ -75,7 +75,7 @@ Gli schemi specificati vengono salvati in un file di opzioni utente della soluzi
    > [!NOTE]
    > Se è ancora presente un riferimento allo schema tramite un `schemaLocation` attributo o un oggetto corrispondente, `targetNamespace` **Remove** non funzionerà in questa situazione a causa dell'associazione automatica. In questo caso è consigliabile contrassegnare lo schema come **non utilizzare gli schemi selezionati** nella colonna **utilizza** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Cache dello schema](../xml-tools/schema-cache.md)
 - [Finestra di dialogo schemi XML](../xml-tools/xml-schemas-dialog-box.md)

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927223"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio o si vuole che l'elemento dell'interfaccia sia coerente con funzionalità simili, usare nomi di token esistenti nei file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.
@@ -111,7 +111,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.CheckBoxBackground` |
+| Sfondo | `CommonControls.CheckBoxBackground` |
 | Bordo | `CommonControls.CheckBoxBorder` |
 | Testo | `CommonControls.CheckBoxText` |
 | Icona | `CommonControls.CheckBoxGlyph` |
@@ -122,7 +122,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.CheckBoxBackgroundDisabled` |
+| Sfondo | `CommonControls.CheckBoxBackgroundDisabled` |
 | Bordo | `CommonControls.CheckBoxBorderDisabled` |
 | Testo | `CommonControls.CheckBoxTextDisabled` |
 | Icona | `CommonControls.CheckBoxGlyphDisabled` |
@@ -133,7 +133,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.CheckBoxBackgroundHover` |
+| Sfondo | `CommonControls.CheckBoxBackgroundHover` |
 | Bordo | `CommonControls.CheckBoxBorderHover` |
 | Testo | `CommonControls.CheckBoxTextHover` |
 | Icona | `CommonControls.CheckBoxGlyphHover` |
@@ -144,7 +144,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.CheckBoxBackgroundPressed` |
+| Sfondo | `CommonControls.CheckBoxBackgroundPressed` |
 | Bordo | `CommonControls.CheckBoxBorderPressed` |
 | Testo | `CommonControls.CheckBoxTextPressed` |
 | Icona | `CommonControls.CheckBoxGlyphPressed` |
@@ -155,7 +155,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.CheckBoxBackgroundFocused` |
+| Sfondo | `CommonControls.CheckBoxBackgroundFocused` |
 | Bordo | `CommonControls.CheckBoxBorderFocused` |
 | Testo | `CommonControls.CheckBoxTextFocused` |
 | Icona | `CommonControls.CheckBoxGlyphFocused` |
@@ -174,7 +174,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.ComboBoxBackground` |
+| Sfondo | `CommonControls.ComboBoxBackground` |
 | Bordo | `CommonControls.ComboBoxBorder` |
 | Testo | `CommonControls.ComboBoxText` |
 | Separatore | `CommonControls.ComboBoxSeparator` |
@@ -187,7 +187,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.ComboBoxBackgroundDisabled` |
+| Sfondo | `CommonControls.ComboBoxBackgroundDisabled` |
 | Bordo | `CommonControls.ComboBoxBorderDisabled` |
 | Testo | `CommonControls.ComboBoxTextDisabled` |
 | Separatore | `CommonControls.ComboBoxSeparatorDisabled` |
@@ -200,7 +200,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.ComboBoxBackgroundHover` |
+| Sfondo | `CommonControls.ComboBoxBackgroundHover` |
 | Bordo | `CommonControls.ComboBoxBorderHover` |
 | Testo | `CommonControls.ComboBoxTextHover` |
 | Separatore | `CommonControls.ComboBoxSeparatorHover` |
@@ -213,7 +213,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.ComboBoxBackgroundPressed` |
+| Sfondo | `CommonControls.ComboBoxBackgroundPressed` |
 | Bordo | `CommonControls.ComboBoxBorderPressed` |
 | Testo | `CommonControls.ComboBoxTextPressed` |
 | Separatore | `CommonControls.ComboBoxSeparatorPressed` |
@@ -226,7 +226,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.ComboBoxListBackground`<br />`CommonControls.ComboBoxListBackgroundHover`<br />`CommonControls.ComboBoxListItemBackgroundPressed`<br />`CommonControls.ComboBoxListItemBackgroundFocused` |
+| Sfondo | `CommonControls.ComboBoxListBackground`<br />`CommonControls.ComboBoxListBackgroundHover`<br />`CommonControls.ComboBoxListItemBackgroundPressed`<br />`CommonControls.ComboBoxListItemBackgroundFocused` |
 | Bordo | `CommonControls.ComboBoxListBorder`<br />`CommonControls.ComboBoxListBorderHover`<br />`CommonControls.ComboBoxListBorderPressed`<br />`CommonControls.ComboBoxListBorderFocused` |
 | Testo dell'elemento | `CommonControls.ComboBoxListItemText`<br /> `CommonControls.ComboBoxListItemTextHover`<br />`CommonControls.ComboBoxListItemTextPressed`<br />`CommonControls.ComboBoxListItemTextFocused` |
 | Ombreggiatura dello sfondo | `CommonControls.ComboBoxListBackgroundShadow` |
@@ -237,7 +237,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella funzionalit�
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.ComboBoxBackgroundFocused` |
+| Sfondo | `CommonControls.ComboBoxBackgroundFocused` |
 | Bordo | `CommonControls.ComboBoxBorderFocused` |
 | Testo | `CommonControls.ComboBoxTextFocused` |
 | Separatore | `CommonControls.ComboBoxSeparatorFocused` |
@@ -268,7 +268,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Header.Default` |
+| Sfondo | `Header.Default` |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Primo piano (glifo) | `Header.Glyph` |
 | Bordo | `Header.SeparatorLine` |
@@ -277,7 +277,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Header.MouseOver` |
+| Sfondo | `Header.MouseOver` |
 | Primo piano (testo) | `Environment.CommandBarTextHover` |
 | Primo piano (glifo) | `Header.MouseOverGlyph` |
 | Bordo | `Header.SeparatorLine` |
@@ -286,7 +286,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `CommonControls.CheckBoxBackgroundPressed` |
+| Sfondo | `CommonControls.CheckBoxBackgroundPressed` |
 | Primo piano (testo) | `CommonControls.CheckBoxBorderPressed` |
 | Primo piano (glifo) | `CommonControls.CheckBoxTextPressed` |
 | Bordo | `CommonControls.CheckBoxGlyphPressed` |
@@ -298,7 +298,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | Modalità trasparente |
+| Sfondo | Modalità trasparente |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Bordo | nessuno |
 
@@ -306,7 +306,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.SelectedItemActive` |
+| Sfondo | `TreeView.SelectedItemActive` |
 | Primo piano (testo) | `TreeView.SelectedItemActiveText` |
 | Bordo | nessuno |
 
@@ -314,7 +314,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.SelectedItemInactive` |
+| Sfondo | `TreeView.SelectedItemInactive` |
 | Primo piano (testo) | `TreeView.SelectedItemInactiveText` |
 | Bordo | nessuno |
 
@@ -356,7 +356,7 @@ Il testo del suggerimento viene visualizzato in un controllo vuoto, sotto un con
 | Elemento | Nome token: Category.color |
 | --- | --- |
 | Primo piano (testo) | `Environment.ControlRequiredHintText` |
-| Background | `Environment.ControlRequiredBackground` |
+| Sfondo | `Environment.ControlRequiredBackground` |
 
 **Testo controllo casella di ricerca**
 
@@ -424,7 +424,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.InfoBarBackground` |
+| Sfondo | `InfoBar.InfoBarBackground` |
 | Primo piano (testo) | `InfoBar.InfoBar` |
 | Bordo | `InfoBar.InfoBarBorder` |
 
@@ -434,7 +434,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.CloseButton` |
+| Sfondo | `InfoBar.CloseButton` |
 | Bordo | `InfoBar.CloseButtonBorder` |
 | Icona | `InfoBar.CloseButtonGlyph` |
 
@@ -444,7 +444,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.CloseButtonHover` |
+| Sfondo | `InfoBar.CloseButtonHover` |
 | Bordo | `InfoBar.CloseButtonHoverBorder` |
 | Icona | `InfoBar.CloseButtonHoverGlyph` |
 
@@ -454,7 +454,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.CloseButtonDown` |
+| Sfondo | `InfoBar.CloseButtonDown` |
 | Bordo | `InfoBar.CloseButtonDownBorder` |
 | Icona | `InfoBar.CloseButtonDownGlyph` |
 
@@ -512,7 +512,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.Button` |
+| Sfondo | `InfoBar.Button` |
 | Primo piano (testo) | `InfoBar.Button` |
 | Bordo | `InfoBar.ButtonBorder` |
 
@@ -522,7 +522,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.ButtonMouseOver` |
+| Sfondo | `InfoBar.ButtonMouseOver` |
 | Primo piano (testo) | `InfoBar.ButtonMouseOver` |
 | Bordo | `InfoBar.ButtonMouseOverBorder` |
 
@@ -532,7 +532,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.ButtonMouseDown` |
+| Sfondo | `InfoBar.ButtonMouseDown` |
 | Primo piano (testo) | `InfoBar.ButtonMouseDown` |
 | Bordo | `InfoBar.ButtonMouseDownBorder` |
 
@@ -542,7 +542,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.ButtonDisabled` |
+| Sfondo | `InfoBar.ButtonDisabled` |
 | Primo piano (testo) | `InfoBar.ButtonDisabled` |
 | Bordo | `InfoBar.ButtonDisabledBorder` |
 
@@ -552,7 +552,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `InfoBar.ButtonFocus` |
+| Sfondo | `InfoBar.ButtonFocus` |
 | Primo piano (testo) | `InfoBar.ButtonFocus` |
 | Bordo | `InfoBar.ButtonFocusBorder` |
 
@@ -598,7 +598,7 @@ Le barre di scorrimento hanno lo stile dell'ambiente di Visual Studio e non devo
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ScrollBarArrowBackground`<br />(Impostato sullo stesso colore della barra di scorrimento). |
+| Sfondo | `Environment.ScrollBarArrowBackground`<br />(Impostato sullo stesso colore della barra di scorrimento). |
 | Primo piano (glifo) | `Environment.ScrollBarArrowGlyph` |
 
 **Freccia della barra di scorrimento: stato del passaggio del mouse**
@@ -607,7 +607,7 @@ Le barre di scorrimento hanno lo stile dell'ambiente di Visual Studio e non devo
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ScrollBarArrowMouseOverBackground`<br />(Impostato sullo stesso colore della barra di scorrimento). |
+| Sfondo | `Environment.ScrollBarArrowMouseOverBackground`<br />(Impostato sullo stesso colore della barra di scorrimento). |
 | Primo piano (glifo) | `Environment.ScrollBarArrowGlyphMouseOver` |
 
 **Freccia della barra di scorrimento: stato premuto**
@@ -616,7 +616,7 @@ Le barre di scorrimento hanno lo stile dell'ambiente di Visual Studio e non devo
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ScrollBarArrowPressedBackground`<br />(Impostato sullo stesso colore della barra di scorrimento). |
+| Sfondo | `Environment.ScrollBarArrowPressedBackground`<br />(Impostato sullo stesso colore della barra di scorrimento). |
 | Primo piano (glifo) | `Environment.ScrollBarArrowGlyphPressed` |
 
 ### <a name="search-boxes"></a><a name="BKMK_SearchBoxes"></a>Caselle di ricerca
@@ -645,7 +645,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.FocusedBackground` |
+| Sfondo | `SearchControl.FocusedBackground` |
 | Primo piano (testo) | `SearchControl.FocusedBackground` |
 | Bordo | `SearchControl.FocusedBorder` |
 | Separatore | `SearchControl.FocusedDropDownSeparator` |
@@ -656,7 +656,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.SearchActiveBackground` |
+| Sfondo | `SearchControl.SearchActiveBackground` |
 | Primo piano (testo) | `SearchControl.SearchActiveBackground` |
 | Bordo | `SearchControl.UnfocusedBorder` |
 | Separatore | `SearchControl.DropDownSeparator` |
@@ -667,7 +667,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.Unfocused` |
+| Sfondo | `SearchControl.Unfocused` |
 | Primo piano (testo) | `SearchControl.Unfocused` |
 | Bordo | `SearchControl.UnfocusedBorder` |
 | Separatore | `SearchControl.DropDownSeparator` |
@@ -678,7 +678,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.Selection` |
+| Sfondo | `SearchControl.Selection` |
 | Primo piano (testo) | `SearchControl.FocusedBackground` |
 | Bordo | nessuno |
 | Separatore | `SearchControl.FocusedDropDownSeparator` |
@@ -689,7 +689,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.Disabled` |
+| Sfondo | `SearchControl.Disabled` |
 | Primo piano (testo) | `SearchControl.Disabled` |
 | Bordo | `SearchControl.DisabledBorder` |
 | Separatore | `SearchControl.DropDownSeparator` |
@@ -700,7 +700,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo Cerca) | `SearchControl.SearchGlyph` |
 | Primo piano (glifo Arresta) | `SearchControl.StopGlyph` |
 | Primo piano (glifo Cancella) | `SearchControl.ClearGlyph` |
@@ -712,7 +712,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D |
+| Sfondo | N/D |
 | Primo piano (glifo Cerca) | `SearchControl.SearchGlyph` |
 | Primo piano (glifo Arresta) | `SearchControl.StopGlyph` |
 | Primo piano (glifo Cancella) | `SearchControl.ClearGlyph` |
@@ -724,7 +724,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.ActionButtonMouseDown` |
+| Sfondo | `SearchControl.ActionButtonMouseDown` |
 | Primo piano (glifo) | `SearchControl.ActionButtonMouseDownGlyph` |
 | Bordo | `SearchControl.ActionButtonMouseDownBorder` |
 
@@ -734,7 +734,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo) | `SearchControl.ActionButtonDisabledGlyph` |
 | Bordo | nessuno |
 
@@ -744,7 +744,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.FocusedDropDownButton` |
+| Sfondo | `SearchControl.FocusedDropDownButton` |
 | Primo piano (glifo) | `SearchControl.FocusedDropDownButtonGlyph` |
 | Bordo | `SearchControl.FocusedDropDownButtonBorder` |
 
@@ -754,7 +754,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.UnfocusedDropDownButton` |
+| Sfondo | `SearchControl.UnfocusedDropDownButton` |
 | Primo piano (glifo) | `SearchControl.UnfocusedDropDownButtonGlyph` |
 | Bordo | `SearchControl.UnfocusedDropDownButtonBorder` |
 
@@ -764,7 +764,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.MouseDownDropDownButton` |
+| Sfondo | `SearchControl.MouseDownDropDownButton` |
 | Primo piano (glifo) | `SearchControl.MouseDownDropDownButtonGlyph` |
 | Bordo | `SearchControl.MouseDownDropDownButtonBorder` |
 
@@ -774,7 +774,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo) | `SearchControl.DisabledDownButtonGlyph` |
 | Bordo | nessuno |
 
@@ -802,7 +802,7 @@ Il menu a discesa della casella di ricerca può essere leggermente più compless
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `SearchControl.PopupItemText` |
 
 **Ricerche suggerite: stato del passaggio del mouse**
@@ -811,7 +811,7 @@ Il menu a discesa della casella di ricerca può essere leggermente più compless
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `SearchControl.PopupMouseOverItemText` |
 | Bordo | `SearchControl.PopupControlMouseOverBorder` |
 
@@ -823,7 +823,7 @@ Il menu a discesa della casella di ricerca può essere leggermente più compless
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo della casella di controllo) | `SearchControl.PopupCheckboxText` |
 | Primo piano (testo del collegamento) | `SearchControl.PopupButtonText` |
 | Sfondo dell'intestazione | `SearchControl.PopupSectionHeaderGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
@@ -837,7 +837,7 @@ Il menu a discesa della casella di ricerca può essere leggermente più compless
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo della casella di controllo) | `SearchControl.PopupCheckboxMouseDownText` |
 | Primo piano (testo del collegamento) | `SearchControl.PopupButtonMouseDownText` |
 | Bordo | `SearchControl.PopupControlMouseOverBorder` |
@@ -871,7 +871,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.Background` |
+| Sfondo | `TreeView.Background` |
 | Primo piano (testo) | `TreeView.Background` |
 | Primo piano (glifo) | `TreeView.Glyph` |
 | Bordo | nessuno |
@@ -882,7 +882,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.Background` |
+| Sfondo | `TreeView.Background` |
 | Primo piano (testo) | `TreeView.Background` |
 | Primo piano (glifo) | `TreeView.GlyphMouseOver` |
 | Bordo | nessuno |
@@ -893,7 +893,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.DragOverItem` |
+| Sfondo | `TreeView.DragOverItem` |
 | Primo piano (testo) | `TreeView.DragOverItem` |
 | Primo piano (glifo) | `TreeView.DragOverItemGlyph` |
 | Bordo | nessuno |
@@ -904,7 +904,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.SelectedItemActive` |
+| Sfondo | `TreeView.SelectedItemActive` |
 | Primo piano (testo) | `TreeView.SelectedItemActive` |
 | Primo piano (glifo) | `TreeView.SelectedItemActiveGlyph` |
 | Bordo | `TreeView.FocusVisualBorder` |
@@ -915,7 +915,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.SelectedItemInactive` |
+| Sfondo | `TreeView.SelectedItemInactive` |
 | Primo piano (testo) | `TreeView.SelectedItemInactive` |
 | Primo piano (glifo) | `TreeView.SelectedItemInactiveGlyph` |
 | Bordo | nessuno |
@@ -926,7 +926,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.SelectedItemActive` |
+| Sfondo | `TreeView.SelectedItemActive` |
 | Primo piano (testo) | `TreeView.SelectedItemActive` |
 | Primo piano (glifo) | `TreeView.SelectedItemActiveGlyphMouseOver` |
 | Bordo | `TreeView.FocusVisualBorder` |
@@ -937,14 +937,14 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.SelectedItemInactive` |
+| Sfondo | `TreeView.SelectedItemInactive` |
 | Primo piano (testo) | `TreeView.SelectedItemInactive` |
 | Primo piano (glifo) | `TreeView.SelectedItemActiveGlyphMouseOver` |
 | Bordo | nessuno |
 
 ## <a name="shell-appearance"></a>Aspetto della shell
 
-### <a name="background"></a>Background
+### <a name="background"></a>Sfondo
 Lo sfondo dell'ambiente è costituito da due livelli. Il livello inferiore è un colore a tinta unita che ricopre l'intero IDE. Il livello superiore si trova sotto lo scaffale dei comandi tra i canali Nascondi automaticamente della finestra degli strumenti, nei bordi destro e sinistro dell'IDE. I livelli superiore e inferiore dello sfondo sono impostati sullo stesso colore nei temi chiaro e scuro.
 
 ![Sfondo della shell di Visual Studio (Redline)](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Sfondo della shell di Visual Studio (Redline)
@@ -958,7 +958,7 @@ Lo sfondo dell'ambiente è costituito da due livelli. Il livello inferiore è un
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.EnvironmentBackground` |
+| Sfondo | `Environment.EnvironmentBackground` |
 
 **Aspetto Shell livello superiore**
 
@@ -966,7 +966,7 @@ Lo sfondo dell'ambiente è costituito da due livelli. Il livello inferiore è un
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.EnvironmentBackgroundGradientBegin`<br />`Environment.EnvironmentBackgroundGradientEnd`<br />`Environment.EnvironmentBackgroundGradientMiddle1`<br />`Environment.EnvironmentBackgroundGradientMiddle2` |
+| Sfondo | `Environment.EnvironmentBackgroundGradientBegin`<br />`Environment.EnvironmentBackgroundGradientEnd`<br />`Environment.EnvironmentBackgroundGradientMiddle1`<br />`Environment.EnvironmentBackgroundGradientMiddle2` |
 
 ### <a name="command-shelf"></a>Scaffale dei comandi
 Due set di nomi di token vengono usati per gli sfondi dello scaffale dei comandi, uno per il punto in cui si trova la barra dei menu e l'altro per il punto in cui si trova la barra dei comandi. Un singolo gruppo della barra dei comandi ha valori di colore di sfondo propri, che vengono descritti in modo più dettagliato nella sezione "Barra dei comandi". Il testo della barra dei menu e della barra dei comandi viene descritto nelle rispettive sezioni.
@@ -984,7 +984,7 @@ Due set di nomi di token vengono usati per gli sfondi dello scaffale dei comandi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
+| Sfondo | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
 **Barra del comando dello scaffale di comandi**
 
@@ -992,7 +992,7 @@ Due set di nomi di token vengono usati per gli sfondi dello scaffale dei comandi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandShelfBackgroundGradientBegin`<br />`Environment.CommandShelfBackgroundGradientMiddle`<br />`Environment.CommandShelfBackgroundGradientEnd` |
+| Sfondo | `Environment.CommandShelfBackgroundGradientBegin`<br />`Environment.CommandShelfBackgroundGradientMiddle`<br />`Environment.CommandShelfBackgroundGradientEnd` |
 
 ## <a name="manifest-designer"></a>Finestra Progettazione manifesto
 La finestra Progettazione manifesto è stata progettata come strumento per semplificare la modifica del file manifesto in progetti Windows 8 e Windows Phone 8. Benché non sia disponibile per l'utilizzo alcun framework condiviso, potrebbe essere appropriato fare in modo che il layout di progettazione e i colori delle schede di orientamento/spostamento corrispondano alla struttura complessiva. Per altre informazioni sui dettagli del layout, vedere [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
@@ -1008,33 +1008,33 @@ La finestra Progettazione manifesto è stata progettata come strumento per sempl
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `ManifestDesigner.TabActive` |
+| Sfondo | `ManifestDesigner.TabActive` |
 | Bordo | nessuno |
 
 **Riquadro Descrizione selezionato Progettazione manifesto: stato predefinito**
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `ManifestDesigner.DescriptionPane` |
+| Sfondo | `ManifestDesigner.DescriptionPane` |
 
 **Pagina contenuto selezionato Progettazione manifesto: stato predefinito**
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `ManifestDesigner.Background` |
+| Sfondo | `ManifestDesigner.Background` |
 | Testo di supporto della finestra di dialogo | `ManifestDesigner.WatermarkText`<br />Questo nome di token non corrisponde alla relativa funzione. |
 
 **Scheda Progettazione manifesto: stato non selezionato**
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `ManifestDesigner.Tab.Inactive` |
+| Sfondo | `ManifestDesigner.Tab.Inactive` |
 
 **Scheda Progettazione manifesto: stato del passaggio del mouse**
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `ManifestDesigner.Tab.Mouseover` |
+| Sfondo | `ManifestDesigner.Tab.Mouseover` |
 
 ## <a name="command-structures"></a>Strutture dei comandi
 
@@ -1066,7 +1066,7 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | nessuno |
+| Sfondo | nessuno |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Primo piano (glifo) | `Environment.CommandBarMenuGlyph` |
 | Bordo | nessuno |
@@ -1079,7 +1079,7 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.CommandBarTextHover` |
 | Primo piano (glifo) | `Environment.CommandBarMenuMouseOverGlyph` |
 | Bordo | `Environment.CommandBarBorder` |
@@ -1092,7 +1092,7 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Primo piano (glifo) | `Environment.CommandBarMenuMouseDownGlyph` |
 | Bordo | `Environment.CommandBarMenuBorder`<br />(Solo lati sinistro, superiore e destro). |
@@ -1103,7 +1103,7 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | nessuno |
+| Sfondo | nessuno |
 | Primo piano (testo) | `Environment.CommandBarTextInactive` |
 | Primo piano (glifo) | `Environment.CommandBarTextInactive` |
 | Bordo | nessuno |
@@ -1124,7 +1124,7 @@ Una singola voce di menu è costituita dal testo del menu e da un'icona facoltat
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Primo piano (glifo del sottomenu) | `Environment.CommandBarMenuSubmenuGlyph` |
 | Bordo | `Environment.CommandBarMenuBorder` |
@@ -1155,7 +1155,7 @@ Una singola voce di menu è costituita dal testo del menu e da un'icona facoltat
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarMenuItemMouseOver` |
+| Sfondo | `Environment.CommandBarMenuItemMouseOver` |
 | Primo piano (testo) | `Environment.CommandBarMenuItemMouseOverText` |
 | Primo piano (glifo del sottomenu) | `Environment.CommandBarMenuMouseOverSubmenuGlyph` |
 | Segno di spunta | `Environment.CommandBarCheckBoxMouseOver` |
@@ -1204,7 +1204,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Bordo | `Environment.CommandBarToolBarBorder` |
 | Quadratino di trascinamento | `Environment.CommandBarDragHandle` |
 | Separatore | `Environment.CommandBarToolBarSeparator`<br />`Environment.CommandBarToolBarSeparatorHighlight` |
@@ -1225,7 +1225,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D (eredita dallo sfondo della barra dei comandi) |
+| Sfondo | N/D (eredita dallo sfondo della barra dei comandi) |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Bordo | N/D |
 
@@ -1235,7 +1235,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarSelected` |
+| Sfondo | `Environment.CommandBarSelected` |
 | Primo piano (testo) | `Environment.CommandBarTextSelected` |
 | Bordo | `Environment.CommandBarSelectedBorder` |
 
@@ -1245,7 +1245,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.CommandBarTextHover` |
 | Bordo | `Environment.CommandBarBorder` |
 
@@ -1255,7 +1255,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarHoverOverSelected` |
+| Sfondo | `Environment.CommandBarHoverOverSelected` |
 | Primo piano (testo) | `Environment.CommandBarTextHoverOverSelected` |
 | Bordo | `Environment.CommandBarHoverOverSelectedIconBorder` |
 
@@ -1265,7 +1265,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.CommandBarTextMouseDown` |
 | Bordo | `Environment.CommandBarBorder` |
 
@@ -1275,7 +1275,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D (eredita dallo sfondo della barra dei comandi) |
+| Sfondo | N/D (eredita dallo sfondo della barra dei comandi) |
 | Primo piano (testo) | `Environment.CommandBarTextInactive` |
 | Bordo | N/D |
 
@@ -1297,7 +1297,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxBackground` |
+| Sfondo | `Environment.ComboBoxBackground` |
 | Primo piano (testo) | `Environment.ComboBoxText` |
 | Bordo | `Environment.ComboBoxBorder` |
 | Separatore | Nessun separatore |
@@ -1308,7 +1308,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D (eredita dallo sfondo della barra dei comandi) |
+| Sfondo | N/D (eredita dallo sfondo della barra dei comandi) |
 | Primo piano (glifo) | `Environment.ComboBoxGlyph` |
 
 **Elenco a discesa della barra dei comandi: stato predefinito**
@@ -1317,7 +1317,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxPopupBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.ComboBoxPopupBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.ComboBoxItemText` |
 | Bordo | `Environment.ComboBoxPopupBorder` |
 
@@ -1327,7 +1327,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.ComboBoxMouseOverText` |
 | Bordo | `Environment.ComboBoxMouseOverBorder` |
 | Separatore | `Environment.ComboBoxMouseOverSeparator` |
@@ -1338,7 +1338,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxButtonMouseOverBackground` |
+| Sfondo | `Environment.ComboBoxButtonMouseOverBackground` |
 | Primo piano (glifo) | `Environment.ComboBoxMouseOverGlyph` |
 
 **Elenco a discesa della barra dei comandi: stato del passaggio del mouse**
@@ -1357,7 +1357,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxFocusedBackground` |
+| Sfondo | `Environment.ComboBoxFocusedBackground` |
 | Primo piano (testo) | `Environment.ComboBoxFocusedText` |
 | Bordo | `Environment.ComboBoxFocusedBorder` |
 | Separatore | `Environment.ComboBoxFocusedButtonSeparator` |
@@ -1368,7 +1368,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxFocusedButtonBackground` |
+| Sfondo | `Environment.ComboBoxFocusedButtonBackground` |
 | Primo piano (glifo) | `Environment.ComboBoxFocusedGlyph` |
 
  **Campo di input della casella combinata della barra del comando: stato premuto**
@@ -1377,7 +1377,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxMouseDownBackground` |
+| Sfondo | `Environment.ComboBoxMouseDownBackground` |
 | Primo piano (testo) | `Environment.ComboBoxMouseDownText` |
 | Bordo | `Environment.ComboBoxMouseDownBorder` |
 | Separatore | `Environment.ComboBoxMouseDownSeparator` |
@@ -1388,7 +1388,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxButtonMouseDownBackground` |
+| Sfondo | `Environment.ComboBoxButtonMouseDownBackground` |
 | Primo piano (glifo) | `Environment.ComboBoxMouseDownGlyph` |
 
 **Campo di input della casella combinata della barra del comando: stato disabilitato**
@@ -1397,7 +1397,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ComboBoxDisabledBackground` |
+| Sfondo | `Environment.ComboBoxDisabledBackground` |
 | Primo piano (testo) | `Environment.ComboBoxDisabledText` |
 | Bordo | `Environment.ComboBoxDisabledBorder` |
 | Separatore | Nessun separatore |
@@ -1408,7 +1408,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo) | `Environment.ComboBoxDisabledGlyph` |
 
 #### <a name="command-bar-drop-downs"></a><a name="BKMK_CommandDropDown"></a> Elenchi a discesa della barra del comando
@@ -1429,7 +1429,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DropDownBackground` |
+| Sfondo | `Environment.DropDownBackground` |
 | Primo piano (testo) | `DropDownText` |
 | Bordo | `DropDownBorder` |
 | Separatore | Nessun separatore |
@@ -1440,7 +1440,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo) | `Environment.DropDownGlyph` |
 
 **Elenco a discesa della barra dei comandi: stato predefinito**
@@ -1449,7 +1449,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DropDownPopupBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.DropDownPopupBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.ComboBoxItemText` |
 | Bordo | `Environment.DropDownPopupBorder` |
 | Ombreggiatura | `Environment.DropShadowBackground` |
@@ -1460,7 +1460,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DropDownMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.DropDownMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.DropDownMouseOverText` |
 | Bordo | `Environment.DropDownMouseOverBorder` |
 | Separatore | `Environment.DropDownButtonMouseOverSeparator` |
@@ -1471,7 +1471,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DropDownButtonMouseOverBackground` |
+| Sfondo | `Environment.DropDownButtonMouseOverBackground` |
 | Primo piano (glifo) | `Environment.DropDownMouseOverGlyph` |
 
 **Elenco a discesa della barra dei comandi: stato del passaggio del mouse**
@@ -1490,7 +1490,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DropDownMouseDownBackground` |
+| Sfondo | `Environment.DropDownMouseDownBackground` |
 | Primo piano (testo) | `Environment.DropDownMouseDownText` |
 | Bordo | `Environment.DropDownMouseDownBorder` |
 | Separatore | `Environment.DropDownButtonMouseDownSeparator` |
@@ -1501,7 +1501,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DropDownButtonMouseDownBackground` |
+| Sfondo | `Environment.DropDownButtonMouseDownBackground` |
 | Primo piano (glifo) | `Environment.DropDownMouseDownGlyph` |
 
 **Campo selezione elenco a discesa barra comandi: stato disabilitato**
@@ -1510,7 +1510,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DropDownDisabledBackground` |
+| Sfondo | `Environment.DropDownDisabledBackground` |
 | Primo piano (testo) | `Environment.DropDownDisabledText` |
 | Bordo | `Environment.DropDownDisabledBorder` |
 | Separatore | Nessun separatore |
@@ -1521,7 +1521,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D |
+| Sfondo | N/D |
 | Primo piano (glifo) | `Environment.DropDownDisabledGlyph` |
 
 #### <a name="command-bar-split-buttons"></a>Pulsanti di suddivisione della barra del comando
@@ -1540,7 +1540,7 @@ I pulsanti di menu combinato condividono molti nomi di token con altri controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | nessuno |
+| Sfondo | nessuno |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Primo piano (glifo) | `Environment.CommandBarSplitButtonGlyph` |
 | Bordo | N/D |
@@ -1552,7 +1552,7 @@ I pulsanti di menu combinato condividono molti nomi di token con altri controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.CommandBarTextHover` |
 | Primo piano (glifo) | `Environment.CommandBarSplitButtonMouseOverGlyph` |
 | Bordo | `Environment.CommandBarBorder` |
@@ -1564,7 +1564,7 @@ I pulsanti di menu combinato condividono molti nomi di token con altri controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.CommandBarTextMouseDown` |
 | Primo piano (glifo) | `Environment.CommandBarSplitButtonMouseDownGlyph` |
 | Bordo | `Environment.CommandBarBorder` |
@@ -1576,7 +1576,7 @@ I pulsanti di menu combinato condividono molti nomi di token con altri controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D |
+| Sfondo | N/D |
 | Primo piano (testo) | `Environment.ComboBoxItemTextInactive` |
 | Primo piano (glifo) | `Environment.CommandBarTextInactive` |
 | Bordo | N/D |
@@ -1599,7 +1599,7 @@ Il pulsante "Altre opzioni" viene usato quando un gruppo della barra dei comandi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarOptionsBackground` |
+| Sfondo | `Environment.CommandBarOptionsBackground` |
 | Primo piano (glifo) | `Environment.CommandBarOptionsGlyph` |
 
 **Pulsanti "altre opzioni" e "overflow" della barra dei comandi: stato del passaggio del mouse**
@@ -1610,7 +1610,7 @@ Il pulsante "Altre opzioni" viene usato quando un gruppo della barra dei comandi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (glifo) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 **Pulsanti "altre opzioni" e "overflow" della barra dei comandi: stato premuto**
@@ -1621,7 +1621,7 @@ Il pulsante "Altre opzioni" viene usato quando un gruppo della barra dei comandi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (glifo) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 ## <a name="document-windows"></a>Finestre dei documenti
@@ -1644,7 +1644,7 @@ Le finestre dei documenti possono essere ancorate nell'IDE o mobili come finestr
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | Dipende dal tipo di documento |
+| Sfondo | Dipende dal tipo di documento |
 | Primo piano (testo) | Dipende dal tipo di documento |
 | Bordo | `Environment.ToolWindowBorder` |
 
@@ -1654,7 +1654,7 @@ Le finestre dei documenti possono essere ancorate nell'IDE o mobili come finestr
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowFloatingFrame` |
+| Sfondo | `Environment.ToolWindowFloatingFrame` |
 | Primo piano (testo) | `Environment.ToolWindowFloatingFrame` |
 | Primo piano (glifo) | `Environment.RaftedWindowButtonActiveGlyph` |
 | Bordo | `Environment.MainWindowActiveDefaultBorder` |
@@ -1666,7 +1666,7 @@ Le finestre dei documenti possono essere ancorate nell'IDE o mobili come finestr
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowFloatingFrameInactive` |
+| Sfondo | `Environment.ToolWindowFloatingFrameInactive` |
 | Primo piano (testo) | `Environment.ToolWindowFloatingFrameInactive` |
 | Primo piano (glifo) | `Environment.RaftedWindowButtonInactiveGlyph` |
 | Bordo | `Environment.MainWindowInactiveBorder` |
@@ -1731,7 +1731,7 @@ Per ogni documento aperto è presente una scheda nel canale delle schede dei doc
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.FileTabSelectedGradientTop`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.FileTabSelectedGradientTop`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.FileTabSelectedText` |
 | Bordo | `Environment.FileTabSelectedBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 | Bordo del documento | `Environment.FileTabDocumentBorderBackground` |
@@ -1742,7 +1742,7 @@ Per ogni documento aperto è presente una scheda nel canale delle schede dei doc
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.FileTabInactiveGradientTop`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.FileTabInactiveGradientTop`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.FileTabInactiveText` |
 | Bordo | `Environment.FileTabInactiveBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 | Bordo del documento | `Environment.FileTabInactiveDocumentBorderBackground` |
@@ -1753,7 +1753,7 @@ Per ogni documento aperto è presente una scheda nel canale delle schede dei doc
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.FileTabBackground` |
+| Sfondo | `Environment.FileTabBackground` |
 | Primo piano (testo) | `Environment.FileTabText` |
 | Bordo | `Environment.FileTabBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 
@@ -1763,7 +1763,7 @@ Per ogni documento aperto è presente una scheda nel canale delle schede dei doc
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.FileTabHotGradientTop`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.FileTabHotGradientTop`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.FileTabHotText` |
 | Bordo | `Environment.FileTabHotBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 
@@ -1783,7 +1783,7 @@ Detto anche scheda "provvisoria". La scheda Anteprima viene visualizzata sul lat
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.FileTabProvisionalSelectedActive` |
+| Sfondo | `Environment.FileTabProvisionalSelectedActive` |
 | Primo piano (testo) | `Environment.FileTabProvisionalSelectedActiveForeground` |
 | Bordo | `Environment.FileTabProvisionalSelectedActiveBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 | Bordo del documento | `Environment.FileTabProvisionalSelectedActiveBorder` |
@@ -1794,7 +1794,7 @@ Detto anche scheda "provvisoria". La scheda Anteprima viene visualizzata sul lat
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.FileTabProvisionalSelectedInactive` |
+| Sfondo | `Environment.FileTabProvisionalSelectedInactive` |
 | Primo piano (testo) | `Environment.FileTabProvisionalSelectedInactiveForeground` |
 | Bordo | `Environment.FileTabProvisionalSelectedInactiveBorder` |
 | Bordo del documento | `Environment.FileTabProvisionalSelectedInactiveBorder` |
@@ -1805,7 +1805,7 @@ Detto anche scheda "provvisoria". La scheda Anteprima viene visualizzata sul lat
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.FileTabProvisionalInactive` |
+| Sfondo | `Environment.FileTabProvisionalInactive` |
 | Primo piano (testo) | `Environment.FileTabProvisionalInactiveForeground` |
 | Bordo | `Environment.FileTabProvisionalInactiveBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 
@@ -1815,7 +1815,7 @@ Detto anche scheda "provvisoria". La scheda Anteprima viene visualizzata sul lat
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.FileTabProvisionalHover` |
+| Sfondo | `Environment.FileTabProvisionalHover` |
 | Primo piano (testo) | `Environment.FileTabProvisionalHoverForeground` |
 | Bordo | `Environment.FileTabProvisionalHoverBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 
@@ -1835,7 +1835,7 @@ Il pulsante di overflow dei documenti è presente se ci sono uno o più document
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DocWellOverflowButtonBackground` |
+| Sfondo | `Environment.DocWellOverflowButtonBackground` |
 | Primo piano (glifo) | `Environment.DocWellOverflowButtonGlyph` |
 | Bordo | N/D |
 
@@ -1845,7 +1845,7 @@ Il pulsante di overflow dei documenti è presente se ci sono uno o più document
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DocWellOverflowButtonMouseOverBackground` |
+| Sfondo | `Environment.DocWellOverflowButtonMouseOverBackground` |
 | Primo piano (glifo) | `Environment.DocWellOverflowButtonMouseOverGlyph` |
 | Bordo | `Environment.DocWellOverflowButtonMouseOverBorder` |
 
@@ -1855,7 +1855,7 @@ Il pulsante di overflow dei documenti è presente se ci sono uno o più document
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.DocWellOverflowButtonMouseDownBackground` |
+| Sfondo | `Environment.DocWellOverflowButtonMouseDownBackground` |
 | Primo piano (glifo) | `Environment.DocWellOverflowButtonMouseDownGlyph` |
 | Bordo | `Environment.DocWellOverflowButtonMouseDownBorder` |
 
@@ -1876,7 +1876,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Tag.Background` |
+| Sfondo | `Tag.Background` |
 | Primo piano (testo) | `Tag.Background` |
 
 **Tag: stato hover**
@@ -1885,7 +1885,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Tag.HoverBackground` |
+| Sfondo | `Tag.HoverBackground` |
 | Primo piano (testo) | `Tag.HoverBackgroundText` |
 
 **Tag: stato premuto**
@@ -1894,7 +1894,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Tag.PressedBackground` |
+| Sfondo | `Tag.PressedBackground` |
 | Primo piano (testo) | `Tag.PressedBackgroundText` |
 
 **Tag: stato selezionato**
@@ -1903,7 +1903,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Tag.SelectedBackground` |
+| Sfondo | `Tag.SelectedBackground` |
 | Primo piano (testo) | `Tag.SelectedBackgroundText` |
 
 #### <a name="close-times-tag-glyph"></a>&times;Glifo Tag Close ()
@@ -1914,7 +1914,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D |
+| Sfondo | N/D |
 | Primo piano (glifo) | `Tag.TagHoverGlyph` |
 
 **Close ( &times; ) glifo Tag: stato hover**
@@ -1923,7 +1923,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Tag.TagHoverGlyphHoverBackground` |
+| Sfondo | `Tag.TagHoverGlyphHoverBackground` |
 | Primo piano (glifo) | `Tag.TagHoverGlyphHover` |
 | Bordo | `Tag.TagHoverGlyphHoverBorder` |
 
@@ -1933,7 +1933,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Tag.TagHoverGlyphPressedBackground` |
+| Sfondo | `Tag.TagHoverGlyphPressedBackground` |
 | Primo piano (glifo) | `Tag.TagHoverGlyphPressed` |
 | Bordo | `Tag.TagHoverGlyphPressedBorder` |
 
@@ -1943,7 +1943,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D |
+| Sfondo | N/D |
 | Primo piano (glifo) | `Tag.TagSelectedGlyph` |
 
 **Tag selezionato con il glifo Close ( &times; ): stato del passaggio del mouse**
@@ -1952,7 +1952,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Tag.TagSelectedGlyphHoverBackground` |
+| Sfondo | `Tag.TagSelectedGlyphHoverBackground` |
 | Primo piano (glifo) | `Tag.TagSelectedGlyphHover` |
 | Bordo | `Tag.TagSelectedGlyphHoverBorder` |
 
@@ -1962,7 +1962,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Tag.TagSelectedGlyphPressedBackground` |
+| Sfondo | `Tag.TagSelectedGlyphPressedBackground` |
 | Primo piano (glifo) | `Tag.TagSelectedGlyphPressed` |
 | Bordo | `Tag.TagSelectedGlyphPressedBorder` |
 
@@ -1990,7 +1990,7 @@ Le finestre degli strumenti in Visual Studio vengono usate per molte attività d
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowBackground` |
+| Sfondo | `Environment.ToolWindowBackground` |
 | Bordo | `Environment.ToolWindowBorder` |
 
 **Finestra degli strumenti mobile e con stato attivo**
@@ -1999,7 +1999,7 @@ Le finestre degli strumenti in Visual Studio vengono usate per molte attività d
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowBackground` |
+| Sfondo | `Environment.ToolWindowBackground` |
 | Bordo | `Environment.MainWindowActiveDefaultBorder` |
 
 **Finestra degli strumenti mobile, con stato non attivo**
@@ -2008,7 +2008,7 @@ Le finestre degli strumenti in Visual Studio vengono usate per molte attività d
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowBackground` |
+| Sfondo | `Environment.ToolWindowBackground` |
 | Bordo | `Environment.MainWindowInactiveBorder` |
 
 ### <a name="toolbox-like-windows"></a>Finestre di tipo casella degli strumenti
@@ -2028,8 +2028,8 @@ La casella degli strumenti è una delle finestre degli strumenti comuni utilizza
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolboxContent`<br />Intestazioni |
-| Background | `Environment.ToolWindowBackground`<br />(Singoli elementi o intera finestra se non sono disponibili controlli) |
+| Sfondo | `Environment.ToolboxContent`<br />Intestazioni |
+| Sfondo | `Environment.ToolWindowBackground`<br />(Singoli elementi o intera finestra se non sono disponibili controlli) |
 | Bordo | nessuno |
 | Primo piano (glifo) | `Environment.ToolboxContent` |
 | Primo piano (testo) | `Environment.ToolboxContent` |
@@ -2040,7 +2040,7 @@ La casella degli strumenti è una delle finestre degli strumenti comuni utilizza
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolboxContentMouseOver`<br />(Solo singoli elementi) |
+| Sfondo | `Environment.ToolboxContentMouseOver`<br />(Solo singoli elementi) |
 | Bordo | nessuno |
 | Primo piano (testo) | `Environment.ToolboxContentMouseOver`<br />(Solo singoli elementi) |
 
@@ -2052,7 +2052,7 @@ La casella degli strumenti è una delle finestre degli strumenti comuni utilizza
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.SelectedItemActive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
+| Sfondo | `TreeView.SelectedItemActive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Bordo | `TreeView.FocusVisualBorder`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Primo piano (glifo) | `TreeView.SelectedItemActive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Primo piano (testo) | `TreeView.SelectedItemActive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
@@ -2065,7 +2065,7 @@ La casella degli strumenti è una delle finestre degli strumenti comuni utilizza
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `TreeView.SelectedItemInactive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
+| Sfondo | `TreeView.SelectedItemInactive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Bordo | nessuno |
 | Primo piano (glifo) | `TreeView.SelectedItemInactive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Primo piano (testo) | `TreeView.SelectedItemInactive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
@@ -2085,7 +2085,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.TitleBarActiveGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.TitleBarActiveGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.TitleBarActiveText` |
 | Bordo | `Environment.TitleBarActiveBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 | Quadratino di trascinamento | `Environment.TitleBarDragHandleActive` |
@@ -2096,7 +2096,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.TitleBarInactiveGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.TitleBarInactiveGradientBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.TitleBarInactiveText` |
 | Bordo | N/D |
 | Quadratino di trascinamento | `Environment.TitleBarDragHandle` |
@@ -2115,7 +2115,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D |
+| Sfondo | N/D |
 | Primo piano (glifo) | `Environment.ToolWindowButtonActiveGlyph` |
 | Bordo | N/D |
 
@@ -2125,7 +2125,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | N/D |
+| Sfondo | N/D |
 | Primo piano (glifo) | `Environment.ToolWindowButtonInactiveGlyph` |
 | Bordo | N/D |
 
@@ -2135,7 +2135,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowButtonHoverActive` |
+| Sfondo | `Environment.ToolWindowButtonHoverActive` |
 | Primo piano (glifo) | `Environment.ToolWindowButtonHoverActiveGlyph` |
 | Bordo | `Environment.ToolWindowButtonHoverActiveBorder` |
 
@@ -2145,7 +2145,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowButtonHoverInactive` |
+| Sfondo | `Environment.ToolWindowButtonHoverInactive` |
 | Primo piano (glifo) | `Environment.ToolWindowButtonHoverInactiveGlyph` |
 | Bordo | `Environment.ToolWindowButtonHoverInactiveBorder` |
 
@@ -2155,7 +2155,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowButtonDown` |
+| Sfondo | `Environment.ToolWindowButtonDown` |
 | Primo piano (glifo) | `Environment.ToolWindowButtonDownActiveGlyph` |
 | Bordo | `Environment.ToolWindowButtonDownBorder` |
 
@@ -2165,7 +2165,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowButtonDown` |
+| Sfondo | `Environment.ToolWindowButtonDown` |
 | Primo piano (glifo) | `Environment.ToolWindowButtonDownInactiveGlyph` |
 | Bordo | `Environment.ToolWindowButtonDownBorder` |
 
@@ -2182,7 +2182,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowTabSelectedTab` |
+| Sfondo | `Environment.ToolWindowTabSelectedTab` |
 | Primo piano (testo) | `Environment.ToolWindowTabSelectedActiveText` |
 | Bordo | `Environment.ToolWindowTabSelectedBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 
@@ -2192,7 +2192,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowTabSelectedTab` |
+| Sfondo | `Environment.ToolWindowTabSelectedTab` |
 | Primo piano (testo) | `Environment.ToolWindowTabSelectedText` |
 | Bordo | `Environment.ToolWindowTabSelectedBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 
@@ -2202,7 +2202,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013). |
+| Sfondo | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013). |
 | Primo piano (testo) | `Environment.ToolWindowTabText` |
 | Bordo | `Environment.ToolWindowTabBorder` |
 
@@ -2212,7 +2212,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013). |
+| Sfondo | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013). |
 | Primo piano (testo) | `Environment.ToolWindowTabMouseOverText` |
 | Bordo | `Environment.ToolWindowTabMouseOverBorder`<br />(Impostato sullo stesso colore dello sfondo). |
 
@@ -2230,7 +2230,7 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.AutoHideTabBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.AutoHideTabBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.AutoHideTabText` |
 | Bordo | `Environment.AutoHideTabBorder` |
 
@@ -2240,6 +2240,6 @@ Il bordo della barra del titolo non è un bordo vero e proprio, è una linea spe
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Background | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
+| Sfondo | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Cursori sfumatura per questo token non usato nell'interfaccia utente con tema). |
 | Primo piano (testo) | `Environment.AutoHideTabMouseOverText` |
 | Bordo | `Environment.AutoHideTabMouseOverBorder` |

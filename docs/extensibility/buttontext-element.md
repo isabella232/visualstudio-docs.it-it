@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2db20bb3298a7b849e8bc4a261987c5314a29841
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: b03b5fce58795488f6c379fcf93e5f7fea074e13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927171"
 ---
 # <a name="buttontext-element"></a>Elemento ButtonText
 Questo campo consente di specificare il testo visualizzato in vari menu. Per impostazione predefinita, l' `ButtonText` elemento viene visualizzato nei controller di menu. L' `ButtonText` elemento diventa anche il valore predefinito se gli altri campi di testo sono vuoti. L' `ButtonText` elemento non può essere vuoto anche se gli altri campi di testo sono specificati.
@@ -33,10 +33,10 @@ Questo campo consente di specificare il testo visualizzato in vari menu. Per imp
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- No.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -47,5 +47,5 @@ Questo campo consente di specificare il testo visualizzato in vari menu. Per imp
 ## <a name="text-value"></a>Valore di testo
  Il valore di testo dell' `ButtonText` elemento fornisce il testo visualizzato per le voci di menu, le combinazioni e altri elementi dell'interfaccia utente con testo visibile.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

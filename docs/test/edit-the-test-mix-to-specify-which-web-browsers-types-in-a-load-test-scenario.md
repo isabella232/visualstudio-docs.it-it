@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 4dae1a89eb40e71a07540eef7512327282ef0b9b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 3b68bbfbca83219b10e56bf1cc3794bbb43231ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926768"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali tipi di Web browser includere in uno scenario di test di carico
 
@@ -83,6 +83,6 @@ Il pulsante **Distribuisci** viene usato per allocare uniformemente i valori per
 
 Quando si immettono manualmente le percentuali, assicurarsi che la somma di tutti gli elementi sia 100%. Quando si salva una combinazione, se la somma non è pari al 100%, verrà richiesto di accettare i valori percentuali così come sono o di tornare indietro e regolarli. Se si sceglie di accettarle così come sono, le percentuali verranno ripartite proporzionalmente al 100%.  Se ad esempio si dispone di due elementi che sono stati impostati manualmente su 80% e 40%, il primo elemento verrà impostato su 66,67% (80 diviso 120) mentre il secondo su 33,33% (40 diviso 120).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23a6226b0d3cc2441a509c16b2e4672a766f3329
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926859"
 ---
 # <a name="sccadd-function"></a>SccAdd (funzione)
 Questa funzione aggiunge nuovi file al sistema di controllo del codice sorgente.
@@ -81,7 +81,7 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 |SCC_I_RELOADFILE|È necessario ricaricare un file o un progetto.|
 |SCC_E_FILENOTEXIST|Il file locale non è stato trovato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il solito `fOptions` viene sostituito da una matrice, `pfOptions` , con una `LONG` specifica di opzione per ogni file. Questo perché il tipo di file può variare da file a file.
 
 > [!NOTE]
@@ -100,5 +100,5 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 |SCC_FILETYPE_UTF16LE|0x20|Considera il file come testo Unicode nel formato UTF16 Little endian.|
 |SCC_FILETYPE_UTF16BE|0x40|Considera il file come testo Unicode nel formato UTF16 Big endian.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

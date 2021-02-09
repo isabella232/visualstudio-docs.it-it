@@ -16,15 +16,15 @@ helpviewer_keywords:
 - NamedRange control
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 74eb3467c4cfbba5a2cb411a1f0ad439b1a7620b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926625"
 ---
 # <a name="namedrange-control"></a>NamedRange (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> è un intervallo con un nome univoco che espone gli eventi e può essere associato ai dati. Per altre informazioni, vedere [Panoramica del modello a oggetti di Excel](../vsto/excel-object-model-overview.md).
@@ -73,7 +73,7 @@ ms.locfileid: "97528095"
 
 - <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [Procedure dettagliate e esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

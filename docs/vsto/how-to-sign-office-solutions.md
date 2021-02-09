@@ -13,15 +13,15 @@ helpviewer_keywords:
 - signing manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3135962c8476fdb6970fc137e689c638299f8f81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927639"
 ---
 # <a name="how-to-sign-office-solutions"></a>Procedura: firmare soluzioni Office
   Se si firma una soluzione, è possibile concedere l'attendibilità alla soluzione usando il certificato come evidenza. È possibile utilizzare lo stesso certificato per più soluzioni e tutte le soluzioni verranno considerate attendibili senza ulteriori aggiornamenti dei criteri di sicurezza.
@@ -47,7 +47,7 @@ ms.locfileid: "97528113"
 
 5. Per verificare che sia in uso il certificato corretto, fare clic su **altri dettagli** per visualizzare le informazioni sul certificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
 - [Concedi attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md)

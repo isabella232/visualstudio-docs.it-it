@@ -13,15 +13,15 @@ helpviewer_keywords:
 - configuration files [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: da3a08ad9b3f6c78a10891e7d8ef2093ab46305d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927704"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedura: impostare le informazioni di configurazione per una soluzione Office
   È possibile usare i file di configurazione per configurare le impostazioni specifiche per le soluzioni Office. È possibile specificare impostazioni quali i criteri di associazione degli assembly, gli oggetti remoti, il debug e le impostazioni di traccia.
@@ -40,13 +40,13 @@ ms.locfileid: "97528162"
 
 4. Nella casella **nome** Digitare lo stesso nome dell'assembly più Extension *. config*. Ad esempio, un file di configurazione per un assembly del progetto di Excel denominato *ExcelWorkbook1.dll* verrebbe denominato *ExcelWorkbook1.dll.config*.
 
-5. Scegliere **Aggiungi**.
+5. Fare clic su **Aggiungi**.
 
 6. Creare il file di configurazione in base allo schema del file di configurazione dell'applicazione. Per ulteriori informazioni, vedere [schema dei file di configurazione per il .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
 
    Non esistono considerazioni speciali per l'uso dei file di configurazione con i progetti di Office.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Schema del file di configurazione per il .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)

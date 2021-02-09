@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0f78839280ae19da5020b08d499d347c0537a045
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: dbb4f7b14c6da1e81f35253d7bcf96c0ddc6b756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926677"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente
 
@@ -26,7 +26,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 - Componente Test codificato dell'interfaccia utente
@@ -192,7 +192,7 @@ Dopo aver completato l'inserimento del ritardo, salvare le modifiche apportate a
 
 Se è necessario assicurarsi che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile aggiungere il codice personalizzato al metodo di test usando il metodo UITestControl.WaitForControlXXX() appropriato. Per ulteriori informazioni, vedere [esecuzione di test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)

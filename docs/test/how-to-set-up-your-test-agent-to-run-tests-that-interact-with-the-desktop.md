@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 830469525429d298f1c9bf03b845a1132021373a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926638"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop
 
@@ -86,6 +86,6 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
    Se il controller di test per questo agente di test è registrato con Team Foundation Server, lo stato dell'agente di test in esecuzione come processo interattivo viene riprodotto nella visualizzazione **Controller** in **Centro lab** per Microsoft Test Manager. Viene elencato con un simbolo di asterisco anteposto al nome per indicare che viene eseguito come un processo interattivo. Per riavviare l'agente di test, è necessario utilizzare lo strumento in esecuzione nel computer per l'agente di test e non la visualizzazione **controller** .
    ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)

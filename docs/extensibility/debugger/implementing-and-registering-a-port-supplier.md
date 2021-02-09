@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5bce26a00a525ed93e27b531b36aca1fc04dce4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d5639c45fd6dff6702ebc197d46c2eafe482e1d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926370"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Implementare e registrare un fornitore di porte
 Il ruolo di un fornitore di porte è quello di rilevare e fornire porte, che a loro volta gestiscono i processi. Quando è necessario creare una porta, viene creata un'istanza del fornitore della porta mediante CoCreate con il GUID del fornitore della porta (gestione debug della sessione [SDM] utilizzerà il fornitore della porta selezionato dall'utente o il fornitore della porta specificato dal sistema del progetto). Il SDM chiama quindi [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) per verificare se è possibile aggiungere porte. Se è possibile aggiungere una porta, viene richiesta una nuova porta chiamando [addport](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) e passandogli un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) che descrive la porta. `AddPort` Restituisce una nuova porta rappresentata da un'interfaccia [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) .
@@ -61,7 +61,7 @@ RemoveMetric(metrictypePortSupplier,
 
  Un fornitore di porte può fornire il nome e il GUID tramite i metodi [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) e [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), rispettivamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Implementare un fornitore di porte](../../extensibility/debugger/implementing-a-port-supplier.md)
 - [Helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Fornitori di porte](../../extensibility/debugger/port-suppliers.md)

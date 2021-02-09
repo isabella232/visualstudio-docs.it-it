@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927431"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Distribuire un'app in una cartella con Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "94437689"
 
 1. Se sono stati configurati in precedenza tutti i profili di pubblicazione, viene visualizzata la finestra **pubblica** . Selezionare **Nuovo**.
 
-1. Nella finestra **Publish (pubblica** ) selezionare **Folder (cartella** ).
+1. Nella finestra **Publish (pubblica** ) selezionare **Folder (cartella**).
 
     ![Scegliere la cartella come destinazione di pubblicazione](../deployment/media/quickstart-publish-folder-new.png "Scegli cartella")
 
@@ -82,7 +82,7 @@ ms.locfileid: "94437689"
 
 1. Per pubblicare di nuovo, selezionare **Pubblica**.
 
-Distribuire i file pubblicati con il metodo desiderato. È ad esempio possibile inserire i file in un file *zip* , usare un semplice comando di copia o distribuire i file con un pacchetto di installazione a scelta.
+Distribuire i file pubblicati con il metodo desiderato. È ad esempio possibile inserire i file in un file *zip*, usare un semplice comando di copia o distribuire i file con un pacchetto di installazione a scelta.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
