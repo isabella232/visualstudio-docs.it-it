@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], folders
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1ca2d6c690e094884313bc128291dd7295103d54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6e2e3dcb6978225b5af493f3649e4b2fac47f3c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526977"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847505"
 ---
 # <a name="work-with-folders"></a>Usare le cartelle
   La classe <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> contiene i metodi e le proprietà usati per accedere, creare e personalizzare cartelle.
@@ -38,7 +38,7 @@ ms.locfileid: "97526977"
 
  Per ulteriori informazioni sulle attività di Outlook e sul modello a oggetti di Outlook, vedere [Cenni preliminari sul modello a oggetti](../vsto/outlook-object-model-overview.md)di Outlook.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
 - [Usare gli elementi del calendario](../vsto/working-with-calendar-items.md)

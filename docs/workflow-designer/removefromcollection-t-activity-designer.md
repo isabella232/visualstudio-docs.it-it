@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 069640dccf185f2f2c738efdde6a2311352a04b6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9fdaf7172c00d80e5e7615bfcadcc1fb6233c257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847362"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>Activity Designer\<T> RemoveFromCollection
 
@@ -36,15 +36,15 @@ Accedere all' **ActivityDesigner \<T> ActivityDesigner RemoveFromCollection** ne
 
 Nella tabella seguente vengono illustrate le <xref:System.Activities.Statements.RemoveFromCollection%601> proprietà e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione:
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.RemoveFromCollection%601>. Il valore predefinito è ActivityDesigner RemoveFromCollection<Int32 \> .<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|Elemento da rimuovere dalla **raccolta \<T>**. Questo elemento è di tipo *T*, che è di tipo *TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|Raccolta da cui rimuovere l'elemento. Questa raccolta è di tipo **ICollection<TypeArgument \> .** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|*TypeArgument*|True|Tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo tipo di *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata della griglia delle proprietà.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Vero|Elemento da rimuovere dalla **raccolta \<T>**. Questo elemento è di tipo *T*, che è di tipo *TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Vero|Raccolta da cui rimuovere l'elemento. Questa raccolta è di tipo **ICollection<TypeArgument \> .** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+|*TypeArgument*|Vero|Tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo tipo di *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata della griglia delle proprietà.|
 |<xref:System.Activities.Activity%601.Result%2A>|Falso|Valore che indica se l'elemento specificato è stato rimosso dalla raccolta. Per specificare una variabile da associare al risultato, digitare una variabile Visual Basic nella griglia delle proprietà.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Raccolta](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

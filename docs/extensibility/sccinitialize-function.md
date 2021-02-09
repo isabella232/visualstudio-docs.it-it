@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846361"
 ---
 # <a name="sccinitialize-function"></a>Funzione SccInitialize
 Questa funzione Inizializza il plug-in del controllo del codice sorgente e fornisce le funzionalità e i limiti per il Integrated Development Environment (IDE).
@@ -80,7 +80,7 @@ out Restituisce la lunghezza massima consentita per altri commenti.
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire l'operazione specificata.|
 |SCC_E_NONSPECFICERROR|Errore non specifico. sistema di controllo del codice sorgente non inizializzato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'IDE chiama questa funzione al primo caricamento del plug-in del controllo del codice sorgente. Consente all'IDE di passare al plug-in determinate informazioni, ad esempio il nome del chiamante. L'IDE restituisce anche alcune informazioni, ad esempio la lunghezza massima consentita per i commenti e le funzionalità del plug-in.
 
  `ppvContext`Punta a un `NULL` puntatore. Il plug-in del controllo del codice sorgente può allocare una struttura per uso personale e archiviare un puntatore a tale struttura in `ppvContext` . L'IDE passerà questo puntatore a ogni altra funzione API VSSCI, consentendo al plug-in di disporre di informazioni di contesto disponibili senza ricorrere all'archiviazione globale e supportare più istanze del plug-in. Questa struttura deve essere deallocata quando viene chiamato [SccUninitialize](../extensibility/sccuninitialize-function.md) .
@@ -91,7 +91,7 @@ out Restituisce la lunghezza massima consentita per altri commenti.
 
  Il `lpSccCaps` parametro fornisce al plug-in del controllo del codice sorgente una posizione per archiviare flag che indica le funzionalità del plug-in. Per un elenco completo delle funzionalità flag, vedere [flag funzionalità](../extensibility/capability-flags.md). Se, ad esempio, il plug-in prevede di scrivere i risultati in una funzione di callback fornita dal chiamante, il plug-in imposterà il bit di capacità SCC_CAP_TEXTOUT. Questo segnalerebbe all'IDE di creare una finestra per i risultati del controllo della versione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

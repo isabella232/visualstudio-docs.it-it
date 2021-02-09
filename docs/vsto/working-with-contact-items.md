@@ -14,15 +14,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b84d91f2a89a5cf648aaa13f18e404dab2ec138c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b336d00e2cd3a9d9eb6484564c3b3bd0a9b011dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847570"
 ---
 # <a name="work-with-contact-items"></a>Usare gli elementi di contatto
   La classe <xref:Microsoft.Office.Interop.Outlook.ContactItem> contiene i metodi e le proprietà usati per eseguire attività con i contatti.
@@ -37,7 +37,7 @@ ms.locfileid: "97524775"
 
  Per ulteriori informazioni sulle attività di Outlook e sul modello a oggetti di Outlook, vedere [Cenni preliminari sul modello a oggetti](../vsto/outlook-object-model-overview.md)di Outlook.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
 - [Usare le cartelle](../vsto/working-with-folders.md)
 - [Usare gli elementi del calendario](../vsto/working-with-calendar-items.md)

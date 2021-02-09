@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], calendars
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 38bf1aa02d72621bc1bcc7376a15ea975feb0860
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0651b392563ff90cb349a3a8e737717bf375bea6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847583"
 ---
 # <a name="work-with-calendar-items"></a>Usare gli elementi del calendario
   La classe <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> contiene i metodi e le proprietà usati per eseguire attività con gli elementi di calendario.
@@ -39,7 +39,7 @@ ms.locfileid: "97528318"
 
  Per ulteriori informazioni sulle attività di Outlook e sul modello a oggetti di Outlook, vedere [Cenni preliminari sul modello a oggetti](../vsto/outlook-object-model-overview.md)di Outlook.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
 - [Usare le cartelle](../vsto/working-with-folders.md)
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)

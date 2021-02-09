@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847739"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio
   In questa procedura dettagliata viene illustrato come creare un flusso di lavoro sequenziale di base che incorpora l'utilizzo di form di associazione e di avvio. Si tratta di moduli ASPX che consentono l'aggiunta di parametri a un flusso di lavoro quando viene prima associato dall'amministratore di SharePoint (il modulo di associazione) e quando il flusso di lavoro viene avviato dall'utente (modulo di avvio).

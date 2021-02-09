@@ -14,15 +14,15 @@ helpviewer_keywords:
 - workbooks, ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ce099c7cf531e4fa9acfe725959023e579577c8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847440"
 ---
 # <a name="work-with-ranges"></a>Usare gli intervalli
   Le classi <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Interop.Excel.Range> contengono i metodi e le proprietà usati per eseguire attività con intervalli.
@@ -42,8 +42,8 @@ ms.locfileid: "97526907"
 
  In alcuni casi, le modalità con le quali si eseguono queste attività nei componenti aggiuntivi VSTO sono diverse da quelle usate nelle personalizzazioni a livello di documento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
 - [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
-- [Usare Windows Forms controlli nei fogli di lavoro di Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)
+- [Usare Windows Form controlli nei fogli di lavoro di Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)

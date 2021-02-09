@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c7a82488fea8fc12e6d5db838818269add0181
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 77402f7503818b310a592a39706ac717ac728852
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847960"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Sviluppare app globalizzate e localizzate
 
@@ -41,7 +41,7 @@ Ad esempio, il sistema di progetto per app Windows Forms può generare file di r
 
 - App di Windows
 
-   È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per ulteriori informazioni, vedere [supporto bidirezionale per applicazioni Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per ulteriori informazioni, vedere [supporto bidirezionale per applicazioni Windows Form](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
 - App Web
 
@@ -50,7 +50,7 @@ Ad esempio, il sistema di progetto per app Windows Forms può generare file di r
 > [!NOTE]
 > Le app console non includono il supporto del testo per le lingue bidirezionali. Questo fatto dipende dall'interazione tra Windows e le applicazioni console.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Supporto per le lingue bidirezionali in Visual Studio](use-bidirectional-languages.md)
 - [Globalizzare e localizzare app .NET](/dotnet/standard/globalization-localization/)

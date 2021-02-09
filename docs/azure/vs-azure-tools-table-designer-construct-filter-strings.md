@@ -2,17 +2,17 @@
 title: Creazione di stringhe di filtro per Progettazione tabelle | Documentazione Microsoft
 description: Creazione di stringhe di filtro per Progettazione tabelle
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846205"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Creazione di stringhe di filtro per Progettazione tabelle
 ## <a name="overview"></a>Panoramica
@@ -32,8 +32,8 @@ Gli operatori logici seguenti sono supportati per tutti i tipi di proprietà:
 | le |Minore o uguale a |Prezzo le 100 |
 | ne |Diverso da |Città ne "Londra" |
 | e |e |Prezzo le 200 and Prezzo gt 3,5 |
-| o |Or |Prezzo le 3,5 or Prezzo gt 200 |
-| not |not |not isAvailable |
+| oppure |Oppure |Prezzo le 3,5 or Prezzo gt 200 |
+| not |Not |not isAvailable |
 
 Quando si crea una stringa di filtro, tenere presente le regole seguenti:
 

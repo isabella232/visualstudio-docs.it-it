@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 880846c2-39d3-45cd-85c3-ad5409a3710f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26a099e84414afaf84d2505b35327ed86e125292
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38927f6b81c2cc00107bc06125343001079d0aee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846634"
 ---
 # <a name="ienumdebugprograms2clone"></a>IEnumDebugPrograms2::Clone
 Restituisce una copia dell'enumerazione corrente come oggetto separato.
@@ -46,8 +46,8 @@ int Clone(
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata di questo metodo. Tuttavia, gli Stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

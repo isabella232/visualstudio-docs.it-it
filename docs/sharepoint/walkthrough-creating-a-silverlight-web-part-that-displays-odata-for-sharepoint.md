@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847830"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procedura dettagliata: creare una Web part Silverlight che visualizza OData per SharePoint
   SharePoint 2010 espone i dati dell'elenco per mezzo di OData. In SharePoint il servizio OData viene implementato dal servizio RESTful ListData. svc. In questa procedura dettagliata viene illustrato come creare una Web part di SharePoint che ospita un'applicazione Silverlight. L'applicazione Silverlight Visualizza le informazioni sull'elenco degli annunci di SharePoint utilizzando ListData. svc. Per ulteriori informazioni, vedere [interfaccia REST di SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) e [Open Data Protocol](https://www.odata.org/).

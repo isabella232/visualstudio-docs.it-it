@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 406e93456f1bd6d92a42f1584d19aeb52dd5ff93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846777"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 Confronta un oggetto con l'oggetto corrente.
@@ -28,7 +28,7 @@ Confronta un oggetto con l'oggetto corrente.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT IsEqual( 
+HRESULT IsEqual( 
    IDebugObject* pObject,
    BOOL*         pfIsEqual
 );
@@ -51,8 +51,8 @@ out Restituisce un valore diverso da zero ( `TRUE` ) se i valori degli oggetti s
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In genere, questo metodo può confrontare gli indirizzi dei valori rappresentati dal `pObject` parametro e da questo oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ; se gli indirizzi sono uguali, gli oggetti possono essere considerati uguali.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

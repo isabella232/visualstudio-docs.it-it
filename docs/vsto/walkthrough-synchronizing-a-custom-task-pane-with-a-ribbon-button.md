@@ -22,15 +22,15 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ac8c4ef96a421ece6c0591d4340d570d71c08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846283"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procedura dettagliata: sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione
   In questa procedura dettagliata viene illustrato come creare un riquadro attività personalizzato che gli utenti possono nascondere o visualizzare facendo clic su un interruttore nella barra multifunzione. È consigliabile creare sempre un elemento dell'interfaccia utente, ad esempio un pulsante, che gli utenti possono usare per visualizzare o nascondere il riquadro attività personalizzato, perché le applicazioni di Microsoft Office non forniscono una modalità predefinita per visualizzare o nascondere i riquadri attività personalizzati.
@@ -173,7 +173,7 @@ ms.locfileid: "97526091"
 
 - Creare un riquadro attività personalizzato per ogni messaggio di posta elettronica aperto in Outlook. Per altre informazioni, vedere [procedura dettagliata: visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riquadri attività personalizzati](../vsto/custom-task-panes.md)
 - [Procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Procedura dettagliata: automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

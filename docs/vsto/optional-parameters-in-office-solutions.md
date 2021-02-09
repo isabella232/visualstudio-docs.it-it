@@ -17,15 +17,15 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d6824d53d552a27a68a49d63497156147283fd29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847700"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parametri facoltativi nelle soluzioni Office
   Molti dei metodi nei modelli a oggetti delle applicazioni di Microsoft Office accettano parametri facoltativi. Se si utilizza Visual Basic per sviluppare una soluzione Office in Visual Studio, non è necessario passare un valore per i parametri facoltativi. Infatti, per ogni parametro mancante vengono utilizzati automaticamente i valori predefiniti. Nella maggior parte dei casi, è anche possibile omettere i parametri facoltativi nei progetti Visual C#. Tuttavia, non è possibile omettere i parametri di **riferimento** facoltativi della `ThisDocument` classe nei progetti Word a livello di documento.
@@ -70,6 +70,6 @@ ms.locfileid: "97527567"
 
   Per altre informazioni sui parametri di tipo value e Reference, vedere [passare gli argomenti per valore e per riferimento &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (per Visual Basic) e [passare i parametri &#40;C&#35; guida alla programmazione&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
 - [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)

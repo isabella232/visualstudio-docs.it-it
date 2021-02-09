@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 890aeef41a9a0f4d893cfcf57d42b78ff32d88c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846881"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug del codice sorgente di .NET Framework
 
@@ -65,6 +65,6 @@ Per eseguire il debug di .NET Framework origine, è necessario:
 
    - Selezionare **Impostazioni simboli** per aprire la pagina **simboli** . Nella pagina **simboli** , in percorsi di file di simboli **(con estensione pdb)**, selezionare Server dei simboli **Microsoft** per accedere ai simboli dai server di simboli Microsoft pubblici. Selezionare i pulsanti della barra degli strumenti per aggiungere altre posizioni dei simboli e modificare l'ordine di caricamento. Selezionare **OK** per chiudere la finestra di dialogo.
 
-### <a name="see-also"></a>Vedere anche
+### <a name="see-also"></a>Vedi anche
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

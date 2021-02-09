@@ -21,15 +21,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d6b897a33dacdbd52beaabdd9289a010df92a85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847882"
 ---
 # <a name="zipdirectory-task"></a>Attività ZipDirectory
 
@@ -46,7 +46,7 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 |---------------|-----------------|
 |`DestinationFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio<br /><br /> Percorso completo del primo file con estensione *zip* da creare.|
 |`Overwrite`|Parametro `Boolean` facoltativo.<br /><br /> Se `true` , il file di destinazione verrà sovrascritto, se esistente. Il valore predefinito è `false`.|
-|`SourceDirectory`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica la directory da cui creare un archivio con estensione *zip* .|
+|`SourceDirectory`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica la directory da cui creare un archivio con estensione *zip*.|
 
 ## <a name="remarks"></a>Commenti
 

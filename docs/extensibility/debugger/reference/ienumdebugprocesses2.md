@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9fe0e96ade081e8da11b5e1c06c5b45279b10b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f59cdc9a257f853f70afe2566d7b06e39f8edc02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846660"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Questa interfaccia enumera i processi in esecuzione su una porta di debug.
@@ -45,7 +45,7 @@ IEnumDebugProcesses : IUnknown
 |[Clone](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Ottiene il numero di processi in un enumeratore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Visual Studio usa questa interfaccia per popolare la finestra **processi** .
 
 ## <a name="requirements"></a>Requisiti
@@ -55,6 +55,6 @@ IEnumDebugProcesses : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

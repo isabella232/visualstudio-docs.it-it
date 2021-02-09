@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1e7cf5998645230f038c6de12c79b53b44c09dfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847986"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Scrivere logger compatibili con più processori
 
@@ -80,7 +80,7 @@ In alternativa, è possibile creare un logger di inoltro personalizzato. Creando
 
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Uso di ConfigurableForwardingLogger per la registrazione distribuita semplice
 
- Per allegare un oggetto ConfigurableForwardingLogger o un logger di inoltro personalizzato, usare l'opzione `-distributedlogger` (`-dl` per brevità) in una compilazione da riga di comando di *MSBuild.exe* . Il formato da usare per specificare i nomi dei tipi e delle classi del logger è identico a quello usato per l'opzione `-logger`, ad eccezione del fatto che un logger distribuito ha sempre due classi di registrazione anziché una sola, il logger di inoltro e il logger centrale. Di seguito è riportato un esempio di come allegare un logger di inoltro personalizzato denominato XMLForwardingLogger.
+ Per allegare un oggetto ConfigurableForwardingLogger o un logger di inoltro personalizzato, usare l'opzione `-distributedlogger` (`-dl` per brevità) in una compilazione da riga di comando di *MSBuild.exe*. Il formato da usare per specificare i nomi dei tipi e delle classi del logger è identico a quello usato per l'opzione `-logger`, ad eccezione del fatto che un logger distribuito ha sempre due classi di registrazione anziché una sola, il logger di inoltro e il logger centrale. Di seguito è riportato un esempio di come allegare un logger di inoltro personalizzato denominato XMLForwardingLogger.
 
 ```cmd
 msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral

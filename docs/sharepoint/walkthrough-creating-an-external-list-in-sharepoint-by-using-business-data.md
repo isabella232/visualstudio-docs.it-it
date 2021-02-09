@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847713"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: creare un elenco esterno in SharePoint usando i dati aziendali
 
@@ -128,7 +128,7 @@ Aggiungere un'entità al modello. È possibile aggiungere entità dalla **casell
 
      La nuova entità verrà visualizzata nella finestra di progettazione. Visual Studio aggiunge al progetto un file denominato *EntityService. vb* (in Visual Basic) o *EntityService.cs* (in C#).
 
-3. Nella barra dei menu scegliere **Visualizza**  >  **Properties**  >  **finestra** proprietà.
+3. Nella barra dei menu scegliere **Visualizza**  >    >  **finestra** proprietà.
 
 4. Nella finestra **Proprietà** impostare il valore della proprietà **nome** su **Contact**.
 

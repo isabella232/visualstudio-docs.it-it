@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 104e52619a34f1f2fd5b7aedbac98eafd7fdc189
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 233ee9e4583e893d38700088d54e4b0e5eacffb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846270"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Penna in Blend per Visual Studio
 
@@ -34,9 +34,9 @@ Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile u
 |Rimuovere un punto da un tracciato|Passa il puntatore del mouse su un punto esistente e fai clic|![Rimuovere il punto dal tracciato](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Puntatore penna di eliminazione|
 |Chiudere un tracciato con un angolo acuto|Fai clic sul punto iniziale|![Chiudere il tracciato con un angolo acuto](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Puntatore penna di chiusura|
 |Chiudere un tracciato con una curva uniforme nell'angolo|Fai clic sul punto iniziale e trascina per modificare il punto di controllo della tangente prima di rilasciare il pulsante del mouse|![Chiudere un tracciato con una curva uniforme nell'angolo](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Puntatore penna di chiusura|
-|Creare un angolo acuto quando si congiungono due tracciati|Selezionare due tracciati, fare clic sullo strumento **Penna** , fare clic su un punto finale di uno dei tracciati e quindi fare clic su un punto finale dell'altro tracciato|![Creare un angolo acuto quando si congiungono due tracciati](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntatore penna di giunzione|
-|Creare un angolo arrotondato quando si congiungono due tracciati|Selezionare due tracciati, fare clic sullo strumento **Penna** , fare clic su un punto finale di uno dei tracciati e quindi trascinare un punto finale dell'altro tracciato|![Creare un angolo arrotondato quando si congiungono due tracciati](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntatore penna di giunzione|
-|Creare un nuovo tracciato|Tenendo premuto **CTRL** , fare clic su un punto fuori dal tracciato precedente per interrompere l'aggiunta di punti al tracciato e quindi fare clic o trascinare nella posizione in cui deve iniziare il nuovo tracciato|![Creare un nuovo tracciato](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Puntatore penna di inizio|
+|Creare un angolo acuto quando si congiungono due tracciati|Selezionare due tracciati, fare clic sullo strumento **Penna**, fare clic su un punto finale di uno dei tracciati e quindi fare clic su un punto finale dell'altro tracciato|![Creare un angolo acuto quando si congiungono due tracciati](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntatore penna di giunzione|
+|Creare un angolo arrotondato quando si congiungono due tracciati|Selezionare due tracciati, fare clic sullo strumento **Penna**, fare clic su un punto finale di uno dei tracciati e quindi trascinare un punto finale dell'altro tracciato|![Creare un angolo arrotondato quando si congiungono due tracciati](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntatore penna di giunzione|
+|Creare un nuovo tracciato|Tenendo premuto **CTRL**, fare clic su un punto fuori dal tracciato precedente per interrompere l'aggiunta di punti al tracciato e quindi fare clic o trascinare nella posizione in cui deve iniziare il nuovo tracciato|![Creare un nuovo tracciato](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Puntatore penna di inizio|
 
 ## <a name="see-also"></a>Vedi anche
 
