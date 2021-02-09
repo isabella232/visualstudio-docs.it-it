@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 226b86d621de2faee5a71d9fdb3fea39f20b984e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888121"
 ---
 # <a name="compare-properties-and-items"></a>Confrontare proprietà ed elementi
 
@@ -29,7 +29,7 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
 
 ## <a name="scalars-and-vectors"></a>Valori scalari e vettori
 
-Poiché le proprietà MSBuild sono coppie nome-valore con un solo valore di stringa, sono spesso descritte come *valori scalari* . I tipi di elemento MSBuild sono invece elenchi di elementi e sono pertanto spesso descritti come *vettori* . In realtà le proprietà possono comunque rappresentare più valori, mentre i tipi di elemento possono non avere elementi o aver uno.
+Poiché le proprietà MSBuild sono coppie nome-valore con un solo valore di stringa, sono spesso descritte come *valori scalari*. I tipi di elemento MSBuild sono invece elenchi di elementi e sono pertanto spesso descritti come *vettori*. In realtà le proprietà possono comunque rappresentare più valori, mentre i tipi di elemento possono non avere elementi o aver uno.
 
 ### <a name="target-dependency-injection"></a>Inserimento delle dipendenze di destinazione
 
@@ -187,6 +187,6 @@ Il valore di `KeyFileVersion` è impostato su "1.0.0.3" e non su "\@(KeyFile->'%
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

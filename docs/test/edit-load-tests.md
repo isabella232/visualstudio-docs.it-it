@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: ad79be0850191cd2e7ab28aa7a30ff10d867b271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887874"
 ---
 # <a name="edit-load-tests"></a>Modificare i test di carico
 
@@ -50,7 +50,7 @@ Le impostazioni di esecuzione sono proprietà che determinano la modalità di es
 
 Per altre informazioni, vedere [Configurare le impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md) e [Proprietà delle impostazioni di esecuzione del test di carico](../test/load-test-run-settings-properties.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)

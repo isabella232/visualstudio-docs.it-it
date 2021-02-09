@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa0caa8184f3c52a010df1dd1f82718d44be700b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73024729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888056"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
@@ -119,19 +119,19 @@ Se si usa il comando **Esegui Mypy** su questo codice, viene generato l'errore s
 > [!Tip]
 > Per le versioni di Python precedenti alla 3.5, Visual Studio visualizza anche i suggerimenti relativi al tipo specificati nei *file stub* (con estensione *pyi*) di Typeshed. I file stub possono essere usati quando non si vuole includere i suggerimenti relativi al tipo direttamente nel codice o quando si vogliono creare suggerimenti relativi al tipo per una libreria che non li usa direttamente. Per altre informazioni, vedere [creare stub per i moduli Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) nel wiki del progetto mypy.
 >
-> Visual Studio include un set di file Typeshed in bundle per Python 2 e 3, in modo che non siano necessari ulteriori download. Tuttavia, se si vuole usare un set di file diverso, è possibile specificare il percorso nelle opzioni opzioni **Tools**  >  **del**  >  server del**Python**  >  **linguaggio** Python di strumenti. Vedere [Opzioni - Server di linguaggio](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+> Visual Studio include un set di file Typeshed in bundle per Python 2 e 3, in modo che non siano necessari ulteriori download. Tuttavia, se si vuole usare un set di file diverso, è possibile specificare il percorso nelle opzioni opzioni   >  **del**  >  server del  >  **linguaggio** Python di strumenti. Vedere [Opzioni - Server di linguaggio](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
 > Al momento Visual Studio non supporta i suggerimenti relativi al tipo nei commenti.
 ::: moniker-end
 
 ### <a name="signature-help"></a>Supporto per la firma
 
-Se si scrive codice che chiama una funzione, la guida per la firma digitale appare quando si digita la parentesi di apertura (`(`) e visualizza le informazioni della documentazione e sui parametri disponibili. È anche possibile fare in modo che **Ctrl**venga visualizzato con + **Shift** + **lo spazio** di spostamento CTRL all'interno di una chiamata di funzione. Le informazioni visualizzate dipendono dalle stringhe di documentazione nel codice sorgente della funzione, ma includono eventuali valori predefiniti.
+Se si scrive codice che chiama una funzione, la guida per la firma digitale appare quando si digita la parentesi di apertura (`(`) e visualizza le informazioni della documentazione e sui parametri disponibili. È anche possibile fare in modo che venga visualizzato con +  + **lo spazio** di spostamento CTRL all'interno di una chiamata di funzione. Le informazioni visualizzate dipendono dalle stringhe di documentazione nel codice sorgente della funzione, ma includono eventuali valori predefiniti.
 
 ![Guida per la firma nell'editor di Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Per disabilitare la guida alla firma, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **Python**  >  **generale** e deselezionare istruzioni parametri di **completamento istruzioni**  >  **Parameter information**.
+> Per disabilitare la guida alla firma, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **Python**  >  **generale** e deselezionare istruzioni parametri di **completamento istruzioni**  >  .
 
 ### <a name="quick-info"></a>Informazioni rapide
 
@@ -221,11 +221,11 @@ Facendo doppio clic su qualsiasi nome o selezionando con i tasti di direzione e 
 
 ### <a name="find-all-references"></a>Trova tutti i riferimenti
 
-**Trova tutti i riferimenti** è un modo utile per individuare le posizioni in cui un qualsiasi identificatore specificato viene sia definito che usato, incluse importazioni e assegnazioni. Per richiamarlo, fare clic con il pulsante destro del mouse su un identificatore e scegliere **Trova tutti i riferimenti**o posizionare il punto di inserimento nell'identificatore e premere **MAIUSC** + **F12**. È possibile fare doppio clic su un elemento nell'elenco per passare alla relativa posizione.
+**Trova tutti i riferimenti** è un modo utile per individuare le posizioni in cui un qualsiasi identificatore specificato viene sia definito che usato, incluse importazioni e assegnazioni. Per richiamarlo, fare clic con il pulsante destro del mouse su un identificatore e scegliere **Trova tutti i riferimenti** o posizionare il punto di inserimento nell'identificatore e premere **MAIUSC** + **F12**. È possibile fare doppio clic su un elemento nell'elenco per passare alla relativa posizione.
 
 ![Risultati di Trova tutti i riferimenti](media/code-editing-find-all-references.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Formattazione](formatting-python-code.md)
 - [Refactoring](refactoring-python-code.md)

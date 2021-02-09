@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: 0807a28d-2e40-4a51-ab10-308d808ded6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da285cfef49bd495fbecf39131e49cacd0476a5
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7adb711c77f4bb2dead3190d40065e148760b034
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887471"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procedura: Specificare i file di log dettagliati per le distribuzioni ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gestisce i file di log attività per tutte le distribuzioni. Vengono registrati i dettagli del documento riguardanti l'installazione, l'inizializzazione, l'aggiornamento e la disinstallazione di una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per aumentare il dettaglio che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scrive in questi file di log, usare l'editor del registro di sistema ( *regedit.exe* ) per specificare il livello di dettaglio.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gestisce i file di log attività per tutte le distribuzioni. Vengono registrati i dettagli del documento riguardanti l'installazione, l'inizializzazione, l'aggiornamento e la disinstallazione di una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per aumentare il dettaglio che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scrive in questi file di log, usare l'editor del registro di sistema (*regedit.exe*) per specificare il livello di dettaglio.
 
 > [!CAUTION]
 > Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. L'uso dell'editor del Registro di sistema è a rischio e pericolo dell'utente.
@@ -42,5 +42,5 @@ ms.locfileid: "94350920"
 
 4. Impostare il `LogVerbosityLevel` valore su `1` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

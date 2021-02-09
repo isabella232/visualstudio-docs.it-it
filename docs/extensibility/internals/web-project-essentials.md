@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886873"
 ---
 # <a name="web-project-essentials"></a>Nozioni fondamentali sui progetti Web
 I progetti Web creano applicazioni Web. È possibile utilizzare un progetto Web per creare un'applicazione Web con pagine Web Smart. Una pagina Web intelligente dispone di codice sul lato server che esegue il rendering della pagina Web su richiesta.
@@ -59,5 +59,5 @@ I progetti Web creano applicazioni Web. È possibile utilizzare un progetto Web 
 
   - I marcatori di errore (linee ondulate indicano rosso) devono sempre essere creati nel buffer primario dell'editor di codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Progetti Web](../../extensibility/internals/web-projects.md)

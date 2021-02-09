@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 16f0df8a21621b93655935b3cfa27a4b62df63ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888147"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio legacy
 Un frammento di codice è una porzione di codice che viene inserita nel file di origine. Il frammento è un modello basato su XML con un set di campi. Questi campi vengono evidenziati dopo l'inserimento del frammento e possono avere valori diversi a seconda del contesto in cui viene inserito il frammento. Subito dopo l'inserimento del frammento di codice, il servizio di linguaggio può formattare il frammento.

@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51912fce3bf98502be7ae05f815fce60e595e89c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887341"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Ottiene la risoluzione del punto di interruzione che descrive il punto di interruzione.
@@ -29,13 +29,13 @@ Ottiene la risoluzione del punto di interruzione che descrive il punto di interr
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetBreakpointResolution( 
+HRESULT GetBreakpointResolution( 
     IDebugBreakpointResolution2** ppBPResolution
 );
 ```
 
 ```csharp
-int GetBreakpointResolution( 
+int GetBreakpointResolution( 
     out IDebugBreakpointResolution2 ppBPResolution
 );
 ```
@@ -51,7 +51,7 @@ out Restituisce l'interfaccia [IDebugBreakpointResolution2](../../../extensibili
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Chiamare il metodo [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) per determinare se la risoluzione del punto di interruzione è per il codice o i dati.
 
 ## <a name="example"></a>Esempio
@@ -88,7 +88,7 @@ HRESULT CBoundBreakpoint::GetBreakpointResolution(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)

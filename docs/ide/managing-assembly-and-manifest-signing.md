@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 709a5a64164ed6c80c29a8e554d2b07050e18339
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886522"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
 
@@ -40,13 +40,13 @@ Per informazioni sulla firma degli assembly nei progetti C++, vedere [assembly c
 
 È possibile firmare gli assembly .NET e i manifesti dell'applicazione:
 
-- File eseguibili ( *.exe* )
+- File eseguibili (*.exe*)
 
-- Manifesti dell'applicazione ( *.exe.manifest* )
+- Manifesti dell'applicazione (*.exe.manifest*)
 
-- Manifesti della distribuzione ( *.application* )
+- Manifesti della distribuzione (*.application*)
 
-- Assembly di componenti condivisi ( *.dll* )
+- Assembly di componenti condivisi (*.dll*)
 
 Firmare i seguenti tipi di asset:
 
@@ -60,7 +60,7 @@ In generale è consigliabile non firmare i file eseguibili. Un componente con no
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Come firmare un assembly in Visual Studio
 
-Per firmare un'applicazione o un componente, usare la scheda **Firma** della finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** ). Selezionare la scheda **Firma** , quindi la casella di controllo **Firma assembly**.
+Per firmare un'applicazione o un componente, usare la scheda **Firma** della finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**). Selezionare la scheda **Firma**, quindi la casella di controllo **Firma assembly**.
 
 Specificare un file di chiave. Se si sceglie di creare un nuovo file di chiave, i nuovi file di chiave vengono sempre creati in formato *.pfx*. Sono necessari un nome e una password per il nuovo file.
 
@@ -73,7 +73,7 @@ Se si ha accesso solo a una chiave pubblica, è possibile usare il ritardo della
 
 Per informazioni sulla firma dei manifesti, vedere [Procedura: Firmare manifesti dell'applicazione e di distribuzione](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Assembly con nomi sicuri (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

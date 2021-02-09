@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886613"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc (funzione)
 Questa funzione consente all'utente di cercare i file già presenti nel sistema di controllo del codice sorgente e successivamente di fare in modo che tali file facciano parte del progetto corrente. Questa funzione, ad esempio, può ottenere un file di intestazione comune nel progetto corrente senza copiare il file. La matrice di file restituita, `lplpFileNames` , contiene l'elenco di file che l'utente desidera aggiungere al progetto IDE.
@@ -59,7 +59,7 @@ in Handle per la finestra IDE che il plug-in del controllo del codice sorgente p
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata senza alcun effetto.|
 |SCC_I_RELOADFILE|È necessario ricaricare un file o un progetto.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'IDE chiama questa funzione. Se il plug-in del controllo del codice sorgente supporta la specifica di una cartella di destinazione locale, l'IDE passa `lpnFiles` = 1 e passa il nome della cartella locale a `lplpFileNames` .
 
  Quando la chiamata alla `SccAddFromScc` funzione restituisce, il plug-in ha assegnato i valori a `lpnFiles` e `lplpFileNames` , allocando la memoria per la matrice di nomi di file secondo necessità (si noti che questa allocazione sostituisce il puntatore in `lplpFileNames` ). Il plug-in del controllo del codice sorgente è responsabile dell'inserimento di tutti i file nella directory dell'utente o nella cartella designazione specificata. L'IDE aggiunge quindi i file al progetto IDE.
@@ -71,6 +71,6 @@ in Handle per la finestra IDE che il plug-in del controllo del codice sorgente p
 > [!NOTE]
 > Le versioni iniziali dell'API VSSCI non forniscono un modo per indicare il progetto di destinazione per i file aggiunti. Per risolvere questo problema, la semantica del `lplpFIleNames` parametro è stata migliorata in modo da renderla un parametro in/out anziché un parametro di output. Se viene specificato un solo file, ovvero il valore a cui punta `lpnFiles` = 1, il primo elemento di `lplpFileNames` contiene la cartella di destinazione. Per usare la nuova semantica, l'IDE chiama la `SccSetOption` funzione con il `nOption` parametro impostato su `SCC_OPT_SHARESUBPROJ` . Se un plug-in del controllo del codice sorgente non supporta la semantica, restituisce `SCC_E_OPTNOTSUPPORTED` . Questa operazione Disabilita l'uso della funzionalità **Aggiungi da controllo del codice sorgente** . Se un plug-in supporta la funzionalità **Aggiungi da controllo del codice sorgente** ( `SCC_CAP_ADDFROMSCC` ), deve supportare la nuova semantica e restituire `SCC_I_SHARESUBPROJOK` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

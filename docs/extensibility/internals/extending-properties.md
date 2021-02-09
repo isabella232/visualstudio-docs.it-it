@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b9a777bf11f388873978f450184f1455236e9ff9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887081"
 ---
 # <a name="extend-properties"></a>Estendi proprietà
 La [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestra **Proprietà** è un visualizzatore di proprietà universale per i componenti com e com+ e supporta tutti i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prodotti. La finestra **Proprietà** funziona con le `ITypeInfo` informazioni sul tipo e i metadati com+ per elencare le proprietà della fase di progettazione per l'oggetto attualmente selezionato in qualsiasi altra finestra del Integrated Development Environment (IDE).

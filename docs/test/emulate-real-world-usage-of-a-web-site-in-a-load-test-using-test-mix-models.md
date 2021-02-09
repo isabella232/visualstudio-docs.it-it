@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: ba5bba0b90acdfab932196ceda7dd8ad971efde1
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: e79d6e92df6f2b22fdced488b74f072b57fb8d84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441261"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887861"
 ---
 # <a name="test-mix-models-overview"></a>Panoramica dei modelli di combinazione di test
 
@@ -104,7 +104,7 @@ Nelle proprietà Impostazioni di esecuzione è possibile specificare un valore p
 
 - I nuovi utenti, in base alla definizione nella proprietà Percentuale di nuovi utenti dello scenario, eseguono sempre il test di inizializzazione, un'iterazione di un test dalla combinazione di test e il test di terminazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare i modelli di combinazione di testo per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: acfaf1f74f856bb90bfc16cacef20579abdcf8c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886561"
 ---
 # <a name="manage-application-settings-net"></a>Gestire le impostazioni dell'applicazione (.NET)
 
@@ -104,6 +104,6 @@ Properties.Settings.Default.Save();
 
 Per informazioni generali sull'accesso alle impostazioni dell'applicazione tramite la `Settings` classe, vedere [Cenni preliminari sulle impostazioni delle applicazioni (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Per impostazioni sullo scorrimento delle impostazioni, vedere questo [post del forum](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedere alle impostazioni dell'applicazione (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

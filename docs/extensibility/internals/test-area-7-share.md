@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02593af854a9e68e7f4a6cc66f54452d3c3d3f94
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5c006c5f4746f83e571475d93bedc452c7c23c75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888134"
 ---
 # <a name="test-area-7-share"></a>Area di test 7: Condividi
 Questa area di test copre la condivisione di elementi tra percorsi tramite il comando **share** .
@@ -60,5 +60,5 @@ Questa area di test copre la condivisione di elementi tra percorsi tramite il co
 |Condividere una cartella nel progetto caricato: ricorsivo|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. Selezionare il progetto.<br />4. Aprire la finestra di dialogo **Condividi** (  ->  **Condivisione controllo del codice sorgente** file  ->  ).<br />5. Selezionare una cartella.<br />6. condividere la cartella in modo ricorsivo nel progetto.|Comportamento previsto comune.|
 |Condividere più file da un progetto a un altro|1. creare un nuovo progetto con più file.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare un nuovo progetto in una nuova soluzione.<br />5. aggiungere la soluzione al controllo del codice sorgente.<br />6. Selezionare il progetto.<br />7. Aprire la finestra di dialogo **Condividi** (  ->  **Condivisione controllo del codice sorgente** file  ->  ).<br />8. condividere diversi file dal progetto creato in precedenza al progetto attualmente aperto.|Comportamento previsto comune.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

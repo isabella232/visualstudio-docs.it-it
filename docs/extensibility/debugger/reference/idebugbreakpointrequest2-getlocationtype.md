@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 06bb64190d6821b05ebd638c753bd2b6d3decf71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 076a5e70f94594f7b526c0893be51eb2cfa08cdf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887315"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 Ottiene il tipo di posizione del punto di interruzione della richiesta del punto di interruzione.
@@ -80,7 +80,7 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00fd8b4b42f11d18958f8a969bc4ccd58754ab93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1af67a00b9a692e5156ec7a6a14ef3fadcc3ac32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888342"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Questa interfaccia specifica un messaggio di errore da segnalare all'utente.
@@ -41,7 +41,7 @@ IDebugErrorEvent2 : IUnknown
 |------------|-----------------|
 |`GetErrorMessage`|Restituisce un errore come stringa leggibile.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se il motore di debug rileva un errore, può usare questa interfaccia per segnalare il messaggio tramite Visual Studio all'utente.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,6 +51,6 @@ IDebugErrorEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

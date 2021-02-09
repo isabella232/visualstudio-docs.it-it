@@ -15,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 10e3e990637faf15c64aa6b0f18c4eb9114bea7b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: ac7fa64b143127d8efe030a94242b237ff9e0d49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887718"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
@@ -86,7 +86,7 @@ Il valore percentile per il rapporto **Tempo test 95% (sec)** indica che il 95% 
 
 Se la traccia SQL è attivata nel test di carico, questa sezione contiene informazioni sulle 5 query più lente del test di carico. Per ogni operazione sono visualizzati il nome e la durata espressa in microsecondi (SQL Server 2005) o in millisecondi (SQL Server 2000 e versioni precedenti). I test sono elencati in ordine decrescente in base alla durata. È possibile scegliere il nome di un'operazione per aprire la tabella **Traccia SQL** ed esaminare altri dettagli sull'operazione. Per ulteriori informazioni, vedere [la tabella dati di traccia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
-## <a name="test-results"></a>Risultati del test
+## <a name="test-results"></a>Risultati dei test
 
 La sezione relativa ai risultati del test contiene un elenco di tutti i test e degli scenari del test di carico. Per ogni test sono visualizzati il nome, lo scenario, il numero di esecuzioni, il numero di volte che non è stato superato e il tempo medio. È possibile scegliere il nome di un test per aprire la tabella **Test** ed esaminare altri dettagli sul test. Per ulteriori informazioni, vedere [analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
