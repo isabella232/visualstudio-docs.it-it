@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f2cf1e0-f817-4ca0-b782-3341362c46a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 877ac3b0a73dc13600c9d6847dfc505caaa05821
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1d2f084d0561d7d691df1f0e12f98b4604c11b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854430"
 ---
 # <a name="idiasymbolget_constructor"></a>IDiaSymbol::get_constructor
 Recupera un flag che specifica se il tipo di dati definito dall'utente ha un costruttore o un distruttore.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se il tipo di dati definito dall'utente ha un cos
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_constructor ( 
+HRESULT get_constructor ( 
    BOOL* pRetVal
 );
 ```
@@ -48,5 +48,5 @@ out Restituisce `TRUE` se il tipo di dati definito dall'utente ha un costruttore
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

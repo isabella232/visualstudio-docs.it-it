@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dd1fb3ba-31bf-497d-a6bf-79f1206e6642
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe5c412e815b5cda02959f792197954cb1f92540
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 810de26d9bef93308744a161f6638fb61913dea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853562"
 ---
 # <a name="idiasymbolget_symindexid"></a>IDiaSymbol::get_symIndexId
 Recupera l'identificatore univoco del simbolo.
@@ -25,7 +25,7 @@ Recupera l'identificatore univoco del simbolo.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_symIndexId ( 
+HRESULT get_symIndexId ( 
    DWORD* pRetVal
 );
 ```
@@ -41,8 +41,8 @@ out Restituisce l'ID del simbolo.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

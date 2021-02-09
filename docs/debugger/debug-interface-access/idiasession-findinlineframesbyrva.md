@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: ddb3ff0e-cb3d-4fa0-af56-f064b218b264
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be9203b3ed22093863710eb7689b16226988efe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae878043729787b80102d4ad6ed3bf2158d3cba0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855172"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
 Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (relative Virtual Address) specificato.
@@ -23,7 +23,7 @@ Recupera un'enumerazione che consente a un client di scorrere tutti i frame inli
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT findInlineFramesByRVA ( 
+HRESULT findInlineFramesByRVA ( 
    IDiaSymbol*       parent,   DWORD             rva,
    IDiaEnumSymbols** ppResult
 );
@@ -45,7 +45,7 @@ out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recupe
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

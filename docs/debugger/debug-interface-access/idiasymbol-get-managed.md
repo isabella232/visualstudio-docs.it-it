@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a69d00be-2a89-415c-b116-385c422e2fd5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 270fc706f94e8048ef1c4cc1477a4372ed8988a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c66a98d5570628325968ba7389c87ffe0a962e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853877"
 ---
 # <a name="idiasymbolget_managed"></a>IDiaSymbol::get_managed
 Recupera un flag che specifica se il simbolo fa riferimento al codice gestito.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se il simbolo fa riferimento al codice gestito.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_managed ( 
+HRESULT get_managed ( 
    BOOL* pRetVal
 );
 ```
@@ -41,5 +41,5 @@ out Restituisce `TRUE` se il simbolo fa riferimento al codice gestito; in caso c
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

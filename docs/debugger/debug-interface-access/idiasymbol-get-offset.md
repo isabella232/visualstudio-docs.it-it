@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71105c6c3f93f259bdb6ce8e5f46abe30c5953c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6469180cada412fe5f08db1bd982f5a6e250e9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853744"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 Recupera l'offset della posizione del simbolo. Utilizzare quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsRegRel` o `LocIsBitField` .
@@ -25,7 +25,7 @@ Recupera l'offset della posizione del simbolo. Utilizzare quando l' [enumerazion
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_offset ( 
+HRESULT get_offset ( 
    LONG* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ out Restituisce l'offset in byte della posizione del simbolo.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'offset è da un punto noto precedentemente determinato. Ad esempio, l'offset per un `LocIsBitField` tipo di posizione è in genere dall'inizio della classe che lo contiene.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,6 +51,6 @@ out Restituisce l'offset in byte della posizione del simbolo.
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

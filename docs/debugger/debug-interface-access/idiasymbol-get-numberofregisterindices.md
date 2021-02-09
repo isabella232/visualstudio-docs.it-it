@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 1ec8b8ea-e423-4327-8dc0-a390e6e3ffb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ca59f0cef5e8e4a1771d2a20da12af17ec6fb5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cd70dce08628ac401307e696ad0f2e530f0da41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853793"
 ---
 # <a name="idiasymbolget_numberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
 Recupera il numero di indici di registro.
@@ -35,5 +35,5 @@ out Puntatore a un oggetto `DWORD` che include il numero di indici di registro.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

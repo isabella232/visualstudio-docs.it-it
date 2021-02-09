@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 384ae0e1-077e-4d4f-98de-ac43c32c882f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d248bd5dcacf2c852076bc1dddbcd40d149ebf67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe7d30fdf5c669f572c66a975494490ed7c4e954
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855263"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Esegue il mapping dei dati dal numero di sezione ai segmenti dello spazio degli indirizzi.
@@ -25,7 +25,7 @@ Esegue il mapping dei dati dal numero di sezione ai segmenti dello spazio degli 
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDiaSegment : IUnknown
+IDiaSegment : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
@@ -43,7 +43,7 @@ La tabella seguente illustra i metodi di `IDiaSegment` .
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Recupera l'indirizzo RVA (relativo Virtual Address) dell'inizio della sezione.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Recupera l'indirizzo virtuale (VA) dell'inizio della sezione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Poiché il DIA SDK esegue già le traduzioni dalla sezione offset in indirizzi virtuali relativi, la maggior parte delle applicazioni non utilizzerà le informazioni nella mappa di segmenti.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -100,7 +100,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)
 - [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

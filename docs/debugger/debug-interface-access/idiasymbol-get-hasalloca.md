@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3b9fb747-670b-4da7-bb70-612f7b911786
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebf6a450aa9b2b5fdd05d6573fc9ee10c6f83e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6dfbb3d12e01656117c0b1a3391af5a0578358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854290"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 Recupera un flag che specifica se la funzione contiene una chiamata a `alloca` (utilizzata per allocare memoria nello stack).
@@ -25,7 +25,7 @@ Recupera un flag che specifica se la funzione contiene una chiamata a `alloca` (
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT get_hasAlloca(   BOOL *pFlag);
+HRESULT get_hasAlloca(   BOOL *pFlag);
 ```
 
 #### <a name="parameters"></a>Parametri
@@ -46,5 +46,5 @@ out Restituisce `TRUE` se la funzione contiene una chiamata a `alloca` ; in caso
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

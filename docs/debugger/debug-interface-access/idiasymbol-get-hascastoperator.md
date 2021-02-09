@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a21114a6-56a3-4e8a-a65f-58ec2a0a8908
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97242a8945270d81362066abbc52450b61c1997b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6329ea001ec2584c34cda76417c143634f4fb3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854276"
 ---
 # <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
 Recupera un flag che specifica se per il tipo di dati definito dall'utente sono definiti operatori di cast.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se per il tipo di dati definito dall'utente sono 
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_hasCastOperator ( 
+HRESULT get_hasCastOperator ( 
    BOOL* pRetVal
 );
 ```
@@ -48,5 +48,5 @@ out Restituisce un oggetto `TRUE` se per il tipo di dati definito dall'utente so
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

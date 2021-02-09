@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73ddcffe-cdac-4b03-be42-82ef985d17ee
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55af1a117a089fb2a851cfdbd55a1e797e990790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f76bcfee990ac6fc55f97480886f751ae24bc00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854206"
 ---
 # <a name="idiasymbolget_hfafloat"></a>IDiaSymbol::get_hfaFloat
 Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene dati di aggregazione a virgola mobile (HFA) omogenei di tipo float.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene da
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_hfaFloat( 
+HRESULT get_hfaFloat( 
    BOOL* pRetVal
 );
 ```
@@ -50,6 +50,6 @@ out Restituisce `TRUE` se il tipo definito dall'utente contiene dati HFA di tipo
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

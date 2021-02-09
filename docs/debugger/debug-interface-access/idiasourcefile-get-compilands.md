@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57deb50a-9c22-43ea-a80c-eab205997bc4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 89b3d85ab967185fb264491f57d6e6b59afad105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 339097280cc3ddf88082f7c18c65693fd8e30702
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854983"
 ---
 # <a name="idiasourcefileget_compilands"></a>IDiaSourceFile::get_compilands
 Recupera un enumeratore di moduli con numeri di riga che fanno riferimento a questo file.
@@ -25,7 +25,7 @@ Recupera un enumeratore di moduli con numeri di riga che fanno riferimento a que
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_compilands ( 
+HRESULT get_compilands ( 
    IDiaEnumSymbols** ppRetVal
 );
 ```
@@ -38,6 +38,6 @@ out Restituisce un oggetto [IDiaEnumSymbols](../../debugger/debug-interface-acce
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 29080009-36e4-4697-acd7-50f2e3e1bf1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e365c6bd29238717466d9e5e378909ab7a2bda4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ed1d2e2cfda5bf16117c2bc4fbd8c13384055a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854668"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo virtuale specificato.
@@ -25,7 +25,7 @@ Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizz
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT findChildrenExByVA ( 
+HRESULT findChildrenExByVA ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,
@@ -58,7 +58,7 @@ out Restituisce un oggetto [IDiaEnumSymbols](../../debugger/debug-interface-acce
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK` se è stato trovato almeno un elemento figlio del simbolo oppure restituisce `S_FALSE` se non sono stati trovati elementi figlio; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I simboli locali restituiti includono informazioni sull'intervallo Live.
 
 ## <a name="requirements"></a>Requisiti
@@ -68,7 +68,7 @@ out Restituisce un oggetto [IDiaEnumSymbols](../../debugger/debug-interface-acce
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

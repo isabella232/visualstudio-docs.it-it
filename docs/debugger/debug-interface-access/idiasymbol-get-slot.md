@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97e405b8-483f-4da0-91e7-ca4d88251ecd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4701e3274a45d16cf06ac9a25aa94448bc85b0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb7c89828bb4b0715f97aaba37fd335c8f1eb6c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461977"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853604"
 ---
 # <a name="idiasymbolget_slot"></a>IDiaSymbol::get_slot
 Recupera il numero di slot della posizione. Utilizzare quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsSlot` .
@@ -25,7 +25,7 @@ Recupera il numero di slot della posizione. Utilizzare quando l' [enumerazione L
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_slot ( 
+HRESULT get_slot ( 
    DWORD* pRetVal
 );
 ```
@@ -41,6 +41,6 @@ out Restituisce il numero di slot della posizione.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

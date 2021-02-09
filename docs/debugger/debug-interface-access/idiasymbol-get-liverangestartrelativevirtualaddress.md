@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a594ad4db1d06e541da93a4efb1b6f30a000f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38b8d66146b840cabe457784a072d55459ffa646
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853926"
 ---
 # <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 Restituisce l'inizio dell'intervallo di indirizzi in cui il simbolo locale è valido.
@@ -25,7 +25,7 @@ Restituisce l'inizio dell'intervallo di indirizzi in cui il simbolo locale è va
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_liveRangeStartRelativeVirtualAddress ( 
+HRESULT get_liveRangeStartRelativeVirtualAddress ( 
    DWORD* address
 );
 ```
@@ -50,5 +50,5 @@ out Restituisce l'inizio dell'intervallo di indirizzi.
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c472830f-c3eb-46ab-9498-cd637763d241
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff4bc6cf8ca9c1b0a1d290e22cd96ef594144ee2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85638411f7ca1da965993ffb41d98cfdbfb4198a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853772"
 ---
 # <a name="idiasymbolget_oemid"></a>IDiaSymbol::get_oemId
 Recupera il valore dell'ID OEM (Original Equipment Manufacturer) del simbolo.
@@ -25,7 +25,7 @@ Recupera il valore dell'ID OEM (Original Equipment Manufacturer) del simbolo.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_oemId ( 
+HRESULT get_oemId ( 
    DWORD* pRetVal
 );
 ```
@@ -41,9 +41,9 @@ out Restituisce un valore univoco che identifica un OEM.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa proprietà si applica solo ai simboli con un tipo di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagCustomType` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 7a74d5ee-0dbf-47c0-92b4-47ec03b13ce9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9469415682d7347aa3d51ee09878e31e28e85f62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1daae404b3adb1e4a8d2595307ef9bc4eb406399
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855193"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'indirizzo RVA (relativo Virtual Address) specificato.
@@ -23,7 +23,7 @@ Recupera un'enumerazione che consente a un client di scorrere le informazioni su
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT findInlineeLinesByRVA ( 
+HRESULT findInlineeLinesByRVA ( 
    IDiaSymbol*           parent,
    DWORD                 rva,
    DWORD                 length,
@@ -51,7 +51,7 @@ out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri d
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

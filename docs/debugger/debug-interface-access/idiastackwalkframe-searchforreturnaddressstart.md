@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47660b9b-6e4f-4dfa-88ab-63dce28f7412
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 361aa5083f0d3abafc42ddbacf9bee4e464a3336
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7df2a6bf560c8b0916357c063dff01f1d8f5ac9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854773"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 Cerca nell'stack frame specificato un indirizzo restituito in corrispondenza o in prossimità dell'indirizzo specificato.
@@ -25,7 +25,7 @@ Cerca nell'stack frame specificato un indirizzo restituito in corrispondenza o i
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT searchForReturnAddressStart ( 
+HRESULT searchForReturnAddressStart ( 
    IDiaFrameData* frame,
    ULONGLONG      startAddress,
    ULONGLONG*     returnAddress
@@ -48,6 +48,6 @@ out Restituisce l'indirizzo restituito della funzione più vicino a `startAddres
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

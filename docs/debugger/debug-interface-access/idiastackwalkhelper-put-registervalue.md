@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a2fd6c7fbca54593a547a1f014fbe7726c814c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dd354553568ec517f6816f5b279ccbe214f101c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464702"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854759"
 ---
 # <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
 Imposta il valore di un registro.
@@ -25,7 +25,7 @@ Imposta il valore di un registro.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT put_registerValue ( 
+HRESULT put_registerValue ( 
    DWORD     index,
    ULONGLONG NewVal
 );
@@ -43,9 +43,9 @@ in Nuovo valore del registro.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Nonostante le dimensioni del valore, un'implementazione deve archiviare solo ciò che il registro include normalmente. Un registro a 8 bit, ad esempio, conterrà solo gli 8 bit più bassi del valore specificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [Enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

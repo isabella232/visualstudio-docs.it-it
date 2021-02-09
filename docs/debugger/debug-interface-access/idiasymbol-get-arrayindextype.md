@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd63b9ec-9694-406c-b37f-bde6bd5fcbf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbe3bd3525abd5ac7fccbae66b603ce8d2a6dbf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 225723fbc5eb40025a6dad1b52a5ab6c790f3fea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854556"
 ---
 # <a name="idiasymbolget_arrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Recupera l'interfaccia dei simboli del tipo di indice della matrice del simbolo.
@@ -25,7 +25,7 @@ Recupera l'interfaccia dei simboli del tipo di indice della matrice del simbolo.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_arrayIndexType ( 
+HRESULT get_arrayIndexType ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -41,7 +41,7 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In alcuni linguaggi è possibile specificare il tipo utilizzato come indice di una matrice. Il simbolo restituito da questo metodo specifica quel tipo.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,5 +51,5 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7ee7a9be-a0d8-48e4-9fef-d37b3d6ae4ef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c7efe5792a7df53139571273b4796e2e7f030
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8da3cbfa085eea44af8a1caf7489aaaab83f60e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853499"
 ---
 # <a name="idiasymbolget_token"></a>IDiaSymbol::get_token
 Recupera il token di metadati di una funzione o una variabile gestita.
@@ -25,7 +25,7 @@ Recupera il token di metadati di una funzione o una variabile gestita.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_token ( 
+HRESULT get_token ( 
    DWORD* pRetVal
 );
 ```
@@ -41,5 +41,5 @@ out Restituisce il token di metadati di una funzione o una variabile gestita.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

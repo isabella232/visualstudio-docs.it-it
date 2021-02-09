@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 05c4c896-4419-4166-8bb2-8d0934dc14b5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ad5babf2f345d19b4ade2608f92ae5264622809c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfea906445396551144bccac509355af8be7d29b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855354"
 ---
 # <a name="idiasectioncontribget_share"></a>IDiaSectionContrib::get_share
 Recupera un flag che indica se la sezione può essere condivisa in memoria.
@@ -25,7 +25,7 @@ Recupera un flag che indica se la sezione può essere condivisa in memoria.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_share ( 
+HRESULT get_share ( 
    BOOL* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce `TRUE` se la sezione è condivisibile in memoria; in caso contra
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

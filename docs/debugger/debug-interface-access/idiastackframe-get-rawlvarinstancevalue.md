@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ce526259-85a6-475b-9274-0b3a21d95db2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a45568ea62a767d06a33c324f0f05a1f697e93f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0c0052ca7183a0c53080a4e51bddd2cdfbf72ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854892"
 ---
 # <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 Questo metodo recupera il valore della variabile locale specificata come byte non elaborati.
@@ -53,5 +53,5 @@ out Buffer da compilare con i dati. Non può essere `NULL`.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

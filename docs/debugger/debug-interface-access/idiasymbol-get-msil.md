@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 43a8e003-6856-4726-aa16-c0d4dae7299b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfde93d05aa2e3d4f5458915b4bb98a20999480
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e14e118c6d9f0a04cfe2c29de345a88a0fc63c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853863"
 ---
 # <a name="idiasymbolget_msil"></a>IDiaSymbol::get_msil
 Recupera un flag che specifica se il simbolo fa riferimento al codice MSIL (Microsoft Intermediate Language).
@@ -25,7 +25,7 @@ Recupera un flag che specifica se il simbolo fa riferimento al codice MSIL (Micr
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_msil ( 
+HRESULT get_msil ( 
    BOOL* pRetVal
 );
 ```
@@ -41,5 +41,5 @@ out Restituisce `TRUE` se il simbolo fa riferimento al codice MSIL; in caso cont
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

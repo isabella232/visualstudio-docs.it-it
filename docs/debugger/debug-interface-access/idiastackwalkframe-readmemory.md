@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7ab0b525-a5a7-4692-acad-e8c00fa9ab9a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f682f3fe0e300f84dc28b959497138a5019f954b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffd85fd1a6878fd378931901098d90f2a24c8ccc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854801"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
 Legge la memoria dall'immagine.
@@ -25,7 +25,7 @@ Legge la memoria dall'immagine.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT readMemory ( 
+HRESULT readMemory ( 
    MemoryTypeEnum type,
    ULONGLONG va,
    DWORD     cbData,
@@ -58,5 +58,5 @@ out Buffer da compilare con i dati del percorso specificato.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

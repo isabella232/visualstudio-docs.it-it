@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22656206-dccf-40ed-b179-fc016d1b262a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 353247c494b803871a9c64126545e11be39bfcae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2584351919e717c893afcf35b4812df63042240
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854213"
 ---
 # <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
 Recupera un flag che specifica se la funzione contiene un uso del comando [setjmp](/cpp/c-runtime-library/reference/setjmp) (abbinato al comando [longjmp](/cpp/c-runtime-library/reference/longjmp) , che formano il metodo di tipo C della gestione delle eccezioni).
@@ -48,7 +48,7 @@ out Restituisce `TRUE` se la funzione contiene un `setjmp` comando; in caso cont
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)
 - [longjmp](/cpp/c-runtime-library/reference/longjmp)

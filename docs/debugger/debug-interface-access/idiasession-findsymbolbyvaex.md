@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 11c685f6-cda2-4474-a432-214ecaae4ffa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de381b67e84233b0ba4f7a6e3aaa6a4df0c93a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac2795b2b2b8740c51afcc84f6c2c29715b0e04c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855074"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 Recupera un tipo di simbolo specificato che contiene o è più vicino a un indirizzo virtuale (VA) e un offset specificati.
@@ -25,7 +25,7 @@ Recupera un tipo di simbolo specificato che contiene o è più vicino a un indir
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT findSymbolByVAEx ( 
+HRESULT findSymbolByVAEx ( 
    ULONGLONG    va,
    SymTagEnum   symtag,
    IDiaSymbol** ppSymbol,

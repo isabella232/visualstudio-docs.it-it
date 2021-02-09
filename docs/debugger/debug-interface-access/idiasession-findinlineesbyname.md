@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 9860336d-f703-4ecb-bfc4-3f5beb175a76
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb35b9c61ddf347ee85553f69536d3757138ebe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76995b9c595e56a86945637a19022837e197294e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855186"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline che corrispondono a un nome specificato.
@@ -23,7 +23,7 @@ Recupera un'enumerazione che consente a un client di scorrere le informazioni su
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT findInlineesByName ( 
+HRESULT findInlineesByName ( 
    LPCOLESTR             name,
    DWORD                 option,
    IDiaEnumLineNumbers** ppResult
@@ -46,7 +46,7 @@ out Restituisce un oggetto [IDiaEnumLineNumbers](../../debugger/debug-interface-
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

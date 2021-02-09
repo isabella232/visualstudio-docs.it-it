@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd703c64-9ff8-4654-8493-8cde9309cb22
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d2de1dab8fda2deacf43d9c3072d0e6fe0efa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4168ab7ba3351dc8abe5f9c781fccea881fb7df0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854353"
 ---
 # <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Recupera un flag che indica se il modulo è stato compilato con l'opzione del compilatore [/Z7,/Zi,/Zi (formato informazioni di debug)](/cpp/build/reference/z7-zi-zi-debug-information-format) .
@@ -25,7 +25,7 @@ Recupera un flag che indica se il modulo è stato compilato con l'opzione del co
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_editAndContinueEnabled ( 
+HRESULT get_editAndContinueEnabled ( 
    BOOL* pRetVal
 );
 ```
@@ -48,6 +48,6 @@ out Restituisce `TRUE` se la modifica e la continuazione sono state abilitate in
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [/Z7,/Zi,/ZI (formato informazioni di debug)](/cpp/build/reference/z7-zi-zi-debug-information-format)

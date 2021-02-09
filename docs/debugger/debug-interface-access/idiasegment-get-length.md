@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d92e394-649b-49f2-bce7-12dd9d666d85
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d878e831e18149df63243abd7c6a4ceee051d550
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a887ddad0b22cd1ccc478ab7caed1ed22c25f5d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855312"
 ---
 # <a name="idiasegmentget_length"></a>IDiaSegment::get_length
 Recupera il numero di byte nel segmento.
@@ -25,7 +25,7 @@ Recupera il numero di byte nel segmento.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_ length ( 
+HRESULT get_ length ( 
    DWORD* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce il numero di byte nel segmento.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

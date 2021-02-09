@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: bb70e408-eed1-4c9c-b5b1-44323125f48b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de373985230524dfe12703545a4690090ffce8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb539e6897cfa058d019b2aff5df598792cf6191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855207"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'intervallo di indirizzi specificato.
@@ -23,7 +23,7 @@ Recupera un'enumerazione che consente a un client di scorrere le informazioni su
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT findInlineeLinesByAddr ( 
+HRESULT findInlineeLinesByAddr ( 
    IDiaSymbol*           parent,   DWORD                 isect,   DWORD                 offset,   DWORD                 length,
    IDiaEnumLineNumbers** ppResult
 );
@@ -53,7 +53,7 @@ out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri d
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

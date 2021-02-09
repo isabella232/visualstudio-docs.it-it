@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c76cf265-dea0-4159-883f-32b50bbef044
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7447b11008af87afe192abe935e8ea2c53ef7445
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8211c1fc7dfc87b16f89c1f6dd181e92ec68f36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854850"
 ---
 # <a name="idiastackframeget_systemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 Recupera un flag che indica se la gestione delle eccezioni di sistema è attiva.
@@ -25,7 +25,7 @@ Recupera un flag che indica se la gestione delle eccezioni di sistema è attiva.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_systemExceptionHandling ( 
+HRESULT get_systemExceptionHandling ( 
    BOOL* pRetVal
 );
 ```
@@ -38,11 +38,11 @@ out Restituisce `TRUE` se la gestione delle eccezioni di sistema è attiva per q
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La gestione delle eccezioni di sistema è nota anche come gestione strutturata delle eccezioni. Si tratta di una situazione analoga alla gestione delle eccezioni C++.
 
  Per determinare se la gestione delle eccezioni C++ è attiva, chiamare il metodo [IDiaStackFrame:: get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)

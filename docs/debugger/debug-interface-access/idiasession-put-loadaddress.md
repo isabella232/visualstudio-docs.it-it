@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 807346ef5a34c0b175257fe2099dc25e8de692f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3642c17f342f824ea920fcf4adf0e11f5ef93215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855032"
 ---
 # <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
 Imposta l'indirizzo di caricamento per il file eseguibile che corrisponde ai simboli nell'archivio simboli.
@@ -25,7 +25,7 @@ Imposta l'indirizzo di caricamento per il file eseguibile che corrisponde ai sim
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT put_loadAddress ( 
+HRESULT put_loadAddress ( 
    ULONGLONG NewVal
 );
 ```
@@ -35,11 +35,11 @@ HRESULT put_loadAddress ( 
 
 in Indirizzo di caricamento per il file eseguibile.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Le proprietà dell'indirizzo virtuale del simbolo (VA) vengono calcolate usando il valore di questo metodo. Gli indirizzi virtuali non vengono calcolati se questa proprietà non è impostata su un valore diverso da zero.
 
 > [!NOTE]
 > È necessario chiamare questo metodo quando si ottiene l'oggetto [IDiaSession](../../debugger/debug-interface-access/idiasession.md) e prima di iniziare a usare l'oggetto se è necessario usare qualsiasi proprietà virtuale nei simboli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f6d6ac2f-6d96-4f88-962b-29c0a66890b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 515ef7571192271b5458d36257120d6eef2fe02f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ade59bbe5c89a9fa88c49dc0ef3d648c45030f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854388"
 ---
 # <a name="idiasymbolget_count"></a>IDiaSymbol::get_count
 Recupera il numero di elementi in un elenco o in una matrice.
@@ -25,7 +25,7 @@ Recupera il numero di elementi in un elenco o in una matrice.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_count ( 
+HRESULT get_count ( 
    DWORD* pRetVal
 );
 ```
@@ -48,5 +48,5 @@ out Restituisce il numero di elementi in un elenco o in una matrice.
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

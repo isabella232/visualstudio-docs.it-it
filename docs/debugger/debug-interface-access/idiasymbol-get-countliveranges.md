@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 55f79e1a-d4c2-42cd-ab37-d8253b20e34c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 89a6198a73adc5a9f4afec1f3b40302263660a29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03db9af960ac22c7a1ed869fbdfa4ddfebc377c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854381"
 ---
 # <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
 Recupera il numero di intervalli di indirizzi validi associati al simbolo locale.
@@ -25,7 +25,7 @@ Recupera il numero di intervalli di indirizzi validi associati al simbolo locale
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_countLiveRanges ( 
+HRESULT get_countLiveRanges ( 
    DWORD* count
 );
 ```
@@ -45,5 +45,5 @@ out Restituisce il numero di intervalli di indirizzi.
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
