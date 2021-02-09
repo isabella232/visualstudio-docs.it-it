@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b00eb3e410c7fd3d10d2aef7fcfbf637ea04e41a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204644"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839573"
 ---
 # <a name="list-of-available-services"></a>Elenco di servizi disponibili
 
@@ -160,6 +160,6 @@ Usare i GUID del servizio elencati di seguito o ottenuti da un'altra origine (ad
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Sì | Sì | Consente a un VSPackage di ottenere la cornice della finestra in cui potrebbe trovarsi il pacchetto o una parte del pacchetto. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Sì | Sì | Fornisce l'accesso ai file di documentazione in formato XML associati a un file di metadati specifico. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Uso e offerta di servizi](../../extensibility/using-and-providing-services.md)

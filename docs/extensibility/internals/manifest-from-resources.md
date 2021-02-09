@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839428"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Lo strumento Manifest from Resources è un'applicazione console che accetta un elenco di risorse immagine (file con estensione png o XAML) e genera un file con estensione imagemanifest che consente di usare tali immagini con il servizio immagini di Visual Studio. Inoltre, questo strumento può essere utilizzato per aggiungere immagini a un. imagemanifest esistente. Questo strumento è utile per aggiungere il supporto di valori DPI e per le immagini a un'estensione di Visual Studio. Il file. imagemanifest generato deve essere incluso in e distribuito come parte di un'estensione di Visual Studio (VSIX).
