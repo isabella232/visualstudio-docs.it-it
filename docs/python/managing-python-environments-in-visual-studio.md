@@ -5,16 +5,16 @@ ms.date: 08/06/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923752"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -262,7 +262,7 @@ Per correggere un ambiente che si vuole mantenere, provare prima a usare il proc
 Per correggere un ambiente che non dispone di un'opzione di riparazione o per rimuovere un ambiente non valido, usare la procedura seguente per modificare direttamente il Registro di sistema. Visual Studio aggiorna automaticamente la finestra **ambienti Python** quando si apportano modifiche al registro di sistema.
 
 1. Eseguire *regedit.exe*.
-1. Passare a **HKEY_LOCAL_MACHINE \software\python** o **HKEY_CURRENT_USER \software\python**. Per IronPython, cercare invece **IronPython**.
+1. Passare a **HKEY_LOCAL_MACHINE\SOFTWARE\Python** o **HKEY_CURRENT_USER\SOFTWARE\Python**. Per IronPython, cercare invece **IronPython**.
 1. Espandere il nodo che corrisponde alla distribuzione, ad esempio **Python Core** per CPython o **ContinuumAnalytics** per Anaconda. Per IronPython, espandere il nodo del numero di versione.
 1. Controllare i valori nel nodo **InstallPath**:
 
@@ -270,9 +270,9 @@ Per correggere un ambiente che non dispone di un'opzione di riparazione o per ri
 
     - Se l'ambiente è ancora presente nel computer, modificare il valore di **ExecutablePath** nella posizione corretta. Correggere anche i valori **(Predefinito)** e **WindowedExecutablePath** in base alle esigenze.
     - Se l'ambiente non è più presente nel computer e si vuole rimuoverlo dalla finestra **Ambienti Python**, eliminare il nodo padre di **InstallPath**, ad esempio **3.6** nell'immagine precedente.
-    - Impostazioni non valide in **HKEY_CURRENT_USER \software\python** sostituire le impostazioni nel **HKEY_LOCAL_MACHINE \software\python**
+    - Impostazioni non valide in **HKEY_CURRENT_USER\SOFTWARE\Python** sostituire le impostazioni in **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare interpreti Python](installing-python-interpreters.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)

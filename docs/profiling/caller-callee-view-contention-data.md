@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7f783a543bb0139213bb75d7af2d7bb1e516ca65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923850"
 ---
 # <a name="callercallee-view----contention-data"></a>Visualizzazione Chiamante/chiamato: dati sui conflitti
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui conflitti per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -50,7 +50,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui 
 |**Nome funzione radice**|Nome della funzione corrente. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione chiamante/chiamato](../profiling/caller-callee-view.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)

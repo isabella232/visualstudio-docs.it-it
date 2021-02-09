@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: da5817711c7131868c4bad22bbe93447119d19d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924517"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
 Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione DSL, insieme a qualsiasi codice del programma personalizzato che è possibile scrivere. La maggior parte del codice programma nella soluzione DSL viene generata da questo file.
@@ -134,7 +134,7 @@ Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione 
 
  Configurare la molteplicità di un ruolo digitando nel diagramma o modificando la `Multiplicity` proprietà nella finestra **Proprietà** . Nella tabella seguente vengono descritte le impostazioni per questa proprietà.
 
-|Tipo di molteplicità|Description|
+|Tipo di molteplicità|Descrizione|
 |-|-|
 |0.. * (da zero a molti)|Ogni istanza della classe di dominio può avere più istanze della relazione o nessuna istanza della relazione.|
 |0.. 1 (zero a uno)|Ogni istanza della classe di dominio non può avere più di un'istanza della relazione o nessuna istanza della relazione.|

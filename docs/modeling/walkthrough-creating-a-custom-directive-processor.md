@@ -9,18 +9,18 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 718ca7b5abf2a7730470475caf2cdf5c200b23b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924098"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
 
@@ -656,7 +656,7 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      La chiave del Registro di sistema deve contenere i valori seguenti:
 
-   | Nome | Tipo | Dati |
+   | Nome | Tipo | Data |
    |-|-|-|
    | Valore predefinito. | REG_SZ | (valore non impostato) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -664,7 +664,7 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      Se si è inserito l'assembly nella GAC, i valori appariranno come indicato di seguito:
 
-   | Nome | Tipo | Dati |
+   | Nome | Tipo | Data |
    |-|-|-|
    | Valore predefinito. | REG_SZ | (valore non impostato) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |

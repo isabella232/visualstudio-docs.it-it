@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 157e8b4b4d7a00845fb76e0105414879cb1f472d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924854"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gestire le associazioni di file affiancati
 
@@ -87,7 +87,7 @@ La disinstallazione di un pacchetto VSPackage che scrive le voci del registro di
 
 - Specificare una pagina delle opzioni di configurazione o una finestra di dialogo che consente agli utenti di scegliere le associazioni di file e di recuperare le associazioni perse. Indicare agli utenti di eseguirlo dopo la disinstallazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Registrare le estensioni di file per le distribuzioni side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Registrare i verbi per le estensioni dei nomi di file](../extensibility/registering-verbs-for-file-name-extensions.md)

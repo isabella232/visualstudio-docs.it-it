@@ -21,13 +21,13 @@ description: Informazioni su come installare la copia gratuita di Dotfuscator Co
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: befa47e5718d3d2f5d492c49e173b22fc63310e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+manager: jmartens
+ms.openlocfilehash: 9f4ca634aa226437b6d8790837c9f95f778a00c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924771"
 ---
 # <a name="install-dotfuscator-community"></a>Installare Dotfuscator Community
 
@@ -64,7 +64,7 @@ Queste istruzioni spiegano come installarlo.
 1. Nella barra di ricerca dell'**Avvio veloce** (CTRL + Q) digitare `dotfuscator`. <br/> <br/> ![Avvio veloce](media/install_from_vs_12.png) <br/> <br/>
 
 2. Nei risultati visualizzati nell'Avvio veloce, sotto l'intestazione *Installa*, selezionare **PreEmptive Protection - Dotfuscator (Individual Component)**.
-   * Se invece si visualizza, sotto l' *Menus* intestazione dei menu **Tools-preemptive Protection-DOTFUSCATOR**, Dotfuscator CE è già installato. Selezionare tale opzione per [iniziare][get-started].
+   * Se invece si visualizza, sotto l'  intestazione dei menu **Tools-preemptive Protection-DOTFUSCATOR**, Dotfuscator CE è già installato. Selezionare tale opzione per [iniziare][get-started].
 
 3. Verrà visualizzata la finestra del programma di installazione di Visual Studio, preconfigurata per installare Dotfuscator CE.
    > [!NOTE]
@@ -103,7 +103,7 @@ Durante l'esecuzione, verranno visualizzate le opzioni di installazione per l'ed
 
 Al termine dell'installazione, è possibile iniziare a usare Dotfuscator Community. Per informazioni dettagliate, vedere la [pagina introduttiva della guida dell'utente completa di Dotfuscator Community][get-started].
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Questo argomento nella guida dell'utente completa di Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/)
 

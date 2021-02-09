@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924114"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
 Quando si modificano o si aggiungono modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile che vengano generati errori quando il motore trasforma il modello nel codice sorgente o quando compila il codice generato. Nella procedura dettagliata riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.
@@ -22,7 +22,7 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 > [!NOTE]
 > Per ulteriori informazioni sui modelli di testo in generale, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). Per ulteriori informazioni sul debug di modelli di testo, vedere [procedura dettagliata: debug di un modello di testo](debugging-a-t4-text-template.md).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione Domain-Specific Language
+## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione di Domain-Specific Language
  In questa procedura viene creata una soluzione di linguaggio specifico di dominio con le caratteristiche seguenti:
 
 - Nome: DebuggingTestLanguage
@@ -33,14 +33,14 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
 - Nome della società: fabrikam
 
-  Per altre informazioni sulla creazione di una soluzione di linguaggio specifico di dominio, vedere [procedura: creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Per altre informazioni sulla creazione di una soluzione di linguaggio specifico di dominio, vedere [procedura: creare una soluzione di linguaggio Domain-Specific](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Creazione di un modello di testo
  Aggiungere un modello di testo alla soluzione.
 
 #### <a name="to-create-a-text-template"></a>Per creare un modello di testo
 
-1. Compilare la soluzione e iniziare a eseguirla nel debugger. Scegliere **Ricompila soluzione**dal menu **Compila** , quindi scegliere **Avvia debug**dal menu **debug** . Una nuova istanza di Visual Studio apre il progetto di debug.
+1. Compilare la soluzione e iniziare a eseguirla nel debugger. Scegliere **Ricompila soluzione** dal menu **Compila** , quindi scegliere **Avvia debug** dal menu **debug** . Una nuova istanza di Visual Studio apre il progetto di debug.
 
 2. Aggiungere un file di testo denominato `DebugTest.tt` al progetto di debug.
 
@@ -89,7 +89,7 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
     #>
     ```
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
 
      Nella finestra **Elenco errori** viene visualizzato questo errore:
 
@@ -111,7 +111,7 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
+5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
 
      A questo punto il sistema trasforma il modello di testo e genera il file di output corrispondente. Non vengono visualizzati errori nella finestra **Elenco errori** .
 
@@ -153,7 +153,7 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
     #>
     ```
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
 
      Viene visualizzata la finestra **Elenco errori** e viene visualizzato uno degli errori seguenti:
 
@@ -208,6 +208,6 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
     #>
     ```
 
-5. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
+5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
 
      A questo punto il sistema trasforma il modello di testo e genera il file di output corrispondente. Non vengono visualizzati errori nella finestra **Elenco errori** .

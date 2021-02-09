@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a587ca1395aebaf4af71d04b2f1454ec2702f0
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: c837046380550f5a0a73aaba888cbf26be0c1586
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923848"
 ---
 # <a name="assignculture-task"></a>AssignCulture (attività)
 
@@ -83,7 +83,7 @@ La tabella seguente descrive il valore degli elementi di output dopo l'esecuzion
 |`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (senza metadati aggiuntivi)|
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Impostazioni cultura="fr")<br /><br /> *MyResource2.XX.resx* (senza metadati aggiuntivi)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

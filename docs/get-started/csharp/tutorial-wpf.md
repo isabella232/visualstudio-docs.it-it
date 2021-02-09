@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924879"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: creare un'applicazione semplice con C\#
 
@@ -106,7 +106,7 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. A tale scopo, sce
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
-Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *MainWindow. XAML* e scegliere **Rinomina**. Rinominare il file in *Greetings. XAML*.
+Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *MainWindow. XAML* e scegliere **Rinomina**. Rinominare il file in *Greetings. XAML*.
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
 
@@ -294,11 +294,11 @@ Chiudere la finestra dell'applicazione per arrestare il debug.
 
 ### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
 
-Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **debug**imposta  >  **/Rimuovi**punto di interruzione facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera che si verifichi l'interruzione oppure premendo **F9**.
+Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **debug** imposta  >  **/Rimuovi** punto di interruzione facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera che si verifichi l'interruzione oppure premendo **F9**.
 
 #### <a name="add-breakpoints"></a>Aggiungere punti di interruzione
 
-1. Aprire *Greetings.XAML.cs*e selezionare la riga seguente: `MessageBox.Show("Hello.")`
+1. Aprire *Greetings.XAML.cs* e selezionare la riga seguente: `MessageBox.Show("Hello.")`
 
 1. Aggiungere un punto di interruzione dal menu selezionando **Debug**, quindi **Imposta/Rimuovi punto di interruzione**.
 
@@ -314,7 +314,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
     ![Punto di interruzione nel debugger](media/exploreide-debugbreakpoint.png "Screenshot del punto di interruzione nel debugger")
 
-1. Nella barra dei menu scegliere **debug**Esci  >  **da istruzione/uscita**.
+1. Nella barra dei menu scegliere **debug** Esci  >  **da istruzione/uscita**.
 
      L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".
 
@@ -328,7 +328,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 1. Chiudere la finestra dell'applicazione per arrestare il debug.
 
-1. Sulla barra dei menu scegliere **debug**  >  **Disabilita tutti i**punti di interruzione.
+1. Sulla barra dei menu scegliere **debug**  >  **Disabilita tutti i** punti di interruzione.
 
 ### <a name="view-a-representation-of-the-ui-elements"></a>Visualizzazione di una rappresentazione degli elementi dell'interfaccia utente
 
@@ -355,6 +355,6 @@ L'esercitazione è stata completata. Per altre informazioni, continuare con le e
 > [!div class="nextstepaction"]
 > [Continuare con altre esercitazioni su WPF](/dotnet/framework/wpf/getting-started/wpf-walkthroughs/)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Suggerimenti per la produttività](../../ide/productivity-features.md)

@@ -16,13 +16,13 @@ description: Informazioni su come proteggere le applicazioni .NET con la copia g
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 7a8602dc99ba63e6cba5035636af0fbd47263e58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
-ms.translationtype: HT
+manager: jmartens
+ms.openlocfilehash: ce0f7cb1b5f970da7b6e47797dd4c59012a46892
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924783"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 

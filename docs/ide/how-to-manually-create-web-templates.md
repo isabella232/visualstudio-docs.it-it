@@ -11,13 +11,13 @@ helpviewer_keywords:
 - project templates [Visual Studio], Web
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 8546b1364248b5c419a32e8f8ed40abf0b69fb5a
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 430faba462075335bbc8a3aa6e89f1c7f348ffb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924638"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Procedura: Creare manualmente modelli Web
 
@@ -83,7 +83,7 @@ Nell'esempio seguente viene illustrato un file con estensione *vstemplate* di ba
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Informazioni di riferimento sullo schema dei modelli di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
