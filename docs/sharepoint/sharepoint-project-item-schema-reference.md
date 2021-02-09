@@ -22,15 +22,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892281"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Riferimento allo schema degli elementi di progetto SharePoint
   In Visual Studio viene utilizzato lo schema degli elementi di progetto SharePoint per convalidare il contenuto dei file con *estensione spdata* . Un file con *estensione spdata* specifica il contenuto e il comportamento di un elemento del progetto SharePoint. Per ulteriori informazioni sul contenuto degli elementi del progetto SharePoint, vedere [creare modelli di elementi e modelli di progetto per gli elementi del progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -53,5 +53,5 @@ ms.locfileid: "95442547"
 |[SafeControl](../sharepoint/safecontrol-element.md)|Rappresenta una Web part o un controllo ASPX designato come sicuro per qualsiasi utente per accedere a qualsiasi pagina ASPX nel sito di SharePoint.|
 |[SafeControls](../sharepoint/safecontrols-element.md)|Rappresenta una raccolta di controlli ASPX e Web part designati come sicuri per qualsiasi utente per accedere a qualsiasi pagina ASPX nel sito di SharePoint.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare modelli di elementi e modelli di progetto per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

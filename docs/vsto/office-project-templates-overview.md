@@ -29,15 +29,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: af01bf165c823ce34957e4a9eba38ef90c5344a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892034"
 ---
 # <a name="office-project-templates-overview"></a>Panoramica sui modelli di progetto di Office
   Gli strumenti di sviluppo di applicazioni per Microsoft Office in Visual Studio includono modelli di progetto per la creazione dei seguenti tipi di soluzioni Office:
@@ -168,7 +168,7 @@ ms.locfileid: "97528080"
 ## <a name="excel-add-ins-xla-files"></a>Componenti aggiuntivi di Excel (file xla)
  Non è disponibile alcun progetto di Office per la creazione di un componente aggiuntivo VSTO di Excel (file *xla* ). È possibile salvare una cartella di lavoro come file xla, anche se questa operazione non è supportata né consigliata. Se si salva una cartella di lavoro che dispone di estensioni di codice gestito come file di **Microsoft Office Excel Add-In ( \* xla)** , è possibile selezionarlo nella finestra di dialogo **componenti** aggiuntivi per applicarla a un'altra cartella di lavoro. In alcuni casi, il codice verrà eseguito nella cartella di lavoro di destinazione dopo l'applicazione del componente aggiuntivo VSTO, ma tale uso della soluzione Office non è supportato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

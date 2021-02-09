@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 3c92bada0777c01cd8999b30597999e55f113a2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891553"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Finestra di output, Debug, finestra di dialogo Opzioni
 È possibile specificare quali tipi di informazioni di debug vengono visualizzati nella finestra **Output**. Per visualizzare queste opzioni aprire il menu **Strumenti**, fare clic su **Opzioni**, espandere il nodo **Debug** e fare clic su **Finestra di output**.
@@ -37,6 +37,6 @@ Per altre informazioni, vedere [procedura: visualizzare le informazioni di tracc
 
 Se è necessario ripristinare le impostazioni predefinite, è possibile usare **gli strumenti**  >  **Importa/Esporta impostazioni**  >  **Reimposta tutte le impostazioni**. Se si desidera reimpostare solo un subset di impostazioni, salvare le impostazioni nell' **importazione/esportazione guidata delle impostazioni** prima di apportare le modifiche che si desidera testare, quindi importare le impostazioni salvate in un secondo momento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug, finestra di dialogo Opzioni](../debugger/debugging-options-dialog-box.md)
 - [Finestra di output](../ide/reference/output-window.md)

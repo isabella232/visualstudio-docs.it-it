@@ -22,15 +22,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f3ef56ba868700699eaaeb8ec88291fd6f8d8d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95969927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892307"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Risolvere i problemi di distribuzione e creazione di pacchetti di SharePoint
   In questo argomento vengono analizzati vari problemi che possono verificarsi durante la creazione di pacchetti e la distribuzione di soluzioni SharePoint.
@@ -70,9 +70,9 @@ ms.locfileid: "95969927"
  La visualizzazione della pagina di SharePoint richiede molto tempo quando si distribuisce una Web part visiva nella cartella Bin di [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] o [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Se si modificano i file di una directory di livello superiore di [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)], ad esempio la directory Bin, viene ricompilata l'intera applicazione Web. Questo può determinare fino a 25 secondi di ritardo nel rendering della pagina di SharePoint.
 
 ### <a name="error-message"></a>Messaggio di errore
- Nessuno.
+ Nessuna.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Per risolvere il problema, effettuare i passaggi seguenti:
 
 1. Installare l'aggiornamento KB967535 come illustrato nell'articolo relativo alla correzione dell'articolo supporto tecnico Microsoft [: è disponibile un hotfix per risolvere due problemi in ASP.NET in IIS 7,0 per Windows Vista e Windows Server 2008](https://support.microsoft.com/help/967535).
@@ -89,7 +89,7 @@ ms.locfileid: "95969927"
 ### <a name="error-message"></a>Messaggio di errore
  Si è verificato un errore nel passaggio di distribuzione 'Aggiungi Soluzione': Impossibile estrarre il file cab nella soluzione.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Per risolvere il problema, rimuovere le parentesi nei nomi degli elementi di progetto SharePoint.
 
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Viene visualizzato un errore durante la distribuzione di una Web part visiva in un sito in un'altra applicazione Web
@@ -98,7 +98,7 @@ ms.locfileid: "95969927"
 ### <a name="error-message"></a>Messaggio di errore
  Si è verificato un errore nel passaggio di distribuzione 'Aggiungi Soluzione': Una funzionalità con ID [#] è già stata installata in questa farm. Utilizzare l'attributo force per installare nuovamente in modo esplicito la funzionalità.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Questo errore si verifica a causa della modalità con cui le funzionalità della Web part visiva vengono ritratte in SharePoint. Per distribuire correttamente la Web part visiva, distribuire di nuovo la soluzione scegliendo il tasto **F5** .
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Avviso visualizzato durante la distribuzione di controlli utente annidati
@@ -107,7 +107,7 @@ ms.locfileid: "95969927"
 ### <a name="error-message"></a>Messaggio di errore
  Avviso 1 l'elemento ' [*nome controllo*]' non è un elemento noto. Il problema potrebbe essere dovuto a un errore di compilazione del sito Web oppure il file web.config risulta mancante.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Se il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sistema del progetto non è a conoscenza di un controllo utente annidato, non può fornire IntelliSense e genera l'avviso. Il sistema del progetto non riconosce un controllo utente annidato se il progetto non viene compilato e la finestra di progettazione non viene chiusa né riaperta oppure se l'opzione di ritrazione automatica è abilitata, causando la ritrazione del controllo utente dall'hive SharePoint dopo il debug.
 
  Per rimuovere questo avviso, compilare il progetto, quindi chiudere e riaprire la finestra di progettazione oppure disabilitare l'opzione di ritrazione automatica per il progetto. A tale scopo, deselezionare la casella di controllo **ritrazione automatica dopo il debug** nella scheda **SharePoint** della finestra di dialogo Proprietà progetto.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 86aea9800d0eaad4c36d5598e52dd7a35f3a7534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892177"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Usare i moduli per includere i file nella soluzione
   In alcuni casi potrebbe essere necessario distribuire i file nel server SharePoint indipendentemente dal tipo di file, ad esempio le nuove pagine master. A tale scopo, è possibile usare i *moduli* (da non confondere con i [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli di codice). I moduli sono contenitori per i file in una soluzione SharePoint. Quando la soluzione viene distribuita, i file del modulo vengono copiati nelle cartelle specificate sul server SharePoint.
@@ -58,7 +58,7 @@ ms.locfileid: "95442521"
 
  Ogni file che si desidera distribuire richiede una `<File>` voce di elemento separata in *Elements.xml*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: includere file mediante un modulo](../sharepoint/how-to-include-files-by-using-a-module.md)
 - [procedura: effettuare il provisioning di un file](/previous-versions/office/developer/sharepoint-2010/ms441170(v=office.14))
 - [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

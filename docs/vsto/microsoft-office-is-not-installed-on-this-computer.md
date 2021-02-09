@@ -11,15 +11,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f09c7c454836c0eb957b9ecc459b75b7fba868db
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc04cf3d6217792b105da7df3215d65116fd47f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892047"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office non è installato nel computer
   Visual Studio non riesce a trovare l'applicazione Microsoft Office che corrisponde al tipo di progetto. Se si sviluppa un progetto di componente aggiuntivo VSTO, significa che non è possibile eseguire il debug o l'esecuzione del progetto. Se si sta provando a creare un progetto a livello di documento, non è possibile creare il progetto.
@@ -28,6 +28,6 @@ ms.locfileid: "97523500"
 
 1. Installare l'applicazione Microsoft Office associata al tipo di progetto, inclusi gli assembly di interoperabilità primari. Per ulteriori informazioni sulle versioni supportate di Microsoft Office, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Procedura: configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709daa641e898f9d75f4bab340c8e5fd00d28a88
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892593"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli delle applicazioni per Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interazioni finestra
@@ -38,7 +38,7 @@ Valutare con attenzione il tipo di contenitore necessario. Nella tabella seguent
 | **Modello di commit** | *Commit ritardato*<br /><br /> Per salvare i dati in un documento, l'utente deve eseguire il comando **&gt; Salva file**, **Salva con nome** o **Salva tutto** . Una finestra del documento ha il concetto di dati all'interno del quale è stata "sporcata", quindi è stato eseguito il commit in uno dei comandi Save. Quando si chiude una finestra del documento, tutti i contenuti vengono salvati su disco o persi. | *Commit immediato*<br /><br /> Nessun modello di salvataggio. Per le finestre degli strumenti di controllo che facilitano la modifica di un file, il file deve essere aperto nell'editor o nella finestra di progettazione attiva e l'editor o la finestra di progettazione è proprietario del salvataggio. | *Commit posticipato o immediato*<br /><br /> In genere, una finestra di dialogo non modale di grandi dimensioni richiede un'azione per eseguire il commit delle modifiche e consente un'operazione di annullamento, che esegue il rollback delle modifiche apportate all'interno della sessione di dialogo.  In questo modo si distingue una finestra di dialogo non modale da una finestra degli strumenti in cui le finestre degli strumenti hanno sempre un modello di commit immediato. |
 | **Visibilità** | *Apri/crea (file) e Chiudi*<br /><br /> L'apertura di una finestra di documento viene eseguita tramite l'apertura di un documento esistente o l'utilizzo di un modello per creare un nuovo documento. Non è presente alcun comando "Apri \<specific editor> ". | *Nascondi e Mostra*<br /><br /> Le finestre degli strumenti a istanza singola possono essere nascoste o visualizzate. Il contenuto e gli Stati nella finestra degli strumenti vengono mantenuti in visualizzazione o nascosti. Le finestre degli strumenti a più istanze possono essere chiuse e nascoste. Quando viene chiusa una finestra degli strumenti a più istanze, il contenuto e lo stato all'interno della finestra degli strumenti vengono eliminati. | *Avviato da un comando*<br /><br /> Le finestre di dialogo vengono avviate da un comando basato su attività. |
 | **Istanze** | *Istanze a istanze diverse*<br /><br /> Molti editor possono essere aperti contemporaneamente e modificare file diversi, mentre alcuni editor consentono anche di aprire lo stesso file in più di un editor (usando il comando **finestra &gt; nuova finestra** ).<br /><br /> Un singolo editor può modificare uno o più file allo stesso tempo (Progettazione progetti). | *A istanza singola o a istanze diverse*<br /><br /> I contenuti cambiano per riflettere il contesto (come nel Visualizzatore proprietà) o lo stato attivo/contesto push ad altre finestre (Elenco attività, Esplora soluzioni).<br /><br /> Le finestre degli strumenti a istanza singola e a istanza singola devono essere associate alla finestra del documento attivo, a meno che non esista un motivo valido per non farlo. | *Istanza singola* |
-| **Esempi** | Editor di **testo**, ad esempio l'editor di codice<br /><br /> **Aree di progettazione**, ad esempio una finestra di progettazione di form o una superficie di modellazione<br /><br /> **Layout di controllo simili a finestre di dialogo** come la finestra di progettazione del manifesto | Il **Esplora soluzioni** fornisce una soluzione e i progetti contenuti nella soluzione<br /><br /> Il **Esplora server** fornisce una visualizzazione gerarchica dei server e delle connessioni dati che l'utente sceglie di aprire nella finestra di. Aprendo un oggetto dalla gerarchia del database, ad esempio una query, viene aperta una finestra del documento che consente all'utente di modificare la query.<br /><br /> Il **Visualizzatore proprietà** Visualizza le proprietà dell'oggetto selezionato in una finestra del documento o in un'altra finestra degli strumenti. Le proprietà vengono presentate in una visualizzazione griglia gerarchica o in controlli di tipo finestra di dialogo complessi e consentono all'utente di impostare i valori per tali proprietà. | |
+| **esempi** | Editor di **testo**, ad esempio l'editor di codice<br /><br /> **Aree di progettazione**, ad esempio una finestra di progettazione di form o una superficie di modellazione<br /><br /> **Layout di controllo simili a finestre di dialogo** come la finestra di progettazione del manifesto | Il **Esplora soluzioni** fornisce una soluzione e i progetti contenuti nella soluzione<br /><br /> Il **Esplora server** fornisce una visualizzazione gerarchica dei server e delle connessioni dati che l'utente sceglie di aprire nella finestra di. Aprendo un oggetto dalla gerarchia del database, ad esempio una query, viene aperta una finestra del documento che consente all'utente di modificare la query.<br /><br /> Il **Visualizzatore proprietà** Visualizza le proprietà dell'oggetto selezionato in una finestra del documento o in un'altra finestra degli strumenti. Le proprietà vengono presentate in una visualizzazione griglia gerarchica o in controlli di tipo finestra di dialogo complessi e consentono all'utente di impostare i valori per tali proprietà. | |
 
 ## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Finestre degli strumenti
 
@@ -415,7 +415,7 @@ Evitare di scegliere un'azione distruttiva in modo permanente per il comando pre
 #### <a name="access-keys"></a>Chiavi di accesso
 Non usare chiavi di accesso per i pulsanti **OK**, **Annulla** o **Guida** . Per impostazione predefinita, questi pulsanti vengono mappati ai tasti di scelta rapida:
 
-| Nome pulsante | Tasto di scelta rapida |
+| Nome pulsante | Tasti di scelta rapida |
 | --- | --- |
 | OK | Immettere |
 | Annulla | ESC |

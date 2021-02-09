@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d04857f0e61e5d9f293d73902cd090f718c65cd0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892216"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Finestra di dialogo selezione URL (sviluppo per SharePoint in Visual Studio)
   Nella finestra di dialogo di selezione URL è possibile scegliere i file come file di pagina master o file di immagine posizionati nel progetto o nel server locale in cui è in esecuzione SharePoint.
@@ -54,7 +54,7 @@ ms.locfileid: "95442534"
 
   **Tipi di file** Consente di scegliere da un elenco di file appropriati per l'attività che si sta eseguendo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di pagine applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Creazione di controlli riutilizzabili per Web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

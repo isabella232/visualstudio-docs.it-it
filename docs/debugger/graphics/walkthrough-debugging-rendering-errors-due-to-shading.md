@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 491a2c5ab0bcb923d9999bd55249150d33a650ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891865"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo
 In questa procedura dettagliata viene illustrato come utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostica della grafica per esaminare un oggetto colorato in modo non corretto a causa di un bug dello shader.
@@ -35,7 +35,7 @@ In questa procedura dettagliata viene illustrato come utilizzare [!INCLUDE[vsprv
 
  ![Rendering dell'oggetto con colori non corretti.](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
 
-## <a name="investigation"></a>Ricerca della causa
+## <a name="investigation"></a>Analisi
  Utilizzando gli strumenti di diagnostica della grafica, è possibile caricare il documento del log di grafica per controllare i frame acquisiti durante il test.
 
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Per esaminare un frame in un log di grafica
@@ -94,7 +94,7 @@ In questa procedura dettagliata viene illustrato come utilizzare [!INCLUDE[vsprv
 output.color = float3(0.0f, 0.0f, 0.0f);
 ```
 
- to
+ in
 
 ```hlsl
 output.color = input.color;

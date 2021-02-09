@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de50e6fe997ce10266cbb51f2fd91c318ab2bd1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62905531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891605"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Scheda Messaggi, Finestra di dialogo Opzioni messaggio
 Utilizzare la scheda **messaggi** per selezionare i tipi di messaggi da elencare nella [visualizzazione messaggi](../debugger/messages-view.md)e per specificare i criteri di ricerca del messaggio. Per visualizzare la finestra di [dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **Registra messaggi** dal menu **Spy** .
 
- In genere, è innanzitutto necessario selezionare **gruppi di messaggi**e quindi ottimizzare la selezione selezionando i singoli **messaggi da visualizzare**. Il pulsante **All** seleziona tutti i tipi di messaggio e il pulsante **None** Cancella tutti i tipi.
+ In genere, è innanzitutto necessario selezionare **gruppi di messaggi** e quindi ottimizzare la selezione selezionando i singoli **messaggi da visualizzare**. Il pulsante **All** seleziona tutti i tipi di messaggio e il pulsante **None** Cancella tutti i tipi.
 
  Nella scheda **messaggi** sono disponibili le impostazioni seguenti:
 

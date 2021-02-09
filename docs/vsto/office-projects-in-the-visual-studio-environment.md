@@ -1,6 +1,6 @@
 ---
 title: Progetti di Office nell'ambiente Visual Studio
-description: Informazioni sul modo in cui i progetti Microsoft Office hanno un'esperienza di sviluppo simile ad altri tipi di progetti in Visual Studio, ad esempio Windows Forms progetti.
+description: Informazioni sul modo in cui i progetti Microsoft Office hanno un'esperienza di sviluppo simile ad altri tipi di progetti in Visual Studio, ad esempio Windows Form progetti.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -40,15 +40,15 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 88abd7294a96b4fe4989630753253b16f036ab7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525158"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892008"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Progetti di Office nell'ambiente Visual Studio
   L'esperienza di sviluppo relativa ai progetti di Microsoft Office è simile a quella per altri tipi di progetti in Visual Studio, ad esempio progetti Windows Form. Quando si crea o si apre un progetto di Office, gli elementi del progetto vengono visualizzati in **Esplora soluzioni**. Per i progetti a livello di documento, il documento (ossia il documento di Word o la cartella di lavoro di Excel) viene aperto in Visual Studio e funziona come una finestra di progettazione visiva.
@@ -120,7 +120,7 @@ ms.locfileid: "97525158"
 ## <a name="data-sources-window"></a>Finestra Origini dati
  È possibile usare la finestra **Origini dati** all'interno dei progetti di Office a livello di documento per trascinare un'origine dati nel documento e creare un controllo associato all'origine dati. Per altre informazioni, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Panoramica sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)

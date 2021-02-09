@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6b0e031e96d2543ae0bb109f243824125f431a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892294"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Risolvere i problemi relativi alle soluzioni SharePoint
   Quando si esegue il debug di soluzioni SharePoint tramite il debugger, potrebbero verificarsi i problemi o gli avvisi seguenti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Per altre informazioni, vedere [debug di soluzioni flusso di lavoro SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
@@ -49,7 +49,7 @@ ms.locfileid: "95970267"
 ### <a name="error-message"></a>Messaggio di errore
  Messaggio di errore "caratteri non validi".
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Per i nomi di progetti e di elementi di progetto di SharePoint, utilizzare solo i caratteri seguenti:
 
 - Caratteri ASCII alfanumerici
@@ -74,7 +74,7 @@ ms.locfileid: "95970267"
 ### <a name="error-message"></a>Messaggio di errore
  Messaggio di errore "caratteri non validi" in fase di creazione del pacchetto.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  L'ID per una definizione di campo deve essere un GUID racchiuso tra parentesi graffe, come illustrato nell'esempio seguente:
 
 ```xml
@@ -101,9 +101,9 @@ ms.locfileid: "95970267"
  Dopo aver creato e distribuito una definizione di sito utilizzando una versione non in lingua inglese di, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ovvero una versione con impostazioni locali diverse da [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 1033, la scheda **personalizzazioni di SharePoint** non viene visualizzata nella casella di **selezione del modello** e il nuovo modello di sito non viene visualizzato nella pagina **nuovo sito di SharePoint** .
 
 ### <a name="error-message"></a>Messaggio di errore
- Nessuno.
+ Nessuna.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Questo problema si verifica a causa di un valore non corretto nella proprietà **path** per il file di configurazione della definizione sito Webtemp, ad esempio *webtemp_SiteDefinitionProject1.xml*. Nella proprietà **path** per il file WebTemp, situato sotto il **percorso di distribuzione**, impostare 1033 sulle impostazioni locali appropriate [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Ad esempio, per usare le impostazioni locali giapponesi, modificare il valore in 1041. Per altre informazioni, vedere [ID delle impostazioni locali assegnati da Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Errore visualizzato quando un progetto flusso di lavoro viene distribuito in un sistema pulito
@@ -112,7 +112,7 @@ ms.locfileid: "95970267"
 ### <a name="error-message"></a>Messaggio di errore
  Impossibile trovare l'elenco di SharePoint: cronologia del flusso di lavoro.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Questo errore si verifica a causa di un elenco di cronologia del flusso di lavoro mancante. Poiché l'ambiente di sviluppo è un sistema pulito, non vengono distribuiti flussi di lavoro e l'elenco della cronologia del flusso di lavoro non esiste ancora. Per risolvere questo problema, riaprire la creazione guidata del flusso di lavoro, che determina la creazione dell'elenco cronologia del flusso di lavoro.
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>Per immettere nuovamente la creazione guidata flusso di lavoro
@@ -131,7 +131,7 @@ ms.locfileid: "95970267"
 
 - Il percorso del sito di SharePoint non è valido.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
 
 - Installare [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
@@ -141,9 +141,9 @@ ms.locfileid: "95970267"
  Quando si crea un progetto di ricevitore di eventi e si selezionano alcuni eventi Web, ad esempio "è in corso l'eliminazione di un sito", l'evento non si verifica mai.
 
 ### <a name="error-message"></a>Messaggio di errore
- Nessuno.
+ Nessuna.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Questo problema si verifica perché l'ambito di funzionalità deve essere "sito" per gestire gli eventi a livello di sito, ma l'ambito di funzionalità predefinito per i progetti di ricevitore di eventi è "Web". Gli eventi Web interessati sono:
 
 - È in corso l'eliminazione di un sito (webdeletion)
@@ -171,7 +171,7 @@ ms.locfileid: "95970267"
 
 - Il valore di IMetadataObject con nome ' \<*model name*> ' contiene un valore nel campo ' name ' duplicato...
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Per risolvere il problema, eliminare il modello manualmente, quindi distribuire nuovamente la soluzione.  È possibile eliminare il modello utilizzando uno degli strumenti seguenti:
 
 - Amministrazione centrale SharePoint 2010. Per ulteriori informazioni, vedere [Gestione modelli BDC](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#delete-a-bdc-model) sul sito Web Microsoft TechNet.
@@ -187,7 +187,7 @@ ms.locfileid: "95970267"
 
 - Errore del server nell'applicazione '/'.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
 
 ##### <a name="to-resolve-this-issue"></a>Per risolvere il problema
 
@@ -205,7 +205,7 @@ ms.locfileid: "95970267"
 ### <a name="error-message"></a>Messaggio di errore
  Si è verificato un errore durante il passaggio di distribuzione ' attiva funzionalità': il campo con ID [*GUID*] definito nella funzionalità [*GUID*] è stato trovato nella raccolta siti corrente o in un sito secondario.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Questo errore è il risultato di conflitti ID campo che si verificano perché il progetto di flusso di lavoro di importazione riutilizzabile in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non modifica gli ID dei campi del form attività. Se si distribuisce un flusso di lavoro importato nello stesso server che contiene il flusso di lavoro originale, si verificano conflitti di ID campo.
 
  Per risolvere questo problema, utilizzare la funzionalità Trova e Sostituisci per modificare il valore dell'attributo field ID in tutti i file del flusso di lavoro importati.
@@ -216,7 +216,7 @@ ms.locfileid: "95970267"
 ### <a name="error-message"></a>Messaggio di errore
  Errore di compilazione: si è verificato un errore nel passaggio di distribuzione ' attiva funzionalità': il file Template\Features \\ [*Importa**nome* della <em>funzionalità</em>del progetto] \Files\Lists \\ [<em>nome elenco</em>*precedente*] non esiste \Schema.xml.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Quando si importa un'istanza di elenco, viene aggiunto un attributo denominato CustomSchema al file di Elements.xml dell'istanza dell'elenco. Elements.xml include il percorso di un schema.xml personalizzato per l'istanza dell'elenco. Quando si rinomina l'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , il percorso di distribuzione per la schema.xml personalizzata viene modificato, ma il valore del percorso dell'attributo CustomSchema non viene aggiornato. Di conseguenza, l'istanza dell'elenco non riesce a trovare il file di *schema.xml* nel percorso precedente specificato dall'attributo CustomSchema quando la funzionalità è attivata.
 
  Per risolvere questo problema, aggiornare il percorso del percorso di distribuzione del file di *schema.xml* nell'attributo CustomSchema.
@@ -227,7 +227,7 @@ ms.locfileid: "95970267"
 ### <a name="error-message"></a>Messaggio di errore
  Il processo del server Web di cui è in corso il debug è stato terminato da Internet Information Services (IIS). Il problema può essere risolto configurando le impostazioni ping del pool di applicazioni in IIS. Per ulteriori informazioni, vedere la guida.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Per impostazione predefinita, il pool di applicazioni IIS attende 90 secondi prima che un'applicazione risponda prima di chiudere l'applicazione. Questo processo è noto come "ping" dell'applicazione. Per risolvere questo problema, è possibile aumentare il tempo di attesa o disabilitare completamente il ping dell'applicazione.
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>Per accedere alle impostazioni del pool di applicazioni IIS
@@ -256,7 +256,7 @@ ms.locfileid: "95970267"
 ### <a name="error-message"></a>Messaggio di errore
  Errore del server nell'applicazione '/'.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Questo problema si verifica perché dopo la chiusura di una sessione di debug di una soluzione SharePoint, la funzionalità di ritrazione automatica ritrae la soluzione. La ritrazione Elimina la definizione dell'elenco da SharePoint, ma non elimina l'istanza dell'elenco. La definizione dell'elenco sottostante è richiesta dall'istanza dell'elenco.
 
  Per risolvere questo problema, distribuire la soluzione dalla barra dei menu scegliendo **Compila**  >  **distribuzione**. Non eseguire il debug della soluzione scegliendo il tasto **F5** . Eliminare quindi l'istanza dell'elenco in SharePoint.
@@ -265,9 +265,9 @@ ms.locfileid: "95970267"
  Se si esporta una soluzione SharePoint, si importa la soluzione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e quindi si distribuisce la soluzione nello stesso sito da cui è stata esportata, la soluzione originale di SharePoint viene sostituita. Questo problema non si verifica se si distribuisce la soluzione in un server in cui non è attivata la soluzione originale.
 
 ### <a name="error-message"></a>Messaggio di errore
- Nessuno.
+ Nessuna.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Per evitare di sovrascrivere una soluzione nel sito da cui è stata esportata, modificare i GUID di SolutionID e gli ID funzionalità di tutte le funzionalità importate nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto.
 
 ## <a name="error-appears-when-debugging-starts"></a>Errore visualizzato all'avvio del debug
@@ -276,7 +276,7 @@ ms.locfileid: "95970267"
 ### <a name="error-message"></a>Messaggio di errore
  Non è stato possibile caricare il file di configurazione Web.config. Controllare il file per individuare eventuali elementi XML non validi e riprovare. Si è verificato l'errore seguente: la chiave specificata non è presente nel dizionario.
 
-### <a name="resolution"></a>Risoluzione
+### <a name="resolution"></a>Soluzione
  Per risolvere questo problema, verificare che il valore della proprietà URL sito del progetto SharePoint in Visual Studio corrisponda all'URL assegnato all'area predefinita per i mapping di accesso alternativo dell'applicazione Web. L'utilizzo di un'altra area, ad esempio Intranet, per l'URL non risolverà l'errore. L'URL del sito del progetto e l'URL nell'area predefinita devono corrispondere. Per accedere ai mapping di accesso alternativo, aprire l'utilità Amministrazione centrale SharePoint 2010, scegliere il collegamento **Gestione applicazioni** e quindi, in **applicazioni Web**, scegliere il collegamento **Configura mapping di accesso alternativo** . Per altre informazioni, vedere [creare zone per le applicazioni Web](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12)).
 
 ## <a name="see-also"></a>Vedi anche

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: b12aaade85964eb1c331bd96f2fbea522670bcc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892320"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Procedure dettagliate sullo sviluppo per SharePoint
   Nelle procedure dettagliate seguenti viene illustrato come sviluppare e distribuire soluzioni SharePoint utilizzando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .

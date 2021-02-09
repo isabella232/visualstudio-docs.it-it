@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: a8cd8c0b74dc06a72e7c20bd3af11fd91df07eb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891519"
 ---
 # <a name="process-search-dialog-box"></a>Finestra di dialogo Ricerca processi
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un processo specifico nella [visualizzazione processi](../debugger/processes-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su una finestra visualizzazione **processi** . Scegliere quindi **trova processo** dal menu **Cerca** .

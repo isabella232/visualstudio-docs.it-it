@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office primary interop assemblies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 190c5785be9d17ee0a25d16ad6342368b658f252
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2041c1d8b39f88f611cee09f17c498ea54130122
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892060"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -129,7 +129,7 @@ Quando ad esempio una soluzione che fa riferimento a un assembly di interoperabi
 
 Per altre informazioni, vedere [procedura: abilitare e disabilitare il reindirizzamento di associazione automatico](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Panoramica del modello a oggetti di Excel](../vsto/excel-object-model-overview.md)

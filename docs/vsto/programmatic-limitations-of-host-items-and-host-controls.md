@@ -30,15 +30,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 08205473636a04dbc742b6c09c99e9771094f61c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: fbc3258f3ea7e0b3cc93a2887dfff5a3bfefb19d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891891"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitazioni a livello di codice degli elementi e dei controlli host
   Ogni elemento host e controllo host viene progettato per comportarsi come un oggetto nativo corrispondente di Microsoft Office Word o Microsoft Office Excel, con funzionalità aggiuntive. Tuttavia, esistono alcune differenze fondamentali tra il comportamento degli elementi host e dei controlli host e gli oggetti nativi di Office in fase di esecuzione.
@@ -81,7 +81,7 @@ ms.locfileid: "97525127"
  La maggior parte dei metodi e delle proprietà degli elementi host restituisce l'oggetto nativo di Office sottostante sul quale si basa l'elemento host. Ad esempio, la proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.Parent%2A> di un controllo host <xref:Microsoft.Office.Tools.Excel.NamedRange> in Excel restituisce un oggetto <xref:Microsoft.Office.Interop.Excel.Worksheet> piuttosto che un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> . Analogamente, la proprietà <xref:Microsoft.Office.Tools.Word.RichTextContentControl.Parent%2A> di un controllo host <xref:Microsoft.Office.Tools.Word.RichTextContentControl> in Word restituisce un oggetto <xref:Microsoft.Office.Interop.Word.Document> piuttosto che un elemento host <xref:Microsoft.Office.Tools.Word.Document> .
 
 ### <a name="access-collections-of-host-controls"></a>Accedere a raccolte di controlli host
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non fornisce raccolte specifiche per ogni tipo di controllo host. Usare invece la proprietà Controls di un elemento host per scorrere tutti i controlli gestiti (controlli host e controlli Windows Forms) nel documento o nel foglio di controllo, quindi cercare gli elementi che corrispondono al tipo di controllo host a cui si è interessati. L'esempio di codice seguente esamina ogni controllo in un documento di Word e determina se il controllo è di tipo <xref:Microsoft.Office.Tools.Word.Bookmark>.
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non fornisce raccolte specifiche per ogni tipo di controllo host. Usare invece la proprietà Controls di un elemento host per scorrere tutti i controlli gestiti (controlli host e controlli Windows Form) nel documento o nel foglio di controllo, quindi cercare gli elementi che corrispondono al tipo di controllo host a cui si è interessati. L'esempio di codice seguente esamina ogni controllo in un documento di Word e determina se il controllo è di tipo <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
  [!code-csharp[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#10)]
  [!code-vb[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#10)]
@@ -90,7 +90,7 @@ ms.locfileid: "97525127"
 
  I modelli a oggetti di Word ed Excel includono proprietà che espongono raccolte di controlli nativi in documenti e fogli di lavoro. Non è possibile accedere ai controlli gestiti tramite queste proprietà. Ad esempio, non è possibile enumerare ogni controllo host <xref:Microsoft.Office.Tools.Word.Bookmark> in un documento tramite la proprietà <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> di un oggetto <xref:Microsoft.Office.Interop.Word.Document> o la proprietà <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> di un oggetto <xref:Microsoft.Office.Tools.Word.Document>. Queste proprietà includono solo i controlli <xref:Microsoft.Office.Interop.Word.Bookmark> nel documento; non contengono i controlli host <xref:Microsoft.Office.Tools.Word.Bookmark> nel documento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
