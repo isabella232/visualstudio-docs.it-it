@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888693"
 ---
 # <a name="ribbon-object-model-overview"></a>Panoramica del modello a oggetti della barra multifunzione
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Espone un modello a oggetti fortemente tipizzato che è possibile utilizzare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione. Ad esempio, è possibile popolare in modo dinamico i controlli menu o mostrare e nascondere i controlli in modo contestuale. È anche possibile aggiungere schede, gruppi e controlli a una barra multifunzione, ma solo prima che la barra multifunzione venga caricata dall'applicazione di Office. Per informazioni, vedere [impostare le proprietà che diventano](#SettingReadOnlyProperties)di sola lettura.
@@ -186,7 +186,7 @@ ms.locfileid: "97527994"
 |*mittente*|Un oggetto <xref:System.Object> che rappresenta il controllo che ha generato l'evento.|
 |*e*|Oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> che contiene <xref:Microsoft.Office.Core.IRibbonControl>. Utilizzare questo controllo per accedere a qualsiasi proprietà non disponibile nel modello a oggetti della barra multifunzione fornito da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)

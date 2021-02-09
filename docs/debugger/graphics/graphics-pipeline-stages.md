@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 150c61e271e7951332848a601aaddc619a1c37e5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61cc2737fbe6bdbcb331da4e1d27a77d356735aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888654"
 ---
 # <a name="graphics-pipeline-stages"></a>Fasi pipeline grafica
 La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata di disegno viene trasformata in ogni fase della pipeline grafica Direct3D.
@@ -115,6 +115,6 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
 
  ![Anteprima dei risultati delle fasi del vertex shader](media/gfx_diag_vertex_shader_preview.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3cc5d5517818934a20c9064e718cf65f9d3a65
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 87add3c771fdc79e4b41658a68ef7e77e2c18b21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888524"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante delle dimensioni della trama ridotte a metà o un quarto
 Riduce le dimensioni della trama per trame che non sono destinazioni di rendering.
@@ -45,6 +45,6 @@ Riduce le dimensioni della trama per trame che non sono destinazioni di renderin
 ## <a name="example"></a>Esempio
  Questa variante ridimensiona le trame in fase di esecuzione prima della chiamata a `CreateTexture2D` . Per codice di produzione, questo approccio è sconsigliato perché le trame a dimensioni intere occupano più spazio su disco e perché il passaggio aggiuntivo può aumentare i tempi di caricamento nell'app, in particolare per quanto riguarda le trame compresse, che richiedono risorse di elaborazione notevoli per la codifica. È invece consigliabile ridimensionare le trame offline usando un editor o programma per l'elaborazione di immagini che faccia parte della pipeline di compilazione. Questi approcci riducono i requisiti di spazio su disco ed eliminano sovraccarichi di in fase di esecuzione nell'app, oltre a restituire una quantità di tempo di elaborazione che consente di mantenere la miglior qualità di immagine riducendo o comprimendone le trame.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Variante di generazione di mappe MIP](mip-map-generation-variant.md)
 - [Variante di compressione della trama BC](bc-texture-compression-variant.md)
