@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951550"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Aggiungere un elenco usato più di recente a un sottomenu
 Questa procedura dettagliata si basa sulle dimostrazioni in [aggiungere un sottomenu a un menu](../extensibility/adding-a-submenu-to-a-menu.md)e Mostra come aggiungere un elenco dinamico a un sottomenu. L'elenco dinamico costituisce la base per la creazione di un elenco degli ultimi elementi usati (MRU).
@@ -201,5 +201,5 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 4. Aprire di nuovo il sottomenu. Si noti che l' **elemento 3** è ora all'inizio dell'elenco e gli altri elementi sono stati spostati verso il basso di una posizione. Fare di nuovo clic sull' **elemento 3** . si noti che nella finestra di messaggio viene ancora visualizzato l' **elemento selezionato 3**, che indica che il testo è stato spostato correttamente nella nuova posizione insieme all'etichetta del comando.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Aggiunta dinamica di voci di menu](../extensibility/dynamically-adding-menu-items.md)

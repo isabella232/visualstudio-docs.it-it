@@ -5,15 +5,15 @@ ms.date: 11/02/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd11a05ed6b19fe5d6236bec2c6b4926bbcdefd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951108"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Suggerimenti relativi alle scelte rapide per Visual Studio
 
@@ -39,12 +39,12 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Avviare una nuova istanza|**Vinci** + **Sposta** + **N**|
 |Spostarsi tra le finestre|**Vinci** + **N**|
 
-## <a name="search"></a>Ricerca
+## <a name="search"></a>Cerca
 
 |Attività|Tasto di scelta rapida|
 |-|-|
 |Ricerca in Esplora soluzioni|**CTRL** + **;**|
-|Spostare lo stato attivo nella casella di ricerca in qualsiasi finestra degli strumenti (fatta eccezione per l'editor)|**Alt** + ALT **`** Quando la finestra degli strumenti ha lo stato attivo|
+|Spostare lo stato attivo nella casella di ricerca in qualsiasi finestra degli strumenti (fatta eccezione per l'editor)| + ALT **`** Quando la finestra degli strumenti ha lo stato attivo|
 |Eseguire una ricerca in Visual Studio|**CTRL** + **D**|
 |Filtro dei risultati della casella di ricerca|@opt - Opzioni<br />@cmd - Comandi<br />@mru - Usati di recente<br />@doc - Documenti aperti|
 |Opzioni di ricerca negli strumenti|**CTRL** + **E**|
@@ -54,7 +54,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Attività|Tasto di scelta rapida|
 |-|-|
 |Ricerca veloce|**CTRL** + **F**|
-|Risultato successivo di Ricerca veloce|**Entrare**|
+|Risultato successivo di Ricerca veloce|**INVIO**|
 |Risultato precedente di Ricerca veloce|**Sposta** + **Immettere**|
 |Espandere elenco a discesa di Ricerca veloce|**ALT** + **Freccia giù**|
 |Chiudere ricerca|**ESC**|
@@ -74,14 +74,14 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Aggiungi selezione corrispondente in più punti di inserimento|**Sposta** + **ALT** + **Ins**|
 |Formatta documento|**CTRL** + **K**,**D**|
 |Modalità di suggerimento di IntelliSense|**CTRL** + **ALT** + **Spazio** (interruttore)|
-|Forzare la visualizzazione di IntelliSense|**CTRL** + **J**|
+|Forzare la visualizzazione di IntelliSense|**CTRL**+**J**|
 |Azioni rapide|**CTRL** + **.**|
 |Selezione frammento di codice|**CTRL** + **K**,**X** o **?**,**tabulazione** (Visual Basic)|
 |Racchiudi tra|**CTRL** + **K**,**S**|
 |Visualizzare informazioni rapide|**CTRL** + **K**,**I**|
 |Passa a|**CTRL** + **,**|
 |Esplorare i riferimenti evidenziati|**CTRL** + **Sposta** + **In alto** (precedente)<br />**CTRL** + **Sposta** + **Giù** (avanti)|
-|Zoom dell'editor|**CTRL** + **Shift** + Sposta **>** In<br />**CTRL** + **Shift** + Sposta **<** Out|
+|Zoom dell'editor|**CTRL** +  + Sposta **>** In<br />**CTRL** +  + Sposta **<** Out|
 |Selezione blocco|Tenere premuto **ALT** e trascinare il mouse<br />**Sposta** + **ALT** + **Tasti** di direzione|
 |Spostare una riga su/giù|**ALT** + **Freccia su**  /  **ALT** + **Freccia giù**|
 |Duplicare una riga|**CTRL** + **e**,**V**|
@@ -92,7 +92,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Stack Vai a definizione|**CTRL** + **Sposta** + **8** (indietro)<br />**CTRL** + **Sposta** + **7** (in poi)|
 |Chiudere la finestra Visualizza definizione|**ESC**|
 |Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|**CTRL** + **ALT** + **Pagina iniziale**|
-|Spostarsi tra più finestre Visualizza definizione|**CTRL** + **Alt** + ALT **-** e **CTRL** + **ALT**+**=**|
+|Spostarsi tra più finestre Visualizza definizione|**CTRL** +  + ALT **-** e **CTRL** + **ALT**+**=**|
 |Spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
 |Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**Sposta** + **ESC**|
 |Passare al blocco di inclusione|**CTRL** + **ALT** + **Freccia su**|
@@ -127,7 +127,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Finestra di controllo immediato - Cancellare il buffer|Digitare **cls**|
 |Finestra di controllo immediato - Stampare il valore|Digitare **?varname**|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
 - [Funzionalità di produttività in Visual Studio](productivity-features.md)

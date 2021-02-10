@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f30f9698c9c81322edd6935b40c16cad6f46024c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d31b7cfe2480fa3b16a4d3c8c08185194fec6b79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951199"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 Questa interfaccia rappresenta le informazioni necessarie per creare e associare qualsiasi tipo di punto di interruzione.
@@ -42,7 +42,7 @@ IDebugBreakpointRequest2 : IUnknown
 |[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Ottiene il tipo di posizione del punto di interruzione della richiesta del punto di interruzione.|
 |[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Ottiene le informazioni sulla richiesta del punto di interruzione che descrivono questa richiesta di interruzione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Dopo che il programma di cui è in corso il debug è stato caricato, una chiamata a [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) associa un punto di interruzione in sospeso alla posizione richiesta nel programma.
 
 ## <a name="requirements"></a>Requisiti
@@ -52,7 +52,7 @@ IDebugBreakpointRequest2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
-- [Associazione](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Associare](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

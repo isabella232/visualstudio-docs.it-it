@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 24f13e61f783b041134dc38a4c9bc1690421b6cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951134"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tasti di scelta rapida in Help Viewer
 
@@ -28,7 +28,7 @@ ms.locfileid: "91878956"
 |Applicazione generale|**Spazio**|Da usare al posto di **INVIO** ovunque ad eccezione dei campi di modifica.|
 |Applicazione generale|**F1**|Aprire la **Guida** sull'elemento corrente dell'interfaccia utente.|
 |Applicazione generale|**F11**|Passare dalla visualizzazione a schermo intero alla visualizzazione normale e viceversa.|
-|Barra degli strumenti|**BACKSPACE**<br /><br /> -OPPURE-<br /><br /> **ALT** + **Freccia sinistra**|Visualizzare la pagina precedente.|
+|Barra degli strumenti|**Backspace**<br /><br /> -OPPURE-<br /><br /> **ALT** + **Freccia sinistra**|Visualizzare la pagina precedente.|
 |Barra degli strumenti|**ALT** + **Freccia destra**|Visualizzare la pagina successiva.|
 |Barra degli strumenti|**ALT** + **Pagina iniziale**|Visualizzare la home page del **revisore della guida**.|
 |Barra degli strumenti|**CTRL** + **S**|Evidenziare l'argomento corrente nel sommario (nella scheda **Sommario**).|
@@ -44,8 +44,8 @@ ms.locfileid: "91878956"
 |Strumenti di spostamento|**ALT** + **S**<br /><br /> -OPPURE-<br /><br /> **Ctrl** + E<br /><br /> -OPPURE-<br /><br /> **CTRL** + **Sposta** + **S**|Visualizzare la scheda **Cerca**.|
 |Strumenti di spostamento|**ALT** + **M**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **Sposta** + **M**|Visualizzare la scheda **Gestisci contenuto**.|
 |Argomento|Tasto del **menu di scelta rapida**<br /><br /> OR<br /><br /> **Sposta** + **F10**|Visualizzare il menu di scelta rapida per l'elemento corrente dell'interfaccia utente.|
-|Argomento|**Freccia su**|Scorrere verso l'inizio del documento una riga alla volta.|
-|Argomento|**Freccia giù**|Scorrere verso la fine del documento una riga alla volta.|
+|Argomento|**Freccia SU**|Scorrere verso l'inizio del documento una riga alla volta.|
+|Argomento|**Freccia GIÙ**|Scorrere verso la fine del documento una riga alla volta.|
 |Argomento|**PGSU**|Scorrere verso l'inizio del documento una schermata alla volta.|
 |Argomento|**PGGIÙ**|Scorrere verso la fine del documento una schermata alla volta.|
 |Argomento|**Home**|Passare all'inizio del documento.|
@@ -60,12 +60,12 @@ ms.locfileid: "91878956"
 |Argomento|**CTRL** + **Scheda**|Passare da una scheda all'altra da sinistra a destra.|
 |Argomento|**CTRL** + **Sposta** + **Scheda**|Passare da una scheda all'altra da destra a sinistra.|
 |Argomento|**CTRL** + **W**|Chiudere la scheda corrente.|
-|Argomento|**CTRL** + ** _Numero_ di**|Passare a una scheda specifica dove **_numero_** è compreso tra 1 e 9 e indica la scheda in sequenza.|
+|Argomento|**CTRL** + **_Numero_ di**|Passare a una scheda specifica dove **_numero_** è compreso tra 1 e 9 e indica la scheda in sequenza.|
 |Argomento|**CTRL** + **ALT** + **F4**|Chiudere le altre schede del contenuto.|
 |Argomento|**CTRL** + **Sposta** + **Segno più**|Aumentare lo zoom del 10%.|
 |Argomento|**CTRL** + **Segno meno**|Ridurre lo zoom del 10%.|
 |Argomento|**CTRL** + **0** (zero)|Modificare lo zoom in 100%.|
-|Indice|**Scheda**|Spostare lo stato attivo dalla voce della parola chiave all'elenco di parole chiave.|
+|Indice|**TAB**|Spostare lo stato attivo dalla voce della parola chiave all'elenco di parole chiave.|
 |Indice|**CTRL** + **K**|Passare tra le voci visualizzate che contengono la parola chiave specificata e le voci che iniziano con la parola chiave specificata.|
 |Preferiti|**CTRL** + **Sposta** + **Del**|Cancellare la cronologia esplorazioni.|
 |Preferiti|**CANC**|Eliminare l'elemento specificato.|
@@ -75,13 +75,13 @@ ms.locfileid: "91878956"
 |Contenuto, Indice, Cerca e Preferiti|**CTRL** + **P**|Stampare l'argomento specificato.|
 |Contenuto, Indice, Cerca e Preferiti|**CTRL** + **F2**|Visualizzare un'anteprima di stampa dell'argomento specificato.|
 |Contenuto, Indice, Cerca e Preferiti|**CTRL** + **Fare clic su**|Aprire l'argomento in una nuova scheda.|
-|Ricerca|**ESC**|Deselezionare la casella di testo di ricerca.|
+|Cerca|**ESC**|Deselezionare la casella di testo di ricerca.|
 |Opzioni di visualizzazione|**ALT** + **T**|Passare lo stato attivo all'elenco **Dimensione testo**.|
 |Opzioni di visualizzazione|**ALT** + **S**|Passare lo stato attivo all'elenco **Numero massimo di risultati di ricerca**.|
 |Opzioni di visualizzazione|**ALT** + **H**|Passare lo stato attivo all'elenco **Numero massimo di voci della cronologia salvate**.|
 |Opzioni di visualizzazione|**ALT** + **E**|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1** se è abilitata.|
 |Opzioni di visualizzazione|**ALT** + **O**|Selezionare o deselezionare la casella di controllo **Connetti per recuperare il contenuto e verificare la disponibilità di aggiornamenti**.|
-|Find|**Entrare**|Passare lo stato attivo all'elemento successivo.|
+|Find|**INVIO**|Passare lo stato attivo all'elemento successivo.|
 |Find|**Sposta** + **Immettere**|Passare lo stato attivo all'elemento precedente.|
 |Find|**ESC**|Nascondere la casella di testo **Trova**.|
 |Status bar|**ALT** + **E**|Aprire la finestra di dialogo **Errore** se la barra di stato indica che si è verificato un errore.|
@@ -102,18 +102,18 @@ ms.locfileid: "91878956"
 |-|-|
 |**ALT** + **D**|Impostare l'origine dell'installazione sul disco.|
 |**ALT** + **O**|Impostare l'origine dell'installazione su online.|
-|**Scheda**|Passare lo stato attivo alla casella di testo **Percorso archivio locale**.|
-|**Scheda**|Passare lo stato attivo al pulsante **Sposta**.|
+|**TAB**|Passare lo stato attivo alla casella di testo **Percorso archivio locale**.|
+|**TAB**|Passare lo stato attivo al pulsante **Sposta**.|
 |**ALT** + **V**|Aprire la finestra di dialogo **Sposta contenuto**.|
 |**CTRL** + **ALT** + **F**|Passare lo stato attivo alla casella di testo **Filtra documentazione**.|
-|**Scheda**|Passare lo stato attivo all'elenco della documentazione.|
+|**TAB**|Passare lo stato attivo all'elenco della documentazione.|
 |**FRECCIA SU** e **FRECCIA GIÙ**|Scorrere l'elenco della documentazione.|
 |**Spazio**|Aggiungere un elemento all'elenco **Modifiche in sospeso**.|
-|**Scheda**|Passare lo stato attivo all'elenco **Modifiche in sospeso**.|
+|**TAB**|Passare lo stato attivo all'elenco **Modifiche in sospeso**.|
 |**FRECCIA SU** e **FRECCIA GIÙ**|Scorrere l'elenco **Modifiche in sospeso**.|
 |**Spazio**|Rimuovere un elemento dall'elenco **Modifiche in sospeso**.|
 |**ALT** + **T**|Applicare tutte le modifiche in sospeso.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità di accessibilità di Help Viewer](accessibility-features.md)

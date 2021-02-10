@@ -8,16 +8,16 @@ helpviewer_keywords:
 - profiling tools, packsymbols
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: af9d93c4aa7d38e65235d4a134978a9ff3571d33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950091"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvataggio delle informazioni sui simboli con i file di dati di prestazioni
 
@@ -61,7 +61,7 @@ VsPerfReport -clearpackedsymbols nomefile.vsp
 
 VsPerfReport -packsymbols -summary:all nomefile.vsp
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Salvataggio ed esportazione dei dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md) 
  [Procedura: fare riferimento alle informazioni sui](../profiling/how-to-reference-windows-symbol-information.md) 

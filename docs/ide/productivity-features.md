@@ -6,15 +6,15 @@ ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 01367d821ffc74de0e9d087bfe52680508fad9e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870872"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951160"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guida alla produttività per Visual Studio
 
@@ -42,7 +42,7 @@ Risparmia tempo attraverso i menu per cercare rapidamente tutto ciò che ti serv
 
 È possibile scrivere il codice più rapidamente tramite le seguenti funzionalità.
 
-- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **modifica**  >  **duplicato** o premere **CTRL** + **E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **modifica**  >  **Avanzate**  >  **Espandi selezione** o **Modifica**  >  **Advanced**  >  **selezione contratto** avanzata oppure premendo **MAIUSC** + **ALT** + **=** o **MAIUSC** + **ALT** + **-** .
+- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **modifica**  >  **duplicato** o premere **CTRL** + **E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **modifica**  >  **Avanzate**  >  **Espandi selezione** o **Modifica**  >    >  **selezione contratto** avanzata oppure premendo **MAIUSC** + **ALT** + **=** o **MAIUSC** + **ALT** + **-** .
 
 - **Utilizzare IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo; ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci che contengono la combinazione di caratteri in qualsiasi punto del nome. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
 
@@ -52,7 +52,7 @@ Risparmia tempo attraverso i menu per cercare rapidamente tutto ciò che ti serv
 
 - **Usare frammenti di codice**. È possibile usare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
 
-     Per inserire un frammento, sulla barra dei menu scegliere **modifica**  >  **IntelliSense**  >  **Inserisci frammento** o **Racchiudi tra** oppure aprire il menu di scelta rapida in un file e scegliere **frammento** Inserisci frammento di codice  >  **Insert Snippet** o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
+     Per inserire un frammento, sulla barra dei menu scegliere **modifica**  >  **IntelliSense**  >  **Inserisci frammento** o **Racchiudi tra** oppure aprire il menu di scelta rapida in un file e scegliere **frammento** Inserisci frammento di codice  >   o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
 
 - **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando l'icona del cacciavite o l'icona a bulbo di luce lampadina oppure ![ ](media/screwdriver-icon.png) ![ ](media/light-bulb-icon.png) premendo **ALT** + **invio** o **CTRL** + **.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
 
@@ -178,7 +178,7 @@ In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che si
 
 - **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore usato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [procedura: modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [procedura: modificare i tipi di carattere e i colori nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Post di blog di suggerimenti e consigli per Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Tasti di scelta rapida predefiniti per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)

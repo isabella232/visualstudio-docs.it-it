@@ -6,15 +6,15 @@ ms.date: 01/11/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 14cc2965589ec46565740bf17037013f10640aea
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 63845d6dbfd8cffda9258690481253827b29754b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950458"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funzionalità di generazione del codice in Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio offre supporto in numerosi modi per generare e correggere il codic
 > [!NOTE]
 > Ogni servizio di linguaggio in Visual Studio fornisce funzionalità di generazione del codice proprie, quindi alcune funzionalità sono disponibili solo in C# e alcune sono disponibili sia in C# che in Visual Basic.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice](../ide/code-snippets.md)
 - [Azioni rapide](../ide/quick-actions.md)

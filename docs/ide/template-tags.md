@@ -4,7 +4,7 @@ description: Informazioni su come aggiungere o modificare tag nei modelli di pro
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
-manager: jillfra
+manager: jmartens
 ms.topic: reference
 helpviewer_keywords:
 - item templates, updating
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37a1965712920420bdc4d784a003dbfbd2f2167a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5f8c3f6e96e8e593fe74fd58b3e8bafab0ad88e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950614"
 ---
 # <a name="add-tags-to-project-templates"></a>Aggiungere tag ai modelli di progetto
 
@@ -52,7 +52,7 @@ I tag vengono usati in due posizioni nella finestra di dialogo **nuovo progetto*
 <ProjectTypeTag> Project Type </ProjectTypeTag>
 ```
 
-## <a name="attributes"></a>Attributes
+## <a name="attributes"></a>Attributi
 
 È possibile usare gli attributi facoltativi seguenti in scenari utente avanzati:
 
@@ -73,7 +73,7 @@ Sintassi:
 
 ### <a name="child-elements"></a>Elementi figlio
 
-Nessuno.
+Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -145,7 +145,7 @@ L'esempio seguente mostra i metadati per un modello di progetto per un'applicazi
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](creating-project-and-item-templates.md)

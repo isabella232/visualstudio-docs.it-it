@@ -9,19 +9,19 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950848"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Passaggio 2: eseguire l'app visualizzatore immagini
 
-Quando si crea un progetto di app Windows Forms, si compila effettivamente un programma che esegue. In questa esercitazione, l'app visualizzatore immagini non fa ancora molto, &mdash; anche se sarà. Per il momento, viene visualizzata una finestra vuota che mostra **Form1** nella barra del titolo.
+Quando si crea un progetto di app Windows Form, si compila effettivamente un programma che esegue. In questa esercitazione, l'app visualizzatore immagini non fa ancora molto, &mdash; anche se sarà. Per il momento, viene visualizzata una finestra vuota che mostra **Form1** nella barra del titolo.
 
 Ecco come eseguire l'app. 
 
@@ -34,12 +34,12 @@ Ecco come eseguire l'app.
     - Sulla barra degli strumenti scegliere il pulsante **Avvia debug** , che viene visualizzato come segue:
 
       ![Pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)<br>
-      **_Avvia debug_* _ _toolbar pulsante *
+      ***Avvia debug** _ _toolbar pulsante *
 
 1. Visual Studio esegue l'app e viene visualizzata una finestra denominata **Form1** . Lo screenshot seguente mostra l'app appena compilata. L'app è in esecuzione e a breve verrà aggiunta.
 
-     ![App Windows Forms in esecuzione](../ide/media/express_firstrun.png)<br>
-**_Windows Forms app_* _, _running *
+     ![App Windows Form in esecuzione](../ide/media/express_firstrun.png)<br>
+***Windows Form App** _, _running *
 
 1. Tornare all'Integrated Development Environment di Visual Studio (IDE), quindi osservare la nuova barra degli strumenti. Quando si esegue un'applicazione, vengono visualizzati pulsanti aggiuntivi sulla barra degli strumenti. Questi pulsanti consentono di eseguire operazioni quali l'arresto e l'avvio dell'applicazione e consentono di rilevare eventuali errori (bug). Per questo esempio viene usato per avviare e arrestare l'app.
 
@@ -63,7 +63,7 @@ Ecco come eseguire l'app.
 
 * Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 3: impostare le proprietà del form](../ide/step-3-set-your-form-properties.md)**.
 
-* Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 1: creare un progetto di App Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+* Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 1: creare un progetto di App Windows Form](../ide/step-1-create-a-windows-forms-application-project.md).
 
 ## <a name="see-also"></a>Vedi anche
 

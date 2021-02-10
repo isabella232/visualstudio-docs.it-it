@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950900"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Passaggio 11: eseguire l'app visualizzatore immagini e provare altre funzionalità
 
@@ -30,7 +30,7 @@ L'app visualizzatore immagini è stata completata e pronta per l'esecuzione. È 
 1. Prima di aprire un'immagine, scegliere il pulsante **Imposta colore di sfondo**. Verrà visualizzata la finestra di dialogo **Colore**.
 
      ![Finestra di dialogo Colore](../ide/media/express_colordialog.png)<br/>
-Finestra di *dialogo* ***colore***
+***Colore** _ _dialog box *
 
 1. Scegliere un colore per impostare il colore di sfondo di PictureBox. Osservare attentamente il `backgroundButton_Click()` Metodo (o, `BackgroundButton_Click()` ) per comprenderne il funzionamento.
 
@@ -58,7 +58,7 @@ Per altre informazioni, passare all'esercitazione successiva:
 
 Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 10: Scrivere codice per pulsanti aggiuntivi e una casella di controllo](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Altre esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

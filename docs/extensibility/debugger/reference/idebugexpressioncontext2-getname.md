@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 500d5c1788e837a27b4affada50ecc59db122e8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8529e83de0f5de3d5d202885cf37b29d21fa3e59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949532"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 Recupera il nome del contesto di valutazione.
@@ -28,13 +28,13 @@ Recupera il nome del contesto di valutazione.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName( 
+int GetName( 
    out string pbstrName
 );
 ```
@@ -46,12 +46,12 @@ out Restituisce il nome del contesto di valutazione.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il nome è la descrizione di questo contesto di valutazione. Si tratta in genere di un elemento che può essere analizzato da un analizzatore di espressioni che fa riferimento a questo contesto di valutazione esatto. Ad esempio, in C++ il nome è il seguente:
 
 ```
 "{ function-name, source-file-name, module-file-name }"
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)

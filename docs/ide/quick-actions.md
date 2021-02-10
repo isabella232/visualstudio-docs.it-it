@@ -6,18 +6,18 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e1d9c257bcf0e2a88a384c22010abb08894483ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951095"
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -70,7 +70,7 @@ Per vedere le potenziali correzioni, selezionare la freccia GIÙ accanto alla la
 
 ![Lampadina espansa](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generazione di codice in Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Azioni rapide comuni](../ide/common-quick-actions.md)

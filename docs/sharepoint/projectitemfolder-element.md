@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItemFolder element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d1a5b5086ef90b9d8399a6f0f76bdee77c07288e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950575"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder (elemento)
   Rappresenta una cartella mappata.
@@ -31,13 +31,13 @@ ms.locfileid: "95440792"
     Type = "Type of deployment for the mapped folder" />
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
  **ProjectItemFolderType**
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -45,7 +45,7 @@ ms.locfileid: "95440792"
 |**Tipo**|Attributo **xs: String** obbligatorio.<br /><br /> Tipo di distribuzione per la cartella mappata. Per ulteriori informazioni sui valori possibili, vedere la descrizione della proprietà **tipo di distribuzione** degli elementi del progetto SharePoint in [sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 10f021e8f8151216cd2728e1e9723b0edb9b3e1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950731"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: Impostare le proprietà del modulo
 
@@ -35,7 +35,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 1. Dopo aver selezionato il form, individuare la proprietà **Testo** nella finestra **Proprietà**. A seconda di come è ordinato l'elenco, potrebbe essere necessario scorrere verso il basso. Scegliere **testo**, digitare **Visualizzatore immagini**, quindi premere **invio**.  Il form dovrebbe ora disporre del **Visualizzatore immagini** del testo nella relativa barra del titolo e la finestra **Proprietà** dovrebbe essere simile alla schermata seguente.
 
     ![Finestra Proprietà](../ide/media/express_edittextproperty.png)<br>
-   **_Proprietà_* _ _window *
+   ***Proprietà** _ _window *
 
    > [!NOTE]
    > Le proprietà possono essere ordinate in base alla visualizzazione **Per categoria** o **Per nome**. È possibile passare da una visualizzazione all'altra tramite i pulsanti nella finestra **Proprietà**. In questa esercitazione è più facile trovare le proprietà tramite la visualizzazione **Per nome**.
@@ -58,7 +58,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
    - Sulla barra degli strumenti scegliere il pulsante **Avvia debug** visualizzato di seguito.
 
       ![Pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)<br>
-     **_Avvia debug_* _ _toolbar pulsante *
+     ***Avvia debug** _ _toolbar pulsante *
 
      Esattamente come in precedenza, l'IDE compila ed esegue l'app e viene visualizzata una finestra.
 

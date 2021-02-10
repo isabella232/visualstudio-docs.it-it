@@ -1,6 +1,6 @@
 ---
 title: 'Passaggio 1: Creare un progetto di app Windows Forms'
-description: Informazioni su come creare un progetto di app Windows Forms per il Visualizzatore immagini.
+description: Informazioni su come creare un progetto di app Windows Form per il Visualizzatore immagini.
 ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
@@ -9,19 +9,19 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951004"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: Creare un progetto di app Windows Forms
 
-Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel creare un progetto di app Windows Forms.
+Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel creare un progetto di app Windows Form.
 
 ::: moniker range="vs-2017"
 
@@ -29,11 +29,11 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**. La finestra di dialogo avrà un aspetto simile allo screenshot seguente.
 
-     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>**_Nuovo progetto_* _ _dialog box *
+     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>***Nuovo progetto** _ _dialog box *
 
 2. Sul lato sinistro della finestra di dialogo **nuovo progetto** scegliere **Visual C#** o **Visual Basic**, quindi scegliere **desktop di Windows**.
 
-3. Nell'elenco dei modelli di progetto scegliere **Windows Forms app (.NET Framework)**. Assegnare il nome *PictureViewer* al nuovo form, quindi scegliere il pulsante **OK**.
+3. Nell'elenco dei modelli di progetto scegliere **Windows Form App (.NET Framework)**. Assegnare il nome *PictureViewer* al nuovo form, quindi scegliere il pulsante **OK**.
 
     >[!NOTE]
     >Se non viene visualizzato il modello **App Windows Forms (.NET Framework)**, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
@@ -50,12 +50,12 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
 
-   Dopo aver applicato il filtro del **tipo di progetto** , scegliere il modello **App Windows Forms (.NET Framework)** per C# o Visual Basic, quindi scegliere **Avanti**.
+   Dopo aver applicato il filtro del **tipo di progetto** , scegliere il modello **App Windows Form (.NET Framework)** per C# o Visual Basic, quindi scegliere **Avanti**.
 
-   ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Scegliere il modello C# o Visual Basic per l'app Windows Form (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **App Windows Forms (.NET Framework)** , è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se non viene visualizzato il modello **App Windows Form (.NET Framework)** , è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -71,7 +71,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore per tutti i progetti e i file necessari per l'app. Questi termini verranno spiegati dettagliatamente più avanti in questa esercitazione.
 
-## <a name="about-the-windows-forms-app-project"></a>Informazioni sul progetto app Windows Forms
+## <a name="about-the-windows-forms-app-project"></a>Informazioni sul progetto app Windows Form
 
 1. L'ambiente di sviluppo include tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
 
@@ -107,7 +107,7 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
      In alternativa, scegliere il pulsante **Salva tutto** sulla barra degli strumenti, mostrata nell'immagine seguente.
 
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br/>
-     **_Salva tutto_* _ _toolbar pulsante *
+     ***Salva tutto** _ _toolbar pulsante *
 
      In Visual Studio il nome della cartella e il nome del progetto vengono compilati automaticamente. Il progetto viene quindi salvato nella cartella dei progetti.
 

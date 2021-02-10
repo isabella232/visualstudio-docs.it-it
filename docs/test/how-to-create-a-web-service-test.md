@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 32b5a6a91221e8942faeefcb89cfc52dd0cc5895
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 2d368ca7cbe64f2c0e8c8dc5e18e5f3c7145274c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949844"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedura: Creare un test di servizio Web
 
@@ -26,7 +26,7 @@ I test web consentono di testare i servizi web. Utilizzando le opzioni **Inseris
 >[!NOTE]
 > La funzionalità del test di carico e delle prestazioni Web è deprecata in Visual Studio 2019. Per Application Insights, i test Web in più passaggi dipendono dai file di test Web di Visual Studio. È stato [annunciato](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) che Visual Studio 2019 sarà l'ultima versione con la funzionalità test Web. È importante comprendere che, anche se non vengono aggiunte nuove funzionalità, la funzionalità test Web in Visual Studio 2019 è ancora attualmente supportata e continuerà a esserlo durante il ciclo di vita del prodotto. Il team del prodotto Monitoraggio di Azure ha affrontato le domande relative al futuro dei test di disponibilità in più passi [qui](https://github.com/MicrosoftDocs/azure-docs/issues/26050#issuecomment-468814101).
 
-**Requirements**
+**Requisiti**
 
 Visual Studio Enterprise
 
@@ -143,6 +143,6 @@ Un test Web richiede il modello di progetto di progetto di test di carico e pres
 
    Cercare i risultati per la richiesta del servizio Web.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)

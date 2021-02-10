@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc84eb8854c0a6ff738a51c2ca883ad0527ec919
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 6bd568e53c3a74819f642f0593524b314e065afb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951563"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Aggiungere un menu alla barra dei menu di Visual Studio
 
@@ -169,6 +169,6 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
     Verrà visualizzata una finestra di messaggio con il messaggio "TestCommand all'interno di TopLevelMenu. TestCommand. MenuItemCallback ()".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

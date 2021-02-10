@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951433"
 ---
 # <a name="add-a-tool-window"></a>Aggiungere una finestra degli strumenti
 
@@ -282,5 +282,5 @@ Specificare quindi un percorso predefinito nell'IDE per la finestra degli strume
 
     Si dovrebbe sentire il suono del campanello.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
