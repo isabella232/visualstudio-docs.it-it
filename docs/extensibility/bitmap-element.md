@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd30cb2d09d042e70b5fc142ac220f2356962146
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: fe9002c3da63e9570819588035395780715e1d64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941866"
 ---
 # <a name="bitmap-element"></a>Bitmap-elemento
 Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.
@@ -40,10 +40,10 @@ Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.
 |Da un Resid|ID dell'identificatore del comando GUID/ID. È necessario specificare l'attributo da un Resid o href.<br /><br /> L'attributo da un Resid è un ID di risorsa integer che determina l'elenco bitmap da caricare durante l'Unione della tabella dei comandi.  Quando viene caricata la tabella dei comandi, le bitmap specificate dall'ID risorsa verranno caricate dalla risorsa dello stesso modulo.|
 |utilizzato|Obbligatorio se è presente l'attributo da un Resid. Seleziona le immagini disponibili nell'elenco bitmap.|
 |href|Percorso della bitmap. È necessario specificare l'attributo da un Resid o href.<br /><br /> Il percorso di inclusione viene cercato per il file di immagine indicato, incorporato nel file binario risultante.  Durante l'Unione della tabella dei comandi, l'immagine viene copiata e non è necessaria alcuna ricerca o carico aggiuntivo per le risorse.  Se l'attributo used non è presente, sono disponibili tutte le immagini nella striscia. **Nota:**  Le immagini possono essere fornite in uno dei diversi formati che includono *. bmp*, *. png* e *. gif*.  Le versioni precedenti del compilatore non supportavano immagini bitmap a 32 bit contenenti informazioni Alpha per la trasparenza parziale. La soluzione alternativa per queste versioni consiste nell'usare il formato *png* .|
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
