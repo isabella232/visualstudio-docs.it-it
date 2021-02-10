@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: ada73cc1f907a298a2cc1efcf3281fb8a219ef32
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 832b4f9257c328989b2d4d0f7db3bb5f49ec4f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971856"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Procedura: Selezionare un repository dei risultati del test di carico
 
@@ -55,7 +55,7 @@ I risultati ottenuti dai computer agente o locale possono essere memorizzati in 
 
 8. Scegliere **Chiudi** nella finestra di dialogo **Gestisci controller di test**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire i risultati dei test di carico nel repository del Risultati test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)

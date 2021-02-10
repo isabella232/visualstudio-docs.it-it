@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537721"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089593"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
 
 ## <a name="activation-steps"></a>Passaggi di attivazione
 Per usare l'account per sviluppatore di Windows, è necessario configurare un account o accedere con un account esistente.
+
+> [!IMPORTANT]
+> Per la creazione di un account sviluppatore Windows è necessario usare un account Microsoft (MSA).  L'uso di account Azure Active Directory non è supportato.  
 
 È consigliabile creare una finestra del browser "privata" per questo processo.  Ad esempio, in Google Chrome creare una nuova finestra "in incognito".  In Internet Explorer è possibile creare una nuova finestra di "InPrivate Browsing".
 
@@ -65,7 +68,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
