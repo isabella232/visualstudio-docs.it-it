@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75e4453cae63f484961cb2d0f3385a703709f83b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db66748a1665d5ab965f20295258efd65ec43d38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953721"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 Specifica i criteri per il confronto di due contesti di documento.
@@ -59,7 +59,7 @@ Trovare il primo contesto del documento nell'elenco maggiore del contesto del do
 `DOCCONTEXT_SAME_DOCUMENT`\
 Trovare il primo contesto del documento nell'elenco che si trova nello stesso documento del contesto del documento di destinazione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Passato come argomento al metodo [compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) .
 
 Questi valori vengono utilizzati per specificare un criterio di confronto per individuare il primo contesto del documento in un elenco. A un contesto del documento viene assegnato un elenco di contesti di documenti da confrontare con il `IDebugDocumentContext2::Compare` metodo. Viene quindi restituito il primo contesto del documento nell'elenco per il quale viene restituito l'operatore di confronto `true` .
@@ -71,6 +71,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Confronta](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

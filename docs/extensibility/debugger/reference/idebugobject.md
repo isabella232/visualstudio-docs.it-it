@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6801176964a47646f03091131e1be89cf63c97f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc6fc188537799a8a3eeab66dd4af1d92ffb67db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953578"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -53,7 +53,7 @@ IDebugObject : IUnknown
 |[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|Determina se l'oggetto è di sola lettura.|
 |[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|Determina se l'oggetto è un proxy trasparente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'analizzatore di espressioni usa questa interfaccia come classe di base per rappresentare gli oggetti in un albero di analisi.
 
 ## <a name="requirements"></a>Requisiti
@@ -63,7 +63,7 @@ IDebugObject : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di valutazione delle espressioni](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)
-- [Associazione](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [Associare](../../../extensibility/debugger/reference/idebugbinder-bind.md)

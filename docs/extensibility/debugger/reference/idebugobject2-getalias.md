@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53c72182b497e2b24d41a784c405d169c3db195f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f2fa330b98a37f3946ef19bc2f5641b5b525d88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953487"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 Ottiene l'alias associato a questo oggetto, se presente.
@@ -28,14 +28,14 @@ Ottiene l'alias associato a questo oggetto, se presente.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetAlias(
-   IDebugAlias** ppAlias
+HRESULT GetAlias(
+   IDebugAlias** ppAlias
 );
 ```
 
 ```csharp
-int GetAlias(
-   out IDebugAlias ppAlias
+int GetAlias(
+   out IDebugAlias ppAlias
 );
 ```
 
@@ -46,9 +46,9 @@ out Restituisce un oggetto [IDebugAlias](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Viene creato un alias per un oggetto con una chiamata al metodo [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
