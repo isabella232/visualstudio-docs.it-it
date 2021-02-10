@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ba4307cc2941f0d978674eb224b717fdd8aaba
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f1b9b7e7f20c93cd2067d1210245da8ef6ce8813
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952031"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Tipo di carattere ambiente
@@ -351,7 +351,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Tutte le lettere di un acronimo|HTML, XML, URL, IDE, RGB|
 |Seconda parola in una parola composta se è un sostantivo o un aggettivo appropriato oppure se le parole hanno un peso uguale|Riferimento incrociato, software pre-Microsoft, accesso in lettura/scrittura, Run-Time|
 
-|Minuscole|Esempi|
+|Minuscole|Esempio|
 |---------------|--------------|
 |Seconda parola in una parola composta se è un'altra parte del discorso o un participio che modifica la prima parola|Procedura, take-off|
 |Articoli, a meno che non si tratti della prima parola nel titolo|un, uno, una, il, lo, la, i, gli, le|
@@ -391,7 +391,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>Corsivo
  Visual Studio non usa il testo in corsivo o in grassetto.
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>Colore
 
 - Il blu è riservato per i collegamenti ipertestuali (navigazione e comando) e non deve mai essere usato per l'orientamento.
 

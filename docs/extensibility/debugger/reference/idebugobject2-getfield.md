@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54f692fa85cfd8fa290a7f5c697a91e0366f8224
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953461"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 Ottiene il tipo di questo oggetto.
@@ -28,14 +28,14 @@ Ottiene il tipo di questo oggetto.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetField(
- IDebugField** ppField
+HRESULT GetField(
+ IDebugField** ppField
 );
 ```
 
 ```csharp
-int GetField(
-   out IDebugField ppField
+int GetField(
+   out IDebugField ppField
 );
 ```
 
@@ -46,9 +46,9 @@ out Restituisce un oggetto [IDebugField](../../../extensibility/debugger/referen
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un campo descrive il tipo dell'oggetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

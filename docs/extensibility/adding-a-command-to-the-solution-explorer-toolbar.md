@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 305966a4cd4ec67994ac3dbd6c7ba0e25a14172f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951693"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Aggiungere un comando alla barra degli strumenti Esplora soluzioni
 In questa procedura dettagliata viene illustrato come aggiungere un pulsante alla barra degli strumenti **Esplora soluzioni** .
@@ -118,5 +118,5 @@ In questa procedura dettagliata viene illustrato come aggiungere un pulsante all
 
    La visibilità del pulsante viene controllata da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finché il pacchetto VSPackage non viene caricato. Una volta caricato il pacchetto VSPackage, la visibilità del pulsante viene controllata dal pacchetto VSPackage.  Per ulteriori informazioni, vedere [oggetti MenuCommand e OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

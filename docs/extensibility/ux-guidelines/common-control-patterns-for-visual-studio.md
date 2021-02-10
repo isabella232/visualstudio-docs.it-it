@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952187"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modelli dei controlli comuni per Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Controlli comuni
@@ -245,7 +245,7 @@ Evitare i pulsanti di comando nelle finestre degli strumenti o se sono necessari
 
 - Deaccentuare i comandi secondari nelle situazioni in cui sono presenti molti comandi
 
-#### <a name="examples"></a>Esempi
+#### <a name="examples"></a>Esempio
 ![Collegamenti ai comandi usati nella barra informazioni dopo un messaggio di stato](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703-01_CommandLinkInfobar")<br />Collegamenti ai comandi usati nella barra informazioni dopo un messaggio di stato
 
 ![Collegamenti usati nel popup CodeLens](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703-02_LinksInCodeLens")<br />Collegamenti usati nel popup CodeLens
@@ -309,7 +309,7 @@ Alcuni pulsanti devono sempre usare un'immagine grafica e non includono mai test
 | Rimuovi tutto | ![Pulsante grafico "Rimuovi tutto"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Sposta su | ![Pulsante grafico "Sposta su"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
 | Sposta giù | ![Pulsante grafico "Sposta giù"](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
-| Delete | ![Pulsante grafico "Elimina"](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
+| Elimina | ![Pulsante grafico "Elimina"](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
 
 ##### <a name="sizing-and-spacing"></a>Ridimensionamento e spaziatura
 Il dimensionamento dei pulsanti grafici è uguale a quello per la versione breve del pulsante **[Sfoglia...]** (26x23 pixel):

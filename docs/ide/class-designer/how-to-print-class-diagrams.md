@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ecabb44f7b66c94ef7390d79bf4e379256bd464
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0c07bbdb23493bac0612bd1199cb1e5d3331607e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951797"
 ---
 # <a name="how-to-print-class-diagrams"></a>Procedura: Stampare diagrammi classi
 
@@ -32,7 +32,7 @@ ms.locfileid: "94901362"
 
 Viene stampato l'intero diagramma classi. Può essere necessario regolare le impostazioni nella finestra di dialogo **Imposta pagina** per stampare con dimensioni appropriate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: copiare elementi del diagramma classi in un documento di Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
 - [Procedura: Esportare diagrammi classi come immagini](how-to-export-class-diagrams-as-images.md)

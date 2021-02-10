@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ef640967-8adb-4793-994d-ae1736510891
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e468b5a282ffb5466d57a3c9b1a37aa3ae8643ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be1ef047e01baaffe66e38503f0f7979fea74829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953370"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
@@ -50,7 +50,7 @@ IDebugObject2 : IDebugObject
 |[IsUserData](../../../extensibility/debugger/reference/idebugobject2-isuserdata.md)|Determina se questo oggetto rappresenta i dati utente.|
 |[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|Determina se lo stato di modifica e continuazione non è più valido.<br /><br /> Un analizzatore di espressioni personalizzato non implementa questo metodo (deve sempre restituire `E_NOTIMPL` ).|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per una discussione sugli alias, vedere [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -60,7 +60,7 @@ IDebugObject2 : IDebugObject
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di valutazione delle espressioni](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

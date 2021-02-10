@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc65fe72ed631a4bb3c0b22efb74aae9160e1cb
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f3f9b9efc625b435f304b192d3ca52f514e682e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951914"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procedura dettagliata: creare un SDK con C++
 In questa procedura dettagliata viene illustrato come creare un SDK di Math Library per C++ nativo, assemblare l'SDK come estensione di Visual Studio (VSIX) e quindi usarlo per creare un'app. La procedura dettagliata è divisa in questi passaggi:

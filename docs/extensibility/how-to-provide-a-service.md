@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7f16e05ecbd211652dbf5fb511211627a09137df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952265"
 ---
 # <a name="how-to-provide-a-service"></a>Procedura: fornire un servizio
 Un pacchetto VSPackage può fornire servizi che altri pacchetti VSPackage possono usare. Per fornire un servizio, un pacchetto VSPackage deve registrare il servizio con Visual Studio e aggiungere il servizio.
@@ -78,7 +78,7 @@ Un pacchetto VSPackage può fornire servizi che altri pacchetti VSPackage posson
 
 ### <a name="register-a-service"></a>Registrare un servizio
 
-1. Per registrare un servizio, aggiungere al <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> pacchetto VSPackage che fornisce il servizio. Esempio:
+1. Per registrare un servizio, aggiungere al <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> pacchetto VSPackage che fornisce il servizio. Ecco un esempio:
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -140,7 +140,7 @@ Un pacchetto VSPackage può fornire servizi che altri pacchetti VSPackage posson
 
      Il valore di `helloString` deve essere "Hello".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: ottenere un servizio](../extensibility/how-to-get-a-service.md)
 - [Usare e fornire servizi](../extensibility/using-and-providing-services.md)
 - [Essentials servizio](../extensibility/internals/service-essentials.md)

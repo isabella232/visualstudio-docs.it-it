@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c1cdf37ddda7209b4f951e42ad07720e5cc40b
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 8f61125c743cb33ccaccbb15c1345aa01fbc57bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952902"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -61,7 +61,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 - Deve essere usato come parte di un `devenv` `/Build` `/Clean` comando,, `/Rebuild` o `/Deploy` .
 
@@ -77,7 +77,7 @@ Questo esempio compila il progetto `CSharpWinApp` usando la configurazione della
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)

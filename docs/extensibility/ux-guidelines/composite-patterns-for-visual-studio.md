@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952096"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 I modelli compositi combinano elementi di interazione e progettazione in configurazioni distinte. Alcuni dei più importanti modelli compositi in Visual Studio rispetto alla coerenza includono:
@@ -70,7 +70,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 ### <a name="other-charting-considerations"></a>Altre considerazioni sui grafici
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>Colore
  In Visual Studio è disponibile una tavolozza specifica dei colori grafici definiti per l'utilizzo. La tavolozza è accessibile per i tipi principali di cecità dei colori e i colori possono essere differenziati anche quando vengono usati come sezioni molto strette di colore. È possibile usare questi colori in qualsiasi combinazione per qualsiasi tipo di grafico o grafico nell'interfaccia utente. Non è necessario usare tutti i sette colori se non sono necessari molti colori distinti. Questi colori non sono stati progettati per essere usati con alcun elemento in primo piano, quindi non inserire testo o glifi su questi colori. Queste tonalità devono essere hardcoded ed essere esposte alla personalizzazione dell'utente in **strumenti > opzioni** (vedere [esposizione dei colori per gli utenti finali](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Campione|Hex|RGB|
@@ -274,7 +274,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 - Region
 
-#### <a name="scope"></a>Scope
+#### <a name="scope"></a>Ambito
  Il componente più importante della selezione è garantire che l'utente sia in grado di riconoscere la finestra che sta funzionando (attivazione) e la posizione dello stato attivo (selezione). Visual Studio estende la funzionalità di gestione delle finestre in Windows, ma lo schema di attivazione è lo stesso: l'interazione con una finestra porta lo stato attivo sulla finestra. Visual Studio include due indicatori per l'attivazione: uno per le finestre dei documenti e uno per le finestre degli strumenti.
 
  Per le finestre dei documenti, la finestra attiva è indicata da una scheda della finestra del documento in primo piano e modificando il colore di sfondo:
@@ -360,7 +360,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
  Quando gli utenti modificano i controlli sul posto, potrebbe essere utile che gli oggetti vengano ridimensionati automaticamente con l'input dell'utente. Se, ad esempio, l'utente modifica un controllo etichetta, l'etichetta dovrebbe espandersi per visualizzare il testo appena digitato dall'utente. Se questa operazione non viene eseguita, l'utente deve ridimensionare il controllo manualmente dopo aver modificato il testo. Se l'utente dispone di un numero elevato di controlli, questo diventa un'attività a Rote e non produttiva.
 
 #### <a name="graphical-containers"></a>Contenitori grafici
- In alcuni casi, gli editor grafici forniscono contenitori per altri oggetti grafici, ad esempio il controllo pannello Windows Forms o il controllo layout griglia nella finestra di progettazione HTML. Se l'editor fornisce contenitori per altri oggetti grafici, è necessario usare il modello di selezione seguente solo per il contenitore (gli oggetti all'interno del contenitore seguono il modello standard come descritto in precedenza):
+ In alcuni casi, gli editor grafici forniscono contenitori per altri oggetti grafici, ad esempio il controllo pannello Windows Form o il controllo layout griglia nella finestra di progettazione HTML. Se l'editor fornisce contenitori per altri oggetti grafici, è necessario usare il modello di selezione seguente solo per il contenitore (gli oggetti all'interno del contenitore seguono il modello standard come descritto in precedenza):
 
 |Input|Risultato|
 |-----------|------------|
@@ -370,7 +370,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 |Fare clic su un oggetto all'interno del contenitore|Deseleziona il contenitore (se selezionato) e seleziona solo l'oggetto selezionato.|
 |Premere MAIUSC + clic o CTRL + clic su un oggetto contenuto e/o su un contenitore|Aggiunge l'oggetto selezionato a una selezione o a un gruppo di selezione esistente. Se l'oggetto selezionato è già membro del gruppo di selezione, viene rimosso dal gruppo di selezione.|
 
- Gli oggetti contenuti devono essere conformi al modello di selezione di base, come descritto nella sezione precedente. Dal test di usabilità della finestra di progettazione Windows Forms, gli utenti aspettavano l'accesso trasparente agli oggetti contenuti senza passaggi (imposti dall'oggetto di contenimento).
+ Gli oggetti contenuti devono essere conformi al modello di selezione di base, come descritto nella sezione precedente. Dal test di usabilità della finestra di progettazione Windows Form, gli utenti aspettavano l'accesso trasparente agli oggetti contenuti senza passaggi (imposti dall'oggetto di contenimento).
 
 #### <a name="disjoint-and-region-selections"></a>Selezioni non contigue e Region
  Gli editor di oggetti grafici devono supportare le selezioni non contigue. Si noti che questo grafico non Mostra l'aspetto del controllo per Visual Studio. Per le specifiche visive dettagliate, vedere [aspetto della selezione degli oggetti grafici](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_GraphicalObjectSelectionAppearance) .
@@ -484,7 +484,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 |Finestra di dialogo|Posizione della finestra di dialogo, se è stata spostata<br /><br /> Visualizzazione usata dall'utente nella finestra di dialogo|Alla chiusura della finestra di dialogo<br /><br /> Al termine della sessione di Visual Studio|In memoria<br /><br /> Registro di sistema in **HKEY_CURRENT_USER**|
 |Finestra|Le dimensioni e la posizione della finestra|Alla chiusura della finestra<br /><br /> Quando cambia la modalità di Visual Studio<br /><br /> Al termine della sessione di Visual Studio|File delle **Opzioni utente (con estensione suo)** per il progetto<br /><br /> File di opzioni personalizzate per le impostazioni della finestra|
 |Documento|Selezione corrente nel documento.<br /><br /> Visualizzazione del documento<br /><br /> Ultime diverse posizioni visitate dall'utente|Quando il documento viene salvato|File delle **Opzioni utente (con estensione suo)** per il progetto|
-|Progetto|Riferimenti a file<br /><br /> Riferimenti alle directory su disco<br /><br /> Riferimenti ad altri software<br /><br /> Componenti<br /><br /> Informazioni sullo stato del progetto stesso|Quando il progetto viene salvato|File di progetto|
+|Project|Riferimenti a file<br /><br /> Riferimenti alle directory su disco<br /><br /> Riferimenti ad altri software<br /><br /> Componenti<br /><br /> Informazioni sullo stato del progetto stesso|Quando il progetto viene salvato|File di progetto|
 |Soluzione|Riferimenti ai progetti<br /><br /> Riferimenti a file|Quando il progetto o la soluzione viene salvata|File della **soluzione (. sln)**|
 |Impostazioni in **strumenti > opzioni**|Personalizzazioni della tastiera<br /><br /> Personalizzazioni della barra degli strumenti<br /><br /> Combinazioni di colori|Quando si chiude la finestra di dialogo **strumenti > opzioni**<br /><br /> Al termine della sessione di Visual Studio|Registro di sistema in **HKEY_CURRENT_USER**|
 

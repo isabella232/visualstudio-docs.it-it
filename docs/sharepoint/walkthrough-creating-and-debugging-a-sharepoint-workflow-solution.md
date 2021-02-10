@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 637d46eaa9ac9306d63befed1c011c278b46af24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952720"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procedura dettagliata: creare ed eseguire il debug di una soluzione flusso di lavoro SharePoint
   In questa procedura dettagliata viene illustrato come creare un modello di flusso di lavoro sequenziale di base. Il flusso di lavoro controlla una proprietà di una raccolta documenti condivisa per determinare se un documento è stato rivisto. Se il documento è stato esaminato, il flusso di lavoro viene completato.

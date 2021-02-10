@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fe538a7efd884ef87ba815a6300dfa80a94dc3b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f6e29f2c65ec7503f06baca4af4c6772090d5eb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952291"
 ---
 # <a name="how-to-troubleshoot-services"></a>Procedura: risolvere i problemi relativi ai servizi
 Quando si tenta di ottenere un servizio, è possibile che si verifichino molti problemi comuni:
@@ -68,7 +68,7 @@ if (log == null) return;
 
     Se una finestra degli strumenti ospita un controllo utente o qualsiasi altro contenitore di controlli, il contenitore verrà ospitato dal modello di componenti di Windows e non potrà accedere ai [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] servizi. È possibile chiamare <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> per ottenere un provider di servizi VSPackage dall'interno di un contenitore di controlli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Elenco dei servizi disponibili](../extensibility/internals/list-of-available-services.md)
 - [Usare e fornire servizi](../extensibility/using-and-providing-services.md)
 - [Essentials servizio](../extensibility/internals/service-essentials.md)

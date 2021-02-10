@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: f79a9f5178959b9a1ec79dc3c22d8da9c0f6735e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7170983732ff1350061629e1e8aa4ec88fad3fa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80411983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952837"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Guida introduttiva: analizzare i dati di utilizzo della CPU in Visual Studio (ASP.NET Core)
 
@@ -42,11 +42,11 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
    Nella finestra di dialogo visualizzata scegliere **MVC** nel riquadro centrale e quindi fare clic su **OK**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
+   Se la finestra di avvio non è aperta,  scegliere > **finestra di avvio** file.
 
    Nella finestra Start scegliere **Crea un nuovo progetto**.
 
-   Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C# ** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
+   Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C#** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
 
    Dopo aver applicato la lingua e i filtri della piattaforma, scegliere il modello **applicazione Web ASP.NET (.NET Core)** , quindi fare clic su **Avanti**.
 
@@ -79,7 +79,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
     }
     ```
 
-    con questo codice:
+    Con questo:
 
     ```csharp
     public class ServerClass
@@ -162,7 +162,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
     }
     ```
 
-    con questo codice:
+    Con questo:
 
     ```csharp
     public ActionResult About()
@@ -185,7 +185,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
     }
     ```
 
-    con questo codice:
+    Con questo:
 
     ```csharp
     public IActionResult Privacy()
@@ -278,7 +278,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 - [Analizzare l'uso della CPU](../profiling/cpu-usage.md) per informazioni dettagliate sullo strumento Utilizzo CPU.
 - Analizzare l'uso della CPU senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [Raccogliere dati di profilatura senza il debug](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

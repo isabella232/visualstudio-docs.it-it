@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952122"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet (funzione)
 Questa funzione recupera dal controllo del codice sorgente ognuno dei file specificati senza alcuna interazione da parte dell'utente.
@@ -67,11 +67,11 @@ in Valore univoco associato a questa operazione.
 |SCC_E_BACKGROUNDGETINPROGRESS|È già in corso un recupero in background (il plug-in del controllo del codice sorgente deve restituire questo valore solo se non supporta le operazioni batch simultanee).|
 |SCC_I_OPERATIONCANCELED|Operazione annullata prima del completamento.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione viene sempre chiamata su un thread diverso da quello che ha caricato il plug-in del controllo del codice sorgente. Non è previsto che la funzione restituisca fino a quando non viene eseguita. Tuttavia, può essere chiamato più volte con più elenchi di file, nello stesso momento.
 
  L'uso dell' `dwFlags` argomento è identico a quello di [SccGet](../extensibility/sccget-function.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

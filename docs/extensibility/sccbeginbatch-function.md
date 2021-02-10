@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a1203d97bfbf105a69b97516bda307825bd99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952135"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch (funzione)
 Questa funzione avvia una sequenza di batch di operazioni del controllo del codice sorgente. Il [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch non possono essere annidati.
@@ -39,11 +39,11 @@ SCCRTN SccBeginBatch(void);
 |SCC_OK|Il batch di operazioni è stato avviato correttamente.|
 |SCC_E_UNKNOWNERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I batch del controllo del codice sorgente vengono usati per eseguire le stesse operazioni in più progetti o in più contesti. I batch possono essere usati per eliminare le finestre di dialogo per progetto ridondanti dall'esperienza utente durante un'operazione in batch. La `SccBeginBatch` funzione e [SccEndBatch](../extensibility/sccendbatch-function.md) vengono usati come coppia di funzioni per indicare l'inizio e la fine di un'operazione. Non possono essere annidati. `SccBeginBatch` imposta un flag che indica che è in corso un'operazione batch.
 
  Mentre è attiva un'operazione batch, il plug-in del controllo del codice sorgente deve presentare al massimo una finestra di dialogo per qualsiasi domanda all'utente e applicare la risposta da tale finestra di dialogo in tutte le operazioni successive.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

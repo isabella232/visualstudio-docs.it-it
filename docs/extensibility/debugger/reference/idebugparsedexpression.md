@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: be6486ed-b070-4898-95b1-58581bcb4447
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22069b8eedb06d67eafaf7333f379a057c1b6f23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 573c1528d37bd41d364430d610a31f4dfe89e4f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953227"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
@@ -44,7 +44,7 @@ IDebugParsedExpression : IUnknown
 |------------|-----------------|
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|Valuta l'espressione analizzata.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Quando il chiamante è pronto per la valutazione dell'espressione, chiama [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) per restituire un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che contiene il risultato della valutazione. Questo approccio in due parti per la valutazione, l'analisi e la valutazione di, consente di valutare l'espressione analizzata più volte, ignorando il processo che richiede molto tempo per l'analisi dell'espressione.
 
 ## <a name="requirements"></a>Requisiti
@@ -54,7 +54,7 @@ IDebugParsedExpression : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md).
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

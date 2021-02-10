@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2611828f1e9bb2aec740e392db18ce60839d19a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952395"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Specifica la posizione in cui si trova un assembly.
@@ -28,21 +28,21 @@ Specifica la posizione in cui si trova un assembly.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-enum enum_ASSEMBLYLOCRESOLUTION {
-    ALR_NAME      = 0x0,
-    ALR_USERDIR   = 0x1,
-    ALR_SHAREDDIR = 0x2,
-    ALR_REMOTEDIR = 0x4,
+enum enum_ASSEMBLYLOCRESOLUTION {
+    ALR_NAME      = 0x0,
+    ALR_USERDIR   = 0x1,
+    ALR_SHAREDDIR = 0x2,
+    ALR_REMOTEDIR = 0x4,
 };
-typedef DWORD ASSEMBLYLOCRESOLUTION;
+typedef DWORD ASSEMBLYLOCRESOLUTION;
 ```
 
 ```csharp
-public enum enum_ASSEMBLYLOCRESOLUTION {
-    ALR_NAME      = 0x0,
-    ALR_USERDIR   = 0x1,
-    ALR_SHAREDDIR = 0x2,
-    ALR_REMOTEDIR = 0x4,
+public enum enum_ASSEMBLYLOCRESOLUTION {
+    ALR_NAME      = 0x0,
+    ALR_USERDIR   = 0x1,
+    ALR_SHAREDDIR = 0x2,
+    ALR_REMOTEDIR = 0x4,
 };
 ```
 
@@ -59,7 +59,7 @@ L'assembly si trova in una directory condivisa.
 `ALR_REMOTEDIR`\
 L'assembly si trova in una directory remota.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questi valori vengono restituiti dai metodi [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .
 
 Questi valori possono essere combinati con l' `OR` operazione.
@@ -71,7 +71,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
 - [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

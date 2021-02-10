@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952668"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: estendere Esplora server per visualizzare le web part
   In Visual Studio è possibile usare il nodo **connessioni di SharePoint** di **Esplora server** per visualizzare i componenti nei siti di SharePoint. Tuttavia, per impostazione predefinita, **Esplora server** non visualizza alcuni componenti. In questa procedura dettagliata si estenderà **Esplora server** in modo da visualizzare la raccolta web part in ogni sito di SharePoint connesso.
@@ -333,7 +333,7 @@ ms.locfileid: "95970221"
 
 #### <a name="to-test-the-extension"></a>Per testare l'estensione
 
-1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scegliere **Visualizza** Esplora server dalla barra dei menu  >  **Server Explorer**.
+1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scegliere **Visualizza** Esplora server dalla barra dei menu  >  .
 
 2. Se il sito di SharePoint che si desidera utilizzare per il test non viene visualizzato nel nodo connessioni di **SharePoint** in **Esplora server**, attenersi alla procedura seguente:
 

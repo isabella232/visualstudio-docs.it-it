@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c47a920e99ece3fb0853e4e6a26dba3c8d0c45c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953305"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) a gestione debug sessione (SDM) per restituire una stringa.
@@ -41,7 +41,7 @@ IDebugOutputStringEvent2 : IUnknown
 |------------|-----------------|
 |[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Ottiene il messaggio visualizzabile.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Nel codice non gestito, ad esempio, la stringa da restituire può provenire quando il programma di cui è in corso il debug invia una stringa alla `OutputDebugString` funzione Win32. Questa stringa viene intercettata da DE e inviata al SDM come `IDebugOutputStringEvent2` evento.
 
  Usare [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) per inviare un messaggio che richiede una risposta dell'utente.
@@ -55,7 +55,7 @@ IDebugOutputStringEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

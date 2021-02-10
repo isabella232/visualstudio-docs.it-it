@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07625f7249092e2de3d3dccaaef31a2869755e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89781298dc9134f80f8f57cc0e008068fa47bad3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953201"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Determina se il punto di interruzione in sospeso può essere associato a una posizione di codice.
@@ -29,13 +29,13 @@ Determina se il punto di interruzione in sospeso può essere associato a una pos
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CanBind ( 
+HRESULT CanBind ( 
    IEnumDebugErrorBreakpoints2** ppErrorEnum
 );
 ```
 
 ```csharp
-int CanBind ( 
+int CanBind ( 
    out IEnumDebugErrorBreakpoints2 ppErrorEnum
 );
 ```
@@ -47,7 +47,7 @@ out Restituisce un oggetto [IEnumDebugErrorBreakpoints2](../../../extensibility/
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK.` `S_FALSE` se il punto di interruzione non può eseguire l'associazione, nel qual caso gli errori vengono restituiti dal `ppErrorEnum` parametro. In caso contrario, verrà restituito un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene chiamato per determinare cosa accadrebbe se il punto di interruzione in sospeso fosse associato. Chiamare il metodo [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) per associare effettivamente il punto di interruzione in sospeso.
 
 ## <a name="example"></a>Esempio
@@ -138,7 +138,7 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

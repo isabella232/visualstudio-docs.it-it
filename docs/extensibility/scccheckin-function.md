@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68b03f594ad686f2b3e23aab52cabfe4fa5d92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952109"
 ---
 # <a name="scccheckin-function"></a>SccCheckin (funzione)
 Questa funzione archivia i file precedentemente estratti nel sistema di controllo del codice sorgente, archiviando le modifiche e creando una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.
@@ -83,10 +83,10 @@ in Opzioni specifiche del plug-in SCC.
 |SCC_I_RELOADFILE|È necessario ricaricare un file o un progetto.|
 |SCC_E_FILENOTEXIST|Il file locale non è stato trovato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il commento si applica a tutti i file in fase di verifica. L'argomento comment può essere una `null` stringa, nel qual caso il plug-in del controllo del codice sorgente può richiedere all'utente una stringa di commento per ogni file.
 
  All' `fOptions` argomento può essere assegnato un valore del `SCC_KEEP_CHECKEDOUT` flag per indicare l'intento dell'utente di controllare il file ed estrarlo di nuovo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

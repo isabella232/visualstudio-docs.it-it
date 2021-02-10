@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2da595754066adefb397bf90085b7d2e58ab49d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953110"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Attiva o Disabilita lo stato di abilitazione del punto di interruzione in sospeso.
@@ -47,7 +47,7 @@ in Impostare su un valore diverso da zero ( `TRUE` ) per abilitare un punto di i
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Quando un punto di interruzione in sospeso viene abilitato o disabilitato, tutti i punti di interruzione associati vengono impostati sullo stesso stato.
 
 Questo metodo può essere chiamato il numero di volte necessario, anche se il punto di interruzione è già abilitato o disabilitato.
@@ -85,5 +85,5 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

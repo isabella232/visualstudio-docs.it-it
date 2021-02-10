@@ -7,15 +7,15 @@ ms.date: 02/05/2019
 ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f80dd85e1cc8f93784ed938ef1788730b3c926e8
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 2dd480bb214acf2529d271d085711f21effea23a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952928"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Presentazione dell'IDE di Visual Studio
 
@@ -120,7 +120,7 @@ Il **Elenco errori** Mostra gli errori, gli avvisi e i messaggi relativi allo st
 
 Nella finestra **Output** vengono visualizzati i messaggi di output generati dalla compilazione del progetto e dal provider di controllo del codice sorgente.
 
-Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione**dal menu **Compila** . La finestra di **output** ottiene automaticamente lo stato attivo e visualizza un messaggio di compilazione riuscito.
+Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione** dal menu **Compila** . La finestra di **output** ottiene automaticamente lo stato attivo e visualizza un messaggio di compilazione riuscito.
 
 ![Finestra Output di Visual Studio](media/build-output-minimal.png)
 
@@ -158,7 +158,7 @@ Sono state presentate solo alcune delle funzionalità di Visual Studio per inizi
 > [!div class="nextstepaction"]
 > [Informazioni su progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Altre funzionalità di Visual Studio 2017](../ide/advanced-feature-overview.md)

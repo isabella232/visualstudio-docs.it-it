@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ad038774b4acfb7256edbaa35ae4c67cfe835891
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 358d099839c42c20b47b850b84dc3dd307855b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951888"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Procedura: Implementare un'interfaccia in Progettazione classi
 
@@ -50,7 +50,7 @@ Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi](how-to
 
      Viene visualizzato un simbolo di interfaccia collegato alla classe, mentre un'etichetta con il nome dell'interfaccia identifica la relazione di ereditarietà. Visual Studio genera stub per tutti i membri di interfaccia. A questo punto, l'interfaccia è stata implementata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Creare tipi usando Progettazione classi](how-to-create-types.md)
 - [Procedura: visualizzare i tipi esistenti](how-to-view-existing-types.md)

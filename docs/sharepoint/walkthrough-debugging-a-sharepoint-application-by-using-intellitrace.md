@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IntelliTrace
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: e2ce8bc2c493d59b8a06a64ff69838e828315bf2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952655"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace
 
@@ -331,7 +331,7 @@ A questo punto è possibile visualizzare il file di log IntelliTrace in Visual S
 
      Il codice ora viene eseguito correttamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Verificare ed eseguire il debug del codice SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

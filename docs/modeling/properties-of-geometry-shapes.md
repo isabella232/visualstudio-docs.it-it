@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, geometry shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e66f68079ae97f0a2514a77acab4d779561ed86
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bcb7bb1bb3950fbc79d9151b8b98ba3b2032494
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951771"
 ---
 # <a name="properties-of-geometry-shapes"></a>Proprietà delle forme geometriche
 È possibile utilizzare forme Geometry per specificare il modo in cui le istanze delle classi di dominio vengono visualizzate in un linguaggio specifico di dominio. Per ulteriori informazioni, vedere [come definire un linguaggio Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un linguaggio Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,7 +27,7 @@ ms.locfileid: "97360663"
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
-|Colore riempimento|Colore di riempimento di questa forma.|bianco|
+|Colore riempimento|Colore di riempimento di questa forma.|White|
 |Modalità gradiente riempimento|Modalità di sfumatura riempimento di questa forma (orizzontale, verticale, diagonale in avanti, diagonale posteriore o nessuna).|Ridimensionamento orizzontale|
 |Geometria|Geometria di questa forma (rettangolo, rettangolo arrotondato, ellisse o cerchio).|Rettangolo|
 |Con punti di connessione predefiniti|Se `True` , la forma utilizzerà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
@@ -43,12 +43,12 @@ ms.locfileid: "97360663"
 |Forma geometria di base|Classe di base di questa forma.|(nessuna)|
 |Nome|Nome di questa forma.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questa forma.|Spazio dei nomi corrente|
-|Tipo di descrizione comando|Modalità di definizione della descrizione comando (fixed, variable o None). Se è corretto, il valore della `Fixed Tooltip Text` proprietà viene usato come descrizione comando; se variabile, la descrizione comando è definita nel codice personalizzato.|Nessuno|
+|Tipo di descrizione comando|Modalità di definizione della descrizione comando (fixed, variable o None). Se è corretto, il valore della `Fixed Tooltip Text` proprietà viene usato come descrizione comando; se variabile, la descrizione comando è definita nel codice personalizzato.|nessuno|
 |Note|Note informali associate a questo elemento.|\<none>|
 |Altezza iniziale|Altezza iniziale della forma, in pollici.|1|
 |Larghezza iniziale|Larghezza iniziale della forma, in pollici.|1.5|
 |Colore riempimento esposto come proprietà<br /><br /> Modalità di sfumatura riempimento esposta<br /><br /> Colore struttura esposto come proprietà<br /><br /> Stile tratteggiato del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà dichiarata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposti**.|Falso|
-|Description|Descrizione utilizzata per documentare la finestra di progettazione generata.|\<none>|
+|Descrizione|Descrizione utilizzata per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<none>|
 |Testo della descrizione comando fisso|Testo utilizzato per una descrizione comando fissa.|\<none>|
 |Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questa forma.|\<none>|

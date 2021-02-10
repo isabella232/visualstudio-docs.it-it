@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4660c4efc7c22431b7c9f0d9180576d524a372
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d5249102013aaf72a48c7137b415636952ed1d0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951810"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Procedura: Visualizzare i tipi esistenti in Progettazione classi
 
@@ -63,7 +63,7 @@ La prima volta che viene visualizzato un tipo nel diagramma, la relativa forma a
 
 In **Esplora soluzioni** o **Visualizzazione classi** fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizza**, quindi scegliere **Visualizza diagramma classi**. Verrà creato un diagramma classi compilato automaticamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Visualizzare l'ereditarietà tra tipi](how-to-view-inheritance-between-types.md)
 - [Procedura: Personalizzare i diagrammi classi](how-to-customize-class-diagrams.md)

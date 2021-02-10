@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac857d961b1ae736645ba2cfda3f1ef5755d0fa1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d7cc99747571feb5b443f10355d867da7c22f44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952915"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procedura: Impostare le opzioni di accessibilità IDE
 
@@ -54,7 +54,7 @@ Di seguito viene descritto come disattivare le finestre popup:
 
 ### <a name="change-the-size-of-text"></a>Modificare le dimensioni del testo
 
-È possibile modificare le impostazioni per le finestre degli strumenti basate su testo, ad esempio le finestre **Comando**, **Immediato** e **Output** usando ** Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori**.
+È possibile modificare le impostazioni per le finestre degli strumenti basate su testo, ad esempio le finestre **Comando**, **Immediato** e **Output** usando **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori**.
 
 Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco a discesa **Mostra impostazioni per**, l'impostazione predefinita viene indicata come **Predefinita** negli elenchi a discesa **Primo piano elemento** e **Sfondo elemento**. Per modificare queste impostazioni, scegliere il pulsante **Personalizza**.
 
@@ -62,7 +62,7 @@ Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-1. Scegliere **Environment**  >  **tipi di carattere e colori**dell'ambiente.
+1. Scegliere   >  **tipi di carattere e colori** dell'ambiente.
 
 1. Selezionare un'opzione nel menu a discesa **Mostra impostazioni per**.
 
@@ -128,7 +128,7 @@ Per migliorare l'usabilità e l'accessibilità delle barre degli strumenti, è p
 
 1. Accanto a In **nome** specificare una nuova didascalia per il pulsante selezionato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Funzionalità di accessibilità di Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Accessibilità per Visual Studio per Mac](/visualstudio/mac/accessibility/)
