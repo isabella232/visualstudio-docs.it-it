@@ -4,18 +4,18 @@ ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8eb87ff8e3acc141c49a495b155fb769e03fb89b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8c389ac6285b3f20dcdf05833f1ff3202d155c4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962808"
 ---
 # <a name="extract-base-class"></a>Estrai classe di base
 
@@ -43,6 +43,6 @@ Questo refactoring si applica a:
 
 Verrà visualizzata la nuova finestra di dialogo **Estrai classe di base** in cui è possibile specificare il nome della classe di base e il percorso in cui deve essere inserita. È possibile selezionare i membri che si desidera trasferire alla nuova classe di base e scegliere di rendere i membri astratti selezionando la casella di controllo nella colonna crea abstract.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

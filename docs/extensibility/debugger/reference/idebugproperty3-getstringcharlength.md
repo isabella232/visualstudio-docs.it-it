@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1a2eb62ab748562acd8f0a894a3675f79981ccc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3189a7c84ed36827ab48b27c8f727314eb34983
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963120"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Restituisce il numero di caratteri nella stringa della proprietà associata.
@@ -48,7 +48,7 @@ int GetStringCharLength(
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questo metodo viene in genere utilizzato come preludio all'allocazione di un buffer per una chiamata al metodo [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) .
 
 ## <a name="example"></a>Esempio
@@ -94,6 +94,6 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

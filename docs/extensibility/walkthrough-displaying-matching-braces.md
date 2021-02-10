@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f89c6303dc8ca9e48fb212a3ae889251b34ece91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961729"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Procedura dettagliata: visualizzare le parentesi graffe corrispondenti
 Implementare le funzionalità basate sul linguaggio, ad esempio la corrispondenza tra parentesi graffe definendo le parentesi graffe che si vuole trovare e aggiungere un tag del marcatore di testo alle parentesi graffe corrispondenti quando il cursore si trova su una delle parentesi graffe. È possibile definire parentesi graffe nel contesto di una lingua, definire l'estensione del nome di file e il tipo di contenuto e applicare i tag solo a tale tipo o applicare i tag a un tipo di contenuto esistente, ad esempio "Text". Nella procedura dettagliata seguente viene illustrato come applicare tag di corrispondenza tra parentesi graffe al tipo di contenuto "Text".

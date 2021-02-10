@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a972e183047b9d8cb7adfd30638be2fd4b0de86
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 475e220a4c2dfc739c3055eb541ef89a6966cabb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963276"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
 
@@ -64,7 +64,7 @@ Abilita o disabilita le regole di sicurezza. È anche possibile espandere questa
 Regole di utilizzo\
 Abilita o disabilita le regole di utilizzo. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analisi del codice per gli avvisi del codice gestito](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [Panoramica dell'analisi codice gestito](../../code-quality/code-analysis-for-managed-code-overview.md)

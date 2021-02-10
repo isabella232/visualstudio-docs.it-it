@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 2133977de827fe558ee9323280c5f05df683ed59
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: df32fa09b95a9adfbc245ff5c3ec3ab9fbabd1d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961456"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Procedura: Importare i risultati del test di carico in un repository
 
@@ -55,7 +55,7 @@ Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzion
 
      I risultati vengono importati e visualizzati nell'elenco **Risultati test di carico**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire i risultati dei test di carico nel repository del Risultati test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

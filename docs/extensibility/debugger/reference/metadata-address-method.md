@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26de14b4c5e23334da85d49d5192ec332e418af8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961924"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 Questa struttura rappresenta l'indirizzo di un metodo di una classe.
@@ -43,7 +43,7 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
  `tokMethod`\
  ID del metodo.
 
@@ -55,7 +55,7 @@ public struct METADATA_ADDRESS_METHOD {
  `dwVersion`\
  Versione del metodo (questo valore è univoco per il provider di simboli).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_METHOD` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisiti
@@ -65,7 +65,7 @@ public struct METADATA_ADDRESS_METHOD {
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

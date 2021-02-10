@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962197"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Questa interfaccia rappresenta una proprietà di stack frame, una proprietà del documento del programma o un'altra proprietà. La proprietà è in genere il risultato della valutazione di un'espressione.
@@ -62,7 +62,7 @@ IDebugProperty2 : IUnknown
 |[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Restituisce un riferimento al valore di questa proprietà.|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Restituisce le informazioni estese di una proprietà.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Una proprietà, come rappresentata da un' `IDebugProperty2` interfaccia, può essere considerata come un valore con un nome, un tipo e un indirizzo. In termini più generali, un oggetto `IDebugProperty2` può rappresentare qualsiasi elemento con una struttura gerarchica, con padri e nodi figlio.
 
  Una proprietà è in genere transitoria e dura solo fino a quando l'stack frame corrente, ad esempio. D'altra parte, un riferimento, come rappresentato da un'interfaccia [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , dura fino a quando il valore rimane in memoria.
@@ -76,7 +76,7 @@ IDebugProperty2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

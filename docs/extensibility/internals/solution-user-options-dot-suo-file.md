@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a978986ed6ef32dbad3ad06eafcba11d7f4782ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962912"
 ---
 # <a name="solution-user-options-suo-file"></a>File delle opzioni utente della soluzione (con estensione suo)
 Il file delle opzioni utente della soluzione (. suo) contiene le opzioni per la soluzione per utente. Questo file non deve essere archiviato nel controllo del codice sorgente.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961768"
 ---
 # <a name="extend-the-output-window"></a>Estendere la finestra di output
 La finestra **output** è un set di riquadri di testo in lettura/scrittura. Visual Studio include i riquadri predefiniti seguenti: **Build**, in cui i progetti comunicano messaggi sulle compilazioni e **generale**, in cui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica i messaggi sull'IDE. I progetti ottengono automaticamente un riferimento al riquadro di **compilazione** tramite i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metodi di interfaccia e Visual Studio offre accesso diretto al riquadro **generale** tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servizio. Oltre ai riquadri predefiniti, è possibile creare e gestire i riquadri personalizzati.

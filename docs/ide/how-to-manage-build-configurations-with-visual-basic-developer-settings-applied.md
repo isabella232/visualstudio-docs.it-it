@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd13c0a9f64ce484d9ba4e3193f7da94d0b1e446
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 5912603331ff6681cd6cc98cbb1afd88246ea695
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962873"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer
 
@@ -42,7 +42,7 @@ Per impostazione predefinita, le impostazioni di Visual Basic Developer nascondo
 
      **Configuration Manager** è ora disponibile nel menu **Compilazione** e gli elenchi **Configurazione** e **Piattaforma** sono visibili in **Creazione progetti**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

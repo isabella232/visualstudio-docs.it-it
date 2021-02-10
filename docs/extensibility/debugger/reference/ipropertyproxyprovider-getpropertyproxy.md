@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35c23fc56c883845bdb7fb73daa60a845ee5e21a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7efff35e46ed0849045cf6c743a5a26c3d86bcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962145"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 Recupera l'interfaccia del proxy di proprietà per l'ID proxy specificato.
@@ -51,10 +51,10 @@ out Restituisce un oggetto [IPropertyProxyEESide](../../../extensibility/debugge
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per supportare i visualizzatori di tipi esterni, questo metodo in genere trasmette la chiamata al metodo [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) . Per informazioni dettagliate sul modo in cui viene ottenuto il IEEVisualizerService, vedere [visualizzazione e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)

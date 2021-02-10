@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 15d04d105264d07a1f883c5b67ce57c8590375a8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 684715ed8ac29a3c85d0ea46799a2e14fb9722bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961443"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedura: Gestire insiemi di contatori usando l'Editor test di carico
 
@@ -62,7 +62,7 @@ La gestione degli insiemi di contatori implica la scelta del gruppo di computer 
 
 6. Scegliere **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

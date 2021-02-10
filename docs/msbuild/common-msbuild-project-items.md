@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: cd43be13351309e0f4715ee889fb910f4f7e49a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963198"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 
@@ -32,7 +32,7 @@ In MSBuild un elemento è un riferimento denominato a uno o più file. Gli eleme
 
 Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 
-### <a name="reference"></a>Informazioni di riferimento
+### <a name="reference"></a>Riferimento
 
 Rappresenta un riferimento all'assembly (gestito) nel progetto.
 
@@ -136,7 +136,7 @@ Rappresenta file che non sono compilati nel progetto, ma possono essere incorpor
 | Visible | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 
-### <a name="none"></a>Nessuno
+### <a name="none"></a>nessuno
 
 Rappresenta i file che non hanno un ruolo nel processo di compilazione.
 
@@ -186,7 +186,7 @@ Rappresenta il progetto FxCop da importare.
 
 Rappresenta gli assembly i cui spazi dei nomi devono essere importati dal compilatore Visual Basic.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)
 - [Metadati dell'elemento MSBuild comuni](common-msbuild-item-metadata.md)

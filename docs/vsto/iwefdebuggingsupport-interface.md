@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6a818973bdc2f62194d6ed0026c0798806fe5f2a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9fc319429414c8976d748a30ecdd1e164ce22b63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962262"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Interfaccia IWefDebuggingSupport
   Implementata da un ambiente di debug, ad esempio Visual Studio, per facilitare il debug delle app per Office. L'applicazione di Office, ad esempio Word o Excel, ottiene questa interfaccia da Visual Studio e quindi chiama i metodi sull'interfaccia in determinati punti durante la sessione di debug.

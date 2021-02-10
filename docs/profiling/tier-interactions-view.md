@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Tier Interactions view
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 350810bba477f5a86963862fb496cf05eaf2c810
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963185"
 ---
 # <a name="tier-interactions-view"></a>Interazioni tra livelli (visualizzazione)
 
 La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui tempi di esecuzione nelle funzioni di applicazioni multilivello che comunicano con i database tramite [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. I dati vengono raccolti solo per le chiamate di funzione sincrone.
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 

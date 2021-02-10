@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b87113b47ee0dc4d296bb5e206d6d277394160c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962275"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione
   Usando la finestra di progettazione della barra multifunzione è possibile creare una scheda personalizzata per aggiungervi e posizionarvi controlli.
@@ -161,7 +161,7 @@ ms.locfileid: "97524826"
 
 - Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0afc4284795ae8dcae7b41d9207ddc6e7c11e67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bc76d7e7aaf9e443fc1dec08d83b3eb9e343e0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963055"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug della sessione (SDM) dopo l'esecuzione dell'istruzione/routine di una funzione.
@@ -41,7 +41,7 @@ IDebugReturnValueEvent2 : IUnknown
 |------------|-----------------|
 |[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|Ottiene il valore restituito durante l'esecuzione dell'istruzione/routine di una funzione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il valore restituito da una funzione può essere ottenuto chiamando [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md). Il valore restituito viene visualizzato nella finestra **auto** .
 
 ## <a name="requirements"></a>Requisiti
@@ -51,6 +51,6 @@ IDebugReturnValueEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 632150101b966e128e8a34636b01a369a1db5c64
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7e7b834dc41fb019e70aa40bca995770985d4c05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960923"
 ---
 # <a name="security-issues"></a>Problemi di sicurezza
 Per eseguire il debug di un programma con Visual Studio, le uniche autorizzazioni necessarie sono le stesse richieste da uno sviluppatore per eseguire il programma. Questo include il debug remoto per la maggior parte delle situazioni. Alcune situazioni, che coinvolgono altri servizi, ad esempio Internet Information Service, possono richiedere un livello di autorizzazioni più elevato.

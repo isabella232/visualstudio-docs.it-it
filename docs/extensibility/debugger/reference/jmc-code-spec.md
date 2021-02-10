@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0ca5fd553d94fdf866424b4cd0dc2b2a5fdb094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962106"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 Questa struttura viene utilizzata per impostare le informazioni JustMyCode per un modulo.
@@ -41,14 +41,14 @@ public struct JMC_CODE_SPEC {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `fIsUserCode`\
 Diverso da zero ( `TRUE` ) se il modulo deve essere considerato codice utente; in caso contrario, zero ( `FALSE` ) se il modulo deve essere trattato come codice esterno e non deve essere sottoposto a debug.
 
 `bstrModuleName`\
 Nome del modulo in questione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura viene passata come un elenco di tali strutture al metodo [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -58,6 +58,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b8e36b6a6792b51552cb4203adebdc101cd808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963016"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 Contiene informazioni su un processo.
@@ -28,7 +28,7 @@ Contiene informazioni su un processo.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-typedef struct tagPROCESS_INFO { 
+typedef struct tagPROCESS_INFO { 
    PROCESS_INFO_FIELDS Fields;
    BSTR                bstrFileName;
    BSTR                bstrBaseName;
@@ -42,7 +42,7 @@ typedef struct tagPROCESS_INFO { 
 ```
 
 ```csharp
-public struct PROCESS_INFO { 
+public struct PROCESS_INFO { 
    public uint          Fields;
    public string        bstrFileName;
    public string        bstrBaseName;
@@ -55,7 +55,7 @@ public struct PROCESS_INFO { 
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
  `Fields`\
  Combinazione di flag dell'enumerazione [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) che specificano i campi da compilare.
 
@@ -83,7 +83,7 @@ public struct PROCESS_INFO { 
  `Flags`\
  Combinazione di flag dell'enumerazione [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) che specificano le proprietà del processo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) dove viene compilata.
 
 ## <a name="requirements"></a>Requisiti
@@ -93,7 +93,7 @@ public struct PROCESS_INFO { 
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)

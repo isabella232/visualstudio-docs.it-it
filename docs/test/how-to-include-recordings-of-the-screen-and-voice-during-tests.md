@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 08ae6d19327a956b5dab71fa30b0b33742390d2b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 2ca477e25daa76e63e786698e7e2fa1e39c7f77f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961469"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test
 
@@ -69,7 +69,7 @@ La funzionalità di registrazione dello schermo e della voce può essere utilizz
     > Per reimpostare la configurazione per l'adattatore dati di diagnostica, scegliere **Reimposta configurazione predefinita** in Visual Studio.
     ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Raccogliere dati di diagnostica durante i test (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
 - [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)

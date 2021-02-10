@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4d0fd12495a59427500c16ef6f37d9f8b6e61f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9735c394e0b88dbe7ea3a5113026d4012839b8fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961989"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Specifica il tipo e il motivo del messaggio.
@@ -28,7 +28,7 @@ Specifica il tipo e il motivo del messaggio.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-enum enum_MESSAGETYPE { 
+enum enum_MESSAGETYPE { 
    MT_OUTPUTSTRING      = 0x0000001,
    MT_MESSAGEBOX        = 0x00000002,
    MT_TYPE_MASK         = 0x000000FF,
@@ -40,7 +40,7 @@ typedef DWORD MESSAGETYPE;
 ```
 
 ```csharp
-public enum enum_MESSAGETYPE { 
+public enum enum_MESSAGETYPE { 
    MT_OUTPUTSTRING      = 0x0000001,
    MT_MESSAGEBOX        = 0x00000002,
    MT_TYPE_MASK         = 0x000000FF,
@@ -69,7 +69,7 @@ public enum enum_MESSAGETYPE { 
  `MT_REASON_MASK`\
  Valore della maschera per isolare il motivo del messaggio visualizzato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questi valori vengono restituiti dai metodi [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) .
 
  Uno dei motivi per cui i valori possono essere combinati con uno dei valori di destinazione di output utilizzando un bit per bit `OR` .
@@ -81,7 +81,7 @@ public enum enum_MESSAGETYPE { 
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)
 - [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

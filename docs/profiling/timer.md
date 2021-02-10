@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 908685b49a08b3084c31e768675e64bc087bc727
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3aeffc3be3fee5d3460ddea340d8c4a216829e08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963159"
 ---
 # <a name="timer"></a>Timer
 L'opzione *Timer di* **VSPerfCmd.exe** imposta l'evento di profilatura campionato su cicli del clock del processore e, facoltativamente, modifica il numero di cicli in un intervallo di campionamento dal valore predefinito di 10.000.000. In un processore da 1 GH (un gigahertz), un valore di 10.000.000 cicli di clock è pari a circa 100 campioni al secondo. Il numero minimo di cicli che è possibile specificare è 50.000.
@@ -61,7 +61,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3627a8944941fc77bb9b19fe3dd0a1549f41892a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961586"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Controllare la posizione di esecuzione del codice R con le aree di lavoro
 
@@ -29,20 +29,20 @@ In questa finestra il segno di spunta verde indica l'area di lavoro attiva alla 
 
 Per impostazione predefinita lo stato dell'area di lavoro non viene salvato quando si chiude e si riapre un progetto in RTVS. È tuttavia possibile modificare questa funzionalità mediante le [opzioni dell'area di lavoro](options-for-r-tools-in-visual-studio.md#workspace).
 
-Il **R Tools**  >  **Session**  >  comando**Reimposta** sessione di R Tools e il pulsante Reimposta barra degli strumenti nella finestra interattiva reimposta anche lo stato dell'area di lavoro in qualsiasi momento. Per le aree di lavoro remote la reimpostazione elimina il profilo utente creato alla prima connessione al server remoto e di fatto elimina anche tutti i file accumulati nel server remoto.
+Il   >    >  comando **Reimposta** sessione di R Tools e il pulsante Reimposta barra degli strumenti nella finestra interattiva reimposta anche lo stato dell'area di lavoro in qualsiasi momento. Per le aree di lavoro remote la reimpostazione elimina il profilo utente creato alla prima connessione al server remoto e di fatto elimina anche tutti i file accumulati nel server remoto.
 
 ## <a name="local-workspaces"></a>Aree di lavoro locali
 
 Nell'elenco delle aree di lavoro locali vengono visualizzati tutti gli interpreti R installati nel computer in uso.
 
-All'avvio di Visual Studio, tenta di rilevare automaticamente tutte le versioni di R installate esaminando la chiave del registro di sistema **\software\r-core \\ HKEY_LOCAL_MACHINE** . Poiché questo controllo viene effettuato solo all'avvio, se si installa un nuovo interprete R è necessario riavviare Visual Studio.
+All'avvio di Visual Studio, tenta di rilevare automaticamente tutte le versioni di R installate, esaminando la chiave del registro di **sistema \\HKEY_LOCAL_MACHINE\Software\R-Core** . Poiché questo controllo viene effettuato solo all'avvio, se si installa un nuovo interprete R è necessario riavviare Visual Studio.
 
 È possibile che un interprete R installato in modo non standard (ad esempio copiando direttamente i file in una cartella invece di eseguire un programma di installazione) non venga rilevato. In questo caso creare manualmente una nuova area di lavoro R locale come segue:
 
 1. Selezionare il pulsante **Aggiungi** nella finestra Aree di lavoro.
 1. Immettere un nome per la nuova area di lavoro.
 1. Immettere il percorso della cartella radice R, che contiene la cartella *bin* con l'interprete. Immettere anche eventuali argomenti della riga di comando facoltativi da passare all'interprete quando viene avviato da RTVS.
-1. Al termine, selezionare **Salva** .
+1. Al termine, selezionare **Salva**.
 
 ![Aggiunta di una nuova area di lavoro](media/workspaces-add-new.png)
 
@@ -99,13 +99,13 @@ Questo avviso viene tuttavia visualizzato anche quando si usa un *certificato au
 
 ## <a name="directories-on-local-and-remote-computers"></a>Directory sui computer locali e remoti
 
-Per impostazione predefinita, quando si avvia un nuovo interprete R in un'area di lavoro locale, la directory di lavoro corrente è *%userprofile%\Documenti*. È possibile cambiare la directory in qualsiasi momento usando **R Tools**i  >  comandi di**directory di lavoro** di R Tools oppure facendo clic con il pulsante destro del mouse su un progetto in Visual Studio Esplora soluzioni e scegliendo comandi come **Imposta directory di lavoro qui**.
+Per impostazione predefinita, quando si avvia un nuovo interprete R in un'area di lavoro locale, la directory di lavoro corrente è *%userprofile%\Documenti*. È possibile cambiare la directory in qualsiasi momento usando i  >  comandi di **directory di lavoro** di R Tools oppure facendo clic con il pulsante destro del mouse su un progetto in Visual Studio Esplora soluzioni e scegliendo comandi come **Imposta directory di lavoro qui**.
 
 Quando si effettua la connessione a un computer remoto per la prima volta, RTVS crea automaticamente un profilo utente basato sulle credenziali usate e la directory di lavoro viene impostata sulla cartella *Documenti* in quel profilo. La cartella viene usata per tutte le sessioni remote successive che usano le stesse credenziali.
 
 Di conseguenza la posizione esatta in cui viene eseguito il codice può essere diversa nelle aree di lavoro locali e remote. Usare quindi sempre nel codice percorsi relativi per i file di dati ed elementi simili, in modo tale che il codice sia portabile tra le aree di lavoro.
 
-Si noti anche che con le aree di lavoro remote tutti i file presenti nella directory di lavoro vengono mantenuti tra le diverse sessioni eseguite con lo stesso profilo utente. Come indicato in precedenza, è possibile eliminare questi file usando il comando di reimpostazione della sessione di **R Tools**  >  **Session**  >  **Reset** (o il pulsante di reimpostazione nella finestra interattiva) quando si usa un'area di lavoro remota. Questo comando elimina dal server il profilo utente, che verrà ricreato quando si effettua di nuovo la connessione.
+Si noti anche che con le aree di lavoro remote tutti i file presenti nella directory di lavoro vengono mantenuti tra le diverse sessioni eseguite con lo stesso profilo utente. Come indicato in precedenza, è possibile eliminare questi file usando il comando di reimpostazione della sessione di **R Tools**  >    >   (o il pulsante di reimpostazione nella finestra interattiva) quando si usa un'area di lavoro remota. Questo comando elimina dal server il profilo utente, che verrà ricreato quando si effettua di nuovo la connessione.
 
 ## <a name="copy-project-files-to-remote-workspaces"></a>Copiare file di progetto in aree di lavoro remote
 
@@ -124,7 +124,7 @@ I file vengono copiati nel server remoto come indicato di seguito:
 > [!Note]
 > Poiché RTVS non intercetta in modo affidabile tutte le chiamate di funzione R, la chiamata di funzioni come `source()` o `runApp()` (per le applicazioni Shiny) all'interno della finestra interattiva *non* copia i file nell'area di lavoro remota.
 
-Le [proprietà del progetto](r-projects-in-visual-studio.md#project-properties) determinano se i file vengono copiati da RTVS quando si esegue un progetto e quali file vengono copiati. Per aprire questa pagina, selezionare il **Project**  >  comando di menu**Proprietà progetto (nome)** oppure fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Proprietà**.
+Le [proprietà del progetto](r-projects-in-visual-studio.md#project-properties) determinano se i file vengono copiati da RTVS quando si esegue un progetto e quali file vengono copiati. Per aprire questa pagina, selezionare il   >  comando di menu **Proprietà progetto (nome)** oppure fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Proprietà**.
 
 ![Scheda di esecuzione delle proprietà del progetto con le impostazioni di trasferimento file](media/workspaces-remote-file-transfer-filter-settings.png)
 

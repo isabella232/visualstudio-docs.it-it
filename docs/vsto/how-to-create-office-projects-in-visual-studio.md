@@ -21,15 +21,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1d0bd242f3a57031442cb0b39e62a28c01ad1a6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962392"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: creare progetti di Office in Visual Studio
   È possibile usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per creare personalizzazioni a livello di documento e di componente aggiuntivo VSTO per applicazioni Microsoft Office. Per altre informazioni su questi tipi di progetti, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -40,7 +40,7 @@ ms.locfileid: "96844374"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>Per creare un progetto di componente aggiuntivo VSTO
 
-1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se il Integrated Development Environment (IDE) è impostato per usare [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] le impostazioni di sviluppo, **File** scegliere **nuovo**  >  **progetto** dal menu file.
+1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se il Integrated Development Environment (IDE) è impostato per usare [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] le impostazioni di sviluppo,  scegliere **nuovo**  >  **progetto** dal menu file.
 
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -95,7 +95,7 @@ ms.locfileid: "96844374"
 
 ### <a name="to-create-a-document-level-customization-project"></a>Per creare un progetto di personalizzazione a livello di documento
 
-1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se l'IDE è configurato per usare Visual Basic impostazioni di sviluppo, scegliere **File** **nuovo**  >  **progetto** dal menu file.
+1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se l'IDE è configurato per usare Visual Basic impostazioni di sviluppo, scegliere  **nuovo**  >  **progetto** dal menu file.
 
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -154,7 +154,7 @@ ms.locfileid: "96844374"
 
 9. Aggiungere la cartella del progetto e le relative sottocartelle all'elenco di percorsi attendibili nel Centro protezione di Word nei casi seguenti:
 
-   - Si sta creando un documento di Word basato su un file con *estensione docm* e il documento contiene un progetto VBA o ospita Windows Forms controlli. Aggiungendo la cartella del progetto all'elenco di percorsi attendibili sarà possibile assicurarsi che il documento funzioni come previsto in fase di progettazione.
+   - Si sta creando un documento di Word basato su un file con *estensione docm* e il documento contiene un progetto VBA o ospita Windows Form controlli. Aggiungendo la cartella del progetto all'elenco di percorsi attendibili sarà possibile assicurarsi che il documento funzioni come previsto in fase di progettazione.
 
    - Si sta creando un progetto di modello di Word basato su un file con *estensione dotx* . È necessario aggiungere la cartella del progetto all'elenco di percorsi attendibili in modo che sia possibile eseguire il progetto e il relativo debug.
 

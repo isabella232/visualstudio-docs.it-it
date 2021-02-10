@@ -8,16 +8,16 @@ helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 88ef5d64d2513bb97bdd5589e04669629dfdf6ae
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 16d1348d74bb459a73dd4a5a4f8de21e367865c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962496"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
 
@@ -27,7 +27,7 @@ ms.locfileid: "96330043"
 
 Quando Visual Studio genera uno unit test per una classe generica, ad esempio `MyList<T>`, vengono generati due metodi: un helper generico e un metodo di test. Se `MyList<T>` dispone di uno o più vincoli di tipo, l'argomento di tipo deve soddisfare tutti i vincoli. Per assicurarsi che il codice generico sottoposto a test funzioni come previsto per tutti gli input consentiti, il metodo di test chiama il metodo helper generico con tutti i vincoli che si desidera testare.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 Gli esempi seguenti illustrano unit test per i metodi generici.
 
 - [Modificare il codice di test generato](#EditingGeneratedTestCode). Questo esempio include due sezioni, relative a codice di test generato e codice di test modificato. Mostra come modificare il codice di test non elaborato generato da un metodo generico per creare un metodo di test utile.

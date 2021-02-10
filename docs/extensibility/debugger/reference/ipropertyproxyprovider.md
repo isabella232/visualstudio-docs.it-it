@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6082b06e6235a93b0e198d973b40efb728bd815
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962132"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Questa interfaccia fornisce un'interfaccia proxy per visualizzare e modificare i dati di un oggetto.
@@ -41,7 +41,7 @@ IPropertyProxyProvider : IUnknown
 |------------|-----------------|
 |[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Recupera un'interfaccia proxy di proprietà per visualizzare i dati in un oggetto.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Anche se EE implementa questa interfaccia, l'implementazione di [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) viene in genere gestita da [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Per informazioni dettagliate su come ottenere l'interfaccia IEEVisualizerService, vedere [visualizzazione e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -51,7 +51,7 @@ IPropertyProxyProvider : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)
 - [Visualizzatore di tipi e visualizzatore personalizzato](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

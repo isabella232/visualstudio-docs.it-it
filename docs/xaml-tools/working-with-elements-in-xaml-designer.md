@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 1af793ec7ecd741de1fc1b4bb1cb48dbf2ef32f3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: ef09f181176bbab961b0caa97ccfb9910c5a281d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961248"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Usare gli elementi nella finestra di progettazione XAML
 
@@ -27,7 +27,7 @@ Per impostazione predefinita, viene usato un pannello `Grid` come contenitore di
 
 Per aggiungere un elemento a un layout nella finestra di progettazione XAML, eseguire una delle operazioni seguenti:
 
-- Fare doppio clic su un elemento nella **casella degli strumenti** oppure selezionare un elemento nella casella degli strumenti e premere **INVIO** .
+- Fare doppio clic su un elemento nella **casella degli strumenti** oppure selezionare un elemento nella casella degli strumenti e premere **INVIO**.
 
 - Trascinare un elemento dalla **casella degli strumenti** nella tavola da disegno.
 
@@ -63,9 +63,9 @@ Per allineare due o più elementi tramite i comandi di menu:
 
 1. Selezionare gli elementi da allineare. È possibile selezionare uno o più elementi tenendo premuto **CTRL** mentre li si selezionano.
 
-2. Selezionare una delle proprietà seguenti in **HorizontalAlignment** nella sezione **Layout** della finestra Proprietà: **A sinistra** , **Al centro** , **A destra** o **Stretch** .
+2. Selezionare una delle proprietà seguenti in **HorizontalAlignment** nella sezione **Layout** della finestra Proprietà: **A sinistra**, **Al centro**, **A destra** o **Stretch**.
 
-3. Selezionare una delle proprietà seguenti in **VerticalAlignment** nella sezione **Layout** della finestra Proprietà: **In alto** , **Al centro** , **In basso** o **Esteso** .
+3. Selezionare una delle proprietà seguenti in **VerticalAlignment** nella sezione **Layout** della finestra Proprietà: **In alto**, **Al centro**, **In basso** o **Esteso**.
 
 Per allineare due o più elementi usando le guide di allineamento, nella finestra di progettazione XAML trascinare o ridimensionare uno degli elementi in modo che il bordo sia allineato a un altro elemento.
 
@@ -79,13 +79,13 @@ Per modificare i margini di un elemento nella finestra Proprietà:
 
 1. Seleziona l'elemento di cui vuoi modificare i margini.
 
-2. In **Layout** nella finestra Proprietà modificare il valore (in pixel o in unità di misura indipendenti dal dispositivo, che corrispondono all'incirca a 0,26 mm) di ogni proprietà **Margine** ( **Superiore** , **Sinistro** , **Destro** o **Inferiore** ).
+2. In **Layout** nella finestra Proprietà modificare il valore (in pixel o in unità di misura indipendenti dal dispositivo, che corrispondono all'incirca a 0,26 mm) di ogni proprietà **Margine** (**Superiore**, **Sinistro**, **Destro** o **Inferiore**).
 
 Nella tavola da disegno, per modificare i margini di un elemento rispetto al contenitore di layout dell'elemento, fare clic sugli *Adorner dei margini* visualizzati attorno all'elemento quando l'elemento è selezionato e si trova all'interno di un contenitore di layout. Per un'illustrazione degli adorner dei margini, vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
 Se uno strumento decorativo di un margine è aperto, verticalmente oppure orizzontalmente, il margine in questione non è impostato. Se invece è chiuso, il margine è impostato.
 
-Quando si apre l'Adorner di un margine e il margine opposto non è impostato, questo viene impostato sul valore corretto in base alla posizione dell'elemento nella tavola da disegno. Per i margini opposti, come **Sinistro** e **Destro** , è sempre impostata almeno una proprietà.
+Quando si apre l'Adorner di un margine e il margine opposto non è impostato, questo viene impostato sul valore corretto in base alla posizione dell'elemento nella tavola da disegno. Per i margini opposti, come **Sinistro** e **Destro**, è sempre impostata almeno una proprietà.
 
 > [!IMPORTANT]
 > Gli elementi inseriti in alcuni contenitori di layout, ad esempio [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), non dispongono di strumenti decorativi dei margini. Gli elementi inseriti in un oggetto [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) dispongono di strumenti decorativi per i margini sinistro e destro oppure per quelli superiore e inferiore, in base all'orientamento di `StackPanel`.
@@ -96,20 +96,20 @@ Se si raggruppano due o più elementi nella finestra di progettazione XAML, vien
 
 Per raggruppare gli elementi in un nuovo contenitore di layout:
 
-1. Selezionare gli elementi da raggruppare. Per selezionare più elementi, fare clic su ognuno tenendo premuto **CTRL** .
+1. Selezionare gli elementi da raggruppare. Per selezionare più elementi, fare clic su ognuno tenendo premuto **CTRL**.
 
 2. Fare clic con il pulsante destro del mouse sugli elementi selezionati, scegliere **Raggruppa** e fare clic sul tipo di contenitore di layout in cui si vuole inserire il gruppo.
 
     > [!TIP]
     > Se si seleziona [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) o [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) per raggruppare gli elementi, gli elementi vengono inseriti in un nuovo pannello [Grid](xref:Windows.UI.Xaml.Controls.Grid) all'interno di [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) o [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer). Se si separano gli elementi in uno di questi contenitori di layout, viene eliminato solo il [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) o [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer), non il pannello [Grid](xref:Windows.UI.Xaml.Controls.Grid). Per eliminare il pannello `Grid`, separa nuovamente gli elementi.
 
-Per separare gli elementi ed eliminare il layout, fare clic con il pulsante destro del mouse sul gruppo che si vuole separare e fare clic su **Separa** . È anche possibile raggruppare o separare elementi facendo clic con il pulsante destro del mouse sugli elementi selezionati nella finestra Struttura documento e scegliendo **Raggruppa** o **Separa** .
+Per separare gli elementi ed eliminare il layout, fare clic con il pulsante destro del mouse sul gruppo che si vuole separare e fare clic su **Separa**. È anche possibile raggruppare o separare elementi facendo clic con il pulsante destro del mouse sugli elementi selezionati nella finestra Struttura documento e scegliendo **Raggruppa** o **Separa**.
 
 ## <a name="reset-the-element-layout"></a>Reimpostare il layout dell'elemento
 
 È possibile ripristinare i valori predefiniti per le proprietà di layout specifiche di un elemento usando i comandi di reimpostazione del layout. Questo comando consente di reimpostare il margine, l'allineamento, la larghezza, l'altezza e la dimensione di un elemento, separatamente o contemporaneamente.
 
-Per reimpostare il layout dell'elemento, fare clic con il pulsante destro del mouse sull'elemento nella finestra Struttura documento o nella tavola da disegno, quindi scegliere Reimposta **layout**  >  **Reset** *PropertyName* , dove *PropertyName* è la proprietà che si desidera reimpostare oppure scegliere **layout**  >  **Reimposta tutto** per reimpostare tutte le proprietà di layout per l'elemento.
+Per reimpostare il layout dell'elemento, fare clic con il pulsante destro del mouse sull'elemento nella finestra Struttura documento o nella tavola da disegno, quindi scegliere Reimposta **layout**  >   *PropertyName*, dove *PropertyName* è la proprietà che si desidera reimpostare oppure scegliere **layout**  >  **Reimposta tutto** per reimpostare tutte le proprietà di layout per l'elemento.
 
 ## <a name="see-also"></a>Vedi anche
 
