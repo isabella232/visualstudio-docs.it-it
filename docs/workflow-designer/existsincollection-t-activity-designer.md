@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9012bb936c2a9a8944639458d4165e08f5e7081e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 971d6bd028315ae4a8b6f3a88164c97c6f95712b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961326"
 ---
 # <a name="existsincollectiont-activity-designer"></a>Activity Designer\<T> ExistsInCollection
 
@@ -37,15 +37,15 @@ L' **ActivityDesigner \<T> ActivityDesigner ExistsInCollection** è disponibile 
 
 Nella tabella seguente vengono illustrate le <xref:System.Activities.Statements.ExistsInCollection%601> proprietà e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione:
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.ExistsInCollection%601>. Il valore predefinito è ActivityDesigner ExistsInCollection<Int32 \> . Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|Elemento da cercare nella raccolta \<T> . Questo elemento è di tipo *T*, che è di tipo *TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Raccolta in cui verificare se l'elemento esiste. Questa raccolta è di tipo **ICollection<TypeArgument \> .** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|*TypeArgument*|True|Tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo tipo di *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata della griglia delle proprietà.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Vero|Elemento da cercare nella raccolta \<T> . Questo elemento è di tipo *T*, che è di tipo *TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Vero|Raccolta in cui verificare se l'elemento esiste. Questa raccolta è di tipo **ICollection<TypeArgument \> .** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+|*TypeArgument*|Vero|Tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo tipo di *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata della griglia delle proprietà.|
 |<xref:System.Activities.Activity%601.Result%2A>|Falso|Valore che indica se l'elemento specificato è presente nella raccolta. Per specificare una variabile da associare al risultato, digitare una variabile Visual Basic nella griglia delle proprietà.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Raccolta](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

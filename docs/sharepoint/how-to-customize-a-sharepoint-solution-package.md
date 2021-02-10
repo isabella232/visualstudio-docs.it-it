@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7055be0b089a0b7c582ef0b66d84951d01685870
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 149e99a3ba86f1eec22d90618abfd8972ed68e97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959896"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procedura: personalizzare un pacchetto della soluzione SharePoint
   È possibile utilizzare Progettazione pacchetti per creare e personalizzare un pacchetto (con *estensione wsp*). Ad esempio, è possibile aggiungere elementi e funzionalità di progetto SharePoint, specificare se il server Web viene reimpostato al momento della distribuzione della soluzione e impostare il tipo di server di distribuzione.
@@ -89,5 +89,5 @@ ms.locfileid: "94903637"
 
      Il modello viene aggiornato con il testo originale e tutte le modifiche apportate al codice XML vengono perse.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

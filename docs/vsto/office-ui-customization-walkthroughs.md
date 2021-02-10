@@ -14,15 +14,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], action panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ee5d6cbe372b0a7930b867a98136d132ddb0b2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959883"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Procedure dettagliate di personalizzazione dell'interfaccia utente di Office
   Le procedure dettagliate seguenti mostrano come personalizzare l'interfaccia utente delle applicazioni di Microsoft Office usando le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.
@@ -66,7 +66,7 @@ ms.locfileid: "97525106"
 
 - [Procedura dettagliata: aggiornare un grafico in un foglio di comando utilizzando pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) Mostra le nozioni di base sulla modifica degli stili del grafico usando i pulsanti di opzione in un foglio di lavoro
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
 - [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)
 - [Procedure dettagliate relative ai dati nelle soluzioni Office](../vsto/data-in-office-solutions-walkthroughs.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0604b6497920e1e6df0a792ce758519f425ac155
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959948"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Procedura: personalizzare una funzionalità di SharePoint
   È possibile creare e personalizzare le funzionalità di SharePoint usando progettazione funzionalità in Visual Studio. Ad esempio, è possibile impostare l'ambito della funzionalità e aggiungere altre funzionalità come dipendenze. Per impostazione predefinita, la finestra di progettazione funzionalità viene aperta quando si aggiunge una nuova funzionalità in Esplora soluzioni o in SharePoint Package Explorer.
@@ -91,5 +91,5 @@ ms.locfileid: "94903663"
 
 2. Il modello viene aggiornato con il testo originale e tutte le modifiche apportate al codice XML vengono perse.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

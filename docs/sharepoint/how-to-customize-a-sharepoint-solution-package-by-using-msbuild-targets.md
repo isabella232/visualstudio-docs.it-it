@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b4d181a6310e1ff924f060e906093d3c28d60ede
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959922"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Procedura: personalizzare un pacchetto della soluzione SharePoint tramite destinazioni MSBuild
   Utilizzando le destinazioni di MSBuild a un prompt dei comandi, è possibile personalizzare la modalità di creazione dei file del pacchetto SharePoint (con *estensione wsp*) in Visual Studio. Ad esempio è possibile personalizzare le proprietà di MSBuild per modificare la directory intermedia dei pacchetti e i gruppi di elementi di MSBuild con cui si specificano i file enumerati.
@@ -82,5 +82,5 @@ ms.locfileid: "94903650"
 
    Quando si pubblica il progetto, il messaggio di BeforeLayout viene visualizzato prima che inizi la creazione del pacchetto e il messaggio di AfterLayout viene visualizzato al termine della creazione del pacchetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

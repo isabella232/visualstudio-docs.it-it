@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babe50e794e0831fd0e93048b32feaf18be87a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 715742221b5d8b21f574e7fb8001bd0a3c56cef5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960208"
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
 La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati dai conflitti relativi a una risorsa selezionata. Si verifica un evento di blocco quando un thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso alla risorsa.

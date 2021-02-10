@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c77c78258b5ddef486dc35ed6a620003864254cc
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 894afcbf8827fe0b5d5662a4c20e302f8224263f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960039"
 ---
 # <a name="status"></a>Stato
 L'opzione *Status di* **VSPerfCmd.exe** visualizza informazioni sullo stato del profiler e di eventuali processi in corso di profilatura.
@@ -60,7 +60,7 @@ VSPerfCmd.exe /Status
 
  **Utenti con diritti di accesso al monitor** Elenca i nomi degli utenti che hanno accesso al profiler. È possibile concedere l'accesso ad altri utenti tramite l'opzione **Admin** di VSPerfCmd.exe.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

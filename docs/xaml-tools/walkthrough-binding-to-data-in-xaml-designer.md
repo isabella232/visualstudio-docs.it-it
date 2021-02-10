@@ -11,13 +11,13 @@ dev_langs:
 - VB
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: e07d4a0872f2e93e568bb540edb89e026d25d935
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 6bf3bd24b4a232899c64f6c0ecd819b0fe0f83a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961313"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
@@ -25,13 +25,13 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Per creare una classe da utilizzare come origine dati
 
-1. Nel menu **File** , scegliere **Nuovo** > **Progetto** .
+1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
 
-1. Nella finestra di dialogo **Nuovo progetto** scegliere il nodo **Visual C#** o **Visual Basic** , espandere il nodo **Desktop di Windows** e scegliere il modello **Applicazione WPF** .
+1. Nella finestra di dialogo **Nuovo progetto** scegliere il nodo **Visual C#** o **Visual Basic**, espandere il nodo **Desktop di Windows** e scegliere il modello **Applicazione WPF**.
 
-1. Assegnare al progetto il nome **BindingTest** e fare clic sul pulsante **OK** .
+1. Assegnare al progetto il nome **BindingTest** e fare clic sul pulsante **OK**.
 
-1. Aprire il file **MainWindow.xaml.cs** (o **MainWindow.xaml.vb** ) e aggiungere il codice seguente. In C# aggiungi il codice nello spazio dei nomi `BindingTest` (prima delle parentesi di chiusura finali del file). In Visual Basic, aggiungere la nuova classe.
+1. Aprire il file **MainWindow.xaml.cs** (o **MainWindow.xaml.vb**) e aggiungere il codice seguente. In C# aggiungi il codice nello spazio dei nomi `BindingTest` (prima delle parentesi di chiusura finali del file). In Visual Basic, aggiungere la nuova classe.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -67,17 +67,17 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
    Questo codice imposta un valore 0 come numero predefinito dell'elemento usando l'oggetto [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata).
 
-1. Scegliere **Compila** > **Compila soluzione** dal menu **File** .
+1. Scegliere **Compila** > **Compila soluzione** dal menu **File**.
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Per associare la proprietà ItemCount a un controllo TextBlock
 
-1. In Esplora soluzioni aprire il menu di scelta rapida per **MainWindow.xaml** e scegliere **Progettazione visualizzazioni** .
+1. In Esplora soluzioni aprire il menu di scelta rapida per **MainWindow.xaml** e scegliere **Progettazione visualizzazioni**.
 
 1. Nella casella degli strumenti scegliere un controllo [Grid](xref:Windows.UI.Xaml.Controls.Grid) e aggiungerlo al modulo.
 
 1. Dopo aver selezionato il controllo `Grid` fare clic sul pulsante **Nuovo** accanto alla proprietà **DataContext** nella finestra Proprietà.
 
-1. Nella finestra di dialogo **Seleziona oggetto** verificare che la casella di controllo **Mostra tutti gli assembly** sia deselezionata, scegliere **ShoppingCart** nello spazio dei nomi **BindingTest** e fare clic sul pulsante **OK** .
+1. Nella finestra di dialogo **Seleziona oggetto** verificare che la casella di controllo **Mostra tutti gli assembly** sia deselezionata, scegliere **ShoppingCart** nello spazio dei nomi **BindingTest** e fare clic sul pulsante **OK**.
 
      La figura seguente illustra la finestra di dialogo **Seleziona oggetto** con **ShoppingCart** selezionato.
 
@@ -85,9 +85,9 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
 1. Nella **casella degli strumenti`TextBlock` scegliere un controllo** e aggiungerlo al modulo.
 
-1. Dopo aver selezionato il controllo `TextBlock`, scegliere il marcatore della proprietà a destra della proprietà **Text** e scegliere **Crea associazione dati** . Tale marcatore ha l'aspetto di una piccola casella.
+1. Dopo aver selezionato il controllo `TextBlock`, scegliere il marcatore della proprietà a destra della proprietà **Text** e scegliere **Crea associazione dati**. Tale marcatore ha l'aspetto di una piccola casella.
 
-1. Nella casella **Percorso** della finestra di dialogo Crea associazione dati scegliere la proprietà **ItemCount : (int32)** e fare clic sul pulsante **OK** .
+1. Nella casella **Percorso** della finestra di dialogo Crea associazione dati scegliere la proprietà **ItemCount : (int32)** e fare clic sul pulsante **OK**.
 
      La figura seguente illustra la finestra di dialogo **Crea associazione dati** con la proprietà **ItemCount** selezionata.
 

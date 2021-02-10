@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 3ddb96f9-9bda-4a68-ad4d-ef488a0a68dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e66e62c2f7d78003581b12121844090c9754c2cc
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a433d11c2684a4a39660759f33d49bd719c2b2ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960169"
 ---
 # <a name="sleep-time"></a>Periodo di sospensione
 Questi segmenti nella sequenza temporale sono associati al periodo di blocco categorizzato come Sospensione. La categoria sospensione implica che un thread ha volontariamente abbandonato il core logico e non è in funzione. Durante questo periodo, un thread è stato bloccato in un'API che il visualizzatore di concorrenza conteggia come sospensione. Le interfacce API come `Sleep()` e `SwitchToThread()` rientrano in questo gruppo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione thread](../profiling/threads-view-parallel-performance.md)

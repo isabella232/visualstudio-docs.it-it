@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 0a34fa9fd362f7a344dc13f1c557f8362e9e10b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968463"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Elemento DefaultName (modelli di Visual Studio)
 Specifica il nome che verrà generato dal sistema di progetto di Visual Studio per il progetto o l'elemento al momento della creazione.
@@ -40,10 +40,10 @@ Specifica il nome che verrà generato dal sistema di progetto di Visual Studio p
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -84,6 +84,6 @@ Specifica il nome che verrà generato dal sistema di progetto di Visual Studio p
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
