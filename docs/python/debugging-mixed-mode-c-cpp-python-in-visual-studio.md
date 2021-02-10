@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85118cebfa862a1575762985d41df61ef76b5cc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949324"
 ---
 # <a name="debug-python-and-c-together"></a>Debug contemporaneo di codice Python e C++
 
@@ -46,7 +46,7 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
     ![Abilitazione del debug di codice nativo](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
-    > Quando si Abilita il debug del codice nativo, la finestra di output di Python può scomparire immediatamente quando il programma è stato completato senza visualizzare il normale **tasto premere un tasto qualsiasi per continuare** la pausa. Per forzare una pausa, aggiungere l' `-i` opzione al campo **Esegui**gli  >  **argomenti dell'interprete** nella scheda **debug** quando si Abilita il debug del codice nativo. Questo argomento consente di impostare l'interprete Python in modalità interattiva al termine del codice. a quel punto, attenderà di premere **CTRL** + **Z**  >  **invio** per uscire.
+    > Quando si Abilita il debug del codice nativo, la finestra di output di Python può scomparire immediatamente quando il programma è stato completato senza visualizzare il normale **tasto premere un tasto qualsiasi per continuare** la pausa. Per forzare una pausa, aggiungere l' `-i` opzione al campo **Esegui** gli  >  **argomenti dell'interprete** nella scheda **debug** quando si Abilita il debug del codice nativo. Questo argomento consente di impostare l'interprete Python in modalità interattiva al termine del codice. a quel punto, attenderà di premere **CTRL** + **Z**  >  **invio** per uscire.
 
 1. Quando si connette il debugger in modalità mista a un processo esistente (**debug**  >  **Connetti a processo**), usare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice** . Impostare quindi l'opzione **Esegui il debug di questi tipi di codice** e selezionare sia **Nativo** che **Python** nell'elenco:
 
@@ -78,7 +78,7 @@ Quando si usa questo metodo, tenere presente che non è possibile eseguire il de
 
 Per tutte le versioni precedenti di Visual Studio, il debug in modalità mista diretto viene abilitato solo quando si avvia un progetto Python in Visual Studio, perché i progetti C/C++ usano solo il debugger nativo. È comunque possibile collegare il debugger separatamente:
 
-1. Avviare il progetto C++ senza debug (**Debug**  >  **Avvia debug senza debug** o **CTRL** + **F5**).
+1. Avviare il progetto C++ senza debug (  >  **Avvia debug senza debug** o **CTRL** + **F5**).
 1. Selezionare **debug**  >  **Connetti a processo**. Nella finestra di dialogo visualizzata selezionare il processo appropriato, quindi usare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice** in cui è possibile selezionare **Python**:
 
     ![Selezione di Python come tipo di debug quando si allega un debugger](media/mixed-mode-debugging-attach-type.png)

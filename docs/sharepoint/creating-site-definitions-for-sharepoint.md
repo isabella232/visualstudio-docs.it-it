@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949000"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Creare definizioni di sito per SharePoint
   Il progetto di definizione del sito di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] consente di creare una *definizione di sito*, che funge da base per un nuovo sito di SharePoint. Queste definizioni non solo determinano l'aspetto e il comportamento del sito di SharePoint, ma anche il contenuto e le funzionalità predefinite. Nella definizione è possibile inserire elenchi preconfigurati, tipi di contenuto, ricevitori di eventi, immagini e altri elementi. In SharePoint sono incluse alcune definizioni di sito come BLOG, ad esempio. Quando si crea un sito basato sulla definizione del sito del BLOG, il sito contiene gli elenchi, le web part e altri elementi richiesti da un sito di Blog.
@@ -60,5 +60,5 @@ ms.locfileid: "94850572"
 |[Programmazione Pagine Web ASP.NET](/previous-versions/aspnet/0yt4zca8(v=vs.100))|Vengono fornite informazioni su come creare i gestori eventi nelle [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagine e come utilizzare lo script client.|
 |[Programmazione in Windows SharePoint Services](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|Viene descritto come utilizzare il modello a oggetti gestito fornito in [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

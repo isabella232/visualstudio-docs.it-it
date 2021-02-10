@@ -19,15 +19,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 28a5bc44b0f6fa04d32c574e9772369709736ddd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949077"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Creazione di soluzioni flusso di lavoro SharePoint
 
@@ -64,7 +64,7 @@ Per ulteriori informazioni su SharePoint, vedere [prodotti e tecnologie Microsof
 ## <a name="design-a-sharepoint-workflow"></a>Progettare un flusso di lavoro di SharePoint
  Dopo aver definito tutti i passaggi del processo di business, utilizzare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Progettazione flussi di lavoro per progettare il flusso di lavoro di SharePoint. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1. vb in **Esplora soluzioni** oppure aprire il menu di scelta rapida per uno di questi file, quindi scegliere **Apri**.
 
-### <a name="activities"></a>attività
+### <a name="activities"></a>Attività
  Per progettare un flusso di lavoro, aggiungere attività dalla **casella degli strumenti** a una *pianificazione del flusso di lavoro* nella finestra di progettazione. Una pianificazione del flusso di lavoro contiene la sequenza di attività nell'ordine in cui devono essere eseguite.
 
  Sono disponibili due tipi di attività:
@@ -144,7 +144,7 @@ Per ulteriori informazioni su SharePoint, vedere [prodotti e tecnologie Microsof
 |[Procedura dettagliata: creare un'attività personalizzata del flusso di lavoro del sito](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Viene illustrato come eseguire due attività principali: creare un flusso di lavoro a livello di sito e creare un'attività personalizzata del flusso di lavoro.|
 |[Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Viene illustrato come importare flussi di lavoro dichiarativi riutilizzabili creati in SharePoint Designer 2010 in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

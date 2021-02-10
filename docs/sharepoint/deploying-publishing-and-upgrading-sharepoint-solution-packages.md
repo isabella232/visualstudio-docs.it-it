@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd0dfa3a12c675463c46e93aa0d5b25e8b4bd4b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948856"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Distribuire, pubblicare e aggiornare i pacchetti della soluzione SharePoint
   Dopo aver sviluppato una soluzione SharePoint in Visual Studio, è possibile distribuire il file di pacchetto (con estensione wsp) in un server SharePoint locale o pubblicarlo in un server SharePoint locale o remoto. Se si distribuiscono i file, è possibile personalizzare la modalità di distribuzione dei file del pacchetto (con estensione wsp).
@@ -66,5 +66,5 @@ ms.locfileid: "94672665"
 ### <a name="upgrade-published-packages"></a>Aggiornare i pacchetti pubblicati
  Se si apportano modifiche a un progetto SharePoint in Visual Studio dopo la pubblicazione, è necessario aggiornare il pacchetto pubblicato per includere le modifiche. Per eseguire correttamente l'aggiornamento, un pacchetto deve avere un nome univoco. Se nel sito di SharePoint viene trovato un pacchetto con lo stesso nome, che può verificarsi durante l'aggiornamento di un'applicazione esistente, viene visualizzato un errore che segnala il conflitto con il nome del file e consente di rinominare il pacchetto. Dopo la ripubblicazione, il nuovo pacchetto viene visualizzato nel sito di SharePoint e può essere aggiornato. Un pacchetto aggiornato aggiorna la soluzione usando i dati del pacchetto precedente e quindi attiva la soluzione in SharePoint. Per ulteriori informazioni, vedere [procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

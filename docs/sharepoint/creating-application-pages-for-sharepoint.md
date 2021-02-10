@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949181"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Creazione di pagine applicazione per SharePoint
   Una *pagina dell'applicazione* è una pagina Web ASP.NET progettata per l'utilizzo in un sito Web di SharePoint. Le pagine dell'applicazione sono un tipo specializzato di pagina ASP.NET. La differenza principale tra una pagina dell'applicazione e una pagina ASP.NET standard consiste nel fatto che una pagina dell'applicazione contiene contenuto unito a una pagina master di SharePoint. Una pagina master consente alle pagine dell'applicazione di condividere lo stesso aspetto e lo stesso comportamento delle altre pagine di un sito.
@@ -73,7 +73,7 @@ ms.locfileid: "94850442"
 
  È possibile modificare in modo esplicito la pagina master utilizzata dalla pagina dell'applicazione impostando l' `MasterPageFile` attributo dell' `Page` elemento Application. (Ad esempio: `MasterPageFile="~/_layouts/applicationv4.master"` ). In realtà, è necessario impostare questo attributo se le pagine master dinamiche non sono abilitate nel server SharePoint. Per ulteriori informazioni sulle pagine master in SharePoint, vedere la pagina relativa alle [pagine master](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppo di SharePoint Foundation in dettaglio](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Panoramica di ASP.NET](/aspnet/overview)
 - [Pagine Web ASP.NET](/aspnet/web-pages/index)

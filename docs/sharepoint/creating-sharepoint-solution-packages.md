@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949090"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Creare pacchetti della soluzione SharePoint
   Con progettazione pacchetti è possibile creare e personalizzare i pacchetti di distribuzione. Ad esempio, è possibile aggiungere elementi e funzionalità di progetto SharePoint, reimpostare il server IIS, impostare gli ambiti di attivazione della funzionalità e identificare le dipendenze delle funzionalità. La finestra di progettazione genera inoltre un manifesto, un file XML che descrive ogni pacchetto.
@@ -73,7 +73,7 @@ ms.locfileid: "94850559"
 ## <a name="package-folder-structure"></a>Struttura delle cartelle del pacchetto
  Quando si crea il pacchetto del progetto SharePoint, viene creato un file con *estensione wsp* nella *cartella \\ \<BuildConfiguration> SolutionFolder\bin* Ad esempio, se la soluzione si trova in *C:\Visual Studio 2013 \ Projects\ListDefinition1* e la configurazione della build è impostata su Release, il file con *estensione wsp* si trova in *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Procedura: creare un pacchetto della soluzione SharePoint tramite le attività MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)
