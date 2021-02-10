@@ -6,16 +6,16 @@ ms.topic: conceptual
 description: Informazioni su come usare Visual Studio con gli account GitHub.
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 845b663a3a0828806766fa0609e45efafabec50a
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 9da0f2c2df796f50530f19252c7236c2bb606a10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960481"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>Utilizzare gli account GitHub in Visual Studio
 
@@ -59,7 +59,7 @@ Per impostazione predefinita, in Visual Studio sono abilitati solo account GitHu
 
 3. Dopo aver immesso l'indirizzo di GitHub Enterprise Server, selezionare **Accedi con il browser**. In questa pagina è possibile accedere usando le credenziali aziendali di GitHub.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire più account utente](work-with-multiple-user-accounts.md)
 - [Accedi a Visual Studio](signing-in-to-visual-studio.md)

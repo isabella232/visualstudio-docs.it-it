@@ -6,15 +6,15 @@ ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960455"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -85,13 +85,13 @@ Per altre informazioni, vedere [Connettersi a progetti in Team Explorer](connect
 
 Per aggiungere un altro account a Visual Studio:
 
-1. Scegliere **File**  >  **Impostazioni account** file.
+1. Scegliere   >  **Impostazioni account** file.
 
 1. In **Tutti gli account** scegliere **Aggiungi un account**.
 
 1. Nella pagina **Accesso all'account** selezionare l'account o scegliere **Usa un altro account**. Seguire i prompt visualizzati per immettere le credenziali del nuovo account.
 
-(Facoltativo) A questo punto è possibile passare a **Esplora server** e visualizzare i servizi di Azure associati all'account appena aggiunto. In **Esplora server** fare clic con il pulsante destro del mouse sul nodo **Azure** e scegliere **Gestisci e filtra sottoscrizioni**. Scegliere il nuovo account facendo clic sulla freccia a discesa vicino all'account corrente, quindi scegliere le sottoscrizioni da visualizzare in **Esplora server**. Verranno visualizzati tutti i servizi associati alla sottoscrizione specificata. Ci si connette ai servizi e alle risorse del secondo account, anche se non si è attualmente connessi a Visual Studio con tale account. Lo stesso vale per l' **Project**  >  **aggiunta del servizio connesso** al progetto e la connessione del **Team**  >  **a Team Foundation Server**.
+(Facoltativo) A questo punto è possibile passare a **Esplora server** e visualizzare i servizi di Azure associati all'account appena aggiunto. In **Esplora server** fare clic con il pulsante destro del mouse sul nodo **Azure** e scegliere **Gestisci e filtra sottoscrizioni**. Scegliere il nuovo account facendo clic sulla freccia a discesa vicino all'account corrente, quindi scegliere le sottoscrizioni da visualizzare in **Esplora server**. Verranno visualizzati tutti i servizi associati alla sottoscrizione specificata. Ci si connette ai servizi e alle risorse del secondo account, anche se non si è attualmente connessi a Visual Studio con tale account. Lo stesso vale per l'   >  **aggiunta del servizio connesso** al progetto e la connessione del **Team**  >  **a Team Foundation Server**.
 
 ### <a name="add-an-account-using-device-code-flow"></a>Aggiungere un account usando il flusso del codice del dispositivo
 

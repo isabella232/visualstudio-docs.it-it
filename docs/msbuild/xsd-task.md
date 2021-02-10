@@ -19,32 +19,32 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960325"
 ---
 # <a name="xsd-task"></a>XSD (attività)
 
-Esegue il wrapping dello strumento XML Schema Definition ( *xsd.exe* ), che genera file di schema o di classe da un'origine.
+Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera file di schema o di classe da un'origine.
 
 > [!NOTE]
 > A partire da Visual Studio 2017, il supporto dei progetti C++ per *xsd.exe* è deprecato. È comunque possibile usare le API **Microsoft.VisualC.CppCodeProvider** aggiungendo manualmente *CppCodeProvider.dll* alla Global Assembly Cache.
 
 ## <a name="parameters"></a>Parametri
 
- La tabella seguente descrive i parametri dell'attività **XSD** .
+ La tabella seguente descrive i parametri dell'attività **XSD**.
 
 - **AdditionalOptions**
 
      Parametro **stringa** facoltativo.
 
-     Un elenco di opzioni come specificato sulla riga di comando. Ad esempio,/ \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD** .
+     Un elenco di opzioni come specificato sulla riga di comando. Ad esempio,/ \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD**.
 
 - **GenerateFromSchema**
 
@@ -66,7 +66,7 @@ Esegue il wrapping dello strumento XML Schema Definition ( *xsd.exe* ), che gene
 
      È possibile scegliere tra **CS** (C#, il linguaggio predefinito), **VB** (Visual Basic) o **JS** (JScript). È anche possibile specificare un nome completo per una classe che implementa `System.CodeDom.Compiler.CodeDomProvider Class`.
 
-- **Spazio dei nomi**
+- **Namespace**
 
      Parametro **stringa** facoltativo.
 

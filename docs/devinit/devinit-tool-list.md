@@ -1,7 +1,7 @@
 ---
 title: Strumenti disponibili
 description: Elenco di tutti gli strumenti devinit che possono essere usati per personalizzare un ambiente di sviluppo.
-ms.date: 12/02/2020
+ms.date: 02/08/2021
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a90b66e38a09e0de0c7fd374938f55a93789295
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e725cea2e668158b26cde102d42082fdc269069
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925329"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006413"
 ---
 # <a name="available-tools"></a>Strumenti disponibili
 
@@ -44,9 +44,11 @@ La tabella seguente contiene un elenco di tutti gli strumenti attualmente dispon
 | [**require-psmodule**](tool-require-psmodule.md)                                                 | Strumento per installare i moduli di PowerShell dalla raccolta.                                                        |
 | [**require-vcpkg**](tool-require-vcpkg.md)                                                       | Strumento per installare vcpkg.                                                                                      |
 | [**require-vscomponent**](tool-require-vscomponent.md)                                           | Strumento per modificare le installazioni di Visual Studio in base a un `.vsconfig` file.                                                |
+| [**Richiedi-ala**](tool-require-winget.md)                                                     | Strumento per installare il wingt.                                                                                     |
 | [**windowsfeature-enable**](tool-windowsfeature-enable.md)                                       | Set di strumenti abilitare le funzionalità di Windows.                                                                           |
 | [**windowsfeature-disable**](tool-windowsfeature-disable.md)                                     | Set di strumenti disabilitare le funzionalità di Windows.                                                                          |
-| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | Strumento per elencare lo stato di abilitazione/disabilitazione di tutte le funzionalità di Windows.                                                                        |
+| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | Strumento per elencare lo stato di abilitazione/disabilitazione di tutte le funzionalità di Windows.                                              |
 | [**set-env**](tool-set-env.md)                                                                   | Strumento per visualizzare e impostare le variabili di ambiente.                                                                 |
 | [**vcpkg-install**](tool-vcpkg-install.md)                                                       | Strumento per installare i pacchetti tramite vcpkg.                                                                         |
+| [**alette-installazione**](tool-winget-install.md)                                                     | Strumento per installare i pacchetti tramite wingt.                                                                        |
 | [**wsl-install**](tool-wsl-install.md)                                                           | Strumento per installare e configurare le distribuzioni di Linux per il sottosistema di Windows per Linux.                             |

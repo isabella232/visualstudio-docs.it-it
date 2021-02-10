@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code editor [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2363d350c91ac72b21784f490778010eba12007
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: ec1b8f9d9ce44b494d1d9ad13e3dd46b88d0def5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960403"
 ---
 # <a name="features-of-the-code-editor"></a>Funzionalità dell'editor del codice
 
@@ -34,7 +34,7 @@ I diversi linguaggi di Visual Studio offrono set di funzionalità diversi e, in 
 
 ## <a name="editor-features"></a>Funzionalità dell'editor
 
-|Feature|Descrizione|
+|Funzionalità|Descrizione|
 |-|-|
 |Colorazione della sintassi|Alcuni elementi della sintassi del codice e dei file di markup sono colorati in modo diverso per distinguerli. Ad esempio, le parole chiave (ad esempio `using` in C# e `Imports` in Visual Basic) sono di un colore, mentre i tipi (ad esempio `Console` e `Uri`) sono di un altro colore. Anche altri elementi della sintassi sono colorati, ad esempio i valori letterali stringa e i commenti. C++ usa i colori per distinguere i tipi, le enumerazioni e le macro dagli altri token.<br /><br /> È possibile visualizzare il colore predefinito per ogni tipo ed è possibile modificare il colore di qualsiasi elemento della sintassi specifico nella finestra di [dialogo tipi di carattere e colori, ambiente, opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), che è possibile aprire dal menu **strumenti** .|
 |Contrassegni di errore e di avviso|Quando si aggiunge codice e si compila la soluzione, vengono visualizzate (a) sottolineature ondulate con diversi colori (note come sottolineature a zigzag) o (b) lampadine nel codice. Le sottolineature rosse denotano errori di sintassi, quelle blu errori del compilatore, quelle verdi gli avvisi e quelle viola altri tipi di errore. Le [Azioni rapide](../ide/quick-actions.md) suggeriscono correzioni dei problemi e ne semplificano l'applicazione.<br /><br /> È possibile visualizzare il colore predefinito per ogni zigzag di errore e di avviso nella finestra di dialogo **strumenti**  >  **Opzioni**  >  **ambiente**  >  **tipi di carattere e colori** . Cercare **Errore di sintassi**, **Errore del compilatore**, **Avviso** e **Altro errore**.|
@@ -52,7 +52,7 @@ I diversi linguaggi di Visual Studio offrono set di funzionalità diversi e, in 
 
 È possibile trovare una serie di funzionalità avanzate nel menu **modifica**  >  **Avanzate** sulla barra degli strumenti. Non tutte le funzionalità sono disponibili per tutti i tipi di file di codice.
 
-|Feature|Descrizione|
+|Funzionalità|Descrizione|
 |-|-|
 |Formatta documento|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nel documento.|
 |Formatta selezione|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nella selezione.|

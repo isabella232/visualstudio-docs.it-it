@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 384a6252ef17709970f6e902dfdf83a157b0460a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968047"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: Spostarsi nell'IDE di Visual Studio
 
@@ -33,7 +33,7 @@ L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'ut
 > [!NOTE]
 > Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti in questo articolo, a seconda dell'edizione o delle impostazioni attive. Questo articolo è stato scritto considerando le impostazioni **Generali**. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++**, scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
 
-## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
+## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
 
 Quasi tutti i comandi dei menu di Visual Studio dispongono di un tasto di scelta rapida. È inoltre possibile creare tasti di scelta rapida personalizzati. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
@@ -76,7 +76,7 @@ Lo **strumento di spostamento dell'IDE** funziona in modo analogo allo strumento
 
     \- - oppure -
 
-- Nella barra dei menu scegliere finestre **finestra**  >  **Windows**.
+- Nella barra dei menu scegliere finestre **finestra**  >  .
 
 - Nell'elenco selezionare il file che si vuole visualizzare e scegliere **Attiva**.
 
@@ -94,7 +94,7 @@ Lo **strumento di spostamento dell'IDE** consente di scorrere le finestre degli 
     > [!TIP]
     > Per invertire l'ordine di spostamento nell'elenco **Finestra degli strumenti attivi**, tenere premuto **MAIUSC**+**ALT** e premere **F7**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzazione del layout delle finestre](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md)

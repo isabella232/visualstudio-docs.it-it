@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5f0e3613dc9b122a6fac915f4683d9f7b859ee3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 58236bbacfaa262c23400506cb32331719000b81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967527"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Visualizzazione Chiamante-chiamato: dati di campionamento di memoria .NET
 La visualizzazione Chiamante/chiamato consente di visualizzare i dati di profilatura della memoria .NET per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -52,7 +52,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare i dati di profila
 |**Byte esclusivi**|- Per la funzione corrente, il numero di byte di memoria allocati dalla funzione nell'esecuzione della profilatura. Questo numero non include la memoria allocata dalle funzioni chiamate dalla funzione corrente.<br />- Per una funzione chiamante, il numero dei byte esclusivi della funzione corrente generati da chiamate dalla funzione chiamante.<br />- Per una funzione chiamata, il numero di byte allocati dalle istanze della funzione generati da chiamate dalla funzione corrente. Il numero non include i byte allocati dalle funzioni chiamate dalla funzione chiamata.|
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che rappresentavano allocazioni esclusive di questa funzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)

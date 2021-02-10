@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6e2784066c98f8fac696306e455e7cf26b65907
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2c6b6260bad412127afe4dd9135ccf66d48e9e3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968307"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Opzioni della riga di comando devenv per lo sviluppo di pacchetti VSPackage
 
@@ -51,7 +51,7 @@ La documentazione di Visual Studio descrive le opzioni della riga di comando a l
 | `/Setup` | Impone a Visual Studio di unire i metadati delle risorse che descrivono i menu, le barre degli strumenti e i gruppi di comandi da tutti i pacchetti VSPackage disponibili. Questo comando può essere eseguito solo come amministratore. <br /><br /> Questa opzione non accetta argomenti. Il comando `devenv /Setup` viene in genere eseguito come ultimo passaggio del processo di installazione. L'uso dell' `/Setup` opzione non avvia l'IDE.|
 | `/Splash` | Mostra la schermata iniziale di Visual Studio, come di consueto, e quindi Visualizza una finestra di messaggio prima di visualizzare l'IDE principale. La finestra di messaggio consente di esaminare la schermata iniziale, ad esempio per verificare la presenza di un'icona di prodotto VSPackage.<br /><br /> Questa opzione non accetta argomenti. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiungi opzioni della riga di comando](../extensibility/adding-command-line-switches.md)
 - [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)

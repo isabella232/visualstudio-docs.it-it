@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9907298cf730d6e51c108dc92f633d0b50451f12
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 57e335839905e828d3587ce82b1e23b0d62ddf65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968320"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inizializzazione della finestra di progettazione e configurazione dei metadati
 
@@ -99,7 +99,7 @@ Se il flag globale è stato impostato su `false` , la modifica dei metadati è l
 > [!NOTE]
 > L'area di progettazione supporta solo la creazione di componenti e pertanto solo i componenti possono avere metadati locali. Nell'esempio precedente si stava tentando di modificare una proprietà, ad esempio la `Color` proprietà di un oggetto. Se `false` è stato passato per il flag globale, `CustomBrowser` non verrebbe mai visualizzato perché la finestra di progettazione non crea mai effettivamente un'istanza di `Color` . L'impostazione del flag globale su `false` è utile per i componenti di, ad esempio controlli, timer e finestre di dialogo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>

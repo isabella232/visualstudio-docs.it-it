@@ -6,18 +6,18 @@ ms.date: 02/15/2019
 ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8768992ce3ef9f40ab0adba1724d43b32e5bde5c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: cd0b6e936f4478cb4b74a3f004e69d77dbad7fbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960611"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>Assegnazioni, variabili e parametri di valori non usati
 
@@ -42,7 +42,7 @@ Questo refactoring si applica a:
   ![Assegnazione di valore non usata](media/unused-value-assignment.png)
   ![Variabile discard di valore non usato](media/unused-value-discard.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Suggerimenti per gli sviluppatori di .NET](../csharp-developer-productivity.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3adc3d648e73fc1f3596cc7a5c2cb2148a8f611b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960338"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -81,7 +81,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 > [!NOTE]
 > Le proprietà e gli elementi a livello di progetto non hanno alcun effetto se l'elemento `UsingTask` proviene da uno dei file con estensione *tasks* registrati a livello globale nel motore MSBuild. I valori a livello di progetto non sono globali per MSBuild.
 
- In MSBuild 4.0 è possibile caricare gli elementi UsingTask dai file con estensione *overridetask* .
+ In MSBuild 4.0 è possibile caricare gli elementi UsingTask dai file con estensione *overridetask*.
 
 L'assembly contenente l'attività personalizzata viene caricato quando `Task` viene utilizzato per la prima volta.
 

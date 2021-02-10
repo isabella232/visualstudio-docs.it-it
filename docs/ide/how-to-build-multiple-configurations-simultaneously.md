@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cc5963ed3a16ffba16a52bfcde7425fb1f10cba
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: cabaf226742d867e9d5eccbaf391b723cfbed5d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967670"
 ---
 # <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>Procedura: compilare più configurazioni in una singola richiesta di compilazione
 
@@ -34,7 +34,7 @@ Se una soluzione contiene un progetto di questi due tipi di progetto, la **compi
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>Per compilare un progetto in più configurazioni della build
 
-1. Sulla barra dei menu scegliere **Compila**compilazione  >  **batch**. In alternativa, premere **CTRL** + **Q** per aprire la casella di ricerca e cercare `Batch Build` .
+1. Sulla barra dei menu scegliere **Compila** compilazione  >  **batch**. In alternativa, premere **CTRL** + **Q** per aprire la casella di ricerca e cercare `Batch Build` .
 
 2. Nella colonna **Compila** selezionare le caselle di controllo per le configurazioni in cui si vuole compilare un progetto.
 
@@ -43,7 +43,7 @@ Se una soluzione contiene un progetto di questi due tipi di progetto, la **compi
 
 3. Scegliere i pulsanti **Compila** o **Ricompila** per compilare il progetto con le configurazioni specificate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)

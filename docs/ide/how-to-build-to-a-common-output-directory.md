@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39dae210c2cb9afe3e4b77962b75ddb3be4baeb
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 2e2abb9a768621477465b753554c111126a5af98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967618"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Procedura: Compilare in una directory di output comune
 
@@ -36,7 +36,7 @@ Per impostazione predefinita, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 
 4. Ripetere i passaggi da 1 a 3 per tutti i progetti della soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)
 - [Procedura: modificare la directory dell'output di compilazione](../ide/how-to-change-the-build-output-directory.md)

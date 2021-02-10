@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 874695bed7044c92f43c6d3031842d94372a2c33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946228"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006429"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usare stub per isolare parti dell'applicazione l'una dall'altra per il testing unità
 
@@ -152,7 +152,7 @@ Per usare gli stub, è innanzitutto necessario generare i tipi stub dalle defini
 1. In **Esplora soluzioni**, 
     - Per un progetto di .NET Framework precedente (stile non SDK), espandere il nodo **riferimenti** del progetto unit test.
     ::: moniker range=">=vs-2019"
-    - Per un progetto di tipo SDK che ha come destinazione .NET Framework o .NET Core, espandere il nodo **dipendenze** per trovare l'assembly da falsificare in **assembly**, **progetti** o **pacchetti**.
+    - Per un progetto di tipo SDK destinato .NET Framework, .NET Core o .NET 5,0, espandere il nodo **dipendenze** per trovare l'assembly che si desidera falsificare in **assembly**, **progetti** o **pacchetti**.
     ::: moniker-end
     - Se si sta lavorando in Visual Basic, selezionare **Mostra tutti i file** nella barra degli strumenti **Esplora soluzioni** per visualizzare il nodo **riferimenti** .
 

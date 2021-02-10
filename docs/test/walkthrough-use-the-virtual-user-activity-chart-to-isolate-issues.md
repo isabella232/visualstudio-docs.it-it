@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 7f87542e528b743fa59dfe82aa52a57f1a9cfa2c
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: afe692a8333ff93f764a308bae2c1366e353b4a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967930"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procedura dettagliata: Uso del grafico attività utente virtuale per isolare i problemi
 
@@ -105,7 +105,7 @@ Dopo aver eseguito il test di carico e raccolto i dati dell'attività utente vir
 
      È possibile usare varie impostazioni nei pannelli **Legenda dettagli** e **Risultati filtro** per facilitare l'isolamento dei problemi di prestazioni e degli errori nei test di carico. Provare varie combinazioni di queste impostazioni e lo strumento **Zoom periodo di tempo** per vedere come i dati utente virtuale vengono presentati nel **Grafico attività utente virtuale**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analisi dell'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)

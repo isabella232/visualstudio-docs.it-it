@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 5c80c2969676de25575ec75c6976224f1cd0160e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968242"
 ---
 # <a name="document-lock-holder-management"></a>Gestione dei contenitori di blocco del documento
 
@@ -45,7 +45,7 @@ Si noti che se è necessario inserire un blocco di modifica su un documento per 
 
 Molte volte una finestra di progettazione dell'interfaccia utente che modifica i file di codice apporta modifiche a livello di codice a più di un file. In questi casi il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> metodo gestisce il salvataggio di uno o più documenti per mezzo della finestra di dialogo **Salva le modifiche apportate agli elementi seguenti** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tabella documenti in esecuzione](../extensibility/internals/running-document-table.md)
 - [Persistenza e tabella documenti in esecuzione](../extensibility/internals/persistence-and-the-running-document-table.md)
