@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 2ce96da36a8c6eff0fda71d8a5d077721876ab8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943348"
 ---
 # <a name="keybinding-element"></a>Elemento di associazione
 L'elemento di associazione di tasti specifica i tasti di scelta rapida per i comandi.
@@ -42,11 +42,11 @@ L'elemento di associazione di tasti specifica i tasti di scelta rapida per i com
 |id|Obbligatorio.|
 |editor|Obbligatorio. Il GUID dell'editor indica il contesto di modifica per il quale il tasto di scelta rapida sarà attivo. Il valore dell'ambito di binding globale è "guidVSStd97".|
 |key1|Obbligatorio. I valori validi includono tutti i caratteri alfanumerici tipizzabili e anche i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|Mod1|Facoltativo. Qualsiasi combinazione di **CTRL**, **ALT** e **MAIUSC** separati da uno spazio.|
-|key2|Facoltativo. I valori validi includono tutti i caratteri alfanumerici tipizzabili e anche i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|MOD2|Facoltativo. Qualsiasi combinazione di **CTRL**, **ALT** e **MAIUSC** separati da uno spazio.|
-|emulatore|Facoltativo.|
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Mod1|facoltativo. Qualsiasi combinazione di **CTRL**, **ALT** e **MAIUSC** separati da uno spazio.|
+|key2|facoltativo. I valori validi includono tutti i caratteri alfanumerici tipizzabili e anche i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|MOD2|facoltativo. Qualsiasi combinazione di **CTRL**, **ALT** e **MAIUSC** separati da uno spazio.|
+|emulatore|facoltativo.|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

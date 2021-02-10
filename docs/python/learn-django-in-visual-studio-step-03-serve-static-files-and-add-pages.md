@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aabfa91f7f6c6204919c4a06d2d3080b5174c5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942581"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Passaggio 3: gestire i file statici, aggiungere pagine e usare l'ereditarietà dei modelli con l'app Django
 
@@ -63,7 +63,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 È possibile organizzare i file usando qualsiasi struttura di cartelle in *static* e quindi usare percorsi relativi all'interno di tale cartella per fare riferimento ai file. Per illustrare questo processo, i passaggi seguenti aggiungono un file CSS all'app. Il foglio di stile viene quindi usato nel modello *index.html*:
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla cartella **HelloDjangoApp** nel progetto di Visual Studio, scegliere **Aggiungi**  >  **nuova cartella**e assegnare un nome alla cartella `static` .
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **HelloDjangoApp** nel progetto di Visual Studio, scegliere **Aggiungi**  >  **nuova cartella** e assegnare un nome alla cartella `static` .
 
 1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il modello del **foglio di stile** , assegnare un nome al file `site.css` e fare clic su **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
 

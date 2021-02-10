@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fba1c12743035c397780db64939dec8195a75afd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942854"
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.
@@ -54,7 +54,7 @@ Il simbolo di maggiore (`>`) viene visualizzato sul lato sinistro della finestra
 
 I collegamenti seguenti consentono l'esplorazione in modalità di comando.
 
-|Operazione|Posizione del cursore|Tasto di scelta rapida|
+|Azione|Posizione del cursore|Tasto di scelta rapida|
 |------------| - |----------------|
 |Scorrere l'elenco dei comandi immessi in precedenza.|Riga di input|FRECCIA GIÙ o FRECCIA SU|
 |Scorrere la finestra verso l'alto.|Contenuto della finestra Comando|CTRL+freccia SU|
@@ -111,7 +111,7 @@ L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usare le virgolette per nomi di percorso con spazi
 Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Programmi"** or **"C:\Programmi"**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)

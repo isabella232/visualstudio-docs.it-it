@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.FSharp.IntelliSense
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84e24f609891e67bdafaab5ff8847dc341b861ba
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: d8005a427aeb0e07235c077d23f12906ab2d29ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943861"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Opzioni, Editor di testo, F#, IntelliSense
 
@@ -36,7 +36,7 @@ Usare la pagina delle opzioni **IntelliSense** per modificare alcune impostazion
 
    Quando questa opzione è selezionata, IntelliSense visualizza automaticamente l'elenco di completamento quando si inizia a digitare e include gli elementi dagli spazi dei nomi non aperti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Utilizzo di IntelliSense](../../ide/using-intellisense.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], executing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b5a9ea96820aafe32ca119d7e6d08057b91206fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943822"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Procedura: eseguire un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti del server in un'estensione degli strumenti di SharePoint, è necessario creare un *comando di SharePoint* personalizzato per chiamare l'API. Dopo aver definito il comando e averlo distribuito con l'estensione degli strumenti di SharePoint, l'estensione può eseguire il comando per effettuare una chiamata nel modello a oggetti del server SharePoint. Per eseguire il comando, usare uno dei metodi ExecuteCommand di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> oggetto.
@@ -72,7 +72,7 @@ ms.locfileid: "94903535"
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio richiede un riferimento all'assembly Microsoft. VisualStudio. SharePoint.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Chiamare nei modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Procedura: creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Procedura dettagliata: estendere Esplora server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 222b5d15a1e2bcd9bd3f27a5cd0e9904642d9786
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d15809623067d9612eb2648d593264d61f08f6e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943088"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo (funzione)
 Questa funzione esamina un elenco di directory complete per lo stato corrente.
@@ -60,7 +60,7 @@ in Matrice di percorsi completi delle directory in cui eseguire la query.
 |SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La funzione compila la matrice restituita con una maschera di bit di bit della `SCC_DIRSTATUS` famiglia (vedere il [codice di stato della directory](../extensibility/directory-status-code-enumerator.md)), una voce per ogni directory specificata. La matrice di stato viene allocata dal chiamante.
 
  L'IDE usa questa funzione prima della ridenominazione di una directory per verificare se la directory è sotto il controllo del codice sorgente eseguendo una query su se è presente un progetto corrispondente. Se la directory non è sotto il controllo del codice sorgente, l'IDE può fornire l'avviso appropriato all'utente.
@@ -68,6 +68,6 @@ in Matrice di percorsi completi delle directory in cui eseguire la query.
 > [!NOTE]
 > Se un plug-in del controllo del codice sorgente sceglie di non implementare uno o più valori di stato, i bit non implementati devono essere impostati su zero.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Codice di stato della directory](../extensibility/directory-status-code-enumerator.md)

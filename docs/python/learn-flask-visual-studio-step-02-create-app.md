@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a06c6dbacf21cb2ce00539af901c24c77aaf9ef5
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 8e9d55d9c1c22edea1ff826b23beb6d0ec6b392c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942412"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 
@@ -84,7 +84,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
 7. Selezionare **debug**  >  **Avvia debug** (**F5**) o usare il pulsante **server Web** sulla barra degli strumenti (il browser visualizzato potrebbe variare) per avviare l'app e aprire un browser. Provare entrambe le route dell'URL / e /home.
 
-8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione sulle prime righe di *runserver.py* e *HelloFlask \_* init_ *. py* e sulla `return "Hello Flask!"` riga in *views.py*. Riavviare quindi l'app (**Debug**  >  **riavvio** del debug, **CTRL** + **MAIUSC** + **F5** o il pulsante della barra degli strumenti mostrato di seguito) e scorrere il codice (**F10**) o eseguire da ogni punto di interruzione con **F5**.
+8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione sulle prime righe di *runserver.py* e *HelloFlask \_* init_ *. py* e sulla `return "Hello Flask!"` riga in *views.py*. Riavviare quindi l'app (  >  **riavvio** del debug, **CTRL** + **MAIUSC** + **F5** o il pulsante della barra degli strumenti mostrato di seguito) e scorrere il codice (**F10**) o eseguire da ogni punto di interruzione con **F5**.
 
     ![Pulsante di riavvio sulla barra degli strumenti per il debug in Visual Studio](media/debugging-restart-toolbar-button.png)
 

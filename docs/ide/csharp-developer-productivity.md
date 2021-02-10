@@ -3,19 +3,19 @@ title: Aumentare la produttività per lo sviluppo .NET
 description: Panoramica di esplorazione, analisi del codice, testing unità e altre funzionalità che consentono di scrivere codice .NET in modo più efficiente e veloce.
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942945"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -52,7 +52,7 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **CTRL** + **D** | Duplicare una riga | Duplica la riga di codice in cui si trova il cursore (disponibile in **Visual Studio 2017 versione 15.6** e versioni successive) |
 | **Sposta** + **ALT**+**+**/**-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
 | **Sposta**  +  **ALT**  +  **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
-| **CTRL** + **D** | Ricerca | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
+| **CTRL** + **D** | Cerca | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
 | **F5** | Avvia debug | Avvia il debug dell'applicazione |
 | **CTRL** + **F5** | Esecuzione senza debug | Esegue l'applicazione in locale senza debug |
 | **CTRL** + **K**,**d** (profilo predefinito) o **CTRL** + **E**,**d** (profilo C#) | Formatta documento | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
@@ -62,7 +62,7 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **CTRL** + **Sposta**+**/** | Attiva/Disattiva commento per il blocco/Rimuovi commento | Questo comando aggiunge o rimuove commenti per il blocco a seconda dell'elemento selezionato |
 
 > [!NOTE]
-> Alcune estensioni separano i tasti di scelta rapida predefiniti di Visual Studio. Per usare i comandi precedenti, ripristinare i tasti di scelta rapida per le impostazioni predefinite di Visual Studio passando a **strumenti**  >  **Importa/Esporta impostazioni**  >  **Reimposta tutte le impostazioni** o opzioni **strumenti**  >  **Options**  >  **Keyboard**  >  **Reimposta**.
+> Alcune estensioni separano i tasti di scelta rapida predefiniti di Visual Studio. Per usare i comandi precedenti, ripristinare i tasti di scelta rapida per le impostazioni predefinite di Visual Studio passando a **strumenti**  >  **Importa/Esporta impostazioni**  >  **Reimposta tutte le impostazioni** o opzioni **strumenti**  >    >    >  **Reimposta**.
 
 Per altre informazioni sui tasti di scelta rapida e i comandi, vedere [Tasti di scelta rapida per la produttività](../ide/productivity-shortcuts.md) e [Tasti di scelta rapida più comuni](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md).
 
@@ -125,7 +125,7 @@ Visual Studio include numerosi refactoring, azioni di generazione del codice e c
 
 Le correzioni rapide e i refactoring più comuni includono:
 
-- Rinomina
+- Rinominare
 - Estrai metodo
 - Cambia firma metodo
 - Genera costruttore
@@ -154,7 +154,7 @@ Diversi membri della community hanno scritto estensioni gratuite che aggiungono 
 
 Visual Studio include molte funzionalità che consentono di eseguire ricerche e di [esplorare il codice](../ide/navigating-code.md).
 
-| Feature | Tasto di scelta rapida | Dettagli/Miglioramenti |
+| Funzionalità | Tasto di scelta rapida | Dettagli/Miglioramenti |
 |- | - | -|
 | Trova tutti i riferimenti | **Sposta** + **F12**| I risultati sono colorati e possono essere raggruppati per progetto, definizione e tipo riferimento, ad esempio lettura o scrittura. È anche possibile "bloccare" i risultati. |
 | Vai all'implementazione | **CTRL** + **F12** | È possibile usare Vai a definizione nella parola chiave `override` per passare al membro sostituito |
@@ -169,7 +169,7 @@ Visual Studio include molte funzionalità che consentono di eseguire ricerche e 
 
 Usare IntelliCode per Visual Studio per ottenere il [completamento del codice con riconoscimento del contesto](/visualstudio/intellicode/intellicode-visual-studio) invece di un semplice elenco in ordine alfabetico. È possibile anche eseguire il training di un [modello IntelliSense personalizzato](/visualstudio/intellicode/custom-model-faq) basato su librerie specifiche del dominio.
 
-## <a name="unit-testing"></a>Testing unità
+## <a name="unit-testing"></a>Unit test
 
 A partire da Visual Studio 2017, esistono numerosi miglioramenti per l'esperienza di test. È possibile eseguire test con i framework MSTest v1, MSTest v2, NUnit o XUnit.
 

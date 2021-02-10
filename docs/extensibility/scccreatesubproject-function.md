@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74354e05b16830f599dd706fbe48aadd75b11a18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943127"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject (funzione)
 Questa funzione crea un sottoprogetto con il nome specificato in un progetto padre esistente specificato dall' `lpParentProjPath` argomento.
@@ -82,7 +82,7 @@ in Nome del sottoprogetto suggerito (fino a SCC_PRJPATH_SIZE, incluso il caratte
 |SCC_E_CONNECTIONFAILURE|Si è verificato un problema di connessione del plug-in del controllo del codice sorgente.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se esiste già un sottoprogetto con il nome, la funzione può modificare il nome predefinito per crearne uno univoco, ad esempio aggiungendo "_ \<number> ". Il chiamante deve essere pronto ad accettare le modifiche apportate a `lpUser` , `lpSubProjPath` e `lpAuxProjPath` . Gli `lpSubProjPath` `lpAuxProjPath` argomenti e vengono quindi utilizzati in una chiamata a [SccOpenProject](../extensibility/sccopenproject-function.md). Non devono essere modificati dal chiamante al momento della restituzione. Queste stringhe forniscono un modo per il plug-in del controllo del codice sorgente per tenere traccia delle informazioni che devono essere associate a un progetto. L'IDE chiamante non visualizzerà questi due parametri al momento della restituzione, perché il plug-in può usare una stringa formattata che potrebbe non essere adatta per la visualizzazione. La funzione restituisce un codice di esito positivo o negativo e, in caso di esito positivo, compila la variabile `lpSubProjPath` con il percorso completo del progetto del nuovo progetto.
 
  Questa funzione è simile a [SccGetProjPath](../extensibility/sccgetprojpath-function.md), con la differenza che viene creato automaticamente un progetto anziché richiedere all'utente di selezionarne uno. Quando `SccCreateSubProject` viene chiamata la funzione, `lpParentProjName` e `lpAuxProjPath` non saranno vuoti e corrisponderanno a un progetto valido. Queste stringhe vengono in genere ricevute dall'IDE da una precedente chiamata alla `SccGetProjPath` funzione o a [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).
@@ -92,13 +92,13 @@ in Nome del sottoprogetto suggerito (fino a SCC_PRJPATH_SIZE, incluso il caratte
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Note tecniche per SccCreateSubProject e SccGetParentProjectPath
  L'aggiunta di soluzioni e progetti al controllo del codice sorgente è stata semplificata in Visual Studio per ridurre al minimo il numero di volte in cui a un utente viene richiesto di selezionare i percorsi nel sistema di controllo del codice sorgente. Queste modifiche vengono attivate da Visual Studio se un plug-in del controllo del codice sorgente supporta entrambe le nuove funzioni, `SccCreateSubProject` e `SccGetParentProjectPath` . Tuttavia, la voce del registro di sistema seguente può essere usata per disabilitare queste modifiche e ripristinare il comportamento precedente di Visual Studio (API plug-in del controllo del codice sorgente versione 1,1):
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001**
 
  Se questa voce del registro di sistema non esiste o è impostata su DWORD: 00000000, Visual Studio tenta di usare le nuove funzioni, `SccCreateSubProject` e `SccGetParentProjectPath` .
 
  Se la voce del registro di sistema è impostata su DWORD: 00000001, Visual Studio non tenta di usare queste nuove funzioni e le operazioni di aggiunta al controllo del codice sorgente funzionano come nelle versioni precedenti di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

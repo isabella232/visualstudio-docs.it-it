@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba08e4ec32aceaf6c265714848939cc6ad9c66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944645"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 Questa interfaccia rappresenta un flusso di istruzioni.
@@ -48,7 +48,7 @@ IDebugDisassemblyStream2 : IUnknown
 |[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Ottiene l'ambito del flusso di Disassembly.|
 |[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Ottiene le dimensioni del flusso di Disassembly.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  È possibile creare il flusso Disassembly per rappresentare l'intero spazio degli indirizzi o solo una funzione o un modulo all'interno dello spazio. Ogni istruzione è rappresentata da una struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) restituita da una chiamata al metodo [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -58,7 +58,7 @@ IDebugDisassemblyStream2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

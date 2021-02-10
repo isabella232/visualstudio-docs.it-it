@@ -33,15 +33,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c76ea1729fa84bee97458f131e18f64281b76567
-ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
+ms.openlocfilehash: e39febb27a74b0a2cef54098542bba087e2e0180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943874"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: editor di testo \> generale
 
@@ -101,7 +101,7 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 
 Quando questa opzione è selezionata, nella parte inferiore sinistra dell'editor verrà visualizzata una barra di stato (errori, avvisi) di stato dell'indicatore di integrità file con le opzioni di pulizia del codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni, Editor di testo, Tutti i linguaggi](../../ide/reference/options-text-editor-all-languages.md)
 - [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../../ide/reference/options-text-editor-all-languages-tabs.md)

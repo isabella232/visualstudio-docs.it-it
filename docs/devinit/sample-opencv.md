@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a2f284e1e464ab41391f60c546ce01d418ff377b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 6524cec090f20c475724f1ae8615c5dd24cfa2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943505"
 ---
 # <a name="opencv"></a>OpenCV
 
@@ -28,10 +28,10 @@ Le seguenti personalizzazioni sono già state applicate alla divisione [Microsof
 
 La `.devcontainer` Directory deve contenere i file seguenti:
 
-* devcontainer.js
+* devcontainer.json
 * devinit.js
 
-### <a name="devcontainerjson"></a>devcontainer.js
+### <a name="devcontainerjson"></a>devcontainer.json
 
 Di seguito è riportato il contenuto del _devcontainer.jssu_ file.
 
@@ -41,7 +41,7 @@ Di seguito è riportato il contenuto del _devcontainer.jssu_ file.
 }
 ```
 
-Il `postCreateCommand` Avvia lo strumento  [devinit](devinit-and-codespaces.md) , che utilizza _devinit.js_ .
+Il `postCreateCommand` Avvia lo strumento  [devinit](devinit-and-codespaces.md) , che utilizza _devinit.js_.
 
 ### <a name="devinitjson"></a>devinit.js
 
@@ -60,7 +60,7 @@ Di seguito è riportato il contenuto del [_devinit.jssu_](devinit-json.md) file.
 }
 ```
 
-Il _devinit.jsin_ è il file utilizzato dallo strumento [devinit](devinit-and-codespaces.md) e deve trovarsi nella stessa directory di _devcontainer.jsin_ .
+Il _devinit.jsin_ è il file utilizzato dallo strumento [devinit](devinit-and-codespaces.md) e deve trovarsi nella stessa directory di _devcontainer.jsin_.
 
 In questo esempio, lo strumento [WSL-install](tool-wsl-install.md) viene usato per creare un'istanza di WSL che esegue Ubuntu 20,04 e provisioning con gli strumenti di sviluppo C++ essenziali.
 ## <a name="targeting-windows-or-linux"></a>Destinazione di Windows o Linux

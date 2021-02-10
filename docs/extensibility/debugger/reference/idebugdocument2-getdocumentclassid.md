@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71683c91082f477da530ec1be1fdc7627d6a7635
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c635afa758a4f025305b88f1e11c48737a146a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944602"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Ottiene l'identificatore di classe del documento.
@@ -28,13 +28,13 @@ Ottiene l'identificatore di classe del documento.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetDocumentClassID( 
+HRESULT GetDocumentClassID( 
    CLSID* pclsid
 );
 ```
 
 ```csharp
-int GetDocumentClassID( 
+int GetDocumentClassID( 
    out Guid pclsid
 );
 ```
@@ -45,8 +45,8 @@ int GetDocumentClassID( 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il GUID della classe può essere utilizzato per creare un'istanza di singole classi, ciascuna delle quali rappresenta un documento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

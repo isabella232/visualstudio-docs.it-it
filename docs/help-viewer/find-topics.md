@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944134"
 ---
 # <a name="how-to-search-for-topics"></a>Procedura: Eseguire la ricerca di argomenti
 
@@ -77,7 +77,7 @@ L'algoritmo di ricerca applica determinati criteri per consentire la classificaz
 
 Alcune parole o numeri molto comuni, definiti a volte parole non significative, vengono ignorati automaticamente durante la ricerca full-text. Ad esempio, se si cerca la frase "passare a", i risultati visualizzeranno gli argomenti contenenti la parola "passare" ma non "a".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Operatori logici e avanzati](../help-viewer/logical-operators-search-expressions.md)
 - [Procedura: trovare argomenti nell'indice](../help-viewer/find-topics-index.md)

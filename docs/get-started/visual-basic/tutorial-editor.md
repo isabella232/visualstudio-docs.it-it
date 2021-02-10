@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944537"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Informazioni su come usare l'editor di codice con Visual Basic
 
@@ -187,7 +187,7 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 > [!div class="nextstepaction"]
 > [Informazioni su progetti e soluzioni](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice](../../ide/code-snippets.md)
 - [Spostarsi all'interno del codice](../../ide/navigating-code.md)

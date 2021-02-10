@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 339d424dd0b09404fc135a119606d47cf7570be3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944095"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -59,7 +59,7 @@ Per installare Help Viewer, vedere [Microsoft Help Viewer installazione](../help
 |Contenuto|Visualizza il contenuto installato come una gerarchia (sommario). È possibile specificare criteri per filtrare i titoli visualizzati.|
 |Indice|Visualizza un elenco alfabetico di termini indicizzati. È possibile eseguire ricerche nell'indice, specificare i criteri per filtrare le voci e specificare che le voci di indice contengano o inizino con il testo desiderato.|
 |Preferiti|Per gli argomenti "Preferiti" è possibile scegliere il pulsante **Aggiungi a Preferiti** . gli argomenti vengono visualizzati in questa scheda. Nella sezione **cronologia** viene visualizzato un elenco di argomenti visualizzati di recente.|
-|Ricerca|In questa scheda è disponibile una casella di testo per cercare i termini in tutto il contenuto, inclusi il codice e i titoli degli argomenti.|
+|Cerca|In questa scheda è disponibile una casella di testo per cercare i termini in tutto il contenuto, inclusi il codice e i titoli degli argomenti.|
 
 ### <a name="view-topics"></a>Visualizza gli argomenti
 
@@ -84,7 +84,7 @@ La barra degli strumenti nella finestra **Help Viewer** contiene i pulsanti segu
 
 - Il pulsante **Trova in argomento** evidenzia il testo di ricerca nell'argomento attivo.
 
-- Il pulsante**Stampa** stampa o mostra un'anteprima dell'argomento attivo.
+- Il pulsante **Stampa** stampa o mostra un'anteprima dell'argomento attivo.
 
 - Il pulsante **Opzioni Visualizzatore** visualizza le impostazioni come la grandezza del testo visualizzato, il numero di risultati di ricerca da restituire, il numero di argomenti da mostrare nella cronologia e se verificare la disponibilità di aggiornamenti online.
 
@@ -92,7 +92,7 @@ La barra degli strumenti nella finestra **Help Viewer** contiene i pulsanti segu
 
 - Il piccolo triangolo sul lato destro apre un elenco di schede, incluse le schede degli argomenti e la scheda **Gestisci contenuto** . È possibile scegliere un nome di scheda per impostarlo come scheda attiva.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installazione Microsoft Help Viewer](../help-viewer/installation.md)
 - [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md)

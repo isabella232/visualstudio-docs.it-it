@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942828"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Creare un'applicazione Vue.js tramite Node.js Tools for Visual Studio
 
@@ -40,7 +40,7 @@ Lo sviluppo di applicazioni Vue.js in Visual Studio è supportato dalle nuove fu
     Se non è già installata una versione richiesta, installare [Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)per   installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
     ::: moniker-end
 
     Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
@@ -85,7 +85,7 @@ In questo esempio si usa un'applicazione ASP.NET Core vuota (C#). È tuttavia po
 
 #### <a name="configure-the-project-startup-file"></a>Configurare il file di avvio del progetto
 
-* Aprire il file *./Startup.cs*e aggiungere le righe seguenti al metodo Configure:
+* Aprire il file *./Startup.cs* e aggiungere le righe seguenti al metodo Configure:
 
     ```csharp
     app.UseDefaultFiles(); // Enables default file mapping on the web root.
@@ -119,7 +119,7 @@ Per installare il modulo vue-cli npm, aprire un prompt dei comandi e digitare `n
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Indicare il progetto per la compilazione dell'app client ogni volta che viene attivata una compilazione
 
-1. In Visual Studio passare a proprietà **progetto**  >  **Properties**  >  **eventi di compilazione**.
+1. In Visual Studio passare a proprietà **progetto**  >    >  **eventi di compilazione**.
 
 1. In **Riga di comando eventi pre-compilazione** digitare `npm --prefix ./client-app run build`.
 
@@ -140,7 +140,7 @@ Questa procedura richiede vue-cli 3.0, che attualmente è in versione beta.
 
 1. Digitare `vue create client-app` e quindi scegliere **Manually select features** (Seleziona manualmente le funzionalità).
 
-1. Scegliere **TypeScript**e quindi selezionare le altre opzioni desiderate.
+1. Scegliere **TypeScript** e quindi selezionare le altre opzioni desiderate.
 
 1. Eseguire i passaggi rimanenti e rispondere alle domande.
 
@@ -196,7 +196,7 @@ cd ../
 
 * L'esecuzione del comando `npm run build` come evento di pre-compilazione per le proprietà del progetto non funziona se si usa vue-cli 3.0.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Guida introduttiva di Vue](https://vuejs.org/v2/guide).
 - [Progetto dell'interfaccia](https://github.com/vuejs/vue-cli)della riga di comando Vue.

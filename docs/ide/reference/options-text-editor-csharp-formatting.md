@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Text editor Options dialog box, formatting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a29f298579d571595cbf537f99ed67b333fbbb9c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: eea4f9afd82dd87385e02ba9f149e91f336369a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944069"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Finestra di dialogo Opzioni: editor di testo \> C# \> formattazione dello stile di codice \>
 
@@ -92,10 +92,10 @@ Le opzioni di rientro di questa pagina sono applicate quando il codice viene for
 ![Opzioni di rientro dell'editor di testo C# in Visual Studio](media/csharp-indentation-options.png)
 
 > [!TIP]
-> Sono disponibili anche opzioni di rientro nella **Text Editor**  >  **C#**  >  pagina delle opzioni delle **tabulazioni** di editor di testo C#. Le opzioni determinano solo il punto in cui l'editor del codice posiziona il cursore quando si preme **INVIO** alla fine di una riga.
+> Sono disponibili anche opzioni di rientro nella   >    >  pagina delle opzioni delle **tabulazioni** di editor di testo C#. Le opzioni determinano solo il punto in cui l'editor del codice posiziona il cursore quando si preme **INVIO** alla fine di una riga.
 >
 > ![Opzioni di tabulazione dell'editor di testo C# in Visual Studio](media/csharp-tabs-options.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

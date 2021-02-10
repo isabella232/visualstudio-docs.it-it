@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fd8d7e6bd81e32858f990c70bbcdf0bf00049867
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943835"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opzioni, Editor di testo, HTML (Web Form), Formattazione
 
-Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere formattazione **Text Editor**  >  **HTML (Web Form)** nell'editor di testo  >  **Formatting**.
+Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere formattazione   >  **HTML (Web Form)** nell'editor di testo  >  .
 
 ## <a name="capitalization"></a>Uso delle maiuscole
 
@@ -101,6 +101,6 @@ Queste opzioni determinano se i tag vengono suddivisi nell'editor in più righe 
 
    Viene visualizzata la finestra di dialogo **Opzioni specifiche dei tag**, nella quale è possibile impostare le opzioni di formattazione per i singoli tag o per gruppi di tag.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

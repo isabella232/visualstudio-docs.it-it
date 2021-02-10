@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944303"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 
@@ -131,7 +131,7 @@ Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai c
 
 1. Creare una condivisione di rete e copiare il contenuto della Guida in tale posizione.
 
-     Ad esempio, copiare il contenuto in *C:\VSHelp* in * \\ \myserver\VSHelp*.
+     Ad esempio, copiare il contenuto in *C:\VSHelp* in *\\ \myserver\VSHelp*.
 
 2. Creare un file con estensione *bat* che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti. Ad esempio:
 
@@ -143,7 +143,7 @@ Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai c
 
 3. Eseguire il file con *estensione bat* nei computer locali in cui si vuole installare il contenuto della guida.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Argomenti della riga di comando per gestione contenuto della Guida](../help-viewer/command-line-arguments.md)
 - [Override di gestione contenuto della Guida](../help-viewer/behavior-overrides.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9e7e6e9114405bc1575e0256dd63211a4fb6d08
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c7bfc8c850cee9273af2af3b28f71b9d27209d9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943640"
 ---
 # <a name="sequence-activity-designer"></a>ActivityDesigner Sequence
 
@@ -33,11 +33,11 @@ Per aggiungere un' <xref:System.Activities.Statements.Sequence> attività, trasc
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Sequence> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Sequence> nell'intestazione. Il valore predefinito è Sequence. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Diagramma di flusso](../workflow-designer/flowchart-activity-designer.md)
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

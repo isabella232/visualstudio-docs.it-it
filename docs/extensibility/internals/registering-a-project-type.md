@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 893f59aa9e99d990623e0c8383c12bbffbc4a510
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944511"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 Quando si crea un nuovo tipo di progetto, è necessario creare le voci del registro di sistema che consentono [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a di riconoscere e utilizzare il tipo di progetto. Queste voci del registro di sistema vengono in genere create usando un file di script del registro di sistema (con estensione RGS).
@@ -195,7 +195,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
 
 |Nome|Tipo|Data|Descrizione|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|Nessuno|Valore predefinito che indica che le voci seguenti sono per le voci dei progetti di file esterni.|
+|`@`|REG_SZ|nessuno|Valore predefinito che indica che le voci seguenti sono per le voci dei progetti di file esterni.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valore ID risorsa per i file di modello Aggiungi nuovi elementi.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Percorso predefinito degli elementi che verranno visualizzati nella finestra di dialogo **Aggiungi nuovo elemento** .|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Stabilisce il tipo di ordinamento per la visualizzazione nel nodo della struttura ad albero della finestra di dialogo **Aggiungi nuovo elemento** .|

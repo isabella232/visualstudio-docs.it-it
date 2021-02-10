@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0277379c44a7d0334798920759438dce52ae16f8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 36aabdd07dd7fa966a31d8fc3844e68d816c59ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944524"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Informazioni su progetti e soluzioni di Visual Basic
 
@@ -251,7 +251,7 @@ Se si vuole verificare che il unit test funzioni, scegliere **test**  >  **Esegu
 
 Se si desidera esplorare ulteriormente Visual Studio, è consigliabile creare un'app seguendo una delle [esercitazioni di Visual Basic](index.yml).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare soluzioni e progetti](../../ide/creating-solutions-and-projects.md)
 - [Gestire le proprietà di progetti e soluzioni](../../ide/managing-project-and-solution-properties.md)

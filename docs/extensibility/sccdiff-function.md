@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b68df68ce7fa4ad5cbc98db256204ddf8623d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943114"
 ---
 # <a name="sccdiff-function"></a>SccDiff (funzione)
 Questa funzione Visualizza (o, facoltativamente, semplicemente controlla) le differenze tra il file corrente (sul disco locale) e l'ultima versione archiviato nel sistema di controllo del codice sorgente.
@@ -69,7 +69,7 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 |SCC_E_NONSPECIFICERROR|Errore non specifico. non è stata ottenuta la differenza del file.|
 |SCC_E_FILENOTEXIST|Il file locale non è stato trovato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione serve due scopi diversi. Per impostazione predefinita, viene visualizzato un elenco delle modifiche apportate a un file. Il plug-in del controllo del codice sorgente apre la propria finestra, in qualsiasi formato scelto, per visualizzare le differenze tra il file dell'utente su disco e la versione più recente del file nel controllo del codice sorgente.
 
  In alternativa, è possibile che l'IDE debba semplicemente determinare se un file è stato modificato. Ad esempio, è possibile che l'IDE debba determinare se è sicuro estrarre un file senza informare l'utente. In tal caso, l'IDE passa il `SCC_DIFF_CONTENTS` flag. Il plug-in del controllo del codice sorgente deve controllare il file su disco, byte per byte, rispetto al file incluso nel controllo del codice sorgente e restituire un valore che indica se i due file sono diversi senza visualizzare alcun elemento all'utente.
@@ -87,5 +87,5 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 |SCC_DIFF_QD_CHECKSUM|Confronta automaticamente il file tramite un checksum, se supportato. Se non è supportato, viene eseguito il fallback a un confronto di contenuto.|
 |SCC_DIFF_QD_TIME|Confronta automaticamente il file con il timestamp quando è supportato. Se non è supportato, viene eseguito il fallback a un confronto di contenuto.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

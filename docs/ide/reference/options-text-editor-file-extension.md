@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d0e782b0d141666ca7d1f79464d60afd89ef871
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 0f163f1aca78832f38e73eaaed882ae1ac6cff17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943939"
 ---
 # <a name="options-text-editor-file-extension"></a>Opzioni, Editor di testo, Estensione file
 
@@ -60,6 +60,6 @@ Selezionare questa opzione se si vuole specificare come devono essere gestiti ne
 
 Visualizza lo stesso elenco di **Editor**. Selezionare la finestra di progettazione o l'editor dell'IDE in cui verranno aperti i documenti senza estensione di file.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Gestire le modalità dell'editor](../../ide/how-to-manage-editor-modes.md)

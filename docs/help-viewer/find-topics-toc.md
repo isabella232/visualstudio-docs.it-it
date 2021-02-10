@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a678b669ca0f389a79438185ffce605143ec71d0
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7a6b8bbce5e25bd1de68aa8b8eafd02f741408f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944212"
 ---
 # Procedura: Trovare argomenti nel sommario
 
@@ -51,7 +51,7 @@ Se un argomento è stato aperto tramite l'indice o le funzionalità di ricerca f
 
      Viene aperta la scheda **Contenuto** in cui viene visualizzata la posizione dell'argomento nel sommario.
 
-## Vedere anche
+## Vedi anche
 
 - [Procedura: trovare argomenti nell'indice](../help-viewer/find-topics-index.md)
 - [Procedura: Eseguire la ricerca di argomenti](../help-viewer/find-topics.md)

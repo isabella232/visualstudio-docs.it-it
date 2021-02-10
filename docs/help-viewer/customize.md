@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 402aa5deaae6b082c8360b9867807516f11d935d
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 0421a5cdb93c64093ae5b428260c78da44e71e3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944199"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizzare Help Viewer
 È possibile personalizzare il layout delle finestre di Help Viewer, così come altre opzioni quali dimensioni del carattere, numero massimo di risultati e se includere contenuto in inglese.
@@ -46,6 +46,6 @@ Per aprire la finestra di dialogo **Opzioni Help Viewer** scegliere il pulsante 
 |Modificare il numero massimo di voci della cronologia visualizzate nella finestra **Preferiti**|Scegliere un valore nell'elenco **Numero massimo di voci della cronologia salvate**.|
 |Includere o escludere contenuto in inglese quando si visualizza il contenuto per una versione non inglese di un prodotto.|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**. **Attenzione:** da questa funzionalità dipende anche la possibilità di scaricare contenuto in inglese nella scheda **Gestisci contenuto**.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

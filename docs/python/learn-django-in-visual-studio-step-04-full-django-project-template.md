@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c0a0f0f4e009d689a69e840b31281e65bc5a0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62961688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942555"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Passaggio 4: Usare il modello di progetto Web Django completo
 
@@ -73,7 +73,7 @@ Al livello più ampio il modello "Progetto Web Django" crea la struttura seguent
   - *requirements.txt*, che contiene una dipendenza da Django 1.x.
   - *readme.html*, un file visualizzato in Visual Studio dopo la creazione del progetto. Come indicato nella sezione precedente, seguire le istruzioni riportate qui per creare un account utente con privilegi avanzati (amministratore) per l'app.
 - La cartella *app* contiene tutti i file dell'app, tra cui le visualizzazioni, i modelli, i test, i moduli, e i file statici (vedere il passaggio 4-2). È in genere opportuno rinominare questa cartella per usare un nome di app più distintivo.
-- La cartella *DjangoWeb* (progetto Django) contiene i file di progetto Django tipici: * \_ \_ init \_ \_ . py*, *Settings.py*, *urls.py*e *WSGI.py*. Tramite il modello di progetto, *settings.py* è già configurato per l'app e il file di database, mentre *urls.py* è già configurato con route a tutte le pagine dell'app, incluso il modulo di accesso.
+- La cartella *DjangoWeb* (progetto Django) contiene i file di progetto Django tipici: *\_ \_ init \_ \_ . py*, *Settings.py*, *urls.py* e *WSGI.py*. Tramite il modello di progetto, *settings.py* è già configurato per l'app e il file di database, mentre *urls.py* è già configurato con route a tutte le pagine dell'app, incluso il modulo di accesso.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Domanda: È possibile condividere un ambiente virtuale tra progetti di Visual Studio?
 

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: f9c9a950156f29bda68a134af2eb299b3431445f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944290"
 ---
 # <a name="help-content-manager-overrides"></a>Override di Gestione contenuto della Guida
 
@@ -32,7 +32,7 @@ ms.locfileid: "91879060"
 
 ### <a name="registry-key-values"></a>Valori delle chiavi del Registro di sistema
 
-|Valore della chiave del Registro di sistema|Type|Dati|Descrizione|
+|Valore della chiave del Registro di sistema|Tipo|Data|Descrizione|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|string|\<http URL for service endpoint\>|Definire un endpoint di servizio univoco|
 |UseOnlineHelp|dword|`0` per specificare la Guida locale, `1` per specificare la Guida online|Impostare la Guida online o offline come predefinita|
@@ -57,12 +57,12 @@ ms.locfileid: "91879060"
 
 È possibile controllare i due comportamenti seguenti impostando i valori di chiavi del Registro di sistema nell'Editor del Registro di sistema.
 
-|Attività|Chiave del Registro di sistema|Valore|Dati|
+|Attività|Chiave del Registro di sistema|Valore|Data|
 |----------|-----|------|----|
 |Eseguire l'override della priorità del processo BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (in un computer a 64 bit)\Microsoft\Help\v2.3|BITSPriority|**foreground**, **high**, **normal** o **low**|
 |Puntare all'archivio del contenuto locale nella condivisione di rete|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md)
 - [Argomenti della riga di comando per gestione contenuto della Guida](../help-viewer/command-line-arguments.md)

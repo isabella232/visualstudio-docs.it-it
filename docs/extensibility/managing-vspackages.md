@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 2b0e3b95ee3c715eb21028b6c156b7a62ea82d41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943218"
 ---
 # <a name="manage-vspackages"></a>Gestire VSPackage
 Nella maggior parte dei casi non è necessario preoccuparsi della gestione dei pacchetti VSPackage, dal momento che i modelli di progetto e di elemento si registrano e caricano automaticamente il pacchetto. In alcuni casi, tuttavia, potrebbe essere necessario saperne di più per poter gestire il pacchetto.
@@ -46,5 +46,5 @@ Le estensioni possono compromettere le prestazioni di avvio e di caricamento del
 ## <a name="troubleshoot-vspackages"></a>Risolvere i problemi relativi ai pacchetti VSPackage
  Informazioni sulle tecniche per la risoluzione dei problemi relativi ai pacchetti VSPackage che non vengono caricati o si verificano errori: [risoluzione dei problemi](../extensibility/troubleshooting-vspackages.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPackages](../extensibility/internals/vspackages.md)

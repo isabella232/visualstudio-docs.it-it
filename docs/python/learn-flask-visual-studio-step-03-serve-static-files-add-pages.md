@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d474236aca50a74b96689001a56e7d0701caae30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942386"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Passaggio 3: gestire i file statici, aggiungere pagine e usare l'ereditarietà dei modelli con l'app Flask
 
@@ -56,7 +56,7 @@ In ogni caso è possibile organizzare i file in *static* come si vuole.
 
 ### <a name="use-a-static-file-in-a-template"></a>Usare un file statico in un modello
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla cartella **HelloFlask** nel progetto di Visual Studio, scegliere **Aggiungi**  >  **nuova cartella**e assegnare un nome alla cartella `static` .
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **HelloFlask** nel progetto di Visual Studio, scegliere **Aggiungi**  >  **nuova cartella** e assegnare un nome alla cartella `static` .
 
 1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il modello del **foglio di stile** , assegnare un nome al file `site.css` e fare clic su **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
 

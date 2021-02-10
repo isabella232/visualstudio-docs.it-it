@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e727fad6d3cb15f70cf630b1077170d16d28b7f
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 9181961c1f30a96e5b03434f4ab686024992e29a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944017"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opzioni, Editor di testo, C#, IntelliSense
 
@@ -85,7 +85,7 @@ La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
 Esegue il completamento automatico dei nomi degli oggetti per i membri selezionati recentemente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Utilizzo di IntelliSense](../../ide/using-intellisense.md)

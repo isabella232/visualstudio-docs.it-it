@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 3d771fac2cf494e92cbc27fdbdca0b78af97b67e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944394"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -240,7 +240,7 @@ Per modificare il tema **Scuro**:
 
 2. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** .
 
-3. Nella **Environment**  >  pagina Opzioni **generali** ambiente modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
+3. Nella   >  pagina Opzioni **generali** ambiente modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
 
    ![Impostare il tema colori scuro in Visual Studio](media/change-color-theme.png)
 
@@ -512,7 +512,7 @@ Esplorare più approfonditamente Visual Studio seguendo uno di questi articoli i
 > [!div class="nextstepaction"]
 > [Informazioni su progetti e soluzioni](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - Scoprire [altre funzionalità di Visual Studio](../../ide/advanced-feature-overview.md)
 - Visitare [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

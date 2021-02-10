@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944368"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: creare un'applicazione semplice con Visual Basic
 
@@ -71,7 +71,7 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
      ![Modello App WPF nella finestra di dialogo Nuovo progetto di Visual Studio](media/exploreide-newproject-vb.png)
 
-Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
+Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni** vengono visualizzati gli elementi indicati di seguito.
 
 ![Esplora soluzioni con i file HelloWPFApp caricati](../media/exploreide-hellowpfappfiles.png)
 
@@ -87,7 +87,7 @@ Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzio
 
 3. Nella schermata successiva assegnare al progetto il nome **HelloWPFApp** e scegliere **Crea**.
 
-Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
+Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni** vengono visualizzati gli elementi indicati di seguito.
 
 ![Esplora soluzioni con i file HelloWPFApp caricati](../media/vs-2019/exploreide-hellowpfappfiles.png)
 
@@ -100,11 +100,11 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
-Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *MainWindow. XAML* e scegliere **Rinomina**. Rinominare il file in *Greetings. XAML*.
+Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *MainWindow. XAML* e scegliere **Rinomina**. Rinominare il file in *Greetings. XAML*.
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
 
-Se la finestra di progettazione non è aperta, selezionare *Greetings. XAML* in **Esplora soluzioni**e premere **MAIUSC** + **F7** per aprire la finestra di progettazione.
+Se la finestra di progettazione non è aperta, selezionare *Greetings. XAML* in **Esplora soluzioni** e premere **MAIUSC** + **F7** per aprire la finestra di progettazione.
 
 Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:System.Windows.Controls.TextBlock>, due controlli <xref:System.Windows.Controls.RadioButton> e un controllo <xref:System.Windows.Controls.Button>.
 
@@ -261,11 +261,11 @@ Avviare nuovamente il debugger premendo **F5**. Viene visualizzata la finestra *
 
 ### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
 
-Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **debug**imposta  >  **/Rimuovi**punto di interruzione facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera che si verifichi l'interruzione oppure premendo **F9**.
+Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **debug** imposta  >  **/Rimuovi** punto di interruzione facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera che si verifichi l'interruzione oppure premendo **F9**.
 
 #### <a name="add-breakpoints"></a>Aggiungere punti di interruzione
 
-1. Aprire *Greetings. XAML. vb*e selezionare la riga seguente: `MessageBox.Show("Hello.")`
+1. Aprire *Greetings. XAML. vb* e selezionare la riga seguente: `MessageBox.Show("Hello.")`
 
 2. Aggiungere un punto di interruzione dal menu premendo **F9** o selezionando **Debug**, quindi **Attiva/disattiva punto di interruzione**.
 
@@ -281,7 +281,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
    ![Screenshot del punto di interruzione nel debugger](media/exploreide-debugbreakpoint.png)
 
-6. Nella barra dei menu scegliere **debug**Esci  >  **da istruzione/uscita**.
+6. Nella barra dei menu scegliere **debug** Esci  >  **da istruzione/uscita**.
 
      L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".
 
@@ -295,7 +295,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 10. Chiudere la finestra dell'applicazione per arrestare il debug.
 
-11. Sulla barra dei menu scegliere **debug**  >  **Disabilita tutti i**punti di interruzione.
+11. Sulla barra dei menu scegliere **debug**  >  **Disabilita tutti i** punti di interruzione.
 
 ### <a name="view-a-representation-of-the-ui-elements"></a>Visualizzazione di una rappresentazione degli elementi dell'interfaccia utente
 
@@ -315,7 +315,7 @@ Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di 
 
 L'esercitazione è stata completata. È possibile trovare il file con *estensione exe* compilato nella directory della soluzione e del progetto (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 ::: moniker range="vs-2017"
 

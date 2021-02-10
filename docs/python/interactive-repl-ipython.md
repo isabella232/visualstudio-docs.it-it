@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e53ef96ad8fab8b26f04ccd5f7f0488d1f0d6985
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 343c87f3c14e8ebafeb99a55a88d0b86df1bafcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942633"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usare IPython nella finestra interattiva
 
@@ -80,6 +80,6 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
 
 IPython dispone di molte altre funzionalità utili, ad esempio l'escape alla shell di sistema, la sostituzione delle variabili, l'acquisizione dell'output e così via. Per ulteriori informazioni, vedere la [documentazione di IPython](https://ipython.org/documentation.html) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - Il [Data Science Virtual Machine di Azure](/azure/machine-learning/data-science-virtual-machine/overview) è preconfigurato per l'esecuzione di notebook Jupyter insieme a un'ampia gamma di altri strumenti di Data Science.

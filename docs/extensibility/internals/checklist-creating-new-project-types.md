@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 0a8cdeb250b81a39a5d9350da61a872ef43ae23b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944498"
 ---
 # <a name="checklist-create-new-project-types"></a>Elenco di controllo: creare nuovi tipi di progetto
 Per creare un nuovo tipo di progetto, è necessario completare diverse attività. Nell'elenco di controllo seguente viene fornita una guida a tali attività:
@@ -59,7 +59,7 @@ Per creare un nuovo tipo di progetto, è necessario completare diverse attività
 
 8. Creare il file di Microsoft Installer (*MSI*) per l'installazione dei pacchetti VSPackage. Per altre informazioni, vedere [installare VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrare un tipo di progetto](../../extensibility/internals/registering-a-project-type.md)e [VSPackage](../../extensibility/internals/vspackages.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [Quando creare i tipi di progetto](../../extensibility/internals/when-to-create-project-types.md)
 - [Creazione di tipi di progetto](../../extensibility/internals/creating-project-types.md)
