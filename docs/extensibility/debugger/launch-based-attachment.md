@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e041c692a833b7d0a1891c078388a3f5b2d11e4
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 1f898bcb040b5b46144fd7c4f3fc2260b480872d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945942"
 ---
 # <a name="launch-based-attachment"></a>Allegato basato su avvio
 L'allegato basato su avvio a un programma è automatico. Quando il processo che ospita il programma viene avviato da SDM, l'allegato basato su avvio segue un percorso simile a quello del metodo allegato manuale. Per informazioni, vedere [Connetti al programma](../../extensibility/debugger/attaching-to-the-program.md).
@@ -34,6 +34,6 @@ L'allegato basato su avvio a un programma è automatico. Quando il processo che 
 
 4. Inviare un oggetto evento [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) per notificare a SDM che è stato creato un nuovo thread per il processo avviato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Invia gli eventi necessari](../../extensibility/debugger/sending-the-required-events.md)
 - [Abilitare un programma di cui eseguire il debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

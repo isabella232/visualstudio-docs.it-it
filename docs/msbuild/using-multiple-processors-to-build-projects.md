@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c1560b40fe94af8dae5223981dd8e0c790320085
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946371"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Usare più processori per la compilazione di progetti
 
@@ -38,7 +38,7 @@ MSBuild è in grado di trarre vantaggio dai sistemi che dispongono di più proc
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>File di progetto C++ (. vcxproj) e file di soluzione (. sln)
 
- Sia i file di progetto C++ ( *. vcxproj* ) che i file di soluzione ( *. sln* ) possono essere passati all' [attività MSBuild](../msbuild/msbuild-task.md). Per i progetti C++, viene chiamato viene VCWrapperProject, quindi viene creato il progetto MSBuild interno. Per le soluzioni C++, viene creato un SolutionWrapperProject, quindi viene creato il progetto MSBuild interno. In entrambi i casi, il progetto risultante viene considerato come qualsiasi altro progetto MSBuild.
+ Sia i file di progetto C++ (*. vcxproj*) che i file di soluzione (*. sln*) possono essere passati all' [attività MSBuild](../msbuild/msbuild-task.md). Per i progetti C++, viene chiamato viene VCWrapperProject, quindi viene creato il progetto MSBuild interno. Per le soluzioni C++, viene creato un SolutionWrapperProject, quindi viene creato il progetto MSBuild interno. In entrambi i casi, il progetto risultante viene considerato come qualsiasi altro progetto MSBuild.
 
 ## <a name="multi-process-execution"></a>Esecuzione di più processi
 

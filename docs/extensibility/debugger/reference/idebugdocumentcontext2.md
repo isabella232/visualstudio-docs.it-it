@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d31a78412a1a6b20518b6f38ba76b7964cbdbe3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64db2446496d2083d34eefc92afabc3ca541442e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946969"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Questa interfaccia rappresenta una posizione in un documento del file di origine.
@@ -55,7 +55,7 @@ IDebugDocumentContext2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)

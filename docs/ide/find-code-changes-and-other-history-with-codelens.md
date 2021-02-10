@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 59df5a4b0b0c873de69c5e574ad5c2cccbc43567
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945877"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -239,7 +239,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
 7. Per vedere quante persone hanno modificato il test, gli autori delle modifiche o il numero di modifiche apportate al test, [individuare la cronologia del codice](#find-changes-in-your-code) e gli elementi collegati.
 
-## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
+## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
 
 Per usare la tastiera per selezionare gli indicatori, premere e tenere premuto il tasto **ALT** per visualizzare i tasti numerici correlati, quindi premere il numero che corrisponde all'indicatore da selezionare.
 

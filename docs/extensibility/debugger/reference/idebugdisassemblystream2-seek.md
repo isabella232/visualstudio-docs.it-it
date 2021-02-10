@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4954b3b278b3c7a6b798a4ffda3856ab8bb200c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3223f454fbf775b6aa11512c20fc63f8c224ade7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944628"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 Sposta il puntatore di lettura nel flusso di disassembly per un determinato numero di istruzioni rispetto a una posizione specificata.
@@ -28,7 +28,7 @@ Sposta il puntatore di lettura nel flusso di disassembly per un determinato nume
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Seek( 
+HRESULT Seek( 
    SEEK_START          dwSeekStart,
    IDebugCodeContext2* pCodeContext,
    UINT64              uCodeLocationId,
@@ -37,7 +37,7 @@ HRESULT Seek( 
 ```
 
 ```csharp
-int Seek( 
+int Seek( 
    enum_SEEK_START    dwSeekStart,
    IDebugCodeContext2 pCodeContext,
    ulong              uCodeLocationId,
@@ -61,10 +61,10 @@ in Numero di istruzioni da spostare rispetto alla posizione specificata in `dwSe
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la posizione di ricerca è a un punto successivo all'elenco di istruzioni disponibili. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se la ricerca è stata posizionata prima dell'inizio dell'elenco, la posizione di lettura viene impostata sulla prima istruzione dell'elenco. Se la posizione di visualizzazione è successiva alla fine dell'elenco, la posizione di lettura viene impostata sull'ultima istruzione nell'elenco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

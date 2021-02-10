@@ -7,15 +7,15 @@ ms.date: 02/21/2019
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4511658a454c1431967905e88428842c3ba00c64
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945500"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -199,7 +199,7 @@ Sono state presentate solo alcune delle funzionalità di Visual Studio per inizi
 > [!div class="nextstepaction"]
 > [Informazioni su progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Altre funzionalità di Visual Studio](../ide/advanced-feature-overview.md)

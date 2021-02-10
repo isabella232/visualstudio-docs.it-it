@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e8b49f833b5dd91dc6379d2a015d41a9679afe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 23174667827e63afb93d82679a51d65512731710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946072"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce
 Quando si impostano le autorizzazioni di sicurezza dall'accesso di codice per un'applicazione ClickOnce, è necessario iniziare con un set di autorizzazioni di base nella pagina **Sicurezza** di **Creazione progetti**.
@@ -32,7 +32,7 @@ Quando si impostano le autorizzazioni di sicurezza dall'accesso di codice per un
 
 ### <a name="to-set-a-security-zone"></a>Per impostare un'area di sicurezza
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **proprietà** dal menu **progetto** .
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà** dal menu **progetto** .
 
 2. Fare clic sulla scheda **Security** (Sicurezza).
 
@@ -44,7 +44,7 @@ Quando si impostano le autorizzazioni di sicurezza dall'accesso di codice per un
 
 5. Dall'elenco a discesa **Area da cui verrà installata l'applicazione** selezionare un'area di sicurezza.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

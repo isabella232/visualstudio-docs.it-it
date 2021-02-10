@@ -19,15 +19,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 47613a2f74ce1c89a6b032e46fa18b978c1c5f0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945292"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
 
@@ -373,7 +373,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
  Impostare il colore di sfondo di un elemento di codice in base alla proprietà `Coverage`. Gli stili vengono valutati nell'ordine in cui appaiono, in modo analogo alle istruzioni `if-else`.
 
- Esempio:
+ In questo esempio:
 
 1. Se `Coverage` è > 80, impostare la `Background` proprietà su verde.
 

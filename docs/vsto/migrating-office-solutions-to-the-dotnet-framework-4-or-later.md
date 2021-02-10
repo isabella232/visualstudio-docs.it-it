@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5b7780b6fccef86dfe4a671c0c468e5899adc36c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8c11b2f107414ac5ffb048d7c5e49609ba0b17b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946137"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva
   Se il Framework di destinazione di un progetto di Office viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive da una versione precedente del .NET Framework, potrebbero essere necessari alcuni passaggi aggiuntivi per continuare a eseguire la soluzione nei computer di sviluppo e degli utenti finali. Per ulteriori informazioni, vedere [la pagina relativa alle modifiche necessarie per eseguire i progetti di Office di cui si esegue la migrazione al .NET Framework 4 o al .NET Framework 4,5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).
@@ -39,7 +39,7 @@ ms.locfileid: "97528455"
 
   Per altre informazioni sui motivi per cui alcune funzionalità nei progetti di Office hanno un modello di programmazione diverso quando si usa [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, vedere [modifiche alla progettazione dei progetti di Office destinati a .NET Framework 4 o alla panoramica di .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md) e [strumenti di Visual Studio per Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/visual-studio-multi-targeting-overview.md)
 - [Risolvere gli errori nelle soluzioni Office](../vsto/troubleshooting-errors-in-office-solutions.md)

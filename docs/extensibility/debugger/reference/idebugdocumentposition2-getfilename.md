@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cc194c43b0a95ad92e9421334be7af2cd6073b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fde4f0eea0d873a22bde5771bfce9afa247e524f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946878"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Ottiene il nome file del file di origine che contiene la posizione del documento.
@@ -28,13 +28,13 @@ Ottiene il nome file del file di origine che contiene la posizione del documento
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetFileName( 
+HRESULT GetFileName( 
    BSTR* pbstrFileName
 );
 ```
 
 ```csharp
-int GetFileName( 
+int GetFileName( 
    out string pbstrFileName
 );
 ```
@@ -46,8 +46,8 @@ out Restituisce il nome del file di origine.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un file di origine potrebbe non avere sempre un nome file (ad esempio, il file di origine potrebbe non esistere sul disco).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

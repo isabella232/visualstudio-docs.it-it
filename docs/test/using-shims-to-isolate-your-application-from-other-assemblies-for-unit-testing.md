@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 4bf43fa5dd3e95500b036d5ef5d65055b5d5870f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946280"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli shim per isolare l'app per il testing unità
 
@@ -25,7 +25,7 @@ Usare gli *shim* per isolare il codice dagli assembly che non fanno parte della 
 
 Per una panoramica e istruzioni introduttive, vedere [isolare il codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
@@ -526,7 +526,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 Gli shim non possono essere usati in tutti i tipi della libreria di classi base .NET **mscorlib** e **System** in .NET Framework e in **System. Runtime** in .NET Core.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Isolare codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Blog di Peter prevosto: shim di Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)

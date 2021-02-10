@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c821470cc81c1f4c495f6d71565d79cc9745f65d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 875f1e55953d412e0c6dc49f1b00bd24cf589446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945825"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 Ottiene il numero di passaggi corrente per il punto di interruzione associato.
@@ -29,13 +29,13 @@ Ottiene il numero di passaggi corrente per il punto di interruzione associato.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetHitCount( 
+HRESULT GetHitCount( 
    DWORD* pdwHitCount
 );
 ```
 
 ```csharp
-int GetHitCount( 
+int GetHitCount( 
    out uint pdwHitCount
 );
 ```
@@ -47,9 +47,9 @@ out Restituisce il numero di passaggi.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il numero di passaggi è il numero di volte in cui il punto di interruzione è stato generato durante l'esecuzione corrente della sessione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

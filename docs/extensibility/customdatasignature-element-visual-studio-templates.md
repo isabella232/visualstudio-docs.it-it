@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0b2442e7b254ccaaf9e890b5370f712b5715f18
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e5f42b3c5fe1dc5b9ab9697275876509eb0f8509
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946059"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Elemento CustomDataSignature (modelli di Visual Studio)
 Specifica la firma del testo per individuare i dati personalizzati.
@@ -37,10 +37,10 @@ Specifica la firma del testo per individuare i dati personalizzati.
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -56,6 +56,6 @@ Specifica la firma del testo per individuare i dati personalizzati.
 ## <a name="remarks"></a>Commenti
  `CustomDataSignature` è un elemento facoltativo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 1998091559f78ed7c7eb8d9585206cf0217d8b2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946592"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Aprire una finestra degli strumenti dinamica
 Le finestre degli strumenti vengono in genere aperte da un comando in un menu o da un tasto di scelta rapida equivalente. In alcuni casi, tuttavia, potrebbe essere necessaria una finestra degli strumenti che si apre ogni volta che viene applicato un contesto dell'interfaccia utente specifico e si chiude quando il contesto dell'interfaccia utente non viene più applicato. Questi tipi di finestre degli strumenti sono denominati *dinamici* o *visibili automaticamente*.

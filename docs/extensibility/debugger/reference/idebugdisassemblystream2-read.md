@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 720850096e7099ed95cbc5fa914bebb2bee580ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944667"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 Legge le istruzioni a partire dalla posizione corrente nel flusso di Disassembly.
@@ -28,7 +28,7 @@ Legge le istruzioni a partire dalla posizione corrente nel flusso di Disassembly
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Read( 
+HRESULT Read( 
    DWORD                     dwInstructions,
    DISASSEMBLY_STREAM_FIELDS dwFields,
    DWORD*                    pdwInstructionsRead,
@@ -37,7 +37,7 @@ HRESULT Read( 
 ```
 
 ```csharp
-int Read( 
+int Read( 
    uint                           dwInstructions,
    enum_DISASSEMBLY_STREAM_FIELDS dwFields,
    out uint                       pdwInstructionsRead,
@@ -61,14 +61,14 @@ out Matrice di strutture [DisassemblyData](../../../extensibility/debugger/refer
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il numero massimo di istruzioni disponibili nell'ambito corrente può essere ottenuto chiamando il metodo [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) .
 
  La posizione corrente da cui viene letta l'istruzione successiva può essere modificata chiamando il metodo [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .
 
  Il `DSF_OPERANDS_SYMBOLS` flag può essere aggiunto al `DSF_OPERANDS` flag nel `dwFields` parametro per indicare che i nomi dei simboli devono essere utilizzati per le istruzioni di disassemblaggio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

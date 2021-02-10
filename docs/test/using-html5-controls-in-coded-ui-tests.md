@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d902d31b0d417c32b7b3e1a2067a8bb5bcf77451
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 931db4db8b6dd5b076ab720c866bb2b5b97aa15c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946358"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 
@@ -22,7 +22,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 
@@ -84,7 +84,7 @@ Vedere [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/vi
 
 ![Controllo ProgressBar HTML5](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Elementi HTML](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)

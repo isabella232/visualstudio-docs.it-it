@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f281ceb1f305c5774fedbf725f2e6a9481d073d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e069a822cc2394769d256c93a1decf01b451b643
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944856"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 Questa interfaccia rappresenta l'indirizzo di un elemento. Viene restituito dal gestore di simboli.
@@ -41,7 +41,7 @@ IDebugAddress : IUnknown
 |------------|-----------------|
 |[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Recupera una struttura [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) che descrive un oggetto e la relativa posizione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il provider di simboli restituisce questa interfaccia per rappresentare un oggetto e la relativa posizione all'interno di un ambito specifico (ad esempio, funzione, metodo o classe). Questa interfaccia viene restituita da e passata a diversi metodi del provider di simboli e dell'analizzatore di espressioni. In genere, il provider di simboli è l'unica entità che deve interpretare il contenuto di questa interfaccia.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,6 +51,6 @@ IDebugAddress : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

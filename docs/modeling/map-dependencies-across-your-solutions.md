@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dependency graphs
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946527"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Eseguire il mapping delle dipendenze con le mappe codice
 
@@ -191,7 +191,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
     Per un **assembly** scegliere:
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |-|-|
     |**Mostra assembly a cui fa riferimento**|Aggiungere gli assembly a cui fa riferimento questo assembly. Gli assembly esterni vengono visualizzati nel gruppo **Esterni** .|
     |**Mostra assembly che fanno riferimento a**|Aggiungere gli assembly della soluzione che fanno riferimento a questo assembly.|
@@ -200,7 +200,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
     Per una **classe** o un' **interfaccia** scegliere:
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |-|-|
     |**Mostra tipi base**|Per una classe, aggiungere la classe base e le interfacce implementate.<br /><br /> Per un'interfaccia, aggiungere le interfacce di base.|
     |**Mostra tipi derivati**|Per una classe, aggiungere le classi derivate.<br /><br /> Per un'interfaccia, aggiungere le interfacce derivate e le classi o gli struct implementati.|
@@ -213,7 +213,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
      Per un **metodo** scegliere:
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |-|-|
     |**Mostra metodi chiamati**|Aggiungere metodi chiamati dal metodo specifico.|
     |**Mostra campi a cui fa riferimento**|Aggiungere i campi cui questo metodo fa riferimento.|
@@ -223,7 +223,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
      Per un **campo** o una **proprietà** scegliere:
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |-|-|
     |**Mostra tipo contenitore**|Aggiungere il tipo padre.|
     |**Mostra tipo, spazio dei nomi e assembly contenitore**|Aggiungere la gerarchia del contenitore padre.|

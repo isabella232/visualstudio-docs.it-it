@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 03/02/2018
 ms.topic: reference
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 21e78263e848a501d83414630de734368f90a179
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 4eef06bb48730fba9ba1df145857d41323cbfdd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946319"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usare il framework MSTest negli unit test
 
@@ -135,6 +135,6 @@ Gli attributi in questa sezione correlano il metodo di test che decorano alle en
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - Documentazione di riferimento per <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

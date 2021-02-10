@@ -9,15 +9,15 @@ helpviewer_keywords:
 - command-line tests
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc266b43d9a4634fe8cfbc05a3a070ae72cdaa9
-ms.sourcegitcommit: 1ceb58e3a1afa80a3211911ada4e5adaa1b1d439
+ms.openlocfilehash: 6256343efbc9b81c14b03753fab2fa478df1e4f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946189"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -64,7 +64,7 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 > [!TIP]
 > Opzioni e valori non applicano la distinzione tra maiuscole e minuscole.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 La sintassi per l'esecuzione di *vstest.console.exe* è la seguente:
 

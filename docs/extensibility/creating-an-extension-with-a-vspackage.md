@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973777"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944895"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Creare un'estensione con un pacchetto VSPackage
 
@@ -29,7 +29,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 1. Creare un progetto VSIX denominato **FirstPackage**. È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Quando si apre il progetto, aggiungere un modello di elemento del pacchetto di Visual Studio denominato **FirstPackage**. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#**  >  **estensibilità** di Visual C# e selezionare **pacchetto di Visual Studio**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *FirstPackage.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento del pacchetto di Visual Studio denominato **FirstPackage**. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a   >  **estensibilità** di Visual C# e selezionare **pacchetto di Visual Studio**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *FirstPackage.cs*.
 
 3. Compilare il progetto e avviare il debug.
 

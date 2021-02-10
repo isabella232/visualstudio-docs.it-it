@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5693ebee96428b343da2bb14202ffef06fd6dd81
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 95c32b76893e0de7f31e56df81bf12c831452bfe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945929"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Interfacce dell'analizzatore di espressioni chiave
 > [!IMPORTANT]
@@ -58,5 +58,5 @@ ms.locfileid: "96606684"
 
      Questa interfaccia rappresenta un valore e il relativo tipo ed è il risultato della valutazione di un'espressione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8bbdcec09ef004817b05e7992ae72bc856764da9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945851"
 ---
 # <a name="bp_condition"></a>BP_CONDITION
 Descrive le condizioni in cui un punto di interruzione viene attivato.
@@ -63,7 +63,7 @@ Condizione di attivazione del punto di interruzione.
 `nRadix`\
 Radice da usare per la valutazione di qualsiasi informazione numerica.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura è un membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 Questa struttura viene passata anche come parametro ai metodi [secondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [secondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) .
@@ -75,7 +75,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

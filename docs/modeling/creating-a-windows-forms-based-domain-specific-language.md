@@ -1,30 +1,30 @@
 ---
 title: Creare un linguaggio specifico di dominio basato su Windows Form
-description: Vengono fornite informazioni sull'utilizzo di Windows Forms per visualizzare lo stato di un modello di linguaggio specifico di dominio.
+description: Vengono fornite informazioni sull'utilizzo di Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945409"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>Creare un Domain-Specific Language basato su Windows Forms
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Creare un linguaggio Domain-Specific basato su Windows Form
 
-È possibile utilizzare Windows Forms per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), anziché utilizzare un diagramma DSL. In questo argomento viene illustrata l'associazione di un Windows Form a un linguaggio DSL mediante l'SDK di visualizzazione e modellazione di Visual Studio.
+È possibile utilizzare Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), anziché utilizzare un diagramma DSL. In questo argomento viene illustrata l'associazione di un Windows Form a un linguaggio DSL mediante l'SDK di visualizzazione e modellazione di Visual Studio.
 
 La figura seguente mostra un'interfaccia utente di Windows Form e Esplora modelli per un'istanza DSL:
 
 ![Istanza DSL in Visual Studio](../modeling/media/dsl-wpf-2.png)
 
-## <a name="create-a-windows-forms-dsl"></a>Creare un Windows Forms DSL
+## <a name="create-a-windows-forms-dsl"></a>Creare un Windows Form DSL
 
 Il modello DSL **WinForm designer minimo** crea un DSL minimo che è possibile modificare in base alle proprie esigenze.
 
@@ -33,7 +33,7 @@ Il modello DSL **WinForm designer minimo** crea un DSL minimo che è possibile m
     In questa procedura dettagliata vengono considerati i nomi seguenti:
 
     - Nome della soluzione e del DSL: `FarmApp`
-    - Namespace `Company.FarmApp`
+    - Spazio dei nomi: `Company.FarmApp`
 
 2. Provare a usare l'esempio iniziale fornito dal modello:
 
@@ -43,7 +43,7 @@ Il modello DSL **WinForm designer minimo** crea un DSL minimo che è possibile m
 
    3. Nell'istanza sperimentale di Visual Studio aprire il `Sample` file nel progetto di debug.
 
-        Si noti che viene visualizzato in un controllo Windows Forms.
+        Si noti che viene visualizzato in un controllo Windows Form.
 
         È inoltre possibile visualizzare gli elementi del modello visualizzati nella finestra di esplorazione.
 
@@ -53,15 +53,15 @@ Il modello DSL **WinForm designer minimo** crea un DSL minimo che è possibile m
 
 - `DslDefinition.dsl` non contiene elementi del diagramma. Ciò è dovuto al fatto che non si utilizzeranno diagrammi DSL per visualizzare i modelli di istanza di questo DSL. Al contrario, si eseguirà il binding di un Windows Form al modello e gli elementi nel form visualizzeranno il modello.
 
-- Oltre ai `Dsl` `DslPackage` progetti e, la soluzione contiene un terzo progetto denominato `UI.` **UI** Project contiene la definizione di un controllo Windows Forms. `DslPackage` dipende da `UI` e dipende da `UI` `Dsl` .
+- Oltre ai `Dsl` `DslPackage` progetti e, la soluzione contiene un terzo progetto denominato `UI.` **UI** Project contiene la definizione di un controllo Windows Form. `DslPackage` dipende da `UI` e dipende da `UI` `Dsl` .
 
-- Nel `DslPackage` progetto, `UI\DocView.cs` contiene il codice che visualizza il Windows Forms controllo definito nel `UI` progetto.
+- Nel `DslPackage` progetto, `UI\DocView.cs` contiene il codice che visualizza il Windows Form controllo definito nel `UI` progetto.
 
 - Il `UI` progetto contiene un esempio funzionante di un controllo Form associato al linguaggio DSL. Tuttavia, non funzionerà dopo aver modificato la definizione DSL. Il `UI` progetto contiene:
 
-  - Classe Windows Forms denominata `ModelViewControl` .
+  - Classe Windows Form denominata `ModelViewControl` .
 
-  - File denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl` . Per visualizzarne il contenuto, in **Esplora soluzioni**aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.
+  - File denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl` . Per visualizzarne il contenuto, in **Esplora soluzioni** aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.
 
 ### <a name="about-the-ui-project"></a>Informazioni sul progetto dell'interfaccia utente
 
@@ -79,10 +79,10 @@ L'immagine seguente è la definizione DSL utilizzata in questa procedura dettagl
 
 3. Rinominare la classe di dominio **ExampleModel** in `Farm` .
 
-     Assegnare a esso proprietà del dominio aggiuntive denominate `Size` di tipo **Int32**e `IsOrganic` di tipo **booleano**.
+     Assegnare a esso proprietà del dominio aggiuntive denominate `Size` di tipo **Int32** e `IsOrganic` di tipo **booleano**.
 
     > [!NOTE]
-    > Se si elimina la classe di dominio radice e quindi si crea una nuova radice, sarà necessario reimpostare la proprietà della classe radice dell'editor. In **DSL Explorer**selezionare **Editor**. Quindi, nella Finestra Proprietà impostare la **classe radice** su `Farm` .
+    > Se si elimina la classe di dominio radice e quindi si crea una nuova radice, sarà necessario reimpostare la proprietà della classe radice dell'editor. In **DSL Explorer** selezionare **Editor**. Quindi, nella Finestra Proprietà impostare la **classe radice** su `Farm` .
 
 4. Utilizzare lo strumento **classe di dominio denominato** per creare le classi di dominio seguenti:
 
@@ -115,7 +115,7 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
 ### <a name="define-your-dsl-model-as-a-data-source"></a>Definire il modello DSL come origine dati
 
-1. Scegliere **Mostra origini dati**dal menu **dati** .
+1. Scegliere **Mostra origini dati** dal menu **dati** .
 
      Verrà visualizzata la finestra **Origini dati**.
 
@@ -123,7 +123,7 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
 2. Scegliere **oggetto**, **Avanti**.
 
-     Espandere **DSL**, **Company. FarmApp**e selezionare **Farm**, ovvero la classe radice del modello. Scegliere **Fine**.
+     Espandere **DSL**, **Company. FarmApp** e selezionare **Farm**, ovvero la classe radice del modello. Scegliere **Fine**.
 
      In Esplora soluzioni il progetto dell' **interfaccia utente** contiene ora **Properties\DataSources\Farm.DataSource**
 
@@ -137,7 +137,7 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
 2. Aggiungere un nuovo file di **controllo utente** denominato `FarmControl` al progetto dell' **interfaccia utente** .
 
-3. Nella finestra **origini dati** fare clic su **Dettagli**nel menu a discesa della **Farm**.
+3. Nella finestra **origini dati** fare clic su **Dettagli** nel menu a discesa della **Farm**.
 
     Lasciare le impostazioni predefinite per le altre proprietà.
 
@@ -149,14 +149,14 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
 5. Elimina **farmBindingNavigator**. Viene anche generato automaticamente nella finestra di `FarmControl` progettazione, ma non è utile per questa applicazione.
 
-6. Utilizzando la casella degli strumenti, creare due istanze di **DataGridView**e denominarle `AnimalGridView` e `FieldGridView` .
+6. Utilizzando la casella degli strumenti, creare due istanze di **DataGridView** e denominarle `AnimalGridView` e `FieldGridView` .
 
    > [!NOTE]
    > Un passaggio alternativo consiste nel trascinare gli elementi Animals e Fields dalla finestra Origini dati nel controllo. Questa azione crea automaticamente le griglie di dati e le associazioni tra la visualizzazione griglia e l'origine dati. Tuttavia, questa associazione non funziona correttamente per DSLs. Pertanto, è preferibile creare manualmente le griglie di dati e le associazioni.
 
 7. Se la casella degli strumenti non contiene lo strumento **ModelingBindingSource** , aggiungerla. Nel menu di scelta rapida della scheda **dati** scegliere **Scegli elementi**. Nella finestra di dialogo **Scegli elementi della casella degli strumenti** selezionare **ModelingBindingSource** nella scheda **.NET Framework** .
 
-8. Utilizzando la casella degli strumenti, creare due istanze di **ModelingBindingSource**e denominarle `AnimalBinding` e `FieldBinding` .
+8. Utilizzando la casella degli strumenti, creare due istanze di **ModelingBindingSource** e denominarle `AnimalBinding` e `FieldBinding` .
 
 9. Impostare la proprietà **DataSource** di ogni **ModelingBindingSource** su **farmBindingSource**.
 
@@ -220,7 +220,7 @@ La soluzione DSL ora può essere compilata ed eseguita, anche se è opportuno ag
 
 2. Nell'istanza sperimentale di Visual Studio aprire il file di **esempio** .
 
-3. In **FarmApp Explorer**aprire il menu di scelta rapida nel nodo radice della **Farm** e scegliere **Aggiungi nuova capra**.
+3. In **FarmApp Explorer** aprire il menu di scelta rapida nel nodo radice della **Farm** e scegliere **Aggiungi nuova capra**.
 
      `Goat1` viene visualizzato nella visualizzazione **Animals** .
 
@@ -323,8 +323,8 @@ Tuttavia, questo codice non imposta un nome predefinito per il nuovo elemento. N
 
 È quindi consigliabile usare <xref:Microsoft.VisualStudio.Modeling.ElementOperations> per creare nuovi elementi. Per altre informazioni, vedere [personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md)
-- [Scrivere codice per personalizzare un Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Come definire una lingua Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md)
+- [Scrivere codice per personalizzare una lingua Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [SDK di modellazione per Visual Studio (linguaggi specifici di dominio)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

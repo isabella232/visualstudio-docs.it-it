@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945019"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Elemento &lt;trustInfo&gt; (applicazione ClickOnce)
 Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'applicazione nel computer client.
@@ -165,7 +165,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 
  Per ulteriori informazioni sull'elevazione delle autorizzazioni, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md). Per altre informazioni sulla distribuzione dei criteri, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
  I seguenti tre esempi di codice descrivono gli elementi `trustInfo` per le aree di sicurezza denominate predefinite, ovvero Internet, LocalIntranet e FullTrust, per l'uso in un manifesto dell'applicazione di distribuzione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
  Il primo esempio descrive l'elemento `trustInfo` per le autorizzazioni predefinite disponibili nell'area di sicurezza Internet.
@@ -269,6 +269,6 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 </trustInfo>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

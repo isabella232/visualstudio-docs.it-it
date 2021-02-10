@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945162"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
@@ -31,7 +31,7 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 | --- | --- |
 | **File Python vuoto** | File vuoto con estensione *.py*. |
 | **Classe Python** | File *.py* contenente una singola definizione di classe Python vuota. |
-| **Pacchetto python** | Una cartella che contiene un file * \_ \_ init \_ \_ . py* . |
+| **Pacchetto python** | Una cartella che contiene un file *\_ \_ init \_ \_ . py* . |
 | **Unit test Python** | File *.py* con un singolo unit test basato sul framework `unittest`, insieme a una chiamata a `unittest.main()` per eseguire i test nel file. |
 | **Pagina HTML** | File *.html* con una struttura di pagina semplice composta da un elemento `<head>` e un elemento `<body>`. |
 | **JavaScript** | File *.js* vuoto. |
@@ -46,7 +46,7 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 | **web.config di file statici di Azure** | File *web.config* aggiunto in genere a una cartella *static* o a un'altra cartella contenente elementi statici, per disabilitare la gestione di Python per tale cartella. Questo file config funziona in combinazione con uno dei file config precedenti, FastCGI o HttpPlatformHandler. Per altre informazioni, vedere [Configurare un'app per IIS](configure-web-apps-for-iis-windows.md). |
 | **web.config di debug remoto di Azure** | Deprecato (usato per il debug remoto in Servizio app di Azure per Windows, che non è più supportato). |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire progetti Python - Modelli di progetto](managing-python-projects-in-visual-studio.md#project-templates)
 - [Modelli di progetto applicazione Web di Python](python-web-application-project-templates.md)
