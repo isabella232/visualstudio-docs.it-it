@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fcae019e8854ecee9cdc553eedd3e9d2d0f28a63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948583"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Uso della finestra attività (C#, Visual Basic, C++)
 
@@ -52,11 +52,11 @@ Nelle colonne della finestra **Attività** vengono visualizzate le informazioni 
 |**Flag**|Mostra quali attività sono contrassegnate e consente di impostare o rimuovere un flag per un'attività.|
 |**Icone**|Una freccia gialla indica l'attività corrente. L'attività corrente è l'attività in primo piano nel thread corrente.<br /><br /> Una freccia bianca indica l'attività di interruzione, vale a dire l'attività corrente al momento della chiamata del debugger.<br /><br /> L'icona di sospensione indica un'attività bloccata dall'utente. È possibile bloccare e sbloccare un'attività facendovi clic sopra con il pulsante destro del mouse nell'elenco.|
 |**ID**|Numero fornito dal sistema per l'attività. Nel codice nativo, è l'indirizzo dell'attività.|
-|**Stato**|Stato corrente (pianificato, attivo, bloccato, con deadlock, in attesa o completato) dell'attività. Un'attività pianificata è un'attività che non è stata ancora eseguita, pertanto non dispone ancora di uno stack di chiamate, un thread assegnato o informazioni correlate.<br /><br /> Un'attività attiva è un'attività che stava eseguendo codice prima dell'accesso al debugger.<br /><br /> Un'attività in attesa o bloccata è una che viene bloccata perché è in attesa di un evento da segnalare, un blocco da rilasciare o un'altra attività da completare.<br /><br /> Un'attività in deadlock è un'attività in attesa il cui thread è in deadlock con un altro thread.<br /><br /> Passare il mouse sulla cella di **stato** per un'attività in deadlock o in attesa per visualizzare altre informazioni sul blocco. **Avviso:**  La finestra **attività** segnala un deadlock solo per un'attività bloccata che usa una primitiva di sincronizzazione supportata da Wait Chain Traversal (WCT). Ad esempio, per un oggetto con deadlock <xref:System.Threading.Tasks.Task> , che utilizza WCT, il debugger segnala in **attesa di deadlock**. Per un'attività in deadlock gestita dal runtime di concorrenza, che non utilizza WCT, viene visualizzato il messaggio **In attesa**. Per altre informazioni su WCT, vedere [Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal).|
+|**Status**|Stato corrente (pianificato, attivo, bloccato, con deadlock, in attesa o completato) dell'attività. Un'attività pianificata è un'attività che non è stata ancora eseguita, pertanto non dispone ancora di uno stack di chiamate, un thread assegnato o informazioni correlate.<br /><br /> Un'attività attiva è un'attività che stava eseguendo codice prima dell'accesso al debugger.<br /><br /> Un'attività in attesa o bloccata è una che viene bloccata perché è in attesa di un evento da segnalare, un blocco da rilasciare o un'altra attività da completare.<br /><br /> Un'attività in deadlock è un'attività in attesa il cui thread è in deadlock con un altro thread.<br /><br /> Passare il mouse sulla cella di **stato** per un'attività in deadlock o in attesa per visualizzare altre informazioni sul blocco. **Avviso:**  La finestra **attività** segnala un deadlock solo per un'attività bloccata che usa una primitiva di sincronizzazione supportata da Wait Chain Traversal (WCT). Ad esempio, per un oggetto con deadlock <xref:System.Threading.Tasks.Task> , che utilizza WCT, il debugger segnala in **attesa di deadlock**. Per un'attività in deadlock gestita dal runtime di concorrenza, che non utilizza WCT, viene visualizzato il messaggio **In attesa**. Per altre informazioni su WCT, vedere [Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal).|
 |**Start Time**|Ora in cui l'attività è diventata attiva.|
 |**Duration**|Numero di secondi durante i quali l'attività è rimasta attiva.|
 |**Tempo di completamento**|Data e ora in cui è stata completata l'esecuzione dell'attività.|
-|**Località**|Percorso corrente nello stack di chiamate dell'attività. Passare il mouse su questa cella per visualizzare l'intero stack di chiamate dell'attività. Le attività pianificate non presentano alcun valore in questa colonna.|
+|**Posizione**|Percorso corrente nello stack di chiamate dell'attività. Passare il mouse su questa cella per visualizzare l'intero stack di chiamate dell'attività. Le attività pianificate non presentano alcun valore in questa colonna.|
 |**Attività**|Metodo iniziale ed eventuali argomenti passati all'attività quando è stata creata.|
 |**AsyncState**|Per il codice gestito, lo stato dell'attività. Per impostazione predefinita, questa colonna è nascosta. Per visualizzarla, aprire il menu di scelta rapida per una delle intestazioni di colonna. Scegliere **Colonne**, **AsyncState**.|
 |**Parent**|ID dell'attività che ha creato questa attività. Se la cella è vuota significa che l'attività non dispone di un'attività padre. Questo dato è applicabile ai soli programmi gestiti.|
@@ -94,7 +94,7 @@ Nelle colonne della finestra **Attività** vengono visualizzate le informazioni 
 
 Il comando **passa a attività** rende attiva l'attività corrente. Il comando **passa a frame** rende selezionato stack frame il stack frame attivo. Il contesto del debugger passa all'attività corrente o al stack frame selezionato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)

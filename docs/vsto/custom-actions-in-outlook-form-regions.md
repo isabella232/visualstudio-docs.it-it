@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947880"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Azioni personalizzate nelle aree del modulo di Outlook
   Azioni visualizzano i pulsanti che consentono agli utenti di rispondere a un Microsoft Office elemento Outlook. Ad esempio, per rispondere a un elemento di posta elettronica, gli utenti fanno clic sui pulsanti **Rispondi**, **Rispondi a tutti** o Esegui azione di **inoltro** . Ognuna di queste azioni crea un nuovo elemento di posta elettronica e popola i campi dell'elemento usando le informazioni dell'elemento originale.
@@ -42,7 +42,7 @@ ms.locfileid: "96848196"
 |--------------|-----------------|
 |**AddressLike**|Consente di specificare la modalità di indirizzamento del modulo di destinazione.|
 |**Corpo**|Specifica il modo in cui il corpo dell'elemento originale viene aggiunto al form di destinazione.|
-|**Abilitato**|Indica se l'azione personalizzata è abilitata. Se questa proprietà è impostata su **false**, l'azione personalizzata è disabilitata.|
+|**Enabled**|Indica se l'azione personalizzata è abilitata. Se questa proprietà è impostata su **false**, l'azione personalizzata è disabilitata.|
 |**Metodo**|Specifica il tipo di risposta disponibile quando viene eseguita l'azione personalizzata. L'azione personalizzata può inviare il modulo, aprire il modulo o richiedere all'utente se vuole inviare o aprire il modulo.|
 |**Nome**|Specifica il nome interno che è possibile usare per fare riferimento a questa azione personalizzata nel codice.|
 |**ShowOnRibbon**|Indica se visualizzare l'azione personalizzata sulla barra multifunzione dell'elemento originale.|

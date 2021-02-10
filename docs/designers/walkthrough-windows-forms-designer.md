@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+manager: jmartens
+ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947846"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Esercitazione: Introduzione a Progettazione Windows Form
 
@@ -45,7 +45,7 @@ Il primo passaggio consiste nel creare il progetto di controllo DemoCalculator.
 
    ::: moniker-end
 
-2. Per rinominare il file, in **Esplora soluzioni** , fare clic con il pulsante destro del mouse su **UserControl1. vb** o **UserControl1.cs** , scegliere **Rinomina** e modificare il nome del file in DemoCalculator. vb o DemoCalculator.cs. Selezionare il pulsante **Sì** quando richiesto per rinominare tutti i riferimenti all'elemento di codice "UserControl1".
+2. Per rinominare il file, in **Esplora soluzioni**, fare clic con il pulsante destro del mouse su **UserControl1. vb** o **UserControl1.cs**, scegliere **Rinomina** e modificare il nome del file in DemoCalculator. vb o DemoCalculator.cs. Selezionare il pulsante **Sì** quando richiesto per rinominare tutti i riferimenti all'elemento di codice "UserControl1".
 
 Progettazione Windows Form mostra l'area di progettazione per il controllo DemoCalculator. In questa visualizzazione è possibile progettare graficamente l'aspetto del controllo selezionando i controlli e i componenti dalla casella degli strumenti e inserendoli nell'area di progettazione. Per altre informazioni sui controlli personalizzati, vedere [Tipi di controlli personalizzati](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
 
@@ -71,7 +71,7 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
     Il controllo `SplitContainer` viene ancorato ai limiti del controllo DemoCalculator.
 
     > [!NOTE]
-    > Diversi controlli offrono smart tag per facilitare la progettazione. Per altre informazioni, vedere [procedura dettagliata: eseguire attività comuni usando gli smart tag nei controlli Windows Forms](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
+    > Diversi controlli offrono smart tag per facilitare la progettazione. Per altre informazioni, vedere [procedura dettagliata: eseguire attività comuni usando gli smart tag nei controlli Windows Form](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
 
 5. Selezionare il bordo verticale tra i pannelli e trascinarlo a destra, in modo che la maggior parte dello spazio venga ricavata dal riquadro sinistro.
 
@@ -163,9 +163,9 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    La finestra Struttura documento mostra una visualizzazione albero del controllo DemoCalculator e dei relativi controlli costitutivi. I controlli contenitore come `SplitContainer` visualizzano i relativi controlli figlio come sottonodi dell'albero. È anche possibile rinominare i controlli sul posto usando la finestra Struttura documento.
 
-2. Nella finestra **struttura documento** , fare clic con il pulsante destro del mouse su **Button1** , quindi scegliere **Rinomina**. Impostare il nome su sevenButton.
+2. Nella finestra **struttura documento** , fare clic con il pulsante destro del mouse su **Button1**, quindi scegliere **Rinomina**. Impostare il nome su sevenButton.
 
-3. Usando la finestra **Struttura documento** , rinominare i controlli `Button` dal nome generato dalla finestra di progettazione al nome di produzione in base all'elenco seguente:
+3. Usando la finestra **Struttura documento**, rinominare i controlli `Button` dal nome generato dalla finestra di progettazione al nome di produzione in base all'elenco seguente:
 
    - button1 in **sevenButton**
 
@@ -203,7 +203,7 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - button19 in **additionButton**
 
-4. Usando le finestre **Struttura documento** e **Proprietà** , modificare il valore della proprietà `Text` per ogni nome di controllo `Button` in base all'elenco seguente:
+4. Usando le finestre **Struttura documento** e **Proprietà**, modificare il valore della proprietà `Text` per ogni nome di controllo `Button` in base all'elenco seguente:
 
    - Impostare la proprietà Text del controllo sevenButton su **7**
 
@@ -221,9 +221,9 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - Impostare la proprietà Text del controllo sixButton su **6**
 
-   - Modificare la proprietà Text del controllo multiplicationButton in * *\** _ (asterisco)
+   - Modificare la proprietà Text del controllo multiplicationButton in **\*** (asterisco)
 
-   - Modificare la proprietà Text del controllo oneButton in _ *1**
+   - Impostare la proprietà Text del controllo oneButton su **1**
 
    - Impostare la proprietà Text del controllo twoButton su **2**
 
@@ -313,7 +313,7 @@ Per usare il controllo DemoCalculator in un'applicazione, è necessario inserirl
 
 Questo articolo ha illustrato come costruire l'interfaccia utente per una semplice calcolatrice. Per continuare, è possibile estenderne la funzionalità implementando la logica della calcolatrice e quindi [pubblicare l'app usando ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). In alternativa, continuare con un'altra esercitazione in cui [si crea un visualizzatore di immagini con Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Controlli Windows Form](/dotnet/framework/winforms/controls/)
 - [Accessibilità per i controlli Windows Form](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)

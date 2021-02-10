@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 5205dba6cddf104d0cb05f01acbc43f6927acaaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948426"
 ---
 # <a name="programs"></a>Programmi
 Nell'architettura del debugger, un *programma*:
@@ -33,7 +33,7 @@ Nell'architettura del debugger, un *programma*:
 
 - È rappresentato da un'interfaccia [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , creata prima che il programma venga collegato o come parte del processo di connessione, a seconda dell'implementazione. Quando una porta enumera i programmi di un processo, ogni programma viene creato in base a un'interfaccia [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) corrispondente passata come argomento a [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Sebbene i motori di debug creino anche `IDebugProgram2` interfacce per rappresentare i programmi, questi programmi non vengono creati in base a un nodo del programma. Le `IDebugProgramNode2` interfacce create da un de vengono usate per il debug effettivo, mentre quelle create da una porta vengono usate solo per individuare i programmi in esecuzione in un processo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Processi](../../extensibility/debugger/processes.md)
 - [Nodi del programma](../../extensibility/debugger/program-nodes.md)
 - [Moduli](../../extensibility/debugger/modules.md)

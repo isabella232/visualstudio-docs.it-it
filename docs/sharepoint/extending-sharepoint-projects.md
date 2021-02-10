@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8efeb704bb247e653af0ee062efcc71ad390c5ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948661"
 ---
 # <a name="extend-sharepoint-projects"></a>Estensione di progetti SharePoint
   Creare un'estensione di progetto quando si desidera personalizzare le funzionalità a livello di progetto dei progetti SharePoint. Ad esempio, è possibile aggiungere proprietà di progetto personalizzate o rispondere agli eventi a livello di progetto generati quando l'utente sviluppa una soluzione SharePoint in Visual Studio.
@@ -42,7 +42,7 @@ ms.locfileid: "94672639"
 
  Per accedere a un'istanza del progetto specifica, gestire uno degli <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> eventi del parametro *ProjectService* nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metodo. Per determinare, ad esempio, quando un progetto SharePoint viene aggiunto a una soluzione, gestire l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> evento. Per altre informazioni, vedere [procedura: creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Procedura: aggiungere una voce di menu di scelta rapida ai progetti SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [Procedura: aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

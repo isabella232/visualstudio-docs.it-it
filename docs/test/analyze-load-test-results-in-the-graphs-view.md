@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e30d81277ae28a3f5d6ca45a259fa66e0f4ee004
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: cbd15d57090f2248cdd97eba1898e363cc2d21b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441976"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948075"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -74,7 +74,7 @@ Nella legenda sono presenti le seguenti colonne:
 |Min|Indica il valore minimo in millisecondi per il contatore.|
 |Max|Indica il valore massimo in millisecondi per il contatore.|
 |Media|Indica il valore medio in millisecondi per il contatore.|
-|Ultimi|Mostra il valore in millisecondi del contatore durante l'intervallo di campionamento più recente.|
+|Last (Ultimo)|Mostra il valore in millisecondi del contatore durante l'intervallo di campionamento più recente.|
 
 ## <a name="tasks"></a>Attività
 
@@ -95,7 +95,7 @@ Nella legenda sono presenti le seguenti colonne:
 
 [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [Procedura: creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)

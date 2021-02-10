@@ -14,15 +14,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cea66f313a8c6c8ad7fc390a3ca126d92139725c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948778"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Differenze tra soluzioni create mediante sandbox e farm
   Quando si compila una soluzione SharePoint, questa viene distribuita nel server SharePoint e un debugger si connette per eseguirne il debug. Il processo usato per eseguire il debug della soluzione dipende dall'impostazione della proprietà della soluzione creata mediante sandbox, ovvero dalla soluzione sandbox o dalla soluzione farm.
@@ -40,7 +40,7 @@ ms.locfileid: "94672782"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] connette il debugger solo ai processi W3WP o SPUCWorkerProcess che eseguono il sito corrente. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] connette inoltre i motori di debug COM Plus e Workflow gestiti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Considerazioni sulla soluzione sandbox](../sharepoint/sandboxed-solution-considerations.md)

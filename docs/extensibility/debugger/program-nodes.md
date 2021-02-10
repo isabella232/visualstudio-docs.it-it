@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f3694eff6cd48cc01c0e244d3a068f3bb13fda
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 65a97a32baab159ad2c0bd1ac189dedbf09fe98e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948439"
 ---
 # <a name="program-nodes"></a>Nodi del programma
 Nell'architettura del debugger, un *nodo di programma*:
@@ -35,7 +35,7 @@ Nell'architettura del debugger, un *nodo di programma*:
 
   Prima che un programma venga collegato a, l'IDE necessita solo di una descrizione semplice del programma. Queste informazioni possono essere ottenute dal nodo del programma. Una volta che il programma è collegato a, nell'IDE vengono visualizzate informazioni più dettagliate, ad esempio un elenco di tutti i thread in esecuzione nel programma. Queste informazioni vengono ottenute dal programma stesso.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Programmi](../../extensibility/debugger/programs.md)
 - [Processi](../../extensibility/debugger/processes.md)
 - [Motore di debug](../../extensibility/debugger/debug-engine.md)

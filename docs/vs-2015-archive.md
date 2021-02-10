@@ -5,14 +5,14 @@ ms.date: 10/13/2020
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: f8affd426593754f77760e4f924cd401167078e5
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d1ddefb07d95901baa70553fdc2a322aa36f6e87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947971"
 ---
 # <a name="visual-studio-2015-documentation"></a>Documentazione di Visual Studio 2015
 
@@ -30,7 +30,7 @@ Nell'IDE di Visual Studio 2015, la funzionalità della Guida F1 dovrebbe continu
 
 Se si usano spesso i documenti di Visual Studio 2015, è possibile esplorare l'opzione di utilizzo del Visualizzatore della guida e scaricare i libri della Guida offline per tale versione. Vedere [Microsoft Help Viewer](./help-viewer/overview.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Documentazione per le versioni precedenti di Visual Studio](/previous-versions/visualstudio/)
 - [Versioni di Visual Studio 2015](/visualstudio/releasenotes/vs2015-version-history)

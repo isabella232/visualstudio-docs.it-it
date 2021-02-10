@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd4967e38738018f9b30365575a2dcb9e8970963
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948752"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Estensione della creazione di pacchetti e della distribuzione di SharePoint
   È possibile estendere il processo di creazione di pacchetti e distribuzione per i progetti SharePoint.
@@ -54,7 +54,7 @@ ms.locfileid: "94672587"
 ## <a name="customize-validation-rules"></a>Personalizzare le regole di convalida
  Prima di distribuire un pacchetto di soluzioni (con estensione wsp), è possibile creare funzionalità personalizzate e regole di convalida del pacchetto per verificare che la funzionalità o il pacchetto siano validi. Ad esempio, è possibile segnalare informazioni, avvisi o errori per consentire agli sviluppatori di risolvere i problemi di convalida. Per altre informazioni, vedere [procedura: creare regole personalizzate per la convalida di funzionalità e pacchetti per le soluzioni SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: eseguire codice quando vengono eseguiti i passaggi di distribuzione](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Procedura dettagliata: creare un passaggio di distribuzione personalizzato per i progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Procedura: creare regole personalizzate per la convalida di funzionalità e pacchetti per le soluzioni SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

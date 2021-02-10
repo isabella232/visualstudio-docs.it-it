@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7943addb4334710da3252a4d822330e45b6e0f80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 149b3f4d474c0304fab26f9ff3f772440ae761ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948335"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 Questa interfaccia indica al gestore di debug della sessione (SDM) che un punto di interruzione in sospeso è stato associato correttamente a un programma caricato.
@@ -42,7 +42,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|Ottiene il punto di interruzione in sospeso da associare.|
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|Crea un enumeratore di punti di interruzione associati a questo evento.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Ogni volta che viene associato un punto di interruzione, viene inviato un evento all'SDM. Se non è possibile associare il punto di interruzione, viene inviato un [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) . in caso contrario, `IDebugBreakpointBoundEvent2` viene inviato un oggetto.
 
 ## <a name="requirements"></a>Requisiti
@@ -52,7 +52,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

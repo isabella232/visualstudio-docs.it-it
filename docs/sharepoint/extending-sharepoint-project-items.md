@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e8486120b0f08077bc30c2a5177a8aba915c37f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948674"
 ---
 # <a name="extend-sharepoint-project-items"></a>Estendi elementi di progetto SharePoint
   Creare un'estensione di elemento del progetto quando si desidera aggiungere funzionalità a un tipo di elemento di progetto SharePoint già installato in Visual Studio. Ad esempio, è possibile creare un'estensione per il **ricevitore di eventi** incorporato o gli elementi di progetto di **definizione elenco** in Visual Studio oppure è possibile creare un'estensione per un tipo di elemento di progetto personalizzato. È inoltre possibile creare un'estensione per tutti i tipi di elementi del progetto SharePoint.
@@ -66,7 +66,7 @@ ms.locfileid: "94672574"
 |Web part|Microsoft. VisualStudio. SharePoint. WebPart|
 |Form di associazione del flusso di lavoro|Microsoft. VisualStudio. SharePoint. WorkflowAssociation|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Procedura: aggiungere una voce di menu di scelta rapida a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Procedura: aggiungere una proprietà a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)

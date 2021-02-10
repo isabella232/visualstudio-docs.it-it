@@ -1,6 +1,6 @@
 ---
 title: Controlli nei documenti di Office
-description: Informazioni su come usare gli strumenti di sviluppo di Office in Visual Studio per aggiungere controlli e controlli host Windows Forms ai documenti di Word e ai fogli di lavoro di Excel.
+description: Informazioni su come usare gli strumenti di sviluppo di Office in Visual Studio per aggiungere controlli e controlli host Windows Form ai documenti di Word e ai fogli di lavoro di Excel.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 203edcf2b77cfff3fb557ce7c1c8fea7592e17ea
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 5e94f39f287055cc4812d85abe2a4bfc0d81eb2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947945"
 ---
 # <a name="controls-on-office-documents"></a>Controlli nei documenti di Office
   È possibile usare gli strumenti di sviluppo di Office inclusi in Visual Studio per aggiungere controlli Windows Form e *controlli host* ai documenti Word e ai fogli di lavoro di Excel. I controlli host rappresentano oggetti che estendono i vari oggetti dell'interfaccia utente nei modelli a oggetti di Word ed Excel.
@@ -43,7 +43,7 @@ ms.locfileid: "96847988"
 
  In questo articolo vengono descritti i problemi che potrebbero verificarsi quando si usano elementi host e controlli host nel codice.
 
-- [Cenni preliminari sui controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Cenni preliminari sui controlli Windows Form nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
  In questo articolo vengono fornite informazioni sull'utilizzo dei controlli Windows Form nei documenti di Excel e di Word. Inoltre, viene descritto come tali controlli differiscono rispetto a quelli presenti in Windows Form.
 

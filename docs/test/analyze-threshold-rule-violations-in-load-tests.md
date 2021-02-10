@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 49fe5893254083dd83551ef5f43fffcc295a992a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 519a908b85c6cdf3dbecc38e032d72ac223a8bdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442703"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948049"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
@@ -38,12 +38,12 @@ Nella tabella vengono visualizzate le prime 1.000 violazioni di soglia. La tabel
 
 |Colonna|Descrizione|Visibile per impostazione predefinita|
 |-|-|-|
-|Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Sì|
+|Tempo|L'ora durante il test di carico in cui si è verificata la violazione.|Sì|
 |Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:** questo nome è importante quando i test di carico vengono eseguiti in rig.|Sì|
 |Category|La categoria del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
 |Contatore|Il nome del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
 |Istanza|L'istanza del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
-|Messaggio|Messaggio in cui viene descritta la violazione di soglia, Ad esempio, **Il valore 5 supera il valore soglia critico di 0**.|Sì|
+|Message|Messaggio in cui viene descritta la violazione di soglia, Ad esempio, **Il valore 5 supera il valore soglia critico di 0**.|Sì|
 
 > [!NOTE]
 > È possibile ordinare la tabella scegliendo le intestazioni delle colonne.
@@ -76,7 +76,7 @@ Nell'albero dei contatori l'icona relativa a una violazione di soglia viene prop
 
 Per altre informazioni, vedere [analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
