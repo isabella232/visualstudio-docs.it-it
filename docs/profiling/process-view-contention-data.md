@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 60f137c470b31ddccfa9b26cb907b13288d07dc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957309"
 ---
 # <a name="process-view---contention-data"></a>Visualizzazione Processo: dati sui conflitti
 Nella visualizzazione Processo sono riportati i dati sui conflitti per i processi e i thread eseguiti durante l'esecuzione della profilatura.
@@ -40,6 +40,6 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
 |**Nome**|Nome del processo o del thread.|
 |**ID univoco**|Identificatore generato dal profiler univoco per il processo o il thread.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Processo](../profiling/process-view.md)

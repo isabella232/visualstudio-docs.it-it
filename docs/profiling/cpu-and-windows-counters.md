@@ -11,16 +11,16 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3553106c9c2bea0d4d4c24b2e51b59e4fcf42722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956061"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 
@@ -124,13 +124,13 @@ Con lo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md) è po
 
 1. Aprire una finestra del prompt dei comandi.
 
-2. Type
+2. Tipo
 
      **\<Visual Studio Performance Tools Directory>/QueryCounters \VSPerfCmd**
 
      dove *\<Visual Studio Performance Tools Directory>* è il percorso della directory degli strumenti per le prestazioni dell'installazione di Visual Studio. Per ottenere il percorso degli strumenti per le prestazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Cenni preliminari](../profiling/overviews-performance-tools.md)
 - [Procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)

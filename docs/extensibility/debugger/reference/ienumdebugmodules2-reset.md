@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f6ff364c-2644-4919-b950-3cb82eb6f601
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81fc33620449837f3d2af883f0721d24df92e804
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdc98e9ac2d545670fde240cea914be9108b8f0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956256"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
 Reimposta l'enumerazione sul primo elemento.
@@ -40,8 +40,8 @@ int Reset();
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Dopo la chiamata a questo metodo, la chiamata successiva al metodo [successivo](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) restituisce il primo elemento dell'enumerazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

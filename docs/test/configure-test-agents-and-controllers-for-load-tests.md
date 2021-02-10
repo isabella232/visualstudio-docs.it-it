@@ -8,13 +8,13 @@ helpviewer_keywords:
 - load tests, test agents and controllers
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e70c1f3783945fbea00816d961f8ae6518ff726b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 50356044b4463353f99ddf93ac41e08a572f3879
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957244"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Panoramica di agenti di test e test controller per i test di carico
 
@@ -91,6 +91,6 @@ Per informazioni importanti sui requisiti hardware e software per i test control
 
 Dopo aver installato un controller di test e uno o più agenti, è possibile specificare se usare un'esecuzione remota con il controller di test nell'impostazione di test per i test di carico. Inoltre, è possibile specificare i dati e gli adattatori diagnostici da usare con il ruolo associato agli agenti nell'impostazione di test.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)

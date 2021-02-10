@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 6b520d3bedf31bc09dc0cf48e86777872176e2e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957621"
 ---
 # <a name="shell-command"></a>Comando Shell
 Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -43,20 +43,20 @@ Obbligatorio. Percorso e nome del file da eseguire o del documento da aprire. È
 
 `args`
 
-Facoltativa. Argomenti da passare al programma richiamato.
+facoltativo. Argomenti da passare al programma richiamato.
 
 ## <a name="switches"></a>Commutatori
 /commandwindow [oppure] /command [oppure] /c [oppure] /cmd
 
-Facoltativa. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
+facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
 
 /dir:`folder` [oppure] /d: `folder`
 
-Facoltativa. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
+facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
 
 /outputwindow [oppure] /output [oppure] /out [oppure] /o
 
-Facoltativa. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
+facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
 
 ## <a name="remarks"></a>Commenti
 Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.
@@ -86,7 +86,7 @@ Il comando seguente usa xcopy.exe per copiare il file `MyText.txt` nella cartell
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b47c30ed938a83a2b4c47f73f55b5f7ca1db6a62
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 50d0097debbd7e91906202b85e8e9e6dab36a27d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957686"
 ---
 # <a name="set-radix-command"></a>Comando Imposta radice
 Imposta o restituisce la base numerica usata per visualizzare i valori integer.
@@ -34,7 +34,7 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>Argomenti
 `10` o `16` o `hex` o `dec`
 
-Facoltativa. Indica un valore decimale (10 o dec) o esadecimale (16 o hex). Se un argomento viene omesso, viene restituito il valore della radice corrente.
+facoltativo. Indica un valore decimale (10 o dec) o esadecimale (16 o hex). Se un argomento viene omesso, viene restituito il valore della radice corrente.
 
 ## <a name="example"></a>Esempio
 Nell'esempio che segue, l'ambiente viene impostato per la visualizzazione dei valori integer in formato esadecimale.
@@ -43,7 +43,7 @@ Nell'esempio che segue, l'ambiente viene impostato per la visualizzazione dei va
 >Debug.SetRadix hex
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

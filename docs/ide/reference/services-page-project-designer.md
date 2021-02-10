@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 50d9e564b6637feb19ef99c3d33c0ea5c1b7b1fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957829"
 ---
 # <a name="services-page-project-designer"></a>Pagina Servizi, Progettazione progetti
 
@@ -75,7 +75,7 @@ Specifica il percorso del servizio profili (impostazioni Web).
 
 Apre la [finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md), che è possibile usare per eseguire l'override del comportamento predefinito. Ad esempio, è possibile usare questa finestra di dialogo per specificare un database per l'archiviazione offline anziché usare il file system locale. Per altre informazioni, vedere [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Servizi applicazioni client](/dotnet/framework/common-client-technologies/client-application-services)
 - [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md)

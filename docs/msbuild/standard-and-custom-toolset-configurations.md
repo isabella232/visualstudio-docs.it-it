@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956100"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurazioni standard e personalizzate del set di strumenti
 
@@ -76,9 +76,9 @@ Visual Studio 2017 e versioni successive non usano una chiave del Registro di si
 
 ## <a name="custom-toolset-definitions"></a>Definizioni personalizzate del set di strumenti
 
- Se un set di strumenti standard non soddisfa i requisiti di compilazione, è possibile creare un set di strumenti personalizzato. È ad esempio possibile disporre di uno scenario Lab di compilazione in cui è necessario disporre di un sistema separato per la compilazione di progetti C++. Utilizzando un set di strumenti personalizzato, è possibile assegnare valori personalizzati all' `ToolsVersion` attributo quando si creano progetti o si eseguono *MSBuild.exe* . In questo modo, è anche possibile usare la `$(MSBuildToolsPath)` proprietà per importare i file con *estensione targets* da tale directory, nonché definire proprietà personalizzate del set di strumenti che possono essere usate per qualsiasi progetto che usa tale set di strumenti.
+ Se un set di strumenti standard non soddisfa i requisiti di compilazione, è possibile creare un set di strumenti personalizzato. È ad esempio possibile disporre di uno scenario Lab di compilazione in cui è necessario disporre di un sistema separato per la compilazione di progetti C++. Utilizzando un set di strumenti personalizzato, è possibile assegnare valori personalizzati all' `ToolsVersion` attributo quando si creano progetti o si eseguono *MSBuild.exe*. In questo modo, è anche possibile usare la `$(MSBuildToolsPath)` proprietà per importare i file con *estensione targets* da tale directory, nonché definire proprietà personalizzate del set di strumenti che possono essere usate per qualsiasi progetto che usa tale set di strumenti.
 
- Specificare un set di strumenti personalizzato nel file di configurazione per *MSBuild.exe* (o per lo strumento personalizzato che ospita il motore MSBuild se è quello che si sta usando). Ad esempio, il file di configurazione per *MSBuild.exe* può includere la definizione di set di strumenti seguente se si vuole definire un set di strumenti denominato *MyCustomToolset* .
+ Specificare un set di strumenti personalizzato nel file di configurazione per *MSBuild.exe* (o per lo strumento personalizzato che ospita il motore MSBuild se è quello che si sta usando). Ad esempio, il file di configurazione per *MSBuild.exe* può includere la definizione di set di strumenti seguente se si vuole definire un set di strumenti denominato *MyCustomToolset*.
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">

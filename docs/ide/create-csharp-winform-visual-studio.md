@@ -1,6 +1,6 @@
 ---
-title: "Creare un'app Windows Forms con C #"
-description: Informazioni dettagliate su come creare un'app Windows Forms in Visual Studio con C#.
+title: "Creare un'app Windows Form con C #"
+description: Informazioni dettagliate su come creare un'app Windows Form in Visual Studio con C#.
 ms.date: 09/26/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -8,19 +8,19 @@ ms.technology: vs-ide-general
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a06a6885c3d0858f60c8de48dd61054534aad40f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0fcc42b999039abe5d682394e378cb95f12b9283
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956932"
 ---
-# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creare un'app Windows Forms in Visual Studio con C\#
+# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creare un'app Windows Form in Visual Studio con C\#
 
 In questa breve introduzione a Visual Studio Integrated Development Environment (IDE) verrà creata una semplice applicazione C# con un'interfaccia utente basata su Windows.
 
@@ -65,11 +65,11 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** scegliere il modello **App Windows Forms (.NET Framework)** per C#.
+1. Nella finestra **Crea un nuovo progetto** scegliere il modello **App Windows Form (.NET Framework)** per C#.
 
-   Se si preferisce, è possibile affinare la ricerca per ottenere rapidamente il modello desiderato. Ad esempio, immettere o digitare *Windows Forms app* nella casella di ricerca. Scegliere quindi **C#** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma.  
+   Se si preferisce, è possibile affinare la ricerca per ottenere rapidamente il modello desiderato. Ad esempio, immettere o digitare *Windows Form App* nella casella di ricerca. Scegliere quindi **C#** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma.  
 
-   ![Scegliere il modello C# per l'app Windows Forms (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-winforms-project-nonfiltered.png)
+   ![Scegliere il modello C# per l'app Windows Form (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-winforms-project-nonfiltered.png)
 
    > [!NOTE]
    > Se il modello **App Windows Forms (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
@@ -100,7 +100,7 @@ Dopo aver selezionato il modello di progetto C# e denominare il file, Visual Stu
 
      ![Scegliere la casella degli strumenti per aprire la finestra casella degli strumenti](../ide/media/csharp-toolbox-toolwindow.png)
 
-     (Se non viene visualizzata l'opzione per il volo della **casella degli strumenti** , è possibile aprirla dalla barra dei menu. A tale scopo, **visualizzare**la  >  **casella degli strumenti**. In alternativa, premere **CTRL** + **ALT** + **X**.)
+     (Se non viene visualizzata l'opzione per il volo della **casella degli strumenti** , è possibile aprirla dalla barra dei menu. A tale scopo, **visualizzare** la  >  **casella degli strumenti**. In alternativa, premere **CTRL** + **ALT** + **X**.)
 
 1. Scegliere l'icona **Aggiungi** per ancorare la finestra **casella degli strumenti** .
 
@@ -162,7 +162,7 @@ Per altre informazioni, passare all'esercitazione successiva:
 > [!div class="nextstepaction"]
 > [Esercitazione: Creare un visualizzatore di immagini](tutorial-1-create-a-picture-viewer.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

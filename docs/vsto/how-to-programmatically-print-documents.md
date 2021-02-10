@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], printing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e17976c86a519db3c5edcd60c426b5d20e84b526
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c81e22bbf3af08c150f1e1156ee62f1666f59638
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956633"
 ---
 # <a name="how-to-programmatically-print-documents"></a>Procedura: stampare documenti a livello di codice
   È possibile stampare un intero documento di Microsoft Office Word o parte di un documento sulla stampante predefinita.
@@ -59,5 +59,5 @@ ms.locfileid: "97523925"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

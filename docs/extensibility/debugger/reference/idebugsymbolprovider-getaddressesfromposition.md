@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27767af36093e9424775074a55bafadac9a4480d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15838ff1efe9cba6920b98a8b7f00cb62f2fc3b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956464"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Questo metodo esegue il mapping di una posizione del documento in una matrice di indirizzi di debug.
@@ -28,7 +28,7 @@ Questo metodo esegue il mapping di una posizione del documento in una matrice di
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetAddressesFromPosition( 
+HRESULT GetAddressesFromPosition( 
    IDebugDocumentPosition2* pDocPos,
    BOOL                     fStatmentOnly,
    IEnumDebugAddresses**    ppEnumBegAddresses,
@@ -37,7 +37,7 @@ HRESULT GetAddressesFromPosition( 
 ```
 
 ```csharp
-int GetAddressesFromPosition( 
+int GetAddressesFromPosition( 
    IDebugDocumentPosition2  pDocPos,
    bool                     fStatmentOnly,
    out IEnumDebugAddresses  ppEnumBegAddresses,
@@ -61,12 +61,12 @@ out Restituisce un enumeratore [IEnumDebugAddresses](../../../extensibility/debu
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Una posizione del documento indica in genere un intervallo di righe di origine. Questo metodo fornisce gli indirizzi di debug iniziale e finale associati a queste righe. Alcuni linguaggi consentono istruzioni che si estendono su più righe o righe che contengono più di un'istruzione. Questo metodo fornisce un flag per limitare gli indirizzi di debug a una singola istruzione.
 
  È possibile che una singola istruzione disponga di più indirizzi di debug, come nel caso di modelli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956594"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: modificare la formattazione del foglio di controllo tramite i controlli CheckBox
   Questa procedura dettagliata illustra le nozioni di base sull'uso di caselle di controllo in un foglio di lavoro Microsoft Office Excel per modificare la formattazione. Per creare e aggiungere codice al progetto, si utilizzeranno gli strumenti di sviluppo di Office in Visual Studio. Per visualizzare il risultato come esempio completo, vedere l'esempio relativo ai controlli di Excel in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -68,24 +68,24 @@ ms.locfileid: "97527215"
 
 4. Assicurarsi che **CheckBox1** sia visibile nella casella di riepilogo nome oggetto della finestra **Proprietà** e modificare le proprietà seguenti:
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**applyBoldFont**|
-    |**Testo**|**Grassetto**|
+    |**Text**|**Grassetto**|
 
 5. Trascinare una seconda casella di controllo in prossimità della cella **B4** e modificare le proprietà seguenti:
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**applyItalicFont**|
-    |**Testo**|**Corsivo**|
+    |**Text**|**Corsivo**|
 
 6. Trascinare una terza casella di controllo nella cella **B6** e modificare le proprietà seguenti:
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**applyUnderlineFont**|
-    |**Testo**|**Sottolineato**|
+    |**Text**|**Sottolineato**|
 
 7. Selezionare tutti e tre i controlli casella di controllo tenendo premuto il tasto **CTRL** .
 
@@ -112,7 +112,7 @@ ms.locfileid: "97527215"
 
 5. Assicurarsi che **NamedRange1** sia visibile nella casella di riepilogo nome oggetto della finestra **Proprietà** e modificare le proprietà seguenti:
 
-   |Proprietà|valore|
+   |Proprietà|Valore|
    |--------------|-----------|
    |**Nome**|**FontTesto**|
    |**Value2**|**Fare clic su una casella di controllo per modificare la formattazione del testo.**|
@@ -145,7 +145,7 @@ ms.locfileid: "97527215"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  È ora possibile testare la cartella di lavoro per verificare che il testo sia formattato correttamente quando si seleziona o deseleziona una casella di controllo.
 
 ### <a name="to-test-your-workbook"></a>Per testare la cartella di lavoro
@@ -162,7 +162,7 @@ ms.locfileid: "97527215"
 - Distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 - Usare un pulsante per popolare una casella di testo. Per ulteriori informazioni, vedere [procedura dettagliata: visualizzare il testo in una casella di testo di un foglio di un foglio di testo utilizzando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)
-- [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - editor settings
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 5d83319ed679a08b8c940774b723ce3e919b4b94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957660"
 ---
 # <a name="set-language-specific-editor-options"></a>Impostare opzioni dell'editor specifiche del linguaggio
 
@@ -47,7 +47,7 @@ Descrive le impostazioni che specificano il comportamento dell'elenco di complet
 [Opzioni, editor di testo, XAML, formattazione](../../ide/reference/options-text-editor-xaml-formatting.md)\
 Vengono descritte le impostazioni per la disposizione di elementi e attributi nei documenti XAML.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'editor](../how-to-change-text-case-in-the-editor.md)
 - [Creare impostazioni personalizzate e portabili per l'editor con EditorConfig](../../ide/create-portable-custom-editor-options.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa67792ced94afd9c4439cbc6ea577e6b85f28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956288"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Questa interfaccia enumera le strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
@@ -45,7 +45,7 @@ IEnumDebugFrameInfo2 : IUnknown
 |[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Ottiene il numero di strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) in un enumeratore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Visual Studio ottiene questa interfaccia come primo passaggio per la gestione di un punto di interruzione, un'eccezione o una pausa generata dall'utente sul programma di cui è in corso il debug. L'elenco di strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) rappresenta lo stack di chiamate corrente, con la chiamata di funzione corrente all'inizio dell'elenco e la chiamata di funzione meno recente alla fine dell'elenco. Ogni `FRAMEINFO` rappresenta una stack frame, un contesto in cui le espressioni possono essere valutate e le variabili locali esaminate.
 
 ## <a name="requirements"></a>Requisiti
@@ -55,7 +55,7 @@ IEnumDebugFrameInfo2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

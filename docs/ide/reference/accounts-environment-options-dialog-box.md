@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd9f08cb1358d788db661871f6d229d0579ddbd
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b0c640b670802e3bb69a26d0b49bee6695955170
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956776"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Account, Ambiente, finestra di dialogo Opzioni
 
@@ -43,7 +43,7 @@ Registrare un cloud di Azure aggiuntivo scegliendo il pulsante **Aggiungi**. Nel
 
 Dopo aver registrato un cloud di Azure aggiuntivo, è possibile scegliere a quale cloud di Azure si vuole accedere quando si esegue l'accesso a Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sincronizzare le impostazioni tra più computer](../synchronized-settings-in-visual-studio.md)
 - [Accedi a Visual Studio](../signing-in-to-visual-studio.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Project Designer, Settings page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d8ee71e717d2287b4e6deb32b1b94c142cf7de73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957673"
 ---
 # <a name="settings-page-project-designer"></a>Pagina Impostazioni, Creazione progetti
 
@@ -75,7 +75,7 @@ Immettere il nome dell'impostazione dell'applicazione in questo campo.
 
 Usare l'elenco a discesa per selezionare un tipo di impostazione. L'elenco include i tipi più utilizzati, ad esempio **String**, **(Stringa di connessione)** e **System.Drawing.Font**. È possibile scegliere un tipo diverso selezionando **Sfoglia** alla fine dell'elenco e quindi selezionando un tipo dalla finestra di dialogo **Seleziona un tipo**. Il tipo selezionato viene aggiunto ai tipi più utilizzati dell'elenco a discesa (solo per la soluzione corrente).
 
-**Ambito**
+**Scope**
 
 Selezionare **Applicazione** o **Utente**.
 
@@ -87,7 +87,7 @@ Le impostazioni con ambito utente, ad esempio i tipi di carattere di sistema, so
 
 Dati o valore associato all'impostazione dell'applicazione. Ad esempio, se l'impostazione è un tipo di carattere, il valore può essere **Verdana, 9.75pt, style=Bold**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire le impostazioni dell'applicazione](../managing-application-settings-dotnet.md)
 - [Accesso alle impostazioni dell'applicazione (Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

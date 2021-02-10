@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d5ce77e8-bb99-409a-98fa-20fe5a0de25e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87842dfdb3de6ce120967bbbff785a1ec84f9ba4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db95ef169357faf621f3257154b63dabea1477f1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957062"
 ---
 # <a name="ienumdebugports2clone"></a>IEnumDebugPorts2::Clone
 Restituisce una copia dell'enumerazione corrente come oggetto separato.
@@ -46,8 +46,8 @@ int Clone(
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata di questo metodo. Tuttavia, gli Stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

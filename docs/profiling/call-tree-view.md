@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 386f8e85c02fe73eab9801b3edf79ec0d0b178fc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3ee8f09c502f6125c6ce2e67e504a689c035ffd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957348"
 ---
 # <a name="call-tree-view"></a>Visualizzazione albero delle chiamate
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati delle prestazioni delle chiamate di funzione.
@@ -51,7 +51,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 
 - [Visualizzazione albero delle chiamate](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazioni rapporto di prestazioni](../profiling/performance-report-views.md)
 - [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)
 - [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

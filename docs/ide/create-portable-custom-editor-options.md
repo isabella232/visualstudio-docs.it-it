@@ -8,13 +8,13 @@ helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: a1f66368972614347df9eebe33af435987ea9cc8
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: 8ab90fda1f14521d59982ef7b5d20998cf61e505
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956841"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -33,7 +33,7 @@ Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove r
 
 ::: moniker range="=vs-2017"
 
-Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non si formatti il documento (**modificare** il  >  **Advanced**  >  **documento con formato** avanzato o **CTRL** + **K**, **CTRL** + **D** nel profilo predefinito). La formattazione del documento influiscono solo sulle impostazioni dello spazio vuoto, ad esempio lo stile di rientro, a meno che non sia stato configurato il formato documento per [eseguire la pulizia del codice](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non si formatti il documento (**modificare** il  >    >  **documento con formato** avanzato o **CTRL** + **K**, **CTRL** + **D** nel profilo predefinito). La formattazione del documento influiscono solo sulle impostazioni dello spazio vuoto, ad esempio lo stile di rientro, a meno che non sia stato configurato il formato documento per [eseguire la pulizia del codice](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
 
  ::: moniker-end
 
@@ -74,7 +74,7 @@ Le impostazioni dell'editor EditorConfig sono supportate in tutti i linguaggi su
 
 ## <a name="add-and-remove-editorconfig-files"></a>Aggiungere e rimuovere i file EditorConfig
 
-Quando si aggiunge un file EditorConfig al progetto o alla codebase, le nuove righe di codice scritte vengono formattate in base al file EditorConfig. Tuttavia, l'aggiunta di un file EditorConfig non converte gli stili esistenti in quelli nuovi fino a quando non si formatta il documento o si esegue la [pulizia del codice](../ide/code-styles-and-code-cleanup.md). Se, ad esempio, il file contiene rientri formattati con tabulazioni e si aggiunge un file EditorConfig che imposta rientri con spazi, i caratteri di rientro non vengono convertiti automaticamente in spazi. Quando si formatta il documento (**modifica**  >  **Advanced**  >  **documento formato** avanzato o **CTRL** + **K**, **CTRL** + **D**), le impostazioni dello spazio vuoto nel file EditorConfig vengono applicate alle righe di codice esistenti.
+Quando si aggiunge un file EditorConfig al progetto o alla codebase, le nuove righe di codice scritte vengono formattate in base al file EditorConfig. Tuttavia, l'aggiunta di un file EditorConfig non converte gli stili esistenti in quelli nuovi fino a quando non si formatta il documento o si esegue la [pulizia del codice](../ide/code-styles-and-code-cleanup.md). Se, ad esempio, il file contiene rientri formattati con tabulazioni e si aggiunge un file EditorConfig che imposta rientri con spazi, i caratteri di rientro non vengono convertiti automaticamente in spazi. Quando si formatta il documento (**modifica**  >    >  **documento formato** avanzato o **CTRL** + **K**, **CTRL** + **D**), le impostazioni dello spazio vuoto nel file EditorConfig vengono applicate alle righe di codice esistenti.
 
 Se il file EditorConfig viene rimosso dal progetto o dalla codebase e si vuole che le nuove righe di codice siano formattate in base alle impostazioni globali dell'editor, sarà necessario chiudere e riaprire i file di codice aperti.
 

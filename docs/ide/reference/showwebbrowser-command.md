@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 026878bdc2158d803f191cf2d28c8eb52f0b6e09
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 9117360d795a8027812b2534311a846d0ee56e09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957608"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 
@@ -40,11 +40,11 @@ Obbligatorio. URL (Uniform Resource Locator) per il sito Web.
 ## <a name="switches"></a>Commutatori
 /new
 
-Facoltativa. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
+facoltativo. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
 
 /ext
 
-Facoltativa. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
+facoltativo. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
 
 ## <a name="remarks"></a>Commenti
 L'alias per il comando **ShowWebBrowser** è **navigate** o **nav**.
@@ -56,7 +56,7 @@ L'esempio seguente illustra la home page di Microsoft Docs in un Web browser all
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

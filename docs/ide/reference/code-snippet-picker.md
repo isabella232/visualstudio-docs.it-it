@@ -12,15 +12,15 @@ helpviewer_keywords:
 - code snippets, Code Snippet Picker
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf0b1c264911c92389c6c3afe722b5061455c3da
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 93fea67056c73a6e9b0b265253479fbecee63767
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041018"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956152"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
 
@@ -56,7 +56,7 @@ Elenco elementi
 
 Elenco di frammenti di codice disponibili per l'inserimento o un elenco di cartelle che contengono frammenti di codice. Per inserire un frammento di codice o espandere una cartella, selezionare l'elemento desiderato e premere INVIO.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedure consigliate per l'uso dei frammenti di codice](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic IntelliSense Code Snippets](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets) (Frammenti di codice IntelliSense di Visual Basic)

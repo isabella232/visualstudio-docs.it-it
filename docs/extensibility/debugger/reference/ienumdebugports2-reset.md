@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 67da406c-eadb-421e-ae12-e26e9866f262
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6247e48af98f5c21a0afc40577e18d38bba06506
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f257ae62f08f7afdfae91a56570cb8a12a3d8fff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956919"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 Reimposta l'enumerazione sul primo elemento.
@@ -40,8 +40,8 @@ int Reset();
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Dopo la chiamata a questo metodo, la chiamata successiva al metodo [successivo](../../../extensibility/debugger/reference/ienumdebugports2-next.md) restituisce il primo elemento dell'enumerazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

@@ -6,15 +6,15 @@ ms.date: 03/26/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8208ec9c84eb076ab5c313b3078d3853619fb06
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 93365ea32ce2ad0b07b8285e3787a7a7edefffbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956659"
 ---
 # <a name="add-explicit-cast"></a>Aggiungere un cast esplicito
 
@@ -36,7 +36,7 @@ Questa generazione di codice si applica a:
 
    ![Aggiungere un'azione rapida cast esplicita in Visual Studio](media/add-explicit-cast.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generazione di codice](../code-generation-in-visual-studio.md)
 - [Refactoring](../refactoring-in-visual-studio.md)
