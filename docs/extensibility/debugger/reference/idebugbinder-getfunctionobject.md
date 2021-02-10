@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8fb789df-8f30-420d-8ca5-bb496a6738f1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01d501367f47e520e9170118da8b6fdfcb326137
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7128c97c60b5743ea9759a9449b82e4e909a686
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939032"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 Questo metodo ottiene un oggetto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) usato per creare i parametri della funzione.
@@ -28,7 +28,7 @@ Questo metodo ottiene un oggetto [IDebugFunctionObject](../../../extensibility/d
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetFunctionObject( 
+HRESULT GetFunctionObject( 
    IDebugFunctionObject **ppFunction
 );
 ```
@@ -46,6 +46,6 @@ out Restituisce l'interfaccia [IDebugFunctionObject](../../../extensibility/debu
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

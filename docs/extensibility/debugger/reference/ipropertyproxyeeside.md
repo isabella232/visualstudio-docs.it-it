@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0331365716c8399c1b2a565fc8046482df5d80f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938902"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Questa interfaccia fornisce i metodi per visualizzare i dati nell'oggetto associato. Questa interfaccia è parte del supporto per i visualizzatori di tipi.
@@ -46,7 +46,7 @@ IPropertyProxyEESide : IUnknown
 |[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|Crea un riferimento a un archivio dati esistente.|
 |[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Recupera informazioni su un assembly specifico nel contesto dell'assembly contenente questo oggetto.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un visualizzatore di tipi usa questa interfaccia per accedere ai valori associati all'oggetto di cui fa parte l'interfaccia. L'accesso ai dati viene eseguito tramite l'interfaccia [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) , che fornisce una visualizzazione di sola lettura dei dati.
 
 ## <a name="requirements"></a>Requisiti
@@ -56,7 +56,7 @@ IPropertyProxyEESide : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [Visualizzatore di tipi e visualizzatore personalizzato](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

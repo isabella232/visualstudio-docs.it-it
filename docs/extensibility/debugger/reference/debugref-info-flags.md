@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01a26b6e10fae095bcf7284a6b5dbc12394d2541
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938993"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 Specifica le informazioni da recuperare su un oggetto di riferimento di debug.
@@ -84,7 +84,7 @@ Indica che non è impostato alcun flag.
 `DEBUGREF_INFO_ALL`\
 Indica una maschera dei flag.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questi flag vengono passati ai metodi [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) e [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) per indicare quali campi della struttura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) devono essere inizializzati.
 
 Utilizzato per il `dwFields` membro della `DEBUG_REFERENCE_INFO` struttura per indicare quali campi vengono utilizzati e validi quando viene restituita la struttura.
@@ -98,7 +98,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)

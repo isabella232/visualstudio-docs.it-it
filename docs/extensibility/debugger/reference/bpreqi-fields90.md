@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea46939118ec48490280d6a85cc84e144d320d4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7be8d52700315dfea5619a5d4e6ca875ada0139c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938245"
 ---
 # <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 Enumera i valori validi che specificano le informazioni da recuperare su una richiesta del punto di interruzione. Questa enumerazione estende l'enumerazione [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) .
@@ -129,5 +129,5 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

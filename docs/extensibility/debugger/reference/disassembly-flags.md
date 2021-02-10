@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fe1515616d6781613961fa11d87005a479c70fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939019"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 Specifica i flag per il disassembly.
@@ -69,7 +69,7 @@ Indica che l'istruzione contiene l'origine. Alcune istruzioni, ad esempio la pro
 `DF_DOCUMENT_CHECKSUM`\
 Indica che `bstrDocumentUrl` il campo contiene dati di checksum dopo l'URL del documento. Vedere la sezione Osservazioni per la struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) per la modalità di archiviazione dei dati di checksum.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Utilizzato come `dwFlags` membro della struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
 Questi flag possono essere combinati con un bit per bit `OR` .
@@ -81,6 +81,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

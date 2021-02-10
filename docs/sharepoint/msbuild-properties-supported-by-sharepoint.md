@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, MSBuild properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 20458cc7047e913e13f4594380d4b4946b44ec17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305140"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938512"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Proprietà di MsBuild supportate da SharePoint
   Qualsiasi [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] proprietà definita nel file Microsoft. VisualStudio. SharePoint. targets, nel file di progetto o nel file utente del progetto può essere utilizzata nei [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti SharePoint. Oltre alle [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Proprietà comuni fornite dal progetto, SharePoint definisce proprietà aggiuntive specifiche dei progetti SharePoint.
@@ -53,6 +53,6 @@ ms.locfileid: "96305140"
 > [!NOTE]
 > È possibile utilizzare la [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] sintassi della variabile `$(` *PropertyName* `)` o la sintassi della variabile `%` di ambiente *PropertyName* `%` per specificare una proprietà.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

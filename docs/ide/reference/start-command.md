@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d9e1e36a2790fb63f9d39c0c83d67d889cc0a8
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 0cae9d4630a854bc24c952380a1e27cbab42d261
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938655"
 ---
 # <a name="start-command"></a>Comando Avvia
 Inizia il debug del progetto di avvio.
@@ -34,7 +34,7 @@ Debug.Start [address]
 ## <a name="arguments"></a>Argomenti
 `address`
 
-Facoltativa. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
+facoltativo. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
 
 ## <a name="remarks"></a>Commenti
 Il comando **Avvia**, quando eseguito, esegue un'operazione RunToCursor sull'indirizzo specificato.
@@ -46,7 +46,7 @@ In questo esempio viene avviato il debugger e le eccezioni vengono ignorate.
 >Debug.Start
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

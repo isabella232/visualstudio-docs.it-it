@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34836447af8277141c401302c5a838d5cbe351b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938954"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
 Specifica le informazioni da recuperare su un campo Disassembly.
@@ -104,7 +104,7 @@ Includere i nomi dei simboli nel `bstrOperands` campo.
 `DSF_ALL`\
 Specifica tutti i campi per il flusso Disassembly.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Passato come parametro al metodo [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) per indicare quali campi della struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) devono essere inizializzati.
 
 Utilizzato per il `dwFields` membro della `DisassemblyData` struttura per indicare quali campi vengono utilizzati e validi quando viene restituita la struttura.
@@ -118,7 +118,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [Lettura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

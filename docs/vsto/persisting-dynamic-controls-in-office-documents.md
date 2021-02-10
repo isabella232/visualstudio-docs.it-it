@@ -17,15 +17,15 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], persisting in the document
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e833a480713e3c04215c03a3dc4a549c92e0f772
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938473"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Mantieni controlli dinamici nei documenti di Office
 
@@ -66,7 +66,7 @@ Per ricreare un <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullNam
 
 Se non si elimina prima l'oggetto nativo <xref:Microsoft.Office.Interop.Excel.Chart> , verrà creato un secondo grafico duplicato quando si ricrea <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> .
 
-## <a name="persist-windows-forms-controls-in-documents"></a>Mantieni Windows Forms controlli nei documenti
+## <a name="persist-windows-forms-controls-in-documents"></a>Mantieni Windows Form controlli nei documenti
 
 Quando si salva e si chiude un documento, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] rimuove automaticamente dal documento tutti i controlli Windows Form creati dinamicamente. Tuttavia, il comportamento varia a seconda che il progetto sia a livello di documento o a livello di componente aggiuntivo VSTO.
 
@@ -74,7 +74,7 @@ Nelle personalizzazioni a livello di documento, i controlli e i relativi wrapper
 
 Anche nei componenti aggiuntivi VSTO i controlli vengono rimossi, tuttavia i wrapper ActiveX rimangono nel documento. Alla successiva apertura del documento da parte dell'utente, i wrapper ActiveX sono visibili. In Excel, i wrapper ActiveX visualizzano le immagini dei controlli nello stesso modo in cui erano visualizzati l'ultima volta che il documento è stato salvato. In Word, i wrapper ActiveX sono invisibili a meno che l'utente non faccia clic su di essi. In questo caso, viene visualizzata una linea punteggiata che delinea il bordo dei controlli. Esistono diversi modi per rimuovere i wrapper ActiveX. Per ulteriori informazioni, vedere [rimuovere wrapper ActiveX in un componente aggiuntivo](#removingActiveX).
 
-### <a name="re-create-windows-forms-controls-when-documents-are-opened"></a>Ricreare i controlli Windows Forms quando vengono aperti i documenti
+### <a name="re-create-windows-forms-controls-when-documents-are-opened"></a>Ricreare i controlli Windows Form quando vengono aperti i documenti
 
 È possibile ricreare i controlli Windows Form eliminati quando l'utente riapre il documento. A questo scopo, la soluzione deve eseguire le attività seguenti:
 
@@ -84,7 +84,7 @@ Anche nei componenti aggiuntivi VSTO i controlli vengono rimossi, tuttavia i wra
 
 ### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> Rimuovere i wrapper ActiveX in un componente aggiuntivo
 
-Quando si aggiungono controlli Windows Forms dinamici ai documenti usando un componente aggiuntivo VSTO, è possibile impedire che i wrapper ActiveX dei controlli vengano visualizzati nel documento alla successiva apertura nei modi seguenti.
+Quando si aggiungono controlli Windows Form dinamici ai documenti usando un componente aggiuntivo VSTO, è possibile impedire che i wrapper ActiveX dei controlli vengano visualizzati nel documento alla successiva apertura nei modi seguenti.
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>Rimuovi wrapper ActiveX all'apertura del documento
 
@@ -110,6 +110,6 @@ Nell'esempio di codice seguente viene illustrato come rimuovere tutti i controll
 [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
 [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)

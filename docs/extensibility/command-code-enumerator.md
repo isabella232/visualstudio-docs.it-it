@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a831813bb975819e9152dfab4d4eefd6b440606
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 2911a39c15fa259057e0b7b48d79e142cda34094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938247"
 ---
 # <a name="command-code-enumerator"></a>Enumeratore del codice di comando
 Questo enumeratore viene usato nelle opzioni per [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md)per indicare il comando per il quale vengono specificate le opzioni.
@@ -64,7 +64,7 @@ SCC_COMMAND_PROPERTIES corrisponde a [SccProperties](../extensibility/sccpropert
 
 SCC_COMMAND_OPTIONS corrisponde a [SccSetOption](../extensibility/sccsetoption-function.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

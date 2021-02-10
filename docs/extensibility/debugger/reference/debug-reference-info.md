@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e31205f52151679f932877c9c4fdc56907ea59e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e491054ffbdfa9e19cb8bed995b2f369ac1a885
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939175"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 Descrive un riferimento.
@@ -73,7 +73,7 @@ Valore dell'enumerazione [REFERENCE_TYPE](../../../extensibility/debugger/refere
 `m_pReference`\
 Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che specifica le informazioni di riferimento.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura viene passata a una chiamata al metodo [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) da compilare. Questa struttura viene restituita anche come parte di un elenco dall'interfaccia [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) che, a sua volta, viene restituita da una chiamata al metodo [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -83,7 +83,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
