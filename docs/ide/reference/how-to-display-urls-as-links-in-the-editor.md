@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ead76a3db9ff146aa82347a67e0bf7d52d04f30e
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 54db0ab6ae6614e9f1c867aa40761f09b96f0fc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958336"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: visualizzare gli URL come collegamenti nell'editor
 
@@ -45,6 +45,6 @@ ms.locfileid: "96617084"
 
 4. In **Display** selezionare **Consenti apertura URL con clic singolo**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice](../../ide/writing-code-in-the-code-and-text-editor.md)

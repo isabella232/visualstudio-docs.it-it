@@ -1,5 +1,5 @@
 ---
-title: Panoramica dell'interfaccia utente di Strumenti Domain-Specific Language
+title: Panoramica dell'interfaccia utente degli strumenti di linguaggio Domain-Specific
 description: Viene fornita una panoramica dell'interfaccia utente di una soluzione di strumenti del linguaggio specifico di dominio in Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa47b10edc3804468f6ca0766872849ae9e8a949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959129"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
-Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Language (strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
+Quando si apre per la prima volta una soluzione strumenti del linguaggio Domain-Specific (strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
 
  ![Progettazione DSL](../modeling/media/dsl_designer.png)
 
  La tabella seguente spiega come vengono usate le diverse parti dell'interfaccia utente.
 
-|**elemento**|**Definizione**|
+|**elemento**|**Definition**|
 |-|-|
 |Diagramma|Il diagramma visualizza il modello di dominio.<br /><br /> Il diagramma presenta due lati. Un lato definisce i tipi degli elementi nei modelli. L'altro lato definisce il modo in cui i modelli verranno visualizzati sullo schermo.|
 |Casella degli strumenti|Trascinare gli strumenti dalla casella degli strumenti per aggiungere classi di dominio e tipi di forma al diagramma. Per aggiungere relazioni, connettori e mapping di forme, fare clic sullo strumento, sul nodo di origine sul diagramma e quindi sul nodo di destinazione.|
@@ -48,7 +48,7 @@ Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Langua
 |Forme e connettori|Le forme specificano in che modo gli elementi del modello devono essere visualizzati in un diagramma DSL. I connettori specificano le linee che è possibile usare in un diagramma DSL per visualizzare le relazioni.<br /><br /> Per creare una forma o un connettore, trascinare lo strumento sul lato **Elementi diagramma** del diagramma.|
 |Mappe delle forme|Un mapping di forme ha l'aspetto di una linea che, nel diagramma del modello di dominio, collega una forma alla classe di dominio che visualizza, o un connettore alla relazione di dominio che visualizza.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica degli strumenti di linguaggio specifico di dominio](../modeling/overview-of-domain-specific-language-tools.md)
 - [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

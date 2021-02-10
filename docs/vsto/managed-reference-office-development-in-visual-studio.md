@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 044ba7e4858a87dea1894f647f110d62b840aa42
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9364b191886408e509aa09a83bde70ce8240707e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958752"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Riferimenti gestiti (sviluppo per Office in Visual Studio)
   Questa sezione include documentazione di riferimento alle API per gli spazi dei nomi e i tipi usati nei progetti di Office destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Per la documentazione di riferimento delle API sugli spazi dei nomi e i tipi usati nei progetti di Office destinati a .NET Framework 3,5, vedere la sezione di riferimento seguente nella documentazione di Visual Studio: [riferimenti gestiti (sviluppo per Office in Visual Studio)](managed-reference-office-development-in-visual-studio.md).
@@ -73,7 +73,7 @@ ms.locfileid: "97528513"
 
  Contiene classi di attività MSBuild che vengono usate per compilare progetti di Office.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica di Visual Studio Tools per Office Runtime](visual-studio-tools-for-office-runtime-overview.md)
 - [Introduzione &#40;sviluppo per Office in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Procedure dettagliate e esempi di sviluppo per Office](office-development-samples-and-walkthroughs.md)

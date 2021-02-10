@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 22b3308b3bd1fed6ff1bc3d1f3a5622eb6f8284f
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: c7a5b8bacaa7d78be0c7b88bba8e20b416a3c076
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957998"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -49,7 +49,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
   | Nome della raccolta predefinita | Identificatore della raccolta |
   | --- | --- |
-  | **Generalee** | `General` |
+  | **Generale** | `General` |
   | **JavaScript** | `JavaScript` |
   | **Visual Basic** | `VB` |
   | **Visual C #** | `CSharp` |
@@ -57,7 +57,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Sviluppo Web** | `Web` |
   | **Sviluppo Web (solo codice)** | `WebCode` |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Se non viene specificato alcun *SettingsFile*, l'IDE viene aperto usando le impostazioni esistenti.
 
@@ -73,7 +73,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Impostazioni dell'ambiente](../environment-settings.md)
 - [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

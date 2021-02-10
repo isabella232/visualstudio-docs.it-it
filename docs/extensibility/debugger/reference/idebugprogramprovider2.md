@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43557e5d81e5140967a1189e57a350595d0f7220
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 788c4add42b70107ea2960ae5682a2e2cc815d59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959623"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Questa interfaccia registrata consente a gestione debug sessione (SDM) di ottenere informazioni sui programmi che sono stati "pubblicati" tramite l'interfaccia [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) .
@@ -43,7 +43,7 @@ Chiamare `CoCreateInstance` la funzione com con il `CLSID` del provider di progr
 |[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Stabilisce un callback da controllare per gli eventi del provider associati a tipi specifici di processi.|
 |[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Stabilisce le impostazioni locali per tutte le risorse specifiche della lingua richieste da DE.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 In genere, un processo usa questa interfaccia per individuare i programmi in esecuzione in tale processo.
 
 ## <a name="requirements"></a>Requisiti

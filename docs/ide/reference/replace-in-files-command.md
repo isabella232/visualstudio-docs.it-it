@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da2bfe820f70925a979548abeab955865f2bbc2c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 32980161281cf36c54ad15d536870a96694a461a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958011"
 ---
 # <a name="replace-in-files-command"></a>Comando Sostituisci nei file
 Sostituisce il testo nei file usando un subset delle opzioni disponibili nella scheda **Sostituisci nei file** della finestra **Trova e sostituisci**.
@@ -107,7 +107,7 @@ In questo esempio `btnCancel` viene cercato e sostituito con `btnReset` in tutti
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)
 - [Sostituisci nei file](../../ide/replace-in-files.md)

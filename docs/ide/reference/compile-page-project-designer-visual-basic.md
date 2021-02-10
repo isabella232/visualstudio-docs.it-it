@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: c822b6e8cbce1279a14c5a947d70208fc7f5480a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958375"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
 
@@ -189,7 +189,7 @@ Fare clic su questo pulsante per accedere alla finestra di dialogo **Eventi di c
 
 Fare clic su questo pulsante per accedere alla finestra di dialogo **Impostazioni del compilatore avanzate**. Usare la finestra di dialogo **Impostazioni del compilatore avanzate** per specificare le proprietà avanzate di configurazione della compilazione per un progetto. Questa finestra di dialogo si applica esclusivamente ai progetti Visual Basic. Per altre informazioni, vedere [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilatore della riga di comando di Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)

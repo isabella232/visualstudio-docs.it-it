@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8f6fb030f1f8377ac6e2f7a458f68d6ababf9a6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957946"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
 
@@ -56,7 +56,7 @@ Altre informazioni sulle tecnologie che supportano la progettazione di applicazi
 
 - **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** Questo sito Web offre le linee guida e le tecniche per lo sviluppo di siti Web accessibili. Per altre informazioni, vedere [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Funzionalità di accessibilità di Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Accessibilità per Visual Studio per Mac](/visualstudio/mac/accessibility/)

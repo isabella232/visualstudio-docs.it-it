@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f258558207f86ff76746d18aa432fe4c5850290
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958401"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath (funzione)
 Questa funzione determina il percorso del progetto padre di un progetto specificato. Questa funzione viene chiamata quando l'utente aggiunge un progetto di Visual Studio al controllo del codice sorgente.
@@ -76,7 +76,7 @@ in Stringa che identifica il percorso del progetto (fino a SCC_PRJPATH_SIZE, inc
 |SCC_E_CONNECTIONFAILURE|Problema di connessione dell'archivio.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione restituisce un codice di esito positivo o negativo e, in caso di esito positivo, compila la variabile `lpParentProjPath` con il percorso completo del progetto per il progetto specificato.
 
  Questa funzione restituisce il percorso del progetto padre di un progetto esistente. Per il progetto radice, la funzione restituisce il percorso del progetto passato, ovvero lo stesso percorso del progetto radice. Si noti che un percorso del progetto è una stringa significativa solo per il plug-in del controllo del codice sorgente.
@@ -92,13 +92,13 @@ in Stringa che identifica il percorso del progetto (fino a SCC_PRJPATH_SIZE, inc
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Note tecniche per SccCreateSubProject e SccGetParentProjectPath
  L'aggiunta di soluzioni e progetti al controllo del codice sorgente è stata semplificata in Visual Studio per ridurre al minimo il numero di volte in cui a un utente viene richiesto di selezionare i percorsi nel sistema di controllo del codice sorgente. Queste modifiche vengono attivate da Visual Studio se un plug-in del controllo del codice sorgente supporta entrambe le nuove funzioni, [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) e la `SccGetParentProjectPath` funzione. Tuttavia, la voce del registro di sistema seguente può essere usata per disabilitare queste modifiche e ripristinare il comportamento precedente di Visual Studio (plug-in del controllo del codice sorgente versione 1,1):
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001**
 
  Se questa voce del registro di sistema non esiste o è impostata su DWORD: 00000000, Visual Studio tenta di usare le nuove funzioni, `SccCreateSubProject` e `SccGetParentProjectPath` .
 
  Se la voce del registro di sistema è impostata su DWORD: 00000001, Visual Studio non tenta di usare queste nuove funzioni e le operazioni di aggiunta al controllo del codice sorgente funzionano come nelle versioni precedenti di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

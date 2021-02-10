@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7b89588e778a142e7dd49e1a3051a9aa188ff1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 0cef610da1bcbfe7cb9c6c7ab5a806b74e07e177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959415"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gestire le proprietà di progetti e soluzioni
 
@@ -56,7 +56,7 @@ Per informazioni sulle proprietà di progetto C++, vedere [Utilizzo di propriet�
 
 Per accedere alle proprietà della soluzione, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Proprietà**. Nella finestra di dialogo è possibile impostare le configurazioni di progetto per le compilazioni di **debug** o di **rilascio** , scegliere i progetti che devono essere il progetto di avvio quando si preme **F5** e impostare le opzioni di analisi del codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 - [Gestire le proprietà di progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

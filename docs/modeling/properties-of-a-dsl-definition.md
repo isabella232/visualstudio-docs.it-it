@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48771a61577c5c7ca910cc3b4f8496db37ada281
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ef8f49e46c554efca89862c787fbfbe97c48c8f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959116"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 Le proprietà di DslDefinition definiscono le proprietà della definizione del *linguaggio specifico di dominio* , ad esempio la numerazione delle versioni. Le proprietà di DslDefinition vengono visualizzate nella finestra **Proprietà** quando si fa clic su un'area aperta del diagramma nel *finestra di progettazione Domain-Specific Language*.
@@ -36,7 +36,7 @@ Le proprietà di DslDefinition definiscono le proprietà della definizione del *
 |Spazio dei nomi del pacchetto|Spazio dei nomi per il pacchetto Visual Studio generato per questo linguaggio DSL.|\<none>|
 |Nome prodotto|Nome del prodotto che verrà registrato per il pacchetto Visual Studio generato per il linguaggio DSL.|\<none>|
 |Note|Note associate a questa classe di dominio.|\<none>|
-|Description|Descrizione per questa classe di dominio.|\<none>|
+|Descrizione|Descrizione per questa classe di dominio.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa classe di dominio.|\<none>|
 |Parola chiave della Guida|Parola chiave della Guida associata a questa classe di dominio.|\<none>|
 |Compilazione|Numero di build incrementale per la definizione del linguaggio specifico di dominio.|0|

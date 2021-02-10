@@ -26,15 +26,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 24a4318400f808c57c041e09877e5aef9a2c3c36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958713"
 ---
 # <a name="program-document-level-customizations"></a>Programma personalizzazioni a livello di documento
   Quando si estende Microsoft Office Word o Microsoft Office Excel usando una personalizzazione a livello di documento è possibile eseguire le attività seguenti:
@@ -136,7 +136,7 @@ Globals.ThisDocument.Save();
 
 - Aggiungere controlli host o controlli Windows Form alla superficie del documento.
 
-   Per altre informazioni, vedere automatizzare [Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md), [automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)e [Windows Forms controlli nei documenti di Office Panoramica](../vsto/windows-forms-controls-on-office-documents-overview.md).
+   Per altre informazioni, vedere automatizzare [Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md), [automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)e [Windows Form controlli nei documenti di Office Panoramica](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 - Aggiungere un riquadro Azioni al documento.
 
@@ -169,7 +169,7 @@ Globals.ThisDocument.Save();
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>Usare i metodi GetVstoObject e HasVstoObject
  Per chiamare il `HasVstoObject` `GetVstoObject` metodo e, usare il `Globals.Factory.GetVstoObject` `Globals.Factory.HasVstoObject` metodo o e passare l'oggetto nativo di Word o di Excel (ad esempio <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Worksheet> ) che si desidera testare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
 - [Combinare VBA e personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Gestire i documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

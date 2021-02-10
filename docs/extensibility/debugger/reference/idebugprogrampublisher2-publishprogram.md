@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20de162bdc3be2cc4771c9746b13c40a1e140a96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d13154f172fdd92ea4a3d4c96321e884516a74c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959558"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Questo metodo rende disponibile un programma per i motori di debug (DEs) e gestione debug della sessione.
@@ -28,18 +28,18 @@ Questo metodo rende disponibile un programma per i motori di debug (DEs) e gesti
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT PublishProgram(
-   CONST_GUID_ARRAY Engines,
-   LPCOLESTR        szFriendlyName,
-   IUnknown*        pDebuggeeInterface
+HRESULT PublishProgram(
+   CONST_GUID_ARRAY Engines,
+   LPCOLESTR        szFriendlyName,
+   IUnknown*        pDebuggeeInterface
 );
 ```
 
 ```csharp
-int PublishProgram(
-   CONST_GUID_ARRAY Engines,
-   string           szFriendlyName,
-   object           pDebuggeeInterface
+int PublishProgram(
+   CONST_GUID_ARRAY Engines,
+   string           szFriendlyName,
+   object           pDebuggeeInterface
 );
 ```
 
@@ -56,9 +56,9 @@ in Nome descrittivo per il programma (visualizzato in menu o finestre di dialogo
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per rendere un programma non più disponibile per il debug, chiamare [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

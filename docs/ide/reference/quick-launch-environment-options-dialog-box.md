@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: f1889b20f96e051867d470bc96df36b7018abdc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958206"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 
@@ -38,13 +38,13 @@ I risultati delle ricerche effettuate in Avvio veloce vengono visualizzati in qu
 
 |Category|Tasto di scelta rapida|Descrizione metodo rapido|
 |--------------|--------------| - |
-|Usati di recente|@mru<br /><br /> ad esempio, `@mru font`|Visualizza fino a cinque elementi **Usati di recente**.|
-|Menu|@menu<br /><br /> ad esempio, `@menu project`|Limita la ricerca alle voci di menu.|
-|Opzioni|@opt<br /><br /> ad esempio, `@opt font`|Limita la ricerca alle impostazioni nella finestra di dialogo **Opzioni**.|
-|Documenti|@doc<br /><br /> ad esempio, `@doc program.cs`|Limita la ricerca ai percorsi e ai nomi di file dei documenti aperti per i criteri di ricerca, ma non esegue la ricerca nel testo all'interno dei file.|
+|Usati di recente|@mru<br /><br /> Ad esempio: `@mru font`|Visualizza fino a cinque elementi **Usati di recente**.|
+|Menu|@menu<br /><br /> Ad esempio: `@menu project`|Limita la ricerca alle voci di menu.|
+|Opzioni|@opt<br /><br /> Ad esempio: `@opt font`|Limita la ricerca alle impostazioni nella finestra di dialogo **Opzioni**.|
+|Documenti|@doc<br /><br /> Ad esempio: `@doc program.cs`|Limita la ricerca ai percorsi e ai nomi di file dei documenti aperti per i criteri di ricerca, ma non esegue la ricerca nel testo all'interno dei file.|
 
 > [!NOTE]
-> È possibile modificare i tasti di scelta rapida **General** nella  >  pagina **tastiera** generale della finestra di dialogo **Opzioni** .
+> È possibile modificare i tasti di scelta rapida nella  >  pagina **tastiera** generale della finestra di dialogo **Opzioni** .
 
 ## <a name="show-previous-results"></a>Visualizzare i risultati precedenti
 

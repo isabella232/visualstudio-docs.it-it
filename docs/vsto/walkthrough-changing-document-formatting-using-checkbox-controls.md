@@ -1,6 +1,6 @@
 ---
 title: Modificare la formattazione del documento utilizzando i controlli CheckBox
-description: Informazioni su come usare i controlli Windows Forms in una personalizzazione a livello di documento per Microsoft Word per modificare la formattazione del testo.
+description: Informazioni su come usare i controlli Windows Form in una personalizzazione a livello di documento per Microsoft Word per modificare la formattazione del testo.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,18 +15,18 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958661"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: modificare la formattazione del documento utilizzando i controlli CheckBox
-  Questa procedura dettagliata illustra come usare i controlli Windows Forms in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.
+  Questa procedura dettagliata illustra come usare i controlli Windows Form in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
@@ -69,28 +69,28 @@ ms.locfileid: "97527252"
 
 3. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**applyBoldFont**|
-    |**Testo**|**Grassetto**|
+    |**Text**|**Grassetto**|
 
 4. Premere **invio** per spostare il punto di inserimento sotto la prima casella di controllo.
 
 5. Aggiungere una seconda casella di controllo al documento sotto la `ApplyBoldFont` casella di controllo e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**applyItalicFont**|
-    |**Testo**|**Corsivo**|
+    |**Text**|**Corsivo**|
 
 6. Premere **invio** per spostare il punto di inserimento sotto la seconda casella di controllo.
 
 7. Aggiungere una terza casella di controllo al documento sotto la `ApplyItalicFont` casella di controllo e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**applyUnderlineFont**|
-    |**Testo**|**Sottolineato**|
+    |**Text**|**Sottolineato**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>Aggiungere testo e un controllo segnalibro
 
@@ -140,7 +140,7 @@ ms.locfileid: "97527252"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  È ora possibile testare il documento per verificare che il testo sia formattato correttamente quando si seleziona o deseleziona una casella di controllo.
 
 ### <a name="test-your-document"></a>Testare il documento
@@ -158,8 +158,8 @@ ms.locfileid: "97527252"
 
 - Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [procedura dettagliata: aggiornare un grafico in un documento usando i pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
 - [Procedure dettagliate e esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)
-- [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
