@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b60c09b21d531326e343dddd2f1cc69cfb0e5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933310"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Invia la notifica di eventi di debug.
@@ -28,7 +28,7 @@ Invia la notifica di eventi di debug.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Event( 
+HRESULT Event( 
    IDebugEngine2*  pEngine,
    IDebugProcess2* pProcess,
    IDebugProgram2* pProgram,
@@ -40,7 +40,7 @@ HRESULT Event( 
 ```
 
 ```csharp
-int Event( 
+int Event( 
    IDebugEngine2  pEngine,
    IDebugProcess2 pProcess,
    IDebugProgram2 pProgram,
@@ -76,12 +76,12 @@ in Combinazione di flag dell'enumerazione [EVENTATTRIBUTES](../../../extensibili
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Quando si chiama questo metodo, il `dwAttrib` parametro deve corrispondere al valore restituito dal metodo [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) come chiamato sull'oggetto evento passato nel `pEvent` parametro.
 
  Tutti gli eventi di debug vengono inviati in modo asincrono, indipendentemente dal fatto che un evento sia o meno asincrono. Quando un DE chiama questo metodo, il valore restituito non indica se l'evento è stato elaborato, solo se l'evento è stato ricevuto. In realtà, nella maggior parte dei casi, l'evento non è stato elaborato quando il metodo restituisce.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

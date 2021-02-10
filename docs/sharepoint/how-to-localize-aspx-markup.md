@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 1876e06348d60f8a960b352525fd72ad06795101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931734"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Procedura: localizzare il markup ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] le pagine (aspx) utilizzano in genere valori stringa hardcoded. Per localizzare queste stringhe, sostituirle con espressioni che fanno riferimento a risorse localizzate.
@@ -62,7 +62,7 @@ ms.locfileid: "96304658"
     </asp:Content>
     ```
 
-     to
+     in
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -76,7 +76,7 @@ ms.locfileid: "96304658"
 
      Le stringhe localizzate vengono visualizzate nell'applicazione. Per visualizzare le risorse localizzate, è necessario che nel server SharePoint sia installato un Language Pack corrispondente alle impostazioni cultura del file di risorse.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Localizzare le soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
 - [Procedura: localizzare una funzionalità](../sharepoint/how-to-localize-a-feature.md)
 - [Procedura: aggiungere un file di risorse](../sharepoint/how-to-add-a-resource-file.md)

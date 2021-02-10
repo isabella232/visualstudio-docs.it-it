@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0458495920b603ebbfc2befb733bd8618cea5310
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932345"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Finestra di dialogo Opzioni: text editor \> JavaScript/typescript \>
 
-Usare la pagina **Linting** della finestra di dialogo **Opzioni** per impostare le opzioni per l'analisi del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**, quindi espandere **Text Editor**  >  **JavaScript/typescript**  >  **Linting**.
+Usare la pagina **Linting** della finestra di dialogo **Opzioni** per impostare le opzioni per l'analisi del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**, quindi espandere **Text Editor**  >  **JavaScript/typescript**  >  .
 
 ## <a name="eslint-settings"></a>Impostazioni ESLint
 
@@ -41,6 +41,6 @@ Queste opzioni permettono di abilitare l'analisi codice JavaScript e TypeScript 
 
 Questa opzione consente di copiare il percorso del file di configurazione globale di ESLint. Inoltre, se il percorso è stato modificato in precedenza, è possibile reimpostare la posizione predefinita del file.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

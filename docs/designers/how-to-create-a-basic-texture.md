@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb4a0a66855351e9edbb1b06dbf2aee452cd150
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2ac90077831d852ba0361c46186d18fe39cf9e81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931071"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
 
@@ -39,7 +39,7 @@ La procedura seguente illustra come creare una trama che rappresenta una destina
 
 ![Destinazione "Bullseye" con trasparenza visualizzata in verde](../designers/media/digit-bullseye-texture-in-editor.png)
 
-Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà** . Usare la finestra **Proprietà** per impostare la dimensione dell'immagine, modificare le proprietà dello strumento e specificare i colori mentre si lavora.
+Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. Usare la finestra **Proprietà** per impostare la dimensione dell'immagine, modificare le proprietà dello strumento e specificare i colori mentre si lavora.
 
 ### <a name="create-a-bullseye-target-texture"></a>Creare una trama di destinazione "bersaglio"
 
@@ -47,24 +47,24 @@ Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà** .
 
 2. Impostare le dimensioni dell'immagine su 512 x 512 pixel. Nella finestra **Proprietà** impostare il valore delle proprietà **Larghezza** e **Altezza** su `512`.
 
-3. Nella barra degli strumenti scegliere lo strumento **Riempimento** . Nella finestra **Proprietà** vengono visualizzate le proprietà dello strumento **Riempimento** insieme alle proprietà dell'immagine.
+3. Nella barra degli strumenti scegliere lo strumento **Riempimento**. Nella finestra **Proprietà** vengono visualizzate le proprietà dello strumento **Riempimento** insieme alle proprietà dell'immagine.
 
-4. Impostare il colore di primo piano su un nero completamente trasparente. Nella finestra **Proprietà** , nel gruppo di proprietà **Colori** , selezionare **Primo piano** . Impostare i valori delle proprietà **R** , **G** , **B** e **A** accanto alla selezione colori su `0`.
+4. Impostare il colore di primo piano su un nero completamente trasparente. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Primo piano**. Impostare i valori delle proprietà **R**, **G**, **B** e **A** accanto alla selezione colori su `0`.
 
 5. Sulla barra degli strumenti dell'editor di immagini scegliere lo strumento **riempimento** , quindi tenere premuto il tasto **MAIUSC** e scegliere qualsiasi punto nell'immagine. L'utilizzo del tasto **MAIUSC** fa sì che il valore alfa del colore di riempimento sostituisca il colore nell'immagine; in caso contrario, il valore alfa viene utilizzato per sfumare il colore di riempimento insieme al colore nell'immagine.
 
     > [!IMPORTANT]
     > Questo passaggio, insieme alla selezione del colore nel passaggio precedente, assicura che l'immagine di base sia preparata per la trama di destinazione "bullseye" che si intende disegnare. Poiché l'immagine viene riempita con un nero trasparente e il bordo della destinazione è nero, non saranno presenti artefatti di aliasing intorno alla destinazione.
 
-6. Nella barra degli strumenti scegliere lo strumento **Ellissi** .
+6. Nella barra degli strumenti scegliere lo strumento **Ellissi**.
 
-7. Impostare il colore di primo piano su un nero completamente opaco. Impostare i valori delle proprietà **R** , **G** e **B** su `0` e il valore della proprietà **A** su `255`.
+7. Impostare il colore di primo piano su un nero completamente opaco. Impostare i valori delle proprietà **R**, **G** e **B** su `0` e il valore della proprietà **A** su `255`.
 
-8. Impostare il colore di sfondo su un bianco completamente opaco. Nella finestra **Proprietà** , nel gruppo di proprietà **Colori** , selezionare **Sfondo** . Impostare i valori delle proprietà **R** , **G** , **B** e **A** su `255`.
+8. Impostare il colore di sfondo su un bianco completamente opaco. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Sfondo**. Impostare i valori delle proprietà **R**, **G**, **B** e **A** su `255`.
 
-9. Impostare la larghezza del contorno dell'ellisse. Nella finestra **Proprietà** , nel gruppo di proprietà **Aspetto** , impostare il valore della proprietà **Larghezza** su `8`.
+9. Impostare la larghezza del contorno dell'ellisse. Nella finestra **Proprietà**, nel gruppo di proprietà **Aspetto**, impostare il valore della proprietà **Larghezza** su `8`.
 
-10. Assicurarsi che l'antialiasing sia abilitato. Nella finestra **Proprietà** , nel gruppo di proprietà **Aspetto** , assicurarsi che la proprietà **Anti-alias** sia impostata.
+10. Assicurarsi che l'antialiasing sia abilitato. Nella finestra **Proprietà**, nel gruppo di proprietà **Aspetto**, assicurarsi che la proprietà **Anti-alias** sia impostata.
 
 11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per creare il cerchio in modo più semplice, è possibile premere e tenere premuto il tasto **MAIUSC** mentre si estrae.
 
@@ -75,7 +75,7 @@ Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà** .
 
 13. Disegnare un altro cerchio dalla coordinata in pixel `(64, 64)` alla coordinata in pixel `(448, 448)`.
 
-14. Impostare di nuovo il colore di sfondo su un bianco completamente opaco. Impostare **R** , **G** , **B** e **A** su `255`.
+14. Impostare di nuovo il colore di sfondo su un bianco completamente opaco. Impostare **R**, **G**, **B** e **A** su `255`.
 
 15. Disegnare un altro cerchio dalla coordinata in pixel `(128, 128)` alla coordinata in pixel `(384, 384)`.
 
@@ -89,6 +89,6 @@ La trama di destinazione "bullseye" è completa. Di seguito è riportata l'immag
 
 Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [procedura: creare e modificare i livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Editor di immagini](../designers/image-editor.md)

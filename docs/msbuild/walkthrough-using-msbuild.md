@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 3b214452a2eb7a85b4a9baea5e4b4e80a1a71e63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933856"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 
@@ -631,7 +631,7 @@ Si noti che i metadati espressi in questa sintassi non causano la divisione in b
 
  Per informazioni su come creare un file di progetto semplice un passaggio alla volta, provare a eseguire la [procedura dettagliata: creazione di un file di progetto MSBuild da zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica di MSBuild](../msbuild/msbuild.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

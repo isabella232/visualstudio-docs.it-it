@@ -35,15 +35,15 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c58ad4dee128f7b2d0dcd91edb7b19c7f8f5a474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933622"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Cenni preliminari sugli elementi e sui controlli host
   Gli elementi e i controlli host sono tipi che consentono di fornire il modello di programmazione per le soluzioni Office create tramite gli strumenti di sviluppo di Office in Visual Studio. Rendono l'interazione con i modelli a oggetti di Microsoft Office Word e Microsoft Office Excel, basati su COM, analoga all'interazione con gli oggetti gestiti, ad esempio i controlli Windows Form.
@@ -108,11 +108,11 @@ ms.locfileid: "96845570"
 
   I controlli host aggiunti ai documenti di Office si comportano come gli oggetti nativi di Office, ma dispongono di funzionalità aggiuntive che includono eventi e funzionalità di data binding. Ad esempio, per acquisire gli eventi di un oggetto <xref:Microsoft.Office.Interop.Excel.Range> nativo in Excel, è necessario per prima cosa gestire l'evento di modifica del foglio di lavoro. Quindi, è necessario determinare se la modifica è avvenuta all'interno di <xref:Microsoft.Office.Interop.Excel.Range>. Il controllo host <xref:Microsoft.Office.Tools.Excel.NamedRange> contiene invece un evento <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> che è possibile gestire direttamente.
 
-  La relazione tra un elemento host e i controlli host è simile alla relazione tra un Windows Form e controlli Windows Forms. Posizionare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> esattamente come si posiziona un controllo casella di testo in un oggetto Windows Form. L'illustrazione seguente mostra la relazione tra elementi host e controlli host.
+  La relazione tra un elemento host e i controlli host è simile alla relazione tra un Windows Form e controlli Windows Form. Posizionare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> esattamente come si posiziona un controllo casella di testo in un oggetto Windows Form. L'illustrazione seguente mostra la relazione tra elementi host e controlli host.
 
   ![Relazione tra elementi e controlli host](../vsto/media/hostitemscontrols.png "Relazione tra elementi e controlli host")
 
-  È anche possibile usare i controlli Windows Form nelle soluzioni Office aggiungendoli direttamente nell'area del documento di Word ed Excel. Per ulteriori informazioni, vedere [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
+  È anche possibile usare i controlli Windows Form nelle soluzioni Office aggiungendoli direttamente nell'area del documento di Word ed Excel. Per ulteriori informazioni, vedere [Windows Form Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 > [!NOTE]
 > L'aggiunta di controlli host o di controlli Windows Form a un documento secondario di Word non è supportata.

@@ -9,13 +9,13 @@ f1_keywords:
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: a02a2a133031661ecbf9c3719f3b1993f3b20b5b
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: d3451a2a8d64edbf0f9000c9e58387704ed815ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932268"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opzioni, Editor di testo, XML, Varie
 
@@ -57,7 +57,7 @@ Attiva la modalità struttura quando viene aperto un file. Questa casella di con
 
 Specifica il percorso della cache degli schemi. Il pulsante **Sfoglia** consente di aprire la posizione corrente della cache dello schema in una nuova finestra. Il percorso predefinito è *%VsInstallDir%\xml\Schemas*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni XML - Formattazione](options-text-editor-xml-formatting.md)
 - [Strumenti XML in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

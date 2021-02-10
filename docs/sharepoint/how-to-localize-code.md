@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e76b8cfb2e9fcb513905918bd4ae87524078f6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931643"
 ---
 # <a name="how-to-localize-code"></a>Procedura: localizzare il codice
   Il codice non localizzato utilizza valori di stringa hardcoded. Per localizzare le stringhe di codice, sostituirle con chiamate a <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> , che è un metodo che fa riferimento a risorse localizzate.
@@ -70,7 +70,7 @@ ms.locfileid: "96304589"
 
      Le stringhe localizzate vengono visualizzate nell'applicazione. Per visualizzare le risorse localizzate, è necessario che nel server SharePoint sia installato un Language Pack corrispondente alle impostazioni cultura del file di risorse.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Localizzare le soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
 - [Procedura: localizzare una funzionalità](../sharepoint/how-to-localize-a-feature.md)
 - [Procedura: localizzare il markup ASPX](../sharepoint/how-to-localize-aspx-markup.md)

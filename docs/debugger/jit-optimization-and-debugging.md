@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931084"
 ---
 # <a name="jit-optimization-and-debugging"></a>Debug e ottimizzazione JIT
 Se si sta provando a eseguire il debug del codice, è più facile quando il codice **non** è ottimizzato. Quando il codice viene ottimizzato, il compilatore e il runtime apportano modifiche al codice della CPU creato in modo che venga eseguito più velocemente, ma con un mapping meno diretto al codice sorgente originale. Se il mapping è meno diretto, spesso i debugger non sono in grado di indicare il valore delle variabili locali e l'esecuzione del codice e i punti di interruzione potrebbero non funzionare come previsto.
@@ -67,7 +67,7 @@ Ci sono due situazioni in cui l'attivazione di questa opzione **non** funziona:
 
     ![Imposta COMPlus_ReadyToRun variabile di ambiente](../debugger/media/environment-variables-debug-menu.png "Imposta COMPlus_ReadyToRun variabile di ambiente")
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Come eseguire il debug dell'origine DotNet Framework](../debugger/how-to-debug-dotnet-framework-source.md)
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)

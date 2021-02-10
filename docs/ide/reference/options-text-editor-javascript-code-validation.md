@@ -9,15 +9,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3335f4bc5d59b7b4aab3e7341d9f1574d095eeb
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0dc6fbde896a2f043040c93710ca48bc95193127
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932553"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Finestra di dialogo Opzioni: \> convalida codice JavaScript/typescript editor di testo \>
 
@@ -41,6 +41,6 @@ Se impostata su **True**, l'editor di codice JavaScript visualizza gli errori pe
 
 Se impostata su **True**, gli errori JavaScript vengono visualizzati come avvisi, anziché come errori nell'**Elenco errori**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [IntelliSense per JavaScript](../../ide/javascript-intellisense.md)

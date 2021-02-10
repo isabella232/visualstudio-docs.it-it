@@ -9,13 +9,13 @@ f1_keywords:
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 9aac9420d084c64a4bd5d9199f6a7ca96b8c4281
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: b5e3674c955b229c4c517db5d1dab3d36830da5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932319"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opzioni, Editor di testo, XML, Formattazione
 
@@ -66,7 +66,7 @@ Se un elemento contiene testo e markup, il contenuto viene considerato misto. Di
 </dir>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni, XML, Varie](options-text-editor-xml-miscellaneous.md)
 - [Strumenti XML in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

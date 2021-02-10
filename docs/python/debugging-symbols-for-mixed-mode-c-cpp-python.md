@@ -5,22 +5,22 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4a735c374216b1810b3abd99ffab89000cec8b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eb7535430248f519654c09924541a6900336cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933089"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installare i simboli di debug per interpreti Python
 
 Per offrire un'esperienza di debug completa, il [debugger in modalità mista di Python](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) in Visual Studio ha bisogno dei simboli di debug per l'interprete Python in uso per analizzare numerose strutture dei dati interne. Per *python27.dll*, ad esempio, il file di simboli corrispondente è *python27. pdb*; per *python36.dll*, il file di simboli è *python36. pdb*. Per ogni versione dell'interprete sono disponibili anche i file di simboli per un'ampia gamma di moduli.
 
-Con Visual Studio 2017 e versioni successive gli interpreti Python 3 e Anaconda 3 installano automaticamente i rispettivi simboli, che Visual Studio trova automaticamente. Per Visual Studio 2015 e versioni precedenti o quando si usano altri interpreti, è necessario scaricare i simboli separatamente e quindi puntare Visual Studio tramite la **Tools**  >  finestra di dialogo**Opzioni** strumenti della scheda **debug**  >  **simboli** . Questi passaggi sono descritti in dettaglio nelle sezioni seguenti.
+Con Visual Studio 2017 e versioni successive gli interpreti Python 3 e Anaconda 3 installano automaticamente i rispettivi simboli, che Visual Studio trova automaticamente. Per Visual Studio 2015 e versioni precedenti o quando si usano altri interpreti, è necessario scaricare i simboli separatamente e quindi puntare Visual Studio tramite la   >  finestra di dialogo **Opzioni** strumenti della scheda **debug**  >  **simboli** . Questi passaggi sono descritti in dettaglio nelle sezioni seguenti.
 
 È possibile che Visual Studio richieda i simboli se sono necessari, di solito quando avvia una sessione di debug in modalità mista. In questo caso, viene visualizzata una finestra di dialogo con due opzioni:
 

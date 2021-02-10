@@ -15,19 +15,19 @@ f1_keywords:
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a127263bc9bf94997585d07bff1b8d317b282e91
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 27b2c5765f041252e62defd15a3c7b6d7b460b43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932462"
 ---
 # <a name="options-dialog-box-text-editor--javascript--formatting"></a>Finestra di dialogo Opzioni: \> formattazione JavaScript editor di testo \>
 
-Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**e quindi espandere **editor di testo**  >  **JavaScript/typescript**  >  **Formatting**.
+Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere **editor di testo**  >  **JavaScript/typescript**  >  **Formatting**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -71,6 +71,6 @@ Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella 
 |**Inserisci uno spazio dopo la parola chiave function per funzioni anonime**|Quando questa opzione è selezionata, l'editor di codice aggiunge uno spazio dopo la parola chiave `function` per le funzioni anonime.|
 |**Inserisci uno spazio dopo le parentesi di apertura e di chiusura non vuote**|Quando questa opzione è selezionata, l'editor di codice aggiunge uno spazio dopo la parentesi di apertura e prima della parentesi di chiusura se sono presenti caratteri non vuoti all'interno delle parentesi.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

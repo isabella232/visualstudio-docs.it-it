@@ -8,15 +8,15 @@ helpviewer_keywords:
 - coded UI tests
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aeaa2231c62487ec366aa561ea199cf63f3c6792
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65b55c79dd39b5e8393d22542a2334d84b191293
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933076"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
 
@@ -268,7 +268,7 @@ Esiste un file XML che rappresenta la struttura della registrazione del test cod
 
 Il file *UIMap.uitest* non è modificabile direttamente. È però possibile usare il Generatore di test codificati dell'interfaccia utente per modificare il test, che modifica automaticamente il file *UIMap.uitest* e il file [*UIMap.Designer.cs*](#UIMapDesignerFile).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933609"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Linee guida per la creazione di aree del modulo di Outlook
   Le informazioni seguenti consentono di ottimizzare le aree del modulo ed evitare potenziali problemi:
@@ -86,7 +86,7 @@ ms.locfileid: "96848092"
 
   L'icona **Pagina** viene visualizzata nella barra multifunzione di un controllo per gli elementi con aree del modulo separate, di sostituzione o di sostituzione completa.
 
-  L'icona della **finestra** viene visualizzata nell'area di notifica e nella finestra di dialogo della **Alt** + **scheda** ALT per gli elementi aperti che visualizzano aree del modulo di sostituzione o di sostituzione.
+  L'icona della **finestra** viene visualizzata nell'area di notifica e nella finestra di dialogo della  + **scheda** ALT per gli elementi aperti che visualizzano aree del modulo di sostituzione o di sostituzione.
 
 ## <a name="see-also"></a>Vedi anche
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)

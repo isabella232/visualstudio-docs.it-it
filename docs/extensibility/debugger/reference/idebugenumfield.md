@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7885f36a113809e81279498a769e257af4f1cde2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a67c660ec8457191e688fdd430c3f7a07b5d75c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933323"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 Questa interfaccia rappresenta un tipo di enumerazione.
@@ -44,7 +44,7 @@ IDebugEnumField : IDebugContainerField
 |[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Restituisce il valore associato al nome della costante di enumerazione specificata.|
 |[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Restituisce il valore associato al nome della costante di enumerazione specificato ma ignorando la distinzione tra maiuscole e minuscole.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Si tratta del simbolo sottostante che è effettivamente associato a una posizione con [Binding](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
 ## <a name="requirements"></a>Requisiti
@@ -54,8 +54,8 @@ IDebugEnumField : IDebugContainerField
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-- [Associazione](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [Associare](../../../extensibility/debugger/reference/idebugbinder-bind.md)

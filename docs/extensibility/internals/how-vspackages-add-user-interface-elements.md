@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934123"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente
 Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente (UI), ad esempio menu, barre degli strumenti e finestre degli strumenti, a Visual Studio tramite il file con *estensione vsct* .
@@ -187,7 +187,7 @@ Le regole seguenti determinano il modo in cui un elemento può chiamare un altro
 
 |Elemento|Definito in questa sezione della tabella dei comandi|Può essere contenuto (come un elemento padre o in base alla posizione nella `CommandPlacements` sezione o entrambi)|Può contenere (definito come padre)|
 |-------------| - | - | - |
-|Gruppo|[Elemento groups](../../extensibility/groups-element.md), IDE, other VSPackage|Un menu, un gruppo, l'elemento stesso|Menu, gruppi e comandi|
+|Group|[Elemento groups](../../extensibility/groups-element.md), IDE, other VSPackage|Un menu, un gruppo, l'elemento stesso|Menu, gruppi e comandi|
 |Menu|[Elemento menu](../../extensibility/menus-element.md), IDE, altri VSPackage|da 1 a *n* gruppi|da 0 a *n* gruppi|
 |Barra degli strumenti|[Elemento menu](../../extensibility/menus-element.md), IDE, altri VSPackage|Elemento stesso|da 0 a *n* gruppi|
 |MenuItem|[Elemento Buttons](../../extensibility/buttons-element.md), IDE, other VSPackage|da 1 a *n* gruppi, l'elemento stesso|da-0 a *n* gruppi|

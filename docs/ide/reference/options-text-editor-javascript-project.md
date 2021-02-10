@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0b30aaec3087cece63e392cf7170ac85f6be0ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932332"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opzioni, Editor di testo, JavaScript, Progetto
 
-Usare la pagina **Progetto** della finestra di dialogo **Opzioni** per specificare le opzioni di progetto JavaScript e TypeScript nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**e quindi espandere **editor di testo**  >  **JavaScript/typescript**  >  **progetto**.
+Usare la pagina **Progetto** della finestra di dialogo **Opzioni** per specificare le opzioni di progetto JavaScript e TypeScript nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere **editor di testo**  >  **JavaScript/typescript**  >  **progetto**.
 
 ## <a name="project-analysis-options"></a>Opzioni di analisi progetti
 
@@ -69,6 +69,6 @@ Queste opzioni determinano il modo in cui l'editor gestisce i file TypeScript ch
 |**Framework React**|Quando questa opzione è selezionata, l'editor del codice genera un file con estensione *js*.|
 |**Mantenere**|Quando questa opzione è selezionata, l'editor del codice mantiene JSX come parte dell'output e genera un file con estensione *jsx*.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2ba7234ee0c5a4ab8096c020cb44345f17830540
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931214"
 ---
 # <a name="invokemethod-activity-designer"></a>ActivityDesigner InvokeMethod
 
@@ -35,7 +35,7 @@ Accedere all'ActivityDesigner **InvokeMethod** nella categoria **primitive** del
 
 Nella tabella seguente sono illustrate le <xref:System.Activities.Statements.InvokeMethod> proprietà e viene descritto come vengono utilizzate nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate in Progettazione flussi di lavoro area.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.InvokeMethod>. Il valore predefinito è InvokeMethod.<br /><br /> Sebbene <xref:System.Activities.Activity.DisplayName%2A> non sia strettamente obbligatorio, è preferibile utilizzarne uno.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Vero|Nome del metodo da richiamare quando viene eseguita l'attività. Il metodo chiamato deve essere dichiarato come **public**. Questa proprietà può essere modificata nell'area di progettazione ed è obbligatoria.|
@@ -45,7 +45,7 @@ Nella tabella seguente sono illustrate le <xref:System.Activities.Statements.Inv
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|Falso|Oggetto contenente il metodo da chiamare. È possibile modificare questa proprietà nell'area della finestra di progettazione.<br /><br /> È necessario impostare <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> o <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|Falso|Tipo di <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. È possibile modificare questa proprietà nell'area della finestra di progettazione. È necessario impostare questa proprietà solo se il metodo chiamato è statico.|
 
-Per passare i parametri come parametro **out** C# (ad esempio, `Method1(out myParam))` usare **OutArgument anziché InArgument** **OutArgument**
+Per passare i parametri come parametro **out** C# (ad esempio, `Method1(out myParam))` usare **OutArgument anziché InArgument** 
 
 Non è possibile richiamare metodi con argomenti denominati **TargetObject** o **result** usando l' <xref:System.Activities.Statements.InvokeMethod> attività. Il motivo di ciò è che l'attività <xref:System.Activities.Statements.InvokeMethod> registra <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> e <xref:System.Activities.Statements.InvokeMethod.Result%2A> in <xref:System.Activities.Activity.CacheMetadata%2A>.
 
@@ -61,7 +61,7 @@ L'eccezione risultante è di tipo <xref:System.Activities.InvalidWorkflowExcepti
 
 Questa restrizione non si applica a <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> e <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> . Non sono argomenti del flusso di lavoro e pertanto non sono registrati nella <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> raccolta dell' <xref:System.Activities.Statements.InvokeMethod> attività nel <xref:System.Activities.Activity.CacheMetadata%2A> metodo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)

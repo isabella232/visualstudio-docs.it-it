@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: a7e8ea6514f29b99975b9e291d6a09ed2a0ad54e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934012"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 ## <a name="animation-fundamentals"></a>Nozioni fondamentali sull'animazione
@@ -228,7 +228,7 @@ I casi in cui l'interfaccia utente viene visualizzata in modo improvviso, l'uten
 ##### <a name="animation-properties"></a>Proprietà animazione
 Il ritardo di tempo è in genere pari a zero secondi.
 
-##### <a name="examples"></a>Esempi
+##### <a name="examples"></a>Esempio
 - Finestre degli strumenti Nascondi automaticamente
 
 - Interfaccia utente dell'editor attivata da tastiera, ad esempio IntelliSense e guida ai parametri
@@ -253,7 +253,7 @@ Si tratta dell'animazione dell'interfaccia utente più comunemente consigliata. 
 
 - Stile di interpolazione: seno InOut
 
-##### <a name="examples"></a>Esempi
+##### <a name="examples"></a>Esempio
 
 - Finestre degli strumenti Nascondi automaticamente
 
@@ -279,7 +279,7 @@ Come transizione animata quando un elemento dell'interfaccia utente cambia color
 
 - Stile di interpolazione: seno InOut
 
-##### <a name="examples"></a>Esempi
+##### <a name="examples"></a>Esempio
 
 - Transizioni di stato della finestra del documento (attivo, ultimo attivo e inattivo)
 
@@ -303,7 +303,7 @@ Come transizione animata quando un elemento dell'interfaccia utente cambia dimen
 
 - Durata: 200 millisecondi autonomi, 100 millisecondi se usati come parte di una sequenza di animazione combinata
 
-##### <a name="examples"></a>Esempi
+##### <a name="examples"></a>Esempio
 
 - Espandere e comprimere il pannello Esplora architettura
 

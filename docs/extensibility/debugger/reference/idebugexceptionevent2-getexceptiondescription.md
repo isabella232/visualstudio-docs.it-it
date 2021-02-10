@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7a6ea64540eaeef5ec258bc54b118b3a0600584c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4454d9c77cad2050c260d0fbd86764b6bf703403
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933264"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 Ottiene una descrizione visualizzabile dell'eccezione.
@@ -28,13 +28,13 @@ Ottiene una descrizione visualizzabile dell'eccezione.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetExceptionDescription( 
+HRESULT GetExceptionDescription( 
    BSTR* pbstrDescription
 );
 ```
 
 ```csharp
-int GetExceptionDescription( 
+int GetExceptionDescription( 
    out string pbstrDescription
 );
 ```
@@ -46,8 +46,8 @@ out Restituisce una descrizione visualizzabile dell'eccezione.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La stringa restituita da questo metodo è in genere il nome dell'eccezione e viene visualizzata nella finestra **output** quando si verifica l'eccezione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

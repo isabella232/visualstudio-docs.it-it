@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06409d3b7e3d218fcf2b81dce7ea58d3202b7e21
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: db5a67031d48c55a4bd9c668335360897bcca62b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932189"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -43,7 +43,7 @@ devenv /Out FileName
 
   Obbligatorio. Percorso e nome del file per ricevere l'output quando si compila un eseguibile.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Se viene specificato un nome file inesistente, il file viene creato automaticamente. Se il file esiste già, i risultati vengono aggiunti al contenuto del file già esistente.
 
@@ -57,7 +57,7 @@ Questo esempio esegue `MySolution` e gli errori vengono scritti nel file `MyErro
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)

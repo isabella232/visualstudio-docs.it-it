@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2aad05751a1e8abe89caaf2c2f6627e01e4f825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737807"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931474"
 ---
 # <a name="bp_state"></a>BP_STATE
 Specifica l'esistenza di un punto di interruzione associato e specifica anche se è abilitato.
@@ -59,7 +59,7 @@ Specifica che il punto di interruzione è disabilitato.
 `BPS_ENABLED`\
 Specifica che il punto di interruzione è abilitato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Restituito dal metodo [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -69,6 +69,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

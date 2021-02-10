@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d712365cc296c54f0e5d1a58660df1051e2f20
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 4f3814eabb38e205acedd6bd2b00fd98901568c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931032"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con un gradiente basato sulla geometria
 
@@ -23,27 +23,27 @@ Questo articolo illustra come usare la finestra di progettazione shader e il lin
 
 ## <a name="create-a-geometry-based-gradient-shader"></a>Creare uno shader con sfumatura basata sulla geometria
 
-È possibile implementare uno shader basato sulla geometria incorporando la posizione del pixel nello shader. Nei linguaggi shader, oltre al colore e alla posizione sullo schermo 2D, un pixel contiene altre informazioni. Un pixel, noto in alcuni sistemi come *frammento* , è costituito da una raccolta di valori che descrivono l'area corrispondente a un pixel. Lo shader descritto in questo documento usa l'altezza di ciascun pixel di un oggetto 3D nello spazio globale per influire sul colore di output finale del frammento.
+È possibile implementare uno shader basato sulla geometria incorporando la posizione del pixel nello shader. Nei linguaggi shader, oltre al colore e alla posizione sullo schermo 2D, un pixel contiene altre informazioni. Un pixel, noto in alcuni sistemi come *frammento*, è costituito da una raccolta di valori che descrivono l'area corrispondente a un pixel. Lo shader descritto in questo documento usa l'altezza di ciascun pixel di un oggetto 3D nello spazio globale per influire sul colore di output finale del frammento.
 
-Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti** .
+Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
 1. Creare uno shader DGSL da usare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
-2. Scollegare il nodo **Colore punto** dal nodo **Colore finale** . Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti** . In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
+2. Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
 
-3. Aggiungere un nodo **Per** al grafico. Nella **casella degli strumenti** , in **Matematica** , selezionare **Per** e spostarlo nell'area di progettazione.
+3. Aggiungere un nodo **Per** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Per** e spostarlo nell'area di progettazione.
 
-4. Aggiungere un nodo **Mascheramento vettore** al grafico. Nella **casella degli strumenti** , in **Utilità** , selezionare **Mascheramento vettore** e spostarlo nell'area di progettazione.
+4. Aggiungere un nodo **Mascheramento vettore** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Mascheramento vettore** e spostarlo nell'area di progettazione.
 
-5. Specificare i valori di maschera per il nodo **Mascheramento vettore** . In modalità **Seleziona** selezionare il nodo **Mascheramento vettore** e nella finestra **Proprietà** impostare la proprietà **Verde / Y** su **True** . Impostare quindi le proprietà **Rosso / X** , **Blu / Z** e **Alfa / W** su **False** . In questo esempio, le proprietà **Rosso / X** , **Verde / Y** e **Blu / Z** corrispondono ai componenti x, y e z del nodo **Posizione globale** e **Alfa / W** non viene usato. Poiché solo **Verde / Y** è impostato su **True** , dopo il mascheramento del vettore di input rimane solo il componente y.
+5. Specificare i valori di maschera per il nodo **Mascheramento vettore**. In modalità **Seleziona** selezionare il nodo **Mascheramento vettore** e nella finestra **Proprietà** impostare la proprietà **Verde / Y** su **True**. Impostare quindi le proprietà **Rosso / X**, **Blu / Z** e **Alfa / W** su **False**. In questo esempio, le proprietà **Rosso / X**, **Verde / Y** e **Blu / Z** corrispondono ai componenti x, y e z del nodo **Posizione globale** e **Alfa / W** non viene usato. Poiché solo **Verde / Y** è impostato su **True**, dopo il mascheramento del vettore di input rimane solo il componente y.
 
-6. Aggiungere un nodo **Posizione globale** al grafico. Nella **casella degli strumenti** , in **Costanti** , selezionare **Posizione globale** e spostarlo nell'area di progettazione.
+6. Aggiungere un nodo **Posizione globale** al grafico. Nella **casella degli strumenti**, in **Costanti**, selezionare **Posizione globale** e spostarlo nell'area di progettazione.
 
-7. Mascherare la posizione del frammento nello spazio globale. In modalità **Seleziona** spostare il terminale **Output** del nodo **Posizione globale** nel terminale **Vettore** del nodo **Mascheramento vettore** . Questa connessione maschera la posizione del frammento in modo da ignorare i componenti x e z.
+7. Mascherare la posizione del frammento nello spazio globale. In modalità **Seleziona** spostare il terminale **Output** del nodo **Posizione globale** nel terminale **Vettore** del nodo **Mascheramento vettore**. Questa connessione maschera la posizione del frammento in modo da ignorare i componenti x e z.
 
-8. Moltiplicare la costante di colore RGB per la posizione mascherata nello spazio globale. Spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Y** del nodo **Per** e quindi spostare il terminale **Output** del nodo **Mascheramento vettore** nel terminale **X** del nodo **Per** . Tale connessione consente di ridimensionare il valore del colore in base all'altezza del pixel nello spazio globale.
+8. Moltiplicare la costante di colore RGB per la posizione mascherata nello spazio globale. Spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Y** del nodo **Per** e quindi spostare il terminale **Output** del nodo **Mascheramento vettore** nel terminale **X** del nodo **Per**. Tale connessione consente di ridimensionare il valore del colore in base all'altezza del pixel nello spazio globale.
 
-9. Collegare il valore del colore ridimensionato al colore finale. Spostare il terminale **Output** del nodo **Per** nel terminale **RGB** del nodo **Colore finale** .
+9. Collegare il valore del colore ridimensionato al colore finale. Spostare il terminale **Output** del nodo **Per** nel terminale **RGB** del nodo **Colore finale**.
 
 La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a una sfera.
 
@@ -60,7 +60,7 @@ La figura seguente illustra lo shader descritto in questo documento applicato al
 
 Per altre informazioni su come applicare uno shader a un modello 3D, vedere [procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)

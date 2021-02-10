@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbd53d56b21886e972b33c219367edd603cbf0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c09b81a6a3eb56734e7d3a95dc5d1a8d1717fba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933115"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 Il motore di debug (DE) Invia questa interfaccia a gestione debug sessione (SDM) quando viene generata un'eccezione nel programma attualmente in esecuzione.
@@ -51,10 +51,10 @@ IDebugExceptionEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Prima di inviare l'evento, il DE verifica se questo evento di eccezione è stato designato come un'eccezione first-chance o Second-Chance da una precedente chiamata a [seexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Se è stato designato come un'eccezione first-chance, l' `IDebugExceptionEvent2` evento viene inviato a SDM. In caso contrario, il DE fornisce all'applicazione la possibilità di gestire l'eccezione. Se non viene fornito alcun gestore eccezioni e se l'eccezione è stata designata come un'eccezione di seconda probabilità, l' `IDebugExceptionEvent2` evento viene inviato a SDM. In caso contrario, il DE riprende l'esecuzione del programma e il sistema operativo o il runtime gestisce l'eccezione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

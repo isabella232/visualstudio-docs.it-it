@@ -6,16 +6,16 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 24b106442456f8bfbd415c4559cba71e463418d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94531862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933791"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novità di MSBuild 16.0
 
@@ -33,7 +33,7 @@ Questo articolo descrive le funzionalità e le proprietà aggiornate in MSBuild 
 
 - Il valore di `VisualStudioVersion` per questa versione degli strumenti è "16.0".
 
-## <a name="change-waves"></a>Modificare le onde
+## <a name="change-waves"></a>Flussi di modifiche
 
 A partire da MSBuild 16,8, è possibile scegliere in modo selettivo se rifiutare esplicitamente determinate modifiche potenzialmente dannose in MSBuild. Vedere [Change Waves](change-waves.md).
 
@@ -41,6 +41,6 @@ A partire da MSBuild 16,8, è possibile scegliere in modo selettivo se rifiutare
 
 MSBuild (e Visual Studio) ora fanno riferimento a .NET Framework 4.7.2. Se si desidera usare nuove funzionalità dell'API MSBuild, è necessario aggiornare anche l'assembly, ma il codice esistente continua a funzionare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [MSBuild](../msbuild/msbuild.md)

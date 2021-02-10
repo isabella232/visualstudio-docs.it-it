@@ -9,15 +9,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5495f60e92a38c0c43a0751054d41dc4de6970
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 0ff787db88292ded90c8dbdce3c86637ba2bdbd4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932527"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opzioni, Editor di testo, HTML (Web Form), Varie
 
@@ -33,6 +33,6 @@ Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalit√
 
    Se questa casella di controllo √® selezionata, viene visualizzata la finestra completamento tag quando si digita il carattere di minore di ("<").
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

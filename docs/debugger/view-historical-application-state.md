@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933102"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Controllare gli stati precedenti delle app usando la funzionalità per tornare indietro di IntelliTrace in Visual Studio (Visual Studio Enterprise)
 
@@ -34,7 +34,7 @@ In questa esercitazione si apprenderà come:
 
 1. Aprire il progetto in Visual Studio Enterprise.
 
-1. Aprire **strumenti**  >  **Opzioni**  >  impostazioni**IntelliTrace** e selezionare l'opzione **eventi e snapshot IntelliTrace**.
+1. Aprire **strumenti**  >  **Opzioni**  >  impostazioni **IntelliTrace** e selezionare l'opzione **eventi e snapshot IntelliTrace**.
 
     A partire da Visual Studio 2017 Enterprise versione 15.9 Preview 2 questa opzione è **IntelliTrace snapshots (managed and native)** (Snapshot IntelliTrace (gestiti e nativi)).
 
@@ -95,9 +95,9 @@ In questa esercitazione si apprenderà come:
 
 In modalità solo eventi IntelliTrace consente di attivare il debug cronologico per passaggi e punti di interruzione del debugger. Tuttavia IntelliTrace acquisisce i dati nelle finestre **Variabili locali** e **Auto** solo se le finestre sono aperte e acquisisce solo i dati che appaiono espansi nella visualizzazione. In modalità solo eventi spesso non si ha una visione completa delle variabili e degli oggetti complessi. Inoltre, la valutazione delle espressioni e la visualizzazione dei dati nella finestra **Espressioni di controllo** non sono supportate.
 
-Nella modalità eventi e snapshot IntelliTrace acquisisce l'intero snapshot del processo dell'applicazione, inclusi gli oggetti complessi. In corrispondenza di una riga di codice è possibile vedere le stesse informazioni che appaiono se ci si ferma in un punto di interruzione, a prescindere dal fatto che le informazioni siano state espanse in precedenza. Anche la valutazione dell'espressione è supportata durante la visualizzazione di uno snapshot.  
+Nella modalità eventi e snapshot IntelliTrace acquisisce l'intero snapshot del processo dell'applicazione, inclusi gli oggetti complessi. In corrispondenza di una riga di codice è possibile vedere le stesse informazioni che appaiono se ci si ferma in un punto di interruzione, a prescindere dal fatto che le informazioni siano state espanse in precedenza. Anche la valutazione dell'espressione è supportata durante la visualizzazione di uno snapshot.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual è l'impatto sulle prestazioni di questa funzionalità? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual è l'impatto sulle prestazioni di questa funzionalità? 
 
 L'impatto sulle prestazioni generali dell'esecuzione delle istruzioni dipende dall'applicazione. Il sovraccarico per l'acquisizione di uno snapshot è circa 30 ms. Quando viene acquisito uno snapshot, viene creata una copia con fork del processo e tale copia viene sospesa. Quando si visualizza uno snapshot, Visual Studio si connette alla copia creata con fork del processo. Per ogni snapshot, Visual Studio copia solo la tabella della pagina e imposta le pagine per la copia su scrittura. Se gli oggetti sull'heap cambiano tra i passaggi del debugger con snapshot associati, viene copiata la tabella della pagina corrispondente e il costo in termini di memoria è minimo. Se Visual Studio rileva che non vi è memoria sufficiente per creare uno snapshot, non ne acquisisce uno.
 

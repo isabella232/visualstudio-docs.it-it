@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6807ff64d8acf44551fa12fcb79199d3817373
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933024"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` viene implementato da un fornitore di porte per avvisare l'utente che la connessione al processo non è sicura.
@@ -34,7 +34,7 @@ IDebugProcessSecurity : IUnknown
 |[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Ottiene il nome utente dal fornitore della porta.|
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Avvisa un utente che la connessione al processo di debug non è sicura.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Implementare questa interfaccia per visualizzare un avviso e consentire all'utente di annullare se il processo a cui si sta effettuando il fissaggio può essere considerato non sicuro.
 
 ## <a name="requirements"></a>Requisiti
@@ -44,7 +44,7 @@ IDebugProcessSecurity : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Ports](../../../extensibility/debugger/ports.md)
 - [Fornitori di porte](../../../extensibility/debugger/port-suppliers.md)
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
