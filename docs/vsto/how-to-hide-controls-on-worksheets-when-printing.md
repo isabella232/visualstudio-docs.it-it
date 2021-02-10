@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: nascondere i controlli nei fogli di foglio durante la stampa'
-description: Informazioni sulla possibilità di nascondere i controlli durante la stampa di un foglio di lavoro di Excel Microsoft Office che contiene Windows Forms controlli.
+description: Informazioni sulla possibilità di nascondere i controlli durante la stampa di un foglio di lavoro di Excel Microsoft Office che contiene Windows Form controlli.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,18 +14,18 @@ helpviewer_keywords:
 - worksheets, hiding controls when printing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d87da5c22969fc355fe473e9505c61429b8023f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934806"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Procedura: nascondere i controlli nei fogli di foglio durante la stampa
-  Quando si stampa un Microsoft Office documento di Excel che contiene controlli Windows Forms, i controlli sono visibili nel foglio di lavoro stampato. È possibile nascondere i controlli quando si stampa un foglio di foglio.
+  Quando si stampa un Microsoft Office documento di Excel che contiene controlli Windows Form, i controlli sono visibili nel foglio di lavoro stampato. È possibile nascondere i controlli quando si stampa un foglio di foglio.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -45,6 +45,6 @@ ms.locfileid: "96846493"
 
 ## <a name="see-also"></a>Vedi anche
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
-- [Cenni preliminari sui controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Cenni preliminari sui controlli Windows Form nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Procedura: ridimensionare i controlli all'interno di celle del foglio di comando](../vsto/how-to-resize-controls-within-worksheet-cells.md)

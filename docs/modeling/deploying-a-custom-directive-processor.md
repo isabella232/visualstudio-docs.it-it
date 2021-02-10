@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dc839d4d859a8dd1dcc82774c466d6d103e4e7a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935339"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 
@@ -184,7 +184,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
    Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|Nome|Tipo|Dati|
+|Nome|Tipo|Data|
 |-|-|-|
 |Valore predefinito.|REG_SZ|(valore non impostato)|
 |Classe|REG_SZ|**\<Namespace Name>.\<Class Name>**|
@@ -192,7 +192,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
  Se l'assembly è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|Nome|Tipo|Dati|
+|Nome|Tipo|Data|
 |-|-|-|
 |Valore predefinito.|REG_SZ|(valore non impostato)|
 |Classe|REG_SZ|\<**Your Fully Qualified Class Name**>|

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a8f9809df0fa45021aab640bf3ff547efaa1576
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89c538d758b96ee8c5a5240189e6bd518ff2681c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934292"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 Restituisce il numero di vincoli associati a questo parametro generico.
@@ -81,5 +81,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

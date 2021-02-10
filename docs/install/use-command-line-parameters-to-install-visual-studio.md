@@ -12,17 +12,17 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7210a2834dda749cfe1d89b9093cd627b7c0ae1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5bea30b8a046be55ba49a1cc1dbf12e3093585f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935659"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usare i parametri della riga di comando per installare Visual Studio
 
@@ -253,7 +253,7 @@ Durante ogni operazione nella directory `%TEMP%` vengono generati diversi file d
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Esempi di parametri della riga di comando per l'installazione di Visual Studio](command-line-parameter-examples.md)
 - [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)

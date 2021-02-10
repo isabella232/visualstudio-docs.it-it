@@ -19,15 +19,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0260f939c8f6b7e5bed77ec42a4720adf0a4c720
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 5d046bfb0801229cd9f317ff2bcc8b715207ac2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934585"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errori e risoluzione dei problemi relativi al debug remoto
 
@@ -75,5 +75,5 @@ Si vuole eseguire il debugger remoto come amministratore in diversi scenari:
 
 **Non si desidera eseguire** come amministratore se si desidera avviare i processi e il processo che si desidera avviare **non** deve essere un amministratore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug remoto](../debugger/remote-debugging.md)

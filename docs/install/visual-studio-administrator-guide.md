@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935612"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guida di Visual Studio Administrator
 
@@ -40,11 +40,11 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
 * Definire le esigenze di manutenzione.
 
-  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***Opzioni di supporto per i clienti Enterprise e Professional** _ della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , nonché la pagina [Aggiorna Visual Studio in una pagina di base di manutenzione](update-servicing-baseline.md) .
+  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***Opzioni di supporto per clienti aziendali e professionisti*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , nonché la pagina [Aggiorna Visual Studio in una pagina di base di manutenzione](update-servicing-baseline.md) .
 
   Se si prevede di applicare gli aggiornamenti di manutenzione insieme agli aggiornamenti delle funzionalità cumulativi, è possibile scegliere gli elementi più recenti.
 
-_ Scegliere il modello di aggiornamento.
+* Scegliere il modello di aggiornamento.
 
   Decidere da dove i singoli computer client devono ottenere gli aggiornamenti. In particolare, decidere se procurarsi gli aggiornamenti da Internet o da una condivisione locale a livello aziendale. Se si sceglie di usare una condivisione locale, decidere se i singoli utenti possono aggiornare i propri client o se un amministratore si farà carico di aggiornare i client a livello di codice.
 
@@ -66,11 +66,11 @@ _ Scegliere il modello di aggiornamento.
 
 * Definire le esigenze di manutenzione.
 
-  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***supporto per le versioni precedenti di Visual Studio** _ della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , nonché l' [aggiornamento di Visual Studio in una](update-servicing-baseline.md) pagina di base di manutenzione.
+  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***supporto per le versioni precedenti di Visual Studio*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , nonché la pagina [Aggiorna Visual Studio in una pagina di base di manutenzione](update-servicing-baseline.md) .
 
   Se si prevede di applicare gli aggiornamenti di manutenzione insieme agli aggiornamenti delle funzionalità cumulativi, è possibile scegliere gli elementi più recenti.
 
-_ Scegliere il modello di aggiornamento.
+* Scegliere il modello di aggiornamento.
 
   Decidere da dove i singoli computer client devono ottenere gli aggiornamenti. In particolare, decidere se procurarsi gli aggiornamenti da Internet o da una condivisione locale a livello aziendale. Se si sceglie di usare una condivisione locale, decidere se i singoli utenti possono aggiornare i propri client o se un amministratore si farà carico di aggiornare i client a livello di codice.
 
@@ -182,7 +182,7 @@ Il registro di sistema si trova nella directory * Software\Microsoft\VisualStudi
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Esempi di parametri della riga di comando](command-line-parameter-examples.md)
 * [Installare i certificati necessari per l'installazione offline di Visual Studio](install-certificates-for-visual-studio-offline.md)

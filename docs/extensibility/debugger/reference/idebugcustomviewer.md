@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c44d2289180ece35725b9258e9d20abeb3a4cac3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ca1bb92f5db821b1d581f1a573032fea004fb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934318"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Questa interfaccia consente a un analizzatore di espressioni (EE) di visualizzare il valore di una proprietà in qualsiasi formato necessario.
@@ -41,7 +41,7 @@ Questa interfaccia implementa il metodo seguente:
 |------------|-----------------|
 |[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Esegue tutte le informazioni necessarie per visualizzare un determinato valore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa interfaccia viene utilizzata quando il valore di una proprietà non può essere visualizzato in modo normale, ad esempio con una tabella di dati o un altro tipo di proprietà complessa. Un visualizzatore personalizzato, come rappresentato dall' `IDebugCustomViewer` interfaccia, è diverso da un visualizzatore di tipi, ovvero un programma esterno per la visualizzazione di dati di un tipo specifico indipendentemente dall'EE. EE implementa un visualizzatore personalizzato specifico di EE. Un utente seleziona il tipo di visualizzatore da usare, ovvero un visualizzatore di tipi o un visualizzatore personalizzato. Per informazioni dettagliate su questo processo, vedere [visualizzazione e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
 Un visualizzatore personalizzato viene registrato allo stesso modo di EE e, pertanto, richiede un GUID del linguaggio e un GUID del fornitore. La metrica esatta (o il nome della voce del registro di sistema) è nota solo al EE. Questa metrica viene restituita nella struttura di [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) , che a sua volta viene restituita da una chiamata a [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). Il valore archiviato nella metrica è l'oggetto `CLSID` che viene passato alla funzione com `CoCreateInstance` (vedere l'esempio).
@@ -104,7 +104,7 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [Helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

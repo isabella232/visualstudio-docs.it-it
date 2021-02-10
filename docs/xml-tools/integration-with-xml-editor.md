@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9569e33f8f9f861bc5d89030c6fe38b0ab853a6f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9fe1bfcd422dbfc5f010ae7819e2fccbeafb8227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934624"
 ---
 # <a name="integration-with-xml-editor"></a>Integrazione con l'editor XML
 
@@ -33,6 +33,6 @@ A volte è utile visualizzare il codice nell'editor XML e la finestra di progett
 
 ![Screenshot di un progetto di Visual Studio che mostra il riquadro Progettazione viste, il riquadro Editor XML e il riquadro XML Schema Explorer.](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)

@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3dcbb1bdfd89ae13df5174b6502dc6e89437a468
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 41863ccc845b0f74c300e927708e238193f223ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934858"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
 
@@ -73,7 +73,7 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
      I test automatizzati vengono eseguiti e segnalano se sono stati superati o se hanno avuto esito negativo.
 
     > [!TIP]
-    > Per visualizzare **Esplora test**, scegliere **Test**  >  **finestre** di test, quindi scegliere **Esplora test**.
+    > Per visualizzare **Esplora test**, scegliere   >  **finestre** di test, quindi scegliere **Esplora test**.
 
 4. Scegliere il collegamento **Output** nei risultati di **Esplora test**.
 
@@ -89,7 +89,7 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
 
      ![File di log del test codificato dell'interfaccia utente](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Procedura: Eseguire test da Microsoft Visual Studio](/previous-versions/ms182470(v=vs.140))

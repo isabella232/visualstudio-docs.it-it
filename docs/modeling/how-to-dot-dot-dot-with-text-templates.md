@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c5b5e1f4e7488253112eb33905fe534be3591782
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934897"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 I modelli di testo in Visual Studio offrono un modo utile per generare testo di qualsiasi tipo. È possibile usare i modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare parte del codice del progetto. Questo argomento riepiloga le domande più frequenti su "Ricerca per categorie...?" domande.

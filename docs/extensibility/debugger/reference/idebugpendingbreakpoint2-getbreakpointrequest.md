@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: cb1e36aa-4302-455c-98fb-6638a1ef5c46
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5440db69a3ceb763fb3e64e07d04a1e4f67f822a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbe9f8e5e5f4b6d416b3179aadf25e89543cdba3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934266"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Ottiene la richiesta del punto di interruzione utilizzata per creare il punto di interruzione in sospeso.
@@ -29,13 +29,13 @@ Ottiene la richiesta del punto di interruzione utilizzata per creare il punto di
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetBreakpointRequest( 
+HRESULT GetBreakpointRequest( 
    IDebugBreakpointRequest2** ppBPRequest
 );
 ```
 
 ```csharp
-int GetBreakpointRequest( 
+int GetBreakpointRequest( 
    out IDebugBreakpointRequest2 ppBPRequest
 );
 ```
@@ -47,6 +47,6 @@ out Restituisce un oggetto [IDebugBreakpointRequest2](../../../extensibility/deb
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
