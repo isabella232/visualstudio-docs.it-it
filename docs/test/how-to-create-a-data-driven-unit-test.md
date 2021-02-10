@@ -12,16 +12,16 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 94dcc3aed8d41f9ece0f9b51410fc749330b01df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966695"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: creare un unit test basato sui dati
 
@@ -69,7 +69,7 @@ public int AddIntegers(int first, int second)
 
 Per testare il metodo `AddIntegers`, creiamo un'origine dati che specifica un intervallo di valori per i parametri e la somma restituita prevista. Nell'esempio verrà creato un database Sql Compact denominato `MathsData` e una tabella denominata `AddIntegersData` che contiene i nomi di colonna e i valori seguenti
 
-|FirstNumber|SecondNumber|Somma|
+|FirstNumber|SecondNumber|Sum|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -173,7 +173,7 @@ Se è stato eseguito il metodo `AddIntegers_FromDataSourceTest` dell'esempio, la
 
 Dopo avere corretto il metodo sottoposto a test ed eseguito nuovamente il test, la barra dei risultati diventa verde e il metodo di test viene spostato nel gruppo **Test superati**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>

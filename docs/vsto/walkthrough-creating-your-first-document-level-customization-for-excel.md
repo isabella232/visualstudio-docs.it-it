@@ -14,15 +14,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ae0f4982ca325970b8b7965c956a7d2dea4bf60f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966669"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procedura dettagliata: creare la prima personalizzazione a livello di documento per Excel
 
@@ -179,13 +179,13 @@ ms.locfileid: "97527949"
 
 - Personalizzazione dell'interfaccia utente di Excel, ad esempio tramite l'aggiunta di una scheda personalizzata alla barra multifunzione o la creazione di un riquadro azioni personalizzato: [personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md).
 
-- Uso di oggetti estesi di Excel forniti dagli strumenti di sviluppo di Office in Visual Studio per eseguire attività che non sono possibili usando il modello a oggetti di Excel (ad esempio, l'hosting di controlli gestiti nei documenti e l'associazione di controlli Excel ai dati tramite il modello di data binding Windows Forms): [automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md).
+- Uso di oggetti estesi di Excel forniti dagli strumenti di sviluppo di Office in Visual Studio per eseguire attività che non sono possibili usando il modello a oggetti di Excel (ad esempio, l'hosting di controlli gestiti nei documenti e l'associazione di controlli Excel ai dati tramite il modello di data binding Windows Form): [automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md).
 
 - Compilazione e debug di personalizzazioni a livello di documento per Excel: [compilazione di soluzioni Office](../vsto/building-office-solutions.md).
 
 - Distribuzione di personalizzazioni a livello di documento per Excel: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluzioni Excel](../vsto/excel-solutions.md)

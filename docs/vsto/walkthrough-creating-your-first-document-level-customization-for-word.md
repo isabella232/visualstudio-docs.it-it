@@ -13,15 +13,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 56777213c4cac0e2356fa33235d2527abdbb5172
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966643"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Procedura dettagliata: creare la prima personalizzazione a livello di documento per Word
 
@@ -166,13 +166,13 @@ ms.locfileid: "97527082"
 
 - Personalizzazione dell'interfaccia utente di Word, ad esempio tramite l'aggiunta di una scheda personalizzata alla barra multifunzione o la creazione di un riquadro azioni personalizzato: [personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md).
 
-- Uso di oggetti Word estesi forniti dalle soluzioni Office in Visual Studio per eseguire attività che non sono possibili usando il modello a oggetti di Word (ad esempio, l'hosting di controlli gestiti nei documenti e l'associazione di controlli di Word ai dati tramite il modello di Windows Forms data binding): [automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md).
+- Uso di oggetti Word estesi forniti dalle soluzioni Office in Visual Studio per eseguire attività che non sono possibili usando il modello a oggetti di Word (ad esempio, l'hosting di controlli gestiti nei documenti e l'associazione di controlli di Word ai dati tramite il modello di Windows Form data binding): [automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md).
 
 - Compilazione e debug di personalizzazioni a livello di documento per Word: [compilazione di soluzioni Office](../vsto/building-office-solutions.md).
 
 - Distribuzione di personalizzazioni a livello di documento per Word: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluzioni Word](../vsto/word-solutions.md)

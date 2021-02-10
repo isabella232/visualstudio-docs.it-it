@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9f13d561cba0482e15f065e66200b51c8b77ddfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966019"
 ---
 # <a name="task-writing"></a>Scrittura di attività
 
@@ -27,13 +27,13 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
 
 ## <a name="tasks"></a>Attività
 
- Esempi di attività includono [Copy](../msbuild/copy-task.md), che copia uno o più file, [MakeDir](../msbuild/makedir-task.md), che crea una directory e [CSC](../msbuild/csc-task.md), che compila i file di codice sorgente C#. Ogni attività viene implementata come classe .NET che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>, definita nell'assembly *Microsoft.Build.Framework.dll* .
+ Esempi di attività includono [Copy](../msbuild/copy-task.md), che copia uno o più file, [MakeDir](../msbuild/makedir-task.md), che crea una directory e [CSC](../msbuild/csc-task.md), che compila i file di codice sorgente C#. Ogni attività viene implementata come classe .NET che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>, definita nell'assembly *Microsoft.Build.Framework.dll*.
 
  È possibile implementare un'attività in due modi:
 
 - Implementare direttamente l'interfaccia <xref:Microsoft.Build.Framework.ITask>.
 
-- Derivare la classe dalla classe di supporto <xref:Microsoft.Build.Utilities.Task>, definita nell'assembly *Microsoft.Build.Utilities.dll* . L'attività implementa ITask e specifica le implementazioni predefinite di alcuni membri di ITask. Inoltre, la registrazione è più semplice.
+- Derivare la classe dalla classe di supporto <xref:Microsoft.Build.Utilities.Task>, definita nell'assembly *Microsoft.Build.Utilities.dll*. L'attività implementa ITask e specifica le implementazioni predefinite di alcuni membri di ITask. Inoltre, la registrazione è più semplice.
 
 In entrambi i casi è necessario aggiungere alla classe un metodo denominato `Execute`, ovvero il metodo che viene chiamato quando l'attività è in esecuzione. Questo metodo non accetta parametri e restituisce un valore `Boolean`: `true` se l'attività ha avuto esito positivo o `false` se ha avuto esito negativo. Nell'esempio seguente viene illustrata un'attività che non esegue alcuna azione e restituisce `true`.
 
@@ -102,7 +102,7 @@ namespace MyTasks
  Il file MSBuild *Microsoft. Common. Tasks* è un file di progetto contenente un elenco di `UsingTask` elementi che registrano tutte le attività fornite con MSBuild. Questo file è incluso automaticamente durante la compilazione di ogni progetto. Se un'attività registrata in *Microsoft.Common.Tasks* è registrata anche nel file di progetto corrente, il file di progetto corrente ha la precedenza, ovvero è possibile sostituire un'attività predefinita con un'attività personalizzata con lo stesso nome.
 
 > [!TIP]
-> È possibile visualizzare un elenco delle attività fornite con MSBuild visualizzando il contenuto di *Microsoft. Common. Tasks* .
+> È possibile visualizzare un elenco delle attività fornite con MSBuild visualizzando il contenuto di *Microsoft. Common. Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Generazione di eventi da un'attività
 
@@ -233,7 +233,7 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example-3"></a>Esempio 3:
+## <a name="example-3"></a>Esempio 3
 
 ### <a name="description"></a>Descrizione
 

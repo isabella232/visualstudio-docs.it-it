@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3268f3c40736f85a18b35e33c6cc78c96d6c88
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 72e69300e9dc621ea346c05923168c33bc7065c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967163"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
 Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.
@@ -35,7 +35,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Argomenti
 `pathname`
 
-Facoltativa. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
+facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
 
 ## <a name="remarks"></a>Commenti
 Se non viene specificato un `pathname`, il comando elenca i percorsi dei simboli correnti.
@@ -54,7 +54,7 @@ In questo esempio viene visualizzato un elenco delimitato da punti e virgola dei
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 59b5e36eb02ff2c8db9e2e206a4040757e130716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968840"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Risolvere i problemi di distribuzione della soluzione Office
   Questo argomento contiene informazioni su come risolvere i problemi comuni che possono verificarsi durante la distribuzione di soluzioni Office.
@@ -127,7 +127,7 @@ ms.locfileid: "97522966"
 
  Impostare l'estensione **.vsto** e il tipo MIME su **application/x-ms-vsto**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: bd7f47466074536c9088840e726f768f62f9346b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965928"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aggiornamento di un'applicazione esistente per MSBuild 15
 
@@ -24,7 +24,7 @@ Per supportare installazioni più rapide, ridotte e side-by-side, Visual Studio 
 
 ## <a name="use-msbuild-from-visual-studio"></a>Uso di MSBuild da Visual Studio
 
-Per garantire che le compilazioni a livello di programmazione dell'applicazione corrispondano a quelle eseguite all'interno di Visual Studio o *MSBuild.exe* , caricare gli assembly di MSBuild da Visual Studio e usare l'SDK disponibile all'interno di Visual Studio. Il pacchetto NuGet Microsoft.Build.Locator semplifica questo processo.
+Per garantire che le compilazioni a livello di programmazione dell'applicazione corrispondano a quelle eseguite all'interno di Visual Studio o *MSBuild.exe*, caricare gli assembly di MSBuild da Visual Studio e usare l'SDK disponibile all'interno di Visual Studio. Il pacchetto NuGet Microsoft.Build.Locator semplifica questo processo.
 
 ## <a name="use-microsoftbuildlocator"></a>Uso di Microsoft.Build.Locator
 
@@ -71,7 +71,7 @@ Fare riferimento al pacchetto Microsoft. Build. Locator per assicurarsi che l'ap
 
 ### <a name="ensure-output-is-clean"></a>Garantire l'eliminazione dell'output
 
-Compilare il progetto ed esaminare la directory di output per verificare che non contenga alcun assembly *Microsoft.Build.\*.dll* diverso da *Microsoft.Build.Locator.dll* , aggiunto al passaggio successivo.
+Compilare il progetto ed esaminare la directory di output per verificare che non contenga alcun assembly *Microsoft.Build.\*.dll* diverso da *Microsoft.Build.Locator.dll*, aggiunto al passaggio successivo.
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Aggiungere un riferimento al pacchetto per Microsoft.Build.Locator
 

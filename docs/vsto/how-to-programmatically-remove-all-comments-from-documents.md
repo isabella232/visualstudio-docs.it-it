@@ -13,15 +13,15 @@ helpviewer_keywords:
 - comments, removing from documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cdb2d7b61efc1e40bf08b6b38ea6564892a04a33
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8cb4e2e8fe51dfe6596f58470c714e8ef2412d46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968866"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Procedura: rimuovere tutti i commenti dai documenti a livello di codice
   Usare il metodo `DeleteAllComments` per rimuovere tutti i commenti da un documento di Microsoft Office Word.
@@ -44,6 +44,6 @@ ms.locfileid: "97526653"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: aggiungere commenti al testo nei documenti a livello di codice](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
 - [Elemento host Document](../vsto/document-host-item.md)

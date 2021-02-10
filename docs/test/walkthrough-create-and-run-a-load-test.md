@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 888bf1f699027ab883a01ba74d8efc5703c91c9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968970"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procedura dettagliata: Creare ed eseguire un test di carico contenente unit test
 
@@ -147,7 +147,7 @@ In questa procedura dettagliata, si completeranno le seguenti attività:
 
 2. Se la simulazione di test supera una o più soglie, vengono visualizzate le icone nei nodi di controllo per indicare la violazione di soglia. Gli errori sono indicati da un cerchio rosso, gli avvisi da un triangolo giallo. Per individuare il contatore che ha superato la soglia e tracciarne il grafico, trascinare l'icona sul grafico. Questa operazione può essere effettuata durante l'esecuzione del test.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare la combinazione di test per specificare quali test includere in uno scenario di test di carico](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md)

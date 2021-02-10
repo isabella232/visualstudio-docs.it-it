@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d58f9f29d88d7988b4ead3c2d96eadbbf95a8f46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966266"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrazione in un ambiente a più processori
 
@@ -32,7 +32,7 @@ Quando si compilano uno o più progetti in un sistema a più processori o multic
 
 ### <a name="central-logging-model"></a>Modello di registrazione centrale
 
-Per le build a più processori MSBuild usa un "modello di registrazione centrale". Nel modello di registrazione centrale un'istanza di *MSBuild.exe* agisce come processo di compilazione primario o "nodo centrale". Le istanze secondarie di *MSBuild.exe* , i "nodi secondari", vengono allegate al nodo centrale. Tutti i logger basati su ILogger allegati al nodo centrale sono noti come "logger centrali" e i logger allegati ai nodi secondari sono noti come "logger secondari".
+Per le build a più processori MSBuild usa un "modello di registrazione centrale". Nel modello di registrazione centrale un'istanza di *MSBuild.exe* agisce come processo di compilazione primario o "nodo centrale". Le istanze secondarie di *MSBuild.exe*, i "nodi secondari", vengono allegate al nodo centrale. Tutti i logger basati su ILogger allegati al nodo centrale sono noti come "logger centrali" e i logger allegati ai nodi secondari sono noti come "logger secondari".
 
 Durante una compilazione ogni logger secondario indirizza il proprio traffico di eventi ai logger centrali. Poiché gli eventi hanno origine in più nodi secondari, i dati arrivano al nodo centrale contemporaneamente ma con interfoliazione. Per risolvere i riferimenti da evento a progetto e da evento a destinazione, gli argomenti dell'evento includono informazioni aggiuntive sul contesto dell'evento di compilazione.
 
@@ -77,7 +77,7 @@ Culture=neutral
 
 Un asterisco (*) separa i due nomi di logger nell'opzione `-dl`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Logger di compilazione](../msbuild/build-loggers.md)
 - [Creare logger di inoltro](../msbuild/creating-forwarding-loggers.md)

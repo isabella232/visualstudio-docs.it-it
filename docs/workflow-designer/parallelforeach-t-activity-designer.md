@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b35bcb6fcd1dc2ac3826d5dccb17ff764979321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968749"
 ---
 # <a name="parallelforeach-activity-designer"></a>Activity Designer ParallelForEach
 
@@ -43,17 +43,17 @@ Accedere all' **ActivityDesigner \<T> ActivityDesigner ParallelForEach** nella c
 
 Nella tabella seguente sono elencate le proprietà più utili dell'attività <xref:System.Activities.Statements.ParallelForEach%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo visualizzato nell'intestazione dell'ActivityDesigner. Il valore predefinito è **ActivityDesigner ParallelForEach \<Int32>**. Facoltativamente, è possibile modificare il valore nella griglia **Proprietà** o direttamente nell'intestazione Activity Designer.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Falso|Attività da eseguire per ogni elemento della raccolta. Per aggiungere l' <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> attività, rilasciare un'attività dalla casella degli strumenti nella casella **corpo** dell'ActivityDesigner **ActivityDesigner ParallelForEach \<T>** con il testo del suggerimento "drop Activity here".|
-|**TypeArgument**|True|Tipo degli elementi nella <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> raccolta specificata dal parametro generico *T*. Per impostazione predefinita, **TypeArgument** è impostato su **Int32**. Per modificare il tipo T nell'ActivityDesigner **activitydesigner parallelforeach<t \>** , modificare il valore della casella combinata **TypeArgument** nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Raccolta di elementi da scorrere. Per impostare <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , digitare un'espressione Visual Basic nella casella **valori** dell'ActivityDesigner **foreach<T \>** nella casella con il testo del suggerimento "immettere un'espressione VB" o nella casella **valori** nella finestra **Proprietà** .|
+|**TypeArgument**|Vero|Tipo degli elementi nella <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> raccolta specificata dal parametro generico *T*. Per impostazione predefinita, **TypeArgument** è impostato su **Int32**. Per modificare il tipo T nell'ActivityDesigner **activitydesigner parallelforeach<t \>** , modificare il valore della casella combinata **TypeArgument** nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Vero|Raccolta di elementi da scorrere. Per impostare <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , digitare un'espressione Visual Basic nella casella **valori** dell'ActivityDesigner **foreach<T \>** nella casella con il testo del suggerimento "immettere un'espressione VB" o nella casella **valori** nella finestra **Proprietà** .|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Valutato al termine di ogni iterazione. Se restituisce true, le iterazioni in sospeso pianificate vengono annullate. Se questa proprietà non è impostata, tutte le istruzioni pianificate vengono eseguite fino al completamento.|
 
 Per impostazione predefinita, l'iteratore del ciclo è denominato item. È possibile modificare il nome della variabile iteratore nella casella **foreach** in **ActivityDesigner ParallelForEach \<T>** Activity Designer. L'iteratore del ciclo può essere usato nelle espressioni contenute in elementi figlio dell'attività <xref:System.Activities.Statements.ParallelForEach%601>.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sequenza](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

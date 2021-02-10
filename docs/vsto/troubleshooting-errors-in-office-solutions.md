@@ -19,15 +19,15 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cbda0a4b7977f962751ed9803bd1b39103f67679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968827"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Risolvere gli errori nelle soluzioni Office
   Questi problemi possono verificarsi quando si eseguono le attività seguenti durante lo sviluppo di soluzioni Office in Visual Studio:
@@ -38,7 +38,7 @@ ms.locfileid: "97523031"
 
 - [Scrittura di codice](#code)
 
-- [Compilare i progetti](#building)
+- [Compila progetti](#building)
 
 - [Debug di progetti](#debugging)
 
@@ -81,8 +81,8 @@ ms.locfileid: "97523031"
 
  In alternativa, assicurarsi che i progetti migrati vengano aperti solo nei computer di sviluppo in cui è già installato Microsoft Office 2010.
 
-### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>Errori nei progetti a livello di documento di Office 2003 aggiornati che contengono controlli Windows Forms
- Se si aggiorna un progetto a livello di documento Microsoft Office 2003 e il documento contiene Windows Forms controlli, il progetto aggiornato potrebbe avere errori di compilazione o di Runtime. Per evitare questo problema, installare Visual Studio 2005 Tools per Office Second Edition Runtime nel computer di sviluppo prima di aggiornare il progetto. Questa versione del runtime è disponibile come pacchetto ridistribuibile dall'Area download Microsoft in [Microsoft Visual Studio 2005 Tools per Office Second Edition Runtime (VSTO 2005 SE) (x86)](https://www.microsoft.com/download/details.aspx?id=2392).
+### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>Errori nei progetti a livello di documento di Office 2003 aggiornati che contengono controlli Windows Form
+ Se si aggiorna un progetto a livello di documento Microsoft Office 2003 e il documento contiene Windows Form controlli, il progetto aggiornato potrebbe avere errori di compilazione o di Runtime. Per evitare questo problema, installare Visual Studio 2005 Tools per Office Second Edition Runtime nel computer di sviluppo prima di aggiornare il progetto. Questa versione del runtime è disponibile come pacchetto ridistribuibile dall'Area download Microsoft in [Microsoft Visual Studio 2005 Tools per Office Second Edition Runtime (VSTO 2005 SE) (x86)](https://www.microsoft.com/download/details.aspx?id=2392).
 
  Dopo aver completato l'aggiornamento del progetto, è possibile disinstallare Visual Studio 2005 Tools per Office Second Edition Runtime dal computer di sviluppo se non viene usato da altre soluzioni Office.
 
@@ -215,7 +215,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Se si fa clic su **Sì** o **No** nella finestra di dialogo, Visual Studio termina il processo di Excel o Word e arresta il debugger. Per interrompere il debug del progetto senza visualizzare questa finestra di dialogo, uscire da Excel o Word direttamente anziché arrestare il debugger in Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Risolvere i problemi relativi alle soluzioni Office](../vsto/troubleshooting-office-solutions.md)
 - [Risolvere i problemi relativi alla sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)
 - [Risolvere i problemi di distribuzione della soluzione Office](../vsto/troubleshooting-office-solution-deployment.md)

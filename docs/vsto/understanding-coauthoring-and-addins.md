@@ -11,15 +11,15 @@ helpviewer_keywords:
 - coauthoring, in Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4c0d4c513da403b02454055dadf6d0fd70eef81c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e7889965590865639149b79e8c6d285e333b3822
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968788"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Informazioni su coautore e componenti aggiuntivi
 
@@ -27,5 +27,5 @@ La coautorizzazione è una funzionalità di Excel per Windows desktop che consen
 
 Nota: la coautorizzazione per Windows desktop Excel è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori Office365. Gli utenti che hanno acquistato una licenza perpetua per Office 2016 o versioni precedenti non hanno attualmente accesso alla funzionalità di cocreazione. (Excel online, Excel per Android, Excel per iOS e Excel Mobile in Windows Store supportano anche la cocreazione).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Soluzioni Excel](./excel-solutions.md)

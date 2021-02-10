@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: f87b5bcc94ed11e18de763bd1db7c59bdc4796fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966383"
 ---
 # <a name="load-vspackages"></a>Carica VSPackage
 I pacchetti VSPackage vengono caricati in Visual Studio solo quando sono necessarie le relative funzionalità. Ad esempio, un pacchetto VSPackage viene caricato quando Visual Studio usa una factory del progetto o un servizio implementato dal pacchetto VSPackage. Questa funzionalità è denominata caricamento ritardato, che viene usato quando possibile per migliorare le prestazioni.
@@ -73,5 +73,5 @@ I pacchetti VSPackage vengono caricati in Visual Studio solo quando sono necessa
 
      Impossibile utilizzare il caricamento forzato per la comunicazione VSPackage. Usare invece [e fornire i servizi](../extensibility/using-and-providing-services.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPackages](../extensibility/internals/vspackages.md)

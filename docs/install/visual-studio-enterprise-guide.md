@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967111"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Guida di Visual Studio per le aziende
 Se si vuole risparmiare tempo durante l'esecuzione della propria azienda in Visual Studio, iniziare da qui. Questa guida aziendale include suggerimenti che consentono di installare e aggiornare Visual Studio in scenari aziendali comuni, di essere sbloccati in caso di problemi e di informazioni su come segnalare un problema se è necessaria una maggiore assistenza. 
@@ -61,12 +61,12 @@ Informazioni su come aggiornare correttamente Visual Studio e correggere i probl
 
 - **[Aggiornare Visual Studio usando un layout minimo offline](update-minimal-layout.md)**. Per i computer che non sono connessi a Internet, la creazione di un layout minimo è il modo più semplice e rapido per aggiornare le istanze di Visual Studio offline.
 
-- ** [Ripristinare Visual Studio](repair-visual-studio.md) per correggere i problemi di aggiornamento**. In alcuni casi l'installazione di Visual Studio può risultare danneggiata Una correzione è utile per la correzione di problemi in fase di installazione per tutte le operazioni di installazione, inclusi gli aggiornamenti. 
+- **[Ripristinare Visual Studio](repair-visual-studio.md) per correggere i problemi di aggiornamento**. In alcuni casi l'installazione di Visual Studio può risultare danneggiata Una correzione è utile per la correzione di problemi in fase di installazione per tutte le operazioni di installazione, inclusi gli aggiornamenti. 
 
 - **Seguire le [linee di base di sicurezza di Windows](/windows/security/threat-protection/windows-security-baselines)**. Microsoft è dedicata a fornire ai propri clienti sistemi operativi sicuri, ad esempio Windows 10 e Windows Server, e app sicure, ad esempio Microsoft Edge. Oltre alla garanzia di sicurezza dei propri prodotti, Microsoft consente anche di avere un controllo accurato sugli ambienti fornendo diverse funzionalità di configurazione. 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche 
+## <a name="see-also"></a>Vedi anche 
 
 - [Guida alla produttività per Visual Studio](../ide/productivity-features.md)

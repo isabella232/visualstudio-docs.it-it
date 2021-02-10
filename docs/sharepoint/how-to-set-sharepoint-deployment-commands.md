@@ -11,22 +11,22 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72938f316be22cd9b2eab2d7dab893c9370fb0ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965850"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Procedura: impostare i comandi di distribuzione di SharePoint
   È possibile personalizzare il processo di distribuzione impostando i comandi di pre-distribuzione e post-distribuzione. Questi comandi vengono eseguiti prima e dopo altre azioni di distribuzione quando si esegue il debug di soluzioni SharePoint da Visual Studio.
 
 ### <a name="to-add-a-pre-deployment-command"></a>Per aggiungere un comando pre-distribuzione
 
-1. Sulla barra dei menu scegliere **Project**  >  **\<*ProjectName*> Proprietà** progetto.
+1. Sulla barra dei menu scegliere   >  **\<*ProjectName*> Proprietà** progetto.
 
 2. Scegliere la scheda **SharePoint** .
 
@@ -36,7 +36,7 @@ ms.locfileid: "96304384"
 
 ### <a name="to-add-a-post-deployment-command"></a>Per aggiungere un comando post-distribuzione
 
-1. Sulla barra dei menu scegliere **Project**  >  **\<*ProjectName*> Proprietà** progetto.
+1. Sulla barra dei menu scegliere   >  **\<*ProjectName*> Proprietà** progetto.
 
 2. Scegliere la scheda **SharePoint** .
 
@@ -44,5 +44,5 @@ ms.locfileid: "96304384"
 
      Ad esempio, per elencare il contenuto della directory dopo il completamento della distribuzione, immettere **dir**. Per usare una variabile MSBuild per copiare l'assembly dalla directory di compilazione, immettere **Copy $ (TargetPath) c:\DeploymentDirectory**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
