@@ -13,15 +13,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bf7e2f2c5b0de59a5f1cac91f0df9cefbf15bda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964706"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: contrassegnare i controlli come controlli sicuri
   Per la sicurezza, SharePoint distingue tra i controlli Web protetti da attacchi di script injection e Web che non lo sono. È possibile accedere ai controlli protetti o ai *controlli sicuri* da parte di utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà voci di controllo sicure di un elemento del progetto SharePoint o in **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per ulteriori informazioni, vedere
@@ -87,7 +87,7 @@ ms.locfileid: "96304508"
 
 12. Immettere i valori per le proprietà della tabella seguente.
 
-    |Nome proprietà|valore|
+    |Nome della proprietà|Valore|
     |-------------------|-----------|
     |Spazio dei nomi|Spazio dei nomi completo per il controllo, ad esempio **BdcModelProject1. VisualWebPart1**.|
     |Nome tipo|Button1|
@@ -104,7 +104,7 @@ ms.locfileid: "96304508"
 
 15. Immettere i valori per le proprietà della tabella seguente.
 
-    |Nome proprietà|valore|
+    |Nome della proprietà|Valore|
     |-------------------|-----------|
     |Spazio dei nomi|Spazio dei nomi completo per il controllo, ad esempio **BdcModelProject1. VisualWebPart1**.|
     |Nome tipo|TextBox1|
@@ -114,6 +114,6 @@ ms.locfileid: "96304508"
 
 16. Premere il tasto **Tab** , quindi scegliere il pulsante **OK** per chiudere la finestra di dialogo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Pacchetto e distribuzione di soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

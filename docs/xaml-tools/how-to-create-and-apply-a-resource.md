@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8502b3d5058294efe102564453bb23a3eb3b98
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971609"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 
@@ -30,7 +30,7 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 1. Con un file XAML aperto nella finestra di progettazione XAML, creare un elemento oppure scegliere un elemento nella finestra Struttura documento.
 
-2. Nella finestra **Proprietà** scegliere il marcatore della proprietà, rappresentato da un simbolo di casella a destra del valore di una proprietà e quindi scegliere **Converti in nuova risorsa** . Un simbolo di casella bianca indica un valore predefinito, mentre un simbolo di casella nera indica in genere che è stata applicata una risorsa locale.
+2. Nella finestra **Proprietà** scegliere il marcatore della proprietà, rappresentato da un simbolo di casella a destra del valore di una proprietà e quindi scegliere **Converti in nuova risorsa**. Un simbolo di casella bianca indica un valore predefinito, mentre un simbolo di casella nera indica in genere che è stata applicata una risorsa locale.
 
      Verrà visualizzata la finestra di dialogo appropriata per la creazione di una risorsa. Questa finestra di dialogo viene visualizzata quando si crea una risorsa da un pennello:
 
@@ -40,13 +40,13 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 4. In **Posizione definizione** scegliere l'opzione che specifica dove si vuole definire la risorsa:
 
-    - Per rendere disponibile la risorsa per qualsiasi documento nell'applicazione, scegliere **Applicazione** .
+    - Per rendere disponibile la risorsa per qualsiasi documento nell'applicazione, scegliere **Applicazione**.
 
-    - Per rendere disponibile la risorsa solo per il documento corrente, scegliere **Documento corrente** .
+    - Per rendere disponibile la risorsa solo per il documento corrente, scegliere **Documento corrente**.
 
-    - Per rendere disponibile la risorsa solo per l'elemento da cui è stata creata o per i relativi elementi figlio, scegliere **Documento corrente** e nell'elenco a discesa selezionare **elemento** : **nome** .
+    - Per rendere disponibile la risorsa solo per l'elemento da cui è stata creata o per i relativi elementi figlio, scegliere **Documento corrente** e nell'elenco a discesa selezionare **elemento**: **nome**.
 
-    - Per definire la risorsa in un file di [dizionario risorse](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) che può essere riutilizzato in altri progetti, fare clic su **Dizionario risorse** . Selezionare quindi un file di dizionario risorse esistente, ad esempio **StandardStyles.xaml** , nell'elenco a discesa.
+    - Per definire la risorsa in un file di [dizionario risorse](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) che può essere riutilizzato in altri progetti, fare clic su **Dizionario risorse**. Selezionare quindi un file di dizionario risorse esistente, ad esempio **StandardStyles.xaml**, nell'elenco a discesa.
 
 5. Scegliere **OK** per creare la risorsa e applicarla all'elemento da cui è stata creata.
 
@@ -54,13 +54,13 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 1. Nella finestra Struttura documento scegliere l'elemento a cui si vuole applicare una risorsa.
 
-2. Eseguire una di queste operazioni:
+2. Eseguire una delle operazioni seguenti:
 
-   - Applicare una risorsa a una proprietà. Nella finestra **Proprietà** scegliere il marcatore della proprietà accanto al valore della proprietà, scegliere **risorsa locale** o **risorsa di sistema** , quindi scegliere una risorsa disponibile nell'elenco visualizzato.
+   - Applicare una risorsa a una proprietà. Nella finestra **Proprietà** scegliere il marcatore della proprietà accanto al valore della proprietà, scegliere **risorsa locale** o **risorsa di sistema**, quindi scegliere una risorsa disponibile nell'elenco visualizzato.
 
       Se non viene visualizzata una risorsa prevista, è possibile che il tipo della risorsa non corrisponda al tipo della proprietà.
 
-   - Applicare uno stile o una risorsa modello di controllo a un controllo. Aprire il menu di scelta rapida per un controllo nella finestra Struttura documento, scegliere **Modifica modello** o **Modifica modelli aggiuntivi** , quindi scegliere **Applica risorsa** e infine selezionare il nome del modello di controllo nell'elenco visualizzato.
+   - Applicare uno stile o una risorsa modello di controllo a un controllo. Aprire il menu di scelta rapida per un controllo nella finestra Struttura documento, scegliere **Modifica modello** o **Modifica modelli aggiuntivi**, quindi scegliere **Applica risorsa** e infine selezionare il nome del modello di controllo nell'elenco visualizzato.
 
      > [!NOTE]
      > **Modifica modello** applica i modelli di controllo. L'opzione **Edit Additional Templates** (Modifica modelli aggiuntivi) consente di applicare altri tipi di modelli.
@@ -71,7 +71,7 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 1. Scegliere un elemento nella tavola da disegno o nella finestra Struttura documento.
 
-2. Scegliere il marcatore della proprietà predefinito o locale a destra della proprietà nella finestra **Proprietà** e quindi scegliere **Modifica risorsa** per aprire la finestra di dialogo **Modifica risorsa** .
+2. Scegliere il marcatore della proprietà predefinito o locale a destra della proprietà nella finestra **Proprietà** e quindi scegliere **Modifica risorsa** per aprire la finestra di dialogo **Modifica risorsa**.
 
 3. Modificare le opzioni per la risorsa.
 

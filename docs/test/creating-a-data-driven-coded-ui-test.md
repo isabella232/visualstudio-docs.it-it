@@ -8,15 +8,15 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: eadba1454e04c95bf1e2b3610a019e3503ec3af3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964485"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -24,7 +24,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 - Componente Test codificato dell'interfaccia utente
@@ -106,7 +106,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
 2. Popolare il file con estensione *csv* con i dati seguenti:
 
-    |Num1|Num2|Somma|
+    |Num1|Num2|Sum|
     |-|-|-|
     |3|4|7|
     |5|6|11|
@@ -235,7 +235,7 @@ Dovrebbe venire visualizzato il test eseguito tramite le tre iterazioni che usan
 
 Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà nel file *UIMapDesigner.cs* . È necessario rimuovere il riferimento al metodo originale nel file *UITest.cs* codificato e sostituirlo con il nome del metodo rinominato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

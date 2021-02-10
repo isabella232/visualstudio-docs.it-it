@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965200"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions (funzione)
 Questa funzione richiede all'utente le opzioni avanzate per un determinato comando.
@@ -63,7 +63,7 @@ in La struttura dell'opzione (può anche essere `NULL` ).
 |SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'IDE chiama questa funzione per la prima volta con `ppvOptions` = `NULL` per determinare se il plug-in del controllo del codice sorgente supporta la funzionalità opzioni avanzate per il comando specificato. Se il plug-in supporta la funzionalità per il comando, l'IDE chiama di nuovo questa funzione quando l'utente richiede opzioni avanzate (in genere implementate come pulsante **Avanzate** in una finestra di dialogo) e fornisce un puntatore non null per `ppvOptions` che punta a un `NULL` puntatore. Il plug-in archivia tutte le opzioni avanzate specificate dall'utente in una struttura privata e restituisce un puntatore a tale struttura in `ppvOptions` . Questa struttura viene quindi passata a tutte le altre funzioni API del plug-in del controllo del codice sorgente che è necessario conoscere, incluse le chiamate successive alla `SccGetCommandOptions` funzione.
 
  Un esempio può essere utile per chiarire questa situazione.
@@ -79,6 +79,6 @@ in La struttura dell'opzione (può anche essere `NULL` ).
 > [!NOTE]
 > Il comando `SCC_COMMAND_OPTIONS` viene usato quando l'IDE Visualizza una finestra di dialogo **Opzioni** che consente all'utente di impostare preferenze che controllano il funzionamento dell'integrazione. Se il plug-in del controllo del codice sorgente desidera fornire la propria finestra di dialogo di preferenze, può visualizzarlo da un pulsante **Avanzate** nella finestra di dialogo Preferenze dell'IDE. Il plug-in è esclusivamente responsabile del recupero e della conservazione delle informazioni. l'IDE non lo utilizza né lo modifica.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Codice comando](../extensibility/command-code-enumerator.md)

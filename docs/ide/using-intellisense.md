@@ -14,15 +14,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971323"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 
@@ -56,7 +56,7 @@ Il parametro in grassetto indica il parametro successivo richiesto durante la di
 
 Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserire commenti XML per la generazione di documentazione](reference/generate-xml-documentation-comments.md).
 
-È possibile richiamare manualmente le informazioni sui parametri scegliendo **modifica**  >  **IntelliSense**  >  **informazioni parametri** IntelliSense, premendo **CTRL** + **MAIUSC** + **Space** o scegliendo il pulsante **informazioni sul parametro** sulla barra degli strumenti dell'editor.
+È possibile richiamare manualmente le informazioni sui parametri scegliendo **modifica**  >    >  **informazioni parametri** IntelliSense, premendo **CTRL** + **MAIUSC** + o scegliendo il pulsante **informazioni sul parametro** sulla barra degli strumenti dell'editor.
 
 ## <a name="quick-info"></a>Informazioni rapide
 
@@ -68,7 +68,7 @@ Quando si seleziona un membro nella casella **Elenca membri**, vengono visualizz
 
 ![Informazioni sui parametri in un file di codice C&#35;](../ide/media/vs2015_paraminfo.png)
 
-È possibile richiamare manualmente le informazioni rapide scegliendo **modifica**  >  **IntelliSense**  >  **informazioni rapide** IntelliSense, premendo **CTRL** + **i** oppure scegliendo il pulsante **informazioni rapide** sulla barra degli strumenti dell'editor.
+È possibile richiamare manualmente le informazioni rapide scegliendo **modifica**  >    >  **informazioni rapide** IntelliSense, premendo **CTRL** + **i** oppure scegliendo il pulsante **informazioni rapide** sulla barra degli strumenti dell'editor.
 
 Se una funzione è sottoposta a overload, è possibile che IntelliSense non visualizzi le informazioni per tutte le forme di overload.
 

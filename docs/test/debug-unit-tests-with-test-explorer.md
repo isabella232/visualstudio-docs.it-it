@@ -5,15 +5,15 @@ ms.date: 07/14/2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b811cc3538e3bbb108e50acf50c2fe7a977fe3d
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 09889839c9e2873810c78a5f0c3425820170b68d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964381"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>Eseguire il debug e analizzare unit test con Esplora test
 
@@ -48,7 +48,7 @@ Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, sel
 > [!NOTE]
 > Questa funzionalità non è attualmente supportata per .NET Core.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)

@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971154"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Come personalizzare un codespace (anteprima)
 
@@ -32,7 +32,7 @@ Gli spazi dei codebase di Windows sono dotati di molti Framework e strumenti gi√
 | Runtime di .NET Core                           | dotnet     | 2,1, 3,1           |
 | .NET Core SDK                               | dotnet     | 2,1, 3.1.3, 3.1.4  |
 | Interfaccia della riga di comando di Azure                                   | AZ         | 2.5                |
-| Cioccolatoso                                  | Choco      | 0.10.15            |
+| Chocolatey                                  | Choco      | 0.10.15            |
 | CMake                                       | CMake      | 3,17               |
 | Git                                         | git        | 2.26               |
 | Microsoft Build                             | msbuild    | 16.7               |
@@ -192,7 +192,7 @@ Se si usa un'identit√† Azure Active Directory per autenticare l'applicazione in 
 
 Per altre informazioni sul `az login` comando, vedere la [documentazione](/cli/azure/reference-index#az_login)dell'interfaccia della riga di comando di Azure.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Che cosa sono gli spazi di dati di GitHub?](codespaces-overview.md)
 - [Come usare Visual Studio con un codespace](use-visual-studio-with-codespaces.md)

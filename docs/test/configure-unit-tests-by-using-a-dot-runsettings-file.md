@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ca15e265f9e6f3188826c019a8c81d02a7668bcf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964563"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare gli unit test usando un file con *estensione runsettings*
 
@@ -26,7 +26,7 @@ I file di impostazioni esecuzione test sono facoltativi. Se non è necessaria al
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>Creazione di un file di impostazioni esecuzione test e personalizzazione
 
-1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni** scegliere **Aggiungi** nuovo elemento dal menu di scelta rapida della soluzione  >  **New Item** e selezionare **file XML**. Salvare il file con un nome, ad esempio *test. runsettings*.
+1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni** scegliere **Aggiungi** nuovo elemento dal menu di scelta rapida della soluzione  >  e selezionare **file XML**. Salvare il file con un nome, ad esempio *test. runsettings*.
 
    > [!TIP]
    > Il nome del file non è rilevante, purché si usi l'estensione *runsettings*.
@@ -466,7 +466,7 @@ Il nodo **RunConfiguration** deve contenere un nodo **EnvironmentVariables** . U
 > [!NOTE]
 > Poiché queste variabili di ambiente devono essere sempre impostate quando l'host di test viene avviato, i test devono sempre essere eseguiti in un processo separato. A tale scopo, il flag */InIsolation* verrà impostato in presenza di variabili di ambiente in modo che l'host di test venga sempre richiamato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Configurare un agente di test](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md)

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: cdfd4294511752e201c2291a03f89d0bded2506b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971453"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: Creare un visualizzatore di immagini
 
@@ -50,8 +50,8 @@ Al termine, l'app dovrebbe avere un aspetto simile all'immagine seguente:
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Passaggio 1: Creare un progetto di app Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Per iniziare, creare un progetto di app Windows Forms.|
-|[Passaggio 2: eseguire l'app visualizzatore immagini](../ide/step-2-run-your-program.md)|Eseguire il progetto di app Windows Forms creato nel passaggio precedente.|
+|[Passaggio 1: Creare un progetto di app Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Per iniziare, creare un progetto di app Windows Form.|
+|[Passaggio 2: eseguire l'app visualizzatore immagini](../ide/step-2-run-your-program.md)|Eseguire il progetto di app Windows Form creato nel passaggio precedente.|
 |[Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md)|Modificare l'aspetto del form usando la finestra **Proprietà**.|
 |[Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Aggiungere un oggetto `TableLayoutPanel` al form.|
 |[Passaggio 5: Aggiungere controlli al modulo](../ide/step-5-add-controls-to-your-form.md)|Aggiungere controlli, ad esempio un controllo `PictureBox` e un controllo `CheckBox`, al form. Aggiungere pulsanti al form.|

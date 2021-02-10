@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 21dd08f81802661cae9d77ee3449f4e9369ca768
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965083"
 ---
 # <a name="application-property-page-uwp-projects"></a>Pagina delle proprietà dell'applicazione (progetti UWP)
 
@@ -26,7 +26,7 @@ Usare la pagina delle proprietà **Applicazione** per specificare l'assembly e l
 
 ![Pagina delle proprietà dell'applicazione](media/application-page-uwp.png)
 
-Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto in **Esplora soluzioni**. Quindi scegliere **Project**  >  **proprietà** progetto dalla barra dei menu. Le pagine delle proprietà vengono aperte nella scheda **Applicazione**.
+Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto in **Esplora soluzioni**. Quindi scegliere   >  **proprietà** progetto dalla barra dei menu. Le pagine delle proprietà vengono aperte nella scheda **Applicazione**.
 
 ## <a name="general-section"></a>Sezione Generale
 
@@ -48,7 +48,7 @@ Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLan
 
 Per informazioni sulla selezione della piattaforma di destinazione di Visual Studio, vedere [Selezione della piattaforma](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Crea la prima app](/windows/uwp/get-started/your-first-app)
 - [Scegliere una versione di UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)

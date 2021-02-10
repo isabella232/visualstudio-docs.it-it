@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 75c06082a34f5dd3248024f1707cb188107863c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964888"
 ---
 # <a name="build-loggers"></a>Logger di compilazione
 
@@ -86,7 +86,7 @@ L'esempio seguente illustra l'implementazione di un logger che scrive il log in 
 
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

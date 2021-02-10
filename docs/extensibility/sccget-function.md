@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965213"
 ---
 # <a name="sccget-function"></a>SccGet (funzione)
 Questa funzione recupera una copia di uno o più file per la visualizzazione e la compilazione, ma non per la modifica. Nella maggior parte dei sistemi, i file vengono contrassegnati come di sola lettura.
@@ -75,7 +75,7 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 |SCC_I_OPERATIONCANCELED|Operazione annullata prima del completamento.|
 |SCC_E_NOTAUTHORIZED|Non è disponibile l'autorizzazione per eseguire questa operazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da recuperare. Se l'IDE passa il flag `SCC_GET_ALL` , significa che gli elementi in `lpFileNames` non sono file, ma directory e che devono essere recuperati tutti i file nel controllo del codice sorgente nelle directory specificate.
 
  Il `SCC_GET_ALL` flag può essere combinato con il `SCC_GET_RECURSIVE` flag per recuperare anche tutti i file nelle directory specificate e in tutte le sottodirectory.
@@ -86,7 +86,7 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
  Infine, anche se un plug-in del controllo del codice sorgente ha specificato il `SCC_CAP_GET_NOUI` flag durante l'inizializzazione, a indicare che non è presente un'interfaccia utente per un comando Get, questa funzione può comunque essere chiamata dall'IDE per recuperare i file. Il flag indica semplicemente che l'IDE non visualizza una voce di menu Get e che non è previsto che il plug-in fornisca alcuna interfaccia utente.
 
 ## <a name="rename-files-and-sccget"></a>Rinominare i file e SccGet
- Situazione: un utente estrae un file, ad esempio *a.txt*e lo modifica. Prima che *a.txt* possa essere archiviato, un secondo utente rinomina *a.txt* *b.txt* nel database del controllo del codice sorgente, estrae *b.txt*, apporta alcune modifiche al file e controlla il file in. Il primo utente desidera le modifiche apportate dal secondo utente, in modo che il primo utente rinomina la versione locale del file *a.txt* in *b.txt* ed esegue un'operazione Get sul file. Tuttavia, la cache locale che tiene traccia dei numeri di versione ritiene ancora che la prima versione di *a.txt* sia archiviata localmente, quindi il controllo del codice sorgente non può risolvere le differenze.
+ Situazione: un utente estrae un file, ad esempio *a.txt* e lo modifica. Prima che *a.txt* possa essere archiviato, un secondo utente rinomina *a.txt* *b.txt* nel database del controllo del codice sorgente, estrae *b.txt*, apporta alcune modifiche al file e controlla il file in. Il primo utente desidera le modifiche apportate dal secondo utente, in modo che il primo utente rinomina la versione locale del file *a.txt* in *b.txt* ed esegue un'operazione Get sul file. Tuttavia, la cache locale che tiene traccia dei numeri di versione ritiene ancora che la prima versione di *a.txt* sia archiviata localmente, quindi il controllo del codice sorgente non può risolvere le differenze.
 
  Esistono due modi per risolvere questa situazione in cui la cache locale delle versioni del controllo del codice sorgente non viene sincronizzata con il database del controllo del codice sorgente:
 
@@ -106,6 +106,6 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 
     6. È ora possibile archiviare il file di *b.txt* aggiornato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Flag utilizzato da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: adbc2611cf0d0e08ef356e91e25ed0c4854c4386
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965044"
 ---
 # <a name="toolbox-components-tab"></a>Casella degli strumenti, scheda Componenti
 
@@ -89,8 +89,8 @@ Crea un'istanza del componente <xref:System.Windows.Forms.Timer> che consente di
 > [!NOTE]
 > È disponibile anche un componente <xref:System.Timers.Timer> basato su sistema che è possibile aggiungere alla **Casella degli strumenti**. Il componente <xref:System.Timers.Timer> è ottimizzato per le applicazioni server mentre il componente <xref:System.Windows.Forms.Timer> di Windows Forms è più adatto all'uso con Windows Forms.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Controlli da usare in Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
+- [Controlli da usare in Windows Form](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Scegli elementi della Casella degli strumenti, Componenti WPF](choose-toolbox-items-wpf-components.md)
 - [Casella degli strumenti](../../ide/reference/toolbox.md)

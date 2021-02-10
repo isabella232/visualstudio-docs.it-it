@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3c6037bd6ed3b7899ff00bce202df7707356683a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971401"
 ---
 # <a name="understand-build-configurations"></a>Informazioni sulle configurazioni della build
 
@@ -48,9 +48,9 @@ La configurazione e il controllo della piattaforma in cui vengono archiviati i f
 
 È possibile creare configurazioni di compilazione personalizzate a livello di soluzione e di progetto. La configurazione della soluzione determina i progetti inclusi nella compilazione quando tale configurazione è attiva. Verranno compilati solo i progetti specificati nella configurazione della soluzione attiva. Se sono selezionate più piattaforme di destinazione in Configuration Manager, vengono compilati tutti i progetti che si applicano a tale piattaforma. La configurazione del progetto determina le impostazioni di compilazione e le opzioni del compilatore utilizzate quando si compila il progetto.
 
-Per creare, selezionare, modificare o eliminare una configurazione, è possibile usare **Gestione configurazione**. Per aprirlo, sulla barra dei menu scegliere **Compila**  >  **Configuration Manager**o digita **configurazione** nella casella di ricerca. È inoltre possibile usare l'elenco **Configurazioni soluzione** sulla barra degli strumenti **Standard** per selezionare una configurazione o aprire **Gestione configurazione**.
+Per creare, selezionare, modificare o eliminare una configurazione, è possibile usare **Gestione configurazione**. Per aprirlo, sulla barra dei menu scegliere **Compila**  >  **Configuration Manager** o digita **configurazione** nella casella di ricerca. È inoltre possibile usare l'elenco **Configurazioni soluzione** sulla barra degli strumenti **Standard** per selezionare una configurazione o aprire **Gestione configurazione**.
 
-![Gestione configurazione](media/understanding-build-configurations/config-manager.png)
+![Configuration Manager](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Se le impostazioni di configurazione della soluzione sulla barra degli strumenti non sono disponibili e non è possibile accedere alla **Configuration Manager**, è [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] possibile che vengano applicate le impostazioni di sviluppo. Per altre informazioni, vedere [Procedura: Gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -83,7 +83,7 @@ Se si desidera compilare più configurazioni e piattaforme in un'unica azione, �
 
 Quando si definisce una nuova configurazione di soluzione e non la si copia da una già esistente, in Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di progetto predefinite. I criteri vengono valutati nell'ordine indicato.
 
-1. Se un progetto ha un nome di configurazione* \<configuration name> \<platform name> *() che corrisponde esattamente al nome della nuova configurazione della soluzione, viene assegnata tale configurazione. I nomi delle configurazioni non rispettano la distinzione tra maiuscole e minuscole.
+1. Se un progetto ha un nome di configurazione *\<configuration name> \<platform name>*() che corrisponde esattamente al nome della nuova configurazione della soluzione, viene assegnata tale configurazione. I nomi delle configurazioni non rispettano la distinzione tra maiuscole e minuscole.
 
 1. Se il progetto include un nome di configurazione in cui la parte del nome corrisponde alla nuova configurazione per la soluzione, tale configurazione viene assegnata, anche se le piattaforme non coincidono.
 
@@ -97,9 +97,9 @@ In Visual Studio vengono usati i criteri seguenti per assegnare configurazioni d
 
 - Se in una configurazione di progetto non è specificata una piattaforma oppure ne è specificata una sola, viene trovata o aggiunta una configurazione per la soluzione il cui nome corrisponde a quello della nuova configurazione di progetto. Il nome predefinito di questa configurazione di soluzione non include un nome di piattaforma. assume il formato *\<project configuration name>* .
 
-- Se un progetto supporta più piattaforme, verrà trovata o aggiunta una configurazione per la soluzione per ogni piattaforma supportata. Il nome di ogni configurazione di soluzione include sia il nome della configurazione del progetto sia il nome della piattaforma e * \<project configuration name> \<platform name> *ha il formato.
+- Se un progetto supporta più piattaforme, verrà trovata o aggiunta una configurazione per la soluzione per ogni piattaforma supportata. Il nome di ogni configurazione di soluzione include sia il nome della configurazione del progetto sia il nome della piattaforma e *\<project configuration name> \<platform name>* ha il formato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

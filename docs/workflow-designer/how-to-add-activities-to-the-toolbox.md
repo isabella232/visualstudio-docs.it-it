@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6def442b6500ac1265f83aef49db8c79c8e05ae7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971674"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: aggiungere attività nella Casella degli strumenti
 
@@ -60,6 +60,6 @@ Le attività possono essere aggiunte alla **casella degli strumenti** nella solu
 
 6. L'attività personalizzata viene visualizzata nella **casella degli strumenti** sotto la categoria che era attiva prima dell'aggiunta dell'elemento. Se, ad esempio, la categoria **generale** è stata selezionata nella **casella degli strumenti** prima di aggiungere l'elemento della casella degli strumenti, l'attività viene visualizzata sotto la categoria **generale** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Uso di Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)

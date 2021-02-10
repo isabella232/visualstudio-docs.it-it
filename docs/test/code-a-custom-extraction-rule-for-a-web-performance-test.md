@@ -14,13 +14,13 @@ dev_langs:
 - VB
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e03a289ee95e9aefddb49154d1199fffa31ce3ca
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 09038afd3b8f359ed90639d7f35cb92c04241324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964602"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificare una regola di estrazione personalizzata per un test delle prestazioni Web
 
@@ -208,7 +208,7 @@ End Namespace
 
 Il metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> contiene le funzionalità principali di una regola di estrazione. Il metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> nell'esempio precedente assume il valore <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> che fornisce la risposta generata dalla richiesta coperta da questa regola di estrazione. La risposta contiene <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> che contiene tutti i tag nella risposta. I tag di input vengono filtrati da <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. In ogni tag di input viene cercato un attributo denominato `name` il cui valore è uguale all'utente che ha specificato il valore della proprietà `Name`. Se viene rilevato un tag con questo attributo corrispondente, viene eseguito un tentativo di estrarre un valore contenuto nell'attributo `value`, se esiste. Se presenti, il nome e il valore del tag vengono estratti e aggiunti al contesto del test Web. La regola di estrazione viene passata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

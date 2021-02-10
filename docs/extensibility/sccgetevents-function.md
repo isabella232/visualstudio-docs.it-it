@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91b3debf0e686ceece3048cf3d92b629e3359edd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4502dd1cdf5cb23f317cd29bee74460c5911482c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965161"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents (funzione)
 Questa funzione recupera un evento di stato in coda.
@@ -59,11 +59,11 @@ in Struttura del contesto del plug-in del controllo del codice sorgente.
 |SCC_E_OPNOTSUPPORTED|Questa funzione non è supportata.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione viene chiamata durante l'elaborazione inattiva per verificare se sono stati apportati aggiornamenti di stato per i file nel controllo del codice sorgente. Il plug-in del controllo del codice sorgente mantiene lo stato di tutti i file che conosce e ogni volta che una modifica dello stato è indicata dal plug-in, lo stato e il file associato vengono archiviati in una coda. Quando `SccGetEvents` viene chiamato il metodo, viene recuperato e restituito il primo elemento della coda. Questa funzione è vincolata a restituire solo le informazioni precedentemente memorizzate nella cache e deve avere un turnaround molto rapido (ovvero, nessuna lettura del disco o richiesta al sistema di controllo del codice sorgente per lo stato); in caso contrario, le prestazioni dell'IDE potrebbero iniziare a peggiorare.
 
  Se non è presente alcun aggiornamento dello stato per il report, il plug-in del controllo del codice sorgente archivia una stringa vuota nel buffer a cui punta `lpFileName` . In caso contrario, il plug-in archivia il nome del percorso completo del file per il quale sono state modificate le informazioni sullo stato e restituisce il codice di stato appropriato (uno dei valori descritti in dettaglio nel [codice di stato dei file](../extensibility/file-status-code-enumerator.md)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Codice di stato file](../extensibility/file-status-code-enumerator.md)
