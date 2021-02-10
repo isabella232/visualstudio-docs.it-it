@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 48d642c8a3b7883507c06453c0025badc299ce75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963419"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Determinare quale editor apre un file in un progetto
 Quando un utente apre un file in un progetto, l'ambiente viene sottoposto a un processo di polling, aprendo infine l'editor o la finestra di progettazione appropriata per tale file. La procedura iniziale utilizzata dall'ambiente è la stessa per gli editor standard e personalizzati. L'ambiente USA diversi criteri durante il polling dell'editor da usare per aprire un file e il pacchetto VSPackage deve coordinarsi con l'ambiente durante questo processo.

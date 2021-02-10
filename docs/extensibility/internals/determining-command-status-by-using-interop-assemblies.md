@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e46252cea550a2caaa81c92853220db4fa2b5b1a
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5473fffa00723735b022412e7f37f184e043df4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963445"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>Determinare lo stato del comando tramite assembly di interoperabilità
 Un pacchetto VSPackage deve tenere traccia dello stato dei comandi che è in grado di gestire. L'ambiente non è in grado di determinare quando un comando gestito all'interno del pacchetto VSPackage viene abilitato o disabilitato. È responsabilità del VSPackage informare l'ambiente sugli stati dei comandi, ad esempio lo stato dei comandi generali come **taglia**, **copia** e **Incolla**.
