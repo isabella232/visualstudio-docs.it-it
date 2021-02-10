@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 46e9b18f7bb34433ff86fe6a5bede436228d3ff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947697"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: eseguire il debug di un motore di debug personalizzato
 Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metodo. Ciò significa che la DE viene avviata sotto il controllo dell'istanza di che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Controlla il tipo di progetto. Tuttavia, l'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è in grado di eseguire il debug di de. Di seguito sono riportati i passaggi che consentono di eseguire il debug della DE personalizzata.
@@ -75,5 +75,5 @@ Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStud
 
 9. Se si sceglie di eseguire il debug del processo di avvio di un DE, è possibile eseguire i passaggi descritti nella procedura "debug di un motore di debug personalizzato" per connettersi al DE dopo l'avvio. In questo modo sono presenti tre istanze di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in esecuzione: una per l'origine del tipo di progetto, una seconda per il tipo di progetto di cui è stata creata un'istanza e una terza collegata alla de.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)

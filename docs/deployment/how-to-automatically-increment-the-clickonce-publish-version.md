@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d39654134177f3936bd2fbe72b6786ca9cf03c
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b84b0a8932bb9d8fd4738c2cd4924b61bb6faeb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947775"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Procedura: Incrementare automaticamente il numero di versione della pubblicazione dell'applicazione ClickOnce
 
@@ -37,13 +37,13 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Per disabilitare automaticamente l'incremento della versione di pubblicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
 3. Nella sezione **Pubblica versione** deselezionare la casella di controllo **incrementa automaticamente revisione a ogni versione** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Impostare la versione pubblicazione per un'applicazione ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)

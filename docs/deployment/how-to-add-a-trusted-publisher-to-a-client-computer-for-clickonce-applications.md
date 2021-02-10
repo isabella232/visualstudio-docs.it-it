@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c04b8d700d7739f0e4ef1fba259aab0595cea28c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382702"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947814"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedura: Aggiungere un autore attendibile a un computer client per applicazioni ClickOnce
 Con la distribuzione di applicazioni attendibili, è possibile configurare i computer client in modo che le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] siano eseguite con un livello di attendibilità superiore senza chiedere conferma all'utente. Le procedure seguenti illustrano come usare lo strumento da riga di comando CertMgr.exe per aggiungere un certificato dell'autore all'archivio editori attendibili in un computer client.
@@ -40,7 +40,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
 
 1. Ottenere un certificato digitale da un'autorità di certificazione.
 
-2. Esportare il certificato nel formato Base64 X.509( *.cer* ). Per altre informazioni sui formati di certificato, vedere [Esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Esportare il certificato nel formato Base64 X.509(*.cer*). Per altre informazioni sui formati di certificato, vedere [Esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Dal prompt dei comandi nei computer client eseguire il comando seguente:
 
@@ -50,7 +50,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
 
 1. Ottenere un certificato digitale da un'autorità di certificazione.
 
-2. Esportare il certificato nel formato Base64 X.509( *.cer* ). Per ulteriori informazioni sui formati di certificato, vedere [esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Esportare il certificato nel formato Base64 X.509(*.cer*). Per ulteriori informazioni sui formati di certificato, vedere [esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Dal prompt dei comandi nei computer client eseguire il comando seguente:
 
@@ -58,12 +58,12 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
+- [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
 - [Procedura: Abilitare le impostazioni di sicurezza ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

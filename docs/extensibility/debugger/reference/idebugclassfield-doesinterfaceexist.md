@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba732b698f7372772142fda73e71d9e22aa443a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b7116b9e675605863805fb413340ea8b45ec608
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947112"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 Determina se una specifica interfaccia è definita nella classe.
@@ -28,7 +28,7 @@ Determina se una specifica interfaccia è definita nella classe.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT DoesInterfaceExist( 
+HRESULT DoesInterfaceExist( 
    LPCOLESTR pszInterfaceName
 );
 ```
@@ -46,8 +46,8 @@ in Stringa contenente il nome dell'interfaccia da ricercare.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK, restituisce S_FALSE se l'interfaccia non esiste; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo ottiene un'enumerazione di tutte le interfacce e cerca l'interfaccia corrispondente nell'elenco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

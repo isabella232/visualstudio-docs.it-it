@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12317c549050be31ac9e19bc7b3d8a6683f743d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8648890e030799b985a4e917be8caf85292528a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947099"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 Crea un enumeratore per le classi di base di questa classe.
@@ -28,7 +28,7 @@ Crea un enumeratore per le classi di base di questa classe.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT EnumBaseClasses( 
+HRESULT EnumBaseClasses( 
    IEnumDebugFields** ppEnum
 );
 ```
@@ -47,7 +47,7 @@ out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK, restituisce S_SH_NO_BASE_CLASSES se non sono presenti classi base (e il `ppEnum` parametro è impostato su un valore null); in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Le classi base nell'oggetto enumeratore vengono specificate in ordine della classe di base più immediata (o più derivata) per la classe di base più remota. Ad esempio, date le classi C++:
 
 ```
@@ -59,6 +59,6 @@ class MyClass : Level2 { }
 
  L'enumerazione restituirà le classi base nell'ordine `Level2` , `Level1` , `Root` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

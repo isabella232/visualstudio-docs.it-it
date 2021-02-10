@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 546c5b2e-f166-4edb-9e61-57d797ca98a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 253ef509a60e8bb2ce177235f4b93b370e66f484
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7619f15e995aeb8d70897d74686a0e79d2532da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947047"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 Ottiene il nome visualizzabile del documento che contiene questo contesto del documento.
@@ -51,7 +51,7 @@ in Valore dell'enumerazione [GETNAME_TYPE](../../../extensibility/debugger/refer
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questo metodo in genere trasmette la chiamata al metodo [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) , a meno che il contesto del documento non venga scritto per archiviare il nome del documento stesso (come illustrato nell'esempio).
 
 ## <a name="example"></a>Esempio
@@ -94,6 +94,6 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

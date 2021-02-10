@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 607f4f4af3021389628fcc1be446ebbe95628b7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05226572d7f1b708745887338c654674e71d0f5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947082"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Crea un enumeratore per i costruttori per questa classe.
@@ -28,7 +28,7 @@ Crea un enumeratore per i costruttori per questa classe.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT EnumConstructors( 
+HRESULT EnumConstructors( 
    CONSTRUCTOR_ENUM   cMatch,
    IEnumDebugFields** ppEnum
 );
@@ -51,12 +51,12 @@ out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non sono presenti costruttori. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Ogni elemento dell'enumerazione è un oggetto [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) che descrive un metodo del costruttore.
 
  L'elenco dei costruttori non include in genere i costruttori predefiniti forniti da un compilatore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
