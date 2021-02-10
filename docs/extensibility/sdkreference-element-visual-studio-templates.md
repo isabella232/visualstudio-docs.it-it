@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a1272a4765559fcfcde1aa60c57099b5d707f46
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3ab748a309bf57af79753596ede11b371589faa8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941563"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Elemento SDKReference (modelli di Visual Studio)
 Specifica che il modello di elemento usa un riferimento all'SDK.
@@ -35,10 +35,10 @@ Specifica che il modello di elemento usa un riferimento all'SDK.
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -62,7 +62,7 @@ Specifica che il modello di elemento usa un riferimento all'SDK.
 ...
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Elemento References (modelli di Visual Studio)](../extensibility/references-element-visual-studio-templates.md)
 - [Elemento Reference (modelli di Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

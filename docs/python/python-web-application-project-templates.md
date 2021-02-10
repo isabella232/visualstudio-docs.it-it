@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939539"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -37,7 +37,7 @@ Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e ri
 
 ### <a name="blank-group"></a>Gruppo vuoto
 
-Tutti i modelli di ** \<framework> progetto Web vuoti** creano un progetto con codice standard più o meno minimo e le dipendenze necessarie dichiarate in un file di *requirements.txt* .
+Tutti i modelli di **\<framework> progetto Web vuoti** creano un progetto con codice standard più o meno minimo e le dipendenze necessarie dichiarate in un file di *requirements.txt* .
 
 | Modello | Descrizione |
 | --- | --- |
@@ -47,7 +47,7 @@ Tutti i modelli di ** \<framework> progetto Web vuoti** creano un progetto con c
 
 ### <a name="web-group"></a>Gruppo Web
 
-Tutti i modelli di ** \<Framework> progetto Web** creano un'app Web di avvio con una progettazione identica, indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
+Tutti i modelli di **\<Framework> progetto Web** creano un'app Web di avvio con una progettazione identica, indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
 
 | Modello | Descrizione |
 | --- | --- |
@@ -58,7 +58,7 @@ Tutti i modelli di ** \<Framework> progetto Web** creano un'app Web di avvio con
 
 ### <a name="polls-group"></a>Gruppo di sondaggi
 
-I modelli di ** \<framework> progetto Web di polling** creano un'app Web di base tramite la quale gli utenti possono votare domande di polling diverse. Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
+I modelli di **\<framework> progetto Web di polling** creano un'app Web di base tramite la quale gli utenti possono votare domande di polling diverse. Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
 
 | Modello | Descrizione |
 | --- | --- |
@@ -81,7 +81,7 @@ I servizi cloud di Microsoft Azure invece *supportano* il file *requirements.txt
 
 ## <a name="debugging"></a>Debug
 
-Quando si avvia un progetto Web per il debug, Visual Studio avvia un server Web locale su una porta casuale e apre il browser predefinito usando l'indirizzo e la porta specificati. Per specificare opzioni aggiuntive, fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà**e quindi selezionare la scheda **utilità di avvio Web** :
+Quando si avvia un progetto Web per il debug, Visual Studio avvia un server Web locale su una porta casuale e apre il browser predefinito usando l'indirizzo e la porta specificati. Per specificare opzioni aggiuntive, fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà** e quindi selezionare la scheda **utilità di avvio Web** :
 
 ![Proprietà dell'utilità di Web per il modello Web generico](media/template-web-launcher-properties.png)
 
@@ -145,7 +145,7 @@ Il comando **Converti in progetto servizio cloud Microsoft Azure** (immagine seg
 
 ![Comando Converti in progetto servizio cloud di Microsoft Azure](media/template-web-convert-menu.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sui modelli di elemento Python](python-item-templates.md)
 - [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

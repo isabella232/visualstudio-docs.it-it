@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 205a32c0c7c6bb10b8b0a58e62f5d6ba5cdca91f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941700"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 Ottiene informazioni su questo modulo.
@@ -29,14 +29,14 @@ Ottiene informazioni su questo modulo.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetInfo( 
+HRESULT GetInfo( 
    MODULE_INFO_FIELDS dwFields,
    MODULE_INFO*       pInfo
 );
 ```
 
 ```cpp
-int GetInfo( 
+int GetInfo( 
    enum_MODULE_INFO_FIELDS dwFields,
    MODULE_INFO[]           pInfo
 );
@@ -52,10 +52,10 @@ in Combinazione di flag dell'enumerazione [MODULE_INFO_FIELDS](../../../extensib
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) contiene il nome del modulo che viene visualizzato nella finestra **moduli** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

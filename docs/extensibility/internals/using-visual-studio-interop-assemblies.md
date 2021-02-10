@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c52dd2cf8c76cdef9be5080950d5f1b9e621e70
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 1764cc735ca836feada2ad6f794f2bc8520fef41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941710"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Uso degli assembly di interoperabilità di Visual Studio
 Gli assembly di interoperabilità di Visual Studio consentono alle applicazioni gestite di accedere alle interfacce COM che forniscono l'estendibilità di Visual Studio. Esistono alcune differenze tra le interfacce COM diritte e le relative versioni di interoperabilità. Gli HRESULT, ad esempio, vengono in genere rappresentati come valori int e devono essere gestiti in modo analogo alle eccezioni e i parametri (in particolare i parametri out) vengono trattati in modo diverso.
@@ -132,5 +132,5 @@ else
 
  I metodi gestiti che chiamano interfacce di questo tipo devono estrarre il primo elemento dalla matrice [out]. Questo elemento può essere considerato come se fosse un `retval` valore restituito dall'interfaccia com corrispondente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interoperabilità con codice non gestito](/dotnet/framework/interop/index)

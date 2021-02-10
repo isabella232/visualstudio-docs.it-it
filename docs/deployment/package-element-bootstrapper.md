@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940345"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Elemento del pacchetto &gt; (programma di avvio automatico)
 L' `Package` elemento è l'elemento XML di primo livello all'interno di un file di pacchetto.
@@ -149,7 +149,7 @@ L' `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 |--------------------| - |
 | `Culture` | Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina il linguaggio da utilizzare. Questo attributo è una chiave dell' `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione. |
 | `Name` | Obbligatorio. Nome del pacchetto visualizzato allo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Questo attributo è una chiave nell' `Strings` elemento, che deve contenere un `String` elemento con le `Name` proprietà e `Culture` impostate in modo da corrispondere alle `Name` `Culture` proprietà e di `Package` . |
-| `LicenseAgreement` | facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto di licenza End-User (EULA).  Questo file può essere in formato testo normale (con *estensione txt* ) o RTF. ( *RTF* ) |
+| `LicenseAgreement` | facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto di licenza End-User (EULA).  Questo file può essere in formato testo normale (con *estensione txt*) o RTF. (*RTF*) |
 
 ## <a name="example"></a>Esempio
  Nell'esempio di codice riportato di seguito viene illustrato un file di pacchetto completo per ridistribuire il .NET Framework 2,0.
@@ -189,5 +189,5 @@ L' `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 </Package>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)

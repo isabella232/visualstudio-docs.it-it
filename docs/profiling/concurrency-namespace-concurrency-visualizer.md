@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 001fbfce-a278-4502-aa27-26d65dd61453
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb9f2cee62c126f7a8b91fb7be57f558c9a7e5c
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 884af287ced5a13cf4483e01617ffaf594d03e66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941203"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Spazio dei nomi Concurrency (visualizzatore di concorrenza)
 Lo spazio dei nomi `Concurrency` fornisce classi e funzioni che consentono l'accesso al runtime di concorrenza, un framework di programmazione simultanea per C++. Per altre informazioni, vedere [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).
@@ -41,5 +41,5 @@ namespace Concurrency;
 ## <a name="requirements"></a>Requisiti
  **Intestazione:** cvmarkersobj.h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimenti alla libreria C](../profiling/c-library-reference.md)

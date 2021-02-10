@@ -12,13 +12,13 @@ helpviewer_keywords:
 - install multiple versions of Visual Studio
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
-ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+manager: jmartens
+ms.openlocfilehash: f17759d186805dc72623f27c9f254c7a6c0d36e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941528"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare versioni di Visual Studio side-by-side
 
@@ -84,7 +84,7 @@ Per informazioni specifiche del linguaggio, vedere l'argomento corrispondente ne
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installa Visual Studio](install-visual-studio.md?view=vs-2017&preserve-view=true)
 * [Trasferire, migrare e aggiornare progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true)
@@ -103,7 +103,7 @@ Per informazioni specifiche del linguaggio, vedere l'argomento corrispondente ne
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installa Visual Studio](install-visual-studio.md)
 * [Trasferire, migrare e aggiornare progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

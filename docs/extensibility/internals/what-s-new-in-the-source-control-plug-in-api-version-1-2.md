@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eca5afe8ea9bb1404acf342cc7edbe1100888c6e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 9a7c1b57f509689d103a9f90a49c83a9489ac74f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941580"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Novità dell'API del plug-in del controllo del codice sorgente versione 1,2&#39;
 In questa sezione viene evidenziata la funzionalità di controllo del codice sorgente avanzata nell'API del plug-in del controllo del codice sorgente versione 1,2. Di seguito sono elencate le nuove funzionalità della versione 1,2:
@@ -34,5 +34,5 @@ In questa sezione viene evidenziata la funzionalità di controllo del codice sor
 
 - [Rimozione delle informazioni del controllo del codice sorgente da. Proj e. File sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) spiega in che modo l'API del plug-in del controllo del codice sorgente versione 1,2 archivia le informazioni sui progetti e le soluzioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Per iniziare](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

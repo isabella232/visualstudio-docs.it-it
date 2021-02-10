@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 37779a8c790e50e63f70dfd9023d3ba6a84d0170
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940150"
 ---
 # <a name="command-placement-guidelines"></a>Linee guida sul posizionamento del comando
 Le procedure consigliate per posizionare i comandi in Visual Studio Integrated Development Environment (IDE) variano a seconda delle dimensioni del set di comandi. I comandi vengono definiti e posizionati in base alle informazioni contenute nei file con *estensione vsct* .
@@ -57,6 +57,6 @@ Le procedure consigliate per posizionare i comandi in Visual Studio Integrated D
 
 - Nella `CommandPlacements` sezione elemento, le voci che popolano un determinato menu o gruppo devono essere adiacenti l'una all'altra. Questa operazione facilita la leggibilità e rende `Priority` più semplice determinare le classificazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

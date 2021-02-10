@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940865"
 ---
 # <a name="ribbon-overview"></a>Panoramica della barra multifunzione
   La barra multifunzione è un modo per organizzare i comandi correlati in modo che siano più facili da trovare. I comandi vengono visualizzati come controlli sulla barra multifunzione. I controlli sono organizzati in *gruppi* lungo una striscia orizzontale sul bordo superiore di una finestra dell'applicazione. I gruppi correlati sono organizzati in schede.

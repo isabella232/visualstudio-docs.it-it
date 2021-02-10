@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, build process overview
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939669"
 ---
 # <a name="how-msbuild-builds-projects"></a>Come vengono compilati i progetti in MSBuild
 
@@ -26,7 +26,7 @@ Il processo di compilazione completo è costituito dall' [avvio iniziale](#start
 
 ## <a name="startup"></a>Avvio
 
-MSBuild può essere richiamato da Visual Studio tramite il modello a oggetti MSBuild in *Microsoft.Build.dll*oppure richiamando il file eseguibile direttamente nella riga di comando o in uno script, ad esempio nei sistemi ci. In entrambi i casi, gli input che interessano il processo di compilazione includono il file di progetto (o l'oggetto di progetto interno a Visual Studio), possibilmente un file di soluzione, le variabili di ambiente e le opzioni della riga di comando o gli equivalenti del modello a oggetti. Durante la fase di avvio, le opzioni della riga di comando o gli equivalenti del modello a oggetti vengono usati per configurare le impostazioni di MSBuild, ad esempio la configurazione dei logger. Le proprietà impostate nella riga di comando usando `-property` l' `-p` opzione o sono impostate come proprietà globali, che eseguono l'override di tutti i valori che verrebbero impostati nei file di progetto, anche se i file di progetto vengono letti in un secondo momento.
+MSBuild può essere richiamato da Visual Studio tramite il modello a oggetti MSBuild in *Microsoft.Build.dll* oppure richiamando il file eseguibile direttamente nella riga di comando o in uno script, ad esempio nei sistemi ci. In entrambi i casi, gli input che interessano il processo di compilazione includono il file di progetto (o l'oggetto di progetto interno a Visual Studio), possibilmente un file di soluzione, le variabili di ambiente e le opzioni della riga di comando o gli equivalenti del modello a oggetti. Durante la fase di avvio, le opzioni della riga di comando o gli equivalenti del modello a oggetti vengono usati per configurare le impostazioni di MSBuild, ad esempio la configurazione dei logger. Le proprietà impostate nella riga di comando usando `-property` l' `-p` opzione o sono impostate come proprietà globali, che eseguono l'override di tutti i valori che verrebbero impostati nei file di progetto, anche se i file di progetto vengono letti in un secondo momento.
 
 Le sezioni successive sono relative ai file di input, ad esempio i file di soluzione o di progetto.
 
@@ -240,6 +240,6 @@ Molti comportamenti di compilazione possono essere configurati impostando le pro
 
 Il processo MSBuild presenta diversi altri punti di estensione diversi da quelli descritti qui. Vedere [personalizzare la compilazione](customize-your-build.md). e [come estendere il processo di compilazione di Visual Studio](how-to-extend-the-visual-studio-build-process.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [MSBuild](msbuild.md)

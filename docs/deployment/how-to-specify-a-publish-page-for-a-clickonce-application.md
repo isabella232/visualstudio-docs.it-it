@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf70f5ffdd81688943892c06fdf98aae73d6c57
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f58b7d8d4244f7c429c3866bf76c514bf24164ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940449"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce
 Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, viene generata e pubblicata una pagina Web predefinita (publish.htm) insieme all'applicazione. Questa pagina contiene il nome dell'applicazione, un collegamento per installare l'applicazione e/o tutti i prerequisiti e un collegamento a un argomento della guida che descrive [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . La proprietà **pubblica pagina** per il progetto consente di specificare un nome per la pagina Web per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
@@ -35,7 +35,7 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Per specificare una pagina Web personalizzata per un'applicazione ClickOnce
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **proprietà** dal menu **progetto** .
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà** dal menu **progetto** .
 
 2. Selezionare il riquadro **pubblica** .
 
@@ -49,7 +49,7 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Per impedire l'avvio della pagina di pubblicazione ogni volta che si pubblica
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **proprietà** dal menu **progetto** .
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà** dal menu **progetto** .
 
 2. Selezionare il riquadro **pubblica** .
 
@@ -59,7 +59,7 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 5. Nella finestra di dialogo **Opzioni di pubblicazione** deselezionare la casella di controllo **Apri la pagina Web di distribuzione dopo la pubblicazione** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Procedura: Personalizzare la pagina Web predefinita ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c20edbf4-3d4f-4f66-b1d5-753a0d858ed8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc33c3a413d788bd9a5a30a7db69c4c7766a3392
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f1eb27a311f1b61e3e36b4c9eaa65de7f3fd8f1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939500"
 ---
 # <a name="combinepath-task"></a>attività CombinePath
 
@@ -64,12 +64,12 @@ Combina i percorsi specificati in un singolo percorso.
   </Target>
 ```
 
-L'unica proprietà che `CombinePath` consente di essere un elenco è `Paths` , nel qual caso l'output è anche un elenco. Quindi, se `$(PublishRoot)` è *C:\Site1 \\* e `$(ReleaseDirectory)` è *Release \\* ed `@(LangDirectories)` è *en-US \; fr-fr \\* , in questo esempio vengono create le cartelle:
+L'unica proprietà che `CombinePath` consente di essere un elenco è `Paths` , nel qual caso l'output è anche un elenco. Quindi, se `$(PublishRoot)` è *C:\Site1 \\* e `$(ReleaseDirectory)` è *Release \\* ed `@(LangDirectories)` è *en-US \; fr-fr \\*, in questo esempio vengono create le cartelle:
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

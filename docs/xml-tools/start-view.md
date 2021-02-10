@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2c59d1af2802876305fa218bd169fae805f4f3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: ac5ad8169cf7cabcce8d072a723c0535b129408c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940774"
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 
@@ -47,7 +47,7 @@ I seguenti pulsanti sono abilitati nella barra degli strumenti di Progettazione 
 |**Mostra visualizzazione modello di contenuto**|Passa alla visualizzazione modello di contenuto. È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **2**.|
 |**Mostra visualizzazione grafico**|Passa alla visualizzazione grafico. È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **3**.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
 - [Visualizzazione grafico](../xml-tools/graph-view.md)

@@ -7,17 +7,17 @@ ms.technology: vs-python
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4318cd98de166210a8e8744840967942006b8ea6
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: dc47bdb2913e2d18998663967d4da3c0a7dcdd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939942"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -196,14 +196,14 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
 
 **Domanda: qual è la differenza tra i comandi Avvia senza eseguire debug e Avvia debug?**
 
-**Risposta**: **Avvia debug** si usa per eseguire l'app nel contesto del [debugger di Visual Studio](../python/debugging-python-in-visual-studio.md), che consente di impostare punti di interruzione, esaminare le variabili ed eseguire il codice riga per riga. Nel debugger le app possono essere più lente a causa dei vari hook che rendono possibile il debug. **Avvia senza eseguire debug**, al contrario, esegue l'app direttamente come se la si eseguisse dalla riga di comando, senza alcun contesto di debug, avviando anche automaticamente un browser e passando all'URL specificato nella scheda ** Debug** delle proprietà del progetto.
+**Risposta**: **Avvia debug** si usa per eseguire l'app nel contesto del [debugger di Visual Studio](../python/debugging-python-in-visual-studio.md), che consente di impostare punti di interruzione, esaminare le variabili ed eseguire il codice riga per riga. Nel debugger le app possono essere più lente a causa dei vari hook che rendono possibile il debug. **Avvia senza eseguire debug**, al contrario, esegue l'app direttamente come se la si eseguisse dalla riga di comando, senza alcun contesto di debug, avviando anche automaticamente un browser e passando all'URL specificato nella scheda **Debug** delle proprietà del progetto.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 È stata eseguita la prima app Python in Visual Studio. In questo modo si sono apprese alcune informazioni sull'uso di Visual Studio come ambiente di sviluppo integrato per Python.
 
 > [!div class="nextstepaction"]
-> [Deploy the app to Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) (Pubblicare un'app nel servizio App di Azure)
+> [Distribuire l'app nel servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 I passaggi eseguiti in questa guida introduttiva sono piuttosto generici e si è probabilmente capito che questi passaggi possono e devono essere automatizzati. Tale automazione è il ruolo dei modelli di progetto di Visual Studio. Scegliere la [Guida introduttiva: Creare un progetto Python da un modello](../python/quickstart-02-python-in-visual-studio-project-from-template.md) per una dimostrazione in cui viene creata un'app Web simile a quella creata in questo articolo, ma con un numero minore di passaggi.
 

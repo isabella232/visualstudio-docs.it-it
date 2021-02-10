@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 141e4acf7db61130de859f38891670e69d3bd640
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487842"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940020"
 ---
 # <a name="web-site-support"></a>Supporto per siti Web
 Un sistema di progetto di sito Web è un sistema di progetto che consente di creare progetti Web. I progetti Web a loro volta creano applicazioni Web. Un progetto di sito Web genera un file eseguibile per ogni pagina Web a cui è associato il codice. I file eseguibili aggiuntivi vengono generati dai file di codice sorgente nella cartella/App_Code.

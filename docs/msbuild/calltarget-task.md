@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3a2f124fa7e83e9f85e572276eed1851f42f7047
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939552"
 ---
 # <a name="calltarget-task"></a>attività CallTarget
 
@@ -69,7 +69,7 @@ Quando `CallTarget` si usa, MSBuild valuta la destinazione chiamata in un nuovo 
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Server di destinazione](../msbuild/msbuild-targets.md)

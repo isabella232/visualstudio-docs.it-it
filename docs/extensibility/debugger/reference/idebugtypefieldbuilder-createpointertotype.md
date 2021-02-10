@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 871f061df1fdc60362f39fab36136eb71f5d7e50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee3beb4bd79c438430ddfc2aac0fc0a5894404b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940189"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Crea un puntatore al tipo specificato.
@@ -50,5 +50,5 @@ out Restituisce il puntatore rappresentato da un nuovo oggetto **IDebugField** .
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

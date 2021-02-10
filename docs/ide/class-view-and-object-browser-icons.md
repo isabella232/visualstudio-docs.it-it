@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Object Browser, icons in Class View
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
-ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
+ms.openlocfilehash: 551033ce7dcd7b8755124b86734243470442b6e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98773342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939981"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -35,7 +35,7 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
 |![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|Proprietà|
 |![Simbolo struttura](../ide/media/vxstruct_icon.gif)|Struttura|![Icona Campo](../ide/media/vxfield_icon.gif)|Campo o variabile|
-|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Event|
+|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Evento|
 |![Simbolo di enumerazione](../ide/media/vxenum_icon.gif)|Enumerazione|![Icona Costante](../ide/media/vxconstant_icon.gif)|Costante|
 |![Simbolo definizione dei tipi](../ide/media/vxtypedef_icon.gif)|TypeDef|![Simbolo di enumerazione elementi](../ide/media/vxenumitem_icon.gif)|Elemento di enumerazione|
 |![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif)|Modulo|![Simbolo elemento mappa](../ide/media/vxmapitem_icon.gif)|Elemento mappa|
@@ -69,6 +69,6 @@ Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne 
 > [!TIP]
 > Per visualizzare altre immagini dell'applicazione e icone visualizzate in Visual Studio, scaricare la libreria di [**Immagini di Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visualizzazione della struttura del codice](../ide/viewing-the-structure-of-code.md)

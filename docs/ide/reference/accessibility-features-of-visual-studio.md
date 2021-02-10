@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43a2db3f3585dbfa68bf217cc29fb7b73cc35485
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76113796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939799"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
 
@@ -38,7 +38,7 @@ Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disp
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Accessibilità per Visual Studio per Mac](/visualstudio/mac/accessibility).
 
-Per altre informazioni, vedere gli argomenti seguenti:
+Per altre informazioni, vedere i seguenti argomenti:
 
 - [Procedura: impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
@@ -60,6 +60,6 @@ Per altre informazioni, vedere gli argomenti seguenti:
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Prodotti e servizi Microsoft per l'accessibilità](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

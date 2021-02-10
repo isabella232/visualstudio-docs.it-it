@@ -10,15 +10,15 @@ f1_keywords:
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c4b00ce4ebdfc253735783d20fb90c62bae49b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c1399689b2df82102a193b5ab698c0cd9bd2f7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939786"
 ---
 # <a name="refactor-code"></a>Effettuare il refactoring del codice
 
@@ -32,7 +32,7 @@ Sono disponibili operazioni di refactoring diverse per i differenti linguaggi di
 - Per informazioni sul refactoring di codice C++, vedere [Scrittura e refactoring del codice (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
 - Il supporto del refactoring per F# è disponibile tramite [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), un'estensione di Visual Studio di terze parti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Azioni rapide](../ide/quick-actions.md)
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)

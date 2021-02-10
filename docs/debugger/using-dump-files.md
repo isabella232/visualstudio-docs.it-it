@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 993b5f61d8517d5638cb785fa2d79b47f80d1caf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940553"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Dump di file nel debugger di Visual Studio
 
@@ -114,7 +114,7 @@ Visual Studio esegue automaticamente la ricerca di questi percorsi per i file *e
 
 Se Visual Studio non riesce a trovare i file necessari per eseguire il debug di un modulo nel dump, viene visualizzato un file **binario non** trovato, non è stato **trovato alcun simbolo** oppure non è stata trovata alcuna pagina di **origine** . Queste pagine forniscono informazioni dettagliate sulla causa del problema e forniscono collegamenti all'azione che consentono di individuare i file. Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

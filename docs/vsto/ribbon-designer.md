@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940917"
 ---
 # <a name="ribbon-designer"></a>Finestra di progettazione della barra multifunzione
   La finestra di progettazione della barra multifunzione è un'area di progettazione visiva. Utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede, gruppi e controlli personalizzati alla barra multifunzione di un'applicazione Microsoft Office.
@@ -177,14 +177,14 @@ ms.locfileid: "97528004"
 
  Nella tabella seguente sono illustrati i tasti di scelta rapida che si applicano a tutti i controlli.
 
-|Azione|Tasto di scelta rapida|
+|Azione|Tasti di scelta rapida|
 |------------|-----------------------|
 |Spostare un controllo prima del controllo precedente nell'elenco.|**CTRL** + **In alto**<br /><br /> **CTRL** + A **sinistra**|
 |Spostare un controllo dopo il controllo successivo nell'elenco.|**CTRL** + In **basso**<br /><br /> **CTRL** + A **destra**|
 |Spostare la selezione da un controllo a un altro nello stesso gruppo. Per un pannello a discesa, spostarsi tra il controllo padre e i controlli nel pannello a discesa.|**Attivo**<br /><br /> **Giù**|
 |Eseguire l'iterazione in tutti i controlli.|**TAB**|
 |Eseguire l'iterazione fino al contrario di tutti i controlli.|**Sposta** + **Scheda**|
-|Elimina il controllo o il set di controlli selezionato.|**Eliminazione**|
+|Elimina il controllo o il set di controlli selezionato.|**Elimina**|
 |Copiare i controlli selezionati.|**CTRL** + **C**|
 |Taglia i controlli selezionati.|**CTRL** + **X**|
 |Incollare i controlli dagli Appunti.|**CTRL** + **V**|
@@ -193,15 +193,15 @@ ms.locfileid: "97528004"
 
  I tasti di scelta rapida che si applicano solo al menu Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> e <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> sono illustrati nella tabella seguente.
 
-|Azione|Tasto di scelta rapida|
+|Azione|Tasti di scelta rapida|
 |------------|-----------------------|
 |Selezionare il controllo padre se il pannello a discesa è aperto ed è selezionato un controllo nel pannello a discesa.|**Sinistra**|
 |Chiudere il pannello a discesa se il pannello a discesa è aperto e il controllo padre è selezionato.|**Sinistra**|
-|Aprire il pannello a discesa.|**Destra**|
-|Selezionare il primo controllo nel pannello a discesa se il pannello a discesa è aperto.|**Destra**|
+|Aprire il pannello a discesa.|**Ok**|
+|Selezionare il primo controllo nel pannello a discesa se il pannello a discesa è aperto.|**Ok**|
 |Chiudere un pannello a discesa.|**ESC**|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

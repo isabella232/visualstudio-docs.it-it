@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cdbc7600a395fe9fd30cad7deaef81d46411f2c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 567e7fdedbf408ce9cac137f2b240626fd16d10c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940228"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 Ottiene il codice di uscita per un thread.
@@ -28,13 +28,13 @@ Ottiene il codice di uscita per un thread.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetExitCode ( 
+HRESULT GetExitCode ( 
    DWORD* pdwExit
 );
 ```
 
 ```csharp
-int GetExitCode ( 
+int GetExitCode ( 
    out uint pdwExit
 );
 ```
@@ -46,5 +46,5 @@ out Restituisce il codice di uscita del thread.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

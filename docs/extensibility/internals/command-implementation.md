@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76b1f564c883d1ce03748f560b595cfa44a28b37
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 2031fd74a10c8725157908eaa906c1963a477526
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940111"
 ---
 # <a name="command-implementation"></a>Implementazione del comando
 Per implementare un comando in un VSPackage, è necessario eseguire le attività seguenti:
@@ -135,6 +135,6 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

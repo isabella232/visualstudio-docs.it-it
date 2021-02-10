@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2fdd0b67075a66663146d706d8f82e8c5d9f76e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940540"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicare al debugger quale tipo visualizzare usando l'attributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
@@ -67,7 +67,7 @@ In Visual Basic non è disponibile la sintassi dei tipi aperti, pertanto non è 
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Utilizzo dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
 - [Creare viste personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md)

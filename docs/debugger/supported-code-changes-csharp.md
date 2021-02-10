@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4fc3f49038a44b2b2bd5b467d6e1874f8a9a9803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940761"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifiche al codice supportate (C# e Visual Basic)
 La funzionalità Modifica e continuazione è in grado di gestire la maggior parte dei tipi di modifiche al codice all'interno del corpo del metodo. Tuttavia, non è possibile applicare durante il debug la maggior parte delle modifiche all'esterno del corpo del metodo nonché alcune modifiche all'interno del corpo del metodo. Per applicare tali modifiche non supportate, interrompere il debug e riavviarlo utilizzando una versione aggiornata del codice.
@@ -58,8 +58,8 @@ La tabella seguente illustra le modifiche che possono essere apportate a C# e Vi
 |Elemento/funzionalità del linguaggio|Operazione di modifica non supportata|
 |-|-|
 |Tutti gli elementi di codice|Ridenominazione|
-|Spazi dei nomi|Aggiungi|
-|Spazi dei nomi, tipi, membri|Delete|
+|Spazi dei nomi|Add|
+|Spazi dei nomi, tipi, membri|Elimina|
 |Generics|Aggiungi o modifica|
 |Interfacce|Modifica|
 |Tipi|Aggiungi membro astratto o virtuale, Aggiungi override (vedere [i dettagli](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
@@ -76,7 +76,7 @@ La tabella seguente illustra le modifiche che possono essere apportate a C# e Vi
 |Operatori o indicizzatori|Modificare un parametro di tipo, un tipo di base, un tipo delegato o un tipo restituito |
 |blocchi catch|Modificare quando contiene un'istruzione attiva|
 |blocchi try-catch-finally|Modificare quando contiene un'istruzione attiva|
-|utilizzo di istruzioni|Aggiungi|
+|utilizzo di istruzioni|Add|
 |metodi o espressioni lambda asincrone|Modificare un metodo/lambda asincrono in un progetto destinato a .NET Framework 4 e inferiore (vedere [i dettagli](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Iterators|Modificare un iteratore in un progetto destinato a .NET Framework 4 e inferiore (vedere [i dettagli](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 
@@ -107,6 +107,6 @@ Le app e le piattaforme non supportate includono ASP.NET 5, Silverlight 5 e Wind
 
 - Debug di una versione precedente del codice dopo l'esito negativo della compilazione di una nuova versione a causa di errori di compilazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Modifica e continuazione (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 - [Procedura: Usare Modifica e continuazione (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de6a8ffbaa0fb10929d013a351ebffa8e3f4b529
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62999049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939435"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -25,19 +25,19 @@ Durante la digitazione di una funzione o di un'altra istruzione, IntelliSense of
 
 ![Menu di completamento automatico di IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Premendo **Tab** (o **invio**o **spazio**, a seconda della modalità di impostazione delle opzioni), inserisce l'elemento selezionato nell'elenco a discesa. È possibile modificare la selezione con i tasti di direzione.
+Premendo **Tab** (o **invio** o **spazio**, a seconda della modalità di impostazione delle opzioni), inserisce l'elemento selezionato nell'elenco a discesa. È possibile modificare la selezione con i tasti di direzione.
 
 IntelliSense offre anche suggerimenti per i membri di oggetti R:
 
 ![Suggerimenti di IntelliSense per i membri di un oggetto](media/intellisense-auto-complete-r-objects.png)
 
-Se si preme **ESC** , il menu viene eliminato completamente. È possibile riportare il backup **Ctrl**con + **lo spazio**CTRL.
+Se si preme **ESC** , il menu viene eliminato completamente. È possibile riportare il backup con + **lo spazio** CTRL.
 
 Se si digita il segno di `(` aperta per una chiamata di funzione viene inserito il segno di `)` chiusa e viene ripristinato il supporto per la firma come illustrato in precedenza:
 
 ![Supporto per la firma per una funzione di IntelliSense](media/intellisense-function-signature.png)
 
-Anche in questo caso, **ESC Annulla** il popup; per le firme delle funzioni, è possibile riportarle **Ctrl**con + **Shift** + **lo spazio**CTRL.
+Anche in questo caso, **ESC Annulla** il popup; per le firme delle funzioni, è possibile riportarle con +  + **lo spazio** CTRL.
 
 > [!Tip]
 > Se il parametro consente di nascondere il testo sottostante, tenere premuto il tasto **CTRL** per rendere il testo della guida del parametro trasparente.

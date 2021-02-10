@@ -14,15 +14,15 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], threading support
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940800"
 ---
 # <a name="threading-support-in-office"></a>Supporto del threading in Office
   Questo articolo fornisce informazioni sul supporto del threading nel modello a oggetti Microsoft Office. Il modello a oggetti di Office non è thread-safe, ma è possibile usare più thread in una soluzione Office. Le applicazioni di Office sono Server Component Object Model (COM). COM consente ai client di chiamare server COM su thread arbitrari. Per i server COM che non sono thread-safe, COM fornisce un meccanismo per serializzare le chiamate simultanee in modo da eseguire un solo thread logico sul server in qualsiasi momento. Questo meccanismo è noto come modello di Apartment a thread singolo (STA). Poiché le chiamate vengono serializzate, i chiamanti possono essere bloccati per periodi di tempo mentre il server è occupato o gestisce altre chiamate in un thread in background.
@@ -73,7 +73,7 @@ ms.locfileid: "97524192"
 ## <a name="modeless-forms"></a>Moduli non modale
  Un form non modale consente un tipo di interazione con l'applicazione mentre viene visualizzato il modulo. L'utente interagisce con il modulo e il modulo interagisce con l'applicazione senza chiudere. Il modello a oggetti di Office supporta i moduli gestiti non in modalità. Tuttavia, non devono essere usati in un thread in background.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Threading (C#)](/dotnet/csharp/programming-guide/concepts/threading/index)
 - [Threading (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)
 - [Usare thread e Threading](/dotnet/standard/threading/using-threads-and-threading)

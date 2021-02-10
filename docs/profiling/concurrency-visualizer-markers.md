@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c3ff013f546393447b8303575489164a3a7be00a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941138"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcatori del visualizzatore di concorrenza
 I marcatori del visualizzatore di concorrenza sono icone che rappresentano eventi in un'app.  In genere, l'applicazione genera questi eventi per definire fasi o occorrenze di un'applicazione.  Gli eventi possono essere generati dall'app o da librerie e runtime usati dall'app.
@@ -62,7 +62,7 @@ I marcatori del visualizzatore di concorrenza sono icone che rappresentano event
 ## <a name="markers-from-eventsource"></a>Marcatori di EventSource
  Il visualizzatore di concorrenza può visualizzare anche eventi EventSource.  Per altre informazioni, vedere [Visualizzazione di eventi EventSource come marcatori](../profiling/visualizing-eventsource-events-as-markers.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Marcatori di flag](../profiling/flag-markers.md)
 - [Marcatori dei messaggi](../profiling/message-markers.md)
 - [Marcatori span](../profiling/span-markers.md)

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9edee5f8128933b2ecb36434a64d39c40d3d799f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941307"
 ---
 # <a name="properties-of-domain-roles"></a>Proprietà dei ruoli di dominio
 Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per informazioni sui ruoli di dominio, vedere informazioni su [modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un linguaggio Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -31,11 +31,11 @@ Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per i
 |Nome|Nome del ruolo del dominio. Questa proprietà non può contenere spazi vuoti.|Nome della classe di dominio dell'assegnatario di ruolo per questo ruolo.|
 |Propaga la copia|`DoNotPropagateCopy` -L'assegnatario di ruolo copiato non avrà alcuna copia di questo collegamento.<br /><br /> `PropagateCopyToLinkOnly` -Il collegamento copiato punta all'assegnatario di ruolo opposto esistente.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Il collegamento copiato punta a una copia dell'assegnatario di ruolo opposto.|`PropagateCopyToLinkAndOppositeRolePlayer` per i ruoli di origine degli incorporamenti.<br /><br /> `DoNotPropagateCopy` per altri ruoli.<br /><br /> Per altre informazioni, vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md)|
 |Propaga l'eliminazione|`True` per eliminare l'elemento che svolge questo ruolo quando il collegamento associato viene eliminato.|`True` per la destinazione di un ruolo di incorporamento.<br /><br /> `False` per altri ruoli.|
-|Nome proprietà|Nome della proprietà generata nel codice dell'assegnatario di ruolo. Questo nome non può contenere spazi vuoti.|Nome del ruolo opposto se il ruolo ha una molteplicità zero-a-uno o uno-a-uno. in caso contrario, il nome plurale del ruolo opposto.|
+|Nome della proprietà|Nome della proprietà generata nel codice dell'assegnatario di ruolo. Questo nome non può contenere spazi vuoti.|Nome del ruolo opposto se il ruolo ha una molteplicità zero-a-uno o uno-a-uno. in caso contrario, il nome plurale del ruolo opposto.|
 |Assegnatario di ruolo|Classe di dominio dell'elemento che può riprodurre questo ruolo nella relazione. Questa proprietà è di sola lettura.|Classe di dominio dell'assegnatario di ruolo per questo ruolo.|
 |Note|Note informali associate al ruolo del dominio.|<None\>|
 |Category|Categoria in cui la proprietà generata viene visualizzata nella finestra **Proprietà** della finestra di progettazione generata. Se questa proprietà è vuota, la proprietà generata viene visualizzata sotto la categoria **varie**|<None\>|
-|Description|Descrizione utilizzata per documentare il codice e utilizzata nell'interfaccia utente della finestra di progettazione generata.<br /><br /> La descrizione viene visualizzata nella descrizione comando IntelliSense per la proprietà generata nella classe assegnatario di ruolo.|`Description for`*nome completo del ruolo*|
+|Descrizione|Descrizione utilizzata per documentare il codice e utilizzata nell'interfaccia utente della finestra di progettazione generata.<br /><br /> La descrizione viene visualizzata nella descrizione comando IntelliSense per la proprietà generata nella classe assegnatario di ruolo.|`Description for`*nome completo del ruolo*|
 |Nome visualizzato|Nome visualizzato nella finestra di progettazione generata per il ruolo di dominio.|Valore regolato della proprietà Name.|
 |Parola chiave della Guida|Parola chiave facoltativa utilizzata per indicizzare la Guida sensibile al contesto per il ruolo di dominio.|\<none>|
 |Nome visualizzato proprietà|Nome visualizzato nella finestra di progettazione generata per la proprietà del ruolo generata.|Valore regolato della proprietà del nome della proprietà.|

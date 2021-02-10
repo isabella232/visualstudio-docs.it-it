@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a254de60995eb5e7902eda80cf50c4af227a756f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940280"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Recupera un elenco degli stack frame per il thread.
@@ -28,7 +28,7 @@ Recupera un elenco degli stack frame per il thread.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT EnumFrameInfo ( 
+HRESULT EnumFrameInfo ( 
    FRAMEINFO_FLAGS        dwFieldSpec,
    UINT                   nRadix,
    IEnumDebugFrameInfo2** ppEnum
@@ -36,7 +36,7 @@ HRESULT EnumFrameInfo ( 
 ```
 
 ```csharp
-int EnumFrameInfo ( 
+int EnumFrameInfo ( 
    enum_FRAMEINFO_FLAGS     dwFieldSpec,
    uint                     nRadix,
    out IEnumDebugFrameInfo2 ppEnum
@@ -56,10 +56,10 @@ out Restituisce un oggetto [IEnumDebugFrameInfo2](../../../extensibility/debugge
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I frame del thread vengono enumerati in ordine, con il frame corrente enumerato per primo e il frame meno recente enumerato per ultimo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d3d1161d488ed4a9e12b7af6b70bf336c9f286
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74b9e62b2e442bbab01942f155647f16eae29b09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941658"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 Questa interfaccia registra o Annulla la registrazione di un programma di cui è possibile eseguire il debug con la porta su cui è in esecuzione.
@@ -42,7 +42,7 @@ IDebugPortNotify2 : IUnknown
 |[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Registra un programma di cui è possibile eseguire il debug con la porta su cui è in esecuzione.|
 |[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Annulla la registrazione di un programma di cui è possibile eseguire il debug dalla porta in cui è in esecuzione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  A meno che una porta di debug non abbia un modo per stabilire quando i programmi vengono caricati o scaricati, un fornitore di porte personalizzato deve implementare questa interfaccia. Tutti i programmi caricati per il debug tramite una porta specifica vengono rilevati tramite questa interfaccia.
 
 ## <a name="requirements"></a>Requisiti
@@ -52,6 +52,6 @@ IDebugPortNotify2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
