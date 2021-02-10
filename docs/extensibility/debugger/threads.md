@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ec3c427e722739f17984866b8756d606ecb57813
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965460"
 ---
 # <a name="threads"></a>Thread
 Nell'architettura del debugger, un *thread*:
@@ -29,7 +29,7 @@ Nell'architettura del debugger, un *thread*:
 
 - È rappresentato da un'interfaccia [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) , in genere creata da un motore di debug (de) o da una macchina virtuale come conseguenza dell'esecuzione di un programma.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Programmi](../../extensibility/debugger/programs.md)
 - [Stack frame](../../extensibility/debugger/stack-frames.md)
 - [Motore di debug](../../extensibility/debugger/debug-engine.md)

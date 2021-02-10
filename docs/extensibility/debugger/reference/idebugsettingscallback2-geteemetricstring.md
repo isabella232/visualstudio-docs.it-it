@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec2d8d321045900ac208297f7b007ce5266953f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 710b4e7623450cbba04e449cbd732486f00932d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963640"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Recupera la stringa di valore di una metrica dell'analizzatore di espressioni in base al nome.
@@ -59,5 +59,5 @@ out Restituisce la stringa del valore della metrica.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

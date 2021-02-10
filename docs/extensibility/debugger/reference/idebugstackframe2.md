@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37acb9f2984c36130de494108ef4b76a59cc74e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7241c697baf7810d961f4cc3aba71d469bad4582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963562"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Questa interfaccia rappresenta un singolo stack frame in uno stack di chiamate in un thread specifico.
@@ -50,7 +50,7 @@ IDebugStackFrame2 : IUnknown
 |[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumeratore per stack frame proprietà.|
 |[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Ottiene il thread associato a un stack frame.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia viene ottenuta solo quando il programma di cui è in corso il debug è stato interrotto in corrispondenza di un punto di interruzione (causato da un punto di interruzione del set di utenti o da un'eccezione). Da questa interfaccia è possibile ottenere un contesto di espressione per valutare le espressioni, un elenco di registri può essere restituito o lo stack di chiamate può essere ottenuto ed esaminato.
 
 ## <a name="requirements"></a>Requisiti
@@ -60,5 +60,5 @@ IDebugStackFrame2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)

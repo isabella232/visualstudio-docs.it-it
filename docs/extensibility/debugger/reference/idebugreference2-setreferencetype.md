@@ -9,32 +9,32 @@ helpviewer_keywords:
 ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 346a95f553b8bb7f246a37555dc191b0fb22ac9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f33ae0203dfb3f3e6a6af67b925add8948720638
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963666"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
-Imposta il tipo di riferimento. Riservato per usi futuri.
+Imposta il tipo di riferimento. Riservato per utilizzi futuri.
 
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT SetReferenceType ( 
+HRESULT SetReferenceType ( 
    REFERENCE_TYPE dwRefType
 );
 ```
 
 ```csharp
-int SetReferenceType ( 
+int SetReferenceType ( 
    enum_REFERENCE_TYPE dwRefType
 );
 ```
@@ -46,6 +46,6 @@ in Valore dell'enumerazione [REFERENCE_TYPE](../../../extensibility/debugger/ref
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

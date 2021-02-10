@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a697ae8d9f3f551c8bb734c28c1f53551b1f81
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 1f27f2fb082c478aecff3d64f418ed0e864e15df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964979"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 
@@ -39,7 +39,7 @@ Per passare direttamente alla pagina di riferimento di .NET per un componente, p
 |<xref:System.Windows.Forms.BindingSource>|Semplifica il processo di associazione dei controlli a un'origine dati sottostante.|
 |<xref:System.Windows.Forms.BindingNavigator>|Rappresenta l’interfaccia utente di spostamento e modifica per i controlli associati a dati contenuti in un form.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedere ai dati in Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio data tools per .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)

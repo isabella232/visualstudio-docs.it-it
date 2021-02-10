@@ -16,15 +16,15 @@ helpviewer_keywords:
 - workbooks, protecting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 05587b067fb5e8365433049c7da7fd3d5949a831
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963848"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Procedura: proteggere cartelle di lavoro a livello di codice
   È possibile proteggere una cartella di lavoro di Excel Microsoft Office in modo che gli utenti non possano aggiungere o eliminare fogli di lavoro e anche rimuovere la protezione della cartella di lavoro a livello di codice. Facoltativamente, è possibile specificare una password, indicare se si desidera che la struttura sia protetta (in modo che gli utenti non possano spostare i fogli) e indicare se si desidera proteggere le finestre della cartella di lavoro.
@@ -67,7 +67,7 @@ ms.locfileid: "97528292"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
 - [Procedura: proteggere i fogli di fogli di un foglio di codice](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Procedura: nascondere i fogli di programmazione a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)

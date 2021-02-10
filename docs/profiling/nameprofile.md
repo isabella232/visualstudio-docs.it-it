@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd210f1d92245889be8d18156c43e0cad7ee3db
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 53d6dcc6cdc903f0050eeb326ebd3c5fa36252ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964745"
 ---
 # <a name="nameprofile"></a>NameProfile
 La funzione `NameProfile` assegna una stringa al processo o al thread specificato.
@@ -75,7 +75,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Il testo del nome supera i 32 caratteri, incluso il carattere null e pertanto è stato troncato.|
 |NAME_OK|Il nome è stato registrato correttamente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  A ogni processo o thread è possibile assegnare un solo nome. Dopo aver assegnato un nome a un elemento di profilatura, le chiamate successive a NameProfile per tale elemento vengono ignorate.
 
  Se lo stesso nome viene assegnato a thread o processi diversi, il report includerà i dati da tutti gli elementi di tale livello con lo stesso nome.
@@ -134,5 +134,5 @@ void ExerciseNameProfile()
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

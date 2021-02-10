@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7debd5323e753c6c5fd1476eac3c062fb63393b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8e3ef123fb88f1519d398952ed2d27de0fb0b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963549"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Chiamato dal debugger sul stack frame corrente quando vuole intercettare l'eccezione corrente.
@@ -59,7 +59,7 @@ out Valore univoco che identifica una particolare eccezione.
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Il frame di esecuzione corrente non è ancora stato cercato per un gestore.|
 |`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Questo metodo non è supportato per questo frame.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Quando viene generata un'eccezione, il debugger acquisisce il controllo dal runtime in corrispondenza dei punti chiave durante il processo di gestione delle eccezioni. Durante questi istanti, il debugger può richiedere la stack frame corrente se il frame vuole intercettare l'eccezione. In questo modo, un'eccezione intercettata è essenzialmente un gestore di eccezioni immediato per un stack frame, anche se tale stack frame non dispone di un gestore di eccezioni (ad esempio, un blocco try/catch nel codice del programma).
 
  Quando il debugger desidera conoscere se l'eccezione deve essere intercettata, chiama questo metodo sull'oggetto stack frame corrente. Questo metodo è responsabile della gestione di tutti i dettagli dell'eccezione. Se l'interfaccia [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) non è implementata o il `InterceptStackException` metodo restituisce un errore, il debugger continua a elaborare l'eccezione normalmente.
@@ -69,7 +69,7 @@ out Valore univoco che identifica una particolare eccezione.
 
  Una volta completata l'intercettazione, viene segnalato un [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)
 - [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)
 - [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

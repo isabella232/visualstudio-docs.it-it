@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ed2877c880d3cd2674f62b4f900a6e923bb29d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4c87a2c221149f8478a083d1efea6e9edfb542d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965473"
 ---
 # <a name="stepkind"></a>STEPKIND
 Specifica il tipo di passaggio per l'esecuzione di istruzioni.
@@ -28,7 +28,7 @@ Specifica il tipo di passaggio per l'esecuzione di istruzioni.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-enum enum_STEPKIND { 
+enum enum_STEPKIND { 
    STEP_INTO      = 0,
    STEP_OVER      = 1,
    STEP_OUT       = 2,
@@ -38,7 +38,7 @@ typedef DWORD STEPKIND;
 ```
 
 ```csharp
-public enum enum_STEPKIND { 
+public enum enum_STEPKIND { 
    STEP_INTO      = 0,
    STEP_OVER      = 1,
    STEP_OUT       = 2,
@@ -59,7 +59,7 @@ public enum enum_STEPKIND { 
  `STEP_BACKWARDS`\
  Viene descritta la procedura indietro in una funzione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Passato come argomento al metodo [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -69,6 +69,6 @@ public enum enum_STEPKIND { 
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

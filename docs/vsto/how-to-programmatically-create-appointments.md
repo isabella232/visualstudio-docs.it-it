@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Outlook calendars [Office development in Visual Studio], creating appointments
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 35d52ffa360d2cf348842319705a237049db4435
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2d9e9ccd2d69c1f0956a3160589ab2204059d83e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964095"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>Procedura: creare appuntamenti a livello di codice
   In questo esempio viene creato un appuntamento e vengono aggiunti i destinatari alla richiesta della riunione di appuntamenti.

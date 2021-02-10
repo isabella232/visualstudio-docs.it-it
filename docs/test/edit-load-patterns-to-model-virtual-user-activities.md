@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c46c353b09df792b2e204ce90a04b372e23ebd8b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 4da2078f8ed073811f30f4655dfad7ac32410135
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964355"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modificare i modelli di carico per definire le attività di utenti virtuali
 
@@ -152,7 +152,7 @@ Con il modello di carico viene specificato il numero di utenti virtuali attivi d
 
 6. Dopo avere apportato le modifiche alle proprietà, scegliere **Salva** nel menu **File**. A questo punto sarà possibile eseguire il test di carico con il nuovo modello di carico.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)

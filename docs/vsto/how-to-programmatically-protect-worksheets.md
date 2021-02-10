@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, protecting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b4fe6d314763c7b0d6a8b4c1ed9e8e7198e508c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 92ded3d8320f58bdd200f3892dc40c7a915c502e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963822"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Procedura: proteggere i fogli di fogli di un foglio di codice
   La funzionalità di protezione di Microsoft Office Excel consente di impedire la modifica degli oggetti di un foglio di lavoro da parte degli utenti o mediante codice. Per impostazione predefinita, dopo l'attivazione della protezione tutte le celle risultano bloccate.
@@ -67,7 +67,7 @@ ms.locfileid: "97526752"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
 - [Procedura: rimuovere la protezione dai fogli di dati a livello di codice](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
 - [Procedura: proteggere cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-protect-workbooks.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 420e963b70846b4d7251c3f1b6c7f5b224c9fdb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0292a520b414c2ca96cb9077af938d692dd57bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965616"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 Recupera le informazioni sul computer in cui è in esecuzione il debugger.
@@ -45,6 +45,6 @@ out Riferimento a una struttura che contiene le informazioni sul computer.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)
 - [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)

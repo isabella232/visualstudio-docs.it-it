@@ -13,15 +13,15 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56bd9876fa24610412d66e71800a24b413dac576
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0520014edc97f7517338652fa89e4c8269ba552c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526807"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963926"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Procedura: eliminare appuntamenti a livello di codice
   Questo esempio elimina un'istanza di un appuntamento ricorrente. L'esempio presuppone che un'istanza di un appuntamento ricorrente si verifica il 28 giugno 2006 alle 08.00.
