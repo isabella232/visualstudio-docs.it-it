@@ -17,15 +17,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f1c383b5367b2966b9fd082b2d47570264b4d191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955775"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dati memorizzati nella cache nelle personalizzazioni a livello di documento
   Uno degli obiettivi principali delle personalizzazioni a livello di documento consiste nel separare i dati dalla visualizzazione nei documenti di Office. I dati si riferiscono alle informazioni archiviate nel documento, inclusi i numeri e il testo. La vista fa riferimento all'interfaccia utente e al modello a oggetti di Microsoft Office Word e Microsoft Office Excel.
@@ -39,9 +39,9 @@ ms.locfileid: "96847897"
 ## <a name="understand-the-cached-data-programming-model"></a>Informazioni sul modello di programmazione dei dati memorizzato nella cache
  L'isola di dati può contenere qualsiasi oggetto della soluzione che soddisfi determinati requisiti. Questi oggetti includono <xref:System.Data.DataSet> oggetti, <xref:System.Data.DataTable> oggetti e qualsiasi altro oggetto che può essere serializzato dalla <xref:System.Xml.Serialization.XmlSerializer> classe. Per altre informazioni, vedere [memorizzare i dati nella cache](../vsto/caching-data.md).
 
- Per fornire la visualizzazione per i dati memorizzati nella cache, è possibile associare controlli Windows Forms e *host* nel documento a oggetti nell'isola di dati. Il data binding tra l'isola di dati e i controlli associati a dati mantiene le due sincronizzate. È anche possibile aggiungere codice di convalida ai dati indipendenti dai controlli. Per altre informazioni, vedere [associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+ Per fornire la visualizzazione per i dati memorizzati nella cache, è possibile associare controlli Windows Form e *host* nel documento a oggetti nell'isola di dati. Il data binding tra l'isola di dati e i controlli associati a dati mantiene le due sincronizzate. È anche possibile aggiungere codice di convalida ai dati indipendenti dai controlli. Per altre informazioni, vedere [associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
- I controlli host sono versioni estese di oggetti nativi nei modelli a oggetti di Excel e Word. Diversamente dagli oggetti nativi, i controlli host possono essere associati direttamente a oggetti dati gestiti. Per altre informazioni, vedere Cenni [preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md) e [Windows Forms sui controlli nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+ I controlli host sono versioni estese di oggetti nativi nei modelli a oggetti di Excel e Word. Diversamente dagli oggetti nativi, i controlli host possono essere associati direttamente a oggetti dati gestiti. Per altre informazioni, vedere Cenni [preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md) e [Windows Form sui controlli nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 ## <a name="access-cached-data-on-the-server"></a>Accesso ai dati memorizzati nella cache nel server
  Per accedere ai dati memorizzati nella cache in un documento, è possibile usare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Questa classe fa parte di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e può essere utilizzata in un server senza eseguire Excel o Word. Quando l'utente apre il documento dopo aver modificato i dati memorizzati nella cache, tutti i controlli associati ai dati vengono sincronizzati automaticamente con le modifiche e l'utente viene visualizzato con i dati aggiornati. Per ulteriori informazioni, vedere [accedere ai dati nei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md).

@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 187ca5ea0d0232e0ca8b99165e77ee265b81e801
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9838cd39fe29f8233f82df00dda6a7392e3494cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955489"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Sviluppare il codice JavaScript e TypeScript in Visual Studio senza soluzioni o progetti
 
@@ -27,7 +27,7 @@ A partire da Visual Studio 2017 è possibile [sviluppare codice senza progetti o
 Per iniziare, selezionare **file**  >  **Apri**  >  **cartella** dalla barra degli strumenti. Esplora soluzioni visualizza tutti i file della cartella ed è possibile aprire qualsiasi file per iniziare ad apportare modifiche. Visual Studio indicizza in background i file per abilitare le funzionalità di npm, compilazione e debug.
 
 > [!IMPORTANT]
-> Molte delle funzionalità descritte in questo articolo, inclusa l'integrazione di npm, richiedono Visual Studio 2017 versione 15.8 o successive. È necessario installare il carico di lavoro ** sviluppo diNode.js** di Visual Studio.
+> Molte delle funzionalità descritte in questo articolo, inclusa l'integrazione di npm, richiedono Visual Studio 2017 versione 15.8 o successive. È necessario installare il carico di lavoro **sviluppo diNode.js** di Visual Studio.
 
 ## <a name="npm-integration"></a>Integrazione di npm
 
@@ -79,7 +79,7 @@ Se non viene riconosciuto nessun framework supportato, il test runner usa *Expor
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 
-Dopo l'apertura di Esplora test (scegliere **test**  >  **Windows**  >  **Esplora test**di Windows), Visual Studio individua e Visualizza i test.
+Dopo l'apertura di Esplora test (scegliere **test**  >    >  **Esplora test** di Windows), Visual Studio individua e Visualizza i test.
 
 > [!NOTE]
 > Se l'applicazione è scritta in TypeScript, il test runner enumererà solo i file JavaScript che sono da compilare per primi.

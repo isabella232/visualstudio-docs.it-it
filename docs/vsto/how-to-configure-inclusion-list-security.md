@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954020"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procedura: configurare la sicurezza dell'elenco di inclusione
   Se si dispone delle autorizzazioni di amministratore, è possibile configurare la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità per controllare se gli utenti finali hanno la possibilità di installare soluzioni Office salvando una decisione di attendibilità nell'elenco di inclusione. Per informazioni sugli elenchi di inclusione, vedere [considerare attendibili le soluzioni Office usando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -58,9 +58,9 @@ ms.locfileid: "96846727"
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Disabilitato**|
-    |**MyComputer**|**Abilitato**|
-    |**LocalIntranet**|**Abilitato**|
-    |**TrustedSites**|**Abilitato**|
+    |**MyComputer**|**Enabled**|
+    |**LocalIntranet**|**Enabled**|
+    |**TrustedSites**|**Enabled**|
 
      Per impostazione predefinita, il valore di **Internet** è **AuthenticodeRequired** e il valore di **UntrustedSites** è **disabilitato**.
 

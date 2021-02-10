@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954111"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: associazione di estensioni di codice gestito a documenti
   È possibile aggiungere un assembly di personalizzazione a un documento Microsoft Office Word esistente o Microsoft Office cartella di lavoro di Excel. Il documento o la cartella di lavoro può essere in qualsiasi formato di file supportato dai progetti Microsoft Office e dagli strumenti di sviluppo in Visual Studio. Per altre informazioni, vedere [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).
@@ -34,7 +34,7 @@ ms.locfileid: "96844388"
 
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Per aggiungere estensioni di codice gestito a un documento
 
-1. In un progetto che non richiede Microsoft Office, ad esempio un'applicazione console o un progetto Windows Forms, aggiungere un riferimento agli assembly di *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* e *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* .
+1. In un progetto che non richiede Microsoft Office, ad esempio un'applicazione console o un progetto Windows Form, aggiungere un riferimento agli assembly di *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* e *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* .
 
 2. Aggiungere le istruzioni **Imports** o **using** seguenti all'inizio del file di codice.
 

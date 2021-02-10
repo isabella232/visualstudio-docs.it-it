@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: fb65f581994c6ba90cbb49166612d81bc00de803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955502"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file
 È possibile definire un tipo di contenuto personalizzato e collegarvi un'estensione di file usando le estensioni dell'editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione del nome file è già definita da un servizio di linguaggio. Tuttavia, per usarlo con MEF, è comunque necessario collegarlo a un tipo di contenuto.

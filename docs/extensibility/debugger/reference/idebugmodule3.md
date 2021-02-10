@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84db1b672a9460ef3809162a2a1433f269796046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955522"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 Questa interfaccia rappresenta un modulo che supporta percorsi alternativi di simboli e Stati JustMyCode.
@@ -44,7 +44,7 @@ IDebugModule3 : IDebugModule2
 |[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Restituisce un flag che specifica se il modulo rappresenta il codice utente.|
 |[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Specifica se il modulo deve essere considerato o meno il codice utente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Visual Studio è il consumer tipico di questa interfaccia.
 
 ## <a name="requirements"></a>Requisiti
@@ -54,7 +54,7 @@ IDebugModule3 : IDebugModule2
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

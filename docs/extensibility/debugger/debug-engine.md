@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955164"
 ---
 # <a name="debug-engine"></a>Motore di debug
 Un motore di debug (DE) funziona con l'interprete o il sistema operativo per fornire servizi di debug, ad esempio il controllo dell'esecuzione, i punti di interruzione e la valutazione delle espressioni. Il DE è responsabile del monitoraggio dello stato di un programma di cui è in corso il debug. A tale scopo, il DE usa qualsiasi metodo disponibile nel runtime supportato, sia dalla CPU che dalle API fornite dal runtime.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4699063d753539c72c373266b3fce9a0fdf8f00
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dac6c6898a8a8766d073cb5cd2f3bd330e7e2658
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954576"
 ---
 # <a name="options-and-options-pages"></a>Opzioni e pagine di opzioni
 Fare clic su **Opzioni** nel menu **strumenti** per aprire la finestra di dialogo **Opzioni** . Le opzioni di questa finestra di dialogo sono collettivamente denominate pagine di opzioni. Il controllo struttura ad albero nel riquadro di spostamento include le categorie di opzioni e ogni categoria dispone di pagine opzioni. Quando si seleziona una pagina, le relative opzioni vengono visualizzate nel riquadro di destra. Queste pagine consentono di modificare i valori delle opzioni che determinano lo stato di un pacchetto VSPackage.

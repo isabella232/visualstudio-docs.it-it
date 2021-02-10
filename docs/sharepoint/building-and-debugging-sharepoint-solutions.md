@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c16414e6a49d727cf6b2113184c507feb7a73569
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955790"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Build e debug delle soluzioni SharePoint
   In generale, la compilazione e il debug di soluzioni SharePoint equivale alla compilazione e al debug di altri tipi di progetti in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Gli argomenti di questa sezione illustrano le differenze esistenti.
@@ -50,7 +50,7 @@ ms.locfileid: "94850221"
 ## <a name="using-the-clean-command"></a>Uso del comando Pulisci
  Quando una soluzione SharePoint viene installata in un server SharePoint per il debug, il comando **Pulisci** non disinstalla la soluzione. Al contrario, è necessario disattivare le funzionalità tramite la configurazione di SharePoint.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Esplorazione delle connessioni di SharePoint tramite Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

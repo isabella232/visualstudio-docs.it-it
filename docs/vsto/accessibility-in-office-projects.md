@@ -14,15 +14,15 @@ helpviewer_keywords:
 - accessibility [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4021517aa296f3c1e6355b82260b00590181f4cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955151"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilità nei progetti di Office
 
@@ -60,16 +60,16 @@ Nella maggior parte dei casi, i progetti di Office in Visual Studio soddisfano g
 
 ## <a name="accessibility-at-run-time"></a>Accessibilità in fase di esecuzione
 
-### <a name="windows-forms-controls-on-office-documents"></a>Windows Forms controlli nei documenti di Office
- I controlli Windows Forms espongono le proprietà di accessibilità per fornire informazioni sul controllo agli strumenti di accessibilità, ad esempio utilità per la lettura dello schermo. È possibile sfruttare queste proprietà di accessibilità quando i controlli si trovano in un documento di Office in una personalizzazione a livello di documento. Per ulteriori informazioni, vedere [fornire informazioni sull'accessibilità per i controlli in un Windows Form](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).
+### <a name="windows-forms-controls-on-office-documents"></a>Windows Form controlli nei documenti di Office
+ I controlli Windows Form espongono le proprietà di accessibilità per fornire informazioni sul controllo agli strumenti di accessibilità, ad esempio utilità per la lettura dello schermo. È possibile sfruttare queste proprietà di accessibilità quando i controlli si trovano in un documento di Office in una personalizzazione a livello di documento. Per ulteriori informazioni, vedere [fornire informazioni sull'accessibilità per i controlli in un Windows Form](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).
 
- Tuttavia, in fase di esecuzione sono presenti alcune limitazioni di accessibilità quando Windows Forms controlli sono ospitati in una cartella di lavoro di Excel o in un documento di Word:
+ Tuttavia, in fase di esecuzione sono presenti alcune limitazioni di accessibilità quando Windows Form controlli sono ospitati in una cartella di lavoro di Excel o in un documento di Word:
 
 - Non è possibile tabulare da un controllo a un altro.
 
 - I controlli di un documento sono disabilitati quando si modifica l'impostazione di zoom del documento su un valore diverso da 100%.
 
-  Per informazioni sulle limitazioni dei controlli Windows Forms sui documenti, vedere [limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
+  Per informazioni sulle limitazioni dei controlli Windows Form sui documenti, vedere [limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
 ### <a name="actions-panes-and-custom-task-panes"></a>Riquadri azioni e riquadri attività personalizzati
  Quando un riquadro azioni o un riquadro attività personalizzato dispone dello stato attivo, è possibile accedere ai controlli nello stesso modo in cui si accede ai controlli in una Windows Forms Application. Per spostare il cursore tra il riquadro azioni e il documento, è possibile premere **F6**.
