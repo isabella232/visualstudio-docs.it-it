@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 396981533502f2687040f470ded9b490cab1ef7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970634"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -29,19 +29,19 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti:
 
 - Alias di comandi definiti dall'utente. Per altre informazioni su come definire gli alias di comandi, vedere [Alias di comandi di Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-- Layout delle finestre definite dall'utente nella **Window**  >  pagina **Gestisci layout** finestra.
+- Layout delle finestre definite dall'utente nella   >  pagina **Gestisci layout** finestra.
 
-- Le opzioni seguenti nelle **Tools**  >  pagine **Opzioni** di strumenti:
+- Le opzioni seguenti nelle   >  pagine **Opzioni** di strumenti:
 
-  - Impostazioni delle maiuscole e minuscole della **Environment** barra dei menu nella  >  pagina Opzioni **generali** dell'ambiente.
+  - Impostazioni delle maiuscole e minuscole della barra dei menu nella  >  pagina Opzioni **generali** dell'ambiente.
 
-  - Tutte le impostazioni nella **Environment**  >  pagina opzioni ambiente **tipi di carattere e colori** .
+  - Tutte le impostazioni nella   >  pagina opzioni ambiente **tipi di carattere e colori** .
 
-  - Tutti i tasti di scelta **Environment** rapida nella  >  pagina Opzioni **tastiera** ambiente.
+  - Tutti i tasti di scelta rapida nella  >  pagina Opzioni **tastiera** ambiente.
 
-  - Tutte le impostazioni nelle **Environment**  >  **schede ambiente e** nella pagina Opzioni di Windows.
+  - Tutte le impostazioni nelle   >  **schede ambiente e** nella pagina Opzioni di Windows.
 
-  - Tutte le impostazioni nella **Environment**  >  pagina Opzioni di **avvio** dell'ambiente.
+  - Tutte le impostazioni nella   >  pagina Opzioni di **avvio** dell'ambiente.
 
   - Tutte le impostazioni nella pagina delle opzioni **Editor di testo**, ad esempio le [preferenze di stile per il codice](code-styles-and-code-cleanup.md).
 
@@ -91,7 +91,7 @@ Alcune impostazioni, ad esempio il layout delle finestre degli strumenti, non ve
 
 Per reimpostare le impostazioni predefinite per tutte le impostazioni, accedere a Visual Studio, quindi selezionare **strumenti**  >  **Importa/Esporta impostazioni** per aprire **importazione/esportazione guidata delle impostazioni**. Selezionare **Reimposta tutte le impostazioni** e quindi seguire i passaggi rimanenti della procedura guidata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Impostazioni dell'ambiente](../ide/environment-settings.md)

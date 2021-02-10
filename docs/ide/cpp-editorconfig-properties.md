@@ -5,7 +5,7 @@ description: Informazioni su come usare EditorConfig per formattare il codice C+
 ms.date: 9/14/2020
 author: jureid
 ms.author: jureid
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CPP
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.workload:
 - cplusplus
 monikerRange: vs-2019
-ms.openlocfilehash: f248ede6a4bb45a58d64a346489124462f304a86
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 490a7b29d6e3d8a2dc63c27b9e9d7226b5d22662
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970881"
 ---
 # <a name="c-editorconfig-formatting-conventions"></a>Convenzioni di formattazione EditorConfig in C++
 
@@ -380,7 +380,7 @@ Nella parte restante di questo documento sono elencate tutte le impostazioni di 
   - `all_one_line_scopes` -Non eseguire il wrapping dei blocchi di codice in cui le parentesi graffe di apertura e chiusura sono nella riga successiva.
   - `never` -Applica sempre le impostazioni delle nuove righe per i blocchi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [EditorConfig.org](https://editorconfig.org/)
 - [Supporting EditorConfig for a language service](../extensibility/supporting-editorconfig.md) (Supporto di EditorConfig per un servizio di linguaggio)

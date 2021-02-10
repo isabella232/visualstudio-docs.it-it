@@ -18,15 +18,15 @@ helpviewer_keywords:
 - HasVstoObject method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 465e28ed0c632bba45fac1670dd40cd90ef417f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970374"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione
   È possibile usare un componente aggiuntivo VSTO per personalizzare i documenti di Word e le cartelle di lavoro di Excel nei modi seguenti:
@@ -77,7 +77,7 @@ ms.locfileid: "96847825"
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
 
 ### <a name="generate-listobject-host-controls"></a>Genera controlli host ListObject
- Quando si usa il metodo `GetVstoObject` per estendere un <xref:Microsoft.Office.Interop.Excel.ListObject>, il metodo restituisce un <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject>Dispone di tutte le funzionalità dell'oggetto originale <xref:Microsoft.Office.Interop.Excel.ListObject> . Dispone inoltre di funzionalità aggiuntive e può essere associato ai dati tramite il modello di Windows Forms data binding. Per ulteriori informazioni, vedere [controllo ListObject](../vsto/listobject-control.md).
+ Quando si usa il metodo `GetVstoObject` per estendere un <xref:Microsoft.Office.Interop.Excel.ListObject>, il metodo restituisce un <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject>Dispone di tutte le funzionalità dell'oggetto originale <xref:Microsoft.Office.Interop.Excel.ListObject> . Dispone inoltre di funzionalità aggiuntive e può essere associato ai dati tramite il modello di Windows Form data binding. Per ulteriori informazioni, vedere [controllo ListObject](../vsto/listobject-control.md).
 
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>Creare un controllo host per ListObject
 
@@ -89,7 +89,7 @@ ms.locfileid: "96847825"
 ### <a name="add-managed-controls-to-documents-and-worksheets"></a><a name="AddControls"></a> Aggiungere controlli gestiti a documenti e fogli di
  Dopo aver generato un <xref:Microsoft.Office.Tools.Word.Document> o un <xref:Microsoft.Office.Tools.Excel.Worksheet>, è possibile aggiungere controlli al documento o al foglio di lavoro rappresentato da tali oggetti estesi. Per aggiungere controlli, utilizzare la `Controls` proprietà di <xref:Microsoft.Office.Tools.Word.Document> o <xref:Microsoft.Office.Tools.Excel.Worksheet> . Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
- È possibile aggiungere controlli Windows Form o *controlli host*. Un controllo host viene fornito dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e che esegue il wrapping di un controllo corrispondente nell'assembly di interoperabilità primario di Word o di Excel. Un controllo host espone tutti i comportamenti dell'oggetto nativo di Office sottostante. Genera inoltre eventi e può essere associato ai dati tramite il modello di Windows Forms data binding. Per altre informazioni, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
+ È possibile aggiungere controlli Windows Form o *controlli host*. Un controllo host viene fornito dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e che esegue il wrapping di un controllo corrispondente nell'assembly di interoperabilità primario di Word o di Excel. Un controllo host espone tutti i comportamenti dell'oggetto nativo di Office sottostante. Genera inoltre eventi e può essere associato ai dati tramite il modello di Windows Form data binding. Per altre informazioni, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
 
 > [!NOTE]
 > Non è possibile aggiungere un controllo <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> a un foglio di lavoro, un controllo <xref:Microsoft.Office.Tools.Word.XMLNode> oppure <xref:Microsoft.Office.Tools.Word.XMLNodes> a un documento usando un componente aggiuntivo VSTO. Questi controlli host non possono essere aggiunti a livello di codice. Per ulteriori informazioni, vedere [limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).

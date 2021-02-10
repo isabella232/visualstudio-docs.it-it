@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969620"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: Esaminare, commentare e testare il codice
 
@@ -74,17 +74,17 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
 1. Prima di eseguire l'applicazione, salvare l'app scegliendo il pulsante della barra degli strumenti **Salva tutto** , che dovrebbe essere simile allo screenshot seguente.
 
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br>
-**_Salva tutto_* _ _button *
+***Salva tutto** _ _button *
 
      In alternativa, per salvare l'app, scegliere **file**  >  **Salva tutto** dalla barra dei menu o premere **CTRL** + **MAIUSC** + **S**. Una procedura consigliata consiste nel salvare presto e spesso.
 
      Quando è in esecuzione, il programma dovrebbe essere simile all'immagine seguente.
 
-     ![Visualizzatore di immagini](../ide/media/express_pictureviewerdonerun.png)<br>**_Visualizzatore immagini_* _
+     ![Visualizzatore di immagini](../ide/media/express_pictureviewerdonerun.png)<br>***Visualizzatore di immagini***
 
 ## <a name="to-test-your-app"></a>Per testare l'app
 
-1. Premere il tasto _ *F5** o scegliere il pulsante della barra degli strumenti **Avvia debug** .
+1. Premere il tasto **F5** o scegliere il pulsante della barra degli strumenti **Avvia debug** .
 
 1. Scegliere il pulsante **Visualizza immagine** per eseguire il codice appena scritto. Prima di tutto, l'app apre una finestra di dialogo **Apri file** . Verificare che i filtri vengano visualizzati nell'elenco a discesa **Tipo file** nella parte inferiore della finestra di dialogo. Passare quindi a un'immagine e aprirla. In genere è possibile trovare immagini di esempio incluse nel sistema operativo Windows nella cartella *Documenti*, che si trova all'interno della cartella *Immagini\Immagini campione*.
 

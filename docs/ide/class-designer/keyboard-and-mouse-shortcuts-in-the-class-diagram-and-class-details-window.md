@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c184a12474e2d7ff0b626547acaaf2a37d460c8e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6576377714fa08343543ccd3d186de0e2a0e039b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969894"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
 
@@ -69,7 +69,7 @@ Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 |**Fine**|Forme di primo livello|Passa all'ultima forma del diagramma.|
 |**Sposta** + **Pagina iniziale**|All'interno della forma del tipo|Seleziona gli elementi all'interno della forma a partire dall'elemento corrente e fino a quello in primo piano sulla stessa forma.|
 |**Sposta** + **Fine**|All'interno della forma del tipo|Uguale a **MAIUSC** + **Home** ma nella direzione dall'alto verso il basso.|
-|**Entrare**|Tutti i contesti|Richiama l'operazione predefinita sulla forma, che è disponibile anche tramite doppio clic. Nella maggior parte dei casi si tratta di Visualizza codice, ma per alcuni elementi la definizione è differente (simboli, intestazioni di raggruppamenti, etichette di simboli).|
+|**INVIO**|Tutti i contesti|Richiama l'operazione predefinita sulla forma, che è disponibile anche tramite doppio clic. Nella maggior parte dei casi si tratta di Visualizza codice, ma per alcuni elementi la definizione è differente (simboli, intestazioni di raggruppamenti, etichette di simboli).|
 |**+** e **-**|Tutti i contesti|Se l'elemento con lo stato attivo è espandibile, questi tasti espandono o comprimono l'elemento.|
 |**>**|Tutti i contesti|Per gli elementi con elementi figlio, espande l'elemento se è compresso e passa al primo figlio.|
 |**<**|Tutti i contesti|Passa all'elemento padre.|
@@ -78,7 +78,7 @@ Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 |**Elimina**|Sulle forme dei tipi e le forme Commenti|Richiama il comando **Rimuovi dal diagramma**.|
 |**Elimina**|Su tutti gli altri elementi.|Richiama il comando **Delete from Code** (Elimina dal codice) (membri, parametri, associazioni, ereditarietà, etichette di simboli).|
 |**CTRL** + **Elimina**|Tutti i contesti|Richiama il comando **Delete from Code** (Elimina dal codice) sulla selezione.|
-|**Scheda**|Tutti i contesti|Passa all'elemento figlio successivo all'interno dello stesso elemento padre (supporta il wrapping).|
+|**TAB**|Tutti i contesti|Passa all'elemento figlio successivo all'interno dello stesso elemento padre (supporta il wrapping).|
 |**Sposta** + **Scheda**|Tutti i contesti|Passa all'elemento figlio precedente all'interno dello stesso elemento padre (supporta il wrapping).|
 |**BARRA SPAZIATRICE**|Tutti i contesti|Alterna la selezione sull'elemento corrente.|
 
@@ -93,7 +93,7 @@ Per spostarsi nella finestra **Dettagli classe**, usare i seguenti tasti:
 |-|-|
 |**,** (virgola)|Se il cursore è posizionato in una riga di parametri, viene spostato nel campo Nome del parametro successivo. Se il cursore si trova nell'ultima riga di parametri di un metodo, il cursore viene spostato nel \<add parameter> campo, che può essere usato per creare un nuovo parametro.<br /><br /> Se il cursore è posizionato in un altro punto della finestra **Dettagli classe**, viene effettivamente aggiunta una virgola nel campo corrente.|
 |**;** (punto e virgola) o **)** (parentesi di chiusura)|Sposta il cursore nel campo Nome della riga di membri successiva nella griglia della finestra **Dettagli classe**.|
-|**Scheda**|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore viene spostato da un campo in cui è stato digitato del testo, in **Dettagli classe** il testo viene elaborato e memorizzato se non genera un errore.<br /><br /> Se il cursore si trova in un campo vuoto, ad esempio \<add parameter> , TAB lo sposta nel primo campo della riga successiva.|
+|**TAB**|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore viene spostato da un campo in cui è stato digitato del testo, in **Dettagli classe** il testo viene elaborato e memorizzato se non genera un errore.<br /><br /> Se il cursore si trova in un campo vuoto, ad esempio \<add parameter> , TAB lo sposta nel primo campo della riga successiva.|
 |**BARRA SPAZIATRICE**|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore si trova in un campo vuoto, ad esempio \<add parameter> , viene spostato nel primo campo della riga successiva. Si noti che \<space> digitato immediatamente dopo la virgola viene ignorato.<br /><br /> Se il cursore si trova nel campo Riepilogo, viene aggiunto uno spazio.<br /><br /> Se il cursore si trova nella colonna Nascondi di una determinata riga, il valore della casella di controllo Nascondi viene attivato/disattivato.|
 |**CTRL** + **Scheda**|Passa a un'altra finestra del documento, ad esempio dalla finestra **Dettagli classe** a un file di codice aperto.|
 |**ESC**|Se è stata iniziata la digitazione di testo in un campo, il tasto ESC agisce da tasto di annullamento, ripristinando il valore precedente del contenuto del campo. Se la finestra Dettagli classe ha lo stato attivo generale, ma nessuna cella specifica è attiva, il tasto ESC sposta lo stato attivo dalla finestra **Dettagli classe**.|
@@ -101,7 +101,7 @@ Per spostarsi nella finestra **Dettagli classe**, usare i seguenti tasti:
 |**Freccia sinistra**|Se il cursore si trova nella colonna Nome, comprime il nodo corrente della gerarchia (se aperto).|
 |**Freccia destra**|Se il cursore si trova nella colonna Nome, espande il nodo corrente della gerarchia (se compresso).|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare e configurare membri dei tipi](creating-and-configuring-type-members.md)
 - [Come usare esclusivamente la tastiera](../reference/how-to-use-the-keyboard-exclusively.md)

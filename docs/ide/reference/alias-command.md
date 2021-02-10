@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9521809baf338c542b0c1cba288f643b985f02
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 7a20a14cc0f48e86840b770aca934b188bf152dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969789"
 ---
 # <a name="alias-command"></a>Comando Alias
 Crea un nuovo alias per un comando completo, un comando completo con i relativi argomenti o un altro alias.
@@ -58,7 +58,7 @@ Quando si esegue questo comando, le opzioni devono essere incluse subito dopo il
 
 L'opzione `/reset` chiede una conferma prima del ripristino degli alias. Non esiste una forma breve di `/reset`.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 In questo esempio viene creato un nuovo alias, `upper`, per il comando completo Edit.MakeUpperCase.
 
 ```cmd
@@ -77,7 +77,7 @@ In questo esempio viene visualizzato un elenco di tutti gli alias correnti e le 
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

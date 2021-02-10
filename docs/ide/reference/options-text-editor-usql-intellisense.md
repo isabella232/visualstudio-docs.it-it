@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1aea741c91f38be9d5b423226e635b77e440d9e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 1fe7fc81fdc27fc2cdb126e2bf50d07dd3048ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970829"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opzioni, Editor di testo, U-SQL, IntelliSense
 
-Usare la pagina delle opzioni **IntelliSense** per modificare alcune impostazioni dell'editor di testo per U-SQL. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  IntelliSense per **U-SQL**  >  **IntelliSense**.
+Usare la pagina delle opzioni **IntelliSense** per modificare alcune impostazioni dell'editor di testo per U-SQL. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  IntelliSense per **U-SQL**  >  .
 
 ## <a name="intellisense-settings"></a>Impostazioni di IntelliSense
 
@@ -55,7 +55,7 @@ Selezionare una casella di controllo per abilitare **Informazioni rapide** oppur
 
    Se selezionata, viene aggiunta automaticamente una nuova riga e il cursore si sposta nella nuova riga quando si digitano tutti i caratteri per un suggerimento dell'elenco di completamento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Utilizzo di IntelliSense](../../ide/using-intellisense.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: b823aecff4f05208094bd98b559a661c7f23fc5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970530"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Panoramica del modello di programmazione delle estensioni degli strumenti di SharePoint
   Quando si crea un'estensione per gli strumenti di SharePoint in Visual Studio, si inizia implementando una o più interfacce di estendibilità che vengono esposte dagli strumenti di SharePoint. Nella maggior parte dei casi, si useranno anche altri tipi forniti dagli strumenti di SharePoint per implementare le funzionalità nell'estensione. In alcuni scenari è possibile usare anche tipi in altri modelli a oggetti forniti da Visual Studio e SharePoint. È necessario comprendere lo scopo di ciascuno dei modelli a oggetti e sapere come usarli per creare estensioni per gli strumenti di SharePoint.
@@ -109,7 +109,7 @@ ms.locfileid: "96305128"
 |Modello a oggetti del server|Il modello a oggetti del server fornisce l'accesso a tutte le funzionalità esposte da [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] a livello di codice. Questo modello a oggetti è progettato per essere usato dalle soluzioni di SharePoint eseguibili nel server di SharePoint. La maggior parte di questo modello a oggetti è definita nell'assembly *Microsoft.SharePoint.dll* . Per ulteriori informazioni sul modello a oggetti del server, vedere [utilizzo del modello a oggetti di SharePoint Foundation Server-Side](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Modello a oggetti del client|Il modello a oggetti del client è un subset del modello a oggetti del server che può essere usato per interagire con dati di SharePoint da un client remoto o dal server. È progettato per ridurre al minimo il numero di round trip che devono essere eseguiti per le attività comuni. La maggior parte del modello a oggetti del client è definita negli assembly *Microsoft.SharePoint.Client.dll* e *Microsoft.SharePoint.Client.Runtime.dll* . Per ulteriori informazioni sul modello a oggetti del client, vedere [Managed Client Object Model](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Chiamare nei modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md)

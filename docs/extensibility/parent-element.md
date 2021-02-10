@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: e34b857d26be49bb98096c6b0ba85ff8049290b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968983"
 ---
 # <a name="parent-element"></a>Elemento padre
 L'elemento padre di un pulsante o di una casella combinata può essere solo un gruppo. L'elemento padre di un menu o di un gruppo può essere qualsiasi altro menu o gruppo. In un [elemento CommandPlacement](../extensibility/commandplacement-element.md), questo elemento è obbligatorio. in tutti gli altri casi è facoltativa. Se questo elemento viene omesso, l'elemento padre di `Group_Undefined:0` sarà implicito.
@@ -40,7 +40,7 @@ L'elemento padre di un pulsante o di una casella combinata può essere solo un g
 |id|Obbligatorio. ID dell'identificatore del comando GUID/ID.|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno
+ nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 

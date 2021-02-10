@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 18081db7537eab1d14f800e9457821679c0316b8
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e33a4add7ebc6a3e323331731f3183d7a0dce26f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970283"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: creare un XML Schema da un documento XML
 
@@ -39,6 +39,6 @@ Per ulteriori informazioni sul motore di inferenza dello schema, vedere [dedurre
 
    Un documento XML Schema viene creato e aperto per ogni spazio dei nomi trovato nel file XML. Ogni schema viene aperto come file esterno temporaneo. Gli schemi possono essere salvati su disco, aggiunti al progetto oppure eliminati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Editor XML](../xml-tools/xml-editor.md)

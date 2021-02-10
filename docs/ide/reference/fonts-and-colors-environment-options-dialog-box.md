@@ -24,19 +24,19 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: ccc2309cf3ccc51c82796816f635908b55b81901
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969750"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
-La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo è possibile fare clic su **strumenti**  >  **Opzioni** e quindi selezionare **Environment**  >  **tipi di carattere e colori** dell'ambiente.
+La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo è possibile fare clic su **strumenti**  >  **Opzioni** e quindi selezionare   >  **tipi di carattere e colori** dell'ambiente.
 
 Le modifiche apportate alla combinazione colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
@@ -88,7 +88,7 @@ Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenc
 
 Consente di visualizzare l'elenco di tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.
 
-**Size**
+**Dimensioni**
 
 Elenca le dimensioni in punti disponibili per il tipo di carattere evidenziato. La modifica della dimensione del carattere influisce su tutti gli **Elementi visualizzati** disponibili per la selezione in **Mostra impostazioni per**.
 
@@ -214,7 +214,7 @@ Alcuni degli elementi visualizzati includono:
 
 Visualizza l'elenco dei colori disponibili che è possibile scegliere per il primo piano dell'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di primo piano modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
 
-**Automatic** (Automatica)
+**Automatico**
 
 Gli elementi possono ereditare il colore di primo piano da altri elementi visualizzati, ad esempio **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
 
@@ -222,7 +222,7 @@ Gli elementi possono ereditare il colore di primo piano da altri elementi visual
 
 Il colore visualizzato per l'elemento la prima volta che si apre Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
 
-**Personalizzato**
+**Impostazione personalizzata**
 
 Visualizza la finestra di dialogo Colore che consente di impostare un colore personalizzato per l'elemento selezionato nell'elenco Elementi visualizzati.
 
@@ -233,7 +233,7 @@ Visualizza la finestra di dialogo Colore che consente di impostare un colore per
 
 Visualizza una tavolozza di colori in cui è possibile scegliere un colore di sfondo per l'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di sfondo modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
 
-**Automatic** (Automatica)
+**Automatico**
 
 Gli elementi possono ereditare il colore di sfondo da altri elementi visualizzati, ad esempio **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
 
@@ -241,7 +241,7 @@ Gli elementi possono ereditare il colore di sfondo da altri elementi visualizzat
 
 Il colore visualizzato per l'elemento la prima volta che si apre Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
 
-**Personalizzato**
+**Impostazione personalizzata**
 
 Visualizza la finestra di dialogo Colore che consente di impostare un colore personalizzato per l'elemento selezionato nell'elenco Elementi visualizzati.
 
@@ -253,7 +253,7 @@ Selezionare questa opzione per visualizzare in grassetto il testo dell'elemento 
 
 Visualizza un esempio dello stile, della dimensione e della combinazione colori del carattere per le opzioni selezionate in **Mostra impostazioni per** ed **Elementi visualizzati**. È possibile usare questa casella per visualizzare in anteprima i risultati mentre si sperimentano diverse opzioni di formattazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Finestra di dialogo Opzioni](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Procedura: Modificare i tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

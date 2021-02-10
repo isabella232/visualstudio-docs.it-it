@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b86cc50e5a25466b0ec80e45a225d64b8a97f72
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f233eaed4b08e499b3a7543d10caafd36c77a480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399172"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969074"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: utilizzare Progettazione XML Schema con valori letterali XML
 
@@ -37,7 +37,7 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
 2. Salvare il file in un percorso con il nome *PurchaseOrderSchema. xsd*.
 
-3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nome del progetto, scegliere **Aggiungi** , quindi selezionare **elemento esistente**. Verrà visualizzata la finestra di dialogo **elemento Aggiungi** . Individuare il file *PurchaseOrderSchema. xsd* , selezionarlo e quindi fare clic su **Aggiungi**.
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nome del progetto, scegliere **Aggiungi**, quindi selezionare **elemento esistente**. Verrà visualizzata la finestra di dialogo **elemento Aggiungi** . Individuare il file *PurchaseOrderSchema. xsd* , selezionarlo e quindi fare clic su **Aggiungi**.
 
      Il progetto XMLLiterals contiene ora due file: *Module1. vb* e *PurchaseOrderSchema. xsd*.
 

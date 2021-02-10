@@ -11,15 +11,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89ca980b378ee71d1db9b373459c8b7309f0ecc2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 04b68a8207dad1edf83462a8284a69c73c668006
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969204"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Risolvere i problemi relativi alla sicurezza delle soluzioni Office
   Questo argomento contiene suggerimenti per la risoluzione di problemi comuni che possono verificarsi quando si lavora con la protezione delle soluzioni Office.
@@ -50,6 +50,6 @@ ms.locfileid: "97522891"
 
  Per gestire l'effetto di IEESC e Internet Explorer 7 e versioni successive, identificare i siti Web e i percorsi UNC (Universal Naming Convention) attendibili e aggiungerli a una delle aree di sicurezza attendibili (Intranet locale o siti attendibili). Per informazioni su come gestire le zone, vedere [configurare gli autori attendibili ClickOnce](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
 - [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

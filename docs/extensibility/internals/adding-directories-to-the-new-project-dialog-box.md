@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87e4c0bcb44690a36579fe77564962515534338d
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: d65b7e4adc6d235bcb925efae1cef20d0aa2c9c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969035"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Aggiungi directory alla finestra di dialogo nuovo progetto
 Quando si creano nuovi tipi di progetto, è anche possibile registrare una nuova directory nella finestra di dialogo **nuovo progetto** per visualizzarli per l'uso come modelli. Nell'esempio di codice seguente viene illustrato come registrare una nuova directory, nota anche come nodo. Nell'esempio, i modelli esposti dal pacchetto VSPackage, *CLSID_Package*, sono registrati. Di conseguenza, il lato sinistro della finestra di dialogo **nuovo progetto** offre il nodo aggiunto, con un nome determinato dalla risorsa *Folder_Label_ResID* . Questa risorsa viene caricata dalla DLL satellite del pacchetto VSPackage.
@@ -47,7 +47,7 @@ NoRemove NewProjectTemplates
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Registrare modelli di progetti e di elementi](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Aggiungi elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Aggiungere directory alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

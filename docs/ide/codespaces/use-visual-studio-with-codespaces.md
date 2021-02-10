@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 95ed318c327735c85fda854d207b36874eeffca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970985"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Come usare Visual Studio con una codespace (anteprima)
 
@@ -32,7 +32,7 @@ Visual Studio offre un supporto eccezionale per lo sviluppo in codespaces GitHub
 
 La connessione a spazi dei caratteri di GitHub con Visual Studio 2019 Preview non è abilitata per impostazione predefinita, pertanto è necessario abilitare prima l'opzione funzionalità di anteprima.
 
-1. In Visual Studio 2019 Preview usare la **Tools**  >  voce di menu strumenti **Opzioni** per aprire la finestra di dialogo Opzioni.
+1. In Visual Studio 2019 Preview usare la   >  voce di menu strumenti **Opzioni** per aprire la finestra di dialogo Opzioni.
 
 2. In **Environment (ambiente**) selezionare **funzionalità di anteprima** e selezionare la funzionalità **Connect to GitHub codespaces** Preview.
 
@@ -115,7 +115,7 @@ Dopo aver creato l'area di lavoro, è possibile aprire il codespace direttamente
 
 <!-- TBD ## Disconnect from a codespace -->
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Che cosa sono gli spazi di dati di GitHub?](codespaces-overview.md)
 * [Come personalizzare uno spazio di codespace](customize-codespaces.md)

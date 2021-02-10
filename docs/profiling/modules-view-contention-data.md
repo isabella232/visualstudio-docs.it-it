@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b3a73cec5f05072f0a99940b82a362ccb8e1edde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969269"
 ---
 # <a name="modules-view---contention-data"></a>Visualizzazione Moduli: dati sui conflitti
 Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati sulla concorrenza raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo in cui si sono verificati gli eventi di conflitto sono elencate nel nodo del modulo.
@@ -44,7 +44,7 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
 |**Nome processo**|Nome del processo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Moduli](../profiling/modules-view.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)

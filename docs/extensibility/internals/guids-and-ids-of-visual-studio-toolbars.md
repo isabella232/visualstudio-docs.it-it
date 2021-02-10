@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480382"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970218"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID delle barre degli strumenti di Visual Studio
 Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse nei Integrated Development Environment di Visual Studio (IDE) e dei gruppi che contengono. Questi valori sono definiti nei file con *estensione vsct* installati come parte di Visual Studio SDK. Per altre informazioni, vedere [comandi, menu e gruppi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -69,7 +69,7 @@ Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse 
 |Taglia/copia|IDG_VS_TOOLSB_CUTCOPY|
 |Annullamento/ripristino|IDG_VS_TOOLSB_UNDOREDO|
 |Esecuzione/compilazione|IDG_VS_TOOLSB_RUNBUILD|
-|Ricerca|IDG_VS_TOOLSB_SEARCH|
+|Cerca|IDG_VS_TOOLSB_SEARCH|
 |Windows|IDG_VS_TOOLSB_WINDOWS|
 |Nuove finestre|IDG_VS_TOOLSB_NEWWINDOWS|
 |Caricamento/salvataggio|IDG_VS_WINDOWUI_LOADSAVE|

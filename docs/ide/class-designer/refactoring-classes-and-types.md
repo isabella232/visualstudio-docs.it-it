@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2f7941b3a2c9c3fe71119e3a4413ad97f56b6290
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969854"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoring di classi e tipi in Progettazione classi
 
@@ -88,6 +88,6 @@ In **Progettazione classi** è possibile spostare un membro del tipo da un tipo 
 
      La proprietà verrà rimossa dal tipo di origine e visualizzata in quello di destinazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Progettazione di classi e tipi](designing-and-viewing-classes-and-types.md)

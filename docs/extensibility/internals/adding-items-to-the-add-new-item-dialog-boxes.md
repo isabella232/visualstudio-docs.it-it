@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969009"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Aggiungi elementi alla finestra di dialogo Aggiungi nuovo elemento
 Il processo per l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo elemento** inizia con le chiavi del registro di sistema. Come illustrato nelle voci del registro di sistema seguenti, la sezione **AddItemTemplates** contiene il percorso e il nome della directory in cui vengono inseriti gli elementi resi disponibili nella finestra di dialogo **Aggiungi nuovo elemento** .
@@ -33,11 +33,11 @@ Il processo per l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo
 
  **@** = #6
 
- **TemplatesDir**  =  \\ TemplatesDir &lt; Percorso di installazione di Visual Studio SDK &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
+   =  \\ TemplatesDir &lt; Percorso di installazione di Visual Studio SDK &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
 
  **SortPriority** = DWORD: 00000064
 
-| Nome | Type | Dati (dal file *RGS* ) | Descrizione |
+| Nome | Tipo | Dati (dal file *RGS* ) | Descrizione |
 |------------------|-----------| - | - |
 | @ (Impostazione predefinita) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | ID risorsa per i modelli **Aggiungi elemento** . |
 | Val TemplatesDir | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | Percorso degli elementi del progetto visualizzati nella finestra di dialogo per la procedura guidata **Aggiungi nuovo elemento** . |
@@ -79,7 +79,7 @@ Il processo per l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo
 
   Se si implementa questa funzionalità di filtro, non è necessario eseguire il mapping di una tabella di ogni elemento che deve essere nascosto. È possibile classificare semplicemente gli elementi in tipi e inserire le classificazioni nel file o nei file *vsdir* . È quindi possibile nascondere gli elementi che hanno una classificazione specifica implementando l'interfaccia. In questo modo, è possibile rendere dinamici gli elementi nella finestra di dialogo **Aggiungi nuovo elemento** in base allo stato all'interno del progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [Registrare modelli di progetti e di elementi](../../extensibility/internals/registering-project-and-item-templates.md)
 - [CATID per gli oggetti che in genere vengono usati per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

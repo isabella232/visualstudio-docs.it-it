@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c7c3e34778a1bad3eb833c073c530db72b7a36
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970920"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creare un'app Windows Forms in Visual Studio con Visual Basic
 
@@ -65,9 +65,9 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** scegliere il modello **App Windows Forms (.NET Framework)** per Visual Basic.
+1. Nella finestra **Crea un nuovo progetto** scegliere il modello **App Windows Form (.NET Framework)** per Visual Basic.
 
-   Se si preferisce, è possibile affinare la ricerca per ottenere rapidamente il modello desiderato. Ad esempio, immettere o digitare *Windows Forms app* nella casella di ricerca. Successivamente, scegliere **Visual Basic** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma.  
+   Se si preferisce, è possibile affinare la ricerca per ottenere rapidamente il modello desiderato. Ad esempio, immettere o digitare *Windows Form App* nella casella di ricerca. Successivamente, scegliere **Visual Basic** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma.  
 
    ![Scegliere il modello Visual Basic per l'app Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
@@ -100,7 +100,7 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 
      ![Fare clic su Casella degli strumenti per aprire la finestra della casella degli strumenti](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Se non viene visualizzata l'opzione per il volo della **casella degli strumenti** , è possibile aprirla dalla barra dei menu. A tale scopo, **visualizzare**la  >  **casella degli strumenti**. In alternativa, premere **CTRL** + **ALT** + **X**.)
+     (Se non viene visualizzata l'opzione per il volo della **casella degli strumenti** , è possibile aprirla dalla barra dei menu. A tale scopo, **visualizzare** la  >  **casella degli strumenti**. In alternativa, premere **CTRL** + **ALT** + **X**.)
 
 1. Fare clic sull'icona **Blocca** per ancorare la **Casella degli strumenti**.
 
@@ -133,7 +133,7 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 
 ### <a name="add-code-to-the-form"></a>Aggiungere codice al modulo
 
-1. Nella finestra**Form1.vb &#91;Design&#93;** fare doppio clic sul pulsante **Click this** per aprire la finestra **Form1.vb**.
+1. Nella finestra **Form1.vb &#91;Design&#93;** fare doppio clic sul pulsante **Click this** per aprire la finestra **Form1.vb**.
 
       In alternativa è possibile espandere **Form1.vb** in **Esplora soluzioni** e quindi fare clic su **Form1**.
 
@@ -162,7 +162,7 @@ Per altre informazioni, passare all'esercitazione successiva:
 > [!div class="nextstepaction"]
 > [Esercitazione: Creare un visualizzatore di immagini](tutorial-1-create-a-picture-viewer.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni Visual Basic](../get-started/visual-basic/index.yml)
 * [Esercitazioni su C#](../get-started/csharp/index.yml)

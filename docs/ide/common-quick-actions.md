@@ -5,18 +5,18 @@ ms.date: 03/28/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d24b03bc79c32c32c570d26b7607d1ba36c1c1df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970907"
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
@@ -30,7 +30,7 @@ Le Azioni rapide in questa sezione consentono di correggere gli errori nel codic
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
-Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi verranno visualizzati nel menu lampadina come "modifica" in " ** \<misspelled word> \<correct word> "**. Ad esempio:
+Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi verranno visualizzati nel menu lampadina come "modifica" in " **\<misspelled word> \<correct word> "**. Ad esempio:
 
 ```csharp
 // Before
@@ -950,6 +950,6 @@ End Function
 | ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# e Visual Basic | Visual Studio 2017 e versioni successive |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Azioni rapide](../ide/quick-actions.md)

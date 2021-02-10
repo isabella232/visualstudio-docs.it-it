@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], importing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969152"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procedura dettagliata: importare un'area del modulo progettata in Outlook
   Questa procedura dettagliata illustra come progettare un'area del modulo in Microsoft Office Outlook e come importare l'area del modulo in un progetto di componente aggiuntivo VSTO di Outlook con la procedura guidata **Nuova area modulo** . Progettando l'area del modulo in Outlook è possibile aggiungere i controlli nativi di Outlook all'area del modulo associata ai dati di Outlook. Dopo avere importato l'area del modulo, è possibile gestire gli eventi di ogni controllo.
@@ -253,7 +253,7 @@ ms.locfileid: "97522673"
 
 - Per ulteriori informazioni su come aggiungere un riquadro attività personalizzato a Outlook, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
 - [Linee guida per la creazione di aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

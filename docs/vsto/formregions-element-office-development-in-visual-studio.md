@@ -13,15 +13,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegions> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6f98c74c2df998f0e79f5b95a316a7917304e029
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1a718c6a247528788d91e9c1f30ad636acb7ab9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970335"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento formRegions (sviluppo per Office in Visual Studio)
   L' `formRegions` elemento dello `vstov4` spazio dei nomi contiene le aree del modulo di Microsoft Office Outlook associate a un componente aggiuntivo VSTO.
@@ -65,7 +65,7 @@ ms.locfileid: "85538359"
 </vstov4:formRegions>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
