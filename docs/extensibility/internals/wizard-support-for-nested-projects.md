@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: f2cd84379ead1cd45296ae370aab215a37cf4b50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935871"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Supporto di procedure guidate per i progetti annidati
 L'IDE esegue due procedure guidate che il progetto padre per i progetti annidati può implementare: creazione guidata **nuovo progetto** e **Aggiunta guidata elemento** .
@@ -30,6 +30,6 @@ L'IDE esegue due procedure guidate che il progetto padre per i progetti annidati
 
  Per ulteriori informazioni sulle procedure guidate, vedere [procedura guidata (. File VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md), [parametri di contesto](../../extensibility/internals/context-parameters.md) e [registrazione dei modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [Annidamento dei progetti](../../extensibility/internals/nesting-projects.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 073dac8de37edddc1b748c52258047cd2d85e218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937075"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Specifica i flag che controllano la valutazione dell'espressione.
@@ -28,7 +28,7 @@ Specifica i flag che controllano la valutazione dell'espressione.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-enum enum_EVALFLAGS {
+enum enum_EVALFLAGS {
     EVAL_RETURNVALUE = 0x0002,
     EVAL_NOSIDEEFFECTS = 0x0004,
     EVAL_ALLOWBPS = 0x0008,
@@ -41,7 +41,7 @@ typedef DWORD EVALFLAGS;
 ```
 
 ```csharp
-public enum enum_EVALFLAGS {
+public enum enum_EVALFLAGS {
     EVAL_RETURNVALUE = 0x0002,
     EVAL_NOSIDEEFFECTS = 0x0004,
     EVAL_ALLOWBPS = 0x0008,
@@ -74,7 +74,7 @@ Impedisce la valutazione della funzione. Si consideri, ad esempio, il `int` toke
 `EVAL_NOEVENTS`\
 Flag che indica che gli eventi che si verificano durante la valutazione dell'espressione non devono essere inviati a gestione debug sessione (SDM) o all'IDE.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questi flag vengono passati come argomento ai metodi [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) e [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .
 
 Questi flag possono essere combinati con un OR bit per bit.
@@ -86,7 +86,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

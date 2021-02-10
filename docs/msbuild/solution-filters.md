@@ -8,14 +8,14 @@ helpviewer_keywords:
 - solution filters [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 998103828d20827e8a1d99e0cc34d7f9beb6bd7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a5c764ad9ea4190df5e533926671dbd88c53b8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87401030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937836"
 ---
 # <a name="solution-filters-in-msbuild"></a>Filtri della soluzione in MSBuild
 
@@ -77,7 +77,7 @@ Ecco il file di filtro della soluzione generato da Visual Studio:
 
 In questo esempio, quando si esegue la compilazione con il filtro abilitato (usando il comando `MSBuild [options] MyFilter.slnf` ), MSBuild compila MyApplication e ProjectA perché sono elencate in modo esplicito nel file di filtro della soluzione. Nell'ambito della compilazione di PROJECTA, MSBuild compila ClassLibrary1 perché ProjectA dipende da esso.  ProjectB non viene compilato. Questa discussione presuppone una compilazione pulita. Se i progetti sono stati compilati in precedenza, si applicano le regole usuali per ignorare i progetti che sono già aggiornati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Soluzioni filtrate](../ide/filtered-solutions.md)
 - [Riferimenti alla riga di comando di MSBuild](msbuild-command-line-reference.md)

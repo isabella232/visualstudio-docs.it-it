@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ba8a52e615a8e3d40b5c76be66f4b639aec6c07e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 72d62ad620ceb0174775539bfaa1c883826849b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937160"
 ---
 # <a name="walkthroughs-using-excel"></a>Procedure dettagliate con Excel
   Le procedure dettagliate seguenti descrivono come usare personalizzazioni a livello di documento e componenti aggiuntivi VSTO per automatizzare Microsoft Office Excel e personalizzare l'interfaccia utente.

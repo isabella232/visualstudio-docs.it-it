@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09203557fd9adcd6580dfafa981d6ed4f80eca16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936457"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -69,7 +69,7 @@ Per cambiare l'ambiente attivo, fare clic con il pulsante destro del mouse sull'
 
 ## <a name="project-templates"></a>Modelli di progetto
 
-In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu **file**  >  **nuovo**  >  **progetto** oppure fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi**  >  **nuovo progetto**. in entrambi i menu viene visualizzata la finestra di dialogo **nuovo progetto** . Per visualizzare i modelli specifici di Python, cercare "Python" o selezionare il nodo **Installed**  >  **Python** installato:
+In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu **file**  >  **nuovo**  >  **progetto** oppure fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi**  >  **nuovo progetto**. in entrambi i menu viene visualizzata la finestra di dialogo **nuovo progetto** . Per visualizzare i modelli specifici di Python, cercare "Python" o selezionare il nodo   >  **Python** installato:
 
 ![Finestra di dialogo Nuovo progetto con modelli Python](media/projects-new-project-dialog.png)
 

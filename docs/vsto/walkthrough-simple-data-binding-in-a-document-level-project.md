@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937409"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procedura dettagliata: data binding semplice in un progetto a livello di documento
   In questa procedura dettagliata vengono illustrate le nozioni di base di data binding in un progetto a livello di documento. Un singolo campo dati in un database SQL Server è associato a un intervallo denominato in Microsoft Office Excel. Nella procedura dettagliata viene inoltre illustrato come aggiungere controlli che consentono di scorrere tutti i record nella tabella.
@@ -172,7 +172,7 @@ ms.locfileid: "97524096"
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  A questo punto è possibile testare la cartella di lavoro per verificare che sia possibile esplorare i record nel database.
 
 ### <a name="to-test-your-workbook"></a>Per testare la cartella di lavoro
@@ -192,9 +192,9 @@ ms.locfileid: "97524096"
 
 - Associare le celle a più colonne di una tabella, anziché a un campo. Per altre informazioni, vedere [procedura dettagliata: data binding complessi in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
 
-- Utilizzare un <xref:System.Windows.Forms.BindingNavigator> controllo per scorrere i record. Per altre informazioni, vedere [procedura: esplorare i dati con il controllo BindingNavigator Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+- Utilizzare un <xref:System.Windows.Forms.BindingNavigator> controllo per scorrere i record. Per altre informazioni, vedere [procedura: esplorare i dati con il controllo BindingNavigator Windows Form](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Procedura dettagliata: data binding complesse in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

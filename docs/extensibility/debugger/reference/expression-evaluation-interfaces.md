@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da230a2da87b2dd3e3a85ce3ec6c914e829ccc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936938"
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfacce di valutazione delle espressioni
 > [!IMPORTANT]
@@ -59,7 +59,7 @@ ms.locfileid: "80736950"
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|Fornisce la possibilità di creare un oggetto [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) .|
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|Rappresenta una raccolta di oggetti [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Scrittura di un analizzatore di espressioni CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Visualizzatore di tipi e visualizzatore personalizzato](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

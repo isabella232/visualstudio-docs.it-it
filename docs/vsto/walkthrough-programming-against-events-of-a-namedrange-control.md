@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937394"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procedura dettagliata: programma per eventi di un controllo NamedRange
   In questa procedura dettagliata viene illustrato come aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo a un foglio di lavoro di Excel Microsoft Office e programmarlo in base agli eventi utilizzando gli strumenti di sviluppo di Office in Visual Studio.
@@ -136,7 +136,7 @@ ms.locfileid: "97526123"
     > [!NOTE]
     > Poiché quando si fa doppio clic su una cella in un intervallo di Excel, la selezione viene spostata nell'intervallo, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> si verifica un evento prima che <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> si verifichi l'evento.
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  A questo punto è possibile testare la cartella di lavoro per verificare che il testo che descrive gli eventi di un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo venga inserito in un altro intervallo denominato quando vengono generati gli eventi.
 
 ### <a name="to-test-your-document"></a>Per testare il documento
@@ -158,7 +158,7 @@ ms.locfileid: "97526123"
 
 - Distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)

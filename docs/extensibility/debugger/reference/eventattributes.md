@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f304921f622245787413a05894096470a96eb30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936962"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Specifica gli attributi dell'evento.
@@ -74,7 +74,7 @@ Indica un evento inviato immediatamente e in modo sincrono all'IDE. Questo flag 
 `EVENT_EXPRESSION_EVALUATION`\
 L'evento è il risultato della valutazione dell'espressione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questi valori vengono passati nel `dwAttrib` parametro del metodo dell' [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .
 
 Questi valori possono essere combinati con un bit per bit `OR` .
@@ -86,7 +86,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

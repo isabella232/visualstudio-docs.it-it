@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937435"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procedura dettagliata: inserimento di dati in una cartella di lavoro in un server
   Questa procedura dettagliata illustra come inserire dati in un set di dati memorizzato nella cache di una Microsoft Office cartella di lavoro di Excel senza avviare Excel usando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -294,6 +294,6 @@ Per altre informazioni sull'uso dei dati memorizzati nella cache, vedere questi 
 
 - Modifica dei dati in un set di dati memorizzato nella cache senza avviare Excel. Per ulteriori informazioni, vedere [procedura dettagliata: modificare i dati memorizzati nella cache in una cartella di lavoro di in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: modificare i dati memorizzati nella cache in una cartella di lavoro in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

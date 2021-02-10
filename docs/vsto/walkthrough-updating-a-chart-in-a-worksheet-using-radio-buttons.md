@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937316"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: aggiornamento di un grafico in un foglio di lavoro mediante i pulsanti di opzione
   Questa procedura dettagliata illustra le nozioni di base sull'uso dei pulsanti di opzione in un foglio di lavoro di Excel Microsoft Office per consentire all'utente di passare rapidamente da una modalità all'altra. In questo caso, le opzioni cambiano lo stile di un grafico.
@@ -110,7 +110,7 @@ ms.locfileid: "97526060"
 
 1. Selezionare il <xref:Microsoft.Office.Tools.Excel.Chart> controllo nella finestra di progettazione e modificare le proprietà seguenti nella finestra **Proprietà** .
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**datachart**|
     |**HasLegend**|**false**|
@@ -134,31 +134,31 @@ ms.locfileid: "97526060"
 
 2. Dalla scheda **controlli comuni** della **casella degli strumenti** trascinare un controllo **pulsante di opzione** sul controllo utente e modificare le proprietà seguenti.
 
-   | Proprietà | valore |
+   | Proprietà | Valore |
    |----------|------------------|
    | **Nome** | **columnChart** |
-   | **Testo** | **Istogramma** |
+   | **Text** | **Istogramma** |
 
 3. Aggiungere un secondo pulsante di opzione al controllo utente e modificare le proprietà seguenti.
 
-   | Proprietà | valore |
+   | Proprietà | Valore |
    |----------|---------------|
    | **Nome** | **barChart** |
-   | **Testo** | **Grafico a barre** |
+   | **Text** | **Grafico a barre** |
 
 4. Aggiungere un terzo pulsante di opzione al controllo utente e modificare le proprietà seguenti.
 
-   | Proprietà | valore |
+   | Proprietà | Valore |
    |----------|----------------|
    | **Nome** | **lineChart** |
-   | **Testo** | **Grafico a linee** |
+   | **Text** | **Grafico a linee** |
 
 5. Aggiungere un quarto pulsante di opzione al controllo utente e modificare le proprietà seguenti.
 
-   |Proprietà|valore|
+   |Proprietà|Valore|
    |--------------|-----------|
    |**Nome**|**areaBlockChart**|
-   |**Testo**|**Grafico ad area**|
+   |**Text**|**Grafico ad area**|
 
    Quindi, scrivere il codice per aggiornare il grafico quando si fa clic su un pulsante di opzione.
 
@@ -231,7 +231,7 @@ ms.locfileid: "97526060"
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  È ora possibile testare la cartella di lavoro per verificare che lo stile del grafico sia corretto quando si seleziona un pulsante di opzione.
 
 ### <a name="to-test-your-workbook"></a>Per testare la cartella di lavoro
@@ -251,5 +251,5 @@ ms.locfileid: "97526060"
 
 - Modificare la formattazione di un foglio di controllo utilizzando le caselle di controllo. Per altre informazioni, vedere [procedura dettagliata: modificare la formattazione del foglio di controllo tramite i controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)

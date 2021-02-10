@@ -5,15 +5,15 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42cdc6e964d23b5aafdfe225c04d5d35b151cc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936405"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -33,7 +33,7 @@ Questo comando crea un progetto con un file *script.R* vuoto aperto nell'editor.
 
 ![Contenuto di un progetto R creato dal modello](media/projects-template-results.png)
 
-Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente nella finestra [R interattivo](interactive-repl-for-r-in-visual-studio.md). È possibile aprire una finestra cronologia dedicata con il comando della cronologia di Windows di **R Tools**  >  **Windows**  >  **History** . Tale finestra ha un pulsante della barra degli strumenti e voci di menu contestuale per cancellare il contenuto della cronologia.
+Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente nella finestra [R interattivo](interactive-repl-for-r-in-visual-studio.md). È possibile aprire una finestra cronologia dedicata con il comando della cronologia di Windows di **R Tools**  >    >   . Tale finestra ha un pulsante della barra degli strumenti e voci di menu contestuale per cancellare il contenuto della cronologia.
 
 Il file *rproject.rproj* consente di gestire alcune impostazioni di progetto specifiche di R non altrimenti gestite da Visual Studio:
 
@@ -56,12 +56,12 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 
 1. Creare un nuovo progetto in Visual Studio come descritto nella sezione precedente.
 1. Copiare i file nella cartella del progetto.
-1. Nel Esplora soluzioni di Visual Studio fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**  >  **elemento esistente**e selezionare i file che si desidera aggiungere. Quando si seleziona **OK**, questi compaiono nell'albero del progetto.
+1. Nel Esplora soluzioni di Visual Studio fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**  >  **elemento esistente** e selezionare i file che si desidera aggiungere. Quando si seleziona **OK**, questi compaiono nell'albero del progetto.
 1. Per organizzare il codice in sottocartelle, fare clic con il pulsante destro del mouse sul progetto, selezionare prima **Aggiungi**  >  **nuova cartella** , quindi copiare i file nella cartella e aggiungere gli elementi esistenti nel passaggio 3.
 
 ## <a name="project-properties"></a>Proprietà progetto
 
-Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > (nome progetto) **. La finestra visualizzata riporta le proprietà del progetto:
+Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > (nome progetto)**. La finestra visualizzata riporta le proprietà del progetto:
 
 | Scheda | Proprietà | Descrizione |
 | --- | --- | --- |
@@ -86,10 +86,10 @@ I progetti di Visual Studio supportano diversi comandi generali sia tramite il m
 
 ## <a name="r-specific-item-templates"></a>Modelli di elemento specifici di R
 
-RTVS include diversi modelli per tipi di file specifici. Per accedere ai modelli, fare clic con il pulsante destro del mouse su un progetto R e scegliere **Aggiungi**  >  **nuovo elemento**selezionando **progetto**  >  **Aggiungi nuovo elemento**oppure usando **file**  >  **nuovo**  >  **file** e selezionando la scheda **R** . Il modo migliore per esplorare un modello è creare un nuovo progetto e inserirvi file di ogni tipo.
+RTVS include diversi modelli per tipi di file specifici. Per accedere ai modelli, fare clic con il pulsante destro del mouse su un progetto R e scegliere **Aggiungi**  >  **nuovo elemento** selezionando **progetto**  >  **Aggiungi nuovo elemento** oppure usando **file**  >  **nuovo**  >  **file** e selezionando la scheda **R** . Il modo migliore per esplorare un modello è creare un nuovo progetto e inserirvi file di ogni tipo.
 
 > [!Note]
-> I comandi **Aggiungi**  >  **nuovo elemento** visualizzano anche tipi di file generici che non sono elencati nella tabella. **in questo**caso i  >  **New**  >  **File** tipi sono contenuti nella scheda **generale** .
+> I comandi **Aggiungi**  >  **nuovo elemento** visualizzano anche tipi di file generici che non sono elencati nella tabella. **in questo** caso i  >    >   tipi sono contenuti nella scheda **generale** .
 
 | Tipo di file | Descrizione |
 | --- | --- |

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: cc1dc50c379ab2eac7d44c48e06834dd73c477f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936431"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di campionamento.
@@ -55,7 +55,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
 - [Visualizzazione processo](../profiling/process-view.md)
 
  Elenca l'ora di inizio e di fine di processi e thread.
@@ -77,5 +77,5 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler che includono dati di memoria .NET.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

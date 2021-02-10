@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3742e60c1bc8a0e490ca83ba14eadc4b879d3e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936899"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
 Enumera i tipi aggiuntivi di campi che possono essere contenuti in un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) . Questa enumerazione estende l'enumerazione [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .
@@ -61,6 +61,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

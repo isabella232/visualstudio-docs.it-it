@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], updating documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0db8cd113983231ee45252fec8fb47e3a7b75b7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937329"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procedura dettagliata: aggiornare un grafico in un documento mediante pulsanti di opzione
   Questa procedura dettagliata illustra come usare i pulsanti di opzione in una personalizzazione a livello di documento per Microsoft Office Word, per consentire agli utenti di selezionare stili del grafico nel documento.
@@ -93,31 +93,31 @@ ms.locfileid: "97528386"
 
 2. Dalla scheda **controlli comuni** della **casella degli strumenti** trascinare il primo controllo **pulsante di opzione** sul controllo utente e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**columnChart**|
-    |**Testo**|**Istogramma**|
+    |**Text**|**Istogramma**|
 
 3. Aggiungere un secondo **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**barChart**|
-    |**Testo**|**Grafico a barre**|
+    |**Text**|**Grafico a barre**|
 
 4. Aggiungere un terzo **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**lineChart**|
-    |**Testo**|**Grafico a linee**|
+    |**Text**|**Grafico a linee**|
 
 5. Aggiungere un quarto **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**areaBlockChart**|
-    |**Testo**|**Grafico ad area**|
+    |**Text**|**Grafico ad area**|
 
 ## <a name="add-references"></a>Aggiungere riferimenti
  Per accedere al grafico dal controllo utente in un documento, è necessario disporre di un riferimento all' `Microsoft.Office.Interop.Graph` assembly nel progetto.
@@ -197,7 +197,7 @@ ms.locfileid: "97528386"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  A questo punto è possibile testare il documento per accertarsi che lo stile del grafico sia aggiornato correttamente quando si seleziona un pulsante di opzione.
 
 ### <a name="to-test-your-document"></a>Per testare il documento
@@ -215,7 +215,7 @@ ms.locfileid: "97528386"
 
 - Modificare la formattazione selezionando uno stile da una casella combinata. Per altre informazioni, vedere [procedura dettagliata: modificare la formattazione dei documenti mediante i controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
 - [Procedure dettagliate e esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md)
-- [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

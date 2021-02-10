@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d205203797d8bd50c7b3132df86fbff9dbad1771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937693"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procedura dettagliata: creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint
   Nelle procedure riportate di seguito viene illustrato come creare colonne o *campi* personalizzati di un sito di SharePoint, nonché un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che utilizza il nuovo tipo di contenuto.
@@ -56,7 +56,7 @@ ms.locfileid: "96914010"
 
 #### <a name="to-create-the-project"></a>Per creare il progetto
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **File** Scegliere **nuovo**  >  **progetto** dal menu file.
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]  Scegliere **nuovo**  >  **progetto** dal menu file.
 ::: moniker range="=vs-2017"
 2. Nella finestra di dialogo **nuovo progetto** , in **Visual C#** o **Visual Basic**, espandere il nodo **Office/SharePoint** , quindi selezionare **soluzioni SharePoint**.
 
@@ -93,7 +93,7 @@ ms.locfileid: "96914010"
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere **colonna sito**, modificare il nome in **patientName**, quindi scegliere il pulsante **Aggiungi** .
 
-3. Nel file di *Elements.xml* della colonna del sito lasciare l'impostazione del tipo **testo**, modificare l'impostazione di **gruppo** in **colonne del sito Clinic**. **Type** Al termine, il file di *Elements.xml* della colonna del sito dovrebbe essere simile all'esempio seguente.
+3. Nel file di *Elements.xml* della colonna del sito lasciare l'impostazione del tipo **testo**, modificare l'impostazione di **gruppo** in **colonne del sito Clinic**.  Al termine, il file di *Elements.xml* della colonna del sito dovrebbe essere simile all'esempio seguente.
 
     ```xml
     <Field
@@ -220,7 +220,7 @@ ms.locfileid: "96914010"
 
 15. Nell'elenco **nome colonna** scegliere **nome paziente**, verificare che la colonna **ordinamento** sia impostata su **crescente**, quindi scegliere il pulsante **OK** .
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  Ora che le colonne del sito personalizzate, il tipo di contenuto e l'elenco sono pronti, distribuirli in SharePoint ed eseguire l'applicazione per testarla.
 
 #### <a name="to-test-the-application"></a>Per testare l'applicazione

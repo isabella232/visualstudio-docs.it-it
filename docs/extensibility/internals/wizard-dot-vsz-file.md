@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5fa9b9e06ccb20e6a2859770c0637fc85422fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935859"
 ---
 # <a name="wizard-vsz-file"></a>File (con estensione vsz) della procedura guidata
 
@@ -48,7 +48,7 @@ I parametri consentono al file con estensione VSZ di passare parametri personali
 
 Per aggiungere un ID delle impostazioni locali predefinito al file con estensione vsz, specificare `FALLBACK_LCID` = xxxx, dove xxxx è l'ID delle impostazioni locali, ad esempio 1033 per l'inglese. Quando il `FALLBACK_LCID` parametro è definito, la procedura guidata usa l'ID delle impostazioni locali di fallback specificato se l'ID corrente non viene trovato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Parametri personalizzati](../../extensibility/internals/custom-parameters.md)
 - [Procedure guidate](../../extensibility/internals/wizards.md)

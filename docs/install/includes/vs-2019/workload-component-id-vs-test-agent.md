@@ -5,17 +5,17 @@ description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studi
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: e30ca3abfd2ebe2d937963547248d318a43f59e2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0e550d6577a141cbe33adcfdd6c526fc60d8abc3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437284"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937979"
 ---
 ## <a name="test-agent"></a>Agente di test
 
@@ -27,7 +27,7 @@ ms.locfileid: "94437284"
 
 ID componente | Nome | Versione | Tipo di dipendenza
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Funzionalità principali dell'agente di test | 16.0.28315.86 | Obbligatoria
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Funzionalità principali dell'agente di test | 16.0.28315.86 | Necessario
 
 ## <a name="unaffiliated-components"></a>Componenti non affiliati
 

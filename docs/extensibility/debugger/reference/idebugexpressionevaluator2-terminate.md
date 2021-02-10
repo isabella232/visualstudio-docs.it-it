@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5460930cbcc528648c2a6c502ef7eb9acbe00d62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17c2aebe9c1f18a6eb655e4e740b6a7afc628c50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938187"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 Arresta e pulisce l'analizzatore di espressioni.
@@ -39,7 +39,7 @@ int Terminate ();
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Indica all'analizzatore di espressioni quando viene eseguita la pulizia.
 
 ## <a name="example"></a>Esempio
@@ -59,5 +59,5 @@ STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

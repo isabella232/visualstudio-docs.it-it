@@ -8,22 +8,22 @@ f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: f29ee2aeedc971fc25654b6681c87b5dab71e386
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a5bba22ea9255fcc6c65ea5fa6a59990548dc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937140"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Aggiungere parametri e argomenti alle finestre di dialogo
 
 Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Aggiungi parametri** utilizzata dalla finestra di <xref:System.Activities.Statements.InvokeMethod> progettazione:
 
-|Nome|valore|
+|Nome|Valore|
 |-|-|
 |**Direzione**|Specifica se il parametro rappresenta il flusso di dati nel metodo e/o al di fuori del metodo.|
 |**Tipo**|Nome tipo del nuovo parametro.|
@@ -31,7 +31,7 @@ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente de
 
 Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente (UI) della finestra di dialogo **Aggiungi argomenti** utilizzata dalla <xref:System.Activities.Statements.InvokeDelegate> finestra di progettazione:
 
-|Nome|valore|
+|Nome|Valore|
 |-|-|
 |**Nome**|Il nome dell’argomento.|
 |**Direzione**|Specifica se l'argomento rappresenta il flusso di dati nel delegato e/o al di fuori del delegato.|

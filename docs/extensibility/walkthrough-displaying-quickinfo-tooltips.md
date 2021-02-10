@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 3c07dd32b889a9d75222bc8ff5a245f516fab528
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935924"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Procedura dettagliata: visualizzare le descrizioni comandi di informazioni rapide
 Informazioni rapide è una funzionalità di IntelliSense che visualizza le firme e le descrizioni dei metodi quando un utente sposta il puntatore del mouse su un nome di metodo. È possibile implementare funzionalità basate su linguaggio, ad esempio informazioni rapide, definendo gli identificatori per i quali si desidera fornire descrizioni informazioni rapide e quindi creare una descrizione comando in cui visualizzare il contenuto. È possibile definire informazioni rapide nel contesto di un servizio di linguaggio oppure è possibile definire l'estensione del nome di file e il tipo di contenuto e visualizzare il informazioni rapide per solo quel tipo oppure è possibile visualizzare informazioni rapide per un tipo di contenuto esistente, ad esempio "Text". Questa procedura dettagliata illustra come visualizzare informazioni rapide per il tipo di contenuto "Text".

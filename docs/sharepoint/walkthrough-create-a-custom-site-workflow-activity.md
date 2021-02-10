@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, site workflows
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937719"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procedura dettagliata: creare un'attività personalizzata del flusso di lavoro del sito
   In questa procedura dettagliata viene illustrato come creare un'attività personalizzata per un flusso di lavoro a livello di sito tramite [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . I flussi di lavoro a livello di sito si applicano all'intero sito, non solo a un elenco sul sito. L'attività personalizzata crea un elenco di annunci di backup e quindi copia il contenuto dell'elenco degli annunci al suo interno.
