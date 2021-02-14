@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/28/2020
+ms.date: 02/10/2021
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538007"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335227"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
@@ -76,7 +76,7 @@ Per domande su come trasferire risorse, rimuovere i limiti di spesa o altri argo
 |              Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise               |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 |               Visual Studio Enterprise (mensile)               |        Non disponibile        |                                                             |
 |             Visual Studio Professional Standard              |     Credito mensile pari a 50 dollari USA      |                             Sì
-|              Sottoscrizione di Visual Studio Professional con GitHub Enterprise              |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
+|              Sottoscrizione di Visual Studio Professional con GitHub Enterprise              |     Credito mensile pari a 50 dollari USA     |                             Sì                             |
 |              Visual Studio Professional (mensile)              |        Non disponibile        |                                                             |
 |                    Visual Studio Test Pro                    |     Credito mensile pari a 50 dollari USA      |                             Sì                             |
 |                        MSDN Platforms                        |     Credito mensile pari a 100 dollari USA     |                             Sì                             |
@@ -116,7 +116,7 @@ R: la proprietà intellettuale prodotta da un dipendente creato per le risorse f
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934650"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335264"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Debug remoto di un progetto C++ in Visual Studio
 Per eseguire il debug di un'applicazione di Visual Studio in un computer diverso, installare ed eseguire Remote Tools nel computer in cui verrà distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi distribuire ed eseguire l'app.
@@ -99,7 +99,7 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non telefon
     > [!TIP]
     > In alternativa, è possibile distribuire i file come passaggio separato. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **mymfc**, quindi scegliere **Distribuisci**.
 
-    Se sono presenti file non di codice necessari per l'applicazione, è possibile specificarli in **file aggiuntivi da distribuire** nella pagina del **debugger Windows remoto** .
+    Se sono presenti file non di codice necessari per l'applicazione, è possibile specificarli in un elenco delimitato da punto e virgola in **file aggiuntivi da distribuire** nella pagina del **debugger Windows remoto** .
 
     In alternativa, è possibile includere i file nel progetto e impostare la proprietà **Content** su **Sì** nella pagina delle **proprietà** per ogni file. Questi file vengono copiati nella **directory di distribuzione** specificata nella pagina **debugger Windows remoto** . È anche possibile modificare il **tipo di elemento** in **copy file** e specificare proprietà aggiuntive se è necessario copiare i file in una sottocartella della **directory di distribuzione**.
 
