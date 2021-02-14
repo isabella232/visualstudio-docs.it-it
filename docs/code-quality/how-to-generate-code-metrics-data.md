@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860042"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496262"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -279,7 +279,7 @@ Se non si vuole installare il pacchetto NuGet, è possibile generare e usare dir
 1. Clonare il repository [DotNet/Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers) .
 2. Aprire Prompt dei comandi per gli sviluppatori per Visual Studio come amministratore.
 3. Dalla radice del repository **Roslyn-Analyzers** , eseguire il comando seguente: `Restore.cmd`
-4. Passare alla directory *src\Tools*.
+4. Modificare la directory in *src\Tools\Metrics*.
 5. Eseguire il comando seguente per compilare il progetto **metrics. csproj** :
 
    ```shell
