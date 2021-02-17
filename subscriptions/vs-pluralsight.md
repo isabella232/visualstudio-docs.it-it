@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537981"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542990"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -47,7 +47,7 @@ Il riquadro precedente è un esempio di ciò che un Sottoscrittore di Visual Stu
 
 1. Immettere la password desiderata nel campo **nuova password** , immetterla di nuovo nel campo **Conferma password** e fare clic su **Salva**.
 
-1. Ecco fatto!  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
+1. Questo è tutto.  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
 
 ## <a name="status-of-your-pluralsight-subscription"></a>Stato della sottoscrizione di Pluralsight
 Dopo aver attivato il vantaggio Pluralsight, l'aspetto del riquadro nel portale delle sottoscrizioni di Visual Studio cambierà per consentire di tenere traccia dello stato della sottoscrizione.  
@@ -96,6 +96,9 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>D: per una sottoscrizione di Visual Studio Enterprise non viene visualizzato il riquadro Pluralsight nella pagina Vantaggi. Qual è il problema?
 R: non tutte le sottoscrizioni di Visual Studio Enterprise includono il vantaggio Pluralsight.  Controllare la [tabella di idoneità](#eligibility) per verificare se la sottoscrizione è idonea.
 
+### <a name="q-can-i-use-the-pluralsight-benefit-more-than-once"></a>D: è possibile usare il vantaggio Pluralsight più di una volta?  
+R: il vantaggio Pluralsight nelle sottoscrizioni di Visual Studio selezionate viene rinnovato quando si rinnova la sottoscrizione. Ad esempio, se si ha una sottoscrizione annuale che viene rinnovata ogni anno, il vantaggio sarà disponibile per ogni anno di rinnovo. Se si ha una sottoscrizione pluriennale, il vantaggio Pluralsight sarà disponibile una sola volta per la durata della sottoscrizione.  Se si rinnova una sottoscrizione pluriennale, il vantaggio sarà disponibile nuovamente dopo il rinnovo.  Per trovare la data di rinnovo, visitare <https://my.visualstudio.com/subscriptions> e fare clic su *informazioni di supporto* e individuare la data "valido fino a:". 
+
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>D: è possibile accedere a playlist o canali di apprendimento personalizzati?
 R: Sì. Un Sottoscrittore di Visual Studio consente di accedere ai ruoli in primo piano, ai percorsi di apprendimento e ai canali personalizzati (playlist) come parte del vantaggio di formazione Pluralsight. Il contenuto in primo piano è stato curato appositamente da Microsoft e Pluralsight ed è destinato all'apprendimento in aree principali di interesse. Attivare il vantaggio Pluralsight tramite il portale delle sottoscrizioni <https://my.visualstudio.com/benefits> di Visual Studio per ottenere l'accesso a questo e ad altri contenuti nella Home page Pluralsight.
 
@@ -110,7 +113,7 @@ R: al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
