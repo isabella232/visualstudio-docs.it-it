@@ -9,16 +9,18 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a0db2f2e4993fcc3c986686322b8915615758e13
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727294"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683297"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>Aggiunta di app Azure configurazione con Visual Studio Servizi connessi
 
-In questa esercitazione si apprenderà come aggiungere facilmente tutti gli elementi necessari per iniziare a usare app Azure configurazione per gestire i flag di configurazione e funzionalità per i progetti Web in Visual Studio, indipendentemente dal fatto che si usi ASP.NET Core o qualsiasi tipo di progetto ASP.NET. Usando la funzionalità Servizi connessi in Visual Studio, è possibile fare in modo che Visual Studio aggiunga automaticamente tutto il codice, i pacchetti NuGet e le impostazioni di configurazione necessari per connettersi alla risorsa di configurazione dell'app in Azure. Per usare questa funzionalità, è necessario usare Visual Studio 2019 versione 16,9 o successiva.
+In questa esercitazione si apprenderà come aggiungere facilmente tutti gli elementi necessari per iniziare a usare app Azure configurazione per gestire la configurazione e i flag delle funzionalità per i progetti Web in Visual Studio. Usando la funzionalità Servizi connessi in Visual Studio, è possibile fare in modo che Visual Studio aggiunga automaticamente tutto il codice, i pacchetti NuGet e le impostazioni di configurazione necessari per connettersi alla risorsa di configurazione dell'app in Azure. Per usare questa funzionalità, è necessario usare Visual Studio 2019 versione 16,9 o successiva.
+
+È possibile usare la funzionalità di configurazione delle app Servizi connessi in ASP.NET Core, nella console di .NET Core e nei progetti di .NET Framework.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Servizi connessi in Visual Studio per Mac](/visualstudio/mac/connected-services).
@@ -46,7 +48,7 @@ In questa esercitazione si apprenderà come aggiungere facilmente tutti gli elem
 
     Se non è già stato effettuato l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita](https://azure.microsoft.com/free/dotnet).
 
-1. Nella schermata **configura configurazione app Azure** selezionare la sottoscrizione e un archivio di configurazione esistente. Fare quindi clic su **Avanti**.
+1. Nella schermata **configura configurazione app Azure** selezionare la sottoscrizione e un archivio di configurazione esistente. Selezionare quindi **Avanti**.
 
     Se è necessario creare un archivio di configurazione dell'app, andare al passaggio successivo. In caso contrario, andare al passaggio 6.
 

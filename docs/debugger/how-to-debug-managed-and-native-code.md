@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d001e89993b90f6e8b7b33f43a5c06a1ffd7cd1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899414"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683329"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug C# e C++ nella stessa sessione di debug
 
@@ -126,9 +126,11 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **console**, scegliere **modelli**, quindi scegliere **app console (.net core)** o **app console (.NET Framework)** per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **console**, scegliere **modelli**, quindi scegliere **app console** per .NET Core o **app console (.NET Framework)** per C#. Nella finestra di dialogo visualizzata fare clic su **Avanti**.
 
-    Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **Crea**.
+    Digitare quindi un nome come **Mixed_Mode_Calling_App** e fare clic su **Avanti** o su **Crea**, a seconda di quale opzione è disponibile.
+
+    Per .NET Core, scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)**.
@@ -136,7 +138,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
+    Se non viene visualizzato il modello di progetto corretto, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo **multipiattaforma .NET Core** o **sviluppo per desktop .NET** , a seconda del Framework di destinazione, quindi scegliere **modifica**.
 
     > [!NOTE]
     > È anche possibile aggiungere il nuovo progetto gestito alla soluzione C++ esistente. Il progetto viene creato in una nuova soluzione per rendere più difficile l'attività di debug in modalità mista.

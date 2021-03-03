@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7170983732ff1350061629e1e8aa4ec88fad3fa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952837"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683618"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Guida introduttiva: analizzare i dati di utilizzo della CPU in Visual Studio (ASP.NET Core)
 
@@ -42,24 +42,17 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
    Nella finestra di dialogo visualizzata scegliere **MVC** nel riquadro centrale e quindi fare clic su **OK**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se la finestra di avvio non è aperta,  scegliere > **finestra di avvio** file.
+   In Visual Studio 2019, scegliere **Crea un nuovo progetto** nella finestra Start. Se la finestra di avvio non è aperta, scegliere  >  **finestra di avvio** file, quindi scegliere **Crea un nuovo progetto**.
 
-   Nella finestra Start scegliere **Crea un nuovo progetto**.
+   Digitare **app Web** nella casella di ricerca, scegliere **C#** come lingua, scegliere **ASP.NET Core applicazione Web (Model-View-Controller)**, quindi fare clic su **Avanti**. Nella schermata successiva assegnare un nome al progetto *MyProfilingApp_MVC*, quindi scegliere **Avanti**.
 
-   Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C#** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
-
-   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere il modello **applicazione Web ASP.NET (.NET Core)** , quindi fare clic su **Avanti**.
+   Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
 
    > [!NOTE]
    > Se non viene visualizzato il modello **applicazione Web ASP.NET (.NET Core)** , è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. A questo punto scegliere il carico di lavoro **Sviluppo ASP.NET e Web** nel programma di installazione di Visual Studio.
-
-   Nella finestra **Configura nuovo progetto** Digitare o immettere *MyProfilingApp_MVC* nella casella **nome progetto** . Quindi scegliere **Crea**.
-
-   Nella finestra visualizzata scegliere **applicazione Web (Model-View-Controller)** , quindi scegliere **Crea**.
-
    ::: moniker-end
 
-   Visual Studio aprirà il nuovo progetto.
+   Visual Studio crea e apre il nuovo progetto.
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella Models e scegliere **Aggiungi**  >  **classe**.
 

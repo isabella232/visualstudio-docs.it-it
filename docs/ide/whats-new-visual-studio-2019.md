@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2019
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2019.
-ms.date: 11/10/2020
+ms.date: 03/02/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ccdd8ef7285ba0e5fa211b6b9f76fead5a2f3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960572"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684030"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
-**Aggiornamento per la [versione 16,8](/visualstudio/releases/2019/release-notes/)**
+**Aggiornamento per la [versione 16,9](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Scarica Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -245,8 +245,8 @@ Per ulteriori informazioni sulla versione di anteprima &mdash; e su un collegame
 * [Note sulla versione di Visual Studio 2019 per Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Novità di Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Novità di C++ in Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
-* [Novità di C# 8,0](/dotnet/csharp/whats-new/csharp-8/)
-* [Novità di .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [Novità di C# 9,0](/dotnet/csharp/whats-new/csharp-9)
+* [Novità di .NET 5](/dotnet/core/dotnet-five)
 * [Novità di .NET Framework](/dotnet/framework/whats-new/)
 * [Microsoft Build Conference](https://www.microsoft.com/build)
 * [Conferenza Microsoft Ignite](https://www.microsoft.com/ignite)

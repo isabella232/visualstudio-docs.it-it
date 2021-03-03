@@ -2,19 +2,19 @@
 title: Suggerimenti per migliorare le prestazioni
 description: Informazioni su come ottimizzare determinate funzionalità di Visual Studio che potrebbero non essere usate per migliorare le prestazioni.
 ms.custom: SEO-VS-2020
-ms.date: 12/14/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873866"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683764"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -142,6 +142,10 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 - **Rimuovere i carichi di lavoro**
 
     È possibile utilizzare il programma di installazione di Visual Studio per rimuovere i carichi di lavoro che non vengono più utilizzati. Questa azione può ridurre le esigenze di memoria di avvio ed esecuzione escludendo i pacchetti e gli assembly non più necessari.
+
+- **Aggiungere i file non rilevati a local. gitignore**
+
+    Visual Studio esegue il comando git `git status` con file non tracciati per offrire un'esperienza uniforme quando si aggiungono nuovi file a un repository. Quando è presente un numero elevato di file non tracciati, `git status` può utilizzare memoria aggiuntiva. Per ignorare questi file e migliorare le prestazioni di `git status` , è possibile aggiungere questi file o cartelle al file con estensione gitignore locale. Per accedere al file, passare a **git**  >  **Settings**  >  **git Settings Settings (impostazioni del repository git**). Quindi, nella sezione **file git** fare clic su **Aggiungi** per creare un file con estensione gitignore oppure fare clic su **modifica** se ne è già presente uno.
 
 ## <a name="force-a-garbage-collection"></a>Imporre una Garbage Collection
 

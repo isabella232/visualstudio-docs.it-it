@@ -2,19 +2,19 @@
 title: Gestire più account utente
 description: Informazioni su come aggiungere tutti gli account Microsoft a Visual Studio in modo che sia possibile accedere alle risorse da qualsiasi account senza dover accedere separatamente.
 ms.custom: SEO-VS-2020
-ms.date: 11/16/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960455"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683793"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -65,7 +65,7 @@ Per vedere come funziona, creare un nuovo progetto **Applicazione Web ASP.NET Co
 
 ::: moniker range=">=vs-2019"
 
-Per vedere come funziona, creare un nuovo progetto **Applicazione Web ASP.NET Core**. Nella pagina **Crea una nuova applicazione Web ASP.NET Core** scegliere il modello **Applicazione Web** e quindi scegliere **Modifica** in **Autenticazione**.
+Per verificarlo, creare un nuovo progetto di **app Web ASP.NET Core** . Nella pagina **Crea una nuova applicazione Web ASP.NET Core** scegliere **ASP.NET Core 3,1** dall'elenco a discesa, scegliere il modello **applicazione Web** e quindi scegliere **modifica** in **autenticazione**.
 
 ::: moniker-end
 

@@ -3,16 +3,16 @@ title: Visual Studio Tools per Docker con ASP.NET
 author: ghogen
 description: Informazioni su come usare gli strumenti di Visual Studio 2019 e Docker per Windows
 ms.author: ghogen
-ms.date: 02/01/2019
+ms.date: 02/22/2021
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a2c0d9ac31857fb2389455b0262373414981c5b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88186226"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750418"
 ---
 Con Visual Studio è possibile creare, eseguire il debug ed eseguire app .NET, ASP.NET e ASP.NET Core in contenitori e pubblicarli in Azure Container Registry (ACR), nell'hub Docker, nel servizio app Azure o nel registro contenitori. In questo articolo verrà pubblicata un'app ASP.NET Core in ACR.
 
@@ -29,10 +29,10 @@ Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Dock
 
 ## <a name="add-a-project-to-a-docker-container"></a>Aggiungere un progetto in un contenitore Docker
 
-1. Creare un nuovo progetto usando il modello di **applicazione web ASP.NET Core** o se si vuole usare il .NET Framework invece di .NET Core, scegliere **ASP.NET Web Application (.NET Framework)**.
-1. Selezionare **applicazione Web**e verificare che sia selezionata la casella di controllo **Abilita supporto Docker** .
+1. Creare un nuovo progetto usando il modello di **app web ASP.NET Core** o se si vuole usare il .NET Framework invece di .NET Core, scegliere **ASP.NET Web Application (.NET Framework)**.
+1. Nella schermata **informazioni aggiuntive** verificare che sia selezionata la casella di controllo **Abilita supporto Docker** .
 
-   ![Casella di controllo Abilita supporto Docker](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+   ![Casella di controllo Abilita supporto Docker](../../media/container-tools/vs-2019/webapp-additional-information-31-docker.png)
 
    Lo screenshot mostra .NET Core; Se si usa .NET Framework, il suo aspetto è leggermente diverso.
 
@@ -118,7 +118,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio][0]
 
-1. Scegliere **Crea**. Nella finestra di dialogo **pubblica** è ora visualizzato il registro di sistema creato.
+1. Fare clic su **Crea**. Nella finestra di dialogo **pubblica** è ora visualizzato il registro di sistema creato.
 
    ![Screenshot della finestra di dialogo di pubblicazione che mostra la creazione Container Registry di Azure](../../media/container-tools/vs-2019/created-azure-container-registry.png)
 

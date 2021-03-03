@@ -2,7 +2,7 @@
 title: 'Esercitazione: Introduzione a Visual Basic'
 description: Informazioni dettagliate su come creare un'app console Visual Basic in Visual Studio.
 ms.custom: seodec18, get-started
-ms.date: 09/11/2019
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915031"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682607"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: introduzione a Visual Basic in Visual Studio
 
@@ -84,14 +84,14 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
    ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Quindi scegliere **Visual Basic** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
+1. Nella finestra **Crea un nuovo progetto** scegliere **Visual Basic** nell'elenco lingua. Scegliere quindi **Windows** dall'elenco piattaforma e dalla **console** dall'elenco Tipi progetto.
 
-   Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e **Avanti**.
+   Dopo aver applicato i filtri per lingua, piattaforma e tipo di progetto, scegliere il modello **applicazione console** , quindi scegliere **Avanti**.
 
-   ![Scegliere il modello Visual Basic per l'app console (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="Scegliere il modello di Visual Basic per l'applicazione console":::
 
    > [!NOTE]
-   > Se il modello **App console (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se il modello **applicazione console** non è visibile, è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -101,9 +101,13 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *WhatIsYourName* nella casella **Nome del progetto**. Quindi scegliere **Crea**.
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *WhatIsYourName* nella casella **Nome del progetto**. Quindi, scegliere **Avanti**.
 
-   ![Nella finestra Configura il nuovo progetto assegnare al progetto il nome "WhatIsYourName"](./media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="Nella finestra Configura il nuovo progetto assegnare al progetto il nome &quot;WhatIsYourName&quot;":::
+
+1. Nella finestra **informazioni aggiuntive** , **.NET Core 3,1** dovrebbe essere già selezionato per il Framework di destinazione. In caso contrario, selezionare **.NET Core 3,1**. Quindi scegliere **Crea**.
+
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="Nella finestra ' informazioni aggiuntive ' verificare che sia selezionato .NET Core 3,1":::
 
    Visual Studio aprirà il nuovo progetto.
 
@@ -208,11 +212,13 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
 1. Nella finestra Start scegliere **Crea un nuovo progetto**. 
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Quindi scegliere **Visual Basic** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
+1. Nella finestra **Crea un nuovo progetto** scegliere **Visual Basic** nell'elenco lingua. Scegliere quindi **Windows** dall'elenco piattaforma e dalla **console** dall'elenco Tipi progetto.
 
-1. Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e **Avanti**.
+1. Dopo aver applicato i filtri per lingua, piattaforma e tipo di progetto, scegliere il modello **applicazione console** , quindi scegliere **Avanti**.
 
-   Quindi, nella finestra **Configura il nuovo progetto** Digitare o immettere *CalculateThis* nella casella **nome progetto** . Scegliere quindi **Crea**.
+   Quindi, nella finestra **Configura il nuovo progetto** Digitare o immettere *CalculateThis* nella casella **nome progetto** . Quindi, scegliere **Avanti**.
+
+1. Nella finestra **informazioni aggiuntive** , **.NET Core 3,1** dovrebbe essere già selezionato per il Framework di destinazione. In caso contrario, selezionare **.NET Core 3,1**. Quindi scegliere **Crea**.
 
 1. Immettere il codice seguente tra la riga `Module Program` e la riga `End Module`:
 
@@ -255,7 +261,7 @@ Visual Studio è una suite integrata per lo sviluppo di strumenti di produttivit
 
 ### <a name="what-is-a-console-app"></a>Che cos'è un'app console?
 
-Un'app console riceve input e visualizza output in una finestra della riga di comando, detta anche console.
+Un'app console accetta input e visualizza l'output in una finestra della riga di comando, nota anche come console.
 
 ### <a name="what-is-net-core"></a>Informazioni su .NET Core
 

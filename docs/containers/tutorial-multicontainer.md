@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729288"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684258"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: Creare un'app a più contenitori con Docker Compose
 
@@ -34,7 +34,7 @@ In questa esercitazione si apprenderà come gestire più di un contenitore e com
 
 ## <a name="create-a-web-application-project"></a>Creare un progetto di applicazione Web
 
-In Visual Studio creare un progetto di **applicazione Web di ASP.NET Core** , denominato `WebFrontEnd` . Selezionare **applicazione Web** per creare un'applicazione Web con Razor Pages. 
+In Visual Studio creare un progetto di **app Web di ASP.NET Core** , denominato `WebFrontEnd` , per creare un'applicazione Web con Razor Pages.
   
 ::: moniker range="vs-2017"
 
@@ -46,11 +46,11 @@ Non selezionare **Abilita supporto Docker**. Verrà aggiunto il supporto Docker 
 
 ::: moniker range="vs-2019"
 
-![Screenshot della schermata di configurazione del nuovo progetto per un'applicazione Web di ASP.NET Core, i campi nome progetto e nome soluzione sono impostati su "WebFrontEnd".](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Creare un progetto di app Web ASP.NET Core](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
 Non selezionare **Abilita supporto Docker**. Verrà aggiunto il supporto Docker in un secondo momento.
 
-![Screenshot della schermata Crea una nuova applicazione Web di ASP.NET Core con l'applicazione Web selezionata. L'opzione per abilitare il supporto di Docker non è selezionata.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Screenshot della schermata informazioni aggiuntive durante la creazione di un progetto Web. L'opzione per abilitare il supporto di Docker non è selezionata.](./media/tutorial-multicontainer/vs-2019/create-web-project-additional-information.png)
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
    ![Screenshot della creazione del progetto API Web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![Screenshot della creazione del progetto API Web](./media/tutorial-multicontainer/vs-2019/web-api-project.png)
+   ![Screenshot della creazione del progetto API Web](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>Aggiungere il codice per chiamare l'API Web

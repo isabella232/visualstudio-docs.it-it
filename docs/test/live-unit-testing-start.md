@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea87135b1f60c7ae65a8bc25399604151ab2fcee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d411465869cc960631063d09752d38536af94119
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887809"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683615"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introduzione a Live Unit Testing
 
@@ -113,20 +113,26 @@ Il passaggio successivo consiste nel creare il progetto unit test per testare la
 
 4. Selezionare **OK** per creare il progetto.
 
+   > [!NOTE]
+   > Questa esercitazione introduttiva usa Live Unit Testing con il framework di test MSTest. È possibile usare anche i framework di test xUnit e NUnit.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Digitare **unit test** nella casella di ricerca dei modelli e selezionare il modello **progetto di test MSTest (.NET Core)** . Fare clic su **Avanti**.
+2. Digitare **unit test** nella casella di ricerca del modello, selezionare **C#** come lingua e quindi selezionare il **progetto di unit test** per il modello .NET Core. Fare clic su **Avanti**.
 
-3. Denominare il progetto **StringLibraryTests**.
+   > [!NOTE]
+   > A partire da Visual Studio 2019 versione 16,9, il nome del modello di progetto MSTest è stato modificato dal **progetto di unit test MSTest (.NET Core)** al **progetto di unit test**.
 
-4. Fare clic su **Crea** per creare il progetto.
+3. Denominare il progetto **StringLibraryTests** e fare clic su **Avanti**.
 
-::: moniker-end
+4. Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
 
    > [!NOTE]
    > Questa esercitazione introduttiva usa Live Unit Testing con il framework di test MSTest. È possibile usare anche i framework di test xUnit e NUnit.
+
+::: moniker-end
 
 5. Il progetto di unit test non può accedere automaticamente alla libreria di classi di cui sta eseguendo il test. L'accesso alla libreria di test viene garantito tramite l'aggiunta di un riferimento al progetto della libreria di classi. A tale scopo, fare clic con il pulsante destro del mouse sul `StringLibraryTests` progetto e scegliere **Aggiungi**  >  **riferimento**. Nella finestra di dialogo **Gestione riferimenti** verificare che la scheda **soluzione** sia selezionata e selezionare il progetto StringLibrary, come illustrato nella figura seguente.
 

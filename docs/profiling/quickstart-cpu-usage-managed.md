@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fc8eeccdb020d07ff48965d9eb3d5df1dafa7da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861646"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683551"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Guida introduttiva: analizzare i dati di utilizzo della CPU in Visual Studio (C#, Visual Basic)
 
@@ -45,12 +45,14 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
    Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Successivamente, scegliere **C#** o **Visual Basic** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma.
 
-   Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e **Avanti**.
+   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere il modello **applicazione console** per .NET Core, quindi scegliere **Avanti**.
 
    > [!NOTE]
-   > Se il modello **App console (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
+   > Se il modello di **applicazione console** non è visibile, è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
 
-   Nella finestra **Configura nuovo progetto** Digitare o immettere *myprofilingapp* nella casella **nome progetto** . Quindi scegliere **Crea**.
+   Nella finestra **Configura nuovo progetto** Digitare o immettere *myprofilingapp* nella casella **nome progetto** . Quindi, scegliere **Avanti**.
+
+   Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
 
    ::: moniker-end
 

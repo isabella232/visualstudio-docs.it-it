@@ -2,7 +2,7 @@
 title: Controllare le proprietà XAML durante il debug | Microsoft Docs
 description: Informazioni su come usare gli strumenti albero elementi visivi attivi e Esplora proprietà attive durante il debug per esaminare le proprietà XAML e ottenere una visualizzazione albero degli elementi dell'interfaccia utente.
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2019
+ms.date: 03/02/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881373"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683451"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 
@@ -34,7 +34,17 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
 ### <a name="create-the-project"></a>Creare il progetto
 
-1. Creare una nuova applicazione WPF c# (**file**  >  **nuovo**  >  **progetto**, quindi digitare "c# WPF" e scegliere **app WPF (.NET Core)** o **app WPF (.NET Framework)**). Assegnare all'applicazione il nome **TestXAML**.
+::: moniker range="vs-2019"
+
+1. Creare una nuova applicazione WPF c# (**file** > **nuovo** > **progetto**, digitare "c# WPF", scegliere il modello di progetto **applicazione WPF** , denominare il progetto **TestXAML** e quindi verificare che **.NET Core 3,1** venga visualizzato nell'elenco a discesa **Framework di destinazione** .
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. Creare una nuova applicazione WPF c# (**file**  >  **nuovo**  >  **progetto**, quindi digitare "c# WPF" e scegliere **app WPF (.NET Framework)**). Assegnare all'applicazione il nome **TestXAML**.
+
+::: moniker-end
 
 1. Modificare MainWindow.xaml come segue:
 

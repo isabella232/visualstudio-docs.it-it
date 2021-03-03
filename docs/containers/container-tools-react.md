@@ -5,15 +5,15 @@ ms.custom: SEO-VS-2020
 author: ghogen
 description: Informazioni su come creare un'app di React SPA in contenitori con strumenti contenitore di Visual Studio e Docker
 ms.author: ghogen
-ms.date: 05/14/2020
+ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502188"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684354"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Guida introduttiva: usare Docker con un'app a singola pagina React in Visual Studio
 
@@ -55,11 +55,16 @@ Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Dock
 
 1. Selezionare il tipo di contenitore e fare clic su **OK**.
 ::: moniker-end
-::: moniker range=">=vs-2019"
-1. Creare un nuovo progetto usando il modello **Applicazione Web ASP.NET Core**.
-1. Selezionare **React.js** e fare clic su **Crea**. Non è possibile selezionare **Abilita supporto Docker**, ma non è un problema perché è possibile aggiungere tale supporto in seguito.
 
-   ![Screenshot del nuovo progetto React.js](media/container-tools-react/vs-2019/new-react-project.png)
+::: moniker range=">=vs-2019"
+
+1. Creare un nuovo progetto usando il **ASP.NET Core con React.js** modello.
+
+   ![Screenshot della creazione di un nuovo progetto di React.js](media/container-tools-react/vs-2019/create-reactjs-project.png)
+
+1. Nella schermata **informazioni aggiuntive** non è possibile selezionare **Abilita supporto Docker**, ma è possibile aggiungere il supporto in un secondo momento.
+
+   ![Screenshot della creazione di un nuovo progetto React.js-schermata informazioni aggiuntive](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
 
 1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** > **Supporto Docker** per aggiungere un Dockerfile al progetto.
 
@@ -272,7 +277,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio](media/container-tools-react/vs-2019/azure-container-registry-details.png)
 
-1. Selezionare **Crea**e quindi fare clic su **fine**.
+1. Selezionare **Crea** e quindi fare clic su **fine**.
 
    ![Selezionare o creare un nuovo ACR](media/container-tools-react/vs-2019/publish-dialog2.png)
 

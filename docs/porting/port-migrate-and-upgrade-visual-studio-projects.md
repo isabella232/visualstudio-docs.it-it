@@ -1,7 +1,7 @@
 ---
 title: Portabilità, migrazione e aggiornamento dei progetti
 description: Riferimento per il supporto di progetti creati in versioni correnti e precedenti di Visual Studio.
-ms.date: 11/26/2019
+ms.date: 03/02/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 8182f8982734bd0089d483c9acefc230c9baaa91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85d85b378de527f1ddbfab52f4a66ae475ee766a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901318"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683388"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio
 
@@ -132,7 +132,7 @@ Se non viene visualizzato un progetto o un tipo di file elencato qui, vedere la 
 | Tipo di progetto | Supporto |
 | --- | --- |
 | Progetti .NET Core (xproj) | I progetti creati con Visual Studio 2015 usano strumenti di anteprima che includono un file di progetto xproj.<br/><br/>Visual Studio 2017: il formato xproj non è supportato per la migrazione al formato csproj. Quando si apre un file xproj, viene richiesto di eseguire la migrazione del file nel formato csproj in stile SDK. Viene eseguito un backup del file xproj. I progetti csproj di tipo SDK non sono supportati in Visual Studio 2015 e versioni precedenti. <br/><br/>Visual Studio 2019: nella versione 16,3 e versioni successive non è possibile caricare o migrare progetti xproj. Per altre informazioni, vedere [migrazione di progetti .NET Core al formato csproj](/dotnet/core/migration/#visual-studio).|
-| Applicazione Web ASP.NET e applicazione Web ASP.NET Core con Application Insights abilitato | Per ogni utente di Visual Studio, le informazioni sulle risorse sono memorizzate nel Registro di sistema per ogni istanza utente. Queste informazioni vengono usate quando l'utente non ha un progetto aperto e vuole eseguire una ricerca nei dati di Azure Application Insights. Visual Studio 2015 usa un percorso del registro diverso da quello di Visual Studio 2017 e Visual Studio 2019 e non è in conflitto.<br/><br/>Quando un utente crea un'applicazione Web ASP.NET o un'applicazione Web ASP.NET Core, la risorsa viene archiviata nel file SUO. L'utente può aprire il progetto in Visual Studio 2015, Visual Studio 2017 o Visual Studio 2019 e le informazioni sulle risorse vengono usate per ognuna di queste versioni, purché ciascuna supporti i progetti e le soluzioni in uso. Gli utenti devono eseguire l'autenticazione una sola volta in ogni prodotto. Ad esempio, se un progetto viene creato con Visual Studio 2017 e aperto in Visual Studio 2019, l'utente deve eseguire l'autenticazione in Visual Studio 2019. |
+| App Web di ASP.NET Core e ASP.NET Core app Web con Application Insights abilitata | Per ogni utente di Visual Studio, le informazioni sulle risorse sono memorizzate nel Registro di sistema per ogni istanza utente. Queste informazioni vengono usate quando l'utente non ha un progetto aperto e vuole eseguire una ricerca nei dati di Azure Application Insights. Visual Studio 2015 usa un percorso del registro diverso da quello di Visual Studio 2017 e Visual Studio 2019 e non è in conflitto.<br/><br/>Quando un utente crea un'applicazione Web ASP.NET, ASP.NET Core app Web o ASP.NET Core applicazione Web, la risorsa viene archiviata nel file con estensione suo. L'utente può aprire il progetto in Visual Studio 2015, Visual Studio 2017 o Visual Studio 2019 e le informazioni sulle risorse vengono usate per ognuna di queste versioni, purché ciascuna supporti i progetti e le soluzioni in uso. Gli utenti devono eseguire l'autenticazione una sola volta in ogni prodotto. Ad esempio, se un progetto viene creato con Visual Studio 2017 e aperto in Visual Studio 2019, l'utente deve eseguire l'autenticazione in Visual Studio 2019. |
 | Windows Form o Webform in C#/Visual Basic | È possibile aprire il progetto in Visual Studio 2019, Visual Studio 2017 e Visual Studio 2015. |
 | Test codificato dell'interfaccia utente | Il test codificato dell'interfaccia utente per il test funzionale automatizzato basato sull'interfaccia utente è deprecato in Visual Studio 2019. <br/><br/>Visual Studio 2019 sarà l'ultima versione per il test codificato dell'interfaccia utente. È consigliabile usare Selenium per eseguire il test delle app Web e Appium con WinAppDriver per eseguire il test delle app desktop e della piattaforma UWP (Universal Windows Platform). |
 | Progetti di unit test del database (csproj, vbproj) | I progetti di unit test meno recenti vengono caricati in Visual Studio 2019, ma usano la versione GAC delle dipendenze. Per aggiornare il progetto di unit test in modo da usare le dipendenze più recenti, fare clic con il pulsante destro sul progetto in Esplora soluzioni e selezionare **Converti nel progetto di unit test di SQL Server...**. |

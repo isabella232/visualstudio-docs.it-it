@@ -1,17 +1,17 @@
 ---
-ms.date: 09/22/2020
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924988"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750214"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -237,17 +237,23 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Scegliere **Crea un nuovo progetto**.
 
-   ![Finestra iniziale di Visual Studio - Crea un nuovo progetto](../media/vs-2019/start-window-create-new-project.png)
+    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Screenshot della finestra ' Crea nuovo progetto ' in Visual Studio 2019.":::
 
-   Viene visualizzata la finestra **Crea un nuovo progetto**, che mostra diversi *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   Viene visualizzata la finestra **Crea un nuovo progetto**, che mostra diversi *modelli* di progetto. Un modello contiene i file e le impostazioni di base necessari per un determinato tipo di progetto.
 
-1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati relativi ai modelli scegliendo **C#** dall'elenco a discesa **Linguaggio**. Selezionare il modello **App console (.NET Core)**, quindi scegliere **Avanti**.
+1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati del modello scegliendo **C#** dall'elenco a discesa **tutti i linguaggi** , **Windows** dall'elenco **tutte le piattaforme** e **console** dall'elenco **tutti i tipi di progetto** .
 
-    ![Creare un nuovo progetto in Visual Studio](../media/vs-2019/create-new-project.png)
+    Selezionare il modello **applicazione console** , quindi fare clic su **Avanti**.
 
-1. Nella finestra **Configura il nuovo progetto** immettere **HelloWorld** nella casella **Nome progetto**, facoltativamente modificare il percorso della directory per i file di progetto e quindi scegliere **Crea**.
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra ' crea un nuovo progetto ' in Visual Studio 2019, in cui è possibile selezionare il modello desiderato.":::
 
-   ![Configurare un nuovo progetto in Visual Studio](../media/vs-2019/configure-new-project.png)
+1. Nella finestra **Configura nuovo progetto** immettere **HelloWorld** nella casella **nome progetto** , facoltativamente modificare il percorso della directory per i file di progetto (impostazioni locali predefinite `C:\Users\<name>\source\repos` ), quindi fare clic su **Avanti**.
+
+    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Screenshot della finestra ' Configura nuovo progetto ' in Visual Studio 2019, in cui è possibile immettere il nome del progetto.":::
+
+1. Nella finestra **informazioni aggiuntive** verificare che **.NET Core 3,1** sia visualizzato nel menu a discesa **Framework di destinazione** , quindi fare clic su **Crea**.
+
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Screenshot della finestra &quot;informazioni aggiuntive&quot; in Visual Studio 2019, in cui è possibile selezionare la versione di .NET Core Framework desiderata.":::
 
    Visual Studio crea il progetto. È una semplice applicazione "Hello World" che chiama il metodo <xref:System.Console.WriteLine?displayProperty=nameWithType> per visualizzare il valore letterale stringa "Hello World!" nella finestra della console (output del programma).
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbde477e076203625e35ebf0109ed344679563f8
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925389"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683313"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procedura dettagliata: eseguire il debug di un'app multithread usando la finestra thread (C#, Visual Basic, C++)
 
@@ -44,12 +44,14 @@ Creare il progetto di app multithread seguente da usare in questa esercitazione:
 
    Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Successivamente, scegliere **C#** o **C++** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma. 
 
-   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere l' **app console (.NET Core)** o, per C++, modello **applicazione console** , quindi scegliere **Avanti**.
+   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere l' **app console** per .NET Core o per C++, quindi scegliere **Avanti**.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello corretto, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo per **desktop .NET** o **sviluppo desktop con C++** , quindi scegliere **modifica**.
+   > Se non viene visualizzato il modello corretto, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo **multipiattaforma .NET Core** o **sviluppo desktop con C++** , quindi scegliere **modifica**.
 
-   Nella finestra **Configura nuovo progetto** Digitare o immettere *MyThreadWalkthroughApp* nella casella **nome progetto** . Quindi scegliere **Crea**.
+   Nella finestra **Configura nuovo progetto** Digitare o immettere *MyThreadWalkthroughApp* nella casella **nome progetto** . Quindi scegliere **Avanti** o **Crea**, a seconda di quale opzione è disponibile.
+
+   Per .NET Core, scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -58,7 +60,7 @@ Creare il progetto di app multithread seguente da usare in questa esercitazione:
    - Per un'app C#, in **Visual c#** scegliere **desktop di Windows** e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
    - Per un'app C++, in **Visual C++** scegliere **desktop di Windows**, quindi scegliere **applicazione console di Windows**.
 
-   Se non viene visualizzata l' **app console (.NET Core)** o, per C++, il modello di progetto di **app console** , passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo per **desktop .NET** o **sviluppo desktop con C++** , quindi scegliere **modifica**.
+   Se non viene visualizzata l' **app console (.NET Framework)** o, per C++, il modello di progetto **applicazione console** , passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire il programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo per **desktop .NET** o **sviluppo desktop con C++** , quindi scegliere **modifica**.
 
    Digitare quindi un nome come *MyThreadWalkthroughApp* e fare clic su **OK**.
 
@@ -147,7 +149,7 @@ Selezionare un'icona di contrassegno per impostare lo stato del thread su contra
 
 È anche possibile fare clic con il pulsante destro del mouse su una riga e selezionare **flag**, Rimuovi **flag** o Rimuovi flag per **tutti i thread** dal menu di scelta rapida.
 
-La barra degli strumenti della finestra **thread** presenta anche un pulsante **Mostra solo thread contrassegnati** , che corrisponde a destra di una delle due icone del flag. Funziona allo stesso modo del pulsante sulla barra degli strumenti **posizione di debug** e uno dei pulsanti controlla la visualizzazione in entrambe le posizioni.
+La barra degli strumenti della finestra **thread** presenta anche un pulsante **Mostra solo thread contrassegnati** , che rappresenta la parte destra di una delle due icone dei flag. Funziona allo stesso modo del pulsante sulla barra degli strumenti **posizione di debug** e uno dei pulsanti controlla la visualizzazione in entrambe le posizioni.
 
 ### <a name="other-threads-window-features"></a>Funzionalità della finestra altri thread
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838734"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682592"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Introduzione a progetti e soluzioni
 
@@ -189,9 +189,14 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 2. Nella finestra di dialogo **Aggiungi un nuovo progetto** immettere il testo **unit test** nella casella di ricerca nella parte superiore e quindi selezionare **C#** in **Linguaggio**.
 
-3. Selezionare il modello di progetto di **test MSTest (.NET Core)** e quindi fare clic su **Avanti**.
+3. Selezionare il modello di progetto di progetto di **unit test** per .NET Core e quindi fare clic su **Avanti**.
 
-4. Assegnare al progetto il nome **QuickTest** e quindi selezionare **Crea**.
+   > [!NOTE]
+   > A partire da Visual Studio 2019 versione 16,9, il nome del modello di progetto MSTest è stato modificato dal **progetto di unit test MSTest (.NET Core)** al **progetto di unit test**. Diversi passaggi della creazione del progetto sono stati modificati in questo aggiornamento.
+
+4. Denominare il progetto **QuickTest** e quindi fare clic su **Next (avanti**).
+
+5. Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
 
    Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.cs*.
 

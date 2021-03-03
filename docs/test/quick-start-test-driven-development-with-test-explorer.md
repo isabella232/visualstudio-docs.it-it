@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943731"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683945"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procedura dettagliata: sviluppo basato su test con Esplora test
 
@@ -26,7 +26,11 @@ Questa procedura dettagliata illustra come sviluppare un metodo testato in C# us
 
 1. Creare un progetto **Libreria di classi (.NET Standard)** C#. Questo progetto conterrà il codice da testare. Assegnare al progetto il nome **MyMath**.
 
-2. Nella stessa soluzione aggiungere un nuovo progetto **Progetto di test MSTest (.NET Core)**. Assegnare al progetto di test il nome **MathTests**.
+2. Nella stessa soluzione aggiungere un nuovo progetto di test MSTest.
+
+   A partire da Visual Studio 2019 versione 16,9, il nome del modello di progetto MSTest è stato modificato dal **progetto di test MSTest (.NET Core)** al **progetto di unit test**.
+
+   Assegnare al progetto di test il nome **MathTests**.
 
    ![Nuovo codice e progetti di test](../test/media/test-driven-development-ide.png)
 

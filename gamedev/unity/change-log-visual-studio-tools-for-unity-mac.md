@@ -2,7 +2,7 @@
 title: Registro modifiche (Visual Studio Tools per Unity, Mac) | Microsoft Docs
 description: Visualizzare il log delle modifiche per Visual Studio Tools per Unity, Mac. Vedere le modifiche della versione 1.0.0.0 con 2.7.0.0 e oltre.
 ms.custom: ''
-ms.date: 12/18/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,93 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
-ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
+ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97917906"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683375"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="2920"></a>2.9.2.0
+Rilasciata il 2 marzo 2021
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione**
+
+  - Correzione dell'evidenziazione della ricerca nella finestra di dialogo di messaggio di Unity.
+
+  - Correzione dei problemi di stabilità con TreeView del progetto Unity.
+
+- **Debug**
+
+  - Correzione della gestione dei punti di interruzione condizionali.
+
+## <a name="2910"></a>2.9.1.0
+Rilasciata il 9 febbraio 2021
+
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
+
+- **Integrazione**
+
+  - Aggiunta del supporto per l'esecuzione e il debug di test Unity dall'IDE
+
+- **Valutazione**
+
+  - Aggiunto `Active Scene` a variabili locali, mostrando oggetti del gioco radice.
+
+  - Aggiunto `this.gameObject` alle variabili locali, dato che è ampiamente usato nei progetti Unity.
+
+  - Aggiunta `Children` `Components` di gruppi e a tutte `GameObject` le istanze, in modo che sia possibile visualizzare facilmente tutta la gerarchia di oggetti.
+
+  - Aggiunto `Scene Path` a tutte le `GameObject` istanze per mostrare la posizione nella scena.
+
+  - Aggiunta del supporto per `JobEntityBatch` /lambdas quando si usano entità con generatori di origine.
+
+  - Supporto migliorato per la visualizzazione di matrici di grandi dimensioni (mediante bucket di indice).
+
+  - Sono stati aggiunti messaggi Unity mancanti per l'API 2019,4.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione**
+
+  - Correzione dei problemi di stabilità con la finestra di dialogo
+
+  - Corretti vari problemi dell'interfaccia utente per le lingue non ita.
+
+  - Problemi di stabilità corretti con la [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) diagnostica.
+
+- **Debug**
+
+  - Correzione dei problemi di disconnessione della macchina virtuale quando si usano i `Trace` metodi.
+
+- **Valutazione**
+
+  - Correzione del filtraggio di proprietà obsolete che generano eccezioni.
+
+## <a name="2900"></a>2.9.0.0
+Rilasciata il 20 gennaio 2021
+
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
+
+- **Integrazione**
+
+  - Aggiunta del supporto `raytrace shaders` per `UXML` `USS` i file, e.
+
+  - API dei messaggi Unity aggiornata (per tutti i metodi usati come coroutine).
+
+  - Rilevamento Android SDK aggiornato.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione**
+
+  - Correzione [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) della diagnostica, che fornisce avvisi non corretti per le coroutine e `AssetPostprocessor.OnAssignMaterialModel` .
 
 ## <a name="2840"></a>2.8.4.0
 Rilasciata il 15 dicembre 2020

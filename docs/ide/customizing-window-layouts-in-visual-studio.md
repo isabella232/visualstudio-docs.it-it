@@ -2,7 +2,7 @@
 title: Personalizzare il layout delle finestre
 description: Informazioni su come personalizzare le caratteristiche di Windows per creare layout più adatti per diversi flussi di lavoro di sviluppo.
 ms.custom: SEO-VS-2020
-ms.date: 07/31/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910853"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682581"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizzare il layout delle finestre in Visual Studio
 
@@ -163,7 +163,17 @@ Creare prima di tutto una soluzione di test che include due progetti, ognuno con
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Creare un progetto per interfaccia utente e personalizzare il layout
 
+::: moniker range="vs-2017"
+
 1. Creare un nuovo oggetto progetto **App WPF** C#. Si immagini di sviluppare un'interfaccia utente in questo progetto. Si vuole aumentare al massimo lo spazio per la finestra di progettazione e spostare le altre finestra degli strumenti in modo che non diano fastidio.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Creare un nuovo progetto di **applicazione WPF** C#. Si immagini di sviluppare un'interfaccia utente in questo progetto. Si vuole aumentare al massimo lo spazio per la finestra di progettazione e spostare le altre finestra degli strumenti in modo che non diano fastidio.
+
+::: moniker-end
 
 2. Se sono presenti più monitoraggi, effettuare il pull della finestra **Esplora soluzioni** e della finestra **Proprietà** sul secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
 
