@@ -2,7 +2,7 @@
 title: Gestire pacchetti npm
 description: Visual Studio consente di gestire i pacchetti usando il sistema di gestione pacchetti Node.js (npm)
 ms.custom: seodec18
-ms.date: 04/16/2020
+ms.date: 02/23/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962717"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165813"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gestire i pacchetti npm in Visual Studio
 
@@ -179,5 +179,7 @@ L'installazione di un pacchetto potrebbe richiedere alcuni minuti. Controllare l
 * Per Node.js progetti, è necessario avere installato il carico di lavoro di **sviluppoNode.js** per il supporto di NPM.
 
 * In alcuni scenari Esplora soluzioni possibile che non venga visualizzato lo stato corretto per i pacchetti NPM installati a causa di un problema noto descritto [qui](https://github.com/aspnet/Tooling/issues/479). È ad esempio possibile che il pacchetto venga visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *package.js*, riavviando Visual Studio e aggiungendo nuovamente il *package.jssul* file come descritto in precedenza in questo articolo. In alternativa, quando si installano i pacchetti, è possibile usare la finestra di output NPM per verificare lo stato dell'installazione.
+
+* In alcuni scenari ASP.NET Core il nodo NPM in Esplora soluzioni potrebbe non essere visibile dopo la compilazione del progetto. Per rendere nuovamente visibile il nodo, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Scarica progetto.** Fare quindi clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Ricarica progetto**.
 
 * Se si verificano errori durante la compilazione dell'app o il transimpilamento del codice TypeScript, verificare la presenza di incompatibilità del pacchetto NPM come origine potenziale di errori. Per semplificare l'identificazione degli errori, controllare la finestra di output di NPM durante l'installazione dei pacchetti, come descritto in precedenza in questo articolo. Se ad esempio una o più versioni del pacchetto NPM sono state deprecate e generano un errore, potrebbe essere necessario installare una versione più recente per correggere gli errori. Per informazioni sull'uso di *package.json* per controllare le versioni del pacchetto npm, vedere [Configurazione di package.json](../javascript/configure-packages-with-package-json.md).

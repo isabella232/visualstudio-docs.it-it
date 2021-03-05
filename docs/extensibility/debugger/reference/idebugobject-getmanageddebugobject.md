@@ -1,4 +1,5 @@
 ---
+description: Crea una copia dell'oggetto gestito nello spazio degli indirizzi del motore di debug.
 title: 'IDebugObject:: GetManagedDebugObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8fec87a2294524c915116929f2ac2c991170c5ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87956b3630f9d152ecdda7754623e7257cf0a01a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920882"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164766"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 Crea una copia dell'oggetto gestito nello spazio degli indirizzi del motore di debug.

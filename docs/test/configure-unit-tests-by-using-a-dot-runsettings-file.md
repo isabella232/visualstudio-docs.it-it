@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d6b4dd8bd21da7fcfc4d7cde54e5f5a7926472e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964563"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165722"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare gli unit test usando un file con *estensione runsettings*
 
@@ -135,7 +135,7 @@ Il file viene visualizzato nel menu test ed è possibile selezionarlo o deselezi
 
 Per eseguire i test dalla riga di comando, usare *vstest.console.exe* e specificare il file di impostazioni usando il parametro **/Settings** .
 
-1. Aprire un [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/developer-command-prompt-for-vs) per Visual Studio.
+1. Aprire [prompt dei comandi per gli sviluppatori per Visual Studio](../ide/reference/command-prompt-powershell.md).
 
 2. Immettere un comando simile a:
 
