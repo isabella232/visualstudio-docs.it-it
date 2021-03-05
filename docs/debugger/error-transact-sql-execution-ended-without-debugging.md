@@ -1,4 +1,5 @@
 ---
+description: Questo errore si verifica quando si tenta di eseguire il debug di una procedura Transact-SQL o SQLCLR e il debugger non riceve messaggi di debug dal SQL Server.
 title: Esecuzione Transact-SQL terminata senza debug | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: error-reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 660b6c8b1f8d09baf35d3d019fe80d428e9d7525
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40b0b89474b24e53c69df14894e50ee502c6eb9b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871130"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146496"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
 

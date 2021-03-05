@@ -2,7 +2,7 @@
 title: Introduzione agli strumenti di profilatura
 description: Esaminare una breve panoramica dei diversi strumenti di diagnostica disponibili in Visual Studio.
 ms.custom: ''
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929108"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145378"
 ---
 # <a name="first-look-at-profiling-tools"></a>Presentazione degli strumenti di profilatura
 
@@ -162,6 +162,14 @@ Lo strumento Mostra ogni query in una visualizzazione elenco. È possibile visua
 
 ![Allocation (Allocazione)](./media/db-gotosource.png "Allocation (Allocazione)")
 
+## <a name="visualize-net-counters-net-core"></a>Visualizzare i contatori .NET (.NET Core)
+
+A partire da Visual Studio 2019 versione 16,7, è possibile usare lo [strumento contatori .NET](../profiling/dotnet-counters-tool.md) in Visual Studio per visualizzare i contatori delle prestazioni. È possibile visualizzare i contatori creati usando i [contatori DotNet](/dotnet/core/diagnostics/dotnet-counters). i contatori DotNet supportano molti contatori, ad esempio l'utilizzo della CPU e le dimensioni dell'heap Garbage Collector.
+
+Lo strumento Mostra i valori Live per ogni contatore in una visualizzazione elenco.
+
+:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text="Raccolta di strumenti per contatori .NET.":::
+
 ::: moniker-end
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Esaminare le prestazioni dell'interfaccia utente e gli eventi di accessibilità (piattaforma UWP)
@@ -235,6 +243,7 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì (XAML)|sì|no|
 |[Visualizzatore eventi](../profiling/events-viewer.md)|sì|sì|sì|
 |[.NET Async](../profiling/analyze-async.md)|Sì (solo .NET)|sì|sì|
+|[Contatori .NET](../profiling/dotnet-counters-tool.md)|Sì (solo .NET Core)|no|Sì (solo ASP.NET Core)|
 |[Database](../profiling/analyze-database.md)|Sì (solo .NET Core)|no|Sì (solo ASP.NET Core)|
 |[Esplora prestazioni](#analyze-performance-legacy-tools)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|

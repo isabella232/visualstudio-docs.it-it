@@ -1,5 +1,6 @@
 ---
 title: Non è possibile eseguire automaticamente l'istruzione nel server | Microsoft Docs
+description: Impossibile eseguire automaticamente l'istruzione sul server. Il debugger non ha ricevuto alcuna notifica prima dell'esecuzione della procedura remota.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d72b06ccad641afa2c83db88ce04f16b0e009c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a374afef2dea92fbad72c45e35ca06904d75cbbe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871117"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146483"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Errore: impossibile eseguire automaticamente l'istruzione sul server
 Il testo dell'errore è simile al seguente:
