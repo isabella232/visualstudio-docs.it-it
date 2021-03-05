@@ -1,6 +1,6 @@
 ---
 title: Modificare i tipi di carattere | Microsoft Docs
-Description: Vedere come impostare il tipo di carattere, lo stile e la dimensione del carattere per le finestre di Spy + +. È possibile salvare le scelte come impostazioni predefinite per le finestre future di Spy + +.
+description: Vedere come impostare il tipo di carattere, lo stile e la dimensione del carattere per le finestre di Spy + +. È possibile salvare le scelte come impostazioni predefinite per le finestre future di Spy + +.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 109ca82378fc7d59869b26cd02fcf2e803e5715f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52a32d6360776572f17b1ab43a9c46f77ff18ec
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913443"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155029"
 ---
 # <a name="how-to-change-fonts"></a>Procedura: modificare i tipi di carattere
 È possibile modificare il tipo di carattere, lo stile e la dimensione del carattere per le finestre di Spy + +.

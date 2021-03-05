@@ -1,6 +1,6 @@
 ---
 title: Applicare le modifiche in modalità di interruzioni con modifica e continuazione | Microsoft Docs
-Description: Vedere come usare modifica e continuazione per modificare il codice di Visual Basic in modalità di interruzioni. Sono disponibili diversi modi per entrare in modalità di interruzioni.
+description: Vedere come usare modifica e continuazione per modificare il codice di Visual Basic in modalità di interruzioni. Sono disponibili diversi modi per entrare in modalità di interruzioni.
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46cc695461d7575c7093987c175836896732dce6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9074d992c06c1b7d49f59481bee35345c5199f8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913411"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155042"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procedura: applicare modifiche in modalità di interruzioni con modifica e continuazione (Visual Basic)
 È possibile usare Modifica e continuazione per modificare il codice in modalità di interruzione e continuare senza interrompere e riavviare l'esecuzione.

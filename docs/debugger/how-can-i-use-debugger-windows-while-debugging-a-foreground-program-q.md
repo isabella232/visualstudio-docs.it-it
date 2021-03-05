@@ -1,6 +1,6 @@
 ---
 title: Usare le finestre del debugger durante il debug di un'app in primo piano | Microsoft Docs
-Description: Se si esegue il debug di un programma che deve rimanere in primo piano, utilizzare il debug remoto per evitare di inserirlo in background.
+description: Se si esegue il debug di un programma che deve rimanere in primo piano, utilizzare il debug remoto per evitare di inserirlo in background.
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 420a4073e4c00f66775bf55565c2ee8645d90f49
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03a143ee2d04227171895bf2b14dff92545b9952
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911372"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155094"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Come è possibile utilizzare le finestre debugger mentre si esegue il debug di un programma in primo piano?
 ## <a name="problem-description"></a>Descrizione del problema

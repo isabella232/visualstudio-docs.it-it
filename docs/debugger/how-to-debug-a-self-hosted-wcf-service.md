@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di un servizio WCF Self-Hosted | Microsoft Docs
-Description: Informazioni su come eseguire il debug di un servizio WCF self-hosted. Il modo più semplice (ma non sempre possibile) consiste nel configurare Visual Studio per avviare sia il client che il server.
+description: Informazioni su come eseguire il debug di un servizio WCF self-hosted. Il modo più semplice (ma non sempre possibile) consiste nel configurare Visual Studio per avviare sia il client che il server.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edcf359bd54774647ff1a5957d741fec25b60a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cd11966347cd90576eb78a59f6c7eb96cc697ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915813"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155081"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Procedura: eseguire il debug di un servizio WCF indipendente
 Un *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, nell'host dei servizi WCF o nel server di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Il modo più semplice per eseguire il debug di una WCF self-hosted consiste nel configurare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare client e server quando si sceglie **Avvia debug** dal menu **debug** .

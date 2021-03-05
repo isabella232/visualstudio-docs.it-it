@@ -1,6 +1,6 @@
 ---
 title: Debug .NET Framework origine | Microsoft Docs
-Description: Informazioni su come eseguire il debug dell'origine .NET Framework. È necessario configurarlo e scaricare i simboli di debug.
+description: Informazioni su come eseguire il debug dell'origine .NET Framework. È necessario configurarlo e scaricare i simboli di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 890aeef41a9a0f4d893cfcf57d42b78ff32d88c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e762b28cfaf239e5edb38b1be3981496e56d72d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846881"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154990"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug del codice sorgente di .NET Framework
 

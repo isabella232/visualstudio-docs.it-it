@@ -1,4 +1,5 @@
 ---
+description: Le informazioni di debug relative a un programma compilato vengono archiviate nel file di database di programma (con estensione pdb) come simboli accessibili tramite le API SDK di debug Interface Access (DIA).
 title: Simboli e tag dei simboli | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f1927e4290ff9d008eff9f497c9d570d9d44f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98631149e5a53c13bfc9b12b0d6de165c345e29a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862283"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155285"
 ---
 # <a name="symbols-and-symbol-tags"></a>Simboli e relativi tag
 Le informazioni di debug relative a un programma compilato vengono archiviate nel file di database di programma (con estensione pdb) come simboli accessibili tramite le API SDK di debug Interface Access (DIA). Tutti i simboli hanno un valore [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) e una proprietà [IDiaSymbol:: get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) . La `symTag` proprietà indica il tipo di simbolo definito dall'enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) . La `symIndexId` proprietà è un `DWORD` valore che contiene l'identificatore univoco per ogni istanza di un simbolo.

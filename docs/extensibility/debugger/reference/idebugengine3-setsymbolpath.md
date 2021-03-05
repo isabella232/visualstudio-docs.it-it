@@ -1,4 +1,5 @@
 ---
+description: Imposta il percorso o i percorsi in cui vengono cercati i simboli di debug.
 title: 'IDebugEngine3:: SetSymbolPath | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aee3b02acfa54cbe9d947be8cb781725ebb4d071
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e2b029413e3b402e1d8dfa19ccb3ad22644b241
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874296"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153690"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 Imposta il percorso o i percorsi in cui vengono cercati i simboli di debug.

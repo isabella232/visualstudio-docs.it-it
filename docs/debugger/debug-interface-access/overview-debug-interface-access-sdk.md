@@ -1,4 +1,5 @@
 ---
+description: Usare il DIA SDK per accedere alle informazioni di debug Microsoft.
 title: Panoramica (Debug Interface Access SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3fb8d56ca4df9912862346e5b096b2bb5414881
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c505216cd38b5321f291515794fc07ff58e8d698
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862318"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155362"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Panoramica (Debug Interface Access SDK)
 Usare il DIA SDK per accedere alle informazioni di debug Microsoft. Il DIA SDK fornisce un set di API basato su COM che elimina la necessità di riscrivere il codice ogni volta che il formato delle informazioni di debug viene modificato da Microsoft. Il DIA SDK consente inoltre di leggere da un set selezionato di versioni precedenti delle informazioni di debug, che si trovano nei file con estensione PDB e DBG generati dalle [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] versioni 5,0 e successive.

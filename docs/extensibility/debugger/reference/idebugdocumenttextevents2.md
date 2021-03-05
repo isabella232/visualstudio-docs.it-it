@@ -1,4 +1,5 @@
 ---
+description: Questa interfaccia viene utilizzata per notificare a Visual Studio le modifiche apportate al documento di origine fornite dal motore di debug.
 title: IDebugDocumentTextEvents2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bcbe6e44923172c3eac4da605848e972216837cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904008"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154184"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Questa interfaccia viene utilizzata per notificare a Visual Studio le modifiche apportate al documento di origine fornite dal motore di debug.
