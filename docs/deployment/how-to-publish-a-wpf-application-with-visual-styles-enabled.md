@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 285d624debed6dc498e3d274af2839137b5094d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900473"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171279"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati
 
@@ -110,9 +110,9 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Incorporare il file manifesto nel file eseguibile della soluzione pubblicata
 
-1. Aprire il **prompt dei comandi di Visual Studio**.
+1. Aprire **prompt dei comandi per gli sviluppatori per Visual Studio**.
 
-    Per ulteriori informazioni su come aprire il **prompt dei comandi di Visual Studio**, vedere [prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Per altre informazioni su come aprire Prompt dei comandi per gli sviluppatori per Visual Studio, vedere [prompt dei comandi per gli sviluppatori e Developer PowerShell](../ide/reference/command-prompt-powershell.md).
 
    > [!NOTE]
    > I passaggi rimanenti fanno i presupposti seguenti sulla soluzione:
@@ -179,7 +179,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
 ## <a name="see-also"></a>Vedi anche
 
--[Risoluzione di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Risoluzione di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview)
 - [Abilitazione degli stili di visualizzazione](/windows/desktop/Controls/cookbook-overview)
-- [Prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs)
+- [PowerShell per sviluppatori e Prompt dei comandi per gli sviluppatori](../ide/reference/command-prompt-powershell.md)

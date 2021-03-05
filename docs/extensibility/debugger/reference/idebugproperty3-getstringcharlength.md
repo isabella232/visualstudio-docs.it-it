@@ -1,4 +1,5 @@
 ---
+description: Restituisce il numero di caratteri nella stringa della proprietà associata.
 title: 'IDebugProperty3:: GetStringCharLength | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3189a7c84ed36827ab48b27c8f727314eb34983
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eaf0792b6e0c2311b7eeb01f12b01a485739c6c9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963120"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171383"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Restituisce il numero di caratteri nella stringa della proprietà associata.

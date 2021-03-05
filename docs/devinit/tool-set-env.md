@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 89f62550d75a86c6d48848a31c99ca169964faa0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82f0def521a7a5a6bf4bd4595d32775324a0a39c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950422"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171022"
 ---
 # <a name="set-env"></a>set-env
 
@@ -55,7 +55,7 @@ Il comportamento predefinito dello `set-env` strumento consiste nell'elencare tu
 
 ## <a name="usage-in-a-codespace"></a>Utilizzo in un codespace
 
-Se si usa un codespace, è possibile impostare le variabili di ambiente usate nello spazio dei caratteri tramite la personalizzazione della `remoteEnv` proprietà nel [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) file.
+Se si usa un codespace, è possibile impostare le variabili di ambiente usate nello spazio dei caratteri tramite la personalizzazione della `remoteEnv` proprietà nel [`.devcontainer.json`](https://code.visualstudio.com/docs/remote/devcontainerjson-reference) file.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito sono riportati alcuni esempi di come eseguire `set-env` usando un `.devinit.json` .
