@@ -1,4 +1,5 @@
 ---
+description: Questa funzione imposta le opzioni che controllano il comportamento del plug-in del controllo del codice sorgente.
 title: Funzione SccSetOption | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836696"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221379"
 ---
 # <a name="sccsetoption-function"></a>Funzione SccSetOption
 Questa funzione imposta le opzioni che controllano il comportamento del plug-in del controllo del codice sorgente.

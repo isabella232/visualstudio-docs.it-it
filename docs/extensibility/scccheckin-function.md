@@ -1,4 +1,5 @@
 ---
+description: Questa funzione archivia i file precedentemente estratti nel sistema di controllo del codice sorgente, archiviando le modifiche e creando una nuova versione.
 title: Funzione SccCheckin | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68b03f594ad686f2b3e23aab52cabfe4fa5d92a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a835ead5fb0404b78d9e9c9ecc92ee0c73eaf252
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952109"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220859"
 ---
 # <a name="scccheckin-function"></a>SccCheckin (funzione)
 Questa funzione archivia i file precedentemente estratti nel sistema di controllo del codice sorgente, archiviando le modifiche e creando una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.

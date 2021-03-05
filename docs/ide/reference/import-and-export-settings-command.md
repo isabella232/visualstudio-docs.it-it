@@ -1,4 +1,5 @@
 ---
+description: Consente di importare, esportare o reimpostare le impostazioni di Visual Studio.
 title: Importa/Esporta impostazioni (comando)
 ms.date: 11/21/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f2ea4811af2c44277b9a6dc285972c5267b28d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852453"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223673"
 ---
 # <a name="import-and-export-settings-command"></a>Importa/Esporta impostazioni (comando)
 

@@ -1,4 +1,5 @@
 ---
+description: Questa funzione richiama lo strumento di amministrazione del controllo del codice sorgente.
 title: Funzione SccRunScc | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836761"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221366"
 ---
 # <a name="sccrunscc-function"></a>Funzione SccRunScc
 Questa funzione richiama lo strumento di amministrazione del controllo del codice sorgente.

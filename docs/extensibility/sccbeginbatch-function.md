@@ -1,4 +1,5 @@
 ---
+description: Questa funzione avvia una sequenza di batch di operazioni del controllo del codice sorgente.
 title: Funzione SccBeginBatch | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e79a1203d97bfbf105a69b97516bda307825bd99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52b82919b10e58772343aee42cb8723b10d6ca3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952135"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221652"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch (funzione)
 Questa funzione avvia una sequenza di batch di operazioni del controllo del codice sorgente. Il [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch non possono essere annidati.

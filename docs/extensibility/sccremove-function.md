@@ -1,4 +1,5 @@
 ---
+description: Questa funzione Elimina i file dal sistema di controllo del codice sorgente.
 title: Funzione SccRemove | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67b0691c3f58ad859051f0018e7b32a5a4e087da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f55b82ae428870f1d5a08feaa3ae1ef7eb0b5f4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836709"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221418"
 ---
 # <a name="sccremove-function"></a>Funzione SccRemove
 Questa funzione Elimina i file dal sistema di controllo del codice sorgente.
