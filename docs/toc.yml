@@ -1070,6 +1070,8 @@
       items:
         - name: Gerarchia delle chiamate
           href: ide/reference/call-hierarchy.md
+        - name: PowerShell per sviluppatori Prompt dei comandi per gli sviluppatori &
+          href: ide/reference/command-prompt-powershell.md
         - name: Anteprima modifiche
           href: ide/preview-changes.md
         - name: 'Scegli elementi della Casella degli strumenti, Componenti WPF'

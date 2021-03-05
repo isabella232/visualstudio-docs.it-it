@@ -1,4 +1,5 @@
 ---
+description: Questa interfaccia associa un campo di simboli, in genere restituito dal provider di simboli, a un contesto di memoria o a un oggetto che contiene il valore corrente del simbolo.
 title: IDebugBinder | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: febe22338ddeaf275b37ae09c76921c91ec509da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925110"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143623"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
