@@ -1,4 +1,5 @@
 ---
+description: Ignora il numero specificato di elementi nell'enumerazione dei punti di interruzione associati.
 title: 'IEnumDebugBoundBreakpoints2:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb6c77226109a6f73255f3a7eb3f27cab2c08375
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b2fb66b433dac4828935dbf0299a9b48e143371
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875627"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227021"
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
 Ignora il numero di elementi specificato.

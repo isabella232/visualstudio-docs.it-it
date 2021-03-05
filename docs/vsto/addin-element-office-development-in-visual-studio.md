@@ -1,4 +1,5 @@
 ---
+description: L'elemento addin dello spazio dei nomi vstav3 contiene informazioni specifiche per Microsoft Office componenti aggiuntivi VSTO e le personalizzazioni a livello di documento sviluppate con Visual Studio.
 title: '&lt;&gt;elemento AddIn (sviluppo per Office in Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cfc59475b01fbf42c387b4a7a5ca533b313a322
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896730"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227385"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento AddIn (sviluppo per Office in Visual Studio)
   L'elemento **AddIn** dello `vstav3` spazio dei nomi contiene informazioni specifiche per Microsoft Office componenti aggiuntivi VSTO e le personalizzazioni a livello di documento sviluppate con Visual Studio.

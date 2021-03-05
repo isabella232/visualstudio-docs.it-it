@@ -2,7 +2,7 @@
 title: Risolvere i problemi e creare i log per problemi relativi a MSBuild
 description: Informazioni su come è possibile diagnosticare i problemi di compilazione nel progetto di Visual Studio e, se necessario, creare un log da inviare a Microsoft per l'analisi.
 ms.custom: SEO-VS-2020
-ms.date: 06/27/2019
+ms.date: 02/08/2021
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880489"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225206"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Risolvere i problemi e creare i log per problemi relativi a MSBuild
 
@@ -99,22 +99,41 @@ Se si sta compilando nell'IDE di Visual Studio (con visualizzazione dettagliata 
 1>Project is not up-to-date: build input 'f:\test\project1\project1\project1.h' was modified after the last build finished.
 ```
 
-## <a name="create-a-binary-msbuild-log"></a>Creare un log msbuild binario
+## <a name="create-a-binary-msbuild-log-at-the-command-prompt"></a>Creare un log MSBuild binario al prompt dei comandi
 
 1. Aprire il prompt dei comandi per gli sviluppatori per la versione di Visual Studio in uso
+
 1. Dal prompt dei comandi eseguire uno dei comandi seguenti. (Ricordarsi di usare i valori effettivi per il progetto e la configurazione.):
 
-    ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
-    ```
+   ```cmd
+   Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
+   ```
 
-    oppure
+   oppure
 
-    ```cmd
-    Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
-    ```
+   ```cmd
+   Msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
+   ```
 
-Verrà creato un file Msbuild.binlog nella directory da cui è stato eseguito MSBuild. È possibile visualizzarlo e cercarlo tramite il [visualizzatore log strutturato di Msbuild](http://www.msbuildlog.com/).
+Un file *MSBuild. binlog* viene creato nella directory da cui è stato eseguito MSBuild.
+
+## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>Creare un log MSBuild binario usando l'estensione strumenti di sistema del progetto
+
+1. Scaricare e installare l' [estensione strumenti di sistema del progetto](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools).
+
+1. Una volta installata l'estensione, alcuni nuovi elementi vengono visualizzati nel menu **Visualizza**  >  **altre finestre** .
+
+   ![Menu altre finestre](../ide/media/view-menu.png)
+
+1. Selezionare **Visualizza**  >  **altre**  >  **registrazioni di compilazione** di Windows per visualizzare la finestra **registrazione compilazione** in Visual Studio. Scegliere la prima icona della barra degli strumenti per avviare la registrazione di compilazioni normali e in fase di progettazione nel sistema del progetto.
+
+   ![Finestra registrazione compilazione](../ide/media/build-logging-click-to-record.png)
+
+1. Una volta registrata, una compilazione viene visualizzata nella finestra registrazione compilazione. Fare clic con il pulsante destro del mouse sull'elemento e scegliere **Salva registri** dal menu di scelta rapida per salvare il file con *estensione binlog* .
+
+   ![Menu di scelta rapida registrazione compilazione](../ide/media/build-logging-context-menu.png)
+
+È possibile visualizzare e cercare i file con *estensione binlog* usando il [Visualizzatore di log strutturato di MSBuild](http://www.msbuildlog.com/).
 
 ## <a name="create-a-detailed-log"></a>Creare un log dettagliato
 
