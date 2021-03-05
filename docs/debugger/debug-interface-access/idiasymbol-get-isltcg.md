@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che specifica se il modulo è stato collegato con l'opzione del linker/LTCG (generazione di codice in fase di collegamento) (/CPP/Build/Reference/LTCG-link-Time-Code-Generation), che favorisce l'ottimizzazione dell'intero programma.
 title: IDiaSymbol::get_isLTCG | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f1fde1a3509181182e7d41486facfb01d3efe1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b8306dabe6533287d7d28841ea76f2d6478e4a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863179"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160813"
 ---
 # <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
 Recupera un flag che specifica se il [modulo](../../debugger/debug-interface-access/compiland.md) è stato collegato con l'opzione del linker [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation), che favorisce l'ottimizzazione dell'intero programma. Questa opzione si applica solo al codice gestito.

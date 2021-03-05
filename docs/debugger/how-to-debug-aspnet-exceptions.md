@@ -1,6 +1,6 @@
 ---
 title: Eccezioni di debug ASP.NET | Microsoft Docs
-Description: Informazioni su come configurare in modo che il debugger si arresti per le eccezioni non gestite nell'applicazione ASP.NET. È possibile assicurarsi che l'interruzioni avvenga nel codice non di sistema.
+description: Informazioni su come configurare in modo che il debugger si arresti per le eccezioni non gestite nell'applicazione ASP.NET. È possibile assicurarsi che l'interruzioni avvenga nel codice non di sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebf53569e2c104b49acdadba36203f9d6409e215
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913254"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160421"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedura: debug di eccezioni ASP.NET
 Il debug delle eccezioni è una parte importante dello sviluppo di una potente applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per informazioni generali sul debug delle eccezioni, è possibile [gestire le eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md).

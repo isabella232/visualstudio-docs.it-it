@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che specifica se per il tipo di dati definito dall'utente sono definiti operatori di cast.
 title: IDiaSymbol::get_hasCastOperator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6329ea001ec2584c34cda76417c143634f4fb3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7b89c89bb2555edcfd70ac78dbe6a31a6af7fd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854276"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160974"
 ---
 # <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
 Recupera un flag che specifica se per il tipo di dati definito dall'utente sono definiti operatori di cast.

@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che specifica se il tipo di dati definito dall'utente è costante.
 title: IDiaSymbol::get_constType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a2b81f307e2b925037dfa2075446d0a9c837a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c91896d84c140d6a736c481013e1414f48260518
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863452"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161051"
 ---
 # <a name="idiasymbolget_consttype"></a>IDiaSymbol::get_constType
 Recupera un flag che specifica se il tipo di dati definito dall'utente è costante.
