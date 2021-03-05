@@ -1,4 +1,5 @@
 ---
+description: Se una funzione dispone di un punto definito da cui iniziare il debug, il punto viene identificato da un simbolo con un tag SymTagFuncDebugStart.
 title: FuncDebugStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6847f75a3e6a2869e70665fbcf55ee5a8ba2f863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 43531d8fe6c36eb56773659b908155c8491996f4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865363"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151176"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 Se una funzione dispone di un punto definito da cui iniziare il debug, il punto viene identificato da un simbolo con un `SymTagFuncDebugStart` tag.

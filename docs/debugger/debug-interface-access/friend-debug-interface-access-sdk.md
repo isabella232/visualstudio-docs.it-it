@@ -1,4 +1,5 @@
 ---
+description: Le classi friend e le funzioni friend sono identificate da simboli SymTagFriend.
 title: Friend (Debug Interface Access SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b895555ce1334fa306b64fe213787bdf5dc827e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a0e9784c864b2b591847f3d77ced553762911c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865384"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151216"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend (Debug Interface Access SDK)
 Le classi friend e le funzioni friend sono identificate da `SymTagFriend` simboli. Sono elementi figlio di tipi definiti dall'utente (UDT) padre e hanno una proprietà [IDiaSymbol:: get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) .

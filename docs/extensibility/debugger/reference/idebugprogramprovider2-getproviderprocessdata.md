@@ -1,4 +1,5 @@
 ---
+description: Recupera un elenco di programmi in esecuzione da un processo specificato.
 title: 'IDebugProgramProvider2:: GetProviderProcessData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ce5bee4f2401e3895570f16a6de5567b5979d98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b878a6731a9a7f2bf58bf55530d0b5f83cc978de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898292"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151558"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Recupera un elenco di programmi in esecuzione da un processo specificato.
