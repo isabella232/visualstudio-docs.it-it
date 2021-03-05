@@ -1,4 +1,5 @@
 ---
+description: Chiamato da gestione debug sessione (SDM) per indicare che è stato ricevuto ed elaborato un evento di debug sincrono, precedentemente inviato dal motore di debug (DE) a SDM.
 title: 'IDebugEngine2:: ContinueFromSynchronousEvent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78485e209c93e0673aa32587b21bb074aac047e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e7d92e4d49b6a9e409ee30cf04d131645d287fd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921134"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162667"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Chiamato da gestione debug sessione (SDM) per indicare che è stato ricevuto ed elaborato un evento di debug sincrono, precedentemente inviato dal motore di debug (DE) a SDM.

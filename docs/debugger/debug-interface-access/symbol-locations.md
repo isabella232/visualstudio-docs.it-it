@@ -1,4 +1,5 @@
 ---
+description: La maggior parte dei simboli ha una posizione definita all'interno del file di immagine.
 title: Percorsi simboli | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f7e5d9a02a8c928b64bcb6abd8054d8fa76f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2452d9aca52c281a96ea8f5738bc38ed21ee63e8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853191"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161627"
 ---
 # <a name="symbol-locations"></a>Percorsi dei simboli
 La maggior parte dei simboli ha una posizione definita all'interno del file di immagine. Il percorso di un simbolo viene specificato con un valore dell'enumerazione Enumerazione [LocationType](../../debugger/debug-interface-access/locationtype.md) . Il simbolo può supportare proprietà aggiuntive a seconda della posizione.

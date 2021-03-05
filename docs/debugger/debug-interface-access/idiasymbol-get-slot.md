@@ -1,4 +1,5 @@
 ---
+description: Recupera il numero di slot della posizione.
 title: IDiaSymbol::get_slot | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7c89828bb4b0715f97aaba37fd335c8f1eb6c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7bd3fcbcba541ada2fabeff134fe600940a81fd9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853604"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161795"
 ---
 # <a name="idiasymbolget_slot"></a>IDiaSymbol::get_slot
 Recupera il numero di slot della posizione. Utilizzare quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsSlot` .

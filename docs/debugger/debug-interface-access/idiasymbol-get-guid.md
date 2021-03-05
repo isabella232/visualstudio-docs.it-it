@@ -1,4 +1,5 @@
 ---
+description: Recupera l'identificatore univoco globale (GUID) del simbolo.
 title: IDiaSymbol::get_guid | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: faba8ccc1cbaacdf6459c8245a230595bf258624
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2eeab640835575a8e58f757325d709974a0eb5f5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863403"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162152"
 ---
 # <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
 Recupera l'identificatore univoco globale (GUID) del simbolo.
