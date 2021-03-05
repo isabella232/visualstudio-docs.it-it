@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3ac2e91ed9166a2eb8bdc4a19f2143c4fc71640
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942945"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161313"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -52,7 +52,7 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **CTRL** + **D** | Duplicare una riga | Duplica la riga di codice in cui si trova il cursore (disponibile in **Visual Studio 2017 versione 15.6** e versioni successive) |
 | **Sposta** + **ALT**+**+**/**-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
 | **Sposta**  +  **ALT**  +  **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
-| **CTRL** + **D** | Cerca | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
+| **CTRL** + **D** | Ricerca | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
 | **F5** | Avvia debug | Avvia il debug dell'applicazione |
 | **CTRL** + **F5** | Esecuzione senza debug | Esegue l'applicazione in locale senza debug |
 | **CTRL** + **K**,**d** (profilo predefinito) o **CTRL** + **E**,**d** (profilo C#) | Formatta documento | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
@@ -143,10 +143,23 @@ Per altre informazioni, vedere [funzionalità di generazione del codice](code-ge
 
 Diversi membri della community hanno scritto estensioni gratuite che aggiungono controlli aggiuntivi del codice:
 
+::: moniker range="vs-2017"
+
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
 - [SonarLint per Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
 - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 - [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2019)
+- [SonarLint per Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019)
+- [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
+- [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/)
+
+::: moniker-end
 
 ![Refactoring in Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 

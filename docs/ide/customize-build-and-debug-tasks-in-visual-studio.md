@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954423"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161300"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizzare le attività di compilazione e debug per lo sviluppo con "Apri cartella"
 
@@ -217,7 +217,7 @@ Questa sezione descrive alcune delle proprietà che è possibile specificare in 
 
 |Macro|Descrizione|
 |-|-|
-|`${env.<VARIABLE>}`| Specifica qualsiasi variabile di ambiente (ad esempio, ${env.PATH}, ${env.COMSPEC} e così via) impostata per il prompt dei comandi per gli sviluppatori. Per altre informazioni, vedere [prompt dei comandi per gli sviluppatori per Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
+|`${env.<VARIABLE>}`| Specifica qualsiasi variabile di ambiente (ad esempio, ${env.PATH}, ${env.COMSPEC} e così via) impostata per il prompt dei comandi per gli sviluppatori. Per altre informazioni, vedere [prompt dei comandi per gli sviluppatori e Developer PowerShell](../ide/reference/command-prompt-powershell.md).|
 |`${workspaceRoot}`| Percorso completo della cartella dell'area di lavoro (ad esempio, *C:\sources\hello*)|
 |`${file}`| Percorso completo del file o della cartella selezionato per l'esecuzione di questa attività (ad esempio, *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| Percorso relativo del file o della cartella (ad esempio, *src\hello.js*)|
