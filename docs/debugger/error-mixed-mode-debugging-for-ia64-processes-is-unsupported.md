@@ -1,4 +1,5 @@
 ---
+description: Il debugger di Visual Studio non supporta il debug di codice nativo e gestito misto in un processo basato su Itanium.
 title: Il debug in modalità mista per i processi IA64 non è supportato | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fa1b7f332d6a9f6481c513a3c2024a3551c7a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3811d9a0cee65ee69c6816bb2ecec10bc7307f4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871585"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146977"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Errore: il debug in modalità mista per i processi IA64 non è supportato
 Il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non supporta il debug di codice nativo e gestito misto in un processo basato su Itanium.

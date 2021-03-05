@@ -1,4 +1,5 @@
 ---
+description: Recupera la stringa di programma utilizzata per calcolare il set di registri prima della chiamata alla funzione corrente.
 title: 'IDiaFrameData:: get_program | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1480b7e3273e3746f95c01ab8913eb5c934edc39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3e16503d025771b3af34c7f4eee185c2f6aacab
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864943"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148493"
 ---
 # <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
 Recupera la stringa di programma utilizzata per calcolare il set di registri prima della chiamata alla funzione corrente.

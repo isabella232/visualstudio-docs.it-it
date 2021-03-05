@@ -1,4 +1,5 @@
 ---
+description: Recupera il nome assegnato al codice sorgente non file; ovvero il codice inserito.
 title: 'IDiaInjectedSource:: get_virtualFilename | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78bb087f7e5b66d68e24d66315d9edcd15b06544
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c57f354b250710f5ec5d5fe6c6a29aa7e0938c4a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864873"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148367"
 ---
 # <a name="idiainjectedsourceget_virtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 Recupera il nome assegnato al codice sorgente non file; ovvero il codice inserito.

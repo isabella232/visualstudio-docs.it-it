@@ -1,4 +1,5 @@
 ---
+description: Recupera i nomi di stringa corrispondenti per gli identificatori di proprietà specificati.
 title: 'IDiaPropertyStorage:: ReadPropertyNames | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e7216c5878a13b4312d737ae266004d757c24db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbb6d511a6be9ed408b076162a3d00d22705075a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864572"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148143"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 Recupera i nomi di stringa corrispondenti per gli identificatori di proprietà specificati.

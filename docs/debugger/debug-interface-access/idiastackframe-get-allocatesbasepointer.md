@@ -1,4 +1,5 @@
 ---
+description: 'IDiaStackFrame:: get_allocatesBasePointer recupera un flag che indica se il puntatore di base è allocato per il codice in questo intervallo di indirizzi.'
 title: IDiaStackFrame::get_allocatesBasePointer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6740a183e730293c6791a7f9ca9dcc67c4fe16b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 987257157104a62de4e644631dd76037abc3e796
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854941"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147569"
 ---
 # <a name="idiastackframeget_allocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 Recupera un flag che indica se il puntatore di base è allocato per il codice in questo intervallo di indirizzi.
