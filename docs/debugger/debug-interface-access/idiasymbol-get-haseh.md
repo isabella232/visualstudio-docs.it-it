@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che specifica se la funzione contiene una gestione delle eccezioni di tipo C++ non gestita, ad esempio un blocco try/catch.
 title: IDiaSymbol::get_hasEH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d387d37103773e7352357ebef5f9134bcff85c59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d60a47c4d655bd0a489d293c88ea5b318971547d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156307"
 ---
 # <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
 Recupera un flag che specifica se la funzione contiene una gestione delle eccezioni di tipo C++ non gestita, ad esempio un blocco try/catch.

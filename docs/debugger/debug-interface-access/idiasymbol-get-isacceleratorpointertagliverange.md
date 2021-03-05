@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che indica se il simbolo corrisponde al simbolo dell'intervallo di definizioni per il componente tag di una variabile puntatore nel codice compilato per un acceleratore C++ AMP.
 title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0e2d22da73402c7eb68e2a84cfe98e59fc0832
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f46618e0dddf788f106cfccd836d3e228835735
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863256"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156244"
 ---
 # <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 Recupera un flag che indica se il simbolo corrisponde al *simbolo dell'intervallo di definizioni* per il componente tag di una variabile puntatore nel codice compilato per un acceleratore C++ amp. Il simbolo dell'intervallo di definizioni è il percorso di una variabile per un intervallo di indirizzi.

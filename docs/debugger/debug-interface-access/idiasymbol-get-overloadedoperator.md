@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di operatori di overload.
 title: IDiaSymbol::get_overloadedOperator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b42c1c6a5a05d18ec4846b950bce46f4fa26787
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c30cfd825379e88293aa8f32b9b994798ea5f8a8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862836"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155866"
 ---
 # <a name="idiasymbolget_overloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di operatori di overload.

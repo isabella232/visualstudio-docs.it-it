@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che indica se il modulo è stato compilato con l'opzione del compilatore/Z7,/Zi,/ZI (formato informazioni di debug).
 title: IDiaSymbol::get_editAndContinueEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4168ab7ba3351dc8abe5f9c781fccea881fb7df0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ead107b051dd898b549ee25f800a8b8d2e83973a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854353"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156349"
 ---
 # <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Recupera un flag che indica se il modulo è stato compilato con l'opzione del compilatore [/Z7,/Zi,/Zi (formato informazioni di debug)](/cpp/build/reference/z7-zi-zi-debug-information-format) .

@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che specifica se la funzione contiene un uso del comando longjmp (abbinato a un comando setjmp (/CPP/c-Runtime-Library/Reference/setjmp), che formano il metodo di gestione delle eccezioni in stile C).
 title: IDiaSymbol::get_hasLongJump | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f7107f498ca5a7a46a3c47cfa131d7f5396bae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c211e52e1a8e13a88b6c2a2f9404f5d8a67386f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863326"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156300"
 ---
 # <a name="idiasymbolget_haslongjump"></a>IDiaSymbol::get_hasLongJump
 Recupera un flag che specifica se la funzione contiene un uso del comando [longjmp](/cpp/c-runtime-library/reference/longjmp) (abbinato a un comando [setjmp](/cpp/c-runtime-library/reference/setjmp) , che formano il metodo di tipo C della gestione delle eccezioni).

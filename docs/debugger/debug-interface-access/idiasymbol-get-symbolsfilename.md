@@ -1,4 +1,5 @@
 ---
+description: Recupera il nome del file da cui sono stati caricati i simboli.
 title: IDiaSymbol::get_symbolsFileName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e1fa997d8552efec7fdfbcd97fa3e300975d4f58
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe20bacc1100fc28258422626e44274813ce7253
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862689"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155761"
 ---
 # <a name="idiasymbolget_symbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 Recupera il nome del file da cui sono stati caricati i simboli.
