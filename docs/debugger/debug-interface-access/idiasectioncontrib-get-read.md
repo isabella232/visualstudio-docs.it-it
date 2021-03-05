@@ -1,4 +1,5 @@
 ---
+description: Recupera un flag che indica se è possibile leggere la sezione.
 title: IDiaSectionContrib::get_read | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbaac96bdb28ec1e09ede568758f87bba20ae2c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 563e216ad7c97b9e3b448d3cdf658667039072b3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855375"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157202"
 ---
 # <a name="idiasectioncontribget_read"></a>IDiaSectionContrib::get_read
 Recupera un flag che indica se è possibile leggere la sezione.

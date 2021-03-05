@@ -1,4 +1,5 @@
 ---
+description: Consente al client di abilitare o disabilitare il calcolo e l'utilizzo di indirizzi RVA (relative Virtual Address).
 title: IDiaAddressMap::put_relativeVirtualAddressEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6311c0db3329852fe8061c8da9f0355d6b2565
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c3aab1379a39ee6abfd977350743e36c9792efb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865286"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158322"
 ---
 # <a name="idiaaddressmapput_relativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 Consente al client di abilitare o disabilitare il calcolo e l'utilizzo di indirizzi RVA (relative Virtual Address).

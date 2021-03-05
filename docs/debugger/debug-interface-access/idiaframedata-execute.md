@@ -1,4 +1,5 @@
 ---
+description: Esegue la rimozione dello stack e restituisce i risultati in un'interfaccia di frame di percorso stack.
 title: IDiaFrameData::execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cc4ba3f7ba3f54df4dd8687996fa72d27e91fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 483854d0bea61af1bf8bd1f5338770fcc49b37be
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855998"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157812"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Esegue la rimozione dello stack e restituisce i risultati in un'interfaccia di frame di percorso stack.

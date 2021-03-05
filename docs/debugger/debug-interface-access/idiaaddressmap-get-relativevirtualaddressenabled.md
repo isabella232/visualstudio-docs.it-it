@@ -1,4 +1,5 @@
 ---
+description: Indica se è abilitato il calcolo e l'utilizzo degli indirizzi RVA (relative Virtual Address).
 title: IDiaAddressMap::get_relativeVirtualAddressEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d7bc241ed2e0fc885ace301b611918d1822dac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5383772ca95d3dada7218643b483d2ca5d056613
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857202"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158427"
 ---
 # <a name="idiaaddressmapget_relativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 Indica se è abilitato il calcolo e l'utilizzo degli indirizzi RVA (relative Virtual Address).
