@@ -1,4 +1,5 @@
 ---
+description: Specifica il tipo di campo contenuto in un oggetto IDebugField.
 title: FIELD_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a18739ebe30a41e9dca837287d58db57795f878b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519b18f9e4b0329ded9b17ec0152f36e37377df0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874369"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150861"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 Specifica il tipo di campo contenuto in un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .

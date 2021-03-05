@@ -1,4 +1,5 @@
 ---
+description: Rappresenta un provider di simboli che ha accesso diretto a metadati e interfacce di simboli di base.
 title: IDebugSymbolProviderDirect | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29f0e7e3d2fefe0f47dc971ebff273bf2745a5ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d60af5be925341e5421badb4c3e6e3dae97903b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149314"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 Rappresenta un provider di simboli che ha accesso diretto a metadati e interfacce di simboli di base.

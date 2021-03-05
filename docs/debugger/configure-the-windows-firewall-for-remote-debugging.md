@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52264580e428fa6a2c33d80ea8fb9fb8e07f0c59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865826"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149327"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurare Windows Firewall per il debug remoto
 
@@ -49,6 +49,16 @@ Visual Studio e il debugger remoto tentano di aprire le porte corrette durante l
 1. Aggiungere un nome per la regola (ad esempio, **msvsmon**, **IIS** o **distribuzione Web**), quindi selezionare **fine**.
 
    La nuova regola dovrebbe essere visualizzata e selezionata nell'elenco **regole in ingresso** o **regole** in uscita.
+
+**Per aprire una porta usando PowerShell:**
+
+Per Windows Firewall, è possibile usare i comandi di PowerShell, ad esempio [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps).
+
+Nell'esempio seguente viene aperta la porta 4024 per il debugger remoto nel computer remoto. Il percorso da usare potrebbe essere diverso.
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+```
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porte nel computer remoto che abilitano il debug remoto
 

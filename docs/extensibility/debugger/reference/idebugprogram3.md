@@ -1,4 +1,5 @@
 ---
+description: Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende l'esecuzione fornendo informazioni sul thread.
 title: IDebugProgram3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d22a58021a744cc71b8df3acb8e577d853aa2829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c16184a017e5e97f81afbab5d4d2579796e4217
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889993"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149600"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende l' [esecuzione](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornendo informazioni sul thread.

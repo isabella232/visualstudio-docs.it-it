@@ -1,4 +1,5 @@
 ---
+description: Exe è l'unico simbolo senza un elemento padre lessicale o di classe, perché rappresenta l'ambito globale del file con estensione exe o dll.
 title: Exe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85dc30078565f73d4d2f6cab19c57afade6d8e41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5394acaa19efed0c882d97f6ee5b633ffe1c68c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857272"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149151"
 ---
 # <a name="exe"></a>Exe
 Exe è l'unico simbolo senza un elemento padre lessicale o di classe, perché rappresenta l'ambito globale del file con estensione exe o dll. È presente un solo simbolo con il `SymTagExe` tag per ogni file. Il metodo [IDiaSession:: get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) restituisce il simbolo.

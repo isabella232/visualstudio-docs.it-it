@@ -1,4 +1,5 @@
 ---
+description: Questa interfaccia viene utilizzata dai nodi del programma per specificare tutti i possibili motori di debug (DE) in grado di eseguire il debug del programma.
 title: IDebugProgramEngines2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c74b265331b67564856baa003632d8d778bfb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c19b4dc3967cf7001144d38114a1f873776cb2b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898895"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149587"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Questa interfaccia viene utilizzata dai nodi del programma per specificare tutti i possibili motori di debug (DE) in grado di eseguire il debug del programma.

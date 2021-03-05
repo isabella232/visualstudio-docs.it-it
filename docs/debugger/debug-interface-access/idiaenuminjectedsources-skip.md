@@ -1,4 +1,5 @@
 ---
+description: Ignora un numero specificato di origini inserite in una sequenza di enumerazione.
 title: 'IDiaEnumInjectedSources:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2adf44fa1ed2d394a6ad5edaca0818c503a180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7966419e7d623fe6678c6194708360d102fb816b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856663"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148990"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 Ignora un numero specificato di origini inserite in una sequenza di enumerazione.

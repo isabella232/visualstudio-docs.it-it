@@ -1,4 +1,5 @@
 ---
+description: Questa interfaccia consente a un chiamante di determinare se un fornitore di porte può mantenere le porte (scrivendole su disco) tra le chiamate del debugger e quindi ottenere un elenco delle porte mantenute.
 title: IDebugPortSupplier3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d8d93f26ef01fb184811a87b4f4fcc4483340
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8db7c2321d5a309f66b85a3f177e20cb3f9b1244
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840236"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150393"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Questa interfaccia consente a un chiamante di determinare se un fornitore di porte può mantenere le porte (scrivendole su disco) tra le chiamate del debugger e quindi ottenere un elenco delle porte mantenute.
