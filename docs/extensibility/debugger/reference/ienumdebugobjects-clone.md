@@ -1,4 +1,5 @@
 ---
+description: Questo metodo restituisce una copia dell'enumerazione IDebugObjects corrente come oggetto separato.
 title: 'IEnumDebugObjects:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f051c1f0c64d99d4abac3c4466b1e9149ebb5cdc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca8a89f214ae3384d48051edf2f67a3f9e8ba68d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890786"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224733"
 ---
 # <a name="ienumdebugobjectsclone"></a>IEnumDebugObjects::Clone
 Questo metodo restituisce una copia dell'enumerazione corrente come oggetto separato.

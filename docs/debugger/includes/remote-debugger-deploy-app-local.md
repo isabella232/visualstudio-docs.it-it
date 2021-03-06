@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: b6ceee76d8c24ccddb41e47c0865d96c79e6fc32
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97762608"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249884"
 ---
 1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **pubblica** (per Web Form, **pubblica app Web**).
 
@@ -21,18 +21,30 @@ ms.locfileid: "97762608"
 
 1. Nella finestra di dialogo **pubblica** selezionare **cartella**, fare clic su **Sfoglia** e creare una nuova cartella, **C:\publish**.
 
-    ![Screenshot della finestra di dialogo selezionare una destinazione di pubblicazione in Visual Studio con la cartella "bin\Release\Publish" selezionata come destinazione di pubblicazione.](../media/remotedbg_publish_local.png)
+   ::: moniker range=">=vs-2019"
 
-    Per un'app Web Form, scegliere **personalizzata** nella finestra di dialogo pubblica, immettere un nome di profilo e scegliere **OK**.
+   :::image type="content" source="../media/vs-2019/remotedbg-publish-local.png" alt-text="Screenshot della finestra di dialogo selezionare una destinazione di pubblicazione in Visual Studio con la cartella &quot;C:\Publish&quot; selezionata come destinazione di pubblicazione.":::
 
-1. Fare clic su **Crea profilo** nell'elenco a discesa (**Publish** è il valore predefinito).
+   Fare clic su **fine** per salvare il profilo di pubblicazione.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   ![Screenshot della finestra di dialogo selezionare una destinazione di pubblicazione in Visual Studio con la cartella "bin\Release\Publish" selezionata come destinazione di pubblicazione.](../media/remotedbg_publish_local.png)
+   Per un'app Web Form, scegliere **personalizzata** nella finestra di dialogo pubblica, immettere un nome di profilo e scegliere **OK**.
 
-1. Nella finestra di dialogo **pubblica** fare clic sul collegamento **Impostazioni** , quindi selezionare la scheda **Impostazioni** .
+   Fare clic su **Crea profilo** nell'elenco a discesa (**Publish** è il valore predefinito).
+   ::: moniker-end
 
-1. Impostare la configurazione su **debug**, selezionare **Elimina tutti i file esistenti prima della pubblicazione** e quindi fare clic su **Salva**.
+1. Passa a una configurazione di debug.
 
-    > [!NOTE]
-    > Se si usa una build di rilascio, si disabilita il debug nel file di web.config durante la pubblicazione.
+   ::: moniker range=">=vs-2019"
+   Scegliere **modifica** per modificare il profilo, quindi scegliere **Impostazioni**. Scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Nella finestra di dialogo **Impostazioni** abilitare il debug facendo clic su **Avanti**, scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
+   ::: moniker-end
+
+   > [!NOTE]
+   > Se si usa una build di rilascio, si disabilita il debug nel file di *web.config* durante la pubblicazione.
 
 1. Fare clic su **Pubblica**.
 
@@ -43,7 +55,7 @@ ms.locfileid: "97762608"
 1. Copiare la directory del progetto ASP.NET dal computer di Visual Studio alla directory locale configurata per l'app ASP.NET (in questo esempio, **C:\publish**) nel computer Windows Server. In questa esercitazione si presuppone che la copia venga eseguita manualmente, ma è possibile usare altri strumenti come PowerShell, XCOPY o Robocopy.
 
     > [!CAUTION]
-    > Se è necessario apportare modifiche al codice o ricompilare, è necessario ripubblicarlo e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.    Se non si esegue questa operazione, verrà visualizzato un `cannot find or open the PDB file` avviso in Visual Studio quando si tenta di eseguire il debug del processo.
+    > Se è necessario apportare modifiche al codice o ricompilare, è necessario ripubblicarlo e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli. Se non si esegue questa operazione, verrà visualizzato un `cannot find or open the PDB file` avviso in Visual Studio quando si tenta di eseguire il debug del processo.
 
 1. Nel server Windows verificare che sia possibile eseguire l'app correttamente aprendo l'app nel browser.
 

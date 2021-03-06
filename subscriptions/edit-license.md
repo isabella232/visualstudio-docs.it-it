@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 11/09/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono modificare le assegnazioni delle sottoscrizioni.
-ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433557"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249793"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modificare assegnazioni di sottoscrizioni di Visual Studio
 In qualità di amministratore della sottoscrizione, è possibile apportare modifiche alle sottoscrizioni assegnate a singoli utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
@@ -30,7 +30,6 @@ Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che
 È possibile aggiornare il nome, il cognome, il livello di sottoscrizione, l'indirizzo di posta elettronica, il paese, la lingua, i download e il campo di riferimento del Sottoscrittore Modificare le informazioni del Sottoscrittore e fare clic su **Salva**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Modificare più sottoscrittori usando la modifica di massa
-
 
 È possibile modificare più sottoscrittori contemporaneamente utilizzando il processo di modifiche di massa. Questa funzionalità viene utilizzata principalmente per le organizzazioni che devono effettuare modifiche dell'indirizzo di posta elettronica aziendale o se un'organizzazione ha deciso di limitare l'accesso ai download.
 
@@ -56,7 +55,10 @@ Guardare questo video o leggere per informazioni su come modificare più Sottosc
 
 5. Dopo aver caricato il file, verrà visualizzata una notifica per comunicare l'esito positivo. A questo punto, tutte le modifiche si rifletteranno nelle informazioni relative al sottoscrittore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="resources"></a>Risorse
+- [Supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

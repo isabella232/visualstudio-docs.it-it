@@ -1,4 +1,5 @@
 ---
+description: Recupera le informazioni sul visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.
 title: 'IPropertyProxyEESide:: GetManagedViewerCreationData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee551ba78ceb91c2622af217d8863597e028be9d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2d7d4ef3f35cb0ad00f91033213449af8cb7306
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896012"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224135"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Recupera le informazioni sul visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.

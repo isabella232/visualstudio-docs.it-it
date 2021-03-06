@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 02/04/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: Domande sulla fatturazione per sottoscrizioni cloud.
-ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: 2c03871d11279b7c368ebd0c7012670fc92c9ee0
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572876"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249721"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio
 Assicurarsi di [confrontare i vantaggi e i prezzi delle sottoscrizioni cloud](https://visualstudio.microsoft.com/vs/pricing/) per comprendere i vantaggi di ogni sottoscrizione di Visual Studio, esaminando le differenze tra le sottoscrizioni cloud e standard di Visual Studio, i dettagli dei vantaggi per i sottoscrittori e altri aspetti.
@@ -56,7 +56,7 @@ Quando si aumenta la quantità a pagamento in un secondo momento, anche le unit�
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>D: come vengono elaborati gli addebiti per le sottoscrizioni cloud **annuali**?
 R: a ogni acquisto viene fatturata immediatamente l'intera quantità acquistata. Gli addebiti non vengono distribuiti nell'anno e non è prevista alcuna ripartizione proporzionale. Se si acquistano sottoscrizioni cloud annuali in momenti diversi nell'anno, ci saranno sottoscrizioni con rinnovo in mesi diversi. Non viene allineata la data di scadenza di tutte le sottoscrizioni cloud annuali di un cliente come avviene comunemente con i contratti multilicenza Microsoft.
 
-### <a name="q-how-do-cancelations-work"></a>D: come funzionano gli annullamenti?
+### <a name="q-how-do-cancellations-work"></a>D: come funzionano gli annullamenti?
 R: quando si annulla una sottoscrizione cloud di Visual Studio, si annulla il rinnovo automatico. La sottoscrizione continua fino alla relativa data di rinnovo normale e poi semplicemente scade.
 Alla scadenza, il sottoscrittore di Visual Studio non può più usare Visual Studio o qualsiasi altro vantaggio dalla sottoscrizione.
 
@@ -93,6 +93,9 @@ R: sì. Non appena vengono rilasciate nuove versioni, è possibile scaricarle ed
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>D: è possibile acquistare sottoscrizioni cloud di Visual Studio da un rivenditore di software?
 R: Sì, è possibile, se il rivenditore partecipa al programma Cloud Solution Provider (CSP). Chiedere semplicemente.
+
+### <a name="q-where-can-i-find-information-about-azure-invoices"></a>D: dove è possibile reperire informazioni sulle fatture di Azure?
+R: vedere l'articolo [comprendere la fattura di Azure](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice) nella [documentazione di Azure](/azure/).
 
 ## <a name="related-resources"></a>Risorse correlate
 - [Portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/)

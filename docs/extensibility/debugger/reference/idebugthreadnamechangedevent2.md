@@ -1,4 +1,5 @@
 ---
+description: Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug della sessione (SDM) quando un nome di thread viene modificato nel programma di cui è in corso il debug.
 title: IDebugThreadNameChangedEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdb65d73db0e506e5cba89834c0c7e90fdf6e8f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 878c1196c3d2343924be316725be35f1b6f01ae6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901574"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227346"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug della sessione (SDM) quando un nome di thread viene modificato nel programma di cui è in corso il debug.

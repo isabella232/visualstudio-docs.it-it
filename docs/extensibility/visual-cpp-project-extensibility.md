@@ -1,4 +1,5 @@
 ---
+description: Il sistema di progetto Visual C++ viene utilizzato per i file. vcxproj.
 title: Estendibilità del progetto Visual C++
 ms.date: 04/23/2019
 ms.technology: vs-ide-mobile
@@ -10,12 +11,12 @@ ms.author: corob
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c699c835c6a53ec346dadb8bbbbf787aacc9206
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc538402ae39753f14a3bccd8bcd17ddb0081078
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926032"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221236"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Estendibilità del sistema di progetto C++ di Visual Studio e integrazione del set di strumenti
 
@@ -556,7 +557,7 @@ Il servizio di debug in Visual Studio supporta l'estendibilità per il motore di
 
 Per specificare i motori di debug e altre proprietà per la sessione di debug, è necessario implementare un componente MEF dell' [utilità di avvio del debug](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md) e aggiungere una `debugger` regola. Per un esempio, vedere il `$(VCTargetsPath)` \\ \\ file di \_windows.xml locale del debugger 1033 \_ .
 
-### <a name="deploy"></a>Distribuire
+### <a name="deploy"></a>Distribuisci
 
 i progetti. vcxproj usano l'estendibilità del sistema di progetto di Visual Studio per i [provider di distribuzione](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md).
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 12/02/2020
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account GitHub.
-ms.openlocfilehash: 52f67afdf8a4056063cdefef618be5b895dbb960
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537994"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249728"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account GitHub 
 
@@ -59,12 +59,12 @@ R: a causa delle restrizioni di sicurezza, Microsoft conta l'accesso con GitHub 
 R: ogni volta che si esegue la firma usando l'alias dell'account (indirizzo di posta elettronica, numero di telefono, nome Skype), verranno mostrati tutti i metodi di accesso per l'account. Se GitHub non è visualizzato fra tali metodi, non è stato ancora configurato.
 
 #### <a name="q--how-can-i-unlink-my-microsoft-and-github-accounts"></a>D: in che modo è possibile scollegare gli account Microsoft e GitHub? 
-R: andare alla [scheda sicurezza](https://account.microsoft.com/security) di account.Microsoft.com e fare clic su **altre opzioni di sicurezza** per scollegare l'account github. Quando viene scollegato, l'account GitHub viene rimosso come metodo di accesso e viene anche rimosso l'accesso a qualsiasi repository GitHub in Visual Studio. Altri prodotti Microsoft potrebbero avere richiesto l'accesso all'account GitHub separatamente. Pertanto la rimozione dell'accesso in questa posizione non rimuoverà l'accesso in tutti i prodotti. Andare alla pagina delle [autorizzazioni applicazione](https://github.com/settings/applications) del profilo GitHub per revocare il consenso alle app elencate in tale pagina.
+R: passare alla [scheda sicurezza](https://account.microsoft.com/security) di account.Microsoft.com e fare clic su **Opzioni di sicurezza avanzate** per scollegare il proprio account github. Quando viene scollegato, l'account GitHub viene rimosso come metodo di accesso e viene anche rimosso l'accesso a qualsiasi repository GitHub in Visual Studio. Altri prodotti Microsoft potrebbero avere richiesto l'accesso all'account GitHub separatamente. Pertanto la rimozione dell'accesso in questa posizione non rimuoverà l'accesso in tutti i prodotti. Andare alla pagina delle [autorizzazioni applicazione](https://github.com/settings/applications) del profilo GitHub per revocare il consenso alle app elencate in tale pagina.
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>D: provo a usare il mio account GitHub per accedere, ma mi viene chiesto di avere già un'identità Microsoft che devo usare.  Qual è il problema?
 R: se si dispone di un indirizzo di posta elettronica Azure Active Directory sull'account GitHub, significa che è già presente un'identità Microsoft che può accedere ad Azure ed eseguire pipeline CI usando il codice GitHub. L'uso di tale account garantisce che le risorse di Azure e le pipeline di compilazione restino entro i limiti dell'organizzazione. Se tuttavia si stanno eseguendo attività a titolo personale, è consigliabile inserire un indirizzo di posta elettronica personale nell'account GitHub, in modo da potere sempre accedere all'account stesso. Dopo aver eseguito questa operazione, provare a eseguire nuovamente l'accesso e scegliere **Usa un indirizzo e-mail diverso** quando viene chiesto di accedere al proprio account aziendale o dell'istituto di istruzione. In questo modo è possibile creare un nuovo account Microsoft con tale indirizzo di posta elettronica personale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

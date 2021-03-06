@@ -1,4 +1,5 @@
 ---
+description: Questo metodo modifica l'oggetto rappresentato dal visualizzatore.
 title: 'IEEVisualizerDataProvider:: SetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50d68b5cdb7399dc391ef90150f0b6a156783301
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df5cfd2acef1a2214d4692a49c742c26cd420ffa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890838"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227229"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Questo metodo modifica l'oggetto rappresentato dal visualizzatore.
