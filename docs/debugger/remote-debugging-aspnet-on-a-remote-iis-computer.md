@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b4eabfe35671b3cda0e2df71163b7c91695b264
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a364289ded27879c74767f03e89b9ea7b9f604fc
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683074"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249908"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>ASP.NET Core di debug remoto in un computer IIS remoto in Visual Studio
 
@@ -129,10 +129,17 @@ Se è necessario assistenza per la distribuzione dell'app in IIS, prendere in co
 
 Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l'app non viene avviata da Visual Studio, avviare l'app in IIS per verificare che venga eseguita correttamente. Per ASP.NET Core, è anche necessario assicurarsi che il campo pool di applicazioni per **DefaultAppPool** sia impostato su **nessun codice gestito**.
 
-1. Nella finestra di dialogo **Impostazioni** abilitare il debug facendo clic su **Avanti**, scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
+1. Passa a una configurazione di debug.
 
-    > [!IMPORTANT]
-    > Se si sceglie una configurazione di versione, si disabilita il debug nel file di *web.config* durante la pubblicazione.
+   ::: moniker range=">=vs-2019"
+   Scegliere **modifica** per modificare il profilo, quindi scegliere **Impostazioni**. Scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Nella finestra di dialogo **Impostazioni** abilitare il debug facendo clic su **Avanti**, scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > Se si sceglie una configurazione di versione, si disabilita il debug nel file di *web.config* durante la pubblicazione.
 
 1. Fare clic su **Save (Salva** ) e quindi pubblicare nuovamente l'app.
 
@@ -150,13 +157,13 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 4. Selezionare il **sito Web predefinito**, scegliere **impostazioni di base** e impostare il **percorso fisico** su **C:\publish**.
 
-4. Fare clic con il pulsante destro del mouse sul nodo **Sito Web predefinito** e scegliere **Aggiungi applicazione**.
+5. Fare clic con il pulsante destro del mouse sul nodo **Sito Web predefinito** e scegliere **Aggiungi applicazione**.
 
-5. Impostare il campo **alias** su **MyASPApp**, accettare il pool di applicazioni predefinito (**DefaultAppPool**) e impostare il **percorso fisico** su **C:\publish**.
+6. Impostare il campo **alias** su **MyASPApp**, accettare il pool di applicazioni predefinito (**DefaultAppPool**) e impostare il **percorso fisico** su **C:\publish**.
 
-6. In **connessioni** selezionare **pool di applicazioni**. Aprire **DefaultAppPool** e impostare il campo pool di applicazioni su **nessun codice gestito**.
+7. In **connessioni** selezionare **pool di applicazioni**. Aprire **DefaultAppPool** e impostare il campo pool di applicazioni su **nessun codice gestito**.
 
-7. Fare clic con il pulsante destro del mouse sul nuovo sito in Gestione IIS, scegliere **modifica autorizzazioni** e assicurarsi che IUSR, IIS_IUSRS o l'utente configurato per l'accesso all'app Web sia un utente autorizzato con lettura & Esegui diritti.
+8. Fare clic con il pulsante destro del mouse sul nuovo sito in Gestione IIS, scegliere **modifica autorizzazioni** e assicurarsi che IUSR, IIS_IUSRS o l'utente configurato per l'accesso all'app Web sia un utente autorizzato con lettura & Esegui diritti.
 
     Se non viene visualizzato uno di questi utenti con accesso, seguire la procedura per aggiungere IUSR come utente con i diritti di esecuzione di lettura &.
 

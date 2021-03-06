@@ -3,15 +3,15 @@ title: Assegnare GUID specifici ai sottoscrittori di Visual Studio | Microsoft D
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 10/22/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono eseguire il GUID di sottoscrizione specifico per i sottoscrittori
-ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467479"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249677"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare sottoscrizioni specifiche nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -62,7 +62,10 @@ Il passaggio finale consiste nel scaricare il modello di **aggiunta in blocco** 
 ### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>D: Ricerca per categorie modificare la sottoscrizione attualmente assegnata a un singolo utente?
 R: se si desidera modificare il GUID assegnato a un utente, è innanzitutto necessario eliminare la sottoscrizione per tale utente.  Per ulteriori informazioni, vedere l'articolo [eliminare sottoscrizioni](delete-license.md) .  Dopo aver eliminato la sottoscrizione per l'utente, usare il processo descritto sopra per esportare l'elenco e caricare le nuove informazioni sulla sottoscrizione.  
 
-## <a name="see-also"></a>Vedere anche
+## <a name="resources"></a>Risorse
+- [Supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

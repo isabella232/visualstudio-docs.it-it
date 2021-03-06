@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per assistenza in merito a domande o problemi.
-ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
-ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
+ms.openlocfilehash: 4eb17f5480b3839248d0968b6c20434c149bb756
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93289973"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250038"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
 Se la sottoscrizione di Visual Studio viene fornita dall'ufficio o dall'Istituto di istruzione, è probabile che sia stata assegnata all'utente da un amministratore delle sottoscrizioni, o "admin".  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
@@ -33,9 +33,9 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
 > **Amministratori con privilegi avanzati:**  Per impostare l'indirizzo di posta elettronica a cui vengono inviate le richieste "Contatta l'amministratore", specificare l'indirizzo nelle [Preferenze dell'accordo](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Risorse
-- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
+- [Supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

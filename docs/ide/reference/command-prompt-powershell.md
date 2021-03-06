@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 2500a540a4135517c65736d7a0f3d039c90cc71e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168878"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249739"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>PowerShell per sviluppatori e Prompt dei comandi per gli sviluppatori
 
@@ -55,11 +55,11 @@ Per aprire Prompt dei comandi per gli sviluppatori o Developer PowerShell da Vis
 
    ![Voce di menu del prompt dei comandi in Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-### <a name="use-the-windows-start-menu"></a>Usare il menu Start di Windows
+## <a name="use-the-windows-start-menu"></a>Usare il menu Start di Windows
 
 È possibile che siano presenti più prompt dei comandi, a seconda della versione di Visual Studio e di eventuali SDK e carichi di lavoro aggiuntivi installati. Se i passaggi seguenti non funzionano, è possibile provare a [individuare manualmente i file nel computer](#manually-locate-the-file) o [avviare la Shell dall'interno di Visual Studio](#start-the-shell-from-inside-visual-studio).
 
-#### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 1. Selezionare **Avvia** ![ il tasto logo Windows sulla tastiera.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) e scorrere fino alla lettera **V**.
 
@@ -71,7 +71,7 @@ Per aprire Prompt dei comandi per gli sviluppatori o Developer PowerShell da Vis
 
    ![Gif animata che mostra il comportamento di ricerca in Windows 10](./media/developer-command-prompt-for-vs/windows-10-search.gif)
 
-#### <a name="windows-81"></a>Windows 8.1
+### <a name="windows-81"></a>Windows 8.1
 
 1. Andare alla schermata **Start** ad esempio premendo il tasto WINDOWS![tasto WINDOWS sulla tastiera.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) sulla tastiera.
 
@@ -79,7 +79,7 @@ Per aprire Prompt dei comandi per gli sviluppatori o Developer PowerShell da Vis
 
 1. Scegliere **prompt dei comandi per gli sviluppatori per vs 2019** o **Developer PowerShell per vs 2019**.
 
-#### <a name="windows-7"></a>Windows 7
+### <a name="windows-7"></a>Windows 7
 
 1. Scegliere **Start** , quindi espandere **tutti i programmi**.
 
@@ -89,11 +89,11 @@ Per aprire Prompt dei comandi per gli sviluppatori o Developer PowerShell da Vis
 
 Se sono installati altri SDK, ad esempio [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) o [versioni precedenti](https://developer.microsoft.com/windows/downloads/sdk-archive), è possibile visualizzare prompt dei comandi aggiuntivi. Consultare la documentazione dei diversi strumenti per determinare quale versione del prompt dei comandi usare.
 
-### <a name="manually-locate-the-file"></a>Individuare manualmente il file
+## <a name="manually-locate-the-file"></a>Individuare manualmente il file
 
 In genere, i tasti di scelta rapida per le shell installate vengono inseriti nella cartella del **menu Start** per Visual Studio, ad esempio in *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ strumenti di Visual Studio*. Tuttavia, se la ricerca del prompt dei comandi non produce i risultati previsti, è possibile provare a individuare manualmente i file nel computer.
 
-#### <a name="developer-command-prompt"></a>Prompt dei comandi per gli sviluppatori
+### <a name="developer-command-prompt"></a>Prompt dei comandi per gli sviluppatori
 
 Cercare il nome del file del prompt dei comandi, che è *VsDevCmd.bat* o passare alla cartella strumenti di Visual Studio, ad esempio *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\Tools* (percorso modificato in base alla versione, all'edizione e al percorso di installazione di Visual Studio).
 
@@ -112,7 +112,7 @@ In alternativa, immettere il comando seguente nella finestra di dialogo Windows 
 > [!TIP]
 > È necessario modificare il percorso in modo che corrisponda all'installazione di Visual Studio.
 
-#### <a name="developer-powershell"></a>PowerShell per sviluppatori
+### <a name="developer-powershell"></a>PowerShell per sviluppatori
 
 Cercare un file di script di PowerShell denominato *Launch-VsDevShell.ps1* o passare alla cartella strumenti di Visual Studio, ad esempio *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\Tools*. Il percorso cambia in base alla versione, all'edizione e al percorso di installazione di Visual Studio. Dopo aver individuato il file di PowerShell, eseguirlo immettendo il comando seguente in un prompt di Windows PowerShell o PowerShell 6:
 

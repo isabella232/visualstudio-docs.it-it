@@ -1,18 +1,18 @@
 ---
-title: Configurazione degli amministratori per le sottoscrizioni mensili | Microsoft Docs
+title: Configurazione degli amministratori per le sottoscrizioni mensili di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 03/03/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Configurazione degli amministratori per le sottoscrizioni mensili
-ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c018dbc3437c03c6d029a98c84e0b6cceaef9e2c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904239"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249534"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Configurare gli amministratori per le sottoscrizioni mensili di Visual Studio
 
@@ -32,24 +32,24 @@ Il proprietario della sottoscrizione di Azure usato per acquistare le sottoscriz
 
 Per aggiungere amministratori:
 
-1. Connettersi al portale di Azure all'indirizzo [Portal.Azure.com](https://portal.azure.com).
+1. Connettersi al portale di Azure in [Portal.Azure.com](https://portal.azure.com).
 2. Accedere con l'account usato per acquistare le sottoscrizioni mensili di Visual Studio.
-3. In **servizi di Azure** scegliere **Gestione costi e fatturazione** .
+3. In **servizi di Azure** scegliere **Gestione costi e fatturazione**.
    > [!div class="mx-imgBorder"]
    > ![Scegli gestione costi e fatturazione in servizi di Azure](_img/cloud-admin/azure-cost-billing.png "Scegliere Gestione costi dal gruppo di servizi di Azure")
 4. Nell'elenco **sottoscrizioni personali** scegliere la sottoscrizione di Azure usata per effettuare l'acquisto.
    > [!div class="mx-imgBorder"]
    > ![Scegliere la sottoscrizione](_img/cloud-admin/subscription-list.png "Scegliere la sottoscrizione di Azure che si vuole usare per effettuare l'acquisto.")
-5. Fare clic su **controllo di accesso (IAM)** , che si trova nella parte superiore dell'elenco nel riquadro di spostamento a sinistra.
+5. Fare clic su **controllo di accesso (IAM)**, che si trova nella parte superiore dell'elenco nel riquadro di spostamento a sinistra.
 6. Fare clic sulla scheda **Aggiungi** nella parte superiore della pagina.
-7. Fare clic su **Aggiungi assegnazione ruolo** .
+7. Fare clic su **Aggiungi assegnazione ruolo**.
    > [!div class="mx-imgBorder"]
    > ![Scegliere controllo di accesso, Aggiungi, Aggiungi assegnazione di ruolo](_img/cloud-admin/access-control-add.png "Scegliere controllo di accesso dall'elenco a sinistra, quindi scegliere Aggiungi.")
-8. Nel riquadro a destra fare clic sull'elenco a discesa **Ruolo** nella parte superiore del riquadro, scorrere verso il basso e selezionare **Amministratore Accesso utenti** .
+8. Nel riquadro a destra fare clic sull'elenco a discesa **Ruolo** nella parte superiore del riquadro, scorrere verso il basso e selezionare **Amministratore Accesso utenti**.
 9. Nell'elenco di utenti scorrere verso il basso fino all'utente che si vuole impostare come amministratore e selezionarlo. 
    > [!div class="mx-imgBorder"]
    > ![Scegliere un ruolo, amministratore accesso utenti](_img/cloud-admin/add-role-user-access-admin.png "Scegliere ruolo, selezionare amministratore accesso utenti, quindi selezionare il nome dell'utente per impostarlo come amministratore.")
-10. Fare clic su **Salva** .
+10. Fare clic su **Salva**.
 11. Fare clic sulla scheda **Assegnazioni ruolo** per verificare che l'utente selezionato sia ora visualizzato come Amministratore Accesso utenti.
 
 Il nuovo amministratore può ora accedere al portale di [Amministrazione](https://manage.visualstudio.com), selezionare la stessa sottoscrizione di Azure usata per acquistare le sottoscrizioni mensili dall'elenco nell'angolo superiore sinistro della pagina e iniziare a gestire tali sottoscrizioni.
@@ -59,7 +59,11 @@ Il nuovo amministratore può ora accedere al portale di [Amministrazione](https:
 
 Per informazioni sulle sottoscrizioni mensili di Visual Studio, vedere la [Panoramica](vscloud-overview.md) su come acquistare sottoscrizioni. Per acquistare sottoscrizioni mensili di Visual Studio, visitare la Visual Studio Marketplace all'indirizzo [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="resources"></a>Risorse
+- [Supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
+
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

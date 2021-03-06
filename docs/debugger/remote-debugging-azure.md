@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 619f1f1cc99cbab425bc1bcb2bac181e09db8fc4
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684152"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250055"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core di debug remoto in IIS in Azure in Visual Studio
 
@@ -79,13 +79,23 @@ Da Visual Studio è possibile pubblicare rapidamente ed eseguire il debug dell'a
 
 1. In Visual Studio fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **pubblica**.
 
-    Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Fare clic su **nuovo profilo**.
+    Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Selezionare **nuovo** o **nuovo profilo**.
 
-1. Scegliere **servizio app Azure** dalla finestra di dialogo **pubblica** , selezionare **Crea nuovo** e seguire le istruzioni per creare un profilo.
+1. Creare un nuovo profilo di pubblicazione.
 
-    Per istruzioni dettagliate, vedere [Distribuire un'app Web ASP.NET Core in Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    ::: moniker range=">=vs-2019"
+    Scegliere **Azure** dalla finestra di dialogo **pubblica** e fare clic su **Avanti**. Quindi scegliere **servizio app Azure (Windows)**, fare clic su **Avanti** e seguire le istruzioni per creare un profilo.
+
+    :::image type="content" source="../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png" alt-text="Distribuire un'app Web ASP.NET Core in Azure con Visual Studio":::
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+
+    Scegliere **servizio app Azure** dalla finestra di dialogo **pubblica** , selezionare **Crea nuovo** e seguire le istruzioni per creare un profilo.
 
     ![Eseguire la pubblicazione nel servizio app di Azure](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ::: moniker-end
+
+    Per istruzioni più dettagliate, vedere [distribuire un'app web ASP.NET Core in Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 1. Nella finestra Pubblica scegliere **modifica configurazione** e passare a una configurazione di debug, quindi scegliere **pubblica**.
 
@@ -106,6 +116,7 @@ Da Visual Studio è possibile pubblicare rapidamente ed eseguire il debug dell'a
 È possibile creare una macchina virtuale di Azure per Windows Server, quindi installare e configurare IIS e gli altri componenti software necessari. Questa operazione richiede più tempo rispetto alla distribuzione in un servizio app Azure e richiede di seguire i passaggi rimanenti di questa esercitazione.
 
 Queste procedure sono state testate in queste configurazioni del server:
+
 * Windows Server 2012 R2 e IIS 8
 * Windows Server 2016 e IIS 10
 * Windows Server 2019 e IIS 10
@@ -143,7 +154,7 @@ Quando si Scarica il software, è possibile ottenere richieste per concedere l'a
     > [!NOTE]
     > Se nel sistema non è presente una connessione a Internet, ottenere e installare *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* prima di installare l'aggregazione di Hosting di .NET Core Windows Server.
 
-3. Riavviare il sistema o eseguire **net stop was /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema.
+2. Riavviare il sistema o eseguire **net stop was /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema.
 
 ## <a name="choose-a-deployment-option"></a>Scegliere un'opzione di distribuzione
 

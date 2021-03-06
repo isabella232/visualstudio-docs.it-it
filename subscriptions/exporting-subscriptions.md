@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: Informazioni su come esportare un elenco di sottoscrittori e i dettagli delle assegnazioni delle sottoscrizioni.
-ms.openlocfilehash: 33482dbe517fd34efb9a165bc5c868e20be0d1d7
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: afd30470b5d9171f803c14b0d604eca626b70342
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904141"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250037"
 ---
 # <a name="export-subscription-information"></a>Esportare le informazioni sulla sottoscrizione
 Nel [portale di amministrazione](https://manage.visualstudio.com)delle sottoscrizioni di Visual Studio è possibile esportare un elenco di sottoscrittori e informazioni dettagliate sulle relative assegnazioni. Queste informazioni includono nome, indirizzo di posta elettronica, indirizzo di posta elettronica alternativo, livello della sottoscrizione, data di assegnazione, stato di attivazione, data di scadenza, campo di riferimento, abilitazione o meno dei download, paese, lingua, stato della sottoscrizione e GUID della sottoscrizione.  L'elenco viene esportato come file CSV che può essere facilmente aperto in Microsoft Excel per la creazione di grafici, pivot e altri artefatti.
@@ -32,7 +32,10 @@ Per eseguire l'esportazione:
 > [!div class="mx-imgBorder"]
 > ![Esporta sottoscrittori](_img/exporting-subscriptions/exporting-subscriptions.png "Fare clic su Esporta per scaricare un elenco completo delle sottoscrizioni assegnate.")
 
-## <a name="see-also"></a>Vedere anche
+## <a name="resources"></a>Risorse
+- [Supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
@@ -43,4 +46,3 @@ Per eseguire l'esportazione:
     - [Sottoscrizioni scadute](handle-expired-license.md)
     - [Sovrassegnazioni](handle-overclaimed-license.md)
     - [Utilizzo massimo](maximum-usage.md)
-- Per assistenza su qualsiasi aspetto della gestione delle sottoscrizioni,  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).

@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 854d3e23252e63d6330abd9f1704890d3b90ae36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 104927d42f7ec68e43686278042c0712bb3c875e
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908312"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250078"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il debug remoto di ASP.NET in un computer IIS remoto
+
 Per eseguire il debug di un'applicazione ASP.NET distribuita in IIS, installare ed eseguire Remote Tools nel computer in cui è stata distribuita l'app e quindi connettersi all'app in esecuzione da Visual Studio.
 
 ![Componenti del debugger remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
@@ -39,6 +40,7 @@ Visual Studio 2017 è necessario per seguire i passaggi illustrati in questo art
 ::: moniker-end
 
 Queste procedure sono state testate in queste configurazioni del server:
+
 * Windows Server 2012 R2 e IIS 8 (per Windows Server 2008 R2, i passaggi del server sono diversi)
 
 ## <a name="network-requirements"></a>Requisiti di rete
@@ -130,10 +132,17 @@ Se è necessario assistenza per la distribuzione dell'app in IIS, prendere in co
 
 Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l'app non viene avviata da Visual Studio, avviare l'app in IIS.
 
-1. Nella finestra di dialogo **Impostazioni** abilitare il debug facendo clic su **Avanti**, scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
+1. Passa a una configurazione di debug.
 
-    > [!IMPORTANT]
-    > Se si sceglie una configurazione di versione, si disabilita il debug nel file di *web.config* durante la pubblicazione.
+   ::: moniker range=">=vs-2019"
+   Scegliere **modifica** per modificare il profilo, quindi scegliere **Impostazioni**. Scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Nella finestra di dialogo **Impostazioni** abilitare il debug facendo clic su **Avanti**, scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > Se si sceglie una configurazione di versione, si disabilita il debug nel file di *web.config* durante la pubblicazione.
 
 1. Fare clic su **Save (Salva** ) e quindi pubblicare nuovamente l'app.
 

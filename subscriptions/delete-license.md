@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono eliminare le assegnazioni delle sottoscrizioni nel portale di amministrazione delle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 22a1c55bcaef436d1a29eb84b93a57f407114a1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4eedc767e6397b371256c7957662147964782f75
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904478"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250024"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminare assegnazioni nelle sottoscrizioni di Visual Studio
 Quando un sottoscrittore non ha più necessità di usare una sottoscrizione di Visual Studio, ad esempio quando lascia l'azienda, completa un progetto o passa a un nuovo incarico, è possibile rimuovere la sua sottoscrizione e assegnarla a un altro utente. Si noti che quando si riassegna una sottoscrizione, non tutti i vantaggi del Sottoscrittore verranno reimpostati.  Il nuovo utente sarà in grado di richiedere le chiavi non richieste e di visualizzare le chiavi richieste in precedenza, ma i limiti di attestazione **non** vengono reimpostati.  Per le organizzazioni che hanno in essere contratti Enterprise, gli eventuali vantaggi usati dall'utente originale, ad esempio corsi Pluralsight, verranno reimpostati. 
@@ -23,8 +23,8 @@ Guardare questo video o leggere per informazioni su come eliminare le assegnazio
 
 ## <a name="delete-a-subscription-assignment"></a>Eliminare un'assegnazione di sottoscrizione
 1. Fare clic sul nome del sottoscrittore che si desidera rimuovere. Per selezionare più sottoscrittori per la rimozione, è possibile fare clic sul cerchio a sinistra del nome del Sottoscrittore per selezionarne uno.  In alternativa, è possibile tenere premuto il tasto **CTRL** e fare clic su ogni Sottoscrittore che si desidera rimuovere. Per rimuovere un intervallo di sottoscrittori, fare clic sul primo, premere il tasto **MAIUSC** e fare clic sull'ultimo.  Premere **CTRL + a** per selezionare e rimuovere tutti i sottoscrittori. In questo esempio vengono eliminati tre sottoscrittori: Amber, Kai e Madison. 
-2. Per eliminare i sottoscrittori selezionati, fare clic su **Elimina** .
-3. Quando viene visualizzato il messaggio che chiede di confermare l'eliminazione, fare clic su **OK** .
+2. Per eliminare i sottoscrittori selezionati, fare clic su **Elimina**.
+3. Quando viene visualizzato il messaggio che chiede di confermare l'eliminazione, fare clic su **OK**.
    > [!div class="mx-imgBorder"]
    > ![Eliminare i sottoscrittori](_img/delete-license/delete-subscribers.png "Scegliere gli utenti che si desidera eliminare e fare clic su Elimina. È possibile utilizzare i tasti CTRL e MAIUSC per selezionare più Sottoscrittori.")
 
@@ -33,7 +33,10 @@ Guardare questo video o leggere per informazioni su come eliminare le assegnazio
    >
    > Se sono state aggiunte assegnazioni di sottoscrizione tramite Azure Active Directory gruppi di sicurezza, potrebbero essere necessarie fino a 24 ore prima che l'eliminazione venga aggiornata nel portale di amministrazione.  Per ulteriori informazioni sull'utilizzo di gruppi di Azure Active Directory per gestire le sottoscrizioni, vedere [l'articolo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) . 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="resources"></a>Risorse
+- [Supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23ef2036af7b93ee6eeaaa14cb8733a4e0ced638
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927431"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249527"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Distribuire un'app in una cartella con Visual Studio
 
@@ -46,25 +46,34 @@ ms.locfileid: "99927431"
 
 1. Nella finestra **Publish (pubblica** ) selezionare **Folder (cartella**).
 
-    ![Scegliere la cartella come destinazione di pubblicazione](../deployment/media/quickstart-publish-folder-new.png "Scegli cartella")
+   ![Scegliere la cartella come destinazione di pubblicazione](../deployment/media/quickstart-publish-folder-new.png "Scegli cartella")
 
-::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2019"
 
-4. Se si distribuisce un'applicazione Windows .NET Core 3,1 o successiva, potrebbe essere necessario selezionare la **cartella** nella finestra di **destinazione specifica** .
+   Se si distribuisce un'applicazione Windows .NET Core 3,1 o successiva, potrebbe essere necessario selezionare la **cartella** nella finestra di **destinazione specifica** .
 
-![Scegliere una cartella come destinazione specifica](../deployment/media/quickstart-publish-folder-targets.png "Scegliere una destinazione specifica")
+   ![Scegliere una cartella come destinazione specifica](../deployment/media/quickstart-publish-folder-targets.png "Scegliere una destinazione specifica")
 
-5. Se si vuole pubblicare un'applicazione Windows .NET Core 3,1 o successiva con ClickOnce, vedere [distribuire un'applicazione Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+   Se si vuole pubblicare un'applicazione Windows .NET Core 3,1 o successiva con ClickOnce, vedere [distribuire un'applicazione Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+   ::: moniker-end
 
- ::: moniker-end
+1. Immettere un percorso o selezionare **Sfoglia** per specificare una cartella.
 
-4. Immettere un percorso o selezionare **Sfoglia** per specificare una cartella.
+   ![Specificare il percorso della cartella](../deployment/media/quickstart-publish-folder-path.png "Scegli cartella")
 
-    ![Specificare il percorso della cartella](../deployment/media/quickstart-publish-folder-path.png "Scegli cartella")
+   ::: moniker range=">=vs-2019"
+   Fare clic su **fine** per salvare il profilo.
 
-1. Selezionare **Pubblica**. Visual Studio compila il progetto e lo pubblica nella cartella specificata. Viene visualizzato il riquadro **Pubblica** delle proprietà del progetto con un riepilogo del profilo.
+   ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
-    ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-folder-summary.png)
+1. Selezionare **Pubblica**. Visual Studio compila il progetto e lo pubblica nella cartella specificata.
+
+   ::: moniker range="vs-2017"
+   Viene visualizzato il riquadro **Pubblica** delle proprietà del progetto con un riepilogo del profilo.
+
+   ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
 1. Per configurare le impostazioni di distribuzione, selezionare **modifica** nel riepilogo del profilo di pubblicazione e selezionare la scheda **Impostazioni** .
 
