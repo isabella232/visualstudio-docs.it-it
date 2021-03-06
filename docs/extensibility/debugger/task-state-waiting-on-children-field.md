@@ -1,4 +1,5 @@
 ---
+description: L'attività ha terminato l'esecuzione del delegato ed è in attesa implicita del completamento delle attività figlio connesse.
 title: Campo TASK_STATE_WAITING_ON_CHILDREN | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 052b1dd454ca091b0d83becbd02909c7cd92d00e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1533ef28b32450d9b039c27e49ba655dddfd6ebe
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837463"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223205"
 ---
 # <a name="task_state_waiting_on_children-field"></a>Campo TASK_STATE_WAITING_ON_CHILDREN
 L'attività ha terminato l'esecuzione del delegato ed è in attesa implicita del completamento delle attività figlio connesse.

@@ -1,4 +1,5 @@
 ---
+description: L'elemento formRegion dello spazio dei nomi vstov4 identifica un Microsoft Office area del modulo di Outlook associata a un componente aggiuntivo VSTO.
 title: '&lt;&gt;elemento formRegion (sviluppo per Office in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 469b041ac879753e5fe4be0f9bd739be1030a942
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0851ba9e117b464d3a2fbb9ad9903af17ceda0c4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970390"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221080"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento formRegion (sviluppo per Office in Visual Studio)
   L' `formRegion` elemento dello `vstov4` spazio dei nomi identifica un Microsoft Office area del modulo di Outlook associata a un componente aggiuntivo VSTO.

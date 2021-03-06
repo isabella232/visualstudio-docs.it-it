@@ -1,4 +1,5 @@
 ---
+description: Questa interfaccia enumera i processi in esecuzione su una porta di debug.
 title: IEnumDebugProcesses2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59cdc9a257f853f70afe2566d7b06e39f8edc02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75778ea0f02c0e7dcca1f7d2eb0ea8ace82c9b9c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846660"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224382"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Questa interfaccia enumera i processi in esecuzione su una porta di debug.

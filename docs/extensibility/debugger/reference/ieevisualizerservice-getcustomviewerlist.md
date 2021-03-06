@@ -1,4 +1,5 @@
 ---
+description: Questo metodo restituisce un elenco di visualizzatori di tipi di cui questo servizio è a conoscenza.
 title: 'IEEVisualizerService:: GetCustomViewerList | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba63a1f27e043ca114a3b954adfe403b60283ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bd9c633c6b65bbd597619f9fd30487a734d9004
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907813"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222900"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Questo metodo restituisce un elenco di visualizzatori di tipi di cui questo servizio è a conoscenza.

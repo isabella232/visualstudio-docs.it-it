@@ -1,4 +1,5 @@
 ---
+description: Questa funzione apre un progetto di controllo del codice sorgente esistente o ne crea uno nuovo.
 title: Funzione SccOpenProject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff0aa402f3c3ba264524d6d4082c4a9fbf57c8ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836943"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221548"
 ---
 # <a name="sccopenproject-function"></a>Funzione SccOpenProject
 Questa funzione apre un progetto di controllo del codice sorgente esistente o ne crea uno nuovo.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45f201e2c647a1b1074585d59c7618e1ddeb9084
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f214ac47ad3d831432b91652c5bbe3249ce5f1c5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859996"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223485"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Procedura: eseguire manualmente l'analisi del codice legacy per il codice gestito
 
@@ -28,7 +28,7 @@ Lo strumento di analisi del codice fornisce informazioni sul possibile difetto n
 1. Se si utilizza Visual Studio 2019 versione 16,5 o successiva, eseguire il comando seguente al prompt dei comandi prima di avviare Visual Studio:
 
 ```
-set EnableLegacyCodeAnalysis = true
+setx EnableLegacyCodeAnalysis true
 ```
 
 2. In **Esplora soluzioni** fare clic sul progetto.
