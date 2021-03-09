@@ -1,5 +1,6 @@
 ---
 title: Non &apos; è possibile eseguire il debug perché nel sistema è abilitato un debugger del kernel | Microsoft Docs
+description: Questo messaggio viene visualizzato quando si tenta di eseguire il debug di codice gestito in un sistema Windows 7 o Windows Vista avviato in modalità di debug e l'applicazione utilizza CLR versione 2,0, 3,0 o 3,5.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a06ed9092145188bf5fbecd2caeb42f5ad5c2e3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced7fb79a11321678ae2963241807e5ddd4600ab
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871767"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466459"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Errore: il debug di isn&#39;t è possibile perché nel sistema è abilitato un debugger del kernel
 Quando si esegue il debug del codice gestito, è possibile che venga visualizzato il seguente messaggio di errore:
@@ -32,7 +33,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
  Questo messaggio viene visualizzato quando si tenta di eseguire il debug di codice gestito:
 
-- in un sistema [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] avviato in modalità debug.
+- in un [!INCLUDE[win7](../debugger/includes/win7_md.md)] [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] sistema o avviato in modalità di debug.
 
 - l'applicazione utilizzare CLR versione CLR 2.0, 3.0 o 3.5.
 
