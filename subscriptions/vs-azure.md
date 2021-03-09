@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 02/10/2021
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 0834020113ac4a383abe551ace0ae2e3181e0650
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335227"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473374"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
@@ -113,7 +113,7 @@ R: la proprietà intellettuale prodotta da un dipendente creato per le risorse f
 - Serve aiuto con Azure?  vedere le risorse seguenti:
   - Supporto tecnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Suggerimenti & per Azure](https://microsoft.github.io/AzureTipsAndTricks/ "Suggerimenti & per Azure") 
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 10/21/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Informazioni su come configurare l'account con pagamento in base al consumo di Azure.
-ms.openlocfilehash: cb9d89cc704c8d072e0807189f88ba757d9aad78
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 3668302778532f1413f240308faa503c9c58837a
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904571"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473270"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Sottoscrizioni con pagamento in base al consumo di Azure DevTest
 È possibile collaborare con il team nel cloud  creando più sottoscrizioni per sviluppo e test con pagamento in base al consumo, consentendo la collaborazione con altri sottoscrittori e garantendo allo stesso tempo l'isolamento tra i team e l'ambiente.  Sono disponibili tariffe orarie scontate esclusive per sviluppo/test e diritti speciali di uso del cloud per il software della sottoscrizione di Azure.
@@ -26,11 +26,11 @@ ms.locfileid: "92904571"
 
 3. Nella pagina Iscrizione di Microsoft Azure è possibile configurare l'offerta Sviluppo/test con pagamento in base al consumo oppure eseguire l'aggiornamento all'offerta Visual Studio Enterprise.  Fare clic su **Continua con l'offerta corrente (Sviluppo/test con pagamento in base al consumo)** se non si vuole eseguire l'aggiornamento.
 
-4. Per consentire la verifica dell'identità dell'utente, immettere un numero di telefono e scegliere "Invia messaggi di testo" o "Chiama".  Immettere il codice ricevuto.  Fare clic su **Verifica codice** .
+4. Per consentire la verifica dell'identità dell'utente, immettere un numero di telefono e scegliere "Invia messaggi di testo" o "Chiama".  Immettere il codice ricevuto.  Fare clic su **Verifica codice**.
 
-5. Specificare quindi le informazioni di fatturazione per l'account e fare clic su **Avanti** .  Si tratta della carta di credito su cui verranno effettuati gli addebiti per tutti gli acquisti relativi ad Azure.
+5. Specificare quindi le informazioni di fatturazione per l'account e fare clic su **Avanti**.  Si tratta della carta di credito su cui verranno effettuati gli addebiti per tutti gli acquisti relativi ad Azure.
 
-6. Nella sezione Contratto fare clic sulla casella di controllo per accettare il contratto di sottoscrizione, i dettagli dell'offerta e l'informativa sulla privacy, quindi fare clic su **Acquisto** .
+6. Nella sezione Contratto fare clic sulla casella di controllo per accettare il contratto di sottoscrizione, i dettagli dell'offerta e l'informativa sulla privacy, quindi fare clic su **Acquisto**.
 
 7. Nella pagina **Benvenuto in Microsoft Azure** è possibile acquistare un piano di supporto o iniziare subito a usare la sottoscrizione.
 
@@ -40,11 +40,14 @@ ms.locfileid: "92904571"
 ### <a name="q--what-if-i-want-to-make-changes-to-this-subscription"></a>D: cosa accade se si desidera apportare modifiche a questa sottoscrizione?
 R: per apportare modifiche alle sottoscrizioni di Azure:
 1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Nell'elenco nel riquadro sinistro selezionare **Gestione dei costi e fatturazione** .
-3. Si vedrà un elenco delle proprie sottoscrizioni nella casella **Sottoscrizioni personali** . Fare clic sulla sottoscrizione desiderata.
+2. Nell'elenco nel riquadro sinistro selezionare **Gestione dei costi e fatturazione**.
+3. Si vedrà un elenco delle proprie sottoscrizioni nella casella **Sottoscrizioni personali**. Fare clic sulla sottoscrizione desiderata.
 4. Verranno visualizzate le opzioni per gestire o annullare la sottoscrizione, rinominarla, cambiare la directory o trasferire la proprietà della fatturazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="resources"></a>Risorse
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

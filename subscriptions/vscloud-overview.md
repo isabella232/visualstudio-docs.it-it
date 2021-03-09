@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 6aa17046726e19086f511c7ab59ab19228142e20
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92918084"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473387"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
-È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud** .
+È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
 
 [Confrontare vantaggi e prezzi delle sottoscrizioni cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -42,7 +42,7 @@ Per fatturare gli acquisti, è necessaria una [sottoscrizione di Azure](https://
     > [!div class="mx-imgBorder"]
     > ![Selezionare il numero di sottoscrizioni](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Scegliere il numero di sottoscrizioni da acquistare")
 
-    Se non si vuole che le sottoscrizioni vengano assegnate a se stessi, deselezionare **Assegna questa sottoscrizione a me** .
+    Se non si vuole che le sottoscrizioni vengano assegnate a se stessi, deselezionare **Assegna questa sottoscrizione a me**.
 
 5. Verificare e completare l'acquisto. Se si ha una sottoscrizione assegnata, è possibile visitare il [portale per i sottoscrittori Visual Studio](https://my.visualstudio.com) per avviare il download del software e iniziare a usare altri vantaggi per i sottoscrittori.
 
@@ -72,7 +72,7 @@ Per annullare le sottoscrizioni, è sufficiente impostare il numero di sottoscri
 > [!div class="mx-imgBorder"]
 > ![Visualizza panoramica delle sottoscrizioni](_img/buy-vs-subscriptions/overview-button.png "Selezionare il pulsante Panoramica per visualizzare i dettagli della sottoscrizione")
 
-4. Individuare la voce relativa alle sottoscrizioni che si desidera annullare e selezionare **modifica quantità** .
+4. Individuare la voce relativa alle sottoscrizioni che si desidera annullare e selezionare **modifica quantità**.
 1. Impostare la quantità su zero (0). Le sottoscrizioni rimarranno in vigore fino alla data di fatturazione pianificata, ma non vengono rinnovate al raggiungimento della data di fatturazione.   
 
 > [!div class="mx-imgBorder"]
@@ -125,11 +125,11 @@ R: anche se non saranno in grado di acquistare un'altra sottoscrizione annuale c
 
 ## <a name="related-resources"></a>Risorse correlate
 - [Portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/)
-- [Supporto per la sottoscrizione di Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio](vscloud-billing-faq.md)
 - [Acquisto di sottoscrizioni cloud di Visual Studio per i CSP](vscloud-csp.md)
+- - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

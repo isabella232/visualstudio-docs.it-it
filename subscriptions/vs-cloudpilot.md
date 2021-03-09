@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 12/02/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Informazioni sul vantaggio CloudPilot disponibile nelle sottoscrizioni di Visual Studio selezionate
-ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 4d9b7bea4b2165b8efc9f57396b078c42a5fc8eb
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538150"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473361"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Vantaggio CloudPilot nelle sottoscrizioni di Visual Studio
 È possibile spostare le app in Microsoft Azure in pochi semplici passaggi. In pochi minuti, tutte le modifiche al codice richieste possono essere identificate con precisione fino alla singola riga di codice per la corretta migrazione verso Contenitori, Macchine virtuali, Servizi app, SQL Azure e/o Istanza gestita di database SQL. Viene quindi eseguita la migrazione delle app in Azure tramite procedure guidate basate su ASR, DMA e Servizio Migrazione del database.
@@ -48,7 +48,7 @@ CloudPilot di UnifyCloud è progettato per aiutare gli sviluppatori a spostare r
     > [!div class="mx-imgBorder"]
     > ![Pagina del prodotto di CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0. Ecco fatto!  Verrà visualizzato il portale di CloudPilot e sarà possibile iniziare a usare la sottoscrizione di CloudPilot per spostare le applicazioni in Microsoft Azure.
+0. Questo è tutto.  Verrà visualizzato il portale di CloudPilot e sarà possibile iniziare a usare la sottoscrizione di CloudPilot per spostare le applicazioni in Microsoft Azure.
 
 0. Non appena l'account viene creato correttamente, si riceverà un messaggio di posta elettronica dal supporto VSS di UnifyCloud a conferma della corretta creazione dell'account.
 
@@ -81,10 +81,10 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
   - [Manuale dell'utente di CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
   - [Inviare una richiesta di supporto.](https://support.datacamp.com/hc/requests/new)
 
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

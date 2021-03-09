@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.topic: overview
-ms.openlocfilehash: e40d9640ca2e62148e4ad166845d8f59854367ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41b26eb75454299aed86a3cdb3905d6c66efb098
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950669"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473348"
 ---
 # <a name="xamarin-mobile-app-development"></a>Sviluppo di app per dispositivi mobili Xamarin
 
@@ -66,4 +66,4 @@ Xamarin Inspector offre una console C# interattiva con strumenti disponibili agl
 
 È costituito da un'applicazione autonoma che rappresenta una console C# che può avere come destinazioni varie piattaforme di programmazione (Android, iOS, Mac e Windows) e può integrarsi nel flusso di lavoro di debug dell'IDE.
 
-Per altre informazioni, vedere la guida di [Xamarin Inspector](/xamarin/tools/inspector/).
+Per altre informazioni, vedere la guida di [Xamarin Inspector](/xamarin/tools/inspector/release-notes/1.5).

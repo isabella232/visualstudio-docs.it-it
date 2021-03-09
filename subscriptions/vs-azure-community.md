@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 12/02/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Informazioni sul vantaggio Supporto della community di Azure in specifiche sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 58f587d5e9c27197b28457c512e4eb94f07851ef
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538020"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473335"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum Supporto della community di Azure nelle sottoscrizioni di Visual Studio
 Ottenere assistenza direttamente dal team di Azure in una selezione di forum di supporto tramite la community di Azure.  Il vantaggio Community di Azure consente di accedere a una raccolta di forum dedicati ad argomenti correlati ad Azure.
@@ -88,10 +88,10 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 ## <a name="support-resources"></a>Risorse di supporto
 - Per altre risorse della community di Azure, visitare la [pagina del supporto](https://azure.microsoft.com/support/forums/) della community di Azure.
 - [Documentazione di Azure](/azure/).
-- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  contattare il [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  contattare il [supporto per le sottoscrizioni](https://aka.ms/vssubscriberhelp) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/05/2021
 ms.topic: conceptual
 description: Domande sulla fatturazione per sottoscrizioni cloud.
-ms.openlocfilehash: 2c03871d11279b7c368ebd0c7012670fc92c9ee0
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: d3c370eecab49de5f4ea5001e6052c18ff83e00b
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249721"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473413"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio
 Assicurarsi di [confrontare i vantaggi e i prezzi delle sottoscrizioni cloud](https://visualstudio.microsoft.com/vs/pricing/) per comprendere i vantaggi di ogni sottoscrizione di Visual Studio, esaminando le differenze tra le sottoscrizioni cloud e standard di Visual Studio, i dettagli dei vantaggi per i sottoscrittori e altri aspetti.
@@ -99,8 +99,8 @@ R: vedere l'articolo [comprendere la fattura di Azure](https://docs.microsoft.co
 
 ## <a name="related-resources"></a>Risorse correlate
 - [Portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/)
-- [Supporto per la sottoscrizione di Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Acquisto di sottoscrizioni cloud di Visual Studio per i CSP](vscloud-csp.md)
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

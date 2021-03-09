@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 02/02/2021
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Come aggiungere un'identità alternativa per la sottoscrizione di Visual Studio per usare Azure DevOps e Azure
-ms.openlocfilehash: 200f299ba4e487e40572e54f1066ed6ac079e7d1
-ms.sourcegitcommit: b0ecf9bb0d887bc0a900578089bf41ab8dddbb78
+ms.openlocfilehash: 4d00e6808a71522f95d8580056556f5a502ecbde
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99488665"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473309"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identità per i sottoscrittori di Visual Studio
 Quando si attiva la sottoscrizione di Visual Studio, l'identità (o l'account di accesso) usata durante l'attivazione viene collegata alla sottoscrizione di Visual Studio. In questo modo, l'utente verrà riconosciuto nel [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), in Azure DevOps e in Azure.
@@ -57,6 +57,9 @@ R: Azure DevOps dovrebbe riconoscere automaticamente la sottoscrizione quando si
 * Visitare il [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) almeno una volta prima di accedere ad Azure DevOps.
 
 Se Azure DevOps non riconosce ancora la sottoscrizione, contattare il [supporto tecnico di Azure DevOps](https://azure.microsoft.com/support/devops/).
+
+## <a name="resources"></a>Risorse
+[Supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
