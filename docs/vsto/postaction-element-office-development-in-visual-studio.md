@@ -1,5 +1,6 @@
 ---
 title: '&lt;elemento postAction &gt; (sviluppo per Office in Visual Studio)'
+description: L'elemento postAction dello spazio dei nomi vstav3 contiene gli elementi entryPoint e tutti gli elementi postActionData associati alle azioni post-distribuzione, che vengono eseguite dopo l'installazione delle soluzioni Office.
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0490e9423cb747782029eb0fd7254407adb3a607
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04f8c92c52aeee9f7f1dd5ab67b3dcef3a295474
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955762"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470053"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;elemento postAction &gt; (sviluppo per Office in Visual Studio)
   L'elemento `postAction` dello spazio dei nomi `vstav3` contiene gli elementi `entrypoint` e tutti gli elementi `postActionData` associati alle azioni post-distribuzione, che vengono eseguite dopo l'installazione delle soluzioni Office.
