@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
-ms.date: 10/30/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Scopri cosa accade quando la sottoscrizione di Visual Studio scade
-ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
-ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
+ms.openlocfilehash: 26659cf70ace2ffb6eaa8f02146ed965c03df48a
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245009"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607133"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>Cosa accade quando la sottoscrizione scade
 Le sottoscrizioni di Visual Studio hanno durate specifiche e, a meno che non vengano rinnovate, avranno una scadenza.  Quando una sottoscrizione scade, i vantaggi offerti dalla sottoscrizione sono interessati da diversi modi.  Questo articolo illustra come la scadenza influisca su vari aspetti di una sottoscrizione di Visual Studio. 
@@ -29,7 +29,7 @@ La pagina codici Product Key, <https://my.visualstudio.com/productkeys> , non è
 Non tutti i vantaggi sono interessati nello stesso modo in cui la sottoscrizione scade.  Non è possibile attivare alcun vantaggio dopo la scadenza della sottoscrizione.  I vantaggi attivati in precedenza potrebbero essere ancora disponibili.  
 
 ### <a name="visual-studio-ide"></a>IDE di Visual Studio
-La maggior parte delle sottoscrizioni fornisce licenze perpetue per l'IDE di Visual Studio. Scaricare il [white paper sulle licenze](https://aka.ms/vslicensing) di Visual Studio per determinare se la sottoscrizione è idonea per i diritti d'uso perpetui.  Se la sottoscrizione è idonea per i diritti di utilizzo perpetuo, si continuerà ad avere accesso alla versione corrente dell'IDE, ma non verranno ricevuti gli aggiornamenti alle versioni future. Per continuare a usare l'IDE dopo la scadenza, sarà necessario passare alla pagina relativa al [codice Product Key](https://my.visualstudio.com/productkeys) e scaricare il codice Product Key **prima della scadenza della sottoscrizione** .
+La maggior parte delle sottoscrizioni fornisce licenze perpetue per l'IDE di Visual Studio. Scaricare il [white paper sulle licenze](https://aka.ms/vslicensing) di Visual Studio per determinare se la sottoscrizione è idonea per i diritti d'uso perpetui.  Se la sottoscrizione è idonea per i diritti di utilizzo perpetuo, si continuerà ad avere accesso alla versione corrente dell'IDE, ma non verranno ricevuti gli aggiornamenti alle versioni future. Per continuare a usare l'IDE dopo la scadenza, sarà necessario passare alla pagina relativa al [codice Product Key](https://my.visualstudio.com/productkeys) e scaricare il codice Product Key **prima della scadenza della sottoscrizione**.
 
 ### <a name="azure-devops"></a>Azure DevOps
 Azure DevOps acquisito tramite una sottoscrizione di Visual Studio non sarà disponibile.  
@@ -40,7 +40,10 @@ Le assegnazioni di crediti mensili di Azure continueranno per un periodo di temp
 ### <a name="other-benefits"></a>Altri vantaggi 
 Molti dei vantaggi inclusi nelle sottoscrizioni di Visual Studio hanno durate specifiche.  I vantaggi offerti dai partner Microsoft, ad esempio Pluralsight, datacamp o WhiteSource, hanno limiti di tempo dopo l'attivazione.  I vantaggi attivati in precedenza continueranno a essere disponibili per il resto delle condizioni.  Ad esempio, se è stata attivata una sottoscrizione di LinkedIn Learning di sei mesi e rimangono ancora quattro mesi dopo la scadenza della sottoscrizione di Visual Studio, saranno ancora disponibili quattro mesi di accesso alla sottoscrizione di LinkedIn Learning.  
 
-## <a name="see-also"></a>Vedere anche
+## <a name="resources"></a>Risorse
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

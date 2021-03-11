@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/28/2020
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: Informazioni su come gli amministratori sui contratti multilicenza possono accedere al portale di amministrazione delle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904220"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607288"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Accesso al portale di amministrazione come amministratore in un contratto multilicenza
 
@@ -23,12 +23,12 @@ Se si è il contatto principale o per le comunicazioni indicato nel contratto de
 
 Una volta eseguito l'accesso, si verrà automaticamente configurati come amministratore con privilegi avanzati e sarà possibile iniziare a gestire le sottoscrizioni e gli altri amministratori. Per informazioni sulle differenze tra amministratori con privilegi avanzati e amministratori, vedere l'articolo sui [ruoli di amministratore](admin-roles.md).
 
-Questo vale per tutti i tipi di contratto multilicenza, inclusi, a titolo esemplificativo: contratti Enterprise, sottoscrizioni Enterprise, Select, Select Plus, Open, Open License, Govt. e Academic agreements. 
+Questo vale per tutti i tipi di contratto multilicenza, inclusi, a titolo esemplificativo: contratti Enterprise, sottoscrizioni Enterprise, selezionare, selezionare Plus, Open, Open License, Government. e contratti accademici. 
 
 ## <a name="resources"></a>Risorse
-- [Supporto per l'amministratore e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

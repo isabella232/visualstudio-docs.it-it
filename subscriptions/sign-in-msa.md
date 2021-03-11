@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
-ms.date: 09/08/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Informazioni su come accedere alla sottoscrizione di Visual Studio con l'account Microsoft (MSA)
-ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7e0ef2e9adedc62be7c2c7ca709496d1f075f03c
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005937"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607158"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Accesso alle sottoscrizioni di Visual Studio con l'account Microsoft (MSA)
 
@@ -40,9 +40,10 @@ R: molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al p
 - L'accesso è stato eseguito con un account Microsoft diverso.  È possibile che si abbiano più sottoscrizioni, ad esempio una sottoscrizione Professional o Enterprise e si sia membri di Visual Studio Dev Essentials, e che le sottoscrizioni siano associate a indirizzi di posta elettronica diversi. Per visualizzare le altre sottoscrizioni, disconnettersi ed eseguire di nuovo l'accesso usando un altro account Microsoft (MSA).
 - Si hanno più sottoscrizioni associate allo stesso account Microsoft (MSA).  Per visualizzare tutte le sottoscrizioni associate al proprio account Microsoft (MSA), visitare https://my.visualstudio.com/subscriptions e scegliere la sottoscrizione che si vuole usare. 
 
-Se i problemi persistono, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
+## <a name="resources"></a>Risorse 
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

@@ -1,18 +1,18 @@
 ---
 title: Problemi di accesso alle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Informazioni sui problemi che potrebbero verificarsi durante l'accesso alle sottoscrizioni di Visual Studio
-ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 5735e0c4178e6866539fff2edac6155642a1ba73
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903452"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607197"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemi di accesso alle sottoscrizioni di Visual Studio
 Per usare la sottoscrizione di Visual Studio, è necessario eseguire prima l'accesso.  A seconda della sottoscrizione, è possibile che la configurazione sia stata eseguita con un account Microsoft (MSA) o un'identità di Azure Active Directory (AAD).  Questo articolo descrive alcuni dei problemi che potrebbero verificarsi durante l'accesso alla sottoscrizione.
@@ -21,7 +21,7 @@ Per usare la sottoscrizione di Visual Studio, è necessario eseguire prima l'acc
 Quando il dominio di posta elettronica è configurato in Azure AD, non è più possibile creare un nuovo account personale Microsoft (MSA) usando un indirizzo di posta elettronica aziendale o dell'istituto di istruzione. Che cosa significa? Se l'organizzazione usa Microsoft 365 o altri servizi aziendali di Microsoft che si basano su Azure AD e se è stato aggiunto un nome di dominio al tenant di Azure AD, gli utenti non saranno più in grado di creare un nuovo account Microsoft personale usando un indirizzo di posta elettronica nel dominio.
 
 ### <a name="why-was-this-change-made"></a>Perché è stata effettuata questa modifica?
-Un account personale Microsoft con indirizzo aziendale come nome utente presenta problemi per gli utenti finali e i reparti IT. Esempio:
+Un account personale Microsoft con indirizzo aziendale come nome utente presenta problemi per gli utenti finali e i reparti IT. Ad esempio:
 - È possibile che gli utenti considerino il loro account personale Microsoft conforme all'azienda e pensino di rispettare i criteri di conformità quando salvano un documento aziendale in OneDrive
 - Gli utenti che lasciano un'azienda solitamente perdono l'accesso all'indirizzo di posta elettronica aziendale. In questo caso, potrebbero non essere in grado di accedere all'account personale Microsoft se dimenticano la password. Tuttavia, il reparto IT potrebbe reimpostare la password e accedere all'account personale degli ex-dipendenti.
 - I reparti IT credono erroneamente di essere proprietari dell'account e della relativa sicurezza. Ma gli utenti possono avere la necessità di eseguire il roundtrip di un codice nel loro indirizzo di posta elettronica aziendale una sola volta e possono rinominare l'account in qualsiasi momento successivo.
@@ -61,9 +61,12 @@ indica utenti che usano identità diverse per accedere a Windows (o al servizio 
 L'aliasing può esistere quando un'azienda usa un servizio Microsoft Online per l'accesso alla directory, ad esempio JohnD@contoso.com, ma gli utenti accedono agli account di posta elettronica tramite alias o nomi descrittivi, ad esempio John.Doe@contoso.com. Per molti clienti che gestiscono le sottoscrizioni tramite Volume Licensing Service Center (VLSC), questo può causare errori durante l'esperienza di accesso perché l'indirizzo di posta elettronica fornito (John.Doe@contoso.com) non corrisponde all'indirizzo della directory (JohnD@contoso.com) richiesto per completare l'autenticazione tramite l'opzione "Account aziendale o dell'istituto di istruzione".
 
 ### <a name="what-options-do-i-have"></a>Quali sono le opzioni a disposizione?
-Dal punto di vista del Sottoscrittore, è importante collaborare innanzitutto con l'amministratore per comprendere la configurazione dell'identità dell'azienda. Se necessario, l'amministratore potrebbe dover aggiornare le impostazioni dell'account dal portale di amministrazione o potrebbe essere necessario creare un account Microsoft (MSA) usando l'indirizzo di posta elettronica aziendale. Prima di eseguire i passaggi per la creazione di un account del servizio gestito, rivolgersi all'amministratore in merito a eventuali criteri o problemi relativi all'esecuzione di questa azione. 
+Dal punto di vista del Sottoscrittore, è importante collaborare innanzitutto con l'amministratore per comprendere la configurazione dell'identità dell'azienda. Se necessario, l'amministratore potrebbe dover aggiornare le impostazioni dell'account dal portale di amministrazione o potrebbe essere necessario creare un account Microsoft (MSA) usando l'indirizzo di posta elettronica aziendale. Prima di eseguire i passaggi per la creazione di un account del servizio gestito, rivolgersi all'amministratore in merito a eventuali criteri o problemi relativi all'esecuzione di questa azione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="resources"></a>Risorse
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio. 
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

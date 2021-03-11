@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione.
-ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: effec7889199d4eddc3c149bdd4ded296a50e0b1
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903383"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607262"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione 
 
@@ -28,7 +28,7 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
    > [!NOTE]
    > Questo indirizzo viene anche indicato nel messaggio di posta elettronica di benvenuto al sottoscrittore ricevuto. In caso di problemi a individuare il messaggio di benvenuto, controllare le cartelle della posta indesiderata.
 
-3. Fare clic su **Continua** .
+3. Fare clic su **Continue**.
 4. Si verrà reindirizzati alla pagina di accesso aziendale.
 5. Immettere la password.
 6. Fare clic su **Accedi**
@@ -46,7 +46,7 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
    > [!NOTE]
    > Questo indirizzo è anche indicato nella Lettera di benvenuto al sottoscrittore. Se la Lettera di benvenuto non è stata ricevuta, controllare nelle cartelle di posta indesiderata.
 
-3. Fare clic su **Continua** .
+3. Fare clic su **Continue**.
 4. Si verrà reindirizzati a una pagina di decisione.
     - Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è associata a un account aziendale o dell'istituto di istruzione associato a un tenant di Azure Active Directory (AAD).
     - Selezionare **personale** se la sottoscrizione è associata a un indirizzo di posta elettronica "aziendale", ma è stata anche convertita in un account Microsoft "personale" (MSA).
@@ -57,7 +57,7 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
     - Se un percorso non riesce, provare l'altro.  È possibile che gli amministratori della sottoscrizione abbiano modificato la sottoscrizione.
 
 5. Immettere la password.
-6. Fare clic su **Accedi** .
+6. Fare clic su **Accedi**.
 7. A questo punto, dovrebbe essere visualizzata la pagina "Vantaggi".
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
@@ -69,9 +69,10 @@ R: molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al p
 1. L'accesso è stato eseguito con un account Microsoft diverso.  È possibile che si abbiano più sottoscrizioni, ad esempio una sottoscrizione Professional o Enterprise e si sia membri di Visual Studio Dev Essentials, e che le sottoscrizioni siano associate a indirizzi di posta elettronica diversi. Per visualizzare le altre sottoscrizioni, disconnettersi ed eseguire di nuovo l'accesso usando un altro account Microsoft (MSA).
 2. Si hanno più sottoscrizioni associate allo stesso indirizzo di posta elettronica.  Per visualizzare tutte le sottoscrizioni associate al proprio indirizzo di posta elettronica, visitare https://my.visualstudio.com/subscriptions e scegliere la sottoscrizione che si vuole usare. 
 
-Se i problemi persistono, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
+## <a name="resources"></a>Risorse 
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

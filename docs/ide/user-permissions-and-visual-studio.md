@@ -1,7 +1,7 @@
 ---
 title: Esegui come amministratore
 description: Informazioni su come eseguire Visual Studio come amministratore.
-ms.date: 01/06/2020
+ms.date: 03/09/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971297"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607249"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 
@@ -72,7 +72,17 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 
 ::: moniker-end
 
-È anche possibile modificare il collegamento dell'applicazione per eseguirla sempre con autorizzazioni amministrative.
+È anche possibile modificare il collegamento dell'applicazione in modo che venga sempre eseguito con le autorizzazioni amministrative:
+
+1. Aprire il menu **Start** , scorrere fino alla versione di Visual Studio in uso e quindi **fare clic su**  >  **Apri percorso file**.
+
+1. In **Esplora file** individuare il collegamento di **Visual Studio** per la versione in uso. Quindi, fare clic con il pulsante destro del mouse sul collegamento e selezionare **Invia al**  >  **Desktop (Crea collegamento)**.
+
+1. Sul desktop di **Windows** fare clic con il pulsante destro del mouse sul collegamento di **Visual Studio** , quindi scegliere **proprietà**.
+
+1. Selezionare il pulsante **Avanzate** , quindi selezionare la casella di controllo **Esegui come amministratore** .
+
+1. Selezionare **OK** e quindi di nuovo **OK**.
 
 ## <a name="see-also"></a>Vedi anche
 

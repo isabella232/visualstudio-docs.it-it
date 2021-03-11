@@ -2,7 +2,7 @@
 title: Tasti di scelta rapida predefiniti
 description: Informazioni sui tasti di scelta rapida predefiniti in Visual Studio che consentono di accedere a un'ampia gamma di comandi e finestre.
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2017
+ms.date: 03/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4901cecf36208f3ed2141e5baef15ecbe43a6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73bb5e48c37cb24d434e57356a90f2bc3907a696
+ms.sourcegitcommit: 6f18481e4f84d86a837ec5d0e8f12fff1a1a8b65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894738"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102782824"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -34,7 +34,7 @@ Per un elenco di tasti di scelta rapida comuni e altre informazioni sulla produt
 
 Per altre informazioni sull'accessibilità in Visual Studio, vedere [suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md) e [procedura: usare esclusivamente la tastiera](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-- [Analyze (Analizza) ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
+- [Analizzare](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Modifica](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [Progetto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
 - [Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
@@ -240,6 +240,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
+|EditorContextMenus. CodeWindow. Breakpoint. BreakpointConditions|**ALT + F9, C**|
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**ALT + F9, L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL +'**|
 |EditorContextMenus.CodeWindow.Execute|**CTRL+Alt+F5**|

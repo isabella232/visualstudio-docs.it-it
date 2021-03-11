@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.openlocfilehash: d4f65f4c430d585485c388f22664726c848e6d1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904586"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607144"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del portale per i sottoscrittori - my.visualstudio.com
 
@@ -47,13 +47,13 @@ La pagina Abbonamenti consente di visualizzare le sottoscrizioni di cui si è pr
 
 ## <a name="support"></a>Supporto
 
-Oltre ai singoli vantaggi disponibili nella categoria Supporto nella pagina Vantaggi, dalla pagina Supporto è possibile accedere alle risorse che consentono di sfruttare al meglio la sottoscrizione di Visual Studio. Accedere alle [risorse di supporto](https://visualstudio.microsoft.com/subscriptions/support/) per risolvere problemi tecnici o domande relative alla vendita, agli account e alla fatturazione delle sottoscrizioni.
+Oltre ai singoli vantaggi disponibili nella categoria Supporto nella pagina Vantaggi, dalla pagina Supporto è possibile accedere alle risorse che consentono di sfruttare al meglio la sottoscrizione di Visual Studio. Accedere alle [risorse di supporto](https://aka.ms/vssubscriberhelp) per risolvere problemi tecnici o domande relative alla vendita, agli account e alla fatturazione delle sottoscrizioni.
 
 ## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 Se è necessario rinnovare una sottoscrizione cloud di Visual Studio  o si vogliono scaricare le estensioni più recenti per la famiglia di prodotti Visual Studio,  Nel Marketplace è possibile trovare estensioni, strumenti e servizi per migliorare ulteriormente Azure DevOps, Azure DevOps Server e Visual Studio Code. È anche possibile diventare un editore e pubblicare estensioni personalizzate in Marketplace.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

@@ -12,12 +12,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0c3f40900c30ca3632b3e82c4b197f28f9d108bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7efc8e5955f4d11004d8408cadf312e6cbcb43eb
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969243"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607405"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Esaminare prima di tutto gli strumenti di test in Visual Studio
 
@@ -79,7 +79,7 @@ L'analisi di code coverage può essere applicata sia al codice gestito che a que
 Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando Esplora test. Nella tabella dei risultati viene illustrata la percentuale di codice che è stata eseguita per ogni assembly, classe e metodo. Inoltre, nell'editor standard viene visualizzato il codice testato.
 
 * [Usare la funzionalità code coverage per determinare la quantità di codice testato](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Lab su unit test, code coverage e analisi dei cloni di codice con Visual Studio](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Lab su unit test, code coverage e analisi dei cloni di codice con Visual Studio](https://azuredevopslabs.com/labs/devopsserver/liveunittesting)
 * [Personalizzare l'analisi code coverage](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -103,7 +103,7 @@ Sia che si scelgano i test codificati dell'interfaccia utente più evoluti, sia 
 * [Usare l'automazione dell'interfaccia utente per testare il codice](use-ui-automation-to-test-your-code.md)
 * [Creazione, modifica e gestione di un test codificato dell'interfaccia utente](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Testare app UWP con test codificati dell'interfaccia utente](test-uwp-app-with-coded-ui-test.md)
-* [Lab sull'esecuzione di test codificati dell'interfaccia utente con Visual Studio Enterprise](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Lab sull'esecuzione di test codificati dell'interfaccia utente con Visual Studio Enterprise](https://azuredevopslabs.com/labs/tfs/codedui)
 
 ## <a name="related-scenarios"></a>Scenari correlati
 
