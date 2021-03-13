@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b3626d09d790ca6f15ded3745801eae1ca426bab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44af5c5a00e1ca26eb545b0973090486f6d320ea
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970659"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295704"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -141,6 +141,7 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 | Debugger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon. \* . zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Usato per il download dei bit del debugger per il debug di .NET Core in UNIX/macOS tramite SSH <br><br>2. <br>Usato per il download dei bit del debugger per il debug del contenitore Docker di Windows remoto<br><br> 3. utilizzata per l'esecuzione di un'istruzione di origine .NET Framework <br><br> 4. <br>(Se l'utente sceglie di partecipare) Usato per il download dei simboli pubblicati nel server di simboli nuget.org.<br><br> 5. Se si sceglie di usare per scaricare i simboli e i file binari MS, potrebbe essere necessario anche per il debug del codice gestito nei dump |
 | GitHub Codespaces| \*. online.visualstudio.com | https/443 | Usato per chiamare le API di GitHub codespaces |
 | Pubblicazione di app Android Novell | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Usato per interagire con il servizio Google Play Store per pubblicare/caricare applicazioni Android Novell direttamente da Visual Studio. |
+| servizio di ricerca di Visual Studio | data-ai.microsoft.com/search | https/443 | Usato per fornire servizio di ricerca Visual Studio abilitati per intelligenza artificiale nella `Ctrl+Q` casella di ricerca |
 | Registro Azure Container | *. azurecr.io | https/443 | Accedere ai registri contenitori ospitati in Azure per la configurazione di pipeline CICD |
 | | | | |
 

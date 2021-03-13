@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2314bb8fdb44d769a5067a39b01b40b0a74734f
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925765"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295757"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -60,7 +60,7 @@ La tabella seguente contiene alcuni caratteri, operatori, costrutti ed esempi di
 |Trovare la corrispondenza con qualsiasi [carattere spazio vuoto](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` corrisponde alla frase "Public Interface"|
 |Trovare la corrispondenza con qualsiasi [carattere cifra decimale](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` trova la corrispondenza di "4" e "0" in "WD40"|
 
-Un'espressione regolare di esempio che combina alcuni operatori e costrutti per trovare la corrispondenza con un numero esadecimale è `\b0[xX]([0-9a-fA-F]+\)\b` . Questa espressione corrisponde a "0xc67f" ma non a "0xc67g".
+Un'espressione regolare di esempio che combina alcuni operatori e costrutti per trovare la corrispondenza con un numero esadecimale è `\b0[xX]([0-9a-fA-F]+)\b` . Questa espressione corrisponde a "0xc67f" ma non a "0xc67g".
 
 > [!TIP]
 > Nei sistemi operativi Windows la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio delle espressioni regolari di .NET.

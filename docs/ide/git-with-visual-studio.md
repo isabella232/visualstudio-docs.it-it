@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 354be4d3e31ead2d77e62f61600c20c1774353cd
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597416"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295778"
 ---
 # <a name="git-experience-in-visual-studio"></a>Esperienza git in Visual Studio
 
@@ -117,7 +117,7 @@ Da entrambe le posizioni, è possibile passare da un ramo esistente all'altra.
 
 ### <a name="create-a-new-branch"></a>Creare un nuovo ramo
 
-È anche possibile creare un nuovo ramo. Il comando equivalente per questa azione è `git checkout <branchname>` .
+È anche possibile creare un nuovo ramo. Il comando equivalente per questa azione è `git checkout -b <branchname>` .
 
 La creazione di un nuovo ramo è semplice come immettere il nome del ramo e basarlo su un ramo esistente.
 
@@ -200,7 +200,7 @@ Anche se la nuova esperienza git è ora attiva per impostazione predefinita in V
 > [!IMPORTANT]
 > Se si ha un suggerimento per Microsoft, è possibile inviarlo. Ci rendiamo conto dell'opportunità di partecipare alle decisioni di progettazione tramite il portale della [**community degli sviluppatori**](https://aka.ms/vs-suggest) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Annuncio del rilascio dell'esperienza git nel post di Blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [Il lancio della nuova esperienza git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) su YouTube
