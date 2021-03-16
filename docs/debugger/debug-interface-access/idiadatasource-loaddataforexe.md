@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb7c774314a35f99de41af720b180475e0c55b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 649efd5202d8b153b5fe5b4dbf9ba5052883f352
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158274"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483184"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Apre e prepara i dati di debug associati al file con estensione exe/dll.
@@ -60,6 +60,8 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 
 ## <a name="remarks"></a>Commenti
 L'intestazione di debug del file con estensione exe/dll assegna un nome al percorso dei dati di debug associato.
+
+Se si caricano dati di debug da un server di simboli, *symsrv.dll* deve essere presente nella stessa directory in cui è installata l'applicazione o il *msdia140.dll* dell'utente oppure deve essere presente nella directory di sistema.
 
 Questo metodo legge l'intestazione di debug e quindi Cerca e prepara i dati di debug. Lo stato di avanzamento della ricerca può, facoltativamente, essere segnalato e controllato tramite callback. Ad esempio, [IDiaLoadCallback:: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) viene richiamato quando il `IDiaDataSource::loadDataForExe` metodo individua ed elabora una directory di debug.
 

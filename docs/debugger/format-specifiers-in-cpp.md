@@ -26,14 +26,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97c0730b2c1fd8d534fed232846dcca76c58ce2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870636"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483193"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Identificatori di formato per C++ nel debugger di Visual Studio
+
 È possibile modificare il formato in cui un valore viene visualizzato nelle finestre **espressioni di controllo**, **auto** e **variabili locali** utilizzando identificatori di formato.
 
 È anche possibile usare gli identificatori di formato nella finestra di **controllo immediato** , nella finestra di **comando** , in [punti](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e persino nelle finestre di origine. Se si sospende un'espressione in queste finestre, il risultato verrà visualizzato in un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). La visualizzazione Suggerimento dati riflette l'identificatore di formato.
@@ -42,6 +43,7 @@ ms.locfileid: "99870636"
 > Quando il debugger nativo di Visual Studio è stato modificato in un nuovo motore di debug, sono stati aggiunti alcuni nuovi identificatori di formato e alcuni precedenti sono stati rimossi. Il debugger precedente viene ancora usato per il debug di interoperabilità (nativo e gestito combinati) con C++/CLI.
 
 ## <a name="set-format-specifiers"></a>Imposta identificatori di formato
+
 Verrà usato il codice di esempio seguente:
 
 ```C++
@@ -64,6 +66,7 @@ Aggiungere la `my_var1` variabile alla finestra **espressioni di controllo** dur
 ::: moniker-end
 
 ## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Identificatori di formato
+
 Nelle tabelle seguenti vengono descritti gli identificatori di formato che è possibile utilizzare in Visual Studio. Gli identificatori in grassetto sono supportati solo per il nuovo debugger e non per il debug di interoperabilità con C++/CLI.
 
 ::: moniker range=">= vs-2019" 
@@ -138,6 +141,7 @@ Nelle tabelle seguenti vengono descritti gli identificatori di formato che è po
 > Quando è presente l'identificatore di formato **HV** , il debugger tenta di determinare la lunghezza del buffer e visualizza tale numero di elementi. Poiché il debugger non sempre riesce a individuare le dimensioni esatte del buffer di una matrice, è consigliabile usare un identificatore della dimensione `(pBuffer,[bufferSize])` , se possibile. L'identificatore di formato **HV** è utile quando la dimensione del buffer non è immediatamente disponibile.
 
 ### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Identificatori di dimensioni per puntatori quali matrici
+
 Se è presente un puntatore a un oggetto che si vuole visualizzare come matrice, è possibile usare un numero intero o un'espressione per specificare il numero di elementi di matrice.
 
 |Identificatore|Formato|Valore dell'espressione di controllo originale|Valore visualizzato|
@@ -147,7 +151,8 @@ Se è presente un puntatore a un oggetto che si vuole visualizzare come matrice,
 |**expand(n)**|Espressione C++ valida che restituisce un numero intero|pBuffer, expand(2)|Visualizza il terzo elemento di  `pBuffer`|
 
 ## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Identificatori di formato per il debug di interoperabilità con C++/CLI
-Gli identificatori in **grassetto** sono supportati solo per il debug di codice nativo e C++/CLI.
+
+Gli identificatori in **grassetto** sono supportati solo per il debug di codice nativo e C++/CLI. Questa operazione richiede il debugger legacy, specificato con la [modalità di compatibilità gestita](../debugger/general-debugging-options-dialog-box.md).
 
 |Identificatore|Formato|Valore dell'espressione di controllo originale|Valore visualizzato|
 |---------------|------------|--------------------------|---------------------|
@@ -170,7 +175,10 @@ Gli identificatori in **grassetto** sono supportati solo per il debug di codice 
 |!|formato non elaborato, ignorando le personalizzazioni delle visualizzazioni del tipo di dati|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Identificatori di formato per i percorsi di memoria nel debug di interoperabilità con C++/CLI
+
 Nella tabella seguente vengono descritti i simboli di formattazione utilizzati per le posizioni di memoria. Gli identificatori della posizione di memoria possono essere usati con qualsiasi valore o espressione che restituisce una posizione.
+
+Gli identificatori in **grassetto** sono supportati solo per il debug di codice nativo e C++/CLI. Questa operazione richiede il debugger legacy, specificato con la [modalità di compatibilità gestita](../debugger/general-debugging-options-dialog-box.md).
 
 |Simbolo|Formato|Valore dell'espressione di controllo originale|Valore visualizzato|
 |------------|------------|--------------------------|---------------------|
@@ -183,6 +191,7 @@ Nella tabella seguente vengono descritti i simboli di formattazione utilizzati p
 |**MU**|caratteri da 2 byte (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
 
 ### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Identificatore di dimensioni per puntatori quali matrici nel debug di interoperabilità con C++/CLI
+
 Se è presente un puntatore a un oggetto che si vuole visualizzare come matrice, è possibile usare un numero intero per specificare il numero di elementi di matrice.
 
 |Identificatore|Formato|Expression|Valore visualizzato|

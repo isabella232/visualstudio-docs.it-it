@@ -2,18 +2,18 @@
 title: Esperienza git in Visual Studio
 titleSuffix: ''
 description: Scopri in che modo la nuova esperienza git integrata in Visual Studio 2019 può aiutarti a migliorare la produttività.
-ms.date: 01/15/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 354be4d3e31ead2d77e62f61600c20c1774353cd
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: e97088f11c32eae6b5d0ef4b7a3490e120a1b6d2
+ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295778"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481410"
 ---
 # <a name="git-experience-in-visual-studio"></a>Esperienza git in Visual Studio
 
@@ -202,6 +202,7 @@ Anche se la nuova esperienza git è ora attiva per impostazione predefinita in V
 
 ## <a name="see-also"></a>Vedi anche
 
+- [Introduzione a git nel video di Visual Studio](https://www.youtube.com/watch?v=GCZ9x3yqkyc) su YouTube
 - [Annuncio del rilascio dell'esperienza git nel post di Blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [Il lancio della nuova esperienza git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) su YouTube
 - [La serie di strumenti di Visual Studio presenta: il nuovo video sull'esperienza git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) su Channel 9 e su [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
