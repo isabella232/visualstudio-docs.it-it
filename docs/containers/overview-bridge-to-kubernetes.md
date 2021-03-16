@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d44dc484da904d2692b90e23d10db6edc6f6e7b8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223160"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571545"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Come funziona Bridge per Kubernetes
 
@@ -142,10 +142,8 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 Il Bridge per Kubernetes presenta le limitazioni seguenti:
 
-* Un servizio deve essere supportato da un singolo POD per potersi connettere a tale servizio. Non è possibile connettersi a un servizio con più POD, ad esempio un servizio con repliche.
-* Un pod può avere un solo contenitore in esecuzione in tale Pod affinché il Bridge Kubernetes possa connettersi. Bridge per Kubernetes non è in grado di connettersi ai servizi con Pod con contenitori aggiuntivi, ad esempio contenitori sidecar inseriti da mesh dei servizi.
+* Un pod può avere un solo contenitore in esecuzione in tale Pod affinché il Bridge Kubernetes possa connettersi.
 * Attualmente, i pod Bridge per Kubernetes devono essere contenitori Linux. I contenitori Windows non sono supportati.
-* Non è possibile usare l'isolamento con HTTPS quando si usa Bridge per Kubernetes con Visual Studio. HTTPS è supportato solo in modalità di isolamento quando si usa Visual Studio Code.
 * Per poter modificare il file degli host, Bridge to Kubernetes richiede autorizzazioni elevate per l'esecuzione nel computer di sviluppo.
 * Non è possibile usare Bridge per Kubernetes in cluster con Azure Dev Spaces abilitata.
 

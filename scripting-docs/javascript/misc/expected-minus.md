@@ -1,4 +1,5 @@
 ---
+description: Si è provato a creare un valore letterale di espressione regolare, ma non è stata inclusa una delle barre (/).
 title: Previsto '-' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2bb965a4807a31df106102318cf6618680a97adb
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c7d7660c097f30afc31679d3128d224dc8b7f71e
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862611"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571740"
 ---
 # <a name="expected--"></a>Previsto '-'
 Si è provato a creare un valore letterale di espressione regolare, ma non è stata inclusa una delle barre (/). Così come i valori letterali stringa vengono scritti come caratteri all'interno di una coppia di virgolette, i valori letterali delle espressioni regolari vengono espressi come caratteri all'interno di una coppia di caratteri barra (/).  
@@ -28,6 +29,6 @@ Si è provato a creare un valore letterale di espressione regolare, ma non è st
   
 - Inserire una barra di terminazione per contrassegnare la fine dell'espressione regolare.  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedi anche  
  [Oggetto Regular Expression](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
  [Sintassi delle espressioni regolari (JavaScript)](/previous-versions/1400241x(v=vs.100))

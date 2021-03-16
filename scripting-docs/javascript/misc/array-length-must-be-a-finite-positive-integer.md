@@ -1,4 +1,5 @@
 ---
+description: Si sta chiamando il costruttore di matrice con un argomento che non è un numero intero (i numeri interi sono costituiti da zero e dal set di numeri interi positivi).
 title: La lunghezza della matrice deve essere un numero intero positivo finito | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d3d2985706ad6cfca9b6ac441baa039ccf04af
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862216"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572117"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>La lunghezza della matrice deve essere pari a un numero intero positivo finito
 Si sta chiamando il costruttore di **matrice** con un argomento che non è un numero intero (i numeri interi sono costituiti da zero e dal set di numeri interi positivi).  
@@ -41,5 +42,5 @@ Si sta chiamando il costruttore di **matrice** con un argomento che non è un nu
   
      Non esiste un limite massimo per la dimensione di una matrice, ad eccezione del valore intero massimo (approssimativamente 4 miliardi).  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedi anche  
  [Utilizzo di matrici](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

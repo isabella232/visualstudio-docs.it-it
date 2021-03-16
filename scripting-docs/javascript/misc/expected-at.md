@@ -1,4 +1,5 @@
 ---
+description: Si è provato a creare una variabile da usare con le istruzioni di compilazione condizionale usando l' @set istruzione, ma non è stato inserito un simbolo di chiocciola @ prima del nome della variabile.
 title: Previsto ' @' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98a35421054e4d2236fe509224ed146063b61a79
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: e7aa02ed1e436c92014d44e57f2c71ff7db5f99b
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862304"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570622"
 ---
 # <a name="expected-"></a>Previsto '\@'
 Si è provato a creare una variabile da usare con le istruzioni di compilazione condizionale usando l' `@set` istruzione, ma non è stato inserito un simbolo di chiocciola " **@** " prima del nome della variabile.  

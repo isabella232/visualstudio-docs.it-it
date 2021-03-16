@@ -1,4 +1,5 @@
 ---
+description: Uno script ha cercato di accedere ai dati da un'origine diversa dall'host della pagina corrente.
 title: Accesso negato | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -13,12 +14,12 @@ dev_langs:
 ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 874f7c0e5dcfaf4881c059a77f1c5e930d8c0578
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6be3bce0643a5892973235871191766cac140962
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814837"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571935"
 ---
 # <a name="access-is-denied"></a>Accesso negato
 Uno script ha cercato di accedere ai dati da un'origine diversa dall'host della pagina corrente. I criteri di corrispondenza dell'origine seguiti da Internet Explorer e da altri browser consentono agli script di accedere ai dati solo da origini con lo stesso schema, host e porta dell'URL della pagina corrente.  

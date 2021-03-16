@@ -1,4 +1,5 @@
 ---
+description: È stato effettuato un tentativo di richiamare JSON. stringify con un argomento non valido.
 title: Argomento sostitutivo non valido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -15,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6a77675a1cb618210d9c44104cf6397dda03c11
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 95a73d6fcbcf1350eece52e2cd58693646617a28
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862562"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570895"
 ---
 # <a name="invalid-replacer-argument"></a>Argomento Replacer non valido
 È stato effettuato un tentativo di richiamare `JSON.stringify` con un argomento non valido. L' `replacer` argomento deve essere una funzione o una matrice.  
@@ -44,7 +45,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedi anche  
  [JSON (oggetto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
  [Funzione JSON. Parse](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
  [Errori di runtime JavaScript](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)

@@ -1,4 +1,5 @@
 ---
+description: Si è provato a assegnare un valore a questo.
 title: Non è possibile assegnare a' This ' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8985c7201a8e315353dd89ab5e1f5a3ad3b403ea
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3c52118ee78b7ecb7efa94dd6d86cc4fb34c7d1f
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862779"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571831"
 ---
 # <a name="cannot-assign-to-this"></a>Assegnazione a 'this' non consentita
 Si è provato a assegnare un valore a **questo**. **si tratta** [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] di una parola chiave che fa riferimento a una delle seguenti operazioni:
@@ -37,9 +38,9 @@ All'interno di un metodo, è **possibile usarlo** per fare riferimento all'ogget
 - Non tentare di assegnare a **questo**. Per accedere a una proprietà o a un metodo di un oggetto di cui è stata creata un'istanza, usare l'operatore punto (ad esempio **Circle. RADIUS**).
 
   > [!NOTE]
-  > Non è possibile assegnare un nome a una **variabile creata**dall'utente. si tratta di una [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] parola riservata.
+  > Non è possibile assegnare un nome a una **variabile creata** dall'utente. si tratta di una [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] parola riservata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Questa istruzione](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/this)
 - [Risoluzione dei problemi relativi agli script](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)
