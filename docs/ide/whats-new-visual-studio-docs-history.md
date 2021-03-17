@@ -2,7 +2,7 @@
 title: 'Documenti di Visual Studio: cronologia delle novità '
 titleSuffix: ''
 description: Cronologia delle novità nella documentazione di Visual Studio
-ms.date: 02/01/2021
+ms.date: 03/08/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,98 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 178c84be9def77e013da336193877617c1434b2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960533"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622569"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Cronologia delle novità nella documentazione di Visual Studio
 
-Benvenuti alla cronologia delle novità di Visual Studio docs. Questo articolo contiene le principali modifiche apportate ai documenti prima del 2021 gennaio (a partire dal luglio 2020). Per le ultime novità, vedere la [documentazione di Visual Studio:](whats-new-visual-studio-docs.md)novità della documentazione.
+Benvenuti alla cronologia delle novità di Visual Studio docs. Questo articolo contiene le principali modifiche apportate ai documenti prima del 2021 febbraio (a partire dal luglio 2020). Per le ultime novità, vedere la [documentazione di Visual Studio:](whats-new-visual-studio-docs.md)novità della documentazione.
+
+## <a name="january-2021"></a>Gennaio 2021
+### <a name="azure"></a>Azure
+
+**Nuovi articoli**
+
+- [Creazione e distribuzione nei servizi cloud (supporto esteso) in Visual Studio (anteprima)](../azure/cloud-services-extended-support.md) -supporto esteso di servizi cloud-nessun modello
+
+### <a name="code-quality"></a>Qualità del codice
+
+**Nuovi articoli**
+
+- [Metriche del codice-associazione di classi](../code-quality/code-metrics-class-coupling.md) -aggiornamento della metrica del codice
+- [Metriche del codice-intervallo di indici di gestibilità e](../code-quality/code-metrics-maintainability-index-range-and-meaning.md) aggiornamento della metrica del codice
+
+### <a name="debugger"></a>Debugger
+
+**Nuovi articoli**
+
+- [Eseguire il debug di app .NET Core in WSL 2 con Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md) -debug WSL2 di .NET Core
+
+**Articoli aggiornati**
+
+- [Creare visualizzazioni personalizzate di oggetti C++ nel debugger usando natvis Framework](../debugger/create-custom-views-of-native-objects.md) -chiarimento per la formattazione XML di caratteri speciali in natvis
+- [Avviso di sicurezza: la connessione a un processo di proprietà di un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non sono sicure, non connettersi a questo processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md) : aggiornamenti all'avviso di sicurezza quando ci si connette a un processo non attendibile
+
+### <a name="deployment"></a>Distribuzione
+
+**Articoli aggiornati**
+
+- [ &lt; &gt; Elemento InstallChecks (programma di avvio automatico)](../deployment/installchecks-element-bootstrapper.md) -aggiornare la documentazione del pacchetto del programma di avvio automatico per includere il nuovo elemento BeforeInstallChecks
+
+### <a name="extensibility"></a>Estendibilità
+
+**Articoli aggiornati**
+
+- [Procedura dettagliata: pubblicare un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) -[PUBLIC_MOVE] commit da PR pubblico 6214
+
+### <a name="get-started"></a>Introduzione
+
+**Nuovi articoli**
+
+- [Esercitazione: aprire un progetto da un repository in Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -esercitazione aprire un progetto da un repository
+
+**Articoli aggiornati**
+
+- [Esercitazione: aprire un progetto da un repository](../get-started/tutorial-open-project-from-repo.md) -esercitazione aprire un progetto da un repository
+
+### <a name="ide"></a>IDE
+
+**Nuovi articoli**
+
+- [Guida sensibile al contesto di JavaScript per Visual Studio](./not-in-toc/default-f1-javascript.md) -aggiunta di pagine F1 predefinite js e TS
+- [Guida sensibile al contesto di typescript per Visual Studio](./not-in-toc/default-f1-typescript.md) -aggiunta di pagine F1 predefinite js e TS
+
+**Articoli aggiornati**
+
+- [Soluzioni e progetti in Visual Studio](./solutions-and-projects-in-visual-studio.md) : aggiungere un collegamento alla libreria di immagini di Visual Studio
+
+### <a name="install"></a>Installazione
+
+**Articoli aggiornati**
+
+- [Numeri di build e date di rilascio di Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md) -aggiornamenti Patch Tuesday
+
+### <a name="msbuild"></a>MSBuild
+
+**Articoli aggiornati**
+
+- [Glossario di MSBuild](../msbuild/msbuild-glossary.md) -innalzamento di livello delle chiavi del glossario a H2
+
+### <a name="profiling"></a>Profilatura
+
+**Nuovi articoli**
+
+- [Visualizzare i contatori DotNet dal profiler di Visual Studio](../profiling/dotnet-counters-tool.md) -aggiunta del documento dello strumento contatori .NET
+
+### <a name="test"></a>Test
+
+**Articoli aggiornati**
+
+- [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) -aggiungere un file di test audio cue doc
 
 ## <a name="december-2020"></a>Dicembre 2020
 ### <a name="azure"></a>Azure

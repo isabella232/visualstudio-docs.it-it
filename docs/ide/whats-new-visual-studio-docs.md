@@ -1,8 +1,8 @@
 ---
-title: 'Documenti di Visual Studio: novità di gennaio 2021'
+title: 'Documenti di Visual Studio: novità di febbraio 2021'
 titleSuffix: ''
-description: Novità della documentazione di Visual Studio per il 2021 gennaio.
-ms.date: 02/01/2021
+description: Novità della documentazione di Visual Studio per il 2021 febbraio.
+ms.date: 03/08/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,101 +15,69 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 17b307e248e18710a93669116ccf032e533145f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9debf7605d19c50ad9bdc9a10f8cdb572ac7d089
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960494"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622509"
 ---
-# <a name="visual-studio-docs-whats-new-for-january-2021"></a>Documenti di Visual Studio: novità di gennaio 2021
+# <a name="visual-studio-docs-whats-new-for-february-2021"></a>Documenti di Visual Studio: novità di febbraio 2021
 
-Introduzione alle novità di Visual Studio docs per il 2021 gennaio. Questo articolo elenca alcune delle principali modifiche apportate alla documentazione durante questo periodo. Per informazioni sulle novità dei mesi precedenti, vedere l'articolo relativo alla [cronologia delle novità](whats-new-visual-studio-docs-history.md) .
-
-## <a name="azure"></a>Azure
-
-**Nuovi articoli**
-
-- [Creazione e distribuzione nei servizi cloud (supporto esteso) in Visual Studio (anteprima)](../azure/cloud-services-extended-support.md) -supporto esteso di servizi cloud-nessun modello
-
-## <a name="code-quality"></a>Qualità del codice
-
-**Nuovi articoli**
-
-- [Metriche del codice-associazione di classi](../code-quality/code-metrics-class-coupling.md) -aggiornamento della metrica del codice
-- [Metriche del codice-intervallo di indici di gestibilità e](../code-quality/code-metrics-maintainability-index-range-and-meaning.md) aggiornamento della metrica del codice
+Introduzione alle novità di Visual Studio docs per il 2021 febbraio. Questo articolo elenca alcune delle principali modifiche apportate alla documentazione durante questo periodo. Per informazioni sulle novità dei mesi precedenti, vedere l'articolo relativo alla [cronologia delle novità](whats-new-visual-studio-docs-history.md) .
 
 ## <a name="debugger"></a>Debugger
 
-**Nuovi articoli**
-
-- [Eseguire il debug di app .NET Core in WSL 2 con Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md) -debug WSL2 di .NET Core
-
 **Articoli aggiornati**
 
-- [Creare visualizzazioni personalizzate di oggetti C++ nel debugger usando natvis Framework](../debugger/create-custom-views-of-native-objects.md) -chiarimento per la formattazione XML di caratteri speciali in natvis
-- [Avviso di sicurezza: la connessione a un processo di proprietà di un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non sono sicure, non connettersi a questo processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md) : aggiornamenti all'avviso di sicurezza quando ci si connette a un processo non attendibile
-
-## <a name="deployment"></a>Distribuzione
-
-**Articoli aggiornati**
-
-- [ &lt; &gt; Elemento InstallChecks (programma di avvio automatico)](../deployment/installchecks-element-bootstrapper.md) -aggiornare la documentazione del pacchetto del programma di avvio automatico per includere il nuovo elemento BeforeInstallChecks
-
-## <a name="extensibility"></a>Estendibilità
-
-**Articoli aggiornati**
-
-- [Procedura dettagliata: pubblicare un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) -[PUBLIC_MOVE] commit da PR pubblico 6214
+- [Usare i punti di interruzione nel debugger di Visual Studio](../debugger/using-breakpoints.md) -aggiornamenti per l'accessibilità
 
 ## <a name="get-started"></a>Introduzione
 
-**Nuovi articoli**
-
-- [Esercitazione: aprire un progetto da un repository in Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -esercitazione aprire un progetto da un repository
-
 **Articoli aggiornati**
 
-- [Esercitazione: aprire un progetto da un repository](../get-started/tutorial-open-project-from-repo.md) -esercitazione aprire un progetto da un repository
+- [Esercitazione: aprire un progetto da un repository in Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -Update vedere anche collegamenti in VS2017 Open Project da un repository
+- [Esercitazione: aprire un progetto da un repository](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) . aggiungere un collegamento alla versione VS2017 della pagina "aprire un progetto da un repository"
 
 ## <a name="ide"></a>IDE
 
-**Nuovi articoli**
-
-- [Guida sensibile al contesto di JavaScript per Visual Studio](./not-in-toc/default-f1-javascript.md) -aggiunta di pagine F1 predefinite js e TS
-- [Guida sensibile al contesto di typescript per Visual Studio](./not-in-toc/default-f1-typescript.md) -aggiunta di pagine F1 predefinite js e TS
-
 **Articoli aggiornati**
 
-- [Soluzioni e progetti in Visual Studio](./solutions-and-projects-in-visual-studio.md) : aggiungere un collegamento alla libreria di immagini di Visual Studio
+- [Risolvere i problemi e creare log per i problemi di MSBuild](./msbuild-logs.md) : aggiungere istruzioni sull'uso dell'estensione Project System Tools
 
 ## <a name="install"></a>Installazione
 
 **Articoli aggiornati**
 
-- [Numeri di build e date di rilascio di Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md) -aggiornamenti Patch Tuesday
+- [Aggiornare Visual Studio usando un layout offline minimo](../install/update-minimal-layout.md)
+  - Aggiungere l'esempio 2017 nella tabella Options
+  - Aggiungere esempi per VS2017
 
 ## <a name="msbuild"></a>MSBuild
 
-**Articoli aggiornati**
-
-- [Glossario di MSBuild](../msbuild/msbuild-glossary.md) -innalzamento di livello delle chiavi del glossario a H2
-
-## <a name="profiling"></a>Profilatura
-
 **Nuovi articoli**
 
-- [Visualizzare i contatori DotNet dal profiler di Visual Studio](../profiling/dotnet-counters-tool.md) -aggiunta del documento dello strumento contatori .NET
+- [MSB3644: gli assembly di riferimento per ' frameworkVersion ' non sono stati trovati](../msbuild/errors/msb3644.md) -errori di MSBuild
+- [MSB8036: non è stato trovato il Windows SDK ' version '](../msbuild/errors/msb8036.md) -errori di MSBuild
 
 ## <a name="test"></a>Test
 
 **Articoli aggiornati**
 
-- [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) -aggiungere un file di test audio cue doc
+- [Usare il Framework di testing unità Microsoft per C++ in Visual Studio](../test/how-to-use-microsoft-test-framework-for-cpp.md) -aggiornamento e modifica di contenuto di piccole dimensioni
+- [Scrivere unit test per le dll C++ in Visual Studio](../test/how-to-write-unit-tests-for-cpp-dlls.md) -aggiornamento e modifica di contenuto di piccole dimensioni
+- [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) -aggiornamenti per l'accessibilità
+- [Procedura dettagliata: creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) -aggiornamenti per l'accessibilità
+- [Isolare il codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) : specificare in modo esplicito .NET 5,0 nella documentazione Fakes
 
 ## <a name="community-contributors"></a>Collaboratori della community
 
 Le persone seguenti hanno contribuito alla documentazione di Visual Studio durante questo periodo. Grazie! Per informazioni su come contribuire alla documentazione di Visual Studio, seguire le istruzioni riportate nella Guida per i [collaboratori](/contribute/).
 
-- [ericmutta](https://github.com/ericmutta) -Eric Mutta (1)
-- [saip106](https://github.com/saip106) -sai Gudigundla (1)
+- [hyoshioka0128](https://github.com/hyoshioka0128) -Hiroshi Yoshioka (2)
+- [alvinseville7cf](https://github.com/alvinseville7cf) -Alvin Siviglia (1)
+- [CrabApl](https://github.com/CrabApl) -Kris (1)
+- [inyong37](https://github.com/inyong37) -inyong Hwang (1)
+- [patuzov](https://github.com/patuzov) -Pavel Tuzov (1)
+- [reduckted](https://github.com/reduckted) (1)
+- [trebizonder](https://github.com/trebizonder) (1)

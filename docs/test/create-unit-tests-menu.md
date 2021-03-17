@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c6254aac8bd45926759e0b6ad96cfe3f6c8ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb30135ac5c137fdc836273855e2d9f000f1c6b2
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964420"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622634"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>Creare stub di metodo unit test dal codice
 
@@ -52,7 +52,7 @@ Se si prevede di eseguire questi test come parte del processo di automazione del
 Per generare automaticamente gli unit test per NUnit o xUnit, installare una di queste estensioni del framework di test da Visual Studio Marketplace:
 
 * [NUnit extension for test generators (Estensione NUnit per generatori di test)](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
-* [xUnit.net extension for test generators (Estensione xUnit.net per generatori di test)](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+* [xUnit.net extension for test generators (Estensione xUnit.net per generatori di test)](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)
 
 ## <a name="when-should-i-use-this-feature"></a>Quando si deve usare questa funzionalità?
 

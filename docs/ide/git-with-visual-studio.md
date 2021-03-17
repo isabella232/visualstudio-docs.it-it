@@ -2,18 +2,18 @@
 title: Esperienza git in Visual Studio
 titleSuffix: ''
 description: Scopri in che modo la nuova esperienza git integrata in Visual Studio 2019 può aiutarti a migliorare la produttività.
-ms.date: 03/08/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e97088f11c32eae6b5d0ef4b7a3490e120a1b6d2
-ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
+ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103481410"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622647"
 ---
 # <a name="git-experience-in-visual-studio"></a>Esperienza git in Visual Studio
 
@@ -48,7 +48,7 @@ La finestra di dialogo **creare un repository git** consente di eseguire facilme
 > [!TIP]
 > Se il repository è pubblico o privato, è preferibile disporre di un backup remoto del codice archiviato in modo sicuro su GitHub anche se non si lavora con un team. Questo rende anche il codice disponibile indipendentemente dal computer in uso.
 
-È possibile scegliere di creare un repository git solo locale usando l'opzione **solo locale** . In alternativa, è possibile collegare il repository a qualsiasi repository remoto vuoto esistente in qualsiasi altro provider git usando l'opzione **remota esistente** .
+È possibile scegliere di creare un repository git solo locale usando l'opzione **solo locale** . In alternativa, è possibile collegare il progetto locale a un repository remoto vuoto esistente in Azure DevOps o qualsiasi altro provider git usando l'opzione **remota esistente** .
 
 ## <a name="clone-an-existing-git-repository"></a>Clonare un repository Git esistente
 
