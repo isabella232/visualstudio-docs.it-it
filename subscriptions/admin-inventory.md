@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 01/14/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori per condurre gli inventari di pre-produzione
-ms.openlocfilehash: da8146b9f7d2b758ac2d249534d43bd98beae385
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: f6b1e1ebc02a986be86fb48578a4be47ccc3dfaa
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511306"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757672"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario dell'ambiente di preproduzione
 Le sottoscrizioni di Visual Studio semplificano la gestione degli asset basandosi sul conteggio degli utenti piuttosto che dei dispositivi.
@@ -30,7 +30,7 @@ Ecco alcuni modi per semplificare la creazione dell'inventario dell'ambiente di 
 
 ## <a name="resources"></a>Risorse
 - [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
+- [Supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp)
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Vedi anche

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Si possono verificare errori di accesso se si usano alias o nomi descrittivi
-ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: d3a3cd962bafcf6a3e0c5aa20c98128233ace988
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467609"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757698"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>L'accesso alle sottoscrizioni di Visual Studio potrebbe non riuscire quando si usano gli alias
 A seconda del tipo di account usato per accedere, le sottoscrizioni disponibili potrebbero non essere visualizzate correttamente quando si accede a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Una delle possibili cause è l'uso di "alias" o "nomi descrittivi" al posto dell'identità di accesso a cui è assegnata la sottoscrizione. Questa situazione viene chiamata "aliasing".
@@ -91,12 +91,14 @@ Entrambe le opzioni sono configurate nel portale di amministrazione completando 
 > [!NOTE]
 > Per le modifiche sia singole che bulk, i sottoscrittori riceveranno un messaggio di posta elettronica con le istruzioni per la modifica dell'indirizzo di posta elettronica di accesso e dovranno eseguire l'accesso con l'indirizzo di posta elettronica aggiornato. È anche importante notare che se il Sottoscrittore ha attivato in precedenza i vantaggi con l'altro indirizzo di accesso, sarà necessario continuare a usare l'altro indirizzo di accesso per accedervi.  
 
-## <a name="see-also"></a>Vedere anche
+## <a name="support-resources"></a>Risorse di supporto
+- Per assistenza sull'amministrazione delle sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp).
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
 - [Documentazione di Microsoft 365](/microsoft-365/)
-
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 10/26/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: Informazioni sui vantaggi inclusi nelle sottoscrizioni e su come attivarli.
-ms.openlocfilehash: 351d81f29d01ec8322fcd6602d3ac4afccdb8ca1
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750137"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757633"
 ---
 # <a name="about-your-subscription-benefits"></a>Vantaggi della sottoscrizione
 I sottoscrittori di Visual Studio possono accedere a diversi vantaggi a seconda del livello di abbonamento. Esistono diversi aspetti importanti da considerare sui vantaggi.
@@ -43,7 +43,10 @@ Alcuni dei vantaggi offerti con le sottoscrizioni di Visual Studio, inclusi alcu
 ## <a name="benefits-that-become-temporarily-unavailable"></a>Vantaggi che diventano temporaneamente non disponibili
 Sebbene sia raro, a volte i problemi tecnici possono rendere non disponibile un vantaggio per un breve periodo di tempo. In questi casi, si modificherà il riquadro del vantaggio nel [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/benefits) per indicare che il vantaggio è "temporaneamente non disponibile" fino a quando il problema non viene risolto, a quel punto il riquadro verrà ripristinato e il vantaggio sarà nuovamente disponibile.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="support-resources"></a>Risorse di supporto
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vssubscriberhelp).
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

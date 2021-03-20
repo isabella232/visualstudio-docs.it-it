@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 02/02/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni sui ruoli di amministratore e amministratore con privilegi avanzati e su come assegnare gli amministratori.
-ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511332"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757594"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Amministratori con privilegi avanzati e amministratori per i contratti di sottoscrizione di Visual Studio
 
@@ -42,7 +42,7 @@ Per assegnare nuovi amministratori (amministratori):
 5. Dopo aver fatto clic su **Add** (Aggiungi) per assegnare il nuovo amministratore, questi riceverà un messaggio di posta elettronica con l'invito ad accedere al portale.  
 
 ## <a name="resources"></a>Risorse
-- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
+- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

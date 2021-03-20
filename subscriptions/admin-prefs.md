@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni su come impostare le preferenze per la lingua, i contatti, il livello di sottoscrizione e altre opzioni nel portale di amministrazione
-ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 93a9417a88d07dcc841c6a59a7353b0ffb5e7565
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511345"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757620"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Impostare le preferenze per i contratti nel portale di amministrazione
 Gli amministratori con privilegi avanzati possono impostare determinate preferenze nel portale di amministrazione (portale di amministrazione) che verrà applicato globalmente per ogni contratto.  Queste preferenze compileranno automaticamente i dettagli della sottoscrizione per gli amministratori durante l'aggiunta di sottoscrittori e potranno essere modificati solo a livello globale dagli amministratori con privilegi avanzati.  
@@ -73,7 +73,7 @@ R: consultare l'articolo [contattare l'amministratore](contact-my-admin.md) .
 R: se non è stato impostato alcun indirizzo di posta elettronica specifico nella preferenza dell' **indirizzo di posta elettronica di contatto** , tutti gli amministratori del contratto riceveranno la richiesta. 
 
 ## <a name="resources"></a>Risorse
-- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
+- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

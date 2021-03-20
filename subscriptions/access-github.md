@@ -4,23 +4,23 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni sull'accesso a GitHub Enterprise come parte delle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 41cf3779f5572ecd63d11907eb80837e05e176c8
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511358"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757711"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Sottoscrizioni di Visual Studio con GitHub Enterprise 
 
 I clienti con contratto Enterprise Agreement (EA) con Microsoft sono idonei per acquistare una nuova offerta di sottoscrizione che riunisce le sottoscrizioni di Visual Studio standard e GitHub Enterprise. Per i sottoscrittori di Visual Studio, si tratta di un modo semplice ed economico per acquisire GitHub Enterprise. 
 
-- Con GitHub e Visual Studio è possibile innovare su larga scala importando in modo sicuro codice open source, una community e le procedure consigliate nell'ambiente di sviluppo integrato e nei flussi di lavoro.
+- È possibile innovare su larga scala con Visual Studio e GitHub garantendo in modo sicuro il codice open source, la community e le procedure consigliate nell'IDE e nei flussi di lavoro.
 - USA gli strumenti e i servizi di sviluppo di qualità superiore per gli sviluppatori con il set di risorse più completo per creare, distribuire e gestire applicazioni eccezionali. 
-- Collaborare, gestire le richieste pull in GitHub Enterprise e rivedere il codice sorgente direttamente dove è stato scritto, cioè nell'editor. 
+- Collaborare e gestire "richieste pull" su GitHub Enterprise ed esaminare il codice sorgente in cui è stato scritto nell'editor. 
 
 ## <a name="whats-available"></a>Opzioni disponibili 
 
@@ -31,7 +31,7 @@ Sono disponibili le opzioni seguenti:
 
 Anche Visual Studio Enterprise, Visual Studio Professional e GitHub Enterprise continueranno a essere disponibili separatamente. 
 
-Per altre informazioni sui vantaggi e sulle opzioni, visitare <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
+Per ulteriori informazioni sui vantaggi e sulle opzioni, visitare il <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
 
 ## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>Che cos'è la sottoscrizione di Visual Studio con il processo di installazione di GitHub Enterprise?
 
@@ -85,7 +85,7 @@ R: insieme a GitHub Enterprise, si ricevono tutti i vantaggi di una sottoscrizio
 - Trovare le risposte alle domande su un'ampia gamma di argomenti su GitHub nella [Guida di GitHub](https://help.github.com).
 - Ulteriore assistenza?  Contattare il [supporto di GitHub](https://support.github.com/)
 - Ottenere assistenza da altri utenti di GitHub nel [GitHub Community Forum](https://github.community/) (forum della Community GitHub).
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, visitare la pagina [ottenere la guida](https://my.visualstudio.com/GetHelp) .
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, visitare la pagina [ottenere la guida](https://aka.ms/vssubscriberhelp) .
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 - Ottenere [supporto tecnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
 

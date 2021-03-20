@@ -7,12 +7,12 @@ ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 03/11/2021
 ms.topic: conceptual
 description: Informazioni sull'anonimizzazione dei dati dei sottoscrittori quando viene perso l'accesso alle sottoscrizioni.
-ms.openlocfilehash: 69f41232a678a857908b30d63df2ae7f72b79904
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: 2a3d55824db1c90ff0868dda6d398e8c0e9a53d7
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225963"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757607"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimizzazione dei dati del sottoscrittore di Visual Studio
 Quando si verifica un evento che blocca l'uso di un sottoscrittore di una sottoscrizione, ad esempio la scadenza di una sottoscrizione o l'eliminazione dell'account di accesso di un sottoscrittore, le informazioni personali dell'utente, ad esempio il nome e l'account di accesso, vengono criptate per renderle inutilizzabili.  Questa operazione viene eseguita per proteggere le informazioni personali del sottoscrittore.
@@ -43,6 +43,9 @@ R: sì.  Se vengono soddisfatti questi criteri, è possibile riassegnare le sott
 R: è possibile evitare il problema in due modi:
 - Distribuire un solo sistema di gestione delle identità, MSA o AAD, ma non entrambi.  
 - Associare le identità AAD e MSA tramite il tenant. 
+
+## <a name="support-resources"></a>Risorse di supporto
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

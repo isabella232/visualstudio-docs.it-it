@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 03/11/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori delle sottoscrizioni.
-ms.openlocfilehash: 14b8832a8031ddbc96ce82e10a015c730530ce3e
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: 817330093ce0a2e9df6379db42420057ded30486
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225989"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757685"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Panoramica delle responsabilità degli amministratori
 In qualità di amministratore, è possibile gestire le sottoscrizioni per l'organizzazione.  Il ruolo di amministratore ha anche le responsabilità di garantire che le sottoscrizioni siano gestite in conformità con le condizioni di licenza. Questo articolo descrive le responsabilità, i vantaggi e le limitazioni del ruolo di amministratore.
@@ -41,7 +41,7 @@ Le sottoscrizioni di Visual Studio consentono agli sviluppatori di installare e 
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
 - [Documentazione di Microsoft 365](/microsoft-365/)
-- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
+- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità per gli amministratori:
