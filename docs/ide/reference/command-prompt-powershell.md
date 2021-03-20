@@ -1,6 +1,6 @@
 ---
 title: Shell della riga di comando per gli sviluppatori
-description: Informazioni su come trovare e usare il Prompt dei comandi per gli sviluppatori per Visual Studio, Developer PowerShell e Visual Studio Terminal, che consentono di usare più facilmente gli strumenti .NET e C++.
+description: Scopri come trovare e usare Visual Studio Prompt dei comandi per gli sviluppatori, Visual Studio Developer PowerShell e il terminale di Visual Studio, che ti permettono di usare più facilmente gli strumenti .NET e C++.
 ms.date: 03/04/2021
 ms.custom: contperf-fy21q3
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249739"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672325"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>PowerShell per sviluppatori e Prompt dei comandi per gli sviluppatori
 
 Visual Studio 2019 include due shell della riga di comando per gli sviluppatori:
 
-- **Prompt dei comandi per gli sviluppatori per Visual Studio** : un prompt dei comandi standard con determinate variabili di ambiente impostate per semplificare l'uso degli strumenti di sviluppo da riga di comando.
-- **Developer PowerShell** : più potente di un prompt dei comandi. Ad esempio, è possibile passare l'output di un comando (noto come *cmdlet* ) a un altro cmdlet . Questa shell ha le stesse variabili di ambiente impostate come Prompt dei comandi per gli sviluppatori.
+- **Visual Studio prompt dei comandi per gli sviluppatori** : un prompt dei comandi standard con determinate variabili di ambiente impostate per semplificare l'uso degli strumenti di sviluppo da riga di comando. Disponibile a partire da Visual Studio 2015.
+- **PowerShell per sviluppatori di Visual Studio** : più potente di un prompt dei comandi. Ad esempio, è possibile passare l'output di un comando (noto come *cmdlet* ) a un altro cmdlet . Questa shell ha le stesse variabili di ambiente impostate come Prompt dei comandi per gli sviluppatori. Disponibile a partire da Visual Studio 2019.
 
 Per entrambe le shell sono impostate variabili di ambiente specifiche che consentono di usare più facilmente gli strumenti di sviluppo da riga di comando. Dopo aver aperto una di queste shell, è possibile immettere i comandi per le diverse utilità senza doverne individuare il percorso. I comandi che è possibile eseguire includono:
 
@@ -40,10 +40,6 @@ A partire da Visual Studio 2019 versione 16,5, Visual Studio include un **termin
 :::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="Terminale di Visual Studio che Mostra più schede":::
 
 Quando si apre una delle shell per sviluppatori da Visual Studio, come un'app separata o nella finestra del terminale, si apre alla directory della soluzione corrente (se è stata caricata una soluzione). Questo comportamento semplifica l'esecuzione dei comandi sulla soluzione o sui relativi progetti.
-
-## <a name="prerequisites"></a>Prerequisiti
-
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ## <a name="start-the-shell-from-inside-visual-studio"></a>Avviare la Shell dall'interno di Visual Studio
 

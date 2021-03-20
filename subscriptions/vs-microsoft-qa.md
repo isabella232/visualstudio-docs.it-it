@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 16af82df-380a-4864-9f4e-6c3442cc7da2
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: Informazioni su Microsoft Q&un vantaggio del supporto per forum incluso nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 7f3f615101f9b084232c42a6b1c867e123f4d38a
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c9900dd914a53911fa95fee662a8fd820e59ff4b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537734"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671963"
 ---
 # <a name="microsoft-qa-forum-support-in-visual-studio-subscriptions"></a>Microsoft Q&un supporto per forum nelle sottoscrizioni di Visual Studio
 Hai una domanda tecnica? Trovarlo in Microsoft Q&A: la casa per le domande e le risposte tecniche fornite da Microsoft.
@@ -32,7 +32,7 @@ Hai una domanda tecnica? Trovarlo in Microsoft Q&A: la casa per le domande e le 
 - SQL Server
 - System Center
 - Visual Studio
-- WINDOWS 
+- Windows 
 - Windows Sysinternals
 
 Potrai anche trovare guide pratiche che ti aiuteranno a porre domande eccezionali e a creare risposte di qualità per altri utenti. 
@@ -58,7 +58,7 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 |                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Disponibile    |    Sì     |
 | Visual Studio Enterprise (cloud mensile), Visual Studio Professional (cloud mensile)|        Tutti        | Non disponibile |     No     |
 
-<sup>1</sup>  *include: not for Resale (NFR), Microsoft ETP, most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup>  *include: not for Resale (NFR), Microsoft ETP, most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT). Esclude: NFR Basic.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
@@ -66,10 +66,10 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  contattare il [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  Contattare il [supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp).
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 98d61d86b894dc989e24aef809e0f97fd513f481
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 603d09de5a37ea7ea4f0ff10c377c56eb9a3d63e
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932976"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672193"
 ---
 # <a name="frequently-asked-questions-for-devinit"></a>Domande frequenti su devinit
+
+> [!IMPORTANT]
+> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
 
 ## <a name="is-devinit-just-for-github-codespaces"></a>La devinilica è sufficiente per gli spazi dei Codedi GitHub?
 

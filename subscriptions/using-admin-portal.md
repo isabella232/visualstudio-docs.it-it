@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 10/28/2020
 ms.topic: overview
 description: Informazioni su come iniziare a gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale di amministrazione delle sottoscrizioni.
-ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 3ac02dcd49af1c3277be0c3a15a2e3bf9c735f04
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904549"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673073"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -57,9 +57,9 @@ Per ulteriori informazioni sul contratto visualizzato, selezionare la seconda ic
 - [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Confrontare le opzioni e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing)
 - [Confrontare le funzionalità dell'IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare)
-- [Supporto per l'amministratore e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

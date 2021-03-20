@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni su come scaricare e installare l'IDE di Visual Studio incluso nella sottoscrizione di Visual Studio
-ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2cff154f61d662f180fe5087a877073a9d84e27c
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538059"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672002"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
 
@@ -69,7 +69,7 @@ Per scaricare l'ambiente IDE:
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 
-<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, Imagine, most VALUABLE Professional (MVP), Regional Director (Rd).  Esclude: MCT software & Services.*
+<sup>1</sup>  *include: not for Resale (NFR), NFR Basic, Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, Imagine, most VALUABLE Professional (MVP), Regional Director (Rd).  Esclude: MCT software & Services.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
@@ -80,9 +80,9 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 - Se serve assistenza per l'IDE di Visual Studio, vedere queste risorse:
   - Supporto tecnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Documentazione](/visualstudio/)
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

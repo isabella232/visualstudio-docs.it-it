@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni sul vantaggio Visual Studio App Center nelle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85d8a8aeda72e9a5c8fc94e98d1cbec22af32221
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537773"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672709"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center nelle sottoscrizioni di Visual Studio
 
@@ -50,7 +50,7 @@ Iniziare a usare Visual Studio App Center è facile.
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Incluso                                                            |Sì |
 ||
 
-<sup>1</sup>  *include: not for Resale (NFR), ETP, Visual Studio Industry Partner (VSIP), imagine, Microsoft Partner Network (MPN), MCT software & Services, MCT software & Services Developer, BizSpark, most VALUABLE Professional (MVP), Regional Director (Rd).*
+<sup>1</sup>  *include: not for Resale (NFR), ETP, Visual Studio Industry Partner (VSIP), imagine, Microsoft Partner Network (MPN), MCT software & Services, MCT software & Services Developer, BizSpark, most VALUABLE Professional (MVP), Regional Director (Rd).  Esclusioni: NFR Basic*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
@@ -71,10 +71,10 @@ A questo punto dovrebbe essere possibile accedere al portale di App Center e cre
 - Serve aiuto con App Center?
   - È possibile ottenere suggerimenti e risposte dal team di App Center in [App Center Help Center](https://intercom.help/appcenter/).
   - Vedere la [documentazione completa di App Center](/appcenter/)
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contatta il supporto per le [sottoscrizioni](https://my.visualstudio.com/gethelp)di Visual Studio Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

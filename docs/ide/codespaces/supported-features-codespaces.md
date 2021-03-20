@@ -11,14 +11,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebd64a314f1c4d6afd7b6e6fcc3b38148ff68225
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971141"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672969"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Funzionalità supportate di Visual Studio (anteprima)
+
+> [!Important] 
+> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Si consiglia di partecipare al [Forum della community degli sviluppatori](https://developercommunity.visualstudio.com/home) per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap. 
+
 
 Visual Studio offre un'esperienza di sviluppo completa quando ci si connette a un codespace. È possibile ottenere gli strumenti del ciclo interno di Visual Studio con cui si ha familiarità per modificare, eseguire il debug, testare e controllare la versione del codice sorgente, nonché le funzionalità di produttività, ad esempio modelli di progetto, esplorazione avanzata del codice e IntelliSense.
 

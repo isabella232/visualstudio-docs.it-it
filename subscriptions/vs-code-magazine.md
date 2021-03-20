@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 01/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Informazioni sul vantaggio della rivista del codice incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597400"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672041"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Rivista di codice inclusa nelle sottoscrizioni di Visual Studio
 
@@ -58,7 +58,7 @@ Dopo aver completato l'ordine di sottoscrizione, viene visualizzata una pagina d
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 | Visual Studio Enterprise NFR<sup>1</sup> | NFR | Non disponibile | N/D |
 
-<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, BizSpark, Imagine, Imagine Premium, Microsoft Partner Network (MPN), most VALUABLE Professional (MVP), Regional Director (Rd), MCT software & Services Developer, MCT software & Services.*
+<sup>1</sup>  * include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, BizSpark, Imagine, Imagine Premium, Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (Rd), mct software & Services Developer, mct software & Services.  
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
@@ -74,10 +74,10 @@ R: la rivista del codice raccoglie l'indirizzo, indipendentemente dal fatto che 
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Per domande sulla sottoscrizione di CODE Magazine,  Contattare la [rivista di codice](https://www.codemag.com/contact) tramite posta elettronica o telefono oppure inviare una richiesta di supporto online.
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp).
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

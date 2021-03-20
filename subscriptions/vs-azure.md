@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 0834020113ac4a383abe551ace0ae2e3181e0650
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 1fb85c64ec49d906ba843ac944d550ef1e41fd4d
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473374"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672257"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
@@ -80,7 +80,7 @@ Per domande su come trasferire risorse, rimuovere i limiti di spesa o altri argo
 |              Visual Studio Professional (mensile)              |        Non disponibile        |                                                             |
 |                    Visual Studio Test Pro                    |     Credito mensile pari a 50 dollari USA      |                             Sì                             |
 |                        MSDN Platforms                        |     Credito mensile pari a 100 dollari USA     |                             Sì                             |
-|               Visual Studio Enterprise - NFR\*               |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
+|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 |                Visual Studio Enterprise - FTE                |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 |     Visual Studio Enterprise - Microsoft Partner Network     |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 |    Visual Studio Professional - Microsoft Partner Network    |        Non disponibile        |                                                             |
@@ -90,7 +90,7 @@ Per domande su come trasferire risorse, rimuovere i limiti di spesa o altri argo
 |      Visual Studio Enterprise – MCT Software & Services      |     Credito mensile pari a 100 dollari USA     |                             Sì                             |
 | Visual Studio Enterprise - MCT Developer Software & Services |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 
-*Include Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
+<sup>1</sup>  *include: not for Resale (NFR), most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP) esclude: NFR Basic*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.

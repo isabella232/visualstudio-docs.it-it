@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bb2fa359-8170-4db0-a0c5-d49fc692b0aa
-ms.date: 03/05/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informazioni sugli effetti dell'aggiornamento o del download del livello di abbonamento a Visual Studio.
-ms.openlocfilehash: ac4355149ba66cd06ae5c1abaeb57e7065631050
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 93ea729280916cb62ba2b87ff820bb25069369d7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250097"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672982"
 ---
 # <a name="what-happens-when-you-change-visual-studio-subscription-levels"></a>Cosa accade quando si modificano i livelli di sottoscrizione di Visual Studio?
 Nelle sottoscrizioni di Visual Studio, il software, gli strumenti, i servizi e altri vantaggi disponibili variano a seconda del livello di abbonamento.  In generale, maggiore è il livello di sottoscrizione, maggiore è l'affidabilità dei vantaggi offerti.  
@@ -63,7 +63,7 @@ Se si usa un vantaggio che viene autenticato ogni volta che si accede a Visual S
 Se si usano i vantaggi offerti nella sottoscrizione corrente ma non nella sottoscrizione a cui viene effettuato il downgrade, è possibile che si perda l'accesso a tali vantaggi.  
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp).
 - Per domande sull'IDE di Visual Studio, Azure DevOps o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche

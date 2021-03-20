@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 32d407c4803c2b50276145a2c9a66c2c501f05ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5fc53a534b592b4f6a4799100ce16b1d45049457
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874420"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671798"
 ---
 # <a name="tutorial"></a>Esercitazione
+
+> [!IMPORTANT]
+> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
 
 In questa esercitazione verrà illustrata la configurazione del [repository eShopOnWeb](https://github.com/andysterland/eShopOnWeb) con i devinit e i codespace. In questa esercitazione si presuppone che devinit sia già disponibile, come descritto nella [pagina](getting-started-with-devinit.md)introduttiva.
 

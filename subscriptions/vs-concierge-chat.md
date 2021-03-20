@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 12/02/2020
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Informazioni sul vantaggio Concierge Chat nelle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 468433ba6cc378fd422f1fee6c806c6a701a9e65
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538098"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672028"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat nelle sottoscrizioni di Visual Studio
 Il servizio Concierge Chat offre assistenza per la ricerca di informazioni e documentazione tecnica sui prodotti, nonché per l'uso dei vantaggi della sottoscrizione di Visual Studio.
@@ -27,7 +27,7 @@ Ottenere assistenza tramite il servizio Concierge Chat è molto semplice.
     > [!div class="mx-imgBorder"]
     > ![Riquadro Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Fare clic su' Chat Now ' per avviare una nuova sessione di chat.")
 
-3. Fare clic su **Continua**.
+3. Fare clic su **Continue**.
 
 4. Verrà aperta una finestra di chat e verrà visualizzato un contatore che mostra la posizione nella coda.
 
@@ -46,7 +46,7 @@ Ottenere assistenza tramite il servizio Concierge Chat è molto semplice.
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile                                              |  Sì          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 
-<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Esclude: ETP, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Esclude: ETP, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.  Esclusioni: NFR Basic*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
@@ -58,10 +58,10 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
    R: l'assistenza per i problemi relativi ad account, fatturazione e sottoscrizioni è disponibile in più lingue.  L'assistenza per l'individuazione di informazioni e documentazione tecnica per i prodotti è disponibile in inglese.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp).
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

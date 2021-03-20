@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: Scopri come sfruttare i vantaggi del desktop virtuale Microsoft Windows tramite la sottoscrizione di Visual Studio
-ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2e7aad5d3f8214d39e5671e4bf5c4d5d357cd930
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537955"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671739"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accedere al desktop virtuale Windows nelle sottoscrizioni 
 I sottoscrittori di Visual Studio sono ora in grado di usare i singoli crediti di sviluppo/test di Azure per i servizi desktop virtuali di Microsoft Windows.  
@@ -29,7 +29,7 @@ Ecco cosa si può fare quando si esegue Desktop virtuale Windows in Azure:
 I sottoscrittori di Visual Studio ora hanno diversi modi per usare le sottoscrizioni di Azure per pagare i servizi desktop virtuali Windows:
 - [Azure DevTest i singoli crediti](vs-azure.md).  Gli abbonati che ricevono Azure DevTest i singoli crediti come parte delle sottoscrizioni possono usare tali crediti per pagare i servizi desktop virtuali Windows.  La quantità di credito mensile dipende dal livello di abbonamento.
 - [Sottoscrizioni con pagamento in base al consumo di Azure DevTest](vs-azure-payg.md).  Puoi creare sottoscrizioni di Azure e alleghi uno strumento di pagamento per ottenere un modo semplice per pagare l'utilizzo di desktop virtuali Windows. 
-- [Offerta Azure Enterprise Agreement DevTest](azure-ea-devtest.md).  Con questa offerta, gli abbonati con contratti Enterprise possono pagare per desktop virtuale Windows con Azure a prezzi scontati. 
+- [Offerta Azure contratto Enterprise DevTest](azure-ea-devtest.md).  Con questa offerta, gli abbonati con contratti Enterprise possono pagare per desktop virtuale Windows con Azure a prezzi scontati. 
 
 ## <a name="requirements"></a>Requisiti
 Per desktop virtuale Windows è necessario un Azure Active Directory (Azure AD) a cui verranno unite le macchine virtuali.  Gli utenti devono essere membri di questo Azure AD.  Sono disponibili due opzioni per implementare la Azure AD:
@@ -55,16 +55,17 @@ Quando tutti i prerequisiti sono soddisfatti, è necessario completare diverse a
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 
-<sup>1</sup>  *include: not for Resale (NFR), ETP, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *include: not for Resale (NFR), ETP, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine, NFR Basic*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
 
 Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Azure](/azure/)
 - [Documentazione di Desktop virtuale Windows](/azure/virtual-desktop/)
+- [Supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Passaggi successivi
 -   Se è necessario acquistare sottoscrizioni di Visual Studio, vedere:

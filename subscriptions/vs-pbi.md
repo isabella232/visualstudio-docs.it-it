@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 6d64c9e5d15e24dcf53dd5b45261305dffb43353
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 1801ed8deae3294837078401420e16efdc016979
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538072"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672904"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
@@ -72,7 +72,7 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 | Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |N/D|
 ||
 
-<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (Rd).  Escludi: Microsoft Partner Network (MPN), ETP, Imagine.*
+<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (Rd).  Escludi: Microsoft Partner Network (MPN), ETP, Imagine, NFR Basic.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
@@ -110,10 +110,10 @@ R: No.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant per enti pu
   - Vedere la [documentazione online](/power-bi/).
   - Problemi durante l'iscrizione?  Vedere [Iscrizione a Power BI come utente singolo](/power-bi/service-self-service-signup-for-power-bi)
   - Esplorare i problemi principali, ottenere assistenza dalla community o inviare un ticket di supporto nella [pagina del supporto tecnico](https://powerbi.microsoft.com/support/).
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contatta il supporto per le [sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

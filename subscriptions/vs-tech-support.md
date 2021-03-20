@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 77856cf8a1f3497f66e89110e7b951c768da8c28
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537968"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672133"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -80,7 +80,7 @@ Per inviare un evento imprevisto tramite il portale di supporto per le aziende, 
    > ![Creare una nuova richiesta di supporto](_img/vs-tech-support/vs-tech-support-create-new.png "Completare i campi per creare una nuova richiesta di supporto.") 
 0. Nella sezione **passaggio 2** specificare il percorso e il fuso orario.
 0. Fare clic su **Aggiungi contratto**.
-0. Immettere l' **ID di accesso** e l' **ID contratto** ricevuti nel messaggio di posta elettronica di conferma quando è stato attivato il vantaggio del supporto tecnico. Scegliere **Aggiungi**.
+0. Immettere l' **ID di accesso** e l' **ID contratto** ricevuti nel messaggio di posta elettronica di conferma quando è stato attivato il vantaggio del supporto tecnico. Fare clic su **Aggiungi**.
    > [!div class="mx-imgBorder"]
    > ![Aggiungere un ID contratto](_img/vs-tech-support/vs-tech-support-add-contract-id.png "Aggiungere l'ID di accesso e l'ID del contratto dal messaggio di posta elettronica di conferma.") 
 0. Il nuovo contratto di supporto verrà visualizzato nel **passaggio 2**.  Selezionarla.
@@ -116,13 +116,16 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
-<sup>1</sup> *include: Imagine Premium, BizSpark. Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, Imagine standard, Most Valuable Professional (MVP), Regional Director (RD), MCT software & Services.*
+<sup>1</sup> *include: Imagine Premium, BizSpark. Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, Imagine standard, Most Valuable Professional (MVP), Regional Director (RD), MCT software & Services. Esclusioni: NFR Basic*
 
 <sup>2</sup> *Include: Imagine Standard.*
 
 Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="support-resources"></a>Risorse di supporto
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp).
+- 
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

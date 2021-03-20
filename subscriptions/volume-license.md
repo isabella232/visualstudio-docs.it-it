@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 03/08/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informazioni su come gli amministratori sui contratti multilicenza possono accedere al portale di amministrazione delle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 0ab0ca532c1c2cdb848a3f6df9862c1d80518248
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607288"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672530"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Accesso al portale di amministrazione come amministratore in un contratto multilicenza
 
@@ -26,7 +26,7 @@ Una volta eseguito l'accesso, si verrà automaticamente configurati come amminis
 Questo vale per tutti i tipi di contratto multilicenza, inclusi, a titolo esemplificativo: contratti Enterprise, sottoscrizioni Enterprise, selezionare, selezionare Plus, Open, Open License, Government. e contratti accademici. 
 
 ## <a name="resources"></a>Risorse
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

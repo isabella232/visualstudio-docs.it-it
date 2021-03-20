@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 47859d00861c2361ed03931bf1417e22425d6e68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f94ee609ba4c0783a06648ed037e58d864aa2a9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908119"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672207"
 ---
 # <a name="devinit-configuration-file"></a>file di configurazione di devinit
+
+> [!IMPORTANT]
+> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
 
 Il `.devinit.json` file definisce le dipendenze a livello di sistema necessarie all'applicazione per l'esecuzione e la compilazione. Le dipendenze a livello di sistema sono elementi come Node.js, SQL Server, IIS, RabbitMQ, Docker e così via. Si tratta di un tipo di operazioni normalmente installate nella casella di sviluppo che non vengono installate da un repository specifico. Non è una posizione in cui definire dipendenze specifiche dell'applicazione come si farebbe con i gestori di pacchetti, ad esempio NuGet o NPM. Si tratta, tuttavia, di una posizione in cui è necessario definire i gestori di pacchetti.
 

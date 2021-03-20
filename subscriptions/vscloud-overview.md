@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: 6aa17046726e19086f511c7ab59ab19228142e20
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 56988001272fb11252b85cb60bdcae109edf8e29
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473387"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672543"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
@@ -127,7 +127,7 @@ R: anche se non saranno in grado di acquistare un'altra sottoscrizione annuale c
 - [Portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/)
 - [Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio](vscloud-billing-faq.md)
 - [Acquisto di sottoscrizioni cloud di Visual Studio per i CSP](vscloud-csp.md)
-- - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
+- - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

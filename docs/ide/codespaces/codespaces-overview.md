@@ -11,25 +11,25 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 374e07735667a2a8891824b23d49b061651b3b95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911723"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672787"
 ---
 # <a name="what-is-github-codespaces-preview"></a>Che cosa sono gli spazi di dati di GitHub? (Anteprima)
 
+> [!Important] 
+> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Si consiglia di partecipare al [Forum della community degli sviluppatori](https://developercommunity.visualstudio.com/home) per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap. 
+
 Benvenuti in codespaces. Siamo lieti di essere qui.
 
-Gli spazi dei nomi in GitHub offrono un ambiente di sviluppo basato sul cloud per qualsiasi attività, indipendentemente dal fatto che si tratti di un progetto a lungo termine o da un'attività a breve termine come la revisione di una richiesta pull. È possibile usare un codespace dall'interno di Visual Studio 2019 Preview ([iscriversi alla versione beta pubblica limitata](https://github.com/features/codespaces/signup-vs)).
+Gli spazi dei nomi in GitHub offrono un ambiente di sviluppo basato sul cloud per qualsiasi attività, indipendentemente dal fatto che si tratti di un progetto a lungo termine o da un'attività a breve termine come la revisione di una richiesta pull.
 
 Inoltre, i codespace di GitHub offrono molti dei vantaggi di DevOps, ad esempio la ripetibilità e l'affidabilità, &mdash; che in genere sono stati riservati ai carichi &mdash; di lavoro di produzione in un ambiente di sviluppo. È anche possibile personalizzare gli spazi dei codebase di GitHub in modo che gli strumenti, i processi e le configurazioni che si preferisce e si affidino siano disponibili.
 
 In questo documento vengono illustrati i concetti chiave e vengono introdotte le funzionalità di codespaces. Se si vuole iniziare, vedere [usare Visual Studio con una codespace](use-visual-studio-with-codespaces.md).
-
-> [!IMPORTANT]
-> Per usare gli spazi dei valori di GitHub, è necessario iscriversi alla [beta pubblica](https://github.com/features/codespaces/signup-vs) limitata. Durante il periodo di beta, GitHub non garantisce alcuna garanzia sulla disponibilità di codespaces. Per ulteriori informazioni sull'aggiunta della versione beta, vedere [informazioni sui codespace](https://docs.github.com/github/developing-online-with-codespaces/about-codespaces#joining-the-beta).
 
 ## <a name="concepts-and-features"></a>Concetti e funzionalità
 

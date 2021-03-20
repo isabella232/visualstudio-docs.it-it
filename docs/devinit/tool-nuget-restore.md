@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f805b5c1c7b3b994c984dfdb6ce937f8cd51edf1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fe78f33533931f91e97c61ec093602ee0071895
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848232"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671616"
 ---
 # <a name="nuget-restore"></a>nuget-restore
+
+> [!IMPORTANT]
+> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
 
 Lo `nuget-restore` strumento Ripristina le dipendenze e gli strumenti specifici del progetto specificati nel file di progetto. Per altre informazioni sul ripristino di NuGet, vedere [qui](/nuget/reference/cli-reference/cli-ref-restore).
 

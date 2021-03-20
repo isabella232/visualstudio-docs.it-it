@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informazioni sul vantaggio Supporto della community di Azure in specifiche sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 43633e20bbf10988092a2d98d7d0a5ddd9b08601
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473335"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672107"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum Supporto della community di Azure nelle sottoscrizioni di Visual Studio
 Ottenere assistenza direttamente dal team di Azure in una selezione di forum di supporto tramite la community di Azure.  Il vantaggio Community di Azure consente di accedere a una raccolta di forum dedicati ad argomenti correlati ad Azure.
@@ -78,7 +78,7 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 |                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Disponibile    |    Sì     |
 | Visual Studio Enterprise (cloud mensile), Visual Studio Professional (cloud mensile)|        Tutti        | Non disponibile |     No     |
 
-<sup>1</sup>  *include: not for Resale (NFR), Microsoft ETP, most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup>  *include: not for Resale (NFR), Microsoft ETP, most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT). Esclusioni: NFR Basic*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.

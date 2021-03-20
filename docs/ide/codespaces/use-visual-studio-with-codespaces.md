@@ -11,16 +11,19 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 95ed318c327735c85fda854d207b36874eeffca7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: add43a5d130d8938193774d50bb643f48ecc3f8c
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970985"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673047"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Come usare Visual Studio con una codespace (anteprima)
 
-Visual Studio offre un supporto eccezionale per lo sviluppo in codespaces GitHub. È possibile creare e connettersi a uno spazio dei comandi e avere tutta la potenza di Visual Studio per lavorare sui progetti in un ambiente host remoto. Anche se il codice sorgente e gli strumenti si trovano in uno spazio dei nomi e la compilazione e il debug si verificano nel cloud, l'esperienza di sviluppo si risulterà veloce e senza attrito, come se si lavorasse localmente. È possibile usare un codespace dall'interno di Visual Studio 2019 Preview ([iscriversi alla versione beta pubblica limitata](https://github.com/features/codespaces/signup-vs)).
+> [!Important] 
+> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Si consiglia di partecipare al [Forum della community degli sviluppatori](https://developercommunity.visualstudio.com/home) per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap. 
+
+Visual Studio offre un supporto eccezionale per lo sviluppo in codespaces GitHub. È possibile creare e connettersi a uno spazio dei comandi e avere tutta la potenza di Visual Studio per lavorare sui progetti in un ambiente host remoto. Anche se il codice sorgente e gli strumenti si trovano in uno spazio dei nomi e la compilazione e il debug si verificano nel cloud, l'esperienza di sviluppo si risulterà veloce e senza attrito, come se si lavorasse localmente.
 
 > [!NOTE]
 > Questo articolo descrive in modo specifico l'uso di Visual Studio per connettersi agli spazi di codebase di GitHub. È possibile ottenere informazioni sulla connessione a uno spazio dei tipi con altri client nella documentazione [Visual Studio Code](https://docs.github.com/github/developing-online-with-codespaces/connecting-to-your-codespace-from-visual-studio-code) o [GitHub](https://docs.github.com/github/developing-online-with-codespaces/developing-in-a-codespace) .
