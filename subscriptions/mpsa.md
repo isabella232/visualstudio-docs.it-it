@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 03/05/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni sulla gestione delle sottoscrizioni di Visual Studio in un contratto per prodotti e servizi Microsoft (MPSA)
-ms.openlocfilehash: 49f18b540d27678b46a5fa111c76a069b705309d
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 63124e8853184fde04db7bc202e5acea3cfbe89f
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249455"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776532"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
 Se sono state acquistate sottoscrizioni di Visual Studio tramite il programma MPSA, è necessario tenere presenti alcune considerazioni prima di poter diventare un amministratore delle sottoscrizioni di Visual Studio e assegnare le sottoscrizioni agli utenti. Se si è già stati configurati come amministratore, è possibile passare direttamente al [portale di amministrazione](https://manage.visualstudio.com/)delle sottoscrizioni di Visual Studio.
@@ -56,6 +56,9 @@ Per una descrizione più dettagliata di questo processo,vedere le [guide rapide]
 
 > [!NOTE]
 > Quando si completa il processo di completamento del dominio, è necessario rispettare i criteri dei cinque passaggi della sezione per l'associazione pre-tenant (gestita). Una volta soddisfatti i criteri, sarà necessario contattare il supporto MPSA per eseguire il provisioning di altri amministratori delle sottoscrizioni di Visual Studio.
+
+## <a name="support-resources"></a>Risorse di supporto
+- Per assistenza sull'amministrazione delle sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

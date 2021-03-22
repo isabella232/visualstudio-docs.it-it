@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono eliminare le assegnazioni delle sottoscrizioni nel portale di amministrazione delle sottoscrizioni di Visual Studio
-ms.openlocfilehash: efd0e149f390dd21a286b6ab7405ec36a43b8f78
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: d0ce93855cf56dab5e1a333e41e24ac2a368a540
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225976"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776933"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminare assegnazioni nelle sottoscrizioni di Visual Studio
 Quando un Sottoscrittore non richiede più una sottoscrizione di Visual Studio, ad esempio quando lascia l'azienda, completa un progetto o passa a un nuovo ruolo di lavoro, è possibile rimuovere la sottoscrizione e assegnarla a un altro utente. Si noti che quando si riassegna una sottoscrizione, non tutti i vantaggi del Sottoscrittore verranno reimpostati.  Il nuovo utente sarà in grado di richiedere le chiavi non richieste e di visualizzare le chiavi richieste in precedenza, ma i limiti di attestazione **non** vengono reimpostati.  Per le organizzazioni che hanno in essere contratti Enterprise, gli eventuali vantaggi usati dall'utente originale, ad esempio corsi Pluralsight, verranno reimpostati. 
@@ -36,7 +36,7 @@ Guardare questo video o leggere per informazioni su come eliminare le assegnazio
    > Se sono state aggiunte assegnazioni di sottoscrizione tramite Azure Active Directory gruppi di sicurezza, potrebbero essere necessarie fino a 24 ore prima che l'eliminazione venga aggiornata nel portale di amministrazione.  Per ulteriori informazioni sull'utilizzo di gruppi di Azure Active Directory per gestire le sottoscrizioni, vedere [l'articolo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) . 
 
 ## <a name="resources"></a>Risorse
-- [Supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Supporto delle sottoscrizioni](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

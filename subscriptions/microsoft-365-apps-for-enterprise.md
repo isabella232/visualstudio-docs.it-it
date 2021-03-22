@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
-ms.date: 06/24/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come installare Microsoft 365 app per Enterprise
-ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: e1d629aae2d3c9e5d906a5593c287bd0b3250446
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537825"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776714"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 app per Enterprise nelle sottoscrizioni di Visual Studio
 Microsoft 365 Apps for Enterprise (in precedenza Office 365 Pro Plus) è disponibile nelle sottoscrizioni di Visual Studio selezionate. 
@@ -34,7 +34,7 @@ Il processo per l'attivazione delle app Microsoft 365 per la sottoscrizione Ente
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 le app per informazioni sui clienti aziendali](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "Immettere le informazioni di contatto")
 
-1. Nella finestra di dialogo "Crea ID utente" creare il nome utente e la password per il tenant, quindi selezionare **Crea gratuito**.
+1. Nella finestra di dialogo "Crea ID utente" creare il nome utente e la password per il tenant, quindi selezionare **Crea account**.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 app per la creazione di ID utente aziendali](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "Creare l'ID utente e la password")
 
@@ -74,10 +74,10 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Per il supporto tecnico con qualsiasi componente di Microsoft 365 app per Enterprise, visitare https://support.microsoft.com/allproducts e selezionare il prodotto.
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, su Azure DevOps o su altri prodotti o servizi di Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

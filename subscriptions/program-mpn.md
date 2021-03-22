@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
-ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005833"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776753"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 
@@ -32,7 +32,7 @@ Quando un partner ottiene una competenza, sia di livello Silver che Gold, ottien
 
 | Competenza                                  | Sottoscrizioni aggiuntive ottenute per la competenza **Silver** | Sottoscrizioni aggiuntive ottenute per la competenza **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
-| Sviluppo di applicazioni                     | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
+| Sviluppo applicazioni                     | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | Cloud Customer Relationship Management      | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | Piattaforma cloud                              | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | Cloud Productivity                          | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
@@ -71,13 +71,12 @@ Questa restrizione per il solo uso interno significa fondamentalmente che i part
 Con le sottoscrizioni di Visual Studio offerte tramite MPN, l'utente con licenza deve accedere a Visual Studio usando la stessa identità o lo stesso account di accesso usato per attivare la sottoscrizione di Visual Studio. I codici Product Key non sono disponibili per sbloccare il prodotto; l'accesso è l'unica opzione per l'esecuzione di Visual Studio. Il sottoscrittore di Visual Studio può lavorare offline per un massimo di 30 giorni prima che Visual Studio smetta di funzionare. Durante l'uso online, Visual Studio aggiorna in modo invisibile all'utente lo stato della licenza periodicamente per verificare che la sottoscrizione sia ancora valida.
 
 ## <a name="resources"></a>Risorse
-
 - [Guida ai programmi Microsoft Partner Network](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Gestione delle sottoscrizioni di Visual Studio incluse nelle appartenenze Microsoft Partner Network (MPN)](manage-mpn-subscriptions.md)
 - [Condizioni di licenza](https://www.microsoft.com/useterms/) -Le sottoscrizioni di Visual Studio offerte tramite MPN sono soggette al contratto di licenza con l'utente finale per le sottoscrizioni di Visual Studio non destinate alla rivendita.
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vssubscriberhelp).
 
-
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

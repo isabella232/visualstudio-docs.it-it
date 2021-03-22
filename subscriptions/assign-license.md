@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare le licenze ai sottoscrittori
-ms.openlocfilehash: 3bfa1174a8655de27496c3138e1eab21e32c2f8d
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a1b68a45754e0fb466ae12b59d63fa14d50e9a3e
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249555"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776519"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibile usare il portale di amministrazione per assegnare le sottoscrizioni a singoli utenti e gruppi di utenti.
@@ -68,7 +68,7 @@ Dopo l'aggiunta di un Sottoscrittore, un messaggio di posta elettronica di asseg
 
 
 ## <a name="resources"></a>Risorse
-- Serve aiuto?  Contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/).
+- Serve aiuto?  Contattare il [supporto delle sottoscrizioni](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

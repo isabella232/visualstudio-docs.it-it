@@ -1,18 +1,18 @@
 ---
 title: Gestione di team di grandi dimensioni e collaboratori nelle sottoscrizioni di Visual Studio | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori per gestire le sottoscrizioni per i team di grandi dimensioni e per i collaboratori esterni.
-ms.openlocfilehash: 55d2ac2eacaf523503c2593349abbcf561aed3b1
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: b54dc7a6a90556e73e1bebdd918435e9ce56a596
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904676"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776805"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
 Gli amministratori delle sottoscrizioni di Visual Studio sono responsabili di garantire che ogni utente che interagisce con il software concesso in licenza di Visual Studio disponga di una licenza appropriata con la propria sottoscrizione di Visual Studio.
@@ -31,10 +31,10 @@ I collaboratori esterni possono disporre di licenze per interagire con l'ambient
 
 ## <a name="resources"></a>Risorse
 - [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp)
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

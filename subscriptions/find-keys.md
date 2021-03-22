@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come trovare, richiedere ed esportare codici Product Key nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 5e055295e76ee91dbaf641256b8b7e93a530fcfb
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 2e74269c3e5e49e776b00484de790472030dc1c1
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249260"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776571"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio
 Questo articolo illustra come individuare, richiedere ed esportare codici Product Key da https://my.visualstudio.com/productkeys.  Per ulteriori informazioni sull'attivazione di un prodotto con una chiave, le versioni retail e multilicenza delle chiavi e i limiti giornalieri per le attestazioni dei codici Product Key, vedere la panoramica relativa ai [codici Product](product-keys.md)Key.
@@ -67,7 +67,7 @@ Come si può osservare, sono elencate diverse versioni.  Un codice Product Key �
 Per esportare le chiavi, selezionare il collegamento **Esporta tutte le chiavi** all'estrema destra della pagina codici Product Key.  Verrà creato un file con estensione XML denominato KeysExport.xml ed è possibile scegliere di aprire o salvare il file.  Sarà necessario aprire il file con un'applicazione in grado di gestire file con estensione xml.  Ad esempio, è possibile aprire il file come una cartella di lavoro di sola lettura in Excel.
 
 ## <a name="resources"></a>Risorse
-- [Supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
+- [Supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come esportare un elenco di sottoscrittori e i dettagli delle assegnazioni delle sottoscrizioni.
-ms.openlocfilehash: afd30470b5d9171f803c14b0d604eca626b70342
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 991128fc0f45b0caa0727c8ab418ba632d90e60c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250037"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776818"
 ---
 # <a name="export-subscription-information"></a>Esportare le informazioni sulla sottoscrizione
 Nel [portale di amministrazione](https://manage.visualstudio.com)delle sottoscrizioni di Visual Studio è possibile esportare un elenco di sottoscrittori e informazioni dettagliate sulle relative assegnazioni. Queste informazioni includono nome, indirizzo di posta elettronica, indirizzo di posta elettronica alternativo, livello della sottoscrizione, data di assegnazione, stato di attivazione, data di scadenza, campo di riferimento, abilitazione o meno dei download, paese, lingua, stato della sottoscrizione e GUID della sottoscrizione.  L'elenco viene esportato come file CSV che può essere facilmente aperto in Microsoft Excel per la creazione di grafici, pivot e altri artefatti.
@@ -33,7 +33,7 @@ Per eseguire l'esportazione:
 > ![Esporta sottoscrittori](_img/exporting-subscriptions/exporting-subscriptions.png "Fare clic su Esporta per scaricare un elenco completo delle sottoscrizioni assegnate.")
 
 ## <a name="resources"></a>Risorse
-- [Supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Supporto delle sottoscrizioni](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: fce096a0999fefe16abc009c04f87cf4eff35748
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904686"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776832"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -71,7 +71,7 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
 1. Selezionare il nome nell'angolo superiore destro del portale Sottoscrittore.
 2. Selezionare il pulsante **modifica profilo** .
 3. Nella scheda **Informazioni** è possibile modificare nome, indirizzo e-mail, paese/area geografica, immagine del profilo e preferenze di contatto. Nella scheda **Preferenze** è possibile selezionare le impostazioni preferite per lingua, criteri di data e ora, fuso orario e tema dell'interfaccia utente.
-4. Dopo aver completato le modifiche, selezionare **Salva** .
+4. Dopo aver completato le modifiche, selezionare **Salva**.
 5. Selezionare il pulsante **indietro** del browser per tornare alla pagina dei vantaggi.
 
 ### <a name="setting-communications-preferences"></a>Impostazione delle preferenze di comunicazione
@@ -90,7 +90,7 @@ Per aggiungere un account alternativo:
 1. Accedere al [Portale sottoscrittore](https://my.visualstudio.com?wt.mc_id=o~msft~docs) con il proprio account Microsoft (MSA).
 2. Selezionare la scheda **Sottoscrizioni** .
 3. In **Collegamenti correlati** scegliere **Add alternate account** (Aggiungi account alternativo).
-4. Immettere l'indirizzo di posta elettronica dell'account aziendale e dell'Istituto di istruzione e selezionare **Aggiungi** .
+4. Immettere l'indirizzo di posta elettronica dell'account aziendale e dell'Istituto di istruzione e selezionare **Aggiungi**.
 
 Una volta aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento selezionando la scheda **sottoscrizioni** e scegliendo l'opzione appropriata nella sezione **collegamenti correlati** .
 
@@ -113,7 +113,10 @@ R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per d
 > - Se si sceglie di chiudere l'account Microsoft o di Azure AD, i dati personali verranno resi anonimi immediatamente.
 > - Se si hanno sottoscrizioni attive, i dati personali non verranno rimossi totalmente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="support-resources"></a>Risorse di supporto
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vssubscriberhelp).
+
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

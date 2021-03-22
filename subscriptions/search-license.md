@@ -4,25 +4,25 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 09/21/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono individuare i singoli sottoscrittori o i gruppi nel portale di amministrazione.
-ms.openlocfilehash: e1fd5ea959043cbea58d0eb9a14649044f5d556e
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: df94b32dfcc5e2672282c0d18859cba42b490437
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904537"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776688"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio
 Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e altre informazioni.
 
 ## <a name="to-filter-the-subscriber-list"></a>Per filtrare l'elenco di sottoscrittori
-1. Per cercare uno specifico gruppo di sottoscrittori, selezionare la scheda **Filtro** .
+1. Per cercare uno specifico gruppo di sottoscrittori, selezionare la scheda **Filtro**.
    > [!div class="mx-imgBorder"]
    > ![Selezionare il filtro per cercare un elenco di sottoscrittori](_img/search-filter/filter-list.png "Fare clic su filtro per immettere i criteri per limitare le sottoscrizioni visualizzate.")
 
-2. Inserire i criteri da usare come base per la ricerca e quindi selezionare nuovamente **Filtro** .
+2. Inserire i criteri da usare come base per la ricerca e quindi selezionare nuovamente **Filtro**.
    > [!div class="mx-imgBorder"]
    > ![Usare i campi disponibili per filtrare i dati del sottoscrittore](media/filter-subscribers.png "Immettere i valori nei vari campi per limitare i risultati della ricerca. È possibile, ad esempio, cercare "@contoso. com" per restituire un elenco di tutti i sottoscrittori con indirizzi di posta elettronica @contoso. com.")
 
@@ -36,14 +36,12 @@ Portale di amministrazione delle sottoscrizioni di Visual Studio consente di tro
    > [!div class="mx-imgBorder"]
    > ![Cancellare il filtro dall'elenco di sottoscrittori](_img/search-filter/clear-filter.png "Fare clic su Cancella filtro per rimuovere il filtro e riprendere la visualizzazione di tutte le sottoscrizioni assegnate.")
 
-
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
 - [Documentazione di Microsoft 365](/microsoft-365/)
 
-
 ## <a name="next-steps"></a>Passaggi successivi
 - Ora che si è appreso come trovare un sottoscrittore, vedere come [modificare](edit-license.md) la sottoscrizione.
-- Sono necessarie informazioni per l'uso del portale di amministrazione?  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Sono necessarie informazioni per l'uso del portale di amministrazione?  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp).

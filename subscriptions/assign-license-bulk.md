@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono assegnare le licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: 76717090731b2e1fad0758c3c6298ab572bbb4de
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 4744f689e9b03e4a6cf8c804409abddfde16c527
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249567"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776896"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -147,4 +147,4 @@ R: a seconda del modo in cui l'organizzazione ha configurato Azure AD, è possib
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Se è necessario aggiungere solo uno o due sottoscrittori,  vedere [Aggiungere singoli utenti](assign-license.md)
-- Serve aiuto? Contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/).
+- Serve aiuto? Contattare il [supporto delle sottoscrizioni](https://aka.ms/vsadminhelp).
