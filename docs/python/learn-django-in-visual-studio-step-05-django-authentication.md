@@ -11,18 +11,24 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f589aed953a852cb57570988d914f77b2fa10b2
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942490"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806017"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 
 **Passaggio precedente: [Usare il modello Progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
+::: moniker range="vs-2017"
 Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. Il modello "progetto Web Django di polling" descritto nel passaggio 6 di questa esercitazione include anche lo stesso flusso. Quando si usa uno dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel *Settings.py* del progetto Django.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. Quando si usa uno dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel file *settings.py* del progetto Django.
+::: moniker-end
 
 In questo passaggio viene descritto come:
 
@@ -210,9 +216,28 @@ Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersit
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-> [!div class="nextstepaction"]
-> [Usare il modello Progetto Web Django di sondaggi](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker range="vs-2017"
+- [Usare il modello Progetto Web Django di sondaggi](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker-end
 
+::: moniker range=">=vs-2019"
+> [!Note]
+> Durante l'esercitazione è stato eseguito il commit della soluzione di Visual Studio nel controllo del codice sorgente. A questo punto è utile eseguire un altro commit. La soluzione dovrebbe corrispondere al codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+
+A questo punto, sono stati esaminati tutti i modelli "progetto Web Django vuoto" e "progetto Web Django" in Visual Studio. Sono state apprese le nozioni di base di Django, ad esempio l'uso di visualizzazioni e modelli, e sono stati analizzati il routing, l'autenticazione e l'uso di modelli di database. A questo punto, si dovrebbe essere in grado di creare un'app Web con tutti i modelli e le visualizzazioni necessari.
+
+L'esecuzione di un'app Web nel computer di sviluppo è solo un passaggio per rendere disponibile l'app ai clienti. I passaggi successivi possono includere le attività seguenti:
+
+- Distribuire l'app Web in un server di produzione, ad esempio Servizio app di Azure. Vedere [Eseguire la pubblicazione in Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+- Personalizzare la pagina 404 creando un modello denominato *templates/404.html*. Quando questo modello è presente, Django lo usa al posto di quello predefinito. Per altre informazioni, vedere [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) (Visualizzazioni di errore) nella documentazione di Django.
+
+- Scrivere unit test in *tests.py*. I modelli di progetto di Visual Studio costituiscono il punto di partenza per questa attività. Per altre informazioni, vedere [Writing your first Django app, part 5 - testing](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) (Scrittura della prima app Django, parte 5 - test) e [Testing in Django](https://docs.djangoproject.com/en/2.0/topics/testing/) (Test in Django) nella documentazione di Django.
+
+- Modificare l'app da SQLite a un archivio dati a livello di produzione, ad esempio PostgreSQL, MySQL e SQL Server (che possono tutti essere ospitati in Azure). Come descritto in [When to use SQLite](https://www.sqlite.org/whentouse.html) (Quando usare SQLite) (sqlite.org), SQLite è appropriato per i siti con traffico medio o basso, con meno di 100.000 accessi al giorno, ma non è consigliato per volumi più elevati. È anche limitato a un unico computer, quindi non può essere usato in scenari con più server, ad esempio con il bilanciamento del carico e la replica geografica. Per informazioni sul supporto di Django per altri database, vedere [Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup) (Configurazione del database). È anche possibile usare [Azure SDK per Python](/azure/python/) per usare servizi di archiviazione di Azure, ad esempio tabelle e BLOB.
+
+- Configurare una pipeline di integrazione continua/distribuzione continua in un servizio come Azure DevOps. Oltre a usare il controllo del codice sorgente (in Azure Repos, GitHub o altrove), è possibile configurare un progetto di Azure DevOps in modo che esegua automaticamente gli unit test come prerequisito per il rilascio, oltre che configurare la pipeline per la distribuzione in un server di gestione temporanea per eseguire test aggiuntivi prima della distribuzione in produzione. Azure DevOps inoltre si integra con soluzioni di monitoraggio, ad esempio App Insights, chiudendo così l'intero ciclo con strumenti di pianificazione Agile. Per altre informazioni, vedere [Creare una pipeline di CI/CD per Python con il progetto Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) e la [documentazione generale di Azure DevOps](/azure/devops/?view=vsts&preserve-view=true).
+::: moniker-end
 ## <a name="go-deeper"></a>Approfondimento
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (Autenticazione utente in Django) (docs.djangoproject.com)

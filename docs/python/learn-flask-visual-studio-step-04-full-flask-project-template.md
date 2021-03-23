@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7926a7983e43545ad47e8bc975f051821c108c18
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882869"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806004"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Passaggio 4: Usare il modello Progetto Web Flask completo
 
@@ -229,8 +229,24 @@ Provare a usare entrambe le sintassi, Jinja e Jade, per vedere quale delle due �
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-> [!div class="nextstepaction"]
-> [Il modello Progetto Web Flask di sondaggi](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker range="vs-2017"
+- [Il modello Progetto Web Flask di sondaggi](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Durante l'esercitazione è stato eseguito il commit della soluzione di Visual Studio nel controllo del codice sorgente. A questo punto è utile eseguire un altro commit. La soluzione dovrebbe corrispondere al codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
+
+A questo punto, sono stati esaminati tutti i modelli "Progetto Web Flask vuoto", "Progetto Web Flask/[Jade]" e "Progetto Web Flask[/Jade] di sondaggi" di Visual Studio. Sono stati esaminati tutti gli elementi fondamentali di Flask, ad esempio l'uso delle visualizzazioni, i modelli e il routing ed è stato spiegato come usare gli archivi dati di backup. A questo punto, si dovrebbe essere in grado di iniziare a usare un'app Web con tutti i modelli e le visualizzazioni necessari.
+
+L'esecuzione di un'app Web nel computer di sviluppo è solo un passaggio per rendere disponibile l'app ai clienti. I passaggi successivi possono includere le attività seguenti:
+
+- Distribuire l'app Web in un server di produzione, ad esempio Servizio app di Azure. Vedere [Eseguire la pubblicazione in Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+- Aggiungere un'implementazione di repository che usa un altro archivio dati a livello di produzione, ad esempio PostgreSQL, MySQL e SQL Server (che possono tutti essere ospitati in Azure). È anche possibile usare [Azure SDK per Python](/azure/python/) per usare servizi di archiviazione di Azure, ad esempio tabelle e BLOB, nonché Cosmos DB.
+
+- Configurare una pipeline di integrazione continua/distribuzione continua in un servizio come Azure DevOps. Oltre a usare il controllo del codice sorgente (in Azure Repos, GitHub o altrove), è possibile configurare un progetto di Azure DevOps in modo che esegua automaticamente gli unit test come prerequisito per il rilascio, oltre che configurare la pipeline per la distribuzione in un server di gestione temporanea per eseguire test aggiuntivi prima della distribuzione in produzione. Azure DevOps inoltre si integra con soluzioni di monitoraggio, ad esempio App Insights, chiudendo così l'intero ciclo con strumenti di pianificazione Agile. Per altre informazioni, vedere [Creare una pipeline CI/CD per Python con Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) e la [documentazione generale di Azure DevOps](/azure/devops/?view=vsts&preserve-view=true).
+::: moniker-end
 
 ## <a name="go-deeper"></a>Approfondimento
 

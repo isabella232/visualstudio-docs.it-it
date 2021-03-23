@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e77d4ea1d46914962f0791af91ad6c1efe21825c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942516"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806056"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -24,16 +24,27 @@ ms.locfileid: "99942516"
 
 Flask è definito un framework "micro" perché non mette direttamente a disposizione funzionalità come la convalida del modulo, l'astrazione di database, l'autenticazione e così via. Tali funzionalità sono invece contenute in speciali pacchetti Python denominati *estensioni* di Flask. Le estensioni si integrano perfettamente con Flask, come se facessero parte del framework. Ad esempio, lo stesso Flask non offre un motore del modello di pagina. La creazione dei modelli è possibile grazie alle estensioni, ad esempio Jinja e Jade, come illustrato in questa esercitazione.
 
+::: moniker range="vs-2017"
 In questa esercitazione verranno illustrate le procedure per:
-
-> [!div class="checklist"]
-> - Creare un progetto Flask di base in un repository Git tramite il modello "Progetto Web Flask vuoto" (passaggio 1)
-> - Creare un'app Flask con un'unica pagina ed eseguire il rendering della pagina usando un modello (passaggio 2)
-> - Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli (passaggio 3)
-> - Usare il modello Progetto Web Flask per creare un'app con più pagine e una progettazione reattiva (passaggio 4)
-> - Usare il modello Progetto Web Flask di sondaggi per creare un'app di sondaggi che usa un'ampia gamma di opzioni di archiviazione (Archiviazione di Azure, MongoDB o memoria).
+- Creare un progetto Flask di base in un repository Git tramite il modello "Progetto Web Flask vuoto" (passaggio 1)
+- Creare un'app Flask con un'unica pagina ed eseguire il rendering della pagina usando un modello (passaggio 2)
+- Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli (passaggio 3)
+- Usare il modello Progetto Web Flask per creare un'app con più pagine e una progettazione reattiva (passaggio 4)
+- Usare il modello Progetto Web Flask di sondaggi per creare un'app di sondaggi che usa un'ampia gamma di opzioni di archiviazione (Archiviazione di Azure, MongoDB o memoria).
 
 Nel corso della procedura verrà creata un'unica soluzione di Visual Studio che contiene tre progetti separati. Il progetto viene creato usando diversi modelli di progetto Flask inclusi in Visual Studio. Mantenendo i progetti nella stessa soluzione, è possibile spostarsi facilmente tra i diversi file per confrontarli.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+In questa esercitazione verranno illustrate le procedure per:
+- Creare un progetto Flask di base in un repository Git tramite il modello "Progetto Web Flask vuoto" (passaggio 1)
+- Creare un'app Flask con un'unica pagina ed eseguire il rendering della pagina usando un modello (passaggio 2)
+- Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli (passaggio 3)
+- Usare il modello Progetto Web Flask per creare un'app con più pagine e una progettazione reattiva (passaggio 4)
+
+Nel corso di questa procedura viene creata una singola soluzione di Visual Studio che contiene due progetti distinti. Il progetto viene creato usando diversi modelli di progetto Flask inclusi in Visual Studio. Mantenendo i progetti nella stessa soluzione, è possibile spostarsi facilmente tra i diversi file per confrontarli.
+::: moniker-end
 
 > [!Note]
 > Questa esercitazione si differenzia dalla guida [Flask Quickstart](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) (Avvio rapido di Flask) per il fatto che offre un maggior numero di informazioni e spiega come usare i vari modelli di progetto Flask, ideali come punto di partenza per la creazione dei propri progetti. Ad esempio, i modelli di progetto installano automaticamente il pacchetto Flask durante la creazione di un progetto, evitando la necessità di installare il pacchetto manualmente come illustrato nell'Avvio rapido.

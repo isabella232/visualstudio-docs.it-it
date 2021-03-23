@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf427f7597b59fc5bb6fb32766134daa5b22bf
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942660"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806069"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Django in Visual Studio
 
@@ -24,13 +24,22 @@ ms.locfileid: "99942660"
 
 In questa esercitazione verranno illustrate le procedure per:
 
-> [!div class="checklist"]
-> - Creare un progetto Django di base in un repository Git tramite il modello "Progetto Web Django vuoto" (passaggio 1)
-> - Creare un'app Django con un'unica pagina ed eseguire il rendering della pagina tramite un modello (passaggio 2)
-> - Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli (passaggio 3)
-> - Usare il modello di progetto Web Django per creare un'app con più pagine e una progettazione reattiva (passaggio 4)
-> - Autenticare gli utenti (passaggio 5)
-> - Usare il modello di progetto Web Django per le votazioni per creare un'app che usa modelli, migrazioni di database e personalizzazioni per l'interfaccia amministrativa (passaggio 6)
+::: moniker range="vs-2017"
+- Creare un progetto Django di base in un repository Git tramite il modello "Progetto Web Django vuoto" (passaggio 1)
+- Creare un'app Django con un'unica pagina ed eseguire il rendering della pagina tramite un modello (passaggio 2)
+- Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli (passaggio 3)
+- Usare il modello di progetto Web Django per creare un'app con più pagine e una progettazione reattiva (passaggio 4)
+- Autenticare gli utenti (passaggio 5)
+- Usare il modello di progetto Web Django per le votazioni per creare un'app che usa modelli, migrazioni di database e personalizzazioni per l'interfaccia amministrativa (passaggio 6)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Creare un progetto Django di base in un repository Git tramite il modello "Progetto Web Django vuoto" (passaggio 1)
+- Creare un'app Django con un'unica pagina ed eseguire il rendering della pagina tramite un modello (passaggio 2)
+- Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli (passaggio 3)
+- Usare il modello di progetto Web Django per creare un'app con più pagine e una progettazione reattiva (passaggio 4)
+- Autenticare gli utenti (passaggio 5)
+::: moniker-end
 
 ## <a name="prerequisites"></a>Prerequisiti
 
