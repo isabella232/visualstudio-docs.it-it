@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536864"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884083"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Modalità di compilazione delle app aggiunte a contenitori in Visual Studio
 
@@ -107,7 +107,7 @@ Per il funzionamento del debug nei contenitori, Visual Studio usa il mapping del
 
 |Volume|Descrizione|
 |-|-|
-| **Debugger remoto** | Contiene i bit necessari per eseguire il debugger nel contenitore a seconda del tipo di progetto. Questa operazione è illustrata più di |Dettagli nella sezione [debug](#debugging) .
+| **Debugger remoto** | Contiene i bit necessari per eseguire il debugger nel contenitore a seconda del tipo di progetto. Questa operazione viene illustrata più dettagliatamente nella sezione [debug](#debugging) .|
 | **Cartella app** | Contiene la cartella del progetto in cui si trova Dockerfile.|
 | **Cartella di origine** | Contiene il contesto di compilazione che viene passato ai comandi di Docker.|
 | **Cartelle pacchetti NuGet** | Contiene i pacchetti NuGet e le cartelle di fallback che vengono letti dal file *obj \{ Project}. csproj.. g. props* nel progetto. |
@@ -189,7 +189,7 @@ Il punto di ingresso del contenitore può essere modificato solo in progetti Doc
 
 Informazioni su come personalizzare ulteriormente le compilazioni impostando ulteriori proprietà di MSBuild nei file di progetto. Vedere [Proprietà MSBuild per progetti contenitore](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [MSBuild](../msbuild/msbuild.md) 
  [Dockerfile in Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile) 

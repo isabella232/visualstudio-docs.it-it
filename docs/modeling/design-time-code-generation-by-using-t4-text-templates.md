@@ -17,12 +17,12 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935300"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884148"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 
@@ -352,7 +352,7 @@ Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è mo
 
 4. Verificare le seguenti proprietà del file con **estensione TT** :
 
-   | | |
+   |Proprietà |Impostazione |
    |-|-|
    | **Strumento personalizzato =** | **TextTemplatingFileGenerator** |
    | **Operazione di compilazione =** | **Nessuno** |

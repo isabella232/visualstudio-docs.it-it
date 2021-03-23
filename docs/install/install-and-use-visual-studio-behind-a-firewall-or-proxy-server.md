@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44af5c5a00e1ca26eb545b0973090486f6d320ea
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: b1452976a2710026b71e89614e776134e8a36ae1
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295704"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884122"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -113,8 +113,8 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 | Componente aggiuntivo <br>componente aggiuntivo <br> manifesto <br>Verifica <br>Servizio | verificationservice.osi.office.net | https/443 | Usato per convalidare i manifesti per i componenti aggiuntivi Web di Office |
 | Componenti aggiuntivi di <br>Componenti aggiuntivi per Office | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | Usato per pubblicare e testare i componenti aggiuntivi di SharePoint e Office in SharePoint Online e Microsoft 365 |
 | Host del servizio <br>di test di<br> Host | | http/12292 | Regola del firewall che viene creata automaticamente per il test di componenti aggiuntivi di SharePoint con i flussi di lavoro |
-| Statistiche di affidabilità <br>raccolte automaticamente <br>e altri programmi <br>Analisi utilizzo <br>software (CEIP)<br> per Azure SDK e <br>per gli strumenti SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Utilizzato per inviare le statistiche di affidabilità (dati di arresto anomalo o non rispondenti) da parte dell'utente a Microsoft. Se Segnalazione errori Windows è abilitato, verranno comunque caricati i dump effettivi e non rispondenti. verranno eliminati solo i dati statistici; <br>Usato per individuare i modelli di utilizzo anonimo per l'estensione Azure Tools SDK per Visual Studio e per i modelli di utilizzo per gli strumenti SQL per Visual Studio |
-| Visual Studio <br> Analisi utilizzo <br>di Visual Studio <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Usato per la raccolta di modelli di utilizzo e log degli errori anonimi <br><br>Usato per tenere traccia dei problemi di blocco dell'interfaccia utente |
+| Statistiche di affidabilità <br>raccolte automaticamente <br>e altri programmi <br>Analisi utilizzo <br>software (CEIP)<br> per Azure SDK e <br>per gli strumenti SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Utilizzato per inviare le statistiche di affidabilità (dati di arresto anomalo o non rispondenti) da parte dell'utente a Microsoft. Se Segnalazione errori Windows è abilitato, verranno comunque caricati i dump effettivi e non rispondenti. verranno eliminati solo i dati statistici; <br>Usato per rivelare i modelli di utilizzo per l'estensione Azure Tools SDK a Visual Studio e per i modelli di utilizzo per gli strumenti SQL in Visual Studio |
+| Visual Studio <br> Analisi utilizzo <br>di Visual Studio <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Usato per raccogliere i modelli di utilizzo e i log degli errori <br><br>Usato per tenere traccia dei problemi di blocco dell'interfaccia utente |
 | Creazione e<br>gestione di <br>Risorse di Azure | management.azure.com <br>management.core.windows.net | https/443 | Usato per la creazione di siti Web di Azure o altre risorse per supportare la pubblicazione di applicazioni Web, funzioni di Azure o processi Web |
 | Controlli della disponibilità di strumenti <br>di pubblicazione Web aggiornati e <br>raccomandazioni di film | marketplace.visualstudio.com | https/443 | Usato per controllare la disponibilità di strumenti di pubblicazione aggiornati. Se disabilitato, potrebbe non essere visualizzata una potenziale estensione per la pubblicazione Web consigliata |
 | Informazioni sugli endpoint per la <br>creazione di risorse di Azure aggiornati | \*.blob.core.windows.net | https/443 | Usato per aggiornare gli endpoint usati per la creazione di risorse di Azure per alcuni servizi di Azure. Se disabilitato, vengono usate le ultime posizioni degli endpoint scaricati o predefiniti |
