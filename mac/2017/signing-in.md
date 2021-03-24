@@ -6,16 +6,16 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
-ms.openlocfilehash: 4bfa6bdfbb4b27a849b4807c99ae9dc8b9bd6764
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43032addcfbb54b6a239d465de76f85c241d562e
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950399"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999589"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Accesso a Visual Studio per Mac
 
-Quando si avvia Visual Studio per Mac per la prima volta, viene richiesto di effettuare l'accesso usando un account Microsoft. Usare un account Microsoft collegato alla licenza che si desidera usare. Se non si ha un account Microsoft, vedere [Come ottenere un account](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account).
+Quando si avvia Visual Studio per Mac per la prima volta, viene richiesto di effettuare l'accesso usando un account Microsoft. Usare un account Microsoft collegato alla licenza che si desidera usare. Se non si ha un account Microsoft, vedere [Come ottenere un account](https://support.microsoft.com/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf).
 
 Se si decide di non eseguire immediatamente l'accesso, sarà possibile usare una copia di valutazione per 30 giorni. Dopo 30 giorni è necessario accedere per continuare a usare la propria copia di Visual Studio per Mac.
 
@@ -45,7 +45,7 @@ Visual Studio per Mac supporta l'aggiunta di più account al proprio account per
 
 Per aggiungere ulteriori account utente, seguire la procedura riportata nella sezione [Come accedere a Visual Studio per Mac](#how-to-sign-in-to-visual-studio-for-mac).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedere a Visual Studio (in Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Gestire più account utente (Visual Studio in Windows)](/visualstudio/ide/work-with-multiple-user-accounts)
