@@ -8,17 +8,17 @@ helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fdbd9220ef82102dd66f10ab7f15570118bae9a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1b94c7b2cacb7ad78031721156bdd90cb666c4f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904539"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062291"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Riferimento allo schema di estensione VSIX 2,0
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato del file è regolato da uno schema. La versione 2,0 di questo schema supporta l'aggiunta di tipi e attributi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore del manifesto ignora gli elementi e gli attributi XML che non sono in grado di comprendere.
@@ -114,7 +114,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
 
     - Microsoft. VisualStudio. VSLS
 
-    - My. Shell. app
+    - My.Shell.App
 
   - `Version` -Questo attributo specifica un intervallo di versioni con le versioni minime e massime supportate di questo SKU. Un pacchetto può illustrare in dettaglio le versioni degli SKU supportati. La notazione dell'intervallo di versioni è [10,0-11,0], dove
 

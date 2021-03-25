@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45cd616a58f51a532883eeba37f06c4eb73bd72d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6dfcd44a03b110ae514c2de36092ee07fd0c35e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850674"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069920"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procedura: aprire Editor per documenti aperti
 Prima di aprire una finestra del documento, il progetto deve innanzitutto determinare se il file è già aperto nella finestra del documento per un altro editor. Il file può essere aperto in un editor specifico del progetto o in uno degli editor standard registrati con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841705"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061784"
 ---
 # <a name="share-your-app"></a>Condividere l'app
 
@@ -24,7 +24,7 @@ Ora che è stata creata un'immagine, è possibile condividerla. Per condividere 
 
 Per eseguire il push di un'immagine, è prima di tutto necessario creare un repository nell'hub docker.
 
-1. Passare all' [Hub Docker](https://hub.docker.com) ed eseguire l'accesso se necessario.
+1. Passare all' [Hub Docker](https://hub.docker.com/signup/msftedge?utm_source=msftedge) ed eseguire l'accesso se necessario.
 
 1. Fare clic sul pulsante **Crea repository** .
 

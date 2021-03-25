@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b2cb27baaca465096a14c836b0dfc7ebc43d42e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee110defb06d308c017230a36cebc2b04b3c63b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837243"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062681"
 ---
 # <a name="registering-single-file-generators"></a>Registrazione di generatori di file singoli
 Per rendere disponibile uno strumento personalizzato in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , è necessario registrarlo in modo che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possa crearne un'istanza e associarlo a un determinato tipo di progetto.

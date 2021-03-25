@@ -9,17 +9,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893f59aa9e99d990623e0c8383c12bbffbc4a510
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54f62a90ece61fc2dd8f3cc2b242957f249ed33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944511"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062772"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 Quando si crea un nuovo tipo di progetto, è necessario creare le voci del registro di sistema che consentono [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a di riconoscere e utilizzare il tipo di progetto. Queste voci del registro di sistema vengono in genere create usando un file di script del registro di sistema (con estensione RGS).
@@ -49,7 +49,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
    @="devenv.exe \"%1\""
 ```
 
-|Nome|Tipo|Data|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrjFile`|Nome e descrizione dei file di tipi di progetto con estensione FIGP.|
 |`Content Type`|REG_SZ|`Text/plain`|Tipo di contenuto per i file di progetto.|
@@ -81,7 +81,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|Nome|Tipo|Data|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@` (impostazione predefinita)|REG_SZ|`FigPrj Project VSPackage`|Nome localizzabile del pacchetto VSPackage registrato (tipo di progetto).|
 |`InprocServer32`|REG_SZ|`%MODULE%`|Percorso della DLL del tipo di progetto. L'IDE carica questa DLL e passa il CLSID VSPackage a `DllGetClassObject` per ottenere <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> la costruzione dell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> oggetto.|
@@ -132,7 +132,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
    "SortPriority"=dword:00000064
 ```
 
-|Nome|Tipo|Data|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|Nome predefinito dei progetti di questo tipo.|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID risorsa del nome da recuperare dalla DLL satellite registrata nei pacchetti.|
@@ -172,7 +172,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Nome|Tipo|Data|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID risorsa per i nuovi modelli di progetto.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito per i progetti del tipo di progetto registrato.|
@@ -193,7 +193,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
    "SortPriority"=dword:00000064
 ```
 
-|Nome|Tipo|Data|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|nessuno|Valore predefinito che indica che le voci seguenti sono per le voci dei progetti di file esterni.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valore ID risorsa per i file di modello Aggiungi nuovi elementi.|
@@ -222,7 +222,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
 
   L'ultimo campo identifica il numero di versione per la risorsa CTMENU. È possibile unire nuovamente il menu modificando il numero di versione.
 
-|Nome|Tipo|Data|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |% CLSID_Package%|REG_SZ|`,1000,1`|Risorsa per recuperare le informazioni di menu.|
 
@@ -236,7 +236,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Nome|Tipo|Data|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valore ID risorsa per le figure progetto nuovi modelli di progetto.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito della directory dei nuovi progetti. Gli elementi in questa directory verranno visualizzati nella finestra di dialogo **creazione guidata nuovo progetto** .|
@@ -251,7 +251,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
    "UseInterface"=dword:00000001
 ```
 
-|Nome|Tipo|Data|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|ID classe del pacchetto VSPackage registrato.|
 |`UseInterface`|REG_DWORD|`1`|1 indica che l'interfaccia utente verrà utilizzata per interagire con il progetto. 0 indica che non è presente alcuna interfaccia dell'interfaccia utente.|

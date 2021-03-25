@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Open With command
 - persistence, supporting Open With command
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e45e2c601873641b5ac79c54fd6709eb3f45f95d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946722"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069816"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Visualizzare i file tramite il comando Apri con
 Un progetto può richiedere all'IDE di visualizzare la finestra di dialogo **Apri con** . Questa richiesta richiede all'utente di aprire un file con una selezione di editor standard. La procedura seguente descrive questo processo:
