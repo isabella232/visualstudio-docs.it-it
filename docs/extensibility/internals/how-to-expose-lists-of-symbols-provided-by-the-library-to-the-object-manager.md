@@ -11,17 +11,17 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf1d717f423768f9dc53972c2a482e2eab913d81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0cf4cef21746834a92abfd8b2e1df3f61e08b2dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928211"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078890"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedura: esporre elenchi di simboli forniti dalla libreria al gestore oggetti
 I risultati degli strumenti di esplorazione dei simboli, **Visualizzazione classi**, **Visualizzatore oggetti**, **Visualizzatore chiamate** e **Trova simbolo**, passano le richieste per i nuovi dati al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore oggetti. Il gestore oggetti trova le librerie appropriate e richiede nuovi elenchi di simboli. Le librerie rispondono fornendo i dati richiesti al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore oggetti tramite l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore di oggetti chiama i metodi nell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia per ottenere i dati e li utilizza per popolare o aggiornare le visualizzazioni degli strumenti di esplorazione dei simboli.

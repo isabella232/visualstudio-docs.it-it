@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8933822ee5bb63b341ff51296ba2884fef2aeb75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a9aedc6324eb1d4a57517a10b80348841fa72df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935911"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078500"
 ---
 # <a name="walkthrough-display-signature-help"></a>Procedura dettagliata: visualizzare la guida per la firma
 La guida per la firma (nota anche come *informazioni sul parametro*) Visualizza la firma di un metodo in una descrizione comando quando un utente digita il carattere iniziale dell'elenco di parametri, in genere una parentesi di apertura. Poiché un parametro e un separatore di parametro (in genere una virgola) sono tipizzati, la descrizione comando viene aggiornata per visualizzare il parametro successivo in grassetto. È possibile definire la guida per la firma nei modi seguenti: nel contesto di un servizio di linguaggio, definire l'estensione del nome di file e il tipo di contenuto e visualizzare la guida della firma solo per quel tipo o visualizzare la guida della firma per un tipo di contenuto esistente (ad esempio, "testo"). In questa procedura dettagliata viene illustrato come visualizzare la guida per la firma per il tipo di contenuto "Text".

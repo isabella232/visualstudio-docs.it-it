@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95bc250219c59d4db21fcb086cdf43e0ba7800e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a500d63eb497ce6d2b23860cd3793cbc2632b819
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838630"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078461"
 ---
 # <a name="walkthrough-highlight-text"></a>Procedura dettagliata: evidenziazione del testo
 È possibile aggiungere diversi effetti visivi all'editor creando parti del componente Managed Extensibility Framework (MEF). In questa procedura dettagliata viene illustrato come evidenziare ogni occorrenza della parola corrente in un file di testo. Se una parola viene eseguita più di una volta in un file di testo e si posiziona il punto di inserimento in un'unica occorrenza, ogni occorrenza viene evidenziata.

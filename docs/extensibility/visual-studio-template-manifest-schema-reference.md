@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925827"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062499"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Riferimento allo schema del manifesto del modello di Visual Studio
 Questo schema descrive il formato dei file manifesto del modello di Visual Studio (con *estensione vstman*) generati per i modelli di progetto o di elemento di Visual Studio. Lo schema descrive anche il percorso e altre informazioni rilevanti sul modello.

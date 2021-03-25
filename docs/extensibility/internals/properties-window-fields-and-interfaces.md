@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f445d31fe995321ad6ec334a5b6eb93570b8875
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970010"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061030"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Campi e interfacce della finestra Proprietà
 Il modello per la selezione per determinare quali informazioni vengono visualizzate nella finestra **Proprietà** è basato sulla finestra con lo stato attivo nell'IDE. Ogni finestra e oggetto all'interno della finestra selezionata può avere un oggetto contesto di selezione inserito nel contesto di selezione globale. L'ambiente aggiorna il contesto di selezione globale con i valori da una cornice della finestra quando tale finestra ha lo stato attivo. Quando lo stato attivo cambia, il contesto di selezione.

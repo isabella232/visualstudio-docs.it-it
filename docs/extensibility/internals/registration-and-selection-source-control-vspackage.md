@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff23784bb833c6a68e368f5db5d3b6f1a7433bb0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837203"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069413"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrazione e selezione (VSPackage di controllo del codice sorgente)
 Un VSPackage del controllo del codice sorgente deve essere registrato per esporlo a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Se è registrato più di un VSPackage del controllo del codice sorgente, l'utente può selezionare il VSPackage da caricare in momenti appropriati. Vedere [VSPackage](../../extensibility/internals/vspackages.md) per altre informazioni sui pacchetti VSPackage e su come registrarli.

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d49fa9e858d65529e466f6ed960835ab8c2324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931266"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061953"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: usare un tasto di scelta rapida con un'estensione dell'editor
 È possibile rispondere ai tasti di scelta rapida nell'estensione dell'editor. Nella procedura dettagliata seguente viene illustrato come aggiungere un'area di visualizzazione della vista a una visualizzazione di testo utilizzando un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello dell'editor dell'area di visualizzazione del viewport e consente di aggiungere l'area di visualizzazione utilizzando il carattere +.
@@ -47,7 +47,7 @@ ms.locfileid: "99931266"
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-Nel file di classe KeyBindingTestTextViewCreationListener.cs, modificare il nome di AdornmentLayer da **KeyBindingTest** a **PurpleCornerBox**:
+Nel file di classe KeyBindingTestTextViewCreationListener. cs modificare il nome di AdornmentLayer da **KeyBindingTest** a **PurpleCornerBox**:
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -259,7 +259,7 @@ Il gestore del comando è un'implementazione di <xref:Microsoft.VisualStudio.Com
    }
    ```
 
-   7. Copiare la definizione del livello di area di strumenti dal file *KeyBindingTestTextViewCreationListener.cs* al *KeyBindingCommandHandler.cs* e quindi eliminare il file *KeyBindingTestTextViewCreationListener.cs* :
+   7. Copiare la definizione del livello di area di strumenti dal file *KeyBindingTestTextViewCreationListener. cs* in *KeyBindingCommandHandler. cs* e quindi eliminare il file *KeyBindingTestTextViewCreationListener. cs* :
 
    ```csharp
    /// <summary>
@@ -276,7 +276,7 @@ Il gestore del comando è un'implementazione di <xref:Microsoft.VisualStudio.Com
 
 L'area di visualizzazione originale è stata visualizzata su ogni carattere "a" in un file di testo. Ora che il codice è stato modificato per aggiungere l'area di visualizzazione in risposta al **+** carattere, viene aggiunta l'area di visualizzazione solo sulla riga in cui **+** è tipizzato il carattere. È possibile modificare il codice di area di visualizzazione in modo che l'area di visualizzazione venga visualizzata una volta in ogni ' a'.
 
-Nel file *KeyBindingTest.cs* modificare il metodo in `CreateVisuals()` modo da scorrere tutte le righe della vista per decorare il carattere "a".
+Nel file *KeyBindingTest. cs* modificare il metodo in `CreateVisuals()` modo da eseguire un'iterazione in tutte le righe della vista per decorare il carattere "a".
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

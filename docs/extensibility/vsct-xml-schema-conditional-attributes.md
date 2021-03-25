@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d123cfbd37c254522fe52bbb941afeb363d3fbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bc1bcb9d80474b467e90de6262e797087589065
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925756"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062356"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML Schema attributi condizionali
 È possibile applicare attributi condizionali a tutti gli elenchi e gli elementi. Gli operatori logici e le espressioni di espansione simboli restituiscono true o false. Se true, l'elenco o l'elemento associato viene incluso nell'output risultante.

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: c959660b920abc18be70b228fa6b40de1ab585f8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 57b447be3ee411b737c1aea5b0a4be5ef966c8c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037660"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062148"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Procedura dettagliata: Creare un pacchetto di estensione
 
@@ -33,9 +33,9 @@ La funzionalità pacchetto di estensione è disponibile a partire da Visual Stud
 
 Il modello di elemento del pacchetto di estensione crea un pacchetto di estensione con un set di estensioni che possono essere installate insieme.
 
-1. Nella finestra di dialogo **nuovo progetto** cercare "VSIX" e selezionare **progetto VSIX**. Per **nome progetto**, digitare "Test Extension Pack". Selezionare **Create** (Crea).
+1. Nella finestra di dialogo **nuovo progetto** cercare "VSIX" e selezionare **progetto VSIX**. Per **nome progetto**, digitare "Test Extension Pack". Selezionare **Crea**.
 
-2. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare **pacchetto di estensione**. Lasciare il nome file predefinito (ExtensionPack1.cs).
+2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare **pacchetto di estensione**. Lasciare il nome file predefinito (ExtensionPack1. cs).
 
 3. Viene aggiunto il file ExtensionPack1. vsext che contiene il codice seguente
 
@@ -73,13 +73,13 @@ Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il
 
 ::: moniker range="vs-2017"
 
-1. In Visual Studio scegliere **estensioni e aggiornamenti**dal menu **strumenti** .
+1. In Visual Studio scegliere **estensioni e aggiornamenti** dal menu **strumenti** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. In Visual Studio scegliere **estensioni gestite**dal menu **estensioni** .
+1. In Visual Studio scegliere **estensioni gestite** dal menu **estensioni** .
 
 ::: moniker-end
 
@@ -99,13 +99,13 @@ Per rimuovere l'estensione dal computer:
 
 ::: moniker range="vs-2017"
 
-1. In Visual Studio scegliere **estensioni e aggiornamenti**dal menu **strumenti** .
+1. In Visual Studio scegliere **estensioni e aggiornamenti** dal menu **strumenti** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. In Visual Studio scegliere **estensioni gestite**dal menu **estensioni** .
+1. In Visual Studio scegliere **estensioni gestite** dal menu **estensioni** .
 
 ::: moniker-end
 
