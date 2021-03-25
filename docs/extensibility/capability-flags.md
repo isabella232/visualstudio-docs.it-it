@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12acefb99de787d55bc0f932757dde5ea928c6cb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882284"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094926"
 ---
 # <a name="capability-flags"></a>Flag funzionalità
 I flag di SCC_CAP_ *xxx* sono flag di bit utilizzati per indicare le funzionalità di un plug-in del controllo del codice sorgente. I flag SCC_EXCAP_ *xxx* sono flag incrementali che indicano le funzionalità estese e vengono risolti in valori integer.
