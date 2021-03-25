@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEntryPointEvent2 interface
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da733292407c93327374a4c6fa54c558d3202caa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ccc928b3d0ca9106b6f83a4c398a694ba429ce8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153391"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065990"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 Il motore di debug (DE) Invia questa interfaccia a gestione debug sessione (SDM) quando il programma sta per eseguire la prima istruzione del codice utente.

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c484c08b3335d51283f1f6e1a7b29757a2271aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73d16337daefdfe25425982a7fc7249c42f0fa1a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906072"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086339"
 ---
 # <a name="author-vsct-files"></a>Crea file con estensione vsct
 Questo documento illustra come creare un file con *estensione vsct* per aggiungere voci di menu, barre degli strumenti e altri elementi dell'interfaccia utente a Visual Studio Integrated Development Environment (IDE). Usare questi passaggi quando si aggiungono elementi dell'interfaccia utente a un pacchetto di Visual Studio (VSPackage) che non dispone già di un file con *estensione vsct* .
