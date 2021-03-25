@@ -4,17 +4,17 @@ description: Informazioni su come usare elementi e temi comuni della shell di Vi
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8edd16744a6c094ece00ee5e4b8239f3d4f5a92e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927223"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054023"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio o si vuole che l'elemento dell'interfaccia sia coerente con funzionalità simili, usare nomi di token esistenti nei file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.

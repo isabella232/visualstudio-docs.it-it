@@ -8,17 +8,17 @@ helpviewer_keywords:
 - machine debug manager
 - debugging [Debugging SDK], Machine Debug Manager
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66cc91a544d0d0729593b4be09f82ae0eb2081ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c332b28e48b24065b5e359332df65c61365f1763
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948478"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067724"
 ---
 # <a name="process-debug-manager"></a>Gestione debug processo
 Process Debug Manager (PDM) è un componente di Visual Studio che gestisce programmi e processi, rendendoli disponibili per la gestione del debug della sessione e per i motori di debug.
