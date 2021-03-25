@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968190"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057663"
 ---
 # <a name="get-project-properties"></a>Ottenere le proprietà del progetto
 
@@ -38,7 +38,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Per visualizzare le proprietà del progetto in una finestra degli strumenti
 
-1. Nel file ProjectPropertiesToolWindowCommand.cs aggiungere le direttive using seguenti.
+1. Nel file ProjectPropertiesToolWindowCommand. cs aggiungere le direttive using seguenti.
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
     ```
 
-2. In *ProjectPropertiesToolWindowControl. XAML* rimuovere il pulsante esistente e aggiungere un controllo TreeView dalla casella degli strumenti. È anche possibile rimuovere il gestore dell'evento click dal file *ProjectPropertiesToolWindowControl.XAML.cs* .
+2. In *ProjectPropertiesToolWindowControl. XAML* rimuovere il pulsante esistente e aggiungere un controllo TreeView dalla casella degli strumenti. È anche possibile rimuovere il gestore dell'evento click dal file *ProjectPropertiesToolWindowControl. XAML. cs* .
 
-3. In *ProjectPropertiesToolWindowCommand.cs* utilizzare il `ShowToolWindow()` metodo per aprire il progetto e leggere le relative proprietà, quindi aggiungere le proprietà al controllo TreeView. Il codice per ShowToolWindow dovrebbe essere simile al seguente:
+3. In *ProjectPropertiesToolWindowCommand. cs* usare il `ShowToolWindow()` metodo per aprire il progetto e leggere le relative proprietà, quindi aggiungere le proprietà al controllo TreeView. Il codice per ShowToolWindow dovrebbe essere simile al seguente:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

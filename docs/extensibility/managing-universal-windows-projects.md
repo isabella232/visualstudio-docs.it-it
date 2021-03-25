@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af418d8ffcaad18aca4497078f4e24f9bb679fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943244"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090642"
 ---
 # <a name="manage-universal-windows-projects"></a>Gestire i progetti di Windows universale
 
@@ -31,7 +31,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 2. Aggiungere un riferimento a *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* e *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (nella sezione **Extensions** ).
 
-3. Aprire *TestUniversalProject.cs* e aggiungere le `using` direttive seguenti:
+3. Aprire *TestUniversalProject. cs* e aggiungere le `using` direttive seguenti:
 
     ```csharp
     using EnvDTE;
@@ -425,9 +425,9 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
       In questa procedura viene aggiunto un listener di eventi a un progetto condiviso e a un progetto di piattaforma. Quindi, quando si rinomina un file in un progetto condiviso e un altro file in un progetto di piattaforma, è possibile visualizzare gli eventi generati per ogni operazione di ridenominazione.
 
-2. Aggiungere un listener di eventi. Aggiungere un nuovo file di classe al progetto e chiamarlo *HierarchyEventListener.cs*.
+2. Aggiungere un listener di eventi. Aggiungere un nuovo file di classe al progetto e denominarlo *HierarchyEventListener. cs*.
 
-3. Aprire il file *HierarchyEventListener.cs* e aggiungere le direttive using seguenti:
+3. Aprire il file *HierarchyEventListener. cs* e aggiungere le direttive using seguenti:
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -551,7 +551,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Compilare ed eseguire il progetto. Creare un'app Universal Hub C# nell'istanza sperimentale, passare al menu **strumenti** e fare clic su **richiama TestUniversalProject** e controllare il testo nel riquadro di output generale. Il nome del primo elemento nel progetto condiviso (si prevede che sia il file *app. XAML* ) deve essere modificato e si noterà che l' <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> evento è stato generato. In questo caso, poiché rinominare *app. XAML* causa la ridenominazione di *app.XAML.cs* , dovrebbero essere visualizzati quattro eventi, due per ogni progetto di piattaforma. Gli eventi DTE non rilevano gli elementi nel progetto condiviso. Verranno visualizzati due <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventi (uno per ogni progetto di piattaforma), ma nessun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento.
+11. Compilare ed eseguire il progetto. Creare un'app Universal Hub C# nell'istanza sperimentale, passare al menu **strumenti** e fare clic su **richiama TestUniversalProject** e controllare il testo nel riquadro di output generale. Il nome del primo elemento nel progetto condiviso (si prevede che sia il file *app. XAML* ) deve essere modificato e si noterà che l' <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> evento è stato generato. In questo caso, poiché la ridenominazione di *app. XAML* causa la ridenominazione di *app. XAML. cs* , verranno visualizzati quattro eventi, due per ogni progetto di piattaforma. Gli eventi DTE non rilevano gli elementi nel progetto condiviso. Verranno visualizzati due <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventi (uno per ogni progetto di piattaforma), ma nessun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento.
 
 12. A questo punto, provare a rinominare un file in un progetto di piattaforma ed è possibile visualizzare la differenza negli eventi che vengono generati. Aggiungere il codice seguente in `ShowMessageBox` dopo la chiamata a `ModifyFileName` .
 

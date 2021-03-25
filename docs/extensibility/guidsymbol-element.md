@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f739135a9a4bed969163ce26911e5304a66822b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb683c99614797fa8b05eae87c758ec33f675c99
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943394"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057455"
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
 L' `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando. L'ID deriva da un `IDSymbol` elemento nell' `GuidSymbol` elemento. L' `GuidSymbol` elemento dispone di un `name` attributo che fornisce un nome descrittivo per il GUID, contenuto nell' `value` attributo.

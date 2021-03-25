@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f55e99d9df10ef2f96761a9436597d227cf0cd93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 945d1a4d1acde0ac3fef9918123f963cf27127f1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886691"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090551"
 ---
 # <a name="mssccprjscc-file"></a>Mssccprj. File SCC
 Quando si inserisce una soluzione Visual Studio o un progetto nel controllo del codice sorgente usando l'IDE, l'IDE riceve due informazioni chiave. Le informazioni provengono dal plug-in del controllo del codice sorgente sotto forma di stringhe. Queste stringhe, "AuxPath" e "ProjName", sono opache per l'IDE, ma sono usate dal plug-in per individuare la soluzione o il progetto nel controllo della versione. L'IDE ottiene in genere queste stringhe la prima volta chiamando il [SccGetProjPath](../extensibility/sccgetprojpath-function.md)e quindi le salva nel file di soluzione o di progetto per le chiamate future al [SccOpenProject](../extensibility/sccopenproject-function.md). Quando incorporati nei file di soluzione e di progetto, le stringhe "AuxPath" e "ProjName" non vengono aggiornate automaticamente quando un utente esegue il branching, il fork o copia i file della soluzione e del progetto presenti nel controllo della versione. Per assicurarsi che la soluzione e i file di progetto puntino al percorso corretto nel controllo della versione, gli utenti devono aggiornare manualmente le stringhe. Poiché le stringhe sono pensate per essere opache, potrebbe non essere sempre chiaro come devono essere aggiornate.
