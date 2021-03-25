@@ -8,24 +8,24 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58c46da9023cc64246f1ea9ee4bde1ec866c545d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967423"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090356"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Rende permanente la proprietà di un elemento di progetto
 È possibile che si desideri salvare in modo permanente una proprietà aggiunta a un elemento del progetto, ad esempio l'autore di un file di origine. Questa operazione può essere eseguita archiviando la proprietà nel file di progetto.
 
  Il primo passaggio per salvare in modo permanente una proprietà in un file di progetto consiste nell'ottenere la gerarchia del progetto come <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaccia. È possibile ottenere questa interfaccia tramite l'automazione o tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . Una volta ottenuta l'interfaccia, è possibile utilizzarla per determinare l'elemento del progetto attualmente selezionato. Una volta ottenuto l'ID dell'elemento del progetto, è possibile usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> per aggiungere la proprietà.
 
- Nelle procedure seguenti viene resa permanente la proprietà *vspkg.cs* `Author` con il valore `Tom` nel file di progetto.
+ Nelle procedure seguenti viene resa permanente la proprietà *vspkg. cs* `Author` con il valore `Tom` nel file di progetto.
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Per ottenere la gerarchia del progetto con l'oggetto DTE
 
@@ -119,7 +119,7 @@ ms.locfileid: "99967423"
 
 1. Avviare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e quindi aprire o creare una soluzione.
 
-2. Selezionare l'elemento del progetto VsPkg.cs in **Esplora soluzioni**.
+2. Selezionare l'elemento del progetto VsPkg. cs in **Esplora soluzioni**.
 
 3. Usare un punto di interruzione o determinare in altro modo che il pacchetto VSPackage sia caricato e che SetItemAttribute sia in esecuzione.
 

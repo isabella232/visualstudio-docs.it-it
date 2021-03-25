@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f3b0ddf956c3f5c2ec2fe51163b52f2a7a973aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9feacd8e051b47b1fec6c3d3ad08e34e591fc57c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846426"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064319"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica dell'integrazione del controllo del codice sorgente
 In questa sezione vengono confrontati i due modi per integrarsi nel controllo del codice sorgente di Visual Studio. un plug-in del controllo del codice sorgente e un VSPackage che fornisce una soluzione di controllo del codice sorgente ed evidenzia le nuove funzionalità del controllo del codice sorgente. Visual Studio consente il cambio manuale tra i pacchetti VSPackage del controllo del codice sorgente e i plug-in del controllo del codice sorgente, nonché il cambio automatico basato sulla soluzione.

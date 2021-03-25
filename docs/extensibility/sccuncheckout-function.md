@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccUncheckout function
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e0c4904a92d71e000d8c911d551eb8d0aab621
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0144755d18bbabee47f7aad25337e3c41588ebe5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221353"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090161"
 ---
 # <a name="sccuncheckout-function"></a>Funzione SccUncheckout
 Questa funzione Annulla un'operazione di estrazione precedente, ripristinando in tal modo il contenuto del file o dei file selezionati nello stato precedente all'estrazione. Tutte le modifiche apportate al file dall'estrazione vengono perse.

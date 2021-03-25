@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, architecture
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e4de5f46746f79e1c7598e1c2a2a6af6ae1d92a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e9f19506c58f65f80900c08fe339c7478144546
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912692"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064228"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architettura dei pacchetti VSPackage di controllo del codice sorgente
 Un pacchetto di controllo del codice sorgente è un VSPackage che usa i servizi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] forniti dall'IDE. In restituzione, un pacchetto di controllo del codice sorgente fornisce le funzionalità come servizio di controllo del codice sorgente. Inoltre, un pacchetto di controllo del codice sorgente è un'alternativa più versatile rispetto a un plug-in del controllo del codice sorgente per l'integrazione del controllo del codice sorgente in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

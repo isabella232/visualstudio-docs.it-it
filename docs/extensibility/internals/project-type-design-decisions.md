@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project types, items
 - project types, design decisions
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b051abfede6ec90350878f669ed32e7e26b299
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f1a90082b0ba9d18336463b26cf72acea39851b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896758"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064309"
 ---
 # <a name="project-type-design-decisions"></a>Decisioni di progettazione relative al tipo di progetto
 Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisioni di progettazione per il tipo di progetto. È necessario decidere quali tipi di elementi saranno contenuti nei progetti, come verranno salvati in modo permanente i file di progetto e il modello di impegno che verrà usato.

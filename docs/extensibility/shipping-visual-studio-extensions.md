@@ -9,17 +9,17 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c88c80ffbc1e80815b8370a940a75c0eb197ff78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938096"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090135"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Distribuzione delle estensioni di Visual Studio
 Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in altri computer, condividerla con gli amici e i colleghi oppure pubblicarla nel Visual Studio Marketplace. In questa sezione vengono illustrate tutte le operazioni che è necessario eseguire per pubblicare e gestire l'estensione: uso dei file VSIX, pubblicazione, localizzazione e aggiornamento.

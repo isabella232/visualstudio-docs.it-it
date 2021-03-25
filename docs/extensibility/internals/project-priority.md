@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75ea6485e2ae613ca03fb3900e3e2ba9d415af95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6aefb6b1670da812a36efcc1baa3cb23f23e2561
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852596"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064488"
 ---
 # <a name="project-priority"></a>Priorità di progetto
 Un elemento del progetto è in genere un membro di un solo progetto nella soluzione. Pertanto, l'IDE può determinare facilmente quale progetto viene utilizzato per aprire l'elemento. Tuttavia, se un elemento è un membro di più di un progetto, l'IDE usa uno schema di priorità per determinare il progetto migliore per l'apertura dell'elemento.
