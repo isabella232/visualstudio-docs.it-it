@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 05/23/2019
 ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f022023ec03ddb280424f3c47944c91e8fa696de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ff3fa6f061f894abce17d2e6c58bfb791740a90
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958388"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061771"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
 Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra di dialogo **Strumenti/Opzioni** , finestre proprietà e alcune altre finestre di dialogo. Le estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come strumento esterno leggendo e scrivendo nell'archivio impostazioni utente.
@@ -24,7 +24,7 @@ Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra d
 
 1. Creare un progetto VSIX denominato UserSettingsStoreExtension e quindi aggiungere un comando personalizzato denominato UserSettingsStoreCommand. Per ulteriori informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. In UserSettingsStoreCommand.cs aggiungere le direttive using seguenti:
+2. In UserSettingsStoreCommand. cs aggiungere le direttive using seguenti:
 
     ```csharp
     using System.Collections.Generic;

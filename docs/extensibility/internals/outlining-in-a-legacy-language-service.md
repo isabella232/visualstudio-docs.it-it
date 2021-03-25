@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a2f00cc4e968551983a8b943d256b49e33d7d6d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a56d755341aa611f0e2762f6bae8940778fe0864
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954633"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062954"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Struttura in un servizio di linguaggio legacy
 La struttura rende possibile la compressione di un programma complesso in una panoramica o una struttura. In C#, ad esempio, tutti i metodi possono essere compressi in una sola riga, mostrando solo la firma del metodo. Inoltre, le strutture e le classi possono essere compresse per visualizzare solo i nomi delle strutture e delle classi. All'interno di un singolo metodo, la logica complessa può essere compressa per mostrare il flusso generale mostrando solo la prima riga di istruzioni, ad esempio `foreach` , `if` e `while` .

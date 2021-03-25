@@ -12,17 +12,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 970ab167434da4ba9c28eb6bbf9a8ea5f6cc6af0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938135"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070141"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estendere le finestre Proprietà, Elenco attività, output e opzioni
 È possibile accedere a qualsiasi finestra degli strumenti in Visual Studio. In questa procedura dettagliata viene illustrato come integrare le informazioni relative alla finestra degli strumenti in una nuova pagina **Opzioni** e una nuova impostazione nella pagina **Proprietà** e come scrivere nelle finestre di **elenco attività** e **output** .
@@ -63,7 +63,7 @@ ms.locfileid: "99938135"
 
 ### <a name="customize-the-constructor"></a>Personalizzare il costruttore
 
-1. Nel file *TodoWindowControl.XAML.cs* aggiungere la direttiva using seguente:
+1. Nel file *TodoWindowControl. XAML. cs* aggiungere la direttiva using seguente:
 
     ```csharp
     using System;
@@ -81,7 +81,7 @@ ms.locfileid: "99938135"
     }
     ```
 
-3. In *TodoWindow.cs* modificare il costruttore TodoWindowControl in modo da includere il parametro TodoWindow. Il codice dovrebbe essere simile al seguente:
+3. In *TodoWindow. cs* modificare il costruttore TodoWindowControl in modo da includere il parametro TodoWindow. Il codice dovrebbe essere simile al seguente:
 
     ```csharp
     public TodoWindow() : base(null)
@@ -95,7 +95,7 @@ ms.locfileid: "99938135"
     ```
 
 ## <a name="create-an-options-page"></a>Creare una pagina di opzioni
- È possibile specificare una pagina nella finestra di dialogo **Opzioni** in modo che gli utenti possano modificare le impostazioni per la finestra degli strumenti. La creazione di una pagina di opzioni richiede sia una classe che descrive le opzioni e una voce nel file *TodoListPackage.cs* o *TodoListPackage. vb* .
+ È possibile specificare una pagina nella finestra di dialogo **Opzioni** in modo che gli utenti possano modificare le impostazioni per la finestra degli strumenti. La creazione di una pagina di opzioni richiede sia una classe che descrive le opzioni e una voce nel file *TodoListPackage. cs* o *TodoListPackage. vb* .
 
 1. Aggiungere una classe denominata `ToolsOptions.cs`. Fare in modo che la `ToolsOptions` classe erediti da <xref:Microsoft.VisualStudio.Shell.DialogPage> .
 
@@ -127,7 +127,7 @@ ms.locfileid: "99938135"
 
 ### <a name="make-the-options-page-available-to-users"></a>Rendere disponibile la pagina opzioni agli utenti
 
-1. In *TodoWindowPackage.cs* aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> alla `TodoWindowPackage` classe:
+1. In *TodoWindowPackage. cs* aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> alla `TodoWindowPackage` classe:
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -152,7 +152,7 @@ ms.locfileid: "99938135"
 
      ![Finestra Proprietà](../extensibility/media/t5properties.png "T5Properties")
 
-2. Aggiungere le direttive using seguenti al file *TodoItem.cs* .
+2. Aggiungere le direttive using seguenti al file *TodoItem. cs* .
 
     ```csharp
     using System.ComponentModel;
@@ -232,7 +232,7 @@ ms.locfileid: "99938135"
     }
     ```
 
-5. Poiché le istanze della `TodoItem` classe verranno archiviate nella casella di riepilogo e il controllo ListBox chiamerà la `ToString` funzione, è necessario eseguire l'overload della `ToString` funzione. Aggiungere il codice seguente a *TodoItem.cs*, dopo il costruttore e prima della fine della classe.
+5. Poiché le istanze della `TodoItem` classe verranno archiviate nella casella di riepilogo e il controllo ListBox chiamerà la `ToString` funzione, è necessario eseguire l'overload della `ToString` funzione. Aggiungere il codice seguente a *TodoItem. cs*, dopo il costruttore e prima della fine della classe.
 
     ```csharp
     public override string ToString()
@@ -241,7 +241,7 @@ ms.locfileid: "99938135"
     }
     ```
 
-6. In *TodoWindowControl.XAML.cs* aggiungere i metodi stub alla `TodoWindowControl` classe per i `CheckForError` metodi e `UpdateList` . Inserirli dopo ProcessDialogChar e prima della fine del file.
+6. In *TodoWindowControl. XAML. cs* aggiungere metodi stub alla `TodoWindowControl` classe per i `CheckForError` `UpdateList` metodi e. Inserirli dopo ProcessDialogChar e prima della fine del file.
 
     ```csharp
     public void CheckForErrors()
@@ -285,7 +285,7 @@ ms.locfileid: "99938135"
     }
     ```
 
-4. Aggiungere le direttive using seguenti a *TodoWindowControl.XAML.cs*:
+4. Aggiungere le seguenti direttive using a *TodoWindowControl. XAML. cs*:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -353,7 +353,7 @@ ms.locfileid: "99938135"
 
      Ora che è disponibile una classe che può essere usata dalla finestra **Proprietà** , è possibile integrare la finestra **Proprietà** con la finestra degli strumenti. Quando l'utente fa clic su un elemento nella casella di riepilogo nella finestra degli strumenti, la finestra **Proprietà** deve essere aggiornata di conseguenza. Analogamente, quando l'utente modifica un elemento ToDo nella finestra **Proprietà** , l'elemento associato deve essere aggiornato.
 
-7. A questo punto, aggiungere il resto del codice della funzione Updates in *TodoWindowControl.XAML.cs*. Deve eliminare e aggiungere nuovamente il TodoItem modificato dalla casella di riepilogo.
+7. A questo punto, aggiungere il resto del codice della funzione Updates in *TodoWindowControl. XAML. cs*. Deve eliminare e aggiungere nuovamente il TodoItem modificato dalla casella di riepilogo.
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -378,7 +378,7 @@ ms.locfileid: "99938135"
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Aggiungere testo alla finestra di output ed elementi al Elenco attività
  Per il **elenco attività** si crea un nuovo oggetto di tipo Task, quindi si aggiunge tale oggetto attività alla **elenco attività** chiamando il relativo `Add` metodo. Per scrivere nella finestra di **output** , chiamare il relativo `GetPane` metodo per ottenere un oggetto riquadro, quindi chiamare il `OutputString` metodo dell'oggetto riquadro.
 
-1. In *TodoWindowControl.XAML.cs*, nel `button1_Click` metodo, aggiungere il codice per ottenere il riquadro **generale** della finestra di **output** (impostazione predefinita) e scrivervi. Il metodo dovrebbe essere simile al seguente:
+1. In *TodoWindowControl. XAML. cs*, nel `button1_Click` metodo, aggiungere il codice per ottenere il riquadro **generale** della finestra di **output** (impostazione predefinita) e scrivervi. Il metodo dovrebbe essere simile al seguente:
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)

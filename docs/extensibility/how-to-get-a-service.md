@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60e6093eb439aa3b0e2a0a86e0d21d8ace95e00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9096250f72e6bf64b2c6b76eeaa313ee7769dd51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911755"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070089"
 ---
 # <a name="how-to-get-a-service"></a>Procedura: ottenere un servizio
 
@@ -31,9 +31,9 @@ Quando Visual Studio carica un <xref:Microsoft.VisualStudio.Shell.Package> ogget
 
 1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `GetServiceExtension` . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **GetServiceCommand**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a   >  **estensibilità** di Visual C# e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *GetServiceCommand.cs*. Per ulteriori informazioni su come creare un comando personalizzato, [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **GetServiceCommand**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a   >  **estensibilità** di Visual C# e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *GetServiceCommand. cs*. Per ulteriori informazioni su come creare un comando personalizzato, [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-3. In *GetServiceCommand.cs* rimuovere il corpo del `MenuItemCommand` metodo e aggiungere il codice seguente:
+3. In *GetServiceCommand. cs* rimuovere il corpo del `MenuItemCommand` metodo e aggiungere il codice seguente:
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;

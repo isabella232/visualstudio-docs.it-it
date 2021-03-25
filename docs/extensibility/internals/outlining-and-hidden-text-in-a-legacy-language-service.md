@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - outlining, supporting in native code
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9bc6e4b742326e979c2701bb5792127539274a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e2a8331dd308b348d29f2eb21d7dac09b13a183
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895466"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062993"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Definizione della struttura e testo nascosto in un servizio di linguaggio legacy
 La struttura rende possibile la compressione di una sequenza di righe di testo in una singola riga. In C++, ad esempio, tutti i metodi possono essere compressi in una sola riga, mostrando solo la firma del metodo. Il testo nascosto è la sequenza di righe di testo che può essere visualizzata o nascosta.
