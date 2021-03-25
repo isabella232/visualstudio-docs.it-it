@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3432092bc73ef3a06c807a1b4c4942080b9fce8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa85d5b5cf4b99840e181fb24b5913ff72a3fee0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883545"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070336"
 ---
 # <a name="dynamically-add-menu-items"></a>Aggiungi dinamicamente voci di menu
 È possibile aggiungere voci di menu in fase di esecuzione specificando il `DynamicItemStart` flag di comando in una definizione di pulsante segnaposto nel file della tabella dei comandi di Visual Studio (con *estensione vsct*), quindi definendo (in codice) il numero di voci di menu da visualizzare e gestire i comandi. Quando si carica il pacchetto VSPackage, il segnaposto viene sostituito con le voci di menu dinamiche.
@@ -144,7 +144,7 @@ ms.locfileid: "99883545"
 ## <a name="implement-the-dynamic-menu-command"></a>Implementare il comando di menu dinamico
  Si crea una classe di comando di menu dinamico che eredita da <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . In questa implementazione, il costruttore specifica un predicato da usare per i comandi corrispondenti. È necessario eseguire l'override del <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> metodo per utilizzare questo predicato per impostare la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> proprietà, che identifica il comando da richiamare.
 
-1. Creare un nuovo file di classe C# denominato *DynamicItemMenuCommand.cs* e aggiungere una classe denominata **DynamicItemMenuCommand** che eredita da <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
+1. Creare un nuovo file di classe C# denominato *DynamicItemMenuCommand. cs* e aggiungere una classe denominata **DynamicItemMenuCommand** che eredita da <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -207,14 +207,14 @@ ms.locfileid: "99883545"
 ## <a name="add-the-command"></a>Aggiungere il comando
  Il costruttore DynamicMenu è la posizione in cui vengono impostati i comandi di menu, inclusi i menu dinamici e le voci di menu.
 
-1. In *DynamicMenuPackage.cs* aggiungere il GUID del set di comandi e l'ID del comando:
+1. In *DynamicMenuPackage. cs* aggiungere il GUID del set di comandi e l'ID del comando:
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. Nel file *DynamicMenu.cs* aggiungere le direttive using seguenti:
+2. Nel file *DynamicMenu. cs* aggiungere le direttive using seguenti:
 
     ```csharp
     using EnvDTE;
@@ -333,7 +333,7 @@ private bool IsValidDynamicItem(int commandId)
 ```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Impostare il pacchetto VSPackage per il caricamento solo quando una soluzione include più progetti
- Poiché il comando **Imposta progetto di avvio** non ha senso, a meno che la soluzione attiva non disponga di più di un progetto, è possibile impostare il pacchetto VSPackage per il caricamento automatico solo in questo caso. Usare <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> insieme al contesto dell'interfaccia utente <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> . Nel file *DynamicMenuPackage.cs* aggiungere gli attributi seguenti alla classe DynamicMenuPackage:
+ Poiché il comando **Imposta progetto di avvio** non ha senso, a meno che la soluzione attiva non disponga di più di un progetto, è possibile impostare il pacchetto VSPackage per il caricamento automatico solo in questo caso. Usare <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> insieme al contesto dell'interfaccia utente <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> . Nel file *DynamicMenuPackage. cs* aggiungere gli attributi seguenti alla classe DynamicMenuPackage:
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7891cb6a40e6b7de48ba11871688881625b9c68d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e391ad66c9925dc68997ff610dc5d1556ddf09b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895609"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063084"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generazione nuovo progetto: Dietro le quinte, seconda parte
 
@@ -31,7 +31,7 @@ Nella [generazione di un nuovo progetto: dietro le quinte](../../extensibility/i
 ### <a name="template-parameter-replacement"></a>Sostituzione parametri modello
  Quando il modello copia un modello di elemento in un nuovo progetto, sostituisce tutti i parametri di modello con stringhe per personalizzare il file. Un parametro di modello è un token speciale che è preceduto e seguito da un segno di dollaro, ad esempio $date $.
 
- Viene ora esaminato un modello di elemento di progetto tipico. Estrarre ed esaminare Program.cs nella cartella Programmi\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
+ Viene ora esaminato un modello di elemento di progetto tipico. Estrarre ed esaminare Program. cs nella cartella Programmi\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ namespace Simple
  In questo modo viene indicato al nuovo modello di progetto di creare il file di progetto con estensione csproj semplice copiando e personalizzando l'elemento del modello WindowsApplication. csproj.
 
 ### <a name="designers-and-references"></a>Finestre di progettazione e riferimenti
- È possibile vedere nella Esplora soluzioni che la cartella Properties è presente e che contiene i file previsti. Ma cosa accade per i riferimenti al progetto e le dipendenze dei file di progettazione, ad esempio Resources.Designer.cs in resources. resx e Form1.Designer.cs a Form1.cs?  Queste impostazioni vengono configurate nel file con estensione csproj semplice quando viene generato.
+ È possibile vedere nella Esplora soluzioni che la cartella Properties è presente e che contiene i file previsti. Per quanto riguarda i riferimenti al progetto e le dipendenze del file di progettazione, ad esempio resources. designer. cs in resources. resx e Form1. designer. cs a Form1. cs?  Queste impostazioni vengono configurate nel file con estensione csproj semplice quando viene generato.
 
  Di seguito è riportato il \<ItemGroup> da Simple. csproj che consente di creare i riferimenti al progetto:
 
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- Si noterà che si tratta dei sei riferimenti del progetto presenti nel Esplora soluzioni. Ecco una sezione di un altro \<ItemGroup> . Molte righe di codice sono state eliminate per maggiore chiarezza. Questa sezione rende Settings.Designer.cs dipendente da Settings. Settings:
+ Si noterà che si tratta dei sei riferimenti del progetto presenti nel Esplora soluzioni. Ecco una sezione di un altro \<ItemGroup> . Molte righe di codice sono state eliminate per maggiore chiarezza. Questa sezione rende Settings. designer. CS dipendente da Settings. Settings:
 
 ```xml
 <ItemGroup>

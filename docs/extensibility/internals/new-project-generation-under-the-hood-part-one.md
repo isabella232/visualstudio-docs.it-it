@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27a7e0f3175388b963e85950ea903843caff3baa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895778"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063149"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generazione nuovo progetto: Dietro le quinte, prima parte
 Hai mai pensato come creare un tipo di progetto personalizzato? Cosa accade effettivamente quando si crea un nuovo progetto? Diamo un'occhiata sotto la cappa e vediamo cosa succede.
