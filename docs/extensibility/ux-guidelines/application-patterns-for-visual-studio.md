@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b19d60294431a08fa26f11bf58606893f392cd1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892593"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060237"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli delle applicazioni per Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interazioni finestra
@@ -117,7 +117,7 @@ Esempi di finestre degli strumenti di elenco navigabile sono le Esplora soluzion
 
 | Finestra degli strumenti | Funzione |
 | --- | --- |
-| Guida | Una finestra che consente agli utenti di accedere a diversi metodi per ottenere informazioni dalla guida, da "ricerca per categorie" video nei forum MSDN. |
+| Help | Una finestra che consente agli utenti di accedere a diversi metodi per ottenere informazioni dalla guida, da "ricerca per categorie" video nei forum MSDN. |
 | Guida dinamica | Una finestra degli strumenti che Visualizza i collegamenti agli argomenti della guida applicabili alla selezione corrente. |
 | Visualizzatore oggetti | Un frame a due colonne con un elenco di componenti oggetto gerarchici nel riquadro sinistro e le proprietà e i metodi dell'oggetto nella colonna a destra. |
 
@@ -513,7 +513,7 @@ L'utente deve sempre essere in grado di determinare l'effetto di un'operazione d
 | :---: | --- | --- |
 | ![Icona di "nessun rilascio" del mouse](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Nessuna eliminazione | Non è possibile eliminare l'elemento nella posizione specificata. |
 | ![Icona "copia" del mouse](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copia | L'elemento verrà copiato nel percorso di destinazione. |
-| ![Icona "spostamento" del mouse](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Spostamento | L'elemento verrà spostato nel percorso di destinazione. |
+| ![Icona "spostamento" del mouse](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Sposta | L'elemento verrà spostato nel percorso di destinazione. |
 | ![Icona "aggiungi riferimento" del mouse](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Aggiungi riferimento | Un riferimento all'elemento selezionato verrà aggiunto al percorso di destinazione. |
 
 #### <a name="reference-based-projects"></a>Progetti basati su riferimento
@@ -521,11 +521,11 @@ L'utente deve sempre essere in grado di determinare l'effetto di un'operazione d
 
 | Modificatore | Category | Elemento di origine: riferimento/collegamento | Elemento di origine: elemento fisico o file system ( `CF_HDROP` ) |
 | --- | --- | --- | --- |
-| Nessun modificatore | Azione | Spostamento | Collegamento |
+| Nessun modificatore | Azione | Sposta | Collegamento |
 | Nessun modificatore | Destinazione | Aggiunge un riferimento all'elemento originale | Aggiunge un riferimento all'elemento originale |
 | Nessun modificatore | Source (Sorgente) | Elimina il riferimento all'elemento originale | Mantiene l'elemento originale |
 | Nessun modificatore | Risultato | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione | `DROPEFFECT_LINK` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione |
-| Maiusc + trascina | Azione | Spostamento | Nessuna eliminazione |
+| Maiusc + trascina | Azione | Sposta | Nessuna eliminazione |
 | Maiusc + trascina | Destinazione | Aggiunge un riferimento all'elemento originale | Nessuna eliminazione |
 | Maiusc + trascina | Source (Sorgente) | Elimina il riferimento all'elemento originale | Nessuna eliminazione |
 | Maiusc + trascina | Risultato | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione | Nessuna eliminazione |
@@ -538,7 +538,7 @@ L'utente deve sempre essere in grado di determinare l'effetto di un'operazione d
 | Ctrl + Maiusc + trascina | Source (Sorgente) | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |
 | Ctrl + Maiusc + trascina | Risultato | `DROPEFFECT_LINK` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione | `DROPEFFECT_LINK` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione |
 | Ctrl + Maiusc + trascina | Nota | Come il comportamento di trascinamento della selezione per i collegamenti in Esplora risorse. ||
-| Taglia/incolla | Azione | Spostamento | Collegamento |
+| Taglia/incolla | Azione | Sposta | Collegamento |
 | Taglia/incolla | Destinazione | Aggiunge un riferimento all'elemento originale | Aggiunge un riferimento all'elemento originale |
 | Taglia/incolla | Source (Sorgente) | Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale |
 | Taglia/incolla | Risultato | L'elemento rimane nella posizione originale nella risorsa di archiviazione | L'elemento rimane nella posizione originale nella risorsa di archiviazione |
@@ -552,10 +552,10 @@ Nella tabella seguente sono riepilogate le operazioni di trascinamento della sel
 
 | Modificatore | Category | Elemento di origine: riferimento/collegamento | Elemento di origine: elemento fisico o file system ( `CF_HDROP` ) |
 |-----------------|----------| - | - |
-| Nessun modificatore | Azione | Spostamento | Spostamento |
+| Nessun modificatore | Azione | Sposta | Sposta |
 | Nessun modificatore | Destinazione | Copia l'elemento nella posizione di destinazione | Copia l'elemento nella posizione di destinazione |
 | Nessun modificatore | Source (Sorgente) | Elimina il riferimento all'elemento originale | Elimina il riferimento all'elemento originale |
-| Maiusc + trascina | Azione | Spostamento | Spostamento |
+| Maiusc + trascina | Azione | Sposta | Sposta |
 | Maiusc + trascina | Destinazione | Copia l'elemento nella posizione di destinazione | Copia l'elemento nella posizione di destinazione |
 | Maiusc + trascina | Source (Sorgente) | Elimina il riferimento all'elemento originale | Elimina l'elemento dal percorso originale |
 | Maiusc + trascina | Risultato | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione |
@@ -564,7 +564,7 @@ Nella tabella seguente sono riepilogate le operazioni di trascinamento della sel
 | Ctrl + trascina | Source (Sorgente) | Mantiene il riferimento all'elemento originale | Mantiene il riferimento all'elemento originale |
 | Ctrl + trascina | Risultato | `DROPEFFECT_COPY` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione | `DROPEFFECT_COPY` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione |
 | Ctrl + Maiusc + trascina | | Nessuna eliminazione | Nessuna eliminazione |
-| Taglia/incolla | Azione | Spostamento | Spostamento |
+| Taglia/incolla | Azione | Sposta | Sposta |
 | Taglia/incolla | Destinazione | Copia l'elemento nella posizione di destinazione | Copia l'elemento nella posizione di destinazione |
 | Taglia/incolla | Source (Sorgente) | Elimina il riferimento all'elemento originale | Elimina l'elemento dal percorso originale |
 | Taglia/incolla | Risultato | L'elemento rimane nella posizione originale nella risorsa di archiviazione | L'elemento è stato eliminato dal percorso originale nella risorsa di archiviazione |
@@ -578,11 +578,11 @@ Nella tabella seguente sono riepilogate le operazioni di trascinamento della sel
 
 | Modificatore | Category | Elemento di origine: riferimento/collegamento | Elemento di origine: elemento fisico o file system ( `CF_HDROP` ) |
 | --- | --- | --- | --- |
-| Nessun modificatore | Azione | Spostamento | Spostamento |
+| Nessun modificatore | Azione | Sposta | Sposta |
 | Nessun modificatore | Destinazione | Aggiunge un riferimento all'elemento originale | Copia l'elemento nella posizione di destinazione |
 | Nessun modificatore | Source (Sorgente) | Elimina il riferimento all'elemento originale | Elimina il riferimento all'elemento originale |
 | Nessun modificatore | Risultato | `DROPEFFECT_ MOVE` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione | `DROPEFFECT_ MOVE` viene restituito come azione da `::Drop` e l'elemento viene eliminato dal percorso originale nella risorsa di archiviazione |
-| Maiusc + trascina | Azione | Spostamento | Spostamento |
+| Maiusc + trascina | Azione | Sposta | Sposta |
 | Maiusc + trascina | Destinazione | Aggiunge un riferimento all'elemento originale | Copia l'elemento nella posizione di destinazione |
 | Maiusc + trascina | Source (Sorgente) | Elimina il riferimento all'elemento originale | Elimina l'elemento dal percorso originale |
 | Maiusc + trascina | Risultato | `DROPEFFECT_ MOVE` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione | `DROPEFFECT_ MOVE` viene restituito come azione da `::Drop` e l'elemento viene eliminato dal percorso originale nella risorsa di archiviazione |
@@ -594,7 +594,7 @@ Nella tabella seguente sono riepilogate le operazioni di trascinamento della sel
 | Ctrl + Maiusc + trascina | Destinazione | Aggiunge un riferimento all'elemento originale | Aggiunge un riferimento all'elemento di origine originale |
 | Ctrl + Maiusc + trascina | Source (Sorgente) | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |
 | Ctrl + Maiusc + trascina | Risultato | `DROPEFFECT_ LINK` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione | `DROPEFFECT_ LINK` viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nella risorsa di archiviazione |
-| Taglia/incolla | Azione | Spostamento | Spostamento |
+| Taglia/incolla | Azione | Sposta | Sposta |
 | Taglia/incolla | Destinazione | Copia l'elemento nella posizione di destinazione | Copia l'elemento nella posizione di destinazione |
 | Taglia/incolla | Source (Sorgente) | Elimina il riferimento all'elemento originale | Elimina l'elemento dal percorso originale |
 | Taglia/incolla | Risultato | L'elemento rimane nella posizione originale nella risorsa di archiviazione | L'elemento è stato eliminato dal percorso originale nella risorsa di archiviazione |

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e9b18f7bb34433ff86fe6a5bede436228d3ff1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffd21fb08e920209d47ff66feb436f8a83aab53e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947697"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059925"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: eseguire il debug di un motore di debug personalizzato
 Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metodo. Ciò significa che la DE viene avviata sotto il controllo dell'istanza di che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Controlla il tipo di progetto. Tuttavia, l'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è in grado di eseguire il debug di de. Di seguito sono riportati i passaggi che consentono di eseguire il debug della DE personalizzata.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce6122cbf4d6f85ab50e067fbbd643053ac4e4dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923267"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089355"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Creazione di una finestra degli strumenti a più istanze
 È possibile programmare una finestra degli strumenti in modo che più istanze possano essere aperte contemporaneamente. Per impostazione predefinita, le finestre degli strumenti possono avere una sola istanza aperta.
@@ -34,7 +34,7 @@ Quando si utilizza una finestra degli strumenti a più istanze, è possibile vis
 
 ## <a name="make-a-tool-window-multi-instance"></a>Creare una finestra degli strumenti a istanze diverse
 
-1. Aprire il file *MIToolWindowPackage.cs* e trovare l' `ProvideToolWindow` attributo. e il `MultiInstances=true` parametro, come illustrato nell'esempio seguente:
+1. Aprire il file *MIToolWindowPackage. cs* e trovare l' `ProvideToolWindow` attributo. e il `MultiInstances=true` parametro, come illustrato nell'esempio seguente:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -46,7 +46,7 @@ Quando si utilizza una finestra degli strumenti a più istanze, è possibile vis
     {. . .}
     ```
 
-2. Nel file *MIToolWindowCommand.cs* trovare il `ShowToolWindos()` metodo. In questo metodo chiamare il <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodo e impostare il relativo `create` flag su in `false` modo da scorrere le istanze della finestra degli strumenti esistenti fino a quando non viene trovato un oggetto disponibile `id` .
+2. Nel file *MIToolWindowCommand. cs* trovare il `ShowToolWindos()` metodo. In questo metodo chiamare il <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodo e impostare il relativo `create` flag su in `false` modo da scorrere le istanze della finestra degli strumenti esistenti fino a quando non viene trovato un oggetto disponibile `id` .
 
 3. Per creare un'istanza della finestra degli strumenti, chiamare il <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodo e impostare la proprietà `id` su un valore disponibile e il relativo `create` flag su `true` .
 

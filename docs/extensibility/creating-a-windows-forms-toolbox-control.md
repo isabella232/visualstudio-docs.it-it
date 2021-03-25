@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42dcf30e7c31880357bb95e3858a2c70aa59f174
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902185"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089329"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Creare un controllo della casella degli strumenti Windows Form
 
@@ -46,7 +46,7 @@ Il `Counter` controllo richiede due controlli figlio: un oggetto <xref:System.Wi
 
 #### <a name="to-build-the-user-interface"></a>Per creare l'interfaccia utente
 
-1. In **Esplora soluzioni** fare doppio clic su *Counter.cs* per aprirlo nella finestra di progettazione.
+1. In **Esplora soluzioni** fare doppio clic su *Counter. cs* per aprirlo nella finestra di progettazione.
 
 2. Rimuovere il **clic qui.** pulsante incluso per impostazione predefinita quando si aggiunge il modello di elemento di controllo della casella degli strumenti Windows Form.
 
@@ -163,7 +163,7 @@ Il `Counter` controllo esporrà un metodo per incrementare il contatore, un even
 
 2. Nell'istanza sperimentale di Visual Studio creare un progetto di **applicazione Windows Form** .
 
-3. In **Esplora soluzioni** fare doppio clic su *Form1.cs* per aprirlo nella finestra di progettazione, se non è già aperto.
+3. In **Esplora soluzioni** fare doppio clic su *Form1. cs* per aprirlo nella finestra di progettazione, se non è già aperto.
 
 4. Nella **casella degli strumenti** il `Counter` controllo deve essere visualizzato nella sezione **generale** .
 
@@ -173,7 +173,7 @@ Il `Counter` controllo esporrà un metodo per incrementare il contatore, un even
 
 7. Trascinare un <xref:System.Windows.Forms.Button> controllo nel form, quindi impostare le proprietà nome e testo del pulsante su `Test` .
 
-8. Fare doppio clic sul pulsante per aprire *Form1.cs* nella visualizzazione codice e creare un gestore di clic.
+8. Fare doppio clic sul pulsante per aprire *Form1. cs* nella visualizzazione codice e creare un gestore di clic.
 
 9. Nel gestore di clic chiamare `counter1.Increment()` .
 

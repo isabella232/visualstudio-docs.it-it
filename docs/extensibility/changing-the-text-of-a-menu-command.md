@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2d812dbee833358f682b5227785c78322efe44a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911250"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068063"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Modificare il testo di un comando di menu
 Nei passaggi seguenti viene illustrato come modificare l'etichetta di testo di un comando di menu utilizzando il <xref:System.ComponentModel.Design.IMenuCommandService> servizio.
@@ -41,7 +41,7 @@ Nei passaggi seguenti viene illustrato come modificare l'etichetta di testo di u
     </Button>
     ```
 
-3. Nel file *ChangeMenuText.cs* creare un gestore eventi che verrà chiamato prima di visualizzare il comando di menu.
+3. Nel file *ChangeMenuText. cs* creare un gestore eventi che verrà chiamato prima di visualizzare il comando di menu.
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896260"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089342"
 ---
 # <a name="create-a-settings-category"></a>Crea una categoria di impostazioni
 
@@ -50,7 +50,7 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
     > [!NOTE]
     > Di questi tre, solo il nome della categoria non viene visualizzato nell' **importazione/esportazione guidata delle impostazioni** .
 
-3. In *MyToolsOptionsPackage.cs* aggiungere una `float` proprietà denominata `OptionFloat` alla `OptionPageGrid` classe, come illustrato nell'esempio seguente.
+3. In *MyToolsOptionsPackage. cs* aggiungere una `float` proprietà denominata `OptionFloat` alla `OptionPageGrid` classe, come illustrato nell'esempio seguente.
 
     ```csharp
     public class OptionPageGrid : DialogPage

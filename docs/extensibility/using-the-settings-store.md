@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 752a912fd9a565e4b3e8dcb5c4c142e8f37dffc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a84fa551a4a3ea10b212832c0891fb0d7d19b2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934038"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060185"
 ---
 # <a name="using-the-settings-store"></a>Uso dell'archivio delle impostazioni
 Esistono due tipi di archivi delle impostazioni:
@@ -33,12 +33,12 @@ Esistono due tipi di archivi delle impostazioni:
 
 1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `SettingsStoreExtension` . Il modello di progetto VSIX è reperibile nella finestra di dialogo **nuovo progetto** in **Visual C#/extensibility**.
 
-2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **SettingsStoreCommand**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in **SettingsStoreCommand.cs**. Per ulteriori informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **SettingsStoreCommand**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in **SettingsStoreCommand. cs**. Per ulteriori informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 ## <a name="using-the-configuration-settings-store"></a>Uso dell'archivio impostazioni di configurazione
  In questa sezione viene illustrato come rilevare e visualizzare le impostazioni di configurazione.
 
-1. Nel file SettingsStorageCommand.cs aggiungere le direttive using seguenti:
+1. Nel file SettingsStorageCommand. cs aggiungere le direttive using seguenti:
 
    ```
    using System.Collections.Generic;

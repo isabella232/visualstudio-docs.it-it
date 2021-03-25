@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb238afb0f583f1b913fbd87f4f50e43679ebd7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951550"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060016"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Aggiungere un elenco usato più di recente a un sottomenu
 Questa procedura dettagliata si basa sulle dimostrazioni in [aggiungere un sottomenu a un menu](../extensibility/adding-a-submenu-to-a-menu.md)e Mostra come aggiungere un elenco dinamico a un sottomenu. L'elenco dinamico costituisce la base per la creazione di un elenco degli ultimi elementi usati (MRU).
@@ -83,14 +83,14 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 ## <a name="filling-the-mru-list"></a>Riempimento dell'elenco MRU
 
-1. In *TestCommandPackageGuids.cs* aggiungere le righe seguenti dopo gli ID dei comandi esistenti nella `TestCommandPackageGuids` definizione della classe.
+1. In *TestCommandPackageGuids. cs* aggiungere le righe seguenti dopo gli ID dei comandi esistenti nella `TestCommandPackageGuids` definizione della classe.
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. In *TestCommand.cs* aggiungere l'istruzione using seguente.
+2. In *TestCommand. cs* aggiungere la seguente istruzione using.
 
     ```csharp
     using System.Collections;
