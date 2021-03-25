@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24a9b8dfa8036603c035a9112eb29688eab7ff25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3e8d70d721e77e0ed7b93dda3be5defdbf7dd9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852609"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064070"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Elementi di progettazione dei pacchetti VSPackage di controllo del codice sorgente
 Negli argomenti di questa sezione viene illustrata la struttura che il pacchetto VSPackage del controllo del codice sorgente deve implementare per l'integrazione completa. Elenca inoltre le interfacce e i servizi che possono essere implementati dal pacchetto VSPackage del controllo del codice sorgente e le interfacce e i servizi che il pacchetto VSPackage del controllo del codice sorgente può utilizzare da altri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componenti per supportare il modello e la funzionalità del controllo del codice sorgente
