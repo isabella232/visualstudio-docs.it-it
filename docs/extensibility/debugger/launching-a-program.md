@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a21036d3a9661306d1efff5a66ae47f8f7404209
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945916"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094718"
 ---
 # <a name="launch-a-program"></a>Avviare un programma
 Gli utenti che desiderano eseguire il debug di un programma possono premere **F5** per eseguire il debugger dall'IDE. Viene avviata una serie di eventi che in definitiva comportano la connessione dell'IDE a un motore di debug (DE), che a sua volta è connesso o collegato al programma, come indicato di seguito:
