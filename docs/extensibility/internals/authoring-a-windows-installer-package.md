@@ -8,17 +8,17 @@ helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 445b302c66739c8a35f180686011f3b498f87ada
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afc21237b72d76b73e619740cab0b196e29e928d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906127"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078955"
 ---
 # <a name="author-a-windows-installer-package"></a>Creazione di un pacchetto di Windows Installer
 I dati guidano il modello di Windows Installer. Anziché scrivere uno script procedurale per copiare file e scrivere voci del registro di sistema, ad esempio, è possibile creare righe e colonne in tabelle di database che contengono dati di file e registro di sistema.

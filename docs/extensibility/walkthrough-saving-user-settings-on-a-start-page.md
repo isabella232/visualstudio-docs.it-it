@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: e32db6c2aecde61598036b8ba2ed21141e41a4af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be270fe8b76b6cd07bd27350eabceb5eecbc446b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888940"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078331"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Procedura dettagliata: salvare le impostazioni utente in una pagina iniziale
 
@@ -79,7 +79,7 @@ Per ulteriori informazioni su come salvare in modo permanente le impostazioni, v
 
 1. Nel riquadro XAML, fare clic con il pulsante destro del mouse sull' `Click` attributo dell' <xref:System.Windows.Controls.Button> elemento, quindi scegliere **passa al gestore eventi**.
 
-     Questo passaggio consente di aprire *myControl.XAML.cs* e di creare un gestore stub per l' `Button_Click` evento.
+     Questo passaggio apre il *controllo. XAML. cs* e crea un gestore stub per l' `Button_Click` evento.
 
 2. Aggiungere le seguenti `using` direttive all'inizio del file.
 
