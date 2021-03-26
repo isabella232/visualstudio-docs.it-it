@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], execution control
 - expression evaluation, control of execution
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 187663390c1d3625e74db6cf397a304f5d699189
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 598332ec1e9e1cb270360822ca32792b9a53f5c1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921534"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096954"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Controllo di esecuzione e valutazione dello stato
 Per eseguire il debug di un'applicazione, è necessario implementare tali funzionalità di controllo dell'esecuzione, ad esempio l'esecuzione di funzioni, l'arresto in corrispondenza dei punti di interruzione Il debug di Visual Studio basa il relativo controllo di esecuzione sugli eventi inviati tra i componenti del debugger.

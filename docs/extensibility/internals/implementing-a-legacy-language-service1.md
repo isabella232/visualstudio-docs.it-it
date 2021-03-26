@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2337d1ee2ac8e698e93a0d8d3d1dc9324af4f933
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 99e3f11a9ea60595b2372921702282c2bb4d8dcd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839989"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085910"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>Implementazione di un servizio di linguaggio Legacy 1
 È possibile utilizzare le classi del Framework di pacchetto gestito (MPF) per implementare un servizio di linguaggio legacy che supporta una vasta gamma di funzionalità, ad esempio l'evidenziazione della sintassi, la corrispondenza delle parentesi graffe e il completamento di IntelliSense.
