@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c23271596353ae289e1b7507b90b40095ca82c15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fad154fd3739369b0ccf7e5d896d1b9f1728c68e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839885"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085780"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementazione della gestione dei comandi per i progetti annidati
 L'IDE può passare i comandi passati attraverso il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfacce ai progetti annidati oppure i progetti padre possono filtrare o eseguire l'override dei comandi.

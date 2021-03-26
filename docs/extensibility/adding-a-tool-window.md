@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 314a684e34c91f43abe9babe4cdd6efc8a15cc35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951433"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085520"
 ---
 # <a name="add-a-tool-window"></a>Aggiungere una finestra degli strumenti
 
@@ -117,7 +117,7 @@ Aggiungere un comando alla barra degli strumenti, che viene visualizzato come pu
     </Button>
     ```
 
-3. Aprire *FirstToolWindowCommand.cs* e aggiungere le righe seguenti nella classe subito dopo i campi esistenti.
+3. Aprire *FirstToolWindowCommand. cs* e aggiungere le righe seguenti nella classe subito dopo i campi esistenti.
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -143,7 +143,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>Creare un'istanza della finestra degli strumenti e della barra degli strumenti
 Aggiungere una barra degli strumenti e un comando di menu che richiama la finestra di dialogo **Apri file** e riproduce il file multimediale selezionato.
 
-1. Aprire *FirstToolWindow.cs* e aggiungere le `using` direttive seguenti:
+1. Aprire *FirstToolWindow. cs* e aggiungere le `using` direttive seguenti:
 
     ```csharp
     using System.ComponentModel.Design;
@@ -188,7 +188,7 @@ Aggiungere una barra degli strumenti e un comando di menu che richiama la finest
     }
     ```
 
-6. Aggiungere il comando di menu alla barra degli strumenti. Nella classe FirstToolWindowCommand.cs aggiungere la direttiva using seguente:
+6. Aggiungere il comando di menu alla barra degli strumenti. Nella classe FirstToolWindowCommand. cs aggiungere la direttiva using seguente:
 
     ```csharp
     using System.Windows.Forms;
@@ -255,9 +255,9 @@ Aggiungere una barra degli strumenti e un comando di menu che richiama la finest
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>Imposta la posizione predefinita per la finestra degli strumenti
 
-Specificare quindi un percorso predefinito nell'IDE per la finestra degli strumenti. Le informazioni di configurazione per la finestra degli strumenti si trova nel file *FirstToolWindowPackage.cs* .
+Specificare quindi un percorso predefinito nell'IDE per la finestra degli strumenti. Le informazioni di configurazione per la finestra degli strumenti si trova nel file *FirstToolWindowPackage. cs* .
 
-1. In *FirstToolWindowPackage.cs* trovare l' <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> attributo sulla `FirstToolWindowPackage` classe, che passa il tipo FirstToolWindow al costruttore. Per specificare una posizione predefinita, è necessario aggiungere altri parametri al costruttore che segue l'esempio.
+1. In *FirstToolWindowPackage. cs* trovare l' <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> attributo sulla `FirstToolWindowPackage` classe, che passa il tipo FirstToolWindow al costruttore. Per specificare una posizione predefinita, è necessario aggiungere altri parametri al costruttore che segue l'esempio.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
