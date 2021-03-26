@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26e616ac9862f6a077115c23bef426a94ab3ecbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5984afd2879f94a73ef02f77a85501c50f55bc93
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903038"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056818"
 ---
 # <a name="create-project-types"></a>Creazione di tipi di progetto
 È possibile estendere creando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] un nuovo tipo di progetto. Per creare un nuovo tipo di progetto, è necessario comprendere alcuni concetti e completare una serie di passaggi. Negli argomenti seguenti viene fornita una panoramica su come creare i tipi di progetto.

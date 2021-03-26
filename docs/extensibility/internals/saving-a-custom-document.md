@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving custom documents
 - editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a536a5f0f2b1cac09c65079974c661e09e9139ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958518"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080918"
 ---
 # <a name="saving-a-custom-document"></a>Salvataggio di un documento personalizzato
 L'ambiente gestisce i comandi **Salva**, **Salva con nome** e **Salva tutti** . Quando un utente fa clic su **Salva**, **Salva con nome** **o Salva tutto** dal menu **file** o chiude la soluzione, generando un salvataggio, si verifica il processo seguente.

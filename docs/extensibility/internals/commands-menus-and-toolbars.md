@@ -9,17 +9,17 @@ helpviewer_keywords:
 - commands [Visual Studio]
 - toolbars [Visual Studio], commands
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49ae9c27b27a1b3e32338521315007903d9e6825
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a1b4cdb95fa5b053bc75efb559ea77b84ae56dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884767"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057156"
 ---
 # <a name="commands-menus-and-toolbars"></a>Comandi, menu e barre degli strumenti
 I menu e le barre degli strumenti sono il modo in cui gli utenti accedono ai comandi nel pacchetto VSPackage. I comandi sono funzioni che eseguono attività, ad esempio la stampa di un documento, l'aggiornamento di una visualizzazione o la creazione di un nuovo file. Menu e barre degli strumenti sono pratici metodi grafici per presentare i comandi agli utenti. In genere, i comandi correlati sono raggruppati nello stesso menu o sulla stessa barra degli strumenti.

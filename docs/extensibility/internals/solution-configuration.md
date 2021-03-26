@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf2694b26305cdaefefd61dc1119b7b019b12d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910983"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080788"
 ---
 # <a name="solution-configuration"></a>Configurazione soluzione
 Le configurazioni della soluzione archiviano le proprietà a livello di soluzione. Essi indirizzano il comportamento della chiave di **avvio** (F5) e dei comandi di **compilazione** . Per impostazione predefinita, questi comandi compilano e avviano la configurazione di debug. Entrambi i comandi vengono eseguiti nel contesto di una configurazione di soluzione. Ciò significa che l'utente può prevedere l'avvio di F5 e la compilazione di qualsiasi soluzione attiva configurata tramite le impostazioni. L'ambiente è progettato per ottimizzare le soluzioni anziché i progetti quando si tratta di creare ed eseguire.
@@ -51,7 +51,7 @@ Le configurazioni della soluzione archiviano le proprietà a livello di soluzion
 
    Specifica se il progetto viene compilato o meno dalla configurazione della soluzione corrente. I progetti non selezionati non vengono compilati quando vengono richiamati i comandi di compilazione a livello di soluzione nonostante le dipendenze del progetto in essi contenute. I progetti non selezionati per la compilazione sono ancora inclusi in debug, esecuzione, creazione di pacchetti e distribuzione della soluzione.
 
-- Distribuire
+- Distribuisci
 
    Specifica se il progetto verrà distribuito quando si utilizzano i comandi Avvia o Distribuisci con la configurazione della build della soluzione selezionata. La casella di controllo per questo campo sarà disponibile se il progetto supporta la distribuzione implementando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia sul relativo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> oggetto.
 

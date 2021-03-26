@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e320d6f7b6126736719eb2a428d47a39a61730ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9295644a07a1840cd4874b8bfff298ad9d46c928
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837270"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060913"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Query Edit Query Save (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gli editor possono trasmettere gli eventi Query Edit Query Save (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Lo stub del controllo del codice sorgente implementa il servizio QEQS, in modo che sia il destinatario degli eventi QEQS. Questi eventi vengono quindi delegati al pacchetto VSPackage del controllo del codice sorgente attualmente attivo. Il VSPackage del controllo del codice sorgente attivo implementa i <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> metodi e. I metodi dell' `IVsQueryEditQuerySave2` interfaccia vengono in genere chiamati immediatamente prima che un documento venga modificato per la prima volta e immediatamente prima del salvataggio di un documento.

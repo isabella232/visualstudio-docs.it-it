@@ -9,17 +9,17 @@ helpviewer_keywords:
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06cd22ec933e72344ab743372fe30c1a3ddf5fbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0128ce1f27674010d1b624457815ddb1016e016
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901587"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080645"
 ---
 # <a name="support-for-user-settings"></a>Supporto per le impostazioni utente
 Un pacchetto VSPackage può definire una o più categorie di impostazioni, ovvero gruppi di variabili di stato che vengono mantenute quando un utente sceglie il comando **Importa/Esporta impostazioni** dal menu **strumenti** . Per abilitare questa persistenza, è possibile utilizzare le API delle impostazioni in [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -52,7 +52,7 @@ Un pacchetto VSPackage può definire una o più categorie di impostazioni, ovver
 
  AlternateParent = CategoryName
 
-| Nome | Tipo | Data | Descrizione |
+| Nome | Tipo | Dati | Descrizione |
 |-----------------|--------| - | - |
 | Valore predefinito. | REG_SZ | Nome del punto di impostazioni personalizzato | Il nome della chiave, `<CSPName`>, è il nome non localizzato del punto di impostazioni personalizzato.<br /><br /> Per le implementazioni basate su MPF, il nome della chiave viene ottenuto combinando `categoryName` gli `objectName` argomenti e del <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> costruttore in `categoryName_objectName` .<br /><br /> La chiave può essere vuota oppure può contenere l'ID di riferimento per la stringa localizzata in una DLL satellite. Questo valore viene ottenuto dall' `objectNameResourceID` argomento al <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> costruttore. |
 | Pacchetto | REG_SZ | GUID | GUID del pacchetto VSPackage che implementa il punto di impostazioni personalizzato.<br /><br /> Implementazioni basate su MPF mediante la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe, utilizzare l'argomento del costruttore `objectType` contenente i pacchetti VSPackage <xref:System.Type> e reflection per ottenere questo valore. |

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519cc251a245e1eeb65ddb1fcd34b0fa1af8f686
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884533"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056883"
 ---
 # <a name="createpkgdef-utility"></a>Utilità CreatePkgDef
 Accetta un file con estensione dll per un'estensione di Visual Studio come parametro e crea un file *pkgdef* per accompagnare il file *dll* . Il file *. pkgdef* contiene tutte le informazioni che altrimenti verrebbero scritte nel registro di sistema durante l'installazione dell'estensione.

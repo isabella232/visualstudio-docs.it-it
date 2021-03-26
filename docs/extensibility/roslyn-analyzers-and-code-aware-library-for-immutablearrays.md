@@ -6,17 +6,17 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3bdcc9c35f5acaf9937bd18b0160f9e5a58161c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875523"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060586"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizzatori Roslyn e libreria compatibile con il codice per ImmutableArrays
 
@@ -66,7 +66,7 @@ Posizionare il punto di inserimento dell'editor sulla riga che dichiara `b1` . S
 
 Dal menu principale scegliere **file**  >  **nuovo**  >  **progetto**. Nella finestra di dialogo **nuovo progetto** , in progetti **C#** nella barra di spostamento a sinistra, scegliere **estendibilità** e nel riquadro destro scegliere il modello **di progetto analizzatore con correzione codice** . Immettere un nome e confermare la finestra di dialogo.
 
-Il modello apre un file *DiagnosticAnalyzer.cs* . Scegliere la scheda buffer dell'editor. Questo file contiene una classe analizzatore (formato dal nome assegnato al progetto) che deriva da `DiagnosticAnalyzer` (un tipo di API Roslyn). La nuova classe dispone di un oggetto `DiagnosticAnalyzerAttribute` che dichiara che l'analizzatore è pertinente per il linguaggio C#, in modo che il compilatore individua e carica l'analizzatore.
+Il modello apre un file *DiagnosticAnalyzer. cs* . Scegliere la scheda buffer dell'editor. Questo file contiene una classe analizzatore (formato dal nome assegnato al progetto) che deriva da `DiagnosticAnalyzer` (un tipo di API Roslyn). La nuova classe dispone di un oggetto `DiagnosticAnalyzerAttribute` che dichiara che l'analizzatore è pertinente per il linguaggio C#, in modo che il compilatore individua e carica l'analizzatore.
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]

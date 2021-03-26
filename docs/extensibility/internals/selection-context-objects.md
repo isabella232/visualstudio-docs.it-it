@@ -8,17 +8,17 @@ helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca6239264ca1fa42edb0b73e8a96f523cb450857
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911102"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080840"
 ---
 # <a name="selection-context-objects"></a>Oggetti del contesto di selezione
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) usa un oggetto contesto di selezione globale per determinare gli elementi da visualizzare nell'IDE. Ogni finestra nell'IDE può avere un proprio oggetto contesto di selezione inserito nel contesto di selezione globale. L'IDE aggiorna il contesto di selezione globale con i valori di una finestra quando la finestra ha lo stato attivo. Per ulteriori informazioni, vedere [feedback all'utente](../../extensibility/internals/feedback-to-the-user.md).

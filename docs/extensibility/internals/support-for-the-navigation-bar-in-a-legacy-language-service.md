@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e75103d008e65c6d2060d598e442499f38a0e322
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932579"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080658"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 La barra di navigazione nella parte superiore della visualizzazione dell'editor consente di visualizzare i tipi e i membri del file. I tipi vengono visualizzati nell'elenco a discesa a sinistra e i membri vengono visualizzati nell'elenco a discesa a destra. Quando l'utente seleziona un tipo, il punto di inserimento viene inserito nella prima riga del tipo. Quando l'utente seleziona un membro, il punto di inserimento viene inserito nella definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate in modo da riflettere la posizione corrente del punto di inserimento.
