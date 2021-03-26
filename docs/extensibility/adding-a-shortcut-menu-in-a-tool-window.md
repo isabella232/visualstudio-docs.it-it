@@ -10,17 +10,17 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ba0eb2324812ca7536b361d602bb683d627c743
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951537"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097617"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Aggiungere un menu di scelta rapida in una finestra degli strumenti
 In questa procedura dettagliata viene inserito un menu di scelta rapida in una finestra degli strumenti. Un menu di scelta rapida è un menu visualizzato quando un utente fa clic con il pulsante destro del mouse su un pulsante, una casella di testo o uno sfondo della finestra. I comandi di un menu di scelta rapida hanno lo stesso comportamento dei comandi di altri menu o barre degli strumenti. Per supportare un menu di scelta rapida, specificarlo nel file con *estensione vsct* e visualizzarlo in risposta al clic con il pulsante destro del mouse.
@@ -114,7 +114,7 @@ Un menu di scelta rapida, ad esempio quello illustrato in questa procedura detta
     </Buttons>
     ```
 
-5. In *ShortcutMenuCommand.cs* aggiungere le definizioni per il GUID del set di comandi, il menu di scelta rapida e le voci di menu.
+5. In *ShortcutMenuCommand. cs* aggiungere le definizioni per il GUID del set di comandi, il menu di scelta rapida e le voci di menu.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -129,9 +129,9 @@ Un menu di scelta rapida, ad esempio quello illustrato in questa procedura detta
 ## <a name="implementing-the-shortcut-menu"></a>Implementazione del menu di scelta rapida
  Questa sezione implementa il menu di scelta rapida e i relativi comandi.
 
-1. In *ShortcutMenu.cs*, la finestra degli strumenti può ottenere il servizio di comando di menu, ma il controllo in essa contenuto non può. Nei passaggi seguenti viene illustrato come rendere disponibile il servizio comando di menu per il controllo utente.
+1. In *ShortcutMenu. cs* la finestra degli strumenti può ottenere il servizio di comando di menu, ma il controllo in essa contenuto non può. Nei passaggi seguenti viene illustrato come rendere disponibile il servizio comando di menu per il controllo utente.
 
-2. In *ShortcutMenu.cs* aggiungere le direttive using seguenti:
+2. In *ShortcutMenu. cs* aggiungere le direttive using seguenti:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -159,7 +159,7 @@ Un menu di scelta rapida, ad esempio quello illustrato in questa procedura detta
     }
     ```
 
-5. In *ShortcutMenuControl.XAML.cs* aggiungere un campo privato per il servizio di comando di menu e modificare il costruttore del controllo in modo da scegliere il servizio comando di menu. Usare quindi il servizio comando di menu per aggiungere i comandi del menu di scelta rapida. Il costruttore ShortcutMenuControl dovrebbe ora essere simile al codice seguente. Il gestore comando verrà definito in un secondo momento.
+5. In *ShortcutMenuControl. XAML. cs* aggiungere un campo privato per il servizio comando di menu e modificare il costruttore del controllo in modo da scegliere il servizio comando di menu. Usare quindi il servizio comando di menu per aggiungere i comandi del menu di scelta rapida. Il costruttore ShortcutMenuControl dovrebbe ora essere simile al codice seguente. Il gestore comando verrà definito in un secondo momento.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -207,7 +207,7 @@ Un menu di scelta rapida, ad esempio quello illustrato in questa procedura detta
     </UserControl>
     ```
 
-7. In *ShortcutMenuControl.XAML.cs* aggiungere uno stub per il gestore eventi.
+7. In *ShortcutMenuControl. XAML. cs* aggiungere uno stub per il gestore eventi.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
