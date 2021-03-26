@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96ac3c9ee92cd9124485dde29814f4a1e5c942c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884975"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055752"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Creare e gestire finestre di dialogo modali
 Quando si crea una finestra di dialogo modale in Visual Studio, è necessario assicurarsi che la finestra padre della finestra di dialogo sia disabilitata mentre viene visualizzata la finestra di dialogo, quindi abilitare nuovamente la finestra padre dopo la chiusura della finestra di dialogo. In caso contrario, è possibile che venga visualizzato l'errore: *Impossibile arrestare Microsoft Visual Studio perché è attiva una finestra di dialogo modale. Chiudere la finestra di dialogo attiva e riprovare.*
@@ -40,7 +40,7 @@ Se la finestra di dialogo non è WPF o per qualche altro motivo non è possibile
 
     - *System.Xaml*
 
-3. In *OpenDialog.cs* aggiungere l'istruzione seguente `using` :
+3. In *OpenDialog. cs* aggiungere l'istruzione seguente `using` :
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

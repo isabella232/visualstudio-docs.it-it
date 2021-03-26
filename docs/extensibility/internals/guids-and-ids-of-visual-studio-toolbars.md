@@ -13,17 +13,17 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970218"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082075"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID delle barre degli strumenti di Visual Studio
 Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse nei Integrated Development Environment di Visual Studio (IDE) e dei gruppi che contengono. Questi valori sono definiti nei file con *estensione vsct* installati come parte di Visual Studio SDK. Per altre informazioni, vedere [comandi, menu e gruppi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -56,7 +56,7 @@ Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse 
 |Comando Add|IDM_VS_TOOL_ADDCOMMAND|
 |Non definito|IDM_VS_TOOL_UNDEFINED|
 |XML Schema|IDM_VS_TOOL_SCHEMA|
-|dati XML|IDM_VS_TOOL_DATA|
+|Dati XML|IDM_VS_TOOL_DATA|
 
 ## <a name="groups-on-the-ide-toolbars"></a>Gruppi nelle barre degli strumenti dell'IDE
  Per aggiungere un pulsante a una barra degli strumenti standard, impostare uno dei seguenti gruppi come padre. I gruppi sono ordinati in base alla barra degli strumenti padre.

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41290f946c198ed854cad9a7eb2af088f6fe228a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883311"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082283"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: utilizzare procedure guidate con modelli di progetto
 
@@ -74,7 +74,7 @@ Questa procedura illustra come creare una procedura guidata personalizzata che a
 
 5. Aggiungere una classe per l'implementazione della procedura guidata al progetto VSIX. (In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo del progetto VSIX e scegliere **Aggiungi**, quindi **nuovo elemento**, quindi **classe**). Denominare la classe **WizardImplementation**.
 
-6. Sostituire il codice nel file *WizardImplementationClass.cs* con il codice seguente:
+6. Sostituire il codice nel file *WizardImplementationClass. cs* con il codice seguente:
 
    ```csharp
    using System;
@@ -161,7 +161,7 @@ Questa procedura illustra come creare una procedura guidata personalizzata che a
 
      Questo esempio aggiunge un valore di parametro dal modulo di input dell'utente al <xref:System.Collections.Generic.Dictionary%602> parametro. Ogni istanza del `$custommessage$` parametro nel progetto verrà sostituita con il testo immesso dall'utente.
 
-7. A questo punto, creare il **UserInputForm**. Nel file *WizardImplementation.cs* aggiungere il codice seguente dopo la fine della `WizardImplementation` classe.
+7. A questo punto, creare il **UserInputForm**. Nel file *WizardImplementation. cs* aggiungere il codice seguente dopo la fine della `WizardImplementation` classe.
 
    ```csharp
    public partial class UserInputForm : Form
@@ -265,7 +265,7 @@ Per fare in modo che il modello di progetto personalizzato usi la procedura guid
 
 In questo esempio, il progetto utilizzato come modello Visualizza il messaggio specificato nel modulo di input dell'utente della procedura guidata personalizzata.
 
-1. Nel **Esplora soluzioni** passare al progetto **MyProjectTemplate** e aprire *Class1.cs*.
+1. Nel **Esplora soluzioni** passare al progetto **MyProjectTemplate** e aprire *Class1. cs*.
 
 2. Nel `Main` metodo dell'applicazione aggiungere la riga di codice seguente.
 

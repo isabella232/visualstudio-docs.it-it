@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0152de94eb74fff902ced4d61c749f7cca3a277
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1847801ed9dcbb1b7c7145c86b1998b54e2bb5d9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951342"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055791"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Aggiungere una barra degli strumenti a una finestra degli strumenti
 In questa procedura dettagliata viene illustrato come aggiungere una barra degli strumenti a una finestra degli strumenti.
@@ -86,14 +86,14 @@ In questa procedura dettagliata viene illustrato come aggiungere una barra degli
 
 ## <a name="add-the-toolbar-to-the-tool-window"></a>Aggiungere la barra degli strumenti alla finestra degli strumenti
 
-1. In *TWTestCommandPackageGuids.cs* aggiungere le righe seguenti.
+1. In *TWTestCommandPackageGuids. cs* aggiungere le righe seguenti.
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. In *TestToolWindow.cs* aggiungere l'istruzione using seguente.
+2. In *TestToolWindow. cs* aggiungere la seguente istruzione using.
 
     ```csharp
     using System.ComponentModel.Design;

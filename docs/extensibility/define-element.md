@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 83a8ee40205cafcaff29399ead4036374f798abf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968450"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082270"
 ---
 # <a name="define-element"></a>Definisci elemento
 Definisce una coppia di nome e valore del simbolo. Questo simbolo può essere valutato dagli attributi condizionali. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md). Vedere anche l' [elemento symbols](../extensibility/symbols-element.md).

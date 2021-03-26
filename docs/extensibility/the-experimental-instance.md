@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 728913596ce8c3947756906dffb144eecd3d71ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aefac4efc706d195d8471952da3914d35d27ddc2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895271"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055882"
 ---
 # <a name="the-experimental-instance"></a>Istanza sperimentale
 Per salvaguardare l'ambiente di sviluppo di Visual Studio da applicazioni non testate che potrebbero modificarlo, VSSDK fornisce uno spazio sperimentale che è possibile usare per sperimentare. Per sviluppare nuove applicazioni, è possibile usare Visual Studio come di consueto, ma è possibile eseguirle usando questa istanza sperimentale.

@@ -2,7 +2,7 @@
 title: Attività CreateCSharpManifestResourceName | Microsoft Docs
 description: Usare l'attività MSBuild CreateCSharpManifestResourceName per creare un nome di manifesto di tipo C# da un nome di file con estensione resx specificato o da un'altra risorsa.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 11/15/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3406a5f61c9a4aa1c9e2a3c6388741c3ae0fa0f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e1bd096c2a9c7763a3be0611f3716f61df22856
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901445"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055869"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>attività CreateCSharpManifestResourceName
 
@@ -43,7 +43,7 @@ Crea un nome di manifesto di tipo C# da un nome di file con *estensione resx* sp
 
 ## <a name="remarks"></a>Commenti
 
- L' [Attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) determina il nome della risorsa di manifesto appropriato da assegnare a un file con *estensione resx* o a un altro file di risorse specificato. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.
+ L' [Attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md) determina il nome della risorsa di manifesto appropriato da assegnare a un file con *estensione resx* o a un altro file di risorse specificato. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.
 
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
