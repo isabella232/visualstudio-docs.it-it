@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6c93d90771eeffbfe28ae91781403019743afa9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944895"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089147"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Creare un'estensione con un pacchetto VSPackage
 
@@ -29,7 +29,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 1. Creare un progetto VSIX denominato **FirstPackage**. È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Quando si apre il progetto, aggiungere un modello di elemento del pacchetto di Visual Studio denominato **FirstPackage**. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a   >  **estensibilità** di Visual C# e selezionare **pacchetto di Visual Studio**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *FirstPackage.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento del pacchetto di Visual Studio denominato **FirstPackage**. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a   >  **estensibilità** di Visual C# e selezionare **pacchetto di Visual Studio**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *FirstPackage. cs*.
 
 3. Compilare il progetto e avviare il debug.
 
@@ -41,7 +41,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 A questo punto, l'estensione non viene caricata perché non sono presenti elementi che ne causano il caricamento. In genere è possibile caricare un'estensione quando si interagisce con la relativa interfaccia utente (facendo clic su un comando di menu, aprendo una finestra degli strumenti) o specificando che il pacchetto VSPackage deve essere caricato in un contesto dell'interfaccia utente specifico. Per altre informazioni sul caricamento di pacchetti VSPackage e contesti dell'interfaccia utente, vedere [caricamento di pacchetti VSPackage](../extensibility/loading-vspackages.md). Per questa procedura verrà illustrato come caricare un pacchetto VSPackage quando una soluzione è aperta.
 
-1. Aprire il file *FirstPackage.cs* . Cercare la dichiarazione della `FirstPackage` classe. Sostituire gli attributi esistenti con gli attributi seguenti:
+1. Aprire il file *FirstPackage. cs* . Cercare la dichiarazione della `FirstPackage` classe. Sostituire gli attributi esistenti con gli attributi seguenti:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]

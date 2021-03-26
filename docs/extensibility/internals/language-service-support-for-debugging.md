@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugger, language support
 - language services, debugging support
 ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b53eb738b695726cf86859ce83a8ee93440564a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c00d0af21d5d165b7733267e0a97ae71ca6e573
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839703"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074574"
 ---
 # <a name="language-service-support-for-debugging"></a>Supporto dei servizi di linguaggio per il debug
 Un servizio di linguaggio può fornire funzionalità che supportano un debugger tramite l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> interfaccia. Queste funzionalità includono la convalida dei punti di interruzione e la fornitura di un elenco di espressioni alla finestra **auto** .

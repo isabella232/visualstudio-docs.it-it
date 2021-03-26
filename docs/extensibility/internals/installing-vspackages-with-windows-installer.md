@@ -8,17 +8,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
 - VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ab4493d1d3acce3ad28c834136d25264a74180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1638f6d041dda28ca79492ba2c8e6ef772ce8bc7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839820"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074665"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installazione di pacchetti VSPackage con Windows Installer
 L'integrazione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di un VSPackage in richiede molto più della semplice copia dei file nel computer di un utente. Il programma di installazione del pacchetto VSPackage deve installare il pacchetto VSPackage e i relativi file dipendenti e registrarli e integrarli in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Il pacchetto VSPackage può sfruttare le funzionalità di integrazione, ad esempio la visualizzazione di un'icona nella [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] schermata iniziale e la finestra di dialogo informazioni su.

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8bfdcd854cf35c392578d9851a7421bacc8cbfe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06c3fbfabb4eccc08e528aef913e1c1ba502cbf1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884988"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089134"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Creare un'estensione con un modello di elemento dell'editor
 È possibile usare i modelli di elemento inclusi in Visual Studio SDK per creare estensioni dell'editor di base che aggiungono classificatori, aree di visualizzazione e margini all'editor. I modelli di elemento dell'editor sono disponibili per i progetti Visual C# o VSIX Visual Basic.
@@ -30,17 +30,17 @@ ms.locfileid: "99884988"
 
 1. Nella finestra di dialogo **nuovo progetto** espandere **Visual C#** o **Visual Basic** e quindi fare clic su **estensibilità**. Nel riquadro **modelli** selezionare **progetto VSIX**. Nella casella **Nome** digitare `TestClassifier`. Fare clic su **OK**.
 
-2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare **classificatore editor**. Lasciare il nome file predefinito (*EditorClassifier1.cs*).
+2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare **classificatore editor**. Lasciare il nome file predefinito (*EditorClassifier1. cs*).
 
 3. Sono disponibili quattro file di codice, come indicato di seguito:
 
-    - *EditorClassifier1.cs* contiene la `EditorClassifier1` classe.
+    - *EditorClassifier1. cs* contiene la `EditorClassifier1` classe.
 
-    - *EditorClassifier1ClassificationDefinition.cs* contiene la `EditorClassifier1ClassificationDefinition` classe.
+    - *EditorClassifier1ClassificationDefinition. cs* contiene la `EditorClassifier1ClassificationDefinition` classe.
 
-    - *EditorClassifier1Format.cs* contiene la `EditorClassifier1Format`  classe.
+    - *EditorClassifier1Format. cs* contiene la `EditorClassifier1Format`  classe.
 
-    - *EditorClassifier1Provider.cs* contiene la `EditorClassifier1Provider` classe.
+    - *EditorClassifier1Provider. cs* contiene la `EditorClassifier1Provider` classe.
 
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale di Visual Studio.
 
@@ -51,13 +51,13 @@ ms.locfileid: "99884988"
 
 1. Nella finestra di dialogo **nuovo progetto** espandere **Visual C#** o **Visual Basic** e quindi fare clic su **estensibilità**. Nel riquadro **modelli** selezionare **progetto VSIX**. Nella casella **Nome** digitare `TestAdornment`. Fare clic su **OK**.
 
-2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare l'area di **testo dell'editor**. Lasciare il nome file predefinito (*TextAdornment1.cs/vb*).
+2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare l'area di **testo dell'editor**. Lasciare il nome file predefinito (*TextAdornment1. cs/vb*).
 
 3. Sono disponibili due file di codice, come indicato di seguito:
 
-    - *TextAdornment1.cs* contiene la `TextAdornment1` classe.
+    - *TextAdornment1. cs* contiene la `TextAdornment1` classe.
 
-    - *TextAdornment1TextViewCreationListener.cs* contiene la `TextAdornment1TextViewCreationListener` classe.
+    - *TextAdornment1TextViewCreationListener. cs* contiene la `TextAdornment1TextViewCreationListener` classe.
 
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si apre un file di testo, tutti i caratteri "a" nel testo vengono delineati in rosso rispetto a uno sfondo blu.
 
@@ -71,13 +71,13 @@ ms.locfileid: "99884988"
 
 1. Nella finestra di dialogo **nuovo progetto** espandere **Visual C#** o **Visual Basic** e quindi fare clic su **estensibilità**. Nel riquadro **modelli** selezionare **progetto VSIX**. Nella casella **Nome** digitare `ViewportAdornment`. Fare clic su **OK**.
 
-2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare l'area di visualizzazione dell' **Editor**. Lasciare il nome file predefinito (*ViewportAdornment1.cs/vb*).
+2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare l'area di visualizzazione dell' **Editor**. Lasciare il nome file predefinito (*ViewportAdornment1. cs/vb*).
 
 3. Sono disponibili due file di codice, come indicato di seguito:
 
-    - *ViewportAdornment1.cs* contiene la `ViewportAdornment1` classe.
+    - *ViewportAdornment1. cs* contiene la `ViewportAdornment1` classe.
 
-    - *ViewportAdornment1TextViewCreationListener.cs* contiene la `ViewportAdornment1TextViewCreationListener` classe
+    - *ViewportAdornment1TextViewCreationListener. cs* contiene la `ViewportAdornment1TextViewCreationListener` classe
 
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si crea un nuovo file di testo, nell'angolo superiore destro del viewport viene visualizzata una casella viola con un contorno rosso.
 
@@ -88,13 +88,13 @@ ms.locfileid: "99884988"
 
 1. Nella finestra di dialogo **nuovo progetto** espandere **Visual C#** o **Visual Basic** e quindi fare clic su **estensibilità**. Nel riquadro **modelli** selezionare **progetto VSIX**. Nella casella **Nome** digitare `MarginExtension`. Fare clic su **OK**.
 
-2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare **Editor Margin**. Lasciare il nome file predefinito (EditorMargin1.cs/vb).
+2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare **Editor Margin**. Lasciare il nome file predefinito (EditorMargin1. cs/vb).
 
 3. Sono disponibili due file di codice, come indicato di seguito:
 
-    - *EditorMargin1.cs* contiene la `EditorMargin1` classe.
+    - *EditorMargin1. cs* contiene la `EditorMargin1` classe.
 
-    - *EditorMargin1Factory.cs* contiene la `EditorMargin1Factory` classe.
+    - *EditorMargin1Factory. cs* contiene la `EditorMargin1Factory` classe.
 
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si apre un file di testo, al di sotto della barra di scorrimento orizzontale viene visualizzato un margine verde con le parole **Hello EditorMargin1** .
 

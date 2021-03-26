@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11ee862f43ead3605d8e07dc159e18da13413b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839859"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074704"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 
@@ -64,7 +64,7 @@ In questa sezione vengono fornite informazioni approfondite sulle estensioni di 
 
  Alcune delle finestre degli strumenti sono ancorate insieme in un unico riquadro che visualizza la finestra degli strumenti Esplora soluzioni e nasconde le altre finestre degli strumenti, ma le rende disponibili facendo clic sulle schede. L'immagine mostra due altre finestre degli strumenti, la **Elenco errori** e la finestra di **output** , ancorate insieme in un unico riquadro.
 
- Viene visualizzato anche il riquadro principale del documento, che mostra diverse finestre dell'editor. Anche se le finestre degli strumenti hanno in genere una sola istanza (ad esempio, è possibile aprire solo un **Esplora soluzioni**), le finestre dell'editor possono avere più istanze, ciascuna delle quali viene usata per modificare un documento separato, ma tutte sono ancorate nello stesso riquadro. L'immagine mostra un riquadro del documento con due finestre dell'editor, una finestra di progettazione del form. Tutte le finestre nel riquadro del documento sono disponibili facendo clic sulle schede, ma la finestra dell'editor che contiene il file EditorPane.cs è visibile e attiva.
+ Viene visualizzato anche il riquadro principale del documento, che mostra diverse finestre dell'editor. Anche se le finestre degli strumenti hanno in genere una sola istanza (ad esempio, è possibile aprire solo un **Esplora soluzioni**), le finestre dell'editor possono avere più istanze, ciascuna delle quali viene usata per modificare un documento separato, ma tutte sono ancorate nello stesso riquadro. L'immagine mostra un riquadro del documento con due finestre dell'editor, una finestra di progettazione del form. Tutte le finestre nel riquadro del documento sono disponibili facendo clic sulle schede, ma la finestra dell'editor che contiene il file sottotitolo. cs è visibile e attiva.
 
  Quando si estende Visual Studio, è possibile creare finestre degli strumenti che consentono agli utenti di Visual Studio di interagire con l'estensione. È anche possibile creare editor personalizzati che consentono agli utenti di Visual Studio di modificare i documenti. Poiché le finestre degli strumenti e gli editor saranno integrati in Visual Studio, non è necessario programmarli per ancorarli o visualizzarli correttamente in una scheda. Quando vengono registrati correttamente in Visual Studio, avranno automaticamente le funzionalità tipiche delle finestre degli strumenti e dei documenti in Visual Studio. Per ulteriori informazioni, vedere [estensione e personalizzazione delle finestre degli strumenti](../../extensibility/extending-and-customizing-tool-windows.md).
 

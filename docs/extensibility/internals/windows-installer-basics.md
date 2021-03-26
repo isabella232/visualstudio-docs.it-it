@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe009fa3ee8c8b9f2d15d3de4ee1fd067647c925
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869492"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074288"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 Il Windows Installer installa e Disinstalla le applicazioni o i prodotti software sul computer di un utente, eseguendo queste attività in unità denominate Windows Installer componenti (talvolta denominati WICs o solo componenti). Un GUID identifica ogni WIC, ovvero l'unità di base dell'installazione e il conteggio dei riferimenti per le configurazioni che utilizzano Windows Installer.
