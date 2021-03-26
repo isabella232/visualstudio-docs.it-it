@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1256b807d67f95aa8ca1e952a4dca7bd550e0fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862122"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075016"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Estendere il filtro Esplora soluzioni
 È possibile estendere **Esplora soluzioni** funzionalità di filtro per visualizzare o nascondere file diversi. Ad esempio, è possibile creare un filtro che mostra solo i file di class factory C# nel **Esplora soluzioni**, come illustrato in questa procedura dettagliata.
@@ -60,14 +60,14 @@ ms.locfileid: "99862122"
 
 ### <a name="add-the-filter-code"></a>Aggiungere il codice del filtro
 
-1. Aggiungere alcuni GUID al file *FileFilterPackageGuids.cs* :
+1. Aggiungere alcuni GUID al file *FileFilterPackageGuids. cs* :
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. Aggiungere un file di classe al progetto FileFilter denominato *FileNameFilter.cs*.
+2. Aggiungere un file di classe al progetto FileFilter denominato *FileNameFilter. cs*.
 
 3. Sostituire lo spazio dei nomi vuoto e la classe vuota con il codice riportato di seguito.
 
@@ -160,7 +160,7 @@ ms.locfileid: "99862122"
 
     ```
 
-4. In *FileFilter.cs* rimuovere il posizionamento del comando e il codice di gestione dal Costruttore FileFilter. Il risultato dovrebbe essere simile al seguente:
+4. In *FileFilter. cs* rimuovere il posizionamento del comando e il codice di gestione dal Costruttore FileFilter. Il risultato dovrebbe essere simile al seguente:
 
     ```csharp
     private FileFilter(Package package)
@@ -176,7 +176,7 @@ ms.locfileid: "99862122"
 
      Rimuovere `ShowMessageBox()` anche il metodo.
 
-5. In *FileFilterPackage.cs* sostituire il codice nel `Initialize()` metodo con il codice seguente:
+5. In *FileFilterPackage. cs* sostituire il codice nel `Initialize()` metodo con il codice seguente:
 
     ```csharp
     protected override void Initialize()

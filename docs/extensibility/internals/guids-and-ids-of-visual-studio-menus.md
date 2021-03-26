@@ -12,17 +12,17 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9f5066c5ae5c9fa57517406b8eca388747979c4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970270"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082088"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID e ID dei menu di Visual Studio
 Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei menu di Visual Studio. Questi valori sono definiti nei file con *estensione vsct* installati come parte di Visual Studio SDK. Per altre informazioni, vedere [comandi, menu e gruppi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -62,7 +62,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 |Finestra|IDM_VS_MENU_WINDOW|
 |Add-in|IDM_VS_MENU_ADDINS|
 |Community|IDM_VS_MENU_COMMUNITY|
-|Guida|IDM_VS_MENU_HELP|
+|Help|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>Gruppi nei menu di Visual Studio
  Gli elenchi seguenti illustrano i gruppi che scendono direttamente dai menu della barra dei menu di Visual Studio. Il modo più rapido per aggiungere un comando a un menu di Visual Studio consiste nell'impostare uno di questi gruppi come padre. I gruppi che discendono dai sottomenu non vengono visualizzati in questa sezione.
@@ -80,7 +80,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 |Browser|IDG_VS_FILE_BROWSER|
 |Stampa|IDG_VS_FILE_PRINT|
 |Usati più di recente|IDG_VS_FILE_MRU|
-|Spostamento|IDG_VS_FILE_MOVE|
+|Sposta|IDG_VS_FILE_MOVE|
 |Esci|IDG_VS_FILE_EXIT|
 
 ### <a name="edit-menu-groups"></a>Modifica gruppi di menu
@@ -101,7 +101,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 |Group|ID|
 |-----------|--------|
 |Comuni|IDG_REFACTORING_COMMON|
-|Avanzate|IDG_REFACTORING_ADVANCED|
+|Avanzato|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Visualizza gruppi di menu
 
