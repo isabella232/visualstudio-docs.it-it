@@ -2,7 +2,7 @@
 title: Creare la prima app Node.js
 ms.custom: SEO-VS-2020
 description: In questa guida introduttiva verrà creata un'app Node.js in Visual Studio
-ms.date: 06/27/2018
+ms.date: 03/25/2021
 ms.technology: vs-javascript
 ms.topic: quickstart
 ms.devlang: javascript
@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c342018a2331b27a411b5efc23af1438fa18518d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ecd65c0348ac16a2097061726e3896961ae04482
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932618"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105617052"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Guida introduttiva: Creare per la prima volta un'app Node.js con Visual Studio
 
@@ -115,5 +115,8 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
 > [!div class="nextstepaction"]
 > [Distribuire l'app nel servizio app di Linux](../javascript/publish-nodejs-app-azure.md)
 
-- [Tutorial for Node.js and Express](../javascript/tutorial-nodejs.md) (Esercitazione per Node.js ed Express)
-- [Tutorial for Node.js and React](../javascript/tutorial-nodejs-with-react-and-jsx.md) (Esercitazione per Node.js e React)
+> [!div class="nextstepaction"]
+> [Tutorial for Node.js and Express](../javascript/tutorial-nodejs.md) (Esercitazione per Node.js ed Express)
+
+> [!div class="nextstepaction"]
+> [Tutorial for Node.js and React](../javascript/tutorial-nodejs-with-react-and-jsx.md) (Esercitazione per Node.js e React)

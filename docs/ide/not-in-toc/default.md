@@ -1,21 +1,21 @@
 ---
 title: Pagina predefinita per la Guida F1
 description: Pagina predefinita per le richieste della Guida F1 per Visual Studio
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.ambient
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7026db3e4a3c9490c5ea770342d04fe477fdf28f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e6af978a080e0c75e439f1ee29a90fc0d40a653
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961612"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616922"
 ---
 # <a name="f1-help"></a>Guida sensibile al contesto
 
@@ -28,14 +28,14 @@ Se si sta cercando la Guida sensibile al contesto in una finestra, una parola ch
 - Cerca in [docs.Microsoft.com](/)
 - Provare a eseguire la ricerca usando un motore di ricerca.
 
-## <a name="find-help-on-a-keyword-or-api"></a>Trovare la guida su una parola chiave o un'API
+## <a name="get-help-for-your-programming-language"></a>Ottenere supporto per il linguaggio di programmazione in uso.
 
-- Per la Guida di C#, vedere la [Guida per programmatori c#](/dotnet/csharp/programming-guide/) o la Guida di [riferimento al linguaggio](/dotnet/csharp/language-reference/).
-- Per Visual Basic Guida, vedere le informazioni di riferimento sul [linguaggio](/dotnet/visual-basic/language-reference/)o sulle [funzionalità del linguaggio Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) .
-- Per la Guida di Python, vedere la [documentazione di Python](https://docs.python.org/).
-- Per informazioni su C++, vedere il [linguaggio C/c++ e riferimenti alle librerie standard](/cpp/cpp/c-cpp-language-and-standard-libraries).
-- Per informazioni su F#, vedere la [Guida a F#](/dotnet/fsharp/).
-- Per la Guida di TypeScript, vedere la [documentazione di typescript](https://www.typescriptlang.org/docs).
+- [Guida per programmatori C#](/dotnet/csharp/programming-guide/) o informazioni di [riferimento sul linguaggio](/dotnet/csharp/language-reference/).
+- [Funzionalità del linguaggio Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) o [riferimento al linguaggio](/dotnet/visual-basic/language-reference/).
+- [Documentazione di Python](https://docs.python.org/).
+- Informazioni [di riferimento sulle librerie standard e sul linguaggio C/C++](/cpp/cpp/c-cpp-language-and-standard-libraries).
+- [Guida a F #](/dotnet/fsharp/).
+- [Documentazione di typescript](https://www.typescriptlang.org/docs).
 
 ## <a name="re-map-or-disable-the-f1-help-key"></a>Eseguire di nuovo il mapping o disabilitare la chiave della Guida F1
 

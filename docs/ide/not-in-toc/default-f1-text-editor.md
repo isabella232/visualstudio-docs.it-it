@@ -1,45 +1,46 @@
 ---
 title: Pagina della Guida F1 predefinita per l'editor di testo
 description: Pagina predefinita per le richieste della Guida F1 per l'editor di testo di Visual Studio
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 6d30a7bf02202b8114e594c94f7564a1d8683e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d22a07e29b45362324074329aabfddf2b247a6b
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961651"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616909"
 ---
-# <a name="f1-help-for-the-text-editor"></a>Guida sensibile al contesto per l'editor di testo
+# <a name="code-editor-f1-help"></a>Guida sensibile al contesto dell'editor di codice
 
 Non è stato possibile trovare gli argomenti cercati. Per contribuire al miglioramento, è possibile lasciare commenti e suggerimenti tramite i pulsanti disponibili nella parte inferiore della pagina oppure provare a eseguire una delle operazioni seguenti.
 
-## <a name="cursor-position"></a>Posizione del cursore
+## <a name="get-help-for-your-programming-language"></a>Ottenere supporto per il linguaggio di programmazione in uso.
 
-Se si sta cercando la Guida sensibile al contesto per una parola chiave o un nome di API, assicurarsi di posizionare il cursore all'interno o a destra della parola prima di premere **F1**. Se il problema persiste, provare uno dei suggerimenti seguenti.
+- [Guida per programmatori C#](/dotnet/csharp/programming-guide/) o informazioni di [riferimento sul linguaggio](/dotnet/csharp/language-reference/).
+- [Funzionalità del linguaggio Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) o [riferimento al linguaggio](/dotnet/visual-basic/language-reference/).
+- [Documentazione di Python](https://docs.python.org/).
+- Informazioni [di riferimento sulle librerie standard e sul linguaggio C/C++](/cpp/cpp/c-cpp-language-and-standard-libraries).
+- [Guida a F #](/dotnet/fsharp/).
+- [Documentazione di typescript](https://www.typescriptlang.org/docs).
 
-## <a name="find-help-on-a-keyword-or-api"></a>Trovare la guida su una parola chiave o un'API
-
-- Per la Guida di C#, vedere la [Guida per programmatori c#](/dotnet/csharp/programming-guide/) o la Guida di [riferimento al linguaggio](/dotnet/csharp/language-reference/).
-- Per Visual Basic Guida, vedere le informazioni di riferimento sul [linguaggio](/dotnet/visual-basic/language-reference/)o sulle [funzionalità del linguaggio Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) .
-- Per la Guida di Python, vedere la [documentazione di Python](https://docs.python.org/).
-- Per informazioni su C++, vedere il [linguaggio C/c++ e riferimenti alle librerie standard](/cpp/cpp/c-cpp-language-and-standard-libraries).
-- Per informazioni su F#, vedere la [Guida a F#](/dotnet/fsharp/).
-- Per la Guida di TypeScript, vedere la [documentazione di typescript](https://www.typescriptlang.org/docs).
-
-## <a name="search-for-help-on-a-keyword-or-api-name"></a>Cerca la guida su una parola chiave o un nome di API
+## <a name="search-for-help-on-keyword-api-name-file-type-or-ui-settings"></a>Cerca la guida sulla parola chiave, il nome API, il tipo di file o le impostazioni dell'interfaccia utente
 
 Se si sta cercando la Guida sensibile al contesto per una parola chiave o un nome API:
+
 - Cerca in [docs.Microsoft.com](/)
 - Provare a eseguire la ricerca usando un motore di ricerca.
 - Cercare la documentazione di riferimento nel [browser API .NET](/dotnet/api/).
+
+## <a name="cursor-position"></a>Posizione del cursore
+
+Se si sta cercando la Guida sensibile al contesto per una parola chiave o un nome di API, assicurarsi di posizionare il cursore all'interno o a destra della parola prima di premere **F1**.
 
 ## <a name="find-the-source-code-for-an-api"></a>Trovare il codice sorgente per un'API
 

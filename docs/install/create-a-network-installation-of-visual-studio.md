@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e76c5346230b6991f238384a4852938dcc540f6c
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850172"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616935"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -70,7 +70,7 @@ Altri programmi di avvio automatico supportati includono [vs_teamexplorer.exe](h
 
 ## <a name="create-an-offline-installation-folder"></a>Creare una cartella di installazione offline
 
-Per completare questo passaggio è necessaria una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, usare un comando simile a uno degli esempi seguenti.
+Per completare questo passaggio è necessaria una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, usare un comando simile a uno degli esempi seguenti. Questa cartella deve rimanere statica e tutti gli aggiornamenti del layout devono essere inclusi in questa cartella. 
 
    > [!IMPORTANT]
    > Un layout completo per le impostazioni locali di una singola lingua richiede circa 35 GB di spazio su disco per Visual Studio community e 42 GB per Visual Studio Enterprise. Per altre [impostazioni locali della lingua](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) sono necessari circa mezzo GB ciascuno. Per altre informazioni, vedere la sezione [personalizzare il layout di rete](#customize-the-network-layout) .
