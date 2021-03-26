@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b03b7a4941609462fca27bebf67d8ad2a8f7044
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f956aa520bca79a84fe203093c225cfeb8389ba1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944921"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089199"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Creare un'estensione con una finestra degli strumenti
 
@@ -29,7 +29,7 @@ Questa procedura illustra come usare il modello di progetto VSIX e il modello di
 
 1. Creare un progetto VSIX denominato **FirstWindow**. È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Quando si apre il progetto, aggiungere un modello di elemento della finestra degli strumenti denominato **finestra**. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a estensibilità di **Visual C#**  >   e selezionare **finestra degli strumenti personalizzata**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file della finestra degli strumenti in *myWindow.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento della finestra degli strumenti denominato **finestra**. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a estensibilità di **Visual C#**  >   e selezionare **finestra degli strumenti personalizzata**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file della finestra degli strumenti in *finestra. cs*.
 
 3. Compilare il progetto e avviare il debug.
 

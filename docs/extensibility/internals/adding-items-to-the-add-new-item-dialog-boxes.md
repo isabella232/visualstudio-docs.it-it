@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 574cc5384018d14fdc05a834876002bbcbdbaaf7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969009"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079098"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Aggiungi elementi alla finestra di dialogo Aggiungi nuovo elemento
 Il processo per l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo elemento** inizia con le chiavi del registro di sistema. Come illustrato nelle voci del registro di sistema seguenti, la sezione **AddItemTemplates** contiene il percorso e il nome della directory in cui vengono inseriti gli elementi resi disponibili nella finestra di dialogo **Aggiungi nuovo elemento** .

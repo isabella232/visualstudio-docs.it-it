@@ -12,17 +12,17 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e5a206b8ece21b14758dfeb02563d4d323dcf60
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960780"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079462"
 ---
 # <a name="session-debug-manager"></a>Gestione debug sessione
 Gestione debug sessione (SDM) gestisce un numero qualsiasi di motori di debug (DE) che eseguono il debug di un numero qualsiasi di programmi in più processi in un numero qualsiasi di computer. Oltre a essere un motore di debug multiplexer, SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.

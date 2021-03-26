@@ -8,17 +8,17 @@ helpviewer_keywords:
 - directory status code enumerator
 - source control plug-ins, directory status enumeration
 ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6d5eb64cf4883c2e977b41e77fc2243aca2ee34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e995fb1dcb879645f59d6d8750852a790c99e90
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968255"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091253"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumeratore del codice di stato della directory
 L' `SccDirStatus` enumeratore contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Questa operazione è stata introdotta nella versione 1,2 dell'API del plug-in del controllo del codice sorgente.
