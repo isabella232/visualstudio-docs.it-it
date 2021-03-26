@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateList function
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ed033d05711e4c6815945796595897e926ba74
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ae531b4be3406c38180183037695a2320b372b14
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220547"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056532"
 ---
 # <a name="sccpopulatelist-function"></a>Funzione SccPopulateList
 Questa funzione aggiorna un elenco di file per un particolare comando del controllo del codice sorgente e fornisce lo stato del controllo del codice sorgente in tutti i file specificati.

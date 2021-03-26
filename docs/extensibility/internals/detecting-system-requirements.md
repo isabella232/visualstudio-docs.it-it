@@ -8,17 +8,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20287ba123c5736c9eb7077622623f4a739bde5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffb00ca42376f8b7c150552c862bba7a24a5c1fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963471"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056766"
 ---
 # <a name="detect-system-requirements"></a>Rilevare i requisiti di sistema
 Un pacchetto VSPackage non può funzionare a meno che non sia installato Visual Studio. Quando si usa Microsoft Windows Installer per gestire l'installazione del pacchetto VSPackage, è possibile configurare il programma di installazione per rilevare se Visual Studio è installato. È anche possibile configurarlo in modo da controllare il sistema per altri requisiti, ad esempio una particolare versione di Windows o una determinata quantità di RAM.

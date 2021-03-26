@@ -5,20 +5,20 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ce834a2c949c55a6deeb6b7c7d0a9751771e316
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838695"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080398"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: creare un SDK usando C# o Visual Basic
 In questa procedura dettagliata verrà illustrato come creare un semplice SDK della libreria Math usando Visual C# e come creare il pacchetto dell'SDK come estensione di Visual Studio (VSIX). Verranno completate le procedure seguenti:
@@ -41,7 +41,7 @@ In questa procedura dettagliata verrà illustrato come creare un semplice SDK de
 
 4. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **SimpleMath** , quindi scegliere **proprietà**.
 
-5. Rinominare **Class1.cs** in **Arithmetic.cs** e aggiornarlo in modo che corrisponda al codice seguente:
+5. Rinominare **Class1. cs** in **aritmetic. cs** e aggiornarlo in modo che corrisponda al codice seguente:
 
     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
@@ -234,7 +234,7 @@ In questa procedura dettagliata verrà illustrato come creare un semplice SDK de
     </Page>
     ```
 
-11. Aggiornare **MainPage.XAML.cs** in modo che corrisponda al codice seguente:
+11. Aggiornare **MainPage. XAML. cs** in modo che corrisponda al codice seguente:
 
      [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
      [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]

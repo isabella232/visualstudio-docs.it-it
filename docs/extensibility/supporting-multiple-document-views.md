@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5360f67714e1da4f7372ee51eb4f75cc8835c1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54ee028c6a7db2d5d2ea1ab609be6c2887c9829
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965122"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056207"
 ---
 # <a name="supporting-multiple-document-views"></a>Supporto di più visualizzazioni documento
 È possibile fornire più di una visualizzazione di un documento creando oggetti dati del documento e oggetti visualizzazione documento distinti per l'editor. Alcuni casi in cui è utile una visualizzazione del documento aggiuntiva sono:
@@ -26,7 +26,7 @@ ms.locfileid: "99965122"
 
 - Supporto per il form e la visualizzazione del codice: si desidera che l'editor fornisca visualizzazioni di tipi diversi. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], ad esempio, fornisce una visualizzazione form e una visualizzazione codice.
 
-  Per altre informazioni, vedere la procedura CreateEditorInstance nel file EditorFactory.cs nel progetto di editor personalizzato creato dal modello di pacchetto di Visual Studio. Per ulteriori informazioni su questo progetto, vedere [procedura dettagliata: creazione di un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).
+  Per ulteriori informazioni, vedere la procedura CreateEditorInstance nel file EditorFactory. cs nel progetto di editor personalizzato creato dal modello di pacchetto di Visual Studio. Per ulteriori informazioni su questo progetto, vedere [procedura dettagliata: creazione di un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).
 
 ## <a name="synchronizing-views"></a>Sincronizzazione di viste
  Quando si implementano più visualizzazioni, l'oggetto dati del documento è responsabile di mantenere tutte le visualizzazioni sincronizzate con i dati. È possibile utilizzare le interfacce di gestione degli eventi su <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> per sincronizzare più visualizzazioni con i dati.
