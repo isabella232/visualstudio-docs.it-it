@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b09db3fecde5d4b87b24963930b2783b0c68052c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885612"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213979"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Procedura: gestire i conflitti di distribuzione
   È possibile fornire codice personalizzato per gestire i conflitti di distribuzione per un elemento del progetto SharePoint. Ad esempio, è possibile determinare se i file nell'elemento del progetto corrente sono già presenti nel percorso di distribuzione e quindi eliminare i file distribuiti prima della distribuzione dell'elemento del progetto corrente. Per ulteriori informazioni sui conflitti di distribuzione, vedere estensione della creazione [di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -44,8 +44,8 @@ ms.locfileid: "99885612"
 
  Per semplicità, il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> gestore eventi in questo esempio presuppone che esista un conflitto di distribuzione, ovvero aggiunge sempre un nuovo <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> oggetto, e il `Resolve` metodo restituisce semplicemente **true** per indicare che il conflitto è stato risolto. In uno scenario reale, il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> gestore eventi determina innanzitutto se esiste un conflitto tra un file nell'elemento di progetto corrente e un file nel percorso di distribuzione e quindi aggiunge un <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> oggetto solo se esiste un conflitto. Ad esempio, è possibile usare la `e.ProjectItem.Files` proprietà nel gestore eventi per analizzare i file nell'elemento del progetto ed è possibile chiamare un comando di SharePoint per analizzare i file nel percorso di distribuzione. Analogamente, in uno scenario reale il `Resolve` metodo può chiamare un comando di SharePoint per risolvere il conflitto nel sito di SharePoint. Per ulteriori informazioni sulla creazione di comandi di SharePoint, vedere [procedura: creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).
 
- [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio richiede riferimenti agli assembly seguenti:

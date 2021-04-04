@@ -3,24 +3,24 @@ title: Installare Visual Studio 2019 per Mac
 description: Istruzioni su come installare Visual Studio 2019 per Mac e i componenti aggiuntivi necessari per lo sviluppo multipiattaforma.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 03/04/2021
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 653e653a0574da52c0030b06c7a8c13b436ed686
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727567"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273414"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installare Visual Studio 2019 per Mac
 
 Per iniziare a sviluppare app .NET native e multipiattaforma in macOS, installare Visual Studio 2019 per Mac seguendo i passaggi indicati di seguito.
 
  > [!div class="button"]
- > [Download di Visual Studio per Mac](https://visualstudio.microsoft.com/vs/mac/)
+ > [Scaricare Visual Studio per Mac](https://visualstudio.microsoft.com/vs/mac/)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -28,7 +28,8 @@ Per iniziare a sviluppare app .NET native e multipiattaforma in macOS, installar
 
 Per compilare app Xamarin per iOS o macOS, è anche necessario:
 
-- Xcode 10.0 o versione successiva. È in genere consigliabile usare la versione stabile più recente.
+- Un Mac compatibile con la versione più recente di Xcode. Vedere la [documentazione minima sui requisiti](https://developer.apple.com/support/xcode/) di Apple
+- La versione più recente di [Xcode](https://developer.apple.com/xcode). Potrebbe essere possibile [usare una versione precedente di Xcode](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode) se il Mac non è compatibile con la versione più recente.
 - ID Apple. Se non si ha ancora un ID Apple, è possibile crearne uno nuovo all'indirizzo https://appleid.apple.com. L'ID Apple è necessario per installare Xcode e accedervi.
 
 ## <a name="installation-instructions"></a>Istruzioni per l'installazione
@@ -96,14 +97,21 @@ L'installazione di Visual Studio per Mac consente di iniziare a scrivere codice 
 
 ### <a name="ios"></a>iOS
 
-1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [Provisioning di dispositivi](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (per eseguire l'applicazione nel dispositivo).
+1. [Hello, iOS](https://docs.microsoft.com//xamarin/ios/get-started/hello-ios/)
+2. [Provisioning di dispositivi](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/) (per eseguire l'applicazione nel dispositivo).
 
 ### <a name="android"></a>Android
 
-1. [Using the Xamarin Android SDK Manager (Uso di Xamarin Android SDK Manager)](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Emulatore di Android SDK](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [Set Up Device for Development (Configurare il dispositivo per lo sviluppo)](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+1. [Hello, Android](https://docs.microsoft.com/xamarin/android/get-started/hello-android/)
+2. [Using the Xamarin Android SDK Manager (Uso di Xamarin Android SDK Manager)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-sdk?tabs=macos)
+3. [Emulatore di Android SDK](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)
+4. [Set Up Device for Development (Configurare il dispositivo per lo sviluppo)](https://docs.microsoft.com/xamarin/android/get-started/installation/set-up-device-for-development)
+
+### <a name="xamarinforms"></a>Xamarin.Forms
+
+Creazione di applicazioni multipiattaforma native con Novell. Forms:
+
+1. [Guide introduttive per Novell. Forms](https://docs.microsoft.com/xamarin/get-started/quickstarts/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>app .NET core, app Web ASP.NET Core, sviluppo di giochi Unity
 

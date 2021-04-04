@@ -2,7 +2,7 @@
 title: Installare versioni di Visual Studio side-by-side
 description: Informazioni su come installare Visual Studio in un computer in cui è già installata una versione precedente o successiva di Visual Studio.
 ms.custom: SEO-VS-2020
-ms.date: 07/24/2019
+ms.date: 03/29/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.openlocfilehash: f17759d186805dc72623f27c9f254c7a6c0d36e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0814b6ebfacd5b4cf24d0f451967903b9551808f
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941528"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981277"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare versioni di Visual Studio side-by-side
 
@@ -50,17 +50,44 @@ Prima di installare le versioni side-by-side, verificare le condizioni seguenti:
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>Installare versioni secondarie di Visual Studio side-by-side
 
-Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio alla successiva, il programma di installazione di Visual Studio aggiornerà l'installazione corrente alla versione successiva nel canale per impostazione predefinita. Ad esempio, quando si installa l'anteprima di 16.6.4, il programma di installazione tenterà di sostituire l'installazione corrente di 16.6.3 Preview, perché entrambe le versioni si trovano nel canale 16,6 Preview. Ciò consente di garantire che le versioni precedenti di Visual Studio non stiano occupando spazio nel computer. In alcuni casi specifici, potrebbe essere utile installare le versioni secondarie side-by-side. In questo esempio, ciò significherebbe avere sia 16.6.3 che 16.6.4 nello stesso computer.
+Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio alla successiva, il programma di installazione di Visual Studio, per impostazione predefinita, aggiorna l'installazione corrente alla versione più recente nel canale. Si supponga, ad esempio, che 16.9.4 sia stato appena rilasciato. Il programma di installazione tenterà di sostituire l'installazione corrente di 16.9.3 (o versione precedente) con 16.9.4, perché entrambe le versioni fanno parte del [canale di rilascio di Visual Studio 2019](https://docs.microsoft.com/visualstudio/productinfo/release-rhythm). La sostituzione della versione precedente con la versione più recente durante l'aggiornamento contribuisce a garantire che le versioni precedenti di Visual Studio non stiano occupando spazio nel computer. Tuttavia, in alcuni casi specifici, potrebbe essere utile installare diverse versioni di rilascio secondarie di Visual Studio side-by-side. È ad esempio possibile che si desideri avere sia 16.9.3 che 16.9.4 nello stesso computer. 
 
-1. Scaricare il [file del programma di avvio automatico di Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione secondaria di cui si vuole eseguire l'installazione side-by-side con le versioni esistenti di Visual Studio.
+::: moniker range="vs-2017"
+
+1. Scaricare il programma di avvio automatico più recente per Visual Studio 2017 versione 15,9 dalla pagina [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per la versione che si vuole installare side-by-side con la versione esistente di Visual Studio.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Scaricare il file del programma di avvio automatico di Visual Studio 2019 dalla [pagina dei download di Visual Studio](https://visualstudio.microsoft.com/downloads) o dalla pagina delle versioni di visual [Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione secondaria che si desidera installare side-by-side con la versione esistente di Visual Studio.
+
+::: moniker-end
+
+
 2. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il menu Start di Windows, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e scegliere **Esegui come amministratore**. Nel prompt dei comandi passare alla directory in cui si trova il file del programma di avvio automatico di Visual Studio.
-3. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file con estensione exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il nome del file con estensione exe deve corrispondere o essere simile a uno dei file seguenti:
-   * vs_community.exe per Visual Studio Community
-   * vs_professional.exe per Visual Studio Professional
-   * vs_enterprise.exe per Visual Studio Enterprise
 
+::: moniker range="vs-2017"
+
+3. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file con estensione exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il nome del file con estensione exe deve corrispondere o essere simile a uno dei file seguenti:
+
+   * vs_enterprise.exe per Visual Studio Enterprise
+   * vs_professional.exe per Visual Studio Professional
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+3. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file con estensione exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il nome del file con estensione exe deve corrispondere o essere simile a uno dei file seguenti:
+
+   * vs_enterprise.exe per Visual Studio Enterprise
+   * vs_professional.exe per Visual Studio Professional
+   * vs_community.exe per Visual Studio Community
+
+::: moniker-end 
+  
    ```
-   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<AddNewPath>"
    ```
 
 4. Seguire le finestre di dialogo del programma di installazione per selezionare i componenti necessari per l'installazione. Per altre informazioni, vedere [installare Visual Studio](install-visual-studio.md#step-4---choose-workloads).

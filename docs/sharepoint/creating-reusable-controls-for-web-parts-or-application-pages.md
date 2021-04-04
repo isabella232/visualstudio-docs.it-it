@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b61474f4290771fb139d511296580ec1ef0f8820
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949129"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213914"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Creazione di controlli riutilizzabili per Web part o pagine applicazione
   In Visual Studio è possibile creare controlli riutilizzabili personalizzati che possono essere utilizzati dalle pagine applicazione e dalle Web part eseguite in SharePoint. Questi controlli sono denominati controlli utente. Un controllo utente è un tipo di controllo composito che funziona in modo molto simile a una pagina Web di ASP.NET: è possibile aggiungere controlli server Web e markup esistenti a un controllo utente e definire proprietà e metodi per il controllo. È quindi possibile incorporarli nelle pagine Web di ASP.NET, in cui agiscono come unità.
@@ -47,8 +47,8 @@ ms.locfileid: "99949129"
 
  Per includere un controllo utente in una Web part, aggiungere il controllo utente alla raccolta web part <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> nel file di codice della web part. Nell'esempio seguente viene aggiunto un controllo utente alla <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> raccolta di una Web part.
 
- [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
- [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs" id="Snippet5":::
 
 ## <a name="debug-a-user-control"></a>Eseguire il debug di un controllo utente
  Per eseguire il debug di un controllo utente, assicurarsi che il controllo utente sia incluso in una pagina dell'applicazione o in una Web part nel progetto SharePoint. È quindi possibile eseguire il debug del codice nel controllo utente nello stesso modo in cui si esegue il debug del codice in qualsiasi progetto di Visual Studio.
