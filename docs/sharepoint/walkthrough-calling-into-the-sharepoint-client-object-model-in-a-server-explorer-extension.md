@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dee53642e042c8d4db88bdba7c093f327527798d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937680"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217021"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: chiamata al modello a oggetti del client di SharePoint in un'estensione Esplora server
   In questa procedura dettagliata viene illustrato come chiamare il modello a oggetti del client di SharePoint da un'estensione del nodo **connessioni di SharePoint** in **Esplora server**. Per ulteriori informazioni sull'utilizzo del modello a oggetti del client di SharePoint, vedere la pagina relativa alla [chiamata nei modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -166,8 +166,8 @@ Per completare la procedura dettagliata, è necessario conoscere i concetti segu
     > [!NOTE]
     > Una volta aggiunto questo codice, il progetto avrà alcuni errori di compilazione. Questi errori si verificano quando si aggiunge codice nei passaggi successivi.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Definire un tipo di nodo che rappresenta una Web part
  Creare una classe che definisce un nuovo tipo di nodo che rappresenta una Web part. Visual Studio usa questo nuovo tipo di nodo per visualizzare i nodi figlio nel nodo **raccolta web part** . Ognuno di questi nodi figlio rappresenta una singola Web part nel sito di SharePoint.
@@ -178,8 +178,8 @@ Per completare la procedura dettagliata, è necessario conoscere i concetti segu
 
 1. Incollare il codice seguente nel file di codice **WebPartNodeTypeProvider** per il progetto **WebPartNodeExtension** .
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
 
 ## <a name="checkpoint"></a>Checkpoint
  A questo punto della procedura dettagliata, tutto il codice per il nodo della **raccolta web part** è ora presente nel progetto. Compilare il progetto **WebPartNodeExtension** per assicurarsi che venga compilato senza errori.

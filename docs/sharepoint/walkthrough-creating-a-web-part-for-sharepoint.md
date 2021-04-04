@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e018085bd9900a9ee04f838b7c802afd2acc4fe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918635"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217710"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procedura dettagliata: creare una Web part per SharePoint
 
@@ -82,14 +82,14 @@ Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiung
 
 È possibile specificare i controlli che si desidera visualizzare nella web part aggiungendoli alla raccolta di controlli della classe Web part.
 
-1. In **Esplora soluzioni** aprire *WebPart1. vb* (in Visual Basic) o *WebPart1.cs* (in C#).
+1. In **Esplora soluzioni** aprire *WebPart1. vb* (in Visual Basic) o *WebPart1. cs* (in C#).
 
      Il file di codice della web part verrà aperto nell'editor di codice.
 
 2. Aggiungere le seguenti direttive all'inizio del file di codice della web part.
 
-     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
-     [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet1":::
 
 3. Aggiungere il codice seguente alla classe `WebPart1` . Questo codice dichiara i campi seguenti:
 
@@ -101,13 +101,13 @@ Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiung
 
    - Stringa che contiene il percorso del file di dati del dipendente.
 
-     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
-     [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet2":::
 
 4. Aggiungere il codice seguente alla classe `WebPart1` . Questo codice aggiunge una proprietà personalizzata denominata `DataFilePath` alla web part. Una proprietà personalizzata è una proprietà che può essere impostata in SharePoint dall'utente. Questa proprietà ottiene e imposta il percorso di un file di dati XML utilizzato per popolare la griglia dei dati.
 
-     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
-     [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet3":::
 
 5. Sostituire il metodo `CreateChildControls` con il codice seguente. Il codice esegue queste operazioni:
 
@@ -115,8 +115,8 @@ Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiung
 
    - Associa la griglia dati a un file XML che contiene i dati del dipendente.
 
-     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
-     [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet4":::
 
 6. Aggiungi alla classe `WebPart1` il metodo seguente. Il codice esegue queste operazioni:
 
@@ -124,8 +124,8 @@ Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiung
 
    - Gestione dell'evento generato quando l'utente sceglie il verbo nel relativo menu. Questo codice filtra l'elenco dei dipendenti visualizzati nella griglia dei dati.
 
-     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
-     [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet5":::
 
 ## <a name="test-the-web-part"></a>Testare la Web part
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c10c2bc69086e3c98633ba746c1e6fc8d7f2a20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f77e0044b8ae3c7456a31bb9c9153ba9e9f4c99
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889694"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218035"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estendere il nodo connessioni di SharePoint in Esplora server
   In Visual Studio è possibile connettersi ai siti di SharePoint locali nel computer di sviluppo usando il nodo **connessioni di SharePoint** nella finestra **Esplora server** . In questo nodo vengono visualizzati molti dei componenti dei siti di SharePoint locali in una visualizzazione struttura ad albero gerarchica. Ad esempio, è possibile visualizzare gli elenchi, le raccolte documenti e i tipi di contenuto nei siti locali. Per ulteriori informazioni sull'utilizzo di **Esplora server** per connettersi ai siti di SharePoint locali, vedere [Browse SharePoint connections using Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -50,8 +50,8 @@ ms.locfileid: "99889694"
 
  Nell'esempio di codice riportato di seguito viene illustrato come ottenere l'oggetto dati per un nodo elenco. Per vedere questo esempio nel contesto di un esempio più ampio, vedere [procedura: ottenere dati per un nodo SharePoint incorporato in Esplora server](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md).
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#11)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet11":::
 
  Nella tabella seguente sono elencati i tipi di oggetto dati per ogni tipo di nodo incorporato.
 

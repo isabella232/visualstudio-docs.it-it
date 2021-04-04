@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77c80134ad63346b363c072ef2eff7e49978501f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839136"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217931"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procedura dettagliata: creare un passaggio di distribuzione personalizzato per i progetti SharePoint
   Quando si distribuisce un progetto SharePoint, Visual Studio esegue una serie di passaggi di distribuzione in un ordine specifico. Visual Studio include molti passaggi di distribuzione incorporati, ma è anche possibile crearne di personalizzati.
@@ -151,8 +151,8 @@ ms.locfileid: "99839136"
     > [!NOTE]
     > Dopo l'aggiunta di questo codice, il progetto avrà alcuni errori di compilazione, ma non sarà più necessario quando si aggiunge il codice nei passaggi successivi.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet1":::
 
 ## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Creare una configurazione di distribuzione che includa il passaggio di distribuzione personalizzato
  Creare un'estensione di progetto per la nuova configurazione di distribuzione, che include diversi passaggi di distribuzione incorporati e il nuovo passaggio di distribuzione dell'aggiornamento. Creando questa estensione, è possibile aiutare gli sviluppatori di SharePoint a usare il passaggio di distribuzione dell'aggiornamento nei progetti SharePoint.
@@ -163,8 +163,8 @@ ms.locfileid: "99839136"
 
 1. Nel progetto **DeploymentStepExtension** aprire il file di codice DeploymentConfigurationExtension e quindi incollare il codice seguente al suo interno.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb" id="Snippet2":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>Creare i comandi personalizzati di SharePoint
  Creare due comandi personalizzati che effettuano chiamate nel modello a oggetti del server per SharePoint. Un comando determina se una soluzione è già stata distribuita. l'altro comando aggiorna una soluzione.
@@ -173,8 +173,8 @@ ms.locfileid: "99839136"
 
 1. Nel progetto **SharePointCommands** aprire il file di codice dei comandi, quindi incollare il codice seguente al suo interno.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet4":::
 
 ## <a name="checkpoint"></a>Checkpoint
  A questo punto della procedura dettagliata, tutto il codice per la fase di distribuzione personalizzata e i comandi di SharePoint sono ora inclusi nei progetti. Crearli per assicurarsi che vengano compilati senza errori.

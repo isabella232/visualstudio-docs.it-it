@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0811b029bf7e4705bc0c3689eff73f38280c3b3d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847713"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217684"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: creare un elenco esterno in SharePoint usando i dati aziendali
 
@@ -114,9 +114,9 @@ Il progetto **modello di integrazione applicativa dei dati** aggiunge un'entità
 
 3. Nella finestra di progettazione aprire il menu di scelta rapida per **Entity1**, quindi scegliere **Elimina**.
 
-4. In **Esplora soluzioni** aprire il menu di scelta rapida per *Entity1. vb* (in Visual Basic) o *Entity1.cs* (in C#), quindi scegliere **Elimina**.
+4. In **Esplora soluzioni** aprire il menu di scelta rapida per *Entity1. vb* (in Visual Basic) o *Entity1. cs* (in C#), quindi scegliere **Elimina**.
 
-5. Aprire il menu di scelta rapida per *Entity1Service. vb* (in Visual Basic) o *Entity1Service.cs* (in C#), quindi scegliere **Elimina**.
+5. Aprire il menu di scelta rapida per *Entity1Service. vb* (in Visual Basic) o *Entity1Service. cs* (in C#), quindi scegliere **Elimina**.
 
 ## <a name="add-an-entity-to-the-model"></a>Aggiungere un'entità al modello
 
@@ -126,7 +126,7 @@ Aggiungere un'entità al modello. È possibile aggiungere entità dalla **casell
 
 2. Nella scheda **BusinessDataConnectivity** della **casella degli strumenti** aggiungere un' **entità** nella finestra di progettazione dell'integrazione applicativa dei dati.
 
-     La nuova entità verrà visualizzata nella finestra di progettazione. Visual Studio aggiunge al progetto un file denominato *EntityService. vb* (in Visual Basic) o *EntityService.cs* (in C#).
+     La nuova entità verrà visualizzata nella finestra di progettazione. Visual Studio aggiunge al progetto un file denominato *EntityService. vb* (in Visual Basic) o *EntityService. cs* (in C#).
 
 3. Nella barra dei menu scegliere **Visualizza**  >    >  **finestra** proprietà.
 
@@ -208,8 +208,8 @@ Aggiungere un metodo di ricerca specifico all'entità Contact usando la finestra
     > [!NOTE]
     > Sostituire il valore del `ServerName` campo con il nome del server.
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="add-a-finder-method"></a>Aggiungere un metodo Finder
 
@@ -236,8 +236,8 @@ Per consentire al servizio BDC di visualizzare i contatti in un elenco, è neces
      > [!NOTE]
      > Sostituire il valore del `ServerName` campo con il nome del server.
 
-     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="test-the-project"></a>Testare il progetto
 

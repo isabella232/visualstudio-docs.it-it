@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cc3d29d4991b6cfb712e4754f066edbb66f0b71
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923352"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216683"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Procedura: creare un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti del server in un'estensione degli strumenti di SharePoint, è necessario creare un *comando di SharePoint* personalizzato per chiamare l'API. Il comando di SharePoint viene definito in un assembly che può chiamare direttamente nel modello a oggetti del server.
@@ -64,8 +64,8 @@ ms.locfileid: "99923352"
 ## <a name="example"></a>Esempio
  Nell'esempio di codice riportato di seguito viene illustrato un comando di SharePoint con l'identificatore `Contoso.Commands.UpgradeSolution` . Questo comando usa le API nel modello a oggetti del server per eseguire l'aggiornamento a una soluzione distribuita.
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet5":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet5":::
 
  Oltre al primo parametro implicito <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> , questo comando dispone anche di un parametro di stringa personalizzato che contiene il percorso completo del file con estensione wsp aggiornato al sito di SharePoint. Per visualizzare questo codice nel contesto di un esempio più ampio, vedere [procedura dettagliata: creare un passaggio di distribuzione personalizzato per i progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 

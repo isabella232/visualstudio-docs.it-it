@@ -4,17 +4,17 @@ description: Informazioni sui log generati dal sistema di Visual Studio, sui tip
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: jillre
-ms.author: michma
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
+ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894660"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106171836"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Log generati dal sistema raccolti da Visual Studio
 
@@ -70,7 +70,7 @@ Gli autori delle estensioni devono limitare l'esposizione delle informazioni per
 
 ## <a name="opt-out-of-data-collection"></a>Rifiutare esplicitamente la raccolta dei dati
 
-Considerate le finalità della raccolta dei dati e i vincoli di accesso e memorizzazione, si consiglia di usare le impostazioni di privacy predefinite di Visual Studio e Windows. È possibile tuttavia [rifiutare esplicitamente](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) il programma Analisi utilizzo software di Visual Studio. Per rifiutare esplicitamente la raccolta di log generati dal sistema per tutti i programmi, vedere [Diagnostica, feedback e privacy in Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Le opzioni possono variare a seconda della versione di Windows in uso.
+Considerate le finalità della raccolta dei dati e i vincoli di accesso e memorizzazione, si consiglia di usare le impostazioni di privacy predefinite di Visual Studio e Windows. È possibile tuttavia [rifiutare esplicitamente](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) il programma Analisi utilizzo software di Visual Studio. Quando si rifiuta esplicitamente, si rifiuta esplicitamente la raccolta dei dati di diagnostica **facoltativi** . È **necessaria** una raccolta di dati di diagnostica per assicurarsi che Visual Studio sia protetto, aggiornato e funzioni come previsto. La raccolta dei dati di diagnostica richiesta non sarà interessata dalla scelta di rifiutare esplicitamente la VSCEIP. Per rifiutare esplicitamente la raccolta di log generati dal sistema per tutti i programmi, vedere [Diagnostica, feedback e privacy in Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Le opzioni possono variare a seconda della versione di Windows in uso.
 
 ## <a name="see-also"></a>Vedi anche
 

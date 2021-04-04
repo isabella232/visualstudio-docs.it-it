@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4244fb83d4792786baeb99693dc0fee04624d37d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54ac53ad317f500e787baebfdfeb4a86dc917e06
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882726"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216813"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Procedura: aggiungere una voce di menu di scelta rapida ai progetti SharePoint
   È possibile aggiungere una voce di menu di scelta rapida a qualsiasi progetto SharePoint. La voce di menu viene visualizzata quando un utente fa clic con il pulsante destro del mouse su un nodo di progetto **Esplora soluzioni**.
@@ -40,8 +40,8 @@ ms.locfileid: "99882726"
 ## <a name="example"></a>Esempio
  Nell'esempio di codice riportato di seguito viene illustrato come aggiungere una voce di menu di scelta rapida ai nodi del progetto SharePoint in **Esplora soluzioni**. Quando l'utente fa clic con il pulsante destro del mouse su un nodo di progetto e fa clic sulla voce **di menu Scrivi messaggio in finestra di output** , Visual Studio Visualizza un messaggio nella finestra **output** . In questo esempio viene utilizzato il servizio di progetto SharePoint per visualizzare il messaggio. Per ulteriori informazioni, vedere [utilizzare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
- [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)]
- [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs" id="Snippet1":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio richiede un progetto di libreria di classi con riferimenti agli assembly seguenti:

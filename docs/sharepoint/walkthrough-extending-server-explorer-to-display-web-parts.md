@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276315b7f470777da30fda33b15bac995deb07fd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952668"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217671"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: estendere Esplora server per visualizzare le web part
   In Visual Studio è possibile usare il nodo **connessioni di SharePoint** di **Esplora server** per visualizzare i componenti nei siti di SharePoint. Tuttavia, per impostazione predefinita, **Esplora server** non visualizza alcuni componenti. In questa procedura dettagliata si estenderà **Esplora server** in modo da visualizzare la raccolta web part in ogni sito di SharePoint connesso.
@@ -216,8 +216,8 @@ ms.locfileid: "99952668"
     > [!NOTE]
     > Dopo l'aggiunta di questo codice, il progetto avrà alcuni errori di compilazione, ma non sarà più necessario quando si aggiunge il codice nei passaggi successivi.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Definire un tipo di nodo che rappresenta una Web part
  Creare una classe che definisce un nuovo tipo di nodo che rappresenta una Web part. Visual Studio usa questo nuovo tipo di nodo per visualizzare i nodi figlio nel nodo **raccolta web part** . Ogni nodo figlio rappresenta una singola Web part nel sito di SharePoint.
@@ -228,8 +228,8 @@ ms.locfileid: "99952668"
 
 1. Nel progetto WebPartNodeExtension aprire il file di codice WebPartNodeTypeProvder e quindi incollare il codice seguente al suo interno.
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
 
 ## <a name="define-the-web-part-data-class"></a>Definire la classe di dati web part
  Definire una classe che contiene i dati relativi a una singola Web part nel sito di SharePoint. Più avanti in questa procedura dettagliata verrà creato un comando di SharePoint personalizzato che recupera i dati relativi a ogni Web part nel sito e quindi assegna i dati alle istanze di questa classe.
@@ -238,8 +238,8 @@ ms.locfileid: "99952668"
 
 1. Nel progetto WebPartNodeExtension aprire il file di codice WebPartNodeInfo e quindi incollare il codice seguente al suo interno.
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs" id="Snippet3":::
 
 ## <a name="define-the-ids-for-the-sharepoint-commands"></a>Definire gli ID per i comandi di SharePoint
  Definire diverse stringhe che identificano i comandi personalizzati di SharePoint. Questi comandi vengono implementati più avanti in questa procedura dettagliata.
@@ -248,8 +248,8 @@ ms.locfileid: "99952668"
 
 1. Nel progetto WebPartNodeExtension aprire il file di codice WebPartCommandIds e quindi incollare il codice seguente al suo interno.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb" id="Snippet4":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>Creare i comandi personalizzati di SharePoint
  Creare comandi personalizzati che effettuano chiamate nel modello a oggetti del server per SharePoint per recuperare i dati relativi all'Web part nel sito di SharePoint. Ogni comando è un metodo a cui è <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> applicato.
@@ -258,8 +258,8 @@ ms.locfileid: "99952668"
 
 1. Nel progetto WebPartCommands aprire il file di codice WebPartCommands e quindi incollare il codice seguente al suo interno.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb" id="Snippet6":::
 
 ## <a name="checkpoint"></a>Checkpoint
  A questo punto della procedura dettagliata, tutto il codice per il nodo della **raccolta web part** e i comandi di SharePoint sono ora inclusi nei progetti. Compilare la soluzione per assicurarsi che entrambi i progetti vengano compilati senza errori.

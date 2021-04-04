@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3432dd9a72fa71ea1e749dd28e80a3d55cce19c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859190"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216059"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
@@ -130,9 +130,9 @@ A questo punto si è pronti per associare questo modello alla pagina XAML in mod
 
      ![Trascina le classi Orders come griglia](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Visual Studio ha generato tutto il codice di binding che connette i controlli dell'interfaccia utente agli eventi nel modello. Per visualizzare alcuni dati, è sufficiente scrivere del codice per popolare il modello di. Per prima cosa, passare a *MainWindow.XAML.cs* e aggiungere un membro dati alla classe MainWindow per il contesto dati. Questo oggetto, che è stato generato automaticamente, funge da controllo che tiene traccia delle modifiche e degli eventi nel modello. Verranno inoltre aggiunti i membri dati CollectionViewSource per i clienti e gli ordini e la logica di inizializzazione del costruttore associata. La parte superiore della classe avrà un aspetto simile al seguente:
+7. Visual Studio ha generato tutto il codice di binding che connette i controlli dell'interfaccia utente agli eventi nel modello. Per visualizzare alcuni dati, è sufficiente scrivere del codice per popolare il modello di. Per prima cosa, passare a *MainWindow. XAML. cs* e aggiungere un membro dati alla classe MainWindow per il contesto dati. Questo oggetto, che è stato generato automaticamente, funge da controllo che tiene traccia delle modifiche e degli eventi nel modello. Verranno inoltre aggiunti i membri dati CollectionViewSource per i clienti e gli ordini e la logica di inizializzazione del costruttore associata. La parte superiore della classe avrà un aspetto simile al seguente:
 
-     [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet1":::
 
      Aggiungere una `using` direttiva per System. Data. Entity per portare il metodo di estensione del carico nell'ambito:
 
@@ -142,7 +142,8 @@ A questo punto si è pronti per associare questo modello alla pagina XAML in mod
 
      Scorrere ora verso il basso e trovare il `Window_Loaded` gestore eventi. Si noti che Visual Studio ha aggiunto un oggetto CollectionViewSource. Rappresenta l'oggetto NorthwindEntities selezionato al momento della creazione del modello. Questa operazione è già stata aggiunta, quindi non è necessaria. Sostituire il codice in in `Window_Loaded` modo che il metodo sia ora simile al seguente:
 
-     [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet2":::
+
 
 8. Premere **F5**. Verranno visualizzati i dettagli per il primo cliente recuperato in CollectionViewSource. È anche possibile visualizzare gli ordini nella griglia dei dati. La formattazione non è eccezionale, quindi è consigliabile risolverla. È anche possibile creare un modo per visualizzare gli altri record ed eseguire operazioni CRUD di base.
 
@@ -421,9 +422,10 @@ La logica del comando include quattro parti: (1) i comandi, (2) i binding, (3) i
 
 Il code-behind è minimo ad eccezione dei metodi Add e DELETE. La navigazione viene eseguita chiamando metodi sulla proprietà di visualizzazione dell'oggetto CollectionViewSource. `DeleteOrderCommandHandler`Viene illustrato come eseguire un'eliminazione a catena in un ordine. Prima di tutto è necessario eliminare i Order_Details associati. `UpdateCommandHandler`Aggiunge un nuovo cliente o ordine alla raccolta, altrimenti aggiorna semplicemente un cliente o un ordine esistente con le modifiche apportate dall'utente nelle caselle di testo.
 
-Aggiungere questi metodi di gestione alla classe MainWindow in *MainWindow.XAML.cs*. Se l'oggetto CollectionViewSource per la tabella Customers ha un nome diverso, è necessario modificare il nome in ognuno di questi metodi:
+Aggiungere questi metodi di gestione alla classe MainWindow in *MainWindow. XAML. cs*. Se l'oggetto CollectionViewSource per la tabella Customers ha un nome diverso, è necessario modificare il nome in ognuno di questi metodi:
 
-[!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet3":::
+
 
 ## <a name="run-the-application"></a>Eseguire l'applicazione
 

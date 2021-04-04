@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e1046dfd114e4cad69445b8f4e1432c03aac0e5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858670"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216462"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 
@@ -52,8 +52,8 @@ Se l'applicazione usa set di dati per archiviare i dati, è sufficiente aggiunge
 
    Nel codice seguente viene illustrato come aggiungere un nuovo record a un oggetto <xref:System.Data.DataTable> e quindi chiamare il `TableAdapter.Update` metodo per salvare la nuova riga nel database. In questo esempio viene utilizzata la `Region` tabella nel database Northwind.
 
-   [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
-   [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]
+   :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb" id="Snippet14":::
+   :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs" id="Snippet14":::
 
 ### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Per inserire nuovi record in un database utilizzando il metodo TableAdapter. Insert
 
@@ -66,8 +66,8 @@ Nella procedura riportata di seguito viene illustrato l'utilizzo del `TableAdapt
 > [!NOTE]
 > Se non si dispone di un'istanza disponibile, creare un'istanza del TableAdapter che si desidera utilizzare.
 
-[!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]
-[!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet15":::
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet15":::
 
 ## <a name="insert-new-records-by-using-command-objects"></a>Inserire nuovi record usando oggetti Command
 
@@ -79,8 +79,8 @@ Nella procedura riportata di seguito viene illustrato l'utilizzo del `TableAdapt
 
 Nell'esempio seguente viene illustrato l'inserimento di record in un database utilizzando l'oggetto Command. Inserisce i dati nella `Region` tabella nel database Northwind.
 
-[!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
-[!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet16":::
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet16":::
 
 ## <a name="net-security"></a>Protezione .NET
 
