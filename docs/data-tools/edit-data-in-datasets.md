@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ceec2cafd3476342d9319d9b5d034564759fad
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858917"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215903"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 È possibile modificare i dati nelle tabelle dati in modo analogo a come si modificano i dati in una tabella di qualsiasi database. Il processo può includere l'inserimento, l'aggiornamento e l'eliminazione di record nella tabella. In un form con associazione a dati è possibile specificare i campi modificabili dall'utente. In questi casi, l'infrastruttura di data binding gestisce tutti i rilevamento delle modifiche in modo che le modifiche possano essere inviate nuovamente al database in un secondo momento. Se si apportano modifiche ai dati a livello di codice e si desidera inviare le modifiche al database, è necessario utilizzare gli oggetti e i metodi che eseguono il rilevamento delle modifiche.
@@ -33,21 +33,21 @@ Per modificare una riga esistente in un oggetto <xref:System.Data.DataTable> , �
 
 Se non si conosce l'indice della riga che si desidera modificare, utilizzare il `FindBy` metodo per eseguire la ricerca in base alla chiave primaria:
 
-[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
-[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet3":::
 
 Se si conosce l'indice di riga, è possibile accedere alle righe e modificarle come segue:
 
-[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
-[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet5":::
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Per inserire nuove righe in un set di dati
 Le applicazioni che usano controlli associati a dati in genere aggiungono nuovi record tramite il pulsante **Aggiungi nuovo** in un [controllo BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).
 
 Per aggiungere manualmente nuovi record a un set di dati, creare una nuova riga di dati chiamando il metodo sull'oggetto DataTable. Aggiungere quindi la riga alla <xref:System.Data.DataRow> raccolta ( <xref:System.Data.DataTable.Rows%2A> ) dell'oggetto <xref:System.Data.DataTable> :
 
-[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
-[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet1":::
 
 Per mantenere le informazioni necessarie al set di dati per l'invio di aggiornamenti all'origine dati, utilizzare il <xref:System.Data.DataRow.Delete%2A> metodo per rimuovere le righe in una tabella di dati. Se, ad esempio, l'applicazione usa un TableAdapter (o <xref:System.Data.Common.DataAdapter> ), il metodo del TableAdapter `Update` Elimina le righe nel database che hanno un <xref:System.Data.DataRow.RowState%2A> di <xref:System.Data.DataRowState.Deleted> .
 
@@ -64,8 +64,8 @@ Se l'applicazione non deve inviare aggiornamenti a un'origine dati, è possibile
 
 Nell'esempio seguente viene illustrato come chiamare il <xref:System.Data.DataRow.Delete%2A> metodo per contrassegnare la prima riga della `Customers` tabella come eliminata:
 
-[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
-[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet8":::
 
 ## <a name="determine-if-there-are-changed-rows"></a>Determinare se sono presenti righe modificate
 Quando vengono apportate modifiche ai record in un set di dati, le informazioni su tali modifiche vengono archiviate fino a quando non vengono salvate. Le modifiche vengono sottoposte a commit quando si chiama il `AcceptChanges` metodo di un set di dati o di una tabella dati oppure quando si chiama il `Update` metodo di un TableAdapter o di un adattatore dati.
@@ -84,8 +84,8 @@ Il <xref:System.Data.DataSet.HasChanges%2A> metodo di un set di dati restituisce
 
 Nell'esempio seguente viene illustrato come controllare il valore restituito dal <xref:System.Data.DataSet.HasChanges%2A> metodo per rilevare se sono presenti righe modificate in un set di dati denominato `NorthwindDataset1` :
 
-[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
-[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet12":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet12":::
 
 ## <a name="determine-the-type-of-changes"></a>Determinare il tipo di modifiche
 È anche possibile verificare il tipo di modifiche apportate in un set di dati passando un valore dall' <xref:System.Data.DataRowState> enumerazione al <xref:System.Data.DataSet.HasChanges%2A> metodo.
@@ -96,8 +96,8 @@ Nell'esempio seguente viene illustrato come controllare il valore restituito dal
 
 Nell'esempio seguente viene illustrato come controllare un set di dati denominato `NorthwindDataset1` per determinare se sono state aggiunte nuove righe:
 
-[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
-[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet13":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet13":::
 
 ## <a name="to-locate-rows-that-have-errors"></a>Per individuare le righe che contengono errori
 Quando si utilizzano singole colonne e righe di dati, è possibile che si verifichino errori. È possibile controllare la `HasErrors` proprietà per determinare se sono presenti errori in un oggetto <xref:System.Data.DataSet> , <xref:System.Data.DataTable> o <xref:System.Data.DataRow> .
@@ -106,8 +106,8 @@ Quando si utilizzano singole colonne e righe di dati, è possibile che si verifi
 
 2. Se la `HasErrors` proprietà è `true` , scorrere le raccolte di tabelle e quindi attraverso le righe per trovare la riga con l'errore.
 
-[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
-[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet23":::
 
 ## <a name="see-also"></a>Vedi anche
 

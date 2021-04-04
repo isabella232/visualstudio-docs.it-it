@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939669"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082539"
 ---
 # <a name="how-msbuild-builds-projects"></a>Come vengono compilati i progetti in MSBuild
 
@@ -139,7 +139,7 @@ Il file *Microsoft. Common. props* imposta le impostazioni predefinite di cui è
 
 Il file *Microsoft. Common. targets* e i file di destinazione importati definiscono il processo di compilazione standard per i progetti .NET. Fornisce anche punti di estensione che è possibile usare per personalizzare la compilazione.
 
-Nell'implementazione *Microsoft. Common. targets* è un thin wrapper che importa *Microsoft. Common. CurrentVersion. targets*. Questo file contiene le impostazioni per le proprietà standard e definisce le destinazioni effettive che definiscono il processo di compilazione. La `Build` destinazione è definita qui, ma in realtà è vuota. Tuttavia, la `Build` destinazione contiene l' `DependsOn` attributo che specifica le singole destinazioni che costituiscono i passaggi di compilazione effettivi, ovvero `BeforeBuild` , `CoreBuild` e `AfterBuild` . La `Build` destinazione è definita come segue:
+Nell'implementazione *Microsoft. Common. targets* è un thin wrapper che importa *Microsoft. Common. CurrentVersion. targets*. Questo file contiene le impostazioni per le proprietà standard e definisce le destinazioni effettive che definiscono il processo di compilazione. La `Build` destinazione è definita qui, ma in realtà è vuota. Tuttavia, la `Build` destinazione contiene l' `DependsOnTargets` attributo che specifica le singole destinazioni che costituiscono i passaggi di compilazione effettivi, ovvero `BeforeBuild` , `CoreBuild` e `AfterBuild` . La `Build` destinazione è definita come segue:
 
 ```xml
   <PropertyGroup>
@@ -157,7 +157,7 @@ Nell'implementazione *Microsoft. Common. targets* è un thin wrapper che importa
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` e `AfterBuild` sono punti di estensione. Sono vuoti nel file *Microsoft. Common. CurrentVersion. targets* , ma i progetti possono fornire le proprie `BeforeBuild` destinazioni e le proprie `AfterBuild` destinazioni con le attività che devono essere eseguite prima o dopo il processo di compilazione principale. `AfterBuild` viene eseguito prima della destinazione no-op, `Build` , perché `AfterBuild` viene visualizzato nell' `DependsOn` attributo nella `Build` destinazione, ma si verifica dopo `CoreBuild` .
+`BeforeBuild` e `AfterBuild` sono punti di estensione. Sono vuoti nel file *Microsoft. Common. CurrentVersion. targets* , ma i progetti possono fornire le proprie `BeforeBuild` destinazioni e le proprie `AfterBuild` destinazioni con le attività che devono essere eseguite prima o dopo il processo di compilazione principale. `AfterBuild` viene eseguito prima della destinazione no-op, `Build` , perché `AfterBuild` viene visualizzato nell' `DependsOnTargets` attributo nella `Build` destinazione, ma si verifica dopo `CoreBuild` .
 
 La `CoreBuild` destinazione contiene le chiamate agli strumenti di compilazione, come indicato di seguito:
 

@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836189"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082526"
 ---
 # <a name="xaml-designer-options-page"></a>Pagina delle opzioni della finestra di progettazione XAML
 
@@ -61,6 +61,17 @@ Usare questa impostazione per determinare il funzionamento dello zoom quando si 
 |**Rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML usando lo scorrimento della rotellina del mouse.|
 |**CTRL + rotellina del mouse**|Eseguire lo zoom avanti del finestra di progettazione XAML premendo il tasto **CTRL** mentre si scorre la rotellina del mouse.|
 |**ALT + rotellina del mouse**|Ingrandire il finestra di progettazione XAML premendo **ALT** mentre si scorre la rotellina del mouse.|
+
+Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.
+
+## <a name="default-zoom-setting"></a>Impostazione zoom predefinita
+
+Usare questa impostazione per determinare il valore di zoom predefinito per la visualizzazione del documento XAML.
+
+|Nome|Descrizione|
+|-|-|
+|**Ultimo utilizzo**|Per impostazione predefinita, utilizzare l'ultimo valore di zoom utilizzato per tutti i documenti XAML. Quando un documento XAML viene aperto per la prima volta, utilizzerà l'impostazione "adatta tutto" per la prima volta.|
+|**Adatta tutto**|Usare questa opzione per impostare il valore di zoom su "adatta tutto" per la finestra di progettazione XAML. Quando un documento XAML viene chiuso e riaperto, il valore dell'ultimo set verrà mantenuto per tale sessione, ma per impostazione predefinita verranno usate le diverse sessioni "Fit All".|
 
 Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.
 

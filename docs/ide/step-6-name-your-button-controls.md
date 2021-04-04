@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f69a87d923eebaea03c9c8a38496c4c379db8aba
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868881"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214213"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 
@@ -43,15 +43,15 @@ Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button
 1. Rinominare gli altri tre pulsanti **backgroundButton**, **clearButton** e **showButton**.
 È possibile verificare i nomi facendo clic sull'elenco a discesa del selettore dei controlli nella finestra **Proprietà** . Vengono visualizzati i nuovi nomi dei pulsanti.
 
-1. Fare doppio clic sul pulsante **Visualizza immagine** nel form. In alternativa, scegliere il pulsante **Visualizza immagine** nel form, quindi premere il tasto **invio** . Quando si esegue questa operazione, l'IDE apre una scheda aggiuntiva nella finestra principale denominata **Form1.cs**. (Se si usa Visual Basic, la scheda è denominata **Form1. vb**).
+1. Fare doppio clic sul pulsante **Visualizza immagine** nel form. In alternativa, scegliere il pulsante **Visualizza immagine** nel form, quindi premere il tasto **invio** . Quando si esegue questa operazione, l'IDE apre una scheda aggiuntiva nella finestra principale denominata **Form1. cs**. (Se si usa Visual Basic, la scheda è denominata **Form1. vb**).
 
    In questa scheda viene visualizzato il file di codice dietro il form, come illustrato nello screenshot seguente.
 
     ![Scheda Form1.cs con codice Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-***Form1.cs** _ _tab con codice C# *
+***Form1. cs** _ _tab con codice C# *
 
     > [!NOTE]
-    > In alternativa, è possibile che la scheda Form1.cs o Form1. vb visualizzi **showButton** come **showButton** .
+    > La scheda Form1. cs o Form1. vb potrebbe invece visualizzare **showButton** come **showButton** .
 
 1. Concentrare l'attenzione su questa parte del codice.
 
@@ -71,18 +71,18 @@ Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button
 
    Si sta esaminando il codice chiamato `showButton_Click()` (in alternativa, `ShowButton_Click()` ). È stato aggiunto dall'IDE nel codice del form quando si è aperto il file di codice per il pulsante **showButton** . In fase di progettazione, quando si apre il file di codice per un controllo in un form, il codice, se non esiste già, viene generato per il controllo. Questo codice, noto come *Metodo*, viene eseguito quando si esegue l'app e si sceglie il controllo, in questo caso il pulsante **Visualizza immagine** .
 
-1. Scegliere di nuovo la scheda **Progettazione Windows Form** (**Form1.cs [Progettazione]**), quindi aprire il file di codice per il pulsante **Cancella immagine** per creare un metodo nel codice del modulo. Ripetere questa operazione per i restanti due pulsanti. L'IDE aggiunge ogni volta un nuovo metodo al file del codice del form.
+1. Scegliere di nuovo la scheda **Progettazione Windows Form** (**Form1. cs [Progettazione]**), quindi aprire il file di codice per il pulsante **Cancella immagine** per creare un metodo nel codice del modulo. Ripetere questa operazione per i restanti due pulsanti. L'IDE aggiunge ogni volta un nuovo metodo al file del codice del form.
 
 1. Per aggiungere un altro metodo, aprire il file di codice per il controllo **CheckBox** in **Progettazione Windows Form** per fare in modo che l'IDE aggiunga un `checkBox1_CheckedChanged()` metodo. Tale metodo viene chiamato ogni volta che l'utente seleziona o deseleziona la casella di controllo.
 
    > [!TIP]
-   > Quando si lavora in un'app, si passa spesso dall'editor di codice a **Progettazione Windows Form**. L'IDE facilita lo spostamento nel progetto. Usare **Esplora soluzioni** per aprire **Progettazione Windows Form** facendo doppio clic su *Form1.cs* in C# o *Form1. vb* in Visual Basic oppure sulla barra dei menu scegliere **Visualizza**  >  **finestra di progettazione**.
+   > Quando si lavora in un'app, si passa spesso dall'editor di codice a **Progettazione Windows Form**. L'IDE facilita lo spostamento nel progetto. Usare **Esplora soluzioni** per aprire **Progettazione Windows Form** facendo doppio clic su *Form1. cs* in C# o *Form1. vb* in Visual Basic oppure sulla barra dei menu scegliere **Visualizza**  >  **finestra di progettazione**.
 
     Di seguito viene mostrato il nuovo codice visualizzato nell'editor di codice.
 
-    [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs" id="Snippet2":::
 
-    [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb" id="Snippet2":::
 
     > [!NOTE]
     > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase".

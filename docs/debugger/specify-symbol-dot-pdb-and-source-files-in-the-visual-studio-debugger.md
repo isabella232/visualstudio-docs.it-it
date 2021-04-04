@@ -2,7 +2,7 @@
 title: Impostare i file di simboli (con estensione pdb) e di origine nel debugger
 description: Informazioni su come configurare e gestire i file di simboli e di origine in Visual Studio
 ms.custom: ''
-ms.date: 10/31/2019
+ms.date: 3/31/2021
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ad72d2aa659f3d43bfca99c359d5db94e2d1045
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903565"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083686"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specificare i file di simboli (con estensione pdb) e di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -246,9 +246,10 @@ Quando si verifica questa situazione, il debugger Visualizza i **simboli non car
 
 - Per modificare il percorso di ricerca, selezionare un percorso non selezionato oppure selezionare **nuovo percorso** o **nuovo percorso VSTS** e immettere o selezionare un nuovo percorso. Selezionare **carica** per cercare nuovamente i percorsi e caricare il file di simboli se viene trovato.
 - Per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca, selezionare **Sfoglia e trova \<executable-name>**. Il file di simboli viene caricato se viene trovato oppure **Esplora file** consente di selezionare manualmente il file di simboli.
-- Per aprire la pagina **Opzioni** di  >  **debug**  >  **simboli** , selezionare **Modifica impostazioni simboli**.
-- Per visualizzare il disassembly in una nuova finestra una volta, selezionare **Visualizza Disassembly** oppure selezionare la finestra di **dialogo Opzioni** per impostare l'opzione in modo che mostri sempre il disassembly quando i file di origine o di simboli non vengono trovati.
+- Per aprire la pagina Impostazioni simboli per configurare il comportamento, selezionare **Modifica impostazioni simboli** o scegliere **Opzioni**  >  **debug**  >  **simboli**.
+- Avanzate Per visualizzare il disassembly in una nuova finestra una volta, selezionare **Visualizza Disassembly** oppure selezionare la finestra di **dialogo Opzioni** per impostare l'opzione in modo che mostri sempre il disassembly quando i file di origine o di simboli non vengono trovati. Per altre informazioni, vedere [visualizzare il codice disassembly](../debugger/how-to-use-the-disassembly-window.md).
 - Per visualizzare i percorsi cercati e il risultato, espandere **informazioni sul caricamento dei simboli**.
+- Per il codice C#, è anche possibile scegliere di [decompilare il codice sorgente](../debugger/decompilation.md) dalla pagina **Nessun simbolo caricato** o da **Nessuna pagina caricata nell'origine** .
 
 Se il debugger trova il file con *estensione PDB* dopo l'esecuzione di una delle opzioni e può recuperare il file di origine utilizzando le informazioni nel file con *estensione PDB* , viene visualizzata l'origine. In caso contrario, viene visualizzata una pagina **Nessuna origine caricata** in cui viene descritto il problema, con collegamenti a azioni che potrebbero risolvere il problema.
 
@@ -259,6 +260,8 @@ Se il debugger trova il file con *estensione PDB* dopo l'esecuzione di una delle
 1. Selezionare la soluzione in **Esplora soluzioni**, quindi selezionare l'icona **Proprietà** , premere **ALT** + **invio** oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
 
 1. Selezionare **Esegui debug dei file di origine**.
+
+   ![Pagina di debug dei file di origine](../debugger/media/dbg-source-files.png)
 
 1. In **directory che contengono codice sorgente** Digitare o selezionare i percorsi di codice sorgente in cui eseguire la ricerca. Usare l'icona **nuova riga** per aggiungere altre posizioni, le icone freccia **su** e **giù** per riordinarle o l'icona **X** per eliminarle.
 

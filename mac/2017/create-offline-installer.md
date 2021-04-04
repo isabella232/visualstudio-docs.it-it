@@ -1,23 +1,23 @@
 ---
 title: Creare un programma di installazione offline
-description: ''
+description: Un programma di installazione offline è pianificato per versioni future di Visual Studio per Mac.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 5CA4B8C1-2D01-46EA-A6B2-8573B324509B
-ms.openlocfilehash: 7587f0dd43b53f5d314ae73d2f145f0600ca0d5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4708ea51fcfe5ff1d87d7c7bab617016686dcd89
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984830"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082552"
 ---
 # <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>Creare un programma di installazione offline per Visual Studio per Mac
 
 > [!IMPORTANT]
 > Un programma di installazione offline è pianificato per versioni future di Visual Studio per Mac.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare un'installazione offline di Visual Studio (in Windows)](/visualstudio/install/create-an-offline-installation-of-visual-studio)
