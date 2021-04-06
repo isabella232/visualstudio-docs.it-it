@@ -40,7 +40,7 @@
   items:
     - name: Utilizzare progetti di servizi cloud
       items:
-        - name: Usare i servizi cloud (supporto esteso) (anteprima)
+        - name: Usare i servizi cloud (supporto esteso)
           href: cloud-services-extended-support.md
         - name: Creare un progetto di servizio cloud di Azure
           href: vs-azure-tools-azure-project-create.md

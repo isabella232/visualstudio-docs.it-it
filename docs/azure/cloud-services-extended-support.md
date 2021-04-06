@@ -1,5 +1,5 @@
 ---
-title: Usare i servizi cloud (supporto esteso) (anteprima)
+title: Usare i servizi cloud (supporto esteso)
 description: Informazioni su come creare e distribuire un servizio cloud (supporto esteso) usando Azure Resource Manager con Visual Studio
 author: ghogen
 manager: jmartens
@@ -9,32 +9,26 @@ ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 289bc88d9aef40fdc260ce84395b1c4b9237c689
+ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841133"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106381601"
 ---
-# <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Creare e distribuire in servizi cloud (supporto esteso) in Visual Studio (anteprima)
+# <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio"></a>Creare e distribuire in servizi cloud (supporto esteso) in Visual Studio
 
-A partire da [Visual Studio 2019 versione 16,9](https://visualstudio.microsoft.com/vs/preview) (attualmente in anteprima), è possibile lavorare con i servizi cloud usando Azure Resource Manager, che semplifica e modernizza notevolmente la manutenzione e la gestione delle risorse di Azure. Questa funzionalità è abilitata da un nuovo servizio di Azure denominato *servizi cloud (supporto esteso)*. È possibile pubblicare un servizio cloud esistente in servizi cloud (supporto esteso). Per informazioni su questo servizio di Azure, vedere la [documentazione relativa ai servizi cloud (supporto esteso)](/azure/cloud-services-extended-support/overview).
+A partire da [Visual Studio 2019 versione 16,9](https://visualstudio.microsoft.com/vs/), è possibile lavorare con i servizi cloud usando Azure Resource Manager, che semplifica notevolmente e modernizza la manutenzione e la gestione delle risorse di Azure. Questa funzionalità è abilitata da un nuovo servizio di Azure denominato *servizi cloud (supporto esteso)*. È possibile pubblicare un servizio cloud esistente in servizi cloud (supporto esteso). Per informazioni su questo servizio di Azure, vedere la [documentazione relativa ai servizi cloud (supporto esteso)](/azure/cloud-services-extended-support/overview).
 
 ## <a name="publish-to-cloud-services-extended-support"></a>Pubblica nei servizi cloud (supporto esteso)
 
-Quando si pubblica il progetto del servizio cloud di Azure esistente in servizi cloud (supporto esteso), si mantiene comunque la funzionalità di pubblicazione in un servizio cloud di Azure classico. In Visual Studio 2019 versione 16,9 Preview 3 e versioni successive, i progetti di servizi cloud classici hanno una versione speciale del comando **Publish** , **Publish (Extended Support)**. Questo comando viene visualizzato nel menu di scelta rapida in **Esplora soluzioni**.
+Quando si pubblica il progetto del servizio cloud di Azure esistente in servizi cloud (supporto esteso), si mantiene comunque la funzionalità di pubblicazione in un servizio cloud di Azure classico. In Visual Studio 2019 versione 16,9 e successive, i progetti di servizi cloud classici hanno una versione speciale del comando **Publish** , **Publish (Extended Support)**. Questo comando viene visualizzato nel menu di scelta rapida in **Esplora soluzioni**.
 
-Esistono alcune differenze durante la pubblicazione nei servizi cloud (supporto esteso). Ad esempio, non viene richiesto se si esegue la pubblicazione in **gestione temporanea** o in **produzione**, perché questi slot di distribuzione non fanno parte del modello di pubblicazione del supporto esteso. Con i servizi cloud (supporto esteso), è invece possibile configurare più distribuzioni e scambiare le distribuzioni nel portale di Azure. Sebbene gli strumenti di Visual Studio consentano di impostare questo valore in 16,9 Preview 3, la funzionalità di scambio non verrà abilitata fino a una versione successiva dei servizi cloud (supporto esteso) e potrebbe verificarsi un errore in fase di distribuzione durante l'anteprima.
+Esistono alcune differenze durante la pubblicazione nei servizi cloud (supporto esteso). Ad esempio, non viene richiesto se si esegue la pubblicazione in **gestione temporanea** o in **produzione**, perché questi slot di distribuzione non fanno parte del modello di pubblicazione del supporto esteso. Con i servizi cloud (supporto esteso), è invece possibile configurare più distribuzioni e scambiare le distribuzioni nel portale di Azure. Sebbene gli strumenti di Visual Studio consentano di impostare questo valore in 16,9, la funzionalità di scambio non verrà abilitata fino a una versione successiva dei servizi cloud (supporto esteso) e potrebbe verificarsi un errore in fase di distribuzione durante l'anteprima.
 
 Prima di pubblicare un servizio cloud di Azure classico in servizi cloud (supporto esteso), controllare gli account di archiviazione usati dal progetto e verificare che siano account di archiviazione V1 o storage V2. I tipi di account di archiviazione classico avranno esito negativo con un messaggio di errore in fase di distribuzione. Assicurarsi di controllare l'account di archiviazione usato dalla diagnostica. Per verificare l'account di archiviazione di diagnostica, vedere [configurare la diagnostica per i servizi cloud e le macchine virtuali di Azure](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Se il servizio usa un account di archiviazione classico, è possibile aggiornarlo; vedere [eseguire l'aggiornamento a un account di archiviazione per utilizzo generico V2](/azure/storage/common/storage-account-upgrade?tabs=azure-portal).  Per informazioni generali sui tipi di account di archiviazione, vedere [Panoramica dell'account di archiviazione](/azure/storage/common/storage-account-overview).
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>Per pubblicare un progetto di servizio cloud di Azure classico in servizi cloud (supporto esteso)
-
-1. Servizi cloud (supporto esteso) è attualmente in versione di anteprima. Registrare la funzionalità per la propria sottoscrizione come indicato di seguito:
-
-   ```azurepowershell-interactive
-   Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
-   ```
 
 1. Fare clic con il pulsante destro del mouse sul nodo del progetto nel progetto servizio cloud di Azure (versione classica) e scegliere **pubblica (supporto esteso)...**. Nella prima schermata verrà visualizzata la **pubblicazione guidata** .
 
