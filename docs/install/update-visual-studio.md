@@ -1,8 +1,8 @@
 ---
 title: Aggiornare Visual Studio
 titleSuffix: ''
-description: Informazioni sulla procedura dettagliata di aggiornamento di Visual Studio alla versione più recente.
-ms.date: 10/12/2020
+description: Informazioni dettagliate su come aggiornare Visual Studio alla versione più recente.
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935716"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547505"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aggiornare Visual Studio alla versione più recente
 
@@ -287,12 +287,17 @@ Ecco come:
 
 ::: moniker-end
 
+## <a name="administrator-updates"></a>Aggiornamenti dell'amministratore 
+
+Se si fa parte di un'organizzazione che centralizza la gestione delle installazioni software, l'amministratore dell'organizzazione può causare l'aggiornamento di Visual Studio nel computer. Per altre informazioni su come controllare o configurare i tipi di aggiornamenti che il computer è in grado di accettare, vedere [uso di Configuration Manager per distribuire gli aggiornamenti di Visual Studio](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates). 
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedi anche
 
 * [Installare versioni di Visual Studio side-by-side](install-visual-studio-versions-side-by-side.md)
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Guida di Visual Studio per le aziende](visual-studio-enterprise-guide.md)
 * [Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md)
 * [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Modificare Visual Studio](modify-visual-studio.md)

@@ -2,7 +2,7 @@
 title: Eseguire il debug da un progetto di DLL | Microsoft Docs
 description: È possibile avviare il debug di un progetto DLL dal progetto stesso, specificando l'app chiamante nelle proprietà del progetto. Vedi questo articolo per altri dettagli.
 ms.custom: SEO-VS-2020
-ms.date: 10/10/2018
+ms.date: 3/30/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6063c5a0343951bb098c6937ce13dac7100d4a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7846cc3fd17b46365da59f6fe1a744032cb8ba14
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160434"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083642"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedura: eseguire il debug da un progetto di DLL in Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -81,7 +81,13 @@ I progetti DLL nativi e gestiti hanno impostazioni diverse per specificare le ap
 
 1. Verificare che il campo **configurazione soluzioni** sia impostato su **debug**. Premere **F5**, fare clic sulla freccia di **inizio** verde oppure selezionare **debug**  >  **Avvia debug**.
 
-Se il debug non raggiunge i punti di interruzione, assicurarsi che l'output della DLL (per impostazione predefinita, la cartella *\<project> \Debug* ) sia il percorso chiamato dall'app chiamante.
+Altri suggerimenti:
+
+- Se il debug non raggiunge i punti di interruzione, assicurarsi che l'output della DLL (per impostazione predefinita, la cartella *\<project> \Debug* ) sia il percorso chiamato dall'app chiamante.
+
+- Se si desidera suddividere il codice in un'app chiamante gestita da una DLL nativa o viceversa, abilitare il debug in [modalità mista](../debugger/how-to-debug-in-mixed-mode.md).
+
+- In alcuni scenari potrebbe essere necessario indicare al debugger dove trovare il codice sorgente. Per altre informazioni, vedere [usare le pagine nessun simbolo caricato/nessuna origine caricata](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#use-the-no-symbols-loadedno-source-loaded-pages).
 
 ## <a name="see-also"></a>Vedi anche
 - [Debug di progetti DLL](../debugger/debugging-dll-projects.md)

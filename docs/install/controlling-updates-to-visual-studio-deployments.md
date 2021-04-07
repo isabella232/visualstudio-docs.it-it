@@ -1,7 +1,7 @@
 ---
 title: Controllare gli aggiornamenti delle distribuzioni
 description: Informazioni sulla procedura di modifica della posizione in cui Visual Studio cerca un aggiornamento durante l'installazione da una rete.
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,22 +15,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ffa088de8852b0d5884cd4d9db5e65e1c179164b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868543"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547492"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio
 
-In molti casi, gli amministratori aziendali creano un layout e lo inseriscono in una condivisione file di rete per poter essere distribuito agli utenti finali.
+Gli amministratori dell'organizzazione spesso creano un layout e lo ospitano in una condivisione di file di rete per la distribuzione agli utenti finali. In questa pagina viene descritto come configurare correttamente le opzioni di layout di rete. 
 
 ## <a name="controlling-where-visual-studio-looks-for-updates"></a>Controllo della posizione in cui Visual Studio cerca gli aggiornamenti
 
-Per impostazione predefinita, Visual Studio continua a cercare gli aggiornamenti online anche se l'installazione è stata distribuita da una condivisione di rete. Se è disponibile un aggiornamento, l'utente può installarlo. Eventuali contenuti aggiornati non disponibili nel layout offline sono scaricati dal Web.
+**Scenario 1: il client è stato installato originariamente da un layout, ma è configurato per la ricezione degli aggiornamenti dal percorso di layout di rete o dal Web**
 
-Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiornamenti, è possibile modificare il percorso in cui avviene la ricerca. È inoltre possibile controllare la versione dell’aggiornamento degli utenti. A questo scopo, attenersi alla procedura seguente:
+Per impostazione predefinita, Visual Studio continua a cercare gli aggiornamenti online anche se l'installazione è stata originariamente distribuita da una condivisione di rete. Se un aggiornamento è disponibile sul Web, l'utente può installarlo. Sebbene la cache di layout di rete venga controllata per prima per eventuali bit di prodotto aggiornati, se non vengono trovati, Visual Studio cercherà e scaricherà i bit di prodotto aggiornati dal Web.
+
+**Scenario 2: il client è stato installato originariamente e deve ricevere gli aggiornamenti solo dal layout di rete**
+
+Se si vuole controllare la posizione in cui il client di Visual Studio cerca gli aggiornamenti, ad esempio se il computer client non dispone di accesso a Internet e si vuole assicurarsi che sia sempre installato dal layout, è possibile configurare il percorso in cui il programma di installazione del client cerca i bit di prodotto aggiornati. È consigliabile assicurarsi che questa impostazione sia configurata correttamente prima che il client effettui l'installazione iniziale dal layout. 
 
 1. Creare un layout offline:
 
@@ -44,7 +48,7 @@ Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiorn
    xcopy /e C:\vsoffline \\server\share\VS
    ```
 
-3. Modificare il file response.json nel layout e cambiare il valore `channelUri` in modo che punti a una copia del file channelManifest.json controllato dall'amministratore.
+3. Modificare il `response.json` file nel layout e modificare il `channelUri` valore in modo che punti a una copia del channelManifest.jsdi controllo da parte dell'amministratore.
 
    Assicurarsi di usare le barre rovesciate come carattere di escape nel valore, come illustrato nell’esempio seguente:
 
@@ -52,7 +56,7 @@ Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiorn
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-   Gli utenti finali possono ora eseguire l'installazione da questa condivisione per installare Visual Studio.
+   A questo punto gli utenti finali possono eseguire il programma di installazione da questa condivisione per installare Visual Studio.
 
    ```cmd
    \\server\share\VS\vs_enterprise.exe
@@ -66,15 +70,20 @@ Quando un amministratore aziendale stabilisce che per gli utenti finali è il mo
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 
-2. Verificare che il file response.json nel layout aggiornato contenga ancora le personalizzazioni, in particolare la modifica del valore channelUri, come segue:
+2. Verificare che il `response.json` file nel layout aggiornato contenga ancora le personalizzazioni, in particolare la modifica URI, come indicato di seguito:
 
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-   Le installazioni esistenti di Visual Studio da questo layout eseguono la ricerca degli aggiornamenti in `\\server\share\VS\ChannelManifest.json`. Se il file channelManifest.json è più recente rispetto a quello installato dall'utente, Visual Studio informerà l'utente che è disponibile un aggiornamento.
+Le installazioni esistenti di Visual Studio da questo layout eseguono la ricerca degli aggiornamenti in `\\server\share\VS\ChannelManifest.json`. Se il file channelManifest.json è più recente rispetto a quello installato dall'utente, Visual Studio informerà l'utente che è disponibile un aggiornamento.
 
-   Le nuove installazioni installano automaticamente la versione aggiornata di Visual Studio direttamente dal layout.
+Qualsiasi aggiornamento di installazione avviato dal client installerà automaticamente la versione aggiornata di Visual Studio direttamente dal layout.
+
+**Scenario 3: il client è stato installato originariamente dal Web, ma ora deve ricevere solo gli aggiornamenti da un layout di rete**
+
+In alcuni casi, il computer client potrebbe avere già installato Visual Studio dal Web, ma ora l'amministratore desidera che tutti gli aggiornamenti futuri provengano da un layout gestito. L'unico modo supportato per eseguire questa operazione consiste nel creare un layout di rete con la versione desiderata del prodotto e quindi nel computer client eseguire il programma di avvio automatico _dal percorso del layout_ (ad esempio `\\network\share\vs_enterprise.exe` ). Idealmente, l'installazione client originale avrebbe dovuto usare il programma di avvio automatico dal layout di rete con il URI configurato correttamente, ma anche l'esecuzione del programma di avvio automatico aggiornato dal percorso di layout di rete funziona. Una di queste azioni può incorporare nel computer client una connessione con la posizione di layout specifica. L'unica avvertenza per il corretto funzionamento di questo scenario è che il "URI" nel file del layout `response.json` deve corrispondere al URI impostato nel computer del client quando si è verificata l'installazione originale. È molto probabile che questo valore sia stato originariamente impostato sul [canale della versione](https://aka.ms/vs/16/release/channel)Internet. 
+
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Controllo delle notifiche nell'IDE di Visual Studio
 
@@ -94,7 +103,7 @@ Come descritto in precedenza, Visual Studio controlla l'eventuale presenza di ag
 
 ::: moniker-end
 
-Se si preferisce non informare gli utenti della disponibilità di aggiornamenti, è possibile disabilitare le notifiche. Ad esempio, se si distribuiscono gli aggiornamenti attraverso un meccanismo di distribuzione centrale del software, è possibile voler disabilitare queste notifiche.
+È possibile disabilitare le notifiche se non si vuole che gli utenti finali ricevano la notifica degli aggiornamenti. Ad esempio, se si distribuiscono gli aggiornamenti attraverso un meccanismo di distribuzione centrale del software, è possibile voler disabilitare queste notifiche.
 
 ::: moniker range="vs-2017"
 
@@ -125,8 +134,9 @@ Accertarsi di sostituire la directory in modo che coincida con l'istanza install
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Installa Visual Studio](install-visual-studio.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
+* [Abilitazione degli aggiornamenti dell'amministratore](enabling-administrator-updates.md)
+* [Applicazione degli aggiornamenti amministratore](applying-administrator-updates.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Ciclo di vita e manutenzione del prodotto Visual Studio](/visualstudio/releases/2019/servicing/)

@@ -1,7 +1,7 @@
 ---
 title: Impostare i valori predefiniti per le distribuzioni aziendali
 description: Informazioni sui criteri di dominio e altre operazioni di configurazione per la distribuzione aziendale di Visual Studio.
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fd5e96246778e1a8fd4ec1d87221ff04e8647cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d3d6f658e3d24f3c82737c0c457323b9d4eb4b6
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959272"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547466"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Impostare i valori predefiniti per le distribuzioni aziendali di Visual Studio
 
@@ -50,12 +50,30 @@ Se non sono ancora impostati, alcuni valori del Registro di sistema vengono impo
 
 È possibile impostare i valori del Registro di sistema seguenti:
 
+::: moniker range="vs-2017"
 | **Nome** | **Tipo** | **Default** | **Descrizione** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Directory in cui vengono archiviati i manifesti di pacchetto e, facoltativamente, i payload. Per altre informazioni, vedere la pagina [Disabilitare o spostare la cache dei pacchetti](disable-or-move-the-package-cache.md). |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Consente di mantenere i payload dei pacchetti anche dopo l'installazione. È possibile modificare questo valore in qualsiasi momento. Disabilitando questi criteri vengono rimossi tutti i payload di pacchetti memorizzati nella cache per l'istanza da riparare o modificare. Per altre informazioni, vedere la pagina [Disabilitare o spostare la cache dei pacchetti](disable-or-move-the-package-cache.md). |
-| `SharedInstallationPath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Directory in cui sono installati alcuni pacchetti condivisi tra più versioni di istanze di Visual Studio. È possibile modificare il valore in qualsiasi momento, ma questa operazione influirà solo sulle installazioni future. I prodotti già installati nel percorso precedente non devono essere spostati o potrebbero non funzionare correttamente. |
+| `CachePath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Directory in cui vengono archiviati i manifesti di pacchetto e, facoltativamente, i payload. Per ulteriori informazioni, vedere [disabilitare o spostare la pagina della cache del pacchetto](disable-or-move-the-package-cache.md) . |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Consente di mantenere i payload dei pacchetti anche dopo l'installazione. È possibile modificare questo valore in qualsiasi momento. Disabilitando questi criteri vengono rimossi tutti i payload di pacchetti memorizzati nella cache per l'istanza da riparare o modificare. Per ulteriori informazioni, vedere [disabilitare o spostare la pagina della cache del pacchetto](disable-or-move-the-package-cache.md) . |
+| `SharedInstallationPath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Directory in cui sono installati alcuni pacchetti condivisi tra più versioni di istanze di Visual Studio. È possibile modificare il valore in qualsiasi momento, ma influirà solo sulle installazioni future. I prodotti già installati nel percorso precedente non devono essere spostati o potrebbero non funzionare correttamente. |
 | `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Impedire al programma di installazione di scaricare automaticamente gli aggiornamenti per tutti i prodotti Visual Studio installati. È possibile modificare questo valore in qualsiasi momento. |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | Consente di applicare gli aggiornamenti dell'amministratore al computer client. Se questo valore è mancante o è impostato su 0, gli aggiornamenti dell'amministratore verranno bloccati. Questo valore è per uso amministrativo. Per ulteriori informazioni, vedere [Abilitazione degli aggiornamenti amministrativi](enabling-administrator-updates.md). | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | Indica che l'utente non desidera ricevere gli aggiornamenti dell'amministratore a Visual Studio. L'assenza del valore del registro di sistema o di un valore impostato su 0 indica che l'utente di Visual Studio vuole ricevere gli aggiornamenti dell'amministratore a Visual Studio. Questa operazione è destinata agli utenti sviluppatori (se hanno autorizzazioni di amministratore per il computer client). Per ulteriori informazioni, vedere [applicazione degli aggiornamenti amministrativi](../install/applying-administrator-updates.md#understanding-configuration-options). | 
+| `UpdateConfigurationFile` | `REG_SZ` o `REG_EXPAND_SZ` | % ProgramData% \Microsoft\VisualStudio\updates.config | Percorso del file per la configurazione degli aggiornamenti amministrativi. Per ulteriori informazioni, vedere [metodi per la configurazione di un aggiornamento dell'amministratore](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update). | 
+::: moniker-end
+
+::: moniker range="vs-2019"
+| **Nome** | **Tipo** | **Default** | **Descrizione** |
+| -------- | -------- | ----------- | --------------- |
+| `CachePath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Directory in cui vengono archiviati i manifesti di pacchetto e, facoltativamente, i payload. Per ulteriori informazioni, vedere [disabilitare o spostare la pagina della cache del pacchetto](disable-or-move-the-package-cache.md) . |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Consente di mantenere i payload dei pacchetti anche dopo l'installazione. È possibile modificare questo valore in qualsiasi momento. Disabilitando questi criteri vengono rimossi tutti i payload di pacchetti memorizzati nella cache per l'istanza da riparare o modificare. Per ulteriori informazioni, vedere [disabilitare o spostare la pagina della cache del pacchetto](disable-or-move-the-package-cache.md) . |
+| `SharedInstallationPath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Directory in cui sono installati alcuni pacchetti condivisi tra più versioni di istanze di Visual Studio. È possibile modificare il valore in qualsiasi momento, ma influirà solo sulle installazioni future. I prodotti già installati nel percorso precedente non devono essere spostati o potrebbero non funzionare correttamente. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Impedire al programma di installazione di scaricare automaticamente gli aggiornamenti per tutti i prodotti Visual Studio installati. È possibile modificare questo valore in qualsiasi momento. |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | Consente di applicare gli aggiornamenti dell'amministratore al computer client. Se questo valore è mancante o è impostato su 0, gli aggiornamenti dell'amministratore verranno bloccati. Questo valore è per uso amministrativo. Per ulteriori informazioni, vedere [Abilitazione degli aggiornamenti amministrativi](enabling-administrator-updates.md). | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | Indica che l'utente non desidera ricevere gli aggiornamenti dell'amministratore a Visual Studio. L'assenza del valore del registro di sistema o di un valore impostato su 0 indica che l'utente di Visual Studio vuole ricevere gli aggiornamenti dell'amministratore a Visual Studio. Questa operazione è destinata agli utenti sviluppatori (se hanno autorizzazioni di amministratore per il computer client). Per ulteriori informazioni, vedere [applicazione degli aggiornamenti amministrativi](../install/applying-administrator-updates.md#understanding-configuration-options). | 
+| `UpdateConfigurationFile` | `REG_SZ` o `REG_EXPAND_SZ` | % ProgramData% \Microsoft\VisualStudio\updates.config | Percorso del file per la configurazione degli aggiornamenti amministrativi. Per ulteriori informazioni, vedere [metodi per la configurazione di un aggiornamento dell'amministratore](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update). | 
+| `BaselineStickinessVersions2019` | `REG_SZ` o `REG_EXPAND_SZ` | `ALL` o `16.4.0,16.7.0,16.9.0` | Le versioni che autorizzano gli aggiornamenti a rimanere nelle linee di base di manutenzione specificate. Per ulteriori informazioni, vedere la pagina relativa all' [applicazione degli aggiornamenti amministrativi](../install/applying-administrator-updates.md#understanding-configuration-options) . | 
+::: moniker-end
 
 > [!IMPORTANT]
 > Se si modificano i criteri del Registro di sistema `CachePath` dopo un'installazione, è necessario spostare la cache del pacchetto esistente nel nuovo percorso e verificare che sia protetto in modo che `SYSTEM` e `Administrators` abbiano il controllo completo e `Everyone` l'accesso in lettura.
@@ -66,5 +84,6 @@ Se non sono ancora impostati, alcuni valori del Registro di sistema vengono impo
 ## <a name="see-also"></a>Vedi anche
 
 - [Installa Visual Studio](install-visual-studio.md)
+- [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 - [Disabilitare o spostare la cache dei pacchetti](disable-or-move-the-package-cache.md)
 - [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

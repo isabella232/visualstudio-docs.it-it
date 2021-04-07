@@ -1,7 +1,7 @@
 ---
 title: Aggiornare un'installazione di rete
 description: Informazioni su come aggiornare un'installazione di Visual Studio basata su rete tramite il comando --layout
-ms.date: 06/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5ad0231c2dc21acc4a8d954456921dbe2838e39
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959155"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547401"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
 
@@ -33,17 +33,7 @@ ms.locfileid: "99959155"
 
 Per aggiornare la condivisione di installazione di rete in modo che includa gli aggiornamenti più recenti, eseguire il comando `--layout` per scaricare in modo incrementale i pacchetti aggiornati.
 
-::: moniker range="vs-2017"
-
-**Novità in 15,3**: se è stato selezionato un layout parziale al momento [della creazione del layout di rete](create-a-network-installation-of-visual-studio.md), queste impostazioni vengono salvate. Gli eventuali comandi relativi al layout future usano le opzioni precedenti più eventuali nuove opzioni specificate. Se tuttavia si usa un layout di una versione precedente, per aggiornarne il contenuto usare gli stessi parametri della riga di comando adottati durante la prima creazione del layout di installazione di rete (ad esempio gli stessi carichi di lavoro e le stesse lingue).
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 Se è stato selezionato un layout parziale [al momento della creazione del layout di rete](create-a-network-installation-of-visual-studio.md), queste impostazioni vengono salvate. Gli eventuali comandi relativi al layout future usano le opzioni precedenti più eventuali nuove opzioni specificate.
-
-::: moniker-end
 
 Se si ospita un layout in una condivisione file, è necessario aggiornare una copia privata del layout (ad esempio, c:\VSLayout) e quindi, dopo aver scaricato tutto il contenuto aggiornato, copiarlo nella condivisione file (ad esempio, \\ server\products\VS). In caso contrario, se un utente esegue l'installazione durante l'aggiornamento del layout, è probabile che non sia in grado di ottenere tutto il contenuto del layout perché non è ancora stato interamente aggiornato.
 
