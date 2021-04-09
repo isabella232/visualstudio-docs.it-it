@@ -2,7 +2,7 @@
 title: Applicazione degli aggiornamenti dell'amministratore a Visual Studio con Microsoft endpoint Configuration Manager
 titleSuffix: ''
 description: Informazioni su come applicare gli aggiornamenti amministratore a Visual Studio.
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 4df931ee5eb5eaefdf6d918ff05df65b799bef7e
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547453"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031606"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>Applicazione degli aggiornamenti amministratore che usano Microsoft endpoint Configuration Manager
 
@@ -83,9 +83,9 @@ Sono disponibili alcune opzioni di configurazione che possono essere usate per a
 
 ::: moniker range="vs-2019"
 
-* **Viscosità di base di manutenzione**: come descritto in precedenza, gli aggiornamenti dell'amministratore che sono aggiornamenti delle funzionalità consentono di eseguire un'installazione di Visual Studio in una versione secondaria più recente del prodotto. In alcuni casi, tuttavia, i team di sviluppo preferiscono rimanere in un particolare livello di base di manutenzione stabile e sicuro e desiderano controllare quando i client passano a una versione secondaria più recente. Per configurare un computer client in modo che rimanga in una linea di base di manutenzione e ignorare gli aggiornamenti delle funzionalità di amministratore indesiderati, è necessario creare e impostare il valore di **BaselineStickinessVersions2019** REG_SZ i dati su una stringa che rappresenta le linee di base consentite a cui il computer client può bloccarsi e rimanere attivo.  La stringa può contenere una sequenza di versioni di base di manutenzione, separate da virgole, ad esempio **16.4.0, 16.7.0**. È possibile includere nella stringa un numero qualsiasi di versioni di base di manutenzione e la parola **All**, che è una forma abbreviata per fare riferimento a tutte le linee di base di manutenzione supportate, è anche supportata. 
+* **Viscosità della linea di base di manutenzione**: come descritto in precedenza, gli aggiornamenti delle funzionalità dell'amministratore anticipano l'installazione di Visual Studio a una versione secondaria più recente del prodotto. In alcuni casi, tuttavia, gli utenti di Visual Studio devono rimanere in un determinato livello di base di manutenzione stabile e sicuro e desiderano controllare quando i computer avanzano a una versione secondaria più recente. Per configurare un computer client in modo che rimanga in una linea di base di manutenzione e ignorare gli aggiornamenti delle funzionalità di amministratore indesiderati, è necessario creare e impostare il valore di **BaselineStickinessVersions2019** REG_SZ i dati su una stringa che rappresenta la baseline preferita a cui il computer client deve bloccarsi e rimanere attivo. La stringa può contenere una versione di base di manutenzione consentita, ad esempio **16.7.0**.  
 
-     Se il `BaselineStickinessVersions2019` valore del registro di sistema non è valido, l'installazione di tutti gli aggiornamenti delle funzionalità verrà bloccata nel computer. È anche necessario prestare attenzione agli intervalli di tempo [supportati per gli aggiornamenti delle funzionalità di Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Sebbene sia tecnicamente possibile applicare gli aggiornamenti delle funzionalità che hanno raggiunto la fine della durata, non è consigliabile perché non saranno supportati e pertanto potenzialmente non sicuri.
+     Se il `BaselineStickinessVersions2019` valore del registro di sistema non è valido, tutti gli aggiornamenti delle funzionalità dell'amministratore non verranno installati nel computer. Assicurarsi di prestare attenzione agli intervalli di tempo [supportati per gli aggiornamenti delle funzionalità di Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Inoltre, indipendentemente dalla presenza o dal valore della `BaselineStickinessVersions2019` chiave, sebbene sia tecnicamente possibile applicare gli aggiornamenti delle funzionalità di amministratore che hanno raggiunto la fine della durata, non è consigliabile perché non saranno supportati e pertanto potenzialmente non sicuri.
 
 ::: moniker-end
 

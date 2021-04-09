@@ -15,16 +15,62 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622569"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031593"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Cronologia delle novità nella documentazione di Visual Studio
 
-Benvenuti alla cronologia delle novità di Visual Studio docs. Questo articolo contiene le principali modifiche apportate ai documenti prima del 2021 febbraio (a partire dal luglio 2020). Per le ultime novità, vedere la [documentazione di Visual Studio:](whats-new-visual-studio-docs.md)novità della documentazione.
+Benvenuti alla cronologia delle novità di Visual Studio docs. Questo articolo contiene le principali modifiche apportate ai documenti prima del 2021 marzo (a partire dal luglio 2020). Per le ultime novità, vedere la [documentazione di Visual Studio:](whats-new-visual-studio-docs.md)novità della documentazione.
+
+## <a name="february-2021"></a>2021 febbraio
+
+### <a name="debugger"></a>Debugger
+
+**Articoli aggiornati**
+
+- [Usare i punti di interruzione nel debugger di Visual Studio](../debugger/using-breakpoints.md) -aggiornamenti per l'accessibilità
+
+### <a name="get-started"></a>Introduzione
+
+**Articoli aggiornati**
+
+- [Esercitazione: aprire un progetto da un repository in Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -Update vedere anche collegamenti in VS2017 Open Project da un repository
+- [Esercitazione: aprire un progetto da un repository](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) . aggiungere un collegamento alla versione VS2017 della pagina "aprire un progetto da un repository"
+
+### <a name="ide"></a>IDE
+
+**Articoli aggiornati**
+
+- [Risolvere i problemi e creare log per i problemi di MSBuild](./msbuild-logs.md) : aggiungere istruzioni sull'uso dell'estensione Project System Tools
+
+### <a name="install"></a>Installazione
+
+**Articoli aggiornati**
+
+- [Aggiornare Visual Studio usando un layout offline minimo](../install/update-minimal-layout.md)
+  - Aggiungere l'esempio 2017 nella tabella Options
+  - Aggiungere esempi per VS2017
+
+### <a name="msbuild"></a>MSBuild
+
+**Nuovi articoli**
+
+- [MSB3644: gli assembly di riferimento per ' frameworkVersion ' non sono stati trovati](../msbuild/errors/msb3644.md) -errori di MSBuild
+- [MSB8036: non è stato trovato il Windows SDK ' version '](../msbuild/errors/msb8036.md) -errori di MSBuild
+
+### <a name="test"></a>Test
+
+**Articoli aggiornati**
+
+- [Usare il Framework di testing unità Microsoft per C++ in Visual Studio](../test/how-to-use-microsoft-test-framework-for-cpp.md) -aggiornamento e modifica di contenuto di piccole dimensioni
+- [Scrivere unit test per le dll C++ in Visual Studio](../test/how-to-write-unit-tests-for-cpp-dlls.md) -aggiornamento e modifica di contenuto di piccole dimensioni
+- [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) -aggiornamenti per l'accessibilità
+- [Procedura dettagliata: creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) -aggiornamenti per l'accessibilità
+- [Isolare il codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) : specificare in modo esplicito .NET 5,0 nella documentazione Fakes
 
 ## <a name="january-2021"></a>Gennaio 2021
 ### <a name="azure"></a>Azure
