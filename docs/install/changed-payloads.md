@@ -3,19 +3,19 @@ title: Quando i payload dei pacchetti cambiano dopo un rilascio
 description: Quando si crea un layout, scoprire come determinare se i payload dei pacchetti sono cambiati dopo il rilascio di una versione.
 ms.date: 05/22/2019
 ms.topic: how-to
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bd0013df051def28c57552c0aeb733888d55e9b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e773ddf85df1d7f71b1ed929b8f942a5f3b36421
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905541"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295297"
 ---
 # <a name="package-payload-changes"></a>Modifiche al payload del pacchetto
 
@@ -37,7 +37,7 @@ Ecco come determinare se il layout creato in precedenza abbia acquisito i payloa
 
     `END: Downloading [url] to [path]`
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Creare un'installazione di rete di Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)

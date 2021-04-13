@@ -4,17 +4,17 @@ description: Informazioni sui tasti di scelta rapida e sulle funzionalità di pr
 ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01367d821ffc74de0e9d087bfe52680508fad9e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 181ce2071d780c9ef481d281f543c49d65262078
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951160"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296781"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guida alla produttività per Visual Studio
 
@@ -178,7 +178,7 @@ In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che si
 
 - **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore usato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [procedura: modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [procedura: modificare i tipi di carattere e i colori nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Post di blog di suggerimenti e consigli per Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Tasti di scelta rapida predefiniti per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)

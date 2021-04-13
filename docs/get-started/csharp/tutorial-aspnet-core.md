@@ -8,20 +8,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b9c7f41fd2977ca00294eabd941bc371d8a3220e
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: a86b7273a123a5c9ed0519caf2166127c090d16f
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295794"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296924"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -168,7 +168,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
  1. Visualizzare il file **About.cshtml.cs** nell'editor del codice.
 
-     ![Screenshot che mostra le prime 18 righe del file About.cshtml.cs nell'editor di codice di Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Screenshot che mostra le prime 18 righe del file about. cshtml. cs nell'editor di codice di Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. Il progetto contiene una cartella **wwwroot** che rappresenta la radice del sito Web. Espandere la cartella per visualizzarne il contenuto.
 
@@ -265,11 +265,11 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
      ![Visualizzare il file index. cshtml nell'editor di codice di Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml.png)
 
- 1. A ogni file con estensione cshtml è associato un file di codice. Per aprire il file di codice nell'editor, espandere il nodo **index. cshtml** in Esplora soluzioni e scegliere il file **index.cshtml.cs** .
+ 1. A ogni file con estensione cshtml è associato un file di codice. Per aprire il file di codice nell'editor, espandere il nodo **index. cshtml** in Esplora soluzioni e scegliere il file **index. cshtml. cs** .
 
-     ![Scegliere il file Index.cshtml.cs nell'editor di codice di Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+     ![Scegliere il file index. cshtml. cs nell'editor di codice di Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
- 1. Visualizzare il file **index.cshtml.cs** nell'editor di codice.
+ 1. Visualizzare il file **index. cshtml. cs** nell'editor di codice.
 
      ![Visualizzare il file About.cshtml nell'editor del codice di Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
 
@@ -308,11 +308,11 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
     ![Modificare il testo nel file privacy. cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
-1. A questo punto, è possibile apportare una modifica al codice. Scegliere **privacy.cshtml.cs**. Eliminare poi le direttive `using` all'inizio del file usando il metodo veloce seguente:
+1. A questo punto, è possibile apportare una modifica al codice. Scegliere **privacy. cshtml. cs**. Eliminare poi le direttive `using` all'inizio del file usando il metodo veloce seguente:
 
    Scegliere una qualsiasi delle direttive `using` disattivate e una lampadina [Azioni rapide](../../ide/quick-actions.md) verrà visualizzata sotto il punto di inserimento o nel margine sinistro. Scegliere la lampadina, quindi passare il mouse su **Rimuovi using non necessari**.
 
-   ![Rimuovere le using non necessarie nel file Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+   ![Rimuovere le using non necessarie nel file privacy. cshtml. cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
    Scegliere ora **Anteprima modifiche** per vedere cosa cambierà.
 
@@ -374,6 +374,6 @@ L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'appr
 > [!div class="nextstepaction"]
 > [Creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio](../../deployment/quickstart-deploy-to-azure.md)

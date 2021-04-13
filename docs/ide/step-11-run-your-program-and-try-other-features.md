@@ -7,17 +7,17 @@ ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91488b72559b2e6deff23a5cae389cd9b4001443
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950900"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296508"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Passaggio 11: eseguire l'app visualizzatore immagini e provare altre funzionalità
 
@@ -58,7 +58,7 @@ Per altre informazioni, passare all'esercitazione successiva:
 
 Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 10: Scrivere codice per pulsanti aggiuntivi e una casella di controllo](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Altre esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

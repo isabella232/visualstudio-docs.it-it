@@ -10,19 +10,19 @@ helpviewer_keywords:
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b1452976a2710026b71e89614e776134e8a36ae1
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: e30354d55d6ec7ebe70c19e07208aee99ae69109
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884122"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296248"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -159,7 +159,7 @@ Ecco alcune altre opzioni di supporto:
 * Suggerire una funzionalità, tenere traccia dei problemi del prodotto e trovare risposte in [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8).
 * Usare l'account [GitHub](https://github.com/) per comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Requisiti di connettività per Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Creare un'installazione di rete di Visual Studio](create-a-network-installation-of-visual-studio.md)

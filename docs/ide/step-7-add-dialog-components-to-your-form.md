@@ -7,17 +7,17 @@ ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66a6663cfbbcc212f05f75a8bc87bf30a3e4f880
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868855"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297067"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo
 
@@ -27,7 +27,7 @@ Un componente è per alcuni aspetti simile a un controllo. Si usa la **casella d
 
 ## <a name="to-add-dialog-components-to-your-form"></a>Per aggiungere componenti di finestra di dialogo al form
 
-1. Scegliere il **Progettazione Windows Form** (**Form1.cs [Progettazione]**), quindi aprire il gruppo **finestre di dialogo** nella **casella degli strumenti**.
+1. Scegliere il **Progettazione Windows Form** (**Form1. cs [Progettazione]**), quindi aprire il gruppo **finestre di dialogo** nella **casella degli strumenti**.
 
     > [!NOTE]
     > Il gruppo **Finestre di dialogo** nella **casella degli strumenti** ha componenti che aprono molte finestre di dialogo utili che possono essere usate per l'apertura e il salvataggio di file, l'esplorazione di cartelle e la scelta di tipi di carattere e colori. In questo progetto si usano due componenti di finestra di dialogo: OpenFileDialog e ColorDialog.
@@ -57,7 +57,7 @@ Un componente è per alcuni aspetti simile a un controllo. Si usa la **casella d
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: Assegnare un nome ai pulsanti](../ide/step-6-name-your-button-controls.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

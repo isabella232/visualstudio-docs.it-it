@@ -14,18 +14,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ed2fd5fe9e49ab947752f84accb326499392fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8f4d5612fe8ceaa4470f441133767178b119cc
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836422"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295442"
 ---
 # <a name="assembly-information-dialog-box"></a>Finestra di dialogo Informazioni assembly
 
 È possibile usare la finestra di dialogo Informazioni assembly per specificare i valori degli attributi globali degli assembly di .NET Framework che vengono archiviati nel file AssemblyInfo creato automaticamente insieme al progetto. In Esplora soluzioni il file AssemblyInfo è contenuto nel nodo **Progetto** per i progetti Visual Basic. Fare clic su **Mostra tutti i file** per visualizzarlo. Per i progetti C#, si trova in **Proprietà**. Per altre informazioni, vedere [Attributi (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index).
 
-Per accedere a questa finestra di dialogo, selezionare un nodo del progetto in **Esplora soluzioni** e quindi scegliere **Proprietà** dal menu **Progetto**. Nella pagina **Applicazione** selezionare il pulsante **Informazioni assembly**.
+Per accedere a questa finestra di dialogo, selezionare un nodo del progetto in **Esplora soluzioni**, quindi scegliere **proprietà** dal menu **progetto** . Nella pagina dell' **applicazione** selezionare il pulsante **informazioni assembly** .
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
@@ -65,9 +65,9 @@ Specifica le impostazioni cultura supportate dall'assembly. Corrisponde a <xref:
 Specifica se i tipi nell'assembly saranno disponibili a COM. Corrisponde a <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
 > [!NOTE]
-> Per altre informazioni sull'impostazione di queste proprietà durante la generazione di un pacchetto NuGet in una libreria di classi .NET Framework, vedere [configurare le proprietà del progetto per il pacchetto](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
+> Per altre informazioni sull'impostazione di queste proprietà durante la generazione di un pacchetto NuGet in una libreria di classi .NET Framework, vedere [configurare le proprietà del progetto per il pacchetto](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package). Per ulteriori informazioni sulle licenze e le espressioni correlate a un pacchetto NuGet, vedere [licenses.NuGet.org](/nuget/nuget-org/licenses.nuget.org/).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Application Page, Project Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Attributes (Attributi)](/previous-versions/z0w1kczw(v=vs.140))

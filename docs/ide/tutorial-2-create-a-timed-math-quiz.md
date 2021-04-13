@@ -6,17 +6,17 @@ ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f86dbfd1d39b6a2c16b992fc6fe3a9313320d113
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6529146f279eddfe010af60df864fe64f5550fb1
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971427"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296742"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: Creare un quiz matematico a tempo
 
@@ -58,7 +58,7 @@ Sono disponibili anche eccezionali risorse di formazione video gratuite. Per alt
 
 Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto e aggiungere etichette al form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

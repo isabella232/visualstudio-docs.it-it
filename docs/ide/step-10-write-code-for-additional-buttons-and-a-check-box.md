@@ -10,17 +10,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d4dc70195d4c98653bc8503a079f462a502809
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 095c402b54e32dbd0839ff89def83d64d1522f4a
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214369"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296560"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi
 
@@ -50,7 +50,7 @@ Aggiungere il codice seguente al file di codice **Form1** (*Form1.cs* o *Form1.v
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 9: Esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

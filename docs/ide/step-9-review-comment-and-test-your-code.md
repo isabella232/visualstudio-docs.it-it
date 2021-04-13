@@ -10,17 +10,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f069fc02f9d7afa13d44aab1925e6a1ece03f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: c11e13f87ab166c3e1f545dbe2a885ada5e488b5
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214018"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295377"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: Esaminare, commentare e testare il codice
 
@@ -100,7 +100,7 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

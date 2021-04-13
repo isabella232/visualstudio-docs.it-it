@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fcc42b999039abe5d682394e378cb95f12b9283
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26f13d12324beb0e414761ce2d79297767c5d708
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956932"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297119"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creare un'app Windows Form in Visual Studio con C\#
 
@@ -133,11 +133,11 @@ Dopo aver selezionato il modello di progetto C# e denominare il file, Visual Stu
 
 ### <a name="add-code-to-the-form"></a>Aggiungere codice al modulo
 
-1. Nella finestra di **&#91;progettazione di Form1.cs&#93;** fare doppio clic su **questo** pulsante per aprire la finestra di **Form1.cs** .
+1. Nella finestra di **&#93;progettazione &#91;Form1. cs** fare doppio clic su **questo** pulsante per aprire la finestra **Form1. cs** .
 
-      In alternativa, è possibile espandere **Form1.cs** in **Esplora soluzioni**, quindi scegliere **Form1**.
+      In alternativa, è possibile espandere **Form1. cs** in **Esplora soluzioni**, quindi scegliere **Form1**.
 
-1. Nella finestra **Form1.cs** , dopo la riga **privata void** , digitare o immettere `lblHelloWorld.Text = "Hello World!";` come illustrato nello screenshot seguente:
+1. Nella finestra **Form1. cs** , dopo la riga **privata void** , digitare o immettere `lblHelloWorld.Text = "Hello World!";` come illustrato nello screenshot seguente:
 
      ![Aggiungere codice al modulo](../get-started/csharp/media/csharp-winforms-add-code.png)
 
@@ -162,7 +162,7 @@ Per altre informazioni, passare all'esercitazione successiva:
 > [!div class="nextstepaction"]
 > [Esercitazione: Creare un visualizzatore di immagini](tutorial-1-create-a-picture-viewer.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

@@ -7,14 +7,14 @@ ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
 ms.topic: how-to
 ms.technology: vs-azure
-ms.date: 03/14/2019
+ms.date: 03/15/2021
 ms.author: ghogen
-ms.openlocfilehash: 74a74e17dcc909b529a0afad1d66959000c80455
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d549a3097416f499adc9d03f83d7b4ef4c953442
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859541"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315966"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Distribuire un contenitore ASP.NET in un registro contenitori tramite Visual Studio
 
@@ -100,6 +100,6 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
 È possibile ora eseguire il pull del contenitore dal registro a qualsiasi host in grado di eseguire immagini Docker, ad esempio [Istanze di Azure Container ](/azure/container-instances/container-instances-tutorial-deploy-app).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Guida introduttiva: Distribuire un'istanza di contenitore in Azure con l'interfaccia della riga di comando di Azure](/azure/container-instances/container-instances-quickstart)

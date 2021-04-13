@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 974696d1ff7f8e82dab8ef2024710ce645b56c72
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970920"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297132"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creare un'app Windows Forms in Visual Studio con Visual Basic
 
@@ -162,7 +162,7 @@ Per altre informazioni, passare all'esercitazione successiva:
 > [!div class="nextstepaction"]
 > [Esercitazione: Creare un visualizzatore di immagini](tutorial-1-create-a-picture-viewer.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Altre esercitazioni Visual Basic](../get-started/visual-basic/index.yml)
 * [Esercitazioni su C#](../get-started/csharp/index.yml)

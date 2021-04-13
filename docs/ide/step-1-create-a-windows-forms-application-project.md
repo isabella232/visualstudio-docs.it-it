@@ -7,17 +7,17 @@ ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2bfba4f3035023a93588d4bc4c6e0f378f6b4eb
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951004"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296573"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: Creare un progetto di app Windows Forms
 
@@ -117,7 +117,7 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
 
 * Per tornare all'argomento introduttivo, vedere [esercitazione 1: creare un visualizzatore di immagini](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

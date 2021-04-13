@@ -6,17 +6,17 @@ ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb5a8af72d7c41cdee913ee94c382c57e8cf5dc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: af9e8e71a7188e8ee2c8f0a7809830f82fb8f15a
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971414"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296651"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 
@@ -61,7 +61,7 @@ Sono disponibili anche eccezionali risorse di formazione video gratuite. Per alt
 
 Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto e aggiungere una tabella al form](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

@@ -4,15 +4,15 @@ author: ghogen
 description: Informazioni su come usare più contenitori con Docker Compose
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 01/10/2020
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: eca1d66ddef1a0f89a3971a4867254549118e2a1
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295723"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315979"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: Creare un'app a più contenitori con Docker Compose
 
@@ -67,7 +67,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
 
 ## <a name="add-code-to-call-the-web-api"></a>Aggiungere il codice per chiamare l'API Web
 
-1. Nel `WebFrontEnd` progetto aprire il file *index.cshtml.cs* e sostituire il `OnGet` metodo con il codice seguente.
+1. Nel `WebFrontEnd` progetto aprire il file *index. cshtml. cs* e sostituire il `OnGet` metodo con il codice seguente.
 
    ```csharp
     public async Task OnGet()
@@ -118,7 +118,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
         }
       ```
 
-    Con .NET Core 3,1, questa operazione non è necessaria perché è possibile usare l'API WeatherForecast già presente. Tuttavia, è necessario impostare come commento la chiamata a <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*>  nel `Configure` metodo in *Startup.cs*, perché questo codice USA http, non HTTPS, per chiamare l'API Web.
+    Con .NET Core 3,1, questa operazione non è necessaria perché è possibile usare l'API WeatherForecast già presente. Tuttavia, è necessario impostare come commento la chiamata a <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*>  nel `Configure` metodo in *Startup. cs*, perché questo codice USA http, non HTTPS, per chiamare l'API Web.
 
     ```csharp
                 //app.UseHttpsRedirection();
@@ -193,7 +193,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
 
 Vedere le opzioni per la distribuzione dei [contenitori in Azure](/azure/containers).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [Strumenti contenitore](./index.yml)

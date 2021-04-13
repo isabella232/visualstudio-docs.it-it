@@ -6,20 +6,20 @@ ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 68ccba785643b8f4f29143e5e72dc65cfedcd512
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: d4f36ac4199d082b6ab0eae3154307bd8f4f7487
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684064"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296937"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
@@ -144,7 +144,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
 
 1. In **Esplora soluzioni** espandere **About.cshtml** e quindi scegliere **About.cshtml**. Questo file corrisponde anche alla pagina **Informazioni su** di un Web browser.
 
-   ![Screenshot di Visual Studio Esplora soluzioni la visualizzazione dei file nel progetto HelloWorld. About. cshtml è espanso ed è selezionata l'opzione About.cshtml.cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Screenshot di Visual Studio Esplora soluzioni la visualizzazione dei file nel progetto HelloWorld. About. cshtml è espanso ed è selezionato about. cshtml. cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    Nell'editor si noterà il codice C# che include il testo per l'area della "descrizione dell'applicazione" della pagina **Informazioni su**.
 
@@ -217,6 +217,6 @@ Per altre informazioni, passare all'esercitazione successiva:
 > [!div class="nextstepaction"]
 > [Introduzione a C# e ad ASP.NET Core in Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio](../deployment/quickstart-deploy-to-azure.md)

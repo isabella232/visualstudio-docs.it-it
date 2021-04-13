@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682896"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295572"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: creare un'applicazione semplice con C\#
 
@@ -293,13 +293,13 @@ Avviare nuovamente il debugger premendo **F5**. Viene visualizzata la finestra *
 
 Chiudere la finestra dell'applicazione per arrestare il debug.
 
-### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
+### <a name="debug-with-breakpoints&quot;></a>Eseguire il debug con punti di interruzione
 
 Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **debug** imposta  >  **/Rimuovi** punto di interruzione facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera che si verifichi l'interruzione oppure premendo **F9**.
 
-#### <a name="add-breakpoints"></a>Aggiungere punti di interruzione
+#### <a name=&quot;add-breakpoints&quot;></a>Aggiungere punti di interruzione
 
-1. Aprire *Greetings.XAML.cs* e selezionare la riga seguente: `MessageBox.Show("Hello.")`
+1. Aprire *Greetings. XAML. cs* e selezionare la riga seguente: `MessageBox.Show(&quot;Hello.")`
 
 1. Aggiungere un punto di interruzione dal menu selezionando **Debug**, quindi **Imposta/Rimuovi punto di interruzione**.
 
@@ -337,13 +337,13 @@ Nell'app in esecuzione verrà visualizzato un widget visualizzato nella parte su
 
 ![Screenshot della finestra albero elementi visivi attivi](media/vs-2019/exploreide-live-visual-tree.png)
 
-### <a name="build-a-release-version-of-the-application"></a>Compilare una versione di rilascio dell'applicazione
+### <a name="build-a-release-version-of-the-application&quot;></a>Compilare una versione di rilascio dell'applicazione
 
 Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di versione dell'applicazione.
 
 1. Nel menu principale selezionare **Compila**  >  **soluzione pulita** per eliminare i file intermedi e i file di output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
-1. Modificare la configurazione di compilazione per HelloWPFApp da **debug** a **rilascio** usando il controllo a discesa sulla barra degli strumenti (viene visualizzato attualmente "debug").
+1. Modificare la configurazione di compilazione per HelloWPFApp da **debug** a **rilascio** usando il controllo a discesa sulla barra degli strumenti (viene visualizzato attualmente &quot;debug").
 
 1. Compilare la soluzione scegliendo **Compila**  >  **Compila soluzione**.
 
@@ -356,6 +356,6 @@ L'esercitazione è stata completata. Per altre informazioni, continuare con le e
 > [!div class="nextstepaction"]
 > [Continuare con altre esercitazioni su WPF](/dotnet/framework/wpf/getting-started/wpf-walkthroughs/)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Suggerimenti per la produttività](../../ide/productivity-features.md)

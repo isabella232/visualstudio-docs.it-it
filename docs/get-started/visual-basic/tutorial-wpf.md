@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944368"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295429"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: creare un'applicazione semplice con Visual Basic
 
@@ -259,13 +259,13 @@ Avviare nuovamente il debugger premendo **F5**. Viene visualizzata la finestra *
 
  Chiudere la finestra dell'applicazione per arrestare il debug.
 
-### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
+### <a name="debug-with-breakpoints&quot;></a>Eseguire il debug con punti di interruzione
 
 Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **debug** imposta  >  **/Rimuovi** punto di interruzione facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera che si verifichi l'interruzione oppure premendo **F9**.
 
-#### <a name="add-breakpoints"></a>Aggiungere punti di interruzione
+#### <a name=&quot;add-breakpoints&quot;></a>Aggiungere punti di interruzione
 
-1. Aprire *Greetings. XAML. vb* e selezionare la riga seguente: `MessageBox.Show("Hello.")`
+1. Aprire *Greetings. XAML. vb* e selezionare la riga seguente: `MessageBox.Show(&quot;Hello.")`
 
 2. Aggiungere un punto di interruzione dal menu premendo **F9** o selezionando **Debug**, quindi **Attiva/disattiva punto di interruzione**.
 
@@ -283,13 +283,13 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 6. Nella barra dei menu scegliere **debug** Esci  >  **da istruzione/uscita**.
 
-     L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".
+     L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello&quot;.
 
 7. Scegliere il pulsante **OK** per chiudere la finestra di messaggio.
 
 8. Nella finestra **Greetings** scegliere il pulsante di opzione **Goodbye** , quindi il pulsante **Visualizza** .
 
-     La riga `MessageBox.Show("Goodbye.")` viene evidenziata in giallo.
+     La riga `MessageBox.Show(&quot;Goodbye.")` viene evidenziata in giallo.
 
 9. Scegliere **F5** per proseguire con il debug. Quando verrà visualizzata la finestra del messaggio, scegliere il pulsante **OK** per chiuderla.
 
@@ -303,19 +303,19 @@ Nell'app in esecuzione verrà visualizzato un widget visualizzato nella parte su
 
 ![Screenshot della finestra albero elementi visivi attivi](media/vs-2019/exploreide-live-visual-tree.png)
 
-### <a name="build-a-release-version-of-the-application"></a>Compilare una versione di rilascio dell'applicazione
+### <a name="build-a-release-version-of-the-application&quot;></a>Compilare una versione di rilascio dell'applicazione
 
 Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di versione dell'applicazione.
 
 1. Nel menu principale selezionare **Compila**  >  **soluzione pulita** per eliminare i file intermedi e i file di output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
-2. Modificare la configurazione di compilazione per HelloWPFApp da **debug** a **rilascio** usando il controllo a discesa sulla barra degli strumenti (viene visualizzato attualmente "debug").
+2. Modificare la configurazione di compilazione per HelloWPFApp da **debug** a **rilascio** usando il controllo a discesa sulla barra degli strumenti (viene visualizzato attualmente &quot;debug").
 
 3. Compilare la soluzione scegliendo **Compila**  >  **Compila soluzione**.
 
 L'esercitazione è stata completata. È possibile trovare il file con *estensione exe* compilato nella directory della soluzione e del progetto (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 ::: moniker range="vs-2017"
 
