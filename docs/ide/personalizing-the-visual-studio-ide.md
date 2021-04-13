@@ -1,20 +1,20 @@
 ---
 title: Personalizzare l'IDE
-description: Informazioni su come personalizzare l'IDE di Visual Studio in modi che meglio supportano il proprio stile di sviluppo e i requisiti.
+description: Informazioni su come personalizzare l'IDE Visual Studio modo che supporti al meglio lo stile e i requisiti di sviluppo personalizzati.
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2017
+ms.date: 04/12/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
+ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909020"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107373167"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
@@ -31,22 +31,22 @@ ms.locfileid: "99909020"
 
 Molte opzioni di personalizzazione sono esposte tramite la finestra di dialogo [Opzioni ambiente](../ide/reference/general-environment-options-dialog-box.md). È possibile accedere a questa finestra di dialogo in due modi:
 
-- Nella barra dei menu scegliere **strumenti**  >  **Opzioni** e, se non è già espanso, espandere il nodo **ambiente** .
+- Sulla barra dei menu scegliere **Opzioni** strumenti e, se non è già espansa,  >  espandere il **nodo** Ambiente.
 
-- Premere **CTRL** + **Q**, digitare **Environment** nella casella di ricerca, quindi scegliere **ambiente > generale** dai risultati.
+- Premere **CTRL** + **Q,** digitare **environment** nella casella di ricerca e quindi scegliere **Ambiente > Generale** dai risultati.
 
 > [!TIP]
 > Quando viene visualizzata la finestra di dialogo Opzioni, è possibile premere **F1** per le informazioni della Guida sulle diverse impostazioni nella pagina.
 
 ## <a name="environment-color-themes"></a>Temi colore dell'ambiente
 
-Per modificare il tema colori tra chiaro, scuro e blu, digitare **Environment** nella casella di ricerca, quindi scegliere **ambiente > generale**. Nella finestra di dialogo **Opzioni** modificare l'opzione **Tema colori**.
+Per modificare il tema del colore tra Scuro, Chiaro, Blu e Blu (Contrasto aggiuntivo), digitare **theme** nella casella di ricerca e quindi scegliere Ambiente **> Generale**. Nella finestra di dialogo **Opzioni** modificare l'opzione **Tema colori**.
 
-Per modificare le opzioni di colorazione nell'editor, digitare **Environment** nella casella di ricerca, quindi scegliere **Environment > Fonts and Colors**. Vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Per modificare le opzioni di colorazione nell'editor, digitare **environment** nella casella di ricerca e quindi scegliere Ambiente > **Tipi di carattere e colori**. Vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Utilizzo di maiuscole e minuscole nel menu principale
 
-È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare **Environment** nella casella di ricerca, selezionare **ambiente > generale** e quindi modificare l'opzione **Applica stile maiuscole e minuscole alla barra dei menu** .
+È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare **ambiente** nella casella di ricerca, selezionare **Ambiente > Generale** e quindi modificare l'opzione Applica stile del titolo alla barra dei **menu.**
 
 ### <a name="customize-menus-and-toolbars"></a>Personalizzare menu e barre degli strumenti
 
@@ -68,7 +68,7 @@ Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Pe
 
 È possibile personalizzare il menu **Strumenti** per avviare gli strumenti esterni. Per altre informazioni, vedere [Gestire gli strumenti esterni](../ide/managing-external-tools.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Impostazioni dell'ambiente](environment-settings.md)
 - [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
