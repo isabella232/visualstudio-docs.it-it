@@ -2,22 +2,22 @@
 title: Numeri di build e date di rilascio di Visual Studio
 titleSuffix: ''
 description: Elenco aggiornato delle versioni rilasciate e dei numeri di build per Visual Studio, in ordine di data.
-author: ornellaalt
-ms.author: ornella
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
-ms.date: 03/30/2021
+ms.date: 04/13/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: b2a03cee81d817f89d6ab79da10578dc707b288f
-ms.sourcegitcommit: d1e51dd407ec2b51e5954a000501de85e9fcd3d8
+ms.openlocfilehash: 424d7e741e7f83687cf0d95055e765939222cd81
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106069253"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386024"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,19 +29,22 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.9.4 | Versione | 13 aprile 2021 | 16.9.31205.134 |
+| 16.7.14 | Versione | 13 aprile 2021 | 16.7.31205.176 |
+| 16.4.21 | Versione | 13 aprile 2021 | 16.4.31205.175 |
 | 16.9.3 | Versione | 30 marzo 2021 | 16.9.31129.286 |
 | 16.9.2 | Versione | 16 marzo 2021 | 16.9.31112.23 |
-| 16.4.20 | Versione | 9 marzo 2021 | 16.4.31026.101 |
-| 16.7.13 | Versione | 9 marzo 2021 | 16.7.31026.100 |
 | 16.9.1 | Versione | 9 marzo 2021 | 16.9.31105.61 |
+| 16.7.13 | Versione | 9 marzo 2021 | 16.7.31026.100 |
+| 16.4.20 | Versione | 9 marzo 2021 | 16.4.31026.101 |
 | 16.10.0 | Preview 1 | 2 marzo 2021 | 16.10.31025.218 |
 | 16.9.0 | Versione | 2 marzo 2021 | 16.9.31025.194 |
 | 16.9.0 | Preview 5 | 23 febbraio 2021 | 16.9.31019.194 |
 | 16.8.6 | Versione | 22 febbraio 2021 | 16.8.31019.35 |
-| 16.4.19 | Versione | 10 febbraio 2021 | 16.4.31009.304 |
 | 16.7.12 | Versione | 10 febbraio 2021 | 16.7.31009.191 |
-| 16.8.5 | Versione | 9 febbraio 2021 | 16.8.31005.135 |
+| 16.4.19 | Versione | 10 febbraio 2021 | 16.4.31009.304 |
 | 16.9.0 | Preview 4 | 9 febbraio 2021 | 16.9.31004.235 |
+| 16.8.5 | Versione | 9 febbraio 2021 | 16.8.31005.135 |
 | 16.7.11 | Versione | 9 febbraio 2021 | 16.7.30928.143 |
 | 16.4.18 | Versione | 9 febbraio 2021 | 16.4.30928.142 |
 | 16.9.0 | Preview 3 | 21 gennaio 2021 | 16.9.30914.41 |
@@ -68,9 +71,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.8.0 | Preview 4 | 13 ottobre 2020 | 16.8.30608.117 |
 | 16.0.19 | Versione | 13 ottobre 2020 | 16.0.28803.846 |
 | 16.4.14 | Versione | 13 ottobre 2020 | 16.4.30607.51 |
-| 16.8.0 | Anteprima 3,2 | 29 settembre 2020 | 16.8.30524.135 |
+| 16.8.0 | Anteprima 3.2 | 29 settembre 2020 | 16.8.30524.135 |
 | 16.7.5 | Versione | 29 settembre 2020 |  16.7.30523.141 |
-| 16.8.0 | Anteprima 3,1 | 22 settembre 2020 | 16.8.30516.212 |
+| 16.8.0 | Anteprima 3.1 | 22 settembre 2020 | 16.8.30516.212 |
 | 16.7.4 | Versione | 21 settembre 2020 | 16.7.30517.126 |
 | 16.8.0 | Preview 3 | 14 settembre 2020 | 16.8.30509.190 |
 | 16.7.3 | Versione | 8 settembre 2020 | 16.7.30503.244 |
@@ -92,7 +95,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.4.11 | Versione | 14 luglio 2020 | 16.4.30308.118 |
 | 16.0.16 | Versione | 14 luglio 2020 | 16.0.28803.791 |
 | 16.6.3 | Versione | 30 giugno 2020 | 16.6.30225.117 |
-| 16.7.0 | Anteprima 3,1 | 25 giugno 2020 | 16.7.30223.230 |
+| 16.7.0 | Anteprima 3.1 | 25 giugno 2020 | 16.7.30223.230 |
 | 16.7.0 | Preview 3 | 23 giugno 2020 | 16.7.30218.91 |
 | 16.0.15 | Versione | 9 giugno 2020 | 16.0.28803.753 |
 | 16.6.2 | Versione | 9 giugno 2020 | 16.6.30204.135 |
@@ -219,6 +222,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.35 | Versione | 13 aprile 2021 | 15.9.28307.1500 |
 | 15.9.34 | Versione | 9 marzo 2021 | 15.9.28307.1440 |
 | 15.9.33 | Versione | 10 febbraio 2021 | 15.9.28307.1401 |
 | 15.9.32 | Versione | 9 febbraio 2021 | 15.9.28307.1382 |
@@ -404,7 +408,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Visual Studio Roadmap](/visualstudio/productinfo/vs-roadmap)
 * [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm)

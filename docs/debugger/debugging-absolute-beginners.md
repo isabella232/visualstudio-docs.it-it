@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d57fa806ae565d0752fb9970c3f335295e83535
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ee849354d82b11b8d94a737a2b546f686d04d34a
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684225"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386037"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -54,7 +54,7 @@ Prima si analizzare un bug o un errore, riflettere sui presupposti che hanno fat
 * Si è a conoscenza della finalità del codice? Eseguire il debug del codice di un altro sviluppatore è spesso più difficile. Se non si tratta del proprio codice, può essere necessario dedicare un po' di tempo a conoscere il codice prima di poterne eseguire il debug in modo efficace.
 
     > [!TIP]
-    > Quando si scrive il codice, iniziare con un codice semplice che funzioni. (Il codice di esempio è utile qui). In alcuni casi, è più facile correggere un set di codice di grandi dimensioni o complesse iniziando con una piccola parte di codice che illustra l'attività di base che si sta tentando di realizzare. È quindi possibile modificare o aggiungere codice in modo incrementale, testando l'eventuale presenza di errori in corrispondenza di ogni punto.
+    > Quando si scrive il codice, iniziare con un codice semplice che funzioni. Un buon codice di esempio è utile qui. In alcuni casi, è più semplice correggere un set di codice complesso o di grandi dimensioni iniziando con una piccola parte di codice che illustra l'attività di base che si sta tentando di ottenere. È quindi possibile modificare o aggiungere codice in modo incrementale, testando l'eventuale presenza di errori in corrispondenza di ogni punto.
 
 Riflettendo sui presupposti, si può ridurre il tempo necessario per individuare un problema nel codice e quello necessario per risolverlo.
 
@@ -64,40 +64,42 @@ Quando si esegue un'app normalmente, errori e risultati non corretti sono visibi
 
 L'esecuzione di un'app all'interno di un debugger, o in *modalità di debug*, consente al debugger di monitorare attivamente tutto ciò che accade durante l'esecuzione del programma. Consente anche di sospendere l'app in un punto qualsiasi per esaminarne lo stato e di eseguire quindi il codice riga per riga per controllare ogni dettaglio durante l'esecuzione.
 
-In Visual Studio è possibile attivare la modalità di debug tramite **F5** (oppure il  >  comando di menu debug **Avvia debug** o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug). In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
+In Visual Studio si attiva la modalità di debug usando  **F5** (o il comando di menu Avvia debug o il pulsante Avvia debug Avvia debug sulla barra degli  >   strumenti  Debug). ![](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 Se non è stata restituita un'eccezione, probabilmente si ha già un'idea di dove cercare il problema nel codice. In questi casi si usano i *punti di interruzione* con il debugger per avere l'opportunità di esaminare il codice più attentamente. I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio deve sospendere il codice in esecuzione in modo da consentire di esaminare i valori delle variabili, il comportamento della memoria o la sequenza di esecuzione del codice.
 
 In Visual Studio è possibile impostare rapidamente un punto di interruzione facendo clic sul margine sinistro accanto a una riga di codice oppure si può posizionare il cursore su una riga e premere **F9**.
 
-Per illustrare questi concetti si userà un codice di esempio che contiene già diversi bug. Verrà usato C#, ma le funzionalità di debug si applicano a Visual Basic, C++, JavaScript, Python e altri linguaggi supportati.
+Per illustrare questi concetti si userà un codice di esempio che contiene già diversi bug. Verrà usato C#, ma le funzionalità di debug si applicano a Visual Basic, C++, JavaScript, Python e altri linguaggi supportati. Viene fornito anche Visual Basic codice di esempio per le applicazioni, ma gli screenshot sono disponibili in C#.
 
 ### <a name="create-a-sample-app-with-some-bugs"></a>Creare un'app di esempio (con alcuni bug)
 
 Verrà creata un'applicazione con alcuni bug.
 
-1. È necessario che Visual Studio sia installato e che il carico di lavoro **sviluppo multipiattaforma .NET Core** sia installato.
+1. È necessario aver installato Visual Studio e il carico di lavoro **Sviluppo multipiattaforma .NET Core.**
 
-    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 
-    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, fare clic su **strumenti**  >  **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **sviluppo multipiattaforma .NET Core** , quindi scegliere **modifica**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, fare clic **su** Strumenti  >  **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **carico di lavoro Sviluppo multipiattaforma .NET Core,** quindi scegliere **Modifica.**
 
 1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Nella finestra Start scegliere **Crea un nuovo progetto**. Digitare **console** nella casella di ricerca, selezionare **C#** come lingua e quindi scegliere **app console** per .NET Core. Scegliere **Avanti**. Digitare un nome di progetto, ad esempio **ConsoleApp-FirstApp** , e fare clic su **Avanti**.
+    Nella finestra iniziale scegliere **Crea un nuovo progetto.** Digitare **console** nella casella di ricerca, selezionare **C#** o **Visual Basic** come linguaggio e quindi scegliere **App console** per .NET Core. Scegliere **Avanti**. Digitare un nome di progetto come **ConsoleApp_FirstApp** e fare clic su **Avanti.**
 
-    Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
+    Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea.**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** , in **Visual C#**, scegliere **applicazione console**, quindi nel riquadro centrale scegliere un' **app console (.NET Core)**. Digitare un nome, ad esempio **ConsoleApp-FirstApp** e fare clic su **OK**.
+    Nella barra dei menu superiore scegliere **File**  >  **Nuovo**  >  **progetto.** Nel riquadro sinistro  della finestra di dialogo Nuovo progetto in **Visual C#** o **Visual Basic** scegliere **App** console e quindi nel riquadro centrale scegliere **App console (.NET Core)**. Digitare un nome, ad esempio **ConsoleApp_FirstApp** e fare clic su **OK.**
     ::: moniker-end
 
-    Se non viene visualizzato il modello di progetto di **app console** per .NET Core, passare a **strumenti**  >  **Ottieni strumenti e funzionalità**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro **sviluppo multipiattaforma .NET Core** , quindi scegliere **modifica**.
+    Se il modello di progetto **App console** per .NET Core non è visualizzato, passare a Strumenti Ottieni strumenti e funzionalità per aprire il  >  Programma di installazione di Visual Studio. Scegliere il **carico di lavoro Sviluppo multipiattaforma .NET Core,** quindi scegliere **Modifica.**
 
     Visual Studio crea il progetto della console che viene visualizzato nel riquadro destro di Esplora soluzioni.
 
-1. In *Program.cs* sostituire tutto il codice predefinito con il codice seguente:
+1. In *Program.cs* (o *Program.vb*) sostituire tutto il codice predefinito con il codice seguente. Selezionare prima la scheda del linguaggio corretto, C# o Visual Basic.
+
+   #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     using System;
@@ -178,13 +180,116 @@ Verrà creata un'applicazione con alcuni bug.
     }
     ```
 
+   #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
+
+    Namespace ConsoleApp_FirstApp
+        Friend Class Program
+            Public Shared Sub Main(ByVal args As String())
+                Console.WriteLine("Welcome to Galaxy News!")
+                Call IterateThroughList()
+                Console.ReadKey()
+            End Sub
+
+            Private Shared Sub IterateThroughList()
+                Dim theGalaxies = New List(Of Galaxy) From {
+                    New Galaxy() With {
+                        .Name = "Tadpole",
+                        .MegaLightYears = 400,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Pinwheel",
+                        .MegaLightYears = 25,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Cartwheel",
+                        .MegaLightYears = 500,
+                        .GalaxyType = New GType("L"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Small Magellanic Cloud",
+                        .MegaLightYears = 0.2,
+                        .GalaxyType = New GType("I"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Andromeda",
+                        .MegaLightYears = 3,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Maffei 1",
+                        .MegaLightYears = 11,
+                        .GalaxyType = New GType("E"c)
+                    }
+                }
+    
+                For Each theGalaxy As Galaxy In theGalaxies
+                    Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+                Next
+
+            End Sub
+        End Class
+    
+        Public Class Galaxy
+            Public Property Name As String
+            Public Property MegaLightYears As Double
+            Public Property GalaxyType As Object
+        End Class
+    
+        Public Class GType
+    
+            Shared Operator &(ByVal left As String, ByVal right As GType) As String
+                Return New String(left & right.ToString())
+            End Operator
+            Public Sub New(ByVal type As Char)
+                Select Case type
+                    Case "S"c
+                        MyGType = GType.Type.Spiral
+                    Case "E"c
+                        MyGType = GType.Type.Elliptical
+                    Case "l"c
+                        MyGType = GType.Type.Irregular
+                    Case "L"c
+                        MyGType = GType.Type.Lenticular
+                    Case Else
+                End Select
+    
+            End Sub
+    
+            Private _MyGType As String
+            Public Property MyGType As Object
+                Get
+                    Return _MyGType
+                End Get
+                Set(ByVal value As Object)
+                    _MyGType = value.ToString()
+                End Set
+            End Property
+    
+            Private Enum Type
+                Spiral
+                Elliptical
+                Irregular
+                Lenticular
+            End Enum
+        End Class
+    End Namespace
+    ```
+
+    ---
+
     La finalità di questo codice è visualizzare il nome della galassia, la distanza dalla galassia e il tipo di galassia, tutto in un elenco. Per eseguire il debug, è importante comprendere la finalità del codice. Di seguito è riportato il formato per una riga dell'elenco che si vuole visualizzare nell'output:
 
     *nome galassia*, *distanza*, *tipo di galassia*.
 
 ### <a name="run-the-app"></a>Eseguire l'app
 
-1. Premere **F5** o il pulsante **Avvia debug** per ![avviare il debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti debug, che si trova sopra l'editor di codice.
+1. Premere **F5 o** il **pulsante Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug, sopra l'editor di codice.
 
     L'app viene avviata e il debugger non visualizza alcuna eccezione. Tuttavia, l'output visualizzato nella finestra della console è diverso da quanto ci si aspetta. Ecco l'output previsto:
 
@@ -214,6 +319,8 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. Con l'app ancora in esecuzione, impostare un punto di interruzione facendo clic nel margine sinistro accanto alla chiamata al metodo `Console.WriteLine` in questa riga di codice.
 
+    #### <a name="c"></a>[C#](#tab/csharp)
+
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
     {
@@ -221,27 +328,39 @@ Verrà creata un'applicazione con alcuni bug.
     }
     ```
 
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    For Each theGalaxy As Galaxy In theGalaxies
+        Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+    Next
+    ```
+
+    ---
     Quando si imposta il punto di interruzione, viene visualizzato un punto rosso nel margine sinistro.
 
     Poiché si è riscontrato un problema nell'output, il debug verrà avviato esaminando il codice precedente che imposta l'output nel debugger.
 
-1. Fare clic sul pulsante **Riavvia** ![app riavvia](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL**  +  **MAIUSC**  +  **F5**).
+1. Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug ( CTRL  +  **MAIUSC**  +  **F5**).
 
     L'app verrà sospesa in corrispondenza del punto di interruzione impostato. L'evidenziazione di colore giallo indica il punto in cui il debugger viene sospeso (la riga di codice gialla non è ancora stata eseguita).
 
 1. Passare il puntatore sulla variabile `GalaxyType` a destra e quindi, a sinistra dell'icona a forma di chiave inglese, espandere `theGalaxy.GalaxyType`. Si può osservare che `GalaxyType` contiene una proprietà `MyGType` e il valore della proprietà è impostato su `Spiral`.
 
-    ![Screenshot del debugger di Visual Studio con una riga di codice in giallo e un menu espanso sotto la proprietà la galassia. GalaxyType alla fine della riga.](../debugger/media/beginners-inspect-variable.png)
+    ![Screenshot del debugger Visual Studio con una riga di codice in giallo e un menu espanso sotto la proprietàGalaxy.GalaxyType alla fine della riga.](../debugger/media/beginners-inspect-variable.png)
 
     "Spiral" è effettivamente il valore corretto che ci si aspettava di stampare nella console. La possibilità di accedere a questo valore nel codice durante l'esecuzione dell'app è pertanto un buon punto di partenza. In questo scenario viene usata l'API non corretta. Si vedrà come risolvere questo problema durante l'esecuzione del codice nel debugger.
 
-1. Nello stesso codice, durante il debug, posizionare il cursore alla fine di `theGalaxy.GalaxyType` e modificarlo in `theGalaxy.GalaxyType.MyGType`. Anche se questa modifica è consentita, l'editor del codice visualizza un errore che indica l'impossibilità di compilare il codice.
+1. Nello stesso codice, durante il debug, posizionare il cursore alla fine di `theGalaxy.GalaxyType` e modificarlo in `theGalaxy.GalaxyType.MyGType`. Anche se questa modifica è consentita, l'editor del codice visualizza un errore che indica l'impossibilità di compilare il codice. (In Visual Basic, l'errore non verrà visualizzato e questa sezione di codice funziona)
 
-    ![Screenshot del debugger di Visual Studio con una riga di codice evidenziata in rosso e una finestra di messaggio modifica e continuazione con il pulsante Modifica selezionato.](../debugger/media/beginners-edit.png)
+    ![Screenshot del debugger Visual Studio con una riga di codice evidenziata in rosso e una finestra di messaggio Modifica e continuazione con il pulsante Modifica selezionato.](../debugger/media/beginners-edit.png)
+
+   > [!NOTE]
+   > Per il debug Visual Basic codice di esempio, ignorare i passaggi successivi fino a quando non viene richiesto di fare clic sul pulsante **Riavvia** ![l'app.](../debugger/media/dbg-tour-restart.png "RestartApp")
 
 1. Fare clic su **Modifica** nella finestra di messaggio **Modifica e continuazione**. Un messaggio di errore viene ora visualizzato nella finestra **Elenco errori**. L'errore indica che `'object'` non contiene una definizione per `MyGType`.
 
-    ![Screenshot del debugger di Visual Studio con una riga di codice evidenziata in rosso e una finestra Elenco errori con due errori elencati.](../debugger/media/beginners-no-definition.png)
+    ![Screenshot del debugger Visual Studio con una riga di codice evidenziata in rosso e una finestra Elenco errori con due errori elencati.](../debugger/media/beginners-no-definition.png)
 
     Anche se ogni galassia è stata impostata con un oggetto di tipo `GType` (che include la proprietà `MyGType`), il debugger non riconosce l'oggetto `theGalaxy` come oggetto di tipo `GType`. Cosa è successo? Esaminare tutto il codice che imposta il tipo di galassia. Durante questa operazione, si noterà che la classe `GType` include certamente una proprietà `MyGType`, ma qualcosa non va. Il messaggio di errore relativo a `object` è l'indizio; per l'interprete del linguaggio, il tipo è un oggetto di tipo `object` anziché un oggetto di tipo `GType`.
 
@@ -257,11 +376,11 @@ Verrà creata un'applicazione con alcuni bug.
     public GType GalaxyType { get; set; }
     ```
 
-1. Fare clic sul pulsante **Riavvia** l' ![app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL**  +  **MAIUSC**  +  **F5**) per ricompilare il codice e riavviare.
+1. Fare clic **sul pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug ( CTRL  +  **MAIUSC**  +  **F5**) per ricompilare il codice e riavviarlo.
 
     Ora, quando il debugger viene sospeso in corrispondenza di `Console.WriteLine`, passando il puntatore su `theGalaxy.GalaxyType.MyGType` si noterà che il valore è impostato correttamente.
 
-1. Rimuovere il punto di interruzione facendo clic sul cerchio del punto di interruzione nel margine sinistro (oppure facendo clic con il pulsante destro del mouse e scegliendo punto di interruzione  >  **Elimina** punto di interruzione), quindi premere **F5** per continuare.
+1. Rimuovere il punto di interruzione facendo clic sul cerchio del punto di interruzione nel margine sinistro (oppure fare clic con il pulsante destro del mouse e scegliere **Punto** di interruzione Elimina punto di interruzione ), quindi  >  premere **F5** per continuare.
 
     L'app viene eseguita e visualizza l'output. Ora sembra tutto corretto, ma si nota qualcosa. Ci si aspettava che la galassia "Small Magellanic Cloud" venisse indicata nell'output della console come galassia di tipo "Irregular", ma il tipo di galassia non viene indicato affatto.
 
@@ -274,15 +393,25 @@ Verrà creata un'applicazione con alcuni bug.
     Maffei 1,  Elliptical
     ```
 
-1. Impostare un punto di interruzione in questa riga di codice.
+1. Impostare un punto di interruzione in questa riga di codice prima dell'istruzione switch (prima dell'istruzione Select in Visual Basic).
+
+    #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     public GType(char type)
     ```
 
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Public Sub New(ByVal type As Char)
+    ```
+
+    ---
+
     Il tipo di galassia viene impostato in questo codice. Esaminarlo quindi in dettaglio.
 
-1. Fare clic sul pulsante **Riavvia** ![app](../debugger/media/dbg-tour-restart.png "RestartApp") riavvia sulla barra degli strumenti Debug (**CTRL**  +  **MAIUSC**  +  **F5**) per riavviare.
+1. Fare clic **sul pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug ( CTRL  +  **MAIUSC**  +  **F5**) per riavviare.
 
     Il debugger viene sospeso sulla riga di codice in cui è stato impostato il punto di interruzione.
 
@@ -290,13 +419,13 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. Premere **F5** e passare di nuovo il puntatore sulla variabile `type`. Ripetere questo passaggio finché non si vedrà il valore `I` nella variabile `type`.
 
-    ![Screenshot del debugger di Visual Studio con una riga di codice in giallo e una piccola finestra che mostra il valore della variabile di tipo come 73' I '.](../debugger/media/beginners-inspecting-data.png)
+    ![Screenshot del debugger Visual Studio con una riga di codice in giallo e una piccola finestra che mostra il valore della variabile di tipo come 73 "I".](../debugger/media/beginners-inspecting-data.png)
 
 1. Premere ora **F11** (**Debug** > **Esegui istruzione** o il pulsante **Esegui istruzione** nella barra degli strumenti di debug).
 
     **F11** fa avanzare il debugger (ed esegue il codice) un'istruzione alla volta. **F10** (**Esegui istruzione/routine**) è un comando simile ed entrambi sono estremamente utili quando si impara a usare il debugger.
 
-1. Premere **F11** fino all'arresto in corrispondenza della riga di codice nell'istruzione `switch` per il valore "I". Qui si noterà un evidente problema derivante da un errore di digitazione. Ci si aspettava che il codice avanzasse fino al punto in cui `MyGType` viene impostato come galassia di tipo "Irregular". Il debugger invece ignora completamente questo codice e viene sospeso nella sezione `default` dell'istruzione `switch`.
+1. Premere **F11** fino a quando non si arresta la riga di codice nell'istruzione per il valore `switch` 'I' `Select` (istruzione per Visual Basic). Qui si noterà un evidente problema derivante da un errore di digitazione. Si prevede che il codice passi al punto in cui viene impostato come tipo di galaxy irregolare, ma il debugger ignora il codice completamente e viene sospeso nella sezione dell'istruzione ( istruzione `MyGType` `default` in `switch` `Else` Visual Basic).
 
     ![Individuare un errore di digitazione](../debugger/media/beginners-typo.png)
 
