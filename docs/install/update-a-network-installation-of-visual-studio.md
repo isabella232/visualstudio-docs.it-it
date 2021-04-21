@@ -1,7 +1,7 @@
 ---
 title: Aggiornare un'installazione di rete
 description: Informazioni su come aggiornare un'installazione di Visual Studio basata su rete tramite il comando --layout
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0f6e13333b6cab86f6485ddc18516039c712455a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295949"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800781"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
 
@@ -29,13 +29,13 @@ ms.locfileid: "107295949"
 ## <a name="how-to-update-a-network-layout"></a>Come aggiornare un layout di rete
 
 > [!IMPORTANT]
-> Queste istruzioni presuppongono che sia stato creato in precedenza un layout di installazione di rete. Per ulteriori informazioni su come eseguire questa operazione, vedere la pagina [creare un'installazione di rete di Visual Studio](create-a-network-installation-of-visual-studio.md) .
+> Queste istruzioni presuppongono che in precedenza sia stato creato un layout di installazione di rete e che siano state prese alcune decisioni su come il client dovrebbe ottenere gli aggiornamenti. Per altre informazioni su come eseguire [](create-a-network-installation-of-visual-studio.md) questa operazione, vedere la pagina Creare un'installazione di rete di Visual Studio e Controllare gli aggiornamenti Visual Studio [distribuzione.](../install/controlling-updates-to-visual-studio-deployments.md)
 
-Per aggiornare la condivisione di installazione di rete in modo che includa gli aggiornamenti più recenti, eseguire il comando `--layout` per scaricare in modo incrementale i pacchetti aggiornati.
+Per aggiornare la condivisione di installazione di rete in modo che includa gli aggiornamenti più recenti, eseguire il programma di avvio automatico usando il parametro `--layout` per scaricare i pacchetti aggiornati.
 
-Se è stato selezionato un layout parziale [al momento della creazione del layout di rete](create-a-network-installation-of-visual-studio.md), queste impostazioni vengono salvate. Gli eventuali comandi relativi al layout future usano le opzioni precedenti più eventuali nuove opzioni specificate.
+Se è stato selezionato un layout parziale al momento della [creazione del layout di rete,](create-a-network-installation-of-visual-studio.md)tali impostazioni vengono salvate. Gli eventuali comandi relativi al layout future usano le opzioni precedenti più eventuali nuove opzioni specificate.
 
-Se si ospita un layout in una condivisione file, è necessario aggiornare una copia privata del layout (ad esempio, c:\VSLayout) e quindi, dopo aver scaricato tutto il contenuto aggiornato, copiarlo nella condivisione file (ad esempio, \\ server\products\VS). In caso contrario, se un utente esegue l'installazione durante l'aggiornamento del layout, è probabile che non sia in grado di ottenere tutto il contenuto del layout perché non è ancora stato interamente aggiornato.
+Se si ospita un layout in una condivisione file, è necessario aggiornare una copia privata del layout (ad esempio, c:\VSLayout) e quindi, dopo aver scaricato tutto il contenuto aggiornato, copiarlo nella condivisione file (ad \\ esempio, server\products\VS). In caso contrario, se un utente esegue l'installazione durante l'aggiornamento del layout, è probabile che non sia in grado di ottenere tutto il contenuto del layout perché non è ancora stato interamente aggiornato.
 
 Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout:
 
@@ -57,24 +57,24 @@ Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* Ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata.  Questo comando aggiunge il carico di lavoro *sviluppo di Azure* .  Il desktop gestito e Azure sono ora inclusi in questo layout.  Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per l'inglese e tedesco.  E il layout viene aggiornato all'ultima versione disponibile.
+* Ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata.  Questo comando aggiunge il carico di *lavoro Sviluppo di Azure.*  Sia Managed Desktop che Azure sono ora inclusi in questo layout.  Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per l'inglese e tedesco.  E il layout viene aggiornato all'ultima versione disponibile.
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > Un'operazione di aggiornamento non installa i componenti facoltativi appena aggiunti. Se sono necessari i componenti facoltativi appena aggiunti, rimuovere i componenti facoltativi precedenti nel `Layout.JSON` [file di risposta](automated-installation-with-response-file.md) e includere i componenti necessari nella sezione "Aggiungi" di `Layout.JSON` . 
+    > Un'operazione di aggiornamento non installa i componenti facoltativi appena aggiunti. Se sono necessari i componenti facoltativi appena aggiunti, rimuovere i componenti facoltativi nel file di risposta e includere i componenti necessari nella sezione `Layout.JSON` [](automated-installation-with-response-file.md) "aggiungi" di `Layout.JSON` . 
     >
-    > **Soluzione temporanea**: eseguire un'operazione di modifica separata dopo un aggiornamento per installare i componenti mancanti.
+    > **Soluzione** alternativa: eseguire un'operazione di modifica separata dopo un aggiornamento per installare i componenti mancanti.
 
-* E infine, ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata senza aggiornare la versione. Questo comando aggiunge il carico *di lavoro di sviluppo ASP.NET e Web* .  I carichi di lavoro di sviluppo per desktop, Azure e ASP.NET & Web sono ora inclusi in questo layout. Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per inglese, tedesco e francese.  Tuttavia, il layout non è stato aggiornato all'ultima versione disponibile durante l'esecuzione di questo comando. Rimane alla versione esistente.
+* E infine, ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata senza aggiornare la versione. Questo comando aggiunge il carico di *lavoro ASP.NET sviluppo Web.*  In questo layout sono ora inclusi i carichi di lavoro Sviluppo Web ASP.NET &, Azure e Managed Desktop. Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per inglese, tedesco e francese.  Tuttavia, il layout non è stato aggiornato all'ultima versione disponibile durante l'esecuzione di questo comando. Rimane alla versione esistente.
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
-## <a name="deploy-an-update-to-client-machines"></a>Distribuire un aggiornamento ai computer client
+## <a name="deploy-an-update-to-client-machines"></a>Distribuire un aggiornamento nei computer client
 
 A seconda del tipo di configurazione dell'ambiente di rete, un aggiornamento può essere distribuito da un amministratore aziendale o avviato da un computer client.
 
@@ -122,7 +122,7 @@ Microsoft offre periodicamente aggiornamenti per Visual Studio, di conseguenza l
 > [!NOTE]
 > La verifica funziona solo per la versione più recente di una versione secondaria specifica di Visual Studio. Quando viene rilasciata una nuova versione, la verifica non funziona per le versioni con livello patch precedente appartenenti alla stessa versione secondaria.
 
-## <a name="fix-a-layout"></a>Correzione di un layout
+## <a name="fix-a-layout"></a>Correggere un layout
 
 Utilizzare `--fix` per eseguire la stessa verifica come `--verify` e inoltre tentare di risolvere i problemi identificati. Il processo `--fix` richiede una connessione a Internet, quindi verificare che il computer sia connesso a Internet prima di richiamare `--fix`.
 
@@ -166,11 +166,11 @@ Per i problemi correlati all'installazione è disponibile anche un'opzione di su
 
 Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la pagina [Commenti e suggerimenti](../ide/feedback-options.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installa Visual Studio](install-visual-studio.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Ciclo di vita e manutenzione del prodotto Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Visual Studio ciclo di vita e manutenzione del prodotto](/visualstudio/releases/2019/servicing/)
