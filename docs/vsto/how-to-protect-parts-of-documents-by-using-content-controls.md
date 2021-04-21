@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: proteggere parti di documenti mediante controlli contenuto'
-description: Informazioni su come usare Visual Studio per proteggere parti di un documento di Microsoft Word usando i controlli contenuto.
+title: 'Procedura: Proteggere parti di documenti usando i controlli contenuto'
+description: Informazioni su come usare Visual Studio proteggere parti di un documento di Microsoft Word usando i controlli contenuto.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -21,14 +21,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1dc962e372f4406fffb5cf8a6357f3826f0c8845
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc333871d4f371530db84a0c4f07ab891db2a937
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942256"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825472"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: proteggere parti di documenti mediante controlli contenuto
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: Proteggere parti di documenti usando i controlli contenuto
   Quando si protegge parte di un documento, si impedisce agli utenti di modificare o eliminare il contenuto in quella parte del documento. È possibile proteggere parti di un documento di Microsoft Office Word usando i controlli contenuto in diversi modi.
 
 - È possibile proteggere un controllo del contenuto.
@@ -40,7 +40,7 @@ ms.locfileid: "99942256"
 ## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> Proteggere un controllo contenuto
  È possibile impedire agli utenti di modificare o eliminare un controllo del contenuto impostando le proprietà del controllo in un progetto a livello di documento in fase di progettazione o di esecuzione.
 
- È anche possibile proteggere i controlli del contenuto aggiunti a un documento in fase di esecuzione con un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere [procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).
+ È anche possibile proteggere i controlli del contenuto aggiunti a un documento in fase di esecuzione con un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere [Procedura: Aggiungere controlli contenuto ai documenti di Word.](../vsto/how-to-add-content-controls-to-word-documents.md)
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>Per proteggere un controllo del contenuto in fase di progettazione
 
@@ -48,27 +48,27 @@ ms.locfileid: "99942256"
 
 2. Nella finestra **Proprietà** impostare una o entrambe le proprietà seguenti:
 
-    - Per impedire agli utenti di modificare il controllo, impostare **LockContents** su **true**.
+    - Per impedire agli utenti di modificare il controllo, **impostare LockContents** su **True.**
 
-    - Per impedire agli utenti di eliminare il controllo, impostare **LockContentControl** su **true**.
+    - Per impedire agli utenti di eliminare il controllo, impostare **LockContentControl** su **True.**
 
 3. Fare clic su **OK**.
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>Per proteggere un controllo del contenuto in fase di esecuzione
 
-1. Impostare la `LockContents` proprietà del controllo contenuto su **true** per impedire agli utenti di modificare il controllo e impostare la `LockContentControl` proprietà su **true** per impedire agli utenti di eliminare il controllo.
+1. Impostare la proprietà del controllo contenuto su true per impedire agli utenti di modificare il controllo e impostare la proprietà su true per impedire agli utenti `LockContents` di eliminare il  `LockContentControl` controllo. 
 
      L'esempio di codice seguente illustra l'uso delle proprietà <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> e <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> di due oggetti <xref:Microsoft.Office.Tools.Word.RichTextContentControl> diversi in un progetto a livello di documento. Per eseguire il codice, aggiungerlo alla classe `ThisDocument` nel progetto e chiamare il metodo `AddProtectedContentControls` dal gestore eventi `ThisDocument_Startup` .
 
-     [!code-csharp[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#2)]
-     [!code-vb[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb" id="Snippet2":::
 
      L'esempio di codice seguente illustra l'uso delle proprietà <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> e <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> di due oggetti <xref:Microsoft.Office.Tools.Word.RichTextContentControl> diversi in un progetto di componente aggiuntivo VSTO. Per eseguire il codice, aggiungerlo alla classe `ThisAddIn` nel progetto e chiamare il metodo `AddProtectedContentControls` dal gestore eventi `ThisAddIn_Startup` .
 
-     [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]
-     [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet14":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet14":::
 
-## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>Proteggere una parte di un documento non presente in un controllo contenuto
+## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>Proteggere una parte di un documento che non si trova in un controllo contenuto
  È possibile impedire agli utenti di modificare un'area di un documento inserendo l'area in un controllo <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Questa operazione è utile negli scenari seguenti:
 
 - Si vuole proteggere un'area che non contiene i controlli del contenuto.
@@ -76,7 +76,7 @@ ms.locfileid: "99942256"
 - Si vuole proteggere un'area che contiene i controlli del contenuto, ma il testo o gli altri elementi da proteggere non sono nei controlli del contenuto.
 
 > [!NOTE]
-> Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. Per impedire agli utenti di modificare un controllo contenuto incorporato, utilizzare la proprietà **LockContents** del controllo.
+> Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. Per impedire agli utenti di modificare un controllo contenuto incorporato, usare la **proprietà LockContents** del controllo.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Per proteggere un'area di un documento in fase di progettazione
 
@@ -85,9 +85,9 @@ ms.locfileid: "99942256"
 2. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
     > [!NOTE]
-    > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per ulteriori informazioni, vedere [procedura: visualizzare la scheda Developer sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda Sviluppatore sulla barra multifunzione.](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
 
-3. Nel gruppo **controlli** fare clic sul pulsante a discesa **gruppo** , quindi fare clic su **gruppo**.
+3. Nel gruppo **Controlli** fare clic sul **pulsante a** discesa Gruppo e quindi su **Gruppo**.
 
      L'oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> contenente l'area protetta viene automaticamente generato nella classe `ThisDocument` del progetto. Un bordo che rappresenta il controllo di gruppo è visibile in fase di progettazione, ma non esiste alcun bordo visibile in fase di esecuzione.
 
@@ -97,18 +97,18 @@ ms.locfileid: "99942256"
 
      L'esempio di codice seguente per un progetto a livello di documento aggiunge del testo al primo paragrafo del documento, seleziona il primo paragrafo e quindi crea un'istanza di <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Per eseguire il codice, aggiungerlo alla classe `ThisDocument` nel progetto e chiamare il metodo `ProtectFirstParagraph` dal gestore eventi `ThisDocument_Startup` .
 
-     [!code-csharp[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#1)]
-     [!code-vb[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb" id="Snippet1":::
 
      L'esempio di codice seguente per un progetto di componente aggiuntivo VSTO aggiunge del testo al primo paragrafo del documento attivo, seleziona il primo paragrafo e quindi crea un'istanza di <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Per eseguire il codice, aggiungerlo alla classe `ThisAddIn` nel progetto e chiamare il metodo `ProtectFirstParagraph` dal gestore eventi `ThisAddIn_Startup` .
 
-     [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
-     [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet15":::
 
 ## <a name="see-also"></a>Vedi anche
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Controlli contenuto](../vsto/content-controls.md)
-- [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
-- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Procedura: Aggiungere controlli contenuto ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)
+- [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)

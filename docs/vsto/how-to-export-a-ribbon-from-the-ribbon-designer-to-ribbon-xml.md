@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML della barra multifunzione'
-description: Per informazioni su come personalizzare la barra multifunzione, è possibile esportare la barra multifunzione dalla finestra di progettazione alla barra multifunzione XML e modificare direttamente il codice XML.
+title: 'Procedura: Esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione al file XML della barra multifunzione'
+description: Per personalizzare la barra multifunzione, è possibile esportare la barra multifunzione dalla finestra di progettazione al codice XML della barra multifunzione e modificare direttamente il codice XML.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -21,55 +21,55 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a0511fd103345859f96b18f333465106505057a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1514410094deaf9c77e088c3b69e2d39d29175c2
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953981"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825589"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML della barra multifunzione
-  L'elemento **barra multifunzione (finestra di progettazione visiva)** non supporta tutti i possibili tipi di personalizzazione della barra multifunzione. Per personalizzare la barra multifunzione in modi avanzati, è possibile esportare la barra multifunzione dalla finestra di progettazione a XML della barra multifunzione e modificare direttamente il codice XML.
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procedura: Esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione al file XML della barra multifunzione
+  **L'elemento Barra multifunzione (finestra di progettazione visiva)** non supporta tutti i possibili tipi di personalizzazione della barra multifunzione. Per personalizzare la barra multifunzione in modi avanzati, è possibile esportare la barra multifunzione dalla finestra di progettazione al codice XML della barra multifunzione e modificare direttamente il codice XML.
 
 > [!NOTE]
-> Non tutti i valori delle proprietà vengono visualizzati nel file XML della barra multifunzione. Per altre informazioni, vedere [Cenni preliminari sulla barra multifunzione](../vsto/ribbon-overview.md).
+> Non tutti i valori delle proprietà vengono visualizzati nel file XML della barra multifunzione. Per altre informazioni, vedere Panoramica [della barra multifunzione.](../vsto/ribbon-overview.md)
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Per esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML Ribbon
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Per esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione al file XML della barra multifunzione
 
-1. Fare clic con il pulsante destro del mouse sul file di codice della barra multifunzione in **Esplora soluzioni**, quindi scegliere **Progettazione visualizzazioni**.
+1. Fare clic con il pulsante destro del mouse sul file **di codice della barra multifunzione Esplora soluzioni** e quindi scegliere **Progettazione visualizzazioni**.
 
-2. Fare clic con il pulsante destro del mouse sulla finestra di progettazione Ribbon, quindi scegliere **Esporta barra multifunzione in XML**.
+2. Fare clic con il pulsante destro del mouse sulla finestra di progettazione della barra multifunzione e **quindi scegliere Esporta barra multifunzione in XML.**
 
-     Visual Studio aggiunge al progetto un file XML della barra multifunzione e un file di codice XML della barra multifunzione.
+     Visual Studio aggiunge un file XML della barra multifunzione e un file di codice XML della barra multifunzione al progetto.
 
-3. Nella classe di codice della barra multifunzione individuare i commenti che iniziano con `TODO:` .
+3. Nella classe di codice Ribbon individuare i commenti che iniziano con `TODO:` .
 
-4. Copiare il blocco di codice in questi commenti nella classe **ThisAddIn**, **ThisWorkbook** o **ThisDocument** , a seconda del tipo di soluzione che si sta sviluppando.
+4. Copiare il blocco di codice in questi commenti nella classe **ThisAddin**, **ThisWorkbook** o **ThisDocument,** a seconda del tipo di soluzione che si sta sviluppando.
 
-     Questo codice consente all'applicazione Microsoft Office di individuare e caricare la barra multifunzione personalizzata. Per altre informazioni, vedere [Ribbon XML](../vsto/ribbon-xml.md).
+     Questo codice consente all'applicazione Microsoft Office individuare e caricare la barra multifunzione personalizzata. Per altre informazioni, vedere [Ribbon XML](../vsto/ribbon-xml.md).
 
-5. Nella classe **ThisAddIn**, **ThisWorkbook** o **ThisDocument** rimuovere il commento dal blocco di codice.
+5. Nella classe **ThisAddin**, **ThisWorkbook** o **ThisDocument** rimuovere il commento dal blocco di codice.
 
-     Dopo aver annullato il commento del codice, il codice dovrebbe essere simile all'esempio seguente. In questo esempio viene chiamata la classe Ribbon `MyRibbon` .
+     Dopo aver decommentato il codice, dovrebbe essere simile all'esempio seguente. In questo esempio la classe Ribbon è denominata `MyRibbon` .
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb" id="Snippet1":::
 
-6. Passare al file di codice XML della barra multifunzione e trovare l' `Ribbon Callbacks` area.
+6. Passare al file di codice XML della barra multifunzione e trovare `Ribbon Callbacks` l'area.
 
-     Qui è possibile scrivere metodi di callback per gestire le azioni dell'utente, ad esempio facendo clic su un pulsante.
+     Qui è possibile scrivere metodi di callback per gestire le azioni dell'utente, ad esempio fare clic su un pulsante.
 
 7. Creare un metodo di callback per ogni gestore eventi scritto nel codice della finestra di progettazione della barra multifunzione.
 
-8. Spostare tutto il codice del gestore eventi dai gestori eventi ai metodi di callback e modificare il codice in modo che funzioni con il modello di programmazione di estendibilità della barra multifunzione (RibbonX).
+8. Spostare tutto il codice del gestore eventi dai gestori eventi ai metodi di callback e modificare il codice in modo che funzioni con il modello di programmazione Ribbon extensibility (RibbonX).
 
-     Per informazioni sulla scrittura di metodi di callback e sull'utilizzo del modello di programmazione RibbonX, vedere [Ribbon XML](../vsto/ribbon-xml.md).
+     Per informazioni sulla scrittura di metodi di callback e sull'uso del modello di programmazione RibbonX, vedere [XML della barra multifunzione.](../vsto/ribbon-xml.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Procedura dettagliata: creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Procedura dettagliata: Creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

@@ -1,6 +1,6 @@
 ---
-title: "Procedura dettagliata: importare un'area del modulo progettata in Outlook"
-description: Informazioni su come progettare un'area del modulo in Microsoft Outlook e quindi importare l'area del modulo in un progetto di componente aggiuntivo VSTO di Outlook usando la procedura guidata nuova area del modulo.
+title: "Procedura dettagliata: Importare un'area del modulo progettata in Outlook"
+description: Informazioni su come progettare un'area del modulo in Microsoft Outlook e quindi importare l'area del modulo in un progetto di componente aggiuntivo VSTO di Outlook usando la procedura guidata Nuova area del modulo.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ce8c334be74f2643bfc7fa263b01a74db109eb7
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969152"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827747"
 ---
-# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procedura dettagliata: importare un'area del modulo progettata in Outlook
+# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procedura dettagliata: Importare un'area del modulo progettata in Outlook
   Questa procedura dettagliata illustra come progettare un'area del modulo in Microsoft Office Outlook e come importare l'area del modulo in un progetto di componente aggiuntivo VSTO di Outlook con la procedura guidata **Nuova area modulo** . Progettando l'area del modulo in Outlook è possibile aggiungere i controlli nativi di Outlook all'area del modulo associata ai dati di Outlook. Dopo avere importato l'area del modulo, è possibile gestire gli eventi di ogni controllo.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -46,9 +46,9 @@ ms.locfileid: "99969152"
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE Visual Studio .](../ide/personalizing-the-visual-studio-ide.md)
 
-## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Progettare un'area del modulo usando progettazione aree di form in Outlook
+## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Progettare un'area del modulo usando la finestra di progettazione dell'area del modulo in Outlook
  In questo passaggio si progetterà un'area del modulo in Outlook. L'area del modulo verrà quindi salvata in un percorso facilmente accessibile e successivamente importata in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
  Quest'area del modulo di esempio sostituisce completamente il normale modulo Attività. Fornisce una modalità per registrare lo stato di avanzamento di tutte le attività che devono essere completate prima che l'attività principale possa essere eseguita (attività essenziali). L'area del modulo visualizza un elenco delle attività essenziali e mostra lo stato di completamento di ogni attività nell'elenco. Gli utenti possono aggiungere attività all'elenco e rimuoverle, oltre ad aggiornare lo stato di completamento di ogni attività.
@@ -57,7 +57,7 @@ ms.locfileid: "99969152"
 
 1. Avviare Microsoft Office Outlook.
 
-2. In Outlook, nella scheda **Sviluppatore** , fare clic **Progetta modulo**. Per ulteriori informazioni, vedere [procedura: visualizzare la scheda Developer sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+2. In Outlook, nella scheda **Sviluppatore** , fare clic **Progetta modulo**. Per altre informazioni, vedere [Procedura: Visualizzare la scheda Sviluppatore sulla barra multifunzione.](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
 
 3. Nella finestra **Progetta modulo** scegliere **Attività**, quindi **Apri**.
 
@@ -111,11 +111,11 @@ ms.locfileid: "99969152"
 
      Denominare l'area del modulo **TaskFormRegion** e salvarla in una directory locale del computer.
 
-     Outlook salva l'area del modulo come file *OFS*(Outlook Form Storage). L'area del modulo viene salvata con il nome *TaskFormRegion. OFS*.
+     Outlook salva l'area del modulo come file di archiviazione moduli di Outlook (*ofs).* L'area del modulo viene salvata con il *nome TaskFormRegion.ofs*.
 
 27. Uscire da Outlook.
 
-## <a name="create-a-new-outlook-add-in-project"></a>Creare un nuovo progetto di componente aggiuntivo per Outlook
+## <a name="create-a-new-outlook-add-in-project"></a>Creare un nuovo progetto di componente aggiuntivo di Outlook
  In questo passaggio, verrà creato un progetto di componente aggiuntivo VSTO per Outlook. Più avanti in questa procedura, si importerà l'area del modulo nel progetto.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Per creare un nuovo progetto di componente aggiuntivo VSTO di Outlook
@@ -126,7 +126,7 @@ ms.locfileid: "99969152"
 
 3. Salvare il progetto nella directory del progetto predefinita.
 
-     Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="import-the-form-region"></a>Importare l'area del modulo
  Usare la procedura guidata **Nuova area del modulo di Outlook** per importare l'area del modulo progettata in Outlook nel progetto di componente aggiuntivo VSTO per Outlook.
@@ -137,7 +137,7 @@ ms.locfileid: "99969152"
 
 2. Nel riquadro **Modelli** selezionare **area del modulo di Outlook**, assegnare al file il nome **TaskFormRegion** e fare clic su **Aggiungi**.
 
-     Viene avviata la procedura guidata **area del modulo NewOutlook** .
+     Verrà **avviata la procedura guidata Area del modulo NewOutlook.**
 
 3. Nella pagina **Selezionare la modalità di creazione dell'area del modulo** , scegliere **Importa un file OFS (Outlook Form Storage)**, quindi fare clic su **Sfoglia**.
 
@@ -145,13 +145,13 @@ ms.locfileid: "99969152"
 
 5. Nella pagina **Selezionare il tipo di area del modulo da creare** selezionare **Sostituzione completa** e scegliere **Avanti**.
 
-     Un'area del modulo *sostituzione completa* sostituisce l'intero modulo di Outlook. Per altre informazioni sui tipi di area del modulo, vedere [creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md).
+     Un'area del modulo *sostituzione completa* sostituisce l'intero modulo di Outlook. Per altre informazioni sui tipi di aree del modulo, vedere [Creare aree del modulo di Outlook.](../vsto/creating-outlook-form-regions.md)
 
 6. Nella pagina **Fornire un testo descrittivo e selezionare le preferenze di visualizzazione** fare clic su **Avanti**.
 
 7. Nella pagina **Identificare le classi di messaggi per la visualizzazione dell'area del modulo** digitare **IPM.Task.TaskFormRegion** nel campo **Fornire le classi di messaggi per la visualizzazione dell'area del modulo** e fare clic su **Fine**.
 
-     Un file *TaskFormRegion.cs* o *TaskFormRegion. vb* viene aggiunto al progetto.
+     Un file *TaskFormRegion.cs* *o TaskFormRegion.vb* viene aggiunto al progetto.
 
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>Gestire gli eventi dei controlli nell'area del modulo
  Ora che l'area del modulo è nel progetto, è possibile aggiungere il codice che gestisce l'evento `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` del pulsante aggiunto all'area del modulo in Outlook.
@@ -160,14 +160,14 @@ ms.locfileid: "99969152"
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Per gestire gli eventi dei controlli nell'area del modulo
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *TaskFormRegion.cs* o *TaskFormRegion. vb*, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *TaskFormRegion.cs* o *TaskFormRegion.vb* e quindi **scegliere Visualizza codice.**
 
-    *TaskFormRegion.cs* o *TaskFormRegion. vb* viene aperto nell'editor di codice.
+    *TaskFormRegion.cs* o *TaskFormRegion.vb* viene aperto nell'editor di codice.
 
 2. Aggiungere il codice seguente alla classe `TaskFormRegion` . Questo codice popola la casella combinata nell'area del modulo con la riga dell'oggetto di ogni attività dalla cartella delle attività di Outlook.
 
-    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet1":::
 
 3. Aggiungere il codice seguente alla classe `TaskFormRegion` . Il codice esegue queste operazioni:
 
@@ -177,24 +177,24 @@ ms.locfileid: "99969152"
 
    - Aggiunta dell'oggetto dell'attività al campo nascosto sull'area del modulo. Il campo nascosto archivia questi valori come parte dell'elemento Outlook.
 
-     [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet2":::
 
 4. Aggiungere il codice seguente alla classe `TaskFormRegion` . Questo codice fornisce il metodo di supporto `FindTaskBySubjectName` descritto nel passaggio precedente.
 
-    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet3":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet3":::
 
 5. Aggiungere il codice seguente alla classe `TaskFormRegion` . Il codice esegue queste operazioni:
 
    - Aggiornamento della casella di riepilogo sull'area del modulo con lo stato di completamento corrente di ogni attività dipendente.
 
-   - Analisi del campo di testo nascosto per ottenere l'oggetto di ogni attività dipendente. Quindi individua ogni `Microsoft.Office.Interop.Outlook.TaskItem` nella cartella delle *attività* chiamando il `FindTaskBySubjectName` metodo di supporto e passando l'oggetto di ogni attività.
+   - Analisi del campo di testo nascosto per ottenere l'oggetto di ogni attività dipendente. Individua quindi ogni oggetto nella cartella Attività chiamando il metodo helper e `Microsoft.Office.Interop.Outlook.TaskItem` passando  `FindTaskBySubjectName` l'oggetto di ogni attività.
 
    - Aggiunta dei valori `Microsoft.Office.Interop.Outlook.TaskItem.Subject` e `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` alla casella di riepilogo dell'attività dipendente.
 
-     [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
-     [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet4":::
 
 6. Sostituire il gestore eventi `TaskFormRegion_FormRegionShowing` con il codice seguente. Il codice esegue queste operazioni:
 
@@ -202,8 +202,8 @@ ms.locfileid: "99969152"
 
    - Chiamata del metodo di supporto `RefreshTaskListBox` quando l'area del modulo viene visualizzata. Viene visualizzata qualsiasi attività dipendente che era stata aggiunta alla casella di riepilogo quando l'elemento è stato precedentemente aperto.
 
-     [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
-     [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet5":::
 
 ## <a name="test-the-outlook-form-region"></a>Testare l'area del modulo di Outlook
  Per verificare l'area del modulo, aggiungere le attività all'elenco di attività essenziali sull'area del modulo. Aggiornare lo stato di completamento di un'attività essenziale e quindi visualizzare lo stato di completamento aggiornato dell'attività nell'elenco delle attività essenziali.
@@ -218,7 +218,7 @@ ms.locfileid: "99969152"
 
 3. Nel modulo di attività digitare **Attività dipendente** nel campo **Oggetto** .
 
-4. Nella scheda **attività** della barra multifunzione, nel gruppo **azioni** , fare clic su **Salva & Chiudi**.
+4. Nel **gruppo** Azioni della scheda  Attività della barra multifunzione fare clic su Salva **& Chiudi**.
 
 5. In Outlook, nella scheda **Pagina iniziale** , scegliere **Nuovi elementi**, fare clic **Più elementi** quindi fare clic su **Scegli modulo**.
 
@@ -238,7 +238,7 @@ ms.locfileid: "99969152"
 
 11. Nel modulo Attività dipendente, impostare il campo **% completato** su **50%**.
 
-12. Nella scheda **attività** della barra multifunzione attività dipendente, nel gruppo **azioni** , fare clic su **Salva & Chiudi**.
+12. Nel **gruppo** Azioni della scheda Attività  della barra multifunzione Attività dipendente fare clic su Salva & **Chiudi**.
 
 13. Riaprire l'elemento **Attività principale** in Outlook.
 
@@ -247,18 +247,18 @@ ms.locfileid: "99969152"
 ## <a name="next-steps"></a>Passaggi successivi
  È possibile trovare altre informazioni sulla personalizzazione dell'interfaccia utente di un'applicazione di Outlook negli argomenti seguenti:
 
-- Per altre informazioni su come progettare l'aspetto di un'area del modulo trascinando i controlli gestiti in una finestra di progettazione visiva, vedere [procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Per altre informazioni su come progettare l'aspetto di un'area del modulo trascinando i controlli gestiti in una finestra di progettazione visiva, vedere [Procedura dettagliata: Progettare un'area del modulo di Outlook.](../vsto/walkthrough-designing-an-outlook-form-region.md)
 
-- Per informazioni su come personalizzare la barra multifunzione di un elemento di Outlook, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Per informazioni su come personalizzare la barra multifunzione di un elemento di Outlook, vedere [Personalizzare una barra multifunzione per Outlook.](../vsto/customizing-a-ribbon-for-outlook.md)
 
-- Per ulteriori informazioni su come aggiungere un riquadro attività personalizzato a Outlook, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
+- Per altre informazioni su come aggiungere un riquadro attività personalizzato a Outlook, vedere [Riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Vedi anche
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)
-- [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
+- [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
 - [Linee guida per la creazione di aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
-- [Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
+- [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo per Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Associare un'area del modulo a una classe di messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Azioni personalizzate nelle aree del modulo di Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Procedura: impedire la visualizzazione di un'area del modulo in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Procedura: Impedire a Outlook di visualizzare un'area del modulo](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

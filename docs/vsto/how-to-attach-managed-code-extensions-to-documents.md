@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: associazione di estensioni di codice gestito a documenti'
-description: Informazioni su come alleghi un assembly di personalizzazione a un documento Microsoft Office Word esistente o Microsoft Office cartella di lavoro di Excel.
+title: 'Procedura: Collegare estensioni di codice gestito ai documenti'
+description: Informazioni su come collegare un assembly di personalizzazione a un documento di Word Microsoft Office esistente o Microsoft Office cartella di lavoro di Excel.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,42 +15,42 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60fc27345ef148fd47fdcee15924917ce63f8d68
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954111"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825498"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: associazione di estensioni di codice gestito a documenti
-  È possibile aggiungere un assembly di personalizzazione a un documento Microsoft Office Word esistente o Microsoft Office cartella di lavoro di Excel. Il documento o la cartella di lavoro può essere in qualsiasi formato di file supportato dai progetti Microsoft Office e dagli strumenti di sviluppo in Visual Studio. Per altre informazioni, vedere [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: Collegare estensioni di codice gestito ai documenti
+  È possibile collegare un assembly di personalizzazione a un documento Microsoft Office Word esistente o Microsoft Office cartella di lavoro di Excel. Il documento o la cartella di lavoro può essere in qualsiasi formato di file supportato dai progetti Microsoft Office e dagli strumenti di sviluppo in Visual Studio. Per altre informazioni, vedere [Architettura delle personalizzazioni a livello di documento.](../vsto/architecture-of-document-level-customizations.md)
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Per alleghi una personalizzazione a un documento di Word o di Excel, usare il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metodo della <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Poiché la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe è progettata per essere eseguita in un computer in cui non è installato Microsoft Office, è possibile utilizzare questo metodo in soluzioni non direttamente correlate allo sviluppo di Microsoft Office, ad esempio una console o Windows Forms Application.
+ Per associare una personalizzazione a un documento di Word o Excel, usare il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metodo della <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe . Poiché la classe è progettata per essere eseguita in un computer in cui non è installato Microsoft Office, è possibile usare questo metodo in soluzioni non direttamente correlate allo sviluppo di Microsoft Office (ad esempio una console o un'applicazione <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Windows Forms).
 
 > [!NOTE]
-> Il caricamento della personalizzazione non verrà eseguito se il codice prevede controlli che il documento specificato non dispone di.
+> La personalizzazione non verrà caricata se il codice prevede controlli che il documento specificato non ha.
 
-### <a name="to-attach-managed-code-extensions-to-a-document"></a>Per aggiungere estensioni di codice gestito a un documento
+### <a name="to-attach-managed-code-extensions-to-a-document"></a>Per associare estensioni di codice gestito a un documento
 
-1. In un progetto che non richiede Microsoft Office, ad esempio un'applicazione console o un progetto Windows Form, aggiungere un riferimento agli assembly di *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* e *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* .
+1. In un progetto che non richiede Microsoft Office, ad esempio un'applicazione console o un  progetto Windows Forms, aggiungere un riferimento agli assemblyMicrosoft.VisualStudio.Tools.Applications.ServerDocument.dlle *Microsoft.VisualStudio.Tools.Applications.Runtime.dll.*
 
-2. Aggiungere le istruzioni **Imports** o **using** seguenti all'inizio del file di codice.
+2. Aggiungere le istruzioni **Imports** **o using** seguenti all'inizio del file di codice.
 
-     [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
-     [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet4":::
 
-3. Chiamare il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metodo statico.
+3. Chiamare il metodo <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> statico.
 
-     Nell'esempio di codice riportato di seguito viene utilizzato l' <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> Overload. Questo overload accetta il percorso completo del documento e un oggetto <xref:System.Uri> che specifica il percorso del manifesto di distribuzione per la personalizzazione che si vuole alleghi al documento. In questo esempio si presuppone che un documento di Word denominato **WordDocument1.docx** sia sul desktop e che il manifesto di distribuzione si trovi in una cartella denominata **Publish** che è anche sul desktop.
+     Nell'esempio di codice seguente viene utilizzato <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> l'overload . Questo overload accetta il percorso completo del documento e un oggetto che specifica il percorso del manifesto di distribuzione per la personalizzazione che si vuole <xref:System.Uri> allegare al documento. Questo esempio presuppone che sul desktop sia presente un documento di Word denominato **WordDocument1.docx** e che il manifesto della distribuzione si trovi in una cartella denominata **Pubblica** che si trova anche sul desktop.
 
-     [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
-     [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet3":::
 
-4. Compilare il progetto ed eseguire l'applicazione nel computer in cui si desidera alleghi la personalizzazione. Nel computer deve essere installato Visual Studio 2010 Tools per Office Runtime.
+4. Compilare il progetto ed eseguire l'applicazione nel computer in cui si vuole collegare la personalizzazione. Nel computer deve essere installato Visual Studio 2010 Tools for Office Runtime.
 
 ## <a name="see-also"></a>Vedi anche
-- [Gestire i documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [Procedura: rimuovere estensioni di codice gestito da documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
-- [Manifesti dell'applicazione e di distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Gestire documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [Procedura: Rimuovere estensioni di codice gestito dai documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
+- [Manifesti dell'applicazione e della distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)

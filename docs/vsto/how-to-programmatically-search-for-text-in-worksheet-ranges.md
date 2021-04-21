@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: ricerca di testo negli intervalli dei fogli di testo a livello di codice'
-description: Informazioni su come usare Visual Studio per eseguire la ricerca a livello di codice di testo negli intervalli dei fogli di lavoro di Microsoft Excel.
+title: 'Procedura: Cercare testo negli intervalli di fogli di lavoro a livello di codice'
+description: Informazioni su come usare le Visual Studio per cercare testo negli intervalli di fogli di lavoro di Microsoft Excel a livello di codice.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,68 +17,68 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3cf3894a2fb6d34678786686fe3c229d2e16a9a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 762cb3fc35b43bfd3ad15aea669adff2d370b632
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877889"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827942"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: ricerca di testo negli intervalli dei fogli di testo a livello di codice
-  Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo dell' <xref:Microsoft.Office.Interop.Excel.Range> oggetto consente di cercare testo compreso nell'intervallo. Questo testo può essere costituito anche da qualsiasi stringa di errore che può essere presente in una cella di un foglio di foglio, ad esempio `#NULL!` o `#VALUE!` . Per ulteriori informazioni sulle stringhe di errore, vedere la pagina relativa ai [valori di errore della cella](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: Cercare testo negli intervalli di fogli di lavoro a livello di codice
+  Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo <xref:Microsoft.Office.Interop.Excel.Range> dell'oggetto consente di cercare testo all'interno dell'intervallo. Questo testo può anche essere qualsiasi stringa di errore che può essere visualizzata in una cella del foglio di lavoro, ad esempio `#NULL!` o `#VALUE!` . Per altre informazioni sulle stringhe di errore, vedere [Valori di errore delle celle](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Nell'esempio seguente viene eseguita la ricerca di un intervallo denominato `Fruits` e viene modificato il tipo di carattere per le celle che contengono la parola "mele". Questa procedura usa anche il <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metodo, che usa le impostazioni di ricerca impostate in precedenza per ripetere la ricerca. Si specifica la cella dopo la quale eseguire la ricerca e il <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metodo gestisce il resto.
+ Nell'esempio seguente viene eseguita una ricerca in un intervallo denominato e viene modificato il tipo di carattere per le celle `Fruits` contenenti la parola "apples". Questa procedura usa anche il metodo , che usa le impostazioni di ricerca impostate in precedenza <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> per ripetere la ricerca. Si specifica la cella dopo la quale eseguire la ricerca e il <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metodo gestisce il resto.
 
 > [!NOTE]
-> La <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> ricerca del metodo esegue il ritorno all'inizio dell'intervallo di ricerca dopo che ha raggiunto la fine dell'intervallo. Il codice deve assicurarsi che la ricerca non venga incapsulata in un ciclo infinito. Nella procedura di esempio viene illustrato un modo per gestire questa operazione utilizzando la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> Proprietà.
+> La ricerca del metodo torna all'inizio dell'intervallo di ricerca dopo che ha <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> raggiunto la fine dell'intervallo. Il codice deve garantire che la ricerca non eserciti il wrapping in un ciclo infinito. La procedura di esempio illustra un modo per gestirlo usando la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> proprietà .
 
-## <a name="to-search-for-text-in-a-worksheet-range"></a>Per cercare il testo in un intervallo del foglio di testo
+## <a name="to-search-for-text-in-a-worksheet-range"></a>Per cercare testo in un intervallo di fogli di lavoro
 
-1. Dichiarare le variabili per il rilevamento dell'intero intervallo, il primo intervallo trovato e l'intervallo trovato corrente.
+1. Dichiarare le variabili per tenere traccia dell'intero intervallo, del primo intervallo trovato e dell'intervallo trovato corrente.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
-    [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet58":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet58":::
 
-2. Cercare la prima corrispondenza, specificando tutti i parametri eccetto la cella in cui eseguire la ricerca.
+2. Cercare la prima corrispondenza, specificando tutti i parametri tranne la cella in cui eseguire la ricerca.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
-    [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet59":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet59":::
 
-3. Continua la ricerca finché sono presenti corrispondenze.
+3. Continuare la ricerca fino a quando sono presenti corrispondenze.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
-    [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet60":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet60":::
 
 4. Confrontare il primo intervallo trovato ( `firstFind` ) con **Nothing**. Se `firstFind` non contiene alcun valore, il codice archivia l'intervallo trovato ( `currentFind` ).
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
-    [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet61":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet61":::
 
 5. Uscire dal ciclo se l'indirizzo dell'intervallo trovato corrisponde all'indirizzo del primo intervallo trovato.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
-    [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet62":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet62":::
 
-6. Imposta l'aspetto dell'intervallo trovato.
+6. Impostare l'aspetto dell'intervallo trovato.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
-    [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet63":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet63":::
 
 7. Eseguire un'altra ricerca.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
-    [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet64":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet64":::
 
    L'esempio seguente mostra il metodo completo.
 
 ## <a name="example"></a>Esempio
- [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]
- [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet57":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet57":::
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare gli intervalli](../vsto/working-with-ranges.md)
-- [Procedura: applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Procedura: fare riferimento a intervalli di fogli di fogli di codice a livello di codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Procedura: Applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Procedura: Fare riferimento a intervalli di fogli di lavoro nel codice a livello di codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

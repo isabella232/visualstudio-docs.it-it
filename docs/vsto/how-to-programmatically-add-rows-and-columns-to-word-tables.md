@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: aggiungere righe e colonne alle tabelle di Word a livello di codice'
-description: Informazioni su come utilizzare il metodo Add dell'oggetto Rows per aggiungere righe alla tabella. Per aggiungere colonne, è inoltre possibile utilizzare il metodo Add dell'oggetto Columns.
+title: 'Procedura: Aggiungere righe e colonne alle tabelle di Word a livello di codice'
+description: Informazioni su come usare il metodo Add dell'oggetto Rows per aggiungere righe alla tabella. È anche possibile usare il metodo Add dell'oggetto Columns per aggiungere colonne.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a4077e78da512ef7b49546ae9b5271b5dfd8ff15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cac3e11f73e53441f1bcf20c67dd5659a49a1b0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910159"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828423"
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procedura: aggiungere righe e colonne alle tabelle di Word a livello di codice
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procedura: Aggiungere righe e colonne alle tabelle di Word a livello di codice
   In una tabella di Microsoft Office Word le celle sono organizzate in righe e colonne. È possibile usare il metodo <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Rows> per aggiungere righe alla tabella e il metodo <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Columns> per aggiungere colonne.
 
  [!INCLUDE[appliesto_wdalldocapp](includes/appliesto-wdalldocapp-md.md)]
@@ -40,21 +40,21 @@ ms.locfileid: "99910159"
 > - Documento di Word 2010
 > - Modello di Word 2010
 >
->   Se si vuole eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento all'assembly **Microsoft. Office. Interop. Word** , quindi è necessario usare le classi di tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Word 2010](office-primary-interop-assemblies.md).
+>   Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento all'assembly **Microsoft.Office.Interop.Word** e quindi usare le classi di tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [Procedura: Impostare](how-to-target-office-applications-through-primary-interop-assemblies.md) come destinazione le applicazioni di Office tramite assembly di interoperabilità primari e Informazioni di riferimento sugli assembly di interoperabilità primari [di Word 2010.](office-primary-interop-assemblies.md)
 
 ### <a name="to-add-a-row-to-a-table"></a>Per aggiungere una riga a una tabella
 
 1. Usare il metodo <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> per aggiungere una riga alla tabella.
 
-     [!code-vb[Trin_VstcoreWordAutomation#95](codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
-     [!code-csharp[Trin_VstcoreWordAutomation#95](codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet95":::
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet95":::
 
 ### <a name="to-add-a-column-to-a-table"></a>Per aggiungere una colonna a una tabella
 
 1. Usare il metodo <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> e quindi usare il metodo <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> per applicare la stessa larghezza a tutte le colonne.
 
-     [!code-vb[Trin_VstcoreWordAutomation#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]
-     [!code-csharp[Trin_VstcoreWordAutomation#96](codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet96":::
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet96":::
 
 ## <a name="vsto-add-in-examples"></a>Esempi di componenti aggiuntivi VSTO
  Gli esempi di codice seguenti possono essere usati in un componente aggiuntivo VSTO. Per usare gli esempi, eseguirli dalla classe `ThisAddIn` nel progetto. Gli esempi presuppongono che il documento attivo contenga già almeno una tabella.
@@ -62,23 +62,23 @@ ms.locfileid: "99910159"
 > [!IMPORTANT]
 > Questo codice viene eseguito solo in progetti creati usando modelli di componente aggiuntivo VSTO per Word.
 >
-> Se si vuole eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento all'assembly **Microsoft. Office. Interop. Word** , quindi è necessario usare le classi di tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Word 2010](office-primary-interop-assemblies.md).
+> Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento all'assembly **Microsoft.Office.Interop.Word** e quindi usare le classi di tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [Procedura: Impostare](how-to-target-office-applications-through-primary-interop-assemblies.md) come destinazione le applicazioni di Office tramite assembly di interoperabilità primari e Informazioni di riferimento sugli assembly di interoperabilità primari [di Word 2010.](office-primary-interop-assemblies.md)
 
 ### <a name="to-add-a-row-to-a-table"></a>Per aggiungere una riga a una tabella
 
 1. Usare il metodo <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> per aggiungere una riga alla tabella.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#95](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet95":::
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet95":::
 
 ### <a name="to-add-a-column-to-a-table"></a>Per aggiungere una colonna a una tabella
 
 1. Usare il metodo <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> e quindi usare il metodo <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> per applicare la stessa larghezza a tutte le colonne.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet96":::
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet96":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: creare tabelle di Word a livello di codice](how-to-programmatically-create-word-tables.md)
-- [Procedura: aggiungere testo e formattazione alle celle delle tabelle di Word a livello di codice](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Procedura: popolare tabelle di Word con proprietà dei documenti a livello di codice](how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [Procedura: Creare tabelle di Word a livello di codice](how-to-programmatically-create-word-tables.md)
+- [Procedura: Aggiungere testo e formattazione alle celle nelle tabelle di Word a livello di codice](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Procedura: Popolare a livello di codice le tabelle di Word con le proprietà del documento](how-to-programmatically-populate-word-tables-with-document-properties.md)

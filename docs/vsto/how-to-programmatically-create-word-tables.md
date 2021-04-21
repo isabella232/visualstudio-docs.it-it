@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare tabelle di Word a livello di codice'
+title: 'Procedura: Creare tabelle di Word a livello di codice'
 description: Informazioni su come usare il metodo Add della raccolta Tables per aggiungere una tabella in corrispondenza dell'intervallo specificato in un documento di Microsoft Word.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4c0c349fdc0f5af333cbd7aa1d5e77c9c7fd2e5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5651487e280d7fb9912734b919b00fab28a702db
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963965"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827383"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>Procedura: creare tabelle di Word a livello di codice
+# <a name="how-to-programmatically-create-word-tables"></a>Procedura: Creare tabelle di Word a livello di codice
   La raccolta <xref:Microsoft.Office.Interop.Word.Tables> è un membro delle classi <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection> e <xref:Microsoft.Office.Interop.Word.Range>, pertanto è possibile creare una tabella in ognuno di questi contenuti. Usare il metodo <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> della raccolta <xref:Microsoft.Office.Interop.Word.Tables> per aggiungere una tabella nell'intervallo specificato.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -35,8 +35,8 @@ ms.locfileid: "99963965"
 
    Per usare l'esempio di codice seguente, eseguirlo dalla classe `ThisDocument` nel progetto.
 
-   [!code-vb[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#86)]
-   [!code-csharp[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#86)]
+   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet86":::
+   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet86":::
 
   Quando si crea una tabella, viene aggiunta automaticamente alla raccolta <xref:Microsoft.Office.Interop.Word.Tables> dell'elemento host <xref:Microsoft.Office.Tools.Word.Document>. È quindi possibile fare riferimento alla tabella in base al numero dell'elemento usando la proprietà <xref:Microsoft.Office.Interop.Word.Tables.Item%2A>, come illustrato nel codice seguente.
 
@@ -46,8 +46,8 @@ ms.locfileid: "99963965"
 
     Per usare l'esempio di codice seguente, eseguirlo dalla classe `ThisDocument` nel progetto.
 
-    [!code-vb[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#87)]
-    [!code-csharp[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#87)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet87":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet87":::
 
    Ogni oggetto <xref:Microsoft.Office.Interop.Word.Table> dispone anche di una proprietà <xref:Microsoft.Office.Interop.Word.Table.Range%2A> che consente di impostare gli attributi di formattazione.
 
@@ -57,10 +57,10 @@ ms.locfileid: "99963965"
 
      Per usare l'esempio di codice seguente, eseguirlo dalla classe `ThisDocument` nel progetto.
 
-     [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]
-     [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet88":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet88":::
 
-## <a name="create-tables-in-vsto-add-ins"></a>Creare tabelle in componenti aggiuntivi VSTO
+## <a name="create-tables-in-vsto-add-ins"></a>Creare tabelle nei componenti aggiuntivi VSTO
 
 ### <a name="to-add-a-table-to-a-document"></a>Per aggiungere una tabella a un documento
 
@@ -68,8 +68,8 @@ ms.locfileid: "99963965"
 
    L'esempio di codice seguente aggiunge una tabella al documento attivo. Per usare questo esempio, eseguirlo dalla classe `ThisAddIn` nel progetto.
 
-   [!code-vb[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#86)]
-   [!code-csharp[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#86)]
+   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet86":::
+   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet86":::
 
   Quando si crea una tabella, viene aggiunta automaticamente alla raccolta <xref:Microsoft.Office.Interop.Word.Tables> dell'oggetto <xref:Microsoft.Office.Interop.Word.Document>. È quindi possibile fare riferimento alla tabella in base al numero dell'elemento usando la proprietà <xref:Microsoft.Office.Interop.Word.Tables.Item%2A>, come illustrato nel codice seguente.
 
@@ -79,8 +79,8 @@ ms.locfileid: "99963965"
 
     L'esempio di codice seguente usa il documento attivo. Per usare questo esempio, eseguirlo dalla classe `ThisAddIn` nel progetto.
 
-    [!code-vb[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#87)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#87)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet87":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet87":::
 
    Ogni oggetto <xref:Microsoft.Office.Interop.Word.Table> dispone anche di una proprietà <xref:Microsoft.Office.Interop.Word.Table.Range%2A> che consente di impostare gli attributi di formattazione.
 
@@ -90,11 +90,11 @@ ms.locfileid: "99963965"
 
      L'esempio di codice seguente usa il documento attivo. Per usare questo esempio, eseguirlo dalla classe `ThisAddIn` nel progetto.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#88)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet88":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet88":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: aggiungere testo e formattazione alle celle delle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Procedura: aggiungere righe e colonne alle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [Procedura: popolare tabelle di Word con proprietà dei documenti a livello di codice](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [Procedura: Aggiungere testo e formattazione alle celle nelle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Procedura: Aggiungere righe e colonne alle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Procedura: Popolare a livello di codice le tabelle di Word con le proprietà del documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

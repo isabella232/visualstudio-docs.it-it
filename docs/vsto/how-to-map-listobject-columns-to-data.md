@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: eseguire il mapping delle colonne ListObject ai dati'
-description: Informazioni su come è possibile eseguire il mapping delle colonne che si desidera visualizzare nell'oggetto ListObject quando si chiama il metodo sedatar.
+title: 'Procedura: Eseguire il mapping di colonne ListObject ai dati'
+description: Informazioni su come eseguire il mapping delle colonne da visualizzare in ListObject quando si chiama il metodo SetDataBinding.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ec82809a694e735fed553a1c79ba36687de0fbb1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68cb12503d0f8ad59de92f965c0ed51fbc0d7f40
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900908"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827461"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Procedura: eseguire il mapping delle colonne ListObject ai dati
+# <a name="how-to-map-listobject-columns-to-data"></a>Procedura: Eseguire il mapping di colonne ListObject ai dati
   Quando si associa un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> a un oggetto <xref:System.Data.DataTable>, è possibile che non si voglia visualizzare tutte le colonne in un elenco o che alcune colonne non siano associate a dati. È possibile mappare le colonne da visualizzare nel <xref:Microsoft.Office.Tools.Excel.ListObject> quando si chiama il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> .
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -33,36 +33,36 @@ ms.locfileid: "99900908"
 
 1. Creare l'oggetto <xref:System.Data.DataTable> a livello di classe.
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs" id="Snippet16":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb" id="Snippet16":::
 
-2. Aggiungere colonne e dati di esempio nel `Startup` gestore eventi della `Sheet1` classe (in un progetto a livello di documento) o `ThisAddIn` in una classe (in un progetto di componente aggiuntivo VSTO).
+2. Aggiungere colonne e dati di esempio nel gestore eventi della classe (in un progetto a livello di documento) o della classe (in un progetto di componente aggiuntivo `Startup` `Sheet1` `ThisAddIn` VSTO).
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs" id="Snippet17":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb" id="Snippet17":::
 
-3. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> e passare i nomi delle colonne nell'ordine in cui dovrebbero essere visualizzate. L'oggetto elenco verrà associato all'oggetto appena creato <xref:System.Data.DataTable> , ma l'ordine delle colonne nell'oggetto elenco sarà diverso dall'ordine in cui compaiono <xref:System.Data.DataTable> .
+3. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> e passare i nomi delle colonne nell'ordine in cui dovrebbero essere visualizzate. L'oggetto elenco verrà associato all'oggetto appena creato, ma l'ordine delle colonne nell'oggetto elenco sarà diverso da quello <xref:System.Data.DataTable> visualizzato in <xref:System.Data.DataTable> .
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs" id="Snippet18":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb" id="Snippet18":::
 
-## <a name="specify-unmapped-columns"></a>Specificare le colonne senza mapping
+## <a name="specify-unmapped-columns"></a>Specificare colonne non mappate
  Quando si mappano le colonne a un oggetto <xref:System.Data.DataTable>, si può anche specificare che alcune colonne non devono essere associate a dati passando una stringa vuota. Viene quindi aggiunta una nuova colonna non associata a dati al controllo <xref:Microsoft.Office.Tools.Excel.ListObject> .
 
 ### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>Per specificare una colonna non mappata durante il mapping delle colonne ListObject
 
 1. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> e passare i nomi delle colonne nell'ordine in cui dovrebbero essere visualizzate. Usare una stringa vuota per indicare dove viene aggiunta una colonna non mappata, in questo caso tra la colonna del titolo e la colonna del cognome.
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs" id="Snippet19":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb" id="Snippet19":::
 
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio di codice presuppone che nel foglio di lavoro in cui appare il codice sia già presente un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> denominato `list1` .
 
 ## <a name="see-also"></a>Vedi anche
-- [Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Estendere documenti di Word e cartelle di lavoro di Excel nei componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Procedura: riempire controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md)
-- [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
-- [ListObject (controllo)](../vsto/listobject-control.md)
+- [Procedura: Compilare controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [Automatizzare Excel tramite oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
+- [Controllo ListObject](../vsto/listobject-control.md)
