@@ -1,6 +1,6 @@
 ---
 title: Controlli del contenuto
-description: Informazioni sui controlli contenuto e sul modo in cui i controlli contenuto consentono di progettare documenti e modelli.
+description: Informazioni sui controlli contenuto e su come i controlli contenuto consentono di progettare documenti e modelli.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -40,25 +40,25 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0d55daba4dee07454a31fcb6fc5fa210e8bcc34
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947997"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825056"
 ---
 # <a name="content-controls"></a>Controlli del contenuto
   I controlli contenuto permettono di progettare documenti e modelli che hanno le caratteristiche seguenti:
 
 - Un'interfaccia utente che include input controllato, come un form.
 
-- Restrizioni che impediscono agli utenti di modificare sezioni protette del documento o del modello. Per altre informazioni, vedere [proteggere parti di documenti usando i controlli contenuto](#Protection).
+- Restrizioni che impediscono agli utenti di modificare sezioni protette del documento o del modello. Per altre informazioni, vedere [Proteggere parti di documenti usando i controlli contenuto.](#Protection)
 
-- Data binding a un'origine dati. Per altre informazioni, vedere [associare dati a controlli contenuto](#DataBinding).
+- Data binding a un'origine dati. Per altre informazioni, vedere [Associare dati ai controlli contenuto.](#DataBinding)
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-  ![collegamento al video](../vsto/media/playvideo.gif "Collegamento a video") Per una dimostrazione video correlata, vedere [associare dati ai controlli contenuto di Word 2007 usando strumenti di Visual Studio per Office System (3,0)](/previous-versions/office/developer/office-2007/bb967663(v=office.12)).
+  ![collegamento al video](../vsto/media/playvideo.gif "Collegamento a video") Per una dimostrazione video correlata, vedere Associare dati ai controlli contenuto di [Word 2007 usando Strumenti di Visual Studio per Office System (3.0).](/previous-versions/office/developer/office-2007/bb967663(v=office.12))
 
 ## <a name="overview-of-content-controls"></a>Panoramica dei controlli contenuto
  I controlli contenuto forniscono un'interfaccia utente ottimizzata sia per l'input utente sia per la stampa. Quando si aggiunge un controllo contenuto a un documento, il controllo è identificato da un bordo, un titolo e testo temporaneo che può contenere istruzioni per l'utente. Il bordo e il titolo del controllo non vengono visualizzati nelle versioni stampate del documento.
@@ -71,21 +71,21 @@ ms.locfileid: "99947997"
 
 - Associare parti di un documento o di un modello a dati. È possibile associare controlli contenuto a campi di database, oggetti gestiti in [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementi XML archiviati nel documento e altre origini dati.
 
-  Nei progetti a livello di documento è possibile aggiungere controlli contenuto al documento in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).
+  Nei progetti a livello di documento è possibile aggiungere controlli contenuto al documento in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli contenuto ai documenti di Word.](../vsto/how-to-add-content-controls-to-word-documents.md)
 
 > [!NOTE]
-> È possibile utilizzare i controlli contenuto solo nei documenti salvati nel formato Open XML. Non è possibile usare i controlli contenuto nei documenti salvati nel formato documento di Word 97-2003 (*doc*).
+> È possibile usare i controlli contenuto solo nei documenti salvati nel formato Open XML. Non è possibile usare i controlli contenuto nei documenti salvati nel formato documento di Word 97-2003 *(doc).*
 
 ## <a name="types-of-content-controls"></a>Tipi di controlli contenuto
- Sono disponibili nove diversi tipi di controlli contenuto che è possibile aggiungere ai documenti. Per la maggior parte dei controlli contenuto è presente un tipo corrispondente nello spazio dei nomi <xref:Microsoft.Office.Tools.Word>. È anche possibile aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> generico, che può rappresentare uno qualsiasi dei controlli contenuto disponibili. Per una procedura dettagliata che illustra come usare ognuno dei controlli contenuto disponibili, vedere [procedura dettagliata: creare un modello usando i controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
+ Sono disponibili nove diversi tipi di controlli contenuto che è possibile aggiungere ai documenti. Per la maggior parte dei controlli contenuto è presente un tipo corrispondente nello spazio dei nomi <xref:Microsoft.Office.Tools.Word>. È anche possibile aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> generico, che può rappresentare uno qualsiasi dei controlli contenuto disponibili. Per una procedura dettagliata che illustra come usare ognuno dei controlli contenuto disponibili, vedere Procedura dettagliata: Creare un modello [usando i controlli contenuto.](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
 
 ### <a name="build-block-gallery"></a>Raccolta blocchi di compilazione
- Una raccolta di blocchi predefiniti consente agli utenti di effettuare una selezione da un elenco di *blocchi predefiniti del documento* da inserire in un documento. Un blocco predefinito del documento è una parte di contenuto creata per essere usata più volte, come un frontespizio comune, una tabella formattata o un'intestazione. Per altre informazioni, vedere il tipo <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Per ulteriori informazioni sui blocchi predefiniti, vedere Novità [per gli sviluppatori in Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).
+ Una raccolta di blocchi predefiniti consente agli utenti di selezionare da un elenco di blocchi *predefiniti del documento* da inserire in un documento. Un blocco predefinito del documento è una parte di contenuto creata per essere usata più volte, come un frontespizio comune, una tabella formattata o un'intestazione. Per altre informazioni, vedere il tipo <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Per altre informazioni sui blocchi predefiniti, vedere [Novità per gli sviluppatori in Word 2007.](/previous-versions/office/developer/office-2007/bb266218(v=office.12))
 
 ### <a name="check-box"></a>Casella di controllo
  Una casella di controllo fornisce un'interfaccia utente che rappresenta uno stato binario: selezionato o deselezionato.
 
- Diversamente da altri tipi di controlli contenuto, il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non include un tipo specifico che rappresenta un controllo contenuto casella di controllo. In altre parole, non esiste alcun tipo `CheckBoxContentControl`. Tuttavia, è comunque possibile creare un controllo contenuto casella di controllo aggiungendo un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> generico a un documento a livello di codice. Per altre informazioni, vedere [controlli contenuto casella di controllo in progetti di Word](#checkbox).
+ Diversamente da altri tipi di controlli contenuto, il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non include un tipo specifico che rappresenta un controllo contenuto casella di controllo. In altre parole, non esiste alcun tipo `CheckBoxContentControl`. Tuttavia, è comunque possibile creare un controllo contenuto casella di controllo aggiungendo un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> generico a un documento a livello di codice. Per altre informazioni, vedere [Controlli contenuto casella di controllo nei progetti Word.](#checkbox)
 
 ### <a name="combo-box"></a>Casella combinata
  Una casella combinata visualizza un elenco di voci che possono essere selezionate dall'utente. Diversamente da un elenco a discesa, la casella combinata permette agli utenti di aggiungere voci proprie. Per altre informazioni, vedere il tipo <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.
@@ -102,7 +102,7 @@ ms.locfileid: "99947997"
 ### <a name="picture"></a>Immagine
  Un controllo immagine visualizza un'immagine. È possibile specificare l'immagine in fase di progettazione o in fase di esecuzione oppure gli utenti possono fare clic su questo controllo per selezionare un'immagine da inserire nel documento. Per altre informazioni, vedere il tipo <xref:Microsoft.Office.Tools.Word.PictureContentControl>.
 
-### <a name="rich-text"></a>Testo RTF
+### <a name="rich-text"></a>Rtf
  Un controllo in formato RTF contiene testo o altri elementi, come tabelle, immagini o altri controlli contenuto. Per altre informazioni, vedere il tipo <xref:Microsoft.Office.Tools.Word.RichTextContentControl>.
 
 ### <a name="plain-text"></a>Testo normale
@@ -111,17 +111,17 @@ ms.locfileid: "99947997"
 ### <a name="generic-content-control"></a>Controllo contenuto generico
  Un controllo contenuto generico è un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> che può rappresentare uno qualsiasi dei tipi di controllo contenuto disponibili. È possibile modificare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> perché si comporti come un tipo diverso di controllo contenuto usando la proprietà <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A>. Ad esempio, se si crea un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> che rappresenta un controllo testo normale, è possibile modificarlo in fase di esecuzione perché si comporti come una casella combinata.
 
- È possibile creare oggetti <xref:Microsoft.Office.Tools.Word.ContentControl> solo in fase di esecuzione e non in fase di progettazione. Per altre informazioni, vedere [procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).
+ È possibile creare oggetti <xref:Microsoft.Office.Tools.Word.ContentControl> solo in fase di esecuzione e non in fase di progettazione. Per altre informazioni, vedere [Procedura: Aggiungere controlli contenuto ai documenti di Word.](../vsto/how-to-add-content-controls-to-word-documents.md)
 
 ## <a name="common-features-of-content-controls"></a>Funzionalità comuni dei controlli contenuto
  La maggior parte dei controlli contenuto condivide un set di membri che è possibile usare per eseguire attività comuni. La tabella seguente descrive alcune delle attività che è possibile eseguire usando questi membri.
 
 |Per questa attività:|Eseguire questa operazione:|
 |--------------------|--------------|
-|Ottenere o impostare il testo visualizzato nel controllo.|Usare la proprietà **Text** . **Nota:**  I <xref:Microsoft.Office.Tools.Word.PictureContentControl> tipi e non <xref:Microsoft.Office.Tools.Word.ContentControl> dispongono di questa proprietà.|
-|Ottenere o impostare il testo temporaneo visualizzato nel controllo fino a quando un utente non modifica il controllo, nel controllo non vengono immessi dati di un'origine dati o il contenuto del controllo non viene eliminato.|Usare la proprietà **PlaceholderText** . **Nota:**  Il <xref:Microsoft.Office.Tools.Word.PictureContentControl> tipo non dispone di questa proprietà.|
-|Ottenere o impostare il titolo visualizzato nel bordo del controllo contenuto quando l'utente fa clic sul bordo.|Usare la proprietà **title** .|
-|Rimuovere automaticamente il controllo dal documento dopo che l'utente modifica il controllo. Il testo all'interno del controllo resta nel documento.|Utilizzare la proprietà **temporanea** .|
+|Ottenere o impostare il testo visualizzato nel controllo.|Usare la **proprietà Text.** **Nota:**  I <xref:Microsoft.Office.Tools.Word.PictureContentControl> tipi e non hanno questa <xref:Microsoft.Office.Tools.Word.ContentControl> proprietà.|
+|Ottenere o impostare il testo temporaneo visualizzato nel controllo fino a quando un utente non modifica il controllo, nel controllo non vengono immessi dati di un'origine dati o il contenuto del controllo non viene eliminato.|Usare la **proprietà PlaceholderText.** **Nota:**  Il <xref:Microsoft.Office.Tools.Word.PictureContentControl> tipo non dispone di questa proprietà.|
+|Ottenere o impostare il titolo visualizzato nel bordo del controllo contenuto quando l'utente fa clic sul bordo.|Usare la **proprietà Title.**|
+|Rimuovere automaticamente il controllo dal documento dopo che l'utente modifica il controllo. Il testo all'interno del controllo resta nel documento.|Usare la **proprietà Temporary.**|
 |Eseguire codice quando l'utente fa clic nel controllo contenuto o quando il cursore viene spostato a livello di codice nel controllo contenuto.|Gestire l'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> del controllo.|
 |Eseguire codice quando l'utente fa clic all'esterno del controllo contenuto o quando il cursore viene spostato all'esterno del controllo contenuto a livello di codice.|Gestire l'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting> del controllo.|
 |Eseguire codice dopo l'aggiunta del controllo contenuto al documento come risultato di un'operazione di annullamento o ripetizione.|Gestire l'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> del controllo.|
@@ -132,34 +132,34 @@ ms.locfileid: "99947997"
 
  Se l'area che si vuole proteggere si trova all'interno di un controllo contenuto, è possibile usare le proprietà del controllo contenuto per impedire agli utenti di modificare o eliminare il controllo:
 
-- La proprietà **LockContents** impedisce agli utenti di modificare il contenuto.
+- La **proprietà LockContents** impedisce agli utenti di modificare il contenuto.
 
-- La proprietà **LockContentControl** impedisce agli utenti di eliminare il controllo.
+- La **proprietà LockContentControl** impedisce agli utenti di eliminare il controllo.
 
   Se l'area che si vuole proteggere non si trova all'interno di un controllo contenuto o se si vuole proteggere un'area che include controlli contenuto e altri tipi di contenuto, è possibile inserire l'intera area in un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Diversamente da altri controlli contenuto, un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> non fornisce alcuna interfaccia utente visibile all'utente. Il suo unico scopo è definire un'area che non può essere modificata dagli utenti.
 
 > [!NOTE]
-> Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. Per impedire agli utenti di modificare il contenuto, è necessario utilizzare la proprietà **LockContents** di ogni controllo incorporato.
+> Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. È necessario usare la **proprietà LockContents** di ogni controllo incorporato per impedire agli utenti di modificarne il contenuto.
 
- Per altre informazioni su come usare i controlli contenuto per proteggere parti di documenti, vedere [procedura: proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
+ Per altre informazioni su come usare i controlli contenuto per proteggere parti di documenti, vedere [Procedura: Proteggere](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)parti di documenti usando i controlli contenuto .
 
-## <a name="bind-data-to-content-controls"></a><a name="DataBinding"></a> Associare i dati ai controlli contenuto
+## <a name="bind-data-to-content-controls"></a><a name="DataBinding"></a> Associare dati ai controlli contenuto
  È possibile visualizzare dati nei documenti mediante l'associazione di un controllo contenuto a un'origine dati. Quando l'origine dati viene aggiornata, il controllo contenuto riflette le modifiche. È anche possibile salvare le modifiche di nuovo nell'origine dati.
 
  I controlli contenuto offrono le opzioni di data binding seguenti:
 
 - È possibile associare controlli contenuto a campi di database o oggetti gestiti usando lo stesso modello di data binding di Windows Form.
 
-- È possibile associare controlli contenuto a elementi in parti di XML, denominate anche *parti XML personalizzate*, incorporate nel documento.
+- È possibile associare i controlli contenuto agli elementi in parti di CODICE XML (denominate anche parti *XML* personalizzate) incorporati nel documento.
 
-  Per una panoramica dell'associazione dei controlli host nelle soluzioni Office ai dati, vedere [associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+  Per una panoramica dell'associazione dei controlli host nelle soluzioni Office ai dati, vedere [Associare](../vsto/binding-data-to-controls-in-office-solutions.md)dati ai controlli nelle soluzioni Office .
 
-### <a name="use-the-windows-forms-data-binding-model"></a>Usare il modello di data binding Windows Form
- La maggior parte dei controlli contenuto supporta il modello di data binding semplice usato da Windows Form. Il data binding semplice significa che un controllo è associato a un singolo elemento dati, ad esempio un valore in una colonna di una tabella dati. Per ulteriori informazioni, vedere [Data Binding e Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms).
+### <a name="use-the-windows-forms-data-binding-model"></a>Usare il modello Windows Forms data binding
+ La maggior parte dei controlli contenuto supporta il modello di data binding semplice usato da Windows Form. Il data binding semplice significa che un controllo è associato a un singolo elemento dati, ad esempio un valore in una colonna di una tabella dati. Per altre informazioni, vedere [Data binding e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
- Nei progetti a livello di documento è possibile associare i dati ai controlli contenuto utilizzando la finestra **origini dati** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Per altre informazioni su come aggiungere i controlli contenuto associati a dati ai documenti, vedere [procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md) e [procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ Nei progetti a livello di documento è possibile associare i dati ai controlli contenuto usando la **finestra Origini** dati in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Per altre informazioni su come aggiungere controlli contenuto associati a dati ai documenti, vedere [Procedura:](../vsto/how-to-populate-documents-with-data-from-a-database.md) Popolare documenti con dati da un database e [Procedura: Popolare](../vsto/how-to-populate-documents-with-data-from-objects.md)documenti con dati da oggetti .
 
- Nella tabella seguente sono elencati i controlli contenuto che è possibile associare a ogni tipo di dati nella finestra **origini dati** .
+ Nella tabella seguente sono elencati i controlli contenuto che è possibile associare a ogni tipo di dati nella **finestra Origini** dati .
 
 |Tipo di dati|Controllo contenuto predefinito|Altri controlli contenuto che è possibile associare a questo tipo di dati|
 |---------------|-----------------------------|----------------------------------------------------------------|
@@ -167,17 +167,17 @@ ms.locfileid: "99947997"
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.Drawing.Image><br /><br /> Matrice <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|nessuno|
 
- Nei progetti a livello di documento e di componente aggiuntivo VSTO è possibile associare a livello di codice un controllo contenuto a un'origine dati usando il metodo <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> della proprietà <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> del controllo. In tal caso, passare il **testo** della stringa al parametro *PropertyName* del <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metodo. La proprietà **Text** è la proprietà Data binding predefinita dei controlli contenuto.
+ Nei progetti a livello di documento e di componente aggiuntivo VSTO è possibile associare a livello di codice un controllo contenuto a un'origine dati usando il metodo <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> della proprietà <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> del controllo. In questo caso, passare la stringa **Text** al *parametro propertyName* del <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metodo. La **proprietà Text** è la proprietà data binding predefinita dei controlli contenuto.
 
- I controlli contenuto supportano anche il data binding bidirezionale, in cui le modifiche nel controllo vengono aggiornate nell'origine dati. Per altre informazioni, vedere [procedura: aggiornare un'origine dati con dati da un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+ I controlli contenuto supportano anche il data binding bidirezionale, in cui le modifiche nel controllo vengono aggiornate nell'origine dati. Per altre informazioni, vedere [Procedura: Aggiornare un'origine dati con i dati di un controllo host.](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 
 > [!NOTE]
 > I controlli contenuto non supportano il data binding complesso. Se si associa un oggetto <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> o <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a un'origine dati usando il modello di dati di Windows Form, gli utenti visualizzeranno un solo valore quando fanno clic sul controllo. Per associare questi controlli a un set di valori di dati da cui gli utenti possono scegliere, è possibile associare i controlli a elementi in una parte XML personalizzata.
 
 ### <a name="bind-content-controls-to-custom-xml-parts"></a>Associare controlli contenuto a parti XML personalizzate
- È possibile associare alcuni controlli contenuto a elementi in parti XML personalizzate incorporate nel documento. Per ulteriori informazioni sulle parti XML personalizzate, vedere [Cenni preliminari sulle parti XML personalizzate](../vsto/custom-xml-parts-overview.md).
+ È possibile associare alcuni controlli contenuto a elementi in parti XML personalizzate incorporate nel documento. Per altre informazioni sulle parti XML personalizzate, vedere [Cenni preliminari sulle parti XML personalizzate](../vsto/custom-xml-parts-overview.md).
 
- Per associare un controllo contenuto a un elemento in una parte XML personalizzata, utilizzare la proprietà **XmlMapping** del controllo. L'esempio di codice seguente mostra come associare un oggetto <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> all'elemento `Price` all'interno del nodo `Product` in una parte XML personalizzata che è già stata aggiunta al documento.
+ Per associare un controllo contenuto a un elemento in una parte XML personalizzata, usare la **proprietà XMLMapping** del controllo. L'esempio di codice seguente mostra come associare un oggetto <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> all'elemento `Price` all'interno del nodo `Product` in una parte XML personalizzata che è già stata aggiunta al documento.
 
 ```vb
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
@@ -187,7 +187,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);
 ```
 
- Per una procedura dettagliata in cui viene illustrato come associare controlli contenuto a parti XML personalizzate in modo più dettagliato, vedere [procedura dettagliata: associare controlli contenuto a parti XML personalizzate](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+ Per una procedura dettagliata che illustra come associare controlli contenuto a parti XML personalizzate in modo più dettagliato, vedere Procedura dettagliata: Associare controlli contenuto [a parti XML personalizzate.](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
 
  Quando si associa un controllo contenuto a una parte XML personalizzata, viene automaticamente attivato il data binding bidirezionale. Se un utente modifica testo nel controllo, gli elementi XML corrispondenti vengono automaticamente aggiornati. Analogamente, se si modificano i valori degli elementi nelle parti XML personalizzate, i controlli contenuto associati agli elementi XML visualizzeranno i nuovi dati.
 
@@ -216,30 +216,30 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ## <a name="limitations-of-content-controls"></a>Limitazioni dei controlli contenuto
  Quando si usano controlli contenuto nei progetti di Office, tenere presenti le limitazioni seguenti.
 
-### <a name="behavior-differences-between-design-time-and-runtime"></a>Differenze di comportamento tra fase di progettazione e Runtime
+### <a name="behavior-differences-between-design-time-and-runtime"></a>Differenze di comportamento tra fase di progettazione e runtime
  Molte delle limitazioni imposte da Microsoft Office Word ai controlli contenuto in fase di esecuzione non si applicano alla fase di progettazione. Quando si progetta l'interfaccia utente di una soluzione a livello di documento in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], assicurarsi di modificare i controlli contenuto solo in modi supportati in fase di esecuzione.
 
  Se si modifica un controllo contenuto in fase di progettazione in un modo non supportato dal controllo in fase di esecuzione, la finestra di progettazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non segnala le modifiche non supportate. Tuttavia, quando il progetto viene sottoposto a debug o eseguito oppure viene salvato e riaperto, Word visualizza un messaggio di errore e richiede l'autorizzazione per ripristinare il documento. Quando si ripristina il documento, Word rimuove tutta la formattazione e tutto il contenuto non supportati dal controllo.
 
  Ad esempio, Word non impedisce di aggiungere una tabella a un oggetto <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> in fase di progettazione. Tuttavia, poiché gli oggetti <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> non possono contenere tabelle in fase di esecuzione, Word visualizzerà un messaggio di errore all'apertura del documento.
 
- Inoltre, molte delle proprietà che definiscono il comportamento dei controlli contenuto non hanno effetto in fase di progettazione. Se, ad esempio, si imposta la proprietà **LockContents** di un controllo contenuto su **true** in fase di progettazione, è comunque possibile modificare il testo nel controllo nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] finestra di progettazione. Questa proprietà impedisce all'utente solo di modificare il controllo in fase di esecuzione.
+ Inoltre, molte delle proprietà che definiscono il comportamento dei controlli contenuto non hanno effetto in fase di progettazione. Ad esempio, se si imposta la proprietà **LockContents** di un controllo contenuto su **True** in fase di progettazione, è comunque possibile modificare il testo nel controllo nella finestra di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progettazione. Questa proprietà impedisce all'utente solo di modificare il controllo in fase di esecuzione.
 
 ### <a name="event-limitations"></a>Limitazioni degli eventi
  I controlli contenuto non forniscono la generazione di un evento quando l'utente modifica il testo o altri elementi nel controllo. Ad esempio, non viene generato alcun evento quando un utente seleziona un elemento diverso in un oggetto <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> o <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.
 
- Per determinare i momenti in cui un utente modifica il contenuto di un controllo contenuto, è possibile associare il controllo a una parte XML personalizzata e quindi gestire l'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>. Questo evento viene generato quando l'utente modifica il contenuto di un controllo associato a una parte XML personalizzata. Per una procedura dettagliata in cui viene illustrato come associare un controllo contenuto a una parte XML personalizzata, vedere [procedura dettagliata: associare controlli contenuto a parti XML personalizzate](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+ Per determinare i momenti in cui un utente modifica il contenuto di un controllo contenuto, è possibile associare il controllo a una parte XML personalizzata e quindi gestire l'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>. Questo evento viene generato quando l'utente modifica il contenuto di un controllo associato a una parte XML personalizzata. Per una procedura dettagliata che illustra come associare un controllo contenuto a una parte XML personalizzata, vedere Procedura dettagliata: Associare controlli contenuto a [parti XML personalizzate.](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
 
-### <a name="check-box-content-controls-in-word-projects"></a><a name="checkbox"></a> Controlli contenuto casella di controllo in progetti di Word
- In Word 2010 è stato introdotto un nuovo tipo di controllo contenuto, che rappresenta una casella di controllo. Tuttavia, non [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] fornisce un tipo CheckBoxContentControl corrispondente da usare nei progetti di Office. Per creare un controllo contenuto casella di controllo in un progetto di [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010, usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> per creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> e passare il valore <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> al metodo per specificare un controllo contenuto casella di testo. Nell'esempio di codice seguente viene illustrato come procedere.
+### <a name="check-box-content-controls-in-word-projects"></a><a name="checkbox"></a> Controlli contenuto delle caselle di controllo nei progetti Word
+ In Word 2010 è stato introdotto un nuovo tipo di controllo contenuto, che rappresenta una casella di controllo. Tuttavia, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non fornisce un tipo CheckBoxContentControl corrispondente da usare nei progetti di Office. Per creare un controllo contenuto casella di controllo in un progetto di [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010, usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> per creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> e passare il valore <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> al metodo per specificare un controllo contenuto casella di testo. Nell'esempio di codice seguente viene illustrato come procedere.
 
- [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
- [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb" id="Snippet800":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs" id="Snippet800":::
 
 ## <a name="see-also"></a>Vedi anche
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
-- [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Procedura dettagliata: creare un modello usando i controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
+- [Procedura: Aggiungere controlli contenuto ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Procedura dettagliata: Creare un modello usando i controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
-- [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -1,6 +1,6 @@
 ---
-title: Ottenere i messaggi non letti dalla posta in arrivo a livello di codice
-description: Informazioni su come usare Visual Studio per recuperare a livello di codice i messaggi non letti dalla posta in arrivo in Microsoft Outlook.
+title: Ottenere messaggi non letti dalla posta in arrivo a livello di codice
+description: Informazioni su come usare Visual Studio recuperare a livello di codice i messaggi non letti dalla posta in arrivo in Microsoft Outlook.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,25 +17,25 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 82bd595b76a03ee730995e546fd9c4e827c95a53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5a7c19dbaed9e2f8829845e777130e0f09084046
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953851"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823945"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Procedura: recuperare messaggi non letti dalla posta in arrivo a livello di codice
-  Questo esempio recupera i messaggi di posta elettronica non letti dalla **posta in arrivo** di Outlook e visualizza il numero di elementi.
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Procedura: Recuperare messaggi non letti dalla posta in arrivo a livello di codice
+  In questo esempio vengono recuperati i messaggi di posta elettronica non letti dalla posta in arrivo di **Outlook** e viene visualizzato il numero di elementi.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Esempio
- [!code-vb[Trin_Outlook_RL_UnreadItems#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_UnreadItems/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_UnreadItems#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_UnreadItems/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Vedere anche
-- [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
-- [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Procedura: creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [Procedura: inviare messaggi di posta elettronica a livello di codice](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Procedura: eseguire azioni quando viene ricevuto un messaggio di posta elettronica a livello di codice](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Usare elementi di posta elettronica](../vsto/working-with-mail-items.md)
+- [Introduzione alla programmazione dei componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Procedura: Creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Procedura: Inviare messaggi di posta elettronica a livello di codice](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Procedura: Eseguire azioni a livello di codice quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: aprire cartelle di lavoro a livello di codice'
-description: Informazioni su come usare Visual Studio per aprire una cartella di lavoro di Microsoft Excel a livello di codice o usare una cartella di lavoro esistente.
+title: 'Procedura: Aprire cartelle di lavoro a livello di codice'
+description: Informazioni su come usare le Visual Studio per aprire a livello di codice una cartella di lavoro di Microsoft Excel o usare una cartella di lavoro esistente.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,36 +15,36 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5bca39b5536d5717da994808f23ee541856264ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4dba79b1b0eea03ca3aae23e98fb93e6ef776d80
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888732"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824783"
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>Procedura: aprire cartelle di lavoro a livello di codice
-  <xref:Microsoft.Office.Interop.Excel.Workbooks>Nella raccolta Microsoft Office Excel è possibile utilizzare tutte le cartelle di lavoro aperte e aprire le cartelle di lavoro di.
+# <a name="how-to-programmatically-open-workbooks"></a>Procedura: Aprire cartelle di lavoro a livello di codice
+  La raccolta in Microsoft Office Excel consente di usare tutte le cartelle di lavoro aperte <xref:Microsoft.Office.Interop.Excel.Workbooks> e di aprire le cartelle di lavoro.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="to-open-an-existing-workbook"></a>Per aprire una cartella di lavoro esistente
 
-1. Utilizzare il <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> metodo della <xref:Microsoft.Office.Interop.Excel.Workbooks> raccolta passando il percorso alla cartella di lavoro.
+1. Usare il <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> metodo della raccolta , passando il percorso della cartella di <xref:Microsoft.Office.Interop.Excel.Workbooks> lavoro.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet2":::
 
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio di codice presenta i requisiti seguenti:
 
-- Una cartella di lavoro denominata `YourWorkbook.xls` deve esistere in una directory denominata nell' `Test` unità C.
+- Una cartella di lavoro `YourWorkbook.xls` denominata deve esistere in una directory denominata `Test` nell'unità C.
 
 ## <a name="see-also"></a>Vedi anche
-- [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
-- [Procedura: aprire file di testo come cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
-- [Procedura: creare nuove cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-create-new-workbooks.md)
-- [Procedura: salvare cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-save-workbooks.md)
-- [Procedura: chiudere cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-close-workbooks.md)
-- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Usare le cartelle di lavoro](../vsto/working-with-workbooks.md)
+- [Procedura: Aprire file di testo come cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
+- [Procedura: Creare nuove cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-create-new-workbooks.md)
+- [Procedura: Salvare cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-save-workbooks.md)
+- [Procedura: Chiudere cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-close-workbooks.md)
+- [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
+- [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)
