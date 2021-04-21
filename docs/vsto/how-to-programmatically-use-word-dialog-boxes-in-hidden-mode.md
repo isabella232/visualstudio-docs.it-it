@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: usare le finestre di dialogo di Word in modalità nascosta a livello di codice'
-description: Informazioni su come usare Visual Studio per usare le finestre di dialogo di Microsoft Word in modalità nascosta a livello di codice.
+title: 'Procedura: Usare le finestre di dialogo di Word a livello di codice in modalità nascosta'
+description: Informazioni su come usare le Visual Studio a livello di codice per usare le finestre di dialogo di Microsoft Word in modalità nascosta.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,32 +17,32 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0977e7241920ad23a6248bb2349ddaeb10a5e931
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39a81ccec284541d93d3a5901211d8a46ea6b61a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931240"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826187"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Procedura: usare le finestre di dialogo di Word in modalità nascosta a livello di codice
-  È possibile eseguire operazioni complesse con una chiamata al metodo richiamando le finestre di dialogo predefinite in Microsoft Office parola senza visualizzarle all'utente. A tale scopo, è possibile utilizzare il <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metodo dell' <xref:Microsoft.Office.Interop.Word.Dialog> oggetto senza chiamare il <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> metodo.
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Procedura: Usare le finestre di dialogo di Word a livello di codice in modalità nascosta
+  È possibile eseguire operazioni complesse con una sola chiamata al metodo richiamando le finestre di dialogo incorporate in Microsoft Office Word senza visualizzarle all'utente. È possibile eseguire questa operazione usando il <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metodo <xref:Microsoft.Office.Interop.Word.Dialog> dell'oggetto senza chiamare il metodo <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> .
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="examples"></a>Esempio
- Gli esempi di codice seguenti illustrano come usare la finestra di dialogo **Imposta pagina** in modalità nascosta per impostare più proprietà di impostazione della pagina senza input utente. Negli esempi viene utilizzato un <xref:Microsoft.Office.Interop.Word.Dialog> oggetto per configurare una dimensione di pagina personalizzata. Le impostazioni specifiche per la configurazione della pagina, ad esempio il margine superiore, il margine inferiore e così via, sono disponibili come proprietà ad associazione tardiva dell' <xref:Microsoft.Office.Interop.Word.Dialog> oggetto. Queste proprietà vengono create dinamicamente da Word in fase di esecuzione.
+ Gli esempi di codice seguenti  illustrano come usare la finestra di dialogo Imposta pagina in modalità nascosta per impostare più proprietà di impostazione della pagina senza input dell'utente. Negli esempi viene utilizzato <xref:Microsoft.Office.Interop.Word.Dialog> un oggetto per configurare dimensioni di pagina personalizzate. Le impostazioni specifiche per l'impostazione della pagina, ad esempio il margine superiore, il margine inferiore e così via, sono disponibili come proprietà ad associazione tardiva <xref:Microsoft.Office.Interop.Word.Dialog> dell'oggetto . Queste proprietà vengono create dinamicamente da Word in fase di esecuzione.
 
- Nell'esempio seguente viene illustrato come eseguire questa attività nei progetti Visual Basic in cui **Option Strict** è disattivato e nei progetti Visual C# destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . In questi progetti è possibile usare le funzionalità di associazione tardiva nei compilatori Visual Basic e Visual C#. Per usare questo esempio, eseguirlo dalla `ThisDocument` classe o `ThisAddIn` nel progetto.
+ L'esempio seguente illustra come eseguire questa attività nei progetti Visual Basic in cui **Option Strict** è disattivato e nei progetti Visual C# che hanno come destinazione [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . In questi progetti è possibile usare le funzionalità di associazione tardiva nei compilatori Visual Basic e Visual C#. Per usare questo esempio, eseguirlo dalla `ThisDocument` classe `ThisAddIn` o nel progetto.
 
- [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
- [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet123":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet123":::
 
- Nell'esempio seguente viene illustrato come eseguire questa attività nei progetti Visual Basic in cui **Option Strict** è on. In questi progetti, è necessario utilizzare la reflection per accedere alle proprietà ad associazione tardiva. Per usare questo esempio, eseguirlo dalla `ThisDocument` classe o `ThisAddIn` nel progetto.
+ L'esempio seguente illustra come eseguire questa attività nei progetti Visual Basic in **cui Option Strict** è attivata. In questi progetti è necessario usare la reflection per accedere alle proprietà ad associazione tardiva. Per usare questo esempio, eseguirlo dalla `ThisDocument` classe `ThisAddIn` o nel progetto.
 
- [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet104":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: usare finestre di dialogo predefinite in Word a livello di codice](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
+- [Procedura: Usare finestre di dialogo incorporate in Word a livello di codice](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
 - [Associazione tardiva nelle soluzioni Office](../vsto/late-binding-in-office-solutions.md)
 - [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)

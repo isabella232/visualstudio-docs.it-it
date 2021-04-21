@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: proteggere i fogli di fogli di un foglio di codice'
-description: Informazioni su come utilizzare la funzionalità di protezione di Microsoft Excel per impedire a utenti e codice di modificare gli oggetti in un foglio di lavoro.
+title: 'Procedura: Proteggere i fogli di lavoro a livello di codice'
+description: Informazioni su come usare la funzionalità di protezione in Microsoft Excel per impedire a utenti e codice di modificare oggetti in un foglio di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 92ded3d8320f58bdd200f3892dc40c7a915c502e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31c0184cbf8f29db6d33d135cf295f8277b55f2e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963822"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827097"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Procedura: proteggere i fogli di fogli di un foglio di codice
+# <a name="how-to-programmatically-protect-worksheets"></a>Procedura: Proteggere i fogli di lavoro a livello di codice
   La funzionalità di protezione di Microsoft Office Excel consente di impedire la modifica degli oggetti di un foglio di lavoro da parte degli utenti o mediante codice. Per impostazione predefinita, dopo l'attivazione della protezione tutte le celle risultano bloccate.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "99963822"
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>Per proteggere un foglio di lavoro nella finestra di progettazione
 
-1. Nel gruppo **modifiche** della scheda **Revisione** fare clic su **Proteggi foglio**.
+1. Nel gruppo **Modifiche** della scheda **Verifica** fare clic su **Proteggi foglio**.
 
-    Verrà visualizzata la finestra di dialogo **Proteggi foglio** . È possibile impostare una password e specificare le azioni che gli utenti possono eseguire nel foglio di lavoro, ad esempio formattare le celle o inserire righe.
+    Verrà **visualizzata la finestra di** dialogo Proteggi foglio . È possibile impostare una password e specificare le azioni che gli utenti possono eseguire nel foglio di lavoro, ad esempio formattare le celle o inserire righe.
 
    È anche possibile consentire agli utenti di modificare intervalli specifici nei fogli di lavoro protetti.
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>Per consentire la modifica in intervalli specifici
 
-1. Nel gruppo **modifiche** della scheda **Revisione** fare clic su **Consenti agli utenti di modificare gli intervalli**.
+1. Nel gruppo **Modifiche** della scheda **Verifica** fare clic su **Consenti agli utenti di modificare gli intervalli**.
 
-     Viene visualizzata la finestra **di dialogo Consenti agli utenti di modificare gli intervalli** .  È possibile specificare gli intervalli che possono essere sbloccati mediante l'inserimento di una password e gli utenti che possono modificarli senza immettere alcuna password.
+     Verrà **visualizzata la finestra di dialogo Consenti** agli utenti di modificare gli intervalli .  È possibile specificare gli intervalli che possono essere sbloccati mediante l'inserimento di una password e gli utenti che possono modificarli senza immettere alcuna password.
 
 ## <a name="use-code-at-run-time"></a>Usare il codice in fase di esecuzione
  Il codice seguente imposta la password tramite la variabile getPasswordFromUser, che contiene la password ottenuta dall'utente, e consente solo l'ordinamento.
@@ -57,22 +57,22 @@ ms.locfileid: "99963822"
 
 1. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> del foglio di lavoro. Questo esempio presuppone l'utilizzo di un foglio di lavoro denominato `Sheet1`.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
-     [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet27":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet27":::
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Per proteggere un foglio di lavoro mediante codice in un componente aggiuntivo VSTO
 
 1. Chiamare il metodo <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> del foglio di lavoro attivo.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet17":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet17":::
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: rimuovere la protezione dai fogli di dati a livello di codice](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
-- [Procedura: proteggere cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-protect-workbooks.md)
-- [Procedura: nascondere i fogli di programmazione a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
-- [Elemento host Worksheet](../vsto/worksheet-host-item.md)
-- [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Procedura: Rimuovere la protezione dai fogli di lavoro a livello di codice](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [Procedura: Proteggere le cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-protect-workbooks.md)
+- [Procedura: Nascondere fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)
+- [Elemento host Foglio di lavoro](../vsto/worksheet-host-item.md)
+- [Accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

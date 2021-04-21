@@ -1,5 +1,5 @@
 ---
-title: "Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice"
+title: "Procedura: Eseguire ricerche a livello di codice all'interno di una cartella specifica"
 description: Informazioni su come usare Visual Studio per eseguire ricerche a livello di codice all'interno di una cartella specifica di Microsoft Outlook.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
@@ -15,22 +15,22 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9c7861698e678ca6d8332e3940c3ae49ff423f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b25880420e23b82f6f63ab28ef5f1f93429bdd8c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877876"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824757"
 ---
-# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice
-  Questo esempio di codice usa `Find` i `FindNext` metodi e per cercare il testo nel campo oggetto dei messaggi di posta elettronica presenti nella **posta in arrivo**. Questo metodo utilizza un filtro di stringa per verificare la lettera T come lettera iniziale del `Subject` testo.
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Procedura: Eseguire ricerche a livello di codice all'interno di una cartella specifica
+  In questo esempio di codice vengono utilizzati i metodi e per cercare testo nel campo dell'oggetto dei messaggi di posta elettronica `Find` presenti nella cartella Posta in `FindNext` **arrivo**. Questo metodo usa un filtro di stringa per verificare la presenza della lettera T come lettera iniziale del `Subject` testo.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Esempio
- [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare le cartelle](../vsto/working-with-folders.md)
 - [Panoramica del modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
-- [Procedura: recuperare una cartella per nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Procedura: Recuperare una cartella in base al nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

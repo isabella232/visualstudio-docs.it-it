@@ -1,6 +1,6 @@
 ---
-title: 'Procedura dettagliata: raccolta di dati tramite Windows Form'
-description: Aprire un Windows Form da una personalizzazione a livello di documento per Microsoft Excel, raccogliere informazioni dall'utente e scrivere tali informazioni in una cella del foglio di lavoro.
+title: 'Procedura dettagliata: Raccogliere dati tramite Un Windows Form'
+description: Aprire un Windows Form da una personalizzazione a livello di documento per Microsoft Excel, raccogliere informazioni dall'utente e scrivere le informazioni in una cella del foglio di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e8c88bbf529da8e07976c012d40ca59e5f1e5626
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62a49919522c5d4a88b6f4b6876b567c8d275dec
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920370"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826421"
 ---
-# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Procedura dettagliata: raccolta di dati tramite Windows Form
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Procedura dettagliata: Raccogliere dati tramite Un Windows Form
   Questa procedura dettagliata spiega come aprire un Windows Form da una personalizzazione a livello di documento per Microsoft Office Excel, raccogliere le informazioni dall'utente e scriverle in una cella del foglio di lavoro.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -39,18 +39,18 @@ ms.locfileid: "99920370"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE Visual Studio .](../ide/personalizing-the-visual-studio-ide.md)
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
  Il primo passaggio consiste nella creazione di un progetto Cartella di lavoro di Excel.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto relativo a una cartella di lavoro di Excel denominato **WinFormInput** e selezionare **Crea un nuovo documento** nella procedura guidata. Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto relativo a una cartella di lavoro di Excel denominato **WinFormInput** e selezionare **Crea un nuovo documento** nella procedura guidata. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      La nuova cartella di lavoro di Excel viene aperta nella finestra di progettazione di Visual Studio e il progetto **WinFormInput** viene aggiunto in **Esplora soluzioni**.
 
-## <a name="add-a-namedrange-control-to-the-worksheet"></a>Aggiungere un controllo NamedRange al foglio di controllo
+## <a name="add-a-namedrange-control-to-the-worksheet"></a>Aggiungere un controllo NamedRange al foglio di lavoro
 
 ### <a name="to-add-a-named-range-to-sheet1"></a>Per aggiungere un intervallo denominato a Sheet1
 
@@ -83,7 +83,7 @@ ms.locfileid: "99920370"
 
    Aggiungere quindi codice a `ThisWorkbook.vb` o `ThisWorkbook.cs` per raccogliere le informazioni relative all'utente.
 
-## <a name="display-the-windows-form-and-collecting-information"></a>Visualizzare il Windows Form e raccogliere informazioni
+## <a name="display-the-windows-form-and-collecting-information"></a>Visualizzare Windows Form e raccogliere informazioni
  Creare un'istanza del controllo Windows Form `GetInputString` e visualizzarla, quindi scrivere le informazioni relative all'utente in una cella del foglio di lavoro.
 
 #### <a name="to-display-the-form-and-collect-information"></a>Per visualizzare il modulo e raccogliere informazioni
@@ -93,19 +93,19 @@ ms.locfileid: "99920370"
 2. Nel gestore dell'evento <xref:Microsoft.Office.Tools.Excel.Workbook.Open> di `ThisWorkbook`, aggiungere il codice riportato di seguito per dichiarare una variabile per il modulo `GetInputString` e visualizzare il modulo.
 
    > [!NOTE]
-   > In C# è necessario aggiungere un gestore dell'evento, come mostrato nell'evento <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> che segue. Per informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+   > In C# è necessario aggiungere un gestore dell'evento, come mostrato nell'evento <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> che segue. Per informazioni sulla creazione di gestori eventi, [vedere Procedura: Creare gestori eventi nei progetti di Office.](../vsto/how-to-create-event-handlers-in-office-projects.md)
 
-    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb" id="Snippet1":::
 
 3. Creare un metodo denominato `WriteStringToCell` , che consente di scrivere testo in un intervallo denominato. Tale metodo viene chiamato dal modulo e l'input utente viene passato al controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> , `formInput`, posizionato sulla cella **A1**.
 
-    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb" id="Snippet2":::
 
    Aggiungere quindi al modulo il codice per la gestione dell'evento Click del pulsante.
 
-## <a name="send-information-to-the-worksheet"></a>Inviare informazioni al foglio di foglio
+## <a name="send-information-to-the-worksheet"></a>Inviare informazioni al foglio di lavoro
 
 ### <a name="to-send-information-to-the-worksheet"></a>Per inviare informazioni al foglio di lavoro
 
@@ -115,8 +115,8 @@ ms.locfileid: "99920370"
 
 3. Aggiungere il codice al gestore dell'evento per estrarre l'input dalla casella di testo, inviarlo alla funzione `WriteStringToCell`, quindi chiudere il modulo.
 
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb" id="Snippet3":::
 
 ## <a name="test"></a>Test
  È ora possibile eseguire il progetto. Windows Form viene visualizzato e l'input è presente nel foglio di lavoro.
@@ -134,14 +134,14 @@ ms.locfileid: "99920370"
 ## <a name="next-steps"></a>Passaggi successivi
  Questa procedura dettagliata fornisce le informazioni di base sulla visualizzazione di un controllo Windows Form e sul passaggio di dati a un foglio di lavoro. Altre attività che è possibile eseguire includono:
 
-- Usare i controlli Windows Form in una cartella di lavoro di Excel o un documento di Word. Per ulteriori informazioni, vedere [Windows Form Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
+- Usare i controlli Windows Form in una cartella di lavoro di Excel o un documento di Word. Per altre informazioni, vedere Panoramica [Windows Forms controlli nei documenti di Office.](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
-- Modificare l'interfaccia utente di un'applicazione Microsoft Office da una personalizzazione a livello di documento o da un componente aggiuntivo VSTO. Per altre informazioni, vedere [personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md).
+- Modificare l'interfaccia utente di un Microsoft Office appalto da una personalizzazione a livello di documento o da un componente aggiuntivo VSTO. Per altre informazioni, vedere Personalizzazione [dell'interfaccia utente di Office.](../vsto/office-ui-customization.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
 - [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
-- [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
-- [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
+- [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
 - [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)

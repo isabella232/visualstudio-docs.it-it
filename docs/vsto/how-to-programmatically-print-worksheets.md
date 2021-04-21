@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: stampa di fogli di codice a livello di codice'
-description: Informazioni su come usare Visual Studio per stampare a livello di codice qualsiasi foglio di lavoro in una cartella di lavoro di Microsoft Excel.
+title: 'Procedura: Stampare fogli di lavoro a livello di codice'
+description: Informazioni su come usare i Visual Studio per stampare a livello di codice qualsiasi foglio di lavoro in una cartella di lavoro di Microsoft Excel.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,59 +16,59 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 885af73613636b9f6c829393b010c3543f6cea5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 129493f726967776aa669eb92f6e912ed9c1b11b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920481"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827149"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Procedura: stampa di fogli di codice a livello di codice
+# <a name="how-to-programmatically-print-worksheets"></a>Procedura: Stampare fogli di lavoro a livello di codice
 
 È possibile stampare qualsiasi foglio di lavoro da una cartella di lavoro.
 
 [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="print-a-worksheet-in-a-document-level-customization"></a>Stampare un foglio di testo in una personalizzazione a livello di documento
+## <a name="print-a-worksheet-in-a-document-level-customization"></a>Stampare un foglio di lavoro in una personalizzazione a livello di documento
 
 ### <a name="to-print-a-worksheet"></a>Per stampare un foglio di lavoro
 
 1. Chiamare il metodo `PrintOut` di `Sheet1`, richiedere due copie e visualizzare l'anteprima del documento prima della stampa.
 
-    [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
-    [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet22":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet22":::
 
-   Il <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> metodo consente di visualizzare l'oggetto specificato nella finestra di **Anteprima di stampa** . Il codice seguente presuppone l'esistenza di un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> denominato `Sheet1`.
+   Il <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> metodo consente di visualizzare l'oggetto specificato nella finestra Anteprima **di** stampa. Il codice seguente presuppone l'esistenza di un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> denominato `Sheet1`.
 
 ### <a name="to-preview-a-page-before-printing"></a>Per visualizzare l'anteprima di una pagina prima della stampa
 
 1. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> del foglio di lavoro.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#23)]
-     [!code-vb[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#23)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet23":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet23":::
 
-## <a name="print-a-worksheet-in-a-vsto-add-in"></a>Stampare un foglio di un foglio di un componente aggiuntivo VSTO
+## <a name="print-a-worksheet-in-a-vsto-add-in"></a>Stampare un foglio di lavoro in un componente aggiuntivo VSTO
 
 ### <a name="to-print-a-worksheet"></a>Per stampare un foglio di lavoro
 
 1. Chiamare il metodo <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A> del foglio di lavoro attivo, richiedere due copie e visualizzare l'anteprima del documento prima della stampa.
 
-    [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
-    [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet14":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet14":::
 
-   Il <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> metodo consente di visualizzare l'oggetto specificato nella finestra di **Anteprima di stampa** .
+   Il <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> metodo consente di visualizzare l'oggetto specificato nella finestra Anteprima **di** stampa.
 
 ### <a name="to-preview-a-page-before-printing"></a>Per visualizzare l'anteprima di una pagina prima della stampa
 
 1. Chiamare il metodo <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> del foglio di lavoro attivo.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#15)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet15":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet15":::
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: eseguire il controllo ortografico nei fogli di codice a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
-- [Elemento host Worksheet](../vsto/worksheet-host-item.md)
-- [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Procedura: Eseguire il controllo ortografico nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Elemento host del foglio di lavoro](../vsto/worksheet-host-item.md)
+- [Accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

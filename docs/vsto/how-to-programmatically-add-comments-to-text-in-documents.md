@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere commenti al testo nei documenti a livello di codice'
+title: 'Procedura: Aggiungere commenti al testo nei documenti a livello di codice'
 description: Aggiungere commenti al testo nei documenti a livello di codice. La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in un documento di Microsoft Word.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f5f0fba5169be71718993fbc271faf64fdac9fb1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e03f189f2236131308b8f9ea5d90c52ffa3147d
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918483"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825823"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedura: aggiungere commenti al testo nei documenti a livello di codice
-  La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in un Microsoft Office documento di Word.
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedura: Aggiungere commenti al testo nei documenti a livello di codice
+  La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in Microsoft Office documento di Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -34,8 +34,8 @@ ms.locfileid: "99918483"
 
 1. Chiamare il metodo <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> della proprietà <xref:Microsoft.Office.Tools.Word.Document.Comments%2A> e fornire un intervallo e il testo del commento. Per usare l'esempio di codice seguente, eseguirlo dalla classe `ThisDocument` nel progetto.
 
-     [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]
-     [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet118":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet118":::
 
 ## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Per aggiungere un nuovo commento al testo in un componente aggiuntivo VSTO
 
@@ -43,12 +43,12 @@ ms.locfileid: "99918483"
 
      L'esempio di codice seguente aggiunge un commento al documento attivo. Per usare questo esempio, eseguirlo dalla classe `ThisAddIn` nel progetto.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#118)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#118)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet118":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet118":::
 
 ## <a name="robust-programming"></a>Programmazione efficiente
  Per modificare le iniziali dell'utente che Word aggiunge ai commenti, usare la proprietà <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: rimuovere tutti i commenti dai documenti a livello di codice](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
-- [Elemento host Document](../vsto/document-host-item.md)
+- [Procedura: Rimuovere tutti i commenti dai documenti a livello di codice](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
+- [Elemento host del documento](../vsto/document-host-item.md)

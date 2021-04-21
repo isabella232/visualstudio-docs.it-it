@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: leggere e scrivere nelle proprietà dei documenti'
-description: Informazioni su come usare Visual Studio per ottenere o impostare le proprietà di un documento in Microsoft Excel e Microsoft Word.
+title: 'Procedura: Leggere e scrivere nelle proprietà del documento'
+description: Informazioni su come usare Visual Studio per ottenere o impostare le proprietà del documento in Microsoft Excel e Microsoft Word.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,19 +17,19 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 864906e678cb3976e99dd8d9aeb9147e303f2517
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3474d86a7408e841d383c82e5ab38da90253dbbf
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942182"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826681"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Procedura: leggere e scrivere nelle proprietà dei documenti
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Procedura: Leggere e scrivere nelle proprietà del documento
   È possibile archiviare le proprietà del documento insieme a un documento. Le applicazioni di Office offrono svariate proprietà predefinite, ad esempio autore, titolo e oggetto. Questo argomento illustra come impostare le proprietà dei documenti in Microsoft Office Excel e Microsoft Office Word.
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
 
-## <a name="set-document-properties-in-excel"></a>Impostazione delle proprietà di un documento in Excel
+## <a name="set-document-properties-in-excel"></a>Impostare le proprietà del documento in Excel
  Per usare le proprietà predefinite in Excel, configurare le proprietà seguenti:
 
 - In un progetto a livello di documento usare la proprietà <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> della classe `ThisWorkbook` .
@@ -44,15 +44,15 @@ ms.locfileid: "99942182"
 
 1. Assegnare le proprietà predefinite del documento a una variabile.
 
-     [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]
-     [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb" id="Snippet7":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs" id="Snippet7":::
 
 2. Incrementare di uno la proprietà `Revision Number` .
 
-     [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
-     [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb" id="Snippet8":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs" id="Snippet8":::
 
-## <a name="set-document-properties-in-word"></a>Impostazione delle proprietà di un documento in Word
+## <a name="set-document-properties-in-word"></a>Impostare le proprietà del documento in Word
  Per usare le proprietà predefinite in Word, configurare le proprietà seguenti:
 
 - In un progetto a livello di documento usare la proprietà <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> della classe `ThisDocument` .
@@ -67,13 +67,13 @@ ms.locfileid: "99942182"
 
 1. Assegnare le proprietà predefinite del documento a una variabile.
 
-     [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb" id="Snippet1":::
 
 2. Modificare la proprietà `Subject` in "White paper".
 
-     [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb" id="Snippet2":::
 
 ## <a name="robust-programming"></a>Programmazione efficiente
  Questo esempio presuppone che il codice della classe `ThisWorkbook` sia stato scritto in un progetto a livello di documento per Excel e quello della classe `ThisDocument` in un progetto a livello di documento per Word.
@@ -81,6 +81,6 @@ ms.locfileid: "99942182"
  Anche se si usano Word ed Excel e i rispettivi oggetti, Microsoft Office fornisce l'elenco di proprietà predefinite disponibili per i documenti. Il tentativo di accesso a una proprietà non definita provocherà un'eccezione.
 
 ## <a name="see-also"></a>Vedi anche
-- [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
-- [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
-- [Procedura: creare e modificare proprietà personalizzate di un documento](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
+- [Procedura: Creare e modificare proprietà personalizzate del documento](../vsto/how-to-create-and-modify-custom-document-properties.md)

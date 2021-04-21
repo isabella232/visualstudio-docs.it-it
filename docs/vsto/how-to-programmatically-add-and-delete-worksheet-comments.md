@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: aggiungere ed eliminare commenti in un foglio di codice a livello di codice'
-description: Informazioni su come è possibile aggiungere ed eliminare commenti a livello di codice nei fogli di lavoro Microsoft Office Excel. È possibile aggiungere commenti solo a singole celle, non a intervalli di più celle.
+title: 'Procedura: Aggiungere ed eliminare commenti del foglio di lavoro a livello di codice'
+description: Informazioni su come aggiungere ed eliminare commenti a livello di codice Microsoft Office fogli di lavoro di Excel. È possibile aggiungere commenti solo a celle singole, non a intervalli di più celle.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ec70c03dfdce05c7445762e2cfd452f3fdf90775
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20b718be3bec6cac3ee6c0b0985fa6efca867189
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904498"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826941"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Procedura: aggiungere ed eliminare commenti in un foglio di codice a livello di codice
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Procedura: Aggiungere ed eliminare commenti del foglio di lavoro a livello di codice
   È possibile aggiungere ed eliminare commenti a livello di codice nei fogli di lavoro di Microsoft Office Excel. I commenti possono essere aggiunti solo a singole celle, non a intervalli con più celle.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "99904498"
 
 1. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> del controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> e fornire il testo del commento. Questo codice deve essere inserito nella classe `Sheet1` .
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#30)]
-     [!code-vb[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#30)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet30":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet30":::
 
 #### <a name="to-delete-a-comment-from-a-named-range"></a>Per eliminare un commento da un intervallo denominato
 
 1. Verificare l'esistenza di un commento nell'intervallo ed eliminarlo. Questo codice deve essere inserito nella classe `Sheet1` .
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
-     [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet29":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet29":::
 
 ## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Aggiungere ed eliminare un commento in un progetto di componente aggiuntivo VSTO
  Gli esempi seguenti presuppongono la presenza di un oggetto <xref:Microsoft.Office.Interop.Excel.Range> a cella singola denominato `dateComment` nel foglio di lavoro attivo.
@@ -53,17 +53,17 @@ ms.locfileid: "99904498"
 
 1. Chiamare il metodo <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> dell'oggetto <xref:Microsoft.Office.Interop.Excel.Range> e fornire il testo del commento.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#20)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#20)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet20":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet20":::
 
 ### <a name="to-delete-a-comment-from-an-excel-range"></a>Per eliminare un commento da un intervallo di Excel
 
 1. Verificare l'esistenza di un commento nell'intervallo ed eliminarlo.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet19":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet19":::
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: visualizzare i commenti del foglio di codice a livello di codice](../vsto/how-to-programmatically-display-worksheet-comments.md)
-- [NamedRange (controllo)](../vsto/namedrange-control.md)
+- [Procedura: Visualizzare commenti del foglio di lavoro a livello di codice](../vsto/how-to-programmatically-display-worksheet-comments.md)
+- [Controllo NamedRange](../vsto/namedrange-control.md)

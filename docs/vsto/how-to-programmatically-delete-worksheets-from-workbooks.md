@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: eliminare fogli di lavoro dalle cartelle di lavoro a livello di codice'
-description: Informazioni su come è possibile eliminare a livello di codice un foglio di lavoro in una cartella di lavoro di Microsoft Excel usando l'elemento host del foglio di lavoro, ad esempio.
+title: 'Procedura: Eliminare fogli di lavoro da cartelle di lavoro a livello di codice'
+description: Informazioni su come eliminare a livello di codice qualsiasi foglio di lavoro in una cartella di lavoro di Microsoft Excel usando l'elemento host del foglio di lavoro, ad esempio .
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,19 +16,19 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2289309932dcd1d946fc775de60a0e07892be222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3413eaf82b323bc23164687dc3ae3ac0b9d3c48
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963894"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825940"
 ---
-# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Procedura: eliminare fogli di lavoro dalle cartelle di lavoro a livello di codice
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Procedura: Eliminare fogli di lavoro da cartelle di lavoro a livello di codice
   È possibile eliminare qualsiasi foglio di lavoro da una cartella di lavoro. Per eliminare un foglio di lavoro, usare l'elemento host del foglio di lavoro o accedere al foglio di lavoro tramite la raccolta Sheets della cartella di lavoro.
 
  [!INCLUDE[appliesto_xlalldocapp](includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="use-the-worksheet-host-item"></a>Usare l'elemento host Worksheet
+## <a name="use-the-worksheet-host-item"></a>Usare l'elemento host del foglio di lavoro
  Se il foglio di lavoro è stato aggiunto in fase di progettazione in una personalizzazione a livello di documento, per eliminarlo usare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A>. Il codice seguente elimina un foglio di lavoro da una cartella di lavoro facendo riferimento direttamente all'elemento host del foglio di lavoro.
 
 > [!IMPORTANT]
@@ -39,14 +39,14 @@ ms.locfileid: "99963894"
 > - Cartella di lavoro di Excel 2010
 > - Modello di Excel 2010
 >
->   Se si vuole eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento all'assembly **Microsoft. Office. Interop. Excel** , quindi è necessario usare le classi di tale assembly per aprire una cartella di lavoro ed eliminare un foglio di lavoro. Per altre informazioni, vedere [procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Excel 2010](office-primary-interop-assemblies.md).
+>   Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento all'assembly **Microsoft.Office.Interop.Excel** e quindi usare le classi di tale assembly per aprire una cartella di lavoro ed eliminare un foglio di lavoro. Per altre informazioni, vedere [Procedura: Impostare](how-to-target-office-applications-through-primary-interop-assemblies.md) come destinazione le applicazioni di Office tramite assembly di interoperabilità primari e Informazioni di riferimento sugli assembly di interoperabilità primari di [Excel 2010.](office-primary-interop-assemblies.md)
 
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Per eliminare un foglio di lavoro mediante un elemento host del foglio di lavoro
 
 1. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> di `Sheet1`.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#17](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
-     [!code-vb[Trin_VstcoreExcelAutomation#17](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet17":::
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet17":::
 
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Usare la raccolta Sheets della cartella di lavoro di Excel
  Accedere ai fogli di lavoro mediante la raccolta <xref:Microsoft.Office.Interop.Excel.Sheets> di Microsoft Office Excel nei casi seguenti:
@@ -55,24 +55,24 @@ ms.locfileid: "99963894"
 
 - Se il foglio di lavoro che si vuole eliminare è stato creato in fase di esecuzione in una personalizzazione a livello di documento.
 
-  Il codice seguente elimina un foglio di lavoro da una cartella di lavoro facendo riferimento al foglio tramite il numero di indice della raccolta **Sheets** . Per questo codice si presume che sia già stato creato un nuovo foglio di lavoro a livello di codice.
+  Il codice seguente elimina un foglio di lavoro da una cartella di lavoro facendo riferimento al foglio tramite il numero di indice della **raccolta Sheets.** Per questo codice si presume che sia già stato creato un nuovo foglio di lavoro a livello di codice.
 
 > [!IMPORTANT]
-> Se si vuole eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento all'assembly **Microsoft. Office. Interop. Excel** , quindi è necessario usare le classi di tale assembly per aprire una cartella di lavoro ed eliminare un foglio di lavoro. Per altre informazioni, vedere [procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Excel 2010](office-primary-interop-assemblies.md).
+> Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento all'assembly **Microsoft.Office.Interop.Excel** e quindi usare le classi di tale assembly per aprire una cartella di lavoro ed eliminare un foglio di lavoro. Per altre informazioni, vedere [Procedura: Impostare](how-to-target-office-applications-through-primary-interop-assemblies.md) come destinazione le applicazioni di Office tramite assembly di interoperabilità primari e Informazioni di riferimento sugli assembly di interoperabilità primari di [Excel 2010.](office-primary-interop-assemblies.md)
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Per eliminare un foglio di lavoro mediante la raccolta Sheets della cartella di lavoro di Excel
 
 1. Chiamare il metodo <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> della raccolta <xref:Microsoft.Office.Interop.Excel.Sheets>.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
-     [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet18":::
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet18":::
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](working-with-worksheets.md)
-- [Procedura: nascondere i fogli di programmazione a livello di codice](how-to-programmatically-hide-worksheets.md)
-- [Procedura: spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice](how-to-programmatically-move-worksheets-within-workbooks.md)
-- [Procedura: selezionare fogli di programmazione a livello di codice](how-to-programmatically-select-worksheets.md)
-- [Procedura: aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice](how-to-programmatically-add-new-worksheets-to-workbooks.md)
-- [Elemento host Worksheet](worksheet-host-item.md)
-- [Accesso globale a oggetti nei progetti di Office](global-access-to-objects-in-office-projects.md)
-- [Limitazioni a livello di codice degli elementi e dei controlli host](programmatic-limitations-of-host-items-and-host-controls.md)
+- [Procedura: Nascondere fogli di lavoro a livello di codice](how-to-programmatically-hide-worksheets.md)
+- [Procedura: Spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice](how-to-programmatically-move-worksheets-within-workbooks.md)
+- [Procedura: Selezionare fogli di lavoro a livello di codice](how-to-programmatically-select-worksheets.md)
+- [Procedura: Aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice](how-to-programmatically-add-new-worksheets-to-workbooks.md)
+- [Elemento host del foglio di lavoro](worksheet-host-item.md)
+- [Accesso globale agli oggetti nei progetti di Office](global-access-to-objects-in-office-projects.md)
+- [Limitazioni a livello di codice di elementi host e controlli host](programmatic-limitations-of-host-items-and-host-controls.md)

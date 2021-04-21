@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: spostare elementi in Outlook a livello di codice'
-description: Informazioni su come è possibile spostare gli elementi a livello di codice in Microsoft Outlook. Questo esempio Mostra come spostare i messaggi di posta elettronica non letti dalla posta in arrivo a una cartella denominata test.
+title: 'Procedura: Spostare elementi in Outlook a livello di codice'
+description: Informazioni su come spostare elementi in Microsoft Outlook a livello di codice. Questo esempio sposta i messaggi di posta elettronica non letti dalla posta in arrivo in una cartella denominata Test.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,30 +14,30 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 770f056dc681e1ee2cd6704f9bd1d42afae4957b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8e951ab393d09506ad4f2d593962ea1826eff09
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888862"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826733"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Procedura: spostare elementi in Outlook a livello di codice
-  Questo esempio Mostra come spostare i messaggi di posta elettronica non letti dalla **posta in arrivo** a una cartella denominata **test**. Nell'esempio vengono spostati solo i messaggi con la parola **test** nel `Subject` campo.
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Procedura: Spostare elementi in Outlook a livello di codice
+  Questo esempio sposta i messaggi di posta elettronica non letti **dalla** posta in arrivo in una cartella denominata **Test**. L'esempio sposta solo i messaggi con la **parola Test** nel `Subject` campo .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Esempio
- [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
-- Cartella di posta di Outlook denominata **test**.
+- Una cartella di posta di Outlook denominata **Test**.
 
-- Un messaggio di posta elettronica che arriva con la parola **test** nel `Subject` campo.
+- Messaggio di posta elettronica che arriva con la **parola Test** nel `Subject` campo .
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare le cartelle](../vsto/working-with-folders.md)
-- [Procedura: recuperare una cartella per nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Procedura: eseguire azioni quando viene ricevuto un messaggio di posta elettronica a livello di codice](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Procedura: Recuperare una cartella in base al nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Procedura: Eseguire ricerche a livello di codice all'interno di una cartella specifica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Procedura: Eseguire azioni a livello di codice quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
