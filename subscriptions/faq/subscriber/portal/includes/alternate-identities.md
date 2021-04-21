@@ -10,18 +10,18 @@ author: CaityBuschlen
 ms.author: cabuschl
 manager: ''
 robots: ''
-ms.date: 4/3/2020
+ms.date: 04/20/2020
 ms.faqid: q1_5
-ms.openlocfilehash: 04c6f3473f31f438afb9785cc460aa0da38605d5
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
-ms.translationtype: HT
+ms.openlocfilehash: 87d2633cb76a92c9a1c73651f3f57b2a139240f1
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "91838431"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107820985"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>Qual è la procedura per aggiungere identità alternative alla sottoscrizione e quali sono gli effetti sui crediti di Azure e su Azure DevOps?
 
-L'aggiunta di un account alternativo alla sottoscrizione di Visual Studio consente di accedere ai vantaggi della sottoscrizione, tra cui Azure DevOps e Azure, con un'identità diversa rispetto a quella a cui è assegnata la sottoscrizione. In precedenza, questa funzionalità era disponibile solo se la sottoscrizione di Visual Studio (VS) era assegnata a un account Microsoft. Questa funzionalità è stata estesa agli account aziendali o di istituti di istruzione in Azure Active Directory (Azure AD).
+L'aggiunta di un account alternativo alla sottoscrizione di Visual Studio consente di accedere ai vantaggi della sottoscrizione, tra cui Azure DevOps e Azure, con un'identità diversa rispetto a quella a cui è assegnata la sottoscrizione. In precedenza, questa funzionalità era disponibile solo se la sottoscrizione di Visual Studio (VS) era assegnata a un account Microsoft.  Questa funzionalità è stata estesa agli account aziendali o di istituti di istruzione in Azure Active Directory (Azure AD).
 
 Questa funzionalità non fornisce una copia della sottoscrizione all'altro account, ma consente solo di accedere ai due vantaggi con l'account alternativo.
 
