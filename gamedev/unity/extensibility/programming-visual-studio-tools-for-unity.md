@@ -1,8 +1,8 @@
 ---
 title: Programmazione di Visual Studio Tools per Unity | Microsoft Docs
-description: Vedere esempi di programmazione con l'API Visual Studio Tools per Unity (VSTU). Personalizzare i file di progetto creati con VSTU. Condividere il callback di log di Unity con VSTU.
+description: Vedere esempi di programmazione con l'API Visual Studio Tools per Unity (VSTU). Personalizzare i file di progetto creati da VSTU.
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 04/19/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,21 +12,18 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c98a3cdbcece87ad5e8fbe0e91ae76f677494477
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4d81284faba4d75eb00c5905c868a4b4b69a82a4
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341836"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879291"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Programmazione di Visual Studio Tools per Unity
 Questa sezione contiene esempi per l'uso dell'API di Visual Studio Tools per Unity.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
  Ecco alcuni esempi che mostrano come è possibile usare le API di Visual Studio Tools per Unity.
 
 ### <a name="customize-project-files-created-by-vstu"></a>Personalizzare i file di progetto creati con VSTU
- Visual Studio Tools per Unity offre un callback in stile Unity durante la generazione dei file di progetto. Per informazioni su come è possibile modificare il file di progetto ogni volta che viene rigenerato, vedere [esempio: generazione di file di progetto](./customize-project-files-created-by-vstu.md).
-
-### <a name="share-the-unity-log-callback-with-vstu"></a>Condividere il callback di log di Unity con VSTU
- Visual Studio Tools per Unity registra un callback di log con Unity in modo da poter eseguire la console di Unity in Visual Studio. Se anche gli script di editor registrano un callback di log con Unity, il callback di VSTU potrebbe interferire con questo. Per informazioni su come è possibile condividere il callback di log di Unity con VSTU, vedere [esempio: callback di log](./share-the-unity-log-callback-with-vstu.md).
+ Unity fornisce callback durante la generazione di file di progetto. Per informazioni su come modificare i file di progetto o di soluzione ogni volta che vengono rigenerati, vedere [Esempio: Generazione di file di progetto](./customize-project-files-created-by-vstu.md).
