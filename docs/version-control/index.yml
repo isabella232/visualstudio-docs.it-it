@@ -1,0 +1,48 @@
+### YamlMime:Landing
+title: Visual Studio documentazione sul controllo della versione
+summary: Condividere il codice dall'Visual Studio 2019 usando tecnologie di controllo della versione come Git e GitHub.
+metadata:
+  title: Controllo della versione in Visual Studio
+  description: Le tecnologie di controllo della versione, ad esempio Git e GitHub, sono disponibili direttamente all'interno Visual Studio. È possibile usarli per condividere e gestire il codice senza uscire dalla codebase.
+  ms.topic: landing-page
+  ms.date: 04/20/2021
+  author: TerryGLee
+  ms.author: tglee
+  manager: jmartens
+  ms.prod: visual-studio-windows
+  ms.technology: vs-general-ide
+  ms.openlocfilehash: a377d39b0d8184dc7aca038238f2dacb0345627d
+  ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 04/23/2021
+  ms.locfileid: "107917912"
+landingContent:
+- title: Panoramica
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Esperienza Git in Visual Studio
+      url: git-with-visual-studio.md
+  - linkListType: concept
+    links:
+    - text: Come Visual Studio semplifica il controllo del codice sorgente
+      url: git-visual-studio-source-control.md
+- title: Introduzione
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Introduzione a Git e GitHub in Visual Studio
+      url: /learn/modules/visual-studio-github-push/
+  - linkListType: how-to-guide
+    links:
+    - text: Confrontare Git e Team Explorer side-by-side
+      url: git-team-explorer-feature-comparison.md
+- title: Novità
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Produttività migliorata con Git in Visual Studio (anteprima)
+      url: https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/
+    - text: Note sulla versione di Visual Studio 2019
+      url: /visualstudio/releases/2019/release-notes/

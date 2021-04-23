@@ -15,51 +15,51 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e4c432afb1a4341dbe30f023d95bfccb4689094
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082023"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913098"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
-**Aggiornamento per la [versione 16,9](/visualstudio/releases/2019/release-notes/)**
+**Aggiornamento per la [versione 16.9](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Scarica Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-Visual Studio 2019 include gli strumenti e i servizi migliori del settore per qualsiasi sviluppatore, app e piattaforma. Che tu stia usando Visual Studio per la prima volta o che sei stato usato per anni, la versione più recente è molto simile.
+Visual Studio 2019 include gli strumenti e i servizi migliori del settore per qualsiasi sviluppatore, app e piattaforma. Se si usa Visual Studio per la prima volta o lo si usa da anni, la versione più recente è molto simile.
 
-Di seguito è riportato un riepilogo generale delle novità, tutte:
+Ecco un riepilogo di alto livello delle novità:
 
-* **[Sviluppo](#develop)**: rimanere concentrati e produttivi con migliori prestazioni, pulizia immediata del codice e risultati di ricerca migliori.
-* **[Collaborare](#collaborate)**: sfruttare la collaborazione naturale tramite un flusso di lavoro git-First, la modifica e il debug in tempo reale e le revisioni del codice direttamente in Visual Studio.
-* **[Debug](#debug)**: evidenziare e passare a valori specifici, ottimizzare l'uso della memoria e creare snapshot automatici dell'esecuzione dell'applicazione.
+* **[Sviluppare:](#develop)** rimanere concentrati e produttivi con prestazioni migliorate, pulizia immediata del codice e risultati di ricerca migliori.
+* **[Collaborazione:](#collaborate)** è possibile usufruire della collaborazione naturale tramite un flusso di lavoro basato su Git, la modifica e il debug in tempo reale e le revisioni del codice direttamente Visual Studio.
+* **[Debug:](#debug)** evidenzia e passa a valori specifici, ottimizza l'uso della memoria ed esegue snapshot automatici dell'esecuzione dell'applicazione.
 
 Per un elenco completo di tutte le novità in questa versione, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Sviluppo
 
-Vedere il video seguente per altre informazioni su come è possibile risparmiare tempo con le nuove funzionalità. <br><br>*Lunghezza video: 3,00 minuti*
+Vedere il video seguente per altre informazioni su come è possibile risparmiare tempo con le nuove funzionalità. <br><br>*Lunghezza del video: 3,00 minuti*
 
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Miglioramento della ricerca
 
-Precedentemente nota come Avvio veloce, la nuova esperienza di ricerca è più rapida ed efficiente. Ora i risultati della ricerca vengono visualizzati dinamicamente durante la digitazione. I risultati della ricerca possono spesso includere tasti di scelta rapida per i comandi, in modo che sia possibile memorizzarli per un uso futuro.
+Precedentemente nota come Avvio veloce, la nuova esperienza di ricerca è più rapida ed efficiente. Ora i risultati della ricerca vengono visualizzati dinamicamente durante la digitazione. I risultati della ricerca possono spesso includere tasti di scelta rapida per i comandi, in modo da poterli memorizzare per un uso futuro.
 
-   ![Animazione della nuova esperienza di ricerca in Visual Studio 2019](media/vs-2019/new-search-feature.gif "Nuova esperienza di ricerca in Visual Studio 2019.")
+   ![Animazione della nuova esperienza di ricerca in Visual Studio 2019](media/vs-2019/new-search-feature.gif "La nuova esperienza di ricerca Visual Studio 2019.")
 
 La nuova logica di ricerca fuzzy consentirà di trovare tutto quello che serve, anche se sono presenti errori di digitazione. Indipendentemente dal fatto che si stiano cercando comandi, impostazioni, documentazione o altri elementi utili, la nuova funzionalità di ricerca rende più semplice trovare quello che si sta cercando.
 
-Per altre informazioni, vedere [usare la ricerca di Visual Studio](visual-studio-search.md).
+Per altre informazioni, vedere [Usare Visual Studio ricerca.](visual-studio-search.md)
 
 #### <a name="intelligent-search-service"></a>Servizio di ricerca intelligente
 
-**Novità della 16,9**: grazie all'uso della tecnologia basata sul cloud, dell'intelligenza artificiale e dell'apprendimento automatico, abbiamo migliorato i risultati della ricerca. A questo punto, non solo la ricerca in Visual Studio produce risultati più rilevanti, ma può anche aiutare a individuare le funzionalità del prodotto più facilmente.
+**Novità della versione 16.9:** grazie all'uso di tecnologia basata sul cloud, intelligenza artificiale e Machine Learning, i risultati della ricerca sono stati migliorati. Ora, non solo la ricerca in Visual Studio produce risultati più rilevanti, ma può anche aiutare a individuare più facilmente le funzionalità del prodotto.
 
-Per altre informazioni, vedere il post di Blog relativo al [servizio di ricerca intelligente di Visual Studio](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/) .
+Per altre informazioni, vedere il post di blog intelligent Visual Studio search service (Servizio [di ricerca intelligente).](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/)
 
 ### <a name="refactorings"></a>Refactoring
 
@@ -90,15 +90,15 @@ Per altre informazioni su IntelliCode, vedere i post di blog [Announcing the gen
 
 ### <a name="code-cleanup"></a>Pulizia del codice
 
-Abbinato a un nuovo indicatore di integrità dei documenti è disponibile un nuovo comando per la pulizia del codice. È possibile usare questo nuovo comando per identificare e quindi correggere sia gli avvisi che i suggerimenti con una singola azione (oppure fare clic su un pulsante).
+Abbinato a un nuovo indicatore di integrità dei documenti è disponibile un nuovo comando per la pulizia del codice. È possibile usare questo nuovo comando per identificare e correggere avvisi e suggerimenti con una singola azione (o clic su un pulsante).
 
 L'operazione di pulizia formatterà il codice e applicherà eventuali correzioni del codice come suggerito dalle [impostazioni correnti](code-styles-and-code-cleanup.md) e dai [file con estensione editorconfig](create-portable-custom-editor-options.md).
 
-   ![Screenshot del nuovo controllo di pulizia del codice in Visual Studio 2019](media/vs-2019/code-cleanup-profile.png "Nuovo controllo di pulitura del codice in Visual Studio 2019.")
+   ![Screenshot del nuovo controllo di pulizia del codice in Visual Studio 2019](media/vs-2019/code-cleanup-profile.png "Il nuovo controllo di pulizia del codice Visual Studio 2019.")
 
 È anche possibile salvare raccolte di utilità di correzione come profilo. Ad esempio, se si applica di frequente un piccolo set di utilità di correzione specifiche durante la scrittura del codice e poi si usa un altro set completo di utilità di correzione da applicare prima di una revisione del codice, è possibile configurare due profili per queste attività diverse.
 
-   ![Screenshot del controllo di configurazione della pulizia del codice in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png "Il controllo Configure code Cleanup in Visual Studio 2019.")
+   ![Screenshot del controllo di configurazione della pulizia del codice in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png "Configurare il controllo di pulizia del codice Visual Studio 2019.")
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Rendering sensibile ai valori del monitor (PMA)
 
@@ -106,47 +106,47 @@ Se si usano monitor configurati con fattori di scala per lo schermo differenti o
 
 Con la versione Visual Studio 2019, Visual Studio si sta trasformando in un'applicazione sensibile ai valori del monitor (PMA). Ora Visual Studio esegue il rendering correttamente indipendentemente dai fattori di scala del display utilizzati.
 
-   ![Rendering sensibile ai valori del monitor (PMA) in Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png "Rendering compatibile con monitor (PMA) in Visual Studio 2019.")
+   ![Rendering sensibile ai valori del monitor (PMA) in Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png "Rendering con supporto per monitor (PMA) in Visual Studio 2019.")
 
 Per altre informazioni, vedere il post di blog [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Esperienza con più monitor migliore con Visual Studio 2019).
 
 ### <a name="test-explorer"></a>Esplora test
 
-**Novità della 16,2**: è stato aggiornato Esplora test per offrire una gestione migliore di set di test di grandi dimensioni, un filtro più semplice, più comandi individuabili, visualizzazioni playlist a schede e colonne personalizzabili che consentono di ottimizzare le informazioni di test visualizzate.
+Novità **della versione 16.2:** Esplora test è stato aggiornato per offrire una migliore gestione di set di test di grandi dimensioni, filtri più semplici, comandi più individuabili, visualizzazioni playlist a schede e colonne personalizzabili che consentono di ottimizzare le informazioni sui test visualizzate.
 
    ![Screenshot che mostra i miglioramenti dell'interfaccia utente in Esplora test](media/vs-2019/test-explorer-ui.png "Miglioramenti dell'interfaccia utente in Esplora test.")
 
 ### <a name="net-core"></a>.NET Core
 
-**Novità della 16,3**: è stato incluso il supporto per .net core 3,0. Multi-piattaforma, Open Source &mdash; e completamente supportato da Microsoft.
+**Novità della versione 16.3:** è stato incluso il supporto per .NET Core 3.0. Multipiattaforma, open source &mdash; e completamente supportato da Microsoft.
 
-Per altre informazioni, vedere il post di Blog relativo all' [annuncio di .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
+Per altre informazioni, vedere il post di blog [Announcing .NET Core 3.0 (Annuncio di .NET Core 3.0).](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)
 
 ## <a name="collaborate"></a>Collaborazione
 
-Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Lunghezza video: 4,22 minuti*
+Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Lunghezza del video: 4,22 minuti*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="git-first-workflow"></a>Primo flusso di lavoro git
+### <a name="git-first-workflow"></a>Flusso di lavoro Git-first
 
 La nuova finestra iniziale non passa di certo inosservata alla prima apertura di Visual Studio 2019.
 
-   ![Screenshot della nuova finestra iniziale in Visual Studio 2019](media/vs-2019/start-window-dark.png "Nuova finestra di avvio in Visual Studio 2019.")
+   ![Screenshot della nuova finestra iniziale in Visual Studio 2019](media/vs-2019/start-window-dark.png "Nuova finestra iniziale in Visual Studio 2019.")
 
 La finestra iniziale offre diverse opzioni per iniziare rapidamente con la scrittura del codice. In primo piano è stata posizionata l'opzione per clonare o eseguire il checkout del codice da un repository.
 
-   ![Animazione dell'esperienza 'Git-first' in Visual Studio 2019](media/vs-2019/git-first.gif "Esperienza "git-First" in Visual Studio 2019.")
+   ![Animazione dell'esperienza 'Git-first' in Visual Studio 2019](media/vs-2019/git-first.gif "Esperienza &quot;Git-first&quot; in Visual Studio 2019.")
 
 La finestra iniziale include anche le opzioni per aprire un progetto o una soluzione, aprire una cartella locale o creare un nuovo progetto.
 
-Per altre informazioni, vedere il post di Blog relativo [a come è stato progettato il nuovo avvio di Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) .
+Per altre informazioni, vedere il post di blog [Get to code: How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Introduzione al codice: come è stato progettato il nuovo Visual Studio finestra iniziale).
 
 ### <a name="git-productivity"></a>Produttività git
 
-**Novità in 16,8**: git è ora l'esperienza di controllo della versione predefinita in Visual Studio 2019. Il set di funzionalità è stato creato ed è stato iterato in base ai commenti e suggerimenti durante le ultime due versioni. La nuova esperienza è ora attivata per impostazione predefinita per tutti gli utenti. Dal nuovo menu git è possibile clonare, creare o aprire repository. Usare le finestre dello strumento git integrato per eseguire il commit e il push delle modifiche al codice, gestire i rami, rimanere aggiornati con i repository remoti e risolvere i conflitti di merge.
+**Novità della versione 16.8:** Git è ora l'esperienza di controllo della versione predefinita Visual Studio 2019. Il set di funzionalità è stato compilato ed è stato iterato in base ai commenti e suggerimenti ricevuti nelle ultime due versioni. La nuova esperienza è ora attivata per impostazione predefinita per tutti gli utenti. Dal nuovo menu Git è possibile clonare, creare o aprire i repository. Usare le finestre degli strumenti Git integrate per eseguire il commit e il push delle modifiche al codice, gestire i rami, rimanere aggiornati con i repository remoti e risolvere i conflitti di unione.
 
-Per altre informazioni, vedere la pagina relativa all' [esperienza git in Visual Studio](git-with-visual-studio.md) .
+Per altre informazioni, vedere [l'esperienza Git in Visual Studio](../version-control/git-with-visual-studio.md) pagina.
 
 ### <a name="live-share"></a>Live Share
 
@@ -154,7 +154,7 @@ Per altre informazioni, vedere la pagina relativa all' [esperienza git in Visual
 
 Con Visual Studio 2019, questo servizio viene installato per impostazione predefinita.
 
-![Animazione che illustra la funzionalità di collaborazione Live Share in Visual Studio 2019](media/vs-2019/live-share.gif "Funzionalità di collaborazione Live Share in Visual Studio 2019.")
+![Animazione che illustra la funzionalità di collaborazione Live Share in Visual Studio 2019](media/vs-2019/live-share.gif "La Live Share di collaborazione in Visual Studio 2019.")
 
 Per altre informazioni, vedere i post di blog [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share per revisioni del codice in tempo reale e formazione interattiva) e [Live Share now included with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) (Live Share è ora incluso in Visual Studio 2019).
 
@@ -162,7 +162,7 @@ Per altre informazioni, vedere i post di blog [Visual Studio Live Share for real
 
 È ora possibile scaricare una nuova estensione da usare con Visual Studio 2019. Questa nuova estensione supporta la revisione, l'esecuzione e addirittura il debug delle richieste pull del team senza uscire da Visual Studio. È supportato il codice sia nei repository GitHub che Azure DevOps.
 
-   ![Screenshot della nuova estensione delle richieste pull in Visual Studio 2019](media/vs-2019/pr-experience.png "Nuova estensione delle richieste pull in Visual Studio 2019.")
+   ![Screenshot della nuova estensione Richieste pull in Visual Studio 2019](media/vs-2019/pr-experience.png "Nuova estensione richieste pull in Visual Studio 2019.")
 
 Per altre informazioni, vedere il post di blog [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (Revisioni del codice usando l'estensione richieste pull di Visual Studio).
 
@@ -176,7 +176,7 @@ Vedere il video seguente per altre informazioni su come ottenere maggiore precis
 
 I punti di interruzione dei dati C++, una volta esclusivi, sono stati adattati per le applicazioni .NET Core.
 
-   ![Animazione che mostra i punti di interruzione dei dati di debug in Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif "Punti di interruzione dei dati di debug in Visual Studio 2019.")
+   ![Animazione che mostra i punti di interruzione dei dati di debug in Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif "Punti di interruzione dei dati di debug Visual Studio 2019.")
 
 Indipendentemente dal fatto che il codice venga scritto in C++ o .NET Core, quindi, i punti di interruzione dei dati possono essere una valida alternativa al semplice inserimento di punti di interruzione normali. I punti di interruzione dei dati sono anche ideali in situazioni in cui occorre ad esempio scoprire se un oggetto globale viene modificato o viene aggiunto o rimosso da un elenco.
 
@@ -186,19 +186,19 @@ Per gli sviluppatori C++ che realizzano applicazioni di grandi dimensioni, inolt
 
 Probabilmente la finestra Espressioni di controllo è già stata usata in precedenza, magari per la ricerca di una stringa tra un set di valori. In Visual Studio 2019 è stata aggiunta la funzionalità di ricerca nelle finestre Espressioni di controllo, Variabili locali e Auto per consentire la ricerca degli oggetti e dei valori richiesti.
 
-   ![Animazione che mostra la finestra di ricerca di debug in Visual Studio 2019](media/vs-2019/debug-window-search.gif "La finestra di ricerca di debug in Visual Studio 2019.")
+   ![Animazione che mostra la finestra di ricerca di debug in Visual Studio 2019](media/vs-2019/debug-window-search.gif "Finestra di ricerca di debug in Visual Studio 2019.")
 
-È anche possibile formattare il modo in cui un valore viene visualizzato all'interno delle finestre Espressioni di controllo, Variabili locali e Auto. Selezionare (facendo doppio clic) uno degli elementi in una delle finestre e aggiungere una virgola (",") per accedere all'elenco a discesa di possibili identificatori di formato, ognuno dei quali include una descrizione dell'effetto desiderato.
+È anche possibile formattare il modo in cui un valore viene visualizzato all'interno delle finestre Espressioni di controllo, Variabili locali e Auto. Selezionare (facendo doppio clic su) uno degli elementi in una delle finestre e aggiungere una virgola (",") per accedere all'elenco a discesa dei possibili identificatori di formato, ognuno dei quali include una descrizione dell'effetto previsto.
 
-   ![Nuova finestra Espressioni di controllo e funzionalità di formattazione dei valori in Visual Studio 2019](media/search-watch-window.png "La nuova funzionalità finestra Espressioni di controllo e Format values in Visual Studio 2019.")
+   ![Nuova finestra Espressioni di controllo e funzionalità di formattazione dei valori in Visual Studio 2019](media/search-watch-window.png "La nuova finestra Espressioni di controllo e i valori di formato Visual Studio 2019.")
 
-Per ulteriori informazioni, vedere il post di Blog relativo alla [funzionalità avanzata in Visual Studio 2019: ricerca di oggetti e proprietà nel post di Blog relativo alle finestre espressioni di controllo, auto e variabili locali](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) .
+Per altre informazioni, vedere il post di blog [Enhanced in Visual Studio 2019: Search for Objects and Properties nel](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) post di blog di Windows Watch, Autos e Locals.
 
 ### <a name="snapshot-debugger"></a>Debugger di snapshot
 
 Ottenere uno snapshot dell'esecuzione dell'app nel cloud per vedere esattamente ciò che accade. (Questa funzionalità è disponibile solo in Visual Studio Enterprise.)
 
-   ![Animazione che mostra Snapshot Debugger in Visual Studio 2019 Enterprise](media/vs-2019/snapshot-debugger.gif "Il Snapshot Debugger in Visual Studio 2019 Enterprise Edition.")
+   ![Animazione che mostra Snapshot Debugger in Visual Studio 2019 Enterprise](media/vs-2019/snapshot-debugger.gif "La Snapshot Debugger in Visual Studio 2019 Enterprise.")
 
 È stato aggiunto il supporto per le applicazioni ASP.NET (Core e desktop) in esecuzione su una macchina virtuale di Azure. È stato anche aggiunto il supporto per le applicazioni eseguite in un servizio Azure Kubernetes. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
 
@@ -206,31 +206,31 @@ Per altre informazioni, vedere la pagina [Eseguire il debug di app di Azure ASP.
 
 ### <a name="microsoft-edge-insider-support"></a>Supporto per Microsoft Edge Insider
 
-**Novità in 16,2**: è possibile impostare un punto di interruzione in un'applicazione JavaScript e avviare una sessione di debug usando il browser [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) . In tal caso, Visual Studio apre una nuova finestra del browser con il debug abilitato, che è possibile usare per analizzare le singole istruzioni nell'applicazione JavaScript in Visual Studio.
+**Novità della versione 16.2:** è possibile impostare un punto di interruzione in un'applicazione JavaScript e avviare una sessione di debug usando il browser [Microsoft Edge Insider.](https://www.microsoftedgeinsider.com/) In tal caso, Visual Studio apre una nuova finestra del browser con il debug abilitato, che è possibile usare per analizzare le singole istruzioni nell'applicazione JavaScript in Visual Studio.
 
    ![Screenshot che mostra il rendering del codice JavaScript in un browser](media/vs-2019/edge-chromium-breakpoint.png "Rendering del codice JavaScript in un browser.")
 
-### <a name="pinnable-properties-tool"></a>Strumento Proprietà aggiungibili
+### <a name="pinnable-properties-tool"></a>Strumento Proprietà pinnable
 
-**Novità in 16,4**: ora è più facile identificare gli oggetti in base alle relative proprietà durante il debug con il nuovo strumento Proprietà aggiungibili. È sufficiente passare il puntatore del mouse su una proprietà che si desidera visualizzare nella finestra del debugger delle finestre espressioni di controllo, auto e variabili locali, selezionare l'icona Aggiungi e visualizzare immediatamente le informazioni che si stanno cercando nella parte superiore della finestra.
+**Novità della versione 16.4:** ora è più semplice identificare gli oggetti in base alle relative proprietà durante il debug con il nuovo strumento Proprietà pinnable. È sufficiente passare il cursore su una proprietà che si vuole visualizzare nella finestra del debugger delle finestre Espressioni di controllo, Auto e Variabili locali, selezionare l'icona della puntina e visualizzare immediatamente le informazioni che si stanno cercando nella parte superiore della finestra.
 
-   ![Un'animazione che Mostra come aggiungere proprietà nel debugger di Visual Studio usando lo strumento delle proprietà aggiungibili](media/vs-2019/debugger-pinnable-properties.gif "Aggiungere le proprietà nel debugger di Visual Studio usando lo strumento delle proprietà aggiungibili.")
+   ![Animazione che illustra come aggiungere proprietà nel debugger Visual Studio usando lo strumento Proprietà pinnable](media/vs-2019/debugger-pinnable-properties.gif "Aggiungere le proprietà nel debugger Visual Studio usando lo strumento Proprietà pinnable.")
 
-Per altre informazioni, vedere il post di Blog relativo alle [proprietà di aggiungibili: Debug & Visualizza oggetti gestiti](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) .
+Per altre informazioni, vedere il post di blog [Pinnable Properties: Debug & Display Managed Objects YOUR Way ( Proprietà pinnable: debug) & di](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) blog Display Managed Objects YOUR Way (Visualizzare oggetti gestiti in modo personale).
 
 ## <a name="whats-next"></a>Passaggi successivi
 
-Visual Studio 2019 viene aggiornato spesso con nuove funzionalità in grado di migliorare ulteriormente l'esperienza di sviluppo. Per ulteriori informazioni sulle ultime innovazioni, consultare il [Blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/). Per un resoconto di quanto è stato rilasciato in anteprima, vedere le note sulla versione di [Anteprima](/visualstudio/releases/2019/release-notes-preview/). Per un elenco degli elementi che si prevede di rilasciare successivamente, vedere la [Roadmap di Visual Studio](/visualstudio/productinfo/vs-roadmap).
+Visual Studio 2019 viene aggiornato spesso con nuove funzionalità in grado di migliorare ulteriormente l'esperienza di sviluppo. Per altre informazioni sulle innovazioni più recenti, vedere il blog [Visual Studio .](https://devblogs.microsoft.com/visualstudio/) Per un record di ciò che è stato rilasciato in anteprima fino a oggi, vedere le Note [sulla versione di anteprima.](/visualstudio/releases/2019/release-notes-preview/) Per un elenco degli elementi che si prevede di rilasciare successivamente, vedere la guida [di Visual Studio roadmap.](/visualstudio/productinfo/vs-roadmap)
 
-Nel frattempo, di seguito è disponibile una nuova funzionalità che attualmente si trova nel lavoro.
+Nel frattempo, ecco una nuova funzionalità attualmente in fase di esecuzione.
 
-- **Esperienza git migliorata in Visual Studio 2019 (anteprima)**
+- **Esperienza Git migliorata in Visual Studio 2019 (anteprima)**
 
-   Sebbene la nuova esperienza di controllo della versione di git sia ora attiva per impostazione predefinita in Visual Studio 2019 [versione 16,8](/visualstudio/releases/2019/release-notes/), è possibile continuare ad aggiungere funzionalità per migliorare l'esperienza nella versione di anteprima più recente.
+   Anche se la nuova esperienza di controllo della versione di Git è ora disponibile per impostazione predefinita in Visual Studio 2019 versione [16.8,](/visualstudio/releases/2019/release-notes/)microsoft continua ad aggiungere funzionalità per migliorare l'esperienza nella versione di anteprima più recente.
 
-   Per altre informazioni, vedere la pagina relativa all' [esperienza git in Visual Studio](git-with-visual-studio.md) .
+   Per altre informazioni, vedere [l'esperienza Git in Visual Studio](../version-control/git-with-visual-studio.md) pagina.
 
-Per ulteriori informazioni sulla versione di anteprima &mdash; e su un collegamento per il download, &mdash; vedere la pagina di anteprima di **[Visual Studio](https://aka.ms/vspreview/)** .
+Per altre informazioni sulla versione di anteprima e un collegamento per il download, vedere la pagina Visual Studio Preview &mdash; &mdash; download. **[](https://aka.ms/vspreview/)**
 
 ## <a name="give-us-feedback"></a>Commenti e suggerimenti
 
@@ -238,17 +238,17 @@ Per ulteriori informazioni sulla versione di anteprima &mdash; e su un collegame
 
 * Se si vuole inviare un suggerimento per migliorare Visual Studio, è possibile usare lo strumento [Suggerisci una funzionalità](suggest-a-feature.md).
 
-* Se si verifica un problema a causa del quale Visual Studio smette di rispondere, arresti anomali o altri problemi di prestazioni, è possibile condividere con facilità i passaggi di riproduzione e i file di supporto usando lo strumento [segnala un problema](how-to-report-a-problem-with-visual-studio.md) .
+* Se si verifica un problema a causa del quale Visual Studio smette di rispondere, si arresta in modo anomalo o un altro problema di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto con Microsoft usando lo strumento Segnala un [problema.](how-to-report-a-problem-with-visual-studio.md)
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Novità della documentazione di Visual Studio](whats-new-visual-studio-docs.md)
-* [Note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
-* [Note sulla versione di Visual Studio 2019 per Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
+* [Novità della documentazione Visual Studio](whats-new-visual-studio-docs.md)
+* [note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
+* [note sulla versione di Visual Studio 2019 per Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Novità di Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Novità di C++ in Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
-* [Novità di C# 9,0](/dotnet/csharp/whats-new/csharp-9)
+* [Novità di C# 9.0](/dotnet/csharp/whats-new/csharp-9)
 * [Novità di .NET 5](/dotnet/core/dotnet-five)
 * [Novità di .NET Framework](/dotnet/framework/whats-new/)
-* [Microsoft Build Conference](https://www.microsoft.com/build)
+* [Conferenza Microsoft Build](https://www.microsoft.com/build)
 * [Conferenza Microsoft Ignite](https://www.microsoft.com/ignite)

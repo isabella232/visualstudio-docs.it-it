@@ -62,7 +62,7 @@
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: Distribuire in un'organizzazione
           items:
-            - name: Applicazione degli aggiornamenti amministratore
+            - name: Applicazione degli aggiornamenti dell'amministratore
               href: install/applying-administrator-updates.md
             - name: Abilitazione degli aggiornamenti dell'amministratore
               href: install/enabling-administrator-updates.md
@@ -192,9 +192,9 @@
           href: ide/create-new-project.md
         - name: Usare soluzioni e progetti
           href: ide/creating-solutions-and-projects.md
-        - name: Aprire un progetto da un repository in Visual Studio 2017
+        - name: Aprire un progetto da un repo in Visual Studio 2017
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Aprire un progetto da un repository in Visual Studio 2019
+        - name: Aprire un progetto da un repo in Visual Studio 2019
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Portabilità, migrazione e aggiornamento dei progetti'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -905,15 +905,8 @@
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
 - name: Debug >>
   href: debugger/index.yml
-- name: Controllo della versione
-  expanded: true
-  items:
-    - name: Nuova esperienza git in Visual Studio
-      href: ide/git-with-visual-studio.md
-    - name: Semplificazione del controllo del codice sorgente in Visual Studio
-      href: ide/git-visual-studio-source-control.md
-    - name: Confrontare git e Team Explorer side-by-side
-      href: ide/git-team-explorer-feature-comparison.md
+- name: Controllo della versione >>
+  href: version-control/index.yml
 - name: Test >>
   displayName: Unit testing
   href: test/index.yml
@@ -1081,7 +1074,7 @@
       items:
         - name: Gerarchia delle chiamate
           href: ide/reference/call-hierarchy.md
-        - name: PowerShell per sviluppatori Prompt dei comandi per gli sviluppatori &
+        - name: Prompt dei comandi per gli sviluppatori & PowerShell per sviluppatori
           href: ide/reference/command-prompt-powershell.md
         - name: Anteprima modifiche
           href: ide/preview-changes.md

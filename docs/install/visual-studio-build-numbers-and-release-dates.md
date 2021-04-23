@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 04/14/2021
+ms.date: 04/22/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: f2a1d033f9e97fe28d4992fc3dcb224c669b0d73
-ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
+ms.openlocfilehash: 9407d6dcb8a56d4c6844008cfc8cf6ac6fb8384c
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "107506324"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913020"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,8 +27,9 @@ ms.locfileid: "107506324"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione della build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.0 | Preview 2.1 | 22 aprile 2021 | 16.10.31220.234 |
 | 16.10.0 | Preview 2 | 14 aprile 2021 | 16.10.31213.239 |
 | 16.9.4 | Versione | 13 aprile 2021 | 16.9.31205.134 |
 | 16.7.14 | Versione | 13 aprile 2021 | 16.7.31205.176 |
@@ -221,7 +222,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione della build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.35 | Versione | 13 aprile 2021 | 15.9.28307.1500 |
 | 15.9.34 | Versione | 9 marzo 2021 | 15.9.28307.1440 |
