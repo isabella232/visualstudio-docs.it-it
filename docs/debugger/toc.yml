@@ -426,7 +426,7 @@
           href: debug-dotnet-core-in-wsl-2.md
         - name: Eseguire il debug di .NET Core in Linux tramite SSH
           href: remote-debugging-dotnet-core-linux-with-ssh.md
-        - name: Eseguire il debug con gli strumenti contenitore >>
+        - name: Eseguire il debug con Strumenti contenitore >>
           href: ../containers/edit-and-refresh.md
     - name: Tipi di applicazioni
       items:
@@ -688,6 +688,8 @@
       items:
         - name: Usare i file di dump
           href: using-dump-files.md
+        - name: Eseguire il debug di managed memory dump
+          href: how-to-debug-managed-memory-dump.md
         - name: API di estensibilità del riepilogo file dump
           href: dump-file-summary-extensibility-api.md
     - name: Sicurezza del debugger

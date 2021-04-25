@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8070bb93a1dd76ad29832afae15d83788300ae7a
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916522"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941110"
 ---
 # <a name="install-python-interpreters"></a>Installare interpreti Python
 
@@ -29,7 +29,7 @@ In alternativa, è possibile installare gli interpreti Python standard dalla fin
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio supporta Python versione 2.7, versione 3.5 e versioni successive. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare.
+> Visual Studio supporta Python versione 2.7, nonché dalla versione 3.5 alla 3.7. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare.
 ::: moniker-end
 
 Per **Visual Studio 2015 e versioni precedenti** è necessario installare manualmente uno degli interpreti.
@@ -71,4 +71,4 @@ Seguendo questa procedura si assicura il corretto aggiornamento delle voci del R
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)
 - [Usare requirements.txt per le dipendenze](managing-required-packages-with-requirements-txt.md)
 - [Percorsi di ricerca](search-paths.md)
-- [Informazioni di riferimento sulla finestra ambienti Python](python-environments-window-tab-reference.md)
+- [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md)
