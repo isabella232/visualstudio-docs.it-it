@@ -1,6 +1,6 @@
 ---
 title: JavaScript e TypeScript in Visual Studio 2019
-description: Scopri in che modo Visual Studio 2019 fornisce un supporto avanzato per lo sviluppo JavaScript, usando direttamente JavaScript, e anche usando il linguaggio di programmazione TypeScript.
+description: Informazioni su Visual Studio 2019 offre supporto rtf per lo sviluppo JavaScript, sia tramite JavaScript direttamente che con il linguaggio di programmazione TypeScript.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 03/16/2020
@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 0fe13030478f62f759b3eabc8e897c09a4295bad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 267bd8567b60a66bcf9d78c3aef8f02bbc942e0d
+ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936756"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108025878"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript e TypeScript in Visual Studio 2019
 
@@ -37,13 +37,13 @@ L'opzione per ripristinare il servizio di linguaggio JavaScript legacy non è pi
 
 Visual Studio 2019 offre diverse opzioni per l'integrazione della compilazione TypeScript nel progetto:
 
-* [Pacchetto NuGet typescript](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Quando si installa il pacchetto NuGet per TypeScript 3.2 o versione successiva nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
-* [Pacchetto NPM typescript](https://www.npmjs.com/package/typescript). Quando il pacchetto npm per TypeScript 2.1 o versione successiva è installato nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
+* Pacchetto [NuGet TypeScript](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Quando si installa il pacchetto NuGet per TypeScript 3.2 o versione successiva nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
+* Pacchetto [npm TypeScript](https://www.npmjs.com/package/typescript). Quando il pacchetto npm per TypeScript 2.1 o versione successiva è installato nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
 * TypeScript SDK, disponibile per impostazione predefinita nel programma di installazione di Visual Studio, nonché come download dell'SDK autonomo da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-395).
 
 > [!TIP]
-> Per i progetti sviluppati in Visual Studio 2019, si consiglia di usare il pacchetto TypeScript NuGet o TypeScript NPM per una maggiore portabilità tra piattaforme e ambienti diversi. Per altre informazioni, vedere [compilare codice typescript usando NuGet](../javascript/compile-typescript-code-nuget.md) e [compilare codice typescript usando TSC](../javascript/compile-typescript-code-npm.md).
+> Per i progetti sviluppati Visual Studio 2019, si consiglia di usare il pacchetto NuGet TypeScript o npm TypeScript per una maggiore portabilità tra piattaforme e ambienti diversi. Per altre informazioni, vedere [Compilare codice TypeScript con NuGet](../javascript/compile-typescript-code-nuget.md) e [Compilare codice TypeScript con tsc.](../javascript/compile-typescript-code-npm.md)
 
 ## <a name="projects"></a>Progetti
 
-Le app UWP JavaScript non sono più supportate in Visual Studio 2019. Non è possibile creare o aprire progetti UWP JavaScript (file con estensione *jsproj*). Per altre informazioni, vedere la documentazione sulla [ creazione delle app Web progressive](/microsoft-edge/progressive-web-apps/get-started) eseguite in modo corretto in Windows.
+Le app UWP JavaScript non sono più supportate in Visual Studio 2019. Non è possibile creare o aprire progetti UWP JavaScript (file con estensione *jsproj*). Per altre informazioni, vedere la documentazione sulla [ creazione delle app Web progressive](/microsoft-edge/progressive-web-apps-chromium) eseguite in modo corretto in Windows.

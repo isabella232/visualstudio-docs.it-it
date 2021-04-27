@@ -1,22 +1,22 @@
 ---
 title: Docker Compose di compilazione
 author: ghogen
-description: Informazioni su come modificare le proprietà Docker Compose compilazione per personalizzare la modalità Visual Studio compilazione ed esecuzione di un'Docker Compose applicazione.
+description: Informazioni su come modificare le Docker Compose di compilazione per personalizzare il modo in cui Visual Studio compila ed esegue un'Docker Compose applicazione.
 ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 7f1ebb11133c640c2e0bdcfd84660592792d4205
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: ed4b2a0dc1dc7a0520bf8e83ab1968a3815196e0
+ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825004"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108025865"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose proprietà di compilazione
 
-Oltre alle proprietà che controllano singoli progetti Docker, descritte in Container [Tools build properties](container-msbuild-properties.md)(Proprietà di compilazione di Strumenti contenitore), è anche possibile personalizzare il modo in cui Visual Studio compila i progetti Docker Compose impostando le proprietà Docker Compose utilizzate da MSBuild per compilare la soluzione. È anche possibile controllare il modo in cui il debugger di Visual Studio esegue le app Docker Compose impostando etichette di file nei file Docker Compose configurazione.
+Oltre alle proprietà che controllano i singoli progetti Docker, descritte [in](container-msbuild-properties.md)Proprietà di compilazione degli strumenti contenitore, è anche possibile personalizzare il modo in cui Visual Studio compila i progetti Docker Compose impostando le proprietà Docker Compose utilizzate da MSBuild per compilare la soluzione. È anche possibile controllare il modo in cui il debugger Visual Studio le app Docker Compose impostando etichette di file nei Docker Compose di configurazione.
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Come impostare le proprietà di MSBuild
 
@@ -28,31 +28,32 @@ Per impostare il valore di una proprietà, modificare il file di progetto. Per D
 </PropertyGroup>
 ```
 
-È possibile aggiungere l'impostazione della proprietà a un elemento esistente oppure, se non è `PropertyGroup` presente, creare un nuovo `PropertyGroup` elemento.
+È possibile aggiungere l'impostazione della proprietà a un elemento esistente oppure, se non ce `PropertyGroup` n'è uno, creare un nuovo `PropertyGroup` elemento.
 
 ## <a name="docker-compose-msbuild-properties"></a>Proprietà d MSBuild per Docker Compose
 
-La tabella seguente illustra le proprietà di MSBuild disponibili per Docker Compose progetti.
+La tabella seguente illustra le proprietà di MSBuild disponibili per Docker Compose progetto.
 
 | Nome proprietà | Location | Descrizione | Valore predefinito  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFilePaths|dcproj|Specifica altri file compose in un elenco delimitato da punto e virgola da inviare al docker-compose.exe per tutti i comandi. Sono consentiti percorsi relativi dal file di progetto docker-compose (dcproj).|-|
-|DockerComposeBaseFilePath|dcproj|Specifica la prima parte dei nomi file dei file docker-compose, senza *l'estensione yml.* Ad esempio: <br>1. DockerComposeBaseFilePath = null/undefined: usare il percorso del file di base *docker-compose* e i file verranno denominati *docker-compose.yml* e *docker-compose.override.yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: i file saranno denominati *mydockercompose.yml* e *mydockercompose.override.yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose:* i file saranno di un livello superiore. |docker-compose|
-|DockerComposeBuildArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose build` comando. Ad esempio: `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose down` comando. Ad esempio: `--timeout 500`|-|
+|AdditionalComposeFilePaths|dcproj|Specifica altri file compose in un elenco delimitato da punto e virgola da inviare a docker-compose.exe per tutti i comandi. Sono consentiti percorsi relativi dal file di progetto docker-compose (dcproj).|-|
+|DockerComposeBaseFilePath|dcproj|Specifica la prima parte dei nomi file dei file docker-compose, senza *l'estensione yml.* Ad esempio: <br>1. DockerComposeBaseFilePath = null/undefined: usare il percorso del file di base *docker-compose* e i file saranno denominati *docker-compose.yml* e *docker-compose.override.yml.*<br>2. DockerComposeBaseFilePath = *mydockercompose*: i file verranno denominati *mydockercompose.yml* e *mydockercompose.override.yml*.<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose:* i file saranno di un livello superiore. |docker-compose|
+|DockerComposeBuildArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose build` comando. Ad esempio: `--parallel --pull`. |
+|DockerComposeDownArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose down` comando. Ad esempio: `--timeout 500`.|-|  
 |DockerComposeProjectName| dcproj | Se specificato, esegue l'override del nome del progetto per un progetto docker-compose. | "dockercompose" + hash generato automaticamente |
 |DockerComposeProjectPath|csproj o vbproj|Percorso relativo del file di progetto docker-compose (dcproj). Impostare questa proprietà quando si pubblica il progetto di servizio per trovare le impostazioni di compilazione dell'immagine associate archiviate nel file docker-compose.yml.|-|
-|DockerComposeUpArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose up` comando. Ad esempio: `--timeout 500`|-|
-|DockerDevelopmentMode|dcproj| Controlla se l'ottimizzazione "compilazione in host" ("debug in modalità rapida") è abilitata.  I valori consentiti `Fast` sono e `Regular` . | `Fast` nella configurazione di debug o `Regular` in tutte le altre configurazioni |
-|DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire su F5 o CTRL+F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient.|nessuno|
+|DockerComposeProjectsToIgnore|dcproj| Specifica i progetti che docker-compose devono ignorare durante il debug. Questa proprietà può essere usata per qualsiasi progetto. I percorsi di file possono essere specificati in uno dei due modi seguenti: <br> 1. Relativo a dcproj. Ad esempio: `<DockerComposeProjectsToIgnore>path\to\AngularProject1.csproj</DockerComposeProjectsToIgnore>`. <br> 2. Percorsi assoluti.<br> **Nota:** i percorsi devono essere separati dal carattere di delimitazione `;` .|-|
+|DockerComposeUpArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose up` comando. Ad esempio: `--timeout 500`.|-|
+|DockerDevelopmentMode| dcproj | Controlla se il progetto utente è compilato nel contenitore. I valori consentiti **di Fast** **o Regular** [controllano le fasi compilate](https://aka.ms/containerfastmode) in un Dockerfile. Per impostazione predefinita, la configurazione di Debug è modalità veloce e la modalità normale in caso contrario. | Veloce |
+|DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire su F5 o CTRL+F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient. | Nessuno |
 |DockerLaunchBrowser| dcproj | Indica se avviare il browser. Ignorato se viene specificato DockerLaunchAction. | Falso |
-|DockerServiceName| dcproj|Se si specifica DockerLaunchAction o DockerLaunchBrowser, DockerServiceName è il nome del servizio che deve essere avviato.  Usare questa proprietà per determinare a quale dei potenziali progetti a cui può fare riferimento un file docker-compose verrà avviato.|-|
+|DockerServiceName| dcproj| Se si specifica DockerLaunchAction o DockerLaunchBrowser, DockerServiceName specifica il servizio a cui viene fatto riferimento nel file docker-compose da avviare.|-|
 |DockerServiceUrl| dcproj | URL da usare all'avvio del browser.  I token di sostituzione validi sono "{ServiceIPAddress}", "{ServicePort}" e "{Scheme}".  Ad esempio: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
 |DockerTargetOS| dcproj | Sistema operativo di destinazione usato durante la compilazione dell'immagine Docker.|-|
 
 ## <a name="example"></a>Esempio
 
-Se si modifica il percorso dei file docker compose impostando su un percorso relativo, è anche necessario assicurarsi che il contesto di compilazione sia stato modificato in modo che faccia riferimento alla cartella `DockerComposeBaseFilePath` della soluzione. Ad esempio, se il file docker compose è una cartella denominata *DockerComposeFiles,* il file docker compose deve impostare il contesto di compilazione su ".." o ".. /..", a seconda della posizione in cui si trova rispetto alla cartella della soluzione.
+Se si modifica il percorso dei file docker compose, impostando su un percorso relativo, è anche necessario assicurarsi che il contesto di compilazione sia stato modificato in modo che faccia riferimento alla cartella `DockerComposeBaseFilePath` della soluzione. Ad esempio, se il file docker compose è una cartella denominata *DockerComposeFiles,* il file docker compose deve impostare il contesto di compilazione su ".." o ".. /..", a seconda della posizione relativa alla cartella della soluzione.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -91,16 +92,16 @@ services:
 ```
 
 > [!NOTE]
-> DockerComposeBuildArguments, DockerComposeDownArguments e DockerComposeUpArguments sono nuovi in Visual Studio 2019 versione 16.3.
+> DockerComposeBuildArguments, DockerComposeDownArguments e DockerComposeUpArguments sono le novità di Visual Studio 2019 versione 16.3.
 
-## <a name="overriding-visual-studios-docker-compose-configuration"></a>Override della Visual Studio configurazione Docker Compose predefinita
+## <a name="overriding-visual-studios-docker-compose-configuration"></a>Override della Visual Studio della Docker Compose predefinita
 
-È possibile eseguire l'override di determinate impostazioni inserendo un file denominato  *docker-compose.vs.debug.yml* (per la modalità veloce) o *docker-compose.vs.release.yml* (per **la modalità** regolare) nella stessa directory del file *docker-compose.yml.* 
+È possibile eseguire l'override di determinate impostazioni inserendo un file denominato *docker-compose.vs.debug.yml* (per la  modalità **rapida)** o *docker-compose.vs.release.yml* (per la modalità regolare) nella stessa directory del file *docker-compose.yml.* 
 
 >[!TIP] 
->Per trovare i valori predefiniti per una di queste impostazioni, cercare in *docker-compose.vs.debug.g.yml* o *docker-compose.vs.release.g.yml*.
+>Per trovare i valori predefiniti per una di queste impostazioni, vedere *docker-compose.vs.debug.g.yml* o *docker-compose.vs.release.g.yml.*
 
-### <a name="docker-compose-file-labels"></a>Docker Compose etichette di file
+### <a name="docker-compose-file-labels"></a>Docker Compose etichette dei file
 
  In *docker-compose.vs.debug.yml* o *docker-compose.vs.release.yml* è possibile definire etichette specifiche dell'override come indicato di seguito:
 
@@ -117,12 +118,12 @@ Usare le virgolette doppie intorno ai valori, come nell'esempio precedente, e us
 |----------|-----------|
 |Com.microsoft.visualstudio.debuggee.arguments|Argomenti passati al programma all'avvio del debug. Per le app .NET Core, questi argomenti sono in genere percorsi di ricerca aggiuntivi per i pacchetti NuGet seguiti dal percorso dell'assembly di output del progetto.|
 |Com.microsoft.visualstudio.debuggee.program|Programma avviato all'avvio del debug. Per le app .NET Core, questa impostazione è in genere **dotnet**.|
-|com.microsoft.visualstudio.debuggee.workingdirectory|Directory utilizzata come directory iniziale all'avvio del debug. Questa impostazione è in *genere /app* per contenitori Linux o *C:\app* per contenitori Windows.|
-|com.microsoft.visualstudio.debuggee.killprogram|Questo comando viene usato per arrestare il programma oggetto del debug in esecuzione all'interno del contenitore (quando necessario).|
+|Com.microsoft.visualstudio.debuggee.workingdirectory|Directory utilizzata come directory iniziale all'avvio del debug. Questa impostazione è in genere */app* per contenitori Linux o *C:\app* per contenitori Windows.|
+|Com.microsoft.visualstudio.debuggee.killprogram|Questo comando viene usato per arrestare il programma dell'oggetto del debug in esecuzione all'interno del contenitore (se necessario).|
 
-### <a name="customize-the-docker-build-process"></a>Personalizzare il processo di compilazione di Docker
+### <a name="customize-the-docker-build-process"></a>Personalizzare il processo di compilazione docker
 
-È possibile dichiarare quale fase compilare nel Dockerfile usando `target` l'impostazione nella `build` proprietà . Questo override può essere usato solo in *docker-compose.vs.debug.yml* o *docker-compose.vs.release.yml* 
+È possibile dichiarare la fase da compilare nel Dockerfile usando `target` l'impostazione nella `build` proprietà . Questo override può essere usato solo in *docker-compose.vs.debug.yml* o *docker-compose.vs.release.yml* 
 
 ```yml
 services:
@@ -135,7 +136,7 @@ services:
 
 ### <a name="customize-the-app-startup-process"></a>Personalizzare il processo di avvio dell'app
 
-È possibile eseguire un comando o uno script personalizzato prima di avviare l'app usando `entrypoint` l'impostazione e rendendola dipendente da `DockerDevelopmentMode` . Ad esempio, se è necessario configurare un certificato solo **in** modalità rapida eseguendo , ma non in modalità normale, è possibile aggiungere il codice seguente solo `update-ca-certificates` in  *docker-compose.vs.debug.yml*: 
+È possibile eseguire un comando o uno script personalizzato prima di avviare l'app usando l'impostazione e `entrypoint` rendendola dipendente da `DockerDevelopmentMode` . Ad esempio, se è necessario configurare un certificato solo **in** modalità veloce eseguendo , ma non in modalità normale, è possibile aggiungere il codice seguente solo `update-ca-certificates` in  *docker-compose.vs.debug.yml*: 
 
 ```yml
 services:
@@ -147,7 +148,7 @@ services:
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per informazioni sulle proprietà di MSBuild in genere, vedere [Proprietà di MSBuild.](../msbuild/msbuild-properties.md)
+Per informazioni sulle proprietà di MSBuild in generale, vedere [Proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="see-also"></a>Vedi anche
 
