@@ -1,6 +1,6 @@
 ---
 title: Caricare un subset di progetti
-description: Informazioni sul filtro della soluzione e su come consente di caricare rapidamente un subset di progetti in una soluzione.
+description: Informazioni sui filtri delle soluzioni e su come consente di caricare rapidamente un subset di progetti in una soluzione.
 ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
@@ -8,16 +8,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: jillre
+author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: eae0d02e1fff3f9ad5b35384e6ccab599805372b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fc64b5f0623a03443278eaa8e4ee1f47b86da38
+ms.sourcegitcommit: 30c404655fb83ea28f96ab1edb1c09b4d8d7eec4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869388"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "108217197"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluzioni filtrate in Visual Studio
 
@@ -39,7 +39,7 @@ Sono disponibili le funzionalità seguenti:
 
 Per aprire una soluzione senza caricare uno dei relativi progetti dalla finestra di dialogo **Apri progetto**:
 
-1. Scegliere **file**  >  **Apri**  >  **progetto/soluzione** dalla barra dei menu.
+1. Scegliere **File**  >  **Apri**  >  **progetto/soluzione** dalla barra dei menu.
 
 2. Nella finestra di dialogo **Apri progetto** selezionare la soluzione e quindi selezionare la casella di controllo **Non caricare i progetti**.
 
@@ -59,7 +59,7 @@ Per aprire una soluzione senza caricare uno dei relativi progetti dalla finestra
 
 (Novità di Visual Studio 2019 versione 16.1)
 
-Per aprire una soluzione senza caricare alcun progetto dalla riga di comando, usare l' [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) opzione come illustrato nell'esempio seguente:
+Per aprire una soluzione senza caricare i progetti dalla riga di comando, usare [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) l'opzione come illustrato nell'esempio seguente:
 
 ```cmd
 devenv /donotloadprojects MySln.sln

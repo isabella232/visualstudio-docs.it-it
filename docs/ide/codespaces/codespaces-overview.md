@@ -1,73 +1,73 @@
 ---
-title: Panoramica degli spazi dei codespace di GitHub (anteprima)
-description: Scopri di più sugli spazi dei valori di GitHub con Visual Studio e su come può aiutarti a estendere l'ambiente di sviluppo al cloud.
+title: Panoramica di GitHub Codespaces (anteprima)
+description: Altre informazioni su GitHub Codespaces con Visual Studio e su come può aiutare a estendere l'ambiente di sviluppo al cloud.
 ms.topic: overview
 ms.date: 09/04/2020
-author: TerryGLee
-ms.author: tglee
+author: gregvanl
+ms.author: gregvanl
 manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ab50c3c2df2cfad6d489d800f47624503844dc9d
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672787"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298743"
 ---
-# <a name="what-is-github-codespaces-preview"></a>Che cosa sono gli spazi di dati di GitHub? (Anteprima)
+# <a name="what-is-github-codespaces-preview"></a>Che cos'è GitHub Codespaces? (Anteprima)
 
-> [!Important] 
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Si consiglia di partecipare al [Forum della community degli sviluppatori](https://developercommunity.visualstudio.com/home) per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap. 
+> [!Important]
+> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è incentrata sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di Visual Studio di lavoro. Si consiglia di partecipare al forum della [community](https://developercommunity.visualstudio.com/home) per sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Benvenuti in codespaces. Siamo lieti di essere qui.
+Benvenuti in Codespaces. Siamo lieti che tu sia qui.
 
-Gli spazi dei nomi in GitHub offrono un ambiente di sviluppo basato sul cloud per qualsiasi attività, indipendentemente dal fatto che si tratti di un progetto a lungo termine o da un'attività a breve termine come la revisione di una richiesta pull.
+GitHub Codespaces offre un ambiente di sviluppo basato sul cloud per qualsiasi attività, che si tratta di un progetto a lungo termine o di un'attività a breve termine, ad esempio la revisione di una richiesta pull.
 
-Inoltre, i codespace di GitHub offrono molti dei vantaggi di DevOps, ad esempio la ripetibilità e l'affidabilità, &mdash; che in genere sono stati riservati ai carichi &mdash; di lavoro di produzione in un ambiente di sviluppo. È anche possibile personalizzare gli spazi dei codebase di GitHub in modo che gli strumenti, i processi e le configurazioni che si preferisce e si affidino siano disponibili.
+GitHub Codespaces offre inoltre molti dei vantaggi di DevOps, ad esempio la ripetibilità e l'affidabilità, che in genere sono stati riservati ai carichi di lavoro di produzione in &mdash; &mdash; un ambiente di sviluppo. È anche possibile personalizzare GitHub Codespaces in modo che siano presenti anche gli strumenti, i processi e le configurazioni che si preferisce e su cui si basano.
 
-In questo documento vengono illustrati i concetti chiave e vengono introdotte le funzionalità di codespaces. Se si vuole iniziare, vedere [usare Visual Studio con una codespace](use-visual-studio-with-codespaces.md).
+Questo documento illustra i concetti chiave e introduce le funzionalità di Codespaces. Se si sta cercando di iniziare, vedere Usare Visual Studio [con uno spazio di codice](use-visual-studio-with-codespaces.md).
 
 ## <a name="concepts-and-features"></a>Concetti e funzionalità
 
-Le funzionalità degli spazi dei termini di GitHub sono basate su alcuni concetti fondamentali. Questa sezione illustra i concetti e fornisce una breve panoramica delle funzionalità.
+Le funzionalità di GitHub Codespaces si basano su alcuni concetti fondamentali. Questa sezione illustra questi concetti e offre una breve panoramica delle funzionalità.
 
 ### <a name="remote-development"></a>Sviluppo remoto
 
-Molti sviluppatori tentano oggi di scrivere codice in configurazioni remote o in macchine virtuali configurate con stack di sviluppo e di runtime specifici. Lo fanno perché è troppo complesso, troppo fastidioso e in alcuni casi, quasi impossibile configurare questi ambienti di sviluppo in locale. Inoltre, gli utenti vogliono provare le nuove tecnologie o i nuovi Framework senza la paura di "rovinare" i computer necessari per il lavoro quotidiano.
+Molti sviluppatori provano attualmente a creare codice in configurazioni remote o macchine virtuali configurate con stack di runtime e sviluppo specifici. Lo fanno perché è troppo difficile, troppo dannoso e in alcuni casi quasi impossibile configurare questi ambienti di sviluppo in locale. Inoltre, gli utenti vogliono provare nuove tecnologie o nuovi framework senza il timore di "incasinare" le macchine necessarie per il lavoro quotidiano.
 
-Quando si usano ambienti remoti e strumenti in grado di supportare gli sviluppatori, è spesso disponibile un sovraccarico di gestione del computer. La configurazione dell'ambiente spesso complica l'onboarding e il cambio del contesto. Gli spazi dei nomi di GitHub rimuovono le barriere al caricamento e al cambio di contesto rapidi, consentendo l'esistenza di molti ambienti contemporaneamente. 
+Anche se l'uso di ambienti remoti e strumenti con supporto remoto supporta gli sviluppatori, spesso la gestione dei computer è sovraccarica. La configurazione dell'ambiente spesso complica l'onboarding e il cambio di contesto. GitHub Codespaces elimina le barriere per il rapido onboarding e il cambio di contesto, consentendo la creazione simultanea di molti ambienti.
 
-Gli spazi dei codebase di GitHub forniscono soluzioni gestite che consentono di concentrarsi sulla produttività rispetto all'installazione. Gli spazi dei comandi di GitHub concettualmente e tecnicamente estendono Visual Studio 2019 per lo sviluppo remoto. 
+GitHub Codespaces offre soluzioni gestite che consentono di concentrarsi sulla produttività rispetto alla configurazione. GitHub Codespaces estende concettualmente e tecnicamente Visual Studio 2019 per lo sviluppo remoto.
 
-### <a name="about-codespaces"></a>Informazioni sui codespace
+### <a name="about-codespaces"></a>Informazioni sugli spazi di codice
 
-Un codespace è la metà "back-end" degli spazi dei Codedi GitHub. Si tratta del punto in cui si verifica tutto il calcolo associato allo sviluppo software: compilazione, debug, ripristino e così via. La creazione di un codespace prepara tutti gli elementi necessari per completare un'attività, esaminare una richiesta pull o avviare un nuovo progetto. Codespaces consente di configurare il runtime, il compilatore, il debugger, l'editor, le configurazioni dotfile personalizzate e il codice sorgente necessari per lavorare a un progetto.
+Uno spazio di codice è la metà "back-end" di GitHub Codespaces. È qui che si verificano tutte le risorse di calcolo associate allo sviluppo software: compilazione, debug, ripristino e così via. La creazione di uno spazio di codice prepara tutto il necessario per completare un'attività, esaminare una richiesta pull o avviare un nuovo progetto. Gli spazi di codice configurano il runtime, il compilatore, il debugger, l'editor, le configurazioni dotfile personalizzate e il codice sorgente necessario per lavorare a un progetto.
 
-Gli spazi dei nomi ospitati nel cloud offrono i vantaggi seguenti:
+Gli spazi di codice ospitati nel cloud offrono i vantaggi seguenti:
 
-- Sono veloci da creare e gettare. Creare il numero di richieste (fino a limiti di account) e quindi eliminarle al termine dell'operazione.
-- Sono gestiti, riducendo così la manutenzione complessiva.
-- Hanno prezzi prevedibili e paghi solo per ciò che usi. Per eliminare i costi di fuga, è disponibile la funzionalità di sospensione autonoma incorporata.
+- Sono veloci da creare ed eliminabili. Creare tutti gli elementi necessari (fino ai limiti dell'account) e quindi eliminarli al termine dell'operazione.
+- Vengono gestiti, riducendo così la manutenzione complessiva per l'utente.
+- Hanno prezzi prevedibili e si paga solo per ciò che si usa. È anche presente l'opzione autosuspend incorporata per eliminare i costi invasi.
 - Salvano le risorse di calcolo. Quando si sposta il carico di lavoro di sviluppo nel cloud, vengono liberate le risorse limitate nel computer personale.
 
 ## <a name="custom-configuration"></a>Configurazione personalizzata
 
-Gli spazi dei caratteri di GitHub sono compilati per supportare la più ampia gamma di progetti o attività. È possibile iniziare con le funzionalità di configurazione intelligente che forniscono impostazioni predefinite comuni o ottimizzare uno spazio dei nomi con [configurazione personalizzata](customize-codespaces.md).
+GitHub Codespaces è progettato per supportare la più ampia gamma di progetti o attività. È possibile iniziare con funzionalità di configurazione intelligente che forniscono impostazioni predefinite comuni o ottimizzare uno spazio di codice con [la configurazione personalizzata](customize-codespaces.md).
 
-La configurazione flessibile consente agli sviluppatori di eseguire rapidamente l'onboarding nei progetti con configurazione e requisiti univoci difficili da applicare in un computer locale. Inoltre, gli spazi dei coderiproducibili eliminano i problemi "funziona nel computer".
+La configurazione flessibile consente agli sviluppatori di eseguire rapidamente l'onboard di progetti con requisiti e configurazione univoci difficili da applicare in un computer locale. Inoltre, gli spazi di codice riproducibili eliminano i problemi di "funziona nel computer".
 
 ## <a name="personal-configuration"></a>Configurazione personale
 
-Sappiamo che la conservazione delle preferenze personali è fondamentale per fare in modo che lo sviluppo in un codespace ospitato nel cloud sia familiare e naturale. Gli spazi dei codebase di GitHub comportano personalizzazioni personalizzate sulla base di una configurazione codespace. Le preferenze e la configurazione personali per gli editor e i terminali sono supportati da spazi dei dati di GitHub.
+È noto che mantenere le preferenze personali è fondamentale per fare in modo che lo sviluppo in uno spazio di codice ospitato nel cloud sia familiare e naturale. GitHub Codespaces livelli personalizzazioni individualizzate in una configurazione dello spazio di codice. Le preferenze e la configurazione personali per editor e terminali sono supportate da GitHub Codespaces.
 
-È possibile creare uno spazio dei nomi con una raccolta specifica dell'utente di [Dotfiles personalizzati](https://docs.github.com/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account) (ad esempio,, e `.bashrc` `.gitconfig` così via) e gli spazi dei nomi di GitHub sincronizzano automaticamente l'identità, i temi e le impostazioni di Git, in modo che ogni spazio dei nomi creato appaia e si senta nel modo desiderato, indipendentemente dalle funzionalità dell'ambiente specifiche del progetto.
+È possibile creare uno spazio di codice con una raccolta specifica dell'utente di [file dotfile](https://docs.github.com/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account) personalizzati (ad `.bashrc` esempio, , e così via) e `.gitconfig` GitHub Codespaces sincronizza automaticamente l'identità, i temi e le impostazioni di Git in modo che ogni spazio di codice creato appai e si senta come si desidera, indipendentemente dalle funzionalità dell'ambiente specifico del progetto.
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Come usare Visual Studio con un codespace](use-visual-studio-with-codespaces.md)
-* [Come personalizzare uno spazio di codespace](customize-codespaces.md)
+* [Come usare Visual Studio con uno spazio di codice](use-visual-studio-with-codespaces.md)
+* [Come personalizzare uno spazio di codice](customize-codespaces.md)
 * [Funzionalità di Visual Studio supportate](supported-features-codespaces.md)

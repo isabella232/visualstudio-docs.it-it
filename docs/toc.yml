@@ -192,9 +192,9 @@
           href: ide/create-new-project.md
         - name: Usare soluzioni e progetti
           href: ide/creating-solutions-and-projects.md
-        - name: Aprire un progetto da un repo in Visual Studio 2017
+        - name: Aprire un progetto da un Visual Studio 2017
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Aprire un progetto da un repo in Visual Studio 2019
+        - name: Aprire un progetto da un Visual Studio 2019
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Portabilità, migrazione e aggiornamento dei progetti'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -1439,9 +1439,9 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: Novità di Visual Studio 2019
       href: ide/whats-new-visual-studio-2019.md
-    - name: Novità nella documentazione di Visual Studio
+    - name: Novità della documentazione
       href: ide/whats-new-visual-studio-docs.md
-    - name: Cronologia delle novità nella documentazione di Visual Studio
+    - name: Cronologia delle novità nella documentazione
       href: ide/whats-new-visual-studio-docs-history.md
     - name: Note sulla versione e requisiti di sistema
       items:
