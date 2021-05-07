@@ -137,7 +137,7 @@
     - name: Configurazione e uso
       href: live-unit-testing.md
     - name: Domande frequenti
-      href: live-unit-testing-faq.md
+      href: live-unit-testing-faq.yml
 - name: Test di carico e delle prestazioni Web
   items:
     - name: 'Guida introduttiva: Creare un progetto di test di carico'

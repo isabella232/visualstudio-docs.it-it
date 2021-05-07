@@ -49,7 +49,7 @@
             - name: Rimuovere le violazioni dell'analisi del codice
               href: in-source-suppression-overview.md
         - name: Domande frequenti
-          href: analyzers-faq.md
+          href: analyzers-faq.yml
     - name: Analisi legacy
       items:
         - name: Panoramica
@@ -92,7 +92,7 @@
             - name: Eseguire la migrazione dagli analizzatori FxCop agli analizzatori .NET
               href: migrate-from-fxcop-analyzers-to-net-analyzers.md
             - name: Domande frequenti
-              href: net-analyzers-faq.md
+              href: net-analyzers-faq.yml
         - name: Set di regole
           items:
             - name: Panoramica

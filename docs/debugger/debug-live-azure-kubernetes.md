@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di servizi Azure Kubernetes Azure ASP.NET attivi
-description: Informazioni su come usare il Snapshot Debugger in Visual Studio per impostare ancoraggio e acquisire snapshot durante il debug dei servizi Live ASP.NET Azure Kubernetes.
+description: Informazioni su come usare il Snapshot Debugger in Visual Studio per impostare punti di agganciamenti ed eseguire snapshot durante il debug in tempo ASP.NET servizi Azure Kubernetes.
 ms.custom: ''
 ms.date: 02/11/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: c1c8a593d147b8ba38393aabd89b293e0fbd5d26
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846964"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798466"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Eseguire il debug di servizi Azure Kubernetes Azure ASP.NET attivi con Snapshot Debugger
 
@@ -35,9 +35,9 @@ In questa esercitazione si apprenderà come:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Snapshot Debugger per i servizi di Azure Kubernetes è disponibile solo per Visual Studio 2019 Enterprise o versione successiva con il **carico di lavoro sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
+* Snapshot Debugger per i servizi Azure Kubernetes è disponibile solo per Visual Studio 2019 Enterprise o versione successiva con il carico di lavoro **Sviluppo di Azure.** (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
 
-    Se non è già installato, installare [Visual Studio 2019 Enterprise Edition](https://visualstudio.microsoft.com/vs/).
+    Se non è già installato, installare [Visual Studio 2019 Enterprise.](https://visualstudio.microsoft.com/vs/)
 
 * La raccolta di snapshot è disponibile per le app Web dei servizi Azure Kubernetes seguenti:
   * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Debian 9.
@@ -54,14 +54,14 @@ In questa esercitazione si apprenderà come:
     > [!IMPORTANT]
     > Per eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* pubblicata nel servizio Azure Kubernetes.
 
-1. Scegliere **Debug > connetti snapshot debugger...**. Selezionare la risorsa AKS in cui è distribuita l'app Web e un account di archiviazione di Azure e quindi fare clic su **Connetti**. Snapshot Debugger supporta anche il [servizio app Azure](debug-live-azure-applications.md) e le [macchine virtuali di Azure & i set di scalabilità di macchine virtuali](debug-live-azure-virtual-machines.md).
+1. Scegliere **Debug > Collega Snapshot Debugger...**. Selezionare la risorsa servizio AzureKs in cui è distribuita l'app Web e un account di archiviazione di Azure e quindi fare clic su **Collega.** Snapshot Debugger supporta anche i set [Servizio app di Azure](debug-live-azure-applications.md) macchine virtuali [di Azure e & di scalabilità di macchine virtuali.](debug-live-azure-virtual-machines.md)
 
     ![Avviare Snapshot Debugger dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
     ![Selezionare la risorsa di Azure](../debugger/media/snapshot-select-azure-resource-aks.png)
 
     > [!NOTE]
-    > (Visual Studio 2019 versione 16,2 e successive) Snapshot Debugger ha abilitato il supporto cloud di Azure. Assicurarsi che la risorsa di Azure e l'account di archiviazione di Azure selezionati si trovino nello stesso cloud. Per domande sulle configurazioni di [conformità di Azure](https://azure.microsoft.com/overview/trusted-cloud/) dell'organizzazione, contattare l'amministratore di Azure.
+    > (Visual Studio 2019 versione 16.2 e successive) Snapshot Debugger ha abilitato il supporto cloud di Azure. Assicurarsi che sia la risorsa di Azure che Archiviazione di Azure'account selezionato siano nello stesso cloud. Per domande sulle configurazioni di conformità di Azure dell'organizzazione, contattare [l'amministratore di Azure.](https://azure.microsoft.com/overview/trusted-cloud/)
 
 Visual Studio è ora in modalità debug di snapshot.
 
@@ -73,7 +73,7 @@ Visual Studio è ora in modalità debug di snapshot.
 
 ## <a name="set-a-snappoint"></a>Impostare un punto di acquisizione snapshot
 
-1. Nell'editor di codice fare clic sulla barra di navigazione a sinistra accanto a una riga di codice a cui si è interessati per impostare un ancoraggio. Verificare che il codice che si conosce verrà eseguito.
+1. Nell'editor di codice fare clic sulla barra di spostamento sinistra accanto a una riga di codice a cui si è interessati per impostare un punto di agganciato. Assicurarsi che sia il codice che verrà eseguito.
 
    ![Impostare un punto di acquisizione snapshot](../debugger/media/snapshot-set-snappoint.png)
 
@@ -86,7 +86,7 @@ Visual Studio è ora in modalità debug di snapshot.
 
 ## <a name="take-a-snapshot"></a>Creare uno snapshot
 
-Una volta impostato un ancoraggio, è possibile generare manualmente uno snapshot selezionando la visualizzazione del sito Web e eseguendo la riga di codice contrassegnata o attendendo che gli utenti ne generino uno dall'utilizzo del sito.
+Dopo aver impostato un punto di agganciato, è possibile generare manualmente uno snapshot dalla visualizzazione del browser del sito Web ed eseguendo la riga di codice contrassegnata o attendere che gli utenti ne generino uno dall'utilizzo del sito.
 
 ## <a name="inspect-snapshot-data"></a>Esaminare i dati dello snapshot
 
@@ -100,15 +100,15 @@ Una volta impostato un ancoraggio, è possibile generare manualmente uno snapsho
 
     Da questa visualizzazione, è possibile passare il mouse sulle variabili per visualizzare i suggerimenti dati, usare le finestre **Variabili locali**, **Espressioni di controllo** e **Stack di chiamate** e anche valutare le espressioni.
 
-    Il sito Web stesso è ancora Live e gli utenti finali non sono interessati. Viene acquisito un solo snapshot per ogni punto di acquisizione snapshot per impostazione predefinita. Dopo l'acquisizione, il punto di acquisizione snapshot viene disattivato. Se si vuole acquisire un altro snapshot in corrispondenza del punto di acquisizione snapshot, è possibile riattivare il punto di acquisizione snapshot facendo clic su **Aggiorna raccolta**.
+    Il sito Web stesso è ancora live e gli utenti finali non sono interessati. Viene acquisito un solo snapshot per ogni punto di acquisizione snapshot per impostazione predefinita. Dopo l'acquisizione, il punto di acquisizione snapshot viene disattivato. Se si vuole acquisire un altro snapshot in corrispondenza del punto di acquisizione snapshot, è possibile riattivare il punto di acquisizione snapshot facendo clic su **Aggiorna raccolta**.
 
 È anche possibile aggiungere ulteriori punti di acquisizione snapshot all'app e attivarli con il pulsante **Aggiorna raccolta**.
 
-**Richiesta di assistenza** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
+**Richiesta di assistenza** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.yml).
 
 ## <a name="set-a-conditional-snappoint"></a>Impostare un punto di acquisizione snapshot condizionale
 
-Se è difficile ricreare un determinato stato nell'app, è consigliabile usare un ancoraggio condizionale. I ancoraggio condizionali consentono di controllare quando creare uno snapshot, ad esempio quando una variabile contiene un determinato valore che si desidera controllare. È possibile impostare le condizioni usando espressioni, filtri o numeri di passaggi.
+Se è difficile ricreare uno stato specifico nell'app, è consigliabile usare un punto di agganciato condizionale. I punti di agganciamenti condizionali consentono di controllare quando creare uno snapshot, ad esempio quando una variabile contiene un determinato valore che si vuole controllare. È possibile impostare le condizioni usando espressioni, filtri o numeri di passaggi.
 
 #### <a name="to-create-a-conditional-snappoint"></a>Per creare un punto di acquisizione snapshot condizionale
 
@@ -147,4 +147,4 @@ Oltre ad acquisire uno snapshot quando viene raggiunto un punto di acquisizione 
 In questa esercitazione si è appreso come usare Snapshot Debugger per Kubernetes di Azure. Sono disponibili altre informazioni su questa funzionalità.
 
 > [!div class="nextstepaction"]
-> [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md)
+> [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.yml)

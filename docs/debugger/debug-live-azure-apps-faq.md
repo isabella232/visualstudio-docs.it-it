@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti sul debug di snapshot | Microsoft Docs
-description: Esaminare un elenco di domande frequenti (FAQ) che potrebbero essere rilevate durante il debug di applicazioni Azure attive usando il Snapshot Debugger in Visual Studio.
+description: Esaminare un elenco di domande frequenti che potrebbero verificarsi durante il debug di applicazioni Azure in tempo reale Snapshot Debugger in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/07/2017
 ms.topic: reference
@@ -13,11 +13,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 9bd8a80f7f6d11587c9f0cd5c6b9bf96e38a0a74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873237"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108800501"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Domande frequenti per il debug di snapshot in Visual Studio
 
@@ -33,7 +33,7 @@ In presenza di più istanze dell'app, a ogni singola istanza vengono applicati p
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>In che modo Snapshot Debugger carica i simboli?
 
-Snapshot Debugger richiede di avere a disposizione i simboli corrispondenti per l'applicazione in locale o distribuiti nel servizio app di Azure. (PDB Embedded non sono attualmente supportati). Il Snapshot Debugger Scarica automaticamente i simboli dal servizio app Azure. A partire da Visual Studio 2017 versione 15.2, la distribuzione nel servizio app di Azure consente di distribuire anche i simboli dell'app.
+Snapshot Debugger richiede di avere a disposizione i simboli corrispondenti per l'applicazione in locale o distribuiti nel servizio app di Azure. I PDB incorporati non sono attualmente supportati. Il Snapshot Debugger scarica automaticamente i simboli dal Servizio app di Azure. A partire da Visual Studio 2017 versione 15.2, la distribuzione nel servizio app di Azure consente di distribuire anche i simboli dell'app.
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Snapshot Debugger funziona sulle build di versione dell'applicazione?
 
@@ -51,7 +51,7 @@ Sì, il debug di snapshot può funzionare nei server in condizioni di carico ele
 
 È possibile disinstallare l'estensione del sito Snapshot Debugger nel servizio app seguendo questa procedura:
 
-1. Disattivare il servizio app tramite il Cloud Explorer in Visual Studio o nel portale di Azure.
+1. Disattivare il servizio app tramite il Cloud Explorer in Visual Studio o il portale di Azure.
 1. Passare al sito di Kudu del servizio app (ovvero, servizioapp.**scm**.azurewebsites.net) e passare a **Estensioni del sito**.
 1. Fare clic sulla X per l'estensione del sito Snapshot Debugger per rimuoverla.
 
@@ -59,26 +59,26 @@ Sì, il debug di snapshot può funzionare nei server in condizioni di carico ele
 
 Snapshot Debugger deve aprire un set di porte per eseguire il debug degli snapshot creati in Azure. Si tratta delle stesse porte necessarie per il debug remoto. [È possibile trovare l'elenco delle porte qui](../debugger/remote-debugger-port-assignments.md).
 
-#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Ricerca per categorie disabilitare l'estensione del debugger remoto?
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Ricerca per categorie disabilitare l'estensione Debugger remoto?
 
-Per i servizi app:
-1. Disabilitare l'estensione del debugger remoto tramite il portale di Azure per il servizio app.
-2. Portale di Azure > il pannello della risorsa del servizio applicazione > *le impostazioni dell'applicazione*
-3. Passare alla sezione *debug* e fare clic sul pulsante *off* per il *debug remoto*.
+Per Servizi app:
+1. Disabilitare l'estensione Debugger remoto tramite portale di Azure per il servizio app.
+2. portale di Azure > pannello della risorsa servizio dell'applicazione > *impostazioni dell'applicazione*
+3. Passare alla sezione *Debug* e fare clic sul *pulsante Disattivato* per *Debug remoto*.
 
-Per AKS:
-1. Aggiornare il Dockerfile per rimuovere le sezioni corrispondenti al [Visual Studio snapshot debugger nelle immagini Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
+Per il server del supporto di AKS:
+1. Aggiornare il Dockerfile per rimuovere le sezioni corrispondenti alla Visual Studio Snapshot Debugger [nelle immagini Docker.](https://github.com/Microsoft/vssnapshotdebugger-docker)
 2. Ricompilare e ridistribuire l'immagine Docker modificata.
 
-Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'estensione del debugger remoto, i certificati, gli insiemi di credenziali delle credenziali e i pool NAT in ingresso come segue:
+Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'estensione Debugger remoto, i certificati, gli insiemi di chiavi e i pool NAT in ingresso come indicato di seguito:
 
-1. Rimuovi estensione debugger remoto
+1. Rimuovere l'estensione Debugger remoto
 
    Esistono diversi modi per disabilitare il debugger remoto per le macchine virtuali e i set di scalabilità di macchine virtuali:
 
       - Disabilitare il debugger remoto tramite Cloud Explorer
 
-         - Cloud Explorer > la risorsa della macchina virtuale > disabilitare il debug (la disabilitazione del debug non esiste per il set di scalabilità di macchine virtuali in Cloud Explorer).
+         - Cloud Explorer > la risorsa macchina virtuale > il debug (la disabilitazione del debug non esiste per il set di scalabilità di macchine virtuali Cloud Explorer).
 
       - Disabilitare il debugger remoto con script/cmdlet di PowerShell
 
@@ -97,19 +97,19 @@ Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'est
          ```
 
       - Disabilitare il debugger remoto tramite il portale di Azure
-         - Portale di Azure > il pannello della risorsa macchina virtuale/set di scalabilità di macchine virtuali > estensioni
-         - Disinstallare l'estensione Microsoft. VisualStudio. Azure. RemoteDebug. VSRemoteDebugger
+         - portale di Azure > pannello delle risorse della macchina virtuale/set di scalabilità di macchine virtuali > estensioni
+         - Disinstallare l'estensione Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
 
          > [!NOTE]
-         > Set di scalabilità di macchine virtuali: il portale non consente di rimuovere le porte DebuggerListener. Sarà necessario usare Azure PowerShell. Vedere di seguito per altri dettagli.
+         > Set di scalabilità di macchine virtuali: il portale non consente la rimozione delle porte DebuggerListener. È necessario usare Azure PowerShell. Vedere di seguito per altri dettagli.
 
-2. Rimuovere i certificati e l'insieme di credenziali delle credenziali di Azure
+2. Rimuovere certificati e Azure KeyVault
 
-   Quando si installa l'estensione del debugger remoto per la macchina virtuale o i set di scalabilità di macchine virtuali, vengono creati i certificati client e server per autenticare il client di Visual Studio con le risorse della macchina virtuale di Azure o dei set di scalabilità di macchine virtuali.
+   Quando si installa l'estensione Debugger remoto per i set di scalabilità di macchine virtuali o macchine virtuali, vengono creati certificati client e server per autenticare il client Visual Studio con le risorse dei set di scalabilità di macchine virtuali o macchine virtuali di Azure.
 
    - Certificato client
 
-      Questo certificato è un certificato autofirmato che si trova in cert:/CurrentUser/My/
+      Questo certificato è un certificato autofirmato che si trova in Cert:/CurrentUser/My/
 
       ```
       Thumbprint                                Subject
@@ -126,9 +126,9 @@ Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'est
       ```
 
    - Certificato del server
-      - L'identificazione personale del certificato server corrispondente viene distribuita come chiave privata nell'insieme di credenziali delle credenziali di Azure. Visual Studio tenterà di trovare o creare un insieme di credenziali delle credenziali con prefisso MSVSAZ * nell'area corrispondente alla risorsa della macchina virtuale o dei set di scalabilità di macchine virtuali. Tutte le risorse della macchina virtuale o del set di scalabilità di macchine virtuali distribuite in tale area condividono pertanto lo stesso insieme di credenziali delle credenziali.
-      - Per eliminare il segreto di identificazione personale del certificato del server, passare alla portale di Azure e trovare l'insieme di credenziali delle MSVSAZ * nella stessa area in cui è ospitata la risorsa. Elimina il segreto che dovrebbe essere etichettato `remotedebugcert<<ResourceName>>`
-      - Sarà anche necessario eliminare il segreto server dalla risorsa tramite PowerShell.
+      - L'identificazione personale del certificato server corrispondente viene distribuita come segreto in Azure KeyVault. Visual Studio tenterà di trovare o creare un KeyVault con il prefisso MSVSAZ* nell'area corrispondente alla risorsa della macchina virtuale o dei set di scalabilità di macchine virtuali. Tutte le risorse di macchine virtuali o set di scalabilità di macchine virtuali distribuite in tale area condivideranno quindi lo stesso KeyVault.
+      - Per eliminare il segreto dell'identificazione personale del certificato server, passare al portale di Azure e trovare MSVSAZ* KeyVault nella stessa area che ospita la risorsa. Eliminare il segreto che deve essere etichettato `remotedebugcert<<ResourceName>>`
+      - Sarà anche necessario eliminare il segreto del server dalla risorsa tramite PowerShell.
 
       Per le macchine virtuali:
 
@@ -144,9 +144,9 @@ Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'est
       Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
       ```
 
-3. Rimuovi tutti i pool NAT in ingresso DebuggerListener (solo set di scalabilità di macchine virtuali)
+3. Rimuovere tutti i pool NAT in ingresso DebuggerListener (solo set di scalabilità di macchine virtuali)
 
-   Il debugger remoto introduce i pool NAT in ingresso DebuggerListener che vengono applicati al servizio di bilanciamento del carico del servizio di scalabilità.
+   Il debugger remoto introduce i pool NAT in associazione DebuggerListener applicati al servizio di bilanciamento del carico del set di scalabilità.
 
    ```powershell
    $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
@@ -163,27 +163,27 @@ Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'est
 #### <a name="how-do-i-disable-snapshot-debugger"></a>Ricerca per categorie disabilitare Snapshot Debugger?
 
 Per il servizio app:
-1. Disabilitare Snapshot Debugger tramite la portale di Azure per il servizio app.
-2. Portale di Azure > il pannello della risorsa del servizio applicazione > *le impostazioni dell'applicazione*
+1. Disabilitare Snapshot Debugger tramite il portale di Azure per il servizio app.
+2. portale di Azure > pannello della risorsa servizio dell'applicazione > *impostazioni dell'applicazione*
 3. Eliminare le impostazioni dell'app seguenti nel portale di Azure e salvare le modifiche.
    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
    > [!WARNING]
-   > Tutte le modifiche apportate alle impostazioni dell'applicazione avvierà il riavvio di un'app. Per altre informazioni sulle impostazioni dell'applicazione, vedere [configurare un'app del servizio app nel portale di Azure](/azure/app-service/web-sites-configure).
+   > Qualsiasi modifica apportata a Impostazioni applicazione avvierà un riavvio dell'app. Per altre informazioni sulle impostazioni dell'applicazione, vedere [Configurare un'app del](/azure/app-service/web-sites-configure)servizio app nella portale di Azure .
 
-Per AKS:
-1. Aggiornare il Dockerfile per rimuovere le sezioni corrispondenti al [Visual Studio snapshot debugger nelle immagini Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
+Per il server del supporto di AKS:
+1. Aggiornare il Dockerfile per rimuovere le sezioni corrispondenti alla Visual Studio Snapshot Debugger [nelle immagini Docker.](https://github.com/Microsoft/vssnapshotdebugger-docker)
 2. Ricompilare e ridistribuire l'immagine Docker modificata.
 
 Per i set di scalabilità di macchine virtuali/macchine virtuali:
 
-Esistono diversi modi per disabilitare la Snapshot Debugger:
-- Cloud Explorer > la risorsa della macchina virtuale o del set di scalabilità di macchine virtuali > disabilitare la diagnostica
+Esistono diversi modi per disabilitare il Snapshot Debugger:
+- Cloud Explorer > la risorsa macchina virtuale/set di scalabilità di macchine virtuali > Disabilita diagnostica
 
-- Portale di Azure > il pannello della risorsa macchina virtuale/set di scalabilità di macchine virtuali > estensioni > disinstallare Microsoft. Insights. VMDiagnosticsSettings
+- portale di Azure > pannello della risorsa macchina virtuale/set di scalabilità di macchine virtuali > estensioni > disinstalla l'estensione Microsoft.Insights.VMDiagnosticsSettings
 
-- Cmdlet di PowerShell da [AZ PowerShell](/powershell/azure/overview)
+- Cmdlet di PowerShell da [Az PowerShell](/powershell/azure/overview)
 
    Macchina virtuale:
 
@@ -202,6 +202,6 @@ Esistono diversi modi per disabilitare la Snapshot Debugger:
 
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Eseguire il debug di app ASP.NET attive con Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Eseguire il debug dei set di scalabilità di macchine virtuali ASP.NET Snapshot Debugger di Azure in Live](../debugger/debug-live-azure-virtual-machines.md)
+- [Eseguire il debug ASP.NET set di scalabilità Macchine virtuali di Azure\Macchine virtuali usando il Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
 - [Eseguire il debug di servizi Azure Kubernetes ASP.NET attivi con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
 - [Risoluzione dei problemi e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md)

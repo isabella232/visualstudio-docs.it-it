@@ -1,8 +1,8 @@
 ---
-title: 'Visual Studio documenti: Novità di marzo 2021'
+title: "Visual Studio docs: What's new for April 2021 (Novità di aprile 2021)"
 titleSuffix: ''
-description: Novità della documentazione Visual Studio marzo 2021.
-ms.date: 04/02/2021
+description: Novità della documentazione di Visual Studio aprile 2021.
+ms.date: 05/03/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,215 +15,226 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 863ba91f88ee953ce7d62179ff3b50aca5500c83
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: 38115892acc9c27e70ad956740cee8ae9e9c66ef
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913059"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640935"
 ---
-# <a name="visual-studio-docs-whats-new-for-march-2021"></a>Visual Studio documenti: Novità di marzo 2021
+# <a name="visual-studio-docs-whats-new-for-april-2021"></a>Visual Studio docs: What's new for April 2021 (Novità di aprile 2021)
 
-Ecco le novità della documentazione Visual Studio di marzo 2021. Questo articolo elenca alcune delle principali modifiche apportate alla documentazione durante questo periodo. Per informazioni sulle novità dei mesi precedenti, vedere [l'articolo](whats-new-visual-studio-docs-history.md) Novità della cronologia.
+Ecco le novità della documentazione Visual Studio aprile 2021. Questo articolo elenca alcune delle principali modifiche apportate alla documentazione durante questo periodo. Per informazioni sulle novità dei mesi precedenti, vedere [l'articolo novità della](whats-new-visual-studio-docs-history.md) cronologia.
 
-## <a name="code-quality"></a>Qualità del codice
+## <a name="azure"></a>Azure
 
 **Articoli aggiornati**
 
-- [Procedura: Eseguire manualmente l'analisi del codice legacy per il codice gestito](../code-quality/how-to-run-legacy-code-analysis-manually-for-managed-code.md) - Confermare l'unione dal ramo di lavoro
-- [Abilitare o installare analizzatori .NET](../code-quality/install-net-analyzers.md) di prima parte - Correzioni di problemi di GitHub
+- [Creare e distribuire in Servizi cloud (supporto esteso) in Visual Studio](../azure/cloud-services-extended-support.md) - Servizi cloud (supporto esteso) - Modifiche per la versione ga
 
 ## <a name="containers"></a>Contenitori
 
+**Nuovi articoli**
+
+- [Usare l'identità gestita con Bridge to Kubernetes](../containers/managed-identity.md) - Identità gestita per Bridge to Kubernetes
+
 **Articoli aggiornati**
 
-- [Usare Bridge to Kubernetes](../containers/bridge-to-kubernetes.md) - Bridge to Kubernetes: Usare l'esempio di todo-app .NET
-- [Docker Compose proprietà di compilazione -](../containers/docker-compose-properties.md) Aggiunta di ComposeProjectName
-- [Funzionamento Bridge to Kubernetes -](../containers/overview-bridge-to-kubernetes.md) Bridge to Kubernetes: Limitazioni di aggiornamento
-- [Esercitazione: Creare un'app multi-contenitore con Docker Compose](../containers/tutorial-multicontainer.md) - Esercitazione multicontenitore di Strumenti contenitore: correggere il collegamento all'immagine
+- [Docker Compose proprietà di compilazione](../containers/docker-compose-properties.md) - Aggiungere proprietà compose
+- [Come Visual Studio le app in contenitori](../containers/container-build.md) - Aggiornamento per LTS
 
 ## <a name="debugger"></a>Debugger
 
-**Articoli aggiornati**
+**Nuovi articoli**
 
-- Procedura: Eseguire il debug da un progetto [DLL in Visual Studio (C#, C++, Visual Basic, F#)](../debugger/how-to-debug-from-a-dll-project.md) - Aggiornare come eseguire il debug da una DLL
-- Specificare il simbolo (con estensione pdb) e i file di origine nel [debugger di Visual Studio (C#, C++, Visual Basic, F#)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) - Aggiornare come eseguire il debug da una DLL
-- [Asserzioni C/C++](../debugger/c-cpp-assertions.md) - Correzioni dei problemi di GitHub
-- [IDiaDataSource::loadDataForExe](../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) : i problemi di GitHub funzionano
-- [Identificatori di formato per C++ nel debugger Visual Studio:](../debugger/format-specifiers-in-cpp.md) i problemi di GitHub funzionano
-- [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md) - Correzioni dei problemi di GitHub
-- [Debug remoto ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) - Aggiornamenti alla documentazione sul debug remoto per IIS e Azure
-- [Remote Debug ASP.NET Core in un computer IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) remoto in Visual Studio - Aggiornamenti alla documentazione sul debug remoto per IIS e Azure
-- [Remote Debug ASP.NET Core in IIS in Azure in Visual Studio](../debugger/remote-debugging-azure.md) - Aggiornamenti alla documentazione sul debug remoto per IIS e Azure
-
-## <a name="deployment"></a>Distribuzione
+- [IDiaSymbol::get_framePadOffset](../debugger/debug-interface-access/idiasymbol-get-framepadoffset.md) - DIA SDK aggiunte
+- [IDiaSymbol::get_framePadSize](../debugger/debug-interface-access/idiasymbol-get-framepadsize.md) - DIA SDK aggiunte
+- [IDiaSymbol::get_isRTCs](../debugger/debug-interface-access/idiasymbol-get-isrtcs.md) - DIA SDK aggiunte
+- [Come eseguire il debug di un dump managed memory con gli analizzatori di diagnostica .NET](../debugger/how-to-debug-managed-memory-dump.md) - Vs memory dump analyzers
 
 **Articoli aggiornati**
 
-- [Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md) - Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori
-- [Distribuire un'app in una cartella usando Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) - Aggiornamenti alla documentazione di debug remoto per IIS e Azure
-
-## <a name="extensibility"></a>Estendibilità
-
-**Articoli aggiornati**
-
-- [Dizionario del linguaggio visivo-](../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md) Aggiungere parentesi markdown mancanti per correggere l'errore di rendering dell'icona
-- [Elemento VisibilityItem](../extensibility/visibilityitem-element.md) - Conferma unione dal ramo di lavoro
-- [Risoluzione dei problemi di installazione](../extensibility/troubleshooting-template-discovery.md) dei modelli - PowerShell Prompt dei comandi per gli sviluppatori e developer
+- [File di dump nel debugger Visual Studio - Analizzatori](../debugger/using-dump-files.md) di dump della memoria
+- [Come eseguire il debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) - Aggiunta di VB alla guida per principianti
 
 ## <a name="get-started"></a>Introduzione
 
 **Articoli aggiornati**
 
-- [Esercitazione: Aprire un progetto da un repo](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md)
-  - aggiornare gli argomenti con il confronto side-by-side del collegamento git & Team Explorer
-  - aggiungere collegamenti di accesso per altre informazioni alla sezione di accesso
-- [Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
-  - Confermare l'unione dal ramo di lavoro
-  - Aggiornare tutorial-aspnet-core.md
+- [Esercitazione: Estendere una semplice app console C#](../get-started/csharp/tutorial-console-part-2.md) - Chiarire i passaggi e aggiungere codice completo per estendere l'esercitazione sul sidewalk
 
 ## <a name="ide"></a>IDE
 
-**Nuovi articoli**
-- [Come Visual Studio semplifica il controllo del codice sorgente:](../version-control/git-visual-studio-source-control.md) creare un nuovo Visual Studio controllo del codice sorgente
-- [Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori](./reference/command-prompt-powershell.md) - PowerShell Prompt dei comandi per gli sviluppatori e developer
-- [Confronto side-by-side](../version-control/git-team-explorer-feature-comparison.md) tra Git e Team Explorer: aggiungere una nuova pagina di confronto side-by-side delle Team Explorer e delle nuove funzionalità Git
-
 **Articoli aggiornati**
 
-- [Log generati dal sistema raccolti da Visual Studio](./diagnostic-data-collection.md) - Aggiornamento diagnostic-data-collection.md
-- [Visual Studio Analisi utilizzo software](./visual-studio-experience-improvement-program.md) - Aggiornamento visual-studio-experience-improvement-program.md
-- [Personalizzare i modelli di progetto ed](./customizing-project-and-item-templates.md) elemento: aggiungere collegamenti alla personalizzazione dei modelli e all'uso della riga di comando
-- [Procedura: Creare modelli di progetto -](./how-to-create-project-templates.md) Aggiungere collegamenti alla personalizzazione dei modelli e all'uso della riga di comando
-- [Guida F1 dell'editor di](./not-in-toc/default-f1-text-editor.md) codice - Collegare gli aggiornamenti per le pagine predefinite F1
-- [Guida F1](./not-in-toc/default.md) - Collegare gli aggiornamenti per le pagine predefinite F1
-- [Guida introduttiva: Usare Visual Studio per creare la prima app Node.js -](./quickstart-nodejs.md) Aggiornamenti di AngularJS
-- [Estrarre un refactoring di un metodo](./reference/extract-method.md) - Aggiornare extract-method.md
-- [finestra di progettazione XAML opzioni predefinite:](./reference/xaml-designer.md) aggiungere informazioni sulle opzioni appena aggiunte nella finestra di progettazione XAML
-- [Novità di Visual Studio 2019](./whats-new-visual-studio-2019.md)
-  - aggiungere informazioni sul servizio Ricerca intelligente
-  - aggiungere un nuovo collegamento CSharp 9 a Vedere anche
-- [Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori](./reference/command-prompt-powershell.md)
-  - Aggiornare i titoli delle funzionalità e rimuovere la sezione prereqs
-  - Aggiornare la gerarchia delle intestazioni
-  - Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori
-- [Connettersi ai progetti in Team Explorer](./connect-team-project.md) - Aggiornare gli argomenti con il confronto side-by-side del collegamento git & Team Explorer
-- [Esperienza Git in Visual Studio](./git-with-visual-studio.md)
-  - aggiungere Azure DevOps'istruzione remota esistente
-  - Aggiungere una nuova pagina di confronto side-by-side di Team Explorer e nuove funzionalità git
-  - Argomento -b mancante in git-with-visual-studio.md
-- [Tasti di scelta rapida predefiniti in Visual Studio:](./default-keyboard-shortcuts-in-visual-studio.md) aggiungere la scelta rapida da tastiera Imposta condizioni punto di interruzione mancante
-- [Autorizzazioni utente e Visual Studio:](./user-permissions-and-visual-studio.md) aggiungere la procedura per impostare i privilegi di amministratore nel collegamento
-- [Generare override dei metodi Equals e GetHashCode in Visual Studio](./reference/generate-equals-gethashcode-methods.md)
-  - ridurre le dimensioni dello screenshot e aggiungere modifiche secondarie a un'istruzione
-  - aggiungere codice da associare agli screenshot
-- [Usare espressioni regolari in Visual Studio:](./using-regular-expressions-in-visual-studio.md) correggere un'espressione regolare errata
-- [Risolvere i problemi e creare log per i problemi di MSBuild](./msbuild-logs.md) - Confermare l'unione dal ramo di lavoro
-- [Personalizzare le attività di compilazione e debug per lo](./customize-build-and-debug-tasks-in-visual-studio.md) sviluppo di open folder - Prompt dei comandi per gli sviluppatori e PowerShell per sviluppatori
-- [Visual Studio di produttività per gli sviluppatori C#:](./csharp-developer-productivity.md) aggiornare l'elenco delle estensioni di ispezione del codice per VS2019
+- [Guida F1: corrispondenza non trovata](./not-in-toc/default.md) - Aggiornamento default.md
+- [Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori -](./reference/command-prompt-powershell.md) Miglioramenti delle prestazioni del contenuto
+- [Connettersi ai progetti Team Explorer-](./connect-team-project.md) Rivedere la versione vs 2019 della pagina "Connettersi ai progetti in Team Explorer"
 
 ## <a name="install"></a>Installazione
 
-**Nuovi articoli**
-- [Applicazione degli aggiornamenti dell'amministratore che usano Microsoft Endpoint Configuration Manager](../install/applying-administrator-updates.md) - Creazione di nuovo contenuto sull'applicazione degli aggiornamenti dell'amministratore
-- [Abilitazione degli aggiornamenti dell'amministratore Visual Studio con Microsoft Endpoint Configuration Manager:](../install/enabling-administrator-updates.md) è stato creato un nuovo contenuto sull'abilitazione degli aggiornamenti dell'amministratore
-
 **Articoli aggiornati**
 
-- [Numeri di build e date di rilascio di Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
-  - Aggiornare visual-studio-build-numbers-and-release-dates.md
-  - aggiungere i dati della versione 16.9.2
-  - Aggiornamenti di Patch Tuesday
-  - aggiornare la data della pagina dei numeri di build
-  - numeri di build per 16.9 GA e 16.10 Preview 1
-  - Aggiornamento per le nuove versioni
-- [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) - Modifiche alla documentazione degli aggiornamenti dell'amministratore
-- [Installare i certificati necessari per l Visual Studio installazione offline](../install/install-certificates-for-visual-studio-offline.md) - Modifiche alla documentazione degli aggiornamenti dell'amministratore
-- [Installare Visual Studio versioni side-by-side](../install/install-visual-studio-versions-side-by-side.md) - Modifiche alla documentazione degli aggiornamenti dell'amministratore
-- [Installare e usare i Visual Studio e i servizi di Azure dietro un firewall o](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) un server proxy - Articolo aggiornato.
-
-## <a name="javascript"></a>JavaScript
-
-**Articoli aggiornati**
-
-- [JavaScript e TypeScript in Visual Studio # Obbligatorio; titolo della pagina visualizzato nei risultati della ricerca. Includere il marchio. < 60 caratteri.](../javascript/index.yml) - Aggiornamenti di AngularJS
-- [Guida introduttiva: Usare Visual Studio per creare la prima app Vue.js -](../javascript/quickstart-vuejs-with-nodejs.md) Aggiornamenti di AngularJS
-- [Esercitazione: Creare un'app ASP.NET Core con TypeScript in Visual Studio](../javascript/tutorial-aspnet-with-typescript.md)
-  - Aggiornamenti di AngularJS
-  - visualstudio-docs/issues/6457 -- versione mancante
-- [Esercitazione: Creare un'app Node.js ed Express in Visual Studio](../javascript/tutorial-nodejs.md) - Aggiornamenti di AngularJS
-- [Informazioni sull'uso dell'editor di codice per JavaScript](../javascript/write-and-edit-code.md) - Aggiornamenti AngularJS
-- [Testing unità di codice JavaScript e TypeScript in Visual Studio](../javascript/unit-testing-javascript-with-visual-studio.md)
-  - Unit test per ASP.NET Core e TypeScript
-  - Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori
-  - Correzioni dei problemi di GitHub
-- [Gestire i pacchetti npm in Visual Studio](../javascript/npm-package-management.md) - Correzioni di problemi di GitHub
+- [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) - Aggiornamento use-command-line-parameters-to-install-visual-studio.md
+- [Usare i parametri della riga di comando per installare Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) - Aggiornamento use-command-line-parameters-to-install-visual-studio.md
+- [Impostare le impostazioni predefinite per le distribuzioni](../install/set-defaults-for-enterprise-deployments.md) aziendali di Visual Studio- Correggere gli errori di digitazione correlati agli aggiornamenti dell'amministratore e rimuovere le avvertenze non necessarie dalle impostazioni predefinite delle distribuzioni aziendali
+- [Visual Studio numeri di build e date di rilascio:](../install/visual-studio-build-numbers-and-release-dates.md) aggiungere gli aggiornamenti patch martedì
+- [Applicazione degli aggiornamenti dell'amministratore che usano Microsoft Endpoint Configuration Manager](../install/applying-administrator-updates.md) - Aggiornamenti dell'amministratore
+- [Controllare gli aggiornamenti alle distribuzioni di Visual Studio di rete](../install/controlling-updates-to-visual-studio-deployments.md) - Aggiornamenti dell'amministratore
+- [Creare un'installazione di rete di Visual Studio](../install/create-a-network-installation-of-visual-studio.md) - Aggiornamenti dell'amministratore
+- [Abilitazione degli aggiornamenti dell'amministratore Visual Studio con Microsoft Endpoint Configuration Manager](../install/enabling-administrator-updates.md) - Aggiornamenti dell'amministratore
+- [Strumenti per rilevare e gestire istanze Visual Studio -](../install/tools-for-managing-visual-studio-instances.md) Aggiornamenti dell'amministratore
+- [Aggiornare Visual Studio alla versione più recente](../install/update-visual-studio.md) - Aggiornamenti dell'amministratore
+- [Visual Studio amministratore -](../install/visual-studio-administrator-guide.md) Aggiornamenti dell'amministratore
+- [Visual Studio Enterprise Guide](../install/visual-studio-enterprise-guide.md) - Aggiornamenti dell'amministratore
 
 ## <a name="msbuild"></a>MSBuild
 
-**Articoli aggiornati**
+**Nuovi articoli**
 
-- Modalità di compilazione dei progetti da parte di [MSBuild:](../msbuild/build-process-overview.md) correzione del nome di elemento non valido.
-- [Attività CreateCSharpManifestResourceName:](../msbuild/createcsharpmanifestresourcename-task.md) correzione di errori di digitazione tra riferimenti
-- [Procedura: Estendere il processo Visual Studio compilazione](../msbuild/how-to-extend-the-visual-studio-build-process.md) - Correzione del rientro XML
-- [Attività MIDL](../msbuild/midl-task.md) - Aggiorna midl-task.md
-- [Elementi comuni del progetto MSBuild](../msbuild/common-msbuild-project-items.md) - Aggiungere il sommario dell'articolo e migliorare la formattazione
-- [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md) - Aggiungere il sommario dell'articolo e migliorare la formattazione
-- [Attività Exec](../msbuild/exec-task.md) - Aggiungere un documento per il parametro Utf8Encoding
-
-## <a name="profiling"></a>Profilatura
-
-**Articoli aggiornati**
-
-- [Misurare le prestazioni dell'applicazione dalla riga di comando](../profiling/profile-apps-from-command-line.md) - Correzioni dei problemi di GitHub
-- [Prima di tutto, esaminare gli strumenti di profilatura](../profiling/profiling-feature-tour.md) - Lavoro di individuazione per lo strumento Contatori .NET
+- [MSB8066: compilazione personalizzata per 'item-list'](../msbuild/errors/msb8066.md) chiusa con codice 'codice errore': nuova bozza di pagina per msb8066
+- [MSB8040: sono necessarie](../msbuild/errors/msb8040.md) librerie con mitigazione spectre per questo progetto - Messaggi di errore di MSBuild C++
+- [MSB8041: le librerie MFC sono necessarie per questo progetto](../msbuild/errors/msb8041.md) - Messaggi di errore di MSBuild C++
+- [MSB3277: rilevati](../msbuild/errors/msb3277.md) conflitti tra versioni diverse di 'assembly' che non è stato possibile risolvere - Errore di MSBuild MSB3277
 
 ## <a name="python"></a>Python
 
 **Articoli aggiornati**
 
-- [Esercitazione: Introduzione al framework Web Flask in Visual Studio](../python/learn-flask-visual-studio-step-01-project-solution.md)
-  - Codice e testo aggiornati sui parametri di query
-  - Rimozione del contenuto del modello Polls Visual Studio esercitazioni su Python 2019
-- [Esercitazione: Introduzione al framework Web Django in Visual Studio](../python/learn-django-in-visual-studio-step-01-project-and-solution.md) - Contenuto del modello Di sondaggi rimossi dalle esercitazioni su Python Visual Studio 2019
-- [Passaggio 5: Autenticare gli utenti in Django](../python/learn-django-in-visual-studio-step-05-django-authentication.md) - Rimozione del contenuto del modello di sondaggi Visual Studio esercitazioni su Python 2019
-- [Passaggio 6: Usare il modello di progetto Web Django polls](../python/learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) - Rimozione del contenuto del modello Polls Visual Studio 2019 Python tutorials
-- [Passaggio 4: Usare il modello progetto Web Flask](../python/learn-flask-visual-studio-step-04-full-flask-project-template.md) completo - Rimozione del contenuto del modello Sondaggi dalle esercitazioni su Python Visual Studio 2019
-- [Passaggio 5: Usare il modello](../python/learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) Progetto Web Flask di sondaggi - Rimozione del contenuto del modello Sondaggi dalle esercitazioni Visual Studio Python 2019
-- [Modello di progetto Web Django](../python/python-django-web-application-project-template.md) - Rimosso il contenuto del modello Di sondaggi Visual Studio esercitazioni su Python 2019
-- [Modelli di progetto di applicazione](../python/python-web-application-project-templates.md) Web Python - Rimozione del contenuto del modello di sondaggi Visual Studio esercitazioni su Python 2019
-- [Installare i simboli di debug per gli interpreti Python](../python/debugging-symbols-for-mixed-mode-c-cpp-python.md) - Aggiungere le ultime 3 versioni di Python 2.7
+- [Creare un'estensione C++ per Python](../python/working-with-c-cpp-python-in-visual-studio.md)
+  - Aggiornamenti di piccole dimensioni per risolvere i problemi gh
+  - Migliorare working-with-c-cpp-python-in-visual-studio.md
 
-## <a name="test"></a>Test
-
-**Nuovi articoli**
-
-- [Eseguire *l'aggiornamento da .testsettings* *a .runsettings*](../test/migrate-testsettings-to-runsettings.md) - aggiungere la migrazione al documento runsettings
-- [Eseguire l'aggiornamento da MSTestV1 a MSTestV2](../test/mstest-update-to-mstestv2.md) - Aggiungere un documento per l'aggiornamento da MSTestV1 a MSTestv2
+## <a name="sharepoint"></a>SharePoint
 
 **Articoli aggiornati**
 
-- [Creare unit test stub di metodo dal](../test/create-unit-tests-menu.md) codice - visualstudio-docs/issues/6484 -- collegamento di aggiornamento
-- [Prima di tutto esaminare gli strumenti di test in Visual Studio](../test/improve-code-quality.md) - visualstudio-docs/issues/6429 -- aggiornare i collegamenti al lab
-- [Configurare unit test usando un file *con estensione runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
-  - Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori
-  - Correzione degli errori di digitazione
-- [VSTest.Console.exe della riga di comando](../test/vstest-console-options.md) - PowerShell Prompt dei comandi per gli sviluppatori e Developer
+- [Creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura: Aggiungere un nodo di SharePoint](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) personalizzato per Esplora server - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura: Recuperare il servizio di progetto SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Salvare i dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura dettagliata: Creare un elemento di](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) progetto azione personalizzata con un modello di elemento, parte 2 - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura dettagliata: Creare un passaggio di distribuzione personalizzato per](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) i progetti SharePoint - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura dettagliata: Pagina Creare un'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura dettagliata: Creare un elemento di](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md) progetto colonna del sito con un modello di progetto, Parte 2 - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura dettagliata: Creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md) usando una finestra di progettazione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura dettagliata: Creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+- [Procedura dettagliata: Estendere Esplora server visualizzare web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 6
+
+## <a name="test"></a>Test
+
+**Articoli aggiornati**
+
+- [Introduzione agli unit test](../test/getting-started-with-unit-testing.md) - Aggiunta di VB alla guida per principianti
+- [Introduzione all'Live Unit Testing](../test/live-unit-testing-start.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+
+## <a name="vsto"></a>Vsto
+
+**Articoli aggiornati**
+
+- [Procedura dettagliata: Visualizzare riquadri attività personalizzati](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md) con messaggi di posta elettronica in Outlook - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Importare un'area del](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md) modulo progettata in Outlook - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Inserire dati in una cartella di lavoro in un server](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Programmare in base agli eventi](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md) di un controllo NamedRange - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Recuperare dati memorizzati nella cache](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md) da una cartella di lavoro in un server - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Data binding semplice in](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) un progetto a livello di documento - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Data binding semplice nel](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) progetto del componente aggiuntivo VSTO - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md) con un pulsante della barra multifunzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Aggiornare un grafico in un](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md) documento usando i pulsanti di opzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Aggiornamento di un grafico in un foglio](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) di lavoro tramite pulsanti di opzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Procedura dettagliata: Aggiornare i controlli in una barra multifunzione in](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md) fase di esecuzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 11
+- [Risolvere gli errori nelle soluzioni Office](../vsto/troubleshooting-errors-in-office-solutions.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Aggiungere controlli a un](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md) documento in fase di esecuzione in un componente aggiuntivo VSTO - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Aggiungere controlli a un](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) foglio di lavoro in fase di esecuzione nel progetto di componente aggiuntivo VSTO - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Automatizzare un'applicazione](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md) da un riquadro attività personalizzato - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Associare controlli contenuto a parti XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md) personalizzate - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Associare dati ai controlli in](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) un riquadro azioni di Word - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Associare dati ai controlli in](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) un riquadro azioni di Excel - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Eseguire l'associazione ai](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md) dati da un servizio in un progetto di componente aggiuntivo VSTO - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Chiamare codice in un componente aggiuntivo VSTO](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md) da VBA - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Modificare i dati memorizzati nella cache in una cartella](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) di lavoro in un server - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Modificare la formattazione dei documenti](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md) usando i controlli CheckBox - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Modificare la formattazione del foglio](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md) di lavoro usando i controlli CheckBox - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Raccogliere dati tramite Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: data binding complesse in un](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) progetto a livello di documento - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: data binding nel](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) progetto di componente aggiuntivo VSTO - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Creare una scheda personalizzata usando l'XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Creare una scheda personalizzata](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md) usando la finestra di progettazione della barra multifunzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Creare una relazione master-dettagli](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md) usando un set di dati memorizzato nella cache - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Creare un modello usando i controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Creare menu di scelta rapida per i segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 10
+- [Procedura: Popolare le tabelle di Word](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md) a livello di codice con le proprietà del documento - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Stampare documenti a livello di](../vsto/how-to-programmatically-print-documents.md) codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Stampare fogli di](../vsto/how-to-programmatically-print-worksheets.md) lavoro a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Proteggere documenti e parti](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md) di documenti a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Proteggere le cartelle di](../vsto/how-to-programmatically-protect-workbooks.md) lavoro a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Reimpostare gli intervalli a](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md) livello di codice nei documenti di Word - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Ripristinare le selezioni a livello di](../vsto/how-to-programmatically-restore-selections-after-searches.md) codice dopo le ricerche - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Eseguire calcoli di Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md) a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Salvare documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Salvare documenti di Visio a](../vsto/how-to-programmatically-save-visio-documents.md) livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Salvare cartelle di lavoro a](../vsto/how-to-programmatically-save-workbooks.md) livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Cercare e sostituire testo](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md) nei documenti a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Cercare testo negli intervalli di](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md) fogli di lavoro a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Ordinare i dati nei fogli](../vsto/how-to-programmatically-sort-data-in-worksheets.md) di lavoro a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Archiviare e recuperare valori](../vsto/how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges.md) di data negli intervalli di Excel a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Aggiornare il testo dei segnalibri a](../vsto/how-to-programmatically-update-bookmark-text.md) livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Usare finestre di dialogo](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md) incorporate in Word - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Proteggere parti di documenti usando controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Leggere e scrivere nelle proprietà](../vsto/how-to-read-from-and-write-to-document-properties.md) del documento - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Ridimensionare i controlli Bookmark](../vsto/how-to-resize-bookmark-controls.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Ridimensionare i controlli NamedRange](../vsto/how-to-resize-namedrange-controls.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Aggiornare un'origine](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md) dati con i dati di un controllo host - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Convalidare i dati quando viene](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md) aggiunta una nuova riga a un controllo ListObject - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Associazione tardiva nelle soluzioni Office](../vsto/late-binding-in-office-solutions.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Rendere persistenti i controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 9
+- [Procedura: Applicare il colore agli intervalli](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md) di Excel a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Applicare stili agli intervalli nelle cartelle](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md) di lavoro a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Memorizzare nella cache un'origine](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) dati in un documento di Office a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Modificare la formattazione a livello di](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md) codice nelle righe del foglio di lavoro contenenti celle selezionate - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Chiudere documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Chiudere cartelle di lavoro a livello di](../vsto/how-to-programmatically-close-workbooks.md) codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Comprimere intervalli](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md) o selezioni nei documenti a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Contare i caratteri nei documenti a](../vsto/how-to-programmatically-count-characters-in-documents.md) livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Creare nuovi documenti di Visio a](../vsto/how-to-programmatically-create-new-visio-documents.md) livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Creare tabelle di Word a](../vsto/how-to-programmatically-create-word-tables.md) livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Definire e selezionare intervalli](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md) nei documenti a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Visualizzare documenti a livello di codice nell'anteprima](../vsto/how-to-programmatically-display-documents-in-print-preview.md) di stampa - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Escludere i segni di](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md) paragrafo a livello di codice durante la creazione di intervalli - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Estendere gli intervalli nei documenti a](../vsto/how-to-programmatically-extend-ranges-in-documents.md) livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Nascondere testo nei documenti a](../vsto/how-to-programmatically-hide-text-in-documents.md) livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Inserire testo nei documenti di Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md) a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Procedura: Scorrere a livello di](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md) codice gli elementi trovati nei documenti - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 8
+- [Accedere a un'area del modulo in fase di](../vsto/accessing-a-form-region-at-run-time.md) esecuzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Accedere alla barra multifunzione in fase di](../vsto/accessing-the-ribbon-at-run-time.md) esecuzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Panoramica del riquadro Azioni](../vsto/actions-pane-overview.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Aggiungere controlli ai documenti di Office in fase di](../vsto/adding-controls-to-office-documents-at-run-time.md) esecuzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Estendere documenti di Word e](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md) cartelle di lavoro di Excel nei componenti aggiuntivi VSTO in fase di esecuzione - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Aggiungere un riquadro](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) azioni a documenti di Word o cartelle di lavoro di Excel - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Aggiungere parti XML](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md) personalizzate ai documenti usando componenti aggiuntivi VSTO - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Compilare controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md) - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Eseguire il mapping di colonne ListObject ai](../vsto/how-to-map-listobject-columns-to-data.md) dati - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Aggiungere ed eliminare commenti del](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md) foglio di lavoro a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Aggiungere intestazioni e piè di](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md) pagina ai documenti a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Aggiungere immagini e word art](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md) ai documenti a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+- [Procedura: Aggiungere righe e colonne alle tabelle](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md) di Word a livello di codice - Spostamento di file di esempio e aggiornamento dei riferimenti al codice (parte 1) - 7
+
+## <a name="xaml-tools"></a>Strumenti XAML
+
+**Articoli aggiornati**
+
+- [Usare i dati della fase di progettazione con finestra di progettazione XAML in Visual Studio](../xaml-tools/xaml-designtime-data.md) - Aggiunta di un esempio UWP per listview
 
 ## <a name="community-contributors"></a>Collaboratori della community
 
 Le persone seguenti hanno contribuito alla documentazione Visual Studio durante questo periodo. Grazie! Per informazioni su come contribuire alla documentazione Visual Studio, seguire le indicazioni nella [Guida per i collaboratori.](/contribute/)
 
-- [AndreKraemer](https://github.com/AndreKraemer) - AndreFraemer (1)
-- [Bouke](https://github.com/Bouke) - Bouke Haarsma (1)
-- [Chanchankkrr](https://github.com/Chandankkrr) - Chanchan rauniyar (1)
-- [malen-slayden](https://github.com/glenn-slayden) -Layn Slayden (1)
-- [testo -](https://github.com/grossag) Adam Gross (1)
-- [icnocop](https://github.com/icnocop) - Rami (1)
-- [mookid](https://github.com/mookid) - Nathan Moreau (1)
-- [nebuk89](https://github.com/nebuk89) - Ben De St Paer-Gotch (1)
-- [eraciuadrian](https://github.com/stanciuadrian) - Adrian Hociu (1)
-- [stegrammi](https://github.com/stegrams) - Stefanos Grammenos (1)
-- [tanpuresiddhant](https://github.com/tanpuresiddhant) (1)
-- [WilheimRy](https://github.com/WilheimRy) (1)
-- [xh286286](https://github.com/xh286286) (1)
+- [scott-xu](https://github.com/scott-xu) - Scott Xu (1)
+- [shreyanavigyan](https://github.com/shreyanavigyan) - Shreyan Avigyan (1)

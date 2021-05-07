@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c965fd73f63906f7a1e055ae5ff051eebab19d5
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2270216e7245f20d26df580ad90dc627319adcc1
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828813"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798635"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introduzione a Live Unit Testing
 
-Quando si abilita Live Unit Testing in una soluzione Visual Studio, viene illustrata visivamente la copertura dei test e lo stato dei test. Live Unit Testing esegue anche i test in modo dinamico ogni volta che si modifica il codice e invia immediatamente una notifica quando le modifiche causano l'esito negativo dei test.
+Quando si abilita Live Unit Testing in una soluzione Visual Studio, viene illustrato visivamente il code coverage dei test e lo stato dei test. Live Unit Testing esegue i test in modo dinamico ogni volta che si modifica il codice e invia immediatamente una notifica quando le modifiche causano l'esito negativo dei test.
 
 Live Unit Testing può essere usato per testare soluzioni che hanno come destinazione .NET Framework o .NET Core. In questa esercitazione si apprenderà come usare Live Unit Testing creando una semplice libreria di classi destinata a .NET Standard e si creerà un progetto MSTest destinato a .NET Core per testarlo.
 
@@ -32,7 +32,7 @@ Per questa esercitazione è necessario aver installato l'edizione Visual Studio 
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Creare la soluzione e il progetto di libreria di classi
 
-Iniziare creando una soluzione Visual Studio denominata UtilityLibraries costituita da un singolo .NET Standard di libreria di classi, StringLibrary.
+Iniziare creando una soluzione Visual Studio denominata UtilityLibraries costituita da un singolo progetto .NET Standard libreria di classi, StringLibrary.
 
 La soluzione è semplicemente un contenitore per uno o più progetti. Per creare una soluzione vuota, aprire Visual Studio ed eseguire le operazioni seguenti:
 
@@ -48,7 +48,7 @@ La soluzione è semplicemente un contenitore per uno o più progetti. Per creare
 
 1. Finire di creare la soluzione.
 
-Dopo aver creato la soluzione, si creerà una libreria di classi denominata StringLibrary che contiene diversi metodi di estensione per l'uso delle stringhe.
+Ora che è stata creata la soluzione, si creerà una libreria di classi denominata StringLibrary che contiene una serie di metodi di estensione per l'uso delle stringhe.
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e **scegliere Aggiungi** nuovo  >  **progetto.**
 
@@ -260,9 +260,9 @@ Al termine dell'esecuzione dei test, in **Esplora test** vengono visualizzati i 
 ![Finestra Esplora test e editor di codice dopo l'avvio di Live Unit Testing](media/lut-start/lut-results-cs.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019&quot;
-Al termine dell'esecuzione dei test, **Live Unit Testing** visualizza sia i risultati complessivi che i risultati dei singoli test. Inoltre, la finestra dell'editor di codice visualizza graficamente sia l'code coverage test che il risultato per i test. Come illustrato nella figura seguente, tutti e tre i test sono stati eseguiti correttamente. Viene anche illustrato che i test hanno coperto tutti i percorsi nel metodo `StartsWithUpper` e che tutti i test sono stati eseguiti correttamente. Ciò è indicato dal segno di spunta verde, &quot;✓&quot;. Infine, mostra che nessuno degli altri metodi in StringLibrary ha code coverage (indicato da una riga blu, &quot;➖").
+Al termine dell'esecuzione dei test, **Live Unit Testing** i risultati complessivi e i risultati dei singoli test. Inoltre, la finestra dell'editor di codice visualizza graficamente sia l'code coverage test che il risultato per i test. Come illustrato nella figura seguente, tutti e tre i test sono stati eseguiti correttamente. Viene anche illustrato che i test hanno coperto tutti i percorsi nel metodo `StartsWithUpper` e che tutti i test sono stati eseguiti correttamente. Ciò è indicato dal segno di spunta verde, &quot;✓&quot;. Infine, mostra che nessuno degli altri metodi in StringLibrary ha code coverage (indicato da una riga blu, &quot;➖").
 
-![Finestra Esplora test in tempo reale e editor di codice dopo l'avvio di Live Unit Testing](media/lut-start/vs-2019/lut-results-cs.png)
+![Finestra Esplora test live e editor di codice dopo l'avvio di Live Unit Testing](media/lut-start/vs-2019/lut-results-cs.png)
 ::: moniker-end
 
 È anche possibile ottenere informazioni più dettagliate sul code coverage e sui risultati dei test selezionando un'icona di code coverage nella finestra dell'editor di codice. Per esaminare il dettaglio, eseguire le operazioni seguenti:
@@ -344,7 +344,7 @@ In questa sezione verrà illustrato come usare Live Unit Testing per identificar
 
 1. Visual Studio esegue il test in modalità di debug.
 
-   Il test assegna ogni stringa in una matrice a una variabile denominata `phrase` e la passa al metodo `HasEmbeddedSpaces` . L'esecuzione del programma viene sospesa e viene richiamato il debugger la prima volta in cui l'espressione di asserzione è `false`. La finestra di dialogo dell'eccezione generata dal valore imprevisto nella chiamata [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) al metodo è illustrata nella figura seguente.
+   Il test assegna ogni stringa in una matrice a una variabile denominata `phrase` e la passa al metodo `HasEmbeddedSpaces` . L'esecuzione del programma viene sospesa e viene richiamato il debugger la prima volta in cui l'espressione di asserzione è `false`. La finestra di dialogo dell'eccezione che risulta dal valore imprevisto nella chiamata [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) al metodo è illustrata nella figura seguente.
 
    ![Live Unit Testing finestra di dialogo delle eccezioni](media/lut-start/exception-dialog-cs.png)
 
@@ -354,7 +354,7 @@ In questa sezione verrà illustrato come usare Live Unit Testing per identificar
 
    Si noti che nella finestra **Auto** il valore della variabile `phrase` è "Name\tDescription", che è il secondo elemento della matrice. Il metodo di test prevede che `HasEmbeddedSpaces` restituisca `true` quando viene passata questa stringa; in questo caso restituisce invece `false`. Evidentemente, non riconosce "\t", il carattere di tabulazione, come uno spazio incorporato.
 
-1. Selezionare **Debug**  >  **Continue (Continua** debug), premere **F5** oppure fare clic sul **pulsante Continue** (Continua) sulla barra degli strumenti per continuare l'esecuzione del programma di test. Dal momento che si è verificata un'eccezione non gestita, il test viene terminato.
+1. Selezionare **Debug**  >  **Continue**(Continua debug), **premere F5** oppure fare clic sul pulsante **Continue** (Continua) sulla barra degli strumenti per continuare l'esecuzione del programma di test. Dal momento che si è verificata un'eccezione non gestita, il test viene terminato.
 In questo modo vengono specificate informazioni sufficienti per un'analisi preliminare del bug. `TestHasEmbeddedSpaces`, la routine di test, ha generato un presupposto errato, oppure `HasEmbeddedSpaces` non riconosce correttamente tutti gli spazi incorporati.
 
 1. Per diagnosticare e correggere il problema, iniziare con il `StringLibrary.HasEmbeddedSpaces` metodo . Esaminare il confronto nel metodo `HasEmbeddedSpaces`. Lo spazio incorporato viene considerato come U+0020. Tuttavia, lo standard Unicode include altri caratteri spazio. Ne consegue che nel codice della libreria è stato eseguito un test per gli spazi vuoti errato.
@@ -370,4 +370,4 @@ In questo modo vengono specificate informazioni sufficienti per un'analisi preli
 ## <a name="see-also"></a>Vedi anche
 
 - [Live Unit Testing con Visual Studio 2017](live-unit-testing.md)
-- [Domande frequenti su Live Unit Testing](live-unit-testing-faq.md)
+- [Domande frequenti su Live Unit Testing](live-unit-testing-faq.yml)

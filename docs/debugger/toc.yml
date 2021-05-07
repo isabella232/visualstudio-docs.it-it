@@ -415,7 +415,7 @@
         - name: Eseguire il debug di un'app di Azure Kubernetes attiva
           href: debug-live-azure-kubernetes.md
         - name: Domande frequenti sul debug di snapshot
-          href: debug-live-azure-apps-faq.md
+          href: debug-live-azure-apps-faq.yml
         - name: Risoluzione dei problemi relativi al debug di snapshot
           href: debug-live-azure-apps-troubleshooting.md
         - name: Debug spostamento cronologico per app di macchine virtuali di Azure attive
@@ -949,6 +949,6 @@
 - name: Risorse
   items:
     - name: Domande frequenti - Trovare la funzionalità di debug
-      href: find-your-debugging-task.md
+      href: find-your-debugging-task.yml
     - name: Novità relative al debugger di Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
