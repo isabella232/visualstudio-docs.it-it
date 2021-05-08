@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bb78ce04f57f537a6e595fe55d41b220c4476a7b
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.openlocfilehash: b45b67f03c7f95fe12c0f4322e682588a7f50714
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798245"
+ms.locfileid: "108640987"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Cronologia delle novità nella documentazione di Visual Studio
 
@@ -84,7 +84,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 
 **Nuovi articoli**
 - [Come Visual Studio semplifica il controllo del codice sorgente:](../version-control/git-visual-studio-source-control.md) creare un nuovo argomento Visual Studio controllo del codice sorgente
-- [Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori](./reference/command-prompt-powershell.md) - Prompt dei comandi per gli sviluppatori e PowerShell per sviluppatori
+- [Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori](./reference/command-prompt-powershell.md) - PowerShell per Prompt dei comandi per gli sviluppatori e per sviluppatori
 - [Confronto side-by-side tra Git e Team Explorer:](../version-control/git-team-explorer-feature-comparison.md) aggiungere una nuova pagina di confronto side-by-side di Team Explorer e nuove funzionalità git
 
 **Articoli aggiornati**
@@ -135,9 +135,9 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
   - numeri di build per 16.9 Ga e 16.10 Preview 1
   - Aggiornamento per le nuove versioni
 - [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) - Modifiche ai documenti degli aggiornamenti dell'amministratore
-- [Installare i certificati necessari per l Visual Studio installazione offline](../install/install-certificates-for-visual-studio-offline.md) - Modifiche ai documenti degli aggiornamenti dell'amministratore
+- [Installare i certificati necessari per l Visual Studio installazione offline](../install/install-certificates-for-visual-studio-offline.md) - Modifiche ai documenti di aggiornamento amministratore
 - [Installare Visual Studio versioni affiancate](../install/install-visual-studio-versions-side-by-side.md) - Modifiche ai documenti di aggiornamento amministratore
-- [Installare e usare Visual Studio e Servizi di Azure dietro un firewall](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) o un server proxy - Articolo aggiornato.
+- [Installare e usare Visual Studio e i servizi di Azure dietro un firewall](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) o un server proxy - Articolo aggiornato.
 
 ### <a name="javascript"></a>JavaScript
 
@@ -205,7 +205,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 - [Configurare unit test usando un file *con estensione runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
   - Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori
   - Correzione degli errori di digitazione
-- [VSTest.Console.exe della riga di comando](../test/vstest-console-options.md) - Prompt dei comandi per gli sviluppatori e PowerShell per sviluppatori
+- [VSTest.Console.exe della riga di comando](../test/vstest-console-options.md) - Prompt dei comandi per gli sviluppatori PowerShell per sviluppatori
 
 ## <a name="february-2021"></a>Febbraio 2021
 
@@ -240,8 +240,8 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 
 **Nuovi articoli**
 
-- [MSB3644: Gli assembly di riferimento per 'FrameworkVersion' non sono stati trovati](../msbuild/errors/msb3644.md) - Errori di MSBuild
-- [MSB8036: la Windows SDK 'version' non è stata](../msbuild/errors/msb8036.md) trovata - Errori di MSBuild
+- [MSB3644: gli assembly di riferimento per 'FrameworkVersion' non sono stati trovati](../msbuild/errors/msb3644.md) - Errori di MSBuild
+- [MSB8036: la Windows SDK 'version' non è stata trovata](../msbuild/errors/msb8036.md) - Errori di MSBuild
 
 ### <a name="test"></a>Test
 
@@ -350,19 +350,19 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 - [Abilitare o installare analizzatori .NET di prima parte](../code-quality/install-net-analyzers.md)
   - Aggiungere maggiore chiarezza alla documentazione sulla migrazione per FxCopAnalyzers a NetAnalyzers
   - Riordinare il sommario per gli analizzatori .NET
-- [Eseguire la migrazione dagli analizzatori FxCop](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) agli analizzatori .NET: aggiungere maggiore chiarezza alla documentazione sulla migrazione per FxCopAnalyzers a NetAnalyzers
+- [Eseguire la migrazione dagli analizzatori FxCop agli analizzatori .NET:](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) aggiungere maggiore chiarezza alla documentazione sulla migrazione per FxCopAnalyzers a NetAnalyzers
 
 ### <a name="containers"></a>Contenitori
 
 **Articoli aggiornati**
 
-- [Risolvere Visual Studio sviluppo di applicazioni con Docker](../containers/troubleshooting-docker-errors.md) - Aggiornamento di Docker per Visual Studio risoluzione dei problemi
+- [Risolvere i Visual Studio di sviluppo con Docker](../containers/troubleshooting-docker-errors.md) - Aggiornamento di Docker per la Visual Studio risoluzione dei problemi
 
 ### <a name="debugger"></a>Debugger
 
 **Articoli aggiornati**
 
-- [Domande frequenti- Trovare la funzionalità di debug necessaria in Visual Studio](../debugger/find-your-debugging-task.yml) - Lavoro di individuazione per trovare l'attività di debug e argomenti di panoramica
+- [Domande frequenti- Trovare la funzionalità di debug necessaria in Visual Studio](../debugger/find-your-debugging-task.md) - Lavoro di individuazione per trovare l'attività di debug e argomenti di panoramica
 
 ### <a name="get-started"></a>Introduzione
 
@@ -377,7 +377,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 - [Soluzioni e progetti in Visual Studio](./solutions-and-projects-in-visual-studio.md) - Aggiornamenti agli argomenti relativi ai progetti & soluzioni
 - [Creare un nuovo progetto in Visual Studio](./create-new-project.md)
   - ridefinire il testo alternativo per screenshot e diagrammi
-  - Altri aggiornamenti agli argomenti relativi ai progetti & soluzioni
+  - Altri aggiornamenti agli argomenti relativi & soluzioni
 - [Risorse per la risoluzione degli errori IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) : rivedere la sezione risorse del forum obsoleta
 - [Usare soluzioni e progetti](./creating-solutions-and-projects.md) - Altri aggiornamenti per gli argomenti relativi & progetti
 - [Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio](./how-to-report-a-problem-with-visual-studio.md)
@@ -406,11 +406,11 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 - [Abilitare o installare gli analizzatori .NET-](../code-quality/install-net-analyzers.md) Aggiungere la documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
 - [Eseguire la migrazione dagli analizzatori FxCop agli analizzatori .NET- Aggiungere](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) la documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
 - [Eseguire la migrazione dall'analisi legacy (FxCop)](../code-quality/migrate-from-legacy-analysis-to-net-analyzers.md) all'analisi di origine (analizzatori .NET) - Aggiungere la documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
-- [Domande frequenti sugli analizzatori FxCop](../code-quality/net-analyzers-faq.yml) e .NET legacy - Aggiungere la documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
+- [Domande frequenti sugli analizzatori FxCop](../code-quality/net-analyzers-faq.md) e .NET legacy - Aggiungere la documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
 
 **Articoli aggiornati**
 
-- [Domande frequenti sull'analisi](../code-quality/analyzers-faq.yml) del codice - Aggiunta della documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
+- [Domande frequenti sull'analisi](../code-quality/analyzers-faq.md) del codice - Aggiunta della documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
 - [Stato della porta della regola Fxcop](../code-quality/fxcop-rule-port-status.md) - Aggiunta della documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
 - [Regole deprecate](../code-quality/fxcop-unported-deprecated-rules.md) - Aggiunta della documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
 - [Regole non trasferite che possono essere trasferite](../code-quality/fxcop-unported-rules-may-get-ported.md) - Aggiunta della documentazione per la migrazione dagli analizzatori FxCop agli analizzatori .NET
@@ -433,7 +433,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 **Articoli aggiornati**
 
 - [Connettersi ai processi in esecuzione con il debugger Visual Studio -](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) Refactoring della connessione alla documentazione dei processi per scenari Linux
-- [Eseguire il debug di .NET Core in Linux tramite SSH collegando a](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md) un processo - Refactoring di collegamento a documenti di processo per scenari Linux
+- [Eseguire il debug di .NET Core in Linux tramite SSH collegando a](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md) un processo - Refactoring di connessione a documenti di processo per scenari Linux
 
 ### <a name="deployment"></a>Distribuzione
 
@@ -462,7 +462,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 **Articoli aggiornati**
 
 - [Informazioni su progetti e soluzioni:](../get-started/tutorial-projects-solutions.md) aggiornamento del testo alternativo & metadati, nonché aggiunta di una nota sul modello di soluzione vuota
-- [Esercitazione: Aprire un progetto da un repository](../get-started/tutorial-open-project-from-repo.md) - Aggiunta di una nota e collegamento Vedere anche per la nuova esperienza Git
+- [Esercitazione: Aprire un progetto da un repository](../get-started/tutorial-open-project-from-repo.md) - Aggiunta di una nota e vedere anche il collegamento per la nuova esperienza Git
 
 ### <a name="ide"></a>IDE
 
@@ -506,7 +506,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 - [Visual Studio Team Explorer directory dei componenti](../install/workload-component-id-vs-team-explorer.md) : documentazione aggiornata dei componenti per la versione 16.8
 - [Visual Studio directory del componente dell'agente](../install/workload-component-id-vs-test-agent.md) di test - Aggiornamento della documentazione dei componenti per la versione 16.8
 - [Visual Studio directory dei componenti del controller di test](../install/workload-component-id-vs-test-controller.md) - Aggiornamento della documentazione dei componenti per la versione 16.8
-- [Installare e usare i Visual Studio e i servizi di Azure dietro un firewall](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) o un server proxy - Aggiunta del dominio mancante
+- [Installare e usare Visual Studio e i servizi di Azure dietro un firewall](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) o un server proxy - Aggiunta del dominio mancante
 
 ### <a name="msbuild"></a>MSBuild
 
@@ -517,7 +517,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 **Articoli aggiornati**
 
 - [Funzioni di proprietà](../msbuild/property-functions.md) - Versione 16.8
-- [Elementi di progetto MSBuild comuni:](../msbuild/common-msbuild-project-items.md) ripristina il contenuto per l'elemento InternalsVisibleTo
+- [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md) : ripristina il contenuto per l'elemento InternalsVisibleTo
 
 ### <a name="profiling"></a>Profilatura
 
@@ -723,14 +723,14 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 - [CA2008: Non creare attività](/dotnet/fundamentals/code-analysis/quality-rules/ca2008) senza passare taskScheduler - Aggiungere la documentazione per CA2008
 - [CA2249: Provare a usare String.Contains anziché String.IndexOf](/dotnet/fundamentals/code-analysis/quality-rules/ca2249) - Docs per CA2249
 - [CA2361: Assicurarsi](/dotnet/fundamentals/code-analysis/quality-rules/ca2361) che la classe generata automaticamente contenente DataSet.ReadXml() non sia usata con dati non attendibili- Altre regole di DataSet/DataTable
-- [CA2362: Unsafe DataSet or DataTable in un tipo serializzabile](/dotnet/fundamentals/code-analysis/quality-rules/ca2362) generato automaticamente può essere vulnerabile agli attacchi di esecuzione di codice remoto - Altre regole dataset/datatable
-- [IL3000: Evitare](/dotnet/fundamentals/code-analysis/quality-rules/il3000) di usare l'accesso al percorso del file assembly durante la pubblicazione come file singolo - Aggiungere la documentazione per IL3000
+- [CA2362: Unsafe DataSet or DataTable in un tipo serializzabile](/dotnet/fundamentals/code-analysis/quality-rules/ca2362) generato automaticamente può essere vulnerabile agli attacchi di esecuzione di codice remoto - Altre regole di DataSet/DataTable
+- [IL3000: Evitare di accedere](/dotnet/fundamentals/code-analysis/quality-rules/il3000) al percorso del file assembly durante la pubblicazione come file singolo - Aggiungere la documentazione per IL3000
 - [IL3001: Evitare l'accesso](/dotnet/fundamentals/code-analysis/quality-rules/il3001) al percorso del file assembly durante la pubblicazione come singolo file - Aggiungere documenti per IL3001
 
 **Aggiornato**
 
 - [CA1002: Non esporre elenchi generici](/dotnet/fundamentals/code-analysis/quality-rules/ca1002) - Sezione Aggiungi configurabilità - Api Surface
-- [CA1046: Non eseguire l'overload dell'operatore uguale a](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) nei tipi di riferimento - Aggiungi configurabilità - Sezione Api Surface
+- [CA1046: Non eseguire l'overload dell'operatore uguale a](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) nei tipi di riferimento - Sezione Add Configurability - Api Surface
 - [CA1307: Specificare StringComparison](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) per maggiore chiarezza - Aggiungere la documentazione per CA1310 e la documentazione di aggiornamento per CA1307
 - [CA1700: Non assegnare ](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) un nome ai valori di enumerazione &#39;sezione Reserved&#39;- Add Configurability - Api Surface
 - [CA1707: Gli identificatori non devono contenere](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) caratteri di sottolineatura - Aggiungi configurabilità - Sezione Api Surface
@@ -743,7 +743,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 **Articoli aggiornati**
 
 - [Distribuire un contenitore ASP.NET contenitore in un registro](../containers/hosting-web-apps-in-docker.md) contenitori usando Visual Studio - Aggiornamenti di Strumenti contenitore per Visual Studio'interfaccia utente di pubblicazione 16.7
-- [Introduzione agli strumenti Visual Studio Kubernetes](../containers/bridge-to-kubernetes.md) - Esercitazione su Kubernetes: Aggiungere passaggi per la rimozione
+- [Introduzione a Visual Studio Kubernetes Tools](../containers/bridge-to-kubernetes.md) - Esercitazione su Kubernetes: Aggiungere passaggi per la rimozione
 
 ### <a name="deployment"></a>Distribuzione
 
@@ -808,9 +808,9 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 - [CA2350: Verificare che l'input di DataTable.ReadXml()](/dotnet/fundamentals/code-analysis/quality-rules/ca2350) sia attendibile - Documentazione delle regole di deserializzazione dataset/datatable iniziali
 - [CA2351: Verificare che l'input di DataSet.ReadXml()](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) sia attendibile - Documentazione delle regole di deserializzazione dataset/datatable iniziali
 - [CA2352: Unsafe DataSet or DataTable in serializable type can be vulnerable to remote code execution attacks](/dotnet/fundamentals/code-analysis/quality-rules/ca2352) - Initial DataSet/DataTable deserialization rules docs
-- [CA2353: Unsafe DataSet or DataTable in serializable type](/dotnet/fundamentals/code-analysis/quality-rules/ca2353) - Initial DataSet/DataTable deserialization rules docs
+- [CA2353: DataSet o DataTable](/dotnet/fundamentals/code-analysis/quality-rules/ca2353) non sicuri nel tipo serializzabile - Documentazione delle regole di deserializzazione dataset/datatable iniziali
 - [CA2354: Unsafe DataSet or DataTable in deserialized object graph can be vulnerable to remote code execution attack](/dotnet/fundamentals/code-analysis/quality-rules/ca2354) - Initial DataSet/DataTable deserialization rules docs
-- [CA2355: Unsafe DataSet or DataTable in deserialized object graph](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) - Initial DataSet/DataTable deserialization rules docs
+- [CA2355: DataSet o DataTable](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) non sicuri nell'oggetto grafico deserializzato - Documentazione delle regole di deserializzazione dataset/datatable iniziali
 - [CA2356: Unsafe DataSet or DataTable type in Web deserialized object graph](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) - Initial DataSet/DataTable deserialization rules docs
 
 ### <a name="containers"></a>Contenitori
@@ -834,7 +834,7 @@ Benvenuti nella cronologia delle novità di Visual Studio docs. Questo articolo 
 
 **Nuovi articoli**
 
-- [Esercitazione: Estendere una semplice app console C#](../get-started/csharp/tutorial-console-part-2.md) - Prima versione dell'esercitazione sull'estensione del lungomare
+- [Esercitazione: Estendere una semplice app console C#](../get-started/csharp/tutorial-console-part-2.md) - Prima versione dell'esercitazione sull'estensione della versione di Sidewalk
 
 ### <a name="ide"></a>IDE
 
