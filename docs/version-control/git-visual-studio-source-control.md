@@ -1,18 +1,20 @@
 ---
 title: Come Visual Studio semplifica il controllo del codice sorgente
 titleSuffix: ''
-description: Informazioni su come usare Git & GitHub in Visual Studio per tenere traccia delle modifiche al codice e ripristinarle, se necessario.
+description: Informazioni su come usare Git & GitHub in Visual Studio per tenere traccia delle modifiche apportate al codice e ripristinarle, se necessario.
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
-ms.openlocfilehash: f6213174bbef5c4d5976e410f92b771b34ae6f23
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 982eea07b6668678669ac73678f6a0460a4ebff0
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107917918"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729237"
 ---
 # <a name="how-visual-studio-makes-source-control-easy"></a>Come Visual Studio semplifica il controllo del codice sorgente
 
@@ -28,7 +30,7 @@ GitHub offre l'archiviazione del codice cloud gratuita e protetta in cui è poss
 
 ## <a name="streamlined-and-intuitive-inner-loop-git-experience"></a>Esperienza Git a ciclo interno semplificata e intuitiva
 
-Visual Studio offre funzionalità Git individuabili e intuitive incentrate sull'ottimizzazione della produttività del flusso di lavoro giornaliero (ciclo interno). Non è più necessario allontanarsi dal codice per eseguire il commit delle modifiche. Queste funzionalità includono un menu Git di primo livello, una finestra Git Changes (Modifiche Git) e una barra di stato di Git con stato attivo. Git si integra con Visual Studio come un'esperienza olistica; Ad esempio, sia Esplora soluzioni che l'editor di codice hanno un'integrazione Git di prima classe.
+Visual Studio offre funzionalità Git individuabili e intuitive incentrate sull'ottimizzazione della produttività del flusso di lavoro giornaliero (ciclo interno). Non è più necessario allontanarsi dal codice per eseguire il commit delle modifiche. Queste funzionalità includono un menu Git di primo livello, una finestra Git Changes (Modifiche Git) e una barra di stato con stato attivo in Git. Git si integra con Visual Studio come un'esperienza olistica; Ad esempio, sia Esplora soluzioni che l'editor di codice hanno un'integrazione Git di prima classe.
 
 :::image type="content" source="media/git-source-control-inner-loop.png" alt-text="L Visual Studio IDE con il menu Git e la scheda Git Changes (Modifiche Git) Esplora soluzioni visualizzata.":::
 
@@ -40,7 +42,7 @@ Visual Studio include potenti funzionalità di esplorazione dei repository e col
 
 ## <a name="interactive--smart-git-functionality"></a>Funzionalità & Git intelligente
 
-L'integrazione git in Visual Studio promuove la fiducia e la fiducia fornendo assistenza contestuale e richiedendo di fare la cosa giusta. Include anche un'esperienza di risoluzione dei conflitti che consente di visualizzare/nascondere le differenze tra parole e spostarsi tra conflitti e differenze.
+L'integrazione git in Visual Studio promuove la fiducia e la fiducia fornendo assistenza contestuale e richiedendo di fare la cosa giusta. Include anche un'esperienza di risoluzione dei conflitti che consente di visualizzare/nascondere le differenze tra le parole e di spostarsi tra conflitti e differenze.
 
 :::image type="content" source="media/git-source-control-interactive-functionality.png" alt-text="L Visual Studio IDE che mostra l'assistenza contestuale Git e la risoluzione dei conflitti.":::
 

@@ -1,25 +1,27 @@
 ---
 title: Esperienza Git in Visual Studio 2019
 titleSuffix: ''
-description: Informazioni su come la nuova esperienza Git integrata in Visual Studio 2019 può aiutare a migliorare la produttività.
+description: Informazioni su come la nuova esperienza Git integrata in Visual Studio 2019 può aiutare a essere più produttivi.
 ms.date: 04/01/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
-ms.manager: jillfra
-ms.openlocfilehash: 96018a203a6a0e5d404a818817ea4e9fb7e18551
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.manager: jmartens
+ms.openlocfilehash: 7ca09edada7715b9e7be754dbec22e1654288df8
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107917923"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729312"
 ---
 # <a name="git-experience-in-visual-studio"></a>Esperienza Git in Visual Studio
 
-Git è ora l'esperienza di controllo della versione predefinita in Visual Studio 2019. A [partire dalla versione 16.6,](/visualstudio/releases/2019/release-notes-v16.6)abbiamo lavorato alla creazione del set di funzionalità e all'iterazione in base ai commenti e suggerimenti degli utenti. La nuova esperienza Git è attivata per impostazione predefinita per tutti gli utenti con la versione [16.8.](/visualstudio/releases/2019/release-notes/)
+Git è ora l'esperienza di controllo della versione predefinita Visual Studio 2019. A [partire dalla versione 16.6,](/visualstudio/releases/2019/release-notes-v16.6)abbiamo lavorato alla creazione del set di funzionalità e all'iterazione in base ai commenti e suggerimenti degli utenti. La nuova esperienza Git è attivata per impostazione predefinita per tutti gli utenti con la versione [16.8.](/visualstudio/releases/2019/release-notes/)
 
 > [!TIP]
-> Git è il sistema di controllo della versione moderno più diffuso, quindi, sia che si sia uno sviluppatore professionale che si sta imparando a creare codice, Git può essere molto utile. Se non si ha di nuovo git, https://git-scm.com/ il sito Web è un buon punto di partenza. Qui sono disponibili fogli di informazioni, un libro online molto diffuso e video di git basics.
+> Git è il sistema di controllo della versione moderno più diffuso, quindi se si è uno sviluppatore professionale o si sta imparando a creare codice, Git può essere molto utile. Se non si ha di nuovo git, https://git-scm.com/ il sito Web è un buon punto di partenza. Qui sono disponibili fogli di informazioni, un libro online molto diffuso e video di nozioni di base su Git.
 
 ## <a name="how-to-use-git-in-visual-studio"></a>Come usare Git in Visual Studio
 
@@ -31,7 +33,7 @@ Esistono tre modi per iniziare a usare Git con Visual Studio per essere più pro
 
 - [Aprire un repository Git esistente.](#open-an-existing-local-repository) Se il codice è già presente nel computer, è possibile aprirlo usando Apri   >    >  **progetto/soluzione** (o Cartella) e Visual Studio rileva automaticamente se ha un repository Git inizializzato.
 - [Creare un nuovo repository Git](#create-a-new-git-repository). Se il codice non è associato a Git, è possibile creare un nuovo repository Git.
-- [Clonare un repository Git esistente.](#clone-an-existing-git-repository) Se il codice su cui si vuole lavorare non è presente nel computer, è possibile clonare qualsiasi repository remoto esistente.
+- [Clonare un repository Git esistente.](#clone-an-existing-git-repository) Se il codice su cui si vuole lavorare non è presente nel computer, è possibile clonare tutti i repository remoti esistenti.
 
 > [!NOTE]
 > A partire dalla [versione 16.8,](/visualstudio/releases/2019/release-notes/)Visual Studio 2019 include un'esperienza di account GitHub completamente integrata. È ora possibile aggiungere gli account GitHub e GitHub Enterprise al keychain. Sarà possibile aggiungerle e sfruttarle esattamente come con gli account Microsoft, il che significa che l'accesso alle risorse GitHub sarà più semplice in tutti i Visual Studio. Per altre informazioni, vedere la [pagina Usare gli account GitHub nella Visual Studio.](../ide/work-with-github-accounts.md)
@@ -70,8 +72,8 @@ Quando si clona un repository o si apre un repository locale, Visual Studio pass
 Visual Studio modifica la visualizzazione in base al file di visualizzazione caricato in Esplora soluzioni:
 
 - Se si clona un repository che contiene un singolo file con estensione sln, Esplora soluzioni direttamente la soluzione.
-- Se Esplora soluzioni non rileva alcun file con estensione sln nel repository, per impostazione predefinita carica Visualizzazione cartelle.
-- Se il repository contiene più di un file con estensione sln, Esplora soluzioni visualizza l'elenco delle visualizzazioni disponibili tra cui scegliere.
+- Se Esplora soluzioni non rileva alcun file con estensione sln nel repository, per impostazione predefinita carica visualizzazione cartelle.
+- Se il repository include più file con estensione sln, Esplora soluzioni visualizza l'elenco delle visualizzazioni disponibili tra cui scegliere.
 
 È possibile passare dalla visualizzazione attualmente aperta all'elenco delle visualizzazioni usando il pulsante Cambia visualizzazioni nella barra degli strumenti Esplora soluzioni visualizzazione. 
 
@@ -89,11 +91,11 @@ Durante il lavoro, Visual Studio tiene traccia delle modifiche apportate al file
 
 :::image type="content" source="media/git-changes-window.png" alt-text="Finestra Modifiche git in Visual Studio.":::
 
-Quando si è pronti per modificare le fasi, fare clic sul pulsante (più) in ogni file da impostare come stage oppure fare clic con il pulsante destro del mouse su un file e quindi **+** scegliere **Fase**. È anche possibile impostare tutti i file modificati con un solo clic usando il pulsante stage all **+** (più) nella parte superiore della **sezione** Modifiche.
+Quando si è pronti per modificare le fasi, fare clic sul pulsante (più) in ogni file da impostare come stage oppure fare clic con il pulsante destro del mouse su un file e quindi **+** scegliere **Fase**. È anche possibile impostare tutti i file modificati con un solo clic usando il pulsante stage all **+** (più) nella parte superiore della **sezione** Changes (Modifiche).
 
-Quando si crea una modifica in fasi, Visual Studio una **sezione Modifiche a fasi.** Solo le modifiche nella **sezione Modifiche in fasi** vengono aggiunte al commit successivo, operazione che è possibile eseguire selezionando Commit a **fasi**. Il comando equivalente per questa azione è `git commit -m "Your commit message"` . Le modifiche possono anche essere scollegate facendo clic sul **pulsante -** (meno). Il comando equivalente per questa azione è quello di rimuovere lo stage di un singolo file o di rimuovere `git reset <file_path>` tutti i file in una `git reset <directory_path>` directory.
+Quando si crea una modifica in fasi, Visual Studio una **sezione Modifiche a fasi.** Solo le modifiche nella **sezione Modifiche a fasi** vengono aggiunte al commit successivo, operazione che è possibile eseguire selezionando Commit a **fasi**. Il comando equivalente per questa azione è `git commit -m "Your commit message"` . Le modifiche possono anche essere scollegate facendo clic sul **pulsante -** (meno). Il comando equivalente per questa azione è quello di rimuovere lo stage di un singolo file o di rimuovere `git reset <file_path>` tutti i file in una `git reset <directory_path>` directory.
 
-È anche possibile scegliere di non impostare in fasi i file modificati ignorando l'area di staging. In questo caso, Visual Studio consente di eseguire direttamente il commit delle modifiche senza dover eseguirle in fasi. È sufficiente immettere il messaggio di commit e quindi selezionare **Commit all (Esegui commit tutto).** Il comando equivalente per questa azione è `git commit -a` .
+È anche possibile scegliere di non eseguire la gestione temporanea dei file modificati ignorando l'area di staging. In questo caso, Visual Studio consente di eseguire direttamente il commit delle modifiche senza dover eseguirle in fasi. È sufficiente immettere il messaggio di commit e quindi selezionare **Commit all (Esegui commit tutto).** Il comando equivalente per questa azione è `git commit -a` .
 
 Visual Studio rende anche più semplice eseguire il commit e la sincronizzazione con un solo clic usando i tasti di scelta rapida Commit All e **Push** **and Commit All e Sync.** Quando si fa doppio clic  su  un file nelle sezioni Modifiche e Modifiche a fasi, è possibile visualizzare un confronto riga per riga con la versione non modificata del file.
 
@@ -108,7 +110,7 @@ Visual Studio visualizza il ramo corrente nel selettore nella parte superiore de
 
 :::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="I rami correnti che è possibile visualizzare usando il selettore nella parte superiore del selettore Modifiche Git in Visual Studio ":::
 
-Il ramo corrente è disponibile anche nella barra di stato nell'angolo inferiore destro dell'IDE Visual Studio.
+Current Branch è disponibile anche nella barra di stato nell'angolo inferiore destro dell'IDE Visual Studio.
 
 :::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Rami correnti che è possibile visualizzare usando la barra di stato nell'angolo inferiore destro nell'IDE Visual Studio ":::
 
@@ -130,7 +132,7 @@ Visual Studio è disponibile una nuova finestra **Repository Git,** ovvero una v
 
 ### <a name="manage-branches"></a>Gestire i rami
 
-Quando si seleziona **Gestisci rami** dal menu **Git,** la visualizzazione albero dei rami viene visualizzata nella **finestra Repository Git.** Nel riquadro sinistro è possibile usare il menu di scelta rapida facendo clic con il pulsante destro del mouse per estrarre rami, creare nuovi rami, unire, riassare, cherry-pick e altro ancora. Quando si fa clic sul ramo, è possibile visualizzare un'anteprima della relativa cronologia di commit nel riquadro di destra.
+Quando si seleziona **Gestisci rami** dal menu **Git,** la visualizzazione albero dei rami viene visualizzata nella **finestra Repository** Git. Nel riquadro sinistro è possibile usare il menu di scelta rapida visualizzato facendo clic con il pulsante destro del mouse per estrarre rami, creare nuovi rami, unire, riassare, cherry-pick e altro ancora. Quando si fa clic sul ramo, è possibile visualizzare un'anteprima della relativa cronologia di commit nel riquadro di destra.
 
 ### <a name="incoming-and-outgoing-commits"></a>Commit in ingresso e in uscita
 
@@ -144,7 +146,7 @@ L'indicatore funziona anche come collegamento per visualizzare la cronologia di 
 
 #### <a name="commit-details"></a>Dettagli commit
 
-Quando si fa doppio clic su un **commit,** Visual Studio i relativi dettagli in una finestra degli strumenti separata. Da qui è possibile ripristinare il commit, reimpostare il commit, modificare il messaggio di commit o creare un tag nel commit. Quando si fa clic su un file modificato nel commit, Visual Studio apre la visualizzazione **Diff** side-by-side del commit e del relativo elemento padre.
+Quando si fa doppio clic **su** un commit, Visual Studio i relativi dettagli in una finestra degli strumenti separata. Da qui è possibile ripristinare il commit, reimpostare il commit, modificare il messaggio di commit o creare un tag nel commit. Quando si fa clic su un file modificato nel commit, Visual Studio apre la visualizzazione **Diff** side-by-side del commit e del relativo elemento padre.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Finestra di dialogo Dettagli commit in Visual Studio ":::
 
@@ -174,11 +176,11 @@ Al contrario, Visual Studio visualizza una barra informazioni color oro nella pa
 
 ### <a name="the-merge-editor"></a>Editor di merge
 
-L'editor di merge Visual Studio è uno strumento di merge a tre modalità che consente di visualizzare le modifiche in ingresso, le modifiche correnti e il risultato dell'unione. È possibile utilizzare la barra degli strumenti al livello superiore **dell'Editor** di merge per spostarsi tra i conflitti e le differenze di unione automatica nel file.
+L'editor di merge Visual Studio è uno strumento di unione a tre modalità che consente di visualizzare le modifiche in ingresso, le modifiche correnti e il risultato dell'unione. È possibile utilizzare la barra degli strumenti al livello superiore **dell'Editor** di merge per spostarsi tra conflitti e differenze di unione automatica nel file.
 
 :::image type="content" source="media/git-merge-editor.png" alt-text="Editor di merge in Visual Studio ":::
 
-È anche possibile usare gli interruttori per mostrare/nascondere le differenze, mostrare/nascondere le differenze tra parole e personalizzare il layout. Nella parte superiore di ogni lato sono presenti caselle di controllo che è possibile usare per eseguire tutte le modifiche da un lato o dall'altro. Tuttavia, per apportare singole modifiche, è possibile fare clic sulle caselle di controllo a sinistra delle righe in conflitto su entrambi i lati. Infine, al termine della risoluzione dei conflitti, è possibile selezionare il **pulsante** Accetta unione nell'editor di merge. Si scrive quindi un messaggio di commit e si esegue il commit delle modifiche per completare la risoluzione.
+È anche possibile usare gli interruttori per mostrare/nascondere le differenze, mostrare/nascondere le differenze tra le parole e personalizzare il layout. Nella parte superiore di ogni lato sono presenti caselle di controllo che è possibile usare per eseguire tutte le modifiche da un lato o dall'altro. Tuttavia, per apportare singole modifiche, è possibile fare clic sulle caselle di controllo a sinistra delle righe in conflitto su entrambi i lati. Infine, al termine della risoluzione dei conflitti, è possibile selezionare il **pulsante** Accetta unione nell'editor di merge. Si scrive quindi un messaggio di commit e si esegue il commit delle modifiche per completare la risoluzione.
 
 ## <a name="personalize-your-git-settings"></a>Personalizzare le impostazioni git
 
@@ -188,7 +190,7 @@ Per personalizzare le impostazioni Git a livello di repository e a livello globa
 
 ## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Come usare l'esperienza Team Explorer completa in Visual Studio
 
-La nuova esperienza Git è il sistema di controllo della versione predefinito Visual Studio 2019 a partire dalla [versione 16.8.](/visualstudio/releases/2019/release-notes/) Tuttavia, se si vuole disattivarlo, è possibile. Passare a **Strumenti Opzioni** Funzionalità di anteprima dell'ambiente e quindi attivare o disattivare la casella di controllo Nuova esperienza utente Git, che consente di tornare Team Explorer  >    >    >   per Git. 
+La nuova esperienza Git è il sistema di controllo della versione predefinito Visual Studio 2019 a partire dalla [versione 16.8.](/visualstudio/releases/2019/release-notes/) Tuttavia, se si desidera disattivarlo, è possibile. Passare a **Strumenti Opzioni** Funzionalità di anteprima dell'ambiente e quindi attivare o disattivare la casella di controllo Nuova esperienza utente Git, che consente di tornare Team Explorer  >    >    >   per Git. 
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Sezione Funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
 
@@ -197,7 +199,7 @@ La nuova esperienza Git è il sistema di controllo della versione predefinito Vi
 Anche se la nuova esperienza Git è ora disponibile per impostazione predefinita Visual Studio 2019 [versione 16.8,](/visualstudio/releases/2019/release-notes/)si continuano ad aggiungere nuove funzionalità per migliorare l'esperienza. Se si desidera controllare i nuovi aggiornamenti per l'esperienza Git in una versione di anteprima, è possibile scaricarlo e [installarlo](https://aka.ms/vspreview/) dalla pagina Visual Studio Preview.
 
 > [!IMPORTANT]
-> Se hai un suggerimento per Microsoft, inviaci un suggerimento. È molto apprezzata l'opportunità di interagire con l'utente in base alle decisioni di progettazione [**tramite il portale Developer Community.**](https://aka.ms/vs-suggest)
+> Se hai un suggerimento per Microsoft, inviaci un suggerimento. È molto apprezzata l'opportunità di interagire con l'utente in base alle decisioni di progettazione tramite il [**Developer Community**](https://aka.ms/vs-suggest) portale.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -205,7 +207,7 @@ Anche se la nuova esperienza Git è ora disponibile per impostazione predefinita
 - [Introduzione a Git in Visual Studio](https://www.youtube.com/watch?v=GCZ9x3yqkyc) video su YouTube
 - [Annuncio del rilascio dell'esperienza Git nel](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/) post Visual Studio blog
 - Lancio del nuovo video [sull'esperienza Git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) su YouTube
-- [La Visual Studio Toolbox presenta: Il nuovo](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) video sull'esperienza Git su Channel 9 e [su YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
+- [La Visual Studio Toolbox presenta: Il nuovo video sull'esperienza Git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) su Channel 9 e su [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Nuovi interessanti aggiornamenti dell'esperienza Git nel](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) post Visual Studio blog
 - Post di blog [miglioramento dell'esperienza Git Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
 - [Utilizzare gli account GitHub in Visual Studio](../ide/work-with-github-accounts.md)
