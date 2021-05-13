@@ -1,6 +1,6 @@
 ---
-title: '&apos;Novità di MSBuild 15 | Microsoft Docs'
-description: Per la .NET Core SDK e per la compilazione di progetti .NET Core in Windows, macOS e Linux, vedere la pagina relativa alle funzionalità modificate, aggiornate e nuove di MSBuild 15.
+title: Novità di MSBuild 15 | Microsoft Docs
+description: Vedere le funzionalità modificate, aggiornate e nuove di MSBuild 15, disponibili per il .NET Core SDK e per la compilazione di progetti .NET Core in Windows, macOS e Linux.
 ms.custom: SEO-VS-2020
 ms.date: 03/01/2017
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: a7bbf46a1677a31726bdd7f2749f5ef3006e34f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0fe78e781af4f2fafa52a230036bc20b657fd8e
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933843"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848266"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novità di MSBuild 15
 
@@ -42,10 +42,10 @@ MSBuild è ora incluso in [.NET Core SDK](https://www.microsoft.com/net/download
 
 ## <a name="updates"></a>Aggiornamenti
 
-- L' [elemento Project](../msbuild/project-element-msbuild.md) ha un nuovo `SDK` attributo. L'attributo `Xmlns` è ora facoltativo. Per altre informazioni sull'attributo `SDK`, vedere [Procedura: Usare SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacchetti, metapacchetti e framework](/dotnet/core/packages) e [Aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj).
-- L' [elemento Item](../msbuild/item-element-msbuild.md) all'esterno delle destinazioni ha un nuovo `Update` attributo. È stata inoltre eliminata la restrizione relativa all'attributo `Remove`.
-- *Directory. Build. props* è un file definito dall'utente che fornisce le personalizzazioni per i progetti in una directory. Questo file viene importato automaticamente da *Microsoft. Common. props* a meno che la proprietà non `ImportDirectoryBuildTargets` sia impostata su **false**. *Directory.Build.targets* viene importato da *Microsoft.Common.targets*.
-- Eventuali metadati il cui nome non è in conflitto con l'elenco di attributi corrente possono essere espressi come un attributo. Per altre informazioni, vedere [elemento Item](../msbuild/item-element-msbuild.md).
+- [L'elemento](../msbuild/project-element-msbuild.md) Project ha un nuovo `SDK` attributo. L'attributo `Xmlns` è ora facoltativo. Per altre informazioni sull'attributo `SDK`, vedere [Procedura: Usare SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacchetti, metapacchetti e framework](/dotnet/core/packages) e [Aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj).
+- [L'elemento Item](../msbuild/item-element-msbuild.md) all'esterno delle destinazioni ha un nuovo `Update` attributo . È stata inoltre eliminata la restrizione relativa all'attributo `Remove`.
+- *Directory.Build.props* è un file definito dall'utente che fornisce personalizzazioni ai progetti in una directory. Questo file viene importato automaticamente da *Microsoft.Common.props,* a meno che la proprietà `ImportDirectoryBuildTargets` non sia impostata su **false.** *Directory.Build.targets* viene importato da *Microsoft.Common.targets*.
+- Eventuali metadati il cui nome non è in conflitto con l'elenco di attributi corrente possono essere espressi come un attributo. Per altre informazioni, vedere [Elemento Item.](../msbuild/item-element-msbuild.md)
 
 ## <a name="new-property-functions"></a>Nuove funzioni di proprietà
 
