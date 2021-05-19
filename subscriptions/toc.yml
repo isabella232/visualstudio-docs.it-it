@@ -161,7 +161,7 @@
         - name: Amministratori avanzati e amministratori
           href: admin-roles.md
         - name: Impostare le preferenze per i contratti
-          href: admin-prefs.md
+          href: admin-preferences.md
         - name: Panoramica
           href: using-admin-portal.md
         - name: Aggiungere sottoscrizioni mensili

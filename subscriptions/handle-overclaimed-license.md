@@ -1,48 +1,51 @@
 ---
-title: Gestire le licenze sovraallocate nelle sottoscrizioni di Visual Studio | Microsoft Docs
+title: Gestire le licenze sovra allocate in Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 03/21/2021
+ms.date: 05/18/2021
 ms.topic: conceptual
-description: Informazioni su come gli amministratori possono risolvere le sottoscrizioni con sovraallocazione
-ms.openlocfilehash: d92671a3478fd8044b959c56f3201df5ff5c5a85
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+description: Informazioni su come gli amministratori possono risolvere le sottoscrizioni sovra allocate
+ms.openlocfilehash: 533ce71e8795e89bcb21fd437da6bea91db291f4
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776558"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973394"
 ---
-# <a name="over-allocated-subscriptions"></a>Sottoscrizioni con allocazione eccessiva
-Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. Questa operazione viene definita "overallocazione".  
+# <a name="over-allocated-subscriptions"></a>Sottoscrizioni sovra allocate
+Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. Questa operazione è detta "sovrallocazione".  
 
-Per visualizzare le allocazioni delle sottoscrizioni, fare clic sull'icona in alto a sinistra per aprire il riquadro allocazioni.  
+Per visualizzare le allocazioni delle sottoscrizioni, fare clic sull'icona in alto a sinistra per aprire il riquadro delle allocazioni.  
 
 > [!NOTE]
-> Le overallocazioni non sono consentite nei programmi di licenza Open.  Inoltre, altri programmi possono visualizzare queste informazioni nel portale in modo diverso.
+> Le sovrallocazione non sono consentite nei programmi Open License.  Inoltre, altri programmi possono visualizzare queste informazioni nel portale in modo diverso.
 >
 > [!div class="mx-imgBorder"]
-> ![Avviso di sottoscrizioni richieste in eccedenza](_img/over-claimed/over-claimed-alert.png "Il numero di allocazioni di eccedenze è elencato in panoramica ed è rappresentato dalla barra con hash nel grafico per ogni tipo di sottoscrizione.")
+> ![Avviso di sottoscrizioni richieste in eccedenza](_img/over-claimed/over-claimed-alert.png "Il numero di sovraallocazione è elencato nella panoramica ed è rappresentato dalla barra con hash nel grafico per ogni tipo di sottoscrizione.")
 
-Si noti che nella visualizzazione viene utilizzata una barra con hash per indicare le sottoscrizioni con overallocazione.  Il numero di sovraallocazioni tra tutti i tipi di sottoscrizione è incluso nella sezione Panoramica nella parte superiore e ogni livello di sottoscrizione Visualizza anche il proprio stato di allocazione.  
+Si noti che la visualizzazione usa una barra con hash per indicare le sottoscrizioni sovra allocate.  Il numero di sovrallocazione in tutti i tipi di sottoscrizione è incluso nella sezione Panoramica nella parte superiore e ogni livello di sottoscrizione visualizza anche il proprio stato di allocazione.  
 
-## <a name="resolve-over-allocated-subscriptions"></a>Risolvere le sottoscrizioni allocate in eccesso
-Esistono diversi modi per risolvere le eccedenze di allocazione:
+## <a name="receive-notifications-when-over-allocations-occur"></a>Ricevere notifiche quando si verificano sovrallocazione
+È possibile designare un indirizzo di posta elettronica per ricevere notifiche quando si verificano sovrassegnazioni, nonché impostare una soglia che deve essere superata prima dell'invio delle notifiche.  Altre informazioni [sull'impostazione delle preferenze per i contratti](admin-preferences.md) nel portale di amministrazione.
+
+## <a name="resolve-over-allocated-subscriptions"></a>Risolvere le sottoscrizioni sovra allocate
+Esistono diversi modi per risolvere le sovrallocazione:
 - Contattare il rivenditore per acquistare sottoscrizioni aggiuntive.
-- Attendere fino al periodo di tempo reale annuale e pagare per le sottoscrizioni in eccesso in quel momento. 
+- Attendere fino al periodo di true-up annuale e pagare per le sottoscrizioni sovra allocate a quel punto. 
 - Modificare alcune assegnazioni di sottoscrizioni.  Questa operazione non eliminerà la necessità di pagare in base al periodo di true-up annuale, in quanto il true-up si basa sul numero massimo di sottoscrizioni assegnate in qualsiasi momento durante l'anno.
 
 ## <a name="billing-and-true-up"></a>Fatturazione e true-up
-Se l'organizzazione dispone di un contratto Enterprise Agreement (EA), gli amministratori hanno la facoltà di assegnare le sottoscrizioni senza acquistarle e di pagarle in un secondo momento attraverso un processo di riconciliazione noto come "true-up".  Quando si esegue l'overallocazione, all'organizzazione viene addebitato il numero massimo di sottoscrizioni assegnate agli utenti durante il "vero".  Questo accade anche se, al momento del true-up, l'organizzazione non ha più il numero massimo di sottoscrizioni assegnate.  Per altre informazioni su come monitorare l'utilizzo massimo di sottoscrizioni, visitare l'argomento [Utilizzo massimo](maximum-usage.md).
+Se l'organizzazione dispone di un contratto Enterprise Agreement (EA), gli amministratori hanno la facoltà di assegnare le sottoscrizioni senza acquistarle e di pagarle in un secondo momento attraverso un processo di riconciliazione noto come "true-up".  Quando si esegue l'sovrallocazione, all'organizzazione verrà addebitato il numero massimo di sottoscrizioni assegnate agli utenti durante il processo di "true-up".  Questo accade anche se, al momento del true-up, l'organizzazione non ha più il numero massimo di sottoscrizioni assegnate.  Per altre informazioni su come monitorare l'utilizzo massimo di sottoscrizioni, visitare l'argomento [Utilizzo massimo](maximum-usage.md).
 
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-- Altre informazioni sulla gestione delle [sottoscrizioni di Visual Studio con GitHub Enterprise](assign-github.md).
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://aka.ms/vsadminhelp)di Visual Studio.
+- Altre informazioni sulla gestione [delle Visual Studio con GitHub Enterprise](assign-github.md).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vsadminhelp)

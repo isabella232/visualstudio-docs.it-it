@@ -26,6 +26,8 @@
           href: deploy-app-service.md
         - name: Distribuire in Docker Hub
           href: deploy-docker-hub.md
+        - name: Gestire i profili di avvio (anteprima)
+          href: launch-profiles.md
         - name: Visualizzare e diagnosticare contenitori e immagini
           href: view-and-diagnose-containers.md
         - name: Configurare gli strumenti contenitore
