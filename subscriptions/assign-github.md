@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: Gestione delle sottoscrizioni nelle Visual Studio con GitHub Enterprise
-ms.openlocfilehash: c174b9beb7a7a0eec6bdb65e684869bc0be7dadb
-ms.sourcegitcommit: 8da735b586276c95bf566a867655e3464ab1f989
+ms.openlocfilehash: a1ece92990bf54d85140b1d3548ebf811913fae4
+ms.sourcegitcommit: 0088835f22334b8fee89f8c07bb12bcdfdef1639
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109740664"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110188110"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gestire le sottoscrizioni di Visual Studio con GitHub Enterprise
 I clienti che hanno contratti Enterprise (EA) con Microsoft sono idonei per l'acquisto di una nuova offerta di sottoscrizione che riunisce Visual Studio sottoscrizioni standard e GitHub Enterprise. Per i sottoscrittori di Visual Studio, si tratta di un modo semplice ed economico per acquisire GitHub Enterprise. 
@@ -32,7 +32,11 @@ Per altre informazioni sulla gestione delle Visual Studio, vedere questi argomen
 > [!Important]
 > Se Visual Studio sottoscrizioni con GitHub Enterprise vengono assegnate dagli amministratori della sottoscrizione Visual Studio senza prima acquistare, GitHub non riceverà una notifica che indica che si vuole creare un account GitHub Enterprise locale.  **Acquisto di almeno uno** Visual Studio sottoscrizione con GitHub Enterprise deve essere effettuata prima dell'assegnazione delle sottoscrizioni.
 
-## <a name="moving-to-visual-studio-with-github-enterprise"></a>Spostamento in Visual Studio con GitHub Enterprise
+## <a name="moving-to-visual-studio-with-github-enterprise"></a>Passaggio a Visual Studio con GitHub Enterprise
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEAsv]
+
 Se l'organizzazione acquista sottoscrizioni Visual Studio con bundle GitHub Enterprise dopo l'assegnazione delle sottoscrizioni Visual Studio Enterprise e Visual Studio Professional standard, il portale di amministrazione contiene una funzionalità che consente di spostare i sottoscrittori esistenti nel Visual Studio Enterprise corrispondente con GitHub Enterprise e/o Visual Studio Professional con sottoscrizioni GitHub Enterprise.  Ad esempio, i sottoscrittori con Visual Studio Professional sottoscrizioni verranno spostati in Visual Studio Professional con GitHub Enterprise sottoscrizioni. Nel pannello "Panoramica" della barra a sinistra verrà visualizzato il riquadro seguente:
 
    > [!div class="mx-imgBorder"]
@@ -42,7 +46,7 @@ Se l'organizzazione acquista sottoscrizioni Visual Studio con bundle GitHub Ente
 > Come accennato in precedenza, i dati del sottoscrittore esistenti, la cronologia e l'ID sottoscrizione verranno mantenuti e tutti i vantaggi attivati non verranno interrotti a causa di questo spostamento.  
 
 
-Quando si fa clic **sul pulsante Sposta** ora, un pannello a comparsa presenta raccomandazioni sullo spostamento delle sottoscrizioni Enterprise e/o Professional:
+Quando si fa clic **sul pulsante Sposta** ora, viene visualizzato un pannello a comparsa con raccomandazioni sullo spostamento delle sottoscrizioni Enterprise e/o Professional:
 
    > [!div class="mx-imgBorder"]
    > ![Riquadro a comparsa](_img/assign-github/fly-out.png)
@@ -66,10 +70,10 @@ Poiché questo processo è più complesso, potrebbero essere necessario diversi 
 GitHub è disponibile come GitHub.com basato su cloud o in versione locale come GitHub Enterprise Server.  I processi per la gestione delle due versioni variano.  GitHub offre vari argomenti della Guida e guide di amministrazione che consentono di gestire GitHub Enterprise sottoscrizioni.  Segue un elenco di collegamenti ad argomenti selezionati.  
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Altre informazioni sull'assegnazione di GitHub in [GitHub Docs](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)
+- Per altre informazioni sull'assegnazione di GitHub, [vedere GitHub Docs](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)
 - Per risposte a domande su un'ampia gamma di argomenti di GitHub, vedere [la Guida di GitHub.](https://help.github.com/en)
 - Ottenere assistenza da altri utenti di GitHub nel [GitHub Community Forum](https://github.community/) (forum della Community GitHub).
-- Per assistenza per l'amministrazione di Sottoscrizioni di Visual Studio, contattare il [supporto Visual Studio sottoscrizioni.](https://aka.ms/vsadminhelp)
+- Per assistenza per l'amministrazione di Sottoscrizioni di Visual Studio, contattare il [supporto Visual Studio sottoscrizioni](https://aka.ms/vsadminhelp).
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
 - Ottenere [supporto tecnico](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
 
