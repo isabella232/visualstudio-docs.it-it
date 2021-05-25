@@ -20,31 +20,31 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a480c539fc178e5ae672427fe32e9fd34728dc79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76bafaf5192c59e0f23078e396ae553b3023e060
+ms.sourcegitcommit: d3577395cf016f2836eb5a3c1d496cca6d449baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919162"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110413325"
 ---
 # <a name="msbuild-conditions"></a>Condizioni di MSBuild
 
-MSBuild supporta un set specifico di condizioni che possono essere applicate ovunque `Condition` sia consentito un attributo. La tabella seguente illustra tali condizioni.
+MSBuild supporta un set specifico di condizioni che possono essere applicate ovunque sia `Condition` consentito un attributo. La tabella seguente illustra tali condizioni.
 
 |Condizione|Descrizione|
 |---------------|-----------------|
 |'`stringA`' == '`stringB`'|Restituisce `true` se `stringA` è uguale a `stringB`.<br /><br /> Ad esempio:<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti. Questo controllo non fa distinzione tra maiuscole e minuscole.|
 |'`stringA`' != '`stringB`'|Restituisce `true` se `stringA` non è uguale a `stringB`.<br /><br /> Ad esempio:<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti. Questo controllo non fa distinzione tra maiuscole e minuscole.|
-|\<, >, \<=, >=|Restituisce i valori numerici degli operandi. Restituisce `true` se la valutazione relazionale è true. Gli operandi devono restituire un numero decimale o esadecimale. I numeri esadecimali devono iniziare con "0x". **Nota:** in XML i caratteri `<` e `>` devono essere preceduti da un carattere di escape. Il simbolo `<` viene rappresentato come `&lt;`. Il simbolo `>` viene rappresentato come `&gt;`.|
+|\<, >, \<=, >=|Restituisce i valori numerici degli operandi. Restituisce `true` se la valutazione relazionale è true. Gli operandi devono restituire un numero decimale o esadecimale o una versione punteggiata in quattro parti. I numeri esadecimali devono iniziare con "0x". **Nota:** in XML i caratteri `<` e `>` devono essere preceduti da un carattere di escape. Il simbolo `<` viene rappresentato come `&lt;`. Il simbolo `>` viene rappresentato come `&gt;`.|
 |Exists('`stringA`')|Restituisce `true` se esiste un file o una cartella con il nome `stringA`.<br /><br /> Ad esempio:<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti.|
 |HasTrailingSlash('`stringA`')|Restituisce `true` se la stringa specificata contiene un carattere di barra (/) o di barra rovesciata (\\) finale.<br /><br /> Ad esempio:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti.|
 |!|Restituisce `true` se l'operando restituisce `false`.|
 |`And`|Restituisce `true` se entrambi gli operandi restituiscono `true`.|
 |`Or`|Restituisce `true` se almeno uno degli operandi restituisce `true`.|
 |()|Meccanismo di raggruppamento che restituisce `true` se le espressioni contenute all'interno restituiscono `true`.|
-|$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere [logica dei parametri del modello di progetto/elemento di Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
+|$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere Visual Studio logica dei parametri del modello [di progetto/elemento.](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)|
 
-È possibile usare i metodi di stringa in condizioni, come illustrato nell'esempio seguente, in cui la funzione [trirammenda ()](/dotnet/api/system.string.trimend) viene usata per confrontare solo la parte pertinente della stringa, per distinguere tra .NET Framework e i Framework di destinazione .NET Core.
+È possibile usare metodi stringa nelle condizioni, come illustrato nell'esempio seguente, in cui la funzione [TrimEnd()](/dotnet/api/system.string.trimend) viene usata per confrontare solo la parte pertinente della stringa, per distinguere tra framework di destinazione .NET Framework e .NET Core.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -60,11 +60,20 @@ MSBuild supporta un set specifico di condizioni che possono essere applicate ovu
 </Project>
 ```
 
-Nei file di progetto MSBuild non esiste alcun tipo booleano vero. I dati booleani sono rappresentati in proprietà che possono essere vuote o impostate su qualsiasi valore. Pertanto, `'$(Prop)' == 'true'` significa "If prop is `true` ,", ma `'$(Prop)' != 'false'` significa "If prop è `true` o unannullato o impostato su qualcos'altro".
+Nei file di progetto MSBuild non esiste un vero tipo booleano. I dati booleani sono rappresentati in proprietà che potrebbero essere vuote o impostate su qualsiasi valore. Pertanto, `'$(Prop)' == 'true'` indica "se Prop è ," ma indica "se Prop è o non è impostato o impostato su un altro `true` `'$(Prop)' != 'false'` `true` elemento".
 
-La logica booleana viene valutata solo nel contesto delle condizioni, quindi le impostazioni delle proprietà come `<Prop2>'$(Prop1)' == 'true'</Prop>` sono rappresentate come stringa (dopo l'espansione della variabile), non valutate come valori booleani.  
+La logica booleana viene valutata solo nel contesto delle condizioni, quindi le impostazioni delle proprietà, ad esempio sono rappresentate come stringa (dopo l'espansione della variabile), non valutate `<Prop2>'$(Prop1)' == 'true'</Prop>` come valori booleani.  
 
-MSBuild implementa alcune regole di elaborazione speciali per semplificare l'utilizzo delle proprietà di stringa utilizzate come valori booleani. I valori letterali booleani sono accettati, quindi `Condition="true"` e `Condition="false"` funzionano come previsto. MSBuild include inoltre regole speciali per supportare l'operatore di negazione booleano. Quindi, se `$(Prop)` è' true ', si `!$(Prop)` espande a `!true` e questo confronto è uguale a `false` , come previsto.
+MSBuild implementa alcune regole di elaborazione speciali per semplificare l'uso delle proprietà stringa usate come valori booleani. I valori letterali booleani vengono accettati e `Condition="true"` `Condition="false"` funzionano come previsto. MSBuild include anche regole speciali per supportare l'operatore di negazione booleano. Pertanto, se è "true", si espande in e viene `$(Prop)` `!$(Prop)` `!true` confrontato con `false` , come ci si aspetterebbe.
+
+## <a name="comparing-versions"></a>Confronto tra versioni
+
+Gli operatori relazionali , , e supportano le versioni analizzate da , in modo da poter confrontare tra loro versioni con quattro `<` `>` parti `<=` `>=` <xref:System.Version?displayProperty=fullName> numeriche. Ad `'1.2.3.4' < '1.10.0.0'` esempio, è `true` .
+
+> [!CAUTION]
+> `System.Version` I confronti possono produrre risultati sorprendenti quando una o entrambe le versioni non specificano tutte e quattro le parti. Ad esempio, la versione 1.1 è precedente alla versione 1.1.0.
+
+MSBuild fornisce [funzioni di proprietà per confrontare le](property-functions.md#MSBuild-version-comparison-functions) versioni con un set diverso di regole compatibili con il controllo delle versioni semantico (semver).
 
 ## <a name="see-also"></a>Vedi anche
 

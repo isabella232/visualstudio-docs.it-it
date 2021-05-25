@@ -1,6 +1,6 @@
 ---
 title: Funzioni di proprietà | Microsoft Docs
-description: Informazioni su come usare le funzioni di proprietà, che sono chiamate a .NET Framework metodi visualizzati nelle definizioni delle proprietà di MSBuild.
+description: Informazioni su come usare le funzioni di proprietà, che sono chiamate .NET Framework metodi che vengono visualizzati nelle definizioni di proprietà di MSBuild.
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
@@ -12,16 +12,16 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4dce707d51d7a2840aeef78f4d70392c884275
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c4a6254f15a4108c525231d0e5e93c6fc71bfb3
+ms.sourcegitcommit: d3577395cf016f2836eb5a3c1d496cca6d449baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932019"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110413338"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
-Le funzioni di proprietà sono chiamate a .NET Framework metodi visualizzati nelle definizioni delle proprietà di MSBuild. A differenza delle attività, le funzioni di proprietà possono essere usate all'esterno delle destinazioni e vengono valutate prima dell'esecuzione delle destinazioni.
+Le funzioni di proprietà sono chiamate .NET Framework metodi che vengono visualizzati nelle definizioni di proprietà di MSBuild. A differenza delle attività, le funzioni di proprietà possono essere usate all'esterno delle destinazioni e vengono valutate prima dell'esecuzione delle destinazioni.
 
 Senza usare le attività MSBuild, è possibile leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni nello script di compilazione. MSBuild tenterà di convertire le stringhe in numeri e i numeri in stringhe nonché di eseguire altre conversioni secondo le esigenze.
 
@@ -47,7 +47,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>Funzioni di proprietà statiche
 
-Nello script di compilazione è possibile accedere alle proprietà e ai metodi statici di molte classi di sistema. Per ottenere il valore di una proprietà statica, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema e \<Property> è il nome della proprietà.
+Nello script di compilazione è possibile accedere alle proprietà e ai metodi statici di molte classi di sistema. Per ottenere il valore di una proprietà statica, usare la sintassi seguente, dove è il nome della classe di sistema e \<Class> è il nome della \<Property> proprietà.
 
 ```
 $([Class]::Property)
@@ -59,7 +59,7 @@ Ad esempio, è possibile usare il codice seguente per impostare una proprietà d
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Per chiamare un metodo statico, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Method> è il nome del metodo e ( \<Parameters> ) è l'elenco di parametri per il metodo:
+Per chiamare un metodo statico, usare la sintassi seguente, dove è il nome della classe di sistema, è il nome del metodo e ( ) è l'elenco di parametri \<Class> \<Method> per il \<Parameters> metodo:
 
 ```
 $([Class]::Method(Parameters))
@@ -105,7 +105,7 @@ Inoltre, è possibile usare le proprietà e i metodi statici seguenti:
 
 - [System.Environment::CommandLine](xref:System.Environment.CommandLine*)
 - [System.Environment::ExpandEnvironmentVariables](xref:System.Environment.ExpandEnvironmentVariables*)
-- [System. Environment:: GetEnvironmentVariable](xref:System.Environment.GetEnvironmentVariable*)
+- [System.Environment::GetEnvironmentVariable](xref:System.Environment.GetEnvironmentVariable*)
 - [System.Environment::GetEnvironmentVariables](xref:System.Environment.GetEnvironmentVariables*)
 - [System.Environment::GetFolderPath](xref:System.Environment.GetFolderPath*)
 - [System.Environment::GetLogicalDrives](xref:System.Environment.GetLogicalDrives*)
@@ -115,15 +115,15 @@ Inoltre, è possibile usare le proprietà e i metodi statici seguenti:
 - [System.IO.Directory::GetLastWriteTime](xref:System.IO.Directory.GetLastWriteTime*)
 - [System.IO.Directory::GetParent](xref:System.IO.Directory.GetParent*)
 - [System.IO.File::Exists](xref:System.IO.File.Exists*)
-- [System. IO. file:: GetCreationTime](xref:System.IO.File.GetCreationTime*)
-- [System. IO. file:: GetAttributes](xref:System.IO.File.GetAttributes*)
-- [System. IO. file:: GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
-- [System. IO. file:: GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
+- [System.IO.File::GetCreationTime](xref:System.IO.File.GetCreationTime*)
+- [System.IO.File::GetAttributes](xref:System.IO.File.GetAttributes*)
+- [System.IO.File::GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
+- [System.IO.File::GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
 - [System.IO.File::ReadAllText](xref:System.IO.File.ReadAllText*)
 
 ### <a name="calling-instance-methods-on-static-properties"></a>Chiamata di metodi di istanza su proprietà statiche
 
-Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Property> è il nome della proprietà, \<Method> è il nome del metodo e ( \<Parameters> ) è l'elenco di parametri per il metodo:
+Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza, usare la sintassi seguente, dove è il nome della classe di sistema, è il nome della proprietà, è il nome del metodo e ( ) è l'elenco di parametri per \<Class> \<Property> il \<Method> \<Parameters> metodo:
 
 ```
 $([Class]::Property.Method(Parameters))
@@ -139,7 +139,7 @@ Ad esempio, è possibile usare il codice seguente per impostare una proprietà d
 
 ### <a name="msbuild-property-functions"></a>Funzioni di proprietà MSBuild
 
-È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. Per accedere a questi metodi, usare la sintassi seguente, dove \<Method> è il nome del metodo e ( \<Parameters> ) è l'elenco di parametri per il metodo.
+È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. È possibile accedere a questi metodi usando la sintassi seguente, dove è il nome del metodo e ( ) è l'elenco \<Method> di parametri per il \<Parameters> metodo.
 
 ```
 $([MSBuild]::Method(Parameters))
@@ -177,7 +177,7 @@ Di seguito è riportato un elenco di funzioni di proprietà MSBuild:
 |string NormalizeDirectory(params string[] path)|Ottiene il percorso completo in forma canonica della directory specificata e garantisce che contenga i separatori di directory corretti per il sistema operativo corrente e una barra rovesciata finale.|
 |string EnsureTrailingSlash(string path)|Se il percorso specificato non dispone di una barra rovesciata, la aggiunge al percorso. Se il percorso è una stringa vuota non lo modifica.|
 |string GetPathOfFileAbove(string file, string startingDirectory)|Cerca e restituisce il percorso completo di un file nella struttura di directory sopra il percorso del file di compilazione corrente o in base a `startingDirectory` , se specificato.|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Individuare e restituire la directory di un file nella directory specificata o in una posizione nella struttura di directory sopra quella directory.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Individuare e restituire la directory di un file nella directory specificata o in un percorso nella struttura di directory al di sopra di tale directory.|
 |string MakeRelative(string basePath, string path)|Rende `path` relativo a `basePath`. `basePath` deve essere una directory assoluta. Se `path` non può essere reso relativo, viene restituito letteralmente. Simile a `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Restituisce la stringa nel parametro 'defaultValue' solo se il parametro 'conditionValue' è vuoto. In caso contrario, restituisce il valore conditionValue.|
 
@@ -231,7 +231,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>GetPathOfFileAbove di MSBuild
 
-La `GetPathOfFileAbove` funzione di proprietà in MSBuild restituisce il percorso del file specificato, se si trova nella struttura di directory al di sopra della directory corrente. Dal punto di vista funzionale è equivalente alla chiamata
+La funzione di proprietà in MSBuild restituisce il percorso del file specificato, se si trova `GetPathOfFileAbove` nella struttura di directory sopra la directory corrente. Dal punto di vista funzionale è equivalente alla chiamata
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -283,7 +283,7 @@ Di seguito è riportato un esempio.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-Ottiene i dati **SLRuntimeInstallPath** della chiave **ReferenceAssemblies** , cercando innanzitutto nella visualizzazione del registro di sistema a 64 bit, quindi nella visualizzazione del registro di sistema a 32 bit.
+ottiene i **dati SLRuntimeInstallPath** della chiave **ReferenceAssemblies,** esaminando prima nella visualizzazione del Registro di sistema a 64 bit e quindi nella visualizzazione del Registro di sistema a 32 bit.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -342,19 +342,19 @@ Output:
 -->
 ```
 
-## <a name="msbuild-targetframework-and-targetplatform-functions"></a>Funzioni MSBuild TargetFramework e TargetPlatform
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>Funzioni TargetFramework e TargetPlatform di MSBuild
 
-MSBuild definisce diverse funzioni per la gestione delle [Proprietà TargetFramework e TargetPlatform](msbuild-target-framework-and-target-platform.md).
+MSBuild 16.7 e versioni successive definiscono diverse funzioni per la gestione [delle proprietà TargetFramework e TargetPlatform](msbuild-target-framework-and-target-platform.md).
 
 |Firma della funzione|Descrizione|
 |------------------------|-----------------|
-|GetTargetFrameworkIdentifier (stringa targetFramework)|Analizzare TargetFrameworkIdentifier da TargetFramework.|
-|GetTargetFrameworkVersion (stringa targetFramework)|Analizzare TargetFrameworkVersion da TargetFramework.|
-|GetTargetPlatformIdentifier (stringa targetFramework)|Analizzare TargetPlatformIdentifier da TargetFramework.|
-|GetTargetPlatformVersion (stringa targetFramework)|Analizzare TargetPlatformVersion da TargetFramework.|
-|IsTargetFrameworkCompatible (String targetFrameworkTarget, String targetFrameworkCandidate)|Restituisce ' true ' se il Framework di destinazione candidato è compatibile con il Framework di destinazione e false in caso contrario.|
+|GetTargetFrameworkIdentifier(string targetFramework)|Analizzare TargetFrameworkIdentifier da TargetFramework.|
+|GetTargetFrameworkVersion(string targetFramework)|Analizzare TargetFrameworkVersion da TargetFramework.|
+|GetTargetPlatformIdentifier(string targetFramework)|Analizzare TargetPlatformIdentifier da TargetFramework.|
+|GetTargetPlatformVersion(string targetFramework)|Analizzare TargetPlatformVersion da TargetFramework.|
+|IsTargetFrameworkCompatible(string targetFrameworkTarget, string targetFrameworkCandidate)|Restituisce 'True' se il framework di destinazione candidato è compatibile con questo framework di destinazione e false in caso contrario.|
 
-Nell'esempio seguente viene illustrata la modalità di utilizzo di queste funzioni. 
+L'esempio seguente illustra come vengono usate queste funzioni. 
 
 ```xml
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -385,9 +385,42 @@ Value4 = 7.0
 Value5 = True
 ```
 
-## <a name="msbuild-condition-functions"></a>Funzioni di condizione MSBuild
+## <a name="msbuild-version-comparison-functions"></a>Funzioni di confronto tra versioni di MSBuild
 
-Le funzioni `Exists` e `HasTrailingSlash` non sono funzioni di proprietà. Sono disponibili per l'uso con l' `Condition` attributo. Vedere [condizioni di MSBuild](msbuild-conditions.md).
+MSBuild 16.5 e versioni successive definiscono diverse funzioni per confrontare stringhe che rappresentano le versioni.
+
+> [!Note]
+> Gli operatori di confronto nelle [condizioni possono confrontare stringhe che possono essere analizzate come `System.Version` oggetti](#msbuild-conditions.md#Comparing-versions), ma il confronto può produrre risultati imprevisti. Preferire le funzioni di proprietà.
+
+|Firma della funzione|Descrizione|
+|------------------------|-----------------|
+|VersionEquals(string a, string b)|Restituisce `true` se le versioni e sono `a` `b` equivalenti in base alle regole seguenti.|
+|VersionGreaterThan(string a, string b)|Restituisce `true` se la versione è maggiore di in base alle regole `a` `b` seguenti.|
+|VersionGreaterThanOrEquals(string a, string b)|Restituisce `true` se la versione è maggiore o uguale a in base alle regole `a` `b` seguenti.|
+|VersionLessThan(string a, string b)|Restituisce `true` se la versione è minore di in base alle regole `a` `b` seguenti.|
+|VersionLessThanOrEquals(string a, string b)|Restituisce `true` se la versione è minore o uguale a in base alle regole `a` `b` seguenti.|
+|VersionNotEquals(string a, string b)|Restituisce `false` se le versioni e sono `a` `b` equivalenti in base alle regole seguenti.|
+
+In questi metodi le versioni vengono analizzate come <xref:System.Version?displayProperty=fullName> , con le eccezioni seguenti:
+
+* Il `v` valore iniziale di o viene `V` ignorato, che consente il confronto con `$(TargetFrameworkVersion)` .
+
+* Tutti gli elementi dalla prima "-" o "+" alla fine della stringa di versione vengono ignorati. In questo modo è possibile passare versioni semantiche (semver), anche se l'ordine non è uguale a semver. Al contrario, gli identificatori di versione non definitiva e i metadati di compilazione non hanno alcuno spessore di ordinamento. Può essere utile, ad esempio, per attivare una funzionalità per `>= x.y` e attivarla in `x.y.z-pre` .
+
+* Le parti non specifiche sono uguali a parti con valore zero. (`x == x.0 == x.0.0 == x.0.0.0`).
+
+* Lo spazio vuoto non è consentito nei componenti integer.
+
+* La sola versione principale è valida ( `3` è uguale a `3.0.0.0` )
+
+* `+` non è consentito come segno positivo nei componenti integer (viene considerato come metadati semver e ignorato)
+
+> [!TIP]
+> I confronti delle [proprietà TargetFramework devono](msbuild-target-framework-and-target-platform.md) in genere usare [IsTargetFrameworkCompatible](#MSBuild-TargetFramework-and-TargetPlatform-functions) invece di estrarre e confrontare le versioni. Ciò consente il `TargetFramework` confronto di che variano sia in che in `TargetFrameworkIdentifier` versione.
+
+## <a name="msbuild-condition-functions"></a>Funzioni di condizione di MSBuild
+
+Le funzioni `Exists` e non sono funzioni di `HasTrailingSlash` proprietà. Sono disponibili per l'uso con `Condition` l'attributo . Vedere [Condizioni di MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Vedi anche
 
