@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 05/18/2021
+ms.date: 05/25/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a08826c3756586cd201276354d77d5e4e30f4102
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: 73ec976b14501ae8f6d5315cdcc6a80677b6762b
+ms.sourcegitcommit: 55aeafdd369bea434adaebe5f9d4631e33623545
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973411"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110399021"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,8 +27,10 @@ ms.locfileid: "109973411"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione della build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.11.0 | Preview 1 | 25 maggio 2021 | 16.11.31320.298 |
+| 16.10.0 | Versione | 25 maggio 2021 | 16.10.31321.278 |
 | 16.10.0 | Preview 4 | 18 maggio 2021 | 16.10.31313.381 |
 | 16.9.6 | Versione | 18 maggio 2021 | 16.9.31313.79 |
 | 16.10.0 | Preview 3 | 11 maggio 2021 | 16.10.31306.274 |
@@ -228,7 +230,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione della build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.36 | Versione | 11 maggio 2021 | 15.9.28307.1525 |
 | 15.9.35 | Versione | 13 aprile 2021 | 15.9.28307.1500 |

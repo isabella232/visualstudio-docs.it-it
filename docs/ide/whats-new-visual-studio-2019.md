@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2019
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2019.
-ms.date: 03/19/2021
+ms.date: 05/25/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,19 +15,22 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b97b87a7edd8fdba46b755b7253af62f6de39f
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: 4dcd5ef4ee34df1a95ab494a18d8fec68499bf43
+ms.sourcegitcommit: d6fb4f8dff6ac69dfdd61e481a4ddd6b0dd8fa63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973466"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110395437"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
-**Aggiornamento per la [versione 16.9](/visualstudio/releases/2019/release-notes/)**
+**Aggiornamento per la [versione 16.10](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Scarica Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+
+> [!TIP]
+> Partecipa a microsoft alla conferenza **[Microsoft Build](https://devblogs.microsoft.com/visualstudio/the-visual-studio-family-welcomes-you-at-microsoft-build-2021/)** per altre informazioni sulle funzionalità più recenti di Visual Studio 2019, insieme a un'anteprima di ciò che verrà [Visual Studio 2022.](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)
 
 Visual Studio 2019 include gli strumenti e i servizi migliori del settore per qualsiasi sviluppatore, app e piattaforma. Sia che si utilizzi Visual Studio per la prima volta o che lo si utilizzi da anni, nella versione più recente sono disponibili molte novità.
 
@@ -124,7 +127,7 @@ Per altre informazioni, vedere il post di blog [Announcing .NET Core 3.0 (Annunc
 
 ## <a name="collaborate"></a>Collaborazione
 
-Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Lunghezza video: 4,22 minuti*
+Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Lunghezza del video: 4,22 minuti*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
@@ -216,7 +219,7 @@ Per altre informazioni, vedere la pagina [Eseguire il debug di app di Azure ASP.
 
    ![Animazione che illustra come aggiungere proprietà nel debugger Visual Studio usando lo strumento Proprietà bloccabili](media/vs-2019/debugger-pinnable-properties.gif "Aggiungere proprietà nel debugger Visual Studio usando lo strumento Aggiungi proprietà.")
 
-Per altre informazioni, vedere il post di blog [Pinnable Properties: Debug & Display Managed Objects Your Way](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) (Proprietà bloccabili: debug e visualizzazione di oggetti gestiti in modo personale).
+Per altre informazioni, vedere il post di blog [Pinnable Properties: Debug & Display Managed Objects YOUR Way ( Proprietà pinnable: debug) & di](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) blog Display Managed Objects YOUR Way (Visualizzare oggetti gestiti in modo personale).
 
 ## <a name="whats-next"></a>Passaggi successivi
 
@@ -231,6 +234,8 @@ Nel frattempo, ecco una nuova funzionalità attualmente in esecuzione.
    Per altre informazioni, vedere il [controllo della versione nella Visual Studio.](/visualstudio/version-control/)
 
 Per altre informazioni sulla versione di anteprima e su un collegamento di download se si desidera provarla, vedere la Visual Studio Preview &mdash; &mdash; pagina. **[](https://aka.ms/vspreview/)**
+
+Per altre informazioni sulla prossima versione, vedere il post di blog **[Visual Studio 2022.](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)** Verranno anche fornite altre informazioni su Visual Studio 2022 nella conferenza **[Microsoft Build,](https://devblogs.microsoft.com/visualstudio/the-visual-studio-family-welcomes-you-at-microsoft-build-2021/)** se si desidera partecipare anche a microsoft.
 
 ## <a name="give-us-feedback"></a>Commenti e suggerimenti
 
