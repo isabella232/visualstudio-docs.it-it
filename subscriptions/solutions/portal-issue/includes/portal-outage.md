@@ -1,6 +1,6 @@
 ---
 title: Interruzione del portale
-description: Interruzione completa nel portale delle sottoscrizioni di Visual Studio.
+description: Completare l'interruzione nel portale Visual Studio sottoscrizione.
 ms.topic: include
 ms.assetid: 70cbe98d-bfac-4801-be36-7268990d3870
 author: caitybuschlen
@@ -10,20 +10,20 @@ user.type: subscriber
 tags: portal-error
 subscription.type: vl, cloud, retail, partner
 sap.id: 8250612f-7446-20c5-7473-16d089f2280d
-ms.openlocfilehash: 138c19896629c813c558c66d5d12c294a0380db6
-ms.sourcegitcommit: cfc984316ded3396db6722ad90f9378dfb7661ff
+ms.openlocfilehash: a6db8e365df692a0cfaf9d13203a3b4b6bd5f0ac
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98024185"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349998"
 ---
-## <a name="were-sorry-to-hear-that-youre-experiencing-an-issue-with-the-visual-studio-subscriptions-portal"></a>Si è verificato un problema con il portale delle sottoscrizioni di Visual Studio. 
+## <a name="were-sorry-to-hear-that-youre-experiencing-an-issue-with-the-visual-studio-subscriptions-portal"></a>Si è verificato un problema con il portale delle Visual Studio sottoscrizioni. 
 
-Se i pulsanti o i controlli del portale delle sottoscrizioni non funzionano, è possibile che venga visualizzata una pagina o un errore di pagina vuota, che la pagina non stia caricando o si verifichi un timeout o che altri problemi di funzionalità del portale, provare: 
+Se i pulsanti o i controlli del portale delle sottoscrizioni non funzionano, viene visualizzato un errore di pagina non visualizzabili o vuota, la pagina non viene caricata o si verifica un timeout o si verifica un altro problema di funzionalità del portale. Provare a: 
 
 * Cancellazione della cache del browser e accesso di nuovo al portale delle sottoscrizioni 
 * Apertura del portale in un browser diverso 
 * Apertura del portale in una finestra in incognito o InPrivate 
 * Aggiornamento della pagina  
 
-Se nessuna di queste soluzioni semplici risolve il problema, fare clic su "crea un ticket di supporto" per ottenere assistenza.
+Se nessuna di queste soluzioni semplici risolve il problema, fare clic su "Richiesta online" per ottenere assistenza.

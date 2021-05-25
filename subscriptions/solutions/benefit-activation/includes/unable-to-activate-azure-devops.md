@@ -1,6 +1,6 @@
 ---
-title: Non è possibile attivare il vantaggio Azure DevOps
-description: Non è possibile attivare il vantaggio Azure DevOps incluso con la sottoscrizione di Visual Studio.
+title: Non è possibile attivare il Azure DevOps vantaggio
+description: Non è possibile attivare il vantaggio Azure DevOps incluso nella sottoscrizione Visual Studio registrazione.
 ms.topic: include
 ms.assetid: 3ec2a8c1-07e0-45cd-808c-c354b9e26fb4
 author: CaityBuschlen
@@ -10,21 +10,21 @@ user.type: subscriber
 tags: benefit, azure-devops
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 7803b30fc189b29b58a1642dc8b86cd5d7b8a526
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 75399cf1549377d93e823b59155af1d0630f647b
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541258"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349880"
 ---
-## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>Non è possibile attivare il vantaggio Azure DevOps.
+## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>Non è possibile attivare il vantaggio Azure DevOps lavoro.
 
-Come Sottoscrittore di Visual Studio, è possibile usare una gamma di funzionalità in Azure DevOps. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.  
+Come sottoscrittore Visual Studio, è possibile usare una gamma di funzionalità in Azure DevOps. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.  
 
 ## <a name="sign-in"></a>Accedi
-1. Accedere al portale delle [sottoscrizioni](https://my.visualstudio.com/benefits) e fare clic sul collegamento per iniziare nella parte inferiore del riquadro del vantaggio Azure DevOps.
-1. Si passerà ad Azure DevOps, in cui è necessario accettare le condizioni per l'utilizzo. 
-1. Accedere ad Azure DevOps usando il messaggio di posta elettronica usato per accedere alla sottoscrizione di Visual Studio. Se si preferisce usare un indirizzo di posta elettronica diverso per accedere, è possibile [creare un account alternativo](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) per collegare la sottoscrizione, consentendo di accedere ad Azure DevOps usando entrambi i messaggi di posta elettronica. 
+1. Accedere al portale [delle sottoscrizioni e](https://my.visualstudio.com/benefits) fare clic sul collegamento Introduzione nella parte inferiore del riquadro Azure DevOps benefit.
+1. Si verrà presi in considerazione Azure DevOps in cui è necessario accettare le condizioni per il servizio. 
+1. Accedere Azure DevOps usando il messaggio di posta elettronica che si usa per accedere alla sottoscrizione Visual Studio sottoscrizione. Se si preferisce usare un indirizzo di posta elettronica diverso per l'accesso, è possibile aggiungere un [account](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) alternativo per collegare la sottoscrizione, consentendo di accedere alle Azure DevOps usando entrambi i messaggi di posta elettronica. 
 
-## <a name="more-information-about-subscription-eligibility"></a>Altre informazioni sull'idoneità per la sottoscrizione 
-Altre [informazioni sull'idoneità per livello di sottoscrizione](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops).
+## <a name="more-information-about-subscription-benefit-eligibility"></a>Altre informazioni sull'idoneità al vantaggio della sottoscrizione 
+Per altre [informazioni sull'idoneità a livello di sottoscrizione, vedere](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops).

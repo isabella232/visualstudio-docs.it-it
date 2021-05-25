@@ -1,6 +1,6 @@
 ---
-title: Ricerca per categorie modificare il messaggio di posta elettronica di accesso per la sottoscrizione di Visual Studio Retail?
-description: Informazioni su come richiedere una modifica dell'indirizzo di accesso di Visual Studio per le sottoscrizioni acquistate tramite il Microsoft Store
+title: Ricerca per categorie modificare il messaggio di posta elettronica di accesso per la sottoscrizione Visual Studio retail?
+description: Informazioni su come richiedere una modifica dell'indirizzo Visual Studio di accesso per le sottoscrizioni acquisite tramite il Microsoft Store
 author: evanwindom
 ms.author: cabuschl
 ms.date: 03/16/2020
@@ -10,14 +10,14 @@ user.type: subscriber
 tags: sign-in
 subscription.type: retail
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: 39f74d1014f3cea75b0a7f5a85e17f3694b99370
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: cbbd449b89e441e756cc49f374c98e653f52706e
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916015"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349850"
 ---
-## <a name="how-to-change-your-sign-in-email-address-for-visual-studio-subscriptions-purchased-through-the-microsoft-store"></a>Come modificare l'indirizzo di posta elettronica di accesso per le sottoscrizioni di Visual Studio acquistate tramite il Microsoft Store
-Per modificare l'indirizzo di posta elettronica usato per accedere alle sottoscrizioni di Visual Studio e aver acquistato le sottoscrizioni tramite il Microsoft Store, sarà necessario contattare il team di supporto per l'account, la sottoscrizione e la fatturazione di Microsoft per modificare l'indirizzo di posta elettronica di accesso. 
+## <a name="how-to-change-your-sign-in-email-address-for-visual-studio-subscriptions-purchased-through-the-microsoft-store"></a>Come modificare l'indirizzo di posta elettronica di accesso per Visual Studio sottoscrizioni acquistate tramite il Microsoft Store
+Se si vuole modificare l'indirizzo di posta elettronica che si usa per accedere alle sottoscrizioni di Visual Studio e si sono acquistate le sottoscrizioni tramite il Microsoft Store, è necessario contattare il team di supporto per l'account, la sottoscrizione e la fatturazione di Microsoft per modificare il messaggio di posta elettronica di accesso. 
 
-Per ottenere assistenza, fare clic su "crea un ticket di supporto".
+Fare clic su "Richiesta online" per ottenere assistenza.
