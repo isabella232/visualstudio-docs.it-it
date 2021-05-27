@@ -1,12 +1,12 @@
 ---
 title: ID dei carichi di lavoro e dei componenti di Visual Studio Community
 titleSuffix: ''
-description: Usare Visual Studio Community id del carico di lavoro e dei componenti per installare Visual Studio dalla riga di comando o specificare una dipendenza in un manifesto VSIX.
+description: Usare Visual Studio Community ID del carico di lavoro e del componente per installare Visual Studio dalla riga di comando o specificare una dipendenza in un manifesto VSIX.
 keywords: ''
 author: j-martens
 ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2020
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 9e7832e164adb08b64a05051a6c79aa068e18f89
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 6ddcd0aebb1560b9b4286db814ca334687b6450c
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "110449746"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565283"
 ---
 # <a name="visual-studio-community-component-directory"></a>Elenco dei componenti di Visual Studio Community
 
