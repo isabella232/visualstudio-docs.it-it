@@ -1,7 +1,7 @@
 ---
 title: Aggiornare un'installazione di rete
 description: Informazioni su come aggiornare un'installazione di Visual Studio basata su rete tramite il comando --layout
-ms.date: 04/16/2021
+ms.date: 05/26/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 74464aa76c24a798d33fa7639cdd0b6a07489bf7
+ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800781"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110660221"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
 
@@ -64,9 +64,9 @@ Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout
   ```
 
     > [!IMPORTANT]
-    > Un'operazione di aggiornamento non installa i componenti facoltativi appena aggiunti. Se sono necessari i componenti facoltativi appena aggiunti, rimuovere i componenti facoltativi nel file di risposta e includere i componenti necessari nella sezione `Layout.JSON` [](automated-installation-with-response-file.md) "aggiungi" di `Layout.JSON` . 
+    > Un'operazione di aggiornamento non scarica o installa componenti facoltativi aggiuntivi nel layout o nel client. Se è necessario aggiungere o modificare componenti facoltativi, rimuovere prima di tutto i componenti facoltativi dal file di risposta e includere i nuovi componenti necessari nella `Layout.JSON` [](automated-installation-with-response-file.md) sezione "aggiungi" di `Layout.JSON` . Quindi, quando si esegue il comando update nel layout, i componenti appena aggiunti verranno scaricati nel layout. 
     >
-    > **Soluzione** alternativa: eseguire un'operazione di modifica separata dopo un aggiornamento per installare i componenti mancanti.
+    > Per installare questi nuovi componenti nel computer client, assicurarsi di eseguire questi tre passaggi. Verificare prima di tutto che il layout contenga i nuovi componenti come descritto in precedenza. Aggiornare quindi il client ai bit più recenti nel layout.  Infine, sempre nel client, eseguire un'operazione di modifica che installerà i nuovi componenti (aggiunti al layout) nel computer client.
 
 * E infine, ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata senza aggiornare la versione. Questo comando aggiunge il carico di *lavoro ASP.NET sviluppo Web.*  In questo layout sono ora inclusi i carichi di lavoro Sviluppo Web ASP.NET &, Azure e Managed Desktop. Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per inglese, tedesco e francese.  Tuttavia, il layout non è stato aggiornato all'ultima versione disponibile durante l'esecuzione di questo comando. Rimane alla versione esistente.
 
