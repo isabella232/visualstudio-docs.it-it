@@ -1,6 +1,6 @@
 ---
 title: Creazione di una categoria di impostazioni | Microsoft Docs
-description: Informazioni su come creare una categoria di impostazioni di Visual Studio e usarla per salvare e ripristinare i valori da un file di impostazioni.
+description: Informazioni su come creare una Visual Studio delle impostazioni e usarla per salvare e ripristinare i valori da un file di impostazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,45 +12,45 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe46ea835a119978fd3decd26949db3d59944e5e
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089342"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687614"
 ---
-# <a name="create-a-settings-category"></a>Crea una categoria di impostazioni
+# <a name="create-a-settings-category"></a>Creare una categoria di impostazioni
 
-In questa procedura dettagliata viene creata una categoria di impostazioni di Visual Studio che viene utilizzata per salvare i valori e ripristinare i valori da un file di impostazioni. Una categoria di impostazioni è un gruppo di proprietà correlate che vengono visualizzate come un "punto di impostazioni personalizzato"; ovvero come una casella di controllo nella procedura guidata **Importa/Esporta impostazioni** . (È possibile trovarlo nel menu **strumenti** ). Le impostazioni vengono salvate o ripristinate come una categoria e le singole impostazioni non vengono visualizzate nella procedura guidata. Per altre informazioni, vedere [Impostazioni dell'ambiente](../ide/environment-settings.md).
+In questa procedura dettagliata viene creata una Visual Studio delle impostazioni e viene utilizzata per salvare e ripristinare i valori da un file di impostazioni. Una categoria di impostazioni è un gruppo di proprietà correlate che vengono visualizzate come "punto di impostazioni personalizzate". ad esempio come casella di controllo **nell'Importazione/Esportazione guidata** impostazioni. È possibile trovarlo **nel** menu Strumenti. Le impostazioni vengono salvate o ripristinate come categoria e le singole impostazioni non vengono visualizzate nella procedura guidata. Per altre informazioni, vedere [Impostazioni dell'ambiente](../ide/environment-settings.md).
 
-Per creare una categoria di impostazioni, derivarla dalla <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.
+Per creare una categoria di impostazioni, derivarla dalla <xref:Microsoft.VisualStudio.Shell.DialogPage> classe .
 
-Per iniziare questa procedura dettagliata, è necessario completare prima la prima sezione di [creare una pagina di opzioni](../extensibility/creating-an-options-page.md). La griglia delle proprietà Opzioni risultanti consente di esaminare e modificare le proprietà nella categoria. Dopo aver salvato la categoria di proprietà in un file di impostazioni, esaminare il file per vedere come vengono archiviati i valori delle proprietà.
+Per iniziare questa procedura dettagliata, è innanzitutto necessario completare la prima sezione della [pagina Crea un'opzione](../extensibility/creating-an-options-page.md). La griglia delle proprietà Opzioni risultante consente di esaminare e modificare le proprietà nella categoria. Dopo aver salvato la categoria di proprietà in un file di impostazioni, esaminare il file per vedere come vengono archiviati i valori delle proprietà.
 
 ## <a name="prerequisites"></a>Prerequisiti
- A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nell'Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
-## <a name="create-a-settings-category"></a>Crea una categoria di impostazioni
- In questa sezione viene usato un punto di impostazioni personalizzato per salvare e ripristinare i valori della categoria impostazioni.
+## <a name="create-a-settings-category"></a>Creare una categoria di impostazioni
+ In questa sezione si usa un punto di impostazioni personalizzato per salvare e ripristinare i valori della categoria delle impostazioni.
 
 ### <a name="to-create-a-settings-category"></a>Per creare una categoria di impostazioni
 
-1. Completare la [pagina creare una pagina di opzioni](../extensibility/creating-an-options-page.md).
+1. Completare [la pagina Crea un'opzione](../extensibility/creating-an-options-page.md).
 
-2. Aprire il file *VSPackage. resx* e aggiungere le tre risorse stringa seguenti:
+2. Aprire il file *VSPackage.resx* e aggiungere queste tre risorse stringa:
 
     |Nome|Valore|
     |----------|-----------|
-    |106|Categoria personale|
+    |106|Categoria|
     |107|Impostazioni personali|
     |108|OptionInteger e OptionFloat|
 
-     Vengono create risorse che denominano la categoria "My Category", l'oggetto "My Settings" e la descrizione della categoria "OptionInteger and OptionFloat".
+     Vengono create risorse con il nome "My Category", l'oggetto "My Settings" e la descrizione della categoria "OptionInteger and OptionFloat".
 
     > [!NOTE]
-    > Di questi tre, solo il nome della categoria non viene visualizzato nell' **importazione/esportazione guidata delle impostazioni** .
+    > Di questi tre, solo il nome della categoria non viene visualizzato **nell'Importazione/Esportazione guidata** impostazioni.
 
-3. In *MyToolsOptionsPackage. cs* aggiungere una `float` proprietà denominata `OptionFloat` alla `OptionPageGrid` classe, come illustrato nell'esempio seguente.
+3. In *MyToolsOptionsPackage.cs* aggiungere una `float` proprietà denominata alla classe , come illustrato `OptionFloat` `OptionPageGrid` nell'esempio seguente.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,51 +78,53 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
     ```
 
     > [!NOTE]
-    > La `OptionPageGrid` categoria denominata "My Category" è ora costituita dalle due proprietà, `OptionInteger` e `OptionFloat` .
+    > La `OptionPageGrid` categoria denominata "My Category" è ora costituita dalle due proprietà `OptionInteger` e `OptionFloat` .
 
-4. Aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> alla `MyToolsOptionsPackage` classe e assegnargli il valore CategoryName "My Category", assegnare a esso il nomeoggetto "My Settings" e impostare isToolsOptionPage su true. Impostare categoryResourceID, objectNameResourceID e DescriptionResourceID sugli ID di risorsa di stringa corrispondenti creati in precedenza.
+4. Aggiungere un oggetto alla classe e assegnargli <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> `MyToolsOptionsPackage` categoryName "My Category", assegnargli ObjectName "My Settings" e impostare isToolsOptionPage su true. Impostare categoryResourceID, objectNameResourceID e DescriptionResourceID sull'ID risorsa stringa corrispondente creato in precedenza.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5. Compilare il progetto e avviare il debug. Nell'istanza sperimentale si noterà che **la pagina della griglia** dispone ora di valori integer e float.
+5. Compilare il progetto e avviare il debug. Nell'istanza sperimentale si dovrebbe vedere che **My Grid Page** ha ora valori integer e float.
 
 ## <a name="examine-the-settings-file"></a>Esaminare il file di impostazioni
- In questa sezione si esportano i valori delle categorie di proprietà in un file di impostazioni. Esaminare il file e quindi importare di nuovo i valori nella categoria della proprietà.
+ In questa sezione i valori delle categorie di proprietà vengono esportati in un file di impostazioni. Esaminare il file e quindi importare di nuovo i valori nella categoria di proprietà.
 
-1. Avviare il progetto in modalità di debug premendo **F5**. Viene avviata l'istanza sperimentale.
+1. Avviare il progetto in modalità di debug premendo **F5.** Verrà avviata l'istanza sperimentale.
 
-2. Aprire la   >  finestra di dialogo **Opzioni** strumenti.
+2. Aprire la **finestra di dialogo**  >  **Opzioni** degli strumenti.
 
-3. Nella visualizzazione albero nel riquadro sinistro espandere la **categoria** e quindi fare clic sulla **pagina della griglia**.
+3. Nella visualizzazione albero nel riquadro sinistro espandere **Categoria** e quindi fare clic su **Pagina griglia.**
 
-4. Modificare il valore di **optionFloat** in 3,1416 e **OptionInteger** su 12. Fare clic su **OK**.
+4. Impostare il valore **di OptionFloat** su 3,1416 e **OptionInteger** su 12. Fare clic su **OK**.
 
 5. Scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**.
 
-     Verrà visualizzata l' **importazione/esportazione guidata delle impostazioni** .
+     Verrà **visualizzata la procedura guidata Importa ed esporta** impostazioni.
 
-6. Verificare che l'opzione **Esporta impostazioni di ambiente selezionate** sia selezionata, quindi fare clic su **Avanti**.
+6. Assicurarsi che **l'opzione Esporta le impostazioni di ambiente** selezionate sia selezionata e quindi fare clic su **Avanti.**
 
-     Verrà visualizzata la pagina **scegliere le impostazioni da esportare** .
+     Verrà **visualizzata la pagina Scegliere le impostazioni** da esportare.
 
-7. Fare clic su **impostazioni personali**.
+7. Fare **clic su My Settings (Impostazioni personalizzate).**
 
-     La **Descrizione** viene modificata in **OptionInteger e optionFloat**.
+     La **descrizione** viene modificata **in OptionInteger e OptionFloat.**
 
-8. Assicurarsi che **My Settings** sia l'unica categoria selezionata, quindi fare clic su **Avanti**.
+8. Assicurarsi che My **Settings (Impostazioni)** sia l'unica categoria selezionata e quindi fare clic su **Next (Avanti).**
 
-     Viene visualizzata la pagina **nome del file di impostazioni** .
+     Verrà **visualizzata la pagina Nome file** di impostazioni.
 
-9. Assegnare al nuovo file di impostazioni il nome Settings *. vssettings* e salvarlo in una directory appropriata. Fare clic su **Fine**.
+9. Assegnare al nuovo file di *impostazioni il nome MySettings.vssettings* e salvarlo in una directory appropriata. Fare clic su **Fine**.
 
-     Nella pagina **esportazione completata** viene segnalato che le impostazioni sono state esportate correttamente.
+   Il `.vssettings` file è il Visual Studio delle impostazioni. Lo schema del file è aperto. In genere, lo schema segue una struttura XML in cui ogni categoria è un tag, che a sua volta può contenere tag di sottocategoria. Questi tag di sottocatego tipo possono contenere tag di valore di proprietà. Sebbene la maggior parte dei pacchetti usi la struttura comune, qualsiasi pacchetto in Visual Studio può fornire codice XML arbitrario al file con lo schema scelto.
 
-10. Scegliere **Apri** dal menu **File** e quindi fare clic su **File**. Individuare *impostazioni. vssettings* e aprirlo.
+   La **pagina Esportazione completata** segnala che le impostazioni sono state esportate correttamente.
 
-     È possibile trovare la categoria di proprietà esportata nella sezione seguente del file (i GUID sono diversi).
+10. Scegliere **Apri** dal menu **File** e quindi fare clic su **File**. Individuare *MySettings.vssettings* e aprirlo.
+
+     È possibile trovare la categoria di proprietà esportata nella sezione seguente del file (i GUID saranno diversi).
 
     ```
     <Category name="My Category_My Settings"
@@ -139,20 +141,20 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
 
 11. Chiudere il file di impostazioni senza modificarlo.
 
-12. Scegliere **Opzioni** dal menu **strumenti** , espandere **categoria**, fare clic sulla **pagina della griglia** e quindi modificare il valore di **optionFloat** su 1,0 e **OptionInteger** su 1. Fare clic su **OK**.
+12. Scegliere Opzioni **dal** menu Strumenti **,** espandere  **Categoria,** fare clic su Pagina griglia e quindi modificare il valore di **OptionFloat** in 1.0 e **OptionInteger** su 1. Fare clic su **OK**.
 
-13. Nel menu **strumenti** fare clic su **Importa/Esporta impostazioni**, selezionare **Importa le impostazioni di ambiente selezionate**, quindi fare clic su **Avanti**.
+13. Scegliere **Importa/Esporta** impostazioni dal menu Strumenti **,** selezionare Importa le impostazioni di **ambiente selezionate** e quindi fare clic su **Avanti.**
 
-     Viene visualizzata la pagina **Salva impostazioni correnti** .
+     Verrà **visualizzata la pagina Salva** impostazioni correnti.
 
-14. Selezionare **No, importa solo nuove impostazioni** e quindi fare clic su **Avanti**.
+14. Selezionare **No, è sufficiente importare le nuove impostazioni** e quindi fare clic su **Avanti.**
 
-     Viene visualizzata la pagina **scegliere una raccolta di impostazioni da importare** .
+     Verrà **visualizzata la pagina Scegliere una raccolta di** impostazioni da importare.
 
-15. Selezionare il file *Settings. vssettings* nel nodo **impostazioni personali** della visualizzazione albero. Se il file non viene visualizzato nella visualizzazione albero, fare clic su **Sfoglia** e trovarlo. Fare clic su **Avanti**.
+15. Selezionare il file *MySettings.vssettings* nel nodo **Impostazioni** personalizzate della visualizzazione albero. Se il file non viene visualizzato nella visualizzazione albero, fare clic **su Sfoglia** e trovarlo. Fare clic su **Avanti**.
 
-     Verrà visualizzata la finestra **di dialogo scegliere le impostazioni da importare** .
+     Verrà **visualizzata la finestra di dialogo Scegliere** le impostazioni da importare.
 
-16. Assicurarsi che sia selezionata l'opzione **impostazioni personali** , quindi fare clic su **fine**. Quando viene visualizzata la pagina **importazione completata** , fare clic su **Chiudi**.
+16. Assicurarsi che **l'opzione Impostazioni** utente sia selezionata e quindi fare clic su **Fine**. Quando viene **visualizzata la pagina** Importazione completata, fare clic su **Chiudi**.
 
-17. Scegliere **Opzioni** dal menu **strumenti** , espandere **categoria**, fare clic sulla **pagina della griglia** e verificare che i valori della categoria di proprietà siano stati ripristinati.
+17. Scegliere **Opzioni** dal menu Strumenti **,** espandere **Categoria,** fare clic su **Pagina** griglia e verificare che i valori delle categorie di proprietà siano stati ripristinati.

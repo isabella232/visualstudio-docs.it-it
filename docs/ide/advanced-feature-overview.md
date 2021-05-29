@@ -1,6 +1,6 @@
 ---
 title: Funzionalità avanzate
-description: Informazioni sulle funzionalità avanzate che potrebbero essere più appropriate per gli sviluppatori esperti o gli sviluppatori che hanno già familiarità con Visual Studio.
+description: Informazioni sulle funzionalità avanzate che potrebbero essere più appropriate per sviluppatori esperti o per gli sviluppatori che hanno già familiarità con Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b048250b2529e21dd30738821b273c268e3498
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51b25ff5f5f71291bb1aa1fd006b60566a576d7f
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862083"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687608"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 
@@ -26,13 +26,13 @@ Il programma di installazione modulare di Visual Studio consente di scegliere e 
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -78,21 +78,17 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 È possibile usare Visual Studio per compilare app e giochi per macOS, Linux e Windows, nonché per Android, iOS e altri [dispositivi mobili](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
-- Crea app [.NET Core](/dotnet/core/) che vengono eseguite in Windows, MacOS e Linux.
+- Creare [app .NET Core](/dotnet/core/) in esecuzione in Windows, macOS e Linux.
 
 - Compilare app per dispositivi mobili per iOS, Android e Windows in C# e F# usando [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
-
-- Usare le tecnologie Web standard&mdash;HTML, CSS e JavaScript&mdash; per compilare app per dispositivi mobili per iOS, Android e Windows usando [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
 - Compilare giochi 2D e 3D in C# tramite [Visual Studio Tools per Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Compilare app C++ native per dispositivi iOS, Android e Windows. Condividere il codice comune nelle librerie create per iOS, Android e Windows usando [C++ per lo sviluppo multipiattaforma](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
-- Distribuire, testare ed eseguire il debug di app Android con l'[emulatore Android](../cross-platform/visual-studio-emulator-for-android.md).
-
 ## <a name="connect-to-databases"></a>Connettersi ai database
 
-**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Microsoft 365 e siti Web. Per aprire **Esplora server**, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni sull'uso di Esplora server, vedere [Aggiungere nuove connessioni](../data-tools/add-new-connections.md).
+**Esplora server** consente di esplorare e gestire SQL Server istanze e asset in locale, in remoto e in Azure, Salesforce.com, Microsoft 365 e siti Web. Per aprire **Esplora server**, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni sull'uso di Esplora server, vedere [Aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) è un ambiente di sviluppo avanzato per SQL Server, database SQL di Azure e Azure SQL Data Warehouse. Consente di creare, eseguire il debug, gestire ed effettuare il refactoring di database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
 
