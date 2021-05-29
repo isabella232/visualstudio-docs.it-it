@@ -21,11 +21,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "110687639"
 ---
-# <a name="import-and-export-settings-command-vssettings-file"></a>Comando Importa ed Esporta impostazioni (file con estensione vssettings)
+# <a name="import-and-export-settings-command-vssettings-file"></a>Comando Importa/Esporta impostazioni (file con estensione vssettings)
 
 Importa, esporta o reimposta Visual Studio file di impostazioni, `.vssettings` .
 
-Lo schema del file è aperto. In genere, lo schema segue una struttura XML in cui ogni categoria è un tag, che a sua volta può contenere tag di sottocategoria. Questi tag di sottocategoria possono contenere tag di valori di proprietà. Anche se la maggior parte dei pacchetti usa la struttura comune, qualsiasi pacchetto Visual Studio può fornire codice XML arbitrario al file con lo schema scelto.
+Lo schema del file è aperto. In genere, lo schema segue una struttura XML in cui ogni categoria è un tag, che a sua volta può contenere tag di sottocategoria. Questi tag di sottocategoria possono contenere tag di valori di proprietà. Sebbene la maggior parte dei pacchetti usi la struttura comune, qualsiasi pacchetto in Visual Studio può fornire codice XML arbitrario al file con lo schema scelto.
 
 ## <a name="syntax"></a>Sintassi
 

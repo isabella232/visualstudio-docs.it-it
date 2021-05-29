@@ -1,6 +1,6 @@
 ---
 title: Funzionalità avanzate
-description: Informazioni sulle funzionalità avanzate che potrebbero essere più appropriate per sviluppatori esperti o per gli sviluppatori che hanno già familiarità con Visual Studio.
+description: Informazioni sulle funzionalità avanzate che potrebbero essere più appropriate per gli sviluppatori esperti o per gli sviluppatori che hanno già familiarità con Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
@@ -26,13 +26,13 @@ Il programma di installazione modulare di Visual Studio consente di scegliere e 
 
 ::: moniker range="vs-2017"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -78,7 +78,7 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 È possibile usare Visual Studio per compilare app e giochi per macOS, Linux e Windows, nonché per Android, iOS e altri [dispositivi mobili](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
-- Creare [app .NET Core](/dotnet/core/) in esecuzione in Windows, macOS e Linux.
+- Compilare [app .NET Core](/dotnet/core/) eseguite in Windows, macOS e Linux.
 
 - Compilare app per dispositivi mobili per iOS, Android e Windows in C# e F# usando [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
@@ -88,7 +88,7 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 ## <a name="connect-to-databases"></a>Connettersi ai database
 
-**Esplora server** consente di esplorare e gestire SQL Server istanze e asset in locale, in remoto e in Azure, Salesforce.com, Microsoft 365 e siti Web. Per aprire **Esplora server**, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni sull'uso di Esplora server, vedere [Aggiungere nuove connessioni](../data-tools/add-new-connections.md).
+**Esplora server** consente di esplorare e gestire le istanze e gli asset di SQL Server in locale, in remoto e in Azure, Salesforce.com, Microsoft 365 e siti Web. Per aprire **Esplora server**, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni sull'uso di Esplora server, vedere [Aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) è un ambiente di sviluppo avanzato per SQL Server, database SQL di Azure e Azure SQL Data Warehouse. Consente di creare, eseguire il debug, gestire ed effettuare il refactoring di database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
 
