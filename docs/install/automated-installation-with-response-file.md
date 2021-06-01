@@ -9,21 +9,21 @@ helpviewer_keywords:
 - automate
 - installation
 - command-line
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7554ac46d7c4171cfb71166c51689ff4ae95c0d5
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868731"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724551"
 ---
-# <a name="how-to-define-settings-in-a-response-file"></a>Come definire impostazioni in un file di risposta
+# <a name="automate-installs-by-using-settings-in-a-response-file"></a>Automatizzare le installazioni usando le impostazioni in un file di risposta
 
 Gli amministratori che distribuiscono Visual Studio possono specificare un file di risposta usando il parametro `--in`, come nell’esempio che segue:
 
@@ -159,4 +159,4 @@ Il seguente esempio viene installato Visual Studio Enterprise con sei carichi di
 ## <a name="see-also"></a>Vedi anche
 
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
-* [Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Risolvere gli errori relativi alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
 title: -ResetSettings (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando ResetSettings devenv per ripristinare le impostazioni predefinite di Visual Studio e avviare automaticamente l'IDE di Visual Studio.
+description: Informazioni su come usare l'opzione della riga di comando devenv ResetSettings per ripristinare Visual Studio impostazioni predefinite e avviare automaticamente l Visual Studio IDE.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a5b8bacaa7d78be0c7b88bba8e20b416a3c076
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e523738ff23b40c80b5df21d90b582d94c59087f
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957998"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724538"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Ripristina le impostazioni predefinite di Visual Studio e avvia in automatico IDE di Visual Studio. Questa opzione reimposta facoltativamente le impostazioni in un file di impostazioni specificato.
+Ripristina le impostazioni predefinite di Visual Studio e avvia in automatico IDE di Visual Studio. Questa opzione reimposta facoltativamente le impostazioni in un file di impostazioni specificato ( `*.vssettings` ).
 
 Le impostazioni predefinite derivano dal profilo selezionato al primo avvio di Visual Studio.
 
@@ -41,7 +41,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  facoltativo. Percorso completo e nome del file di impostazioni da applicare a Visual Studio.
+  facoltativo. Percorso completo e nome del `.vssettings` file da applicare Visual Studio.
 
 - *DefaultCollectionSpecifier*
 
@@ -59,7 +59,8 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 ## <a name="remarks"></a>Commenti
 
-Se non viene specificato alcun *SettingsFile*, l'IDE viene aperto usando le impostazioni esistenti.
+Se non viene specificato alcun *SettingsFile*, l'IDE viene aperto usando le impostazioni esistenti. 
+
 
 ## <a name="example"></a>Esempio
 
@@ -67,10 +68,14 @@ Il primo esempio applica le impostazioni archiviate nel file `MySettings.vssetti
 
 Il secondo esempio ripristina il profilo predefinito di Visual C#.
 
-```shell
-devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+Il terzo esempio chiuderà anche Visual Studio dopo l'applicazione delle impostazioni. È possibile aggiungere `/Command "File.Exit"` .
 
-devenv /resetsettings CSharp
+```shell
+devenv /ResetSettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /ResetSettings CSharp
+
+devenv /NoSplash /ResetSettings General /Command Exit 
 ```
 
 ## <a name="see-also"></a>Vedi anche
