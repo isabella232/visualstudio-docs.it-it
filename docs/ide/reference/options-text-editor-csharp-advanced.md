@@ -2,26 +2,26 @@
 title: Opzioni, Editor di testo, C#, Avanzate
 description: Informazioni su come usare la pagina Avanzate nella sezione C# per modificare le impostazioni per la formattazione dell'editor, il refactoring del codice e i commenti della documentazione XML per C#.
 ms.custom: SEO-VS-2020
-ms.date: 11/13/2020
+ms.date: 06/01/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: akhera99
+author: mikadumont
 ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa202f5c0abc490967a40255332976cdf9dca25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29f6dd2b4a101132bc7bc19664c51fd5d4b8283e
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959324"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351988"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
-Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  **C#**  >  **Avanzate**.
+Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina di opzioni, scegliere **Opzioni** strumenti e quindi editor di testo  >     >  **C#**  >  **Avanzate.**
 
 > [!NOTE]
 > È possibile che non tutte le opzioni siano elencate.
@@ -30,7 +30,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
 - Analisi del codice in tempo reale o ambito di analisi in background
 
-   Configurare l'ambito di analisi in background per il codice gestito. Per altre informazioni, vedere [procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
+   Configurare l'ambito di analisi in background per il codice gestito. Per altre informazioni, vedere [Procedura: Configurare l'ambito di analisi del codice in tempo reale per il codice gestito.](../../code-quality/configure-live-code-analysis-scope-managed-code.md)
 
 ## <a name="using-directives"></a>Direttive using
 
@@ -90,7 +90,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    ```
 
 ::: moniker range=">=vs-2019"                                              
-- Suggerisci le using per i tipi in assembly .NET Framework
+- Suggerire using per i tipi .NET Framework assembly
 ::: moniker-end
                                          
 ::: moniker range="vs-2017"                                                
@@ -102,6 +102,10 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    Se queste opzioni sono selezionate, è disponibile un'[azione rapida](../quick-actions.md) per installare un pacchetto NuGet e aggiungere una direttiva `using` per i tipi senza riferimenti.
 
    ![Azione rapida per installare il pacchetto NuGet in Visual Studio](media/nuget-lightbulb.png)
+
+- Aggiungi direttive using mancanti dopo operazione Incolla
+
+    Quando questa opzione è selezionata, le direttive vengono aggiunte automaticamente al codice quando `using` si incolla un tipo in un file.
 
 ## <a name="highlighting"></a>Evidenziazione
 
@@ -127,25 +131,37 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 
-Selezionare queste caselle di controllo per visualizzare le linee verticali punteggiate tra parentesi graffe ( **{}** ) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
+Selezionare queste caselle di controllo per visualizzare linee verticali tratteggiate tra le parentesi graffe ( **{}** ) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
 
-## <a name="editor-help"></a>Guida Editor
-::: moniker range=">=vs-2019"
-- Suggerimenti per i nomi di parametri inline 
-    
-    Quando questa opzione è selezionata, inserisce gli hint per i nomi di parametro per i valori letterali, i valori letterali sottoposta a cast e le creazioni di istanze degli oggetti prima di ogni argomento  
-    
-    ![Hint per i nomi di parametri inline per CSharp](media/inline-parameter-name-hints-csharp.png)
+## <a name="comments"></a>Commenti
 
-- Hint di tipo inline 
-    
-    Quando questa opzione è selezionata, inserisce hint di tipo per le variabili con tipi dedotti e tipi di parametri lambda.  
-    
-    ![Hint di tipo inline per CSharp](media/inline-type-hints-csharp.png)
-::: moniker-end
 - Genera commenti relativi alla documentazione XML per ///
 
    Se selezionata, questa opzione inserisce elementi XML per i commenti in formato documentazione XML dopo la digitazione dell'introduzione al commento `///`. Per altre informazioni sulla documentazione XML, vedere [Commenti in formato documentazione XML (Guida per programmatori C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
+
+::: moniker range=">=vs-2019"
+
+## <a name="inline-hints"></a>Hint inline
+
+- Suggerimenti per i nomi di parametri inline 
+    
+    Se questa opzione è selezionata, inserisce hint per i nomi di parametro per valori letterali, valori letterali cast e istanze di oggetti prima di ogni argomento nelle chiamate di funzione.  
+    
+    ![Hint per i nomi di parametro inline per CSharp](media/inline-parameter-name-hints-csharp.png)
+
+- Hint di tipo inline 
+    
+    Quando questa opzione è selezionata, inserisce hint di tipo per le variabili con tipi dedotto e tipi di parametri lambda.  
+    
+    ![Hint di tipo inline per CSharp](media/inline-type-hints-csharp.png)
+
+## <a name="inheritance-margin"></a>Margine di ereditarietà 
+
+- Quando questa opzione è selezionata, aggiunge icone ai margini che rappresentano le implementazioni e gli override del codice. Facendo clic sulle icone dei margini di ereditarietà verranno visualizzate le opzioni di ereditarietà che è possibile selezionare per passare.
+
+    ![Margine di ereditarietà](media/inheritance-margin.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vedi anche
 

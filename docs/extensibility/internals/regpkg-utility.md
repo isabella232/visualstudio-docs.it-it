@@ -1,6 +1,6 @@
 ---
 title: Utilità RegPkg | Microsoft Docs
-description: Informazioni sul modo in cui l'utilità di RegPkg.exe registra un pacchetto VSPackage con Visual Studio e lo prepara per la distribuzione.
+description: Informazioni su come l'utilità RegPkg.exe registra un VSPackage con Visual Studio e lo prepara per la distribuzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,20 +13,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5160608379549abbd469bd6cf1c17e4357eac15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ffef522cb85816c36bee1cb623810fb254d1ddec
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060757"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351942"
 ---
 # <a name="regpkg-utility"></a>Utilità RegPkg
 > [!NOTE]
-> Il modo migliore per registrare i pacchetti in Visual Studio consiste nell'usare i file con estensione pkgdef. Questo consente la distribuzione dell'estensione senza dover accedere al registro di sistema, che è un requisito per la distribuzione VSIX. I file pkgdef vengono creati usando l' [utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Per altre informazioni sulla distribuzione dei pacchetti di Visual Studio, vedere [spedizione delle estensioni di Visual Studio](../../extensibility/shipping-visual-studio-extensions.md).
+> Il modo migliore per registrare i pacchetti in Visual Studio è l'uso di file con estensione pkgdef. Ciò consente la distribuzione dell'estensione senza dover accedere al Registro di sistema, un requisito per la distribuzione VSIX. I file Pkgdef vengono creati tramite [l'utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Per altre informazioni sulla distribuzione Visual Studio pacchetto, vedere [Shipping Visual Studio Extensions.](../../extensibility/shipping-visual-studio-extensions.md)
 
- L'utilità RegPkg.exe registra un pacchetto VSPackage con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e lo prepara per la distribuzione. Questa utilità viene utilizzata dietro le quinte durante lo sviluppo di VSPackage. Viene eseguito come parte del processo di compilazione in modo che sia possibile compilare ed eseguire un pacchetto VSPackage nell'hive sperimentale.
+ LRegPkg.exe utilità registra un VSPackage con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e lo prepara per la distribuzione. Questa utilità viene usata in background durante lo sviluppo di VSPackage. Viene eseguito come parte del processo di compilazione in modo che sia possibile compilare ed eseguire un VSPackage nell'hive sperimentale.
 
- RegPkg è in grado di generare script del registro di sistema in diversi formati. È possibile incorporare questi script nei progetti di distribuzione, ad esempio i progetti MSI o i file del set di strumenti XML Windows Installer.
+ RegPkg può generare script del Registro di sistema in diversi formati. È possibile incorporare questi script nei progetti di distribuzione, ad esempio .msi progetti o Windows Installer file del set di strumenti XML.
 
  RegPkg.exe si trova in genere in \<*Visual Studio SDK installation path*>\VisualStudioIntegration\Tools\Bin\RegPkg.exe. RegPkg segue questa sintassi:
 
@@ -34,27 +34,25 @@ ms.locfileid: "105060757"
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath
 ```
 
- /root: la radice esegue la registrazione nel parametro specificato
+ /root:root Esegue la registrazione nella radice [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] specificata.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] radice.
+ /regfile:FileName Crea un file con estensione reg anziché aggiornare il Registro di sistema.  Non può essere usato con /vrgfile o /rgsfile o /wixfile.
 
- /regfile: FileName crea un file con estensione reg anziché aggiornare il registro di sistema.  Non può essere usato con/vrgfile o/rgsfile o/wixfile.
+ /rgsfile:FileName Crea un file con estensione rgs anziché aggiornare il Registro di sistema.  Non può essere usato con /vrgfile o /regfile o /wixfile.
 
- /rgsfile: FileName crea un file con estensione rgs anziché aggiornare il registro di sistema.  Non può essere usato con/vrgfile o/regfile o/wixfile.
+ /vrgfile:FileName Crea un file con estensione vrg anziché aggiornare il Registro di sistema.  Non può essere usato con /regfile o /rgsfile o /wixfile.
 
- /vrgfile: FileName crea un file con estensione VRG anziché aggiornare il registro di sistema.  Non può essere usato con/regfile o/rgsfile o/wixfile.
+ /rgm Crea un file con estensione rgm oltre al file rgs.  Deve essere combinato con /rgsfile.
 
- /RGM crea un file con estensione RGM oltre al file RGS.  Deve essere combinato con/rgsfile.
+ /wixfile:FileName Crea un Windows Installer file compatibile con il set di strumenti XML anziché aggiornare il Registro di sistema.  Non può essere usato con /regfile o /rgsfile o /vrgfile.
 
- /wixfile: FileName crea una Windows Installer file compatibile con il set di strumenti XML anziché aggiornare il registro di sistema.  Non può essere usato con/regfile o/rgsfile o/vrgfile.
+ /codebase Forza la registrazione con CodeBase anziché con Assembly.
 
- /codebase forza la registrazione con codebase anziché assembly.
+ /assembly Forza la registrazione con Assembly anziché con CodeBase.
 
- /assembly forza la registrazione con l'assembly anziché con la codebase.
+ /unregister Annulla la registrazione del pacchetto.  Non può essere usato
 
- /Unregister annulla la registrazione del pacchetto.  Non può essere usato
-
- con/regfile o/vrgfile o/rgsfile o/wixfile.
+ con /regfile o /vrgfile o /rgsfile o /wixfile.
 
 ## <a name="see-also"></a>Vedi anche
 - [VSPackages](../../extensibility/internals/vspackages.md)
