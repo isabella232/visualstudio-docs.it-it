@@ -6,14 +6,14 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 627b0b1260a3ccdd401dbb170f8e2dfffadea2dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53bf0d559d9737494567b079621879b97a403a95
+ms.sourcegitcommit: fc05a763b59e212c86350d117a1900a1f2686ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81389988"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "111564838"
 ---
-Con Visual Studio è possibile creare, eseguire il debug ed eseguire facilmente app ASP.NET Core in contenitori e pubblicarle in Azure Container Registry (ACR), nell'hub Docker, nel servizio app Azure o nel registro contenitori. In questo articolo viene eseguita la pubblicazione nel Registro Azure Container (ACR).
+Con Visual Studio, è possibile compilare, eseguire il debug ed eseguire facilmente app ASP.NET Core in contenitori e pubblicarle in Registro Azure Container (ACR), Docker Hub, Servizio app di Azure o nel registro contenitori. In questo articolo viene eseguita la pubblicazione nel Registro Azure Container (ACR).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -23,20 +23,20 @@ Con Visual Studio è possibile creare, eseguire il debug ed eseguire facilmente 
 
 ## <a name="installation-and-setup"></a>Installazione e configurazione
 
-Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Docker desktop per Windows: cosa è necessario sapere prima di installare](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installare [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+Per l'installazione di Docker, esaminare prima le informazioni in [Docker Desktop per Windows: Cosa sapere prima di installare](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installare [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## <a name="add-a-project-to-a-docker-container"></a>Aggiungere un progetto in un contenitore Docker
 
 1. Nel menu di Visual Studio selezionare **File > Nuovo > Progetto**.
 1. Nella sezione **Modelli** della finestra di dialogo **Nuovo progetto** selezionare **Visual C# > Web**.
-1. Selezionare **ASP.NET Core applicazione Web** o se si vuole usare il .NET Framework invece di .NET Core, selezionare **applicazione Web ASP.NET**.
+1. Selezionare **ASP.NET App Web Core** oppure, se si vuole usare il .NET Framework anziché .NET Core, selezionare ASP.NET Applicazione **Web**.
 1. Assegnare un nome alla nuova applicazione (o accettare quello predefinito), quindi selezionare **OK**.
-1. Selezionare **applicazione Web**.
+1. Selezionare **Applicazione Web**.
 1. Spuntare la casella di controllo **Abilita Supporto Docker**.
 
    ![Casella di controllo Abilita supporto Docker](../../media/container-tools/enable-docker-support.PNG)
 
-   Lo screenshot mostra .NET Core; Se si usa .NET Framework, il suo aspetto è leggermente diverso.
+   Lo screenshot mostra .NET Core. se si usa .NET Framework, l'aspetto è leggermente diverso.
 
 1. Selezionare il tipo di contenitore appropriato (Windows o Linux) e fare clic su **OK**.
 
@@ -45,12 +45,12 @@ Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Dock
 Nel progetto viene creato un *Dockerfile*, il file recipe per la creazione di un'immagine Docker finale. Fare riferimento a [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) (Informazioni di riferimento su Dockerfile) per una descrizione dei comandi contenuti nel file:
 
 ```
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+FROM mcr.microsoft.com/dotnet/aspnet:2.1 AS base
 WORKDIR /app
 EXPOSE 59518
 EXPOSE 44364
 
-FROM microsoft/dotnet:2.1-sdk AS build
+FROM mcr.microsoft.com/dotnet/sdk:2.1 AS build
 WORKDIR /src
 COPY HelloDockerTools/HelloDockerTools.csproj HelloDockerTools/
 RUN dotnet restore HelloDockerTools/HelloDockerTools.csproj
@@ -109,7 +109,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     | Impostazione      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Prefisso DNS** | Nome globalmente univoco | Nome che identifica in modo univoco il registro contenitori. |
+    | **Prefisso DNS** | Nome univoco a livello globale | Nome che identifica in modo univoco il registro contenitori. |
     | **Sottoscrizione** | Scegliere la sottoscrizione | Sottoscrizione di Azure da usare. |
     | **[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome del gruppo di risorse in cui creare il registro contenitori. Per creare un nuovo gruppo di risorse scegliere **Nuovo**.|
     | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Livello di servizio del registro contenitori  |
