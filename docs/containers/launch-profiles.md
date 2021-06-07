@@ -9,14 +9,14 @@ ms.topic: how-to
 ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 003205525f883b010f897e6e47d4cab92a31b8a1
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: e740ea3b7950c14bf11522c4e438a105b09eb7f6
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110018528"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433701"
 ---
-# <a name="manage-launch-profiles-for-docker-compose-preview"></a>Gestire i profili di avvio per Docker Compose (anteprima)
+# <a name="manage-launch-profiles-for-docker-compose"></a>Gestire i profili di avvio per Docker Compose
 
 Se si dispone di un'applicazione costituita da più servizi e si usa Docker Compose, è possibile configurare i servizi eseguiti ed eseguirne il debug creando o modificando un profilo di avvio esistente nelle impostazioni di avvio Docker Compose di avvio. I profili di avvio consentono di eseguire dinamicamente solo i servizi importanti per lo scenario corrente. È possibile creare e selezionare tra i profili di avvio per personalizzare l'esperienza di debug e impostare azioni di avvio specifiche, ad esempio `Browser Launch URL` . Sarà anche possibile scegliere ogni servizio singolarmente o scegliendo un profilo Docker Compose, che esamina anche il file Compose per determinare il gruppo di servizi da eseguire.
 
@@ -24,7 +24,7 @@ Per informazioni sui Docker Compose, vedere [Uso dei profili con Compose.](https
  
 ## <a name="prerequisites"></a>Prerequisiti
 
-- [Visual Studio 2019 versione 16.10 Preview](https://visualstudio.microsoft.com/vs/preview/) o successiva
+- [Visual Studio 2019 versione 16.10](https://visualstudio.microsoft.com/vs/) o successiva
 - Una soluzione con [l'orchestrazione dei contenitori con Docker Compose](tutorial-multicontainer.md)
 
 ## <a name="manage-launch-settings"></a>Gestire le impostazioni di avvio
@@ -73,19 +73,19 @@ Sono disponibili alcune opzioni per aprire la finestra di dialogo Docker Compose
 
     ![Screenshot della voce del menu di scelta rapida](media/launch-settings/launch-settings-context-menu.png)
 
-- Usare il Avvio veloce (**CTRL** Q ) e cercare Docker Compose per trovare il comando + di cui si è fatto parte. 
+- Usare il Avvio veloce (**CTRL** Q ) e cercare Docker Compose per trovare il comando di cui in + uso. 
 
 Nell'esempio seguente è selezionato il profilo Compose, che filtra l'elenco Servizi solo ai tre dei `web1` cinque inclusi in tale profilo: 
 
 !["Screenshot della finestra di dialogo delle impostazioni di avvio"](media/launch-settings/launch-settings-create-profile.png)
 
-La Docker Compose dei profili viene visualizzata solo se sono presenti profili definiti nei *file docker-compose.yml.*
+La Docker Compose profili personalizzati viene visualizzata solo se sono presenti profili definiti nei *file docker-compose.yml.*
 
-Nell'esempio seguente viene illustrata la selezione tra singoli servizi anziché applicare filtri ai servizi in un profilo Compose. In questo esempio viene illustrato l'aspetto della finestra di dialogo se è stato creato un nuovo profilo di avvio denominato che avvia solo due dei cinque servizi, con debug `test2` `webapplication1` e senza `webapplication2` debug.  Questo profilo di avvio avvia anche un browser all'avvio dell'applicazione e lo apre al home page di `webapplication1` . 
+Nell'esempio successivo viene illustrata la selezione tra i singoli servizi anziché applicare filtri ai servizi in un profilo Compose. In questo caso, viene illustrato l'aspetto della finestra di dialogo se è stato creato un nuovo profilo di avvio denominato che avvia solo due dei cinque servizi, con debug `test2` `webapplication1` e senza `webapplication2` debug.  Questo profilo di avvio avvia anche un browser all'avvio dell'applicazione e lo apre al home page di `webapplication1` . 
 
 ![Screenshot della finestra di dialogo delle impostazioni di avvio con alcuni servizi deselezionati](media/launch-settings/launch-settings-selected.png)
 
-Queste informazioni verranno salvate in *launchSettings.js, come* illustrato di seguito
+E queste informazioni verranno salvate inlaunchSettings.js *come* illustrato di seguito
 
 ```json
 {
@@ -110,16 +110,16 @@ Queste informazioni verranno salvate in *launchSettings.js, come* illustrato di 
 
 ## <a name="create-a-launch-profile-that-uses-a-docker-compose-profile"></a>Creare un profilo di avvio che usa un Docker Compose di avvio
 
-È anche possibile personalizzare ulteriormente i comportamenti di avvio creando Visual Studio profili di avvio che usano i profili Compose.
+È anche possibile personalizzare ulteriormente i comportamenti di avvio creando Visual Studio di avvio che usano i profili Compose.
 
-Per creare un altro profilo che usa il profilo Compose, selezionare Usa Docker Compose **profili e** scegliere `web1` . Il profilo di avvio include ora tre servizi: (che appartiene a entrambi i profili `webapplication1` `web` e `web1` Compose) `external1` e `external2` . Per impostazione predefinita, i servizi senza codice sorgente, ad esempio e , hanno `external1`  `external2` l'azione predefinita **Avvia senza eseguire il debug di**. Per impostazione predefinita, le applicazioni .NET con codice sorgente **avviano il debug.**
+Per creare un altro profilo che usi il profilo Compose, selezionare Usa Docker Compose **profili e** scegliere `web1` . Il profilo di avvio include ora tre servizi , che appartengono a entrambi i profili e `webapplication1` `web` `web1` `external1` Compose, e `external2` . Per impostazione predefinita, i servizi senza codice sorgente, ad esempio `external1` e hanno  `external2` l'azione predefinita **Avvia senza eseguire il debug** di . Per impostazione predefinita, le applicazioni .NET con codice sorgente **avviano il debug.**
 
 > [!IMPORTANT]
 > Se un servizio non specifica un profilo Compose, verrà incluso in tutti i profili Compose in modo implicito.
 
 ![Screenshot della finestra di dialogo delle impostazioni di avvio con un altro profilo creato](media/launch-settings/launch-settings-create-profile.png)
 
-Queste informazioni verranno salvate come illustrato nel codice seguente. La configurazione per il servizio e l'azione predefinita non vengono salvate a meno che non si modifica l'azione predefinita.
+Queste informazioni verranno salvate come illustrato nel codice seguente. La configurazione per il servizio e la relativa azione predefinita non vengono salvate a meno che non si modifica l'azione predefinita.
 
 ```json
 {
@@ -137,7 +137,7 @@ Queste informazioni verranno salvate come illustrato nel codice seguente. La con
 }
 ```
 
-È anche possibile modificare l'azione di webapplication1 in **Avvia senza eseguire il debug di**. Le impostazioni in *launchSettings.jsquindi* sono simili al codice seguente:
+È anche possibile modificare l'azione di webapplication1 in **Avvia senza eseguire il debug** di . Le impostazioni in *launchSettings.jsquindi* sono simili al codice seguente:
 
 ```json
 {
@@ -160,7 +160,7 @@ Queste informazioni verranno salvate come illustrato nel codice seguente. La con
 
 ## <a name="properties"></a>Proprietà
 
-Ecco una descrizione di ogni proprietà nellalaunchSettings.js *in*:
+Ecco una descrizione di ogni proprietà nellaunchSettings.js *in*:
 
 |Proprietà| Descrizione|
 | - | - |
@@ -172,14 +172,14 @@ Ecco una descrizione di ogni proprietà nellalaunchSettings.js *in*:
 |serviceActions | Elenca i servizi selezionati e l'azione di avvio.|
 |composeLaunchServiceName| Se si specifica DockerLaunchAction o DockerLaunchBrowser, DockerServiceName è il nome del servizio da avviare. Usare questa proprietà per determinare quale servizio all'interno del file Docker Compose verrà avviato.|
 |composeLaunchAction| Specifica l'azione di avvio da eseguire su **F5** o **CTRL** + **F5.** I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient.|
-|composeLaunchUrl| URL da usare all'avvio del browser. I token di sostituzione validi sono "{ServiceIPAddress}", "{ServicePort}" e "{Scheme}". Ad esempio: {Scheme}://{ServiceIPAddress}:{ServicePort}|
+|composeLaunchUrl| URL da utilizzare all'avvio del browser. I token di sostituzione validi sono "{ServiceIPAddress}", "{ServicePort}" e "{Scheme}". Ad esempio: {Scheme}://{ServiceIPAddress}:{ServicePort}|
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni sul funzionamento di Strumenti contenitore, vedere panoramica Visual Studio di compilazione e debug di Strumenti [contenitore.](container-build.md)
+Per altre informazioni sul funzionamento di Strumenti contenitore, vedere la Visual Studio di compilazione e debug di [Strumenti contenitori](container-build.md).
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Visual Studio di avvio di Strumenti contenitore](container-launch-settings.md)
+- [Visual Studio impostazioni di avvio di Strumenti contenitore](container-launch-settings.md)
 
 - [Docker Compose di compilazione](docker-compose-properties.md)

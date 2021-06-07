@@ -1,29 +1,29 @@
 ---
 title: Usare i dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
 description: Informazioni su come usare i dati di esempio in fase di progettazione in XAML.
-ms.date: 05/28/2021
+ms.date: 06/01/2021
 ms.topic: conceptual
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: a987435d454771bdecf078e78af089405718d261
-ms.sourcegitcommit: 5366c6bca3fb217a2fbf847998387578f51ec45c
+ms.openlocfilehash: 8303e1150db7c12c404e8f67bce52418fbd05b9d
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748082"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433792"
 ---
 # <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
 
 Alcuni controlli che si sulla base dei dati, ad esempio ListView, ListBox o DataGrid, sono difficili da visualizzare senza dati. In questo documento verrà esaminato un nuovo approccio che consente agli sviluppatori che lavorano su progetti **WPF .NET Core** o **progetti wpf .NET Framework** con la nuova finestra di progettazione di abilitare i dati di esempio in questi controlli. 
 
-## <a name="sample-data-feature-basics"></a>Nozioni di base sulla funzionalità dati di esempio
+## <a name="sample-data-feature-basics"></a>Nozioni di base sulla funzionalità dei dati di esempio
 
 I dati di esempio sono solo per la visualizzazione in fase di progettazione, ovvero vengono visualizzati solo nella finestra di progettazione XAML, non nell'app in esecuzione. Di conseguenza, viene applicato alla versione in fase di progettazione della proprietà ItemsSource `d:ItemsSource` . Per il funzionamento dei dati di esempio è necessario lo spazio dei nomi della fase di progettazione. Per iniziare, aggiungere le righe di codice seguenti all'intestazione del documento XAML, se non sono già presenti:
 
 > [!NOTE]
-> Per [altre informazioni sulle proprietà della](/xaml/xaml-tools/xaml/xaml-designtime-data.md) fase di progettazione in XAML, vedere Proprietà della fase di progettazione XAML.
+> Per [altre informazioni sulle proprietà della](../xaml-tools/xaml-designtime-data.md) fase di progettazione in XAML, vedere Proprietà della fase di progettazione XAML.
 
 ```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -93,7 +93,7 @@ Se si verifica un problema che non è elencato in questa sezione o non può esse
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Proprietà della fase di progettazione XAML](/xaml/xaml-tools/xaml/xaml-designtime-data)
+- [Proprietà della fase di progettazione XAML](../xaml-tools/xaml-designtime-data.md)
 - [XAML in all WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML in all UWP](/windows/uwp/xaml-platform/xaml-overview)
 - [XAML in app Xamarin.Forms](/xamarin/xamarin-forms/xaml/)

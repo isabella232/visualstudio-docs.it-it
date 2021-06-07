@@ -2,7 +2,7 @@
 title: Log delle modifiche (Visual Studio Tools per Unity, Windows) | Microsoft Docs
 description: Visualizzare il log delle modifiche per Visual Studio Tools per Unity, Windows. Vedere le modifiche dalla versione 1.0.0.0 alla 4.7.0.0 e versioni successiva.
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/2/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,71 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: 2ff13b017ffe0d310ddfd1b302c6436e9d708a36
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879382"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448311"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="41020"></a>4.10.2.0
+Data di rilascio: 25 maggio 2021
+
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
+
+- **Integrazione:**
+
+  - Aggiunta [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) della diagnostica. Assegnare la priorità ai calcoli scalari rispetto ai calcoli vettoriali.
+
+- **Valutazione:**
+
+  - Aggiunta del supporto per l'uso di simboli pdb portabili per filtrare correttamente le variabili locali visibili.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Stabilità della ricerca dei riferimenti ai cespiti.
+
+  - Correzione dell'annuncio dell'analisi da parte del lettore con le versioni recenti di Unity.
+
+## <a name="41010"></a>4.10.1.0
+Data di rilascio: 11 maggio 2021
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione dei problemi di stabilità con [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) quickfix.
+
+  - Sono stati risolti problemi di prestazioni con i thread.
+
+## <a name="41000"></a>4.10.0.0
+Data di rilascio: 13 aprile 2021
+
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
+
+- **Integrazione:**
+
+  - Aggiunta [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) della diagnostica. Chiamata indiretta non necessaria per `GameObject.gameObject` .
+
+  - Aggiunta [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) della diagnostica. `MenuItem` Attributo utilizzato nel metodo non statico.
+
+  - Aggiunta [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) della diagnostica. Il messaggio Unity deve essere protetto (consenso esplicito).
+
+  - Aggiunta [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) della diagnostica. Metodo inefficiente per impostare posizione e rotazione.
+
+  - Aggiunta [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) della diagnostica. Assegnazione di unione su oggetti Unity.
+
+  - Aggiunta [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) dell'soppressore per `IDE0074` . Gli oggetti Unity non devono usare l'assegnazione coalescing.
+
+  - Aggiunta del rilevamento di progetti C# nonflavored che hanno come destinazione Unity.
+
+  - Aggiunta della ricerca di riferimento all'asset unity in CodeLens.
 
 ## <a name="4910"></a>4.9.1.0
 Data di rilascio: 2 marzo 2021
@@ -67,13 +122,13 @@ Data di rilascio: 20 gennaio 2021
 
 - **Integrazione:**
 
-  - Aggiunta del supporto `raytrace shaders` per i file , e `UXML` `USS` .
+  - Aggiunta del supporto per `raytrace shaders` i `UXML` file e `USS` .
 
-  - Aggiunta `.vsconfig` del supporto per la generazione. Visual Studio necessario rilevare i componenti mancanti e richiedere di installarli quando si usano progetti Unity.
+  - Aggiunta `.vsconfig` del supporto per la generazione. Visual Studio ora rilevare i componenti mancanti e richiedere di installarli quando si usano progetti Unity.
 
-  - Aggiornamento dell'API dei messaggi Unity (per tutti i metodi usati come coroutine).
+  - Aggiornamento dell'API messaggi unity (per tutti i metodi usati come coroutine).
 
-  - Aggiornamento del Android SDK rilevamento delle modifiche.
+  - Aggiornamento Android SDK rilevamento.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -81,7 +136,7 @@ Data di rilascio: 20 gennaio 2021
 
   - Correzione dell'aggiornamento del processo quando si usa la finestra di dialogo di selezione dell'istanza.
 
-  - Correzione [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) della diagnostica, che ha dato avvisi non corretti per coroutine e `AssetPostprocessor.OnAssignMaterialModel` .
+  - Correzione [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) della diagnostica, che ha dato avvisi erri per coroutine e `AssetPostprocessor.OnAssignMaterialModel` .
 
 ## <a name="4820"></a>4.8.2.0
 Data di rilascio: 10 novembre 2020
@@ -90,13 +145,13 @@ Data di rilascio: 10 novembre 2020
 
 - **Integrazione:**
 
-  - Miglioramento [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) della diagnostica da applicare a tutti gli elementi che ereditano `Component` da , non solo `MonoBehaviour` .
+  - Diagnostica [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) migliorata da applicare a tutti gli elementi che ereditano da , non solo `Component` `MonoBehaviour` .
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-  - Correzione dell'invalidamento dei messaggi CodeLens.
+  - Correzione dell'invalidazione del messaggio CodeLens.
 
 ## <a name="4810"></a>4.8.1.0
 Data di rilascio: 13 ottobre 2020
@@ -109,7 +164,7 @@ Data di rilascio: 13 ottobre 2020
 
 - **Integrazione:**
 
-  - Aggiunta [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) della diagnostica. Non è consigliabile usare `System.Reflection` funzionalità nei messaggi critici per le prestazioni, ad `Update` esempio , , o `FixedUpdate` `LateUpdate` `OnGUI` .
+  - Aggiunta [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) della diagnostica. Non è consigliabile usare `System.Reflection` funzionalità nei messaggi critici per le prestazioni, ad `Update` esempio , o `FixedUpdate` `LateUpdate` `OnGUI` .
 
   - Migliorato [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) ed [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) eliminatori, con supporto per tutti i `AssetPostprocessor` metodi statici.
 
@@ -130,7 +185,7 @@ Data di rilascio: 14 settembre 2020
 
 - **Integrazione:**
 
-  - Correzione della generazione del progetto lettore con Unity 2019.x.
+  - Generazione del progetto lettore fisso con Unity 2019.x.
 
 ## <a name="4710"></a>4.7.1.0
 Data di rilascio: 5 agosto 2020
@@ -143,11 +198,11 @@ Data di rilascio: 5 agosto 2020
   
   - Aggiornamento dell'API messaggi unity alla versione 2019.4.
 
-  - È stato [`USP0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0013.md) aggiunto l'suppressor per `CA1823` . I campi privati con `SerializeField` gli attributi o non devono essere `SerializeReference` contrassegnati come inutilizzati (FxCop).
+  - Aggiunta [`USP0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0013.md) dell'soppressore per `CA1823` . I campi privati con gli attributi o non `SerializeField` `SerializeReference` devono essere contrassegnati come non usati (FxCop).
   
-  - È stato [`USP0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0014.md) aggiunto l'suppressor per `CA1822` . I messaggi Unity non devono essere contrassegnati come candidati per `static` il modificatore (FxCop).
+  - Aggiunta [`USP0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0014.md) dell'soppressore per `CA1822` . I messaggi Unity non devono essere contrassegnati come candidati per `static` il modificatore (FxCop).
 
-  - È stato [`USP0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0015.md) aggiunto l'suppressor per `CA1801` . I parametri inutilizzati non devono essere rimossi dai messaggi Unity (FxCop).
+  - Aggiunta [`USP0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0015.md) dell'soppressore per `CA1801` . I parametri inutilizzati non devono essere rimossi dai messaggi unity (FxCop).
   
   - Aggiunta del supporto MenuItem [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) all'oggetto suppressor.  
 
@@ -155,7 +210,7 @@ Data di rilascio: 5 agosto 2020
 
 - **Integrazione:**
 
-  - Correzione [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md) degli [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md) suppressor e che non funzionano con parentesi aggiuntive o con argomenti del metodo.
+  - Correzione [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md) di [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md) e soppressori che non funzionano con parentesi aggiuntive o con argomenti del metodo.
   
   - Correzione dell'aggiornamento obbligatorio del database degli asset anche quando l'aggiornamento automatico è stato disabilitato nelle impostazioni di Unity.
 
@@ -166,9 +221,9 @@ Data di rilascio: 23 giugno 2020
 
 - **Integrazione:**
 
-  - Aggiunta del supporto per rendere persistenti le cartelle della soluzione quando Unity rigenera la soluzione e i progetti.
+  - Aggiunta del supporto per rendere persistenti le cartelle della soluzione quando Unity rigenera soluzioni e progetti.
 
-  - Aggiunta [`UNT0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0015.md) della diagnostica. Rilevare la firma del metodo non corretta `InitializeOnLoadMethod` con `RuntimeInitializeOnLoadMethod` l'attributo o .
+  - Aggiunta [`UNT0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0015.md) della diagnostica. Rilevare la firma del metodo non corretta con `InitializeOnLoadMethod` l'attributo o `RuntimeInitializeOnLoadMethod` .
 
   - Aggiunta [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md) della diagnostica. `Invoke`L'uso di , o con un primo argomento come valore `InvokeRepeating` `StartCoroutine` `StopCoroutine` letterale stringa non è indipendente dai tipi.
 
@@ -216,27 +271,27 @@ Data di rilascio: 14 aprile 2020
   
   - Aggiunta [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md) della diagnostica. Rilevare ed eseguire il wrapping delle chiamate alle coroutine in `StartCoroutine()` .
 
-  - Aggiunta [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md) della diagnostica. Rilevare e rimuovere un attributo non valido o `SerializeField` ridondante.
+  - Aggiunta [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md) della diagnostica. Rilevare e rimuovere l'attributo non valido o `SerializeField` ridondante.
 
-  - Aggiunta [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) della diagnostica. Rilevamento `GetComponent()` chiamato con un tipo non componente o non di interfaccia.
+  - Aggiunta [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) della diagnostica. Rilevare `GetComponent()` chiamato con un tipo non component o non di interfaccia.
   
-  - È stato [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) aggiunto l'suppressor per `IDE0051` . Non contrassegnare i metodi con `ContextMenu` l'attributo o a cui fa riferimento un campo con `ContextMenuItem` l'attributo come inutilizzato.
+  - Aggiunta [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) dell'soppressore per `IDE0051` . Non contrassegnare i metodi con `ContextMenu` l'attributo o a cui fa riferimento un campo con `ContextMenuItem` l'attributo come inutilizzato.
 
-  - È stato [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) aggiunto l'suppressor per `IDE0051` . Non contrassegnare i campi con `ContextMenuItem` l'attributo come inutilizzati.
+  - Aggiunta [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) dell'soppressore per `IDE0051` . Non contrassegnare i campi con `ContextMenuItem` l'attributo come inutilizzati.
   
-  - È stato [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) aggiunto l'suppressor per `IDE0044` . Non impostare campi con `ContextMenuItem` l'attributo come di sola lettura.
+  - Aggiunta [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) dell'soppressore per `IDE0044` . Non rendere i campi con `ContextMenuItem` l'attributo di sola lettura.
   
-  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md)e [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) ora funzionano per entrambi gli attributi `SerializeReference` `SerializeField` e .
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md)e [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) funzionano ora per gli attributi `SerializeReference` e `SerializeField` .
   
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-  - Inviare comandi di avvio/arresto a Unity solo quando l'editor è in grado di comunicare.
+  - Inviare i comandi di avvio/arresto a Unity solo quando l'editor è in grado di comunicare.
   
-  - Correzione della documentazione di Informazioni rapide con messaggi ereditati.
+  - Correzione della documentazione di Informazioni rapide con i messaggi ereditati.
   
-  - Correzione dell'ambito del `CreateInspectorGUI` messaggio.
+  - Risolto l'ambito del `CreateInspectorGUI` messaggio.
 
   - Non creare report [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md) sui metodi con modificatori polimorfici.
 
@@ -272,7 +327,7 @@ Data di rilascio: 19 febbraio 2020
 
 - **Integrazione:**
 
-  - Correzione del [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) controllo diagnostico per la firma del messaggio non corretta. Quando si esaminano i tipi con più livelli di ereditarietà, questa diagnostica potrebbe non riuscire con il messaggio seguente: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` .
+  - Correzione [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) del controllo diagnostico per la firma del messaggio non corretta. Quando si esaminano i tipi con più livelli di ereditarietà, questa diagnostica potrebbe non riuscire con il messaggio seguente: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` .
 
 ## <a name="4500"></a>4.5.0.0
 
@@ -360,14 +415,14 @@ Data di rilascio: 16 settembre 2019
 
 - **Integrazione:**
 
-  - È stato approfondito il modo in cui Visual Studio per i progetti Unity aggiungendo una nuova diagnostica specifica per Unity. Inoltre, l'IDE è stata resa più intelligente eliminando la diagnostica C# generale non applicabile ai progetti Unity. Ad esempio, l'IDE non mostrerà una correzione rapida per modificare una variabile inspector in modo da impedire la modifica della `readonly` variabile nell'editor di Unity.
-    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md): i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare uncesseray di elaborazione da parte del runtime di Unity.
-    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0002.md): il confronto tra tag che usa l'uguaglianza delle stringhe è più lento rispetto al metodo CompareTag predefinito.
-    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0003.md): l'utilizzo della forma generica di GetComponent è preferibile per l'sicurezza dei tipi.
+  - È stato approfondito il modo in cui Visual Studio per i progetti Unity aggiungendo nuove funzionalità di diagnostica specifiche per Unity. Inoltre, l'IDE è stata resa più intelligente eliminando la diagnostica C# generale non applicabile ai progetti Unity. Ad esempio, l'IDE non mostrerà una correzione rapida per modificare una variabile di controllo in modo da impedire la modifica della `readonly` variabile nell'editor di Unity.
+    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md): i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare un'elaborazione non conforme da parte del runtime di Unity.
+    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0002.md): il confronto tra tag che usa l'uguaglianza di stringhe è più lento del metodo CompareTag predefinito.
+    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0003.md): l'uso della forma generica di GetComponent è preferibile per l'a protezione dei tipi.
     - [`UNT0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0004.md): il messaggio di aggiornamento dipende dalla frequenza dei fotogrammi e deve usare Time.deltaTime anziché Time.fixedDeltaTime.
     - [`UNT0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0005.md): il messaggio FixedUpdate è indipendente dalla frequenza dei fotogrammi e deve usare Time.fixedDeltaTime anziché Time.deltaTime.
-    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md): è stata rilevata una firma del metodo non corretta per questo messaggio unity.
-    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0007.md): Unity esegue l'override dell'operatore di confronto Null per gli oggetti Unity che non è compatibile con la coalescing null.
+    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md): è stata rilevata una firma del metodo non corretta per questo messaggio Unity.
+    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0007.md): Unity esegue l'override dell'operatore di confronto Null per gli oggetti Unity che non è compatibile con la unione null.
     - [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md): Unity esegue l'override dell'operatore di confronto Null per gli oggetti Unity che non è compatibile con la propagazione Null.
     - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0009.md): quando si applica l'attributo InitializeOnLoad a una classe, è necessario fornire un costruttore statico. L'attributo InitializeOnLoad garantisce che verrà chiamato all'avvio dell'editor.
     - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md): i monobehaviour devono essere creati solo usando AddComponent(). un MonoBehaviour è un componente e deve essere associato a un GameObject.
@@ -425,7 +480,7 @@ Data di rilascio: 13 agosto 2019
 
   - Impedire l'arresto anomalo del sistema durante la dereferenziazione di indirizzi non validi.  
 
-  - È stato risolto un problema relativo ai domini app scaricati.
+  - Correzione del problema relativo ai domini applicazione non caricati.
 
 ## <a name="4201"></a>4.2.0.1
 
@@ -487,7 +542,7 @@ Data di rilascio: 21 maggio 2019
 
   - Aggiunta del supporto per i pacchetti Unity in Esplora progetti Unity. Sono visibili solo i pacchetti a cui viene fatto riferimento (usando il file manifest.json nella cartella `Packages`) e i pacchetti locali (incorporati nella cartella `Packages`).
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Mantenere le proprietà esterne durante l'elaborazione del file di soluzione.
 
@@ -543,7 +598,7 @@ Data di rilascio: 31 gennaio 2019
 
 ### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - I campi pubblici e serializzati non causeranno più avvisi. Sono stati eliminati automaticamente gli avvisi del compilatore `CS0649` e nei progetti Unity che hanno creato questi `IDE0051` messaggi.
 
@@ -787,7 +842,7 @@ Data di rilascio: 30 maggio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Non convertire più pdb portabili a mdb quando si usa il nuovo runtime di Unity.
 
@@ -827,7 +882,7 @@ Data di rilascio: 7 maggio 2018
 
   - Correzione dell'utilizzo delle impostazioni di eccezione.
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Esclusione delle unità di compilazione di gestione pacchetti dalla generazione.
 
@@ -837,7 +892,7 @@ Data di rilascio: 13 marzo 2018
 
 ### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Aggiunta del supporto per il nuovo generatore di progetti in Unity 2018.1.
 
@@ -857,7 +912,7 @@ Data di rilascio: 5 marzo 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Correzione del rilevamento della versione di Mono.
 
@@ -871,13 +926,13 @@ Data di rilascio: 23 febbraio 2018
 
 ### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Aggiunta del supporto per .NET Standard.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Correzione del rilevamento del framework di destinazione Unity.
 
@@ -919,7 +974,7 @@ Data di rilascio: 10 gennaio 2018
 
 ### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Aggiunta del supporto per il modello di riferimento MonoIsland 2018.1.
 
@@ -1093,7 +1148,7 @@ Data di rilascio: 7 aprile 2017
 
   - Aggiunto il supporto per il nuovo runtime di Unity, compatibile con .NET 4.6 / C# 6.
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Aggiunta del supporto per il profilo .NET 4.6.
 
@@ -1109,7 +1164,7 @@ Data di rilascio: 7 aprile 2017
 
   - Corretta la posizione del cursore dopo l'inserimento del metodo con completamento automatico.
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Eliminata la post-elaborazione della versione dell'assembly.
 
@@ -1124,7 +1179,7 @@ Data di rilascio: 25 gennaio 2017
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Corretta la regressione dove veniva fatto riferimento ai progetti Plugins due volte, prima come DLL binario e poi come riferimento al progetto.
 
@@ -1143,7 +1198,7 @@ Data di rilascio: 23 gennaio 2017
 
   - Aggiunto un avviso in caso di punto di interruzione non associabile (quando non viene trovato alcun percorso di origine corrispondente).
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Corretta la generazione di file csproj con caratteri speciali/localizzati.
 
@@ -1188,7 +1243,7 @@ Data di rilascio: 17 novembre 2016
 
   - Aggiunti messaggi di errore più efficaci quando un tipo è previsto o non trovato.
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Rimosso il suffisso CSharp dai nomi di progetto.
 
@@ -1216,7 +1271,7 @@ Data di rilascio: 17 novembre 2016
 
   - Corretto il supporto per il debug dei frame di iteratore con il nuovo compilatore C#.
 
-- **Generazione del progetto:**
+- **Generazione di progetti:**
 
   - Corretto il bug che impediva la compilazione quando si usava Unity Web Player.
 
@@ -1350,7 +1405,7 @@ Data di rilascio: 20 luglio 2015
 
   - Aggiunta del supporto dei caratteri jolly * nel filtro delle estensioni quando si specificano i file da includere nel progetto C#.
 
-- **Visual Studio integrazione:**
+- **Visual Studio'integrazione:**
 
   - Risolto un problema di compatibilità con Productivity Power Tools.
 
@@ -1862,7 +1917,7 @@ Data di rilascio: 3 gennaio 2013
 
 - Correzione di un'eccezione che poteva verificarsi durante la valutazione di espressioni UnityScript e Boo.
 
-- Correzione di una regressione per cui la modifica del livello API .NET in Unity non attivava un aggiornamento dei file di progetto.
+- Correzione di una regressione in cui la modifica del livello API .NET in Unity non attiva un aggiornamento dei file di progetto.
 
 - Correzione di un problema di un'API per cui il codice utente non poteva fare parte del gestore dei callback di log.
 
