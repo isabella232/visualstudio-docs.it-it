@@ -1,6 +1,6 @@
 ---
 title: Analizzare i dati di utilizzo della CPU (ASP.NET Core)
-description: Misurare le prestazioni delle app in ASP.NET Core app usando lo strumento di diagnostica utilizzo CPU
+description: Misurare le prestazioni delle app nelle ASP.NET Core usando lo strumento di diagnostica Utilizzo CPU
 ms.custom: mvc
 ms.date: 02/14/2020
 ms.topic: quickstart
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: aa0c95e3a9f3598cd6399b565adb75faccac22a8
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683618"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761147"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Guida introduttiva: analizzare i dati di utilizzo della CPU in Visual Studio (ASP.NET Core)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Guida introduttiva: Analizzare i dati di utilizzo della CPU in Visual Studio (ASP.NET Core)
 
 Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi di prestazioni nell'applicazione. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base. In questo caso si esamina uno strumento che identifica eventuali colli di bottiglia delle prestazioni a causa di un utilizzo intensivo della CPU. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
-L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. [PerfTips](../profiling/perftips.md), un altro strumento di profilatura integrato nel debugger, consente inoltre di eseguire il codice un'istruzione alla volta e di determinare il tempo necessario per completare determinate funzioni o blocchi di codice.
+L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. [PerfTips,](../profiling/perftips.md)un altro strumento di profilatura integrato nel debugger, consente anche di eseguire il codice un'istruzione alla volta e di identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
 
 Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**. In Windows 7 e versioni successive, è possibile usare lo strumento di relazione finale, il [profiler delle prestazioni](../profiling/profiling-feature-tour.md).
 
@@ -32,29 +32,29 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 1. Aprire Visual Studio e creare il progetto.
 
    ::: moniker range="vs-2017"
-   Dalla barra dei menu in alto scegliere **file** > **nuovo** > **progetto**.
+   Nella barra dei menu superiore scegliere **File** > **Nuovo** > **progetto.**
 
-   Nella finestra di dialogo **nuovo progetto** nel riquadro sinistro espandere **Visual C#**, quindi scegliere **Web**. Nel riquadro centrale scegliere **applicazione Web ASP.NET (.NET Core)**. Assegnare al progetto il nome *MyProfilingApp_MVC*.
+   Nella finestra **di dialogo** Nuovo progetto nel riquadro sinistro espandere **Visual C#** e quindi scegliere **Web.** Nel riquadro centrale scegliere ASP.NET **Web (.NET Core)**. Assegnare quindi al progetto il *nome MyProfilingApp_MVC*.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello di progetto **applicazione Web ASP.NET (.NET Core)** , scegliere il collegamento **Apri programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **nuovo progetto** . Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web** e quindi scegliere **Modifica**.
+   > Se il modello di progetto Applicazione **Web ASP.NET (.NET Core)** non è visualizzato, scegliere il collegamento **Apri Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo** progetto. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web** e quindi scegliere **Modifica**.
 
    Nella finestra di dialogo visualizzata scegliere **MVC** nel riquadro centrale e quindi fare clic su **OK**.
    ::: moniker-end
-   ::: moniker range="vs-2019"
-   In Visual Studio 2019, scegliere **Crea un nuovo progetto** nella finestra Start. Se la finestra di avvio non è aperta, scegliere  >  **finestra di avvio** file, quindi scegliere **Crea un nuovo progetto**.
+   ::: moniker range=">=vs-2019"
+   In Visual Studio 2019 scegliere **Crea un nuovo progetto** nella finestra iniziale. Se la finestra iniziale non è aperta, scegliere **File**  >  **Start Window (Finestra iniziale file)** e quindi **Scegliere Create a new project (Crea un nuovo progetto).**
 
-   Digitare **app Web** nella casella di ricerca, scegliere **C#** come lingua, scegliere **ASP.NET Core applicazione Web (Model-View-Controller)**, quindi fare clic su **Avanti**. Nella schermata successiva assegnare un nome al progetto *MyProfilingApp_MVC*, quindi scegliere **Avanti**.
+   Digitare **app Web** nella casella di ricerca, scegliere **C#** come linguaggio, scegliere **ASP.NET Core Web Application (Model-View-Controller) e** quindi scegliere **Avanti.** Nella schermata successiva assegnare al *progetto* MyProfilingApp_MVC e quindi scegliere **Avanti.**
 
-   Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
+   Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea.**
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **applicazione Web ASP.NET (.NET Core)** , è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. A questo punto scegliere il carico di lavoro **Sviluppo ASP.NET e Web** nel programma di installazione di Visual Studio.
+   > Se il modello Applicazione **Web ASP.NET (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra Crea **un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. A questo punto scegliere il carico di lavoro **Sviluppo ASP.NET e Web** nel programma di installazione di Visual Studio.
    ::: moniker-end
 
    Visual Studio crea e apre il nuovo progetto.
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella Models e scegliere **Aggiungi**  >  **classe**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella Models e **scegliere Aggiungi**  >  **classe.**
 
 1. Assegnare alla nuova classe il nome `Data.cs` e scegliere **Aggiungi**.
 
@@ -169,7 +169,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
     ```
 
     ::: moniker-end
-    ::: moniker range="vs-2019"
+    ::: moniker range=">=vs-2019"
 
     ```csharp
     public IActionResult Privacy()
@@ -206,17 +206,17 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
     Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-1. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **debug**  >  **Windows**  >  **Mostra strumenti di diagnostica**.
+1. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare nuovamente la finestra, fare clic su **Debug**  >  **Windows**  >  **Show Strumenti di diagnostica**.
 
-1. Fare clic su **debug**  >  **Avvia debug** (oppure su **Avvia** sulla barra degli strumenti o **F5**).
+1. Fare **clic su Debug**  >  **Avvia** debug (o Avvia sulla barra degli strumenti o **F5).** 
 
 1. Al termine del caricamento dell'app, fare clic sul collegamento appropriato nella parte superiore della pagina Web per avviare l'esecuzione del nuovo codice.
 
    ::: moniker range="vs-2017"
-   In Visual Studio 2017, fare clic sul collegamento **About (informazioni** ) per eseguire il codice.
+   In Visual Studio 2017 fare clic sul **collegamento Informazioni** su per eseguire il codice.
    ::: moniker-end
-   ::: moniker range="vs-2019"
-   In Visual Studio 2019, fare clic sul collegamento **privacy** per eseguire il codice.
+   ::: moniker range=">=vs-2019"
+   In Visual Studio 2019 fare clic sul **collegamento Privacy** per eseguire il codice.
    ::: moniker-end
 
 1. Viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.

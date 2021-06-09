@@ -1,6 +1,6 @@
 ---
 title: Aggiungere un'origine dati a un test delle prestazioni Web
-description: Viene illustrato come associare i dati per fornire valori diversi allo stesso test, ad esempio per fornire valori diversi ai parametri post del form.
+description: Informazioni su come associare dati per fornire valori diversi allo stesso test, ad esempio per fornire valori diversi ai parametri di post del modulo.
 ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
@@ -11,12 +11,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: fc7367db64f096ce5a90e9b51a8f5df162779f36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71aa3dbf4657896093dae59451140f48f83f1622
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971219"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761004"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Aggiungere un'origine dati a un test delle prestazioni Web
 
@@ -66,7 +66,7 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Se Visual Studio Enterprise non è disponibile, scaricarlo dalla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads).
 

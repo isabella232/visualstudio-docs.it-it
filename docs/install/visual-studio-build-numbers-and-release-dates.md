@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 06/08/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a0aa395864aa05c268819e5da52d6fed80d96a56
-ms.sourcegitcommit: d6fb4f8dff6ac69dfdd61e481a4ddd6b0dd8fa63
+ms.openlocfilehash: 3006e92289a425c327241384e88fb69c567a7a5e
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110395424"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761121"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,8 +27,13 @@ ms.locfileid: "110395424"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.1 | Versione | 8 giugno 2021 | 16.10.31402.337 |
+| 16.9.7 | Versione | 8 giugno 2021 | 16.9.31328.270 |
+| 16.7.16 | Versione | 8 giugno 2021 | 16.7.31327.30 |
+| 16.4.23| Versione | 8 giugno 2021 | 16.4.31327.141 |
+| 16.11.0 | Preview 1 | 25 maggio 2021 | 16.11.31320.298 |
 | 16.10.0 | Versione | 25 maggio 2021 | 16.10.31321.278 |
 | 16.10.0 | Preview 4 | 18 maggio 2021 | 16.10.31313.381 |
 | 16.9.6 | Versione | 18 maggio 2021 | 16.9.31313.79 |
@@ -229,7 +234,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.36 | Versione | 11 maggio 2021 | 15.9.28307.1525 |
 | 15.9.35 | Versione | 13 aprile 2021 | 15.9.28307.1500 |
