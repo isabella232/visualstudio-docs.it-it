@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Scrivere unit test per DLL C/C++'
-description: Informazioni su come sviluppare una DLL nativa di C++ usando la metodologia test-First. Per iniziare, creare un progetto di test nativo.
+description: Informazioni su come sviluppare una DLL C++ nativa usando la metodologia test-first. Iniziare creando un progetto di test nativo.
 ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: how-to
@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: cfdc580b94760cb0c5160918210ba6c3dd8fa2f6
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727541"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042925"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C/C++
 
@@ -40,8 +40,8 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
 
-     **Visual Studio 2017 e versioni precedenti**: espandere modelli **installati**  >    >  **Visual C++**  >  **test**.
-     **Visual Studio 2019**: impostare la **lingua** su C++ e digitare "test" nella casella di ricerca.
+     **Visual Studio 2017 e versioni precedenti:** espandere **Modelli**  >  **installati**  >  **Visual C++**  >  **Test**.
+     **Visual Studio 2019:** impostare **Linguaggio** su C++ e digitare "test" nella casella di ricerca.
 
      Scegliere il modello **Progetto unit test nativo** o scegliere un qualsiasi altro framework installato. Se si sceglie un altro modello, ad esempio Google Test o Boost.Test, i principi di base sono gli stessi, cambiano però alcuni dettagli.
 
@@ -84,13 +84,13 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
          ![Esplora unit test con un test superato](../test/media/utecpp04.png)
 
-## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> Creazione di un progetto di DLL
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> Creare un progetto DLL
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 La procedura seguente illustra come creare un progetto DLL in Visual Studio 2019.
 
-1. Creare un progetto C++ usando la **creazione guidata desktop di Windows**: fare clic con il pulsante destro del mouse sul nome della soluzione in **Esplora soluzioni** e scegliere **Aggiungi**  >  **nuovo progetto**. Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati.
+1. Creare un progetto C++ usando la Creazione guidata desktop di **Windows:** fare clic con il pulsante destro del mouse sul nome della **soluzione** in Esplora soluzioni scegliere **Aggiungi**  >  **nuovo progetto.** Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati.
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
@@ -190,13 +190,13 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
     Il nuovo test viene visualizzato in **Esplora test**.
 
-5. In **Esplora test** scegliere **Esegui tutto**.
+5. In **Esplora test** scegliere Esegui **tutto.**
 
     ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png)
 
    È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumenta in modo iterativo i test e passali
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentare i test in modo iterativo e renderli superati
 
 1. Aggiungere un nuovo test:
 
@@ -254,7 +254,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
     > [!TIP]
     > Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.
 
-## <a name="debug-a-failing-test"></a><a name="debug"></a> Eseguire il debug di un test non superato
+## <a name="debug-a-failing-test"></a><a name="debug"></a> Eseguire il debug di un test non riuscito
 
 1. Aggiungere un altro test:
 
@@ -328,7 +328,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con lo ![ screenshot dell'interruttore parallelo esecuzione test sulla barra degli strumenti di Esplora test. Quando si seleziona questo pulsante, i test vengono eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione di test paralleli con lo screenshot del pulsante di attivazione/disattivazione dell'esecuzione dei test in parallelo sulla barra ![ degli strumenti di Esplora test. Quando questo pulsante è selezionato, i test verranno eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 ::: moniker-end
 
@@ -339,7 +339,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
 ::: moniker-end
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Effettuare il refactoring del codice senza modificare i test
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Eseguire il refactoring del codice senza modificare i test
 
 1. Semplificare il calcolo centrale nella funzione SquareRoot:
 

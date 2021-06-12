@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dcf28f818760320b215cbff0d3a2eb5ad6d9f623
-ms.sourcegitcommit: 55b99dbce29d19e493feae9b8d2fdac73718e4de
+ms.openlocfilehash: fc3133692007a53b48d658ed284d6af0bde0af4a
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111873068"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043081"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installare Build Tools in un contenitore
 
@@ -68,18 +68,22 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
 
-   # Download the Build Tools bootstrapper.
-   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
-
-   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-   RUN start /wait C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
-       --installPath C:\BuildTools `
-       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-       --remove Microsoft.VisualStudio.Component.Windows81SDK `
-    || IF "%ERRORLEVEL%"=="3010" EXIT 0
+   RUN `
+       # Download the Build Tools bootstrapper.
+       curl -SL --output vs_buildtools.exe https://aka.ms/vs/15/release/vs_buildtools.exe `
+       `
+       # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache `
+           --installPath C:\BuildTools `
+           --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+           --remove Microsoft.VisualStudio.Component.Windows81SDK `
+           || IF "%ERRORLEVEL%"=="3010" EXIT 0) `
+       `
+       # Cleanup
+       && del /q vs_buildtools.exe
 
    # Define the entry point for the Docker container.
    # This entry point starts the developer command prompt and launches the PowerShell shell.
@@ -87,7 +91,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    ```
 
    > [!TIP]
-   > Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory Visual Studio Build Tools dei componenti.](workload-component-id-vs-build-tools.md)
+   > Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory dei Visual Studio Build Tools componenti.](workload-component-id-vs-build-tools.md)
    >
 
    > [!WARNING]
@@ -110,26 +114,30 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
 
-   # Download the Build Tools bootstrapper.
-   ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
-
-   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
-       --installPath C:\BuildTools `
-       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-       --remove Microsoft.VisualStudio.Component.Windows81SDK `
-    || IF "%ERRORLEVEL%"=="3010" EXIT 0
+   RUN `
+       # Download the Build Tools bootstrapper.
+       curl -SL --output vs_buildtools.exe https://aka.ms/vs/16/release/vs_buildtools.exe `
+       `
+       # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache modify `
+           --installPath "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\BuildTools" `
+           --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+           --remove Microsoft.VisualStudio.Component.Windows81SDK `
+           || IF "%ERRORLEVEL%"=="3010" EXIT 0) `
+       `
+       # Cleanup
+       && del /q vs_buildtools.exe
 
    # Define the entry point for the docker container.
    # This entry point starts the developer command prompt and launches the PowerShell shell.
-   ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
    > [!TIP]
-   > Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory Visual Studio Build Tools dei componenti.](workload-component-id-vs-build-tools.md)
+   > Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory dei Visual Studio Build Tools componenti.](workload-component-id-vs-build-tools.md)
    >
 
    > [!WARNING]
@@ -195,11 +203,11 @@ Dopo avere creato un'immagine, è possibile eseguirla in un contenitore per eseg
 Per usare questa immagine per il flusso di lavoro CI/CD è possibile pubblicarla nel proprio [Registro Azure Container](https://azure.microsoft.com/services/container-registry) o in un altro [registro Docker](https://docs.docker.com/registry/deploying) interno, in modo che i server possano semplicemente eseguirne il pull.
 
    > [!NOTE]
-   > Se l'avvio del contenitore Docker non riesce, è probabile che si sia verificato un Visual Studio di installazione. È possibile aggiornare dockerfile per rimuovere il passaggio che chiama il Visual Studio batch. In questo modo è possibile avviare il contenitore Docker e leggere i log degli errori di installazione.
+   > Se l'avvio del contenitore Docker non riesce, è probabile che si sia verificato Visual Studio'installazione. È possibile aggiornare il Dockerfile per rimuovere il passaggio che chiama il comando Visual Studio batch. In questo modo è possibile avviare il contenitore Docker e leggere i log degli errori di installazione.
    >
-   > Nel file Dockerfile rimuovere i `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` parametri e dal comando `&&` `ENTRYPOINT` . Il comando dovrebbe ora essere `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]` . Ricompilare quindi dockerfile ed eseguire il `run` comando per accedere ai file del contenitore. Per individuare i log degli errori di installazione, passare alla `$env:TEMP` directory e individuare il `dd_setup_<timestamp>_errors.log` file.
+   > Nel file Dockerfile rimuovere i `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` parametri e dal comando `&&` `ENTRYPOINT` . Il comando dovrebbe ora essere `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]` . Ricompilare quindi il Dockerfile ed eseguire il `run` comando per accedere ai file del contenitore. Per individuare i log degli errori di installazione, passare alla `$env:TEMP` directory e individuare il file `dd_setup_<timestamp>_errors.log` .
    >
-   > Dopo aver identificato e risolto il problema di installazione, è possibile aggiungere nuovamente i parametri e al comando e `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` `ENTRYPOINT` ricompilare il Dockerfile.
+   > Dopo aver identificato e risolto il problema di installazione, è possibile aggiungere di nuovo i parametri e `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` al comando e `ENTRYPOINT` ricompilare il Dockerfile.
    >
    > Per altre informazioni, vedere [Problemi noti dei contenitori](build-tools-container-issues.md).
 

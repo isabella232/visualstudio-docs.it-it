@@ -7,12 +7,12 @@ ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
-ms.openlocfilehash: b905d698f3d9f1a763ae7d9e9dbc8276a5362da6
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 09c905d113920a0bb55aed8851d3fb62c92a39bf
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104673021"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042850"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.
@@ -20,7 +20,7 @@ I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.
 [Confrontare le opzioni di sottoscrizione cloud](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
 
 ## <a name="prerequisites"></a>Prerequisiti
 È prima di tutto necessario configurare il tenant del cliente nel Centro per i partner e creare una sottoscrizione di Azure per questo tenant.
@@ -37,7 +37,7 @@ Chiunque disponga dell'[accesso come Proprietario o Collaboratore](https://na01.
 0. Scegliere **Gestione dei servizi**.
 0. Scegliere **Visual Studio Marketplace**.
 0. Assicurarsi che sia visualizzato il nome del cliente nell'angolo in alto a destra.
-0. Scegliere **sottoscrizioni**.
+0. Scegliere **Sottoscrizioni**.
 0. Scegliere Enterprise o Professional per Visual Studio.
 0. Scegliere **Acquista**.
 0. Scegliere la sottoscrizione di Azure per la fatturazione dell'acquisto.
@@ -47,7 +47,7 @@ Chiunque disponga dell'[accesso come Proprietario o Collaboratore](https://na01.
 >[!NOTE]
 > È necessario seguire questa procedura ogni volta che si acquistano sottoscrizioni di Visual Studio come CSP. Al momento non è disponibile alcuna API per automatizzare l'acquisto.
 
-Dopo aver confermato l'acquisto, è possibile scegliere **Gestisci** per assegnare le sottoscrizioni agli utenti finali del cliente.  È anche possibile accedere al portale di amministrazione della sottoscrizione dal centro per i partner scegliendo **Gestione servizi**.  Da qui, vedere i passaggi o il video seguenti.
+Dopo aver confermato l'acquisto, è possibile scegliere **Gestisci** per assegnare le sottoscrizioni agli utenti finali del cliente.  È anche possibile accedere al portale di amministrazione della sottoscrizione dal Partner Center scegliendo **Gestione dei servizi.**  Da qui, vedere i passaggi o il video seguenti.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Come gestire le sottoscrizioni cloud di Visual Studio per il cliente
 
@@ -107,13 +107,13 @@ R: no, i prezzi per le sottoscrizioni di Visual Studio sono fissi. Lo stesso pre
  R: attualmente non è possibile. I clienti possono sfruttare i [Prezzi di Azure per sviluppo/test](https://azure.microsoft.com/pricing/dev-test/), ma non è disponibile alcuna offerta specifica per i CSP.
 
 ## <a name="resources"></a>Risorse
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per le risposte alle domande comuni sulla fatturazione, vedere le domande [frequenti sulla fatturazione cloud](vscloud-billing-faq.md) .
+Vedere le domande [frequenti sulla fatturazione cloud](vscloud-billing-faq.yml) per le risposte alle domande di fatturazione comuni.

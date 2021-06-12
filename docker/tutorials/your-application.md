@@ -1,5 +1,5 @@
 ---
-title: "Esercitazione su Docker-parte 1: compilare ed eseguire l'app di esempio todo list"
+title: "Esercitazione su Docker - Parte 1: Compilare ed eseguire l'app di esempio todo list"
 description: Panoramica dell'app di esempio todo list eseguita in Node.js.
 ms.date: 08/04/2020
 author: nebuk89
@@ -9,38 +9,40 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 1b92792cf9db0090c52f583754e56c306e6d7234
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 00eb3a7cff3ffeaac783b929a000d9258fae7e63
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082578"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042944"
 ---
-# <a name="build-and-run-the-todo-sample-app"></a>Compilare ed eseguire l'app di esempio TODO
+# <a name="build-and-run-the-todo-sample-app"></a>Compilare ed eseguire l'app di esempio todo
 
-Nella parte restante di questa esercitazione verrà usato un semplice gestore elenco attività in esecuzione in Node.js. Se non si ha familiarità con Node.js, non ci si deve preoccupare. Non è necessaria alcuna esperienza JavaScript reale.
+Per il resto di questa esercitazione, verrà utilizzato un semplice gestore di elenchi attività in esecuzione in Node.js. Se non si ha familiarità con Node.js, non c'è da preoccuparsi. Non è necessaria alcuna esperienza JavaScript reale.
 
-A questo punto, il team di sviluppo è piuttosto piccolo e si sta semplicemente creando un'app per dimostrare il proprio MVP (il prodotto è minimo possibile). Si vuole illustrare il funzionamento e il modo in cui è in grado di eseguire questa operazione senza dover pensare a come funzionerà per un team di grandi dimensioni, più sviluppatori e così via.
+A questo punto, il team di sviluppo è piuttosto piccolo e si sta semplicemente creando un'app per dimostrare l'MVP (prodotto minimo fattibile). Si vuole illustrare il funzionamento e le operazioni che può eseguire senza dover pensare al suo funzionamento per un team di grandi dimensioni, più sviluppatori e così via.
 
-![Schermata di gestione elenco TODO](media/todo-list-sample.png)
+![Todo List Manager Screenshot](media/todo-list-sample.png)
 
 ## <a name="get-the-app"></a>Scaricare l'app
 
-Prima di poter eseguire l'applicazione, è necessario ottenere il codice sorgente dell'applicazione nel computer. Per i progetti reali, in genere il repository viene clonato. Tuttavia, per questa esercitazione è stato creato un file ZIP che contiene l'applicazione.
+Prima di poter eseguire l'applicazione, è necessario ottenere il codice sorgente dell'applicazione nel computer. Per i progetti reali, in genere si clona il repo. Tuttavia, per questa esercitazione è stato creato un file ZIP contenente l'applicazione.
 
-1. Verificare che nel computer locale sia installato Docker per Windows o Docker Community Edition. Vedere la [documentazione relativa all'installazione di Docker per Windows](https://docs.docker.com/docker-for-windows/install/). Il processo di installazione rende disponibile il file ZIP contenente l'esempio nell'indirizzo localhost.
+1. Assicurarsi di aver installato Docker per Windows o Docker Community Edition nel computer locale. Vedere [la Docker per Windows di installazione di](https://docs.docker.com/docker-for-windows/install/). Il processo di installazione rende disponibile il file ZIP contenente l'esempio all'indirizzo localhost.
 
-1. [Scaricare il file zip](https://github.com/docker/getting-started/tree/master/app). Aprire il file ZIP e assicurarsi di estrarre il contenuto.
+1. Scaricare il codice sorgente per l'app dal repo [Docker.](https://github.com/docker/getting-started) È possibile scaricare il file ZIP per il repo. Per scaricare il file ZIP, usare il pulsante **Codice** verde e scegliere **Scarica ZIP.** Aprire il file ZIP ed Estrai tutto per estrarre l'origine dell'app dalla cartella *dell'app* in una cartella sul disco rigido.
 
-1. Al termine dell'estrazione, usare l'editor di codice preferito per aprire il progetto. Se è necessario un editor, è possibile usare [Visual Studio Code](https://code.visualstudio.com/). Verranno visualizzate le `package.json` due sottodirectory e `src` `spec` .
+   ![Screenshot che mostra il pulsante Codice verde e l'opzione Scarica ZIP](media/download-zip.png)
 
-    ![Screenshot dei Visual Studio Code aperti con l'app caricata](media/ide-screenshot.png)
+1. Dopo l'estrazione, usare l'editor di codice preferito per aprire il progetto. Se è necessario un editor, è possibile usare [Visual Studio Code](https://code.visualstudio.com/). Dovrebbero essere visualizzati `package.json` e due sottodirectory ( `src` e `spec` ).
 
-## <a name="building-the-apps-container-image"></a>Compilazione dell'immagine del contenitore dell'app
+    ![Screenshot della Visual Studio Code aperta con l'app caricata](media/ide-screenshot.png)
 
-Per compilare l'applicazione, è necessario usare un `Dockerfile` . Un Dockerfile è semplicemente uno script basato su testo di istruzioni che viene usato per creare un'immagine del contenitore. Se è stato creato Dockerfile in precedenza, è possibile che vengano visualizzati alcuni difetti nel Dockerfile di seguito. Ma non preoccuparti. Verranno esaminati.
+## <a name="building-the-apps-container-image"></a>Creazione dell'immagine del contenitore dell'app
 
-1. Creare un file denominato `Dockerfile` nella stessa cartella del file `package.json` con il contenuto seguente.
+Per compilare l'applicazione, è necessario usare un oggetto `Dockerfile` . Un Dockerfile è semplicemente uno script di istruzioni basato su testo usato per creare un'immagine del contenitore. Se i Dockerfile sono stati creati in precedenza, potrebbero verificarsi alcuni difetti nel Dockerfile seguente. Ma non c'è da preoccuparsi. Verranno trattate.
+
+1. Creare un file `Dockerfile` denominato nella stessa cartella del file con il contenuto `package.json` seguente.
 
     ```dockerfile
     FROM node:12-alpine
@@ -50,54 +52,54 @@ Per compilare l'applicazione, è necessario usare un `Dockerfile` . Un Dockerfil
     CMD ["node", "/app/src/index.js"]
     ```
 
-    Verificare che l'estensione del file `Dockerfile` non sia simile a `.txt` . Alcuni editor possono aggiungere automaticamente questa estensione di file e questo genera un errore nel passaggio successivo.
+    Verificare che il file non `Dockerfile` abbia un'estensione come `.txt` . Alcuni editor possono aggiungere automaticamente questa estensione di file e questo genera un errore nel passaggio successivo.
 
-1. Se non è già stato fatto, aprire un terminale e passare alla `app` Directory con il `Dockerfile` . A questo punto, compilare l'immagine del contenitore usando il `docker build` comando.
+1. Se non è già stato fatto, aprire un terminale e passare alla `app` directory con `Dockerfile` . Compilare ora l'immagine del contenitore usando il `docker build` comando .
 
     ```bash
     docker build -t getting-started .
     ```
 
-    In alternativa, è anche possibile fare clic con il pulsante destro del mouse su Dockerfile e scegliere **Compila immagine...** e quindi specificare il tag al prompt.
+    In alternativa, è anche possibile fare clic con il pulsante destro del mouse sul Dockerfile e scegliere **Build Image (Compila immagine)** e quindi specificare il tag al prompt.
 
-    Questo comando usava Dockerfile per creare una nuova immagine contenitore. Si potrebbe notare che sono stati scaricati numerosi "livelli". Questo perché è stato indicato al generatore che si desiderava iniziare dall' `node:12-alpine` immagine. Tuttavia, poiché il computer non è stato installato, è necessario scaricare l'immagine.
+    Questo comando ha usato il Dockerfile per creare una nuova immagine del contenitore. Si sarà notato che sono stati scaricati molti "livelli". Questo perché è stato indicato al generatore che si vuole iniziare `node:12-alpine` dall'immagine. Tuttavia, poiché non è stato installato nel computer, l'immagine deve essere scaricata.
 
-    Dopo che l'immagine è stata scaricata, copiata nell'applicazione e usata `yarn` per installare le dipendenze dell'applicazione. La `CMD` direttiva specifica il comando predefinito da eseguire quando si avvia un contenitore da questa immagine.
+    Dopo aver scaricato l'immagine, è stata copiata nell'applicazione e usata `yarn` per installare le dipendenze dell'applicazione. La `CMD` direttiva specifica il comando predefinito da eseguire all'avvio di un contenitore da questa immagine.
 
-    Infine, il `-t` flag contrassegna l'immagine. È sufficiente considerarlo come nome leggibile per l'immagine finale. Poiché l'immagine è stata denominata `getting-started` , è possibile fare riferimento a tale immagine quando si esegue un contenitore.
+    Infine, il `-t` flag contrassegna l'immagine. Si pensi semplicemente a un nome leggibile per l'immagine finale. Poiché l'immagine è stata `getting-started` denominata , è possibile fare riferimento a tale immagine quando si esegue un contenitore.
 
-    Alla `.` fine del `docker build` comando indica che Docker deve cercare `Dockerfile` nella directory corrente.
+    Alla `.` fine del comando indica che `docker build` Docker deve cercare nella directory `Dockerfile` corrente.
 
 ## <a name="starting-an-app-container"></a>Avvio di un contenitore di app
 
-Ora che si dispone di un'immagine, eseguire l'applicazione. A tale scopo, utilizzare il `docker run` comando (tenere presente che dal precedente?).
+Ora che è disponibile un'immagine, eseguire l'applicazione. A tale scopo, usare il `docker run` comando (ricordarlo in precedenza?).
 
-1. Avviare il contenitore usando il `docker run` comando e specificare il nome dell'immagine appena creata:
+1. Avviare il contenitore `docker run` usando il comando e specificare il nome dell'immagine appena creata:
 
     ```bash
     docker run -dp 3000:3000 getting-started
     ```
 
-    Ricordare i `-d` `-p` flag e? Il nuovo contenitore viene eseguito in modalità "scollegata" (in background) e viene creato un mapping tra la porta 3000 dell'host e la porta 3000 del contenitore. Senza il mapping delle porte, non sarà possibile accedere all'applicazione.
+    Si ricordano `-d` i `-p` flag e ? Si esegue il nuovo contenitore in modalità "scollegato" (in background) e si crea un mapping tra la porta 3000 dell'host e la porta 3000 del contenitore. Senza il mapping delle porte, non sarebbe possibile accedere all'applicazione.
 
-1. Dopo alcuni secondi, aprire il Web browser a [http://localhost:3000](http://localhost:3000) .
-    Verrà visualizzata l'app.
+1. Dopo alcuni secondi, aprire il Web browser su [http://localhost:3000](http://localhost:3000) .
+    Dovrebbe essere visualizzata l'app.
 
-    ![Elenco TODO vuoto](media/todo-list-empty.png)
+    ![Elenco attività vuoto](media/todo-list-empty.png)
 
-1. Procedere con l'aggiunta di un elemento o due per verificare che funzioni come previsto. È possibile contrassegnare gli elementi come completati e rimuovere gli elementi. Il front-end archivia correttamente gli elementi nel back-end. Piuttosto veloce e facile, eh?
+1. Procedere e aggiungere uno o due elementi e verificare che funzioni come previsto. È possibile contrassegnare gli elementi come completi e rimuovere gli elementi. Il front-end sta archiviando correttamente gli elementi nel back-end. È piuttosto veloce e semplice, ma?
 
-A questo punto, è necessario disporre di un gestore elenco attività in esecuzione con pochi elementi, tutti compilati dall'utente. Verranno ora apportate alcune modifiche e verranno fornite informazioni sulla gestione dei contenitori.
+A questo punto, dovrebbe essere presente un gestore di elenchi attività in esecuzione con alcuni elementi, tutti creati dall'utente. A questo punto, apportare alcune modifiche e apprendere come gestire i contenitori.
 
-Se si esamina rapidamente l'estensione VS Code, dovrebbero essere visualizzati i due contenitori in esecuzione (questa esercitazione e il contenitore di app appena lanciato).
+Se si osserva rapidamente l'estensione VS Code, i due contenitori dovrebbero essere in esecuzione ora (questa esercitazione e il contenitore di app appena avviato).
 
 ![Estensione Docker con esercitazione e contenitori di app in esecuzione](media/vs-two-containers.png)
 
 ## <a name="recap"></a>Riepilogo
 
-In questa breve sezione sono state apprese le nozioni di base sulla creazione di un'immagine del contenitore e la creazione di un Dockerfile a tale scopo. Una volta creata un'immagine, il contenitore è stato avviato e l'app in esecuzione è stata avviata.
+In questa breve sezione sono state apprese le nozioni di base sulla creazione di un'immagine del contenitore e si è creato un Dockerfile a tale scopo. Dopo aver creato un'immagine, è stato avviato il contenitore ed è stata visualizzata l'app in esecuzione.
 
-Successivamente, si apprenderà una modifica all'app e si apprenderà come aggiornare l'applicazione in esecuzione con una nuova immagine. Verranno illustrati alcuni altri comandi utili.
+Successivamente, si apprenderà come apportare una modifica all'app e come aggiornare l'applicazione in esecuzione con una nuova immagine. Lungo il percorso si apprenderanno alcuni altri comandi utili.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
