@@ -1,6 +1,6 @@
 ---
-title: Informazioni su soluzioni e progetti
-description: Informazioni sui progetti e le soluzioni di Visual Studio, su come creare nuovi progetti da un modello e su come visualizzare & gestire i progetti in Esplora soluzioni.
+title: Che cosa sono Visual Studio progetti di &amp; soluzioni?
+description: Informazioni su Visual Studio progetti e soluzioni, su come creare nuovi progetti da un modello e su come visualizzare & gestire i progetti in Esplora soluzioni.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
 ms.topic: conceptual
@@ -22,40 +22,40 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 473c3ca0e4a9998d6a320e384bf39b4b5e037085
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eaba06b2da73fc0bc80219ce58baff49a760ebc0
+ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878500"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112066969"
 ---
-# <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
+# <a name="what-are-solutions-and-projects-in-visual-studio"></a>Che cosa sono le soluzioni e i progetti Visual Studio?
 
-Questa pagina descrive il concetto di *progetto* e una *soluzione* in Visual Studio. Vengono inoltre illustrati brevemente la finestra degli strumenti Esplora soluzioni e la modalità di creazione di un nuovo progetto.
+In questo articolo si apprenderà *che* cos'è un progetto e *una* soluzione in Visual Studio. Illustra anche brevemente la finestra Esplora soluzioni strumenti e come creare un nuovo progetto.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Progetti e soluzioni in Visual Studio per Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Progetti
 
-Quando si crea un'app o un sito Web in Visual Studio, si inizia con un *progetto*. In senso logico, un progetto contiene tutti i file compilati in un file eseguibile, in una libreria o in un sito Web. Tali file possono includere codice sorgente, icone, immagini, file di dati e così via. Un progetto contiene anche le impostazioni del compilatore e altri file di configurazione che potrebbero essere necessari per i vari servizi o componenti con cui il programma comunica.
+Quando si crea un'app o un sito Web in Visual Studio, si inizia con un *progetto*. In senso logico, un progetto contiene tutti i file compilati in un file eseguibile, una libreria o un sito Web. Tali file possono includere codice sorgente, icone, immagini, file di dati e così via. Un progetto contiene anche le impostazioni del compilatore e altri file di configurazione che potrebbero essere necessari per i vari servizi o componenti con cui il programma comunica.
 
 ### <a name="project-file"></a>File di progetto
 
-Visual Studio USA [MSBuild](../msbuild/msbuild.md) per compilare ogni progetto in una soluzione e ogni progetto contiene un file di progetto MSBuild. L'estensione di file riflette il tipo di progetto, ad esempio un progetto C# (con estensione csproj), un progetto di Visual Basic (vbproj) o un progetto di database (. dbproj). Il file di progetto è un documento XML contenente tutte le informazioni e le istruzioni necessarie a MSBuild per compilare il progetto, inclusi il contenuto, i requisiti della piattaforma, le informazioni sul controllo delle versioni, le impostazioni del server Web o del server di database e le attività da eseguire.
+Visual Studio usa [MSBuild per](../msbuild/msbuild.md) compilare ogni progetto in una soluzione e ogni progetto contiene un file di progetto MSBuild. L'estensione di file riflette il tipo di progetto, ad esempio un progetto C# (con estensione csproj), un progetto Visual Basic (con estensione vbproj) o un progetto di database (con estensione dbproj). Il file di progetto è un documento XML che contiene tutte le informazioni e le istruzioni necessarie a MSBuild per compilare il progetto, inclusi il contenuto, i requisiti della piattaforma, le informazioni sul controllo delle versioni, le impostazioni del server Web o del server di database e le attività da eseguire.
 
-I file di progetto sono basati sulla [XML schema MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Per esaminare il contenuto dei [file di progetto in stile SDK](../msbuild/how-to-use-project-sdk.md) più recenti in Visual Studio, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **modifica \<projectname\>**. Per esaminare il contenuto di .NET Framework e di altri progetti dello stile, scaricare prima il progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Scarica progetto**). Quindi, fare clic con il pulsante destro del mouse sul progetto e scegliere **modifica \<projectname\>**.
+I file di progetto sono basati sullo [schema XML di MSBuild.](../msbuild/msbuild-project-file-schema-reference.md) Per esaminare il contenuto dei file di progetto di tipo [sdk](../msbuild/how-to-use-project-sdk.md) più recente in Visual Studio, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e **scegliere Modifica. \<projectname\>** Per esaminare il contenuto di .NET Framework e di altri progetti di tale stile, scaricare prima di tutto il progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare Scarica **progetto**). Fare quindi clic con il pulsante destro del mouse sul progetto e scegliere **Modifica. \<projectname\>**
 
 > [!NOTE]
-> Non è necessario usare soluzioni o progetti in Visual Studio per modificare, compilare ed eseguire il debug del codice. È sufficiente aprire la cartella che contiene i file di origine in Visual Studio e iniziare ad apportare le modifiche. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+> Non è necessario usare soluzioni o progetti in Visual Studio modificare, compilare ed eseguire il debug del codice. È sufficiente aprire la cartella che contiene i file di origine in Visual Studio e iniziare ad apportare le modifiche. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ### <a name="create-new-projects"></a>Crea nuovi progetti
 
-Il modo più semplice per creare un nuovo progetto consiste nell'usare un modello di progetto per il tipo di progetto desiderato. Un modello di progetto include un set di base di file di codice, file di configurazione, asset e impostazioni generati in precedenza. Usare **file**  >  **nuovo**  >  **progetto** per selezionare un modello di progetto. Per ulteriori informazioni, vedere la pagina relativa alla [creazione di un nuovo progetto](create-new-project.md).
+Il modo più semplice per creare un nuovo progetto è usare un modello di progetto per il tipo di progetto desiderato. Un modello di progetto include un set di base di file di codice, file di configurazione, asset e impostazioni pre-generati. Usare **File**  >  **New**  >  **Project (Nuovo progetto)** per selezionare un modello di progetto. Per altre informazioni, vedere [Creare un nuovo progetto.](create-new-project.md)
 
-È inoltre possibile creare un modello di progetto personalizzato che è possibile utilizzare per creare nuovi progetti da. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
+È anche possibile creare un modello di progetto personalizzato da usare per creare nuovi progetti. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
 
-Quando si crea un nuovo progetto, Visual Studio lo salva nel percorso predefinito, *%USERPROFILE%\source\repos*. Per modificare questo percorso, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
+Quando si crea un nuovo progetto, Visual Studio lo salva nel percorso *predefinito% USERPROFILE%\source\repos*. Per modificare questo percorso, passare **a** Strumenti  >  **Opzioni Progetti**  >  **e percorsi**  >  **soluzioni**. Per altre informazioni, vedere [Finestra di dialogo Opzioni: Progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
 
 ## <a name="solutions"></a>Soluzioni
 
@@ -71,14 +71,14 @@ Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di fi
 |suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
 
 > [!IMPORTANT]
-> Una soluzione è descritta da un file di testo (con estensione *sln*) con un formato univoco specifico, per il quale non è prevista la modifica manuale. Viceversa, il file con estensione *suo* è un file nascosto che non viene visualizzato nelle impostazioni predefinite di Esplora file. Per visualizzare i file nascosti, nel menu **Visualizza** di Esplora file selezionare la casella di controllo **Elementi nascosti**.
+> Una soluzione è descritta da un file di testo (con estensione *sln*) con un formato univoco specifico, per il quale non è prevista la modifica manuale. Al contrario, il file *suo* è un file nascosto che non viene visualizzato nelle impostazioni predefinite Esplora file predefinite. Per visualizzare i file nascosti, nel menu **Visualizza** di Esplora file selezionare la casella di controllo **Elementi nascosti**.
 
-### <a name="solution-folder"></a>Cartella soluzione
+### <a name="solution-folder"></a>Cartella della soluzione
 
-Una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Se si desidera individuare un file di soluzione in un computer, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
+Una "cartella della soluzione" è una cartella virtuale che si trova solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Se si vuole individuare un file di soluzione in un computer, passare a Strumenti  >  **Opzioni**  >  **Progetti e percorsi**  >  **soluzioni**. Per altre informazioni, vedere [Finestra di dialogo Opzioni: Progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
 
 > [!TIP]
-> Per un esempio di progetto e di soluzione creato da zero, completate con istruzioni dettagliate e codice di esempio, vedere [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md).
+> Per un esempio di un progetto e di una soluzione creati da zero, completi di istruzioni dettagliate e codice di esempio, vedere Introduzione a [progetti e soluzioni.](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="solution-explorer"></a>Esplora soluzioni
 
@@ -86,7 +86,7 @@ Dopo aver creato un nuovo progetto, è possibile usare **Esplora soluzioni** per
 
 ::: moniker range="vs-2017"
 
-![Screenshot di Esplora soluzioni con due progetti.](../ide/media/vs2015_solution_explorer.png)
+![Screenshot della Esplora soluzioni con due progetti.](../ide/media/vs2015_solution_explorer.png)
 
 La barra degli strumenti nella parte superiore di **Esplora soluzioni** include pulsanti per passare dalla visualizzazione della soluzione alla visualizzazione delle cartelle, visualizzare i file nascosti, comprimere tutti i nodi e altro ancora.
 
@@ -94,21 +94,21 @@ La barra degli strumenti nella parte superiore di **Esplora soluzioni** include 
 
 ::: moniker range="vs-2019"
 
-![Screenshot di Esplora soluzioni con due progetti in Visual Studio 2019.](../ide/media/solution-explorer.png)
+![Screenshot della Esplora soluzioni con due progetti in Visual Studio 2019.](../ide/media/solution-explorer.png)
 
-La barra degli strumenti nella parte superiore di **Esplora soluzioni** dispone di pulsanti per passare da una visualizzazione soluzione a una visualizzazione cartella, filtrare le modifiche in sospeso, visualizzare tutti i file, comprimere tutti i nodi, visualizzare le pagine delle [Proprietà](managing-project-and-solution-properties.md) , visualizzare l'anteprima del codice nell' [editor di codice](writing-code-in-the-code-and-text-editor.md)e altro ancora.
+La barra degli strumenti nella parte superiore di **Esplora soluzioni** include pulsanti per passare da una visualizzazione della soluzione [](managing-project-and-solution-properties.md) a una visualizzazione cartella, filtrare le modifiche in sospeso, visualizzare tutti i file, comprimere tutti i nodi, visualizzare le pagine delle proprietà, visualizzare il codice in anteprima [nell'editor](writing-code-in-the-code-and-text-editor.md)di codice e altro ancora.
 
 ::: moniker-end
 
-Molti comandi di menu sono disponibili dal menu di scelta rapida per i vari elementi in **Esplora soluzioni**. Questi comandi includono la compilazione di un progetto, la gestione dei pacchetti NuGet, l'aggiunta di un riferimento, la ridenominazione di un file e l'esecuzione di test, solo per citarne alcuni.
+Molti comandi di menu sono disponibili dal menu di scelta rapida visualizzato con il pulsante destro del mouse su varie voci **Esplora soluzioni**. Questi comandi includono la compilazione di un progetto, la gestione dei pacchetti NuGet, l'aggiunta di un riferimento, la ridenominazione di un file e l'esecuzione di test, solo per citarne alcuni.
 
 Per i progetti ASP.NET Core, è possibile personalizzare la modalità di annidamento dei file in **Esplora soluzioni**. Per altre informazioni, vedere [Personalizzare l'annidamento file in Esplora soluzioni](file-nesting-solution-explorer.md).
 
 > [!TIP]
-> Se si è chiuso Esplora soluzioni e si vuole aprirlo di nuovo, scegliere **Visualizza**  >  **Esplora soluzioni** dalla barra dei menu o premere **CTRL** + **ALT** + **L**. Se le schede laterali sono state chiuse e si desidera ripristinarle nei percorsi predefiniti, scegliere **finestra**  >  **Reimposta layout finestra** dalla barra dei menu.
+> Se è stato chiuso Esplora soluzioni e si vuole aprirlo di nuovo, scegliere Visualizza Esplora soluzioni dalla barra dei menu o  >   premere **CTRL** + **ALT** + **L**. Se sono state chiuse le schede laterali e si vuole ripristinarne le posizioni predefinite, scegliere Window  >  **Reset Window Layout (Reimposta** layout finestra) dalla barra dei menu.
 
 > [!NOTE]
-> Per visualizzare le immagini e le icone dell'applicazione visualizzate in Visual Studio, scaricare la [**libreria di immagini di Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
+> Per visualizzare le immagini e le icone dell'applicazione visualizzate in Visual Studio, scaricare la [**raccolta Visual Studio immagini.**](https://www.microsoft.com/download/details.aspx?id=35825)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -116,5 +116,5 @@ Per i progetti ASP.NET Core, è possibile personalizzare la modalità di annidam
 - [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)
 - [Soluzioni filtrate in Visual Studio](filtered-solutions.md)
 - [Portabilità, migrazione e aggiornamento dei progetti](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
-- [Risorse per la risoluzione degli errori dell'IDE di Visual Studio](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
+- [Risorse per la risoluzione dei Visual Studio ide](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 - [Progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/projects-and-solutions)

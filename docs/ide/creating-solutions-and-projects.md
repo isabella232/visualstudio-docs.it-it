@@ -1,8 +1,8 @@
 ---
-title: Usare soluzioni e progetti
-description: Informazioni sulla differenza tra soluzioni e progetti e su come usarli in Visual Studio.
+title: Creare &amp; soluzioni Visual Studio per i &amp; progetti
+description: Informazioni sulla differenza tra soluzioni e progetti e su come usarle in Visual Studio.
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/23/2020
+ms.date: 06/14/2021
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
@@ -16,25 +16,27 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f702908c60b08ac1eaae5aa1f941a2f56eaf8fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f253492e5c1b3bf0c27448d59d754260e9e70912
+ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956802"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112066943"
 ---
-# <a name="work-with-solutions-and-projects"></a>Usare soluzioni e progetti
+# <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Creare, usare ed eliminare progetti Visual Studio soluzioni
+
+In questo articolo si apprenderà come creare e usare progetti Visual Studio da zero per archiviare gli artefatti necessari per compilare le app.  Se non si ha familiarità con i progetti in Visual Studio, vedere questa panoramica di [Progetti e soluzioni.](solutions-and-projects-in-visual-studio.md)  Per informazioni su come creare rapidamente un progetto da un modello, vedere [Creare un progetto da un modello.](create-new-project.md)
 
 I *progetti* contengono gli elementi necessari per compilare l'app in Visual Studio, ad esempio file di codice sorgente, bitmap, icone e riferimenti a componenti e servizi. Quando si crea un nuovo progetto, Visual Studio crea una *soluzione* per ospitarlo. Se necessario è quindi possibile aggiungere altri progetti nuovi o esistenti alla soluzione. Le soluzioni possono anche contenere file non connessi ad alcun progetto specifico.
 
-![Diagramma che mostra la gerarchia della soluzione e del progetto.](./media/vside-proj-soln.png)
+![Diagramma che mostra la gerarchia di soluzioni e progetti.](./media/vside-proj-soln.png)
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Creare progetti in Visual Studio per Mac](/visualstudio/mac/create-new-projects).
 
 È possibile visualizzare le soluzioni e i progetti in una finestra degli strumenti denominata **Esplora soluzioni**. La schermata seguente visualizza un esempio di soluzione in **Esplora soluzioni** (**BikeSharing.Xamarin-UWP**) contenente due progetti: **BikeSharing.Clients.Core** e **BikeSharing.Clients.Windows**. Ogni progetto contiene più file, cartelle e riferimenti. Il nome del progetto in grassetto indica il *progetto di avvio*, ovvero il progetto che viene avviato quando si esegue l'app. È possibile specificare quale progetto è il progetto di avvio.
 
-![Screenshot di Esplora soluzioni con due progetti.](./media/vside-solution-explorer-projects.png)
+![Screenshot della Esplora soluzioni con due progetti.](./media/vside-solution-explorer-projects.png)
 
 È possibile creare autonomamente un progetto aggiungendo i file necessari. In alternativa Visual Studio offre una selezione di modelli di progetto per semplificare le fasi iniziali. Se si usa un modello è possibile ottenere un progetto con tutti gli elementi essenziali per il tipo di progetto scelto e rinominare i file o aggiungere codice nuovo o esistente e altre risorse in base alle esigenze.
 
@@ -42,27 +44,27 @@ In ogni caso non è obbligatorio usare le soluzioni e i progetti per sviluppare 
 
 ## <a name="create-a-project-from-a-project-template"></a>Creare un progetto da un modello di progetto
 
-Per informazioni su come selezionare un modello per creare un nuovo progetto, vedere [creare un nuovo progetto in Visual Studio](create-new-project.md). Per un esempio di un progetto e di una soluzione creata da zero, sono disponibili istruzioni dettagliate e codice di esempio, vedere [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md).
+Per informazioni su come selezionare un modello per creare un nuovo progetto, vedere [Creare un nuovo progetto in Visual Studio](create-new-project.md). Per un esempio di progetto e soluzione creati da zero, con istruzioni dettagliate e codice di esempio, vedere Introduzione a progetti [e soluzioni.](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="create-a-project-from-existing-code-files"></a>Creare un progetto da file di codice esistenti
 
 Se è presente una raccolta di file di origine di codice è possibile aggiungerli facilmente a un progetto.
 
-1. Nel menu selezionare **file**  >  **nuovo**  >  **progetto da codice esistente**.
+1. Scegliere File   >  **New** Project From  >  **Existing Code (File nuovo progetto da codice esistente) dal** menu.
 
-1. Nella procedura guidata **Crea progetto da file di codice esistenti** selezionare il tipo di progetto desiderato nella casella di riepilogo a discesa **specificare il tipo di progetto che si desidera creare** e quindi selezionare il pulsante **Avanti** .
+1. Nella **procedura** guidata Crea progetto da file di codice esistenti selezionare il tipo di progetto desiderato nella casella di riepilogo a discesa Quale tipo di progetto si vuole **creare?** e quindi selezionare il **pulsante** Avanti.
 
-1. Nella procedura guidata, passare al percorso dei file e immettere un nome per il nuovo progetto nella casella **Nome**. Al termine, selezionare il pulsante **fine** .
+1. Nella procedura guidata, passare al percorso dei file e immettere un nome per il nuovo progetto nella casella **Nome**. Al termine, selezionare il **pulsante** Fine.
 
 > [!NOTE]
 > Questa opzione risulta più adatta per raccolte di file relativamente semplici. Attualmente sono supportati solo i tipi di progetto C++, Apache Cordova, Visual Basic e C#.
 
 ## <a name="add-files-to-a-solution"></a>Aggiungere file a una soluzione
 
-Se è presente un file che può essere usato per più progetti, ad esempio un file Leggimi per la soluzione o altri file che appartengono al livello della soluzione più che a un progetto specifico, è possibile aggiungerli alla soluzione stessa. Per aggiungere un elemento a una soluzione, fare clic con il pulsante destro del mouse sul menu di scelta rapida del nodo della soluzione in **Esplora soluzioni**, scegliere **Aggiungi**  >  **nuovo elemento** o **Aggiungi**  >  **elemento esistente**.
+Se è presente un file che può essere usato per più progetti, ad esempio un file Leggimi per la soluzione o altri file che appartengono al livello della soluzione più che a un progetto specifico, è possibile aggiungerli alla soluzione stessa. Per aggiungere un elemento a una soluzione, nel menu di scelta rapida (clic con il pulsante destro del mouse) del **nodo** della soluzione in Esplora soluzioni selezionare Aggiungi nuovo elemento o Aggiungi  >     >  **elemento esistente.**
 
 > [!TIP]
-> Un file di soluzione è una struttura per organizzare i progetti in Visual Studio. Contiene lo stato di tali informazioni in due file: un file con *estensione sln* (basato su testo, condiviso) e un file con *estensione suo* (Binary, hidden, specifico per l'utente). Pertanto, una soluzione non è un elemento da copiare e rinominare; al contrario, è preferibile creare una nuova soluzione e quindi aggiungervi elementi esistenti.
+> Un file di soluzione è una struttura per organizzare i progetti in Visual Studio. Contiene lo stato di queste informazioni in due file: un file con estensione *sln* (basato su testo, condiviso) e un file *suo* (binario, nascosto, opzioni di soluzione specifiche dell'utente). Di conseguenza, una soluzione non deve essere copiata e rinominata. al contrario, è meglio creare una nuova soluzione e quindi aggiungerne elementi esistenti.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Creare un progetto .NET che usa una specifica versione di .NET Framework
 
@@ -70,9 +72,9 @@ Quando si crea un progetto .NET Framework è possibile indicare la versione spec
 
 ::: moniker range="vs-2017"
 
-Per specificare una versione di .NET Framework, selezionare il menu a discesa **Framework** nella finestra di dialogo **nuovo progetto** .
+Per specificare una .NET Framework, selezionare il menu a discesa **Framework** nella **finestra di dialogo** Nuovo progetto.
 
-![Screenshot dell'elenco a discesa Framework nella finestra di dialogo nuovo progetto.](./media/vside-newproject-framework.png)
+![Screenshot dell'elenco a discesa Framework nella finestra di dialogo Nuovo progetto.](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > Per l'accesso alle versioni di .NET Framework precedenti a .NET Framework 4 è necessario che nel computer sia installato .NET Framework 3.5.
@@ -81,9 +83,9 @@ Per specificare una versione di .NET Framework, selezionare il menu a discesa **
 
 ::: moniker range=">=vs-2019"
 
-Per specificare una versione di .NET Framework, selezionare il menu a discesa **Framework** nella pagina **Crea un nuovo progetto** .
+Per specificare una .NET Framework, selezionare il menu a discesa **Framework** nella pagina **Crea un nuovo** progetto.
 
-![Screenshot del selettore del Framework nella finestra di dialogo "Configura nuovo progetto".](media/vs-2019/configure-new-project-framework.png)
+![Screenshot del selettore Framework nella finestra di dialogo "Configura nuovo progetto".](media/vs-2019/configure-new-project-framework.png)
 
 ::: moniker-end
 
@@ -93,15 +95,15 @@ Per specificare una versione di .NET Framework, selezionare il menu a discesa **
 
 ### <a name="to-create-an-empty-solution"></a>Per creare una soluzione vuota
 
-1. Nella barra dei menu selezionare **file**  >  **nuovo**  >  **progetto**.
+1. Nella barra dei menu selezionare **File** New Project  >  **(File nuovo**  >  **progetto).**
 
 ::: moniker range="vs-2017"
 
-2. Nel riquadro sinistro (**modelli**) selezionare **altri tipi di progetto** > **soluzioni di Visual Studio** nell'elenco espanso.
+2. Nel riquadro sinistro (**Modelli**) selezionare Altri tipi **di** progetto Visual Studio > **soluzioni nell'elenco** espanso.
 
 3. Nel riquadro centrale selezionare **Soluzione vuota**.
 
-4. Immettere i valori **nome** e **percorso** per la soluzione e quindi fare clic su **OK**.
+4. Immettere **i** valori **di Nome** e Percorso per la soluzione e quindi selezionare **OK.**
 
 ::: moniker-end
 
@@ -111,7 +113,7 @@ Per specificare una versione di .NET Framework, selezionare il menu a discesa **
 
 3. Selezionare il modello **Soluzione vuota** e quindi fare clic su **Avanti**.
 
-4. Immettere i valori **nome** e **percorso** per la soluzione e quindi selezionare **Crea**.
+4. Immettere **i** valori **di Nome** e Percorso per la soluzione e quindi selezionare **Crea.**
 
 ::: moniker-end
 
@@ -127,28 +129,28 @@ Come detto in precedenza, è anche possibile aprire file di codice senza usare u
 
 Se si crea un progetto basato su .NET senza specificare un percorso su disco, il progetto è temporaneo. I progetti temporanei consentono di acquisire familiarità con i progetti .NET. In qualsiasi momento mentre si lavora con il progetto temporaneo è possibile scegliere di salvarlo o rimuoverlo.
 
-Per creare un progetto temporaneo, passare prima a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **generale** e deselezionare la casella di controllo **Salva nuovi progetti al momento della creazione** . Aprire la finestra di dialogo **Nuovo progetto** come di consueto.
+Per creare un progetto temporaneo, passare prima di tutto a Strumenti Opzioni Progetti e soluzioni Generale e deselezionare la casella di controllo Salva nuovi progetti al momento  >    >    >   **della** creazione. Aprire la finestra di dialogo **Nuovo progetto** come di consueto.
 
 ::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>Eliminare una soluzione, un progetto o un elemento
 
-È possibile utilizzare il menu di scelta rapida con il pulsante destro del mouse per eliminare o rimuovere soluzioni, progetti o elementi in Visual Studio, ma che li rimuove solo dalla soluzione o dal progetto corrente.
+È possibile usare il menu di scelta rapida per eliminare o rimuovere soluzioni, progetti o elementi in Visual Studio, ma in questo modo vengono rimossi solo dalla soluzione o dal progetto corrente.
 
-Per eliminare definitivamente una soluzione o altri componenti dal sistema, usare **Esplora file** in Windows per eliminare la cartella che contiene i file della soluzione con estensione *sln* e *suo* . Prima di eliminare una soluzione, è consigliabile eseguire il backup dei progetti e dei file nel caso in cui siano necessari.
+Per eliminare definitivamente una soluzione o altri componenti dal sistema, usare Esplora file in Windows per eliminare la cartella che contiene i file di soluzione **con** estensione *sln* e *suo.* Prima di eliminare una soluzione, è consigliabile eseguire il backup dei progetti e dei file nel caso in cui sia necessario di nuovo.
 
 > [!NOTE]
-> Il file con *estensione suo* è un file nascosto che non viene visualizzato nelle impostazioni predefinite di Esplora file. Per visualizzare i file nascosti, nel menu **Visualizza** di Esplora file selezionare la casella di controllo **Elementi nascosti**.
+> Il file con estensione *suo* è un file nascosto che non viene visualizzato nelle impostazioni Esplora file predefinite. Per visualizzare i file nascosti, nel menu **Visualizza** di Esplora file selezionare la casella di controllo **Elementi nascosti**.
 
 ### <a name="permanently-delete-a-solution"></a>Eliminare una soluzione in modo permanente
 
-Per accedere a Esplora file in Windows, è possibile usare Esplora soluzioni in Visual Studio. Ecco come.
+È possibile accedere Esplora file in Windows usando Esplora soluzioni in Visual Studio. Ecco come.
 
-1. In **Esplora soluzioni** scegliere **Apri cartella in Esplora file** dal menu di scelta rapida (menu di scelta rapida) della soluzione che si desidera eliminare.
+1. In **Esplora soluzioni**, nel menu di scelta rapida della soluzione che si vuole eliminare fare clic con il pulsante destro del **mouse, selezionare Apri cartella Esplora file**.
 
 1. In Esplora file spostarsi in alto di un livello.
 
-1. Selezionare la cartella che contiene la soluzione, quindi premere il tasto **Canc** .
+1. Selezionare la cartella che contiene la soluzione e quindi premere **CANC.**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -157,4 +159,4 @@ Per accedere a Esplora file in Windows, è possibile usare Esplora soluzioni in 
 - [Soluzioni filtrate in Visual Studio](filtered-solutions.md)
 - [Repository open source Microsoft su GitHub](https://github.com/Microsoft)
 - [Esempi di codice per sviluppatori](https://code.msdn.microsoft.com/)
-- [Risorse per la risoluzione degli errori dell'IDE di Visual Studio](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
+- [Risorse per la risoluzione dei Visual Studio ide](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
