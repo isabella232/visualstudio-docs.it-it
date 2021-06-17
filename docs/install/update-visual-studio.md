@@ -1,9 +1,9 @@
 ---
 title: Aggiornare Visual Studio
 titleSuffix: ''
-description: Informazioni dettagliate su come aggiornare Visual Studio alla versione più recente.
+description: Informazioni su come aggiornare Visual Studio alla versione più recente, passo dopo passo.
 ms.date: 04/06/2021
-ms.custom: seodec18
+ms.custom: acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 9244c9e234c56b058dbfe92a4ef6a10d8c9c702d
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547505"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113192"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aggiornare Visual Studio alla versione più recente
 
@@ -33,7 +33,7 @@ ms.locfileid: "106547505"
 Se invece si vuole provare la versione più recente, è consigliabile scaricare e installare [Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
 
 > [!IMPORTANT]
-> Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per ulteriori informazioni, vedere [autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).
+> Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per altre informazioni, vedere [Autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).
 >
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Aggiornare Visual Studio per Mac](/visualstudio/mac/update).
@@ -57,11 +57,11 @@ Quando è disponibile un aggiornamento, in Visual Studio viene visualizzato un f
 
 1. Quando viene visualizzata la finestra di dialogo **Aggiorna** scegliere **Aggiorna adesso**.
 
-    ![Aggiornare Visual Studio 2017 usando la finestra di dialogo Aggiorna dall'hub notifiche](media/vs-update-now-from-notifications-hub.png "La finestra di dialogo Aggiorna dall'hub notifiche in Visual Studio")
+    ![Aggiornare Visual Studio 2017 usando la finestra di dialogo Aggiorna dall'hub notifiche](media/vs-update-now-from-notifications-hub.png "Finestra di dialogo Aggiorna dall'hub notifiche in Visual Studio")
 
      Se si apre una finestra di dialogo di controllo dell'accesso utente, scegliere **Sì**. È possibile che venga visualizzata brevemente una finestra di dialogo "Attendere" e quindi viene aperto il programma di installazione di Visual Studio per avviare l'aggiornamento.
 
-     ![La nuova esperienza Programma di installazione di Visual Studio nella versione 15,6](media/visual-studio-15dot6-installer.png "La nuova esperienza Programma di installazione di Visual Studio nella versione 15,6")
+     ![La nuova Programma di installazione di Visual Studio nella versione 15.6](media/visual-studio-15dot6-installer.png "La nuova Programma di installazione di Visual Studio nella versione 15.6")
 
      L'aggiornamento continua. Al termine, verrà riavviato Visual Studio.
 
@@ -74,9 +74,9 @@ Quando è disponibile un aggiornamento, in Visual Studio viene visualizzato un f
 
 1. Salvare il lavoro.
 
-1. Scegliere **Guida** > **Controlla la disponibilità di aggiornamenti**.
+1. Scegliere **Verifica** > **della guida per gli aggiornamenti**.
 
-     ![Nuovo menu della Guida in Visual Studio versione 15,6](media/vs-help-menu-check-for-updates.png "Nuovo menu della Guida in Visual Studio versione 15,6")
+     ![Il nuovo menu ? in Visual Studio versione 15.6](media/vs-help-menu-check-for-updates.png "Il nuovo menu ? in Visual Studio versione 15.6")
 
 1. Quando viene visualizzata la finestra di dialogo **Aggiorna** scegliere **Aggiorna adesso**.
 
@@ -112,22 +112,22 @@ Se si usa una versione precedente, di seguito viene descritto come eseguire l'ag
 
 1. Quando sono disponibili aggiornamenti, in Visual Studio viene visualizzato un flag di notifica corrispondente.
 
-   ![Aggiorna flag di notifica di Visual Studio 2017](media/notification-flag.png "Flag di notifica dell'aggiornamento in Visual Studio")
+   ![Flag di Visual Studio 2017](media/notification-flag.png "Flag di notifica di aggiornamento in Visual Studio")
 
    Scegliere il flag di notifica per aprire l'hub **di notifica**.
 
-   ![Aggiornamento di Visual Studio 2017 nell'hub di notifica](media/notifications-hub.png "Aggiornamento di Visual Studio 2017 nell'hub di notifica")
+   ![Visual Studio 2017 nell'hub di notifica](media/notifications-hub.png "Visual Studio 2017 nell'hub di notifica")
 
       > [!TIP]
       > Un aggiornamento per un'edizione di Visual Studio 2017 è cumulativo, quindi scegliere sempre di installare quello con il numero di versione più recente.
 
 1. Scegliere **"Visual Studio Update" è disponibile**. Verrà aperta la finestra di dialogo **Estensioni e aggiornamenti**.
 
-   ![Scegliere l'aggiornamento di Visual Studio](media/notifications-hub-select.png "Scegliere l'aggiornamento di Visual Studio")
+   ![Scegliere Visual Studio aggiornamento](media/notifications-hub-select.png "Scegliere Visual Studio aggiornamento")
 
 1. Nella finestra di dialogo **Estensioni e aggiornamenti** scegliere il pulsante **Aggiorna**.
 
-   ![Scegliere Aggiorna nella finestra di dialogo estensioni e aggiornamenti](media/notifications-extensions-and-updates.png "Finestra di dialogo estensioni e aggiornamenti in Visual Studio")
+   ![Scegliere Aggiorna nella finestra di dialogo Estensioni e aggiornamenti](media/notifications-extensions-and-updates.png "Finestra di dialogo Estensioni e aggiornamenti in Visual Studio")
 
 #### <a name="more-about-visual-studio-notifications"></a>Altre informazioni sulle notifiche di Visual Studio
 
@@ -139,7 +139,7 @@ Visual Studio invia una notifica all'utente quando è disponibile un aggiornamen
 
 Scegliere il flag di notifica per aprire l'hub di **notifica** e quindi scegliere le notifiche su cui si vuole agire. In alternativa, è possibile scegliere di ignorare o eliminare una notifica.
 
- ![Visualizzare un messaggio informativo o facoltativo nell'hub di notifica](media/notification-flag-optional.png "Flag di notifica facoltativo o messaggio informativo in Visual Studio")
+ ![Visualizzare un messaggio informativo o facoltativo nell'hub di notifica](media/notification-flag-optional.png "Flag di notifica del messaggio facoltativo o informativo in Visual Studio")
 
 Se si sceglie di ignorare una notifica, questa non viene più visualizzata da Visual Studio. Se si vuole reimpostare l'elenco delle notifiche ignorate, scegliere il pulsante **Impostazioni** nell'hub Notifiche.
 
@@ -166,10 +166,10 @@ Se si sceglie di ignorare una notifica, questa non viene più visualizzata da Vi
 
 È consigliabile eseguire l'aggiornamento alla [versione più recente](/visualstudio/releases/2019/release-notes/) di Visual Studio 2019, in modo da avere sempre a disposizione le funzionalità, le correzioni e i miglioramenti più recenti.
 
-Se Visual Studio 2019 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente. Se attualmente si usa una versione diversa di Visual Studio, è possibile installare le [versioni affiancate di Visual Studio](../install/install-visual-studio-versions-side-by-side.md)o [disinstallare le versioni precedenti di Visual Studio](../install/uninstall-visual-studio.md).
+Se non è già stato installato Visual Studio 2019, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente. Se attualmente si usa una versione diversa di Visual Studio, è possibile installare Visual Studio versioni [side-by-side](../install/install-visual-studio-versions-side-by-side.md)o disinstallare le versioni precedenti [di Visual Studio](../install/uninstall-visual-studio.md).
 
 > [!IMPORTANT]
-> Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per ulteriori informazioni, vedere [autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).
+> Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per altre informazioni, vedere [Autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).
 >
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Aggiornare Visual Studio per Mac](/visualstudio/mac/update).
@@ -182,7 +182,7 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
    Nel menu Start di Windows è possibile cercare "programma di installazione".
 
-   ![Programma di installazione di Visual Studio](media/vs-2019/visual-studio-installer.png "Cerca il Programma di installazione di Visual Studio")
+   ![Programma di installazione di Visual Studio](media/vs-2019/visual-studio-installer.png "Cercare il Programma di installazione di Visual Studio")
 
    Prima di continuare, potrebbe essere necessario aggiornare il programma di installazione. In questo caso, seguire i prompt.
 
@@ -190,7 +190,7 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
    Se ad esempio è stato precedentemente installato Visual&nbsp;Studio Community&nbsp;2019 ed è disponibile un aggiornamento, nel programma di installazione verrà visualizzato un messaggio **Aggiornamento disponibile**.
 
-     ![Selezionare l'edizione di Visual Studio 2019 che si desidera aggiornare](media/vs-2019/vs-installer-update-visual-studio-community.png "Selezionare l'edizione di Visual Studio 2019 che si desidera aggiornare")
+     ![Selezionare l'edizione Visual Studio 2019 da aggiornare](media/vs-2019/vs-installer-update-visual-studio-community.png "Selezionare l'edizione Visual Studio 2019 da aggiornare")
 
 1. Scegliere **Aggiorna** per installare gli aggiornamenti.
 
@@ -200,7 +200,7 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
    Se non viene richiesto di riavviare il computer, scegliere **Avvia** per avviare Visual Studio dal programma di installazione.
 
-    ![Selezionare il pulsante Launch (Avvia) per avviare Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "Selezionare il pulsante Launch (Avvia) per avviare Visual Studio")
+    ![Selezionare il pulsante Avvia per avviare Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "Selezionare il pulsante Avvia per avviare Visual Studio")
 
 ## <a name="use-the-ide"></a>Usare l'IDE
 
@@ -218,15 +218,15 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
     Viene aperto Visual Studio. Nell'IDE viene visualizzato un messaggio **Aggiornamento Visual Studio 2019**.
 
-    ![Messaggio "Visual Studio 2019 Update" nell'IDE](media/vs-2019/update-visual-studio-ide-message.png "Messaggio "Visual Studio 2019 Update" nell'IDE")
+    ![Messaggio di Visual Studio 2019 nell'IDE](media/vs-2019/update-visual-studio-ide-message.png "Messaggio di Visual Studio 2019 nell'IDE")
 
 1. Nel messaggio **Aggiornamento Visual Studio 2019** scegliere **Visualizza dettagli**.
 
-   ![Scegliere il pulsante Visualizza dettagli nel messaggio di aggiornamento dell'IDE di Visual Studio 2019](media/vs-2019/update-visual-studio-ide-view-details.png "Scegliere il pulsante Visualizza dettagli nel messaggio di aggiornamento di Visual Studio 2019")
+   ![Scegliere il pulsante Visualizza dettagli nel messaggio di aggiornamento dell'IDE Visual Studio 2019](media/vs-2019/update-visual-studio-ide-view-details.png "Scegliere il pulsante Visualizza dettagli nel messaggio di aggiornamento Visual Studio 2019")
 
 1. Nella finestra di dialogo **Aggiornamento scaricato e pronto per l'installazione** scegliere **Aggiorna**.
 
-     ![Scegliere il pulsante Aggiorna nella finestra di dialogo "aggiornamento scaricato e pronto per l'installazione"](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "Scegliere il pulsante Aggiorna nella finestra di dialogo "aggiornamento scaricato e pronto per l'installazione"")
+     ![Scegliere il pulsante Aggiorna nella finestra di dialogo "Aggiornamento scaricato e pronto per l'installazione"](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "Scegliere il pulsante Aggiorna nella finestra di dialogo &quot;Aggiornamento scaricato e pronto per l'installazione&quot;")
 
    Visual Studio viene aggiornato, chiuso e quindi riaperto.
 
@@ -234,14 +234,14 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
 1. Dalla barra dei menu scegliere **?** e quindi scegliere **Controlla aggiornamenti**.
 
-     ![Scegliere "Verifica disponibilità aggiornamenti" dal menu?.](media/vs-2019/vs-ide-check-updates-help-menu.png "Scegliere "Verifica disponibilità aggiornamenti" dal menu?.")
+     ![Scegliere "Controlla aggiornamenti" dal menu ?](media/vs-2019/vs-ide-check-updates-help-menu.png "Scegliere &quot;Controlla aggiornamenti&quot; dal menu ?")
 
     > [!NOTE]
-    > È anche possibile usare la casella di ricerca nell'IDE per controllare se sono disponibili aggiornamenti. Premere **CTRL** + **Q**, digitare "Verifica disponibilità aggiornamenti", quindi scegliere il risultato della ricerca corrispondente.
+    > È anche possibile usare la casella di ricerca nell'IDE per controllare se sono disponibili aggiornamenti. Premere  + **CTRL+Q,** digitare "check for updates" e quindi scegliere il risultato della ricerca corrispondente.
 
 1. Nella finestra di dialogo **Aggiornamento disponibile** scegliere **Aggiorna**.
 
-     ![Scegliere il pulsante Aggiorna nella finestra di dialogo ' Aggiorna disponibilità'](media/vs-2019/update-visual-studio-community-from-ide.png "Scegliere il pulsante Aggiorna nella finestra di dialogo ' Aggiorna disponibilità'")
+     ![Scegliere il pulsante Aggiorna nella finestra di dialogo "Aggiorna disponibile"](media/vs-2019/update-visual-studio-community-from-ide.png "Scegliere il pulsante Aggiorna nella finestra di dialogo &quot;Aggiorna disponibile&quot;")
 
    Visual Studio viene aggiornato, chiuso e quindi riaperto.
 
@@ -251,7 +251,7 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
 1. Scegliere l'icona di notifica nell'angolo in basso a destra dell'IDE di Visual Studio per aprire l'hub **Notifiche**.
 
-   ![Icona di notifica nell'IDE di Visual Studio](media/vs-2019/notification-bar.png "Icona di notifica nell'IDE di Visual Studio")
+   ![Icona di notifica nell'IDE Visual Studio](media/vs-2019/notification-bar.png "Icona di notifica nell'IDE Visual Studio")
 
 1. Nell'**hub Notifiche** scegliere l'aggiornamento che si vuole installare e quindi scegliere **Visualizza dettagli**.
 
@@ -277,7 +277,7 @@ Esistono due modalità di installazione tra cui scegliere:
 
 Ecco come:
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Sulla barra dei menu scegliere **Opzioni** > **strumenti**.
 
 2. Espandere **Ambiente** e quindi scegliere **Aggiornamenti prodotto**.
 
@@ -289,7 +289,7 @@ Ecco come:
 
 ## <a name="administrator-updates"></a>Aggiornamenti dell'amministratore 
 
-Se si fa parte di un'organizzazione che centralizza la gestione delle installazioni software, l'amministratore dell'organizzazione può causare l'aggiornamento di Visual Studio nel computer. Per altre informazioni su come controllare o configurare i tipi di aggiornamenti che il computer è in grado di accettare, vedere [uso di Configuration Manager per distribuire gli aggiornamenti di Visual Studio](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates). 
+Se si fa parte di un'organizzazione che centralizza la gestione delle installazioni software, l'amministratore dell'organizzazione può Visual Studio l'aggiornamento nel computer. Per altre informazioni su come controllare o configurare i tipi di aggiornamenti che il computer può accettare, vedere Using [Gestione configurazione to deploy Visual Studio Updates](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates). 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

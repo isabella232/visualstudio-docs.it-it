@@ -1,7 +1,7 @@
 ---
 title: Funzionalità avanzate
 description: Informazioni sulle funzionalità avanzate che potrebbero essere più appropriate per gli sviluppatori esperti o per gli sviluppatori che hanno già familiarità con Visual Studio.
-ms.custom: SEO-VS-2020
+ms.custom: acquisition
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51b25ff5f5f71291bb1aa1fd006b60566a576d7f
-ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
+ms.openlocfilehash: 843c6f66b833c8f68dad8722c6d32a1975d07913
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110687608"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113011"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 

@@ -1,10 +1,10 @@
 ---
-title: Modificare Visual Studio carichi di lavoro, componenti & Language Pack
+title: Modificare Visual Studio carichi di lavoro, componenti, & Language Pack
 titleSuffix: ''
 description: Informazioni dettagliate su come modificare Visual Studio.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperf-fy21q2
+ms.custom: acquisition
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
-ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
+ms.openlocfilehash: 3f4040023dd023db351571482ac2a17c18b46e06
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109501772"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112934"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modificare Visual Studio carichi di lavoro, componenti e Language Pack
 
@@ -43,11 +43,11 @@ Oltre ad aver semplificato la personalizzazione di Visual Studio in base alle at
 
 + Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per altre informazioni, vedere [Autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
-+ Le procedure seguenti presuppongono che l'utente abbia una connessione Internet. Per altre informazioni su come modificare un'[installazione offline](create-an-offline-installation-of-visual-studio.md) di Visual Studio creata in precedenza, vedere sia la pagina [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md) che la pagina [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md).
++ Le procedure seguenti presuppongono che si abbia una connessione Internet. Per altre informazioni su come modificare un'[installazione offline](create-an-offline-installation-of-visual-studio.md) di Visual Studio creata in precedenza, vedere sia la pagina [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md) che la pagina [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md).
 
 ## <a name="launch-the-installer"></a>Avviare il programma di installazione
 
-Per apportare modifiche all'installazione, è necessario avviare il programma di Visual Studio installazione.
+Per apportare modifiche all'installazione, è necessario avviare il Visual Studio di installazione.
 
 ::: moniker range="vs-2017"
 
@@ -60,7 +60,7 @@ Per apportare modifiche all'installazione, è necessario avviare il programma di
      >[!TIP]
      >In alcuni computer il programma di installazione di Visual Studio potrebbe trovarsi sotto la lettera **"M"** come **Microsoft Visual Studio: programma di installazione**.<br/><br/> In alternativa, è possibile trovare il programma di installazione di Visual Studio nel percorso seguente: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Aprire il programma di installazione e quindi scegliere **Modifica.**
+1. Aprire il programma di installazione e quindi scegliere **Modifica**.
 
      ![Avviare o modificare Visual Studio](media/modify-visual-studio.png "Modificare Visual Studio 2017")
 
@@ -91,7 +91,7 @@ Per apportare modifiche all'installazione, è necessario avviare il programma di
      ![Scegliere Visual Studio edition e quindi modificare](media/vs-2019/vs-installer-modify.png "Scegliere Visual Studio edizione 2019 e quindi modificare")
 
      > [!IMPORTANT]
-     > Se è presente un aggiornamento in sospeso, il pulsante Modifica si trova in una posizione diversa. In questo modo, è possibile Visual Studio senza aggiornarlo, se necessario. Scegliere **Altro** e quindi **Modifica.**
+     > Se è presente un aggiornamento in sospeso, il pulsante Modifica si trova in una posizione diversa. In questo modo, è possibile Visual Studio senza aggiornarlo, se necessario. Scegliere **Altro** e quindi **Modifica**.
      >
      > ![Aggiornare o modificare Visual Studio](media/vs-2019/modify-update-visual-studio.png "Aggiornare o modificare Visual Studio 2019")
 
@@ -103,7 +103,7 @@ Per apportare modifiche all'installazione, è necessario avviare il programma di
 
  [I carichi](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
 
-1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi di** lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
+1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
    In alternativa, se non si vogliono usare i carichi di lavoro per personalizzare l'installazione di Visual Studio, scegliere la scheda **Singoli** componenti e selezionare i componenti desiderati e quindi seguire le istruzioni.
 
@@ -111,13 +111,13 @@ Per apportare modifiche all'installazione, è necessario avviare il programma di
 
 1. Scegliere se accettare l'opzione predefinita **Installa durante il download** o selezionare l'opzione **Scarica tutto, quindi installa**.
 
-    ![Visual Studio di installazione di Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di installare durante il download o per scaricare prima e installare in un secondo momento")
+    ![Visual Studio opzioni di installazione di 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di installare durante il download o per scaricare prima e installare in un secondo momento")
 
     L'opzione "Scarica tutto, quindi installa" è utile se si preferisce scaricare prima tutto il software e quindi installarlo in un secondo momento.
 
 1. Scegliere **Modifica**.
 
-1. Se lo si desidera, scegliere **la scheda** Carichi di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
+1. Se lo si desidera, scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
 
 1. Dopo aver installato i nuovi carichi di lavoro, **scegliere** Avvia dal Programma di installazione di Visual Studio per aprire Visual Studio.
@@ -129,7 +129,7 @@ Per apportare modifiche all'installazione, è necessario avviare il programma di
  I carichi di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
 
  > [!TIP]
->Per altre informazioni sui bundle di strumenti e componenti necessari per lo sviluppo, vedere l'Visual Studio [carichi di lavoro.](https://visualstudio.microsoft.com/vs/#workloads)
+>Per altre informazioni sui bundle di strumenti e componenti necessari per lo sviluppo, vedere Visual Studio [carichi di lavoro.](https://visualstudio.microsoft.com/vs/#workloads)
 
 1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
@@ -155,7 +155,7 @@ Per apportare modifiche all'installazione, è necessario avviare il programma di
 
 Per impostazione predefinita, il programma di installazione corrisponde alla lingua del sistema operativo quando viene eseguito per la prima volta. Tuttavia, è possibile modificare la lingua ogni volta che si vuole. 
 
-A tale scopo:
+A tale scopo, procedere nel seguente modo:
 1. Scegliere la **scheda Language Pack** nel Programma di installazione di Visual Studio.
 2. Selezionare la lingua preferita.
 3. Seguire le istruzioni.

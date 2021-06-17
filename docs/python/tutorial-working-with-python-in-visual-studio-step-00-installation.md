@@ -7,16 +7,16 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
-ms.custom: seodec18
+ms.custom: acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9767630fc7fee4eafce72e4eb99aa12db8469691
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c0b50a74566edfb00cba7efae68a3626ec8ec6d
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970543"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112846"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installare il supporto Python in Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "99970543"
 
     ![Carico di lavoro Sviluppo Python nel programma di installazione di Visual Studio](media/installation-python-workload.png)
 
-1. Per testare rapidamente il supporto di Python, avviare Visual Studio, premere **ALT** + **i** per aprire la finestra **interattiva di Python** e immettere `2+2` . Se non viene visualizzato l'output **4**, eseguire nuovamente la procedura.
+1. Per testare rapidamente il supporto python, Visual Studio, premere **ALT** I per aprire +  la finestra Interattiva di **Python** e immettere `2+2` . Se non viene visualizzato l'output **4**, eseguire nuovamente la procedura.
 
     ![Testare Python nella finestra interattiva](media/installation-interactive-test.png)
 

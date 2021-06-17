@@ -2,7 +2,7 @@
 title: Risoluzione dei problemi di installazione o di aggiornamento
 description: Non sempre tutto funziona correttamente. Se l'installazione o l'aggiornamento di Visual Studio ha esito negativo, questa pagina può risultare utile.
 ms.date: 06/24/2020
-ms.custom: seodec18
+ms.custom: acquisition
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,17 +15,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dc6d01d213e3966e364516c4a432dfdd978275c0
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 3d7dfacf00dbbb37946e4eaa8f1feb89b4059103
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295975"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112477"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio
 
 > [!IMPORTANT]
-> Se si è verificato un problema di installazione, è possibile chiedere assistenza. Viene offerta un'opzione di supporto per la [**chat di installazione**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in inglese).
+> Se si è verificato un problema di installazione, è possibile chiedere assistenza. È disponibile [**un'opzione di supporto**](https://visualstudio.microsoft.com/vs/support/#talktous) di chat di installazione (solo in lingua inglese).
 
 Questa Guida alla risoluzione dei problemi include istruzioni dettagliate per risolvere la maggior parte dei problemi di installazione.
 
@@ -47,15 +47,15 @@ Esistono alcuni problemi noti relativi al programma di installazione di Visual S
 
 ::: moniker-end
 
-### <a name="step-2---try-repairing-visual-studio"></a>Passaggio 2: provare a ripristinare Visual Studio
+### <a name="step-2---try-repairing-visual-studio"></a>Passaggio 2: Provare a ripristinare Visual Studio
 
-Riparazione corregge molti problemi di aggiornamento comuni. Per altre informazioni su quando e come usare la funzionalità di ripristino in Visual Studio, vedere [Repair Visual Studio](repair-visual-studio.md).
+Correzione corregge molti problemi comuni di aggiornamento. Per altre informazioni su quando e come usare la funzionalità di ripristino in Visual Studio, vedere [Ripristino Visual Studio](repair-visual-studio.md).
 
-### <a name="step-3---check-with-the-developer-community"></a>Passaggio 3: verificare con la community degli sviluppatori
+### <a name="step-3---check-with-the-developer-community"></a>Passaggio 3- Rivolgersi alla community degli sviluppatori
 
 Cercare il messaggio di errore nella [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8). È possibile che altri membri della community abbiano documentato una soluzione per il problema.
 
-### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Passaggio 4: eliminare la directory Programma di installazione di Visual Studio per correggere i problemi di aggiornamento
+### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Passaggio 4: Eliminare la directory Programma di installazione di Visual Studio per risolvere i problemi di aggiornamento
 
 Il programma di bootstrap dell'installazione di Visual Studio è un file eseguibile di piccole dimensioni che consente di installare gli elementi restanti del programma di installazione di Visual Studio. Eliminando i file del programma di installazione di Visual Studio ed eseguendo nuovamente il programma di bootstrap, è possibile risolvere alcuni problemi di aggiornamento.
 
@@ -66,7 +66,7 @@ Il programma di bootstrap dell'installazione di Visual Studio è un file eseguib
 
 1. Chiudere il programma di installazione di Visual Studio.
 2. Eliminare la directory del programma di installazione di Visual Studio. In genere, la directory è `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Eseguire il programma di bootstrap dell'installazione di Visual Studio. Il programma di bootstrap è disponibile nella cartella Download con un nome file che segue il modello `vs_[Visual Studio edition]__*.exe`. Se non si trova l'applicazione, è possibile scaricare il programma di avvio automatico passando alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) e facendo clic su **download** per l'edizione di Visual Studio. Eseguire il file eseguibile per reimpostare i metadati di installazione.
+3. Eseguire il programma di bootstrap dell'installazione di Visual Studio. Il programma di bootstrap è disponibile nella cartella Download con un nome file che segue il modello `vs_[Visual Studio edition]__*.exe`. Se non si trova l'applicazione, è possibile scaricare il programma di avvio automatico dalla pagina dei download [di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) e facendo clic su **Scarica** per l'edizione di Visual Studio. Eseguire il file eseguibile per reimpostare i metadati di installazione.
 4. Provare di nuovo a installare o ad aggiornare Visual Studio. Se i problemi di installazione persistono, andare al passaggio successivo.
 
 ::: moniker-end
@@ -75,12 +75,12 @@ Il programma di bootstrap dell'installazione di Visual Studio è un file eseguib
 
 1. Chiudere il programma di installazione di Visual Studio.
 2. Eliminare la directory del programma di installazione di Visual Studio. In genere, la directory è `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Eseguire il programma di bootstrap dell'installazione di Visual Studio. Il programma di bootstrap è disponibile nella cartella Download con un nome file che segue il modello `vs_[Visual Studio edition]__*.exe`. Se non si trova l'applicazione, è possibile scaricare il programma di avvio automatico passando alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) e facendo clic su **download** per l'edizione di Visual Studio. Eseguire il file eseguibile per reimpostare i metadati di installazione.
+3. Eseguire il programma di bootstrap dell'installazione di Visual Studio. Il programma di bootstrap è disponibile nella cartella Download con un nome file che segue il modello `vs_[Visual Studio edition]__*.exe`. Se non si trova l'applicazione, è possibile scaricare il programma di avvio automatico dalla pagina dei download [di Visual Studio](https://visualstudio.microsoft.com/downloads) e facendo clic su **Scarica** per l'edizione di Visual Studio. Eseguire il file eseguibile per reimpostare i metadati di installazione.
 4. Provare di nuovo a installare o ad aggiornare Visual Studio. Se i problemi di installazione persistono, andare al passaggio successivo.
 
 ::: moniker-end
 
-### <a name="step-5---report-a-problem"></a>Passaggio 5: segnalare un problema
+### <a name="step-5---report-a-problem"></a>Passaggio 5- Segnalare un problema
 
 In alcune situazioni, ad esempio quando sono presenti file danneggiati, può essere necessario esaminare i problemi singolarmente. Per consentirci di fornire il supporto ottimale, procedere come indicato di seguito:
 
@@ -104,28 +104,28 @@ In alcune situazioni, ad esempio quando sono presenti file danneggiati, può ess
 
 ::: moniker-end
 
-### <a name="step-6---run-installcleanupexe-to-remove-installation-files"></a>Passaggio 6: eseguire InstallCleanup.exe per rimuovere i file di installazione
+### <a name="step-6---run-installcleanupexe-to-remove-installation-files"></a>Passaggio 6: Eseguire InstallCleanup.exe per rimuovere i file di installazione
 
 Come ultima risorsa, è possibile [rimuovere Visual Studio](remove-visual-studio.md) per eliminare tutti i file di installazione e le informazioni sul prodotto.
 
 1. Seguire le istruzioni in [Remove Visual Studio](remove-visual-studio.md) (Rimuovere Visual Studio).
-2. Eseguire nuovamente il programma di avvio automatico descritto nel [passaggio 4: eliminare la directory programma di installazione di Visual Studio per correggere i problemi di aggiornamento](#step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Eseguire di nuovo il programma di avvio automatico descritto in Passaggio 4 - Eliminare la directory Programma di installazione di Visual Studio [per risolvere i problemi di aggiornamento.](#step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems)
 3. Provare di nuovo a installare o ad aggiornare Visual Studio.
 
-### <a name="step-7---contact-us-optional"></a>Passaggio 7: contattare Microsoft (facoltativo)
+### <a name="step-7---contact-us-optional"></a>Passaggio 7 - Contattaci (facoltativo)
 
 Se le procedure indicate sopra non consentono di installare o aggiornare correttamente Visual Studio, è possibile contattare il supporto tecnico tramite l'opzione di supporto [**Chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese) per ottenere ulteriore assistenza.
 
 ## <a name="offline-installations"></a>Installazioni offline
 
-Ecco una tabella dei problemi noti e delle soluzioni alternative che potrebbero essere utili quando si crea un' [installazione offline](create-an-offline-installation-of-visual-studio.md) e quindi si esegue l'installazione da un layout locale.
+Ecco una tabella di problemi noti e alcune soluzioni alternative che possono essere utili quando si crea un'installazione [offline](create-an-offline-installation-of-visual-studio.md) e quindi si esegue l'installazione da un layout locale.
 
 | Problema       | Elemento                   | Soluzione |
 | ----------- | ---------------------- | -------- |
-| Gli utenti non anno accesso ai file. | Autorizzazioni (ACL) | Assicurarsi di modificare le autorizzazioni (ACL) in modo da concedere l'accesso in lettura ad altri utenti  *prima* di condividere l'installazione offline. |
+| Gli utenti non anno accesso ai file. | Autorizzazioni (ACL) | Assicurarsi di modificare le autorizzazioni (ACL) in modo che concedino l'accesso in lettura ad altri utenti  *prima* di condividere l'installazione offline. |
 | Non è possibile installare nuovi carichi di lavoro, componenti o lingue.  | `--layout`  | Assicurarsi che sia disponibile l'accesso a Internet se si esegue l'installazione da un layout parziale e si selezionano carichi di lavoro, componenti o lingue non scaricati precedentemente nel layout parziale. |
 
-Per altre informazioni su come risolvere i problemi relativi all' [installazione di rete](create-a-network-installation-of-visual-studio.md), vedere [risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
+Per altre informazioni su come risolvere i problemi relativi [a](create-a-network-installation-of-visual-studio.md)un'installazione di rete, vedere Risolvere i problemi relativi alla rete quando si installa o si usa [Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="installation-logs"></a>Log di installazione
 
@@ -147,7 +147,7 @@ Per raccogliere i log:
 
 Se le soluzioni fornite in questa Guida alla risoluzione dei problemi non consentono di installare o aggiornare correttamente Visual Studio, è possibile usare l'opzione di supporto [**Chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese) per ottenere ulteriore assistenza.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Ripristinare Visual Studio](repair-visual-studio.md)
 * [Remove Visual Studio ](remove-visual-studio.md) (Rimuovere Visual Studio)
