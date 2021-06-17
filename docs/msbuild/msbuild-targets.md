@@ -1,6 +1,6 @@
 ---
 title: Destinazioni di MSBuild | Microsoft Docs
-description: Informazioni su come MSBuild usa le destinazioni per raggruppare le attività e consentire il factoring del processo di compilazione in unità più piccole.
+description: Informazioni su come MSBuild usa le destinazioni per raggruppare le attività e consentire il factored del processo di compilazione in unità più piccole.
 ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2958b45fc64383fde7d762d4c20887b3f58669d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294877e4884ae7b89f1e9d6f015c5c9213eba52d
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878396"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254823"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 
@@ -44,9 +44,19 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 </Target>
 ```
 
- Se `AfterBuild` viene eseguito, viene visualizzata solo la "seconda occorrenza", perché la seconda definizione di `AfterBuild` nasconde la prima.
+Se `AfterBuild` viene eseguito, visualizza solo "Seconda occorrenza", perché la seconda definizione di `AfterBuild` nasconde la prima.
 
- MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione diventa l'ultima definizione usata.
+MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione diventa l'ultima definizione usata. Se si tenta di ridefinire una destinazione, questa non avrà effetto se la destinazione predefinita viene definita in un secondo momento. Nel caso di progetti che usano un SDK, l'ordine di definizione non è necessariamente ovvio, poiché le importazioni per le destinazioni vengono aggiunte in modo implicito dopo la fine del file di progetto.
+
+Pertanto, per estendere il comportamento di una destinazione esistente, creare una nuova destinazione e specificare (o in base `BeforeTargets` `AfterTargets` alle esigenze) come indicato di seguito:
+
+```xml
+<Target Name="MessageBeforePublish" BeforeTargets="BeforePublish">
+  <Message Text="BeforePublish" Importance="high" />
+</Target>
+```
+
+Assegnare alla destinazione un nome descrittivo, come si farebbe per assegnare un nome a una funzione nel codice.
 
 ## <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 
@@ -66,11 +76,11 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 
 Una destinazione non viene mai eseguita due volte durante una compilazione, anche se da essa dipende una destinazione successiva nella compilazione. Il contributo della destinazione alla compilazione termina dopo che è stata eseguita.
 
-Per informazioni dettagliate e altre informazioni sull'ordine di compilazione di destinazione, vedere [ordine di compilazione di destinazione](../msbuild/target-build-order.md).
+Per informazioni dettagliate e altre informazioni sull'ordine di compilazione di destinazione, vedere [Ordine di compilazione di destinazione](../msbuild/target-build-order.md).
 
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione
 
-Un elemento di destinazione può avere un `Outputs` attributo che specifica i metadati nel formato%( \<Metadata> ). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio,
+Un elemento di destinazione può avere `Outputs` un attributo che specifica i metadati nel formato %( \<Metadata> ). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio,
 
 ```xml
 <ItemGroup>
@@ -104,11 +114,11 @@ Reference: 4.0
 
  Le compilazioni incrementali sono compilazioni ottimizzate in modo da non eseguire le destinazioni con file di output aggiornati rispetto ai file di input corrispondenti. Un elemento di destinazione può avere entrambi gli attributi `Inputs` e `Outputs` per indicare quali elementi la destinazione accetta come input e quali elementi genera come output.
 
- Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione e questo migliora notevolmente la velocità di compilazione. Questa operazione è definita compilazione incrementale della destinazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione senza gli elementi aggiornati. Questa operazione è definita compilazione incrementale parziale della destinazione. Per altre informazioni, vedere [compilazioni incrementali](../msbuild/incremental-builds.md).
+ Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione e questo migliora notevolmente la velocità di compilazione. Questa operazione è definita compilazione incrementale della destinazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione senza gli elementi aggiornati. Questa operazione è definita compilazione incrementale parziale della destinazione. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Destinazioni di compilazione predefinite
 
-Di seguito sono elencate le destinazioni pubbliche in Microsoft. Common. CurrentVersion. targets.
+Di seguito sono elencate le destinazioni pubbliche in Microsoft.Common.CurrentVersion.Targets.
 
 ```
 ===================================================
@@ -123,14 +133,12 @@ The main build entry point.
 
 ===================================================
 BeforeBuild
-Redefine this target in your project in order to run tasks just before Build
 ===================================================
 <Target Name="BeforeBuild"/>
 
 
 ===================================================
 AfterBuild
-Redefine this target in your project in order to run tasks just after Build
 ===================================================
 <Target Name="AfterBuild"/>
 
@@ -155,21 +163,18 @@ Delete all intermediate and final build outputs, and then build the project from
 
 ===================================================
 BeforeRebuild
-Redefine this target in your project in order to run tasks just before Rebuild
 ===================================================
 <Target Name="BeforeRebuild"/>
 
 
 ===================================================
 AfterRebuild
-Redefine this target in your project in order to run tasks just after Rebuild
 ===================================================
 <Target Name="AfterRebuild"/>
 
 
 ===================================================
 BuildGenerateSources
-Redefine this target in your project in order to run tasks for BuildGenerateSources
 Set BuildPassReferences to enable P2P builds
 ===================================================
 <Target Name="BuildGenerateSources"
@@ -178,7 +183,6 @@ Set BuildPassReferences to enable P2P builds
 
 ===================================================
 BuildCompile
-Redefine this target in your project in order to run tasks for BuildCompile
 ===================================================
 <Target Name="BuildCompile"
         DependsOnTargets="BuildCompileTraverse;$(BuildCompileAction)" />
@@ -186,7 +190,6 @@ Redefine this target in your project in order to run tasks for BuildCompile
 
 ===================================================
 BuildLink
-Redefine this target in your project in order to run tasks for BuildLink
 ===================================================
 <Target Name="BuildLink"
         DependsOnTargets="BuildLinkTraverse;$(BuildLinkAction)" />
@@ -302,14 +305,12 @@ ResolveReferences
 
 ===================================================
 BeforeResolveReferences
-Redefine this target in your project in order to run tasks just before ResolveReferences
 ===================================================
 <Target Name="BeforeResolveReferences"/>
 
 
 ===================================================
 AfterResolveReferences
-Redefine this target in your project in order to run tasks just after ResolveReferences
 ===================================================
 <Target Name="AfterResolveReferences"/>
 
@@ -570,14 +571,12 @@ Run GenerateResource on the given resx files.
 
 ===================================================
 BeforeResGen
-Redefine this target in your project in order to run tasks just before Resgen.
 ===================================================
 <Target Name="BeforeResGen"/>
 
 
 ===================================================
 AfterResGen
-Redefine this target in your project in order to run tasks just after Resgen.
 ===================================================
 <Target Name="AfterResGen"/>
 
@@ -624,14 +623,12 @@ Emit any specified code fragments into a temporary source file for the compiler.
 
 ===================================================
 BeforeCompile
-Redefine this target in your project in order to run tasks just before Compile.
 ===================================================
 <Target Name="BeforeCompile"/>
 
 
 ===================================================
 AfterCompile
-Redefine this target in your project in order to run tasks just after Compile.
 ===================================================
 <Target Name="AfterCompile"/>
 
@@ -802,14 +799,12 @@ Delete all intermediate and final build outputs.
 
 ===================================================
 BeforeClean
-Redefine this target in your project in order to run tasks just before Clean.
 ===================================================
 <Target Name="BeforeClean"/>
 
 
 ===================================================
 AfterClean
-Redefine this target in your project in order to run tasks just after Clean.
 ===================================================
 <Target Name="AfterClean"/>
 
@@ -875,14 +870,12 @@ by the BuildManager.
 
 ===================================================
 BeforePublish
-Redefine this target in your project in order to run tasks just before Publish.
 ===================================================
 <Target Name="BeforePublish"/>
 
 
 ===================================================
 AfterPublish
-Redefine this target in your project in order to run tasks just after Publish.
 ===================================================
 <Target Name="AfterPublish"/>
 
@@ -1017,4 +1010,4 @@ This target gathers the Redist folders from the SDKs which have been resolved.
 ## <a name="see-also"></a>Vedi anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
-- [Procedura: usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

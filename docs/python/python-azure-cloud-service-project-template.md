@@ -7,33 +7,34 @@ author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
 ms.custom: seodec18
+monikerRange: vs-2017
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2de0f255da54d5bd8abf865f6534041d88bbbca3
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912426"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254836"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Progetti servizio cloud di Azure per Python
 
 Visual Studio include modelli per iniziare rapidamente a creare servizi cloud di Microsoft Azure con Python.
 
-Un [servizio cloud](/azure/cloud-services/) è costituito da un numero qualsiasi di *ruoli di lavoro* e *ruoli Web*, ognuno dei quali esegue un'attività distinta dal punto di vista concettuale, ma che può essere replicata separatamente in macchine virtuali a seconda delle esigenze di ridimensionamento. I ruoli Web offrono funzionalità di hosting per applicazioni Web front-end. Per quanto riguarda Python, è possibile usare qualsiasi framework Web che supporta WSGI per scrivere tale applicazione, supportata dal [modello di progetto Web](python-web-application-project-templates.md). I ruoli di lavoro sono destinati a processi a esecuzione prolungata che non interagiscono direttamente con gli utenti. Usano in genere i pacchetti all'interno del pacchetto "Azure", che viene installato con [`pip install azure`](https://pypi.org/project/azure) .
+Un [servizio cloud](/azure/cloud-services/) è costituito da un numero qualsiasi di *ruoli di lavoro* e *ruoli Web*, ognuno dei quali esegue un'attività distinta dal punto di vista concettuale, ma che può essere replicata separatamente in macchine virtuali a seconda delle esigenze di ridimensionamento. I ruoli Web offrono funzionalità di hosting per applicazioni Web front-end. Per quanto riguarda Python, qualsiasi framework Web che supporta WSGI può essere usato per scrivere un'applicazione di questo tipo (come supportato dal [modello di progetto Web](python-web-application-project-templates.md)). I ruoli di lavoro sono destinati a processi a esecuzione prolungata che non interagiscono direttamente con gli utenti. In genere usano i pacchetti all'interno del pacchetto "azure", installato con [`pip install azure`](https://pypi.org/project/azure) .
 
 Questo articolo contiene informazioni dettagliate sul modello di progetto e su altre opzioni di supporto in Visual Studio 2017 e versioni successive (le versioni precedenti sono simili, ma presentano alcune differenze). Per altre informazioni sull'uso di Azure da Python, visitare il [Centro per sviluppatori Python di Azure](/azure/python/).
 
 ## <a name="create-a-project"></a>Creare un progetto
 
 1. Installare [Azure .NET SDK per Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), necessario per usare il modello di servizio cloud.
-1. In Visual Studio selezionare **file**  >  **nuovo**  >  **progetto**, quindi cercare "Azure Python" e selezionare **servizio cloud di Azure** dall'elenco:
+1. In Visual Studio selezionare **File**  >  **Nuovo**  >  progetto, quindi cercare "Azure Python" e selezionare Servizio cloud di **Azure** nell'elenco:
 
     ![Modello Progetto servizio cloud di Azure per Python](media/template-azure-cloud-project.png)
 
-1. Selezionare uno o più ruoli da includere. I progetti servizio cloud possono combinare ruoli scritti in linguaggi diversi, di conseguenza è possibile scrivere facilmente le singole parti dell'applicazione nel linguaggio più appropriato. Per aggiungere nuovi ruoli al progetto dopo aver completato questa finestra di dialogo, fare clic con il pulsante destro del mouse su **ruoli** in **Esplora soluzioni** e selezionare uno degli elementi in **Aggiungi**.
+1. Selezionare uno o più ruoli da includere. I progetti servizio cloud possono combinare ruoli scritti in linguaggi diversi, di conseguenza è possibile scrivere facilmente le singole parti dell'applicazione nel linguaggio più appropriato. Per aggiungere nuovi ruoli al progetto dopo aver completato  questa finestra di dialogo, fare clic con il pulsante destro del mouse su Ruoli **in** Esplora soluzioni e selezionare uno degli elementi in **Aggiungi**.
 
     ![Aggiunta di ruoli nel modello Progetto servizio cloud di Azure](media/template-azure-cloud-service-project-wizard.png)
 
@@ -45,7 +46,7 @@ Questo articolo contiene informazioni dettagliate sul modello di progetto e su a
 
     ![File di supporto del ruolo di lavoro](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    Per aggiungere questi script di configurazione a un nuovo progetto, fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**  >  **nuovo elemento** e selezionare file di **supporto del ruolo Web** o **file di supporto del ruolo di lavoro**.
+    Per aggiungere questi script di configurazione a un nuovo progetto, fare clic con il pulsante destro del mouse sul progetto, scegliere Aggiungi nuovo elemento e selezionare File di supporto del ruolo Web o File di supporto del ruolo  >   **di lavoro**. 
 
 ## <a name="configure-role-deployment"></a>Configurare la distribuzione dei ruoli
 
@@ -67,7 +68,7 @@ Per eseguire altre operazioni di configurazione, è possibile procedere come seg
 
 Durante la scrittura dei ruoli è possibile testare il progetto cloud in locale usando l'emulatore del servizio cloud. L'emulatore è incluso in Azure SDK Tools e rappresenta una versione limitata dell'ambiente usato quando il servizio cloud viene pubblicato in Azure.
 
-Per avviare l'emulatore, assicurarsi innanzitutto che il progetto cloud corrisponda al progetto di avvio nella soluzione. A questo scopo, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**. Selezionare quindi **debug**  >  **Avvia debug** (**F5**) o   >  **Avvia debug senza eseguire debug** (**CTRL** + **F5**).
+Per avviare l'emulatore, assicurarsi innanzitutto che il progetto cloud corrisponda al progetto di avvio nella soluzione. A questo scopo, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**. Selezionare quindi **Debug**  >  **Avvia debug** (**F5**) o **Avvia** debug senza eseguire debug (  >   **CTRL** + **F5**).
 
 Si noti che, a causa delle limitazioni previste nell'emulatore, non è possibile eseguire il debug del codice Python. È quindi consigliabile eseguire il debug dei ruoli eseguendoli in modo indipendente e usare successivamente l'emulatore per il test di integrazione prima della pubblicazione.
 
@@ -81,7 +82,7 @@ Man mano che vengono attivate le singole macchine virtuali, esegue lo script *Co
 
 Al termine i ruoli di lavoro eseguono *LaunchWorker.ps1*, che avvia l'esecuzione dello script Python. I ruoli Web inizializzano IIS e avviano la gestione delle richieste Web.
 
-## <a name="dependencies"></a>Dependencies
+## <a name="dependencies"></a>Dipendenze
 
 Per i servizi cloud lo script *ConfigureCloudService.ps1* usa `pip` per installare un set di dipendenze di Python, che devono essere specificate in un file denominato *requirements.txt* (personalizzabile modificando lo script *ConfigureCloudService.ps1*). Il file viene eseguito con `pip install -r requirements.txt` durante l'inizializzazione.
 
@@ -93,7 +94,7 @@ pip e le relative dipendenze, oltre ai pacchetti in *requirements.txt*, vengono 
 
 Se il ruolo Web o di lavoro non funziona correttamente dopo la distribuzione, verificare che:
 
-- Il progetto Python include una *cartella \\ bin* con almeno:
+- Il progetto Python include una *cartella bin \\* con (almeno):
 
   - *ConfigureCloudService.ps1*
   - *LaunchWorker.ps1* (per i ruoli di lavoro)

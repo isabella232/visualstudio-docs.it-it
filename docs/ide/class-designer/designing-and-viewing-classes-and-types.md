@@ -1,6 +1,6 @@
 ---
 title: Usare Progettazione classi
-description: Informazioni su come progettare, visualizzare ed effettuare il refactoring di classi e altri tipi nel codice con Progettazione classi in Visual Studio.
+description: Informazioni su come progettare, visualizzare ed eseguire il refactoring di classi e altri tipi nel codice con Progettazione classi in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 05/08/2018
 ms.topic: conceptual
@@ -19,16 +19,19 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 236efe20ee652e2690cedf36843d539bf8a9cc46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85921343ac52c066735d607ce32635e953cf2e6a
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850295"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254778"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Progettare e visualizzare classi e tipi con Progettazione classi
 
-Progettare, visualizzare ed effettuare il refactoring di classi e altri tipi nel codice con **Progettazione classi** in Visual Studio. Usare i diagrammi classi per creare e modificare classi nel progetto C#, Visual Basic o C++. È anche possibile usare i diagrammi classi per comprendere meglio la struttura del progetto o riorganizzare il codice.
+Progettare, visualizzare ed eseguire il refactoring di classi e altri tipi nel codice con Progettazione classi **in** Visual Studio. Usare i diagrammi classi per creare e modificare classi nel progetto C#, Visual Basic o C++. È anche possibile usare i diagrammi classi per comprendere meglio la struttura del progetto o riorganizzare il codice.
+
+>[!NOTE]
+>Progettazione classi non è disponibile nei progetti .NET Core.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>Operazioni eseguibili con i diagrammi classi
 
