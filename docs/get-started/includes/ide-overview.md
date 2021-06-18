@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 3c5cb8d78b254c667ecd131ef3850475a0460323
-ms.sourcegitcommit: 5366c6bca3fb217a2fbf847998387578f51ec45c
+ms.openlocfilehash: 128a09500aaa326fad717efcade9040496452963
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748478"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112361742"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -21,7 +21,7 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 :::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="Screenshot dell'IDE Visual Studio, che include callout che indicano dove si trovano le funzionalità e le funzionalità principali." lightbox="../media/vs-2019/ide-overview.png":::
 
@@ -51,7 +51,7 @@ Sono disponibili tre edizioni di Visual Studio: Community, Professional ed Enter
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2019 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2019.
 
@@ -372,7 +372,7 @@ In primo luogo, rinominare la variabile `name`:
 
 10. Eseguire di nuovo il programma premendo **CTRL** + **F5.** L'output è simile al seguente:
 
-    ! Screenshot della finestra cmd.exe console che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette! Giorno dell'anno: 151'.] (.. /media/overview-console-final.png)
+    ! Screenshot della finestra cmd.exe console che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello! Giorno dell'anno: 151'.] (.. /media/overview-console-final.png)
 
 ::: moniker-end
 
@@ -380,7 +380,7 @@ In primo luogo, rinominare la variabile `name`:
 
 10. Eseguire di nuovo il programma premendo **CTRL** + **F5.** L'output è simile al seguente:
 
-    ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
+    ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 
@@ -414,11 +414,11 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 È possibile personalizzare l'interfaccia utente di Visual Studio, ad esempio modificare il tema colori predefinito. Per modificare il tema **Scuro**:
 
-1. Nella barra dei menu scegliere **Opzioni** strumenti  >  **per** aprire la finestra **di dialogo** Opzioni.
+1. Sulla barra dei menu scegliere **Opzioni** strumenti  >  **per aprire** la finestra **di dialogo** Opzioni.
 
 ::: moniker range="vs-2017"
 
-2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
+2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 
@@ -428,7 +428,7 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 ::: moniker range=">=vs-2019"
 
-2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
+2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 
