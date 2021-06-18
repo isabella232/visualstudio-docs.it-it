@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 38e5f612c6a9b39874c952560627e04c26fafc25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 349483a672b8240f7ca622638221766d6da4864c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897980"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308155"
 ---
 # <a name="visual-studio-feedback-options"></a>Opzioni per commenti e suggerimenti in Visual Studio
 
@@ -28,41 +28,41 @@ Perché inviare commenti e suggerimenti a Microsoft? Microsoft prende infatti in
 
 ## <a name="report-a-problem"></a>Segnalare un problema
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Se si riscontrano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte o un comportamento imprevisto, è possibile segnalarli tramite lo strumento **Segnala un problema**. In Visual Studio scegliere l'icona feedback nell'angolo in alto a destra oppure scegliere **Guida**  >  **Invia commenti e suggerimenti**  >  **segnala un problema** dalla barra dei menu.
+Se si riscontrano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte o un comportamento imprevisto, è possibile segnalarli tramite lo strumento **Segnala un problema**. In Visual Studio scegliere l'icona di feedback nell'angolo in alto a destra oppure scegliere Help Send Feedback Report a Problem (Invia commenti e suggerimenti per segnalare  >    >   un problema) dalla barra dei menu.
 
-![Icona dei commenti e suggerimenti nell'IDE di Visual Studio 2019](./media/vs-2019/send-feedback-icon.png)
+![Icona Invia commenti e suggerimenti nell'IDE Visual Studio](./media/vs-2019/send-feedback-icon.png)
 
-Successivamente, Visual Studio apre l'interfaccia della [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8) , in cui è possibile accedere per segnalare il problema. Per ulteriori informazioni, vedere [come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Verrà quindi Visual Studio'interfaccia [Developer Community,](https://aka.ms/feedback/suggest?space=8) in cui è possibile accedere per segnalare il problema. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Se si riscontrano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte o un comportamento imprevisto, è possibile segnalarli tramite lo strumento **Segnala un problema**. In Visual Studio scegliere l'icona Commenti e suggerimenti accanto alla casella di ricerca **oppure scegliere**  >  ?**Invia commenti e suggerimenti**  >  **segnala un problema** dalla barra dei menu.
+Se si riscontrano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte o un comportamento imprevisto, è possibile segnalarli tramite lo strumento **Segnala un problema**. In Visual Studio, scegliere l'icona del feedback accanto alla casella di ricerca oppure scegliere Help Send Feedback Report a Problem (Invia commenti e suggerimenti per segnalare  >    >   un problema) dalla barra dei menu.
 
 ![Icona dei commenti e suggerimenti nell'IDE di Visual Studio 2019](./media/send-feedback-icon.png)
 
-Successivamente, Visual Studio apre l'interfaccia della [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8) , in cui è possibile accedere per segnalare il problema. Per ulteriori informazioni, vedere [come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Verrà quindi Visual Studio'interfaccia [Developer Community,](https://aka.ms/feedback/suggest?space=8) in cui è possibile accedere per segnalare il problema. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
 ## <a name="suggest-a-feature"></a>Suggerire una funzionalità
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Se si ha un'idea o un suggerimento per migliorare Visual Studio, è possibile segnalarlo usando lo strumento **Suggerisci una funzionalità** . In Visual Studio scegliere l'icona feedback nell'angolo in alto a destra oppure scegliere **Guida**  >  **Invia commenti e suggerimenti**  >  **Suggerisci una funzionalità** dalla barra dei menu.
+Se si ha un'idea o un suggerimento per migliorare Visual Studio, è possibile usare lo strumento Suggerisci **una** funzionalità. In Visual Studio scegliere l'icona di feedback nell'angolo in alto a destra oppure scegliere Help Send Feedback Suggest a Feature (Invia commenti e suggerimenti) Per suggerire una funzionalità  >    >   dalla barra dei menu.
 
-Visual Studio apre quindi l'interfaccia della [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8) , in cui è possibile accedere per condividere la propria idea. Per altre informazioni, vedere [Suggerire una funzionalità per Visual Studio](suggest-a-feature.md).
+Successivamente, [Visual Studio'interfaccia Developer Community,](https://aka.ms/feedback/suggest?space=8) in cui è possibile accedere per condividere l'idea. Per altre informazioni, vedere [Suggerire una funzionalità per Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Se si ha un'idea o un suggerimento per migliorare Visual Studio, è possibile **inviare un suggerimento usando lo strumento fornire un suggerimento** . In Visual Studio scegliere l'icona Commenti e suggerimenti accanto alla casella di ricerca oppure scegliere **Guida**  >  **Invia commenti** e  >  **suggerimenti** dalla barra dei menu.
+Se si ha un'idea o un suggerimento per migliorare Visual Studio, è possibile farlo tramite lo strumento **Fornisci un** suggerimento. In Visual Studio scegliere l'icona di feedback accanto alla casella di ricerca oppure scegliere Invia commenti e suggerimenti Invia un  >    >   suggerimento dalla barra dei menu.
 
-Successivamente, Visual Studio apre la pagina della [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8) , in cui è possibile accedere per condividere la propria idea. Per altre informazioni, vedere [Suggerire una funzionalità per Visual Studio](suggest-a-feature.md).
+Verrà quindi Visual Studio la [Developer Community,](https://aka.ms/feedback/suggest?space=8) in cui è possibile accedere per condividere l'idea. Per altre informazioni, vedere [Suggerire una funzionalità per Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -70,8 +70,8 @@ Successivamente, Visual Studio apre la pagina della [community degli sviluppator
 
 È possibile contribuire a migliorare la documentazione in due modi:
 
-* Usare lo strumento di risposta della **pagina è utile?** nella parte superiore destra della pagina della documentazione.
-* Usare il proprio account GitHub per fornire commenti e suggerimenti per qualsiasi pagina su Visual Studio in [docs.microsoft.com](../index.yml). A tale scopo, scegliere il pulsante **Invia commenti e suggerimenti su**  >  **Questa pagina** nella parte inferiore della pagina della documentazione.
+* Usare lo strumento di risposta Is this page helpful? (Questa pagina è **utile?)** in alto a destra in qualsiasi pagina della documentazione.
+* Usare il proprio account GitHub per fornire commenti e suggerimenti per qualsiasi pagina su Visual Studio in [docs.microsoft.com](../index.yml). A tale scopo, scegliere il **pulsante Invia commenti e suggerimenti** su Questa pagina nella parte inferiore di qualsiasi pagina della  >   documentazione.
 
 ## <a name="contact-microsoft-support"></a>Contattare il supporto tecnico Microsoft
 
@@ -94,7 +94,7 @@ Per condividere domande e risposte con altri sviluppatori, è possibile entrare 
 * Visual Studio su [Reddit](https://www.reddit.com/r/VisualStudio/)
 * [Stack Overflow](https://stackoverflow.com/search?q=visual+studio+-code)
 
-È anche possibile visualizzare il codice di altri sviluppatori e condividere i propri esempi nella pagina [Sfoglia esempi di codice](/samples/browse/) .
+È anche possibile visualizzare il codice di altri sviluppatori e condividere esempi personalizzati nella [pagina Esplora esempi di](/samples/browse/) codice.
 
 ## <a name="see-also"></a>Vedi anche
 

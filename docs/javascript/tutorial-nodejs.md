@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5433ae0e84396f3c16dc5ed50f51ce7e9eb7056f
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 2bca688977187071b5530911f9aa975e10ceef99
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111760978"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306527"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 
@@ -31,6 +31,12 @@ Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Stu
 ::: moniker range=">=vs-2019"
 
 Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina dei download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -194,7 +200,7 @@ IntelliSense è uno strumento di Visual Studio che assiste l'utente durante la s
 
     L'ultima riga di questo messaggio indica che l'interprete JavaScript prevedeva una virgola (`,`).
 
-1. Nel riquadro inferiore fare clic sulla **scheda Elenco** errori e selezionare Compila **e IntelliSense** per il tipo di problemi segnalati.
+1. Nel riquadro inferiore fare clic sulla **scheda Elenco** errori e selezionare Compila **+ IntelliSense** per il tipo di problemi segnalati.
 
     Con il nome del file e il numero di riga verranno visualizzati l'avviso e la relativa descrizione.
 
@@ -251,7 +257,7 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Facoltativo) Pubblicare in Servizio app di Azure
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica.**
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 
    ![Eseguire la pubblicazione nel servizio app di Azure](../javascript/media/tutorial-nodejs-publish-to-azure.png)
 

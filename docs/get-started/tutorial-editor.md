@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cdbd70160da596648b24604634de337b7dae2f6
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 21ce515baca11a33d0eb02f54973faab11783e4c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113137"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307973"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -37,6 +37,13 @@ In questa introduzione all'editor di codice di Visual Studio della durata di 10 
 
 > [!TIP]
 > Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina dei download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -80,7 +87,7 @@ Visual Studio offre *frammenti di codice* utili che è possibile usare per gener
 
    La firma del metodo `static void Main()` viene aggiunta al file.
 
-I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per il linguaggio scegliendo Modifica frammento di codice  >  **IntelliSense** e quindi scegliendo la  >  cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
+I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per il linguaggio scegliendo Modifica frammento di codice  >  **IntelliSense** Inserisci frammento e quindi scegliendo la  >  cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
 
 ![Elenco di frammenti di codice per C#](media/tutorial-code-snippet-list.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Modificare Visual Studio carichi di lavoro, componenti, & Language Pack
+title: Modificare Visual Studio carichi di lavoro, componenti & Language Pack
 titleSuffix: ''
 description: Informazioni dettagliate su come modificare Visual Studio.
 ms.date: 10/12/2020
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f4040023dd023db351571482ac2a17c18b46e06
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 638ec555a6fbef53d19a15c8a6cde26ff121aa0e
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112934"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306982"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modificare Visual Studio carichi di lavoro, componenti e Language Pack
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio può essere facilmente modificato in modo da includere solo gli elementi desiderati, quando sono necessari. A tale scopo, aprire il programma di installazione di Visual Studio per aggiungere o rimuovere carichi di lavoro e componenti.
 
@@ -47,7 +47,7 @@ Oltre ad aver semplificato la personalizzazione di Visual Studio in base alle at
 
 ## <a name="launch-the-installer"></a>Avviare il programma di installazione
 
-Per apportare modifiche all'installazione, è necessario avviare il Visual Studio di installazione.
+Per apportare modifiche all'installazione, è necessario avviare il programma di Visual Studio installazione.
 
 ::: moniker range="vs-2017"
 
@@ -60,7 +60,7 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
      >[!TIP]
      >In alcuni computer il programma di installazione di Visual Studio potrebbe trovarsi sotto la lettera **"M"** come **Microsoft Visual Studio: programma di installazione**.<br/><br/> In alternativa, è possibile trovare il programma di installazione di Visual Studio nel percorso seguente: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Aprire il programma di installazione e quindi scegliere **Modifica**.
+1. Aprire il programma di installazione e quindi scegliere **Modifica.**
 
      ![Avviare o modificare Visual Studio](media/modify-visual-studio.png "Modificare Visual Studio 2017")
 
@@ -71,7 +71,7 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Individuare il **programma di installazione di Visual Studio** all'interno del computer in uso.
 
@@ -88,10 +88,10 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
 
 1. Nel programma di installazione cercare l'edizione di Visual Studio installata e quindi scegliere **Modifica**.
 
-     ![Scegliere Visual Studio edition e quindi modificare](media/vs-2019/vs-installer-modify.png "Scegliere Visual Studio edizione 2019 e quindi modificare")
+     ![Scegliere Visual Studio edition e quindi modificare](media/vs-2019/vs-installer-modify.png "Scegliere Visual Studio 2019 e quindi modificare")
 
      > [!IMPORTANT]
-     > Se è presente un aggiornamento in sospeso, il pulsante Modifica si trova in una posizione diversa. In questo modo, è possibile Visual Studio senza aggiornarlo, se necessario. Scegliere **Altro** e quindi **Modifica**.
+     > Se è presente un aggiornamento in sospeso, il pulsante Modifica si trova in una posizione diversa. In questo modo, è possibile Visual Studio senza aggiornarlo, se necessario. Scegliere **Altro** e quindi **Modifica.**
      >
      > ![Aggiornare o modificare Visual Studio](media/vs-2019/modify-update-visual-studio.png "Aggiornare o modificare Visual Studio 2019")
 
@@ -103,7 +103,7 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
 
  [I carichi](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
 
-1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
+1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi di** lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
    In alternativa, se non si vogliono usare i carichi di lavoro per personalizzare l'installazione di Visual Studio, scegliere la scheda **Singoli** componenti e selezionare i componenti desiderati e quindi seguire le istruzioni.
 
@@ -111,33 +111,32 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
 
 1. Scegliere se accettare l'opzione predefinita **Installa durante il download** o selezionare l'opzione **Scarica tutto, quindi installa**.
 
-    ![Visual Studio opzioni di installazione di 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di installare durante il download o per scaricare prima e installare in un secondo momento")
+    ![Visual Studio di installazione di Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di eseguire l'installazione durante il download o di scaricare prima e installare in un secondo momento")
 
     L'opzione "Scarica tutto, quindi installa" è utile se si preferisce scaricare prima tutto il software e quindi installarlo in un secondo momento.
 
 1. Scegliere **Modifica**.
 
-1. Se lo si desidera, scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
-
+1. Se si vuole, scegliere **la scheda** Carichi di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
 1. Dopo aver installato i nuovi carichi di lavoro, **scegliere** Avvia dal Programma di installazione di Visual Studio per aprire Visual Studio.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
  I carichi di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
 
  > [!TIP]
 >Per altre informazioni sui bundle di strumenti e componenti necessari per lo sviluppo, vedere Visual Studio [carichi di lavoro.](https://visualstudio.microsoft.com/vs/#workloads)
 
-1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
+1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi di** lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
-    ![Visual Studio finestra di dialogo di installazione di 2019](media/vs-2019/vs-installer-modify-workloads.png "Scegliere un carico di lavoro in Visual Studio 2019")
+    ![Visual Studio di installazione di 2019](media/vs-2019/vs-installer-modify-workloads.png "Scegliere un carico di lavoro in Visual Studio 2019")
 
 1. Scegliere se accettare l'opzione predefinita **Installa durante il download** o selezionare l'opzione **Scarica tutto, quindi installa**.
 
-    ![Visual Studio opzioni di installazione di 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di installare durante il download o per scaricare prima e installare in un secondo momento")
+    ![Visual Studio di installazione di Visual Studio 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di eseguire l'installazione durante il download o di scaricare prima e installare in un secondo momento")
 
     L'opzione "Scarica tutto, quindi installa" è utile se si preferisce scaricare prima tutto il software e quindi installarlo in un secondo momento.
 
@@ -147,18 +146,18 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
 
 ::: moniker-end
 
-
 >[!TIP]
-> Per informazioni sul componente SQL Server Data Tools (SSDT), vedere Scaricare e installare [SSDT per](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true)Visual Studio .
+> Per informazioni sul componente SQL Server Data Tools (SSDT), vedere Scaricare e installare [SSDT per Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true).
 
 ## <a name="modify-language-packs"></a>Modificare i Language Pack
 
-Per impostazione predefinita, il programma di installazione corrisponde alla lingua del sistema operativo quando viene eseguito per la prima volta. Tuttavia, è possibile modificare la lingua ogni volta che si vuole. 
+Per impostazione predefinita, il programma di installazione corrisponde alla lingua del sistema operativo quando viene eseguito per la prima volta. Tuttavia, è possibile modificare la lingua ogni volta che si desidera. 
 
 A tale scopo, procedere nel seguente modo:
-1. Scegliere la **scheda Language Pack** nel Programma di installazione di Visual Studio.
-2. Selezionare la lingua preferita.
-3. Seguire le istruzioni.
+
+1. Scegliere la **scheda Language** Pack nel Programma di installazione di Visual Studio.
+1. Selezionare la lingua preferita.
+1. Seguire le istruzioni.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

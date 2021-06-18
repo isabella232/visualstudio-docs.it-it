@@ -7,12 +7,13 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 4d3d2c005f32aaebacc251414218f5ae03edf546
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+monikerRange: <=vs-2019
+ms.openlocfilehash: b45399f7a4115ce5946a67caca22ca92148e7434
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112043016"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308246"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Connettersi a progetti in Team Explorer
 
@@ -52,7 +53,7 @@ La modalità Team Explorer per connettersi a un progetto dipende dalla versione 
       ![Screenshot della finestra di dialogo "Connetti a un progetto" generata da Visual Studio 2019 versione 16.8 e successive](../ide/media/vs-2019/connect-project-azure-devops.png)
 
       > [!TIP]
-      > Se non viene visualizzato un elenco precompilato di repository a cui connettersi, selezionare **Aggiungi** Azure DevOps Server per immettere un URL del server. In alternativa, potrebbe essere visualizzato il prompt "Nessun server trovato" che include collegamenti per aggiungere un Azure DevOps Server esistente o per creare un account Azure DevOps.
+      > Se non viene visualizzato un elenco precompilato di repository a cui connettersi, selezionare **Aggiungi** Azure DevOps Server per immettere un URL del server. In alternativa, potrebbe essere visualizzato un prompt "Nessun server trovato" che include collegamenti per aggiungere un Azure DevOps Server esistente o per creare un account Azure DevOps.
 
    Successivamente, Visual Studio apre **Esplora soluzioni** che mostra le cartelle e i file.
 

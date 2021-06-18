@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7554ac46d7c4171cfb71166c51689ff4ae95c0d5
-ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
+ms.openlocfilehash: fe1d1a3c5ec13995cb69fff6ba6ec74c7a6c90d9
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "110724551"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307723"
 ---
 # <a name="automate-installs-by-using-settings-in-a-response-file"></a>Automatizzare le installazioni usando le impostazioni in un file di risposta
 
 Gli amministratori che distribuiscono Visual Studio possono specificare un file di risposta usando il parametro `--in`, come nell’esempio che segue:
 
-```cmd
+```shell
 vs_enterprise.exe --in customInstall.json
 ```
 
@@ -64,7 +64,7 @@ Il file base `response.json` in un layout deve avere un aspetto simile all'esemp
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ```json
 {
@@ -119,7 +119,7 @@ Il seguente esempio viene installato Visual Studio Enterprise con sei carichi di
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ```json
 {
@@ -159,4 +159,4 @@ Il seguente esempio viene installato Visual Studio Enterprise con sei carichi di
 ## <a name="see-also"></a>Vedi anche
 
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
-* [Risolvere gli errori relativi alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)

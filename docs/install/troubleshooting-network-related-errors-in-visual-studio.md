@@ -10,21 +10,21 @@ helpviewer_keywords:
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1e5af6f11a6b5036b50f44abaf50c5adfe18487b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e7d54b4e7777b3569031e96760699e7c075245f
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959181"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306826"
 ---
-# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio
+# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Risolvere gli errori relativi alla rete quando si installa o si usa Visual Studio
 
 Esistono soluzioni per la maggiore parte degli errori tipici correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
 
@@ -69,11 +69,11 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
       È necessario inserire l'indirizzo del proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Per ulteriori informazioni, vedere le pagine [ &lt; &gt; elemento defaultProxy (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt; &gt; elemento proxy (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
+     > Per altre informazioni, vedere le pagine Elemento [ &lt; defaultProxy &gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt; Elemento proxy &gt; (impostazioni di rete).](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
   1. Individuare **devenv.exe.config** (il file di configurazione di devenv.exe) in: **%Programmi%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** o **%Programmi(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**.
 
@@ -88,19 +88,19 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
       È necessario inserire l'indirizzo del proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Per ulteriori informazioni, vedere le pagine [ &lt; &gt; elemento defaultProxy (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt; &gt; elemento proxy (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
+     > Per altre informazioni, vedere le pagine Elemento [ &lt; defaultProxy &gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt; Elemento proxy &gt; (impostazioni di rete).](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)
 
 ::: moniker-end
 
-## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>Errore: "disconnesso da Visual Studio" durante il tentativo di segnalare un problema
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>Errore: "Disconnesso da Visual Studio" durante il tentativo di segnalare un problema
 
-Questo errore si verifica in genere quando un utente è connesso a Internet tramite un server proxy e il server proxy blocca le chiamate che Visual Studio apporta ad alcune risorse di rete.
+Questo errore si verifica in genere quando un utente è connesso a Internet tramite un server proxy e il server proxy blocca le chiamate Visual Studio ad alcune risorse di rete.
 
 ### <a name="to-fix-this-proxy-error"></a>Per correggere l'errore del proxy
 
-1. Trovare **feedback.exe.config** (il file di configurazione feedback.exe) in: **% ProgramFiles (x86)% \ Microsoft Visual Studio\Installer** o **%ProgramFiles%\Microsoft Visual Studio\Installer**.
+1. Trovare **feedback.exe.config** (il file di configurazione feedback.exe) in: **%ProgramFiles(x86)%\Microsoft Visual Studio\Installer** o **%ProgramFiles%\Microsoft Visual Studio\Installer**.
 
-2. Nel file di configurazione controllare se è presente il codice seguente. Se il codice non è presente, aggiungerlo prima dell'ultima `</configuration>` riga.
+2. Nel file di configurazione verificare se è presente il codice seguente. Se il codice non è presente, aggiungerlo prima dell'ultima `</configuration>` riga.
 
    ```xml
    <system.net>
@@ -149,18 +149,18 @@ Abilitare le connessioni per gli URL seguenti:
   > [!NOTE]
   > Gli URL di server NuGet di proprietà privata potrebbero non essere inclusi in questo elenco. È possibile controllare i server NuGet in uso in %APPData%\Nuget\NuGet.Config.
 
-## <a name="error-failed-to-parse-id-from-parent-process"></a>Errore: "non è stato possibile analizzare l'ID dal processo padre"
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Errore: "Impossibile analizzare l'ID dal processo padre"
 
-Questo messaggio di errore può essere visualizzato quando si usa un programma di avvio automatico di Visual Studio e un response.jssu un file in un'unità di rete. L'origine dell'errore è il controllo dell'account utente (UAC) in Windows.
+Questo messaggio di errore può essere visualizzato quando si usa un programma Visual Studio bootstrap e un response.jssu un file in un'unità di rete. L'origine dell'errore è controllo dell'account utente in Windows.
 
-Ecco perché questo errore può verificarsi: un'unità di rete mappata o una condivisione [UNC](/dotnet/standard/io/file-path-formats#unc-paths) è collegata al token di accesso di un utente. Quando UAC è abilitato, vengono creati due [token di accesso](/windows/win32/secauthz/access-tokens) utente: uno *con* accesso amministratore e uno *senza* accesso amministratore. Quando viene creata un'unità o una condivisione di rete, il token di accesso corrente dell'utente è collegato a tale unità. Poiché il programma di avvio automatico deve essere eseguito come amministratore, non sarà in grado di accedere all'unità di rete o alla condivisione se l'unità o la condivisione non è collegata a un token di accesso utente con accesso di amministratore.
+Ecco perché può verificarsi questo errore: un'unità di rete mappata o una condivisione [UNC](/dotnet/standard/io/file-path-formats#unc-paths) è collegata al token di accesso di un utente. Quando controllo dell'account utente è abilitato,  vengono creati due [token di](/windows/win32/secauthz/access-tokens) accesso utente: uno con accesso amministratore e uno *senza* accesso come amministratore. Quando viene creata un'unità di rete o una condivisione, viene collegato il token di accesso corrente dell'utente. Poiché il programma di avvio automatico deve essere eseguito come amministratore, non sarà in grado di accedere all'unità di rete o alla condivisione se l'unità o la condivisione non è collegata a un token di accesso utente con accesso come amministratore.
 
 ### <a name="to-fix-this-error"></a>Per correggere l'errore
 
-È possibile usare il `net use` comando oppure è possibile modificare l'impostazione criteri di gruppo UAC. Per ulteriori informazioni su queste soluzioni alternative e su come implementarle, vedere gli articoli del supporto tecnico Microsoft seguenti:
+È possibile usare il comando `net use` oppure modificare l'impostazione di controllo dell'Criteri di gruppo utente. Per altre informazioni su queste soluzioni alternative e su come implementarle, vedere gli articoli del supporto tecnico Microsoft seguenti:
 
-* [Le unità mappate non sono disponibili da un prompt con privilegi elevati quando UAC è configurato per "Richiedi credenziali" in Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
-* [I programmi potrebbero non essere in grado di accedere ad alcuni percorsi di rete dopo l'attivazione del controllo dell'account utente nei sistemi operativi Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
+* [Le unità mappate non sono disponibili da un prompt con privilegi elevati quando Controllo dell'account utente è configurato su "Richiedi credenziali" in Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [I programmi potrebbero non essere in grado di accedere ad alcuni percorsi di rete dopo l'attivazione di Controllo account utente nei sistemi operativi Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

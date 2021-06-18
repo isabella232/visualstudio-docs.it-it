@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11db2d793f284557f709a4f72362cfc89a77a059
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0f962d9e534262fd12cd0ce5c808c9c604db466b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113028"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308402"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Introduzione a progetti e soluzioni
 
@@ -35,6 +35,12 @@ Se non è già stato installato Visual Studio, passare alla pagina Visual Studio
 ::: moniker range="vs-2019"
 
 Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 ::: moniker-end
 
@@ -101,7 +107,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
-   > Se Visual **C#** non è visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il carico di lavoro **sviluppo desktop .NET** Visual Studio. Visual Studio l'installazione basata su carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo in uso. Un modo semplice per installare un nuovo carico di lavoro è selezionare il collegamento **Apri** Programma di installazione di Visual Studio nell'angolo inferiore sinistro della finestra di dialogo **Aggiungi** nuovo progetto. Dopo Programma di installazione di Visual Studio, selezionare il carico di lavoro **Sviluppo desktop .NET** e quindi il **pulsante** Modifica.
+   > Se Visual **C#** non è visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il carico di lavoro sviluppo **desktop .NET** Visual Studio. Visual Studio l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo. Un modo semplice per installare un nuovo carico di lavoro è selezionare il collegamento **Apri** Programma di installazione di Visual Studio nell'angolo inferiore sinistro della finestra di dialogo **Aggiungi** nuovo progetto. Dopo Programma di installazione di Visual Studio, selezionare il carico di lavoro **Sviluppo desktop .NET** e quindi il **pulsante** Modifica.
    >
    > ![Collegamento Apri il programma di installazione di Visual Studio](media/tutorial-projects-open-installer.png "Collegamento Apri Programma di installazione di Visual Studio nella finestra di dialogo Aggiungi nuovo progetto in Visual Studio 2017.")
 
@@ -122,9 +128,9 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
-   > Se il modello Progetto vuoto **(.NET Framework)** non è visualizzato, è necessario installare il carico di lavoro sviluppo **desktop .NET** Visual Studio. Visual Studio l'installazione basata su carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo in uso.
+   > Se il modello Progetto vuoto **(.NET Framework)** non è visualizzato, è necessario installare il carico di lavoro sviluppo **desktop .NET** Visual Studio. Visual Studio l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo.
    >
-   >Un modo semplice per installare un nuovo carico di lavoro  quando si crea un nuovo progetto è selezionare il collegamento Installa altri strumenti e funzionalità sotto il testo Non trovare quello che si **sta cercando?**. Dopo Programma di installazione di Visual Studio, selezionare il carico di lavoro **Sviluppo desktop .NET** e quindi il **pulsante** Modifica.
+   >Un modo semplice per installare un nuovo carico di lavoro  quando si crea un nuovo progetto è selezionare il collegamento Installa altri strumenti e funzionalità sotto il testo Non trovare ciò che si **sta cercando?**. Dopo Programma di installazione di Visual Studio, selezionare il carico di lavoro **Sviluppo desktop .NET** e quindi il **pulsante** Modifica.
    >
    > ![Collegamento Apri il programma di installazione di Visual Studio](media/vs-2019/tutorial-projects-open-installer.png "Collegamento Apri Programma di installazione di Visual Studio nella finestra di dialogo Crea un nuovo progetto in Visual Studio.")
 
@@ -166,7 +172,7 @@ Ora il progetto è vuoto. Aggiungiamo un file di codice.
    }
    ```
 
-   Non è necessario comprendere cosa fa il codice, ma se si vuole, è possibile eseguire il programma premendo **CTRL** F5 e verificare che stampi la data odierna nella finestra della +  console (o output standard).
+   Non è necessario comprendere cosa fa il codice, ma se si vuole, è possibile eseguire il programma premendo **CTRL** F5 e verificare che la data odierna sia stampata nella finestra della +  console (o output standard).
 
 ## <a name="add-a-second-project"></a>Aggiungere un secondo progetto
 
@@ -197,7 +203,7 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 4. Assegnare al progetto **il nome QuickTest** e quindi selezionare **Avanti.**
 
-5. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
+5. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
 
    Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.cs*.
 
@@ -223,7 +229,7 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Selezionare il **nodo Dipendenze** nel **progetto QuickTest** e scegliere Aggiungi riferimento al progetto dal menu di scelta rapida o dal menu di scelta **rapida.**
 
@@ -233,7 +239,7 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
    Viene aggiunto un riferimento al progetto **QuickDate**.
 
-   ![Screenshot del Esplora soluzioni che mostra un riferimento al progetto in Visual Studio 2019](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![Screenshot di un Esplora soluzioni che mostra un riferimento al progetto in Visual Studio 2019](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
 
 ::: moniker-end
 
@@ -279,7 +285,7 @@ La riga del file *Calendar.cs* contenente l'attributo <xref:System.Runtime.Compi
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**.
 
-   Le *pagine delle* proprietà per il progetto vengono aperte nella **scheda** Applicazione. Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
+   Le *pagine delle proprietà* per il progetto vengono aperte nella **scheda** Applicazione. Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
    ![Proprietà progetto](media/tutorial-projects-netcore-properties.png "Finestra di dialogo Proprietà progetto Visual Studio.")
 
@@ -293,7 +299,7 @@ Se si vuole verificare che il unit test funzioni, scegliere **Test** Esegui tutt
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Se si vuole verificare che il unit test funzioni, scegliere **Test** Esegui tutti i test  >   dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
 

@@ -8,25 +8,25 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
-ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
+ms.openlocfilehash: 6dc4137157e2fa5136a0b8c86c5cf72f284a9eb7
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105981290"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307376"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
 Visual Studio è progettato per essere installato su un computer connesso a Internet, poiché molti componenti vengono aggiornati regolarmente. Con alcuni passaggi aggiuntivi, tuttavia, è possibile distribuire Visual Studio anche in un ambiente in cui non è disponibile una connessione Internet.
 
-Il motore di installazione di Visual Studio installa solo contenuti attendibili. Per eseguire questa operazione, verificare le firme Authenticode dei contenuti scaricati e, prima di installarli, controllare l'attendibilità di tutti i contenuti. In questo modo l'ambiente rimane protetto dagli attacchi caratterizzati dalla compromissione del percorso di download. Il programma di installazione di Visual Studio richiede pertanto l'installazione e l'aggiornamento nel computer di un utente di diversi certificati Microsoft radice e intermedi standard. Se la macchina è stata mantenuta aggiornata con Windows Update, in genere i certificati di firma sono aggiornati. Se il computer è connesso a internet, durante l'installazione Visual Studio può aggiornare i certificati necessari per verificare le firme dei file. Se il computer è offline, i certificati devono essere aggiornati in un altro modo.
+Il motore di installazione di Visual Studio installa solo contenuti attendibili. Per eseguire questa operazione, verificare le firme Authenticode dei contenuti scaricati e, prima di installarli, controllare l'attendibilità di tutti i contenuti. In questo modo l'ambiente rimane protetto dagli attacchi caratterizzati dalla compromissione del percorso di download. Visual Studio di installazione richiede quindi l'installazione e l'aggiornamento di diversi certificati radice e intermedi Microsoft standard nel computer di un utente. Se la macchina è stata mantenuta aggiornata con Windows Update, in genere i certificati di firma sono aggiornati. Se il computer è connesso a internet, durante l'installazione Visual Studio può aggiornare i certificati necessari per verificare le firme dei file. Se il computer è offline, i certificati devono essere aggiornati in un altro modo.
 
 ## <a name="how-to-refresh-certificates-when-offline"></a>Come aggiornare i certificati offline
 
@@ -36,15 +36,15 @@ Sono disponibili tre opzioni per l'installazione o aggiornamento dei certificati
 
 ::: moniker range="vs-2017"
 
-Quando si crea un [layout di rete](../install/create-a-network-installation-of-visual-studio.md) o una [cache offline locale](../install/create-an-offline-installation-of-visual-studio.md), i certificati necessari vengono scaricati nella cartella Certificates. È quindi possibile installare manualmente i certificati facendo doppio clic su ogni file di certificato e seguendo la procedura guidata del gestore di certificati. Se viene richiesto di immettere una password, lasciare il campo vuoto.
+Quando si crea un [layout di rete](../install/create-a-network-installation-of-visual-studio.md) o una cache offline [locale,](../install/create-an-offline-installation-of-visual-studio.md)i certificati necessari vengono scaricati nella cartella Certificati. È quindi possibile installare manualmente i certificati facendo doppio clic su ogni file di certificato e seguendo la procedura guidata del gestore di certificati. Se viene richiesto di immettere una password, lasciare il campo vuoto.
 
 **Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, è possibile installare manualmente i certificati: fare clic su ognuno dei file di certificato con il pulsante destro del mouse, scegliere Installa certificato e quindi eseguire i vari passaggi della procedura guidata di Gestione certificati.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Quando si crea un [layout di rete](../install/create-a-network-installation-of-visual-studio.md) o una [cache offline locale](../install/create-an-offline-installation-of-visual-studio.md), i certificati necessari vengono scaricati nella cartella Certificates. È possibile installare i certificati manualmente. A questo scopo, fare clic con il pulsante destro del mouse su ogni file di certificato, selezionare Installa certificato e quindi eseguire la procedura guidata Gestione certificati. Se viene richiesto di immettere una password, lasciare il campo vuoto.
+Quando si crea un [layout di rete](../install/create-a-network-installation-of-visual-studio.md) o una cache offline [locale,](../install/create-an-offline-installation-of-visual-studio.md)i certificati necessari vengono scaricati nella cartella Certificati. È possibile installare i certificati manualmente. A questo scopo, fare clic con il pulsante destro del mouse su ogni file di certificato, selezionare Installa certificato e quindi eseguire la procedura guidata Gestione certificati. Se viene richiesto di immettere una password, lasciare il campo vuoto.
 
 ::: moniker-end
 
@@ -56,11 +56,11 @@ Per le aziende con computer offline che non hanno i certificati radice più rece
 
 Se si sta eseguendo lo scripting di distribuzione di Visual Studio in un ambiente offline per le workstation client, è necessario seguire questa procedura:
 
-1. Copiare lo [strumento Gestione certificati](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) nel percorso di installazione della cache locale o del layout di rete. Certmgr.exe non è incluso all'interno di Windows, ma è disponibile all'interno di [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Copiare [lo strumento Gestione certificati](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) nel layout di rete o nel percorso di installazione della cache locale. Certmgr.exe non è incluso all'interno di Windows, ma è disponibile all'interno di [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 2. Creare un file batch con i comandi seguenti:
 
-   ```cmd
+   ```shell
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
@@ -70,7 +70,7 @@ Se si sta eseguendo lo scripting di distribuzione di Visual Studio in un ambient
    
    In alternativa, creare un file batch che usa certutil.exe, disponibile in Windows, con i comandi seguenti:
    
-      ```cmd
+      ```shell
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
@@ -82,9 +82,9 @@ Se si sta eseguendo lo scripting di distribuzione di Visual Studio in un ambient
 
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Quali sono i file dei certificati nella cartella Certificates?
 
-* **manifestRootCertificate. cer** contiene:
+* **manifestRootCertificate.cer** contiene:
   * Certificato radice: **Microsoft Root Certificate Authority 2011**
-* **manifestCounterSignRootCertificate. cer** e **vs_installer_opc. Correttamente. cer** contiene:
+* **manifestCounterSignRootCertificate.cer** **e vs_installer_opc. RootCertificate.cer** contiene:
   * Certificato radice: **Microsoft Root Certificate Authority 2010**
  
 Il programma di installazione di Visual Studio richiede l'installazione dei soli certificati radice nel sistema. Tutti questi certificati sono necessari per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli aggiornamenti di Windows più recenti.
@@ -118,7 +118,7 @@ Se i nomi dei certificati non sono presenti nelle colonne **Rilasciato a**, è n
 
 ## <a name="install-visual-studio"></a>Installare Visual Studio
 
-Dopo l'installazione dei certificati nel computer client, è possibile [installare Visual Studio dalla cache locale](../install/create-an-offline-installation-of-visual-studio.md#step-3---install-visual-studio-from-the-local-cache)oppure [distribuire Visual Studio dalla condivisione di layout di rete](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) al computer client.
+Dopo aver installato i certificati nel computer client, è possibile installare Visual Studio dalla [cache](../install/create-an-offline-installation-of-visual-studio.md#step-3---install-visual-studio-from-the-local-cache)locale o distribuire Visual Studio dalla condivisione di [layout](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) di rete al computer client.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

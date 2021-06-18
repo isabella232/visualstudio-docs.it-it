@@ -16,16 +16,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9e9ee5972a0f1acba37a6b6b417df00a925e5558
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0e780cca2515118b92b71c406368d29424f7017c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112488"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307622"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Selezionare i percorsi di installazione in Visual Studio
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 è possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema cambiando il percorso di alcuni file. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
 
@@ -72,11 +72,11 @@ Pronto per iniziare? Ecco come.
 
 1. Nella sezione **Componenti condivisi, strumenti e SDK** specificare l'unità in cui si vogliono archiviare i file condivisi dalle installazioni side-by-side di Visual Studio. Anche i SDK e gli strumenti vengono archiviati in questa directory.
 
-   ![Sezione Componenti condivisi, strumenti e SDK della scheda Percorsi di installazione](media/vs-installation-locations-shared.png "Specificare il percorso in cui archiviare componenti condivisi, strumenti e SDK.")
+   ![Sezione Componenti condivisi, strumenti e SDK della scheda Percorsi di installazione](media/vs-installation-locations-shared.png "Specificare il percorso in cui archiviare componenti, strumenti e SDK condivisi.")
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Quando si installa Visual Studio scegliere la scheda **Percorsi di installazione**.
 

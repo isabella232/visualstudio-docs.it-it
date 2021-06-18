@@ -5,19 +5,19 @@ ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02496f230338e429b281f2b0d516cb9a06fe9e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5685de34235dcd9b903cbf5be6371ebf3f1e84c3
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868530"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307544"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio
 
@@ -37,7 +37,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Per installare un'istanza minima di Visual Studio, senza prompt interattivi ma con indicazione dello stato di avanzamento dell'operazione:
 
-  ```cmd
+  ```shell
    vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
@@ -45,7 +45,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Aggiornare un'istanza di Visual Studio dalla riga di comando, senza prompt interattivi ma con indicazione dello stato di avanzamento dell'operazione:
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --update --quiet --wait
    vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
    ```
@@ -55,7 +55,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Per installare automaticamente un'istanza desktop di Visual Studio, unitamente al Language Pack per la lingua francese, senza indicazione dello stato di avanzamento dell'operazione fino al completamento dell'installazione del prodotto.
 
-  ```cmd
+  ```shell
    vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
@@ -64,9 +64,9 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 ## <a name="using---wait"></a>Uso di -- wait
 
-* Usare in file batch o script per attendere che il completamento del programma di installazione di Visual Studio prima che venga eseguito il comando successivo. Per i file batch, una `%ERRORLEVEL%` variabile di ambiente conterrà il valore restituito del comando, come documentato nella pagina [usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md) . Alcune utilità di comando richiedono parametri aggiuntivi per attendere il completamento e ottenere il valore restituito del programma di installazione. Di seguito è riportato un esempio dei parametri aggiuntivi usati con il comando script di PowerShell 'Start-Process':
+* Usare in file batch o script per attendere che il completamento del programma di installazione di Visual Studio prima che venga eseguito il comando successivo. Per i file batch, una variabile di ambiente conterrà il valore restituito del comando, come documentato nella pagina Usare i parametri della riga di comando `%ERRORLEVEL%` [per Visual Studio](use-command-line-parameters-to-install-visual-studio.md) comando. Alcune utilità di comando richiedono parametri aggiuntivi per attendere il completamento e ottenere il valore restituito del programma di installazione. Di seguito è riportato un esempio dei parametri aggiuntivi usati con il comando script di PowerShell 'Start-Process':
 
-   ```cmd
+   ```shell
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
    echo %errorlevel%
    ```
@@ -94,7 +94,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Scaricare l'editor principale di Visual Studio (la configurazione di Visual Studio minima). (è incluso solo il Language Pack per la lingua inglese):
 
-  ```cmd
+  ```shell
    vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
@@ -102,7 +102,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Per scaricare i carichi di lavoro desktop e Web di .NET unitamente a tutti i componenti consigliati e all'estensione GitHub (è incluso solo il Language Pack per la lingua inglese):
 
-  ```cmd
+  ```shell
    vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
@@ -115,7 +115,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Per avviare un'installazione interattiva di tutti i carichi di lavoro e di tutti i componenti disponibili in Visual Studio Enterprise:
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --all
    ```
 
@@ -123,7 +123,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Per installare una seconda istanza denominata di Visual Studio Professional in un computer in cui è già installato Visual Studio Community, includendo il supporto per lo sviluppo Node.js:
 
-   ```cmd
+   ```shell
    vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
   ```
@@ -134,7 +134,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Per rimuovere il componente Strumenti di profilatura dall'istanza installata predefinita di Visual Studio:
 
-  ```cmd
+  ```shell
    vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
@@ -147,9 +147,22 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 * Per rimuovere il componente Strumenti di profilatura dall'istanza installata predefinita di Visual Studio:
 
-  ```cmd
+  ```shell
    vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" ^
+   --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
+   --passive
+  ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+* Per rimuovere il componente Strumenti di profilatura dall'istanza installata predefinita di Visual Studio:
+
+  ```shell
+   vs_enterprise.exe modify ^
+   --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
   ```
@@ -190,13 +203,13 @@ Questo comando dalla riga di comando è una **novità della versione 15.9**. Per
 
 * Uso di export per salvare la selezione di un'installazione:
 
-  ```cmd
+  ```shell
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
   ```
 
 * Uso di export per salvare una nuova selezione personalizzata:
 
-  ```cmd
+  ```shell
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
   ```
 
@@ -210,13 +223,13 @@ Questo parametro della riga di comando è una **novità della versione 15.9**. P
 
 * Uso di --config per installare i carichi di lavoro e i componenti di un file di configurazione dell'installazione salvato in precedenza:
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
   ```
 
 * Uso di --config per aggiungere i carichi di lavoro e i componenti a un'installazione esistente:
 
-  ```cmd
+  ```shell
   vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
   ```
 
@@ -224,7 +237,7 @@ Questo parametro della riga di comando è una **novità della versione 15.9**. P
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
+* [Visual Studio Administrator Guide](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

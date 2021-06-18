@@ -1,6 +1,6 @@
 ---
 title: Progetti e soluzioni di esercitazione di Visual Studio
-description: Informazioni su come creare una soluzione e un progetto in Visual Studio come sviluppatore Visual Basic.
+description: Informazioni su come creare una soluzione e un progetto in Visual Studio come Visual Basic sviluppatore.
 ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom:
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36aabdd07dd7fa966a31d8fc3844e68d816c59ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f27973fcfb76d019cff31787b117f05f8266ad8
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944524"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308181"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Informazioni su progetti e soluzioni di Visual Basic
 
@@ -28,21 +28,28 @@ Questa articolo introduttivo spiega che cosa significa creare una *soluzione* e 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+> Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+> Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> Se non è già stato installato Visual Studio Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 ::: moniker-end
 
 Una soluzione e un progetto verranno creati da zero, in un esercizio didattico che favorisce la comprensione del concetto di progetto. Nell'uso generico di Visual Studio è probabile che si usino alcuni dei numerosi *modelli* di progetto resi disponibili da Visual Studio per la creazione di un nuovo progetto.
 
 > [!NOTE]
-> Non è obbligatorio usare soluzioni e progetti per sviluppare app in Visual Studio. È anche possibile aprire semplicemente una cartella che contiene il codice e avviare la codifica, la compilazione e il debug. Se, ad esempio, si clona un repository [GitHub](https://github.com/) , è possibile che non contenga progetti e soluzioni di Visual Studio. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+> Non è obbligatorio usare soluzioni e progetti per sviluppare app in Visual Studio. È anche possibile aprire semplicemente una cartella che contiene il codice e avviare la codifica, la compilazione e il debug. Ad esempio, se si clona un repository [GitHub,](https://github.com/) potrebbe non contenere Visual Studio e soluzioni. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ## <a name="solutions-and-projects"></a>Soluzioni e progetti
 
@@ -56,7 +63,7 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 1. Aprire Visual Studio.
 
-1. Sulla barra dei menu scegliere **file** > **nuovo** > **progetto**.
+1. Sulla barra dei menu scegliere **File** > **nuovo** > **progetto**.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -72,7 +79,7 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 1. Aprire Visual Studio.
 
-2. Nella finestra Start scegliere **Crea un nuovo progetto**.
+2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
 3. Nella pagina **Crea un nuovo progetto** immettere **soluzione vuota** nella casella di ricerca, selezionare il modello **Soluzione vuota** e quindi scegliere **Avanti**.
 
@@ -90,7 +97,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range="vs-2017"
 
-1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **nuovo progetto**.
 
    Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
 
@@ -107,7 +114,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range=">=vs-2019"
 
-1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **nuovo progetto**.
 
    Viene visualizzata la finestra di dialogo **Aggiungi un nuovo progetto**.
 
@@ -132,7 +139,7 @@ Ora il progetto è vuoto. Aggiungiamo un file di codice.
 
 1. Nel menu di scelta rapida o nel menu a comparsa del progetto **QuickDate** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento**.
 
-   Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
+   Verrà **visualizzata la finestra di dialogo** Aggiungi nuovo elemento .
 
 1. Espandere **Elementi comuni**, quindi scegliere **Codice**. Nel riquadro centrale scegliere il modello dell'elemento **Classe**. Assegnare il nome **Calendar** alla classe e scegliere il pulsante **Aggiungi**.
 
@@ -232,7 +239,7 @@ La riga del file *Calendar.vb* contenente l'attributo <xref:System.Runtime.Compi
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**. È anche possibile fare doppio clic su **Progetto** in **Esplora soluzioni**.
 
-   Le *pagine delle proprietà* per il progetto vengono aperte nella scheda **applicazione** . Le pagine delle proprietà contengono diverse impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
+   Le *pagine delle proprietà* per il progetto vengono aperte nella **scheda** Applicazione. Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
    ![Proprietà progetto](../media/tutorial-projects-properties.png)
 
@@ -240,7 +247,7 @@ La riga del file *Calendar.vb* contenente l'attributo <xref:System.Runtime.Compi
 
 ## <a name="optional-run-the-test"></a>(Facoltativo) Eseguire il test
 
-Se si vuole verificare che il unit test funzioni, scegliere **test**  >  **Esegui**  >  **tutti i test** dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+Se si vuole verificare che il unit test funzioni, scegliere **Test** Esegui tutti i test  >    >   dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
 
 ![Team Explorer in Visual Studio mostra che il test è stato superato](../media/tutorial-projects-test-explorer.png)
 

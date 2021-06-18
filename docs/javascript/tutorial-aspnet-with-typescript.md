@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9a2d362bc9fd22f7bb1db2fa005534f2f67e3155
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 0728011c05d47996a313c11a18f31a196ec08e10
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111760965"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306499"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Esercitazione: Creare un'app ASP.NET Core con TypeScript in Visual Studio
 
@@ -31,6 +31,12 @@ Se non è già stato installato Visual Studio, passare alla pagina Visual Studio
 ::: moniker range=">=vs-2019"
 
 Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 ::: moniker-end
 
@@ -53,7 +59,7 @@ In questa esercitazione verranno illustrate le procedure per:
     Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
 
-    Se è necessario installare il carico di lavoro ma Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre la Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
+    Se è necessario installare il carico di lavoro ma Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
 
 ## <a name="create-a-new-aspnet-core-mvc-project"></a>Creare un nuovo progetto ASP.NET Core MVC
 
@@ -71,7 +77,7 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
     ::: moniker range=">=vs-2019"
     In Visual Studio 2019 scegliere **Crea un nuovo progetto** nella finestra iniziale. Se la finestra iniziale non è aperta, scegliere **Finestra**  >  **iniziale file**. Digitare **app** Web, scegliere **C#** come linguaggio, quindi **scegliere ASP.NET Core Web Application (Model-View-Controller)** e quindi **scegliere Avanti.** Nella schermata successiva assegnare un nome al progetto e quindi scegliere **Avanti.**
 
-    Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
+    Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo** progetto espandere **Visual C#** e quindi **scegliere .NET Core.** Nel riquadro centrale scegliere ASP.NET **Core Web Application - C#** e quindi scegliere **OK.**
@@ -239,7 +245,7 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella scripts e scegliere **Aggiungi**  >  **nuovo elemento**.
 
-1. Scegliere **File TypeScript**, libreria *dei tipi.ts* e scegliere **Aggiungi**.
+1. Scegliere **File TypeScript**, type *library.ts* e scegliere **Aggiungi**.
 
 1. In *library.ts* aggiungere il codice seguente.
 

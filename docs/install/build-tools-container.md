@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fc3133692007a53b48d658ed284d6af0bde0af4a
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: e29e780d146fec63bc1375ed16f72067f9b4ccee
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112043081"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307635"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installare Build Tools in un contenitore
 
@@ -91,7 +91,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    ```
 
    > [!TIP]
-   > Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory dei Visual Studio Build Tools componenti.](workload-component-id-vs-build-tools.md)
+   > Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory Visual Studio Build Tools dei componenti.](workload-component-id-vs-build-tools.md)
    >
 
    > [!WARNING]
@@ -103,7 +103,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    
    ::: moniker-end
 
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
 
    ```dockerfile
    # escape=`
@@ -137,7 +137,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    ```
 
    > [!TIP]
-   > Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory dei Visual Studio Build Tools componenti.](workload-component-id-vs-build-tools.md)
+   > Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory Visual Studio Build Tools dei componenti.](workload-component-id-vs-build-tools.md)
    >
 
    > [!WARNING]
@@ -164,7 +164,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
 
    ::: moniker-end
 
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
 
    ```shell
    docker build -t buildtools2019:latest -m 2GB .
@@ -192,7 +192,7 @@ Dopo avere creato un'immagine, è possibile eseguirla in un contenitore per eseg
 
    ::: moniker-end
 
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
 
    ```shell
    docker run -it buildtools2019
@@ -203,11 +203,11 @@ Dopo avere creato un'immagine, è possibile eseguirla in un contenitore per eseg
 Per usare questa immagine per il flusso di lavoro CI/CD è possibile pubblicarla nel proprio [Registro Azure Container](https://azure.microsoft.com/services/container-registry) o in un altro [registro Docker](https://docs.docker.com/registry/deploying) interno, in modo che i server possano semplicemente eseguirne il pull.
 
    > [!NOTE]
-   > Se l'avvio del contenitore Docker non riesce, è probabile che si sia verificato Visual Studio'installazione. È possibile aggiornare il Dockerfile per rimuovere il passaggio che chiama il comando Visual Studio batch. In questo modo è possibile avviare il contenitore Docker e leggere i log degli errori di installazione.
+   > Se l'avvio del contenitore Docker non riesce, è probabile che si sia verificato un Visual Studio di installazione. È possibile aggiornare dockerfile per rimuovere il passaggio che chiama il Visual Studio batch. In questo modo è possibile avviare il contenitore Docker e leggere i log degli errori di installazione.
    >
-   > Nel file Dockerfile rimuovere i `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` parametri e dal comando `&&` `ENTRYPOINT` . Il comando dovrebbe ora essere `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]` . Ricompilare quindi il Dockerfile ed eseguire il `run` comando per accedere ai file del contenitore. Per individuare i log degli errori di installazione, passare alla `$env:TEMP` directory e individuare il file `dd_setup_<timestamp>_errors.log` .
+   > Nel file Dockerfile rimuovere i `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` parametri e dal comando `&&` `ENTRYPOINT` . Il comando dovrebbe ora essere `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]` . Ricompilare quindi dockerfile ed eseguire il `run` comando per accedere ai file del contenitore. Per individuare i log degli errori di installazione, passare alla `$env:TEMP` directory e individuare il `dd_setup_<timestamp>_errors.log` file.
    >
-   > Dopo aver identificato e risolto il problema di installazione, è possibile aggiungere di nuovo i parametri e `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` al comando e `ENTRYPOINT` ricompilare il Dockerfile.
+   > Dopo aver identificato e risolto il problema di installazione, è possibile aggiungere nuovamente i parametri e al comando e `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` `ENTRYPOINT` ricompilare il Dockerfile.
    >
    > Per altre informazioni, vedere [Problemi noti dei contenitori](build-tools-container-issues.md).
 

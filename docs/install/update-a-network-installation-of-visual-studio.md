@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 74464aa76c24a798d33fa7639cdd0b6a07489bf7
-ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
+ms.openlocfilehash: b833551d00f4bd8fb158c848d3bf5b48173e563b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110660221"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306657"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
 
@@ -41,36 +41,36 @@ Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout
 
 * In primo luogo, ecco un esempio di come creare un layout con un carico di lavoro solo per la lingua inglese:
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * Di seguito viene illustrato come aggiornare il medesimo layout a una versione più recente. Non è necessario specificare i parametri della riga di comando aggiuntivi. Le impostazioni precedenti sono state salvate e verranno utilizzate da tutti i successivi comandi di layout in questa cartella di layout.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * Di seguito viene illustrato come aggiornare il layout a una versione più recente in modo automatico. L'operazione di layout esegue il processo di installazione in una nuova finestra della console. La finestra viene lasciata aperta in modo gli utenti possano visualizzare il risultato finale e un riepilogo degli eventuali errori verificatisi. Se si esegue un'operazione di layout in modo automatico (ad esempio, è disponibile uno script che viene eseguito regolarmente per aggiornare il layout alla versione più recente), usare il parametro `--passive` e il processo chiuderà automaticamente la finestra.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
 * Ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata.  Questo comando aggiunge il carico di *lavoro Sviluppo di Azure.*  Sia Managed Desktop che Azure sono ora inclusi in questo layout.  Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per l'inglese e tedesco.  E il layout viene aggiornato all'ultima versione disponibile.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > Un'operazione di aggiornamento non scarica o installa componenti facoltativi aggiuntivi nel layout o nel client. Se è necessario aggiungere o modificare componenti facoltativi, rimuovere prima di tutto i componenti facoltativi dal file di risposta e includere i nuovi componenti necessari nella `Layout.JSON` [](automated-installation-with-response-file.md) sezione "aggiungi" di `Layout.JSON` . Quindi, quando si esegue il comando update nel layout, i componenti appena aggiunti verranno scaricati nel layout. 
+    > Un'operazione di aggiornamento non scarica o installa componenti facoltativi aggiuntivi nel layout o nel client. Se è necessario aggiungere o modificare componenti facoltativi, rimuovere prima di tutto i componenti facoltativi dal file di risposta e includere i nuovi componenti necessari nella sezione `Layout.JSON` [](automated-installation-with-response-file.md) "aggiungi" di `Layout.JSON` . Quindi, quando si esegue il comando update nel layout, i componenti appena aggiunti verranno scaricati nel layout. 
     >
-    > Per installare questi nuovi componenti nel computer client, assicurarsi di eseguire questi tre passaggi. Verificare prima di tutto che il layout contenga i nuovi componenti come descritto in precedenza. Aggiornare quindi il client ai bit più recenti nel layout.  Infine, sempre nel client, eseguire un'operazione di modifica che installerà i nuovi componenti (aggiunti al layout) nel computer client.
+    > Per installare questi nuovi componenti nel computer client, assicurarsi di eseguire questi tre passaggi. Prima di tutto, verificare che il layout contenga i nuovi componenti come descritto in precedenza. Aggiornare quindi il client ai bit più recenti nel layout.  Infine, sempre nel client, eseguire un'operazione di modifica che installerà i nuovi componenti (aggiunti al layout) nel computer client.
 
 * E infine, ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata senza aggiornare la versione. Questo comando aggiunge il carico di *lavoro ASP.NET sviluppo Web.*  In questo layout sono ora inclusi i carichi di lavoro Sviluppo Web ASP.NET &, Azure e Managed Desktop. Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per inglese, tedesco e francese.  Tuttavia, il layout non è stato aggiornato all'ultima versione disponibile durante l'esecuzione di questo comando. Rimane alla versione esistente.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
@@ -98,6 +98,14 @@ A seconda del tipo di configurazione dell'ambiente di rete, un aggiornamento pu�
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+* Gli amministratori possono aggiornare distribuzioni client di Visual Studio senza alcuna interazione da parte dell'utente con due comandi separati:
+  * Aggiornare prima il programma di installazione di Visual Studio: <br>```vs_enterprise.exe --quiet --update```
+  * Aggiornare quindi l'applicazione Visual Studio: <br>```vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 > [!NOTE]
 > Usare il [comando vswhere.exe](tools-for-managing-visual-studio-instances.md) per identificare il percorso di installazione di un'istanza esistente di Visual Studio in un computer client.
 >
@@ -108,7 +116,7 @@ A seconda del tipo di configurazione dell'ambiente di rete, un aggiornamento pu�
 
 Utilizzare `--verify` per eseguire la verifica della cache offline fornita. Controlla se i file del pacchetto sono mancanti o non validi. Al termine della verifica, stampa l'elenco di file mancanti e non validi.
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --verify
 ```
 
@@ -126,7 +134,7 @@ Microsoft offre periodicamente aggiornamenti per Visual Studio, di conseguenza l
 
 Utilizzare `--fix` per eseguire la stessa verifica come `--verify` e inoltre tentare di risolvere i problemi identificati. Il processo `--fix` richiede una connessione a Internet, quindi verificare che il computer sia connesso a Internet prima di richiamare `--fix`.
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --fix
 ```
 
@@ -142,17 +150,17 @@ Alcuni file vengono salvati all'interno di ciascuna cartella "GUID". I due file 
 
 Gli esempi seguenti illustrano come utilizzare l’opzione --clean:
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
 ```
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <file-path-of-catalog2> …
 ```
 
-È possibile richiamare il vs_enterprise.exe all'interno di &lt;layoutDir&gt;. Ecco un esempio:
+È possibile richiamare il vs_enterprise.exe all'interno di &lt;layoutDir&gt;. Di seguito è riportato un esempio:
 
-```cmd
+```shell
 c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 

@@ -5,26 +5,26 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2c8510a1ba83243d2d92b538d80876a8b0f20079
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03a192657a46c2db15cb2d1121735905f06da478
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935656"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306670"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aggiornare Visual Studio secondo una baseline di manutenzione
 
-Visual Studio viene aggiornato spesso durante il ciclo di vita del prodotto. Sono disponibili due tipi di aggiornamenti: 
+Visual Studio viene aggiornato spesso durante il ciclo di vita del prodotto. Sono disponibili due tipi di aggiornamenti:
 
-* Aggiornamenti della versione **secondaria** &mdash; ad esempio, da 16,0 a 16,1 &mdash; che includono nuove funzionalità e componenti.  
+* **Aggiornamenti delle versioni secondarie** &mdash; ad esempio da 16.0 a 16.1 &mdash; che includono nuove funzionalità e componenti.  
 * **Aggiornamenti di servizio**: ad esempio dalla versione 16.0.4 alla versione 16.0.5, con le correzioni specifiche di problemi critici.
 
 Gli amministratori dell'organizzazione possono scegliere di mantenere i client su una baseline di manutenzione, supportata con gli aggiornamenti di manutenzione per un anno dopo il rilascio della baseline di manutenzione successiva.
@@ -49,9 +49,9 @@ Gli amministratori che usano un'installazione con layout di rete devono modifica
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>Installare una baseline di manutenzione tramite Internet
 
-Per un'installazione basata su Internet, aggiungere `--channelUri` con un manifesto di canale inesistente alla riga di comando usata per avviare il programma di installazione. In questo modo si impedisce a Visual Studio di usare la versione più recente disponibile per un aggiornamento. Ecco un esempio:
+Per un'installazione basata su Internet, aggiungere `--channelUri` con un manifesto di canale inesistente alla riga di comando usata per avviare il programma di installazione. In questo modo si impedisce a Visual Studio di usare la versione più recente disponibile per un aggiornamento. Di seguito è riportato un esempio:
 
-```cmd
+```shell
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
 ```
 
@@ -69,15 +69,27 @@ Nel caso di un'installazione basata su Internet, eseguire il nuovo programma di 
 
 1. Aggiornare il programma di installazione di Visual Studio:
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --quiet --update
     ```
 
+::: moniker range="vs-2019"
+ 
 2. Aggiornare l'applicazione Visual Studio:
-
-    ```cmd
+    ```shell
     vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
     ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+2. Aggiornare l'applicazione Visual Studio:
+    ```shell
+    vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
+    ```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -89,4 +101,4 @@ Nel caso di un'installazione basata su Internet, eseguire il nuovo programma di 
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Come definire impostazioni in un file di risposta](automated-installation-with-response-file.md)
 * [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Ciclo di vita e manutenzione del prodotto Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Visual Studio ciclo di vita e manutenzione del prodotto](/visualstudio/releases/2019/servicing/)

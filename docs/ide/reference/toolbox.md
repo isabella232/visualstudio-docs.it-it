@@ -1,6 +1,6 @@
 ---
 title: Finestra della casella degli strumenti
-description: Informazioni sulla finestra casella degli strumenti e sulla visualizzazione dei controlli che è possibile aggiungere ai progetti di Visual Studio.
+description: Informazioni sulla finestra Casella degli strumenti e su come vengono visualizzati i controlli che è possibile aggiungere Visual Studio progetti.
 ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: reference
@@ -15,44 +15,44 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b7eeefd157e99fc5214f29c220d94fd6e19772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a926084ccd8b1aafabb50f5a93f3f46d77bc6d4
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841899"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308467"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
-Nella finestra **Casella degli strumenti** sono visualizzati i controlli che è possibile aggiungere ai progetti di Visual Studio. Per aprire la **casella degli strumenti**, scegliere **Visualizza**  >  **casella degli strumenti** dalla barra dei menu o premere **CTRL** + **ALT** + **X**.
+Nella finestra **Casella degli strumenti** sono visualizzati i controlli che è possibile aggiungere ai progetti di Visual Studio. Per aprire **la Casella degli** strumenti , **scegliere**  >  **Visualizza** casella degli strumenti dalla barra dei menu o premere **CTRL** + **ALT** + **X.**
 
-![Screenshot della finestra della casella degli strumenti che mostra le opzioni nella sezione contenitori.](media/vs-2019/toolbox.png "Screenshot della finestra casella degli strumenti")
+![Screenshot della finestra Casella degli strumenti che mostra le opzioni nella sezione Contenitori.](media/vs-2019/toolbox.png "Screenshot della finestra Casella degli strumenti")
 
 È possibile trascinare diversi controlli sulla superficie della finestra di progettazione in uso nonché ridimensionare e posizionare tali controlli.
 
-La casella degli strumenti viene visualizzata insieme alle visualizzazioni della finestra di progettazione, ad esempio la visualizzazione progettazione di un file XAML o un progetto di app Windows Form. La **casella degli strumenti** visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente. È possibile eseguire una ricerca all'interno della **casella degli strumenti** per restringere ulteriormente gli elementi visualizzati.
+La casella degli strumenti viene visualizzata insieme alle visualizzazioni della finestra di progettazione, ad esempio la visualizzazione della finestra di progettazione di un file XAML o un progetto Windows Forms app. La **casella degli strumenti** visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente. È possibile eseguire una ricerca all'interno della **casella degli strumenti** per restringere ulteriormente gli elementi visualizzati.
 
 > [!NOTE]
 > Per alcuni tipi di progetto, nella **casella degli strumenti** potrebbe non essere visualizzato alcun elemento.
 
 La versione di.NET di destinazione del progetto influisce sul set di controlli visibili nella casella degli strumenti. Se necessario, è possibile modificare la versione del framework di destinazione dalle pagine delle proprietà del progetto. Selezionare il nodo del progetto in **Esplora soluzioni** e quindi scegliere **Progetto** > **Proprietà nomeprogetto** nella barra dei menu. Nella scheda **Applicazione** usare l'elenco a discesa **Framework di destinazione**.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-![Screenshot della finestra di dialogo dell'applicazione che mostra le opzioni nell'elenco a discesa Framework di destinazione.](media/vs-2019/toolbox-change-dotnet-version.png "Screenshot della finestra di dialogo in cui è possibile modificare la versione di .NET")
+![Screenshot della finestra di dialogo Applicazione che mostra le opzioni nell'elenco a discesa Framework di destinazione.](media/vs-2019/toolbox-change-dotnet-version.png "Screenshot della finestra di dialogo in cui è possibile modificare la versione di .NET")
 
 ::: moniker-end
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Gestire la finestra della casella degli strumenti e i relativi controlli
 
-Per impostazione predefinita, la **casella degli strumenti** viene compressa lungo il lato sinistro dell'IDE di Visual Studio e viene visualizzata quando il cursore viene spostato su di esso. È possibile bloccare la **casella degli strumenti**, facendo clic sull'icona **Blocca** nella barra degli strumenti della casella degli strumenti, in modo che resti aperta quando il cursore viene spostato. È anche possibile disancorare la finestra della **casella degli strumenti** e trascinarla in qualsiasi posizione sullo schermo. È possibile ancorare, disancorare e nascondere la **casella degli strumenti** facendo clic con il pulsante destro del mouse sulla relativa barra degli strumenti e scegliendo una delle opzioni.
+Per impostazione predefinita, **la casella** degli strumenti è compressa lungo il lato sinistro dell'IDE Visual Studio e viene visualizzata quando il cursore viene spostato su di esso. È possibile bloccare la **casella degli strumenti**, facendo clic sull'icona **Blocca** nella barra degli strumenti della casella degli strumenti, in modo che resti aperta quando il cursore viene spostato. È anche possibile disancorare la finestra della **casella degli strumenti** e trascinarla in qualsiasi posizione sullo schermo. È possibile ancorare, disancorare e nascondere la **casella degli strumenti** facendo clic con il pulsante destro del mouse sulla relativa barra degli strumenti e scegliendo una delle opzioni.
 
 > [!TIP]
-> Se la casella degli strumenti non viene più visualizzata come compressa lungo il lato sinistro dell'IDE di Visual Studio, è possibile aggiungerla di nuovo scegliendo **finestra**  >  **Reimposta layout finestra** dalla barra dei menu.
+> Se la casella degli strumenti non viene più visualizzata come compressa sul lato sinistro dell'IDE di Visual Studio, è possibile aggiungerla nuovamente scegliendo Reimposta layout finestra dalla barra  >   dei menu.
 
-È possibile ridisporre gli elementi in una scheda della **casella degli strumenti** o aggiungere schede ed elementi personalizzati usando i seguenti comandi nel menu di scelta rapida:
+È possibile ridisporre gli elementi in **una** scheda della casella degli strumenti o aggiungere schede ed elementi personalizzati usando i comandi seguenti nel menu di scelta rapida:
 
-- **Rinomina elemento: Rinomina** l'elemento selezionato.
+- **Rinomina elemento:** rinomina l'elemento selezionato.
 
 - **Elenco**: visualizza i controlli in un elenco verticale. Se deselezionati, i controlli vengono visualizzati in orizzontale.
 
@@ -60,7 +60,7 @@ Per impostazione predefinita, la **casella degli strumenti** viene compressa lun
 
 - **Scegli elementi**: apre la finestra di dialogo **Scegli elementi della Casella degli strumenti** che consente di specificare gli elementi visualizzati nella **casella degli strumenti**. È possibile visualizzare o nascondere un elemento selezionando o deselezionando la relativa casella di controllo.
 
-- **Ordina elementi alfabeticamente** : Ordina gli elementi in base al nome.
+- **Ordina elementi alfabeticamente:** ordina gli elementi in base al nome.
 
 - **Reimposta barra degli strumenti**: ripristina le impostazioni e gli elementi predefiniti della **casella degli strumenti**.
 
@@ -76,7 +76,7 @@ Per impostazione predefinita, la **casella degli strumenti** viene compressa lun
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per ulteriori informazioni su alcune delle schede della **casella degli strumenti** disponibili, esaminare i collegamenti seguenti:
+Per altre informazioni su alcune delle schede della casella degli strumenti disponibili, vedere i **collegamenti** seguenti:
 
 - [Casella degli strumenti, scheda Dati](../../ide/reference/toolbox-data-tab.md)
 - [Casella degli strumenti, Scheda Componenti](../../ide/reference/toolbox-components-tab.md)

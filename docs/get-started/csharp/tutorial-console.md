@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 7317af5667f09ff30d0f2cb54d1399da9d0358de
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 14128a6c5b533d1bf2fe573310c174f6b6a7f897
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113256"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308532"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: Creare una semplice app console C# in Visual Studio
 
@@ -28,13 +28,19 @@ In questa esercitazione per C# si userà Visual Studio per creare ed eseguire un
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 ::: moniker-end
 
@@ -46,7 +52,7 @@ Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto i
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu superiore scegliere **File**  >  **Nuovo**  >  **progetto.**
+2. Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **progetto**.
    In alternativa, premere **CTRL** + **MAIUSC** + **N**).
 
 3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **C#** e scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al file il nome **_Calculator_**.
@@ -69,28 +75,28 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
 
-1. Annullare dalla finestra **di dialogo Nuovo** progetto e  dalla barra dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità.**
+1. Annullare dalla finestra **di dialogo** Nuovo progetto e  dalla barra dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio 2019.
+1. Aprire Visual Studio.
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
    ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows dall'elenco** Piattaforma e **Console dall'elenco** dei tipi di progetto. 
 
-   Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il modello **Applicazione** console e quindi **scegliere Avanti.**
+   Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il modello **Applicazione console** e quindi **scegliere Avanti.**
 
     :::image type="content" source="./media/vs-2019/csharp-create-new-project-console-net-core.png" alt-text="Scegliere il modello C# per l'app console (.NET Framework)":::
 
    > [!NOTE]
-   > Se il modello Applicazione **console** non viene visualizzato, è possibile installarlo dalla **finestra Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se il modello Applicazione **console** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -100,13 +106,13 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *Calculator* nella casella **Nome del progetto**. Scegliere quindi **Avanti.**
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *Calculator* nella casella **Nome del progetto**. Scegliere quindi **Avanti**.
 
     :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="nella finestra &quot;Configura il nuovo progetto&quot;, denominare il progetto &quot;Calculator&quot;":::
    
-1. Nella finestra **Informazioni aggiuntive** dovrebbe essere già **selezionato .NET Core 3.1** per il framework di destinazione. In caso contrario, **selezionare .NET Core 3.1.** Scegliere quindi **Crea.**
+1. Nella finestra **Informazioni aggiuntive** è necessario che **.NET Core 3.1** sia già selezionato per il framework di destinazione. In caso contrario, **selezionare .NET Core 3.1.** Scegliere quindi **Crea**.
 
-    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="Nella finestra &quot;Informazioni aggiuntive&quot; assicurarsi che sia selezionato .NET Core 3.1":::
+    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="nella finestra &quot;Informazioni aggiuntive&quot; assicurarsi che sia selezionato .NET Core 3.1":::
 
    Visual Studio aprirà il nuovo progetto che include il codice "Hello World" predefinito.
 
@@ -139,7 +145,7 @@ Si inizierà con alcune operazioni matematiche di base su interi in C#.
     Sarà quindi possibile notare che la funzionalità IntelliSense in Visual Studio offrirà l'opzione per completare automaticamente l'inserimento.
 
     > [!NOTE]
-    > L'animazione seguente non è progettata per duplicare il codice precedente. Lo scopo è mostrare solo il funzionamento della funzionalità di completamento automatico.
+    > L'animazione seguente non è destinata a duplicare il codice precedente. È destinato solo a mostrare il funzionamento della funzionalità di completamento automatico.
 
     ![Animazione del codice matematico su un intero che illustra la funzionalità di completamento automatico di IntelliSense nell'IDE di Visual Studio](./media/integer-math-intellisense.gif)
 
@@ -616,7 +622,7 @@ Continuare con altre esercitazioni:
 
 :::moniker-end
 
-:::moniker range="vs-2019"
+:::moniker range=">=vs-2019"
 
 Continuare con la seconda parte di questa esercitazione:
 

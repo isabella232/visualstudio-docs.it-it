@@ -1,23 +1,23 @@
 ---
 title: Esempio avanzato per i contenitori
-description: Informazioni su un esempio avanzato per i contenitori docker. Questo esempio Dockerfile usa un tag di versione specifico dell'immagine Microsoft/DotNet-Framework.
+description: Informazioni su un esempio avanzato per i contenitori Docker. Questo Dockerfile di esempio usa un tag di versione specifico dell'immagine microsoft/dotnet-framework.
 ms.custom: SEO-VS-2020
 ms.date: 03/25/2020
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d8b2148dced2d08d04c73091375f91ab37732274
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2860a19592667008f585a4608eab23e0180dd2ac
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868732"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307700"
 ---
 # <a name="advanced-example-for-containers"></a>Esempio avanzato per i contenitori
 
@@ -27,7 +27,14 @@ Il Dockerfile di esempio in [Installare Build Tools in un contenitore](build-too
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2022"
+
+>[!IMPORTANT]
+> Visual Studio 2022 è attualmente in anteprima e non è concesso in licenza [per](https://visualstudio.microsoft.com/license-terms/vs2022-prerelease/) l'uso in ambienti di produzione.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
 
 Il Dockerfile di esempio in [Installare Build Tools in un contenitore](build-tools-container.md) usa sempre l'immagine [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) basata sull'immagine microsoft/windowsservercore più recente e il programma di installazione più recente di Visual Studio Build Tools. Se si pubblica questa immagine in un [registro Docker](https://azure.microsoft.com/services/container-registry) che viene reso disponibile per il pull, l'immagine potrebbe essere appropriata per molti scenari. Nella pratica, tuttavia, è più comune essere specifici in merito all'immagine di base usata, i file binari scaricati e le versioni degli strumenti installate.
 
@@ -153,6 +160,51 @@ ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.ex
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+>[!IMPORTANT]
+> Visual Studio 2022 è attualmente in anteprima e non è concesso in licenza [per](https://visualstudio.microsoft.com/license-terms/vs2022-prerelease/) l'uso in ambienti di produzione.
+
+```dockerfile
+# escape=`
+
+# Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
+# You could also use the immutable tag @sha256:324e9ab7262331ebb16a4100d0fb1cfb804395a766e3bb1806c62989d1fc1326
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
+FROM ${FROM_IMAGE}
+
+# Restore the default Windows shell for correct batch processing.
+SHELL ["cmd", "/S", "/C"]
+
+# Copy our Install script.
+COPY Install.cmd C:\TEMP\
+
+# Download collect.exe in case of an install failure.
+ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
+
+# Use the latest release channel. For more control, specify the location of an internal layout.
+ARG CHANNEL_URL=https://aka.ms/vs/17/preview/channel
+ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
+
+# Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+ADD https://aka.ms/vs/17/preview/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+    --installPath C:\BuildTools `
+    --channelUri C:\TEMP\VisualStudio.chman `
+    --installChannelUri C:\TEMP\VisualStudio.chman `
+    --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+    --remove Microsoft.VisualStudio.Component.Windows81SDK
+
+# Define the entry point for the Docker container.
+# This entry point starts the developer command prompt and launches the PowerShell shell.
+ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+```
+
+::: moniker-end
+
 Eseguire il comando seguente per creare l'immagine nella cartella di lavoro corrente:
 
 ::: moniker range="vs-2017"
@@ -171,11 +223,19 @@ docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+```shell
+docker build -t buildtools2022:17.0 -t buildtools2022:latest -m 2GB .
+```
+
+::: moniker-end
+
 Passare facoltativamente uno o entrambi gli argomenti `FROM_IMAGE` o `CHANNEL_URL` usando lo switch della riga di comando `--build-arg` per specificare un'immagine di base diversa o la posizione di un layout interno per mantenere un'immagine fissa.
 
-   > [!TIP]
-   > Per un elenco di carichi di lavoro e componenti, vedere la [directory componente Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
-   >
+> [!TIP]
+> Per un elenco dei carichi di lavoro e dei componenti, vedere la [directory dei Visual Studio Build Tools componenti.](workload-component-id-vs-build-tools.md)
+>
 
 ## <a name="diagnosing-install-failures"></a>Diagnosi degli errori di installazione
 
@@ -201,6 +261,22 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 ```shell
 > docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
+Sending build context to Docker daemon
+
+...
+Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
+ ---> Running in 4b62b4ce3a3c
+The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
+
+> docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
+```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+```shell
+> docker build -t buildtools2022:17.0 -t buildtools2022:latest -m 2GB .
 Sending build context to Docker daemon
 
 ...

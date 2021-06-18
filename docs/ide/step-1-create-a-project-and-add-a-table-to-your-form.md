@@ -1,6 +1,6 @@
 ---
 title: 'Passaggio 1: Creare un progetto e aggiungere una tabella al modulo'
-description: Informazioni su come creare il progetto di gioco di abbinamento e aggiungere una tabella al form.
+description: Informazioni su come creare il progetto Matching Game e aggiungere una tabella al modulo.
 ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4d500eb808e5a4f5d4c49cde9a84e740dc54d0
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: ed4c6b3c65cc7a4c68288c01964388bbf8ec54a0
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296612"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306423"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -27,7 +27,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ::: moniker range="vs-2017"
 
-1. Sulla barra dei menu scegliere **file** > **nuovo** > **progetto**.
+1. Sulla barra dei menu scegliere **File** > **nuovo** > **progetto**.
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
@@ -40,17 +40,17 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Nella finestra Start scegliere **Crea un nuovo progetto**.
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere Quindi Desktop **dall'elenco Tipo di** progetto. 
 
-   Dopo aver applicato il filtro del **tipo di progetto** , scegliere il modello **App Windows Form (.NET Framework)** per C# o Visual Basic, quindi scegliere **Avanti**.
+   Dopo aver applicato **il** filtro Tipo di progetto, scegliere il modello app Windows Forms **(.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
 
-   ![Scegliere il modello C# o Visual Basic per l'app Windows Form (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Se il modello **App Windows Forms (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
@@ -63,7 +63,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MatchingGame* nella casella **Nome del progetto**. Quindi scegliere **Crea**.
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MatchingGame* nella casella **Nome del progetto**. Scegliere quindi **Crea**.
 
 ::: moniker-end
 
@@ -119,12 +119,12 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
        > [!NOTE]
        > Il tipo di carattere Webdings include una serie di icone ed è fornito con il sistema operativo Windows. Nel gioco delle coppie, il giocatore deve riuscire ad accoppiare le icone, per cui si utilizza questo tipo di carattere per visualizzare le icone da accoppiare. Anziché inserire **c** nella proprietà **Text**, provare a immettere lettere diverse per vedere quali icone vengono visualizzate. Il punto esclamativo equivale a un ragno, la N maiuscola a un occhio e la virgola a un peperoncino.
 
-5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. **Premere CTRL** + Chiavi **C** oppure sulla barra dei menu scegliere **modifica**  >  **copia**. Quindi incollarlo. **Premere CTRL** + **V** Keys o nella barra dei menu scegliere **Edit**  >  **paste**. Una copia della prima etichetta viene visualizzata nella seconda cella di TableLayoutPanel. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a riempire tutte le celle.
+5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. (Scegliere **CTRL** + **Tasti C** oppure sulla barra dei menu scegliere  >  **Modifica copia.** Incollarlo quindi. (Scegliere **CTRL** + **Tasti V** oppure sulla barra dei menu scegliere **Modifica**  >  **Incolla.** Nella seconda cella di TableLayoutPanel viene visualizzata una copia della prima etichetta. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a riempire tutte le celle.
 
    > [!NOTE]
-   > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel, in modo da creare una posizione dove aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL** + **Z** oppure sulla barra dei menu scegliere **modifica**  >  **Annulla**.
+   > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel, in modo da creare una posizione dove aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL** Z oppure scegliere Modifica Annulla sulla +  barra dei   >  menu.
 
-    Il modulo è ora disposto. Dovrebbe essere simile all'immagine seguente.
+    A questo punto il modulo è strutturato. Dovrebbe essere simile all'immagine seguente.
 
     ![Form iniziale del gioco di abbinamenti](../ide/media/express_tut4step1.png)<br/>*Form iniziale del gioco di abbinamenti*
 

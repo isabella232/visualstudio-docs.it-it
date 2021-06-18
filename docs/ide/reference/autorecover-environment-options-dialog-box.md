@@ -1,6 +1,6 @@
 ---
 title: Salvataggio automatico, Ambiente, finestra di dialogo Opzioni
-description: Informazioni sulla finestra di dialogo ripristino automatico, ambiente, opzioni e su come viene usata per specificare se eseguire o meno il backup automatico dei file.
+description: Informazioni sulla finestra di dialogo Salvataggio automatico, Ambiente e opzioni e su come viene usata per specificare se eseguire o meno il backup automatico dei file.
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2020
 ms.topic: reference
@@ -19,39 +19,45 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 007e82ee7c1c2839ba266794432605f1f92a1669
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836488"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307791"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Salvataggio automatico, Ambiente, finestra di dialogo Opzioni
 
 Usare questa pagina nella finestra di dialogo **Opzioni** per specificare se eseguire o meno il backup automatico dei file. È anche possibile specificare se i file modificati devono essere ripristinati nel caso in cui Visual Studio si arresti in modo imprevisto.
 
-Per accedere a questa finestra di dialogo, passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Ripristino automatico**.
+Per accedere a questa finestra di dialogo, passare a **Strumenti**  >  **Opzioni**  >  **Ambiente**  >  **Salvataggio automatico**.
 
-:::image type="content" source="media/autorecover-options.png" alt-text="Screenshot della sezione autocover nella finestra di dialogo Opzioni":::
+:::image type="content" source="media/autorecover-options.png" alt-text="Screenshot della sezione Salvataggio automatico nella finestra di dialogo Opzioni":::
 
 **Salva automaticamente le informazioni ogni [n] minuti**
 
+::: moniker range=">=vs-2022"
+
+Usare questa opzione per personalizzare la frequenza con cui un file viene salvato automaticamente nell'editor. Per i file salvati in precedenza, Visual Studio una copia del file in ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [nomeprogetto]***. Se il file è nuovo e non è ancora stato salvato, Visual Studio automaticamente usando un nome file generato in modo casuale.
+
+::: moniker-end
+
 ::: moniker range="vs-2019"
 
-Usare questa opzione per personalizzare la frequenza con cui un file viene salvato automaticamente nell'editor. Per i file salvati in precedenza, Visual Studio 2019 versione 16,2 e successive salva una copia del file in ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [NomeProgetto]***. Se il file è nuovo e non è ancora stato salvato, Visual Studio lo salva automaticamente usando un nome file generato in modo casuale.
+Usare questa opzione per personalizzare la frequenza con cui un file viene salvato automaticamente nell'editor. Per i file salvati in precedenza, Visual Studio 2019 versione 16.2 e successive salva una copia del file in ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [projectname]***. Se il file è nuovo e non è ancora stato salvato, Visual Studio automaticamente usando un nome file generato in modo casuale.
 
 > [!NOTE]
-> Se si usa Visual Studio 2019 versione 16,1 o precedente, il percorso del file è *%USERPROFILE%\Documents\Visual Studio [versione] \backup file \\ [NomeProgetto]*. Per ulteriori informazioni, vedere la pagina della [cronologia delle note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
+> Se si usa Visual Studio 2019 versione 16.1 o precedente, il percorso del file è *%USERPROFILE%\Documents\Visual Studio [versione]\Backup Files \\ [projectname]*. Per altre informazioni, vedere la Visual Studio cronologia delle note sulla versione [2019.](/visualstudio/releases/2019/release-notes-history/)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Usare questa opzione per personalizzare la frequenza con cui un file viene salvato automaticamente nell'editor. Per i file salvati in precedenza, Visual Studio 2017 salva una copia del file in *%USERPROFILE%\Documents\Visual Studio [versione] \backup files \\ [NomeProgetto]*. Se il file è nuovo e non è ancora stato salvato, Visual Studio lo salva automaticamente usando un nome file generato in modo casuale.
+Usare questa opzione per personalizzare la frequenza con cui un file viene salvato automaticamente nell'editor. Per i file salvati in precedenza, Visual Studio 2017 salva una copia del file in *%USERPROFILE%\Documents\Visual Studio [version]\Backup Files \\ [projectname]*. Se il file è nuovo e non è ancora stato salvato, Visual Studio automaticamente usando un nome file generato in modo casuale.
 
 ::: moniker-end
 
-**Mantieni informazioni di salvataggio automatico per [n] giorni**
+**Mantenere le informazioni sul salvataggio automatico per [n] giorni**
 
 Usare questa opzione per specificare per quanto tempo i file creati per il salvataggio automatico devono restare memorizzati in Visual Studio.
 

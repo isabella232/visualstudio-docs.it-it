@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaba06b2da73fc0bc80219ce58baff49a760ebc0
-ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
+ms.openlocfilehash: f632922078383708319e610d82a4c94a58619424
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112066969"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306397"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Che cosa sono le soluzioni e i progetti Visual Studio?
 
@@ -92,9 +92,9 @@ La barra degli strumenti nella parte superiore di **Esplora soluzioni** include 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-![Screenshot della Esplora soluzioni con due progetti in Visual Studio 2019.](../ide/media/solution-explorer.png)
+![Screenshot della Esplora soluzioni con due progetti in Visual Studio.](../ide/media/solution-explorer.png)
 
 La barra degli strumenti nella parte superiore di **Esplora soluzioni** include pulsanti per passare da una visualizzazione della soluzione [](managing-project-and-solution-properties.md) a una visualizzazione cartella, filtrare le modifiche in sospeso, visualizzare tutti i file, comprimere tutti i nodi, visualizzare le pagine delle proprietà, visualizzare il codice in anteprima [nell'editor](writing-code-in-the-code-and-text-editor.md)di codice e altro ancora.
 

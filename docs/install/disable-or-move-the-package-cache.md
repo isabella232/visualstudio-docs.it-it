@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e328bf8420f9cc7cf207ede6b6447ed291b77745
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0584673880a56bbde0ef44ad14c24acca252c5a2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949454"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307479"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Disabilitare o spostare la cache dei pacchetti
 
@@ -34,7 +34,7 @@ Il programma di installazione li scarica solo se necessario e quindi, per rispar
 
 Prima di installare, modificare o ripristinare Visual Studio o altri prodotti con il nuovo programma di installazione, è possibile avviare il programma di installazione con l'opzione `--nocache`.
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" --nocache
 ```
 
@@ -42,7 +42,7 @@ Qualsiasi operazione eseguita su un prodotto rimuoverà tutti i pacchetti esiste
 
 Se si vuole abilitare nuovamente la cache, passare invece `--cache`. Verranno memorizzati nella cache solo i pacchetti necessari. Pertanto, se devono essere ripristinati tutti i pacchetti, prima di disconnettere Visual Studio dalla rete è necessario ripristinarlo.
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
