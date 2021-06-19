@@ -4,6 +4,7 @@ description: Informazioni su come creare una soluzione e un progetto in Visual S
 ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f27973fcfb76d019cff31787b117f05f8266ad8
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 813a6ce10b0c5bcc385ac72ba6fdf99495c457ee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308181"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384733"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Informazioni su progetti e soluzioni di Visual Basic
 
@@ -239,7 +240,7 @@ La riga del file *Calendar.vb* contenente l'attributo <xref:System.Runtime.Compi
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**. È anche possibile fare doppio clic su **Progetto** in **Esplora soluzioni**.
 
-   Le *pagine delle proprietà* per il progetto vengono aperte nella **scheda** Applicazione. Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
+   Le *pagine delle* proprietà per il progetto vengono aperte nella **scheda** Applicazione. Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
    ![Proprietà progetto](../media/tutorial-projects-properties.png)
 

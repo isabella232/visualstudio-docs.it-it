@@ -1,8 +1,8 @@
 ---
-title: Finestra di dialogo Microsoft Visual Studio debugger (generata eccezione) | Microsoft Docs
+title: Microsoft Visual Studio finestra di dialogo Debugger (eccezione generata) | Microsoft Docs
 titleSuffix: ''
-description: "Informazioni sulle operazioni da eseguire quando si verifica un'eccezione che il programma deve gestire. È possibile: 1) interrompere il debugger. 2) continua; o 3) ignora."
-ms.custom: SEO-VS-2020, seodec18
+description: "Informazioni su cosa fare quando si verifica un'eccezione che il programma deve gestire. È possibile: 1) interrompere il debugger; 2) continuare; o 3) ignorare."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,19 +23,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2982912a0bf165f25b7777311d6db9a1bbe01a8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7a4b92a3ec5c6876fae3054b692ff46f26e82cd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930278"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387047"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>finestra di dialogo Debugger di Microsoft Visual Studio (generata eccezione)
 Si è verificata un'eccezione nel programma. In questa finestra di dialogo è indicato il tipo di eccezione generata. Il codice deve gestire questa eccezione. Per la gestione dell'eccezione sono disponibili le seguenti opzioni:
 
- **Interrompi** Consente di interrompere l'esecuzione nel debugger. Il gestore dell'eccezione non viene richiamato prima dell'interruzione, ma solo se si sceglie di continuare dopo l'interruzione.
+ **Interrompi** Consente l'interruzione dell'esecuzione nel debugger. Il gestore dell'eccezione non viene richiamato prima dell'interruzione, ma solo se si sceglie di continuare dopo l'interruzione.
 
- **Continua** Consente di continuare l'esecuzione, concedendo al gestore di eccezioni la possibilità di gestire l'eccezione. Questa opzione non è disponibile per alcuni tipi di eccezioni. **Continua** consentirà all'applicazione di proseguire. In un'applicazione nativa, l'eccezione verrà generata nuovamente. In un'applicazione gestita, il programma verrà interrotto oppure l'eccezione verrà gestita da un'applicazione host.
+ **Continua** Consente di continuare l'esecuzione, offrendo al gestore di eccezioni la possibilità di gestire l'eccezione. Questa opzione non è disponibile per alcuni tipi di eccezioni. **Continua** consentirà all'applicazione di proseguire. In un'applicazione nativa, l'eccezione verrà generata nuovamente. In un'applicazione gestita, il programma verrà interrotto oppure l'eccezione verrà gestita da un'applicazione host.
 
 > [!NOTE]
 > Non è possibile scegliere di continuare dopo un'eccezione non gestita nel codice gestito. Se si sceglie **Continua** dopo un'eccezione non gestita nel codice gestito, il debug verrà interrotto.

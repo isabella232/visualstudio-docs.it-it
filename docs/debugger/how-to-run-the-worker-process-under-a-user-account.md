@@ -1,7 +1,7 @@
 ---
 title: Eseguire un processo di lavoro con un account utente | Microsoft Docs
-description: Configurare il computer in modo che sia possibile eseguire il processo di lavoro ASP.NET (aspnet_wp.exe o w3wp.exe) con un account utente in Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+description: Configurare il computer in modo da poter eseguire il processo di lavoro ASP.NET (aspnet_wp.exe o w3wp.exe) con un account utente in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8642ed1643b88cdcb28bfa8cabef9200a59cb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 752d09a0d0c6fe49e49e1298d475c90c86991836
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881308"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384642"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.
@@ -88,5 +88,5 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 13. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà file ASP.NET temporanei** .
 
 ## <a name="see-also"></a>Vedi anche
-- [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Debug di ASP.NET: requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)
+- [Eseguire il debug ASP.NET applicazioni](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [ASP.NET debug: requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)

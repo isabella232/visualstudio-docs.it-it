@@ -1,7 +1,7 @@
 ---
-title: Individuare chi passa un valore di parametro errato | Microsoft Docs
-description: È possibile scoprire quale codice sta chiamando la funzione e passando un valore di parametro non corretto. Per informazioni sull'uso di un punto di interruzione condizionale, vedere.
-ms.custom: SEO-VS-2020, seodec18
+title: Scoprire chi sta passando un valore di parametro errato | Microsoft Docs
+description: È possibile individuare il codice che chiama la funzione e passare un valore di parametro non corretto. Informazioni su come usare un punto di interruzione condizionale a tale scopo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4b3c41b46817d15a13626983ccf55ffa9acc5f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b2f747e2f92b7817530fe12e14f8f95a9bfbe791
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155180"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386917"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Come è possibile individuare chi passa un valore di parametro errato?
 ## <a name="problem-description"></a>Descrizione del problema
@@ -42,7 +42,7 @@ ms.locfileid: "102155180"
 
 2. Fare clic con il pulsante destro del mouse sul punto di interruzione e scegliere **Condizione**.
 
-3. Nella finestra di dialogo **Condizione punto di interruzione** selezionare la casella di controllo **Condizione**. Vedere punti di [interruzione avanzati](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+3. Nella finestra di dialogo **Condizione punto di interruzione** selezionare la casella di controllo **Condizione**. Vedere [Punti di interruzione avanzati](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
 4. Nella casella di testo immettere un'espressione, ad esempio `Var==3`, in cui `Var` è il nome del parametro che contiene il valore errato e `3` il valore errato passato.
 
@@ -50,9 +50,9 @@ ms.locfileid: "102155180"
 
 6. Eseguire nuovamente il programma. Il punto di interruzione causa l'arresto del programma all'inizio della funzione, quando il parametro `Var` ha valore `3`.
 
-7. Utilizzare la finestra Stack di chiamate per individuare la funzione chiamante e passare al relativo codice sorgente. Per altre informazioni, vedere [procedura: usare la finestra stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
+7. Utilizzare la finestra Stack di chiamate per individuare la funzione chiamante e passare al relativo codice sorgente. Per altre informazioni, vedere [Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
+- [Domande frequenti sul debug di codice nativo](../debugger/debugging-native-code-faqs.md)
 - [Punti di interruzione](/previous-versions/ktf38f66(v=vs.100))
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

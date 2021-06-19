@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di una violazione di accesso C++ | Microsoft Docs
-description: Vedere suggerimenti sulla risoluzione dei problemi relativi a una violazione di accesso quando più di un puntatore è un candidato. Le versioni recenti di Visual Studio denominano il puntatore errato.
-ms.custom: SEO-VS-2020, seodec18
+description: Vedere i suggerimenti per la risoluzione di una violazione di accesso quando più puntatori sono candidati. Le versioni recenti di Visual Studio il puntatore errant.
+ms.custom: SEO-VS-2020
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f7e33ff34357dc0aa258f179f55d379bdf05636
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3689942c9db9fde3598590cf30100fc590c50753
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904316"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387034"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Come è possibile eseguire il debug di una violazione di accesso C++?
 
@@ -76,9 +76,9 @@ int main() {
 
 Se si esegue questo codice in Visual Studio 2015 Update 1, dovrebbe comparire la finestra di dialogo di eccezione seguente:
 
-![Screenshot di una finestra di dialogo Microsoft Visual Studio eccezione, che mostra una violazione di accesso in lettura per "A->B was nullptr". Viene selezionato il pulsante Interrompi.](../debugger/media/accessviolationcplus.png)
+![Screenshot di una finestra Microsoft Visual Studio di eccezione, che mostra una violazione di accesso in lettura per "A->B era nullptr". Il pulsante Interrompi è selezionato.](../debugger/media/accessviolationcplus.png)
 
-Se non è possibile determinare perché il puntatore ha causato una violazione di accesso, tracciare il codice per assicurarsi che il puntatore che provoca il problema sia stato assegnato correttamente.  Se viene passato come parametro, assicurarsi che venga passato correttamente e che non si crei accidentalmente una [copia superficiale](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Verificare quindi che i valori non vengano involontariamente modificati in qualche punto del programma creando un punto di interruzione dei dati per il puntatore in questione per assicurarsi che non venga modificato altrove nel programma. Per ulteriori informazioni sui punti di interruzione dei dati, vedere la relativa sezione in [Using Breakpoints](../debugger/using-breakpoints.md).
+Se non è possibile determinare perché il puntatore ha causato una violazione di accesso, tracciare il codice per assicurarsi che il puntatore che provoca il problema sia stato assegnato correttamente.  Se viene passato come parametro, assicurarsi che venga passato correttamente e che non si crei accidentalmente una [copia superficiale.](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) Verificare quindi che i valori non vengano involontariamente modificati in qualche punto del programma creando un punto di interruzione dei dati per il puntatore in questione per assicurarsi che non venga modificato altrove nel programma. Per ulteriori informazioni sui punti di interruzione dei dati, vedere la relativa sezione in [Using Breakpoints](../debugger/using-breakpoints.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
+- [Domande frequenti sul debug di codice nativo](../debugger/debugging-native-code-faqs.md)

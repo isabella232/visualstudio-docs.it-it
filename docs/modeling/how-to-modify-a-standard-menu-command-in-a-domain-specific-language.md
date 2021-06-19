@@ -1,38 +1,38 @@
 ---
-title: Modificare il comando di menu standard in DSL
-description: Informazioni su come è possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL.
+title: Comando di menu Modifica standard in DSL
+description: Informazioni su come modificare il comportamento di alcuni dei comandi standard definiti automaticamente nel DSL.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b44631971db277adcb0292f43a8592775fb3a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccbc82801c3570c74e96010d5f9fc0e0e7940937
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922683"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387099"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio
 
-È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare il **taglio** in modo che escluda le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare **Taglia in** modo da escludere le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Se si desidera creare comandi di menu personalizzati, vedere [procedura: aggiungere un comando al menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Per creare comandi di menu personalizzati, vedere [Procedura: Aggiungere un comando al menu di scelta rapida.](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 
 ## <a name="what-commands-can-you-modify"></a>Comandi modificabili
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Per trovare i comandi modificabili
 
-1. Nel progetto `DslPackage` aprire `GeneratedCode\CommandSet.cs`. Questo file C# si trova in Esplora soluzioni come filiale di `CommandSet.tt` .
+1. Nel progetto `DslPackage` aprire `GeneratedCode\CommandSet.cs`. Questo file C# è disponibile in Esplora soluzioni come filiale di `CommandSet.tt` .
 
-2. Trova le classi in questo file i cui nomi terminano con " `CommandSet` ", ad esempio `Language1CommandSet` e `Language1ClipboardCommandSet` .
+2. Trovare le classi in questo file i cui nomi terminano con " `CommandSet` ", ad esempio `Language1CommandSet` e `Language1ClipboardCommandSet` .
 
 3. In ogni classe di set di comandi digitare "`override`" seguito da uno spazio. IntelliSense mostrerà un elenco dei metodi di cui è possibile eseguire l'override. Ogni comando ha una coppia di metodi i cui nomi iniziano con "`ProcessOnStatus`" e "`ProcessOnMenu`".
 
@@ -55,7 +55,7 @@ Creare un nuovo file contenente una dichiarazione parziale della classe di set d
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. In **DslPackage** creare una cartella denominata **codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs` .
+2. In **DslPackage** creare una cartella denominata **Codice personalizzato.** In questa cartella creare un nuovo file di classe denominato `CommandSet.cs` .
 
 3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:
 
@@ -68,11 +68,11 @@ Creare un nuovo file contenente una dichiarazione parziale della classe di set d
     ```
 
     > [!NOTE]
-    > Se è stato usato il modello di file di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi sia il nome della classe.
+    > Se è stato usato il modello di file di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi che il nome della classe.
 
 ## <a name="override-the-command-methods"></a>Eseguire l'override dei metodi dei comandi
 
-Alla maggior parte dei comandi sono associati due metodi: il metodo con un nome come `ProcessOnStatus` ... determina se il comando deve essere visibile e abilitato. Viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e deve essere eseguito rapidamente e senza apportare modifiche. `ProcessOnMenu`... viene chiamato quando l'utente fa clic sul comando e deve eseguire la funzione del comando. Potrebbe essere necessario eseguire l'override di uno o entrambi i metodi.
+La maggior parte dei comandi ha due metodi associati: il metodo con un nome come `ProcessOnStatus` ... determina se il comando deve essere visibile e abilitato. Viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e deve essere eseguito rapidamente e senza apportare modifiche. `ProcessOnMenu`... viene chiamato quando l'utente fa clic sul comando e deve eseguire la funzione del comando. Potrebbe essere necessario eseguire l'override di uno o entrambi i metodi.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Per cambiare la situazione in cui il comando viene visualizzato in un menu
 
@@ -108,7 +108,7 @@ Il metodo ProcessOnStatus non deve creare, eliminare o aggiornare elementi nell'
 
 ### <a name="to-change-the-behavior-of-the-command"></a>Per cambiare il comportamento del comando
 
-Eseguire l'override di metodo... Metodo. L'esempio seguente impedisce all'utente di eliminare più di un elemento per volta, anche usando CANC.
+Eseguire l'override di ProcessOnMenu... Metodo. L'esempio seguente impedisce all'utente di eliminare più di un elemento per volta, anche usando CANC.
 
 ```csharp
 /// <summary>
@@ -125,7 +125,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }
 ```
 
-Se il codice apporta modifiche all'archivio, ad esempio creando, eliminando o aggiornando elementi o collegamenti, è necessario farlo in una transazione. Per ulteriori informazioni, vedere [come creare e aggiornare elementi del modello](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+Se il codice apporta modifiche all'archivio, ad esempio creando, eliminando o aggiornando elementi o collegamenti, è necessario farlo in una transazione. Per altre informazioni, vedere [How to Create and Update model elements](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="write-the-code-of-the-methods"></a>Scrivere il codice dei metodi
 
@@ -133,17 +133,17 @@ I frammenti seguenti sono spesso utili in questi metodi:
 
 - `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
-- `this.IsDiagramSelected()` - `true` Se l'utente ha fatto clic su una parte vuota del diagramma.
+- `this.IsDiagramSelected()` - `true` se l'utente ha fatto clic su una parte vuota del diagramma.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` -l'utente non ha selezionato più forme
+- `this.IsSingleSelection()` - L'utente non ha selezionato più forme
 
-- `this.SingleSelection` -la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse
+- `this.SingleSelection` : forma o diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse
 
 - `shape.ModelElement as MyLanguageElement` : elemento del modello rappresentato da una forma.
 
-Per ulteriori informazioni su come passare da un elemento all'altro e su come creare oggetti e collegamenti, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
+Per altre informazioni su come spostarsi da un elemento all'altro e su come creare oggetti e collegamenti, vedere Esplorazione e aggiornamento di [un modello nel codice programma.](../modeling/navigating-and-updating-a-model-in-program-code.md)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -153,4 +153,4 @@ Per ulteriori informazioni su come passare da un elemento all'altro e su come cr
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Riferimenti sullo schema XML VSCT](../extensibility/vsct-xml-schema-reference.md)
-- [Esempio di diagrammi del circuito VMSDK. Personalizzazione DSL completa](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK - Esempio di diagrammi di circuito. Personalizzazione DSL completa](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

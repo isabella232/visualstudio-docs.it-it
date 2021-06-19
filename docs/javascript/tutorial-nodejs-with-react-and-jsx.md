@@ -1,7 +1,7 @@
 ---
 title: Creare un'app Node.js e React
-description: Informazioni su come creare un progetto Node.js'applicazione Web da un Visual Studio modello.
-ms.custom: ''
+description: Informazioni su come creare un progetto Node.js'applicazione Web da un Visual Studio personalizzato.
+ms.custom: vs-acquisition
 ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 80516adffcb058d6ce28751e7a9f30002ca3a640
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 9a45be2c18466754fba5469c59396f7a7791156d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729299"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386839"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -60,7 +60,7 @@ webpack aggrega i file JavaScript per consentirne l'esecuzione in un browser. Pu
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se non è ancora stato installato Visual Studio 2019, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio 2019, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
@@ -74,7 +74,7 @@ webpack aggrega i file JavaScript per consentirne l'esecuzione in un browser. Pu
 
     Questa esercitazione è stata testata con la versione 12.6.2.
 
-    Se non è installato, è consigliabile installare la versione LTS dal sito Web [ diNode.js](https://nodejs.org/en/download/) per una migliore compatibilità con framework e librerie esterni. Node.js è progettato per architetture a 32 bit e a 64 bit. Gli Node.js in Visual Studio, inclusi nel carico di lavoro Node.js, supportano entrambe le versioni. Ne è necessario solo uno e Node.js programma di installazione ne supporta solo uno alla volta.
+    Se non è installata, è consigliabile installare la versione LTS dal sito Web [Node.js](https://nodejs.org/en/download/) per una migliore compatibilità con framework e librerie esterni. Node.js è progettato per architetture a 32 bit e a 64 bit. Gli Node.js in Visual Studio, inclusi nel carico di lavoro Node.js, supportano entrambe le versioni. Ne è necessario solo uno e Node.js programma di installazione ne supporta solo uno alla volta.
 
     In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non rileva un runtime installato, è possibile configurare il progetto in modo che punti al runtime installato nella pagina delle proprietà (dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto, scegliere Proprietà **(o** premere **ALT** INVIO) e impostare il  +   **percorsoNode.exe**). È possibile usare un'installazione globale di Node.js o specificare il percorso di un interprete locale in ogni progetto Node.js progetto. 
 
@@ -92,9 +92,9 @@ Per prima cosa creare un progetto di applicazione Web Node.js.
     Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu superiore scegliere **File** New Project  >  **(Nuovo**  >  **progetto).** Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank**, quindi scegliere **OK**.
+    Nella barra dei menu superiore scegliere **File**  >  **Nuovo**  >  **progetto.** Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank**, quindi scegliere **OK**.
     ::: moniker-end
-    Se il modello di progetto Applicazione **Web Node.js** vuoto non è visualizzato, è necessario aggiungere il carico di **lavoro** sviluppoNode.js distribuzione. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
+    Se il modello di progetto Applicazione **Web Node.js** vuoto non viene visualizzato, è necessario aggiungere il carico di **Node.js di** sviluppo. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 
     Visual Studio crea la nuova soluzione e apre il progetto.
 
@@ -106,7 +106,7 @@ Per prima cosa creare un progetto di applicazione Web Node.js.
 
     (3) Il nodo npm visualizza tutti i pacchetti npm eventualmente installati. È possibile fare clic con il pulsante destro del mouse sul nodo npm per cercare e installare i pacchetti npm utilizzando una finestra di dialogo o per installare e aggiornare i pacchetti usando le impostazioni in *package.json* e fare clic con il pulsante destro del mouse sulle opzioni nel nodo npm.
 
-    (4) *package.json* è un file utilizzato da npm per gestire le dipendenze e le versioni dei pacchetti per i pacchetti installati localmente. Per altre informazioni, vedere [Gestire i pacchetti npm](../javascript/npm-package-management.md).
+    (4) *package.json* è un file utilizzato da npm per gestire le dipendenze e le versioni dei pacchetti per i pacchetti installati localmente. Per altre informazioni, vedere [Gestire i pacchetti npm.](../javascript/npm-package-management.md)
 
     (5) I file di progetto come *server.js* vengono visualizzati sotto il nodo del progetto. *server.js* è il file di avvio del progetto e per questo motivo viene visualizzato in **grassetto**. Impostare il file di avvio facendo clic con il pulsante destro del mouse su un file del progetto e selezionando **Imposta come file di avvio Node.js**.
 
@@ -125,7 +125,7 @@ Per essere eseguita correttamente, l'app richiede vari moduli npm.
 
 1. In Esplora soluzioni (riquadro destro), fare clic con il pulsante destro del mouse sul nodo **npm** nel progetto e scegliere **Installa nuovi pacchetti npm**.
 
-    Nella finestra di dialogo **Installa nuovi pacchetti npm** è possibile scegliere di installare la versione più recente dei pacchetti o specificare la versione desiderata. Se si sceglie di installare la versione corrente di questi pacchetti, ma si verificano errori imprevisti in un secondo momento, è possibile installare le versioni esatte del pacchetto descritte più avanti in questi passaggi.
+    Nella finestra di dialogo **Installa nuovi pacchetti npm** è possibile scegliere di installare la versione più recente dei pacchetti o specificare la versione desiderata. Se si sceglie di installare la versione corrente di questi pacchetti, ma si verificano errori imprevisti in un secondo momento, è possibile installare le versioni esatte dei pacchetti descritte più avanti in questi passaggi.
 
 1. Nella finestra di dialogo **Installa nuovi pacchetti npm** cercare il pacchetto react e selezionare **Installa pacchetto** per installarlo.
 
@@ -135,7 +135,7 @@ Per essere eseguita correttamente, l'app richiede vari moduli npm.
 
     Il file *package.json* del progetto viene aggiornato con le nuove informazioni sul pacchetto, inclusa la versione del pacchetto.
 
-1. Anziché usare l'interfaccia utente per cercare e aggiungere il resto dei pacchetti uno alla volta, incollare il codice seguente *package.jsin*. A tale scopo, aggiungere una sezione `dependencies` con il codice seguente:
+1. Invece di usare l'interfaccia utente per cercare e aggiungere il resto dei pacchetti uno alla volta, incollare il codice *seguentepackage.jsin*. A tale scopo, aggiungere una sezione `dependencies` con il codice seguente:
 
     ```json
     "dependencies": {
@@ -150,7 +150,7 @@ Per essere eseguita correttamente, l'app richiede vari moduli npm.
     }
     ```
 
-    Se la versione del modello vuoto in uso contiene già una sezione `dependencies`, sostituirla con il codice JSON precedente. Per altre informazioni sull'uso di questo file, vederepackage.js[ sulla configurazione](../javascript/configure-packages-with-package-json.md).
+    Se la versione del modello vuoto in uso contiene già una sezione `dependencies`, sostituirla con il codice JSON precedente. Per altre informazioni sull'uso di questo file, vederepackage.js[ sulla configurazione](../javascript/configure-packages-with-package-json.md)di .
 
 1. Salvare le modifiche.
 
@@ -398,20 +398,20 @@ Per questo scenario, usare Chrome.
 
 1. Chiudere tutte le finestre per il browser di destinazione.
 
-   Altre istanze del browser possono impedire l'apertura del browser con il debug abilitato. Le estensioni del browser potrebbero essere in esecuzione e impedire la modalità di debug completo, quindi potrebbe essere necessario aprire Gestione attività per trovare istanze impreviste di Chrome.
+   Altre istanze del browser possono impedire l'apertura del browser con il debug abilitato. Le estensioni del browser potrebbero essere in esecuzione e impedire la modalità di debug completa, quindi potrebbe essere necessario aprire Gestione attività per trovare istanze impreviste di Chrome.
 
    ::: moniker range=">=vs-2019"
-   Per Microsoft Edge (Chromium), arrestare anche tutte le istanze di Chrome. Poiché entrambi i browser condividono la codebase di chromium, questo offre i risultati migliori.
+   Per Microsoft Edge (Chromium), arrestare anche tutte le istanze di Chrome. Poiché entrambi i browser condividono la codebase del cromo, questo offre i risultati migliori.
    ::: moniker-end
 
 2. Avviare il browser con il debug abilitato.
 
     ::: moniker range=">=vs-2019"
-    A partire da Visual Studio 2019, è possibile impostare il flag all'avvio del browser selezionando Esplora con > dalla barra degli strumenti `--remote-debugging-port=9222` **Debug,**  quindi scegliendo Aggiungi e quindi impostando il flag nel campo Argomenti.  Usare un nome descrittivo diverso per il browser, ad esempio **Edge with Debugging (Edge con debug)** **o Chrome with Debugging (Chrome con debug).** Per informazioni dettagliate, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-v16.2).
+    A partire da Visual Studio 2019, è possibile impostare il flag all'avvio del browser selezionando Sfoglia con > dalla barra degli strumenti Debug, quindi scegliendo Aggiungi e quindi impostando il flag nel campo `--remote-debugging-port=9222` Argomenti.     Usare un nome descrittivo diverso per il browser, ad **esempio Edge con debug** o Chrome con **debug**. Per informazioni dettagliate, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-v16.2).
 
     ![Impostare il browser per l'apertura con il debug abilitato](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
-    In alternativa, aprire il **comando Esegui** dal pulsante **Start** di Windows (fare clic con il pulsante destro del mouse e scegliere **Esegui)** e immettere il comando seguente:
+    In alternativa, aprire il **comando Esegui** dal pulsante **Start** di Windows (fare clic con il pulsante destro del mouse e scegliere **Esegui**) e immettere il comando seguente:
 
     `msedge --remote-debugging-port=9222`
 
@@ -428,23 +428,23 @@ Per questo scenario, usare Chrome.
 
     Verrà avviato il browser con il debug abilitato.
 
-    L'app non è ancora in esecuzione, quindi si ottiene una pagina vuota del browser.
+    L'app non è ancora in esecuzione, quindi si ottiene una pagina del browser vuota.
 
-### <a name="attach-the-debugger-to-client-side-script"></a>Collegare il debugger allo script lato client
+### <a name="attach-the-debugger-to-client-side-script"></a>Collegare il debugger allo script sul lato client
 
 1. Passare a Visual Studio e quindi impostare un punto di interruzione nel codice sorgente, *app-bundle.js* *o app.tsx*.
 
     Per *app-bundle.js*, impostare il punto di interruzione nella `render()` funzione come illustrato nella figura seguente:
 
-    ![Screenshot della finestra Visual Studio codice per app-bundle.js. Un punto rosso nella barra di spostamento a sinistra indica che nella funzione di rendering è impostato un punto di interruzione.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Screenshot della finestra Visual Studio codice per app-bundle.js. Un punto rosso nel margine sinistro indica che nella funzione di rendering è impostato un punto di interruzione.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Per trovare la `render()` funzione nel file di *app-bundle.js* transpiled, usare **CTRL** + **F** (**Modifica** Ricerca  >  **e sostituisci** Ricerca  >  **rapida**).
+    Per trovare la `render()` funzione nel file di *app-bundle.js* transpiled, usare **CTRL** + **F** (**Modifica** Trova  >  **e sostituisci** Ricerca  >  **rapida**).
 
-    Per *app.tsx*, impostare il punto di interruzione all'interno `render()` della funzione nell'istruzione `return` .
+    Per *app.tsx,* impostare il punto di interruzione all'interno della `render()` funzione `return` nell'istruzione .
 
-    ![Screenshot della finestra Visual Studio codice per app.tsx. Un punto rosso nella barra di spostamento a sinistra indica che è impostato un punto di interruzione nell'istruzione return della funzione di rendering.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+    ![Screenshot della finestra Visual Studio codice per app.tsx. Un punto rosso nel margine sinistro indica che un punto di interruzione è impostato sull'istruzione return della funzione di rendering.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-2. Se si imposta il punto di interruzione nel file con estensione *tsx* (anzichéapp-bundle.js *),* è necessario aggiornare *webpack-config.js*. Sostituire il codice seguente:
+2. Se si imposta il punto di interruzione nel file con estensione *tsx* *(anziché* app-bundle.js), è necessario *aggiornare* webpack-config.js. Sostituire il codice seguente:
 
     ```javascript
     output: {
@@ -490,7 +490,7 @@ Per questo scenario, usare Chrome.
     La porta (1337) può essere visualizzata anche nel campo **Titolo** per consentire di selezionare l'istanza corretta del browser.
 
     ::: moniker range=">=vs-2019"
-    L'esempio seguente illustra l'aspetto del browser Microsoft Edge (Chromium).
+    L'esempio seguente mostra come viene visualizzato il browser Microsoft Edge (Chromium).
 
     ![Associa a processo](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
     ::: moniker-end
@@ -501,22 +501,22 @@ Per questo scenario, usare Chrome.
     ::: moniker-end
 
     > [!TIP]
-    > Se il debugger non è associato e viene visualizzato il messaggio "Impossibile connettersi al processo. Un'operazione non è valida nello stato corrente.", usare il Gestione attività per chiudere tutte le istanze del browser di destinazione prima di avviare il browser in modalità di debug. Le estensioni del browser potrebbero essere in esecuzione e impedire la modalità di debug completo.
+    > Se il debugger non è associato e viene visualizzato il messaggio "Impossibile connettersi al processo. Un'operazione non è valida nello stato corrente.", usare il Gestione attività per chiudere tutte le istanze del browser di destinazione prima di avviare il browser in modalità di debug. Le estensioni del browser potrebbero essere in esecuzione e impedire la modalità di debug completa.
 
 7. Dato che il codice con il punto di interruzione è già stato eseguito, aggiornare la pagina del browser per raggiungere il punto di interruzione.
 
-    Durante la pausa del debugger, è possibile esaminare lo stato dell'app passando il mouse sulle variabili e usando le finestre del debugger. È possibile far avanzare il debugger eseguendo il codice istruzione per istruzione (**F5**, **F10** e **F11**). Per altre informazioni sulle funzionalità di debug di base, vedere [Prima di tutto il debugger.](../debugger/debugger-feature-tour.md)
+    Durante la pausa del debugger, è possibile esaminare lo stato dell'app passando il mouse sulle variabili e usando le finestre del debugger. È possibile far avanzare il debugger eseguendo il codice istruzione per istruzione (**F5**, **F10** e **F11**). Per altre informazioni sulle funzionalità di debug di base, vedere [Prima di tutto il debugger](../debugger/debugger-feature-tour.md).
 
-    È possibile che venga raggiunto il punto di interruzione *inapp-bundle.js* o nella relativa posizione mappata in *app.tsx,* a seconda dei passaggi seguiti in precedenza, insieme all'ambiente e allo stato del browser. In entrambi i casi è possibile eseguire il codice istruzione per istruzione ed esaminare le variabili.
+    È possibile premere il punto di interruzione *inapp-bundle.js* o nella relativa posizione mappata in *app.tsx*, a seconda dei passaggi seguiti in precedenza, insieme all'ambiente e allo stato del browser. In entrambi i casi è possibile eseguire il codice istruzione per istruzione ed esaminare le variabili.
 
    * Se è necessario inserire un'interruzione nel codice in *app.tsx*, ma non è possibile eseguire questa operazione, usare **Associa a processo** come descritto nei passaggi precedenti per associare il debugger. Assicurarsi che l'ambiente sia configurato correttamente:
 
-      * Sono state chiuse tutte le istanze del browser, incluse le estensioni di Chrome (usando il Gestione attività), in modo da poter eseguire il browser in modalità di debug. Assicurarsi di avviare il browser in modalità di debug.
+      * Sono state chiuse tutte le istanze del browser, incluse le estensioni di Chrome (Gestione attività), in modo da poter eseguire il browser in modalità di debug. Assicurarsi di avviare il browser in modalità di debug.
 
-      * Assicurarsi che il file source map includa un riferimento a *./app.tsx* e non *webpack:///./app.tsx*, impedendo così al debugger di Visual Studio di individuare *app.tsx.*
-       In alternativa, se è necessario interrompere il codice in *app.tsx* e non è possibile eseguire questa operazione, provare a usare l'istruzione in app.tsx o impostare punti di interruzione in `debugger;` Chrome Strumenti di sviluppo (o F12 Tools per Microsoft Edge). 
+      * Assicurarsi che il file source map includa un riferimento a *./app.tsx* *e non webpack:///./app.tsx*, che impedisce al debugger Visual Studio di individuare *app.tsx*.
+       In alternativa, se è necessario interrompere il codice in *app.tsx* e non è possibile farlo, provare a usare l'istruzione in app.tsx o impostare punti di interruzione in `debugger;` Chrome Strumenti di sviluppo (o F12 Tools per Microsoft Edge). 
 
-   * Se è necessario interrompere il codice in *app-bundle.js* e non è possibile eseguire questa operazione, rimuovere il file source map, *app-bundle.js.map*.
+   * Se è necessario interrompere il codice *in* app-bundle.jse non è possibile eseguire questa operazione, rimuovere il file source map, *app-bundle.js.map*.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

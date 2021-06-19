@@ -1,7 +1,7 @@
 ---
-title: Il debugger non è in grado di visualizzare il codice sorgente o il disassembly
-description: Vedere i motivi per cui il messaggio "debugger non è in grado di visualizzare il codice sorgente o il disassembly per il percorso corrente in cui l'esecuzione è stata arrestata".
-ms.custom: SEO-VS-2020, seodec18
+title: Il debugger non può visualizzare il codice sorgente o il disassembly
+description: Vedere i motivi del messaggio "Il debugger non può visualizzare il codice sorgente o il disassembly per il percorso corrente in cui l'esecuzione è stata arrestata".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2966405378d2a6144c921c442e7412a41c454c52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bac2f04ab77e34186a4f0ee202fa8d16f6e45e38
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873067"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387346"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Impossibile visualizzare il codice sorgente o il disassembly
 Il testo del messaggio di errore è il seguente:
@@ -31,7 +31,7 @@ Il testo del messaggio di errore è il seguente:
 
  Questo messaggio di errore può essere visualizzato in alcune situazioni:
 
-- È possibile che sia stato raggiunto un punto di interruzione in una posizione per la quale non esiste un codice sorgente, mentre si esegue il debug di un linguaggio che non supporta il disassembly. Aprire la finestra punti di **interruzione** , individuare il punto di interruzione ed eliminarlo.
+- È possibile che sia stato raggiunto un punto di interruzione in una posizione per la quale non esiste un codice sorgente, mentre si esegue il debug di un linguaggio che non supporta il disassembly. Aprire la finestra **Punti di** interruzione, individuare il punto di interruzione ed eliminarlo.
 
 - Se si sta eseguendo il debug di script, è possibile che sia stato raggiunto un punto di interruzione mentre non esistevano thread nel programma. Scegliere **Esegui** o **Continua** dal menu **Debug** per continuare l'esecuzione del debug.
 

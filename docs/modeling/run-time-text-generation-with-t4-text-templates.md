@@ -1,6 +1,6 @@
 ---
 title: Generazione di testo in fase di esecuzione con modelli di testo T4
-description: Informazioni su come generare stringhe di testo nell'applicazione in fase di esecuzione usando i modelli di testo di runtime di Visual Studio.
+description: Informazioni su come generare stringhe di testo nell'applicazione in fase di esecuzione usando Visual Studio di testo di runtime.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,23 +12,23 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96d37bc586f9e8d6134377244c3181a52ec11a84
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937953"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387554"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 
-È possibile generare stringhe di testo nell'applicazione in fase di esecuzione usando i modelli di testo di runtime di Visual Studio. Il computer in cui viene eseguita l'applicazione non deve avere Visual Studio. I modelli di runtime sono talvolta denominati "modelli di testo pre-elaborati" perché in fase di compilazione il modello genera il codice che viene eseguito in fase di esecuzione.
+È possibile generare stringhe di testo nell'applicazione in fase di esecuzione usando Visual Studio di testo di runtime. Il computer in cui viene eseguita l'applicazione non deve avere Visual Studio. I modelli di runtime vengono talvolta chiamati "modelli di testo pre-elaborato" perché in fase di compilazione il modello genera codice che viene eseguito in fase di esecuzione.
 
-Ogni modello è una combinazione del testo che verrà visualizzato nella stringa generata e frammenti del codice programma. I frammenti di programma forniscono valori per le parti variabili della stringa e controllano anche le parti condizionali e ripetute.
+Ogni modello è una combinazione del testo così come verrà visualizzato nella stringa generata e dei frammenti di codice del programma. I frammenti di programma forniscono valori per le parti variabili della stringa e controllano anche le parti condizionali e ripetute.
 
 Ad esempio, il modello seguente può essere usato in un'applicazione che crea un report HTML.
 
@@ -47,26 +47,26 @@ This report is Company Confidential.
 </body></html>
 ```
 
-Si noti che il modello è una pagina HTML in cui le parti variabili sono state sostituite con codice programma. È possibile iniziare la progettazione di tale pagina scrivendo un prototipo statico della pagina HTML. È quindi possibile sostituire la tabella e altre parti variabili con il codice programma che genera il contenuto che varia da un'occasione all'altra.
+Si noti che il modello è una pagina HTML in cui le parti delle variabili sono state sostituite con il codice del programma. È possibile iniziare la progettazione di una pagina di questo tipo scrivendo un prototipo statico della pagina HTML. È quindi possibile sostituire la tabella e altre parti variabili con codice programma che genera il contenuto che varia da un'occasione all'altra.
 
-L'uso di un modello nell'applicazione rende più semplice la visualizzazione del formato finale dell'output, ad esempio una serie di istruzioni Write lunghe. Apportare modifiche al modulo dell'output è più semplice e più affidabile.
+L'uso di un modello nell'applicazione semplifica la visualizzazione della forma finale dell'output rispetto a quanto sia possibile in, ad esempio, in una lunga serie di istruzioni di scrittura. Apportare modifiche al formato dell'output è più semplice e affidabile.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Creazione di un Run-Time modello di testo in qualsiasi applicazione
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Creazione di un Run-Time di testo in qualsiasi applicazione
 
-### <a name="to-create-a-run-time-text-template"></a>Per creare un modello di testo in fase di esecuzione
+### <a name="to-create-a-run-time-text-template"></a>Per creare un modello di testo di run-time
 
-1. In Esplora soluzioni scegliere **Aggiungi**  >  **nuovo elemento** dal menu di scelta rapida del progetto.
+1. Nel Esplora soluzioni scegliere Aggiungi nuovo elemento dal menu di scelta  >  **rapida del progetto.**
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo runtime**. (In Visual Basic cerca in **elementi comuni**  >  **Generale**).
+2. Nella finestra **di dialogo Aggiungi nuovo elemento** selezionare Modello di testo **runtime**. (In Visual Basic in **Elementi comuni**  >  **Generale**.)
 
 3. Digitare un nome per il file modello.
 
     > [!NOTE]
-    > Il nome del file modello verrà utilizzato come nome di classe nel codice generato. Pertanto, non deve contenere spazi o segni di punteggiatura.
+    > Il nome del file modello verrà usato come nome di classe nel codice generato. Pertanto, non deve contenere spazi o punteggiatura.
 
 4. Scegliere **Aggiungi**.
 
-    Viene creato un nuovo file con estensione **TT**. La proprietà **strumento personalizzato** è impostata su **TextTemplatingFilePreprocessor**. Contiene le righe seguenti:
+    Viene creato un nuovo file con estensione **tt**. La **proprietà Strumento** personalizzato è impostata su **TextTemplatingFilePreprocessor.** Contiene le righe seguenti:
 
     ```
     <#@ template language="C#" #>
@@ -76,40 +76,40 @@ L'uso di un modello nell'applicazione rende più semplice la visualizzazione del
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Conversione di un file esistente in un modello di Run-Time
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Conversione di un file esistente in un Run-Time modello
 
-Un modo efficace per creare un modello consiste nel convertire un esempio esistente di output. Se, ad esempio, l'applicazione genera file HTML, è possibile iniziare creando un file HTML normale. Verificare che funzioni correttamente e che l'aspetto sia corretto. Quindi includerlo nel progetto di Visual Studio e convertirlo in un modello.
+Un buon modo per creare un modello è convertire un esempio esistente dell'output. Ad esempio, se l'applicazione genererà file HTML, è possibile iniziare creando un file HTML normale. Assicurarsi che funzioni correttamente e che il relativo aspetto sia corretto. Includerlo quindi nel progetto Visual Studio e convertirlo in un modello.
 
-### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Per convertire un file di testo esistente in un modello in fase di esecuzione
+### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Per convertire un file di testo esistente in un modello di run-time
 
-1. Includere il file nel progetto di Visual Studio. In Esplora soluzioni scegliere **Aggiungi**  >  **elemento esistente** dal menu di scelta rapida del progetto.
+1. Includere il file nel progetto Visual Studio progetto. Nel Esplora soluzioni scegliere Aggiungi elemento esistente dal menu di scelta  >  **rapida del progetto.**
 
-2. Impostare la proprietà **strumenti personalizzati** del file su **TextTemplatingFilePreprocessor**. In Esplora soluzioni scegliere **Proprietà** dal menu di scelta rapida del file.
+2. Impostare la proprietà **Strumenti** personalizzati del file su **TextTemplatingFilePreprocessor**. Nel Esplora soluzioni scegliere Proprietà dal menu di scelta **rapida del** file.
 
     > [!NOTE]
-    > Se la proprietà è già impostata, verificare che sia **TextTemplatingFilePreprocessor** e non **TextTemplatingFileGenerator**. Questo problema può verificarsi se si include un file che ha già l'estensione **TT**.
+    > Se la proprietà è già impostata, assicurarsi che sia **TextTemplatingFilePreprocessor** e non **TextTemplatingFileGenerator**. Questo problema può verificarsi se si include un file che ha già l'estensione **.tt**.
 
-3. Modificare l'estensione del nome file in **. TT**. Sebbene questo passaggio sia facoltativo, consente di evitare l'apertura del file in un editor errato.
+3. Modificare l'estensione del nome file **in .tt**. Anche se questo passaggio è facoltativo, consente di evitare di aprire il file in un editor non corretto.
 
-4. Rimuovere spazi o punteggiatura dalla parte principale del nome file. "My Web Page.tt", ad esempio, non è corretto, ma "MyWebPage.tt" è corretto. Il nome del file verrà utilizzato come nome di classe nel codice generato.
+4. Rimuovere gli spazi o la punteggiatura dalla parte principale del nome file. Ad esempio, "My Web Page.tt" non è corretto, ma "MyWebPage.tt" è corretto. Il nome file verrà usato come nome di classe nel codice generato.
 
-5. Inserire la riga seguente all'inizio del file. Se si utilizza un progetto di Visual Basic, sostituire "C#" con "VB".
+5. Inserire la riga seguente all'inizio del file. Se si lavora in un progetto Visual Basic, sostituire "C#" con "VB".
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>Contenuto del modello di Run-Time
+## <a name="the-content-of-the-run-time-template"></a>Contenuto del modello Run-Time dati
 
-### <a name="template-directive"></a>Template (direttiva)
+### <a name="template-directive"></a>Direttiva del modello
 
-Conserva la prima riga del modello così com'era quando è stato creato il file:
+Mantenere la prima riga del modello così come era al momento della creazione del file:
 
 `<#@ template language="C#" #>`
 
-Il parametro Language dipenderà dalla lingua del progetto.
+Il parametro language dipenderà dal linguaggio del progetto.
 
 ### <a name="plain-content"></a>Contenuto normale
 
-Modificare il file con **estensione TT** in modo che contenga il testo che si desidera venga generato dall'applicazione. Ad esempio:
+Modificare il file **con estensione tt** in modo che contenga il testo che si vuole generare dall'applicazione. Ad esempio:
 
 ```html
 <html><body>
@@ -121,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Codice programma incorporato
 
-È possibile inserire il codice programma compreso tra `<#` e `#>` . Ad esempio:
+È possibile inserire il codice del programma tra `<#` e `#>` . Ad esempio:
 
 ```csharp
 <table>
@@ -146,15 +146,15 @@ This report is Company Confidential.
 </table>
 ```
 
-Si noti che le istruzioni vengono inserite tra `<# ... #>` le espressioni e vengono inserite tra `<#= ... #>` . Per altre informazioni, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
+Si noti che le istruzioni vengono inserite tra `<# ... #>` le espressioni e tra `<#= ... #>` . Per altre informazioni, vedere [Scrittura di un modello di testo T4.](../modeling/writing-a-t4-text-template.md)
 
 ## <a name="using-the-template"></a>Uso del modello
 
 ### <a name="the-code-built-from-the-template"></a>Codice compilato dal modello
 
-Quando si salva il file con **estensione TT** , viene generato un file sussidiario con estensione **CS** o **VB** . Per visualizzare questo file in **Esplora soluzioni**, espandere il nodo del file con **estensione TT** . In un progetto Visual Basic scegliere **Mostra tutti i file** nella barra degli strumenti **Esplora soluzioni** .
+Quando si salva il file **con estensione tt,** viene generato un file **cs** o **vb** sussidiaria. Per visualizzare questo file in **Esplora soluzioni**, espandere il nodo del file con estensione **tt.** In un Visual Basic progetto, scegliere mostra tutti i **file** nella barra **Esplora soluzioni** strumenti.
 
-Si noti che il file sussidiario contiene una classe parziale che contiene un metodo denominato `TransformText()` . È possibile chiamare questo metodo dall'applicazione.
+Si noti che il file sussidiaria contiene una classe parziale che contiene un metodo denominato `TransformText()` . È possibile chiamare questo metodo dall'applicazione.
 
 ### <a name="generating-text-at-run-time"></a>Generazione di testo in fase di esecuzione
 
@@ -172,17 +172,17 @@ Dim pageContent = page.TransformText()
 System.IO.File.WriteAllText("outputPage.html", pageContent)
 ```
 
-Per inserire la classe generata in un determinato spazio dei nomi, impostare la proprietà **spazio dei nomi dello strumento personalizzato** del file del modello di testo.
+Per inserire la classe generata in uno spazio dei nomi specifico, impostare la **proprietà Spazio** dei nomi dello strumento personalizzato del file modello di testo.
 
 ### <a name="debugging-runtime-text-templates"></a>Debug di modelli di testo di runtime
 
-Eseguire il debug e testare i modelli di testo in fase di esecuzione in modo analogo al codice ordinario.
+Eseguire il debug e il test dei modelli di testo di runtime nello stesso modo del codice normale.
 
-È possibile impostare un punto di interruzione in un modello di testo. Se l'applicazione viene avviata in modalità di debug da Visual Studio, è possibile eseguire il codice un'istruzione alla volta e valutare le espressioni Watch nel modo consueto.
+È possibile impostare un punto di interruzione in un modello di testo. Se si avvia l'applicazione in modalità di debug da Visual Studio, è possibile esaminare il codice e valutare le espressioni di controllo nel modo consueto.
 
 ### <a name="passing-parameters-in-the-constructor"></a>Passaggio di parametri nel costruttore
 
-In genere, un modello deve importare alcuni dati da altre parti dell'applicazione. Per semplificare questa operazione, il codice creato dal modello è una classe parziale. È possibile creare un'altra parte della stessa classe in un altro file del progetto. Tale file può includere un costruttore con parametri, proprietà e funzioni a cui è possibile accedere sia dal codice incorporato nel modello che dal resto dell'applicazione.
+In genere un modello deve importare alcuni dati da altre parti dell'applicazione. Per semplificare questa operazione, il codice compilato dal modello è una classe parziale. È possibile creare un'altra parte della stessa classe in un altro file del progetto. Tale file può includere un costruttore con parametri, proprietà e funzioni accessibili sia dal codice incorporato nel modello che dal resto dell'applicazione.
 
 Ad esempio, è possibile creare un file separato **MyWebPageCode.cs**:
 
@@ -193,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-Nel file di modello **mywebpage.TT**, è possibile scrivere:
+Nel file modello **MyWebPage.tt** scrivere:
 
 ```html
 <h2>Sales figures</h2>
@@ -219,7 +219,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent);
 
 #### <a name="constructor-parameters-in-visual-basic"></a>Parametri del costruttore in Visual Basic
 
-In Visual Basic, il file separato **MyWebPageCode. vb** contiene:
+In Visual Basic il file separato **MyWebPageCode.vb** contiene:
 
 ```vb
 Namespace My.Templates
@@ -232,7 +232,7 @@ Namespace My.Templates
 End Namespace
 ```
 
-Il file modello potrebbe contenere:
+Il file modello può contenere:
 
 ```html
 <#@ template language="VB" #>
@@ -252,7 +252,7 @@ This report is Company Confidential.
 </body></html>
 ```
 
-Il modello può essere richiamato passando il parametro nel costruttore:
+Il modello può essere richiamato passando il parametro nel costruttore :
 
 ```vb
 Dim data = New My.Templates.MyData
@@ -264,55 +264,55 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 #### <a name="passing-data-in-template-properties"></a>Passaggio di dati nelle proprietà del modello
 
-Un metodo alternativo per passare dati al modello consiste nell'aggiungere proprietà pubbliche alla classe modello in una definizione di classe parziale. L'applicazione può impostare le proprietà prima di richiamare `TransformText()` .
+Un modo alternativo per passare dati al modello consiste nell'aggiungere proprietà pubbliche alla classe modello in una definizione di classe parziale. L'applicazione può impostare le proprietà prima di richiamare `TransformText()` .
 
-È anche possibile aggiungere campi alla classe modello in una definizione parziale. In questo modo è possibile passare i dati tra le esecuzioni successive del modello.
+È anche possibile aggiungere campi alla classe modello in una definizione parziale. In questo modo è possibile passare dati tra esecuzioni successive del modello.
 
 ### <a name="use-partial-classes-for-code"></a>Usare classi parziali per il codice
 
-Molti sviluppatori preferiscono evitare di scrivere corpi di codice di grandi dimensioni nei modelli. È invece possibile definire metodi in una classe parziale con lo stesso nome del file modello. Chiamare tali metodi dal modello. In questo modo, il modello Mostra più chiaramente come sarà la stringa di output di destinazione. Le discussioni sull'aspetto del risultato possono essere separate dalla logica di creazione dei dati visualizzati.
+Molti sviluppatori preferiscono evitare di scrivere grandi quantità di codice nei modelli. È invece possibile definire metodi in una classe parziale con lo stesso nome del file modello. Chiamare questi metodi dal modello. In questo modo, il modello mostra più chiaramente l'aspetto della stringa di output di destinazione. Le discussioni sull'aspetto del risultato possono essere separate dalla logica di creazione dei dati visualizzati.
 
 ### <a name="assemblies-and-references"></a>Assembly e riferimenti
 
-Se si vuole che il codice del modello faccia riferimento a .NET o ad altri assembly, ad esempio **System.Xml.dll**, aggiungerlo ai **riferimenti** del progetto nel modo consueto.
+Se si vuole che il codice del modello faccia riferimento a un assembly .NET  o a un altro **assembly, ad** esempioSystem.Xml.dll, aggiungerlo ai riferimenti del progetto nel modo consueto.
 
-Se si desidera importare uno spazio dei nomi allo stesso modo di un' `using` istruzione, è possibile eseguire questa operazione con la `import` direttiva:
+Se si vuole importare uno spazio dei nomi nello stesso modo di un'istruzione , è possibile eseguire questa operazione `using` con la `import` direttiva :
 
 ```
 <#@ import namespace="System.Xml" #>
 ```
 
-Queste direttive devono essere inserite all'inizio del file, immediatamente dopo la `<#@template` direttiva.
+Queste direttive devono essere inserite all'inizio del file, immediatamente dopo la `<#@template` direttiva .
 
 ### <a name="shared-content"></a>Contenuto condiviso
 
-Se si dispone di testo condiviso tra più modelli, è possibile inserirlo in un file separato e includerlo in ogni file in cui deve essere visualizzato:
+Se si dispone di testo condiviso tra diversi modelli, è possibile posizionarlo in un file separato e includerlo in ogni file in cui dovrebbe essere visualizzato:
 
 ```
 <#@include file="CommonHeader.txt" #>
 ```
 
-Il contenuto incluso può contenere qualsiasi combinazione di codice programma e testo normale e può contenere altre direttive di inclusione e altre direttive.
+Il contenuto incluso può contenere qualsiasi combinazione di codice programma e testo normale e può contenere altre direttive include e altre direttive .
 
-La direttiva include può essere utilizzata in qualsiasi punto all'interno del testo di un file modello o di un file incluso.
+La direttiva include può essere usata in qualsiasi punto all'interno del testo di un file modello o di un file incluso.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Ereditarietà tra Run-Time modelli di testo
+### <a name="inheritance-between-run-time-text-templates"></a>Ereditarietà tra Run-Time di testo
 
-È possibile condividere contenuto tra modelli di runtime scrivendo un modello di classe base, che può essere astratto. Usare il `inherits` parametro della `<@#template#>` direttiva per fare riferimento a un'altra classe modello di Runtime.
+È possibile condividere il contenuto tra modelli di run-time scrivendo un modello di classe di base, che può essere astratto. Usare il `inherits` parametro della direttiva per fare riferimento a `<@#template#>` un'altra classe modello di runtime.
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Modello di ereditarietà: frammenti nei metodi di base
 
 Nel modello usato nell'esempio seguente si notino i punti seguenti:
 
-- La classe base `SharedFragments` definisce i metodi all'interno dei blocchi di funzionalità della classe `<#+ ... #>` .
+- La classe di base `SharedFragments` definisce i metodi all'interno dei blocchi di funzionalità della classe `<#+ ... #>` .
 
-- La classe base non contiene testo libero. Al contrario, tutti i relativi blocchi di testo si verificano all'interno dei metodi della funzionalità della classe.
+- La classe base non contiene testo libero. Al contrario, tutti i blocchi di testo si verificano all'interno dei metodi di funzionalità della classe .
 
 - La classe derivata richiama i metodi definiti in `SharedFragments` .
 
-- L'applicazione chiama il `TextTransform()` metodo della classe derivata, ma non trasforma la classe di base `SharedFragments` .
+- L'applicazione chiama `TextTransform()` il metodo della classe derivata, ma non trasforma la classe base `SharedFragments` .
 
-- Entrambe le classi base e derivate sono modelli di testo di runtime; ovvero la proprietà **strumento personalizzato** è impostata su **TextTemplatingFilePreprocessor**.
+- Sia le classi di base che le classi derivate sono modelli di testo di runtime. ciò significa che la **proprietà Strumento** personalizzato è impostata su **TextTemplatingFilePreprocessor.**
 
 **SharedFragments.tt:**
 
@@ -357,7 +357,7 @@ end 1
 
 #### <a name="inheritance-pattern-text-in-base-body"></a>Modello di ereditarietà: testo nel corpo di base
 
-In questo approccio alternativo all'utilizzo dell'ereditarietà dei modelli, la maggior parte del testo viene definita nel modello di base. I modelli derivati forniscono frammenti di dati e di testo che rientrano nel contenuto di base.
+In questo approccio alternativo all'uso dell'ereditarietà del modello, la maggior parte del testo viene definita nel modello di base. I modelli derivati forniscono frammenti di dati e di testo che rientrano nel contenuto di base.
 
 **AbstractBaseTemplate1.tt:**
 
@@ -431,9 +431,9 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-Modelli della fase di progettazione: se si vuole usare un modello per generare codice che diventa parte dell'applicazione, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Modelli in fase di progettazione: se si vuole usare un modello per generare codice che diventa parte dell'applicazione, vedere Generazione di codice in fase di progettazione tramite modelli [di testo T4.](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
-I modelli in fase di esecuzione possono essere utilizzati in qualsiasi applicazione in cui i modelli e il relativo contenuto vengono determinati in fase di compilazione. Tuttavia, se si vuole scrivere un'estensione di Visual Studio che genera testo da modelli che cambiano in fase di esecuzione, vedere [richiamo della trasformazione del testo in un'estensione vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+I modelli di run-time possono essere usati in qualsiasi applicazione in cui i modelli e il relativo contenuto vengono determinati in fase di compilazione. Se tuttavia si vuole scrivere un'estensione Visual Studio che genera testo da modelli che cambiano in fase di esecuzione, vedere Richiamo della trasformazione testo [in un'estensione di Visual Studio.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
 ## <a name="see-also"></a>Vedi anche
 

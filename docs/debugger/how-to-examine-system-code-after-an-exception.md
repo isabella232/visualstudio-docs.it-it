@@ -1,7 +1,7 @@
 ---
 title: Esaminare il codice di sistema dopo un'eccezione | Microsoft Docs
-description: Informazioni su come esaminare il codice in una chiamata di sistema per individuare la ragione dell'eccezione. La procedura si applica anche se i simboli per il codice di sistema non sono stati caricati.
-ms.custom: SEO-VS-2020, seodec18
+description: Informazioni su come esaminare il codice in una chiamata di sistema per trovare la causa dell'eccezione. La procedura si applica anche se i simboli per il codice di sistema non sono stati caricati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f906fd39ed9b0b0af5a9ade344ab05a33e469a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f05ae1486089eaa63ef47a9953578db2a0b6662a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877681"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384655"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Procedura: esaminare il codice di sistema dopo un'eccezione
 Quando si verifica un'eccezione, potrebbe essere necessario esaminare il codice di una chiamata al sistema per determinare la causa dell'eccezione. Nella procedura riportata di seguito viene illustrato come determinare la causa se non sono disponibili simboli caricati per il codice di sistema o se Just My Code è attivato.

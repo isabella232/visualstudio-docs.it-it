@@ -1,7 +1,7 @@
 ---
-title: Eseguire il debug di un Web Form | Microsoft Docs
-description: Seguire una procedura dettagliata per vedere come eseguire il debug di un'applicazione Web ASP.NET (Web Form), incluso come impostare i punti di interruzione ed esaminare le variabili.
-ms.custom: SEO-VS-2020, seodec18
+title: Eseguire il debug di un web form | Microsoft Docs
+description: Seguire una procedura dettagliata per vedere come eseguire il debug di un'applicazione Web ASP.NET (Web Form), inclusa la procedura per impostare punti di interruzione ed esaminare le variabili.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 476d36a8ea303f2dd6062eaf0a597c47df580ff7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18347b7ba9ff52778b5acef685acd8f1ee400793
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884169"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385208"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procedura dettagliata: Debug di un Web Form
 Nei passaggi di questa procedura dettagliata viene illustrato come eseguire il debug di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], noto anche come Web Form. Viene spiegato come avviare e arrestare l'esecuzione, impostare punti di interruzione ed esaminare le variabili nella finestra **Espressioni di controllo**.
@@ -49,19 +49,19 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
 3. Nel riquadro **Modelli** selezionare **Sito Web ASP.NET**.
 
-4. Nella riga **percorso** fare clic su **http** nell'elenco e digitare nella casella di testo **http://localhost/WebSite** .
+4. Nella riga **Posizione** fare clic su **HTTP** nell'elenco e nella casella di testo digitare **http://localhost/WebSite** .
 
 5. Nell'elenco **Linguaggio** fare clic su **Visual C#** oppure su **Visual Basic**.
 
 6. Fare clic su **OK**.
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di creare un nuovo progetto e di visualizzare il codice sorgente HTML predefinito. Viene anche creata una nuova directory virtuale denominata **WebSite** in **Sito Web predefinito di IIS**.
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crea un nuovo progetto e visualizza il codice sorgente HTML predefinito. Viene anche creata una nuova directory virtuale denominata **WebSite** in **Sito Web predefinito di IIS**.
 
 7. Fare clic sulla scheda **Progettazione** sul margine inferiore.
 
 8. Scegliere la scheda **Casella degli strumenti** sul margine sinistro o selezionarla dal menu **Visualizza**.
 
-    Verrà aperta la **casella degli strumenti** .
+    Verrà **visualizzata la casella degli** strumenti.
 
 9. Nella **Casella degli strumenti** fare clic sul controllo **Button** e aggiungerlo nell'area di progettazione principale Default.aspx.
 
@@ -155,7 +155,7 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
     Verrà eseguito il Web Form in Internet Explorer, ma il debugger non verrà connesso.
 
-4. Connettersi al processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per ulteriori informazioni, vedere [debug di applicazioni Web distribuite](../debugger/debugging-deployed-web-applications.md).
+4. Connettersi al processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per altre informazioni, vedere [Debug di applicazioni Web distribuite.](../debugger/debugging-deployed-web-applications.md)
 
 5. In Internet Explorer fare clic sul pulsante nel form.
 
@@ -165,4 +165,4 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [Eseguire il debug ASP.NET applicazioni](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -3,7 +3,7 @@ title: Installare Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate sull'installazione di Visual Studio.
 ms.date: 12/13/2019
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b7955759c6c60e8074408cbc179f15d6a7a6e194
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 692989d5bf8979752757fb5630a78d55426f85b9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307401"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387073"
 ---
 # <a name="install-visual-studio"></a>Installare Visual Studio
 
@@ -37,7 +37,7 @@ Benvenuti in Visual Studio 2019. In questa versione è molto semplice scegliere 
 
 ::: moniker range=">=vs-2022"
 
-Benvenuti a Visual Studio 2022! In questa versione è molto semplice scegliere e installare solo le funzionalità necessarie. Inoltre, grazie alla riduzione del footprint minimo, l'installazione viene eseguita velocemente e con un minore impatto sul sistema.
+Benvenuti a Visual Studio 2022. In questa versione è molto semplice scegliere e installare solo le funzionalità necessarie. Inoltre, grazie alla riduzione del footprint minimo, l'installazione viene eseguita velocemente e con un minore impatto sul sistema.
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ Per domande sull'esecuzione di Visual Studio 2019 side by side con versioni prec
 
 ::: moniker range=">=vs-2022"
 
-Per domande sull'esecuzione di versioni precedenti di Visual Studio side-by-side con Visual Studio 2022, vedere la pagina Visual Studio [2022 Platform Targeting and Compatibility](/visualstudio/releases/2019/compatibility/) (Destinazione e compatibilità della piattaforma Visual Studio 2022).
+Per domande sull'esecuzione di versioni precedenti di Visual Studio side-by-side con Visual Studio 2022, vedere la pagina Di destinazione e compatibilità della piattaforma [Visual Studio 2022.](/visualstudio/releases/2019/compatibility/)
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ Scaricare quindi il file del programma di avvio automatico di Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Per ottenere un programma di avvio automatico Visual Studio 2017, vedere la pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/) delle versioni precedenti per informazioni dettagliate su come eseguire questa operazione.
+Per ottenere un programma di avvio automatico Visual Studio 2017, vedere la pagina di download Visual Studio [versioni](https://visualstudio.microsoft.com/vs/older-downloads/) precedenti per informazioni dettagliate su come eseguire questa operazione.
 
 ::: moniker-end
 
@@ -196,11 +196,11 @@ Dopo aver installato il programma di installazione, è possibile usarlo per pers
  ::: moniker-end
 
 > [!TIP]
-> In qualsiasi momento dopo l'installazione, è possibile installare i carichi di lavoro o i componenti che non sono stati installati inizialmente. Se è stato aperto Visual Studio, passare **a** Strumenti Ottieni strumenti e  >  **funzionalità,** che apre il Programma di installazione di Visual Studio. In alternativa, aprire **il programma di installazione di Visual Studio** dal menu Start. Da qui, è possibile scegliere i carichi di lavoro o i componenti che si vogliono installare. Scegliere quindi **Modifica**.
+> In qualsiasi momento dopo l'installazione, è possibile installare i carichi di lavoro o i componenti che non sono stati installati inizialmente. Se è stata aperta Visual Studio, passare **a** Strumenti Ottieni strumenti e funzionalità per aprire il  >   Programma di installazione di Visual Studio. In alternativa, aprire **il programma di installazione di Visual Studio** dal menu Start. Da qui, è possibile scegliere i carichi di lavoro o i componenti che si vogliono installare. Scegliere quindi **Modifica**.
 
 ## <a name="step-5---choose-individual-components-optional"></a>Passaggio 5: Scegliere singoli componenti (facoltativo)
 
-Se non si vuole usare la funzionalità Carichi di lavoro per personalizzare l'installazione di Visual Studio o aggiungere più componenti rispetto alle installazioni di un carico di lavoro, è possibile installare o aggiungere singoli componenti dalla scheda **Singoli** componenti. Scegliere quello che si vuole e quindi seguire le istruzioni.
+Se non si vuole usare la funzionalità Carichi di lavoro per personalizzare l'installazione di Visual Studio o si vogliono aggiungere più componenti di quelli installati da un carico di lavoro, è possibile installare o aggiungere singoli componenti dalla scheda **Singoli** componenti. Scegliere gli elementi desiderati e quindi seguire le istruzioni.
 
 ::: moniker range="vs-2017"
 

@@ -1,59 +1,59 @@
 ---
 title: Condivisione di classi tra DSL utilizzando una libreria DSL
-description: Per informazioni sull'SDK di visualizzazione e modellazione di Visual Studio, è possibile creare una definizione DSL incompleta che è possibile importare in un altro linguaggio DSL.
+description: Si apprenderà che in Visual Studio Visualization and Modeling SDK è possibile creare una definizione DSL incompleta che è possibile importare in un altro DSL.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61e4785ab99ecccc61a097dd27140e250f103de2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3729e4f386ec5a21c8f30ee3f0df6e7ffa8d891
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899804"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385500"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Condivisione di classi tra DSL utilizzando una libreria DSL
-Nell'SDK di visualizzazione e modellazione di Visual Studio è possibile creare una definizione DSL incompleta che è possibile importare in un altro linguaggio DSL. In questo modo è possibile fattorizzare parti comuni di modelli simili.
+In Visual Studio Visualization and Modeling SDK è possibile creare una definizione DSL incompleta che è possibile importare in un altro DSL. Ciò consente di fattori di parti comuni di modelli simili.
 
-## <a name="creating-and-using-dsl-libraries"></a>Creazione e utilizzo di librerie DSL
+## <a name="creating-and-using-dsl-libraries"></a>Creazione e uso di librerie DSL
 
 #### <a name="to-create-a-dsl-library"></a>Per creare una libreria DSL
 
-1. Creare un nuovo progetto DSL e scegliere il modello di soluzione libreria DSL.
+1. Creare un nuovo progetto DSL e scegliere il modello di soluzione Libreria DSL.
 
-     Un progetto DSL singolo verrà creato con un modello vuoto.
+     Verrà creato un singolo progetto DSL con un modello vuoto.
 
 2. È possibile aggiungere classi di dominio, relazioni, forme e così via.
 
      Gli elementi nella libreria non devono formare un singolo albero di incorporamento.
 
-     Per definire una relazione che può essere utilizzata dagli utilità di importazione, creare due classi di dominio e creare la relazione tra di esse.
+     Per definire una relazione che le utilità di importazione possono usare, creare due classi di dominio e creare la relazione tra di esse.
 
-     Si consiglia di impostare il **modificatore di ereditarietà** delle classi di dominio su `Abstract` .
+     Provare a impostare **il modificatore di ereditarietà** delle classi di dominio su `Abstract` .
 
-3. È possibile aggiungere elementi definiti in DSL Explorer, ad esempio i generatori di connessioni.
+3. È possibile aggiungere elementi definiti in Esplora DSL, ad esempio i generatori di connessioni.
 
-4. È possibile aggiungere personalizzazioni che richiedono codice aggiuntivo, ad esempio i vincoli di convalida.
+4. È possibile aggiungere personalizzazioni che richiedono codice aggiuntivo, ad esempio vincoli di convalida.
 
-5. Fare clic su **trasforma tutti i modelli**.
+5. Fare **clic su Trasforma tutti i modelli**.
 
 6. Compilare il progetto.
 
-7. Quando si distribuisce il linguaggio DSL per l'uso da parte di altri utenti, è necessario specificare sia l'assembly compilato (DLL) che il file `DslDefinition.dsl` . È possibile trovare l'assembly compilato in una cartella in `Dsl\bin\*`
+7. Quando si distribuisce DSL per l'uso da parte di altri utenti, è necessario specificare sia l'assembly compilato (DLL) che il file `DslDefinition.dsl` . È possibile trovare l'assembly compilato in una cartella in `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Per importare una libreria DSL
 
-1. In un'altra definizione DSL, in **DSL Explorer**, fare clic con il pulsante destro del mouse sulla classe radice del DSL, quindi scegliere **Aggiungi nuova importazione DslLibrary**.
+1. In un'altra definizione DSL, in **Esplora DSL,** fare clic con il pulsante destro del mouse sulla classe radice del DSL e quindi scegliere Aggiungi nuovo **DslLibrary Import**.
 
-2. Nella Finestra Proprietà impostare il percorso del **file** della libreria. È possibile usare un percorso relativo o assoluto.
+2. Nella finestra Finestra Proprietà impostare il **percorso file** della libreria. È possibile usare un percorso relativo o assoluto.
 
-    La libreria importata viene visualizzata in DSL Explorer, in modalità di sola lettura.
+    La libreria importata viene visualizzata in Esplora DSL, in modalità di sola lettura.
 
-3. È possibile utilizzare le classi importate come classi di base. Creare una classe di dominio nel DSL di importazione e, nel Finestra Proprietà, impostare la **classe di base** su una classe importata.
+3. È possibile usare le classi importate come classi di base. Creare una classe di dominio nel DSL di importazione e nel Finestra Proprietà impostare **Classe base** su una classe importata.
 
 4. Fare clic su Trasforma tutti i modelli.
 

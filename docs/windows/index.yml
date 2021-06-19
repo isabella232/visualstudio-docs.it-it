@@ -20,9 +20,9 @@ highlightedContent:
     - title: Benvenuti all'IDE di Visual Studio
       itemType: overview
       url: ../get-started/visual-studio-ide.md
-    - title: Note sulla versione di Visual Studio 2019
+    - title: Visual Studio 2022 Preview
       itemType: whats-new
-      url: /visualstudio/releases/2019/release-notes/
+      url: /visualstudio/releases/2022/release-notes-preview
     - title: Migliorare le competenze di Visual Studio
       itemType: learn
       url: /learn/browse/?products=vs
@@ -180,7 +180,7 @@ additionalContent:
           summary: 'Condividere app e codice tramite Distribuzione Web, InstallShield, NuGet, Integrazione continua e altre funzionalità.'
           url: ../deployment/index.yml
         - title: Controllo della versione
-          summary: 'Condividere il codice usando tecnologie di controllo della versione, ad esempio Git e GitHub.'
+          summary: Condividere il codice usando tecnologie di controllo della versione come Git e GitHub.
           url: ../version-control/index.yml
         - title: DevOps
           summary: Compilare e rilasciare le app in modo continuativo nel cloud e implementare le procedure di Agile con Azure DevOps Services.
