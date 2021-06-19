@@ -1,29 +1,29 @@
 ---
 title: Modellare i requisiti utente
-description: Informazioni su come Visual Studio consente di comprendere, discutere e comunicare le esigenze degli utenti mediante la creazione di diagrammi sulle attività.
+description: Informazioni su Visual Studio per comprendere, discutere e comunicare le esigenze degli utenti disegnando diagrammi sulle loro attività.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d55e549d2dccdc047cbf4449392cc090a569f85c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 381395eb0b9dabde0e94c479cb43033bc8443c8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970582"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390151"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 
 Visual Studio facilita la comprensione, la discussione e la comunicazione delle esigenze degli utenti mediante la creazione di diagrammi delle attività e del ruolo che il sistema svolge per il raggiungimento degli obiettivi. Un modello di requisiti è un set di tali diagrammi, ognuno dei quali è incentrato su un aspetto diverso delle esigenze degli utenti. Per una dimostrazione video, vedere: [Modellazione del dominio aziendale](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
-Per vedere quali versioni di Visual Studio supportano ogni tipo di modello, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per vedere quali versioni di Visual Studio supportano ogni tipo di modello, vedere [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 Un modello di requisiti consente di:
 
@@ -41,7 +41,7 @@ Un modello di requisiti consente di:
 
 - Usare i modelli come base per i test di sistema, evidenziando una chiara relazione tra test e requisiti. Quando i requisiti cambiano, questa relazione consente di aggiornare i test correttamente, garantendo in tal modo che il sistema soddisfi i nuovi requisiti.
 
-Un modello di requisiti offre un vantaggio maggiore se viene usato per concentrare le discussioni con gli utenti o i relativi rappresentanti e se viene riesaminato all'inizio di ogni iterazione. Non è necessario completarlo in dettaglio prima di scrivere il codice. Un'applicazione parzialmente funzionante, anche se molto semplificata, crea in genere una base di discussione dei requisiti con gli utenti molto più stimolante. Il modello consente di riepilogare in modo efficace i risultati di tali discussioni. Per altre informazioni, vedere [usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md).
+Un modello di requisiti offre un vantaggio maggiore se viene usato per concentrare le discussioni con gli utenti o i relativi rappresentanti e se viene riesaminato all'inizio di ogni iterazione. Non è necessario completarlo in dettaglio prima di scrivere il codice. Un'applicazione parzialmente funzionante, anche se molto semplificata, crea in genere una base di discussione dei requisiti con gli utenti molto più stimolante. Il modello consente di riepilogare in modo efficace i risultati di tali discussioni. Per altre informazioni, vedere [Usare i modelli nel processo di sviluppo.](../modeling/use-models-in-your-development-process.md)
 
 > [!NOTE]
 > In questi argomenti con "sistema" si intende il sistema o l'applicazione che si sta sviluppando. Potrebbe essere un'ampia raccolta di molti componenti software e hardware, una singola applicazione o un componente software all'interno di un sistema più grande. In ogni caso il modello di requisiti descrive il comportamento visibile dall'esterno del sistema, che sia tramite un'interfaccia utente o tramite un'API.
@@ -56,9 +56,9 @@ Un modello di requisiti offre un vantaggio maggiore se viene usato per concentra
 |Documenti o elementi di lavoro aggiuntivi|Criteri di prestazioni, sicurezza, usabilità e affidabilità.|[Descrizione dei requisiti di qualità del servizio](#QoSRequirements)|
 |Documenti o elementi di lavoro aggiuntivi|Regole e vincoli non specifici di un particolare caso di utilizzo|[Visualizzazione delle regole di business](#BusinessRules)|
 
-La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per una panoramica dei tipi di diagramma, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).
+La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per una panoramica dei tipi di diagramma, vedere [Creare modelli per l'app.](../modeling/create-models-for-your-app.md)
 
-## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Visualizzazione delle regole di business
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Visualizzazione Business Rules
 
 Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
 
@@ -74,7 +74,7 @@ Si noti che la scelta in questo caso riguarda la modalità di definizione dei re
 
 Per ulteriori informazioni, vedere gli argomenti indicati di seguito.
 
-|Informazioni|Lettura|
+|Informazioni|Read|
 |-|-|
 |Come sviluppare codice che soddisfi le regole di business|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
@@ -96,7 +96,7 @@ Esistono diverse categorie di requisiti per la qualità del servizio. Essi inclu
 
 Se un Ristorante elimina un Elemento menu mentre un Cliente ordina un pasto, tutti gli Elementi ordine che fanno riferimento all'Elemento menu verranno visualizzati in rosso.
 
-Per informazioni su come sviluppare codice che soddisfi i requisiti di qualità del servizio, vedere [modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md) .
+Vedere [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md) per informazioni su come sviluppare codice conforme ai requisiti di qualità del servizio.
 
 ## <a name="see-also"></a>Vedi anche
 

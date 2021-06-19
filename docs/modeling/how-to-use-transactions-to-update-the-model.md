@@ -1,30 +1,30 @@
 ---
 title: 'Procedura: utilizzare le transazioni per aggiornare il modello'
-description: Informazioni sulle transazioni che assicurano che le modifiche apportate all'archivio vengano considerate come un gruppo e come utilizzare le transazioni per aggiornare il modello.
+description: Le transazioni assicurano che le modifiche apportate all'archivio siano considerate come un gruppo e come usare le transazioni per aggiornare il modello.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe892269d0e02d1f8e0aca2e943993ebb03cea41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e91e569573076d1614a9fa946b67f3bda01e6fba
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922586"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390542"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: utilizzare le transazioni per aggiornare il modello
-Le transazioni assicurano che le modifiche apportate all'archivio vengano considerate come un gruppo. È possibile eseguire il commit o il rollback delle modifiche raggruppate come singola unità.
+Le transazioni assicurano che le modifiche apportate all'archivio siano considerate come un gruppo. È possibile eseguire il commit o il rollback delle modifiche raggruppate come singola unità.
 
- Ogni volta che il codice del programma modifica, aggiunge o Elimina qualsiasi elemento nell'archivio nell'SDK di visualizzazione e modellazione di Visual Studio, questa operazione deve essere eseguita all'interno di una transazione. Quando si verifica la modifica, deve essere presente un'istanza attiva di <xref:Microsoft.VisualStudio.Modeling.Transaction> associata all'archivio. Questo vale per tutti gli elementi del modello, le relazioni, le forme, i diagrammi e le relative proprietà.
+ Ogni volta che il codice del programma modifica, aggiunge o elimina qualsiasi elemento nell'archivio in Visual Studio Visualization and Modeling SDK, deve eseguire questa operazione all'interno di una transazione. Quando si verifica la modifica, deve essere presente un'istanza attiva di <xref:Microsoft.VisualStudio.Modeling.Transaction> associata all'archivio. Questo vale per tutti gli elementi del modello, le relazioni, le forme, i diagrammi e le relative proprietà.
 
- Il meccanismo di transazione consente di evitare gli stati incoerenti. Se si verifica un errore durante una transazione, viene eseguito il rollback di tutte le modifiche. Se l'utente esegue un comando Undo, ogni transazione recente viene considerata come un singolo passaggio. L'utente non può annullare parti di una modifica recente, a meno che non vengano esplicitamente inserite in transazioni separate.
+ Il meccanismo di transazione consente di evitare stati incoerenti. Se si verifica un errore durante una transazione, viene eseguito il rollback di tutte le modifiche. Se l'utente esegue un comando Annulla, ogni transazione recente viene considerata come un singolo passaggio. L'utente non può annullare parti di una modifica recente, a meno che non vengano esplicitamente inserite in transazioni separate.
 
 ## <a name="opening-a-transaction"></a>Apertura di una transazione
- Il metodo più pratico per gestire una transazione è costituito da un' `using` istruzione racchiusa in un' `try...catch` istruzione:
+ Il metodo più pratico per gestire una transazione è con `using` un'istruzione racchiusa in `try...catch` un'istruzione :
 
 ```csharp
 Store store; ...
@@ -50,16 +50,16 @@ catch (Exception ex)
 }
 ```
 
- Se si verifica un'eccezione che impedisce l'esecuzione finale `Commit()` durante le modifiche, verrà ripristinato lo stato precedente dell'archivio. Ciò consente di verificare che gli errori non lascino il modello in uno stato incoerente.
+ Se si verifica un'eccezione che impedisce l'esecuzione finale durante le modifiche, lo `Commit()` Store verrà reimpostato sullo stato precedente. Ciò consente di assicurarsi che gli errori non lascino il modello in uno stato incoerente.
 
- È possibile apportare un numero qualsiasi di modifiche all'interno di una transazione. È possibile aprire nuove transazioni all'interno di una transazione attiva. È necessario eseguire il commit o il rollback delle transazioni nidificate prima della fine della transazione contenitore. Per ulteriori informazioni, vedere l'esempio relativo alla <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> Proprietà.
+ È possibile apportare un numero qualsiasi di modifiche all'interno di una transazione. È possibile aprire nuove transazioni all'interno di una transazione attiva. Le transazioni annidate devono eseguire il commit o il rollback prima della fine della transazione che lo contiene. Per altre informazioni, vedere l'esempio per la <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> proprietà .
 
- Per rendere permanenti le modifiche, è necessario che `Commit` la transazione sia stata eliminata. Se si verifica un'eccezione non rilevata all'interno della transazione, l'archivio verrà reimpostato sullo stato prima delle modifiche.
+ Per rendere permanenti le modifiche, è `Commit` necessario che la transazione venga eliminata. Se si verifica un'eccezione che non viene rilevata all'interno della transazione, l'archivio verrà reimpostato sullo stato precedente alle modifiche.
 
 ## <a name="rolling-back-a-transaction"></a>Rollback di una transazione
- Per assicurarsi che lo stato dell'archivio rimanga o venga ripristinato prima della transazione, è possibile usare una di queste tattiche:
+ Per assicurarsi che l'archivio rimanga nello stato precedente alla transazione o ne venga ripristinato lo stato, è possibile usare una di queste tattiche:
 
-1. Genera un'eccezione non rilevata nell'ambito della transazione.
+1. Generare un'eccezione che non viene intercettata nell'ambito della transazione.
 
 2. Eseguire il rollback della transazione in modo esplicito:
 
@@ -67,20 +67,20 @@ catch (Exception ex)
     this.Store.TransactionManager.CurrentTransaction.Rollback();
     ```
 
-## <a name="transactions-do-not-affect-non-store-objects"></a>Le transazioni non influiscono sugli oggetti non di archivio
- Le transazioni regolano solo lo stato dell'archivio. Non possono annullare le modifiche parziali apportate a elementi esterni, ad esempio file, database o oggetti dichiarati con tipi normali al di fuori della definizione DSL.
+## <a name="transactions-do-not-affect-non-store-objects"></a>Le transazioni non influiscono sugli oggetti non di archiviazione
+ Le transazioni regolano solo lo stato dell'archivio. Non possono annullare le modifiche parziali apportate a elementi esterni, ad esempio file, database o oggetti dichiarati con tipi ordinari all'esterno della definizione DSL.
 
- Se un'eccezione potrebbe lasciare invariata una modifica di questo tipo con l'archivio, è necessario gestire tale possibilità nel gestore di eccezioni. Un modo per assicurarsi che le risorse esterne rimangano sincronizzate con gli oggetti di archiviazione consiste nell'associare ogni oggetto esterno a un elemento dell'archivio usando i gestori eventi. Per ulteriori informazioni, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+ Se un'eccezione potrebbe lasciare una modifica di questo tipo incoerente con l'archivio, è necessario gestire tale possibilità nel gestore di eccezioni. Un modo per assicurarsi che le risorse esterne rimangano sincronizzate con gli oggetti Store è quello di accoppiare ogni oggetto esterno a un elemento nell'archivio usando gestori eventi. Per altre informazioni, vedere [Propagare modifiche all'esterno del modello da parte dei gestori eventi.](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
-## <a name="rules-fire-at-the-end-of-a-transaction"></a>Le regole vengono attivate alla fine di una transazione
- Alla fine di una transazione, prima che la transazione venga eliminata, vengono generate le regole associate agli elementi nell'archivio. Ogni regola è un metodo applicato a un elemento del modello che è stato modificato. Sono ad esempio presenti regole di correzione che aggiornano lo stato di una forma quando viene modificato l'elemento del modello e che creano una forma quando viene creato un elemento del modello. Nessun ordine di attivazione specificato. Una modifica apportata da una regola può generare un'altra regola.
+## <a name="rules-fire-at-the-end-of-a-transaction"></a>Le regole vengono applicate alla fine di una transazione
+ Alla fine di una transazione, prima dell'eliminazione della transazione, vengono attivato le regole associate agli elementi nell'archivio. Ogni regola è un metodo applicato a un elemento del modello modificato. Ad esempio, esistono regole di "correzione" che aggiornano lo stato di una forma quando il relativo elemento del modello viene modificato e che creano una forma quando viene creato un elemento del modello. Non esiste alcun ordine di attivazione specificato. Una modifica apportata da una regola può essere applicata a un'altra regola.
 
- È possibile definire regole personalizzate. Per ulteriori informazioni sulle regole, vedere [risposta a e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).
+ È possibile definire regole personalizzate. Per altre informazioni sulle regole, vedere [Risposta e propagazione delle modifiche.](../modeling/responding-to-and-propagating-changes.md)
 
- Le regole non vengono attivate dopo un'operazione di annullamento, ripetizione o rollback.
+ Le regole non vengono applicate dopo un'operazione di annullamento, un'operazione di ripristino o un comando di rollback.
 
 ## <a name="transaction-context"></a>Contesto di transazione
- Ogni transazione dispone di un dizionario in cui è possibile archiviare le informazioni desiderate:
+ Ogni transazione ha un dizionario in cui è possibile archiviare le informazioni desiderate:
 
  `store.TransactionManager`
 
@@ -88,16 +88,16 @@ catch (Exception ex)
 
  `.Context.Add(aKey, aValue);`
 
- Questa operazione è particolarmente utile per il trasferimento delle informazioni tra le regole.
+ Ciò è particolarmente utile per il trasferimento di informazioni tra le regole.
 
 ## <a name="transaction-state"></a>Stato della transazione
- In alcuni casi è necessario evitare la propagazione di una modifica se la modifica è causata da un'operazione di rollback o di una transazione. Questo può accadere, ad esempio, se si scrive un gestore del valore di una proprietà in grado di aggiornare un altro valore nell'archivio. Poiché l'operazione di annullamento Reimposta tutti i valori dell'archivio sugli stati precedenti, non è necessario calcolare i valori aggiornati. Usare il codice seguente:
+ In alcuni casi è necessario evitare di propagare una modifica se la modifica è causata dall'annullamento o dal nuovo annullamento di una transazione. Questa operazione può verificarsi, ad esempio, se si scrive un gestore del valore della proprietà in grado di aggiornare un altro valore nell'archivio. Poiché l'operazione di annullamento reimposta tutti i valori nell'archivio sui rispettivi stati precedenti, non è necessario calcolare i valori aggiornati. Usare questo codice:
 
 ```csharp
 if (!this.Store.InUndoRedoOrRollback) {...}
 ```
 
- È possibile attivare le regole quando l'archivio viene inizialmente caricato da un file. Per evitare di rispondere a queste modifiche, usare:
+ Le regole possono essere applicate quando l'archivio viene caricato inizialmente da un file. Per evitare di rispondere a queste modifiche, usare:
 
 ```csharp
 if (!this.Store.InSerializationTransaction) {...}

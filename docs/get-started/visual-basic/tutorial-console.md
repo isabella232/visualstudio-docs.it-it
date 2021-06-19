@@ -1,7 +1,7 @@
 ---
 title: 'Esercitazione: Introduzione a Visual Basic'
 description: Informazioni dettagliate su come creare un'app console Visual Basic in Visual Studio.
-ms.custom: acquisition, seodec18, get-started
+ms.custom: vs-acquisition,  get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 8491869f5c0d518b394c0baa6a6da91bfeb6c7a3
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 8d34fef6251da95b6c3ac99430b87d853d4b5ba7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308376"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390711"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: introduzione a Visual Basic in Visual Studio
 
@@ -222,7 +222,7 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
 1. Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il modello **Applicazione console** e quindi **scegliere Avanti.**
 
-   Nella finestra **Configura il nuovo progetto** digitare o immettere *CalculateThis* nella **casella Nome** progetto. Scegliere quindi **Avanti**.
+   Quindi, nella **finestra Configura il nuovo progetto** digitare o immettere *CalculateThis* nella casella **Nome** progetto. Scegliere quindi **Avanti**.
 
 1. Nella finestra **Informazioni aggiuntive** è necessario che **.NET Core 3.1** sia già selezionato per il framework di destinazione. In caso contrario, **selezionare .NET Core 3.1.** Scegliere quindi **Crea**.
 
@@ -267,7 +267,7 @@ Visual Studio è una suite integrata per lo sviluppo di strumenti di produttivit
 
 ### <a name="what-is-a-console-app"></a>Che cos'è un'app console?
 
-Un'app console accetta input e visualizza l'output in una finestra della riga di comando, nota anche come console.
+Un'app console accetta l'input e visualizza l'output in una finestra della riga di comando, nota anche come console.
 
 ### <a name="what-is-net-core"></a>Informazioni su .NET Core
 

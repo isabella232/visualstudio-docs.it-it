@@ -1,7 +1,7 @@
 ---
 title: App Hello World con WPF in Visual Basic
 description: Creare una semplice app Windows Desktop .NET in Visual Basic con Visual Studio usando il framework di interfaccia utente Windows Presentation Foundation (WPF).
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, seodec18, get-started
 ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5fc5b9308c854649a4f10482a54ff395bec5d8df
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: e757dc25fe094b1ffa745cd43ad251abbc9448a7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308194"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390125"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: Creare un'applicazione semplice con Visual Basic
 
@@ -27,19 +27,19 @@ Completando questa esercitazione, si acquisirà familiarità con molti strumenti
 
 ::: moniker range="vs-2017"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2022"
 
-Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
+Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina dei download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 ::: moniker range="vs-2017"
 
-1. Creare un nuovo progetto. Sulla barra dei menu selezionare **File**  >  **Nuovo**  >  **progetto**.
+1. Creare un nuovo progetto. Nella barra dei menu selezionare **File** New Project  >  **(File nuovo**  >  **progetto).**
 
      ![Nella barra dei menu scegliere File, Nuovo, Progetto](../media/exploreide-filenewproject.png)
 
@@ -106,23 +106,23 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
-Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni** fare clic con il pulsante destro *del mouse su MainWindow.xaml* e scegliere **Rinomina**. Rinominare il file in *Greetings.xaml.*
+Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni** fare clic con il pulsante destro *del mouse su MainWindow.xaml* e **scegliere Rinomina.** Rinominare il file in *Greetings.xaml.*
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
 
-Se la finestra di progettazione non è aperta, selezionare *Greetings.xaml* **Esplora soluzioni** e premere  + **MAIUSC F7** per aprire la finestra di progettazione.
+Se la finestra di progettazione non è aperta, selezionare *Greetings.xaml* **Esplora soluzioni** e premere **MAIUSC** + **F7** per aprire la finestra di progettazione.
 
 Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:System.Windows.Controls.TextBlock>, due controlli <xref:System.Windows.Controls.RadioButton> e un controllo <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Aggiungere un controllo TextBlock
 
-1. Premere **CTRL Q** + **per** attivare la casella di ricerca e digitare Casella degli **strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
+1. Premere **CTRL** + **Q per** attivare la casella di ricerca e digitare Casella degli **strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
 
 2. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
 
      ![Casella degli strumenti con il controllo TextBlock evidenziato](../media/exploreide-textblocktoolbox.png)
 
-3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive, è possibile usare le linee guida rosse per centrare il controllo.
+3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive è possibile usare le linee guida rosse per centrare il controllo.
 
 La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
@@ -144,7 +144,7 @@ Il markup XAML sarà simile all'esempio seguente:
 
 2. Se necessario, riallineare al centro il controllo TextBlock e salvare le modifiche premendo CTRL+S o usando la voce di menu **File**.
 
-Successivamente, si aggiungeranno due [controlli RadioButton](/dotnet/framework/wpf/controls/radiobutton) al form.
+Si aggiungeranno quindi due [controlli RadioButton](/dotnet/framework/wpf/controls/radiobutton) al form.
 
 ### <a name="add-radio-buttons"></a>Aggiungere pulsanti di opzione
 
@@ -168,7 +168,7 @@ Successivamente, si aggiungeranno due [controlli RadioButton](/dotnet/framework/
 
 ### <a name="add-display-text-for-each-radio-button"></a>Aggiungere testo visualizzato per ogni pulsante di opzione
 
-Aggiornare **l'attributo Content** per `HelloButton` e in e nel codice `GoodbyeButton` `"Hello"` `"Goodbye"` XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+Aggiornare **l'attributo Content** per `HelloButton` e in e in `GoodbyeButton` `"Hello"` `"Goodbye"` XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
 
    ```xaml
    <Grid>
@@ -188,11 +188,11 @@ Nella visualizzazione XAML individuare il markup per HelloButton e aggiungere un
 IsChecked="True"
 ```
 
-L'ultimo elemento dell'interfaccia utente che si aggiungerà è un [controllo](/dotnet/framework/wpf/controls/button) Button.
+L'ultimo elemento dell'interfaccia utente che verrà aggiunto è un [controllo](/dotnet/framework/wpf/controls/button) Button.
 
 ### <a name="add-the-button-control"></a>Aggiungere il controllo del pulsante
 
-1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione. Se si usa Visual Studio 2019 o versione successiva, una linea rossa consente di centrare il controllo.
+1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione. Se si usa il Visual Studio 2019 o versione successiva, una linea rossa consente di centrare il controllo.
 
 2. Nella visualizzazione XAML modificare il valore di **Contenuto** per il controllo Button da `Content="Button"` a `Content="Display"`, e salvare le modifiche.
 
@@ -313,7 +313,7 @@ Nell'app in esecuzione dovrebbe essere visualizzato un widget nella parte superi
 
 Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di versione dell'applicazione.
 
-1. Nel menu principale selezionare **Compila** soluzione pulita per eliminare i file intermedi e i file di output creati durante le  >   compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
+1. Nel menu principale selezionare **Compila** soluzione pulita per eliminare i file intermedi e i file di  >   output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
 2. Modificare la configurazione della build per HelloWPFApp da **Debug** a **Release** usando il controllo a discesa sulla barra degli strumenti (attualmente è &quot;Debug").
 

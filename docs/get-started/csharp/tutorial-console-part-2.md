@@ -1,7 +1,7 @@
 ---
 title: 'Esercitazione: Estendere una semplice app console C#'
-description: Informazioni su come sviluppare un'app console C# in Visual Studio, procedura dettagliata.
-ms.custom: get-started
+description: Informazioni dettagliate su come sviluppare un Visual Studio app console C#.
+ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -16,32 +16,32 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: cce069b1c4acb1784388b7afb06e810dbe826d59
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: c7c38ed40143064090535735b2050dd31904d608
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107584122"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390177"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Esercitazione: Estendere una semplice app console C#
 
 In questa esercitazione si apprenderà come usare Visual Studio per estendere l'app console creata nella prima parte. Si apprenderanno alcune delle funzionalità di Visual Studio necessarie per lo sviluppo giornaliero, ad esempio la gestione di più progetti e il riferimento a pacchetti di terze parti.
 
-Se è stata appena completata la [prima parte di](tutorial-console.md) questa serie, è già presente l'app console Calculator.  Per ignorare la parte 1, è possibile iniziare aprendo il progetto da un repository GitHub. L'app Calcolatrice C# si trova nel [repo vs-tutorial-samples,](https://github.com/MicrosoftDocs/vs-tutorial-samples)quindi è possibile seguire i passaggi descritti in Esercitazione: Aprire un progetto da un [repo](../tutorial-open-project-from-repo.md) per iniziare.
+Se è stata appena completata [la prima parte di](tutorial-console.md) questa serie, si dispone già dell'app console Calculator.  Per ignorare la parte 1, è possibile iniziare aprendo il progetto da un repository GitHub. L'app Calcolatrice C# si trova nel [repo vs-tutorial-samples,](https://github.com/MicrosoftDocs/vs-tutorial-samples)quindi è sufficiente seguire i passaggi descritti in Esercitazione: Aprire un progetto da un [repo](../tutorial-open-project-from-repo.md) per iniziare.
 
 ## <a name="add-a-new-project"></a>Aggiungere un nuovo progetto
 
-Il codice reale implica molti progetti che lavorano insieme in una soluzione. Ora si aggiunge un altro progetto all'app Calculator. Si tratta di una libreria di classi che fornisce alcune delle funzioni della calcolatrice.
+Il codice reale implica la collaborazione di molti progetti in una soluzione. Aggiungere ora un altro progetto all'app Calculator. Si tratta di una libreria di classi che fornisce alcune delle funzioni della calcolatrice.
 
-1. In Visual Studio è possibile usare il comando di menu di primo livello **File** Aggiungi nuovo progetto per aggiungere un nuovo progetto, ma è anche possibile fare clic con il pulsante destro del mouse sul nome del progetto esistente  >    >   (denominato "nodo del progetto") e aprire il menu di scelta rapida (o il menu di scelta rapida) del progetto. Questo menu di scelta rapida contiene molti modi per aggiungere funzionalità ai progetti. Fare quindi clic con il pulsante destro del mouse sul nodo **del progetto Esplora soluzioni** e scegliere **Aggiungi**  >  **nuovo progetto**.
+1. In Visual Studio è possibile usare il comando di menu di primo livello **File** Aggiungi nuovo progetto per aggiungere un nuovo progetto, ma è anche possibile fare clic con il pulsante destro del mouse sul nome del progetto esistente  >    >   (denominato "nodo del progetto") e aprire il menu di scelta rapida (o il menu di scelta rapida) del progetto. Questo menu di scelta rapida contiene molti modi per aggiungere funzionalità ai progetti. Fare quindi clic con il pulsante destro del mouse sul nodo del **progetto Esplora soluzioni** e **scegliere Aggiungi**  >  **nuovo progetto.**
 
-1. Scegliere il modello di progetto C# Libreria di **classi (.NET Standard)**.
+1. Scegliere il modello di progetto C# **Libreria di classi (.NET Standard)**.
 
-   ![Screenshot della selezione del modello di progetto libreria di classi](media/vs-2019/calculator2-add-project-dark.png)
+   ![Screenshot della selezione del modello di progetto Libreria di classi](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Digitare il nome del progetto **CalculatorLibrary** e scegliere **Crea**. Quando richiesto, scegliere di nuovo .NET 3.1. Visual Studio crea il nuovo progetto e lo aggiunge alla soluzione.
+1. Digitare il nome del **progetto CalculatorLibrary** e scegliere **Crea.** Anche in questo caso, scegliere .NET 3.1 quando richiesto. Visual Studio crea il nuovo progetto e lo aggiunge alla soluzione.
 
-   ![Screenshot dell'Esplora soluzioni con il progetto libreria di classi CalculatorLibrary aggiunto](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
+   ![Screenshot della Esplora soluzioni con il progetto libreria di classi CalculatorLibrary aggiunto](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
 1. Invece di avere *Class1.cs*, rinominare il file **CalculatorLibrary.cs**. È possibile fare clic sul nome nel **Esplora soluzioni** rinominarlo oppure fare clic con il pulsante destro del mouse e scegliere **Rinomina** oppure **premere F2.**
 
@@ -113,7 +113,7 @@ Il codice reale implica molti progetti che lavorano insieme in una soluzione. Or
    using CalculatorLibrary;
    ```
 
-   Questa modifica dovrebbe consentire di rimuovere lo spazio dei nomi CalculatorLibrary dal sito di chiamata, ma ora esiste un'ambiguità. La classe in CalculatorLibrary o `Calculator` Calculator è lo spazio dei nomi ?  Per risolvere l'ambiguità, rinominare lo spazio dei nomi `CalculatorProgram` .
+   Questa modifica dovrebbe consentire di rimuovere lo spazio dei nomi CalculatorLibrary dal sito di chiamata, ma ora esiste un'ambiguità. La `Calculator` classe in CalculatorLibrary o Calculator è lo spazio dei nomi ?  Per risolvere l'ambiguità, rinominare lo spazio dei nomi `CalculatorProgram` .
 
    ```csharp
    namespace CalculatorProgram
@@ -121,14 +121,14 @@ Il codice reale implica molti progetti che lavorano insieme in una soluzione. Or
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Fare riferimento alle librerie .NET: scrivere in un log
 
-1. Si supponga ora di voler aggiungere un log di tutte le operazioni e di scriverlo in un file di testo. La classe .NET `Trace` fornisce questa funzionalità. È utile anche per tecniche di debug di stampa di base.  La classe Trace si trova in System.Diagnostics ed è necessario System.IO classi come , quindi iniziare aggiungendo le direttive using all'inizio `StreamWriter` di *CalculatorLibrary.cs:*
+1. Si supponga di voler aggiungere un log di tutte le operazioni e scriverlo in un file di testo. La classe .NET `Trace` fornisce questa funzionalità. È utile anche per le tecniche di debug di stampa di base.  La classe Trace si trova in System.Diagnostics e saranno necessarie System.IO classi come , quindi iniziare aggiungendo le direttive using all'inizio `StreamWriter` di *CalculatorLibrary.cs:*
 
    ```csharp
    using System.IO;
    using System.Diagnostics;
    ```
 
-1. Osservando come viene usata la classe Trace, è necessario mantenere un riferimento per la classe , associato a un filestream. Ciò significa che la calcolatrice funziona meglio come oggetto, quindi si aggiunge un costruttore all'inizio della classe Calculator in *CalculatorLibrary.cs.*
+1. Esaminando come viene usata la classe Trace, è necessario mantenere un riferimento per la classe , associato a un filestream. Ciò significa che la calcolatrice funziona meglio come oggetto, quindi si aggiunge un costruttore all'inizio della classe Calculator in *CalculatorLibrary.cs.*
 
    ```csharp
    public Calculator()
@@ -144,7 +144,7 @@ Il codice reale implica molti progetti che lavorano insieme in una soluzione. Or
         {
    ```
 
-1. Ed è necessario modificare il metodo statico `DoOperation` in un metodo membro, quindi rimuovere la parola `static` chiave .  Si aggiunge anche l'output a ogni calcolo per il log, in modo che DoOperation sia simile al codice seguente:
+1. Ed è necessario modificare il metodo statico `DoOperation` in un metodo membro, quindi rimuovere la parola `static` chiave .  Aggiungere anche l'output a ogni calcolo per il log, in modo che DoOperation sia simile al codice seguente:
 
    ```csharp
    public double DoOperation(double num1, double num2, string op)
@@ -182,13 +182,13 @@ Il codice reale implica molti progetti che lavorano insieme in una soluzione. Or
     }
    ```
 
-1. Ora di nuovo in *Program.cs,* la chiamata statica viene contrassegnata con un rosso ondulato. Per risolvere il problema, creare `calculator` una variabile aggiungendo la riga seguente subito prima del `while (!endApp)` ciclo:
+1. Ora di nuovo in *Program.cs,* la chiamata statica è contrassegnata con un rosso ondulato. Per risolvere il problema, creare `calculator` una variabile aggiungendo la riga seguente subito prima del ciclo `while (!endApp)` :
 
    ```csharp
    Calculator calculator = new Calculator();
    ```
 
-   Modificare il sito di chiamata per come indicato di seguito, in modo che faccia riferimento all'oggetto denominato in lettere minuscole, rendendo così questa chiamata a un membro anziché a una chiamata `DoOperation` `calculator` a un metodo statico:
+   Modificare il sito di chiamata per come indicato di seguito, in modo che faccia riferimento all'oggetto denominato in minuscolo, rendendo in tal modo la chiamata a un membro anziché una chiamata `DoOperation` `calculator` a un metodo statico:
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -203,7 +203,7 @@ Il codice reale implica molti progetti che lavorano insieme in una soluzione. Or
     3 * 3 = 9
     ```
 
-A questo punto, *CalculatorLibrary.cs* dovrebbe avere un aspetto simile al seguente:
+A questo punto, *CalculatorLibrary.cs* dovrebbe essere simile al seguente:
 
 ```csharp
 using System;
@@ -434,7 +434,7 @@ namespace CalculatorProgram
         }
    ```
 
-1. È necessario aggiungere un metodo per completare la sintassi JSON dopo che l'utente ha completato l'immissione dei dati dell'operazione.
+1. È necessario aggiungere un metodo per completare la sintassi JSON dopo che l'utente ha immesso i dati dell'operazione.
 
    ```csharp
     public void Finish()
@@ -485,7 +485,7 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-   Il cerchio rosso visualizzato indica un punto di interruzione. È possibile usare punti di interruzione per sospendere l'app ed esaminare il codice. È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile.
+   Il cerchio rosso visualizzato indica un punto di interruzione. È possibile usare i punti di interruzione per sospendere l'app ed esaminare il codice. È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile.
 
    ![Screenshot dell'impostazione di un punto di interruzione](media/vs-2019/calculator-2-debug-set-breakpoint.png)
 
@@ -495,21 +495,21 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
    - Per il primo numero digitare **8** e immetterlo.
    - Per il secondo numero digitare **0** e immetterlo.
-   - Per l'operatore, si diverte; digitare **d** e immetterlo.
+   - Per l'operatore , diamo un po' di tempo. digitare **d** e immetterlo.
 
    L'app sospende la posizione in cui è stato creato il punto di interruzione, indicato dal puntatore giallo a sinistra e dal codice evidenziato. Il codice evidenziato non è ancora stato eseguito.
 
-   ![Screenshot che illustra come raggiungere un punto di interruzione](media/vs-2019/calculator-2-debug-hit-breakpoint.png)
+   ![Screenshot del clic su un punto di interruzione](media/vs-2019/calculator-2-debug-hit-breakpoint.png)
 
    Ora, con l'app sospesa, è possibile controllare lo stato dell'applicazione.
 
 ## <a name="debug-view-variables"></a>Debug: visualizzare le variabili
 
-1. Nel codice evidenziato passare il mouse sulle variabili, ad `cleanNum1` esempio e `op` . I valori correnti per queste variabili ( `8` e , rispettivamente) vengono visualizzati nei suggerimenti `d` dati.
+1. Nel codice evidenziato passare il mouse su variabili come `cleanNum1` e `op` . Vengono visualizzati i valori correnti per queste variabili ( `8` e , rispettivamente), visualizzati in Suggerimenti `d` dati.
 
    ![Screenshot della visualizzazione di un suggerimento dati](media/vs-2019/calculator-2-debug-view-datatip.png)
 
-   Durante il debug, verificare se le variabili contengono i valori previsti è spesso fondamentale per la correzione dei problemi.
+   Durante il debug, verificare se le variabili contengono i valori previsti è spesso fondamentale per risolvere i problemi.
 
 2. Nel riquadro inferiore esaminare la **finestra** Variabili locali. Se è chiuso, scegliere **Debug**  >  **Windows**  >  **Variabili locali** per aprirlo.
 
@@ -519,36 +519,36 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
 3. Esaminare la **finestra Auto.**
 
-   La finestra Auto è  simile alla finestra Variabili locali, ma mostra le variabili immediatamente prima e dopo la riga di codice corrente in cui l'app è sospesa.
+   La finestra Auto è  simile alla finestra Variabili locali, ma mostra le variabili immediatamente che precedono e segue la riga di codice corrente in cui l'app è sospesa.
 
-   Successivamente, si eseguirà il codice nel debugger un'istruzione alla volta, denominata *esecuzione istruzione per istruzione.*
+   Successivamente, si eseguirà il codice nel debugger un'istruzione alla volta, denominata *esecuzione di istruzioni*.
 
-## <a name="debug-step-through-code"></a>Debug: esecuzione istruzione per istruzione del codice
+## <a name="debug-step-through-code"></a>Debug: eseguire il codice un'istruzione alla pagina
 
-1. Premere **F11** (o **Esegui debug** istruzione  >  **).**
+1. Premere **F11** (o **Esegui debug** istruzione  >  **in**).
 
    Usando il comando Esegui istruzione, l'app esegue l'istruzione corrente e passa all'istruzione eseguibile successiva (in genere la riga di codice successiva). Il puntatore giallo a sinistra indica sempre l'istruzione corrente.
 
-   ![Screenshot del comando per l'esecuzione di istruzioni](media/vs-2019/calculator-2-debug-step-into.png)
+   ![Screenshot del comando step-into](media/vs-2019/calculator-2-debug-step-into.png)
 
-   È stata appena fatto un'istanza `DoOperation` del metodo nella classe `Calculator` .
+   È stato appena illustrato il `DoOperation` metodo nella `Calculator` classe .
 
-1. Per ottenere un'analisi gerarchica del flusso del programma, esaminare la finestra **Stack di** chiamate. Se è chiuso, scegliere **Debug**  >  **Windows**  >  **Stack di chiamate.**
+1. Per ottenere un'analisi gerarchica del flusso del programma, esaminare la finestra **Stack di** chiamate. Se è chiuso, scegliere **Debug**  >  **Windows**  >  **Stack di chiamate**.
 
    ![Screenshot dello stack di chiamate](media/vs-2019/calculator-2-debug-call-stack.png)
 
-   Questa visualizzazione mostra il metodo corrente, indicato dal puntatore giallo, e la seconda riga mostra la funzione che lo ha chiamato dal metodo `Calculator.DoOperation` `Main` in *Program.cs.* La finestra **Stack di chiamate** visualizza l'ordine in cui vengono chiamati metodi e funzioni. Fornisce inoltre l'accesso a molte funzionalità del debugger, ad esempio Vai al codice **sorgente**, dal menu di scelta rapida.
+   Questa visualizzazione mostra il metodo corrente, indicato dal puntatore giallo, e la seconda riga mostra la funzione che lo ha chiamato, dal metodo `Calculator.DoOperation` `Main` in *Program.cs*. La finestra **Stack di chiamate** visualizza l'ordine in cui vengono chiamati metodi e funzioni. Fornisce inoltre l'accesso a molte funzionalità del debugger, ad esempio Vai al codice **sorgente**, dal menu di scelta rapida.
 
-1. Premere **F10 (o** **Esegui debug** istruzione/istruzione) più volte fino a quando  >  l'app non viene sospesa nell'istruzione `switch` .
+1. Premere **F10** (o **Esegui debug** istruzione) più volte fino a quando  >  l'app non viene sospesa `switch` sull'istruzione.
 
    ```csharp
    switch (op)
    {
    ```
 
-   Il comando Istruzione/esecuzione è simile al comando Istruzione, ad eccezione del fatto che se l'istruzione corrente chiama una funzione, il debugger esegue il codice nella funzione chiamata e non sospende l'esecuzione fino a quando la funzione non viene restituita. Eseguire l'istruzione/esecuzione è un modo più rapido per spostarsi all'interno del codice se non si è interessati a una funzione specifica.
+   Il comando Step Over è simile al comando Step Into, ad eccezione del fatto che se l'istruzione corrente chiama una funzione, il debugger esegue il codice nella funzione chiamata e non sospende l'esecuzione finché la funzione non viene restituita. Eseguire il passaggio è un modo più rapido per spostarsi nel codice se non si è interessati a una funzione specifica.
 
-1. Premere **F10** ancora una volta in modo che l'app si sospende nella riga di codice seguente.
+1. Premere **F10** ancora una volta in modo che l'app si sospende sulla riga di codice seguente.
 
    ```csharp
    if (num2 != 0)
@@ -575,7 +575,7 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
 1. Premere **F5** (oppure **Debug Continua**  >  **debug**).
 
-   Il simbolo Infinity viene visualizzato nella console come risultato dell'operazione matematica.
+   Il simbolo Infinito viene visualizzato nella console come risultato dell'operazione matematica.
 
 1. Chiudere correttamente l'app usando il comando 'n'.
 

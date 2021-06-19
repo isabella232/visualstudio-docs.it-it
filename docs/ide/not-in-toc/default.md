@@ -1,5 +1,5 @@
 ---
-title: Pagina predefinita per la Guida F1
+title: F1 help no-match fallback
 description: Come si può osservare, Nessuna corrispondenza F1 trovata.
 ms.prod: visual-studio
 ms.technology: ''
@@ -12,12 +12,12 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 1670b694374c72c641eaedf8a65c5c8b2fa93bb2
-ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
+ms.openlocfilehash: cc15c7ac377899ddb8660782e6015cfc975aa8dc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "112365436"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390568"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>Come si può osservare, Non `F1` è stata trovata alcuna corrispondenza della Guida
 
@@ -38,7 +38,7 @@ Siamo spiacenti. Sembra che non sia stato possibile trovare ciò che si stava ce
 **Non intendeva fare clic?** [Modificare il mapping o disabilitare la `F1` chiave della Guida](../not-in-toc/change-f1-help-key.md)
 
 
-## <a name="help-us-serve-you-better"></a>Aiutaci a fornire un servizio migliore
+## <a name="help-us-serve-you-better"></a>Aiutaci a migliorare il servizio
 
 Indicare la posizione del prodotto e l'assistenza necessaria.   
 <br/>Usare il `This Page` pulsante commenti e suggerimenti nella parte inferiore di questa pagina. 

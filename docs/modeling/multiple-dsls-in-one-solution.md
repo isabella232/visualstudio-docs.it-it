@@ -1,30 +1,30 @@
 ---
 title: Più soluzioni DSL in una soluzione unica
-description: Informazioni su come creare un pacchetto di diversi linguaggi specifici del dominio (DSLs) come parte di una singola soluzione in modo che vengano installati insieme.
+description: Informazioni su come creare un pacchetto di più linguaggi specifici di dominio (DSL) come parte di una singola soluzione in modo che siano installati insieme.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10eeee4d36e6a28bb6cd872573c500bbdf6dca14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11baf6439062e28c7361e2fabb4dea4a3430f237
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950346"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390919"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Più soluzioni DSL in una soluzione unica
 
 È possibile creare un pacchetto di diversi linguaggi specifici di dominio come parte di un'unica soluzione, in modo che vengano installati insieme.
 
-Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per altre informazioni, vedere [integrazione di modelli tramite ModelBus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md) e [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md) e [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).
+Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per altre informazioni, vedere Integrazione di modelli tramite [Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) e [Procedura: Aggiungere](../modeling/how-to-add-a-drag-and-drop-handler.md) un gestore di trascinamento della selezione e [Personalizzazione del comportamento di copia.](../modeling/customizing-copy-behavior.md)
 
-## <a name="build-more-than-one-dsl-in-the-same-solution"></a>Compilare più di un linguaggio DSL nella stessa soluzione
+## <a name="build-more-than-one-dsl-in-the-same-solution"></a>Compilare più DSL nella stessa soluzione
 
-1. Creare un nuovo progetto **progetto VSIX** .
+1. Creare un nuovo **progetto VSIX.**
 
 2. Creare due o più progetti DSL nella directory della soluzione VSIX.
 
@@ -32,29 +32,29 @@ Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per a
 
    - Assicurarsi di creare ogni linguaggio specifico di dominio con un'estensione di file diversa.
 
-   - Modificare i nomi dei progetti **DSL** e **DslPackage** in modo che siano tutti diversi. Ad esempio: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+   - Modificare i nomi dei **progetti Dsl** e **DslPackage** in modo che siano tutti diversi. Ad esempio: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   - In ogni **DslPackage \* \ source.Extension.TT** aggiornare questa riga al nome del progetto DSL corretto:
+   - In ogni **DslPackage \* \source.extension.tt** aggiornare questa riga con il nome del progetto Dsl corretto:
 
       `string dslProjectName = "Dsl2";`
 
-   - Nella soluzione VSIX aggiungere i progetti DSL * e DslPackage \* . Può essere utile inserire ogni coppia in una specifica cartella soluzione.
+   - Nella soluzione VSIX aggiungere i progetti Dsl* e DslPackage. \* Può essere utile inserire ogni coppia in una specifica cartella soluzione.
 
 2. Combinare i manifesti VSIX dei linguaggi specifici di dominio:
 
-   1. Aprire _progettovsix_**\Source.Extension.manifest**.
+   1. Aprire _YourVsixProject_**\source.extension.manifest**.
 
-   2. Per ogni DSL, scegliere **Aggiungi contenuto** e aggiungere:
+   2. Per ogni DSL scegliere **Aggiungi contenuto** e aggiungere:
 
        - `Dsl*` progetto come **componente MEF**
 
        - `DslPackage*` progetto come **componente MEF**
 
-       - `DslPackage*`progetto come **pacchetto di Visual** Studio
+       - `DslPackage*` progetto come pacchetto **VS**
 
 3. Compilare la soluzione.
 
-   Il progetto VSIX risultante installerà entrambi i linguaggi specifici di dominio. È possibile testarli usando F5 oppure distribuire _progettovsix_**\bin\Debug \\ \* . vsix**.
+   Il progetto VSIX risultante installerà entrambi i linguaggi specifici di dominio. È possibile testarli usando F5 o distribuire _YourVsixProject_**\bin\Debug \\ \* .vsix**.
 
 ## <a name="see-also"></a>Vedi anche
 

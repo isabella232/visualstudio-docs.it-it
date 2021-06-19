@@ -1,7 +1,7 @@
 ---
 title: Gestire le eccezioni con il debugger | Microsoft Docs
-description: Viene illustrato come specificare le eccezioni in cui si interrompe il debugger, a quel punto si desidera che il debugger si interrompa e come vengono gestite le interruzioni.
-ms.custom: SEO-VS-2020, seodec18
+description: Informazioni su come specificare le eccezioni in cui si interrompe il debugger, a quel punto si vuole che il debugger si interrompa e come vengono gestite le interruzioni.
+ms.custom: SEO-VS-2020
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -34,47 +34,47 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89795df3a4c6b87c6a878cd07a072027f880e660
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893165"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390424"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger in Visual Studio
 
-Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l’esecuzione di un programma. È possibile indicare al debugger quali eccezioni o set di eccezioni si interrompono e, a quel punto, si desidera che il debugger si interrompa (ovvero sospendere il debugger). Quando il debugger si interrompe, viene visualizzata la posizione in cui è stata generata l'eccezione. È anche possibile aggiungere o eliminare le eccezioni. Con una soluzione aperta in Visual Studio, usare **Debug > Windows > le impostazioni delle eccezioni** per aprire la finestra **Impostazioni eccezioni** .
+Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l’esecuzione di un programma. È possibile indicare al debugger le eccezioni o i set di eccezioni in cui interrompere l'esecuzione e a quale punto si vuole che il debugger si interrompa, ovvero sospende il debugger. Quando il debugger si interrompe, viene visualizzato il punto in cui è stata generata l'eccezione. È anche possibile aggiungere o eliminare eccezioni. Con una soluzione aperta in Visual Studio, usare **Debug > windows > eccezioni per** aprire la finestra **Impostazioni** eccezioni.
 
-Fornire gestori che rispondono alle eccezioni più importanti. Se è necessario sapere come aggiungere gestori per le eccezioni, vedere correggere i [bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md). Inoltre, informazioni su come configurare il debugger in modo da interrompere sempre l'esecuzione per alcune eccezioni.
+Fornire gestori che rispondono alle eccezioni più importanti. Se è necessario sapere come aggiungere gestori per le eccezioni, vedere Correggere i bug scrivendo [codice C# migliore.](../debugger/write-better-code-with-visual-studio.md) Inoltre, informazioni su come configurare il debugger in modo che interrompa sempre l'esecuzione per alcune eccezioni.
 
-Quando si verifica un'eccezione, il debugger scrive un messaggio di eccezione nella finestra di **output** . Potrebbe interrompere l'esecuzione nei casi seguenti:
+Quando si verifica un'eccezione, il debugger scrive un messaggio di eccezione nella **finestra Output.** L'esecuzione può interrompersi nei casi seguenti quando:
 
 - Viene generata un'eccezione che non viene gestita.
-- Il debugger è configurato per interrompere l'esecuzione prima che venga richiamato un gestore.
-- È stato impostato [Just My Code](../debugger/just-my-code.md)e il debugger è configurato per l'interruzione in caso di eccezione non gestita nel codice utente.
+- Il debugger è configurato per interrompere l'esecuzione prima che venga richiamato qualsiasi gestore.
+- È stato impostato [Just My Code](../debugger/just-my-code.md)e il debugger è configurato per l'interruzione in caso di eccezioni non gestite nel codice utente.
 
 > [!NOTE]
-> ASP.NET dispone di un gestore di eccezioni di livello superiore che mostra le pagine di errore in un browser. Non interrompe l'esecuzione a meno che non sia attivato **Just My Code** . Per un esempio, vedere [indicare al debugger di continuare in caso di eccezioni non gestite dall'utente](#BKMK_UserUnhandled) .
+> ASP.NET dispone di un gestore di eccezioni di livello superiore che mostra le pagine di errore in un browser. Non interrompe l'esecuzione a meno **Just My Code** non sia attivata. Per un esempio, vedere Indicare al debugger di continuare in caso di eccezioni non [gestite dall'utente più avanti.](#BKMK_UserUnhandled)
 
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
 > In un'applicazione Visual Basic il debugger gestisce tutti gli errori come eccezioni, anche se si usano gestori degli errori di tipo On Error.
 
-## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Indica al debugger di interrompere l'interruzione quando viene generata un'eccezione
+## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Indicare al debugger di interrompere l'esecuzione quando viene generata un'eccezione
 
 Il debugger può interrompere l'esecuzione nel punto in cui viene generata un'eccezione, pertanto è possibile esaminare l'eccezione prima che venga richiamato un gestore.
 
-Nella finestra **Impostazioni eccezioni** (**Debug > Windows > impostazioni eccezioni**) espandere il nodo per una categoria di eccezioni, ad esempio **eccezioni Common Language Runtime**. Selezionare quindi la casella di controllo per un'eccezione specifica all'interno di tale categoria, ad esempio **System. AccessViolationException**. È inoltre possibile selezionare un'intera categoria di eccezioni.
+Nella finestra **Impostazioni eccezioni** (**Debug > Windows > Impostazioni** eccezioni ) espandere il nodo per una categoria di eccezioni, ad esempio Eccezioni Common Language **Runtime**. Selezionare quindi la casella di controllo per un'eccezione specifica all'interno di tale categoria, ad **esempio System.AccessViolationException**. È inoltre possibile selezionare un'intera categoria di eccezioni.
 
 ![AccessViolationException selezionata](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
-> È possibile trovare eccezioni specifiche utilizzando la finestra **Cerca** nella barra degli strumenti **Impostazioni eccezioni** oppure utilizzare la ricerca per filtrare gli spazi dei nomi specifici (ad esempio **System.io**).
+> È possibile trovare eccezioni  specifiche usando  la finestra Cerca nella barra degli strumenti Impostazioni eccezioni oppure usare la ricerca per filtrare spazi dei nomi specifici, **ad esempio System.IO**.
 
-Se si seleziona un'eccezione nella finestra **Impostazioni eccezioni** , l'esecuzione del debugger viene interrotta ogni volta che viene generata l'eccezione, a prescindere dal fatto che sia gestita. A questo punto, l'eccezione viene chiamata eccezione first-chance. Di seguito vengono riportati un paio di scenari di esempio:
+Se si seleziona un'eccezione nella finestra **Impostazioni** eccezioni, l'esecuzione del debugger si interrompe ogni volta che viene generata l'eccezione, indipendentemente dal fatto che sia gestita. A questo punto l'eccezione è denominata eccezione first chance. Di seguito vengono riportati un paio di scenari di esempio:
 
-- Nell'applicazione console C# seguente il metodo Main genera un'eccezione **AccessViolationException** all'interno di un `try/catch` blocco.
+- Nell'applicazione console C# seguente il metodo Main genera **un'eccezione AccessViolationException** all'interno di un `try/catch` blocco .
 
   ```csharp
   static void Main(string[] args)
@@ -92,14 +92,14 @@ Se si seleziona un'eccezione nella finestra **Impostazioni eccezioni** , l'esecu
   }
   ```
 
-  Se **le impostazioni dell'eccezione** sono state archiviate in **AccessViolationException** , l'esecuzione si interrompe sulla `throw` riga quando si esegue questo codice nel debugger. È quindi possibile continuare l'esecuzione. Nella console dovrebbero essere visualizzate entrambe le righe:
+  Se **accessViolationException** è selezionato **in** Impostazioni eccezioni , l'esecuzione si interromperà nella riga quando si esegue questo codice nel `throw` debugger. È quindi possibile continuare l'esecuzione. Nella console dovrebbero essere visualizzate entrambe le righe:
 
   ```cmd
   caught exception
   goodbye
   ```
 
-  ma non Visualizza la `here` riga.
+  ma non visualizza la `here` riga.
 
 - Un'applicazione console C# fa riferimento a una libreria di classi con una classe che dispone di due metodi. Un metodo genera un'eccezione e la gestisce, mentre un secondo metodo genera la stessa eccezione ma non la gestisce.
 
@@ -136,56 +136,56 @@ Se si seleziona un'eccezione nella finestra **Impostazioni eccezioni** , l'esecu
   }
   ```
 
-  Se **le impostazioni dell'eccezione** sono state archiviate in **AccessViolationException** , l'esecuzione si interrompe sulla `throw` riga in **ThrowHandledException ()** e **ThrowUnhandledException ()** quando si esegue questo codice nel debugger.
+  Se **accessViolationException** è selezionato **in** Impostazioni eccezioni , l'esecuzione si interromperà nella riga sia in `throw` **ThrowHandledException()** che in **ThrowUnhandledException()** quando si esegue questo codice nel debugger.
 
-Per ripristinare le impostazioni predefinite delle eccezioni, scegliere il pulsante **Ripristina le impostazioni predefinite dell'elenco** :
+Per ripristinare le impostazioni predefinite delle eccezioni, scegliere il pulsante **Ripristina le impostazioni predefinite dell'elenco:**
 
 ![Ripristinare i valori predefiniti in Impostazioni eccezione](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")
 
-## <a name="tell-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a>Indicare al debugger di continuare a eseguire le eccezioni non gestite dall'utente
+## <a name="tell-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a>Indicare al debugger di continuare con le eccezioni non gestite dall'utente
 
-Se si esegue il debug di codice .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), è possibile indicare al debugger di evitare l'interruzione di eccezioni non gestite nel codice utente, ma gestite altrove.
+Se si esegue il debug di codice .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), è possibile indicare al debugger di evitare l'interruzione in caso di eccezioni non gestite nel codice utente ma gestite altrove.
 
-1. Nella finestra **Impostazioni eccezioni** aprire il menu di scelta rapida facendo clic con il pulsante destro del mouse su un'etichetta di colonna e quindi scegliere **Mostra colonne > azioni aggiuntive**. Se è stato disattivato **Just My Code**, questo comando non verrà visualizzato. Viene visualizzata una terza colonna denominata **azioni aggiuntive** .
+1. Nella finestra **Impostazioni eccezioni aprire** il menu di scelta rapida facendo clic con il pulsante destro del mouse su un'etichetta di colonna e quindi scegliere **Mostra colonne > Azioni aggiuntive**. Se è stato disattivato **Just My Code**, questo comando non verrà visualizzato. Verrà visualizzata una terza colonna **denominata Azioni** aggiuntive.
 
-   ![Colonna azioni aggiuntive](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
+   ![Colonna Azioni aggiuntive](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
 
-   Per un'eccezione che mostra **continua se non gestita nel codice utente** in questa colonna, il debugger continua se tale eccezione non viene gestita nel codice utente ma viene gestita esternamente.
+   Per un'eccezione che mostra Continua quando non gestita nel codice utente **in** questa colonna, il debugger continua se tale eccezione non viene gestita nel codice utente ma viene gestita esternamente.
 
-2. Per modificare questa impostazione per un'eccezione specifica, selezionare l'eccezione, fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e scegliere **continua se non gestita nel codice utente**. È anche possibile modificare l'impostazione per un'intera categoria di eccezioni, ad esempio l'intera eccezione di Common Language Runtime.
+2. Per modificare questa impostazione per una particolare eccezione, selezionare l'eccezione, fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e scegliere Continua se non **gestita nel codice utente.** È anche possibile modificare l'impostazione per un'intera categoria di eccezioni, ad esempio le eccezioni di Common Language Runtime.
 
-   ![* * Continua se non gestita nell'impostazione del codice utente * *](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
+   ![Impostazione **Continua se non gestita nel codice utente**](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
 
-Ad esempio, le applicazioni Web ASP.NET gestiscono le eccezioni convertendo tali eccezioni in un codice di stato HTTP 500 ([gestione delle eccezioni in API Web ASP.NET](/aspnet/web-api/overview/error-handling/exception-handling)), che potrebbe non essere utile per determinare l'origine dell'eccezione. Nell'esempio seguente, il codice utente effettua una chiamata a `String.Format()` che genera un’eccezione <xref:System.FormatException>. L'esecuzione si interrompe come segue:
+Ad esempio, ASP.NET applicazioni Web gestiscono le eccezioni convertendole in un codice di stato HTTP 500 ( Gestione delle eccezioni[nell'API Web](/aspnet/web-api/overview/error-handling/exception-handling)di ASP.NET ), che potrebbe non aiutare a determinare l'origine dell'eccezione. Nell'esempio seguente, il codice utente effettua una chiamata a `String.Format()` che genera un’eccezione <xref:System.FormatException>. L'esecuzione si interrompe come segue:
 
-![Interruzioni per l'utente&#45;eccezione non gestita](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
+![Interruzioni in base all'&#45;'eccezione non gestita](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
 
 ## <a name="add-and-delete-exceptions"></a>Aggiungere ed eliminare le eccezioni
 
-È possibile aggiungere ed eliminare le eccezioni. Per eliminare un tipo di eccezione da una categoria, selezionare l'eccezione e scegliere il pulsante **Elimina l'eccezione selezionata dall'elenco** (il segno meno) nella barra degli strumenti **Impostazioni eccezioni** . In alternativa, è possibile fare clic con il pulsante destro del mouse sull'eccezione e scegliere **Elimina** dal menu di scelta rapida. L'eliminazione di un'eccezione ha lo stesso effetto di un'eccezione deselezionata, ovvero il debugger non si interrompe quando viene generata.
+È possibile aggiungere ed eliminare le eccezioni. Per eliminare un tipo di eccezione da una  categoria, selezionare l'eccezione e scegliere il pulsante Elimina l'eccezione selezionata dall'elenco (segno meno) sulla barra **degli strumenti Impostazioni** eccezioni. Oppure è possibile fare clic con il pulsante destro del mouse sull'eccezione **e scegliere Elimina** dal menu di scelta rapida. L'eliminazione di un'eccezione ha lo stesso effetto dell'annullamento della verifica dell'eccezione, ovvero il debugger non si interrompe quando viene generata.
 
 Per aggiungere un'eccezione:
 
-1. Nella finestra **Impostazioni eccezioni** selezionare una delle categorie di eccezioni (ad esempio **Common Language Runtime**).
+1. Nella finestra **Impostazioni eccezioni** selezionare una delle categorie di eccezioni, ad esempio **Common Language Runtime.**
 
-2. Scegliere il pulsante **Aggiungi un'eccezione alla categoria selezionata** (il segno più).
+2. Scegliere il **pulsante Aggiungi un'eccezione alla categoria** selezionata (segno più).
 
-   ![* * Aggiungere un'eccezione al pulsante Category * * selezionato](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
+   ![Pulsante **Aggiungi un'eccezione alla categoria selezionata**](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
 
-3. Digitare il nome dell'eccezione, ad esempio **System. UriTemplateMatchException**.
+3. Digitare il nome dell'eccezione, ad esempio **System.UriTemplateMatchException**.
 
    ![Digitare il nome dell'eccezione](../debugger/media/typetheexceptionname.png "TypeTheExceptionName")
 
-   L'eccezione viene aggiunta all'elenco (in ordine alfabetico) e controllata automaticamente.
+   L'eccezione viene aggiunta all'elenco (in ordine alfabetico) e selezionata automaticamente.
 
-Per aggiungere un'eccezione alle eccezioni di accesso alla memoria GPU, alle eccezioni di runtime JavaScript o alle categorie di eccezioni Win32, includere il codice di errore e la descrizione.
+Per aggiungere un'eccezione alle categorie Eccezioni di accesso alla memoria GPU, Eccezioni di runtime JavaScript o Eccezioni Win32, includere il codice di errore e la descrizione.
 
 > [!TIP]
-> Controllare l’ortografia. La finestra **Impostazioni eccezioni** non verifica l'esistenza di un'eccezione aggiunta. Quindi, se si digita System **. UriTemplateMatchException**, si otterrà una voce per tale eccezione (e non per **System. UriTemplateMatchException**).
+> Controllare l’ortografia. La **finestra Impostazioni** eccezioni non verifica l'esistenza di un'eccezione aggiunta. Pertanto, se si digita **Sytem.UriTemplateMatchException**, si otterrà una voce per l'eccezione (e non per **System.UriTemplateMatchException).**
 
-Poiché sono persistenti nel file con estensione suo della soluzione, le impostazioni delle eccezioni si applicano a una soluzione specifica. Non è possibile riutilizzare impostazioni di eccezioni specifiche in tutte le soluzioni. A questo punto vengono rese permanente solo le eccezioni aggiunte. le eccezioni eliminate non sono. È possibile aggiungere un'eccezione, chiudere e riaprire la soluzione e l'eccezione sarà ancora presente. Ma se si elimina un'eccezione e si chiude e si riapre la soluzione, l'eccezione viene visualizzata nuovamente.
+Poiché sono persistenti nel file con estensione suo della soluzione, le impostazioni delle eccezioni si applicano a una soluzione specifica. Non è possibile riutilizzare impostazioni di eccezioni specifiche in tutte le soluzioni. Ora vengono rese persistenti solo le eccezioni aggiunte. le eccezioni eliminate non lo sono. È possibile aggiungere un'eccezione, chiudere e riaprire la soluzione e l'eccezione sarà ancora presente. Ma se si elimina un'eccezione e si chiude e si riapre la soluzione, l'eccezione viene visualizzata nuovamente.
 
-La finestra **Impostazioni eccezioni** supporta tipi di eccezioni generiche in C#, ma non in Visual Basic. Per interrompere l’esecuzione in corrispondenza di eccezioni come `MyNamespace.GenericException<T>`, è necessario aggiungere l'eccezione come **MyNamespace.GenericException'1**. Ovvero, se è stata creata un'eccezione simile a questo codice:
+La finestra **Impostazioni eccezioni** supporta tipi di eccezioni generiche in C#, ma non in Visual Basic. Per interrompere l’esecuzione in corrispondenza di eccezioni come `MyNamespace.GenericException<T>`, è necessario aggiungere l'eccezione come **MyNamespace.GenericException'1**. Ciò significa che se è stata creata un'eccezione simile al codice seguente:
 
 ```csharp
 public class GenericException<T> : Exception
@@ -196,30 +196,30 @@ public class GenericException<T> : Exception
 }
 ```
 
-È possibile aggiungere l'eccezione alle **impostazioni delle eccezioni** usando la procedura precedente:
+È possibile aggiungere l'eccezione **a Impostazioni eccezioni** usando la procedura precedente:
 
 ![Aggiunta di eccezione generica](../debugger/media/addgenericexception.png "AddGenericException")
 
 ## <a name="add-conditions-to-an-exception"></a>Aggiungere condizioni a un'eccezione
 
-Utilizzare la finestra **Impostazioni eccezioni** per impostare le condizioni per le eccezioni. Le condizioni attualmente supportate includono i nomi di modulo da includere o escludere per l'eccezione. Impostando i nomi dei moduli come condizioni, è possibile scegliere di interrompere l'eccezione solo per determinati moduli di codice. È anche possibile scegliere di evitare di suddividere in moduli specifici.
+Usare la **finestra Impostazioni eccezioni** per impostare le condizioni per le eccezioni. Le condizioni attualmente supportate includono i nomi dei moduli da includere o escludere per l'eccezione. Impostando i nomi dei moduli come condizioni, è possibile scegliere di interrompere l'esecuzione dell'eccezione solo in determinati moduli di codice. È anche possibile scegliere di evitare l'interruzione in determinati moduli.
 
 > [!NOTE]
 > L'aggiunta di condizioni a un'eccezione è supportata a partire da [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] .
 
 Per aggiungere eccezioni condizionali:
 
-1. Scegliere il pulsante **modifica condizioni** nella finestra Impostazioni eccezioni oppure fare clic con il pulsante destro del mouse sull'eccezione e scegliere **modifica condizioni**.
+1. Scegliere il **pulsante Modifica condizioni** nella finestra Impostazioni eccezioni oppure fare clic con il pulsante destro del mouse sull'eccezione e scegliere Modifica **condizioni.**
 
    ![Condizioni per un'eccezione](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
 
-2. Per aggiungere altre condizioni necessarie all'eccezione, selezionare **Aggiungi condizione** per ogni nuova condizione. Verranno visualizzate ulteriori righe di condizione.
+2. Per aggiungere altre condizioni necessarie all'eccezione, selezionare **Aggiungi condizione** per ogni nuova condizione. Vengono visualizzate altre righe di condizione.
 
    ![Condizioni aggiuntive per un'eccezione](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Per ogni riga di condizione, digitare il nome del modulo e impostare l'elenco operatore di confronto su **uguale** a o **non uguale** a. È possibile specificare caratteri jolly ( **\\\*** ) nel nome per specificare più di un modulo.
+3. Per ogni riga di condizione digitare il nome del modulo e modificare l'elenco degli operatori di confronto in **Uguale** a **o Diverso da**. È possibile specificare caratteri jolly ( **\\\*** ) nel nome per specificare più di un modulo.
 
-4. Se è necessario eliminare una condizione, scegliere la **X** alla fine della riga della condizione.
+4. Se è necessario eliminare una condizione, scegliere **la X** alla fine della riga della condizione.
 
 ## <a name="see-also"></a>Vedi anche
 

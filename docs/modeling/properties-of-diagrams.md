@@ -1,6 +1,6 @@
 ---
 title: Proprietà dei diagrammi
-description: Informazioni sui diagrammi e su come è possibile impostare le proprietà che specificano la modalità di visualizzazione dei diagrammi nella finestra di progettazione generata.
+description: Informazioni sui diagrammi e su come è possibile impostare proprietà che specificano la modalità di visualizzazione dei diagrammi nella finestra di progettazione generata.
 ms.custom: SEO-VS-2020
 ms.date: 10/31/2018
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
 helpviewer_keywords:
 - Domain-Specific Language, diagram
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 943b634114c28f6f914926c74861a902c663523e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a060c79866d1746135f8a29aef15ca96dd51f63
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956165"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390672"
 ---
 # <a name="properties-of-diagrams"></a>Proprietà dei diagrammi
-È possibile impostare proprietà che specificano il modo in cui i diagrammi verranno visualizzati nella finestra di progettazione generata. Ad esempio, è possibile specificare un colore predefinito per il testo nel diagramma.
+È possibile impostare proprietà che specificano la modalità di visualizzazione dei diagrammi nella finestra di progettazione generata. Ad esempio, è possibile specificare un colore predefinito per il testo nel diagramma.
 
- Per ulteriori informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Per altre informazioni, vedere [Come definire un linguaggio specifico di dominio.](../modeling/how-to-define-a-domain-specific-language.md) Per altre informazioni su come usare queste proprietà, vedere [Personalizzare ed estendere un linguaggio specifico di dominio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
  Nella tabella seguente sono elencate le proprietà dei diagrammi.
 
@@ -31,21 +31,21 @@ ms.locfileid: "99956165"
 |-|-|-|
 |Colore riempimento|Colore di riempimento per il diagramma.|White|
 |Colore del testo|Colore del testo visualizzato nel diagramma.|Nero|
-|Modificatore di accesso|Modificatore di accesso della classe (Public o Internal).|Pubblico|
-|Attributi personalizzati|Utilizzato per aggiungere attributi alla classe di codice generata.|\<none>|
-|Genera il doppio derivato|Se `True` , verranno generate sia una classe di base che una classe parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
-|Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dal diagramma ( `none` , `abstract` o `sealed` ).|nessuno|
-|Diagramma di base|Classe base del diagramma.|(nessuna)|
+|Modificatore di accesso|Modificatore di accesso della classe (pubblico o interno).|Blockchain pubblica|
+|Attributi personalizzati|Usato per aggiungere attributi alla classe di codice generata.|\<none>|
+|Genera una derivazione doppia|Se , verranno generate sia una classe di base che una classe `True` parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [Eseguire l'override ed estendere le classi generate.](../modeling/overriding-and-extending-the-generated-classes.md)|Falso|
+|Ha un costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per altre informazioni, vedere [Eseguire l'override ed estendere le classi generate.](../modeling/overriding-and-extending-the-generated-classes.md)|Falso|
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dal diagramma ( `none` , `abstract` o `sealed` ).|Nessuno|
+|Diagramma di base|Classe di base di questo diagramma.|(nessuna)|
 |Nome|Nome del diagramma.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questo diagramma.|Spazio dei nomi corrente|
 |Classe rappresentata|Classe di dominio radice rappresentata da questo diagramma.|Classe radice corrente, se applicabile|
 |Note|Note informali associate a questo elemento.|\<none>|
-|Espone il colore di riempimento come proprietà|Se `True` , l'utente può impostare il colore di riempimento del diagramma della finestra di progettazione generata. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla forma del diagramma e scegliere **Aggiungi esposti**.|Falso|
-|Espone il colore del testo come proprietà|Se `True` , l'utente può impostare il colore del testo del diagramma nella finestra di progettazione generata. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla forma del diagramma e scegliere **Aggiungi esposti**.|Falso|
+|Espone la proprietà Fill Color As|Se `True` , l'utente può impostare il colore di riempimento del diagramma della finestra di progettazione generata. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla forma del diagramma e scegliere **Aggiungi esposto**.|Falso|
+|Espone la proprietà Text Color As|Se `True` , l'utente può impostare il colore del testo del diagramma nella finestra di progettazione generata. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla forma del diagramma e scegliere **Aggiungi esposto**.|Falso|
 |Descrizione|Descrizione utilizzata per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questo diagramma.|\<none>|
-|Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questo diagramma.|\<none>|
+|Parola chiave della Guida|Parola chiave usata per indicizzare la Guida di F1 per questo diagramma.|\<none>|
 
 ## <a name="see-also"></a>Vedi anche
 

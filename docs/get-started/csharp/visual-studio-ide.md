@@ -1,9 +1,10 @@
 ---
 title: Panoramica per sviluppatori C#
-description: Informazioni sulle Integrated Development Environment di Visual Studio e su come possono essere personalizzate per gli sviluppatori C#.
+description: Informazioni sull'Visual Studio di sviluppo integrato e su come può essere personalizzato per gli sviluppatori C#.
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: overview
@@ -14,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: eb34f9dbf0c4778431bbf1eed31b20bc3cd4833b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e3625e272f6279fa06a863c4feb12adab8c016f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924984"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390581"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>IDE di Visual Studio | C\#
 
@@ -29,7 +30,7 @@ ms.locfileid: "99924984"
 
 È possibile configurare Visual Studio per usare impostazioni di ambiente su misura per gli sviluppatori C#.
 
-1. Sulla barra dei menu scegliere **strumenti**  >  **Importa/Esporta impostazioni**.
+1. Sulla barra dei menu scegliere **Strumenti**  >  **Importa ed esporta impostazioni**.
 
 2. Nell'**Importazione/Esportazione guidata delle impostazioni** selezionare **Reimposta tutte le impostazioni** nella prima pagina e quindi scegliere **Avanti**.
 

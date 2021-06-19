@@ -1,7 +1,7 @@
 ---
 title: 'Esercitazione: Eseguire il debug Visual Basic codice'
 description: Informazioni sulle funzionalità del debugger Visual Studio e su come avviare il debugger, eseguire il codice un'istruzione alla pagina ed esaminare i dati in un Visual Basic app.
-ms.custom: debug-experiment, seodec18, get-started
+ms.custom: debug-experiment, vs-acquisition, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42dd3c6b7301162e239bc87764056fdda2d08413
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 48e6b383b0dfdee3a3cb0cc355ffa5900d4dc428
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308415"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390216"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice Visual Basic tramite Visual Studio
 
@@ -230,7 +230,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
    > [!NOTE]
    > Il pulsante per l'**esecuzione fino alla riga selezionata dall'utente** è una nuova funzionalità di [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. Se il pulsante freccia verde non è visualizzato, usare **F11** in questo esempio per far avanzare il debugger nella posizione giusta.
 
-2. Fare clic **sul pulsante Esegui per fare clic** sul pulsante Esegui per fare clic ![su](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Fare clic **sul pulsante Esegui fino a fare** clic sul pulsante Esegui fino a fare clic ![su](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Il debugger passa al `Console.WriteLine` metodo .
 
@@ -238,25 +238,25 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ## <a name="restart-your-app-quickly"></a>Riavviare rapidamente l'app
 
-Fare clic sul **pulsante Riavvia** ![riavvia app](../../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug ( CTRL  +  **MAIUSC**  +  **F5**).
+Fare clic sul **pulsante Restart** ![Restart App (Riavvia](../../debugger/media/dbg-tour-restart.png "RestartApp") riavvia app) sulla barra degli strumenti di debug (**CTRL**  +    +  **MAIUSC+F5).**
 
 Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene messo in pausa in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 
-Il debugger si arresta nuovamente in corrispondenza del punto di interruzione impostato in precedenza all'interno del `For` ciclo.
+Il debugger si arresta nuovamente in corrispondenza del punto di interruzione impostato in precedenza all'interno del `For` ciclo .
 
 ## <a name="inspect-variables-with-data-tips"></a>Esaminare le variabili con i suggerimenti dati
 
 Le funzionalità che consentono di esaminare le variabili sono tra le funzionalità più utili del debugger e sono disponibili diversi modi per eseguire questa operazione. Spesso quando si tenta di eseguire il debug di un problema, si tenta di determinare se le variabili includono i valori previsti in un determinato momento.
 
-1. Durante la sospensione dell'istruzione, passare il puntatore del mouse sulla variabile e viene visualizzato il valore predefinito, il valore del primo `name += letters[i]` `letters` elemento della matrice, `"f"c` .
+1. Mentre è in pausa nell'istruzione, passare il puntatore sulla variabile per visualizzare il valore predefinito, il valore del primo `name += letters[i]` `letters` elemento nella matrice, `"f"c` .
 
-1. Passare quindi il puntatore del mouse sulla variabile e `name` visualizzare il relativo valore corrente, una stringa vuota.
+1. Passare quindi il puntatore `name` sulla variabile per visualizzarne il valore corrente, una stringa vuota.
 
-1. Premere **F5** (o **Continua** debug ) più volte per scorrere più volte il ciclo, sospendere nuovamente in corrispondenza del punto di interruzione e passare il puntatore sulla variabile ogni volta per verificarne il  >   `For` `name` valore.
+1. Premere **F5** (o **Continua** debug ) alcune volte per eseguire l'iterazione più volte del ciclo, sospendo di nuovo in corrispondenza del punto di interruzione e passando ogni volta il puntatore del mouse sulla variabile per controllarne  >  il `For` `name` valore.
 
      ![Visualizzare un suggerimento dati](../visual-basic/media/get-started-data-tip-vb.png "Visualizzare un suggerimento dati")
 
-     Il valore della variabile cambia a ogni iterazione del ciclo, visualizzando i `For` valori di , quindi , e così `f` `fr` `fre` via.
+     Il valore della variabile cambia a ogni iterazione del ciclo, visualizzando i valori `For` di , quindi , e così `f` `fr` `fre` via.
 
      Spesso, durante il debug, è necessario controllare rapidamente i valori delle proprietà sulle variabili, per vedere se si stanno archiviando i valori previsti, e i suggerimenti dati costituiscono un valido strumento per questa operazione.
 
@@ -264,7 +264,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug**  >  **di Windows**  >  **Autos**.
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug**  >  **Finestre**  >  **Auto.**
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. La finestra **Auto** mostra tutte le variabili usate nella riga corrente o nella riga precedente (vedere la documentazione per il comportamento specifico del linguaggio).
 
@@ -278,17 +278,17 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 ## <a name="set-a-watch"></a>Impostare un'espressione di controllo
 
-1. Nella finestra principale dell'editor di codice fare clic con il pulsante destro del mouse sulla `name` variabile e scegliere Aggiungi espressioni di **controllo**.
+1. Nella finestra principale dell'editor di codice fare clic con il pulsante destro del mouse `name` sulla variabile e scegliere Aggiungi espressioni di **controllo.**
 
     Viene visualizzata la finestra **Espressione di controllo** nella parte inferiore dell'editor di codice. È possibile usare una finestra **Espressione di controllo** per specificare una variabile (o un'espressione) che si vuole controllare.
 
-    A questo punto, è disponibile un'orologio impostato sulla variabile ed è possibile visualizzarne il valore `name` mentre si passa attraverso il debugger. A differenza di altre finestre delle variabili, la finestra **Espressione di controllo** mostra sempre le variabili controllate (che appaiono disattivate quando sono fuori ambito).
+    A questo punto, è disponibile un'opzione watch impostata sulla variabile ed è possibile visualizzarne la modifica del valore mentre `name` si passa attraverso il debugger. A differenza di altre finestre delle variabili, la finestra **Espressione di controllo** mostra sempre le variabili controllate (che appaiono disattivate quando sono fuori ambito).
 
 ## <a name="examine-the-call-stack"></a>Esaminare lo stack di chiamate
 
 1. Mentre l'esecuzione è in pausa nel ciclo `For`, fare clic sulla finestra **Stack di chiamate**, visualizzata per impostazione predefinita nel riquadro inferiore destro.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug**  >  **stack di chiamate windows**  >  .
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug Stack di** chiamate  >    >  **Windows**.
 
 2. Fare **clic su F11** alcune volte fino a quando il debugger non viene sospeso nel `SendMessage` metodo . Osservare la finestra **Stack di chiamate**.
 
@@ -309,9 +309,9 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Premere **F11** due volte per eseguire il `Console.WriteLine` metodo .
 
-1. Con il debugger sospeso nella chiamata al metodo , usare il mouse per afferrare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, di nuovo `SendMessage` su `Console.WriteLine` .
+1. Con il debugger sospeso nella chiamata al metodo, usare il mouse per afferrare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, di nuovo `SendMessage` su `Console.WriteLine` .
 
-1. Premere **F11.**
+1. Premere **F11**.
 
     Il debugger esegue nuovamente il metodo `Console.WriteLine` (visualizzato nell'output della finestra della console).
 

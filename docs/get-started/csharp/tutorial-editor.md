@@ -1,7 +1,7 @@
 ---
-title: Introduzione alla modifica del codice per gli sviluppatori C#
+title: 'Esercitazione: Modifica per sviluppatori C#'
 description: In questa introduzione all'editor di codice di Visual Studio della durata di 10 minuti viene illustrato in che modo Visual Studio semplifica la scrittura, la navigazione e la comprensione del codice C#.
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1170f7420cc605b713357d94526c76eb5c51641
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 2a6b01e9c26ea816e05a1d2186d904bdb080f098
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308428"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390255"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>Informazioni su come usare l'editor di codice con C\#
 

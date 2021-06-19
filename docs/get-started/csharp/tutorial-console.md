@@ -1,7 +1,7 @@
 ---
 title: 'Esercitazione: Creare una semplice app console C#'
 description: Informazioni dettagliate su come creare un'app console C# in Visual Studio.
-ms.custom: acquisition, seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 14128a6c5b533d1bf2fe573310c174f6b6a7f897
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 5f155c2477c97b6f0d18a4cfd3d54386aee68dd9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308532"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390372"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: Creare una semplice app console C# in Visual Studio
 
@@ -267,7 +267,7 @@ Come illustrato nello screenshot seguente, se si esegue l'app e si divide il num
 
 Tuttavia, l'app genera solo un risultato decimale. Modificando ancora il codice, è possibile fare in modo che l'app esegua anche calcoli con numeri decimali.
 
-1. Usare il **controllo Trova e** sostituisci (**CTRL** H ) per modificare ogni istanza della variabile in e per impostare ogni  +  istanza del metodo su `float` `double` `Convert.ToInt32` `Convert.ToDouble` .
+1. Usare il **controllo Trova e** sostituisci (**CTRL** H ) per modificare ogni istanza della variabile in e per modificare ogni istanza  +  del metodo in `float` `double` `Convert.ToInt32` `Convert.ToDouble` .
 
 1. Eseguire nuovamente l'app Calculator e dividere il numero **42,5** per il numero **119,75**.
 
@@ -281,9 +281,9 @@ Tuttavia, l'app genera solo un risultato decimale. Modificando ancora il codice,
 
 L'app Calculator di base è stata migliorata, ma non comprende ancora funzioni di sicurezza che consentono di gestire le eccezioni, ad esempio gli errori di input dell'utente.
 
-Ad esempio, se si prova a dividere un numero per zero o si immette un carattere alfa quando l'app prevede un carattere numerico (o viceversa), l'app potrebbe smettere di funzionare, restituire un errore o restituire un risultato non numerico imprevisto.
+Ad esempio, se si tenta di dividere un numero per zero o di immettere un carattere alfa quando l'app prevede un carattere numerico (o viceversa), l'app potrebbe smettere di funzionare, restituire un errore o restituire un risultato non numerico imprevisto.
 
-Verranno ora visualizzati alcuni errori di input utente comuni, individuarli nel debugger, se presenti, e correggerli nel codice.
+Si esaminino ora alcuni errori comuni di input dell'utente, li si individua nel debugger se vengono visualizzati e li si corregge nel codice.
 
 > [!TIP]
 > Per altre informazioni sul debugger e sul suo funzionamento, vedere la pagina [Presentazione del debugger di Visual Studio](../../debugger/debugger-feature-tour.md).
@@ -292,10 +292,10 @@ Verranno ora visualizzati alcuni errori di input utente comuni, individuarli nel
 
 Quando si prova a dividere un numero per zero, l'app console potrebbe bloccarsi e quindi mostrare il problema nell'editor di codice.
 
-   ![Screenshot dell'editor Visual Studio codice che mostra una riga evidenziata in giallo e un errore eccezione non gestita per 'Tentativo di divisione per zero'.](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Screenshot dell'editor Visual Studio codice che mostra una riga evidenziata in giallo e un errore Eccezione non gestita per 'Tentativo di divisione per zero'.](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
-> In alcuni casi, l'app non si blocca e il debugger non visualizza un errore di divisione per zero. L'app potrebbe invece restituire un risultato non numerico imprevisto, ad esempio un simbolo di infinito. La correzione di codice seguente si applica ancora.
+> In alcuni casi, l'app non si blocca e il debugger non visualizza un errore di divisione per zero. Al contrario, l'app potrebbe restituire un risultato non numerico imprevisto, ad esempio un simbolo infinito. La correzione del codice seguente è ancora applicabile.
 
 Ora il codice verrà modificato per gestire questo errore.
 
@@ -321,7 +321,7 @@ Ora il codice verrà modificato per gestire questo errore.
 
 Ora, quando si divide un numero qualsiasi per zero, l'app richiederà un altro numero. Ancora meglio: non smetterà di chiedere fino a quando non si specifica un numero diverso da zero.
 
-   ![Screenshot dell'editor Visual Studio codice che mostra il codice per l'istruzione switch con il controllo della voce di un divisore diverso da zero aggiunto.](./media/csharp-console-calculator-dividebyzero.png)
+   ![Screenshot dell'editor Visual Studio codice che mostra il codice per l'istruzione switch con la voce check for di un divisore diverso da zero aggiunta.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Correggere l'errore di formato
 

@@ -1,8 +1,8 @@
 ---
-title: Mappe codice
-description: Informazioni sul modo in cui le mappe del codice consentono di osservare il modo in cui il codice si integra senza leggere file e righe di codice.
+title: Visualizzare le dipendenze con le mappe codice
+description: Informazioni su come le mappe codice consentono di vedere come si adatta il codice senza leggere file e righe di codice.
 ms.custom: SEO-VS-2020
-ms.date: 05/16/2018
+ms.date: 05/16/2021
 ms.topic: how-to
 f1_keywords:
 - vs.progression.codemap
@@ -13,84 +13,81 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d33e3d882d25045802f2c015c88b87b970d9d04e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946527"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390437"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Eseguire il mapping delle dipendenze con le mappe codice
 
-È possibile visualizzare le dipendenze nel codice creando una mappa codice. Le mappe codici consentono di visualizzare il modo in cui il codice si integra senza leggere file e righe di codice.
+Questo articolo illustra come visualizzare le dipendenze nel codice con le mappe codice.
+
+## <a name="what-are-code-maps"></a>Che cosa sono le mappe codice?
+
+In Visual Studio, le mappe codice consentono di vedere più rapidamente come si adatta il codice del programma senza leggere file e righe di codice.  Con queste mappe è possibile visualizzare l'organizzazione e le relazioni nel codice, tra cui la struttura e le relative dipendenze, come aggiornarla e stimare il costo delle modifiche proposte.
 
 ![Visualizzare le dipendenze con le mappe codice in Visual Studio](../modeling/media/codemapsmainintro.png)
 
-Per creare e modificare le mappe del codice, è necessario Visual Studio Enterprise Edition. Nelle edizioni community e Professional di Visual Studio è possibile aprire i diagrammi generati in Enterprise Edition, ma non modificarli.
-
-> [!NOTE]
-> Prima di condividere le mappe create in Visual Studio Enterprise con altri utenti che usano Visual Studio Professional, assicurarsi che tutti gli elementi della mappa, ad esempio elementi nascosti, gruppi espansi e collegamenti tra gruppi, siano visibili.
-
 È possibile eseguire il mapping delle dipendenze per il codice nei seguenti linguaggi:
 
-- Visual C# o Visual Basic in una soluzione o in assembly (con *estensione dll* o *exe*)
+- Visual C# o Visual Basic in una soluzione o in assembly (*.dll* o *.exe*)
 
-- Codice C o C++ nativo o gestito in progetti Visual C++, file di intestazione (*. h* o `#include` ) o file binari
+- Codice C o C++ nativo o gestito in progetti Visual C++, file di intestazione ( con estensione *h* `#include` o ) o file binari
 
 - Progetti X++ e assembly creati da moduli .NET per Microsoft Dynamics AX
 
 > [!NOTE]
-> Per i progetti diversi da C# o Visual Basic, sono disponibili meno opzioni per l'avvio di una mappa codice o l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. È tuttavia possibile trascinare e rilasciare singoli elementi di codice o file da **Esplora soluzioni**, **Visualizzazione classi** e **Visualizzatore oggetti**.
+> Per i progetti diversi da C# o Visual Basic, sono disponibili meno opzioni per l'avvio di una mappa codice o l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. Tuttavia, è possibile trascinare e rilasciare singoli elementi di codice o file **da Esplora soluzioni**, **Visualizzazione classi** e **Visualizzatore oggetti.**
 
-## <a name="install-code-map-and-live-dependency-validation"></a>Installare la mappa codice e la convalida delle dipendenze attive
+## <a name="prerequisites"></a>Prerequisiti
 
-Per creare una mappa del codice in Visual Studio, installare prima di tutto la **mappa codice** e i componenti di **convalida delle dipendenze in tempo reale** :
+Per creare una mappa del codice in Visual Studio, installare prima i componenti Mappa codice e [ **Convalida dipendenze** in  tempo reale](install-architecture-tools.md)
 
-1. Aprire **programma di installazione di Visual Studio**. È possibile aprirlo dal menu Start di Windows o in Visual Studio scegliendo **strumenti**  >  **Ottieni strumenti e funzionalità**.
+Per creare e modificare le mappe codice, è necessario **Visual Studio Enterprise edizione**. Tuttavia, nelle edizioni Visual Studio Community e Professional è possibile aprire i diagrammi generati nell'edizione Enterprise, ma non è possibile modificarli.
 
-1. Selezionare la scheda **Singoli componenti**.
-
-1. Scorrere verso il basso fino alla sezione **strumenti del codice** e selezionare **mappa del codice** e **convalida delle dipendenze in tempo reale**.
-
-   ![Mappa del codice e componenti di convalida delle dipendenze in tempo reale in Programma di installazione di Visual Studio](media/modeling-components.png)
-
-1. Selezionare **Modifica**.
-
-   Viene avviata l'installazione dei componenti **mappa del codice** e **convalida delle dipendenze attive** . Potrebbe essere richiesto di chiudere Visual Studio.
+> [!NOTE]
+> Prima di condividere le mappe create in Visual Studio Enterprise con altri utenti che usano Visual Studio Professional, assicurarsi che tutti gli elementi sulla mappa( ad esempio elementi nascosti, gruppi espansi e collegamenti tra gruppi) siano visibili.
 
 ## <a name="add-a-code-map"></a>Aggiungere una mappa codice
 
-È possibile creare una mappa codice vuota e trascinare gli elementi su di essa, inclusi i riferimenti ad assembly, i file e le cartelle, oppure è possibile generare una mappa codice per tutta o parte della soluzione.
+È possibile creare una mappa codice vuota e trascinarvi elementi, inclusi riferimenti ad assembly, file e cartelle, oppure è possibile generare una mappa codice per tutta o parte della soluzione.
 
 Per aggiungere una mappa codice vuota:
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione di primo livello. Scegliere **Aggiungi**  >  **nuovo elemento**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione di primo livello. Scegliere **Aggiungi**  >  **nuovo elemento.**
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** , in **installato**, scegliere la categoria **generale** .
+2. Nella finestra **di dialogo Aggiungi nuovo** elemento in **Installato** scegliere la **categoria** Generale.
 
-3. Scegliere il modello **documento grafico diretto (con estensione dgml)** , quindi selezionare **Aggiungi**.
+3. Scegliere il **modello Directed Graph Document(.dgml)** e quindi selezionare **Aggiungi.**
 
    > [!TIP]
-   > Questo modello potrebbe non essere visualizzato in ordine alfabetico, quindi scorrere fino alla fine dell'elenco dei modelli se non lo si visualizza.
+   > Questo modello potrebbe non essere visualizzato in ordine alfabetico, quindi scorrere verso il basso fino alla fine dell'elenco dei modelli se non viene visualizzato.
 
-   Una mappa vuota viene visualizzata nella cartella **elementi di soluzione** della soluzione.
+   Viene visualizzata una mappa vuota nella cartella **Elementi di soluzione della** soluzione.
 
-Analogamente, è possibile creare un nuovo file della mappa del codice senza aggiungerlo alla soluzione selezionando **architettura**  >  **nuova mappa codice** o **file**  >  **nuovo**  >  **file**.
+Analogamente, è possibile creare un nuovo file della mappa codice senza aggiungerlo alla soluzione selezionando **Architettura** Nuova mappa codice  >   o **File**  >  **nuovo**  >  **file.**
 
-## <a name="generate-a-code-map-for-your-solution"></a>Generare una mappa codice per la soluzione
+Altre informazioni:
+- [Condividere mappe codice](share-code-maps.md)
+- [Creare mappe codice per C++](code-maps-for-cpp.md)
+- [Migliorare le prestazioni della mappa codice](code-maps-performance.md)
+
+## <a name="generate-a-code-map-for-your-solution"></a>Generare una mappa del codice per la soluzione
 
 Per visualizzare tutte le dipendenze nella soluzione:
 
-1. Sulla barra dei menu scegliere **architettura**  >  **Genera mappa codici per la soluzione**. Se il codice non è stato modificato dall'ultima volta in cui è stato compilato, è possibile selezionare l' **architettura**  >  **Genera mappa codice per la soluzione senza compilazione** .
+1. Sulla barra dei menu scegliere **Architettura** Genera  >  **mappa codice per la soluzione.** Se il codice non è stato modificato dall'ultima compilazione, è invece possibile selezionare Architettura Genera mappa codice per la soluzione  >  **senza** compilazione.
 
    ![Comando di generazione mappa del codice](../modeling/media/codemapsarchitecturemenu.png)
 
-   Viene generata una mappa che Mostra gli assembly di primo livello e i relativi collegamenti aggregati. A una maggiore ampiezza del collegamento aggregato corrisponde un maggior numero di dipendenze che rappresenta.
+   Viene generata una mappa che mostra gli assembly di primo livello e i collegamenti aggregati tra di essi. A una maggiore ampiezza del collegamento aggregato corrisponde un maggior numero di dipendenze che rappresenta.
 
 2. Usare il pulsante **Legenda** sulla barra degli strumenti del codice per visualizzare o nascondere l'elenco di icone del tipo di progetto (ad esempio Test, Web e Progetto per telefono), gli elementi di codice (ad esempio Classi, Metodi e Proprietà) e i tipi di relazione (ad esempio Eredita da, Implementa e Chiamate).
 
@@ -106,10 +103,10 @@ Per visualizzare tutte le dipendenze nella soluzione:
 
    ![Espansione di un nodo in una mappa codici](../modeling/media/dependencygraph_containment.png)
 
-   In alternativa, usare la tastiera selezionando l'elemento e premendo il tasto più ( **+** ). Per esplorare i livelli più profondi di codice, effettuare la stessa operazione per gli spazi dei nomi, i tipi e i membri.
+   Oppure usare la tastiera selezionando l'elemento e quindi premendo il tasto più ( **+** ). Per esplorare i livelli più profondi di codice, effettuare la stessa operazione per gli spazi dei nomi, i tipi e i membri.
 
    > [!TIP]
-   > Per ulteriori informazioni sull'utilizzo di mappe del codice con il mouse, la tastiera e il tocco, vedere [Browse and rearrange Code Maps](../modeling/browse-and-rearrange-code-maps.md).
+   > Per altre informazioni sull'uso delle mappe codice con il mouse, la tastiera e il tocco, vedere Esplorare e ridisporre [le mappe codice.](../modeling/browse-and-rearrange-code-maps.md)
 
 5. Per semplificare la mappa e concentrarsi sulle singole parti, scegliere **Filtri** nella barra degli strumenti della mappa codice e selezionare solo i tipi di nodi e di collegamenti desiderati. Ad esempio, è possibile nascondere tutti i contenitori di Cartella soluzione e Assembly.
 
@@ -124,7 +121,7 @@ Per visualizzare tutte le dipendenze nella soluzione:
    In questo esempio, i collegamenti viola sono chiamate, i collegamenti punteggiati sono riferimenti e i collegamenti azzurro rappresentano l'accesso al campo. I collegamenti verdi possono essere ereditati o possono essere *collegamenti aggregati* che indicano più di un tipo di relazione (o *categoria*).
 
    > [!TIP]
-   > Se viene visualizzato un collegamento verde, non necessariamente esiste solo una relazione di ereditarietà. Potrebbero essere presenti anche chiamate al metodo, nascoste dalla relazione di ereditarietà. Per visualizzare tipi specifici di collegamenti, usare le caselle di controllo nel riquadro **filtri** per nascondere i tipi a cui non si è interessati.
+   > Se viene visualizzato un collegamento verde, non necessariamente esiste solo una relazione di ereditarietà. Potrebbero essere presenti anche chiamate al metodo, nascoste dalla relazione di ereditarietà. Per visualizzare tipi specifici di collegamenti, usare le caselle di controllo nel riquadro **Filtri** per nascondere i tipi a cui non si è interessati.
 
 7. Per altre informazioni su un elemento o un collegamento, spostare il puntatore su di esso finché non viene visualizzata una descrizione comando. In questo modo vengono mostrati i dettagli di un elemento di codice o delle categorie rappresentate da un collegamento.
 
@@ -136,11 +133,11 @@ Per visualizzare tutte le dipendenze nella soluzione:
 
    ![Drill-down dei gruppi a livello di classe e membro](../modeling/media/dependencygraph_expandedselectedgroups_2012.png)
 
-10. Un altro modo per concentrarsi sulla mappa di soluzione complessa consiste nel generare una nuova mappa contenente gli elementi selezionati da una mappa esistente. Tenere premuto **CTRL** mentre si selezionano gli elementi su cui si vuole concentrarsi, aprire il menu di scelta rapida e scegliere **nuovo grafico dalla selezione**.
+10. Un altro modo per concentrarsi sulla mappa di soluzione complessa consiste nel generare una nuova mappa contenente gli elementi selezionati da una mappa esistente. Tenere **premuto CTRL** mentre si selezionano gli elementi su cui si vuole concentrarsi, aprire il menu di scelta rapida e scegliere Nuovo grafico da **Selezione.**
 
     ![Mostra gli elementi selezionati in una nuova mappa codici](../modeling/media/codemapsshowonnewmap.png)
 
-11. Il contesto contenitore viene trasferito alla nuova mappa. Nascondere le cartelle della soluzione e tutti gli altri contenitori che non si vuole visualizzare tramite il riquadro **filtri** .
+11. Il contesto contenitore viene trasferito alla nuova mappa. Nascondere le cartelle della soluzione e gli altri contenitori che non si vuole visualizzare usando il **riquadro** Filtri.
 
     ![Filtrare i contenitori per semplificare la visualizzazione](../modeling/media/codemapsexpandnewgroups.png)
 
@@ -152,24 +149,24 @@ Vedere anche:
 
 - [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)
 - [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-- Individuare potenziali problemi nel codice eseguendo [un analizzatore](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- Trovare potenziali problemi nel codice eseguendo [un analizzatore](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="view-specific-dependencies-in-a-code-map"></a>Visualizzare dipendenze specifiche in una mappa codice
+## <a name="view-dependencies"></a>Visualizzare le dipendenze
 
-Si supponga di dover eseguire una revisione del codice in alcuni file con modifiche in sospeso. Per visualizzare le dipendenze in queste modifiche, è possibile creare una mappa codice da tali file.
+Si supponga di avere una revisione del codice da eseguire in alcuni file con modifiche in sospeso. Per visualizzare le dipendenze in queste modifiche, è possibile creare una mappa codice da tali file.
 
    ![Mostra dipendenze specifiche su una mappa codici](../modeling/media/codemapsspecificdependenciesintro.png)
 
-1. In **Esplora soluzioni** selezionare i progetti, i riferimenti agli assembly, le cartelle, i file, i tipi o i membri di cui si desidera eseguire il mapping.
+1. In **Esplora soluzioni** selezionare i progetti, i riferimenti agli assembly, le cartelle, i file, i tipi o i membri di cui si vuole eseguire il mapping.
 
    ![Selezionare gli elementi da mappare](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. Sulla barra degli strumenti **Esplora soluzioni** scegliere **Mostra in mappa codici** ![ Crea nuovo grafico dal pulsante nodi selezionati ](../modeling/media/createnewgraphfromselectedbutton.gif) . In alternativa, aprire il menu di scelta rapida per uno o un gruppo di elementi e scegliere **Mostra in mappa codici**.
+1. Sulla barra **Esplora soluzioni** barra degli strumenti fare clic **su Mostra nella mappa** codice Pulsante Crea nuovo ![ grafo da nodi selezionati ](../modeling/media/createnewgraphfromselectedbutton.gif) . In caso contrario, aprire il menu di scelta rapida per uno o un gruppo di elementi e **scegliere Mostra nella mappa codice.**
 
-   È anche possibile trascinare elementi da **Esplora soluzioni**, **Visualizzazione classi** o **Visualizzatore oggetti** in una mappa codice [nuova](#add-a-code-map) o esistente. Per includere la gerarchia padre per gli elementi, tenere premuto il tasto **CTRL** mentre si trascinano gli elementi oppure usare il pulsante **Includi padri** sulla barra degli strumenti della mappa codice per specificare l'azione predefinita. È anche possibile trascinare i file di assembly dall'esterno di Visual Studio, ad esempio da **Esplora risorse**.
+   È anche possibile trascinare elementi **Esplora soluzioni**, **Visualizzazione classi** o Visualizzatore oggetti **in** [una](#add-a-code-map) mappa codice nuova o esistente. Per includere la gerarchia padre per gli elementi, tenere premuto **CTRL** mentre si trascinano gli elementi oppure usare il pulsante Includi elementi padre sulla barra degli strumenti della mappa codice per specificare l'azione predefinita.  È anche possibile trascinare file di assembly dall'Visual Studio, ad esempio **da Esplora risorse**.
 
    > [!NOTE]
-   > Quando si aggiungono elementi da un progetto condiviso tra più app, ad esempio Windows Phone o Microsoft Store, tali elementi vengono visualizzati nella mappa con il progetto di app attualmente attivo. Se si cambia il contesto passando a un altro progetto di applicazione e si aggiungono altri elementi dal progetto condiviso, tali elementi vengono visualizzati con il nuovo progetto di applicazione attivo. Le operazioni eseguite con un elemento nella mappa si applicano solo agli elementi che condividono lo stesso contesto.
+   > Quando si aggiungono elementi da un progetto condiviso tra più app, ad esempio Windows Phone o Microsoft Store, tali elementi vengono visualizzati sulla mappa con il progetto di app attualmente attivo. Se si cambia il contesto passando a un altro progetto di applicazione e si aggiungono altri elementi dal progetto condiviso, tali elementi vengono visualizzati con il nuovo progetto di applicazione attivo. Le operazioni eseguite con un elemento nella mappa si applicano solo agli elementi che condividono lo stesso contesto.
 
 3. La mappa visualizza gli elementi selezionati all'interno degli assembly in cui sono contenuti.
 
@@ -179,15 +176,15 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
    ![Espandere un nodo in una mappa codice](../modeling/media/dependencygraph_containment.png)
 
-   Per espandere tutti gli elementi, selezionarli usando **CTRL** + **A**, quindi aprire il menu di scelta rapida per la mappa e scegliere  >  **Espandi** gruppo. Tuttavia, questa opzione non è disponibile se l'espansione di tutti i gruppi crea una mappa inutilizzabile o problemi di memoria.
+   Per espandere tutti gli elementi, selezionarli premendo **CTRL** A, quindi aprire il menu di scelta rapida per la mappa + e scegliere Group Expand **(Espandi**  >  **gruppo).** Tuttavia, questa opzione non è disponibile se l'espansione di tutti i gruppi crea una mappa inutilizzabile o problemi di memoria.
 
-5. Continuare a espandere gli elementi a cui si è interessati, fino al livello di classe e membro, se necessario.
+5. Continuare ad espandere gli elementi a cui si è interessati, fino al livello di classe e membro, se necessario.
 
    ![Espandere i gruppi a livello di classe e membro](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   Per visualizzare i membri presenti nel codice ma che non vengono visualizzati sulla mappa, fare clic sull'icona recupera nuovamente i **figli** icona ![ Riprendi figli ](../modeling/media/dependencygraph_deletednodesicon.png) nell'angolo in alto a sinistra di un gruppo.
+   Per visualizzare i membri presenti nel codice ma non visualizzati sulla mappa, fare clic sull'icona Refetch Children (Elementi figlio **refetch) Icona Refetch** Children (Elementi figlio refetch) nell'angolo superiore sinistro ![ di un ](../modeling/media/dependencygraph_deletednodesicon.png) gruppo.
 
-6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire il menu di scelta rapida, quindi scegliere l'opzione **Mostra** per il tipo di elementi correlati da aggiungere alla mappa. Ad esempio:
+6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire  il menu di scelta rapida e quindi scegliere l'opzione Mostra per il tipo di elementi correlati da aggiungere alla mappa. Ad esempio:
 
     Per un **assembly** scegliere:
 
@@ -230,7 +227,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
     ![Mostra i metodi chiamati da questo membro](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. La mappa visualizza le relazioni. In questo esempio la mappa mostra i metodi chiamati dal `Find` metodo e la relativa posizione nella soluzione o esternamente.
+7. La mappa visualizza le relazioni. In questo esempio la mappa mostra i metodi chiamati dal metodo e `Find` la relativa posizione nella soluzione o esternamente.
 
    ![Mostra dipendenze specifiche su una mappa codici](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -240,7 +237,11 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Video: informazioni sulla progettazione dal codice con le mappe codici di Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [Condividere mappe codice](share-code-maps.md)
+- [Creare mappe codice per C++](code-maps-for-cpp.md)
+- [Migliorare le prestazioni della mappa codice](code-maps-performance.md)
+- [Video: Informazioni sulla progettazione dal codice con Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [Video: Informazioni sulla progettazione dal codice con Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)

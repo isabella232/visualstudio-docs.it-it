@@ -1,7 +1,7 @@
 ---
 title: App Hello World con WPF in C#
 description: Creare una semplice app Windows Desktop .NET in C# con Visual Studio usando il framework di interfaccia utente Windows Presentation Foundation (WPF).
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ee7b5ecc023d1319f4d7551e0e7b186d76d86741
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 268797369fbd878d99028303fa17ba71626a07fb
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308480"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390268"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: Creare un'applicazione semplice con C\#
 
@@ -103,7 +103,7 @@ Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzio
 
 Dopo aver creato il progetto, sarà possibile personalizzarlo. A tale scopo, scegliere **Finestra Proprietà** dal menu **Visualizza** o premere **F4**. È quindi possibile visualizzare e modificare le opzioni per elementi di progetto, controlli e altri elementi in un'applicazione.
 
-   ![Finestra Proprietà](../media/exploreide-hellowpfappfiles.png "Screenshot della finestra di Finestra Proprietà con i nomi delle app file WPF")   
+   ![Finestra Proprietà](../media/exploreide-hellowpfappfiles.png "Screenshot dell'Finestra Proprietà con i nomi delle app file WPF")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
@@ -167,7 +167,7 @@ Successivamente, si aggiungeranno due [controlli RadioButton](/dotnet/framework/
 
 1. Nella finestra **Proprietà** per il controllo RadioButton sinistro modificare la proprietà **Nome** (la proprietà nella parte superiore della finestra **Proprietà** ) in `HelloButton`.
 
-    ![Finestra delle proprietà di RadioButton](../media/exploreide-buttonproperties.png "Screenshot della finestra delle proprietà di RadioButton")
+    ![Finestra delle proprietà di RadioButton](../media/exploreide-buttonproperties.png "Screenshot della finestra delle proprietà RadioButton")
 
 1. Nella finestra **Proprietà** per il controllo RadioButton destro modificare la proprietà **Nome** in `GoodbyeButton`, quindi salvare le modifiche.
 
@@ -175,7 +175,7 @@ Successivamente, si aggiungeranno due [controlli RadioButton](/dotnet/framework/
 
 ### <a name="add-display-text-for-each-radio-button"></a>Aggiungere testo visualizzato per ogni pulsante di opzione
 
-1. Aggiornare **l'attributo Content** per `HelloButton` e in e in `GoodbyeButton` `"Hello"` `"Goodbye"` XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+1. Aggiornare **l'attributo Content** per `HelloButton` e in e nel codice `GoodbyeButton` `"Hello"` `"Goodbye"` XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
 
    ```xaml
    <Grid>
@@ -203,11 +203,11 @@ In questo passaggio il pulsante di opzione HelloButton viene impostato in modo c
    </Grid>
    ```
 
-L'ultimo elemento dell'interfaccia utente che si aggiungerà è un [controllo](/dotnet/framework/wpf/controls/button) Button.
+L'ultimo elemento dell'interfaccia utente che verrà aggiunto è un [controllo](/dotnet/framework/wpf/controls/button) Button.
 
 ### <a name="add-the-button-control"></a>Aggiungere il controllo del pulsante
 
-1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione. Se si usa Visual Studio 2019 o versione successiva, una linea rossa consente di centrare il controllo.
+1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione. Se si usa il Visual Studio 2019 o versione successiva, una linea rossa consente di centrare il controllo.
 
 1. Nella visualizzazione XAML modificare il valore di **Contenuto** per il controllo Button da `Content="Button"` a `Content="Display"`, e salvare le modifiche.
 
@@ -295,7 +295,7 @@ Chiudere la finestra dell'applicazione per arrestare il debug.
 
 ### <a name="debug-with-breakpoints&quot;></a>Eseguire il debug con punti di interruzione
 
-Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo Debug Attiva/Disattiva punto di interruzione , facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si vuole che si verifichi l'interruzione oppure premendo  >   **F9.**
+Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo Debug Attiva/Disattiva punto di interruzione facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si vuole inserire l'interruzione oppure premendo  >   **F9.**
 
 #### <a name=&quot;add-breakpoints&quot;></a>Aggiungere punti di interruzione
 
@@ -315,7 +315,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
     ![Punto di interruzione nel debugger](media/exploreide-debugbreakpoint.png "Screenshot del punto di interruzione nel debugger")
 
-1. Sulla barra dei menu scegliere **Esegui debug**  >  **istruzione/uscita**.
+1. Sulla barra dei menu scegliere **Esegui debug**  >  **istruzione/uscita.**
 
      L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".
 
@@ -329,25 +329,25 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 1. Chiudere la finestra dell'applicazione per arrestare il debug.
 
-1. Sulla barra dei menu scegliere **Debug Disabilita** tutti i punti  >  **di interruzione**.
+1. Sulla barra dei menu scegliere Debug **Disabilita**  >  **tutti i punti di interruzione**.
 
 ### <a name="view-a-representation-of-the-ui-elements"></a>Visualizzare una rappresentazione degli elementi dell'interfaccia utente
 
-Nell'app in esecuzione dovrebbe essere visualizzato un widget nella parte superiore della finestra. Si tratta di un helper di runtime che consente di accedere rapidamente ad alcune utili funzionalità di debug. Fare clic sul primo pulsante, **Vai alla struttura ad albero visuale live.** Verrà visualizzata una finestra con un albero che contiene tutti gli elementi visivi della pagina. Espandere i nodi per trovare i pulsanti aggiunti.
+Nell'app in esecuzione dovrebbe essere visualizzato un widget nella parte superiore della finestra. Si tratta di un helper di runtime che consente di accedere rapidamente ad alcune utili funzionalità di debug. Fare clic sul primo pulsante, **Vai alla struttura ad albero visuale.** Verrà visualizzata una finestra con una struttura ad albero che contiene tutti gli elementi visivi della pagina. Espandere i nodi per trovare i pulsanti aggiunti.
 
-![Screenshot della finestra Albero degli oggetti visivi live](media/vs-2019/exploreide-live-visual-tree.png)
+![Screenshot della finestra Struttura ad albero visuale attiva](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application&quot;></a>Compilare una versione di rilascio dell'applicazione
 
 Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di versione dell'applicazione.
 
-1. Nel menu principale selezionare **Compila** soluzione pulita per eliminare i file intermedi e i file di  >   output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
+1. Nel menu principale selezionare **Compila** soluzione pulita per eliminare i file intermedi e i file di output creati durante le  >   compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
 1. Modificare la configurazione della build per HelloWPFApp da **Debug** a **Release** usando il controllo a discesa sulla barra degli strumenti (attualmente è &quot;Debug").
 
-1. Compilare la soluzione scegliendo **Compila**  >  **soluzione**.
+1. Compilare la soluzione scegliendo **Compila**  >  **compila soluzione**.
 
-L'esercitazione è stata completata. È possibile trovare il *.exe* compilato nella directory della soluzione e del progetto (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+L'esercitazione è stata completata. È possibile trovare il *.exe* creato nella directory della soluzione e del progetto (*...\HelloWPFApp\HelloWPFApp\bin\Release).*
 
 ## <a name="next-steps"></a>Passaggi successivi
 

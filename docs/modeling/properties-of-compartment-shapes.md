@@ -1,6 +1,6 @@
 ---
 title: Proprietà delle forme di raggruppamento
-description: Informazioni sulle forme di raggruppamento sono una delle forme che è possibile usare per visualizzare una classe di dominio in un linguaggio specifico di dominio.
+description: Si apprenderà che le forme raggruppamento sono una delle forme che è possibile usare per visualizzare una classe di dominio in un linguaggio specifico di dominio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,54 +8,54 @@ f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
 - Domain-Specific Language, compartment shape
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb97f6b218655266afeaeec6198ea52d35c76c52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0ec84057bfe7d49760a8f95132a30e8c927f60f0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905500"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390828"
 ---
 # <a name="properties-of-compartment-shapes"></a>Proprietà delle forme di raggruppamento
-Le forme raggruppamento sono una delle forme che è possibile utilizzare per visualizzare una classe di dominio in un linguaggio specifico di dominio. È possibile espandere e comprimere i raggruppamenti.
+Le forme raggruppamento sono una delle forme che è possibile usare per visualizzare una classe di dominio in un linguaggio specifico di dominio. È possibile espandere e comprimere i raggruppamenti.
 
- Per ulteriori informazioni, vedere [come definire un linguaggio Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un linguaggio Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
- Le forme di raggruppamento hanno le proprietà elencate nella tabella seguente.
+ Le forme raggruppamento hanno le proprietà elencate nella tabella seguente.
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
-|Espandi stato di compressione predefinito|Se `Expanded` , i raggruppamenti vengono visualizzati durante la creazione. Se `Collapsed` , non lo sono.|Esteso|
-|Colore riempimento|Colore di riempimento di questa forma.|White|
-|Modalità gradiente riempimento|Modalità di sfumatura riempimento di questa forma.|Ridimensionamento orizzontale|
+|Impostazione predefinita Espandi stato comprimi|Se `Expanded` , i raggruppamenti vengono visualizzati al momento della creazione. Se `Collapsed` , non lo sono.|Esteso|
+|Colore riempimento|Colore di riempimento della forma.|White|
+|Modalità sfumatura di riempimento|Modalità sfumatura di riempimento di questa forma.|Ridimensionamento orizzontale|
 |Geometria|Geometria di questa forma (rettangolo o rettangolo arrotondato).|Rettangolo|
-|Con punti di connessione predefiniti|Se `True` , la forma utilizzerà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
-|Intestazione a raggruppamento singolo visibile|Se `False` , e la forma hanno un unico raggruppamento, l'intestazione del raggruppamento non è visibile.|Vero|
-|Colore del contorno|Colore del contorno di questa forma.|Nero|
-|Stile tratteggiato contorno|Stile di tratteggio del contorno di questa forma (tinta unita, trattino, punto, DashDot, TrattoPuntoPunto, personalizzata).|Tinta unita|
-|Spessore del contorno|Spessore del contorno di questa forma.|0,03125|
+|Dispone di punti di connessione predefiniti|Se `True` , la forma userà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
+|È visibile un'intestazione raggruppamento singolo|Se `False` e la forma ha un singolo raggruppamento, l'intestazione del raggruppamento non è visibile.|Vero|
+|Colore del contorno|Colore del contorno della forma.|Nero|
+|Stile tratteggio del contorno|Stile del tratteggio del contorno di questa forma (Tinta unita, Trattino, Punto, DashDot, DashDotDot, Personalizzato).|Tinta unita|
+|Spessore del contorno|Spessore del contorno di questa forma.|0.03125|
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Nero|
-|Modificatore di accesso|Livello di accesso della forma raggruppamento ( `public` o `internal` ).|Pubblico|
-|Attributi personalizzati|Utilizzato per aggiungere attributi alla classe di codice sorgente generata da questa forma di raggruppamento|\<none>|
-|Genera il doppio derivato|Se `True` , verranno generate sia una classe di base che una classe parziale (per supportare la personalizzazione tramite override). Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
-|Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dalla forma raggruppamento ( `none` , `abstract` o `sealed` ).|nessuno|
-|Forma raggruppamento di base|Classe di base di questa forma.|(nessuna)|
-|Nome|Nome di questa forma.|Nome corrente|
-|Spazio dei nomi|Spazio dei nomi affiliato a questa forma.|Spazio dei nomi corrente|
-|Tipo di descrizione comando|Modalità di definizione della descrizione comando (fixed, variable o None). Se è corretto, il valore della `Fixed Tooltip Text` proprietà viene usato come descrizione comando; se variabile, la descrizione comando è definita nel codice personalizzato.|Nessuno|
+|Modificatore di accesso|Livello di accesso della forma raggruppamento ( `public` o `internal` ).|Blockchain pubblica|
+|Attributi personalizzati|Usato per aggiungere attributi alla classe del codice sorgente generata da questa forma raggruppamento|\<none>|
+|Genera un valore derivato da Double|Se , verranno generate sia una classe di base che una classe `True` parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [Override ed estensione delle classi generate.](../modeling/overriding-and-extending-the-generated-classes.md)|Falso|
+|Ha un costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per altre informazioni, vedere [Override ed estensione delle classi generate.](../modeling/overriding-and-extending-the-generated-classes.md)|Falso|
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dalla forma raggruppamento ( `none` o `abstract` `sealed` ).|Nessuno|
+|Forma Raggruppamento di base|Classe di base di questa forma.|(nessuna)|
+|Nome|Nome della forma.|Nome corrente|
+|Spazio dei nomi|Spazio dei nomi associato a questa forma.|Spazio dei nomi corrente|
+|Tipo di descrizione comando|Modalità di definizione della descrizione comando (fissa, variabile o nessuna). Se fixed, il valore della proprietà viene usato come descrizione `Fixed Tooltip Text` comando; se variabile, la descrizione comando viene definita nel codice personalizzato.|Nessuno|
 |Note|Note informali associate a questa forma.|\<none>|
-|Altezza iniziale|Altezza iniziale di questa forma, in pollici. Per le forme di raggruppamento, si tratta dell'altezza della sezione dell'intestazione e non può essere ridimensionata.|1|
-|Larghezza iniziale|Larghezza iniziale di questa forma, in pollici.|1.5|
-|Colore riempimento esposto come proprietà<br /><br /> Modalità di sfumatura riempimento esposta<br /><br /> Colore struttura esposto come proprietà<br /><br /> Stile tratteggiato del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà dichiarata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposti**.|Falso|
+|Altezza iniziale|Altezza iniziale della forma, in pollici. Per le forme raggruppamento, questa è solo l'altezza della sezione di intestazione e non può essere ridimensionata.|1|
+|Larghezza iniziale|Larghezza iniziale della forma, espressa in pollici.|1.5|
+|Colore di riempimento esposto come proprietà<br /><br /> Modalità sfumatura di riempimento esposta<br /><br /> Colore del contorno esposto come proprietà<br /><br /> Stile del trattino del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà specificata di una forma. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla definizione della forma e **scegliere Aggiungi esposto.**|Falso|
 |Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<none>|
-|Testo della descrizione comando fisso|Testo utilizzato per una descrizione comando fissa.|\<none>|
-|Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questa forma.|\<none>|
+|Correzione del testo della descrizione comando|Testo utilizzato per una descrizione comando fissa.|\<none>|
+|Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida F1 per questa forma.|\<none>|
 
 ## <a name="see-also"></a>Vedi anche
 
