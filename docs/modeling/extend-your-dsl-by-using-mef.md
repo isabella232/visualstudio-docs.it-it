@@ -1,37 +1,37 @@
 ---
 title: Estendere il DSL mediante MEF
-description: Informazioni su come è possibile estendere il linguaggio specifico di dominio (DSL) usando il Managed Extensibility Framework (MEF).
+description: Informazioni su come estendere il linguaggio specifico di dominio (DSL) usando Managed Extensibility Framework (MEF).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a4572a7210203d6c7525a278430210c954c3405
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935066"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388880"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
 
-È possibile estendere il linguaggio specifico di dominio (DSL) usando Managed Extensibility Framework (MEF). L'utente o altri sviluppatori saranno in grado di scrivere estensioni per il linguaggio DSL senza modificare la definizione DSL e il codice programma. Tali estensioni includono comandi di menu, gestori di trascinamento della selezione e convalida. Gli utenti saranno in grado di installare il linguaggio DSL e, facoltativamente, di installare le estensioni.
+È possibile estendere il linguaggio specifico di dominio (DSL) usando Managed Extensibility Framework (MEF). L'utente o altri sviluppatori potranno scrivere estensioni per il linguaggio DSL senza modificare la definizione DSL e il codice del programma. Tali estensioni includono comandi di menu, gestori di trascinamento della selezione e convalida. Gli utenti potranno installare il linguaggio DSL e quindi, facoltativamente, installare le relative estensioni.
 
-Inoltre, quando si Abilita MEF nel linguaggio DSL, può essere più facile scrivere alcune delle funzionalità del linguaggio DSL, anche se tutte sono compilate insieme al linguaggio DSL.
+Inoltre, quando si abilita MEF nel DSL, può essere più semplice scrivere alcune delle funzionalità del DSL, anche se sono tutte compilate insieme a DSL.
 
-Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
-### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Per abilitare l'estensione del linguaggio DSL mediante MEF
+### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Per consentire l'estensione del DSL tramite MEF
 
-1. Creare una nuova cartella denominata **MefExtension in** all'interno del progetto **DslPackage** . Aggiungere i file seguenti:
+1. Creare una nuova cartella denominata **MefExtension all'interno** **del progetto DslPackage.** Aggiungere i file seguenti:
 
      Nome file: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
-    > Impostare il GUID in questo file in modo che corrisponda al GUID CommandSetId definito in DslPackage\GeneratedCode\Constants.tt
+    > Impostare il GUID in questo file in modo che sia uguale al GUID CommandSetId definito in DslPackage\GeneratedCode\Constants.tt
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -60,7 +60,7 @@ Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)
 
     Nome file: `ValidationExtensionRegistrar.tt`
 
-    Se si aggiunge questo file, è necessario abilitare la convalida nel linguaggio DSL usando almeno una delle opzioni in **EditorValidation** in DSL Explorer.
+    Se si aggiunge questo file, è necessario abilitare la convalida nel DSL usando almeno una delle opzioni in **EditorValidation** in DSL Explorer.
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,7 +74,7 @@ Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2. Creare una nuova cartella denominata **MefExtension in** all'interno del progetto **DSL** . Aggiungere i file seguenti:
+2. Creare una nuova cartella denominata **MefExtension all'interno** **del progetto Dsl.** Aggiungere i file seguenti:
 
      Nome file: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -103,39 +103,39 @@ Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-    Inserire la riga dopo la `<Include>` direttiva esistente.
+    Inserire la riga dopo la direttiva `<Include>` esistente.
 
-4. Aprire *DslDefinition. DSL*.
+4. Aprire *DslDefinition.dsl*.
 
-5. In DSL Explorer selezionare **editor \Validation**.
+5. In Esplora DSL selezionare **Editor\Convalida.**
 
-6. Nella Finestra Proprietà verificare che almeno una delle proprietà denominate **usi** sia `true` .
+6. Nel Finestra Proprietà assicurarsi che almeno una delle proprietà denominate **Uses** sia `true` .
 
-7. Nella barra degli strumenti **Esplora soluzioni** fare clic su **trasforma tutti i modelli**.
+7. Nella barra **Esplora soluzioni** fare clic su **Trasforma tutti i modelli**.
 
-     I file secondari vengono visualizzati sotto ciascuno dei file aggiunti.
+     I file affiliati vengono visualizzati sotto ognuno dei file aggiunti.
 
-8. Compilare ed eseguire la soluzione per verificare che sia ancora funzionante.
+8. Compilare ed eseguire la soluzione per verificare che funzioni ancora.
 
-Il linguaggio DSL è ora abilitato per MEF. È possibile scrivere comandi di menu, gestori di movimenti e vincoli di convalida come estensioni MEF. È possibile scrivere queste estensioni nella soluzione DSL insieme ad altro codice personalizzato. Inoltre, l'utente o altri sviluppatori possono scrivere estensioni di Visual Studio separate che estendono il linguaggio DSL.
+Il DSL è ora abilitato per MEF. È possibile scrivere comandi di menu, gestori movimenti e vincoli di convalida come estensioni MEF. È possibile scrivere queste estensioni nella soluzione DSL insieme ad altro codice personalizzato. Inoltre, l'utente o altri sviluppatori possono scrivere estensioni Visual Studio che estendono il linguaggio DSL.
 
-## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Creare un'estensione per un linguaggio DSL abilitato per MEF
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Creare un'estensione per un DSL abilitato per MEF
 
-Se si ha accesso a un linguaggio DSL abilitato per MEF creato dall'utente o da un altro utente, è possibile scrivere estensioni. È possibile utilizzare le estensioni per aggiungere comandi di menu, gestori di movimenti o vincoli di convalida. Per creare queste estensioni, usare una soluzione Visual Studio Extension (VSIX). La soluzione è costituita da due parti: un progetto di libreria di classi che compila l'assembly di codice e un progetto VSIX per il pacchetto dell'assembly.
+Se si ha accesso a un linguaggio DSL abilitato per MEF creato da se stessi o da un altro utente, è possibile scrivere le relative estensioni. Le estensioni possono essere usate per aggiungere comandi di menu, gestori movimenti o vincoli di convalida. Per creare queste estensioni, usare una soluzione vsix (Visual Studio extension). La soluzione è in due parti: un progetto di libreria di classi che compila l'assembly di codice e un progetto VSIX che crea il pacchetto dell'assembly.
 
 ### <a name="to-create-a-dsl-extension-vsix"></a>Per creare un'estensione DSL VSIX
 
 1. Creare un nuovo progetto **Libreria di classi**.
 
-2. Nel nuovo progetto aggiungere un riferimento all'assembly del linguaggio DSL.
+2. Nel nuovo progetto aggiungere un riferimento all'assembly del DSL.
 
    - Questo assembly ha in genere un nome che termina con ".Dsl.dll".
 
-   - Se si ha accesso al progetto DSL, è possibile trovare il file di assembly nel **\\ \\ \* contenitore DSL** directory
+   - Se si ha accesso al progetto DSL, è possibile trovare il file di assembly nella directory **Dsl \\ bin \\ \***
 
-   - Se si ha accesso al file VSIX DSL, è possibile trovare l'assembly modificando l'estensione del nome file del file VSIX in ". zip". Decomprimere il file zip.
+   - Se si ha accesso al file VSIX DSL, è possibile trovare l'assembly modificando l'estensione del nome file del file VSIX in ".zip". Decomprimere il .zip file.
 
-3. Aggiungere i riferimenti agli assembly .NET seguenti:
+3. Aggiungere riferimenti agli assembly .NET seguenti:
 
    - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
@@ -147,37 +147,37 @@ Se si ha accesso a un linguaggio DSL abilitato per MEF creato dall'utente o da u
 
    - System.Windows.Forms.dll
 
-4. Creare un nuovo progetto **progetto VSIX** .
+4. Creare un nuovo **progetto VSIX.**
 
-5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.
+5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto VSIX e **scegliere Imposta come progetto di avvio**.
 
-6. Nel nuovo progetto aprire **source. Extension. vsixmanifest**.
+6. Nel nuovo progetto aprire **source.extension.vsixmanifest**.
 
-7. Fare clic su **Aggiungi contenuto**. Nella finestra di dialogo impostare **tipo di contenuto** su **componente MEF** e **progetto di origine** sul progetto libreria di classi.
+7. Fare **clic su Aggiungi contenuto**. Nella finestra di dialogo impostare **Tipo di contenuto** su Componente **MEF** e **Progetto di origine** sul progetto di libreria di classi.
 
-8. Aggiungere un riferimento VSIX al linguaggio DSL.
+8. Aggiungere un riferimento VSIX al DSL.
 
-   1. In **source. Extension. vsixmanifest** fare clic su **Aggiungi riferimento**
+   1. In **source.extension.vsixmanifest fare** clic **su Aggiungi riferimento**
 
-   2. Nella finestra di dialogo fare clic su **Aggiungi payload** , quindi individuare il file VSIX del linguaggio DSL. Il file VSIX è compilato nella soluzione DSL, in **DslPackage \\ bin \\ \***.
+   2. Nella finestra di dialogo fare clic **su Aggiungi payload** e quindi individuare il file VSIX del DSL. Il file VSIX è compilato nella soluzione DSL, nel bin **DslPackage \\ \\ \***.
 
-       Ciò consente agli utenti di installare il linguaggio DSL e l'estensione nello stesso momento. Se l'utente ha già installato il linguaggio DSL, verrà installata solo l'estensione.
+       In questo modo gli utenti possono installare il DSL e l'estensione contemporaneamente. Se l'utente ha già installato il DSL, verrà installata solo l'estensione.
 
-9. Esaminare e aggiornare gli altri campi di **source. Extension. vsixmanifest**. Fare clic su **Seleziona edizioni** e verificare che siano impostate le edizioni di Visual Studio corrette.
+9. Esaminare e aggiornare gli altri campi di **source.extension.vsixmanifest**. Fare **clic su Seleziona edizioni** e verificare che siano impostate Visual Studio edizioni corrette.
 
-10. Aggiungere codice al progetto libreria di classi. Usare gli esempi nella sezione successiva come guida.
+10. Aggiungere codice al progetto di libreria di classi. Usare gli esempi nella sezione successiva come guida.
 
-     È possibile aggiungere qualsiasi numero di classi di comandi, movimenti e di convalida.
+     È possibile aggiungere un numero qualsiasi di classi di comando, movimento e convalida.
 
-11. Per testare l'estensione, premere **F5**. Nell'istanza sperimentale di Visual Studio creare o aprire un file di esempio del linguaggio DSL.
+11. Per testare l'estensione, premere **F5.** Nell'istanza sperimentale di Visual Studio creare o aprire un file di esempio del DSL.
 
-## <a name="writing-mef-extensions-for-dsls"></a>Scrittura di estensioni MEF per DSLs
+## <a name="writing-mef-extensions-for-dsls"></a>Scrittura di estensioni MEF per DSL
 
-È possibile scrivere estensioni nel progetto di codice assembly di una soluzione di estensione DSL separata. È anche possibile usare MEF nel progetto DslPackage, come un modo pratico per scrivere comandi, movimenti e codice di convalida come parte del linguaggio DSL.
+È possibile scrivere estensioni nel progetto di codice assembly di una soluzione di estensione DSL separata. È anche possibile usare MEF nel progetto DslPackage, come modo pratico per scrivere comandi, movimenti e codice di convalida come parte del DSL.
 
 ### <a name="menu-commands"></a>Comandi di menu
 
-Per scrivere un comando di menu, definire una classe che implementi <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> e prefissi la classe con l'attributo definito nel linguaggio DSL, denominato *dslutente* `CommandExtension` . È possibile scrivere più di una classe di comandi di menu.
+Per scrivere un comando di menu, definire una classe che implementa e antefichi alla classe l'attributo definito <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> nel DSL, denominato *YourDsl* `CommandExtension` . È possibile scrivere più di una classe di comandi di menu.
 
 `QueryStatus()` viene chiamato ogni volta che l'utente fa clic con il pulsante destro del mouse sul diagramma. Deve controllare la selezione corrente e impostare `command.Enabled` per indicare quando il comando è applicabile.
 
@@ -247,9 +247,9 @@ namespace MyMefExtension
 
 ### <a name="gesture-handlers"></a>Gestori movimenti
 
-Un gestore movimenti può gestire gli oggetti trascinati nel diagramma da qualsiasi posizione, all'interno o all'esterno di Visual Studio. L'esempio seguente consente all'utente di trascinare i file da Esplora risorse nel diagramma. Crea elementi che contengono i nomi dei file.
+Un gestore movimenti può gestire gli oggetti trascinati nel diagramma da qualsiasi posizione, all'interno o all'esterno Visual Studio. L'esempio seguente consente all'utente di trascinare i Esplora risorse nel diagramma. Crea elementi che contengono i nomi di file.
 
-È possibile scrivere gestori per gestire i trascinamenti da altri modelli DSL e modelli UML. Per altre informazioni, vedere [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md).
+È possibile scrivere gestori per gestire i trascinamenti da altri modelli DSL e modelli UML. Per altre informazioni, vedere [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -323,9 +323,9 @@ namespace MefExtension
 
 ### <a name="validation-constraints"></a>Vincoli di convalida
 
-I metodi di convalida sono contrassegnati dall' `ValidationExtension` attributo generato dal DSL e anche da <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Il metodo può essere visualizzato in qualsiasi classe non contrassegnata da un attributo.
+I metodi di convalida sono `ValidationExtension` contrassegnati dall'attributo generato dal DSL e anche da <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Il metodo può essere visualizzato in qualsiasi classe non contrassegnata da un attributo .
 
-Per ulteriori informazioni, vedere [convalida in un linguaggio Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
+Per altre informazioni, vedere [Validation in a Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).
 
 ```csharp
 using Company.MyDsl;

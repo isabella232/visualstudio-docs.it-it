@@ -1,6 +1,6 @@
 ---
 title: Generazione di codice in fase di progettazione tramite modelli di testo T4
-description: Informazioni su come i modelli di testo T4 in fase di progettazione consentono di generare codice programma e altri file nel progetto di Visual Studio.
+description: Informazioni su come i modelli di testo T4 della fase di progettazione consentono di generare codice programma e altri file nel Visual Studio progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: f8b7bc48a5c409dbecbb313fd277a31ad1cec287
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884148"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389137"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 
-I modelli di testo T4 in fase di progettazione consentono di generare codice programma e altri file nel progetto di Visual Studio. In genere, i modelli vengono scritti in modo da variare il codice generato in base ai dati di un *modello*. Un modello è un file o un database che contiene informazioni chiave sui requisiti dell'applicazione.
+I modelli di testo T4 della fase di progettazione consentono di generare codice programma e altri file nel Visual Studio progetto. In genere, si scrivono i modelli in modo che varino il codice generato in base ai dati di un *modello*. Un modello è un file o un database che contiene informazioni chiave sui requisiti dell'applicazione.
 
 È ad esempio possibile usare un modello per definire un flusso di lavoro come tabella o diagramma. Dal modello è possibile generare il software che esegue il flusso di lavoro. Quando i requisiti degli utenti cambiano, è facile discutere il nuovo flusso di lavoro con gli utenti. La rigenerazione di codice dal flusso di lavoro è più attendibile dell'aggiornamento manuale del codice.
 
 > [!NOTE]
-> Un *modello* è un'origine dati che descrive un aspetto specifico di un'applicazione. Può avere qualsiasi formato, in qualsiasi tipo di file o database. Non deve avere un formato specifico, ad esempio un modello UML o un modello di linguaggio specifico di dominio. In genere i modelli hanno formato di tabelle o file XML.
+> Un *modello* è un'origine dati che descrive un particolare aspetto di un'applicazione. Può avere qualsiasi formato, in qualsiasi tipo di file o database. Non deve avere un formato specifico, ad esempio un modello UML o un modello di linguaggio specifico di dominio. In genere i modelli hanno formato di tabelle o file XML.
 
-Se, come è probabile, si ha già esperienza di generazione di codice, Quando si definiscono le risorse in un file con **estensione resx** nella soluzione di Visual Studio, viene generato automaticamente un set di classi e metodi. Il file di risorse semplifica e rende più affidabile la modifica delle risorse rispetto alla modifica dei classi e dei metodi. I modelli di testo permettono di generare codice nello stesso modo da un'origine personalizzata.
+Se, come è probabile, si ha già esperienza di generazione di codice, Quando si definiscono le risorse in un file con estensione **resx** nella soluzione Visual Studio, viene generato automaticamente un set di classi e metodi. Il file di risorse semplifica e rende più affidabile la modifica delle risorse rispetto alla modifica dei classi e dei metodi. I modelli di testo permettono di generare codice nello stesso modo da un'origine personalizzata.
 
 Un modello di testo include una combinazione del testo da generare e di codice programma che genera le parti variabili del testo. Il codice programma consente di ripetere o omettere in modo condizionale parti del testo generato. Il testo generato può essere a sua volta codice programma che genererà parte dell'applicazione.
 
-## <a name="create-a-design-time-t4-text-template"></a>Creare un modello di testo Design-Time T4
+## <a name="create-a-design-time-t4-text-template"></a>Creare un Design-Time di testo T4
 
-1. Creare un nuovo progetto di Visual Studio o aprirne uno esistente.
+1. Creare un nuovo Visual Studio progetto o aprirne uno esistente.
 
-2. Aggiungere un file di modello di testo al progetto e assegnargli un nome con estensione **TT**.
+2. Aggiungere un file di modello di testo al progetto e assegnargli un nome con estensione **tt**.
 
-    A tale scopo, in **Esplora soluzioni** scegliere **Aggiungi**  >  **nuovo elemento** dal menu di scelta rapida del progetto. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo** dal riquadro centrale.
+    A tale scopo, in **Esplora soluzioni** scegliere Aggiungi nuovo elemento dal menu di scelta  >  **rapida del progetto.** Nella finestra **di dialogo Aggiungi nuovo** elemento selezionare Modello di **testo** nel riquadro centrale.
 
-    Si noti che la proprietà **strumento personalizzato** del file è **TextTemplatingFileGenerator**.
+    Si noti che **la proprietà Strumento** personalizzato del file è **TextTemplatingFileGenerator.**
 
 3. Open the file. Includerà già le direttive seguenti:
 
@@ -64,26 +64,26 @@ Un modello di testo include una combinazione del testo da generare e di codice p
 
 5. Salvare il file.
 
-    Potrebbe essere visualizzata una finestra di messaggio di **avviso di sicurezza** in cui viene chiesto di confermare che si desidera eseguire il modello. Fare clic su **OK**.
+    Potrebbe essere visualizzata una **finestra di messaggio** Avviso di sicurezza in cui viene chiesto di confermare l'esecuzione del modello. Fare clic su **OK**.
 
-6. In **Esplora soluzioni** espandere il nodo del file del modello e si troverà un file con estensione **txt**. Il file contiene testo generato dal modello.
+6. In **Esplora soluzioni** espandere il nodo del file modello per trovare un file con estensione **.txt**. Il file contiene testo generato dal modello.
 
    > [!NOTE]
-   > Se il progetto è un progetto di Visual Basic, è necessario fare clic su **Mostra tutti i file** per visualizzare il file di output.
+   > Se il progetto è un Visual Basic, è necessario fare clic **su Mostra** tutti i file per visualizzare il file di output.
 
-### <a name="regenerate-the-code"></a>Rigenera il codice
+### <a name="regenerate-the-code"></a>Rigenerare il codice
 
 Nei casi seguenti sarà eseguito un modello, che genera il file secondario:
 
-- Modificare il modello e quindi spostare lo stato attivo su un'altra finestra di Visual Studio.
+- Modificare il modello e quindi spostare lo stato attivo su una finestra Visual Studio diversa.
 
 - Salvare il modello.
 
-- Fare clic su **trasforma tutti i modelli** nel menu **Compila** . Questa operazione comporterà la trasformazione di tutti i modelli nella soluzione di Visual Studio.
+- Scegliere **Trasforma tutti i** modelli dal menu Compila.  Verranno così trasformati tutti i modelli nella Visual Studio soluzione.
 
-- In **Esplora soluzioni** scegliere **Esegui strumento personalizzato** dal menu di scelta rapida di qualsiasi file. Usare questo metodo per trasformare un sottoinsieme selezionato di modelli.
+- In **Esplora soluzioni** scegliere Esegui strumento personalizzato dal menu di scelta **rapida di qualsiasi file.** Usare questo metodo per trasformare un sottoinsieme selezionato di modelli.
 
-È anche possibile impostare un progetto di Visual Studio in modo che i modelli vengano eseguiti quando i file di dati letti sono stati modificati. Per ulteriori informazioni, vedere [rigenerazione automatica del codice](#Regenerating).
+È anche possibile configurare un progetto Visual Studio in modo che i modelli vengono eseguiti quando i file di dati letti vengono modificati. Per altre informazioni, vedere [Rigenerazione automatica del codice.](#Regenerating)
 
 ## <a name="generate-variable-text"></a>Genera testo variabile
 
@@ -117,7 +117,7 @@ I modelli di testo permettono di usare il codice programma per variare il conten
 
 2. Salvare il file con estensione tt ed esaminare di nuovo il file con estensione txt generato. Elenca i quadrati dei numeri da 0 a 10.
 
-   Si noti che le istruzioni sono racchiuse tra `<#...#>` e le singole espressioni tra `<#=...#>`. Per altre informazioni, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
+   Si noti che le istruzioni sono racchiuse tra `<#...#>` e le singole espressioni tra `<#=...#>`. Per altre informazioni, vedere [Scrittura di un modello di testo T4.](../modeling/writing-a-t4-text-template.md)
 
    Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la direttiva `template` deve includere `language="VB"`. `"C#"` è l'impostazione predefinita.
 
@@ -131,18 +131,18 @@ Per eseguire il debug di un modello di testo:
 
 - Impostare punti di interruzione nel modello, esattamente come per il codice normale.
 
-- Scegliere **debug modello T4** dal menu di scelta rapida del file del modello di testo in Esplora soluzioni.
+- Scegliere **Debug modello T4** dal menu di scelta rapida del file del modello di testo in Esplora soluzioni.
 
    Il modello viene eseguito e si arresta in corrispondenza dei punti di interruzione. È possibile esaminare le variabili ed eseguire il codice un'istruzione alla volta usando le procedure normali.
 
 > [!TIP]
-> `debug="true"` rende il mapping del codice generato in modo più accurato al modello di testo, inserendo più direttive di numerazione delle righe nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.
+> `debug="true"` rende più accurata la mappa codice generata per il modello di testo, inserendo più direttive di numerazione delle righe nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.
 >
 > È comunque possibile lasciare la clausola nella direttiva del modello anche quando non si esegue il debug. Ciò provoca solo un minimo calo nelle prestazioni.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generazione di codice o risorse per la soluzione
 
-È possibile generare file di programma diversi in base al modello. Un modello è un input quale un database, un file di configurazione, un modello UML, un modello DSL o un'altra origine. Si generano in genere diversi file di programma dallo stesso modello. Per ottenere questo risultato, creare un file di modello per ogni file di programma generato e fare in modo che tutti i modelli leggano lo stesso modello.
+È possibile generare file di programma diversi in base al modello. Un modello è un input quale un database, un file di configurazione, un modello UML, un modello DSL o un'altra origine. In genere si generano diversi file di programma dallo stesso modello. Per ottenere questo risultato, creare un file di modello per ogni file di programma generato e fare in modo che tutti i modelli leggano lo stesso modello.
 
 ### <a name="to-generate-program-code-or-resources"></a>Per generare codice programma o risorse
 
@@ -221,9 +221,9 @@ Per accedere a un file di modello o a un database, il codice del modello può us
 <#@ import namespace="System.IO" #>
 ```
 
-La `assembly` direttiva rende disponibile l'assembly specificato per il codice del modello, in modo analogo alla sezione References di un progetto di Visual Studio. Non è necessario includere un riferimento a System.dll, perché i riferimenti a questo file sono automatici. La direttiva `import` consente di usare tipi senza usare i rispettivi nomi completi, in modo simile alla direttiva `using` in un normale file di programma.
+La `assembly` direttiva rende disponibile l'assembly specificato per il codice del modello, nello stesso modo della sezione Riferimenti di un Visual Studio progetto. Non è necessario includere un riferimento a System.dll, perché i riferimenti a questo file sono automatici. La direttiva `import` consente di usare tipi senza usare i rispettivi nomi completi, in modo simile alla direttiva `using` in un normale file di programma.
 
-Ad esempio, dopo aver importato **System.io**, è possibile scrivere:
+Ad esempio, dopo aver importato **System.IO**, è possibile scrivere:
 
 ```csharp
 
@@ -274,7 +274,7 @@ Il tipo di `this.Host` (in VB `Me.Host`) è `Microsoft.VisualStudio.TextTemplati
 
 ### <a name="getting-data-from-visual-studio"></a>Recupero di dati da Visual Studio
 
-Per usare i servizi forniti in Visual Studio, impostare l' `hostSpecific` attributo e caricare l' `EnvDTE` assembly. Importazione `Microsoft.VisualStudio.TextTemplating` , che contiene il `GetCOMService()` metodo di estensione.  Sarà quindi possibile usare IServiceProvider.GetCOMService() per accedere a DTE e ad altri servizi. Ad esempio:
+Per usare i servizi forniti in Visual Studio, impostare `hostSpecific` l'attributo e caricare `EnvDTE` l'assembly. Importare `Microsoft.VisualStudio.TextTemplating` , che contiene il metodo di `GetCOMService()` estensione.  Sarà quindi possibile usare IServiceProvider.GetCOMService() per accedere a DTE e ad altri servizi. Ad esempio:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -294,14 +294,14 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Rigenerazione automatica del codice
 
-In genere, diversi file in una soluzione di Visual Studio vengono generati con un modello di input. Ogni file è generato dal modello corrispondente, ma i modelli fanno tutti riferimento allo stesso modello.
+In genere, più file in una Visual Studio soluzione vengono generati con un modello di input. Ogni file è generato dal modello corrispondente, ma i modelli fanno tutti riferimento allo stesso modello.
 
-In caso di modifica al modello di origine, è consigliabile eseguire di nuovo tutti i modelli della soluzione. Per eseguire questa operazione manualmente, scegliere **trasforma tutti i modelli** dal menu **Compila** .
+In caso di modifica al modello di origine, è consigliabile eseguire di nuovo tutti i modelli della soluzione. Per eseguire questa operazione manualmente, **scegliere Trasforma tutti i** modelli dal menu Compila. 
 
 Se è stato installato Visual Studio Modeling SDK, è possibile trasformare automaticamente tutti i modelli ogni volta che si esegue una compilazione. A tale scopo, modificare il file di progetto (con estensione csproj o vbproj) in un editor di testo e quindi aggiungere le righe seguenti vicino alla fine del file, dopo eventuali altre istruzioni `<import>`:
 
 > [!NOTE]
-> L'SDK per la trasformazione del modello di testo e l'SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano funzionalità specifiche di Visual Studio. Per informazioni dettagliate, vedere [questo post di blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Text Template Transformation SDK e Visual Studio Modeling SDK vengono installati automaticamente quando si installano funzionalità specifiche di Visual Studio. Per informazioni dettagliate, vedere [questo post di blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ::: moniker range="vs-2017"
 
@@ -327,11 +327,11 @@ Se è stato installato Visual Studio Modeling SDK, è possibile trasformare auto
 
 ::: moniker-end
 
-Per altre informazioni, vedere [generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md).
+Per altre informazioni, vedere [Generazione di codice in un processo di compilazione.](../modeling/code-generation-in-a-build-process.md)
 
 ## <a name="error-reporting"></a>Errore di segnalazione
 
-Per inserire messaggi di errore e di avviso nella finestra di errore di Visual Studio, è possibile usare i metodi seguenti:
+Per inserire messaggi di errore e di avviso nella Visual Studio di errore, è possibile usare questi metodi:
 
 ```
 Error("An error message");
@@ -340,17 +340,17 @@ Warning("A warning message");
 
 ## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> Conversione di un file esistente in un modello
 
-Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è molto simile a quello dei file generati, anche se includono codice programma. Ciò suggerisce un metodo utile per la creazione di un modello. Creare innanzitutto un file comune come prototipo, ad esempio un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] file, e quindi introdurre gradualmente il codice di generazione che varia il file risultante.
+Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è molto simile a quello dei file generati, anche se includono codice programma. Ciò suggerisce un metodo utile per la creazione di un modello. Creare innanzitutto un file comune come prototipo, ad esempio un file, e quindi introdurre gradualmente codice di generazione [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] che varia il file risultante.
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Per convertire un file esistente in un modello in fase di esecuzione
 
-1. Per il progetto di Visual Studio, aggiungere un file del tipo che si vuole generare, ad esempio un `.cs` file, `.vb` o `.resx` .
+1. Al progetto Visual Studio, aggiungere un file del tipo che si vuole generare, ad esempio `.cs` un file , o `.vb` `.resx` .
 
 2. Testare il nuovo file per assicurarsi che funzioni correttamente.
 
-3. In Esplora soluzioni modificare l'estensione del nome file in **. TT**.
+3. In Esplora soluzioni modificare l'estensione del nome file in **.tt**.
 
-4. Verificare le seguenti proprietà del file con **estensione TT** :
+4. Verificare le proprietà seguenti del file **con estensione tt:**
 
    |Proprietà |Impostazione |
    |-|-|
@@ -370,7 +370,7 @@ Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è mo
 
 6. Salvare il file.
 
-    Sarà creato un file secondario, con l'estensione specificata. Le relative proprietà sono corrette per il tipo di file. Ad esempio, la proprietà **azione di compilazione** di un file con estensione cs verrebbe **compilata**.
+    Sarà creato un file secondario, con l'estensione specificata. Le relative proprietà sono corrette per il tipo di file. Ad esempio, la **proprietà Azione di** compilazione di un file con estensione cs sarà **Compila**.
 
     Verificare che il file generato includa lo stesso contenuto del file originale.
 
@@ -378,7 +378,7 @@ Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è mo
 
 ## <a name="guidelines-for-code-generation"></a>Linee guida per la generazione di codice
 
-Vedere [linee guida per la scrittura di modelli di testo T4](../modeling/guidelines-for-writing-t4-text-templates.md).
+Vedere Linee guida [per la scrittura di modelli di testo T4.](../modeling/guidelines-for-writing-t4-text-templates.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -386,7 +386,7 @@ Vedere [linee guida per la scrittura di modelli di testo T4](../modeling/guideli
 |-|-|
 |Scrivere un modello di testo più avanzato, con codice che usa funzioni ausiliarie, file inclusi e dati esterni, ed eseguirne il debug.|[Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)|
 |Generare documenti dai modelli in fase di esecuzione.|[Generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
-|Eseguire la generazione di testo all'esterno di Visual Studio.|[Generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Eseguire la generazione di testo al di fuori Visual Studio.|[Generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Trasformare i dati nel formato di un linguaggio specifico di dominio.|[Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Scrivere processori di direttive per trasformare le origini dati.|[Personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md)|
 

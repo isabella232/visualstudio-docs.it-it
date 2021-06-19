@@ -1,7 +1,7 @@
 ---
 title: Analizzare il consumo di risorse nelle app XAML
 description: Usare il profiler Sequenza temporale applicazione per individuare i problemi di prestazioni nelle applicazioni XAML. È possibile analizzare il tempo impiegato per varie attività in diversi scenari.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 40fc899aecc3b8aea239703080d8db4efcfaec52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d352c118bd8b21b9dcbf62f7dd32eaf2999ed471
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901187"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388022"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -50,7 +50,7 @@ I passaggi principali sono indicati di seguito.
 
 3. Selezionare **Sequenza temporale applicazione** e fare clic su **Avvia** nella parte inferiore della finestra.
 
-   ![Strumento Sequenza temporale applicazione selezionato](../profiling/media/apptimelineselect.png "Strumento Sequenza temporale applicazione")
+   ![strumento Sequenza temporale applicazione selezionato](../profiling/media/apptimelineselect.png "strumento Sequenza temporale applicazione")
 
    > [!NOTE]
    > È possibile che venga visualizzata una finestra Controllo dell'account utente che richiede le autorizzazioni per l’esecuzione di *VsEtwCollector.exe*. Fare clic su **Sì**.
@@ -121,12 +121,12 @@ Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, fil
 |-|-|
 |**Ordina per**|Ordina in base a ora di inizio o lunghezza degli eventi.|
 |![Raggruppare gli eventi per frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Aggiunge o rimuove una categoria **Frame** di primo livello che raggruppa gli eventi per frame.|
-|![Elenco dettagli filtro sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
-|![Personalizzare le informazioni sui dettagli della cronologia](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
+|![Filtrare l'elenco dei dettagli della sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
+|![Personalizzare le informazioni dettagliate sulla sequenza temporale](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Blog del team WPF: nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
+- [Blog del team WPF: Nuovo strumento di analisi delle prestazioni dell'interfaccia utente per le applicazioni WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Ottimizzazione delle prestazioni di applicazioni WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Profilatura in Visual Studio](../profiling/index.yml)

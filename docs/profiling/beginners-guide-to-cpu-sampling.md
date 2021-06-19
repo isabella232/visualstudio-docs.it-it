@@ -1,7 +1,7 @@
 ---
 title: Guida per principianti al campionamento CPU
-description: Scopri in che modo gli strumenti di profilatura di Visual Studio rivelano quanto tempo viene usato dalle funzioni nell'applicazione, guidando l'utente alle aree per velocizzare l'applicazione.
-ms.custom: SEO-VS-2020, seodec18
+description: Informazioni su Visual Studio strumenti di profilatura rivelano quanto tempo viene usato dalle funzioni nell'applicazione, guidando l'utente nelle aree per velocizzare l'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 02/27/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +17,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9368ca0bf2c10afb86f61683bf58b631c4ba5f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07a0593e5139479c1b2d82f7b2f4cd78fde8a884
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954384"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387983"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.
@@ -100,7 +100,7 @@ ms.locfileid: "99954384"
 
      Per continuare l'analisi dell'esecuzione della profilatura, è possibile analizzare di nuovo un segmento di dati di profilatura usando la sequenza temporale nella visualizzazione **Riepilogo** per vedere il **Percorso critico** e le **Funzioni che svolgono più lavoro individuale** da un segmento selezionato. Ad esempio, con particolare attenzione ad un picco più piccolo nella sequenza temporale potrebbe rivelare costosi alberi delle chiamate e funzioni che non sono stati visualizzati durante l'analisi dell'intera esecuzione della profilatura.
 
-     Per rianalizzare un segmento, selezionare un segmento nella casella **sequenza temporale di riepilogo** , quindi fare clic su **Filtra per selezione**.
+     Per rianalyizzare un segmento, selezionare un segmento all'interno della casella Sequenza **temporale di** riepilogo e quindi fare clic su Filtra **per selezione**.
 
      ![Sequenza temporale della visualizzazione Riepilogo prestazioni](../profiling/media/performancesummary.png "PerformanceSummary")
 

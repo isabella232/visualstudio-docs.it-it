@@ -1,6 +1,6 @@
 ---
 title: Creare modelli per l'app
-description: Informazioni sul modo in cui i diagrammi di modellazione consentono di comprendere, chiarire e comunicare idee sul codice e sui requisiti utente che il sistema software deve supportare.
+description: Informazioni su come i diagrammi di modellazione consentono di comprendere, chiarire e comunicare idee sul codice e sui requisiti utente che il sistema software deve supportare.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,23 +18,23 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9adf4445ca4b52e23fce91bb1f574e55fbab4f1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4642c73279340c710ed82d57563bdc3b84aff4f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945383"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389514"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 
 I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le idee sul codice e i requisiti dell'utente che devono supportare il sistema software.
 
-Per individuare le versioni di Visual Studio che supportano ogni tipo di diagramma, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per vedere quali versioni di Visual Studio supportano ogni tipo di diagramma, vedere Supporto delle versioni per gli strumenti di [architettura e modellazione.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 Per visualizzare l'architettura di un sistema o codice esistente, creare i diagrammi seguenti:
 
@@ -48,7 +48,7 @@ Per visualizzare l'architettura di un sistema o codice esistente, creare i diagr
 
 |**Argomento**|**Attività**|
 |-|-|
-|[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe del codice e diagrammi di dipendenza per comprendere meglio il codice non noto.|
+|[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe codice e diagrammi delle dipendenze per comprendere meglio il codice non familiare.|
 |[Modellare i requisiti utente](../modeling/model-user-requirements.md)|Usare modelli per chiarire e comunicare le esigenze degli utenti.|
 |[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|Usare i modelli per descrivere la struttura complessiva e il comportamento del sistema e per verificare che soddisfi esigenze degli utenti.|
 |[Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)|Verificare che il software continui a essere coerente con le esigenze degli utenti e con l'architettura complessiva del sistema.|
@@ -57,5 +57,5 @@ Per visualizzare l'architettura di un sistema o codice esistente, creare i diagr
 
 ## <a name="resources"></a>Risorse
 
-- [Forum sugli strumenti di modellazione di Visual Studio &](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
-- [Forum sull'estendibilità di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)
+- [Visual Studio forum degli strumenti & di modellazione della visualizzazione](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
+- [Visual Studio forum sull'estendibilità](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

@@ -1,57 +1,57 @@
 ---
-title: 'Procedura dettagliata: debug di modelli di testo che accedono a un modello'
-description: Vengono fornite informazioni su come eseguire il debug di un modello di testo che accede a un modello.
+title: 'Procedura dettagliata: Eseguire il debug di modelli di testo che accedono a un modello'
+description: Fornisce informazioni su come eseguire il debug di un modello di testo che accede a un modello.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d39b1ac72210145cc1efa1c513b7f3b76d8c2e36
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924114"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388230"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
-Quando si modificano o si aggiungono modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile che vengano generati errori quando il motore trasforma il modello nel codice sorgente o quando compila il codice generato. Nella procedura dettagliata riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.
+Quando si modificano o si aggiungono modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile che si verificano errori quando il motore trasforma il modello in codice sorgente o quando compila il codice generato. La procedura dettagliata seguente illustra alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.
 
 > [!NOTE]
-> Per ulteriori informazioni sui modelli di testo in generale, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). Per ulteriori informazioni sul debug di modelli di testo, vedere [procedura dettagliata: debug di un modello di testo](debugging-a-t4-text-template.md).
+> Per altre informazioni sui modelli di testo in generale, vedere [Generazione di codice e modelli di testo T4.](../modeling/code-generation-and-t4-text-templates.md) Per altre informazioni sul debug di modelli di testo, vedere [Procedura dettagliata: debug di un modello di testo](debugging-a-t4-text-template.md).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione di Domain-Specific Language
+## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una Domain-Specific language
  In questa procedura viene creata una soluzione di linguaggio specifico di dominio con le caratteristiche seguenti:
 
 - Nome: DebuggingTestLanguage
 
-- Modello di soluzione: linguaggio minimo
+- Modello di soluzione: Linguaggio minimo
 
-- Estensione di file:. ddd
+- Estensione di file: .ddd
 
-- Nome della società: fabrikam
+- Nome società: Fabrikam
 
-  Per altre informazioni sulla creazione di una soluzione di linguaggio specifico di dominio, vedere [procedura: creare una soluzione di linguaggio Domain-Specific](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Per altre informazioni sulla creazione di una soluzione di linguaggio specifico di dominio, vedere Procedura: Creare una soluzione Domain-Specific [linguaggio.](../modeling/how-to-create-a-domain-specific-language-solution.md)
 
 ## <a name="creating-a-text-template"></a>Creazione di un modello di testo
  Aggiungere un modello di testo alla soluzione.
 
 #### <a name="to-create-a-text-template"></a>Per creare un modello di testo
 
-1. Compilare la soluzione e iniziare a eseguirla nel debugger. Scegliere **Ricompila soluzione** dal menu **Compila** , quindi scegliere **Avvia debug** dal menu **debug** . Una nuova istanza di Visual Studio apre il progetto di debug.
+1. Compilare la soluzione e avviarla nel debugger. Scegliere **Ricompila** soluzione dal menu Compila **,** quindi scegliere Avvia debug **dal** **menu** Debug . Una nuova istanza di Visual Studio apre il progetto Debug.
 
-2. Aggiungere un file di testo denominato `DebugTest.tt` al progetto di debug.
+2. Aggiungere un file di testo `DebugTest.tt` denominato al progetto Debug.
 
-3. Verificare che la proprietà **strumento personalizzato** di DebugTest.tt sia impostata su `TextTemplatingFileGenerator` .
+3. Assicurarsi che la **proprietà Strumento personalizzato** di DebugTest.tt sia impostata su `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Direttive di debug che accedono a un modello da un modello di testo
- Prima di poter accedere a un modello dalle istruzioni e dalle espressioni in un modello di testo, è prima necessario chiamare un processore di direttiva generato. La chiamata del processore di direttiva generato rende le classi del modello disponibili per il codice del modello di testo come proprietà. Per altre informazioni, vedere [accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md).
+ Prima di poter accedere a un modello dalle istruzioni e dalle espressioni in un modello di testo, è necessario chiamare un processore di direttiva generato. La chiamata al processore di direttiva generato rende le classi nel modello disponibili per il codice del modello di testo come proprietà. Per altre informazioni, vedere [Accesso ai modelli da modelli di testo.](../modeling/accessing-models-from-text-templates.md)
 
- Nelle procedure seguenti si eseguirà il debug di un nome di direttiva errato e di un nome di proprietà non corretto.
+ Nelle procedure seguenti si eseguirà il debug di un nome di direttiva non corretto e di un nome di proprietà non corretto.
 
-#### <a name="to-debug-an-incorrect-directive-name"></a>Per eseguire il debug di un nome di direttiva errato
+#### <a name="to-debug-an-incorrect-directive-name"></a>Per eseguire il debug di un nome di direttiva non corretto
 
 1. Sostituire il codice in DebugTest.tt con il codice seguente:
 
@@ -89,15 +89,15 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
     #>
     ```
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse DebugTest.tt e quindi scegliere **Esegui strumento personalizzato**.
 
-     Nella finestra **Elenco errori** viene visualizzato questo errore:
+     Nella **finestra Elenco errori** viene visualizzato questo errore:
 
-     **Il processore denominato ' DebuggingTestLanguageDirectiveProcessor ' non supporta la direttiva denominata ' modelRoot '. La trasformazione non verrà eseguita.**
+     **Il processore denominato 'DebuggingTestLanguageDirectiveProcessor' non supporta la direttiva denominata 'modelRoot'. La trasformazione non verrà eseguita.**
 
-     In questo caso, la chiamata alla direttiva contiene un nome di direttiva errato. Il nome della direttiva è stato specificato `modelRoot` , ma il nome della direttiva è corretto `DebuggingTestLanguage` .
+     In questo caso, la chiamata di direttiva contiene un nome di direttiva non corretto. È stato specificato `modelRoot` come nome della direttiva , ma il nome di direttiva corretto è `DebuggingTestLanguage` .
 
-3. Fare doppio clic sull'errore nella finestra **Elenco errori** per passare al codice.
+3. Fare doppio clic sull'errore nella **finestra Elenco** errori per passare al codice.
 
 4. Per correggere il codice, modificare il nome della direttiva in `DebuggingTestLanguage` .
 
@@ -111,9 +111,9 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
+5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse DebugTest.tt e quindi scegliere **Esegui strumento personalizzato**.
 
-     A questo punto il sistema trasforma il modello di testo e genera il file di output corrispondente. Non vengono visualizzati errori nella finestra **Elenco errori** .
+     Ora il sistema trasforma il modello di testo e genera il file di output corrispondente. Nella finestra Elenco errori non verranno visualizzati **errori.**
 
 #### <a name="to-debug-an-incorrect-property-name"></a>Per eseguire il debug di un nome di proprietà non corretto
 
@@ -153,19 +153,19 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
     #>
     ```
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse DebugTest.tt e quindi scegliere **Esegui strumento personalizzato**.
 
-     Viene visualizzata la finestra **Elenco errori** e viene visualizzato uno degli errori seguenti:
+     Viene **visualizzata la** finestra Elenco errori e viene visualizzato uno di questi errori:
 
      (C#)
 
-     **Compilazione della trasformazione: Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation ' non contiene una definizione per ' ExampleModel '**
+     **Trasformazione Compilazione: Microsoft.VisualStudio.TextTemplating \<GUID> . GeneratedTextTransformation' non contiene una definizione per 'ExampleModel'**
 
      (Visual Basic)
 
-     **Compilazione della trasformazione:' ExampleModel ' non è un membro di ' Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation ".**
+     **Trasformazione compilazione: 'ExampleModel' non è un membro di 'Microsoft.VisualStudio.TextTemplating. \<GUID> GeneratedTextTransformation'.**
 
-     In questo caso, il codice del modello di testo contiene un nome di proprietà non corretto. È stato specificato `ExampleModel` come nome della proprietà, ma il nome di proprietà corretto è `LibraryModel` . È possibile trovare il nome di proprietà corretto nel parametro fornisce, come illustrato nel codice seguente:
+     In questo caso, il codice del modello di testo contiene un nome di proprietà non corretto. È stato specificato `ExampleModel` come nome della proprietà, ma il nome corretto della proprietà è `LibraryModel` . È possibile trovare il nome corretto della proprietà nel parametro provides, come illustrato nel codice seguente:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -173,7 +173,7 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
 3. Fare doppio clic sull'errore nella finestra Elenco errori per passare al codice.
 
-4. Per correggere il codice, impostare il nome della proprietà su `LibraryModel` nel codice del modello di testo.
+4. Per correggere il codice, modificare il nome della proprietà `LibraryModel` in nel codice del modello di testo.
 
      Le modifiche sono evidenziate.
 
@@ -208,6 +208,6 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
     #>
     ```
 
-5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su DebugTest.TT, quindi scegliere **Esegui strumento personalizzato**.
+5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse DebugTest.tt e quindi scegliere **Esegui strumento personalizzato**.
 
-     A questo punto il sistema trasforma il modello di testo e genera il file di output corrispondente. Non vengono visualizzati errori nella finestra **Elenco errori** .
+     Ora il sistema trasforma il modello di testo e genera il file di output corrispondente. Nella finestra Elenco errori non verranno visualizzati **errori.**

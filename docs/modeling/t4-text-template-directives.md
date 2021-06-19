@@ -1,6 +1,6 @@
 ---
 title: Direttive di modello di testo T4
-description: Informazioni sulle direttive del modello di test T4 e sul modo in cui forniscono istruzioni al motore di trasformazione del modello di testo.
+description: Informazioni sulle direttive del modello di test T4 e su come forniscono istruzioni al motore di trasformazione del modello di testo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - text templates, output directive
 - text templates, directives
 - text templates, template directive
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba13cbd31d41e656533aa5b13cf2a09503e58e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d9b7ca189ced11eea57e175a06b81161090070b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924602"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388737"
 ---
 # <a name="t4-text-template-directives"></a>Direttive di modello di testo T4
 
@@ -79,4 +79,4 @@ Le direttive sono in genere i primi elementi di un file modello o di un file inc
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
-È inoltre possibile creare direttive personalizzate. Per altre informazioni, vedere [creazione di processori di direttive del modello di testo T4 personalizzato](../modeling/creating-custom-t4-text-template-directive-processors.md). Se si utilizza l'SDK di visualizzazione e modellazione per creare un linguaggio DSL, verrà generato un processore di direttiva come parte di tale linguaggio DSL.
+È inoltre possibile creare direttive personalizzate. Per altre informazioni, vedere [Creazione di processori di direttiva del modello di testo T4 personalizzati.](../modeling/creating-custom-t4-text-template-directive-processors.md) Se si utilizza l'SDK di visualizzazione e modellazione per creare un linguaggio DSL, verrà generato un processore di direttiva come parte di tale linguaggio DSL.

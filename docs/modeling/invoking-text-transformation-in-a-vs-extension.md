@@ -1,26 +1,26 @@
 ---
 title: Richiamo della trasformazione del testo in un'estensione VS
-description: Informazioni su come usare il servizio del modello di testo per trasformare i modelli di testo. Viene anche illustrato come ottenere il servizio STextTemplating ed eseguirne il cast in ITextTemplating.
+description: Informazioni su come usare il servizio di creazione di modelli di testo per trasformare i modelli di testo. Informazioni anche su come ottenere il servizio STextTemplating ed eseguire il cast a ITextTemplating.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a90ae2a1d5460cd62ff1ccae1542f21c4002433
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71f376cbe0ffd6c2716802977f1570aa5036fcdb
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860893"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386774"
 ---
-# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Richiama trasformazione testo in un'estensione di Visual Studio
+# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Richiamare la trasformazione del testo in un'estensione Visual Studio testo
 
-Se si scrive un'estensione di Visual Studio, ad esempio un comando di menu o un [linguaggio specifico di dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), è possibile usare il servizio del modello di testo per trasformare i modelli di testo. Ottenere il servizio [STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) ed eseguirne il cast in [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+Se si scrive un'estensione Visual Studio, ad esempio un comando di menu o un linguaggio specifico di [dominio,](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)è possibile usare il servizio di creazione di modelli di testo per trasformare i modelli di testo. Ottenere il [servizio STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) ed eseguire il cast a [ITextTemplating.](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))
 
-## <a name="get-the-text-templating-service"></a>Ottenere il servizio del modello di testo
+## <a name="get-the-text-templating-service"></a>Ottenere il servizio di modelli di testo
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -36,11 +36,11 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
 ```
 
-## <a name="pass-parameters-to-the-template"></a>Passare parametri al modello
+## <a name="pass-parameters-to-the-template"></a>Passare i parametri al modello
 
  È possibile passare i parametri nel modello. Nel modello è possibile ottenere i valori dei parametri tramite la direttiva `<#@parameter#>`.
 
- Per il tipo di un parametro, è necessario utilizzare un tipo serializzabile o di cui può essere effettuato il marshalling. In altri termini, è necessario dichiarare il tipo con <xref:System.SerializableAttribute> oppure deve essere derivata da <xref:System.MarshalByRefObject>. Questa restrizione è necessaria perché il modello di testo viene eseguito in un AppDomain separato. Tutti i tipi incorporati, ad esempio **System. String** e **System. Int32** , sono serializzabili.
+ Per il tipo di un parametro, è necessario utilizzare un tipo serializzabile o di cui può essere effettuato il marshalling. In altri termini, è necessario dichiarare il tipo con <xref:System.SerializableAttribute> oppure deve essere derivata da <xref:System.MarshalByRefObject>. Questa restrizione è necessaria perché il modello di testo viene eseguito in un AppDomain separato. Tutti i tipi predefiniti, ad **esempio System.String** e **System.Int32,** sono serializzabili.
 
  Per passare i valori dei parametri, il codice chiamante può inserire i valori nel dizionario `Session` o in <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
@@ -77,11 +77,11 @@ string result = t4.ProcessTemplate("",
 //     Test: Hello    07/06/2010 12:37:45    42
 ```
 
-## <a name="error-reporting-and-the-output-directive"></a>Segnalazione errori e direttiva output
+## <a name="error-reporting-and-the-output-directive"></a>Segnalazione errori e direttiva di output
 
-Gli eventuali errori che si verificano durante l'elaborazione verranno visualizzati nella finestra di errore di Visual Studio. Inoltre, è possibile ricevere una notifica degli errori specificando un callback che implementi [ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
+Eventuali errori che si verificano durante l'elaborazione verranno visualizzati nella finestra Visual Studio errore. Inoltre, è possibile ricevere una notifica degli errori specificando un callback che implementa [ITextTemplatingCallback.](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110))
 
-Se si desidera scrivere la stringa di risultato in un file, è utile conoscere quale estensione di file e codifica sono state specificate nella direttiva `<#@output#>` del modello. Anche queste informazioni verranno passate al callback. Per altre informazioni, vedere [direttiva output T4](../modeling/t4-output-directive.md).
+Se si desidera scrivere la stringa di risultato in un file, è utile conoscere quale estensione di file e codifica sono state specificate nella direttiva `<#@output#>` del modello. Anche queste informazioni verranno passate al callback. Per altre informazioni, vedere [Direttiva output T4.](../modeling/t4-output-directive.md)
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -132,7 +132,7 @@ Il codice può essere testato con un file modello simile a quello seguente:
 Sample text.
 ```
 
-L'avviso del compilatore verrà visualizzato nella finestra di errore di Visual Studio e verrà generata anche una chiamata a `ErrorCallback` .
+L'avviso del compilatore verrà visualizzato Visual Studio finestra di errore e genererà anche una chiamata a `ErrorCallback` .
 
 ## <a name="reference-parameters"></a>Parametri per riferimento
 
@@ -140,8 +140,8 @@ L'avviso del compilatore verrà visualizzato nella finestra di errore di Visual 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-Per generare testo da un modello di testo pre-elaborato: chiamare il `TransformText()` metodo della classe generata. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Per generare testo da un modello di testo pre-elaborato: chiamare `TransformText()` il metodo della classe generata. Per altre informazioni, vedere [Generazione di testo di run-time con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
-Per generare testo al di fuori di un'estensione di Visual Studio: definire un host personalizzato. Per ulteriori informazioni, vedere [elaborazione di modelli di testo tramite un host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Per generare testo all'esterno di Visual Studio estensione: definire un host personalizzato. Per altre informazioni, vedere [Elaborazione di modelli di testo tramite un host personalizzato.](../modeling/processing-text-templates-by-using-a-custom-host.md)
 
-Per generare codice sorgente che può essere compilato ed eseguito in un secondo momento, chiamare il metodo [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) di [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+Per generare codice sorgente che può essere compilato ed eseguito in un secondo momento: chiamare il metodo [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) [di ITextTemplating.](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))

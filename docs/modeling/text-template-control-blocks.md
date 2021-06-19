@@ -1,22 +1,22 @@
 ---
 title: Blocchi di controllo del modello di testo
-description: Informazioni sui blocchi di controllo del modello di testo e su come i blocchi di controllo consentono di scrivere il codice nel modello di testo per variare l'output.
+description: Informazioni sui blocchi di controllo del modello di testo e su come i blocchi di controllo consentono di scrivere codice nel modello di testo per variare l'output.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6d09cae433cab0a5411350970325c6ec659184
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90a4efea7d37b83d3d5ff7a085abcf3439d99263
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924578"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388724"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
 I blocchi di controllo consentono di scrivere codice nel modello di testo per variare l'output. Esistono tre tipi di blocchi di controllo, distinguibili dalla parentesi di apertura:
@@ -64,7 +64,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> Usa sempre {...} per delimitare le istruzioni nidificate che contengono testo normale incorporato. L'esempio seguente non funziona correttamente:
+> Usare sempre {...} per delimitare le istruzioni annidate che contengono testo normale incorporato. L'esempio seguente non funziona correttamente:
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -143,11 +143,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Come usare i blocchi di controllo
- Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. Per ulteriori informazioni sull'inclusione di altri modelli di testo con la `include` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
+ Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. Per altre informazioni sull'inclusione di altri modelli di testo con `include` la direttiva , vedere Direttive del modello di testo [T4.](../modeling/t4-text-template-directives.md)
 
  Quando si usano i blocchi di controllo, è necessario tenere presenti le considerazioni seguenti:
 
-- **Linguaggio.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. Per ulteriori informazioni sulla `template` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
+- **Lingua.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. Per altre informazioni sulla direttiva `template` , vedere Direttive del modello di testo [T4.](../modeling/t4-text-template-directives.md)
 
      Il linguaggio usato nei blocchi di controllo non ha nulla a che fare con il linguaggio o il formato del testo generato in un modello di testo. È possibile generare codice C# usando codice Visual Basic o viceversa.
 

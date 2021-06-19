@@ -1,27 +1,27 @@
 ---
 title: Estendere i diagrammi delle dipendenze
-description: Informazioni su come scrivere codice per creare e aggiornare i diagrammi delle dipendenze e su come convalidare la struttura del codice del programma in base ai diagrammi di dipendenza in Visual Studio.
+description: Informazioni su come scrivere codice per creare e aggiornare diagrammi delle dipendenze e come convalidare la struttura del codice del programma rispetto ai diagrammi di dipendenza in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e0e07b6a8ee4245e19628e03bfdf484f94d34c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2ed8700cfb18aacf41464bfdfacaedac557bb00
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935144"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388906"
 ---
 # <a name="extend-dependency-diagrams"></a>Estendere i diagrammi delle dipendenze
 
-È possibile scrivere codice per creare e aggiornare i diagrammi delle dipendenze e per convalidare la struttura del codice del programma in base ai diagrammi di dipendenza in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
+È possibile scrivere codice per creare e aggiornare diagrammi delle dipendenze e per convalidare la struttura del codice del programma rispetto ai diagrammi di dipendenza in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,13 +29,13 @@ ms.locfileid: "99935144"
 
 - Visual Studio
 
-- [SDK di Visual Studio](../extensibility/visual-studio-sdk.md)
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-- SDK di modellazione per Visual Studio
+- Sdk di modellazione per Visual Studio
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-È necessario che nel computer in cui si desidera eseguire le estensioni del livello sia installata un'edizione appropriata di Visual Studio. Per individuare le edizioni di Visual Studio che supportano i diagrammi di dipendenza, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+È necessario avere un'edizione appropriata di Visual Studio installato nel computer in cui si vogliono eseguire le estensioni del livello. Per informazioni sulle edizioni di Visual Studio diagrammi delle dipendenze, vedere Supporto dell'edizione per gli strumenti di [architettura e modellazione](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,7 +1,7 @@
 ---
 title: Distribuire app UWP | Microsoft Docs
-description: Distribuisci app piattaforma UWP (Universal Windows Platform) (UWP) da Visual Studio. Specificare un dispositivo di destinazione locale o remoto per la distribuzione. Informazioni sulle opzioni di distribuzione.
-ms.custom: SEO-VS-2020, seodec18
+description: Distribuire piattaforma UWP (Universal Windows Platform) (UWP) da Visual Studio. Specificare un dispositivo di destinazione locale o remoto per la distribuzione. Informazioni su opzioni di distribuzione.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d8819f92e19960aefc7e485acb2fb7fa827b6ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a1c1802d92beb436bbd2ac87bd1e7a39f6086f1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872170"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387866"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
 
-La funzionalità di distribuzione di Visual Studio crea e registra le app UWP create con Visual Studio su un dispositivo di destinazione. Il modo in cui viene registrata l'app è determinato dal tipo di dispositivo, ovvero se è locale o remoto:
+La Visual Studio di distribuzione compila e registra le app UWP create con Visual Studio in un dispositivo di destinazione. Il modo in cui viene registrata l'app è determinato dal tipo di dispositivo, ovvero se è locale o remoto:
 
 - Quando la destinazione è il computer Visual Studio locale, Visual Studio registra l'app dalla cartella della build dell'app stessa.
 
@@ -52,10 +52,10 @@ La distribuzione avviene automaticamente quando si esegue il debug dell'app da V
 
 **Prerequisiti**
 
-In un dispositivo Windows 10 remoto è necessario abilitare la [modalità sviluppatore](/windows/uwp/get-started/enable-your-device-for-development). Nei dispositivi Windows 10 che eseguono l'aggiornamento del creatore o versioni successive, gli strumenti remoti vengono installati automaticamente quando si distribuisce l'app. Per altre informazioni, vedere [eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
+In un Windows 10 remoto è necessario abilitare la [modalità sviluppatore](/windows/uwp/get-started/enable-your-device-for-development). Nei Windows 10 che eseguono Creator's Update o versioni successive, gli strumenti remoti vengono installati automaticamente quando si distribuisce l'app. Per altre informazioni, vedere Eseguire [il debug di un pacchetto dell'app installato.](../debugger/debug-installed-app-package.md)
 
 > [!NOTE]
-> Nelle versioni di aggiornamento di Windows 10 del pre-creatore è necessario che il Remote Tools per Visual Studio sia installato nel dispositivo remoto e che il debugger remoto sia in esecuzione.
+> Nelle versioni precedenti all'aggiornamento di Windows 10, il Remote Tools per Visual Studio deve essere installato nel dispositivo remoto e il debugger remoto deve essere in esecuzione.
 
 La distribuzione usa il canale di rete del debugger remoto per inviare i file dell'app al dispositivo remoto.
 
@@ -67,19 +67,19 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 
 3. Seleziona il nodo **Debug** nella finestra della pagina delle proprietà.
 
-4. Per **dispositivo di destinazione** selezionare **computer remoto**.
+4. Per **Dispositivo di destinazione** selezionare Computer **remoto.**
 
-5. In **computer remoto** fare clic su **trova**.
+5. In **Computer remoto fare** clic su **Trova.**
 
-6. È possibile digitare il nome o l'indirizzo IP del dispositivo remoto oppure è possibile scegliere il dispositivo nella finestra di dialogo **connessione remota** .
+6. È possibile digitare il nome o l'indirizzo IP del dispositivo remoto oppure scegliere il dispositivo dalla **finestra di dialogo** Connessione remota.
 
     ![Finestra di dialogo per la selezione della connessione del debugger remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
-    La finestra di dialogo **connessione remota** Visualizza i dispositivi della subnet di rete locale e qualsiasi dispositivo connesso direttamente al computer Visual Studio tramite un cavo Ethernet.
+    Nella **finestra di dialogo** Connessione remota vengono visualizzati i dispositivi nella subnet della rete locale e tutti i dispositivi connessi direttamente al computer Visual Studio tramite un cavo Ethernet.
 
-   **Impostazione del dispositivo remoto nella pagina di un progetto C++**
+   **Specifica del dispositivo remoto in una pagina di progetto C++**
 
-   ![C&#43;&#43; le proprietà del progetto per il debug remoto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+   ![Proprietà del&#43;&#43; C per il debug remoto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
 7. Scegli **Debugger remoto** dall'elenco **Debugger da avviare** .
 
@@ -99,21 +99,21 @@ Di seguito sono indicate le opzioni di distribuzione che puoi impostare nella pa
 
 **Consenti loopback della rete locale**
 
-Per motivi di sicurezza, un UWP o un' [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app installata in modalità standard non è consentita per effettuare chiamate di rete al dispositivo in cui è installato. Per impostazione predefinita, per l'app distribuita la distribuzione di Visual Studio crea un'esenzione da questa regola. Questa esenzione ti consente di testare le procedure di comunicazione in un unico computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], dovrai testarla senza l'esenzione.
+Per motivi di sicurezza, una UWP o un'app installata in modo standard non è autorizzata a effettuare chiamate di rete al dispositivo in [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] cui è installata. Per impostazione predefinita, per l'app distribuita la distribuzione di Visual Studio crea un'esenzione da questa regola. Questa esenzione ti consente di testare le procedure di comunicazione in un unico computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], dovrai testarla senza l'esenzione.
 
 Per rimuovere l'esenzione relativa al loopback della rete dall'app:
 
-- Nella pagina delle proprietà debug in C# e Visual Basic deselezionare la casella di controllo **Consenti loopback di rete** .
+- Nella pagina delle proprietà Debug Visual Basic C# e rete deselezionare la casella di controllo **Consenti loopback** di rete .
 
-- Nella pagina delle proprietà debug C++ impostare il valore **Consenti loopback rete** su **No**.
+- Nella pagina delle proprietà Debug di C++ impostare il **valore Consenti loopback di** rete su **No.**
 
-**Non avviare, ma eseguire il debug del codice all'avvio (C# e Visual Basic)/applicazione di avvio (C++)**
+**Non avviare, ma eseguire il debug del codice all'avvio (C# e Visual Basic) / Avviare l'applicazione (C++)**
 
 Per configurare la distribuzione in modo che venga avviata automaticamente una sessione di debug all'avvio dell'app:
 
-- Nella pagina delle proprietà debug in C# e Visual Basic, selezionare la casella di controllo **non avviare, ma eseguire il debug del codice all'avvio** .
+- Nella pagina delle proprietà Debug C# e Visual Basic debug selezionare la casella di controllo Non avviare, ma esegui il debug del codice **all'avvio.**
 
-- Nella pagina delle proprietà debug C++ impostare il valore di **Avvia applicazione** su **Sì**.
+- Nella pagina delle proprietà Debug di C++ impostare il **valore Avvia** applicazione su **Sì.**
 
 ## <a name="see-also"></a>Vedi anche
 

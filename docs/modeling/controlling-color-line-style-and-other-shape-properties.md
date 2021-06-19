@@ -1,34 +1,34 @@
 ---
 title: Controllare colore, stile di linea e altre proprietà della forma
-description: Fornisce informazioni sul controllo delle proprietà della forma, ad esempio colore e stile della linea.
+description: Fornisce informazioni sul controllo delle proprietà della forma, ad esempio il colore e lo stile della linea.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 68eda84ec014dec2931e2c35a04dec1ed878e6c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 836c77f3651b7686e9366fe75ea7922a248fd28f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861660"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389631"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controllo delle proprietà Color, Line Style e altre
 
-Alcune proprietà della forma, ad esempio il colore, possono essere "esposte". Ovvero le proprietà possono essere collegate a una proprietà di dominio della forma. Altri devono essere controllati direttamente.
+Alcune proprietà della forma, ad esempio il colore, possono essere "esposte". Ciò significa che le proprietà possono essere collegate a una proprietà di dominio della forma. Altri devono essere controllati direttamente.
 
 ## <a name="exposing-a-property"></a>Esposizione di una proprietà
  Alcune proprietà della forma, ad esempio il colore, possono essere collegate al valore di una proprietà di dominio.
 
- Nella definizione DSL selezionare una classe forma, connettore o diagramma. Nel menu di scelta rapida scegliere **Aggiungi esposto**, quindi scegliere la proprietà desiderata, ad esempio colore riempimento.
+ Nella definizione DSL selezionare una forma, un connettore o una classe diagramma. Nel menu di scelta rapida scegliere **Aggiungi** esposto e quindi scegliere la proprietà desiderata, ad esempio Colore riempimento.
 
- La forma dispone ora di una proprietà di dominio che è possibile impostare nel codice programma o come utente.
+ La forma ha ora una proprietà di dominio che è possibile impostare nel codice programma o come utente.
 
 ## <a name="dynamically-updating-an-exposed-property"></a>Aggiornamento dinamico di una proprietà esposta
- In genere si vuole rendere la proprietà esposta dipendente da un'altra proprietà. Ad esempio, è possibile che una forma diventi rossa ogni volta che una particolare proprietà di dominio è minore di zero. Per rendere questa dipendenza, creare una [regola](../modeling/rules-propagate-changes-within-the-model.md). Ad esempio:
+ In genere si vuole rendere la proprietà esposta dipendente da un'altra proprietà. Ad esempio, è possibile che una forma venga impostata in rosso ogni volta che una determinata proprietà di dominio è minore di zero. Per creare questa dipendenza, creare una [regola](../modeling/rules-propagate-changes-within-the-model.md). Ad esempio:
 
 ```csharp
 using System;

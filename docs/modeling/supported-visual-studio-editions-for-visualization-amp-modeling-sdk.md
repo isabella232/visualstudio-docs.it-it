@@ -1,27 +1,27 @@
 ---
-title: Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
-description: Informazioni sulle edizioni di Visual Studio supportate con gli strumenti DSL negli ambienti di creazione e distribuzione.
+title: Edizioni Visual Studio supportate per Visualization and Modeling SDK
+description: Informazioni sulle edizioni Visual Studio supportate con gli strumenti DSL negli ambienti di creazione e distribuzione.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c23df472361fdee0bc657eb277d3a6bef4be73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8435f37ebe68e954af135be0f513247191ea8a9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899696"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386397"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
 
-Di seguito sono elencati gli elenchi delle edizioni di Visual Studio supportate con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e distribuzione. Per ulteriori informazioni su queste edizioni, vedere il [centro per sviluppatori](https://visualstudio.microsoft.com/)Microsoft Visual Studio.
+Di seguito sono elencati gli Visual Studio edizioni supportate con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e distribuzione. Per altre informazioni su queste edizioni, vedere il Microsoft Visual Studio [Developer Center.](https://visualstudio.microsoft.com/)
 
 ## <a name="authoring-edition"></a>Edizione per lo sviluppo
 
@@ -37,7 +37,7 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 
 ## <a name="deployment-editions"></a>Edizioni per la distribuzione
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] supporta le seguenti configurazioni per la distribuzione dei linguaggi specifici del dominio compilati:
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] supporta le configurazioni seguenti per la distribuzione dei linguaggi specifici di dominio compilati:
 
 - Visual Studio Enterprise
 
@@ -48,7 +48,7 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 - Pacchetto ridistribuibile Visual Studio Shell (modalità isolata)
 
 > [!NOTE]
-> Per consentire l'esecuzione di un linguaggio DSL in un prodotto shell, è necessario impostare il campo **supported vs Edition** nel manifesto dell'estensione. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
+> Per fare in modo che un DSL possa essere eseguito in un prodotto shell, è necessario impostare il **campo Supported VS Edition** (Edizione di Visual Studio supportata) nel manifesto dell'estensione. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,23 +1,23 @@
 ---
 title: 'Procedura dettagliata: generazione di codice tramite modelli di testo'
-description: Scopri che la generazione del codice consente di creare codice di programma fortemente tipizzato e può essere modificato facilmente quando il modello di origine viene modificato.
+description: Si apprenderà che la generazione del codice consente di produrre codice di programma fortemente tipizzato, ma che può essere facilmente modificato quando il modello di origine cambia.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6b824d53c37ef922b8c9580c87a478aef93586
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22940fb86ab0cfd7262a3ca7845521847add2dff
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924068"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388126"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
 
@@ -30,7 +30,7 @@ Lo spazio dei nomi System. XML fornisce strumenti completi per il caricamento di
 In questo progetto di esempio un modello legge un file XML di esempio e genera classi che corrispondono a ogni tipo di nodo. Nel codice scritto a mano è possibile usare queste classi per passare al file XML. È anche possibile eseguire l'applicazione su qualsiasi altro file che usa gli stessi tipi di nodo. Lo scopo del file XML di esempio è fornire esempi di tutti i tipi di nodo con cui l'applicazione dovrà avere a che fare.
 
 > [!NOTE]
-> L'applicazione [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), inclusa in Visual Studio, può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
+> [L'xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), inclusa in Visual Studio, può generare classi fortemente tipche da file XML. Il modello illustrato qui viene fornito come esempio.
 
 Ecco il file di esempio:
 
@@ -75,7 +75,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-Nella versione fortemente tipizzata una modifica apportata al XML Schema comporta modifiche alle classi. Il compilatore evidenzia le parti del codice dell'applicazione che devono essere modificate. Tale supporto non è disponibile nella versione non tipizzata che usa il codice XML generico.
+Nella versione fortemente tipizzato, una modifica di XML Schema comporta modifiche alle classi. Il compilatore evidenzia le parti del codice dell'applicazione che devono essere modificate. Tale supporto non è disponibile nella versione non tipizzata che usa il codice XML generico.
 
 In questo progetto viene usato un singolo file di modello per generare le classi che rendono possibile la versione tipizzata.
 
@@ -85,7 +85,7 @@ In questo progetto viene usato un singolo file di modello per generare le classi
 
 È possibile applicare questa tecnica a qualsiasi progetto di codice. Questa procedura dettagliata usa un progetto C# e ai fini di test si userà un'applicazione console.
 
-1. Scegliere **nuovo** dal menu **file** e quindi fare clic su **progetto**.
+1. Scegliere **Nuovo** dal menu File **e** quindi fare clic **su Progetto**.
 
 2. Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.
 
@@ -95,7 +95,7 @@ Lo scopo di questo file è fornire esempi dei tipi di nodo XML che l'applicazion
 
 Il file deve far parte del progetto in modo che il modello possa leggerlo, ma non sarà integrato nell'applicazione compilata.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** , quindi fare clic su **nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** e quindi Fare clic su **Nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .
 
@@ -131,7 +131,7 @@ Un test più completo potrebbe controllare l'output di questa funzione di test c
 
 ### <a name="add-a-text-template-file"></a>Aggiungere un file di modello di testo
 
-Aggiungere un file di modello di testo e impostare l'estensione di output su *. cs*.
+Aggiungere un file modello di testo e impostare l'estensione di output su *.cs*.
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
 
@@ -142,7 +142,7 @@ Aggiungere un file di modello di testo e impostare l'estensione di output su *. 
 
 3. Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.
 
-     Questa modifica consentirà al codice del modello di ottenere l'accesso ai servizi di Visual Studio.
+     Questa modifica consentirà al codice del modello di ottenere l'accesso ai Visual Studio dati.
 
 4. Nella direttiva di output cambiare l'attributo di estensione in ".cs", in modo che il modello generi un file C#. In un progetto Visual Basic è necessario modificarlo in ".vb".
 
@@ -260,7 +260,7 @@ Se si preferisce che i nomi delle classi inizino con una lettera maiuscola, è p
 #>
 ```
 
-In questa fase il file *. cs* generato contiene le seguenti dichiarazioni:
+In questa fase, il file *con estensione cs* generato contiene le dichiarazioni seguenti:
 
 ```csharp
 public partial class Catalog {}
@@ -270,9 +270,9 @@ public partial class Song {}
 
 È possibile aggiungere altri dettagli, quali le proprietà per i nodi figlio, attributi e testo interno, mediante lo stesso approccio.
 
-### <a name="access-the-visual-studio-api"></a>Accedere all'API di Visual Studio
+### <a name="access-the-visual-studio-api"></a>Accedere all'API Visual Studio
 
-L'impostazione dell' `hostspecific` attributo della `<#@template#>` direttiva consente al modello di ottenere l'accesso all'API di Visual Studio. Il modello può usarla per ottenere il percorso del file di progetto, per evitare di usare un percorso di file assoluto nel codice del modello.
+`hostspecific`L'impostazione dell'attributo `<#@template#>` della direttiva consente al modello di ottenere l'accesso all Visual Studio API. Il modello può usarla per ottenere il percorso del file di progetto, per evitare di usare un percorso di file assoluto nel codice del modello.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -408,7 +408,7 @@ L'applicazione può ora essere scritta in stile fortemente tipizzato, usando le 
 
 Quando lo schema XML cambia, è possibile generare facilmente nuove classi. Il compilatore indicherà allo sviluppatore dove il codice dell'applicazione deve essere aggiornato.
 
-Per rigenerare le classi quando viene modificato il file XML di esempio, fare clic su **trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** .
+Per rigenerare le classi quando viene modificato il file XML di esempio, fare clic **su** Trasforma tutti i modelli nella barra Esplora soluzioni barra **degli** strumenti.
 
 ## <a name="conclusion"></a>Conclusione
 
