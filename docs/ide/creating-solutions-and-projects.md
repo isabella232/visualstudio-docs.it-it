@@ -1,5 +1,5 @@
 ---
-title: Creare &amp; soluzioni Visual Studio per i &amp; progetti
+title: Creare & usare Visual Studio progetti & soluzioni
 description: Informazioni sulla differenza tra soluzioni e progetti e su come usarle in Visual Studio.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 06/14/2021
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f253492e5c1b3bf0c27448d59d754260e9e70912
-ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
+ms.openlocfilehash: 7971226767fe114e3618e9dfc6a161a50d5374ee
+ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112066943"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112500903"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Creare, usare ed eliminare progetti Visual Studio soluzioni
 
@@ -64,7 +64,7 @@ Se è presente una raccolta di file di origine di codice è possibile aggiungerl
 Se è presente un file che può essere usato per più progetti, ad esempio un file Leggimi per la soluzione o altri file che appartengono al livello della soluzione più che a un progetto specifico, è possibile aggiungerli alla soluzione stessa. Per aggiungere un elemento a una soluzione, nel menu di scelta rapida (clic con il pulsante destro del mouse) del **nodo** della soluzione in Esplora soluzioni selezionare Aggiungi nuovo elemento o Aggiungi  >     >  **elemento esistente.**
 
 > [!TIP]
-> Un file di soluzione è una struttura per organizzare i progetti in Visual Studio. Contiene lo stato di queste informazioni in due file: un file con estensione *sln* (basato su testo, condiviso) e un file *suo* (binario, nascosto, opzioni di soluzione specifiche dell'utente). Di conseguenza, una soluzione non deve essere copiata e rinominata. al contrario, è meglio creare una nuova soluzione e quindi aggiungerne elementi esistenti.
+> Un file di soluzione è una struttura per organizzare i progetti in Visual Studio. Contiene lo stato di queste informazioni in due file: un file con estensione *sln* (basato su testo, condiviso) e un file *suo* (binario, nascosto, opzioni di soluzione specifiche dell'utente). Di conseguenza, una soluzione non deve essere copiata e rinominata. È invece meglio creare una nuova soluzione e quindi aggiungerne elementi esistenti.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Creare un progetto .NET che usa una specifica versione di .NET Framework
 
