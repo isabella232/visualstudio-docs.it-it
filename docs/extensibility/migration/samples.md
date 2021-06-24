@@ -9,12 +9,12 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df7c20e93073ab2fc6a727e29f738a4313fd1d7
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 12bbc159884c16ea89849e5c97a4b87292f7089d
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308840"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602223"
 ---
 # <a name="imageoptimizer---update-a-visual-studio-extension-step-by-step"></a>ImageOptimizer - Aggiornare un'estensione Visual Studio passo per passo
 
@@ -23,7 +23,7 @@ ms.locfileid: "112308840"
 Questa guida illustra tutti i passaggi necessari per aggiungere il supporto di Visual Studio 2022 mantenendo al tempo stesso il supporto di Visual Studio 2019 usando l'estensione Di ottimizzazione immagini come case study.  
 Si tratta di una guida completa con collegamenti di commit Git a ogni passaggio, ma è possibile vedere la richiesta pull finalizzata qui: [https://github.com/madskristensen/ImageOptimizer/pull/46](https://github.com/madskristensen/ImageOptimizer/pull/46) .
 
-Alla fine [di questa guida sono](https://github.com/microsoft/VSExtensibility/wiki/Samples#other-samples) disponibili anche altri esempi.
+Alla fine [di questa guida sono](#other-samples) disponibili anche altri esempi.
 
 ## <a name="step-1---modernize-the-project"></a>Passaggio 1: Modernizzare il progetto
 

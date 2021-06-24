@@ -1,21 +1,21 @@
 ---
-title: Strumenti contenitore di Visual Studio con ASP.NET Core e React.js
+title: Visual Studio Container Tools con ASP.NET Core e React.js
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 author: ghogen
-description: Informazioni su come creare un'app di React SPA in contenitori con strumenti contenitore di Visual Studio e Docker
+description: Informazioni su come creare un'app React SPA in contenitori con Visual Studio Container Tools e Docker
 ms.author: ghogen
 ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 177a44f8af73226d4352c4a48c23c65eadc3e608
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684354"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602026"
 ---
-# <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Guida introduttiva: usare Docker con un'app a singola pagina React in Visual Studio
+# <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Avvio rapido: Usare Docker con un'app react a pagina singola in Visual Studio
 
 Con Visual Studio è possibile compilare, eseguire il debug ed eseguire app ASP.NET Core aggiunte a contenitori, incluse quelle con JavaScript sul lato cliente come le app a pagina singola React.js, e pubblicarle nel Registro Azure Container, in Docker Hub, in Servizio app di Azure o nel proprio registro contenitori. In questo articolo viene eseguita la pubblicazione nel Registro Azure Container (ACR).
 
@@ -26,20 +26,20 @@ Con Visual Studio è possibile compilare, eseguire il debug ed eseguire app ASP.
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
 * Per pubblicare in Registro Azure Container, una sottoscrizione di Azure. [Iscriversi per ottenere una versione di valutazione gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
-* Per i contenitori Windows, Windows 10 versione 1903 o successiva, per usare le immagini Docker a cui viene fatto riferimento in questo articolo.
+* Per i contenitori Di Windows, Windows 10 versione 1809 o successiva, per usare le immagini Docker a cui si fa riferimento in questo articolo.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
-* [Strumenti di sviluppo di .net core 3,1](https://dotnet.microsoft.com/download/dotnet-core/3.1) per lo sviluppo con .net core 3,1.
+* [Strumenti di sviluppo .NET Core 3.1 per](https://dotnet.microsoft.com/download/dotnet-core/3.1) lo sviluppo con .NET Core 3.1.
 * Per pubblicare in Registro Azure Container, una sottoscrizione di Azure. [Iscriversi per ottenere una versione di valutazione gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
-* Per i contenitori Windows, Windows 10 versione 1903 o successiva, per usare le immagini Docker a cui viene fatto riferimento in questo articolo.
+* Per i contenitori Di Windows, Windows 10 versione 1809 o successiva, per usare le immagini Docker a cui si fa riferimento in questo articolo.
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>Installazione e configurazione
 
-Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Docker desktop per Windows: cosa è necessario sapere prima di installare](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installare [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+Per l'installazione di Docker, esaminare prima le informazioni in [Docker Desktop per Windows: Cosa sapere prima di installare](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installare [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## <a name="create-a-project-and-add-docker-support"></a>Creare un progetto e aggiungere il supporto di Docker
 
@@ -49,37 +49,37 @@ Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Dock
 
    ![Screenshot del nuovo progetto React.js](media/container-tools-react/vs-2017/new-react-project.png)
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** > **Supporto Docker** per aggiungere un Dockerfile al progetto.
+1. Fare clic con il pulsante  destro del mouse sul nodo del progetto e scegliere > **Aggiungi supporto Docker** per aggiungere un Dockerfile al progetto.
 
    ![Aggiungere il supporto di Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
-1. Selezionare il tipo di contenitore e fare clic su **OK**.
+1. Selezionare il tipo di contenitore e fare clic su **OK.**
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Creare un nuovo progetto usando il **ASP.NET Core con React.js** modello.
+1. Creare un nuovo progetto usando ASP.NET **Core con React.js** modello.
 
-   ![Screenshot della creazione di un nuovo progetto di React.js](media/container-tools-react/vs-2019/create-reactjs-project.png)
+   ![Screenshot della creazione di un nuovo React.js progetto](media/container-tools-react/vs-2019/create-reactjs-project.png)
 
-1. Nella schermata **informazioni aggiuntive** non è possibile selezionare **Abilita supporto Docker**, ma è possibile aggiungere il supporto in un secondo momento.
+1. Nella schermata **Informazioni aggiuntive** non è possibile selezionare Abilita **supporto Docker,** ma non è necessario preoccuparsi, è possibile aggiungerlo in un secondo momento.
 
-   ![Screenshot della creazione di un nuovo progetto React.js-schermata informazioni aggiuntive](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
+   ![Screenshot della creazione di un nuovo React.js progetto - Schermata Informazioni aggiuntive](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** > **Supporto Docker** per aggiungere un Dockerfile al progetto.
+1. Fare clic con il pulsante  destro del mouse sul nodo del progetto e scegliere > **Aggiungi supporto Docker** per aggiungere un Dockerfile al progetto.
 
    ![Aggiungere il supporto di Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
 1. Selezionare il tipo di contenitore.
 ::: moniker-end
 
-Il passaggio successivo è diverso a seconda che si stiano usando contenitori Linux o contenitori di Windows.
+Il passaggio successivo è diverso a seconda che si utilizzino contenitori Linux o contenitori Windows.
 
 ## <a name="modify-the-dockerfile-linux-containers"></a>Modificare il Dockerfile (contenitori Linux)
 
-Nel progetto viene creato un *Dockerfile*, il file recipe per la creazione di un'immagine Docker finale. Per informazioni sui comandi al suo interno, vedere la Guida di [riferimento a Dockerfile](https://docs.docker.com/engine/reference/builder/) .
+Nel progetto viene creato un *Dockerfile*, il file recipe per la creazione di un'immagine Docker finale. Fare riferimento [a Dockerfile reference (Informazioni](https://docs.docker.com/engine/reference/builder/) di riferimento su Dockerfile) per informazioni sui comandi al suo interno.
 
-Aprire il *Dockerfile* nel progetto e aggiungere le righe seguenti per installare Node.js 10.x nel contenitore. Assicurarsi di aggiungere queste righe nella prima sezione, per aggiungere l'installazione di gestione pacchetti di nodi *npm.exe* all'immagine di base, così come nella `build` sezione.
+Aprire il *Dockerfile* nel progetto e aggiungere le righe seguenti per installare Node.js 10.x nel contenitore. Assicurarsi di aggiungere queste righe sia nella prima sezione, per aggiungere l'installazione dell'npm.exegestione pacchetti *node* all'immagine di base, nonché nella `build` sezione .
 
 ```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
@@ -91,14 +91,14 @@ Il *Dockerfile* dovrebbe ora essere simile al seguente:
 ```Dockerfile
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
@@ -117,44 +117,44 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 ```
 
-Il *Dockerfile* precedente è basato sull'immagine [MCR.Microsoft.com/dotnet/Core/ASPNET](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) e include istruzioni per modificare l'immagine di base compilando il progetto e aggiungendolo al contenitore.
+Il *Dockerfile precedente* è [](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) basato sull'immagine mcr.microsoft.com/dotnet/core/aspnet e include istruzioni per modificare l'immagine di base compilando il progetto e aggiungendolo al contenitore.
 
 Se la casella di controllo **Configura per HTTPS** della finestra di dialogo Nuovo progetto è selezionata, il *Dockerfile* espone due porte. Una porta viene usata per il traffico HTTP e l'altra viene usata per il traffico HTTPS. Se la casella di controllo non è selezionata, viene esposta una sola porta (80) per il traffico HTTP.
 
-## <a name="modify-the-dockerfile-windows-containers"></a>Modificare Dockerfile (contenitori di Windows)
+## <a name="modify-the-dockerfile-windows-containers"></a>Modificare il Dockerfile (contenitori di Windows)
 
-Aprire il file di progetto facendo doppio clic sul nodo del progetto e aggiornare il file di progetto (*. csproj) aggiungendo la proprietà seguente come figlio dell' `<PropertyGroup>` elemento:
+Aprire il file di progetto facendo doppio clic sul nodo del progetto e aggiornare il file di progetto (*.csproj) aggiungendo la proprietà seguente come elemento `<PropertyGroup>` figlio dell'elemento :
 
    ```xml
     <DockerfileFastModeStage>base</DockerfileFastModeStage>
    ```
 
-Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM vengono copiati nel contenitore.
+Aggiornare il Dockerfile aggiungendo le righe seguenti. Verrà copiato nodo e npm nel contenitore.
 
-   1. Aggiungere ``# escape=` `` alla prima riga di Dockerfile
+   1. Aggiungere ``# escape=` `` alla prima riga del Dockerfile
    1. Aggiungere le righe seguenti prima `FROM … base`
 
       ```Dockerfile
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. Aggiungere la riga seguente prima e dopo `FROM … build`
+   2. Aggiungere la riga seguente prima e dopo `FROM … build`
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
-   1. Il Dockerfile completo dovrebbe avere un aspetto simile al seguente:
+   3. Il Dockerfile completo dovrebbe ora avere un aspetto simile al seguente:
 
       ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       RUN mkdir -p C:\nodejsfolder
       WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
@@ -162,13 +162,13 @@ Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
-      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
+      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
       WORKDIR /app
       EXPOSE 80
       EXPOSE 443
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
 
-      FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
+      FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
       COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
@@ -186,11 +186,11 @@ Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM
       ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
-   1. Aggiornare il file con estensione dockerignore rimuovendo `**/bin` .
+   4. Aggiornare il file con estensione dockerignore rimuovendo `**/bin` .
 
 ## <a name="debug"></a>Debug
 
-Selezionare **Docker** nell'elenco a discesa Debug nella barra degli strumenti e avviare il debug dell'app. È possibile che venga visualizzato un messaggio in cui viene richiesto di considerare attendibile un certificato; scegliere di considerare attendibile il certificato per continuare.  La prima volta che si compila, Docker Scarica le immagini di base, quindi potrebbe richiedere un po' più tempo.
+Selezionare **Docker** nell'elenco a discesa Debug nella barra degli strumenti e avviare il debug dell'app. È possibile che venga visualizzato un messaggio in cui viene richiesto di considerare attendibile un certificato; scegliere di considerare attendibile il certificato per continuare.  La prima volta che si compila, Docker scarica le immagini di base, quindi potrebbe richiedere un po' più tempo.
 
 L'opzione **Strumenti contenitore** nella finestra **Output** mostra le azioni in corso. Si dovrebbero vedere i passaggi di installazione associati a *npm.exe*.
 
@@ -207,12 +207,12 @@ Passare alla pagina *Contatore* e testare il codice sul lato client per il conta
 
 Aprire la **console di Gestione pacchetti** dal menu **Strumenti**> Gestione pacchetti NuGet, **Console di Gestione pacchetti**.
 
-L'immagine Docker risultante dell'app, contrassegnata con *dev*, L'immagine è basata sul tag *3,1-nanoserver-1903* dell'immagine di base *DotNet/Core/ASPNET* . Eseguire il comando `docker images` nella finestra **Console di Gestione pacchetti**. Vengono visualizzate le immagini nel computer in uso:
+L'immagine Docker risultante dell'app, contrassegnata con *dev*, L'immagine è basata sul tag *3.1* dell'immagine di base *dotnet/core/aspnet.* Eseguire il comando `docker images` nella finestra **Console di Gestione pacchetti**. Vengono visualizzate le immagini nel computer in uso:
 
 ```console
 REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
 webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
-mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1                 e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]
@@ -233,13 +233,13 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
 1. Selezionare **Versione** nell'elenco a discesa della configurazione ed eseguire l'app.
 1. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Pubblica**.
-1. Nella finestra di dialogo pubblica destinazione selezionare **container Registry**.
+1. Nella finestra di dialogo publish target (Destinazione pubblicazione) selezionare **Container Registry (Registro contenitori).**
 1. Scegliere **Crea nuovo Registro Azure Container** e fare clic su **Pubblica**.
 1. Inserire i valori desiderati in **Creare un nuovo Registro Azure Container**.
 
     | Impostazione      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Prefisso DNS** | Nome globalmente univoco | Nome che identifica in modo univoco il registro contenitori. |
+    | **Prefisso DNS** | Nome univoco a livello globale | Nome che identifica in modo univoco il registro contenitori. |
     | **Sottoscrizione** | Scegliere la sottoscrizione | Sottoscrizione di Azure da usare. |
     | **[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome del gruppo di risorse in cui creare il registro contenitori. Per creare un nuovo gruppo di risorse scegliere **Nuovo**.|
     | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Livello di servizio del registro contenitori  |
@@ -256,20 +256,20 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
 1. Selezionare **Versione** nell'elenco a discesa della configurazione ed eseguire l'app.
 1. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Pubblica**.
-1. Nella finestra di dialogo pubblica destinazione selezionare **docker container Registry**.
+1. Nella finestra di dialogo publish target (Destinazione di pubblicazione) **selezionare Docker Container Registry (Registro Contenitori Docker).**
 
-   ![Scegliere Container Registry Docker](media/container-tools-react/vs-2019/publish-dialog1.png)
+   ![Scegliere Docker Container Registry (Registro Contenitori Docker)](media/container-tools-react/vs-2019/publish-dialog1.png)
 
-1. Scegliere quindi **container Registry di Azure**.
+1. Scegliere quindi **Registro Azure Container**.
 
-   ![Scegliere Container Registry di Azure](media/container-tools-react/vs-2019/publish-dialog-acr.png)
+   ![Scegliere Registro Azure Container](media/container-tools-react/vs-2019/publish-dialog-acr.png)
 
-1. Scegliere **Crea una nuova container Registry di Azure**.
-1. Inserire i valori desiderati nella schermata **Crea nuovo container Registry di Azure** .
+1. Scegliere **Crea una nuova Registro Azure Container**.
+1. Immettere i valori desiderati nella **schermata Create new Registro Azure Container (Crea Registro Azure Container** dati).
 
     | Impostazione      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Prefisso DNS** | Nome globalmente univoco | Nome che identifica in modo univoco il registro contenitori. |
+    | **Prefisso DNS** | Nome univoco a livello globale | Nome che identifica in modo univoco il registro contenitori. |
     | **Sottoscrizione** | Scegliere la sottoscrizione | Sottoscrizione di Azure da usare. |
     | **[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome del gruppo di risorse in cui creare il registro contenitori. Per creare un nuovo gruppo di risorse scegliere **Nuovo**.|
     | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Livello di servizio del registro contenitori  |
@@ -277,15 +277,15 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio](media/container-tools-react/vs-2019/azure-container-registry-details.png)
 
-1. Selezionare **Crea** e quindi fare clic su **fine**.
+1. Selezionare **Crea** e quindi **Fine.**
 
    ![Selezionare o creare un nuovo ACR](media/container-tools-react/vs-2019/publish-dialog2.png)
 
-   Al termine del processo di pubblicazione, è possibile rivedere le impostazioni di pubblicazione e modificarle, quando necessario, oppure pubblicare nuovamente l'immagine usando il pulsante **pubblica** .
+   Al termine del processo di pubblicazione, è possibile esaminare le impostazioni di pubblicazione e modificarle, quando necessario, oppure pubblicare di nuovo l'immagine usando **il pulsante Pubblica.**
 
    ![Screenshot che indica l'esito positivo della pubblicazione](media/container-tools-react/vs-2019/publish-finished.png)
 
-   Per riavviarlo utilizzando la finestra di dialogo **pubblica** , eliminare il profilo di pubblicazione utilizzando il collegamento **Elimina** in questa pagina, quindi scegliere di nuovo **pubblica** .
+   Per iniziare di nuovo usando la **finestra di** dialogo Pubblica, eliminare il profilo di pubblicazione usando il **collegamento** Elimina in questa pagina e quindi scegliere di **nuovo Pubblica.**
 :::moniker-end
 
 ## <a name="next-steps"></a>Passaggi successivi

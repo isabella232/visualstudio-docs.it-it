@@ -9,12 +9,12 @@ ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2637703e068a98e20f209d5de51a6003a4dd7f4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2ae488056986afbe35763be1eebb500ff0eab9a8
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386735"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602264"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
@@ -23,21 +23,21 @@ Questo argomento illustra i concetti di base relativi alla definizione e all'uso
 > [!NOTE]
 > Text Template Transformation SDK e Visual Studio Modeling SDK vengono installati automaticamente quando si installano funzionalità specifiche di Visual Studio. Per informazioni dettagliate, vedere [questo post di blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Se non si ha disagi ai **DSL,** è consigliabile usare il lab degli strumenti DSL, disponibile in questo sito: [Visualization and Modeling SDK (SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) per la visualizzazione e la modellazione).
+Se non si ha una versione di DSL, è consigliabile usare il lab degli strumenti **DSL,** disponibile in questo sito: [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Cosa è possibile fare con un Domain-Specific lingua?
 
-Un linguaggio specifico di dominio è una notazione, in genere grafica, progettata per essere usata per uno scopo specifico. Al contrario, linguaggi come UML sono di uso generico. In un DSL è possibile definire i tipi di elemento del modello e le relative relazioni e come vengono presentati sullo schermo.
+Un linguaggio specifico di dominio è una notazione, in genere grafica, progettata per essere usata per uno scopo specifico. Al contrario, i linguaggi come UML sono per utilizzo generico. In un DSL è possibile definire i tipi di elemento del modello e le relative relazioni e come vengono presentati sullo schermo.
 
-Dopo aver progettato un DSL, è possibile distribuirlo come parte di un pacchetto Visual Studio Integration Extension (VSIX). Gli utenti lavorano con il DSL in Visual Studio:
+Dopo aver progettato un DSL, è possibile distribuirlo come parte di un pacchetto Visual Studio Integration Extension (VSIX). Gli utenti lavorano con DSL in Visual Studio:
 
 ![Diagramma, casella degli strumenti e finestra di esplorazione dell'albero genealogico](../modeling/media/familyt_instance.png)
 
-La notazione fa solo parte di un DSL. Insieme alla notazione , il pacchetto VSIX include strumenti che gli utenti possono applicare per consentire loro di modificare e generare materiale dai modelli.
+La notazione è solo parte di un DSL. Insieme alla notazione, il pacchetto VSIX include strumenti che gli utenti possono applicare per consentire loro di modificare e generare materiale dai modelli.
 
-Una delle applicazioni principali delle DSL è la generazione di codice programma, file di configurazione e altri artefatti. In particolare nei progetti di grandi dimensioni e nelle linee di prodotti, in cui verranno create diverse varianti di un prodotto, la generazione di molti degli aspetti variabili dalle DSL può fornire un aumento significativo dell'affidabilità e una risposta molto rapida alle modifiche dei requisiti.
+Una delle principali applicazioni delle DSL è la generazione di codice del programma, file di configurazione e altri elementi. Soprattutto nei progetti di grandi dimensioni e nelle linee di prodotti, in cui verranno create diverse varianti di un prodotto, la generazione di molti degli aspetti variabili dalle DSL può offrire un aumento significativo dell'affidabilità e una risposta molto rapida alle modifiche dei requisiti.
 
-Il resto di questa panoramica è una procedura dettagliata che presenta le operazioni di base per la creazione e l'uso di un linguaggio specifico di dominio in Visual Studio.
+Il resto di questa panoramica è una procedura dettagliata che introduce le operazioni di base per la creazione e l'uso di un linguaggio specifico di dominio in Visual Studio.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -45,8 +45,8 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 
 | Componente | Collegamento |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [https://go.microsoft.com/fwlink/?linkid=2166172](../extensibility/visual-studio-sdk.md) |
 | SDK di modellazione per Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -65,75 +65,75 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 4. Nella casella **Nome** digitare **FamilyTree**. Fare clic su **OK**.
 
-     Verrà **Domain-Specific Language guidata modelli** e verrà visualizzato un elenco di soluzioni DSL modello.
+     Verrà **Domain-Specific Language procedura guidata** e verrà visualizzato un elenco di soluzioni DSL modello.
 
-     Fare clic su ogni modello per visualizzare una descrizione.
+     Fare clic su ogni modello per visualizzare una descrizione,
 
-     I modelli sono utili punti di partenza. Ognuno di essi fornisce un DSL funzionante completo, che è possibile modificare in base alle proprie esigenze. In genere, è necessario scegliere il modello più vicino a quello che si vuole creare.
+     I modelli sono punti di partenza utili. Ognuno di essi fornisce un DSL funzionante completo, che è possibile modificare in base alle proprie esigenze. In genere, è necessario scegliere il modello più vicino a quello che si vuole creare.
 
 5. Per questa procedura dettagliata, scegliere il **modello Linguaggio** minimo.
 
 6. Immettere un'estensione di file per il linguaggio DSL nella pagina appropriata della procedura guidata. Questa estensione verrà usata dai file contenenti le istanze del linguaggio DSL.
 
-    - Scegliere un'estensione non associata ad alcuna applicazione nel computer o in qualsiasi computer in cui si vuole installare il DSL. Ad esempio, **docx e** **htm** sarebbero estensioni di file inaccettabili.
+    - Scegliere un'estensione non associata ad alcuna applicazione nel computer o in qualsiasi computer in cui si vuole installare il DSL. Ad esempio, **docx** e **htm** sarebbero estensioni di file inaccettabili.
 
-    - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare clic  **sul pulsante Start**, scegliere Tutti i programmi , Microsoft Visual Studio **SDK 2010** **,** Strumenti e quindi Reimpostare **l'istanza sperimentale di Microsoft Visual Studio 2010**.
+    - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare **clic su Start**, **scegliere** Tutti i programmi , Microsoft Visual Studio **SDK 2010**, **Strumenti** e quindi reimpostare l'istanza **sperimentale Microsoft Visual Studio 2010**.
 
-7. Esaminare le altre pagine e quindi fare clic su **Fine.**
+7. Esaminare le altre pagine e quindi fare clic su **Fine**.
 
      Viene generata una soluzione che contiene due progetti. Sono denominati Dsl e DslPackage. Verrà aperto un file di diagramma denominato DslDefinition.dsl.
 
     > [!NOTE]
-    > La maggior parte del codice che è possibile visualizzare nelle cartelle dei due progetti viene generata da DslDefinition.dsl. Per questo motivo, la maggior parte delle modifiche al DSL viene apportata in questo file.
+    > La maggior parte del codice che è possibile visualizzare nelle cartelle nei due progetti viene generata da DslDefinition.dsl. Per questo motivo, la maggior parte delle modifiche al DSL viene apportata in questo file.
 
 L'interfaccia utente ora è simile a quella nell'immagine seguente.
 
 ![Progettazione DSL](../modeling/media/dsl_designer.png)
 
-Questa soluzione definisce un linguaggio specifico di dominio. Per altre informazioni, vedere [Panoramica di Domain-Specific Language Tools Interfaccia utente](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+Questa soluzione definisce un linguaggio specifico di dominio. Per altre informazioni, vedere Panoramica di Domain-Specific [Language Tools Interfaccia utente](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ## <a name="the-important-parts-of-the-dsl-solution"></a>Parti importanti della soluzione DSL
 
 Si notino gli aspetti seguenti della nuova soluzione:
 
-- **Dsl\DslDefinition.dsl** Questo è il file visualizzato quando si crea una soluzione DSL. Quasi tutto il codice nella soluzione viene generato da questo file e la maggior parte delle modifiche apportate a una definizione DSL viene apportata qui. Per altre informazioni, vedere Uso del diagramma di definizione [DSL.](../modeling/working-with-the-dsl-definition-diagram.md)
+- **Dsl\DslDefinition.dsl** Questo è il file visualizzato quando si crea una soluzione DSL. Quasi tutto il codice nella soluzione viene generato da questo file e la maggior parte delle modifiche apportate a una definizione DSL viene apportata qui. Per altre informazioni, vedere Uso del diagramma di [definizione DSL](../modeling/working-with-the-dsl-definition-diagram.md).
 
 - **Progetto Dsl** Questo progetto contiene codice che definisce il linguaggio specifico di dominio.
 
 - **Progetto DslPackage** Questo progetto contiene codice che consente l'apertura e la modifica di istanze del DSL in Visual Studio.
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a> Esecuzione del DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Esecuzione di DSL
 
 È possibile eseguire la soluzione DSL non appena è stata creata. Successivamente, è possibile modificare gradualmente la definizione DSL, eseguendo di nuovo la soluzione dopo ogni modifica.
 
-### <a name="to-experiment-with-the-dsl"></a>Per sperimentare il DSL
+### <a name="to-experiment-with-the-dsl"></a>Per sperimentare con il DSL
 
-1. Fare **clic su Trasforma tutti i** modelli nella barra **Esplora soluzioni** strumenti. In questo modo viene rigenerata la maggior parte del codice sorgente da DslDefinition.dsl.
+1. Fare **clic su Trasforma tutti i** modelli nella barra **Esplora soluzioni** strumenti. In questo modo la maggior parte del codice sorgente viene rigenerata da DslDefinition.dsl.
 
     > [!NOTE]
-    > Ogni volta che si *modifica DslDefinition.dsl*, è necessario fare clic **su Trasforma** tutti i modelli prima di ricompilare la soluzione. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [How to Automate Transform All Templates](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+    > Ogni volta che si *modifica DslDefinition.dsl,* è necessario fare clic **su Trasforma** tutti i modelli prima di ricompilare la soluzione. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [Come automatizzare la trasformazione di tutti i modelli.](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))
 
 2. Premere **F5** o scegliere **Avvia debug** dal menu **Debug**.
 
      Il DSL viene compilato e installato nell'istanza sperimentale di Visual Studio.
 
-     Viene avviata un'istanza Visual Studio sperimentale. L'istanza sperimentale accetta le impostazioni da un sottoalbero separato del Registro di sistema, in cui Visual Studio estensioni vengono registrate a scopo di debug. Le istanze normali Visual Studio non hanno accesso alle estensioni registrate in tale istanza.
+     Viene avviata un'istanza sperimentale di Visual Studio. L'istanza sperimentale accetta le impostazioni da un sottoalbero separato del Registro di sistema, in cui Visual Studio le estensioni vengono registrate a scopo di debug. Le istanze normali Visual Studio non hanno accesso alle estensioni registrate.
 
-3. Nell'istanza sperimentale di Visual Studio aprire il file di modello denominato **Test** **da Esplora soluzioni**.
+3. Nell'istanza sperimentale di Visual Studio aprire il file di modello **denominato Test** da **Esplora soluzioni**.
 
      \- - oppure -
 
-     Fare clic con il pulsante destro del mouse sul progetto Debug, **scegliere Aggiungi**, quindi fare clic su **Elemento**. Nella finestra **di dialogo Aggiungi** elemento selezionare il tipo di file del DSL.
+     Fare clic con il pulsante destro del mouse sul progetto Debug, scegliere **Aggiungi** e quindi fare clic su **Elemento**. Nella finestra **di dialogo Aggiungi** elemento selezionare il tipo di file DSL.
 
      Il file di modello viene aperto come diagramma vuoto.
 
-     Verrà visualizzata la casella degli strumenti con gli strumenti appropriati per il tipo di diagramma.
+     Verrà visualizzata la casella degli strumenti e verranno visualizzati gli strumenti appropriati per il tipo di diagramma.
 
 4. Usare gli strumenti per creare forme e connettori nel diagramma.
 
-    1. Per creare forme, trascinare dalla casella Forma esempio nel diagramma.
+    1. Per creare forme, trascinare dal riquadro Forma nel diagramma.
 
-    2. Per connettere due forme, fare clic su Connettore di esempio, fare clic sulla prima forma e quindi sulla seconda forma.
+    2. Per connettere due forme, fare clic sul connettore di esempio, fare clic sulla prima forma e quindi fare clic sulla seconda forma.
 
 5. Fare clic sulle etichette delle forme per modificarle.
 
@@ -143,11 +143,11 @@ L'Visual Studio sperimentale sarà simile all'esempio seguente:
 
 ### <a name="the-content-of-a-model"></a>Contenuto di un modello
 
-Il contenuto di un file che è un'istanza di un DSL è denominato *modello*. Il modello contiene *elementi del* <em>modello</em> *e collegamenti* tra gli elementi. La definizione DSL specifica quali tipi di elementi del modello e collegamenti possono esistere nel modello. Ad esempio, in un linguaggio DSL creato dal modello Linguaggio minimo sono presenti un tipo di elemento del modello e un tipo di collegamento.
+Il contenuto di un file che è un'istanza di un DSL è denominato *modello*. Il modello contiene *elementi del* <em>modello</em> e *collegamenti* tra gli elementi. La definizione DSL specifica quali tipi di elementi del modello e collegamenti possono esistere nel modello. Ad esempio, in un linguaggio DSL creato dal modello Minimal Language è presente un tipo di elemento del modello e un tipo di collegamento.
 
 La definizione DSL può specificare la modalità di visualizzazione del modello in un diagramma. È possibile scegliere tra un'ampia gamma di stili di forme e connettori. È possibile specificare che alcune forme vengano visualizzate all'interno di altre forme.
 
-È possibile visualizzare un modello come albero nella **visualizzazione Esplora** risorse durante la modifica di un modello. Quando si aggiungono forme al diagramma, anche gli elementi del modello vengono visualizzati nello explorer. Lo explorer può essere usato anche se non è presente alcun diagramma.
+È possibile visualizzare un modello come albero nella visualizzazione **Esplora** risorse durante la modifica di un modello. Quando si aggiungono forme al diagramma, anche gli elementi del modello vengono visualizzati nello explorer. Lo explorer può essere usato anche se non è presente alcun diagramma.
 
 Se non è possibile visualizzare Esplora risorse nell'istanza di debug di Visual Studio, scegliere Altre **finestre** dal **menu** Visualizza e quindi fare clic su Esplora *\<Your Language>* **risorse**.
 
@@ -409,7 +409,7 @@ Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire 
 
 2. Ricompilare eventuali DSL sperimentali o altre estensioni Visual Studio sperimentali che si vuole ancora usare.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
