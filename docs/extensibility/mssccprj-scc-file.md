@@ -1,9 +1,9 @@
 ---
-title: Mssccprj. File SCC | Microsoft Docs
-description: Informazioni su MSSCCPRJ. File SCC, ovvero un file locale sul lato client utilizzato dal plug-in del controllo del codice sorgente, che funziona con Visual Studio SDK.
+title: MSSCCPRJ. File SCC | Microsoft Docs
+description: Informazioni su MSSCCPRJ. File SCC, ovvero un file locale sul lato client usato dal plug-in di controllo del codice sorgente, che funziona con Visual Studio SDK.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
@@ -13,36 +13,36 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 945d1a4d1acde0ac3fef9918123f963cf27127f1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e006e4462522f4c464f40e0656dcef4d32c85fb7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090551"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899251"
 ---
-# <a name="mssccprjscc-file"></a>Mssccprj. File SCC
-Quando si inserisce una soluzione Visual Studio o un progetto nel controllo del codice sorgente usando l'IDE, l'IDE riceve due informazioni chiave. Le informazioni provengono dal plug-in del controllo del codice sorgente sotto forma di stringhe. Queste stringhe, "AuxPath" e "ProjName", sono opache per l'IDE, ma sono usate dal plug-in per individuare la soluzione o il progetto nel controllo della versione. L'IDE ottiene in genere queste stringhe la prima volta chiamando il [SccGetProjPath](../extensibility/sccgetprojpath-function.md)e quindi le salva nel file di soluzione o di progetto per le chiamate future al [SccOpenProject](../extensibility/sccopenproject-function.md). Quando incorporati nei file di soluzione e di progetto, le stringhe "AuxPath" e "ProjName" non vengono aggiornate automaticamente quando un utente esegue il branching, il fork o copia i file della soluzione e del progetto presenti nel controllo della versione. Per assicurarsi che la soluzione e i file di progetto puntino al percorso corretto nel controllo della versione, gli utenti devono aggiornare manualmente le stringhe. Poiché le stringhe sono pensate per essere opache, potrebbe non essere sempre chiaro come devono essere aggiornate.
+# <a name="mssccprjscc-file"></a>MSSCCPRJ. File SCC
+Quando si posiziona una Visual Studio o un progetto sotto il controllo del codice sorgente usando l'IDE, l'IDE riceve due informazioni chiave. Le informazioni provengono dal plug-in del controllo del codice sorgente sotto forma di stringhe. Queste stringhe, "AuxPath" e "ProjName", sono opache per l'IDE, ma vengono usate dal plug-in per individuare la soluzione o il progetto nel controllo della versione. L'IDE in genere ottiene queste stringhe la prima volta chiamando [SccGetProjPath](../extensibility/sccgetprojpath-function.md)e quindi le salva nel file di soluzione o di progetto per le chiamate future a [SccOpenProject.](../extensibility/sccopenproject-function.md) Se incorporate nei file di soluzione e di progetto, le stringhe "AuxPath" e "ProjName" non vengono aggiornate automaticamente quando un utente crea rami, fork o copia i file di soluzione e di progetto presenti nel controllo della versione. Per assicurarsi che i file di soluzione e di progetto puntino al percorso corretto nel controllo della versione, gli utenti devono aggiornare manualmente le stringhe. Poiché le stringhe sono destinate a essere opache, potrebbe non essere sempre chiaro come devono essere aggiornate.
 
- Il plug-in del controllo del codice sorgente può evitare questo problema archiviando le stringhe "AuxPath" e "ProjName" in un file speciale denominato *Mssccprj. SCC* . Si tratta di un file locale, sul lato client, di proprietà e gestito dal plug-in. Questo file non viene mai inserito nel controllo del codice sorgente, ma viene generato dal plug-in per ogni directory che contiene i file inclusi nel controllo del codice sorgente. Per determinare quali file sono i file di soluzione e di progetto di Visual Studio, un plug-in del controllo del codice sorgente può confrontare le estensioni di file con un elenco standard o fornito dall'utente. Quando l'IDE rileva che un plug-in supporta il file *Mssccprj. SCC* , smette di incorporare le stringhe "AuxPath" e "ProjName" in file di soluzione e di progetto e legge tali stringhe dal file *Mssccprj. SCC* .
+ Il plug-in del controllo del codice sorgente può evitare questo problema archiviando le stringhe "AuxPath" e "ProjName" in un file speciale denominato file *MSSCCPRJ.SCC.* Si tratta di un file locale sul lato client di proprietà e gestito dal plug-in. Questo file non viene mai inserito nel controllo del codice sorgente, ma viene generato dal plug-in per ogni directory che contiene file con controllo del codice sorgente. Per determinare quali file vengono Visual Studio file di soluzione e di progetto, un plug-in del controllo del codice sorgente può confrontare le estensioni di file con un elenco standard o fornito dall'utente. Quando l'IDE rileva che un plug-in supporta il file *MSSCCPRJ.SCC,* smette di incorporare le stringhe "AuxPath" e "ProjName" nei file di soluzione e di progetto e legge tali stringhe dal file *MSSCCPRJ.SCC.*
 
- Un plug-in del controllo del codice sorgente che supporta il file *Mssccprj. SCC* deve rispettare le linee guida seguenti:
+ Un plug-in del controllo del codice sorgente che supporta il file *MSSCCPRJ.SCC* deve rispettare le linee guida seguenti:
 
-- Può essere presente un solo file *Mssccprj. SCC* per ogni directory.
+- Può essere presente un solo file *MSSCCPRJ.SCC* per ogni directory.
 
-- Un file *Mssccprj. SCC* può contenere "AuxPath" e "ProjName" per più file sottoposti al controllo del codice sorgente all'interno di una determinata directory.
+- Un file *MSSCCPRJ.SCC* può contenere "AuxPath" e "ProjName" per più file sotto il controllo del codice sorgente all'interno di una determinata directory.
 
-- La stringa "AuxPath" non deve contenere le virgolette al suo interno. È consentito racchiuderlo tra virgolette come delimitatori (ad esempio, è possibile usare una coppia di virgolette doppie per indicare una stringa vuota). L'IDE esegue lo striping di tutte le virgolette dalla stringa "AuxPath" quando viene letta dal file *Mssccprj. SCC* .
+- La stringa "AuxPath" non deve contenere virgolette. È consentito delimitarlo tra virgolette (ad esempio, è possibile usare una coppia di virgolette doppie per indicare una stringa vuota). L'IDE rimuoverà tutte le virgolette dalla stringa "AuxPath" quando viene letta dal file *MSSCCPRJ.SCC.*
 
-- Stringa "ProjName" in *Mssccprj. Il file SCC* deve corrispondere esattamente alla stringa restituita dalla `SccGetProjPath` funzione. Se la stringa restituita dalla funzione contiene virgolette, la stringa nel file *Mssccprj. SCC* deve contenere le virgolette e viceversa.
+- Stringa "ProjName" in *MSSCCPRJ. Il file SCC* deve corrispondere esattamente alla stringa restituita dalla `SccGetProjPath` funzione . Se la stringa restituita dalla funzione contiene virgolette, la stringa nel file *MSSCCPRJ.SCC* deve contenere virgolette e viceversa.
 
-- Un file *Mssccprj. SCC* viene creato o aggiornato ogni volta che un file viene inserito nel controllo del codice sorgente.
+- Un file *MSSCCPRJ.SCC* viene creato o aggiornato ogni volta che un file viene inserito nel controllo del codice sorgente.
 
-- Se viene eliminato un file *Mssccprj. SCC* , un provider deve rigenerarlo alla successiva esecuzione di un'operazione di controllo del codice sorgente relativa a tale directory.
+- Se un file *MSSCCPRJ.SCC* viene eliminato, un provider deve rigenerarlo alla successiva esecuzione di un'operazione di controllo del codice sorgente relativa a tale directory.
 
-- Un file *Mssccprj. SCC* deve rispettare rigorosamente il formato definito.
+- Un file *MSSCCPRJ.SCC* deve seguire rigorosamente il formato definito.
 
-## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Illustrazione del MSSCCPRJ. Formato file SCC
- Di seguito è riportato un esempio del formato di file *Mssccprj. SCC* (i numeri di riga vengono forniti solo come guida e non devono essere inclusi nel corpo del file):
+## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Illustrazione di MSSCCPRJ. Formato di file SCC
+ Di seguito è riportato un esempio del formato di file *MSSCCPRJ.SCC* (i numeri di riga vengono forniti solo come guida e non devono essere inclusi nel corpo del file):
 
 - [Riga 1] `SCC = This is a Source Code Control file`
 
@@ -62,18 +62,18 @@ Quando si inserisce una soluzione Visual Studio o un progetto nel controllo del 
 
 - [Riga 9] `SCC_Project_Name = "$/TestApp"`
 
- La prima riga indica lo scopo del file e funge da firma per tutti i file di questo tipo. Questa riga dovrebbe apparire esattamente come questa in tutti i file *Mssccprj. SCC* :
+ La prima riga indica lo scopo del file e funge da firma per tutti i file di questo tipo. Questa riga dovrebbe essere esattamente simile alla seguente in tutti *i file MSSCCPRJ.SCC:*
 
  `SCC = This is a Source Code Control file`
 
- Nella sezione seguente vengono illustrate le impostazioni per ogni file, contrassegnato dal nome file tra parentesi quadre. Questa sezione è ripetuta per ogni file rilevato. Questa riga è un esempio di nome di file, ovvero `[TestApp.csproj]` . L'IDE prevede le due righe seguenti. Non definisce tuttavia lo stile dei valori definiti. Le variabili sono `SCC_Aux_Path` e `SCC_Project_Name` .
+ La sezione seguente contiene informazioni dettagliate sulle impostazioni per ogni file, contrassegnate dal nome del file tra parentesi quadre. Questa sezione viene ripetuta per ogni file monitorato. Questa riga è un esempio di nome di file, in questo caso `[TestApp.csproj]` . L'IDE prevede le due righe seguenti. Non definisce tuttavia lo stile dei valori definiti. Le variabili sono `SCC_Aux_Path` e `SCC_Project_Name` .
 
  `SCC_Aux_Path = "\\server\vss\"`
 
  `SCC_Project_Name = "$/TestApp"`
 
- Nessun delimitatore finale a questa sezione. Il nome del file, nonché tutti i valori letterali visualizzati nel file, vengono definiti nel file di intestazione SCC. h. Per ulteriori informazioni, vedere [stringhe utilizzate come chiavi per la ricerca di un plug-in del controllo del codice sorgente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).
+ Questa sezione non contiene delimitatori finali. Il nome del file, nonché tutti i valori letterali visualizzati nel file, sono definiti nel file di intestazione scc.h. Per altre informazioni, vedere [Stringhe usate come chiavi per trovare un plug-in del controllo del codice sorgente.](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
-- [Stringhe utilizzate come chiavi per la ricerca di un plug-in del controllo del codice sorgente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
+- [Stringhe usate come chiavi per trovare un plug-in del controllo del codice sorgente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

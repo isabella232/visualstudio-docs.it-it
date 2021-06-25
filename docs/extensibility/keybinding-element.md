@@ -1,9 +1,9 @@
 ---
-title: Elemento di associazione tasto | Microsoft Docs
-description: L'elemento di associazione di tasti specifica i tasti di scelta rapida per i comandi. Ai comandi possono essere associate entrambe le associazioni a chiave singola e doppia.
+title: Elemento KeyBinding | Microsoft Docs
+description: L'elemento KeyBinding specifica i tasti di scelta rapida per i comandi. Ai comandi possono essere associate sia associazioni di tasti singole che doppie.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
@@ -13,17 +13,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9162d9b21c54577e48f4dced6ddddd7138c9de66
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6afd0a9658f088b66f2c18c632ffcd7b9a09f555
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074093"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898861"
 ---
-# <a name="keybinding-element"></a>Elemento di associazione
-L'elemento di associazione di tasti specifica i tasti di scelta rapida per i comandi.
+# <a name="keybinding-element"></a>Elemento KeyBinding
+L'elemento KeyBinding specifica i tasti di scelta rapida per i comandi.
 
- Ai comandi possono essere associate entrambe le associazioni a chiave singola e doppia. Un esempio di singola chiave di associazione è **CTRL** + **S** per il comando **Save** . Le combinazioni di tasti doppie richiedono due combinazioni di tasti successive per attivare un comando. Un esempio di un doppio tasto di scelta rapida è <strong>CTRL *+</strong> k <strong>,</strong>CTRL <strong>+</strong> k** per impostare un segnalibro.
+ Ai comandi possono essere associate sia associazioni di tasti singole che doppie. Un esempio di una singola associazione di tasti **è CTRL** + **S** per il **comando** Salva. Le associazioni a due tasti richiedono due combinazioni di tasti successive per attivare un comando. Un esempio di associazione a due tasti è <strong>CTRL *+</strong> K <strong>,</strong>CTRL <strong>+</strong> K** per impostare un segnalibro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ L'elemento di associazione di tasti specifica i tasti di scelta rapida per i com
 |---------------|-----------------|
 |guid|Obbligatorio.|
 |id|Obbligatorio.|
-|editor|Obbligatorio. Il GUID dell'editor indica il contesto di modifica per il quale il tasto di scelta rapida sarà attivo. Il valore dell'ambito di binding globale è "guidVSStd97".|
-|key1|Obbligatorio. I valori validi includono tutti i caratteri alfanumerici tipizzabili e anche i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|Mod1|facoltativo. Qualsiasi combinazione di **CTRL**, **ALT** e **MAIUSC** separati da uno spazio.|
-|key2|facoltativo. I valori validi includono tutti i caratteri alfanumerici tipizzabili e anche i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|MOD2|facoltativo. Qualsiasi combinazione di **CTRL**, **ALT** e **MAIUSC** separati da uno spazio.|
+|editor|Obbligatorio. Il GUID dell'editor indica il contesto di modifica per cui sarà attivo questo tasto di scelta rapida. Il valore dell'ambito di associazione globale è "guidVSStd97".|
+|key1|Obbligatorio. I valori validi includono tutti i caratteri alfanumerici tipizzabili e i valori esadecimali a due cifre preceduti da 0x [e VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod1|facoltativo. Qualsiasi combinazione **di CTRL,** **ALT** **e MAIUSC** separati da spazio.|
+|key2|facoltativo. I valori validi includono tutti i caratteri alfanumerici tipizzabili e i valori esadecimali a due cifre preceduti da 0x [e VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod2|facoltativo. Qualsiasi combinazione **di CTRL,** **ALT** **e MAIUSC** separati da spazio.|
 |emulatore|facoltativo.|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -59,7 +59,7 @@ L'elemento di associazione di tasti specifica i tasti di scelta rapida per i com
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Portatasti](../extensibility/keybindings-element.md)|Raggruppa gli elementi di associazione di tasti e altri raggruppamenti di tasti di scelta.|
+|[Elemento KeyBindings](../extensibility/keybindings-element.md)|Raggruppa gli elementi KeyBinding e altri raggruppamenti KeyBindings.|
 
 ## <a name="example"></a>Esempio
 
@@ -73,5 +73,5 @@ L'elemento di associazione di tasti specifica i tasti di scelta rapida per i com
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Elemento Portatasti](../extensibility/keybindings-element.md)
-- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Elemento KeyBindings](../extensibility/keybindings-element.md)
+- [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

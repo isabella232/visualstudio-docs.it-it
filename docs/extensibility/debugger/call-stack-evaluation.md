@@ -1,9 +1,9 @@
 ---
 title: Valutazione dello stack di chiamate | Microsoft Docs
-description: Informazioni sul metodo EnumFrameInfo e su come implementarlo per visualizzare gli stack frame dello stack di chiamate durante la modalità di rottura.
+description: Informazioni sul metodo EnumFrameInfo e su come implementarlo per visualizzare gli stack frame dello stack di chiamate durante la modalità di interruzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], call stack evaluation
 - call stacks, evaluation
@@ -13,31 +13,31 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7e7180301965e43e6757340019c3506fe1a5e1f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 059c42349c7f8e681709d69104cf65a6fc245206
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055089"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898539"
 ---
 # <a name="call-stack-evaluation"></a>Valutazione dello stack di chiamate
-Per visualizzare gli stack frame dello stack di chiamate durante la modalità di Breaking, è necessario implementare il metodo [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
+Per visualizzare gli stack frame dello stack di chiamate durante la modalità di interruzione, è necessario implementare il [metodo EnumFrameInfo.](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
 ## <a name="methods-for-evaluation"></a>Metodi per la valutazione
- Per un semplice motore di debug (DE), potrebbe essere presente un solo stack frame. Per esaminare il stack frame durante la modalità di interruzioni, è necessario implementare i metodi di [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)seguenti.
+ Per un motore di debug semplice , potrebbe essere presente un solo stack frame. Per esaminare il stack frame durante la modalità di interruzione, è necessario implementare i metodi seguenti di [IDebugStackFrame2.](../../extensibility/debugger/reference/idebugstackframe2.md)
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Ottiene il contesto di codice per un stack frame. Il contesto di codice rappresenta il puntatore all'istruzione corrente in un stack frame.|
+|[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Ottiene il contesto del codice per un stack frame. Il contesto del codice rappresenta il puntatore all'istruzione corrente in un stack frame.|
 |[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Ottiene il contesto del documento per un stack frame. Il contesto del documento rappresenta la posizione corrente nel codice sorgente per un stack frame. Obbligatorio per la visualizzazione del codice sorgente quando si è arrestati in un programma.|
 
- Questi metodi richiedono l'implementazione di diverse interfacce e metodi correlati al contesto. Pertanto, è necessario implementare il metodo [GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) e i metodi seguenti di [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md).
+ Questi metodi richiedono l'implementazione di diversi metodi e interfacce correlati al contesto. È quindi necessario implementare il [metodo GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) e i metodi seguenti di [IDebugDocumentContext2.](../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Ottiene l'intervallo di istruzioni file di un contesto di documento.|
 
- Per enumerare i contesti di codice, è necessario implementare tutti i metodi di [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md).
+ Per enumerare i contesti di codice, è necessario implementare tutti i metodi di [IEnumDebugCodeContexts2.](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
 
-## <a name="see-also"></a>Vedi anche
-- [Controllo di esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+## <a name="see-also"></a>Vedere anche
+- [Controllo dell'esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)

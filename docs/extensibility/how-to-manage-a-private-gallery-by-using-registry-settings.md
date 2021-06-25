@@ -1,9 +1,9 @@
 ---
-title: Gestire una raccolta privata con le impostazioni del registro di sistema
-description: Informazioni su come controllare l'accesso ai controlli, i modelli e gli strumenti in Visual Studio Gallery, nella raccolta di esempi o nelle raccolte private.
+title: Gestire una raccolta privata usando le impostazioni del Registro di sistema
+description: Informazioni su come controllare l'accesso a controlli, modelli e strumenti nella raccolta Visual Studio, nella raccolta di esempi o nelle raccolte private.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
@@ -13,18 +13,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5981dc4399e09df207b154b900fa163895c344c9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9fef1e6447ac07e9c3d4ccfb76a9ee1e06f91e42
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070063"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898835"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: gestire una raccolta privata utilizzando le impostazioni del registro di sistema
-Se si è un amministratore o lo sviluppatore di un'estensione della shell isolata, è possibile controllare l'accesso ai controlli, ai modelli e agli strumenti di Visual Studio Gallery, della raccolta di esempi o delle raccolte private. Per rendere una raccolta disponibile o non disponibile, creare un file con *estensione pkgdef* che descrive le chiavi del registro di sistema modificate e i relativi valori.
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: Gestire una raccolta privata usando le impostazioni del Registro di sistema
+Gli amministratori o gli sviluppatori di un'estensione Isolated Shell possono controllare l'accesso a controlli, modelli e strumenti nella raccolta Visual Studio, nella raccolta di esempi o nelle raccolte private. Per rendere disponibile o non disponibile una raccolta, creare un file *con estensione pkgdef* che descrive le chiavi del Registro di sistema modificate e i relativi valori.
 
-## <a name="manage-private-galleries"></a>Gestire le raccolte private
- È possibile creare un file con *estensione pkgdef* per controllare l'accesso alle raccolte su più computer. Questo file deve avere il formato seguente.
+## <a name="manage-private-galleries"></a>Gestire raccolte private
+ È possibile creare un file *con estensione pkgdef* per controllare l'accesso alle raccolte in più computer. Questo file deve avere il formato seguente.
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -38,22 +38,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- La `Repositories` chiave fa riferimento alla raccolta da abilitare o disabilitare. Visual Studio Gallery e la raccolta di esempi usano i seguenti GUID del repository:
+ La `Repositories` chiave fa riferimento alla raccolta da abilitato o disabilitato. La Visual Studio e la raccolta di esempi usano i GUID del repository seguenti:
 
-- Raccolta di Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9
+- Visual Studio Gallery : 0F45E408-7995-4375-9485-86B8DB553DC9
 
 - Raccolta di esempi: AEB9CB40-D8E6-4615-B52C-27E307F8506C
 
-  Il `Disabled` valore è facoltativo. Per impostazione predefinita, la raccolta è abilitata.
+  Il `Disabled` valore è facoltativo. Per impostazione predefinita, è abilitata una raccolta.
 
-  Il `Priority` valore determina l'ordine in cui le raccolte sono elencate nella finestra di dialogo **Opzioni** . Visual Studio Gallery ha la priorità 10 e la raccolta di esempi ha priorità 20. Le raccolte private iniziano con la priorità 100. Se più raccolte hanno lo stesso valore di priorità, l'ordine in cui vengono visualizzate è determinato dai valori degli attributi localizzati `DisplayName` .
+  Il `Priority` valore determina l'ordine in cui le raccolte sono elencate nella **finestra di dialogo** Opzioni . Visual Studio Gallery ha la priorità 10 e la raccolta samples ha la priorità 20. Le raccolte private iniziano con la priorità 100. Se più raccolte hanno lo stesso valore di priorità, l'ordine in cui vengono visualizzate è determinato dai valori dei relativi attributi `DisplayName` localizzati.
 
-  Il `Protocol` valore è obbligatorio per le raccolte basate su Atom o su SharePoint.
+  Il valore è obbligatorio per le raccolte basate su `Protocol` Atom o basate su SharePoint.
 
-  `DisplayName` `DisplayNameResourceID` È necessario specificare sia, sia che `DisplayNamePackageGuid` . Se vengono specificati tutti, `DisplayNameResourceID` `DisplayNamePackageGuid` viene utilizzata la coppia e.
+  È `DisplayName` necessario specificare , o entrambi e `DisplayNameResourceID` `DisplayNamePackageGuid` . Se vengono specificati tutti, vengono usati `DisplayNameResourceID` `DisplayNamePackageGuid` la coppia e .
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Disabilitare Visual Studio Gallery usando un file con estensione pkgdef
- È possibile disabilitare una raccolta in un file con *estensione pkgdef* . La voce seguente Disabilita Visual Studio Gallery:
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Disabilitare la Visual Studio Gallery usando un file con estensione pkgdef
+ È possibile disabilitare una raccolta in un file *con estensione pkgdef.* La voce seguente disabilita la raccolta Visual Studio dati:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
@@ -61,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- La seguente voce Disabilita la raccolta di esempi:
+ La voce seguente disabilita la raccolta di esempi:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]
@@ -69,5 +69,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Raccolte private](../extensibility/private-galleries.md)
