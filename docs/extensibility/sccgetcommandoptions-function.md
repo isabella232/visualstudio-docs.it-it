@@ -2,7 +2,7 @@
 description: Questa funzione richiede all'utente le opzioni avanzate per un determinato comando.
 title: Funzione SccGetCommandOptions | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetCommandOptions
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6fc53f806989062a306260840a8f324a26d4669
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7972d874668649b8bb86adc15008880c5fc4152e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068375"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903931"
 ---
-# <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions (funzione)
+# <a name="sccgetcommandoptions-function"></a>Funzione SccGetCommandOptions
 Questa funzione richiede all'utente le opzioni avanzate per un determinato comando.
 
 ## <a name="syntax"></a>Sintassi
@@ -37,49 +37,49 @@ SCCRTN SccGetCommandOptions(
 ### <a name="parameters"></a>Parametri
  pvContext
 
-in Struttura del contesto del plug-in del controllo del codice sorgente.
+[in] Struttura del contesto del plug-in del controllo del codice sorgente.
 
  hWnd
 
-in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.
+[in] Handle per la finestra IDE che il plug-in del controllo del codice sorgente può usare come elemento padre per qualsiasi finestra di dialogo fornita.
 
- iCommand
+ Icommand
 
-in Comando per cui sono richieste le opzioni avanzate. per i valori possibili, vedere il [codice di comando](../extensibility/command-code-enumerator.md) .
+[in] Comando per il quale sono richieste opzioni avanzate (vedere [Codice di comando](../extensibility/command-code-enumerator.md) per i valori possibili).
 
  ppvOptions
 
-in La struttura dell'opzione (può anche essere `NULL` ).
+[in] Struttura dell'opzione (può anche essere `NULL` ).
 
 ## <a name="return-value"></a>Valore restituito
- Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
+ È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Esito positivo.|
-|SCC_I_ADV_SUPPORT|Il plug-in del controllo del codice sorgente supporta le opzioni avanzate per il comando.|
-|SCC_I_OPERATIONCANCELED|L'utente ha annullato la finestra di dialogo **Opzioni** del plug-in del controllo del codice sorgente.|
+|SCC_OK|Operazione completata.|
+|SCC_I_ADV_SUPPORT|Il plug-in di controllo del codice sorgente supporta le opzioni avanzate per il comando .|
+|SCC_I_OPERATIONCANCELED|L'utente ha annullato la finestra di dialogo Opzioni del plug-in **del** controllo del codice sorgente.|
 |SCC_E_OPTNOTSUPPORTED|Il plug-in del controllo del codice sorgente non supporta questa operazione.|
-|SCC_E_ISCHECKEDOUT|Non è possibile eseguire questa operazione su un file attualmente estratto.|
-|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|
+|SCC_E_ISCHECKEDOUT|Impossibile eseguire questa operazione su un file attualmente estratto.|
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di problemi di connessione. È consigliabile eseguire un nuovo tentativo.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
 ## <a name="remarks"></a>Commenti
- L'IDE chiama questa funzione per la prima volta con `ppvOptions` = `NULL` per determinare se il plug-in del controllo del codice sorgente supporta la funzionalità opzioni avanzate per il comando specificato. Se il plug-in supporta la funzionalità per il comando, l'IDE chiama di nuovo questa funzione quando l'utente richiede opzioni avanzate (in genere implementate come pulsante **Avanzate** in una finestra di dialogo) e fornisce un puntatore non null per `ppvOptions` che punta a un `NULL` puntatore. Il plug-in archivia tutte le opzioni avanzate specificate dall'utente in una struttura privata e restituisce un puntatore a tale struttura in `ppvOptions` . Questa struttura viene quindi passata a tutte le altre funzioni API del plug-in del controllo del codice sorgente che è necessario conoscere, incluse le chiamate successive alla `SccGetCommandOptions` funzione.
+ L'IDE chiama questa funzione per la prima volta con per determinare se il plug-in del controllo del codice sorgente supporta la funzionalità `ppvOptions` = `NULL` opzioni avanzate per il comando specificato. Se il plug-in supporta la funzionalità per tale comando, l'IDE chiama di nuovo  questa funzione quando l'utente richiede opzioni avanzate (in genere implementate come pulsante Avanzate in una finestra di dialogo) e fornisce un puntatore non NULL per che punta a un `ppvOptions` puntatore. `NULL` Il plug-in archivia tutte le opzioni avanzate specificate dall'utente in una struttura privata e restituisce un puntatore a tale struttura in `ppvOptions` . Questa struttura viene quindi passata a tutte le altre funzioni API plug-in del controllo del codice sorgente che devono essere a loro volta a conoscere, incluse le chiamate successive alla `SccGetCommandOptions` funzione.
 
  Un esempio può essere utile per chiarire questa situazione.
 
- Un utente sceglie il comando **Get** e l'IDE Visualizza una finestra di dialogo **Get** . L'IDE chiama la `SccGetCommandOptions` funzione con `iCommand` impostato su `SCC_COMMAND_GET` e `ppvOptions` impostato su `NULL` . Questo comportamento viene interpretato dal plug-in del controllo del codice sorgente come domanda: "sono disponibili opzioni avanzate per questo comando?" Se il plug-in `SCC_I_ADV_SUPPORT` viene restituito, l'IDE Visualizza un pulsante **Avanzate** nella finestra di dialogo **Ottieni** .
+ Un utente sceglie il **comando Get e** l'IDE visualizza una finestra **di** dialogo Get. L'IDE chiama `SccGetCommandOptions` la funzione con impostato su e impostato su `iCommand` `SCC_COMMAND_GET` `ppvOptions` `NULL` . Questo viene interpretato dal plug-in del controllo del codice sorgente come la domanda "Sono disponibili opzioni avanzate per questo comando?" Se il plug-in restituisce `SCC_I_ADV_SUPPORT` , l'IDE visualizza un **pulsante** Avanzate nella finestra **di dialogo** Ottieni.
 
- La prima volta che l'utente fa clic sul pulsante **Avanzate** , l'IDE chiama `SccGetCommandOptions` di nuovo la funzione, questa volta con un non- `NULL``ppvOptions` che punta a un `NULL` puntatore. Il plug-in Visualizza la finestra di dialogo **opzioni Get** , chiede all'utente le informazioni, inserisce le informazioni nella relativa struttura e restituisce un puntatore a tale struttura in `ppvOptions` .
+ La prima volta che  l'utente fa clic sul pulsante Avanzate, l'IDE chiama nuovamente la funzione , questa volta con un `SccGetCommandOptions` non che punta a un `NULL``ppvOptions` `NULL` puntatore. Il plug-in visualizza  la propria finestra di dialogo Ottieni opzioni, richiede informazioni all'utente, inserisce le informazioni nella propria struttura e restituisce un puntatore a tale struttura in `ppvOptions` .
 
- Se l'utente fa nuovamente clic su **Avanzate** nella stessa finestra di dialogo, l'IDE chiama `SccGetCommandOptions` di nuovo la funzione senza modificare `ppvOptions` , in modo che la struttura venga passata di nuovo al plug-in. In questo modo il plug-in consente di reinizializzare la finestra di dialogo sui valori impostati in precedenza dall'utente. Il plug-in modifica la struttura sul posto prima di restituire.
+ Se l'utente **fa** di nuovo clic su Avanzate nella stessa finestra di dialogo, l'IDE chiama di nuovo la funzione senza modificare , in modo che la struttura viene passata nuovamente `SccGetCommandOptions` al `ppvOptions` plug-in. Ciò consente al plug-in di reinizializzare la finestra di dialogo con i valori impostati in precedenza dall'utente. Il plug-in modifica la struttura sul posto prima di restituire .
 
- Infine, quando l'utente fa clic su **OK** nella finestra di dialogo **Get** dell'IDE, l'IDE chiama il [SccGet](../extensibility/sccget-function.md), passando la struttura restituita in `ppvOptions` che contiene le opzioni avanzate.
+ Infine, quando l'utente fa clic  su **OK** nella finestra di dialogo Get dell'IDE, l'IDE chiama [SccGet](../extensibility/sccget-function.md), passando la struttura restituita in che contiene `ppvOptions` le opzioni avanzate.
 
 > [!NOTE]
-> Il comando `SCC_COMMAND_OPTIONS` viene usato quando l'IDE Visualizza una finestra di dialogo **Opzioni** che consente all'utente di impostare preferenze che controllano il funzionamento dell'integrazione. Se il plug-in del controllo del codice sorgente desidera fornire la propria finestra di dialogo di preferenze, può visualizzarlo da un pulsante **Avanzate** nella finestra di dialogo Preferenze dell'IDE. Il plug-in è esclusivamente responsabile del recupero e della conservazione delle informazioni. l'IDE non lo utilizza né lo modifica.
+> Il comando viene usato quando l'IDE visualizza una finestra di dialogo Opzioni che consente all'utente di impostare preferenze `SCC_COMMAND_OPTIONS` che controllano il funzionamento dell'integrazione.  Se il plug-in del controllo del codice sorgente vuole specificare la propria finestra di dialogo delle preferenze, può visualizzarlo da un **pulsante** Avanzate nella finestra di dialogo preferenze dell'IDE. Il plug-in è esclusivamente responsabile del recupero e della persistenza di queste informazioni. l'IDE non lo usa né lo modifica.
 
-## <a name="see-also"></a>Vedi anche
-- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
-- [Codice comando](../extensibility/command-code-enumerator.md)
+## <a name="see-also"></a>Vedere anche
+- [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+- [Codice di comando](../extensibility/command-code-enumerator.md)

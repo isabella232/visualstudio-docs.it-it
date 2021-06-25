@@ -1,9 +1,9 @@
 ---
 title: Elemento GuidSymbol | Microsoft Docs
-description: "L'elemento GuidSymbol contiene il GUID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando."
+description: L'elemento GuidSymbol contiene il GUID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb683c99614797fa8b05eae87c758ec33f675c99
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c30c7a48b03b5deed3267e106e926d3cb5114c1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057455"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902761"
 ---
-# <a name="guidsymbol-element"></a>Elemento GuidSymbol
-L' `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando. L'ID deriva da un `IDSymbol` elemento nell' `GuidSymbol` elemento. L' `GuidSymbol` elemento dispone di un `name` attributo che fornisce un nome descrittivo per il GUID, contenuto nell' `value` attributo.
+# <a name="guidsymbol-element"></a>GuidSymbol - elemento
+`GuidSymbol`L'elemento contiene il GUID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando. L'ID proviene da `IDSymbol` un elemento `GuidSymbol` nell'elemento . `GuidSymbol`L'elemento ha un attributo che fornisce un nome `name` descrittivo per il GUID, contenuto `value` nell'attributo .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,16 +46,16 @@ L' `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta 
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento IDSymbol](../extensibility/idsymbol-element.md)|Contiene l'ID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando.|
+|[Elemento IDSymbol](../extensibility/idsymbol-element.md)|Contiene l'ID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Symbols-elemento](../extensibility/symbols-element.md)|Raggruppa `GuidSymbol` gli elementi in un file con *estensione vsct* .|
+|[Symbols - elemento](../extensibility/symbols-element.md)|Raggruppa `GuidSymbol` gli elementi in un file con estensione *vsct.*|
 
 ## <a name="remarks"></a>Commenti
- In genere, un file *. vsct* contiene tre `GuidSymbol` elementi nella relativa `Symbols` sezione, uno per il pacchetto stesso, uno per il set di comandi (la raccolta di menu, gruppi e comandi resi disponibili dal pacchetto) e uno per le bitmap che forniscono icone per i pulsanti e altri componenti visivi. Ogni `IDSymbol` elemento in un dato `GuidSymbol` elemento deve avere un univoco `value` . Tuttavia, `IDSymbol` gli elementi con valori identici possono esistere in un pacchetto purché abbiano elementi padre diversi.
+ In genere, un file con estensione *vsct* contiene tre elementi nella relativa sezione, uno per il pacchetto stesso, uno per il set di comandi (la raccolta di menu, gruppi e comandi che il pacchetto rende disponibili) e uno per le bitmap che forniscono icone per i pulsanti e altri componenti `GuidSymbol` `Symbols` visivi. Ogni `IDSymbol` elemento in un determinato elemento deve avere un `GuidSymbol` `value` univoco. Tuttavia, gli elementi con valori identici possono esistere in un pacchetto purché `IDSymbol` hanno elementi padre diversi.
 
-## <a name="see-also"></a>Vedi anche
-- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Vedere anche
+- [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

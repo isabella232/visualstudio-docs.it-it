@@ -1,9 +1,9 @@
 ---
 title: Recupero di un elenco di frammenti di codice installati (legacy) | Microsoft Docs
-description: Informazioni su come ottenere tutti i frammenti di codice per un GUID del linguaggio specifico. I tasti di scelta rapida per i frammenti di codice possono essere inseriti in un elenco di completamento IntelliSense.
+description: Informazioni su come ottenere tutti i frammenti di codice per un GUID del linguaggio specifico. I collegamenti per questi frammenti di codice possono essere inseriti in un elenco di completamento IntelliSense.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - snippets, retrieving list
 - code snippets, retrieving list
@@ -14,23 +14,23 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f94d481a2884c64cb42b170d9d1abfa25c913a9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 051f356e7b6b6f1a92ba475617f48e5c6074f402
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069140"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898874"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy)
-Un frammento di codice è un frammento di codice che può essere inserito nel buffer di origine con un comando di menu (che consente di scegliere tra un elenco di frammenti di codice installati) o selezionando un collegamento al frammento da un elenco di completamento IntelliSense.
+Un frammento di codice è una parte di codice che può essere inserita nel buffer di origine con un comando di menu (che consente di scegliere tra un elenco di frammenti di codice installati) o selezionando un collegamento a un frammento di codice da un elenco di completamento IntelliSense.
 
- Il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> metodo ottiene tutti i frammenti di codice per un GUID del linguaggio specifico. I tasti di scelta rapida per i frammenti di codice possono essere inseriti in un elenco di completamento IntelliSense.
+ Il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> metodo ottiene tutti i frammenti di codice per un GUID del linguaggio specifico. I collegamenti per questi frammenti di codice possono essere inseriti in un elenco di completamento IntelliSense.
 
- Vedere [supporto per frammenti di codice in un servizio di linguaggio legacy](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) per informazioni dettagliate sull'implementazione dei frammenti di codice in un servizio di linguaggio del Framework di pacchetto gestito (MPF).
+ Per [informazioni dettagliate](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) sull'implementazione di frammenti di codice in un servizio di linguaggio MPF (Managed Package Framework), vedere Supporto per frammenti di codice in un servizio di linguaggio legacy.
 
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>Per recuperare un elenco di frammenti di codice
 
-1. Nel codice seguente viene illustrato come ottenere un elenco di frammenti di codice per una determinata lingua. I risultati vengono archiviati in una matrice di <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> strutture. Questo metodo usa il <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metodo statico per ottenere l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interfaccia dal <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> servizio. Tuttavia, è anche possibile usare il provider di servizi fornito al pacchetto VSPackage e chiamare il <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> metodo.
+1. Il codice seguente illustra come ottenere un elenco di frammenti di codice per un determinato linguaggio. I risultati vengono archiviati in una matrice <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> di strutture. Questo metodo usa il metodo <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> statico per ottenere <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> l'interfaccia dal <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> servizio. Tuttavia, è anche possibile usare il provider di servizi fornito al pacchetto VSPackage e chiamare il <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> metodo .
 
     ```csharp
     using System;
@@ -105,10 +105,10 @@ Un frammento di codice è un frammento di codice che può essere inserito nel bu
 
 ### <a name="to-call-the-getsnippets-method"></a>Per chiamare il metodo GetSnippets
 
-1. Il metodo seguente mostra come chiamare il `GetSnippets` metodo al termine di un'operazione di analisi. Il <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> metodo viene chiamato dopo un'operazione di analisi avviata con il motivo <xref:Microsoft.VisualStudio.Package.ParseReason> .
+1. Il metodo seguente illustra come chiamare il `GetSnippets` metodo al completamento di un'operazione di analisi. Il <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> metodo viene chiamato dopo un'operazione di analisi avviata con il motivo <xref:Microsoft.VisualStudio.Package.ParseReason> .
 
 > [!NOTE]
-> L' `expansionsList` elenco di matrici viene memorizzato nella cache per motivi di prestazioni. Le modifiche apportate ai frammenti di codice non vengono riflesse nell'elenco finché il servizio di linguaggio non viene arrestato e ricaricato, ad esempio arrestando e riavviando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+> `expansionsList`L'elenco di matrici viene memorizzato nella cache per motivi di prestazioni. Le modifiche ai frammenti di codice non vengono riflesse nell'elenco fino a quando il servizio di linguaggio non viene arrestato e ricaricato , ad esempio arrestando e riavviando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -127,13 +127,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>Per utilizzare le informazioni sul frammento
+### <a name="to-use-the-snippet-information"></a>Per usare le informazioni del frammento di codice
 
-1. Nel codice seguente viene illustrato come utilizzare le informazioni sul frammento restituite dal `GetSnippets` metodo. Il `AddSnippets` metodo viene chiamato dal parser in risposta a qualsiasi motivo di analisi usato per popolare un elenco di frammenti di codice. Questa operazione deve essere eseguita dopo che l'analisi completa è stata eseguita per la prima volta.
+1. Il codice seguente illustra come usare le informazioni del frammento di codice restituite dal `GetSnippets` metodo . Il metodo viene chiamato dal parser in risposta a qualsiasi motivo di analisi usato per popolare un `AddSnippets` elenco di frammenti di codice. Questa operazione deve essere eseguita dopo che l'analisi completa è stata eseguita per la prima volta.
 
-     Il `AddDeclaration` metodo compila un elenco di dichiarazioni che verrà visualizzato in un secondo momento in un elenco di completamento.
+     Il metodo compila un elenco di dichiarazioni che verrà successivamente `AddDeclaration` visualizzato in un elenco di completamento.
 
-     La `TestDeclaration` classe contiene tutte le informazioni che possono essere visualizzate in un elenco di completamento e il tipo di dichiarazione.
+     La classe contiene tutte le informazioni che possono essere visualizzate in un elenco `TestDeclaration` di completamento, nonché il tipo di dichiarazione.
 
     ```csharp
     class TestAuthoringScope : AuthoringScope
@@ -178,5 +178,5 @@ class TestLanguageService : LanguageService
 
     ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Supporto per i frammenti di codice in un servizio di linguaggio legacy](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

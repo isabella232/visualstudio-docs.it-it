@@ -1,9 +1,9 @@
 ---
-title: Elemento combos | Microsoft Docs
-description: Gli elementi combo raggruppano gli elementi combinati, che definiscono i comandi che vengono visualizzati in una casella combinata. Questo articolo contiene un esempio.
+title: Elementi Combos | Microsoft Docs
+description: L'elemento Combo raggruppa gli elementi Combo, che definiscono i comandi visualizzati in una casella combinata. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9135e2f863f3ab277e6c7408579d7ef8242bce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77c293fa827187461c5a6b84333c503a2f5cc231
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089719"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903918"
 ---
-# <a name="combos-element"></a>Elemento combos
-Raggruppa gli elementi di elementi [combinati](../extensibility/combo-element.md) .
+# <a name="combos-element"></a>Elemento Combos
+Raggruppa [gli elementi dell'elemento Combo.](../extensibility/combo-element.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,14 +39,14 @@ Raggruppa gli elementi di elementi [combinati](../extensibility/combo-element.md
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento combos](../extensibility/combos-element.md)|Raggruppa gli elementi combinati.|
-|[Elemento combinato](../extensibility/combo-element.md)|Definisce i comandi che vengono visualizzati in una casella combinata.|
+|[Elemento Combos](../extensibility/combos-element.md)|Raggruppa gli elementi combo.|
+|[Elemento combo](../extensibility/combo-element.md)|Definisce i comandi visualizzati in una casella combinata.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

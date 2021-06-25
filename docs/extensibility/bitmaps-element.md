@@ -1,9 +1,9 @@
 ---
-title: Elemento bitmaps | Microsoft Docs
-description: L'elemento bitmap raggruppa uno o più elementi bitmap. Questo articolo contiene un esempio dell'elemento bitmap.
+title: Elemento Bitmaps | Microsoft Docs
+description: L'elemento Bitmaps raggruppa uno o più elementi Bitmap. Questo articolo contiene un esempio dell'elemento Bitmaps.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc17162c8d66df99eefe721589863ee4221c8602
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a86943e683502bdd1cd19668e9aafcb8fe7e1bc8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068206"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903307"
 ---
-# <a name="bitmaps-element"></a>Bitmaps (elemento)
-Raggruppa gli elementi [bitmap dell'elemento](../extensibility/bitmap-element.md) .
+# <a name="bitmaps-element"></a>Bitmaps - elemento
+Raggruppa gli [elementi dell'elemento Bitmap.](../extensibility/bitmap-element.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ Raggruppa gli elementi [bitmap dell'elemento](../extensibility/bitmap-element.md
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Bitmaps (elemento)](../extensibility/bitmaps-element.md)|Raggruppa gli elementi bitmap.|
-|[Bitmap-elemento](../extensibility/bitmap-element.md)|Definisce una bitmap.|
+|[Bitmaps - elemento](../extensibility/bitmaps-element.md)|Raggruppa gli elementi Bitmap.|
+|[Elemento Bitmap](../extensibility/bitmap-element.md)|Definisce una bitmap.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti del pacchetto VSPackage.|
 
 ## <a name="example"></a>Esempio
 

@@ -1,9 +1,9 @@
 ---
 title: GUID e costanti in Visual Studio SDK | Microsoft Docs
-description: La classe VSConstants fornisce l'accesso a una selezione di GUID e costanti dell'ambiente in Visual Studio SDK.
+description: La classe VSConstants consente di accedere a una selezione di GUID e costanti dell'ambiente in Visual Studio SDK.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a76c0328581f3060fa77cdbb2bf2b9a72913230
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f82ce9dcc035e3f62e120ed8e8c5871af414e8de
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057559"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902774"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUID e costanti in Visual Studio SDK
 La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce l'accesso a una selezione di GUID e costanti dell'ambiente.
@@ -29,6 +29,6 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce l'accesso a una sel
 - [Costanti IDE](../extensibility/ide-constants.md) Elenca le costanti SDK fornite da <xref:Microsoft.VisualStudio.VSConstants> .
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Costanti com nel codice gestito](../extensibility/com-constants-in-managed-code.md) Elenca le costanti COM standard disponibili per il codice gestito dal framework di pacchetto gestito (MPF).
+- [Costanti COM nel codice gestito](../extensibility/com-constants-in-managed-code.md) Elenca le costanti COM standard disponibili per il codice gestito da Managed Package Framework (MPF).
 
-- [Comandi definiti dall'IDE per l'estensione dei sistemi di progetto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) Elenca i diversi tipi di elementi di comando utilizzati per estendere i sistemi di progetto.
+- [Comandi definiti dall'IDE per l'estensione dei sistemi di progetto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) Elenca i diversi tipi di elementi di comando usati per estendere i sistemi di progetto.

@@ -1,9 +1,9 @@
 ---
 title: Costanti COM nel codice gestito | Microsoft Docs
-description: Informazioni sul Framework di pacchetto gestito, che rende disponibili per il codice gestito alcune costanti COM standard.
+description: Informazioni su Managed Package Framework, che rende disponibili alcune costanti COM standard per il codice gestito.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
@@ -12,15 +12,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aed8ec62278850d0b091320c12ece484778eb15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bb259d754befa3596e1dff1e49931c8ee81c665b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089732"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904321"
 ---
 # <a name="com-constants-in-managed-code"></a>Costanti COM nel codice gestito
-Il Framework di pacchetto gestito (MPF) rende disponibili alcune costanti COM standard per il codice gestito. Queste costanti sono elencate di seguito per riferimento.
+Managed Package Framework (MPF) rende disponibili alcune costanti COM standard per il codice gestito. Queste costanti sono elencate di seguito per riferimento.
 
 ## <a name="boolean-hresult-values"></a>Valori HRESULT booleani
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
@@ -128,5 +128,5 @@ Il Framework di pacchetto gestito (MPF) rende disponibili alcune costanti COM st
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Gestione degli errori e valori restituiti](../extensibility/error-handling-and-return-values.md)

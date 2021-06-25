@@ -1,9 +1,9 @@
 ---
-title: Origini eventi (Visual Studio SDK) | Microsoft Docs
-description: 'Informazioni sulle due origini degli eventi nel debug di Visual Studio: il motore di debug e gestione debug della sessione.'
+title: Origini eventi (VISUAL STUDIO SDK) | Microsoft Docs
+description: 'Informazioni sulle due origini degli eventi in Visual Studio debug: il motore di debug e Gestione debug sessione.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
@@ -12,18 +12,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6213a1462c391d13bbdf8a20ac61e232cafb49
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8a1956cb3643b9f49fae6bb42bbb46675b7b2398
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097006"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898565"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Origini eventi (Visual Studio SDK)
-Esistono due origini di eventi: il motore di debug (DE) e la gestione del debug della sessione (SDM). Gli eventi inviati da un DE hanno un motore non NULL, mentre gli eventi inviati da SDM hanno un motore NULL.
+# <a name="event-sources-visual-studio-sdk"></a>Origini evento (Visual Studio SDK)
+Esistono due origini di eventi: il motore di debug (DE) e session debug manager (SDM). Gli eventi inviati da un de hanno un motore non NULL, mentre gli eventi inviati da SDM hanno un motore NULL.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come inviare **IDebugProgramCreateEvent2** da de a SDM.
+L'esempio seguente illustra come inviare **IDebugProgramCreateEvent2** da DE a SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
@@ -74,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Invio di eventi](../../extensibility/debugger/sending-events.md)

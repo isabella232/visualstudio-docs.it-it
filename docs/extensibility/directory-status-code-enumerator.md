@@ -1,9 +1,9 @@
 ---
-title: Enumeratore del codice di stato della directory | Microsoft Docs
+title: Enumeratore directory Status Code | Microsoft Docs
 description: L'enumeratore SccDirStatus contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente e viene usato da SccDirQueryInfo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - directory status code enumerator
 - source control plug-ins, directory status enumeration
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e995fb1dcb879645f59d6d8750852a790c99e90
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a504c6c080c34b4506cf4078b64465a3bd6c7d97
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091253"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904230"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumeratore del codice di stato della directory
-L' `SccDirStatus` enumeratore contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Questa operazione è stata introdotta nella versione 1,2 dell'API del plug-in del controllo del codice sorgente.
+`SccDirStatus`L'enumeratore contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccDirQueryInfo.](../extensibility/sccdirqueryinfo-function.md) Questa funzionalità è stata introdotta nella versione 1.2 dell'API plug-in del controllo del codice sorgente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,14 +35,14 @@ enum SccDirStatus {
 ```
 
 ## <a name="members"></a>Members
- Non è stato possibile ottenere lo stato SCC_DIRSTATUS_INVALID; non fare affidamento su di esso.
+ SCC_DIRSTATUS_INVALID impossibile ottenere lo stato. non si basano su di esso.
 
- SCC_DIRSTATUS_NOTCONTROLLED directory non è sotto il controllo del codice sorgente.
+ SCC_DIRSTATUS_NOTCONTROLLED Directory non è sotto il controllo del codice sorgente.
 
- SCC_DIRSTATUS_CONTROLLED directory è sotto il controllo del codice sorgente.
+ SCC_DIRSTATUS_CONTROLLED Directory è sotto il controllo del codice sorgente.
 
  SCC_DIRSTATUS_EMPTYPROJ progetto corrispondente a questa directory è vuoto.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

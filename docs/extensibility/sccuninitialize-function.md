@@ -1,8 +1,8 @@
 ---
-description: Questa funzione pulisce tutte le allocazioni o le connessioni aperte create da una precedente chiamata a SccInitialize in preparazione per arrestare il plug-in del controllo del codice sorgente.
+description: Questa funzione pulisce tutte le allocazioni o le connessioni aperte create da una chiamata precedente a SccInitialize in preparazione dell'arresto del plug-in del controllo del codice sorgente.
 title: Funzione SccUninitialize | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccUninitialize
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d387167e2032cbb253e86f8d67da38f99fc1076
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0d46aedd3e962d0684689ff29a34061b777fe08e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063773"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904074"
 ---
 # <a name="sccuninitialize-function"></a>Funzione SccUninitialize
-Questa funzione pulisce tutte le allocazioni o le connessioni aperte create da una precedente chiamata a [SccInitialize](../extensibility/sccinitialize-function.md) in preparazione per arrestare il plug-in del controllo del codice sorgente.
+Questa funzione pulisce tutte le allocazioni o le connessioni aperte create da una chiamata precedente a [SccInitialize](../extensibility/sccinitialize-function.md) in preparazione dell'arresto del plug-in del controllo del codice sorgente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,18 +34,18 @@ SCCRTN SccUninitialize (
 #### <a name="parameters"></a>Parametri
  pvContext
 
-in Puntatore alla struttura del contesto del plug-in del controllo del codice sorgente creato in [SccInitialize](../extensibility/sccinitialize-function.md).
+[in] Puntatore alla struttura del contesto del plug-in del controllo del codice sorgente creata in [SccInitialize.](../extensibility/sccinitialize-function.md)
 
 ## <a name="return-value"></a>Valore restituito
- Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
+ È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
 |SCC_OK|La pulizia è stata completata correttamente.|
 
 ## <a name="remarks"></a>Commenti
- Il plug-in del controllo del codice sorgente è responsabile della preparazione per l'arresto e della liberazione della memoria allocata dal plug-in per la struttura del contesto. La funzione viene chiamata una volta per ogni istanza specifica di un plug-in. Una chiamata a [SccInitialize](../extensibility/sccinitialize-function.md) precede questa chiamata. Nessun progetto può ancora essere aperto al momento della chiamata a `SccUninitialize` .
+ Il plug-in di controllo del codice sorgente è responsabile della preparazione per l'arresto e della liberazione della memoria allocata dal plug-in per la struttura del contesto. La funzione viene chiamata una volta per ogni istanza specifica di un plug-in. Una chiamata a [SccInitialize](../extensibility/sccinitialize-function.md) precede questa chiamata. Nessun progetto può essere ancora aperto al momento della chiamata a `SccUninitialize` .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

@@ -1,9 +1,9 @@
 ---
-title: Enumeratore Message | Microsoft Docs
-description: I membri di questo enumeratore vengono usati per la funzione TEXTOUTPROC, che è una funzione di callback fornita dall'IDE quando chiama il SccOpenProject.
+title: Enumeratore di messaggi | Microsoft Docs
+description: I membri di questo enumeratore vengono usati per la funzione TEXTOUTPROC, ovvero una funzione di callback fornita dall'IDE quando chiama SccOpenProject.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
@@ -13,17 +13,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 113f9fe8470b718a219e967b41bc92ecab2cf3c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77c49f79ccdcfc4aa0325b89dfb38f3f8d4da721
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063994"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902592"
 ---
-# <a name="message-enumerator"></a>Enumeratore Message
-I flag seguenti vengono usati per la `TEXTOUTPROC` funzione, che è una funzione di callback fornita dall'IDE quando chiama [SccOpenProject](../extensibility/sccopenproject-function.md) (vedere [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) per informazioni dettagliate sulla funzione di callback).
+# <a name="message-enumerator"></a>Enumeratore di messaggi
+I flag seguenti vengono usati per la funzione, che è una funzione di callback fornita dall'IDE quando chiama `TEXTOUTPROC` [SccOpenProject](../extensibility/sccopenproject-function.md) (vedere [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) per informazioni dettagliate sulla funzione di callback).
 
- Se all'IDE viene richiesto di annullare il processo, potrebbe essere presente uno dei messaggi di annullamento. In questo caso, il plug-in del controllo del codice sorgente USA `SCC_MSG_STARTCANCEL` per richiedere all'IDE di visualizzare il pulsante **Annulla** . Successivamente, è possibile inviare qualsiasi set di messaggi normali. Se uno di questi restituisce `SCC_MSG_RTN_CANCEL` , il plug-in chiude l'operazione e restituisce. Il plug-in esegue anche periodicamente il polling `SCC_MSG_DOCANCEL` per determinare se l'utente ha annullato l'operazione. Al termine di tutte le operazioni o se l'utente ha annullato, il plug-in Invia `SCC_MSG_STOPCANCEL` . I `SCC_MSG_INFO` tipi, SCC_MSG_WARNING e SCC_MSG_ERROR vengono utilizzati per i messaggi che vengono visualizzati nell'elenco di scorrimento dei messaggi. `SCC_MSG_STATUS` è un tipo speciale che indica che il testo deve essere visualizzato in una barra di stato o in un'area di visualizzazione temporanea. Non rimane in modo permanente nell'elenco.
+ Se all'IDE viene richiesto di annullare il processo, potrebbe essere visualizzato uno dei messaggi di annullamento. In questo caso, il plug-in del controllo del codice sorgente usa `SCC_MSG_STARTCANCEL` per chiedere all'IDE di visualizzare il **pulsante** Annulla. Successivamente, è possibile inviare qualsiasi set di messaggi normali. Se uno di questi valori restituisce `SCC_MSG_RTN_CANCEL` , il plug-in chiude l'operazione e restituisce . Il plug-in esegue anche il polling `SCC_MSG_DOCANCEL` periodico per determinare se l'utente ha annullato l'operazione. Al termine di tutte le operazioni o se l'utente ha annullato, il plug-in invia `SCC_MSG_STOPCANCEL` . I tipi , SCC_MSG_WARNING e SCC_MSG_ERROR vengono usati per i messaggi visualizzati nell'elenco `SCC_MSG_INFO` di scorrimento dei messaggi. `SCC_MSG_STATUS` è un tipo speciale che indica che il testo deve essere visualizzato in una barra di stato o in un'area di visualizzazione temporanea. Non rimane permanentemente nell'elenco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,24 +42,24 @@ enum {
 ```
 
 ## <a name="members"></a>Members
- SCC_MSG_RTN_CANCEL restituito da callback per indicare l'annullamento.
+ SCC_MSG_RTN_CANCEL restituire dal callback per indicare l'annullamento.
 
- SCC_MSG_RTN_OK tornare da callback per continuare.
+ SCC_MSG_RTN_OK restituire dal callback per continuare.
 
- SCC_MSG_INFO messaggio è informativo.
+ SCC_MSG_INFO message è informativo.
 
- SCC_MSG_WARNING messaggio è un avviso.
+ SCC_MSG_WARNING Message è un avviso.
 
- SCC_MSG_ERROR messaggio è un errore.
+ SCC_MSG_ERROR Message è un errore.
 
  SCC_MSG_STATUS messaggio è destinato alla barra di stato.
 
- Non SCC_MSG_DOCANCEL testo; IDE restituisce `SCC_MSG_RTN_OK` o `SCC_MSG_RTN_CANCEL` .
+ SCC_MSG_DOCANCEL testo; IDE restituisce `SCC_MSG_RTN_OK` o `SCC_MSG_RTN_CANCEL` .
 
  SCC_MSG_STARTCANCEL avvia un ciclo di annullamento.
 
- SCC_MSG_STOPCANCEL interrompe il ciclo di annullamento.
+ SCC_MSG_STOPCANCEL arresta il ciclo di annullamento.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

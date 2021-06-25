@@ -1,9 +1,9 @@
 ---
-title: Elemento groups | Microsoft Docs
-description: L'elemento groups contiene voci che definiscono i gruppi di comandi di un VSPackage. Questo articolo include un esempio.
+title: Elementi Groups | Microsoft Docs
+description: L'elemento Groups contiene voci che definiscono i gruppi di comandi di un VSPackage. Questo articolo include un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab9ca0a55d8d07aa2541e8884ee92c1c308cabe9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4f20e19e19539e71a4dbed74a0dd5bb9af62a15f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057572"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902826"
 ---
 # <a name="groups-element"></a>Elemento Groups
-Contiene le voci che definiscono i gruppi di comandi di un VSPackage.
+Contiene voci che definiscono i gruppi di comandi di un vspackage.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,14 +39,14 @@ Contiene le voci che definiscono i gruppi di comandi di un VSPackage.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
 |[Group - elemento](../extensibility/group-element.md)|Rappresenta un singolo gruppo di comandi.|
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un VSPackage.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi di un vspackage.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

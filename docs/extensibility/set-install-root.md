@@ -1,48 +1,48 @@
 ---
-title: Installazione all'esterno della cartella Extensions con VSIX V3 | Microsoft Docs
-description: Informazioni sull'installazione di asset di estensioni di Visual Studio SDK all'esterno della cartella Extensions e sui percorsi validi.
+title: Installazione all'esterno della cartella extensions con VSIX v3 | Microsoft Docs
+description: Informazioni sull'installazione Visual Studio asset dell'estensione SDK all'esterno della cartella delle estensioni e sui percorsi validi.
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fecad421cca4cdf4644add5e5e7c7a6af4a23c0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 24b1e1a73ff588e5531eec2025c8a3c9e94760a4
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073027"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898448"
 ---
 # <a name="install-outside-the-extensions-folder"></a>Eseguire l'installazione all'esterno della cartella delle estensioni
 
-A partire da Visual Studio 2017 e VSIX V3 (versione 3), gli asset di estensione possono essere installati all'esterno della cartella estensioni. Attualmente, i percorsi seguenti sono abilitati come percorsi di installazione validi (dove [INSTALLDIR] è mappato alla directory di installazione dell'istanza di Visual Studio):
+A partire Visual Studio 2017 e VSIX v3 (versione 3), gli asset di estensione possono essere installati all'esterno della cartella extensions. Attualmente, i percorsi seguenti sono abilitati come percorsi di installazione validi (dove [INSTALLDIR] è mappato alla directory Visual Studio di installazione dell'istanza di :
 
-* [INSTALLDIR] \MSBuild
-* [INSTALLDIR] \Xml\schemas.
-* [INSTALLDIR] \Common7\ide\publicassemblies.
-* [INSTALLDIR] \Licenses
-* [INSTALLDIR] \Common7\IDE\ReferenceAssemblies
-* [INSTALLDIR] \Common7\IDE\RemoteDebugger
-* [INSTALLDIR] \Common7\IDE\VC\VCTargets (supportata solo per Visual Studio 2017; deprecato per Visual Studio 2019 e versioni successive)
+* [INSTALLDIR]\MSBuild
+* [INSTALLDIR]\Xml\Schemas
+* [INSTALLDIR]\Common7\IDE\PublicAssemblies
+* [INSTALLDIR]\Licenses
+* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
+* [INSTALLDIR]\Common7\IDE\RemoteDebugger
+* [INSTALLDIR]\Common7\IDE\VC\VCTargets (supportato solo per Visual Studio 2017; deprecato per Visual Studio 2019 e versioni successive)
 
 > [!NOTE]
-> Il formato VSIX non consente di installare all'esterno della struttura di cartelle di installazione di Visual Studio. 
+> Il formato VSIX non consente di eseguire l'installazione all'esterno della Visual Studio di cartelle di installazione. 
 
-Per supportare l'installazione in queste directory, è necessario installare il progetto VSIX "per istanza per computer". Questa operazione può essere abilitata selezionando la casella di controllo "tutti gli utenti" nella finestra di progettazione dell'estensione vsixmanifest:
+Per supportare l'installazione in queste directory, VSIX deve essere installato "per istanza per computer". Questa opzione può essere abilitata selezionando la casella di controllo "all-users" nella finestra di progettazione extension.vsixmanifest:
 
-![controllare tutti gli utenti](media/check-all-users.png)
+![controlla tutti gli utenti](media/check-all-users.png)
 
 ## <a name="how-to-set-the-installroot"></a>Come impostare InstallRoot
 
-Per impostare le directory di installazione, è possibile usare la finestra **Proprietà** in Visual Studio. È ad esempio possibile impostare la `InstallRoot` proprietà di un riferimento a un progetto su uno dei percorsi indicati in precedenza:
+Per impostare le directory di installazione, è possibile usare la **finestra** Proprietà in Visual Studio. Ad esempio, è possibile impostare la `InstallRoot` proprietà di un riferimento al progetto su uno dei percorsi precedenti:
 
-![installa proprietà radice](media/install-root-properties.png)
+![installare le proprietà radice](media/install-root-properties.png)
 
-I metadati vengono aggiunti alla `ProjectReference` proprietà corrispondente all'interno del file con estensione csproj del progetto VSIX:
+Verranno aggiunti alcuni metadati alla proprietà corrispondente all'interno del file con estensione csproj del `ProjectReference` progetto VSIX:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -57,11 +57,11 @@ I metadati vengono aggiunti alla `ProjectReference` proprietà corrispondente al
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Come impostare un sottopercorso in InstallRoot
 
-Se si vuole eseguire l'installazione in un sottopercorso sotto `InstallRoot` , è possibile impostare la `VsixSubPath` proprietà come la `InstallRoot` Proprietà. Si immagini, ad esempio, che l'output del riferimento al progetto venga installato in ' [INSTALLDIR] \MSBuild\MyCompany\MySDK\1.0'. Questa operazione può essere eseguita facilmente con la finestra di progettazione delle proprietà:
+Se si desidera eseguire l'installazione in un sottopercorso sotto , è possibile farlo impostando la proprietà esattamente `InstallRoot` `VsixSubPath` come la proprietà `InstallRoot` . Ad esempio, si vuole che l'output del riferimento al progetto sia installato in '[INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0'. È possibile eseguire facilmente questa operazione con la finestra di progettazione delle proprietà:
 
-![imposta sottopercorso](media/set-subpath.png)
+![impostare il sottopercorso](media/set-subpath.png)
 
-Le modifiche. csproj corrispondenti appariranno come segue:
+Le modifiche csproj corrispondenti saranno simili alle seguenti:
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -74,4 +74,4 @@ Le modifiche. csproj corrispondenti appariranno come segue:
 
 ## <a name="extra-information"></a>Informazioni aggiuntive
 
-Le modifiche di progettazione proprietà si applicano solo a riferimenti a progetti. è anche possibile impostare i `InstallRoot` metadati per gli elementi all'interno del progetto (usando gli stessi metodi descritti in precedenza).
+Le modifiche apportate alla finestra di progettazione delle proprietà non si applicano solo ai riferimenti al progetto. È possibile impostare anche i metadati per gli elementi all'interno del `InstallRoot` progetto (usando gli stessi metodi descritti in precedenza).

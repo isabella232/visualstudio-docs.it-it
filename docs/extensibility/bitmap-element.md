@@ -1,9 +1,9 @@
 ---
-title: Elemento bitmap | Microsoft Docs
-description: L'elemento bitmap definisce una bitmap. La bitmap viene caricata da una risorsa o da un file. Questo articolo contiene un esempio.
+title: Elemento Bitmap | Microsoft Docs
+description: L'elemento Bitmap definisce una bitmap. La bitmap viene caricata da una risorsa o da un file. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
@@ -13,14 +13,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32f07857f2d04989b0de021988b2961d4a1553d2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c8f3daf25a3ffe025bcdef65dbaa6def942d0fb4
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068219"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903320"
 ---
-# <a name="bitmap-element"></a>Bitmap-elemento
+# <a name="bitmap-element"></a>Elemento Bitmap
 Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.
 
 ## <a name="syntax"></a>Sintassi
@@ -36,20 +36,20 @@ Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|guid|Obbligatorio. GUID dell'identificatore del comando GUID/ID.<br /><br /> L'attributo GUID per una bitmap non è associato ad alcun VSPackage o altro gruppo di comandi.  Deve essere univoco per la definizione di bitmap e non deve essere usato per altri scopi.|
-|Da un Resid|ID dell'identificatore del comando GUID/ID. È necessario specificare l'attributo da un Resid o href.<br /><br /> L'attributo da un Resid è un ID di risorsa integer che determina l'elenco bitmap da caricare durante l'Unione della tabella dei comandi.  Quando viene caricata la tabella dei comandi, le bitmap specificate dall'ID risorsa verranno caricate dalla risorsa dello stesso modulo.|
-|utilizzato|Obbligatorio se è presente l'attributo da un Resid. Seleziona le immagini disponibili nell'elenco bitmap.|
-|href|Percorso della bitmap. È necessario specificare l'attributo da un Resid o href.<br /><br /> Il percorso di inclusione viene cercato per il file di immagine indicato, incorporato nel file binario risultante.  Durante l'Unione della tabella dei comandi, l'immagine viene copiata e non è necessaria alcuna ricerca o carico aggiuntivo per le risorse.  Se l'attributo used non è presente, sono disponibili tutte le immagini nella striscia. **Nota:**  Le immagini possono essere fornite in uno dei diversi formati che includono *. bmp*, *. png* e *. gif*.  Le versioni precedenti del compilatore non supportavano immagini bitmap a 32 bit contenenti informazioni Alpha per la trasparenza parziale. La soluzione alternativa per queste versioni consiste nell'usare il formato *png* .|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Obbligatorio. GUID dell'identificatore del comando GUID/ID.<br /><br /> L'attributo guid per una bitmap non è associato ad alcun VSPackage o a un altro gruppo di comandi.  Deve essere univoco per la definizione della bitmap e non deve essere usato per altri scopi.|
+|Resid|ID dell'identificatore del comando GUID/ID. L'attributo resID o href è obbligatorio.<br /><br /> L'attributo resID è un ID risorsa integer che determina la striscia bitmap da caricare durante l'unione della tabella dei comandi.  Quando viene caricata la tabella dei comandi, le bitmap specificate dall'ID risorsa verranno caricate dalla risorsa dello stesso modulo.|
+|usedList|Obbligatorio se è presente l'attributo resID. Seleziona le immagini disponibili nella striscia bitmap.|
+|href|Percorso della bitmap. L'attributo resID o href è obbligatorio.<br /><br /> Nel percorso di inclusione viene cercato il file di immagine indicato, incorporato nel file binario risultante.  Durante l'unione della tabella dei comandi, l'immagine viene copiata e non è necessaria alcuna ricerca o caricamento di risorse aggiuntive.  Se l'attributo usedList non è presente, tutte le immagini nella striscia sono disponibili. **Nota:**  Le immagini possono essere fornite in uno dei diversi formati che includono.bmp *,* *.png* e *.gif*.  Le versioni precedenti del compilatore non supportavano immagini bitmap a 32 bit con informazioni alfa per la trasparenza parziale. La soluzione alternativa per queste versioni consiste nell'usare il *.png* predefinito.|
+|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Bitmaps (elemento)](../extensibility/bitmaps-element.md)|Raggruppa gli elementi bitmap.|
+|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Raggruppa gli elementi Bitmap.|
 
 ## <a name="example"></a>Esempio
 
@@ -60,4 +60,4 @@ Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

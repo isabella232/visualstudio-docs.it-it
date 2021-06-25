@@ -1,9 +1,9 @@
 ---
-title: Completamento delle parole in un servizio di linguaggio legacy | Microsoft Docs
-description: Il completamento delle parole può essere supportato per un servizio di linguaggio legacy in Visual Studio SDK. Informazioni sul modo in cui i servizi di linguaggio legacy sono implementati in un pacchetto VSPackage.
+title: Completamento di parole in un servizio di linguaggio legacy | Microsoft Docs
+description: Il completamento delle parole può essere supportato per un servizio di linguaggio legacy in Visual Studio SDK. Informazioni su come vengono implementati i servizi di linguaggio legacy in un VSPackage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
@@ -14,41 +14,41 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 360778e4dbc89130e8a533640fefb188047fe8ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ea386aea3a17b0fb0d93ff9872f92e86a166be5c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074080"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902631"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Completamento delle parole in un servizio di linguaggio legacy
-Il completamento delle parole compila i caratteri mancanti in una parola parzialmente tipizzata. Se è presente solo un possibile completamento, la parola viene completata quando viene immesso il carattere di completamento. Se la parola parziale corrisponde a più di una possibilità, viene visualizzato un elenco di possibili completamenti. Un carattere di completamento può essere qualsiasi carattere non utilizzato per gli identificatori.
+Il completamento della parola riempie i caratteri mancanti in una parola parzialmente digitata. Se è presente un solo possibile completamento, la parola viene completata quando viene immesso il carattere di completamento. Se la parola parziale corrisponde a più di una possibilità, viene visualizzato un elenco di possibili completamenti. Un carattere di completamento può essere qualsiasi carattere non usato per gli identificatori.
 
- I servizi di linguaggio legacy sono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per ulteriori informazioni, vedere [estensione dei servizi di editor e di linguaggio](../../extensibility/extending-the-editor-and-language-services.md).
+ I servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio è usare le estensioni MEF. Per altre informazioni, vedere [Estensione dell'editor e di Servizi di linguaggio](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Si consiglia di iniziare a usare la nuova API editor appena possibile. Ciò consente di migliorare le prestazioni del servizio di linguaggio e di sfruttare i vantaggi delle nuove funzionalità dell'editor.
+> È consigliabile iniziare a usare la nuova API dell'editor appena possibile. In questo modo si miglioreranno le prestazioni del servizio di linguaggio e si potranno sfruttare le nuove funzionalità dell'editor.
 
 ## <a name="implementation-steps"></a>Passaggi di implementazione
 
-1. Quando l'utente seleziona **completa parola** dal menu **IntelliSense** , il <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando viene inviato al servizio di linguaggio.
+1. Quando l'utente seleziona **Completa parola** dal menu **IntelliSense,** il <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando viene inviato al servizio di linguaggio.
 
-2. La <xref:Microsoft.VisualStudio.Package.ViewFilter> classe intercetta il comando e chiama il <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodo con il motivo dell'analisi di <xref:Microsoft.VisualStudio.Package.ParseReason> .
+2. La <xref:Microsoft.VisualStudio.Package.ViewFilter> classe intercetta il comando e chiama <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> il metodo con il motivo di analisi di <xref:Microsoft.VisualStudio.Package.ParseReason> .
 
-3. La <xref:Microsoft.VisualStudio.Package.Source> classe chiama quindi il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo per ottenere l'elenco dei completamenti di parole possibili, quindi Visualizza le parole in un elenco di descrizioni comandi usando la <xref:Microsoft.VisualStudio.Package.CompletionSet> classe.
+3. La <xref:Microsoft.VisualStudio.Package.Source> classe chiama quindi il metodo per ottenere <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> l'elenco dei possibili completamenti delle parole e quindi visualizza le parole in un elenco di descrizione comando usando la <xref:Microsoft.VisualStudio.Package.CompletionSet> classe .
 
-    Se è presente una sola parola corrispondente, la <xref:Microsoft.VisualStudio.Package.Source> classe completa la parola.
+    Se è presente una sola parola corrispondente, <xref:Microsoft.VisualStudio.Package.Source> la classe completa la parola.
 
-   In alternativa, se lo scanner restituisce il valore del trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> quando il primo carattere di un identificatore viene digitato, la <xref:Microsoft.VisualStudio.Package.Source> classe rileva questo oggetto e chiama il <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodo con il motivo dell'analisi di <xref:Microsoft.VisualStudio.Package.ParseReason> . In questo caso il parser deve rilevare la presenza di un carattere di selezione dei membri e fornire un elenco di membri.
+   In alternativa, se lo scanner restituisce il valore del trigger quando viene digitato il primo carattere di un identificatore, la classe lo rileva e chiama il metodo con il motivo <xref:Microsoft.VisualStudio.Package.TokenTriggers> <xref:Microsoft.VisualStudio.Package.Source> di analisi di <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> <xref:Microsoft.VisualStudio.Package.ParseReason> . In questo caso il parser deve rilevare la presenza di un carattere di selezione dei membri e fornire un elenco di membri.
 
 ## <a name="enabling-support-for-the-complete-word"></a>Abilitazione del supporto per la parola completa
- Per abilitare il supporto per il completamento delle parole, impostare il `CodeSense` parametro denominato passato all' <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attributo utente associato al pacchetto di linguaggio. Viene impostata la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> proprietà sulla <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe.
+ Per abilitare il supporto per il completamento delle parole, impostare `CodeSense` il parametro denominato passato all'attributo utente associato al pacchetto di <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> linguaggio. In questo modo <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> la proprietà viene impostata nella classe <xref:Microsoft.VisualStudio.Package.LanguagePreferences> .
 
- Il parser deve restituire un elenco di dichiarazioni in risposta al valore del motivo dell'analisi <xref:Microsoft.VisualStudio.Package.ParseReason> , per il corretto funzionamento del completamento delle parole.
+ Il parser deve restituire un elenco di dichiarazioni in risposta al valore del motivo di analisi , perché il completamento delle parole <xref:Microsoft.VisualStudio.Package.ParseReason> funzioni.
 
-## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implementazione di una parola completa nel Metodo ParseSource
- Per il completamento delle parole, la <xref:Microsoft.VisualStudio.Package.Source> classe chiama il <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> Metodo sulla <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe per ottenere un elenco di possibili corrispondenze di Word. È necessario implementare l'elenco in una classe derivata dalla <xref:Microsoft.VisualStudio.Package.Declarations> classe. <xref:Microsoft.VisualStudio.Package.Declarations>Per informazioni dettagliate sui metodi che è necessario implementare, vedere la classe.
+## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implementazione della parola completa nel metodo ParseSource
+ Per il completamento delle parole, la classe <xref:Microsoft.VisualStudio.Package.Source> chiama il metodo sulla classe per ottenere un elenco di possibili <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> <xref:Microsoft.VisualStudio.Package.AuthoringScope> corrispondenze di parole. È necessario implementare l'elenco in una classe derivata dalla <xref:Microsoft.VisualStudio.Package.Declarations> classe . Per informazioni <xref:Microsoft.VisualStudio.Package.Declarations> dettagliate sui metodi che è necessario implementare, vedere la classe .
 
- Se l'elenco contiene una sola parola, la <xref:Microsoft.VisualStudio.Package.Source> classe inserisce automaticamente tale parola al posto della parola parziale. Se l'elenco contiene più di una parola, la <xref:Microsoft.VisualStudio.Package.Source> classe presenta un elenco di descrizioni comandi da cui l'utente può selezionare la scelta appropriata.
+ Se l'elenco contiene una sola parola, la classe inserisce automaticamente tale parola <xref:Microsoft.VisualStudio.Package.Source> al posto della parola parziale. Se l'elenco contiene più parole, la classe presenta un elenco di descrizione comando da cui l'utente <xref:Microsoft.VisualStudio.Package.Source> può selezionare la scelta appropriata.
 
- Esaminare inoltre l'esempio di implementazione di una <xref:Microsoft.VisualStudio.Package.Declarations> classe nel [completamento dei membri in un servizio di linguaggio legacy](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).
+ Esaminare anche l'esempio di <xref:Microsoft.VisualStudio.Package.Declarations> implementazione di una classe in [Completamento membri in un servizio di linguaggio legacy](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).

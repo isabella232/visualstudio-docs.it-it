@@ -1,9 +1,9 @@
 ---
-title: Classe Task-membri interni | Microsoft Docs
-description: Informazioni sui membri interni della classe System. Threading. Tasks. Task che consentono di implementare un debugger personalizzato.
+title: Classe task - Membri interni | Microsoft Docs
+description: Informazioni sui membri interni della classe System.Threading.Tasks.Task che consentono di implementare un debugger personalizzato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
@@ -13,21 +13,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfa57329b3f321d2703683639644783be60d651f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 37691714d0168594b61a1a3849f7b65264e9999e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079371"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902891"
 ---
-# <a name="task-class---internal-members"></a>Classe Task-membri interni
-Questo articolo descrive i membri interni della <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere l' <xref:System.Threading.Tasks.Task> articolo di riferimento.
+# <a name="task-class---internal-members"></a>Classe di attività : membri interni
+Questo articolo descrive i membri interni della classe che consentono <xref:System.Threading.Tasks.Task?displayProperty=fullName> di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere <xref:System.Threading.Tasks.Task> l'articolo di riferimento.
 
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Assembly:** mscorlib (in *mscorlib.dll*)
 
- Poiché non è possibile accedere a questi membri interni dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.
+ Poiché non è possibile accedere a questi membri interni dal .NET Framework, in Common Intermediate Language (CIL) viene fornita la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,28 +46,28 @@ Questo articolo descrive i membri interni della <xref:System.Threading.Tasks.Tas
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[Metodo SetNotificationForWaitCompletion](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Imposta o cancella il bit di stato TASK_STATE_WAIT_COMPLETION_NOTIFICATION.|
-|[Metodo NotifyDebuggerOfWaitCompletion](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Metodo segnaposto utilizzato come destinazione del punto di interruzione dal debugger.|
+|[Metodo SetNotificationForWaitCompletion](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Imposta o cancella il bit TASK_STATE_WAIT_COMPLETION_NOTIFICATION stato.|
+|[Metodo NotifyDebuggerOfWaitCompletion](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Metodo segnaposto usato come destinazione del punto di interruzione dal debugger.|
 
 ### <a name="fields"></a>Campi
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[m_action](../../extensibility/debugger/m-action-field.md)|Delegato che rappresenta il codice da eseguire nell' <xref:System.Threading.Tasks.Task> oggetto.|
-|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Archivia le proprietà aggiuntive dell' <xref:System.Threading.Tasks.Task> oggetto.|
-|[m_parent](../../extensibility/debugger/m-parent-field.md)|Campo sottostante per la <xref:System.Threading.Tasks.Task?displayProperty=fullName> proprietà padre.|
-|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Archivia informazioni sullo stato corrente dell' <xref:System.Threading.Tasks.Task> oggetto.|
-|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Oggetto che rappresenta i dati che verranno utilizzati dall'azione.|
-|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Campo sottostante per la <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> Proprietà.|
-|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|Identificatore successivo disponibile per un <xref:System.Threading.Tasks.Task> oggetto.|
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Indica che l'attività è stata annullata prima che raggiunga lo stato in esecuzione o che l'attività abbia confermato l'annullamento e completata senza eccezione.|
+|[m_action](../../extensibility/debugger/m-action-field.md)|Delegato che rappresenta il codice da eseguire <xref:System.Threading.Tasks.Task> nell'oggetto .|
+|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Archivia proprietà aggiuntive <xref:System.Threading.Tasks.Task> dell'oggetto .|
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|Campo di supporto per la <xref:System.Threading.Tasks.Task?displayProperty=fullName> proprietà padre.|
+|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Archivia informazioni sullo stato corrente <xref:System.Threading.Tasks.Task> dell'oggetto .|
+|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Oggetto che rappresenta i dati che verranno usati dall'azione.|
+|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Campo di supporto per la <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> proprietà.|
+|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|Identificatore disponibile successivo per un <xref:System.Threading.Tasks.Task> oggetto .|
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Indica che l'attività è stata annullata prima di raggiungere lo stato di esecuzione oppure che l'attività ha confermato l'annullamento e completata senza eccezioni.|
 |[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|Indica che l'attività è in esecuzione.|
 |[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|Indica che l'attività è stata completata a causa di un'eccezione non gestita.|
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Indica che l'esecuzione dell'attività è stata completata correttamente.|
-|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Indica che l'attività ha terminato l'esecuzione del delegato ed è in attesa implicita del completamento delle attività figlio connesse.|
+|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Indica che l'attività ha terminato l'esecuzione del delegato ed è in attesa implicita del completamento delle attività figlio associate.|
 
 ## <a name="remarks"></a>Commenti
- I metodi interni seguenti sono utili per un motore di debugger perché contrassegnano l'ingresso per l' <xref:System.Threading.Tasks.Task> esecuzione del codice:
+ I metodi interni seguenti sono utili per un motore del debugger perché contrassegnano l'ingresso <xref:System.Threading.Tasks.Task> all'esecuzione del codice:
 
 - `Execute`
 
@@ -81,6 +81,6 @@ Questo articolo descrive i membri interni della <xref:System.Threading.Tasks.Tas
 
 - `InternalWait`
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
-- [Interni di estensioni parallele per la .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Estensioni interne parallele per l'.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

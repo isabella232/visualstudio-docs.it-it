@@ -1,9 +1,9 @@
 ---
 title: Registrazione di una finestra degli strumenti | Microsoft Docs
-description: Informazioni su come registrare le finestre degli strumenti con Visual Studio usando alcun ProvideToolWindowAttribute e ProvideToolWindowVisibilityAttribute.
+description: Informazioni su come registrare le finestre degli strumenti con Visual Studio usando ProvideToolWindowAttribute e ProvideToolWindowVisibilityAttribute.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - tool windows, registering managed
 - tool windows, registering
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13c3035f089855f88d54ecc8b3c1e6434ac10e65
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f4fb6330f913989a69c5d8d28374a40ea14d266d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056584"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899095"
 ---
 # <a name="register-a-tool-window"></a>Registrare una finestra degli strumenti
 È possibile registrare le finestre degli strumenti usando <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
@@ -37,4 +37,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- Nel codice precedente <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra le `PersistedWindowPane` `DynamicWindowPane` finestre degli strumenti e con Visual Studio. La finestra degli strumenti permanente è ancorata e a schede con **Esplora soluzioni** e alla finestra dinamica viene assegnata una posizione e una dimensione di inizio predefinite. La finestra dinamica viene resa temporanea, a indicare che non viene creata all'avvio. Viene scritto un `DontForceCreate` valore nella `ToolWindows` chiave nel registro di sistema. Per ulteriori informazioni, vedere [configurazione dello schermo della finestra degli strumenti](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015).
+ Nel codice precedente registra le finestre degli strumenti e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `PersistedWindowPane` con `DynamicWindowPane` Visual Studio. La finestra degli strumenti persistente è ancorata e a schede **con Esplora soluzioni** e alla finestra dinamica vengono fornite una posizione iniziale e una dimensione predefinite. La finestra dinamica viene resa temporanea, a indicare che non viene creata all'avvio. Viene scritto un `DontForceCreate` valore nella chiave del Registro di `ToolWindows` sistema. Per altre informazioni, vedere [Configurazione della visualizzazione della finestra degli strumenti.](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015)

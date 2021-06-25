@@ -1,9 +1,9 @@
 ---
-title: Elemento define | Microsoft Docs
-description: L'elemento define definisce un nome di simbolo e una coppia di valori. Questo simbolo può essere valutato dagli attributi condizionali.
+title: Definire l'elemento | Microsoft Docs
+description: L'elemento Define definisce una coppia nome/valore del simbolo. Questo simbolo può essere valutato da attributi condizionali.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83a8ee40205cafcaff29399ead4036374f798abf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 409621410db727f933e41bae894f125dc877b4c2
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082270"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898045"
 ---
-# <a name="define-element"></a>Definisci elemento
-Definisce una coppia di nome e valore del simbolo. Questo simbolo può essere valutato dagli attributi condizionali. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md). Vedere anche l' [elemento symbols](../extensibility/symbols-element.md).
+# <a name="define-element"></a>Elemento Define
+Definisce una coppia nome/valore del simbolo. Questo simbolo può essere valutato da attributi condizionali. Per altre informazioni, vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md) Vedere anche [l'elemento Symbols](../extensibility/symbols-element.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,18 +36,18 @@ Definisce una coppia di nome e valore del simbolo. Questo simbolo può essere va
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|name|Obbligatorio. Nome del simbolo:<br /><br /> Name = "Mode"|
-|Valore|Obbligatorio. Valore del simbolo:<br /><br /> value = "standard"|
-|Condizione|facoltativo. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|name|Obbligatorio. Nome del simbolo:<br /><br /> name="Mode"|
+|Valore|Obbligatorio. Valore del simbolo:<br /><br /> value="Standard"|
+|Condizione|facoltativo. Per altre informazioni, vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi forniti da un VSPackage all'Integrated Development Environment (IDE). Ad esempio, le voci di menu, i menu, le barre degli strumenti e le caselle combinate.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi forniti da un VSPackage all'ambiente di sviluppo integrato (IDE). Ad esempio, voci di menu, menu, barre degli strumenti e caselle combinate.|
 
 ## <a name="example"></a>Esempio
 
@@ -57,4 +57,4 @@ Definisce una coppia di nome e valore del simbolo. Questo simbolo può essere va
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
