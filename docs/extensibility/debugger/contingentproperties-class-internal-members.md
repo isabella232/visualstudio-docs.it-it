@@ -1,8 +1,8 @@
 ---
-description: Contiene proprietà aggiuntive per un oggetto System. Threading. Tasks. Task.
-title: Classe ContingentProperties-membri interni | Microsoft Docs
+description: Contiene proprietà aggiuntive per un oggetto System.Threading.Tasks.Task.
+title: Classe ContingentProperties - Membri interni | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
@@ -12,21 +12,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295b8c3b33059811e665e362c9894103b47c422d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8fca0bf68de4493d0165f9e66e251945ba6168b2
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054998"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905683"
 ---
-# <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties-membri interni
-Contiene proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto.
+# <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties : membri interni
+Contiene proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto .
 
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Assembly:** mscorlib (in mscorlib.dll)
 
- Poiché non è possibile accedere a questi membri interni dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.
+ Poiché non è possibile accedere a questi membri interni dal .NET Framework, in Common Intermediate Language (CIL) viene fornita la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,5 +46,5 @@ Contiene proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto
 ## <a name="remarks"></a>Commenti
  Il .NET Framework inizializza i campi di questa classe solo quando sono necessari.
 
-## <a name="see-also"></a>Vedi anche
-- [Interni di estensioni parallele per la .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+## <a name="see-also"></a>Vedere anche
+- [Estensioni interne parallele per l'.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

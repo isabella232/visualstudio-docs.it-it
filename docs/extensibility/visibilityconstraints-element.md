@@ -3,7 +3,7 @@ title: Elemento VisibilityConstraints | Microsoft Docs
 description: L'elemento VisibilityConstraints determina la visibilità statica di gruppi di comandi e barre degli strumenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VisibilityConstraints
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d97f72e7a29f3cbb23c775df8454952f5ffac928
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 160a3950e31567aafc2d675971fd7263adb2ad5b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062564"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905462"
 ---
 # <a name="visibilityconstraints-element"></a>Elemento VisibilityConstraints
-L'elemento VisibilityConstraints determina la visibilità statica di gruppi di comandi e barre degli strumenti. La visibilità viene prima controllata dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) senza caricare il pacchetto VSPackage.
+L'elemento VisibilityConstraints determina la visibilità statica di gruppi di comandi e barre degli strumenti. La visibilità viene controllata prima [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dall'ambiente di sviluppo integrato (IDE) senza caricare il pacchetto VSPackage.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,20 +41,20 @@ L'elemento VisibilityConstraints determina la visibilità statica di gruppi di c
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento VisibilityItem](../extensibility/visibilityitem-element.md)|Determina la visibilità statica dei comandi e delle barre degli strumenti.|
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Determina la visibilità statica di gruppi di comandi e barre degli strumenti.|
+|[Elemento VisibilityItem](../extensibility/visibilityitem-element.md)|Determina la visibilità statica di comandi e barre degli strumenti.|
+|[Oggetti VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Determina la visibilità statica di gruppi di comandi e barre degli strumenti.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi (ad esempio, le voci di menu, i menu, le barre degli strumenti e le caselle combinate) forniti da un VSPackage all'IDE.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi (ad esempio, voci di menu, menu, barre degli strumenti e caselle combinate) forniti da un vspackage all'IDE.|
 
 ## <a name="example"></a>Esempio
 
@@ -67,4 +67,4 @@ L'elemento VisibilityConstraints determina la visibilità statica di gruppi di c
 
 ## <a name="see-also"></a>Vedere anche
 - [Elemento VisibilityItem](../extensibility/visibilityitem-element.md)
-- [Tabella comandi di Visual Studio (. File vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio tabella dei comandi (. Vsct) file](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

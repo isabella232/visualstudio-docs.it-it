@@ -3,7 +3,7 @@ title: Thread | Microsoft Docs
 description: Questo articolo descrive la definizione e il ruolo di un thread nell'architettura del debugger in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], threads
 - threading [Debugging SDK]
@@ -13,23 +13,23 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 168d29b8306ec58233f426b48c3ab0adfacb2bd5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dc745a4361c0935896048bbf72a4084f007ecf7b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057845"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905735"
 ---
 # <a name="threads"></a>Thread
-Nell'architettura del debugger, un *thread*:
+Nell'architettura del debugger, *un thread*:
 
-- È l'unità di calcolo fondamentale. Un thread esegue in modo sequenziale le istruzioni all'interno del contesto di un singolo stack di chiamate, passando da un contesto di codice a quello successivo.
+- Unità fondamentale di calcolo. Un thread esegue in sequenza le istruzioni all'interno del contesto di un singolo stack di chiamate, passando da un contesto di codice a quello successivo.
 
-- Consente di identificare se stesso e il programma in cui è in esecuzione. I thread possono essere denominati, sospesi e ripresi. Un thread può anche enumerare gli stack frame associati e, in alcune condizioni, può essere spostato in un altro stack frame. Dato il contesto di un stack frame, un thread può restituire il thread logico associato, se presente. Un thread ha proprietà, ad esempio un conteggio di sospensione, che possono essere visualizzate nella finestra **thread** dell'IDE.
+- È in grado di identificare se stesso e il programma in cui è in esecuzione. I thread possono essere denominati, sospesi e ripresi. Un thread può anche enumerare gli stack frame associati e, in alcune condizioni, può essere spostato in un altro stack frame. Dato il contesto di un stack frame, un thread può restituire il thread logico associato, se presente. Un thread ha proprietà, ad esempio un conteggio di sospensione, che possono essere visualizzate nella **finestra Thread** dell'IDE.
 
-- È rappresentato da un'interfaccia [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) , in genere creata da un motore di debug (de) o da una macchina virtuale come conseguenza dell'esecuzione di un programma.
+- È rappresentato da [un'interfaccia IDebugThread2,](../../extensibility/debugger/reference/idebugthread2.md) in genere creata da un motore di debug (DE) o da una macchina virtuale come conseguenza dell'esecuzione di un programma.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Programmi](../../extensibility/debugger/programs.md)
 - [Stack frame](../../extensibility/debugger/stack-frames.md)
 - [Motore di debug](../../extensibility/debugger/debug-engine.md)
