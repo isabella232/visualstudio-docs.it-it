@@ -1,9 +1,9 @@
 ---
-title: Oggetto oggetto VsCodeWindow. | Microsoft Docs
-description: Informazioni sulle finestre del codice, che sono finestre di documento specializzate che possono includere una o più visualizzazioni di testo, in genere l'oggetto oggetto VsTextView.
+title: Oggetto VSCodeWindow | Microsoft Docs
+description: Informazioni sulle finestre di codice, ovvero finestre di documento specializzate che possono includere una o più visualizzazioni di testo, in genere l'oggetto VsTextView.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VSCodeWindow
 helpviewer_keywords:
@@ -15,26 +15,26 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77839bf80f30de3177f647795ffb89aa3e103d58
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9803132605ee81c67785c8c0154861b26730ca5f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062421"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905332"
 ---
-# <a name="vscodewindow-object"></a>Oggetto oggetto VsCodeWindow.
-Una finestra del codice è una finestra di documento specializzata che può includere una o più visualizzazioni di testo, in genere l' <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> oggetto.
+# <a name="vscodewindow-object"></a>Oggetto VSCodeWindow
+Una finestra del codice è una finestra di documento specializzata che può includere una o più visualizzazioni di testo, in genere <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> l'oggetto .
 
- In architettura, la finestra del codice è una finestra del documento che si trova all'interno di una cornice della finestra. Dal punto di vista funzionale, la finestra del codice è semplicemente una finestra del documento con funzionalità aggiuntive. Nella modalità interfaccia a documenti multipli (MDI) la finestra del codice è il frame figlio MDI. Per altre informazioni, vedere [personalizzazione delle finestre di codice tramite l'API legacy](/previous-versions/visualstudio/visual-studio-2015/extensibility/customizing-code-windows-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
+ Dal punto di vista dell'architettura, la finestra del codice è una finestra del documento all'interno di una cornice di finestra. Dal punto di vista funzionale, la finestra del codice è semplicemente una finestra del documento con funzionalità aggiuntive. Nella modalità MDI (Multiple Document Interface) la finestra del codice è il frame figlio MDI. Per altre informazioni, vedere [Personalizzazione delle finestre del codice tramite l'API legacy](/previous-versions/visualstudio/visual-studio-2015/extensibility/customizing-code-windows-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
- Nella tabella seguente sono incluse le interfacce dell' <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> oggetto.
+ La tabella seguente include le interfacce <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> nell'oggetto .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Fornisce un meccanismo di accesso generico per individuare un servizio identificato da un identificatore univoco globale (GUID).|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Rappresenta un'interfaccia a documenti multipli (MDI) che contiene una o più visualizzazioni di codice.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Fornisce un meccanismo di accesso generico per individuare un servizio identificato da un GUID (Globally Unique Identifier).|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Rappresenta un elemento figlio MDI (Multiple Document Interface) contenente una o più visualizzazioni codice.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Riempie una cornice della finestra.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
-- [Modifica figure](https://www.microsoft.com/download/details.aspx?id=55984)
+- [Modifica delle figure](https://www.microsoft.com/download/details.aspx?id=55984)

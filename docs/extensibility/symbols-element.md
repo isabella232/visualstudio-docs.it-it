@@ -1,9 +1,9 @@
 ---
-title: Elemento symbols | Microsoft Docs
-description: L'elemento symbols definisce i GUID e gli ID usati da altri elementi VSCT. Questo articolo contiene un esempio.
+title: Elementi Symbols | Microsoft Docs
+description: L'elemento Symbols definisce GUID e ID usati da altri elementi VSCT. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
@@ -13,19 +13,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a013bbe438d1e4dd1f6b5149dcb7da78835fd09
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b593f353714f2fbb6f5b726fa2bbc0da449043ea
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056051"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901734"
 ---
 # <a name="symbols-element"></a>Elemento Symbols
-Definisce GUID e ID usati da altri elementi VSCT. Per il codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati dall' [elemento extern](../extensibility/extern-element.md). Il codice gestito utilizza gli elementi figlio dell'elemento symbols per definire queste informazioni.
+Definisce GUID e ID usati da altri elementi VSCT. Per il codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati [dall'elemento Extern](../extensibility/extern-element.md). Il codice gestito usa gli elementi figlio dell'elemento Symbols per definire queste informazioni.
 
- Se si crea un file con estensione vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento symbols. Per ulteriori informazioni, vedere [procedura: creare un oggetto. File vsct da un esistente. File CTO](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+ Se si crea un file vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento Symbols. Per altre informazioni, vedere [Procedura: Creare un oggetto . Vsct File da un oggetto esistente. File Cto](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
- L'elemento symbols non deve essere confuso con l' [elemento define](../extensibility/define-element.md), che definisce le coppie nome/valore per l'uso da parte del preprocessore.
+ L'elemento Symbols non deve essere confuso con [l'elemento Define ,](../extensibility/define-element.md)che definisce le coppie nome-valore per l'uso da parte del preprocessore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,8 +49,8 @@ Definisce GUID e ID usati da altri elementi VSCT. Per il codice non gestito, que
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|GuidSymbol|Definisce un simbolo GUID. GuidSymbol dispone di due attributi obbligatori: Name e value. Il nome è il nome del simbolo e il valore è il valore del GUID sotto forma di stringa.<br /><br /> Ad esempio:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
-|IDSymbol|Definisce un simbolo. IDSymbol dispone di due attributi obbligatori: Name e value. Il nome è il nome del simbolo e il valore è il valore del simbolo sotto forma di stringa.<br /><br /> Ad esempio:\<IDSymbol name="MyMenuGroup" value="0x1020" />|
+|GuidSymbol|Definisce un simbolo GUID. GuidSymbol ha due attributi obbligatori: name e value. Il nome è il nome del simbolo e il valore è il valore del GUID come stringa.<br /><br /> Ad esempio:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
+|IDSymbol|Definisce un simbolo. IDSymbol ha due attributi obbligatori: name e value. Il nome è il nome del simbolo e il valore è il valore del simbolo come stringa.<br /><br /> Ad esempio:\<IDSymbol name="MyMenuGroup" value="0x1020" />|
 
 ### <a name="parent-elements"></a>Elementi padre
 

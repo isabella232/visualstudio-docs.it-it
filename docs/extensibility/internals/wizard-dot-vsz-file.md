@@ -1,9 +1,9 @@
 ---
-title: Procedura guidata (. File VSZ) | Microsoft Docs
-description: Informazioni sui file con estensione vsz utilizzati dall'IDE per avviare le procedure guidate. I file contengono informazioni sulla procedura guidata da chiamare e su cosa passare alla procedura guidata.
+title: Procedura guidata (. Vsz) File | Microsoft Docs
+description: Informazioni sui file vsz utilizzati dall'IDE per avviare le procedure guidate. I file contengono informazioni sulla procedura guidata da chiamare e su cosa passare alla procedura guidata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - .vsz files
 - vsz files
@@ -14,20 +14,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2663a6b05780b16d05b419c00aba904ded848796
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: de687dae79fa1613090fb400f73ab658ee5d66cb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074236"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900655"
 ---
 # <a name="wizard-vsz-file"></a>File (con estensione vsz) della procedura guidata
 
-Il Integrated Development Environment (IDE) utilizza i file con estensione vsz per avviare le procedure guidate. Questi file con estensione vsz contengono informazioni utilizzate dall'IDE per determinare quale procedura guidata chiamare e quali informazioni passare alla procedura guidata.
+L'ambiente di sviluppo integrato (IDE) usa i file vsz per avviare le procedure guidate. Questi file vsz contengono informazioni utilizzate dall'IDE per determinare quale procedura guidata chiamare e quali informazioni passare alla procedura guidata.
 
-Un file con estensione vsz è una versione di un file di testo in formato ini senza sezioni. Le informazioni note all'IDE vengono archiviate all'inizio del file. Viene fornito un collegamento tra la procedura guidata chiamata dall'IDE e i parametri presenti nel file con estensione vsz da passare all'IDE. Il resto del file fornisce parametri specifici della procedura guidata e che devono essere raccolti dall'IDE e passati alla procedura guidata specifica.
+Un file vsz è una versione di un .ini di testo in formato non in sezione. Le informazioni note all'IDE vengono archiviate all'inizio del file. In questo modo viene fornito un collegamento tra la procedura guidata chiamata dall'IDE e i parametri presenti nel file vsz da passare all'IDE. Il resto del file fornisce parametri specifici della procedura guidata che devono essere raccolti dall'IDE e passati alla procedura guidata specifica.
 
-Nell'esempio seguente viene illustrato il contenuto di un file con estensione vsz.
+Nell'esempio seguente viene illustrato il contenuto di un file vsz.
 
 ```
 VSWizard 8.0
@@ -36,19 +36,19 @@ Param="WIZARDNAME = Wizard One"
 Param="WIZARDUI = FALSE"
 ```
 
-Di seguito sono riportate le parti del file con estensione vsz.
+Di seguito sono riportate le parti nel file vsz.
 
 |Parte|Descrizione|
 |----------|-----------------|
-|VSWizard|Il primo parametro nel file è il numero di versione del formato del file modello. Il numero di versione deve essere 6,0, 7,0, 7,1 o 8,0. Non è possibile avviare altri numeri e causare un errore di formato non valido.|
-|Procedura guidata|Questo campo contiene il ProgID OLE della procedura guidata o in alternativa una rappresentazione di stringa GUID del CLSID della procedura guidata creata dall'IDE.|
-|Param|Queste parti sono facoltative. È possibile aggiungere il numero desiderato.|
+|Vswizard|Il primo parametro nel file è il numero di versione del formato del file modello. Questo numero di versione deve essere 6.0, 7.0, 7.1 o 8.0. Non è possibile avviare altri numeri e causare un errore di formato non valido.|
+|Procedura guidata|Questo campo contiene il ProgID OLE della procedura guidata o in alternativa una rappresentazione di stringa GUID del CLSID della procedura guidata cocreata dall'IDE.|
+|Param|Queste parti sono facoltative. È possibile aggiungere tutti gli elementi necessari.|
 
-I parametri consentono al file con estensione VSZ di passare parametri personalizzati aggiuntivi alla procedura guidata. Ogni valore viene passato come elemento stringa in una matrice di varianti alla procedura guidata. Per ulteriori informazioni, vedere [parametri personalizzati](../../extensibility/internals/custom-parameters.md).
+I parametri consentono al file vsz di passare parametri personalizzati aggiuntivi alla procedura guidata. Ogni valore viene passato come elemento stringa in una matrice di varianti alla procedura guidata. Per altre informazioni, vedere [Parametri personalizzati](../../extensibility/internals/custom-parameters.md).
 
-Per aggiungere un ID delle impostazioni locali predefinito al file con estensione vsz, specificare `FALLBACK_LCID` = xxxx, dove xxxx è l'ID delle impostazioni locali, ad esempio 1033 per l'inglese. Quando il `FALLBACK_LCID` parametro è definito, la procedura guidata usa l'ID delle impostazioni locali di fallback specificato se l'ID corrente non viene trovato.
+Per aggiungere un ID impostazioni locali predefinito al file con estensione vsz, specificare =xxxx, dove xxxx è l'ID delle impostazioni locali, ad esempio `FALLBACK_LCID` 1033 per l'inglese. Quando il parametro è definito, la procedura guidata usa l'ID delle impostazioni locali di fallback fornito `FALLBACK_LCID` se l'ID corrente non viene trovato.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Parametri personalizzati](../../extensibility/internals/custom-parameters.md)
 - [Procedure guidate](../../extensibility/internals/wizards.md)

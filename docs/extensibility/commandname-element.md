@@ -1,9 +1,9 @@
 ---
 title: Elemento CommandName | Microsoft Docs
-description: L'elemento CommandName specifica il testo visualizzato nella categoria tastiera della finestra di dialogo Opzioni e nell'elenco comandi della finestra di dialogo Personalizza.
+description: L'elemento CommandName specifica il testo visualizzato nella categoria tastiera nella finestra di dialogo Opzioni e nell'elenco Comandi della finestra di dialogo Personalizza .
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba74c0a61ddf01407f2af6ebb8053e2f1e4fe6ac
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 193e97880fbc543568636e1979a847877e42db14
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089628"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902007"
 ---
-# <a name="commandname-element"></a>CommandName (elemento)
-L' `CommandName` elemento specifica il testo visualizzato nella categoria tastiera della finestra di dialogo **Opzioni** e nell'elenco **comandi** della finestra di dialogo **Personalizza** .
+# <a name="commandname-element"></a>Elemento CommandName
+L'elemento specifica il testo visualizzato nella categoria tastiera nella finestra di dialogo Opzioni e nell'elenco Comandi `CommandName` della finestra **di** dialogo Personalizza .  
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,16 +33,16 @@ L' `CommandName` elemento specifica il testo visualizzato nella categoria tastie
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Strings](../extensibility/strings-element.md)|Raggruppa gli elementi di testo, ad esempio `ButtonText` e `CommandName` .|
+|[Elemento Strings](../extensibility/strings-element.md)|Raggruppa gli elementi di testo, ad `ButtonText` esempio e `CommandName` .|
 
-## <a name="see-also"></a>Vedi anche
-- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Vedere anche
+- [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

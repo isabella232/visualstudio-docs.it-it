@@ -2,7 +2,7 @@
 description: Questa funzione aggiunge un elenco di file dal controllo del codice sorgente al progetto attualmente aperto.
 title: Funzione SccAddFilesFromSCC | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAddFilesFromSCC
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056e918642e75bbd74c310499544cb2500428646
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6fa08ec93383fa661d1e2dd055b3139b2ba90f34
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060471"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904864"
 ---
-# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC (funzione)
+# <a name="sccaddfilesfromscc-function"></a>Funzione SccAddFilesFromSCC
 Questa funzione aggiunge un elenco di file dal controllo del codice sorgente al progetto attualmente aperto.
 
 ## <a name="syntax"></a>Sintassi
@@ -42,23 +42,23 @@ SCCRTN SccAddFilesFromSCC(
 ### <a name="parameters"></a>Parametri
  pContext
 
-in Puntatore al contesto del plug-in del controllo del codice sorgente.
+[in] Puntatore al contesto del plug-in del controllo del codice sorgente.
 
  hWnd
 
-in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.
+[in] Handle per la finestra IDE che il plug-in del controllo del codice sorgente può usare come elemento padre per qualsiasi finestra di dialogo fornita.
 
  lpUser
 
-[in, out] Nome utente (fino a SCC_USER_SIZE, incluso il carattere di terminazione null).
+[in, out] Nome utente (fino a SCC_USER_SIZE, incluso il carattere di terminazione Null).
 
  lpAuxProjPath
 
-[in, out] Stringa ausiliaria che identifica il progetto (fino alla `SCC_PRJPATH_` dimensione, incluso il carattere di terminazione null).
+[in, out] Stringa ausiliaria che identifica il progetto (fino a `SCC_PRJPATH_` SIZE, incluso il terminatore Null).
 
  cFiles
 
-in Numero di file specificati da `lpFilePaths` .
+[in] Numero di file dati da `lpFilePaths` .
 
  lpFilePaths
 
@@ -66,26 +66,26 @@ in Numero di file specificati da `lpFilePaths` .
 
  lpDestination
 
-in Percorso di destinazione in cui devono essere scritti i file.
+[in] Percorso di destinazione in cui devono essere scritti i file.
 
  lpComment
 
-in Commento da applicare a ognuno dei file aggiunti.
+[in] Commento da applicare a ogni file aggiunto.
 
  pbResults
 
-[in, out] Matrice di flag impostati per indicare l'esito positivo (valore diverso da zero o TRUE) o errore (zero o FALSE) per ogni file (la dimensione della matrice deve essere almeno `cFiles` Long).
+[in, out] Matrice di flag impostati per indicare l'esito positivo (diverso da zero o TRUE) o l'esito negativo (zero o FALSE) per ogni file (le dimensioni della matrice devono essere almeno `cFiles` lunghe).
 
 ## <a name="return-value"></a>Valore restituito
- Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
+ È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|Il progetto non è aperto.|
-|SCC_E_OPNOTPERFORMED|La connessione non è allo stesso progetto specificata da `lpAuxProjPath.`|
+|SCC_E_OPNOTPERFORMED|La connessione non è allo stesso progetto specificato da `lpAuxProjPath.`|
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato ad aggiornare il database.|
 |SCC_E_NONSPECIFICERROR|Errore sconosciuto.|
 |SCC_I_RELOADFILE|È necessario ricaricare un file o un progetto.|
 
-## <a name="see-also"></a>Vedi anche
-- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Vedere anche
+- [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

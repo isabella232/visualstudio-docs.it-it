@@ -1,8 +1,8 @@
 ---
-description: Questa funzione determina se il plug-in del controllo del codice sorgente supporta la creazione di MSSCCPRJ. File SCC per ognuno dei file specificati.
+description: Questa funzione determina se il plug-in del controllo del codice sorgente supporta la creazione di MSSCCPRJ. File SCC per ogni file specificato.
 title: Funzione SccWillCreateSccFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccWillCreateSccFile
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00988afe980a29a7176c8632d95514813efaad37
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9f9e6df29b9f44d852c7c84488a3febf590fcc0e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063721"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900447"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Funzione SccWillCreateSccFile
-Questa funzione determina se il plug-in del controllo del codice sorgente supporta la creazione di MSSCCPRJ. File SCC per ognuno dei file specificati.
+Questa funzione determina se il plug-in del controllo del codice sorgente supporta la creazione di MSSCCPRJ. File SCC per ogni file specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,32 +37,32 @@ SCCRTN SccWillCreateSccFile(
 #### <a name="parameters"></a>Parametri
  pContext
 
-in Puntatore al contesto del plug-in del controllo del codice sorgente.
+[in] Puntatore al contesto del plug-in del controllo del codice sorgente.
 
- nFile
+ nFiles
 
-in Il numero di nomi di file inclusi nella `lpFileNames` matrice e la lunghezza della `pbSccFiles` matrice.
+[in] Numero di nomi di file inclusi nella `lpFileNames` matrice e lunghezza della `pbSccFiles` matrice.
 
  lpFileNames
 
-in Matrice di nomi di file completi da controllare (la matrice deve essere allocata dal chiamante).
+[in] Matrice di nomi di file completi da controllare (la matrice deve essere allocata dal chiamante).
 
  pbSccFiles
 
 [in, out] Matrice in cui archiviare i risultati.
 
 ## <a name="return-value"></a>Valore restituito
- Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Esito positivo.|
+|SCC_OK|Operazione completata.|
 |SCC_E_INVALIDFILEPATH|Uno dei percorsi nella matrice non è valido.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
 ## <a name="remarks"></a>Commenti
- Questa funzione viene chiamata con un elenco di file per determinare se il plug-in del controllo del codice sorgente fornisce supporto in MSSCCPRJ. File SCC per ognuno dei file specificati (per altre informazioni su MSSCCPRJ. File SCC, vedere [Mssccprj. File SCC](../extensibility/mssccprj-scc-file.md)). I plug-in del controllo del codice sorgente possono dichiarare se hanno la possibilità di creare MSSCCPRJ. File SCC dichiarando `SCC_CAP_SCCFILE` durante l'inizializzazione. Il plug-in restituisce `TRUE` o `FALSE` per file nella `pbSccFiles` matrice per indicare quale dei file specificati dispone di Mssccprj. Supporto SCC. Se il plug-in restituisce un codice di riuscita dalla funzione, i valori nella matrice restituita vengono rispettati. In caso di errore, la matrice viene ignorata.
+ Questa funzione viene chiamata con un elenco di file per determinare se il plug-in del controllo del codice sorgente fornisce supporto in MSSCCPRJ. File SCC per ogni file specificato (per altre informazioni su MSSCCPRJ. SCC, vedere [MSSCCPRJ. File SCC](../extensibility/mssccprj-scc-file.md)). I plug-in del controllo del codice sorgente possono dichiarare se sono in grado di creare MSSCCPRJ. File SCC dichiarando durante `SCC_CAP_SCCFILE` l'inizializzazione. Il plug-in restituisce o per ogni file nella matrice per indicare quali dei file indicati `TRUE` `FALSE` hanno `pbSccFiles` MSSCCPRJ. Supporto SCC. Se il plug-in restituisce un codice di esito positivo dalla funzione , i valori nella matrice restituita vengono rispettati. In caso di errore, la matrice viene ignorata.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [File MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

@@ -1,9 +1,9 @@
 ---
 title: Elemento padre | Microsoft Docs
-description: L'elemento padre specifica che un elemento è un elemento padre di un pulsante, di una casella combinata, di un menu o di un gruppo.
+description: L'elemento Parent specifica che un elemento è un elemento padre di un pulsante, una casella combinata, un menu o un gruppo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ac914fd3245982af89facb97ff2d528b410da99
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3dbf7202ac7fb94762ea132a2620625fae97ddfb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090382"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901552"
 ---
 # <a name="parent-element"></a>Elemento padre
-L'elemento padre di un pulsante o di una casella combinata può essere solo un gruppo. L'elemento padre di un menu o di un gruppo può essere qualsiasi altro menu o gruppo. In un [elemento CommandPlacement](../extensibility/commandplacement-element.md), questo elemento è obbligatorio. in tutti gli altri casi è facoltativa. Se questo elemento viene omesso, l'elemento padre di `Group_Undefined:0` sarà implicito.
+L'elemento padre di un pulsante o di una casella combinata può essere solo un gruppo. L'elemento padre di un menu o gruppo può essere qualsiasi altro menu o gruppo. In un [elemento CommandPlacement](../extensibility/commandplacement-element.md)questo elemento è obbligatorio. in tutte le altre istanze è facoltativo. Se questo elemento viene omesso, l'elemento `Group_Undefined:0` padre di verrà implicito.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,16 +40,16 @@ L'elemento padre di un pulsante o di una casella combinata può essere solo un g
 |id|Obbligatorio. ID dell'identificatore del comando GUID/ID.|
 
 ### <a name="child-elements"></a>Elementi figlio
- nessuno
+ Nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi forniti da un VSPackage all'Integrated Development Environment (IDE). Ad esempio, le voci di menu, i menu, le barre degli strumenti e le caselle combinate.|
-|[Elemento Buttons](../extensibility/buttons-element.md)|Raggruppa gli elementi [elemento del pulsante](../extensibility/button-element.md) .|
-|[Menu (elemento)](../extensibility/menus-element.md)|Definisce tutti i menu implementati da un VSPackage.|
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un VSPackage.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi forniti da un VSPackage all'ambiente di sviluppo integrato (IDE). Ad esempio, voci di menu, menu, barre degli strumenti e caselle combinate.|
+|[Elemento Buttons](../extensibility/buttons-element.md)|Raggruppa [gli elementi dell'elemento](../extensibility/button-element.md) Button.|
+|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu implementati da un VSPackage.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi di un VSPackage.|
 
-## <a name="see-also"></a>Vedi anche
-- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Vedere anche
+- [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

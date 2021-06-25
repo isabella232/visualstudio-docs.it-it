@@ -1,9 +1,9 @@
 ---
-title: Attributi di supporto per siti Web | Microsoft Docs
-description: Informazioni sugli attributi di supporto per i siti Web necessari per estendere le funzionalità di Visual Studio mediante i progetti di siti Web.
+title: Attributi di supporto del sito Web | Microsoft Docs
+description: Informazioni sugli attributi di supporto del sito Web necessari per estendere la funzionalità di Visual Studio i progetti di sito Web.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
@@ -12,32 +12,32 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5259914b238927a58a7297a8e9c0b6fcef0f04c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 348fd16234e38cd7832ae18e7b28e6abe0bc63d9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069100"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901773"
 ---
 # <a name="web-site-support-attributes"></a>Attributi di supporto per siti Web
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Il progetto di sito Web può essere esteso per fornire supporto per i linguaggi di programmazione Web. È necessario che il linguaggio si registri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in modo che i modelli di progetto possano essere visualizzati nella finestra di dialogo **nuovo sito Web** quando la lingua è selezionata.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Il progetto di sito Web può essere esteso per fornire supporto per i linguaggi di programmazione Web. Il linguaggio deve registrarsi con in modo che i modelli di progetto possano essere visualizzati nella finestra di dialogo Nuovo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **sito Web** quando la lingua è selezionata.
 
-L'esempio IronPython Studio include il supporto per siti Web. Nell'esempio sono contenute le classi Attribute seguenti per registrare IronPython come linguaggio codebehind per i nuovi progetti Web.
+L'esempio IronPython Studio include il supporto del sito Web. L'esempio contiene le classi di attributi seguenti per registrare IronPython come linguaggio codebehind per i nuovi progetti Web.
 
 ## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute
- Questo attributo viene inserito nel progetto di linguaggio. Consente di aggiungere la lingua all'elenco dei linguaggi di programmazione Web nell'elenco **lingua** della finestra di dialogo **nuovo sito Web** . Ad esempio, il codice seguente aggiunge IronPython all'elenco:
+ Questo attributo viene inserito nel progetto di linguaggio. Aggiunge il linguaggio all'elenco dei linguaggi di programmazione Web **nell'elenco Linguaggio** della **finestra di dialogo** Nuovo sito Web . Ad esempio, il codice seguente aggiunge IronPython all'elenco:
 
 ```
 [WebSiteProject("IronPython", "Iron Python")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
- Questo attributo imposta anche il percorso dei modelli in modo che punti alla cartella Templates. Per ulteriori informazioni sul percorso della cartella dei modelli, vedere [modelli di supporto per siti Web](../../extensibility/internals/web-site-support-templates.md).
+ Questo attributo imposta anche il percorso dei modelli in modo che punti alla cartella templates. Per altre informazioni sul percorso della cartella templates, vedere [Modelli di supporto per siti Web.](../../extensibility/internals/web-site-support-templates.md)
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- Questo attributo viene inserito nel progetto di linguaggio. Consente al progetto di sito Web di annidare un tipo di file (correlato) in un altro tipo di file (primario) nell' **Esplora soluzioni**.
+ Questo attributo viene inserito nel progetto di linguaggio. Consente al progetto sito Web di annidare un tipo di file (correlato) in un altro tipo di file (primario) **nel Esplora soluzioni**.
 
- Il codice seguente, ad esempio, specifica che un file codebehind IronPython è correlato a un file aspx. Quando viene creata una nuova pagina Web aspx in una soluzione di sito Web IronPython, viene generato un nuovo file di origine con estensione py e viene visualizzato come nodo figlio della pagina aspx.
+ Ad esempio, il codice seguente specifica che un file codebehind IronPython è correlato a un file aspx. Quando viene creata una nuova pagina Web aspx in una soluzione di sito Web IronPython, viene generato un nuovo file di origine con estensione py che viene visualizzato come nodo figlio della pagina aspx.
 
 ```
 [WebSiteProjectRelatedFiles("aspx", "py")]
@@ -45,16 +45,16 @@ public class PythonProjectPackage : ProjectPackage
 ```
 
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute
- Questo attributo viene inserito nel pacchetto del progetto di linguaggio. Consente di selezionare il provider IntelliSense per la lingua.
+ Questo attributo viene inserito nel pacchetto del progetto di linguaggio. Seleziona il provider IntelliSense per il linguaggio.
 
- Il codice seguente, ad esempio, specifica che un'istanza di PythonIntellisenseProvider, che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> , deve essere creata su richiesta per fornire i servizi di linguaggio.
+ Ad esempio, il codice seguente specifica che un'istanza di PythonIntellisenseProvider, che implementa , deve essere creata su richiesta per fornire <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> servizi di linguaggio.
 
 ```
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]
 public class PythonPackage : Package, IOleComponent
 ```
 
- L'implementazione di IVsIntellisenseProject gestisce i riferimenti e chiama il compilatore del linguaggio quando viene richiesta una pagina Web con codice ma non memorizzata nella cache.
+ L'implementazione di IVsIntellisenseProject gestisce i riferimenti e chiama il compilatore del linguaggio quando viene richiesta una pagina Web con codice ma non viene memorizzata nella cache.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Supporto per siti Web](../../extensibility/internals/web-site-support.md)

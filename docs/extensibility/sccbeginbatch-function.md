@@ -1,8 +1,8 @@
 ---
-description: Questa funzione avvia una sequenza di batch di operazioni del controllo del codice sorgente.
+description: Questa funzione avvia una sequenza batch di operazioni di controllo del codice sorgente.
 title: Funzione SccBeginBatch | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccBeginBatch
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5af4d8fb1d8524f16493603bb5d46ee4bdbd03ba
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 08b9199b98e566a71bfeb95124ebd85781e69950
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060445"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904760"
 ---
-# <a name="sccbeginbatch-function"></a>SccBeginBatch (funzione)
-Questa funzione avvia una sequenza di batch di operazioni del controllo del codice sorgente. Il [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch non possono essere annidati.
+# <a name="sccbeginbatch-function"></a>Funzione SccBeginBatch
+Questa funzione avvia una sequenza batch di operazioni di controllo del codice sorgente. [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch potrebbero non essere annidati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,18 +33,18 @@ SCCRTN SccBeginBatch(void);
  No.
 
 ## <a name="return-value"></a>Valore restituito
- Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
+ È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Il batch di operazioni è stato avviato correttamente.|
+|SCC_OK|Batch di operazioni avviato correttamente.|
 |SCC_E_UNKNOWNERROR|Errore non specifico.|
 
 ## <a name="remarks"></a>Commenti
- I batch del controllo del codice sorgente vengono usati per eseguire le stesse operazioni in più progetti o in più contesti. I batch possono essere usati per eliminare le finestre di dialogo per progetto ridondanti dall'esperienza utente durante un'operazione in batch. La `SccBeginBatch` funzione e [SccEndBatch](../extensibility/sccendbatch-function.md) vengono usati come coppia di funzioni per indicare l'inizio e la fine di un'operazione. Non possono essere annidati. `SccBeginBatch` imposta un flag che indica che è in corso un'operazione batch.
+ I batch di controllo del codice sorgente vengono usati per eseguire le stesse operazioni in più progetti o più contesti. I batch possono essere usati per eliminare le finestre di dialogo ridondanti per progetto dall'esperienza utente durante un'operazione in batch. La `SccBeginBatch` funzione e [SccEndBatch](../extensibility/sccendbatch-function.md) vengono usate come coppia di funzioni per indicare l'inizio e la fine di un'operazione. Non possono essere annidati. `SccBeginBatch` imposta un flag che indica che è in corso un'operazione batch.
 
- Mentre è attiva un'operazione batch, il plug-in del controllo del codice sorgente deve presentare al massimo una finestra di dialogo per qualsiasi domanda all'utente e applicare la risposta da tale finestra di dialogo in tutte le operazioni successive.
+ Mentre è in corso un'operazione batch, il plug-in del controllo del codice sorgente deve presentare al massimo una finestra di dialogo per qualsiasi domanda all'utente e applicare la risposta da tale finestra di dialogo a tutte le operazioni successive.
 
-## <a name="see-also"></a>Vedi anche
-- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Vedere anche
+- [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

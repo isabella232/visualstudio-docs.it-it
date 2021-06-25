@@ -1,9 +1,9 @@
 ---
-title: Cenni preliminari sulla finestra Proprietà | Microsoft Docs
-description: Informazioni sulle interfacce usate per interagire con il Finestra Proprietà nell'IDE di Visual Studio in questa panoramica.
+title: Panoramica della finestra Proprietà | Microsoft Docs
+description: Informazioni sulle interfacce usate per interagire con il Finestra Proprietà nell'IDE Visual Studio in questa panoramica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
@@ -12,44 +12,44 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5f378200072df603817a445a9c3406cf62233c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e0b775cbc96303f53bcd795b2121d10af83714e6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061004"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899667"
 ---
 # <a name="properties-window-overview"></a>Panoramica della finestra Proprietà
-La finestra **Proprietà** viene utilizzata per visualizzare le proprietà degli oggetti selezionati nei due tipi principali di Windows disponibili nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE). Questi due tipi di finestre sono:
+La **finestra** Proprietà consente di visualizzare le proprietà per gli oggetti selezionati nei due tipi principali di finestre disponibili nell'ambiente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sviluppo integrato (IDE). Questi due tipi di finestre sono:
 
-- Finestre degli strumenti, ad esempio Esplora soluzioni, Visualizzazione classi e Visualizzatore oggetti
+- Finestre degli strumenti come Esplora soluzioni, Visualizzazione classi e Visualizzatore oggetti
 
-- Finestre dei documenti contenenti tali editor e finestre di progettazione come progettazione form, editor XML e editor HTML
+- Finestre di documento contenenti editor e finestre di progettazione come progettazione moduli, editor XML ed editor HTML
 
 ## <a name="using-the-properties-window"></a>Uso della finestra Proprietà
- Nella finestra **Proprietà** vengono visualizzate le proprietà di uno o più elementi selezionati. Se sono selezionati più elementi, viene visualizzata l'intersezione di tutte le proprietà per tutti gli oggetti selezionati.
+ Nella **finestra** Proprietà vengono visualizzate le proprietà di uno o più elementi selezionati. Se sono selezionati più elementi, viene visualizzata l'intersezione di tutte le proprietà per tutti gli oggetti selezionati.
 
- Gli eventi correlati a un oggetto selezionato in una finestra di progettazione del form o in un editor HTML utilizzando i metadati COM+ vengono visualizzati nella finestra **Proprietà** . È ad esempio possibile selezionare un pulsante e visualizzare gli eventi associati, ad esempio un `OnClick` evento, che può essere collegato a tale pulsante.
+ Gli eventi correlati a un oggetto selezionato all'interno di una finestra di progettazione del modulo o di un editor HTML che usano metadati COM+ vengono visualizzati nella **finestra** Proprietà. Ad esempio, è possibile selezionare un pulsante e visualizzare gli eventi associati, ad esempio un evento, che `OnClick` può essere collegato a tale pulsante.
 
- Gli eventi visualizzati nella finestra **Proprietà** vengono utilizzati principalmente con gli oggetti associati al codice. Se si sta modificando un formato di file che non ha nulla a che fare con il codice, non saranno presenti eventi. Gli eventi vengono visualizzati solo nella finestra **Proprietà** quando esiste un'associazione tra l'esecuzione del codice e alcuni eventi associati a oggetti specifici. Un esempio è costituito dal codice sottostante a un oggetto selezionato che viene eseguito quando l'oggetto viene attivato.
+ Gli eventi visualizzati nella **finestra Proprietà** vengono usati principalmente con oggetti associati al codice. Se si modifica un formato di file che non ha nulla a che fare con il codice, non verranno generati eventi. Gli eventi vengono visualizzati nella **finestra** Proprietà solo quando è presente un'associazione tra l'esecuzione del codice e determinati eventi associati a oggetti specifici. Un esempio è il code-behind di un oggetto selezionato che viene eseguito quando l'oggetto viene attivato.
 
- Nella tabella seguente sono elencate le interfacce primarie utilizzate dalla finestra **Proprietà** .
+ Nella tabella seguente sono elencate le interfacce principali usate dalla **finestra** Proprietà.
 
 |Interface Name (Nome interfaccia)|Descrizione|
 |--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Fornisce un elenco di categorie alla finestra **Proprietà** ed esegue il mapping di ogni proprietà a una categoria.|
-|[IDispatch (interfaccia)](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|Espone i metodi e le proprietà di un oggetto agli strumenti di programmazione e ad altre applicazioni che supportano l'automazione.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Fornisce pulsanti con i puntini di sospensione (...) chiamati *compilatori* che aprono finestre di dialogo modali implementate dall'oggetto stesso. Utilizzato quando un valore non è facilmente digitato dall'utente in un campo di testo. Ad esempio, può essere usato per aprire una selezione colori che determina il valore RGB.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Consente di accedere agli oggetti utilizzati per aggiornare le informazioni visualizzate nella finestra **Proprietà** . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene implementato da Vspackage per ogni finestra che contiene oggetti selezionabili con proprietà correlate da visualizzare.|
+|[Interfaccia IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|Espone i metodi e le proprietà di un oggetto agli strumenti di programmazione e ad altre applicazioni che supportano l'automazione.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Fornisce pulsanti con puntini di sospensione (...) denominati *generatori che* aprono finestre di dialogo modali implementate dall'oggetto stesso. Usato quando un valore non viene digitato facilmente dall'utente in un campo di testo. Ad esempio, può essere usato per aprire un selettore colori che determina automaticamente il valore RGB.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Fornisce l'accesso agli oggetti utilizzati per aggiornare le informazioni visualizzate nella **finestra** Proprietà. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene implementato da VSPackage per ogni finestra che contiene oggetti selezionabili con proprietà correlate da visualizzare.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Fornisce informazioni sul tipo di un oggetto, ad esempio i metodi di un'interfaccia e i campi di una struttura.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Consente ai VSPackage di ricevere la notifica degli eventi di selezione e di recuperare informazioni sulla gerarchia, l'elemento, il valore dell'elemento e il contesto dell'interfaccia utente di comando correnti.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Consente ai pacchetti VSPackage di ricevere la notifica degli eventi di selezione e di recuperare informazioni sulla gerarchia del progetto corrente, sull'elemento, sul valore dell'elemento e sul contesto dell'interfaccia utente del comando.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Fornisce l'ambiente con accesso a più selezioni.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Utilizzato per fornire nomi localizzati in alcune proprietà visualizzate nella finestra **Proprietà** .|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Usato per fornire nomi localizzati per alcune proprietà visualizzate nella **finestra** Proprietà.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Notifies ai pacchetti VSPackage registrati le modifiche alla selezione, al valore dell'elemento o al contesto dell'interfaccia utente comandi correnti.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Notifica all'ambiente una modifica nella selezione corrente e fornisce l'accesso alle informazioni sulla gerarchia e sugli elementi relativi alla nuova selezione.|
 
- Per ulteriori informazioni su `IDispatch` , vedere MSDN Library.
+ Per altre informazioni su `IDispatch` , vedere MSDN Library.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Estensione delle proprietà](../../extensibility/internals/extending-properties.md)
 - [Campi e interfacce della finestra Proprietà](../../extensibility/internals/properties-window-fields-and-interfaces.md)

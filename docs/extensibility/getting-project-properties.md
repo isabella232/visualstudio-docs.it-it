@@ -1,9 +1,9 @@
 ---
-title: Recupero delle proprietà di un progetto | Microsoft Docs
-description: Informazioni su come visualizzare le proprietà del progetto in una finestra degli strumenti. Questo esempio mostra il controllo albero nella finestra degli strumenti.
+title: Recupero delle proprietà del progetto | Microsoft Docs
+description: Informazioni su come visualizzare le proprietà del progetto in una finestra degli strumenti. In questo esempio viene illustrato il controllo struttura ad albero nella finestra degli strumenti.
 ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
@@ -13,32 +13,32 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d3f7f6cc788e693ae143b288c589fc868c59d531
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057663"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900668"
 ---
 # <a name="get-project-properties"></a>Ottenere le proprietà del progetto
 
-In questa procedura dettagliata viene illustrato come visualizzare le proprietà del progetto in una finestra degli strumenti.
+Questa procedura dettagliata illustra come visualizzare le proprietà del progetto in una finestra degli strumenti.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nell'Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Per creare un progetto VSIX e aggiungere una finestra degli strumenti
 
-1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `ProjectPropertiesExtension` . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
+1. Ogni Visual Studio'estensione inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `ProjectPropertiesExtension` . È possibile trovare il modello di progetto VSIX nella **finestra di dialogo Nuovo** progetto cercando "vsix".
 
-2. Aggiungere una finestra degli strumenti aggiungendo un modello di elemento della finestra degli strumenti personalizzato denominato `ProjectPropertiesToolWindow` . Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di **dialogo Aggiungi nuovo elemento** passare a **Visual C# elementi**  >  **estensibilità** e selezionare **finestra degli strumenti personalizzata**. Nel campo **nome** nella parte inferiore della finestra di dialogo modificare il nome del file in `ProjectPropertiesToolWindow.cs` . Per ulteriori informazioni sulla creazione di una finestra degli strumenti personalizzata, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Aggiungere una finestra degli strumenti aggiungendo un modello di elemento della finestra degli strumenti personalizzato denominato `ProjectPropertiesToolWindow` . Nella finestra **di Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Nella finestra **di dialogo Aggiungi nuovo elemento** passare a Estendibilità degli elementi di **Visual C#** e selezionare Finestra degli strumenti  >   **personalizzata.** Nel campo **Nome** nella parte inferiore della finestra di dialogo modificare il nome del file in `ProjectPropertiesToolWindow.cs` . Per altre informazioni su come creare una finestra degli strumenti personalizzata, vedere [Creare un'estensione con una finestra degli strumenti.](../extensibility/creating-an-extension-with-a-tool-window.md)
 
 3. Compilare la soluzione e verificare che l'operazione avvenga senza errori.
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Per visualizzare le proprietà del progetto in una finestra degli strumenti
 
-1. Nel file ProjectPropertiesToolWindowCommand. cs aggiungere le direttive using seguenti.
+1. Nel file ProjectPropertiesToolWindowCommand.cs aggiungere le direttive using seguenti.
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
     ```
 
-2. In *ProjectPropertiesToolWindowControl. XAML* rimuovere il pulsante esistente e aggiungere un controllo TreeView dalla casella degli strumenti. È anche possibile rimuovere il gestore dell'evento click dal file *ProjectPropertiesToolWindowControl. XAML. cs* .
+2. In *ProjectPropertiesToolWindowControl.xaml* rimuovere il pulsante esistente e aggiungere un controllo TreeView dalla casella degli strumenti. È anche possibile rimuovere il gestore dell'evento Click dal file *ProjectPropertiesToolWindowControl.xaml.cs.*
 
-3. In *ProjectPropertiesToolWindowCommand. cs* usare il `ShowToolWindow()` metodo per aprire il progetto e leggere le relative proprietà, quindi aggiungere le proprietà al controllo TreeView. Il codice per ShowToolWindow dovrebbe essere simile al seguente:
+3. In *ProjectPropertiesToolWindowCommand.cs* usare il metodo per aprire il progetto e leggerne le proprietà, quindi `ShowToolWindow()` aggiungere le proprietà a TreeView. Il codice per ShowToolWindow dovrebbe essere simile al seguente:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -99,6 +99,6 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 5. Aprire un progetto nell'istanza sperimentale.
 
-6. In **Visualizza**  >  **altre finestre** fare clic su **ProjectPropertiesToolWindow**.
+6. In Visualizza **altre finestre**  >  **fare clic** su **ProgettoProprietàStrumentoWindow**.
 
-  Il controllo albero verrà visualizzato nella finestra degli strumenti insieme al nome del primo progetto e di tutte le relative proprietà del progetto.
+  Nella finestra degli strumenti verrà visualizzato il controllo struttura ad albero insieme al nome del primo progetto e a tutte le relative proprietà del progetto.

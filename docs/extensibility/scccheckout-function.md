@@ -1,8 +1,8 @@
 ---
-description: Dato un elenco di nomi di file completi, questa funzione li estrae nell'unità locale.
+description: Dato un elenco di nomi di file completi, questa funzione li estrazione nell'unità locale.
 title: Funzione SccCheckout | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccCheckout
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f93052ebe255cddb4703a8246b7e89c744548a7f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 72d36ccaf5c6dcddb6730f52b0ce1c3074c605a7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060380"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904721"
 ---
-# <a name="scccheckout-function"></a>SccCheckout (funzione)
-Dato un elenco di nomi di file completi, questa funzione li estrae nell'unità locale. Il commento si applica a tutti i file estratti. L'argomento comment può essere una `null` stringa.
+# <a name="scccheckout-function"></a>Funzione SccCheckout
+Dato un elenco di nomi di file completi, questa funzione li estrazione nell'unità locale. Il commento si applica a tutti i file estratti. L'argomento comment può essere una `null` stringa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,47 +40,47 @@ SCCRTN SccCheckout (
 ### <a name="parameters"></a>Parametri
  pvContext
 
-in Struttura del contesto del plug-in del controllo del codice sorgente.
+[in] Struttura del contesto del plug-in del controllo del codice sorgente.
 
  hWnd
 
-in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.
+[in] Handle per la finestra IDE che il plug-in del controllo del codice sorgente può usare come elemento padre per qualsiasi finestra di dialogo fornita.
 
- nFile
+ nFiles
 
-in Numero di file selezionati per il controllo.
+[in] Numero di file selezionati per l'estrazione.
 
  lpFileNames
 
-in Matrice di nomi di percorsi locali completi dei file da estrarre.
+[in] Matrice di nomi di percorsi locali completi dei file da estrazione.
 
  lpComment
 
-in Commento da applicare a ognuno dei file selezionati estratti.
+[in] Commento da applicare a ognuno dei file selezionati estratti.
 
  fOptions
 
-in Flag di comando (vedere [flag usato da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)).
+[in] Flag di comando (vedere [Flag di bit usati da comandi specifici).](../extensibility/bitflags-used-by-specific-commands.md)
 
  pvOptions
 
-in Opzioni specifiche del plug-in del controllo del codice sorgente.
+[in] Opzioni specifiche del plug-in del controllo del codice sorgente.
 
 ## <a name="return-value"></a>Valore restituito
- Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Estrazione riuscita.|
+|SCC_OK|L'estrazione è riuscita.|
 |SCC_E_FILENOTCONTROLLED|Il file selezionato non è sotto il controllo del codice sorgente.|
-|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di problemi di connessione. È consigliabile riprovare.|
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico. Il file non è stato estratto.|
-|SCC_E_ALREADYCHECKEDOUT|Il file è già stato estratto dall'utente.|
-|SCC_E_FILEISLOCKED|Il file è bloccato, impedendo la creazione di nuove versioni.|
-|SCC_E_FILEOUTEXCLUSIVE|Un altro utente ha eseguito un'estrazione esclusiva sul file.|
+|SCC_E_ALREADYCHECKEDOUT|Il file è già estratto dall'utente.|
+|SCC_E_FILEISLOCKED|Il file è bloccato e impedisce la creazione di nuove versioni.|
+|SCC_E_FILEOUTEXCLUSIVE|Un altro utente ha eseguito un'estrazione esclusiva su questo file.|
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata prima del completamento.|
 
-## <a name="see-also"></a>Vedi anche
-- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
-- [Flag utilizzato da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>Vedere anche
+- [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+- [Flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)

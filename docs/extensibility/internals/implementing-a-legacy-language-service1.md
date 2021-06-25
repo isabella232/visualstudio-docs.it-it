@@ -1,9 +1,9 @@
 ---
-title: Implementazione di un oggetto Service1 del linguaggio legacy | Microsoft Docs
-description: Informazioni su come implementare un servizio di linguaggio legacy che supporta le funzionalità del servizio di linguaggio esteso tramite il Framework di pacchetto gestito (MPF). Parte 1 di 2.
+title: Implementazione di un servizio di linguaggio legacy1 | Microsoft Docs
+description: Informazioni su come implementare un servizio di linguaggio legacy che supporta le funzionalità estese del servizio di linguaggio usando managed package framework (MPF). Parte 1 di 2.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
@@ -12,20 +12,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e3f11a9ea60595b2372921702282c2bb4d8dcd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 34be4e54fbce413fe5ba916892216a9234d4ba93
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085910"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901149"
 ---
-# <a name="implementing-a-legacy-language-service-1"></a>Implementazione di un servizio di linguaggio Legacy 1
-È possibile utilizzare le classi del Framework di pacchetto gestito (MPF) per implementare un servizio di linguaggio legacy che supporta una vasta gamma di funzionalità, ad esempio l'evidenziazione della sintassi, la corrispondenza delle parentesi graffe e il completamento di IntelliSense.
+# <a name="implementing-a-legacy-language-service-1"></a>Implementazione di un servizio di linguaggio legacy 1
+È possibile usare le classi nel framework del pacchetto gestito (MPF) per implementare un servizio di linguaggio legacy che supporta un'ampia gamma di funzionalità, ad esempio l'evidenziazione della sintassi, la corrispondenza delle parentesi graffe e il completamento IntelliSense.
 
- I servizi di linguaggio legacy sono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per ulteriori informazioni sul nuovo modo per implementare un servizio di linguaggio, vedere [Editor e le estensioni del servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).
+ I servizi di linguaggio legacy vengono implementati come parte di un PACCHETTO VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio è usare le estensioni MEF. Per altre informazioni sul nuovo modo di implementare un servizio di linguaggio, vedere [Editor and Language Service Extensions](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Si consiglia di iniziare a usare la nuova API editor appena possibile. Ciò consente di migliorare le prestazioni del servizio di linguaggio e di sfruttare i vantaggi delle nuove funzionalità dell'editor.
+> È consigliabile iniziare a usare la nuova API dell'editor appena possibile. Ciò consente di migliorare le prestazioni del servizio di linguaggio e di sfruttare le nuove funzionalità dell'editor.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Panoramica dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-overview.md)
@@ -34,7 +34,7 @@ ms.locfileid: "105085910"
 
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
- Vengono descritti gli elementi necessari per implementare un servizio di linguaggio tramite MPF.
+ Descrive gli elementi necessari per implementare un servizio di linguaggio tramite MPF.
 
 - [Registrazione di un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)
 
@@ -42,16 +42,16 @@ ms.locfileid: "105085910"
 
 - [Scanner e parser dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 
- Vengono descritti i due parser necessari per implementare tutte le funzionalità di un servizio di linguaggio tramite MPF.
+ Descrive i due parser necessari per implementare tutte le funzionalità di un servizio di linguaggio tramite MPF.
 
 - [Procedura dettagliata: Creazione di un servizio di linguaggio legacy](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
 
- Fornisce i passaggi di base necessari per implementare un servizio di linguaggio MPF in un VSPackage.
+ Vengono descritti i passaggi di base necessari per implementare un servizio di linguaggio MPF in un VSPackage.
 
 - [Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
- Vengono illustrate le tecniche di recupero di un elenco di frammenti di codice installati.
+ Illustra le tecniche di recupero di un elenco di frammenti di codice installati.
 
 - [Funzionalità dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)
 
- Vengono forniti collegamenti ad argomenti in cui vengono descritte le operazioni da eseguire per implementare tutte le funzionalità di un servizio di linguaggio tramite MPF.
+ Vengono forniti collegamenti ad argomenti che illustrano in dettaglio le procedure da eseguire per implementare tutte le funzionalità di un servizio di linguaggio tramite MPF.

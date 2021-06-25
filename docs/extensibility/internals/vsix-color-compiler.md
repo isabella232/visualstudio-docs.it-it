@@ -3,19 +3,19 @@ title: Compilatore colori VSIX | Microsoft Docs
 description: Informazioni sullo strumento Visual Studio compilatore colori dell'estensione, ovvero un'applicazione console che copre i colori Visual Studio temi in un file con estensione pkgdef.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92914703ea4b293ac054c841251b37886bbc1d5a
-ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
+ms.openlocfilehash: 2f7277299d3cedd2ea0db49a44109d8a0441ebd0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111588462"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901760"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
 Lo strumento Visual Studio Extension Color Compiler è un'applicazione console che accetta un file .xml che rappresenta i colori per i temi Visual Studio esistenti e lo copre in un file con estensione pkgdef in modo che tali colori possano essere usati in Visual Studio. Poiché è facile confrontare le differenze tra i file .xml, questo strumento è utile per la gestione dei colori personalizzati nel controllo del codice sorgente. Può anche essere collegato in ambienti di compilazione in modo che l'output della compilazione sia un file con estensione pkgdef valido.
@@ -68,7 +68,7 @@ Lo strumento Visual Studio Extension Color Compiler è un'applicazione console c
 
  **Categoria**
 
- \<Category>L'elemento definisce una raccolta di colori in un tema. I nomi delle categorie forniscono raggruppamenti logici e devono essere definiti nel modo più ristretto possibile. Una categoria deve contenere almeno un \<Color> elemento. Gli elementi categoria sono definiti nel modo seguente:
+ \<Category>L'elemento definisce una raccolta di colori in un tema. I nomi delle categorie forniscono raggruppamenti logici e devono essere definiti nel modo più ristretto possibile. Una categoria deve contenere almeno un \<Color> elemento . Gli elementi categoria sono definiti nel modo seguente:
 
 ```xml
 <Category Name="name" GUID="guid">

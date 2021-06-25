@@ -1,9 +1,9 @@
 ---
-title: Classe TaskScheduler-membri interni | Microsoft Docs
-description: Informazioni sui membri interni della classe System. Threading. Tasks. TaskScheduler che consentono di implementare un debugger personalizzato.
+title: Classe TaskScheduler - Membri interni | Microsoft Docs
+description: Informazioni sui membri interni della classe System.Threading.Tasks.TaskScheduler che consentono di implementare un debugger personalizzato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
@@ -13,21 +13,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45e2aff7d16826a631bb5126447d60b8b2468455
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58b370a6742387f7493e4c6357cffd05f2bd88a5
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057871"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900148"
 ---
-# <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler-membri interni
-Questo articolo descrive i membri interni della <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere l' <xref:System.Threading.Tasks.TaskScheduler> articolo di riferimento.
+# <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - Membri interni
+Questo articolo descrive i membri interni della classe che consentono <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere <xref:System.Threading.Tasks.TaskScheduler> l'articolo di riferimento.
 
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Assembly:** mscorlib (in *mscorlib.dll*)
 
- Poiché non è possibile accedere a questi membri interni dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.
+ Poiché non è possibile accedere a questi membri interni dal .NET Framework, in Common Intermediate Language (CIL) viene fornita la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,6 +47,6 @@ Questo articolo descrive i membri interni della <xref:System.Threading.Tasks.Tas
 
 ## <a name="remarks"></a>Commenti
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [Interni di estensioni parallele per la .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Estensioni interne parallele per l'.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
