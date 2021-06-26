@@ -7,7 +7,6 @@ ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
 - VS.ToolsOptionsPages.Projects.General
-- SolutionItemsProject
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7971226767fe114e3618e9dfc6a161a50d5374ee
-ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
+ms.openlocfilehash: 713d320767bd329cc53b536bdad058a5db592b3f
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112500903"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924929"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Creare, usare ed eliminare progetti Visual Studio soluzioni
 
@@ -152,7 +151,7 @@ Per eliminare definitivamente una soluzione o altri componenti dal sistema, usar
 
 1. Selezionare la cartella che contiene la soluzione e quindi premere **CANC.**
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 - [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)

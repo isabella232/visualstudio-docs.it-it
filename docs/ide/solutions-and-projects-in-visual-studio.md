@@ -5,14 +5,11 @@ ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
-- vs.addnewitem
-- vs.addnewsolutionitem
 - vs.openproject
 - vs.addexistingitem
 - vs.addexistingsolutionitem
 - vs.environment.projects
 - vs.environment.solutions
-- VS.SolutionExplorer
 - VS.SolutionExplorer.Solutions
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -22,12 +19,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cc760eb34df7f643bbdc16607f2316e92785bf
-ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
+ms.openlocfilehash: 0a186c63cf695184b74780eeb6ab16b85c8aef5e
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112500890"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924968"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Che cosa sono le soluzioni e i progetti Visual Studio?
 
@@ -94,7 +91,7 @@ La barra degli strumenti nella parte superiore di **Esplora soluzioni** include 
 
 ::: moniker range=">=vs-2019"
 
-![Screenshot della Esplora soluzioni con due progetti in Visual Studio.](../ide/media/solution-explorer.png)
+![Screenshot della Esplora soluzioni con due progetti Visual Studio.](../ide/media/solution-explorer.png)
 
 La barra degli strumenti nella parte superiore di **Esplora soluzioni** include pulsanti per passare da una visualizzazione della soluzione [](managing-project-and-solution-properties.md) a una visualizzazione cartella, filtrare le modifiche in sospeso, visualizzare tutti i file, comprimere tutti i nodi, visualizzare le pagine delle proprietà, visualizzare il codice in anteprima [nell'editor](writing-code-in-the-code-and-text-editor.md)di codice e altro ancora.
 
@@ -110,7 +107,7 @@ Per i progetti ASP.NET Core, è possibile personalizzare la modalità di annidam
 > [!NOTE]
 > Per visualizzare le immagini e le icone dell'applicazione visualizzate in Visual Studio, scaricare la [**raccolta Visual Studio immagini.**](https://www.microsoft.com/download/details.aspx?id=35825)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 - [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)

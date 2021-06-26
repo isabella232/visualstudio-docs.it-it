@@ -6,7 +6,6 @@ ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
-- vs.toolbox
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
@@ -15,16 +14,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a926084ccd8b1aafabb50f5a93f3f46d77bc6d4
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 0a4947562eb49501e60711111d8765716cbae5c6
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308467"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925215"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
-Nella finestra **Casella degli strumenti** sono visualizzati i controlli che è possibile aggiungere ai progetti di Visual Studio. Per aprire **la Casella degli** strumenti , **scegliere**  >  **Visualizza** casella degli strumenti dalla barra dei menu o premere **CTRL** + **ALT** + **X.**
+Nella finestra **Casella degli strumenti** sono visualizzati i controlli che è possibile aggiungere ai progetti di Visual Studio. Per aprire **La casella degli** strumenti, **scegliere**  >  **Visualizza** casella degli strumenti dalla barra dei menu o premere **CTRL** + **ALT** + **X.**
 
 ![Screenshot della finestra Casella degli strumenti che mostra le opzioni nella sezione Contenitori.](media/vs-2019/toolbox.png "Screenshot della finestra Casella degli strumenti")
 
@@ -45,7 +44,7 @@ La versione di.NET di destinazione del progetto influisce sul set di controlli v
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Gestire la finestra della casella degli strumenti e i relativi controlli
 
-Per impostazione predefinita, **la casella** degli strumenti è compressa lungo il lato sinistro dell'IDE Visual Studio e viene visualizzata quando il cursore viene spostato su di esso. È possibile bloccare la **casella degli strumenti**, facendo clic sull'icona **Blocca** nella barra degli strumenti della casella degli strumenti, in modo che resti aperta quando il cursore viene spostato. È anche possibile disancorare la finestra della **casella degli strumenti** e trascinarla in qualsiasi posizione sullo schermo. È possibile ancorare, disancorare e nascondere la **casella degli strumenti** facendo clic con il pulsante destro del mouse sulla relativa barra degli strumenti e scegliendo una delle opzioni.
+Per impostazione predefinita, **la casella** degli strumenti viene compressa lungo il lato sinistro dell'IDE Visual Studio e viene visualizzata quando il cursore viene spostato su di esso. È possibile bloccare la **casella degli strumenti**, facendo clic sull'icona **Blocca** nella barra degli strumenti della casella degli strumenti, in modo che resti aperta quando il cursore viene spostato. È anche possibile disancorare la finestra della **casella degli strumenti** e trascinarla in qualsiasi posizione sullo schermo. È possibile ancorare, disancorare e nascondere la **casella degli strumenti** facendo clic con il pulsante destro del mouse sulla relativa barra degli strumenti e scegliendo una delle opzioni.
 
 > [!TIP]
 > Se la casella degli strumenti non viene più visualizzata come compressa sul lato sinistro dell'IDE di Visual Studio, è possibile aggiungerla nuovamente scegliendo Reimposta layout finestra dalla barra  >   dei menu.
@@ -82,6 +81,6 @@ Per altre informazioni su alcune delle schede della casella degli strumenti disp
 - [Casella degli strumenti, Scheda Componenti](../../ide/reference/toolbox-components-tab.md)
 - [Casella degli strumenti, Scheda HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Scegli elementi della Casella degli strumenti, Componenti WPF](choose-toolbox-items-wpf-components.md)

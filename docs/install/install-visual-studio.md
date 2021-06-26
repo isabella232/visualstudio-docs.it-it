@@ -5,8 +5,6 @@ description: Informazioni dettagliate sull'installazione di Visual Studio.
 ms.date: 12/13/2019
 ms.custom: vs-acquisition
 ms.topic: conceptual
-f1_keywords:
-- vs.about
 helpviewer_keywords:
 - install Visual Studio
 - dev15
@@ -20,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 692989d5bf8979752757fb5630a78d55426f85b9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 7bf44f9333a65ea821c0cd9936ee1f3fa051d4fe
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387073"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925085"
 ---
 # <a name="install-visual-studio"></a>Installare Visual Studio
 
@@ -161,7 +159,7 @@ Eseguire il file del programma di avvio automatico per installare il programma d
 
 2. Verrà richiesto di confermare le [Condizioni di licenza](https://visualstudio.microsoft.com/license-terms/) e l'[Informativa sulla privacy](https://privacy.microsoft.com/privacystatement) di Microsoft. Scegliere **Continua**.
 
-   ![Condizioni di licenza e informativa sulla privacy](media/privacy-and-license-terms.png "Condizioni di licenza Microsoft e informativa sulla privacy")
+   ![Condizioni di licenza e informativa sulla privacy](media/privacy-and-license-terms.png "Condizioni di licenza e informativa sulla privacy Microsoft")
 
 ## <a name="step-4---choose-workloads"></a>Passaggio 4: Scegliere i carichi di lavoro
 
@@ -277,7 +275,7 @@ Per altre informazioni, vedere la pagina [Selezionare i percorsi di installazion
 
 1. Al termine dell'installazione di Visual Studio, fare clic sul pulsante **Avvia** per iniziare a sviluppare con Visual Studio.
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
 1. Nella casella di ricerca immettere il tipo di app da creare per visualizzare un elenco dei modelli disponibili. L'elenco dei modelli dipende dai carichi di lavoro che sono stati scelti durante l'installazione. Per visualizzare modelli diversi, è possibile scegliere carichi di lavoro differenti.
 
@@ -289,7 +287,7 @@ Per altre informazioni, vedere la pagina [Selezionare i percorsi di installazion
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Aggiornare Visual Studio](update-visual-studio.md)
 * [Modificare Visual Studio](modify-visual-studio.md)

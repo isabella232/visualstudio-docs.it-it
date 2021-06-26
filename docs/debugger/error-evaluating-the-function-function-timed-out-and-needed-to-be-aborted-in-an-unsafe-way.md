@@ -1,8 +1,9 @@
 ---
-title: La valutazione della funzione ha avuto un timeout e deve essere interrotta in modo non sicuro | &apos; &apos; Microsoft Docs
+title: La valutazione della funzione ha avuto un timeout e deve essere interrotta in modo non &apos; &apos; sicuro | Microsoft Docs
 description: "Testo completo del messaggio: si è verificata la valutazione del timeout della funzione 'function' che deve essere interrotta in modo non sicuro."
 ms.date: 06/18/2021
 ms.topic: error-reference
+ms.custom: contperf-fy21q4
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e928bb0ebae1e644729fcaf4f47b7dd461399be6
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 94c308e9ec960f744a98f0f930999df36afff475
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386670"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925007"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Errore: la valutazione della funzione &#39;funzione&#39; timeout e deve essere interrotta in modo non sicuro
 
@@ -41,7 +42,7 @@ Il messaggio di errore indica il nome della funzione che il debugger ha tentato 
 
 ## <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Soluzione #2: chiedere al debugger di interrompere la valutazione con il codice di destinazione
 
-Il messaggio di errore indica il nome della funzione che il debugger ha tentato di chiamare. Se a volte il metodo getter o ToString della proprietà non viene eseguito correttamente, soprattutto nei casi in cui il problema è che il codice richiede un altro thread per eseguire il codice, la funzione di implementazione può chiamare [System.Diagnostics.Debugger.NotifyOfCrossThreadDependency](/dotnet/api/system.diagnostics.debugger.notifyofcrossthreaddependency) per chiedere al debugger di interrompere la valutazione della funzione. Con questa soluzione è comunque possibile valutare in modo esplicito queste funzioni, ma il comportamento predefinito è che l'esecuzione si arresta quando si verifica la chiamata NotifyOfCrossThreadDependency.
+Il messaggio di errore indica il nome della funzione che il debugger ha tentato di chiamare. Se talvolta il metodo Get o ToString della proprietà non viene eseguito correttamente, soprattutto in situazioni in cui il problema è che il codice richiede un altro thread per eseguire il codice, la funzione di implementazione può chiamare [System.Diagnostics.Debugger.NotifyOfCrossThreadDependency](/dotnet/api/system.diagnostics.debugger.notifyofcrossthreaddependency) per chiedere al debugger di interrompere la valutazione della funzione. Con questa soluzione è comunque possibile valutare in modo esplicito queste funzioni, ma il comportamento predefinito è che l'esecuzione si arresta quando si verifica la chiamata NotifyOfCrossThreadDependency.
 
 ## <a name="solution-3-disable-all-implicit-evaluation"></a>Soluzione #3: disabilitare tutte le valutazioni implicite
 

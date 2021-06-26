@@ -1,13 +1,12 @@
 ---
 title: Finestra di output
-description: Informazioni sulla finestra di output e sul modo in cui vengono visualizzati i messaggi di stato per diverse funzionalità nell'IDE.
+description: Informazioni sulla finestra Output e su come vengono visualizzati i messaggi di stato per varie funzionalità nell'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.build.output
 - vs.debug.output
-- vs.output
 helpviewer_keywords:
 - Output window, about Output window
 - Output window
@@ -18,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bdbaf79a3700a1ba1c0574e345093af25608e39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbc6f33c439a812d7153f48d7f20d7e1d9dd3cb1
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932046"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925163"
 ---
 # <a name="output-window"></a>Output (finestra)
 
@@ -73,11 +72,11 @@ In C++ è possibile creare istruzioni ed eventi di compilazione personalizzati i
 
 ## <a name="scroll-behavior"></a>Comportamento dello scorrimento
 
-Se si usa lo scorrimento automatico nella finestra **Output** e quindi si naviga usando il mouse o i tasti di direzione, lo scorrimento automatico viene arrestato. Per riprendere lo scorrimento automatico, premere **CTRL** + **fine**.
+Se si usa lo scorrimento automatico nella finestra **Output** e quindi si naviga usando il mouse o i tasti di direzione, lo scorrimento automatico viene arrestato. Per riprendere lo scorrimento automatico, premere  + **CTRL+FINE.**
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Messaggi di diagnostica nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md)
+- [Messaggi di diagnostica nella finestra Output](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Procedura: Controllare la finestra di output](/previous-versions/ht6z4e28(v=vs.140))
 - [Compilare](../../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../../ide/understanding-build-configurations.md)

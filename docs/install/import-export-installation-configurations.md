@@ -4,8 +4,6 @@ titleSuffix: ''
 description: Informazioni su come esportare la configurazione di installazione in un file con estensione vsconfig da condividere con altri utenti e su come eseguire l'importazione da clonare.
 ms.date: 05/18/2019
 ms.topic: how-to
-f1_keywords:
-- vs.about
 helpviewer_keywords:
 - import installation configuration
 - export installation configuration
@@ -18,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1fc4b181436b5e214300b334163b9257af0d0d35
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 33ee25da51d5243daa67be53f68c50ede76219b2
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307466"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925228"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importare o esportare configurazioni di installazione
 
@@ -70,7 +68,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 ## <a name="automatically-install-missing-components"></a>Installare automaticamente i componenti mancanti
 
-**Novità di Visual Studio 2019:** quando si salva un file vsconfig nella directory radice della soluzione e quindi si apre una soluzione, Visual Studio rileva automaticamente i componenti mancanti e richiede di installarli.
+**Novità di Visual Studio 2019:** quando si salva un file con estensione vsconfig nella directory radice della soluzione e quindi si apre una soluzione, Visual Studio rileva automaticamente i componenti mancanti e richiede di installarli.
 
 ![Esplora soluzioni suggerisce componenti aggiuntivi](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,7 +76,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 1. Fare clic con il pulsante destro del mouse sul file della soluzione.
 
-1. Scegliere **Aggiungi file** di configurazione di > **installazione**.
+1. Scegliere **Aggiungi file** di configurazione > **dell'installazione**.
 
 1. Verificare il percorso in cui si salvare il file con estensione vconfig e quindi scegliere **Esamina dettagli**.
 
@@ -91,7 +89,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Creare un'installazione di rete di Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
