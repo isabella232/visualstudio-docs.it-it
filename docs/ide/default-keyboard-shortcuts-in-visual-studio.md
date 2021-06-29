@@ -2,7 +2,7 @@
 title: Tasti di scelta rapida predefiniti
 description: Informazioni sui tasti di scelta rapida predefiniti in Visual Studio che consentono di accedere a un'ampia gamma di comandi e finestre.
 ms.custom: SEO-VS-2020
-ms.date: 05/21/2021
+ms.date: 06/21/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74ed04faaaf4626e63be7393a650b1bea225f3
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: a474a81ea70276ecee54beb8e82ab85afdb225b9
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110328692"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038642"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -28,11 +28,171 @@ Per accedere a vari [comandi](reference/visual-studio-commands.md) e finestre in
 
 Per un elenco di tasti di scelta rapida comuni e altre informazioni sulla produttività, vedere:
 
-- [Tasti di scelta rapida per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Suggerimenti relativi alla tastiera](../ide/productivity-shortcuts.md)
 - [Suggerimenti per la produttività](../ide/productivity-features.md).
 
 Per altre informazioni sull'accessibilità in [](../ide/reference/accessibility-tips-and-tricks.md) Visual Studio, vedere Suggerimenti e consigli sull'accessibilità e Procedura: Usare la [tastiera in modo esclusivo.](../ide/reference/how-to-use-the-keyboard-exclusively.md)
+
+
+
+## <a name="most-popular-keyboard-shortcuts"></a>Più diffusi tasti di scelta rapida
+
+Tutti i tasti di scelta rapida in questa sezione si applicano a livello globale, se non diversamente specificato. Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qualsiasi finestra degli strumenti in Visual Studio.
+
+> [!NOTE]
+> È possibile [cercare il tasto di scelta rapida](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e quindi scegliendo **Tastiera**.
+
+
+#### <a name="build-popular-shortcuts"></a>Compilazione: scelte rapide comuni
+
+|Comandi|Scelte rapide da tastiera |
+|--------------| - |
+|Build.BuildSolution|**CTRL+MAIUSC+B** |
+|Build.Cancel|**CTRL+INTERR** |
+|Build.Compile|**Ctrl+F7** |
+|Build.RunCodeAnalysisonSolution|**ALT+F11**|
+
+#### <a name="debug-popular-shortcuts"></a>Debug: tasti di scelta rapida comuni
+
+|Comandi|Tasti di scelta rapida [contesti speciali]|
+|--------------| - |
+|Debug.BreakatFunction|**CTRL+B**|
+|Debug.BreakAll|**CTRL+ALT+INTERR**|
+|Debug.DeleteAllBreakpoints|**CTRL+MAIUSC+F9**|
+|Debug.Exceptions|**CTRL+ALT+E**|
+|Debug.QuickWatch|**CTRL+ALT+Q**<br /><br />o **MAIUSC+F9**|
+|Debug.Restart|**Ctrl+Maiusc+F5**|
+|Debug.RunToCursor|**CTRL+F10**|
+|Debug.SetNextStatement|**Ctrl+Maiusc+F10**|
+|Debug.Start|**F5**|
+|Debug.StartWithoutDebugging|**CTRL+F5**|
+|Debug.StepInto|**F11**|
+|Debug.StepOut|**MAIUSC+F11**|
+|Debug.StepOver|**F10**|
+|Debug.StopDebugging|**MAIUSC+F5**|
+|Debug.ToggleBreakpoint|**F9**|
+
+#### <a name="edit-popular-shortcuts"></a>Modifica: scelte rapide comuni
+
+|Comandi|Tasti di scelta rapida [contesti speciali]|
+|--------------| - |
+|Edit.BreakLine|**Immettere** [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br />o **MAIUSC+INVIO** [Editor di testo]|
+|Edit.CollapseToDefinitions|**CTRL+M,** **CTRL+O** [Editor di testo]|
+|Edit.CommentSelection|**CTRL+K,** **CTRL+C** [Editor di testo]|
+|Edit.CompleteWord|**ALT+freccia DESTRA** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K,** **W** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+W** [Progettazione flussi di lavoro]|
+|Edit.Copy|**CTRL+C**<br /><br />o **CTRL+INSERISCI**|
+|Edit.Cut|**CTRL+X**<br /><br />o **MAIUSC+CANC**|
+|Edit.Delete|**Delete** [Team Explorer]<br /><br />o **MAIUSC+CANC** [diagramma di sequenza, diagramma di attività UML, diagramma livello]<br /><br />o **CTRL+CANC** [Diagramma classi]|
+|Edit.Find|**CTRL+F**|
+|Edit.FindAllReferences|**MAIUSC+F12**|
+|Edit.FindinFiles|**CTRL+MAIUSC+F**|
+|Edit.FindNext|**F3**|
+|Edit.FindNextSelected|**CTRL+F3**|
+|Edit.FormatDocument|**CTRL+K, CTRL+D** [Editor di testo]|
+|Edit.FormatSelection|**CTRL+K, CTRL+F** [Editor di testo]|
+|Edit.GoTo|**CTRL+G**|
+|Edit.GoToDeclaration|**Ctrl+F12**|
+|Edit.GoToDefinition|**F12**|
+|Edit.GoToFindCombo|**CTRL+D**|
+|Edit.GoToNextLocation|**F8**|
+|Edit.InsertSnippet|**CTRL+K,** **CTRL+X**|
+|Edit.InsertTab|**Scheda** [Progettazione report, Progettazione Windows Form, Editor di testo]|
+|Edit.LineCut|**CTRL+L** [Editor di testo]|
+|Edit.LineDownExtendColumn|**MAIUSC+ALT+freccia GIÙ** [Editor di testo]|
+|Edit.LineOpenAbove|**CTRL+INVIO** [Editor di testo]|
+|Edit.ListMembers|**CTRL+J** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+L** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, L** [Progettazione flussi di lavoro]|
+|Edit.NavigateTo|**CTRL+,**|
+|Edit.OpenFile|**CTRL+MAIUSC+G**|
+|Edit.OvertypeMode|**Insert** [Editor di testo]|
+|Edit.ParameterInfo|**CTRL+MAIUSC+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+P** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, P** [Progettazione flussi di lavoro]|
+|Edit.Paste|**CTRL+V**<br /><br />o **MAIUSC+INSERISCI**|
+|Edit.PeekDefinition|**ALT+F12** [Editor di testo]|
+|Edit.Redo|**CTRL+Y**<br /><br />o **MAIUSC+ALT+BACKSPACE**<br /><br />o **CTRL+MAIUSC+Z**|
+|Edit.Replace|**CTRL+H**|
+|Edit.SelectAll|**CTRL+A**|
+|Edit.SelectCurrentWord|**CTRL+W** [Editor di testo]|
+|Edit.SelectionCancel|**Esc** [Editor di testo, Progettazione report, Progettazione impostazioni, Progettazione Windows Form, Editor risorse gestite]|
+|Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
+|Edit.TabLeft|**MAIUSC+TAB** [Editor di testo, Progettazione report, Windows Forms Editor]|
+|Edit.ToggleAllOutlining|**CTRL+M, CTRL+L** [Editor di testo]|
+|Edit.ToggleBookmark|**CTRL+K, CTRL+K** [Editor di testo]|
+|Edit.ToggleCompletionMode|**CTRL+ALT+BARRA SPAZIATRICE** [Editor di testo]|
+|Edit.ToggleOutliningExpansion|**CTRL+M, CTRL+M** [Editor di testo]|
+|Edit.UncommentSelection|**CTRL+K, CTRL+U** [Editor di testo]|
+|Edit.Undo|**CTRL+Z**<br /><br />o **ALT+BACKSPACE**|
+|Edit.WordDeleteToEnd|**CTRL+CANC** [Editor di testo]|
+|Edit.WordDeleteToStart|**CTRL+BACKSPACE** [Editor di testo]|
+
+#### <a name="file-popular-shortcuts"></a>File: scelte rapide più comuni
+
+|Comandi|Tasti di scelta rapida [contesti speciali]|
+|--------------| - |
+|File.Exit|**ALT+F4**|
+|File.NewFile|**CTRL+N**|
+|File.NewProject|**CTRL+MAIUSC+N**|
+|File.NewWebSite|**MAIUSC+ALT+N**|
+|File.OpenFile|**CTRL+O**|
+|File.OpenProject|**CTRL+MAIUSC+O**|
+|File.OpenWebSite|**MAIUSC+ALT+O**|
+|File.Rename|**F2** [Team Explorer]|
+|File.SaveAll|**CTRL+MAIUSC+S**|
+|File.SaveSelectedItems|**CTRL+S**|
+|File.ViewinBrowser|**CTRL+MAIUSC+W**|
+
+#### <a name="project-popular-shortcuts"></a>Progetto: scelte rapide comuni
+
+|Comandi|Tasti di scelta rapida [contesti speciali]|
+|--------------| - |
+|Project.AddExistingItem|**MAIUSC+ALT+A**|
+|Project.AddNewItem|**CTRL+MAIUSC+A**|
+
+#### <a name="refactor-popular-shortcuts"></a>Refactoring: scelte rapide comuni
+
+|Comando|Scelta rapida da tastiera [contesti speciali]|
+|-------------| - |
+|Refactor.ExtractMethod|**CTRL+R, CTRL+M**|
+
+#### <a name="tools-popular-shortcuts"></a>Strumenti: scelte rapide comuni
+
+|Comando|Scelta rapida da tastiera [contesti speciali]|
+|-------------| - |
+|Tools.AttachtoProcess|**CTRL+ALT+P**|
+
+#### <a name="view-popular-shortcuts"></a>Visualizza: scelte rapide comuni
+
+|Comandi|Tasti di scelta rapida [contesti speciali]|
+|--------------| - |
+|View.ClassView|**CTRL+MAIUSC+C**|
+|View.EditLabel|**F2**|
+|View.ErrorList|**\\CTRL+, CTRL+E**<br /><br />o **\\ CTRL+, E**|
+|View.NavigateBackward|**CTRL+-**|
+|View.NavigateForward|**CTRL+MAIUSC+-**|
+|View.ObjectBrowser|**CTRL+ALT+J**|
+|View.Output|**CTRL+ALT+O**|
+|View.PropertiesWindow|**F4**|
+|View.Refresh|**F5** [Team Explorer]|
+|View.ServerExplorer|**CTRL + ALT + S**|
+|View.ShowSmartTag|**CTRL+.**<br /><br />o **MAIUSC+ALT+F10** [visualizzazione Progettazione editor HTML]|
+|View.SolutionExplorer|**CTRL+ALT+L**|
+|View.TfsTeamExplorer|**\\CTRL+, CTRL+M**|
+|View.Toolbox|**CTRL+ALT+X**|
+|View.ViewCode|**Immettere** [Diagramma classi]<br /><br />o **F7** [Progettazione impostazioni]|
+|View.ViewDesigner|**MAIUSC+F7** [Visualizzazione origine editor HTML]|
+
+#### <a name="window-popular-shortcuts"></a>Finestra: scelte rapide comuni
+
+|Comandi|Tasti di scelta rapida [contesti speciali]|
+|--------------| - |
+|Window.ActivateDocumentWindow|**ESC**|
+|Window.CloseDocumentWindow|**CTRL+F4**|
+|Window.NextDocumentWindow|**CTRL+F6**|
+|Window.NextDocumentWindowNav|**CTRL+TAB**|
+|Window.NextSplitPane|**F6**|
+
+
+## <a name="global-shortcuts"></a>Tasti di scelta rapida globali
+
+Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando lo stato attivo si trova in qualsiasi finestra di Visual Studio.
 
 - [Analizzare](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Modifica](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
@@ -59,10 +219,6 @@ Per altre informazioni sull'accessibilità in [](../ide/reference/accessibility-
 - [Menu di scelta rapida per Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
 - [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
 - [Hub diagnostica](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
-
-## <a name="global-shortcuts"></a>Tasti di scelta rapida globali
-
-Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando lo stato attivo si trova in qualsiasi finestra di Visual Studio.
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> Analizzare
 
@@ -226,14 +382,14 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Edit.SelectNextControl|**TAB**|
 |Edit.SelectPreviousControl|**MAIUSC+TAB**|
 |Edit.ShowTileGrid|**INVIO**|
-|Edit.SizeControlDown|**CTRL+MAIUSC+freccia GIÙ**|
-|Edit.SizeControlDownGrid|**MAIUSC+freccia GIÙ**|
+|Edit.SizeControlDown|**CTRL+MAIUSC+Freccia GIÙ**|
+|Edit.SizeControlDownGrid|**MAIUSC+Freccia GIÙ**|
 |Edit.SizeControlLeft|**CTRL+MAIUSC+Freccia SINISTRA**|
-|Edit.SizeControlLeftGrid|**MAIUSC+freccia SINISTRA**|
-|Edit.SizeControlRight|**CTRL+MAIUSC+freccia DESTRA**|
-|Edit.SizeControlRightGrid|**MAIUSC+freccia DESTRA**|
+|Edit.SizeControlLeftGrid|**MAIUSC+Freccia SINISTRA**|
+|Edit.SizeControlRight|**CTRL+MAIUSC+Freccia DESTRA**|
+|Edit.SizeControlRightGrid|**MAIUSC+Freccia DESTRA**|
 |Edit.SizeControlUp|**CTRL+MAIUSC+freccia SU**|
-|Edit.SizeControlUpGrid|**MAIUSC+freccia SU**|
+|Edit.SizeControlUpGrid|**MAIUSC+Freccia SU**|
 |Edit.StopSearch|**Alt+F3, S**|
 |Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
 |Edit.Undo|**CTRL+Z**<br /><br /> oppure<br /><br /> **ALT+BACKSPACE**|
@@ -250,7 +406,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O** (lettera "O")|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> oppure<br /><br /> **CTRL+K, S**|
 
-### <a name="file"></a><a name="bkmk_file"></a> ﬁle
+### <a name="file"></a><a name="bkmk_file"></a> File
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -417,7 +573,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |View.ShowSmartTag|**MAIUSC+ALT+F10**<br /><br /> oppure<br /><br /> **CTRL+.**|
 |View.SolutionExplorer|**CTRL+ALT+L**|
 |View.SQLServerObjectExplorer|**\\CTRL+, CTRL+S**|
-|View.TaskList|**\\CTRL+, T**<br /><br /> oppure<br /><br /> **\\CTRL+, CTRL+T**|
+|View.TaskList|**Ctrl+ \\ , T**<br /><br /> oppure<br /><br /> **\\CTRL+, CTRL+T**|
 |View.TfsTeamExplorer|**\\CTRL+, CTRL+M**|
 |View.Toolbox|**CTRL+ALT+X**|
 |View.UMLModelExplorer|**\\CTRL+, CTRL+U**|
@@ -455,7 +611,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Window.QuickLaunch|**Ctrl+Q**|
 |Window.QuickLaunchPreviousCategory|**CTRL+MAIUSC+Q**|
 |Window.ShowDockMenu|**ALT+-**|
-|Window.ShowEzMDIFileList|**CTRL+ALT+FRECCIA GIÙ**|
+|Window.ShowEzMDIFileList|**CTRL+ALT+Freccia GIÙ**|
 |Window.SolutionExplorerSearch|**CTRL+;**|
 |Window.WindowSearch|**ALT+'**|
 
@@ -466,11 +622,16 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |WindowsAzure.RetryMobileServiceScriptOperation|**CTRL+NUM, \* CTRL+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**CTRL+NUM, \* CTRL+D**|
 
-## <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
+## <a name="context-specific-shortcuts"></a>Tasti di scelta rapida specifici del contesto
+
+
+### <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
+
+I tasti di scelta rapida specifici per questo contesto sono:
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**ALT+freccia GIÙ**|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**ALT+Freccia GIÙ**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**ALT+PGGIÙ**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**ALT+FINE**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|**ALT+Home**|
@@ -481,7 +642,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |View.EntityDataModelBrowser|**CTRL+1**|
 |View.EntityDataModelMappingDetails|**CTRL+2**|
 
-## <a name="class-diagram"></a>Diagramma classi
+### <a name="class-diagram"></a>Diagramma classi
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -493,7 +657,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Edit.RemovefromDiagram|**Elimina**|
 |View.ViewCode|**INVIO**|
 
-## <a name="coded-ui-test-editor"></a>Editor test codificati dell'interfaccia utente
+### <a name="coded-ui-test-editor"></a>Editor test codificati dell'interfaccia utente
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -504,14 +671,20 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**CTRL+ALT+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**CTRL+MAIUSC+T**|
 
-## <a name="dataset-editor"></a>Editor DataSet
+### <a name="dataset-editor"></a>Editor DataSet
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Inserimento**|
 |OtherContextMenus.DbTableContext.Add.Column|**CTRL+L**|
 
-## <a name="difference-viewer"></a>Visualizzatore differenze
+### <a name="difference-viewer"></a>Visualizzatore differenze
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -527,7 +700,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |EditorContextMenus.CodeWindow.AddComment|**CTRL+MAIUSC+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**CTRL+MAIUSC+P**|
 
-## <a name="dom-explorer"></a>DOM Explorer
+### <a name="dom-explorer"></a>DOM Explorer
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -535,13 +711,19 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |DOMExplorer.SelectElement|**CTRL+B**|
 |DOMExplorer.ShowLayout|**CTRL+MAIUSC+I**|
 
-## <a name="f-interactive"></a>F# Interactive
+### <a name="f-interactive"></a>F# Interactive
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**CTRL+INTERR**|
 
-## <a name="graph-document-editor"></a>Editor di documento grafico
+### <a name="graph-document-editor"></a>Editor di documento grafico
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -553,42 +735,51 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Elimina**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-## <a name="graphics-diagnostics"></a>Diagnostica grafica
+### <a name="graphics-diagnostics"></a>Diagnostica grafica
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |Debug.Graphics.CaptureFrame|Nessuno|
 |Graphics.MovePixelSelectionDown|**MAIUSC+ALT+Freccia GIÙ**|
-|Graphics.MovePixelSelectionLeft|**MAIUSC+ALT+freccia SINISTRA**|
-|Graphics.MovePixelSelectionRight|**MAIUSC+ALT+freccia DESTRA**|
+|Graphics.MovePixelSelectionLeft|**MAIUSC+ALT+Freccia SINISTRA**|
+|Graphics.MovePixelSelectionRight|**MAIUSC+ALT+Freccia DESTRA**|
 |Graphics.MovePixelSelectionUp|**MAIUSC+ALT+Freccia SU**|
 |Graphics.ZoomToActualSize|**MAIUSC+ALT+0** (zero)|
 |Graphics.ZoomToFitInWindow|**MAIUSC+ALT+9**|
 |Graphics.ZoomIn|**MAIUSC+ALT+=**|
 |Graphics.ZoomOut|**MAIUSC+ALT+-**|
 
-## <a name="html-editor"></a>Editor HTML
+### <a name="html-editor"></a>Editor HTML
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|
 
-## <a name="html-editor-design-view"></a>Visualizzazione Progettazione editor HTML
+### <a name="html-editor-design-view"></a>Visualizzazione Progettazione editor HTML
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
-|Edit.MoveControlDown|**CTRL+FRECCIA GIÙ**|
-|Edit.MoveControlUp|**CTRL+FRECCIA SU**|
+|Edit.MoveControlDown|**CTRL+Freccia GIÙ**|
+|Edit.MoveControlUp|**CTRL+Freccia SU**|
 |Format.Bold|**CTRL+B**|
 |Format.ConverttoHyperlink|**CTRL+L**|
 |Format.InsertBookmark|**CTRL+MAIUSC+L**|
 |Format.Italic|**CTRL+I**|
 |Format.Underline|**CTRL+U**|
 |Project.AddContentPage|**CTRL+M, CTRL+C**|
-|Table.ColumntotheLeft|**CTRL+ALT+FRECCIA SINISTRA**|
+|Table.ColumntotheLeft|**CTRL+ALT+Freccia SINISTRA**|
 |Table.ColumntotheRight|**CTRL+ALT+Freccia DESTRA**|
-|Table.RowAbove|**CTRL+ALT+FRECCIA SU**|
-|Table.RowBelow|**CTRL+ALT+FRECCIA GIÙ**|
+|Table.RowAbove|**CTRL+ALT+Freccia SU**|
+|Table.RowBelow|**CTRL+ALT+Freccia GIÙ**|
 |View.ASP.NETNonvisualControls|**CTRL+MAIUSC+N**|
 |View.EditMaster|**Ctrl+M, Ctrl+M**|
 |View.NextView|**Ctrl+PgDn**|
@@ -596,7 +787,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |View.ViewMarkup|**MAIUSC+F7**|
 |Window.PreviousTab|**CTRL+PGSU**|
 
-## <a name="html-editor-source-view"></a>Visualizzazione origine editor HTML
+### <a name="html-editor-source-view"></a>Visualizzazione origine editor HTML
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -606,13 +800,19 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |View.ViewDesigner|**MAIUSC+F7**|
 |Window.PreviousTab|**CTRL+PGSU**|
 
-## <a name="layer-diagram"></a>Diagramma livello
+### <a name="layer-diagram"></a>Diagramma livello
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.Delete|**MAIUSC+CANC**|
 
-## <a name="managed-resources-editor"></a>Editor risorse gestite
+### <a name="managed-resources-editor"></a>Editor risorse gestite
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -627,7 +827,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Resources.Other|**CTRL+6**|
 |Resources.Strings|**CTRL+1**|
 
-## <a name="merge-editor-window"></a>Finestra editor merge
+### <a name="merge-editor-window"></a>Finestra editor merge
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -635,7 +838,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT+3**|
 
-## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, confronto schema
+### <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, confronto schema
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -646,7 +852,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |SQL.SSDTSchemaCompareStop|**ALT+INTERR**|
 |SQL.SSDTSchemaCompareWriteUpdates|**MAIUSC+ALT+U**|
 
-## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, progettazione tabelle
+### <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, progettazione tabelle
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -657,7 +866,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |SQL.Rename|**F2**<br /><br /> oppure<br /><br /> **CTRL+R, R**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+R**|
 |ViewFileInScriptPanel|**MAIUSC+ALT+PGGIÙ**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL
+### <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -678,7 +890,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |TSqlEditorCloneQuery|**CTRL+ALT+N**|
 |TSqlEditorDatabaseCombo|**MAIUSC+ALT+PGGIÙ**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL PDW
+### <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL PDW
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -693,13 +908,19 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |TSqlEditorCloneQuery|**CTRL+ALT+N**|
 |TSqlEditorDatabaseCombo|**MAIUSC+ALT+PGGIÙ**|
 
-## <a name="page-inspector"></a>Controllo pagina
+### <a name="page-inspector"></a>Controllo pagina
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-## <a name="query-designer"></a>Progettazione query
+### <a name="query-designer"></a>Progettazione query
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -712,7 +933,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |QueryDesigner.Results|**CTRL+4**|
 |QueryDesigner.SQL|**CTRL+3**|
 
-## <a name="query-results"></a>Risultati query
+### <a name="query-results"></a>Risultati query
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -720,15 +944,18 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |SQL.QueryResultsRefresh|**MAIUSC+ALT+R**|
 |SQL.QueryResultsStop|**ALT+INTERR**|
 
-## <a name="report-designer"></a>Progettazione report
+### <a name="report-designer"></a>Progettazione report
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |Edit.BreakLine|**INVIO**|
 |Edit.CharLeft|**Freccia SINISTRA**|
-|Edit.CharLeftExtend|**MAIUSC+freccia SINISTRA**|
+|Edit.CharLeftExtend|**MAIUSC+Freccia SINISTRA**|
 |Edit.CharRight|**Freccia DESTRA**|
-|Edit.CharRightExtend|**MAIUSC+freccia DESTRA**|
+|Edit.CharRightExtend|**MAIUSC+Freccia DESTRA**|
 |Edit.InsertTab|**TAB**|
 |Edit.LineDown|**Freccia GIÙ**|
 |Edit.LineDownExtend|**MAIUSC+freccia GIÙ**|
@@ -742,18 +969,24 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Edit.SizeControlDown|**CTRL+MAIUSC+freccia GIÙ**|
 |Edit.SizeControlLeft|**CTRL+MAIUSC+Freccia SINISTRA**|
 |Edit.SizeControlRight|**CTRL+MAIUSC+freccia DESTRA**|
-|Edit.SizeControlUp|**CTRL+MAIUSC+freccia SU**|
+|Edit.SizeControlUp|**CTRL+MAIUSC+FRECCIA SU**|
 |Edit.TabLeft|**MAIUSC+TAB**|
 |View.ReportData|**CTRL+ALT+D**|
 
-## <a name="sequence-diagram"></a>Diagramma sequenza
+### <a name="sequence-diagram"></a>Diagramma sequenza
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**MAIUSC+CANC**|
 
-## <a name="settings-designer"></a>Progettazione impostazioni
+### <a name="settings-designer"></a>Progettazione impostazioni
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -762,20 +995,26 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Edit.SelectionCancel|**ESC**|
 |View.ViewCode|**F7**|
 
-## <a name="solution-explorer"></a>Esplora soluzioni
+### <a name="solution-explorer"></a>Esplora soluzioni
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**CTRL+K, CTRL+G**|
 
-## <a name="team-explorer"></a>Team Explorer
+### <a name="team-explorer"></a>Team Explorer
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.Delete|**Elimina**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**ALT+Home**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT+Freccia GIÙ**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT+freccia GIÙ**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT+0** (zero)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**ALT+freccia SU**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**ALT+1**|
@@ -787,29 +1026,35 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection7Content|**ALT+7**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection8Content|**ALT+8**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection9Content|**ALT+9**|
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|**ALT+Freccia SINISTRA**|
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**ALT+Freccia DESTRA**|
+|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|**ALT+freccia SINISTRA**|
+|TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**ALT+freccia DESTRA**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**MAIUSC+ALT+C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**MAIUSC+ALT+L**|
 |View.Refresh|**F5**|
 
-## <a name="test-explorer"></a>Esplora test
+### <a name="test-explorer"></a>Esplora test
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-## <a name="text-editor"></a>Editor di testo
+### <a name="text-editor"></a>Editor di testo
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 | Comandi | Scelte rapide da tastiera |
 | - | - |
 | Edit.BreakLine | **INVIO**<br /><br /> oppure<br /><br /> **MAIUSC+INVIO** |
 | Edit.CharLeft | **Freccia SINISTRA** |
-| Edit.CharLeftExtend | **MAIUSC+Freccia SINISTRA** |
-| Edit.CharLeftExtendColumn | **MAIUSC+ALT+Freccia SINISTRA** |
+| Edit.CharLeftExtend | **MAIUSC+freccia SINISTRA** |
+| Edit.CharLeftExtendColumn | **MAIUSC+ALT+freccia SINISTRA** |
 | Edit.CharRight | **Freccia DESTRA** |
-| Edit.CharRightExtend | **MAIUSC+Freccia DESTRA** |
-| Edit.CharRightExtendColumn | **MAIUSC+ALT+Freccia DESTRA** |
+| Edit.CharRightExtend | **MAIUSC+freccia DESTRA** |
+| Edit.CharRightExtendColumn | **MAIUSC+ALT+freccia DESTRA** |
 | Edit.ClearBookmarks | **Ctrl+K, Ctrl+L** |
 | Edit.CollapseAllOutlining | **Ctrl+M, Ctrl+A** |
 | Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
@@ -817,7 +1062,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | Edit.CollapseToDefinitions | **CTRL+M, CTRL+O** (lettera "O") |
 | Edit.ContractSelection | **MAIUSC+ALT+-** |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
-| Edit.CompleteWord | **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA** |
+| Edit.CompleteWord | **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+freccia DESTRA** |
 | Edit.CopyParameterTip | **CTRL+MAIUSC+ALT+C** |
 | Edit.DecreaseFilterLevel | **ALT+,** |
 | Edit.DeleteBackwards | **Backspace**<br /><br /> oppure<br /><br /> **MAIUSC+BACKSPACE** |
@@ -847,7 +1092,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | Edit.LineCut | **CTRL+L** |
 | Edit.LineDelete | **CTRL+MAIUSC+L** |
 | Edit.LineDown | **Freccia GIÙ** |
-| Edit.LineDownExtend | **MAIUSC+freccia GIÙ** |
+| Edit.LineDownExtend | **MAIUSC+Freccia GIÙ** |
 | Edit.LineDownExtendColumn | **MAIUSC+ALT+Freccia GIÙ** |
 | Edit.LineEnd | **Fine** |
 | Edit.LineEndExtend | **MAIUSC+FINE** |
@@ -877,7 +1122,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | Edit.PeekBackward | **CTRL+ALT+-** |
 | Edit.PeekDefinition | **ALT+F12** |
 | Edit.PeekForward | **CTRL+ALT+=** |
-| Edit.PreviousHighlightedReference | **CTRL+MAIUSC+Freccia SU** |
+| Edit.PreviousHighlightedReference | **CTRL+MAIUSC+freccia SU** |
 | Edit.QuickInfo | **Ctrl+K, Ctrl+I** |
 | Edit.ReverseIncrementalSearch | **CTRL+MAIUSC+I** |
 | Edit.ScrollLineDown | **CTRL+Freccia GIÙ** |
@@ -905,10 +1150,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | Edit.ViewWhiteSpace | **Ctrl+R, Ctrl+W** |
 | Edit.WordDeleteToEnd | **CTRL+CANC** |
 | Edit.WordDeleteToStart | **CTRL+BACKSPACE** |
-| Edit.WordNext | **CTRL+FRECCIA DESTRA** |
-| Edit.WordNextExtend | **CTRL+MAIUSC+freccia DESTRA** |
+| Edit.WordNext | **CTRL+Freccia DESTRA** |
+| Edit.WordNextExtend | **CTRL+MAIUSC+Freccia DESTRA** |
 | Edit.WordNextExtendColumn | **CTRL+MAIUSC+ALT+Freccia DESTRA** |
-| Edit.WordPrevious | **CTRL+FRECCIA SINISTRA** |
+| Edit.WordPrevious | **CTRL+Freccia SINISTRA** |
 | Edit.WordPreviousExtend | **CTRL+MAIUSC+Freccia SINISTRA** |
 | Edit.WordPreviousExtendColumn | **CTRL+MAIUSC+ALT+Freccia SINISTRA** |
 | Edit.WordTranspose | **CTRL+MAIUSC+T** |
@@ -918,38 +1163,56 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **ALT+PGGIÙ** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **ALT+PGSU** |
 
-## <a name="uml-activity-diagram"></a>Diagramma attività UML
+### <a name="uml-activity-diagram"></a>Diagramma attività UML
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.Delete|**MAIUSC+CANC**|
 
-## <a name="uml-class-diagram"></a>Diagramma classi UML
+### <a name="uml-class-diagram"></a>Diagramma classi UML
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
-## <a name="uml-component-diagram"></a>Diagramma dei componenti UML
+### <a name="uml-component-diagram"></a>Diagramma dei componenti UML
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
-## <a name="uml-use-case-diagram"></a>Diagramma caso di utilizzo UML
+### <a name="uml-use-case-diagram"></a>Diagramma caso di utilizzo UML
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
-## <a name="vc-accelerator-editor"></a>Editor tasti di scelta rapida VC
+### <a name="vc-accelerator-editor"></a>Editor tasti di scelta rapida VC
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |Edit.NewAccelerator|**Inserimento**|
 |Edit.NextKeyTyped|**CTRL+W**|
 
-## <a name="vc-dialog-editor"></a>Editor finestre di VC
+### <a name="vc-dialog-editor"></a>Editor finestre di VC
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -957,33 +1220,36 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Edit.MoveControlLeft|**Freccia SINISTRA**|
 |Edit.MoveControlRight|**Freccia DESTRA**|
 |Edit.MoveControlUp|**Freccia SU**|
-|Edit.ScrollColumnLeft|**CTRL+FRECCIA SINISTRA**|
+|Edit.ScrollColumnLeft|**CTRL+Freccia SINISTRA**|
 |Edit.ScrollColumnRight|**CTRL+Freccia DESTRA**|
 |Edit.ScrollLineDown|**CTRL+Freccia GIÙ**|
 |Edit.ScrollLineUp|**CTRL+Freccia SU**|
 |Edit.SizeControlDown|**MAIUSC+Freccia GIÙ**|
 |Edit.SizeControlLeft|**MAIUSC+Freccia SINISTRA**|
-|Edit.SizeControlRight|**MAIUSC+Freccia DESTRA**|
-|Edit.SizeControlUp|**MAIUSC+Freccia SU**|
-|Format.AlignBottoms|**CTRL+MAIUSC+Freccia GIÙ**|
+|Edit.SizeControlRight|**MAIUSC+freccia DESTRA**|
+|Edit.SizeControlUp|**MAIUSC+freccia SU**|
+|Format.AlignBottoms|**CTRL+MAIUSC+freccia GIÙ**|
 |Format.AlignCenters|**MAIUSC+F9**|
 |Format.AlignLefts|**CTRL+MAIUSC+Freccia SINISTRA**|
 |Format.AlignMiddles|**F9**|
-|Format.AlignRights|**CTRL+MAIUSC+Freccia DESTRA**|
-|Format.AlignTops|**CTRL+MAIUSC+Freccia SU**|
+|Format.AlignRights|**CTRL+MAIUSC+freccia DESTRA**|
+|Format.AlignTops|**CTRL+MAIUSC+FRECCIA SU**|
 |Format.ButtonBottom|**CTRL+B**|
 |Format.ButtonRight|**CTRL+R**|
 |Format.CenterHorizontal|**CTRL+MAIUSC+F9**|
 |Format.CenterVertical|**CTRL+F9**|
 |Format.CheckMnemonics|**CTRL+M**|
 |Format.SizetoContent|**MAIUSC+F7**|
-|Format.SpaceAcross|**ALT+Freccia DESTRA**<br /><br /> oppure<br /><br /> **ALT+Freccia SINISTRA**|
-|Format.SpaceDown|**ALT+freccia SU**<br /><br /> oppure<br /><br /> **ALT+Freccia GIÙ**|
+|Format.SpaceAcross|**ALT+freccia DESTRA**<br /><br /> oppure<br /><br /> **ALT+freccia SINISTRA**|
+|Format.SpaceDown|**ALT+freccia SU**<br /><br /> oppure<br /><br /> **ALT+freccia GIÙ**|
 |Format.TabOrder|**CTRL+D**|
 |Format.TestDialog|**CTRL+T**|
 |Format.ToggleGuides|**CTRL+G**|
 
-## <a name="vc-image-editor"></a>Editor di immagini di VC
+### <a name="vc-image-editor"></a>Editor di immagini di VC
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -1010,7 +1276,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Image.OutlinedRectangleTool|**MAIUSC+ALT+R**|
 |Image.OutlinedRoundedRectangleTool|**MAIUSC+ALT+W**|
 |Image.PencilTool|**CTRL+I**|
-|Image.PreviousColor|**CTRL+[**<br /><br /> oppure<br /><br /> **CTRL+Freccia SINISTRA**|
+|Image.PreviousColor|**CTRL+[**<br /><br /> oppure<br /><br /> **CTRL+FRECCIA SINISTRA**|
 |Image.PreviousRightColor|**CTRL+MAIUSC+[**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+Freccia SINISTRA**|
 |Image.RectangleSelectionTool|**MAIUSC+ALT+S**|
 |Image.RectangleTool|**ALT+R**|
@@ -1025,13 +1291,19 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Image.ZoomIn|**CTRL+MAIUSC+.**<br /><br /> oppure<br /><br /> **CTRL+Freccia SU**|
 |Image.ZoomOut|**CTRL+MAIUSC+,**<br /><br /> oppure<br /><br /> **CTRL+Freccia GIÙ**|
 
-## <a name="vc-string-editor"></a>Editor stringhe di VC
+### <a name="vc-string-editor"></a>Editor stringhe di VC
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.NewString|**Inserimento**|
 
-## <a name="view-designer"></a>Progettazione viste
+### <a name="view-designer"></a>Progettazione viste
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -1044,42 +1316,51 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |QueryDesigner.Results|**CTRL+4**|
 |QueryDesigner.SQL|**CTRL+3**|
 
-## <a name="visual-studio"></a>Visual Studio
+### <a name="visual-studio"></a>Visual Studio
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL+1**|
 
-## <a name="windows-forms-designer"></a>Progettazione Windows Form
+### <a name="windows-forms-designer"></a>Progettazione Windows Form
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |Edit.BreakLine|**INVIO**|
 |Edit.CharLeft|**Freccia SINISTRA**|
-|Edit.CharLeftExtend|**MAIUSC+freccia SINISTRA**|
+|Edit.CharLeftExtend|**MAIUSC+Freccia SINISTRA**|
 |Edit.CharRight|**Freccia DESTRA**|
-|Edit.CharRightExtend|**MAIUSC+freccia DESTRA**|
+|Edit.CharRightExtend|**MAIUSC+Freccia DESTRA**|
 |Edit.DocumentEnd|**Fine**|
 |Edit.DocumentEndExtend|**MAIUSC+FINE**|
 |Edit.DocumentStart|**Home**|
 |Edit.DocumentStartExtend|**MAIUSC+HOME**|
 |Edit.InsertTab|**TAB**|
 |Edit.LineDown|**Freccia GIÙ**|
-|Edit.LineDownExtend|**MAIUSC+freccia SU**|
+|Edit.LineDownExtend|**MAIUSC+Freccia SU**|
 |Edit.LineUp|**Freccia SU**|
-|Edit.LineUpExtend|**MAIUSC+freccia GIÙ**|
-|Edit.MoveControlDown|**CTRL+FRECCIA GIÙ**|
-|Edit.MoveControlLeft|**CTRL+FRECCIA SINISTRA**|
-|Edit.MoveControlRight|**CTRL+FRECCIA DESTRA**|
-|Edit.MoveControlUp|**CTRL+FRECCIA SU**|
+|Edit.LineUpExtend|**MAIUSC+Freccia GIÙ**|
+|Edit.MoveControlDown|**CTRL+Freccia GIÙ**|
+|Edit.MoveControlLeft|**CTRL+Freccia SINISTRA**|
+|Edit.MoveControlRight|**CTRL+Freccia DESTRA**|
+|Edit.MoveControlUp|**CTRL+Freccia SU**|
 |Edit.SelectionCancel|**Carattere speciale di escape**|
-|Edit.SizeControlDown|**CTRL+MAIUSC+freccia GIÙ**|
+|Edit.SizeControlDown|**CTRL+MAIUSC+Freccia GIÙ**|
 |Edit.SizeControlLeft|**CTRL+MAIUSC+Freccia SINISTRA**|
-|Edit.SizeControlRight|**CTRL+MAIUSC+freccia DESTRA**|
+|Edit.SizeControlRight|**CTRL+MAIUSC+Freccia DESTRA**|
 |Edit.SizeControlUp|**CTRL+MAIUSC+freccia SU**|
 |Edit.TabLeft|**MAIUSC+TAB**|
 
-## <a name="work-item-editor"></a>Editor Elemento di lavoro
+### <a name="work-item-editor"></a>Editor Elemento di lavoro
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -1087,31 +1368,40 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**MAIUSC+ALT+L**|
 
-## <a name="work-item-query-view"></a>Visualizzazione query elemento di lavoro
+### <a name="work-item-query-view"></a>Visualizzazione query elemento di lavoro
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |Edit.CreateCopyofWorkItem|**MAIUSC+ALT+C**|
-|Edit.Indent|**MAIUSC+ALT+freccia DESTRA**|
-|Edit.Outdent|**MAIUSC+ALT+freccia SINISTRA**|
+|Edit.Indent|**MAIUSC+ALT+Freccia DESTRA**|
+|Edit.Outdent|**MAIUSC+ALT+Freccia SINISTRA**|
 |Team.NewLinkedWorkItem|**MAIUSC+ALT+L**|
 |Team.Refresh|**F5**|
 |Window.Toggle|**MAIUSC+ALT+V**|
 
-## <a name="work-item-results-view"></a>Visualizzazione risultati elementi di lavoro
+### <a name="work-item-results-view"></a>Visualizzazione risultati elementi di lavoro
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |Edit.CreateCopyofWorkItem|**MAIUSC+ALT+C**|
-|Edit.Indent|**MAIUSC+ALT+freccia DESTRA**|
-|Edit.Outdent|**MAIUSC+ALT+freccia SINISTRA**|
+|Edit.Indent|**MAIUSC+ALT+Freccia DESTRA**|
+|Edit.Outdent|**MAIUSC+ALT+Freccia SINISTRA**|
 |Team.GotoNextWorkItem|**MAIUSC+ALT+N**|
 |Team.GotoPreviousWorkItem|**MAIUSC+ALT+P**|
 |Team.NewLinkedWorkItem|**MAIUSC+ALT+L**|
 |Team.Refresh|**F5**|
 |Window.Toggle|**MAIUSC+ALT+V**|
 
-## <a name="workflow-designer"></a>Progettazione flussi di lavoro
+### <a name="workflow-designer"></a>Progettazione flussi di lavoro
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -1139,7 +1429,10 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |WorkflowDesigner.ZoomIn|**CTRL+NUM +**|
 |WorkflowDesigner.ZoomOut|**CTRL+NUM -**|
 
-## <a name="xaml-ui-designer"></a>XAML Designer
+### <a name="xaml-ui-designer"></a>XAML Designer
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -1161,14 +1454,20 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |View.EdgeRightMoveRight|**CTRL+MAIUSC+ALT+.**|
 |View.ShowPropertyMarkerMenu|**CTRL+BARRA SPAZIATRICE**|
 
-## <a name="xml-text-editor"></a>Editor di testo XML
+### <a name="xml-text-editor"></a>Editor di testo XML
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
 |XML.StartXSLTDebugging|**ALT+F5**|
 |XML.StartXSLTWithoutDebugging|**CTRL+Alt+F5**|
 
-## <a name="xml-schema-designer"></a>Progettazione XML Schema
+### <a name="xml-schema-designer"></a>Progettazione XML Schema
+
+I tasti di scelta rapida specifici per questo contesto sono:
+
 
 |Comandi|Scelte rapide da tastiera|
 |--------------| - |
@@ -1181,6 +1480,6 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |XsdDesigner.ShowGraphView|**CTRL+3**|
 |XsdDesigner.ShowStartView|**CTRL+1**|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Comandi di Visual Studio](reference/visual-studio-commands.md)
