@@ -7,14 +7,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a40434845187490ee4f8437f8e15963bddd1998f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab67a81d761f2e17c82b75fb59a201188cf80986
+ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843787"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112997631"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accesso alle macchine virtuali di Azure da Esplora server
+
+::: moniker range=">=vs-2022"
+> [!Important]
+> Il nodo di Azure Esplora server è stato ritirato in Visual Studio 2022. È possibile usare il portale di Azure o continuare a usare il nodo azure di Esplora server nelle versioni precedenti di Visual Studio.
+>
+> Inoltre, [Microsoft Azure Storage Explorer](/azure/vs-azure-tools-storage-manage-with-storage-explorer) è un'app autonoma gratuita di Microsoft. È possibile usarla per rappresentare facilmente dati di Archiviazione di Azure in Windows, macOS e Linux.
+>
+> Per altre informazioni su Visual Studio 2022, vedere le note [sulla versione](/visualstudio/releases/2022/release-notes-preview/).
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 Se ci sono macchine virtuali ospitate da Azure, è possibile accedervi in Esplora server. Per visualizzare i servizi mobili, è necessario prima di tutto accedere alla sottoscrizione Azure. Per accedere, aprire il menu di scelta rapida per il nodo Azure e scegliere **Connetti a Microsoft Azure**.
 
@@ -27,7 +39,7 @@ Se ci sono macchine virtuali ospitate da Azure, è possibile accedervi in Esplor
    | Nome DNS |URL con l'indirizzo Internet della macchina virtuale. |
    | Ambiente |Per una macchina virtuale, il valore di questa proprietà è sempre Produzione. |
    | Nome |Nome della macchina virtuale. |
-   | Dimensione |Dimensioni della macchina virtuale corrispondenti alla quantità di memoria e spazio su disco disponibili. Per altre informazioni, vedere [dimensioni delle macchine virtuali](/azure/cloud-services/cloud-services-sizes-specs). |
+   | Dimensione |Dimensioni della macchina virtuale corrispondenti alla quantità di memoria e spazio su disco disponibili. Per altre informazioni, vedere [Dimensioni delle macchine virtuali.](/azure/cloud-services/cloud-services-sizes-specs) |
    | Stato |I valori includono Avvio in corso, Avviato, Arresto, Arrestato e Recupero dello stato. Se viene visualizzato Recupero dello stato, lo stato corrente è sconosciuto. I valori di questa proprietà differiscono da quelli usati nel [portale di Azure](https://portal.azure.com). |
    | SubscriptionID |ID sottoscrizione dell'account Azure. È possibile vedere queste informazioni nel [portale di Azure](https://portal.azure.com) visualizzando le proprietà di una sottoscrizione. |
 2. Scegliere un nodo di endpoint e quindi visualizzare la finestra **Proprietà**.
@@ -39,3 +51,5 @@ Se ci sono macchine virtuali ospitate da Azure, è possibile accedervi in Esplor
    | Private Port |Porta per l'accesso di rete interno all'applicazione. |
    | Protocollo |Protocollo usato dal livello di trasporto per l'endpoint TCP o UDP. |
    | Public Port |Porta usata per l'accesso pubblico all'applicazione. |
+
+::: moniker-end
