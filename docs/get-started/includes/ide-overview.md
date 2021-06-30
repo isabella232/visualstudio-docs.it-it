@@ -1,17 +1,17 @@
 ---
-ms.date: 05/28/2021
+ms.date: 06/29/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 128a09500aaa326fad717efcade9040496452963
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 452549030d77b90049b12716087544bdd1288a3f
+ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112361742"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113113668"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -29,7 +29,7 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 Questa immagine presenta Visual Studio con un progetto aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
-- [Esplora soluzioni](../../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** possibile organizzare il codice raggruppando i file in [soluzioni e progetti](../tutorial-projects-solutions.md).
+- [Esplora soluzioni](../../ide/use-solution-explorer.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** possibile organizzare il codice raggruppando i file in [soluzioni e progetti](../../ide/use-solution-explorer.md).
 
 - La [finestra dell'editor](../../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più usati, visualizza il contenuto dei file. Nella finestra è possibile modificare il codice o progettare un'interfaccia utente, ad esempio una finestra con pulsanti e caselle di testo.
 
@@ -39,7 +39,7 @@ Questa immagine presenta Visual Studio con un progetto aperto e varie finestre d
 
 ::: moniker-end
 
-- [Git Changes](/visualstudio/version-control/) (Modifiche Git) (in basso a destra) consente di tenere traccia degli elementi di lavoro e condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [GitHub.](https://docs.github.com/github)
+- Git Changes (Modifiche [Git)](/visualstudio/version-control/) (in basso a destra) consente di tenere traccia degli elementi di lavoro e condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) [e GitHub.](https://docs.github.com/github)
 
 ## <a name="editions"></a>Edizioni
 
@@ -93,7 +93,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
 - [Ricerca di Visual Studio](../../ide/visual-studio-search.md)
 
-   La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. Visual Studio ricerca rapida (**CTRL** Q ) è un ottimo modo per trovare rapidamente le funzionalità IDE e + il codice in un'unica posizione.
+   La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. Visual Studio ricerca (**CTRL** Q ) è un ottimo modo per trovare rapidamente le funzionalità IDE e il codice in + un'unica posizione.
 
    ::: moniker range="vs-2017"
 
@@ -107,7 +107,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Casella di ricerca in Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
 
-    Per informazioni e suggerimenti sulla produttività, vedere [Come usare Visual Studio ricerca](../../ide/visual-studio-search.md).
+    Per informazioni e suggerimenti sulla produttività, [vedere Come usare Visual Studio ricerca.](../../ide/visual-studio-search.md)
 
    ::: moniker-end
 
@@ -167,11 +167,11 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Aprire Visual Studio.
 
-1. Sulla barra dei menu scegliere **File** > **nuovo** > **progetto**.
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **progetto.**
 
    ![File > Nuovo progetto sulla barra dei menu](../media/file-new-project-menu.png)
 
-   Nella **finestra di dialogo** Nuovo progetto vengono visualizzati diversi modelli di *progetto.* Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   La **finestra di dialogo** Nuovo progetto mostra diversi modelli di *progetto.* Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
 1. Scegliere la categoria di modello **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
@@ -245,9 +245,9 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
     Selezionare il **modello Applicazione** console e quindi fare clic su **Avanti.**
 
-    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019, in cui si seleziona il modello desiderato.":::
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019, in cui è possibile selezionare il modello desiderato.":::
 
-1. Nella finestra Configura il **nuovo** progetto immettere  **HelloWorld** nella casella Nome progetto, facoltativamente modificare il percorso della directory per i file di progetto (le impostazioni locali predefinite sono ) e quindi fare clic `C:\Users\<name>\source\repos` su **Avanti.**
+1. Nella finestra Configura il **nuovo** progetto immettere  **HelloWorld** nella casella Nome progetto, modificare facoltativamente il percorso della directory per i file di progetto (le impostazioni locali predefinite sono ) e quindi fare clic `C:\Users\<name>\source\repos` su **Avanti.**
 
     :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Screenshot della finestra &quot;Configura il nuovo progetto&quot; in Visual Studio 2019, in cui si immette il nome del progetto.":::
 
@@ -372,7 +372,7 @@ In primo luogo, rinominare la variabile `name`:
 
 10. Eseguire di nuovo il programma premendo **CTRL** + **F5.** L'output è simile al seguente:
 
-    ! Screenshot della finestra cmd.exe console che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello! Giorno dell'anno: 151'.] (.. /media/overview-console-final.png)
+    ! Screenshot della finestra cmd.exe console che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette! Giorno dell'anno: 151'.] (.. /media/overview-console-final.png)
 
 ::: moniker-end
 
@@ -380,7 +380,7 @@ In primo luogo, rinominare la variabile `name`:
 
 10. Eseguire di nuovo il programma premendo **CTRL** + **F5.** L'output è simile al seguente:
 
-    ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
+    ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 
@@ -414,11 +414,11 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 È possibile personalizzare l'interfaccia utente di Visual Studio, ad esempio modificare il tema colori predefinito. Per modificare il tema **Scuro**:
 
-1. Sulla barra dei menu scegliere **Opzioni** strumenti  >  **per aprire** la finestra **di dialogo** Opzioni.
+1. Nella barra dei menu scegliere **Opzioni** strumenti  >  **per** aprire la finestra **di dialogo** Opzioni.
 
 ::: moniker range="vs-2017"
 
-2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
+2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 
@@ -428,7 +428,7 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 ::: moniker range=">=vs-2019"
 
-2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
+2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 

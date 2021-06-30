@@ -2,7 +2,7 @@
 title: Panoramica di Visual Studio
 titleSuffix: ''
 description: Informazioni sull'Visual Studio di sviluppo integrato.
-ms.date: 05/28/2021
+ms.date: 06/29/2021
 ms.technology: vs-ide-general
 ms.topic: overview
 ms.custom:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d50a7f37a3dfe6c5a8ef8e7bf8e113485cf8bc95
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 17f4d80e82a24b5fe4692482c37fcbfa615ee4f9
+ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385123"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113113669"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Benvenuti all'IDE di Visual Studio
 
@@ -48,7 +48,7 @@ Se l'utente è pronto per approfondire maggiormente le attività di codifica, il
 
 - [Usare Visual Studio per creare la prima app console C++](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - Scoprire [altre funzionalità di Visual Studio](../ide/advanced-feature-overview.md)
 - Visitare [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
