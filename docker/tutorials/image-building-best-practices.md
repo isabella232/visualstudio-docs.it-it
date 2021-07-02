@@ -1,32 +1,31 @@
 ---
-title: 'Esercitazione su Docker-parte 8: sovrapposizione di immagini'
-description: Come esaminare e gestire i livelli di immagine nelle immagini docker.
+title: 'Esercitazione su Docker - Parte 8: Livelli delle immagini'
+description: Come esaminare e gestire i livelli immagine nelle immagini Docker.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8913c558c2860599fbfaaba03fa466d11931a528
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f669baf6f3275f54c7e4a6ff2b31f9c260b2bb9
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837957"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222669"
 ---
-# <a name="image-layering"></a>Sovrapposizione immagini
+# <a name="image-layering"></a>Livelli delle immagini
 
-Si è appreso che è possibile vedere che cosa compone un'immagine? Utilizzando il `docker image history` comando, è possibile visualizzare il comando utilizzato per creare ogni livello all'interno di un'immagine.
+Si sa che è possibile esaminare cosa costituisce un'immagine? Usando il `docker image history` comando , è possibile visualizzare il comando usato per creare ogni livello all'interno di un'immagine.
 
-1. Usare il `docker image history` comando per visualizzare i livelli nell' `getting-started` immagine creata in precedenza nell'esercitazione.
+1. Usare il `docker image history` comando per visualizzare i livelli nell'immagine creata in `getting-started` precedenza nell'esercitazione.
 
     ```bash
     docker image history getting-started
     ```
 
-    Verrà visualizzato un output simile al seguente (le date e gli ID potrebbero essere diversi).
+    Si dovrebbe ottenere un output simile al seguente (date/ID potrebbero essere diversi).
 
     ```plaintext
     IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
@@ -45,21 +44,21 @@ Si è appreso che è possibile vedere che cosa compone un'immagine? Utilizzando 
     <missing>           13 days ago         /bin/sh -c #(nop) ADD file:e69d441d729412d24…   5.59MB   
     ```
 
-    Ognuna delle righe rappresenta un livello nell'immagine. La visualizzazione Mostra la base in basso con il livello più recente nella parte superiore. Questa operazione consente inoltre di visualizzare rapidamente le dimensioni di ogni livello, aiutando a diagnosticare immagini di grandi dimensioni.
+    Ognuna delle righe rappresenta un livello nell'immagine. La visualizzazione mostra la base nella parte inferiore con il livello più recente nella parte superiore. In questo modo è anche possibile visualizzare rapidamente le dimensioni di ogni livello, consentendo di diagnosticare immagini di grandi dimensioni.
 
-1. Si noterà che molte righe sono troncate. Se si aggiunge il `--no-trunc` flag, si otterrà l'output completo (Sì, si userà un flag troncato per ottenere l'output non troncato).
+1. Si noterà che alcune righe vengono troncate. Se si aggiunge il flag, si otterrà l'output completo (sì, si usa un flag troncato per ottenere un `--no-trunc` output nontruncated).
 
     ```bash
     docker image history --no-trunc getting-started
     ```
 
-## <a name="layer-caching"></a>Caching del livello
+## <a name="layer-caching"></a>Memorizzazione nella cache dei livelli
 
-A questo punto, dopo aver esaminato i livelli in azione, è importante imparare a ridurre i tempi di compilazione per le immagini del contenitore.
+Dopo aver visto i livelli in azione, è disponibile una lezione importante per imparare a ridurre i tempi di compilazione per le immagini del contenitore.
 
-> Una volta modificato un livello, è necessario ricreare anche tutti i livelli downstream
+> Dopo la modifica di un livello, è necessario ricreare anche tutti i livelli downstream
 
-Si osservi il Dockerfile che si stava usando una sola volta...
+Diamo un'occhiata al Dockerfile in uso ancora una volta...
 
 ```dockerfile
 FROM node:12-alpine
@@ -69,11 +68,11 @@ RUN yarn install --production
 CMD ["node", "/app/src/index.js"]
 ```
 
-Tornando all'output della cronologia immagini, si noterà che ogni comando in Dockerfile diventa un nuovo livello nell'immagine. È possibile ricordare che, quando è stata apportata una modifica all'immagine, le dipendenze Yarn devono essere reinstallate. Esiste un modo per risolvere il problema? Non è molto sensato fornire le stesse dipendenze ogni volta che si compila, giusto?
+Tornando all'output della cronologia delle immagini, si può vedere che ogni comando nel Dockerfile diventa un nuovo livello nell'immagine. È possibile ricordare che quando è stata apportata una modifica all'immagine, è necessario reinstallare le dipendenze di yarn. Esiste un modo per risolvere il problema? Non ha molto senso compilare le stesse dipendenze ogni volta che si compila, giusto?
 
-Per risolvere il problema, è possibile ristrutturare i Dockerfile per supportare la memorizzazione nella cache delle dipendenze. Per le applicazioni basate su nodi, tali dipendenze sono definite nel `package.json` file. Quindi, cosa accade se in primo luogo è stato copiato solo il file, si installano le dipendenze e *quindi* si copiano tutti gli altri elementi? Quindi, si ricreano solo le dipendenze Yarn se è stata apportata una modifica a `package.json` . Ha senso?
+Per risolvere questo problema, è possibile ristrutturare dockerfile per supportare la memorizzazione nella cache delle dipendenze. Per le applicazioni basate su nodo, tali dipendenze sono definite nel `package.json` file. Quindi, cosa succede se è stato copiato solo il file in prima, installare le dipendenze e *quindi* copiare in tutto il resto? Quindi, si ricreano le dipendenze yarn solo se è stata apportata una modifica a `package.json` . Ha senso?
 
-1. Aggiornare Dockerfile per copiare il `package.json` primo, installare le dipendenze e quindi copiare tutti gli altri elementi in.
+1. Aggiornare il Dockerfile da copiare nella `package.json` prima, installare le dipendenze e quindi copiare tutto il resto in.
 
     ```dockerfile hl_lines="3 4 5"
     FROM node:12-alpine
@@ -123,11 +122,11 @@ Per risolvere il problema, è possibile ristrutturare i Dockerfile per supportar
     Successfully tagged getting-started:latest
     ```
 
-    Si noterà che tutti i livelli sono stati ricompilati. Perfettamente, dal momento che la Dockerfile è stata modificata.
+    Si noti che tutti i livelli sono stati ricompilati. Perfettamente corretto, poiché il Dockerfile è stato modificato un po'.
 
-1. A questo punto, apportare una modifica al `src/static/index.html` file (ad esempio, modificare `<title>` in modo da indicare "The Awesome todo app").
+1. A questo punto, apportare una modifica al file , ad esempio modificare `src/static/index.html` `<title>` in per dire "The Awesome Todo App".
 
-1. Compilare l'immagine Docker ora usando di `docker build` nuovo. Questa volta l'output dovrebbe essere leggermente diverso.
+1. Compilare l'immagine Docker usando di `docker build` nuovo. Questa volta, l'output dovrebbe avere un aspetto leggermente diverso.
 
     ```plaintext hl_lines="5 8 11"
     Sending build context to Docker daemon  219.1kB
@@ -152,19 +151,19 @@ Per risolvere il problema, è possibile ristrutturare i Dockerfile per supportar
     Successfully tagged getting-started:latest
     ```
 
-    Prima di tutto, si noterà che la compilazione è stata molto più rapida. Verranno visualizzati i passaggi 1-4 `Using cache` . Evviva! Si sta usando la cache di compilazione. Il push e il pull di questa immagine e gli aggiornamenti saranno molto più veloci. Evviva!
+    Prima di tutto, si noterà che la compilazione è stata molto più veloce. Si noti inoltre che i passaggi da 1 a 4 hanno tutti `Using cache` . Quindi, hooray! Si usa la cache di compilazione. Anche il push e il pull di questa immagine e degli aggiornamenti saranno molto più veloci. Evviva!
 
 ## <a name="multi-stage-builds"></a>Compilazioni in più fasi
 
-Anche se non si intende approfondire questa esercitazione, le compilazioni in più fasi sono uno strumento incredibilmente potente che consente di usare più fasi per creare un'immagine. Sono disponibili diversi vantaggi:
+Anche se questa esercitazione non verrà illustrata in modo approfondito, le compilazioni in più fasi sono uno strumento estremamente potente che consente di usare più fasi per creare un'immagine. Esistono diversi vantaggi:
 
 - Separare le dipendenze in fase di compilazione dalle dipendenze di runtime
-- Ridurre le dimensioni complessive dell'immagine spedendo *solo* ciò che l'app deve eseguire
+- Ridurre le dimensioni complessive dell'immagine *spedendo* solo ciò che l'app deve eseguire
 
 ### <a name="maventomcat-example"></a>Esempio di Maven/Tomcat
 
 Quando si compilano applicazioni basate su Java, è necessario un JDK per compilare il codice sorgente in bytecode Java. Tuttavia, questo JDK non è necessario nell'ambiente di produzione. È anche possibile usare strumenti come Maven o Gradle per compilare l'app.
-Anche questi non sono necessari nell'immagine finale. Guida alle compilazioni in più fasi.
+Anche questi non sono necessari nell'immagine finale. Le compilazioni in più fasi sono utili.
 
 ```dockerfile
 FROM maven AS build
@@ -176,11 +175,11 @@ FROM tomcat
 COPY --from=build /app/target/file.war /usr/local/tomcat/webapps 
 ```
 
-Questo esempio usa una fase (denominata `build` ) per eseguire la compilazione Java effettiva con Maven. La seconda fase (a partire da `FROM tomcat` ) copia i file dalla `build` fase. L'immagine finale è solo l'ultima fase creata (che può essere sottoposta a override tramite il `--target` flag).
+Questo esempio usa una fase (denominata `build` ) per eseguire la compilazione Java effettiva usando Maven. La seconda fase (a partire `FROM tomcat` da ) copia i file dalla fase `build` . L'immagine finale è solo l'ultima fase creata (che può essere sottoposta a override usando il `--target` flag ).
 
-### <a name="react-example"></a>Esempio di React
+### <a name="react-example"></a>React esempio
 
-Quando si compilano applicazioni REACT, è necessario un ambiente node per compilare il codice JS (in genere JSX), i fogli di stile SASS e altro ancora in HTML, JS e CSS statici. Se non si esegue il rendering sul lato server, non è necessario un ambiente node per la compilazione di produzione. Perché non distribuire le risorse statiche in un contenitore nginx statico?
+Quando si React applicazioni, è necessario un ambiente Node per compilare il codice JS (in genere JSX), i fogli di stile SASS e altro ancora in HTML statico, JS e CSS. Se non si esegue il rendering lato server, non è nemmeno necessario un ambiente Node per la compilazione di produzione. Perché non spedire le risorse statiche in un contenitore nginx statico?
 
 ```dockerfile
 FROM node:12 AS build
@@ -195,11 +194,11 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 ```
 
-In questo caso si usa un' `node:12` immagine per eseguire la compilazione (massimizzazione della memorizzazione nella cache dei livelli) e quindi copiare l'output in un contenitore nginx. Interessante, eh?
+In questo caso si usa un'immagine per eseguire la compilazione (ottimizzando la memorizzazione nella cache del livello) e quindi copiando `node:12` l'output in un contenitore nginx. Cool, eh?
 
 ## <a name="recap"></a>Riepilogo
 
-Grazie alla comprensione di come sono strutturate le immagini, è possibile creare immagini più velocemente e fornire un numero inferiore di modifiche. Le compilazioni in più fasi consentono inoltre di ridurre le dimensioni complessive dell'immagine e di aumentare la sicurezza finale del contenitore separando le dipendenze in fase di compilazione dalle dipendenze
+Comprendendo un po' di come sono strutturate le immagini, è possibile creare immagini più velocemente e determinare un minor numero di modifiche. Le compilazioni in più fasi consentono anche di ridurre le dimensioni complessive dell'immagine e di aumentare la sicurezza finale del contenitore separando le dipendenze in fase di compilazione dalle dipendenze di runtime.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

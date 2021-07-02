@@ -1,52 +1,51 @@
 ---
-title: 'Esercitazione su Docker-parte 9: eseguire la distribuzione nel cloud'
+title: 'Esercitazione su Docker - Parte 9: Distribuire nel cloud'
 description: Distribuire un'app Docker in un servizio cloud per l'hosting.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 3167dd58a593a426644c3658fbd660f517e10b39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da38b7482396b0bf46f5566c0c4a5416c94e83eb
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837983"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222825"
 ---
-# <a name="deploy-to-the-cloud"></a>Eseguire la distribuzione nel cloud
+# <a name="deploy-to-the-cloud"></a>Distribuire nel cloud
 
-Ora che l'app è stata eseguita localmente, è possibile iniziare a pensarne l'esecuzione nel cloud in modo che altri utenti possano accedervi e usarla. A tale scopo, si useranno i contesti docker. Un contesto è la posizione in cui si lavora attualmente con i contenitori. Al momento, è disponibile solo il contesto "predefinito", quindi è necessario aggiungere un cloud e distribuirvi l'app.
+Ora che l'app è stata eseguita in locale, è possibile iniziare a pensare di eseguirla nel cloud in modo che altri utenti possano accedervi e usarla. A tale scopo, si useranno i contesti Docker. Un contesto è la posizione in cui si lavora attualmente con i contenitori. Al momento è disponibile solo il contesto "predefinito", quindi è necessario aggiungerne uno nel cloud e distribuirvi l'app.
 
 ## <a name="create-your-cloud-context"></a>Creare il contesto cloud
 
-1. Per iniziare, è possibile visualizzare i contesti esaminati nella sezione contesti del pannello docker:
+1. Per iniziare, è possibile visualizzare i contesti che si hanno esaminando la sezione dei contesti del pannello Docker:
 
    ![Mostra solo il contesto predefinito](media/defaultcontext.png)
 
-Il contesto predefinito per il lavoro locale dovrebbe essere visibile solo.
+Verrà visualizzato solo il contesto predefinito per il lavoro locale.
 
-1. Per eseguire la distribuzione nel cloud, è necessario creare un nuovo contesto di ACI, ma a tale scopo è necessario prima di tutto l'estensione dell'account Azure per l'autenticazione con Azure.
+1. Per eseguire la distribuzione nel cloud, è necessario creare un nuovo contesto ACI, ma per eseguire questa operazione è prima necessario l'estensione dell'account Azure per l'autenticazione con Azure.
 
-   ![Aggiunta dell'estensione di Azure](media/addazureextension.png)
+   ![Aggiunta dell'estensione Azure](media/addazureextension.png)
 
-Se non si ha già un account, sarà necessario configurare un account Azure.
+Se non si ha già un account Azure, è necessario configurarlo.
 
-1. A questo punto è possibile creare il nuovo contesto ACI. A tale scopo, fare clic sul pulsante con il segno più nella sezione **contesti** della visualizzazione docker.
+1. A questo punto è possibile creare il nuovo contesto ACI. A tale scopo, fare clic sul pulsante con il segno più nella **sezione** Contesti della visualizzazione Docker.
 
    ![Creazione del contesto ACI](media/createnewcontext.png)
 
-Verrà chiesto il gruppo di risorse in cui si vogliono eseguire questi contenitori. Selezionare un gruppo esistente usando i tasti di direzione oppure usare l'opzione predefinita per usare il nuovo gruppo.
+Verrà chiesto in quale gruppo di risorse eseguire questi contenitori. Selezionare un gruppo esistente usando i tasti di direzione oppure usare l'opzione predefinita per usare il nuovo gruppo.
 
 ![Selezione del gruppo di risorse](media/selectresourcegroup.png)
 
-È ora possibile visualizzare l'elenco dei contesti ACI ed è possibile fare clic con il pulsante destro del mouse su di esso per impostarlo come contesto corrente/in uso:
+È ora possibile visualizzare il contesto ACI elencato e fare clic con il pulsante destro del mouse per renderlo il contesto corrente attivo/in uso:
 
-![È possibile selezionare il nuovo contesto ACI](media/listofcontexts.png)
+![È possibile selezionare un nuovo contesto ACI](media/listofcontexts.png)
 
-## <a name="run-containers-in-the-cloud"></a>Esegui i contenitori nel cloud
+## <a name="run-containers-in-the-cloud"></a>Eseguire contenitori nel cloud
 
 1. A questo punto, usare il contesto ACI ed eseguire il contenitore.
 
@@ -55,33 +54,33 @@ Verrà chiesto il gruppo di risorse in cui si vogliono eseguire questi contenito
    docker run  -dp 3000:3000 <username>/getting-started
    ```
 
-1. Eseguendo questa operazione, è ora possibile esaminare il contenitore nel contesto.
+1. Dopo aver eseguito questa operazione, esaminare il contenitore nel contesto.
 
    ![Contenitore in esecuzione nel contesto di ACI](media/contextcontainer.png)
 
-1. Per verificare che funzioni correttamente, è possibile fare clic con il pulsante destro del mouse sul contenitore in esecuzione e scegliere **Visualizza nel browser**.
+1. Per verificare che tutto funzioni correttamente, è possibile fare clic con il pulsante destro del mouse sul contenitore in esecuzione e **scegliere Visualizza nel browser.**
 
-   ![Contenitore in ACI con IP pubblico](media/containerinaci.png)
+   ![Contenitore in ACI con INDIRIZZO IP pubblico](media/containerinaci.png)
 
-È possibile osservare che il contenitore è in esecuzione in un IP pubblico e funziona correttamente.
+È anche possibile vedere che il contenitore è in esecuzione in un indirizzo IP pubblico e funziona correttamente.
 
-1. A questo punto, è possibile esaminare il contenitore in esecuzione per verificarne il funzionamento. È possibile iniziare osservando i log dei contenitori:
+1. A questo punto, è possibile esaminare il contenitore in esecuzione per vedere come funziona. Per iniziare, esaminare i log del contenitore:
  
  ```bash
    docker logs distracted-jackson
    ```
 
-1. È anche possibile accedere al contenitore come si farebbe con un contenitore locale.
+1. È anche possibile eseguire nel contenitore come si farebbe con un contenitore locale.
  
  ```bash
    docker exec -it distracted-jackson sh
    ```
 
-1. Infine, per pulire lo spazio di lavoro e assicurarsi che non venga addebitato alcun costo per continuare a eseguire il contenitore di test, è possibile semplicemente fare clic con il pulsante destro del mouse sul contenitore in esecuzione e scegliere **Rimuovi**.
+1. Infine, per pulire l'spazio di lavoro e assicurarsi che non vengano addebitati costi per continuare a eseguire il test container, è sufficiente fare clic con il pulsante destro del mouse sul contenitore in esecuzione e scegliere **Rimuovi**.
 
 ## <a name="recap"></a>Riepilogo
 
-A questo punto, è stato eseguito il carico di lavoro e la distribuzione nel cloud è stata completata per la prima volta. È possibile eseguire tutte queste operazioni dalla riga di comando e dall'interno del contesto di ACI usando `docker run` e anche `docker compose up` per eseguire le applicazioni multicontenitore. Per altre informazioni sull'esecuzione dei contenitori nel cloud, vedere la [documentazione estesa sull'uso di ACI](https://docs.docker.com/engine/context/aci-integration/).
+Il carico di lavoro è stato quindi distribuito correttamente nel cloud per la prima volta. È possibile eseguire tutte queste operazioni dalla riga di comando anche dall'interno del contesto ACI usando e anche usando per eseguire `docker run` `docker compose up` le applicazioni multi-contenitore. Per altre informazioni sull'esecuzione dei contenitori nel cloud, leggere la documentazione estesa [sull'uso di ACI.](https://docs.docker.com/engine/context/aci-integration/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

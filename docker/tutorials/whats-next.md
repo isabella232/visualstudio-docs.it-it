@@ -1,43 +1,42 @@
 ---
-title: Esercitazione su Docker-passaggi successivi
-description: Descrive le opzioni per estendere le app Docker con l'orchestrazione, usando i progetti cloud native Computing Foundation.
+title: Esercitazione su Docker - Passaggi successivi
+description: Descrive le opzioni per estendere le app Docker con l'orchestrazione, usando i progetti Cloud Native Computing Foundation.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8ca68b2eba710037535b4bd76c744e7c029a53e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e777d80f44c9a11e4d2a893c968d33e348ca442a
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841653"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222695"
 ---
 # <a name="whats-next"></a>Passaggi successivi
 
-Anche se l'esercitazione è stata eseguita, c'è ancora molto altro da scoprire sui contenitori.
-Non verrà approfondita questa procedura, ma di seguito sono elencate alcune altre aree da esaminare.
+Anche se l'esercitazione è stata completata, sono ancora disponibili molte altre informazioni sui contenitori.
+In questo caso non verranno approfondite le attività, ma di seguito sono disponibili alcune altre aree.
 
 ## <a name="container-orchestration"></a>Orchestrazione dei contenitori
 
-L'esecuzione dei contenitori nell'ambiente di produzione è difficile. Non si vuole accedere a un computer ed eseguire semplicemente un `docker run` o `docker-compose up` . Perché no? Bene, cosa accade se i contenitori muoiono? In che modo è possibile eseguire la scalabilità tra più computer? L'orchestrazione del contenitore risolve questo problema. Strumenti come Kubernetes, Swarm, Nomad e AKS contribuiscono a risolvere questo problema, in modo leggermente diverso.
+L'esecuzione di contenitori nell'ambiente di produzione è difficile. Non si vuole accedere a un computer ed eseguire semplicemente o `docker run` `docker-compose up` . Perché no? Che cosa accade se i contenitori non vengono più esere? Come è possibile eseguire la scalabilità tra più computer? L'orchestrazione dei contenitori risolve questo problema. Strumenti come Kubernetes, Swarm, Nomad e servizio Kubernetes consentono di risolvere questo problema in modi leggermente diversi.
 
-L'idea generale è che i "Manager" ricevono **lo stato previsto**. Questo stato potrebbe essere "Voglio eseguire due istanze dell'app Web ed esporre la porta 80". I manager esaminano quindi tutti i computer del cluster e delegano il lavoro ai nodi "worker". I manager controllano le modifiche (ad esempio, l'uscita da un contenitore) e quindi il lavoro per fare in modo che lo stato **effettivo** rispecchi lo stato previsto.
+L'idea generale è che si dispone di "manager" che ricevono **lo stato previsto**. Questo stato potrebbe essere "Voglio eseguire due istanze dell'app Web ed esporre la porta 80". I responsabili quindi osservano tutti i computer del cluster e delegano il lavoro ai nodi "worker". I responsabili verificano le modifiche , ad esempio la chiusura di un contenitore, e quindi lavorano per fare in modo che lo stato effettivo **rifletta** lo stato previsto.
 
-## <a name="cloud-native-computing-foundation-projects"></a>Progetti cloud native Computing Foundation
+## <a name="cloud-native-computing-foundation-projects"></a>Progetti Cloud Native Computing Foundation
 
-CNCF è una casa indipendente dal fornitore per diversi progetti open source, tra cui Kubernetes, Prometeo, emissario, Linkerd, NAT e altro ancora. Qui è possibile visualizzare i [progetti laureati e incubati](https://www.cncf.io/projects/) e l'intero [panorama CNCF qui](https://landscape.cncf.io/). Sono disponibili numerosi progetti che consentono di risolvere i problemi relativi al monitoraggio, alla registrazione, alla sicurezza, ai registri immagini, alla messaggistica e altro ancora.
+CNCF è una home page indipendente dal fornitore per vari progetti open source, tra cui Kubernetes, Prometheus, Envoy, Linkerd, NATS e altro ancora. È possibile visualizzare i [progetti graduali e incubati qui](https://www.cncf.io/projects/) e l'intero panorama [CNCF qui](https://landscape.cncf.io/). Sono disponibili molti progetti che consentono di risolvere i problemi relativi a monitoraggio, registrazione, sicurezza, registri immagini, messaggistica e altro ancora.
 
-Se non si ha familiarità con il paesaggio del contenitore e lo sviluppo di applicazioni native del cloud, Benvenuti! Contatta la community, fai domande e continua a imparare! Siamo entusiasti.
+Pertanto, se non si ha di nuovo il panorama applicativo dei contenitori e lo sviluppo di applicazioni native del cloud, benvenuti. È possibile connettersi alla community, porre domande e continuare a imparare. Siamo molto contenti di averti.
 
 ## <a name="working-with-docker-in-vs-code"></a>Uso di Docker in VS Code
 
-Altre informazioni sull'uso dell'estensione Docker VS Code:
+Altre informazioni sull'uso dell'VS Code Docker:
 
-- [Panoramica dell'estensione Docker VS Code](https://code.visualstudio.com/docs/containers/overview)
+- [VS Code Panoramica dell'estensione Docker](https://code.visualstudio.com/docs/containers/overview)
 - [Introduzione a Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
 - [Introduzione a Python](https://code.visualstudio.com/docs/containers/quickstart-python)
 - [Introduzione a .NET Core](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core)

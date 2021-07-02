@@ -1,6 +1,6 @@
 ---
 title: Condizioni di MSBuild | Microsoft Docs
-description: Informazioni su come MSBuild supporta un set specifico di condizioni che possono essere applicate ovunque sia consentito un attributo Condition.
+description: Informazioni su MSBuild supporta un set specifico di condizioni che possono essere applicate ovunque sia consentito un attributo Condition.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76bafaf5192c59e0f23078e396ae553b3023e060
-ms.sourcegitcommit: d3577395cf016f2836eb5a3c1d496cca6d449baa
+ms.openlocfilehash: d72b69b2c80c4e20b5a4dadae18764a138210295
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110413325"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222708"
 ---
 # <a name="msbuild-conditions"></a>Condizioni di MSBuild
 
@@ -42,9 +42,9 @@ MSBuild supporta un set specifico di condizioni che possono essere applicate ovu
 |`And`|Restituisce `true` se entrambi gli operandi restituiscono `true`.|
 |`Or`|Restituisce `true` se almeno uno degli operandi restituisce `true`.|
 |()|Meccanismo di raggruppamento che restituisce `true` se le espressioni contenute all'interno restituiscono `true`.|
-|$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere Visual Studio logica dei parametri del modello [di progetto/elemento.](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)|
+|$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere Visual Studio logica dei parametri del [modello di progetto/elemento.](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)|
 
-È possibile usare metodi stringa nelle condizioni, come illustrato nell'esempio seguente, in cui la funzione [TrimEnd()](/dotnet/api/system.string.trimend) viene usata per confrontare solo la parte pertinente della stringa, per distinguere tra framework di destinazione .NET Framework e .NET Core.
+È possibile usare i metodi stringa nelle condizioni, come illustrato nell'esempio seguente, in cui la funzione [TrimEnd()](/dotnet/api/system.string.trimend) viene usata per confrontare solo la parte pertinente della stringa, per distinguere tra framework di destinazione .NET Framework e .NET Core.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -60,11 +60,11 @@ MSBuild supporta un set specifico di condizioni che possono essere applicate ovu
 </Project>
 ```
 
-Nei file di progetto MSBuild non esiste un vero tipo booleano. I dati booleani sono rappresentati in proprietà che potrebbero essere vuote o impostate su qualsiasi valore. Pertanto, `'$(Prop)' == 'true'` indica "se Prop è ," ma indica "se Prop è o non è impostato o impostato su un altro `true` `'$(Prop)' != 'false'` `true` elemento".
+Nei MSBuild di progetto non esiste un vero tipo booleano. I dati booleani sono rappresentati in proprietà che potrebbero essere vuote o impostate su qualsiasi valore. Indica quindi "se Prop è ," ma indica "se Prop è o non è `'$(Prop)' == 'true'` impostato o impostato su un altro `true` `'$(Prop)' != 'false'` `true` elemento".
 
 La logica booleana viene valutata solo nel contesto delle condizioni, quindi le impostazioni delle proprietà, ad esempio sono rappresentate come stringa (dopo l'espansione della variabile), non valutate `<Prop2>'$(Prop1)' == 'true'</Prop>` come valori booleani.  
 
-MSBuild implementa alcune regole di elaborazione speciali per semplificare l'uso delle proprietà stringa usate come valori booleani. I valori letterali booleani vengono accettati e `Condition="true"` `Condition="false"` funzionano come previsto. MSBuild include anche regole speciali per supportare l'operatore di negazione booleano. Pertanto, se è "true", si espande in e viene `$(Prop)` `!$(Prop)` `!true` confrontato con `false` , come ci si aspetterebbe.
+MSBuild alcune regole di elaborazione speciali per semplificare l'uso delle proprietà stringa usate come valori booleani. I valori letterali booleani vengono accettati e `Condition="true"` `Condition="false"` funzionano come previsto. MSBuild include anche regole speciali per supportare l'operatore di negazione booleano. Quindi, se è "true", si espande in e viene `$(Prop)` `!$(Prop)` `!true` confrontato con `false` , come ci si aspetterebbe.
 
 ## <a name="comparing-versions"></a>Confronto tra versioni
 
@@ -73,9 +73,9 @@ Gli operatori relazionali , , e supportano le versioni analizzate da , in modo d
 > [!CAUTION]
 > `System.Version` I confronti possono produrre risultati sorprendenti quando una o entrambe le versioni non specificano tutte e quattro le parti. Ad esempio, la versione 1.1 è precedente alla versione 1.1.0.
 
-MSBuild fornisce [funzioni di proprietà per confrontare le](property-functions.md#MSBuild-version-comparison-functions) versioni con un set diverso di regole compatibili con il controllo delle versioni semantico (semver).
+MSBuild fornisce funzioni [di proprietà per confrontare](property-functions.md#msbuild-version-comparison-functions) le versioni con un set diverso di regole compatibili con il controllo delle versioni semantico (semver).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)

@@ -1,28 +1,27 @@
 ---
-title: "Esercitazione su Docker-parte 2: aggiornare l'app"
-description: Viene descritto come aggiornare un'app docker.
+title: "Esercitazione su Docker - Parte 2: Aggiornare l'app"
+description: Descrive come aggiornare un'app Docker.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: df2102c38250aa5c1bda52b4324cba808501db3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 43034ff2e65564cc8af2710b796b76996f21f4c8
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841744"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222773"
 ---
 # <a name="update-the-app"></a>Aggiornare l'app
 
-Una piccola richiesta di funzionalità è stata richiesta dal team del prodotto per modificare il testo vuoto quando non sono presenti elementi elenco todo. Si desidera eseguire la transizione a quanto segue:
+Come richiesta di funzionalità di piccole dimensioni, il team del prodotto ha chiesto di modificare il "testo vuoto" quando non sono presenti elementi dell'elenco attività. Desidera eseguire la transizione a quanto segue:
 
 > Non sono ancora presenti elementi todo. Aggiungerne uno sopra.
 
-Abbastanza semplice, giusto? Facciamo la modifica.
+Piuttosto semplice, giusto? Apportare la modifica.
 
 ## <a name="update-the-source-code"></a>Aggiornare il codice sorgente
 
@@ -33,7 +32,7 @@ Abbastanza semplice, giusto? Facciamo la modifica.
     +                <p className="text-center">You have no todo items yet! Add one above!</p>
     ```
 
-1. Compilare la versione aggiornata dell'immagine, usando lo stesso comando usato in precedenza.
+1. Compilare la versione aggiornata dell'immagine usando lo stesso comando usato in precedenza.
 
     ```bash
     docker build -t getting-started .
@@ -52,15 +51,15 @@ docker: Error response from daemon: driver failed programming external connectiv
 (bb242b2ca4d67eba76e79474fb36bb5125708ebdabd7f45c8eaf16caaabde9dd): Bind for 0.0.0.0:3000 failed: port is already allocated.
 ```
 
-Cosa è successo? Non è stato possibile avviare il nuovo contenitore perché il contenitore precedente è ancora in esecuzione. Il motivo di questo problema è che il contenitore usa la porta 3000 dell'host e un solo processo nel computer (contenitori inclusi) può restare in ascolto di una porta specifica. Per risolvere il problema, rimuovere il contenitore precedente.
+Che cosa è successo? Impossibile avviare il nuovo contenitore, perché il contenitore precedente è ancora in esecuzione. Questo è un problema perché il contenitore usa la porta 3000 dell'host e solo un processo nel computer (contenitori inclusi) può restare in ascolto su una porta specifica. Per risolvere il problema, rimuovere il contenitore precedente.
 
 ## <a name="replace-the-old-container"></a>Sostituire il contenitore precedente
 
-Per rimuovere un contenitore, è prima necessario arrestarlo. Una volta arrestato, è possibile rimuoverlo. È possibile rimuovere il contenitore precedente in due modi. È possibile scegliere il percorso con cui si è più sicuri.
+Per rimuovere un contenitore, è prima necessario fermarlo. Dopo l'arresto, può essere rimosso. È possibile rimuovere il contenitore precedente in due modi. È possibile scegliere il percorso con cui si è più a proprio agio.
 
-### <a name="remove-a-container-using-the-cli"></a>Rimuovere un contenitore usando l'interfaccia della riga di comando
+### <a name="remove-a-container-using-the-cli"></a>Rimuovere un contenitore tramite l'interfaccia della riga di comando
 
-1. Ottenere l'ID del contenitore usando il `docker ps` comando.
+1. Ottenere l'ID del contenitore usando il `docker ps` comando .
 
     ```bash
     docker ps
@@ -73,47 +72,47 @@ Per rimuovere un contenitore, è prima necessario arrestarlo. Una volta arrestat
     docker stop <the-container-id>
     ```
 
-1. Una volta arrestato il contenitore, è possibile rimuoverlo utilizzando il `docker rm` comando.
+1. Dopo aver arrestato il contenitore, è possibile rimuoverlo usando il `docker rm` comando .
 
     ```bash
     docker rm <the-container-id>
     ```
 
 > [!TIP]
-> È possibile arrestare e rimuovere un contenitore in un singolo comando aggiungendo il flag "Force" al `docker rm` comando. ad esempio `docker rm -f <the-container-id>`
+> È possibile arrestare e rimuovere un contenitore in un singolo comando aggiungendo il flag "force" al `docker rm` comando. ad esempio `docker rm -f <the-container-id>`
 
 ### <a name="remove-a-container-using-the-docker-view"></a>Rimuovere un contenitore usando la visualizzazione Docker
 
-Se si apre l'estensione VS Code, è possibile rimuovere un contenitore con due clic. È certamente molto più semplice che cercare l'ID del contenitore e rimuoverlo.
+Se si apre l'estensione VS Code, è possibile rimuovere un contenitore con due clic. È sicuramente molto più semplice che dover cercare l'ID contenitore e rimuoverlo.
 
 1. Con l'estensione aperta, passare al contenitore e fare clic con il pulsante destro del mouse.
 
-1. Fare clic sull'opzione **Rimuovi** .
+1. Fare clic **sull'opzione** Rimuovi.
 
-1. Confermare la rimozione e l'operazione è terminata.
+1. Confermare la rimozione e il processo è stato eseguito.
 
-![Visualizzazione Docker-rimozione di un contenitore](media/vs-removing-container.png)
+![Visualizzazione Docker: rimozione di un contenitore](media/vs-removing-container.png)
 
-### <a name="start-the-updated-app-container"></a>Avvia il contenitore dell'app aggiornato
+### <a name="start-the-updated-app-container"></a>Avviare il contenitore di app aggiornato
 
-1. A questo punto, avviare l'app aggiornata.
+1. Avviare ora l'app aggiornata.
 
     ```bash
     docker run -dp 3000:3000 getting-started
     ```
 
-1. Aggiornare il browser in [http://localhost:3000](http://localhost:3000) e dovrebbe essere visualizzato il testo della Guida aggiornato.
+1. Aggiornare il browser in [http://localhost:3000](http://localhost:3000) e verrà visualizzato il testo della Guida aggiornato.
 
 ![Applicazione aggiornata con testo vuoto aggiornato](media/todo-list-updated-empty-text.png)
 
 ## <a name="recap"></a>Riepilogo
 
-Sebbene sia possibile creare un aggiornamento, è possibile che si siano verificati due aspetti:
+Anche se è stato possibile compilare un aggiornamento, è possibile notare due aspetti:
 
-- Tutti gli elementi esistenti nell'elenco TODO sono finiti. Non è un'app molto interessante. A breve parleremo di questo.
-- Per una modifica di questo tipo sono stati necessari *numerosi* passaggi. In una sezione successiva si apprenderà come visualizzare gli aggiornamenti del codice senza dover ricompilare e avviare un nuovo contenitore ogni volta che si effettua una modifica.
+- Tutti gli elementi esistenti nell'elenco attività non sono più disponibili. Non si tratta di un'app molto buona. A breve ne parleremo.
+- Per una *modifica* così piccola sono stati necessari molti passaggi. In una sezione futura si apprenderà come visualizzare gli aggiornamenti del codice senza dover ricompilare e avviare un nuovo contenitore ogni volta che si apporta una modifica.
 
-Prima di acquisire familiarità con la persistenza, si vedrà rapidamente come condividere tali immagini con altri utenti.
+Prima di conoscere la persistenza, si apprende come condividere queste immagini con altri utenti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

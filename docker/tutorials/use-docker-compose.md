@@ -1,34 +1,33 @@
 ---
-title: 'Esercitazione su Docker-parte 7: usare Docker Compose'
-description: Viene descritto come installare e utilizzare Docker Compose.
+title: 'Esercitazione su Docker - Parte 7: Usare Docker Compose'
+description: Viene descritto come installare e usare Docker Compose.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 3bcf3a69dcf8053851e3d8519a25f61fe23ae7e3
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 645d168aefe05040193d564d5c158acfb6688c11
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082565"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222747"
 ---
 # <a name="use-docker-compose"></a>Usare Docker Compose
 
-[Docker compose](https://docs.docker.com/compose/) è uno strumento sviluppato per semplificare la definizione e la condivisione di applicazioni multicontenitore. Con Compose è possibile creare un file YAML per definire i servizi e con un unico comando, in modo da poter ruotare tutti gli elementi o ridurli tutti.
+[Docker Compose](https://docs.docker.com/compose/) è uno strumento sviluppato per facilitare la definizione e la condivisione di applicazioni multi-contenitore. Con Compose è possibile creare un file YAML per definire i servizi e, con un singolo comando, è possibile ruotare tutto o rimuovere tutto.
 
-Il *grande* vantaggio dell'uso di compose è la possibilità di definire lo stack di applicazioni in un file, conservarlo alla radice del repository del progetto (ora è controllato dalla versione) e consentire facilmente a un altro utente di contribuire al progetto. Un utente deve solo clonare il repository e avviare l'app compose. In realtà, è possibile che vengano visualizzati alcuni progetti in GitHub/GitLab in questo momento.
+Il  grande vantaggio dell'uso di Compose è che è possibile definire lo stack di applicazioni in un file, mantenerlo nella radice del repo del progetto (ora è controllato dalla versione) e consentire facilmente a un altro utente di contribuire al progetto. Un utente dovrà solo clonare il proprio repo e avviare l'app Compose. In effetti, è possibile che alcuni progetti in GitHub/GitLab ese stiano eseguendo esattamente questa operazione.
 
-In che modo è possibile iniziare?
+Come iniziare?
 
 ## <a name="install-docker-compose"></a>Installare Docker Compose
 
-Se è stato installato Docker desktop per Windows o Mac, si ha già Docker Compose. Anche Docker Compose installate le istanze di Play-with-docker. Se si usa un computer Linux, è necessario installare Docker Compose usando [le istruzioni](https://docs.docker.com/compose/install/)riportate qui.
+Se Docker Desktop è stato installato per Windows o Mac, è già stato Docker Compose. Anche le istanze play-with-Docker Docker Compose installate. Se si usa un computer Linux, è necessario installare Docker Compose usando [le istruzioni riportate qui.](https://docs.docker.com/compose/install/)
 
-Al termine dell'installazione, sarà possibile eseguire il comando seguente e visualizzare le informazioni sulla versione.
+Dopo l'installazione, dovrebbe essere possibile eseguire le operazioni seguenti e visualizzare le informazioni sulla versione.
 
 ```bash
 docker-compose version
@@ -36,15 +35,15 @@ docker-compose version
 
 ## <a name="create-the-compose-file"></a>Creare il file compose
 
-1. Alla radice del progetto dell'app, creare un file denominato `docker-compose.yml` .
+1. Nella radice del progetto di app creare un file denominato `docker-compose.yml` .
 
-1. Nel file compose si inizierà definendo la versione dello schema. Nella maggior parte dei casi, è preferibile usare la versione supportata più recente. È possibile esaminare il [riferimento al file compose](https://docs.docker.com/compose/compose-file/) per le versioni dello schema corrente e la matrice di compatibilità.
+1. Nel file compose si inizierà definendo la versione dello schema. Nella maggior parte dei casi, è meglio usare la versione supportata più recente. È possibile esaminare le informazioni di riferimento [sul file Compose](https://docs.docker.com/compose/compose-file/) per le versioni correnti dello schema e la matrice di compatibilità.
 
     ```yaml
     version: "3.7"
     ```
 
-1. Definire quindi l'elenco dei servizi (o contenitori) che si desidera eseguire come parte dell'applicazione.
+1. Definire quindi l'elenco di servizi (o contenitori) da eseguire come parte dell'applicazione.
 
     ```yaml hl_lines="3"
     version: "3.7"
@@ -52,11 +51,11 @@ docker-compose version
     services:
     ```
 
-A questo punto, si inizierà a migrare un servizio alla volta nel file compose.
+A questo punto, si inizierà a eseguire la migrazione di un servizio alla volta nel file compose.
 
 ## <a name="define-the-app-service"></a>Definire il servizio app
 
-Si ricordi che questo è il comando usato per definire il contenitore dell'app (sostituire i ` \ ` caratteri con `` ` `` in Windows PowerShell).
+Tenere presente che questo è il comando usato per definire il contenitore dell'app (sostituire i ` \ ` caratteri con `` ` `` in Windows PowerShell).
 
 ```bash
 docker run -dp 3000:3000 \
@@ -70,7 +69,7 @@ docker run -dp 3000:3000 \
   sh -c "yarn install && yarn run dev"
 ```
 
-1. Definire prima di tutto la voce del servizio e l'immagine per il contenitore. È possibile scegliere qualsiasi nome per il servizio. Il nome diventerà automaticamente un alias di rete, che sarà utile quando si definisce il servizio MySQL.
+1. Definire prima di tutto la voce del servizio e l'immagine per il contenitore. È possibile selezionare qualsiasi nome per il servizio. Il nome diventerà automaticamente un alias di rete, che sarà utile quando si definisce il servizio MySQL.
 
     ```yaml hl_lines="4 5"
     version: "3.7"
@@ -80,7 +79,7 @@ docker run -dp 3000:3000 \
         image: node:12-alpine
     ```
 
-1. In genere, il comando verrà visualizzato vicino alla `image` definizione, anche se non è richiesto l'ordinamento. Quindi, procedere e spostarlo nel file.
+1. In genere, il comando viene visualizzato vicino alla definizione, anche se non esiste `image` alcun requisito per l'ordinamento. Quindi, procedere e spostarlo nel file .
 
     ```yaml hl_lines="6"
     version: "3.7"
@@ -91,7 +90,7 @@ docker run -dp 3000:3000 \
         command: sh -c "yarn install && yarn run dev"
     ```
 
-1. Eseguire la migrazione della `-p 3000:3000` parte del comando definendo `ports` per il servizio. Si userà la [sintassi breve](https://docs.docker.com/compose/compose-file/#short-syntax-1) , ma è disponibile anche una [sintassi molto](https://docs.docker.com/compose/compose-file/#long-syntax-1) più dettagliata.
+1. Eseguire la `-p 3000:3000` migrazione della parte del comando definendo per il `ports` servizio. In questo caso [](https://docs.docker.com/compose/compose-file/#short-syntax-1) si userà la sintassi breve, ma è disponibile anche una sintassi più dettagliata [e](https://docs.docker.com/compose/compose-file/#long-syntax-1) lunga.
 
     ```yaml hl_lines="7 8"
     version: "3.7"
@@ -104,9 +103,9 @@ docker run -dp 3000:3000 \
           - 3000:3000
     ```
 
-1. Eseguire quindi la migrazione della directory di lavoro ( `-w /app` ) e del mapping del volume ( `-v ${PWD}:/app` ) utilizzando `working_dir` le `volumes` definizioni e. I volumi hanno anche una sintassi [breve](https://docs.docker.com/compose/compose-file/#short-syntax-3) e [lunga](https://docs.docker.com/compose/compose-file/#long-syntax-3) .
+1. Eseguire quindi la migrazione della directory di lavoro ( `-w /app` ) e del mapping del volume ( ) usando le `-v ${PWD}:/app` `working_dir` definizioni e `volumes` . I volumi hanno anche una [sintassi](https://docs.docker.com/compose/compose-file/#short-syntax-3) breve [e](https://docs.docker.com/compose/compose-file/#long-syntax-3) lunga.
 
-   Un vantaggio di Docker Compose definizioni di volume è la possibilità di usare percorsi relativi dalla directory corrente.
+   Uno dei vantaggi Docker Compose definizioni di volume è che è possibile usare percorsi relativi dalla directory corrente.
 
     ```yaml hl_lines="9 10 11"
     version: "3.7"
@@ -122,7 +121,7 @@ docker run -dp 3000:3000 \
           - ./:/app
     ```
 
-1. Infine, eseguire la migrazione delle definizioni delle variabili di ambiente usando la `environment` chiave.
+1. Eseguire infine la migrazione delle definizioni delle variabili di ambiente usando la `environment` chiave .
 
     ```yaml hl_lines="12 13 14 15 16"
     version: "3.7"
@@ -145,7 +144,7 @@ docker run -dp 3000:3000 \
 
 ### <a name="define-the-mysql-service"></a>Definire il servizio MySQL
 
-A questo punto, è possibile definire il servizio MySQL. Il comando usato per il contenitore è il seguente (sostituire i ` \ ` caratteri con `` ` `` in Windows PowerShell):
+È ora possibile definire il servizio MySQL. Il comando usato per il contenitore era il seguente (sostituire i ` \ ` caratteri con `` ` `` in Windows PowerShell):
 
 ```bash
 docker run -d \
@@ -156,7 +155,7 @@ docker run -d \
   mysql:5.7
 ```
 
-1. In primo luogo, definire il nuovo servizio e denominarlo in `mysql` modo che ottenga automaticamente l'alias di rete. Specificare anche l'immagine da usare.
+1. Definire prima di tutto il nuovo servizio e assegnare al servizio il nome `mysql` in modo che oseni automaticamente l'alias di rete. Specificare anche l'immagine da usare.
 
     ```yaml hl_lines="6 7"
     version: "3.7"
@@ -168,7 +167,7 @@ docker run -d \
         image: mysql:5.7
     ```
 
-1. Definire quindi il mapping del volume. Quando è stato eseguito il contenitore con `docker run` , il volume denominato è stato creato automaticamente. Tuttavia, non si verifica quando si esegue con compose. È necessario definire il volume nella sezione di primo livello `volumes:` e quindi specificare il mountpoint nella configurazione del servizio. Semplicemente specificando solo il nome del volume, vengono usate le opzioni predefinite. Tuttavia, sono [disponibili molte altre opzioni](https://github.com/compose-spec/compose-spec/blob/master/spec.md#volumes-top-level-element) .
+1. Definire quindi il mapping del volume. Quando è stato eseguito il contenitore `docker run` con , il volume denominato è stato creato automaticamente. Tuttavia, ciò non accade quando si esegue con Compose. È necessario definire il volume nella sezione di primo livello e quindi specificare il punto di `volumes:` montaggio nella configurazione del servizio. Fornendo semplicemente il nome del volume, vengono usate le opzioni predefinite. Sono tuttavia [disponibili molte altre](https://github.com/compose-spec/compose-spec/blob/master/spec.md#volumes-top-level-element) opzioni.
 
     ```yaml hl_lines="8 9 10 11 12"
     version: "3.7"
@@ -185,7 +184,7 @@ docker run -d \
       todo-mysql-data:
     ```
 
-1. Infine, è sufficiente specificare le variabili di ambiente.
+1. Infine, è necessario specificare solo le variabili di ambiente.
 
     ```yaml hl_lines="10 11 12"
     version: "3.7"
@@ -205,7 +204,7 @@ docker run -d \
       todo-mysql-data:
     ```
 
-A questo punto, l'operazione completata `docker-compose.yml` dovrebbe essere simile alla seguente:
+A questo punto, il completamento `docker-compose.yml` dovrebbe essere simile al seguente:
 
 ```yaml
 version: "3.7"
@@ -237,13 +236,13 @@ volumes:
   todo-mysql-data:
 ```
 
-## <a name="run-the-application-stack"></a>Eseguire lo stack di applicazioni
+## <a name="run-the-application-stack"></a>Eseguire lo stack dell'applicazione
 
-Ora che il file è disponibile `docker-compose.yml` , è possibile avviarlo.
+Ora che il file è `docker-compose.yml` disponibile, è possibile avviarlo.
 
-1. Prima di tutto, assicurarsi che non siano in esecuzione altre copie dell'app e del database ( `docker ps` e `docker rm -f <ids>` ).
+1. Assicurarsi prima di tutto che non siano in esecuzione altre copie dell'app e del database ( `docker ps` e `docker rm -f <ids>` ).
 
-1. Avviare lo stack di applicazioni usando il `docker-compose up` comando. Aggiungere il `-d` flag per eseguire tutti gli elementi in background. In alternativa, è possibile fare clic con il pulsante destro del mouse sul file compose e selezionare l'opzione **Componi su** per la barra laterale vs code. 
+1. Avviare lo stack dell'applicazione usando il `docker-compose up` comando . Aggiungere il `-d` flag per eseguire tutti gli elementi in background. In alternativa, è possibile fare clic con il pulsante destro del mouse sul file Compose e selezionare **l'opzione Compose Up** (Componi su) VS Code barra laterale. 
 
     ```bash
     docker-compose up -d
@@ -258,11 +257,11 @@ Ora che il file è disponibile `docker-compose.yml` , è possibile avviarlo.
     Creating app_mysql_1 ... done
     ```
 
-    Si noterà che il volume è stato creato e una rete. Per impostazione predefinita, Docker Compose crea automaticamente una rete in modo specifico per lo stack di applicazioni, motivo per cui non ne è stata definita una nel file compose.
+    Si noterà che il volume è stato creato e una rete. Per impostazione predefinita, Docker Compose crea automaticamente una rete specifica per lo stack dell'applicazione, motivo per cui non ne è stata definita una nel file compose.
 
-1. Esaminare i log usando il `docker-compose logs -f` comando. Verranno visualizzati i log di ogni servizio con interfoliazione in un singolo flusso. Questa operazione è estremamente utile quando si desidera controllare i problemi relativi alla tempistica. Il `-f` flag "segue" il log, quindi fornirà l'output in tempo reale quando viene generato.
+1. Esaminare i log usando il `docker-compose logs -f` comando . Verranno visualizzati i log di ognuno dei servizi con interfoliazione in un unico flusso. Questo è estremamente utile quando si vogliono controllare i problemi relativi alla tempistica. Il `-f` flag "segue" il log, quindi restituisce l'output live non appena viene generato.
 
-    Se non è già presente, verrà visualizzato un output simile al seguente:
+    Se non è già stato fatto, verrà visualizzato un output simile al seguente:
 
     ```plaintext
     mysql_1  | 2019-10-03T03:07:16.083639Z 0 [Note] mysqld: ready for connections.
@@ -271,37 +270,37 @@ Ora che il file è disponibile `docker-compose.yml` , è possibile avviarlo.
     app_1    | Listening on port 3000
     ```
 
-    Il nome del servizio viene visualizzato all'inizio della riga (spesso colorata) per facilitare la distinzione dei messaggi. Se si desidera visualizzare i log per un servizio specifico, è possibile aggiungere il nome del servizio alla fine del comando logs (ad esempio, `docker-compose logs -f app` ).
+    Il nome del servizio viene visualizzato all'inizio della riga (spesso colorato) per distinguere i messaggi. Se si desidera visualizzare i log per un servizio specifico, è possibile aggiungere il nome del servizio alla fine del comando logs , ad esempio `docker-compose logs -f app` .
 
     > [!TIP]
-    > **In attesa del database prima di avviare l'app** Quando l'app viene avviata, si trova in realtà e attende che MySQL sia pronto e pronto prima di provare a connettersi a it.DocKer non dispone di alcun supporto incorporato per attendere che un altro contenitore sia completamente attivo, in esecuzione e pronto prima di avviare un altro contenitore. Per i progetti basati su nodi, è possibile usare la dipendenza della [porta di attesa](https://github.com/dwmkerr/wait-port) . Sono presenti progetti simili per altri linguaggi/Framework.
+    > **Attesa del database prima di avviare l'app** All'avvio, l'app è in realtà in attesa che MySQL sia operativo e pronto prima di provare a connettersi a it.Docker non ha alcun supporto predefinito per attendere che un altro contenitore sia completamente operativo e pronto prima di avviare un altro contenitore. Per i progetti basati su Node, è possibile usare la [dipendenza della porta di](https://github.com/dwmkerr/wait-port) attesa. Sono disponibili progetti simili per altri linguaggi/framework.
 
-1. A questo punto, dovrebbe essere possibile aprire l'app e visualizzarne l'esecuzione. E Hey! Si sta per andare a un singolo comando.
+1. A questo punto, dovrebbe essere possibile aprire l'app e vederla in esecuzione. E hey! È possibile eseguire un singolo comando.
 
-## <a name="see-the-app-stack-in-the-docker-extension"></a>Vedere lo stack di app nell'estensione Docker
+## <a name="see-the-app-stack-in-the-docker-extension"></a>Visualizzare lo stack di app nell'estensione Docker
 
-Se si esamina l'estensione Docker, è possibile modificare le opzioni di raggruppamento usando "COG" e "Group by". In questo caso, si desidera visualizzare i contenitori raggruppati per nome progetto compose:
+Se si osserva l'estensione Docker, è possibile modificare le opzioni di raggruppamento usando le opzioni 'cog' e 'group by'. In questo caso, si vogliono visualizzare i contenitori raggruppati per nome Project compose:
 
-![Estensione di Visual Studio con compose](media/vs-app-project-collapsed.png)
+![Estensione di Visual Studio con Compose](media/vs-app-project-collapsed.png)
 
-Se si esegue il vorticing della rete, vengono visualizzati i due contenitori definiti nel file compose.
+Se si scorre lungo la rete, verranno visualizzati i due contenitori definiti nel file compose.
 
-![Estensione VS con compose espanso](media/vs-app-project-expanded.png)
+![Estensione di Visual Studio con Compose espanso](media/vs-app-project-expanded.png)
 
-## <a name="tear-it-all-down"></a>Elimina tutto
+## <a name="tear-it-all-down"></a>Disattesa tutto
 
-Quando si è pronti per rimuovere tutto, è sufficiente eseguire `docker-compose down` oppure fare clic con il pulsante destro del mouse sull'applicazione nell'elenco contenitori nell'vs code estensione Docker e selezionare **Componi giù**. I contenitori verranno interrotti e la rete verrà rimossa.
+Quando si è pronti per eliminare tutto, è sufficiente eseguire oppure fare clic con il pulsante destro del mouse sull'applicazione nell'elenco dei contenitori nell'estensione Docker VS Code e selezionare `docker-compose down` Componi.  I contenitori verranno arresti e la rete verrà rimossa.
 
 > [!WARNING]
-> **Rimozione di volumi** Per impostazione predefinita, i volumi denominati nel file compose non vengono rimossi durante l'esecuzione `docker-compose down` . Se si desidera rimuovere i volumi, sarà necessario aggiungere il `--volumes` flag.
+> **Rimozione di volumi** Per impostazione predefinita, i volumi denominati nel file compose NON vengono rimossi durante l'esecuzione di `docker-compose down` . Per rimuovere i volumi, è necessario aggiungere il `--volumes` flag .
 
-Una volta eliminato, è possibile passare a un altro progetto, eseguirlo `docker-compose up` ed essere pronto per contribuire a tale progetto. Non è molto più semplice.
+Dopo l'eseparazione, è possibile passare a un altro progetto, eseguire ed essere pronti a `docker-compose up` contribuire al progetto. In realtà non è molto più semplice.
 
 ## <a name="recap"></a>Riepilogo
 
-In questa sezione sono state illustrate Docker Compose e il modo in cui contribuisce a semplificare notevolmente la definizione e la condivisione di applicazioni multiservizio. È stato creato un file compose traducendo i comandi utilizzati nel formato di composizione appropriato.
+In questa sezione sono stati appresi i Docker Compose e come ciò consente di semplificare notevolmente la definizione e la condivisione di applicazioni multi-servizio. È stato creato un file Compose traducendo i comandi in uso nel formato di composizione appropriato.
 
-A questo punto, si sta iniziando a eseguire il wrapping dell'esercitazione. Tuttavia, esistono alcune procedure consigliate per la creazione di immagini da trattare, dal momento che si è verificato un grosso problema con la Dockerfile usata. Diamo un'occhiata.
+A questo punto, si inizia a completare l'esercitazione. Esistono tuttavia alcune procedure consigliate per la creazione di immagini da coprire, in quanto si verifica un problema grave con il Dockerfile in uso. Diamo quindi un'occhiata.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

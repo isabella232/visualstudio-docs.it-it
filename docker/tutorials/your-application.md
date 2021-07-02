@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 00eb3a7cff3ffeaac783b929a000d9258fae7e63
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: 9229c3717b686a3f08ef49e7912ac0515864d793
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042944"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222812"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Compilare ed eseguire l'app di esempio todo
 
@@ -28,9 +27,9 @@ A questo punto, il team di sviluppo è piuttosto piccolo e si sta semplicemente 
 
 Prima di poter eseguire l'applicazione, è necessario ottenere il codice sorgente dell'applicazione nel computer. Per i progetti reali, in genere si clona il repo. Tuttavia, per questa esercitazione è stato creato un file ZIP contenente l'applicazione.
 
-1. Assicurarsi di aver installato Docker per Windows o Docker Community Edition nel computer locale. Vedere [la Docker per Windows di installazione di](https://docs.docker.com/docker-for-windows/install/). Il processo di installazione rende disponibile il file ZIP contenente l'esempio all'indirizzo localhost.
+1. Assicurarsi di avere installato Docker per Windows o Docker Community Edition nel computer locale. Vedere [Docker per la documentazione Windows installazione.](https://docs.docker.com/docker-for-windows/install/) Il processo di installazione rende disponibile il file ZIP contenente l'esempio all'indirizzo localhost.
 
-1. Scaricare il codice sorgente per l'app dal repo [Docker.](https://github.com/docker/getting-started) È possibile scaricare il file ZIP per il repo. Per scaricare il file ZIP, usare il pulsante **Codice** verde e scegliere **Scarica ZIP.** Aprire il file ZIP ed Estrai tutto per estrarre l'origine dell'app dalla cartella *dell'app* in una cartella sul disco rigido.
+1. Scaricare l'origine per l'app dal repo [Docker.](https://github.com/docker/getting-started) È possibile scaricare il file ZIP per il repo. Per scaricare il file ZIP, usare il pulsante **Codice** verde e scegliere **Scarica ZIP.** Aprire il file ZIP ed Estrai tutto per estrarre l'origine dell'app dalla cartella *dell'app* in una cartella sul disco rigido.
 
    ![Screenshot che mostra il pulsante Codice verde e l'opzione Scarica ZIP](media/download-zip.png)
 
@@ -64,7 +63,7 @@ Per compilare l'applicazione, è necessario usare un oggetto `Dockerfile` . Un D
 
     Questo comando ha usato il Dockerfile per creare una nuova immagine del contenitore. Si sarà notato che sono stati scaricati molti "livelli". Questo perché è stato indicato al generatore che si vuole iniziare `node:12-alpine` dall'immagine. Tuttavia, poiché non è stato installato nel computer, l'immagine deve essere scaricata.
 
-    Dopo aver scaricato l'immagine, è stata copiata nell'applicazione e usata `yarn` per installare le dipendenze dell'applicazione. La `CMD` direttiva specifica il comando predefinito da eseguire all'avvio di un contenitore da questa immagine.
+    Dopo aver scaricato l'immagine, è stata copiata nell'applicazione e usata `yarn` per installare le dipendenze dell'applicazione. La `CMD` direttiva specifica il comando predefinito da eseguire quando si avvia un contenitore da questa immagine.
 
     Infine, il `-t` flag contrassegna l'immagine. Si pensi semplicemente a un nome leggibile per l'immagine finale. Poiché l'immagine è stata `getting-started` denominata , è possibile fare riferimento a tale immagine quando si esegue un contenitore.
 
@@ -74,7 +73,7 @@ Per compilare l'applicazione, è necessario usare un oggetto `Dockerfile` . Un D
 
 Ora che è disponibile un'immagine, eseguire l'applicazione. A tale scopo, usare il `docker run` comando (ricordarlo in precedenza?).
 
-1. Avviare il contenitore `docker run` usando il comando e specificare il nome dell'immagine appena creata:
+1. Avviare il contenitore usando `docker run` il comando e specificare il nome dell'immagine appena creata:
 
     ```bash
     docker run -dp 3000:3000 getting-started
