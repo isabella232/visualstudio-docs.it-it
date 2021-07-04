@@ -3,6 +3,8 @@ title: Informazioni sulla finestra Esplora soluzioni strumenti
 description: Informazioni su come usare la finestra Esplora soluzioni strumenti di Visual Studio per creare & gestire file, progetti e soluzioni.
 ms.date: 06/29/2021
 ms.topic: conceptual
+f1_keywords:
+- vs.addnewitem
 helpviewer_keywords:
 - solution explorer [Visual Studio]
 author: TerryGLee
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 005e6fd3e49d3a3ab739740d2aaa1dd77df5e5df
-ms.sourcegitcommit: 3d0f4930e0ccf49f89bbcfe12a949fbbf37aae07
+ms.openlocfilehash: fbbae8b974a7e88abffd9a12eb253dfea6c7165b
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113131500"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280489"
 ---
 # <a name="how-to-use-solution-explorer"></a>Come usare le Esplora soluzioni
 
@@ -36,19 +38,19 @@ La finestra degli strumenti contiene gli elementi dell'interfaccia utente seguen
 - **Barra di ricerca**, in cui è possibile cercare file e tipi di file specifici
 - **Finestra principale**, in cui è possibile visualizzare e gestire file, progetti & soluzioni
 - **Nodo della** soluzione, in cui è possibile gestire le soluzioni
-- **Nodo del** progetto , in cui è possibile gestire i progetti
+- **Project nodo**, in cui è possibile gestire i progetti
 - **Nodo Dipendenze**, in cui è possibile gestire la soluzione & dipendenze del progetto
 - **Nodo programma**, in cui è possibile visualizzare, modificare e gestire il programma o l'applicazione (app)
-- **[Scheda modifiche Git,](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window)** in cui è possibile usare Git & GitHub all'interno Visual Studio per collaborare ai progetti con il team
+- **[Scheda modifiche Git,](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window)** in cui è possibile usare Git & GitHub all'interno Visual Studio collaborare ai progetti con il team
 
 > [!TIP]
-> Se la finestra degli strumenti Esplora soluzioni non è visualizzata, è possibile aprirla dalla barra dei menu di Visual Studio usando Visualizza Esplora soluzioni o premendo  >   **CTRL** +  + **ALT+L.**
+> Se la finestra degli strumenti Esplora soluzioni non è visualizzata, è possibile aprirla dalla barra dei menu di Visual Studio usando Visualizza Esplora soluzioni o premendo  >   **CTRL** + **ALT** + **L.**
 
 ## <a name="solution-explorer-menu-bar"></a>Esplora soluzioni barra dei menu
 
 Per continuare, si esamini la barra dei menu Esplora soluzioni più in dettaglio.
 
-![Barra Esplora soluzioni dei menu in Visual Studio.](media/solution-explorer-menu-bar.png)
+![Barra Esplora soluzioni dei menu Visual Studio.](media/solution-explorer-menu-bar.png)
 
 La barra dei menu contiene gli elementi dell'interfaccia utente seguenti, da sinistra a destra:
 

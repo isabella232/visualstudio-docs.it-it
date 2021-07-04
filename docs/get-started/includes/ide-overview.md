@@ -1,17 +1,17 @@
 ---
-ms.date: 06/29/2021
+ms.date: 07/01/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 452549030d77b90049b12716087544bdd1288a3f
-ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
+ms.openlocfilehash: 007327dc525f515523f98323bc95e133209e1531
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113113668"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113280078"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -29,7 +29,7 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 Questa immagine presenta Visual Studio con un progetto aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
-- [Esplora soluzioni](../../ide/use-solution-explorer.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** possibile organizzare il codice raggruppando i file in [soluzioni e progetti](../../ide/use-solution-explorer.md).
+- [Esplora soluzioni](../../ide/use-solution-explorer.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** possibile organizzare il codice raggruppando i file in [soluzioni e progetti](../../ide/solutions-and-projects-in-visual-studio.md).
 
 - La [finestra dell'editor](../../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più usati, visualizza il contenuto dei file. Nella finestra è possibile modificare il codice o progettare un'interfaccia utente, ad esempio una finestra con pulsanti e caselle di testo.
 
@@ -39,7 +39,7 @@ Questa immagine presenta Visual Studio con un progetto aperto e varie finestre d
 
 ::: moniker-end
 
-- Git Changes (Modifiche [Git)](/visualstudio/version-control/) (in basso a destra) consente di tenere traccia degli elementi di lavoro e condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) [e GitHub.](https://docs.github.com/github)
+- [Git Changes](/visualstudio/version-control/) (Modifiche Git) (in basso a destra) consente di tenere traccia degli elementi di lavoro e condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) [e GitHub](https://docs.github.com/github).
 
 ## <a name="editions"></a>Edizioni
 
@@ -47,7 +47,7 @@ Questa immagine presenta Visual Studio con un progetto aperto e varie finestre d
 
 Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2017 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2017.
 
-Sono disponibili tre edizioni di Visual Studio: Community, Professional ed Enterprise. Vedere [Confrontare Visual Studio edizioni](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio: Community, Professional e Enterprise. Vedere [Confrontare Visual Studio edizioni](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Sono disponibili tre edizioni di Visual Studio: Community, Professional ed Enter
 
 Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2019 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2019.
 
-Esistono tre edizioni di Visual Studio 2019: Community, Professional ed Enterprise. Vedere [Confrontare Visual Studio edizioni](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+Esistono tre edizioni di Visual Studio 2019: Community, Professional e Enterprise. Vedere [Confrontare Visual Studio edizioni](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
 
 ::: moniker-end
 
@@ -167,11 +167,11 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Aprire Visual Studio.
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **progetto.**
+1. Sulla barra dei menu scegliere **File** > **Nuovo** > **Project**.
 
    ![File > Nuovo progetto sulla barra dei menu](../media/file-new-project-menu.png)
 
-   La **finestra di dialogo** Nuovo progetto mostra diversi modelli di *progetto.* Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   La **finestra di Project** nuovo progetto mostra diversi modelli di *progetto.* Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
 1. Scegliere la categoria di modello **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
@@ -198,7 +198,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
-   ![Screenshot della finestra cmd.exe console con l'output 'Hello Word!' e "Premere un tasto qualsiasi per continuare".](../media/overview-console-window.png)
+   ![Screenshot della finestra cmd.exe console che mostra l'output 'Hello Word!' e "Premere un tasto qualsiasi per continuare".](../media/overview-console-window.png)
 
 1. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
@@ -217,7 +217,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire di nuovo l'app selezionando **Debug** > **Avvia senza eseguire** debug o premendo **CTRL** + **F5.**
+1. Eseguire di nuovo l'app selezionando **Avvia debug** > **senza eseguire** debug o premendo **CTRL** + **F5.**
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -235,23 +235,23 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Viene visualizzata la finestra iniziale con varie opzioni per clonare un repository, aprire un progetto recente o creare un nuovo progetto.
 
-1. Scegliere **Crea un nuovo progetto.**
+1. Scegliere **Crea un nuovo progetto**.
 
     :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019.":::
 
    Viene visualizzata la finestra **Crea un nuovo progetto**, che mostra diversi *modelli* di progetto. Un modello contiene i file e le impostazioni di base necessari per un determinato tipo di progetto.
 
-1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati  del modello scegliendo **C#** dall'elenco a discesa Tutti i linguaggi, **Windows** dall'elenco Tutte le piattaforme e **Console** dall'elenco Tutti i tipi **di** progetto . 
+1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati  del modello scegliendo **C#** dall'elenco  a discesa Tutti i linguaggi, **Windows** dall'elenco Tutte le piattaforme e **Console** dall'elenco Tutti i tipi **di** progetto .
 
     Selezionare il **modello Applicazione** console e quindi fare clic su **Avanti.**
 
-    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019, in cui è possibile selezionare il modello desiderato.":::
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019, in cui si seleziona il modello desiderato.":::
 
-1. Nella finestra Configura il **nuovo** progetto immettere  **HelloWorld** nella casella Nome progetto, modificare facoltativamente il percorso della directory per i file di progetto (le impostazioni locali predefinite sono ) e quindi fare clic `C:\Users\<name>\source\repos` su **Avanti.**
+1. Nella finestra **Configura** il nuovo progetto immettere **HelloWorld** nella casella **nome Project , modificare facoltativamente** il percorso della directory per i file di progetto (le impostazioni locali predefinite sono ), quindi fare clic `C:\Users\<name>\source\repos` su **Avanti**.
 
     :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Screenshot della finestra &quot;Configura il nuovo progetto&quot; in Visual Studio 2019, in cui si immette il nome del progetto.":::
 
-1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi fare clic su **Crea.**
+1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi fare clic su **Crea**.
 
     :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Screenshot della finestra &quot;Informazioni aggiuntive&quot; in Visual Studio 2019, in cui si seleziona la versione di .NET Core Framework desiderata.":::
 
@@ -292,13 +292,13 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire di nuovo l'app selezionando **Debug** > **Avvia senza eseguire** debug o premendo **CTRL** + **F5.**
+1. Eseguire di nuovo l'app selezionando **Avvia debug** > **senza eseguire** debug o premendo **CTRL** + **F5.**
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
 1. Immettere il nome nella finestra della console e premere **INVIO**.
 
-   ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello!'.](../media/vs-2019/overview-console-input.png)
+   ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette!'.](../media/vs-2019/overview-console-input.png)
 
 1. Premere un tasto qualsiasi per chiudere la finestra della console e arrestare l'esecuzione del programma.
 

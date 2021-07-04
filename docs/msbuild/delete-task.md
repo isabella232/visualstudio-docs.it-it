@@ -1,6 +1,6 @@
 ---
 title: Attività Delete | Microsoft Docs
-description: Informazioni sui parametri e le considerazioni per l'uso dell'attività di eliminazione MSBuild per eliminare i file specificati.
+description: Informazioni sui parametri e sulle considerazioni sull'uso dell'MSBuild di eliminazione per eliminare i file specificati.
 ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49ba26cc1e88ab3241094e1fd92be0907e8dd60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09945306a2260bed5b264d380dcea745ff3f7c07
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877343"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280423"
 ---
 # <a name="delete-task"></a>Delete (attività)
 
@@ -43,14 +43,14 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Delete` .
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 > [!WARNING]
-> Prestare attenzione quando si usano caratteri jolly con l' `Delete` attività. È possibile eliminare facilmente i file non corretti con espressioni come `$(SomeProperty)\**\*.*` o `$(SomeProperty)/**/*.*` , soprattutto se la proprietà restituisce una stringa vuota, nel qual caso il `Files` parametro può restituire la radice dell'unità ed eliminare molto più di quanto si vuole eliminare.
+> Prestare attenzione quando si usano caratteri jolly con `Delete` l'attività . È possibile eliminare facilmente i file erri con espressioni come o , soprattutto se la proprietà restituisce una stringa vuota, nel qual caso il parametro può restituire la radice dell'unità ed eliminare molto di più di quanto si desidera `$(SomeProperty)\**\*.*` `$(SomeProperty)/**/*.*` `Files` eliminare.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene eliminato il file *MyApp. pdb* quando si compila la `DeleteDebugSymbolFile` destinazione.
+L'esempio seguente elimina il file *ConsoleApp1.pdb* quando si compila la `DeleteDebugSymbolFile` destinazione.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -73,7 +73,7 @@ Nell'esempio seguente viene eliminato il file *MyApp. pdb* quando si compila la 
 
 ```
 
-Se è necessario tenere traccia dei file eliminati, impostare `TaskParameter` su `DeletedFiles` con il nome dell'elemento, come indicato di seguito:
+Se è necessario tenere traccia dei file eliminati, impostare `TaskParameter` su con il nome `DeletedFiles` dell'elemento, come indicato di seguito:
 
 ```xml
       <Target Name="DeleteDebugSymbolFile">
@@ -84,11 +84,11 @@ Se è necessario tenere traccia dei file eliminati, impostare `TaskParameter` su
     </Target>
 ```
 
-Anziché utilizzare direttamente caratteri jolly nell' `Delete` attività, creare un `ItemGroup` di file da eliminare ed eseguire l' `Delete` attività. Tuttavia, assicurarsi di inserire `ItemGroup` attentamente. Se si inserisce un oggetto `ItemGroup` al primo livello in un file di progetto, questo viene valutato in anticipo, prima dell'avvio della compilazione, in modo che non includa i file compilati come parte del processo di compilazione. Quindi, inserire l'oggetto `ItemGroup` che crea l'elenco di elementi da eliminare in una destinazione vicina all' `Delete` attività. È anche possibile specificare una condizione per verificare che la proprietà non sia vuota, in modo che non venga creato un elenco di elementi con un percorso che inizia dalla radice dell'unità.
+Anziché usare direttamente i caratteri jolly nell'attività, creare un di file per eliminare `Delete` `ItemGroup` ed eseguire `Delete` l'attività. Tuttavia, assicurarsi di posizionare l'oggetto `ItemGroup` con attenzione. Se si mette un oggetto al primo livello in un file di progetto, viene valutato in anticipo, prima dell'avvio della compilazione, in modo che non includa i file compilati come parte del processo `ItemGroup` di compilazione. Inserire quindi `ItemGroup` l'oggetto che crea l'elenco di elementi da eliminare in una destinazione vicina `Delete` all'attività. È anche possibile specificare una condizione per verificare che la proprietà non sia vuota, in modo che non si crei un elenco di elementi con un percorso che inizia nella radice dell'unità.
 
-L' `Delete` attività è destinata all'eliminazione di file. Se si desidera eliminare una directory, utilizzare [RemoveDir](removedir-task.md).
+`Delete`L'attività è destinata all'eliminazione di file. Se si vuole eliminare una directory, usare [RemoveDir](removedir-task.md).
 
-L' `Delete` attività non fornisce un'opzione per eliminare i file di sola lettura. Per eliminare i file di sola lettura, è possibile usare l' `Exec` attività per eseguire il `del` comando o l'equivalente, con l'opzione appropriata per abilitare l'eliminazione dei file di sola lettura. È necessario prestare attenzione alla lunghezza dell'elenco di elementi di input, dal momento che la riga di comando presenta una limitazione di lunghezza, oltre a garantire la gestione dei nomi di file con spazi, come in questo esempio:
+`Delete`L'attività non offre un'opzione per eliminare i file di sola lettura. Per eliminare file di sola lettura, è possibile usare l'attività per eseguire il comando o equivalente, con l'opzione appropriata per abilitare `Exec` l'eliminazione di file di sola `del` lettura. È necessario prestare attenzione alla lunghezza dell'elenco di elementi di input, poiché esiste una limitazione di lunghezza nella riga di comando, nonché assicurarsi di gestire i nomi file con spazi, come in questo esempio:
 
 ```xml
 <Target Name="DeleteReadOnly">
@@ -99,9 +99,9 @@ L' `Delete` attività non fornisce un'opzione per eliminare i file di sola lettu
 </Target>
 ```
 
-In generale, quando si scrivono script di compilazione, valutare se l'eliminazione è logicamente parte di un' `Clean` operazione. Se è necessario impostare alcuni file da pulire come parte di un' `Clean` operazione normale, è possibile aggiungerli all' `@(FileWrites)` elenco e verranno eliminati al successivo `Clean` . Se è necessaria una maggiore elaborazione personalizzata, definire una destinazione e specificarne l'esecuzione impostando l'attributo `BeforeTargets="Clean"` o oppure `AfterTargets="Clean"` definire la versione personalizzata delle `BeforeClean` `AfterClean` destinazioni o. Vedere [personalizzare la compilazione](customize-your-build.md).
+In generale, quando si scrivono script di compilazione, valutare se l'eliminazione fa logicamente parte di `Clean` un'operazione. Se è necessario impostare alcuni file da pulire come parte di un'operazione normale, è possibile aggiungerli all'elenco e verranno eliminati nel `Clean` `@(FileWrites)` successivo `Clean` . Se è necessaria un'elaborazione più personalizzata, definire una destinazione e specificarne l'esecuzione impostando l'attributo o oppure definire la `BeforeTargets="Clean"` versione personalizzata delle destinazioni o `AfterTargets="Clean"` `BeforeClean` `AfterClean` . Vedere [Personalizzare la compilazione.](customize-your-build.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [RemoveDir (attività)](removedir-task.md)
 - [Attività](../msbuild/msbuild-tasks.md)

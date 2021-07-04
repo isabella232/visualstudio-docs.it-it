@@ -16,12 +16,9 @@ f1_keywords:
 - SolutionItemsProject
 - VS.SolutionExplorer
 - VS.SolutionExplorer.Selection
-- vs.addnewitem
 - vs.addnewsolutionitem
-- VS.ReferenceManager
 - vs.debug.watch
 - VS.ErrorList
-- vs.about
 - vs.unittesting.testexplorer.overview
 - vs.gotoline
 - vs.toolbox
@@ -29,12 +26,12 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9130665e4456dfc34d91eeafc6e2b917154ceb80
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 980da41ea60a4627b08488318095e46e9d5a2cbc
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925176"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280443"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>Come si può osservare, Non `F1` è stata trovata alcuna corrispondenza della Guida
 
@@ -42,7 +39,7 @@ ms.locfileid: "112925176"
 
 ## <a name="now-what"></a>Come si procede a questo punto?
 
-Siamo spiacenti. Sembra che non sia stato possibile trovare ciò che si stava cercando. 
+Siamo spiacenti. Sembra che non sia stato trovato ciò che si stava cercando. 
 
 **Per informazioni su una finestra, una parola chiave o un nome `F1` di API,**
 - Provare il motore di ricerca preferito **[consigliato]**
