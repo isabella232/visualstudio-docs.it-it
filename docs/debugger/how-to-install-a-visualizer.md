@@ -2,7 +2,7 @@
 title: Installare un visualizzatore | Microsoft Docs
 description: Informazioni su come installare un visualizzatore in modo che sia disponibile per l'uso del debug in Visual Studio.
 ms.custom: SEO-VS-2020
-ms.date: 06/10/2020
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,46 +19,49 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2521983a797b676b9136ca14b733eb7afd054e27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 611347acfe48e561653d644097d56d029b6a4fa6
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904265"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298257"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.
 
 > [!NOTE]
-> Nelle app UWP sono supportati solo i visualizzatori di testo, HTML, XML e JSON standard. Non sono supportati i visualizzatori personalizzati (creati dall'utente).
+> Nelle app UWP sono supportati solo i visualizzatori di testo standard, HTML, XML e JSON. Non sono supportati i visualizzatori personalizzati (creati dall'utente).
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Per installare un visualizzatore per Visual Studio 2019
 
-1. Individuare la DLL che contiene il Visualizzatore compilato.
+1. Individuare la DLL che contiene il visualizzatore compilato.
 
-   In genere, è preferibile che sia la DLL sul lato debugger che la DLL del lato oggetto del debug specifichino **qualsiasi CPU** come piattaforma di destinazione. La DLL sul lato debugger deve essere **qualsiasi CPU** o **a 32 bit**. La piattaforma di destinazione per la DLL lato oggetto del debug deve corrispondere al processo di debug.
+   In genere, è meglio se sia la DLL sul lato debugger che la DLL sul lato oggetto del debug **specificano Qualsiasi CPU** come piattaforma di destinazione. La DLL sul lato debugger deve essere **Qualsiasi CPU** o **a 32 bit.** La piattaforma di destinazione per la DLL sul lato oggetto del debug deve corrispondere al processo dell'oggetto del debug.
 
-2. Copiare la dll del [lato debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (e le eventuali dll da cui dipende) in uno dei percorsi seguenti:
+   >[!NOTE]
+   > Il visualizzatore lato debugger viene caricato nel processo Visual Studio, quindi deve essere una DLL .NET Framework debugger. Il lato oggetto del debug può essere .NET Framework o .NET Standard a seconda del processo di cui viene Visual Studio.
+
+2. Copiare la DLL [lato debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (ed eventuali DLL da cui dipende) in uno dei percorsi seguenti:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3. Copiare la dll del lato oggetto del [debug](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) in uno dei percorsi seguenti:
+3. Copiare la DLL [lato oggetto del](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) debug in uno dei percorsi seguenti:
 
-    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework* di
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
-    - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Framework* di
+    - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Framework*
 
-    dove *Framework* è uno dei seguenti:
-    - `net2.0` per i debug che eseguono il `.NET Framework` Runtime.
-    - `netstandard2.0` per i sottoposti a debug utilizzando un runtime che supporta `netstandard 2.0` ( `.NET Framework v4.6.1+` o `.NET Core 2.0+` ).
-    - `netcoreapp` per i debug che eseguono il `.NET Core` Runtime. (supporta `.NET Core 2.0+` )
+    dove *Framework* è:
+    - `net2.0` per gli oggetti di debug che eseguono il `.NET Framework` runtime.
+    - `netstandard2.0` per gli oggetti di debug che usano un runtime che supporta `netstandard 2.0` ( `.NET Framework v4.6.1+` o `.NET Core 2.0+` ).
+    - `netcoreapp` per gli oggetti di debug che eseguono il `.NET Core` runtime. (supporta `.NET Core 2.0+` )
 
-   Una DLL sul lato oggetto del debug è necessaria se si desidera creare un visualizzatore autonomo. Questa DLL contiene il codice per l'oggetto dati, che può implementare metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+   Una DLL lato oggetto del debug è necessaria se si vuole creare un visualizzatore autonomo. Questa DLL contiene il codice per l'oggetto dati, che può implementare metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
 
-   Se si utilizza il multitargeting del codice del lato oggetto del debug, la DLL sul lato oggetto del debug deve essere inserita nella cartella per la TFM supportata almeno.
+   Se si ha più destinazione del codice sul lato oggetto del debug, la DLL sul lato oggetto del debug deve essere inserita nella cartella per TFM con supporto minimo.
 
 4. Riavviare la sessione di debug.
 
@@ -70,7 +73,7 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 ### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Per installare un visualizzatore per Visual Studio 2017 e versioni precedenti
 
 > [!IMPORTANT]
-> Solo i visualizzatori .NET Framework sono supportati in Visual Studio 2017 e versioni precedenti.
+> Solo .NET Framework visualizzatori sono supportati in Visual Studio 2017 e versioni precedenti.
 
 1. Individuare la DLL contenente il visualizzatore compilato.
 
