@@ -1,6 +1,6 @@
 ---
 title: Tasti di scelta rapida predefiniti
-description: Informazioni sui tasti di scelta rapida predefiniti Visual Studio che consentono di accedere a un'ampia gamma di comandi e finestre.
+description: Informazioni sui tasti di scelta rapida predefiniti in Visual Studio che consentono di accedere a un'ampia gamma di comandi e finestre.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2021
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 182102d4de3a2acbec8be82f69650c708817e54c
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: a63dbc1ad3ec544e52974a7ced9a69d4585ab629
+ms.sourcegitcommit: b5744be07b7882e30bae67ef2810db56cf68344f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222968"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113487718"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -31,167 +31,161 @@ Per un elenco di tasti di scelta rapida comuni e altre informazioni sulla produt
 - [Suggerimenti relativi alla tastiera](../ide/productivity-shortcuts.md)
 - [Suggerimenti per la produttività](../ide/productivity-features.md).
 
-Per altre informazioni sull'accessibilità in [](../ide/reference/accessibility-tips-and-tricks.md) Visual Studio, vedere Suggerimenti sull'accessibilità e [Procedura: Usare esclusivamente la tastiera.](../ide/reference/how-to-use-the-keyboard-exclusively.md)
+Per altre informazioni sull'accessibilità in [](../ide/reference/accessibility-tips-and-tricks.md) Visual Studio, vedere Suggerimenti e consigli sull'accessibilità e Procedura: Usare la [tastiera in modo esclusivo.](../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
-<!---## Printable shortcut cheatsheet
-
-Download and print our Visual Studio shortcut cheatsheet.
-
-[ ![Visual Studio Cheatsheet.](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet.png)](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet-extended.png#lightbox)
--->
 ## <a name="most-popular-keyboard-shortcuts"></a>Più diffusi tasti di scelta rapida
 
-Tutti i collegamenti in questa sezione si applicano a livello globale, se non diversamente specificato. Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qualsiasi finestra degli strumenti in Visual Studio.
+Tutti i tasti di scelta rapida in questa sezione si applicano a livello globale, se non diversamente specificato. Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qualsiasi finestra degli strumenti in Visual Studio.
 
 > [!NOTE]
 > È possibile [cercare il tasto di scelta rapida](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e quindi scegliendo **Tastiera**.
 
 
-#### <a name="build-popular-shortcuts"></a>Compilazione: scelte rapide più comuni
+#### <a name="build-popular-shortcuts"></a>Compilazione: scelte rapide comuni
 
-|Comandi|Scelte rapide da tastiera |
-|--------------| - |
-|Build.BuildSolution|**CTRL+MAIUSC+B** |
-|Build.Cancel|**CTRL+INTERR** |
-|Build.Compile|**Ctrl+F7** |
-|Build.RunCodeAnalysisonSolution|**ALT+F11**|
+|Comandi|Scelte rapide da tastiera |ID comando|
+|-|-|-|
+|Compila soluzione|**CTRL+MAIUSC+B** | Build.BuildSolution |
+|Annulla|**CTRL+INTERR** | Build.Cancel |
+|Compilazione|**Ctrl+F7** | Build.Compile |
+|Eseguire l'analisi del codice nella soluzione|**ALT+F11**| Build.RunCodeAnalysisonSolution |
 
-#### <a name="debug-popular-shortcuts"></a>Debug: scelte rapide più comuni
+#### <a name="debug-popular-shortcuts"></a>Debug: tasti di scelta rapida comuni
 
-|Comandi|Tasti di scelta rapida [contesti speciali]|
-|--------------| - |
-|Debug.BreakatFunction|**CTRL+B**|
-|Debug.BreakAll|**CTRL+ALT+INTERR**|
-|Debug.DeleteAllBreakpoints|**CTRL+MAIUSC+F9**|
-|Debug.Exceptions|**CTRL+ALT+E**|
-|Debug.QuickWatch|**CTRL+ALT+Q**<br /><br />o **MAIUSC+F9**|
-|Debug.Restart|**Ctrl+Maiusc+F5**|
-|Debug.RunToCursor|**CTRL+F10**|
-|Debug.SetNextStatement|**Ctrl+Maiusc+F10**|
-|Debug.Start|**F5**|
-|Debug.StartWithoutDebugging|**CTRL+F5**|
-|Debug.StepInto|**F11**|
-|Debug.StepOut|**MAIUSC+F11**|
-|Debug.StepOver|**F10**|
-|Debug.StopDebugging|**MAIUSC+F5**|
-|Debug.ToggleBreakpoint|**F9**|
+|Comandi|Tasti di scelta rapida [contesti speciali]|ID comando|
+|-|-|-|
+|Interrompere l'operazione a una funzione|**CTRL+B**| Debug.BreakatFunction |
+|Interrompere tutto|**CTRL+ALT+INTERR**| Debug.BreakAll |
+|Eliminare tutti i punti di interruzione|**CTRL+MAIUSC+F9**| Debug.DeleteAllBreakpoints |
+|Eccezioni|**CTRL+ALT+E**| Debug.Exceptions |
+|Controllo rapido|**CTRL+ALT+Q**<br /><br />o **MAIUSC+F9**| Debug.QuickWatch |
+|Riavvia|**Ctrl+Maiusc+F5**| Debug.Restart |
+|Esecuzione fino al cursore|**CTRL+F10**| Debug.RunToCursor |
+|Impostare l'istruzione successiva|**Ctrl+Maiusc+F10**| Debug.SetNextStatement |
+|Avvio|**F5**| Debug.Start |
+|Avviare senza eseguire il debug|**CTRL+F5**| Debug.StartWithoutDebugging |
+|Eseguire l'istruzione|**F11**| Debug.StepInto |
+|Uscire dall'istruzione/routine|**MAIUSC+F11**| Debug.StepOut |
+|Eseguire l'istruzione/routine|**F10**| Debug.StepOver |
+|Arrestare l'esecuzione del debug|**MAIUSC+F5**| Debug.StopDebugging |
+|Impostare/rimuovere un punto di interruzione|**F9**| Debug.ToggleBreakpoint |
 
-#### <a name="edit-popular-shortcuts"></a>Modifica: scelte rapide più comuni
+#### <a name="edit-popular-shortcuts"></a>Modifica: scelte rapide comuni
 
-|Comandi|Tasti di scelta rapida [contesti speciali]|
-|--------------| - |
-|Edit.BreakLine|**Immettere** [Editor di testo, Progettazione report, Windows Progettazione Form]<br /><br />o **MAIUSC+INVIO** [Editor di testo]|
-|Edit.CollapseToDefinitions|**CTRL+M,** **CTRL+O** [Editor di testo]|
-|Edit.CommentSelection|**CTRL+K,** **CTRL+C** [Editor di testo]|
-|Edit.CompleteWord|**ALT+Freccia DESTRA** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K**, **W** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+W** [Progettazione flussi di lavoro]|
-|Edit.Copy|**CTRL+C**<br /><br />o **CTRL+INS**|
-|Edit.Cut|**CTRL+X**<br /><br />o **MAIUSC+CANC**|
-|Edit.Delete|**Delete** [Team Explorer]<br /><br />o **MAIUSC+CANC** [Diagramma sequenza, Diagramma attività UML, Diagramma livello]<br /><br />o **CTRL+CANC** [Diagramma classi]|
-|Edit.Find|**CTRL+F**|
-|Edit.FindAllReferences|**MAIUSC+F12**|
-|Edit.FindinFiles|**CTRL+MAIUSC+F**|
-|Edit.FindNext|**F3**|
-|Edit.FindNextSelected|**CTRL+F3**|
-|Edit.FormatDocument|**CTRL+K, CTRL+D** [Editor di testo]|
-|Edit.FormatSelection|**CTRL+K, CTRL+F** [Editor di testo]|
-|Edit.GoTo|**CTRL+G**|
-|Edit.GoToDeclaration|**Ctrl+F12**|
-|Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**CTRL+D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.InsertSnippet|**CTRL+K,** **CTRL+X**|
-|Edit.InsertTab|**Scheda** [Progettazione report, progettazione Windows Form, Editor di testo]|
-|Edit.LineCut|**CTRL+L** [Editor di testo]|
-|Edit.LineDownExtendColumn|**MAIUSC+ALT+freccia GIÙ** [Editor di testo]|
-|Edit.LineOpenAbove|**CTRL+INVIO** [Editor di testo]|
-|Edit.ListMembers|**CTRL+J** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+L** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, L** [Progettazione flussi di lavoro]|
-|Edit.NavigateTo|**CTRL+,**|
-|Edit.OpenFile|**CTRL+MAIUSC+G**|
-|Edit.OvertypeMode|**Insert** [Editor di testo]|
-|Edit.ParameterInfo|**CTRL+MAIUSC+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+P** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, P** [Progettazione flussi di lavoro]|
-|Edit.Paste|**CTRL+V**<br /><br />o **MAIUSC+INSERISCI**|
-|Edit.PeekDefinition|**ALT+F12** [Editor di testo]|
-|Edit.Redo|**CTRL+Y**<br /><br />o **MAIUSC+ALT+BACKSPACE**<br /><br />o **CTRL+MAIUSC+Z**|
-|Edit.Replace|**CTRL+H**|
-|Edit.SelectAll|**CTRL+A**|
-|Edit.SelectCurrentWord|**CTRL+W** [Editor di testo]|
-|Edit.SelectionCancel|**Esc** [Editor di testo, Progettazione report, Impostazioni, progettazione Windows Form, Editor risorse gestite]|
-|Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
-|Edit.TabLeft|**MAIUSC+TAB** [Editor di testo, Progettazione report, Windows Forms Editor]|
-|Edit.ToggleAllOutlining|**CTRL+M, CTRL+L** [Editor di testo]|
-|Edit.ToggleBookmark|**CTRL+K, CTRL+K** [Editor di testo]|
-|Edit.ToggleCompletionMode|**CTRL+ALT+BARRA SPAZIATRICE** [Editor di testo]|
-|Edit.ToggleOutliningExpansion|**CTRL+M, CTRL+M** [Editor di testo]|
-|Edit.UncommentSelection|**CTRL+K, CTRL+U** [Editor di testo]|
-|Edit.Undo|**CTRL+Z**<br /><br />o **ALT+BACKSPACE**|
-|Edit.WordDeleteToEnd|**CTRL+CANC** [Editor di testo]|
-|Edit.WordDeleteToStart|**CTRL+BACKSPACE** [Editor di testo]|
+|Comandi|Tasti di scelta rapida [contesti speciali]|ID comando|
+|-|-|-|
+|Riga di interruzione|**Immettere** [Editor di testo, Progettazione report, Windows Form Designer]<br /><br />o **MAIUSC+INVIO** [Editor di testo]| Edit.BreakLine |
+|Comprimi in definizioni|**CTRL+M,** **CTRL+O** [Editor di testo]| Edit.CollapseToDefinitions |
+|Selezione dei commenti|**CTRL+K,** **CTRL+C** [Editor di testo]| Edit.CommentSelection |
+|Completare una parola|**ALT+freccia DESTRA** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K,** **W** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+W** [Progettazione flussi di lavoro]| Edit.CompleteWord |
+|Copia|**CTRL+C**<br /><br />o **CTRL+INS**| Edit.Copy |
+|Taglia|**CTRL+X**<br /><br />o **MAIUSC+CANC**| Edit.Cut |
+|Elimina|**Delete** [Team Explorer]<br /><br />o **MAIUSC+CANC** [Diagramma sequenza, Diagramma attività UML, Diagramma livello]<br /><br />o **CTRL+CANC** [Diagramma classi]| Edit.Delete |
+|Find|**CTRL+F**| Edit.Find |
+|Trova tutti i riferimenti|**MAIUSC+F12**| Edit.FindAllReferences |
+|Cercare nei file|**CTRL+MAIUSC+F**| Edit.FindinFiles |
+|Trova successivo|**F3**| Edit.FindNext |
+|Trova successivo selezionato|**CTRL+F3**| Edit.FindNextSelected |
+|Formatta documento|**CTRL+K, CTRL+D** [Editor di testo]| Edit.FormatDocument |
+|Selezione di Formatta|**CTRL+K, CTRL+F** [Editor di testo]| Edit.FormatSelection |
+|Passare a|**CTRL+G**| Edit.GoTo |
+|Vai alla dichiarazione|**Ctrl+F12**| Edit.GoToDeclaration |
+|Vai alla definizione|**F12**| Edit.GoToDefinition |
+|Vai alla casella combinata Trova|**CTRL+D**| Edit.GoToFindCombo |
+|Passare alla posizione successiva|**F8**| Edit.GoToNextLocation |
+|Inserire un frammento di codice|**CTRL+K,** **CTRL+X**| Edit.InsertSnippet |
+|Scheda Inserisci|**Tab** [Progettazione report, Windows Forms Designer, Text Editor]| Edit.InsertTab |
+|Taglio di linea|**CTRL+L** [Editor di testo]| Edit.LineCut |
+|Estendere la colonna verso il basso|**MAIUSC+ALT+Freccia GIÙ** [Editor di testo]| Edit.LineDownExtendColumn |
+|Riga aperta sopra|**CTRL+INVIO** [Editor di testo]| Edit.LineOpenAbove |
+|Elencare i membri|**CTRL+J** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+L** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, L** [Progettazione flussi di lavoro]| Edit.ListMembers |
+|Passa a|**CTRL+,**| Edit.NavigateTo |
+|Aprire il file|**CTRL+MAIUSC+G**| Edit.OpenFile |
+|Modalità sovrascritta|**Insert** [Editor di testo]| Edit.OvertypeMode |
+|Informazioni sui parametri|**CTRL+MAIUSC+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+P** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, P** [Progettazione flussi di lavoro]| Edit.ParameterInfo |
+|Incolla|**CTRL+V**<br /><br />o **MAIUSC+INS**| Edit.Paste |
+|Visualizza definizione|**ALT+F12** [Editor di testo]| Edit.PeekDefinition |
+|Ripeti|**CTRL+Y**<br /><br />o **MAIUSC+ALT+BACKSPACE**<br /><br />o **CTRL+MAIUSC+Z**| Edit.Redo |
+|Sostituisci|**CTRL+H**| Edit.Replace |
+|Seleziona tutto|**CTRL+A**| Edit.SelectAll |
+|Selezionare la parola corrente|**CTRL+W** [Editor di testo]| Edit.SelectCurrentWord |
+|Annullamento della selezione|**Esc** [Editor di testo, Progettazione report, Impostazioni, progettazione Windows Form, Editor risorse gestite]| Edit.SelectionCancel |
+|Racchiudere con|**Ctrl+K, Ctrl+S**| Edit.SurroundWith |
+|Scheda a sinistra|**MAIUSC+TAB** [Editor di testo, Progettazione report, Windows Forms Editor]| Edit.TabLeft |
+|Attiva/Disattiva tutte le struttura|**CTRL+M, CTRL+L** [Editor di testo]| Edit.ToggleAllOutlining |
+|Attiva/disattiva il segnalibro|**CTRL+K, CTRL+K** [Editor di testo]| Edit.ToggleBookmark |
+|Attivare/disattivare la modalità di completamento|**CTRL+ALT+BARRA SPAZIATRICE** [Editor di testo]| Edit.ToggleCompletionMode |
+|Attivare/disattivare l'espansione della struttura|**CTRL+M, CTRL+M** [Editor di testo]| Edit.ToggleOutliningExpansion |
+|Rimuovere il commento dalla selezione|**CTRL+K, CTRL+U** [Editor di testo]| Edit.UncommentSelection |
+|Annulla|**CTRL+Z**<br /><br />o **ALT+BACKSPACE**| Edit.Undo |
+|Eliminazione di word fino alla fine|**CTRL+CANC** [Editor di testo]| Edit.WordDeleteToEnd |
+|Eliminazione di word per iniziare|**CTRL+BACKSPACE** [Editor di testo]| Edit.WordDeleteToStart |
 
 #### <a name="file-popular-shortcuts"></a>File: scelte rapide più comuni
 
-|Comandi|Tasti di scelta rapida [contesti speciali]|
-|--------------| - |
-|File.Exit|**ALT+F4**|
-|File.NewFile|**CTRL+N**|
-|File.NewProject|**CTRL+MAIUSC+N**|
-|File.NewWebSite|**MAIUSC+ALT+N**|
-|File.OpenFile|**CTRL+O**|
-|File.OpenProject|**CTRL+MAIUSC+O**|
-|File.OpenWebSite|**MAIUSC+ALT+O**|
-|File.Rename|**F2** [Team Explorer]|
-|File.SaveAll|**CTRL+MAIUSC+S**|
-|File.SaveSelectedItems|**CTRL+S**|
-|File.ViewinBrowser|**CTRL+MAIUSC+W**|
+|Comandi|Tasti di scelta rapida [contesti speciali]|ID comando|
+|-|-|-|
+|Esci|**ALT+F4**| File.Exit |
+|Nuovo file|**CTRL+N**| File.NewFile |
+|Nuovo progetto|**CTRL+MAIUSC+N**| File.NewProject |
+|Nuovo sito Web|**MAIUSC+ALT+N**| File.NewWebSite |
+|Aprire il file|**CTRL+O**| File.OpenFile |
+|Aprire il progetto|**CTRL+MAIUSC+O**| File.OpenProject |
+|Aprire il sito Web|**MAIUSC+ALT+O**| File.OpenWebSite |
+|Rinominare|**F2** [Team Explorer]| File.Rename |
+|Salvare tutto|**CTRL+MAIUSC+S**| File.SaveAll |
+|Salvare gli elementi selezionati|**CTRL+S**| File.SaveSelectedItems |
+|Visualizzare nel browser|**CTRL+MAIUSC+W**| File.ViewinBrowser |
 
 #### <a name="project-popular-shortcuts"></a>Project: scelte rapide più comuni
 
-|Comandi|Tasti di scelta rapida [contesti speciali]|
-|--------------| - |
-|Project.AddExistingItem|**MAIUSC+ALT+A**|
-|Project.AddNewItem|**CTRL+MAIUSC+A**|
+|Comandi|Tasti di scelta rapida [contesti speciali]|ID comando|
+|-|-|-|
+|Aggiungere un elemento esistente|**MAIUSC+ALT+A**| Project.AddExistingItem |
+|Aggiungere un nuovo elemento|**CTRL+MAIUSC+A**| Project.AddNewItem |
 
 #### <a name="refactor-popular-shortcuts"></a>Refactoring: scelte rapide comuni
 
-|Comando|Scelta rapida da tastiera [contesti speciali]|
-|-------------| - |
-|Refactor.ExtractMethod|**CTRL+R, CTRL+M**|
+|Comando|Scelta rapida da tastiera [contesti speciali]|ID comando|
+|-|-|-|
+|Estrai metodo|**CTRL+R, CTRL+M**| Refactor.ExtractMethod |
 
 #### <a name="tools-popular-shortcuts"></a>Strumenti: scelte rapide comuni
 
-|Comando|Scelta rapida da tastiera [contesti speciali]|
-|-------------| - |
-|Tools.AttachtoProcess|**CTRL+ALT+P**|
+|Comando|Scelta rapida da tastiera [contesti speciali]|ID comando|
+|-|-|-|
+|Associa a processo|**CTRL+ALT+P**| Tools.AttachtoProcess |
 
-#### <a name="view-popular-shortcuts"></a>Visualizza: scelte rapide comuni
+#### <a name="view-popular-shortcuts"></a>Visualizza: scelte rapide più comuni
 
-|Comandi|Tasti di scelta rapida [contesti speciali]|
-|--------------| - |
-|View.ClassView|**CTRL+MAIUSC+C**|
-|View.EditLabel|**F2**|
-|View.ErrorList|**\\CTRL+, CTRL+E**<br /><br />o **\\ CTRL+, E**|
-|View.NavigateBackward|**CTRL+-**|
-|View.NavigateForward|**CTRL+MAIUSC+-**|
-|View.ObjectBrowser|**CTRL+ALT+J**|
-|View.Output|**CTRL+ALT+O**|
-|View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Team Explorer]|
-|View.ServerExplorer|**CTRL + ALT + S**|
-|View.ShowSmartTag|**CTRL+.**<br /><br />o **MAIUSC+ALT+F10** [visualizzazione Progettazione editor HTML]|
-|View.SolutionExplorer|**CTRL+ALT+L**|
-|View.TfsTeamExplorer|**\\CTRL+, CTRL+M**|
-|View.Toolbox|**CTRL+ALT+X**|
-|View.ViewCode|**Immettere** [Diagramma classi]<br /><br />o **F7** [Impostazioni Designer]|
-|View.ViewDesigner|**MAIUSC+F7** [Visualizzazione origine editor HTML]|
+|Comandi|Tasti di scelta rapida [contesti speciali]|ID comando|
+|-|-|-|
+|Visualizzazione classi|**CTRL+MAIUSC+C**| View.ClassView |
+|Modificare l'etichetta|**F2**| View.EditLabel |
+|Elenco errori|**\\CTRL+, CTRL+E**<br /><br />o **\\ CTRL+, E**| View.ErrorList |
+|Spostarsi all'indietro|**CTRL+-**| View.NavigateBackward |
+|Spostarsi in avanti|**CTRL+MAIUSC+-**| View.NavigateForward |
+|Visualizzatore oggetti|**CTRL+ALT+J**| View.ObjectBrowser |
+|Output|**CTRL+ALT+O**| View.Output |
+|Finestra Proprietà|**F4**| View.PropertiesWindow |
+|Aggiorna|**F5** [Team Explorer]| View.Refresh |
+|Esplora server|**CTRL + ALT + S**| View.ServerExplorer |
+|Mostra smart tag|**CTRL+.**<br /><br />o **MAIUSC+ALT+F10** [Visualizzazione Progettazione editor HTML]| View.ShowSmartTag |
+|Esplora soluzioni|**CTRL+ALT+L**| View.SolutionExplorer |
+|Team Explorer di TFS|**\\CTRL+, CTRL+M**| View.TfsTeamExplorer |
+|Casella degli strumenti|**CTRL+ALT+X**| View.Toolbox |
+|Visualizzare il codice|**Invio** [Diagramma classi]<br /><br />o **F7** [progettazione Impostazioni]| View.ViewCode |
+|Progettazione vista|**MAIUSC+F7** [Visualizzazione Origine editor HTML]| View.ViewDesigner |
 
-#### <a name="window-popular-shortcuts"></a>Finestra: scelte rapide comuni
+#### <a name="window-popular-shortcuts"></a>Finestra: scelte rapide più comuni
 
-|Comandi|Tasti di scelta rapida [contesti speciali]|
-|--------------| - |
-|Window.ActivateDocumentWindow|**ESC**|
-|Window.CloseDocumentWindow|**CTRL+F4**|
-|Window.NextDocumentWindow|**CTRL+F6**|
-|Window.NextDocumentWindowNav|**CTRL+TAB**|
-|Window.NextSplitPane|**F6**|
+|Comandi|Tasti di scelta rapida [contesti speciali]|ID comando|
+|-|-|-|
+|Attivare la finestra del documento|**ESC**| Window.ActivateDocumentWindow |
+|Chiudere la finestra del documento|**CTRL+F4**| Window.CloseDocumentWindow |
+|Finestra del documento successiva|**CTRL+F6**| Window.NextDocumentWindow |
+|Spostamento successivo della finestra del documento|**CTRL+TAB**| Window.NextDocumentWindowNav |
+|Riquadro di divisione successivo|**F6**| Window.NextSplitPane |
 
 
 ## <a name="global-shortcuts"></a>Tasti di scelta rapida globali
@@ -226,405 +220,405 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> Analizzare
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Analyze.NavigateBackward|**MAIUSC+ALT+3**|
-|Analyze.NavigateForward|**MAIUSC+ALT+4**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Spostarsi all'indietro|**MAIUSC+ALT+3**| Analyze.NavigateBackward |
+|Spostarsi in avanti|**MAIUSC+ALT+4**| Analyze.NavigateForward |
 
 ### <a name="architecture"></a><a name="bkmk_architecture"></a> Architettura
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Architecture.NewDiagram|**\\CTRL+, CTRL+N**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Nuovo diagramma|**\\CTRL+, CTRL+N**| Architecture.NewDiagram |
 
 ### <a name="build"></a><a name="bkmk_build"></a> Costruire
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Build.BuildSelection|**CTRL+B** (Visual Studio 2019)|
-|Build.BuildSolution|**CTRL+MAIUSC+B**|
-|Build.Cancel|**CTRL+INTERR**|
-|Build.Compile|**Ctrl+F7**|
-|Build.RunCodeAnalysisonSolution|**ALT+F11**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Compila selezione|**CTRL+B** (Visual Studio 2019)| Build.BuildSelection |
+|Compila soluzione|**CTRL+MAIUSC+B**| Build.BuildSolution |
+|Annulla|**CTRL+INTERR**| Build.Cancel |
+|Compilazione|**Ctrl+F7**| Build.Compile |
+|Eseguire l'analisi del codice nella soluzione|**ALT+F11**| Build.RunCodeAnalysisonSolution |
 
-### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> Visualizzazione classi di scelta rapida
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> Visualizzazione classi menu di scelta rapida
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+INVIO**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Proprietà|**ALT+INVIO**| ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties |
 
 ### <a name="debug"></a><a name="bkmk_debug"></a> Eseguire il debug
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Debug.ApplyCodeChanges|**ALT+F10**|
-|Debug.AttachtoProcess |**CTRL+ALT+P**|
-|Debug.Autos|**Ctrl+Alt+V, A**|
-|Debug.BreakAll|**CTRL+ALT+INTERR**|
-|Debug.Breakpoints|**CTRL+ALT+B**|
-|Debug.CallStack|**CTRL+ALT+C**|
-|Debug.DeleteAllBreakpoints|**CTRL+MAIUSC+F9**|
-|Debug.DiagnosticsHub.Launch|**ALT+F2**|
-|Debug.Disassembly|**CTRL+ALT+D**|
-|Debug.DOMExplorer|**Ctrl+Alt+V, D**|
-|Debug.EnableBreakpoint|**CTRL+F9**|
-|Debug.Exceptions|**CTRL+ALT+E**|
-|Debug.FunctionBreakpoint|**CTRL+K, B** (Visual Studio 2019)<br />**CTRL** + **B** (Visual Studio 2017)|
-|Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl+Maiusc+F11**|
-|Debug.Graphics.StartDiagnostics|**ALT+F5**|
-|Debug.Immediate|**CTRL+ALT+I**|
-|Debug.IntelliTraceCalls|**CTRL+ALT+Y, T**|
-|Debug.IntelliTraceEvents|**CTRL+ALT+Y, F**|
-|Debug.JavaScriptConsole|**Ctrl+Alt+V, C**|
-|Debug.Locals|**Ctrl+Alt+V, L**|
-|Debug.LocationToolbar.ProcessCombo|**CTRL+5**|
-|Debug.LocationToolbar.StackFrameCombo|**CTRL+7**|
-|Debug.LocationToolbar.ThreadCombo|**CTRL+6**|
-|Debug.LocationToolbar.ToggleCurrentThreadFlaggedState|**CTRL+8**|
-|Debug.LocationToolbar.ToggleFlaggedThreads|**CTRL+9**|
-|Debug.Memory1|**CTRL+ALT+M, 1**|
-|Debug.Memory2|**CTRL+ALT+M, 2**|
-|Debug.Memory3|**CTRL+ALT+M, 3**|
-|Debug.Memory4|**CTRL+ALT+M, 4**|
-|Debug.Modules|**CTRL+ALT+U**|
-|Debug.ParallelStacks|**CTRL+MAIUSC+D, S**|
-|Debug.ParallelWatch1|**CTRL+MAIUSC+D, 1**|
-|Debug.ParallelWatch2|**CTRL+MAIUSC+D, 2**|
-|Debug.ParallelWatch3|**CTRL+MAIUSC+D, 3**|
-|Debug.ParallelWatch4|**CTRL+MAIUSC+D, 4**|
-|Debug.Processes|**CTRL + ALT + Z**|
-|Debug.QuickWatch|**MAIUSC+F9** o **CTRL+ALT+Q**|
-|Debug.ReattachtoProcess|**MAIUSC+ALT+P**|
-|Debug.RefreshWindowsapp|**CTRL+MAIUSC+R**|
-|Debug.Registers|**CTRL+ALT+G**|
-|Debug.Restart|**Ctrl+Maiusc+F5**|
-|Debug.RunToCursor|**CTRL+F10**|
-|Debug.SetNextStatement|**Ctrl+Maiusc+F10**|
-|Debug.ShowCallStackonCodeMap|**CTRL+MAIUSC+'**|
-|Debug.ShowNextStatement|**ALT+NUM** *|
-|Debug.Start|**F5**|
-|Debug.StartWindowsPhoneApplicationAnalysis|**ALT+F1**|
-|Debug.StartWithoutDebugging|**CTRL+F5**|
-|Debug.StepInto|**F11**|
-|Debug.StepIntoCurrentProcess|**Ctrl+Alt+F11**|
-|Debug.StepIntoSpecific|**MAIUSC+ALT+F11**|
-|Debug.StepOut|**MAIUSC+F11**|
-|Debug.StepOutCurrentProcess|**CTRL+MAIUSC+ALT+F11**|
-|Debug.StepOver|**F10** (durante il debug: esegue un'azione di esecuzione istruzione/ora)|
-|Debug.StepOver|**F10** (Quando non si esegue il debug: avvia il debug e si arresta alla prima riga di codice utente)|
-|Debug.SetpOverCurrentProcess|**Ctrl+Alt+F10**|
-|Debug.StopDebugging|**MAIUSC+F5**|
-|Debug.StopPerformanceAnalysis|**MAIUSC+ALT+F2**|
-|Debug.Tasks|**CTRL+MAIUSC+D, K**|
-|Debug.Threads|**CTRL+ALT+H**|
-|Debug.ToggleBreakpoint|**F9**|
-|Debug.ToggleDisassembly|**CTRL+F11**|
-|Debug.Watch1|**CTRL+ALT+W, 1**|
-|Debug.Watch2|**CTRL+ALT+W, 2**|
-|Debug.Watch3|**CTRL+ALT+W, 3**|
-|Debug.Watch4|**CTRL+ALT+W, 4**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Applicare le modifiche al codice|**ALT+F10**| Debug.ApplyCodeChanges |
+|Connettersi al processo|**CTRL+ALT+P**| Debug.AttachtoProcess |
+|Auto|**Ctrl+Alt+V, A**| Debug.Autos |
+|Interrompere tutto|**CTRL+ALT+INTERR**| Debug.BreakAll |
+|Punti di interruzione|**CTRL+ALT+B**| Debug.Breakpoints |
+|Stack di chiamate|**CTRL+ALT+C**| Debug.CallStack |
+|Eliminare tutti i punti di interruzione|**CTRL+MAIUSC+F9**| Debug.DeleteAllBreakpoints |
+|Launch|**ALT+F2**| Debug.DiagnosticsHub.Launch |
+|Disassembly|**CTRL+ALT+D**| Debug.Disassembly |
+|Dom Explorer|**Ctrl+Alt+V, D**| Debug.DOMExplorer |
+|Abilitare un punto di interruzione|**CTRL+F9**| Debug.EnableBreakpoint |
+|Eccezioni|**CTRL+ALT+E**| Debug.Exceptions |
+|Punto di interruzione della funzione|**CTRL+K, B** (Visual Studio 2019)<br />**CTRL** + **B** (Visual Studio 2017)| Debug.FunctionBreakpoint |
+|Passare alla chiamata precedente o all'evento IntelliTrace|**Ctrl+Maiusc+F11**| Debug.GoToPreviousCallorIntelliTraceEvent |
+|Avviare la diagnostica|**ALT+F5**| Debug.Graphics.StartDiagnostics |
+|Immediato|**CTRL+ALT+I**| Debug.Immediate |
+|Chiamate di IntelliTrace|**CTRL+ALT+Y, T**| Debug.IntelliTraceCalls |
+|Eventi IntelliTrace|**CTRL+ALT+Y, F**| Debug.IntelliTraceEvents |
+|Console JavaScript|**Ctrl+Alt+V, C**| Debug.JavaScriptConsole |
+|Variabili locali|**Ctrl+Alt+V, L**| Debug.Locals |
+|Combinazione di processi|**CTRL+5**| Debug.LocationToolbar.ProcessCombo |
+|Stack frame combo|**CTRL+7**| Debug.LocationToolbar.StackFrameCombo |
+|Combinazione di thread|**CTRL+6**| Debug.LocationToolbar.ThreadCombo |
+|Attiva/Disattiva stato contrassegnato thread corrente|**CTRL+8**| Debug.LocationToolbar.ToggleCurrentThreadFlaggedState |
+|Attivare/disattivare i thread contrassegnati|**CTRL+9**| Debug.LocationToolbar.ToggleFlaggedThreads |
+|Memoria 1|**CTRL+ALT+M, 1**| Debug.Memory1 |
+|Memoria 2|**CTRL+ALT+M, 2**| Debug.Memory2 |
+|Memoria 3|**CTRL+ALT+M, 3**| Debug.Memory3 |
+|Memoria 4|**CTRL+ALT+M, 4**| Debug.Memory4 |
+|Moduli|**CTRL+ALT+U**| Debug.Modules |
+|Stack paralleli|**CTRL+MAIUSC+D, S**| Debug.ParallelStacks |
+|Orologio parallelo 1|**CTRL+MAIUSC+D, 1**| Debug.ParallelWatch1 |
+|Orologio parallelo 2|**CTRL+MAIUSC+D, 2**| Debug.ParallelWatch2 |
+|Orologio parallelo 3|**CTRL+MAIUSC+D, 3**| Debug.ParallelWatch3 |
+|Orologio parallelo 4|**CTRL+MAIUSC+D, 4**| Debug.ParallelWatch4 |
+|Processi|**CTRL + ALT + Z**| Debug.Processes |
+|Controllo rapido|**MAIUSC+F9** o **CTRL+ALT+Q**| Debug.QuickWatch |
+|Riconllegare al processo|**MAIUSC+ALT+P**| Debug.ReattachtoProcess |
+|Aggiornare windowsapp|**CTRL+MAIUSC+R**| Debug.RefreshWindowsapp |
+|Registri|**CTRL+ALT+G**| Debug.Registers |
+|Riavvia|**Ctrl+Maiusc+F5**| Debug.Restart |
+|Esecuzione fino al cursore|**CTRL+F10**| Debug.RunToCursor |
+|Impostare l'istruzione successiva|**Ctrl+Maiusc+F10**| Debug.SetNextStatement |
+|Visualizzare lo stack di chiamate sulla mappa codice|**CTRL+MAIUSC+'**| Debug.ShowCallStackonCodeMap |
+|Mostrare l'istruzione successiva|**ALT+NUM** *| Debug.ShowNextStatement |
+|Avvio|**F5**| Debug.Start |
+|Avviare l'analisi delle applicazioni windows phone|**ALT+F1**| Debug.StartWindowsPhoneApplicationAnalysis |
+|Avvia senza eseguire debug|**CTRL+F5**| Debug.StartWithoutDebugging |
+|Eseguire l'istruzione|**F11**| Debug.StepInto |
+|Eseguire un'istruzione nel processo corrente|**Ctrl+Alt+F11**| Debug.StepIntoCurrentProcess |
+|Eseguire un'istruzione specifica|**MAIUSC+ALT+F11**| Debug.StepIntoSpecific |
+|Uscire dall'istruzione/routine|**MAIUSC+F11**| Debug.StepOut |
+|Uscire dal processo corrente|**CTRL+MAIUSC+ALT+F11**| Debug.StepOutCurrentProcess |
+|Eseguire l'istruzione/routine|**F10** (durante il debug: esegue un'azione di esecuzione istruzione/ora)| Debug.StepOver |
+|Eseguire l'istruzione/routine|**F10** (Quando non si esegue il debug: avvia il debug e si arresta alla prima riga di codice utente)| Debug.StepOver |
+|Eseguire un'istruzione/istruzione/istruzione nel processo corrente|**Ctrl+Alt+F10**| Debug.SetpOverCurrentProcess |
+|Arrestare l'esecuzione del debug|**MAIUSC+F5**| Debug.StopDebugging |
+|Arrestare l'analisi delle prestazioni|**MAIUSC+ALT+F2**| Debug.StopPerformanceAnalysis |
+|Attività|**CTRL+MAIUSC+D, K**| Debug.Tasks |
+|Thread|**CTRL+ALT+H**| Debug.Threads |
+|Impostare/rimuovere un punto di interruzione|**F9**| Debug.ToggleBreakpoint |
+|Attiva/Disattiva disassembly|**CTRL+F11**| Debug.ToggleDisassembly |
+|Espressione di controllo 1|**CTRL+ALT+W, 1**| Debug.Watch1 |
+|Guardare il video 2|**CTRL+ALT+W, 2**| Debug.Watch2 |
+|Guardare il video 3|**CTRL+ALT+W, 3**| Debug.Watch3 |
+|Guardare il video 4|**CTRL+ALT+W, 4**| Debug.Watch4 |
 
 ### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> Menu di scelta rapida del debugger
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|DebuggerContextMenus.BreakpointsWindow.Delete|**Alt+F9, D**|
-|DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|
-|DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Elimina|**Alt+F9, D**| DebuggerContextMenus.BreakpointsWindow.Delete |
+|Vai a disassembly|**ALT+F9, A**| DebuggerContextMenus.BreakpointsWindow.GoToDisassembly |
+|Passare al codice sorgente|**ALT+F9, S**| DebuggerContextMenus.BreakpointsWindow.GoToSourceCode |
 
 ### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Hub di diagnostica
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|DiagnosticsHub.StopCollection|**CTRL+ALT+F2**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Arresta raccolta|**CTRL+ALT+F2**| DiagnosticsHub.StopCollection |
 
 ### <a name="edit"></a><a name="bkmk_edit"></a> Modifica
 
-|Comandi|Scelte rapide da tastiera|
-|--------------|-|
-|Edit.Copy|**CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+INS**|
-|Edit.Cut|**CTRL+X**<br /><br /> oppure<br /><br /> **MAIUSC+CANC**|
-|Edit.CycleClipboardRing|**CTRL+MAIUSC+V**<br /><br /> oppure<br /><br /> **CTRL+ MAIUSC+INS**|
-|Edit.Delete|**Elimina**|
-|Edit.Duplicate|**CTRL+D**|
-|Edit.Find|**CTRL+F**|
-|Edit.FindAllReferences|**MAIUSC+F12**|
-|Edit.FindinFiles|**CTRL+MAIUSC+F**|
-|Edit.FindNext|**F3**|
-|Edit.FindNextSelected|**CTRL+F3**|
-|Edit.FindPrevious|**MAIUSC+F3**|
-|Edit.FindPreviousSelected|**CTRL+MAIUSC+F3**|
-|Edit.GenerateMethod|**CTRL+K, CTRL+M**|
-|Edit.GoTo|**CTRL+G**|
-|Edit.GoToAll|**CTRL+,** o **CTRL+T**|
-|Edit.GoToDeclaration|**Ctrl+F12**|
-|Edit.GoToDefinition|**F12**|
-|Edit.GoToMember|**CTRL+1, CTRL+M** o **CTRL+1, M** o **ALT+\\**|
-|Edit.GoToNextLocation|**F8** (errore successivo nella finestra Elenco errori o Output)|
-|Edit.GoToPrevLocation|**MAIUSC+F8** (errore precedente nella finestra Elenco errori o Output)|
-|Edit.InsertSnippet|**Ctrl+K, Ctrl+X**|
-|Edit.MoveControlDown|**CTRL+Freccia GIÙ**|
-|Edit.MoveControlDownGrid|**Freccia GIÙ**|
-|Edit.MoveControlLeft|**CTRL+Freccia SINISTRA**|
-|Edit.MoveControlLeftGrid|**Freccia SINISTRA**|
-|Edit.MoveControlRight|**CTRL+Freccia DESTRA**|
-|Edit.MoveControlRightGrid|**Freccia DESTRA**|
-|Edit.MoveControlUp|**CTRL+Freccia SU**|
-|Edit.MoveControlUpGrid|**Freccia SU**|
-|Edit.NextBookmark|**Ctrl+K, Ctrl+N**|
-|Edit.NextBookmarkInFolder|**CTRL+MAIUSC+K, CTRL+MAIUSC+N**|
-|Edit.OpenFile|**CTRL+MAIUSC+G** (apre il nome di file in corrispondenza del cursore)|
-|Edit.Paste|**CTRL+V**<br /><br /> oppure<br /><br /> **MAIUSC+INS**|
-|Edit.PreviousBookmark|**Ctrl+K, Ctrl+P**|
-|Edit.PreviousBookmarkInFolder|**CTRL+MAIUSC+K, CTRL+MAIUSC+P**|
-|Edit.QuickFindSymbol|**MAIUSC+ALT+F12**|
-|Edit.Redo|**CTRL+Y**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+Z**<br /><br /> oppure<br /><br /> **MAIUSC+ALT+BACKSPACE**|
-|Edit.RefreshRemoteReferences|**CTRL+MAIUSC+J**|
-|Edit.Replace|**CTRL+H**|
-|Edit.ReplaceinFiles|**CTRL+MAIUSC+H**|
-|Edit.SelectAll|**CTRL+A**|
-|Edit.SelectNextControl|**TAB**|
-|Edit.SelectPreviousControl|**MAIUSC+TAB**|
-|Edit.ShowTileGrid|**INVIO**|
-|Edit.SizeControlDown|**CTRL+MAIUSC+Freccia GIÙ**|
-|Edit.SizeControlDownGrid|**MAIUSC+Freccia GIÙ**|
-|Edit.SizeControlLeft|**CTRL+MAIUSC+Freccia SINISTRA**|
-|Edit.SizeControlLeftGrid|**MAIUSC+Freccia SINISTRA**|
-|Edit.SizeControlRight|**CTRL+MAIUSC+Freccia DESTRA**|
-|Edit.SizeControlRightGrid|**MAIUSC+Freccia DESTRA**|
-|Edit.SizeControlUp|**CTRL+MAIUSC+freccia SU**|
-|Edit.SizeControlUpGrid|**MAIUSC+Freccia SU**|
-|Edit.StopSearch|**Alt+F3, S**|
-|Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
-|Edit.Undo|**CTRL+Z**<br /><br /> oppure<br /><br /> **ALT+BACKSPACE**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Copia|**CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+INS**| Edit.Copy |
+|Taglia|**CTRL+X**<br /><br /> oppure<br /><br /> **MAIUSC+CANC**| Edit.Cut |
+|Ciclo dell'anello degli Appunti|**CTRL+MAIUSC+V**<br /><br /> oppure<br /><br /> **CTRL+ MAIUSC+INS**| Edit.CycleClipboardRing |
+|Elimina|**Elimina**| Edit.Delete |
+|Duplicare|**CTRL+D**| Edit.Duplicate |
+|Find|**CTRL+F**| Edit.Find |
+|Trova tutti i riferimenti|**MAIUSC+F12**| Edit.FindAllReferences |
+|Cercare nei file|**CTRL+MAIUSC+F**| Edit.FindinFiles |
+|Trova successivo|**F3**| Edit.FindNext |
+|Trova successivo selezionato|**CTRL+F3**| Edit.FindNextSelected |
+|Trova precedente|**MAIUSC+F3**| Edit.FindPrevious |
+|Trova l'elemento selezionato in precedenza|**CTRL+MAIUSC+F3**| Edit.FindPreviousSelected |
+|Generare un metodo|**CTRL+K, CTRL+M**| Edit.GenerateMethod |
+|Passare a|**CTRL+G**| Edit.GoTo |
+|Vai a tutti|**CTRL+,** o **CTRL+T**| Edit.GoToAll |
+|Vai alla dichiarazione|**Ctrl+F12**| Edit.GoToDeclaration |
+|Vai alla definizione|**F12**| Edit.GoToDefinition |
+|Vai al membro|**CTRL+1, CTRL+M** o **CTRL+1, M** o **ALT+\\**| Edit.GoToMember |
+|Passare alla posizione successiva|**F8** (errore successivo nella finestra Elenco errori o Output)| Edit.GoToNextLocation |
+|Vai alla posizione di prev|**MAIUSC+F8** (errore precedente nella finestra Elenco errori o Output)| Edit.GoToPrevLocation |
+|Inserire un frammento di codice|**Ctrl+K, Ctrl+X**| Edit.InsertSnippet |
+|Spostare il controllo verso il basso|**CTRL+Freccia GIÙ**| Edit.MoveControlDown |
+|Spostare il controllo nella griglia verso il basso|**Freccia GIÙ**| Edit.MoveControlDownGrid |
+|Sposta il controllo a sinistra|**CTRL+Freccia SINISTRA**| Edit.MoveControlLeft |
+|Spostare il controllo a sinistra della griglia|**Freccia SINISTRA**| Edit.MoveControlLeftGrid |
+|Spostare il controllo a destra|**CTRL+Freccia DESTRA**| Edit.MoveControlRight |
+|Spostare la griglia a destra del controllo|**Freccia DESTRA**| Edit.MoveControlRightGrid |
+|Sposta controllo verso l'alto|**CTRL+Freccia SU**| Edit.MoveControlUp |
+|Spostare il controllo verso l'alto nella griglia|**Freccia SU**| Edit.MoveControlUpGrid |
+|Segnalibro successivo|**Ctrl+K, Ctrl+N**| Edit.NextBookmark |
+|Segnalibro successivo nella cartella|**CTRL+MAIUSC+K, CTRL+MAIUSC+N**| Edit.NextBookmarkInFolder |
+|Aprire il file|**CTRL+MAIUSC+G** (apre il nome di file in corrispondenza del cursore)| Edit.OpenFile |
+|Incolla|**CTRL+V**<br /><br /> oppure<br /><br /> **MAIUSC+INS**| Edit.Paste |
+|Segnalibro precedente|**Ctrl+K, Ctrl+P**| Edit.PreviousBookmark |
+|Segnalibro precedente nella cartella|**CTRL+MAIUSC+K, CTRL+MAIUSC+P**| Edit.PreviousBookmarkInFolder |
+|Simbolo di ricerca rapida|**MAIUSC+ALT+F12**| Edit.QuickFindSymbol |
+|Ripeti|**CTRL+Y**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+Z**<br /><br /> oppure<br /><br /> **MAIUSC+ALT+BACKSPACE**| Edit.Redo |
+|Aggiornare i riferimenti remoti|**CTRL+MAIUSC+J**| Edit.RefreshRemoteReferences |
+|Sostituisci|**CTRL+H**| Edit.Replace |
+|Sostituisci nei file|**CTRL+MAIUSC+H**| Edit.ReplaceinFiles |
+|Seleziona tutto|**CTRL+A**| Edit.SelectAll |
+|Selezionare il controllo successivo|**TAB**| Edit.SelectNextControl |
+|Selezionare il controllo precedente|**MAIUSC+TAB**| Edit.SelectPreviousControl |
+|Mostra griglia riquadri|**INVIO**| Edit.ShowTileGrid |
+|Controllo delle dimensioni in basso|**CTRL+MAIUSC+Freccia GIÙ**| Edit.SizeControlDown |
+|Controllo delle dimensioni nella griglia verso il basso|**MAIUSC+Freccia GIÙ**| Edit.SizeControlDownGrid |
+|Controllo delle dimensioni a sinistra|**CTRL+MAIUSC+Freccia SINISTRA**| Edit.SizeControlLeft |
+|Controllo dimensioni griglia sinistra|**MAIUSC+Freccia SINISTRA**| Edit.SizeControlLeftGrid |
+|Controllo delle dimensioni a destra|**CTRL+MAIUSC+Freccia DESTRA**| Edit.SizeControlRight |
+|Griglia destra del controllo Dimensioni|**MAIUSC+Freccia DESTRA**| Edit.SizeControlRightGrid |
+|Controllo delle dimensioni in alto|**CTRL+MAIUSC+freccia SU**| Edit.SizeControlUp |
+|Controllo delle dimensioni nella griglia superiore|**MAIUSC+Freccia SU**| Edit.SizeControlUpGrid |
+|Arrestare la ricerca|**Alt+F3, S**| Edit.StopSearch |
+|Racchiudere tra|**Ctrl+K, Ctrl+S**| Edit.SurroundWith |
+|Annulla|**CTRL+Z**<br /><br /> oppure<br /><br /> **ALT+BACKSPACE**| Edit.Undo |
 
 ### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> Menu di scelta rapida dell'editor
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|EditorContextMenus.CodeWindow.Breakpoint.BreakpointConditions|**Alt+F9, C**|
-|EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**Alt+F9, L**|
-|EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL+'**|
-|EditorContextMenus.CodeWindow.Execute|**CTRL+Alt+F5**|
-|EditorContextMenus.CodeWindow.GoToView|**CTRL+M, CTRL+G**|
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O** (lettera "O")|
-|EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> oppure<br /><br /> **CTRL+K, S**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Condizioni punto di interruzione|**Alt+F9, C**| EditorContextMenus.CodeWindow.Breakpoint.BreakpointConditions |
+|Modificare le etichette dei punti di interruzione|**Alt+F9, L**| EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels |
+|Mostra elemento|**CTRL+'**| EditorContextMenus.CodeWindow.CodeMap.ShowItem |
+|Execute|**CTRL+Alt+F5**| EditorContextMenus.CodeWindow.Execute |
+|Vai alla visualizzazione|**CTRL+M, CTRL+G**| EditorContextMenus.CodeWindow.GoToView |
+|Attivare/disattivare il file di codice di intestazione|**CTRL+K, CTRL+O** (lettera "O")| EditorContextMenus.CodeWindow.ToggleHeaderCodeFile |
+|Visualizzare la gerarchia di chiamata|**CTRL+K, CTRL+T**<br /><br /> oppure<br /><br /> **CTRL+K, S**| EditorContextMenus.CodeWindow.ViewCallHierarchy |
 
 ### <a name="file"></a><a name="bkmk_file"></a> File
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|File.Exit|**ALT+F4**|
-|File.NewFile|**CTRL+N**|
-|File.NewProject|**CTRL+MAIUSC+N**|
-|File.NewWebSite|**MAIUSC+ALT+N**|
-|File.OpenFile|**CTRL+O** (lettera "O")|
-|File.OpenProject|**CTRL+MAIUSC+O** (lettera "O")|
-|File.OpenWebSite|**MAIUSC+ALT+O** (lettera "O")|
-|File.Print|**Ctrl+P**|
-|File.SaveAll|**CTRL+MAIUSC+S**|
-|File.SaveSelectedItems|**CTRL+S**|
-|File.ViewinBrowser|**CTRL+MAIUSC+W**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Esci|**ALT+F4**| File.Exit |
+|Nuovo file|**CTRL+N**| File.NewFile |
+|Nuovo progetto|**CTRL+MAIUSC+N**| File.NewProject |
+|Nuovo sito Web|**MAIUSC+ALT+N**| File.NewWebSite |
+|Aprire il file|**CTRL+O** (lettera "O")| File.OpenFile |
+|Aprire il progetto|**CTRL+MAIUSC+O** (lettera "O")| File.OpenProject |
+|Aprire il sito Web|**MAIUSC+ALT+O** (lettera "O")| File.OpenWebSite |
+|Stampa|**CTRL+P**| File.Print |
+|Salvare tutto|**CTRL+MAIUSC+S**| File.SaveAll |
+|Salvare gli elementi selezionati|**CTRL+S**| File.SaveSelectedItems |
+|Visualizzare nel browser|**CTRL+MAIUSC+W**| File.ViewinBrowser |
 
 ### <a name="help"></a><a name="bkmk_help"></a> Guida
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Help.AddandRemoveHelpContent|**CTRL+ALT+F1**|
-|Help.F1Help|**F1**|
-|Help.ViewHelp|**CTRL+F1**|
-|Help.WindowHelp|**MAIUSC+F1**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Aggiungere e rimuovere il contenuto della Guida|**CTRL+ALT+F1**| Help.AddandRemoveHelpContent |
+|Guida sensibile al contesto|**F1**| Help.F1Help |
+|Visualizzare la Guida|**CTRL+F1**| Help.ViewHelp |
+|Guida della finestra|**MAIUSC+F1**| Help.WindowHelp |
 
 ### <a name="load-test"></a><a name="bkmk_loadtest"></a> Test di carico
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|LoadTest.JumpToCounterPane|**CTRL+R, Q**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Passare al riquadro del contatore|**CTRL+R, Q**| LoadTest.JumpToCounterPane |
 
 ### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> Altri menu di scelta rapida
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Inserimento**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Aggiungere un nuovo diagramma|**Inserimento**| OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram |
 
 ### <a name="project"></a><a name="bkmk_project"></a> Progetto
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Project.AddExistingItem|**MAIUSC+ALT+A**|
-|Project.AddNewItem|**CTRL+MAIUSC+A**|
-|Project.ClassWizard|**CTRL+ MAIUSC+X**|
-|Project.Override|**CTRL+ALT+INS**|
-|Project.Previewchanges|**ALT+;** quindi **ALT+C**|
-|Project.Publishselectedfiles|**ALT+;** quindi **ALT+P**|
-|Project.Replaceselectedfilesfromserver|**ALT+;** quindi **ALT+R**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Aggiungere un elemento esistente|**MAIUSC+ALT+A**| Project.AddExistingItem |
+|Aggiungere un nuovo elemento|**CTRL+MAIUSC+A**| Project.AddNewItem |
+|Creazione guidata classe|**CTRL+ MAIUSC+X**| Project.ClassWizard |
+|Sostituisci|**CTRL+ALT+INS**| Project.Override |
+|Anteprima modifiche|**ALT+;** quindi **ALT+C**| Project.Previewchanges |
+|Pubblicare i file selezionati|**ALT+;** quindi **ALT+P**| Project.Publishselectedfiles |
+|Sostituire i file selezionati dal server|**ALT+;** quindi **ALT+R**| Project.Replaceselectedfilesfromserver |
 
-### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Project e menu di scelta rapida della soluzione
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Project di scelta rapida della soluzione e della soluzione
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|ProjectandSolutionContextMenus.Item.MoveDown|**ALT+freccia GIÙ**|
-|ProjectandSolutionContextMenus.Item.MoveUp|**ALT+freccia SU**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Sposta giù|**ALT+Freccia GIÙ**| ProjectandSolutionContextMenus.Item.MoveDown |
+|Sposta su|**ALT+freccia SU**| ProjectandSolutionContextMenus.Item.MoveUp |
 
 ### <a name="refactor"></a><a name="bkmk_refactor"></a> Refactor
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Refactor.EncapsulateField|**CTRL+R, CTRL+E**|
-|Refactor.ExtractInterface|**CTRL+R, CTRL+I**|
-|Refactor.ExtractMethod|**CTRL+R, CTRL+M**|
-|Refactor.RemoveParameters|**CTRL+R, CTRL+V**|
-|Refactor.Rename|**CTRL+R, CTRL+R**|
-|Refactor.ReorderParameters|**CTRL+R, CTRL+O** (lettera "O")|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Incapsula campo|**CTRL+R, CTRL+E**| Refactor.EncapsulateField |
+|Estrarre l'interfaccia|**CTRL+R, CTRL+I**| Refactor.ExtractInterface |
+|Estrai metodo|**CTRL+R, CTRL+M**| Refactor.ExtractMethod |
+|Rimuovere i parametri|**CTRL+R, CTRL+V**| Refactor.RemoveParameters |
+|Rinominare|**CTRL+R, CTRL+R**| Refactor.Rename |
+|Riordinare i parametri|**CTRL+R, CTRL+O** (lettera "O")| Refactor.ReorderParameters |
 
 ### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> Esplora soluzioni
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL+[**, **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+O** (lettera "O")|
-|SolutionExplorer.PendingChangesFilter|**CTRL+[**, **P**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL+[**, **S**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+S**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Filtro apri file|**CTRL+[**, **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+O** (lettera "O")| SolutionExplorer.OpenFilesFilter |
+|Filtro modifiche in sospeso|**CTRL+[**, **P**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+P**| SolutionExplorer.PendingChangesFilter |
+|Sincronizzare con il documento attivo|**CTRL+[**, **S**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+S**| SolutionExplorer.SyncWithActiveDocument |
 
 ### <a name="team"></a><a name="bkmk_team"></a> Team
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Team.Git.GoToGitBranches|**CTRL+0** (zero), **CTRL+N**<br /><br /> oppure<br /><br /> **CTRL+0, N**|
-|Team.Git.GoToGitChanges|**CTRL+0** (zero), **CTRL+G**<br /><br /> oppure<br /><br /> **CTRL+0, G**|
-|Team.Git.GoToGitCommits|**CTRL+0**, **CTRL+O** (lettera "O")<br /><br /> oppure<br /><br /> **Ctrl+0, O**|
-|Team.TeamExplorerSearch|**CTRL+'**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Passare ai rami git|**CTRL+0** (zero), **CTRL+N**<br /><br /> oppure<br /><br /> **CTRL+0, N**| Team.Git.GoToGitBranches |
+|Passare alle modifiche git|**CTRL+0** (zero), **CTRL+G**<br /><br /> oppure<br /><br /> **CTRL+0, G**| Team.Git.GoToGitChanges |
+|Passare ai commit git|**CTRL+0**, **CTRL+O** (lettera "O")<br /><br /> oppure<br /><br /> **Ctrl+0, O**| Team.Git.GoToGitCommits |
+|Ricerca in Team Explorer|**CTRL+'**| Team.TeamExplorerSearch |
 
 ### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menu di scelta rapida di Team Foundation
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL+0** (zero), **CTRL+B**<br /><br /> oppure<br /><br /> **Ctrl+0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL+0** (zero), **CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL+0** (zero), **CTRL+D**<br /><br /> oppure<br /><br /> **CTRL+0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**CTRL+0** (zero), **CTRL+H**<br /><br /> oppure<br /><br /> **CTRL+0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL+0** (zero), **CTRL+M**<br /><br /> oppure<br /><br /> **CTRL+0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL+0** (zero), **CTRL+P**<br /><br /> oppure<br /><br /> **Ctrl+0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**CTRL+0** (zero), **CTRL+R**<br /><br /> oppure<br /><br /> **CTRL+0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL+0** (zero), **CTRL+S**<br /><br /> oppure<br /><br /> **CTRL+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0** (zero), **CTRL+A**<br /><br /> oppure<br /><br /> **CTRL+0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0** (zero), **CTRL+W**<br /><br /> oppure<br /><br /> **CTRL+0, W**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Passare alle compilazioni|**CTRL+0** (zero), **CTRL+B**<br /><br /> oppure<br /><br /> **Ctrl+0, B**| TeamFoundationContextMenus.Commands.GoToBuilds |
+|Andare a connettersi|**CTRL+0** (zero), **CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+0, C**| TeamFoundationContextMenus.Commands.GoToConnect |
+|Passare ai documenti|**CTRL+0** (zero), **CTRL+D**<br /><br /> oppure<br /><br /> **CTRL+0, D**| TeamFoundationContextMenus.Commands.GoToDocuments |
+|Passare alla home page|**CTRL+0** (zero), **CTRL+H**<br /><br /> oppure<br /><br /> **CTRL+0, H**| TeamFoundationContextMenus.Commands.GoToHome |
+|Passare al lavoro|**CTRL+0** (zero), **CTRL+M**<br /><br /> oppure<br /><br /> **CTRL+0, M**| TeamFoundationContextMenus.Commands.GoToMyWork |
+|Passare alle modifiche in sospeso|**CTRL+0** (zero), **CTRL+P**<br /><br /> oppure<br /><br /> **Ctrl+0, P**| TeamFoundationContextMenus.Commands.GoToPendingChanges |
+|Passare ai report|**CTRL+0** (zero), **CTRL+R**<br /><br /> oppure<br /><br /> **CTRL+0, R**| TeamFoundationContextMenus.Commands.GoToReports |
+|Passare alle impostazioni|**CTRL+0** (zero), **CTRL+S**<br /><br /> oppure<br /><br /> **CTRL+0, S**| TeamFoundationContextMenus.Commands.GoToSettings |
+|Passare all'accesso Web|**CTRL+0** (zero), **CTRL+A**<br /><br /> oppure<br /><br /> **CTRL+0, A**| TeamFoundationContextMenus.Commands.GoToWebAccess |
+|Passare agli elementi di lavoro|**CTRL+0** (zero), **CTRL+W**<br /><br /> oppure<br /><br /> **CTRL+0, W**| TeamFoundationContextMenus.Commands.GoToWorkItems |
 
 ### <a name="test"></a><a name="bkmk_test"></a> Test
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Test.UseCodedUITestBuilder|**\\CTRL+, CTRL+C**|
-|Test.UseExistingActionRecording|**\\CTRL+, CTRL+A**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Usare il generatore di test codificati dell'interfaccia utente|**\\CTRL+, CTRL+C**| Test.UseCodedUITestBuilder |
+|Usare la registrazione delle azioni esistente|**\\CTRL+, CTRL+A**| Test.UseExistingActionRecording |
 
 ### <a name="test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a> Esplora test
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|TestExplorer.DebugAllTests|**CTRL+R, CTRL+A**|
-|TestExplorer.DebugAllTestsInContext|**Ctrl+R, Ctrl+T**|
-|TestExplorer.DebugLastRun|**Ctrl+R, D**|
-|TestExplorer.RepeatLastRun|**Ctrl+R, L**|
-|TestExplorer.RunAllTests|**Ctrl+R, A**|
-|TestExplorer.RunAllTestsInContext|**Ctrl+R, T**|
-|TestExplorer.ShowTestExplorer|**Ctrl+E, T**|
-|LiveUnitTesting.OpenTab|**Ctrl+E, L**|
-|Test.CodeCoverageResults|**CTRL+E, C**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Eseguire il debug di tutti i test|**CTRL+R, CTRL+A**| TestExplorer.DebugAllTests |
+|Eseguire il debug di tutti i test nel contesto|**Ctrl+R, Ctrl+T**| TestExplorer.DebugAllTestsInContext |
+|Eseguire il debug dell'ultima esecuzione|**Ctrl+R, D**| TestExplorer.DebugLastRun |
+|Ripetere l'ultima esecuzione|**Ctrl+R, L**| TestExplorer.RepeatLastRun |
+|Eseguire tutti i test|**Ctrl+R, A**| TestExplorer.RunAllTests |
+|Eseguire tutti i test nel contesto|**Ctrl+R, T**| TestExplorer.RunAllTestsInContext |
+|Mostra Esplora test|**Ctrl+E, T**| TestExplorer.ShowTestExplorer |
+|Aprire la scheda|**Ctrl+E, L**| LiveUnitTesting.OpenTab |
+|Risultati Code coverage|**CTRL+E, C**| Test.CodeCoverageResults |
 
 ### <a name="tools"></a><a name="bkmk_tools"></a> Strumenti
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Tools.AttachtoProcess|**CTRL+ALT+P**|
-|Tools.CodeSnippetsManager|**Ctrl+K, Ctrl+B**|
-|Tools.ForceGC|**CTRL+MAIUSC+ALT+F12, CTRL+MAIUSC+ALT+F12**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Associa a processo|**CTRL+ALT+P**| Tools.AttachtoProcess |
+|Gestione frammenti di codice|**Ctrl+K, Ctrl+B**| Tools.CodeSnippetsManager |
+|Forza gc|**CTRL+MAIUSC+ALT+F12, CTRL+MAIUSC+ALT+F12**| Tools.ForceGC |
 
 ### <a name="view"></a><a name="bkmk_view"></a> Mostra
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|View.AllWindows|**MAIUSC+ALT+M**|
-|View.ArchitectureExplorer|**\\CTRL+, CTRL+R**|
-|View.Backward|**ALT+freccia SINISTRA** (funziona in modo diverso da View.NavigateBackward nell'Editor di testo)|
-|View.BookmarkWindow|**Ctrl+K, Ctrl+W**|
-|View.BrowseNext|**CTRL+MAIUSC+1**|
-|View.BrowsePrevious|**CTRL+MAIUSC+2**|
-|View.CallHierarchy|**CTRL+ALT+K**|
-|View.ClassView|**CTRL+MAIUSC+C**|
-|View.ClassViewGoToSearchCombo|**CTRL+K, CTRL+V**|
-|View.CodeDefinitionWindow|**\\CTRL+, D**<br /><br /> oppure<br /><br /> **\\CTRL+, CTRL+D**|
-|View.CommandWindow|**CTRL+ALT+A**|
-|View.DataSources|**MAIUSC+ALT+D**|
-|View.DocumentOutline|**CTRL+ALT+T**|
-|View.EditLabel|**F2**|
-|View.ErrorList|**\\CTRL+, E**<br /><br /> oppure<br /><br /> **\\CTRL+, CTRL+E**|
-|View.F#Interactive|**CTRL+ALT+F**|
-|View.FindSymbolResults|**Ctrl+Alt+F12**|
-|View.Forward|**ALT + freccia destra** (funzioni in modo diverso dai View.NavigateForward nell'Editor di testo)|
-|View.ForwardBrowseContext|**CTRL+MAIUSC+7**|
-|View.FullScreen|**MAIUSC+ALT+INVIO**|
-|View.NavigateBackward|**CTRL+-**|
-|View.NavigateForward|**CTRL+MAIUSC+-**|
-|View.NextError|**CTRL+MAIUSC+F12**|
-|View.Notifications|**CTRL+W, N**<br /><br /> oppure<br /><br /> **CTRL+W, CTRL+N**|
-|View.ObjectBrowser|**CTRL+ALT+J**|
-|View.ObjectBrowserGoToSearchCombo|**CTRL+K, CTRL+R**|
-|View.Output|**CTRL+ALT+O** (lettera "O")|
-|View.PopBrowseContext|**CTRL+MAIUSC+8** (solo C++)|
-|View.PropertiesWindow|**F4**|
-|View.PropertyPages|**MAIUSC+F4**|
-|View.ResourceView|**CTRL+MAIUSC+E**|
-|View.ServerExplorer|**CTRL + ALT + S**|
-|View.ShowSmartTag|**MAIUSC+ALT+F10**<br /><br /> oppure<br /><br /> **CTRL+.**|
-|View.SolutionExplorer|**CTRL+ALT+L**|
-|View.SQLServerObjectExplorer|**\\CTRL+, CTRL+S**|
-|View.TaskList|**\\CTRL+, T**<br /><br /> oppure<br /><br /> **\\CTRL+, CTRL+T**|
-|View.TfsTeamExplorer|**\\CTRL+, CTRL+M**|
-|View.Toolbox|**CTRL+ALT+X**|
-|View.UMLModelExplorer|**\\CTRL+, CTRL+U**|
-|View.ViewCode|**F7**|
-|View.ViewDesigner|**MAIUSC+F7**|
-|View.WebBrowser|**CTRL+ALT+R**|
-|View.ZoomIn|**CTRL+MAIUSC+.**|
-|View.ZoomOut|**CTRL+MAIUSC+,**|
-|TestExplorer.ShowTestExplorer|**Ctrl+E, T**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Tutte le finestre|**MAIUSC+ALT+M**| View.AllWindows |
+|Esplora architettura|**\\CTRL+, CTRL+R**| View.ArchitectureExplorer |
+|indietro|**ALT+freccia SINISTRA** (funziona in modo diverso da View.NavigateBackward nell'Editor di testo)| View.Backward |
+|Finestra Segnalibro|**Ctrl+K, Ctrl+W**| View.BookmarkWindow |
+|Sfoglia successivo|**CTRL+MAIUSC+1**| View.BrowseNext |
+|Sfoglia precedente|**CTRL+MAIUSC+2**| View.BrowsePrevious |
+|Gerarchia di chiamata|**CTRL+ALT+K**| View.CallHierarchy |
+|Visualizzazione classi|**CTRL+MAIUSC+C**| View.ClassView |
+|Visualizzazione classi vai alla casella combinata di ricerca|**CTRL+K, CTRL+V**| View.ClassViewGoToSearchCombo |
+|Finestra Di definizione del codice|**\\CTRL+, D**<br /><br /> oppure<br /><br /> **\\CTRL+, CTRL+D**| View.CodeDefinitionWindow |
+|Finestra di comando|**CTRL+ALT+A**| View.CommandWindow |
+|Origini dati|**MAIUSC+ALT+D**| View.DataSources |
+|Struttura documento|**CTRL+ALT+T**| View.DocumentOutline |
+|Modificare l'etichetta|**F2**| View.EditLabel |
+|Elenco errori|**\\CTRL+, E**<br /><br /> oppure<br /><br /> **\\CTRL+, CTRL+E**| View.ErrorList |
+|F# Interactive|**CTRL+ALT+F**| View.F#Interactive |
+|Risultati della ricerca dei simboli|**Ctrl+Alt+F12**| View.FindSymbolResults |
+|Inoltra|**ALT + freccia destra** (funzioni in modo diverso dai View.NavigateForward nell'Editor di testo)| View.Forward |
+|Torna a definizione|**CTRL+MAIUSC+7**| View.ForwardBrowseContext |
+|Schermo intero|**MAIUSC+ALT+INVIO**| View.FullScreen |
+|Spostarsi all'indietro|**CTRL+-**| View.NavigateBackward |
+|Spostarsi in avanti|**CTRL+MAIUSC+-**| View.NavigateForward |
+|Errore successivo|**CTRL+MAIUSC+F12**| View.NextError |
+|Notifiche|**CTRL+W, N**<br /><br /> oppure<br /><br /> **CTRL+W, CTRL+N**| View.Notifications |
+|Visualizzatore oggetti|**CTRL+ALT+J**| View.ObjectBrowser |
+|Visualizzatore oggetti- Vai alla casella combinata di ricerca|**CTRL+K, CTRL+R**| View.ObjectBrowserGoToSearchCombo |
+|Output|**CTRL+ALT+O** (lettera "O")| View.Output |
+|Contesto di esplorazione popup|**CTRL+MAIUSC+8** (solo C++)| View.PopBrowseContext |
+|Finestra Proprietà|**F4**| View.PropertiesWindow |
+|pagine delle proprietà|**MAIUSC+F4**| View.PropertyPages |
+|Visualizzazione delle risorse|**CTRL+MAIUSC+E**| View.ResourceView |
+|Esplora server|**CTRL + ALT + S**| View.ServerExplorer |
+|Mostra smart tag|**MAIUSC+ALT+F10**<br /><br /> oppure<br /><br /> **CTRL+.**| View.ShowSmartTag |
+|Esplora soluzioni|**CTRL+ALT+L**| View.SolutionExplorer |
+|SQL oggetti del server|**\\CTRL+, CTRL+S**| View.SQLServerObjectExplorer |
+|Elenco attività|**\\CTRL+, T**<br /><br /> oppure<br /><br /> **\\CTRL+, CTRL+T**| View.TaskList |
+|Team Explorer di TFS|**\\CTRL+, CTRL+M**| View.TfsTeamExplorer |
+|Casella degli strumenti|**CTRL+ALT+X**| View.Toolbox |
+|Esplora modelli UML|**\\CTRL+, CTRL+U**| View.UMLModelExplorer |
+|Visualizzare il codice|**F7**| View.ViewCode |
+|Progettazione vista|**MAIUSC+F7**| View.ViewDesigner |
+|Web browser|**CTRL+ALT+R**| View.WebBrowser |
+|Zoom avanti|**CTRL+MAIUSC+.**| View.ZoomIn |
+|Zoom indietro|**CTRL+MAIUSC+,**| View.ZoomOut |
+|Mostra Esplora test|**Ctrl+E, T**| TestExplorer.ShowTestExplorer |
 
 ### <a name="window"></a><a name="bkmk_window"></a> Finestra
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Window.ActivateDocumentWindow|**ESC**|
-|Window.AddTabtoSelection|**CTRL+MAIUSC+ALT+BARRA SPAZIATRICE**|
-|Window.CloseDocumentWindow|**CTRL+F4**|
-|Window.CloseToolWindow|**MAIUSC+ESC**|
-|Window.KeepTabOpen|**CTRL+ALT+HOME**|
-|Window.MovetoNavigationBar|**CTRL+F2**|
-|Window.NextDocumentWindow|**CTRL+F6**|
-|Window.NextDocumentWindowNav|**CTRL+TAB**|
-|Window.NextPane|**ALT+F6**|
-|Window.NextSplitPane|**F6**|
-|Window.NextTab|**CTRL+ALT+PGGIÙ**<br /><br /> oppure<br /><br /> **Ctrl+PgDn**|
-|Window.NextTabandAddtoSelection|**CTRL+MAIUSC+ALT+PGGIÙ**|
-|Window.NextToolWindowNav|**ALT+F7**|
-|Window.PreviousDocumentWindow|**CTRL+MAIUSC+F6**|
-|Window.PreviousDocumentWindowNav|**CTRL+MAIUSC+TAB**|
-|Window.PreviousPane|**MAIUSC+ALT+F6**|
-|Window.PreviousSplitPane|**MAIUSC+F6**|
-|Window.PreviousTab|**CTRL+ALT+PGSU**<br /><br /> oppure<br /><br /> **CTRL+PGSU**|
-|Window.PreviousTabandAddtoSelection|**CTRL+MAIUSC+ALT+PGSU**|
-|Window.PreviousToolWindowNav|**MAIUSC+ALT+F7**|
-|Window.QuickLaunch|**Ctrl+Q**|
-|Window.QuickLaunchPreviousCategory|**CTRL+MAIUSC+Q**|
-|Window.ShowDockMenu|**ALT+-**|
-|Window.ShowEzMDIFileList|**CTRL+ALT+Freccia GIÙ**|
-|Window.SolutionExplorerSearch|**CTRL+;**|
-|Window.WindowSearch|**ALT+'**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Attivare la finestra del documento|**ESC**| Window.ActivateDocumentWindow |
+|Aggiungi scheda alla selezione|**CTRL+MAIUSC+ALT+BARRA SPAZIATRICE**| Window.AddTabtoSelection |
+|Chiudere la finestra del documento|**CTRL+F4**| Window.CloseDocumentWindow |
+|Chiudere la finestra degli strumenti|**MAIUSC+ESC**| Window.CloseToolWindow |
+|Tenere aperta la scheda|**CTRL+ALT+HOME**| Window.KeepTabOpen |
+|Passare alla barra di spostamento|**CTRL+F2**| Window.MovetoNavigationBar |
+|Finestra del documento successiva|**CTRL+F6**| Window.NextDocumentWindow |
+|Spostamento successivo della finestra del documento|**CTRL+TAB**| Window.NextDocumentWindowNav |
+|Riquadro successivo|**ALT+F6**| Window.NextPane |
+|Riquadro di divisione successivo|**F6**| Window.NextSplitPane |
+|Scheda successiva|**CTRL+ALT+PGGIÙ**<br /><br /> oppure<br /><br /> **Ctrl+PgDn**| Window.NextTab |
+|Scheda Avanti e aggiungi alla selezione|**CTRL+MAIUSC+ALT+PGGIÙ**| Window.NextTabandAddtoSelection |
+|Spostamento successivo della finestra degli strumenti|**ALT+F7**| Window.NextToolWindowNav |
+|Finestra del documento precedente|**CTRL+MAIUSC+F6**| Window.PreviousDocumentWindow |
+|Spostamento della finestra del documento precedente|**CTRL+MAIUSC+TAB**| Window.PreviousDocumentWindowNav |
+|Riquadro precedente|**MAIUSC+ALT+F6**| Window.PreviousPane |
+|Riquadro di divisione precedente|**MAIUSC+F6**| Window.PreviousSplitPane |
+|Scheda precedente|**CTRL+ALT+PGSU**<br /><br /> oppure<br /><br /> **CTRL+PGSU**| Window.PreviousTab |
+|Scheda precedente e aggiunta alla selezione|**CTRL+MAIUSC+ALT+PGSU**| Window.PreviousTabandAddtoSelection |
+|Spostamento della finestra degli strumenti precedente|**MAIUSC+ALT+F7**| Window.PreviousToolWindowNav |
+|Avvio rapido|**Ctrl+Q**| Window.QuickLaunch |
+|Categoria precedente avvio veloce|**CTRL+MAIUSC+Q**| Window.QuickLaunchPreviousCategory |
+|Mostra menu ancoraggio|**ALT+-**| Window.ShowDockMenu |
+|Visualizzare l'elenco di file Ex MDI|**CTRL+ALT+FRECCIA GIÙ**| Window.ShowEzMDIFileList |
+|Ricerca in Esplora soluzioni|**CTRL+;**| Window.SolutionExplorerSearch |
+|Ricerca finestre|**ALT+'**| Window.WindowSearch |
 
 ### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|WindowsAzure.RetryMobileServiceScriptOperation|**CTRL+NUM, \* CTRL+R**|
-|WindowsAzure.ShowMobileServiceScriptErrorDetails|**CTRL+NUM, \* CTRL+D**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Ripetere l'operazione di script del servizio mobile|**CTRL+NUM, \* CTRL+R**| WindowsAzure.RetryMobileServiceScriptOperation |
+|Visualizzare i dettagli dell'errore dello script del servizio mobile|**CTRL+NUM, \* CTRL+D**| WindowsAzure.ShowMobileServiceScriptErrorDetails |
 
 ## <a name="context-specific-shortcuts"></a>Tasti di scelta rapida specifici del contesto
 
@@ -633,857 +627,857 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**ALT+Freccia GIÙ**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**ALT+PGGIÙ**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**ALT+FINE**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|**ALT+Home**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up|**ALT+freccia SU**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5|**ALT+PGSU**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|**CTRL+R, R**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram|**MAIUSC+CANC**|
-|View.EntityDataModelBrowser|**CTRL+1**|
-|View.EntityDataModelMappingDetails|**CTRL+2**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Giù|**ALT+freccia GIÙ**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down |
+|Giù 5|**ALT+PGGIÙ**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5 |
+|Verso il basso|**ALT+FINE**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom |
+|Verso l'alto|**ALT+Home**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop |
+|Su|**ALT+freccia SU**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up |
+|Fino a 5|**ALT+PGSU**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5 |
+|Rinominare|**CTRL+R, R**| OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename |
+|Rimuovi da diagramma|**MAIUSC+CANC**| OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram |
+|Browser del modello di dati di entità|**CTRL+1**| View.EntityDataModelBrowser |
+|Dettagli del mapping del modello di dati di entità|**CTRL+2**| View.EntityDataModelMappingDetails |
 
 ### <a name="class-diagram"></a>Diagramma classi
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|ClassDiagram.Collapse|**Num -**|
-|ClassDiagram.Expand|**NUM +**|
-|Edit.Delete|**CTRL+CANC**|
-|Edit.ExpandCollapseBaseTypeList|**MAIUSC+ALT+B**|
-|Edit.NavigateToLollipop|**MAIUSC+ALT+L**|
-|Edit.RemovefromDiagram|**Elimina**|
-|View.ViewCode|**INVIO**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Comprimi|**Num -**| ClassDiagram.Collapse |
+|Espandere|**NUM +**| ClassDiagram.Expand |
+|Elimina|**CTRL+CANC**| Edit.Delete |
+|Espandere l'elenco dei tipi di base compressi|**MAIUSC+ALT+B**| Edit.ExpandCollapseBaseTypeList |
+|Passare a lecca-lecca|**MAIUSC+ALT+L**| Edit.NavigateToLollipop |
+|Rimuovi da diagramma|**Elimina**| Edit.RemovefromDiagram |
+|Visualizzare il codice|**INVIO**| View.ViewCode |
 
 ### <a name="coded-ui-test-editor"></a>Editor test codificati dell'interfaccia utente
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**CTRL+C**|
-|OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**CTRL+ALT+D**|
-|OtherContextMenus.UITestEditorContextMenu.LocateAll|**MAIUSC+ALT+L**|
-|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**CTRL+MAIUSC+L**|
-|OtherContextMenus.UITestEditorContextMenu.Movecode|**CTRL+ALT+C**|
-|OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**CTRL+MAIUSC+T**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Copiare il riferimento negli Appunti|**CTRL+C**| OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard |
+|Ritardo inserimento prima|**CTRL+ALT+D**| OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore |
+|Individua tutto|**MAIUSC+ALT+L**| OtherContextMenus.UITestEditorContextMenu.LocateAll |
+|Individuare il controllo dell'interfaccia utente|**CTRL+MAIUSC+L**| OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl |
+|Spostare il codice|**CTRL+ALT+C**| OtherContextMenus.UITestEditorContextMenu.Movecode |
+|Divisione in un nuovo metodo|**CTRL+MAIUSC+T**| OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod |
 
 ### <a name="dataset-editor"></a>Editor DataSet
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|OtherContextMenus.ColumnContext.InsertColumn|**Inserimento**|
-|OtherContextMenus.DbTableContext.Add.Column|**CTRL+L**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Inserisci colonna|**Inserimento**| OtherContextMenus.ColumnContext.InsertColumn |
+|Colonna|**CTRL+L**| OtherContextMenus.DbTableContext.Add.Column |
 
 ### <a name="difference-viewer"></a>Visualizzatore differenze
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Diff.IgnoreTrimWhitespace|**\\CTRL+, CTRL+BARRA SPAZIATRICE**|
-|Diff.InlineView|**\\CTRL+, CTRL+1**|
-|Diff.LeftOnlyView|**\\CTRL+, CTRL+3**|
-|Diff.NextDifference|**F8**|
-|Diff.PreviousDifference|**MAIUSC+F8**|
-|Diff.RightOnlyView|**\\CTRL+, CTRL+4**|
-|Diff.SideBySideView|**\\CTRL+, CTRL+2**|
-|Diff.SwitchBetweenLeftAndRight|**\\CTRL+, CTRL+TAB**|
-|Diff.SynchronizeViewToggle|**\\CTRL+, CTRL+FRECCIA GIÙ**|
-|EditorContextMenus.CodeWindow.AddComment|**CTRL+MAIUSC+K**|
-|EditorContextMenus.CodeWindow.EditLocalFile|**CTRL+MAIUSC+P**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Ignora spazi vuoti di taglio|**\\CTRL+, CTRL+BARRA SPAZIATRICE**| Diff.IgnoreTrimWhitespace |
+|Visualizzazione inline|**\\CTRL+, CTRL+1**| Diff.InlineView |
+|Visualizzazione solo a sinistra|**\\CTRL+, CTRL+3**| Diff.LeftOnlyView |
+|Differenza successiva|**F8**| Diff.NextDifference |
+|Differenza precedente|**MAIUSC+F8**| Diff.PreviousDifference |
+|Visualizzazione solo a destra|**\\CTRL+, CTRL+4**| Diff.RightOnlyView |
+|Visualizzazione affiancata|**\\CTRL+, CTRL+2**| Diff.SideBySideView |
+|Passare da sinistra a destra|**\\CTRL+, CTRL+TAB**| Diff.SwitchBetweenLeftAndRight |
+|Interruttore Sincronizza visualizzazione|**\\CTRL+, CTRL+FRECCIA GIÙ**| Diff.SynchronizeViewToggle |
+|Aggiungi commento|**CTRL+MAIUSC+K**| EditorContextMenus.CodeWindow.AddComment |
+|Modificare il file locale|**CTRL+MAIUSC+P**| EditorContextMenus.CodeWindow.EditLocalFile |
 
 ### <a name="dom-explorer"></a>DOM Explorer
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|DOMExplorer.Refresh|**F5**|
-|DOMExplorer.SelectElement|**CTRL+B**|
-|DOMExplorer.ShowLayout|**CTRL+MAIUSC+I**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Aggiorna|**F5**| DOMExplorer.Refresh |
+|Seleziona elemento|**CTRL+B**| DOMExplorer.SelectElement |
+|Mostra layout|**CTRL+MAIUSC+I**| DOMExplorer.ShowLayout |
 
 ### <a name="f-interactive"></a>F# Interactive
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**CTRL+INTERR**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Annullare la valutazione interattiva|**CTRL+INTERR**| OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation |
 
 ### <a name="graph-document-editor"></a>Editor di documento grafico
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Inserimento**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**Ho**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**CTRL+MAIUSC+K**<br /><br /> oppure<br /><br /> **CTRL+E, C**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Elimina**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Aggiungere un nodo|**Inserimento**| ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode |
+|Entrambe le dipendenze|**B**| ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies |
+|Dipendenze in ingresso|**Ho**| ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies |
+|Dipendenze in uscita|**O**| ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies |
+|Nuovo commento|**CTRL+MAIUSC+K**<br /><br /> oppure<br /><br /> **CTRL+E, C**| ArchitectureContextMenus.DirectedGraphContextMenu.NewComment |
+|Rimuovi|**Elimina**| ArchitectureContextMenus.DirectedGraphContextMenu.Remove |
+|Rinominare|**F2**| ArchitectureContextMenus.DirectedGraphContextMenu.Rename |
 
 ### <a name="graphics-diagnostics"></a>Diagnostica grafica
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Debug.Graphics.CaptureFrame|Nessuno|
-|Graphics.MovePixelSelectionDown|**MAIUSC+ALT+Freccia GIÙ**|
-|Graphics.MovePixelSelectionLeft|**MAIUSC+ALT+freccia SINISTRA**|
-|Graphics.MovePixelSelectionRight|**MAIUSC+ALT+freccia DESTRA**|
-|Graphics.MovePixelSelectionUp|**MAIUSC+ALT+Freccia SU**|
-|Graphics.ZoomToActualSize|**MAIUSC+ALT+0** (zero)|
-|Graphics.ZoomToFitInWindow|**MAIUSC+ALT+9**|
-|Graphics.ZoomIn|**MAIUSC+ALT+=**|
-|Graphics.ZoomOut|**MAIUSC+ALT+-**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Frame di acquisizione|Nessuno| Debug.Graphics.CaptureFrame |
+|Spostare la selezione dei pixel verso il basso|**MAIUSC+ALT+Freccia GIÙ**| Graphics.MovePixelSelectionDown |
+|Spostare la selezione dei pixel a sinistra|**MAIUSC+ALT+freccia SINISTRA**| Graphics.MovePixelSelectionLeft |
+|Spostare la selezione dei pixel a destra|**MAIUSC+ALT+freccia DESTRA**| Graphics.MovePixelSelectionRight |
+|Spostare la selezione dei pixel verso l'alto|**MAIUSC+ALT+Freccia SU**| Graphics.MovePixelSelectionUp |
+|Fare zoom in base alla dimensione effettiva|**MAIUSC+ALT+0** (zero)| Graphics.ZoomToActualSize |
+|Adatta alla finestra|**MAIUSC+ALT+9**| Graphics.ZoomToFitInWindow |
+|Zoom avanti|**MAIUSC+ALT+=**| Graphics.ZoomIn |
+|Zoom indietro|**MAIUSC+ALT+-**| Graphics.ZoomOut |
 
 ### <a name="html-editor"></a>Editor HTML
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Passare al controller|**CTRL+M, CTRL+G**| OtherContextMenus.HTMLContext.GoToController |
 
 ### <a name="html-editor-design-view"></a>Visualizzazione Progettazione editor HTML
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.MoveControlDown|**CTRL+FRECCIA GIÙ**|
-|Edit.MoveControlUp|**CTRL+FRECCIA SU**|
-|Format.Bold|**CTRL+B**|
-|Format.ConverttoHyperlink|**CTRL+L**|
-|Format.InsertBookmark|**CTRL+MAIUSC+L**|
-|Format.Italic|**CTRL+I**|
-|Format.Underline|**CTRL+U**|
-|Project.AddContentPage|**CTRL+M, CTRL+C**|
-|Table.ColumntotheLeft|**CTRL+ALT+FRECCIA SINISTRA**|
-|Table.ColumntotheRight|**CTRL+ALT+Freccia DESTRA**|
-|Table.RowAbove|**CTRL+ALT+FRECCIA SU**|
-|Table.RowBelow|**CTRL+ALT+FRECCIA GIÙ**|
-|View.ASP.NETNonvisualControls|**CTRL+MAIUSC+N**|
-|View.EditMaster|**Ctrl+M, Ctrl+M**|
-|View.NextView|**Ctrl+PgDn**|
-|View.ShowSmartTag|**MAIUSC+ALT+F10**|
-|View.ViewMarkup|**MAIUSC+F7**|
-|Window.PreviousTab|**CTRL+PGSU**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Spostare il controllo verso il basso|**CTRL+Freccia GIÙ**| Edit.MoveControlDown |
+|Sposta controllo verso l'alto|**CTRL+Freccia SU**| Edit.MoveControlUp |
+|Bold|**CTRL+B**| Format.Bold |
+|Converti in collegamento ipertestuale|**CTRL+L**| Format.ConverttoHyperlink |
+|Inserisci segnalibro|**CTRL+MAIUSC+L**| Format.InsertBookmark |
+|Corsivo|**CTRL+I**| Format.Italic |
+|Sottolineato|**CTRL+U**| Format.Underline |
+|Pagina Aggiungi contenuto|**CTRL+M, CTRL+C**| Project.AddContentPage |
+|Colonna a sinistra|**CTRL+ALT+Freccia SINISTRA**| Table.ColumntotheLeft |
+|Colonna a destra|**CTRL+ALT+Freccia DESTRA**| Table.ColumntotheRight |
+|Riga sopra|**CTRL+ALT+Freccia SU**| Table.RowAbove |
+|Riga sotto|**CTRL+ALT+Freccia GIÙ**| Table.RowBelow |
+|Controlli net non visuali|**CTRL+MAIUSC+N**| View.ASP.NETNonvisualControls |
+|Modifica master|**Ctrl+M, Ctrl+M**| View.EditMaster |
+|Visualizzazione successiva|**Ctrl+PgDn**| View.NextView |
+|Mostra smart tag|**MAIUSC+ALT+F10**| View.ShowSmartTag |
+|Visualizzare il markup|**MAIUSC+F7**| View.ViewMarkup |
+|Scheda precedente|**CTRL+PGSU**| Window.PreviousTab |
 
 ### <a name="html-editor-source-view"></a>Visualizzazione origine editor HTML
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|
-|View.NextView|**Ctrl+PgDn**|
-|View.SynchronizeViews|**CTRL+MAIUSC+Y**|
-|View.ViewDesigner|**MAIUSC+F7**|
-|Window.PreviousTab|**CTRL+PGSU**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Passare al controller|**CTRL+M, CTRL+G**| OtherContextMenus.HTMLContext.GoToController |
+|Visualizzazione successiva|**Ctrl+PgDn**| View.NextView |
+|Sincronizzare le visualizzazioni|**CTRL+MAIUSC+Y**| View.SynchronizeViews |
+|Progettazione vista|**MAIUSC+F7**| View.ViewDesigner |
+|Scheda precedente|**CTRL+PGSU**| Window.PreviousTab |
 
 ### <a name="layer-diagram"></a>Diagramma livello
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|Edit.Delete|**MAIUSC+CANC**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Elimina|**MAIUSC+CANC**| Edit.Delete |
 
 ### <a name="managed-resources-editor"></a>Editor risorse gestite
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.EditCell|**F2**|
-|Edit.Remove|**Elimina**|
-|Edit.RemoveRow|**CTRL+CANC**|
-|Edit.SelectionCancel|**Carattere speciale di escape**|
-|Resources.Audio|**CTRL+4**|
-|Resources.Files|**CTRL+5**|
-|Resources.Icons|**CTRL+3**|
-|Resources.Images|**CTRL+2**|
-|Resources.Other|**CTRL+6**|
-|Resources.Strings|**CTRL+1**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Modifica cella|**F2**| Edit.EditCell |
+|Rimuovi|**Elimina**| Edit.Remove |
+|Remove row|**CTRL+CANC**| Edit.RemoveRow |
+|Annullamento della selezione|**Carattere speciale di escape**| Edit.SelectionCancel |
+|Audio|**CTRL+4**| Resources.Audio |
+|File|**CTRL+5**| Resources.Files |
+|Icone|**CTRL+3**| Resources.Icons |
+|Immagini|**CTRL+2**| Resources.Images |
+|Altro|**CTRL+6**| Resources.Other |
+|Stringhe|**CTRL+1**| Resources.Strings |
 
 ### <a name="merge-editor-window"></a>Finestra editor merge
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|**ALT+1**|
-|TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT+2**|
-|TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT+3**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Impostare lo stato attivo sulla finestra sinistra|**ALT+1**| TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow |
+|Impostare lo stato attivo sulla finestra dei risultati|**ALT+2**| TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow |
+|Impostare lo stato attivo sulla finestra a destra|**ALT+3**| TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow |
 
 ### <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, confronto schema
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|SQL.SSDTSchemaCompareCompare|**MAIUSC+ALT+C**|
-|SQL.SSDTSchemaCompareGenerateScript|**MAIUSC+ALT+G**|
-|SQL.SSDTSchemaCompareNextChange|**MAIUSC+ALT+.**|
-|SQL.SSDTSchemaComparePreviousChange|**MAIUSC+ALT+,**|
-|SQL.SSDTSchemaCompareStop|**ALT+INTERR**|
-|SQL.SSDTSchemaCompareWriteUpdates|**MAIUSC+ALT+U**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Confronto tra schemi SSDT|**MAIUSC+ALT+C**| SQL.SSDTSchemaCompareCompare |
+|Script di generazione del confronto di schemi SSDT|**MAIUSC+ALT+G**| SQL.SSDTSchemaCompareGenerateScript |
+|Confronto tra schemi SSDT e modifica successiva|**MAIUSC+ALT+.**| SQL.SSDTSchemaCompareNextChange |
+|Confronto tra schemi SSDT e modifiche precedenti|**MAIUSC+ALT+,**| SQL.SSDTSchemaComparePreviousChange |
+|Arresto confronto schema SSDT|**ALT+INTERR**| SQL.SSDTSchemaCompareStop |
+|Confronto tra schemi SSDT e aggiornamenti di scrittura|**MAIUSC+ALT+U**| SQL.SSDTSchemaCompareWriteUpdates |
 
 ### <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, progettazione tabelle
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
 |CommitAllEdits|**MAIUSC+ALT+U**|
-|SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+E**|
-|SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+Q**|
-|SQL.MovetoSchema|**CTRL+R, M**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+M**|
-|SQL.Rename|**F2**<br /><br /> oppure<br /><br /> **CTRL+R, R**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+R**|
-|ViewFileInScriptPanel|**MAIUSC+ALT+PGGIÙ**|
+|Espandere i caratteri jolly|**CTRL+R, E**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+E**| SQL.ExpandWildcards |
+|Nomi completi|**CTRL+R, Q**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+Q**| SQL.FullyqualifyNames |
+|Passare allo schema|**CTRL+R, M**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+M**| SQL.MovetoSchema |
+|Rinominare|**F2**<br /><br /> oppure<br /><br /> **CTRL+R, R**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+R**| SQL.Rename |
+|ViewFileInScriptPanel|**MAIUSC+ALT+PGGIÙ**| |
 
 ### <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
 |CommitAllEdits|**MAIUSC+ALT+U**|
-|SQL.ExecuteWithDebugger|**ALT+F5**|
-|SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+E**|
-|SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+Q**|
-|SQL.MovetoSchema|**CTRL+R, M**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+M**|
-|SQL.Rename|**F2**<br /><br /> oppure<br /><br /> **CTRL+R, R**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+R**|
-|SQL.TSqlEditorCancelQuery|**ALT+INTERR**|
-|SQL.TSqlEditorExecuteQuery|**CTRL+MAIUSC+E**|
-|SQL.TSqlEditorResultsAsFile|**CTRL+D, F**|
-|SQL.TSqlEditorResultsAsGrid|**CTRL+D, G**|
-|SQL.TSqlEditorResultsAsText|**CTRL+D, T**|
-|SQL.TSqlEditorShowEstimatedPlan|**CTRL+D, E**|
-|SQL.TSqlEditorToggleExecutionPlan|**CTRL+D, A**|
-|SQL.TSqlEditorToggleResultsPane|**CTRL+D, R**|
-|TSqlEditorCloneQuery|**CTRL+ALT+N**|
-|TSqlEditorDatabaseCombo|**MAIUSC+ALT+PGGIÙ**|
+|Eseguire con il debugger|**ALT+F5**| SQL.ExecuteWithDebugger |
+|Espandere i caratteri jolly|**CTRL+R, E**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+E**| SQL.ExpandWildcards |
+|Nomi completi|**CTRL+R, Q**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+Q**| SQL.FullyqualifyNames |
+|Passare allo schema|**CTRL+R, M**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+M**| SQL.MovetoSchema |
+|Rinominare|**F2**<br /><br /> oppure<br /><br /> **CTRL+R, R**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+R**| SQL.Rename |
+|Annullamento query SQL editor T|**ALT+INTERR**| SQL.TSqlEditorCancelQuery |
+|Query SQL'editor T|**CTRL+MAIUSC+E**| SQL.TSqlEditorExecuteQuery |
+|T SQL risultati dell'editor come file|**CTRL+D, F**| SQL.TSqlEditorResultsAsFile |
+|T SQL risultati dell'editor come griglia|**CTRL+D, G**| SQL.TSqlEditorResultsAsGrid |
+|T SQL risultati dell'editor come testo|**CTRL+D, T**| SQL.TSqlEditorResultsAsText |
+|T SQL editor mostra piano stimato|**CTRL+D, E**| SQL.TSqlEditorShowEstimatedPlan |
+|Editor di SQL attiva/disattiva piano di esecuzione|**CTRL+D, A**| SQL.TSqlEditorToggleExecutionPlan |
+|Riquadro SQL dei risultati dell'editor T|**CTRL+D, R**| SQL.TSqlEditorToggleResultsPane |
+|Query clone SQL editor T|**CTRL+ALT+N**|SQL. TSqlEditorCloneQuery |
+|Casella combinata SQL database dell'editor T|**MAIUSC+ALT+PGGIÙ**|SQL. TSqlEditorDatabaseCombo |
 
 ### <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL PDW
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|SQL.TSqlEditorCancelQuery|**ALT+INTERR**|
-|SQL.TSqlEditorExecuteQuery|**CTRL+MAIUSC+E**|
-|SQL.TSqlEditorResultsAsFile|**CTRL+D, F**|
-|SQL.TSqlEditorResultsAsGrid|**CTRL+D, G**|
-|SQL.TSqlEditorResultsAsText|**CTRL+D, T**|
-|SQL.TSqlEditorShowEstimatedPlan|**CTRL+D, E**|
-|SQL.TSqlEditorToggleExecutionPlan|**CTRL+D, A**|
-|SQL.TSqlEditorToggleResultsPane|**CTRL+D, R**|
-|TSqlEditorCloneQuery|**CTRL+ALT+N**|
-|TSqlEditorDatabaseCombo|**MAIUSC+ALT+PGGIÙ**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Annullamento query SQL editor T|**ALT+INTERR**| SQL.TSqlEditorCancelQuery |
+|Query SQL'editor T|**CTRL+MAIUSC+E**| SQL.TSqlEditorExecuteQuery |
+|T SQL risultati dell'editor come file|**CTRL+D, F**| SQL.TSqlEditorResultsAsFile |
+|T SQL risultati dell'editor come griglia|**CTRL+D, G**| SQL.TSqlEditorResultsAsGrid |
+|T SQL risultati dell'editor come testo|**CTRL+D, T**| SQL.TSqlEditorResultsAsText |
+|T SQL editor mostra piano stimato|**CTRL+D, E**| SQL.TSqlEditorShowEstimatedPlan |
+|Editor di SQL attiva/disattiva piano di esecuzione|**CTRL+D, A**| SQL.TSqlEditorToggleExecutionPlan |
+|Riquadro SQL dei risultati dell'editor T|**CTRL+D, R**| SQL.TSqlEditorToggleResultsPane |
+|Query clone SQL editor T|**CTRL+ALT+N**|SQL. TSqlEditorCloneQuery |
+|Query clone SQL editor T|**MAIUSC+ALT+PGGIÙ**|SQL. TSqlEditorCloneQuery |
 
 ### <a name="page-inspector"></a>Controllo pagina
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|PageInspector.Minimize|**F12**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Riduci|**F12**| PageInspector.Minimize |
 
 ### <a name="query-designer"></a>Progettazione query
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|QueryDesigner.CancelRetrievingData|**CTRL+T**|
-|QueryDesigner.Criteria|**CTRL+2**|
-|QueryDesigner.Diagram|**CTRL+1**|
-|QueryDesigner.ExecuteSQL|**CTRL+R**|
-|QueryDesigner.GotoRow|**CTRL+G**|
-|QueryDesigner.JoinMode|**CTRL+MAIUSC+J**|
-|QueryDesigner.Results|**CTRL+4**|
-|QueryDesigner.SQL|**CTRL+3**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Annullare il recupero dei dati|**CTRL+T**| QueryDesigner.CancelRetrievingData |
+|Criteri|**CTRL+2**| QueryDesigner.Criteria |
+|Diagramma|**CTRL+1**| QueryDesigner.Diagram |
+|Esegui SQL|**CTRL+R**| QueryDesigner.ExecuteSQL |
+|Goto row|**CTRL+G**| QueryDesigner.GotoRow |
+|Modalità join|**CTRL+MAIUSC+J**| QueryDesigner.JoinMode |
+|Risultati|**CTRL+4**| QueryDesigner.Results |
+|Sql|**CTRL+3**| QueryDesigner.SQL |
 
 ### <a name="query-results"></a>Risultati query
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|SQL.QueryResultsNewRow|**ALT+FINE**|
-|SQL.QueryResultsRefresh|**MAIUSC+ALT+R**|
-|SQL.QueryResultsStop|**ALT+INTERR**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Nuova riga dei risultati della query|**ALT+FINE**| SQL.QueryResultsNewRow |
+|Aggiornamento dei risultati della query|**MAIUSC+ALT+R**| SQL.QueryResultsRefresh |
+|Interruzione dei risultati della query|**ALT+INTERR**| SQL.QueryResultsStop |
 
 ### <a name="report-designer"></a>Progettazione report
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.BreakLine|**INVIO**|
-|Edit.CharLeft|**Freccia SINISTRA**|
-|Edit.CharLeftExtend|**MAIUSC+Freccia SINISTRA**|
-|Edit.CharRight|**Freccia DESTRA**|
-|Edit.CharRightExtend|**MAIUSC+Freccia DESTRA**|
-|Edit.InsertTab|**TAB**|
-|Edit.LineDown|**Freccia GIÙ**|
-|Edit.LineDownExtend|**MAIUSC+freccia GIÙ**|
-|Edit.LineUp|**Freccia SU**|
-|Edit.LineUpExtend|**MAIUSC+freccia SU**|
-|Edit.MoveControlDown|**CTRL+FRECCIA GIÙ**|
-|Edit.MoveControlLeft|**CTRL+FRECCIA SINISTRA**|
-|Edit.MoveControlRight|**CTRL+FRECCIA DESTRA**|
-|Edit.MoveControlUp|**CTRL+FRECCIA SU**|
-|Edit.SelectionCancel|**ESC**|
-|Edit.SizeControlDown|**CTRL+MAIUSC+freccia GIÙ**|
-|Edit.SizeControlLeft|**CTRL+MAIUSC+Freccia SINISTRA**|
-|Edit.SizeControlRight|**CTRL+MAIUSC+freccia DESTRA**|
-|Edit.SizeControlUp|**CTRL+MAIUSC+FRECCIA SU**|
-|Edit.TabLeft|**MAIUSC+TAB**|
-|View.ReportData|**CTRL+ALT+D**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Interrompi riga|**INVIO**| Edit.BreakLine |
+|Carattere a sinistra|**Freccia SINISTRA**| Edit.CharLeft |
+|Estensione a sinistra dei caratteri|**MAIUSC+Freccia SINISTRA**| Edit.CharLeftExtend |
+|Carattere a destra|**Freccia DESTRA**| Edit.CharRight |
+|Estensione a destra dei caratteri|**MAIUSC+Freccia DESTRA**| Edit.CharRightExtend |
+|Scheda Inserisci|**TAB**| Edit.InsertTab |
+|Giù di una riga|**Freccia GIÙ**| Edit.LineDown |
+|Estensione linea verso il basso|**MAIUSC+Freccia GIÙ**| Edit.LineDownExtend |
+|Su di una riga|**Freccia SU**| Edit.LineUp |
+|Estensione della linea verso l'alto|**MAIUSC+Freccia SU**| Edit.LineUpExtend |
+|Spostare il controllo verso il basso|**CTRL+Freccia GIÙ**| Edit.MoveControlDown |
+|Sposta il controllo a sinistra|**CTRL+Freccia SINISTRA**| Edit.MoveControlLeft |
+|Spostare il controllo a destra|**CTRL+Freccia DESTRA**| Edit.MoveControlRight |
+|Sposta controllo verso l'alto|**CTRL+Freccia SU**| Edit.MoveControlUp |
+|Annullamento della selezione|**ESC**| Edit.SelectionCancel |
+|Controllo delle dimensioni in basso|**CTRL+MAIUSC+Freccia GIÙ**| Edit.SizeControlDown |
+|Controllo delle dimensioni a sinistra|**CTRL+MAIUSC+Freccia SINISTRA**| Edit.SizeControlLeft |
+|Controllo delle dimensioni a destra|**CTRL+MAIUSC+Freccia DESTRA**| Edit.SizeControlRight |
+|Controllo delle dimensioni in alto|**CTRL+MAIUSC+freccia SU**| Edit.SizeControlUp |
+|Tabulazione a sinistra|**MAIUSC+TAB**| Edit.TabLeft |
+|Dati di report|**CTRL+ALT+D**| View.ReportData |
 
 ### <a name="sequence-diagram"></a>Diagramma sequenza
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
-|Edit.Delete|**MAIUSC+CANC**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Passare al codice|**F12**| ArchitectureDesigner.Sequence.NavigateToCode |
+|Elimina|**MAIUSC+CANC**| Edit.Delete |
 
 ### <a name="settings-designer"></a>Progettazione impostazioni
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.EditCell|**F2**|
-|Edit.RemoveRow|**CTRL+CANC**|
-|Edit.SelectionCancel|**ESC**|
-|View.ViewCode|**F7**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Modifica cella|**F2**| Edit.EditCell |
+|Remove row|**CTRL+CANC**| Edit.RemoveRow |
+|Annullamento della selezione|**ESC**| Edit.SelectionCancel |
+|Visualizzare il codice|**F7**| View.ViewCode |
 
 ### <a name="solution-explorer"></a>Esplora soluzioni
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**CTRL+K, CTRL+G**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Visualizzazione nel controllo pagina|**CTRL+K, CTRL+G**| ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector |
 
 ### <a name="team-explorer"></a>Team Explorer
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|Edit.Delete|**Elimina**|
-|File.Rename|**F2**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**ALT+Home**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT+freccia GIÙ**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT+0** (zero)|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**ALT+freccia SU**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**ALT+1**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**ALT+2**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection3Content|**ALT+3**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection4Content|**ALT+4**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection5Content|**ALT+5**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection6Content|**ALT+6**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection7Content|**ALT+7**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection8Content|**ALT+8**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection9Content|**ALT+9**|
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|**ALT+freccia SINISTRA**|
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**ALT+freccia DESTRA**|
-|TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**MAIUSC+ALT+C**|
-|TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**MAIUSC+ALT+L**|
-|View.Refresh|**F5**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Elimina|**Elimina**| Edit.Delete |
+|Rinominare|**F2**| File.Rename |
+|Passare al riquadro di spostamento di Team Explorer|**ALT+Home**| TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation |
+|Passare al contenuto della sezione successiva di Team Explorer|**ALT+Freccia GIÙ**| TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent |
+|Passare al contenuto della pagina team explorer|**ALT+0** (zero)| TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent |
+|Passare al contenuto della sezione precedente di Team Explorer|**ALT+freccia SU**| TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent |
+|Passare al contenuto della sezione 1 di Team Explorer|**ALT+1**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content |
+|Passare al contenuto della sezione 2 di Team Explorer|**ALT+2**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content |
+|Passare al contenuto della sezione 3 di Team Explorer|**ALT+3**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection3Content |
+|Passare al contenuto della sezione 4 di Team Explorer|**ALT+4**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection4Content |
+|Passare al contenuto della sezione 5 di Team Explorer|**ALT+5**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection5Content |
+|Passare al contenuto della sezione 6 di Team Explorer|**ALT+6**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection6Content |
+|Passare al contenuto della sezione 7 di Team Explorer|**ALT+7**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection7Content |
+|Passare al contenuto della sezione 8 di Team Explorer|**ALT+8**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection8Content |
+|Passare al contenuto della sezione 9 di Team Explorer|**ALT+9**| TeamFoundationContextMenus.Commands.GoToTeamExplorerSection9Content |
+|Esplora team consente di spostarsi all'indietro|**ALT+freccia SINISTRA**| TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward |
+|Esplora team consente di spostarsi in avanti|**ALT+freccia DESTRA**| TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward |
+|Contesto TFS la pagina di lavoro crea copia wi|**MAIUSC+ALT+C**| TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI |
+|Contesto TFS nuova pagina di lavoro collegata wi|**MAIUSC+ALT+L**| TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI |
+|Aggiorna|**F5**| View.Refresh |
 
 ### <a name="test-explorer"></a>Esplora test
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|TestExplorer.OpenTest|**F12**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Aprire il test|**F12**| TestExplorer.OpenTest |
 
 ### <a name="text-editor"></a>Editor di testo
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-| Comandi | Scelte rapide da tastiera |
-| - | - |
-| Edit.BreakLine | **INVIO**<br /><br /> oppure<br /><br /> **MAIUSC+INVIO** |
-| Edit.CharLeft | **Freccia SINISTRA** |
-| Edit.CharLeftExtend | **MAIUSC+freccia SINISTRA** |
-| Edit.CharLeftExtendColumn | **MAIUSC+ALT+freccia SINISTRA** |
-| Edit.CharRight | **Freccia DESTRA** |
-| Edit.CharRightExtend | **MAIUSC+freccia DESTRA** |
-| Edit.CharRightExtendColumn | **MAIUSC+ALT+freccia DESTRA** |
-| Edit.ClearBookmarks | **Ctrl+K, Ctrl+L** |
-| Edit.CollapseAllOutlining | **Ctrl+M, Ctrl+A** |
-| Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
-| Edit.CollapseTag | **CTRL+M, CTRL+T** |
-| Edit.CollapseToDefinitions | **CTRL+M, CTRL+O** (lettera "O") |
-| Edit.ContractSelection | **MAIUSC+ALT+-** |
-| Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
-| Edit.CompleteWord | **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+freccia DESTRA** |
-| Edit.CopyParameterTip | **CTRL+MAIUSC+ALT+C** |
-| Edit.DecreaseFilterLevel | **ALT+,** |
-| Edit.DeleteBackwards | **Backspace**<br /><br /> oppure<br /><br /> **MAIUSC+BACKSPACE** |
-| Edit.DeleteHorizontalWhiteSpace | **Ctrl+K, Ctrl+\\** |
-| Edit.DocumentEnd | **CTRL+FINE** |
-| Edit.DocumentEndExtend | **CTRL+MAIUSC+FINE** |
-| Edit.DocumentStart | **CTRL+HOME** |
-| Edit.DocumentStartExtend | **CTRL+MAIUSC+HOME** |
-| Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
-| Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
-| Edit.ExpandSelection | **MAIUSC+ALT+=** |
-| Edit.ExpandSelectiontoContainingBlock | **MAIUSC+ALT+]** |
-| Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
-| Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
-| Edit.GotoAll | **CTRL+T**<br /><br /> oppure<br /><br /> **CTRL+,** |
-| Edit.GotoBrace | **CTRL+]** |
-| Edit.GotoBraceExtend | **CTRL+MAIUSC+]** |
-| Edit.GotoRecent | **CTRL+T,R** |
-| Edit.GotoNextIssueinFile | **ALT+PGGIÙ** |
-| Edit.GotoPreviousIssueinFile | **ALT+PGSU** |
-| Edit.HideSelection | **Ctrl+M, Ctrl+H** |
-| Edit.IncreaseFilterLevel | **ALT+.** |
-| Edit.IncrementalSearch | **CTRL+I** |
-| Edit.InsertCaretsatAllMatching | **MAIUSC+ALT+;** |
-| Edit.InsertNextMatchingCaret | **MAIUSC+ALT+.** |
-| Edit.InsertTab | **TAB** |
-| Edit.LineCut | **CTRL+L** |
-| Edit.LineDelete | **CTRL+MAIUSC+L** |
-| Edit.LineDown | **Freccia GIÙ** |
-| Edit.LineDownExtend | **MAIUSC+Freccia GIÙ** |
-| Edit.LineDownExtendColumn | **MAIUSC+ALT+Freccia GIÙ** |
-| Edit.LineEnd | **Fine** |
-| Edit.LineEndExtend | **MAIUSC+FINE** |
-| Edit.LineEndExtendColumn | **MAIUSC+ALT+FINE** |
-| Edit.LineOpenAbove | **CTRL+INVIO** |
-| Edit.LineOpenBelow | **CTRL+MAIUSC+INVIO** |
-| Edit.LineStart | **Home** |
-| Edit.LineStartExtend | **MAIUSC+HOME** |
-| Edit.LineStartExtendColumn | **MAIUSC+ALT+HOME** |
-| Edit.LineTranspose | **MAIUSC+ALT+T** |
-| Edit.LineUp | **Freccia SU** |
-| Edit.LineUpExtend | **MAIUSC+Freccia SU** |
-| Edit.LineUpExtendColumn | **MAIUSC+ALT+Freccia SU** |
-| Edit.ListMembers | **CTRL+J** |
-| Edit.MakeLowercase | **CTRL+U** |
-| Edit.MakeUppercase | **CTRL+MAIUSC+U** |
-| Edit.MoveSelectedLinesDown | **ALT+Freccia GIÙ** |
-| Edit.MoveSelectedLinesUp | **ALT+freccia SU** |
-| Edit.NextHighlightedReference | **CTRL+MAIUSC+Freccia GIÙ** |
-| Edit.OvertypeMode | **Inserimento** |
-| Edit.PageDown | **PGGIÙ** |
-| Edit.PageDownExtend | **MAIUSC+PgDn** |
-| Edit.PageUp | **PGSU** |
-| Edit.PageUpExtend | **MAIUSC+PGSU** |
-| Edit.ParameterInfo | **CTRL+MAIUSC+BARRA SPAZIATRICE** |
-| Edit.PasteParameterTip | **CTRL+MAIUSC+ALT+P** |
-| Edit.PeekBackward | **CTRL+ALT+-** |
-| Edit.PeekDefinition | **ALT+F12** |
-| Edit.PeekForward | **CTRL+ALT+=** |
-| Edit.PreviousHighlightedReference | **CTRL+MAIUSC+freccia SU** |
-| Edit.QuickInfo | **Ctrl+K, Ctrl+I** |
-| Edit.ReverseIncrementalSearch | **CTRL+MAIUSC+I** |
-| Edit.ScrollLineDown | **CTRL+Freccia GIÙ** |
-| Edit.ScrollLineUp | **CTRL+Freccia SU** |
-| Edit.SelectCurrentWord | **CTRL+W** |
-| Edit.SelectionCancel | **Carattere speciale di escape** |
-| Edit.SelectToLastGoBack | **CTRL+=** |
-| Edit.ShowCodeLensMenu | **Ctrl+K, Ctrl+\`** |
-| Edit.ShowNavigateMenu | **ALT+\`** |
-| Edit.StopHidingCurrent | **Ctrl+M, Ctrl+U** |
-| Edit.StopOutlining | **Ctrl+M, Ctrl+P** |
-| Edit.SwapAnchor | **Ctrl+K, Ctrl+A** |
-| Edit.TabLeft | **MAIUSC+TAB** |
-| Edit.ToggleAllOutlining | **Ctrl+M, Ctrl+L** |
-| Edit.ToggleBookmark | **Ctrl+K, Ctrl+K** |
-| Edit.ToggleCompletionMode | **CTRL+ALT+BARRA SPAZIATRICE** |
-| Edit.ToggleOutliningExpansion | **Ctrl+M, Ctrl+M** |
-| Edit.ToggleTaskListShortcut | **Ctrl+K, Ctrl+H** |
-| Edit.ToggleWordWrap | **CTRL+E, CTRL+W** |
-| Edit.UncommentSelection | **Ctrl+K, Ctrl+U** |
-| Edit.ViewBottom | **Ctrl+PgDn** |
-| Edit.ViewBottomExtend | **Ctrl+Maiusc+PgDn** |
-| Edit.ViewTop | **CTRL+PGSU** |
-| Edit.ViewTopExtend | **CTRL+MAIUSC+PGSU** |
-| Edit.ViewWhiteSpace | **Ctrl+R, Ctrl+W** |
-| Edit.WordDeleteToEnd | **CTRL+CANC** |
-| Edit.WordDeleteToStart | **CTRL+BACKSPACE** |
-| Edit.WordNext | **CTRL+FRECCIA DESTRA** |
-| Edit.WordNextExtend | **CTRL+MAIUSC+freccia DESTRA** |
-| Edit.WordNextExtendColumn | **CTRL+MAIUSC+ALT+Freccia DESTRA** |
-| Edit.WordPrevious | **CTRL+FRECCIA SINISTRA** |
-| Edit.WordPreviousExtend | **CTRL+MAIUSC+Freccia SINISTRA** |
-| Edit.WordPreviousExtendColumn | **CTRL+MAIUSC+ALT+Freccia SINISTRA** |
-| Edit.WordTranspose | **CTRL+MAIUSC+T** |
-| EditorContextMenus.CodeWindow.ExecuteInInteractive | **ALT+INVIO** |
-| EditorContextMenus.CodeWindow.ExecuteLineInInteractive | **ALT+'** |
-| OtherContextMenus.HTMLContext.ViewinPageInspector | **CTRL+K, CTRL+G** |
-| TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **ALT+PGGIÙ** |
-| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **ALT+PGSU** |
+| Comandi | Scelte rapide da tastiera |ID comando|
+|-|-|-|
+|Riga di interruzione| **INVIO**<br /><br /> oppure<br /><br /> **MAIUSC+INVIO** | Edit.BreakLine |
+|Carattere a sinistra| **Freccia SINISTRA** | Edit.CharLeft |
+|Estensione a sinistra del carattere| **MAIUSC+freccia SINISTRA** | Edit.CharLeftExtend |
+|Colonna di estensione a sinistra del carattere| **MAIUSC+ALT+freccia SINISTRA** | Edit.CharLeftExtendColumn |
+|Carattere a destra| **Freccia DESTRA** | Edit.CharRight |
+|Estensione a destra del carattere| **MAIUSC+freccia DESTRA** | Edit.CharRightExtend |
+|Colonna di estensione a destra del carattere| **MAIUSC+ALT+freccia DESTRA** | Edit.CharRightExtendColumn |
+|Cancellare segnalibri| **Ctrl+K, Ctrl+L** | Edit.ClearBookmarks |
+|Comprimi tutte le struttura| **Ctrl+M, Ctrl+A** | Edit.CollapseAllOutlining |
+|Comprimi area corrente| **Ctrl+M, Ctrl+S** | Edit.CollapseCurrentRegion |
+|Comprimi tag| **CTRL+M, CTRL+T** | Edit.CollapseTag |
+|Comprimi in definizioni| **CTRL+M, CTRL+O** (lettera "O") | Edit.CollapseToDefinitions |
+|Comprimere la selezione| **MAIUSC+ALT+-** | Edit.ContractSelection |
+|Selezione dei commenti| **Ctrl+K, Ctrl+C** | Edit.CommentSelection |
+|Completare una parola| **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+freccia DESTRA** | Edit.CompleteWord |
+|Copiare il suggerimento sul parametro| **CTRL+MAIUSC+ALT+C** | Edit.CopyParameterTip |
+|Ridurre il livello di filtro| **ALT+,** | Edit.DecreaseFilterLevel |
+|Eliminare all'indietro| **Backspace**<br /><br /> oppure<br /><br /> **MAIUSC+BACKSPACE** | Edit.DeleteBackwards |
+|Eliminare gli spazi vuoti orizzontali| **Ctrl+K, Ctrl+\\** | Edit.DeleteHorizontalWhiteSpace |
+|Fine del documento| **CTRL+FINE** | Edit.DocumentEnd |
+|Estensione della fine del documento| **CTRL+MAIUSC+FINE** | Edit.DocumentEndExtend |
+|Inizio documento| **CTRL+HOME** | Edit.DocumentStart |
+|Estensione dell'inizio del documento| **CTRL+MAIUSC+HOME** | Edit.DocumentStartExtend |
+|Espandere tutte le struttura| **Ctrl+M, Ctrl+X** | Edit.ExpandAllOutlining |
+|Espandere l'area corrente| **Ctrl+M, Ctrl+E** | Edit.ExpandCurrentRegion |
+|Espandere la selezione| **MAIUSC+ALT+=** | Edit.ExpandSelection |
+|Espandere la selezione fino al blocco contenitore| **MAIUSC+ALT+]** | Edit.ExpandSelectiontoContainingBlock |
+|Formatta documento| **Ctrl+K, Ctrl+D** | Edit.FormatDocument |
+|Selezione di Formatta| **Ctrl+K, Ctrl+F** | Edit.FormatSelection |
+|Goto all| **CTRL+T**<br /><br /> oppure<br /><br /> **CTRL+,** | Edit.GotoAll |
+|Parentesi graffa Goto| **CTRL+]** | Edit.GotoBrace |
+|Estensione della parentesi graffa Goto| **CTRL+MAIUSC+]** | Edit.GotoBraceExtend |
+|Goto recent| **CTRL+T,R** | Edit.GotoRecent |
+|Problema successivo goto nel file| **ALT+PGGIÙ** | Edit.GotoNextIssueinFile |
+|Problema precedente di Goto nel file| **ALT+PGSU** | Edit.GotoPreviousIssueinFile |
+|Nascondere la selezione| **Ctrl+M, Ctrl+H** | Edit.HideSelection |
+|Aumentare il livello di filtro| **ALT+.** | Edit.IncreaseFilterLevel |
+|Ricerca incrementale| **CTRL+I** | Edit.IncrementalSearch |
+|Inserire i caratteri di inserimento in corrispondenza di tutte le corrispondenze| **MAIUSC+ALT+;** | Edit.InsertCaretsatAllMatching |
+|Inserire il successivo caret corrispondente| **MAIUSC+ALT+.** | Edit.InsertNextMatchingCaret |
+|Scheda Inserisci| **TAB** | Edit.InsertTab |
+|Linea tagliata| **CTRL+L** | Edit.LineCut |
+|Eliminazione riga| **CTRL+MAIUSC+L** | Edit.LineDelete |
+|Giù di una riga| **Freccia GIÙ** | Edit.LineDown |
+|Estensione linea verso il basso| **MAIUSC+freccia GIÙ** | Edit.LineDownExtend |
+|Colonna estensione linea verso il basso| **MAIUSC+ALT+Freccia GIÙ** | Edit.LineDownExtendColumn |
+|Fine riga| **Fine** | Edit.LineEnd |
+|Estensione dell'estremità della linea| **MAIUSC+FINE** | Edit.LineEndExtend |
+|Colonna estensione fine riga| **MAIUSC+ALT+FINE** | Edit.LineEndExtendColumn |
+|Riga aperta sopra| **CTRL+INVIO** | Edit.LineOpenAbove |
+|Riga aperta sotto| **CTRL+MAIUSC+INVIO** | Edit.LineOpenBelow |
+|Inizio riga| **Home** | Edit.LineStart |
+|Estensione dell'inizio riga| **MAIUSC+HOME** | Edit.LineStartExtend |
+|Colonna estensione inizio riga| **MAIUSC+ALT+HOME** | Edit.LineStartExtendColumn |
+|Trasposizione di righe| **MAIUSC+ALT+T** | Edit.LineTranspose |
+|Su di una riga| **Freccia SU** | Edit.LineUp |
+|Estensione line-up| **MAIUSC+freccia SU** | Edit.LineUpExtend |
+|Colonna di estensione line-up| **MAIUSC+ALT+Freccia SU** | Edit.LineUpExtendColumn |
+|Elencare i membri| **CTRL+J** | Edit.ListMembers |
+|Creare lettere minuscole| **CTRL+U** | Edit.MakeLowercase |
+|Rendere maiuscolo| **CTRL+MAIUSC+U** | Edit.MakeUppercase |
+|Spostare le righe selezionate verso il basso| **ALT+freccia GIÙ** | Edit.MoveSelectedLinesDown |
+|Spostare le righe selezionate verso l'alto| **ALT+freccia SU** | Edit.MoveSelectedLinesUp |
+|Riferimento evidenziato successivo| **CTRL+MAIUSC+freccia GIÙ** | Edit.NextHighlightedReference |
+|Modalità sovrascritta| **Inserimento** | Edit.OvertypeMode |
+|Giù di una pagina| **PGGIÙ** | Edit.PageDown |
+|Pagina successiva estendere| **MAIUSC+PgDn** | Edit.PageDownExtend |
+|Su di una pagina| **PGSU** | Edit.PageUp |
+|Pagina precedente estendere| **MAIUSC+PGSU** | Edit.PageUpExtend |
+|Informazioni sui parametri| **CTRL+MAIUSC+BARRA SPAZIATRICE** | Edit.ParameterInfo |
+|Incollare il suggerimento sul parametro| **CTRL+MAIUSC+ALT+P** | Edit.PasteParameterTip |
+|Visualizzare all'indietro| **CTRL+ALT+-** | Edit.PeekBackward |
+|Visualizzare la definizione| **ALT+F12** | Edit.PeekDefinition |
+|Anteprima| **CTRL+ALT+=** | Edit.PeekForward |
+|Riferimento evidenziato precedente| **CTRL+MAIUSC+FRECCIA SU** | Edit.PreviousHighlightedReference |
+|Informazioni rapide| **Ctrl+K, Ctrl+I** | Edit.QuickInfo |
+|Ricerca incrementale inversa| **CTRL+MAIUSC+I** | Edit.ReverseIncrementalSearch |
+|Scorrere la riga verso il basso| **CTRL+FRECCIA GIÙ** | Edit.ScrollLineDown |
+|Scorrere la riga verso l'alto| **CTRL+FRECCIA SU** | Edit.ScrollLineUp |
+|Selezionare la parola corrente| **CTRL+W** | Edit.SelectCurrentWord |
+|Annullamento della selezione| **Carattere speciale di escape** | Edit.SelectionCancel |
+|Selezionare per tornare indietro per l'ultima volta| **CTRL+=** | Edit.SelectToLastGoBack |
+|Menu Mostra obiettivo codice| **Ctrl+K, Ctrl+\`** | Edit.ShowCodeLensMenu |
+|Mostra menu di navigazione| **ALT+\`** | Edit.ShowNavigateMenu |
+|Interrompi nascondi corrente| **Ctrl+M, Ctrl+U** | Edit.StopHidingCurrent |
+|Interrompere la struttura| **Ctrl+M, Ctrl+P** | Edit.StopOutlining |
+|Scambiare l'ancoraggio| **Ctrl+K, Ctrl+A** | Edit.SwapAnchor |
+|Scheda a sinistra| **MAIUSC+TAB** | Edit.TabLeft |
+|Attiva/Disattiva tutte le struttura| **Ctrl+M, Ctrl+L** | Edit.ToggleAllOutlining |
+|Attiva/disattiva il segnalibro| **Ctrl+K, Ctrl+K** | Edit.ToggleBookmark |
+|Attivare/disattivare la modalità di completamento| **CTRL+ALT+BARRA SPAZIATRICE** | Edit.ToggleCompletionMode |
+|Attivare/disattivare l'espansione della struttura| **Ctrl+M, Ctrl+M** | Edit.ToggleOutliningExpansion |
+|Attivare o disattivare il collegamento all'elenco attività| **Ctrl+K, Ctrl+H** | Edit.ToggleTaskListShortcut |
+|Attivare o disattivare il ritorno a capo automatico| **CTRL+E, CTRL+W** | Edit.ToggleWordWrap |
+|Rimuovere il commento dalla selezione| **Ctrl+K, Ctrl+U** | Edit.UncommentSelection |
+|Visualizza in basso| **Ctrl+PgDn** | Edit.ViewBottom |
+|Visualizzare l'estensione inferiore| **Ctrl+Maiusc+PgDn** | Edit.ViewBottomExtend |
+|Visualizza in alto| **CTRL+PGSU** | Edit.ViewTop |
+|Visualizzare l'estensione superiore| **CTRL+MAIUSC+PGSU** | Edit.ViewTopExtend |
+|Visualizzare gli spazi vuoti| **Ctrl+R, Ctrl+W** | Edit.ViewWhiteSpace |
+|Eliminazione di word fino alla fine| **CTRL+CANC** | Edit.WordDeleteToEnd |
+|Eliminazione di word per iniziare| **CTRL+BACKSPACE** | Edit.WordDeleteToStart |
+|Parola successiva| **CTRL+FRECCIA DESTRA** | Edit.WordNext |
+|Estensione successiva di Word| **CTRL+MAIUSC+freccia DESTRA** | Edit.WordNextExtend |
+|Colonna di estensione successiva di Word| **CTRL+MAIUSC+ALT+Freccia DESTRA** | Edit.WordNextExtendColumn |
+|Parola precedente| **CTRL+FRECCIA SINISTRA** | Edit.WordPrevious |
+|Estensione precedente di Word| **CTRL+MAIUSC+Freccia SINISTRA** | Edit.WordPreviousExtend |
+|Colonna di estensione precedente di Word| **CTRL+MAIUSC+ALT+Freccia SINISTRA** | Edit.WordPreviousExtendColumn |
+|Trasposizione di parole| **CTRL+MAIUSC+T** | Edit.WordTranspose |
+|Eseguire in modalità interattiva| **ALT+INVIO** | EditorContextMenus.CodeWindow.ExecuteInInteractive |
+|Eseguire una riga in modo interattivo| **ALT+'** | EditorContextMenus.CodeWindow.ExecuteLineInInteractive |
+|Visualizzazione nel controllo pagina| **CTRL+K, CTRL+G** | OtherContextMenus.HTMLContext.ViewinPageInspector |
+|TFS annotare l'area successiva| **ALT+PGGIÙ** | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion |
+|TFS annotare l'area precedente| **ALT+PGSU** | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |
 
 ### <a name="uml-activity-diagram"></a>Diagramma attività UML
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|Edit.Delete|**MAIUSC+CANC**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Elimina|**MAIUSC+CANC**| Edit.Delete |
 
 ### <a name="uml-class-diagram"></a>Diagramma classi UML
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|Edit.DeleteFromModel|**MAIUSC+CANC**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Elimina dal modello|**MAIUSC+CANC**| Edit.DeleteFromModel |
 
 ### <a name="uml-component-diagram"></a>Diagramma dei componenti UML
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|Edit.DeleteFromModel|**MAIUSC+CANC**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Elimina dal modello|**MAIUSC+CANC**| Edit.DeleteFromModel |
 
 ### <a name="uml-use-case-diagram"></a>Diagramma caso di utilizzo UML
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|Edit.DeleteFromModel|**MAIUSC+CANC**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Elimina dal modello|**MAIUSC+CANC**| Edit.DeleteFromModel |
 
 ### <a name="vc-accelerator-editor"></a>Editor tasti di scelta rapida VC
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.NewAccelerator|**Inserimento**|
-|Edit.NextKeyTyped|**CTRL+W**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Nuovo acceleratore|**Inserimento**| Edit.NewAccelerator |
+|Chiave successiva digitata|**CTRL+W**| Edit.NextKeyTyped |
 
 ### <a name="vc-dialog-editor"></a>Editor finestre di VC
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.MoveControlDown|**Freccia GIÙ**|
-|Edit.MoveControlLeft|**Freccia SINISTRA**|
-|Edit.MoveControlRight|**Freccia DESTRA**|
-|Edit.MoveControlUp|**Freccia SU**|
-|Edit.ScrollColumnLeft|**CTRL+FRECCIA SINISTRA**|
-|Edit.ScrollColumnRight|**CTRL+FRECCIA DESTRA**|
-|Edit.ScrollLineDown|**CTRL+FRECCIA GIÙ**|
-|Edit.ScrollLineUp|**CTRL+FRECCIA SU**|
-|Edit.SizeControlDown|**MAIUSC+freccia GIÙ**|
-|Edit.SizeControlLeft|**MAIUSC+freccia SINISTRA**|
-|Edit.SizeControlRight|**MAIUSC+Freccia DESTRA**|
-|Edit.SizeControlUp|**MAIUSC+Freccia SU**|
-|Format.AlignBottoms|**CTRL+MAIUSC+Freccia GIÙ**|
-|Format.AlignCenters|**MAIUSC+F9**|
-|Format.AlignLefts|**CTRL+MAIUSC+Freccia SINISTRA**|
-|Format.AlignMiddles|**F9**|
-|Format.AlignRights|**CTRL+MAIUSC+Freccia DESTRA**|
-|Format.AlignTops|**CTRL+MAIUSC+freccia SU**|
-|Format.ButtonBottom|**CTRL+B**|
-|Format.ButtonRight|**CTRL+R**|
-|Format.CenterHorizontal|**CTRL+MAIUSC+F9**|
-|Format.CenterVertical|**CTRL+F9**|
-|Format.CheckMnemonics|**CTRL+M**|
-|Format.SizetoContent|**MAIUSC+F7**|
-|Format.SpaceAcross|**ALT+Freccia DESTRA**<br /><br /> oppure<br /><br /> **ALT+Freccia SINISTRA**|
-|Format.SpaceDown|**ALT+freccia SU**<br /><br /> oppure<br /><br /> **ALT+Freccia GIÙ**|
-|Format.TabOrder|**CTRL+D**|
-|Format.TestDialog|**CTRL+T**|
-|Format.ToggleGuides|**CTRL+G**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Spostare il controllo verso il basso|**Freccia GIÙ**| Edit.MoveControlDown |
+|Spostare il controllo a sinistra|**Freccia SINISTRA**| Edit.MoveControlLeft |
+|Spostare il controllo a destra|**Freccia DESTRA**| Edit.MoveControlRight |
+|Spostare il controllo verso l'alto|**Freccia SU**| Edit.MoveControlUp |
+|Scorrere la colonna a sinistra|**CTRL+FRECCIA SINISTRA**| Edit.ScrollColumnLeft |
+|Scorrere la colonna a destra|**CTRL+FRECCIA DESTRA**| Edit.ScrollColumnRight |
+|Scorrere la riga verso il basso|**CTRL+FRECCIA GIÙ**| Edit.ScrollLineDown |
+|Scorrere la riga verso l'alto|**CTRL+FRECCIA SU**| Edit.ScrollLineUp |
+|Controllo delle dimensioni verso il basso|**MAIUSC+freccia GIÙ**| Edit.SizeControlDown |
+|Controllo Dimensioni a sinistra|**MAIUSC+freccia SINISTRA**| Edit.SizeControlLeft |
+|Controllo dimensioni a destra|**MAIUSC+freccia DESTRA**| Edit.SizeControlRight |
+|Controllo delle dimensioni verso l'alto|**MAIUSC+freccia SU**| Edit.SizeControlUp |
+|Allineare i dati in basso|**CTRL+MAIUSC+freccia GIÙ**| Format.AlignBottoms |
+|Allineare i centri|**MAIUSC+F9**| Format.AlignCenters |
+|Allinea a sinistra|**CTRL+MAIUSC+Freccia SINISTRA**| Format.AlignLefts |
+|Allineare al centro|**F9**| Format.AlignMiddles |
+|Allineare i diritti|**CTRL+MAIUSC+freccia DESTRA**| Format.AlignRights |
+|Allineare i vertici|**CTRL+MAIUSC+FRECCIA SU**| Format.AlignTops |
+|Pulsante in basso|**CTRL+B**| Format.ButtonBottom |
+|Pulsante a destra|**CTRL+R**| Format.ButtonRight |
+|Centra orizzontalmente|**CTRL+MAIUSC+F9**| Format.CenterHorizontal |
+|Centra verticale|**CTRL+F9**| Format.CenterVertical |
+|Controlla i tasti di scelta|**CTRL+M**| Format.CheckMnemonics |
+|Dimensioni del contenuto|**MAIUSC+F7**| Format.SizetoContent |
+|Spazio tra|**ALT+freccia DESTRA**<br /><br /> oppure<br /><br /> **ALT+freccia SINISTRA**| Format.SpaceAcross |
+|Spazio in basso|**ALT+freccia SU**<br /><br /> oppure<br /><br /> **ALT+freccia GIÙ**| Format.SpaceDown |
+|Ordine di tabulazione|**CTRL+D**| Format.TabOrder |
+|Finestra di dialogo Test|**CTRL+T**| Format.TestDialog |
+|Attivare/disattivare le guide|**CTRL+G**| Format.ToggleGuides |
 
 ### <a name="vc-image-editor"></a>Editor di immagini di VC
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Image.AirBrushTool|**CTRL+A**|
-|Image.BrushTool|**CTRL+B**|
-|Image.CopyandOutlineSelection|**CTRL+MAIUSC+U**|
-|Image.DrawOpaque|**CTRL+J**|
-|Image.EllipseTool|**ALT+P**|
-|Image.EraseTool|**CTRL+MAIUSC+I**|
-|Image.FilledEllipseTool|**CTRL+MAIUSC+ALT+P**|
-|Image.FilledRectangleTool|**CTRL+MAIUSC+ALT+R**|
-|Image.FilledRoundedRectangleTool|**CTRL+MAIUSC+ALT+W**|
-|Image.FillTool|**CTRL+F**|
-|Image.FlipHorizontal|**CTRL+H**|
-|Image.FlipVertical|**MAIUSC+ALT+H**|
-|Image.LargerBrush|**CTRL+=**|
-|Image.LineTool|**CTRL+L**|
-|Image.MagnificationTool|**CTRL+M**|
-|Image.Magnify|**CTRL+MAIUSC+M**|
-|Image.NewImageType|**Inserimento**|
-|Image.NextColor|**CTRL+]**<br /><br /> oppure<br /><br /> **CTRL+Freccia DESTRA**|
-|Image.NextRightColor|**CTRL+MAIUSC+]**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+Freccia DESTRA**|
-|Image.OutlinedEllipseTool|**MAIUSC+ALT+P**|
-|Image.OutlinedRectangleTool|**MAIUSC+ALT+R**|
-|Image.OutlinedRoundedRectangleTool|**MAIUSC+ALT+W**|
-|Image.PencilTool|**CTRL+I**|
-|Image.PreviousColor|**CTRL+[**<br /><br /> oppure<br /><br /> **CTRL+Freccia SINISTRA**|
-|Image.PreviousRightColor|**CTRL+MAIUSC+[**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+Freccia SINISTRA**|
-|Image.RectangleSelectionTool|**MAIUSC+ALT+S**|
-|Image.RectangleTool|**ALT+R**|
-|Image.Rotate90Degrees|**CTRL+MAIUSC+H**|
-|Image.RoundedRectangleTool|**ALT+W**|
-|Image.ShowGrid|**CTRL + ALT + S**|
-|Image.ShowTileGrid|**CTRL+MAIUSC+ALT+S**|
-|Image.SmallBrush|**CTRL+.**|
-|Image.SmallerBrush|**CTRL+-**|
-|Image.TextTool|**CTRL+T**|
-|Image.UseSelectionAsBrush|**CTRL+U**|
-|Image.ZoomIn|**CTRL+MAIUSC+.**<br /><br /> oppure<br /><br /> **CTRL+Freccia SU**|
-|Image.ZoomOut|**CTRL+MAIUSC+,**<br /><br /> oppure<br /><br /> **CTRL+Freccia GIÙ**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Strumento Airbrush|**CTRL+A**| Image.AirBrushTool |
+|Strumento Pennello|**CTRL+B**| Image.BrushTool |
+|Copiare e strutturare la selezione|**CTRL+MAIUSC+U**| Image.CopyandOutlineSelection |
+|Disegnare opaco|**CTRL+J**| Image.DrawOpaque |
+|Strumento Ellisse|**ALT+P**| Image.EllipseTool |
+|Strumento Di cancellazione|**CTRL+MAIUSC+I**| Image.EraseTool |
+|Strumento ellisse con riempimento|**CTRL+MAIUSC+ALT+P**| Image.FilledEllipseTool |
+|Strumento Rettangolo pieno|**CTRL+MAIUSC+ALT+R**| Image.FilledRectangleTool |
+|Strumento rettangolo arrotondato riempito|**CTRL+MAIUSC+ALT+W**| Image.FilledRoundedRectangleTool |
+|Riempimento (strumento)|**CTRL+F**| Image.FillTool |
+|Capovolgi orizzontalmente|**CTRL+H**| Image.FlipHorizontal |
+|Capovolgi verticalmente|**MAIUSC+ALT+H**| Image.FlipVertical |
+|Pennello più grande|**CTRL+=**| Image.LargerBrush |
+|Strumento Linea|**CTRL+L**| Image.LineTool |
+|Strumento di ingrandimento|**CTRL+M**| Image.MagnificationTool |
+|Ingrandire|**CTRL+MAIUSC+M**| Image.Magnify |
+|Nuovo tipo di immagine|**Inserimento**| Image.NewImageType |
+|Colore successivo|**CTRL+]**<br /><br /> oppure<br /><br /> **CTRL+FRECCIA DESTRA**| Image.NextColor |
+|Colore successivo a destra|**CTRL+MAIUSC+]**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+freccia DESTRA**| Image.NextRightColor |
+|Strumento ellisse con contorno|**MAIUSC+ALT+P**| Image.OutlinedEllipseTool |
+|Strumento rettangolo con contorni|**MAIUSC+ALT+R**| Image.OutlinedRectangleTool |
+|Strumento rettangolo arrotondato con contorno|**MAIUSC+ALT+W**| Image.OutlinedRoundedRectangleTool |
+|Strumento matita|**CTRL+I**| Image.PencilTool |
+|Colore precedente|**CTRL+[**<br /><br /> oppure<br /><br /> **CTRL+FRECCIA SINISTRA**| Image.PreviousColor |
+|Colore destro precedente|**CTRL+MAIUSC+[**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+Freccia SINISTRA**| Image.PreviousRightColor |
+|Strumento di selezione del rettangolo|**MAIUSC+ALT+S**| Image.RectangleSelectionTool |
+|Strumento Rettangolo|**ALT+R**| Image.RectangleTool |
+|Rotazione di 90° gradi|**CTRL+MAIUSC+H**| Image.Rotate90Degrees |
+|Strumento rettangolo arrotondato|**ALT+W**| Image.RoundedRectangleTool |
+|Mostra griglia|**CTRL + ALT + S**| Image.ShowGrid |
+|Mostra griglia riquadri|**CTRL+MAIUSC+ALT+S**| Image.ShowTileGrid |
+|Pennello piccolo|**CTRL+.**| Image.SmallBrush |
+|Pennello più piccolo|**CTRL+-**| Image.SmallerBrush |
+|Strumento testo|**CTRL+T**| Image.TextTool |
+|Usare la selezione come pennello|**CTRL+U**| Image.UseSelectionAsBrush |
+|Zoom avanti|**CTRL+MAIUSC+.**<br /><br /> oppure<br /><br /> **CTRL+FRECCIA SU**| Image.ZoomIn |
+|Zoom indietro|**CTRL+MAIUSC+,**<br /><br /> oppure<br /><br /> **CTRL+FRECCIA GIÙ**| Image.ZoomOut |
 
 ### <a name="vc-string-editor"></a>Editor stringhe di VC
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|Edit.NewString|**Inserimento**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|NewString|**Inserimento**| Edit.NewString |
 
 ### <a name="view-designer"></a>Progettazione viste
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|QueryDesigner.CancelRetrievingData|**CTRL+T**|
-|QueryDesigner.Criteria|**CTRL+2**|
-|QueryDesigner.Diagram|**CTRL+1**|
-|QueryDesigner.ExecuteSQL|**CTRL+R**|
-|QueryDesigner.GotoRow|**CTRL+G**|
-|QueryDesigner.JoinMode|**CTRL+MAIUSC+J**|
-|QueryDesigner.Results|**CTRL+4**|
-|QueryDesigner.SQL|**CTRL+3**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Annullare il recupero dei dati|**CTRL+T**| QueryDesigner.CancelRetrievingData |
+|Criteri|**CTRL+2**| QueryDesigner.Criteria |
+|Diagramma|**CTRL+1**| QueryDesigner.Diagram |
+|Esegui SQL|**CTRL+R**| QueryDesigner.ExecuteSQL |
+|Riga Goto|**CTRL+G**| QueryDesigner.GotoRow |
+|Modalità join|**CTRL+MAIUSC+J**| QueryDesigner.JoinMode |
+|Risultati|**CTRL+4**| QueryDesigner.Results |
+|Sql|**CTRL+3**| QueryDesigner.SQL |
 
 ### <a name="visual-studio"></a>Visual Studio
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comando|Tasto di scelta rapida|
-|-------------| - |
-|OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL+1**|
+|Comando|Tasto di scelta rapida|ID comando|
+|-|-|-|
+|Riquadro Nascondi metodi|**CTRL+1**| OtherContextMenus.ORDesignerContext.HideMethodsPane |
 
 ### <a name="windows-forms-designer"></a>Progettazione Windows Form
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.BreakLine|**INVIO**|
-|Edit.CharLeft|**Freccia SINISTRA**|
-|Edit.CharLeftExtend|**MAIUSC+Freccia SINISTRA**|
-|Edit.CharRight|**Freccia DESTRA**|
-|Edit.CharRightExtend|**MAIUSC+Freccia DESTRA**|
-|Edit.DocumentEnd|**Fine**|
-|Edit.DocumentEndExtend|**MAIUSC+FINE**|
-|Edit.DocumentStart|**Home**|
-|Edit.DocumentStartExtend|**MAIUSC+HOME**|
-|Edit.InsertTab|**TAB**|
-|Edit.LineDown|**Freccia GIÙ**|
-|Edit.LineDownExtend|**MAIUSC+Freccia SU**|
-|Edit.LineUp|**Freccia SU**|
-|Edit.LineUpExtend|**MAIUSC+Freccia GIÙ**|
-|Edit.MoveControlDown|**CTRL+Freccia GIÙ**|
-|Edit.MoveControlLeft|**CTRL+Freccia SINISTRA**|
-|Edit.MoveControlRight|**CTRL+Freccia DESTRA**|
-|Edit.MoveControlUp|**CTRL+Freccia SU**|
-|Edit.SelectionCancel|**Carattere speciale di escape**|
-|Edit.SizeControlDown|**CTRL+MAIUSC+Freccia GIÙ**|
-|Edit.SizeControlLeft|**CTRL+MAIUSC+Freccia SINISTRA**|
-|Edit.SizeControlRight|**CTRL+MAIUSC+Freccia DESTRA**|
-|Edit.SizeControlUp|**CTRL+MAIUSC+freccia SU**|
-|Edit.TabLeft|**MAIUSC+TAB**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Riga di interruzione|**INVIO**| Edit.BreakLine |
+|Carattere a sinistra|**Freccia SINISTRA**| Edit.CharLeft |
+|Estensione a sinistra del carattere|**MAIUSC+freccia SINISTRA**| Edit.CharLeftExtend |
+|Carattere a destra|**Freccia DESTRA**| Edit.CharRight |
+|Estensione a destra del carattere|**MAIUSC+freccia DESTRA**| Edit.CharRightExtend |
+|Fine del documento|**Fine**| Edit.DocumentEnd |
+|Estensione della fine del documento|**MAIUSC+FINE**| Edit.DocumentEndExtend |
+|Inizio documento|**Home**| Edit.DocumentStart |
+|Estensione dell'inizio del documento|**MAIUSC+HOME**| Edit.DocumentStartExtend |
+|Scheda Inserisci|**TAB**| Edit.InsertTab |
+|Giù di una riga|**Freccia GIÙ**| Edit.LineDown |
+|Estensione linea verso il basso|**MAIUSC+freccia SU**| Edit.LineDownExtend |
+|Su di una riga|**Freccia SU**| Edit.LineUp |
+|Estensione line-up|**MAIUSC+freccia GIÙ**| Edit.LineUpExtend |
+|Spostare il controllo verso il basso|**CTRL+FRECCIA GIÙ**| Edit.MoveControlDown |
+|Spostare il controllo a sinistra|**CTRL+FRECCIA SINISTRA**| Edit.MoveControlLeft |
+|Spostare il controllo a destra|**CTRL+FRECCIA DESTRA**| Edit.MoveControlRight |
+|Spostare il controllo verso l'alto|**CTRL+FRECCIA SU**| Edit.MoveControlUp |
+|Annullamento della selezione|**Carattere speciale di escape**| Edit.SelectionCancel |
+|Controllo delle dimensioni verso il basso|**CTRL+MAIUSC+freccia GIÙ**| Edit.SizeControlDown |
+|Controllo Dimensioni a sinistra|**CTRL+MAIUSC+Freccia SINISTRA**| Edit.SizeControlLeft |
+|Controllo dimensioni a destra|**CTRL+MAIUSC+freccia DESTRA**| Edit.SizeControlRight |
+|Controllo delle dimensioni verso l'alto|**CTRL+MAIUSC+FRECCIA SU**| Edit.SizeControlUp |
+|Scheda a sinistra|**MAIUSC+TAB**| Edit.TabLeft |
 
 ### <a name="work-item-editor"></a>Editor Elemento di lavoro
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.CreateCopyofWorkItem|**MAIUSC+ALT+C**|
-|Edit.RefreshWorkItem|**F5**|
-|Team.NewLinkedWorkItem|**MAIUSC+ALT+L**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Creare una copia dell'elemento di lavoro|**MAIUSC+ALT+C**| Edit.CreateCopyofWorkItem |
+|Aggiornare un elemento di lavoro|**F5**| Edit.RefreshWorkItem |
+|Nuovo elemento di lavoro collegato|**MAIUSC+ALT+L**| Team.NewLinkedWorkItem |
 
 ### <a name="work-item-query-view"></a>Visualizzazione query elemento di lavoro
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.CreateCopyofWorkItem|**MAIUSC+ALT+C**|
-|Edit.Indent|**MAIUSC+ALT+Freccia DESTRA**|
-|Edit.Outdent|**MAIUSC+ALT+Freccia SINISTRA**|
-|Team.NewLinkedWorkItem|**MAIUSC+ALT+L**|
-|Team.Refresh|**F5**|
-|Window.Toggle|**MAIUSC+ALT+V**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Creare una copia dell'elemento di lavoro|**MAIUSC+ALT+C**| Edit.CreateCopyofWorkItem |
+|Impostare un rientro|**MAIUSC+ALT+Freccia DESTRA**| Edit.Indent |
+|Riduci rientro|**MAIUSC+ALT+Freccia SINISTRA**| Edit.Outdent |
+|Nuovo elemento di lavoro collegato|**MAIUSC+ALT+L**| Team.NewLinkedWorkItem |
+|Aggiorna|**F5**| Team.Refresh |
+|Toggle|**MAIUSC+ALT+V**| Window.Toggle |
 
 ### <a name="work-item-results-view"></a>Visualizzazione risultati elementi di lavoro
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.CreateCopyofWorkItem|**MAIUSC+ALT+C**|
-|Edit.Indent|**MAIUSC+ALT+Freccia DESTRA**|
-|Edit.Outdent|**MAIUSC+ALT+Freccia SINISTRA**|
-|Team.GotoNextWorkItem|**MAIUSC+ALT+N**|
-|Team.GotoPreviousWorkItem|**MAIUSC+ALT+P**|
-|Team.NewLinkedWorkItem|**MAIUSC+ALT+L**|
-|Team.Refresh|**F5**|
-|Window.Toggle|**MAIUSC+ALT+V**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Creare una copia dell'elemento di lavoro|**MAIUSC+ALT+C**| Edit.CreateCopyofWorkItem |
+|Impostare un rientro|**MAIUSC+ALT+Freccia DESTRA**| Edit.Indent |
+|Riduci rientro|**MAIUSC+ALT+Freccia SINISTRA**| Edit.Outdent |
+|Goto next work item|**MAIUSC+ALT+N**| Team.GotoNextWorkItem |
+|Goto previous work item (Goto elemento di lavoro precedente)|**MAIUSC+ALT+P**| Team.GotoPreviousWorkItem |
+|Nuovo elemento di lavoro collegato|**MAIUSC+ALT+L**| Team.NewLinkedWorkItem |
+|Aggiorna|**F5**| Team.Refresh |
+|Toggle|**MAIUSC+ALT+V**| Window.Toggle |
 
 ### <a name="workflow-designer"></a>Progettazione flussi di lavoro
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Edit.CompleteWord|**CTRL+K, W**<br /><br /> oppure<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> oppure<br /><br /> **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA**|
-|Edit.DecreaseFilterLevel|**ALT+,**|
-|Edit.IncreaseFilterLevel|**ALT+.**|
-|Edit.ListMembers|**CTRL+K, L**<br /><br /> oppure<br /><br /> **Ctrl+K, Ctrl+L**<br /><br /> oppure<br /><br /> **CTRL+J**|
-|Edit.ParameterInfo|**CTRL+K, P**<br /><br /> oppure<br /><br /> **Ctrl+K, Ctrl+P**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+BARRA SPAZIATRICE**|
-|Edit.QuickInfo|**CTRL+K, I**<br /><br /> oppure<br /><br /> **Ctrl+K, Ctrl+I**|
-|WorkflowDesigner.Collapse|**CTRL+E, CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+E, C**|
-|WorkflowDesigner.CollapseAll|oppure|
-|WorkflowDesigner.ConnectNodes|**CTRL+E, CTRL+F**<br /><br /> oppure<br /><br /> **CTRL+E, F**|
-|WorkflowDesigner.CreateVariable|**CTRL+E, CTRL+N**<br /><br /> oppure<br /><br /> **CTRL+E, N**|
-|WorkflowDesigner.ExpandAll|**CTRL+E, CTRL+X**<br /><br /> oppure<br /><br /> **CTRL+E, X**|
-|WorkflowDesigner.ExpandInPlace|**CTRL+E, CTRL+E**<br /><br /> oppure<br /><br /> **CTRL+E, E**|
-|WorkflowDesigner.GoToParent|**CTRL+E, CTRL+P**<br /><br /> oppure<br /><br /> **CTRL+E, P**|
-|WorkflowDesigner.MoveFocus|**CTRL+E, CTRL+M**<br /><br /> oppure<br /><br /> **Ctrl+E, M**|
-|WorkflowDesigner.NavigateThroughDesigner|**CTRL+ALT+F6**|
-|WorkflowDesigner.Restore|**CTRL+E, CTRL+R**<br /><br /> oppure<br /><br /> **CTRL+E, R**|
-|WorkflowDesigner.ShowHideArgumentDesigner|**CTRL+E, CTRL+A**<br /><br /> oppure<br /><br /> **CTRL+E, A**|
-|WorkflowDesigner.ShowHideImportsDesigner|**CTRL+E, CTRL+I**<br /><br /> oppure<br /><br /> **CTRL+E, I**|
-|WorkflowDesigner.ShowHideOverviewMap|**CTRL+E, CTRL+O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+E, O**|
-|WorkflowDesigner.ShowHideVariableDesigner|**CTRL+E, CTRL+V**<br /><br /> oppure<br /><br /> **CTRL+E, V**|
-|WorkflowDesigner.ToggleSelection|**CTRL+E, CTRL+S**<br /><br /> oppure<br /><br /> **CTRL+E, S**|
-|WorkflowDesigner.ZoomIn|**CTRL+NUM +**|
-|WorkflowDesigner.ZoomOut|**CTRL+NUM -**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Completare una parola|**CTRL+K, W**<br /><br /> oppure<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> oppure<br /><br /> **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA**| Edit.CompleteWord |
+|Ridurre il livello di filtro|**ALT+,**| Edit.DecreaseFilterLevel |
+|Aumentare il livello di filtro|**ALT+.**| Edit.IncreaseFilterLevel |
+|Elencare i membri|**CTRL+K, L**<br /><br /> oppure<br /><br /> **Ctrl+K, Ctrl+L**<br /><br /> oppure<br /><br /> **CTRL+J**| Edit.ListMembers |
+|Informazioni sui parametri|**CTRL+K, P**<br /><br /> oppure<br /><br /> **Ctrl+K, Ctrl+P**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+BARRA SPAZIATRICE**| Edit.ParameterInfo |
+|Informazioni rapide|**CTRL+K, I**<br /><br /> oppure<br /><br /> **Ctrl+K, Ctrl+I**| Edit.QuickInfo |
+|Comprimi|**CTRL+E, CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+E, C**| WorkflowDesigner.Collapse |
+|Comprimi tutto|oppure| WorkflowDesigner.CollapseAll |
+|Connessione nodi|**CTRL+E, CTRL+F**<br /><br /> oppure<br /><br /> **CTRL+E, F**| WorkflowDesigner.ConnectNodes |
+|Creare una variabile|**CTRL+E, CTRL+N**<br /><br /> oppure<br /><br /> **CTRL+E, N**| WorkflowDesigner.CreateVariable |
+|Espandi tutto|**CTRL+E, CTRL+X**<br /><br /> oppure<br /><br /> **CTRL+E, X**| WorkflowDesigner.ExpandAll |
+|Espandi sul posto|**CTRL+E, CTRL+E**<br /><br /> oppure<br /><br /> **CTRL+E, E**| WorkflowDesigner.ExpandInPlace |
+|Vai all'elemento padre|**CTRL+E, CTRL+P**<br /><br /> oppure<br /><br /> **CTRL+E, P**| WorkflowDesigner.GoToParent |
+|Spostare lo stato attivo|**CTRL+E, CTRL+M**<br /><br /> oppure<br /><br /> **Ctrl+E, M**| WorkflowDesigner.MoveFocus |
+|Spostarsi all'interno della finestra di progettazione|**CTRL+ALT+F6**| WorkflowDesigner.NavigateThroughDesigner |
+|Restore|**CTRL+E, CTRL+R**<br /><br /> oppure<br /><br /> **CTRL+E, R**| WorkflowDesigner.Restore |
+|Mostra finestra di progettazione argomenti nascosti|**CTRL+E, CTRL+A**<br /><br /> oppure<br /><br /> **CTRL+E, A**| WorkflowDesigner.ShowHideArgumentDesigner |
+|Mostra nascondi finestra di progettazione importazioni|**CTRL+E, CTRL+I**<br /><br /> oppure<br /><br /> **CTRL+E, I**| WorkflowDesigner.ShowHideImportsDesigner |
+|Mostra nascondi mappa panoramica|**CTRL+E, CTRL+O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+E, O**| WorkflowDesigner.ShowHideOverviewMap |
+|Mostra finestra di progettazione delle variabili nascondi|**CTRL+E, CTRL+V**<br /><br /> oppure<br /><br /> **CTRL+E, V**| WorkflowDesigner.ShowHideVariableDesigner |
+|Attiva/Disattiva selezione|**CTRL+E, CTRL+S**<br /><br /> oppure<br /><br /> **CTRL+E, S**| WorkflowDesigner.ToggleSelection |
+|Zoom avanti|**CTRL+NUM +**| WorkflowDesigner.ZoomIn |
+|Zoom indietro|**CTRL+NUM -**| WorkflowDesigner.ZoomOut |
 
 ### <a name="xaml-ui-designer"></a>XAML Designer
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|Design.FitAll|**CTRL+0** (zero)|
-|Design.ShowHandles|**F9**|
-|Design.ZoomIn|**CTRL+ALT+=**|
-|Design.ZoomOut|**CTRL+ALT+-**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Adattare tutto|**CTRL+0** (zero)| Design.FitAll |
+|Mostra handle|**F9**| Design.ShowHandles |
+|Zoom avanti|**CTRL+ALT+=**| Design.ZoomIn |
+|Zoom indietro|**CTRL+ALT+-**| Design.ZoomOut |
 |Opzioni per i progettisti|**CTRL+MAIUSC+;**|
-|Format.EditText|**F2**|
-|Format.ResetLayout.All|**CTRL+MAIUSC+R**|
+|Modificare il testo|**F2**| Format.EditText |
+|Tutti|**CTRL+MAIUSC+R**| Format.ResetLayout.All |
 |Esegui codice del progetto|**CTRL+F9**|
-|Timeline.Hide (solo Blend)|**CTRL+H**|
-|Timeline.Lock (solo Blend)|**CTRL+L**|
-|Timeline.Show (solo Blend)|**CTRL+MAIUSC+H**|
-|Timeline.Unlock (solo Blend)|**CTRL+MAIUSC+L**|
-|View.EdgeLeftMoveLeft|**CTRL+MAIUSC+,**|
-|View.EdgeLeftMoveRight|**CTRL+MAIUSC+.**|
-|View.EdgeRightMoveLeft|**CTRL+MAIUSC+ALT+,**|
-|View.EdgeRightMoveRight|**CTRL+MAIUSC+ALT+.**|
-|View.ShowPropertyMarkerMenu|**CTRL+BARRA SPAZIATRICE**|
+|Nascondi (solo Blend)|**CTRL+H**| Timeline.Hide (solo Blend) |
+|Blocca (solo Blend)|**CTRL+L**| Timeline.Lock (solo Blend) |
+|Mostra (solo Blend)|**CTRL+MAIUSC+H**| Timeline.Show (solo Blend) |
+|Sblocca (solo Blend)|**CTRL+MAIUSC+L**| Timeline.Unlock (solo Blend) |
+|Spostamento a sinistra del bordo verso sinistra|**CTRL+MAIUSC+,**| View.EdgeLeftMoveLeft |
+|Bordo a sinistra spostato a destra|**CTRL+MAIUSC+.**| View.EdgeLeftMoveRight |
+|Spostamento a destra del bordo a sinistra|**CTRL+MAIUSC+ALT+,**| View.EdgeRightMoveLeft |
+|Spostamento a destra del bordo|**CTRL+MAIUSC+ALT+.**| View.EdgeRightMoveRight |
+|Menu Mostra marcatore proprietà|**CTRL+BARRA SPAZIATRICE**| View.ShowPropertyMarkerMenu |
 
 ### <a name="xml-text-editor"></a>Editor di testo XML
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|XML.StartXSLTDebugging|**ALT+F5**|
-|XML.StartXSLTWithoutDebugging|**CTRL+Alt+F5**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Avviare il debug XSLT|**ALT+F5**| XML.StartXSLTDebugging |
+|Avviare XSLT senza eseguire il debug|**CTRL+Alt+F5**| XML.StartXSLTWithoutDebugging |
 
 ### <a name="xml-schema-designer"></a>Progettazione XML Schema
 
 I tasti di scelta rapida specifici per questo contesto sono:
 
 
-|Comandi|Scelte rapide da tastiera|
-|--------------| - |
-|GraphView.BottomtoTop|**ALT+freccia SU**|
-|GraphView.LefttoRight|**ALT+freccia DESTRA**|
-|GraphView.RighttoLeft|**ALT+freccia SINISTRA**|
-|GraphView.ToptoBottom|**ALT+freccia GIÙ**|
-|OtherContextMenus.GraphView.RemovefromWorkspace|**Elimina**|
-|XsdDesigner.ShowContentModelView|**CTRL+2**|
-|XsdDesigner.ShowGraphView|**CTRL+3**|
-|XsdDesigner.ShowStartView|**CTRL+1**|
+|Comandi|Scelte rapide da tastiera|ID comando|
+|-|-|-|
+|Dal basso verso l'alto|**ALT+freccia SU**| GraphView.BottomtoTop |
+|Da sinistra a destra|**ALT+freccia DESTRA**| GraphView.LefttoRight |
+|Da destra a sinistra|**ALT+freccia SINISTRA**| GraphView.RighttoLeft |
+|Dall'alto verso il basso|**ALT+freccia GIÙ**| GraphView.ToptoBottom |
+|Rimuovere dall'area di lavoro|**Elimina**| OtherContextMenus.GraphView.RemovefromWorkspace |
+|Mostra visualizzazione modello di contenuto|**CTRL+2**| XsdDesigner.ShowContentModelView |
+|Mostra visualizzazione grafico|**CTRL+3**| XsdDesigner.ShowGraphView |
+|Mostra visualizzazione iniziale|**CTRL+1**| XsdDesigner.ShowStartView |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](reference/visual-studio-commands.md)
