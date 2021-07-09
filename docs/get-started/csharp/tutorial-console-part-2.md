@@ -7,8 +7,8 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ghogen
-ms.author: ghogen
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
@@ -16,24 +16,24 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c7c38ed40143064090535735b2050dd31904d608
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 84a79015dc4b1147f078b0a970df52c553189c92
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390177"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549498"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Esercitazione: Estendere una semplice app console C#
 
 In questa esercitazione si apprenderà come usare Visual Studio per estendere l'app console creata nella prima parte. Si apprenderanno alcune delle funzionalità di Visual Studio necessarie per lo sviluppo giornaliero, ad esempio la gestione di più progetti e il riferimento a pacchetti di terze parti.
 
-Se è stata appena completata [la prima parte di](tutorial-console.md) questa serie, si dispone già dell'app console Calculator.  Per ignorare la parte 1, è possibile iniziare aprendo il progetto da un repository GitHub. L'app Calcolatrice C# si trova nel [repo vs-tutorial-samples,](https://github.com/MicrosoftDocs/vs-tutorial-samples)quindi è sufficiente seguire i passaggi descritti in Esercitazione: Aprire un progetto da un [repo](../tutorial-open-project-from-repo.md) per iniziare.
+Se è stata appena completata la [prima parte di](tutorial-console.md) questa serie, si dispone già dell'app console Calculator.  Per ignorare la parte 1, è possibile iniziare aprendo il progetto da un GitHub di lavoro. L'app Calcolatrice C# si trova nel [repo vs-tutorial-samples,](https://github.com/MicrosoftDocs/vs-tutorial-samples)quindi è sufficiente seguire i passaggi descritti in Esercitazione: Aprire un progetto da un [repo](../tutorial-open-project-from-repo.md) per iniziare.
 
 ## <a name="add-a-new-project"></a>Aggiungere un nuovo progetto
 
 Il codice reale implica la collaborazione di molti progetti in una soluzione. Aggiungere ora un altro progetto all'app Calculator. Si tratta di una libreria di classi che fornisce alcune delle funzioni della calcolatrice.
 
-1. In Visual Studio è possibile usare il comando di menu di primo livello **File** Aggiungi nuovo progetto per aggiungere un nuovo progetto, ma è anche possibile fare clic con il pulsante destro del mouse sul nome del progetto esistente  >    >   (denominato "nodo del progetto") e aprire il menu di scelta rapida (o il menu di scelta rapida) del progetto. Questo menu di scelta rapida contiene molti modi per aggiungere funzionalità ai progetti. Fare quindi clic con il pulsante destro del mouse sul nodo del **progetto Esplora soluzioni** e **scegliere Aggiungi**  >  **nuovo progetto.**
+1. In Visual Studio è possibile usare il comando di menu di primo livello **File** Aggiungi nuovo Project per aggiungere un nuovo progetto, ma è anche possibile fare clic con il pulsante destro del mouse sul nome del progetto esistente  >    >   (denominato "nodo del progetto") e aprire il menu di scelta rapida (o il menu di scelta rapida) del progetto. Questo menu di scelta rapida contiene molti modi per aggiungere funzionalità ai progetti. Fare quindi clic con il pulsante destro del mouse sul nodo del **progetto Esplora soluzioni** e scegliere Aggiungi  >  **nuovo Project**.
 
 1. Scegliere il modello di progetto C# **Libreria di classi (.NET Standard)**.
 
@@ -45,11 +45,11 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
 
 1. Invece di avere *Class1.cs*, rinominare il file **CalculatorLibrary.cs**. È possibile fare clic sul nome nel **Esplora soluzioni** rinominarlo oppure fare clic con il pulsante destro del mouse e scegliere **Rinomina** oppure **premere F2.**
 
-   È possibile che venga chiesto se si desidera rinominare i riferimenti `Class1` a nel file . Non è importante come rispondere, perché il codice verrà sostituito in un passaggio futuro.
+   Potrebbe essere richiesto se si desidera rinominare i riferimenti `Class1` a nel file . Non è importante come rispondere, perché il codice verrà sostituito in un passaggio futuro.
 
-1. È ora necessario aggiungere un riferimento al progetto, in modo che il primo progetto possa usare le API esposte dalla nuova libreria di classi.  Fare clic con il pulsante destro **del mouse sul** nodo Dipendenze nel primo progetto e scegliere Aggiungi riferimento al **progetto.**
+1. È ora necessario aggiungere un riferimento al progetto, in modo che il primo progetto possa usare le API esposte dalla nuova libreria di classi.  Fare clic con il pulsante destro **del mouse sul** nodo Dipendenze nel primo progetto e scegliere Project Riferimento **.**
 
-   ![Screenshot della voce di menu Aggiungi riferimento al progetto](media/vs-2019/calculator2-add-project-reference-dark.png)
+   ![Screenshot della voce di menu Project riferimenti](media/vs-2019/calculator2-add-project-reference-dark.png)
 
    Verrà visualizzata la finestra di dialogo **Gestione riferimenti**. Questa finestra di dialogo consente di aggiungere riferimenti ad altri progetti, nonché ad assembly e DLL COM necessari per i progetti.
 
@@ -101,7 +101,7 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
     }
    ```
 
-1. Il primo progetto contiene un riferimento, ma verrà visualizzato un errore che la chiamata Calculator.DoOperation non risolve. Questo perché CalculatorLibrary si trova in uno spazio dei nomi diverso, quindi aggiungere `CalculatorLibrary` lo spazio dei nomi per un riferimento completo.
+1. Il primo progetto contiene un riferimento, ma verrà visualizzato un errore che la chiamata a Calculator.DoOperation non viene risolta. Questo perché CalculatorLibrary si trova in uno spazio dei nomi diverso, quindi aggiungere `CalculatorLibrary` lo spazio dei nomi per un riferimento completo.
 
    ```csharp
    result = CalculatorLibrary.Calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -128,7 +128,7 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
    using System.Diagnostics;
    ```
 
-1. Esaminando come viene usata la classe Trace, è necessario mantenere un riferimento per la classe , associato a un filestream. Ciò significa che la calcolatrice funziona meglio come oggetto, quindi si aggiunge un costruttore all'inizio della classe Calculator in *CalculatorLibrary.cs.*
+1. Osservando come viene usata la classe Trace, è necessario mantenere un riferimento per la classe , associato a un filestream. Ciò significa che la calcolatrice funziona meglio come oggetto, quindi si aggiunge un costruttore all'inizio della classe Calculator in *CalculatorLibrary.cs.*
 
    ```csharp
    public Calculator()
@@ -350,11 +350,11 @@ namespace CalculatorProgram
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>Aggiungere un pacchetto NuGet: scrivere in un file JSON
 
-1. Si supponga ora di voler eseguire l'output delle operazioni in un formato JSON, un formato comune e portabile per l'archiviazione dei dati degli oggetti. Per implementare questa funzionalità, è necessario fare riferimento al pacchetto NuGet Newtonsoft.Jssu. I pacchetti NuGet sono il veicolo principale per la distribuzione delle librerie di classi .NET. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Dipendenze** per il progetto CalculatorLibrary e scegliere Gestisci **pacchetti NuGet.**
+1. Si supponga ora di voler eseguire l'output delle operazioni in un formato JSON, un formato comune e portabile per l'archiviazione dei dati degli oggetti. Per implementare questa funzionalità, è necessario fare riferimento al NuGet di Newtonsoft.Jssu. NuGet pacchetti sono il veicolo principale per la distribuzione delle librerie di classi .NET. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Dipendenze** per il progetto CalculatorLibrary e scegliere Gestisci NuGet **progetto.**
 
-   ![Screenshot di Gestisci pacchetti NuGet nel menu di scelta rapida](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
+   ![Screenshot di Gestisci NuGet pacchetti nel menu di scelta rapida](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
-   Verrà aperto il Gestione pacchetti NuGet.
+   Verrà NuGet Gestione pacchetti la finestra di dialogo.
 
    ![Screenshot di Gestione pacchetti NuGet](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
@@ -434,7 +434,7 @@ namespace CalculatorProgram
         }
    ```
 
-1. È necessario aggiungere un metodo per completare la sintassi JSON dopo che l'utente ha immesso i dati dell'operazione.
+1. È necessario aggiungere un metodo per completare la sintassi JSON dopo che l'utente ha completato l'immissione dei dati dell'operazione.
 
    ```csharp
     public void Finish()

@@ -1,6 +1,6 @@
 ---
 title: Accedi
-description: Informazioni su come accedere a Visual Studio.
+description: Accedere a Visual Studio per estendere il periodo di Visual Studio di valutazione, sbloccare Visual Studio e altro ancora
 ms.custom: contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
@@ -10,16 +10,16 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1335ab3d8f679f00fb7f52420d378baa1f2bd905
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 4b4c91a2ff4693b62ce8ac4d40d493995c52b81b
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222994"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549472"
 ---
-# <a name="sign-in-to-visual-studio-on-windows"></a>Accedere a Visual Studio in Windows
+# <a name="sign-in-to-visual-studio-on-windows"></a>Accedere a Visual Studio in Windows 
 
-Anche se non è necessario eseguire l'accesso, esistono molti vantaggi a tale scopo. Quando si accede, è possibile personalizzare, ottimizzare e arricchire l'esperienza Visual Studio personalizzata. 
+Anche se non è necessario eseguire l'accesso, esistono molti vantaggi a tale scopo. In questo articolo si apprenderà come [](#update-your-profile) [accedere,](#how-to-sign-in)come aggiornare il profilo e i vantaggi dell'esperienza Visual Studio personale. 
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Accesso a Visual Studio per Mac](/visualstudio/mac/signing-in).
@@ -31,8 +31,6 @@ Anche se non è necessario eseguire l'accesso, esistono molti vantaggi a tale sc
 > L'Visual Studio 2017 per accedere alle risorse configurate per l'accesso condizionale può attivare un'esperienza di autenticazione degradata, richiedendo più volte la riautenticazione all'interno della stessa sessione Visual Studio condizionale. 
 > 
 ::: moniker-end
-
-## <a name="benefits"></a>Vantaggi
 
 Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle operazioni che si possono eseguire dopo aver effettuato l'accesso:
 
@@ -65,7 +63,7 @@ Se si sceglie di non accedere alla prima Visual Studio, sarà facile farlo in un
 
 ![Utente non connesso](../ide/media/vs2019_usernotsignedin.png)
 
-A meno che non esegua la disconnessione, l'utente viene automaticamente connesso a Visual Studio a ogni avvio e tutte le modifiche apportate alle impostazioni sincronizzate vengono applicate automaticamente. Per disconnettersi, fare clic sull'icona con il nome del profilo nell'angolo superiore destro dell'ambiente Visual Studio, scegliere il **comando Impostazioni** account e quindi scegliere il **collegamento Disconnetto.** Per accedere di nuovo, scegliere il comando **Accedi** nell'angolo superiore destro dell'ambiente Visual Studio.
+A meno che non esegua la disconnessione, l'utente viene automaticamente connesso a Visual Studio a ogni avvio e tutte le modifiche apportate alle impostazioni sincronizzate vengono applicate automaticamente. Per disconnettersi, fare clic sull'icona con il nome del profilo nell'angolo superiore destro dell'ambiente Visual Studio, scegliere il **comando Impostazioni** account e quindi scegliere il collegamento **Disconnetto.** Per accedere di nuovo, scegliere il comando **Accedi** nell'angolo superiore destro dell'ambiente Visual Studio.
 
 ## <a name="update-your-profile"></a>Aggiornare il profilo
 
