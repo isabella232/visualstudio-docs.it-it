@@ -1,5 +1,5 @@
 ---
-title: 'Esercitazione: Creare una semplice app console C#'
+title: 'Esercitazione: Creare una semplice app console C# '
 description: Informazioni dettagliate su come creare un'app console C# in Visual Studio.
 ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
@@ -15,16 +15,31 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5f155c2477c97b6f0d18a4cfd3d54386aee68dd9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 20732b0d7fb09de6079b0c1b7b06d2ae89802a5b
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390372"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649185"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: Creare una semplice app console C# in Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>Esercitazione: Creare una semplice app console C# in Visual Studio (parte 1 di 2)
 
-In questa esercitazione per C# si userà Visual Studio per creare ed eseguire un'app console ed esplorare nello stesso tempo alcune funzionalità dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio.
+In questa esercitazione si userà Visual Studio per creare ed eseguire un'app console C# ed esplorare alcune funzionalità dell'ambiente di sviluppo integrato (IDE) di Visual Studio durante questa operazione. Questa esercitazione è la parte 1 di una serie di esercitazioni in due parti.
+
+In questa esercitazione si apprenderà come:
+
+> [!div class="checklist"]
+> * Creare un Visual Studio progetto.
+> * Creare un'app console C#.
+> * Eseguire il debug dell'app.
+> * Chiudere l'app.
+> * Esaminare il codice completo.
+
+[Nella parte 2](tutorial-console-part-2.md)questa app verrà estesa con progetti aggiuntivi, trucchi di debug e pacchetti di terze parti di riferimento.
+
+## <a name="prerequisites"></a>Prerequisiti
+
+È necessario aver installato Visual Studio.
 
 ::: moniker range="vs-2017"
 
@@ -52,7 +67,7 @@ Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto i
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **progetto**.
+2. Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**.
    In alternativa, premere **CTRL** + **MAIUSC** + **N**).
 
 3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **C#** e scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al file il nome **_Calculator_**.
@@ -75,7 +90,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
 
-1. Annullare dalla finestra **di dialogo** Nuovo progetto e  dalla barra dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
+1. Annullare dalla finestra **di dialogo Nuovo Project** e dalla  barra dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
@@ -89,7 +104,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
    ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows dall'elenco** Piattaforma e **Console dall'elenco** dei tipi di progetto. 
+1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows** dall'elenco Piattaforma e **Console dall'elenco** dei tipi di progetto. 
 
    Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il modello **Applicazione console** e quindi **scegliere Avanti.**
 
@@ -486,7 +501,7 @@ A questo punto, procedere con l'esercitazione.
 
 1. Chiudere Visual Studio.
 
-## <a name="code-complete"></a>Completamento del codice
+## <a name="review-code-complete"></a>Revisione: codice completato
 
 Durante questa esercitazione sono state apportate molte modifiche all'app Calculator. L'app ora gestisce le risorse di calcolo in modo più efficiente e la maggior parte degli errori di input dell'utente.
 
@@ -627,10 +642,15 @@ Continuare con altre esercitazioni:
 Continuare con la seconda parte di questa esercitazione:
 
 > [!div class="nextstepaction"]
-> [Continuare con la parte 2](tutorial-console-part-2.md)
+> [Parte 2 dell'esercitazione: Uso di più progetti e pacchetti di terze parti](tutorial-console-part-2.md)
 :::moniker-end
 
-## <a name="see-also"></a>Vedi anche
+Anche di interesse:
 
-* [IntelliSense per C#](../../ide/visual-csharp-intellisense.md)
-* [Informazioni sul debug del codice C# in Visual Studio](tutorial-debugger.md)
+- [Altre esercitazioni su C#](/dotnet/csharp/tutorials/)
+- [Guida introduttiva: Creare un ASP.NET Core app Web](../../ide/quickstart-aspnet-core.md)
+- [Informazioni sul debug del codice C# in Visual Studio](tutorial-debugger.md)
+- Procedura dettagliata su come [creare ed eseguire unit test](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Eseguire un programma C#](run-program.md)
+- [IntelliSense per C#](../../ide/visual-csharp-intellisense.md)
+- [Continuare con la panoramica Visual Studio'IDE](/../visual-studio-ide.md)

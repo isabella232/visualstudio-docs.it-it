@@ -1,5 +1,5 @@
 ---
-title: 'Esercitazione: Estendere una semplice app console C#'
+title: "Esercitazione 2: Estendere l'app console C#"
 description: Informazioni dettagliate su come sviluppare un Visual Studio app console C#.
 ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
@@ -16,20 +16,33 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 84a79015dc4b1147f078b0a970df52c553189c92
-ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
+ms.openlocfilehash: f7d1ae7d0d5f045c0772243c7fc4011a9f31088e
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549498"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649156"
 ---
-# <a name="tutorial-extend-a-simple-c-console-app"></a>Esercitazione: Estendere una semplice app console C#
+# <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>Esercitazione: Estendere l'app console C# ed eseguire il debug in Visual Studio (parte 2 di 2)
 
-In questa esercitazione si apprenderà come usare Visual Studio per estendere l'app console creata nella prima parte. Si apprenderanno alcune delle funzionalità di Visual Studio necessarie per lo sviluppo giornaliero, ad esempio la gestione di più progetti e il riferimento a pacchetti di terze parti.
+Nella parte 2 di questa serie di esercitazioni si approfondiranno le funzionalità di compilazione e debug di Visual Studio necessarie per lo sviluppo giornaliero, ad esempio la gestione di più progetti, il debug e il riferimento a pacchetti di terze parti. Si eseguirà l'app console C# creata nella [parte 1 di questa esercitazione(tutorial-console.md) e si esplorerà alcune funzionalità dell'ambiente di sviluppo integrato (IDE) di Visual Studio mentre si esegue questa operazione. Questa esercitazione è la parte 2 di una serie di esercitazioni in due parti.
 
-Se è stata appena completata la [prima parte di](tutorial-console.md) questa serie, si dispone già dell'app console Calculator.  Per ignorare la parte 1, è possibile iniziare aprendo il progetto da un GitHub di lavoro. L'app Calcolatrice C# si trova nel [repo vs-tutorial-samples,](https://github.com/MicrosoftDocs/vs-tutorial-samples)quindi è sufficiente seguire i passaggi descritti in Esercitazione: Aprire un progetto da un [repo](../tutorial-open-project-from-repo.md) per iniziare.
+In questa esercitazione si apprenderà come:
 
-## <a name="add-a-new-project"></a>Aggiungere un nuovo progetto
+> [!div class="checklist"]
+> * Aggiungere un altro progetto al primo.
+> * Fare riferimento alle librerie e aggiungere pacchetti.
+> * Eseguire il debug di altre informazioni.
+> * Esaminare il codice completo.
+
+
+## <a name="prerequisites"></a>Prerequisiti
+
+È necessario:
++ Usare [l'app console Calculator della parte 1 di questa serie di esercitazioni](tutorial-console.md) 
++ Usare l'app Calcolatrice C# nel [repo vs-tutorial-samples](https://github.com/MicrosoftDocs/vs-tutorial-samples) che è possibile aprire da un [repo](../tutorial-open-project-from-repo.md) per iniziare.
+
+## <a name="add-another-project"></a>Aggiungere un altro progetto
 
 Il codice reale implica la collaborazione di molti progetti in una soluzione. Aggiungere ora un altro progetto all'app Calculator. Si tratta di una libreria di classi che fornisce alcune delle funzioni della calcolatrice.
 
@@ -499,17 +512,17 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
    L'app sospende la posizione in cui è stato creato il punto di interruzione, indicato dal puntatore giallo a sinistra e dal codice evidenziato. Il codice evidenziato non è ancora stato eseguito.
 
-   ![Screenshot del clic su un punto di interruzione](media/vs-2019/calculator-2-debug-hit-breakpoint.png)
+   ![Screenshot che illustra come raggiungere un punto di interruzione](media/vs-2019/calculator-2-debug-hit-breakpoint.png)
 
    Ora, con l'app sospesa, è possibile controllare lo stato dell'applicazione.
 
 ## <a name="debug-view-variables"></a>Debug: visualizzare le variabili
 
-1. Nel codice evidenziato passare il mouse su variabili come `cleanNum1` e `op` . Vengono visualizzati i valori correnti per queste variabili ( `8` e , rispettivamente), visualizzati in Suggerimenti `d` dati.
+1. Nel codice evidenziato passare il mouse sulle variabili, ad `cleanNum1` esempio e `op` . I valori correnti per queste variabili ( `8` e , rispettivamente) vengono visualizzati nei suggerimenti `d` dati.
 
    ![Screenshot della visualizzazione di un suggerimento dati](media/vs-2019/calculator-2-debug-view-datatip.png)
 
-   Durante il debug, verificare se le variabili contengono i valori previsti è spesso fondamentale per risolvere i problemi.
+   Quando si esegue il debug, verificare se le variabili contengono i valori previsti è spesso fondamentale per risolvere i problemi.
 
 2. Nel riquadro inferiore esaminare la **finestra** Variabili locali. Se è chiuso, scegliere **Debug**  >  **Windows**  >  **Variabili locali** per aprirlo.
 
@@ -519,7 +532,7 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
 3. Esaminare la **finestra Auto.**
 
-   La finestra Auto è  simile alla finestra Variabili locali, ma mostra le variabili immediatamente che precedono e segue la riga di codice corrente in cui l'app è sospesa.
+   La finestra Auto è  simile alla finestra Variabili locali, ma mostra le variabili immediatamente precedenti e che segue la riga di codice corrente in cui l'app è sospesa.
 
    Successivamente, si eseguirà il codice nel debugger un'istruzione alla volta, denominata *esecuzione di istruzioni*.
 
@@ -539,7 +552,7 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
    Questa visualizzazione mostra il metodo corrente, indicato dal puntatore giallo, e la seconda riga mostra la funzione che lo ha chiamato, dal metodo `Calculator.DoOperation` `Main` in *Program.cs*. La finestra **Stack di chiamate** visualizza l'ordine in cui vengono chiamati metodi e funzioni. Fornisce inoltre l'accesso a molte funzionalità del debugger, ad esempio Vai al codice **sorgente**, dal menu di scelta rapida.
 
-1. Premere **F10** (o **Esegui debug** istruzione) più volte fino a quando  >  l'app non viene sospesa `switch` sull'istruzione.
+1. Premere **F10** (o **Esegui debug** istruzione) più volte fino a quando  >  l'app non viene sospesa sull'istruzione `switch` .
 
    ```csharp
    switch (op)
@@ -575,7 +588,7 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
 1. Premere **F5** (oppure **Debug Continua**  >  **debug**).
 
-   Il simbolo Infinito viene visualizzato nella console come risultato dell'operazione matematica.
+   Il simbolo Infinity viene visualizzato nella console come risultato dell'operazione matematica.
 
 1. Chiudere correttamente l'app usando il comando 'n'.
 
@@ -749,15 +762,12 @@ namespace CalculatorProgram
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-L'esercitazione è stata completata. Per altre informazioni, continuare con le esercitazioni seguenti.
+L'esercitazione è stata completata. Per altre informazioni, continuare con il contenuto seguente:
 
-> [!div class="nextstepaction"]
-> [Altre esercitazioni su C#](/dotnet/csharp/tutorials/)
-
-> [!div class="nextstepaction"]
-> [Continuare con la panoramica Visual Studio'IDE](/../visual-studio-ide.md)
-
-## <a name="see-also"></a>Vedi anche
-
-- [IntelliSense per C#](../../ide/visual-csharp-intellisense.md)
+- [Altre esercitazioni su C#](/dotnet/csharp/tutorials/)
+- [Avvio rapido: Creare un'ASP.NET Core Web](../../ide/quickstart-aspnet-core.md)
 - [Informazioni sul debug del codice C# in Visual Studio](tutorial-debugger.md)
+- Procedura dettagliata su come [creare ed eseguire unit test](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Eseguire un programma C#](run-program.md)
+- [IntelliSense per C#](../../ide/visual-csharp-intellisense.md)
+- [Continuare con la panoramica Visual Studio'IDE](/../visual-studio-ide.md)
