@@ -1,7 +1,7 @@
 ---
 title: 'Esercitazione: Eseguire il debug del codice C++'
 description: Informazioni sulle funzionalità del debugger Visual Studio e su come avviare il debugger, esaminare il codice ed esaminare i dati in un'applicazione C++.
-ms.custom: debug-experiment,  get-started
+ms.custom: debug-experiment,  vs-acquisition, get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abb517103254aa1e0c89a02b0dc81b38af3ecee
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: e5d3b4e277fc7ab2c97ccf72b7b1dd7898160c8d
+ms.sourcegitcommit: 15821c790d6498210f30b3268402ffad6bb70c7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385253"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "113725560"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C++ tramite Visual Studio
 
@@ -76,11 +76,11 @@ In primo luogo, si creerà un progetto di applicazione console C++. Il tipo di p
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu superiore scegliere **File** > **nuovo** > **progetto**.
+2. Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
-3. Nella finestra **di dialogo Nuovo** progetto nel riquadro sinistro espandere Visual C++ e quindi scegliere Desktop di **Windows**.  Nel riquadro centrale scegliere Applicazione **console di Windows**. Assegnare quindi al progetto il *nome get-started-debugging*.
+3. Nella finestra **di dialogo Nuovo** Project nel riquadro sinistro espandere Visual C++ e quindi scegliere Windows **Desktop**.  Nel riquadro centrale scegliere Windows **console**. Assegnare quindi al progetto il *nome get-started-debugging*.
 
-     Se il modello di progetto **App** console non è visualizzato, scegliere il collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della **finestra** di dialogo Nuovo progetto. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
+     Se il modello di progetto **App** console  non è visualizzato, scegliere il collegamento Apri Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Project** nuova applicazione. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
 4. Fare clic su **OK**.
 
@@ -96,7 +96,7 @@ In primo luogo, si creerà un progetto di applicazione console C++. Il tipo di p
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C++ dall'elenco** Linguaggio e quindi **windows dall'elenco** Piattaforma. 
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C++** dall'elenco Linguaggio e quindi **scegliere** Windows dall'elenco Piattaforma. 
 
    Dopo aver applicato i filtri della lingua e della piattaforma, scegliere il modello **App console** e quindi **scegliere Avanti.**
 
@@ -105,7 +105,7 @@ In primo luogo, si creerà un progetto di applicazione console C++. Il tipo di p
    > [!NOTE]
    > Se il modello App **console** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Nella finestra di dialogo Programma di installazione di Visual Studio quindi scegliere il carico di lavoro **Sviluppo desktop con C++.**
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *get-started-debugging* nella **casella Nome** progetto . Scegliere quindi **Crea**.
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *get-started-debugging* nella casella Project **nome.** Scegliere quindi **Crea**.
 
    Visual Studio aprirà il nuovo progetto.
 
@@ -174,7 +174,7 @@ In primo luogo, si creerà un progetto di applicazione console C++. Il tipo di p
 
     `name += letters[i];`
 
-    Viene visualizzato un punto di ![interruzione](../debugger/media/dbg-breakpoint.png "Punto di interruzione") con cerchio rosso nel punto in cui si imposta il punto di interruzione.
+    Nel punto in cui si ![imposta il punto di interruzione](../debugger/media/dbg-breakpoint.png "Punto di interruzione") viene visualizzato un punto di interruzione con cerchio rosso.
 
     I punti di interruzione sono una delle funzionalità di base ed essenziali del debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice.
 
@@ -186,23 +186,23 @@ In primo luogo, si creerà un progetto di applicazione console C++. Il tipo di p
 
      Se l'app non è ancora in esecuzione, **F5** avvia il debugger e lo arresta in corrispondenza del primo punto di interruzione. In caso contrario, **F5** continua l'esecuzione dell'app fino al punto di interruzione successivo.
 
-    I punti di interruzione sono una funzionalità utile quando si conosce la riga di codice o la sezione di codice che si vuole esaminare nel dettaglio. Per informazioni sui diversi tipi di punti di interruzione che è possibile impostare, ad esempio i punti di interruzione condizionali, vedere [Uso dei punti di interruzione](../debugger/using-breakpoints.md).
+    I punti di interruzione sono una funzionalità utile quando si conosce la riga di codice o la sezione di codice che si vuole esaminare nel dettaglio. Per informazioni sui diversi tipi di punti di interruzione che è possibile impostare, ad esempio i punti di interruzione condizionali, vedere [Uso di punti di interruzione](../debugger/using-breakpoints.md).
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Esplorare il codice nel debugger tramite i comandi di esecuzione
 
 In questa esercitazione nella maggior parte dei casi vengono usati tasti di scelta rapida che rappresentano un modo rapido per eseguire l'app nel debugger (i comandi equivalenti, ad esempio i comandi di menu, sono indicati tra parentesi).
 
-1. Durante la sospensione nel ciclo nel metodo, premere `for` `main` **F11** (o scegliere Debug > Esegui istruzione ) due volte per passare alla chiamata `SendMessage` al metodo.
+1. Mentre è in pausa nel ciclo nel metodo, premere `for` `main` **F11** (o scegliere Debug > Esegui istruzione ) due volte per passare alla `SendMessage` chiamata al metodo.
 
      Dopo aver **premuto F11** due volte, si dovrebbe essere in questa riga di codice:
 
      `SendMessage(name, a[i]);`
 
-1. Premere **F11** ancora una volta per eseguire un'istruzione al `SendMessage` metodo.
+1. Premere **F11** ancora una volta per eseguire un'istruzione nel `SendMessage` metodo .
 
      Il puntatore giallo avanza nel `SendMessage` metodo .
 
-     ![Usare F11 per eseguire un'istruzione al codice](../debugger/media/get-started-f11-cpp.png "F10 Step Into")
+     ![Usare F11 per eseguire un'istruzione nel codice](../debugger/media/get-started-f11-cpp.png "Istruzione F10")
 
      F11 corrisponde al comando **Esegui istruzione** e consente di eseguire l'app un'istruzione alla volta. F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. Per spostarsi più velocemente nel codice, vengono mostrate anche alcune altre opzioni. Per impostazione predefinita, il debugger ignora il codice non utente (per altri dettagli, [vedere Just My Code](../debugger/just-my-code.md)).
 
@@ -216,7 +216,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 1. Premere **F11** più volte finché non si torna di nuovo alla `SendMessage` chiamata al metodo.
 
-1. Mentre è in pausa durante la chiamata al metodo, premere **F10** (o **scegliere Debug > esegui istruzione/istruzione**) una sola volta.
+1. Mentre è in pausa durante la chiamata al metodo, premere **F10** (o scegliere **Debug > esegui istruzione/esecuzione).**
 
      ![Usare F10 per eseguire il passaggio del codice](../debugger/media/get-started-step-over-cpp.png "F10 Step Over")
 
@@ -233,7 +233,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
    > [!NOTE]
    > Il pulsante per l'**esecuzione fino alla riga selezionata dall'utente** è una nuova funzionalità di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se il pulsante freccia verde non è visualizzato, usare **F11** in questo esempio per far avanzare il debugger nella posizione giusta.
 
-2. Fare clic **sul pulsante Esegui fino a fare** clic sul pulsante Esegui fino a fare clic ![su](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Fare clic **sul pulsante Esegui per fare clic** sul pulsante Esegui per fare clic ![su](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Il debugger passa alla `std::wcout` funzione .
 
@@ -241,27 +241,27 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ## <a name="restart-your-app-quickly"></a>Riavviare rapidamente l'app
 
-Fare clic sul **pulsante Restart** ![Restart App (Riavvia](../debugger/media/dbg-tour-restart.png "RestartApp") riavvia app) sulla barra degli strumenti di debug (**CTRL**  +    +  **MAIUSC+F5).**
+Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug ( CTRL  +  **MAIUSC**  +  **F5**).
 
 Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene messo in pausa in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 
-Il debugger si arresta nuovamente in corrispondenza del punto di interruzione impostato in precedenza all'interno del `for` ciclo .
+Il debugger si arresta nuovamente in corrispondenza del punto di interruzione impostato in precedenza all'interno del `for` ciclo.
 
 ## <a name="inspect-variables-with-data-tips"></a>Esaminare le variabili con i suggerimenti dati
 
 Le funzionalità che consentono di esaminare le variabili sono tra le funzionalità più utili del debugger e sono disponibili diversi modi per eseguire questa operazione. Spesso quando si tenta di eseguire il debug di un problema, si tenta di determinare se le variabili includono i valori previsti in un determinato momento.
 
-1. Mentre è in pausa nell'istruzione , passare il mouse sulla variabile per visualizzare `name += letters[i]` `letters` il valore predefinito, `size={10}` .
+1. Durante la sospensione dell'istruzione, passare il puntatore del mouse sulla variabile e vedere che è `name += letters[i]` `letters` il valore predefinito, `size={10}` .
 
 1. Espandere la `letters` variabile per visualizzarne le proprietà, che includono tutti gli elementi contenuti nella variabile.
 
-1. Passare quindi il puntatore `name` sulla variabile per visualizzarne il valore corrente, una stringa vuota.
+1. Passare quindi il puntatore del mouse sulla variabile e `name` visualizzare il relativo valore corrente, una stringa vuota.
 
-1. Premere **F5** (o **Continua** debug ) alcune volte per eseguire l'iterazione più volte nel ciclo, sospendo nuovamente in corrispondenza del punto di interruzione e passando il puntatore sulla variabile ogni volta per controllarne il  >   `for` `name` valore.
+1. Premere **F5** (o **Continua** debug ) più volte per scorrere più volte il ciclo, sospendere nuovamente in corrispondenza del punto di interruzione e passare il puntatore sulla variabile ogni volta per verificarne il  >   `for` `name` valore.
 
      ![Visualizzare un suggerimento dati](../debugger/media/get-started-data-tip-cpp.png "Visualizzare un suggerimento dati")
 
-     Il valore della variabile cambia a ogni iterazione del ciclo, visualizzando i valori `for` di , quindi , e così `f` `fr` `fre` via.
+     Il valore della variabile cambia a ogni iterazione del ciclo, visualizzando i `for` valori di , quindi , e così `f` `fr` `fre` via.
 
      Spesso, durante il debug, è necessario controllare rapidamente i valori delle proprietà sulle variabili, per vedere se si stanno archiviando i valori previsti, e i suggerimenti dati costituiscono un valido strumento per questa operazione.
 
@@ -269,7 +269,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug**  >  **Finestre**  >  **Auto.**
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo  >  **Debug Windows**  >  **auto.**
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. La finestra **Auto** mostra tutte le variabili usate nella riga corrente o nella riga precedente (vedere la documentazione per il comportamento specifico del linguaggio).
 
@@ -283,17 +283,17 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 ## <a name="set-a-watch"></a>Impostare un'espressione di controllo
 
-1. Nella finestra principale dell'editor di codice fare clic con il pulsante destro del mouse `name` sulla variabile e scegliere Aggiungi espressioni di **controllo**.
+1. Nella finestra principale dell'editor di codice fare clic con il pulsante destro del mouse sulla `name` variabile e scegliere Aggiungi espressioni di **controllo**.
 
     Viene visualizzata la finestra **Espressione di controllo** nella parte inferiore dell'editor di codice. È possibile usare una finestra **Espressione di controllo** per specificare una variabile (o un'espressione) che si vuole controllare.
 
-    A questo punto, è disponibile un'orologio impostato sulla variabile ed è possibile visualizzarne la modifica del valore mentre `name` si passa attraverso il debugger. A differenza di altre finestre delle variabili, la finestra **Espressione di controllo** mostra sempre le variabili controllate (che appaiono disattivate quando sono fuori ambito).
+    A questo punto, è disponibile un'orologio impostato sulla variabile ed è possibile visualizzarne il valore `name` mentre si passa attraverso il debugger. A differenza di altre finestre delle variabili, la finestra **Espressione di controllo** mostra sempre le variabili controllate (che appaiono disattivate quando sono fuori ambito).
 
 ## <a name="examine-the-call-stack"></a>Esaminare lo stack di chiamate
 
 1. Mentre l'esecuzione è in pausa nel ciclo `for`, fare clic sulla finestra **Stack di chiamate**, visualizzata per impostazione predefinita nel riquadro inferiore destro.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug Stack di** chiamate  >    >  **Windows**.
+    Se è chiuso, aprirlo durante la sospensione nel debugger scegliendo Debug Windows  >    >  **Stack di chiamate**.
 
 2. Fare **clic su F11** alcune volte fino a quando il debugger non viene sospeso nel `SendMessage` metodo . Osservare la finestra **Stack di chiamate**.
 
@@ -314,11 +314,11 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Premere **F11** due volte per eseguire la `std::wcout` funzione.
 
-1. Con il debugger sospeso nella chiamata al metodo, usare il mouse per afferrare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, di nuovo `SendMessage` su `std::wcout` .
+1. Con il debugger sospeso nella chiamata al metodo , usare il mouse per afferrare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, di nuovo `SendMessage` su `std::wcout` .
 
-1. Premere **F11**.
+1. Premere **F11.**
 
-    Il debugger riesegui la `std::wcout` funzione (come si può vedere nell'output della finestra della console).
+    Il debugger esegue di nuovo la `std::wcout` funzione ( nell'output della finestra della console).
 
     Modificando il flusso di esecuzione è possibile eseguire operazioni come testare percorsi di esecuzione del codice diversi o rieseguire il codice senza riavviare il debugger.
 

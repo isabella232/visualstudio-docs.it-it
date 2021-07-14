@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a3aa2ace6279211c27847b8b9cc46d71b0d9ad
-ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
+ms.openlocfilehash: cc9b38b27df28d551fc33e9a23bdad8276a422a4
+ms.sourcegitcommit: 15821c790d6498210f30b3268402ffad6bb70c7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113038603"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "113725547"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificare e personalizzare i tasti di scelta rapida in Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "113038603"
 
 - Contesto attivo quando si seleziona il tasto di scelta rapida. Ad esempio, il tasto di scelta rapida **F2** richiama il comando `Edit.EditCell` se si usa **Progettazione impostazioni**, mentre richiama il comando `File.Rename` se si usa **Team Explorer**.
 
-Indipendentemente dalle impostazioni, dalla personalizzazione e dal contesto, è possibile trovare e modificare un tasto di scelta rapida nella finestra di dialogo **Opzioni**. È anche possibile cercare i tasti di scelta rapida predefiniti per diverse decine di comandi in [Tasti di scelta rapida più comuni](../ide/default-keyboard-shortcuts-in-visual-studio.md#most-popular-keyboard-shortcuts). Per un elenco completo di tutti i tasti di scelta rapida predefiniti (in base alle **Impostazioni generali per lo sviluppo**), vedere [Tutti i tasti di scelta rapida](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Indipendentemente dalle impostazioni, dalla personalizzazione e dal contesto, è possibile trovare e modificare un tasto di scelta rapida nella finestra di dialogo **Opzioni**. È anche possibile cercare i tasti di scelta rapida predefiniti per diverse decine di comandi in [Tasti di scelta rapida più comuni](../ide/default-keyboard-shortcuts-in-visual-studio.md#popular). Per un elenco completo di tutti i tasti di scelta rapida predefiniti (in base alle **Impostazioni generali per lo sviluppo**), vedere [Tutti i tasti di scelta rapida](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale* e in nessun altro contesto, richiamerà sempre il comando in questione. Un tasto di scelta rapida può tuttavia essere assegnato a un comando nel contesto globale e a un altro in un contesto specifico. Se si utilizza tale tasto di scelta rapida nel contesto specifico, richiama il comando per il contesto specifico, non il contesto globale.
 
@@ -44,7 +44,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 
 ## <a name="identify-a-keyboard-shortcut"></a>Identificare un tasto di scelta rapida
 
-1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti**.
+1. Sulla barra dei menu scegliere **Strumenti**  >  **Opzioni**.
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
@@ -64,7 +64,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizzare un tasto di scelta rapida
 
-1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti**.
+1. Sulla barra dei menu scegliere **Strumenti**  >  **Opzioni**.
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
@@ -89,9 +89,9 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 6. Nella casella **Premi tasti di scelta rapida** immettere il tasto di scelta rapida che si vuole usare.
 
     > [!NOTE]
-    > È possibile creare un collegamento che combina una lettera con **alt,** **CTRL** o entrambi. È anche possibile creare un collegamento che combina il **tasto** MAIUSC e una lettera con **alt,** **CTRL** o entrambi.
+    > È possibile creare un tasto di scelta rapida che combina una lettera con **il tasto ALT,** **il tasto CTRL** o entrambi. È anche possibile creare un tasto di scelta rapida che combina il tasto **MAIUSC** e una lettera con il **tasto ALT,** **il tasto CTRL** o entrambi.
 
-     Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, scegliere **il tasto Backspace** per eliminare il collegamento prima di provarne uno diverso.
+     Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, scegliere **backspace** per eliminare il collegamento prima di provarne uno diverso.
 
     ![Specificare un collegamento diverso per un comando](../ide/media/reassignshortcut.png)
 
@@ -106,7 +106,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 
 ### <a name="to-export-only-keyboard-shortcuts"></a>Per esportare solo i tasti di scelta rapida
 
-1. Sulla barra dei menu scegliere **Strumenti**  >  **Importa ed esporta impostazioni**.
+1. Sulla barra dei menu scegliere **Strumenti**  >  **Importa ed esporta** Impostazioni .
 
 2. Scegliere **Esporta le impostazioni di ambiente selezionate** e quindi scegliere **Avanti**.
 
@@ -132,7 +132,7 @@ Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un fil
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Per importare solo i tasti di scelta rapida
 
-1. Sulla barra dei menu scegliere **Strumenti**  >  **Importa ed esporta impostazioni**.
+1. Sulla barra dei menu scegliere **Strumenti**  >  **Importa ed esporta** Impostazioni .
 
 2. Selezionare il pulsante di opzione **Importa le impostazioni di ambiente selezionate** e quindi fare clic su **Avanti**.
 
@@ -148,6 +148,6 @@ Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un fil
 
    ![Importare solo i tasti di scelta rapida personalizzati](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità di accessibilità di Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
