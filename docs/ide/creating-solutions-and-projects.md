@@ -1,6 +1,6 @@
 ---
-title: Creare & usare Visual Studio progetti & soluzioni
-description: Informazioni sulla differenza tra soluzioni e progetti e su come usarle in Visual Studio.
+title: Creare progetti & soluzioni
+description: Informazioni su come creare e usare Visual Studio e progetti per archiviare gli artefatti.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 06/14/2021
 ms.topic: how-to
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 713d320767bd329cc53b536bdad058a5db592b3f
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: a76051c2be5bf6f260c953ded3d1e10ecb676ea9
+ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924929"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114201806"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Creare, usare ed eliminare progetti Visual Studio soluzioni
 
-In questo articolo si apprenderà come creare e usare progetti Visual Studio da zero per archiviare gli artefatti necessari per compilare le app.  Se non si ha familiarità con i progetti in Visual Studio, vedere questa panoramica di [Progetti e soluzioni.](solutions-and-projects-in-visual-studio.md)  Per informazioni su come creare rapidamente un progetto da un modello, vedere [Creare un progetto da un modello.](create-new-project.md)
+Questo articolo illustra come creare e usare progetti Visual Studio da zero per archiviare gli artefatti necessari per compilare le app.  Se non si ha familiarità con i progetti in Visual Studio, vedere questa panoramica di [Progetti e soluzioni.](solutions-and-projects-in-visual-studio.md)  Per informazioni su come creare rapidamente un progetto da un modello, vedere [Creare un progetto da un modello.](create-new-project.md)
 
-I *progetti* contengono gli elementi necessari per compilare l'app in Visual Studio, ad esempio file di codice sorgente, bitmap, icone e riferimenti a componenti e servizi. Quando si crea un nuovo progetto, Visual Studio crea una *soluzione* per ospitarlo. Se necessario è quindi possibile aggiungere altri progetti nuovi o esistenti alla soluzione. Le soluzioni possono anche contenere file non connessi ad alcun progetto specifico.
+I *progetti* contengono gli elementi necessari per compilare l'app in Visual Studio, ad esempio file di codice sorgente, bitmap, icone e riferimenti a componenti e servizi. Quando si crea un nuovo progetto, Visual Studio crea una *soluzione* per ospitarlo. Se necessario è quindi possibile aggiungere altri progetti nuovi o esistenti alla soluzione. È anche possibile creare [soluzioni vuote o vuote.](#create-empty-solutions) Le soluzioni possono anche contenere file non connessi ad alcun progetto specifico.
 
 ![Diagramma che mostra la gerarchia di soluzioni e progetti.](./media/vside-proj-soln.png)
 
@@ -49,9 +49,9 @@ Per informazioni su come selezionare un modello per creare un nuovo progetto, ve
 
 Se è presente una raccolta di file di origine di codice è possibile aggiungerli facilmente a un progetto.
 
-1. Scegliere File   >  **New** Project From  >  **Existing Code (File nuovo progetto da codice esistente) dal** menu.
+1. Scegliere Nuovo file dal **codice**  >    >  **Project dal codice esistente** dal menu.
 
-1. Nella **procedura** guidata Crea progetto da file di codice esistenti selezionare il tipo di progetto desiderato nella casella di riepilogo a discesa Quale tipo di progetto si vuole **creare?** e quindi selezionare il **pulsante** Avanti.
+1. Nella procedura guidata Crea Project da file di codice esistenti selezionare il tipo di progetto desiderato nella casella di riepilogo **a** discesa Quale tipo di progetto si vuole **creare?** e quindi selezionare il **pulsante** Avanti.
 
 1. Nella procedura guidata, passare al percorso dei file e immettere un nome per il nuovo progetto nella casella **Nome**. Al termine, selezionare il **pulsante** Fine.
 
@@ -71,9 +71,9 @@ Quando si crea un progetto .NET Framework è possibile indicare la versione spec
 
 ::: moniker range="vs-2017"
 
-Per specificare una .NET Framework, selezionare il menu a discesa **Framework** nella **finestra di dialogo** Nuovo progetto.
+Per specificare una .NET Framework, selezionare il menu a discesa **Framework** nella finestra di **dialogo Project** nuova versione.
 
-![Screenshot dell'elenco a discesa Framework nella finestra di dialogo Nuovo progetto.](./media/vside-newproject-framework.png)
+![Screenshot dell'elenco a discesa Framework nella finestra di dialogo Project nuova versione.](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > Per l'accesso alle versioni di .NET Framework precedenti a .NET Framework 4 è necessario che nel computer sia installato .NET Framework 3.5.
@@ -94,11 +94,11 @@ Per specificare una .NET Framework, selezionare il menu a discesa **Framework** 
 
 ### <a name="to-create-an-empty-solution"></a>Per creare una soluzione vuota
 
-1. Nella barra dei menu selezionare **File** New Project  >  **(File nuovo**  >  **progetto).**
+1. Sulla barra dei menu selezionare **File**  >  **Nuovo**  >  **Project**.
 
 ::: moniker range="vs-2017"
 
-2. Nel riquadro sinistro (**Modelli**) selezionare Altri tipi **di** progetto Visual Studio > **soluzioni nell'elenco** espanso.
+2. Nel riquadro sinistro (**Modelli**) selezionare Altri Project **tipi Visual Studio** soluzioni > **nell'elenco** espanso.
 
 3. Nel riquadro centrale selezionare **Soluzione vuota**.
 
@@ -151,7 +151,7 @@ Per eliminare definitivamente una soluzione o altri componenti dal sistema, usar
 
 1. Selezionare la cartella che contiene la soluzione e quindi premere **CANC.**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 - [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)

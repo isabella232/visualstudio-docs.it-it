@@ -1,0 +1,128 @@
+### YamlMime:FAQ
+metadata:
+  title: Domande frequenti sull'estendibilità
+  description: Questo articolo risponde ad alcune domande frequenti sull'estendibilità per Visual Studio 2017.
+  ms.custom: SEO-VS-2020
+  ms.date: 11/09/2016
+  ms.topic: conceptual
+  ms.assetid: 345855db-0cc3-45aa-8c57-bb18d9789772
+  author: kevinfansler
+  ms.author: madsk
+  manager: jmartens
+  monikerRange: vs-2017
+  ms.openlocfilehash: 31f536c99c0a050ebb3b315b8209a32c4a1d9130
+  ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 07/14/2021
+  ms.locfileid: "113757554"
+title: Domande frequenti sull'estendibilità di Visual Studio 2017
+summary: Queste sono alcune domande frequenti sull'estendibilità per Visual Studio 2017.
+sections:
+- name: Ignorato
+  questions:
+  - question: >
+      Qual è la storia della compatibilità con le versioni precedenti per le estensioni?
+    answer: >
+      Il nuovo formato VSIX v3 è compatibile con le versioni precedenti di VSIX v2, quindi sarà comunque possibile avere un singolo VSIX con un singolo ID VSIX che supporta Visual Studio 2012 e versioni successive. Il nuovo formato VSIX v3 non supporta Visual 2010 e versioni precedenti. Per supportare Visual Studio 2010 e successive, è necessario creare un'estensione separata (con un ID VSIX separato). Poiché Visual Studio 2010 è ora una piccola percentuale della base utenti, è consigliabile usare l'ID VSIX esistente per l'estensione che supporta Visual Studio 2012 o versione successiva e assegnare un nuovo ID VSIX alla versione Visual Studio 2010.
+  - question: >
+      Perché è necessario dichiarare i prerequisiti con Visual Studio 2017?
+    answer: >
+      Visual Studio 2017 consente un'installazione più veloce e a impatto più leggero di Visual Studio che offre agli utenti un maggiore controllo sui carichi di lavoro e sui componenti installati. Per assicurarsi che i componenti richiesti dall'estensione siano installati, con VSIX v3 e Visual Studio 2017, è necessario dichiarare i componenti da cui dipende l'estensione come prerequisiti. Se uno dei prerequisiti necessari non è disponibile nel computer dell'utente, l'utente non sarà in grado di eseguire l'estensione. Tuttavia, se Visual Studio rileva che un utente sta tentando di installare un'estensione che richiede componenti mancanti, richiederà all'utente di installare i componenti necessari. Se si dispone di componenti facoltativi, non è necessario elencarli come prerequisiti, a condizione di eseguire il rilevamento delle funzionalità appropriato in fase di esecuzione. Tutte le estensioni devono specificare il componente principale dell'editor come dipendenza, `Microsoft.VisualStudio.Component.CoreEditor` .
+  - question: >
+      Quando si dice prerequisito, quale livello di granularità si intende?
+    answer: >
+      I prerequisiti vengono dichiarati a livello di componente, ad esempio singole opzioni che possono essere selezionate nell'interfaccia utente. Non si dichiarano prerequisiti per carichi di lavoro o singole DLL.
+  - question: >
+      Dove è possibile trovare un elenco di ID componente per poter dichiarare le dipendenze?
+    answer: >
+      Per trovare l'elenco degli ID dei componenti, vedere Visual Studio [2017 workload and component IDs](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true)(ID dei carichi di lavoro e dei componenti 2017). Se non si è certi del componente che contiene un file binario specifico, è possibile scaricare il foglio di [calcolo Component -> Binary mapping](https://aka.ms/vs2017componentid-binaries). Per altre informazioni sull'uso del foglio di calcolo, vedere la sezione **Relativa** alla ricerca di ID componente in Procedura: Migrazione di progetti di estendibilità [Visual Studio 2017.](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
+  - question: >
+      L'estensione richiede Visual Studio 15.3, come si applica tale requisito?
+    answer: >
+      Se l'estensione richiede una versione specifica di Visual Studio 2017, ad esempio, dipende da una funzionalità rilasciata nella versione 15.3, è possibile specificare il numero di build in VSIX **InstallationTarget.** Ad esempio, la versione 15.3 ha un numero di build "15.0.26730.3". È possibile visualizzare il mapping delle versioni ai numeri di build [qui](../install/visual-studio-build-numbers-and-release-dates.md). Si noti che l'uso del numero di versione "15.3" non funzionerà correttamente.
+
+
+      Se l'estensione richiede la versione 15.3 o successiva, dichiarare **installationTarget Version** come [15.0.26730.3, 16.0):
+
+
+      ```xml
+
+      <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+      </Installation>
+
+      ```
+
+
+      VSIXInstaller rileverà le versioni precedenti Visual Studio e informerà l'utente che è necessario un aggiornamento successivo.
+  - question: >
+      Continua a verificarsi un errore quando si prova a caricare l'estensione.
+    answer: >
+      È possibile che si sta usando la versione precedente del manifesto VSIX. Se l'estensione è contrassegnata come che supporta Visual Studio 2017 ma non usa il nuovo formato di manifesto VSIX v3, non sarà possibile caricarla.
+  - question: >
+      Si usa il programma di installazione personale. È possibile continuare a eseguire questa operazione?
+    answer: >
+      Con Visual Studio 2017, l'installazione minima Visual Studio sarà notevolmente più piccola rispetto alle versioni precedenti.
+
+
+      È stato migliorato il formato del manifesto VSIX per supportare le modifiche necessarie per l'installazione leggera. Per quanto possibile, è consigliabile fornire l'estensione in formato VSIX v3. Potrebbe essere necessario mantenere il programma di installazione esistente per determinati scenari, ad esempio se si installano componenti al di fuori Visual Studio.
+
+
+      Ad esempio, se è MSBuild, è necessario specificarne il prerequisito nel manifesto VSIX. Quando si installa VSIX, il programma di installazione garantisce che MSBuild sia disponibile.
+
+
+      Il programma di installazione richiama quindi VSIXInstaller per installare un pacchetto VSIX con i Visual Studio 2017.
+  - question: >
+      È possibile fornire altre indicazioni sulla migrazione?
+    answer: >
+      Per altre informazioni, vedere Procedura: Migrazione di progetti di estendibilità [Visual Studio 2017.](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) È anche disponibile un ottimo post di blog, [Changes to Visual Studio setup](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/).
+  - question: >
+      Ricerca per categorie la registrazione dei pacchetti?
+    answer: >
+      La registrazione dei pacchetti è stata così come in passato con le voci del Registro di sistema. L'unica modifica è che il Registro di sistema viene ora deviato ed è necessario dichiarare le voci del Registro di sistema da un file *con estensione pkgdef.*
+
+
+      Se si usa `PackageRegistrationAttribute` , questa operazione dovrebbe verificarsi automaticamente.
+  - question: >
+      È necessaria una nuova voce della raccolta per la Visual Studio 2017 dell'estensione?
+    answer: >
+      No, non sarà necessaria una nuova voce nella raccolta Visual Studio per il pacchetto VSIX aggiornato, a condizione che le modifiche siano completamente compatibili con tutte le versioni supportate. Se l'estensione non è compatibile con le versioni precedenti, è consigliabile suddividere l'estensione in più VSIX (anche se temporaneamente), ognuno con il proprio ID VSIX e la voce nella raccolta.
+  - question: >
+      Cosa fare con l'estensione che attualmente supporta Visual Studio 2010 e versioni successive?
+    answer: >
+      Aggiungere il supporto per Visual Studio 2017 alla versione VSIX corrente e mantenere il supporto per Visual Studio 2012 e versioni successive. Creare anche un nuovo vsix (con nuovo GUID e voce della raccolta) con il supporto per Visual Studio 2010.
+  - question: >
+      È possibile compilare un pacchetto VSIX v3 con Visual Studio 2015?
+    answer: >
+      Sì. È disponibile un pacchetto NuGet che include gli strumenti e le attività necessari per compilare manifesti in formato VSIX v3 in Visual Studio 2015. Aggiungere un riferimento NuGet pacchetto `Microsoft.VisualStudio.Sdk.BuildTasks.14.0` al progetto di estendibilità. Sarà anche necessario aggiungere `VsixType` l'elemento che specifica al file di `v3` progetto:
+
+
+      ```xml
+        <VsixType>v3</VsixType>
+      ```
+  - question: >
+      È possibile eseguire VSIXInstaller in modalità non interattiva?
+    answer: >
+      È necessario passare parametri aggiuntivi a VSIXInstaller ora che sono potenzialmente presenti più istanze di Visual Studio 2017 installate.
+
+
+      ```bash
+
+      vsixinstaller.exe /q /appidinstallpath:"c:\program files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe" /appidname:"Visual Studio" /logFile:<path to log file> /skuName:Enterprise /skuVersion:15.0.25810.0 "KendoUI.Mvc.VSPackage.vsix"
+
+      ```
+  - question: >
+      Perché VSIXInstaller attende ora la chiusura dei processi prima di installare VSIX?
+    answer: >
+      VSIXInstaller usa ora il motore Visual Studio di installazione per installare tutti i prerequisiti definiti da VSIX. Il motore di installazione richiede la chiusura di tutti i processi correlati a Visual Studio prima di poter aggiornare l Visual Studio installazione.
+  - question: >
+      È ora possibile installare gli asset di estensione in qualsiasi percorso con VSIX v3?
+    answer: >-
+      No, la proprietà VSIX v3 non consente di installare nulla al di fuori della `InstallRoot` Visual Studio di cartelle di installazione. Per i [percorsi supportati, vedere l'argomento](set-install-root.md) Installazione all'esterno della cartella extensions.
+
+
+      I componenti di estensione che non fanno parte Visual Studio sono probabilmente singleton nel computer e vengono installati una volta per tutte le istanze Visual Studio 2017.
+
+
+      Per questo scenario, è consigliabile creare un'estensione msi per i componenti non Visual Studio e fare in modo che l'msi eseere richiamato VSIXInstaller per installare il Visual Studio componenti specifici.

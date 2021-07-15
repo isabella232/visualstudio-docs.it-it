@@ -1,6 +1,6 @@
 ---
 title: Linee guida per Developer Community
-description: Descrive le linee guida per l'uso della community degli sviluppatori di Visual Studio.
+description: Vengono descritte le linee guida per l'uso Visual Studio Developer Community.
 ms.date: 6/30/2020
 ms.topic: conceptual
 author: madskristensen
@@ -8,73 +8,73 @@ ms.author: madsk
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0722716b086877d5522b9ef8fae79976fbdb0805
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21cf3bd6a0c208a78cd391f93702865e905482e0
+ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894673"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "113756891"
 ---
 # <a name="developer-community-guidelines"></a>Linee guida per Developer Community
 
-La community degli sviluppatori tiene traccia dei problemi e dei suggerimenti sulle funzionalità di Visual Studio.
+L'Community per sviluppatori tiene traccia dei problemi e dei suggerimenti di funzionalità per Visual Studio.
 
 ## <a name="submitting-problems-and-suggestions"></a>Invio di problemi e suggerimenti
 
-La [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8) tiene traccia dei problemi e suggerimenti sulle funzionalità di Visual Studio.
+Il [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8) tiene traccia dei problemi e dei suggerimenti di funzionalità per Visual Studio.
 
 ### <a name="before-submitting-an-issue"></a>Prima di inviare un problema
 
-Cercare il problema nella community degli sviluppatori di Visual Studio per assicurarsi che non esista già. Se il problema persiste, effettuare i commenti pertinenti ed eseguire il cast dei voti.
+Cercare il problema in Visual Studio Developer Community per assicurarsi che non esista già. Se il problema esiste già, inserire commenti pertinenti e votare.
 
-Se il problema è una domanda, rivolgersi alla community [stack overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) usando il tag _Visual-Studio_. Il personale del supporto tecnico del cliente è in grado di monitorare questo tag e fornirà assistenza per rispondere alle domande.
+Se il problema è una domanda, chiedere alla community di [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) usando il tag _visual-studio_. Il personale del supporto clienti monitora il tag e consente di rispondere alle domande.
 
-Se non si riesce a trovare un problema esistente che descrive il bug o la funzionalità, inviare un problema usando le linee guida riportate di seguito.
+Se non è possibile trovare un problema esistente che descrive il bug o la funzionalità, inviare un problema usando le linee guida seguenti.
 
-### <a name="writing-a-good-bug-report-or-feature-suggestion"></a>Creazione di un report di bug o di un suggerimento di funzionalità valido
+### <a name="writing-a-good-bug-report-or-feature-suggestion"></a>Scrittura di un report di bug o di un suggerimento di funzionalità
 
-- Consente di archiviare solo un problema o una richiesta di funzionalità per ogni problema.
+- File solo un problema o una richiesta di funzionalità per problema.
 
-  - La combinazione di più problemi o richieste di funzionalità in un singolo problema rende più difficile la diagnosi e la maggior parte degli altri utenti a votare il problema.
-  - Non aggiungere il problema come commento a un problema esistente a meno che non si tratti di un input identico. Molti problemi hanno un aspetto simile, ma hanno diverse cause, il che rende più difficile la diagnosi del problema.
+  - La combinazione di più problemi o richieste di funzionalità in un singolo problema rende più difficile la diagnosi e il voto degli altri utenti per il problema.
+  - Non aggiungere il problema come commento a un problema esistente a meno che non si tratti di un input identico. Molti problemi hanno un aspetto simile, ma hanno cause diverse, il che rende più difficile la diagnosi del problema.
 
-- Maggiori sono le informazioni che è possibile fornire, più semplice sarà la riproduzione e la risoluzione del problema.
-- Per ogni problema, includere i passaggi seguenti.
+- Più informazioni è possibile fornire, più sarà facile riprodurre e risolvere il problema.
+- Includere i passaggi seguenti con ogni problema.
 
-  - Passaggi riproducibili (1... 2... 3...) e ciò che ci aspettavamo rispetto a quello che hai sperimentato.
-  - Immagini, animazioni o un collegamento a un video. Le immagini e le animazioni illustrano la procedura di ripetizione, ma _non_ la sostituiscono.
-  - A seconda dei casi, un frammento di codice che illustra il problema o un collegamento a un repository di codice può facilmente accedere al computer per ricreare il problema.
+  - Passaggi riproducibili (1... 2... 3...) e ciò che ci si aspetta rispetto a ciò che si è verificato.
+  - Immagini, animazioni o un collegamento a un video. Le immagini e le animazioni illustrano i passaggi di _riproduzione, ma non li_ sostituiscono.
+  - In base alle esigenze, un frammento di codice che illustra il problema o un collegamento a un repository di codice è possibile eseguire facilmente il pull verso il basso nel computer per ricreare il problema.
 
-- Ricordarsi di eseguire i passaggi seguenti:
+- Ricordarsi di seguire questa procedura:
 
-  - Eseguire una ricerca per verificare se esiste un duplicato. In tal caso, votare il problema esistente, fornendo commenti o chiarimenti aggiuntivi in base alle esigenze.
-  - Ricreare il problema dopo aver disabilitato tutte le estensioni. Se il problema è causato da un'estensione installata, archiviare rispettivamente un problema nell'estensione.
+  - Cercare per verificare se esiste un duplicato. In tal caso, votare il problema esistente, fornendo commenti o chiarimenti aggiuntivi in base alle esigenze.
+  - Ricreare il problema dopo la disabilitazione di tutte le estensioni. Se il problema è causato da un'estensione installata, determinare un problema rispettivamente nell'estensione.
   - Semplificare il codice intorno al problema in modo da poterlo isolare meglio.
 
-Anche in caso di problemi che includono dettagli avanzati, potrebbe non essere possibile riprodurre il problema e richiedere ulteriori informazioni.
+Anche con problemi che includono dettagli completi, potrebbe non essere possibile riprodurre il problema e potrebbe richiedere altre informazioni.
 
-## <a name="managing-problem-reports"></a>Gestione dei report di problemi
+## <a name="managing-problem-reports"></a>Gestione dei report sui problemi
 
-La valutazione di un problema è un processo in più passaggi che viene eseguito in modo collaborativo all'interno del team di funzionalità. Il Triaging richiede in genere una settimana, ma potrebbe richiedere più tempo. L'obiettivo del Triaging è fornire una chiara comprensione delle conseguenze del problema. Ad esempio, dopo la valutazione è possibile stabilire se si prevede di risolvere il problema o attendere un ulteriore feedback della community.
+La analisi di un problema è un processo in più passaggi che viene eseguito in modo collaborativo all'interno del team di funzionalità. La ricerca richiede in genere una settimana, ma può richiedere più tempo. L'obiettivo della ricerca è fornire una chiara comprensione di ciò che accadrà al problema. Ad esempio, dopo la triage si sa se si prevede di risolvere il problema o di attendere altri commenti e suggerimenti della community.
 
-Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovano le informazioni inviate nel proprio ciclo di vita. Poiché i team dei prodotti Visual Studio esaminano il feedback, lo impostano con uno stato appropriato. Tenere traccia dello stato di avanzamento dei report dei problemi facendo riferimento agli [Stati del problema e alle domande frequenti](./report-a-problem.md).
+Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovano le informazioni inviate nel proprio ciclo di vita. Quando Visual Studio team del prodotto esaminano i commenti e suggerimenti, lo impostano con uno stato appropriato. Tenere traccia dello stato delle segnalazioni di problemi facendo riferimento agli [stati del problema e alle domande frequenti.](./report-a-problem.yml)
 
-### <a name="prioritizing-which-issues-to-fix"></a>Assegnazione di priorità ai problemi da correggere
+### <a name="prioritizing-which-issues-to-fix"></a>Assegnazione della priorità ai problemi da risolvere
 
-Non è possibile risolvere tutti i problemi segnalati. Alcuni sono troppo costosi da correggere, altri potrebbero regredire altre aree di funzionalità e altri potrebbero avere un effetto troppo basso. Questo potrebbe risultare deludente se è stato richiesto di inviare un report sui problemi. Siamo stati tutti disponibili, sia in questo progetto che in altri utenti a cui è stato contribuito. Se un problema è stato chiuso e si ritiene che il motivo per cui è stato fornito non sia soddisfacente, è possibile chiarire il caso d'uso e richiedere che il problema venga riattivato per un altro passaggio. A questo punto, è possibile richiedere ulteriori informazioni.
+Non è possibile risolvere tutto il problema segnalato. Alcune sono troppo costose da correggere, altre potrebbero regredire in altre aree di funzionalità e altre potrebbero avere un impatto troppo basso. Si è compreso che ciò potrebbe risultare insodd disderci se si è preso il tempo necessario per inviare una segnalazione del problema. Ci siamo stati tutti, in questo progetto o in altri progetti a cui abbiamo contribuito. Se un problema è stato chiuso e si ritieni che il motivo fornito non sia soddisfacente, puoi chiarire il caso d'uso e richiedere che il problema sia ri-attivato per un altro passaggio. A questo punto, è possibile richiedere altre informazioni.
 
 ### <a name="missing-important-information"></a>Informazioni importanti mancanti
 
-Quando in un problema mancano informazioni importanti, viene assegnato lo stato _needs more info (altre informazioni_ ). Il problema viene commentato con le informazioni specifiche necessarie e si riceverà una notifica tramite posta elettronica. Se le informazioni non vengono ricevute entro sette giorni, viene inviato un promemoria. Successivamente, il ticket viene chiuso dopo 14 giorni di inattività.
+Quando un problema non contiene informazioni importanti, viene assegnato lo _stato Altre_ informazioni necessarie. Si commenta il problema con le informazioni specifiche necessarie e si riceverà una notifica tramite posta elettronica. Se le informazioni non vengono ricevute entro sette giorni, verrà inviato un promemoria. Successivamente, il ticket viene chiuso dopo 14 giorni di inattività.
 
 ### <a name="other-product"></a>Altro prodotto
 
-In alcuni casi, quando si segnala un problema, la causa è causata da un altro prodotto e non da Visual Studio. Potrebbe trattarsi di un'altra applicazione correlata o di un'estensione. 
+A volte quando si segnala un problema, risulta essere causato da un altro prodotto e non da Visual Studio. Potrebbe trattarsi di un'altra applicazione correlata o di un'estensione. 
 
-In tal caso, il problema verrà chiuso e verrà chiesto di aprirlo con l'altro prodotto. Di seguito sono riportate alcune posizioni comuni per archiviare i problemi:
+In questo caso, il problema verrà chiuso e verrà chiesto di aprirlo con l'altro prodotto. Di seguito sono riportati alcuni punti comuni in cui è possibile descrizione di questi problemi:
 
 * [SQL Server](https://feedback.azure.com/forums/908035-sql-server)
-* [Supporto per le sottoscrizioni di Visual Studio](https://feedback.azure.com/forums/908035-sql-server)
+* [Visual Studio Supporto della sottoscrizione](https://feedback.azure.com/forums/908035-sql-server)
 * [Office](https://support.office.com/article/how-do-i-give-feedback-on-microsoft-office-2b102d44-b43f-4dd2-9ff4-23cf144cfb11)
 * [Windows](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)
 
@@ -83,38 +83,38 @@ In tal caso, il problema verrà chiuso e verrà chiesto di aprirlo con l'altro p
 - [Come aumentare le probabilità di correzione di un problema di prestazioni](./how-to-increase-chances-of-performance-issue-being-fixed.md)
 - [Risolvere i problemi e creare i log per problemi relativi a MSBuild](./msbuild-logs.md)
 
-## <a name="managing-feature-suggestions"></a>Gestione dei suggerimenti sulle funzionalità
+## <a name="managing-feature-suggestions"></a>Gestione dei suggerimenti per le funzionalità
 
-I suggerimenti sulle funzionalità rappresentano un mezzo di comunicazione tra Microsoft e i membri della community degli sviluppatori. Tecnicamente, è possibile che tutte le richieste di funzionalità rimangano aperte per sempre. Tuttavia, mantenere aperti i problemi ridurrebbe la visibilità della community sullo stato effettivo di una funzionalità. Si chiudono quindi le richieste di funzionalità che non verranno indirizzate e verranno assegnate le funzionalità che potrebbero essere indirizzate all'etichetta _sotto la revisione_ .
+I suggerimenti per le funzionalità sono un mezzo di comunicazione tra microsoft e i membri della community di sviluppatori. Tecnicamente, è possibile mantenere tutte le richieste di funzionalità aperte per sempre. Ma mantenere aperti i problemi ridurrebbe la visibilità della community sullo stato effettivo di una funzionalità. Pertanto, le richieste di funzionalità non vengono indirizzate e vengono assegnate le funzionalità che potrebbero essere indirizzate _all'etichetta Sotto_ revisione.
 
-Se è stata suggerita una funzionalità, è possibile che non si preveda di risolvere la richiesta. È chiaro che. Ci siamo già presenti in questo progetto o in altri utenti a cui è stato contribuito. Quindi, assicuratevi che tutti gli input siano apprezzati. Non intraprendere un attacco personale quando si chiude o si assegna l'etichetta _in revisione_ al suggerimento. Se si ritiene che il suggerimento per le funzionalità meriti di rimanere aperto, chiarire il caso d'uso e contattarci o raccogliere più voti.
+Se è stata suggerita una funzionalità, si potrebbe essere rimasti delusi dal fatto che non si prevede di risolvere la richiesta. Questo è comprensibile. Tutti gli utenti sono stati presenti in questo progetto o in altri progetti a cui abbiamo contribuito. Quindi, siamo certi che tutti i tuoi input sono molto amate. Non prendere offesa personale quando chiudiamo o assegniamo _l'etichetta Sotto_ revisione al suggerimento. Se il suggerimento della funzionalità merita di rimanere aperto, chiarire il caso d'uso e contattare Microsoft o raccogliere più voti.
 
-Nel processo decisionale si osserveranno le seguenti caratteristiche relative al suggerimento sulle funzionalità:
+Nel processo decisionale vengono trattate le caratteristiche seguenti relative al suggerimento di funzionalità:
 
 - Corrisponde alla direzione generale del prodotto?
-- È possibile consentirne la compilazione e la gestione?
-- Si allineano alla strategia di [Roadmap](/visualstudio/productinfo/vs-roadmap) complessiva?
-- Dispone del supporto della community, come indicato da voti e commenti?
-- Ci piace anche con il supporto della community di basso livello?
+- È possibile permettersi di crearlo e gestirlo?
+- È in linea con la strategia di [roadmap](/visualstudio/productinfo/vs-roadmap) complessiva?
+- Ha il supporto della community, come indicato da voti e commenti?
+- Ci piace, anche con un basso supporto della community?
 
-Se non è possibile rispondere a queste domande, verrà chiusa. Tuttavia, spesso il suggerimento resterà aperto come _Revisione_ per raccogliere altri commenti della community.
+Quando non è possibile rispondere "sì" a una di queste domande, la si chiude. Ma spesso il suggerimento rimane aperto come _Sotto revisione_ per raccogliere altri commenti e suggerimenti della community.
 
-Se un suggerimento non corrisponde alla direzione generale del prodotto, verrà chiuso come *fuori ambito*. Potrebbero ad esempio essere presenti investimenti simili in altri membri della famiglia di prodotti Visual Studio. In alternativa, la funzionalità suggerita potrebbe essere rilevante solo per alcune persone, rendendo un'estensione più adatta per fornirla.
+Se un suggerimento non corrisponde alla direzione complessiva del prodotto, verrà chiuso come *Fuori ambito.* Ad esempio, si potrebbero avere investimenti simili in altri membri della Visual Studio di prodotti. In caso contrario, la funzionalità suggerita potrebbe essere pertinente solo per poche persone, rendendo un'estensione più adatta per fornirla.
 
-Tenere traccia dello stato di avanzamento del suggerimento per le funzionalità facendo riferimento agli [stati dei suggerimenti e alle domande frequenti](./report-a-problem.md).
+Tenere traccia dello stato di avanzamento del suggerimento di funzionalità facendo riferimento agli stati [dei suggerimenti e alle domande frequenti.](./report-a-problem.yml)
 
-## <a name="discussion-etiquette"></a>Galateo discussione
+## <a name="discussion-etiquette"></a>Etichetta di discussione
 
-Per rendere chiara e trasparente la conversazione, limitare la discussione all'inglese e tener presente le informazioni rilevanti per il problema. Sii attento ad altri e prova sempre a essere cortese e professionale.
+Per mantenere la conversazione chiara e trasparente, limitare la discussione all'inglese e mantenere le informazioni rilevanti per il problema. Essere premurosi per gli altri e cercare sempre di essere cortesi e professionali.
 
-Per ulteriori informazioni, vedere la pagina relativa al [codice di comportamento della community Microsoft](https://answers.microsoft.com/en-us/page/codeofconduct).
+Per altre informazioni, vedere [il Codice di Community microsoft.](https://answers.microsoft.com/en-us/page/codeofconduct)
 
-Eventuali violazioni al galateo di discussione possono causare la rimozione del commento e la fine del divieto dell'utente.
+Qualsiasi violazione dell'etichetta di discussione può comportare la rimozione del commento e infine il divieto dell'utente.
 
 ## <a name="data-privacy"></a>Privacy dei dati
 
-I commenti e le risposte sono visibili pubblicamente, ma tutti i file allegati sono condivisi privatamente solo con Microsoft. Questa visibilità è vantaggiosa perché consente all'intera community di visualizzare i problemi e le soluzioni rilevati da altri utenti. Se si è interessati alla privacy dei dati o dell'identità, sono disponibili opzioni. Scopri di più sulla [privacy dei dati della community degli sviluppatori](./developer-community-privacy.md).
+I commenti e le risposte sono visibili pubblicamente, ma tutti i file allegati vengono condivisi privatamente solo con Microsoft. Questa visibilità è vantaggiosa perché consente all'intera community di visualizzare i problemi e le soluzioni trovati da altri utenti. Se si è interessati alla privacy dei dati o dell'identità, sono disponibili opzioni. Altre informazioni sulla privacy [dei Community per gli sviluppatori.](./developer-community-privacy.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Passa alla [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8) per segnalare problemi, suggerire funzionalità o esplorare i ticket esistenti. Buon lavoro.
+Passare all'Visual Studio [Developer Community](https://aka.ms/feedback/suggest?space=8) per segnalare problemi, suggerire funzionalità o esplorare i ticket esistenti. Buon lavoro.

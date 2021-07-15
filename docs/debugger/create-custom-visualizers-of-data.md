@@ -1,6 +1,6 @@
 ---
-title: Creare visualizzatori dati personalizzati | Microsoft Docs
-description: I visualizzatori del debugger di Visual Studio sono componenti che visualizzano i dati. Informazioni sui sei visualizzatori standard e su come è possibile scrivere o scaricare altri utenti.
+title: Creare visualizzatori di dati personalizzati | Microsoft Docs
+description: Visual Studio visualizzatori del debugger sono componenti che visualizzano i dati. Informazioni sui sei visualizzatori standard e su come è possibile scrivere o scaricare altri visualizzatori.
 ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
@@ -21,79 +21,107 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f3d9a907d0857e918069fc4542d59d87242d609
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8310133520231434ba7ed342a5e855892e3c53a
+ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865839"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114201741"
 ---
-# <a name="create-custom-data-visualizers"></a>Creare visualizzatori dati personalizzati
+# <a name="create-custom-data-visualizers"></a>Creare visualizzatori di dati personalizzati
 
- Un *Visualizzatore* fa parte dell' [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaccia utente del debugger che consente di visualizzare una variabile o un oggetto in modo appropriato al relativo tipo di dati. Ad esempio, un visualizzatore HTML interpreta una stringa HTML e visualizza il risultato come verrebbe visualizzato in una finestra del browser. Un visualizzatore bitmap interpreta una struttura bitmap e visualizza l'elemento grafico che rappresenta. Alcuni visualizzatori consentono di modificare e visualizzare i dati.
+ Un *visualizzatore* fa parte dell'interfaccia utente del debugger che visualizza una variabile o un oggetto in modo [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] appropriato per il tipo di dati. Ad esempio, un visualizzatore HTML interpreta una stringa HTML e visualizza il risultato come verrebbe visualizzato in una finestra del browser. Un visualizzatore bitmap interpreta una struttura bitmap e visualizza l'immagine che rappresenta. Alcuni visualizzatori consentono di modificare e visualizzare i dati.
 
- Il debugger di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] include sei visualizzatori standard. I visualizzatori di testo, HTML, XML e JSON funzionano su oggetti stringa. Il Visualizzatore dell'albero di WPF Visualizza le proprietà di una struttura ad albero visuale di un oggetto WPF. Il Visualizzatore DataSet funziona per gli oggetti DataSet, DataView e DataTable.
+ Il debugger di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] include sei visualizzatori standard. I visualizzatori di testo, HTML, XML e JSON funzionano su oggetti stringa. Il visualizzatore struttura ad albero WPF visualizza le proprietà di una struttura ad albero visuale di oggetti WPF. Il visualizzatore del set di dati funziona per gli oggetti DataSet, DataView e DataTable.
 
-È possibile che altri visualizzatori siano disponibili per il download da Microsoft, da terze parti e dalla community. È anche possibile scrivere visualizzatori personalizzati e installarli nel [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] debugger.
+Altri visualizzatori possono essere disponibili per il download da Microsoft, da terze parti e dalla community. È anche possibile scrivere visualizzatori personalizzati e installarli nel [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] debugger.
 
-Nel debugger, un visualizzatore è rappresentato da un'icona di lente di ingrandimento ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icona del Visualizzatore"). È possibile selezionare l'icona in un **DataTip**, nella finestra **espressioni di controllo** del debugger o nella finestra di dialogo controllo **immediato** , quindi selezionare il visualizzatore appropriato per l'oggetto corrispondente.
+Nel debugger un visualizzatore è rappresentato da un'icona a forma di lente di ingrandimento ![VisualizzatoreIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icona del visualizzatore"). È possibile selezionare l'icona in un suggerimento **dati,** nella finestra Espressioni di controllo del **debugger** o nella finestra di dialogo Controllo immediato e quindi selezionare il visualizzatore appropriato per l'oggetto corrispondente. 
 
 ## <a name="write-custom-visualizers"></a>Scrivere visualizzatori personalizzati
 
  > [!NOTE]
- > Per creare un visualizzatore personalizzato per il codice nativo, vedere l'esempio del [Visualizzatore nativo del debugger SQLite](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) . I visualizzatori personalizzati non sono supportati per le app UWP e Windows 8. x.
+ > Per creare un visualizzatore personalizzato per il codice nativo, vedere l'esempio di visualizzatore del debugger nativo [di SQLite.](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) I visualizzatori personalizzati non sono supportati per le app UWP Windows 8.x.
 
 È possibile scrivere un visualizzatore personalizzato per un oggetto di qualsiasi classe gestita, ad eccezione di <xref:System.Object> e <xref:System.Array>.
 
 L'architettura di un visualizzatore del debugger è definita da due parti:
 
-- Il *lato debugger* viene eseguito all'interno del debugger di Visual Studio e crea e visualizza l'interfaccia utente del visualizzatore.
+- Il *lato debugger viene* eseguito all'interno Visual Studio debugger e crea e visualizza l'interfaccia utente del visualizzatore.
 
-- Il *lato oggetto del debug* viene eseguito all'interno del processo sottoposto a debug in Visual Studio (l'*oggetto del debug*). L'oggetto dati da visualizzare, ad esempio un oggetto stringa, esiste nel processo oggetto del debug. Il lato oggetto del debug invia l'oggetto al lato debugger, che lo Visualizza nell'interfaccia utente creata.
+- Il *lato oggetto del debug* viene eseguito all'interno del processo sottoposto a debug in Visual Studio (l'*oggetto del debug*). L'oggetto dati da visualizzare(ad esempio, un oggetto String) esiste nel processo dell'oggetto del debug. Il lato oggetto del debug invia l'oggetto al lato debugger, che lo visualizza nell'interfaccia utente creata.
 
-Il lato debugger riceve l'oggetto dati da un *provider di oggetti* che implementa l' <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaccia. Il lato oggetto del debug invia l'oggetto tramite l' *origine dell'oggetto*, derivata da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+Il lato debugger riceve l'oggetto dati da un *provider di oggetti* che implementa l'interfaccia <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> . Il lato oggetto del debug invia l'oggetto tramite *l'origine oggetto*, derivata da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
 
-Il provider di oggetti può anche inviare dati all'origine oggetto, che consente di scrivere un visualizzatore in grado di modificare i dati. Si esegue l'override del provider di oggetti per comunicare con l'analizzatore di espressioni e l'origine dell'oggetto.
+Il provider di oggetti può anche inviare dati all'origine dell'oggetto, che consente di scrivere un visualizzatore in grado di modificare i dati. Eseguire l'override del provider di oggetti per parlare con l'analizzatore di espressioni e l'origine dell'oggetto.
 
-Il lato del debug e il lato debugger comunicano tra loro tramite <xref:System.IO.Stream> metodi che serializzano un oggetto dati in un oggetto <xref:System.IO.Stream> e deserializzano di <xref:System.IO.Stream> nuovo in un oggetto dati.
+Il lato oggetto del debug e il lato debugger comunicano tra loro tramite metodi che serializzano un oggetto dati in un oggetto e deserializzano nuovamente <xref:System.IO.Stream> in un oggetto <xref:System.IO.Stream> <xref:System.IO.Stream> dati.
 
-È possibile scrivere un visualizzatore per un tipo generico solo se il tipo è un tipo aperto. Questa limitazione è identica a quella prevista quando si usa l'attributo `DebuggerTypeProxy`. Per informazioni dettagliate, vedere [usare l'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).
+È possibile scrivere un visualizzatore per un tipo generico solo se il tipo è aperto. Questa limitazione è identica a quella prevista quando si usa l'attributo `DebuggerTypeProxy`. Per informazioni dettagliate, [vedere Usare l'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).
 
-Ai visualizzatori personalizzati possono essere associate considerazioni sulla sicurezza. Vedere [considerazioni sulla sicurezza del Visualizzatore](../debugger/visualizer-security-considerations.md).
+Ai visualizzatori personalizzati possono essere associate considerazioni sulla sicurezza. Vedere Considerazioni [sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md).
 
-I passaggi seguenti offrono una panoramica di alto livello della creazione del visualizzatore. Per istruzioni dettagliate, vedere [procedura dettagliata: scrivere un visualizzatore in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oppure [procedura dettagliata: scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
+I passaggi seguenti offrono una panoramica generale della creazione del visualizzatore. Per istruzioni dettagliate, vedere [procedura dettagliata: scrivere un visualizzatore in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oppure [procedura dettagliata: scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
 
 ### <a name="to-create-the-debugger-side"></a>Per creare il lato debugger
 
-Per creare l'interfaccia utente del visualizzatore sul lato debugger, creare una classe che erediti da <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> ed eseguire l'override del <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodo per visualizzare l'interfaccia. È possibile usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> per visualizzare Windows Form, finestre di dialogo e controlli nel visualizzatore.
+Per creare l'interfaccia utente del visualizzatore sul lato debugger, creare una classe che eredita da ed eseguire l'override del metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> per visualizzare l'interfaccia. È possibile usare per visualizzare Windows, finestre di dialogo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> e controlli nel visualizzatore.
 
 1. Usare metodi <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> per fornire l'oggetto visualizzato al lato debugger.
 
 1. Creare una classe che eredita da <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.
 
-1. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> per visualizzare l'interfaccia. Usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> i metodi per visualizzare Windows Form, finestre di dialogo e controlli nell'interfaccia.
+1. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> per visualizzare l'interfaccia. Usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> i metodi per Windows form, finestre di dialogo e controlli nell'interfaccia.
 
-4. Applicare <xref:System.Diagnostics.DebuggerVisualizerAttribute> , assegnando al visualizzatore la visualizzazione ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> ).
+1. Applicare <xref:System.Diagnostics.DebuggerVisualizerAttribute> , fornendo il visualizzatore da visualizzare ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> ).
+
+#### <a name="special-debugger-side-considerations-for-net-50"></a>Considerazioni speciali sul lato debugger per .NET 5.0+
+
+I visualizzatori personalizzati trasferiscono i dati tra i lati *dell'oggetto del debug* e del *debugger* tramite la serializzazione binaria usando la classe per <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> impostazione predefinita. Tuttavia, questo tipo di serializzazione viene ritardato in .NET 5 e versione superiore a causa di problemi di sicurezza riguardanti *le* vulnerabilità infissibili.
+Inoltre, è stato contrassegnato come completamente obsoleto in ASP.NET Core 5 e il relativo utilizzo genererà un'eccezione come descritto nella [documentazione ASP.NET Core .](/dotnet/core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete)
+Di conseguenza, questa sezione descrive i passaggi necessari da eseguire in modo che il visualizzatore sia ancora supportato in questo scenario.
+
+- Per motivi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A> compatibilità, il metodo sottoposto a override nella sezione precedente accetta ancora un oggetto <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> . Tuttavia, è effettivamente di tipo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider2> .
+Eseguire quindi il cast `objectProvider` dell'oggetto all'interfaccia aggiornata.
+
+- Quando si inviano oggetti, ad esempio comandi o dati, al lato oggetto del debug usare il metodo per passarlo a un flusso, determinando il formato di *serializzazione* migliore da usare in base al runtime del processo dell'oggetto `IVisualizerObjectProvider2.Serialize` del *debug.*
+Passare quindi il flusso al `IVisualizerObjectProvider2.TransferData` metodo .
+
+- Se il *componente visualizzatore lato* oggetto del debug deve restituire qualsiasi elemento al *lato debugger,* si trova nell'oggetto <xref:System.IO.Stream> restituito dal metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A> . Usare il `IVisualizerObjectProvider2.GetDeserializableObjectFrom` metodo per ottenere <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDeserializableObject> un'istanza da essa ed elaborarla in base alle esigenze.
+
+Vedere la sezione Considerazioni speciali sul lato oggetto del debug per [.NET 5.0+](#special-debuggee-side-considerations-for-net-50) per informazioni sulle altre modifiche necessarie sul lato oggetto del debug quando l'uso della *serializzazione* binaria non è supportato.
+
+> [!NOTE]
+> Per altre informazioni sul problema, vedere la Guida alla [sicurezza di BinaryFormatter](/dotnet/standard/serialization/binaryformatter-security-guide).
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>Per creare l'origine dell'oggetto visualizzatore per il lato oggetto del debug
 
-Nel codice del lato debugger, modificare <xref:System.Diagnostics.DebuggerVisualizerAttribute> , assegnando il tipo da visualizzare (origine oggetto del lato oggetto del debug) ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ). La `Target` proprietà imposta l'origine dell'oggetto. Se si omette l'origine oggetto, il Visualizzatore utilizzerà un'origine oggetto predefinita.
+Nel codice lato debugger modificare , fornendo il tipo da visualizzare (l'origine dell'oggetto lato <xref:System.Diagnostics.DebuggerVisualizerAttribute> oggetto del debug) ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ). La `Target` proprietà imposta l'origine dell'oggetto. Se si omette l'origine dell'oggetto, il visualizzatore userà un'origine oggetto predefinita.
 
 ::: moniker range=">=vs-2019"
-Il codice del lato oggetto del debug contiene l'origine dell'oggetto che viene visualizzata. L'oggetto dati può eseguire l'override dei metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> . Una DLL del lato oggetto del debug è necessaria se si vuole creare un visualizzatore autonomo.
+Il codice lato oggetto del debug contiene l'origine dell'oggetto che viene visualizzato. L'oggetto dati può eseguire l'override dei metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> . Se si vuole creare un visualizzatore autonomo, è necessaria una DLL lato oggetto del debug.
 ::: moniker-end
 
-Nel codice del lato oggetto del debug:
+Nel codice lato oggetto del debug:
 
-- Per consentire al visualizzatore di modificare gli oggetti dati, l'origine dell'oggetto deve ereditare da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ed eseguire l'override dei `TransferData` `CreateReplacementObject` metodi o.
+- Per consentire al visualizzatore di modificare gli oggetti dati, l'origine dell'oggetto deve ereditare da ed eseguire <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> l'override `TransferData` dei metodi o `CreateReplacementObject` .
 
-- Se è necessario supportare la funzionalità multitargeting nel Visualizzatore, è possibile usare i seguenti moniker del Framework di destinazione (TFM) nel file di progetto lato oggetto del debug.
+- Se è necessario supportare il multi-targeting nel visualizzatore, è possibile usare i TFM (Target Framework Moniker) seguenti nel file di progetto sul lato oggetto del debug.
 
    ```xml
    <TargetFrameworks>net20;netstandard2.0;netcoreapp2.0</TargetFrameworks>
    ```
 
    Questi sono gli unici TFM supportati.
+
+#### <a name="special-debuggee-side-considerations-for-net-50"></a>Considerazioni speciali sul lato oggetto del debug per .NET 5.0+
+
+> [!IMPORTANT]
+> Potrebbero essere necessari passaggi aggiuntivi per il funzionamento di un visualizzatore in .NET 5.0 e versione superiore a causa di problemi di sicurezza relativi al metodo di serializzazione binaria sottostante usato per impostazione predefinita. Leggere questa [sezione prima](#special-debugger-side-considerations-for-net-50) di continuare.
+
+- Se il visualizzatore implementa il metodo , usare il metodo appena aggiunto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A> disponibile nella versione più recente di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetDeserializableObject%2A> `VisualizerObjectSource` . L'oggetto restituito consente di determinare il formato di serializzazione dell'oggetto (binario o JSON) e di deserializzare l'oggetto sottostante in modo che <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDeserializableObject> possa essere usato.
+
+- Se il *lato oggetto* del debug restituisce dati al lato *debugger* come parte della chiamata, serializzare la risposta nel flusso del lato `TransferData` *debugger* tramite il <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A> metodo .
 
 ## <a name="see-also"></a>Vedi anche
 

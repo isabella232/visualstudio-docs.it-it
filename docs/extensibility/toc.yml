@@ -9,7 +9,7 @@
       href: starting-to-develop-visual-studio-extensions.md
     - name: 'Creare la prima estensione: Hello World'
       href: extensibility-hello-world.md
-    - name: Aggiornare le estensioni Visual Studio 2022 (anteprima)
+    - name: Aggiornare le estensioni per Visual Studio 2022 (anteprima)
       items:
         - name: Aggiornare un'estensione
           href: migration/update-visual-studio-extension.md
@@ -21,7 +21,7 @@
           href: migration/breaking-api-list.md
         - name: Elenco di API rimosse
           href: migration/removed-api-list.md
-        - name: PiA migrato
+        - name: Pia di cui è stata eseguita la migrazione
           href: migration/migrated-assemblies.md
     - name: Novità di Visual Studio 2019 SDK
       items:
@@ -42,7 +42,7 @@
         - name: Eseguire la migrazione della registrazione COM del debugger
           href: migrate-debugger-com-registration.md
         - name: Domande frequenti
-          href: faq-2017.md
+          href: faq-2017.yml
     - name: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017
       href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
     - name: Eseguire il round trip delle estensioni per Visual Studio

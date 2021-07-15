@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c38650704a0f95c14e344e7112a8b3cbe44264b6
-ms.sourcegitcommit: 15821c790d6498210f30b3268402ffad6bb70c7c
+ms.openlocfilehash: d882c7b642a64720128859b89e3bcd899bc8ab85
+ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "113725534"
+ms.locfileid: "113756940"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -25,15 +25,16 @@ ms.locfileid: "113725534"
 
 ## <a name="visual-studio-2022-preview"></a>Visual Studio 2022 Preview
 
-Nella tabella seguente sono elencati i numeri di build e le date Visual Studio 2022 Preview, fino a oggi.
+Nella tabella seguente sono elencati i numeri di build e le date di rilascio Visual Studio 2022 Preview, fino ad oggi.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione della build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 17.0.0 | Preview 2 | 14 luglio 2021 | 17.0.31512.422 |
 | 17.0.0 | Preview 1.1 | 24 giugno 2021 | 17.0.31423.177 |
 | 17.0.0 | Preview 1 | 17 giugno 2021 | 17.0.31410.414 |
 
 > [!NOTE]
-> Per visualizzare i dati per la versione precedente, vedere i numeri di build [Visual Studio 2019](visual-studio-build-numbers-and-release-dates.md?view=vs-2019&preserve-view=true)e le date di rilascio.
+> Per visualizzare i dati per la versione precedente, vedere Visual Studio numeri di build [2019 e date di rilascio](visual-studio-build-numbers-and-release-dates.md?view=vs-2019&preserve-view=true).
 
 ::: moniker-end
 
@@ -43,7 +44,7 @@ Nella tabella seguente sono elencati i numeri di build e le date Visual Studio 2
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione della build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 16.11.0 | Preview 3 | 13 luglio 2021 | 16.11.31507.150 |
 | 16.9.9 | Versione | 13 luglio 2021 | 16.9.31501.217 |
@@ -248,9 +249,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.0.0 | Preview 1 | 4 dicembre 2018 | 16.0.28329.73 |
 
 > [!NOTE]
-> Per visualizzare i dati per la *versione* precedente, vedere Visual Studio numeri di [build 2017 e date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)
+> Per visualizzare i dati per la *versione precedente,* vedere numeri di build [Visual Studio 2017 e date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)
 >
->Per visualizzare i dati per la *versione* successiva, vedere Visual Studio numeri di [build 2022 e date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2022&preserve-view=true)
+>Per visualizzare i dati per la *versione* successiva, vedere i [numeri di build Visual Studio 2022 e le date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2022&preserve-view=true)
 
 ::: moniker-end
 
@@ -260,7 +261,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Versione**      | **Channel** | **Data di rilascio**   | **Versione della build** |
+| **Versione**      | **Channel** | **Data di rilascio**   | **Versione build** |
 |------------------|-------------|--------------------|-------------------|
 | 15.9.37          | Versione     | 13 luglio 2021      | 15.9.28307.1585   |
 | 15.9.36          | Versione     | 11 maggio 2021       | 15.9.28307.1525   |
