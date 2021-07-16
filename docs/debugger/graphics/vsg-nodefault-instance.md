@@ -1,23 +1,23 @@
 ---
-description: Definisce in base alla sua presenza se viene fornita un'istanza predefinita della classe VsgDbg, che fornisce l'interfaccia di acquisizione a livello di codice.
+description: Definisce in base alla presenza se viene fornita un'istanza predefinita della classe VsgDbg Class, che fornisce l'interfaccia di acquisizione a livello di codice.
 title: VSG_NODEFAULT_INSTANCE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eccdd71c66a9f25e1b0a26f4ea851bcccb738a0b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 75bb54adb5667f3e8246034eca1075d339755785
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155246"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232414"
 ---
 # <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
-Definisce in base alla sua presenza se viene fornita un'istanza predefinita della classe [VsgDbg](vsgdbg-class.md) , che fornisce l'interfaccia di acquisizione a livello di codice.
+Definisce in base alla presenza se viene fornita un'istanza predefinita della classe [VsgDbg Class,](vsgdbg-class.md) che fornisce l'interfaccia di acquisizione a livello di codice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ VsgDbg *g_pVsgDbg;
 
  Se l'istanza predefinita non è disabilitata, verrà automaticamente inizializzata prima dell'esecuzione del programma e automaticamente distrutta al termine di tale programma. Non è necessario inizializzare o annullare l'inizializzazione di tale istanza in modo esplicito.
 
- Per disabilitare l'istanza predefinita, è necessario definire `VSG_NODEFAULT_INSTANCE` prima di includere `vsgcapture.h` nel programma.
+ Per disabilitare l'istanza predefinita, è necessario definire `VSG_NODEFAULT_INSTANCE` prima di includere nel `vsgcapture.h` programma.
 
 ## <a name="example"></a>Esempio
  In questo esempio viene illustrato come disabilitare l'istanza predefinita:

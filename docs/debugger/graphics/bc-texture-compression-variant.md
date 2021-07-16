@@ -1,21 +1,21 @@
 ---
 title: Variante di compressione della trama BC | Microsoft Docs
-description: Usare la variante di compressione della trama BC per consentire la compressione dei blocchi (BC) sulle trame con un formato pixel che è una variante di B8G8R8X8, B8G8R8A8 o R8G8B8A8.
+description: Usare la variante di compressione della trama BC per consentire la compressione a blocchi (BC) nelle trame con un formato pixel che è una variante di B8G8R8X8, B8G8R8A8 o R8G8B8A8.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 144065c5ee04c75582307440b4cee6242b48bc01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1a8699980599a590b6f6e58e14ea504f52db609
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874613"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232752"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante di compressione della trama BC
 Abilita la compressione a blocchi in tutte le trame con un formato di pixel che è una variante del formato B8G8R8X8, B8G8R8A8 o R8G8B8A8.
@@ -63,4 +63,4 @@ Abilita la compressione a blocchi in tutte le trame con un formato di pixel che 
  Questa variante esegue la compressione a blocchi delle trame in fase di esecuzione, prima della chiamata a `CreateTexture2D`. Per il codice di produzione, questo approccio è sconsigliato perché le trame a dimensioni intere occupano più spazio su disco e perché il passaggio aggiuntivo può aumentare in modo significativo i tempi di caricamento nell'app, perché la compressione basata su blocchi richiede risorse di elaborazione notevoli per la codifica. È invece consigliabile comprimere le trame offline usando un editor o programma per l'elaborazione di immagini che faccia parte della pipeline di compilazione. Questi approcci riducono i requisiti di spazio su disco ed eliminano sovraccarichi in fase di esecuzione nell'app, oltre a restituire una quantità di tempo di elaborazione che consente di mantenere la migliore qualità di immagine.
 
 ## <a name="see-also"></a>Vedi anche
-- [Variante delle dimensioni della trama metà/trimestre](half-quarter-texture-dimensions-variant.md)
+- [Variante delle dimensioni della trama a metà trimestre](half-quarter-texture-dimensions-variant.md)

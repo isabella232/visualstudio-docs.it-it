@@ -1,21 +1,21 @@
 ### YamlMime:Landing
 title: Organizzare e modificare il codice in Visual Studio
-summary: Informazioni sull'utilizzo dei progetti di codice, sull'utilizzo delle funzionalità dell'editor del codice e sulla gestione di uno stile di codice coerente.
+summary: Informazioni sull'uso dei progetti di codice, sull'uso delle funzionalità dell'editor di codice e sulla gestione di uno stile di codice coerente.
 metadata:
   title: Funzionalità dell'editor del codice
   description: Informazioni sulle funzionalità di modifica del codice in Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: jillre
-  ms.author: jillfra
+  author: terryglee
+  ms.author: tglee
   ms.date: 10/15/2019
-  ms.openlocfilehash: 9879f8709aea87a72c10319de4e0c5fdb6f3ff3e
-  ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+  ms.openlocfilehash: 4c5fd5efd2c3473698c488357bbc512e8e43e993
+  ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 10/19/2020
-  ms.locfileid: "92197465"
+  ms.lasthandoff: 07/15/2021
+  ms.locfileid: "114232882"
 landingContent:
 - title: Aprire o creare un progetto
   linkLists:
@@ -29,7 +29,7 @@ landingContent:
     links:
     - text: Usare Visual Studio senza progetti o soluzioni
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-    - text: Usare la ricerca di Visual Studio
+    - text: Usare Visual Studio ricerca
       url: visual-studio-search.md
 - title: Usare le funzionalità di modifica
   linkLists:
@@ -43,7 +43,7 @@ landingContent:
       url: code-generation-in-visual-studio.md
     - text: Usare IntelliSense per il completamento del codice
       url: using-intellisense.md
-    - text: Gestisci preferenze stile codice
+    - text: Gestire le preferenze di stile del codice
       url: code-styles-and-code-cleanup.md
     - text: Analisi codice
       url: ../code-quality/roslyn-analyzers-overview.md

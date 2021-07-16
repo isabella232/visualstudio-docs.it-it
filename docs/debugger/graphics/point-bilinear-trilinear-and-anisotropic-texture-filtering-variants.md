@@ -1,21 +1,21 @@
 ---
-title: Varianti di filtro della trama a punti/bilineari/trilineari/anisotropico
-description: Se il costo in termini di prestazioni di una variante di filtro di trama, bilineare, trilineare o anisotropico è significativo, è possibile considerare se il suo utilizzo vale il costo.
+title: Varianti del filtro di trama point/bilinear/trilineare/anisotropo
+description: Se il costo delle prestazioni di una variante di filtro delle trame punto, bilineare, trilineare o anisotropo è significativo, è possibile valutare se il relativo uso vale il costo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7de150064ee493795bdeed579715dbf1370573a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d89db195b94bcf31d2ce2c7482c5b7315a979e9
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905063"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232648"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Varianti del filtro della trama a punti, bilineare, trilineare e anisotropico
 Esegue l'override della modalità di filtraggio sui campionatori di trame appropriati.

@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2022 (anteprima)
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità nella versione di anteprima di Visual Studio 2022.
-ms.date: 07/14/2021
+ms.date: 07/15/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 613ae74a00ecfc9a8c9caf827fbdcd68ad07e3ad
-ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
+ms.openlocfilehash: 7540a418bbe4e36c1fa01be715fa272282db9daa
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/15/2021
-ms.locfileid: "114205521"
+ms.locfileid: "114232895"
 ---
 # <a name="whats-new-in-visual-studio-2022-preview"></a>Novità di Visual Studio 2022 (anteprima)
 
@@ -28,7 +28,7 @@ ms.locfileid: "114205521"
 >[!div class="button"]
 >[Scaricare Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022/)
 
-Con Visual Studio, si otterrà sempre gli strumenti e i servizi più avanzati disponibili per qualsiasi sviluppatore, qualsiasi app e qualsiasi piattaforma. Ecco le novità della prossima versione, Visual Studio 2022, attualmente in anteprima.
+Con Visual Studio, si otterrà sempre gli strumenti e i servizi più avanzati disponibili per qualsiasi sviluppatore, qualsiasi app e qualsiasi piattaforma. Se si usa Visual Studio per la prima volta o lo si usa da anni, la versione più recente, attualmente in anteprima, è molto simile.
 
 ## <a name="visual-studio-2022-is-64-bit"></a>Visual Studio 2022 è a 64 bit
 
@@ -36,7 +36,7 @@ Visual Studio 2022 in Windows è ora un'applicazione a 64 bit. Ciò significa ch
 
 ## <a name="intellicode-includes-whole-line-completion"></a>IntelliCode include il completamento dell'intera riga
 
-In Visual Studio 2022, la funzionalità [IntelliCode](/visualstudio/intellicode/) può ora completare automaticamente il codice fino a un'intera riga alla volta. Per altre informazioni, vedere il post di blog [**Type less, code more with IntelliCode completions**](https://devblogs.microsoft.com/visualstudio/type-less-code-more-with-intellicode-completions/) (Digitare meno codice con completamento IntelliCode).
+In Visual Studio 2022, la funzionalità [IntelliCode](/visualstudio/intellicode/) può ora completare automaticamente il codice fino a un'intera riga alla volta. Per informazioni dettagliate, vedere il post di blog [**Type less, code more with IntelliCode completions**](https://devblogs.microsoft.com/visualstudio/type-less-code-more-with-intellicode-completions/) (Digitare meno codice con completamento IntelliCode).
 
 ## <a name="build-modern-apps-with-improved-tools"></a>Creare app moderne con strumenti migliorati
 
@@ -52,7 +52,7 @@ Per altre informazioni su ciò che è in programma per Visual Studio 2022? Per i
 
 * Se si vuole inviare un suggerimento per migliorare Visual Studio, è possibile usare lo strumento [Suggerisci una funzionalità](suggest-a-feature.md).
 
-* Se si verifica un problema a causa del quale Visual Studio risponde, si arresta in modo anomalo o si verifica un altro problema di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto con Microsoft usando lo strumento Segnala [un](how-to-report-a-problem-with-visual-studio.md) problema.
+* Se si verifica un problema a causa del quale Visual Studio smette di rispondere, arresti anomali o altri problemi di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto con Microsoft usando lo strumento Segnala un [problema.](how-to-report-a-problem-with-visual-studio.md)
 
 ## <a name="see-also"></a>Vedi anche
 

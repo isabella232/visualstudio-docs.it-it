@@ -1,21 +1,21 @@
 ---
 title: Init | Microsoft Docs
-description: Usare il metodo init () di VsgDbg per preparare il componente in-app della diagnostica della grafica per registrare le informazioni grafiche.
+description: Usare il metodo Init() di VsgDbg per preparare il componente in-app di diagnostica della grafica per registrare le informazioni grafiche.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17b2490641a85a9a38bdeb2c5cd20038639de6f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc6732ed506d1aa7e4ac3e47c629aadae796201d
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891813"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232375"
 ---
 # <a name="init"></a>Init
 Prepara il componente di diagnostica della grafica integrato nell'applicazione per acquisire e registrare attivamente le informazioni grafiche in un file di log di grafica.

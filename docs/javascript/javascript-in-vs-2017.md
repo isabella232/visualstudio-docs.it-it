@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-description: Informazioni su come usare la maggior parte o tutti gli strumenti di modifica standard (frammenti di codice, IntelliSense e così via) quando si scrive codice JavaScript nell'IDE di Visual Studio.
+description: Informazioni su come usare la maggior parte o tutti gli strumenti di modifica standard (frammenti di codice, IntelliSense e così via) quando si scrive codice JavaScript nell'IDE Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 01/15/2019
 ms.technology: vs-javascript
@@ -11,22 +11,22 @@ dev_langs:
 - DHTML
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
-author: bowdenk7
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: b39ee716c5092f41ef3ea8f05c529509ceca3717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79c7c13ea80e32e80d32c04052269cb814072aeb
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936860"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232908"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
 JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggior parte o tutti gli strumenti di modifica standard (frammenti di codice, IntelliSense e così via) quando si scrive codice JavaScript nell'IDE di Visual Studio. È possibile scrivere codice JavaScript per molti tipi di applicazioni e servizi.
 
 > [!NOTE]
-> Microsoft si è impegnata a eseguire la community per [la creazione](https://developer.mozilla.org/en-US/) di una risorsa di sviluppo di primo livello per il Web, tramite il reindirizzamento di tutte (500 pagine) di riferimento all'API JavaScript di Microsoft da docs.Microsoft.com alle rispettive controparti MDN. Per i dettagli, vedere questo [annuncio](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
+> Microsoft si è unita all'impegno a livello di community per rendere i documenti Web [MDN](https://developer.mozilla.org/en-US/) la risorsa di sviluppo unica e premiere del Web, reindirizzando tutte le (più di 500 pagine) del riferimento all'API JavaScript di Microsoft da docs.microsoft.com alle controparti MDN. Per i dettagli, vedere questo [annuncio](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a>Supporto per ECMAScript 2015 (ES6) e versioni successive
 
@@ -37,7 +37,7 @@ Visual Studio ora supporta la sintassi per gli aggiornamenti del linguaggio ECMA
 JavaScript è in continua evoluzione come linguaggio di programmazione e [TC39](https://www.ecma-international.org/memento/tc39-m.htm) è il comitato responsabile dell'esecuzione di aggiornamenti.
 ECMAScript 2015 è un aggiornamento del linguaggio JavaScript e offre importanti sintassi e funzionalità nuove. Per approfondimenti sulle funzionalità di ES6, consultare [questo](http://es6-features.org/#Constants) sito di riferimento.
 
-Oltre a supportare ECMAScript 2015, Visual Studio supporta anche ECMAScript 2016 e supporterà le future versioni di ECMAScript non appena verranno rilasciate. Per rimanere al passo con TC39 e le modifiche più recenti in ECMAScript, seguire le proprie attività su [GitHub](https://github.com/tc39).
+Oltre a supportare ECMAScript 2015, Visual Studio supporta anche ECMAScript 2016 e supporterà le future versioni di ECMAScript non appena verranno rilasciate. Per rimanere al passo con TC39 e le modifiche più recenti in ECMAScript, seguire il lavoro su [GitHub](https://github.com/tc39).
 
 ### <a name="transpile-javascript"></a>Eseguire il transpile in JavaScript
 
