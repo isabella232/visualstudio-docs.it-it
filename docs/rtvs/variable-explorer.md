@@ -2,18 +2,19 @@
 title: Esplora variabili per R
 description: Esplora variabili in Visual Studio mostra tutte le variabili con un ambito specifico nella sessione corrente di R.
 ms.date: 01/24/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: f69e5b61e80d3a00522307dd7481f74418407d99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da79f8e2fc40a0a64cc41d8571410c2a135a154a
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851803"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114679743"
 ---
 # <a name="variable-explorer"></a>Esplora variabili
 
@@ -45,7 +46,7 @@ Poiché i dati sono spesso tabulari, è possibile visualizzare qualsiasi tipo di
 
 Se si fa clic sull'intestazione di una colonna, i dati vengono ordinati in base a tale colonna, alternatamente in ordine crescente e decrescente. Se si fa clic su altre colonne tenendo premuto **MAIUSC**, anche queste colonne vengono prese in considerazione per l'ordinamento. Se si fa clic su una colonna senza tenere premuto **MAIUSC** si torna all'ordinamento in base a una sola colonna.
 
-La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **MAIUSC** + **fare clic** sulla colonna **CIL** , quindi + **fare clic** due volte sulla colonna **MPG** per ordinare l'elenco per i cilindri ascendenti e i chilometri decrescenti per Gallo:
+La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **maiusc** fare clic sulla colonna cil, quindi maiusc fare clic sulla colonna mpg due volte per ordinare l'elenco per i cilindri crescente e decrescente +    +  miles-per-gallon: 
 
 ![Vista tabulare dell'ordinamento dei dati in base a due colonne.](media/variable-explorer-table-view-sorting.png)
 

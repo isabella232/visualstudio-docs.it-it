@@ -1,8 +1,8 @@
 ---
 title: Esercitazione sugli unit test C#
-description: Informazioni su come creare, eseguire e personalizzare una serie di unit test usando Microsoft unit test Framework per il codice gestito e Esplora test di Visual Studio.
+description: Informazioni su come creare, eseguire e personalizzare una serie di unit test usando il framework microsoft unit test per il codice gestito e Visual Studio Esplora test.
 ms.custom: SEO-VS-2020
-ms.date: 05/14/2019
+ms.date: 02/12/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: a6ab205b7f651f8bb5954bee4998602c79fd78e7
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 62772187c076b7891a0159b73cae2ca819ac6bc3
+ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683918"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114703340"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -34,11 +34,11 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 1. Aprire Visual Studio.
 
-2. Scegliere **nuovo** progetto dal menu **file** > .
+2. Scegliere **Nuovo** dal  menu File > **Project**.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-3. Nell categoria **Visual C#** > **.NET Core** scegliere il modello di progetto **App console (.NET Core)**.
+3. Nella categoria **Visual C#** > **.NET Core** scegliere il modello di progetto App console **(.NET Core).**
 
 4. Denominare il progetto **Bank**, quindi fare clic su **OK**.
 
@@ -53,16 +53,16 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 1. Aprire Visual Studio.
 
-2. Nella finestra Start scegliere **Crea un nuovo progetto**.
+2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-3. Cercare e selezionare il modello di progetto di **app console** C# per .NET Core, quindi fare clic su **Avanti**.
+3. Cercare e selezionare il modello di progetto **App console** C# per .NET Core e quindi fare clic su **Avanti.**
 
    > [!NOTE]
-   > Se il modello di **applicazione console** non è visibile, è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
+   > Se il modello App **console** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
 
-4. Assegnare al progetto il nome **Bank**, quindi fare clic su **Avanti**.
+4. Assegnare al progetto **il nome Bank** e quindi fare clic su **Avanti.**
 
-   Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
+   Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
 
    Il progetto Bank viene creato e visualizzato in **Esplora soluzioni** con il file *Program.cs* aperto nell'editor del codice.
 
@@ -143,7 +143,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 6. Rinominare il file *BankAccount.cs* facendo clic con il pulsante destro del mouse e scegliendo **Rinomina** in **Esplora soluzioni**.
 
-7. Scegliere **Compila soluzione** dal menu **Compila** (oppure premere **CTRL**  +  **MAIUSC**  +  **B**).
+7. Scegliere **Compila** soluzione dal menu Compila **oppure** premere **CTRL**  +  **MAIUSC**  +  **B**.
 
 È ora disponibile un progetto che include metodi da testare. In questo articolo i test sono incentrati sul metodo `Debit`. Il metodo `Debit` viene chiamato quando si preleva denaro da un conto.
 
@@ -156,7 +156,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 ::: moniker range="vs-2017"
 
-2. Nella finestra di dialogo **nuovo progetto** espandere **installato**, espandere **Visual C#**, quindi scegliere **test**.
+2. Nella finestra **di dialogo Nuovo Project** espandere **Installato**, Espandere **Visual C#** e quindi scegliere **Test**.
 
 3. Nell'elenco dei modelli selezionare **Progetto di test MSTest (.NET Core)**.
 
@@ -168,14 +168,14 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 ::: moniker range=">=vs-2019"
 
-2. Digitare **unit test** nella casella di ricerca, selezionare **c#** come lingua, quindi selezionare il **progetto di unit test** c# per il modello .NET Core e quindi fare clic su **Avanti**.
+2. Digitare **unit test** nella casella di ricerca, selezionare **C#** come linguaggio, quindi selezionare il modello C# **Unit Test Project** for .NET Core e quindi fare clic su **Avanti.**
 
    > [!NOTE]
-   > A partire da Visual Studio 2019 versione 16,9, il nome del modello di progetto MSTest è stato modificato dal **progetto di unit test MSTest (.NET Core)** al **progetto di unit test**.
+   > A partire da Visual Studio 2019 versione 16.9, il nome del modello di progetto MSTest è stato modificato da **MSTest Unit Test Project (.NET Core)** a **Unit Test Project**.
 
-3. Denominare il progetto **BankTests** e fare clic su **Avanti**.
+3. Assegnare al progetto **il nome BankTests** e fare clic su **Avanti.**
 
-4. Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
+4. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
 
    Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.
 
@@ -195,7 +195,7 @@ Creare una classe di test per verificare la classe `BankAccount`. È possibile u
 
 ### <a name="rename-a-file-and-class"></a>Rinominare un file e una classe
 
-1. Per rinominare un file, in **Esplora soluzioni** selezionare il file *UnitTest1.cs* nel progetto BankTests. Dal menu di scelta rapida scegliere **Rinomina** (oppure premere **F2**), quindi rinominare il file in *BankAccountTests.cs*.
+1. Per rinominare un file, in **Esplora soluzioni** selezionare il file *UnitTest1.cs* nel progetto BankTests. Dal menu di scelta rapida scegliere **Rinomina** (o premere **F2)** e quindi rinominare il file *in BankAccountTests.cs*.
 
 ::: moniker range="vs-2017"
 
@@ -205,7 +205,7 @@ Creare una classe di test per verificare la classe `BankAccount`. È possibile u
 
 ::: moniker range=">=vs-2019"
 
-2. Per rinominare la classe, posizionare il cursore sull' `UnitTest1` Editor del codice, fare clic con il pulsante destro del mouse su, quindi scegliere **Rinomina** (oppure premere **F2**). Digitare **BankAccountTests** e quindi premere **INVIO**.
+2. Per rinominare la classe, posizionare il cursore nell'editor di codice, fare clic con il pulsante destro del mouse e scegliere `UnitTest1` **Rinomina** (o **premere F2).** Digitare **BankAccountTests** e quindi premere **INVIO**.
 
 ::: moniker-end
 
@@ -229,7 +229,7 @@ namespace BankTests
 
 ### <a name="add-a-using-statement"></a>Aggiungere un'istruzione using
 
-Aggiungere un' [ `using` istruzione](/dotnet/csharp/language-reference/keywords/using-statement) alla classe di test per poter effettuare una chiamata nel progetto sottoposto a test senza usare nomi completi. All'inizio del file di classe aggiungere:
+Aggiungere [ `using` un'istruzione](/dotnet/csharp/language-reference/keywords/using-statement) alla classe di test per poter chiamare nel progetto sotto test senza usare nomi completi. All'inizio del file di classe aggiungere:
 
 ```csharp
 using BankAccountNS;
@@ -297,11 +297,11 @@ Un metodo di test deve soddisfare i seguenti requisiti:
 
 ## <a name="build-and-run-the-test"></a>Compilare ed eseguire il test
 
-1. Scegliere **Compila soluzione** dal menu **Compila** (oppure premere **CTRL**  +  **MAIUSC**  +  **B**).
+1. Scegliere **Compila** soluzione **dal** menu Compila oppure premere **CTRL**  +  **MAIUSC**  +  **B**.
 
-2. Se **Esplora test** non è aperto, aprirlo scegliendo **test**  >    >  **Esplora test** di Windows dalla barra dei menu superiore oppure premere **CTRL**  +  **E**, **T**.
+2. Se **Esplora test** non è aperto, aprirlo scegliendo Test   >  **Windows** Esplora test dalla barra dei menu superiore (oppure premere  >   **CTRL**  +  **E**, **T**).
 
-3. Scegliere **Esegui tutto** per eseguire il test oppure premere **CTRL**  +  **R**, **V**.
+3. Scegliere **Esegui tutto** per eseguire il test o premere **CTRL**  +  **R**, **V**.
 
    Mentre il test è in esecuzione, la barra di stato nella parte superiore della finestra **Esplora test** viene animata. Al termine del test, la barra diventa verde se tutti i metodi di test vengono superati oppure rossa se almeno uno dei test ha esito negativo.
 
@@ -331,7 +331,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Eseguire nuovamente il test
 
-In **Esplora test** scegliere **Esegui tutto** per rieseguire il test oppure premere **CTRL**  +  **R**, **V**. La barra verde/rossa diventa verde per indicare che il test è stato superato.
+In **Esplora test** scegliere Esegui **tutto** per eseguire di nuovo il test oppure premere **CTRL**  +  **R**, **V**. La barra verde/rossa diventa verde per indicare che il test è stato superato.
 
 ![Esplora test in Visual Studio 2019 che indica che il test è stato superato](media/test-explorer-banktests-passed.png)
 
@@ -441,7 +441,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Rieseguire il test, riscrivere e rianalizzare
 
-Attualmente, il metodo di test non gestisce tutti i casi in cui deve essere. Se il metodo sottoposto a test, il metodo `Debit` non è riuscito a generare un'eccezione <xref:System.ArgumentOutOfRangeException> quando `debitAmount` è maggiore del saldo (o minore di zero), il metodo di test passa. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
+Attualmente, il metodo di test non gestisce tutti i case che deve eseguire. Se il metodo sotto test, il metodo , non è riuscito a generare un quando l'oggetto è maggiore del saldo (o minore di zero), il `Debit` metodo di test <xref:System.ArgumentOutOfRangeException> `debitAmount` passerebbe. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
 
 È presente un bug nel metodo di test. Per risolvere il problema, aggiungere un'asserzione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> alla fine del metodo di test per gestire il caso in cui non viene generata alcuna eccezione.
 
@@ -477,7 +477,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 I miglioramenti al codice di test hanno creato metodi di test più affidabili e informativi. Il risultato più importante, tuttavia, è il miglioramento del codice sottoposto a test.
 
 > [!TIP]
-> Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. **Esplora test** consente anche di eseguire test da framework di unit test di terze parti che possiedono adapter per **Esplora test**. Per altre informazioni, vedere [installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
+> Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. **Esplora test** consente anche di eseguire test da framework di unit test di terze parti che possiedono adapter per **Esplora test**. Per altre informazioni, vedere [Installare framework di unit test di terze parti.](../test/install-third-party-unit-test-frameworks.md)
 
 ## <a name="see-also"></a>Vedi anche
 

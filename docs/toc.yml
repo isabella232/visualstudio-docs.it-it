@@ -955,7 +955,7 @@
           href: ide/signing-in-to-visual-studio.md
         - name: Gestire più account utente
           href: ide/work-with-multiple-user-accounts.md
-        - name: Usare gli account che richiedono l'autenticazione a più fattori
+        - name: Usare account che richiedono l'autenticazione a più fattori
           href: ide/work-with-multi-factor-authentication.md
         - name: Utilizzare gli account GitHub in Visual Studio
           href: ide/work-with-github-accounts.md
@@ -1437,9 +1437,11 @@
       items:
         - name: Frequenza di rilascio
           href: /visualstudio/productinfo/release-rhythm/
+        - name: note Visual Studio 2022
+          href: /visualstudio/releases/2022/release-notes-preview/
         - name: Visual Studio 2019
           href: /visualstudio/releases/2019/release-notes/
-        - name: Visual Studio 2017
+        - name: note Visual Studio 2017
           href: /visualstudio/releasenotes/vs2017-relnotes/
         - name: Visual Studio 2015
           href: vs-2015-archive.md
@@ -1456,7 +1458,7 @@
           href: ide/diagnostic-data-collection.md
     - name: Esperienze connesse in Visual Studio
       href: ide/reference/connected-experiences.md
-    - name: Risoluzione degli errori dell'IDE
+    - name: Risoluzione degli errori IDE
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: Invia commenti
   items:

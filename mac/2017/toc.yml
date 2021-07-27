@@ -1,7 +1,5 @@
 - name: Visual Studio per Mac
   href: ./index.yml
-- name: Presentazione dell'IDE
-  href: ide-tour.md
 - name: Installazione
   href: installation.md
   items:

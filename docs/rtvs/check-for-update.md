@@ -2,22 +2,23 @@
 title: Versione corrente di R Tools
 description: Come controllare la versione di R Tools per Visual Studio e installare gli aggiornamenti.
 ms.date: 07/23/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c6b351af7426af2b11d23cf3f5f437fa4c228c97
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b0534c8d2e4e47260d9a908cfc4b46ed72e9cb2
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885872"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680114"
 ---
 # <a name="rtvs-current-version"></a>Versione corrente di RTVS
 
-Per controllare la versione, è possibile passare alla **Guida**  >  **di** in Visual Studio e scorrere verso il basso fino alla voce **R Tools per Visual Studio** :
+È possibile controllare la versione selezionando **Guida** in Visual Studio e scorrendo verso il basso fino alla  >   **R Tools per Visual Studio** voce:
 
 ![Controllo della versione RTVS in Visual Studio (VS2017)](media/current-version.png)
 

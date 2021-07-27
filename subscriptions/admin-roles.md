@@ -7,14 +7,14 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni sui ruoli di amministratore e amministratore con privilegi di amministratore con privilegi di amministratore e su come assegnare gli amministratori.
-ms.openlocfilehash: 1f107a5bcef9be61c4693549ee8e628a207cc789
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: c5997004f50b78ba8484be51f3e5dd5a22aa868e
+ms.sourcegitcommit: d5c038792da2c86436750380633ee80c39e4c4ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973537"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114597054"
 ---
-# <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Amministratori e amministratori con privilegi più Visual Studio contratti di sottoscrizione
+# <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Amministratori e amministratori con privilegi di Visual Studio contratti di sottoscrizione
 
 Esistono due diversi ruoli nel nuovo portale di amministrazione delle sottoscrizioni di Visual Studio per i clienti con contratti multilicenza. Questi ruoli sono, ad esempio, il ruolo di contatto principale/per le comunicazioni e il ruolo di gestione delle sottoscrizioni che esisteva già in VLSC.
 
@@ -49,8 +49,6 @@ Per assegnare nuovi amministratori (amministratori):
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
 - [Microsoft 365 documentazione](/microsoft-365/)
-
-
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Vedere come [assegnare le sottoscrizioni](assign-license.md)

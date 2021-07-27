@@ -2,40 +2,41 @@
 title: Debug di codice R
 description: Visual Studio offre un'esperienza di debug completa per R, inclusi punti di interruzione, collegamenti, stack di chiamate e ispezione delle variabili.
 ms.date: 01/24/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: e3696cac00c726cffb76f29a1da2c503a15af2bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2234efa7bc15381660a86d670ae07673355c4d9b
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885820"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680010"
 ---
 # <a name="debug-r-in-visual-studio"></a>Eseguire il debug di R in Visual Studio
 
 Strumenti R per Visual Studio (RTVS) si integra con l'esperienza di debug completa di Visual Studio (vedere [Debugging in Visual Studio](../debugger/debugger-feature-tour.md) (Debug in Visual Studio). Questo supporto include punti di interruzione, collegamento a processi in esecuzione, esame e controllo delle variabili ed esame dello stack di chiamate. In questo articolo vengono quindi esaminati gli aspetti del debug che sono univoci per R e RTVS.
 
-L'avvio del debugger per il file di avvio r in un progetto r è identico a quello per gli altri tipi di progetto: usare **debug**  >  **Avvia debug**, il tasto **F5** o il **file di avvio di origine** sulla barra degli strumenti debug:
+L'avvio del debugger per il file R di avvio in un progetto R è identico a quello per altri tipi di progetto: usare **Debug** Avvia debug , il tasto F5 o il file di avvio di origine sulla barra degli strumenti  >  di debug:  
 
 ![Pulsante di avvio del debugger per R](media/debugger-start-button.png)
 
 Per modificare il file di avvio, fare clic con il pulsante destro del mouse su un file in Esplora soluzioni e selezionare **Imposta come script R di avvio**.
 
-In tutti i casi, il debug "dà origine" al file nella finestra interattiva, ovvero lo carica e lo esegue da qui, come illustrato dall'output della finestra interattiva:
+In tutti i casi, il debug "dà origine&quot; al file nella finestra interattiva, ovvero lo carica e lo esegue da qui, come illustrato dall'output della finestra interattiva:
 
 ```output
-> rtvs::debug_source("c:/proj/rproject1/rproject1/script.R")
+> rtvs::debug_source(&quot;c:/proj/rproject1/rproject1/script.R")
 Sourcing: c:\proj\rproject1\rproject1\script.R
 Sourcing: c:\proj\rproject1\rproject1\Settings.R
 ```
 
 Si noti che come origine dello script viene usata la funzione `rtvs::debug_source`. Questa funzione è obbligatoria, perché RTVS deve modificare il codice in preparazione al debug. Quando si usa un comando di sourcing RTVS e un debugger è collegato, Visual Studio usa automaticamente `rtvs::debug_source`.
 
-È anche possibile alleghi manualmente il debugger direttamente dalla finestra interattiva usando il comando di connessione del debugger della sessione di **R Tools**  >    >   , il comando **debug**  >  **Connetti a R interattivo** o il comando **Connetti debugger** sulla barra degli strumenti della finestra interattiva. Dopo avere eseguito questa operazione, è responsabilità dell'utente eseguire il sourcing dei file di cui vuole eseguire il debug. Se si vuole eseguire manualmente il sourcing dei file, assicurarsi di usare `rtvs::debug_source` e non il comando `source` normale in R.
+È anche possibile collegare manualmente il debugger dalla finestra interattiva direttamente usando il comando Debugger di collegamento sessione di **R Tools,** il comando Collega a R interattivo o il comando Collega debugger sulla barra degli strumenti della finestra  >    >     >   interattiva.  Dopo avere eseguito questa operazione, è responsabilità dell'utente eseguire il sourcing dei file di cui vuole eseguire il debug. Se si vuole eseguire manualmente il sourcing dei file, assicurarsi di usare `rtvs::debug_source` e non il comando `source` normale in R.
 
 Questa connessione tra il debugger e la finestra interattiva semplifica alcune operazioni, come ad esempio la chiamata e il debugging di una funzione con valori di parametro diversi. Ad esempio, si supponga di avere la funzione seguente in un file originato, ovvero caricato nella sessione:
 

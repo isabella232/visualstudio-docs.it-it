@@ -2,18 +2,19 @@
 title: Integrazione del server SQL con R
 description: Visual Studio supporta la creazione e l'esecuzione di query SQL da R e possibili interazioni tra R e le stored procedure.
 ms.date: 06/25/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c0aedbccdb82bd91fe201a23b6201a3cdd7db283
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 00f04a99d98cc4fefc3223b97f8e1e4614314215
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908682"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680232"
 ---
 # <a name="work-with-sql-server-and-r"></a>Usare SQL Server ed R
 
@@ -37,11 +38,11 @@ L'ottimo supporto di Visual Studio per SQL Server consente agli esperti di dati 
 
 RTVS supporta l'aggiunta di query SQL all'interno di progetti R, consentendo di sviluppare in modo iterativo query SQL in un contesto separato fino a quando non si ottengono i risultati voluti.
 
-Per aggiungere un file di query SQL, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, scegliere **Aggiungi**  >  **nuovo elemento** e selezionare il tipo di file di **query SQL** :
+Per aggiungere un file di query SQL, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, scegliere Aggiungi nuovo elemento e selezionare il tipo di file query SQL  >  seguente: 
 
 ![Aggiungere un elemento Query SQL a un progetto](media/sql-add-item.png)
 
-Questo comando apre il file nell'editor Transact-SQL di Visual Studio, che è dotato di funzionalità IntelliSense complete per SQL e consente di eseguire query. Per il funzionamento di queste funzionalità, è necessario connettersi a un database usando il pulsante Connetti sulla barra degli strumenti dell'Editor oppure provare a eseguire una query (**CTRL** + **MAIUSC** + **E**, che funziona anche su una selezione). In entrambi i casi viene visualizzata la finestra di dialogo di connessione:
+Questo comando apre il file nell'editor Transact-SQL di Visual Studio, che è dotato di funzionalità IntelliSense complete per SQL e consente di eseguire query. Per il funzionamento di queste funzionalità, è necessario connettersi a un database usando il pulsante Connetti sulla barra degli strumenti dell'editor o provare a eseguire una query (**CTRL** MAIUSC E , che funziona anche su +  + una selezione). In entrambi i casi viene visualizzata la finestra di dialogo di connessione:
 
 ![Finestra di dialogo di connessione SQL](media/sql-connection-dialog.png)
 
@@ -73,7 +74,7 @@ Come descritto nelle sezioni seguenti, RTVS semplifica il processo di combinazio
 
 ### <a name="add-a-database-connection"></a>Aggiungere una connessione di database
 
-1. Selezionare **R Tools**  >  **dati**  >  **Aggiungi connessione di database** per visualizzare la finestra di dialogo **Proprietà connessione** . In questa finestra viene specificato il nome dell'origine dati (SQL Server in questo caso), il nome del server, la modalità di autenticazione e il nome del database. Selezionare **Test connessione** per verificare l'input prima di chiudere la finestra di dialogo.
+1. Selezionare **R Tools**  >  **Data** Add Database Connection  >  **per** visualizzare la finestra di dialogo **Proprietà** connessione. In questa finestra viene specificato il nome dell'origine dati (SQL Server in questo caso), il nome del server, la modalità di autenticazione e il nome del database. Selezionare **Test connessione** per verificare l'input prima di chiudere la finestra di dialogo.
 
     ![Finestra di dialogo di connessione SQL](media/sql-connection-string-dialog.png)
 
@@ -83,7 +84,7 @@ Come descritto nelle sezioni seguenti, RTVS semplifica il processo di combinazio
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Scrivere e testare una stored procedure SQL
 
-Per aggiungere una nuova stored procedure SQL, fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**  >  **nuovo elemento**, selezionare **stored procedure SQL con R** dall'elenco di modelli, assegnare un nome al file e fare clic su **OK**. Il nome file predefinito è *SqlSProc.R*; per facilitare la lettura, in questa sezione viene usato il nome file *StoredProcedure.R*. Se sono presenti più stored procedure, ogni file deve avere un nome file univoco.
+Per aggiungere una nuova stored procedure SQL, fare clic con il pulsante destro del mouse sul progetto, scegliere Aggiungi nuovo elemento, selezionare SQL Stored procedure con R dall'elenco di modelli, assegnare un nome al file e selezionare  >   **OK.**  Il nome file predefinito è *SqlSProc.R*; per facilitare la lettura, in questa sezione viene usato il nome file *StoredProcedure.R*. Se sono presenti più stored procedure, ogni file deve avere un nome file univoco.
 
 RTVS crea tre file per la stored procedure: un file *.R* per il codice R, un file *.Query.sql* per il codice SQL e un file *.Template.sql* che combina i due file precedenti. Gli ultimi due sono visualizzati in Esplora soluzioni come elementi figlio del file *.R*:
 
@@ -153,12 +154,12 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
 ### <a name="publish-a-sql-stored-procedure"></a>Pubblicare una stored procedure SQL
 
-1. Selezionare il   >    >  comando **di menu pubblica dati di** R Tools.
+1. Selezionare il **comando di** menu Pubblica dati con opzioni di R  >    >   Tools.
 1. Nella finestra di dialogo visualizzata, modificare il valore di **Pubblica in:** in **Database**, specificare la destinazione e selezionare **Pubblica**. RTVS compila e pubblicha la stored procedure:
 
     ![Finestra di dialogo di pubblicazione di una stored procedure](media/sql-publish-with-options.png)
 
-1. Per pubblicare tutte le stored procedure in un progetto, è possibile usare il comando **R Tools**  >  **Data**  >  **Publish stored procedure** , disponibile anche quando si fa clic con il pulsante destro del mouse sul progetto in Esplora soluzioni.
+1. Per pubblicare tutte le stored procedure in un progetto, è possibile usare il comando R **Tools**  >  **Data**  >  **Publish Stored Procedures,** disponibile anche quando si fa clic con il pulsante destro del mouse sul progetto Esplora soluzioni.
 
 > [!Tip]
-> Se la Esplora oggetti di SQL Server è aperta in Visual Studio, la stored procedure pubblicata viene visualizzata nella cartella   >  **stored procedure** di programmabilità del database. È anche possibile eseguirla da Esplora oggetti facendo clic con il pulsante destro del mouse e selezionando **Esegui procedura** o chiamandola in modo interattivo da una finestra di query *.sql*.
+> Se il SQL Server Esplora oggetti è aperto in Visual Studio, il stored procedure pubblicato viene visualizzato nella cartella **Stored** procedure di  >   programmabilità del database. È anche possibile eseguirla da Esplora oggetti facendo clic con il pulsante destro del mouse e selezionando **Esegui procedura** o chiamandola in modo interattivo da una finestra di query *.sql*.

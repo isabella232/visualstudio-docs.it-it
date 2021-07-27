@@ -2,6 +2,7 @@
 title: Lint del codice R
 description: Come usare il supporto di lint predefinito per R di Visual Studio, incluse le opzioni del linter.
 ms.date: 07/02/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
@@ -10,20 +11,20 @@ ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 1c32bffbd25a39ff2053dea22930365860ed04a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ec955d6c105c1381d7f576a80b136eb3a54adff
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873658"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680151"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Lint del codice R in Visual Studio
 
 Il linter analizza il codice per individuare potenziali errori, problemi di formattazione e altri elementi superflui nel codice, come spazi vuoti spuri. Il linter consente anche di promuovere determinate convenzioni di codifica, ad esempio la modalità di denominazione degli identificatori. Tali convenzioni sono utili nei team e in altre situazioni di collaborazione.
 
-R Tools per Visual Studio (RTVS) offre un linter predefinito per R, con un comportamento controllabile tramite un'ampia gamma di opzioni descritte in questo articolo. Queste opzioni sono disponibili in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **R**  >  **lanugine**.
+R Tools per Visual Studio (RTVS) offre un linter predefinito per R, con un comportamento controllabile tramite un'ampia gamma di opzioni descritte in questo articolo. Queste opzioni sono disponibili in **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **R**  >  **Lint**.
 
-Il lint è disabilitato per impostazione predefinita. Per abilitare il pelucchi, impostare l'opzione **All**  >  **Enable pelucchi** su **true**.
+Il lint è disabilitato per impostazione predefinita. Per abilitare lint, impostare **l'opzione All**  >  **Enable lint** su **True**.
 
 Dopo l'abilitazione, il linter viene eseguito nell'editor durante la digitazione. I problemi vengono segnalati tramite sottolineature ondulate verdi. Nella figura seguente, ad esempio, RTVS ha identificato sei problemi di lint, tra i quali l'uso di `=` invece di `<-` per un'assegnazione, la mancanza di spazio attorno agli argomenti della funzione, l'uso di identificatori con la notazione Pascal e con tutte maiuscole e l'uso di un punto e virgola. Posizionando il puntatore del mouse su un problema viene visualizzata una descrizione.
 
@@ -35,7 +36,7 @@ Dopo l'abilitazione, il linter viene eseguito nell'editor durante la digitazione
 
 | Opzione | Valore predefinito | Effetto di lint |
 | --- | --- | --- |
-| **Applicare \<-** | **True** | Identifica quando `<-` non viene usato per un'assegnazione. |
+| **rinforzare \<-** | **True** | Identifica quando `<-` non viene usato per un'assegnazione. |
 
 ## <a name="naming-group"></a>Gruppo Denominazione
 
@@ -66,8 +67,8 @@ Queste opzioni, impostate tutte su **True** per impostazione predefinita, determ
 
 | Opzione | Valore predefinito | Effetto di lint |
 | --- | --- | --- |
-| **Limite di lunghezza della riga** | **False** | Imposta un valore che indica se la lunghezza dei flag del pelucchi è superiore a quella dell'opzione **Max line length** . |
-| **Lunghezza massima della riga** | **80** | Imposta la lunghezza di riga applicata dall'opzione **limite lunghezza riga** . |
+| **Limite di lunghezza della riga** | **False** | Imposta un valore che indica se l'intervallo contrassegna le righe più lunghe rispetto **all'opzione Lunghezza massima** riga. |
+| **Lunghezza massima della riga** | **80** | Imposta la lunghezza della linea applicata **dall'opzione Limite lunghezza** riga. |
 
 ## <a name="whitespace-group"></a>Gruppo Spazio vuoto
 

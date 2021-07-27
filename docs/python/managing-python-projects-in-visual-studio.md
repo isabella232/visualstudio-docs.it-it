@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c9a20ea3baee84657e26e2d98bb5726c20ceba9e
-ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
+ms.openlocfilehash: 9de3caf4bd0c9401628bb050168f3a7045f902f0
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112254901"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592177"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -45,7 +45,7 @@ In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per
 
 Durante lo sviluppo dell'applicazione è in genere necessario aggiungere al progetto nuovi file di tipi diversi. Per aggiungere tali file, fare clic con il pulsante destro del mouse sul progetto e scegliere Aggiungi elemento esistente con cui cercare un file da aggiungere oppure Aggiungi nuovo elemento , che visualizza una finestra di dialogo con diversi modelli di  >     >  elemento. Come descritto nel riferimento ai [modelli di elemento](python-item-templates.md), le opzioni includono file Python vuoti, una classe Python, uno unit test e diversi file correlati ad applicazioni Web. È possibile esaminare queste opzioni usando un progetto di test per scoprire quali elementi sono inclusi nella propria versione di Visual Studio.
 
-A ogni progetto Python è assegnato un file di avvio, evidenziato in grassetto in **Esplora soluzioni**. Il file di avvio è il file che viene eseguito quando si avvia il debug (**F5** o Debug Avvia debug ) o quando si esegue il progetto nella finestra interattiva  >  (**MAIUSC**  + **ALT** + **F5**   >  o Debug Esegui progetto in Python Interactive ). Per modificare il valore, fare clic con il pulsante destro del mouse sul nuovo file e scegliere **Imposta come elemento di avvio** (o **Imposta come file di avvio** nelle versioni precedenti di Visual Studio).
+A ogni progetto Python è assegnato un file di avvio, evidenziato in grassetto in **Esplora soluzioni**. Il file di avvio è il file che viene eseguito quando si avvia il debug (**F5** o Debug Avvia debug ) o quando si esegue il progetto nella finestra interattiva  >  (**MAIUSC**  + **ALT** + **F5**   >  o Esegui Project debug in Python Interactive ). Per modificare il valore, fare clic con il pulsante destro del mouse sul nuovo file e scegliere **Imposta come elemento di avvio** (o **Imposta come file di avvio** nelle versioni precedenti di Visual Studio).
 
 > [!Tip]
 > Se si rimuove il file di avvio selezionato da un progetto e non se ne seleziona uno nuovo, Visual Studio non sa quale file di Python usare per l'avvio quando si tenta di eseguire il progetto. In questo caso, Visual Studio 2017 versione 15.6 e versioni successive visualizzano un errore. Le versioni precedenti aprono una finestra di output con l'interprete Python in esecuzione oppure la finestra di output viene visualizzata ma scompare quasi immediatamente. In presenza di questi comportamenti, verificare che sia stato assegnato un file di avvio.
@@ -69,7 +69,7 @@ Per cambiare l'ambiente attivo, fare clic con il pulsante destro del mouse sull'
 
 ## <a name="project-templates"></a>Modelli di progetto
 
-In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu **File** Nuovo progetto o fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere Aggiungi nuovo progetto , che verrà visualizzata la finestra di dialogo Nuovo progetto riportata di  >    >      >  seguito.  Per visualizzare i modelli specifici di Python, cercare "Python" o selezionare il **nodo**  >  **Python** installato:
+In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu File Nuovo Project o fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere Aggiungi nuovo Project , che visualizza la finestra di dialogo Nuovo Project riportata di  >    >      >   **seguito.** Per visualizzare i modelli specifici di Python, cercare "Python" o selezionare il **nodo**  >  **Python** installato:
 
 ![Finestra di dialogo Nuovo progetto con modelli Python](media/projects-new-project-dialog.png)
 
@@ -81,7 +81,6 @@ La tabella seguente riepiloga i modelli disponibili in Visual Studio 2017 (non t
 | --- | --- |
 | [**Da codice Python esistente**](#create-project-from-existing-files) | Crea un progetto di Visual Studio da codice Python esistente in una struttura di cartelle.  |
 | **Applicazione Python** | Struttura di progetto di base per una nuova applicazione Python che contiene un solo file di origine vuoto. Per impostazione predefinita, il progetto viene eseguito nell'interprete della console dell'ambiente globale predefinito, che è possibile modificare [assegnando un altro ambiente](selecting-a-python-environment-for-a-project.md). |
-| [**Servizio cloud di Azure**](python-azure-cloud-service-project-template.md) | Progetto per un servizio cloud di Azure scritto in Python. |
 | [**Progetti Web**](python-web-application-project-templates.md) | Progetti per le app Web basati su diversi framework, tra cui Bottle, Django e Flask. |
 | **Applicazione IronPython** | È simile al modello Applicazione Python, ma usa IronPython per impostazione predefinita e abilita l'interoperabilità .NET e il debug in modalità mista con i linguaggi .NET. |
 | **Applicazione WPF IronPython** | Struttura di progetto che usa IronPython con file XAML di Windows Presentation Foundation per l'interfaccia utente dell'applicazione. Visual Studio offre una finestra di progettazione dell'interfaccia utente XAML, il code-behind può essere scritto in Python e l'applicazione viene eseguita senza visualizzare alcuna console. |

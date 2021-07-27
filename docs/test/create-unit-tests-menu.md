@@ -1,8 +1,8 @@
 ---
 title: Creare stub di metodo di unit test
-description: Informazioni su come usare il comando Crea unit test, che consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test al suo interno.
+description: Informazioni su come usare il comando Crea unit test, che consente di configurare facilmente un progetto di test, la classe di test e lo stub del metodo di test al suo interno.
 ms.custom: SEO-VS-2020
-ms.date: 04/24/2020
+ms.date: 07/26/2021
 ms.topic: how-to
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -11,24 +11,24 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb30135ac5c137fdc836273855e2d9f000f1c6b2
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: 4edef0815b6923ea204c1a0d1890837ec9bead6c
+ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622634"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114703328"
 ---
-# <a name="create-unit-test-method-stubs-from-code"></a>Creare stub di metodo unit test dal codice
+# <a name="create-unit-test-method-stubs-from-code"></a>Creare unit test stub di metodo dal codice
 
 Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test all'interno di essa.
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Il comando di menu **Crea unit test** è disponibile solo per il codice C# che ha come destinazione .NET Framework (ma non .NET Core o .NET standard).
+> Il **comando di** menu Crea unit test è disponibile solo per il codice C# destinato a .NET Framework (ma non a .NET Core o .NET Standard).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Il comando di menu **Crea unit test** è disponibile solo per il codice C#.
+> Il comando di menu **Crea unit** test è disponibile solo per il codice C#.
 ::: moniker-end
 
 Il comando di menu **Crea unit test** è estendibile e può essere usato per generare test per MSTest, MSTest V2, NUnit e xUnit.
@@ -39,7 +39,7 @@ Per iniziare, selezionare un metodo, un tipo o uno spazio dei nomi nell'editor d
 
 ![Uso del comando Crea unit test](media/createunittestcommand.png)
 
-Se non vengono visualizzate le opzioni del Framework di test per NUnit o xUnit, vedere [usare framework di unit test di terze parti](#use-third-party-unit-test-frameworks).
+Se le opzioni del framework di test per NUnit o xUnit non sono disponibili, vedere Usare framework unit test [di terze parti.](#use-third-party-unit-test-frameworks)
 
 ## <a name="set-unit-test-traits"></a>Impostare tratti di unit test
 
@@ -51,7 +51,7 @@ Se si prevede di eseguire questi test come parte del processo di automazione del
 
 Per generare automaticamente gli unit test per NUnit o xUnit, installare una di queste estensioni del framework di test da Visual Studio Marketplace:
 
-* [NUnit extension for test generators (Estensione NUnit per generatori di test)](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [NUnit extension for test generators (Estensione NUnit per generatori di test)](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 * [xUnit.net extension for test generators (Estensione xUnit.net per generatori di test)](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)
 
 ## <a name="when-should-i-use-this-feature"></a>Quando si deve usare questa funzionalità?

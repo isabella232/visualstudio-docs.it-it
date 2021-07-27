@@ -2,6 +2,7 @@
 title: Configurazione di Remote R Service in Linux
 description: Come configurare Remote R Service in Ubuntu e nel sottosistema di Windows per Linux.
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -9,12 +10,12 @@ ms.reviewer: karthiknadig
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 586f3038ff4bb091fb99160d7965ad927eda070a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0703d8523066914bad00c8313600a63b8cb0f06
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851816"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680136"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service per Linux
 
@@ -22,7 +23,7 @@ Remote R Service per Linux è attualmente disponibile in un pacchetto come rtvs-
 
 Dopo aver configurato il computer remoto, i passaggi seguenti consentono di connettere R Tools for Visual Studio (RTVS) a tale servizio:
 
-1. Selezionare **R Tools**  >    >  **area di lavoro** Windows per aprire la finestra **aree di lavoro** .
+1. Selezionare **R Tools**  >  **Windows**  >  **aree di lavoro** per aprire la finestra Aree **di** lavoro.
 1. Selezionare **Aggiungi connessione**.
 1. Assegnare un nome alla connessione e specificare l'URL, ad esempio `https://localhost:5444` (sottosistema Windows per Linux) o `https://public-ip:5444` (contenitore di Azure). Al termine, selezionare **Salva**.
 1. Selezionare l'icona della connessione o fare doppio clic sull'elemento della connessione.
@@ -85,7 +86,7 @@ In ogni caso, nel computer remoto deve essere installato uno degli interpreti R 
 
 ### <a name="ubuntu-server-vm-or-data-science-vm-on-azure"></a>Macchina virtuale del server Ubuntu o macchina virtuale data science in Azure
 
-#### <a name="create-a-vm"></a>Creare una macchina virtuale
+#### <a name="create-a-vm"></a>Creare una VM
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 1. Passare a Macchine virtuali e quindi selezionare **Aggiungi**.

@@ -2,22 +2,23 @@
 title: Gestione pacchetti per R
 description: Come usare Gestione pacchetti R in Visual Studio per installare e gestire pacchetti R.
 ms.date: 01/24/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: f6c543286951e50fb1f51e7496e166968b5d98e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 99257cfb44fa564462cd08ec754c309a63302054
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939422"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114679807"
 ---
 # <a name="package-manager"></a>Strumento di gestione pacchetti
 
-Gestione pacchetti di R Tools per Visual Studio (RTVS) è un'interfaccia utente per la gestione dei pacchetti R. Per aprirlo, selezionare **R Tools**  >  **Windows**  >  **packages** o premere **CTRL** + **7**.
+Gestione pacchetti di R Tools per Visual Studio (RTVS) è un'interfaccia utente per la gestione dei pacchetti R. Per aprirlo, selezionare **R Tools**  >  **Windows**  >  **Pacchetti** o premere **CTRL** + **7.**
 
 Gestione pacchetti contiene tre schede. Ogni scheda visualizza a sinistra un elenco di pacchetti pertinenti e a destra i dettagli specifici del pacchetto selezionato, ad esempio la versione, la descrizione, la licenza, il percorso di installazione, nonché collegamenti ad altre informazioni pertinenti. La casella di ricerca in alto a destra consente di filtrare l'elenco.
 

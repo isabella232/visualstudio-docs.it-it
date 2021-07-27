@@ -1,7 +1,7 @@
 ---
 title: Set di regole di analisi del codice
-ms.date: 04/02/2018
-description: Informazioni sui set di regole predefiniti e personalizzati nell'analisi del codice di Visual Studio. Vedere come specificare i set di regole nei file e come configurare i set di regole nei progetti.
+ms.date: 07/23/2021
+description: Informazioni sui set di regole predefiniti e personalizzati nell'analisi Visual Studio codice. Informazioni su come specificare i set di regole nei file e su come configurare i set di regole nei progetti.
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
@@ -13,26 +13,29 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 980c77067ac237dba13c8c888c358a0adeab6d1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6cc9f399397dc9fee94c31a48aa8a868a73011b1
+ms.sourcegitcommit: 8d847400f5662461dcd5d866d0edab20f66cb375
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859658"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114664519"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare set di regole per raggruppare le regole di analisi del codice
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare i set di regole per raggruppare le regole di analisi del codice
 
-Quando si configura l'analisi del codice in Visual Studio, è possibile scegliere da un elenco di *set di regole* predefiniti. Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole progettato per analizzare il codice per le API disponibili pubblicamente. È anche possibile applicare un set di regole che includa tutte le regole disponibili.
+Quando si configura l'analisi del codice Visual Studio, è possibile scegliere da un elenco di set di regole *predefiniti.* Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole progettato per analizzare il codice per le API disponibili pubblicamente. È anche possibile applicare un set di regole che include tutte le regole disponibili.
 
-È possibile personalizzare un set di regole aggiungendo o eliminando regole o modificando i livelli di gravità delle regole in modo che vengano visualizzati come avvisi o errori nel **Elenco errori**. I set di regole personalizzati possono soddisfare la necessità di un ambiente di sviluppo specifico. Quando si personalizza un set di regole, l'editor dei set di regole fornisce strumenti di ricerca e filtro che consentono di semplificare il processo.
+È possibile personalizzare un set di regole aggiungendo o eliminando regole o modificando i livelli di gravità delle regole in modo che vengano visualizzati come avvisi o errori in **Elenco errori**. I set di regole personalizzati possono soddisfare una necessità per l'ambiente di sviluppo specifico. Quando si personalizza un set di regole, l'editor del set di regole fornisce strumenti di ricerca e filtro per facilitare il processo.
 
-I set di regole sono disponibili per l'analisi del [codice gestito](/dotnet/fundamentals/code-analysis/code-quality-rule-options), l' [analisi legacy del codice gestito](how-to-configure-code-analysis-for-a-managed-code-project.md)e l' [analisi del codice C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
+I set di regole sono disponibili [per l'analisi del codice gestito,](/dotnet/fundamentals/code-analysis/code-quality-rule-options) [l'analisi legacy del codice gestito](how-to-configure-code-analysis-for-a-managed-code-project.md)e [l'analisi del codice C++.](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)
 
-## <a name="rule-set-format"></a>Formato set di regole
+>[!NOTE]
+> A partire Visual Studio 2019 versione 16.3, è possibile usare i file EditorConfig per configurare le regole per l'analisi del codice sorgente .NET, ma non l'analisi legacy. Per altre informazioni, vedere la [sezione EditorConfig rispetto ai set di](../code-quality/analyzers-faq.yml) regole nelle domande frequenti.
 
-Un set di regole viene specificato in formato XML in un file con *estensione ruleset* . Le regole, che sono costituite da un ID e da un' *azione*, sono raggruppate in base all'ID analizzatore e allo spazio dei nomi nel file.
+## <a name="rule-set-format"></a>Formato del set di regole
 
-Il contenuto di un file con *estensione ruleset* è simile al codice XML seguente:
+Un set di regole viene specificato in formato XML in un file *con estensione ruleset.* Le regole, costituite da un ID e *un'azione*, vengono raggruppate in base all'ID analizzatore e allo spazio dei nomi nel file.
+
+Il contenuto di un file *con estensione ruleset* è simile al seguente XML:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -56,11 +59,11 @@ Il contenuto di un file con *estensione ruleset* è simile al codice XML seguent
 ```
 
 > [!TIP]
-> È più semplice [modificare un set di regole](../code-quality/working-in-the-code-analysis-rule-set-editor.md) nell'editor del **set di regole** grafico anziché manualmente.
+> È più semplice modificare [un set di regole](../code-quality/working-in-the-code-analysis-rule-set-editor.md) nell'editor grafico dei set **di** regole anziché manualmente.
 
 ## <a name="specify-a-rule-set-for-a-project"></a>Specificare un set di regole per un progetto
 
-Il set di regole per un progetto viene specificato dalla proprietà **CodeAnalysisRuleSet** nel file di progetto di Visual Studio. Ad esempio:
+Il set di regole per un progetto viene specificato dalla **proprietà CodeAnalysisRuleSet** nel file Visual Studio progetto. Ad esempio:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

@@ -9,7 +9,7 @@
     - name: devinit e GitHub Codespaces
       href: devinit-and-codespaces.md
     - name: Domande frequenti
-      href: faq.md
+      href: faq.yml
     - name: Strumenti
       items:
         - name: Elenco degli strumenti
@@ -56,7 +56,7 @@
           href: tool-require-vcpkg.md
         - name: require-vscomponent
           href: tool-require-vscomponent.md
-        - name: Richiedi-ala
+        - name: require-winget
           href: tool-require-winget.md
         - name: set-env
           href: tool-set-env.md
@@ -68,7 +68,7 @@
           href: tool-windowsfeature-enable.md
         - name: windowsfeature-list
           href: tool-windowsfeature-list.md
-        - name: alette-installazione
+        - name: winget-install
           href: tool-winget-install.md
         - name: wsl-install
           href: tool-wsl-install.md

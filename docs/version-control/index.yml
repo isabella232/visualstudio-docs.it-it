@@ -3,7 +3,7 @@ title: Visual Studio documentazione sul controllo della versione
 summary: Condividere il codice dall'interno Visual Studio usando tecnologie di controllo della versione come Git e GitHub.
 metadata:
   title: Controllo della versione & controllo del codice sorgente con Git in Visual Studio
-  description: Usare le tecnologie di controllo della versione Visual Studio. È possibile condividere, integrare e gestire le versioni del codice in Git & GitHub senza uscire dalla codebase.
+  description: Usare tecnologie di controllo della versione/del codice sorgente Visual Studio. È possibile condividere, integrare e gestire le versioni del codice in Git & GitHub senza uscire dalla codebase.
   ms.topic: landing-page
   ms.date: 07/02/2021
   author: TerryGLee
@@ -11,12 +11,12 @@ metadata:
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 8143a897914a0b9c2ca3adcdc5093c89852a2f53
-  ms.sourcegitcommit: 4b19d18874a5d3c3dbea67a8e478dc7d3a813769
+  ms.openlocfilehash: 1f412499a1321cebe20955440378c2e284a2db52
+  ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/07/2021
-  ms.locfileid: "113363989"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "114591792"
 landingContent:
 - title: Panoramica
   linkLists:
@@ -46,7 +46,7 @@ landingContent:
     links:
     - text: Produttività migliorata con Git in Visual Studio
       url: https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/
-    - text: note sulla versione di Visual Studio 2022 (anteprima)
+    - text: Visual Studio versione 2022 (anteprima)
       url: /visualstudio/releases/2022/release-notes-preview/
     - text: Note sulla versione di Visual Studio 2019
       url: /visualstudio/releases/2019/release-notes/

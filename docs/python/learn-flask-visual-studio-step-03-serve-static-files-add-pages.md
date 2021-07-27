@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d474236aca50a74b96689001a56e7d0701caae30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f44f90261c975e1569d0710d74cf6c5bef19aff2
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942386"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592333"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Passaggio 3: gestire i file statici, aggiungere pagine e usare l'ereditarietà dei modelli con l'app Flask
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Passaggio 3: Gestire file statici, aggiungere pagine e usare l'ereditarietà dei modelli con l'app Flask
 
 **Passaggio precedente: [Creare un'app Flask con visualizzazioni e modelli di pagina](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -56,9 +56,9 @@ In ogni caso è possibile organizzare i file in *static* come si vuole.
 
 ### <a name="use-a-static-file-in-a-template"></a>Usare un file statico in un modello
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **HelloFlask** nel progetto di Visual Studio, scegliere **Aggiungi**  >  **nuova cartella** e assegnare un nome alla cartella `static` .
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella  **HelloFlask** nel progetto Visual Studio, scegliere Aggiungi nuova cartella e assegnare alla cartella il nome  >   `static` .
 
-1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il modello del **foglio di stile** , assegnare un nome al file `site.css` e fare clic su **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
+1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il **modello Foglio** di stile, assegnare al file il nome e `site.css` scegliere **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
 
     ![Struttura di file statici come visualizzato in Esplora soluzioni](media/flask/step03-static-file-structure.png)
 
@@ -119,7 +119,7 @@ Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartel
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Domanda: Come si gestiscono le variabili di URL e i parametri di query in un'API?
 
-Risposta: vedere la risposta nel passaggio 1-4 per [domanda: come funziona Flask con le route URL variabili e i parametri di query?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Risposta: Vedere la risposta nel passaggio 1-4 per [Domanda: Come funziona Flask](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables) con route URL variabili e parametri di query?
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Passaggio 3-3: Aggiungere una pagina all'app
 
@@ -168,7 +168,7 @@ I passaggi seguenti aggiungono una pagina "About" al progetto "HelloFlask", nonc
     <div><a href="about">About</a></div>
     ```
 
-1. Salvare tutti i file usando il comando di menu **file**  >  **Salva tutto** oppure premere **CTRL** + **MAIUSC** + **S**. Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
+1. Salvare tutti i file usando il **comando di** menu Salva tutto oppure premere  >   **CTRL** + **MAIUSC** + **S.** Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
 
 1. Eseguire il progetto per osservare i risultati e controllare lo spostamento tra le pagine. Al termine, arrestare l'app.
 
@@ -188,7 +188,7 @@ Il sistema di modelli di Flask (Jinja per impostazione predefinita) offre due mo
 
 In entrambi i casi `<template_path>` è relativo alla cartella *templates* dell'app (è consentito anche l'uso di `../` o `./`).
 
-Un modello di base delimita i *blocchi* usando i `{% block <block_name> %}` `{% endblock %}` tag e. Se un modello di riferimento usa quindi tag con lo stesso nome di blocco, il contenuto del blocco esegue l'override di quello del modello di base.
+Un modello di base delinea i *blocchi usando* i tag `{% block <block_name> %}` e `{% endblock %}` . Se un modello di riferimento usa quindi tag con lo stesso nome di blocco, il contenuto del blocco esegue l'override di quello del modello di base.
 
 I passaggi seguenti illustrano l'ereditarietà:
 
@@ -280,10 +280,7 @@ I passaggi seguenti illustrano l'ereditarietà:
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-> [!div class="nextstepaction"]
-> [Usare il modello Progetto Web Flask completo](learn-flask-visual-studio-step-04-full-flask-project-template.md)
-
-## <a name="go-deeper"></a>Approfondimento
+È possibile approfondire le risorse seguenti:
 
 - [Distribuire l'app Web nel Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Per altre funzionalità dei modelli Jinja, ad esempio il flusso di controllo, vedere la [documentazione relativa alla progettazione dei modelli Jinja](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org)

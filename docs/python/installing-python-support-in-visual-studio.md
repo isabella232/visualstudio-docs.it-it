@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 09fb452d579130cdf6597ada3af509b35f24ff43
-ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
+ms.openlocfilehash: d5a357cf2a2da1fee747d777d02aae146d97bd7b
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112254810"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114591917"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Come installare il supporto di Python in Visual Studio in Windows
 
@@ -25,7 +25,7 @@ Per installare il supporto Python per Visual Studio (noto anche come Python Tool
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e versioni precedenti](#visual-studio-2013-and-earlier)
 
-Per testare rapidamente il supporto di Python dopo aver seguito i passaggi di installazione, aprire la **finestra Interattiva di Python** premendo **ALT** + **I** e immettendo `2+2` . Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
+Per testare rapidamente il supporto di Python dopo aver seguito i passaggi di installazione, aprire la **finestra Interattiva** di Python premendo **ALT** + **I** e immettendo `2+2` . Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
 
 > [!Tip]
 > Il carico di lavoro Python include l'utile estensione Cookiecutter, che offre un'interfaccia utente grafica per individuare modelli, inserire opzioni del modello e creare progetti e file. Per informazioni dettagliate, vedere [Usare l'estensione Cookiecutter](using-python-cookiecutter-templates.md).
@@ -78,7 +78,7 @@ Per testare rapidamente il supporto di Python dopo aver seguito i passaggi di in
     | **Supporto Web Python** | Installa gli strumenti per lo sviluppo Web, tra cui il supporto per HTML, CSS e JavaScript, oltre ai modelli per i progetti usando i framework Bottle, Flask e Django. Vedere [Modelli di progetti Web Python](python-web-application-project-templates.md). |
     | **Supporto Python IoT** | Supporta lo sviluppo di Windows IoT Core usando Python. |
     | **Strumenti di sviluppo nativo Python** | Installa il compilatore C++ e altri componenti necessari per sviluppare estensioni native per Python. Vedere [Creare un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md). Installare anche il carico di lavoro **Sviluppo di applicazioni desktop con C++** per il supporto completo di C++. |
-    | **Strumenti di base di Servizi cloud di Azure** | Offre supporto aggiuntivo per sviluppare servizi cloud di Microsoft Azure in Python. Vedere [Progetti di servizi cloud di Azure.](python-azure-cloud-service-project-template.md) |
+
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
@@ -90,7 +90,7 @@ Per testare rapidamente il supporto di Python dopo aver seguito i passaggi di in
     | **Strumenti di sviluppo nativo Python** | Installa il compilatore C++ e altri componenti necessari per sviluppare estensioni native per Python. Vedere [Creare un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md). Installare anche il carico di lavoro **Sviluppo di applicazioni desktop con C++** per il supporto completo di C++. |
     ::: moniker-end
 
-1. Al termine dell'operazione, il programma di installazione specifica le opzioni per modificare, avviare, ripristinare o disinstallare Visual Studio. Il pulsante **Modifica** diventa **Aggiorna** quando sono disponibili aggiornamenti di Visual Studio per i componenti installati. **L'opzione** Modifica è quindi disponibile nel menu a discesa. È anche possibile avviare Visual Studio e il programma di installazione dal menu **Start** di Windows cercando "Visual Studio".
+1. Al termine dell'operazione, il programma di installazione specifica le opzioni per modificare, avviare, ripristinare o disinstallare Visual Studio. Il pulsante **Modifica** diventa **Aggiorna** quando sono disponibili aggiornamenti di Visual Studio per i componenti installati. **L'opzione** Modifica è quindi disponibile nel menu a discesa. È anche possibile avviare Visual Studio e il programma di installazione dal menu **Start** Windows selezionando "Visual Studio".
 
     ![Avvio, modifica, modifica o disinstallazione di Visual Studio dal programma di installazione](media/installation-vs-launch.png)
 
@@ -100,7 +100,7 @@ Se si verificano problemi durante l'installazione o l'esecuzione di Python in Vi
 
 - Determinare se si verifica lo stesso errore usando l'interfaccia della riga di comando di Python, ovvero eseguendo *python.exe* al prompt dei comandi.
 - Usare [**l'opzione**](../install/repair-visual-studio.md) Ripristina nel programma Visual Studio installazione.
-- Ripristinare o reinstallare Python tramite **Impostazioni**  >  **App & funzionalità** di Windows.
+- Ripristinare o reinstallare Python **tramite Impostazioni**  >  **app & funzionalità** in Windows.
 
 **Errore di esempio**: Non è stato possibile avviare il processo interattivo: System.ComponentModel.Win32Exception (0x80004005): Errore sconosciuto (0xc0000135) in Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
@@ -110,7 +110,7 @@ Se si verificano problemi durante l'installazione o l'esecuzione di Python in Vi
 
 1. Nel programma di installazione selezionare **Modifica**.
 
-1. Selezionare **Linguaggi di programmazione**  >  **Python Tools for Visual Studio** e quindi **Avanti:**
+1. Selezionare **Linguaggi di**  >  **Python Tools for Visual Studio** e quindi **Avanti:**
 
     ![Opzione PTVS nel programma di installazione di Visual Studio 2015](media/installation-vs2015.png)
 
@@ -120,7 +120,7 @@ Se si verificano problemi durante l'installazione o l'esecuzione di Python in Vi
 
 1. Installare la versione appropriata di Python Tools for Visual Studio per la versione in uso di Visual Studio:
 
-    - Visual Studio 2013: [PTVS 2.2.2 per Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2.2). La **finestra**  >  **di dialogo** File nuovo progetto Visual Studio 2013 un collegamento per questo processo.
+    - Visual Studio 2013: [PTVS 2.2.2 per Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2.2). La **finestra**  >  **di dialogo Project** file in Visual Studio 2013 offre un collegamento per questo processo.
     - Visual Studio 2010 e 2012: [PTVS 2.1.1 per Visual Studio 2010 e 2012](https://github.com/Microsoft/PTVS/releases/v2.1.1)
 
 1. [Installare un interprete Python a scelta](installing-python-interpreters.md). Se è già installato un interprete e Visual Studio non lo rileva automaticamente, vedere [Identificazione manuale di un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).

@@ -2,6 +2,7 @@
 title: Opzioni di R Tools
 description: Informazioni di riferimento per le opzioni in Visual Studio per il linguaggio R e funzionalità associate.
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
@@ -13,16 +14,16 @@ ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: ed2ee29fb7a0a832dd3076cbd47a7f9cd1414d96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc46d7ed1e369d31a9d0675f0595073f51f28d17
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939474"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114679793"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opzioni di R Tools per Visual Studio
 
-È possibile accedere alle impostazioni tramite il menu opzioni di **r Tools**  >   o tramite   >  **Opzioni** e scorrendo gli strumenti **r**:
+Impostazioni'accesso tramite il menu R Tools Options (Opzioni strumenti **R)** o Tools Options (Opzioni strumenti) e  >     >   scorrendo fino a **R Tools**:
 
   ![Finestra di dialogo Opzioni per R Tools](media/options-dialog.png)
 
@@ -33,7 +34,7 @@ Le opzioni e le impostazioni specifiche di R sono accessibili tramite i metodi i
 - Opzioni dell'editor avanzate ([descritte in questo articolo](#text-editor--r--advanced-options)): menu **Strumenti** > **Opzioni**, quindi selezionare **Editor di testo** > **R** > **Avanzate**
 - Opzioni di comportamento ([descritte in questo articolo](#r-tools--advanced-options)): menu **R Tools** > **Opzioni** oppure **Strumenti** > **Opzioni** e quindi scorrere fino a **R Tools**.
 
-Il comando **R Tools**  >  **impostazioni di Data Science** influiscono anche su una serie di impostazioni diverse in Visual Studio. Questo comando viene descritto nella sezione successiva.
+Il **comando R Tools** Data Science  >  **Impostazioni** influisce anche su diverse impostazioni in Visual Studio generale. Questo comando viene descritto nella sezione successiva.
 
 <a name="data-scientist-layout"></a>
 
@@ -43,7 +44,7 @@ La voce di menu **R Tools > Impostazioni di Data Science** configura l'IDE di Vi
 
 ![Layout delle finestre per data scientist in Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Per ripristinare altre impostazioni di Visual Studio in un secondo momento, usare prima il comando **strumenti**  >  **Importa/Esporta impostazioni** , selezionare **Esporta le impostazioni di ambiente selezionate** e specificare un nome file. Per ripristinare tali impostazioni, usare lo stesso comando e selezionare **Importa le impostazioni di ambiente selezionate**. È possibile usare gli stessi comandi anche se si modifica il layout per i data scientist e si vuole tornarvi in un secondo momento, anziché usare direttamente il comando **Impostazioni di Data Science**.
+Per ripristinare le altre impostazioni Visual Studio in un secondo momento, usare prima di tutto il comando Importa ed esporta Impostazioni strumenti, selezionare Esporta impostazioni di ambiente selezionate e specificare un nome  >   file.  Per ripristinare tali impostazioni, usare lo stesso comando e selezionare **Importa le impostazioni di ambiente selezionate**. È possibile usare gli stessi comandi anche se si modifica il layout per i data scientist e si vuole tornarvi in un secondo momento, anziché usare direttamente il comando **Impostazioni di Data Science**.
 
 ## <a name="text-editor--r--advanced-options"></a>Editor di testo > R > Opzioni avanzate
 
@@ -57,7 +58,7 @@ Ogni opzione può essere impostata su On o Off per controllare il comportamento 
 
 ## <a name="r-tools--advanced-options"></a>R Tools > Opzioni avanzate
 
-Il   >  comando di menu **Opzioni** di r Tools apre la finestra di dialogo **Opzioni** per le opzioni r:
+Il **comando di** menu Opzioni di R Tools apre la finestra  >   **di** dialogo Opzioni per le opzioni R:
 
   ![Finestra di dialogo Opzioni per R Tools](media/options-dialog.png)
 
@@ -78,11 +79,11 @@ Queste opzioni controllano la gestione dei valori in [Esplora variabili](variabl
 | --- | --- | --- |
 | Valutazione dinamica | `False` | Per impostazione predefinita, la funzione `View(<expression>)` crea uno snapshot dei dati come frame di dati e ciò può comportare un consumo notevole della memoria con set di dati di grandi dimensioni. Con l'impostazione di questa opzione su `True`, l'espressione viene valutata in concomitanza con l'aggiornamento della griglia per recuperare solo i dati visualizzati. Tuttavia, se cambia l'espressione cambiano anche i dati e ciò potrebbe non essere appropriato per espressioni dplyr pipe. |
 
-### <a name="help"></a>Guida
+### <a name="help"></a>Help
 
 | Opzione | Valore predefinito | Descrizione |
 | --- | --- | --- |
-| Web browser F1 | `Internal` | Controlla la modalità di visualizzazione della guida quando si cerca un termine usando **CTRL** + **F1**. Se l'opzione è impostata su `Internal`, il rendering della Guida viene eseguito all'interno di una finestra degli strumenti in Visual Studio. Se l'opzione è impostata su `External`, la Guida viene visualizzata nel Web browser predefinito. |
+| Web browser F1 | `Internal` | Controlla la modalità di visualizzazione della Guida durante la ricerca di un termine usando **CTRL** + **F1.** Se l'opzione è impostata su `Internal`, il rendering della Guida viene eseguito all'interno di una finestra degli strumenti in Visual Studio. Se l'opzione è impostata su `External`, la Guida viene visualizzata nel Web browser predefinito. |
 | Stringa di ricerca sul Web F1 | `R site:stackoverflow.com` | Controlla il modo in cui i termini di ricerca vengono passati al motore di ricerca quando si preme **CTRL** + **F1** su un termine nell'editor. Per impostazione predefinita la stringa è `R site:stackoverflow.com`, che aggiunge `R` al termine di ricerca. `site:stackoverflow.com` è una direttiva che indica al motore di ricerca di definire come ambito della ricerca le pagine all'interno del dominio `stackoverflow.com`. |
 | Browser della Guida di R | `Automatic` | Controlla la modalità di visualizzazione della Guida quando si sta effettuando una ricerca all'interno della documentazione di R tramite **F1**, **?** o **??**. Se l'opzione è impostata su `Automatic`, il rendering della Guida viene eseguito nella finestra appropriata. Ad esempio, la Guida di HTML viene visualizzata all'interno di una finestra degli strumenti di Visual Studio, mentre i PDF vengono visualizzati nel programma per PDF predefinito. Se l'opzione è impostata su `External`, il rendering della Guida viene effettuato nel Web browser predefinito. |
 

@@ -2,18 +2,19 @@
 title: Progetti di esempio per R
 description: Indice di una raccolta di esempi per iniziare con R e Visual Studio.
 ms.date: 01/24/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 0ed322a03d056f72ac2246e96d3aaeefa8f557c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a24529ac8834d8b17f2f4558472e2260dd1b675b
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967020"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680078"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Progetti di esempio di R Tools per Visual Studio
 
@@ -41,7 +42,7 @@ Questo esempio offre un'introduzione approfondita a R tramite la serie di commen
 
 Questa raccolta di esempi illustra come usare R per creare modelli di apprendimento automatico e come sfruttare le funzionalità di [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server).
 
-Come per tutti gli esempi, aprire il file, posizionare il cursore nella parte superiore e quindi eseguire il codice riga per riga con **CTRL** + **invio**. Anche i file markdown in ogni cartella contengono dettagli aggiuntivi.
+Come per tutti gli esempi, aprire il file, posizionare il cursore nella parte superiore e quindi eseguire il codice riga per riga **con CTRL** + **INVIO.** Anche i file markdown in ogni cartella contengono dettagli aggiuntivi.
 
 - `Benchmarks` esegue diversi calcoli paralleli a elevato utilizzo di algebra lineare per visualizzare il miglioramento delle prestazioni che è possibile realizzare tramite l'uso di Microsoft R Open e delle librerie Intel Math Kernel Library (MKL). Con dati simulati, i benchmark confrontano in modo specifico i calcoli di matrice per un thread rispetto ad altri due.
 

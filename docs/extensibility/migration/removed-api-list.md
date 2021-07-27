@@ -1,6 +1,6 @@
 ---
 title: API rimosse in Visual Studio 2022 Preview
-description: Informazioni sulle API di VS SDK rimosse in Visual Studio 2022 Preview, per gli autori di estensioni che aggiornano le estensioni per l'Visual Studio 2022 Preview.
+description: Informazioni sulle API di VS SDK rimosse in Visual Studio 2022 Preview, per gli autori di estensioni che aggiornano le estensioni per funzionare con Visual Studio 2022 Preview.
 ms.date: 06/08/2021
 ms.topic: reference
 author: leslierichardson95
@@ -9,12 +9,13 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: bed8d0a261f70acb5e842ebeaf0059faae3fc478
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+feedback_system: GitHub
+ms.openlocfilehash: d6375fb428eab6647854fe165aeb208ef8121e73
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308721"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592320"
 ---
 # <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK ha rimosso le API
 
@@ -26,15 +27,15 @@ Le API seguenti sono state rimosse da Visual Studio SDK e non possono più esser
 * [`IBlockContextProvider`](#iblockcontextprovider)
 * [`IToolTipProvider`](#itooltipprovider)
 * [`IVsTextScanner` E `IVsFullTextScanner`](#ivstextscanner-and-ivsfulltextscanner)
-* [Caricamento asincrono delle soluzioni e caricamento leggero delle soluzioni](#asynchronous-solution-load-and-lightweight-solution-load)
+* [Caricamento asincrono della soluzione e caricamento leggero della soluzione](#asynchronous-solution-load-and-lightweight-solution-load)
 * [`IVsDummy`](#ivsdummy)
 * [`Microsoft.VisualStudio.Shell.Task`](#microsoftvisualstudioshelltask)
-* [Open from source safe (Apri da codice sorgente sicuro)](#open-from-source-safe)
+* [Apri dal codice sorgente sicuro](#open-from-source-safe)
 * [Nuovo finestra di progettazione XAML WPF per .NET Framework](#new-wpf-xaml-designer-for-net-framework)
 
 ## <a name="ivsimageservice"></a>IVsImageService
 
-È `IVsImageService` in corso la rimozione di in Visual Studio 2022. Tutti gli utenti di `IVsImageService` devono invece passare a `IVsImageService2` .
+`IVsImageService`L'oggetto viene rimosso in Visual Studio 2022. Tutti gli utenti `IVsImageService` di devono invece passare a `IVsImageService2` .
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
@@ -47,7 +48,7 @@ Se si usa `IVsImageService` , sostituire le chiamate ai relativi metodi con chia
 | GetIconForFile             | GetImageMonikerForFile                 |
 | GetIconForFileEx           | GetImageMonikerForFile                 |
 
-`IVsImageService`i metodi Add e Get di a cui si fa riferimento alle immagini personalizzate in base al nome (una stringa), anziché a un moniker.  È preferibile cambiare il codice in modo da usare solo moniker per fare riferimento a immagini personalizzate, ma se ciò risulta poco pratico sono disponibili due metodi che consentono di associare un nome a un `IVsImageService2` moniker:
+`IVsImageService`i metodi Add e Get a cui si fa riferimento alle immagini personalizzate in base al nome (una stringa), anziché a un moniker.  È preferibile cambiare il codice in modo che usi solo moniker per fare riferimento a immagini personalizzate, ma se ciò risulta poco pratico ha un paio di metodi che consentono di associare un nome a un `IVsImageService2` moniker:
 
 * `TryAssociateNameWithMoniker`
 * `GetImageMonikerForName`
@@ -56,31 +57,31 @@ Usando questi due metodi, è possibile continuare a fare riferimento alle immagi
 
 ## <a name="iblockcontextprovider"></a>IBlockContextProvider
 
-I `IBlockContextProvider` tipi correlati e vengono rimossi in Visual Studio 2022. Tutti gli utenti di `IBlockContextProvider` devono invece passare a `IStructureContextSourceProvider` .
+I `IBlockContextProvider` tipi correlati e vengono rimossi in Visual Studio 2022. Tutti gli utenti `IBlockContextProvider` di devono invece passare a `IStructureContextSourceProvider` .
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
-Gli utenti di `IBlockContextProvider` devono invece usare ( `IStructureContextSourceProvider` [documentazione](/dotnet/api/microsoft.visualstudio.text.adornments.istructurecontextsourceprovider)).
+Gli utenti `IBlockContextProvider` di devono usare invece ( `IStructureContextSourceProvider` [documentazione](/dotnet/api/microsoft.visualstudio.text.adornments.istructurecontextsourceprovider)).
 
 ## <a name="itooltipprovider"></a>IToolTipProvider
 
-I `IToolTipProvider` tipi correlati e vengono rimossi in Visual Studio 2022. Tutti gli utenti di `IToolTipProvider` devono invece passare a `IToolTipService` .
+I `IToolTipProvider` tipi correlati e vengono rimossi in Visual Studio 2022. Tutti gli utenti `IToolTipProvider` di devono invece passare a `IToolTipService` .
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
-Gli utenti di `IToolTipProvider` devono invece usare ( `IToolTipService` [documentazione](/dotnet/api/microsoft.visualstudio.text.adornments.itooltipservice)).
+Gli utenti `IToolTipProvider` di devono usare invece ( `IToolTipService` [documentazione](/dotnet/api/microsoft.visualstudio.text.adornments.itooltipservice)).
 
 ## <a name="ivstextscanner-and-ivsfulltextscanner"></a>IVsTextScanner e IVsFullTextScanner
 
-E `IVsTextScanner` `IVsFullTextScanner` verranno rimossi in Visual Studio 2022. Tutti gli utenti di `IVsTextScanner` o devono invece passare a `IVsFullTextScanner` `IVsTextLines` .
+E `IVsTextScanner` `IVsFullTextScanner` vengono rimossi in Visual Studio 2022. Tutti gli utenti di `IVsTextScanner` o devono invece passare a `IVsFullTextScanner` `IVsTextLines` .
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
-Gli utenti di `IVsTextScanner` o devono usare invece ( `IVsFullTextScanner` `IVsTextLines` [documentazione](/dotnet/apimicrosoft.visualstudio.textmanager.interop.ivstextlines.getlinetext)).
+Gli utenti `IVsTextScanner` di o devono usare invece ( `IVsFullTextScanner` `IVsTextLines` [documentazione](/dotnet/apimicrosoft.visualstudio.textmanager.interop.ivstextlines.getlinetext)).
 
-## <a name="asynchronous-solution-load-and-lightweight-solution-load"></a>Caricamento asincrono delle soluzioni e caricamento leggero delle soluzioni
+## <a name="asynchronous-solution-load-and-lightweight-solution-load"></a>Caricamento asincrono della soluzione e caricamento leggero della soluzione
 
-In Visual Studio 2022 vengono rimosse le funzionalità Caricamento soluzione asincrono (ASL) e Caricamento leggero soluzioni (LSL), di conseguenza vengono rimossi i metodi seguenti:
+In Visual Studio 2022 vengono rimosse le funzionalità caricamento asincrono della soluzione (ASL) e caricamento leggero della soluzione (LSL), in quanto vengono rimossi i metodi seguenti:
 
 ### <a name="interfaces"></a>Interfacce
 
@@ -108,19 +109,19 @@ Nessuno.
 
 ## <a name="ivsdummy"></a>IVsDummy
 
-`IVsDummy`L'oggetto verrà rimosso in Visual Studio 2022 e non verrà sostituito. 
+`IVsDummy`L'oggetto viene rimosso Visual Studio 2022 e non verrà sostituito. 
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
-Nessuno. Ma non dovrebbe avere alcun impatto perché l'API non ha fatto nulla.
+Nessuno. Tuttavia, non dovrebbe avere alcun impatto perché l'API non ha fatto nulla.
 
 ## <a name="microsoftvisualstudioshelltask"></a>Microsoft.VisualStudio.Shell.Task
 
-La `Microsoft.VisualStudio.Shell.Task` classe è stata rinominata in in modo da non creare conflitti con la classe molto `Microsoft.VisualStudio.Shell.TaskListItem` `System.Threading.Tasks.Task` diffusa.
+La `Microsoft.VisualStudio.Shell.Task` classe è stata rinominata in modo da non essere in conflitto con la classe molto `Microsoft.VisualStudio.Shell.TaskListItem` `System.Threading.Tasks.Task` comune.
 
-## <a name="open-from-source-safe"></a>Open from source safe (Apri da codice sorgente sicuro)
+## <a name="open-from-source-safe"></a>Apri dal codice sorgente sicuro
 
-Il supporto per l'apertura di una soluzione dal codice sorgente sicuro viene rimosso, in quanto vengono rimossi i metodi, gli eventi e le costanti seguenti.
+Il supporto per l'apertura di una soluzione dal codice sorgente è in fase di rimozione, in quanto vengono rimossi i metodi, gli eventi e le costanti seguenti.
 
 ## <a name="interfaces"></a>Interfacce
 
@@ -132,8 +133,8 @@ Nessuno.
 
 ## <a name="new-wpf-xaml-designer-for-net-framework"></a>Nuovo finestra di progettazione XAML WPF per .NET Framework
 
-L'finestra di progettazione XAML WPF corrente per .NET Framework è stato deprecato e verrà sostituito con un nuovo finestra di progettazione XAML WPF per .NET Framework, basato sulla stessa architettura usata per WPF finestra di progettazione XAML per .NET (.NET Core). Ciò significa anche che il modello di estendibilità dei controlli .NET Framework WPF basato su .design.dll e Microsoft.Windows.Design.Extensibility non è più supportato. Il nuovo finestra di progettazione XAML WPF per .NET Framework fornirà lo stesso modello di estendibilità di WPF finestra di progettazione XAML per .NET (.NET Core). Se è già stata creata un'estensione .designtools.dll per .NET (.NET Core), tale estensione funzionerà per il nuovo finestra di progettazione XAML WPF per .NET Framework. Per altre informazioni su come eseguire la migrazione al nuovo modello di estendibilità per le piattaforme WPF (.NET Framework e .NET Core) e le piattaforme UWP, vedere il collegamento alla migrazione riportato di seguito. 
+L'finestra di progettazione XAML WPF corrente per .NET Framework è stato deprecato e verrà sostituito con un nuovo finestra di progettazione XAML WPF per .NET Framework, basato sulla stessa architettura usata per WPF finestra di progettazione XAML per .NET (.NET Core). Ciò significa anche che il modello .NET Framework di estendibilità dei controlli WPF basato su .design.dll e Microsoft. Windows. Design.Extensibility non è più supportato. Il nuovo finestra di progettazione XAML WPF .NET Framework lo stesso modello di estendibilità di WPF finestra di progettazione XAML per .NET (.NET Core). Se è già stata creata un'estensione .designtools.dll per .NET (.NET Core), tale estensione funzionerà per il nuovo finestra di progettazione XAML WPF per .NET Framework. Fare riferimento al collegamento alla migrazione seguente per altre informazioni su come eseguire la migrazione al nuovo modello di estendibilità per le piattaforme WPF (.NET Framework e .NET Core) e le piattaforme UWP in futuro. 
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
-Vedere [Migrazione dell'estendibilità della finestra di progettazione XAML.](https://github.com/microsoft/xaml-designer-extensibility/blob/main/documents/xaml-designer-extensibility-migration.md)
+Vedere [Migrazione dell'estendibilità della finestra di progettazione XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/main/documents/xaml-designer-extensibility-migration.md).

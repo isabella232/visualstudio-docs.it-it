@@ -2,18 +2,19 @@
 title: Progetti R
 description: Come creare una gestione di progetti di R in Visual Studio inclusi proprietà, comandi di progetto e modelli.
 ms.date: 06/29/2017
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 42cdc6e964d23b5aafdfe225c04d5d35b151cc08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5059bd57c0576d572eb9d8bc89affe8f1538650d
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936405"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680162"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -25,7 +26,7 @@ I progetti vengono sempre gestiti all'interno di una *soluzione* di Visual Studi
 
 1. Aprire Visual Studio.
 1. Scegliere **File > Nuovo > Progetto** (**CTRL**+**MAIUSC**+**N**)
-1. Selezionare "progetto r" in **modelli**  >  **r**, assegnare un nome e un percorso al progetto e selezionare **OK**:
+1. Selezionare "R Project" in **Modelli** R , assegnare un nome e un percorso al progetto  >  e selezionare **OK**:
 
     ![Finestra di dialogo Nuovo progetto per R in Visual Studio (RTVS in VS2017)](media/getting-started-01-new-project.png)
 
@@ -33,7 +34,7 @@ Questo comando crea un progetto con un file *script.R* vuoto aperto nell'editor.
 
 ![Contenuto di un progetto R creato dal modello](media/projects-template-results.png)
 
-Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente nella finestra [R interattivo](interactive-repl-for-r-in-visual-studio.md). È possibile aprire una finestra cronologia dedicata con il comando della cronologia di Windows di **R Tools**  >    >   . Tale finestra ha un pulsante della barra degli strumenti e voci di menu contestuale per cancellare il contenuto della cronologia.
+Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente nella finestra [R interattivo](interactive-repl-for-r-in-visual-studio.md). È possibile aprire una finestra cronologia dedicata con il **comando R Tools**  >  **Windows**  >  **Cronologia.** Tale finestra ha un pulsante della barra degli strumenti e voci di menu contestuale per cancellare il contenuto della cronologia.
 
 Il file *rproject.rproj* consente di gestire alcune impostazioni di progetto specifiche di R non altrimenti gestite da Visual Studio:
 
@@ -48,7 +49,7 @@ Il file *rproject.rproj* consente di gestire alcune impostazioni di progetto spe
 | NumSpacesForTab | 2 | Il numero di spazi da inserire se UseSpacesForTab è impostato su Sì. |
 | Codifica | UTF-8 | La codifica predefinita per i file `.R`. |
 | RnwWeave | Sweave | Pacchetto da usare per la composizione di un file Rnw. |
-| LaTeX | pdfLaTeX | Libreria da utilizzare per la conversione di RMarkdown in formato PDF. |
+| LaTeX | pdfLaTeX | Libreria da usare per la conversione di RMarkdown in PDF. |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>Conversione di una cartella di file in un progetto R
 
@@ -56,8 +57,8 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 
 1. Creare un nuovo progetto in Visual Studio come descritto nella sezione precedente.
 1. Copiare i file nella cartella del progetto.
-1. Nel Esplora soluzioni di Visual Studio fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**  >  **elemento esistente** e selezionare i file che si desidera aggiungere. Quando si seleziona **OK**, questi compaiono nell'albero del progetto.
-1. Per organizzare il codice in sottocartelle, fare clic con il pulsante destro del mouse sul progetto, selezionare prima **Aggiungi**  >  **nuova cartella** , quindi copiare i file nella cartella e aggiungere gli elementi esistenti nel passaggio 3.
+1. Nella finestra Visual Studio Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** elemento esistente e individuare i  >  file da aggiungere. Quando si seleziona **OK**, questi compaiono nell'albero del progetto.
+1. Per organizzare il codice in sottocartelle, fare clic con il pulsante destro del mouse sul progetto, selezionare prima Aggiungi nuova cartella, quindi copiare i file in tale cartella e aggiungere gli  >   elementi esistenti nel passaggio 3.
 
 ## <a name="project-properties"></a>Proprietà progetto
 
@@ -70,7 +71,7 @@ Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante de
 | | Percorso progetto remoto | Percorso di un'area di lavoro remota. |
 | | Trasferisci file durante l'esecuzione | Indica se i file di progetto, soggetti al filtro in **File da trasferire**, devono essere copiati in un'area di lavoro remota a ogni esecuzione. |
 | | File da trasferire | Nomi di file e caratteri jolly che indicano i file specifici da copiare un'area di lavoro remota se l'opzione **Trasferisci file durante l'esecuzione** è selezionata. |
-| Impostazioni | (File Settings.R) | Le impostazioni dei progetti R vengono ereditate dai file *Settings.R* o **.Settings.R* che si trovano all'interno del progetto. Se non esistono file di impostazioni, è possibile aggiungere variabili, salvare la pagina. Un file *Settings.R* predefinito verrà automaticamente creato. È anche possibile aggiungere il file di impostazioni al progetto tramite il comando di menu **file**  >  **Aggiungi nuovo elemento** . <br/> Le impostazioni vengono memorizzate come codice R e il file può essere originato prima di eseguire altri moduli, pre-popolando in questo modo l'ambiente con le impostazioni predefinite. |
+| Impostazioni | (File Settings.R) | Le impostazioni dei progetti R vengono ereditate dai file *Settings.R* o **.Settings.R* che si trovano all'interno del progetto. Se non esistono file di impostazioni, è possibile aggiungere variabili, salvare la pagina. Un file *Settings.R* predefinito verrà automaticamente creato. È anche possibile aggiungere un file di impostazioni al progetto tramite il **comando di** menu File  >  **Aggiungi nuovo** elemento. <br/> Le impostazioni vengono memorizzate come codice R e il file può essere originato prima di eseguire altri moduli, pre-popolando in questo modo l'ambiente con le impostazioni predefinite. |
 
 ## <a name="r-specific-project-commands"></a>Comandi di progetto specifici di R
 
@@ -80,16 +81,16 @@ I progetti di Visual Studio supportano diversi comandi generali sia tramite il m
 | --- | --- |
 | Imposta directory di lavoro qui | Imposta la directory di lavoro della finestra interattiva R sulla cartella del progetto, che può essere usata anche in qualsiasi sottocartella all'interno di un progetto. |
 | Apri cartella superiore | Apre Esplora risorse in corrispondenza del percorso del file selezionato. |
-| Aggiungi script R | Crea e apre un nuovo file *.R* con nome predefinito. È inoltre possibile utilizzare il comando **Aggiungi**  >  **nuovo elemento** per creare *. File R* , oltre a diversi altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates). |
-| Aggiungi R Markdown | Crea e apre un nuovo documento *.rmd* con nome predefinito. È inoltre possibile utilizzare il comando **Aggiungi**  >  **nuovo elemento** per creare file con *estensione RMD* , oltre a una serie di altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates).  |
+| Aggiungi script R | Crea e apre un nuovo file *.R* con nome predefinito. È anche possibile usare il **comando Aggiungi**  >  **nuovo elemento** per creare *. file R* e diversi altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates). |
+| Aggiungi R Markdown | Crea e apre un nuovo documento *.rmd* con nome predefinito. È anche possibile usare il **comando Aggiungi** nuovo elemento per creare file con estensione  >   *rmd* e diversi altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates).  |
 | Pubblica stored procedure | Avvia il processo di pubblicazione di eventuali stored procedure presenti all'interno di script R. Vedere [Usare stored procedure di SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>Modelli di elemento specifici di R
 
-RTVS include diversi modelli per tipi di file specifici. Per accedere ai modelli, fare clic con il pulsante destro del mouse su un progetto R e scegliere **Aggiungi**  >  **nuovo elemento** selezionando **progetto**  >  **Aggiungi nuovo elemento** oppure usando **file**  >  **nuovo**  >  **file** e selezionando la scheda **R** . Il modo migliore per esplorare un modello è creare un nuovo progetto e inserirvi file di ogni tipo.
+RTVS include diversi modelli per tipi di file specifici. Per accedere ai modelli, fare clic con il pulsante destro del mouse su un progetto R e scegliere Aggiungi nuovo elemento , selezionando Project Aggiungi nuovo elemento oppure file nuovo file e selezionando la  >     >     >    >   **scheda R.** Il modo migliore per esplorare un modello è creare un nuovo progetto e inserire file di ogni tipo.
 
 > [!Note]
-> I comandi **Aggiungi**  >  **nuovo elemento** visualizzano anche tipi di file generici che non sono elencati nella tabella. **in questo** caso i  >    >   tipi sono contenuti nella scheda **generale** .
+> I **comandi** Aggiungi nuovo elemento visualizzano anche i tipi di file generali non elencati nella tabella. Con File nuovo file tali tipi sono invece contenuti  >   nella   >    >   **scheda** Generale.
 
 | Tipo di file | Descrizione |
 | --- | --- |
@@ -99,7 +100,7 @@ RTVS include diversi modelli per tipi di file specifici. Per accedere ai modelli
 | Documentazione di R | File di documentazione di R generico che contiene solo i campi nome, alias e titolo. |
 | Documentazione di R (funzione) | File di documentazione di R contenente molti campi con commenti di descrizione di una funzione. |
 | Documentazione di R (set di dati) | File di documentazione di R contenente molti campi con commenti di descrizione di un set di dati. |
-| Query SQL | File con *estensione SQL* vuoto. Vedere [Usare SQL Server ed R](integrating-sql-server-with-r.md). |
+| Query SQL | Un file *con estensione sql* vuoto. Vedere [Usare SQL Server ed R](integrating-sql-server-with-r.md). |
 | Stored procedure con R | File R con una query SQL figlio e un file modello di stored procedure figlio. Vedere [Usare SQL Server ed R](integrating-sql-server-with-r.md). |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Usare più tipi di progetto in Visual Studio

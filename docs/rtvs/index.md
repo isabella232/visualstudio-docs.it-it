@@ -2,18 +2,19 @@
 title: R Tools for Visual Studio
 description: R Tools per Visual Studio 2017 (RTVS) è un'estensione gratuita, open source che offre diverse funzionalità di linguaggio, inclusi IntelliSense, debug e aree di lavoro remote.
 ms.date: 11/13/2017
+ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 76230555defd9367800f6c3c4e5ea0fe24a5195d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6dab4fafae0b3772cffd5d72ad0e53ce23be2aad
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946345"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114679933"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Uso di R in Visual Studio
 
