@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o Microsoft Azure Active Directory gruppi
-ms.openlocfilehash: 98740ba82f0641b310edc46e35a2e6a57fe10ea8
-ms.sourcegitcommit: d5c038792da2c86436750380633ee80c39e4c4ba
+ms.openlocfilehash: 9cb4df67fd29ba54d2576068f8a38fc6bf081b47
+ms.sourcegitcommit: 2694ab246eb857a1c607738a67198c46f826f106
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114597085"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114995245"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -98,7 +98,7 @@ Guardare questo video o leggere per altre informazioni sull'aggiunta di sottoscr
 
 2. Per aggiungere più sottoscrittori contemporaneamente, passare alla **scheda Gestisci sottoscrittori.**
 
-3. Scegliere la **scheda** Aggiungi, quindi **selezionare Azure Active Directory gruppo** nell'elenco a discesa.  
+3. Scegliere la **scheda** Aggiungi, quindi **selezionare Azure Active Directory gruppo nell'elenco** a discesa.  
 
    > [!div class="mx-imgBorder"]
    > ![Scegliere l'aggiunta in blocco usando Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Scegliere la funzionalità Aggiungi in blocco Azure AD per eseguire il pull dei sottoscrittori Azure Active Directory gruppo.")
@@ -108,7 +108,7 @@ Guardare questo video o leggere per altre informazioni sull'aggiunta di sottoscr
 5. Quando si seleziona il gruppo, il campo verrà popolato automaticamente con il nome del gruppo. Sarà possibile visualizzare gli utenti in tale gruppo prima di aggiungerli. Successivamente, è possibile scegliere il livello di sottoscrizione, i diritti di download e le preferenze di comunicazione per il gruppo. Se si vuole, è possibile aggiungere dettagli nel campo di riferimento. 
 
    > [!div class="mx-imgBorder"]
-   > ![Scegliere il gruppo Azure AD gruppo](_img/assign-license-bulk/bulk-add-aad-details.png "Scegliere il nome del gruppo Azure AD per aggiungere sottoscrittori da tale gruppo.")
+   > ![Scegliere il gruppo di Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Scegliere il nome del gruppo Azure AD per aggiungere sottoscrittori da tale gruppo.")
 
 6. Selezionare **Aggiungi** e quindi **Conferma.** 
 
@@ -123,11 +123,6 @@ Guardare questo video o leggere per altre informazioni sull'aggiunta di sottoscr
 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>D: È possibile scegliere più livelli di sottoscrizione da assegnare all'interno di Azure AD gruppo? 
-A: No: tutti gli utenti del gruppo ricevono la stessa sottoscrizione. 
-
-### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>D: È possibile modificare i dettagli dei sottoscrittori delle persone aggiunte in un gruppo Azure AD sottoscrizione?  
-A: No : per modificare le informazioni per un singolo sottoscrittore, è necessario rimuoverle dal gruppo di sicurezza Azure AD e assegnare loro una sottoscrizione singolarmente.  
 
 ### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>D: Perché non è possibile visualizzare l'opzione per usare Azure Active Directory per aggiungere sottoscrittori?
 A: La funzionalità è attualmente disponibile solo per le organizzazioni con contratti attendibili.  Selezionare il **pulsante Dettagli** per visualizzare le informazioni sul contratto.
@@ -135,17 +130,26 @@ A: La funzionalità è attualmente disponibile solo per le organizzazioni con co
    > [!div class="mx-imgBorder"]
    > ![Fare clic sul pulsante Dettagli](_img/assign-license-bulk/bulk-add-agreement.png "Fare clic sul pulsante Dettagli per visualizzare il tipo di contratto")
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>D: È stato aggiunto un utente al gruppo di sicurezza Azure AD, ma non viene visualizzato come aggiunto nel portale di amministrazione delle sottoscrizioni e non ha una sottoscrizione. Perché no?  
-A: A seconda di come l'organizzazione ha configurato Azure AD, potrebbero verificarsi ritardi fino a 24 ore prima dell'aggiunta dell'utente. Se sono state più di 24 ore, visitare la pagina Visual Studio [supporto per l'amministrazione e le sottoscrizioni.](https://my.visualstudio.com/gethelp)  
+### <a name="q-i-added-users-to-my-azure-active-directory-group-but-they-dont-have-subscriptions-yet-why"></a>D: Gli utenti sono stati aggiunti al gruppo Azure Active Directory, ma non hanno ancora sottoscrizioni. Perché? 
+A: Se le modifiche sono state apportate direttamente in Azure Active Directory le sottoscrizioni devono essere assegnate molto rapidamente, ma se le modifiche sono state apportate in un'istanza locale di Active Directory, sarà prima necessario sincronizzarla con Azure Active Directory. A seconda della configurazione di Active Directory locale, l'applicazione delle modifiche potrebbe richiedere fino a 24 ore. Se sono state più di 24 ore, il team di supporto può [aiutare a risolvere eventuali problemi.](https://aka.ms/vsadminhelp) 
+
+### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-active-directory-group"></a>D: È possibile scegliere più livelli di sottoscrizione da assegnare all'interno di Azure Active Directory gruppo?
+A: No: tutti gli utenti del gruppo ricevono lo stesso livello di sottoscrizione.
+
+### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-active-directory-group"></a>D: È possibile modificare i dettagli dei sottoscrittori delle persone aggiunte in un Azure Active Directory gruppo?
+A: No : per modificare le informazioni per un singolo sottoscrittore, è necessario rimuoverle dal gruppo di sicurezza Azure Active Directory e assegnare loro una sottoscrizione singolarmente.
+
+### <a name="q-can-i-add-separate-notification-email-addresses-for-members-of-an-azure-active-directory-group"></a>D: È possibile aggiungere indirizzi di posta elettronica di notifica separati per i membri di un Azure Active Directory gruppo?
+A: No: gli indirizzi di posta elettronica separati per le notifiche non sono attualmente supportati per le sottoscrizioni aggiunte Azure Active Directory gruppi. Tutti i messaggi di posta elettronica verranno inviati al messaggio di posta elettronica principale (nome dell'principio utente)
 
 ## <a name="resources"></a>Risorse
 - [Visual Studio di amministrazione e sottoscrizioni](https://aka.ms/vsadminhelp)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-- Se è necessario aggiungere solo uno o due sottoscrittori,  vedere [Aggiungere singoli utenti](assign-license.md)
+- Se è necessario aggiungere solo uno o due sottoscrittori, vedere [Aggiungere singoli utenti](assign-license.md)

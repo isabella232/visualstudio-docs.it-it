@@ -214,3 +214,5 @@
       href: 'https://www.microsoft.com/licensing/product-licensing/products.aspx'
     - name: Contratto per i prodotti e i servizi Microsoft (MPSA)
       href: 'https://www.microsoft.com/licensing/mpsa/default.aspx'
+    - name: Come automatizzare le assegnazioni delle sottoscrizioni con Azure Active Directory
+      href: assign-azure-ad.md

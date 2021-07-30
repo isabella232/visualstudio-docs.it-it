@@ -2,7 +2,7 @@
 title: Cerca nei file
 description: Informazioni sulla funzionalità Trova nei file e su come usarla per cercare un set specifico di file.
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2021
+ms.date: 07/29/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.findinfiles
@@ -20,23 +20,23 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bffb7e2f8866ccd2371f8e501788672cb55c03f8
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 1b934505102383594f361b0f2227b579fc81667c
+ms.sourcegitcommit: 2694ab246eb857a1c607738a67198c46f826f106
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680203"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114995213"
 ---
 # <a name="find-in-files"></a>Cerca nei file
 
-**Trova in File** consente di cercare un set specificato di file. Le corrispondenze Visual Studio trovate sono elencate nella **finestra Risultati** ricerca nell'IDE. La modalità di visualizzazione dei risultati dipende dalle opzioni selezionate **nella** scheda Trova nei file della finestra **di dialogo** Trova e sostituisci .
+**Trova in File** consente di cercare un set specificato di file. Le corrispondenze Visual Studio trovate sono elencate nella **finestra Risultati** ricerca nell'IDE. La modalità di visualizzazione dei risultati dipende dalle opzioni selezionate **nella** scheda Trova nei file della finestra di dialogo Trova **e** sostituisci .
 
 ::: moniker range=">=vs-2019"
 
 :::image type="content" source="media/find-files-vs2019.png" alt-text="Screenshot della finestra di dialogo Trova e sostituisci in Visual Studio 2019, con la scheda Trova nei file aperta.":::
 
 > [!IMPORTANT]
-> Se si usa **Visual Studio 2019** versione [**16.6**](/visualstudio/releases/2019/release-notes-v16.6/) o  precedente, la finestra di dialogo Trova e sostituisci potrebbe non essere visualizzata qui. Passare alla versione [Visual Studio 2017](find-in-files.md?view=vs-2017&preserve-view=true) di questa pagina per le descrizioni corrispondenti a quanto visualizzato sullo schermo.
+> Se si usa **Visual Studio 2019** versione [**16.6**](/visualstudio/releases/2019/release-notes-v16.6/) o  precedente, la finestra di dialogo Trova e sostituisci potrebbe non essere visualizzata qui. Passare alla versione [Visual Studio 2017](find-in-files.md?view=vs-2017&preserve-view=true) di questa pagina per le descrizioni che corrisponderanno a quanto visualizzato sullo schermo.
 
 ::: moniker-end
 
@@ -75,9 +75,9 @@ Per cercare una nuova stringa di testo o una nuova espressione, specificarla nel
 
 È possibile selezionare o deselezionare le opzioni seguenti:
 
-- **Maiuscole/minuscole:** se selezionata, per **una ricerca Risultati** ricerca verrà fatto distinzione tra maiuscole e minuscole.
-- **Trova parola intera:** se selezionata, le **finestre Risultati** ricerca restituiscono solo corrispondenze intere.
-- **Usa espressioni regolari:** quando questa opzione è selezionata, è possibile usare notazioni speciali per definire modelli di testo corrispondenti nella casella di ricerca o nella **casella di** testo Sostituisci. Per un elenco di queste notazioni, vedere [Uso delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+- **Maiuscole/minuscole:** usare questa opzione per assicurarsi che la ricerca eserciti la distinzione tra maiuscole e minuscole.
+- **Trova la corrispondenza con parola** intera: usare questa opzione per assicurarsi che la ricerca restituisca solo corrispondenze di parole intere.
+- **Usa espressioni regolari:** usare questa opzione per usare notazioni speciali che definiscono i modelli di testo da trovare nella casella di ricerca (o nella **casella di** testo Sostituisci). Per un elenco di queste notazioni, vedere [Uso delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
     > [!Important]
     > Il **pulsante Generatore di** espressioni viene visualizzato accanto alla casella Di ricerca solo se è stata selezionata la casella di controllo Usa **espressioni** regolari.
@@ -88,13 +88,16 @@ Per cercare una nuova stringa di testo o una nuova espressione, specificarla nel
 
 L'opzione selezionata nell'elenco a discesa  Cerca in determina se Trova nei file esegue la ricerca nell'intera area di lavoro, nell'intera soluzione, nel progetto corrente, nella directory corrente, **in** tutti i documenti aperti o nel documento corrente.
 
-È anche possibile usare il pulsante **Sfoglia (...)** adiacente per individuare la posizione in cui si vuole eseguire la ricerca.
+È anche possibile usare il pulsante **Sfoglia (...)** adiacente per individuare la posizione in cui si vuole eseguire la ricerca. Ancora meglio, se è già stata specificata una directory, questo pulsante accoderà la nuova directory invece di sostituirla. Ad esempio, se il valore "Cerca in" è ".\Code", è possibile fare clic sul pulsante Sfoglia **(...)** e passare a una cartella denominata "Codice condiviso". La **casella Sfoglia (...)** visualizza ora ".\Code;. \Shared Code" e quando viene eseguito il comando Find, esegue la ricerca in entrambe le cartelle.
 
-È anche possibile attivare o disattivare  la **casella di controllo** Includi elementi esterni o Includi file esterni o entrambe.
+Per perfezionare la ricerca, è possibile selezionare o deselezionare le opzioni seguenti:
+
+- **Includi elementi esterni:** usare questa opzione per includere elementi esterni, ad esempio file come "windows.h" a cui è possibile fare riferimento ma che non fanno parte della soluzione.
+- **Includi file** esterni: usare questa opzione per includere file esterni, ad esempio file aperti ma che non fanno parte della soluzione.
 
 ## <a name="file-types"></a>Tipi di file
 
-**L'opzione** Tipi di file indica i tipi di file da cercare in **Cerca nelle** directory. Selezionare qualsiasi voce dell'elenco per immettere una stringa di ricerca preconfigurata che troverà i file dei tipi specificati. È anche possibile escludere i file. A tale scopo, aggiungere il carattere "!" a qualsiasi percorso o tipo di file per escluderlo dalla ricerca.
+**L'opzione** Tipi di file indica i tipi di file da cercare nelle directory **Cerca in** . Selezionare qualsiasi voce dell'elenco per immettere una stringa di ricerca preconfigurata che troverà i file dei tipi specificati. È anche possibile escludere i file. A tale scopo, aggiungere il carattere "!" a qualsiasi percorso o tipo di file per escluderlo dalla ricerca.
 
 ### <a name="append-results"></a>Accoda risultati
 
@@ -184,7 +187,7 @@ Mostra un elenco di file che contengono le corrispondenze invece di visualizzare
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Sostituire nei file](../ide/replace-in-files.md)
 - [Cercare e sostituire testo](../ide/finding-and-replacing-text.md)
