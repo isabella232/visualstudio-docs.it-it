@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 50aa6077bafb2d4791555d449f06f6c81595a2f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dfeea15e0d9003e3ae0e46b74c844016d298595
+ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950564"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114796190"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 
@@ -21,7 +21,7 @@ Visual Studio per Mac offre due modi per aggiungere ulteriori riferimenti al pro
 
 Si tratta di:
 
-* Riferimenti
+* Bibliografia
 * Pacchetti NuGet (aggiunti tramite la cartella Pacchetti)
 
 A qualsiasi progetto è anche possibile aggiungere riferimenti Web e riferimenti nativi.
@@ -47,4 +47,4 @@ Per altre informazioni sull'uso di un pacchetto NuGet, vedere la procedura guida
 ## <a name="see-also"></a>Vedere anche
 
 - [Gestire i riferimenti (Visual Studio in Windows)](/visualstudio/ide/managing-references-in-a-project)
-- [Aggiunta di riferimenti tramite NuGet o SDK di estensione (Visual Studio in Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)
+- [NuGet sdk come riferimento al progetto](/visualstudio/extensibility/nuget-versus-sdk-references)

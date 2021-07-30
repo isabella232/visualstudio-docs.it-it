@@ -1,7 +1,7 @@
 ---
 title: Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati
 description: Questo carico di lavoro di Visual Studio riunisce Python, F# e le rispettive distribuzioni di runtime, tra cui Anaconda. Visual Studio 2017 include anche R.
-ms.date: 02/28/2019
+ms.date: 07/28/2021
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2c12c8a0979ab081ea2f09faeeccdb5a8a9d2175
-ms.sourcegitcommit: 398b4d4e5ce0f978720f11990db05b209766aedc
+ms.openlocfilehash: bd57dd13bdb487307c416cd5013f197172d5fc6c
+ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112016307"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114796216"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installare il supporto per l'analisi scientifica in Visual Studio
 
@@ -59,7 +59,7 @@ Per impostazione predefinita, il carico di lavoro installa le opzioni seguenti, 
 - Supporto per il linguaggio F#
 - Python:
   - Supporto linguaggio Python
-  - [Anaconda3 a 64 bit](https://www.continuum.io), una distribuzione Python che include librerie di data science complete e un interprete Python.
+  - [Anaconda3 a 64 bit](https://anaconda.com), una distribuzione Python che include librerie di data science complete e un interprete Python.
   - Supporto Web Python
   - Supporto modello Cookiecutter
 - R:
@@ -82,13 +82,13 @@ L'esecuzione del codice nella posizione in cui si trovano già i dati offre i va
 
 - **Eliminazione dello spostamento dei dati:** invece di spostare i dati dal database all'applicazione o al modello, è possibile compilare applicazioni nel database. Questa funzionalità consente di evitare le barriere a livello di sicurezza, conformità, governance e integrità, oltre a una serie di problemi simili correlati allo spostamento di grandi quantità di dati. È anche possibile usare set di dati che non potrebbero essere gestiti con la memoria di un computer client.
 
-- **Distribuzione semplice:** dopo aver pronto un modello, distribuirlo nell'ambiente di produzione è semplice incorporarlo in uno script T-SQL. Qualsiasi applicazione client SQL scritta in qualsiasi linguaggio può quindi sfruttare modelli e intelligence tramite una chiamata di stored procedure. Non sono necessarie integrazioni specifiche del linguaggio.
+- **Distribuzione semplice:** dopo aver pronto un modello, distribuirlo nell'ambiente di produzione è semplice incorporarlo in uno script T-SQL T. Qualsiasi applicazione client SQL scritta in qualsiasi linguaggio può quindi sfruttare modelli e intelligence tramite una chiamata di stored procedure. Non sono necessarie integrazioni specifiche del linguaggio.
 
-- **Scalabilità** e prestazioni di livello aziendale: è possibile usare le funzionalità avanzate di SQL Server, ad esempio gli indici di tabelle e archivi colonne in memoria, con le API scalabili ad alte prestazioni nei pacchetti RevoScale. Evitare gli spostamenti di dati significa anche evitare i vincoli di memoria client man mano che aumentano le dimensioni dei dati oppure se si desidera aumentare le prestazioni dell'applicazione.
+- **Enterprise prestazioni** e scalabilità di livello superiore: è possibile usare le funzionalità avanzate di SQL Server, ad esempio gli indici di tabelle e colonne in memoria, con le API scalabili ad alte prestazioni nei pacchetti RevoScale. Evitare gli spostamenti di dati significa anche evitare i vincoli di memoria client man mano che aumentano le dimensioni dei dati oppure se si desidera aumentare le prestazioni dell'applicazione.
 
-- **Estendibilità** dettagliata: è possibile installare ed eseguire uno dei pacchetti open source più recenti in SQL Server per creare applicazioni di deep learning e intelligenza artificiale su enormi quantità di dati SQL Server. Installare un pacchetto in SQL Server è semplice come l'installazione di un pacchetto nel computer locale.
+- **Estendibilità** dettagliata: è possibile installare ed eseguire uno dei pacchetti open source più recenti in SQL Server per creare applicazioni di deep learning e intelligenza artificiale su enormi quantità di dati in SQL Server. Installare un pacchetto in SQL Server è semplice come l'installazione di un pacchetto nel computer locale.
 
-- **Ampia disponibilità senza** costi aggiuntivi: le integrazioni del linguaggio sono disponibili in tutte le edizioni di SQL Server 2017 e versioni successive, inclusa l'edizione Express.
+- **Disponibilità elevata senza** costi aggiuntivi: le integrazioni del linguaggio sono disponibili in tutte le edizioni di SQL Server 2017 e versioni successive, inclusa l'edizione Express.
 
 Per sfruttare al meglio l'integrazione in SQL Server, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Elaborazione ed archiviazione dati** con l'opzione **SQL Server Data Tools**. Questa opzione abilita SQL IntelliSense, l'evidenziazione della sintassi e la distribuzione.
 
