@@ -1,17 +1,17 @@
 ---
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.date: 05/28/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1d90c8525fa5396eb2dd983c45bab43b2e130c8b
-ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
+ms.openlocfilehash: c56f780f7c46205c250b43af4e3a307db2ed7a10
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110719855"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094019"
 ---
 | **Valore** | **Risultato** |
 | --------- | ---------- |
@@ -35,4 +35,4 @@ ms.locfileid: "110719855"
 | 8006 | Visual Studio processi in esecuzione |
 | -1073720687 | Errore di connettività |
 | -1073741510 | Il programma di installazione di Microsoft Visual Studio è stato terminato (dall'utente o da un processo esterno) |
-| Altro<br>(ad esempio:<br>-1, 1, 1603) | Si è verificata una condizione di errore. Per altre informazioni, vedere i log |
+| Altri<br>(ad esempio:<br>-1, 1, 1603) | Si è verificata una condizione di errore. Per altre informazioni, vedere i log |

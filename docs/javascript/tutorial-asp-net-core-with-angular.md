@@ -12,12 +12,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 380458a359b1f36bd6e70c8466d37ffa18f88b94
-ms.sourcegitcommit: d5c038792da2c86436750380633ee80c39e4c4ba
+ms.openlocfilehash: 52e3e78fbfc6a407e684c2e9eeb237a603934764
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114597248"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115093983"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-angular-in-visual-studio"></a>Esercitazione: Creare un'app ASP.NET Core con Angular in Visual Studio
 
@@ -39,13 +39,13 @@ Assicurarsi che siano installati gli elementi seguenti:
 
 ## <a name="create-the-frontend-app"></a>Creare l'app front-end
 
-1. Nella finestra di dialogo Project nuovo progetto **selezionare Crea un nuovo progetto.** 
+1. Nella finestra di dialogo Project nuovo progetto selezionare **Crea un nuovo progetto.** 
 
-   :::image type="content" source="media/vs-2022/asp-net-core-create-new-project.png" alt-text="Creare un nuovo progetto":::
+   :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="Creare un nuovo progetto":::
 
 1. Cercare Angular nella barra di ricerca nella parte superiore e quindi selezionare **Standalone Angular Modello**.
 
-   :::image type="content" source="media/vs-2022/asp-net-core-with-angular-choose-template.png" alt-text="Scelta di un modello":::
+   :::image type="content" source="media/vs-2022/angular-choose-template.png" alt-text="Scelta di un modello":::
 
 1. Assegnare un nome al progetto e alla soluzione. Quando si arriva alla finestra **Informazioni aggiuntive,** assicurarsi di selezionare l'opzione Aggiungi integrazione per API Web ASP.NET Project **vuota.** Questa opzione aggiunge file al modello Angular in modo che possa essere associato in un secondo momento al ASP.NET Core progetto.
 
@@ -82,7 +82,7 @@ Assicurarsi che siano installati gli elementi seguenti:
 
    :::image type="content" source="media/vs-2022/asp-net-core-project-properties.png" alt-text="Aprire le proprietà del progetto"::: 
  
-1. Passare al menu Debug e selezionare l'opzione Open debug launch profiles UI (Apri **profili di avvio debug dell'interfaccia** utente). Deselezionare **l'opzione Avvia** browser.
+1. Passare al menu Debug e selezionare l'opzione **Open debug launch profiles UI (Apri profili di avvio debug dell'interfaccia** utente). Deselezionare **l'opzione Avvia** browser.
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-angular-deselect-launch-browser.png" alt-text="Aprire l'interfaccia utente dei profili di avvio del debug"::: 
 
@@ -105,7 +105,7 @@ Assicurarsi che siano installati gli elementi seguenti:
 Premere **F5** o selezionare il **pulsante Avvia** nella parte superiore della finestra. Verranno visualizzati due prompt dei comandi:
 
 - Progetto API ASP.NET Core in esecuzione
-- Interfaccia Angular comando che esegue il comando ng start
+- L'Angular dell'interfaccia della riga di comando che esegue il comando ng start
 
 Dovrebbe essere visualizzata una Angular app, popolata tramite l'API.
 

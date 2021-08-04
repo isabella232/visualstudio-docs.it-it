@@ -2,7 +2,7 @@
 title: Cerca nei file
 description: Informazioni sulla funzionalità Cerca nei file e su come usarla per eseguire ricerche in un set specifico di file.
 ms.custom: SEO-VS-2020
-ms.date: 07/30/2021
+ms.date: 08/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.findinfiles
@@ -20,23 +20,23 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc6ddc8ce44255d143eb18b4afbefad36300967
-ms.sourcegitcommit: 24dd8fbdf88eca005e9f01328ab57150de37d432
+ms.openlocfilehash: c2f3756b63cc07ed701a36b34a96c581acd9eb38
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2021
-ms.locfileid: "115014860"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094666"
 ---
 # <a name="find-in-files"></a>Cerca nei file
 
-**Trova nei file** consente di cercare un set specificato di file. Le corrispondenze Visual Studio vengono elencate nella **finestra Risultati** ricerca nell'IDE. La modalità di visualizzazione dei risultati dipende dalle opzioni selezionate nella scheda Cerca **nei** file della finestra **di dialogo** Trova e sostituisci .
+**Trova nei file** consente di cercare un set specificato di file. Le corrispondenze Visual Studio vengono elencate nella **finestra Risultati** ricerca nell'IDE. La modalità di visualizzazione dei risultati dipende dalle opzioni selezionate **nella** scheda Cerca nei file della finestra **di dialogo** Trova e sostituisci .
 
 ::: moniker range=">=vs-2019"
 
 :::image type="content" source="media/find-files-vs2019.png" alt-text="Screenshot della finestra di dialogo Trova e sostituisci in Visual Studio 2019, con la scheda Cerca nei file aperta.":::
 
 > [!IMPORTANT]
-> Se si usa **Visual Studio 2019** versione [**16.6**](/visualstudio/releases/2019/release-notes-v16.6/) o  precedente, la finestra di dialogo Trova e sostituisci potrebbe non essere visualizzata qui. Passare alla versione [Visual Studio 2017](find-in-files.md?view=vs-2017&preserve-view=true) di questa pagina per le descrizioni corrispondenti a quanto visualizzato sullo schermo.
+> Se si usa **Visual Studio 2019** [**versione 16.6**](/visualstudio/releases/2019/release-notes-v16.6/) o  precedente, la finestra di dialogo Trova e sostituisci potrebbe non essere visualizzata qui. Passare alla versione [Visual Studio 2017](find-in-files.md?view=vs-2017&preserve-view=true) di questa pagina per le descrizioni corrispondenti a quanto visualizzato sullo schermo.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Per cercare una nuova stringa di testo o una nuova espressione, specificarla nel
 
 L'opzione selezionata dall'elenco a discesa  Cerca in determina se La ricerca nei file viene eseguita nell'intera area di lavoro, nell'intera soluzione, nel progetto corrente, nella directory corrente, **in** tutti i documenti aperti o nel documento corrente.
 
-È anche possibile usare il pulsante **Sfoglia (...)** adiacente per individuare la posizione in cui si vuole eseguire la ricerca. Ancora meglio, se è già stata specificata una directory, questo pulsante aggiungerà la nuova directory anziché sostituire . Ad esempio, se il valore "Cerca in" è ".\Code", è possibile fare clic sul pulsante Sfoglia **(...)** e passare a una cartella denominata "Codice condiviso". Nella **casella Sfoglia (...)** viene ora visualizzato ".\Code;. \Shared Code" e quando viene eseguito il comando Find, esegue la ricerca in entrambe le cartelle.
+È anche possibile usare il pulsante **Sfoglia (...)** adiacente per individuare la posizione in cui si vuole eseguire la ricerca. Ancora meglio, se è già stata specificata una directory, questo pulsante accoderà la nuova directory invece di sostituirla. Ad esempio, se il valore "Cerca in" è ".\Code", è possibile fare clic sul pulsante Sfoglia **(...)** e passare a una cartella denominata "Codice condiviso". Nella **casella Sfoglia (...)** viene ora visualizzato ".\Code;. \Shared Code" e quando viene eseguito il comando Find, esegue la ricerca in entrambe le cartelle.
 
 Per perfezionare la ricerca, è possibile selezionare o deselezionare le opzioni seguenti:
 
@@ -97,7 +97,11 @@ Per perfezionare la ricerca, è possibile selezionare o deselezionare le opzioni
 
 ## <a name="file-types"></a>Tipi di file
 
-**L'opzione** Tipi di file indica i tipi di file in cui eseguire la ricerca nelle **directory Cerca in.** Selezionare qualsiasi voce dell'elenco per immettere una stringa di ricerca preconfigurata che troverà i file dei tipi specificati. È anche possibile escludere file. A tale scopo, aggiungere a qualsiasi percorso o tipo di file il carattere "!" per escluderlo dalla ricerca.
+**L'opzione** Tipi di file indica i tipi di file in cui eseguire la ricerca nelle **directory Cerca in.** Selezionare qualsiasi voce dell'elenco per immettere una stringa di ricerca preconfigurata che troverà i file dei tipi specificati.
+
+:::image type="content" source="media/find-file-types.png" alt-text="Screenshot della sezione Tipi di file della finestra di dialogo Trova nei file .":::
+
+È possibile cercare più tipi di file separandoli con un punto e virgola ( `;` ). È anche possibile escludere cartelle e file antefissindo qualsiasi percorso o tipo di file con un punto esclamativo ( `!` ).
 
 ### <a name="append-results"></a>Accoda risultati
 
@@ -121,7 +125,7 @@ L'opzione selezionata dall'elenco a discesa **Cerca in** determina se la funzion
 Selezionare un ambito di ricerca nell'elenco o fare clic sul pulsante **Sfoglia (...)** per visualizzare la finestra di dialogo **Seleziona cartelle di ricerca** e immettere il set di directory desiderato. È anche possibile digitare un percorso direttamente nella casella **Cerca in**.
 
 > [!WARNING]
-> Se si sceglie **l'opzione Intera soluzione** o **Project** corrente, non viene cercata la ricerca dei file di progetto e soluzione. Se si vuole cercare nei file di progetto, selezionare una cartella di ricerca.
+> Se si sceglie **l'opzione Intera soluzione** o **Project** corrente, non viene cercata la ricerca nei file di progetto e di soluzione. Se si vuole cercare nei file di progetto, selezionare una cartella di ricerca.
 
 > [!NOTE]
 > Se si usa l'opzione Cerca **in** per cercare un file estratto dal controllo del codice sorgente, viene trovata solo la versione del file scaricata nel computer locale.
@@ -137,8 +141,6 @@ Specifica che la ricerca verrà eseguita nelle sottocartelle della cartella **Ce
 ## <a name="find-options"></a>Opzioni ricerca
 
 È possibile espandere o comprimere la **sezione Opzioni di** ricerca. È possibile selezionare o deselezionare le opzioni seguenti:
-
-È possibile selezionare o deselezionare le opzioni seguenti:
 
 **Maiuscole/minuscole**
 
@@ -195,7 +197,7 @@ Mostra un elenco di file che contengono le corrispondenze invece di visualizzare
 
 Per mantenere diversi risultati della ricerca, selezionare il **pulsante Mantieni** risultati dopo ogni ricerca. Quindi, quando si cerca un altro elemento, i risultati vengono visualizzati in una nuova scheda. È possibile mantenere i risultati di un massimo di cinque ricerche. Se sono già stati visualizzati cinque risultati della ricerca, la ricerca successiva riutilizzerà la scheda dei risultati della ricerca meno recente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sostituisci nei file](../ide/replace-in-files.md)
 - [Cercare e sostituire testo](../ide/finding-and-replacing-text.md)

@@ -11,17 +11,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-monikerRange: <= vs-2019
-ms.openlocfilehash: 77a6ff52546fe879db74175d100d1be42966fd42
-ms.sourcegitcommit: d5c038792da2c86436750380633ee80c39e4c4ba
+ms.openlocfilehash: 9b8bee5918a85c2a661911ee71dcfd633fce4cb2
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114597021"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094059"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Esercitazione: Creare un'app ASP.NET Core con TypeScript in Visual Studio
 
 In questa esercitazione per Visual Studio sviluppo ASP.NET Core e TypeScript si crea una semplice applicazione Web, si aggiunge codice TypeScript e quindi si esegue l'app.
+
+::: moniker range=">=vs-2022"
+
+A partire da Visual Studio 2022, vedere Creare un'app ASP.NET Core con [Angular in Visual Studio](../javascript/tutorial-asp-net-core-with-angular.md) per creare un'app ASP.NET Core con Angular e TypeScript.
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -48,13 +52,13 @@ In questa esercitazione verranno illustrate le procedure per:
 * È necessario aver installato Visual Studio e il carico ASP.NET di sviluppo Web.
 
     ::: moniker range="vs-2019"
-    Se non è ancora stato installato Visual Studio 2019, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio 2019, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
 
-    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
+    Se è necessario installare il carico di lavoro ma Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
 
 ## <a name="create-a-new-aspnet-core-mvc-project"></a>Creare un nuovo ASP.NET Core MVC
 
@@ -122,7 +126,7 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere > Nuova cartella**. Usare gli script *dei nomi* per la nuova cartella.
 
-1. Fare clic con il pulsante destro *del mouse* sulla cartella scripts e scegliere > **Nuovo elemento**. Scegliere il **file TypeScript,** digitare il nome *app.ts per* il nome del file e quindi fare clic su **Aggiungi**.
+1. Fare clic con il pulsante destro *del mouse* sulla cartella scripts e scegliere > **Nuovo elemento**. Scegliere Il **file TypeScript,** digitare il nome *app.ts per* il nome del file e quindi fare clic su **Aggiungi**.
 
    Visual Studio aggiunge *app.ts* alla *cartella scripts.*
 
@@ -188,9 +192,9 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 
    Anche se l'app viene compilata automaticamente quando viene eseguita, è necessario esaminare un evento che si verifica durante il processo di compilazione.
 
-1. Aprire la *cartella wwwroot/js* per trovare due nuovi file, *app.js* e il file source map, *app.js.map*. Questi file vengono generati dal compilatore TypeScript.
+1. Aprire la *cartella wwwroot/js* e trovare due nuovi file, *app.js* e il file source map, *app.js.map*. Questi file vengono generati dal compilatore TypeScript.
 
-   I file di mapping di origine sono necessari per il debug.
+   I file della mappa di origine sono necessari per il debug.
 
 ## <a name="run-the-application"></a>Eseguire l'applicazione
 
@@ -236,11 +240,11 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 1. Se il pacchetto in Esplora soluzioni non è installato, fare clic con il pulsante destro del mouse sul nodo npm e **scegliere Ripristina pacchetti**.
 
    >[!NOTE]
-   > In alcuni scenari, Esplora soluzioni può indicare che un pacchetto  npm non è sincronizzato conpackage.jsa causa di un problema noto descritto [qui.](https://github.com/aspnet/Tooling/issues/479) Ad esempio, il pacchetto potrebbe essere visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *package.js* in , riavviando Visual Studio e aggiungendo nuovamente il *package.js* nel file come descritto in precedenza in questo articolo.
+   > In alcuni scenari, Esplora soluzioni può indicare che un pacchetto  npm non è sincronizzato conpackage.jsa causa di un problema noto descritto [qui.](https://github.com/aspnet/Tooling/issues/479) Ad esempio, il pacchetto potrebbe essere visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *package.js* in , riavviando Visual Studio e aggiungendo nuovamente *ilpackage.js* nel file come descritto in precedenza in questo articolo.
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella scripts e **scegliere Aggiungi**  >  **nuovo elemento.**
 
-1. Scegliere **File TypeScript**, type *library.ts* e scegliere **Aggiungi**.
+1. Scegliere **File TypeScript**, libreria *dei tipi.ts* e scegliere **Aggiungi**.
 
 1. In *library.ts* aggiungere il codice seguente.
 
