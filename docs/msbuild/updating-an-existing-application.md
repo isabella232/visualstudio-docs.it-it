@@ -1,20 +1,21 @@
 ---
 title: Aggiornamento di un'applicazione esistente per MSBuild 15 | Microsoft Docs
-description: Informazioni su come assicurarsi che le compilazioni a livello di codice dall'applicazione corrispondano alle compilazioni eseguite in Visual Studio o MSBuild.exe.
+description: Informazioni su come assicurarsi che le compilazioni a livello di codice dell'applicazione corrispondano alle compilazioni eseguite Visual Studio o MSBuild.exe.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: bd7f47466074536c9088840e726f768f62f9346b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9be2599c2574da124ef9a049002d72aa872aba2a15954e5a04f6e68c136fa2b3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965928"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369514"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aggiornamento di un'applicazione esistente per MSBuild 15
 
@@ -67,7 +68,7 @@ Se non è possibile usare pacchetti NuGet, è possibile fare riferimento agli as
 
 #### <a name="binding-redirects"></a>Reindirizzamenti di binding
 
-Fare riferimento al pacchetto Microsoft. Build. Locator per assicurarsi che l'applicazione usi automaticamente i reindirizzamenti di binding richiesti alla versione 15.1.0.0. I reindirizzamenti di binding a questa versione supportano sia MSBuild 15 che MSBuild 16.
+Fare riferimento al pacchetto Microsoft.Build.Locator per assicurarsi che l'applicazione usi automaticamente i reindirizzamenti di associazione necessari alla versione 15.1.0.0. I reindirizzamenti di binding a questa versione supportano MSBuild 15 e MSBuild 16.
 
 ### <a name="ensure-output-is-clean"></a>Garantire l'eliminazione dell'output
 
@@ -88,7 +89,7 @@ Non specificare `ExcludeAssets=runtime` per il pacchetto Microsoft.Build.Locator
 ### <a name="register-instance-before-calling-msbuild"></a>Registrare l'istanza prima di chiamare MSBuild
 
 > [!IMPORTANT]
-> Non è possibile fare riferimento a tipi MSBuild (dallo `Microsoft.Build` spazio dei nomi) nel metodo che chiama MSBuildLocator. Ad esempio, non è possibile eseguire questa operazione:
+> Non è possibile fare MSBuild tipi di dati (dallo spazio dei `Microsoft.Build` nomi) nel metodo che chiama MSBuildLocator. Ad esempio, non è possibile eseguire questa operazione:
 >
 > ```csharp
 > void ThisWillFail()
@@ -99,7 +100,7 @@ Non specificare `ExcludeAssets=runtime` per il pacchetto Microsoft.Build.Locator
 > }
 > ```
 >
-> Al contrario, è necessario eseguire questa operazione:
+> È invece necessario eseguire questa operazione:
 >
 > ```csharp
 > void MethodThatDoesNotDirectlyCallMSBuild()

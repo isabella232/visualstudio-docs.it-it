@@ -1,6 +1,6 @@
 ---
-title: Disabilitare il debugger JIT | Microsoft Docs
-description: È possibile che la finestra di dialogo debugger JIT si apra quando si verifica un errore in un'app. Informazioni sulle operazioni che è possibile eseguire quando si verifica questo problema e su come evitarlo.
+title: Disabilitare il debugger JUST-In-Time | Microsoft Docs
+description: La finestra di dialogo Debugger JUST-In-Time può essere visualizzata quando si verifica un errore in un'app. Informazioni sulle operazioni che è possibile eseguire in questo caso e sui modi per impedirlo.
 ms.custom: SEO-VS-2020
 ms.date: 05/23/2018
 ms.topic: troubleshooting
@@ -11,38 +11,39 @@ ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 670809ea2c9ef04107dbec5634f40831b68b94c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d6988c8e36bd3393f38c388504ade7b8b29fdf585d214c6af9296dc3d6207f3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931500"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453174"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Disabilitare il debugger JIT
 
-È possibile che la finestra di dialogo debugger JIT si apra quando si verifica un errore in un'app in esecuzione e impedire che l'app continui.
+La finestra di dialogo Debugger JUST-In-Time può essere visualizzata quando si verifica un errore in un'app in esecuzione e impedire all'app di continuare.
 
-Il debugger JIT offre la possibilità di avviare Visual Studio per eseguire il debug dell'errore. Per visualizzare informazioni dettagliate sull'errore o provare a eseguirne il debug, è necessario che sia installato Visual Studio o un altro debugger selezionato.
+Il debugger JUST-In-Time offre la possibilità di avviare Visual Studio per eseguire il debug dell'errore. È necessario aver Visual Studio o un altro debugger selezionato per visualizzare informazioni dettagliate sull'errore o provare a eseguirne il debug.
 
-Se si è già un utente di Visual Studio e si vuole provare a eseguire il debug dell'errore, vedere [eseguire il debug usando il debugger JIT](../debugger/debug-using-the-just-in-time-debugger.md). Se non è possibile correggere l'errore o si vuole impedire l'apertura del debugger JIT, è possibile disabilitare il debug JIT [da Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
+Se si è già un utente Visual Studio e si vuole provare a eseguire il debug dell'errore, vedere Eseguire il debug con il [debugger JUST-In-Time.](../debugger/debug-using-the-just-in-time-debugger.md) Se non è possibile correggere l'errore o si vuole evitare l'apertura del debugger JIT, è possibile disabilitare il debug JIT [da Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
-Se Visual Studio è stato installato ma non più, potrebbe essere necessario [disabilitare il debug JIT dal registro di sistema di Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry).
+Se è stato Visual Studio installato ma non lo è più, potrebbe essere necessario disabilitare il debug JIT dal Registro [di Windows .](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)
 
-Se Visual Studio non è installato, è possibile impedire il debug JIT disabilitando il debug degli script o il debug sul lato server.
+Se non è installato un Visual Studio, è possibile impedire il debug JIT disabilitando il debug degli script o il debug sul lato server.
 
-- Se si sta provando a eseguire un'app Web, disabilitare il debug degli script:
+- Se si sta tentando di eseguire un'app Web, disabilitare il debug degli script:
 
-  In Opzioni Internet e rete del **Pannello di controllo** di Windows  >    >  selezionare **Disabilita debug script (Internet Explorer)** e **Disabilita debug script (altro)**. La procedura e le impostazioni esatte dipendono dalla versione di Windows e dal browser.
+  In Windows **Pannello di controllo** Rete e Opzioni Internet selezionare Disabilita debug  >    >   **script (Internet Explorer)** e Disabilita debug **script (altro).** I passaggi e le impostazioni esatti dipendono dalla versione di Windows e dal browser.
 
   ![Opzioni Internet JIT](../debugger/media/jitinternetoptions.png "Opzioni Internet JIT")
 
-- Se si sta ospitando un'app Web ASP.NET in IIS, disabilitare il debug sul lato server:
+- Se si ospita un'app Web ASP.NET in IIS, disabilitare il debug lato server:
 
-  1. Nella **visualizzazione funzionalità** Gestione IIS, nella sezione **ASP.NET** , fare doppio clic su **compilazione .NET** oppure selezionarla e quindi selezionare **Apri funzionalità** nel riquadro **azioni** .
-  1. In   >  **debug** comportamento selezionare **false**. I passaggi sono diversi nelle versioni precedenti di IIS.
+  1. Nella visualizzazione delle **funzionalità di** Gestione IIS, nella sezione **ASP.NET,** fare doppio clic  su **Compilazione .NET** oppure selezionarla e quindi selezionare Apri funzionalità nel **riquadro** Azioni.
+  1. In **Debug**  >  **del** comportamento selezionare **False.** I passaggi sono diversi nelle versioni precedenti di IIS.
 
-Dopo aver disabilitato il debug JIT, l'app potrebbe essere in grado di gestire l'errore ed eseguire normalmente.
+Dopo aver disabilitato il debug JIT, l'app potrebbe essere in grado di gestire l'errore ed essere eseguita normalmente.
 
-Se l'app ha ancora un errore non gestito, è possibile che venga visualizzato un messaggio di errore o che l'app si arresti in modo anomalo o interrompa la risposta. L'app non verrà eseguita normalmente fino a quando l'errore non viene risolto. È possibile provare a contattare il proprietario dell'app e chiedergli di correggerla.
+Se l'app presenta ancora un errore non gestito, è possibile che venga visualizzato un messaggio di errore o che l'app si arresti in modo anomalo o smetta di rispondere. L'app non verrà eseguita normalmente fino a quando non viene corretto l'errore. È possibile provare a contattare il proprietario dell'app e chiedere di risolverlo.

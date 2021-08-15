@@ -1,6 +1,6 @@
 ---
 title: 'File XSD di esempio: schema di ordine di acquisto'
-description: Visualizzare il file XSD di esempio per uno schema di ordine di acquisto utilizzato in vari esempi nella documentazione relativa a progettazione schemi XSD.
+description: Visualizzare il file XSD di esempio per uno schema dell'ordine di acquisto usato in vari esempi nella documentazione di Progettazione schemi XSD.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
@@ -8,14 +8,15 @@ ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 32140ce05761fa5b8a067dfde04b65efa2a91a66
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2efe7613488831b8aa765e993afe4ece9e29150f6201dc9baba38c87077622de
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951641"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121350992"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>File XSD di esempio: Schema di ordine di acquisto
 

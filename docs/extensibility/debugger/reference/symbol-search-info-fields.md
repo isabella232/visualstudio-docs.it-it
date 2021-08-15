@@ -11,17 +11,18 @@ ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 893cc51767be8977c6c298b56ffffee60c93bbbc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9b83ca25a3bd2d9f97f5646e98189f4400885be622859ea1594889f260b8b49f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070908"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448533"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Specifica il tipo di informazioni sui simboli da recuperare.
@@ -48,21 +49,21 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>Campi
  `SSIF_NONE`\
- Indica nessun flag
+ Indica che non sono presenti flag
 
  `SSIF_VERBOSE_SEARCH_INFO`\
- Restituisce tutti i percorsi di ricerca usati per trovare i simboli
+ Restituisce tutti i percorsi di ricerca usati per la ricerca dei simboli
 
 ## <a name="remarks"></a>Commenti
- Questi flag vengono passati come parametro al metodo [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) per determinare la quantità di informazioni restituite.
+ Questi flag vengono passati come parametro al [metodo GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) per determinare la quantità di informazioni restituite.
 
 > [!NOTE]
-> Attualmente, solo `SSIF_VERBOSE_SEARCH_INFO` è supportato e deve essere specificato come `dwFlags` parametro per `IDebugModule3::GetSymbolInfo` . Tutti gli altri valori restituiscono un errore.
+> Attualmente è `SSIF_VERBOSE_SEARCH_INFO` supportato solo e deve essere specificato come parametro per `dwFlags` `IDebugModule3::GetSymbolInfo` . Tutti gli altri valori restituiscono un errore.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

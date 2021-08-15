@@ -1,6 +1,6 @@
 ---
-title: Debug .NET Framework origine | Microsoft Docs
-description: Informazioni su come eseguire il debug dell'origine .NET Framework. È necessario configurarlo e scaricare i simboli di debug.
+title: Eseguire il debug .NET Framework origine | Microsoft Docs
+description: Informazioni su come eseguire il debug .NET Framework'origine. È necessario configurarlo e scaricare i simboli di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
@@ -10,61 +10,62 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e762b28cfaf239e5edb38b1be3981496e56d72d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ee02da8dac8ffdd2f6900f6530f39e256448fafd9d6229a0946034d39ed3dca1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154990"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453819"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug del codice sorgente di .NET Framework
 
-Per eseguire il debug di .NET Framework origine, è necessario:
+Per eseguire il debug .NET Framework'origine, è necessario:
 
-- Abilitare l'esecuzione di un'istruzione nell'origine .NET Framework.
+- Abilitare l'esecuzione di istruzioni .NET Framework'origine.
 
-- Hanno accesso ai simboli di debug per il codice.
+- Avere accesso ai simboli di debug per il codice.
 
-  È possibile scegliere di scaricare i simboli di debug immediatamente oppure impostare le opzioni per il download successivo. Se i simboli non vengono scaricati immediatamente, verranno scaricati al successivo avvio del debug dell'app. Durante il debug, è anche possibile usare i **moduli** o le finestre **dello stack di chiamate** per scaricare e caricare i simboli.
+  È possibile scegliere di scaricare immediatamente i simboli di debug o impostare le opzioni per il download successivo. Se non si scaricano immediatamente i simboli, questi verranno scaricati al successivo avvio del debug dell'app. Durante il debug, è anche possibile usare le **finestre Moduli** o **Stack di** chiamate per scaricare e caricare i simboli.
 
-### <a name="to-enable-stepping-into-net-framework-source"></a>Per abilitare l'esecuzione di un'istruzione .NET Framework origine
+### <a name="to-enable-stepping-into-net-framework-source"></a>Per abilitare l'esecuzione di istruzioni .NET Framework origine
 
-1. In **strumenti** (o **debug**) > **Opzioni**  >  di **debug**  >  **generale** selezionare **Abilita .NET Framework l'esecuzione** di un'istruzione all'origine.
+1. In **Strumenti** (o **Debug)**> **Opzioni di debug** Generale selezionare Abilita istruzione  >    >   **.NET Framework'origine.**
 
    - Se Just My Code è attivato, viene visualizzata una finestra di dialogo con un avviso indicante che Just My Code è stato disabilitato. Selezionare **OK**.
 
-   - Se non è stata impostata una cache di simboli locale, viene visualizzata una finestra di dialogo di avviso che indica che è stata impostata una cache di simboli predefinita. Selezionare **OK**.
+   - Se non è stata impostata una cache dei simboli locale, viene visualizzata una finestra di dialogo di avviso che indica che è stata impostata una cache dei simboli predefinita. Selezionare **OK**.
 
-1. Selezionare **OK** per chiudere la finestra di dialogo **Opzioni** .
+1. Selezionare **OK** per chiudere la **finestra di dialogo** Opzioni.
 
 ### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>Per impostare o modificare i percorsi di origine dei simboli e il comportamento di caricamento
 
-1. Selezionare la categoria **simboli** in **strumenti** (o **debug**) > **Opzioni**  >  **debug**.
+1. Selezionare la **categoria Simboli** in **Strumenti** (o **Debug)**>   >  **Debug**.
 
-1. Nella pagina **simboli** , in percorsi di file di simboli **(con estensione pdb)**, selezionare Server dei simboli **Microsoft** per accedere ai simboli dai server di simboli Microsoft pubblici. Selezionare i pulsanti della barra degli strumenti per aggiungere altre posizioni dei simboli e modificare l'ordine di caricamento.
+1. Nella pagina **Simboli** in Percorsi file di simboli (con estensione **pdb)** selezionare Server di simboli **Microsoft** per accedere ai simboli dai server di simboli Microsoft pubblici. Selezionare i pulsanti della barra degli strumenti per aggiungere altre posizioni dei simboli e modificare l'ordine di caricamento.
 
-1. Per modificare la cache dei simboli locali, modificare o selezionare un percorso diverso sotto i **simboli della cache in questa directory**.
+1. Per modificare la cache dei simboli locali, modificare o passare a un percorso diverso in **Memorizzare i simboli nella directory**.
 
-1. Per scaricare immediatamente i simboli, selezionare **carica tutti i simboli**. Questo pulsante è disponibile solo durante il debug.
+1. Per scaricare immediatamente i simboli, selezionare **Carica tutti i simboli**. Questo pulsante è disponibile solo durante il debug.
 
-   Se non si scaricano i simboli adesso, verranno scaricati al successivo avvio del debug.
+   Se non si scaricano i simboli ora, questi verranno scaricati al successivo avvio del debug.
 
-1. Selezionare **OK** per chiudere la finestra di dialogo **Opzioni** .
+1. Selezionare **OK** per chiudere la **finestra di dialogo** Opzioni.
 
-### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Per caricare i simboli dalle finestre moduli o stack di chiamate
+### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Per caricare i simboli dalle finestre Moduli o Stack di chiamate
 
-1. Durante il debug, aprire la finestra selezionando **debug**  >    >  **moduli** Windows (oppure premere **CTRL + ALT + U**) o **eseguire il debug**  >    >  **dello stack di chiamate** Windows (**CTRL + ALT + C**).
+1. Durante il debug, aprire la finestra selezionando Debug Windows Modules (Esegui debug dei moduli di Windows) o premendo  >    >   **CTRL+ALT+U**) o **Debug**  >  **Windows**  >  **Call Stack** **(CTRL+ALT+C).**
 
-1. Fare clic con il pulsante destro del mouse su un modulo per cui non sono stati caricati simboli Nella finestra **moduli** lo stato di caricamento dei simboli si trova nella colonna **stato simboli** . Nella finestra **stack di chiamate** lo stato è nella colonna **stato frame** e il frame è disattivato.
+1. Fare clic con il pulsante destro del mouse su un modulo per il quale non sono stati caricati i simboli. Nella finestra **Moduli lo** stato di caricamento dei simboli si trova nella **colonna Stato** simboli. Nella finestra **Stack di** chiamate lo stato si trova nella **colonna Stato** frame e il frame è disattivato.
 
    - Selezionare **Carica simboli** dal menu per individuare e caricare i file di simboli da una cartella nel computer.
 
-   - Selezionare **informazioni sul caricamento** dei simboli per visualizzare le posizioni in cui il debugger ha cercato i simboli.
+   - Selezionare **Informazioni sul caricamento simboli** per visualizzare i percorsi in cui il debugger ha cercato i simboli.
 
-   - Selezionare **Impostazioni simboli** per aprire la pagina **simboli** . Nella pagina **simboli** , in percorsi di file di simboli **(con estensione pdb)**, selezionare Server dei simboli **Microsoft** per accedere ai simboli dai server di simboli Microsoft pubblici. Selezionare i pulsanti della barra degli strumenti per aggiungere altre posizioni dei simboli e modificare l'ordine di caricamento. Selezionare **OK** per chiudere la finestra di dialogo.
+   - Selezionare **Simbolo Impostazioni** per aprire la **pagina** Simboli. Nella pagina **Simboli** in Percorsi file di simboli (con estensione **pdb)** selezionare Server di simboli **Microsoft** per accedere ai simboli dai server di simboli Microsoft pubblici. Selezionare i pulsanti della barra degli strumenti per aggiungere altre posizioni dei simboli e modificare l'ordine di caricamento. Selezionare **OK** per chiudere la finestra di dialogo.
 
 ### <a name="see-also"></a>Vedi anche
-- [Debug del codice gestito](../debugger/debugging-managed-code.md)
+- [Debug di codice gestito](../debugger/debugging-managed-code.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

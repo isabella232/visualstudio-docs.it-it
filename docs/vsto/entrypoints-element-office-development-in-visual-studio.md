@@ -1,6 +1,6 @@
 ---
-description: L'elemento entryPoints dello spazio dei nomi vstav3 contiene tutti gli elementi entryPoint associati a una soluzione Office.
-title: '&lt;&gt;elemento entryPoints (sviluppo per Office in Visual Studio)'
+description: L'elemento entryPoints dello spazio dei nomi vstav3 contiene tutti gli elementi entryPoint associati a una Office soluzione.
+title: '&lt;Elemento entryPoints &gt; (Office sviluppo in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 481c67302c84ce08f60c571eb17084b96c0322bd
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f41608335ecefa59ae78f04339cbb1f47d5e6a0f996b3052be6162206cc333b2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223173"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424359"
 ---
-# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento entryPoints (sviluppo per Office in Visual Studio)
+# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;Elemento entryPoints &gt; (Office sviluppo in Visual Studio)
   L'elemento `entryPoints` dello spazio dei nomi `vstav3` contiene tutti gli elementi `entryPoint` associati a una soluzione Office.
 
 ## <a name="syntax"></a>Sintassi
@@ -50,12 +51,12 @@ ms.locfileid: "102223173"
  `entryPoints` presenta gli elementi seguenti:
 
 ### <a name="entrypoint"></a>entryPoint
- Obbligatorio. Il ruolo dell' `entryPoint` elemento nello `vstav3` spazio dei nomi è definito nell' [ elemento&#60;EntryPoint&#62; &#40;sviluppo per Office in Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
+ Obbligatorio. Il ruolo dell'elemento nello spazio dei nomi è definito `entryPoint` `vstav3` in&#60;[entryPoint ](../vsto/entrypoint-element-office-development-in-visual-studio.md)&#62; elemento &#40;Office sviluppo in Visual Studio&#41;.
 
 ## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra l'elemento `entryPoints` in un manifesto dell'applicazione per una soluzione a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra l'elemento `entryPoints` in un manifesto dell'applicazione per una soluzione a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -96,10 +97,10 @@ ms.locfileid: "102223173"
 </vstav3:entryPoints>
 ```
 
-## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO
+## <a name="vsto-add-in-example"></a>VSTO Esempio di componente aggiuntivo
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra un elemento `entryPoints` in un manifesto dell'applicazione per una soluzione a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra un elemento `entryPoints` in un manifesto dell'applicazione per una soluzione a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -116,10 +117,10 @@ ms.locfileid: "102223173"
 </vstav3:entryPoints>
 ```
 
-## <a name="multi-project-deployment-example"></a>Esempio di distribuzione di più progetti
+## <a name="multi-project-deployment-example"></a>Esempio di distribuzione multi-progetto
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra l'elemento `entryPoints` in un manifesto dell'applicazione per una distribuzione di più progetti. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra l'elemento `entryPoints` in un manifesto dell'applicazione per una distribuzione di più progetti. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -174,6 +175,6 @@ ms.locfileid: "102223173"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
-- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

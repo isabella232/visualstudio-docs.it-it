@@ -1,6 +1,6 @@
 ---
 title: Contatori CPU e Windows | Microsoft Docs
-description: I contatori CPU (hardware) e Windows (software) forniscono dati sulle prestazioni. Scopri come visualizzarli e come raccoglierne i dati.
+description: I contatori cpu (hardware) Windows (software) forniscono dati sulle prestazioni. Informazioni su come visualizzarli e come raccogliere dati da essi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3553106c9c2bea0d4d4c24b2e51b59e4fcf42722
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 675061b7a094364122535d429a6835b43a666924011c2b6fea4203514a2222fa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956061"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121355614"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 
@@ -66,14 +67,14 @@ Gli eventi portabili contengono i seguenti eventi:
 |----------------|-----------------------|
 |Mancati riscontri ITLB|Indica il numero di mancati riscontri nel buffer ITLB (Instruction Translation Lookaside Buffer).|
 
-**Eventi ramo**
+**Eventi di diramazione**
 
 |Nome evento|Descrizione evento|
 |----------------|-----------------------|
 |Rami ritirati|Indica il numero di istruzioni di diramazione eseguite fino al completamento dell'evento.|
 |Rami stimati in modo errato|Indica i rami stimati in modo errato in seguito alla previsione errata di un percorso da parte del processore. I rami stimati in modo errato influiscono sulle prestazioni perché il processore deve ignorare tutte le operazioni eseguite e ripartire da un percorso corretto.|
 
-**Eventi memoria:**
+**Eventi di memoria:**
 
 |Nome evento|Descrizione evento|
 |----------------|-----------------------|
@@ -90,7 +91,7 @@ Per elencare i contatori disponibili in un computer nell'IDE di Visual Studio, �
 
 #### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Per visualizzare un elenco di tutti i contatori CPU supportati sulla piattaforma corrente
 
-1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi scegliere **Proprietà**.
+1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi **scegliere Proprietà.**
 
 2. Eseguire una delle operazioni seguenti:
 
@@ -102,11 +103,11 @@ Per elencare i contatori disponibili in un computer nell'IDE di Visual Studio, �
 
    - Selezionare **Contatori CPU** e quindi **Raccogli contatori CPU**. I contatori CPU sono elencati in **Contatori disponibili**.
 
-      **Nota** Fare clic su **Annulla** per tornare alla configurazione precedente della raccolta dei contatori.
+      **Nota** Fare **clic su** Annulla per tornare alla configurazione precedente dell'insieme di contatori.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Per visualizzare un elenco di tutti i contatori Windows supportati sulla piattaforma corrente
 
-1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi scegliere **Proprietà**.
+1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi **scegliere Proprietà.**
 
 2. Fare clic su **Contatori Windows**.
 
@@ -126,13 +127,13 @@ Con lo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md) è po
 
 2. Tipo
 
-     **\<Visual Studio Performance Tools Directory>/QueryCounters \VSPerfCmd**
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     dove *\<Visual Studio Performance Tools Directory>* è il percorso della directory degli strumenti per le prestazioni dell'installazione di Visual Studio. Per ottenere il percorso degli strumenti per le prestazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+     dove *\<Visual Studio Performance Tools Directory>* è il percorso della directory degli strumenti per le prestazioni dell'Visual Studio installazione. Per ottenere il percorso degli strumenti per le prestazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Cenni preliminari](../profiling/overviews-performance-tools.md)
-- [Procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)
-- [Procedura: raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)
+- [Procedura: Scegliere gli eventi di campionamento](../profiling/how-to-choose-sampling-events.md)
+- [Procedura: Raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)
 - [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)

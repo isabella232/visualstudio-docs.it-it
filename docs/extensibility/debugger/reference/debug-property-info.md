@@ -11,17 +11,18 @@ ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13e780dd5d6825515673547aae8f3dc16edd885c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7bd2526853dd5c0c3bb84bdc7d00c76805dd28a1118b4a35b8d173b17ab9bde3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096291"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452394"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contiene informazioni su una proprietà di debug.
@@ -54,7 +55,7 @@ public struct DEBUG_PROPERTY_INFO {
 
 ## <a name="members"></a>Members
 `dwValidFields`\
-Combinazione di flag dell'enumerazione [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi che vengono compilati.
+Combinazione di flag [dell'DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi compilati.
 
 `bstrFullName`\
 Nome completo della proprietà.
@@ -66,23 +67,23 @@ Nome della proprietà all'interno di un contesto.
 Tipo di proprietà come stringa formattata.
 
 `bstrValue`\
-Valore della proprietà sotto forma di stringa formattata.
+Valore della proprietà come stringa formattata.
 
 `pProperty`\
 Oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) descritto da questa struttura.
 
 `dwAttrib`\
-Combinazione di flag dell'enumerazione [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) che descrive gli attributi di questa proprietà.
+Combinazione di flag [dell'DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) che descrivono gli attributi di questa proprietà.
 
 ## <a name="remarks"></a>Commenti
-Una proprietà è un oggetto di una natura gerarchica che ha un nome, un tipo e un valore. Una proprietà, ad esempio, può descrivere le variabili locali, i parametri, le variabili e le espressioni di controllo e i registri.
+Una proprietà è un oggetto di natura gerarchica con un nome, un tipo e un valore. Ad esempio, una proprietà può descrivere variabili locali, parametri, variabili watch ed espressioni e registri.
 
-Questa struttura viene passata al metodo [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) in cui è compilata. Questa struttura viene restituita anche come parte di un elenco di questa struttura dall'interfaccia [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) che, a sua volta, viene restituita da una chiamata ai metodi [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) e [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .
+Questa struttura viene passata al [metodo GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) in cui viene compilata. Questa struttura viene restituita anche come parte di un elenco di questa struttura dall'interfaccia [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) che, a sua volta, viene restituita da una chiamata ai metodi [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) ed [EnumProperties.](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

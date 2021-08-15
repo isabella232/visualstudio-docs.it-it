@@ -1,6 +1,6 @@
 ---
 description: Crea un puntatore al tipo specificato.
-title: 'IDebugTypeFieldBuilder:: CreatePointerToType | Microsoft Docs'
+title: IDebugTypeFieldBuilder::CreatePointerToType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f1fbdad2d4dcade465f24af91979b4ebc2b3cc59
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6e21087e081d316984fa2ded998cb6b6c120f9fc220be903d24631ab01a08585
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083596"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321558"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Crea un puntatore al tipo specificato.
@@ -43,10 +44,10 @@ int CreatePointerToType(
 
 ## <a name="parameters"></a>Parametri
 `pTypeField`\
-in Tipo a cui puntare. È rappresentato dall'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
+[in] Tipo a cui puntare. È rappresentato [dall'interfaccia IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 `pPtrToTypeField`\
-out Restituisce il puntatore rappresentato da un nuovo oggetto **IDebugField** .
+[out] Restituisce il puntatore rappresentato da un nuovo **oggetto IDebugField.**
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

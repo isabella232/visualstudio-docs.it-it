@@ -1,6 +1,6 @@
 ---
-title: Esempi di debug di Visual Studio | Microsoft Docs
-description: L'esempio di analizzatore di espressioni del debugger e il motore di debug di Visual Studio illustrano come estendere il debugger di Visual Studio con Visual Studio SDK.
+title: Visual Studio Esempi di debug | Microsoft Docs
+description: L'esempio di analizzatore di espressioni del debugger e l'esempio del motore di debug Visual Studio illustrano come estendere il debugger Visual Studio usando Visual Studio SDK.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,18 +12,19 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fce37ed432e4adfe266490766050fe777809b74
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0d578cf61a1201881aef74968ab33ffe97c5d4dd9b573c3ac97f5e89fa2a723c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057702"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448468"
 ---
-# <a name="visual-studio-debugging-samples"></a>Esempi di debug di Visual Studio
-Due esempi illustrano come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
+# <a name="visual-studio-debugging-samples"></a>Visual Studio di debug
+Due esempi illustrano come estendere il debugger Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
-- L'esempio di analizzatore di espressioni del debugger, per i linguaggi gestiti, è incluso in [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . Nella [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] finestra di fare clic sulla scheda **esempi** , fare clic su **tutto** o su **C#** nell'elenco di lingue, quindi fare clic su **debugger**.
+- L'esempio di analizzatore di espressioni del debugger, per i linguaggi gestiti, è incluso in [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . Nella finestra [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fare clic sulla scheda **Esempi,** fare clic su **Tutti** o **C#** nell'elenco dei linguaggi e quindi fare clic su **Debugger**.
 
-- L'esempio del motore di debug di Visual Studio, per le lingue native, è disponibile in MSDN Code Gallery. Per ulteriori informazioni, vedere l'esempio relativo al [motore di debug di Visual Studio](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) nel sito Web Microsoft.
+- L Visual Studio di esempio del motore di debug, per i linguaggi nativi, è disponibile in MSDN Code Gallery. Per altre informazioni, vedere Visual Studio [di motore di debug](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) nel sito Web Microsoft.

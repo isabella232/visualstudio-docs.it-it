@@ -1,6 +1,6 @@
 ---
 title: Esercitazione di Progettazione Windows Form
-description: Informazioni su come creare un'app usando i vari strumenti forniti da Progettazione Windows Form. L'app è un controllo personalizzato che usa molte funzionalità di layout disponibili.
+description: Informazioni su come compilare un'app usando i vari strumenti forniti Windows Progettazione Form. L'app è un controllo personalizzato che usa molte funzionalità di layout disponibili.
 ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: tutorial
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-designers
+ms.openlocfilehash: 95c8d746e39fdf4c5536dd69028c5f246280ba5c76a51f69ee4c92eea21f52c3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947846"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452899"
 ---
-# <a name="tutorial-get-started-with-windows-forms-designer"></a>Esercitazione: Introduzione a Progettazione Windows Form
+# <a name="tutorial-get-started-with-windows-forms-designer"></a>Esercitazione: Introduzione a Progettazione Windows Forms
 
 Progettazione Windows Form fornisce molti strumenti per la creazione di applicazioni Windows Forms. Questo articolo illustra come creare un'app usando i vari strumenti forniti dalla finestra di progettazione, incluse le attività seguenti:
 
@@ -45,7 +46,7 @@ Il primo passaggio consiste nel creare il progetto di controllo DemoCalculator.
 
    ::: moniker-end
 
-2. Per rinominare il file, in **Esplora soluzioni**, fare clic con il pulsante destro del mouse su **UserControl1. vb** o **UserControl1.cs**, scegliere **Rinomina** e modificare il nome del file in DemoCalculator. vb o DemoCalculator.cs. Selezionare il pulsante **Sì** quando richiesto per rinominare tutti i riferimenti all'elemento di codice "UserControl1".
+2. Per rinominare il file, in **Esplora soluzioni** fare clic con il pulsante destro del mouse su **UserControl1.vb** o **UserControl1.cs,** scegliere **Rinomina** e modificare il nome del file in DemoCalculator.vb o DemoCalculator.cs. Selezionare il pulsante **Sì** quando richiesto per rinominare tutti i riferimenti all'elemento di codice "UserControl1".
 
 Progettazione Windows Form mostra l'area di progettazione per il controllo DemoCalculator. In questa visualizzazione è possibile progettare graficamente l'aspetto del controllo selezionando i controlli e i componenti dalla casella degli strumenti e inserendoli nell'area di progettazione. Per altre informazioni sui controlli personalizzati, vedere [Tipi di controlli personalizzati](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
 
@@ -71,9 +72,9 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
     Il controllo `SplitContainer` viene ancorato ai limiti del controllo DemoCalculator.
 
     > [!NOTE]
-    > Diversi controlli offrono smart tag per facilitare la progettazione. Per altre informazioni, vedere [procedura dettagliata: eseguire attività comuni usando gli smart tag nei controlli Windows Form](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
+    > Diversi controlli offrono smart tag per facilitare la progettazione. Per altre informazioni, vedere [Procedura dettagliata: Eseguire attività comuni usando gli smart tag nei Windows Form.](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls)
 
-5. Selezionare il bordo verticale tra i pannelli e trascinarlo a destra, in modo che la maggior parte dello spazio venga ricavata dal riquadro sinistro.
+5. Selezionare il bordo verticale tra i pannelli e trascinarlo a destra, in modo che la maggior parte dello spazio sia preso dal pannello sinistro.
 
     Il controllo `SplitContainer` divide il controllo DemoCalculator in due pannelli con un bordo mobile che li separa. Il pannello sinistro conterrà i pulsanti e la visualizzazione della calcolatrice e il pannello destro mostrerà un record delle operazioni aritmetiche eseguite dall'utente.
 
@@ -93,7 +94,7 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
 
 12. Dalla **casella degli strumenti** del nodo **Contenitori** trascinare un controllo `TableLayoutPanel` nel pannello sinistro del controllo `SplitContainer`.
 
-    Il controllo `TableLayoutPanel` viene visualizzato nell'area di progettazione con il relativo pannello smart tag aperto. Il controllo `TableLayoutPanel` dispone i relativi controlli figlio in una griglia. Il controllo `TableLayoutPanel` conterrà i pulsanti e la visualizzazione del controllo DemoCalculator. Per ulteriori informazioni, vedere [procedura dettagliata: disporre i controlli mediante TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
+    Il controllo `TableLayoutPanel` viene visualizzato nell'area di progettazione con il relativo pannello smart tag aperto. Il controllo `TableLayoutPanel` dispone i relativi controlli figlio in una griglia. Il controllo `TableLayoutPanel` conterrà i pulsanti e la visualizzazione del controllo DemoCalculator. Per altre informazioni, vedere [Procedura dettagliata: Disporre i controlli usando tableLayoutPanel.](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel)
 
 13. Selezionare **Modifica righe e colonne** nel pannello smart tag.
 
@@ -113,7 +114,7 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
 
 Ora che il layout del controllo è configurato, è possibile popolare il controllo DemoCalculator con i pulsanti e una visualizzazione.
 
-1. Nella **casella degli strumenti** selezionare l' `TextBox` icona del controllo.
+1. Nella **Casella degli** strumenti selezionare l'icona del `TextBox` controllo.
 
    Un controllo `TextBox` viene inserito nella prima cella del controllo `TableLayoutPanel`.
 
@@ -131,15 +132,15 @@ Ora che il layout del controllo è configurato, è possibile popolare il control
 
 6. Selezionare il controllo `TableLayoutPanel`.
 
-7. Nella **casella degli strumenti** selezionare l' `Button` icona.
+7. Nella **Casella degli** strumenti selezionare l'icona `Button` .
 
    Un controllo `Button` viene inserito nella successiva cella aperta del controllo `TableLayoutPanel`.
 
-8. Nella **casella degli strumenti** selezionare l' `Button` icona altre quattro volte per popolare la seconda riga del `TableLayoutPanel` controllo.
+8. Nella **Casella degli** strumenti selezionare `Button` l'icona altre quattro volte per popolare la seconda riga del `TableLayoutPanel` controllo.
 
-9. Selezionare tutti e cinque i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**. Premere **CTRL** + **C** per copiare i `Button` controlli negli Appunti.
+9. Selezionare tutti e cinque i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**. Premere **CTRL** + **C** per copiare `Button` i controlli negli Appunti.
 
-10. Premere **CTRL** + **V** tre volte per incollare copie dei `Button` controlli nelle righe rimanenti del `TableLayoutPanel` controllo.
+10. Premere **CTRL** + **V** tre volte per incollare copie `Button` dei controlli nelle righe rimanenti del `TableLayoutPanel` controllo.
 
 11. Selezionare tutti e 20 i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**.
 
@@ -159,11 +160,11 @@ Ora che il layout del controllo è configurato, è possibile popolare il control
 
 Quando il controllo o il form viene popolato con diversi controlli, può risultare più semplice spostarsi nel layout con la finestra Struttura documento.
 
-1. Sulla barra dei menu scegliere **Visualizza**  >  **altre finestre**  >  **struttura documento**.
+1. Sulla barra dei menu scegliere **Visualizza altro**  >  **Windows**  >  **Struttura documento**.
 
    La finestra Struttura documento mostra una visualizzazione albero del controllo DemoCalculator e dei relativi controlli costitutivi. I controlli contenitore come `SplitContainer` visualizzano i relativi controlli figlio come sottonodi dell'albero. È anche possibile rinominare i controlli sul posto usando la finestra Struttura documento.
 
-2. Nella finestra **struttura documento** , fare clic con il pulsante destro del mouse su **Button1**, quindi scegliere **Rinomina**. Impostare il nome su sevenButton.
+2. Nella finestra **Struttura documento fare** clic con il pulsante destro del mouse su **button1** e quindi **scegliere Rinomina.** Impostare il nome su sevenButton.
 
 3. Usando la finestra **Struttura documento**, rinominare i controlli `Button` dal nome generato dalla finestra di progettazione al nome di produzione in base all'elenco seguente:
 
@@ -211,7 +212,7 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - Impostare la proprietà Text del controllo nineButton su **9**
 
-   - Modificare la proprietà Text del controllo divisionButton in **/** (barra)
+   - Modificare la proprietà text del controllo divisionButton in **/** (barra)
 
    - Impostare la proprietà Text del controllo clearButton su **Cancella**
 
@@ -221,7 +222,7 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - Impostare la proprietà Text del controllo sixButton su **6**
 
-   - Modificare la proprietà Text del controllo multiplicationButton in **\*** (asterisco)
+   - Modificare la proprietà text del controllo multiplicationButton in **\*** (asterisco)
 
    - Impostare la proprietà Text del controllo oneButton su **1**
 
@@ -229,17 +230,17 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - Impostare la proprietà Text del controllo threeButton su **3**
 
-   - Modificare la proprietà Text del controllo subtractionButton in **-** (trattino)
+   - Modificare la proprietà text del controllo subtractionButton in **-** (trattino)
 
-   - Modificare la proprietà Text del controllo equalsButton in **=** (segno di uguale)
+   - Modificare la proprietà text del controllo equalsButton in **=** (segno di uguale)
 
    - Impostare la proprietà Text del controllo zeroButton su **0**
 
-   - Modificare la proprietà Text del controllo changeSignButton in **+/-**
+   - Modificare la proprietà text del controllo changeSignButton in **+/-**
 
    - Impostare la proprietà Text del controllo decimalButton su **.** (punto)
 
-   - Modificare la proprietà Text del controllo additionButton in **+** (segno più)
+   - Modificare la proprietà text del controllo additionButton in **+** (segno più)
 
 5. Nell'area di progettazione selezionare tutti i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**.
 
@@ -249,7 +250,7 @@ Questa operazione completa la progettazione del controllo DemoCalculator. Tutto 
 
 ## <a name="implement-event-handlers"></a>Implementare i gestori eventi
 
-I pulsanti del controllo DemoCalculator hanno gestori eventi che possono essere usati per implementare gran parte della logica della calcolatrice. Il Progettazione Windows Form consente di implementare gli stub di tutti i gestori eventi per tutti i pulsanti con una sola selezione.
+I pulsanti del controllo DemoCalculator hanno gestori eventi che possono essere usati per implementare gran parte della logica della calcolatrice. Progettazione Windows Form consente di implementare gli stub di tutti i gestori eventi per tutti i pulsanti con una selezione.
 
 1. Nell'area di progettazione selezionare tutti i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**.
 
@@ -259,7 +260,7 @@ I pulsanti del controllo DemoCalculator hanno gestori eventi che possono essere 
 
 ## <a name="test-the-control"></a>Testare il controllo
 
-Poiché il controllo DemoCalculator eredita dalla classe <xref:System.Windows.Forms.UserControl>, è possibile testarne il comportamento con **UserControl Test Container**. Per altre informazioni, vedere [procedura: testare il comportamento in fase di esecuzione di un UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
+Poiché il controllo DemoCalculator eredita dalla classe <xref:System.Windows.Forms.UserControl>, è possibile testarne il comportamento con **UserControl Test Container**. Per altre informazioni, vedere [Procedura: Testare il comportamento in fase di esecuzione di un oggetto UserControl.](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)
 
 1. Premere **F5** per compilare ed eseguire il controllo DemoCalculator in **UserControl Test Container**.
 
@@ -279,7 +280,7 @@ Il primo passaggio consiste nel creare il progetto dell'applicazione. Questo pro
 
 2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **DemoCalculatorTest** e quindi scegliere **Aggiungi riferimento** per aprire la finestra di dialogo **Aggiungi riferimento**.
 
-3. Passare alla scheda **progetti** , quindi selezionare il progetto DemoCalculatorLib per aggiungere il riferimento al progetto di test.
+3. Passare alla **scheda Progetti** e quindi selezionare il progetto DemoCalculatorLib per aggiungere il riferimento al progetto di test.
 
 4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **DemoCalculatorTest** e quindi scegliere **Imposta come progetto di avvio**.
 
@@ -293,13 +294,13 @@ Per usare il controllo DemoCalculator in un'applicazione, è necessario inserirl
 
 2. Trascinare il controllo **DemoCalculator** dalla **casella degli strumenti** nel form. Spostare il controllo nell'angolo superiore sinistro del form. Quando il controllo è vicino ai bordi del form, verranno visualizzate le *guide di allineamento*. Le guide di allineamento indicano la distanza della proprietà `Padding` del form e della proprietà `Margin` del controllo. Posizionare il controllo nella posizione indicata dalle guide di allineamento.
 
-   Per ulteriori informazioni, vedere [procedura dettagliata: disposizione di controlli mediante](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)guide di allineamento.
+   Per altre informazioni, vedere [Procedura dettagliata: Disporre i controlli usando le guide di allineamento.](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)
 
 3. Trascinare un controllo `Button` dalla **casella degli strumenti** e rilasciarlo nel form.
 
 4. Spostare il controllo `Button` vicino al controllo DemoCalculator e osservare dove vengono visualizzate le guide di allineamento. È possibile allineare i controlli in modo semplice e preciso usando questa funzionalità. Al termine, eliminare il controllo `Button`.
 
-5. Fare clic con il pulsante destro del mouse sul controllo DemoCalculator e quindi scegliere **Proprietà**.
+5. Fare clic con il pulsante destro del mouse sul controllo DemoCalculator e quindi **scegliere Proprietà.**
 
 6. Impostare il valore della proprietà `Dock` su `Fill`.
 

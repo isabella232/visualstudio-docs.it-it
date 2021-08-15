@@ -6,18 +6,19 @@ ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 75841186ca78089cf84ca91f18445243acc42ac8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7be23b0a9bed6f7a85c57e57bd174996ad5056afa9961182aa285b40bf81ed02
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970751"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121444582"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Suggerire una funzionalità per Visual Studio
 
-È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8), consente di suggerire nuove funzionalità. Si tratta di un modo nuovo per poter interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
+È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8), consente di suggerire nuove funzionalità. Si tratta di un nuovo modo in cui è possibile essere in grado di interagire direttamente con il flusso di lavoro Visual Studio di progettazione.
 
 ![Pulsante Suggest a Feature (Suggerisci funzionalità) in Developer Community](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -83,15 +84,15 @@ Un suggerimento di funzionalità contrassegnato come **Servono altre info** indi
 
 ![Stato Chiuso - Informazioni insufficienti per i suggerimenti in Developer Community](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Chiuso: le informazioni non sono sufficienti** indica che dopo diversi tentativi non sono state ricevute informazioni sufficienti per comprendere completamente il suggerimento per le funzionalità. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
+**Chiuso: le informazioni non** sufficienti indicano che dopo diversi tentativi non sono state ricevute informazioni sufficienti per comprendere completamente il suggerimento della funzionalità. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
 
 Se vengono trovate le informazioni aggiuntive necessarie, è possibile richiedere di riattivare il ticket una volta ottenute.
 
 - - -
 
-![Stato chiuso di ambito per suggerimenti sulla community degli sviluppatori](../ide/media/SuggestStates/closed-out-of-scope.png)
+![Chiuso - Stato fuori ambito per i suggerimenti in Developer Community](../ide/media/SuggestStates/closed-out-of-scope.png)
 
-**Chiuso all'esterno dell'ambito** Se un suggerimento non corrisponde alla direzione generale del prodotto, verrà chiuso come *fuori ambito*. Potrebbero ad esempio essere presenti investimenti simili in altri membri della famiglia di prodotti Visual Studio. In alternativa, la funzionalità suggerita potrebbe essere rilevante solo per alcune persone, rendendo un'estensione più adatta per fornirla.
+**Chiuso - Esterno all'ambito** Se un suggerimento non corrisponde alla direzione complessiva del prodotto, verrà chiuso come *Fuori ambito.* Ad esempio, si potrebbero avere investimenti simili in altri membri della Visual Studio di prodotti. In caso contrario, la funzionalità suggerita potrebbe essere pertinente solo per poche persone, rendendo un'estensione più adatta per fornirla.
 
 
 - - -
@@ -110,7 +111,7 @@ Se vengono trovate le informazioni aggiuntive necessarie, è possibile richieder
 
 ## <a name="faq"></a>Domande frequenti
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Perché non è possibile vedere la mia idea vocale utente nella community degli sviluppatori?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Perché non è possibile visualizzare l'idea di User Voice in Developer Community?
 
 È stata eseguita la migrazione dei nuovi suggerimenti di funzionalità dal forum User Voice a Developer Community in base all'impatto per la più ampia community e alle priorità della roadmap dei prodotti. Se si nota che non è stata eseguita la migrazione di un suggerimento specifico, è possibile aggiungerlo come nuovo suggerimento in Developer Community.
 

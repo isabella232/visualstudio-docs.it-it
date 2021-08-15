@@ -11,20 +11,21 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c68cc67d768dbe2b1c42671a02360e5cef2b56b
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 31a7336bca97dde1d01be15a54c86d7b690a69928e4e1131064124c91871f59d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111760939"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121442118"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (C++)
 
 Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi di prestazioni nell'applicazione. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base. In questo caso si esamina lo strumento che identifica eventuali colli di bottiglia delle prestazioni dovuti a un uso intensivo della CPU. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
-L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. Il Profiler prestazioni offre molte altre opzioni per registrare e analizzare questo tipo di dati. [PerfTips,](../profiling/perftips.md)un altro strumento di profilatura integrato nel debugger, consente anche di eseguire il codice un'istruzione alla volta e di identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
+L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. Il Profiler prestazioni offre molte altre opzioni per registrare e analizzare questo tipo di dati. [PerfTips,](../profiling/perftips.md)un altro strumento di profilatura integrato nel debugger, consente anche di eseguire il codice un'istruzione alla volta e identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
 
 Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**. In Windows 7 e versioni successive, è possibile usare lo strumento di relazione finale, il [profiler delle prestazioni](../profiling/profiling-feature-tour.md).
 
@@ -33,25 +34,25 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 1. Aprire Visual Studio e creare il progetto.
 
    ::: moniker range="vs-2017"
-   Nella barra dei menu superiore scegliere **File** > **Nuovo** > **progetto.**
+   Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
-   Nella finestra **di dialogo** Nuovo progetto nel riquadro sinistro espandere **Visual C++** e quindi scegliere Desktop **di Windows.** Nel riquadro centrale scegliere Applicazione **console di Windows.** Assegnare quindi al progetto il *Diagnostics_Get_Started_Native*.
+   Nella finestra **di dialogo Nuovo Project** nel riquadro sinistro espandere Visual C++ e quindi scegliere Windows **Desktop**.  Nel riquadro centrale scegliere Windows **console**. Assegnare quindi al progetto *il nome Diagnostics_Get_Started_Native*.
 
-   Se il modello di progetto Applicazione console di **Windows** non viene visualizzato, scegliere il collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra **di dialogo** Nuovo progetto. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro Sviluppo di applicazioni desktop con **C++** e quindi scegliere **Modifica.**
+   Se il modello di progetto Applicazione **console Windows** non  viene visualizzato, scegliere il collegamento Apri Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Nuovo** Project. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **carico di lavoro Sviluppo di desktop con C++** e quindi scegliere **Modifica**.
    ::: moniker-end
    ::: moniker range=">=vs-2019"
    Se la finestra iniziale non è aperta, scegliere **Finestra** > **iniziale file**.
 
-   Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+   Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C++** dall'elenco Linguaggio e quindi **scegliere Windows** dall'elenco Piattaforma.
+   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C++** dall'elenco Linguaggio e quindi **scegliere** Windows dall'elenco Piattaforma.
 
-   Dopo aver applicato i filtri per la lingua e la piattaforma, scegliere il **modello App** console e quindi scegliere **Avanti.**
+   Dopo aver applicato i filtri della lingua e della piattaforma, scegliere il modello **App console** e quindi **scegliere Avanti.**
 
    > [!NOTE]
-   > Se il modello App **console non viene** visualizzato, è possibile installarlo dalla finestra Crea un **nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Nella finestra di dialogo Programma di installazione di Visual Studio quindi scegliere il carico **di lavoro Sviluppo di applicazioni desktop con C++.**
+   > Se il modello App **console** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Nella finestra di dialogo Programma di installazione di Visual Studio quindi scegliere il carico di lavoro **Sviluppo desktop con C++.**
 
-   Nella finestra **Configura il nuovo progetto** digitare o immettere Diagnostics_Get_Started_Native nella casella **Nome** progetto .  Scegliere quindi **Crea.**
+   Nella finestra **Configura il nuovo progetto** digitare o *immettere* Diagnostics_Get_Started_Native nella casella Project **nome.** Scegliere quindi **Crea**.
 
    ::: moniker-end
 
@@ -144,9 +145,9 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
     Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare nuovamente la finestra, fare clic su **Debug**  >  **Windows**  >  **Show Strumenti di diagnostica**.
+3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su  >  **Debug Windows** Mostra  >  **Strumenti di diagnostica**.
 
-4. Fare **clic su Debug**  >  **Avvia** debug (o Avvia sulla barra degli strumenti o **F5).** 
+4. Fare **clic su Debug** Avvia  >  **debug** **(o Avvia** sulla barra degli strumenti o **F5).**
 
      Al termine del caricamento dell'applicazione viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.
 

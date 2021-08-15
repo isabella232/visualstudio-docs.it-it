@@ -1,6 +1,6 @@
 ---
 description: Ignora un numero specificato di tabelle in una sequenza di enumerazione.
-title: 'IDiaEnumTables:: Skip | Microsoft Docs'
+title: IDiaEnumTables::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,14 +11,15 @@ ms.assetid: 5c9db956-0654-4f1a-8775-530aa980d8ec
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cec85c0b36051cb3fc173794188dbf7d58fcee
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 54cddc5df34b4aa80dfba71326f61e85a7fab4fa194d7c1fe0a2dee0e93b79f3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157854"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121345076"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 Ignora un numero specificato di tabelle in una sequenza di enumerazione.
@@ -34,10 +35,10 @@ HRESULT Skip (
 #### <a name="parameters"></a>Parametri
  `celt`
 
-in Numero di tabelle nella sequenza di enumerazione da ignorare.
+[in] Numero di tabelle nella sequenza di enumerazione da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` se non sono presenti altre tabelle da ignorare.
+ In caso di esito positivo, restituisce ; in caso contrario, restituisce se `S_OK` non sono presenti altre tabelle da `S_FALSE` ignorare.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

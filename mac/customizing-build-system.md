@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9545b701dc3041fa57dacf5288fe8ab29cd9ea49b89afba1645505d185399f8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128386"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121349821"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
 
-Il Microsoft Build Engine è una piattaforma per la compilazione di applicazioni. Il motore, noto anche come MSBuild, è stato sviluppato da Microsoft e consente la creazione di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. Al momento, tuttavia, xbuild è stato eliminato a favore dell'utilizzo di MSBuild in tutti i sistemi operativi.
+Il Microsoft Build Engine è una piattaforma per la compilazione di applicazioni. Il motore, noto anche come MSBuild, è stato sviluppato da Microsoft e consente la creazione di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. In questo momento, tuttavia, xbuild è stato gradualmente sfasato a favore dell'MSBuild in tutti i sistemi operativi.
 
-**MSBuild** viene usato come sistema di compilazione per i progetti in Visual Studio per Mac e funziona prendendo un set di input, ad esempio i file di origine, e li trasforma in output, ad esempio i file eseguibili. tramite la chiamata a strumenti quali il compilatore.
+**MSBuild** viene usato come sistema di compilazione per i progetti in Visual Studio per Mac e funziona prendendo un set di input, ad esempio i file di origine, e li trasforma in output, ad esempio file eseguibili. tramite la chiamata a strumenti quali il compilatore.
 
 ## <a name="msbuild-file"></a>File di MSBuild
 
@@ -76,9 +76,9 @@ Il codice XML del PropertyGroup per una semplice applicazione console, ad esempi
 
 È possibile fare riferimento alle proprietà da espressioni che usano la sintassi `$()`. L'espressione `$(Foo)`, ad esempio, verrà valutata come valore della proprietà `Foo`. Se la proprietà non è stata impostata, verrà valutata come stringa vuota, senza alcun errore.
 
-#### <a name="items"></a>Items
+#### <a name="items"></a>Elementi
 
-Gli elementi consentono di gestire l'input nel sistema di compilazione sotto forma di elenchi o set e in genere rappresentano file. Ogni elemento ha un *tipo*, una *specifica*e *metadati* arbitrari facoltativi. Si noti che MSBuild non opera su elementi singoli, ma su tutti gli elementi di un tipo specifico, ovvero su un *set* di elementi.
+Gli elementi consentono di gestire l'input nel sistema di compilazione sotto forma di elenchi o set e in genere rappresentano file. Ogni elemento ha un *tipo*, una *specifica* e *metadati* arbitrari facoltativi. Si noti che MSBuild non opera su elementi singoli, ma su tutti gli elementi di un tipo specifico, ovvero su un *set* di elementi.
 
 Gli elementi vengono creati tramite la dichiarazione di un `ItemGroup`. Può esistere un numero qualsiasi di ItemGroup, e questi possono contenere un numero qualsiasi di elementi.
 
@@ -101,5 +101,5 @@ Il frammento di codice seguente, ad esempio, crea le schermate di avvio di iOS. 
 
 Per approfondire le proprie conoscenze di MSBuild, è possibile usare le risorse seguenti:
 
-* [Panoramica di MSBuild](/visualstudio/msbuild/msbuild)
-* [Concetti relativi a MSBuild](/visualstudio/msbuild/msbuild-concepts)
+* [MSBuild Panoramica](/visualstudio/msbuild/msbuild)
+* [MSBuild Concetti](/visualstudio/msbuild/msbuild-concepts)

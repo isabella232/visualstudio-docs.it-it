@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare uno shader con Lambert di base'
-description: Informazioni su come usare la finestra di progettazione shader e il linguaggio di Graph shader diretto per creare uno shader di illuminazione che implementa il modello di illuminazione Lambert classico.
+description: Informazioni su come usare La finestra di progettazione shader e il linguaggio Graph shader per creare uno shader di illuminazione che implementa il modello di illuminazione Lambert classico.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,14 +8,15 @@ ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aa4f3676708a99abba0a4706ecb524f1c14b212
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7922d18c4905ffcf706befa2b74d90965296556ee2556d92d94aae3cc6a66a0a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917035"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308707"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Procedura: Creare uno shader con Lambert di base
 

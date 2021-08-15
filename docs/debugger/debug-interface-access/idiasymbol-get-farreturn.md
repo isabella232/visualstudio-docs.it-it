@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se la funzione contiene un valore di restituzione molto lungo.
+description: Recupera un flag che specifica se la funzione contiene un valore restituito lontano.
 title: IDiaSymbol::get_farReturn | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 141df0e9-f4d9-4330-a043-5d9ea865257f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebf0d1f61c6cf1dc21528e44703de049d247c1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c158b6ee7a00a317cdcae2f8b7d8746ea5f07ce19cd473e2a8199154f246c25c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156342"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121312004"
 ---
 # <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
-Recupera un flag che specifica se la funzione contiene un valore di restituzione molto lungo.
+Recupera un flag che specifica se la funzione contiene un valore restituito lontano.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +35,19 @@ HRESULT get_farReturn(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-in Restituisce `TRUE` se la funzione usa un valore restituito, in caso contrario, restituisce `FALSE` .
+[in] Restituisce `TRUE` se la funzione usa un ritorno a lungo, in caso contrario restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedi anche

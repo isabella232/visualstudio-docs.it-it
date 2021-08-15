@@ -1,6 +1,6 @@
 ---
-title: Creazione di tipi di progetto | Microsoft Docs
-description: Informazioni su come estendere Visual Studio tramite la progettazione, la creazione e la registrazione di un nuovo tipo di progetto che supporta le attività di programmazione.
+title: Creazione Project tipi | Microsoft Docs
+description: Informazioni su come estendere Visual Studio progettazione, creazione e registrazione di un nuovo tipo di progetto che supporta le attività di programmazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,64 +11,65 @@ ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5984afd2879f94a73ef02f77a85501c50f55bc93
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f4728412127311475b7861a2640ef96ac55f94387e79357a6bbee0a5c3fa0f01
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056818"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448162"
 ---
-# <a name="create-project-types"></a>Creazione di tipi di progetto
-È possibile estendere creando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] un nuovo tipo di progetto. Per creare un nuovo tipo di progetto, è necessario comprendere alcuni concetti e completare una serie di passaggi. Negli argomenti seguenti viene fornita una panoramica su come creare i tipi di progetto.
+# <a name="create-project-types"></a>Creare tipi di progetto
+È possibile estendere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] creando un nuovo tipo di progetto. Per creare un nuovo tipo di progetto, è necessario comprendere diversi concetti e completare una serie di passaggi. Negli argomenti seguenti viene fornita una panoramica di come creare tipi di progetto.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Decisioni di progettazione del tipo di progetto](../../extensibility/internals/project-type-design-decisions.md)
+- [Project di progettazione dei tipi](../../extensibility/internals/project-type-design-decisions.md)
 
- Vengono illustrate le decisioni relative all'elemento, alla persistenza dei file di progetto e al progetto Mechanical commit che è necessario apportare prima di creare un nuovo tipo di progetto.
+ Vengono illustrati l'elemento, la persistenza del file di progetto e le decisioni di progettazione del meccanismo di impegno da prendere prima di creare un nuovo tipo di progetto.
 
-- [Elenco di controllo: creare nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Elenco di controllo: Creare nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 
- Viene fornita una panoramica dei passaggi che è necessario seguire per creare un nuovo tipo di progetto che supporta le attività di programmazione come la modifica del codice e la compilazione, la compilazione, il debug e la distribuzione di applicazioni nel progetto.
+ Viene fornita una panoramica dei passaggi da seguire per creare un nuovo tipo di progetto che supporta attività di programmazione quali la modifica del codice e la compilazione, la compilazione, il debug e la distribuzione di applicazioni nel progetto.
 
-- [Creare istanze di progetto tramite Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [Creare istanze del progetto usando le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 
- Vengono fornite informazioni su come fornire e utilizzare una factory di progetto per creare istanze di un nuovo progetto.
+ Vengono fornite informazioni su come fornire e usare una factory di progetto per creare istanze di un nuovo progetto.
 
 - [Registrare un tipo di progetto](../../extensibility/internals/registering-a-project-type.md)
 
- Fornisce esempi di codice di istruzioni dal registro di sistema che forniscono i percorsi e i dati predefiniti e una tabella che contiene voci dello script del registro di sistema per ogni istruzione.
+ Vengono forniti esempi di codice di istruzioni del Registro di sistema che forniscono percorsi e dati predefiniti e una tabella che contiene voci dello script del Registro di sistema per ogni istruzione.
 
-- [Persistenza progetto](../../extensibility/internals/project-persistence.md)
+- [Project persistenza](../../extensibility/internals/project-persistence.md)
 
- Viene illustrato l'utilizzo di `IPersistFileFormat` per salvare in modo permanente sia gli oggetti progetto di file che quelli non basati su file.
+ Viene illustrato l'uso di per rendere persistenti sia gli oggetti di progetto basati su file che `IPersistFileFormat` non basati su file.
 
 - [Usare MSBuild](../../extensibility/internals/using-msbuild.md)
 
- Descrive il modo in cui il tipo di progetto può usare il [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] motore di compilazione per consentire agli utenti di compilare da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e nella riga di comando.
+ Viene descritto come il tipo di progetto può usare il motore di compilazione per consentire agli utenti di [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] compilare da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e dalla riga di comando.
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Supporto degli strumenti per l'esplorazione di simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [Supporto degli strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- Viene illustrata l'architettura degli strumenti di visualizzazione del codice, ad esempio il **Visualizzatore oggetti** e la finestra di **Visualizzazione classi** . Vengono descritte le interfacce e i metodi utilizzati per implementare l'esplorazione degli oggetti in un VSPackage.
+ Viene illustrata l'architettura degli strumenti di visualizzazione del codice, ad esempio **Visualizzatore** oggetti **e Visualizzazione classi** finestra. Descrive le interfacce e i metodi usati per implementare l'esplorazione di oggetti in un VSPackage.
 
-- [Aggiungere modelli di progetti e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [Aggiungere modelli di progetto e di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- Viene illustrato il significato che i progetti svolgono per determinare quale editor viene utilizzato quando viene aperto un elemento del progetto e come possono essere modificate le risorse del progetto.
+ Illustra il significato dei progetti per determinare quale editor viene usato quando un elemento di progetto viene aperto e come è possibile modificare le risorse del progetto.
 
-- [Installare VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Installare VSPackage con il Windows di installazione](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Viene illustrato come assegnare al VSPackage una propria identità univoca e come eseguire il wrapping delle dll VSPackage e di altre informazioni in un pacchetto di Windows Installer (*. File MSI* ) per la distribuzione ai clienti.
+ Illustra come assegnare al pacchetto VSPackage la propria identità univoca e come eseguire il wrapping delle DLL vsPackage e di altre informazioni in un pacchetto del programma di installazione di Windows (file *.MSI)* per la distribuzione ai clienti.
 
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- Viene descritto come visualizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e indirizzare le gerarchie.
+ Viene descritto il modo in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cui le visualizzazioni e gli indirizzi delle gerarchie.
 
 - [VSPackages](../../extensibility/internals/vspackages.md)
 
- Viene fornita una panoramica di un pacchetto VSPackage, un oggetto COM installabile che estende l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente e viene illustrato come implementare un pacchetto VSPackage personalizzato.
+ Fornisce una panoramica di un VSPackage, un oggetto COM installabile che estende l'ambiente e illustra come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] implementare un vspackage personalizzato.
 
-- [Tipi di progetto](../../extensibility/internals/project-types.md)
+- [Project tipi](../../extensibility/internals/project-types.md)
 
- Viene illustrato come utilizzare i progetti per modificare codice, compilare e compilare codice, eseguire ed eseguire il debug del codice e vengono forniti collegamenti ad argomenti dettagliati sulla creazione di tipi di progetto.
+ Viene illustrato come usare i progetti per modificare il codice, compilare e compilare codice ed eseguire ed eseguire il codice di debug e vengono forniti collegamenti ad argomenti dettagliati su come creare tipi di progetto.

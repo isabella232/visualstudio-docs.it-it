@@ -1,6 +1,6 @@
 ---
 title: Spazio dei nomi diagnostic | Microsoft Docs
-description: Usare lo spazio dei nomi di diagnostica per creare marcatori del Visualizzatore di concorrenza. Lo spazio dei nomi di diagnostica è un membro dello spazio dei nomi Concurrency.
+description: Usare lo spazio dei nomi diagnostico per generare marcatori del visualizzatore di concorrenza. Lo spazio dei nomi diagnostic è un membro dello spazio dei nomi Concurrency.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: ad786b19-7c4c-46ee-bfb6-c4752b373a09
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 22224e375c1d1f463f1c07d41ca5a03efa5cabdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93da07b215e9fd8e7fb3fcaf88fcc31ea123bc792efca351faf3bf40d86fa2e5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923737"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121254357"
 ---
 # <a name="diagnostic-namespace"></a>Spazio dei nomi diagnostic
 Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.
@@ -51,4 +52,4 @@ namespace diagnostic;
  **Spazio dei nomi:** Concorrenza
 
 ## <a name="see-also"></a>Vedi anche
-- [Spazio dei nomi Concurrency (Visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+- [Spazio dei nomi Concurrency (visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)

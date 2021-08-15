@@ -11,14 +11,15 @@ ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: aec5db878c87ba257f1f83458d1ae742272a9b0f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e0dacb8d9fa997c3509015d1824d88ebf152863c461fad299906a235d4541f16
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160603"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391616"
 ---
 # <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
 Recupera una matrice di tipi specifici del compilatore per questo simbolo.
@@ -36,21 +37,21 @@ HRESULT get_types (
 #### <a name="parameters"></a>Parametri
  `cTypes`
 
-in Dimensione del buffer in cui memorizzare i dati.
+[in] Dimensione del buffer in cui contenere i dati.
 
  `pcTypes`
 
-out Restituisce il numero di tipi scritti o, se il `types` parametro è `NULL` , il numero totale di tipi disponibili.
+[out] Restituisce il numero di tipi scritti oppure, se il `types` parametro è , il numero totale di tipi `NULL` disponibili.
 
  `types[]`
 
-out Matrice che deve essere compilata con gli oggetti [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresentano tutti i tipi per questo simbolo.
+[out] Matrice che deve essere compilata con gli oggetti [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresentano tutti i tipi per questo simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

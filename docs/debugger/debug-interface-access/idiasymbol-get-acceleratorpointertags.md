@@ -1,6 +1,6 @@
 ---
-description: Restituisce tutti i valori dei tag del puntatore dell'acceleratore che corrispondono a una funzione C++ AMP Stub dell'acceleratore.
-title: 'IDiaSymbol:: get_acceleratorPointerTags | Microsoft Docs'
+description: Restituisce tutti i valori dei tag del puntatore del tasto di scelta rapida che corrispondono a C++ AMP funzione stub dell'acceleratore.
+title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -9,17 +9,18 @@ ms.assetid: 30e13cee-e511-49ec-affd-99b0097071b2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 99bf6f90cb15484613a6572952a6f8501fa6bf31
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2620b47cdf732ea849d4e644e1fa621363c77a9ce4cfb77f0f97104c3233a710
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156601"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379982"
 ---
 # <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Restituisce tutti i valori dei tag del puntatore dell'acceleratore che corrispondono a una funzione C++ AMP Stub dell'acceleratore.
+Restituisce tutti i valori dei tag del puntatore del tasto di scelta rapida che corrispondono a C++ AMP funzione stub dell'acceleratore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,21 +34,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Parametri
  `cnt`
 
-in Dimensioni della matrice di output `pPointerTags` .
+[in] Dimensioni della matrice di output `pPointerTags` .
 
  `pcnt`
 
-out Il numero di tag del puntatore acceleratore nella funzione C++ AMP Stub dell'acceleratore.
+[out] Numero di tag puntatore del tasto di scelta rapida nella C++ AMP stub dell'acceleratore.
 
  `pPointerTags`
 
-out `DWORD` Puntatore di matrice riempito con i valori dei tag del puntatore dell'acceleratore nella funzione C++ amp Stub dell'acceleratore.
+[out] Puntatore a matrice compilato con i valori del tag del puntatore del tasto di scelta rapida nella C++ AMP `DWORD` stub dell'acceleratore.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo viene chiamato su un' `IDiaSymbol` interfaccia che corrisponde a una funzione dello stub di C++ amp Accelerator.
+ Questo metodo viene chiamato su `IDiaSymbol` un'interfaccia che corrisponde a una funzione C++ AMP stub dell'acceleratore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,21 +1,22 @@
 ---
 title: WaitStart | Microsoft Docs
-description: Informazioni che l'opzione WaitStart fa sì che il sottocomando VSPerfCmd.exe Start venga restituito solo quando il profiler è stato inizializzato o quando è trascorso il numero di secondi specificato.
+description: Informazioni sul fatto che l'opzione WaitStart fa in modo che il sotto-comando VSPerfCmd.exe Start restituirà il controllo solo quando il profiler è stato inizializzato o quando è passato il numero di secondi specificato.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b883ae215854994918419fb311d94ad921989740
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 726d77b41b5ab48cb1c82ba434a74c1940b54ccf8eaa57591bea9542f23b70d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911472"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121269847"
 ---
 # <a name="waitstart"></a>WaitStart
 Con l'opzione WaitStart, il sottocomando Start di *VSPerfCmd.exe* restituisce il controllo solo quando il profiler è stato inizializzato o dopo il numero di secondi specificato. Per impostazione predefinita, il comando Start restituisce il controllo immediatamente. Se il sottocomando Start restituisce il controllo senza inizializzare il profiler, viene restituito un errore. Se non viene specificato il numero di secondi, il comando Start attende per un periodo di tempo illimitato.

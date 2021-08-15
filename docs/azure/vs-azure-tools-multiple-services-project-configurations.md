@@ -4,22 +4,23 @@ description: Informazioni su come configurare un progetto di servizio cloud di A
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b5b4a5bedd77855aa41c4bf5e565738fc8fb4f0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d2c0c7e54bb57f199579716499ee02901ae58c16dadf773dc4e5513bb28484d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844099"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121348748"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto Azure di Visual Studio per l'uso di più configurazioni del servizio
 
 Un progetto di servizio cloud di Azure in Visual Studio include tre file di configurazione: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg`:
 
-- `ServiceDefinition.csdef` viene distribuito in Azure per descrivere i requisiti del servizio cloud e i relativi ruoli e per fornire le impostazioni applicabili a tutte le istanze. Le impostazioni possono essere lette in fase di esecuzione usando l'API di runtime dell'hosting del servizio di Azure. Questo file può essere aggiornato in Azure solo quando il servizio cloud viene arrestato.
+- `ServiceDefinition.csdef` viene distribuito in Azure per descrivere i requisiti del servizio cloud e i relativi ruoli e per fornire le impostazioni applicabili a tutte le istanze. Impostazioni può essere letto in fase di esecuzione usando l'API runtime di hosting del servizio di Azure. Questo file può essere aggiornato in Azure solo quando il servizio cloud viene arrestato.
 - `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg` forniscono i valori per le impostazioni del file di definizione e specificano il numero di istanze da eseguire per ogni ruolo. Il file "Local" contiene i valori usati nel debug locale, mentre il file "Cloud" viene distribuito in Azure come `ServiceConfiguration.cscfg` e fornisce le impostazioni per l'ambiente server. Questo file può essere aggiornato mentre il servizio cloud è in esecuzione in Azure.
 
 Le impostazioni di configurazione vengono gestite e modificate in Visual Studio attraverso le pagine delle proprietà relative al ruolo applicabile (fare clic con il pulsante destro del mouse sul ruolo e scegliere **Proprietà** oppure fare doppio clic sul ruolo). L'ambito delle modifiche può essere delimitato da qualsiasi configurazione scelta nell'elenco a discesa **Configurazione servizio**. Le proprietà dei ruoli Web e di lavoro sono simili, tranne per gli aspetti descritti nelle sezioni seguenti.
@@ -38,13 +39,13 @@ Consente di selezionare il file `ServiceConfiguration.*.cscfg` interessato dalle
 
 Impostare la proprietà **Conteggio istanze** sul numero di istanze che il servizio deve eseguire per questo ruolo.
 
-Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande** o **Molto grande**.  Per ulteriori informazioni, vedere [dimensioni dei servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
+Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande** o **Molto grande**.  Per altre informazioni, vedere [Dimensioni per i servizi cloud.](/azure/cloud-services/cloud-services-sizes-specs)
 
 ### <a name="startup-action-web-role-only"></a>Startup Action (Azione di avvio) (solo ruolo Web)
 
 Impostare questa proprietà per specificare che in Visual Studio deve essere avviato un Web browser per gli endpoint HTTP o HTTPS o entrambi quando si inizia il debug.
 
-L'opzione **endpoint HTTPS** è disponibile solo se è già stato definito un endpoint HTTPS per il ruolo. È possibile definire un endpoint HTTPS nella pagina delle proprietà **Endpoint** .
+**L'opzione Endpoint HTTPS** è disponibile solo se è già stato definito un endpoint HTTPS per il ruolo. È possibile definire un endpoint HTTPS nella pagina delle proprietà **Endpoint** .
 
 Se è già stato aggiunto un endpoint HTTPS, l'opzione Endpoint HTTPS è abilitata per impostazione predefinita e Visual Studio avvia un browser per questo endpoint all'inizio del debug in aggiunta a un browser per l'endpoint HTTP, presupponendo che entrambe le opzioni di avvio siano abilitate.
 
@@ -54,7 +55,7 @@ Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il p
 
 ## <a name="settings-page"></a>Pagina Impostazioni
 
-Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](/previous-versions/azure/dn602775(v=azure.11)), in particolare il metodo [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
+Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla libreria gestita di [Azure,](/previous-versions/azure/dn602775(v=azure.11))in particolare il [metodo GetConfigurationSettingValue.](/previous-versions/azure/reference/ee772857(v=azure.100))
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurazione di una stringa di connessione per un account di archiviazione
 
@@ -67,7 +68,7 @@ Una stringa di connessione è un'impostazione che fornisce informazioni di conne
 
 Per creare una stringa di connessione, selezionare **Aggiungi impostazione** e impostare **Tipo** su "Stringa di connessione".
 
-Per le stringhe di connessione nuove o esistenti, selezionare **...** _ a destra del campo _ *valore** per aprire la finestra di dialogo **Crea stringa di connessione di archiviazione** :
+Per le stringhe di connessione nuove o esistenti, selezionare **...** _ a destra del campo _ *Value** per aprire la **finestra di dialogo Crea Archiviazione stringa di connessione:**
 
 1. In **Connetti con** scegliere l'opzione **Sottoscrizione** per selezionare un account di archiviazione da una sottoscrizione. Visual Studio otterrà quindi le credenziali dell'account di archiviazione automaticamente dal file `.publishsettings`.
 1. Se si seleziona **Credenziali immesse manualmente**, è possibile specificare il nome e la chiave dell'account direttamente, usando le informazioni presenti nel portale di Azure. Per copiare la chiave dell'account:

@@ -1,6 +1,6 @@
 ---
 title: Elemento ExtensionDataItem | Microsoft Docs
-description: Visualizzare le informazioni di riferimento sull'elemento ExtensionDataItem, che è un elemento nello schema dell'elemento del progetto SharePoint.
+description: Visualizzare le informazioni di riferimento sull'elemento ExtensionDataItem, che è un elemento nello schema SharePoint dell'elemento di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,17 +12,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: add1a119283635f9cfd9bebddfe18228f1976703
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fb899400ebae03d92d473e94012341f89acff197d53f76b710052801f2432a4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876823"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121352955"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem (elemento)
-  Elemento di dati personalizzato associato all'elemento del progetto SharePoint, in formato chiave/valore. Sia la chiave che il valore devono essere stringhe.
+  Elemento di dati personalizzato associato all'elemento SharePoint progetto, in formato chiave/valore. Sia la chiave che il valore devono essere stringhe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,29 +39,29 @@ ms.locfileid: "99876823"
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|**Chiave**|Attributo **xs: String** obbligatorio.<br /><br /> Chiave utilizzata per archiviare e recuperare l'elemento dati.|
-|**Valore**|Attributo **xs: String** obbligatorio.<br /><br /> Valore dell'elemento di dati.|
+|**Chiave**|Obbligatorio **xs: attributo** stringa.<br /><br /> Chiave utilizzata per archiviare e recuperare l'elemento di dati.|
+|**Valore**|Attributo **xs:string** obbligatorio.<br /><br /> Valore dell'elemento di dati.|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Rappresenta una raccolta di elementi di dati personalizzati associati all'elemento del progetto SharePoint.|
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Rappresenta una raccolta di elementi di dati personalizzati associati all'SharePoint di progetto.|
 
 ## <a name="remarks"></a>Commenti
- Quando si associano dati personalizzati a un elemento del progetto SharePoint usando la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> proprietà di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> oggetto, Visual Studio salva i dati in un nuovo elemento **ExtensionDataItem** nel `.spdata` file per l'elemento di progetto. Per ulteriori informazioni, vedere [salvare i dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+ Quando si associano dati personalizzati a un elemento di progetto SharePoint usando la proprietà di un oggetto , Visual Studio salva i dati in un nuovo elemento <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> **ExtensionDataItem** nel file per l'elemento `.spdata` di progetto. Per altre informazioni, vedere [Salvare i dati nelle estensioni del sistema SharePoint progetto.](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 |Proprietà|Valore|
 |-|-|
-|**Namespace**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nome schema**|Schema dell'elemento del progetto SharePoint|
-|**File di convalida**|ProjectItemModelSchema. xsd|
+|**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nome schema**|SharePoint Project schema dell'elemento|
+|**File di convalida**|ProjectItemModelSchema.xsd|
 |**Può essere vuoto**|No|
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento allo schema degli elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [SharePoint dello schema dell'elemento di progetto](../sharepoint/sharepoint-project-item-schema-reference.md)

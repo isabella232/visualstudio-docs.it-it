@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: compilare soluzioni SharePoint | Microsoft Docs'
-description: Compilare una soluzione SharePoint. In Visual Studio la compilazione di una soluzione SharePoint non è diversa dalla creazione di altre applicazioni.
+title: 'Procedura: Compilare SharePoint soluzioni | Microsoft Docs'
+description: Compilare una SharePoint soluzione. In Visual Studio, la compilazione di SharePoint soluzione non è diversa dalla compilazione di altre applicazioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,26 +14,27 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 3be11b730f3cc809a6d1a8ead6724a69be5f136d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15cc79d66851ef15a5ea33b97435f068b78b92e02ef57bef0facc4d9f415bb8e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923421"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121367603"
 ---
-# <a name="how-to-build-sharepoint-solutions"></a>Procedura: compilare soluzioni SharePoint
+# <a name="how-to-build-sharepoint-solutions"></a>Procedura: Compilare SharePoint soluzioni
 
-Compilare la soluzione SharePoint non è diversa dalla creazione di altre applicazioni in Visual Studio. Per ulteriori informazioni sulla compilazione di applicazioni, vedere [compilazione e compilazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Per informazioni su alcune considerazioni specifiche per le soluzioni di SharePoint, vedere [procedura: distribuire e pubblicare una soluzione SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
+La compilazione SharePoint soluzione non è diversa dalla compilazione di altre applicazioni in Visual Studio. Per altre informazioni sulla compilazione di applicazioni, vedere [Compilare e compilare in Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Per una descrizione di alcune considerazioni specifiche per le soluzioni SharePoint, vedere Procedura: Distribuire e pubblicare una soluzione SharePoint in un sito [SharePoint locale.](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 
-## <a name="to-build-sharepoint-solutions"></a>Per compilare soluzioni SharePoint
+## <a name="to-build-sharepoint-solutions"></a>Per compilare SharePoint soluzioni
 
-1. Decidere se è in esecuzione una build di debug o di rilascio. Per ulteriori informazioni, vedere [Impostazioni progetto debugger](../debugger/debugger-project-settings.md).
+1. Decidere se si sta effettuando un debug o una build di rilascio. Per altre informazioni, vedere [Debugger Project Impostazioni](../debugger/debugger-project-settings.md).
 
-2. Scegliere l'opzione appropriata per la compilazione o la ricompilazione della soluzione o del progetto. Per altre informazioni, vedere [compilazione e compilazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+2. Scegliere l'opzione appropriata per la compilazione o la ricompilazione della soluzione o del progetto. Per altre informazioni, vedere [Compilazione e compilazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-3. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
+3. Nella barra dei menu scegliere **Compila**  >  **compila soluzione.**
 
 ## <a name="see-also"></a>Vedi anche
 

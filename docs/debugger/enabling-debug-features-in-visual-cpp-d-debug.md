@@ -1,6 +1,6 @@
 ---
 title: Abilitazione delle funzionalità di debug nei progetti C++ (-D_DEBUG) | Microsoft Docs
-description: In Visual C++ si abilitano le funzionalità di debug definendo _DEBUG. Informazioni su come eseguire questa operazione e su come collegare un programma MFC per eseguirne il debug.
+description: In Visual C++ le funzionalità di debug vengono abilitate definendo _DEBUG. Informazioni su come eseguire questa operazione e su come collegare un programma MFC per eseguirne il debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,14 +24,15 @@ ms.assetid: 276e2254-7274-435e-ba4d-67fcef4f33bc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0a8941fbda263ce3a2345a135594d2f9eec87e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ca25cfef098f87f3e752577389e65108692c9eeae31b078b3b4657b7df15f1b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871897"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121263910"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>Abilitazione delle funzionalità di debug nei progetti C++ (/D_DEBUG)
 In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] le funzionalità di debug, ad esempio le asserzioni, vengono attivate quando si compila il programma definendo il simbolo **_DEBUG**. Il simbolo **_DEBUG** può essere definito in uno dei due modi seguenti:
@@ -46,4 +47,4 @@ In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] le funzionalità di
 
 ## <a name="see-also"></a>Vedi anche
 - [Debug del codice nativo](../debugger/debugging-native-code.md)
-- [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Project Impostazioni per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

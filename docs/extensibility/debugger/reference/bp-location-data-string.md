@@ -1,5 +1,5 @@
 ---
-description: Usato per impostare i punti di interruzione dei dati basati su una stringa che l'utente può immettere dall'Integrated Development Environment (IDE).
+description: Usato per impostare punti di interruzione dei dati basati su una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).
 title: BP_LOCATION_DATA_STRING | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,19 +11,20 @@ ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 98cfb12649fe85ce9e5f6b6a51a8c61243b5e9da
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 37495719a5590fff6dc2ec61cb863e2163f468c7ccf15e316a034cb510c4f0a5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096759"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121239334"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
-Usato per impostare i punti di interruzione dei dati basati su una stringa che l'utente può immettere dall'Integrated Development Environment (IDE).
+Usato per impostare punti di interruzione dei dati basati su una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +42,21 @@ typedef struct _BP_LOCATION_DATA_STRING {
 Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread in cui si verifica il punto di interruzione.
 
 `bstrContext`\
-Contesto del punto di interruzione all'interno del codice, in genere un metodo o un nome di funzione come visualizzato in uno stack di chiamate.
+Contesto del punto di interruzione all'interno del codice, in genere un nome di metodo o funzione come visualizzato in uno stack di chiamate.
 
 `bstrDataExpr`\
-Stringa di dati che l'utente immette per impostare il punto di interruzione.
+Stringa di dati immessa dall'utente per impostare il punto di interruzione.
 
 `dwNumElements`\
 Numero di elementi nella stringa di dati in cui si verifica il punto di interruzione.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.
+Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'unione.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

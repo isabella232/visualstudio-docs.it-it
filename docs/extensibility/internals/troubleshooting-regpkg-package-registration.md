@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di registrazione del pacchetto RegPkg | Microsoft Docs
+title: Risoluzione dei problemi di registrazione dei pacchetti RegPkg | Microsoft Docs
 description: Usare queste informazioni per risolvere i problemi di registrazione del pacchetto RegPkg in Visual Studio. Usare la versione di RegPkg appropriata per il pacchetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,23 +10,24 @@ ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48e3699b095ed7b9d0e72cf7b09ad02e26ac5a51
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fbefcdd5bbb0193339fab1b91335e16fcc0e820afd97ad35a7d39ee71582ff06
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090759"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431760"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Risoluzione dei problemi di registrazione dei pacchetti RegPkg
 > [!NOTE]
-> Il modo migliore per registrare i pacchetti in Visual Studio consiste nell'usare i file con estensione pkgdef. Questo consente la distribuzione dell'estensione senza dover accedere al registro di sistema. I file pkgdef vengono creati usando l' [utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md).
+> Il modo migliore per registrare i pacchetti in Visual Studio è l'uso di file con estensione pkgdef. Ciò consente la distribuzione dell'estensione senza dover accedere al Registro di sistema. I file Pkgdef vengono creati tramite [l'utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md).
 
- Per registrare un pacchetto usando RegPkg in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , è necessario usare la versione di regpkg appropriata per il pacchetto.
+ Per registrare un pacchetto usando RegPkg in , è necessario usare la versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] RegPkg appropriata per il pacchetto.
 
-## <a name="regpkg-versions-related-to-package-versions"></a>Versioni di RegPkg correlate alle versioni del pacchetto
- Sono disponibili due versioni di RegPkg. Una versione è inclusa in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Utilizzare questa versione per registrare i pacchetti compilati utilizzando uno degli assembly seguenti:
+## <a name="regpkg-versions-related-to-package-versions"></a>Versioni di RegPkg correlate alle versioni dei pacchetti
+ Esistono due versioni di RegPkg. Una versione è inclusa in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Usare questa versione per registrare i pacchetti compilati utilizzando uno degli assembly seguenti:
 
 1. Microsoft.VisualStudioShell.9.0.dll
 
@@ -34,10 +35,10 @@ ms.locfileid: "105090759"
 
 3. Microsoft.VisualStudioShell.11.0.dll
 
-   Non è in grado di registrare i pacchetti compilati utilizzando l'assembly Microsoft.VisualStudio.Shell.dll precedente.
+   Non è possibile registrare pacchetti compilati utilizzando l'assembly Microsoft.VisualStudio.Shell.dll precedente.
 
-   La versione precedente di RegPkg è in grado di registrare i pacchetti compilati utilizzando l'assembly Microsoft.VisualStudio.Shell.dll. Tuttavia, non è in grado di registrare i pacchetti compilati utilizzando versioni successive di tale assembly.
+   La versione precedente di RegPkg è in grado di registrare i pacchetti compilati usando lMicrosoft.VisualStudio.Shell.dll assembly. Tuttavia, non può registrare i pacchetti compilati utilizzando versioni successive di tale assembly.
 
 ## <a name="see-also"></a>Vedi anche
 - [VSPackages](../../extensibility/internals/vspackages.md)
-- [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Visual Studio risoluzione dei problemi](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -1,6 +1,6 @@
 ---
 title: Unit test per metodi generici
-description: Informazioni su come generare unit test per metodi generici usando queste informazioni ed esempi di creazione di unit test per metodi generici.
+description: Informazioni su come generare unit test per metodi generici usando queste informazioni ed esempi di creazione di unit test per i metodi generici.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,15 +9,16 @@ helpviewer_keywords:
 - unit tests, and generics
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 16d1348d74bb459a73dd4a5a4f8de21e367865c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94cd2ba6ed4d234c99d47317dc01674eaab7b1ef0f4b8565268301927bd971c9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962496"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384665"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
 

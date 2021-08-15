@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi relativi al ricaricamento rapido XAML
-description: Risolvere i problemi che possono verificarsi con il ricaricamento a caldo di XAML.
+description: Risolvere i problemi che possono verificarsi con Ricaricamento rapido XAML.
 ms.date: 09/04/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -9,66 +9,67 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e13fd71c9d53ef49d7f7372986bfabc29c62747
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02090956026e6359313534666237bcddd614f4ce3addfdc600d1a7f0289ed9d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890448"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440180"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Risoluzione dei problemi relativi al ricaricamento rapido XAML
 
-Questa guida alla risoluzione dei problemi include istruzioni dettagliate per risolvere la maggior parte dei problemi che impediscono il corretto funzionamento del ricaricamento a caldo di XAML.
+Questa guida alla risoluzione dei problemi include istruzioni dettagliate che dovrebbero risolvere la maggior parte dei problemi che impediscono Ricaricamento rapido XAML funzioni correttamente.
 
-Il ricaricamento a caldo di XAML è supportato per le app WPF e UWP. Per informazioni dettagliate sui requisiti del sistema operativo e degli strumenti, vedere [scrivere ed eseguire il debug di codice XAML in esecuzione con il ricaricamento a caldo di XAML](xaml-hot-reload.md).
+Ricaricamento rapido XAML è supportato per le app WPF e UWP. Per informazioni dettagliate sui requisiti del sistema operativo e degli strumenti, vedere Scrivere ed eseguire il debug di [codice XAML con](xaml-hot-reload.md)Ricaricamento rapido XAML .
 
-## <a name="hot-reload-is-not-available"></a>Il ricaricamento a caldo non è disponibile
+## <a name="hot-reload-is-not-available"></a>Ricaricamento rapido non è disponibile
 
-Se viene visualizzato il messaggio "ricarica a caldo non disponibile" nella barra degli strumenti in-app durante il debug dell'app, seguire le istruzioni descritte in questo articolo per risolvere il problema.
+Se viene visualizzato il messaggio "Ricaricamento rapido disponibile" sulla barra degli strumenti in-app durante il debug dell'app, seguire le istruzioni descritte in questo articolo per risolvere il problema.
 
-## <a name="verify-that-xaml-hot-reload-is-enabled"></a>Verificare che sia abilitato il ricaricamento a caldo di XAML
+## <a name="verify-that-xaml-hot-reload-is-enabled"></a>Verificare che la Ricaricamento rapido XAML sia abilitata
 
-La funzionalità è abilitata per impostazione predefinita. Quando si avvia il debug dell'app, assicurarsi che venga visualizzata la barra degli strumenti in-app, che conferma che è disponibile il ricaricamento a caldo di XAML:
+La funzionalità è abilitata per impostazione predefinita. Quando si avvia il debug dell'app, assicurarsi di visualizzare la barra degli strumenti in-app, che conferma che Ricaricamento rapido XAML è disponibile:
 
-![Ricaricamento a caldo di XAML disponibile](../debugger/media/xaml-hot-reload-available.png)
+![Ricaricamento rapido XAML disponibili](../debugger/media/xaml-hot-reload-available.png)
 
-Se la barra degli strumenti in-app non è visibile, aprire Opzioni di **debug**  >    >  **generale**. Assicurarsi che siano selezionate entrambe le opzioni, **Abilita strumenti di debug dell'interfaccia utente per XAML** e **Abilita ricaricamento a caldo XAML** .
+Se la barra degli strumenti in-app non è visualizzata, aprire **Opzioni di debug**  >    >  **Generale**. Assicurarsi che entrambe le opzioni, **Abilita strumenti di debug dell'interfaccia utente per XAML** e **Abilita** Ricaricamento rapido XAML selezionate.
 
-![Screenshot della finestra opzioni di debug di Visual Studio. Sono selezionate le opzioni generali per il debug e l'opzione Abilita ricaricamento a caldo XAML è selezionata.](../debugger/media/xaml-hot-reload-enable.png)
+![Screenshot della finestra Visual Studio Opzioni di debug. Le opzioni Di debug generale sono selezionate e l'opzione Ricaricamento rapido XAML selezionata.](../debugger/media/xaml-hot-reload-enable.png)
 
-Se queste opzioni sono selezionate, passare a albero elementi visivi attivi (**debug**  >    >  **albero elementi visivi** di Windows Live) e assicurarsi che **Mostra strumenti di runtime nel pulsante della** barra degli strumenti dell'applicazione (all'estrema sinistra) sia selezionata.
+Se queste opzioni sono selezionate, passare alla struttura ad albero visuale live **(** Debug Windows Live Visual Tree ) e assicurarsi che il pulsante Mostra strumenti di runtime nella barra degli strumenti dell'applicazione (all'estrema sinistra) sia  >    >  selezionato. 
 
-![Screenshot della barra degli strumenti nella parte superiore della finestra albero elementi visivi attivi con il pulsante ' Mostra strumenti di runtime nell'applicazione ' selezionato.](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
+![Screenshot della barra degli strumenti nella parte superiore della finestra Albero visuale live con il pulsante "Mostra strumenti di runtime nell'applicazione" selezionato.](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
-## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Verificare di usare Avvia debug anziché Connetti a processo
+## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Verificare di usare Avvia debug anziché Collega a processo
 
-Il ricaricamento a caldo di XAML richiede che la variabile `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` di ambiente sia impostata su 1 al momento dell'avvio dell'applicazione. Visual Studio imposta questa impostazione automaticamente come parte del comando **debug**  >  **Avvia debug** (o **F5**). Se invece si vuole usare il ricaricamento a caldo di XAML con il comando **debug**  >  **Connetti a processo** , impostare manualmente la variabile di ambiente.
+Ricaricamento rapido XAML richiede che la variabile di `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` ambiente sia impostata su 1 al momento dell'avvio dell'applicazione. Visual Studio imposta automaticamente come parte del **comando Debug**  >  **Avvia** debug **(o F5).** Se invece si vuole usare Ricaricamento rapido XAML con il **comando Esegui** debug connessione  >  **a** processo, impostare la variabile di ambiente manualmente.
 
 > [!NOTE]
-> Per impostare una variabile di ambiente, usare il pulsante Start per cercare "variabile di ambiente" e scegliere **modifica le variabili di ambiente di sistema**. Nella finestra di dialogo visualizzata scegliere variabili di **ambiente**, quindi aggiungerla come variabile utente e impostare il valore su `1` . Per eseguire la pulizia, rimuovere la variabile al termine del debug.
+> Per impostare una variabile di ambiente, usare il pulsante Start per cercare "variabile di ambiente" e scegliere **Modifica le variabili di ambiente di sistema**. Nella finestra di dialogo visualizzata scegliere **Variabili di** ambiente , quindi aggiungerla come variabile utente e impostare il valore su `1` . Per eseguire la pulizia, rimuovere la variabile al termine del debug.
 
-## <a name="verify-that-your-msbuild-properties-are-correct"></a>Verificare che le proprietà di MSBuild siano corrette
+## <a name="verify-that-your-msbuild-properties-are-correct"></a>Verificare che le MSBuild siano corrette
 
-Per impostazione predefinita, le informazioni sull'origine sono incluse in una configurazione di debug. Viene controllata dalle proprietà di MSBuild nei file di progetto, ad esempio *. csproj. Per WPF, la proprietà è `XamlDebuggingInformation` , che deve essere impostata su `True` . Per UWP, la proprietà è `DisableXbfLineInfo` , che deve essere impostata su `False` . Ad esempio:
+Per impostazione predefinita, le informazioni di origine sono incluse in una configurazione di debug. È controllato dalle proprietà MSBuild nei file di progetto, ad esempio *.csproj. Per WPF, la proprietà è `XamlDebuggingInformation` , che deve essere impostata su `True` . Per la UWP, la proprietà è `DisableXbfLineInfo` , che deve essere impostata su `False` . Esempio:
 
 WPF:
 
 `<XamlDebuggingInformation>True</XamlDebuggingInformation>`
 
-UWP
+Uwp:
 
 `<DisableXbfLineInfo>False</DisableXbfLineInfo>`
 
-## <a name="verify-that-you-are-using-the-correct-build-configuration-name"></a>Verificare che sia in uso il nome della configurazione di compilazione corretta
+## <a name="verify-that-you-are-using-the-correct-build-configuration-name"></a>Verificare di usare il nome della configurazione di compilazione corretto
 
-È necessario impostare manualmente la proprietà MSBuild corretta per supportare il ricaricamento a caldo di XAML (vedere la sezione precedente) oppure è necessario utilizzare il nome predefinito della configurazione di compilazione (debug). Se la proprietà MSBuild non viene impostata correttamente, il nome di una configurazione di compilazione personalizzata non funzionerà né una build di rilascio.
+È necessario impostare manualmente la proprietà MSBuild per supportare Ricaricamento rapido XAML (vedere la sezione precedente) oppure usare il nome della configurazione di compilazione predefinito (Debug). Se non si imposta correttamente la proprietà MSBuild, un nome di configurazione di compilazione personalizzato non funzionerà né una build di versione.
 
-## <a name="verify-that-your-xaml-file-has-no-errors"></a>Verificare che nel file XAML non siano presenti errori
+## <a name="verify-that-your-xaml-file-has-no-errors"></a>Verificare che il file XAML non abbia errori
 
-Se il file XAML Mostra errori nel **Elenco errori**, il ricaricamento a caldo di XAML potrebbe non funzionare.
+Se il file XAML mostra errori **nell'Elenco errori,** Ricaricamento rapido XAML potrebbe non funzionare.
 
 ## <a name="see-also"></a>Vedi anche
 
-[Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento attivo XAML](xaml-hot-reload.md)
+[Scrivere ed eseguire il debug del codice XAML in esecuzione con Ricaricamento rapido XAML](xaml-hot-reload.md)

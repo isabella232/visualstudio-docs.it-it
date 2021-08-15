@@ -1,6 +1,6 @@
 ---
-title: Non è stato possibile recuperare le informazioni sullo schema
-description: Impossibile recuperare le informazioni sullo schema per l'oggetto di database. Visualizza le informazioni su questo messaggio di Object Relational Designer di Visual Studio (O/R Designer).
+title: Impossibile recuperare le informazioni sullo schema
+description: Impossibile recuperare le informazioni sullo schema per l'oggetto di database. Visualizzare informazioni su questo Visual Studio Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -8,14 +8,15 @@ ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b4b285c98eba118a6e87513cf71bed6ce9b35d11
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51bb3eebf28792b5a46d6ab666c7101af0f4f89da2cb59f0417b37cc635d38d8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859151"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347740"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<object name>
 
@@ -23,4 +24,4 @@ Questo messaggio viene visualizzato in genere quando un oggetto in **Esplora ser
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL strumenti in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,6 +1,6 @@
 ---
 title: Tempo di esecuzione (Visualizzazione thread) | Microsoft Docs
-description: Esaminare il tempo di esecuzione nella visualizzazione thread del Visualizzatore di concorrenza. Il tempo di esecuzione è rappresentato da segmenti che mostrano quando un thread lavora attivamente su un core logico.
+description: Esaminare il tempo di esecuzione nella visualizzazione Thread del visualizzatore di concorrenza. Il tempo di esecuzione è rappresentato da segmenti che indicano quando un thread funziona attivamente su un core logico.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c62c57e3037b38c2729917d2b882550b9c2d126
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 871f3ce7b2be50ddaff7c3723469ea34921855cfacb649416fe3bcb63d69e06e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861608"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121355282"
 ---
 # <a name="execution-time-threads-view"></a>Tempo di esecuzione (visualizzazione Thread)
 Questi segmenti nella sequenza temporale della visualizzazione thread rappresentano il tempo di esecuzione, quando il thread è in esecuzione su un core logico nel sistema.

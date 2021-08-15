@@ -1,22 +1,23 @@
 ---
 title: Eseguire il refactoring del codice per sostituire var con un tipo esplicito
-description: Informazioni su come usare le azioni rapide per sostituire var in un'espressione di variabile locale con un tipo esplicito.
+description: Informazioni su come usare azioni rapide per sostituire var in un'espressione di variabile locale con un tipo esplicito.
 ms.custom: SEO-VS-2020
 ms.date: 05/15/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d45d4ffcbdedb456bde40b3fd1103fa8b21a8f9b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01eb6dbe8308520235e03f5c10662fdea7933a0912c708b9030b4b7a28c9bb15
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919585"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429973"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refactoring per sostituire var con un tipo esplicito
 
@@ -40,7 +41,7 @@ Tuttavia, [var](/dotnet/csharp/language-reference/keywords/var) deve essere usat
 
 1. Posizionare il cursore sulla parola chiave `var`.
 
-1. Premere **CTRL** + **.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
+1. Premere  + **CTRL.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
 
    ![Menu delle azioni rapide Usare un tipo esplicito](media/use-explicit-type.png)
 
