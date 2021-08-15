@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Elencare a livello di codice i file delle cartelle di lavoro usati di recente'
-description: Informazioni su come elencare a livello di codice i file delle cartelle di lavoro di Microsoft Excel usati di recente usando Visual Studio.
+description: Informazioni su come elencare i file della cartella di lavoro usati di Microsoft Excel a livello di codice usando Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,17 +16,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ba7ca717af4330e8fb3c102b3a5fe5bf7d9162b6
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 738340efbdc7f266ae8da5ed10363858df970f7175507ddf73e4c5ec5097a4ec
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825329"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351837"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Procedura: Elencare a livello di codice i file delle cartelle di lavoro usati di recente
-  La proprietà restituisce una raccolta che contiene i nomi di tutti i file visualizzati nell'elenco Microsoft Office <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> excel dei file usati di recente. La lunghezza dell'elenco varia a seconda del numero di file che l'utente ha selezionato per la conservazione. È possibile visualizzare i risultati in un intervallo.
+  La proprietà restituisce una raccolta che contiene i nomi di tutti i file visualizzati nell'elenco Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> di file usati di recente. La lunghezza dell'elenco varia a seconda del numero di file che l'utente ha selezionato per la conservazione. È possibile visualizzare i risultati in un intervallo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 

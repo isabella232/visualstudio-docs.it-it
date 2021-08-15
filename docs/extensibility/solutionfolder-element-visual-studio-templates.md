@@ -1,6 +1,6 @@
 ---
-title: Elemento SolutionFolder (modelli di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento SolutionFolder e sul modo in cui raggruppa i progetti in modelli multiprogetto.
+title: Elemento SolutionFolder (modelli Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento SolutionFolder e sul modo in cui raggruppa i progetti in modelli multi-progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f65607a5411270e7f21e6ec6cdac0c087824b32b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c8865456b5b25b2f65a839bd947f558e803803533c7aa58f51f6bf01aa0a679
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056337"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121273604"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>Elemento SolutionFolder (modelli di Visual Studio)
 Raggruppa i progetti in modelli multiprogetto.
@@ -62,7 +62,7 @@ Raggruppa i progetti in modelli multiprogetto.
 |`SolutionFolder`|Raggruppa i progetti in modelli multiprogetto.|
 
 ## <a name="remarks"></a>Commenti
- I modelli multiprogetto fungono da contenitori per due o più progetti. L'elemento `SolutionFolder` viene usato per organizzare i progetti in gruppi all'interno del modello. Le cartelle specificate dagli elementi `SolutionFolder` vengono create come cartelle della soluzione nel progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni sui modelli multiprogetto, vedere [procedura: creare modelli](../ide/how-to-create-multi-project-templates.md)per più progetti.
+ I modelli multiprogetto fungono da contenitori per due o più progetti. L'elemento `SolutionFolder` viene usato per organizzare i progetti in gruppi all'interno del modello. Le cartelle specificate dagli elementi `SolutionFolder` vengono create come cartelle della soluzione nel progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni sui modelli multi-progetto, vedere Procedura: Creare modelli [multi-Project multi-progetto](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Esempio
  Questo esempio usa l'elemento `SolutionFolder` per dividere il modello multiprogetto in due gruppi, `Math Classes` e `Graphics Classes`. Il modello contiene quattro progetti, due dei quali vengono inseriti in ogni cartella della soluzione.

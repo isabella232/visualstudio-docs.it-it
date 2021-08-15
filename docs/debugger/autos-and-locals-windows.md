@@ -14,27 +14,28 @@ ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f1378f87ff8717b9bc9d9125b03c1b28c5007f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 536a14065a86541e7748858f64229c5c5a0ab04f63c3d4f10025e68747ffec49
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389800"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346325"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Esaminare le variabili nelle finestre Auto e Variabili locali
 
 Le **finestre Auto e** Variabili locali mostrano **i** valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. La **finestra Auto mostra** le variabili usate intorno al punto di interruzione corrente. La **finestra Variabili** locali mostra le variabili definite nell'ambito locale, che in genere è la funzione o il metodo corrente.
 
 > [!NOTE]
-> Se è la prima volta che si prova a eseguire [](../debugger/debugging-absolute-beginners.md) il debug del codice, è possibile leggere Debug per principianti assoluti e tecniche e strumenti di debug prima di passare a questo articolo. [](../debugger/write-better-code-with-visual-studio.md)
+> Se è la prima volta che si prova a eseguire [](../debugger/debugging-absolute-beginners.md) il debug del codice, è possibile leggere Debug per principianti assoluti e Tecniche e strumenti di debug prima di passare a questo articolo. [](../debugger/write-better-code-with-visual-studio.md)
 
  La **finestra Auto è** disponibile per il codice C#, Visual Basic, C++ e Python, ma non per JavaScript o F#.
 
-Per aprire la **finestra Auto durante** il debug, selezionare **Debug**  >  **auto**  >  **windows** oppure premere **CTRL** +  + **ALT+V**  >  **A.**
+Per aprire la **finestra Auto durante** il debug, selezionare Debug   >  **Windows**  >  **Auto o** premere **CTRL** +  +   >  **ALT+A.**
 
-Per aprire la **finestra Variabili** locali durante il debug, selezionare **Debug** variabili locali  >  **di Windows** oppure premere  >    + **ALT+4.**
+Per aprire la **finestra Variabili** locali durante il debug, selezionare Debug Windows Variabili locali  >    >  oppure **premere** + **ALT+4.**
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations).
@@ -45,7 +46,7 @@ Le matrici e gli oggetti vengono visualizzati **nelle finestre Auto e** **Variab
 
 ![Screenshot della finestra Variabili locali, con il file impostato su un valore System.IO.FileStream.](../debugger/media/locals-filestream.png)
 
-Un valore rosso nella **finestra Variabili locali** o Auto **indica** che il valore è stato modificato dopo l'ultima valutazione. La modifica potrebbe essere stata apportata da una sessione di debug precedente o perché il valore nella finestra è stato modificato.
+Un valore rosso nella **finestra Variabili locali** o Auto **indica** che il valore è stato modificato dopo l'ultima valutazione. La modifica potrebbe essere da una sessione di debug precedente o perché il valore nella finestra è stato modificato.
 
 Il formato numerico predefinito nelle finestre del debugger è decimale. Per impostarlo su esadecimale, fare clic  con il pulsante destro del mouse nella finestra Variabili locali o Auto **e** selezionare **Visualizzazione esadecimale**. Questa modifica influisce su tutte le finestre del debugger.
 
@@ -73,7 +74,7 @@ Usare rispettivamente le frecce sinistra e destra (MAIUSC+F3 e F3) per spostarsi
 
 ![Cerca nella finestra Variabili locali](../debugger/media/ee-search-locals.png "Cerca nella finestra Variabili locali")
 
-Per rendere la ricerca più o  meno completa, usare l'elenco  a discesa Cerca più in profondità nella parte superiore della finestra Auto **o** Variabili locali per selezionare il numero di livelli di profondità in cui si vuole eseguire la ricerca negli oggetti annidati. 
+Per rendere la ricerca più o  meno completa, usare l'elenco  a discesa Cerca più in profondità nella parte superiore della finestra Auto **o** Variabili locali per selezionare il numero di livelli di profondità in cui eseguire la ricerca negli oggetti annidati. 
 
 ## <a name="pin-properties-in-the-autos-or-locals-window"></a>Aggiungere le proprietà nella finestra Auto o Variabili locali
 
@@ -93,15 +94,15 @@ Per rendere la ricerca più o  meno completa, usare l'elenco  a discesa Cerca pi
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Modificare il contesto per la finestra Auto o Variabili locali
 
-È possibile usare la barra **degli** strumenti Percorso di debug per selezionare una funzione, un thread o un processo desiderato, che modifica il contesto per le **finestre** Auto **e** Variabili locali.
+È possibile usare la barra **degli** strumenti Posizione di debug per selezionare una funzione, un thread o un processo desiderato, che modifica il contesto per le **finestre** Auto **e** Variabili locali.
 
-Per abilitare la barra **degli strumenti Percorso** di debug, fare clic in una parte vuota dell'area della barra degli strumenti e selezionare **Percorso** di debug nell'elenco a discesa oppure selezionare **Visualizza** barre degli strumenti Percorso  >    >  **di debug**.
+Per abilitare la barra **degli strumenti Percorso** di debug, fare clic in una parte vuota dell'area della barra degli strumenti e selezionare **Percorso** di debug nell'elenco a discesa oppure selezionare **Visualizza** barre degli strumenti Posizione  >    >  **di debug**.
 
-Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il punto di interruzione, l'esecuzione viene sospesa ed è possibile visualizzare il percorso nella barra **degli strumenti Percorso di** debug.
+Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il punto di interruzione, l'esecuzione viene sospesa ed è possibile visualizzare il percorso nella barra **degli strumenti Posizione di** debug.
 
 ![Barra degli strumenti Percorso di debug](../debugger/media/debuglocationtoolbar.png "Barra degli strumenti Posizione di debug")
 
-## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a> Variabili nella finestra Auto (C#, C++, Visual Basic, Python)
+## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a>Variabili nella finestra Auto (C#, C++, Visual Basic, Python)
 
 Linguaggi di codice diversi visualizzano variabili diverse nella **finestra Auto.**
 
@@ -118,13 +119,13 @@ Linguaggi di codice diversi visualizzano variabili diverse nella **finestra Auto
        }
    ```
 
-   Impostare un punto di interruzione sulla `c = 3;` riga e avviare il debugger. Quando l'esecuzione viene sospesa, **viene visualizzata la finestra** Auto:
+   Impostare un punto di interruzione sulla `c = 3;` riga e avviare il debugger. Quando l'esecuzione viene sospesa, **verrà visualizzata la finestra** Auto:
 
    ![Screenshot della finestra Auto, con il valore c impostato su 0.](../debugger/media/autos-csharp.png)
 
    Il valore di `c` è 0, perché la riga `c = 3` non è ancora stata eseguita.
 
-- In C++ la finestra **Auto visualizza** le variabili usate in almeno tre righe prima della riga corrente in cui l'esecuzione viene sospesa. Nel codice C++, ad esempio, dichiarare sei variabili:
+- In C++ la **finestra Auto visualizza** le variabili usate in almeno tre righe prima della riga corrente in cui l'esecuzione viene sospesa. Nel codice C++, ad esempio, dichiarare sei variabili:
 
    ```C++
        void main() {
@@ -140,7 +141,7 @@ Linguaggi di codice diversi visualizzano variabili diverse nella **finestra Auto
 
     Impostare un punto di interruzione sulla riga `e = 5;` ed eseguire il debugger. Quando l'esecuzione viene arrestata, **verrà visualizzata la** finestra Auto:
 
-    ![Screenshot della finestra Auto, con la riga evidenziata che mostra int c con il valore 3.](../debugger/media/autos-cplus.png)
+    ![Screenshot della finestra Auto, con la riga evidenziata che mostra int c con valore 3.](../debugger/media/autos-cplus.png)
 
     La variabile `e` non è inizializzata perché la riga `e = 5` non è ancora stata eseguita.
 
@@ -177,7 +178,7 @@ Per visualizzare i valori restituiti delle `sumVars()` chiamate al metodo e nell
 
 1. Avviare il debug e, quando l'esecuzione viene sospesa in corrispondenza del punto di interruzione, selezionare **Step Over** o premere **F10.** Nella finestra Auto dovrebbero essere visualizzati **i valori restituiti** seguenti:
 
-  ![Il valore restituito da Autos C #](../debugger/media/autosreturnvaluecsharp2.png "Il valore restituito da Autos C #")
+  ![Il valore restituito automaticamente C #](../debugger/media/autosreturnvaluecsharp2.png "Il valore restituito automaticamente C #")
 
 ## <a name="see-also"></a>Vedi anche
 

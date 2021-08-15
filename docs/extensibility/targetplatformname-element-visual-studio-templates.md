@@ -1,5 +1,5 @@
 ---
-title: Elemento TargetPlatformName (modelli di Visual Studio) | Microsoft Docs
+title: Elemento TargetPlatformName (modelli Visual Studio) | Microsoft Docs
 description: Informazioni sull'elemento TargetPlatformName e su come specifica la piattaforma di destinazione del modello di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5045a5fc2f29d00c08996fc71acedb228e4f98ae
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0d888b393f669305b03379e0d138ecfa5e75305981a0bec03f53424b95ad6ec0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068401"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358890"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Elemento TargetPlatformName (Modelli di Visual Studio)
 Specifica la piattaforma a cui è destinato il modello di progetto. Questo elemento viene usato per specificare per creare app di [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] viene usato un modello di progetto.
@@ -33,7 +33,7 @@ Specifica la piattaforma a cui è destinato il modello di progetto. Questo eleme
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 

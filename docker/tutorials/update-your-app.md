@@ -1,27 +1,28 @@
 ---
-title: "Esercitazione su Docker - Parte 2: Aggiornare l'app"
+title: "Esercitazione su Docker - Parte 3: Aggiornare l'app"
 description: Descrive come aggiornare un'app Docker.
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-docker
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 43034ff2e65564cc8af2710b796b76996f21f4c8
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 4c974e865479d7b3cf5b3ff06da5a67158a57f13a26005091336880b1b78990e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222773"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121295379"
 ---
 # <a name="update-the-app"></a>Aggiornare l'app
 
-Come richiesta di funzionalità di piccole dimensioni, il team del prodotto ha chiesto di modificare il "testo vuoto" quando non sono presenti elementi dell'elenco attività. Desidera eseguire la transizione a quanto segue:
+Come richiesta di funzionalità di piccole dimensioni, il team del prodotto ha chiesto di modificare il "testo vuoto" quando non sono presenti elementi dell'elenco attività. L'utente vuole eseguire la transizione a quanto segue:
 
 > Non sono ancora presenti elementi todo. Aggiungerne uno sopra.
 
-Piuttosto semplice, giusto? Apportare la modifica.
+È piuttosto semplice, vero? Apportare la modifica.
 
 ## <a name="update-the-source-code"></a>Aggiornare il codice sorgente
 
@@ -51,13 +52,13 @@ docker: Error response from daemon: driver failed programming external connectiv
 (bb242b2ca4d67eba76e79474fb36bb5125708ebdabd7f45c8eaf16caaabde9dd): Bind for 0.0.0.0:3000 failed: port is already allocated.
 ```
 
-Che cosa è successo? Impossibile avviare il nuovo contenitore, perché il contenitore precedente è ancora in esecuzione. Questo è un problema perché il contenitore usa la porta 3000 dell'host e solo un processo nel computer (contenitori inclusi) può restare in ascolto su una porta specifica. Per risolvere il problema, rimuovere il contenitore precedente.
+Che cosa è successo? Non è stato possibile avviare il nuovo contenitore perché il contenitore precedente è ancora in esecuzione. Questo è un problema perché il contenitore usa la porta 3000 dell'host e un solo processo nel computer (contenitori inclusi) può restare in ascolto su una porta specifica. Per risolvere il problema, rimuovere il contenitore precedente.
 
 ## <a name="replace-the-old-container"></a>Sostituire il contenitore precedente
 
-Per rimuovere un contenitore, è prima necessario fermarlo. Dopo l'arresto, può essere rimosso. È possibile rimuovere il contenitore precedente in due modi. È possibile scegliere il percorso con cui si è più a proprio agio.
+Per rimuovere un contenitore, è prima necessario che sia arrestato. Una volta arrestata, può essere rimossa. È possibile rimuovere il contenitore precedente in due modi. È possibile scegliere il percorso con cui si ha maggiore familiarità.
 
-### <a name="remove-a-container-using-the-cli"></a>Rimuovere un contenitore tramite l'interfaccia della riga di comando
+### <a name="remove-a-container-using-the-cli"></a>Rimuovere un contenitore usando l'interfaccia della riga di comando
 
 1. Ottenere l'ID del contenitore usando il `docker ps` comando .
 
@@ -83,13 +84,13 @@ Per rimuovere un contenitore, è prima necessario fermarlo. Dopo l'arresto, può
 
 ### <a name="remove-a-container-using-the-docker-view"></a>Rimuovere un contenitore usando la visualizzazione Docker
 
-Se si apre l'estensione VS Code, è possibile rimuovere un contenitore con due clic. È sicuramente molto più semplice che dover cercare l'ID contenitore e rimuoverlo.
+Se si apre l'VS Code, è possibile rimuovere un contenitore con due clic. È certamente molto più semplice che dover cercare l'ID contenitore e rimuoverlo.
 
 1. Con l'estensione aperta, passare al contenitore e fare clic con il pulsante destro del mouse.
 
 1. Fare clic **sull'opzione** Rimuovi.
 
-1. Confermare la rimozione e il processo è stato eseguito.
+1. Confermare la rimozione e l'operazione è stata completata.
 
 ![Visualizzazione Docker: rimozione di un contenitore](media/vs-removing-container.png)
 
@@ -101,7 +102,7 @@ Se si apre l'estensione VS Code, è possibile rimuovere un contenitore con due c
     docker run -dp 3000:3000 getting-started
     ```
 
-1. Aggiornare il browser in [http://localhost:3000](http://localhost:3000) e verrà visualizzato il testo della Guida aggiornato.
+1. Aggiornare il browser per [http://localhost:3000](http://localhost:3000) visualizzare il testo della Guida aggiornato.
 
 ![Applicazione aggiornata con testo vuoto aggiornato](media/todo-list-updated-empty-text.png)
 
@@ -109,10 +110,10 @@ Se si apre l'estensione VS Code, è possibile rimuovere un contenitore con due c
 
 Anche se è stato possibile compilare un aggiornamento, è possibile notare due aspetti:
 
-- Tutti gli elementi esistenti nell'elenco attività non sono più disponibili. Non si tratta di un'app molto buona. A breve ne parleremo.
-- Per una *modifica* così piccola sono stati necessari molti passaggi. In una sezione futura si apprenderà come visualizzare gli aggiornamenti del codice senza dover ricompilare e avviare un nuovo contenitore ogni volta che si apporta una modifica.
+- Tutti gli elementi esistenti nell'elenco attività non sono più presenti. Non si tratta di un'app molto utile. Ne parleremo a breve.
+- Sono stati *necessari molti* passaggi per una modifica così piccola. In una sezione successiva si apprenderà come visualizzare gli aggiornamenti del codice senza dover ricompilare e avviare un nuovo contenitore ogni volta che si apporta una modifica.
 
-Prima di conoscere la persistenza, si apprende come condividere queste immagini con altri utenti.
+Prima di imparare a conoscere la persistenza, si apprende rapidamente come condividere queste immagini con altri utenti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

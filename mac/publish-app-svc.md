@@ -1,6 +1,6 @@
 ---
 title: Eseguire la pubblicazione nel servizio app di Azure
-description: Come pubblicare un'applicazione Web utilizzando gli strumenti di pubblicazione in Visual Studio per Mac.
+description: Come pubblicare un'applicazione Web usando gli strumenti di pubblicazione in Visual Studio per Mac.
 ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
@@ -13,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 89ef1be831db8383a960d480ac8dceffa7e8f1460708c37e4764d9533876c2d9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493426"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121349412"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Pubblicare un'app Web in Servizio app di Azure usando Visual Studio per Mac
 
@@ -32,7 +32,7 @@ ms.locfileid: "94493426"
 
 ## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 
- 1. Nella finestra della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **pubblica**.
+ 1. Nella finestra della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 
     ![Menu di scelta rapida per la pubblicazione](media/publish-context-menu.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "94493426"
 
     Per creare il nuovo servizio app e pubblicarvi il progetto, fare clic su **Crea**.
 
-    Dopo aver fatto clic su **Crea** , la finestra di dialogo **Nuovo servizio app** viene chiusa e viene visualizzato il messaggio seguente che indica che la creazione del servizio app è stata avviata.
+    Dopo aver fatto clic su **Crea**, la finestra di dialogo **Nuovo servizio app** viene chiusa e viene visualizzato il messaggio seguente che indica che la creazione del servizio app è stata avviata.
 
       ![Messaggio di creazione del servizio app](media/publish-create-app-service-message.png)
 

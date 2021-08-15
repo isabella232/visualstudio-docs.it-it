@@ -1,6 +1,6 @@
 ---
 title: Presentazione dell'IDE di Visual Studio
-description: Informazioni su Visual Studio Integrated Development Environment (IDE), tra cui le finestre, i menu e altre funzionalità dell'interfaccia utente usate più di frequente.
+description: Informazioni sull'Visual Studio di sviluppo integrato (IDE), incluse le finestre, i menu e altre funzionalità dell'interfaccia utente usate più di frequente.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/05/2019
@@ -8,14 +8,15 @@ ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dd480bb214acf2529d271d085711f21effea23a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0801f2748a94aac09faa56148340796baf19e30e99706ea5faf007d13aef9401
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952928"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121398934"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Presentazione dell'IDE di Visual Studio
 
@@ -23,13 +24,13 @@ In questa introduzione della durata di 5-10 minuti all'ambiente di sviluppo inte
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -39,7 +40,7 @@ Se Visual Studio non è ancora installato, passare alla pagina dei [download di 
 
 All'avvio di Visual Studio viene visualizzata la finestra iniziale. La finestra iniziale consente di iniziare a lavorare con il codice più velocemente. Contiene opzioni per chiudere o estrarre il codice, aprire un progetto o una soluzione esistente, creare un nuovo progetto o semplicemente aprire una cartella contenente alcuni file di codice.
 
-[![La finestra di avvio in Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
+[![Finestra iniziale in Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Se è la prima volta che si usa Visual Studio, l'elenco dei progetti recenti sarà vuoto.
 
@@ -53,11 +54,11 @@ L'opzione **Continua senza codice** apre semplicemente l'ambiente di sviluppo di
 
 ## <a name="start-page"></a>Pagina iniziale
 
-Il primo elemento visualizzato dopo l'avvio di Visual Studio è molto probabilmente la **pagina iniziale**. La **pagina iniziale** è progettata come "hub" per semplificare la ricerca dei comandi e dei file di progetto necessari più velocemente. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
+La prima cosa che verrà visualizzata dopo l'avvio Visual Studio è molto probabilmente la **pagina iniziale**. La **pagina iniziale** è progettata come "hub" per consentire di trovare più rapidamente i comandi e i file di progetto necessari. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
 
 ![Pagina iniziale di Visual Studio](media/start-page.png)
 
-Se si chiude la **pagina iniziale** e si vuole visualizzarla di nuovo, è possibile riaprirla dal menu **file** .
+Se si chiude la **pagina iniziale** e si vuole visualizzare di nuovo la pagina, è possibile riaprirla dal menu **File.**
 
 ![Menu File di Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
@@ -92,7 +93,7 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 1. Nella finestra di dialogo **Nuovo progetto** visualizzata accettare il nome di progetto predefinito e scegliere **OK**.
 ::: moniker-end
 
-   Il progetto viene creato e un file denominato *server.js* viene aperto nella finestra dell' **Editor** . L' **Editor** Mostra il contenuto dei file ed è la posizione in cui verrà eseguita la maggior parte delle operazioni di scrittura del codice in Visual Studio.
+   Il progetto viene creato e viene aperto *server.js* file denominato nella **finestra Editor.** **L'editor** mostra il contenuto dei file ed è la posizione in cui si eservirà la maggior parte del lavoro di scrittura del codice Visual Studio.
 
    ![Editor di Visual Studio](media/editor.png)
 
@@ -108,11 +109,11 @@ La barra dei menu nella parte superiore di Visual Studio raggruppa i comandi in 
 
 ![Barra dei menu di Visual Studio](media/quickstart-IDE-menu-bar.png)
 
-Aprire la finestra di **Elenco errori** scegliendo il menu **visualizza** , quindi **Elenco errori**.
+Aprire la finestra **Elenco errori** scegliendo il menu **Visualizza** e quindi Elenco **errori**.
 
 ## <a name="error-list"></a>Elenco errori
 
-Il **Elenco errori** Mostra gli errori, gli avvisi e i messaggi relativi allo stato corrente del codice. Se il file o il progetto in uso contiene errori, ad esempio una parentesi o un punto e virgola mancante, verranno elencati in questa posizione.
+**L'Elenco** errori mostra errori, avvisi e messaggi relativi allo stato corrente del codice. Se il file o il progetto in uso contiene errori, ad esempio una parentesi o un punto e virgola mancante, verranno elencati in questa posizione.
 
 ![Elenco errori in Visual Studio](media/quickstart-IDE-error-list.png)
 
@@ -120,7 +121,7 @@ Il **Elenco errori** Mostra gli errori, gli avvisi e i messaggi relativi allo st
 
 Nella finestra **Output** vengono visualizzati i messaggi di output generati dalla compilazione del progetto e dal provider di controllo del codice sorgente.
 
-Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione** dal menu **Compila** . La finestra di **output** ottiene automaticamente lo stato attivo e visualizza un messaggio di compilazione riuscito.
+Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila** soluzione dal menu **Compila**. La **finestra Output** ottiene automaticamente lo stato attivo e visualizza un messaggio di compilazione riuscita.
 
 ![Finestra Output di Visual Studio](media/build-output-minimal.png)
 
@@ -138,7 +139,7 @@ La casella di ricerca è un modo rapido e semplice per eseguire pressoché quals
 
 1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **NodejsWebApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la finestra di **output** Mostra una registrazione più dettagliata del processo di compilazione, inclusi i file copiati dove.
+   Questa volta la **finestra Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
 
    ![Output di compilazione dettagliato in Visual Studio](media/build-output-verbose.png)
 

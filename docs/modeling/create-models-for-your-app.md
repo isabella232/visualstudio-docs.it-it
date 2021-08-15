@@ -21,20 +21,21 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: a4642c73279340c710ed82d57563bdc3b84aff4f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: b9dd7f96304707f00d5301f33c5c390626009bf50b0108f0127a76dc3eb68bfc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389514"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271602"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 
 I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le idee sul codice e i requisiti dell'utente che devono supportare il sistema software.
 
-Per vedere quali versioni di Visual Studio supportano ogni tipo di diagramma, vedere Supporto delle versioni per gli strumenti di [architettura e modellazione.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
+Per vedere quali versioni di Visual Studio supportano ogni tipo di diagramma, vedere Supporto della versione per gli strumenti di architettura [e modellazione](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 Per visualizzare l'architettura di un sistema o codice esistente, creare i diagrammi seguenti:
 
@@ -48,7 +49,7 @@ Per visualizzare l'architettura di un sistema o codice esistente, creare i diagr
 
 |**Argomento**|**Attività**|
 |-|-|
-|[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe codice e diagrammi delle dipendenze per comprendere meglio il codice non familiare.|
+|[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe del codice e diagrammi delle dipendenze per comprendere meglio il codice sconosciuto.|
 |[Modellare i requisiti utente](../modeling/model-user-requirements.md)|Usare modelli per chiarire e comunicare le esigenze degli utenti.|
 |[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|Usare i modelli per descrivere la struttura complessiva e il comportamento del sistema e per verificare che soddisfi esigenze degli utenti.|
 |[Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)|Verificare che il software continui a essere coerente con le esigenze degli utenti e con l'architettura complessiva del sistema.|
@@ -57,5 +58,5 @@ Per visualizzare l'architettura di un sistema o codice esistente, creare i diagr
 
 ## <a name="resources"></a>Risorse
 
-- [Visual Studio forum degli strumenti & di modellazione della visualizzazione](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
-- [Visual Studio forum sull'estendibilità](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)
+- [Visual Studio Forum & Strumenti di modellazione per la visualizzazione](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
+- [Visual Studio Forum sull'estendibilità](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

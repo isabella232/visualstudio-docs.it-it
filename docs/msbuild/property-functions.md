@@ -1,6 +1,6 @@
 ---
 title: Funzioni di proprietà | Microsoft Docs
-description: Informazioni su come usare le funzioni di proprietà, che sono chiamate .NET Framework metodi visualizzati nelle definizioni MSBuild proprietà.
+description: Informazioni su come usare le funzioni di proprietà, ovvero chiamate .NET Framework metodi visualizzati nelle definizioni MSBuild proprietà.
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a47ff76c98c5788fdfca3d633c87664b6802de70
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 1044391e744f1c636965c687a674fc778034ab15085eabba94436a1924cdfd56
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222955"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121355893"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
@@ -177,7 +178,7 @@ Di seguito è riportato un elenco di funzioni di proprietà MSBuild:
 |string NormalizeDirectory(params string[] path)|Ottiene il percorso completo in forma canonica della directory specificata e garantisce che contenga i separatori di directory corretti per il sistema operativo corrente e una barra rovesciata finale.|
 |string EnsureTrailingSlash(string path)|Se il percorso specificato non dispone di una barra rovesciata, la aggiunge al percorso. Se il percorso è una stringa vuota non lo modifica.|
 |string GetPathOfFileAbove(string file, string startingDirectory)|Cerca e restituisce il percorso completo di un file nella struttura di directory sopra il percorso del file di compilazione corrente o in base a `startingDirectory` , se specificato.|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Individuare e restituire la directory di un file nella directory specificata o in un percorso nella struttura di directory sopra tale directory.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Individuare e restituire la directory di un file nella directory specificata o in un percorso nella struttura di directory al di sopra di tale directory.|
 |string MakeRelative(string basePath, string path)|Rende `path` relativo a `basePath`. `basePath` deve essere una directory assoluta. Se `path` non può essere reso relativo, viene restituito letteralmente. Simile a `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Restituisce la stringa nel parametro 'defaultValue' solo se il parametro 'conditionValue' è vuoto. In caso contrario, restituisce il valore conditionValue.|
 
@@ -231,7 +232,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>GetPathOfFileAbove di MSBuild
 
-La funzione di proprietà in MSBuild restituisce il percorso del file specificato, se si trova nella `GetPathOfFileAbove` struttura di directory sopra la directory corrente. Dal punto di vista funzionale è equivalente alla chiamata
+La funzione di proprietà MSBuild restituisce il percorso del file specificato, se si trova nella struttura di `GetPathOfFileAbove` directory sopra la directory corrente. Dal punto di vista funzionale è equivalente alla chiamata
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -283,7 +284,7 @@ Di seguito è riportato un esempio.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-ottiene i **dati SLRuntimeInstallPath** della chiave **ReferenceAssemblies,** cercando prima nella vista del Registro di sistema a 64 bit e quindi nella visualizzazione del Registro di sistema a 32 bit.
+ottiene i **dati SLRuntimeInstallPath** della chiave **ReferenceAssemblies,** esaminando prima nella visualizzazione del Registro di sistema a 64 bit e quindi nella visualizzazione del Registro di sistema a 32 bit.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -346,7 +347,7 @@ Output:
 
 ## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild Funzioni TargetFramework e TargetPlatform
 
-MSBuild 16.7 e versioni successive definiscono diverse funzioni per la gestione delle proprietà [TargetFramework e TargetPlatform](msbuild-target-framework-and-target-platform.md).
+MSBuild 16.7 e versioni successive definiscono diverse funzioni per la gestione [delle proprietà TargetFramework e TargetPlatform](msbuild-target-framework-and-target-platform.md).
 
 |Firma della funzione|Descrizione|
 |------------------------|-----------------|
@@ -387,12 +388,12 @@ Value4 = 7.0
 Value5 = True
 ```
 
-## <a name="msbuild-version-comparison-functions"></a>MSBuild funzioni di confronto delle versioni
+## <a name="msbuild-version-comparison-functions"></a>MSBuild di confronto delle versioni
 
-MSBuild 16.5 e versioni successive definiscono diverse funzioni per confrontare stringhe che rappresentano le versioni.
+MSBuild 16.5 e versioni successive definiscono diverse funzioni per il confronto di stringhe che rappresentano le versioni.
 
 > [!Note]
-> Gli operatori di confronto nelle [condizioni possono confrontare stringhe che possono essere analizzate come oggetti `System.Version` ](msbuild-conditions.md#comparing-versions), ma il confronto può produrre risultati imprevisti. Preferire le funzioni di proprietà.
+> Gli operatori di confronto nelle [condizioni possono confrontare stringhe che possono essere analizzate come `System.Version` oggetti](msbuild-conditions.md#comparing-versions), ma il confronto può produrre risultati imprevisti. Preferisce le funzioni di proprietà.
 
 |Firma della funzione|Descrizione|
 |------------------------|-----------------|
@@ -405,9 +406,9 @@ MSBuild 16.5 e versioni successive definiscono diverse funzioni per confrontare 
 
 In questi metodi le versioni vengono analizzate come <xref:System.Version?displayProperty=fullName> , con le eccezioni seguenti:
 
-* `v` `V` L'interlinea o viene ignorata, che consente il confronto con `$(TargetFrameworkVersion)` .
+* `v`L'iniziale `V` o viene ignorata, che consente il confronto con `$(TargetFrameworkVersion)` .
 
-* Tutti gli elementi dalla prima '-' o '+' alla fine della stringa di versione vengono ignorati. In questo modo è possibile passare versioni semantiche (semver), anche se l'ordine non è uguale a semver. Gli identificatori di versione preliminare e i metadati di compilazione non hanno invece alcun peso di ordinamento. Può essere utile, ad esempio, per attivare una funzionalità per e `>= x.y` attivarla. `x.y.z-pre`
+* Tutti gli elementi dalla prima "-" o "+" alla fine della stringa di versione vengono ignorati. In questo modo è possibile passare versioni semantiche (semver), anche se l'ordine non è uguale a semver. Gli identificatori di versione preliminare e i metadati di compilazione non hanno invece alcun peso di ordinamento. Può essere utile, ad esempio, per attivare una funzionalità per e `>= x.y` attivarla. `x.y.z-pre`
 
 * Le parti non specifiche sono uguali a zero parti di valore. (`x == x.0 == x.0.0 == x.0.0.0`).
 
@@ -424,7 +425,7 @@ In questi metodi le versioni vengono analizzate come <xref:System.Version?displa
 
 Le funzioni `Exists` e non sono funzioni di `HasTrailingSlash` proprietà. Sono disponibili per l'uso con `Condition` l'attributo . Vedere [MSBuild condizioni .](msbuild-conditions.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [proprietà di MSBuild](../msbuild/msbuild-properties.md)
 

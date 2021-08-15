@@ -1,5 +1,5 @@
 ---
-title: Allegato basato sull'avvio | Microsoft Docs
+title: Impostazioni degli allegati basate sull'avvio | Microsoft Docs
 description: Informazioni sull'allegato basato sul lancio a un programma, che è automatico e segue un percorso simile a quello dell'allegato manuale.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,17 +11,18 @@ ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97bbc098e766a1025c372ff35c5849bfe652649f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: d674dd26a8908b26a53bf212692faebdd3e9589af49c9641513c1fb526a9981b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904334"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121324015"
 ---
 # <a name="launch-based-attachment"></a>Allegato basato sull'avvio
-L'allegato basato sul lancio a un programma è automatico. Quando il processo che ospita il programma viene avviato da SDM, l'allegato basato su avvio segue un percorso simile a quello del metodo di collegamento manuale. Per informazioni, vedere [Connettersi al programma](../../extensibility/debugger/attaching-to-the-program.md).
+L'allegato basato sul lancio a un programma è automatico. Quando il processo che ospita il programma viene avviato da SDM, l'allegato basato su avvio segue un percorso simile a quello del metodo di collegamento manuale. Per informazioni, vedere [Connettersi al programma.](../../extensibility/debugger/attaching-to-the-program.md)
 
 ## <a name="the-attaching-process"></a>Processo di collegamento
  La differenza principale è la sequenza di eventi che seguono la **chiamata Attach,** come indicato di seguito:
@@ -34,6 +35,6 @@ L'allegato basato sul lancio a un programma è automatico. Quando il processo ch
 
 4. Inviare un [oggetto evento IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) per notificare a SDM che viene creato un nuovo thread per il processo avviato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Inviare gli eventi necessari](../../extensibility/debugger/sending-the-required-events.md)
 - [Abilitare il debug di un programma](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

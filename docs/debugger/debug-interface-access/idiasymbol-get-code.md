@@ -11,14 +11,15 @@ ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8686a751e13ab24d6150a146578c1d010314cc23
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cee98a59f3d3b3acc05ed1ec33236118ae3743b0ed137468015b0c07ad684223
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161086"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240552"
 ---
 # <a name="idiasymbolget_code"></a>IDiaSymbol::get_code
 Recupera un flag che specifica se il simbolo fa riferimento a un indirizzo di codice.
@@ -34,19 +35,19 @@ HRESULT get_code (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se il simbolo fa riferimento a un indirizzo di codice; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il simbolo fa riferimento a un indirizzo di codice; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedi anche

@@ -1,6 +1,6 @@
 ---
 title: Attività GetFrameworkPath | Microsoft Docs
-description: Informazioni su come usare l'attività GetFrameworkPath di MSBuild per recuperare il percorso degli assembly di .NET Framework.
+description: Informazioni su come usare l MSBuild operazione GetFrameworkPath per recuperare il percorso .NET Framework assembly.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: dea1b70335f7a1cc98bc1ee111ff58d69023c18a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30585cba87e24449ef3e95a43dd97b9bbe9dbceca397e2238ba45883b8a1f05d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914668"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397683"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (attività)
 
@@ -47,9 +48,9 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GetFramewo
 
 ## <a name="remarks"></a>Commenti
 
-Se sono installate diverse versioni del .NET Framework, questa attività restituisce la versione progettata per l'esecuzione di MSBuild.
+Se sono installate diverse versioni .NET Framework, questa attività restituisce la versione in MSBuild è progettata per l'esecuzione.
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 

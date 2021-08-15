@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Modificare il punto pivot di un modello 3D'
-description: Informazioni su come usare l'editor dei modelli per modificare il punto di perno di un modello 3D, ovvero il punto che definisce il centro dell'oggetto per la rotazione e la scalabilità.
+description: Informazioni su come usare l'Editor modelli per modificare il punto pivot di un modello 3D, ovvero il punto che definisce il centro dell'oggetto per la rotazione e il ridimensionamento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,14 +8,15 @@ ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eaa3d671a8c9aeb3ed942e57278160af73dec19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ee504bfb1cc919fd721f66fd3e0141784d7cd7fe3f3d5df27d927ac71a27d98
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930837"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308616"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procedura: Modificare il punto pivot di un modello 3D
 
@@ -27,7 +28,7 @@ Questo articolo illustra come usare l'editor dei modelli per modificare il *punt
 
 Assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
-1. Iniziare con un modello 3D esistente, ad esempio quello descritto in [procedura: creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md).
+1. Iniziare con un modello 3D esistente, ad esempio quello descritto in [Procedura: Creare un modello 3D di base.](../designers/how-to-create-a-basic-3-d-model.md)
 
 2. Passare alla modalità perno. Nella barra degli strumenti disponibile in modalità **Editor dei modelli** scegliere il pulsante **Modalità perno** per attivare la modalità perno. Viene visualizzata una casella intorno al pulsante **Modalità perno** per indicare che l'editor dei modelli è ora in modalità perno. In modalità perno, operazioni come la traslazione agiscono sul punto di perno dell'oggetto anziché sulla struttura dell'oggetto nello spazio globale.
 
@@ -46,5 +47,5 @@ Di seguito è riportato un modello con un punto di perno modificato:
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md)
+- [Procedura: Creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md)
 - [Editor dei modelli](../designers/model-editor.md)

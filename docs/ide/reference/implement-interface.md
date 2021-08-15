@@ -1,20 +1,21 @@
 ---
 title: Implementare un'interfaccia
-description: Informazioni su come usare il menu azioni rapide e refactoring per generare immediatamente il codice necessario per implementare un'interfaccia.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per generare immediatamente il codice necessario per implementare un'interfaccia.
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 37adee082f5356180b4e1d58007db48a7f9bb60e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f5e067021e13f0a59c3b45882b204de04167559e39977446aeb779f6b4bf7e8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852492"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447696"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementare un'interfaccia in Visual Studio
 
@@ -45,7 +46,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
@@ -76,5 +77,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Generazione del codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

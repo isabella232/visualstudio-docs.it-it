@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione del modello di contenuto di Progettazione XML Schema
-description: Informazioni sulla visualizzazione modello di contenuto nella finestra di progettazione dello schema XAML che fornisce una rappresentazione grafica dei nodi dello schema locale e globale e dei relativi componenti.
+description: Informazioni sulla visualizzazione modello di contenuto in Progettazione schema XAML che fornisce una rappresentazione grafica dei nodi dello schema locali e globali e dei relativi componenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,36 +8,37 @@ ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 05db6f02f2d00a5c0aca1ff91e15c61cf6bf8d4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5b275d485af04fe941b91aea3b4b31f47c26409eefe696e9a3b865863e35a5f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948596"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351552"
 ---
 # <a name="content-model-view"></a>Visualizzazione modello di contenuto
 
-La visualizzazione modello di contenuto fornisce una rappresentazione grafica di nodi dello schema locali e globali e dei relativi componenti, inclusi tipi semplici e complessi, elementi, gruppi di modelli, attributi e gruppi di attributi. Non è possibile visualizzare commenti XML e istruzioni di elaborazione nella visualizzazione modello di contenuto. La visualizzazione modello di contenuto contiene due pannelli: un pannello dell' **area di lavoro** che contiene un elenco dei nodi nell'area di [lavoro di XML Schema Designer](../xml-tools/xml-schema-designer-workspace.md)e l'area di progettazione in cui è possibile visualizzare il modello di contenuto dei nodi dello schema selezionati nel pannello dell' **area di lavoro** . La visualizzazione modello di contenuto include anche la barra degli strumenti di Progettazione XML Schema e la barra di navigazione.
+La visualizzazione modello di contenuto fornisce una rappresentazione grafica di nodi dello schema locali e globali e dei relativi componenti, inclusi tipi semplici e complessi, elementi, gruppi di modelli, attributi e gruppi di attributi. Non è possibile visualizzare commenti XML e istruzioni di elaborazione nella visualizzazione modello di contenuto. La visualizzazione Modello di contenuto  contiene due pannelli: un pannello Area di lavoro che contiene un elenco dei nodi nell'area di lavoro Progettazione [XML Schema](../xml-tools/xml-schema-designer-workspace.md)e l'area di progettazione in cui è possibile visualizzare il modello di contenuto dei nodi dello schema selezionati nel pannello Area di **lavoro.** La visualizzazione modello di contenuto include anche la barra degli strumenti di Progettazione XML Schema e la barra di navigazione.
 
-Nell'immagine seguente il pannello dell' **area di lavoro** contiene sei nodi dello schema. Il `purchaseOrder` nodo viene selezionato nel pannello dell' **area di lavoro** e viene visualizzato nell'area di progettazione.
+Nell'immagine seguente il pannello **Area di lavoro** contiene sei nodi dello schema. Il `purchaseOrder` nodo viene selezionato nel pannello Area **di** lavoro e viene visualizzato nell'area di progettazione.
 
 ![Visualizzazione del modello di contenuto di Progettazione XML Schema](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
-## <a name="workspace-panel"></a>Pannello dell'area di lavoro
+## <a name="workspace-panel"></a>Pannello Area di lavoro
 
-Dopo aver aggiunto i nodi all'area di lavoro, l'elenco di nodi verrà visualizzato nel pannello **area di lavoro** della visualizzazione modello di contenuto. Quando si selezionano i nodi nel pannello dell' **area di lavoro** , vengono visualizzati nell'area di progettazione della visualizzazione modello di contenuto. Per eliminare i nodi dall'area di lavoro, utilizzare la barra degli strumenti di progettazione XSD, il menu di scelta rapida del pannello dell' **area di lavoro** o il tasto **Canc** .
+Dopo aver aggiunto nodi all'area di lavoro, l'elenco dei nodi verrà visualizzato nel pannello **Area di** lavoro della visualizzazione modello di contenuto. Quando si selezionano nodi nel pannello **Area di** lavoro, questi vengono visualizzati nell'area di progettazione Visualizzazione modello di contenuto. Per eliminare nodi dall'area di lavoro,  usare la barra degli strumenti progettazione XSD, il menu di scelta rapida del pannello Area di lavoro o **il tasto CANC.**
 
-Per informazioni sull'aggiunta di nodi, vedere la sezione relativa all'aggiunta di nodi all'area di lavoro nell' [area di lavoro di XML Schema Designer](../xml-tools/xml-schema-designer-workspace.md).
+Per informazioni sull'aggiunta di nodi, vedere la sezione "Aggiunta di nodi all'area di lavoro" nell'area di lavoro Progettazione [XML Schema](../xml-tools/xml-schema-designer-workspace.md).
 
 ## <a name="design-surface"></a>Area di progettazione
 
-Quando si seleziona un nodo nel pannello dell' **area di lavoro** , questo viene aggiunto all'area di progettazione della visualizzazione modello di contenuto in cui è possibile visualizzare i dettagli del nodo.
+Quando un nodo viene selezionato nel **pannello** Area di lavoro, viene aggiunto all'area di progettazione Visualizzazione modello di contenuto in cui è possibile visualizzare i dettagli del nodo.
 
 Il modello di contenuto di un nodo viene rappresentato tramite un albero grafico espandibile con elementi e attributi visualizzati come nodi dell'albero. Per impostazione predefinita, viene espanso solo un livello. Le altre informazioni, ad esempio compositor, nomi di tipo, gruppi e altri contenitori, vengono posizionate in una barra verticale (in caso di espansione) lungo gli elementi e gli attributi che includono. Facendo doppio clic su una barra verticale, questa diventa orizzontale e l'albero viene compresso. Facendo doppio clic su una barra orizzontale, questa diventa verticale e l'albero viene espanso. Selezionando la barra verticale vengono selezionati tutti i nodi nel contenitore. Gli espansori vengono visualizzati a destra di un nodo se un elemento può essere espanso o compresso.
 
-Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, **XML Schema Explorer** e la filigrana. La *filigrana* è un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
+Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, **XML Schema Explorer** e il limite. Il *limite* è un elenco di collegamenti a tutte le visualizzazioni di Progettazione XSD. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
 
 ## <a name="breadcrumb-bar"></a>Barra di navigazione
 
@@ -45,7 +46,7 @@ Tramite la barra di navigazione nella parte inferiore della visualizzazione mode
 
 ## <a name="context-menus"></a>Menu di scelta rapida
 
-Facendo clic con il pulsante destro del mouse su un elemento nell'area di progettazione o nel pannello dell' **area di lavoro** , viene visualizzato un menu di scelta rapida Nella tabella seguente vengono descritte le opzioni disponibili per l'area di progettazione della visualizzazione modello di contenuto.
+Quando si fa clic con il pulsante destro del mouse su un elemento nell'area di progettazione o nel pannello **Area di** lavoro, viene visualizzato un menu di scelta rapida. Nella tabella seguente vengono descritte le opzioni disponibili per l'area di progettazione della visualizzazione modello di contenuto.
 
 |Opzione|Descrizione|
 |-|-----------------|
@@ -53,11 +54,11 @@ Facendo clic con il pulsante destro del mouse su un elemento nell'area di proget
 |**Mostra in visualizzazione grafico**|Passa alla visualizzazione grafico.|
 |**Genera XML di esempio**|Disponibile solo per elementi globali. Consente di generare un file XML di esempio per l'elemento globale.|
 |**Mostra documentazione**|Mostra o nasconde il contenuto del nodo annotazione/documentazione.|
-|**Esporta diagramma come immagine**|Salva l'area di progettazione in un file XPS.|
-|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in **XML Schema Explorer** è selezionato anche nell'editor XML.|
-|**Finestra Proprietà**|Apre la finestra **Proprietà** , se non è già aperta. In questa finestra verranno visualizzate le informazioni sul nodo.|
+|**Esportare un diagramma come immagine**|Salva l'area di progettazione in un file XPS.|
+|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in **XML Schema Explorer** viene selezionato anche nell'editor XML.|
+|**Finestra Proprietà**|Apre la **finestra** Proprietà (se non è già aperta). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
-Nella tabella seguente vengono descritte le opzioni disponibili per il pannello dell' **area di lavoro** .
+Nella tabella seguente vengono descritte le opzioni disponibili per il pannello **Area di** lavoro.
 
 |Opzione|Descrizione|
 |-|-----------------|
@@ -67,15 +68,15 @@ Nella tabella seguente vengono descritte le opzioni disponibili per il pannello 
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Genera XML di esempio**|Disponibile solo per elementi globali. Consente di generare un file XML di esempio per l'elemento globale.|
-|**Seleziona tutto**|Seleziona tutti i nodi nel pannello dell' **area di lavoro** .|
-|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in **XML Schema Explorer** è selezionato anche nell'editor XML.|
-|**Finestra Proprietà**|Apre la finestra **Proprietà** , se non è già aperta. In questa finestra verranno visualizzate le informazioni sul nodo.|
+|**Seleziona tutto**|Seleziona tutti i nodi nel pannello Area **di** lavoro.|
+|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in **XML Schema Explorer** viene selezionato anche nell'editor XML.|
+|**Finestra Proprietà**|Apre la **finestra** Proprietà (se non è già aperta). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
 ## <a name="properties-window"></a>Finestra Proprietà
 
-Utilizzare il menu di scelta rapida per aprire inizialmente la finestra **Proprietà** . Per impostazione predefinita, la finestra **Proprietà** viene visualizzata nell'angolo inferiore destro di Visual Studio. Quando si fa clic su un nodo di cui viene eseguito il rendering nella visualizzazione modello di contenuto, le proprietà del nodo vengono visualizzate nella finestra **Proprietà** .
+Usare il menu di scelta rapida per aprire inizialmente la **finestra** Proprietà. Per impostazione predefinita, la **finestra** Proprietà viene visualizzata nell'angolo inferiore destro Visual Studio. Quando si fa clic su un nodo di cui viene eseguito il rendering nella visualizzazione modello di contenuto, le proprietà di tale nodo vengono visualizzate nella **finestra** Proprietà.
 
-## <a name="xsd-designer-toolbar"></a>Barra degli strumenti Progettazione XSD
+## <a name="xsd-designer-toolbar"></a>Barra degli strumenti della finestra di progettazione XSD
 
 I seguenti pulsanti della barra degli strumenti di Progettazione XSD sono abilitati quando la visualizzazione modello di contenuto è attiva.
 
@@ -83,9 +84,9 @@ I seguenti pulsanti della barra degli strumenti di Progettazione XSD sono abilit
 
 |Opzione|Descrizione|
 |-|-----------------|
-|**Mostra visualizzazione iniziale**|Passa alla [visualizzazione iniziale](../xml-tools/start-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **1**.|
-|**Mostra visualizzazione modello di contenuto**|Passa alla [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **2**.|
-|**Mostra visualizzazione grafico**|Passa alla [visualizzazione grafico](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **3**.|
+|**Mostra visualizzazione iniziale**|Passa alla [visualizzazione iniziale.](../xml-tools/start-view.md) È possibile accedere a questa visualizzazione usando i tasti di scelta **rapida** CTRL + **1.**|
+|**Mostra visualizzazione modello di contenuto**|Passa alla visualizzazione [modello di contenuto](../xml-tools/content-model-view.md). È possibile accedere a questa visualizzazione usando i tasti di scelta **rapida** + **CTRL+2.**|
+|**Mostra visualizzazione grafico**|Consente di passare alla [Graph visualizzazione](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione usando i tasti di scelta **rapida** CTRL + **3.**|
 |**Cancella area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
@@ -93,7 +94,7 @@ I seguenti pulsanti della barra degli strumenti di Progettazione XSD sono abilit
 
 ## <a name="panscroll"></a>Panoramica/scorrimento
 
-È possibile creare una panoramica dell'area di progettazione usando le barre di scorrimento oppure tenendo premuto il tasto **CTRL** mentre si fa clic e si trascina il mouse. Quando si esegue il panning dell'area di progettazione utilizzando clic e trascinamento, il cursore passa a quattro frecce incrociate che puntano in quattro direzioni.
+È possibile eseguire la panoramica dell'area di progettazione usando le barre di scorrimento o tenendo premuto **CTRL** mentre si fa clic e si trascina il mouse. Quando si esegue la panoramica dell'area di progettazione tramite clic e trascinamento, il cursore assume la forma di quattro frecce incrociate che puntano in quattro direzioni.
 
 ## <a name="undoredo"></a>Annullamento/ripristino
 
@@ -113,18 +114,18 @@ Lo zoom è disponibile nell'angolo inferiore destro della visualizzazione modell
 
 È possibile controllare lo zoom nei seguenti modi:
 
-- Tenendo premuto il tasto **CTRL** e ruotando la rotellina del mouse quando si posiziona il mouse sull'area di visualizzazione del modello di contenuto.
+- Tenendo premuto **CTRL e** ruotando la rotellina del mouse quando il puntatore del mouse viene posizionato sull'area di visualizzazione del modello di contenuto.
 
 - Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.
 
-Il dispositivo di scorrimento zoom è opaco quando lo si seleziona, si posiziona il puntatore del mouse su di esso oppure si usa **CTRL** con la rotellina del mouse per ingrandire in tutti gli altri momenti, è trasparente.
+Il dispositivo di scorrimento Zoom è opaco quando lo si seleziona, si passa il puntatore del mouse su di esso o si usa **CTRL** con la rotellina del mouse per eseguire lo zoom. in tutti gli altri momenti, è trasparente.
 
 ## <a name="xml-editor-integration"></a>Integrazione dell'editor XML
 
-È possibile spostarsi tra la **finestra di progettazione XSD** e l'editor XML usando il menu di scelta rapida.
+È possibile passare da Progettazione **XSD** all'editor XML usando il menu di scelta rapida.
 
-Se si apportano modifiche al set di schemi nell'editor XML, le modifiche vengono sincronizzate nella visualizzazione modello di contenuto. Per ulteriori informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
+Se si apportano modifiche al set di schemi nell'editor XML, le modifiche vengono sincronizzate nella visualizzazione modello di contenuto. Per altre informazioni, vedere [Integrazione con l'editor XML.](../xml-tools/integration-with-xml-editor.md)
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Area di lavoro di progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md)
+- [Area di lavoro progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md)

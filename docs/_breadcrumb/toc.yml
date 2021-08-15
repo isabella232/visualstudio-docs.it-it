@@ -59,57 +59,57 @@
             - name: Introduzione a Visual Basic
               tocHref: /visualstudio/get-started/visual-basic/
               topicHref: /visualstudio/get-started/visual-basic/
-        - name: Estendibilità
-          tocHref: /visualstudio/extensibility/
-          topicHref: /visualstudio/extensibility/index
-          items:
-            - name: All'interno di Visual Studio SDK
-              tocHref: /visualstudio/extensibility/internals/
-              topicHref: /visualstudio/extensibility/internals/inside-the-visual-studio-sdk
-            - name: Estendibilità del debugger
-              tocHref: /visualstudio/extensibility/debugger/
-              topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
+            - name: Estendibilità
+              tocHref: /visualstudio/extensibility/
+              topicHref: /visualstudio/extensibility/index
               items:
-                - name: Riferimento
-                  tocHref: /visualstudio/extensibility/debugger/reference/
-                  topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
-            - name: Linee guida sull'esperienza utente
-              tocHref: /visualstudio/extensibility/ux-guidelines/
-              topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
-        - name: Guida introduttiva (CSharp)
-          tocHref: /visualstudio/get-started/csharp/
-          topicHref: /visualstudio/get-started/csharp/index
-        - name: Guida introduttiva (Visual Basic)
-          tocHref: /visualstudio/get-started/visual-basic/
-          topicHref: /visualstudio/get-started/visual-basic/index
-        - name: Strumenti per contenitori
-          tocHref: /visualstudio/containers/
-          topicHref: /visualstudio/containers/index
+                - name: All'interno di Visual Studio SDK
+                  tocHref: /visualstudio/extensibility/internals/
+                  topicHref: /visualstudio/extensibility/internals/inside-the-visual-studio-sdk
+                - name: Estendibilità del debugger
+                  tocHref: /visualstudio/extensibility/debugger/
+                  topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
+                  items:
+                    - name: Riferimento
+                      tocHref: /visualstudio/extensibility/debugger/reference/
+                      topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
+                - name: Linee guida sull'esperienza utente
+                  tocHref: /visualstudio/extensibility/ux-guidelines/
+                  topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
+            - name: Guida introduttiva (CSharp)
+              tocHref: /visualstudio/get-started/csharp/
+              topicHref: /visualstudio/get-started/csharp/index
+            - name: Guida introduttiva (Visual Basic)
+              tocHref: /visualstudio/get-started/visual-basic/
+              topicHref: /visualstudio/get-started/visual-basic/index
+            - name: Strumenti per contenitori
+              tocHref: /visualstudio/containers/
+              topicHref: /visualstudio/containers/index
+            - name: Sviluppo di Azure
+              tocHref: /visualstudio/azure
+              topicHref: /visualstudio/azure/index
+            - name: Office e SharePoint
+              tocHref: /visualstudio/vsto/
+              topicHref: /visualstudio/vsto/office-and-sharepoint-development-in-visual-studio
+              items:
+                - name: SharePoint
+                  tocHref: /visualstudio/sharepoint/
+                  topicHref: /visualstudio/sharepoint/create-sharepoint-solutions
+                - name: VSTO
+                  tocHref: /visualstudio/vsto/
+                  topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
+            - name: JavaScript e TypeScript
+              tocHref: /visualstudio/javascript/
+              topicHref: /visualstudio/javascript/index
+            - name: Python
+              tocHref: /visualstudio/python/
+              topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
+            - name: R
+              tocHref: /visualstudio/rtvs/
+              topicHref: /visualstudio/rtvs/index
+            - name: Controllo della versione
+              tocHref: /visualstudio/version-control
+              topicHref: /visualstudio/version-control/index
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild
-        - name: JavaScript e TypeScript
-          tocHref: /visualstudio/javascript/
-          topicHref: /visualstudio/javascript/index
-        - name: Python
-          tocHref: /visualstudio/python/
-          topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
-        - name: R
-          tocHref: /visualstudio/rtvs/
-          topicHref: /visualstudio/rtvs/index
-        - name: Office e SharePoint
-          tocHref: /visualstudio/vsto/
-          topicHref: /visualstudio/vsto/office-and-sharepoint-development-in-visual-studio
-          items:
-            - name: SharePoint
-              tocHref: /visualstudio/sharepoint/
-              topicHref: /visualstudio/sharepoint/create-sharepoint-solutions
-            - name: VSTO
-              tocHref: /visualstudio/vsto/
-              topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
-        - name: Controllo della versione
-          tocHref: /visualstudio/version-control
-          topicHref: /visualstudio/version-control/index
-        - name: Sviluppo di Azure
-          tocHref: /visualstudio/azure
-          topicHref: /visualstudio/azure/index

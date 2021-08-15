@@ -1,6 +1,6 @@
 ---
-title: DA0029-versione CLR non supportata | Microsoft Docs
-description: Si sta tentando di profilare un'applicazione che usa la .NET Framework 1,1 che non è supportata dal Strumenti di profilatura.
+title: DA0029 - Versione CLR non supportata | Microsoft Docs
+description: Si sta tentando di profilare un'applicazione che usa .NET Framework 1.1 non supportata dal Strumenti di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,15 +14,16 @@ ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f5e5129bed479273e141af70121d5a344972e2
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 532a0ee0f429c2daebec12a0b4ea0319113376619c5908ea3f205fdb0df93502
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465842"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257082"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Versione CLR non supportata
 

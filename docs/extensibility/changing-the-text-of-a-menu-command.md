@@ -12,14 +12,15 @@ ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 541acf1bcf448541fe6c440eb2aada687cfbe0e9
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 3c7396b54147d185b98af99c9ab8d87c464eff69eaf59a29e86b5962f8daf753
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904991"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308311"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Modificare il testo di un comando di menu
 La procedura seguente illustra come modificare l'etichetta di testo di un comando di menu usando il <xref:System.ComponentModel.Design.IMenuCommandService> servizio .
@@ -73,7 +74,7 @@ La procedura seguente illustra come modificare l'etichetta di testo di un comand
     }
     ```
 
-5. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale Visual Studio.
+5. Compilare il progetto e avviare il debug. Viene visualizzata l'Visual Studio sperimentale di .
 
 6. Nel menu **Strumenti** dovrebbe essere visualizzato un comando denominato **Invoke ChangeMenuText**.
 

@@ -8,42 +8,42 @@ ms.custom:
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe411074c95db15fde4819ffb07eca39a05e844d
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2a66cf69615640b8750f53dfd3d150708dbacb90f7c09ba43d78110ecd9e4a50
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390164"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121259708"
 ---
-# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Informazioni su come usare l'editor di codice con Visual Basic
+# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Informazioni sull'uso dell'editor di codice con Visual Basic
 
-In questa introduzione di 10 minuti all'editor di codice in Visual Studio si aggiungerà codice a un file per esaminare alcuni dei modi in cui Visual Studio semplifica la scrittura, lo spostamento e la comprensione del codice Visual Basic.
+In questa introduzione di 10 minuti all'editor di codice in Visual Studio verrà aggiunto codice a un file per esaminare alcuni dei modi in cui Visual Studio semplifica la scrittura, lo spostamento e la comprensione del codice Visual Basic.
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+> Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+> Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2022"
 
 > [!TIP]
-> Se non è ancora stato installato Visual Studio Preview, passare alla pagina dei download [di Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
+> Se non è già stato installato Visual Studio Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 ::: moniker-end
 
@@ -98,7 +98,7 @@ Sono disponibili frammenti di codice per determinare se esiste un file nel compu
 
 ## <a name="comment-out-code"></a>Codice di impostazione come commento
 
-La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di Visual Studio, contribuisce ad aumentare la produttività in fase di creazione del codice. È possibile, ad esempio, attivare o disattivare la modalità di terminazione IntelliSense, aumentare o ridurre un rientro riga o impostare come commento una parte del codice che non si desidera compilare. ([IntelliSense](../../ide/using-intellisense.md) è un supporto per la scrittura di codice che visualizza un elenco di metodi corrispondenti, tra le altre cose). In questa sezione verrà commentato del codice.
+La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di Visual Studio, contribuisce ad aumentare la produttività in fase di creazione del codice. È possibile, ad esempio, attivare o disattivare la modalità di terminazione IntelliSense, aumentare o ridurre un rientro riga o impostare come commento una parte del codice che non si desidera compilare. ([IntelliSense](../../ide/using-intellisense.md) è un supporto per la codifica che visualizza un elenco di metodi corrispondenti, tra le altre cose). In questa sezione verrà commentato il codice.
 
 ![Pulsanti della barra degli strumenti editor](media/tutorial-editor-toolbar.png)
 
@@ -134,15 +134,15 @@ La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di 
 
 ## <a name="collapse-code-blocks"></a>Comprimere i blocchi di codice
 
-È possibile comprimere sezioni di codice per concentrarsi solo sulle parti di particolare interesse per l'utente. Per fare pratica, si procederà a comprimere la matrice `_words` in una sola riga di codice. Scegliere la casellina grigia contenente il segno meno sul margine della riga con la dicitura `Dim _words = New String() {`. Oppure, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi della definizione di matrice e premere **CTRL** + **M**, **CTRL** + **M**.
+È possibile comprimere sezioni di codice per concentrarsi solo sulle parti di particolare interesse per l'utente. Per fare pratica, si procederà a comprimere la matrice `_words` in una sola riga di codice. Scegliere la casellina grigia contenente il segno meno sul margine della riga con la dicitura `Dim _words = New String() {`. In caso contrario, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi della definizione della matrice e premere **CTRL** + **M**, **CTRL** + **M**.
 
 ![Pulsante di compressione evidenziato](media/tutorial-collapse.png)
 
-Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere di nuovo il blocco di codice, fare clic sulla stessa casella grigia in cui è ora presente un segno più oppure premere di nuovo **CTRL** + **M**, **CTRL** + **M.** Questa funzionalità è [denominata Struttura ed](../../ide/outlining.md) è particolarmente utile quando si comprottono metodi lunghi o intere classi.
+Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere di nuovo il blocco di codice, fare clic sulla stessa casella grigia in cui è ora presente un segno più oppure premere **di** nuovo CTRL + **M**, **CTRL** + **M.** Questa funzionalità è [denominata Struttura ed](../../ide/outlining.md) è particolarmente utile quando si comproendo metodi lunghi o intere classi.
 
 ## <a name="view-symbol-definitions"></a>Visualizzare le definizioni dei simboli
 
-L Visual Studio editor semplifica il controllo della definizione di un tipo, di un metodo e così via. Un modo è passare al file che contiene la definizione, ad esempio scegliendo Vai a **definizione** in qualsiasi punto in cui viene fatto riferimento al simbolo. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../../ide/go-to-and-peek-definition.md#peek-definition). Di seguito si procede a visualizzare la definizione del tipo `String`.
+L Visual Studio editor semplifica l'ispezione della definizione di un tipo, di un metodo e così via. Un modo è passare al file che contiene la definizione, ad esempio scegliendo **Vai** a definizione in qualsiasi punto in cui viene fatto riferimento al simbolo. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../../ide/go-to-and-peek-definition.md#peek-definition). Di seguito si procede a visualizzare la definizione del tipo `String`.
 
 1. Fare clic con il pulsante destro del mouse sulla parola `String` e scegliere **Visualizza definizione** dal menu del contenuto. In caso contrario, **premere ALT** + **F12.**
 
@@ -154,7 +154,7 @@ L Visual Studio editor semplifica il controllo della definizione di un tipo, di 
 
 ## <a name="use-intellisense-to-complete-words"></a>Usare IntelliSense per il completamento di parole
 
-[IntelliSense](../../ide/using-intellisense.md) è una risorsa di valore inestimabile per la scrittura di codice. Consente di visualizzare informazioni sui membri disponibili di un tipo o sui dettagli parametro per diversi overload di un metodo. È anche possibile usare IntelliSense per completare una parola dopo aver digitato un numero di caratteri sufficiente a evitare ambiguità. Aggiungere una riga di codice per stampare le stringhe ordinate nella finestra della console, ovvero la posizione standard in cui finisce l'output del programma.
+[IntelliSense](../../ide/using-intellisense.md) è una risorsa di valore inestimabile durante la scrittura del codice. Consente di visualizzare informazioni sui membri disponibili di un tipo o sui dettagli parametro per diversi overload di un metodo. È anche possibile usare IntelliSense per completare una parola dopo aver digitato un numero di caratteri sufficiente a evitare ambiguità. Aggiungere una riga di codice per stampare le stringhe ordinate nella finestra della console, ovvero la posizione standard in cui finisce l'output del programma.
 
 1. Sotto la variabile `query` iniziare a digitare il codice seguente:
 

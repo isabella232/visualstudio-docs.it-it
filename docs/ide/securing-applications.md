@@ -11,14 +11,15 @@ ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcd034a76fbc371c95a2bbf386687830e3b63d
-ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
+ms.openlocfilehash: 6314a1a876b75ca8690df304a49423dba7ad285ab6d6ab87ff7b96f38390d754
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110687656"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121232185"
 ---
 # <a name="secure-applications"></a>Proteggere le applicazioni
 
@@ -47,4 +48,4 @@ La sicurezza è anche un aspetto importante del processo di compilazione. Alcuni
 - [Windows 10 Mobile security guide](/windows/security/threat-protection/windows-10-mobile-security-guide) (Guida alla sicurezza di Windows 10 Mobile)
 - [Apache Cordova platform security features](/previous-versions/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true) (Funzionalità di sicurezza della piattaforma Apache Cordova)
 - [Sicurezza di ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
-- [Windows Forms sicurezza](/dotnet/framework/winforms/windows-forms-security)
+- [Windows Sicurezza dei moduli](/dotnet/framework/winforms/windows-forms-security)

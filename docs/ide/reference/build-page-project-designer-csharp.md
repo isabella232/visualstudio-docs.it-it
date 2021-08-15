@@ -1,6 +1,6 @@
 ---
 title: Pagina Compilazione, Progettazione progetti (C#)
-description: Informazioni su come usare la pagina Compilazione di Progettazione progetti in Visual Studio specificare le proprietà di configurazione della compilazione del progetto.
+description: Informazioni su come usare la pagina Compilazione di Project Designer in Visual Studio specificare le proprietà di configurazione della compilazione del progetto.
 ms.custom: SEO-VS-2020
 ms.date: 06/20/2017
 ms.technology: vs-ide-compile
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91b254f4c075693e23d8f650356cd97e86a4c746
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.openlocfilehash: 7892822995b74665ec014530207e565b2c70f78adfc92fab01ad8ac6a97633a8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798557"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400309"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 
@@ -44,7 +44,7 @@ Specifica le impostazioni di configurazione da visualizzare o modificare. Le imp
 
 **Piattaforma**
 
-Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [Procedura: Creare e modificare configurazioni](../../ide/how-to-create-and-edit-configurations.md).
+Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [Procedura: Creare e modificare configurazioni.](../../ide/how-to-create-and-edit-configurations.md)
 
 ## <a name="general"></a>Generale
 
@@ -52,7 +52,7 @@ Le opzioni seguenti consentono di configurare diverse impostazioni del compilato
 
 **Simboli di compilazione condizionale**
 
-Specifica i simboli su cui eseguire la compilazione condizionale. Separare i simboli con un punto e virgola (";"). Per altre informazioni, vedere [/define (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
+Specifica i simboli su cui eseguire la compilazione condizionale. Separare i simboli con un punto e virgola (";"). Per altre informazioni, vedere [/define (opzioni del compilatore C#).](/dotnet/csharp/language-reference/compiler-options/define-compiler-option)
 
 **Definisci costante DEBUG**
 
@@ -94,7 +94,7 @@ Consente la compilazione del codice che usa la parola chiave [unsafe](/dotnet/cs
 
 **Ottimizza codice**
 
-Abilita o disabilita le ottimizzazioni eseguite dal compilatore per ridurre le dimensioni del file di output e aumentarne la velocità e l'efficienza. Per altre informazioni, vedere [/optimize (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
+Abilita o disabilita le ottimizzazioni eseguite dal compilatore per ridurre le dimensioni del file di output e aumentarne la velocità e l'efficienza. Per altre informazioni, vedere [/optimize (opzioni del compilatore C#).](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)
 
 ## <a name="errors-and-warnings"></a>Errori e avvisi
 
@@ -110,16 +110,16 @@ Blocca la capacità del compilatore di generare uno o più avvisi. Separare più
 
 ## <a name="treat-warnings-as-errors"></a>Considera gli avvisi come errori
 
-Le impostazioni riportate di seguito sono usate per specificare quali avvisi considerare come errori. Selezionare una delle opzioni seguenti per indicare in quali condizioni restituire un errore se la compilazione rileva un avviso. Per altre informazioni, vedere [/warnaserror (Opzioni del compilatore C#).](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)
+Le impostazioni riportate di seguito sono usate per specificare quali avvisi considerare come errori. Selezionare una delle opzioni seguenti per indicare in quali condizioni restituire un errore se la compilazione rileva un avviso. Per altre informazioni, vedere [/warnaserror (opzioni del compilatore C#).](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)
 
 **Nessuno:** non considera gli avvisi come errori.
 
-**Tutti:** considera tutti gli avvisi come errori.
+**All:** considera tutti gli avvisi come errori.
 
 **Avvisi specifici:** considera gli avvisi specificati come errori. Separare più numeri di avvisi tramite virgola o punto e virgola.
 
 > [!TIP]
-> Se non si vuole che gli avvisi dell'analisi del codice vengano considerati come errori, vedere Domande [frequenti sull'analisi del codice](/visualstudio/code-quality/analyzers-faq#treat-warnings-as-errors).
+> Se non si vuole che gli avvisi di analisi del codice vengano considerati come errori, vedere Code [analysis FAQ (Domande frequenti sull'analisi del codice).](/visualstudio/code-quality/analyzers-faq#treat-warnings-as-errors)
 
 ## <a name="output"></a>Output
 

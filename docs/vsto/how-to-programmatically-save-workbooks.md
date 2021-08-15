@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Salvare cartelle di lavoro a livello di codice'
-description: Salvare a livello di codice le cartelle di lavoro di Microsoft Excel senza modificare il percorso e salvare una copia di una cartella di lavoro senza modificare la cartella di lavoro aperta in memoria.
+description: Salvare a livello Microsoft Excel cartelle di lavoro senza modificare il percorso e salvare una copia di una cartella di lavoro senza modificare la cartella di lavoro aperta in memoria.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4559d098a80a1dfd8f1d3f5c2c21cbebc992fcb7
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: fdfcd38aa89d292998f1f1b7997f449b657fb6f4a89efa38c2bcae68516cd8ea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828982"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267923"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Procedura: Salvare cartelle di lavoro a livello di codice
   Una cartella di lavoro può essere salvata in più modi, ad esempio senza modificare il percorso. Se si tratta del primo salvataggio della cartella di lavoro, è necessario specificare un percorso. Se non viene specificato un percorso esplicito, Microsoft Office Excel salva il file nella cartella corrente con il nome assegnato al momento della creazione. È anche possibile salvare una copia della cartella di lavoro senza modificare la cartella di lavoro aperta in memoria.
@@ -48,7 +49,7 @@ ms.locfileid: "107828982"
  È possibile salvare la cartella di lavoro specificata in un nuovo percorso o con un nuovo nome, specificando eventualmente un formato di file, una password, una modalità di accesso e altre opzioni.
 
 > [!NOTE]
-> Potrebbe essere necessario impostare la proprietà su False prima di salvare la cartella di lavoro con un nuovo percorso perché il salvataggio in alcuni <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> formati richiede  l'interazione. Se si imposta questa proprietà **su False,** Excel userà tutte le impostazioni predefinite.
+> Potrebbe essere necessario impostare la proprietà su False prima di salvare la cartella di lavoro con un nuovo percorso perché il salvataggio in alcuni <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> formati richiede  l'interazione. L'impostazione di questa **proprietà su False** Excel l'uso di tutte le impostazioni predefinite.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Per salvare una cartella di lavoro associata a una personalizzazione a livello di documento
 
@@ -82,7 +83,7 @@ ms.locfileid: "107828982"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet5":::
 
 ## <a name="robust-programming"></a>Programmazione efficiente
- Se si annulla in modo interattivo uno dei metodi usati per salvare o copiare la cartella di lavoro, viene generato un errore di run-time nel codice. Ad esempio, se la routine chiama il metodo ma non disabilita le richieste da Excel e l'utente fa clic su Annulla quando richiesto, Excel genera un errore <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> di run-time. 
+ Se si annulla in modo interattivo uno dei metodi usati per salvare o copiare la cartella di lavoro, viene generato un errore di run-time nel codice. Ad esempio, se la routine chiama il metodo ma non disabilita le richieste da Excel e l'utente fa clic su Annulla quando richiesto, Excel genera un errore di <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> run-time. 
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare le cartelle di lavoro](../vsto/working-with-workbooks.md)

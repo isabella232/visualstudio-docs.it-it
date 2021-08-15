@@ -1,6 +1,6 @@
 ---
 title: Recupero di log di compilazione con MSBuild | Microsoft Docs
-description: Informazioni su come usare le opzioni con MSBuild per specificare la quantità di dati di compilazione da rivedere e se salvare i dati di compilazione in uno o più file.
+description: Informazioni su come usare le opzioni MSBuild specificare la quantità di dati di compilazione da esaminare e se salvare i dati di compilazione in uno o più file.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,18 +11,19 @@ ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ecfa11122b76bcfef3473ff5d06083c64157a2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf812a6c6bb77c2a831fce932dd0b36832d3d66b101f60c27e765d371841a1fd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905426"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257693"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Recuperare log di compilazione con MSBuild
 
-Usando le opzioni con MSBuild, è possibile specificare quanti dati di compilazione si vogliono esaminare e se salvare i dati di compilazione in uno o più file. È anche possibile specificare un logger personalizzato per raccogliere i dati di compilazione. Per informazioni sulle opzioni della riga di comando di MSBuild che questo argomento non copre, vedere [riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
+Usando le opzioni con MSBuild, è possibile specificare quanti dati di compilazione si vogliono esaminare e se salvare i dati di compilazione in uno o più file. È anche possibile specificare un logger personalizzato per raccogliere i dati di compilazione. Per informazioni sulle MSBuild della riga di comando non trattate in questo argomento, vedere [Informazioni di riferimento sulla riga di comando](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Se si compilano progetti usando l'IDE di Visual Studio, è possibile risolvere i problemi di tali compilazioni esaminando i log di compilazione. Per altre informazioni, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
@@ -37,9 +38,9 @@ Usando le opzioni con MSBuild, è possibile specificare quanti dati di compilazi
 
 - Riepilogo della compilazione.
 
-Utilizzando l'opzione **-** livello di dettaglio (**-v**), è possibile controllare la quantità di dati visualizzati nel log di output. Per la risoluzione dei problemi, usare un livello di dettaglio `detailed` (`d`) o `diagnostic` (`diag`), che fornisce la maggior parte delle informazioni.
+Usando **l'opzione -verbosity** (**-v**), è possibile controllare la quantità di dati visualizzati nel log di output. Per la risoluzione dei problemi, usare un livello di dettaglio `detailed` (`d`) o `diagnostic` (`diag`), che fornisce la maggior parte delle informazioni.
 
-Il processo di compilazione può risultare più lento quando si imposta il livello di **dettaglio** su `detailed` e ancora più lento quando si imposta il livello di **dettaglio** su `diagnostic` .
+Il processo di compilazione può essere più lento quando si imposta **-verbosity** su e anche più lento quando si imposta `detailed` **-verbosity** su `diagnostic` .
 
 ```cmd
 msbuild MyProject.proj -t:go -v:diag
@@ -49,7 +50,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 La tabella seguente illustra in che modo il livello di dettaglio del log (valori di colonna) influisce sulla scelta dei tipi di messaggio (valori di riga) da registrare.
 
-| Tipo di messaggio/livello di dettaglio              | Quiet | Minime | Normale | Dettagliato | Diagnostic |
+| Tipo di messaggio/Livello di dettaglio              | Quiet | Minime | Normale | Dettagliato | Analisi diagnostica |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | Errors                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Avvisi                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -60,35 +61,35 @@ La tabella seguente illustra in che modo il livello di dettaglio del log (valori
 
 ## <a name="save-the-build-log-to-a-file"></a>Salvare il log di compilazione in un file
 
-È possibile usare l'opzione **-FileLogger** (**FL**) per salvare i dati di compilazione in un file. L'esempio seguente salva i dati di compilazione in un file denominato *msbuild.log*.
+È possibile usare **l'opzione -fileLogger** (**fl**) per salvare i dati di compilazione in un file. L'esempio seguente salva i dati di compilazione in un file denominato *msbuild.log*.
 
 ```cmd
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- Nell'esempio seguente il nome del file di log è *MyProjectOutput.log* e il dettaglio dell'output del log è impostato su `diagnostic`. Per specificare queste due impostazioni, utilizzare l'opzione **-fileLoggerParameters** ( `flp` ).
+ Nell'esempio seguente il nome del file di log è *MyProjectOutput.log* e il dettaglio dell'output del log è impostato su `diagnostic`. Per specificare queste due impostazioni, usare **l'opzione -fileLoggerParameters** ( `flp` ).
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
 ```
 
- Per ulteriori informazioni, vedere [riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
+ Per altre informazioni, vedere Informazioni [di riferimento sulla riga di comando.](../msbuild/msbuild-command-line-reference.md)
 
 ## <a name="save-the-log-output-to-multiple-files"></a>Salvare l'output del log in più file
 
- L'esempio seguente salva l'intero log in *msbuild1.log*, i soli errori in *JustErrors.log* e i soli avvisi in *JustWarnings.log*. L'esempio usa numeri di file per ognuno dei tre file. I numeri di file vengono specificati subito dopo le opzioni **-FL** e **-FLP** , ad esempio `-fl1` e `-flp1` .
+ L'esempio seguente salva l'intero log in *msbuild1.log*, i soli errori in *JustErrors.log* e i soli avvisi in *JustWarnings.log*. L'esempio usa numeri di file per ognuno dei tre file. I numeri di file vengono specificati subito dopo le opzioni **-fl** e **-flp** (ad esempio, `-fl1` e `-flp1` ).
 
- Le opzioni **-fileLoggerParameters** ( `flp` ) per i file 2 e 3 specificano cosa assegnare un nome a ogni file e cosa includere in ogni file. Poiché per il file 1 non è specificato alcun nome, viene usato il nome predefinito *msbuild1.log*.
+ Le **opzioni -fileLoggerParameters** ( ) per i file 2 e 3 specificano il nome di ogni file e gli elementi `flp` da includere in ogni file. Poiché per il file 1 non è specificato alcun nome, viene usato il nome predefinito *msbuild1.log*.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly
 ```
 
- Per ulteriori informazioni, vedere [riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
+ Per altre informazioni, vedere Informazioni [di riferimento sulla riga di comando.](../msbuild/msbuild-command-line-reference.md)
 
 ## <a name="save-a-binary-log"></a>Salvare un log binario
 
-È possibile salvare il log in formato binario compresso usando l'opzione **-binaryLogger** (**BL**). Il log include una descrizione dettagliata del processo di compilazione e può essere letto da alcuni strumenti di analisi dei log.
+È possibile salvare il log in formato binario compresso usando l'opzione **-binaryLogger** (**bl**). Il log include una descrizione dettagliata del processo di compilazione e può essere letto da alcuni strumenti di analisi dei log.
 
 Nell'esempio seguente viene creato un file di log binario con nome *binarylogfilename*.
 
@@ -96,13 +97,13 @@ Nell'esempio seguente viene creato un file di log binario con nome *binarylogfil
 -bl:binarylogfilename.binlog
 ```
 
-Per ulteriori informazioni, vedere [riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
+Per altre informazioni, vedere Informazioni [di riferimento sulla riga di comando.](../msbuild/msbuild-command-line-reference.md)
 
 ## <a name="use-a-custom-logger"></a>Usare un logger personalizzato
 
- Per scrivere un logger personalizzato, è sufficiente creare un tipo gestito che implementi l'interfaccia <xref:Microsoft.Build.Framework.ILogger>. È possibile usare un logger personalizzato, ad esempio, per inviare gli errori di compilazione in un messaggio di posta elettronica, registrarli in un database o registrarli in un file XML. Per altre informazioni, vedere [logger di compilazione](../msbuild/build-loggers.md).
+ Per scrivere un logger personalizzato, è sufficiente creare un tipo gestito che implementi l'interfaccia <xref:Microsoft.Build.Framework.ILogger>. È possibile usare un logger personalizzato, ad esempio, per inviare gli errori di compilazione in un messaggio di posta elettronica, registrarli in un database o registrarli in un file XML. Per altre informazioni, vedere [Logger di compilazione](../msbuild/build-loggers.md).
 
- Nella riga di comando di MSBuild è possibile specificare il logger personalizzato usando l'opzione **-logger** . È anche possibile usare l'opzione **-noconsolelogger** per disabilitare il logger della console predefinito.
+ Nella riga MSBuild comando specificare il logger personalizzato usando **l'opzione -logger.** È anche possibile usare **l'opzione -noconsolelogger** per disabilitare il logger di console predefinito.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -7,14 +7,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 79b58ee6ebd4db3ee9727bf59b260f281ba00275
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 5707df4cf24a977d928ffda5b495bd1ffc8cc31b0e12331f44926487efbec7d2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390411"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356114"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: aggiungere un gestore di trascinamento della selezione
 
@@ -82,7 +83,7 @@ MEF (Managed Extensibility Framework) consente di definire i componenti che poss
 
 ### <a name="to-define-a-mef-gesture-handler"></a>Per definire un gestore movimenti MEF
 
-1. Aggiungere ai progetti **Dsl** e **DslPackage** i file **MefExtension** descritti in [Estendere il DSL usando MEF.](../modeling/extend-your-dsl-by-using-mef.md)
+1. Aggiungere ai progetti **Dsl** e **DslPackage** i file **MefExtension** descritti in Estendere il [DSL usando MEF.](../modeling/extend-your-dsl-by-using-mef.md)
 
 2. Ora è possibile definire un gestore movimenti come componente MEF:
 
@@ -126,17 +127,17 @@ Quando l'utente trascina un elemento sul diagramma o da una parte del diagramma 
 
 Per individuare i formati in cui sono disponibili le informazioni sull'origine del trascinamento, eseguire il codice in modalità di debug, impostando un punto di interruzione all'inizio su `OnDragOver()` o `CanDragDrop()`. Esaminare i valori del parametro `DiagramDragEventArgs`. Le informazioni sono disponibili in due formati:
 
-- <xref:System.Windows.Forms.IDataObject>  `Data` - Questa proprietà contiene versioni serializzate degli oggetti di origine, in genere in più formati. Le funzioni più utili sono:
+- <xref:System.Windows.Forms.IDataObject>  `Data` - Questa proprietà contiene versioni serializzate degli oggetti di origine, in genere in più di un formato. Le funzioni più utili sono:
 
   - diagramEventArgs.Data.GetDataFormats() - Elenca i formati in cui è possibile decodificare l'oggetto trascinato. Se, ad esempio, l'utente trascina un file dal desktop, i formati disponibili includono il nome file ("`FileNameW`").
 
-  - `diagramEventArgs.Data.GetData(format)` - Decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Ad esempio:
+  - `diagramEventArgs.Data.GetData(format)` - Decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Esempio:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
     È anche possibile trasmettere oggetti, quali i riferimenti ModelBus, dall'origine nel formato personalizzato. Per altre informazioni, vedere [How to Send Model Bus References in a Drag and Drop](#to-send-an-object-from-a-source-dsl).
 
-- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype`- Usare questa proprietà se si vuole che gli utenti traslicino elementi da un modello DSL o UML. Un prototipo di gruppo di elementi contiene uno o più oggetti, collegamenti e i valori delle proprietà. Viene usato anche nelle operazioni Incolla e quando si aggiunge un elemento dalla casella degli strumenti. In un prototipo, gli oggetti e i tipi vengono identificati dal GUID. Ad esempio, questo codice consente all'utente di trascinare gli elementi della classe da un diagramma UML o da Esplora modelli UML:
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype`- Usare questa proprietà se si vuole che gli utenti trascinano elementi da un modello DSL o UML. Un prototipo di gruppo di elementi contiene uno o più oggetti, collegamenti e i valori delle proprietà. Viene usato anche nelle operazioni Incolla e quando si aggiunge un elemento dalla casella degli strumenti. In un prototipo, gli oggetti e i tipi vengono identificati dal GUID. Ad esempio, questo codice consente all'utente di trascinare gli elementi della classe da un diagramma UML o da Esplora modelli UML:
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -160,7 +161,7 @@ Le proprietà `Data` e `Prototype` degli argomenti dell'evento contengono solo u
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Per preparare un progetto DSL per ModelBus
 
-Rendere il DSL di origine accessibile Visual Studio bus di modello:
+Rendere il DSL di origine accessibile da Visual Studio modello:
 
 1. Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare clic con il pulsante destro del mouse sull'area di progettazione e **quindi scegliere Abilita Modelbus.** Nella finestra di dialogo scegliere una o entrambe le opzioni.  Fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
 

@@ -1,6 +1,6 @@
 ---
 title: Visualizzazioni dei dati del metodo di campionamento del profiler | Microsoft Docs
-description: Informazioni sulle visualizzazioni e sui report dei file di dati del profiler generati tramite il metodo di campionamento.
+description: Informazioni sulle visualizzazioni e i report dei file di dati del profiler generati usando il metodo di campionamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,16 @@ ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc1dc50c379ab2eac7d44c48e06834dd73c477f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fd480e36b0b80ae6baaaf1c27a850c5f2867338410163fe1c6e37ab7a7ed226
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936431"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121315889"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di campionamento.
@@ -31,32 +32,32 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Elenca le funzioni eseguite più di frequente al momento della raccolta dei campioni e le funzioni che eseguivano la maggior parte del lavoro individuale.
 
-- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
+- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
 
  Visualizza i percorsi di esecuzione delle funzioni in un albero gerarchico.
 
-- [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
 
  Organizza i dati di profilatura in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni in esecuzione al momento della raccolta dei campioni.
 
-- [Visualizzazione chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
 
  Visualizza i dati di profilatura per una funzione selezionata e le funzioni che hanno chiamato e sono state chiamate dalla funzione selezionata.
 
-- [Visualizzazione funzioni](../profiling/functions-view-sampling-data.md)
+- [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)
 
  Organizza la profilatura in base alle funzioni ed elenca le funzioni in esecuzione al momento della raccolta dei campioni.
 
-- [Visualizzazione righe](../profiling/lines-view-sampling-data.md)
+- [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)
 
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.
 
-- [Visualizzazione puntatori all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)
 
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.
 
 ## <a name="reference"></a>Riferimento
-- [Visualizzazione processo](../profiling/process-view.md)
+- [Visualizzazione Processo](../profiling/process-view.md)
 
  Elenca l'ora di inizio e di fine di processi e thread.
 

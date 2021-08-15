@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, C/C++, Avanzate
-description: Informazioni su come utilizzare la pagina Avanzate nella sezione C/C++ per modificare il comportamento correlato a IntelliSense e al database di esplorazione.
+description: Informazioni su come usare la pagina Avanzate nella sezione C/C++ per modificare il comportamento correlato a IntelliSense e al database di esplorazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe69471d231599c6e3eece0b56ff70fca5b6afab
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 9e006a5e1e99c2f1b9a8ad81078553004f2d05c9e0ea1f573a1395c49ef7507d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040342"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447467"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
 
@@ -54,7 +54,7 @@ Il database di esplorazione del codice non raccoglierà dati per i file non spec
 
 **Disabilita pulizia implicita**
 
-Il database di esplorazione del codice non pulisce i file impliciti a cui non viene più fatto riferimento. Questa opzione impedisce la rimozione dei file impliciti dal database quando non vengono più usati. Ad esempio, se si aggiunge una direttiva `#include` che riconduce mapi.h a uno dei file di origine, mapi.h verrà trovato e indicizzato. Se in seguito si rimuove l'istruzione #include e al file non viene fatto riferimento altrove, le informazioni su di esso verranno infine rimosse a meno che non sia stata scelta questa opzione. Vedere l'opzione **Ripeti analisi intervallo soluzione** . Questa opzione viene ignorata quando si ripete l'analisi in modo esplicito della soluzione.
+Il database di esplorazione del codice non pulisce i file impliciti a cui non viene più fatto riferimento. Questa opzione impedisce la rimozione dei file impliciti dal database quando non vengono più usati. Ad esempio, se si aggiunge una direttiva `#include` che riconduce mapi.h a uno dei file di origine, mapi.h verrà trovato e indicizzato. Se in seguito si rimuove l'istruzione #include e al file non viene fatto riferimento altrove, le informazioni su di esso verranno infine rimosse a meno che non sia stata scelta questa opzione. Vedere **l'opzione Rescan Solution Interval (Ripetizione** analisi intervallo soluzione). Questa opzione viene ignorata quando si esegue nuovamente l'analisi della soluzione in modo esplicito.
 
 **Disabilita cartelle dipendenze esterne**
 
@@ -66,7 +66,7 @@ Consente di ricreare da zero il database di esplorazione del codice la volta suc
 
 **Ripeti analisi intervallo soluzione**
 
-Viene pianificato un processo 'Ripeti analisi soluzione' per l'intervallo specificato. È necessario specificare tra 0 e 5000 minuti. Il valore predefinito è 60 minuti. Mentre viene ripetuta l'analisi della soluzione, i timestamp dei file vengono controllati per stabilire se un file sia stato modificato all'esterno dell'IDE. Le modifiche apportate nell'IDE vengono rilevate automaticamente e i file vengono aggiornati. I file inclusi in modo implicito vengono controllati per determinare se sono sempre presenti riferimenti.
+Viene pianificato un processo 'Ripeti analisi soluzione' per l'intervallo specificato. È necessario specificare tra 0 e 5000 minuti. Il valore predefinito è 60 minuti. Mentre viene ripetuta l'analisi della soluzione, i timestamp dei file vengono controllati per stabilire se un file sia stato modificato all'esterno dell'IDE. Le modifiche apportate nell'IDE vengono rilevate automaticamente e i file vengono aggiornati. I file inclusi in modo implicito vengono controllati per determinare se vi viene ancora fatto riferimento.
 
 ## <a name="diagnostic-logging"></a>Registrazione diagnostica
 
@@ -208,6 +208,6 @@ Se abilitata, è possibile racchiudere il testo selezionato tra parentesi graffe
 
 Se abilitata, è possibile racchiudere il testo selezionato tra parentesi digitando '(' nell'editor di testo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Impostazione delle opzioni dell'editor Language-Specific](../../ide/reference/setting-language-specific-editor-options.md)
+- [Impostazione delle Language-Specific dell'editor](../../ide/reference/setting-language-specific-editor-options.md)

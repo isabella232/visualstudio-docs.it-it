@@ -1,7 +1,7 @@
 ---
 title: Presentazione delle funzionalità di Blend per Visual Studio
 titleSuffix: ''
-description: Informazioni sull'interfaccia utente dell'area di lavoro e sulle funzionalità di Blend per Visual Studio, un componente per la progettazione di applicazioni Windows e Web basate su XAML.
+description: Informazioni sull'interfaccia utente dell'area di lavoro e sulle funzionalità di Blend per Visual Studio, un componente per la progettazione di applicazioni Web e Windows basate su XAML.
 ms.custom: SEO-VS-2020
 ms.date: 07/31/2019
 ms.topic: overview
@@ -10,14 +10,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5981bee624b8638aa2140eeaf073a42bb7c18126b3c02da2b07ca4c2bad393d3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889265"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440318"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Panoramica di Blend per Visual Studio
 

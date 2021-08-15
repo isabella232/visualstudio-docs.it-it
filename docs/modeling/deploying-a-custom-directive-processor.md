@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 30233bf34f523ef53d95cef153fd604cef0b6447
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4dcc9f12a65ad163acd07724da534039c772b385446f00b30dab627d441a42fc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384902"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121316864"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 
@@ -34,7 +35,7 @@ I metodi alternativi sono i seguenti:
 
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Distribuzione di un processore di direttiva in un pacchetto VSIX
 
-È possibile aggiungere un processore di direttiva personalizzato a [un'estensione Visual Studio (VSIX).](../extensibility/starting-to-develop-visual-studio-extensions.md)
+È possibile aggiungere un processore di direttiva personalizzato a [Visual Studio Extension (VSIX).](../extensibility/starting-to-develop-visual-studio-extensions.md)
 
  È necessario assicurarsi che i due elementi seguenti siano contenuti nel file .vsix:
 
@@ -48,7 +49,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Per sviluppare un processore di direttiva personalizzato in un progetto VSIX
 
-1. Creare un nuovo **progetto VSIX.**
+1. Creare un nuovo **progetto Project VSIX.**
 
 2. In **source.extension.vsixmanifest** impostare il tipo di contenuto e le edizioni supportate.
 
@@ -56,13 +57,13 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
          **Tipo di contenuto**  =  **VSPackage**
 
-         **Progetto di origine** = \<*the current project*>
+         **Origine Project** = \<*the current project*>
 
     2. Fare **clic su Edizioni selezionate** e controllare i tipi di installazione in cui si vuole che il processore di direttiva sia utilizzabile.
 
 3. Aggiungere un file .pkgdef e impostarne le proprietà da includere in VSIX.
 
-    1. Creare un file di testo e assegnare il \<*assemblyName*> nome .pkgdef.
+    1. Creare un file di testo e assegnare al file \<*assemblyName*> il nome .pkgdef.
 
          \<*assemblyName*> è in genere uguale al nome del progetto.
 
@@ -103,7 +104,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 #### <a name="to-install-the-custom-directive-processor"></a>Per installare il processore di direttiva personalizzato
 
-1. In Esplora risorse aprire la directory di compilazione (in genere bin\Debug o bin\Release).
+1. In Windows Explorer aprire la directory di compilazione (in genere bin\Debug o bin\Release).
 
 2. Se si desidera installare il processore di direttiva in un altro computer, copiare il file .vsix nell'altro computer.
 
@@ -115,7 +116,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Per disinstallare o disabilitare temporaneamente il processore di direttiva personalizzato
 
-1. Nel menu Visual Studio **strumenti** fare clic su **Gestione estensioni**.
+1. Nel menu Visual Studio **strumenti fare** clic su **Gestione estensioni**.
 
 2. Selezionare il file VSIX che contiene il processore di direttiva e quindi fare clic **su Disinstalla** o **Disabilita**.
 
@@ -176,7 +177,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 4. Nel nuovo nodo, aggiungere valori stringa per Class e CodeBase o Assembly, sulla base delle tabelle seguenti.
 
-   1. Fare clic con il pulsante destro del mouse sul nodo creato, scegliere **Nuovo** e quindi fare clic **su Valore stringa**.
+   1. Fare clic con il pulsante destro del mouse sul nodo creato, scegliere **Nuovo** e quindi fare clic su **Valore stringa**.
 
    2. Modificare il nome del valore.
 

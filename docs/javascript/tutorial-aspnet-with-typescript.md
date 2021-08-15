@@ -7,16 +7,17 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9b8bee5918a85c2a661911ee71dcfd633fce4cb2
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 55ca930b90dc757c10a8322d1ab7c5b3f6e34d2f779f89eef414fb55da625ccc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094059"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121444082"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Esercitazione: Creare un'app ASP.NET Core con TypeScript in Visual Studio
 
@@ -24,7 +25,7 @@ In questa esercitazione per Visual Studio sviluppo ASP.NET Core e TypeScript si 
 
 ::: moniker range=">=vs-2022"
 
-A partire da Visual Studio 2022, vedere Creare un'app ASP.NET Core con [Angular in Visual Studio](../javascript/tutorial-asp-net-core-with-angular.md) per creare un'app ASP.NET Core con Angular e TypeScript.
+A partire Visual Studio 2022, è consigliabile usare i modelli di applicazione ASP.NET Core a pagina singola per creare un'app ASP.NET Core con TypeScript. Per altre informazioni, vedere [Creare un'app ASP.NET Core](../javascript/tutorial-asp-net-core-with-angular.md) con Angular in Visual Studio o Creare [un'app ASP.NET Core](../javascript/tutorial-asp-net-core-with-vue.md)con Vue in Visual Studio .
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -58,14 +59,14 @@ In questa esercitazione verranno illustrate le procedure per:
     Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
 
-    Se è necessario installare il carico di lavoro ma Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
 
 ## <a name="create-a-new-aspnet-core-mvc-project"></a>Creare un nuovo ASP.NET Core MVC
 
 Visual Studio gestisce i file per una sola applicazione in un *progetto*. Il progetto include i file di configurazione, le risorse e il codice sorgente.
 
 >[!NOTE]
-> Per iniziare con un progetto ASP.NET Core e aggiungere un front-end TypeScript, vedere ASP.NET Core [con TypeScript.](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+> Per iniziare con un progetto ASP.NET Core vuoto e aggiungere un front-end TypeScript, [vedere ASP.NET Core con TypeScript.](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 
 In questa esercitazione si inizia con un semplice progetto contenente il codice per un'app ASP.NET Core MVC.
 
@@ -79,19 +80,19 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
     Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea.**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu superiore scegliere **File**  >  **Nuovo**  >  **Project**. Nel riquadro sinistro della finestra di **dialogo Nuovo Project** espandere Visual **C#** e quindi **scegliere .NET Core.** Nel riquadro centrale scegliere ASP.NET Core **Web - C#** e quindi scegliere **OK.**
+    Nella barra dei menu superiore scegliere **File**  >  **Nuovo**  >  **Project**. Nel riquadro sinistro della finestra **di dialogo Nuovo Project** espandere Visual **C#** e quindi **scegliere .NET Core.** Nel riquadro centrale scegliere ASP.NET Core **Web - C#** e quindi scegliere **OK.**
 
     Nella finestra di dialogo visualizzata selezionare **Applicazione Web (Model-View-Controller)** nella finestra di dialogo e quindi scegliere **Crea** (o **OK).**
 
     ![Scegliere il modello MVC](../javascript/media/aspnet-core-ts-mvc-template.png)
     ::: moniker-end
-    Se il modello di progetto Applicazione **Web ASP.NET Core** non è visualizzato, è necessario aggiungere il carico di **lavoro** sviluppo web e ASP.NET web. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
+    Se il modello di progetto Applicazione **Web ASP.NET Core** non è visualizzato, è necessario aggiungere il carico di **lavoro** Sviluppo web ASP.NET web. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 
     Visual Studio crea la nuova soluzione e apre il progetto nel riquadro destro.
 
 ## <a name="add-some-code"></a>Aggiungere codice
 
-1. In Esplora soluzioni (riquadro destro). Fare clic con il pulsante destro del mouse sul nodo **del progetto e scegliere Gestisci NuGet pacchetti**. Nella scheda **Sfoglia** cercare **Microsoft.TypeScript.MSBuild** e quindi  fare clic su Installa a destra per installare il pacchetto.
+1. In Esplora soluzioni (riquadro destro). Fare clic con il pulsante destro del mouse sul nodo **del progetto e scegliere Gestisci NuGet pacchetti**. Nella scheda **Sfoglia** cercare **Microsoft.TypeScript.MSBuild** e quindi fare  clic su Installa a destra per installare il pacchetto.
 
    ![Aggiungere NuGet pacchetto](../javascript/media/aspnet-core-ts-nuget.png)
 
@@ -124,7 +125,7 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 
    Questa configurazione fornisce un'introduzione di base all'uso di TypeScript. In altri scenari, ad esempio quando si usa gulp o [webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html), potrebbe essere necessario un percorso intermedio diverso per i file JavaScript transpile, a seconda degli strumenti e delle preferenze di configurazione, anziché *wwwroot/js.*
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere > Nuova cartella**. Usare gli script *dei nomi* per la nuova cartella.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto **e scegliere > Nuova cartella**. Usare gli script *dei nomi* per la nuova cartella.
 
 1. Fare clic con il pulsante destro *del mouse* sulla cartella scripts e scegliere > **Nuovo elemento**. Scegliere Il **file TypeScript,** digitare il nome *app.ts per* il nome del file e quindi fare clic su **Aggiungi**.
 
@@ -188,11 +189,11 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 
 ## <a name="build-the-application"></a>Compilare l'applicazione
 
-1. Scegliere **Compila > Compila soluzione**.
+1. Scegliere **Compila > Compila soluzione.**
 
    Anche se l'app viene compilata automaticamente quando viene eseguita, è necessario esaminare un evento che si verifica durante il processo di compilazione.
 
-1. Aprire la *cartella wwwroot/js* e trovare due nuovi file, *app.js* e il file source map, *app.js.map*. Questi file vengono generati dal compilatore TypeScript.
+1. Aprire la *cartella wwwroot/js* per trovare due nuovi file, *app.js* e il file source map, *app.js.map*. Questi file vengono generati dal compilatore TypeScript.
 
    I file della mappa di origine sono necessari per il debug.
 
@@ -202,7 +203,7 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 
     L'app viene aperta in un browser.
 
-    Nella finestra del browser verranno visualizzati l'intestazione **Welcome (Benvenuto)** e il **pulsante Click Me (Fare** clic su di me).
+    Nella finestra del browser verranno visualizzati l'intestazione **Benvenuto** e il **pulsante Click Me** .
 
     ![ASP.NET Core con TypeScript](../javascript/media/aspnet-core-ts-running-app.png)
 
@@ -225,7 +226,7 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 1. Seguire le istruzioni in [Gestione pacchetti npm](../javascript/npm-package-management.md#aspnet-core-projects) per aggiungere `package.json` un file al progetto. Verrà aggiunto il supporto npm al progetto.
 
    >[!NOTE]
-   > Per ASP.NET Core, è anche possibile usare [Gestione](/aspnet/core/client-side/libman/) librerie o yarn anziché npm per installare i file JavaScript e CSS lato client.
+   > Per ASP.NET Core, è anche possibile usare [Library Manager](/aspnet/core/client-side/libman/) o yarn anziché npm per installare i file JavaScript e CSS lato client.
 
 1. In questo esempio, aggiungere un file di definizione TypeScript per jQuery al progetto. Includere quanto segue nel *package.jsnel* file .
 
@@ -235,16 +236,16 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
    }
    ```
 
-   In questo modo viene aggiunto il supporto typeScript per jQuery. La libreria jQuery stessa è già inclusa nel modello di progetto MVC (vedere wwwroot/lib in Esplora soluzioni). Se si usa un modello diverso, potrebbe essere necessario includere anche il pacchetto npm jquery.
+   Verrà aggiunto il supporto TypeScript per jQuery. La libreria jQuery stessa è già inclusa nel modello di progetto MVC (vedere wwwroot/lib in Esplora soluzioni). Se si usa un modello diverso, potrebbe essere necessario includere anche il pacchetto npm jquery.
 
 1. Se il pacchetto in Esplora soluzioni non è installato, fare clic con il pulsante destro del mouse sul nodo npm e **scegliere Ripristina pacchetti**.
 
    >[!NOTE]
-   > In alcuni scenari, Esplora soluzioni può indicare che un pacchetto  npm non è sincronizzato conpackage.jsa causa di un problema noto descritto [qui.](https://github.com/aspnet/Tooling/issues/479) Ad esempio, il pacchetto potrebbe essere visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *package.js* in , riavviando Visual Studio e aggiungendo nuovamente *ilpackage.js* nel file come descritto in precedenza in questo articolo.
+   > In alcuni scenari, Esplora soluzioni può indicare che un pacchetto npm non è sincronizzato conpackage.jsa causa di un problema noto descritto [qui.](https://github.com/aspnet/Tooling/issues/479)  Ad esempio, il pacchetto potrebbe essere visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *package.js* in , riavviando Visual Studio e aggiungendo nuovamente il *package.js* nel file come descritto in precedenza in questo articolo.
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella scripts e **scegliere Aggiungi**  >  **nuovo elemento.**
 
-1. Scegliere **File TypeScript**, libreria *dei tipi.ts* e scegliere **Aggiungi**.
+1. Scegliere **File TypeScript**, type *library.ts* e scegliere **Aggiungi**.
 
 1. In *library.ts* aggiungere il codice seguente.
 
@@ -263,9 +264,9 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 
    Per semplicità, questo codice visualizza un messaggio usando jQuery e un avviso.
 
-   Con le definizioni dei tipi TypeScript per jQuery aggiunte, si ottiene il supporto IntelliSense per gli oggetti jQuery quando si digita "." dopo un oggetto jQuery, come illustrato di seguito.
+   Dopo aver aggiunto le definizioni dei tipi TypeScript per jQuery, è possibile ottenere il supporto IntelliSense per gli oggetti jQuery quando si digita "." dopo un oggetto jQuery, come illustrato di seguito.
 
-   ![jquery IntelliSense](../javascript/media/aspnet-core-ts-jquery-intellisense.png)
+   ![IntelliSense per jquery](../javascript/media/aspnet-core-ts-jquery-intellisense.png)
 
 1. In _Layout.cshtml aggiornare i riferimenti allo script in modo da includere `library.js` .
 
@@ -286,7 +287,7 @@ In questa esercitazione si inizia con un semplice progetto contenente il codice 
 
     L'app viene aperta nel browser.
 
-    Fare **clic su OK** nell'avviso per visualizzare la pagina aggiornata alla versione di **jQuery: 3.3.1!**.
+    Fare **clic su OK** nell'avviso per visualizzare che la pagina aggiornata alla versione di **jQuery è: 3.3.1\**.
 
     ![Esempio di jquery](../javascript/media/aspnet-core-ts-jquery-example.png)
 

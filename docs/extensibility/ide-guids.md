@@ -11,18 +11,19 @@ ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 884f2e7bb25eacfd3118632082d321ceb2b45da8
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0b7101f9e23bba9b44287a4cb8e01e8c61551b01e5c3fc3a9d82811214b87b0e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904929"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121275736"
 ---
 # <a name="ide-guids"></a>GUID dell'IDE
 
-La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo integrato <xref:Microsoft.VisualStudio.VSConstants> (IDE), come elencato nella tabella seguente.
+La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo <xref:Microsoft.VisualStudio.VSConstants> integrato (IDE) come elencato nella tabella seguente.
 
 ## <a name="core-systems"></a>Sistemi di base
 
@@ -37,7 +38,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo integrato <x
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
-## <a name="broadly-visible-components"></a>Componenti a livello generale
+## <a name="broadly-visible-components"></a>Componenti visibili su vasta gamma
 
 |Costante|GUID|
 |--------------|----------|
@@ -93,7 +94,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo integrato <x
 
 |Costante|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-0000000046|
+|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
 ## <a name="task-list-guids"></a>GUID dell'elenco attività
 
@@ -111,7 +112,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo integrato <x
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>GUID della pagina del selettore di componenti
+## <a name="component-selector-page-guids"></a>GUID della pagina del selettore di componente
 
 |Costanti|GUID|
 |---------------|----------|
@@ -119,7 +120,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo integrato <x
 |Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>GUID della shell vari
+## <a name="miscellaneous-shell-guids"></a>GUID vari della shell
 
 |Costanti|GUID|
 |---------------|----------|
@@ -127,7 +128,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo integrato <x
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Costanti COM nel codice gestito](../extensibility/com-constants-in-managed-code.md)
 - [Costanti IDE](../extensibility/ide-constants.md)

@@ -1,6 +1,6 @@
 ---
 title: Elenco attività, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come utilizzare la pagina Elenco attività nella sezione ambiente per aggiungere, eliminare e modificare i token di commento che generano Elenco attività promemoria.
+description: Informazioni su come usare la Elenco attività nella sezione Ambiente per aggiungere, eliminare e modificare i token di commento che generano Elenco attività promemoria.
 ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
@@ -22,16 +22,17 @@ ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 59eba4addc21c47db19de212c527e744428973f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b96d65b74c6d7ed1816051d29d5335c4bba46aec50c5c600886f5e6f123221eb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838366"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121258642"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>Finestra di dialogo Opzioni: ambiente \> elenco attività
+# <a name="options-dialog-box-environment--task-list"></a>Finestra di dialogo Opzioni: Ambiente \> Elenco attività
 
 La pagina Opzioni consente di aggiungere, eliminare e modificare i token di commento che generano i promemoria di **Elenco attività**. Per visualizzare queste impostazioni selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e quindi scegliere **Elenco attività**.
 

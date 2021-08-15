@@ -11,14 +11,15 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e938cdaedf8541d787673371cfce3d07e005711f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 617c94220d13eed915a854bb9cf638bb390db1aeaa3a111c089d65283446f15e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904643"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447766"
 ---
 # <a name="sccdirdiff-function"></a>Funzione SccDirDiff
 Questa funzione visualizza le differenze tra la directory locale corrente sul disco client e il progetto corrispondente nel controllo del codice sorgente.
@@ -79,12 +80,12 @@ SCCRTN SccDirDiff(
 |---------------|--------------------|
 |SCC_DIFF_IGNORECASE|Confronto senza distinzione tra maiuscole e minuscole (può essere usato per diff rapide o oggetti visivi).|
 |SCC_DIFF_IGNORESPACE|Ignora gli spazi vuoti (può essere usato per le diff rapide o gli oggetti visivi).|
-|SCC_DIFF_QD_CONTENTS|Se supportato dal plug-in del controllo del codice sorgente, confronta automaticamente la directory byte per byte.|
+|SCC_DIFF_QD_CONTENTS|Se supportato dal plug-in del controllo del codice sorgente, confronta automaticamente la directory, byte per byte.|
 |SCC_DIFF_QD_CHECKSUM|Se supportato dal plug-in, confronta automaticamente la directory tramite un checksum o, se non è supportato, torna a SCC_DIFF_QD_CONTENTS.|
 |SCC_DIFF_QD_TIME|Se supportato dal plug-in, confronta automaticamente la directory tramite il relativo timestamp o, se non è supportato, SCC_DIFF_QD_CHECKSUM o SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
-> Questa funzione usa gli stessi flag di comando di [SccDiff.](../extensibility/sccdiff-function.md) Tuttavia, un plug-in di controllo del codice sorgente può scegliere di non supportare l'operazione di "diff rapido" per le directory.
+> Questa funzione usa gli stessi flag di comando di [SccDiff.](../extensibility/sccdiff-function.md) Tuttavia, un plug-in di controllo del codice sorgente può scegliere di non supportare l'operazione "quick-diff" per le directory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

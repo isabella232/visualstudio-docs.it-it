@@ -1,7 +1,7 @@
 ---
 title: Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
 titleSuffix: ''
-description: "' Si è verificato un errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato .' Visualizzare le informazioni su questo riferimento all'errore di debug remoto di Visual Studio."
+description: "\"Si è verificato un errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.\" Visualizzare informazioni su questa Visual Studio errore di debug remoto."
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,23 +21,24 @@ ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e4c33065feff6b4a2a0d3e292004b51fda744cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bee6fcbe0ddb1a8d179de78c3495f1dcf1bbdad84039ecaa7b5d8f60954649d2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858033"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346401"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
 Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nelle situazioni seguenti:
 
-- Il debugger è impostato sulla **modalità di compatibilità nativa** o la **modalità di compatibilità gestita** è selezionata nella pagina **strumenti > opzioni > debug**
+- Il debugger è impostato sulla **modalità di compatibilità nativa** o la modalità di **compatibilità** gestita è selezionata nella pagina Strumenti **> opzioni > debug**
 
 - Si esegue il debug di codice C++ (C++ /CLI) gestito.
 
-- In Visual Studio 2013, quando l'opzione **Abilita modifica e continuazione nativa** è selezionata nella pagina **strumenti > opzioni > debug**
+- In Visual Studio 2013, quando **l'opzione** Abilita Modifica e continuazione nativa è selezionata nella pagina > **opzioni > debug**
 
 - Alcuni scenari di debug di terze parti
 
@@ -53,5 +54,5 @@ Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nel
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Errori di debug remoto e risoluzione dei problemi](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debug remoto](../debugger/remote-debugging.md)

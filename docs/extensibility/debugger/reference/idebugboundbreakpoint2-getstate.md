@@ -1,6 +1,6 @@
 ---
-description: Ottiene lo stato del punto di interruzione associato.
-title: 'IDebugBoundBreakpoint2:: GetState | Microsoft Docs'
+description: Ottiene lo stato di questo punto di interruzione associato.
+title: IDebugBoundBreakpoint2::GetState | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 834f0b35eb902d8e5bcea7c9ac7f3c6da5c895fb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2ac9066b0b7719cf6cfe248b2faddb0d7fbc4e2d8d96d88a176729700678a916
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088853"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262412"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
-Ottiene lo stato del punto di interruzione associato.
+Ottiene lo stato di questo punto di interruzione associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,13 +44,13 @@ int GetState(
 
 ## <a name="parameters"></a>Parametri
 `pState`\
-out Restituisce un valore dall'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) che descrive lo stato del punto di interruzione.
+[out] Restituisce un valore dall'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) che descrive lo stato del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CBoundBreakpoint` oggetto semplice che espone l'interfaccia [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CBoundBreakpoint` semplice che espone [l'interfaccia IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)

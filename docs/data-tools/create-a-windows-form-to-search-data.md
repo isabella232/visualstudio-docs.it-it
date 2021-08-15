@@ -1,6 +1,6 @@
 ---
 title: Creare un Windows Form per la ricerca di dati
-description: Leggere un esempio di come creare un Windows Form per eseguire ricerche nei dati. Creare l'applicazione Windows Form, l'origine dati e il form. Aggiungere la parametrizzazione. Testare l'app.
+description: Leggere un esempio di come creare un modulo Windows per la ricerca dei dati. Creare l'Windows Form, l'origine dati e il form. Aggiungere la parametrizzazione. Testare l'app.
 ms.custom: SEO-VS-2020
 ms.date: 06/07/2021
 ms.topic: conceptual
@@ -14,14 +14,15 @@ ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2ce9d3eeebf42855ad69f02b2d72330190a2b390
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 8236f6c030e70033a77aa9c71d759dedaa453608c20a957fc63e2f8743613e4a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111761095"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347584"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
 
@@ -29,7 +30,7 @@ Uno scenario applicativo comune prevede la visualizzazione dei dati selezionati 
 
 L'uso di query con parametri rende più efficiente il funzionamento dell'applicazione, consentendo al database di eseguire in modo ottimale le operazioni di filtro rapido dei record. La richiesta invece di un'intera tabella del database, il relativo trasferimento in rete e l'uso della logica dell'applicazione per trovare i record desiderati possono comportare una riduzione della velocità e dell'efficienza dell'applicazione.
 
-È possibile aggiungere query con parametri a qualsiasi TableAdapter (e controlli per accettare i valori dei parametri ed eseguire la query) usando **la** finestra di dialogo Generatore criteri di ricerca . Per aprire la finestra di dialogo, scegliere **Aggiungi query** nel menu **Dati** o da qualsiasi smart tag di TableAdapter.
+È possibile aggiungere query con parametri a qualsiasi Oggetto TableAdapter (e controlli per accettare i valori dei parametri ed eseguire la query) usando **la** finestra di dialogo Generatore criteri di ricerca . Per aprire la finestra di dialogo, scegliere **Aggiungi query** nel menu **Dati** o da qualsiasi smart tag di TableAdapter.
 
 Le attività illustrate nella procedura dettagliata sono le seguenti:
 
@@ -46,19 +47,19 @@ Le attività illustrate nella procedura dettagliata sono le seguenti:
 - Immissione di parametri nel modulo ed esecuzione della query con parametri.
 
 > [!NOTE]
-> Le procedure descritte in questo articolo si applicano solo .NET Framework Windows Forms progetti, non ai progetti Windows Forms .NET Core.
+> Le procedure descritte in questo articolo si applicano solo ai .NET Framework Windows Forms e non ai progetti .NET Core Windows Forms.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 È necessario avere installato il **carico di lavoro Archiviazione dati ed** elaborazione. Vedere [Modificare Visual Studio](../install/modify-visual-studio.md).
 
-Questa procedura dettagliata usa SQL Server Express LocalDB e il database di esempio Northwind.
+Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se localDB non è SQL Server Express, installarlo dalla pagina di [download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nel **Programma di installazione di Visual Studio**, è possibile installare SQL Server Express LocalDB come parte  del carico di lavoro Di archiviazione ed elaborazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina di [download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nel **Programma di installazione di Visual Studio**, è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Archiviazione ed elaborazione dati o come singolo componente.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **Esplora oggetti di SQL Server.** (Esplora oggetti di SQL Server viene installato come parte  del carico di lavoro Archiviazione ed elaborazione dati nel **Programma di installazione di Visual Studio**. Espandere il **nodo SQL Server.** Fare clic con il pulsante destro del mouse sull'istanza di LocalDB e **scegliere Nuova query**.
+    1. In Visual Studio aprire la **finestra** SQL Server Esplora oggetti. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Archiviazione ed elaborazione dati nel **Programma di installazione di Visual Studio**. Espandere il **nodo SQL Server.** Fare clic con il pulsante destro del mouse Local DB'istanza di query e **scegliere Nuova query**.
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -68,11 +69,11 @@ Questa procedura dettagliata usa SQL Server Express LocalDB e il database di ese
 
        Dopo un breve periodo di tempo, l'esecuzione della query viene completata e viene creato il database Northwind.
 
-## <a name="create-the-windows-forms-application"></a>Creare l'Windows Forms di distribuzione
+## <a name="create-the-windows-forms-application"></a>Creare l'Windows Forms
 
 :::moniker range="vs-2017"
 
-Creare un nuovo **Windows Forms app (.NET Framework)** per C# o Visual Basic. Assegnare al progetto il nome **WindowsSearchForm**.
+Creare un nuovo **progetto Windows Forms App (.NET Framework)** per C# o Visual Basic. Assegnare al progetto il nome **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
@@ -104,7 +105,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 :::moniker range=">=vs-2019"
 
-Creare un nuovo **Windows Forms app (.NET Framework)** per C# o Visual Basic. Assegnare al progetto il nome **WindowsSearchForm**.
+Creare un nuovo **progetto Windows Forms App (.NET Framework)** per C# o Visual Basic. Assegnare al progetto il nome **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
@@ -138,7 +139,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form:
 
-1. Assicurarsi che la finestra Windows Forms progettazione abbia lo stato attivo e che la **finestra Origini** dati sia aperta e bloccata.
+1. Assicurarsi che la finestra Windows Form abbia lo stato attivo e che la **finestra Origini** dati sia aperta e bloccata.
 
 1. Espandere il nodo **Customers** nella finestra **Origini dati**.
 
