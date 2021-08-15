@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET | Microsoft Docs'
-description: Esaminare la visualizzazione chiamante/chiamato dei dati di profilatura della memoria .NET, che mostra l'allocazione e i dati di temporizzazione per una funzione selezionata e le relative funzioni padre e figlio.
+description: Esaminare la visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET, che mostra i dati di allocazione e intervallo per una funzione selezionata e le funzioni padre e figlio di essa.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 56f56be90ccc72a361b774dde2d0f4215ab462f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3615ce4ae26c7fdd3d4473f9abf3076df0ee830bde1e8449278c901245dbdc5f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886418"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257342"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET
 La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET raccolti con il metodo di strumentazione consente di visualizzare i dati relativi ad allocazione e temporizzazione per una funzione selezionata e le relative funzioni padre e figlio di tale funzione. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -35,12 +36,12 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome funzione**|Nome della funzione.|
+|**Nome della funzione**|Nome della funzione.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID di processo dell'esecuzione della profilatura.|
 |**Nome processo**|Nome assegnato al processo.|
@@ -96,7 +97,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
 |**Tempo inclusivo applicazione minimo**|Tempo inclusivo applicazione minimo di una chiamata a questa funzione in questo contesto.|
 
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione
- I valori di tempo esclusivo applicazione indicano il tempo dedicato alla funzione, escluso il tempo trascorso nelle funzioni figlio. Il tempo indicato esclude anche il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
+ I valori di tempo esclusivo applicazione indicano il tempo dedicato alla funzione, escluso il tempo trascorso nelle funzioni figlio. Il tempo indicato esclude anche il tempo impiegato nelle chiamate al sistema operativo, ad esempio i commutatori di contesto e le operazioni di input/output.
 
 |Colonna|Descrizione|
 |------------|-----------------|
@@ -107,7 +108,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione in questo contesto.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+- [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione chiamante/chiamato : dati di campionamento della memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione chiamante/chiamato : dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)

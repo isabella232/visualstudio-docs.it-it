@@ -1,6 +1,6 @@
 ---
 title: Documenti, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina ambienti nella sezione documenti per controllare la visualizzazione dei documenti nell'IDE e gestire le modifiche esterne a documenti e file.
+description: Informazioni su come usare la pagina Ambienti nella sezione Documenti per controllare la visualizzazione dei documenti nell'IDE e gestire le modifiche esterne a documenti e file.
 ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
@@ -31,16 +31,17 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed6833bd60854cf2e3bcfbab76d57c7010f7863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d86d2606d50d3e65adf9a651a143709d89f83650df83fb90322cac7c7b48c434
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121258954"
 ---
-# <a name="options-dialog-box-environment--documents"></a>Finestra di dialogo Opzioni: \> documenti ambiente
+# <a name="options-dialog-box-environment--documents"></a>Finestra di dialogo Opzioni: Documenti \> dell'ambiente
 
 Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei documenti nell'ambiente di sviluppo integrato (IDE) e gestire le modifiche esterne apportate a documenti e file. Per accedere a questa finestra di dialogo fare clic su **Opzioni** nel menu **Strumenti** e quindi selezionare **Ambiente** > **Documenti**.
 
@@ -73,7 +74,7 @@ Selezionare questa opzione per visualizzare una finestra di messaggio quando il 
 Selezionare questa opzione per il nodo **File esterni** in **Esplora soluzioni**. I file esterni sono file non associati a un progetto o a una soluzione, che possono tuttavia essere visualizzati in **Esplora soluzioni** per comodità.
 
 > [!NOTE]
-> Selezionare questa opzione per abilitare il comando **Visualizza nel browser** dal menu **file** per i documenti Web non inclusi nell'applicazione Web attiva.
+> Selezionare questa opzione per abilitare il **comando Visualizza** nel browser nel menu **File** per i documenti Web non inclusi nell'applicazione Web attiva.
 
 **Elementi salvati nel progetto File esterni**
 

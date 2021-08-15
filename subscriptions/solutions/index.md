@@ -1,18 +1,18 @@
 ---
-title: Le sottoscrizioni supportano soluzioni
-description: Elenco di file INCLUDEs per le sottoscrizioni Visual Studio il contenuto del widget
+title: Soluzioni di supporto per le sottoscrizioni
+description: Elenco di file INCLUDEs per le sottoscrizioni Visual Studio supportano il contenuto del widget
 ms.topic: conceptual
 ms.assetid: 478648b9-f6f0-4ea3-83b4-5cffa196a496
 robots: noindex, nofollow
 author: evanwindom
 ms.author: v-evwin
 ms.date: 12/07/2020
-ms.openlocfilehash: da284ea9403e4aab929e175f95508cc16684fc60
-ms.sourcegitcommit: a740129796159a69c704d9d372edaa7a7f191d17
+ms.openlocfilehash: 85eb4222cf69c678844df34f0b2e2426151211d451ca4191aaffa647c5985e30
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111530454"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121241781"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Visual Studio sottoscrizioni supportano i file INCLUDE del contenuto del widget
 
@@ -27,7 +27,7 @@ ms.locfileid: "111530454"
 [!INCLUDE [I only see VSDE](admin-solutions/includes/only-see-vsde.md)]
 
 
-## <a name="benefit-activations"></a>Attivazioni di vantaggi
+## <a name="benefit-activations"></a>Attivazioni dei vantaggi
 
 [!INCLUDE [Error while activating Azure monthly credit](benefit-activation/includes/error-while-activating-azure-monthly-credit.md)]
 
@@ -102,7 +102,7 @@ ms.locfileid: "111530454"
 
 [!INCLUDE [Help me renew via Microsoft Store](renewing-purchasing-or-canceling/help-renewing/includes/help-me-renew-microsoft-store.md)]
 
-### <a name="help-with-canceling"></a>Guida per l'annullamento
+### <a name="help-with-canceling"></a>Guida all'annullamento
 [!INCLUDE [Help me cancel monthly or annual subscriptions](renewing-purchasing-or-canceling/help-canceling/includes/help-me-cancel-monthly-annual.md)]
 
 ### <a name="order-or-purchase-status"></a>Stato dell'ordine o dell'acquisto
@@ -110,7 +110,7 @@ ms.locfileid: "111530454"
 
 [!INCLUDE [View my invoice](renewing-purchasing-or-canceling/order-or-purchase-status/includes/viewing-my-bill.md)]
 
-## <a name="issues-with-signing-in"></a>Problemi relativi all'accesso 
+## <a name="issues-with-signing-in"></a>Problemi di accesso 
 
 [!INCLUDE [How do I change my sign-in email for Cloud](signing-in/includes/how-do-i-change-my-sign-in-email-cloud-self.md)]
 

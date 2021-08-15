@@ -1,5 +1,5 @@
 ---
-title: DA0017-frequenza elevata di paging di memoria attiva su disco | Microsoft Docs
+title: DA0017 - Frequenze elevate di paging della memoria attiva su disco | Microsoft Docs
 description: I dati relativi alle prestazioni di sistema raccolti nell'esecuzione della profilatura indicano che si è verificata una frequenza elevata di paging di memoria attiva da e su disco durante la profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,15 +11,16 @@ ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc3be6c354e7ac412ffa069caef4ee09396d6cb5
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 5d3c716572179fa248f0a05a3dac8a9ed51e5bddf15edcf337b283318442fc45
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466089"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257186"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Frequenze elevate di paging di memoria attiva su disco
 
@@ -46,7 +47,7 @@ ms.locfileid: "102466089"
  Le pagine vengono spesso lette dal disco o scritte nel disco mediante operazioni di paging in blocco. Ad esempio, il numero di output di pagine al secondo è spesso maggiore del numero di scritture di pagine al secondo. Ciò avviene perché il numero di pagine generate al secondo include anche le pagine di dati modificate dalla cache dei file di sistema. Tuttavia, non è sempre facile determinare quale processo è direttamente responsabile del paging o perché.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione [Contrassegni](../profiling/marks-view.md) . Individuare la colonna **Memoria\Pagine/sec**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'attività I/O di paging è più elevata rispetto ad altre fasi.
+ Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla [visualizzazione](../profiling/marks-view.md) Contrassegni. Individuare la colonna **Memoria\Pagine/sec**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'attività I/O di paging è più elevata rispetto ad altre fasi.
 
  Se si raccolgono dati del profilo per un'applicazione ASP.NET in un scenario del test di carico, provare a eseguire nuovamente il test di carico su un computer configurato con memoria fisica (o RAM) aggiuntiva.
 

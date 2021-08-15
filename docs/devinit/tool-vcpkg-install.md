@@ -1,6 +1,6 @@
 ---
 title: vcpkg-install
-description: strumento devinit vcpkg-install.
+description: Devinit tool vcpkg-install.
 ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
@@ -11,46 +11,46 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8a4cbe6bd1da12985da87d2f872dc74f988ef213
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 290b18af11dfdefc496777dbacfee962446a18b85a94d1013e489bdcdf2985c6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672652"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308567"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è incentrata sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di Visual Studio di lavoro. Come parte di questo `devinit` e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community per sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo `vcpkg-install` strumento viene usato per acquisire le librerie C/C++, denominate porte, usando [vcpkg](https://github.com/microsoft/vcpkg).
+Lo `vcpkg-install` strumento viene usato per acquisire librerie C/C++ (denominate porte) [usando](https://github.com/microsoft/vcpkg)vcpkg .
 
 ## <a name="usage"></a>Utilizzo
 
-Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
+Se `input` entrambe le proprietà e vengono omesse o vuote, lo strumento seguirà `additionalOptions` il [comportamento](#default-behavior) predefinito descritto di seguito.
 
 | Nome                                             | Tipo   | Obbligatoria | valore                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
-| **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                   |
-| [**input**](#input)                              | string | Sì      | Pacchetti da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                       |
-| [**additionalOptions**](#additional-options)     | stringa | No       | Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti.                        |
+| **Commenti**                                     | stringa | No       | Proprietà comments facoltativa. Non usato.                                                   |
+| [**Input**](#input)                              | string | Sì      | Pacchetti da installare. Per [informazioni dettagliate,](#input) vedere Input di seguito.                       |
+| [**additionalOptions**](#additional-options)     | stringa | No       | Per [informazioni dettagliate, vedere](#additional-options) Opzioni aggiuntive di seguito.                        |
 
 ### <a name="input"></a>Input
 
-La `input` proprietà deve essere dell'oggetto `name` `vcpkg` da installare o di un elenco di nomi separati da spazi per installare più pacchetti. Un elenco delle porte disponibili è reperibile nel [repository GitHub vcpkg](https://github.com/microsoft/vcpkg/tree/master/ports).
+La `input` proprietà deve essere dell'oggetto da installare o un elenco di nomi separati `name` da spazi per installare più `vcpkg` pacchetti. Un elenco delle porte disponibili è disponibile nel [vcpkg GitHub.](https://github.com/microsoft/vcpkg/tree/master/ports)
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Le opzioni aggiuntive vengono passate direttamente al comando [vcpkg](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true) e sono documentate nel [repository GitHub vcpkg](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md).
+Le opzioni aggiuntive vengono passate direttamente [al comando vcpkg](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true) e sono documentate nel [vcpkg GitHub.](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md)
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello `vcpkg-install` strumento è l'errore, come `input` richiesto.
+Il comportamento predefinito dello `vcpkg-install` strumento è l'errore come `input` richiesto.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito sono riportati alcuni esempi di come eseguire `vcpkg-install` usando un `.devinit.json` .
+Di seguito sono riportati esempi di come eseguire `vcpkg-install` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-the-sdl2-port"></a>.devinit.jssu che installerà la porta SDL2:
+#### <a name="devinitjson-that-will-install-the-sdl2-port"></a>.devinit.jssu che installerà la porta sdl2:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -63,7 +63,7 @@ Di seguito sono riportati alcuni esempi di come eseguire `vcpkg-install` usando 
 }
 ```
 
-#### <a name="devinitjson-that-will-install-multiple-ports"></a>.devinit.json che installerà più porte:
+#### <a name="devinitjson-that-will-install-multiple-ports"></a>.devinit.jssu che installerà più porte:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

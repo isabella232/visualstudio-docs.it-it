@@ -1,6 +1,6 @@
 ---
 title: Novità di Live Unit Testing in Visual Studio 2017
-description: Questo articolo descrive le nuove funzionalità aggiunte a Live Unit Testing in ogni versione di Visual Studio a partire da Visual Studio 2017 versione 15,3.
+description: Questo articolo descrive le nuove funzionalità aggiunte a Live Unit Testing in ogni versione di Visual Studio a partire da Visual Studio 2017 versione 15.3.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 10/11/2017
@@ -13,12 +13,12 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: ae1caef04c1ccd1c51c38ddef5dc8c783bdbfaa9
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 0b5ba0b657f42ef12d29e00fe870fb4522c30275ffdc7fb1ead42f373d876332
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328834"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121226487"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Novità di Live Unit Testing per Visual Studio 2017
 
@@ -40,7 +40,7 @@ A partire da Visual Studio 2017 versione 15.4, Live Unit Testing include miglior
 
 - **Prestazioni e affidabilità**: Live Unit Testing ora assicura una migliore capacità di rilevamento da parte del sistema del caricamento completo dei progetti, evitando così che Live Unit Testing venga interrotto. I miglioramenti delle prestazioni di compilazione evitano anche che i progetti MSBuild vengano sottoposti a una nuova valutazione se il sistema rileva che non è stata apportata alcuna modifica al file di progetto.
 
-- **Miglioramenti vari dell'interfaccia utente**: l'opzione **Live Test Set-Include/Exclude** (Set Live Test-Includi/Escludi) disponibile facendo clic con il pulsante destro del mouse, è stata rinominata **Live Unit Testing Include/Exclude** (Includi/Escludi Live Unit Testing) in quanto creava confusione. L'opzione **Reset clean** (Reimposta e pulisci) nel menu **Test** > **Live Unit Testing** è stata rimossa. È ora accessibile selezionando **strumenti**  >  **Opzioni**  >  **Live unit testing** e selezionando **Elimina dati salvati**.
+- **Miglioramenti vari dell'interfaccia utente**: l'opzione **Live Test Set-Include/Exclude** (Set Live Test-Includi/Escludi) disponibile facendo clic con il pulsante destro del mouse, è stata rinominata **Live Unit Testing Include/Exclude** (Includi/Escludi Live Unit Testing) in quanto creava confusione. L'opzione **Reset clean** (Reimposta e pulisci) nel menu **Test** > **Live Unit Testing** è stata rimossa. È ora accessibile selezionando **Strumenti** Opzioni Live Unit Testing e quindi Elimina dati  >    >   **persistenti**.
 
 ## <a name="version-153"></a>Versione 15.3
 

@@ -1,6 +1,6 @@
 ---
 title: CommentMarkAtProfile | Microsoft Docs
-description: Usare il metodo CommentMarkAtProfile per inserire un valore di timestamp, un indicatore numerico e una stringa di commento nel file con estensione vsp.
+description: Usare il metodo CommentMarkAtProfile per inserire un valore timestamp, un segno numerico e una stringa di commento nel file con estensione vsp.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,18 +11,19 @@ ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b40620388ffb3aefcd77eeb3f60355ed293ea59d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17726150fc1fa963e54fe16baa244c392a691093a9afc5ce578fe7eba435ceb5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970569"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257238"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-Il `CommentMarkAtProfile` metodo inserisce un valore di timestamp, un indicatore numerico e una stringa di commento nel file con *estensione VSP* . Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.
+Il `CommentMarkAtProfile` metodo inserisce un valore timestamp, un segno numerico e una stringa di commento nel file *con estensione vsp.* Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -118,4 +119,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio Informazioni di riferimento sulle API del profiler (native)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -13,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: e0fdabe38f2696540db1a3b629609dbc1c42d821
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 29118ac1526aaa7a8c3790de8b519e8ec131a7f682e46e187f303d25535e0653
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106083629"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121313666"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Pubblicare un'app Web in Servizio app di Azure usando Visual Studio per Mac
 

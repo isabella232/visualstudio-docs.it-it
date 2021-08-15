@@ -1,6 +1,6 @@
 ---
-title: Creare un set di dati con l'Progettazione DataSet
-description: In questa procedura dettagliata creare un set di dati usando il Progettazione DataSet. Comprendere il processo di creazione di un nuovo progetto e di aggiunta di un nuovo elemento del set di dati.
+title: Creare un set di dati con il Progettazione DataSet
+description: In questa procedura dettagliata viene creato un set di dati usando il Progettazione DataSet. Comprendere il processo di creazione di un nuovo progetto e l'aggiunta di un nuovo elemento DataSet.
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -13,46 +13,47 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b1fe1d75673dc47f423cf398118230cd1530def0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be2657c94d49c73d245e7bf8bbb59e3b0b018ba84d942f6144b5e0360f968d5e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866229"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121327760"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: creare un set di dati con l'Progettazione DataSet
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: Creare un set di dati con il Progettazione DataSet
 
-In questa procedura dettagliata viene creato un set di dati usando il **Progettazione DataSet**. Questo articolo illustra il processo di creazione di un nuovo progetto e di aggiunta di un nuovo elemento del **set di dati** . Verrà illustrato come creare tabelle basate su tabelle in un database senza utilizzare una procedura guidata.
+In questa procedura dettagliata viene creato un set di dati usando **il Progettazione DataSet**. L'articolo illustra il processo di creazione di un nuovo progetto e l'aggiunta di un nuovo **elemento DataSet.** Si apprenderà come creare tabelle basate su tabelle in un database senza usare una procedura guidata.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
+Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel Programma di installazione di Visual Studio SQL Server Express database locale può essere installato come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nell'Programma di installazione di Visual Studio, SQL Server Express Local DB può essere installato come parte del  carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
 
-2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
+2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **Esplora oggetti di SQL Server** . Esplora oggetti di SQL Server viene installato come parte del carico di lavoro di **elaborazione e archiviazione dei dati** nel programma di installazione di Visual Studio. Espandere il nodo **SQL Server** . Fare clic con il pulsante destro del mouse sull'istanza del database locale e scegliere **nuova query**.
+    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte del carico **di** lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
 
-       Si apre una finestra dell'editor di query.
+       Verrà visualizzata una finestra dell'editor di query.
 
-    2. Copiare lo [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
+    2. Copiare [lo script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
 
-    3. Incollare lo script T-SQL nell'editor di query, quindi scegliere il pulsante **Execute (Esegui** ).
+    3. Incollare lo script T-SQL nell'editor di query e quindi scegliere **il pulsante** Esegui.
 
-       Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
+       Dopo un breve periodo di tempo, l'esecuzione della query termina e viene creato il database Northwind.
 
 ## <a name="create-a-new-windows-forms-application-project"></a>Creare un nuovo progetto di applicazione Windows Form
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
+3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
 
-4. Denominare il progetto **DatasetDesignerWalkthrough**, quindi scegliere **OK**.
+4. Assegnare al progetto **il nome DatasetDesignerWalkthrough** e quindi scegliere **OK.**
 
      Visual Studio aggiunge il progetto a **Esplora soluzioni** e visualizza un nuovo form nella finestra di progettazione.
 
@@ -62,17 +63,17 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
-2. Nel riquadro a sinistra selezionare **dati**, quindi selezionare **DataSet** nel riquadro centrale.
+2. Nel riquadro sinistro selezionare Dati **e** quindi Selezionare **DataSet** nel riquadro centrale.
 
-3. Denominare DataSet **NorthwindDataSet**, quindi scegliere **Aggiungi**.
+3. Assegnare al set **di dati il nome NorthwindDataset** e quindi scegliere **Aggiungi.**
 
-     Visual Studio aggiunge un file denominato **NorthwindDataSet. xsd** al progetto e lo apre nell' **Progettazione DataSet**.
+     Visual Studio aggiunge un file denominato **NorthwindDataset.xsd** al progetto e lo apre nel **Progettazione DataSet**.
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Creare una connessione dati in Esplora server
 
 1. Scegliere **Esplora server** dal menu **Visualizza**.
 
-2. In **Esplora server** fare clic sul pulsante **Connetti al database** .
+2. In **Esplora server** fare clic sul **pulsante Connessione al database** .
 
 3. Creare una connessione al database di esempio Northwind.
 
@@ -82,33 +83,33 @@ In questa sezione viene illustrato come aggiungere tabelle al set di dati.
 
 ### <a name="to-create-the-customers-table"></a>Per creare la tabella Customers
 
-1. Espandere la connessione dati creata in **Esplora server**, quindi espandere il nodo **tabelle** .
+1. Espandere la connessione dati creata in **Esplora server**, quindi espandere il **nodo** Tabelle .
 
-2. Trascinare la tabella **Customers** da **Esplora server** nel **Progettazione DataSet**.
+2. Trascinare **la tabella** Customers **Esplora server** **nella** Progettazione DataSet .
 
-     Al set di dati vengono aggiunte una tabella dati **Customers** e **CustomersTableAdapter** .
+     Una **tabella dati Customers** e **customersTableAdapter** vengono aggiunte al set di dati.
 
 ### <a name="to-create-the-orders-table"></a>Per creare la tabella Orders
 
-- Trascinare la tabella **Orders** da **Esplora server** nel **Progettazione DataSet**.
+- Trascinare **la tabella Orders** **Esplora server** **nella** Progettazione DataSet .
 
-     Al set di dati vengono aggiunte una tabella di dati **Orders** , **OrdersTableAdapter** e una relazione tra le tabelle **Customers** e **Orders** .
+     Al **set** di dati vengono aggiunte una tabella di dati **Orders, OrdersTableAdapter,** e una relazione dati tra le tabelle **Customers** e **Orders.**
 
 ### <a name="to-create-the-orderdetails-table"></a>Per creare la tabella OrderDetails
 
-- Trascinare la tabella **Order Details** da **Esplora server** nel **Progettazione DataSet**.
+- Trascinare **la tabella Dettagli** ordine Esplora server **nella** Progettazione DataSet . 
 
-     Una tabella dati **Order Details** , **OrderDetailsTableAdapter**, e una relazione dati tra le tabelle **Orders** e **OrderDetails** vengono aggiunte al set di dati.
+     Al **set di dati** vengono aggiunte una tabella di dati Order **Details, OrderDetailsTableAdapter,** e una relazione dati tra le tabelle **Orders** e **OrderDetails.**
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 - Salvare il set di dati.
 
-- Selezionare gli elementi nella finestra **origini dati** e trascinarli in un modulo. Per altre informazioni, vedere [associare Windows Form controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+- Selezionare gli elementi nella **finestra Origini** dati e trascinarli in un form. Per altre informazioni, vedere [Associare Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-- Aggiungere altre query agli oggetti TableAdapter.
+- Aggiungere altre query ai TableAdapter.
 
-- Aggiungere la logica di convalida <xref:System.Data.DataTable.ColumnChanging> agli <xref:System.Data.DataTable.RowChanging> eventi o delle tabelle dati nel DataSet. Per altre informazioni, vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md).
+- Aggiungere la logica di convalida <xref:System.Data.DataTable.ColumnChanging> agli eventi o delle tabelle di dati nel set di <xref:System.Data.DataTable.RowChanging> dati. Per altre informazioni, vedere [Convalidare i dati nei set di dati.](../data-tools/validate-data-in-datasets.md)
 
 ## <a name="see-also"></a>Vedi anche
 

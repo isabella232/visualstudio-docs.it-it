@@ -1,6 +1,6 @@
 ---
-title: Aggiungere parametri & finestre di dialogo Aggiungi argomenti
-description: Viene illustrato come gli elementi dell'interfaccia utente della finestra di dialogo Aggiungi parametri vengono utilizzati dalla finestra di progettazione InvokeMethod in Progettazione flussi di lavoro.
+title: Finestre di dialogo & Aggiungi argomenti
+description: Informazioni su come gli elementi dell'interfaccia utente della finestra di dialogo Aggiungi parametri vengono usati dalla finestra di progettazione InvokeMethod in Progettazione flussi di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,27 +9,28 @@ f1_keywords:
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: f0a5bba22ea9255fcc6c65ea5fa6a59990548dc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45a94ac4a6b14efb479dddcc098000cda7b98b832772aff63d26507edea3d085
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937140"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121225452"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Aggiungere parametri e argomenti alle finestre di dialogo
 
-Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Aggiungi parametri** utilizzata dalla finestra di <xref:System.Activities.Statements.InvokeMethod> progettazione:
+La tabella seguente descrive gli elementi dell'interfaccia utente della **finestra** di dialogo Aggiungi parametri usata dalla finestra di <xref:System.Activities.Statements.InvokeMethod> progettazione:
 
 |Nome|Valore|
 |-|-|
 |**Direzione**|Specifica se il parametro rappresenta il flusso di dati nel metodo e/o al di fuori del metodo.|
 |**Tipo**|Nome tipo del nuovo parametro.|
-|**Valore**|Espressione Visual Basic utilizzata per assegnare un valore predefinito al nuovo parametro.|
+|**Valore**|Espressione Visual Basic usata per assegnare un valore predefinito al nuovo parametro|
 
-Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente (UI) della finestra di dialogo **Aggiungi argomenti** utilizzata dalla <xref:System.Activities.Statements.InvokeDelegate> finestra di progettazione:
+La tabella seguente descrive gli elementi dell'interfaccia utente della **finestra** di dialogo Aggiungi argomenti usata dalla finestra di <xref:System.Activities.Statements.InvokeDelegate> progettazione:
 
 |Nome|Valore|
 |-|-|

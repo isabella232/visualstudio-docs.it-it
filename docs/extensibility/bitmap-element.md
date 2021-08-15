@@ -1,5 +1,5 @@
 ---
-title: Elemento Bitmap | Microsoft Docs
+title: Elementi bitmap | Microsoft Docs
 description: L'elemento Bitmap definisce una bitmap. La bitmap viene caricata da una risorsa o da un file. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,14 +11,15 @@ ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8f3daf25a3ffe025bcdef65dbaa6def942d0fb4
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 260a771157b9463ad0b0484e8fc3464f1b23b84396c3a86d1cb693bf5ea22a74
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903320"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308444"
 ---
 # <a name="bitmap-element"></a>Elemento Bitmap
 Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.
@@ -40,7 +41,7 @@ Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.
 |Resid|ID dell'identificatore del comando GUID/ID. L'attributo resID o href è obbligatorio.<br /><br /> L'attributo resID è un ID risorsa integer che determina la striscia bitmap da caricare durante l'unione della tabella dei comandi.  Quando viene caricata la tabella dei comandi, le bitmap specificate dall'ID risorsa verranno caricate dalla risorsa dello stesso modulo.|
 |usedList|Obbligatorio se è presente l'attributo resID. Seleziona le immagini disponibili nella striscia bitmap.|
 |href|Percorso della bitmap. L'attributo resID o href è obbligatorio.<br /><br /> Nel percorso di inclusione viene cercato il file di immagine indicato, incorporato nel file binario risultante.  Durante l'unione della tabella dei comandi, l'immagine viene copiata e non è necessaria alcuna ricerca o caricamento di risorse aggiuntive.  Se l'attributo usedList non è presente, tutte le immagini nella striscia sono disponibili. **Nota:**  Le immagini possono essere fornite in uno dei diversi formati che includono.bmp *,* *.png* e *.gif*.  Le versioni precedenti del compilatore non supportavano immagini bitmap a 32 bit con informazioni alfa per la trasparenza parziale. La soluzione alternativa per queste versioni consiste nell'usare il *.png* predefinito.|
-|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
  Nessuno.

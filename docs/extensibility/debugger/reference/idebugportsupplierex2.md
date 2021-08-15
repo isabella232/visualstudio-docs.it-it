@@ -1,5 +1,5 @@
 ---
-description: Fornisce supporto per un fornitore di porte per la selezione e l'interazione con un server di base.
+description: Fornisce il supporto per un fornitore di porte per la selezione e l'interazione con un server principale.
 title: IDebugPortSupplierEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2020f3efe2bd7562640fd44e45a10c9a3a6c767
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fc8909ac858bbc35fc39ea8c850729d83d9b14cb6152fa397ec37015d100b830
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071844"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416482"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-Fornisce supporto per un fornitore di porte per la selezione e l'interazione con un server di base.
+Fornisce il supporto per un fornitore di porte per la selezione e l'interazione con un server principale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -28,19 +29,19 @@ IDebugPortSupplierEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Un fornitore di porte personalizzato implementa questa interfaccia in modo che sia in grado di selezionare il server principale da usare.
+ Un fornitore di porte personalizzato implementa questa interfaccia in modo che possa selezionare il server principale da usare.
 
 ## <a name="methods"></a>Metodi
- La tabella seguente illustra i metodi di **IDebugPortSupplierEx2**.
+ La tabella seguente illustra i metodi di **IDebugPortSupplierEx2.**
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Imposta il server principale per il fornitore della porta.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Portpriv. h
+ Intestazione: Portpriv.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

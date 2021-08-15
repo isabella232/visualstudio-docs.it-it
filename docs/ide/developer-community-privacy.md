@@ -1,23 +1,24 @@
 ---
 title: Dati privati per segnalazioni di problemi
-description: Informazioni su come proteggere i dati privati quando si creano report sui problemi che la community degli sviluppatori può rivedere.
+description: Informazioni su come mantenere i dati privati più sicuri quando si creano report sui problemi che gli sviluppatori Community esaminare.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e521a8291947922d856819b637cd262db434c7eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 10b4f861ec0dfe2cd4480a536c7b600955c8b87528b72243e4624f9102f13e13
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894686"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121259253"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -42,7 +43,7 @@ Se si è preoccupati per la privacy dei dati, non inserire informazioni che si v
 3. Aggiungere la descrizione ed eventuali altre informazioni, immagini e allegati di file necessari per la procedura di riproduzione. Scegliere il pulsante **Invia** per inviare queste informazioni privatamente.
 
    > [!NOTE]
-   > Nel sito Web della community di sviluppatori è previsto un limite di 2 GB per i file allegati e un massimo di 10 file. Se è necessario caricare un file di dimensioni maggiori, è possibile inviare una nuova segnalazione del problema o richiedere un URL di caricamento da un dipendente Microsoft in un commento privato.
+   > Nel sito Community developer è previsto un limite di 2 GB per i file allegati e un massimo di 10 file. Se è necessario caricare un file di dimensioni maggiori, è possibile inviare una nuova segnalazione del problema o richiedere un URL di caricamento da un dipendente Microsoft in un commento privato.
    > Quando si chiude un problema, gli allegati associati verranno eliminati dopo 90 giorni.
 
 Per garantire la privacy e assicurarsi che le informazioni riservate non siano visualizzabili pubblicamente, gestire sempre le interazioni con Microsoft in modo da rispondere usando un commento con visibilità limitata. Le risposte ad altri commenti potrebbero accidentalmente divulgare informazioni riservate.
@@ -71,9 +72,9 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
 - Log Python, se esistenti
 
-- Log dell'editor di Razor LSP, se esistenti
+- Log dell'editor Razor LSP, se presenti
 
-- Windows Form log, se esistono
+- Windows Log dei moduli, se presenti
 
 - Uno screenshot, se si sceglie di includerlo
 
@@ -86,8 +87,8 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
   - File dump
 
 > [!NOTE]
-> I file di log, le schermate e la registrazione dei dati inviati possono aumentare significativamente la capacità di Microsoft di comprendere e rispondere al problema.  Quindi, è consigliabile includerli. Per proteggere la privacy, tutti i file di log allegati, le schermate e i dati di registrazione vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando il report di problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "segnala un problema" prima di inviare il report. È possibile escludere dal report i file di registro di sistema deselezionando "Connetti registri di sistema" nel passaggio "Riepilogo". Per riferimento, vedere la schermata seguente. 
-  > ![Segnala un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
+> I file di log, gli screenshot e la registrazione dei dati inviati possono aumentare significativamente la capacità di Microsoft di comprendere e rispondere al problema.  È quindi consigliabile includerli. Per proteggere la privacy, tutti i file di log allegati, gli screenshot e i dati di registrazione vengono inviati solo a Microsoft quando si fornisce l'autorizzazione inviando la segnalazione del problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "Segnala un problema" prima di inviare il report. È possibile escludere i file di log di sistema dal report deselezionando "Collega log di sistema" nel passaggio "Riepilogo". Per informazioni di riferimento, vedere lo screenshot seguente. 
+  > ![Segnalare un problema - Riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>Vedi anche

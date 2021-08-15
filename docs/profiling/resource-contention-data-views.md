@@ -1,6 +1,6 @@
 ---
 title: Visualizzazioni dei dati sui conflitti di risorse | Microsoft Docs
-description: Informazioni sulle informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler che contengono dati di profilatura dei conflitti di thread.
+description: Informazioni sulle informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler che contengono dati di profilatura dei thread.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,16 @@ ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 148e72cedafa075c8b03229a5f44063713d7cd23
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8664dc751b05528271877141fcda197ea89943494e9fc814e02f29fb1e89059
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952772"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121315798"
 ---
 # <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler che contengono dati di profilatura sui conflitti dei thread.
@@ -36,7 +37,7 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Organizza i dati sui conflitti di thread e risorse in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni che erano in esecuzione quando si sono verificati gli eventi di blocco.
 
-- [Visualizzazione chiamante/chiamato: dati sui conflitti](../profiling/caller-callee-view-contention-data.md)
+- [Visualizzazione chiamante/chiamato - Dati di insodduttiva](../profiling/caller-callee-view-contention-data.md)
 
  Elenca i dati sui conflitti di thread e risorse per una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.
 

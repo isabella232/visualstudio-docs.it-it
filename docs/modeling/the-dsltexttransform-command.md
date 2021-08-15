@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 65d1e1d02c5b7d13c2e86343c6307306542d00e2
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 1c2bb7a6d4ce0304fbf0dcbf6c56778eaa189b3cd42d20f17876ae2770f1230d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388646"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121316630"
 ---
 # <a name="the-dsltexttransform-command"></a>Comando DslTextTransform
 DslTextTransform.cmd è uno script che chiama TextTransform.exe e lo esegue con opzioni comuni. È possibile usare DslTextTransformation.cmd per automatizzare una compilazione notturna dei [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] progetti. Per altre informazioni, vedere [Generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).

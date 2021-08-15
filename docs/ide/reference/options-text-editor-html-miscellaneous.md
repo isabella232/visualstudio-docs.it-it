@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, HTML (Web Form), Varie
-description: Informazioni su come usare la pagina varie nella sezione HTML per impostare le preferenze relative alla modalità di gestione degli elementi incollati nella pagina da parte dell'editor HTML.
+description: Informazioni su come usare la pagina Varie nella sezione HTML per impostare le preferenze relative al modo in cui l'editor HTML gestisce gli elementi incollati nella pagina.
 ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff787db88292ded90c8dbdce3c86637ba2bdbd4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33cfb70b23c63e533582a739f8c568b01578d6f938e97c3c12729b1e071aa0b7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932527"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121232256"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opzioni, Editor di testo, HTML (Web Form), Varie
 
-Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere **editor di testo**  >  **HTML (Web Form)**  >  **varie**.
+Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Editor di testo  >     >  **HTML (Web Forms)**  >  **Varie**.
 
 ## <a name="miscellaneous-html-options"></a>Altre opzioni HTML
 
@@ -31,8 +31,8 @@ Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalit�
 
 - **Richiedi '<' per attivare finestra completamento tag**
 
-   Se questa casella di controllo è selezionata, viene visualizzata la finestra completamento tag quando si digita il carattere di minore di ("<").
+   Quando questa casella di controllo è selezionata, la finestra di completamento dei tag viene visualizzata quando si digita il carattere minore di ("<").
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

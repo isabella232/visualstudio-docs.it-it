@@ -1,6 +1,6 @@
 ---
 title: Attività GPU (questo processo) | Microsoft Docs
-description: Leggere le informazioni sui segmenti di attività GPU (questo processo) nella visualizzazione thread del Visualizzatore di concorrenza.
+description: Leggere i segmenti Attività GPU (questo processo) nella visualizzazione Thread del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: 0956edbf-9bcd-4afe-9287-fda628648ca0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb39504cae42e943de1864d8edc308b96e0e742
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4396b1feecfe343cf3dbdf1ad9d7aa2b749fcfb7e362fb13270563c6087e9a4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878136"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121246526"
 ---
 # <a name="gpu-activity-this-process"></a>Attività GPU (questo processo)
 I segmenti **Attività GPU (questo processo)** nella visualizzazione Thread nel visualizzatore di concorrenza rappresentano i casi in cui la GPU stava eseguendo l'elaborazione delle richieste per conto del processo corrente. Queste richieste vengono inviate alla GPU come pacchetti di accesso diretto alla memoria (DMA). La lunghezza di un segmento rappresenta l'intervallo di tempo per cui la GPU ha elaborato un pacchetto DMA per conto del processo corrente.

@@ -1,6 +1,6 @@
 ---
 description: Recupera i parametri di tipo in base al numero di parametri.
-title: 'IDebugGenericFieldDefinition:: GetFormalTypeParams | Microsoft Docs'
+title: IDebugGenericFieldDefinition::GetFormalTypeParams | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aba284bab3299bf6ef300f9493c20e9c0d230ee
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dcfc5d9d675363c34eeaf8554e3a04182de803b2623261ca961a5ac7ada8c9cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063448"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121238853"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 Recupera i parametri di tipo in base al numero di parametri.
@@ -45,10 +46,10 @@ int GetFormalTypeParams(
 
 ## <a name="parameters"></a>Parametri
 `cParams`\
-in Numero di parametri.
+[in] Numero di parametri.
 
 `ppParams`\
-out Matrice di parametri di tipo.
+[out] Matrice di parametri di tipo.
 
 `pcParams`\
 [in, out] Numero di parametri nella `ppParams` matrice.
@@ -57,7 +58,7 @@ out Matrice di parametri di tipo.
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Restituisce i parametri di tipo in ordine da sinistra a destra. Ad esempio, Dictionary \<K,V> restituisce IDebugFormalGenericParameters {K, V}.
+ Restituisce i parametri di tipo in ordine da sinistra a destra. Ad esempio, Dictionary \<K,V> restituisce IDebugFormalGenericParameters {K,V}.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

@@ -1,6 +1,6 @@
 ---
 title: Tecniche di debug MFC | Microsoft Docs
-description: 'Informazioni sulle tecniche per il debug di programmi MFC, tra cui: punti di interruzione codificati, traccia, rilevamento delle perdite di memoria, dump della memoria degli oggetti e riduzione delle dimensioni del programma.'
+description: 'Informazioni sulle tecniche per il debug di programmi MFC, tra cui: punti di interruzione codificati, traccia, rilevamento di perdite di memoria, dump della memoria degli oggetti e riduzione delle dimensioni del programma.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,19 +25,20 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b4a3f0f675df70643876b7bb5480cb8c885d8854
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da1da728ffb68d4701e4925809db669c84199696f08309a165fdbfc819a3d852
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844996"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121239636"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.
 
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Contenuto dell'argomento
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> In questo argomento
 [AfxDebugBreak](#BKMK_AfxDebugBreak)
 
 [Macro TRACE](#BKMK_The_TRACE_macro)
@@ -54,7 +55,7 @@ Se si effettua il debug di un programma MFC, possono essere utili le seguenti te
 
 - [Creazione di dump di oggetti](#BKMK_Taking_object_dumps)
 
-  - [Interpretazione dei dump di memoria](#BKMK_Interpreting_memory_dumps)
+  - [Interpretazione dei dump della memoria](#BKMK_Interpreting_memory_dumps)
 
   - [Personalizzazione di dump di oggetti](#BKMK_Customizing_object_dumps)
 
@@ -99,7 +100,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-La macro TRACE gestisce in modo appropriato i \* parametri char e wchar_t \* . Negli esempi seguenti viene illustrato l'utilizzo della macro TRACE, insieme ai diversi tipi di parametri di stringa.
+La macro TRACE gestisce in modo appropriato sia char \* che wchar_t \* parametri. Negli esempi seguenti viene illustrato l'utilizzo della macro TRACE, insieme ai diversi tipi di parametri di stringa.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -187,7 +188,7 @@ Per poter utilizzare le utilità di diagnostica della memoria è necessario atti
     #endif
     ```
 
-    Si noti che le istruzioni di controllo della memoria sono racchiuse tra **#ifdef blocchi _DEBUG/#endif** in modo che vengano compilate solo nelle versioni di debug del programma.
+    Si noti che le istruzioni di controllo della memoria sono racchiuse tra **#ifdef _DEBUG/#endif** in modo che siano compilate solo nelle versioni di debug del programma.
 
     Determinata l'esistenza di una perdita di memoria, sarà possibile usare un'altra funzione membro, [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) , che consentirà di individuare la perdita.
 
@@ -228,8 +229,8 @@ I blocchi non di oggetti includono matrici e strutture allocate con `new`. In qu
 
 [Contenuto dell'argomento](#BKMK_In_this_topic)
 
-### <a name="taking-object-dumps"></a><a name="BKMK_Taking_object_dumps"></a> Acquisizione di dump di oggetti
-In un programma MFC, è possibile usare [CMemoryState::D umpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) per eseguire il dump di una descrizione di tutti gli oggetti nell'heap che non sono stati deallocati. `DumpAllObjectsSince` esegue il dump di tutti gli oggetti allocati dall'ultima [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Se non ha avuto luogo alcuna chiamata `Checkpoint` , `DumpAllObjectsSince` effettuerà il dump di tutti gli oggetti e non oggetti attualmente in memoria.
+### <a name="taking-object-dumps"></a><a name="BKMK_Taking_object_dumps"></a> Eseguire dump di oggetti
+In un programma MFC è possibile usare [CMemoryState::D umpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) per eseguire il dump di una descrizione di tutti gli oggetti sull'heap che non sono stati deallocati. `DumpAllObjectsSince` esegue il dump di tutti gli oggetti allocati dall'ultima [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Se non ha avuto luogo alcuna chiamata `Checkpoint` , `DumpAllObjectsSince` effettuerà il dump di tutti gli oggetti e non oggetti attualmente in memoria.
 
 > [!NOTE]
 > Prima di poter utilizzare il dump di oggetti MFC, è necessario [abilitare la traccia di diagnostica](#BKMK_Enabling_memory_diagnostics).
@@ -357,10 +358,10 @@ Per gli oggetti allocati sull'heap, tuttavia, è necessario eliminare esplicitam
 
 [Contenuto dell'argomento](#BKMK_In_this_topic)
 
-#### <a name="customizing-object-dumps"></a><a name="BKMK_Customizing_object_dumps"></a> Personalizzazione di dump di oggetti
+#### <a name="customizing-object-dumps"></a><a name="BKMK_Customizing_object_dumps"></a> Personalizzazione dei dump degli oggetti
 Quando si deriva una classe da [CObject](/cpp/mfc/reference/cobject-class), è possibile eseguire l'override della funzione membro `Dump` per fornire ulteriori informazioni quando si usa [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) per eseguire il dump di oggetti nella [finestra Output](../ide/reference/output-window.md).
 
-La funzione `Dump` scrive una rappresentazione testuale delle variabili membro dell'oggetto in un contesto di dump ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Il contesto di dump è analogo a un flusso I/O. È possibile usare l'operatore Append ( **<<** ) per inviare dati a un oggetto `CDumpContext` .
+La funzione `Dump` scrive una rappresentazione testuale delle variabili membro dell'oggetto in un contesto di dump ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Il contesto di dump è analogo a un flusso I/O. È possibile usare l'operatore append ( **<<** ) per inviare dati a `CDumpContext` un oggetto .
 
 Quando si esegue l'override della funzione `Dump` , è opportuno chiamare dapprima la versione della classe base di `Dump` per effettuare il dump del contenuto dell'oggetto classe base, generando poi una descrizione testuale e un valore per ciascuna variabile membro della classe derivata.
 
@@ -415,16 +416,16 @@ pMyPerson->Dump( afxDump );
 ## <a name="reducing-the-size-of-an-mfc-debug-build"></a><a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Riduzione delle dimensioni di una build di debug MFC
 Le informazioni di debug di un'applicazione MFC di grandi dimensioni possono richiedere notevole spazio su disco. Per ridurre le dimensioni, è possibile usare una di queste procedure:
 
-1. Ricompilare le librerie MFC usando l'opzione [/Z7,/Zi,/Zi (formato informazioni di debug)](/cpp/build/reference/z7-zi-zi-debug-information-format) invece di **/Z7**. Queste opzioni compilano un singolo file di database di programma (PDB) che contiene informazioni di debug per l'intera libreria, riducendo la ridondanza e risparmiando spazio.
+1. Ricompilare le librerie MFC usando [l'opzione /Z7, /Zi, /ZI (Formato](/cpp/build/reference/z7-zi-zi-debug-information-format) informazioni di debug) anziché **/Z7**. Queste opzioni compilano un singolo file di database di programma (PDB) che contiene informazioni di debug per l'intera libreria, riducendo la ridondanza e risparmiando spazio.
 
-2. Ricompilare le librerie MFC senza informazioni di debug (nessuna opzione [/Z7,/Zi,/Zi (formato informazioni di debug)](/cpp/build/reference/z7-zi-zi-debug-information-format) ). In questo caso la mancanza delle informazioni di debug impedirà di utilizzare la maggior parte delle utilità del debugger nel codice delle librerie MFC, ma dal momento che le librerie MFC sono già state sottoposte a un debug completo, questo non dovrebbe rappresentare un problema.
+2. Ricompilare le librerie MFC senza informazioni di debug (nessuna [opzione /Z7, /Zi, /ZI (Formato informazioni di](/cpp/build/reference/z7-zi-zi-debug-information-format) debug). In questo caso la mancanza delle informazioni di debug impedirà di utilizzare la maggior parte delle utilità del debugger nel codice delle librerie MFC, ma dal momento che le librerie MFC sono già state sottoposte a un debug completo, questo non dovrebbe rappresentare un problema.
 
 3. Compilare l'applicazione con informazioni di debug solo per i moduli selezionati, come descritto di seguito.
 
     [Contenuto dell'argomento](#BKMK_In_this_topic)
 
 ### <a name="building-an-mfc-app-with-debug-information-for-selected-modules"></a><a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Compilazione di un'app MFC con informazioni di debug per i moduli selezionati
-La compilazione di moduli selezionati con le librerie di debug MFC consente di eseguire i moduli un'istruzione alla volta e di utilizzare altre utilità di debug. Questa procedura usa entrambe le configurazioni di debug e di rilascio del progetto, in modo da rendere necessarie le modifiche descritte nei passaggi seguenti (e creare anche una "Ricompila tutto" quando è richiesta una compilazione di rilascio completa).
+La compilazione di moduli selezionati con le librerie di debug MFC consente di eseguire i moduli un'istruzione alla volta e di utilizzare altre utilità di debug. Questa procedura usa sia le configurazioni di debug che di rilascio del progetto, richiedendo quindi le modifiche descritte nei passaggi seguenti e rendendo necessaria una "ricompilazione di tutto" quando è necessaria una build di rilascio completa.
 
 1. In Esplora soluzioni selezionare il progetto.
 
@@ -432,15 +433,15 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
 3. Creare innanzitutto una nuova configurazione di progetto.
 
-   1. Nella finestra di dialogo **\<Project> pagine delle proprietà** fare clic sul pulsante **Configuration Manager** .
+   1. Nella finestra **\<Project> di dialogo Pagine** delle proprietà fare clic sul **Gestione configurazione** proprietà.
 
-   2. Nella [finestra di dialogo Gestione configurazione](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))individuare il progetto all'interno della griglia. Nella colonna **configurazione** selezionare **\<New...>** .
+   2. Nella [finestra di dialogo Gestione configurazione](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))individuare il progetto all'interno della griglia. Nella colonna **Configurazione** selezionare **\<New...>** .
 
    3. Nella [finestra di dialogo Nuova configurazione progetto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))digitare, all'interno della casella **Nome configurazione progetto** , il nome da assegnare alla nuova configurazione, ad esempio "Debug parziale".
 
    4. Scegliere **Release** dall'elenco **Copia impostazioni da**.
 
-   5. Fare clic su **OK** per chiudere la finestra di dialogo **nuova configurazione progetto** .
+   5. Fare **clic su OK** per chiudere la finestra di Project **nuova** configurazione.
 
    6. Chiudere la finestra di dialogo **Gestione configurazione** .
 
@@ -474,7 +475,7 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    6. Fare clic sulle impostazioni **Formato informazioni di debug** e selezionare l'opzione desiderata (in genere **/ZI**) per le informazioni di debug.
 
-   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/Usa intestazioni precompilate** nella finestra di dialogo **\<Project> Proprietà** (cartella **proprietà di configurazione** , sottocartella **C/C++** , categoria **intestazioni precompilate** ).
+   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **\<Project>** **Crea/Usa** intestazioni precompilate nella finestra  di dialogo Proprietà **(cartella** Proprietà di configurazione, sottocartella **C/C++,** categoria Intestazioni precompilate).
 
 7. Scegliere **Compila** dal menu **Compila** per compilare nuovamente i file di progetto non aggiornati.
 

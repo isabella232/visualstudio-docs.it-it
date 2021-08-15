@@ -1,5 +1,5 @@
 ---
-title: DA0018-applicazione a 32 bit in esecuzione al processo managed memory limiti | Microsoft Docs
+title: DA0018 - Applicazione a 32 bit in esecuzione al managed memory limiti | Microsoft Docs
 description: I dati di sistema raccolti durante l'esecuzione della profilatura indicano che gli heap di memoria di .NET Framework hanno quasi raggiunto la dimensione massima consentita per gli heap gestiti in un processo a 32 bit.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,15 +11,16 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48f94f064b983ae671546f543dfbdfa380f35119
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: a8998445f046269691fc26ff3e0e3397881bcdcf543b9a13e9e4cb1f97348650
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466102"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257134"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 
@@ -48,7 +49,7 @@ ms.locfileid: "102466102"
  Quando la dimensione totale degli heap gestiti si avvicina al limite predefinito, il sovraccarico di gestione della memoria aumenta di solito a un punto tale che potrebbe iniziare ad avere un impatto sulla capacità di risposta e sulla scalabilità dell'applicazione.
 
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso
- Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione [Contrassegni](../profiling/marks-view.md) . Individuare le colonne **Memoria CLR .NET\\Byte in tutti gli heap** e **Totale byte di cui è stato eseguito il commit**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'allocazione di memoria gestita è maggiore rispetto ad altre fasi. Confrontare i valori della colonna **Byte in tutti gli heap** con la frequenza di Garbage Collection indicata nelle colonne **Memoria CLR .NET\\Raccolte di generazione 0**, **Memoria CLR .NET\\Raccolte di generazione 1** e **Memoria CLR .NET\\Raccolte di generazione 2** per determinare se il modello di allocazioni di memoria gestita incide sulla frequenza di Garbage Collection.
+ Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla [visualizzazione](../profiling/marks-view.md) Contrassegni. Individuare le colonne **Memoria CLR .NET\\Byte in tutti gli heap** e **Totale byte di cui è stato eseguito il commit**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'allocazione di memoria gestita è maggiore rispetto ad altre fasi. Confrontare i valori della colonna **Byte in tutti gli heap** con la frequenza di Garbage Collection indicata nelle colonne **Memoria CLR .NET\\Raccolte di generazione 0**, **Memoria CLR .NET\\Raccolte di generazione 1** e **Memoria CLR .NET\\Raccolte di generazione 2** per determinare se il modello di allocazioni di memoria gestita incide sulla frequenza di Garbage Collection.
 
  In un'applicazione .NET Framework, Common Language Runtime limita la dimensione totale degli heap gestiti a un valore leggermente inferiore a metà della dimensione massima della parte di area privata di uno spazio degli indirizzi del processo. Per i processi a 32 bit in esecuzione su un computer a 32 bit, il limite superiore della parte privata dello spazio degli indirizzi del processo è di 2 GB. Quando la dimensione totale degli heap gestiti si avvicina al limite predefinito, il sovraccarico di gestione della memoria può aumentare e le prestazioni dell'applicazione possono diminuire.
 
@@ -60,9 +61,9 @@ ms.locfileid: "102466102"
 
 - esecuzione di procedure per limitare i vincoli architettonici alla dimensione massima della memoria virtuale per un processo a 32 bit
 
-  Per ottimizzare l'uso delle risorse di memoria gestita da parte dell'applicazione, raccogliere i dati di allocazione della memoria gestita con un'esecuzione della profilatura dell'allocazione di memoria di .NET. Esaminare i report delle [visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md) per comprendere il modello di allocazione di memoria dell'applicazione.
+  Per ottimizzare l'uso delle risorse di memoria gestita da parte dell'applicazione, raccogliere i dati di allocazione della memoria gestita con un'esecuzione della profilatura dell'allocazione di memoria di .NET. Esaminare i [report sulle visualizzazioni dati di memoria .NET](../profiling/dotnet-memory-data-views.md) per comprendere il modello di allocazione di memoria dell'applicazione.
 
-  Usare la [visualizzazione Durata oggetti](../profiling/object-lifetime-view.md) per determinare quali oggetti dati del programma sono sopravvissuti alla generazione e quindi vengono recuperati.
+  Usare la [visualizzazione Durata oggetti](../profiling/object-lifetime-view.md) per determinare quali oggetti dati del programma vengono nascosti nella generazione e quindi recuperati da questa finestra.
 
   Usare la [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md) per determinare il percorso di esecuzione che ha comportato queste allocazioni.
 

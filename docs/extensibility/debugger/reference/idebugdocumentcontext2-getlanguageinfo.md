@@ -1,6 +1,6 @@
 ---
-description: Ottiene la lingua associata a questo contesto del documento.
-title: 'IDebugDocumentContext2:: GetLanguageInfo | Microsoft Docs'
+description: Ottiene la lingua associata al contesto del documento.
+title: Interfaccia IDebugDocumentContext2::GetLanguageInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a621ca5f23af52d81e14dba6b737ca31a2525727
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f21a9dbc1d74815eb9adf4bcd3ac3ce6ec10dedd341352dd108c5aa88803e29f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066672"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121323599"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
-Ottiene la lingua associata a questo contesto del documento.
+Ottiene la lingua associata al contesto del documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +45,16 @@ int GetLanguageInfo(
 
 ## <a name="parameters"></a>Parametri
 `pbstrLanguage`\
-out Restituisce il nome della lingua che implementa il codice in questo contesto del documento.
+[out] Restituisce il nome del linguaggio che implementa il codice in questo contesto del documento.
 
 `pguidLanguage`\
-out Restituisce il GUID del linguaggio che implementa il codice in questo contesto del documento. Ad esempio, `guidVBScriptLang` o `guidCPPLang`. Il GUID non è limitato alle lingue fornite da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
+[out] Restituisce il GUID del linguaggio che implementa il codice in questo contesto del documento. Ad esempio, `guidVBScriptLang` o `guidCPPLang`. Questo GUID non è limitato alle lingue fornite da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CDebugContext` oggetto semplice che espone l'interfaccia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CDebugContext` semplice che espone [l'interfaccia IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ```cpp
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)

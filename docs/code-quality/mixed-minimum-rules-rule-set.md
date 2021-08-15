@@ -8,20 +8,21 @@ ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ba61f3d4f82a5db25d0079193955a5569afa8a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16bfe7655eec38e2f5630950b10034f6d4d7a42b71744493f0ff9cd12a936310
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867880"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240718"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 
-Le regole minime miste Microsoft si concentrano sui problemi più critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali dell'applicazione.
+Le regole minime miste Di Microsoft sono incentrate sui problemi più critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali delle applicazioni.
 
-Includere questo set di regole in tutti i set di regole personalizzati creati per i progetti C++ che supportano Common Language Runtime.
+Includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti C++ che supportano Common Language Runtime.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -88,13 +89,13 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C28182](/cpp/code-quality/c28182)|Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.|
 |[C28202](/cpp/code-quality/c28202)|Riferimento non valido a membro non statico|
 |[C28203](/cpp/code-quality/c28203)|Riferimento ambiguo al membro di classe.|
-|[C28205](/cpp/code-quality/c28205)|\_Esito positivo \_ o \_ \_ negativo \_ utilizzato in un contesto non valido|
+|[C28205](/cpp/code-quality/c28205)|\_Esito \_ positivo o In caso di errore utilizzato in un contesto non \_ \_ \_ valido|
 |[C28206](/cpp/code-quality/c28206)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](/cpp/code-quality/c28207)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28210](/cpp/code-quality/c28210)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|
 |[C28211](/cpp/code-quality/c28211)|Previsto nome contesto statico per SAL_context|
 |[C28212](/cpp/code-quality/c28212)|Prevista espressione del puntatore per l'annotazione|
-|[C28213](/cpp/code-quality/c28213)|L' \_ \_ annotazione use decl Annotations \_ \_ deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
+|[C28213](/cpp/code-quality/c28213)|\_ \_ L'annotazione Use decl \_ annotations \_ deve essere usata per fare riferimento, senza modifiche, a una dichiarazione precedente.|
 |[C28214](/cpp/code-quality/c28214)|I nomi di parametro di attributo devono essere p1...p9|
 |[C28215](/cpp/code-quality/c28215)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](/cpp/code-quality/c28216)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
@@ -136,7 +137,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C28267](/cpp/code-quality/c28267)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|
 |[C28272](/cpp/code-quality/c28272)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|
 |[C28273](/cpp/code-quality/c28273)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|
-|[C28275](/cpp/code-quality/c28275)|Il parametro per \_ il \_ valore della macro \_ è null|
+|[C28275](/cpp/code-quality/c28275)|Il parametro per \_ il valore macro è \_ \_ Null|
 |[C28279](/cpp/code-quality/c28279)|Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'|
 |[C28280](/cpp/code-quality/c28280)|Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente|
 |[C28282](/cpp/code-quality/c28282)|Le stringhe di formato devono essere nelle precondizioni|

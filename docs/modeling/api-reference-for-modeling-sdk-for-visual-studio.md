@@ -1,24 +1,25 @@
 ---
 title: Informazioni di riferimento sulle API per Modeling SDK
-description: Informazioni su come Visual Studio Visualization and Modeling SDK fornisce la piattaforma in cui vengono compilati gli strumenti di linguaggi specifici del dominio.
+description: Informazioni su come Visual Studio Visualization and Modeling SDK fornisce la piattaforma in cui vengono compilati gli strumenti DSL (Domain Specific Languages).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 9603ace5751443c04d0a7503a43e08c044269817
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 5674486ec330dc804fa43836f64dcc439e0fc4a169244db217a41fe4cecd193c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385461"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121316916"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Riferimento API per SDK di modellazione per Visual Studio
 
-L Visual Studio SDK di visualizzazione e modellazione fornisce la piattaforma su cui vengono compilati gli strumenti DSL (Domain Specific Languages).
+L Visual Studio Sdk di visualizzazione e modellazione fornisce la piattaforma su cui vengono compilati gli strumenti DSL (Domain Specific Languages).
 
 Questa sezione contiene materiale di riferimento per gli spazi dei nomi con nomi che iniziano con "Microsoft.VisualStudio.Modeling".
 

@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Processo: dati sui conflitti | Microsoft Docs'
-description: Informazioni su come la visualizzazione processi Visualizza i dati sui conflitti per i processi e i thread eseguiti durante l'esecuzione della profilatura.
+description: Informazioni su come nella visualizzazione Processo vengono visualizzati i dati relativi ai processi e ai thread eseguiti durante l'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f137c470b31ddccfa9b26cb907b13288d07dc1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 042b8834b9b3d1b4f91bef09a5a71b2bdb394da5865426f352b28446ee858811
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957309"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121246006"
 ---
 # <a name="process-view---contention-data"></a>Visualizzazione Processo: dati sui conflitti
 Nella visualizzazione Processo sono riportati i dati sui conflitti per i processi e i thread eseguiti durante l'esecuzione della profilatura.
@@ -41,5 +42,5 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
 |**ID univoco**|Identificatore generato dal profiler univoco per il processo o il thread.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Processo](../profiling/process-view.md)

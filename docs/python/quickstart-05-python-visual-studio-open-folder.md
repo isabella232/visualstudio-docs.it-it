@@ -6,28 +6,29 @@ ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: bc47f2a91b0ce42c319651cad22dbe05fe32623f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2da3b76ee7a22e58431eafafa8600158a0ae9b18b12f3f4fc054f0aa0171ffea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902405"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121245252"
 ---
-# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Guida introduttiva: aprire ed eseguire codice Python in una cartella
+# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Guida introduttiva: Aprire ed eseguire codice Python in una cartella
 
 Dopo aver [installato il supporto Python in Visual Studio 2019](installing-python-support-in-visual-studio.md), è facile eseguire codice Python esistente in Visual Studio 2019 senza creare un progetto di Visual Studio.
 
 > [!Note]
-> In Visual Studio 2017 e versioni precedenti è necessario creare un progetto di Visual Studio per eseguire codice Python, operazione che è possibile eseguire facilmente usando un modello di progetto predefinito. Vedere [Guida introduttiva: creare un progetto Python da codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> In Visual Studio 2017 e versioni precedenti è necessario creare un progetto di Visual Studio per eseguire codice Python, operazione che è possibile eseguire facilmente usando un modello di progetto predefinito. Vedere [Avvio rapido: Creare un progetto Python da codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. Per questa procedura dettagliata, è possibile usare qualsiasi cartella con codice Python. Per seguire la procedura con l'esempio riportato di seguito, clonare il repository di GitHub gregmalcolm/python_koans nel computer locale usando il comando `git clone https://github.com/gregmalcolm/python_koans` in una cartella appropriata.
 
-1. Avviare Visual Studio 2019 e nella schermata iniziale selezionare **Apri** nella parte inferiore della colonna **Per iniziare**. In alternativa, se Visual Studio è già in esecuzione, selezionare invece il comando **file**  >  **Apri**  >  **cartella** .
+1. Avviare Visual Studio 2019 e nella schermata iniziale selezionare **Apri** nella parte inferiore della colonna **Per iniziare**. In alternativa, se è già in Visual Studio, selezionare invece il **comando Apri**  >    >   cartella.
 
     ![Schermata iniziale di Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 
@@ -50,7 +51,7 @@ Dopo aver [installato il supporto Python in Visual Studio 2019](installing-pytho
     > [!Important]
     > Se l'elemento di avvio non si trova nella radice della cartella aperta, è necessario aggiungere anche una riga al file JSON di configurazione di avvio, come descritto nella sezione [Impostare una directory di lavoro](#set-a-working-directory).
 
-1. Eseguire il codice premendo **CTRL** + **F5** o selezionando **debug**  >  **Avvia senza eseguire debug**. È anche possibile selezionare il pulsante della barra degli strumenti che mostra l'elemento di avvio con un pulsante di riproduzione, che esegue il codice nel debugger di Visual Studio. In tutti i casi, Visual Studio rileva che l'elemento di avvio è un file di Python, quindi esegue automaticamente il codice nell'ambiente Python predefinito. (Tale ambiente viene visualizzato a destra dell'elemento di avvio sulla barra degli strumenti.)
+1. Eseguire il codice premendo **CTRL** + **F5** o selezionando **Debug** Avvia senza  >  **eseguire debug.** È anche possibile selezionare il pulsante della barra degli strumenti che mostra l'elemento di avvio con un pulsante di riproduzione, che esegue il codice nel debugger di Visual Studio. In tutti i casi, Visual Studio rileva che l'elemento di avvio è un file di Python, quindi esegue automaticamente il codice nell'ambiente Python predefinito. (Tale ambiente viene visualizzato a destra dell'elemento di avvio sulla barra degli strumenti.)
 
     ![Pulsante della barra degli strumenti per avviare il debugger](media/quickstart-open-folder/07-start-debug-toolbar.png)
 
@@ -60,7 +61,7 @@ Dopo aver [installato il supporto Python in Visual Studio 2019](installing-pytho
 
 1. Per eseguire il codice in un ambiente diverso, selezionare tale ambiente nell'elenco a discesa sulla barra degli strumenti e quindi avviare di nuovo l'elemento di avvio.
 
-1. Per chiudere la cartella in Visual Studio, selezionare il comando di menu **file**  >  **Chiudi cartella** .
+1. Per chiudere la cartella in Visual Studio, selezionare il **comando di** menu File Close  >  **folder (Chiudi** cartella).
 
 ## <a name="set-a-working-directory"></a>Impostare una directory di lavoro
 
@@ -70,14 +71,14 @@ In questi casi, è anche necessario aggiungere una riga al file JSON di configur
 
 1. Fare clic con il pulsante destro del mouse sul file di avvio Python (con estensione *py*) in **Esplora soluzioni** e scegliere **Impostazioni per debug e avvio**.
 
-    ![Screenshot della visualizzazione cartella Esplora soluzioni con il file contemplate-koans.py selezionato e impostazioni di debug e avvio selezionate nel menu di scelta rapida.](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![Screenshot della visualizzazione Esplora soluzioni cartella con il file contemplate-koans.py selezionato e l'opzione Debug e Impostazioni selezionata nel menu di scelta rapida.](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. Nella finestra di dialogo **Seleziona un debugger** visualizzata selezionare **Predefinito** e quindi scegliere **Seleziona**.
 
-    ![Screenshot della finestra di dialogo Seleziona un debugger con il debugger predefinito selezionato e il pulsante Seleziona.](media/quickstart-open-folder/10-select-debugger.png)
+    ![Screenshot della finestra di dialogo Seleziona un debugger con il debugger predefinito selezionato e il pulsante Seleziona selezionato.](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > Se non viene visualizzato il **valore predefinito** , assicurarsi di aver scelto un file Python *. py* quando si seleziona il comando **debug e avvia Impostazioni** . Visual Studio usa il tipo di file per determinare quali opzioni del debugger visualizzare.
+    > Se l'opzione  Predefinita non è visualizzata, assicurarsi di aver scelto un file python con estensione *py* quando si selezionano i comandi **Debug e Impostazioni** avvio. Visual Studio usa il tipo di file per determinare le opzioni del debugger da visualizzare.
 
 1. Visual Studio apre un file denominato *launch.vs.json*, che si trova nella cartella nascosta *.vs*. Questo file descrive il contesto di debug per il progetto. Per specificare una directory di lavoro, aggiungere un valore per `"workingDirectory"`, come in `"workingDirectory": "python3"` per l'esempio python koans:
 
@@ -112,5 +113,5 @@ In questi casi, è anche necessario aggiungere una riga al file JSON di configur
 ## <a name="see-also"></a>Vedi anche
 
 - [Guida introduttiva: Creare un progetto Python a partire da un codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
-- [Guida introduttiva: creare un progetto Python da un repository](quickstart-03-python-in-visual-studio-project-from-repository.md)
+- [Guida introduttiva: Creare un progetto Python da un repository](quickstart-03-python-in-visual-studio-project-from-repository.md)
 - [Identificare manualmente un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

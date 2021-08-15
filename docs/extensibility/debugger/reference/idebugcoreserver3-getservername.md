@@ -1,6 +1,6 @@
 ---
 description: Recupera il nome del server.
-title: 'IDebugCoreServer3:: GetServerName | Microsoft Docs'
+title: IDebugCoreServer3::GetServerName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c052e4995498c5b134126ceff39ac4ce3176311d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 306dfa4a8c4948c99b2d388120a4ac4757e83aaeb3b813df17d3bb9a0cc0ea10
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054335"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121323716"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 Recupera il nome del server.
@@ -42,16 +43,16 @@ int GetServerName(
 
 ## <a name="parameters"></a>Parametri
 `pbstrName`\
-out Restituisce il nome del server.
+[out] Restituisce il nome del server.
 
 > [!NOTE]
-> Il chiamante è responsabile della liberazione della stringa.
+> Il chiamante è responsabile della liberatura della stringa.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Per un nome descrittivo del server, chiamare il metodo [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) .
+ Per un nome descrittivo del server, chiamare il [metodo GetServerFriendlyName.](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

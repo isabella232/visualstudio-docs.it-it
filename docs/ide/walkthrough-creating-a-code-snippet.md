@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare un frammento di codice'
-description: 'Informazioni su come creare un frammento di codice in tre passaggi: creare un file XML, compilare gli elementi appropriati e aggiungervi il codice.'
+description: 'Informazioni su come creare un frammento di codice in tre passaggi: creare un file XML, compilare gli elementi appropriati e aggiungerne il codice.'
 ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: how-to
@@ -15,16 +15,17 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 39565b95b93e489a739c2da3a0f88fb9f683a2bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f04ba5610783fbe940504c83c387aa3aade90f24ad8bb1aaf1cecde945f169f1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873801"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121258512"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 
@@ -56,7 +57,7 @@ Il codice XML seguente illustra il modello di frammento di base:
 
 2. Specificare il titolo del frammento nell'elemento **Title**. Usare il titolo **Square Root**.
 
-3. Aggiungere il linguaggio del frammento nell'attributo **Language** dell'elemento **Code**. Per C#, usare **CSharp**, per Visual Basic, usare **VB** e per C++, usare **cpp**.
+3. Aggiungere il linguaggio del frammento nell'attributo **Language** dell'elemento **Code**. Per C#, usare **CSharp**, per Visual Basic, usare **VB** e per C++, usare **CPP**.
 
    > [!TIP]
    > Per tutti i valori di lingua disponibili, vedere la [sezione Attributi dell'elemento Code](code-snippets-schema-reference.md#attributes) nella pagina [Riferimento dello schema dei frammenti di codice](code-snippets-schema-reference.md).
@@ -86,7 +87,7 @@ Il codice XML seguente illustra il modello di frammento di base:
 
 ## <a name="import-a-code-snippet"></a>Importare un frammento di codice
 
-1. È possibile importare un frammento nell'installazione di Visual Studio tramite **Gestione frammenti di codice**. Aprirlo scegliendo **strumenti**  >  **Gestione frammenti di codice**.
+1. È possibile importare un frammento nell'installazione di Visual Studio tramite **Gestione frammenti di codice**. Aprirlo scegliendo **Strumenti**  >  **Gestione frammenti di codice**.
 
 2. Fare clic sul pulsante **Import** (Importa).
 
@@ -98,19 +99,19 @@ Il codice XML seguente illustra il modello di frammento di base:
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual Studio 2017 \ code frammenti C# \My frammenti di codice*  
+   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets*  
    *%USERPROFILE%\Documenti\Visual Studio 2017\Frammenti di codice\Visual Basic\Frammenti di codice*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual Studio 2019 \ code frammenti C# \My frammenti di codice*  
+   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets*  
    *%USERPROFILE%\Documenti\Visual Studio 2019\Frammenti di codice\Visual Basic\Frammenti di codice*
 
    ::: moniker-end
 
-6. Testare il frammento aprendo un progetto C# o Visual Basic. Con un file di codice aperto nell'editor, scegliere **frammenti**  >  di codice **Inserisci frammento** di codice nel menu di scelta rapida, quindi **frammenti di codice**. Verrà visualizzato un frammento denominato **Square Root**. Fare doppio clic.
+6. Testare il frammento aprendo un progetto C# o Visual Basic. Con un file di codice aperto nell'editor, scegliere Frammenti di codice Inserisci frammento di codice dal menu di scelta  >   rapida, quindi **Frammenti di codice.** Verrà visualizzato un frammento denominato **Square Root**. Fare doppio clic.
 
    Il frammento viene inserito nel file di codice.
 

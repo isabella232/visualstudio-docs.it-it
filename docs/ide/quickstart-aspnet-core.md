@@ -3,23 +3,22 @@ title: Creare un'app Web ASP.NET Core in C#
 description: Informazioni dettagliate su come creare un'app Web Hello World in Visual Studio con C# e ASP.NET Core.
 ms.custom: vs-acquisition
 ms.date: 11/06/2019
-ms.technology: vs-ide-general
-ms.prod: visual-studio-windows
 ms.topic: quickstart
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 65ad48bab545d635763a1cabb4e76734431c2a55
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9ffa6ecfbc676ee51bd66ee10f80398c98573a8b996860f13e9761bb0433314a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384837"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121233238"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
@@ -31,19 +30,19 @@ In questa introduzione di 5-10 minuti che spiega come usare Visual Studio viene 
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2022"
 
-Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina dei download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 ::: moniker-end
 
@@ -59,7 +58,7 @@ Per iniziare, creare un progetto di applicazione Web ASP.NET Core. Il tipo di pr
 
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu superiore scegliere **File** > **Nuovo** > **progetto.**
+1. Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
 1. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e scegliere **.NET Core**. Nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. <br/><br/>Denominare il file `HelloWorld` e scegliere **OK**.
 
@@ -89,18 +88,18 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
 
 ::: moniker range=">=vs-2019"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
    :::image type="content" source="../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="Visualizzare la finestra Crea un nuovo progetto":::
 
-1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows dall'elenco** Piattaforma e **Web** dall'elenco dei tipi di progetto.
+1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows** dall'elenco Piattaforma e **Web** dall'elenco dei tipi di progetto.
 
-      Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, **scegliere il modello app Web ASP.NET Core** e quindi scegliere **Avanti.**
+      Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, **scegliere il modello ASP.NET Core App Web** e quindi scegliere **Avanti.**
 
-   :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Scegliere il modello C# per l'app Web ASP.NET Core":::
+   :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Scegliere il modello C# per l'ASP.NET Core Web":::
 
    > [!NOTE]
-   > Se il modello app **Web ASP.NET Core** non è visualizzato, è possibile installarlo dalla finestra Crea un **nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se il modello di app **Web ASP.NET Core** non è visualizzato, è possibile installarlo dalla finestra Crea **un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -110,11 +109,11 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Se viene chiesto di salvare, procedere. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *HelloWorld* nella casella **Nome del progetto**. Scegliere quindi **Avanti.**
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *HelloWorld* nella casella **Nome del progetto**. Scegliere quindi **Avanti**.
 
     :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png" alt-text="nella finestra &quot;Configura il nuovo progetto&quot;, denominare il progetto &quot;MyCoreApp&quot;":::
 
-1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa in alto. Si noti che è possibile scegliere di abilitare il supporto di Docker selezionando la casella. È anche possibile aggiungere il supporto per l'autenticazione facendo clic sul pulsante Cambia autenticazione. Da qui è possibile scegliere tra:
+1. Nella finestra **Informazioni** aggiuntive verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa superiore. Si noti che è possibile scegliere di abilitare il supporto di Docker selezionando la casella . È anche possibile aggiungere il supporto per l'autenticazione facendo clic sul pulsante Cambia autenticazione. Da qui è possibile scegliere tra:
     - Nessuna: nessuna autenticazione.
     - Account singoli: vengono archiviati in un database locale o basato su Azure.
     - Microsoft Identity Platform: questa opzione usa Active Directory, Azure AD o Microsoft 365 per l'autenticazione.
@@ -122,7 +121,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
     
     Lasciare **deselezionata la casella Abilita Docker** e selezionare **Nessuno per** Tipo di autenticazione. Scegliere quindi **Create** (Crea).
 
-   :::image type="content" source="../get-started/csharp/media/vs-2019/aspnet-core-additional-information.png" alt-text="Nella finestra &quot;Informazioni aggiuntive&quot; assicurarsi che sia selezionato .NET Core 3.1 e lasciare tutte le impostazioni predefinite":::
+   :::image type="content" source="../get-started/csharp/media/vs-2019/aspnet-core-additional-information.png" alt-text="nella finestra &quot;Informazioni aggiuntive&quot; assicurarsi che sia selezionato .NET Core 3.1 e lasciare tutte le impostazioni predefinite":::
 
    Visual Studio aprirà il nuovo progetto.
 
@@ -134,7 +133,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
 
 1. In **Esplora soluzioni** espandere la cartella **Pagine** e quindi scegliere **About.cshtml**.
 
-   ![Screenshot della Visual Studio Esplora soluzioni che mostra i file nel progetto HelloWorld. La cartella Pages viene espansa ed è selezionato About.cshtml.](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Screenshot della Visual Studio Esplora soluzioni che mostra i file nel progetto HelloWorld. La cartella Pages viene espansa e viene selezionato About.cshtml.](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Questo file corrisponde a una pagina denominata **Informazioni su** nell'app Web, eseguita in un Web browser.
 
@@ -150,7 +149,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
 
 1. In **Esplora soluzioni** espandere **About.cshtml** e quindi scegliere **About.cshtml**. Questo file corrisponde anche alla pagina **Informazioni su** di un Web browser.
 
-   ![Screenshot della Visual Studio Esplora soluzioni che mostra i file nel progetto HelloWorld. About.cshtml viene espanso ed è selezionato About.cshtml.cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Screenshot della Visual Studio Esplora soluzioni che mostra i file nel progetto HelloWorld. About.cshtml è espanso ed è selezionato About.cshtml.cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    Nell'editor si noterà il codice C# che include il testo per l'area della "descrizione dell'applicazione" della pagina **Informazioni su**.
 
@@ -185,7 +184,7 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
 ::: moniker range=">=vs-2019"
 
-1. Nel **Esplora soluzioni** espandere la **cartella Pages** e quindi scegliere **Index.cshtml.**
+1. Nel **Esplora soluzioni** espandere la **cartella Pages** e quindi **scegliere Index.cshtml**.
 
    ![Scegliere il file Index.cshtml dal Esplora soluzioni](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
 
@@ -195,7 +194,7 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
    Nell'editor verrà visualizzato il codice HTML per il testo visualizzato nella **home** page.
 
-   ![Codice HTML nel file Index.cshtml per la home page nell Visual Studio editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+   ![Codice HTML nel file Index.cshtml per la home page nell'editor Visual Studio codice](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
 1. Modificare il testo "Welcome" (Benvenuto) in "**Hello World!**".
 

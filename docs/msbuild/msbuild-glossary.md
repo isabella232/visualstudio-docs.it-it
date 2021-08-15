@@ -1,6 +1,6 @@
 ---
 title: Glossario di MSBuild
-description: Informazioni sui termini di glossario di Microsoft Build Engine (MSBuild) che descrivono il motore di compilazione e i relativi componenti.
+description: Informazioni sui Microsoft Build Engine (MSBuild) che descrivono il motore di compilazione e i relativi componenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,14 +8,15 @@ ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e5ef85ffc4a10719cfbef79cbaf6dad08bdbf0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c790281dbe3edc21ce5b9961790a91853a4f2ce30099fdcd02afb98fe9a879d2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919117"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121316344"
 ---
 # <a name="msbuild-glossary"></a>Glossario di MSBuild
 
@@ -75,11 +76,11 @@ Gli elementi sono input nel sistema di compilazione e vengono raggruppati in tip
 
 ## <a name="item-definition"></a>definizione di un elemento
 
-I gruppi di definizioni di elementi contengono definizioni di elementi che aggiungono metadati predefiniti a qualsiasi tipo di elemento. Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Per altre informazioni, vedere [definizioni di elementi](../msbuild/item-definitions.md).
+I gruppi di definizioni di elementi contengono definizioni di elementi che aggiungono metadati predefiniti a qualsiasi tipo di elemento. Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Per altre informazioni, vedere [Definizioni degli elementi.](../msbuild/item-definitions.md)
 
 ## <a name="item-function"></a>funzione Item
 
-Le funzioni Item ottengono informazioni sugli elementi nel progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi. Queste funzioni servono a modificare le stringhe e i percorsi degli elementi. Per altre informazioni, vedere [funzioni di elemento](../msbuild/item-functions.md).
+Le funzioni Item ottengono informazioni sugli elementi nel progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi. Queste funzioni servono a modificare le stringhe e i percorsi degli elementi. Per altre informazioni, vedere [Funzioni degli elementi.](../msbuild/item-functions.md)
 
 ## <a name="item-metadata"></a>metadati degli elementi
 
@@ -111,11 +112,11 @@ Un file di progetto contiene lo script di MSBuild che controlla la compilazione.
 
 ## <a name="property"></a>proprietà
 
-Una proprietà è una coppia chiave-valore usata per controllare il processo di compilazione. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà è una coppia chiave-valore usata per controllare il processo di compilazione. Per altre informazioni, vedere MSBuild [proprietà](../msbuild/msbuild-properties.md).
 
 ## <a name="property-environment"></a>proprietà, ambiente
 
-Una proprietà dell'ambiente è una proprietà che viene automaticamente inizializzata sul valore di una variabile di ambiente di sistema con lo stesso nome. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà dell'ambiente è una proprietà che viene automaticamente inizializzata sul valore di una variabile di ambiente di sistema con lo stesso nome. Per altre informazioni, vedere MSBuild [proprietà](../msbuild/msbuild-properties.md).
 
 ## <a name="property-file"></a>file di proprietà
 
@@ -135,7 +136,7 @@ Per altre informazioni, vedere [Funzioni delle proprietà](../msbuild/property-f
 
 ## <a name="property-global"></a>proprietà, globale
 
-Una proprietà globale è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà globali vengono impostate al prompt dei comandi oppure usando l'attributo `Properties` di un'[attività di MSBuild](../msbuild/msbuild-task.md) e non possono essere modificate durante la fase di valutazione di una compilazione. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà globale è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà globali vengono impostate al prompt dei comandi oppure usando l'attributo `Properties` di un'[attività di MSBuild](../msbuild/msbuild-task.md) e non possono essere modificate durante la fase di valutazione di una compilazione. Per altre informazioni, vedere MSBuild [proprietà](../msbuild/msbuild-properties.md).
 
 ## <a name="property-local"></a>proprietà, locale
 
@@ -143,11 +144,11 @@ Una proprietà locale è una coppia chiave-valore usata per controllare il proce
 
 ## <a name="property-registry"></a>proprietà, Registro di sistema
 
-Una proprietà del Registro di sistema ha un valore che viene impostato usando una speciale sintassi che legge il valore di una sottochiave del Registro di sistema. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà del Registro di sistema ha un valore che viene impostato usando una speciale sintassi che legge il valore di una sottochiave del Registro di sistema. Per altre informazioni, vedere MSBuild [proprietà](../msbuild/msbuild-properties.md).
 
 ## <a name="property-reserved"></a>proprietà, riservata
 
-Una proprietà riservata è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà riservate vengono automaticamente inizializzate su valori predefiniti. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà riservata è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà riservate vengono automaticamente inizializzate su valori predefiniti. Per altre informazioni, vedere MSBuild [proprietà](../msbuild/msbuild-properties.md).
 
 ## <a name="project-scope"></a>ambito di progetto
 
@@ -179,7 +180,7 @@ Vedere destinazione, esecuzione.
 
 ## <a name="target-evaluating"></a>destinazione, valutazione
 
-A causa della compilazione incrementale, le destinazioni devono essere analizzate per trovare le potenziali modifiche alle proprietà e agli elementi. Anche se la destinazione viene ignorata, è necessario effettuare queste modifiche. Valutare una destinazione significa eseguire questa analisi e apportare tali modifiche. Per altre informazioni, vedere [compilazioni incrementali](../msbuild/incremental-builds.md).
+A causa della compilazione incrementale, le destinazioni devono essere analizzate per trovare le potenziali modifiche alle proprietà e agli elementi. Anche se la destinazione viene ignorata, è necessario effettuare queste modifiche. Valutare una destinazione significa eseguire questa analisi e apportare tali modifiche. Per altre informazioni, vedere [Compilazioni incrementali.](../msbuild/incremental-builds.md)
 
 ## <a name="target-executing"></a>destinazione, esecuzione
 
@@ -207,7 +208,7 @@ Un file di destinazioni è un file di progetto contenente principalmente destina
 
 ## <a name="task"></a>attività
 
-Le attività sono unità di codice eseguibile usate dai progetti MSBuild per eseguire operazioni di compilazione. Ad esempio, un'attività potrebbe compilare file di input o eseguire uno strumento esterno. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
+Le attività sono unità di codice eseguibile che MSBuild progetti usano per eseguire operazioni di compilazione. Ad esempio, un'attività potrebbe compilare file di input o eseguire uno strumento esterno. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 ## <a name="transform"></a>trasformazione
 
