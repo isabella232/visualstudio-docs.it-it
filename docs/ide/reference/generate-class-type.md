@@ -1,12 +1,13 @@
 ---
 title: Generare una classe o un tipo
-description: Informazioni su come usare il menu azioni rapide e refactoring per generare immediatamente il codice per una classe o un tipo.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per generare immediatamente il codice per una classe o un tipo.
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 094dac3cea088bcede1ae251eec73c9741f6de6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdc33159915f4079c12cf0f282c4b1154cd9ec070acb56948870bb2497c7d276
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897991"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121318434"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -50,7 +51,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
@@ -61,8 +62,8 @@ Questa generazione di codice si applica a:
 3. Selezionare una delle opzioni dal menu a discesa:
 
    - Genera l'elemento classe '*NomeTipo*' nel nuovo file&mdash;Crea una classe denominata *NomeTipo* in un file denominato *NomeTipo*.cs/.vb
-   - Genera la classe '*typeName*' &mdash; Crea una classe denominata *typeName* nel file corrente.
-   - Genera la classe annidata '*typeName*' &mdash; Crea una classe denominata *typeName* annidata all'interno della classe corrente.
+   - Genera classe '*TypeName*' &mdash; Crea una classe denominata *TypeName* nel file corrente.
+   - Genera la classe annidata '*TypeName*' &mdash; Crea una classe denominata *TypeName* annidata all'interno della classe corrente.
    - Genera nuovo tipo&mdash;Crea una nuova classe o un nuovo struct con tutte le proprietà specificate.
 
    > [!TIP]

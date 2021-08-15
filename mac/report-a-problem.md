@@ -6,12 +6,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: c104e4d819e58630f894405b3b56a8a442576816
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: d87f0839a869c8e0473786143cd4261dddb23df714392f8a17649a01547e1129
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668716"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121438755"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Come segnalare un problema in Visual Studio per Mac
 
@@ -49,7 +49,7 @@ Per segnalare un problema con Visual Studio per Mac, selezionare **Aiuto > Segna
 
    ![Segnalare un problema nuovo](media/report-problem-image5.png)
 
-1. Selezionare **Avanti** per passare alla scheda **Includi allegati** . Qui è possibile acquisire la schermata corrente per inviarla a Microsoft. Per allegare file di log, fare clic sull'icona ![Allega log](media/report-problem-attach-logs.png) oppure per allegare screenshot aggiuntivi e altri file, fare clic sull'icona ![Allega file](media/report-problem-attach-file.png).
+1. Selezionare **Avanti** per passare alla **scheda Includi** allegati. Qui è possibile acquisire la schermata corrente per inviarla a Microsoft. Per allegare file di log, fare clic sull'icona ![Allega log](media/report-problem-attach-logs.png) oppure per allegare screenshot aggiuntivi e altri file, fare clic sull'icona ![Allega file](media/report-problem-attach-file.png).
 
    ![Allegare uno screenshot alla segnalazione di un problema di Visual Studio per Mac](media/report-problem-image6.png)
 
@@ -63,6 +63,6 @@ Se non si vuole o non si può usare Visual Studio per Mac per segnalare un probl
 
 Se non si vuole segnalare un problema, ma suggerire una funzionalità, esiste una pagina specifica anche per questo. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://aka.ms/feedback/suggest?space=41).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Segnalare un problema di Visual Studio (in Windows)](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

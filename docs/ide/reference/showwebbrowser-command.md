@@ -13,14 +13,15 @@ ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9117360d795a8027812b2534311a846d0ee56e09
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05c51b422f187fd2302e998f95568393a6bcf5c1bb530336885f0192a092b4d1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957608"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121303800"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 
@@ -58,7 +59,7 @@ L'esempio seguente illustra la home page di Microsoft Docs in un Web browser all
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

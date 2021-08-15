@@ -9,17 +9,18 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 6212dfcb9e93110a97e7143e5b1c946efebee89f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 6f0c042f0756541ff9cebac353a6b4c5bf7e097619f323703adab9b87a6f039d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390841"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271238"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
-Le proprietà DslDefinition definiscono *le proprietà di definizione del linguaggio specifiche* del dominio, ad esempio la numerazione delle versioni. Le proprietà di DslDefinition vengono visualizzate nella **finestra** Proprietà quando si fa clic su un'area aperta del diagramma nel *Finestra di progettazione Domain-Specific Language*.
+Le proprietà DslDefinition definiscono *le proprietà di definizione del linguaggio specifiche* del dominio, ad esempio la numerazione delle versioni. Le proprietà DslDefinition vengono visualizzate nella **finestra Proprietà** quando si fa clic su un'area aperta del diagramma nel *Finestra di progettazione Domain-Specific Language*.
 
  Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
 

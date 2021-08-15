@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 96d37bc586f9e8d6134377244c3181a52ec11a84
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: eaf4c73dc75f24e88dcc1327c3fd0ad71ec950d0e113892e30b88270c8e8b984
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387554"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271108"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 
@@ -49,7 +50,7 @@ This report is Company Confidential.
 
 Si noti che il modello è una pagina HTML in cui le parti delle variabili sono state sostituite con il codice del programma. È possibile iniziare la progettazione di una pagina di questo tipo scrivendo un prototipo statico della pagina HTML. È quindi possibile sostituire la tabella e altre parti variabili con codice programma che genera il contenuto che varia da un'occasione all'altra.
 
-L'uso di un modello nell'applicazione semplifica la visualizzazione della forma finale dell'output rispetto a quanto sia possibile in, ad esempio, in una lunga serie di istruzioni di scrittura. Apportare modifiche al formato dell'output è più semplice e affidabile.
+L'uso di un modello nell'applicazione semplifica la visualizzazione della forma finale dell'output rispetto a quanto sia possibile in, ad esempio, in una lunga serie di istruzioni di scrittura. Apportare modifiche alla forma dell'output è più semplice e affidabile.
 
 ## <a name="creating-a-run-time-text-template-in-any-application"></a>Creazione di un Run-Time di testo in qualsiasi applicazione
 
@@ -97,7 +98,7 @@ Un buon modo per creare un modello è convertire un esempio esistente dell'outpu
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>Contenuto del modello Run-Time dati
+## <a name="the-content-of-the-run-time-template"></a>Contenuto del modello Run-Time
 
 ### <a name="template-directive"></a>Direttiva del modello
 
@@ -109,7 +110,7 @@ Il parametro language dipenderà dal linguaggio del progetto.
 
 ### <a name="plain-content"></a>Contenuto normale
 
-Modificare il file **con estensione tt** in modo che contenga il testo che si vuole generare dall'applicazione. Ad esempio:
+Modificare il file **con estensione tt** in modo che contenga il testo che deve essere generato dall'applicazione. Esempio:
 
 ```html
 <html><body>
@@ -121,7 +122,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Codice programma incorporato
 
-È possibile inserire il codice del programma tra `<#` e `#>` . Ad esempio:
+È possibile inserire il codice del programma tra `<#` e `#>` . Esempio:
 
 ```csharp
 <table>
@@ -152,7 +153,7 @@ Si noti che le istruzioni vengono inserite tra `<# ... #>` le espressioni e tra 
 
 ### <a name="the-code-built-from-the-template"></a>Codice compilato dal modello
 
-Quando si salva il file **con estensione tt,** viene generato un file **cs** o **vb** sussidiaria. Per visualizzare questo file in **Esplora soluzioni**, espandere il nodo del file con estensione **tt.** In un Visual Basic progetto, scegliere mostra tutti i **file** nella barra **Esplora soluzioni** strumenti.
+Quando si salva il file **con estensione tt,** viene generato un file **cs** o **vb** sussidiaria. Per visualizzare questo file in **Esplora soluzioni**, espandere il nodo del file con estensione **tt.** In un Visual Basic progetto, scegliere mostra tutti i **file** nella barra Esplora soluzioni barra **degli** strumenti.
 
 Si noti che il file sussidiaria contiene una classe parziale che contiene un metodo denominato `TransformText()` . È possibile chiamare questo metodo dall'applicazione.
 
@@ -193,7 +194,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-Nel file modello **MyWebPage.tt** scrivere:
+Nel file modello **MyWebPage.tt,** è possibile scrivere:
 
 ```html
 <h2>Sales figures</h2>
@@ -312,7 +313,7 @@ Nel modello usato nell'esempio seguente si notino i punti seguenti:
 
 - L'applicazione chiama `TextTransform()` il metodo della classe derivata, ma non trasforma la classe base `SharedFragments` .
 
-- Sia le classi di base che le classi derivate sono modelli di testo di runtime. ciò significa che la **proprietà Strumento** personalizzato è impostata su **TextTemplatingFilePreprocessor.**
+- Sia la classe di base che le classi derivate sono modelli di testo di runtime. ciò significa che la **proprietà Strumento** personalizzato è impostata su **TextTemplatingFilePreprocessor.**
 
 **SharedFragments.tt:**
 
@@ -357,7 +358,7 @@ end 1
 
 #### <a name="inheritance-pattern-text-in-base-body"></a>Modello di ereditarietà: testo nel corpo di base
 
-In questo approccio alternativo all'uso dell'ereditarietà del modello, la maggior parte del testo viene definita nel modello di base. I modelli derivati forniscono frammenti di dati e di testo che rientrano nel contenuto di base.
+In questo approccio alternativo all'uso dell'ereditarietà del modello, la maggior parte del testo è definita nel modello di base. I modelli derivati forniscono frammenti di dati e di testo che rientrano nel contenuto di base.
 
 **AbstractBaseTemplate1.tt:**
 

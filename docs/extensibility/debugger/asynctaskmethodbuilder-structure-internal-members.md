@@ -12,14 +12,15 @@ ms.assetid: f32f5857-7ef8-45fd-8b5a-7f644eb98b11
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5b21045688fc2be555c7a42d6e3b9014b66c761
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 451696422e43cb257beb879980206b6c97f022743cf5ffd28eb40938d331460c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903840"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434681"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>Struttura AsyncTaskMethodBuilder - membri interni
 In questo argomento vengono descritti i membri interni della <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> classe . Per informazioni generali su questa classe, vedere <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> l'argomento di riferimento.
@@ -45,6 +46,6 @@ In questo argomento vengono descritti i membri interni della <xref:System.Runtim
 |[ObjectIdForDebugger - proprietà](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|Ottiene un oggetto che può essere utilizzato per identificare in modo univoco questo generatore nel debugger.|
 |[m_builder campo](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|Rappresenta l'oggetto generatore generico a cui delega questa istanza non generica.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
 - [Estensioni interne parallele per l'.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Chiamante/chiamato: dati di strumentazione | Microsoft Docs'
-description: Informazioni sul modo in cui la visualizzazione chiamante/chiamato Visualizza le informazioni di strumentazione nell'albero delle chiamate in Esplora prestazioni.
+description: Informazioni su come la visualizzazione Chiamante/chiamato visualizza le informazioni di strumentazione nell'albero delle chiamate in Esplora prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 06de8e10c57bdf6278310467d3cf0505b9c8ce4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9abef15506a3d44dad2ff44b4ac6f425dc02f6fd35c2babe4b27ff964b783733
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939487"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427184"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Visualizzazione Chiamante/chiamato: dati di strumentazione
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di profilatura per una funzione selezionata e le relative funzioni padre e figlio nell'albero delle chiamate. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -34,12 +35,12 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome funzione**|Nome della funzione.|
+|**Nome della funzione**|Nome della funzione.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
@@ -93,7 +94,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione in questo contesto.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
-- [Visualizzazione chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

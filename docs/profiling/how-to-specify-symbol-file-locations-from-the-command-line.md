@@ -1,6 +1,6 @@
 ---
 title: Specificare i percorsi dei file di simboli dalla riga di comando
-description: Informazioni sul modo in cui lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione pdb) per visualizzare informazioni sui simboli, ad esempio i nomi delle funzioni e i numeri di riga.
+description: Informazioni su come lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione pdb) per visualizzare informazioni sui simboli, ad esempio i nomi delle funzioni e i numeri di riga.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,15 +8,16 @@ ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ea3eff001c49f4d7546985f1357126dc87717bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e30a8d39f21c43c49f81529e94d570e016f365ec43a3944f6c8261468fc5b863
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920726"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121301031"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare percorsi dei file di simboli tramite la riga di comando
 Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione *pdb*) dei componenti profilati e ai file di sistema di Windows. I file di simboli vengono creati quando viene compilato un componente. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport esegue automaticamente la ricerca dei file di simboli nei percorsi seguenti:

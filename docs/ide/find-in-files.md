@@ -18,18 +18,19 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f3756b63cc07ed701a36b34a96c581acd9eb38
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 1afeed717e93fca3bb2b33bb05db5876201c1265e506fe23b807ba9ce080412c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094666"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121272642"
 ---
 # <a name="find-in-files"></a>Cerca nei file
 
-**Trova nei file** consente di cercare un set specificato di file. Le corrispondenze Visual Studio vengono elencate nella **finestra Risultati** ricerca nell'IDE. La modalità di visualizzazione dei risultati dipende dalle opzioni selezionate **nella** scheda Cerca nei file della finestra **di dialogo** Trova e sostituisci .
+**Trova nei file** consente di cercare un set specificato di file. Le corrispondenze Visual Studio vengono elencate nella **finestra Risultati** ricerca nell'IDE. La modalità di visualizzazione dei risultati dipende dalle opzioni selezionate nella scheda Cerca **nei** file della finestra **di dialogo** Trova e sostituisci .
 
 ::: moniker range=">=vs-2019"
 
@@ -88,7 +89,7 @@ Per cercare una nuova stringa di testo o una nuova espressione, specificarla nel
 
 L'opzione selezionata dall'elenco a discesa  Cerca in determina se La ricerca nei file viene eseguita nell'intera area di lavoro, nell'intera soluzione, nel progetto corrente, nella directory corrente, **in** tutti i documenti aperti o nel documento corrente.
 
-È anche possibile usare il pulsante **Sfoglia (...)** adiacente per individuare la posizione in cui si vuole eseguire la ricerca. Ancora meglio, se è già stata specificata una directory, questo pulsante accoderà la nuova directory invece di sostituirla. Ad esempio, se il valore "Cerca in" è ".\Code", è possibile fare clic sul pulsante Sfoglia **(...)** e passare a una cartella denominata "Codice condiviso". Nella **casella Sfoglia (...)** viene ora visualizzato ".\Code;. \Shared Code" e quando viene eseguito il comando Find, esegue la ricerca in entrambe le cartelle.
+È anche possibile usare il pulsante **Sfoglia (...)** adiacente per individuare la posizione in cui si vuole eseguire la ricerca. Ancora meglio, se è già stata specificata una directory, questo pulsante accoderà la nuova directory anziché sostituire . Ad esempio, se il valore "Cerca in" è ".\Code", è possibile fare clic sul pulsante Sfoglia **(...)** e passare a una cartella denominata "Codice condiviso". Nella **casella Sfoglia (...)** viene ora visualizzato ".\Code;. \Shared Code" e quando viene eseguito il comando Find, esegue la ricerca in entrambe le cartelle.
 
 Per perfezionare la ricerca, è possibile selezionare o deselezionare le opzioni seguenti:
 
@@ -105,7 +106,7 @@ Per perfezionare la ricerca, è possibile selezionare o deselezionare le opzioni
 
 ### <a name="append-results"></a>Accoda risultati
 
-Usare questa opzione per aggiungere i risultati della ricerca corrente ai risultati della ricerca precedenti.
+Usare questa opzione per accodare i risultati della ricerca corrente ai risultati della ricerca precedenti.
 
 ::: moniker-end
 
@@ -125,7 +126,7 @@ L'opzione selezionata dall'elenco a discesa **Cerca in** determina se la funzion
 Selezionare un ambito di ricerca nell'elenco o fare clic sul pulsante **Sfoglia (...)** per visualizzare la finestra di dialogo **Seleziona cartelle di ricerca** e immettere il set di directory desiderato. È anche possibile digitare un percorso direttamente nella casella **Cerca in**.
 
 > [!WARNING]
-> Se si sceglie **l'opzione Intera soluzione** o **Project** corrente, non viene cercata la ricerca nei file di progetto e di soluzione. Se si vuole cercare nei file di progetto, selezionare una cartella di ricerca.
+> Se si sceglie **l'opzione Intera soluzione** o Project **corrente,** non viene cercata la ricerca nei file di progetto e di soluzione. Se si vuole cercare nei file di progetto, selezionare una cartella di ricerca.
 
 > [!NOTE]
 > Se si usa l'opzione Cerca **in** per cercare un file estratto dal controllo del codice sorgente, viene trovata solo la versione del file scaricata nel computer locale.
@@ -166,7 +167,7 @@ Selezionare qualsiasi voce dell'elenco per immettere una stringa di ricerca prec
 
 **Finestra Risultati ricerca 1**
 
-Se questa opzione è selezionata, i risultati della ricerca corrente sostituiscono il contenuto della **finestra Risultati ricerca 1.** Questa finestra viene aperta automaticamente per visualizzare i risultati della ricerca. Per aprire questa finestra  manualmente, scegliere Windows **altro** dal menu Visualizza e quindi selezionare **Risultati ricerca 1.**
+Se questa opzione è selezionata, i risultati della ricerca corrente sostituiscono il contenuto della **finestra Risultati ricerca 1.** Questa finestra viene aperta automaticamente per visualizzare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Windows** **dal** menu Visualizza e quindi selezionare Risultati ricerca **1.**
 
 **Finestra Risultati ricerca 2**
 

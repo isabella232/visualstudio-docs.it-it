@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo - F#, CodeLens
-description: "Informazioni su come usare la pagina CodeLens nella sezione F # per modificare le impostazioni CodeLens dell'editor di testo per F #."
+description: Informazioni su come usare la pagina CodeLens nella sezione F# per modificare le impostazioni codeLens dell'editor di testo per F#.
 ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
@@ -9,18 +9,19 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50d78909e7abf27c8bd1a813041a85df47ea831c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6091d0ea29612e40c3ed8ee6f3c2cf7dab1ea0926c5a24011302f848650251d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943887"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121232257"
 ---
 # <a name="options-text-editor-f-codelens"></a>Opzioni, Editor di testo - F#, CodeLens
 
-Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di CodeLens dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  **F #**  >  **CodeLens**.
+Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di CodeLens dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **Opzioni** strumenti e quindi scegliere Editor di  >     >  **testo F#**  >  **CodeLens.**
 
 ## <a name="codelens"></a>CodeLens
 
@@ -42,5 +43,5 @@ Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di Cod
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

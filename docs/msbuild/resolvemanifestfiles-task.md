@@ -1,6 +1,6 @@
 ---
 title: Attività ResolveManifestFiles | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività ResolveManifestFiles per risolvere gli elementi del processo di compilazione in file per la generazione di manifesti.
+description: Informazioni su MSBuild'attività ResolveManifestFiles per risolvere gli elementi del processo di compilazione in file per la generazione del manifesto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b67483c82e19c51da776d6ec40066ba5223a238a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f0306ef70bf7aa2c74875001bbd6f4e1a3bec2c14be65565cda0c56ac13892f8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912514"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121270367"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles (attività)
 
@@ -52,7 +53,7 @@ Risolve gli elementi seguenti del processo di compilazione nei file per la gener
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedi anche
 

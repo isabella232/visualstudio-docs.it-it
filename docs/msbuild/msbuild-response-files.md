@@ -1,6 +1,6 @@
 ---
 title: File di risposta MSBuild | Microsoft Docs
-description: Informazioni sui file di risposta MSBuild o RSP, i file di testo che contengono MSBuild.exe opzioni della riga di comando.
+description: Informazioni sui MSBuild di risposta o rsp, file di testo che contengono MSBuild.exe della riga di comando.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,18 +18,19 @@ ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 17a4e10864776540c176fd6911917071aa42c656
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0037b8ca17b8f1a3ed5756f7916b72c581b67e325f9a44b3e4b016a34ea07f88
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860867"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121302864"
 ---
 # <a name="msbuild-response-files"></a>File di risposta MSBuild
 
-I file di risposta (con estensione *rsp*) sono file di testo che contengono opzioni della riga di comando di *MSBuild.exe*. Ogni opzione può essere su una riga separata oppure tutte le opzioni possono essere sulla stessa riga. Le righe di commento sono precedute da un **#** simbolo. L' **@** opzione viene usata per passare un altro file di risposta a *MSBuild.exe*.
+I file di risposta (con estensione *rsp*) sono file di testo che contengono opzioni della riga di comando di *MSBuild.exe*. Ogni opzione può essere su una riga separata oppure tutte le opzioni possono essere sulla stessa riga. Le righe di commento sono precedute da un **#** simbolo. **@** L'opzione viene usata per passare un altro file di risposta *MSBuild.exe*.
 
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 

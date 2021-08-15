@@ -11,19 +11,20 @@ ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07b23fbafd9342b555e2578c4bc0401371e30785
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0c19e92bdfb7a7f015cdf23fea12657e9f5813f155b761c6894bc9d943841b63
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901279"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434529"
 ---
 # <a name="programs"></a>Programmi
 Nell'architettura del debugger, un *programma*:
 
-- Contenitore sia per un set di thread che per un set di moduli. Un programma non ha alcuna analogia singola nel sistema operativo Windows.
+- Contenitore sia per un set di thread che per un set di moduli. Un programma non ha alcuna analogia nel sistema Windows operativo.
 
      Un programma è un tipo di processo secondario. Ad esempio, quando si esegue il debug di un sito Web, uno script può essere visto come programma. Mentre uno script viene eseguito nel processo del motore di scripting, indipendentemente da altri script, ha anche un proprio set di thread. Un motore di debug (DE) si collega a un programma e non a un processo o a un thread.
 
@@ -33,7 +34,7 @@ Nell'architettura del debugger, un *programma*:
 
 - È rappresentato da [un'interfaccia IDebugProgram2,](../../extensibility/debugger/reference/idebugprogram2.md) creata prima che il programma sia collegato o come parte del processo di connessione, a seconda dell'implementazione. Quando una porta enumera i programmi di un processo, ogni programma viene creato in base a [un'interfaccia IDebugProgramNode2 corrispondente](../../extensibility/debugger/reference/idebugprogramnode2.md) passata come argomento ad [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Anche se i motori di debug creano anche interfacce per rappresentare i programmi, questi programmi non vengono `IDebugProgram2` creati in base a un nodo di programma. Le interfacce create da un de vengono usate per il debug effettivo, mentre quelle create da una porta vengono usate solo per individuare i programmi `IDebugProgramNode2` in esecuzione in un processo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Processi](../../extensibility/debugger/processes.md)
 - [Nodi di programma](../../extensibility/debugger/program-nodes.md)
 - [Moduli](../../extensibility/debugger/modules.md)

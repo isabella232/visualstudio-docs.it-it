@@ -1,5 +1,5 @@
 ---
-description: Recupera la versione System. Runtime. InteropServices. ComTypes. IEnumVARIANT dell'enumeratore del flusso di dati di debug.
+description: Recupera la versione System.Runtime.InteropServices.ComTypes.IEnumVARIANT dell'enumeratore del flusso di dati di debug.
 title: IDiaEnumDebugStreamData::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 023b3e31-0fc9-478d-88e8-af2ce762f322
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 785f857e1907815a9e5958b67dfe36d96f8b4dae
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 41cf1d018e38723551010c3762ab2bb281e0d36043c74dfca46324bda5ecdd48
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159475"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121312212"
 ---
 # <a name="idiaenumdebugstreamdataget__newenum"></a>IDiaEnumDebugStreamData::get__NewEnum
-Recupera la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione dell'enumeratore.
+Recupera la versione <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> di questo enumeratore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT get__NewEnum (
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-out Restituisce l' `IUnknown` interfaccia che rappresenta la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione dell'enumeratore.
+[out] Restituisce `IUnknown` l'interfaccia che rappresenta la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione di questo enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

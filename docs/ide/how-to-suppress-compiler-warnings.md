@@ -1,6 +1,6 @@
 ---
-title: Non visualizzare gli avvisi per i progetti e i pacchetti NuGet
-description: Informazioni su come usare Visual Studio per declutterare un log di compilazione filtrando uno o più tipi di avvisi del compilatore.
+title: Eliminare gli avvisi per progetti e NuGet pacchetti
+description: Informazioni su come usare Visual Studio per eliminare un log di compilazione filtrando uno o più tipi di avvisi del compilatore.
 ms.custom: SEO-VS-2020
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab79521cfd4cc122fa398f88b56ca37e2f2673a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55c3a0b0d5d7bd41b564467936252f3c0a3cafc3c40e2549b673c4f8046136fc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869180"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121272252"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare gli avvisi del compilatore
 
-È possibile snellire un log di compilazione escludendo uno o più tipi di avvisi del compilatore. Ad esempio, potrebbe essere necessario esaminare solo parte dell'output generato quando si imposta il livello di dettaglio del log di compilazione su **normale**, **dettagliato** o **diagnostico**. Per altre informazioni sul livello di dettaglio, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
+È possibile snellire un log di compilazione escludendo uno o più tipi di avvisi del compilatore. Ad esempio, potrebbe essere necessario esaminare solo parte dell'output generato quando si imposta il livello di dettaglio del log di compilazione su **Normale,** Dettagliato o **Diagnostica.** Per altre informazioni sul livello di dettaglio, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Non visualizzare avvisi specifici per Visual C# o F\#
 
@@ -27,7 +27,7 @@ Usare la pagina delle proprietà **Compila** per escludere avvisi specifici per 
 
 1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.
 
-1. Sulla barra dei menu scegliere **Visualizza**  >  **pagine delle proprietà**.
+1. Sulla barra dei menu scegliere **Visualizza pagine**  >  **delle proprietà**.
 
 1. Scegliere la scheda **Compila**.
 
@@ -35,13 +35,13 @@ Usare la pagina delle proprietà **Compila** per escludere avvisi specifici per 
 
 1. Ricompilare la soluzione.
 
-## <a name="suppress-specific-warnings-for-c"></a>Non visualizzare avvisi specifici per C++
+## <a name="suppress-specific-warnings-for-c"></a>Eliminare avvisi specifici per C++
 
 Usare la pagina delle proprietà **Proprietà di configurazione** per escludere avvisi specifici per i progetti C++.
 
 1. In **Esplora soluzioni** scegliere il progetto o il file di origine in cui non devono essere visualizzati gli avvisi.
 
-1. Sulla barra dei menu scegliere **Visualizza**  >  **pagine delle proprietà**.
+1. Sulla barra dei menu scegliere **Visualizza pagine**  >  **delle proprietà**.
 
 1. Scegliere la categoria **Proprietà di configurazione**, selezionare la categoria **C/C++** e scegliere la pagina **Avanzate**.
 
@@ -63,7 +63,7 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
 
 1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.
 
-1. Sulla barra dei menu scegliere **progetto**  >  **Scarica** progetto.
+1. Sulla barra dei menu **scegliere** Project Scarica  >  **Project**.
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e quindi scegliere **Modifica\<ProjectName>vbproj**.
 
@@ -89,7 +89,7 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
     ```
 
    > [!NOTE]
-   > I progetti .NET Core non contengono gruppi di proprietà di configurazione della build per impostazione predefinita. Per escludere avvisi in un progetto .NET Core, aggiungere la sezione della configurazione della build manualmente al file. Ad esempio:
+   > I progetti .NET Core non contengono gruppi di proprietà di configurazione della build per impostazione predefinita. Per escludere avvisi in un progetto .NET Core, aggiungere la sezione della configurazione della build manualmente al file. Esempio:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -106,9 +106,9 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
 
 1. Salvare le modifiche apportate al file con estensione *vbproj*.
 
-1. Sulla barra dei menu scegliere **progetto**  >  **ricarica** progetto.
+1. Sulla barra dei menu **scegliere** Project Ricarica  >  **Project**.
 
-1. Sulla barra dei menu scegliere **Compila**  >  **Ricompila soluzione**.
+1. Sulla barra dei menu scegliere **Compila**  >  **ricompila soluzione**.
 
     Nella finestra **Output** gli avvisi specificati non saranno più visualizzati.
 

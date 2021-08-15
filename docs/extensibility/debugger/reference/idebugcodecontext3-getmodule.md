@@ -1,6 +1,6 @@
 ---
 description: Recupera un riferimento all'interfaccia del modulo di debug.
-title: 'IDebugCodeContext3:: GetModule | Microsoft Docs'
+title: IDebugCodeContext3::GetModule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +9,18 @@ ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 399b0b603bc104d9d0869f7a26e0b5f60565c93a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 29330e94d57d81f9ddc2903b390006a022780e907441887612ee8629c1691784
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088341"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262204"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 Recupera un riferimento all'interfaccia del modulo di debug.
@@ -40,13 +41,13 @@ public int GetModule(
 
 ## <a name="parameters"></a>Parametri
 `ppModule`\
-out Riferimento all'interfaccia del modulo di debug.
+[out] Riferimento all'interfaccia del modulo di debug.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugCodeContext** che espone l'interfaccia [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugCodeContext** che espone l'interfaccia [IDebugBeforeSymbolSearchEvent2.](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)
 
 ```cpp
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)

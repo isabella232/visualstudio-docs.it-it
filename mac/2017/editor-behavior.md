@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: dca21119a73c03b63a273f7b4c22d70ecdb2a583
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 416906adf21beee8849d2aae38489d8d212f2f3bfd9982a2c6f11dae94cad064
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984676"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121313744"
 ---
 # <a name="editor-behavior"></a>Comportamento dell'editor
 
@@ -29,6 +29,6 @@ ms.locfileid: "74984676"
 
 È anche possibile impostare regole di formattazione per XML, CSS, HTML e JSON.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Preferenze di stile per il codice (Visual Studio in Windows)](/visualstudio/ide/code-styles-and-quick-actions)

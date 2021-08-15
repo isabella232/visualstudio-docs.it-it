@@ -6,17 +6,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: dcbc575385660ea8369300acf4584b5b3d32b7fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5197a7cdcca551993e3b7a2fdf76f0fb3267748029eb75588ca85f67af2e62b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910792"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121446903"
 ---
 # <a name="sort-usings"></a>Ordina using
 
@@ -28,14 +29,14 @@ Questo refactoring si applica a:
 
 **Cosa:** Ordina using.
 
-**Quando:** Si desidera ordinare `using` le direttive all'inizio del file in modo che siano in ordine alfabetico. 
+**Quando:** Si desidera ordinare le direttive all'inizio del file in modo che `using` siano in ordine alfabetico. 
 
-**Motivo:** Consente di trovare più facilmente una direttiva using.
+**Perché:** Rende più semplice trovare una direttiva using.
 
 ## <a name="how-to"></a>Procedure
 
 1. Selezionare **Modifica** dalla barra dei menu.
-2. Selezionare **IntelliSense**  >  **Ordina using**.
+2. Selezionare **IntelliSense**  >  **Sort Usings (Ordina using).**
 
    ![Ordina using](media/sort-usings.png)
 

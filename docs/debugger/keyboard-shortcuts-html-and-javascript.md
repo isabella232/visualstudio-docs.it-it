@@ -1,6 +1,6 @@
 ---
-title: Scelte rapide da tastiera (HTML e JavaScript) | Microsoft Docs
-description: Vedere Tasti di scelta rapida per il debug di app UWP che usano HTML e JavaScript. Sono disponibili collegamenti per la finestra della console JavaScript e per DOM Explorer.
+title: Tasti di scelta rapida (HTML e JavaScript) | Microsoft Docs
+description: Vedere i tasti di scelta rapida per il debug di app UWP che usano HTML e JavaScript. Sono disponibili collegamenti per la finestra della console JavaScript e per DOM Explorer.
 ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: conceptual
@@ -12,23 +12,24 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f20c7bf1060dc09783722c20254db7ed8c167b07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c772163fa9f72e508ff2ca141d420b0647e28aba4445b44d53fa7995fa2e3722
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893204"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121324756"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Scelte rapide da tastiera (HTML e JavaScript)
 
-Tasti di scelta rapida in Visual Studio per il debug di app UWP con HTML e JavaScript.
+Tasti di scelta rapida in Visual Studio per il debug di app UWP usando HTML e JavaScript.
 
 ## <a name="general-shortcuts"></a>Tasti di scelta rapida generali
 
- Questi tasti di scelta rapida funzionano in tutti gli strumenti per le app UWP con HTML e JavaScript.
+ Questi tasti di scelta rapida funzionano in tutti gli strumenti per le app UWP usando HTML e JavaScript.
 
 |Azione|Tasto di scelta rapida|
 |------------|--------------|

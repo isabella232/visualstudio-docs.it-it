@@ -1,6 +1,6 @@
 ---
 title: Debug.Print
-description: Informazioni sul comando Print e sul modo in cui valuta un'espressione o Visualizza il testo specificato.
+description: Informazioni sul comando Stampa e su come valuta un'espressione o visualizza il testo specificato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 08150654a7a4f062555a1d12382b9d51aacca25f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02cc2625c4c9bc04ccbfb5f6a5ab6854453be99b43edd341bb6f2a5750cd0249
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932033"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271810"
 ---
 # <a name="print-command"></a>Stampa (comando)
 
@@ -63,8 +64,8 @@ Entrambe le versioni di questo comando restituiscono il valore corrente dell'esp
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comando valuta istruzione](../../ide/reference/evaluate-statement-command.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Comando Valuta istruzione](../../ide/reference/evaluate-statement-command.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

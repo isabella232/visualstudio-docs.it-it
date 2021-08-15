@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: generare un frammento XML da XML Schema'
-description: Viene illustrato come utilizzare l'editor XML per generare un frammento XML da uno schema XSD (XML Schema Definition Language).
+description: Informazioni su come usare l'editor XML per generare un frammento XML da uno schema XSD (XML Schema Definition Language).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +8,19 @@ ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: e73834888009ff547bb4252aaedafb713ce9c2fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc4459222af2d6b53b6d2e881c493225be535792f4cde587a3c6def3f0fff02b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897464"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243081"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: generare un frammento XML da un XML Schema
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: Generare un frammento XML da un XML Schema
 
-L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema Definition Language). Ad esempio, quando si crea un file XML, mentre si è posizionati accanto al nome dell'elemento, è possibile premere **Tab** per popolare l'elemento con i dati XML generati dalle informazioni sullo schema per l'elemento.
+L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema Definition Language). Ad esempio, durante la creazione di un file XML, mentre è posizionato accanto al nome dell'elemento, è possibile premere **TAB** per popolare l'elemento con i dati XML generati dalle informazioni sullo schema per tale elemento.
 
 Questa funzionalità è disponibile solo per gli elementi. È inoltre necessario rispettare le seguenti regole:
 
@@ -45,32 +46,32 @@ I valori predefiniti vengono generati e specificati come valori modificabili. Se
 
 ## <a name="example"></a>Esempio
 
-Nei passaggi di questa sezione viene illustrato come utilizzare la funzionalità dei frammenti XML generata dallo schema dell'editor XML.
+I passaggi descritti in questa sezione illustrano come usare la funzionalità dei frammenti XML generati da schema dell'editor XML.
 
 > [!NOTE]
 > Prima di avviare tali procedure, salvare il file di schema nel computer locale.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a un XML Schema
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a uno schema XML
 
-1. Scegliere **nuovo** dal menu **file** e quindi fare clic su **file**.
+1. Scegliere **Nuovo** dal menu File **e** fare clic su **File**.
 
-2. Selezionare **file XML** nel riquadro **modelli** e fare clic su **Apri**.
+2. Selezionare **File XML nel** riquadro Modelli **e** fare clic su **Apri.**
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
+3. Nella finestra delle proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel **campo** Schemi.
 
-     Verrà visualizzata la finestra di dialogo **schemi XSD** .
+     Verrà **visualizzata la finestra** di dialogo Schemi XSD .
 
 4. Fare clic su **Aggiungi**.
 
-     Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
+     Verrà **visualizzata la finestra** di dialogo Apri schema XSD .
 
-5. Selezionare il file di schema e fare clic su **Apri**.
+5. Selezionare il file di schema e fare clic su **Apri.**
 
 6. Fare clic su **OK**.
 
-     Il XML Schema è ora associato al documento XML.
+     L'XML Schema è ora associato al documento XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Per generare un frammento XML
 
@@ -80,17 +81,17 @@ Nei passaggi di questa sezione viene illustrato come utilizzare la funzionalità
 
      **!--** aggiungere un commento.
 
-     **! DOCTYPE** per aggiungere un tipo di documento.
+     **! DOCTYPE per** aggiungere un tipo di documento.
 
      **?** per aggiungere un'istruzione di elaborazione.
 
      **Contattare** per aggiungere l'elemento radice.
 
-3. Selezionare **Contact (Contatta** ) nell'elenco dei membri e premere **invio**.
+3. Selezionare **Contact** (Contatto) nell'elenco dei membri e premere **INVIO.**
 
      L'editor aggiunge il tag di inizio `<Contact` e posiziona il cursore dopo il nome dell'elemento.
 
-4. Premere **Tab** per generare dati XML per l' `Contact` elemento in base alle informazioni sullo schema.
+4. Premere **TAB per** generare dati XML per l'elemento in base alle relative informazioni sullo `Contact` schema.
 
 ## <a name="input"></a>Input
 
@@ -143,7 +144,7 @@ nella procedura dettagliata viene usato il seguente file di schema.
 
 ### <a name="output"></a>Output
 
-Di seguito sono riportati i dati XML generati in base alle informazioni sullo schema associate all'elemento `Contact`. Gli elementi contrassegnati come `bold` designano i campi modificabili nel frammento XML.
+Di seguito sono riportati i dati XML generati in base alle informazioni sullo schema associate all'elemento `Contact`. Elementi contrassegnati come `bold` campi modificabili designati nel frammento XML.
 
 ```xml
 <Contact>
@@ -159,4 +160,4 @@ Di seguito sono riportati i dati XML generati in base alle informazioni sullo sc
 ## <a name="see-also"></a>Vedi anche
 
 - [frammenti XML](../xml-tools/xml-snippets.md)
-- [Procedura: utilizzare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Procedura: Usare frammenti XML](../xml-tools/how-to-use-xml-snippets.md)

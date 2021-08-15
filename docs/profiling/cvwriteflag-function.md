@@ -1,6 +1,6 @@
 ---
 title: Funzione CvWriteFlag | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvWriteFlag (libreria C).
+description: Vedere le informazioni di riferimento per la funzione CVWriteFlag (libreria C) dell'SDK del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e24782f38ec3512349efa123f5aed5a068c6b59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bfc1d43526eddfc20e0ec639559be9bc75370e19692fde8496a227ac3c9b4538
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948166"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121301551"
 ---
 # <a name="cvwriteflag-function"></a>Funzione CvWriteFlag
 Scrive un flag nel file di traccia del visualizzatore di concorrenza.
@@ -86,4 +87,4 @@ HRESULT CvWriteFlagExVA(
  <strong>ANSI:</strong> CvWriteFlagExA, CvWriteFlagExVA
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)
+- [Informazioni di riferimento sulla libreria C++](../profiling/cpp-library-reference.md)

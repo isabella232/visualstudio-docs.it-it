@@ -8,14 +8,15 @@ ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1ce11b59ad7f38de4c71fa13371da16225b5b843
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e7e5d2eca2506ef0d4e3de3968ffc85b01c6dd5b5508a620435d3ac2b069821
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858410"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346817"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La stringa di connessione contiene credenziali con una password in testo non crittografato e non utilizza la sicurezza integrata
 
@@ -28,14 +29,14 @@ Quando si usano connessioni dati in cui sono contenute informazioni riservate, a
 
 ## <a name="save-options"></a>Opzioni di salvataggio
 
-- Per salvare la stringa di connessione con le informazioni riservate, scegliere **Sì**.
+- Per salvare la stringa di connessione con le informazioni riservate, scegliere **Sì.**
 
    La stringa di connessione viene archiviata come impostazione dell'applicazione e include le informazioni riservate in testo normale. Il file DBML non contiene le informazioni riservate.
 
-- Per salvare la stringa di connessione senza le informazioni riservate, scegliere **No**.
+- Per salvare la stringa di connessione senza le informazioni riservate, scegliere **No.**
 
    La stringa di connessione viene archiviata come impostazione dell'applicazione, ma non viene inclusa la password.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL strumenti in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

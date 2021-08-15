@@ -1,6 +1,6 @@
 ---
-description: La sezione di riferimento include una panoramica concettuale dell'API, una guida che mostra la sintassi e l'utilizzo di tutti gli elementi API e un assortimento di esempi di codice.
-title: Informazioni di riferimento sulle API (debug di Visual Studio) | Microsoft Docs
+description: La sezione di riferimento include una panoramica concettuale dell'API, una guida che illustra la sintassi e l'utilizzo di tutti gli elementi dell'API e un'ampia gamma di esempi di codice.
+title: Informazioni di riferimento sulle API (Visual Studio debug) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,23 +9,24 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8a43e4bae5afce98e07b196f5a01c33d44c72ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 244af855dd63942fd2df586a128a1b53c71649e1a518ac516e43dc2afe9cddd5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085546"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121239360"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Riferimenti API (debug di Visual Studio)
-La sezione di riferimento include una panoramica concettuale dell'API, una guida che mostra la sintassi e l'utilizzo di tutti gli elementi API e un assortimento di esempi di codice. Tutti i riferimenti vengono elencati in ordine alfabetico in base alla categoria.
+La sezione di riferimento include una panoramica concettuale dell'API, una guida che illustra la sintassi e l'utilizzo di tutti gli elementi dell'API e un'ampia gamma di esempi di codice. Tutti i riferimenti sono elencati in ordine alfabetico in base alla categoria.
 
- Nella tabella seguente vengono illustrati i `HRESULT` valori comuni restituiti dai metodi.
+ Nella tabella seguente vengono illustrati i valori `HRESULT` comuni restituiti dai metodi.
 
 |Nome|Descrizione|Valore|
 |----------|-----------------|-----------|
-|S_OK|Esito positivo.|0x00000000|
+|S_OK|Operazione completata.|0x00000000|
 |E_UNEXPECTED|Errore imprevisto.|0x8000FFFF|
 |E_NOTIMPL|Non implementato.|0x80004001|
 |E_OUTOFMEMORY|Memoria insufficiente per completare l'operazione.|0x8007000E|
@@ -38,10 +39,10 @@ La sezione di riferimento include una panoramica concettuale dell'API, una guida
 |E_ACCESSDENIED|Errore generale di accesso negato.|0x80070005|
 
 > [!NOTE]
-> Quando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] metodo di debug restituisce `S_OK` , si presuppone che tutti i puntatori di parametro out siano validi, ovvero che non venga eseguita alcuna convalida sui puntatori di parametro out quando `S_OK` viene restituito.
+> Quando un metodo di debug restituisce , si presuppone che tutti i puntatori di parametro out siano validi, cio' non viene eseguita alcuna convalida sui puntatori di parametro [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] `S_OK` out quando viene `S_OK` restituito.
 >
 > [!NOTE]
-> I parametri non validi o `NULL` [out] possono causare l'arresto anomalo dell'IDE.
+> I parametri `NULL` non validi o [out] possono causare l'arresto anomalo dell'IDE.
 
 ## <a name="see-also"></a>Vedi anche
 - [Interfacce](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

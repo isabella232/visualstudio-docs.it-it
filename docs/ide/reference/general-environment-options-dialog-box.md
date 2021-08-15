@@ -1,6 +1,6 @@
 ---
 title: Generale, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina generale nella sezione Environment per modificare i temi di colore, le impostazioni della barra di stato, le associazioni dell'estensione di file e altro ancora per l'IDE.
+description: Informazioni su come usare la pagina Generale nella sezione Ambiente per modificare i temi dei colori, le impostazioni della barra di stato, le associazioni delle estensioni di file e altro ancora per l'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
@@ -20,16 +20,17 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b58cf19406d49c175a07ab5e3dad60fd0354c656
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bc28e51942e8a1f52dbf573bdc477d081c74efb6aa714c07fc8eff351824fc1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969698"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121304229"
 ---
-# <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: ambiente \> generale
+# <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: Generale \> ambiente
 
 Usare questa pagina per modificare i temi di colori, le impostazioni della barra di stato e le associazioni dell'estensione di file, tra le altre opzioni, per l'ambiente di sviluppo integrato (IDE). Per accedere alla finestra di dialogo **Opzioni**, aprire il menu **Strumenti**, scegliere **Opzioni**, aprire la cartella **Ambiente** e scegliere la pagina **Generale**.
 

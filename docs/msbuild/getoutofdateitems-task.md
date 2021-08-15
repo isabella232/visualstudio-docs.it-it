@@ -1,6 +1,6 @@
 ---
 title: Attività GetOutOfDateItems | Microsoft Docs
-description: Usare l'attività Helper MSBuild GetOutOfDateItems per leggere e scrivere i log delle transazioni (tlog) e restituire set di elementi che non sono aggiornati.
+description: Usare l MSBuild'attività helper GetOutOfDateItems per leggere e scrivere log delle transazioni (TLOG) e restituire set di elementi non aggiornati.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc80d4e1aa3580e0185460d19f78e9737b73220
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 26810b5e2102cc6430184eca99ba8b15f0dca516661f30c76534efb8ab152e0f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436819"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121270744"
 ---
 # <a name="getoutofdateitems-task"></a>Attività GetOutOfDateItems
 
@@ -37,15 +37,15 @@ Nella tabella seguente vengono descritti i parametri dell'attività **GetOutOfDa
 |Parametro|Descrizione|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Parametro **bool** facoltativo.|
-|**CommandMetadataName**|Parametro **stringa** facoltativo.|
-|**DependenciesMetadataName**|Parametro **stringa** facoltativo.|
+|**CommandMetadataName**|Parametro **di stringa** facoltativo.|
+|**DependenciesMetadataName**|Parametro **di stringa** facoltativo.|
 |**HasInterdependencies**|Parametro di output **bool** facoltativo.|
 |**OutOfDateSources**|Parametro di output facoltativo **ITaskItem[]**.|
-|**OutputsMetadataName**|Parametro di **stringa** obbligatorio.|
-|**recenti**|Parametro **ITaskItem []** facoltativo.|
-|**TLogDirectory**|Parametro di **stringa** obbligatorio.|
-|**TLogNamePrefix**|Parametro di **stringa** obbligatorio.|
+|**OutputsMetadataName**|Parametro **di stringa** obbligatorio.|
+|**recenti**|Parametro **ITaskItem[]** facoltativo.|
+|**TLogDirectory**|Parametro **di stringa** obbligatorio.|
+|**TLogNamePrefix**|Parametro **di stringa** obbligatorio.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

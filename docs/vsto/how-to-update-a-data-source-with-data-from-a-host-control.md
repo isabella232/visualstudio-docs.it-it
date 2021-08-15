@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9aab30b9c2fa363ef68d7d3f70ca05ca6c387a3c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 5ff36a48eb4982b4fcd0fb882ba9f6decc64f95303693b5be5dd0e61f5d424b4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828930"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267780"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: Aggiornare un'origine dati con i dati di un controllo host
   È possibile associare un controllo host a un'origine dati e aggiornare l'origine dati con le modifiche apportate ai dati nel controllo. Questo processo prevede due passaggi principali:
@@ -32,7 +33,7 @@ ms.locfileid: "107828930"
 
 2. Aggiornare il database con i dati modificati nell'origine dati in memoria. Ciò è possibile solo se l'origine dati è connessa a un database back-end, ad esempio un database SQL Server o Microsoft Office Access.
 
-   Per altre informazioni sui controlli host e data binding, vedere Panoramica degli elementi host e dei controlli [host](../vsto/host-items-and-host-controls-overview.md) e Associare dati ai controlli nelle [soluzioni Office.](../vsto/binding-data-to-controls-in-office-solutions.md)
+   Per altre informazioni sui controlli host e sui data binding, vedere Panoramica degli elementi host e dei controlli [host](../vsto/host-items-and-host-controls-overview.md) e Associare dati ai controlli [in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -53,18 +54,18 @@ ms.locfileid: "107828930"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet1":::
 
 ### <a name="automatically-update-the-in-memory-data-source"></a>Aggiornare automaticamente l'origine dati in memoria
- È anche possibile configurare un controllo in modo da aggiornare automaticamente l'origine dati in memoria. In un progetto a livello di documento, questa operazione può essere eseguita tramite codice o tramite la finestra di progettazione. In un progetto di componente aggiuntivo VSTO è necessario usare il codice.
+ È anche possibile configurare un controllo in modo da aggiornare automaticamente l'origine dati in memoria. In un progetto a livello di documento, questa operazione può essere eseguita tramite codice o tramite la finestra di progettazione. In un VSTO di componente aggiuntivo è necessario usare il codice.
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Per impostare un controllo in modo che l'origine dati in memoria venga aggiornata automaticamente tramite codice
 
-1. Usare la modalità System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged dell'oggetto che associa il <xref:System.Windows.Forms.Binding> controllo all'origine dati. Per aggiornare l'origine dati è possibile procedere in due modi:
+1. Usare il sistema . Windows. Modalità Forms.DataSourceUpdateMode.OnPropertyChanged dell'oggetto che associa <xref:System.Windows.Forms.Binding> il controllo all'origine dati. Per aggiornare l'origine dati è possibile procedere in due modi:
 
-   - Per aggiornare l'origine dati quando il controllo viene convalidato, impostare questa proprietà su System.Windows.Forms.DataSourceUpdateMode.OnValidation.
+   - Per aggiornare l'origine dati quando il controllo viene convalidato, impostare questa proprietà su System. Windows. Forms.DataSourceUpdateMode.OnValidation.
 
-   - Per aggiornare l'origine dati quando cambia il valore della proprietà associata a dati del controllo, impostare questa proprietà su System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.
+   - Per aggiornare l'origine dati quando il valore della proprietà associata a dati del controllo cambia, impostare questa proprietà su System. Windows. Forms.DataSourceUpdateMode.OnPropertyChanged.
 
      > [!NOTE]
-     > L'opzione System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged non si applica ai controlli host di Word, perché Word non offre notifiche di modifica del documento o del controllo. ma può essere usata per i controlli Windows Form nei documenti di Word.
+     > Oggetto System. Windows. L'opzione Forms.DataSourceUpdateMode.OnPropertyChanged non si applica ai controlli host di Word, perché Word non offre notifiche di modifica del documento o del controllo. ma può essere usata per i controlli Windows Form nei documenti di Word.
 
      L'esempio seguente configura un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in modo che l'origine dati venga aggiornata automaticamente quando si modifica il valore del controllo. Questo esempio presuppone che sia presente un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> denominato `namedRange1` la cui proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> è associata a un campo in un'origine dati.
 
@@ -99,7 +100,7 @@ ms.locfileid: "107828930"
 
 1. Chiamare il metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per il controllo <xref:System.Windows.Forms.BindingSource> .
 
-     L'oggetto <xref:System.Windows.Forms.BindingSource> viene generato automaticamente quando un controllo associato a dati viene aggiunto a un documento o a una cartella di lavoro in fase di progettazione. L'oggetto <xref:System.Windows.Forms.BindingSource> connette il controllo al set di dati tipizzato nel progetto. Per altre informazioni, vedere [Panoramica del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+     L'oggetto <xref:System.Windows.Forms.BindingSource> viene generato automaticamente quando un controllo associato a dati viene aggiunto a un documento o a una cartella di lavoro in fase di progettazione. L'oggetto <xref:System.Windows.Forms.BindingSource> connette il controllo al set di dati tipizzato nel progetto. Per altre informazioni, vedere [Panoramica del componente BindingSource.](/dotnet/framework/winforms/controls/bindingsource-component-overview)
 
      L'esempio di codice seguente presuppone che il progetto contenga un oggetto <xref:System.Windows.Forms.BindingSource> denominato `customersBindingSource`.
 
@@ -108,19 +109,19 @@ ms.locfileid: "107828930"
 
 2. Chiamare il `Update` metodo dell'oggetto TableAdapter generato nel progetto.
 
-     L'oggetto TableAdapter viene generato automaticamente quando si aggiunge un controllo con associazione a dati a un documento o a una cartella di lavoro in fase di progettazione. Il TableAdapter connette al database il set di dati tipizzato nel progetto. Per altre informazioni, vedere [Panoramica di TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)
+     L'oggetto TableAdapter viene generato automaticamente quando si aggiunge un controllo con associazione a dati a un documento o a una cartella di lavoro in fase di progettazione. Il TableAdapter connette il set di dati tipizzato nel progetto al database. Per altre informazioni, vedere [Panoramica di TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)
 
-     Nell'esempio di codice seguente si presuppone che sia presente una connessione alla tabella Customers nel database Northwind e che il progetto contenga un TableAdapter denominato e un set di dati tipizzato `customersTableAdapter` denominato `northwindDataSet` .
+     Nell'esempio di codice seguente si presuppone che sia presente una connessione alla tabella Customers nel database Northwind e che il progetto contenga un oggetto TableAdapter denominato e un set di dati `customersTableAdapter` tipizzato denominato `northwindDataSet` .
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet21":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet21":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Associare dati ai controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 - [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Procedura: Scorrere i record del database in un foglio di lavoro](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Procedura: Popolare i fogli di lavoro con i dati di un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Procedura: Scorrere i record di database in un foglio di lavoro](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Procedura: Popolare fogli di lavoro con dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [Procedura: Popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Procedura: Popolare documenti con i dati dei servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Procedura: Popolare documenti con dati dai servizi](../vsto/how-to-populate-documents-with-data-from-services.md)

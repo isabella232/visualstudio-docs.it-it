@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 69dfd02dca5ead65d4f36303e547aaeba04cde98
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: a5e3a80c09456cf50a021410a2df6ecc1ae65cc97e9897eb1682c054840df9e7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389098"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121316812"
 ---
 # <a name="domain-path-syntax"></a>Sintassi del percorso di dominio
 Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi specifici in un modello.
@@ -29,7 +30,7 @@ Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi spe
 
  ![Relazione di riferimento CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
- La sintassi attraversa l'albero del modello. Ad esempio, la relazione di **dominio CommentReferencesSubjects nella** figura precedente ha un **ruolo Soggetti.** Segmento di percorso **/! Subjectt** specifica che il percorso termina con gli elementi a cui si accede tramite il **ruolo** Soggetti.
+ La sintassi attraversa l'albero del modello. Ad esempio, la relazione di dominio **CommentReferencesSubjects nella** figura precedente ha un **ruolo Soggetti.** Segmento di percorso **/! Subjectt** specifica che il percorso termina sugli elementi a cui si accede tramite il **ruolo Soggetti.**
 
  Ogni segmento inizia con il nome di una relazione di dominio. Se l'attraversamento è da un elemento a una relazione, il segmento di percorso viene visualizzato *come Relationship.PropertyName*. Se l'hop è da un collegamento a un elemento, il segmento di percorso viene visualizzato *come Relazione/! RoleName*.
 

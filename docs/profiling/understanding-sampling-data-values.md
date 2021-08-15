@@ -1,6 +1,6 @@
 ---
 title: Informazioni sui valori dei dati di campionamento | Microsoft Docs
-description: Informazioni su come il metodo di profilatura del campionamento di Visual Studio Strumenti di profilatura interrompe il processore del computer a intervalli prestabiliti e raccoglie lo stack di chiamate della funzione.
+description: Informazioni su come il metodo di profilatura del campionamento Visual Studio Strumenti di profilatura interrompe il processore del computer a intervalli impostati e raccoglie lo stack di chiamate di funzione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 40902746e1dd1a4c68c9e1aa54ed4e72030a8fff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d81bffb39ba420f5d9dc26df33c6ad7634c2d7a4782ee5cd5a5a3b857112182
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886028"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121270159"
 ---
 # <a name="understand-sampling-data-values"></a>Informazioni sui valori dei dati di campionamento
 
@@ -53,5 +54,5 @@ Percentuale del numero totale di campioni esclusivi nell'esecuzione della profil
 
 ## <a name="see-also"></a>Vedi anche
 
-[Procedura: scegliere i metodi](../profiling/how-to-choose-collection-methods.md) 
- di raccolta [Analizzare i dati degli strumenti](../profiling/analyzing-performance-tools-data.md) per le prestazioni
+[Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md) 
+ [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)

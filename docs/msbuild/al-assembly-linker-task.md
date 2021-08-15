@@ -1,6 +1,6 @@
 ---
 title: Attività AL (Assembly Linker) | Microsoft Docs
-description: Utilizzare l'attività MSBuild assembly linker (AL) per eseguire il wrapping AL.exe, uno strumento distribuito con Windows Software Development Kit.
+description: Usare l MSBuild Assembly Linker (AL) per eseguire il wrapping di AL.exe, uno strumento distribuito con Windows Software Development Kit.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,18 +18,19 @@ ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d99c33a74512b380d7b5260d5b7e747c6a39e41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f0288d0a8f8afb413ee6df4a2ca86fd79502900806aed5704185b7185c507d0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923875"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121303410"
 ---
 # <a name="al-assembly-linker-task"></a>Attività AL (Assembly Linker)
 
-L'attività AL include *AL.exe*, uno strumento distribuito con Windows Software Development Kit (SDK). Lo strumento Assembly Linker consente di creare un assembly con un manifesto da uno o più file che costituiscono moduli o file di risorse. Poiché è possibile che negli ambienti di compilazione e sviluppo queste funzionalità siano già disponibili, spesso non è necessario usare direttamente questa attività. Assembly Linker è particolarmente utile per gli sviluppatori che hanno la necessità di creare un unico assembly da più file di componenti, ad esempio quelli che possono essere prodotti dallo sviluppo in linguaggi misti. Questa attività non combina i moduli in un unico file assembly. Affinché l'assembly ottenuto venga caricato correttamente, è comunque necessario che i singoli moduli vengano distribuiti e che siano disponibili. Per altre informazioni su *AL.exe*, vedere [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
+L'attività AL *AL.exe*, uno strumento distribuito con Windows Software Development Kit (SDK). Lo strumento Assembly Linker consente di creare un assembly con un manifesto da uno o più file che costituiscono moduli o file di risorse. Poiché è possibile che negli ambienti di compilazione e sviluppo queste funzionalità siano già disponibili, spesso non è necessario usare direttamente questa attività. Assembly Linker è particolarmente utile per gli sviluppatori che hanno la necessità di creare un unico assembly da più file di componenti, ad esempio quelli che possono essere prodotti dallo sviluppo in linguaggi misti. Questa attività non combina i moduli in un unico file assembly. Affinché l'assembly ottenuto venga caricato correttamente, è comunque necessario che i singoli moduli vengano distribuiti e che siano disponibili. Per altre informazioni su *AL.exe*, vedere [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
 
 ## <a name="parameters"></a>Parametri
 
@@ -66,7 +67,7 @@ L'attività AL include *AL.exe*, uno strumento distribuito con Windows Software 
 | `TemplateFile` | Parametro `String` facoltativo.<br /><br /> Specifica l'assembly dal quale ereditare tutti i metadati dell'assembly, ad eccezione del campo relativo alle impostazioni cultura. All'assembly specificato deve essere assegnato un nome sicuro.<br /><br /> Gli assembly creati con il parametro `TemplateFile` saranno assembly satellite. Questo parametro corrisponde all'opzione `/template` di [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Timeout` | Parametro `Int32` facoltativo.<br /><br /> Specifica la quantità di tempo, in millisecondi, dopo i quali l'eseguibile dell'attività viene terminato. Il valore predefinito è `Int.MaxValue`, con cui si indica che non esiste alcun periodo di timeout. |
 | `Title` | Parametro `String` facoltativo.<br /><br /> Specifica una stringa per il campo `Title` dell'assembly. Per altre informazioni, vedere la documentazione relativa all'opzione `/title` di [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `ToolPath` | Parametro `String` facoltativo.<br /><br /> Specifica la posizione da cui l'attività caricherà il file eseguibile sottostante (Al.exe). Se questo parametro non è specificato, l'attività usa il percorso di installazione SDK corrispondente alla versione del Framework che esegue MSBuild. |
+| `ToolPath` | Parametro `String` facoltativo.<br /><br /> Specifica la posizione da cui l'attività caricherà il file eseguibile sottostante (Al.exe). Se questo parametro non viene specificato, l'attività usa il percorso di installazione dell'SDK corrispondente alla versione del framework che esegue MSBuild. |
 | `Trademark` | Parametro `String` facoltativo.<br /><br /> Specifica una stringa per il campo `Trademark` dell'assembly. Per altre informazioni, vedere la documentazione relativa all'opzione `/trade[mark]` di [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Version` | Parametro `String` facoltativo.<br /><br /> Specifica le informazioni sulla versione dell'assembly. Il formato della stringa è *principale.secondario.build.revisione*. Il valore predefinito è 0. Per altre informazioni, vedere la documentazione relativa all'opzione `/v[ersion]` di [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Icon` | Parametro `String` facoltativo.<br /><br /> Inserisce nell'assembly un file *ICO*. Il file *ICO* dà al file di output l'aspetto voluto in Esplora File. Questo parametro corrisponde all'opzione `/win32icon` di [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |

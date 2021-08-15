@@ -1,36 +1,37 @@
 ---
 title: Incorporamento di un diagramma in Windows Form
-description: Informazioni su come incorporare un diagramma DSL in un controllo Windows, visualizzato nella finestra Visual Studio dati.
+description: Informazioni su come incorporare un diagramma DSL in un controllo Windows, visualizzato nella finestra Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4db60267b835882a69a08c990af644b902697bad
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 63a58dba9c6698b46786c665df0262c580b9048c3675a3715787459005405999
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388984"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271381"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Incorporare un diagramma in Windows Form
 
-È possibile incorporare un diagramma DSL in un controllo Di Windows, che viene visualizzato nella Visual Studio finestra.
+È possibile incorporare un diagramma DSL in un controllo Windows, che viene visualizzato nella Visual Studio finestra.
 
-## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Incorporare un diagramma DSL in un controllo Windows
+## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Incorporare un diagramma DSL in un controllo Windows dati
 
 1. Aggiungere un nuovo file **di controllo** utente al progetto DslPackage.
 
-2. Aggiungere un controllo Panel al controllo Utente. Questo pannello conterrà il diagramma DSL.
+2. Aggiungere un controllo Panel al controllo utente. Questo pannello conterrà il diagramma DSL.
 
-     Aggiungere gli altri controlli necessari.
+     Aggiungere altri controlli necessari.
 
      Impostare le proprietà Di ancoraggio dei controlli.
 
-3. In Esplora soluzioni fare clic con il pulsante destro del mouse sul file del controllo utente e **scegliere Visualizza codice**. Aggiungere questo costruttore e questa variabile al codice:
+3. In Esplora soluzioni fare clic con il pulsante destro del mouse sul file del controllo utente e scegliere **Visualizza codice**. Aggiungere questo costruttore e la variabile al codice:
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -69,7 +70,7 @@ ms.locfileid: "112388984"
 
 ## <a name="update-the-form-using-store-events"></a>Aggiornare il modulo usando gli eventi dell'archivio
 
-1. Nella finestra di progettazione form aggiungere un **controllo ListBox** denominato `listBox1` . Verrà visualizzato un elenco degli elementi nel modello. Viene sincronizzato con il modello usando gli *eventi dell'archivio*. Per altre informazioni, vedere [Propagare modifiche all'esterno del modello da parte dei gestori eventi.](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+1. Nella finestra di progettazione form aggiungere un **controllo ListBox** denominato `listBox1` . Verrà visualizzato un elenco degli elementi nel modello. Viene sincronizzato con il modello usando gli *eventi dell'archivio*. Per altre informazioni, vedere [Gestori eventi Propagare le modifiche all'esterno del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. Nel file di codice personalizzato eseguire l'override di altri metodi per la classe DocView:
 
@@ -141,7 +142,7 @@ ms.locfileid: "112388984"
 
 4. Per testare il DSL, premere **F5** e nell'istanza sperimentale di Visual Studio aprire un file di modello di esempio.
 
-     Si noti che la casella di riepilogo mostra un elenco degli elementi nel modello e che è corretto dopo qualsiasi aggiunta o eliminazione e dopo Annulla e Ripeti.
+     Si noti che la casella di riepilogo mostra un elenco degli elementi nel modello e che è corretto dopo qualsiasi aggiunta o eliminazione e dopo Undo e Redo.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -9,14 +9,15 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ec955d6c105c1381d7f576a80b136eb3a54adff
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 1314bc4c77de95c4ed24debf3b17c80d186dd405ab222cadb32f7fb91fde6238
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680151"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121441664"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Lint del codice R in Visual Studio
 
@@ -24,7 +25,7 @@ Il linter analizza il codice per individuare potenziali errori, problemi di form
 
 R Tools per Visual Studio (RTVS) offre un linter predefinito per R, con un comportamento controllabile tramite un'ampia gamma di opzioni descritte in questo articolo. Queste opzioni sono disponibili in **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **R**  >  **Lint**.
 
-Il lint è disabilitato per impostazione predefinita. Per abilitare lint, impostare **l'opzione All**  >  **Enable lint** su **True**.
+Il lint è disabilitato per impostazione predefinita. Per abilitare lint, impostare **l'opzione All**  >  **Enable lint** su **True.**
 
 Dopo l'abilitazione, il linter viene eseguito nell'editor durante la digitazione. I problemi vengono segnalati tramite sottolineature ondulate verdi. Nella figura seguente, ad esempio, RTVS ha identificato sei problemi di lint, tra i quali l'uso di `=` invece di `<-` per un'assegnazione, la mancanza di spazio attorno agli argomenti della funzione, l'uso di identificatori con la notazione Pascal e con tutte maiuscole e l'uso di un punto e virgola. Posizionando il puntatore del mouse su un problema viene visualizzata una descrizione.
 

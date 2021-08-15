@@ -1,6 +1,6 @@
 ---
 title: Nodi della finestra di progettazione shader
-description: Usare gli articoli in questa sezione della documentazione per informazioni sui vari nodi della finestra di progettazione shader che è possibile usare per creare effetti grafici.
+description: Usare gli articoli di questa sezione della documentazione per informazioni sui vari nodi della finestra di progettazione shader che è possibile usare per creare effetti grafici.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
@@ -8,14 +8,15 @@ ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d228b340631404b7ac2af964535874144491724
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ab98f0cbc33b3726387b40650ab4bb6f63fd161c0cf548878a349c61ddbf202
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926380"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121324366"
 ---
 # <a name="shader-designer-nodes"></a>Nodi della finestra di progettazione shader
 Gli articoli di questa sezione della documentazione contengono informazioni sui diversi nodi di progettazione shader che possono essere usati per creare vari effetti grafici.

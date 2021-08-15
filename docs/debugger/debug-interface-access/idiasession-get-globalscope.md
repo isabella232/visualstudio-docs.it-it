@@ -11,14 +11,15 @@ ms.assetid: 75d128a8-3dce-40ed-b392-de3fdda041b7
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8c0c68242aef2e06a071686c57d1f5ebec2976
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b05934222ac3fc8d7e0d18cf83eaf2e43424147e101b5658019f849518ca5a4c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157056"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121344772"
 ---
 # <a name="idiasessionget_globalscope"></a>IDiaSession::get_globalScope
 Recupera un riferimento all'ambito globale.
@@ -34,7 +35,7 @@ HRESULT get_globalScope (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta l'ambito globale.
+[out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta l'ambito globale.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

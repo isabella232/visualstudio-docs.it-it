@@ -1,7 +1,7 @@
 ---
 title: Tasti di modifica dello strumento Selezione diretta
 titleSuffix: Blend for Visual Studio
-description: Per informazioni sui tasti di scelta rapida, vedere lo strumento Selezione diretta in Blend per Visual Studio che è possibile usare per modificare la forma di un tracciato esistente.
+description: Informazioni sui tasti di scelta rapida nello strumento Selezione diretta in Blend per Visual Studio che è possibile usare per modificare la forma di un tracciato esistente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,14 +9,15 @@ ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d26dc394e859862b85f5009a9427f34576fd5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dfacfe090293592531f4007759750c42a3e79cd730a7ada445b0422a4342e4a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920240"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243224"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Selezione diretta in Blend per Visual Studio
 

@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.topic: how-to
-ms.openlocfilehash: b5230958fa1624acf7609d6cad7d885e43c013d0
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 573c21a19161781e621c433bbfe26ce2234d080a987a892b7eebe6dc2cb77148
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847073"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121438757"
 ---
 # <a name="set-up-a-subversion-repository"></a>Impostare un repository Subversion
 

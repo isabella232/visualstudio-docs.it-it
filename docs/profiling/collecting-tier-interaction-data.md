@@ -1,6 +1,6 @@
 ---
 title: Raccolta di dati di interazione tra livelli | Microsoft Docs
-description: Informazioni su come raccogliere informazioni di profilatura del livello per le applicazioni multilivello che comunicano con i database tramite i servizi ADO.NET.
+description: Informazioni su come raccogliere informazioni sulla profilatura dei livelli per le applicazioni multilivello che comunicano con i database ADO.NET servizi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,15 +14,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e2b20a403d2c56dd239ddaf81d2a32905ca4aed5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6729052dea38ee39213670d001d3c95de639f7f08cd744d874e502f434073146
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950234"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121302150"
 ---
 # <a name="collect-tier-interaction-data"></a>Raccogliere dati di interazione tra livelli
 

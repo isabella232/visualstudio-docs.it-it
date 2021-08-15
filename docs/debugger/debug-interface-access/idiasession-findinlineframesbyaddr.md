@@ -1,5 +1,5 @@
 ---
-description: "IDiaSession:: findInlineFramesByAddr recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo."
+description: IDiaSession::findInlineFramesByAddr recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo.
 title: IDiaSession::findInlineFramesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: e7dc1ac7-bb09-45be-96d2-365a9b7336e4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b063828522a0ab1579b7ade1d5f780b01598e96f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58f04284da9e1010e33585739f31a8f406a31dea3a1cf281532fd326179960da
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157105"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121344820"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo.
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +35,19 @@ HRESULT findInlineFramesByAddr (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in `IDiaSymbol` Oggetto che rappresenta l'elemento padre.
+[in] Oggetto `IDiaSymbol` che rappresenta l'elemento padre.
 
  `isect`
 
-in Specifica il componente della sezione dell'indirizzo.
+[in] Specifica il componente della sezione dell'indirizzo.
 
  `offset`
 
-in Specifica il componente di offset dell'indirizzo.
+[in] Specifica il componente di offset dell'indirizzo.
 
  `ppResult`
 
-out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recuperati.
+[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,6 +1,6 @@
 ---
 description: L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quanto è stato eseguito lo strumento di blocco IIS ed è stato installato e attivato URLScan.
-title: Il server Web è stato bloccato e blocca il verbo di DEBUG | Microsoft Docs
+title: Il server Web è stato bloccato e blocca il verbo DEBUG | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: def2ecc4e0ae5285976f8d6cd8b98a2446a8881c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f450eba39da9ff864003042027bf240e3d05d6f96c8377fc4e691138b9deb4c4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146535"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121419962"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Errore: il server Web è stato bloccato e blocca il verbo DEBUG
 L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quanto è stato eseguito lo strumento di blocco IIS ed è stato installato e attivato URLScan. Questa condizione impedisce la ricezione del verbo DEBUG da parte di IIS.
@@ -51,4 +52,4 @@ L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quant
 
 ## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [Errore: il server Web non è in grado di trovare la risorsa richiesta](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+- [Errore: Il server Web non è stato in grado di trovare la risorsa richiesta](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

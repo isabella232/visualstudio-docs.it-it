@@ -1,6 +1,6 @@
 ---
 title: 'Esercitazione: Eseguire il debug Visual Basic codice'
-description: Informazioni sulle funzionalità del debugger Visual Studio e su come avviare il debugger, eseguire il codice un'istruzione alla pagina ed esaminare i dati in un Visual Basic app.
+description: Informazioni sulle funzionalità del debugger Visual Studio e su come avviare il debugger, eseguire il codice un'istruzione alla pagina ed esaminare i dati in un Visual Basic appalto.
 ms.custom: debug-experiment, vs-acquisition, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48e6b383b0dfdee3a3cb0cc355ffa5900d4dc428
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ab825246112c0b1142a57d8b501e095feac0f947432758061279196ed89840fe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390216"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121273318"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice Visual Basic tramite Visual Studio
 
@@ -45,7 +45,7 @@ In questa esercitazione si apprenderà come:
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-È necessario aver installato Visual Studio 2017 e il carico di lavoro **sviluppo multipiattaforma .NET Core.**
+È necessario avere installato Visual Studio 2017 e il carico di lavoro **sviluppo multipiattaforma .NET Core.**
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ In primo luogo, si creerà un progetto di applicazione console .NET Core. Il tip
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu superiore scegliere **File** > **nuovo** > **progetto**.
+2. Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al progetto il *nome get-started-debugging*.
 
@@ -104,15 +104,15 @@ In primo luogo, si creerà un progetto di applicazione console .NET Core. Il tip
    > [!NOTE]
    > Se il modello App **console** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *get-started-debugging* nella **casella Nome** progetto . Scegliere quindi **Avanti**.
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *get-started-debugging* nella casella Project **nome.** Scegliere quindi **Avanti**.
 
-1. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
+1. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
 
    Visual Studio aprirà il nuovo progetto.
    
 ::: moniker-end
 
-## <a name="create-the-application"></a>Creazione dell'applicazione
+## <a name="create-the-application"></a>Creare l'applicazione
 
 1. In *Program.vb* sostituire tutto il codice predefinito con il codice seguente:
 
@@ -171,7 +171,7 @@ In primo luogo, si creerà un progetto di applicazione console .NET Core. Il tip
 
     `name += letters(i)`
 
-    Viene visualizzato un punto di ![interruzione](../../debugger/media/dbg-breakpoint.png "Punto di interruzione") con cerchio rosso nel punto in cui si imposta il punto di interruzione.
+    Nel punto in cui si ![imposta il punto di interruzione](../../debugger/media/dbg-breakpoint.png "Punto di interruzione") viene visualizzato un punto di interruzione con cerchio rosso.
 
     I punti di interruzione sono una delle funzionalità di base ed essenziali del debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice.
 
@@ -189,23 +189,23 @@ In primo luogo, si creerà un progetto di applicazione console .NET Core. Il tip
 
 In questa esercitazione nella maggior parte dei casi vengono usati tasti di scelta rapida che rappresentano un modo rapido per eseguire l'app nel debugger (i comandi equivalenti, ad esempio i comandi di menu, sono indicati tra parentesi).
 
-1. Durante la sospensione nel ciclo nel metodo, premere `For` `Main` **F11** (o scegliere Debug > Esegui istruzione ) due volte per passare alla chiamata `SendMessage` al metodo.
+1. Mentre è in pausa nel ciclo nel metodo, premere `For` `Main` **F11** (o scegliere Debug > Esegui istruzione ) due volte per passare alla `SendMessage` chiamata al metodo.
 
      Dopo aver **premuto F11** due volte, si dovrebbe essere in questa riga di codice:
 
      `SendMessage(name, a(i))`
 
-1. Premere **F11** ancora una volta per eseguire un'istruzione al `SendMessage` metodo.
+1. Premere **F11** ancora una volta per eseguire un'istruzione nel `SendMessage` metodo .
 
      Il puntatore giallo avanza nel `SendMessage` metodo .
 
-     ![Usare F11 per eseguire un'istruzione al codice](../visual-basic/media/get-started-f11-vb.png "Istruzione F10")
+     ![Usare F11 per eseguire un'istruzione al codice](../visual-basic/media/get-started-f11-vb.png "F10 Step Into")
 
      F11 corrisponde al comando **Esegui istruzione** e consente di eseguire l'app un'istruzione alla volta. F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. Per spostarsi più velocemente nel codice, vengono mostrate anche alcune altre opzioni. Per impostazione predefinita, il debugger ignora il codice non utente (per altri dettagli, [vedere Just My Code](../../debugger/just-my-code.md)).
 
      Si immagini di aver esaminato il metodo e di voler uscire dal metodo ma rimanere `SendMessage` nel debugger. Questa operazione può essere eseguita usando il comando **Esci da istruzione/routine**.
 
-1. Premere **MAIUSC**  +  **F11** (o **Eseguire il debug > istruzione/uscita**).
+1. Premere **MAIUSC**  +  **F11** (o **Esegui debug > esci da ).**
 
      Questo comando riprende l'esecuzione dell'app (e fa avanzare il debugger) finché non viene restituito il metodo o la funzione corrente.
 
@@ -213,7 +213,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 1. Premere **F11** più volte finché non si torna di nuovo alla `SendMessage` chiamata al metodo.
 
-1. Mentre è in pausa durante la chiamata al metodo, premere **F10** (o **scegliere Debug > esegui istruzione/istruzione**) una sola volta.
+1. Mentre è in pausa durante la chiamata al metodo, premere **F10** (o scegliere **Debug > esegui istruzione/istruzione**) una sola volta.
 
      ![Usare F10 per eseguire il passaggio del codice](../visual-basic/media/get-started-step-over-vb.png "F10 Step Over")
 
@@ -223,7 +223,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 1. Premere **F5 per** passare di nuovo al punto di interruzione.
 
-1. Nell'editor di codice scorrere verso il basso e passare il puntatore del mouse sul metodo nel metodo fino a quando a sinistra non viene visualizzato il pulsante Verde Esegui per fare clic `Console.WriteLine` sul pulsante Esegui per fare `SendMessage` clic.  ![](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
+1. Nell'editor di codice scorrere verso il basso e passare il puntatore del mouse sul metodo nel metodo fino a quando non viene visualizzato il pulsante verde Esegui per fare clic su Esegui per fare clic `Console.WriteLine` `SendMessage` a sinistra.  ![](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
 
      ![Usare la funzionalità Esegui per fare clic](../visual-basic/media/get-started-run-to-click-vb.png "Esegui fino alla riga selezionata")
 
@@ -238,7 +238,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ## <a name="restart-your-app-quickly"></a>Riavviare rapidamente l'app
 
-Fare clic sul **pulsante Restart** ![Restart App (Riavvia](../../debugger/media/dbg-tour-restart.png "RestartApp") riavvia app) sulla barra degli strumenti di debug (**CTRL**  +    +  **MAIUSC+F5).**
+Fare clic sul **pulsante Riavvia** ![riavvia app](../../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug (**CTRL**  +  **MAIUSC**  +  **F5**).
 
 Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene messo in pausa in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 
@@ -252,7 +252,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Passare quindi il puntatore `name` sulla variabile per visualizzarne il valore corrente, una stringa vuota.
 
-1. Premere **F5** (o **Continua** debug ) alcune volte per eseguire l'iterazione più volte del ciclo, sospendo di nuovo in corrispondenza del punto di interruzione e passando ogni volta il puntatore del mouse sulla variabile per controllarne  >  il `For` `name` valore.
+1. Premere **F5** (o **Continua** debug ) alcune volte per eseguire l'iterazione più volte del ciclo, sospendo nuovamente in corrispondenza del punto di interruzione e passando il puntatore del mouse sulla variabile ogni volta per controllarne il  >   `For` `name` valore.
 
      ![Visualizzare un suggerimento dati](../visual-basic/media/get-started-data-tip-vb.png "Visualizzare un suggerimento dati")
 
@@ -264,7 +264,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug**  >  **Finestre**  >  **Auto.**
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo  >  **Debug Windows**  >  **Auto.**
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. La finestra **Auto** mostra tutte le variabili usate nella riga corrente o nella riga precedente (vedere la documentazione per il comportamento specifico del linguaggio).
 
@@ -288,7 +288,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Mentre l'esecuzione è in pausa nel ciclo `For`, fare clic sulla finestra **Stack di chiamate**, visualizzata per impostazione predefinita nel riquadro inferiore destro.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug Stack di** chiamate  >    >  **Windows**.
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug** Windows  >    >  **Stack di chiamate**.
 
 2. Fare **clic su F11** alcune volte fino a quando il debugger non viene sospeso nel `SendMessage` metodo . Osservare la finestra **Stack di chiamate**.
 
@@ -309,9 +309,9 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Premere **F11** due volte per eseguire il `Console.WriteLine` metodo .
 
-1. Con il debugger sospeso nella chiamata al metodo, usare il mouse per afferrare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, di nuovo `SendMessage` su `Console.WriteLine` .
+1. Quando il debugger è in pausa nella chiamata al metodo, usare il mouse per afferrare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, di nuovo `SendMessage` su `Console.WriteLine` .
 
-1. Premere **F11**.
+1. Premere **F11.**
 
     Il debugger esegue nuovamente il metodo `Console.WriteLine` (visualizzato nell'output della finestra della console).
 

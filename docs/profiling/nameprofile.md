@@ -1,6 +1,6 @@
 ---
 title: NameProfile | Documenti Microsoft
-description: Informazioni sul modo in cui la funzione NameProfile assegna una stringa al processo o al thread specificato. Inoltre, l'API NameProfile è disponibile solo per la profilatura della strumentazione.
+description: Informazioni su come la funzione NameProfile assegna una stringa al processo o al thread specificato. Inoltre, l'API NameProfile è disponibile solo per la profilatura della strumentazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,16 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d6dcc6cdc903f0050eeb326ebd3c5fa36252ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa0720ee249c8bcb07306282d8ef11458391b23ef1a07db0a3cbabd53da16db6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964745"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121442125"
 ---
 # <a name="nameprofile"></a>NameProfile
 La funzione `NameProfile` assegna una stringa al processo o al thread specificato.
@@ -135,4 +136,4 @@ void ExerciseNameProfile()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,6 +1,6 @@
 ---
-title: Impostare l'area di sicurezza (app ClickOnce)
-description: Informazioni sull'impostazione delle autorizzazioni di sicurezza per l'accesso di codice per un'applicazione ClickOnce, che inizia con un set di autorizzazioni di base in Progettazione progetti.
+title: Impostare l'area di sicurezza (ClickOnce app)
+description: Informazioni sull'impostazione delle autorizzazioni di sicurezza dall'accesso di codice per un'applicazione ClickOnce, che inizia con un set di autorizzazioni di base in Project Designer.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,14 +16,15 @@ ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 23174667827e63afb93d82679a51d65512731710
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88654d1d115ee84a13d541e26e085f1acf5c03e031900dcc6ab12e67efcf0c7e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946072"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403866"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce
 Quando si impostano le autorizzazioni di sicurezza dall'accesso di codice per un'applicazione ClickOnce, è necessario iniziare con un set di autorizzazioni di base nella pagina **Sicurezza** di **Creazione progetti**.
@@ -32,7 +33,7 @@ Quando si impostano le autorizzazioni di sicurezza dall'accesso di codice per un
 
 ### <a name="to-set-a-security-zone"></a>Per impostare un'area di sicurezza
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà** dal menu **progetto** .
+1. Con un progetto selezionato in **Esplora soluzioni**, nel menu **Project** fare clic su **Proprietà**.
 
 2. Fare clic sulla scheda **Security** (Sicurezza).
 

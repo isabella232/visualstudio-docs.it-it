@@ -1,5 +1,5 @@
 ---
-description: Per eseguire il debug di codice nativo e gestito misto in un processo a 64 bit, è necessario avere .NET Framework versione 4.
+description: Per eseguire il debug di codice nativo e gestito misto in un processo a 64 bit, è necessario .NET Framework versione 4.
 title: Il debug in modalità mista per i processi x64 è supportato solo quando si usa Microsoft .NET Framework 4 o versione successiva | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -13,17 +13,18 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31ae6b1c4a80f7d28cdbbdd2c4d944cddf15227d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 30240992d9d4eef838adf33c201c7e270a7eb1c749fab37b2eb7c9d9d73f08de
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146951"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121263842"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Errore: il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
-Per eseguire il debug di codice nativo e gestito misto in un processo a 64 bit, è necessario avere .NET Framework versione 4. Il debug in modalità mista di processi a 64 bit con versioni .NET Framework precedenti a 4 non è supportato.
+Per eseguire il debug di codice nativo e gestito misto in un processo a 64 bit, è necessario .NET Framework versione 4. Il debug in modalità mista di processi a 64 bit con .NET Framework versioni precedenti alla 4 non è supportato.
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 

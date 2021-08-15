@@ -1,6 +1,6 @@
 ---
-title: Elemento Folder (modelli di progetto di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento Folder e su come viene specificata una cartella che verrà aggiunta al progetto.
+title: Elemento Folder (modelli Visual Studio Project) | Microsoft Docs
+description: Informazioni sull'elemento Folder e su come specifica una cartella che verrà aggiunta al progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e1df1d5efeab17adf60a8e1732991cb2cac02a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f06f0a5323073304bda5126351ad07373be66ae39a3947e5fb95c553f827b674
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070128"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432631"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelli di progetto di Visual Studio)
+# <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (Visual Studio di progetto)
 Specifica una cartella che verrà aggiunta al progetto.
 
  \<VSTemplate> \<TemplateContent>
@@ -46,27 +46,27 @@ Specifica una cartella che verrà aggiunta al progetto.
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`Name`|Attributo obbligatorio.<br /><br /> Nome della cartella del progetto.|
-|`TargetFolderName`|Attributo facoltativo.<br /><br /> Specifica il nome da assegnare alla cartella quando viene creato un progetto dal modello. Questo attributo è utile per l'utilizzo della sostituzione dei parametri per creare un nome di cartella o per rinominare una cartella con una stringa internazionale che non può essere utilizzata direttamente nel file con *estensione zip* .|
+|`TargetFolderName`|Attributo facoltativo.<br /><br /> Specifica il nome da assegnare alla cartella quando viene creato un progetto dal modello. Questo attributo è utile per usare la sostituzione dei parametri per creare un nome di cartella o denominare una cartella con una stringa internazionale che non può essere usata direttamente nel file *.zip.*|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|`Folder`|Specifica una cartella da aggiungere al progetto. `Folder` gli elementi possono contenere `Folder` elementi figlio.|
+|`Folder`|Specifica una cartella da aggiungere al progetto. `Folder` Gli elementi possono contenere elementi `Folder` figlio.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Specifica un file da aggiungere al progetto.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo di [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
+|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo di [TemplateContent.](../extensibility/templatecontent-element-visual-studio-templates.md)|
 
 ## <a name="remarks"></a>Commenti
  `Folder` è un elemento figlio facoltativo di `Project` .
 
- È possibile utilizzare uno dei metodi seguenti per organizzare gli elementi di progetto in cartelle in un modello:
+ È possibile usare uno dei metodi seguenti per organizzare gli elementi di progetto in cartelle in un modello:
 
-- Includere le cartelle nel file con estensione *zip* del modello e aggiungerle al progetto nel file con *estensione vstemplate* specificando il percorso del file negli `ProjectItem` elementi, senza `Folder` elementi. Questo è il metodo consigliato. Ad esempio:
+- Includere le cartelle nel file *.zip* modello e aggiungerle al progetto nel file con estensione *vstemplate* specificando il percorso del file negli elementi , senza `ProjectItem` elementi `Folder` . Questo è il metodo consigliato. Esempio:
 
      `...`
 
@@ -76,7 +76,7 @@ Specifica una cartella che verrà aggiunta al progetto.
 
      `...`
 
-- Includere le cartelle nel file con estensione *zip* del modello e aggiungerle al progetto nel file con estensione *vstemplate* con `Folder` gli elementi. Ad esempio:
+- Includere le cartelle nel file *.zip* modello e aggiungerle al progetto nel file con estensione *vstemplate* con `Folder` elementi . Esempio:
 
      `...`
 
@@ -90,7 +90,7 @@ Specifica una cartella che verrà aggiunta al progetto.
 
      `...`
 
-- Non includere cartelle nel file con *estensione zip* del modello, ma aggiungere cartelle utilizzando l' `TargetFileName` attributo dell' `ProjectItem` elemento. Ad esempio:
+- Non includere cartelle nel file *.zip* modello, ma aggiungere cartelle usando `TargetFileName` l'attributo `ProjectItem` dell'elemento . Esempio:
 
      `...`
 
@@ -101,7 +101,7 @@ Specifica una cartella che verrà aggiunta al progetto.
      `...`
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.
+ L'esempio seguente illustra i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'Windows applicazione.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -130,6 +130,6 @@ Specifica una cartella che verrà aggiunta al progetto.
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
 - [Elemento ProjectItem (modelli di elemento di Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

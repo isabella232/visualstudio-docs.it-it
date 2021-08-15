@@ -1,6 +1,6 @@
 ---
 title: Pagina Firma, Progettazione progetti
-description: Utilizzare la pagina firma di creazione progetti per firmare i manifesti dell'applicazione e della distribuzione e anche per firmare l'assembly.
+description: Usare la pagina Firma di Progettazione Project per firmare i manifesti dell'applicazione e della distribuzione e anche per firmare l'assembly.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f52d02407316fbc8f9a7b5e3db1c02a3566cda87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e287821ad2419d8c8e5f3e33567e874a995fed999867800998e5cb358166a75b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957582"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271718"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 
@@ -81,9 +81,9 @@ Questa opzione usa lo strumento Al.exe fornito da Windows Software Development K
 
 Elenco **Scegliere un file di chiave con nome sicuro**
 
-Consente di specificare un file di chiave nuovo o esistente con nome sicuro da usare per firmare l'assembly. Selezionare **\<Browse...>** per selezionare un file di chiave esistente.
+Consente di specificare un file di chiave nuovo o esistente con nome sicuro da usare per firmare l'assembly. Selezionare **\<Browse...>** questa opzione per selezionare un file di chiave esistente.
 
-Selezionare **\<New...>** questa operazione per creare un nuovo file di chiave con cui firmare l'assembly. Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**, che è possibile usare per specificare il nome di un file di chiave e proteggere il file con una password. La password deve avere una lunghezza di almeno 6 caratteri. Se si specifica una password, viene creato un file di scambio di informazioni personali (con estensione pfx, Personal inFormation eXchange). Se non si specifica una password, viene creato un file di chiave con nome sicuro (con estensione snk).
+Selezionare **\<New...>** questa opzione per creare un nuovo file di chiave con cui firmare l'assembly. Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**, che è possibile usare per specificare il nome di un file di chiave e proteggere il file con una password. La password deve avere una lunghezza di almeno 6 caratteri. Se si specifica una password, viene creato un file di scambio di informazioni personali (con estensione pfx, Personal inFormation eXchange). Se non si specifica una password, viene creato un file di chiave con nome sicuro (con estensione snk).
 
 Pulsante **Cambia password**
 
@@ -104,7 +104,7 @@ Si tenga presente che un progetto con firma ritardata non può essere eseguito e
 
 - [Project Properties Reference](../../ide/reference/project-properties-reference.md) (Riferimenti alle proprietà di progetto)
 - [Gestione delle firme di assembly e manifesti](../../ide/managing-assembly-and-manifest-signing.md)
-- [Procedura: firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Procedura: Firmare manifesti dell'applicazione e della distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Procedura: firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Procedura: firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Assembly con nome sicuro](/dotnet/framework/app-domains/strong-named-assemblies)

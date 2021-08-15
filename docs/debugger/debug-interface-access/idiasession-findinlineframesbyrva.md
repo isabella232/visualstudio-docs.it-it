@@ -1,5 +1,5 @@
 ---
-description: "IDiaSession:: findInlineFramesByRVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (relative Virtual Address) specificato."
+description: IDiaSession::findInlineFramesByRVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo (RVA) specificato.
 title: IDiaSession::findInlineFramesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: ddb3ff0e-cb3d-4fa0-af56-f064b218b264
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 749e53971df11c8294117245fcd63eac6da2a078
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 06d3bdd113d78b72d321a97a6bb61e927a873ee7c34dc582be32300a51d6cd98
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147751"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121405010"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (relative Virtual Address) specificato.
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,15 +34,15 @@ HRESULT findInlineFramesByRVA (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in `IDiaSymbol` Oggetto che rappresenta l'elemento padre.
+[in] Oggetto `IDiaSymbol` che rappresenta l'elemento padre.
 
  `rva`
 
-in Specifica l'indirizzo come RVA.
+[in] Specifica l'indirizzo come RVA.
 
  `ppResult`
 
-out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recuperati.
+[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

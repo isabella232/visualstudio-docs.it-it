@@ -11,17 +11,18 @@ ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f20e19e19539e71a4dbed74a0dd5bb9af62a15f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 465340b0252acf75fc9a083e2990e4857d300c911e939ea8d4bb726c1fff6a3e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902826"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121275788"
 ---
 # <a name="groups-element"></a>Elemento Groups
-Contiene voci che definiscono i gruppi di comandi di un vspackage.
+Contiene voci che definiscono i gruppi di comandi di un VSPackage.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,14 +40,14 @@ Contiene voci che definiscono i gruppi di comandi di un vspackage.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
 |[Group - elemento](../extensibility/group-element.md)|Rappresenta un singolo gruppo di comandi.|
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi di un vspackage.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi di un VSPackage.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

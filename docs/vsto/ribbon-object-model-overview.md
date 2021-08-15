@@ -1,6 +1,6 @@
 ---
 title: Panoramica del modello a oggetti della barra multifunzione
-description: Informazioni su come Strumenti di Visual Studio per Office Runtime espone un modello a oggetti fortemente tipizzato che è possibile usare per ottenere e impostare le proprietà dei controlli barra multifunzione in fase di esecuzione.
+description: Informazioni su come Visual Studio Tools per Office runtime espone un modello a oggetti fortemente tipizzato che è possibile usare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,24 +12,25 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f053e87f8cdfd2bdf87bbdf4b7d115f6d9bbec26
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 8018eed6f621e81a7ee57ae2e4087ff30615cac1c29cbd6401413c12716f054e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107823990"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121226135"
 ---
 # <a name="ribbon-object-model-overview"></a>Panoramica del modello a oggetti della barra multifunzione
-  Espone un modello a oggetti fortemente tipizzato che è possibile usare per ottenere e impostare le proprietà [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dei controlli barra multifunzione in fase di esecuzione. Ad esempio, è possibile popolare in modo dinamico i controlli di menu o mostrare e nascondere i controlli contestualmente. È anche possibile aggiungere schede, gruppi e controlli a una barra multifunzione, ma solo prima che la barra multifunzione venga caricata dall'applicazione di Office. Per informazioni, vedere [Impostare proprietà che diventano di sola lettura.](#SettingReadOnlyProperties)
+  espone un modello a oggetti fortemente tipizzato che è possibile usare per ottenere e impostare le proprietà dei controlli della barra [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] multifunzione in fase di esecuzione. Ad esempio, è possibile popolare dinamicamente i controlli menu o mostrare e nascondere i controlli contestualmente. È anche possibile aggiungere schede, gruppi e controlli a una barra multifunzione, ma solo prima che la barra multifunzione venga caricata dall Office app Office barra multifunzione. Per informazioni, vedere [Impostare le proprietà che diventano di sola lettura.](#SettingReadOnlyProperties)
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
- Questo modello a oggetti della barra multifunzione è costituito principalmente dalle [classi Ribbon](#RibbonClass), [Ribbon events](#RibbonEvents)e Ribbon [control classes](#RibbonControlClasses).
+ Questo modello a oggetti della barra multifunzione è costituito principalmente dalla [classe Ribbon](#RibbonClass), da [eventi della](#RibbonEvents)barra multifunzione e dalle classi di controlli della barra [multifunzione](#RibbonControlClasses).
 
 ## <a name="ribbon-class"></a><a name="RibbonClass"></a> Classe Ribbon
- Quando si aggiunge un nuovo **elemento Barra multifunzione (finestra di** progettazione visiva) a un progetto, Visual Studio una classe **Ribbon** al progetto. La **classe Ribbon** eredita dalla classe <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> .
+ Quando si aggiunge un nuovo **elemento Barra multifunzione (finestra** di progettazione visiva) a un progetto, Visual Studio una classe **Ribbon** al progetto. La **classe Ribbon** eredita dalla classe <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> .
 
  Questa classe viene visualizzata come classe parziale suddivisa tra il file di codice della barra multifunzione e il file di codice della finestra di progettazione della barra multifunzione.
 
@@ -38,12 +39,12 @@ ms.locfileid: "107823990"
 
 |Event|Descrizione|
 |-----------|-----------------|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Generato quando l'applicazione di Office carica la personalizzazione della barra multifunzione. Il <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> gestore eventi viene aggiunto automaticamente al file di codice della barra multifunzione. Usare questo gestore eventi per eseguire codice personalizzato quando viene caricata la barra multifunzione.|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Generato quando l'applicazione Office carica la personalizzazione della barra multifunzione. Il <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> gestore eventi viene aggiunto automaticamente al file di codice della barra multifunzione. Usare questo gestore eventi per eseguire codice personalizzato quando viene caricata la barra multifunzione.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Consente di memorizzare nella cache le immagini nella personalizzazione della barra multifunzione quando la barra multifunzione viene caricata. È possibile ottenere un leggero miglioramento delle prestazioni se si scrive codice per memorizzare nella cache le immagini della barra multifunzione in questo gestore eventi. Per altre informazioni, vedere <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Generato alla chiusura dell'istanza della barra multifunzione.|
 
 ## <a name="ribbon-controls"></a><a name="RibbonControlClasses"></a> Controlli della barra multifunzione
- Lo spazio dei nomi contiene un tipo per ogni controllo visualizzato nel gruppo Controlli barra <xref:Microsoft.Office.Tools.Ribbon> multifunzione di **Office** della casella **degli strumenti**.
+ Lo spazio dei nomi contiene un tipo per ogni controllo visualizzato nel gruppo Office della barra <xref:Microsoft.Office.Tools.Ribbon> multifunzione della casella degli **strumenti**. 
 
  Nella tabella seguente viene illustrato il tipo per ogni `Ribbon` controllo. Per una descrizione di ogni controllo, vedere Panoramica [della barra multifunzione.](../vsto/ribbon-overview.md)
 
@@ -58,7 +59,7 @@ ms.locfileid: "107823990"
 |**Editbox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**Raccolta**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Gruppo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
-|**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
+|**Etichetta**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Separatore**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
@@ -86,9 +87,9 @@ ms.locfileid: "107823990"
 |Aggiungere dati definiti dall'utente a un controllo .|Usare la proprietà Tag.|
 |Ottenere gli elementi in <xref:Microsoft.Office.Tools.Ribbon.RibbonBox> un oggetto , , <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> o<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> Controllo.|Usare la proprietà Items.|
 |Aggiungere elementi a <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> un controllo , o <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> .|Usare la proprietà Items.|
-|Aggiungere controlli a un oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> .|Usare la proprietà Items.<br /><br /> Per aggiungere controlli a dopo il caricamento della barra multifunzione nell'applicazione di Office, è necessario impostare la proprietà su true prima che la barra multifunzione venga <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> caricata nell'applicazione di Office.  Per informazioni, vedere [Impostare proprietà che diventano di sola lettura.](#SettingReadOnlyProperties)|
-|Ottiene l'elemento selezionato di un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> oggetto ,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> .|Usare la proprietà SelectedItem. Per un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> oggetto , usare la proprietà <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> .|
-|Ottenere i gruppi in un <xref:Microsoft.Office.Tools.Ribbon.RibbonTab> oggetto .|Usare la proprietà <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
+|Aggiungere controlli a un oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> .|Usare la proprietà Items.<br /><br /> Per aggiungere controlli a dopo che la barra multifunzione è stata caricata nell'applicazione Office, è necessario impostare la proprietà su true prima che la barra multifunzione venga caricata <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> nell'Office applicazione.  Per informazioni, vedere [Impostare le proprietà che diventano di sola lettura.](#SettingReadOnlyProperties)|
+|Ottiene l'elemento selezionato di un oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> ,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> .|Usare la proprietà SelectedItem. Per un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> oggetto , usare la proprietà <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> .|
+|Ottenere i gruppi in un oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonTab> .|Usare la proprietà <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
 |Consente di specificare il numero di righe e colonne visualizzate in un oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> .|Usare le <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> proprietà <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> e .|
 
 ## <a name="set-properties-that-become-read-only"></a><a name="SettingReadOnlyProperties"></a> Impostare proprietà che diventano di sola lettura
@@ -116,12 +117,12 @@ ms.locfileid: "107823990"
 
  Nei progetti Visual C# aggiornati da Visual Studio 2008, il costruttore viene visualizzato nel file di codice della barra multifunzione.
 
- Nei Visual Basic o nei progetti Visual C# creati in , il costruttore viene visualizzato nel file di codice della finestra di [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] progettazione della barra multifunzione. Questo file è denominato *YourRibbonItem.* Designer.cs o *YourRibbonItem.* Designer.vb. Per visualizzare questo file nei Visual Basic, è prima necessario fare clic **sul pulsante Mostra** tutti i file in Esplora soluzioni.
+ Nei Visual Basic, o nei progetti Visual C# creati in , il costruttore viene visualizzato nel file di codice della finestra di progettazione [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] della barra multifunzione. Questo file è denominato *YourRibbonItem.* Designer.cs o *YourRibbonItem.* Designer.vb. Per visualizzare questo file nei Visual Basic, è necessario fare clic sul pulsante **Mostra** tutti i file in Esplora soluzioni.
 
 ### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>Impostare le proprietà nel metodo CreateRibbonExtensibilityObject
  È possibile impostare le proprietà di un `Ribbon` controllo quando si esegue l'override del metodo nella classe , o del `CreateRibbonExtensibilityObject` `ThisAddin` `ThisWorkbook` `ThisDocument` progetto. Per altre informazioni sul metodo `CreateRibbonExtensibilityObject` , vedere Cenni [preliminari sulla barra multifunzione](../vsto/ribbon-overview.md).
 
- Nell'esempio seguente vengono impostate le proprietà della barra multifunzione `CreateRibbonExtensibilityObject` nel metodo della classe di un progetto cartella di lavoro di `ThisWorkbook` Excel.
+ Nell'esempio seguente vengono impostate le proprietà della barra multifunzione nel metodo della classe di `CreateRibbonExtensibilityObject` un progetto Excel cartella di `ThisWorkbook` lavoro.
 
  Aggiungere il codice seguente.
 
@@ -159,16 +160,16 @@ ms.locfileid: "107823990"
 |**Schede**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Title**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 
-### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Impostare le proprietà per le barre multifunzione visualizzate nei controlli di Outlook
- Viene creata una nuova istanza della barra multifunzione ogni volta che un utente apre un controllo in cui viene visualizzata la barra multifunzione. Tuttavia, è possibile impostare le proprietà elencate nella tabella precedente solo prima della creazione della prima istanza della barra multifunzione. Dopo la creazione della prima istanza, queste proprietà diventano di sola lettura perché la prima istanza definisce il file XML utilizzato da Outlook per caricare la barra multifunzione.
+### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Impostare le proprietà per le barre multifunzione visualizzate Outlook controlli
+ Viene creata una nuova istanza della barra multifunzione ogni volta che un utente apre un controllo in cui viene visualizzata la barra multifunzione. Tuttavia, è possibile impostare le proprietà elencate nella tabella precedente solo prima della creazione della prima istanza della barra multifunzione. Dopo la creazione della prima istanza, queste proprietà diventano di sola lettura perché la prima istanza definisce il file XML Outlook per caricare la barra multifunzione.
 
  Se si dispone di logica condizionale che imposta una di queste proprietà su un valore diverso quando vengono create altre istanze della barra multifunzione, questo codice non avrà alcun effetto.
 
 > [!NOTE]
-> Assicurarsi che la **proprietà Name** sia impostata per ogni controllo aggiunto a una barra multifunzione di Outlook. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di esecuzione, è necessario impostare questa proprietà nel codice. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di progettazione, la proprietà Name viene impostata automaticamente.
+> Assicurarsi che la **proprietà Name** sia impostata per ogni controllo aggiunto a un Outlook barra multifunzione. Se si aggiunge un controllo a una barra multifunzione Outlook in fase di esecuzione, è necessario impostare questa proprietà nel codice. Se si aggiunge un controllo a una barra multifunzione Outlook in fase di progettazione, la proprietà Name viene impostata automaticamente.
 
 ## <a name="ribbon-control-events"></a>Eventi del controllo barra multifunzione
- Ogni classe del controllo contiene uno o più eventi. Nella tabella seguente vengono descritti questi eventi.
+ Ogni classe di controllo contiene uno o più eventi. Nella tabella seguente vengono descritti questi eventi.
 
 |Event|Descrizione|
 |-----------|-----------------|
@@ -176,7 +177,7 @@ ms.locfileid: "107823990"
 |Textchanged|Si verifica quando viene modificato il testo di una casella di modifica o di una casella combinata.|
 |Caricamento di elementi|Si verifica quando la raccolta Items del controllo viene richiesta da Office. Office memorizza nella cache la raccolta Items fino a quando il codice non modifica le proprietà del controllo o non si chiama il <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> metodo .|
 |Buttonclick|Si verifica quando si fa clic su un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> pulsante in o <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> .|
-|SelectionChanged|Si verifica quando la selezione in un oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> viene modificata.|
+|SelectionChanged|Si verifica quando la selezione in un <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> oggetto o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> viene modificata.|
 |DialogLauncherClick|Si verifica quando si fa clic sull'icona di avvio della finestra di dialogo nell'angolo inferiore destro di un gruppo.|
 
  I gestori eventi per questi eventi hanno i due parametri seguenti.

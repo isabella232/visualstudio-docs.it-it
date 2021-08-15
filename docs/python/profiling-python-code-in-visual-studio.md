@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d860acad409f553a90186e6898077e7bfd81dd90
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b607c0530efcb8846e765dd3019f7a03c98476d4137b03af9f13056e6a4cd5b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918881"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121441729"
 ---
 # <a name="profile-python-code"></a>Profilare il codice Python
 
@@ -23,7 +24,7 @@ ms.locfileid: "99918881"
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>Profilatura per interpreti basati su CPython
 
-La profilatura viene avviata tramite il comando di menu **debug**  >  **avvio Python** , che consente di aprire una finestra di dialogo di configurazione:
+La profilatura viene avviata tramite il **comando di** menu Debug  >  **Avvia profilatura Python,** che apre una finestra di dialogo di configurazione:
 
 ![Finestra di dialogo di configurazione della profilatura](media/profiling-start.png)
 
@@ -32,7 +33,7 @@ Quando si fa clic su **OK**, viene eseguito il profiler e si apre un report di p
 ![Report di prestazioni del profiler](media/profiling-results.png)
 
 > [!Note]
-> Quando si esegue la profilatura di un'applicazione Python, Visual Studio raccoglie i dati per la durata del processo. Attualmente, non è possibile sospendere la profilatura. Si desidera ricevere commenti e suggerimenti sulle funzionalità future. Usare il pulsante **Commenti sul prodotto** nella parte inferiore della pagina.
+> Quando si profila un'applicazione Python Visual Studio raccoglie i dati per la durata del processo. Al momento non è possibile sospendere la profilatura. Microsoft vuole ricevere commenti e suggerimenti sulle funzionalità future. Usare il pulsante **Commenti sul prodotto** nella parte inferiore della pagina.
 
 ## <a name="profiling-for-ironpython"></a>Profilatura per IronPython
 
