@@ -1,21 +1,22 @@
 ---
-title: Strumenti per le prestazioni nelle app di Windows 8 & WS 2012
-description: Informazioni sulle funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative nel modo in cui gli strumenti per le prestazioni di Visual Studio raccolgono i dati.
+title: Strumenti per le prestazioni Windows 8 & app WS 2012
+description: Informazioni su come le funzionalità di sicurezza Windows 8 e Windows Server 2012 necessarie modifiche significative nel modo in cui Visual Studio strumenti per la raccolta dei dati.
 ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a6060b61f388b4db4e9284a96f5d924a84a76210
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2d431889051b85b6501436ecc203fefe7741f305ef5d9cf9647caff1d33ba96
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922067"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121246071"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 
@@ -112,7 +113,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccolta di dati TIP in un computer remoto**
 
-Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs \_ Profiler \_** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella *%VSInstallDir%\Team Tools\Performance Tools\Setups* di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs \_ profiler \_**.exedalla cartella _\<Platform>_ **\_** _\<Language>_ **** *%VSInstallDir%\Team Tools\Performance Tools\Setups* di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 È possibile usare [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) per raccogliere i dati di profilatura.
 
@@ -123,5 +124,5 @@ I dati di interazione tra livelli possono essere visualizzati solo in Visual Stu
 ## <a name="see-also"></a>Vedi anche
 
 [Esplora prestazioni](../profiling/performance-explorer.md) 
- [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
- di prestazioni [Profilo dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md) 
+ [Profilare dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

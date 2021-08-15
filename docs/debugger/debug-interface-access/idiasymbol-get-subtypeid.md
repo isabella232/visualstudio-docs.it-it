@@ -9,14 +9,15 @@ ms.assetid: 0f899920-4fc5-4de8-84a3-cd98c57bf124
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aae7976aa0f6ccff662fc7858b36e32937e71cb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4fed286035722618a167ff904701a4d8886aab2f1bb496ed5a1a2e9090f00766
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160680"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121294534"
 ---
 # <a name="idiasymbolget_subtypeid"></a>IDiaSymbol::get_subTypeId
 Recupera l'ID del sottotipo.
@@ -31,10 +32,10 @@ HRESULT get_subTypeId(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un oggetto `DWORD` che include l'ID del sottotipo.
+[out] Puntatore a un oggetto `DWORD` che contiene l'ID del sottotipo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

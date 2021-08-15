@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: ef33052e8ae98e5a716265a130f8b2031bbfd340
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 393e4308a95aa330d9a66af6ae179ae42004e7fef1491a32ed78cca71cfc3949
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385656"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271069"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Condividere modelli ed esportare diagrammi
 In Visual Studio è possibile condividere modelli e diagrammi con i colleghi in diversi modi.
@@ -36,7 +37,7 @@ In Visual Studio è possibile condividere modelli e diagrammi con i colleghi in 
 
  Un diagramma delle dipendenze può essere aperto solo all'interno del modello in cui è stato creato. Per consentire l'accesso a un diagramma, è quindi necessario fornire l'accesso a tutti i file del progetto di modellazione o alle relative copie.
 
- Per altre informazioni, vedere [Leggere modelli e diagrammi in altre Visual Studio edizioni](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
+ Per altre informazioni, vedere [Leggere modelli e diagrammi in altre Visual Studio edizioni.](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)
 
 ## <a name="using-diagrams-in-documents-and-presentations"></a>Uso di diagrammi in documenti e presentazioni
  È possibile copiare parti di diagrammi in documenti o presentazioni. È anche possibile stampare i diagrammi, ad esempio in file XPS.

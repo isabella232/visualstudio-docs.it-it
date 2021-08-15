@@ -22,12 +22,13 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 9f4ca634aa226437b6d8790837c9f95f778a00c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 45c9ec5ea9a2701d9784dfe3edcbaef301a7a036005fcd2e98bec73829d49c1f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924771"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121272993"
 ---
 # <a name="install-dotfuscator-community"></a>Installare Dotfuscator Community
 
@@ -64,7 +65,7 @@ Queste istruzioni spiegano come installarlo.
 1. Nella barra di ricerca dell'**Avvio veloce** (CTRL + Q) digitare `dotfuscator`. <br/> <br/> ![Avvio veloce](media/install_from_vs_12.png) <br/> <br/>
 
 2. Nei risultati visualizzati nell'Avvio veloce, sotto l'intestazione *Installa*, selezionare **PreEmptive Protection - Dotfuscator (Individual Component)**.
-   * Se invece si visualizza, sotto l'  intestazione dei menu **Tools-preemptive Protection-DOTFUSCATOR**, Dotfuscator CE è già installato. Selezionare tale opzione per [iniziare][get-started].
+   * Se invece sotto l'intestazione *Menu* viene visualizzato **Strumenti - PreEmptive Protection - Dotfuscator**, Dotfuscator CE è già installato. Selezionare tale opzione per [iniziare][get-started].
 
 3. Verrà visualizzata la finestra del programma di installazione di Visual Studio, preconfigurata per installare Dotfuscator CE.
    > [!NOTE]
@@ -74,7 +75,7 @@ Queste istruzioni spiegano come installarlo.
 
 ::: moniker-end
 
-Una volta completata l'installazione, è possibile [iniziare a utilizzare Dotfuscator Community][get-started].
+Al termine dell'installazione, è possibile [iniziare a usare Dotfuscator Community][get-started].
 
 ## <a name="during-visual-studio-installation"></a>Durante l'installazione di Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-description: Esegue il mapping di una posizione del documento nel modulo specificato a una matrice di indirizzi di debug.
+description: Mappe una posizione del documento nel modulo specificato in una matrice di indirizzi di debug.
 title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -12,20 +12,21 @@ ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d19b54e5e2d35791d160c5deb6eb06ee0431f978
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5c4d8559b3983f991561a3c2ace6901e405967b12250cd2ba011012f7bc6a7ec
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088211"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452225"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-Esegue il mapping di una posizione del documento nel modulo specificato a una matrice di indirizzi di debug.
+Mappe una posizione del documento nel modulo specificato in una matrice di indirizzi di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,28 +54,28 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-in Identificatore del dominio dell'applicazione.
+[in] Identificatore del dominio applicazione.
 
 `guidModule`\
-in Identificatore univoco del modulo.
+[in] Identificatore univoco del modulo.
 
 `pDocPos`\
-in Posizione del documento.
+[in] Posizione del documento.
 
 `fStatmentOnly`\
-in Se `TRUE` , limita gli indirizzi di debug a una singola istruzione.
+[in] Se `TRUE` , limita gli indirizzi di debug a una singola istruzione.
 
 `ppEnumBegAddresses`\
-out Restituisce un enumeratore per gli indirizzi di debug iniziali associati all'istruzione o alla riga.
+[out] Restituisce un enumeratore per gli indirizzi di debug iniziali associati a questa istruzione o riga.
 
 `ppEnumEndAddresses`\
-out Restituisce un enumeratore per gli indirizzi di debug finali associati all'istruzione o alla riga.
+[out] Restituisce un enumeratore per gli indirizzi di debug finali associati a questa istruzione o riga.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
+ L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

@@ -1,6 +1,6 @@
 ---
-description: Determina la posizione del riferimento all'assembly gestito specificato.
-title: 'IPropertyProxyEESide:: ResolveAssemblyRef | Microsoft Docs'
+description: Determina il percorso del riferimento all'assembly gestito specificato.
+title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03df51a5c229f5fd3a5cc5ea8f35c8ecaa9e2da7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1533572f67f681cac394ff5d4fba2558fbaf9c66e3aa42de5f12fff5bdc2676d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082378"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321376"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Determina la posizione del riferimento all'assembly gestito specificato.
+Determina il percorso del riferimento all'assembly gestito specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,19 +51,19 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>Parametri
 `assemName`\
-in Nome dell'assembly da risolvere.
+[in] Nome dell'assembly da risolvere.
 
 `assemBytes`\
-out Restituisce un oggetto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) che contiene i byte dell'assembly associati al riferimento.
+[out] Restituisce un [oggetto IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenente i byte dell'assembly associati al riferimento.
 
 `assemPdb`\
-out Restituisce un `IEEDataStorage` oggetto contenente i dati dell'archivio simboli associati a questo riferimento.
+[out] Restituisce un `IEEDataStorage` oggetto contenente i dati dell'archivio simboli associati a questo riferimento.
 
 `assemLocation`\
-out Restituisce la posizione del percorso del riferimento.
+[out] Restituisce il percorso di questo riferimento.
 
 `alr`\
-out Restituisce un valore dall'enumerazione [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) che indica la posizione dell'assembly del riferimento.
+[out] Restituisce un valore [dall'enumerazione ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) che indica il percorso dell'assembly di questo riferimento.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

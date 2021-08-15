@@ -1,17 +1,17 @@
 ---
 title: Impostazione di un repository Git
-description: Connessione a un repository git usando Visual Studio per Mac.
+description: Connessione a un repository Git tramite Visual Studio per Mac.
 author: therealjohn
 ms.author: johmil
 ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: b5a3a764a60633ee163bc287671a33afc99300d2f20e84b03907865a0bcd617b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561058"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121382065"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -46,19 +46,19 @@ Per impostare un repository Git, seguire questa procedura:
 Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di controllo della versione, usare i passaggi seguenti per impostarlo in Git:
 
 > [!TIP]
-> Usare un file con estensione gitignore per controllare le cartelle e i file che vengono rilevati e pubblicati con git. Potrebbe essere necessario escludere le directory di compilazione, i file binari o i file generati. Per altre informazioni, vedere la [documentazione di GitHub su come ignorare i file](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
+> Usare un file con estensione gitignore per controllare quali cartelle e file vengono monitorati e pubblicati con Git. È possibile escludere directory di compilazione, file binari o file generati. Per altre informazioni, [vedere GitHub docs su come ignorare i file](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
 
-1. Selezionare il nome della soluzione nella finestra della soluzione in Visual Studio per Mac.
+1. Selezionare il nome della soluzione nella finestra della soluzione Visual Studio per Mac.
 
-2. Nella barra dei menu selezionare **controllo della versione > pubblica nel controllo della versione** per visualizzare la finestra di dialogo **clona repository** :
+2. Nella barra dei menu selezionare Controllo della versione **> Pubblica nel** controllo della versione per visualizzare la finestra di dialogo **Clona** repository:
 
     ![Avviare l'estrazione in Visual Studio per Mac](media/version-control-git4.png)
 
     Se questa voce di menu risulta disattivata, verificare di aver selezionato il nome della soluzione.
 
-3. Scegliere la scheda **Seleziona da registrato** e premere il pulsante **Aggiungi** :
+3. Scegliere la **scheda Select from Registered** (Seleziona da registrato) e fare clic sul pulsante Add **(Aggiungi):**
 
-    ![Aggiungere una finestra di dialogo repository registrato.](media/version-control-git5.png)
+    ![Finestra di dialogo Aggiungi repository registrato.](media/version-control-git5.png)
 
 4. Inserire il nome del repository che si desidera visualizzare localmente e incollare l'URL del passaggio 3. La finestra di dialogo Configurazione repository sarà analoga alla seguente. Premere OK:
 
@@ -85,7 +85,7 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 
     ![Menu Controllo della versione](media/version-control-git10.png)
 
-10. Una volta avviate le modifiche aggiuntive, usare prima il **controllo della versione > esaminare e confermare** il menu per aprire la visualizzazione dello stato. Dopo aver selezionato e sottoposta a commit le modifiche, selezionare **push** per eseguire il push delle modifiche nel repository remoto. Ciò consentirà a tutti gli utenti appropriati di visualizzarlo in github.com:
+10. Dopo aver avviato le modifiche aggiuntive, usare prima di tutto il controllo della **> menu Verifica** ed esegui commit per aprire la visualizzazione dello stato. Dopo aver selezionato e eseguito il commit delle modifiche, selezionare **Push per** eseguire il push delle modifiche nel repository remoto. Ciò consentirà a tutti gli utenti appropriati di visualizzarlo in github.com:
 
     ![Eseguire il push delle modifiche nel repository remoto](media/version-control-git11.png)
 
@@ -100,7 +100,7 @@ Seguire questa procedura per eseguire il push del nuovo repository locale in un 
 > [!NOTE]
 > Se non è ancora stato creato un repository GitHub, vedere la sezione [Creazione di un repository remoto su GitHub](#creating-a-remote-repo-on-github).
 
-1. Per creare il primo commit, passare a **controllo della versione > verifica e commit** nella barra dei menu.
+1. Creare il primo commit selezionando Controllo della versione **> Verifica ed esegui commit** nella barra dei menu.
 
 2. Nella scheda Stato scegliere **Commit** nella parte superiore sinistra.
 
@@ -133,21 +133,21 @@ Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHu
 
 ## <a name="clone-an-existing-repository"></a>Clonare un repository esistente
 
-È probabile che sarà necessario usare un repository di GitHub che esiste solo in remoto e non nel computer locale. Visual Studio per Mac consente di clonare rapidamente questo repository. Seguire questa procedura per clonarlo nel computer in uso:
+È probabile che sarà necessario usare un repository di GitHub che esiste solo in remoto e non nel computer locale. Visual Studio per Mac consente di clonare rapidamente questo repo. Seguire questa procedura per clonarlo nel computer in uso:
 
-1. Nella barra dei menu selezionare **controllo della versione > repository clone**:
+1. Nella barra dei menu selezionare Controllo **della versione > Clone Repository (Clona repository):**
 
-2. Verrà visualizzata la scheda **Connetti con URL** :
+2. Verrà visualizzata la Connessione **con la scheda** URL:
 
-    ![Scheda Connetti con URL con i dettagli immessi](media/version-control-git13.png)
+    ![Connessione con la scheda URL con i dettagli immessi](media/version-control-git13.png)
 
 3. Nella pagina di GitHub del repository remoto, scegliere il pulsante **Clone or Download** (Clona o scarica) e copiare l'URL fornito:
 
     ![URL di GitHub visualizzato](media/version-control-git14.png)
 
-4. Sostituire tutto il testo nel campo immissione **URL** nella scheda **Connetti con URL** . In questo modo, la maggior parte degli altri campi in questa scheda viene popolata, come illustrato nell'immagine nel passaggio #2.
+4. Sostituire tutto il testo nel campo **di immissione dell'URL** nel **Connessione con la scheda** URL. La maggior parte degli altri campi di questa scheda verrà popolata automaticamente, come illustrato nell'immagine nel passaggio #2.
 
-5. Immettere la directory in cui si vuole clonare il repository e premere **Clone**.
+5. Immettere la directory in cui si vuole clonare il repo e premere **Clone (Clona).**
 
 > [!NOTE]
 > Se il repository ha dimensioni maggiori di 4 GB, potrebbero verificarsi problemi.
@@ -166,6 +166,6 @@ Se si verificano problemi con l'inizializzazione del progetto con un repository 
 1. Andare al menu Controllo della versione e scegliere **Pubblica nel Controllo della versione**.
 1. Seguire la procedura dell'esercitazione precedente partendo dal passaggio 6.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Controllo della versione in Visual Studio (in Windows)](/visualstudio/version-control/)

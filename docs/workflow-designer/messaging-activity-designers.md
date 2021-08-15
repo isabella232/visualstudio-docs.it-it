@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner di messaggistica Progettazione flussi di lavoro
-description: Informazioni su come utilizzare gli ActivityDesigner di messaggistica per creare e configurare attività di messaggistica che inviano e ricevono messaggi di Windows Communication Foundation (WCF).
+title: Progettazione flussi di lavoro - ActivityDesigner di messaggistica
+description: Informazioni su come usare ActivityDesigner di messaggistica per creare e configurare attività di messaggistica che inviano e ricevono messaggi Windows Communication Foundation (WCF).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,20 +8,21 @@ ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f7eea7563d74c3bce1b1d4951fe86585b79747
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b4866d0ad11aef18e2e8e2975908893d8e879966e9530a200d8a9a300fd62f3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920161"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121383742"
 ---
 # <a name="messaging-activity-designers"></a>ActivityDesigner Messaggistica
 
-Gli ActivityDesigner di messaggistica vengono utilizzati per creare e configurare attività di messaggistica che inviano e ricevono messaggi di Windows Communication Foundation (WCF) da un'applicazione Windows Workflow Foundation (WF). In .NET Framework 4 sono state introdotte cinque attività di messaggistica. Il Progettazione flussi di lavoro fornisce due finestre di progettazione modelli che consentono di gestire la messaggistica all'interno di un flusso di lavoro.
+Gli ActivityDesigner di messaggistica vengono usati per creare e configurare attività di messaggistica che inviano e ricevono messaggi Windows Communication Foundation (WCF) dall'interno di un'applicazione Windows Workflow Foundation (WF). Sono state introdotte cinque attività di messaggistica .NET Framework 4. Il Progettazione flussi di lavoro fornisce due finestre di progettazione di modelli che consentono di gestire la messaggistica all'interno di un flusso di lavoro.
 
-Gli argomenti contenuti in questa sezione ed elencati nella tabella seguente forniscono indicazioni su come usare l'attività Progettazione flussi di lavoro e i progettisti di modelli.
+Gli argomenti contenuti in questa sezione e elencati nella tabella seguente forniscono indicazioni su come usare le finestre di progettazione di Progettazione flussi di lavoro attività e modelli.
 
 - <xref:System.Activities.Activity>
 

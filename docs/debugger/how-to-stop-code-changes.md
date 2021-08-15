@@ -1,6 +1,6 @@
 ---
-title: Interrompi modifiche al codice | Microsoft Docs
-description: Informazioni su come interrompere l'applicazione delle modifiche al codice durante l'uso della funzionalità modifica e continuazione durante una sessione di debug di Visual Studio.
+title: Arrestare le modifiche al codice | Microsoft Docs
+description: Informazioni su come interrompere l'applicazione delle modifiche al codice durante l'uso della funzionalità Modifica e continuazione durante una sessione Visual Studio di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,14 +17,15 @@ ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aebf3b4a5a7556b2e2a3f6fdff7554539812d8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b103cd6d352c78db1db53efb3a20aafaaa64f3e85edee7d214e6ce917e5095a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896576"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453399"
 ---
 # <a name="how-to-stop-code-changes"></a>Procedura: interrompere l'applicazione di modifiche al codice
 In Modifica e continuazione è possibile scegliere di interrompere l'applicazione delle modifiche al codice.

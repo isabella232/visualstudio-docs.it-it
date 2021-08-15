@@ -10,12 +10,12 @@ metadata:
   manager: jmartens
   ms.workload:
   - multiple
-  ms.openlocfilehash: b2c69f0335cb4cb2ffa16b821a8798bdf2ca010f
-  ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
+  ms.openlocfilehash: 7eb5da3ce88b5641cf2bf8e1597b941f56c18bd818ca4c033673fcfd845ab89f
+  ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/14/2021
-  ms.locfileid: "113757549"
+  ms.lasthandoff: 08/12/2021
+  ms.locfileid: "121447257"
 title: 'Segnalare un problema: Stati e domande frequenti'
 summary: >
   Lo strumento Segnala un problema consente alla community degli sviluppatori di Visual Studio di segnalare i problemi. Ogni segnalazione diventa un elemento di lavoro nel sistema di progettazione Microsoft e consente all'utente di interagire direttamente con i team dei prodotti per contribuire a identificare e risolvere problemi importanti. Il feedback inviato con informazioni di diagnostica dettagliate è fondamentale per migliorare la famiglia di prodotti Visual Studio. La segnalazione dei problemi da parte degli utenti è estremamente apprezzata.

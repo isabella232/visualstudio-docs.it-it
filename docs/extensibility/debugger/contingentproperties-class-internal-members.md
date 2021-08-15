@@ -10,14 +10,15 @@ ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fca0bf68de4493d0165f9e66e251945ba6168b2
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 81ba8eded541cd9db41c891cae8cc6fc86eb1ff9ddd6034070bdb10101d626a1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905683"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452498"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties : membri interni
 Contiene proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto .
@@ -46,5 +47,5 @@ Contiene proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto
 ## <a name="remarks"></a>Commenti
  Il .NET Framework inizializza i campi di questa classe solo quando sono necessari.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensioni interne parallele per l'.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

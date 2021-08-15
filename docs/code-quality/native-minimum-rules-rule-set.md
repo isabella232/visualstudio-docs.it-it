@@ -1,27 +1,28 @@
 ---
 title: Set di regole minime native
 ms.date: 11/04/2016
-description: Informazioni sul set di regole minime native in Visual Studio. Vedere le descrizioni delle regole per la sicurezza, l'affidabilità e altri problemi critici nel codice nativo.
+description: Informazioni sul set di regole native per le regole minime in Visual Studio. Vedere le descrizioni delle regole per la sicurezza, l'affidabilità e altri problemi critici nel codice nativo.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e029e0127a361bc133c008cef36d4426617c83b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de4d23633de1c511e75d55b41e7b5f7f0d2568f187619227c4dd6479232783ab
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867828"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121348572"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
 
-Le regole minime native Microsoft si concentrano sui problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali dell'applicazione.
+Le regole minime native di Microsoft sono incentrate sui problemi più critici del codice nativo, inclusi potenziali problemi di sicurezza e arresti anomali dell'applicazione.
 
-Includere questo set di regole in tutti i set di regole personalizzati creati per i progetti nativi.
+Includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti nativi.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -94,13 +95,13 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C28182](/cpp/code-quality/c28182)|Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.|
 |[C28202](/cpp/code-quality/c28202)|Riferimento non valido a membro non statico|
 |[C28203](/cpp/code-quality/c28203)|Riferimento ambiguo al membro di classe.|
-|[C28205](/cpp/code-quality/c28205)|\_Esito positivo \_ o \_ \_ negativo \_ utilizzato in un contesto non valido|
+|[C28205](/cpp/code-quality/c28205)|\_Esito \_ positivo o In caso di errore usato in un contesto non \_ \_ \_ valido|
 |[C28206](/cpp/code-quality/c28206)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](/cpp/code-quality/c28207)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28210](/cpp/code-quality/c28210)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|
 |[C28211](/cpp/code-quality/c28211)|Previsto nome contesto statico per SAL_context|
 |[C28212](/cpp/code-quality/c28212)|Prevista espressione del puntatore per l'annotazione|
-|[C28213](/cpp/code-quality/c28213)|L' \_ \_ annotazione use decl Annotations \_ \_ deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
+|[C28213](/cpp/code-quality/c28213)|\_ \_ L'annotazione Use decl \_ annotations \_ deve essere usata per fare riferimento, senza modifiche, a una dichiarazione precedente.|
 |[C28214](/cpp/code-quality/c28214)|I nomi di parametro di attributo devono essere p1...p9|
 |[C28215](/cpp/code-quality/c28215)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](/cpp/code-quality/c28216)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
@@ -142,7 +143,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C28267](/cpp/code-quality/c28267)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|
 |[C28272](/cpp/code-quality/c28272)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|
 |[C28273](/cpp/code-quality/c28273)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|
-|[C28275](/cpp/code-quality/c28275)|Il parametro per \_ il \_ valore della macro \_ è null|
+|[C28275](/cpp/code-quality/c28275)|Il parametro per \_ il valore macro è \_ \_ Null|
 |[C28279](/cpp/code-quality/c28279)|Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'|
 |[C28280](/cpp/code-quality/c28280)|Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente|
 |[C28282](/cpp/code-quality/c28282)|Le stringhe di formato devono essere nelle precondizioni|

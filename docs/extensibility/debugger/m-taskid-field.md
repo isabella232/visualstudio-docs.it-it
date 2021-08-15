@@ -9,14 +9,15 @@ ms.assetid: 9e4b827e-7c41-4fa3-b646-830aba2ec736
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fd901a69df7bd90636b39bd88d607bea62776fc
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 53048bbdd46e1d8eefa6bae7376a7bf653ccfd7076dc8cecedd4d2140f0945ea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902657"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308168"
 ---
 # <a name="m_taskid-field"></a>m_taskId campo
 Campo di supporto per la <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> proprietà.
@@ -35,5 +36,5 @@ Campo di supporto per la <xref:System.Threading.Tasks.Task.Id%2A?displayProperty
 
 ## <a name="remarks"></a>Osservazioni
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)

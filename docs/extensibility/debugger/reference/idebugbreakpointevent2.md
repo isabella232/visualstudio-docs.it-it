@@ -1,5 +1,5 @@
 ---
-description: Il motore di debug (DE) Invia questa interfaccia a gestione debug sessione (SDM) quando un programma si arresta in corrispondenza di un punto di interruzione.
+description: Il motore di debug (DE) invia questa interfaccia alla gestione del debug di sessione (SDM) quando un programma si arresta in corrispondenza di un punto di interruzione.
 title: IDebugBreakpointEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29dd8aa27c6b73d09036905a8c6e43af878419eb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bf70a3957dba4aa1ecdc29a904ba019363c8816b89b14bd4740363c078e29e41
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054543"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360612"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
-Il motore di debug (DE) Invia questa interfaccia a gestione debug sessione (SDM) quando un programma si arresta in corrispondenza di un punto di interruzione.
+Il motore di debug (DE) invia questa interfaccia alla gestione del debug di sessione (SDM) quando un programma si arresta in corrispondenza di un punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,22 +31,22 @@ IDebugBreakpointEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il DE implementa questa interfaccia come parte del supporto per i punti di interruzione. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (il SDM USA [QueryInterface](/cpp/atl/queryinterface) per accedere all' `IDebugEvent2` interfaccia).
+ Il de implementa questa interfaccia come parte del supporto per i punti di interruzione. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (SDM usa [QueryInterface](/cpp/atl/queryinterface) per accedere all'interfaccia). `IDebugEvent2`
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il DE crea e invia questo oggetto evento quando nel programma viene rilevato almeno un punto di interruzione. L'evento viene inviato utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug.
+ Il de crea e invia questo oggetto evento quando viene rilevato almeno un punto di interruzione nel programma. L'evento viene inviato usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugBreakpointEvent2` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugBreakpointEvent2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|Crea un enumeratore per tutti i punti di interruzione generati in corrispondenza della posizione del codice corrente.|
+|[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|Crea un enumeratore per tutti i punti di interruzione generati nella posizione del codice corrente.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

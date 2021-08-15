@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner Progettazione flussi di lavoro-Runtime
-description: Informazioni su come usare gli ActivityDesigner di runtime per salvare in modo permanente e terminare le attività del flusso di lavoro nell'Progettazione flussi di lavoro.
+title: Progettazione flussi di lavoro - ActivityDesigner di runtime
+description: Informazioni su come usare ActivityDesigner runtime per rendere persistenti e terminare le attività del flusso di lavoro nel Progettazione flussi di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,17 +8,18 @@ ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e8ef89b6373808ac7eed0c7557e25968efcf3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6d8eda440e1e4084e7dbb4b8567ca9001b323f451155cb377377f18e69116ee
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847310"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243341"
 ---
 # <a name="runtime-activity-designers"></a>ActivityDesigner Runtime
-Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e terminare le attività del flusso di lavoro. Negli argomenti contenuti in questa sezione vengono fornite indicazioni sull'utilizzo degli ActivityDesigner Progettazione flussi di lavoro.
+Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e terminare le attività del flusso di lavoro. Gli argomenti contenuti in questa sezione forniscono indicazioni su come usare gli ActivityDesigner Progettazione flussi di lavoro.
 
 ## <a name="related-sections"></a>Sezioni correlate
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

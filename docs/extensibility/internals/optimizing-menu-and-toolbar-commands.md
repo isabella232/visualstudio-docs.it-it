@@ -1,6 +1,6 @@
 ---
-title: Ottimizzazione dei comandi di menu e barre degli strumenti | Microsoft Docs
-description: Informazioni su come Visual Studio è in grado di ridurre al minimo la confusione dei comandi causata dall'aggiunta di VSPackage e dai comandi corrispondenti.
+title: Ottimizzazione dei comandi di menu e barra degli strumenti | Microsoft Docs
+description: Informazioni su Visual Studio possibile ridurre al minimo la confusione dei comandi causata dall'aggiunta di VSPackage e dei comandi corrispondenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,22 +14,23 @@ ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c7d289f9dadf7b3442f937c5b50cf038c802516
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a14f024e2e06f3fad2d37140a8e0010af6a95e7935b6b86f1ebbc475800cd5e8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063058"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121238476"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Ottimizzazione dei comandi di menu e barre degli strumenti
-L'aggiunta dei pacchetti VSPackage e dei comandi corrispondenti a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può causare un'interfaccia utente affollata. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce modi per ridurre al minimo la confusione del comando dell'interfaccia utente.
+L'aggiunta di VSPackage e dei comandi corrispondenti a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può causare un'interfaccia utente piena. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce modi per ridurre al minimo la confusione dei comandi dell'interfaccia utente.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Miglioramento della disponibilità dei comandi](../../extensibility/internals/making-commands-available.md)
 
- Vengono fornite linee guida generali per ridurre al minimo il crowding dell' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaccia utente quando si aggiungono i pacchetti VSPackage.
+ Fornisce linee guida generali per ridurre al minimo l'affollamento dell'interfaccia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utente quando si aggiungono VSPackage.
 
 - [Linee guida per il posizionamento](../../extensibility/internals/command-placement-guidelines.md)
 

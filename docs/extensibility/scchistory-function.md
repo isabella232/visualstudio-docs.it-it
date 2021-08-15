@@ -11,14 +11,15 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1208bd0cb13661f1aa60bb9f97c9e4502e517e6d
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e906bd8fad6991c74c6ca12c931414fa1eba798116f6beecf711c60f3c81be8d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902540"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121290791"
 ---
 # <a name="scchistory-function"></a>Funzione SccHistory
 Questa funzione visualizza la cronologia dei file specificati.
@@ -76,13 +77,13 @@ SCCRTN SccHistory(
 |SCC_E_NONSPECIFICERROR|Errore non specifico. Non è stato possibile ottenere la cronologia dei file.|
 
 ## <a name="remarks"></a>Commenti
- Il plug-in del controllo del codice sorgente può visualizzare la propria finestra di dialogo per visualizzare la cronologia di ogni file, utilizzando `hWnd` come finestra padre. In alternativa, è possibile usare la funzione di callback di output di testo facoltativa fornita a [SccOpenProject,](../extensibility/sccopenproject-function.md) se supportata.
+ Il plug-in del controllo del codice sorgente può visualizzare una finestra di dialogo per visualizzare la cronologia di ogni file, utilizzando `hWnd` come finestra padre. In alternativa, è possibile usare la funzione di callback di output di testo facoltativa fornita a [SccOpenProject,](../extensibility/sccopenproject-function.md) se supportata.
 
  Si noti che in determinate circostanze, il file esaminato può cambiare durante l'esecuzione di questa chiamata. Ad esempio, il [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] comando history offre all'utente la possibilità di ottenere una versione precedente del file. In tal caso, il plug-in del controllo del codice sorgente restituisce un avviso all'IDE che `SCC_I_RELOAD` deve ricaricare il file.
 
 > [!NOTE]
 > Se il plug-in del controllo del codice sorgente non supporta questa funzione per una matrice di file, è possibile visualizzare solo la cronologia dei file per il primo file.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

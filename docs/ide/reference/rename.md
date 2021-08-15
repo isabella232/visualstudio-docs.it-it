@@ -1,12 +1,13 @@
 ---
 title: Refactoring con ridenominazione
-description: Informazioni su come usare la funzionalità di ridenominazione del refactoring per rinominare gli identificatori per i simboli del codice, ad esempio campi, variabili locali, metodi, spazi dei nomi, proprietà e tipi.
+description: Informazioni su come usare la funzionalità Di ridenominazione del refactoring per rinominare gli identificatori per i simboli di codice, ad esempio campi, variabili locali, metodi, spazi dei nomi, proprietà e tipi.
 ms.custom: SEO-VS-2020
 ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e3d4d5d0abc335cfb857e5a4de9c5189a1ca5cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62642e469259ca84ea4d2be15f0219d2fe7ef6e84d829448858332081ee9da8c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958102"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447123"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring con ridenominazione di un simbolo di codice
 
@@ -72,15 +73,15 @@ Questo refactoring si applica a:
 
 ## <a name="remarks"></a>Commenti
 
-- A partire da Visual Studio 2019 versione 16,3, quando si rinomina un tipo che corrisponde al nome del file in, viene visualizzata una casella di controllo che consente di rinominare il file nello stesso momento. Questa opzione viene visualizzata quando si rinomina una classe, un'interfaccia o un'enumerazione. Questa opzione non è supportata per i tipi parziali con più definizioni.
+- A partire da Visual Studio 2019 versione 16.3, quando si rinomina un tipo che corrisponde al nome del file in cui si trova, viene visualizzata una casella di controllo che consente di rinominare il file contemporaneamente. Questa opzione viene visualizzata quando si rinomina una classe, un'interfaccia o un'enumerazione. Questa opzione non è supportata per i tipi parziali con più definizioni.
 
-   ![Rinominare l'animazione con file-C #](media/rename-with-file-animated-cs.gif)
+   ![Rinominare l'animazione con il file - C #](media/rename-with-file-animated-cs.gif)
 
 - Se si usa un nome già esistente che causerebbe un conflitto, nella finestra di dialogo **Rinomina** verrà visualizzato un avviso.
 
    ![Conflitto di ridenominazione](media/rename-conflict-cs.png)
 
-- Un altro modo per rinominare un simbolo consiste nel modificare il nome nell'editor. Quindi, con il cursore nel nome del simbolo, premere **CTRL** + **.** in alternativa, è sufficiente espandere il menu icona lampadina visualizzato e **scegliere \<old name> Rinomina \<new name> a**.
+- Un altro modo per rinominare un simbolo consiste nel modificare il nome nell'editor. Quindi, con il cursore nel nome del simbolo, premere **CTRL** + **.** o semplicemente espandere il menu dell'icona a forma di lampadina visualizzato e scegliere **Rinomina \<old name> in \<new name>**.
 
    ![Rinominare nell'editor](media/rename-with-editor-cs.png)
 

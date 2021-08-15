@@ -11,14 +11,15 @@ ms.assetid: 187801f0-bd82-4c5b-9fae-8eeb1a4ac0ce
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bd7ce01dea21a8d9fe2886fb5fe7b4277f458636
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 30f7a0138526e01e973a503b9ab2e1c0a9f091f39b43ab88de75bd0590c0cee0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155922"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379814"
 ---
 # <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 Recupera il valore ID del simbolo OEM (Original Equipment Manufacturer).
@@ -34,18 +35,18 @@ HRESULT get_oemSymbolId (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'ID simbolo assegnato internamente dall'OEM.
+[out] Restituisce l'ID simbolo assegnato internamente di un OEM.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.
 
- Questa proprietà si applica solo ai simboli con un tipo di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagCustomType` .
+ Questa proprietà si applica solo ai simboli con [tipo di enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) `SymTagCustomType` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,6 +1,6 @@
 ---
 title: Organizzare gli oggetti in contenitori di layout
-description: Informazioni sui pannelli e i controlli di layout in finestra di progettazione XAML utilizzati per la disposizione di oggetti in una pagina, ad esempio Grid, Canvas, Border e Viewbox.
+description: Informazioni sui pannelli e i controlli di layout in finestra di progettazione XAML usati per disporre gli oggetti in una pagina, ad esempio Grid, Canvas, Border e Viewbox.
 ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
 ms.topic: conceptual
@@ -8,12 +8,13 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: d42a7509ceef03d2e74f470d7d4ab0efb5913e13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: e3a08c647f115d6f01ecc8543e5b87d1d4a15a8bf0e20f9633c2999eac41d63c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900841"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267234"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
 
@@ -73,7 +74,7 @@ Consente di disporre gli oggetti in modo sequenziale da sinistra verso destra. Q
 
 ![Pannello di layout DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Breve video:** ![Pulsante Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Guardare un breve video:** ![ Pulsante Di ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [riproduzione WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Controlli di layout
 

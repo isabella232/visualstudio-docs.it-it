@@ -1,6 +1,6 @@
 ---
-description: Recupera un elenco di tutti i programmi di cui è in corso il debug da un motore di debug (DE).
-title: 'IDebugEngine2:: EnumPrograms | Microsoft Docs'
+description: Recupera un elenco di tutti i programmi di cui è in corso il debug da parte di un motore di debug.
+title: IDebugEngine2::EnumPrograms | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 56bf98eb-beec-4e5f-9ebe-46c922e54c56
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ee1dfeebb92bc4a0215e5e09ed8786a81ad6167
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8eadecaef6602d5b4c9c9f21559d26f8469cd5e38dd794b0a296fc869ebc48b5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088042"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121261736"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
-Recupera un elenco di tutti i programmi di cui è in corso il debug da un motore di debug (DE).
+Recupera un elenco di tutti i programmi di cui è in corso il debug da parte di un motore di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int EnumPrograms(
 
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
-out Restituisce un oggetto [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) che contiene un elenco di tutti i programmi di cui è in corso il debug da un valore de.
+[out] Restituisce un [oggetto IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) che contiene un elenco di tutti i programmi di cui è in corso il debug da parte di un de.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

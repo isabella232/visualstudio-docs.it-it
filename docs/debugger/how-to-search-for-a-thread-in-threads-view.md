@@ -1,6 +1,6 @@
 ---
-title: Cercare un thread nella visualizzazione thread | Microsoft Docs
-description: Cercare un thread specifico nella visualizzazione thread dello strumento Spy + + usando l'ID del thread o la stringa del modulo come criterio di ricerca durante il debug in Visual Studio.
+title: Cercare un thread nella visualizzazione Thread | Microsoft Docs
+description: Cercare un thread specifico nella visualizzazione Thread dello strumento Spy++ usando l'ID thread o la stringa del modulo come criteri di ricerca durante il debug in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,35 +10,36 @@ ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d82897144a0ed366d95dfa590a09224a875f55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7eff224614fb2a0be28258217e7d6e06a5ba7ea9d0898aeb58957e9a25610813
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99845061"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378983"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Procedura: cercare un thread nella visualizzazione thread
-È possibile cercare un thread specifico nella visualizzazione thread usando l'ID del thread o la stringa del modulo come criterio di ricerca. È anche possibile specificare la direzione iniziale della ricerca. Nei campi della finestra di dialogo vengono visualizzati gli attributi del thread selezionato nell'albero dei thread.
+È possibile cercare un thread specifico nella visualizzazione Thread usando l'ID thread o la stringa del modulo come criteri di ricerca. È anche possibile specificare la direzione iniziale della ricerca. I campi nella finestra di dialogo mostreranno gli attributi del thread selezionato nell'albero dei thread.
 
-### <a name="to-search-for-a-thread-in-threads-view"></a>Per cercare un thread nella visualizzazione thread
+### <a name="to-search-for-a-thread-in-threads-view"></a>Per cercare un thread nella visualizzazione Thread
 
-1. Disporre le finestre in modo che Spy + + e una finestra [visualizzazione thread](../debugger/threads-view.md) attivi siano visibili.
+1. Disporre le finestre in modo che Spy++ e una finestra [di visualizzazione thread](../debugger/threads-view.md) attiva siano visibili.
 
-2. Dal menu **Cerca** scegliere **Trova thread**.
+2. Scegliere **Trova** thread dal menu **Cerca.**
 
-    Verrà visualizzata la finestra di [dialogo Ricerca thread](../debugger/thread-search-dialog-box.md) .
+    Verrà [visualizzata la finestra di dialogo Ricerca](../debugger/thread-search-dialog-box.md) thread .
 
-3. Digitare l'ID del thread o una stringa del modulo come criterio di ricerca.
+3. Digitare l'ID thread o una stringa del modulo come criteri di ricerca.
 
-4. Cancellare i campi per cui non si desidera specificare i valori.
+4. Deselezionare tutti i campi per i quali non si desidera specificare valori.
 
    > [!TIP]
-   > Per trovare tutti i thread di proprietà di un modulo, deselezionare la casella di testo **thread** e digitare il nome del modulo nella casella **modulo** . Quindi usare **Trova successivo** per continuare la ricerca dei thread.
+   > Per trovare tutti i thread di proprietà di un modulo, deselezionare la **casella di testo Thread** e digitare il nome del modulo nella **casella** Modulo. Usare quindi **Trova successivo per** continuare la ricerca di thread.
 
-5. Scegliere **verso l'alto** o **verso il basso** la direzione iniziale della ricerca.
+5. Scegliere **Su** **o Giù** per la direzione iniziale della ricerca.
 
 6. Fare clic su **OK**.
 
-   Se viene trovato un thread corrispondente, questo viene evidenziato nella finestra di visualizzazione thread.
+   Se viene trovato un thread corrispondente, viene evidenziato nella finestra di visualizzazione Thread.

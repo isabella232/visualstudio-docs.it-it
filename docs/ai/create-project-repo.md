@@ -1,27 +1,28 @@
 ---
 title: Clonare un repository
-description: Informazioni su come usare Visual Studio Tools for AI per clonare un repository di codice Python e creare un progetto.
+description: Informazioni su come usare Strumenti di Visual Studio per l'intelligenza artificiale per clonare un repository di codice Python e creare un progetto da esso.
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: cd89b0dfd2d5a9e4ea1cefde15e038e41a4b3faa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 103d71c819930514f5340a835c079030d6927b7f3589a07b927ac9d7cdc1f789
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841523"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121349048"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Clonare un repository del codice Python in Visual Studio
 
 Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile clonare facilmente un repository di codice Python e creare un progetto a partire da questo.
 
-1. Per connettersi ai repository di GitHub, eseguire il programma di installazione di Visual Studio, selezionare **modifica** e selezionare la scheda **singoli componenti** . Scorrere verso il basso fino alla sezione **strumenti del codice** , selezionare l' **estensione GitHub per Visual Studio** e selezionare **modifica**.
+1. Per connettersi GitHub repository, eseguire il programma di Visual Studio, selezionare **Modifica** e selezionare la **scheda Singoli** componenti. Scorrere verso il basso **fino alla sezione Strumenti** di **codice, selezionare GitHub'estensione** per Visual Studio e selezionare **Modifica**.
 
     ![Selezione dell'estensione GitHub nel programma di installazione di Visual Studio](media/create-project-repo/installation-github-extension.png)
 
@@ -40,13 +41,13 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile
 
     ![Finestra Team Explorer, creazione di un nuovo progetto da un clone](media/create-project-repo/team-explorer-new-project.png)
 
-6. Nella finestra di dialogo **nuovo progetto** visualizzata selezionare "**da codice Python esistente**", specificare un nome per il progetto, impostare **percorso** sulla stessa cartella del repository e selezionare **OK**. Nella procedura guidata visualizzata, selezionare **Fine**.
+6. Nella finestra **di dialogo New Project** (Nuovo Project) visualizzata selezionare " From Existing Python **Code**", specificare un nome per il progetto, impostare **Location** (Percorso) sulla stessa cartella del repository e selezionare **OK**. Nella procedura guidata visualizzata, selezionare **Fine**.
 
 7. Selezionare **Visualizza > Esplora soluzioni** dal menu.
 
-8. In Esplora soluzioni espandere il `TensorFlow Examples> MNIST` nodo, fare clic con il pulsante destro del mouse `convolutional.py` e selezionare **Imposta come file di avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
+8. In Esplora soluzioni espandere il nodo , fare clic con il pulsante destro del mouse su `TensorFlow Examples> MNIST` e scegliere Imposta come file di `convolutional.py` **avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
 
-9. Premere **CTRL** + **F5** o selezionare **debug > avvia senza eseguire debug** per eseguire il programma. Se viene visualizzato un errore, ricontrollare l'impostazione relativa alla directory di lavoro nel passaggio precedente.
+9. Premere **CTRL** + **F5 o** selezionare Debug > Avvia **senza** eseguire debug per eseguire il programma. Se viene visualizzato un errore, ricontrollare l'impostazione relativa alla directory di lavoro nel passaggio precedente.
 
 10. Quando il programma viene eseguito correttamente, si noterà che viene avviato il download del set di dati per training e test, quindi viene eseguito il training del modello e viene infine restituita la frequenza degli errori. Si vuole ridurre la frequenza degli errori nel tempo
 
@@ -57,7 +58,7 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile
 
 11. È possibile visualizzare lo stato con TensorBoard. Fare clic con il pulsante destro de mouse sul progetto e scegliere **Run TensorBoard** (Esegui TensorBoard) quindi selezionare la directory dei log di output di TensorBoard.
 
-   ![Screenshot del Esplora soluzioni di Visual Studio con il progetto MNIST selezionato e l'opzione Esegui TensorBoard selezionata nel menu di scelta rapida.](media/create-project-repo/run-tensorboard.png)
+   ![Screenshot dell'Visual Studio Esplora soluzioni con il progetto MNIST selezionato e l'opzione Esegui TensorBoard selezionata nel menu di scelta rapida.](media/create-project-repo/run-tensorboard.png)
 
 12. Si noti che gli errori diminuiscono nel tempo e ciò indica un miglioramento della qualità.
 

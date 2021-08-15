@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, XML, Varie
-description: Informazioni su come utilizzare la pagina varie nella sezione XAML per modificare il completamento automatico e le impostazioni dello schema per l'editor XML.
+description: Informazioni su come usare la pagina Varie nella sezione XAML per modificare il completamento automatico e le impostazioni dello schema per l'editor XML.
 ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
@@ -10,16 +10,17 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: d3451a2a8d64edbf0f9000c9e58387704ed815ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: ed004ee7208ab599aab568d515af6b9de45d2e05a2fd35525e0a7bd082bf1112
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932268"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372172"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opzioni, Editor di testo, XML, Varie
 
-Usare la pagina delle opzioni **Varie** per modificare le impostazioni di completamento automatico e dello schema per l'editor XML. Per accedere alle opzioni XML varie, scegliere **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **XML**, quindi scegliere **varie**.
+Usare la pagina delle opzioni **Varie** per modificare le impostazioni di completamento automatico e dello schema per l'editor XML. Per accedere alle varie opzioni XML, scegliere Strumenti   >  **Opzioni**  >  **Editor**  >   di testo XML e quindi scegliere Varie .
 
 ## <a name="auto-insert"></a>Inserimento automatico
 
@@ -29,7 +30,7 @@ L'editor di testo aggiunge tag di chiusura durante la creazione di elementi XML.
 
 **Virgolette per gli attributi**
 
-Quando si creano attributi XML, l'editor inserisce i `="` `"` caratteri e e posiziona il cursore ( **^** ) all'interno delle virgolette. Questa casella di controllo è selezionata per impostazione predefinita.
+Durante la creazione di attributi XML, l'editor inserisce i caratteri e e posiziona il `="` `"` cursore ( **^** ) tra virgolette. Questa casella di controllo è selezionata per impostazione predefinita.
 
 **Dichiarazioni degli spazi dei nomi**
 

@@ -10,27 +10,28 @@ f1_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 29f6dd2b4a101132bc7bc19664c51fd5d4b8283e
-ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
+ms.openlocfilehash: b8406499b96e20e97577069f1b52819e6f7b148a738042553051bf02c03f220a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "111351988"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447525"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
-Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina di opzioni, scegliere **Opzioni** strumenti e quindi editor di testo  >     >  **C#**  >  **Avanzate.**
+Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina delle opzioni, scegliere **Opzioni** strumenti e quindi Editor  >   **di testo**  >  **C#**  >  **Avanzate**.
 
 > [!NOTE]
 > È possibile che non tutte le opzioni siano elencate.
 
 ## <a name="analysis"></a>Analisi
 
-- Analisi del codice in tempo reale o ambito di analisi in background
+- Analisi del codice live o ambito di analisi in background
 
-   Configurare l'ambito di analisi in background per il codice gestito. Per altre informazioni, vedere [Procedura: Configurare l'ambito di analisi del codice in tempo reale per il codice gestito.](../../code-quality/configure-live-code-analysis-scope-managed-code.md)
+   Configurare l'ambito di analisi in background per il codice gestito. Per altre informazioni, vedere [Procedura: Configurare l'ambito di](../../code-quality/configure-live-code-analysis-scope-managed-code.md)analisi del codice in tempo reale per il codice gestito.
 
 ## <a name="using-directives"></a>Direttive using
 
@@ -90,7 +91,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    ```
 
 ::: moniker range=">=vs-2019"                                              
-- Suggerire using per i tipi .NET Framework assembly
+- Suggerire l'uso di per i .NET Framework assembly
 ::: moniker-end
                                          
 ::: moniker range="vs-2017"                                                
@@ -105,7 +106,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
 - Aggiungi direttive using mancanti dopo operazione Incolla
 
-    Quando questa opzione è selezionata, le direttive vengono aggiunte automaticamente al codice quando `using` si incolla un tipo in un file.
+    Quando questa opzione è selezionata, le direttive vengono aggiunte automaticamente al codice `using` quando si incolla un tipo in un file.
 
 ## <a name="highlighting"></a>Evidenziazione
 
@@ -131,7 +132,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 
-Selezionare queste caselle di controllo per visualizzare linee verticali tratteggiate tra le parentesi graffe ( **{}** ) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
+Selezionare queste caselle di controllo per visualizzare le linee verticali tratteggiate tra le parentesi graffe ( **{}** ) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
 
 ## <a name="comments"></a>Commenti
 
@@ -141,23 +142,23 @@ Selezionare queste caselle di controllo per visualizzare linee verticali tratteg
 
 ::: moniker range=">=vs-2019"
 
-## <a name="inline-hints"></a>Hint inline
+## <a name="inline-hints"></a>Suggerimenti inline
 
 - Suggerimenti per i nomi di parametri inline 
     
-    Se questa opzione è selezionata, inserisce hint per i nomi di parametro per valori letterali, valori letterali cast e istanze di oggetti prima di ogni argomento nelle chiamate di funzione.  
+    Quando questa opzione è selezionata, inserisce hint per i nomi dei parametri per valori letterali, valori letterali cast e istanze di oggetti prima di ogni argomento nelle chiamate di funzione.  
     
-    ![Hint per i nomi di parametro inline per CSharp](media/inline-parameter-name-hints-csharp.png)
+    ![Hint per i nomi dei parametri inline per CSharp](media/inline-parameter-name-hints-csharp.png)
 
-- Hint di tipo inline 
+- Suggerimenti per il tipo inline 
     
-    Quando questa opzione è selezionata, inserisce hint di tipo per le variabili con tipi dedotto e tipi di parametri lambda.  
+    Quando questa opzione è selezionata, inserisce hint di tipo per le variabili con tipi deducibili e tipi di parametri lambda.  
     
     ![Hint di tipo inline per CSharp](media/inline-type-hints-csharp.png)
 
 ## <a name="inheritance-margin"></a>Margine di ereditarietà 
 
-- Quando questa opzione è selezionata, aggiunge icone ai margini che rappresentano le implementazioni e gli override del codice. Facendo clic sulle icone dei margini di ereditarietà verranno visualizzate le opzioni di ereditarietà che è possibile selezionare per passare.
+- Quando questa opzione è selezionata, aggiunge icone ai margini che rappresentano le implementazioni e gli override del codice. Facendo clic sulle icone del margine di ereditarietà verranno visualizzate le opzioni di ereditarietà che è possibile selezionare per passare.
 
     ![Margine di ereditarietà](media/inheritance-margin.png)
 

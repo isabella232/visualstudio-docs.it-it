@@ -1,6 +1,6 @@
 ---
-description: Recupera l'indirizzo virtuale (VA) del blocco.
-title: 'IDiaLineNumber:: get_virtualAddress | Microsoft Docs'
+description: Recupera l'indirizzo virtuale del blocco.
+title: IDiaLineNumber::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: 9048ef91-a59d-4ad8-90cb-4c13d0989241
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2882d24dec7f7f0cb5afcd93cf609680dc3a3a3d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 06c946daf178348b38c577aa9d8f50480b9001f610121320df16673bb7a52640
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148276"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392160"
 ---
 # <a name="idialinenumberget_virtualaddress"></a>IDiaLineNumber::get_virtualAddress
-Recupera l'indirizzo virtuale (VA) del blocco.
+Recupera l'indirizzo virtuale del blocco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT get_virtualAddress (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'indirizzo virtuale del blocco.
+[out] Restituisce l'indirizzo virtuale del blocco.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

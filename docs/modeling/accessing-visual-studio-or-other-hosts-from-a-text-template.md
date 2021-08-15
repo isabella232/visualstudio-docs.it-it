@@ -1,6 +1,6 @@
 ---
 title: Accesso a Visual Studio o altri host da un modello di testo
-description: Informazioni su come usare metodi e proprietà in un modello di testo esposti dall'host che esegue il modello.
+description: Informazioni su come usare metodi e proprietà in un modello di testo esposto dall'host che esegue il modello.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -8,14 +8,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cde4b2afe6d09c3958bbabe7a5669a13f8de8f2
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 355ffad6f00929fe3413af64fe94c8eab5427e7c1d33191586d66dc2cdd42403
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389124"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386043"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Accedere Visual Studio o altri host da un modello di testo
 
@@ -64,7 +65,7 @@ Questo esempio registra i messaggi quando si trasforma il modello. Se l'host Vis
 
 ## <a name="use-the-visual-studio-api"></a>Usare l'API Visual Studio
 
-Se si esegue un modello di testo in Visual Studio, è possibile usare per accedere ai servizi forniti da Visual Studio ed eventuali pacchetti o `this.Host` estensioni caricati.
+Se si esegue un modello di testo in Visual Studio, è possibile usare per accedere ai servizi forniti da Visual Studio ed eventuali pacchetti o estensioni `this.Host` caricati.
 
 Impostare hostspecific="true" ed eseguire il cast `this.Host` su <xref:System.IServiceProvider> .
 

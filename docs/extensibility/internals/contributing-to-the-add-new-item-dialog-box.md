@@ -1,6 +1,6 @@
 ---
-title: Aggiunta di un contributo alla finestra di dialogo Aggiungi nuovo elemento | Microsoft Docs
-description: Per informazioni su come contribuire alla finestra di dialogo Aggiungi nuovo elemento in Visual Studio, registrare Aggiungi modelli di elemento nella sottochiave del registro di sistema progetti.
+title: Aggiunta di contributi alla finestra di dialogo Aggiungi nuovo elemento | Microsoft Docs
+description: Informazioni su come contribuire alla finestra di dialogo Aggiungi nuovo elemento in Visual Studio registrando i modelli Aggiungi elemento nella sottochiave del Registro di sistema Projects.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,20 +10,21 @@ ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8186f25f8e1631f0e13aa7a8f43620812c4c7693
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fc3f986f47d81c0425568fbd9fab1217b257687fe7b70037a50e405d3861c0b1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057052"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121305815"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuire alla finestra di dialogo Aggiungi nuovo elemento
-Un sottotipo di progetto può fornire una nuova directory completa di elementi per la finestra di dialogo **Aggiungi nuovo elemento** registrando Aggiungi modelli di **elemento** nella sottochiave del registro di sistema **progetti** .
+Un sottotipo di progetto può fornire  una nuova directory completa  di elementi per la finestra di dialogo Aggiungi nuovo elemento registrando i modelli Aggiungi elemento nella sottochiave **del** Registro di sistema Projects.
 
-## <a name="register-add-new-item-templates"></a>Registrare i modelli di aggiunta di nuovi elementi
- Questa sezione si trova in **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** nel registro di sistema. Le voci del registro di sistema seguenti presuppongono un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetto aggregato da un sottotipo di progetto ipotetico. Di seguito sono elencate le voci per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetto.
+## <a name="register-add-new-item-templates"></a>Registrare i modelli Aggiungi nuovo elemento
+ Questa sezione si trova in **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** nel Registro di sistema. Le voci del Registro di sistema seguenti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] presuppongono un progetto aggregato da un sottotipo di progetto ipotetico. Le voci per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetto sono elencate di seguito.
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]
@@ -37,12 +38,12 @@ Un sottotipo di progetto può fornire una nuova directory completa di elementi p
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"
 ```
 
- La sottochiave **AddItemTemplates\TemplateDirs** contiene le voci del registro di sistema con il percorso della directory in cui vengono inseriti gli elementi resi disponibili nella finestra di dialogo **Aggiungi nuovo elemento** .
+ La **sottochiave AddItemTemplates\TemplateDirs** contiene le voci del Registro di sistema  con il percorso della directory in cui vengono inseriti gli elementi resi disponibili nella finestra di dialogo Aggiungi nuovo elemento.
 
- L'ambiente carica automaticamente tutti i dati **AddItemTemplates** nella sottochiave del registro di sistema dei **progetti** . Questi dati possono includere i dati per le implementazioni di progetto di base e i dati per tipi di sottotipi di progetto specifici. Ogni sottotipo di progetto viene identificato da un **GUID** del tipo di progetto. Il sottotipo di progetto può specificare che un set alternativo di modelli di **aggiunta di elementi** deve essere usato per una particolare istanza di progetto con il supporto dell' `VSHPROPID_ AddItemTemplatesGuid` enumerazione da <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> nell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> implementazione per restituire il valore GUID del sottotipo di progetto. Se la `VSHPROPID_AddItemTemplatesGuid` proprietà non è specificata, viene usato il GUID del progetto di base.
+ L'ambiente carica automaticamente tutti i **dati AddItemTemplates** nella sottochiave del Registro di sistema **Projects.** Questi dati possono includere i dati per le implementazioni del progetto di base, nonché i dati per tipi di sottotipi di progetto specifici. Ogni sottotipo di progetto è identificato da un GUID del tipo **di progetto**. Il sottotipo di progetto può  specificare che un set alternativo di modelli Aggiungi elemento deve essere usato per una particolare istanza del progetto di versione supportando l'enumerazione da nell'implementazione per restituire il valore GUID del sottotipo `VSHPROPID_ AddItemTemplatesGuid` di <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> progetto. Se la `VSHPROPID_AddItemTemplatesGuid` proprietà non viene specificata, viene usato il GUID del progetto di base.
 
- È possibile filtrare gli elementi nella finestra di dialogo **Aggiungi nuovo elemento** implementando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> interfaccia nell'oggetto Aggregator del sottotipo di progetto. Ad esempio, un sottotipo di progetto che implementa un progetto di database aggregando un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetto può filtrare gli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] elementi specifici dalla finestra di dialogo **Aggiungi nuovo elemento** implementando filtri e, a sua volta, può aggiungere elementi specifici del progetto di database supportando `VSHPROPID_ AddItemTemplatesGuid` in <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> . Per ulteriori informazioni sul filtro e l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo elemento** , vedere [aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).
+ È possibile filtrare gli elementi nella **finestra di** dialogo Aggiungi nuovo elemento implementando l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> nell'oggetto aggregatore del sottotipo di progetto. Ad esempio, un sottotipo di progetto che implementa un progetto di database aggregando un progetto può filtrare gli elementi specifici della finestra di dialogo Aggiungi nuovo elemento implementando il filtro e, a sua volta, può aggiungere elementi specifici del progetto di database supportando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in  `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> . Per altre informazioni su come filtrare e aggiungere elementi **alla** finestra di dialogo Aggiungi nuovo elemento, vedere Aggiungere elementi alla finestra di dialogo Aggiungi [nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).
 
 ## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [CATID per gli oggetti che in genere vengono usati per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [CATID per oggetti usati in genere per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

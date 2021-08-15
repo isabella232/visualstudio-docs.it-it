@@ -1,6 +1,6 @@
 ---
 title: Modifica di test di carico
-description: Informazioni sulle differenze tra scenari, insiemi di contatori e impostazioni di esecuzione, che definiscono i test di carico.
+description: Informazioni sulle differenze tra scenari, insiemi di contatori ed impostazioni di esecuzione, che definiscono i test di carico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +11,13 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: ad79be0850191cd2e7ab28aa7a30ff10d867b271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: ee12dc8fd92767f600c33c63bac98e039b76007db3ceb9b4da27e1584ab4cef2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887874"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384984"
 ---
 # <a name="edit-load-tests"></a>Modificare i test di carico
 
@@ -52,5 +53,5 @@ Per altre informazioni, vedere [Configurare le impostazioni esecuzione test di c
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizzare i risultati del test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)

@@ -1,6 +1,6 @@
 ---
-title: Debug del codice ottimizzato | Microsoft Docs
-description: Se possibile, non creare una destinazione di rilascio Win32 fino a quando non viene eseguito il debug del programma, perché l'ottimizzazione può complicare il debug. Vedere i dettagli in questo articolo.
+title: Eseguire il debug di codice ottimizzato | Microsoft Docs
+description: Se possibile, non compilare una destinazione della versione Win32 finché non viene eseguito il debug del programma, perché l'ottimizzazione può complicare il debug. Vedere i dettagli in questo articolo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -21,14 +21,15 @@ ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 19b09831aea0f7e38c7d095c1e549496569405c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fd3798169b3feb5576bf3bb01c7d8ca1371788d369a15047574b3275c344f0f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899307"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121362107"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procedura: eseguire il debug di codice ottimizzato
 
@@ -54,7 +55,7 @@ ms.locfileid: "99899307"
 
   Le variabili globali e di tipo statico vengono visualizzate sempre correttamente, analogamente al layout delle strutture. Se si dispone di un puntatore a una struttura e il valore di questo puntatore è corretto, tutte le variabili membro della struttura conterranno il valore corretto.
 
-  A causa di queste limitazioni, è opportuno eseguire il debug usando, se possibile, una versione del programma non ottimizzata. Per impostazione predefinita, l'ottimizzazione è disattivata nella configurazione di debug di un programma C++ e attivata nella configurazione di rilascio.
+  A causa di queste limitazioni, è opportuno eseguire il debug usando, se possibile, una versione del programma non ottimizzata. Per impostazione predefinita, l'ottimizzazione è disattivata nella configurazione debug di un programma C++ e attivata nella configurazione versione.
 
   Può tuttavia accadere che un bug venga individuato solo nella versione ottimizzata di un programma. In tal caso è necessario effettuare il debug del codice ottimizzato.
 
@@ -72,11 +73,11 @@ ms.locfileid: "99899307"
 
 6. Nella cartella **C++** selezionare `Optimization`.
 
-7. Nell'elenco di proprietà situato a destra cercare `Optimization`. L'impostazione accanto a essa probabilmente indica `Disabled (` [/od](/cpp/build/reference/od-disable-debug) `)` . Scegliere una delle altre opzioni ( `Minimum Size``(` [/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` , `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` , `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)` o `Custom` ).
+7. Nell'elenco di proprietà situato a destra cercare `Optimization`. L'impostazione accanto probabilmente indica `Disabled (` [/Od](/cpp/build/reference/od-disable-debug) `)` . Scegliere una delle altre opzioni ( `Minimum Size``(` [/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` , `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` , `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization)o `)` `Custom` ).
 
 8. Se si è scelto l'opzione `Custom` per `Optimization`, a questo punto è possibile impostare le opzioni per le altre proprietà presenti nell'elenco.
 
-9. Selezionare il nodo Proprietà di configurazione, C/C++, riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` alla casella di testo **Opzioni aggiuntive** .
+9. Selezionare il nodo Proprietà di configurazione, C/C++, Riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` alla casella **di** testo Opzioni aggiuntive.
 
     > [!WARNING]
     > `/Zo` richiede Visual Studio 2013 Update 3 o una versione successiva.

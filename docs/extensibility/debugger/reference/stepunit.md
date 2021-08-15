@@ -1,5 +1,5 @@
 ---
-description: Specifica l'unità di misura per l'esecuzione di istruzioni.
+description: Specifica l'unità di passaggio per l'esecuzione di istruzioni.
 title: STEPUNIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e27aa1e26c9ac80356446c59f0f7775d35328517
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 48b9a6c4b008fe44dcfcbfe0599d871bc609513c79801510369b657eaa819b9c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061485"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448546"
 ---
 # <a name="stepunit"></a>STEPUNIT
-Specifica l'unità di misura per l'esecuzione di istruzioni.
+Specifica l'unità di passaggio per l'esecuzione di istruzioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,12 +57,12 @@ enum enum_STEPUNIT {
  Passaggi per istruzione.
 
 ## <a name="remarks"></a>Commenti
- Passato come argomento al metodo [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
+ Passato come argomento al [metodo Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

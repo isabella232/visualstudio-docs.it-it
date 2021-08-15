@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 99257cfb44fa564462cd08ec754c309a63302054
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 3c59ce8a9bc615983eeee33f7fe7e3c7b62f25281894c55dc84637bf2df74397
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679807"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121353245"
 ---
 # <a name="package-manager"></a>Strumento di gestione pacchetti
 

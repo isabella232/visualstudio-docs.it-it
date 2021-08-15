@@ -1,5 +1,5 @@
 ---
-description: "IDiaSymbol:: findInlineFramesByVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato (VA)."
+description: IDiaSymbol::findInlineFramesByVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato.
 title: IDiaSymbol::findInlineFramesByVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 54295d3e-bbb6-4c10-ab9d-adcfc22b1f71
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f68e71fe983c8a6357c70c17a67836ec767e5f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 98a591428c0ae33bf3fc07bacd1da1f75bb7280bcb69665d6991aa1b52b23516
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156636"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121454815"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
-Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato (VA).
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,11 +34,11 @@ HRESULT findInlineFramesByVA (
 #### <a name="parameters"></a>Parametri
  `va`
 
-in Specifica l'indirizzo come VA.
+[in] Specifica l'indirizzo come va.
 
  `ppResult`
 
-out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recuperati.
+[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

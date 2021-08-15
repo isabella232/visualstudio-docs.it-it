@@ -1,6 +1,6 @@
 ---
-title: Esempi di Diagnostica della grafica | Microsoft Docs
-description: Vedere esempi di come eseguire il debug dei problemi di rendering nelle app basate su DirectX usando Visual Studio Diagnostica della grafica.
+title: Diagnostica della grafica esempi | Microsoft Docs
+description: Visualizzare esempi di come eseguire il debug dei problemi di rendering nelle app basate su DirectX usando Visual Studio Diagnostica della grafica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ddb9648c385346b7ff2cab2c082c5249317a3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 412f8dcae25b0cefda9a96695f418306c1d66bb8741963a4215d0f27a4d3a0c7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879202"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121454255"
 ---
 # <a name="graphics-diagnostics-examples"></a>Esempi di diagnostica grafica
 Questi esempi mostrano come eseguire il debug dei problemi di rendering nelle app basate su DirectX usando la diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -28,7 +29,7 @@ Questi esempi mostrano come eseguire il debug dei problemi di rendering nelle ap
 - [Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice](walkthrough-capturing-graphics-information-programmatically.md)
 
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>Usare la diagnostica della grafica con un dispositivo basato su ARM
- È possibile usare la diagnostica della grafica per eseguire il debug della propria app Direct3D in un dispositivo basato su ARM tramite debug remoto. Per altre informazioni [, vedere Procedura: usare diagnostica della grafica con un dispositivo ARM](graphics-diagnostics-examples.md).
+ È possibile usare la diagnostica della grafica per eseguire il debug della propria app Direct3D in un dispositivo basato su ARM tramite debug remoto. Per altre informazioni, [vedere Procedura: Usare Diagnostica della grafica con un dispositivo ARM.](graphics-diagnostics-examples.md)
 
 ## <a name="playing-back-graphics-information"></a>Riproduzione di informazioni grafiche
  Dopo aver acquisito le informazioni grafiche da un'app in esecuzione, è possibile riprodurre gli eventi acquisiti per diagnosticare problemi di rendering. Per riprodurre, è possibile usare il computer di sviluppo oppure un computer remoto o un dispositivo connesso. Per altre informazioni, vedere [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](how-to-change-the-graphics-diagnostics-playback-machine.md).

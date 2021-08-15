@@ -1,6 +1,6 @@
 ---
 title: Scelta della directory di installazione per un pacchetto VSPackage | Microsoft Docs
-description: Informazioni su come scegliere la directory di installazione per un pacchetto VSPackage e i relativi file di supporto, usando fattori quali, ad esempio, se sono gestiti o non gestiti.
+description: Informazioni su come scegliere la directory di installazione per un pacchetto VSPackage e i relativi file di supporto, usando fattori come la gestione o l'non gestione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,58 +10,59 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6442a8475c862693b851be783ae85bbb0a2e90af
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bde953b023b91c3c3e3b06fb3d50770851352da9d441b6277406ed91bbc392a5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082114"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359728"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Scegliere la directory di installazione per un pacchetto VSPackage
-Un pacchetto VSPackage e i relativi file di supporto devono trovarsi nel file system di un utente. Il percorso varia a seconda che il pacchetto VSPackage sia gestito o non gestito, lo schema di controllo delle versioni side-by-side e la scelta dell'utente.
+Un VSPackage e i relativi file di supporto devono essere nel file system. Il percorso dipende dal fatto che il pacchetto VSPackage sia gestito o non gestito, dallo schema di controllo delle versioni side-by-side e dalla scelta dell'utente.
 
-## <a name="unmanaged-vspackages"></a>Pacchetti VSPackage non gestiti
- Un pacchetto VSPackage non gestito è un server COM che può essere installato in qualsiasi percorso. Le informazioni di registrazione devono riflettere accuratamente la relativa posizione. L'interfaccia utente del programma di installazione deve fornire un percorso predefinito come sottodirectory del valore della `ProgramFilesFolder` proprietà Windows Installer. Ad esempio:
+## <a name="unmanaged-vspackages"></a>VSPackage non gestiti
+ Un VSPackage non gestito è un server COM che può essere installato in qualsiasi posizione. Le informazioni di registrazione devono riflettere in modo accurato la posizione. L'interfaccia utente del programma di installazione deve fornire un percorso predefinito come sottodirectory del valore della proprietà `ProgramFilesFolder` Windows Installer. Esempio:
 
-*&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \v1.0\\*
+*&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \V1.0\\*
 
- L'utente deve essere autorizzato a modificare la directory predefinita per consentire agli utenti che conservano una partizione di avvio ridotta e preferiscono installare applicazioni e strumenti in un altro volume.
+ All'utente deve essere consentito modificare la directory predefinita per consentire agli utenti che mantengono una partizione di avvio di piccole dimensioni e preferiscono installare applicazioni e strumenti in un altro volume.
 
- Se lo schema side-by-side usa un pacchetto VSPackage con versione, è possibile usare le sottodirectory per archiviare versioni diverse. Ad esempio:
+ Se lo schema side-by-side usa un VSPackage con versione, è possibile usare le sottodirectory per archiviare versioni diverse. Esempio:
 
- *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ v 1.0 \\ 2002\\*
+ *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ V1.0 \\ 2002\\*
 
- *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ v 1.0 \\ 2003\\*
+ *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ V1.0 \\ 2003\\*
 
- *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ v 1.0 \\ 2005\\*
+ *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ V1.0 \\ 2005\\*
 
 ## <a name="managed-vspackages"></a>VSPackage gestiti
- I pacchetti VSPackage gestiti possono essere installati anche in qualsiasi posizione. Tuttavia, è consigliabile installarli sempre nella Global Assembly Cache (GAC) per ridurre i tempi di caricamento degli assembly. Poiché i pacchetti VSPackage gestiti sono sempre assembly con nome sicuro, l'installazione nella GAC significa che la verifica della firma con nome sicuro accetta solo al momento dell'installazione. Gli assembly con nome sicuro installati altrove nel file system devono avere le firme verificate ogni volta che vengono caricati. Quando si installa VSPackage gestiti nella GAC, usare l'opzione **/assembly** dello strumento regpkg per scrivere le voci del registro di sistema che puntano al nome sicuro dell'assembly.
+ I pacchetti VSPackage gestiti possono anche essere installati in qualsiasi posizione. Tuttavia, è consigliabile installarli sempre nella Global Assembly Cache (GAC) per ridurre i tempi di caricamento degli assembly. Poiché i pacchetti VSPackage gestiti sono sempre assembly con nome sicuro, installarli nella Global Assembly Cache significa che la verifica della firma con nome sicuro richiede solo in fase di installazione. Gli assembly con nome sicuro installati altrove nel file system devono avere le firme verificate ogni volta che vengono caricati. Quando si installano VSPackage gestiti nella GaC, usare l'opzione **/assembly** dello strumento regpkg per scrivere voci del Registro di sistema che puntano al nome sicuro dell'assembly.
 
- Se si installa VSPackage gestiti in un percorso diverso dalla GAC, seguire le indicazioni precedenti fornite per i pacchetti VSPackage non gestiti per la scelta delle gerarchie di directory. Usare l'opzione **/codebase** dello strumento regpkg per scrivere voci del registro di sistema che puntano al percorso dell'assembly VSPackage.
+ Se si installano VSPackage gestiti in un percorso diverso dalla GaC, seguire i consigli precedenti per i VSPackage non gestiti per la scelta delle gerarchie di directory. Usare l'opzione **/codebase** dello strumento regpkg per scrivere voci del Registro di sistema che puntano al percorso dell'assembly VSPackage.
 
- Per altre informazioni, vedere [registrare e annullare la registrazione di pacchetti VSPackage](../../extensibility/registering-and-unregistering-vspackages.md).
+ Per altre informazioni, vedere [Registrare e annullare la registrazione di VSPackage.](../../extensibility/registering-and-unregistering-vspackages.md)
 
 ## <a name="satellite-dlls"></a>DLL satellite
- Per convenzione, le DLL satellite VSPackage, che contengono risorse per determinate impostazioni locali, si trovano in sottodirectory della directory *VSPackage* . Le sottodirectory corrispondono ai valori dell'ID delle impostazioni locali (LCID).
+ Per convenzione, le DLL satellite VSPackage, che contengono risorse per determinate impostazioni locali, si trovano nelle sottodirectory della directory *VSPackage.* Le sottodirectory corrispondono ai valori dell'ID delle impostazioni locali (LCID).
 
- L'articolo [gestire i pacchetti VSPackage](../../extensibility/managing-vspackages.md) indica che le voci del registro di sistema controllano dove [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Cerca effettivamente la DLL satellite del pacchetto VSPackage. Tuttavia, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta di caricare una DLL satellite in una sottodirectory denominata per un valore LCID, nell'ordine seguente:
+ [L'articolo Manage VSPackages](../../extensibility/managing-vspackages.md) (Gestisci VSPackages) indica che le voci del Registro di sistema controllano dove [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] effettivamente cerca la DLL satellite di un VSPackage. Tenta tuttavia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di caricare una DLL satellite in una sottodirectory denominata per un valore LCID, nell'ordine seguente:
 
-1. LCID predefinito (LCID di Visual Studio, ad esempio *\ 1033* per l'inglese)
+1. LCID predefinito (Visual Studio LCID, ad esempio *\1033 per* l'inglese)
 
-2. LCID predefinito con la lingua predefinita.
+2. LCID predefinito con la sottolingua predefinita.
 
 3. LCID predefinito del sistema.
 
-4. LCID predefinito del sistema con la lingua predefinita.
+4. LCID predefinito del sistema con la sottolingua predefinita.
 
-5. Inglese Stati Uniti (*. \ 1033* o *.\0x409*).
+5. Inglese Stati Uniti (*.\1033* o *.\0x409*).
 
-Se la DLL del pacchetto VSPackage include risorse e i punti di ingresso del registro di sistema **SatelliteDll\DllName** , [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta di caricarli nell'ordine precedente.
+Se la DLL VSPackage include risorse e la voce del Registro di sistema **SatelliteDll\DllName** vi punta, tenta di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caricarle nell'ordine precedente.
 
 ## <a name="see-also"></a>Vedi anche
-- [Scegliere tra VSPackage condivisi e con versione](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [Scegliere tra vspackage condivisi e con controllo delle versioni](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Gestire VSPackage](../../extensibility/managing-vspackages.md)
-- [Gestire la registrazione del pacchetto](/previous-versions/bb166783(v=vs.100))
+- [Gestire la registrazione dei pacchetti](/previous-versions/bb166783(v=vs.100))

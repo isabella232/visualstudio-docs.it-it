@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: utilizzare elementi colorabili Built-In | Microsoft Docs'
-description: Informazioni su come usare gli elementi colorabili incorporati in Visual Studio Integrated Development Environment (IDE) per il servizio di linguaggio.
+title: 'Procedura: Usare elementi Built-In colorabili | Microsoft Docs'
+description: Informazioni su come usare gli elementi colorabili predefiniti nel Visual Studio di sviluppo integrato (IDE) per il servizio di linguaggio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,28 +11,29 @@ ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253c108fe83eaf44f945f546bd64dd6529de1dd6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ea6982d854380b8722e395db11f2ac5099a9bc26dd972ea0730cfbfeef586303
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086079"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388669"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Procedura: utilizzare elementi colorabili incorporati
-Prima di utilizzare gli elementi colorabili incorporati, è necessario innanzitutto segnalare all'Integrated Development Environment (IDE) che non si forniscono elementi colorabili personalizzati, che in questo caso sarebbero <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> oggetti. A tale scopo, impostare una voce del registro di sistema per il servizio di linguaggio.
+# <a name="how-to-use-built-in-colorable-items"></a>Procedura: Usare elementi colorabili predefiniti
+Prima di usare gli elementi colorabili predefiniti, è necessario segnalare all'ambiente di sviluppo integrato (IDE) di non fornire elementi colorabili personalizzati, che in questo caso sarebbero oggetti <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> . A tale scopo, impostare una voce del Registro di sistema per il servizio di linguaggio.
 
-## <a name="to-use-built-in-colorable-items"></a>Per utilizzare elementi colorabili incorporati
+## <a name="to-use-built-in-colorable-items"></a>Per usare elementi colorabili predefiniti
 
-1. In **HKEY_LOCAL_MACHINE\VisualStudio\\<X. Y> \languages\language Services \\<\> nome della lingua**, dove \<X.Y> è una versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e \<Language Name> è il nome della lingua, creare un valore di voce del registro di sistema DWORD denominato **RequestStockColors**.
+1. In **HKEY_LOCAL_MACHINE\VisualStudio\\<X.Y>\Languages\Language Services \\<Language Name \>**, dove è una versione di e è il nome della lingua, creare un valore di voce del Registro di sistema \<X.Y> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \<Language Name> DWORD denominato **RequestStockColors**.
 
-2. Impostare il valore della voce del registro di sistema **RequestStockColors** su *1*.
+2. Impostare il valore della voce del Registro di sistema **RequestStockColors** su *1.*
 
-    Dopo aver creato la voce del registro di sistema, il metodo del coloratore <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> può usare i membri dell' <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> enumerazione per compilare la matrice di attributi di colore per l'uso da parte dell'editor.
+    Dopo aver creato la voce del Registro di sistema, il metodo del colorizer può usare i membri dell'enumerazione per compilare la matrice di attributi di colore da usare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> dall'editor.
 
    > [!NOTE]
-   > Non impostare questa voce del registro di sistema se si forniscono elementi colorabili personalizzati. Per altre informazioni, vedere [elementi colorabili personalizzati](../../extensibility/internals/custom-colorable-items.md).
+   > Non impostare questa voce del Registro di sistema se si forniscono elementi colorabili personalizzati. Per altre informazioni, vedere [Elementi colorabili personalizzati.](../../extensibility/internals/custom-colorable-items.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Colorazione della sintassi negli editor personalizzati](../../extensibility/syntax-coloring-in-custom-editors.md)

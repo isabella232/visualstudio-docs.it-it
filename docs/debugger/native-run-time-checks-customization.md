@@ -1,6 +1,6 @@
 ---
-title: Personalizzazione del controllo Run-Time nativo | Microsoft Docs
-description: 'Informazioni su come personalizzare il controllo in fase di esecuzione, tra cui: specifica di una destinazione del messaggio, scrittura di una funzione di segnalazione degli errori ed esecuzione di query per le informazioni sugli errori.'
+title: Controlli Run-Time controlli di personalizzazione | Microsoft Docs
+description: Informazioni su come personalizzare il controllo in fase di esecuzione, tra cui specificare una destinazione del messaggio, scrivere una funzione di segnalazione degli errori ed eseguire query per ottenere informazioni sugli errori.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,17 +22,18 @@ ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33c3da5387c67e14ced99918273800709b3b67b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 534e2d8616fb70ca0089cc2efa90c19ac97c62b7860723f64784549620111a85
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913121"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121239610"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalizzazione dei controlli runtime nativi
-Quando si esegue la compilazione con **/RTC** (controlli Runtime) o si usa il `runtime_checks` pragma, la libreria di runtime del linguaggio C fornisce controlli run-time nativi. In alcuni casi può essere necessario personalizzare il controllo runtime:
+Quando si esegue la compilazione con **/RTC** (controlli di runtime) o si usa il pragma , la libreria di `runtime_checks` runtime C fornisce controlli runtime nativi. In alcuni casi può essere necessario personalizzare il controllo runtime:
 
 - Per indirizzare i messaggi del controllo runtime a un file o una destinazione diversa da quella predefinita.
 
@@ -42,7 +43,7 @@ Quando si esegue la compilazione con **/RTC** (controlli Runtime) o si usa il `r
 
   Per personalizzare il controllo degli errori di runtime, è possibile utilizzare uno degli accorgimenti seguenti:
 
-- Scrivere una funzione per la segnalazione degli errori di runtime. Per altre informazioni, vedere [procedura: scrivere una funzione di segnalazione errori Run-Time](../debugger/how-to-write-a-run-time-error-reporting-function.md).
+- Scrivere una funzione per la segnalazione degli errori di runtime. Per altre informazioni, vedere [Procedura: Scrivere una funzione Run-Time segnalazione errori](../debugger/how-to-write-a-run-time-error-reporting-function.md).
 
 - Personalizzare la destinazione dei messaggi di errore.
 
@@ -54,9 +55,9 @@ Quando si esegue la compilazione con **/RTC** (controlli Runtime) o si usa il `r
  Se si utilizza una funzione di segnalazione degli errori personalizzata, utilizzare `_RTC_SetErrorType` per associare un tipo di report a ciascun errore.
 
 ## <a name="query-for-information-about-run-time-checks"></a>Eseguire una query per ottenere informazioni sui controlli runtime
- `_RTC_NumErrors` restituisce il numero di tipi di errore rilevati dai controlli degli errori di runtime. Per ottenere una breve descrizione di ciascun errore, è possibile creare un ciclo da 0 al valore restituito da `_RTC_NumErrors` passando il valore di iterazione a `_RTC_GetErrDesc` in ciascun ciclo. Per ulteriori informazioni, vedere [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) e [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
+ `_RTC_NumErrors` restituisce il numero di tipi di errore rilevati dai controlli degli errori di runtime. Per ottenere una breve descrizione di ciascun errore, è possibile creare un ciclo da 0 al valore restituito da `_RTC_NumErrors` passando il valore di iterazione a `_RTC_GetErrDesc` in ciascun ciclo. Per altre informazioni, vedere [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) e [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: utilizzare i controlli di Run-Time nativi](../debugger/how-to-use-native-run-time-checks.md)
+- [Procedura: Usare controlli Run-Time nativi](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

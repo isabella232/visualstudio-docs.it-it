@@ -10,17 +10,18 @@ ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 372984ae42e4bfb07d38dabae83cf1a283be81e4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ce0250a3644859953bef3f12f0a380546a0eb2aaf94139029f2ba14f0b4760e5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091994"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121307440"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Precarica i moduli designati dal provider di simboli specificato.
@@ -41,16 +42,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>Parametri
 `pSym`\
-in Provider di simboli per il quale verranno precaricati i moduli.
+[in] Provider di simboli per il quale verranno precaricati i moduli.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-Questo metodo facoltativo viene usato quando si esegue un attacco di hosting-Process. Consente ad EE di "scaldarsi" come parte dell'associazione.
+Questo metodo facoltativo viene usato quando si esegue un collegamento del processo di hosting. Offre al edizione Enterprise la possibilità di "riscaldamento" come parte del collegamento.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **ExpressionEvaluatorPackage** che espone l'interfaccia [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto ExpressionEvaluatorPackage** che espone l'interfaccia [IDebugExpressionEvaluator2.](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

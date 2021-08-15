@@ -11,14 +11,15 @@ ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0526135f706a42c622617a069e501297570e3b49
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 96eaaea45afc5b61334d8a1701c02768d3176bc5707cdd931dd6b94ab67337ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899121"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452537"
 ---
 # <a name="port-suppliers"></a>Fornitori di porte
 Nell'architettura del debugger, un *fornitore di porte:*
@@ -33,7 +34,7 @@ Nell'architettura del debugger, un *fornitore di porte:*
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce un fornitore di porte predefinito e una porta predefinita. Se è necessario implementazione di una porta personalizzata, è necessario anche un fornitore di porte personalizzato per fornire tali porte personalizzate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Ports](../../extensibility/debugger/ports.md)
 - [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)

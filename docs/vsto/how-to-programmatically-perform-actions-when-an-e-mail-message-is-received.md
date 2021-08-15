@@ -1,6 +1,6 @@
 ---
 title: Eseguire azioni a livello di codice se viene ricevuto un messaggio di posta elettronica
-description: Informazioni su come usare Visual Studio eseguire azioni personalizzate a livello di codice se viene ricevuto un messaggio di posta elettronica in Microsoft Outlook.
+description: Informazioni su come usare le Visual Studio per eseguire azioni personalizzate a livello di codice se viene ricevuto un messaggio di posta elettronica in Microsoft Outlook.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,17 +16,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 72cedcf25e54ca10c6a4c73c7b995c234f2cd137
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 74eb8e8e210fc382ad21b3b52c02e4ef859630766648e3c6932bae90d226e743
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827241"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121285621"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Procedura: Eseguire azioni a livello di codice quando viene ricevuto un messaggio di posta elettronica
-  In questo esempio vengono eseguite azioni personalizzate quando l'utente riceve un messaggio di posta elettronica.
+  Questo esempio esegue azioni personalizzate quando l'utente riceve un messaggio di posta elettronica.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -35,6 +36,6 @@ ms.locfileid: "107827241"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_PerformActions/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md)
-- [Usare elementi di posta elettronica](../vsto/working-with-mail-items.md)
-- [Introduzione alla programmazione dei componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Procedura: Creare gestori eventi in Office progetti](../vsto/how-to-create-event-handlers-in-office-projects.md)
+- [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
+- [Introduzione alla programmazione VSTO componenti aggiuntivi](../vsto/getting-started-programming-vsto-add-ins.md)

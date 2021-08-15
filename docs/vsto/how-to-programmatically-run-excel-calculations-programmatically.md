@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Eseguire calcoli di Excel a livello di codice'
-description: Informazioni su come usare le Visual Studio per eseguire calcoli a livello di codice in una cartella di lavoro di Microsoft Excel.
+description: Informazioni su come usare le Visual Studio per eseguire calcoli a livello di codice in una cartella Microsoft Excel lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9fdc9cbc1966ac0fd862b795d66c7004f5089499
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 234457e235a78281858a45a202fdeff9ff781a849fef5a5757ad505f368cd023
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107823964"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384236"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Procedura: Eseguire calcoli di Excel a livello di codice
-  Si usa un processo simile per eseguire calcoli in un controllo o in <xref:Microsoft.Office.Tools.Excel.NamedRange> un oggetto intervallo nativo di Excel.
+  Si usa un processo simile per eseguire calcoli in un controllo o in un <xref:Microsoft.Office.Tools.Excel.NamedRange> oggetto intervallo Excel nativo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -46,7 +47,7 @@ ms.locfileid: "107823964"
 
 ## <a name="run-calculations-in-a-native-excel-range"></a>Eseguire calcoli in un intervallo di Excel nativo
 
-### <a name="to-run-calculations-in-a-native-excel-range"></a>Per eseguire calcoli in un intervallo di Excel nativo
+### <a name="to-run-calculations-in-a-native-excel-range"></a>Per eseguire calcoli in un intervallo Excel nativo
 
 1. Creare l'intervallo denominato.
 
@@ -61,4 +62,4 @@ ms.locfileid: "107823964"
 ## <a name="see-also"></a>Vedi anche
 - [Usare gli intervalli](../vsto/working-with-ranges.md)
 - [Controllo NamedRange](../vsto/namedrange-control.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 4f7f3d1567972c3841af6deb37677a7e01cdb825
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6966a83ececf747271e2135508864de0be1a77a81eff584cab64dcde52c75f24
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985178"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121439627"
 ---
 # <a name="task-comments"></a>Commenti dell'attività
 
@@ -18,7 +18,7 @@ Quando si scrive codice, è prassi standard commentare esplicitamente il codice 
 
 ![Preferenze dell'elenco attività](media/source-editor-image10.png)
 
-Quando si aggiunge un nuovo commento di attività, includere la parola chiave dell'attività. Ad esempio:
+Quando si aggiunge un nuovo commento di attività, includere la parola chiave dell'attività. Esempio:
 
 ```csharp
 //TODO: Finish this for all properties.
@@ -28,6 +28,6 @@ Visual Studio per Mac attira l'attenzione su questi marcatori evidenziandoli nel
 
 ![Riquadro Elenco attività](media/source-editor-image11.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'elenco attività (Visual Studio in Windows)](/visualstudio/ide/using-the-task-list)

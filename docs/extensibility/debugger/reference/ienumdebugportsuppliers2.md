@@ -11,14 +11,15 @@ ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82841ab033091d2fd3c88c64dfb81d1f5d2e2468
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d01793a1ed7ac11869063e4183a0e542c58637613d1595d7c13462f6a4fb82ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073443"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377314"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Questa interfaccia enumera i fornitori di porte.
@@ -36,7 +37,7 @@ IEnumDebugPortSuppliers2 : IUnknown
  Chiamare [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) per ottenere un elenco di fornitori di porte.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IEnumDebugPortSuppliers2` .
+ Nella tabella seguente vengono illustrati i metodi di `IEnumDebugPortSuppliers2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -47,12 +48,12 @@ IEnumDebugPortSuppliers2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Ottiene il numero di fornitori di porte in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- In genere non è necessario che un motore di debug ottenga questa interfaccia.
+ Un motore di debug in genere non deve ottenere questa interfaccia.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

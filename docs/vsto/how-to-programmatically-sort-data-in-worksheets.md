@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 024bf53b7fc7f3a6e32e10b7107c9a62d8c40cee
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 073ad50f3bc5bc135e6fd7f22afcbaac721f8d99e08c8862816672387c111b32
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825017"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440682"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procedura: Ordinare i dati nei fogli di lavoro a livello di codice
   È possibile ordinare i dati contenuti negli elenchi e negli intervalli del foglio di lavoro in fase di esecuzione. Il codice seguente ordina un intervallo a più colonne denominato `Fruits` in base ai dati nella prima colonna e quindi ai dati nella seconda colonna.
@@ -47,7 +48,7 @@ ms.locfileid: "107825017"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet79":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet79":::
 
-## <a name="sort-data-in-a-vsto-add-in"></a>Ordinare i dati in un componente aggiuntivo VSTO
+## <a name="sort-data-in-a-vsto-add-in"></a>Ordinare i dati in VSTO componente aggiuntivo
 
 ### <a name="to-sort-data-in-a-native-range"></a>Per ordinare i dati in un intervallo nativo
 
@@ -65,7 +66,7 @@ ms.locfileid: "107825017"
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Riempire automaticamente gli intervalli con dati che cambiano in modo incrementale](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
+- [Procedura: Riempire automaticamente gli intervalli con dati a modifica incrementale](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
 - [Procedura: Fare riferimento a intervalli di fogli di lavoro nel codice a livello di codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [Procedura: Applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Controllo NamedRange](../vsto/namedrange-control.md)

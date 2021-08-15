@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0696c99e78ee1b6a7acd174e5463bbdc514fe160
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: fb87be6aefda46033c13911be0d1781ceaa8999bf26d7111204cb4a9dd7fa0d1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828566"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121268092"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Procedura: Copiare dati e formattazione tra fogli di lavoro a livello di codice
   È possibile copiare dati da un intervallo di un foglio in tutti gli altri fogli di una cartella di lavoro usando il <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> metodo . Specificare un intervallo e se copiare i dati, la formattazione o entrambi.
@@ -41,4 +42,4 @@ ms.locfileid: "107828566"
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
 - [Procedura: Aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [Procedura: Modificare la formattazione a livello di codice nelle righe del foglio di lavoro contenenti celle selezionate](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
