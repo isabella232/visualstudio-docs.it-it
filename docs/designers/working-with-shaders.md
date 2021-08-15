@@ -1,6 +1,6 @@
 ---
 title: Utilizzo degli shader
-description: Informazioni su come progettare effetti shader personalizzati usando la finestra di progettazione shader basata su grafico in Visual Studio. È possibile usare gli shader nel gioco o nell'app basata su DirectX.
+description: Informazioni su come progettare effetti shader personalizzati usando la finestra di progettazione shader basata su grafo in Visual Studio. È possibile usare gli shader nel gioco o nell'app basata su DirectX.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: bff5aee4337a464498fc4ac027eb05b2da912b61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbf23b1e57e2677fba142b1711b74437239e2f63c24b1209b2b832e9aa35c81c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844892"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121239480"
 ---
 # <a name="work-with-shaders"></a>Usare gli shader
 
@@ -41,4 +42,4 @@ Poiché DGSL è compatibile con DGML, è possibile usare gli strumenti progettat
 |-----------|-----------------|
 |[Finestra di progettazione shader](../designers/shader-designer.md)|Descrive come usare la progettazione shader di Visual Studio per lavorare con gli shader.|
 |[Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)|Vengono descritti i tipi di nodi della finestra di progettazione shader che è possibile usare per realizzare effetti grafici.|
-|[Esempi di progettazione shader](../designers/how-to-create-a-basic-color-shader.md)|Vengono forniti collegamenti ad argomenti che illustrano come usare la finestra di progettazione shader per realizzare comuni effetti di grafica.|
+|[Esempi di finestra di progettazione shader](../designers/how-to-create-a-basic-color-shader.md)|Vengono forniti collegamenti ad argomenti che illustrano come usare la finestra di progettazione shader per realizzare comuni effetti di grafica.|

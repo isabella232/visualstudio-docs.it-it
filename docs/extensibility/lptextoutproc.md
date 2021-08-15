@@ -16,14 +16,15 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c313375efe8afd17dd5d76f55de4cdaf016bab40
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: b266ea06ce79d0028e289210c7bfc11c62ea5ccde0f5050e246b38a4f06f5b16
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903099"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321194"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -60,7 +61,7 @@ Tipo di messaggio. Nella tabella seguente sono elencati i valori supportati per 
 |`SCC_MSG_STOPCANCEL`|Arresta la visualizzazione di **un pulsante** Annulla.|
 |`SCC_MSG_BACKGROUND_IS_CANCELLED`|Chiede all'IDE se l'operazione in background deve essere annullata: l'IDE restituisce se l'operazione è stata `SCC_MSG_RTN_CANCEL` annullata; in caso contrario, restituisce `SCC_MSG_RTN_OK` . Viene `display_string` eseguito il cast del parametro come struttura [SccMsgDataIsCancelled,](#LinkSccMsgDataIsCancelled) fornita dal plug-in del controllo del codice sorgente.|
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Indica all'IDE un file prima che venga recuperato dal controllo della versione. Viene eseguito il cast del parametro come `display_string` [struttura SccMsgDataOnBeforeGetFile,](#LinkSccMsgDataOnBeforeGetFile) fornita dal plug-in del controllo del codice sorgente.|
-|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Indica all'IDE un file dopo che è stato recuperato dal controllo della versione. Viene `display_string` eseguito il cast del parametro come struttura [SccMsgDataOnAfterGetFile,](#LinkSccMsgDataOnAfterGetFile) fornita dal plug-in del controllo del codice sorgente.|
+|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Indica all'IDE un file dopo che è stato recuperato dal controllo della versione. Viene eseguito il cast del parametro come `display_string` [struttura SccMsgDataOnAfterGetFile,](#LinkSccMsgDataOnAfterGetFile) fornita dal plug-in del controllo del codice sorgente.|
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Indica all'IDE lo stato corrente di un'operazione in background. Viene `display_string` eseguito il cast del parametro come struttura [SccMsgDataOnMessage,](#LinkSccMsgDataOnMessage) fornita dal plug-in del controllo del codice sorgente.|
 
 ## <a name="return-value"></a>Valore restituito
@@ -121,7 +122,7 @@ typedef struct {
  Questa struttura viene inviata con il `SCC_MSG_BACKGROUND_ON_MESSAGE` messaggio. Viene usato per comunicare lo stato corrente di un'operazione in background. Lo stato è espresso come stringa da visualizzare nell'IDE e indica la gravità del messaggio ( per un messaggio di errore, per un avviso o per un messaggio `bIsError` `TRUE` `FALSE` informativo). Viene fornito anche l'ID dell'operazione in background che invia lo stato.
 
 ## <a name="code-example"></a>Esempio di codice
- Di seguito è riportato un breve esempio di `LPTEXTOUTPROC` chiamata a per inviare il `SCC_MSG_BACKGROUND_ON_MESSAGE` messaggio, che mostra come eseguire il cast della struttura per la chiamata.
+ Di seguito è riportato un breve esempio di `LPTEXTOUTPROC` chiamata a per inviare il messaggio, che mostra come eseguire il cast della struttura per la `SCC_MSG_BACKGROUND_ON_MESSAGE` chiamata.
 
 ```cpp
 LONG SendStatusMessage(
@@ -142,6 +143,6 @@ LONG SendStatusMessage(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

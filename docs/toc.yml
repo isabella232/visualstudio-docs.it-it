@@ -168,7 +168,7 @@
   items:
     - name: C++ >>
       href: /cpp/get-started/tutorial-console-cpp
-    - name: C#   >>
+    - name: C#  >>
       href: get-started/csharp/
     - name: Visual Basic  >>
       href: get-started/visual-basic/
@@ -194,9 +194,9 @@
           href: ide/create-new-project.md
         - name: Usare soluzioni e progetti
           href: ide/creating-solutions-and-projects.md
-        - name: Aprire un progetto da un repo in Visual Studio 2017
+        - name: Aprire un progetto da un Visual Studio 2017
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Aprire un progetto da un repo in Visual Studio 2019
+        - name: Aprire un progetto da un Visual Studio 2019
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Portabilità, migrazione e aggiornamento dei progetti'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -732,6 +732,12 @@
               href: ide/fsharp-visual-studio.md
             - name: Versioni precedenti di .NET come destinazione
               href: ide/fsharp-target-older-dotnet-versions.md
+        - name: Python >>
+          href: python/index.yml
+        - name: JavaScript/TypeScript >>
+          href: javascript/index.yml
+        - name: Azure >>
+          href: azure/index.yml
         - name: Asset grafici 3D
           items:
             - name: Usare risorse 3D per giochi e app
@@ -1434,21 +1440,13 @@
     - name: Novità della documentazione
       href: ide/whats-new-visual-studio-docs.md
     - name: Note sulla versione
-      items:
-        - name: Frequenza di rilascio
-          href: /visualstudio/productinfo/release-rhythm/
-        - name: note Visual Studio 2022
-          href: /visualstudio/releases/2022/release-notes-preview/
-        - name: Visual Studio 2019
-          href: /visualstudio/releases/2019/release-notes/
-        - name: note Visual Studio 2017
-          href: /visualstudio/releasenotes/vs2017-relnotes/
-        - name: Visual Studio 2015
-          href: vs-2015-archive.md
-        - name: Condizioni di licenza
-          href: 'https://visualstudio.microsoft.com/license-terms/'
-        - name: Ciclo di vita del supporto e manutenzione
-          href: /visualstudio/productinfo/vs-servicing-vs/
+      href: /visualstudio/releases/
+    - name: Frequenza di rilascio
+      href: /visualstudio/productinfo/release-rhythm/
+    - name: Condizioni di licenza
+      href: 'https://visualstudio.microsoft.com/license-terms/'
+    - name: Ciclo di vita del supporto e manutenzione
+      href: /visualstudio/productinfo/vs-servicing-vs/
     - name: Miglioramento dell'esperienza utente
       items:
         - name: Informazioni sul programma
@@ -1458,7 +1456,7 @@
           href: ide/diagnostic-data-collection.md
     - name: Esperienze connesse in Visual Studio
       href: ide/reference/connected-experiences.md
-    - name: Risoluzione degli errori IDE
+    - name: Risoluzione dei problemi relativi agli errori IDE
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: Invia commenti
   items:

@@ -1,6 +1,6 @@
 ---
 title: Aggiungere insiemi di contatori personalizzati per i test di carico
-description: Quando si crea un test di carico utilizzando la Creazione guidata test di carico, è necessario aggiungere un insieme di contatori iniziale. Informazioni su come aggiungere insiemi di contatori personalizzati usando Editor test di carico.
+description: Quando si crea un test di carico utilizzando la Creazione guidata test di carico, è necessario aggiungere un insieme di contatori iniziale. Informazioni su come aggiungere set di contatori personalizzati usando Editor test di carico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -12,12 +12,13 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: ce34a4e30c9d612bd37afb61c354b7a4b5df7aed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 6675a0c4e4c4de6c3c0ad664c75330d19395ca69ed51c4d60caa12c08aa873ce
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966929"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121331676"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Procedura: Aggiungere insiemi di contatori personalizzati usando l'Editor test di carico
 
@@ -43,7 +44,7 @@ I contatori vengono gestiti nell'**Editor test di carico**. Gli insiemi di conta
     > [!NOTE]
     > All'insieme di contatori viene assegnato un nome predefinito, ad esempio **Custom1**. È possibile modificare il nome usando la finestra **Proprietà**. Premere **F4** per visualizzare la finestra **Proprietà**.
 
-4. Per aggiungere contatori all'insieme di contatori personalizzati, fare clic con il pulsante destro del mouse sul nuovo insieme di contatori e scegliere **Aggiungi contatori**. Per altre informazioni su come aggiungere i contatori, vedere [procedura: aggiungere contatori agli insiemi di contatori](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4. Per aggiungere contatori all'insieme di contatori personalizzati, fare clic con il pulsante destro del mouse sul nuovo insieme di contatori e scegliere **Aggiungi contatori**. Per altre informazioni su come aggiungere contatori, vedere [Procedura: Aggiungere contatori agli insiemi di contatori](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Per aggiungere un insieme di contatori personalizzati è anche possibile fare clic con il pulsante destro del mouse su un insieme esistente, scegliere Copia e quindi incollarlo nel nodo degli insiemi di contatori. I contatori aggiuntivi che vengono copiati ma non sono necessari possono essere eliminati. È possibile modificare il nome del nuovo insieme di contatori usando la finestra **Proprietà**.

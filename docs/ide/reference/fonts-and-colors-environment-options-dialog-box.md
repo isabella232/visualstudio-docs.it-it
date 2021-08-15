@@ -1,6 +1,6 @@
 ---
 title: Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina tipi di carattere e colori nella sezione ambiente per definire una combinazione di tipi di carattere e colori personalizzati per vari elementi dell'interfaccia utente nell'IDE.
+description: Informazioni su come usare la pagina Tipi di carattere e colori nella sezione Ambiente per stabilire una combinazione di tipi di carattere e colori personalizzata per vari elementi dell'interfaccia utente nell'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,18 +25,19 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc2309cf3ccc51c82796816f635908b55b81901
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f33c07e40d4ef1d2ba224dae33a26f322d9db189976ca4376988f1bb7ee1c180
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969750"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121304268"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
-La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo è possibile fare clic su **strumenti**  >  **Opzioni** e quindi selezionare   >  **tipi di carattere e colori** dell'ambiente.
+La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). È possibile accedere a questa finestra di dialogo facendo clic **su** Opzioni strumenti e quindi selezionando Tipi  >   **di** carattere e  >  **colori dell'ambiente.**
 
 Le modifiche apportate alla combinazione colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
@@ -65,7 +66,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
 
 - **Tipo di carattere ambiente**
 
-     Modifica lo stile e la dimensione del carattere per tutti gli elementi dell'interfaccia utente IDE che non dispongono già di un'opzione separata in **Mostra impostazioni per**.
+     Modifica lo stile e le dimensioni del carattere per tutti gli elementi dell'interfaccia utente IDE che non hanno già un'opzione separata in **Mostra impostazioni per**.
 
      ::: moniker range="vs-2017"
 
@@ -78,7 +79,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.
 
     > [!NOTE]
-    > Le modifiche apportate al testo degli elementi **[tutte le finestre degli strumenti di testo]** non diventano effettive durante la sessione in cui vengono effettuate. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
+    > Le modifiche apportate al testo **degli elementi [All Text Tool Windows]** non vengono applicate durante la sessione in cui vengono apportate. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
 
 **Valori predefiniti**
 
@@ -134,7 +135,7 @@ Alcuni degli elementi visualizzati includono:
 |**Area non interessata dal code coverage**|Codice non interessato da un unit test.|
 |**Area parzialmente interessata dal code coverage**|Codice interessato parzialmente da un unit test.|
 |**Area interessata dal code coverage**|Codice interessato totalmente da un unit test.|
-|**Commento CSS**|Commento in CSS (Cascading Style Sheets). Ad esempio:<br /><br /> /* commento \*/|
+|**Commento CSS**|Commento in CSS (Cascading Style Sheets). Esempio:<br /><br /> /* commento \*/|
 |**Parola chiave CSS**|Parole chiave nel foglio di stile CSS.|
 |**Nome proprietà CSS**|Nome di una proprietà, ad esempio Background.|
 |**Valore proprietà CSS**|Valore assegnato a una proprietà, ad esempio blue.|
@@ -154,7 +155,7 @@ Alcuni degli elementi visualizzati includono:
 |**Parola chiave**|Parole chiave riservate per il linguaggio specificato. Ad esempio: class e namespace.|
 |**Indirizzo di memoria**|Colore del testo usato per visualizzare la colonna dell'indirizzo all'interno della finestra **Memoria**.|
 |**Memoria modificata**|Colore del testo usato per visualizzare i dati modificati all'interno della finestra **Memoria**.|
-|**Dati memoria**|Colore del testo usato per visualizzare i dati all'interno della finestra **memoria** .|
+|**Dati memoria**|Colore del testo usato per visualizzare i dati all'interno della **finestra** Memoria.|
 |**Memoria illeggibile**|Colore del testo usato per visualizzare le aree della memoria illeggibili all'interno della finestra **Memoria**.|
 |**Number**|Numero nel codice che rappresenta un valore numerico effettivo.|
 |**Operatore**|Operatori come +, - e !=.|
@@ -170,7 +171,7 @@ Alcuni degli elementi visualizzati includono:
 |**Indicatore DML SQL**|Si applica all'editor Transact-SQL. Per impostazione predefinita, le istruzioni DML in questo editor sono contrassegnate con un rettangolo blu.|
 |**Codice non aggiornato**|Codice obsoleto in attesa di aggiornamento. In alcuni casi la funzionalità Modifica e continuazione non consente di applicare immediatamente modifiche al codice, ma le applicherà in seguito mentre si continua con il debug. Ciò si verifica quando si modifica una funzione che deve chiamare la funzione in esecuzione o si aggiungono più di 64 byte di nuove variabili a una funzione in attesa nello stack di chiamate. In questo caso, il debugger viene visualizzata una finestra di dialogo "Avviso di codice non aggiornato" e il codice obsoleto continua a essere eseguito fino a quando la funzione in questione non termina e viene chiamata nuovamente. Questo è il momento in cui Modifica e continuazione applica le modifiche.|
 |**Stringa**|Valori letterali stringa.|
-|**Stringa (C# @ Verbatim)**|Valori letterali stringa in C# che vengono interpretati come verbatim. Ad esempio:<br /><br /> @"x"|
+|**Stringa (C# @ Verbatim)**|Valori letterali stringa in C# che vengono interpretati come verbatim. Esempio:<br /><br /> @"x"|
 |**Errore di sintassi**|Errori di analisi.|
 |**Collegamento Elenco attività**|Se a una riga viene aggiunto un collegamento **Elenco attività** e il margine indicatore è disabilitato, la riga verrà evidenziata.|
 |**Punto di analisi (disabilitato)**|Non usato.|
@@ -200,8 +201,8 @@ Alcuni degli elementi visualizzati includono:
 |**Valore dell'attributo XML**|Contenuto degli attributi XML.|
 |**Sezione CData XML**|Contenuto di \<![CDATA[...]]> .|
 |**Commento XML**|Contenuto di \<!-- -->.|
-|**Delimitatore XML**|Delimitatori di sintassi XML, tra cui <, <?, <!, \<!--, --> ,? \> , \<![, ]]> e [,].|
-|**Attributo documento XML**|Valore di un attributo di documentazione XML, ad esempio \<param name="I"> dove viene colorato il "i".|
+|**Delimitatore XML**|Delimitatori di sintassi XML, inclusi <, <?, <!, \<!--, --> , ? , e \> \<![, ]]> [, ].|
+|**Attributo documento XML**|Valore di un attributo della documentazione xml, ad esempio \<param name="I"> dove la "I" è colorata.|
 |**Commento documento XML**|Commenti racchiusi nei commenti della documentazione XML.|
 |**Tag documento XML**|Tag nei commenti della documentazione XML, ad esempio<br /><br /> /// \<summary>.|
 |**Parola chiave XML**|Parole chiave DTD quali CDATA, IDREF e NDATA.|

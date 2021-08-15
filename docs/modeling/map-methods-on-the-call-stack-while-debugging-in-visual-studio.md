@@ -28,14 +28,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 08fa0ff028140ebad421dd43fdfa53cc36b77804
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0850112c2e5c7e670c776920613c73916c19b2707d2840f4dc21579d03ef99f3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387489"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257927"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 
@@ -81,7 +82,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
 1. Avviare il debug. (Tastiera: **F5**)
 
-2. Dopo che l'app ha attivata la modalità di interruzione o è stata attivata una funzione, scegliere **Mappa codice.** (Tastiera: **CTRL**  +  **MAIUSC**  +  **`** +MAIUSC+F10
+2. Dopo che l'app ha attivata la modalità di interruzione o è stata attivata una funzione, scegliere **Mappa codice.** (Tastiera: **CTRL**  +  **MAIUSC+**  +  **`**
 
      ![Scegliere la mappa del codice per avviare il mapping dello stack di chiamate](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -150,7 +151,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
    ![Visualizzare il codice esterno tramite la finestra Stack di chiamate](../debugger/media/debuggermap_callstackmenu.png)
 
-   o disattivare **Abilita Just My Code** nelle opzioni Visual Studio debug seguenti:
+   o disattivare **Abilita Just My Code** nelle opzioni Visual Studio debug:
 
    ![Scegliere Mostra codice esterno nella finestra di dialogo Opzioni](../debugger/media/debuggermap_debugoptions.png)
 

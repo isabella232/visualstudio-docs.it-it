@@ -1,20 +1,21 @@
 ---
 title: Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici
-description: Informazioni su come indicare a un test codificato dell'interfaccia utente di attendere che si verifichino determinati eventi, ad esempio la visualizzazione di una finestra o la visualizzazione della barra di stato.
+description: Informazioni su come indicare a un test codificato di riproduzione del test dell'interfaccia utente di attendere il verificarsi di determinati eventi, ad esempio la visualizzazione di una finestra o la scomparsa dell'indicatore di stato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd809736b2b76ec4f453e2f886db5885e9d9640
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e06ad5eb97d6a4192e4f705f0a94fc67171827279df3f7402d6b3e4bd264e4f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887627"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121299344"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 
@@ -105,13 +106,13 @@ Le funzioni precedenti sono avanzate e flessibili e dovrebbero soddisfare quasi 
 Playback.Wait() chiama internamente Thread.Sleep() (dopo il calcolo precedente) in blocchi più piccoli in un ciclo for-loop mentre cerca l'operazione di annullamento/interruzione dell'utente. In altre parole, Playback.Wait() consente di annullare la riproduzione prima della fine dell'attesa, mentre la sospensione potrebbe non generare un'eccezione.
 
 > [!TIP]
-> L'Editor di test codificati dell'interfaccia utente consente di modificare facilmente i test. Con l'Editor di test codificati dell'interfaccia utente è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [modificare i test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+> L'Editor di test codificati dell'interfaccia utente consente di modificare facilmente i test. Con l'Editor di test codificati dell'interfaccia utente è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere Modificare [test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente.](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)
-- [Procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomia di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)
 - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

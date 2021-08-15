@@ -1,6 +1,6 @@
 ---
 title: Casella degli strumenti, Scheda HTML
-description: Informazioni sui componenti HTML disponibili nella scheda HTML della finestra casella degli strumenti.
+description: Informazioni sui componenti HTML disponibili nella scheda HTML della finestra Casella degli strumenti.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 02baf454fe53a27e875d53cf983fce81a2c86874
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 672bf1c73aa132cd07f6851256038c56a053359b2131ec224c5387c2289179bc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965031"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121232406"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, scheda HTML
 

@@ -1,6 +1,6 @@
 ---
 title: Attività inline di MSBuild | Microsoft Docs
-description: Informazioni su come creare attività inline di MSBuild compilando una classe che implementa l'interfaccia Microsoft. Build. Framework. ITask.
+description: Informazioni su come creare MSBuild inline compilando una classe che implementa l'interfaccia Microsoft.Build.Framework.ITask.
 ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a90a5a251169bc9b41dea5bfddcfa2f8459af28
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 99ec3bb66c9d65507d5b2cc9139d6d120c8fe6120ab5fe7ec5591cb6d52a0c9c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919055"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121316292"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 
@@ -54,7 +55,7 @@ Le attività MSBuild vengono in genere create tramite la compilazione di una cla
 
 - L'attributo `TaskFactory` assegna un nome alla classe che implementa la factory dell'attività inline.
 
-- L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è possibile usare l' `AssemblyName` attributo per specificare il nome completo della classe factory dell'attività inline, che in genere si trova in `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` .
+- L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è possibile usare l'attributo per specificare il nome completo della classe factory di attività inline, che in genere `AssemblyName` si trova in `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` .
 
 Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.
 
@@ -85,7 +86,7 @@ Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programma
 
 - Se il valore di `Type` è `Fragment`, il codice definisce il contenuto del metodo `Execute` ma non la firma o l'istruzione `return`.
 
-Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice si trova in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape dei caratteri riservati, ad esempio " \<" or "> ".
+Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice si trova in una sezione CDATA, non è necessario preoccuparsi dell'escape dei caratteri riservati, ad esempio " \<" or "> ".
 
 In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.
 

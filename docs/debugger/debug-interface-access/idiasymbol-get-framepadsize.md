@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d361ec3e144730e49345d3560f815ee5fe0be469
-ms.sourcegitcommit: 30c404655fb83ea28f96ab1edb1c09b4d8d7eec4
+ms.openlocfilehash: 72f9920d5c2a690f9b2687c14b60ae298c4fde4feb009675d157e7158cdd5e30
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "108217232"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240544"
 ---
 # <a name="idiasymbolget_framepadsize"></a>IDiaSymbol::get_framePadSize
 
@@ -42,7 +43,7 @@ HRESULT get_framePadSize (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
 

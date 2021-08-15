@@ -1,6 +1,6 @@
 ---
 title: Attività CallTarget | Microsoft Docs
-description: Informazioni su come usare l'attività CallTarget di MSBuild per richiamare le destinazioni specificate all'interno del file di progetto.
+description: Informazioni su come usare l'MSBuild CallTarget per richiamare le destinazioni specificate all'interno del file di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2f124fa7e83e9f85e572276eed1851f42f7047
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3067a6fe6fd762dfa79a3521e2f22ba15c8e0762d9b6bd6ba2dbebc1cea407c3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939552"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121303384"
 ---
 # <a name="calltarget-task"></a>attività CallTarget
 
@@ -44,11 +45,11 @@ Richiama le destinazioni specificate nel file di progetto.
 
  Se una destinazione specificata in `Targets` ha esito negativo e `RunEachTargetSeparately` è `true`, l'attività continua a compilare le destinazioni rimanenti.
 
- Se si desidera compilare le destinazioni predefinite, utilizzare l' [attività MSBuild](../msbuild/msbuild-task.md) e impostare il `Projects` parametro su `$(MSBuildProjectFile)` .
+ Per compilare le destinazioni predefinite, usare [l'attività MSBuild](../msbuild/msbuild-task.md) e impostare il parametro `Projects` su `$(MSBuildProjectFile)` .
 
-Quando `CallTarget` si usa, MSBuild valuta la destinazione chiamata in un nuovo ambito, invece dello stesso ambito da cui viene chiamato. Ciò significa che qualsiasi modifica di elemento e proprietà nella destinazione chiamata non è visibile alla destinazione chiamante.  Per passare informazioni alla destinazione chiamante, usare il `TargetOutputs` parametro output.
+Quando si usa , MSBuild valuta la destinazione chiamata in un nuovo ambito, anziché nello stesso ambito da cui `CallTarget` viene chiamato. Ciò significa che qualsiasi modifica di elemento e proprietà nella destinazione chiamata non è visibile alla destinazione chiamante.  Per passare informazioni alla destinazione chiamante, usare il `TargetOutputs` parametro di output .
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 

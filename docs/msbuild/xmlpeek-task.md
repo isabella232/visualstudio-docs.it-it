@@ -1,6 +1,6 @@
 ---
 title: Attività XmlPeek | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività XmlPeek per restituire i valori come specificato dalla query XPath da un file XML.
+description: Informazioni su MSBuild'attività XmlPeek per restituire i valori specificati da Query XPath da un file XML.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d387d44ba06bb3a5a8ef5e73e2d8900b356996e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cace2a1ac5ecca3a209e242e2341bd6201f4996e785402dd6178ec14ddf90f19
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964862"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257446"
 ---
 # <a name="xmlpeek-task"></a>Attività XmlPeek
 
@@ -43,11 +44,11 @@ Restituisce valori come specificato dalla query XPath da un file XML.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
-Di seguito è riportato un esempio `settings.config` di file XML da leggere:
+Di seguito è riportato un file XML `settings.config` di esempio da leggere:
 
 ```xml
 <appSettings>
@@ -55,7 +56,7 @@ Di seguito è riportato un esempio `settings.config` di file XML da leggere:
 </appSettings>
 ```
 
-In questo esempio, se si vuole leggere `value` , usare un codice simile al seguente:
+In questo esempio, se si vuole leggere `value` , usare codice simile al seguente:
 
 ```xml
 <Target Name="BeforeBuild">
@@ -74,7 +75,7 @@ In questo esempio, se si vuole leggere `value` , usare un codice simile al segue
 </Target>
 ```
 
-Con gli spazi dei nomi XML, è possibile usare il `Namespaces` parametro, come nell'esempio seguente. Con il file XML di input `XMLFile1.xml` :
+Con gli spazi dei nomi XML si usa `Namespaces` il parametro , come nell'esempio seguente. Con il file XML di `XMLFile1.xml` input:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,7 +87,7 @@ Con gli spazi dei nomi XML, è possibile usare il `Namespaces` parametro, come n
 </class>
 ```
 
-E il codice seguente `Target` definito in un file di progetto:
+E gli elementi `Target` seguenti sono definiti in un file di progetto:
 
 ```xml
   <Target Name="TestPeek" BeforeTargets="Build">
@@ -107,7 +108,7 @@ E il codice seguente `Target` definito in un file di progetto:
   </Target>
 ```
 
-Nell'output sono inclusi i seguenti elementi dalla `TestPeek` destinazione:
+L'output include quanto segue dalla `TestPeek` destinazione:
 
 ```output
   TestPeek output:

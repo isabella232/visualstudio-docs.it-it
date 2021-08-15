@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Specificare gli eventi di compilazione (Visual Basic)'
-description: Informazioni su come è possibile usare gli eventi di compilazione in Visual Basic per eseguire script, macro o altre azioni come parte del processo di compilazione.
+description: Informazioni su come gli eventi di Visual Basic possono essere usati per eseguire script, macro o altre azioni come parte del processo di compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 272fa3bd66f863744986ed5dace44cf8327c08b02dd2e767ebff9e939cc19e65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869258"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121318733"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: Specificare gli eventi di compilazione (Visual Basic)
 
@@ -53,7 +53,7 @@ Gli eventi di compilazione vengono specificati nella finestra di dialogo **Event
 
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Esempio: come modificare le informazioni di un manifesto usando un evento di post-compilazione
 
-La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando *exe* chiamato da un evento di post-compilazione (il file *exe. manifest* nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:
+La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando *.exe* chiamato da un evento di post-compilazione (il file *.exe.manifest* nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:
 
 ```xml
 <dependentOS>
@@ -69,7 +69,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 2. Nella finestra di dialogo **Nuovo progetto** nel nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione console**. Assegnare al progetto il nome `ChangeOSVersionVB`.
 
-3. In *Module1. vb* aggiungere la riga seguente alle altre `Imports` istruzioni all'inizio del file:
+3. In *Module1.vb* aggiungere la riga seguente alle altre `Imports` istruzioni all'inizio del file:
 
    ```vb
    Imports System.Xml
@@ -118,7 +118,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
    End Sub
    ```
 
-   Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto, in genere *\<ProjectName> Publish*. Il secondo argomento è la nuova versione del sistema operativo.
+   Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto, in genere *\<ProjectName> .publish.* Il secondo argomento è la nuova versione del sistema operativo.
 
 5. Nel menu **Compila** scegliere **Compila soluzione**.
 
@@ -167,7 +167,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Pagina Compila, Progettazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Pagina pubblica, Progettazione progetti](../ide/reference/publish-page-project-designer.md)
-- [Finestra di dialogo riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Pagina Compilazione, progettazione Project (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Pagina Pubblica, progettazione Project](../ide/reference/publish-page-project-designer.md)
+- [Finestra di dialogo riga di comando evento pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md)

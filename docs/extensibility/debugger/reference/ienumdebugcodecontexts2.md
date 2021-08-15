@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia enumera i contesti di codice associati alla sessione di debug o con un particolare programma o documento.
+description: Questa interfaccia enumera i contesti di codice associati alla sessione di debug o a un programma o documento specifico.
 title: IEnumDebugCodeContexts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72addd1bd5a71f8d6051d1a7100d2d34dab57a24
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 490c15afea7e7034cad00398c02026ae2460d294be686f874d23e0105798091e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086573"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121238801"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
-Questa interfaccia enumera i contesti di codice associati alla sessione di debug o con un particolare programma o documento.
+Questa interfaccia enumera i contesti di codice associati alla sessione di debug o a un programma o documento specifico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,15 +31,15 @@ IEnumDebugCodeContexts2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia per rappresentare un elenco di contesti di codice per una particolare posizione di testo in un programma o un elenco di contesti di codice per un particolare contesto del documento.
+ Il motore di debug implementa questa interfaccia per rappresentare un elenco di contesti di codice per una particolare posizione di testo in un programma o un elenco di contesti di codice per un contesto di documento specifico.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Chiamare [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) per ottenere questa interfaccia che rappresenta un elenco di contesti di codice per una posizione di testo specifica nel documento di origine di un programma.
 
- Chiamare [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) per ottenere questa interfaccia che rappresenta un elenco di tutti i contesti di codice in un particolare documento di origine.
+ Chiamare [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) per ottenere questa interfaccia che rappresenta un elenco di tutti i contesti di codice in un documento di origine specifico.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IEnumDebugCodeContexts2` .
+ Nella tabella seguente vengono illustrati i metodi di `IEnumDebugCodeContexts2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -49,12 +50,12 @@ IEnumDebugCodeContexts2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|Ottiene il numero di contesti di codice in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- Visual Studio chiama [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) per popolare un elenco di contesti di codice che l'utente può scegliere durante l'impostazione dell'istruzione successiva o la visualizzazione del disassembly per un file di origine. Possono verificarsi più contesti di codice, ad esempio quando sono presenti più istanze di un modello di tipo C++.
+ Visual Studio chiama [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) per popolare un elenco di contesti di codice tra cui l'utente può scegliere quando imposta l'istruzione successiva o visualizza il disassembly per un file di origine. Possono verificarsi più contesti di codice, ad esempio quando sono presenti più istanze di un modello di tipo C++.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

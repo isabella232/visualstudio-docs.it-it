@@ -11,17 +11,18 @@ ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5af4c0efe53625063d4bb714f3d323bef28c5954
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a84ec868a7bd2aaa6cd1326e08b0b8a869b7311672cbfeca47e584c723a95a68
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096616"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262685"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 Struttura che descrive una matrice di stringhe.
@@ -50,14 +51,14 @@ Numero di stringhe nella `Members` matrice.
 Matrice di stringhe.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene restituita dal metodo [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .
+Questa struttura viene restituita [dal metodo EnumPersistedPorts.](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
 
- [Solo C++] Ogni singola stringa deve essere liberata usando `SysFreeString` e la `Members` matrice deve essere liberata con `CoTaskMemFree` .
+ [Solo C++] Ogni singola stringa deve essere liberata usando `SysFreeString` e la matrice deve essere `Members` liberata con `CoTaskMemFree` .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

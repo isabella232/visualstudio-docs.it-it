@@ -7,20 +7,21 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: e58e06c48ed9fa3a9d459c6c615abae4d4b4823f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: d6efe3f860749ac24e35af944122ec8a9d121f6039270117e7eb52eb57fcf6f7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385682"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410938"
 ---
 # <a name="share-code-maps"></a>Condividere le mappe codice
 
-È possibile salvare le mappe codice come parte di un Visual Studio, come immagine o come file XPS.
+È possibile salvare le mappe codice come parte di Visual Studio progetto, come immagine o come file XPS.
 
-## <a name="share-a-code-map-with-other-visual-studio-users"></a>Condividere una mappa del codice con altri Visual Studio utenti
+## <a name="share-a-code-map-with-other-visual-studio-users"></a>Condividere una mappa codice con altri Visual Studio utenti
 
 Usare il menu **File** per salvare la mappa.
 
@@ -45,7 +46,7 @@ Visual Studio salva la mappa come file con estensione *dgml* che è possibile co
 
 Quando si esporta una mappa codice come immagine, è possibile copiarla in altre applicazioni, ad esempio Microsoft Word o PowerPoint.
 
-1. Sulla barra degli strumenti della mappa codice scegliere **Condividi**  >  **messaggio di posta elettronica come immagine** o **Copia immagine**.
+1. Sulla barra degli strumenti della mappa codice scegliere **Condividi messaggio di** posta elettronica come immagine  >  **o** **Copia immagine.**
 
 2. Incollare l'immagine in un'altra applicazione.
 
@@ -53,12 +54,12 @@ Quando si esporta una mappa codice come immagine, è possibile copiarla in altre
 
 Quando si esporta una mappa codice come file XPS, è possibile visualizzarla in visualizzatori XML o XAML come Internet Explorer.
 
-1. Sulla barra degli strumenti della mappa codice scegliere **Condividi** messaggio di posta elettronica come XPS portabile  >   o Salva **come XPS portabile**.
+1. Sulla barra degli strumenti della mappa codice scegliere **Condividi messaggio di** posta elettronica come  >  **XPS portatile** o Salva come **XPS portatile.**
 
 2. Scegliere la posizione in cui salvare il file.
 
-3. Assegnare un nome alla mappa codice. Assicurarsi che la **casella Salva con nome** sia impostata su File **XPS \* (con estensione xps).** Scegliere **Salva**.
+3. Assegnare un nome alla mappa codice. Assicurarsi che la **casella Tipo file sia** impostata su File **XPS \* (con estensione xps).** Scegliere **Salva**.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Eseguire il mapping delle dipendenze con mappe codice](../modeling/map-dependencies-across-your-solutions.md)
+- [Eseguire il mapping delle dipendenze con le mappe codice](../modeling/map-dependencies-across-your-solutions.md)

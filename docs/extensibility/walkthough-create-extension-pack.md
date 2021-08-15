@@ -12,12 +12,12 @@ ms.author: lerich
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 213e3e71503ebea8074594bbc88a06980e3e64b4
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a84647eef6fa81f55a02689b1adb584c21fd3565a22662e1e9d19b9f1bacb18f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905137"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335082"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Procedura dettagliata: Creare un pacchetto di estensione
 
@@ -33,9 +33,9 @@ La funzionalità Extension Pack è disponibile a partire da Visual Studio 15.8 P
 
 Il modello di elemento Extension Pack crea un pacchetto di estensioni con un set di estensioni che possono essere installate insieme.
 
-1. Nella finestra **di dialogo** Nuovo progetto cercare "vsix" e selezionare **Progetto VSIX.** Per **Nome progetto** digitare "Test Extension Pack". Selezionare **Crea**.
+1. Nella finestra **di dialogo Project** nuovo progetto cercare "vsix" e selezionare **VSIX Project**. Per **Project ,** digitare "Test Extension Pack". Selezionare **Crea**.
 
-2. Nella finestra **di Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Passare al nodo **Estendibilità** di Visual C# e selezionare **Extension Pack (Pacchetto di estensioni).** Lasciare il nome file predefinito (ExtensionPack1.cs).
+2. Nella finestra di **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Passare al nodo **Estendibilità** di Visual C# e selezionare **Extension Pack (Pacchetto estensione).** Lasciare il nome file predefinito (ExtensionPack1.cs).
 
 3. Viene aggiunto il file ExtensionPack1.vsext che contiene il codice seguente
 
@@ -58,18 +58,18 @@ Il modello di elemento Extension Pack crea un pacchetto di estensioni con un set
    }
    ```
 
-4. Il vsixid dell'estensione da includere nel pacchetto di estensione è disponibile nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Trovare l'estensione che si vuole includere e fare clic su **Copy ID (Copia ID).** È possibile aggiornare il **vsixId** esistente nel file precedente o aggiungere un'altra estensione all'elenco.
+4. Il vsixid dell'estensione da includere nel pacchetto di estensione è disponibile in [Visual Studio Marketplace.](https://marketplace.visualstudio.com/) Trovare l'estensione che si vuole includere e fare clic su **Copy ID (Copia ID).** È possibile aggiornare il **vsixId esistente** nel file precedente o aggiungere un'altra estensione all'elenco.
 
     ![Copiare VsixId da Marketplace](media/vsixid-marketplace.png)
 
 5. Compilare il progetto e caricare l'estensione nel Marketplace. Vedere [Pubblicazione di un'estensione Visual Studio.](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)
 
 > [!NOTE]
-> Un pacchetto di estensione può installare solo le estensioni disponibili nel Visual Studio Marketplace [o](https://marketplace.visualstudio.com/) nella [raccolta privata](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
+> Un pacchetto di estensione può installare solo le estensioni disponibili in [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o nella [raccolta privata.](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)
 
-## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Installare il pacchetto di estensione dal Visual Studio Marketplace
+## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Installare il pacchetto di estensione da Visual Studio Marketplace
 
-Ora che l'estensione è pubblicata, installarla Visual Studio e testarla.
+Ora che l'estensione è pubblicata, installarla in Visual Studio e testarla.
 
 ::: moniker range="vs-2017"
 
@@ -79,7 +79,7 @@ Ora che l'estensione è pubblicata, installarla Visual Studio e testarla.
 
 ::: moniker range=">=vs-2019"
 
-1. In Visual Studio scegliere **Estensioni** gestite dal menu **Estensioni**.
+1. In Visual Studio scegliere Estensioni **gestite** dal menu **Estensioni**.
 
 ::: moniker-end
 
@@ -105,7 +105,7 @@ Per rimuovere l'estensione dal computer:
 
 ::: moniker range=">=vs-2019"
 
-1. In Visual Studio scegliere **Estensioni** gestite dal menu **Estensioni**.
+1. In Visual Studio scegliere Estensioni **gestite** dal menu **Estensioni**.
 
 ::: moniker-end
 

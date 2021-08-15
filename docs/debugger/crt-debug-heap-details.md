@@ -1,6 +1,6 @@
 ---
-title: Dettagli dell'heap di debug CRT | Microsoft Docs
-description: L'heap di debug offre strumenti avanzati che consentono di risolvere i problemi di allocazione della memoria. Informazioni sugli strumenti e su come sono utili per risolvere i problemi, ad esempio perdite e sovraccarichi.
+title: Dettagli heap di debug CRT | Microsoft Docs
+description: L'heap di debug offre strumenti avanzati che consentono di risolvere i problemi di allocazione della memoria. Informazioni sugli strumenti e su come consentono di risolvere problemi come perdite e sovraccarichi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -73,20 +73,21 @@ ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 984253f6c4ccb9d64fc1cefb34b2b5d7962e3eb5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d6bce6c628dd2265938640e27391e6b586129b559140ce892ee59671c5d2448
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857662"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121326927"
 ---
 # <a name="crt-debug-heap-details"></a>Informazioni dettagliate sull'heap di debug CRT
 In questo argomento vengono fornite informazioni dettagliate sull'heap di debug CRT.
 
 ## <a name="contents"></a><a name="BKMK_Contents"></a> Contenuto
-[Individuare i sovraccarichi del buffer con l'heap di debug](#BKMK_Find_buffer_overruns_with_debug_heap)
+[Trovare i sovraccarichi del buffer con l'heap di debug](#BKMK_Find_buffer_overruns_with_debug_heap)
 
 [Tipi di blocchi sull'heap di debug](#BKMK_Types_of_blocks_on_the_debug_heap)
 
@@ -94,16 +95,16 @@ In questo argomento vengono fornite informazioni dettagliate sull'heap di debug 
 
 [Configurare l'heap di debug](#BKMK_Configure_the_debug_heap)
 
-[New, DELETE e _CLIENT_BLOCKs nell'heap di debug C++](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
+[new, delete e _CLIENT_BLOCKs nell'heap di debug C++](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
 
-[Funzioni di creazione di report sullo stato dell'heap](#BKMK_Heap_State_Reporting_Functions)
+[Funzioni per la creazione di report sullo stato dell'heap](#BKMK_Heap_State_Reporting_Functions)
 
-[Rilevare le richieste di allocazione dell'heap](#BKMK_Track_Heap_Allocation_Requests)
+[Tenere traccia delle richieste di allocazione heap](#BKMK_Track_Heap_Allocation_Requests)
 
 ## <a name="find-buffer-overruns-with-debug-heap"></a><a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Individuare i sovraccarichi del buffer con l'heap di debug
 Due dei problemi più comuni e difficili da gestire che si presentano ai programmatori sono la sovrascrittura della fine di un buffer allocato e la perdita di memoria, ovvero la mancata liberazione delle allocazioni non più necessarie. L'heap di debug offre strumenti estremamente efficaci per la risoluzione dei problemi di allocazione di memoria di questo tipo.
 
-Le versioni di debug delle funzioni degli heap chiamano le versioni standard o di base utilizzate nelle build di rilascio. Quando si richiede un blocco di memoria, il gestore dello heap di debug alloca dall'heap di base un blocco di memoria un poco più grande di quanto richiesto e restituisce un puntatore alla porzione utilizzata di tale blocco. Si supponga ad esempio che l'applicazione contenga la chiamata: `malloc( 10 )`. In una build di rilascio, [malloc](/cpp/c-runtime-library/reference/malloc) chiamerebbe la routine di allocazione dell'heap di base richiedendo un'allocazione di 10 byte. In una build di debug, tuttavia, `malloc` chiamerebbe [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg), che chiamerebbe la routine di allocazione dell'heap di base richiedendo un'allocazione di 10 byte più approssimativamente 36 byte di memoria aggiuntiva. Tutti i blocchi di memoria generati nell'heap di debug sono connessi in un unico elenco collegato, ordinato in base al momento dell'allocazione.
+Le versioni di debug delle funzioni degli heap chiamano le versioni standard o di base utilizzate nelle build di rilascio. Quando si richiede un blocco di memoria, il gestore dello heap di debug alloca dall'heap di base un blocco di memoria un poco più grande di quanto richiesto e restituisce un puntatore alla porzione utilizzata di tale blocco. Si supponga ad esempio che l'applicazione contenga la chiamata: `malloc( 10 )`. In una build di rilascio, [malloc](/cpp/c-runtime-library/reference/malloc) chiama la routine di allocazione heap di base che richiede un'allocazione di 10 byte. In una build di debug, tuttavia, chiama _malloc_dbg , che chiama quindi la routine di allocazione heap di base che richiede un'allocazione di 10 byte più circa 36 byte di memoria `malloc` aggiuntiva. [](/cpp/c-runtime-library/reference/malloc-dbg) Tutti i blocchi di memoria generati nell'heap di debug sono connessi in un unico elenco collegato, ordinato in base al momento dell'allocazione.
 
 La memoria aggiuntiva allocata dalle routine dello heap di debug viene utilizzata per l'archiviazione delle informazioni sulla gestione, per i puntatori che collegano tra loro i blocchi di memoria di debug e per piccoli buffer prima e dopo i dati che hanno la funzione di rilevare eventuali sovrascritture della regione allocata.
 
@@ -134,22 +135,22 @@ typedef struct _CrtMemBlockHeader
 
 I buffer `NoMansLand`presenti da entrambi i lati dell'area del blocco destinata ai dati dell'utente hanno attualmente una dimensione di 4 byte e sono riempiti con un valore byte noto utilizzato dalle routine dello heap di debug per verificare che i limiti del blocco di memoria dell'utente non siano stati sovrascritti. L'heap di debug riempie inoltre i nuovi blocchi di memoria con un valore noto. Se, come illustrato di seguito, si sceglie di mantenere nell'elenco collegato dello heap i blocchi liberati, anche questi blocchi liberati verranno riempiti con un valore noto. Attualmente i valori byte utilizzati sono i seguenti:
 
-NoMansLand (0xFD) i buffer "NoMansLand" su entrambi i lati della memoria utilizzata da un'applicazione sono attualmente compilati con 0xFD.
+NoMansLand (0xFD) I buffer "NoMansLand" su entrambi i lati della memoria usata da un'applicazione sono attualmente riempiti con 0xFD.
 
-Blocchi liberati (0xDD) i blocchi liberati mantenuti non usati nell'elenco collegato dell'heap di debug quando il `_CRTDBG_DELAY_FREE_MEM_DF` flag è impostato sono attualmente riempiti con 0xDD.
+Blocchi liberati (0xDD) I blocchi liberati mantenuti inutilizzati nell'elenco collegato dell'heap di debug quando è impostato il flag sono attualmente riempiti `_CRTDBG_DELAY_FREE_MEM_DF` con 0xDD.
 
-Nuovi oggetti (0xCD) i nuovi oggetti vengono riempiti con 0xCD quando vengono allocati.
+Nuovi oggetti (0xCD) I nuovi oggetti vengono riempiti con 0xCD quando vengono allocati.
 
-![Torna al](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
+![Torna all'inizio del](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents)
 
-## <a name="types-of-blocks-on-the-debug-heap"></a><a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipi di blocchi sull'heap di debug
+## <a name="types-of-blocks-on-the-debug-heap"></a><a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipi di blocchi nell'heap di debug
 Ciascun blocco di memoria dell'heap di debug viene assegnato a uno di cinque tipi di allocazione. Questi tipi vengono registrati e visualizzati nei report in modo diverso per il rilevamento di perdite e i report sullo stato. È possibile specificare il tipo di un blocco allocandolo mediante una chiamata diretta a una delle funzioni di allocazione dello heap di debug quale [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). I cinque tipi di blocchi di memoria dell'heap di debug (impostati nel membro **nBlockUse** della struttura **_CrtMemBlockHeader**) sono i seguenti:
 
-**_NORMAL_BLOCK** Una chiamata a [malloc](/cpp/c-runtime-library/reference/malloc) o [calloc](/cpp/c-runtime-library/reference/calloc) crea un blocco normale. Se si ha intenzione di utilizzare solo blocchi normali e non sono necessari blocchi client, è possibile definire [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), in modo che tutte le chiamate di allocazione dello heap vengano associate agli equivalenti di debug delle build di debug. Sarà così possibile archiviare le informazioni di nome file e numero di riga relative a ciascuna chiamata di allocazione nella corrispondente intestazione di blocco.
+**_NORMAL_BLOCK** Una chiamata a [malloc](/cpp/c-runtime-library/reference/malloc) o [calloc](/cpp/c-runtime-library/reference/calloc) crea un blocco Normal. Se si ha intenzione di utilizzare solo blocchi normali e non sono necessari blocchi client, è possibile definire [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), in modo che tutte le chiamate di allocazione dello heap vengano associate agli equivalenti di debug delle build di debug. Sarà così possibile archiviare le informazioni di nome file e numero di riga relative a ciascuna chiamata di allocazione nella corrispondente intestazione di blocco.
 
 `_CRT_BLOCK` I blocchi di memoria allocati internamente da numerose funzioni della libreria di runtime sono contrassegnati come blocchi CRT, in modo da poter essere gestiti separatamente. Di conseguenza non avranno necessariamente alcun effetto sul rilevamento delle perdite e su altre operazioni. Le allocazioni non devono mai allocare, riallocare o liberare blocchi di tipo CRT.
 
-`_CLIENT_BLOCK` Un'applicazione può tenere traccia con modalità speciali di un dato gruppo di allocazioni a scopo di debug effettuando tali allocazioni con questo tipo di blocco di memoria, usando chiamate esplicite alle funzioni dell'heap di debug. In MFC, ad esempio, tutti gli oggetti **CObjects** vengono allocati come blocchi client, mentre è possibile che altre applicazioni inseriscano oggetti di memoria differenti in blocchi client. È inoltre possibile specificare sottotipi dei blocchi client per consentire una registrazione più differenziata. Per specificare sottotipi di blocchi client, spostare il numero verso sinistra di 16 bit ed effettuare un'operazione `OR` su di esso con `_CLIENT_BLOCK`. Ad esempio:
+`_CLIENT_BLOCK` Un'applicazione può tenere traccia con modalità speciali di un dato gruppo di allocazioni a scopo di debug effettuando tali allocazioni con questo tipo di blocco di memoria, usando chiamate esplicite alle funzioni dell'heap di debug. In MFC, ad esempio, tutti gli oggetti **CObjects** vengono allocati come blocchi client, mentre è possibile che altre applicazioni inseriscano oggetti di memoria differenti in blocchi client. È inoltre possibile specificare sottotipi dei blocchi client per consentire una registrazione più differenziata. Per specificare sottotipi di blocchi client, spostare il numero verso sinistra di 16 bit ed effettuare un'operazione `OR` su di esso con `_CLIENT_BLOCK`. Esempio:
 
 ```cpp
 #define MYSUBTYPE 4
@@ -160,7 +161,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 
 **_FREE_BLOCK** In genere, i blocchi liberati vengono rimossi dall'elenco. Per controllare che non vengano eseguite operazioni di scrittura nella memoria liberata o per simulare condizioni di memoria ridotta, è possibile scegliere di mantenere i blocchi liberati nell'elenco collegato, contrassegnati come liberi e riempiendoli con un valore byte noto (attualmente 0xDD).
 
-**_IGNORE_BLOCK** È possibile disattivare le operazioni dell'heap di debug per un determinato periodo di tempo. Durante questo periodo i blocchi di memoria vengono mantenuti nell'elenco, ma vengono contrassegnati come blocchi da ignorare.
+**_IGNORE_BLOCK** È possibile disattivare le operazioni dell'heap di debug per un periodo di tempo. Durante questo periodo i blocchi di memoria vengono mantenuti nell'elenco, ma vengono contrassegnati come blocchi da ignorare.
 
 Per determinare il tipo e il sottotipo di un dato blocco, usare la funzione [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) e le macro **_BLOCK_TYPE** e **_BLOCK_SUBTYPE**. Le macro vengono definite (in Crtdbg.h) come segue:
 
@@ -169,7 +170,7 @@ Per determinare il tipo e il sottotipo di un dato blocco, usare la funzione [_Cr
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)
 ```
 
-![Torna al](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
+![Torna all'inizio del](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents)
 
 ## <a name="check-for-heap-integrity-and-memory-leaks"></a><a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Verificare l'integrità dell'heap e le perdite di memoria
 È necessario accedere a diverse funzionalità dell'heap di debug dall'interno del codice. Nella seguente sezione vengono descritte alcune funzionalità e le relative modalità di utilizzo.
@@ -188,7 +189,7 @@ Il flag **_crtDbgFlag** contiene i seguenti campi di bit:
 |**_CRTDBG_CHECK_CRT_DF**|Off|Fa sì che i blocchi contrassegnati come tipo **_CRT_BLOCK** vengano inclusi nelle operazioni di rilevamento di perdite e differenze tra stati. Quando questo bit è off, la memoria utilizzata internamente dalla libreria di runtime viene ignorata durante queste operazioni.|
 |**_CRTDBG_LEAK_CHECK_DF**|Off|Fa sì che il controllo delle perdite di memoria venga eseguito al termine del programma mediante una chiamata a **_CrtDumpMemoryLeaks**. Se l'applicazione non ha liberato tutta la memoria allocata, verrà generato un report di errore.|
 
-![Torna al](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
+![Torna all'inizio del](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents)
 
 ## <a name="configure-the-debug-heap"></a><a name="BKMK_Configure_the_debug_heap"></a> Configurare l'heap di debug
 Tutte le chiamate alle funzioni dell'heap, quali `malloc`, `free`, `calloc`, `realloc`, `new` e `delete` vengono risolte nelle versioni di debug di tali funzioni che operano nell'heap di debug. Quando si libera un blocco di memoria, l'heap di debug controlla automaticamente l'integrità dei buffer presenti da entrambi i lati dell'area allocata e genera un messaggio di errore se si è verificata una sovrascrittura.
@@ -201,9 +202,9 @@ Tutte le chiamate alle funzioni dell'heap, quali `malloc`, `free`, `calloc`, `re
 
 1. Chiamare `_CrtSetDbgFlag` con il parametro `newFlag` impostato su `_CRTDBG_REPORT_FLAG` (per ottenere lo stato corrente di `_crtDbgFlag`) e archiviare il valore restituito in una variabile temporanea.
 
-2. Attivare qualsiasi bit by `OR` -ing (simbolo di &#124; bit per bit) la variabile temporanea con le corrispondenti maschere di bit (rappresentate nel codice dell'applicazione da costanti manifesto).
+2. Attivare i bit tramite -ing (simbolo di &#124; bit per bit) la variabile temporanea con le corrispondenti maschera di bit (rappresentate nel codice dell'applicazione da `OR` costanti manifesto).
 
-3. Disattivare gli altri bit by `AND` -ing (simbolo di & bit per bit) la variabile con un `NOT` (simbolo ~ bit per bit) delle maschere di bit appropriate.
+3. Disattivare gli altri bit per -ing (simbolo di & bit) la variabile con `AND` `NOT` un (simbolo ~ bit per bit) delle maschera di bit appropriate.
 
 4. Chiamare `_CrtSetDbgFlag` con il parametro `newFlag` impostato sul valore archiviato nella variabile temporanea per creare il nuovo stato di `_crtDbgFlag`.
 
@@ -223,9 +224,9 @@ tmpFlag &= ~_CRTDBG_CHECK_CRT_DF;
 _CrtSetDbgFlag( tmpFlag );
 ```
 
-![Torna al](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
+![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contenuto](#BKMK_Contents)
 
-## <a name="new-delete-and-_client_blocks-in-the-c-debug-heap"></a><a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> blocchi nuovi, DELETE e \_ client \_ nell'heap di debug C++
+## <a name="new-delete-and-_client_blocks-in-the-c-debug-heap"></a><a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> BLOCCHI NUOVI, DELETE e \_ CLIENT \_ nell'heap di debug C++
 Le versioni di debug della libreria di runtime C contengono le versioni di debug degli operatori C++ `new` e `delete`. Se si utilizza il tipo di allocazione `_CLIENT_BLOCK`, è necessario chiamare la versione di debug dell'operatore `new` in modo diretto oppure creare macro che sostituiscano l'operatore `new` nella modalità di debug, come illustrato nell'esempio che segue:
 
 ```cpp
@@ -261,7 +262,7 @@ int main( )   {
 
 La versione di debug dell'operatore `delete` può essere utilizzata con tutti i tipi di blocco e non è necessario apportare alcuna modifica al programma quando si compila una versione di rilascio.
 
-![Torna al](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
+![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contenuto](#BKMK_Contents)
 
 ## <a name="heap-state-reporting-functions"></a><a name="BKMK_Heap_State_Reporting_Functions"></a> Funzioni per la creazione di report sullo stato dell'heap
  **_CrtMemState**
@@ -298,7 +299,7 @@ Le funzioni elencate di seguito indicano lo stato e il contenuto dell'heap e uti
 |[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Esegue il dump di informazioni su tutti gli oggetti allocati dopo la generazione di un dato snapshot dell'heap o dall'inizio dell'esecuzione. Ogni volta che esegue il dump di un blocco **_CLIENT_BLOCK**, chiama una funzione hook fornita dall'applicazione, qualora ne sia stata installata una mediante **_CrtSetDumpClient**.|
 |[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Determina se si sono verificate perdite di memoria dall'inizio dell'esecuzione del programma e, in caso positivo, esegue il dump di tutti gli oggetti allocati. Ogni volta che **_CrtDumpMemoryLeaks** esegue il dump di un blocco **_CLIENT_BLOCK**, chiama una funzione hook fornita dall'applicazione, qualora ne sia stata installata una mediante **_CrtSetDumpClient**.|
 
-![Torna al](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
+![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contenuto](#BKMK_Contents)
 
 ## <a name="track-heap-allocation-requests"></a><a name="BKMK_Track_Heap_Allocation_Requests"></a> Rilevare le richieste di allocazione dell'heap
 Sebbene conoscere il nome del file sorgente e il numero di riga in cui viene eseguita un'asserzione o una macro per la creazione di report sia spesso molto utile per individuare la causa di un problema, non è sempre così per le funzioni di allocazione heap. Sebbene le macro possano essere inserite in numerosi punti appropriati nell'albero logico di un'applicazione, un'allocazione è spesso inclusa in una speciale routine che viene richiamata in momenti diversi da più posizioni differenti. La difficoltà non risiede in genere nel sapere quale riga di codice ha eseguito un'allocazione errata, ma piuttosto nel capire quale delle migliaia di allocazioni eseguite da tale riga di codice è responsabile del problema e perché.
@@ -353,7 +354,7 @@ int addNewRecord(struct RecStruct *prevRecord,
 
 Il nome del file di origine e il numero di riga in cui è stata effettuata la chiamata a `addNewRecord` verranno memorizzati in ciascun blocco allocato nell'heap di debug e verranno indicati quando il blocco verrà esaminato.
 
-![Torna al](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
+![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contenuto](#BKMK_Contents)
 
 ## <a name="see-also"></a>Vedi anche
 [Debug del codice nativo](../debugger/debugging-native-code.md)

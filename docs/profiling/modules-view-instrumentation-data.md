@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Moduli - dati di strumentazione | Microsoft Docs
-description: Informazioni su come la visualizzazione moduli Visualizza i dati sulle prestazioni raggruppati in base ai moduli presenti nei dati di profilatura.
+description: Informazioni su come la visualizzazione Moduli visualizza i dati sulle prestazioni raggruppati in base ai moduli presenti nei dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 031068d159b7004b7cfe7fcf1c747c2eb582afc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2864293c14852f41a65813fa17a1cf6ec9bb4ff2c9ec74e05ede64121f1289b5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879774"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121246461"
 ---
 # <a name="modules-view---instrumentation-data"></a>Visualizzazione Moduli - dati di strumentazione
 Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli presenti nei dati di profilatura. Le funzioni del modulo sono elencate sotto il nodo del modulo.
@@ -31,7 +32,7 @@ Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggr
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione o modulo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo in cui era in esecuzione il modulo o la funzione.|

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b636aec6a181e7b1c6394aeb7c3d59b1704db1e3002363ed61944c540b56867a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62419843"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121241095"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>Contribuire alla documentazione di Visual Studio
 
@@ -14,7 +14,7 @@ Questa guida tratta alcuni argomenti di carattere generale relativi a come contr
 
 ## <a name="code-of-conduct"></a>Codice di comportamento
 
-Questo progetto ha adottato il [Codice di comportamento di Microsoft per l'open source](https://opensource.microsoft.com/codeofconduct/). Per ulteriori informazioni, vedere le domande [frequenti sul codice di comportamento](https://opensource.microsoft.com/codeofconduct/faq/)oppure contattare per [opencode@microsoft.com](mailto:opencode@microsoft.com) eventuali domande o commenti aggiuntivi.
+Questo progetto ha adottato il [Codice di comportamento di Microsoft per l'open source](https://opensource.microsoft.com/codeofconduct/). Per altre informazioni, vedere le domande frequenti sul Codice di [comportamento](https://opensource.microsoft.com/codeofconduct/faq/)o [opencode@microsoft.com](mailto:opencode@microsoft.com) contattare per eventuali domande o commenti aggiuntivi.
 
 ## <a name="how-can-i-contribute"></a>Come è possibile contribuire?
 

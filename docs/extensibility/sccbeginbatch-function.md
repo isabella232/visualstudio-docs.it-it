@@ -11,14 +11,15 @@ ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b9199b98e566a71bfeb95124ebd85781e69950
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 7ead84502e6100fb9fd5349ac9308d244c5aa90640c2bbc66e3b31dd3d150943
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904760"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121237709"
 ---
 # <a name="sccbeginbatch-function"></a>Funzione SccBeginBatch
 Questa funzione avvia una sequenza batch di operazioni di controllo del codice sorgente. [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch potrebbero non essere annidati.
@@ -45,6 +46,6 @@ SCCRTN SccBeginBatch(void);
 
  Mentre è in corso un'operazione batch, il plug-in del controllo del codice sorgente deve presentare al massimo una finestra di dialogo per qualsiasi domanda all'utente e applicare la risposta da tale finestra di dialogo a tutte le operazioni successive.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

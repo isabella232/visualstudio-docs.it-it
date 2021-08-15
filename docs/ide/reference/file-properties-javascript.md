@@ -1,6 +1,6 @@
 ---
 title: Proprietà file, JavaScript
-description: Informazioni su come usare le proprietà dei file per indicare quali azioni devono essere eseguite dal sistema del progetto sui file.
+description: Informazioni su come usare le proprietà dei file per indicare le azioni che il sistema del progetto deve eseguire sui file.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c54ce24025f9ec15bc03d02825e961f9a03f3715
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aae0df927b4544afe275b8cdf056cc45741a3aa3998182cbcf809b3c2b1f6005
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952954"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121258915"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
 
@@ -54,7 +54,7 @@ La proprietà **Azione pacchetto** indica ciò che realizza Visual Studio con un
 
 - **Contenuto** - Il file è incluso nel manifesto di pacchetto. Ad esempio, questa impostazione è il valore predefinito di un file .htm, .js, .css, immagine, audio o video.
 
-- **Manifesto** : il file non è incluso nel manifesto del pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.
+- **Manifesto:** il file non è incluso nel manifesto del pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.
 
 - **Risorsa** - Il file non è incluso nel manifesto di pacchetto. Il contenuto del file viene invece indicizzato nel file di indice risorse (PRI) che va inserito nel manifesto di pacchetto. Viene usato generalmente per i file di risorse.
 

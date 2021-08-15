@@ -1,5 +1,5 @@
 ---
-description: Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo RVA (relative Virtual Address).
+description: Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale relativo.
 title: IDiaEnumSymbolsByAddr::symbolByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: f7828029-f2ee-4ccd-afac-785adc60a4c8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0101411b6b497ac8c9b83eec844719d067041c29
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: de42d5c3ee1c4f91d0d2099ce3525f8ab3133e6af1e79fad5f537dc6ba492ea0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148605"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121405226"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo RVA (relative Virtual Address).
+Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale relativo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ HRESULT symbolByRVA (
 #### <a name="parameters"></a>Parametri
  relativeVirtualAddress
 
-in Indirizzo relativo all'inizio dell'immagine.
+[in] Indirizzo relativo all'inizio dell'immagine.
 
  ppsymbol
 
-out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo trovato.
+[out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo trovato.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se il simbolo non è stato trovato. In caso contrario, verrà restituito un codice di errore.

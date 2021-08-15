@@ -1,5 +1,5 @@
 ---
-description: Indica il motivo per cui un punto di interruzione non è associato.
+description: Indica il motivo per cui un punto di interruzione è stato non associato.
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13f723c6395b8b271d6f097d811c5a31569c5853
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ddf18bf8a9ce0e31e3ff692f202b9c274854f10ad7f69c0bc4b5edffc92c1fb4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067699"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121239308"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Indica il motivo per cui un punto di interruzione non è associato.
+Indica il motivo per cui un punto di interruzione è stato non associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,18 +56,18 @@ Il motivo è sconosciuto.
 Il codice che contiene il punto di interruzione è stato scaricato.
 
 `BPUR_BREAKPOINT_REBIND`\
-Il punto di interruzione è stato riassociato a una posizione diversa. Questo problema può verificarsi dopo le operazioni di modifica e continuazione quando il punto di interruzione si sposta o quando il punto di interruzione è associato a un file con un percorso non più valido.
+Il punto di interruzione è stato riassato a una posizione diversa. Ciò può verificarsi dopo le operazioni Modifica e continuazione quando il punto di interruzione viene spostato o quando il punto di interruzione è associato a un file con un percorso non più valido.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Il punto di interruzione viene determinato come errore dopo l'associazione. Questa situazione si verifica nei punti di interruzione gestiti le cui condizioni non sono più valide.
+Il punto di interruzione viene determinato come in errore dopo che è stato associato. Ciò accade ai punti di interruzione gestiti le cui condizioni non sono più valide.
 
 ## <a name="remarks"></a>Commenti
-Restituito dal metodo [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
+Restituito dal [metodo GetReason.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

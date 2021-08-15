@@ -1,6 +1,6 @@
 ---
-title: 'IDebugProgramNode2:: Attach_V7 | Microsoft Docs'
-description: Questo metodo di interfaccia è un vecchio metodo di associazione obsoleto utilizzato prima di Visual Studio 2005.
+title: IDebugProgramNode2::Attach_V7 | Microsoft Docs
+description: Questo metodo di interfaccia è un metodo di collegamento obsoleto e deprecato usato prima Visual Studio 2005.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ helpviewer_keywords:
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c949bba45457917e4dd00bdc05bc300f3a38eb7e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fbad29417b7c53284c0a00281f9c702c8bb5e342e44bcd84b6106799e9d7560f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053594"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121261632"
 ---
 # <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
@@ -49,13 +50,13 @@ int Attach_V7 (
 ## <a name="parameters"></a>Parametri
 
 `pMDMProgram`\
-in Interfaccia [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma a cui connettersi.
+[in] Interfaccia [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma a cui connettersi.
 
 `pCallback`\
-in Interfaccia [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) da utilizzare per inviare eventi di debug a SDM.
+[in] Interfaccia [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) da usare per inviare eventi di debug a SDM.
 
 `dwReason`\
-in Valore dell'enumerazione [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) che specifica il motivo per il fissaggio.
+[in] Valore [dell'enumerazione ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) che specifica il motivo del collegamento.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -64,15 +65,15 @@ Un'implementazione deve sempre restituire `E_NOTIMPL` .
 ## <a name="remarks"></a>Commenti
 
 > [!WARNING]
-> A partire da Visual Studio 2005, questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL` . Vedere l'interfaccia [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) per un approccio alternativo se il nodo del programma deve indicare che non può essere collegato a o se il nodo del programma sta semplicemente impostando il programma `GUID` . In caso contrario, implementare il metodo di [associazione](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
+> A Visual Studio 2005, questo metodo non viene più usato e deve restituire sempre `E_NOTIMPL` . Vedere [l'interfaccia IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) per un approccio alternativo se il nodo del programma deve indicare che non può essere collegato a o se il nodo del programma sta semplicemente impostando il programma `GUID` . In caso contrario, [implementare il metodo Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="prior-to-visual-studio-2005"></a>Prima di Visual Studio 2005
 
-Questo metodo deve essere implementato solo se il DE viene eseguito nello spazio degli indirizzi del programma di cui è in corso il debug. In caso contrario, questo metodo deve restituire `S_FALSE` .
+Questo metodo deve essere implementato solo se de viene eseguito nello spazio degli indirizzi del programma di cui viene eseguito il debug. In caso contrario, questo metodo deve restituire `S_FALSE` .
 
-Quando viene chiamato questo metodo, il DE deve inviare l'oggetto evento [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) , se non è già stato inviato per questa istanza dell'interfaccia [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) , nonché gli oggetti evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) . L'oggetto evento [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) viene quindi inviato se il `dwReason` parametro è `ATTACH_REASON_LAUNCH` .
+Quando viene chiamato questo metodo, il DE deve inviare l'oggetto evento [IDebugEngineCreateEvent2,](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) se non è già stato inviato per questa istanza dell'interfaccia [IDebugEngine2,](../../../extensibility/debugger/reference/idebugengine2.md) nonché gli oggetti evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e [IDebugLoadCompleteEvent2.](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) [L'oggetto evento IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) viene quindi inviato se il `dwReason` parametro è `ATTACH_REASON_LAUNCH` .
 
-Il DE deve chiamare il metodo [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) sull'oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) fornito dall'oggetto evento [IDEBUGPROGRAMCREATEEVENT2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e deve archiviare il GUID del programma nei dati dell'istanza per l' `IDebugProgram2` oggetto implementato da de.
+De deve chiamare il [metodo GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) sull'oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) fornito dall'oggetto evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e deve archiviare il GUID del programma nei dati dell'istanza per l'oggetto implementato da `IDebugProgram2` DE.
 
 ## <a name="see-also"></a>Vedi anche
 

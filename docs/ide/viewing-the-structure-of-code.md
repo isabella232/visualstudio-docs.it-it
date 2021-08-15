@@ -24,14 +24,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c11025e22c1288387862fa138b35efbbca8557
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 3d37766aa3ac8dcb72ee4f7dc2e3dd79fd37df38c36dc5a9e159dfbf848acde9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924955"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231925"
 ---
 # <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>Visualizzare la struttura del codice usando finestre degli strumenti diverse
 
@@ -64,12 +65,12 @@ La **barra Visualizzazione classi** contiene i comandi seguenti:
 
 ### <a name="class-view-settings"></a>Visualizzazione classi - Impostazioni
 
-Il **Visualizzazione classi impostazioni sulla** barra degli strumenti ha le impostazioni seguenti:
+Il **Visualizzazione classi Impostazioni** sulla barra degli strumenti ha le impostazioni seguenti:
 
 |Nome|Descrizione|
 |-|-|
 |**Mostra tipi base**|Vengono visualizzati i tipi di base.|
-|**Mostra riferimenti al progetto**|Vengono visualizzati i riferimenti al progetto.|
+|**Mostra Project riferimenti**|Project vengono visualizzati i riferimenti.|
 |**Mostra tipi e membri nascosti**|Tipi e membri nascosti (non destinati ai client) vengono visualizzati in grigio chiaro.|
 |**Mostra membri pubblici**|I membri pubblici vengono visualizzati.|
 |**Mostra membri protetti**|I membri protetti vengono visualizzati.|
@@ -142,7 +143,7 @@ Le impostazioni personalizzate vengono salvate nella directory dell'applicazione
 
 Il riquadro sinistro della finestra **Visualizzatore oggetti** mostra gli assembly. È possibile espandere gli assembly per visualizzare gli spazi dei nomi in essi contenuti e quindi espandere gli spazi dei nomi per visualizzare i tipi contenuti. Quando si seleziona un tipo, nel riquadro di destra sono elencati i relativi membri (ad esempio proprietà e metodi). Il riquadro inferiore destro visualizza informazioni dettagliate sull'elemento selezionato.
 
-È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante Cancella **ricerca** (**X**) accanto alla **casella** Di ricerca.
+È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante Cancella **ricerca** (**X**) accanto alla **casella Di** ricerca.
 
 Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è possibile spostarsi tra le selezioni effettuate usando i pulsanti **Avanti** e **Indietro** sulla barra degli strumenti.
 
@@ -150,7 +151,7 @@ Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è pos
 
 ### <a name="object-browser-settings"></a>Impostazioni di Visualizzatore oggetti
 
-Usando il **pulsante Impostazioni visualizzatore oggetti** sulla barra degli strumenti, è possibile specificare una delle visualizzazioni seguenti:
+Usando il pulsante **Visualizzatore Impostazioni** sulla barra degli strumenti, è possibile specificare una delle visualizzazioni seguenti:
 
 |Nome|Descrizione|
 |-|-|
@@ -202,10 +203,10 @@ Il menu di scelta rapida (o fare clic con il pulsante destro del mouse) nella **
 |-|-|
 |**Azioni rapide e refactoring**||
 |**Rinominare**||
-|**Generare un grafo di file di inclusione**||
+|**Generare Graph di file di inclusione**||
 |**Visualizza definizione**||
 |**Vai a definizione**|Trova la definizione (o le definizioni per le classi parziali) e le visualizza in una finestra **Risultati ricerca**.|
-|**Vai alla dichiarazione**||
+|**Vai a dichiarazione**||
 |**Trova tutti i riferimenti**|Consente di trovare i riferimenti al tipo o membro nella soluzione.|
 |**Visualizza gerarchia delle chiamate**|Visualizza il metodo nella finestra **Gerarchia di chiamata**.|
 |**Attiva/disattiva file di codice/intestazione**||
@@ -225,6 +226,6 @@ Il menu di scelta rapida (o fare clic con il pulsante destro del mouse) nella **
 
 È possibile usare la finestra **Struttura documento** in combinazione con le visualizzazioni di progettazione, ad esempio la finestra di progettazione per una pagina XAML o una finestra di Progettazione Windows Form o con pagine HTML. Questa finestra visualizza gli elementi in una visualizzazione albero in modo che sia possibile visualizzare la struttura logica del form o della pagina e trovare i controlli incorporati o nascosti in profondità.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md)

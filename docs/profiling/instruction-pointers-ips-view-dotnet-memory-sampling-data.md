@@ -1,6 +1,6 @@
 ---
-title: "Visualizzazione puntatori all'istruzione: dati di campionamento di memoria .NET"
-description: La visualizzazione IPs per i dati di profilatura dell'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le istruzioni di assembly che hanno allocato memoria.
+title: "Visualizzazione Puntatori all'istruzione : dati di campionamento di memoria .NET"
+description: La visualizzazione IP per i dati di profilatura dell'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le istruzioni dell'assembly che hanno allocato memoria.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 7d91cc14-e8e9-4ebb-b14f-b9f0da770508
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 51f7c9faee3b93a11b3a2a304654005c80b8ad87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f567db434b75561238ecb84119b16295ecbae6bb3ab32454c3a0b7aabc359820
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906830"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121300654"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Visualizzazione dei puntatori all'istruzione: dati di campionamento di memoria .NET
 La visualizzazione IP dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le istruzioni dell'assembly che hanno allocato memoria durante l'esecuzione della profilatura. Le colonne della visualizzazione elencano inoltre le dimensioni e il numero delle allocazioni.
@@ -28,10 +29,10 @@ La visualizzazione IP dei dati di profilatura sull'allocazione di memoria .NET r
 |------------|-----------------|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo contenente l'istruzione.|
+|**Nome modulo**|Nome del modulo contenente l'istruzione.|
 |**Percorso modulo**|Percorso del modulo contenente l'istruzione.|
 |**File di origine**|File di origine che contiene l'istruzione.|
-|**Nome funzione**|Nome della funzione.|
+|**Nome della funzione**|Nome della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo iniziale della funzione.|
 |**Inizio riga di origine**|Numero di riga iniziale nel file di origine in corrispondenza del quale si è verificata l'allocazione.|

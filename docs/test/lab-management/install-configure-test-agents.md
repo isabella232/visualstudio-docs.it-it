@@ -1,6 +1,6 @@
 ---
 title: Installare agenti di test e test controller
-description: Informazioni su come usare gli agenti di Visual Studio per orchestrare i test con Azure Test Plans o Team Foundation Server.
+description: Informazioni su come usare gli Visual Studio per orchestrare i test con Azure Test Plans o Team Foundation Server .
 ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f4951fbd64bd02c8f70b93ea319ab0d46f89e6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d4b472c7346c270e3c96e76170fd7c39be573e56bff1a0b0a06bb4872b7fdde
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920419"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121299294"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
 
@@ -30,8 +31,8 @@ La tabella seguente illustra i requisiti di sistema per l'installazione dell'age
 
 | Elemento | Requisiti |
 | ---- | ------------ |
-| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
-| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
+| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />R2 per Windows Server 2012 |
+| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />R2 per Windows Server 2012 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installare il test controller e gli agenti di test
@@ -59,7 +60,7 @@ Questi programmi di installazione sono disponibili come file ISO per facilitarne
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Versioni compatibili di TFS, il test controller e l'agente di test
+## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Versioni compatibili di TFS, del test controller e dell'agente di test
 
 È possibile combinare versioni diverse di TFS, il test controller e l'agente di test, in base alla tabella seguente:
 
@@ -87,5 +88,5 @@ La tabella seguente visualizza gli scenari supportati da Agents per Visual Studi
 | - | - |
 | Flusso di lavoro compilazione, distribuzione e test in Visual Studio | Gli utenti possono usare una [pipeline di compilazione](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (non una compilazione XAML) per gli scenari di compilazione, distribuzione e test in TFS. |
 | Test di carico (test delle prestazioni) usando computer remoti in posizioni locali | Per eseguire i test di carico in locale, usare Test Controller e Test Agents 2013 Update 5. |
-| Esecuzione remota di test automatizzati da Microsoft Test Manager (deprecata in Visual Studio 2017) con un ambiente lab | Attualmente non è disponibile nessuna alternativa per questo scenario. È consigliabile usare l'attività Esegui test funzionali nelle definizioni di compilazione e di versione (non in una compilazione XAML) per eseguire i test in modalità remota. |
+| Esecuzione remota di test automatizzati da Microsoft Test Manager (deprecata in Visual Studio 2017) usando un ambiente lab | Attualmente non è disponibile nessuna alternativa per questo scenario. È consigliabile usare l'attività Esegui test funzionali nelle definizioni di compilazione e di versione (non in una compilazione XAML) per eseguire i test in modalità remota. |
 | Sviluppatori che eseguono test remoti in Visual Studio | Non più supportata. |

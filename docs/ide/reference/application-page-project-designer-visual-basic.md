@@ -1,6 +1,6 @@
 ---
 title: Pagina Applicazione delle proprietà del progetto VB
-description: Informazioni su come usare la pagina applicazione di progettazione progetti Visual Basic per specificare le impostazioni e le proprietà dell'applicazione del progetto.
+description: Informazioni su come usare la pagina Applicazione di progettazione Visual Basic Project per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
@@ -13,20 +13,21 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 986179e66335403cda85ba48d1652ac95b9f8171
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6df9268a66e34e0b523356e118c444a94e4c73933fff7643da03df9c268f2ef0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836527"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121232679"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 Usare la pagina **Applicazione** di Creazione progetti per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 
-Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere   >  **proprietà** progetto dalla barra dei menu. Quando si apre **Creazione progetti**, selezionare la scheda **Applicazione**.
+Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Scegliere quindi **Project**  >  **proprietà** nella barra dei menu. Quando si apre **Creazione progetti**, selezionare la scheda **Applicazione**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -49,7 +50,7 @@ Specifica lo spazio dei nomi di base per tutti i file nel progetto. Ad esempio, 
 Se si deseleziona **Spazio dei nomi radice**, è possibile specificare nel codice la struttura dello spazio dei nomi del progetto.
 
 > [!NOTE]
-> Se si usa la parola chiave `Global` in un'[istruzione Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona lo **spazio dei nomi radice**, `Global` diventa lo spazio dei nomi di primo livello, che rimuove la necessità della `Global` parola chiave in un' `Namespace` istruzione. Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces) (Spazi dei nomi in Visual Basic).
+> Se si usa la parola chiave `Global` in un'[istruzione Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona spazio dei **nomi radice**, diventa lo spazio dei nomi di primo livello, che elimina la necessità della parola chiave `Global` in `Global` `Namespace` un'istruzione . Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces) (Spazi dei nomi in Visual Basic).
 
 Per informazioni su come creare spazi dei nomi nel codice, vedere [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement) (Istruzione Namespace).
 
@@ -96,7 +97,7 @@ Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco 
 
 ### <a name="icon"></a>Icona
 
-Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Selezionare **\<Browse...>** per cercare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) o [/win32icon (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Selezionare **\<Browse...>** questa opzione per cercare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) o [/win32icon (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Informazioni assembly
 
@@ -104,7 +105,7 @@ Fare clic su questo pulsante per visualizzare la [finestra di dialogo Informazio
 
 ### <a name="enable-application-framework"></a>Abilita framework applicazione
 
-Consente di specifica se un progetto deve usare il framework dell'applicazione. L'impostazione di questa opzione influiscono sulle opzioni disponibili nell'oggetto di avvio del modulo di **avvio** / .
+Consente di specifica se un progetto deve usare il framework dell'applicazione. L'impostazione di questa opzione influisce sulle opzioni disponibili in **Oggetto di avvio modulo** di / **avvio**.
 
 Se questa casella di controllo è selezionata, l'applicazione usa la procedura `Sub Main` standard. Se si seleziona questa casella di controllo, vengono abilitate le funzionalità della sezione **Proprietà framework applicazione Windows** ed è anche necessario selezionare un modulo di avvio.
 
@@ -112,7 +113,7 @@ Se questa casella di controllo è deselezionata, l'applicazione userà la proced
 
 ### <a name="view-windows-settings"></a>Visualizza impostazioni di Windows
 
-Fare clic su questo pulsante per generare e aprire il file *app. manifest* . Visual Studio usa questo file per generare i dati del manifesto per l'applicazione. Impostare quindi il livello di esecuzione richiesto per UAC modificando il `<requestedExecutionLevel>` tag in *app. manifest* come segue:
+Fare clic su questo pulsante per generare e aprire il file *app.manifest.* Visual Studio usa questo file per generare i dati del manifesto per l'applicazione. Impostare quindi il livello di esecuzione richiesto di Controllo dell'account utente modificando il `<requestedExecutionLevel>` tag in *app.manifest* come indicato di seguito:
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -155,7 +156,7 @@ Selezionare **Alla chiusura della finestra principale** per specificare che l'ap
 
 ### <a name="splash-screen"></a>Schermata iniziale
 
-Selezionare il modulo che si vuole usare come schermata iniziale. È necessario avere creato precedentemente una schermata iniziale tramite un modulo o un modello. Il valore predefinito è **(nessuno)**.
+Selezionare il modulo che si vuole usare come schermata iniziale. È necessario avere creato precedentemente una schermata iniziale tramite un modulo o un modello. Il valore predefinito **è (None).**
 
 ### <a name="view-application-events"></a>Visualizza eventi applicazione
 
@@ -179,7 +180,7 @@ Per altre informazioni sull'uso di questa impostazione, vedere <xref:System.Wind
 
 ### <a name="edit-xaml"></a>Modifica XAML
 
-Questo pulsante apre il file di definizione dell'applicazione (Application.xaml) nell'editor XAML. Quando si fa clic su questo pulsante, il file *Application. XAML* viene aperto in corrispondenza del nodo della definizione dell'applicazione. Potrebbe essere necessario modificare questo file per eseguire determinate attività, ad esempio la definizione delle risorse. Se il file di definizione dell'applicazione non esiste, Creazione progetti ne crea uno.
+Questo pulsante apre il file di definizione dell'applicazione (Application.xaml) nell'editor XAML. Quando si fa clic su questo pulsante, *Application.xaml* viene aperto in corrispondenza del nodo di definizione dell'applicazione. Potrebbe essere necessario modificare questo file per eseguire determinate attività, ad esempio la definizione delle risorse. Se il file di definizione dell'applicazione non esiste, Creazione progetti ne crea uno.
 
 ### <a name="view-application-events"></a>Visualizza eventi applicazione
 

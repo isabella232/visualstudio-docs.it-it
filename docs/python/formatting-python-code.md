@@ -6,25 +6,26 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7b03e99a70edd587c9dfe2a43d326a64d14b9193
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6852d06048acf86f50c8d56fb91bc8a298ec949d77d9a23afef5cc56adb68ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887887"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121230196"
 ---
 # <a name="format-python-code"></a>Formattare il codice Python
 
 Visual Studio consente di riformattare rapidamente il codice in base a opzioni di formattazione preconfigurate.
 
-- Per formattare una selezione: selezionare **modifica**  >    >  **selezione formato** avanzato oppure premere **CTRL** + **E**  >  **F**.
-- Per formattare l'intero file: selezionare **modifica**  >    >  **documento formato** avanzato oppure premere **CTRL** + **E**  >  **D**.
+- Per formattare una selezione: selezionare **Modifica**  >  **selezione formato**  >  **avanzata** o premere **CTRL** + **E**  >  **F**.
+- Per formattare l'intero file, selezionare **Modifica**  >  **documento**  >  **di formato avanzato** o premere  +   >  **CTRL+D.**
 
-Le opzioni vengono impostate tramite **strumenti**  >  **Opzioni**  >  **editor di testo**  >    >  **formattazione** Python e le relative schede nidificate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
+Le opzioni vengono impostate tramite Strumenti **Opzioni**  >  **Editor di** testo  >    >  **Formattazione Python**  >   e le relative schede annidate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
 
 ![Opzioni di formattazione di Python in Visual Studio](media/options-editor-formatting.png)
 
@@ -109,9 +110,9 @@ Le opzioni relative alle **istruzioni** consentono di controllare la riscrittura
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Fill Comment Paragraph (Riempi paragrafo commenti)
 
-**Modifica**  >  **Funzionalità avanzate**  >  **Riempimento paragrafo di commento** (**CTRL** + **e**  >  **P**) rifluisce e formatta il testo del commento, combinando le righe brevi e suddividendo quelle lunghe.
+**Modifica**  >  **Avanzate**  >  **Riempi paragrafo di commento** (**CTRL** E P ) ridisposi il testo dei commenti e lo formatta, combinando le righe brevi e +   >  suddividendo quelle lunghe.
 
-Ad esempio:
+Esempio:
 
 ```python
 # foo

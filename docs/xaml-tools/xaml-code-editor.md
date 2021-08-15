@@ -10,37 +10,38 @@ ms.custom: contperf-fy21q4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 672bfa6b28e364351f262cb2a2c6e2258ecd9746
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 438139cd8f19c7c94673829019bb4a965520df2ffb327186c5ddf48c45b4fd9f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879395"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121314407"
 ---
 # <a name="xaml-code-editor"></a>Editor di codice XAML
 
-L'editor di codice XAML [nell'IDE Visual Studio](../get-started/visual-studio-ide.md) include tutti gli strumenti necessari per creare app WPF e UWP per la piattaforma Windows e [per Xamarin.Forms.](/xamarin/xamarin-forms/user-interface/text/editor/) Questo articolo descrive sia il ruolo che l'editor di codice svolge quando si sviluppano app basate su XAML, sia le funzionalità univoche dell'editor di codice XAML in Visual Studio 2019.
+L'editor di codice XAML [nell'IDE di Visual Studio](../get-started/visual-studio-ide.md) include tutti gli strumenti necessari per creare app WPF e UWP per la piattaforma Windows e per [Xamarin.Forms.](/xamarin/xamarin-forms/user-interface/text/editor/) Questo articolo descrive sia il ruolo dell'editor di codice quando si sviluppano app basate su XAML che le funzionalità specifiche dell'editor di codice XAML in Visual Studio 2019.
 
-Per iniziare, diamo un'occhiata all'IDE (ambiente di sviluppo integrato) con un progetto WPF aperto. L'immagine seguente mostra diversi strumenti IDE chiave che verranno utilizzati insieme all'editor di codice XAML.
+Per iniziare, si esamini l'IDE (ambiente di sviluppo integrato) con un progetto WPF aperto. L'immagine seguente mostra alcuni degli strumenti IDE principali che verranno utilizzati insieme all'editor di codice XAML.
 
 :::image type="content" source="media/xaml-code-editor-overview-sml.png" alt-text="Ide Visual Studio 2019 con un progetto WPF aperto in XAML" lightbox="media/xaml-code-editor-overview-lrg.png":::
 
-In basso a sinistra dell'immagine in senso orario, i principali strumenti IDE sono i seguenti:
+Nella parte inferiore sinistra dell'immagine, in senso orario, i principali strumenti IDE sono i seguenti:
 
-- Finestra **[dell'editor di codice XAML](#xaml-code-editor-ui)** &mdash; nell'oggetto di questo articolo &mdash; in cui si crea e si modifica il codice.
+- Finestra **[dell'editor di](#xaml-code-editor-ui)** codice XAML &mdash; oggetto di questo articolo in cui si crea e si modifica il &mdash; codice.
 - Finestra **[finestra di progettazione XAML,](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)** in cui si progetta l'interfaccia utente.
-- Finestra **[ancorabile](../ide/reference/toolbox.md)** della casella degli strumenti, in cui aggiungere controlli all'interfaccia utente.
+- Finestra **[ancorabile](../ide/reference/toolbox.md)** della casella degli strumenti, in cui è possibile aggiungere controlli all'interfaccia utente.
 - Pulsante **[Debug,](../debugger/debugger-feature-tour.md)** in cui è possibile eseguire il codice ed eseguirne il debug. <br>È anche possibile modificare il codice in tempo reale durante il debug [con Ricaricamento rapido XAML](xaml-hot-reload.md).
 - Finestra **[Esplora soluzioni,](../ide/solutions-and-projects-in-visual-studio.md)** in cui è possibile gestire file, progetti e soluzioni.
-- Finestra **[Proprietà,](../ide/reference/properties-window.md)** in cui è possibile modificare l'aspetto dell'interfaccia utente e il funzionamento dei controlli dell'interfaccia utente.
+- Finestra **[Proprietà,](../ide/reference/properties-window.md)** in cui si modifica l'aspetto dell'interfaccia utente e il funzionamento dei controlli dell'interfaccia utente.
 
-Per continuare, si apprenderà di più sull'editor di codice XAML.
+Per continuare, è possibile ottenere altre informazioni sull'editor di codice XAML.
 
 ## <a name="xaml-code-editor-ui"></a>Interfaccia utente dell'editor di codice XAML
 
 Anche se la finestra dell'editor di codice per le app XAML condivide alcuni elementi dell'interfaccia utente visualizzati anche nell'IDE standard, include anche alcune funzionalità univoche che semplificano lo sviluppo di app XAML.
 
-Di seguito viene visualizzata la finestra dell'editor di codice XAML.
+Di seguito viene visualizzata la finestra dell'editor di codice XAML stessa.
 
 ![Finestra dell'editor di codice XAML in Visual Studio](media/xaml-code-editor-window.png "Screenshot della finestra dell'editor di codice XAML in Visual Studio 2019")
 
@@ -82,9 +83,9 @@ Nella seconda riga nella parte superiore della finestra del codice XAML sono dis
 
 Gli elenchi a discesa Finestra hanno funzioni diverse, come indicato di seguito:
 
-- Elemento: **finestra a** sinistra consente di visualizzare e passare agli elementi padre o di pari livello.
+- La **finestra Elemento: a** sinistra consente di visualizzare e passare agli elementi padre o di pari livello.
 
-  In particolare, mostra una visualizzazione di tipo struttura che rivela la struttura dei tag del codice. Quando si seleziona dall'elenco, lo stato attivo nell'editor di codice verrà allineato alla riga di codice che include l'elemento selezionato.
+  In particolare, mostra una visualizzazione simile a una struttura che rivela la struttura dei tag del codice. Quando si seleziona dall'elenco, lo stato attivo nell'editor di codice verrà allineato alla riga di codice che include l'elemento selezionato.
 
     ![Elenco a discesa Elemento: Finestra in Visual Studio](media/xaml-element-window-dropdown.png "Screenshot dell'elenco a discesa Elemento: Finestra in Visual Studio 2019")
 
@@ -96,23 +97,23 @@ Gli elenchi a discesa Finestra hanno funzioni diverse, come indicato di seguito:
 
 ### <a name="middle-pane-code-editor"></a>Riquadro centrale, editor di codice
 
-Il riquadro centrale è la parte "codice" dell'editor di codice XAML. Include la maggior parte delle funzionalità disponibili [nell'editor di codice IDE.](../get-started/tutorial-editor.md) Verranno trattate diverse funzionalità dell'IDE universale che consentono di sviluppare il codice XAML. Verranno anche evidenziate le funzionalità da univoco a XAML nell'IDE.
+Il riquadro centrale è la parte "codice" dell'editor di codice XAML. Include la maggior parte delle funzionalità disponibili [nell'editor di codice DELL.](../get-started/tutorial-editor.md) Verranno trattate diverse funzionalità dell'IDE universale che consentono di sviluppare il codice XAML. Verranno anche evidenziate le funzionalità da univoco a XAML nell'IDE.
 
 ![Editor di codice XAML, solo riquadro centrale, in Visual Studio](media/xaml-code-editor-middle.png "Screenshot dell'editor di codice XAML, solo riquadro centrale, in Visual Studio 2019")
 
 #### <a name="quick-actions"></a>Azioni rapide
 
-È possibile usare [Azioni rapide per](../ide/quick-actions.md) eseguire il refactoring, generare o modificare in altro modo il codice con una singola azione.
+È possibile usare [azioni rapide per](../ide/quick-actions.md) eseguire il refactoring, generare o modificare in altro modo il codice con una singola azione.
 
-Ad esempio, un'attività utile che è possibile  eseguire usando Azioni rapide è rimuovere gli utilizzi non necessari dal codice C# nella **scheda MainWindow.xaml.cs.**
+Ad esempio, un'attività utile che è possibile  eseguire usando Azioni rapide è rimuovere le using non necessarie dal codice C# nella **scheda MainWindow.xaml.cs.**
 
 Ecco come:
 
-1. Passare il puntatore del mouse su un'istruzione using, scegliere l'icona lampadina e quindi **scegliere Rimuovi** utilizzi non necessari dall'elenco a discesa.
+1. Passare il mouse su un'istruzione using, scegliere l'icona a forma di lampadina e quindi scegliere **Remove Unnecessary Usings** (Rimuovi using non necessari) dall'elenco a discesa.
 
-    ![Opzione "Rimuovi utilizzi non necessari" dell'editor IDE dal menu Azioni rapide](media/xaml-code-editor-remove-usings.png "Screenshot dell'opzione Rimuovi using non necessari dell'editor IDE dal menu Azioni rapide")
+    ![Opzione "Rimuovi using non necessari" dell'editor IDE dal menu Azioni rapide](media/xaml-code-editor-remove-usings.png "Screenshot dell'opzione Rimuovi using non necessari dell'editor IDE dal menu Azioni rapide")
 
-1. Scegliere se correggere tutte le occorrenze nel **documento**, **nel progetto** o nella **soluzione**.
+1. Scegliere se correggere tutte le occorrenze nel documento **,** nel **Project** o nella **soluzione**.
 1. Visualizzare la **finestra di** dialogo Anteprima e quindi scegliere **Applica.**
 
 È anche possibile accedere a questa funzionalità dalla barra dei menu. A tale scopo, scegliere **Modifica**  >  **IntelliSense**  >  **Rimuovi e ordina using.**
@@ -145,17 +146,17 @@ Ecco cosa fa ogni funzionalità e come è utile:
 
 - **Visualizza codice:** apre la finestra del codice del linguaggio di programmazione, in genere a schede accanto alla visualizzazione predefinita che include la finestra Progettazione e l'editor di codice XAML.
 - **Progettazione visualizzazioni:** apre la visualizzazione predefinita che include la finestra Progettazione e l'editor di codice XAML. Se si è già nella visualizzazione predefinita, non esegue alcuna operazione.
-- **Azioni rapide e refactoring: refactoring,** genera o modifica in altro modo il codice con una singola azione. Quando si passa il mouse sul codice, viene visualizzata un'icona a forma di lampadina quando è disponibile un'azione rapida o un refactoring. <br>Vedere anche: [Azioni rapide e](../ide/quick-actions.md) [refactoring del codice](../ide/refactoring-in-visual-studio.md).
+- **Azioni rapide e refactoring:** consente di eseguire il refactoring, generare o modificare in altro modo il codice con una singola azione. Quando si passa il mouse sul codice, viene visualizzata un'icona a forma di lampadina quando è disponibile un'azione rapida o un refactoring. <br>Vedere anche: [Azioni rapide ed](../ide/quick-actions.md) eseguire il [refactoring del codice.](../ide/refactoring-in-visual-studio.md)
 - **Rinomina...** - Rinomina solo gli spazi dei nomi. Se non si ha uno spazio dei nomi da rinominare, verrà visualizzato un messaggio di errore che indica che è possibile rinominare solo i prefissi degli spazi dei nomi.
 - **Rimuovi e ordina spazi dei nomi:** rimuove gli spazi dei nomi inutilizzati e quindi ordina gli spazi dei nomi che rimangono.
-- **Visualizza definizione:** visualizza in anteprima la definizione di un tipo senza uscire dalla posizione corrente nell'editor. <br>Vedere anche: [Visualizzare la definizione](../ide/go-to-and-peek-definition.md#peek-definition) e visualizzare e modificare il codice usando Visualizza [definizione](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
-- **Vai a definizione:** passa all'origine di un tipo o di un membro e apre il risultato in una nuova scheda. <br>Vedere anche: [Vai a definizione](../ide/go-to-and-peek-definition.md#go-to-definition).
-- **Racchiudere con...** - Usare frammenti di codice racchiusi tra loro, che vengono aggiunti intorno a un blocco di codice selezionato. <br>Vedere anche: [Frammenti di espansione e frammenti di codice racchiusi.](../ide/code-snippets.md#expansion-snippets-and-surround-with-snippets)
+- **Visualizza definizione:** visualizza in anteprima la definizione di un tipo senza uscire dalla posizione corrente nell'editor. <br>Vedere anche: [Visualizza definizione](../ide/go-to-and-peek-definition.md#peek-definition) e [Visualizza e modifica del codice usando Visualizza definizione.](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- **Vai a definizione:** consente di passare all'origine di un tipo o di un membro e di aprire il risultato in una nuova scheda. <br>Vedere anche: [Vai a definizione.](../ide/go-to-and-peek-definition.md#go-to-definition)
+- **Racchiudere tra...** - Usare frammenti di codice racchiusi, che vengono aggiunti intorno a un blocco di codice selezionato. <br>Vedere anche: [Frammenti di espansione e frammenti racchiusi.](../ide/code-snippets.md#expansion-snippets-and-surround-with-snippets)
 - **Inserisci frammento:** inserisce un frammento di codice nella posizione del cursore.
 - **Taglia** - Auto-esplicativo
 - **Copia** - Auto-esplicativo
 - **Incolla** - Auto-esplicativo
-- **Struttura: espandere** e comprimere sezioni di codice. <br>Vedere anche: [Struttura .](../ide/outlining.md)
+- **Struttura: espandere** e comprimere sezioni di codice. <br>Vedere anche: [Struttura di](../ide/outlining.md).
 - **Controllo del codice** sorgente: consente di visualizzare la cronologia dei contributi di codice a un repository open source.
 
 ### <a name="middle-pane-scroll-bar"></a>Riquadro centrale, barra di scorrimento
@@ -176,7 +177,7 @@ Per altre informazioni su come dividere una finestra dell'editor, vedere la [pag
 
 Altri apprezzano *l'uso della modalità mappa*, che visualizza le righe di codice in miniatura sulla barra di scorrimento. Gli sviluppatori che dispongono di una grande quantità di codice in un file potrebbero trovare che la modalità di mapping tiene traccia delle righe di codice in modo più efficace rispetto alla barra di scorrimento predefinita.
 
-Per altre informazioni su come modificare le impostazioni predefinite della barra di scorrimento, vedere Personalizzare la [pagina della barra di scorrimento.](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
+Per altre informazioni su come modificare le impostazioni predefinite della barra di scorrimento, vedere la pagina [Personalizzare la barra di scorrimento.](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
 
 ## <a name="xaml-specific-features"></a>Funzionalità specifiche di XAML
 
@@ -184,7 +185,7 @@ La maggior parte delle funzionalità seguenti è disponibile universalmente nell
 
 ### <a name="xaml-code-snippets"></a>Frammenti di codice XAML
 
-I frammenti di codice sono piccoli blocchi di codice riutilizzabile che è possibile inserire  in un file di codice usando il comando del menu di scelta rapida Inserisci frammento di codice o una combinazione di tasti di scelta rapida (**CTRL** + **K**, **CTRL** + **X**). [IntelliSense](../ide/using-intellisense.md) è stato migliorato in modo che supporti la visualizzazione di frammenti XAML, che funzionano sia per i frammenti predefiniti che per i frammenti personalizzati aggiunti manualmente. Alcuni frammenti di codice XAML disponibili includono `#region` , , , e `Column definition` `Row definition` `Setter` `Tag` .
+I frammenti di codice sono piccoli blocchi di codice riutilizzabile che è possibile inserire  in un file di codice usando il comando di menu di scelta rapida Inserisci frammento di codice o una combinazione di tasti di scelta rapida (**CTRL** + **K**, **CTRL** + **X**). [IntelliSense](../ide/using-intellisense.md) è stato migliorato in modo da supportare la visualizzazione di frammenti XAML, che funzionano sia per i frammenti predefiniti che per eventuali frammenti personalizzati aggiunti manualmente. Alcuni frammenti DI CODICE XAML includono `#region` , , , e `Column definition` `Row definition` `Setter` `Tag` .
 
 ![Editor di codice XAML con le opzioni del frammento di codice XAML visualizzate in IntelliSense](media/xaml-code-snippets.png "Screenshot dell'editor di codice XAML con le opzioni del frammento di codice XAML visualizzate in IntelliSense")
 
@@ -192,7 +193,7 @@ Per altre informazioni, vedere le pagine [Frammenti di codice e](../ide/code-sni
 
 ### <a name="xaml-region-support"></a>Supporto #region XAML
 
-A partire da Visual Studio 2015, è stato reso disponibile #region supporto per gli sviluppatori XAML in WPF e UWP e più di recente anche in [Xamarin.Forms.](/xamarin/xamarin-forms/user-interface/text/editor/) Nel Visual Studio 2019 si continuano a apportare miglioramenti incrementali #region supporto. Ad esempio, nella [versione 16.4](/visualstudio/releases/2019/release-notes-v16.4/) e successive, le #region vengono mostrate quando si inizia a digitare `<!` .
+A partire da Visual Studio 2015, è stato reso disponibile #region supporto per gli sviluppatori XAML in WPF e UWP e, più di recente, anche in [Xamarin.Forms.](/xamarin/xamarin-forms/user-interface/text/editor/) Nel Visual Studio 2019 continuano a essere apportati miglioramenti incrementali al #region 2019. Nella versione [16.4](/visualstudio/releases/2019/release-notes-v16.4/) e successive, ad esempio, #region vengono mostrate quando si inizia a digitare `<!` .
 
 ![Editor di codice XAML con #region opzioni visualizzate in IntelliSense](media/code-editor-xaml-region.png "Screenshot dell'editor di codice XAML con #region opzioni visualizzate in IntelliSense")
 
@@ -204,18 +205,18 @@ A partire da Visual Studio 2015, è stato reso disponibile #region supporto per 
     <!--#endregion-->
 ```
 
-Per altre informazioni sulle aree, vedere la [pagina #region (Riferimenti per C#).](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region/) Per altre informazioni sull'espansione e la compressione di sezioni di codice, vedere la [pagina Struttura.](../ide/outlining.md)
+Per altre informazioni sulle aree, vedere la [#region (Riferimenti per C#).](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region/) Per altre informazioni sull'espansione e la compressione di sezioni di codice, vedere la [pagina Struttura.](../ide/outlining.md)
 
 ### <a name="xaml-comments"></a>Commenti XAML
 
-Gli sviluppatori preferiscono spesso documentare il codice usando i commenti. È possibile aggiungere commenti al codice XAML presente nella **scheda MainWindow.xaml** nei modi seguenti:
+Gli sviluppatori spesso preferiscono documentare il codice usando i commenti. È possibile aggiungere commenti al codice XAML presente nella **scheda MainWindow.xaml** nei modi seguenti:
 
 - Immettere `<!--` prima di un commento e quindi aggiungere dopo il `-->` commento.
 - Immettere `<!` e quindi scegliere `!--` dall'elenco di opzioni.
 
-  ![Nell'editor di codice XAML fare clic con il pulsante destro del mouse sulla finestra di dialogo Aggiungi commenti](media/xaml-code-editor-comments.png "Screenshot del menu di scelta rapida per aggiungere commenti nell'editor di codice XAML")
+  ![L'editor di codice XAML fa clic con il pulsante destro del mouse sulla finestra di dialogo Aggiungi commenti](media/xaml-code-editor-comments.png "Screenshot del menu di scelta rapida per aggiungere commenti nell'editor di codice XAML")
 
-- Selezionare il codice da racchiudere in un commento e quindi scegliere il pulsante **Commento** sulla barra degli strumenti nell'IDE. Per invertire l'azione, scegliere il **pulsante Rimuovi** commento.
+- Selezionare il codice che si vuole racchiudere tra un commento e quindi scegliere il **pulsante Commento** sulla barra degli strumenti nell'IDE. Per invertire l'azione, scegliere il **pulsante Rimuovi** commento.
 
   ![Pulsante Commento e Pulsante Rimuovi commento nella barra degli strumenti dell'IDE](media/comment-undo-comment-buttons.png "Screenshot del pulsante Commento e del pulsante Rimuovi commento nella barra degli strumenti dell'IDE")
 
@@ -235,7 +236,7 @@ Ecco alcuni esempi di come possono trarre vantaggio dall'esperienza di scrittura
 
 - **Rinominare lo spazio dei nomi**. Questa funzionalità, disponibile dal menu di scelta rapida dopo aver evidenziato uno spazio dei nomi, semplifica la modifica di più istanze di un'impostazione contemporaneamente. È anche possibile accedere a questa funzionalità usando la barra dei **menu,** Modifica  >  **refactoring** Rinomina oppure premendo CTRL R e quindi  >  di  +  **nuovo CTRL** + **R.**
 
-  ![Opzione Rinomina spazio dei nomi dell'editor di codice XAML dal menu di scelta rapida](media/code-editor-rename-namespace.png "Screenshot dell'opzione Rinomina spazio dei nomi dell'editor di codice XAML visualizzata usando il menu di scelta rapida con il pulsante destro del mouse")
+  ![Opzione Rinomina spazio dei nomi dell'editor di codice XAML dal menu di scelta rapida](media/code-editor-rename-namespace.png "Screenshot dell'opzione Rinomina spazio dei nomi dell'editor di codice XAML visualizzata tramite il menu di scelta rapida")
 
   Per altre informazioni, vedere la pagina [Di rinominare un refactoring dei simboli di](../ide/reference/rename.md) codice.
 
@@ -245,17 +246,17 @@ XAML condizionale consente di usare il metodo [ApiInformation.IsApiContractPrese
 
 Per altre informazioni, vedi la [pagina XAML](/windows/uwp/debug-test-perf/conditional-xaml/) condizionale e la pagina Ospitare controlli [XAML UWP nelle app desktop (isole XAML).](/windows/apps/desktop/modernize/xaml-islands/)
 
-### <a name="xaml-structure-visualizer"></a>Visualizzatore struttura XAML
+### <a name="xaml-structure-visualizer"></a>Visualizzatore di strutture XAML
 
-La funzionalità Visualizzatore struttura nell'editor di codice mostra le linee guida della struttura, ovvero linee tratteggiate verticali che indicano elementi tag aperti e chiusi corrispondenti nel codice. Queste linee verticali rendono più semplice vedere dove iniziano e terminano i blocchi logici.
+La funzionalità Visualizzatore struttura nell'editor di codice mostra le linee guida della struttura, ovvero linee tratteggiate verticali che indicano la corrispondenza di elementi tag aperti e chiusi nel codice. Queste linee verticali rendono più semplice vedere dove iniziano e terminano i blocchi logici.
 
-Per altre informazioni, vedere la tabella [codici Esplorazione.](../ide/navigating-code.md)
+Per altre informazioni, vedere la [tabella codici Navigate.](../ide/navigating-code.md)
 
 ### <a name="intellicode-for-xaml"></a>IntelliCode per XAML
 
-Quando si aggiunge un tag XAML al codice, in genere si inizia con una parentesi uncinata `<` sinistra. Quando si digita la parentesi uncinata, viene visualizzato un menu IntelliCode che elenca alcuni dei tag XAML più diffusi. Scegliere quello che si vuole aggiungere rapidamente al codice.
+Quando si aggiunge un tag XAML al codice, in genere si inizia con una parentesi uncinata `<` aperta. Quando si digita la parentesi uncinata, viene visualizzato un menu IntelliCode che elenca alcuni dei tag XAML più diffusi. Scegliere quella che si vuole aggiungere rapidamente al codice.
 
-È possibile riconoscere le selezioni IntelliCode perché vengono visualizzate nella parte superiore dell'elenco e sono contrassegnate da stelle.
+È possibile riconoscere le selezioni IntelliCode perché vengono visualizzate all'inizio dell'elenco e sono contrassegnate.
 
 ![Elenco IntelliCode per l'editor di testo XAML](media/xaml-intellicode-selection.png "Screenshot dell'elenco IntelliCode per l'editor di testo XAML")
 
@@ -263,28 +264,28 @@ Per altre informazioni, vedere la [pagina Panoramica di IntelliCode.](/visualstu
 
 ### <a name="settings"></a>Impostazioni
 
-Per altre informazioni su *tutte le* impostazioni nell'IDE Visual Studio, vedere la pagina [Funzionalità dell'editor di](../ide/writing-code-in-the-code-and-text-editor.md) codice.
+Per altre informazioni su *tutte le* impostazioni nell'IDE Visual Studio, vedere funzionalità della [pagina dell'editor di](../ide/writing-code-in-the-code-and-text-editor.md) codice.
 
 ## <a name="xaml-optional-settings"></a>Impostazioni facoltative XAML
 
-È possibile usare la [finestra di](../ide/reference/options-dialog-box-visual-studio.md) dialogo Opzioni per modificare le impostazioni predefinite per l'editor di codice XAML. Per visualizzare le impostazioni, **scegliere** Strumenti  >  **Opzioni** Editor  >  **di testo**  >  **XAML.**
+È possibile usare la [finestra di](../ide/reference/options-dialog-box-visual-studio.md) dialogo Opzioni per modificare le impostazioni predefinite per l'editor di codice XAML. Per visualizzare le impostazioni, scegliere **Strumenti** Opzioni  >  **Editor**  >  **di testo**  >  **XAML.**
 
 ![Elenco Opzioni per l'editor di testo XAML](media/xaml-tools-options.png "Screenshot dell'elenco Opzioni per l'editor di testo XAML")
 
 > [!NOTE]
-> È anche possibile usare i tasti di scelta rapida per accedere alla finestra di dialogo Opzioni. Ecco come: Premere **CTRL** + **Q** per cercare nell'IDE, digitare **Opzioni** e quindi premere **INVIO.** Premere quindi **CTRL** E per cercare nella finestra di dialogo Opzioni, digitare Editor di +  testo, premere **INVIO,** digitare **XAML** e quindi **premere INVIO.** 
+> È anche possibile usare i tasti di scelta rapida per accedere alla finestra di dialogo Opzioni . Ecco come: Premere **CTRL** + **Q** per cercare nell'IDE, digitare **Opzioni** e quindi premere **INVIO.** Premere quindi **CTRL** E per cercare nella finestra di dialogo Opzioni, digitare +  Editor **di** testo, premere **INVIO,** digitare **XAML** e quindi premere **INVIO.**
 >
-> Per altre informazioni sui tasti di scelta rapida, vedere la [pagina Suggerimenti Visual Studio](../ide/productivity-shortcuts.md#code-editor) collegamento.
+> Per altre informazioni sui tasti di scelta rapida, vedere la [pagina Suggerimenti relativi ai Visual Studio](../ide/productivity-shortcuts.md#code-editor) tastiera.
 
 ### <a name="universal-text-editor-options"></a>Opzioni dell'editor di testo universale
 
-Nella finestra [di dialogo](../ide/reference/options-text-editor-xaml-formatting.md) Opzioni per XAML i primi tre elementi seguenti sono universali per tutti i linguaggi di programmazione supportati dall Visual Studio IDE. Per altre informazioni su queste opzioni e su come usarle, vedere le informazioni collegate nella tabella seguente.
+Nella finestra [di dialogo](../ide/reference/options-text-editor-xaml-formatting.md) Opzioni per XAML i primi tre elementi seguenti sono universali per tutti i linguaggi di programmazione supportati Visual Studio IDE. Per altre informazioni su queste opzioni e su come usarle, vedere le informazioni collegate nella tabella seguente.
 
 |Nome  |Altre informazioni  |
 |---------|---------|
 |Generale  | [Finestra di dialogo Opzioni: Editor di testo > tutti i linguaggi](../ide/reference/options-text-editor-all-languages.md) |
 |Barre di scorrimento | [Opzioni, Editor di testo, Tutti i linguaggi, Barre di scorrimento](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
-|Tabulazioni  |  [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../ide/reference/options-text-editor-all-languages-tabs.md) |
+|Schede  |  [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../ide/reference/options-text-editor-all-languages-tabs.md) |
 
 ### <a name="xaml-specific-text-editor-options"></a>Opzioni dell'editor di testo specifiche di XAML
 

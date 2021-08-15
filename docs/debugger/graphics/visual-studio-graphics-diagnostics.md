@@ -10,24 +10,25 @@ ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b6b769131831a0f1f94aa4fcc8e94a9a88bf9890
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 5487210ddf84e139c434bb33342b6cbcd21a77bf87c86755b08dbb5e5698b856
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386124"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121311544"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
 >[!NOTE]
-> Visual Studio consiglia PIX in Windows per i giochi DirectX 12. [PIX in Windows è](https://aka.ms/PIXonWindows) uno strumento di ottimizzazione e debug delle prestazioni che supporta completamente DirectX 12. [Altre informazioni o](visual-studio-graphics-diagnostics-directx-12.md) download [sono disponibili qui.](https://aka.ms/downloadPIX)
+> Visual Studio consiglia PIX su Windows per i giochi DirectX 12. [PIX in Windows](https://aka.ms/PIXonWindows) è uno strumento di ottimizzazione e debug delle prestazioni che supporta completamente DirectX 12. [Altre informazioni o](visual-studio-graphics-diagnostics-directx-12.md) download [sono disponibili qui.](https://aka.ms/downloadPIX)
 
 *Diagnostica della grafica* di Visual Studio è un set di strumenti per la registrazione e l'analisi dei problemi di prestazioni e di rendering nelle app Direct3D. Può essere usato su app eseguite localmente in un computer Windows, in un emulatore di dispositivo Windows oppure in un computer o un dispositivo remoto.
 
- Il flusso di lavoro di Diagnostica grafica inizia con l'acquisizione di informazioni sul modo in cui l'app usa Direct3D durante l'esecuzione, in modo che il comportamento possa essere analizzato immediatamente, condiviso o salvato per un momento successivo. Le sessioni di acquisizione possono essere avviate e controllate manualmente da Visual Studio o con lo strumento di acquisizione da riga di **comandodxcap.exe**. Le sessioni di acquisizione possono anche essere avviate e controllate a livello di codice usando le DIAGNOSTICA DELLA GRAFICA di acquisizione.
+ Il flusso di lavoro di Diagnostica grafica inizia con l'acquisizione di informazioni sul modo in cui l'app usa Direct3D durante l'esecuzione, in modo che il comportamento possa essere analizzato immediatamente, condiviso o salvato per un momento successivo. Le sessioni di acquisizione possono essere avviate e controllate manualmente da Visual Studio o con lo strumento di acquisizione da riga di **comandodxcap.exe**. Le sessioni di acquisizione possono anche essere avviate e controllate a livello di codice usando le API di Diagnostica della grafica di acquisizione.
 
- Dopo la registrazione di una sessione di acquisizione, è possibile riprodurne il contenuto in qualsiasi momento con *Analizzatore grafica* di Visual Studio, ricreando i frame acquisiti mediante le stesse risorse e gli stessi comandi di rendering usati dall'app. Usando quindi gli strumenti disponibili nella finestra Analizzatore grafica, tutti i frame acquisiti possono essere analizzati in dettaglio. Questi strumenti consentono di esaminare qualsiasi chiamata alle API Direct3D, risorsa, oggetto di stato della pipeline, fase della pipeline o anche la cronologia completa di qualsiasi pixel in un frame acquisito. Usando questi strumenti insieme si può esplorare un problema di rendering in modo intuitivo, a partire dal modo in cui si manifesta in un frame acquisito ed eseguendo il drill-down alla causa radice nel codice sorgente dell'app, negli shader o nelle risorse grafiche.
+ Dopo la registrazione di una sessione di acquisizione, è possibile riprodurne il contenuto in qualsiasi momento con *Analizzatore grafica* di Visual Studio, ricreando i frame acquisiti mediante le stesse risorse e gli stessi comandi di rendering usati dall'app. Usando quindi gli strumenti disponibili nella finestra Analizzatore grafica, è possibile analizzare in dettaglio i frame acquisiti. Questi strumenti consentono di esaminare qualsiasi chiamata alle API Direct3D, risorsa, oggetto di stato della pipeline, fase della pipeline o anche la cronologia completa di qualsiasi pixel in un frame acquisito. Usando questi strumenti insieme si può esplorare un problema di rendering in modo intuitivo, a partire dal modo in cui si manifesta in un frame acquisito ed eseguendo il drill-down alla causa radice nel codice sorgente dell'app, negli shader o nelle risorse grafiche.
 
  Per diagnosticare i problemi di prestazioni, è possibile analizzare un frame acquisito usando lo strumento *Analisi dei frame*. Questo strumento esplora le potenziali ottimizzazioni delle prestazioni modificando automaticamente il modo in cui l'app usa Direct3D ed effettuando un benchmark di tutte le variazioni. In passato questi benchmark e queste modifiche venivano eseguiti manualmente, semplicemente per verificare quali modifiche creassero effettivamente una differenza. Grazie ad Analisi dei frame, è possibile apportare solo modifiche di cui si conosce già il valore.
 
@@ -44,19 +45,19 @@ ms.locfileid: "112386124"
 
  [Utilizzo GPU](../../profiling/gpu-usage.md) Per usare Diagnostica della grafica profilare l'app, usare lo strumento Utilizzo GPU. Utilizzo GPU può essere usato insieme ad altri strumenti di profilatura, ad esempio Utilizzo CPU, per correlare le attività della CPU e GPU che potrebbero contribuire a problemi di prestazioni nell'app.
 
- [Documento di log di grafica](graphics-log-document.md) Per iniziare l'esame di un log di grafica registrato, usare la finestra del documento Log di grafica per selezionare un frame acquisito, o anche un pixel specifico, in modo da poter esaminare in dettaglio gli eventi *(ovvero* le chiamate api DirectX) che lo interessano.
+ [Documento di log di grafica](graphics-log-document.md) Per iniziare l'esame di un log di grafica registrato, usare la finestra del documento Log di grafica per selezionare un frame acquisito, o anche un pixel specifico, in modo da poter esaminare in dettaglio gli eventi *che* lo interessano, ovvero le chiamate all'API DirectX.
 
- [Analisi dei frame](graphics-frame-analysis.md) Dopo aver selezionato un frame, è possibile usare analisi dei frame di grafica esaminare e ottimizzare le prestazioni di rendering.
+ [Analisi dei frame](graphics-frame-analysis.md) Dopo aver selezionato un frame, è possibile usare analisi dei frame di grafica per esaminare e ottimizzare le prestazioni di rendering.
 
  [Elenco eventi](graphics-event-list.md) Dopo aver selezionato un frame, usare l'Elenco **eventi di grafica** per esaminarne gli eventi per determinare se sono correlati al problema di rendering.
 
- [Stato](graphics-state.md) La finestra Stato consente di comprendere lo stato grafico attivo al momento dell'evento corrente.
+ [Stato](graphics-state.md) La finestra Stato consente di comprendere lo stato della grafica attivo al momento dell'evento corrente.
 
- [Fasi della pipeline](graphics-pipeline-stages.md) Nella finestra **Fasi pipeline** grafica si esamina il modo in cui l'evento attualmente selezionato viene elaborato da ogni fase della pipeline grafica, in modo da poter identificare dove viene visualizzato per la prima volta il problema di rendering. L'esame delle fasi della pipeline è particolarmente utile quando un oggetto non viene visualizzato a causa di una trasformazione non corretta o quando una delle fasi produce output non corrispondente a quanto atteso dalla fase successiva.
+ [Fasi della pipeline](graphics-pipeline-stages.md) Nella finestra **Fasi pipeline** grafica si esamina il modo in cui l'evento attualmente selezionato viene elaborato da ogni fase della pipeline grafica in modo da poter identificare la prima posizione in cui viene visualizzato il problema di rendering. L'esame delle fasi della pipeline è particolarmente utile quando un oggetto non viene visualizzato a causa di una trasformazione non corretta o quando una delle fasi produce output non corrispondente a quanto atteso dalla fase successiva.
 
  [Stack di chiamate eventi](graphics-event-call-stack.md) Lo stack **di chiamate degli eventi** di grafica viene utilizzato per esaminare lo stack di chiamate dell'evento attualmente selezionato, in modo da poter passare al codice dell'app correlato al problema di rendering.
 
- [Cronologia pixel](graphics-pixel-history.md) Usando la finestra **Cronologia pixel** grafica per analizzare il modo in cui il pixel attualmente selezionato è interessato dagli eventi che lo hanno influenzato, è possibile identificare l'evento o la combinazione di eventi che causano determinati tipi di problemi di rendering. La cronologia del pixel è particolarmente utile quando il rendering di un oggetto viene eseguito in modo errato, perché l'output del pixel shader è a sua volta errato o è combinato in modo errato con il buffer del frame, o quando un oggetto non viene nemmeno visualizzato in quanto i pixel vengono rimossi prima ancora di raggiungere il buffer frame.
+ [Cronologia pixel](graphics-pixel-history.md) Usando la finestra Cronologia **pixel** grafica per analizzare il modo in cui il pixel attualmente selezionato è interessato dagli eventi che lo hanno influenzato, è possibile identificare l'evento o la combinazione di eventi che causano determinati tipi di problemi di rendering. La cronologia del pixel è particolarmente utile quando il rendering di un oggetto viene eseguito in modo errato, perché l'output del pixel shader è a sua volta errato o è combinato in modo errato con il buffer del frame, o quando un oggetto non viene nemmeno visualizzato in quanto i pixel vengono rimossi prima ancora di raggiungere il buffer frame.
 
  [Tabella oggetti](graphics-object-table.md) La tabella **oggetti grafici viene utilizzata** per esaminare le proprietà e il contenuto di risorse e oggetti Direct3D specifici in uso per l'evento attualmente selezionato. La tabella degli oggetti può aiutare a determinare il contesto dei dispositivi grafici attivi durante un evento nonché a esaminare i contenuti di risorse grafiche come i buffer costanti, i buffer vertici e le trame.
 
@@ -64,7 +65,7 @@ ms.locfileid: "112386124"
 
  [Strumento di acquisizione da riga di comando](command-line-capture-tool.md) Usare lo strumento di acquisizione da riga di comando per acquisire e riprodurre rapidamente le informazioni grafiche senza Visual Studio o a livello di codice. In particolare, è possibile usare lo strumento di acquisizione da riga di comando per l'automazione o in un ambiente di test.
 
- [Esempi](graphics-diagnostics-examples.md) Diversi esempi illustrano come usare gli strumenti Diagnostica della grafica insieme per diagnosticare diversi tipi di problemi di rendering.
+ [Esempi](graphics-diagnostics-examples.md) Diversi esempi illustrano come usare gli strumenti di Diagnostica della grafica insieme per diagnosticare diversi tipi di problemi di rendering.
 
 ## <a name="related-sections"></a>Sezioni correlate
 

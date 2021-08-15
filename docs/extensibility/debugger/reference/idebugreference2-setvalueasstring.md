@@ -1,6 +1,6 @@
 ---
 description: Imposta il valore di un riferimento da una stringa.
-title: 'IDebugReference2:: SetValueAsString | Microsoft Docs'
+title: IDebugReference2::SetValueAsString | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9eb557adcd9748f559d0d0c27877b84343c8fc98
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ad19f6e2f27f09128986c5b99d743061921b95eb7824ad816396860535eaecb1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075770"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338514"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Imposta il valore di un riferimento da una stringa. Riservato per utilizzi futuri.
@@ -46,13 +47,13 @@ int SetValueAsString (
 
 ## <a name="parameters"></a>Parametri
 `pszValue`\
-in Valore sotto forma di stringa.
+[in] Valore come stringa.
 
 `dwRadix`\
-in La radice da usare per la formattazione di qualsiasi informazione numerica.
+[in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
 
 `dwTimeout`\
-in Tempo massimo, in millisecondi, di attesa prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
+[in] Tempo massimo di attesa, in millisecondi, prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.

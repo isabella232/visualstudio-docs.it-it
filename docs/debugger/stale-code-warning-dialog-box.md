@@ -1,6 +1,6 @@
 ---
-title: Finestra di dialogo avviso di codice non aggiornato | Microsoft Docs
-description: Leggere la finestra di dialogo avviso di codice non aggiornato, che viene visualizzato quando sono state apportate modifiche al codice nativo che modifica e continuazione non possono essere applicate immediatamente.
+title: Finestra di dialogo Avviso di codice non | Microsoft Docs
+description: Informazioni sulla finestra di dialogo Avviso di codice non obsoleto, che viene visualizzata quando sono state apportate modifiche al codice nativo che Non è stato possibile applicare immediatamente a Modifica e continuazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,14 +20,15 @@ ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ea2004680a60fcd2c90a57b19f719c0412ee53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8e65b43f0679c0a624a6c34fce0f7fc0ce19e46fb7307b4a5b497fd1e2424f4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861244"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121310946"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Avviso di codice non aggiornato (finestra di dialogo)
 

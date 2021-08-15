@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 2234efa7bc15381660a86d670ae07673355c4d9b
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 339249a58c4b5120328ad4e549da9144a6b162a65dca38c588a020fa42154d3a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680010"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121229143"
 ---
 # <a name="debug-r-in-visual-studio"></a>Eseguire il debug di R in Visual Studio
 
@@ -36,7 +37,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 Si noti che come origine dello script viene usata la funzione `rtvs::debug_source`. Questa funzione è obbligatoria, perché RTVS deve modificare il codice in preparazione al debug. Quando si usa un comando di sourcing RTVS e un debugger è collegato, Visual Studio usa automaticamente `rtvs::debug_source`.
 
-È anche possibile collegare manualmente il debugger dalla finestra interattiva direttamente usando il comando Debugger di collegamento sessione di **R Tools,** il comando Collega a R interattivo o il comando Collega debugger sulla barra degli strumenti della finestra  >    >     >   interattiva.  Dopo avere eseguito questa operazione, è responsabilità dell'utente eseguire il sourcing dei file di cui vuole eseguire il debug. Se si vuole eseguire manualmente il sourcing dei file, assicurarsi di usare `rtvs::debug_source` e non il comando `source` normale in R.
+È anche possibile collegare manualmente il debugger dalla finestra interattiva direttamente usando il comando R **Tools**  >  **Session**  >  **Attach Debugger,** il comando Debug  >  **Attach to R interattivo o** il  comando Attach Debugger sulla barra degli strumenti della finestra interattiva. Dopo avere eseguito questa operazione, è responsabilità dell'utente eseguire il sourcing dei file di cui vuole eseguire il debug. Se si vuole eseguire manualmente il sourcing dei file, assicurarsi di usare `rtvs::debug_source` e non il comando `source` normale in R.
 
 Questa connessione tra il debugger e la finestra interattiva semplifica alcune operazioni, come ad esempio la chiamata e il debugging di una funzione con valori di parametro diversi. Ad esempio, si supponga di avere la funzione seguente in un file originato, ovvero caricato nella sessione:
 

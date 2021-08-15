@@ -1,29 +1,30 @@
 ---
 title: Set di regole estese di correttezza per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole di correttezza estesa in Visual Studio, utile per l'interoperabilità COM e per le applicazioni per dispositivi mobili. Vedere le descrizioni delle regole.
+description: Informazioni sul set di regole di correttezza estesa in Visual Studio, utile per l'interoperabilità COM e le applicazioni per dispositivi mobili. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: a70a0315d596e4490d40db1846d7be0b6f3bf448
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8600b06e7450148fffe2d2fc0dbb5f957a1edc855e466d105814528adf0d5d7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860373"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121405409"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
 
-Il set di regole di correttezza estesa Microsoft ottimizza gli errori di utilizzo della logica e del framework segnalati dall'analisi del codice. L'enfasi aggiuntiva si trova in scenari specifici, ad esempio l'interoperabilità COM e le applicazioni per dispositivi mobili. È consigliabile includere questo set di regole se uno di questi scenari si applica al progetto o per trovare ulteriori problemi nel progetto.
+Il set di regole Microsoft Extended Correctness Rules ottimizza la logica e gli errori di utilizzo del framework segnalati dall'analisi del codice. Particolare attenzione viene posta su scenari specifici, ad esempio l'interoperabilità COM e le applicazioni per dispositivi mobili. È consigliabile includere questo set di regole se uno di questi scenari si applica al progetto o per individuare altri problemi nel progetto.
 
-Il set di regole Microsoft Extended Correctity Rules include le regole del set di regole [base di correttezza](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) , che contiene le regole del set di regole [consigliate gestite](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
+Il set di regole di Microsoft Extended Correctness Rules include le regole incluse nel set di regole Regole di correttezza di base, che contiene le regole presenti nel set di regole regole consigliate [gestite.](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) [](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)
 
-Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Extended Correctity Rules.
+Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Extended Correctness Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -67,7 +68,7 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA2137](../code-quality/ca2137.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare I LinkDemand|
+|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare LinkDemands|
 |[CA2146](../code-quality/ca2146.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

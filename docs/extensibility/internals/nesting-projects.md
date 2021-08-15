@@ -13,23 +13,24 @@ ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b562cac794b7ab960f055fe67a5d0cc4ec871f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 86998a5af95a8c8460bfe70c09bc456bde37701d06d1a382663c0c7d83f139ab
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063221"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321324"
 ---
 # <a name="nesting-projects"></a>Annidamento dei progetti
-Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto VS possono raggruppare in modo pratico tipi simili di progetti in utilizzando l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *annidamento del progetto*. Il progetto modello Enterprise, ad esempio, USA i progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti dell'interfaccia utente Web e così via sono raggruppati in un'unica categoria.
+Enterprise sviluppatori di applicazioni che usano il pacchetto VS possono raggruppare facilmente tipi simili di progetti in usando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *l'annidamento del progetto*. Ad esempio, il progetto Enterprise modello usa progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti di interfaccia utente Web e così via sono raggruppati in un'unica categoria.
 
- In questo scenario non esiste alcun limite al numero di progetti che lo sviluppatore può annidare in ogni progetto padre, sebbene lo sviluppatore possa fornire i limiti a livello di codice. Questo tipo di raggruppamento può anche essere reso ricorsivo, nel qual caso i progetti dello stesso tipo di un progetto figlio possono essere annidati sotto l'elemento figlio per diventare un sottoprogetto del figlio, che è un sottoprogetto dell'elemento padre.
+ In questo scenario non esiste alcun limite al numero di progetti che lo sviluppatore può annidare in ogni progetto padre, anche se lo sviluppatore può fornire limiti a livello di codice. Questo tipo di raggruppamento può anche essere reso ricorsivo, nel qual caso i progetti dello stesso tipo di un progetto figlio possono essere annidati sotto l'elemento figlio per diventare un sottoprogetto dell'elemento figlio, ovvero un sottoprogetto dell'elemento padre.
 
- L'annidamento del progetto non è una parte intrinseca di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . È necessario scrivere il codice per abilitare l'annidamento e la nidificazione del sottoprogetto nei progetti figlio. Il progetto padre è un VSPackage speciale o un tipo di progetto, creato e registrato con il proprio GUID che include il codice necessario per implementare l'annidamento del progetto.
+ Project annidamento non è una parte intrinseca di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . È necessario scrivere il codice per abilitare l'annidamento e l'annidamento di sottoprogetti all'interno di progetti figlio. Il progetto padre è un vspackage speciale, o tipo di progetto, creato e registrato con il proprio GUID che include il codice necessario per implementare l'annidamento del progetto.
 
- È possibile trovare un esempio su come annidare i progetti in [procedura: implementare progetti annidati](../../extensibility/internals/how-to-implement-nested-projects.md).
+ È possibile trovare un esempio su come annidare i progetti in [Procedura: Implementare progetti annidati.](../../extensibility/internals/how-to-implement-nested-projects.md)
 
 ## <a name="nested-projects-example"></a>Esempio di progetti annidati
  ![Soluzione di progetti annidati](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Esempio di progetti annidati

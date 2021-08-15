@@ -1,6 +1,6 @@
 ---
-title: Elemento SupportsMasterPage (modelli di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento SupportsMasterPage e su come specifica se la casella di controllo Seleziona pagina master o meno è abilitata nella finestra di dialogo Aggiungi nuovo elemento.
+title: Elemento SupportsMasterPage (Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento SupportsMasterPage e su come specifica se la casella di controllo Seleziona pagina master è abilitata o meno nella finestra di dialogo Aggiungi nuovo elemento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3b779b3626c4ff47fe798fa9f4ff2e7bc9c7ac8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4138f7ffdb227c0a7bacd09fb514d2d22c63d5962ab3c9787b616dedde3d8d38
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056038"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121320973"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Elemento SupportsMasterPage (modelli di Visual Studio)
-Specifica se la casella di controllo **Seleziona pagina master** è abilitata o meno nella finestra di dialogo **Aggiungi nuovo elemento** .
+Specifica se la casella di controllo **Seleziona pagina master** è abilitata nella finestra **di** dialogo Aggiungi nuovo elemento .
 
  \<VSTemplate> \<TemplateData>
  \<SupportsMasterPage>
@@ -39,26 +39,26 @@ Specifica se la casella di controllo **Seleziona pagina master** è abilitata o 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Specifica i dati che categorizzano il modello e ne definisce la modalità di visualizzazione nella finestra di dialogo **nuovo progetto** o **nuovo elemento** .|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Specifica i dati che classificano il modello e ne definisce la modalità di visualizzazione nella finestra **di dialogo Project** o **Nuovo** elemento .|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve essere `true` o `false` , che indica se la casella di controllo **Seleziona pagina master** è abilitata o meno nella finestra di dialogo **Aggiungi nuovo elemento** .
+ Il testo deve essere o , che indica se la casella di controllo Seleziona pagina master è abilitata nella finestra di dialogo `true` `false` Aggiungi nuovo elemento .  
 
 ## <a name="remarks"></a>Commenti
  `SupportsMasterPage` è un elemento facoltativo. Il valore predefinito è `false`.
 
- L' `SupportsMasterPage` elemento è disponibile solo per i modelli di elemento Web.
+ `SupportsMasterPage`L'elemento è disponibile solo per i modelli di elemento Web.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente vengono illustrati i metadati per un progetto Web che include il supporto per una pagina master.

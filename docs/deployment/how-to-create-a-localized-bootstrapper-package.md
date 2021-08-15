@@ -1,5 +1,5 @@
 ---
-title: Creare un pacchetto del programma di avvio automatico localizzato | Microsoft Docs
+title: Creare un pacchetto localizzato del programma di | Microsoft Docs
 description: Informazioni su come creare versioni localizzate del pacchetto del programma di avvio automatico in ClickOnce creando altri due file per ogni impostazione locale.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -12,17 +12,18 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a9d1fc91dcb385a9250dde3adb47c0d9553147f
-ms.sourcegitcommit: 6aa55db5e1fe19d4d17886e0bfe140dbd186f8ba
+ms.openlocfilehash: 460a9cccef237de8632b080140c1e792c19faeac6ab8db177237247a02580b5a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111877715"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121324496"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto localizzato del programma di avvio automatico
-Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare versioni localizzate del pacchetto creando altri due file per ogni impostazione locale: un file delle condizioni di licenza software (ad esempio *eula.rtf)* e un manifesto del pacchetto (*package.xml*).
+Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare versioni localizzate del pacchetto creando altri due file per ogni impostazione locale: un file delle condizioni di licenza software (ad esempio *eula.rtf)* e un manifesto del pacchetto *(package.xml*).
 
  Per impostazione predefinita, Visual Studio 2010 include i pacchetti localizzati del programma di avvio automatico solo per .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. È possibile creare pacchetti localizzati per altri programmi di avvio automatico completando tre passaggi.
 
@@ -43,7 +44,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 
      Nei computer a 32 bit creare la cartella nella cartella *\Programmi\Microsoft SDKs\ClickOnce Bootstrapper\Packages. \\ \<BootstrapperPackageName> \\*
 
-     Nei computer a 64 bit creare la cartella nella cartella *\Programmi (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages. \\ \<BootstrapperPackageName> \\*
+     Nei computer a 64 bit creare la cartella nella cartella *\Programmi (x86)\Microsoft SDKs\ClickOnce \\ \<BootstrapperPackageName> \\ Bootstrapper\Packages.*
 
      La tabella seguente illustra i nomi di cartella che è possibile usare in base alle impostazioni locali.
 
@@ -84,7 +85,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 
 2. Inserire una versione localizzata delle condizioni di licenza software nella cartella *fr*.
 
-3. Copiare il file di Bootstrapper\Packages\DotNetFX35SP1\en\package.xml *\Programmi (x86)\Microsoft SDKs\ClickOnce* nella cartella *fr* e aprire il file in Progettazione XML.
+3. Copiare il file *\Programmi (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* nella cartella *fr* e aprire il file in Progettazione XML.
 
 4. Aggiornare la sezione `<Strings>` del manifesto di pacchetto in modo che le stringhe di errore siano in francese.
 

@@ -11,14 +11,15 @@ ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e53b2b804433f7e9450f34dac5b21e45710cd71c
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: d8b8da73935d4d170416c2717f5d64ebfe949640d5f9d6b4b2bc4bf113438966
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900772"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262945"
 ---
 # <a name="ports"></a>Porte
 Nell'architettura del debugger, una *porta*:
@@ -29,11 +30,11 @@ Nell'architettura del debugger, una *porta*:
 
 - Può enumerare tutti i processi in esecuzione sulla porta e avviare e terminare questi processi.
 
-- È rappresentato da [un'interfaccia IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) creata passando un [argomento IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) ad [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).
+- È rappresentato da [un'interfaccia IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) creata passando un [argomento IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) ad [AddPort.](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
 
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce una porta predefinita che gestisce tutti i processi basati su Windows, sia nativi che gestiti. È necessario configurare una porta personalizzata per le connessioni con dispositivi esterni non basati su Windows. Per fornire tali porte personalizzate, è necessario configurare anche un fornitore di porte personalizzato.
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce una porta predefinita che gestisce tutti Windows processi basati su , sia nativi che gestiti. È necessario configurare una porta personalizzata per le connessioni con dispositivi esterni che non Windows basati su dispositivi. Per fornire tali porte personalizzate, è necessario configurare anche un fornitore di porte personalizzato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Processi](../../extensibility/debugger/processes.md)
 - [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)

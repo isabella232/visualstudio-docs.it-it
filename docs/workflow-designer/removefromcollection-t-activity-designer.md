@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner ActivityDesigner RemoveFromCollection &lt; T &gt;
-description: In Progettazione flussi di lavoro, informazioni su come usare l'ActivityDesigner ActivityDesigner RemoveFromCollection <T> per creare e configurare un'attività ActivityDesigner RemoveFromCollection <T> .
+title: ActivityDesigner RemoveFromCollection &lt; T &gt;
+description: In Progettazione flussi di lavoro informazioni su come usare l'ActivityDesigner RemoveFromCollection per creare e configurare <T> un'attività <T> RemoveFromCollection.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,38 +10,39 @@ ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdaf7172c00d80e5e7615bfcadcc1fb6233c257
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a859a1d927ec0ca85a5a77d06b2ec4532dfe508745fa1a3c2f5708246bf087fa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847362"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243367"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>Activity Designer\<T> RemoveFromCollection
 
-L' **ActivityDesigner \<T> ActivityDesigner RemoveFromCollection** viene usato per creare e configurare un' <xref:System.Activities.Statements.RemoveFromCollection%601> attività.
+**L'ActivityDesigner \<T> RemoveFromCollection** viene usato per creare e configurare un'attività. <xref:System.Activities.Statements.RemoveFromCollection%601>
 
-## <a name="the-removefromcollectiontactivity"></a>Attività ActivityDesigner RemoveFromCollection \<T>
+## <a name="the-removefromcollectiontactivity"></a>Attività \<T> RemoveFromCollection
 
 L'attività <xref:System.Activities.Statements.RemoveFromCollection%601> rimuove un determinato elemento da una raccolta specifica.
 
-### <a name="using-the-removefromcollectiont-activity-designer"></a>Utilizzo dell'ActivityDesigner \<T> ActivityDesigner RemoveFromCollection
+### <a name="using-the-removefromcollectiont-activity-designer"></a>Uso dell'ActivityDesigner RemoveFromCollection \<T>
 
-Accedere all' **ActivityDesigner \<T> ActivityDesigner RemoveFromCollection** nella categoria **raccolta** della **casella degli strumenti**.
-È possibile trascinare l'ActivityDesigner **ActivityDesigner RemoveFromCollection \<T>** dalla **casella degli strumenti** e rilasciarlo nell'area Progettazione flussi di lavoro quando vengono in genere posizionate le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Viene creata un' <xref:System.Activities.Statements.RemoveFromCollection%601> attività con il valore predefinito <xref:System.Activities.Activity.DisplayName%2A> ActivityDesigner RemoveFromCollection<Int32 \> . Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **ActivityDesigner RemoveFromCollection<T \>** o nella casella **DisplayName** della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
+Accedere **all'ActivityDesigner RemoveFromCollection \<T>** nella **categoria Raccolta** della Casella degli **strumenti.**
+**L'ActivityDesigner \<T> RemoveFromCollection** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Verrà creata <xref:System.Activities.Statements.RemoveFromCollection%601> un'attività con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito RemoveFromCollection<Int32. \> Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **RemoveFromCollection<\> T** o nella casella **DisplayName** della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
 
-### <a name="the-removefromcollectiont-properties"></a>Proprietà di ActivityDesigner RemoveFromCollection<T \>
+### <a name="the-removefromcollectiont-properties"></a>Proprietà removeFromCollection<\> T
 
-Nella tabella seguente vengono illustrate le <xref:System.Activities.Statements.RemoveFromCollection%601> proprietà e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione:
+Nella tabella seguente vengono illustrate <xref:System.Activities.Statements.RemoveFromCollection%601> le proprietà e viene descritto come vengono utilizzate nella finestra di progettazione:
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.RemoveFromCollection%601>. Il valore predefinito è ActivityDesigner RemoveFromCollection<Int32 \> .<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Vero|Elemento da rimuovere dalla **raccolta \<T>**. Questo elemento è di tipo *T*, che è di tipo *TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Vero|Raccolta da cui rimuovere l'elemento. Questa raccolta è di tipo **ICollection<TypeArgument \> .** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|*TypeArgument*|Vero|Tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo tipo di *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata della griglia delle proprietà.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.RemoveFromCollection%601>. Il valore predefinito è RemoveFromCollection<\> Int32.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Vero|Elemento da rimuovere **dall'insieme \<T>**. Questo elemento è di tipo *T*, che è di *tipo TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Vero|Raccolta da cui deve essere rimosso l'elemento. Questa raccolta è di tipo **ICollection<TypeArgument \> .** Per specificare la raccolta, digitare un'Visual Basic nella griglia delle proprietà.|
+|*TypeArgument*|Vero|Tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo *tipo TypeArgument* è impostato su **Int32.** Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata nella griglia delle proprietà.|
 |<xref:System.Activities.Activity%601.Result%2A>|Falso|Valore che indica se l'elemento specificato è stato rimosso dalla raccolta. Per specificare una variabile da associare al risultato, digitare una variabile Visual Basic nella griglia delle proprietà.|
 
 ## <a name="see-also"></a>Vedi anche

@@ -11,14 +11,15 @@ ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 09156b8d99daa5cbfd065110073c3c185c3ac0a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f023d9822d25bbcb2b50f37ad5d78400945cd907a535f58e6efd7bf13bf0e474
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161016"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121312020"
 ---
 # <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
 Recupera i byte di dati di un simbolo OEM.
@@ -36,26 +37,26 @@ HRESULT get_dataBytes (
 #### <a name="parameters"></a>Parametri
  `cbData`
 
-in Dimensione del buffer in cui memorizzare i dati.
+[in] Dimensione del buffer in cui contenere i dati.
 
  `pcbData`
 
-out Restituisce il numero di byte scritti oppure, se il `data` parametro è `NULL` , restituisce il numero di byte disponibili.
+[out] Restituisce il numero di byte scritti oppure, se il `data` parametro è , restituisce il numero di byte `NULL` disponibili.
 
  `data[]`
 - [out,] Buffer compilato con i byte di dati.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedi anche

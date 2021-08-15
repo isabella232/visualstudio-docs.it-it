@@ -11,17 +11,18 @@ ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 319b10658950eb5c7e9f8972e6af8f9f5146980d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5ec0844ce76be009e0111cc5edfc71350f05037d685aaa4d793b7e9446a9b891
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091487"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401817"
 ---
 # <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -48,18 +49,18 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 `tokMethod`\
 ID della matrice di cui fa parte questo elemento.
 
-[C++] `_mdToken` è un oggetto `typedef` per un oggetto a 32 bit `int` .
+[C++] `_mdToken` è un `typedef` oggetto per un oggetto a 32 `int` bit.
 
 `dwIndex`\
 Indice di questo elemento all'interno della matrice.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_ARRAYELEM` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
+Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` di `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_ARRAYELEM` dati). [](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: sh. h
+Intestazione: sh.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

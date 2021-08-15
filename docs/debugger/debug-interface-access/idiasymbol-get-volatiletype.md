@@ -11,14 +11,15 @@ ms.assetid: 19782a4d-40a8-467b-ab7d-58bc4d812309
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d2f1a49b55fd7006aa69f40e532356aded64b0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3bfde9541f787d3c573880c94f7d4b62ea09e8f7babb6c7aa7eed3a2dcb9f404
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161711"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240448"
 ---
 # <a name="idiasymbolget_volatiletype"></a>IDiaSymbol::get_volatileType
 Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) è volatile.
@@ -34,16 +35,16 @@ HRESULT get_volatileType (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se il tipo definito dall'utente è volatile; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il tipo definito dall'utente è volatile; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- In C++, un tipo definito dall'utente può essere contrassegnato con la `volatile` parola chiave, che indica che il contenuto non può essere considerato esistente da un accesso a quello successivo.
+ In C++ un tipo definito dall'utente può essere contrassegnato con la parola chiave , a indicare che non è possibile presunirne il contenuto da un `volatile` accesso a quello successivo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

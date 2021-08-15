@@ -1,6 +1,6 @@
 ---
 title: Creare modelli di progetto
-description: Informazioni su come usare l'esportazione guidata modelli e altri metodi per creare modelli di progetto in Visual Studio.
+description: Informazioni su come usare l'Esportazione guidata modelli e altri metodi per creare modelli di progetto in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
@@ -11,12 +11,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: a823d6a519da286e5c6df8947d64934a244c1985
-ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
+ms.technology: vs-ide-general
+ms.openlocfilehash: 8ccc1c8570d5028a8fee84d12efb583a1a6ce8be23dd468a3b63dcc32696d15f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105933771"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121319335"
 ---
 # <a name="how-to-create-project-templates"></a>Procedura: Creare modelli di progetto
 
@@ -31,25 +32,25 @@ Questo argomento spiega come creare un modello usando l'**Esportazione guidata m
 
 2. Modificare il progetto finché non è pronto per l'esportazione come modello. Ad esempio, può essere necessario modificare i file del codice per indicare dove deve essere applicata la sostituzione dei parametri. Vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).
 
-3. Scegliere **Esporta modello** dal menu **progetto** .
+3. Nel menu **Project** scegliere **Esporta modello**.
 
-   Verrà visualizzata l' **esportazione guidata modelli** .
+   Verrà **visualizzata l'Esportazione guidata** modello.
 
 4. Nella pagina **Scegliere il tipo di modello** selezionare **Modello di progetto**. Selezionare il progetto che si vuole esportare in un modello e quindi scegliere **Avanti**.
 
 ::: moniker range="vs-2017"
 
-5. Nella pagina **Seleziona opzioni modello** immettere un nome e una descrizione facoltativa, un'icona e un'immagine di anteprima per il modello. Questi elementi verranno visualizzati nella finestra di dialogo **Nuovo progetto**. Scegliere **Fine**.
+5. Nella pagina **Selezione opzioni modello** immettere un nome e una descrizione facoltativa, un'icona e un'immagine di anteprima per il modello. Questi elementi verranno visualizzati nella finestra di dialogo **Nuovo progetto**. Scegliere **Fine**.
 
    Il progetto viene esportato in un file con estensione *zip*, inserito nel percorso di output specificato e, se questa azione è stata selezionata, importato in Visual Studio.
 
-Per trovare il modello nella finestra di dialogo **Nuovo progetto**, espandere **Installato** e quindi espandere la categoria che corrisponde all'elemento `ProjectType` nel file con estensione *vstemplate*. Ad esempio, un file con estensione *vstemplate* che contiene `<ProjectType>CSharp</ProjectType>` appare in **Installato** > **Visual C#** per impostazione predefinita. È possibile organizzare il modello in una sottodirectory del tipo di progetto semplicemente creando una cartella in quella directory e inserendo il file con estensione *zip* del modello nella cartella. Per altre informazioni, vedere [procedura: individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Per trovare il modello nella finestra di dialogo **Nuovo progetto**, espandere **Installato** e quindi espandere la categoria che corrisponde all'elemento `ProjectType` nel file con estensione *vstemplate*. Ad esempio, un file con estensione *vstemplate* che contiene `<ProjectType>CSharp</ProjectType>` appare in **Installato** > **Visual C#** per impostazione predefinita. È possibile organizzare il modello in una sottodirectory del tipo di progetto semplicemente creando una cartella in quella directory e inserendo il file con estensione *zip* del modello nella cartella. Per altre informazioni, vedere [Procedura: Individuare e organizzare i modelli.](../ide/how-to-locate-and-organize-project-and-item-templates.md)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Nella pagina **Seleziona opzioni modello** immettere un nome e una descrizione facoltativa, un'icona e un'immagine di anteprima per il modello. Questi elementi verranno visualizzati nella finestra di dialogo in cui si crea un nuovo progetto. Scegliere **Fine**.
+5. Nella pagina **Selezione opzioni modello** immettere un nome e una descrizione facoltativa, un'icona e un'immagine di anteprima per il modello. Questi elementi verranno visualizzati nella finestra di dialogo in cui si crea un nuovo progetto. Scegliere **Fine**.
 
    Il progetto viene esportato in un file con estensione *zip*, inserito nel percorso di output specificato e, se questa azione è stata selezionata, importato in Visual Studio.
 
@@ -66,6 +67,6 @@ Se Visual Studio SDK è installato, è possibile eseguire il wrapping del modell
 ## <a name="see-also"></a>Vedi anche
 
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Procedura: Creare modelli di elemento](../ide/how-to-create-item-templates.md)
 - [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 - [Personalizzare modelli di progetto e modelli di elemento](customizing-project-and-item-templates.md)

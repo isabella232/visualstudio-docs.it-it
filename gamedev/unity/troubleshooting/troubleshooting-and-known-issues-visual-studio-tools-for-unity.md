@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi e problemi noti (VS Tools per Unity)
-description: Per informazioni sulla risoluzione dei problemi, vedere Visual Studio Tools per Unity. Vedere le descrizioni dei problemi noti e informazioni sulle soluzioni a tali problemi.
+description: Informazioni sulla risoluzione dei problemi in Visual Studio Tools per Unity. Vedere le descrizioni dei problemi noti e le relative soluzioni.
 ms.custom: ''
 ms.date: 04/15/2021
 ms.technology: vs-unity-tools
@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 37ee35fa66d37f9b85af01f5012e8ede76e877de
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: a824c945bfc32e4d00b3573e3284a759b7797dcc53552dd99ae6bd276310f572
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879369"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121313770"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Risoluzione dei problemi e problemi noti (Visual Studio Tools per Unity)
 
@@ -27,11 +27,11 @@ In questa sezione verranno illustrate le soluzioni a problemi comuni relativi a 
 
 ### <a name="confirm-editor-attaching-is-enabled-or-code-optimization-on-startup-is-set-to-debug"></a>Confermare `Editor Attaching` che è abilitato o è impostato `Code Optimization On Startup` su `Debug`
 
-Nel menu unity selezionare `Edit / Preferences` .
+Nel menu di Unity selezionare `Edit / Preferences` .
 
 A seconda della versione di Unity usata:
 - Verificare che `Code Optimization On Startup` sia impostato su `Debug` .
-- Oppure selezionare la `External Tools` scheda. Verificare che la casella `Editor Attaching` di controllo sia abilitata. 
+- Oppure selezionare la `External Tools` scheda. Verificare che la casella di `Editor Attaching` controllo sia abilitata. 
 
 Per altre informazioni, vedere le preferenze nella [documentazione di Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
@@ -60,19 +60,19 @@ Questo dovrebbe risolvere il problema. Nel caso in cui il problema si verifichi 
 
 ## <a name="visual-studio-stops-responding"></a>Visual Studio smette di rispondere
 
-Alcuni plug-in Unity come Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usano thread nativi. Il problema si verifica quando un plug-in tenta di collegare un thread nativo al runtime, causando il blocco delle chiamate al sistema operativo. Questo significa che Unity non può interrompere il thread per il debugger (o il ricaricamento del dominio) e non rispondere.
+Alcuni plug-in Unity come Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usano thread nativi. Il problema si verifica quando un plug-in tenta di collegare un thread nativo al runtime, causando il blocco delle chiamate al sistema operativo. Ciò significa che Unity non può interrompere il thread per il debugger (o ricaricare il dominio) e smettere di rispondere.
 
 Per FMOD, è disponibile una soluzione alternativa che consiste nel passare il [flag](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) di inizializzazione `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` per disabilitare l'elaborazione asincrona ed eseguire tutte le elaborazioni nel thread principale.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Progetto incompatibile in Visual Studio
 
-La cosa molto importante da sapere è che Visual Studio salva lo stato "Incompatibile" nelle impostazioni del progetto e non tenterà di ricaricare un progetto fino a quando non si usa in modo esplicito `Reload Project` . Quindi, dopo ogni passaggio della risoluzione dei problemi, assicurarsi di provare ad aprire nuovamente la soluzione e provare a fare clic con il pulsante destro del mouse su tutti i progetti incompatibili e scegliere `Reload Project` .
+L'aspetto molto importante da sapere è che Visual Studio salva lo stato "Incompatibile" nelle impostazioni del progetto e non tenterà di ricaricare un progetto finché non si usa in modo esplicito `Reload Project` . Quindi, dopo ogni passaggio della risoluzione dei problemi, assicurarsi di provare ad aprire nuovamente la soluzione e di provare a fare clic con il pulsante destro del mouse su tutti i progetti incompatibili e scegliere `Reload Project` .
 
-1. Verificare che Visual Studio impostato come editor di script esterno in Unity usando `Edit / Preferences / External Tools` .
+1. Verificare che Visual Studio sia impostato come editor di script esterno in Unity usando `Edit / Preferences / External Tools` .
 2. A seconda della versione di Unity:
-   - Verificare che il Visual Studio plug-in sia installato in Unity. `Help / About` dovrebbe visualizzare un messaggio simile Microsoft Visual Studio strumenti per Unity è abilitato nella parte inferiore.
-   - Unity 2020.x+: verificare di usare il pacchetto Visual Studio Editor più recente in `Window / Package Manager` .
-3. Provare a eliminare tutti i progetti/file di soluzione e `.vs` la cartella nel progetto.
+   - Verificare che il plug-Visual Studio sia installato in Unity. `Help / About`dovrebbe visualizzare un messaggio simile Microsoft Visual Studio strumenti per Unity è abilitato nella parte inferiore.
+   - Unity 2020.x+: verificare di usare il pacchetto dell'editor Visual Studio più recente in `Window / Package Manager` .
+3. Provare a eliminare tutti i progetti/file di soluzione `.vs` e la cartella nel progetto.
 4. Provare a ricreare progetti/soluzioni usando `Open C# Project` o `Edit / Preferences / External tools / Regenerate Project files` .
 5. Assicurarsi di aver installato il carico di lavoro Game/Unity in Visual Studio.
 6. Provare a pulire la cache MEF come illustrato [qui.](#visual-studio-crashes)
@@ -189,7 +189,7 @@ Sono stati segnalati alcuni casi di blocco di Visual Studio durante il debug con
     bt all
     ```
 
-Inviare infine il dump del thread a , insieme a una descrizione delle attività che si stava eseguendo quando il Visual Studio [vstusp@microsoft.com](mailto:vstusp@microsoft.com) si è bloccato.
+Infine, inviare il dump del thread a , insieme a una descrizione di ciò che si stava facendo quando Visual Studio [vstusp@microsoft.com](mailto:vstusp@microsoft.com) è stato bloccato.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,22 +1,23 @@
 ---
 title: Inviare un processo per eseguire il training di un modello
-description: Inviare un processo per eseguire il training di un modello usando Azure Batch intelligenza artificiale
+description: Inviare un processo per eseguire il training di un modello usando Azure Batch per intelligenza artificiale
 ms.custom: SEO-VS-2020
 keywords: intelligenza artificiale, visual studio, training modello, cloud
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: e1bb1d0bde1b564fe9a35f3527c7b3803c7e9d78
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 317a80db384468709676acf7c400152e6d49365a8b44cc6d03fafda60c9c6ab7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841302"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121313354"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Eseguire il training dei modelli di intelligenza artificiale in Azure Batch per intelligenza artificiale
 
@@ -30,9 +31,9 @@ Batch per intelligenza artificiale è un servizio gestito che consente ai data s
 
 2. Espandere **AI Tools** (Strumenti AI). Tutte le risorse di Batch per intelligenza artificiale disponibili verranno rilevate automaticamente e visualizzate in Esplora server.
 
-    ![Screenshot dell'albero delle cartelle espansa per gli strumenti di intelligenza artificiale in Esplora server, che mostra le sottocartelle espanse per Azure Batch AI e Azure Machine Learning.](media/train-model/batchai.png)
+    ![Screenshot dell'albero delle cartelle espanso per strumenti di intelligenza artificiale in Esplora server, che mostra le sottocartelle espanse per Azure Batch per intelligenza artificiale e Azure Machine Learning.](media/train-model/batchai.png)
 
-3. Selezionare **visualizza > Team Explorer...** per aprire la finestra **Team Explorer** in cui è possibile connettersi a GitHub o Azure DevOps oppure clonare un repository.
+3. Selezionare **Visualizza > Team Explorer...** per aprire  la finestra Team Explorer in cui è possibile connettersi a GitHub o Azure DevOps o clonare un repository.
 
     ![Finestra Team Explorer con Azure DevOps, GitHub e la clonazione di un repository](media/train-model/team-explorer-devops.png)
 
@@ -43,19 +44,19 @@ Batch per intelligenza artificiale è un servizio gestito che consente ai data s
 
 5. Dopo il completamento della clonazione fare clic su **File > Apri soluzione > Progetto/Soluzione**
 
-    ![Screenshot che mostra parte del menu file Esplora server con il comando Apri selezionato e progetto/soluzione selezionato nel menu di scelta rapida.](media/train-model/open-solution.png)
+    ![Screenshot che mostra parte del menu Esplora server file con il comando Apri selezionato e Project/Soluzione selezionato nel menu di scelta rapida.](media/train-model/open-solution.png)
 
 6. Aprire **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** nella directory in cui è stato clonato il repository
 
-    ![Screenshot che mostra il file della soluzione TensorflowExamples. sln elencato nel contenuto della cartella TensorflowExamples nel repository Samples-for-ai.](media/train-model/tensorflowexamples.png)
+    ![Screenshot che mostra il file di soluzione TensorflowExamples.sln elencato nel contenuto della cartella TensorflowExamples nel repository samples-for-ai.](media/train-model/tensorflowexamples.png)
 
 7. Impostare il progetto MNIST come **Progetto di avvio**
 
-    ![Screenshot che mostra l'opzione imposta come progetto di avvio selezionato nel menu di scelta rapida per il progetto MNIST in Esplora soluzioni.](media/train-model/mnist-startup.png)
+    ![Screenshot che mostra l'opzione Imposta come Project selezionata nel menu di scelta rapida per il progetto MNIST in Esplora soluzioni.](media/train-model/mnist-startup.png)
 
-8. <strong>Fare clic con il pulsante destro del mouse **sul progetto MNIST,** **Invia processo**</strong>
+8. <strong>Fare clic con il pulsante **destro del mouse sul progetto MNIST,** invia **processo**</strong>
 
-    ![Screenshot che mostra il processo di invio selezionato nel menu di scelta rapida per il progetto MNIST in Esplora soluzioni.](media/train-model/submit-job.png)
+    ![Screenshot che mostra l'opzione Invia processo selezionata nel menu di scelta rapida per il progetto MNIST in Esplora soluzioni.](media/train-model/submit-job.png)
 9. Selezionare il cluster **Azure Batch per intelligenza artificiale** e quindi fare clic su **Importa**. Selezionare il file `AzureBatchAI_TF_MNIST.json` per inserire velocemente alcuni valori predefiniti, ad esempio l'immagine di Docker da usare. Fare clic su **Invia**.
 
-    ![Screenshot della finestra di dialogo Invia processo con i valori popolati per USA cluster, script di avvio, nome del processo, nome dell'immagine, prefisso del percorso StdOutErr e parametri dell'interfaccia della riga di comando.](media/train-model/submit-batch.png)
+    ![Screenshot della finestra di dialogo Invia processo con i valori popolati per Usa cluster, Script di avvio, Nome processo, Nome immagine, Prefisso percorso StdOutErr e parametri dell'interfaccia della riga di comando.](media/train-model/submit-batch.png)

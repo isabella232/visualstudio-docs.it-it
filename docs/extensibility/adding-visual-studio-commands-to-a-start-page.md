@@ -11,19 +11,20 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 0bf0f9a3db21dd93b1a497731bca9142a4377acc
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 9ab2fc534b2ef986b15102667bd23e108ea4c69256fe64516b0df08595b1157c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901513"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403502"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Aggiungere Visual Studio comandi a una pagina iniziale
 
-Quando si crea una pagina iniziale personalizzata, è possibile aggiungervi Visual Studio comandi. Questo documento illustra i diversi modi per associare Visual Studio comandi xaml agli oggetti XAML in una pagina iniziale.
+Quando si crea una pagina iniziale personalizzata, è possibile aggiungervi Visual Studio comandi personalizzati. Questo documento illustra i diversi modi per associare Visual Studio comandi xaml agli oggetti XAML in una pagina iniziale.
 
 Per altre informazioni sui comandi in XAML, vedere [Panoramica dei comandi](/dotnet/framework/wpf/advanced/commanding-overview)
 
@@ -97,7 +98,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="add-commands-with-the-dte-object"></a>Aggiungere comandi con l'oggetto DTE
  È possibile accedere all'oggetto DTE da una pagina iniziale, sia nel markup che nel codice.
 
- Nel markup è possibile accedervi usando la sintassi dell'estensione [di markup](/dotnet/framework/wpf/advanced/binding-markup-extension) di associazione per chiamare l'oggetto <xref:EnvDTE.DTE> . È possibile usare questo approccio per eseguire l'associazione a proprietà semplici, ad esempio quelle che restituiscono raccolte, ma non a metodi o servizi. Nell'esempio seguente vengono illustrati un controllo associato alla proprietà e un controllo che enumera le proprietà dell'insieme <xref:System.Windows.Controls.TextBlock> <xref:EnvDTE._DTE.Name%2A> <xref:System.Windows.Controls.ListBox> <xref:EnvDTE.Window.Caption%2A> restituito dalla <xref:EnvDTE._DTE.Windows%2A> proprietà .
+ Nel markup è possibile accedervi usando la sintassi [dell'estensione di markup](/dotnet/framework/wpf/advanced/binding-markup-extension) di associazione per chiamare l'oggetto <xref:EnvDTE.DTE> . È possibile usare questo approccio per eseguire l'associazione a proprietà semplici, ad esempio quelle che restituiscono raccolte, ma non a metodi o servizi. Nell'esempio seguente vengono illustrati un controllo associato alla proprietà e un controllo che enumera le proprietà dell'insieme <xref:System.Windows.Controls.TextBlock> <xref:EnvDTE._DTE.Name%2A> <xref:System.Windows.Controls.ListBox> <xref:EnvDTE.Window.Caption%2A> restituito dalla <xref:EnvDTE._DTE.Windows%2A> proprietà .
 
 ```xml
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>
@@ -110,8 +111,8 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox
 ```
 
- Per un esempio, vedere [Procedura dettagliata: salvataggio delle impostazioni utente in una pagina iniziale.](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)
+ Per un esempio, vedere [Procedura dettagliata: salvataggio delle impostazioni utente in una pagina iniziale](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiunta del controllo utente alla pagina iniziale](../extensibility/adding-user-control-to-the-start-page.md)

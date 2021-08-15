@@ -1,6 +1,6 @@
 ---
 description: Recupera un attributo personalizzato in base al nome.
-title: 'IDebugCustomAttributeQuery:: GetCustomAttributeByName | Microsoft Docs'
+title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: edfebdba8d1ad10678ec441cad7ca8b4a1440c24
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96b5a910c7d09bec43885b57e55943376fe7b7babec13069351e10e2c57fbcab
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058664"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121323690"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Recupera un attributo personalizzato in base al nome.
@@ -45,19 +46,19 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>Parametri
 `pszCustomAttributeName`\
-in Nome dell'attributo personalizzato.
+[in] Nome dell'attributo personalizzato.
 
 `ppBlob`\
-[in, out] Matrice di byte che contiene i dati dell'attributo personalizzato.
+[in,out] Matrice di byte che contengono i dati dell'attributo personalizzato.
 
 `pdwLen`\
-out Lunghezza, in byte `ppBlob` , del parametro.
+[out] Lunghezza in byte del `ppBlob` parametro.
 
 ## <a name="return-value"></a>Valore restituito
 Se l'esito è positivo, restituisce `S_OK`. Se l'attributo personalizzato non esiste, restituisce `S_FALSE` . In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugClassFieldSymbol** che espone l'interfaccia [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugClassFieldSymbol** che espone [l'interfaccia IDebugCustomAttributeQuery.](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(

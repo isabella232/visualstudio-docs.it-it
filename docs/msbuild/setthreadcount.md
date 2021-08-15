@@ -1,6 +1,6 @@
 ---
 title: SetThreadCount | Microsoft Docs
-description: Informazioni su come MSBuild USA SetThreadCount per impostare il conteggio globale dei thread e assegnare tale conteggio al thread corrente.
+description: Informazioni su MSBuild setThreadCount per impostare il conteggio globale dei thread e assegnare tale conteggio al thread corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,15 @@ ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f7282b8c4589007492e48994628910b3a4ef0691
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f8e3792015696f5424ffe9134a78b1b88f780e5622e2292382bc5b18ff80cad
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966162"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257485"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 
@@ -42,7 +43,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 
 ## <a name="return-value"></a>Valore restituito
 
- **HRESULT** con il bit **succeeded** impostato se il conteggio dei thread è stato aggiornato.
+ HRESULT **con** il bit **SUCCEEDED** impostato se il conteggio dei thread è stato aggiornato.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -13,14 +13,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ca2b873a4d4b04362298d2d96b9d037cc80addd4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 22de4f1ef153ba2d4cda8b2663b3bfbf83ea4dd2db4db1f91b7b3679a6e6905c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146275"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121263764"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: il processo di lavoro del sito Web è stato terminato da IIS
 L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseguenza, Internet Information Services (IIS) presuppone che il processo di lavoro non risponda e lo termina.
@@ -39,9 +40,9 @@ L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseg
 
     Gestione IIS verrà aperto.
 
-3. Nel riquadro **connessioni** espandere il nodo, \<computer name> se necessario.
+3. Nel riquadro **Connessioni** espandere il \<computer name> nodo, se necessario.
 
-4. Nel \<computer name> nodo fare clic su **pool di applicazioni**.
+4. Nel nodo \<computer name> fare clic su Pool di **applicazioni**.
 
 5. Nell'elenco **Pool di applicazioni** fare clic con il pulsante destro del mouse sul nome del pool nel quale viene eseguita l'applicazione e quindi fare clic su **Impostazioni avanzate**.
 
@@ -58,4 +59,4 @@ L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseg
 8. Chiudere Gestione IIS e la finestra **Strumenti di amministrazione**.
 
 ## <a name="see-also"></a>Vedi anche
-- [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Errori di debug remoto e risoluzione dei problemi](../debugger/remote-debugging-errors-and-troubleshooting.md)
