@@ -1,5 +1,5 @@
 ---
-description: Restituisce un'enumerazione di simboli per i frame inline che corrispondono al percorso di origine specificato.
+description: Restituisce un'enumerazione di simboli per i frame inline che corrispondono alla posizione di origine specificata.
 title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ddb65e5041f19ad854eec271b22f3cbcab5a97c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: af45f71116d7a3c0ffcf51ea0bc81d44940f14fa6a0dd8a9833faa9c31980cb6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147868"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391920"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Restituisce un'enumerazione di simboli per i frame inline che corrispondono al percorso di origine specificato.
+Restituisce un'enumerazione di simboli per i frame inline che corrispondono alla posizione di origine specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,23 +37,23 @@ HRESULT findAcceleratorInlineeLinesByName (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in Oggetto `IDiaSymbol` che corrisponde alla funzione dello stub dell'acceleratore in cui è necessario eseguire la ricerca.
+[in] Oggetto `IDiaSymbol` che corrisponde alla funzione stub Accelerator in cui è necessario eseguire la ricerca.
 
  `file`
 
-in `IDiaSourceFile` Del percorso di origine.
+[in] Oggetto `IDiaSourceFile` del percorso di origine.
 
  `linenum`
 
-in Numero di riga del percorso di origine.
+[in] Numero di riga della posizione di origine.
 
  `colnum`
 
-in Numero di colonna del percorso di origine.
+[in] Numero di colonna della posizione di origine.
 
  `ppResult`
 
-out Puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia inizializzato con il risultato.
+[out] Puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

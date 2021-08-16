@@ -1,6 +1,6 @@
 ---
-description: Contrassegna il modulo come codice utente.
-title: 'IDebugModule3:: SetJustMyCodeState | Microsoft Docs'
+description: Contrassegna il modulo come codice utente o meno.
+title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6f93bce2e9554b390886129d548179e8ba6e3c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b5f9365750d7092505536d31351bcc00b0a194c1e0f30309ac7038f3d4998e2b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065502"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377548"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
-Contrassegna il modulo come codice utente.
+Contrassegna il modulo come codice utente o meno.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int SetJustMyCodeState(
 
 ## <a name="parameters"></a>Parametri
 `fIsUserCode`\
-in Diverso da zero ( `TRUE` ) se il modulo deve essere considerato codice utente, zero ( `FALSE` ) in caso contrario.
+[in] Diverso da zero ( `TRUE` ) se il modulo deve essere considerato codice utente, zero ( ) in caso `FALSE` contrario.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.

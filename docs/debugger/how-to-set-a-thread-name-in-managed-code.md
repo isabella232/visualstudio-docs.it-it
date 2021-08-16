@@ -1,6 +1,6 @@
 ---
-title: Impostare un nome di thread nel codice gestito | Microsoft Docs
-description: Impostare un nome di thread nel codice gestito durante il debug di app multithread in Visual Studio. La denominazione dei thread viene utilizzata per tenere traccia dei thread nella finestra thread.
+title: Impostare un nome di thread in Codice gestito | Microsoft Docs
+description: Impostare un nome di thread nel codice gestito durante il debug di app multithreading in Visual Studio. La denominazione dei thread viene usata per tenere traccia dei thread nella finestra Thread.
 ms.custom: SEO-VS-2020
 ms.date: 04/27/2017
 ms.topic: how-to
@@ -18,14 +18,15 @@ ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3defa5eaee2aafabcb4cf890516f7c78be47b1e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d0ce2bdadd7ea325ef63aa3f561fa949945207295fce0ef69adabad474be6cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915762"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379009"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>Procedura: impostare il nome di un thread in codice gestito
 La denominazione dei thread è possibile in tutte le edizioni di Visual Studio. Tale denominazione è utile per tenere traccia dei thread nella finestra **Thread**.
@@ -78,5 +79,5 @@ End Sub
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Procedura: impostare il nome di un thread in codice nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)
+- [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Procedura: Impostare un nome di thread nel codice nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)

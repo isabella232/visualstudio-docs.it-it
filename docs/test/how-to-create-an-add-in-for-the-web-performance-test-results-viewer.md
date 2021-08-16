@@ -1,6 +1,6 @@
 ---
 title: Creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
-description: Informazioni su come creare un componente aggiuntivo di Visual Studio per estendere l'interfaccia utente del Visualizzatore Risultati test prestazioni Web e implementare le classi necessarie per estendere l'interfaccia utente.
+description: Informazioni su come creare un componente Visual Studio componente aggiuntivo per estendere l'interfaccia utente del Visualizzatore prestazioni Web Risultati test e implementare le classi necessarie per estendere l'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: how-to
@@ -11,14 +11,15 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: e2773165b37600eb214893de91f8fc8c4467c0d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: a4675e679dc62ae999553b5dd7de37dd9e89cf8a0dd5f75c7c5c6a45be452e15
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937628"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384951"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: creare un componente aggiuntivo per il Visualizzatore Risultati test prestazioni Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo per web performance Risultati test Viewer
 
 È possibile estendere l'interfaccia utente per il **Visualizzatore risultati test prestazioni Web** usando gli spazi dei nomi seguenti:
 
@@ -26,7 +27,7 @@ ms.locfileid: "99937628"
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Inoltre, è necessario aggiungere un riferimento a LoadTestPackage DLL, che si trova nella cartella *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \Enterprise\Common7\IDE\PrivateAssemblies*
+È anche necessario aggiungere un riferimento alla DLL LoadTestPackage, che si trova nella cartella *%ProgramFiles(x86)%\Microsoft Visual Studio \\ \<version> \Enterprise\Common7\IDE\PrivateAssemblies.*
 
 Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**, è necessario creare un controllo utente e un componente aggiuntivo per Visual Studio. Nelle procedure seguenti viene illustrato come creare il componente aggiuntivo e il controllo utente nonché come implementare le classi necessarie per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**.
 
@@ -39,7 +40,7 @@ Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazio
 Creare o aprire una soluzione non di produzione con la quale sperimentare che contenga un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web con uno o più test delle prestazioni Web per l'applicazione Web ASP.NET.
 
 > [!NOTE]
-> È possibile creare un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web che contenga test delle prestazioni Web seguendo le procedure descritte in [procedura: creare un test di servizio Web](../test/how-to-create-a-web-service-test.md) e [generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
+> È possibile creare un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web che contiene test delle prestazioni Web seguendo le procedure descritte in [Procedura: Creare](../test/how-to-create-a-web-service-test.md) un test del servizio Web e Generare ed eseguire un test delle prestazioni [Web codificato.](../test/generate-and-run-a-coded-web-performance-test.md)
 
 ## <a name="create-a-visual-studio-add-in"></a>Creare un componente aggiuntivo per Visual Studio
 
@@ -51,7 +52,7 @@ Si utilizzerà **Gestione componenti aggiuntivi** alla fine di questo articolo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Per creare un componente aggiuntivo utilizzando la Creazione guidata componente aggiuntivo.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi selezionare **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere Aggiungi **e** quindi selezionare **Nuovo Project**.
 
 2. Creare un nuovo progetto di **componente aggiuntivo di Visual Studio**.
 
@@ -111,7 +112,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Per creare un controllo da utilizzare nel Visualizzatore risultati test Web
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi selezionare **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere Aggiungi **e** quindi selezionare **Nuovo Project**.
 
 2. Creare un nuovo progetto **Libreria di controlli Windows Form**.
 
@@ -258,7 +259,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
 
-2. Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione** e selezionare **.NET Framework 4** (o versioni successive). Chiudere la finestra **Proprietà** .
+2. Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione** e selezionare **.NET Framework 4** (o versioni successive). Chiudere la **finestra** Proprietà.
 
    Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del **Visualizzatore risultati test prestazioni Web**.
 

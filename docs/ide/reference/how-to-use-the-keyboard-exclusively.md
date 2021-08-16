@@ -14,14 +14,15 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7daa0bfc6f67bd0dc9fee0775ba8dce591ce8148
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e615f5a5fb2bc01cf9383e5d57b378fcc0bf6c8cf824c38fd24095cb8ff89cf2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852531"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429199"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Come usare esclusivamente la tastiera
 
@@ -43,9 +44,9 @@ Per un elenco completo delle combinazioni di tasti di scelta rapida dei comandi 
 
 Per aggiungere un controllo della casella degli strumenti a un modulo o a una finestra di progettazione senza usare il mouse:
 
-1. Nella barra dei menu selezionare **Visualizza**  >  **casella degli strumenti**.
+1. Sulla barra dei menu selezionare **Visualizza casella degli**  >  **strumenti**.
 
-2. Usare i  + tasti **freccia su** o **CTRL** + **freccia giù** per spostarsi tra le sezioni della scheda della **casella degli strumenti** .
+2. Usare ctrl **freccia** SU o CTRL FRECCIA GIÙ per spostarsi +  tra le sezioni della scheda  +  **Casella degli** strumenti.
 
 3. Usare il tasto **Freccia SU** o **Freccia GIÙ** per passare da un controllo all'altro in una sezione.
 
@@ -63,17 +64,17 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 
    - Per selezionare o deselezionare una casella di controllo, premere la **Barra spaziatrice**.
 
-   - Per gli elenchi a discesa, utilizzare **ALT** + **freccia giù** per visualizzare gli elementi, quindi utilizzare i tasti **freccia su** e **freccia giù** per modificare l'elemento selezionato.
+   - Per gli elenchi a discesa, usare **ALT** freccia GIÙ per visualizzare gli elementi e quindi usare i tasti freccia SU e FRECCIA GIÙ +  per modificare l'elemento selezionato.  
 
    - Per azionare un pulsante, selezionare **Invio**.
 
-   - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per gli elenchi a discesa nelle griglie, usare **MAIUSC** + **ALT** + **freccia giù** per visualizzare gli elementi, quindi usare i tasti **freccia su** e **freccia giù** per modificare l'elemento selezionato.
+   - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per gli elenchi a discesa nelle griglie, usare **MAIUSC** ALT freccia GIÙ per visualizzare gli elementi e quindi usare i tasti freccia SU e FRECCIA GIÙ per modificare +  +  l'elemento selezionato.  
 
 ## <a name="navigate-between-windows-and-files"></a>Spostarsi tra finestre e file
 
-- Per spostarsi tra i file in un editor o in una finestra di progettazione, **utilizzare il tasto** + di scelta rapida **Tab** per visualizzare lo strumento di spostamento dell'IDE con **i file attivi** selezionati. Scegliere **Invio** per passare alla finestra evidenziata.
+- Per spostarsi tra i file in un editor o in una finestra di progettazione, usare il tasto di scelta rapida **CTRL** TAB per visualizzare lo strumento di navigazione IDE con +  **l'opzione File** attivi selezionata. Scegliere **Invio** per passare alla finestra evidenziata.
 
-- Per spostarsi tra le finestre degli strumenti ancorate, usare la + scelta rapida da tastiera ALT **F7** per visualizzare lo strumento di spostamento dell'IDE con le **finestre degli strumenti attive** selezionate. Premere **INVIO** per passare alla finestra evidenziata.
+- Per spostarsi tra le finestre degli strumenti ancorate, usare il tasto di scelta rapida **ALT** + **F7** per visualizzare lo strumento di navigazione IDE con lo strumento **Windows** selezionato. Premere **INVIO** per passare alla finestra evidenziata.
 
 ## <a name="move-and-dock-tool-windows"></a>Spostare e ancorare finestre degli strumenti
 
@@ -81,7 +82,7 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 
 2. Nel menu **Finestra** selezionare l'opzione **Finestra ancorata**.
 
-3. Premere **ALT** + **barra spaziatrice**, quindi selezionare **Sposta**.
+3. Premere **ALT** + **BARRA SPAZIATRICE** e quindi selezionare **Sposta**.
 
    Verrà visualizzata la guida a forma di rombo per l'ancoraggio.
 

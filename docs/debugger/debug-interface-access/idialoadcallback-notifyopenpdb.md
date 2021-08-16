@@ -1,6 +1,6 @@
 ---
-description: Chiamato quando viene aperto un file con estensione PDB candidato.
-title: 'IDiaLoadCallback:: NotifyOpenPDB | Microsoft Docs'
+description: Chiamato quando viene aperto un file PDB candidato.
+title: IDiaLoadCallback::NotifyOpenPDB | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: c0547f99-8468-4e57-82ca-9ef7d6707c8a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ab1f72c6f22f70bb94262c57327ab91f96a02183
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ce253b54bc4d8c5d911a8d7b7a78445fca7df38e389925a205944bbc5222ecee
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148297"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121405154"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
-Chiamato quando viene aperto un file con estensione PDB candidato.
+Chiamato quando viene aperto un file PDB candidato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ HRESULT NotifyOpenPDB (
 #### <a name="parameters"></a>Parametri
  `pdbPath`
 
-in Percorso completo del file con estensione pdb.
+[in] Percorso completo del file con estensione pdb.
 
  `resultCode`
 
-in Codice che indica l'esito positivo ( `S_OK` ) o l'esito negativo del caricamento applicato al file.
+[in] Codice che indica l'esito positivo ( `S_OK` ) o l'esito negativo del caricamento applicato a questo file.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Il codice restituito viene in genere ignorato.

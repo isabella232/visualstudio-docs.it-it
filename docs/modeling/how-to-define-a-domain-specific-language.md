@@ -16,26 +16,27 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 51717e4bdbf12478e22bb825a9c84cfc82815f98
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 58a8e3d9f86d11ba5bbd669b841ef5176373225b6be0aa5cee25cfaec32063aa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387359"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386377"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
-Per definire un linguaggio specifico di dominio (DSL), creare una Visual Studio soluzione da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
+Per definire un linguaggio specifico di dominio (DSL), creare una soluzione Visual Studio da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
 
-Se non si ha disagi ai **DSL,** è consigliabile usare il lab degli strumenti DSL, disponibile in questo sito: [Visualization and Modeling SDK (SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) per la visualizzazione e la modellazione).
+Se non si ha una versione di DSL, è consigliabile usare il lab degli strumenti **DSL,** disponibile in questo sito: [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="selecting-a-template-solution"></a><a name="templates"></a> Selezione di una soluzione modello
 
 Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
 - Visual Studio
-- Visual Studio carico di lavoro Sviluppo di estensioni (incluso Visual Studio SDK)
+- Visual Studio del carico di lavoro di sviluppo dell'estensione (Visual Studio SDK)
 - SDK di modellazione (installarlo come singolo componente in Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -52,7 +53,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
    ::: moniker-end
 
-    Verrà **Domain-Specific Language guidata modelli** con un elenco di soluzioni DSL modello.
+    Verrà **Domain-Specific Language procedura guidata** e verrà visualizzato un elenco di soluzioni DSL modello.
 
 2. Fare clic su ogni modello per visualizzare una descrizione. Scegliere la soluzione più simile a quella che si vuole creare.
 
@@ -60,15 +61,15 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
     Per altre informazioni, fare clic su ogni esempio.
 
-   - Selezionare **Flusso attività** per creare un DSL con corsie. Le corsie sono partizioni verticali o orizzontali del diagramma.
+   - Selezionare **Task Flow** per creare un DSL con corsie. Le corsie sono partizioni verticali o orizzontali del diagramma.
 
-   - Selezionare **Modelli componenti** per creare un DSL con porte. Le porte sono piccole forme sul bordo di una forma più grande.
+   - Selezionare **Modelli di componenti** per creare un DSL con porte. Le porte sono piccole forme sul bordo di una forma più grande.
 
    - Selezionare **Diagrammi classi per** definire un DSL con forme raggruppamento. Le forme raggruppamento contengono elenchi di elementi.
 
-   - Selezionare **Lingua minima** in altri casi o se non si è incerti.
+   - Selezionare **Lingua minima** in altri casi o in caso di incertezze.
 
-   - Selezionare **Finestra di progettazione Windows Form** minima o Wpf **Designer** minima per creare un DSL visualizzato in un'area Windows Forms o WPF. Sarà necessario scrivere il codice per definire l'editor. Per altre informazioni, vedere i seguenti argomenti:
+   - Selezionare **Finestra di progettazione WinForm** minima o Progettazione **WPF** minima per creare un DSL visualizzato in un'area Windows Form o WPF. Sarà necessario scrivere il codice per definire l'editor. Per altre informazioni, vedere i seguenti argomenti:
 
         [Creazione di un linguaggio specifico di dominio basato su Windows Form](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -76,9 +77,9 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 3. Immettere un'estensione di file per il linguaggio DSL nella pagina appropriata della procedura guidata. Questa estensione verrà usata dai file contenenti le istanze del linguaggio DSL.
 
-   - Scegliere un'estensione di file non associata ad alcuna applicazione in questo computer o in un computer in cui si vuole installare il linguaggio DSL. Ad esempio, **docx e** **htm** sarebbero estensioni di file inaccettabili.
+   - Scegliere un'estensione di file non associata ad alcuna applicazione in questo computer o in un computer in cui si vuole installare il linguaggio DSL. Ad esempio, **docx** e **htm** sarebbero estensioni di file inaccettabili.
 
-   - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare clic  **sul pulsante Start**, scegliere Tutti i programmi Microsoft Visual Studio **SDK 2010** **,** Strumenti e quindi reimpostare **l'istanza sperimentale di Microsoft Visual Studio 2010**.
+   - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare **clic su Start**, **scegliere** Tutti i programmi , Microsoft Visual Studio **SDK 2010**, **Strumenti** e quindi reimpostare l'istanza **sperimentale Microsoft Visual Studio 2010**.
 
 4. È possibile modificare le impostazioni nelle altre pagine o lasciare i valori predefiniti.
 
@@ -95,7 +96,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 ### <a name="test-the-solution"></a>Testare la soluzione
  La soluzione per il modello offre un linguaggio DSL di lavoro, che è possibile modificare o usare così com'è.
 
- Per testare la soluzione, premere F5 o CTRL+F5. Viene aperta una nuova istanza Visual Studio in modalità sperimentale.
+ Per testare la soluzione, premere F5 o CTRL+F5. Viene aperta una nuova istanza di Visual Studio in modalità sperimentale.
 
  Nella nuova istanza di Visual Studio, in Esplora soluzioni aprire il file di esempio. Si apre un diagramma, con una casella degli strumenti.
 
@@ -115,11 +116,11 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
  È utile mantenere queste classi in particolare:
 
-- La classe radice viene visualizzata in alto a sinistra nel diagramma di definizione DSL, in **Classi e relazioni.** Rinominarla con un nome diverso dal linguaggio DSL. Ad esempio, un DSL denominato **MusicLibrary** potrebbe avere una classe radice denominata **Music**.
+- La classe radice viene visualizzata in alto a sinistra nel diagramma di definizione DSL, in **Classi e relazioni**. Rinominarla con un nome diverso dal linguaggio DSL. Ad esempio, un DSL denominato **MusicLibrary** potrebbe avere una classe radice denominata **Musica**.
 
-- La classe diagramma viene visualizzata in basso a destra nel diagramma di definizione DSL, nella **colonna Elementi diagramma** . Per visualizzarla, potrebbe essere necessario scorrere verso destra. È in genere denominato _Diagramma YourDsl._
+- La classe diagramma viene visualizzata in basso a destra nel diagramma di definizione DSL, nella **colonna Elementi diagramma.** Per visualizzarla, potrebbe essere necessario scorrere verso destra. È in genere denominato _Diagramma YourDsl_**.**
 
-- Se è stato **usato** il modello Flusso attività e si vogliono creare diagrammi con corsie, mantenere e rinominare la classe di dominio Actor e la forma ActorSwimlane.
+- Se è stato usato il modello **Flow** task e si vogliono creare diagrammi con corsie, mantenere e rinominare la classe di dominio Actor e la forma ActorSwimlane.
 
   Eliminare o rinominare le altre classi in base ai propri requisiti.
 
@@ -137,7 +138,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
   Le sezioni seguenti descrivono come costruire i tipi più utili di funzionalità DSL. Un linguaggio DSL può essere costruito con molti altri criteri, ma questi sono quelli usati più di frequente.
 
 > [!NOTE]
-> Dopo aver aggiunto una funzionalità,  non dimenticare di fare clic su Trasforma tutti i modelli nella barra degli strumenti di Esplora soluzioni prima di compilare ed eseguire il DSL.
+> Dopo aver aggiunto una funzionalità,  non dimenticare di fare clic su Trasforma tutti i modelli sulla barra degli strumenti Esplora soluzioni prima di compilare ed eseguire il DSL.
 
  La figura seguente mostra la parte relativa a classi e relazioni del linguaggio DSL usato come esempio in questo argomento.
 
@@ -151,11 +152,11 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 > "Modello" si riferisce a un'istanza del linguaggio DSL creata dagli utenti e in genere viene visualizzato come diagramma. Questo argomento descrive sia il diagramma di definizione DSL che i diagrammi del modello visualizzati quando viene usato il linguaggio DSL.
 
 ## <a name="defining-domain-classes"></a><a name="classes"></a> Definizione di classi di dominio
- Le classi di dominio rappresentano i concetti del linguaggio DSL. Le istanze sono *elementi del modello*. In un DSL **MusicLibrary,** ad esempio, potrebbero essere presenti classi di dominio denominate **Album** e **Brano**.
+ Le classi di dominio rappresentano i concetti del linguaggio DSL. Le istanze sono *elementi del modello*. Ad esempio, in **un DSL MusicLibrary** è possibile avere classi di dominio denominate **Album** e **Song.**
 
- Per creare una classe di dominio, è possibile trascinare dallo strumento **Classe di** dominio denominato al diagramma e quindi rinominare la classe.
+ Per creare una classe di dominio, è possibile trascinare dallo strumento **Classe** di dominio denominata al diagramma e quindi rinominare la classe.
 
- Per altre informazioni, vedere [Proprietà delle classi di dominio.](../modeling/properties-of-domain-classes.md)
+ Per altre informazioni, vedere [Proprietà delle classi di dominio](../modeling/properties-of-domain-classes.md).
 
 ### <a name="create-an-embedding-relationship-for-each-domain-class"></a>Creare una relazione di incorporamento per ogni classe di dominio
  Ogni classe di dominio, tranne la classe radice, deve essere la destinazione di almeno una relazione di incorporamento o ereditare da una classe che sia la destinazione di una relazione di incorporamento.
@@ -218,7 +219,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 2. **Compilare ed eseguire il linguaggio DSL.** Premere F5 o CTRL+F5 per eseguire una nuova istanza di Visual Studio in modalità sperimentale. Nell'istanza sperimentale di Visual Studio aprire o creare un file con estensione DSL.
 
-3. **Aprire Esplora risorse.** Sul lato del diagramma è disponibile la finestra di Esplora linguaggi, in genere denominata *Esplora* linguaggio. Se questa finestra non è visibile, potrebbe essere in una scheda sotto Esplora soluzioni. Se non è possibile trovarlo, **scegliere** Altre **finestre** dal menu Visualizza e quindi fare clic su *Esplora* **linguaggi.**
+3. **Aprire Esplora risorse.** Sul lato del diagramma è visualizzata la finestra di Esplora linguaggi, in genere denominata *Esplora* linguaggio. Se questa finestra non è visibile, potrebbe essere in una scheda sotto Esplora soluzioni. Se non è possibile trovarlo, scegliere Altro **dal** menu **Visualizza Windows** e quindi fare clic su *Esplora* **linguaggi.**
 
      La finestra di esplorazione contiene una visualizzazione struttura ad albero del modello.
 
@@ -228,7 +229,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 5. Quando si creano nuove istanze, verificare che ogni istanza abbia un nome diverso. Ciò si verifica solo se è stato impostato il flag **Is Element Name** su una proprietà di dominio.
 
-6. **Esaminare le proprietà del dominio. Dopo aver selezionato un'istanza della classe,** esaminare il Finestra Proprietà. Deve mostrare le proprietà di dominio definite in questa classe di dominio.
+6. **Esaminare le proprietà del dominio. Con un'istanza della classe selezionata, esaminare** il Finestra Proprietà. Deve mostrare le proprietà di dominio definite in questa classe di dominio.
 
 7. **Salvare il file, chiuderlo e ria aprirlo.** Tutte le istanze create devono essere visibili nella finestra di esplorazione, dopo aver espanso i nodi.
 
@@ -261,7 +262,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
    3. Tornare al diagramma di definizione DSL e selezionare la nuova classe di forma dell'immagine.
 
-   4. Nella finestra Finestra Proprietà fare clic sulla **proprietà** Immagine.
+   4. Nella finestra Finestra Proprietà fare clic sulla **proprietà** Image.
 
    5. Nella finestra **di dialogo Seleziona** immagine fare clic sul menu a discesa in Nome **file** e selezionare l'immagine.
 
@@ -269,21 +270,21 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
     Per visualizzare il nome o il titolo dell'elemento modello, sarà probabilmente necessario almeno un elemento Decorator per il testo.
 
-    Fare clic con il pulsante destro del mouse sull'intestazione della classe shape, scegliere **Aggiungi** e quindi fare clic **su Decorator di testo**. Impostare il nome dell'elemento Decorator e nella Finestra Proprietà impostarne **position**.
+    Fare clic con il pulsante destro del mouse sull'intestazione della classe shape, scegliere **Aggiungi** e quindi fare clic **su Elemento Decorator di testo.** Impostare il nome dell'elemento Decorator e nella Finestra Proprietà impostarne la **posizione**.
 
-5. **Connettere ogni forma con una mappa di elementi diagramma alla classe di dominio che deve visualizzare**.
+5. **Connessione ogni forma con un elemento diagramma Mappa alla classe di dominio in cui deve essere visualizzato**.
 
-    Fare clic **su Diagramma strumento Mappa elementi,** quindi fare clic sulla classe di dominio, quindi fare clic sulla classe di forma.
+    Fare clic **su Diagram Element Map** , quindi sulla classe di dominio e infine sulla classe shape.
 
 6. **Mappare le proprietà agli elementi Decorator per il testo.**
 
    1. Selezionare la linea grigia tra la classe di dominio e la classe di forma che rappresenta la mappa degli elementi del diagramma.
 
-   2. Nella finestra **Dettagli DSL** fare clic sulla scheda **Mappe decorator.** Se la finestra **Dettagli DSL** non viene visualizzata, scegliere Altre **finestre** dal **menu** Visualizza e quindi fare clic su Dettagli **DSL**. Spesso è necessario alzare la parte superiore di questa finestra per visualizzarne tutto il contenuto.
+   2. Nella finestra **Dettagli DSL fare** clic sulla scheda **Mappe** Elemento Decorator. Se la finestra **Dettagli DSL** non viene visualizzata, scegliere Altro dal **menu** **Visualizza** Windows quindi fare clic su **Dettagli DSL.** Spesso è necessario alzare la parte superiore di questa finestra per visualizzarne tutto il contenuto.
 
-   3. Selezionare il nome di un elemento Decorator. In **Proprietà di visualizzazione** selezionare il nome di una proprietà della classe di dominio. Ripetere questa operazione per ogni elemento Decorator.
+   3. Selezionare il nome di un elemento Decorator. In **Proprietà di** visualizzazione selezionare il nome di una proprietà della classe di dominio. Ripetere questa operazione per ogni elemento Decorator.
 
-       Per visualizzare una proprietà di un elemento correlato, fare clic sull'albero a discesa in **Percorso per visualizzare la proprietà**.
+       Se si vuole visualizzare una proprietà di un elemento correlato, fare clic sul riquadro di spostamento dell'albero a discesa in **Percorso per visualizzare la proprietà**.
 
    4. Verificare che accanto al nome di ogni elemento Decorator appaia un segno di spunta.
 
@@ -293,28 +294,28 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
    1. In **Esplora DSL** espandere il nodo **Editor** e tutti i relativi sottonodi.
 
-   2. Fare clic con il pulsante destro del mouse sul nodo in **Schede** della casella degli strumenti con lo stesso nome del DSL, ad esempio MusicLibrary. Fare clic **su Aggiungi elemento Strumento**.
+   2. Fare clic con il pulsante destro del mouse sul nodo in **Schede** casella degli strumenti con lo stesso nome del DSL, ad esempio MusicLibrary. Fare clic **su Strumento Aggiungi elemento**.
 
        > [!NOTE]
-       > Se si fa clic con il pulsante **destro del mouse** sul nodo Strumenti , non verrà visualizzato Strumento Aggiungi **elemento**. Invece, fare clic sul nodo sopra.
+       > Se si fa clic con il pulsante destro **del mouse sul nodo** Strumenti , lo strumento Aggiungi elemento non verrà **visualizzato.** Invece, fare clic sul nodo sopra.
 
    3. Nella finestra Finestra Proprietà con il nuovo strumento elemento selezionato, impostare **Classe** sulla classe di dominio aggiunta di recente.
 
-   4. Impostare **Didascalia** e **Descrizione comando**.
+   4. Impostare **Didascalia e** **Descrizione comando**.
 
    5. Impostare **Icona casella degli** strumenti su un'icona che verrà visualizzata nella casella degli strumenti. È possibile impostarla su una nuova icona o su un'icona già usata per un altro strumento.
 
         Per creare una nuova icona, aprire Dsl\Resources in **Esplora soluzioni**. Copiare e incollare uno dei file BMP esistenti dello strumento elemento. Rinominare la copia incollata e quindi fare doppio clic per modificarla.
 
-        Tornare al diagramma definizione DSL, selezionare lo strumento e nella Finestra Proprietà fare clic su **[...]** in **Icona casella degli strumenti**. Nella finestra **di dialogo** Seleziona bitmap selezionare il file .BMP dal menu a discesa.
+        Tornare al diagramma di definizione DSL, selezionare lo strumento e nella Finestra Proprietà fare clic su **[...]** in **Icona casella degli strumenti**. Nella finestra **di dialogo** Seleziona bitmap selezionare il file .BMP dal menu a discesa.
 
-   Per altre informazioni, vedere [Proprietà delle forme geometry e](../modeling/properties-of-geometry-shapes.md) Proprietà delle forme [immagine](../modeling/properties-of-image-shapes.md).
+   Per altre informazioni, vedere [Proprietà delle forme geometriche e](../modeling/properties-of-geometry-shapes.md) Proprietà delle forme [immagine.](../modeling/properties-of-image-shapes.md)
 
 #### <a name="to-test-shapes"></a>Per testare le forme
 
 1. **Fare clic su Trasforma tutti i** modelli sulla barra degli strumenti Esplora soluzioni per generare il codice della finestra di progettazione DSL.
 
-2. **Compilare ed eseguire il linguaggio DSL.** Premere F5 o CTRL+F5 per eseguire una nuova istanza di Visual Studio in modalità sperimentale. Nell'istanza sperimentale di Visual Studio aprire o creare un file con l'estensione DSL.
+2. **Compilare ed eseguire il linguaggio DSL.** Premere F5 o CTRL+F5 per eseguire una nuova istanza di Visual Studio in modalità sperimentale. Nell'istanza sperimentale di Visual Studio aprire o creare un file con estensione DSL.
 
 3. **Verificare che gli strumenti elemento appaiano nella casella degli strumenti.**
 
@@ -322,7 +323,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 5. **Verificare che venga visualizzato ogni elemento Decorator di testo** e che:
 
-   1. È possibile modificarlo, a meno che non sia stato impostato il flag **Is UI Read Only** nella proprietà di dominio.
+   1. È possibile modificarlo, a meno che non sia stato impostato il flag **Is UI Read Only (Sola** lettura interfaccia utente) nella proprietà del dominio.
 
    2. Quando si modifica la proprietà nella finestra Proprietà o nell'elemento Decorator, l'altra visualizzazione viene aggiornata.
 
@@ -352,27 +353,27 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
  ![Mappe di forme per connettori](../modeling/media/music_connector.png)
 
- Per altre informazioni, vedere [Proprietà delle relazioni di dominio e](../modeling/properties-of-domain-relationships.md) Proprietà dei ruoli di [dominio](../modeling/properties-of-domain-roles.md).
+ Per altre informazioni, vedere [Proprietà delle relazioni di dominio e](../modeling/properties-of-domain-relationships.md) Proprietà dei ruoli di [dominio.](../modeling/properties-of-domain-roles.md)
 
 ### <a name="define-a-connector-to-display-the-relationship"></a>Definire un connettore per visualizzare la relazione
  Un connettore visualizza una linea tra due forme nel diagramma modello.
 
- Trascinare **lo strumento** Connettore nel diagramma di definizione DSL.
+ Trascinare **lo strumento Connettore** nel diagramma di definizione DSL.
 
- Per visualizzare le etichette sul connettore, aggiungere gli elementi Decorator per il testo. Impostarne le posizioni. Per consentire all'utente di spostare un elemento Decorator di testo, impostarne la **proprietà Is Moveable.**
+ Per visualizzare le etichette sul connettore, aggiungere gli elementi Decorator per il testo. Impostarne le posizioni. Per consentire all'utente di spostare un elemento Decorator di testo, impostarne **la proprietà Is Moveable.**
 
- Usare lo **strumento Mappa elementi diagramma** per collegare il connettore alla relazione di riferimento.
+ Usare lo **strumento Mappa elementi** diagramma per collegare il connettore alla relazione di riferimento.
 
- Con la mappa degli elementi del diagramma selezionata, aprire la **finestra Dettagli DSL** e aprire la scheda **Mappe decorator.**
+ Con la mappa degli elementi del diagramma selezionata, aprire **la finestra Dettagli DSL** e aprire la scheda Mappe **Elemento** Decorator.
 
  Selezionare ogni **elemento Decorator** e impostare **la proprietà Display** sulla proprietà di dominio corretta.
 
- Assicurarsi che accanto a ogni elemento dell'elenco **Decorator** sia visualizzato un segno di spunta.
+ Assicurarsi che accanto a ogni elemento dell'elenco **Decorators** venga visualizzato un segno di spunta.
 
 ### <a name="define-a-connection-builder-tool"></a>Definire uno strumento Generatore di connessioni
- Nella finestra **Esplora DSL** espandere il nodo **Editor** e tutti i relativi sottonodi.
+ Nella finestra **DSL Explorer** espandere il nodo **Editor** e tutti i relativi sottonodi.
 
- Fare clic con il pulsante destro del mouse sul nodo con lo stesso nome del DSL e quindi scegliere **Aggiungi nuovo strumento di connessione**.
+ Fare clic con il pulsante destro del mouse sul nodo con lo stesso nome del DSL e quindi scegliere **Aggiungi nuovo strumento di connessione.**
 
  Mentre il nuovo strumento è selezionato, nella finestra Proprietà:
 
@@ -380,11 +381,11 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 - Fare **clic su Generatore** connessioni e selezionare il generatore appropriato per la nuova relazione.
 
-- Impostare **Icona casella degli** strumenti sull'icona che si vuole visualizzare nella casella degli strumenti. È possibile impostarla su una nuova icona o su un'icona già usata per un altro strumento.
+- Impostare **Icona casella** degli strumenti sull'icona che si vuole visualizzare nella casella degli strumenti. È possibile impostarla su una nuova icona o su un'icona già usata per un altro strumento.
 
      Per creare una nuova icona, aprire Dsl\Resources in **Esplora soluzioni**. Copiare e incollare uno dei file BMP esistenti dello strumento elemento. Rinominare la copia incollata e quindi fare doppio clic per modificarla.
 
-     Tornare al diagramma definizione DSL, selezionare lo strumento e nella Finestra Proprietà fare clic su **[...]** in **Icona casella degli strumenti**. Nella finestra **di dialogo** Seleziona bitmap selezionare il file .BMP dal menu a discesa.
+     Tornare al diagramma di definizione DSL, selezionare lo strumento e nella Finestra Proprietà fare clic su **[...]** in **Icona casella degli strumenti**. Nella finestra **di dialogo** Seleziona bitmap selezionare il file .BMP dal menu a discesa.
 
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>Per testare una relazione di riferimento e un connettore
 
@@ -408,7 +409,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
    2. Quando si modifica la proprietà nella finestra Proprietà o nell'elemento Decorator, l'altra visualizzazione viene aggiornata.
 
-   Dopo aver testato un connettore, potrebbe essere necessario modificarne alcune proprietà e aggiungere alcune funzionalità avanzate. Per altre informazioni, vedere [Personalizzazione ed estensione di un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
+   Dopo aver testato un connettore, potrebbe essere necessario modificarne alcune proprietà e aggiungere alcune funzionalità avanzate. Per altre informazioni, vedere [Personalizzazione ed estensione di un Domain-Specific linguaggio .](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
 ## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a> Definizione di forme che contengono elenchi: raggruppamento di forme
  Una forma raggruppamento contiene uno o più elenchi di elementi. Ad esempio, in un linguaggio DSL di una raccolta musicale, è possibile usare forme raggruppamento per rappresentare gli album musicali. In ogni album c'è un elenco di brani.
@@ -427,9 +428,9 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
      In alternativa, invece di incorporare il contenitore nella classe radice, è possibile incorporarlo in una classe di dominio mappata a una corsia.
 
-     Aggiungere una proprietà di dominio, ad esempio Name, alla classe e impostarne il flag **Is Element Name** nella Finestra Proprietà.
+     Aggiungere una proprietà di dominio, ad esempio Name, alla classe e impostarne il flag **Is Element Name** nel Finestra Proprietà.
 
-2. **Creare la classe di dominio dell'elemento elenco**. Fare clic **su Embedding Relationship (Relazione** di incorporamento), fare clic sulla classe contenitore (Album) e quindi su una parte vuota del diagramma. Verrà creata la classe di dominio denominata Brano nella figura di esempio.
+2. **Creare la classe di dominio dell'elemento elenco**. Fare clic **su Relazione di incorporamento,** fare clic sulla classe contenitore (Album) e quindi su una parte vuota del diagramma. Verrà creata la classe di dominio denominata Brano nella figura di esempio.
 
      Aggiungere una proprietà di dominio, ad esempio Title, alla classe e impostarne il flag **Is Element Name.**
 
@@ -453,9 +454,9 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 7. Selezionare il link della la mappa degli elementi del diagramma tra la classe di dominio e la forma. Nella finestra **Dettagli DSL:**
 
-    1. Fare clic **sulla scheda Decorator.** Fare clic sul nome dell'elemento Decorator e quindi selezionare l'elemento appropriato in **Proprietà di visualizzazione**. Verificare che appaia un segno di spunta accanto al nome dell'elemento Decorator.
+    1. Fare clic sulla **scheda Decorator.** Fare clic sul nome dell'elemento Decorator e quindi selezionare l'elemento appropriato in **Proprietà di visualizzazione**. Verificare che appaia un segno di spunta accanto al nome dell'elemento Decorator.
 
-    2. Fare clic sulla **scheda Mappe raggruppamento.**
+    2. Fare clic **sulla scheda Mappe** raggruppamento .
 
          Fare clic sul nome del raggruppamento.
 
@@ -485,7 +486,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
      Per creare una nuova icona, aprire Dsl\Resources in **Esplora soluzioni**. Copiare e incollare uno dei file BMP esistenti dello strumento elemento. Rinominare la copia incollata e quindi fare doppio clic per modificarla.
 
-     Tornare al diagramma di definizione DSL, selezionare lo strumento e nella Finestra Proprietà **fare** clic su [...] nell'icona **della casella degli strumenti**. Nella finestra **di dialogo** Seleziona bitmap selezionare il file BMP dal menu a discesa.
+     Tornare al diagramma di definizione DSL, selezionare lo strumento e nella Finestra Proprietà fare clic su **[...]** in **Icona casella degli strumenti**. Nella finestra **di dialogo** Seleziona bitmap selezionare il file BMP dal menu a discesa.
 
 #### <a name="to-test-a-compartment-shape"></a>Per testare una forma raggruppamento
 
@@ -509,7 +510,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
    ![Finestra di esplorazione generata di DSL](../modeling/media/music_explorer.png)
 
-   Dopo aver testato una forma raggruppamento, potrebbe essere necessario modificarne alcune delle proprietà e aggiungere alcune funzionalità avanzate. Per altre informazioni, vedere [Personalizzazione ed estensione di un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
+   Dopo aver testato una forma raggruppamento, potrebbe essere necessario modificarne alcune delle proprietà e aggiungere alcune funzionalità avanzate. Per altre informazioni, vedere [Personalizzazione ed estensione di un Domain-Specific linguaggio .](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>Visualizzazione di un collegamento di riferimento in un raggruppamento
  Un elemento visualizzato in un raggruppamento è in genere figlio dell'elemento rappresentato dalla forma raggruppamento. A volte però potrebbe essere necessario visualizzare un elemento collegato a esso con una relazione di riferimento.
@@ -524,11 +525,11 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 ##### <a name="to-display-a-reference-link-in-a-compartment"></a>Per visualizzare un collegamento di riferimento in un raggruppamento
 
-1. **Aggiungere un raggruppamento alla forma raggruppamento**. Nel diagramma di definizione DSL fare clic con il pulsante destro del mouse sulla classe della forma raggruppamento, scegliere **Aggiungi** e quindi fare clic su **Raggruppamento**.
+1. **Aggiungere un raggruppamento alla forma raggruppamento**. Nel diagramma di definizione DSL fare clic con il pulsante destro del mouse sulla classe di forma raggruppamento, scegliere **Aggiungi** e quindi fare clic su **Raggruppamento.**
 
-2. Impostare **Percorso raccolta elementi visualizzati per** passare al collegamento anziché al relativo elemento di destinazione. Fare clic sul menu a discesa e usare la visualizzazione struttura ad albero per selezionare la relazione di riferimento invece della destinazione. Nell'esempio la relazione è **ArtistAppearedOnAlbums**.
+2. Impostare **Il percorso della raccolta di elementi** visualizzati per passare al collegamento anziché al relativo elemento di destinazione. Fare clic sul menu a discesa e usare la visualizzazione struttura ad albero per selezionare la relazione di riferimento invece della destinazione. Nell'esempio la relazione è **ArtistAppearedOnAlbums**.
 
-3. Impostare **Percorso su Visualizza proprietà** per passare dal collegamento all'elemento di destinazione. Nell'esempio si tratta di **Artist**.
+3. Impostare **Path to Display Property (Percorso** su Proprietà di visualizzazione) per passare dal collegamento all'elemento di destinazione. Nell'esempio si tratta **dell'artista**.
 
 4. Impostare **Proprietà di visualizzazione** sulla proprietà appropriata dell'elemento di destinazione, ad esempio **Nome**.
 
@@ -543,23 +544,23 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
  Le porte possono essere usate anche per fornire un punto di connessione fisso su un'altra forma, verso cui l'utente può tracciare i connettori. In questo caso, è possibile rendere trasparente la forma della porta.
 
- Per visualizzare un esempio che usa le porte, selezionare il **modello Diagramma** componenti quando si crea una nuova soluzione DSL. Questo esempio mostra i punti principali che è possibile considerare quando si definiscono le porte:
+ Per visualizzare un esempio che usa le porte, selezionare il **modello Diagramma** dei componenti quando si crea una nuova soluzione DSL. Questo esempio mostra i punti principali che è possibile considerare quando si definiscono le porte:
 
 - C'è una classe di dominio che rappresenta il contenitore delle porte, `Component`.
 
 - C'è una classe di dominio che rappresenta le porte. in questo esempio corrisponde a `ComponentPort`.
 
-- C'è una relazione di incorporamento dalla classe di dominio del contenitore alla classe di dominio delle porte. Per altre informazioni, vedere [Definizione di classi di dominio](#classes).
+- C'è una relazione di incorporamento dalla classe di dominio del contenitore alla classe di dominio delle porte. Per altre informazioni, vedere [Definizione di classi di dominio.](#classes)
 
 - Per combinare tipi diversi di porta nello stesso contenitore, è possibile creare sottoclassi della classe di dominio delle porte. Nell'esempio, `InPort` e `OutPort` ereditano da `ComponentPort`.
 
-- La classe di dominio del contenitore può essere mappata a qualsiasi tipo di forma. Nell'esempio, si tratta di `ComponentShape`. Per altre informazioni, vedere [Definizione di forme](#shapes).
+- La classe di dominio del contenitore può essere mappata a qualsiasi tipo di forma. Nell'esempio, si tratta di `ComponentShape`. Per altre informazioni, vedere [Definizione di forme.](#shapes)
 
 - Le classi di dominio delle porte vengono mappate alle forme porta. È possibile mappare le classi derivate a classi di forme porta separate o mappare la classe di base a una classe di forme porta.
 
-  Per altri aspetti, le forme porta si comportano come descritto in [Definizione di forme](#shapes).
+  Per altri aspetti, le forme porta si comportano come descritto in [Definizione di forme.](#shapes)
 
-  Per altre informazioni, vedere [Proprietà delle forme porta](../modeling/properties-of-port-shapes.md).
+  Per altre informazioni, vedere [Proprietà delle forme delle porte.](../modeling/properties-of-port-shapes.md)
 
 ## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a> Definizione di un DSL con corsie
  Le corsie sono una partizione orizzontale o verticale di un diagramma. Ogni corsia corrisponde a un elemento modello. La definizione DSL richiede una classe di dominio per gli elementi corsia.
@@ -577,16 +578,16 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 ### <a name="domain-enumerations-and-literals"></a>Enumerazioni di dominio e valori letterali
  Un'enumerazione di dominio è un tipo con più valori letterali.
 
- Per aggiungere un'enumerazione di dominio, fare clic con il pulsante destro del mouse sulla radice del modello in **Esplora DSL** e quindi scegliere **Aggiungi nuova enumerazione di dominio**. L'elemento verrà visualizzato in **Esplora DSL** nel **nodo Tipi di** dominio. Questo elemento non appare nel diagramma.
+ Per aggiungere un'enumerazione di dominio, fare clic con il pulsante destro del mouse sulla radice del modello in **Esplora DSL e** quindi scegliere **Aggiungi nuova enumerazione dominio**. L'elemento verrà visualizzato in **Esplora DSL** nel **nodo Tipi di** dominio. Questo elemento non appare nel diagramma.
 
- Per aggiungere valori letterali di enumerazione all'enumerazione del dominio, fare clic con il pulsante destro del mouse sull'enumerazione di dominio in **Esplora DSL** e quindi scegliere Aggiungi nuovo valore **letterale enumerazione**.
+ Per aggiungere valori letterali di enumerazione all'enumerazione del dominio, fare clic con il pulsante destro del mouse sull'enumerazione del dominio in **Esplora DSL** e quindi scegliere Aggiungi nuovo valore **letterale enumerazione**.
 
- Per impostazione predefinita, una proprietà con un tipo di enumerazione può essere impostata su un solo valore dell'enumerazione per volta. Se si vuole che utenti e programmatori possano impostare qualsiasi combinazione di valori, un "campo di bit", impostare la proprietà **IsFlags** dell'enumerazione .
+ Per impostazione predefinita, una proprietà con un tipo di enumerazione può essere impostata su un solo valore dell'enumerazione per volta. Se si vuole che utenti e programmatori siano in grado di impostare qualsiasi combinazione di valori, un "campo di bit", impostare la proprietà **IsFlags** dell'enumerazione .
 
 ### <a name="external-types"></a>Tipi esterni
  Quando si imposta il tipo di una proprietà di dominio,  se non si trova il tipo desiderato nell'elenco a discesa Tipo, è possibile aggiungere un tipo esterno. Ad esempio, è possibile aggiungere il **tipo System.Drawing.Color** all'elenco.
 
- Per aggiungere un tipo, fare clic con il pulsante destro del mouse sulla radice del modello in Esplora DSL e quindi scegliere **Aggiungi nuovo tipo esterno**. Nella finestra Finestra Proprietà impostare il nome su **Color** e lo spazio dei nomi su **System.Drawing**. Questo tipo viene ora visualizzato in Esplora DSL in **Tipi di dominio**. È possibile sceglierlo quando si imposta il tipo di una proprietà di dominio.
+ Per aggiungere un tipo, fare clic con il pulsante destro del mouse sulla radice del modello in Esplora DSL e quindi scegliere **Aggiungi nuovo tipo esterno**. Nella finestra Finestra Proprietà impostare il nome su **Color** e lo spazio dei nomi **su System.Drawing**. Questo tipo viene ora visualizzato in Esplora DSL in **Tipi di dominio.** È possibile sceglierlo quando si imposta il tipo di una proprietà di dominio.
 
 ## <a name="customizing-the-dsl"></a><a name="custom"></a> Personalizzazione del DSL
  Con le tecniche descritte in questo argomento, è possibile creare rapidamente un linguaggio DSL con una notazione basata su diagramma, un formato XML leggibile e gli strumenti di base necessari per generare il codice e altri artefatti.
@@ -595,7 +596,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 1. Ottimizzare il linguaggio DSL usando più funzionalità della definizione DSL. È possibile, ad esempio, creare un solo strumento connettore in grado di creare più tipi di connettore ed è possibile controllare le regole in base a cui, eliminando un elemento, vengono eliminati anche gli elementi correlati. Queste tecniche vengono realizzate per lo più impostando i valori nella definizione DSL e alcune richiedono poche righe di codice programma.
 
-     Per altre informazioni, vedere [Personalizzazione ed estensione di un Domain-Specific linguaggio .](../modeling/customizing-and-extending-a-domain-specific-language.md)
+     Per altre informazioni, vedere [Personalizzazione ed estensione di un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
 2. Estendere gli strumenti di modellazione usando il codice programma per ottenere effetti più avanzati. È possibile, ad esempio, creare comandi di menu che possono cambiare il modello ed è possibile creare strumenti che integrano due o più linguaggi DSL. VMSDK è progettato in modo specifico per facilitare l'integrazione delle estensioni con il codice generato dalla definizione DSL.  Per altre informazioni, vedere [Writing Code to Customize a Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
@@ -609,18 +610,18 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
  Vedere anche [Procedura: Modificare lo spazio dei nomi di un Domain-Specific linguaggio.](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)
 
 ## <a name="troubleshooting"></a><a name="trouble"></a> Risoluzione dei problemi
- La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altri suggerimenti sono disponibili nel forum [sull'estendibilità degli](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)strumenti di visualizzazione .
+ La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altri suggerimenti sono disponibili nel forum [sull'estendibilità](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)degli strumenti di visualizzazione.
 
 | Problema | Suggerimento |
 |-|-|
-| Le modifiche apportate al file della definizione DSL non hanno effetto. | Fare **clic su Trasforma tutti i** modelli sulla barra degli strumenti Esplora soluzioni e quindi ricompilare la soluzione. |
-| Le forme mostrano il nome di un elemento Decorator invece del valore della proprietà. | Impostare il mapping dell'elemento Decorator. Nel diagramma di definizione DSL fare clic sulla mappa degli elementi del diagramma, ovvero la linea grigia tra la classe di dominio e la classe di forma.<br /><br /> Aprire la **finestra Dettagli DSL.** Se non è possibile visualizzarlo, scegliere Altre **finestre** dal menu Visualizza e quindi fare clic su **Dettagli DSL**.<br /><br /> Fare clic **sulla scheda Mappe decorator.** Selezionare il nome dell'elemento Decorator. Verificare che la casella accanto sia selezionata. In **Proprietà di visualizzazione** selezionare il nome di una proprietà di dominio.<br /><br /> Per altre informazioni, vedere [Forme nel diagramma](#shapes). |
+| Le modifiche apportate al file della definizione DSL non hanno effetto. | Fare **clic su Trasforma tutti** i modelli nella barra degli strumenti Esplora soluzioni e quindi ricompilare la soluzione. |
+| Le forme mostrano il nome di un elemento Decorator invece del valore della proprietà. | Impostare il mapping dell'elemento Decorator. Nel diagramma di definizione DSL fare clic sulla mappa degli elementi del diagramma, ovvero la linea grigia tra la classe di dominio e la classe di forma.<br /><br /> Aprire la **finestra Dettagli DSL.** Se non è possibile visualizzarlo, scegliere Altro dal menu **Visualizza Windows** e quindi fare clic su **Dettagli DSL.**<br /><br /> Fare clic **sulla scheda Mappe** Decorator . Selezionare il nome dell'elemento Decorator. Verificare che la casella accanto sia selezionata. In **Proprietà di** visualizzazione selezionare il nome di una proprietà di dominio.<br /><br /> Per altre informazioni, vedere [Forme nel diagramma.](#shapes) |
 | In Esplora DSL, non è possibile aggiungere un elemento a una raccolta. Ad esempio, quando si fa clic con il pulsante destro del mouse su Strumenti, nel menu manca un comando "Aggiungi strumento".<br /><br /> Nella finestra di esplorazione del linguaggio DSL, non è possibile aggiungere un elemento a un elenco. | Fare clic con il pulsante destro del mouse sull'elemento sopra il nodo con cui si sta provando. Quando si vuole aggiungere un elemento a un elenco, il comando Aggiungi non è nel nodo dell'elenco, ma nel proprietario. |
 | È stata creata una classe di dominio, ma non è possibile creare le istanze nella finestra di esplorazione linguaggio. | Ogni classe di dominio, tranne quella radice, deve essere la destinazione di una relazione di incorporamento. |
-| Nella finestra di esplorazione del linguaggio DSL, gli elementi vengono mostrati solo con i nomi di tipo. | Nella definizione DSL selezionare una proprietà di dominio della classe e nella Finestra Proprietà impostare **Is Element Name** (Nome elemento is) su true. |
-| Il linguaggio DSL si apre sempre nell'editor XML. | Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Fare clic con il pulsante destro del mouse **sull'elemento** di progetto, scegliere Apri con e selezionare *YourLanguage***Designer (Impostazione predefinita).** |
-| La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly. | Esaminare e aggiornare **DslPackage\GeneratedCode\Package.tt** Per altre informazioni, vedere Procedura: Modificare lo spazio dei nomi di [un Domain-Specific linguaggio.](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) |
-| La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione. | Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1. Nel menu Start Windows, in Tutti i programmi **espandere**, strumenti e quindi fare clic su Reimposta il Microsoft Visual Studio [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] istanza **sperimentale**. <br />2. Scegliere **Ricompila** soluzione dal menu **Compila.** |
+| Nella finestra di esplorazione del linguaggio DSL, gli elementi vengono mostrati solo con i nomi di tipo. | Nella definizione DSL selezionare una proprietà di dominio della classe e nella Finestra Proprietà impostare **Is Element Name** (Nome elemento Is) su true. |
+| Il linguaggio DSL si apre sempre nell'editor XML. | Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Fare clic con il pulsante destro del mouse **sull'elemento** di progetto, scegliere Apri con e selezionare *YourLanguage***Designer (impostazione predefinita).** |
+| La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly. | Esaminare e aggiornare **DslPackage\GeneratedCode\Package.tt** Per altre informazioni, vedere Procedura: Modificare lo spazio dei nomi di un [Domain-Specific linguaggio.](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) |
+| La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione. | Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1. Nella Windows menu Start, **in** Tutti i programmi espandere , Strumenti e quindi fare clic su Reimposta Microsoft Visual Studio [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] istanza **sperimentale**. <br />2. Scegliere **Ricompila** soluzione dal menu **Compila.** |
 
 ## <a name="see-also"></a>Vedi anche
 

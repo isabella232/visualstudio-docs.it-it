@@ -1,6 +1,6 @@
 ---
 title: Usare l'elenco attività
-description: Scopri in che modo il Elenco attività in Visual Studio può aiutarti a tenere traccia e usare i commenti del codice in modo più efficiente.
+description: Informazioni su come Elenco attività in Visual Studio consentono di tenere traccia e usare i commenti del codice in modo più efficiente.
 ms.date: 10/12/2020
 ms.topic: how-to
 f1_keywords:
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 599623fc5c069c6c402de3718b1b16d20176eaad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f326885e0a98c4dc5a71f3024530d176951883101f126b0b2d9fe9755e843478
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925632"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121399496"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 
@@ -70,7 +71,7 @@ Poiché `TODO` è un token predefinito, questo commento viene visualizzato nell'
 Per impostazione predefinita, Visual Studio include i token seguenti: `HACK`, `TODO`, `UNDONE` e `UnresolvedMergeConflict`. Per i token non viene fatta distinzione tra maiuscole e minuscole. È inoltre possibile creare token personalizzati.
 
 > [!NOTE]
-> I token predefiniti sono disponibili solo per i linguaggi C/C++, C# e VB. Per creare token personalizzati per altri linguaggi di programmazione, seguire questa procedura.
+> I token predefiniti sono disponibili solo per i linguaggi C/C++, C# e VB linguaggi. Per creare token personalizzati per altri linguaggi di programmazione, seguire questa procedura.
 
 Per creare un token personalizzato:
 
@@ -105,11 +106,11 @@ Un *collegamento* è un segnalibro nel codice di cui viene tenuta traccia nell'*
 
 ### <a name="create-a-shortcut"></a>Creare un collegamento
 
-Per creare un collegamento, posizionare il puntatore nella parte del codice in cui si vuole aggiungere il collegamento. Scegliere **modifica**  >  **segnalibri**  >  **Aggiungi elenco attività collegamento** o premere **CTRL** + **K**, **CTRL** + **H**.
+Per creare un collegamento, posizionare il puntatore nella parte del codice in cui si vuole aggiungere il collegamento. Scegliere **Modifica**  >  **segnalibri Aggiungi** Elenco attività collegamento  >  **oppure** premere **CTRL** + **K**, **CTRL** + **H**.
 
 Per spostarsi tra i collegamenti nel codice, scegliere un collegamento nell'elenco, quindi fare clic su **Attività successiva** o **Attività precedente** nel menu di scelta rapida.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Elenco attività, ambiente, finestra di dialogo Opzioni](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Elenco attività, Ambiente, finestra di dialogo Opzioni](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Commenti dell'attività (Visual Studio per Mac)](/visualstudio/mac/task-comments)
