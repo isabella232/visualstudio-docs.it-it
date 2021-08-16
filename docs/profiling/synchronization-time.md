@@ -1,6 +1,6 @@
 ---
 title: Periodo di sincronizzazione | Microsoft Docs
-description: Informazioni sul modo in cui i segmenti nella sequenza temporale sono associati ai tempi di blocco categorizzati come sincronizzazione.
+description: Informazioni su come i segmenti nella sequenza temporale sono associati a tempi di blocco classificati come Sincronizzazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: affa04cc-8bba-4848-9301-b19846d3c2cb
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b6469c1020f125dd28798ad4bff5ccc9d3e7aa06
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9b57a0aa799bd3793b38a7cbad60b0aba6176b48aaed1e7c46c9f733b95daadf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949376"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410203"
 ---
 # <a name="synchronization-time"></a>Periodo di sincronizzazione
 Questi segmenti nella sequenza temporale sono associati ai periodi di blocco categorizzati come Sincronizzazione. Quando un thread viene contrassegnato come bloccato durante la sincronizzazione, è implicita una delle cause seguenti:
@@ -30,4 +31,4 @@ Questi segmenti nella sequenza temporale sono associati ai periodi di blocco cat
   Per comprendere la causa sottostante a un evento di blocco del thread, esaminare attentamente gli stack di chiamate all'origine del blocco e i report di profilatura.
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione thread](../profiling/threads-view-parallel-performance.md)
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

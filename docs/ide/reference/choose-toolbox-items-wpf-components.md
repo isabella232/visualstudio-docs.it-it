@@ -1,6 +1,6 @@
 ---
 title: Scegli elementi della Casella degli strumenti, Componenti WPF
-description: Informazioni su come utilizzare la scheda Componenti WPF per visualizzare i controlli Windows Presentation Foundation disponibili per la selezione nel computer locale.
+description: Informazioni su come usare la scheda Componenti WPF per visualizzare i Windows Presentation Foundation disponibili per la selezione nel computer locale.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
@@ -12,18 +12,19 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d23418cd784b9e0b7c916c1e5629a6da012b9d0b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d690dddd660227155b36b6b97aff7cc3582d95d397fd5f2fe05ac90b5873724
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836397"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412296"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 
-Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, **scegliere Scegli elementi della casella degli** strumenti dal menu **strumenti** per visualizzare la finestra di dialogo **Scegli elementi della casella degli strumenti** e quindi selezionare la scheda **Componenti WPF** . Per ordinare i componenti elencati, selezionare un'intestazione di colonna.
+Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, **scegliere** Scegli elementi della  Casella degli strumenti dal **menu** Strumenti per visualizzare la finestra di dialogo Scegli elementi della Casella degli strumenti e quindi selezionare la relativa scheda **Componenti WPF.** Per ordinare i componenti elencati, selezionare un'intestazione di colonna qualsiasi.
 
 - Quando la casella di controllo accanto a un componente è selezionata, l'icona di tale componente viene visualizzata nella **casella degli strumenti**.
 

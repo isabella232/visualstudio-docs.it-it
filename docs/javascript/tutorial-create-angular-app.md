@@ -8,32 +8,34 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 1f9078360987a531be544eb15460d4eb760a1677
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: d431c750e807d1aa7fe43d9b8d2c556c96678cbdcb50c166425a377228dc9172
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115095053"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411442"
 ---
 # <a name="create-an-angular-app"></a>Creare un'app Angular app
 
-In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio viene creata ed eseguita una semplice Angular'applicazione Web front-end.
+In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio viene creata ed eseguita una semplice applicazione Web Angular front-end.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Assicurarsi che siano installati gli elementi seguenti:
 
+- Visual Studio 2022 Preview 2 o versione successiva. Passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 - npm ( [https://www.npmjs.com/](https://www.npmjs.com/) ) 
 - Angular Interfaccia della riga di comando ( [https://angular.io/cli](https://angular.io/cli) ) Può essere la versione scelta
 
 ## <a name="create-your-app"></a>Creare l'app
 
-1. Nella finestra di dialogo Project nuovo progetto **selezionare Crea un nuovo progetto.**
+1. Nella finestra di dialogo Project nuovo progetto selezionare **Crea un nuovo progetto.**
 
    :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="Creare un nuovo progetto":::
 
@@ -43,7 +45,7 @@ Assicurarsi che siano installati gli elementi seguenti:
 
 1. Assegnare un nome al progetto e alla soluzione. 
 
-   Quando si arriva alla finestra Informazioni aggiuntive assicurarsi di NON selezionare l'opzione Aggiungi integrazione **per** API Web ASP.NET Project vuota. Questa opzione aggiunge file al modello Angular in modo che possa essere associato al progetto ASP.NET Core, se viene aggiunto ASP.NET Core progetto.
+   Quando si arriva alla finestra Informazioni aggiuntive assicurarsi di NON selezionare l'opzione Aggiungi integrazione per API Web ASP.NET Project **vuota.** Questa opzione consente di aggiungere file al modello Angular in modo che possa essere associato al progetto ASP.NET Core, se viene aggiunto ASP.NET Core progetto.
 
    :::image type="content" source="media/vs-2022/angular-additional-info.png" alt-text="Informazioni aggiuntive":::
 
@@ -59,7 +61,7 @@ Assicurarsi che siano installati gli elementi seguenti:
 
 Scegliere **Compila**  >  **compila soluzione** per compilare il progetto.
 
-Si noti che la compilazione iniziale può richiedere del tempo, in quanto l'interfaccia Angular comando eseguirà il comando npm install.
+Si noti che la compilazione iniziale può richiedere del tempo, in quanto l'interfaccia della Angular comando eseguirà il comando npm install.
 
 ## <a name="start-your-project"></a>Avviare il Project
 

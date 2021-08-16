@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
-ms.technology: vs-ide-general
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: af9e8e71a7188e8ee2c8f0a7809830f82fb8f15a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 93a47f483a830c2ba6d83c45a0f2179537fb87ea0fe09254a7b2499487cc65b4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296651"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411841"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 
@@ -29,7 +29,7 @@ Questa esercitazione illustra le attività seguenti:
 
 - Archiviare oggetti, ad esempio icone, in un oggetto <xref:System.Collections.Generic.List%601>.
 
-- Usare un `foreach` ciclo in C# o un `For Each` ciclo in Visual Basic per scorrere gli elementi di un elenco.
+- Usare un `foreach` ciclo in C# o `For Each` un ciclo in Visual Basic scorrere gli elementi in un elenco.
 
 - Tenere traccia dello stato di un form utilizzando variabili di riferimento.
 
@@ -37,7 +37,7 @@ Questa esercitazione illustra le attività seguenti:
 
 - Creare un timer con conto alla rovescia e quindi generare un evento subito dopo l'avvio.
 
-Al termine, l'app dovrebbe avere un aspetto simile all'immagine seguente:
+Al termine, l'app dovrebbe essere simile all'immagine seguente:
 
 ![Gioco che si creerà in questa esercitazione](../ide/media/express_finishedgame.png)
 
@@ -55,14 +55,14 @@ Al termine, l'app dovrebbe avere un aspetto simile all'immagine seguente:
 |[Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.|
 |[Passaggio 9: Provare altre funzionalità](../ide/step-9-try-other-features.md)|Provare altre funzionalità, ad esempio modificare le icone e i colori oppure aggiungere una griglia e i suoni. Provare a ingrandire la lavagna e a regolare il timer.|
 
-Sono disponibili anche eccezionali risorse di formazione video gratuite. Per altre informazioni sulla programmazione in C#, vedere [nozioni fondamentali su c#: sviluppo per principianti assoluti](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
+Sono disponibili anche ottime risorse gratuite per l'apprendimento video. Per altre informazioni sulla programmazione in C#, vedere [Nozioni fondamentali su C#: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto e aggiungere una tabella al form](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**.
+Per iniziare l'esercitazione, iniziare **[con Passaggio 1: Creare un progetto e aggiungere una tabella al modulo](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
-* [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)
+* [Visual Basic esercitazioni](../get-started/visual-basic/index.yml)
 * [Esercitazioni su C++](/cpp/get-started/tutorial-console-cpp)

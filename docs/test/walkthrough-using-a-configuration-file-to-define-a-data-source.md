@@ -1,6 +1,6 @@
 ---
 title: Usare un file di configurazione per definire l'origine dati
-description: Informazioni su come usare un'origine dati definita in un file di app.config per il testing unità, a partire dalla creazione di un file di app.config che definisce un'origine dati.
+description: Informazioni su come usare un'origine dati definita in un file app.config per gli unit test, a partire dalla creazione di un file app.config che definisce un'origine dati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: f234d0285f5a0ed01567bb77c21e4c2d080a5f64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 425eb19e516dc166c041203bd6139ee9f953d6b5b5feb32df94ceb49870a6c01
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967878"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384561"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 

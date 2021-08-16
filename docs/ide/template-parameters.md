@@ -12,12 +12,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 133fbec68ff0e6b04793c2e168c730ee37024ad4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 55f8d161eff6b1df3395a8819bba4064c5a7c4af3172e77c7669a3d3b2b340f8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970649"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411815"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -25,7 +26,7 @@ Quando viene creata un'istanza di modello, è possibile sostituire i valori nel 
 
 ## <a name="declare-and-enable-template-parameters"></a>Dichiarare e abilitare i parametri di modello
 
-I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
+I parametri di modello vengono dichiarati nel formato $*parametro*$. Esempio:
 
 - $safeprojectname$
 
@@ -35,7 +36,7 @@ I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
 
 ### <a name="enable-parameter-substitution-in-templates"></a>Abilitare la sostituzione dei parametri nei modelli
 
-1. Nel file con *estensione vstemplate* del modello individuare l' `ProjectItem` elemento che corrisponde all'elemento per il quale si desidera abilitare la sostituzione dei parametri.
+1. Nel file *con estensione vstemplate* del modello individuare l'elemento corrispondente all'elemento per cui si vuole abilitare `ProjectItem` la sostituzione dei parametri.
 
 1. Impostare l'attributo `ReplaceParameters` dell'elemento `ProjectItem` su `true`.
 
@@ -52,7 +53,7 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |Parametro|Descrizione|
 |---------------|-----------------|
 |clrversion|Versione corrente di Common Language Runtime (CLR).|
-|ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio: `ext_safeprojectname`.|
+|ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio, `ext_safeprojectname`.|
 |guid[1-10]|GUID usato per sostituire il GUID del progetto in un file di progetto. È possibile specificare fino a 10 GUID univoci, ad esempio `guid1`.|
 |itemname|Nome del file in cui viene usato il parametro.|
 |machinename|Nome del computer corrente, ad esempio Computer01.|
@@ -121,7 +122,7 @@ Nel file *.vstemplate* del modello di progetto includere l'attributo `ReplacePar
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: sostituire i parametri di un modello](how-to-substitute-parameters-in-a-template.md)
+- [Procedura: Sostituire parametri in un modello](how-to-substitute-parameters-in-a-template.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
-- [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
 - [Riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md)

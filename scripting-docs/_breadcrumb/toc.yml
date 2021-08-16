@@ -14,7 +14,7 @@
           tocHref: /scripting/winscript/
           topicHref: /scripting/winscript/windows-script-interfaces
           items:
-            - name: Informazioni di riferimento
+            - name: Riferimento
               tocHref: /scripting/winscript/reference/
               topicHref: /scripting/winscript/reference/windows-script-interfaces-reference
         - name: Hosting del runtime di JavaScript

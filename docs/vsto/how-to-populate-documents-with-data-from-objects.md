@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: popolare documenti con dati da oggetti'
-description: Informazioni su come usare i dati di un oggetto nella soluzione ed è possibile usare Windows Form controlli per visualizzare i dati in un documento.
+title: 'Procedura: Popolare documenti con dati da oggetti'
+description: Informazioni su come usare i dati di un oggetto nella soluzione ed è possibile usare i Windows Form per visualizzare i dati in un documento.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,18 +13,19 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5bebc21fb02f6b5441c597fcfd25364991829e71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbb1a0b342b706b64ace7034d72b87be878ff7b279fadde6af1b62cbbedf6511
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918579"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384405"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>Procedura: popolare documenti con dati da oggetti
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Procedura: Popolare documenti con dati da oggetti
 
-L'accesso ai dati di un oggetto dati è uguale sia nei progetti a livello di documento per Microsoft Office Word, sia nei progetti Windows Form. Per inserire i dati di un oggetto nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile usare i controlli Windows Form. Inoltre, è possibile visualizzare i dati tramite i controlli host. I controlli host sono oggetti nativi di Microsoft Office Word che sono stati migliorati con eventi e funzionalità di data binding. Per altre informazioni, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
+L'accesso ai dati di un oggetto dati è uguale sia nei progetti a livello di documento per Microsoft Office Word, sia nei progetti Windows Form. Per inserire i dati di un oggetto nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile usare i controlli Windows Form. Inoltre, è possibile visualizzare i dati tramite i controlli host. I controlli host sono oggetti nativi di Microsoft Office Word che sono stati migliorati con eventi e funzionalità di data binding. Per altre informazioni, vedere [Panoramica degli elementi host e dei controlli host.](../vsto/host-items-and-host-controls-overview.md)
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -38,9 +39,9 @@ Per popolare il documento con i dati di un oggetto, è necessario completare tre
 
 ## <a name="to-add-a-data-object"></a>Per aggiungere un oggetto dati
 
-Per aggiungere un oggetto dati, aprire la finestra **origini dati** e creare un'origine dati da un oggetto. Per altre informazioni, vedere [Add new data sources](../data-tools/add-new-data-sources.md) (Aggiungere nuove origini dati).
+Per aggiungere un oggetto dati, aprire la **finestra Origini** dati e creare un'origine dati da un oggetto . Per altre informazioni, vedere [Add new data sources](../data-tools/add-new-data-sources.md) (Aggiungere nuove origini dati).
 
-## <a name="connect-the-data-object-to-the-bindingsource"></a>Connettere l'oggetto dati a BindingSource
+## <a name="connect-the-data-object-to-the-bindingsource"></a>Connessione l'oggetto dati a BindingSource
 
 Nei progetti a livello di documento i controlli vengono aggiunti al documento e associati ai dati in fase di progettazione.
 
@@ -72,6 +73,6 @@ Per connettere l'oggetto dati a BindingSource:
 
 - [Aggiungere nuove origini dati](../data-tools/add-new-data-sources.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Procedura: aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Cenni preliminari sul componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)
+- [Procedura: Popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Procedura: Aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Panoramica del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

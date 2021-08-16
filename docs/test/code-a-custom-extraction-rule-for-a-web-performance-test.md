@@ -15,12 +15,13 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 09038afd3b8f359ed90639d7f35cb92c04241324
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: e3994d5cb15ef25c1f9915e1121d1c935ab18b84e0a5041c587447b022fa4153
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964602"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384964"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificare una regola di estrazione personalizzata per un test delle prestazioni Web
 
@@ -48,9 +49,9 @@ ms.locfileid: "99964602"
 
 6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di estrazione personalizzata.
 
-7. Nel progetto di test aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
+7. Nel progetto Test aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
 
-8. Per aggiungere la regola di estrazione personalizzata, fare clic con il pulsante destro del mouse su una richiesta di test delle prestazioni Web e selezionare **Aggiungi regola di estrazione**.
+8. Per aggiungere la regola di estrazione personalizzata, fare clic con il pulsante destro del mouse su una richiesta di test delle prestazioni Web e **scegliere Aggiungi regola di estrazione.**
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di estrazione**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di estrazione personalizzata e scegliere **OK**.
 

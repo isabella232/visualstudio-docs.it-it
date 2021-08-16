@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, HTML (Web Form), Convalida
-description: Informazioni su come usare la pagina convalida nella sezione HTML per impostare le preferenze relative alla modalità di verifica della sintassi del markup HTML nel documento da parte dell'editor HTML.
+description: Informazioni su come usare la pagina Convalida nella sezione HTML per impostare le preferenze per il modo in cui l'editor HTML controlla la sintassi del markup HTML nel documento.
 ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 769a16c0dd1275c435f8cd0b496097a5b1575160
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9266872ef9535802f66d3b068a3f10d51f4270d59de349f53b6547bf79a5afb7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932514"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412218"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opzioni, Editor di testo, HTML (Web Form), Convalida
 
-Usare la pagina di opzioni **Convalida** per impostare le preferenze relative alla modalità di verifica da parte dell'editor HTML dell'uso della sintassi del markup HTML all'interno del documento. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere convalida   >  **HTML (Web Form)** nell'editor di testo  >  .
+Usare la pagina di opzioni **Convalida** per impostare le preferenze relative alla modalità di verifica da parte dell'editor HTML dell'uso della sintassi del markup HTML all'interno del documento. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Convalida  >  HTML editor di   >  **testo (Web Forms)**  >  .
 
 ## <a name="validation"></a>Convalida
 
@@ -46,4 +46,4 @@ Usare la pagina di opzioni **Convalida** per impostare le preferenze relative al
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

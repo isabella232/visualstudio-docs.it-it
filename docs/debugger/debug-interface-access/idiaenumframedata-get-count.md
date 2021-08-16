@@ -11,14 +11,15 @@ ms.assetid: 94374d27-e335-4e90-a442-233181ab8e58
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f261525debc0459ff5dbce513603e2caa1f17e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3e1ee1880f3f695799f019e1d5105ff3cc1ca5d62c5498d30141b9ef30b71f4d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159363"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380574"
 ---
 # <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
 Recupera il numero di elementi dati del frame.
@@ -34,7 +35,7 @@ HRESULT get_Count (
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-out Restituisce il numero di elementi dati del frame.
+[out] Restituisce il numero di elementi dati del frame.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

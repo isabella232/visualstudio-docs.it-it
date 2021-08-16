@@ -1,5 +1,5 @@
 ---
-description: Determina i numeri di riga della modulo in cui si trova il numero di riga specificato in un file di origine o in prossimità.
+description: Determina i numeri di riga del compilando in cui si trova il numero di riga specificato in un file di origine all'interno o vicino.
 title: IDiaSession::findLinesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 924b3aada49fca11056a1cf7f1b577bab505b3ce
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0d82e56f608573c316789210cd04502e57220440941082b98f07bce7395a59bf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147737"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380262"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-Determina i numeri di riga della modulo in cui si trova il numero di riga specificato in un file di origine o in prossimità.
+Determina i numeri di riga del compilando in cui si trova il numero di riga specificato in un file di origine all'interno o vicino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,32 +39,32 @@ HRESULT findLinesByLinenum (
 #### <a name="parameters"></a>Parametri
 `compiland`
 
-in Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il modulo in cui cercare i numeri di riga. Questo parametro non può essere `NULL`.
+[in] Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il compilando in cui cercare i numeri di riga. Questo parametro non può essere `NULL`.
 
 `file`
 
-in Oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine in cui eseguire la ricerca. Questo parametro non può essere `NULL`.
+[in] Oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine in cui eseguire la ricerca. Questo parametro non può essere `NULL`.
 
 `linenum`
 
-in Specifica un numero di riga in base 1.
+[in] Specifica un numero di riga in base uno.
 
 > [!NOTE]
-> Non è possibile usare zero per specificare tutte le righe (usare il metodo [IDiaSession:: findLines](../../debugger/debug-interface-access/idiasession-findlines.md) per trovare tutte le righe).
+> Non è possibile usare zero per specificare tutte le righe (usare il [metodo IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) per trovare tutte le righe).
 
 `column`
 
-in Specifica il numero di colonna. Usare zero per specificare tutte le colonne. Una colonna è un offset di byte in una riga.
+[in] Specifica il numero di colonna. Usare zero per specificare tutte le colonne. Una colonna è un offset di byte in una riga.
 
 `ppResult`
 
-out Restituisce un objta [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) che contiene un elenco dei numeri di riga recuperati.
+[out] Restituisce un [oggetto objta IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) che contiene un elenco dei numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come aprire un file di origine, enumerare il moduli fornito da questo file e individuare i numeri di riga nel file di origine in cui inizia ogni modulo.
+Nell'esempio seguente viene illustrato come aprire un file di origine, enumerare i compilandi contributi da questo file e individuare i numeri di riga nel file di origine in cui inizia ogni compilazione.
 
 ```C++
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)

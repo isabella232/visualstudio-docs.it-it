@@ -1,6 +1,6 @@
 ---
 title: Visualizzare le informazioni di traccia WPF | Microsoft Docs
-description: Visual Studio può ricevere informazioni di traccia di debug dalle applicazioni WPF e visualizzarle nella finestra output. Informazioni su come gestire e personalizzare la traccia di WPF.
+description: Visual Studio ricevere informazioni di traccia di debug dalle applicazioni WPF e visualizzarle nella finestra Output. Informazioni su come gestire e personalizzare la traccia WPF.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,14 +16,15 @@ ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 30ef82565c6ab78efa0d11f8d4b0751e28c04ac6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e24c418d345eb6553268b62eebecf66efd1b1b42ecd4610edab73e6142e8bd65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884468"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361977"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Procedura: visualizzare le informazioni di traccia WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] è in grado di ricevere informazioni di traccia di debug da applicazioni WPF e di visualizzare tali informazioni nella finestra **Output**. Per visualizzare le informazioni di traccia di debug, la tracciatura WPF deve essere abilitata.

@@ -16,52 +16,53 @@ ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 802de0fd29d909320040667f972de422595bdd4f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 4cdec9bea2883e67bf9ff2383319b966b4b73d8caeab7f6c92b1faaf3878fb8d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904968"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359858"
 ---
 # <a name="ide-constants"></a>Costanti IDE
 
 La classe fornisce costanti specifiche dell'ambiente di sviluppo integrato (IDE) e precedentemente definite <xref:Microsoft.VisualStudio.VSConstants> solo nei file di intestazione.
 
-## <a name="logical-and-physical-views"></a>Visualizzazioni logiche e fisiche
+## <a name="logical-and-physical-views"></a>Viste logiche e fisiche
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori devono passare questo valore al metodo per ottenere la finestra di dialogo Apri `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> con, in questo caso nelle possibili visualizzazioni del codice. |
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori devono passare questo valore al metodo per ottenere la finestra di dialogo Apri `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> con, in questo caso nelle possibili visualizzazioni codice. |
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri con, in questo caso popolata con le possibili visualizzazioni di debug mappate alla `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> stessa visualizzazione di  <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> .|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> con, in questo caso alle **visualizzazioni di Progettazione** form. |
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> con, in questo caso **alle visualizzazioni della** finestra di progettazione Form. |
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri con, in questo caso la visualizzazione `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> predefinita/primaria  della factory dell'editor.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri con, in questo caso per una visualizzazione `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> dell'editor  di testo di dati o documento.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo che richiede all'utente di scegliere la visualizzazione `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> definita dall'utente da usare.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri con, in questo caso per una `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> visualizzazione dell'editor di testo  di documenti o dati.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`I gestori passano questo valore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo che richiede all'utente di scegliere la visualizzazione definita dall'utente da usare.|
 
-## <a name="editor-factory-flags"></a>Flag factory dell'editor
+## <a name="editor-factory-flags"></a>Flag di factory dell'editor
 
 |Valore|Descrizione|
 |-----------|-----------------|
 |[Cef. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Flag obsoleto combinato bit per bit come primo parametro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metodo.|
-|[Cef. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Combinato bit per bit come primo parametro del metodo , indica che la factory dell'editor deve <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> eseguire le correzioni necessarie.|
-|[Cef. Openfile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Combinato bit per bit come primo parametro del metodo, questo flag si <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> escludono a vicenda di [CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
-|[Cef. Silenzioso](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Combinato bit per bit come primo parametro del metodo , indica che la factory dell'editor deve creare l'editor senza <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> visualizzare un'interfaccia utente.|
+|[Cef. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Combinato bit per bit come primo parametro del metodo , indica che la <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> factory dell'editor deve eseguire le correzioni necessarie.|
+|[Cef. Openfile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Combinato bit per bit come primo parametro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metodo, questo flag si escludono a vicenda di [CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
+|[Cef. Silenzioso](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Combinato bit per bit come primo parametro del metodo , indica che la factory dell'editor deve creare l'editor senza visualizzare <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> un'interfaccia utente.|
 
 ## <a name="visual-studio-errors"></a>Visual Studio errori
 
 |Valore|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Costante restituita dalle interfacce al comportamento asincrono quando l'oggetto in questione è già occupato|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|HRESULT di errore specifico per l'Visual Studio per "Dati del documento incompatibili".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|HRESULT di errore specifico per Visual Studio e che indica "Pacchetto non caricato".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|HRESULT di errore specifico per Visual Studio e che indica che il progetto esiste già.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|HRESULT di errore specifico per l'Visual Studio e che indica che la configurazione del progetto non è riuscita.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|HRESULT di errore specifico per Visual Studio e che indica "Progetto non caricato".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|HRESULT di errore specifico per Visual Studio e che indica "Soluzione già aperta".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|HRESULT di errore specifico per Visual Studio e che indica "Soluzione non aperta".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Restituito dalle interfacce di compilazione che dispongono di parametri per specificare una matrice dall'interfaccia , ma l'implementazione può applicare <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> il metodo solo a tutti gli output.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|HRESULT di errore specifico per l'Visual Studio "Dati di documento incompatibili".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|HRESULT di errore specifico di Visual Studio che indica che il pacchetto non è caricato.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|HRESULT di errore specifico di Visual Studio e che indica che il Project esiste già.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|HRESULT di errore specifico di Visual Studio e che indica che la Project configurazione non è riuscita.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|HRESULT di errore specifico di Visual Studio e che indica che Project non caricato.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|HRESULT di errore specifico di Visual Studio che indica che la soluzione è già aperta.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|HRESULT di errore specifico di Visual Studio che indica che la soluzione non è aperta.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Restituito dalle interfacce di compilazione che dispongono di parametri per specificare una matrice dall'interfaccia , ma l'implementazione può applicare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> metodo solo a tutti gli output.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|Il <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metodo restituisce questo valore se il documento ha un formato che non può essere aperto nell'editor.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Valore HRESULT che indica che l'utente ha fatto clic sul pulsante Indietro in una Visual Studio guidata.|
 
@@ -69,18 +70,18 @@ La classe fornisce costanti specifiche dell'ambiente di sviluppo integrato (IDE)
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|HRESULT di errore specifico per Visual Studio e che indica "Progetto inoltrato".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|HRESULT di errore specifico per Visual Studio e che indica "Project inoltrato".|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Costante specifica per l'Visual Studio per un "marcatore della casella degli strumenti".|
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Costante specifica dell'Visual Studio per la trasmissione di un messaggio di notifica tramite il metodo che indica <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> l'inizio della modalità.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Costante specifica dell'Visual Studio per la trasmissione di un messaggio di notifica tramite il metodo che indica la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> fine della modalità.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Costante specifica dell'Visual Studio per la trasmissione di un messaggio di notifica tramite il metodo che indica che le metriche della barra dei comandi <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> sono state modificate.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Costante specifica dell'Visual Studio per la trasmissione di un messaggio di notifica tramite il metodo che indica <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> la fine della modalità.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Costante specifica dell'Visual Studio per la trasmissione di un messaggio di notifica tramite il metodo che indica che le metriche della barra dei <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> comandi sono state modificate.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Costante specifica dell'Visual Studio che indica che non è stato impostato un cookie.|
 |[Vsitemid. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Identificatore Visual Studio elemento che rappresenta l'assenza di un elemento di progetto. Questo valore viene usato quando non è presente alcuna selezione corrente.|
-|[Vsitemid. Radice](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Identificatore Visual Studio elemento che rappresenta la radice di una gerarchia di progetto e viene usato per identificare l'intera gerarchia, anziché un singolo elemento.|
+|[Vsitemid. Radice](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Identificatore Visual Studio elemento che rappresenta la radice di una gerarchia del progetto e viene utilizzato per identificare l'intera gerarchia, anziché un singolo elemento.|
 |[Vsitemid. Selezione](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Identificatore Visual Studio elemento che rappresenta l'elemento o gli elementi attualmente selezionati, che possono includere la radice della gerarchia.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
- Descrive il componente dell'IDE appena selezionato, ad esempio in una <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> chiamata.
+ Descrive il componente dell'IDE appena selezionato, ad esempio in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> una chiamata .
 
 |Costante|Valore|
 |--------------|-----------|
@@ -105,7 +106,7 @@ La classe fornisce costanti specifiche dell'ambiente di sviluppo integrato (IDE)
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|5|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|1|
 
-## <a name="component-selector-dialog-constants"></a>Costanti della finestra di dialogo del selettore di componenti
+## <a name="component-selector-dialog-constants"></a>Costanti della finestra di dialogo selettore componenti
 
 |Costante|Valore|
 |--------------|-----------|
@@ -118,6 +119,6 @@ La classe fornisce costanti specifiche dell'ambiente di sviluppo integrato (IDE)
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Comandi definiti dall'IDE per l'estensione di sistemi di progetto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Comandi definiti dall'IDE per l'estensione dei sistemi di progetto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

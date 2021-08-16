@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3c18575ed53a47c38b4ee0df9a2a30ac4aedef9742791b868880fa18b04ebb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983640"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121383343"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Creazione di nuovi progetti e soluzioni
 
@@ -38,6 +38,6 @@ La pagina di destinazione di Visual Studio visualizza un elenco di progetti su c
 
 È possibile filtrare l'elenco tramite la casella Filtro o rimuovere singoli elementi dall'elenco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare soluzioni e progetti (Visual Studio in Windows)](/visualstudio/ide/creating-solutions-and-projects)

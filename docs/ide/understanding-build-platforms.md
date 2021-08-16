@@ -1,6 +1,6 @@
 ---
 title: Informazioni sulle piattaforme di compilazione
-description: Informazioni su come archiviare diverse versioni delle proprietà della soluzione e del progetto applicabili a diverse piattaforme di destinazione in Visual Studio.
+description: Informazioni su come archiviare versioni diverse delle proprietà di soluzioni e progetti che si applicano a piattaforme di destinazione diverse in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cfe141f186f192d17dc64ea3fae58a469e1d063
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28e3cf0fc2275af554fa4846b1b35470de20f6037718116c14d2202ec25a223d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971362"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411802"
 ---
 # <a name="understand-build-platforms"></a>Informazioni sulle piattaforme di compilazione
 
@@ -32,10 +32,10 @@ ms.locfileid: "99971362"
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-[Procedura: configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md)\
 Viene illustrato come configurare un progetto per una determinata piattaforma di destinazione.
 
-[Procedura: configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Procedura: Configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Viene illustrato come configurare un progetto per più piattaforme di destinazione.
 
 ## <a name="see-also"></a>Vedi anche

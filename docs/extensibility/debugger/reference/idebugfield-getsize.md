@@ -1,6 +1,6 @@
 ---
-description: Questo metodo ottiene le dimensioni in byte di un campo.
-title: 'IDebugField:: GetSize | Microsoft Docs'
+description: Questo metodo ottiene le dimensioni di un campo, in byte.
+title: IDebugField::GetSize | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 73329924-3751-4f44-af54-5986b7943374
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 471b6dce3c4795f8059e64aff5e7522b3ba91842
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 705d597993c0d29ba66a9165c17c65c4ca475cc157c29252bafa27383f430798
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077031"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360326"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
-Questo metodo ottiene le dimensioni in byte di un campo.
+Questo metodo ottiene le dimensioni di un campo, in byte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int GetSize(
 
 ## <a name="parameters"></a>Parametri
 `pdwSize`\
-out Restituisce la dimensione.
+[out] Restituisce le dimensioni.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di strumentazione di memoria .NET | Microsoft Docs'
-description: Informazioni sul modo in cui la visualizzazione moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati relativi a memoria e temporizzazione in base al modulo.
+description: Informazioni su come la visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti usando il metodo di strumentazione raggruppa i dati di memoria e di intervallo per modulo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ffa80d938556c33dc8eafec3068aef257219071
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f76990695b2ebbfb53bf6afda69870cd39e69f0b51681847424be3174672245
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879813"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410450"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Visualizzazione Moduli: dati di strumentazione di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati temporali e di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. I dati di profilatura per le funzioni del modulo sono elencati sotto il nodo del modulo.
@@ -30,7 +31,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione o modulo.|
 |**File di origine**|File di origine che contiene la definizione di questa funzione.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo in cui era in esecuzione il modulo o la funzione.|

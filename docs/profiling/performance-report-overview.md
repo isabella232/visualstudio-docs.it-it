@@ -1,6 +1,6 @@
 ---
 title: Informazioni generali sul rapporto di prestazioni | Microsoft Docs
-description: Visualizzare i dati di profilatura nella finestra rapporto di prestazioni di Visual Studio Team System Development Edition Integrated Development Environment.
+description: Visualizzare i dati di profilatura nella finestra Report di prestazioni dell'ambiente di sviluppo integrato Visual Studio Team System Development Edition.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,24 @@ ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e775c91759326407918befba3dd4bb52e19dd0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 360055d8ee6b1c373313ed674f241f4c3262ddeddecc2a9ba823dae873487baf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922283"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410437"
 ---
 # <a name="performance-report-overview"></a>Panoramica del rapporto di prestazioni
 È possibile visualizzare i dati di profilatura di una sessione di prestazioni nella finestra **Rapporto di prestazioni** dell'ambiente di sviluppo integrato (IDE) di Visual Studio Team System Development Edition. I dati di profilatura vengono salvati in file con estensione vsp e vsps. Le finestre delle visualizzazioni dei rapporti consentono di visualizzare e analizzare i problemi relativi alle prestazioni delle applicazioni.
 
 > [!CAUTION]
-> Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario mantenere un controllo rigoroso sulla distribuzione dei dati, sia nel suo nativo. formato *VSP* e quando viene esportato in un oggetto. *CSV* o. file *XML* .
+> Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario mantenere un controllo rigoroso sulla distribuzione dei dati, entrambi nel relativo nativo. *formato vsp* e quando viene esportato in un . *csv* o . *File xml.*
 >
-> Se i dati di traccia eventi vengono raccolti come parte della sessione di prestazioni, nel log di traccia eventi potrebbero essere visualizzate informazioni aggiuntive.*ETL*). come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.
+> Se i dati di traccia eventi vengono raccolti come parte della sessione di prestazioni, potrebbero essere visualizzate informazioni aggiuntive nel registro di traccia eventi (.*etl*) file. come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.
 
 ## <a name="performance-report-window"></a>Finestra Report prestazioni
  La finestra Rapporto di prestazioni fornisce gli strumenti per visualizzare, gestire e filtrare i dati sulle prestazioni e include un controllo query personalizzabile.
@@ -97,4 +98,4 @@ ms.locfileid: "99922283"
 
 ## <a name="see-also"></a>Vedi anche
 - [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)
-- [Visualizzazioni rapporto di prestazioni](../profiling/performance-report-views.md)
+- [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)

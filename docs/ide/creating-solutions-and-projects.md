@@ -12,18 +12,19 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f05a940787c2ab601b0b29db8ec5004c621a16b8
-ms.sourcegitcommit: d856c46d78638be609e7045621ed1bd7521a6dcc
+ms.openlocfilehash: d7d0788a6f2ce14cf68ea82b7dacab160752119545d4b6e3008ddaa644029429
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114283840"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413285"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Creare, usare ed eliminare progetti Visual Studio soluzioni
 
-In questo articolo si apprenderà come creare e usare Visual Studio da zero per archiviare gli elementi necessari per compilare le app.  Se non si ha familiarità con i progetti in Visual Studio, vedere questa panoramica di [Progetti e soluzioni](solutions-and-projects-in-visual-studio.md).  Per informazioni su come creare rapidamente un progetto da un modello, vedere [Creare un progetto da un modello](create-new-project.md).
+Questo articolo illustra come creare e usare i progetti Visual Studio da zero per archiviare gli elementi necessari per compilare le app.  Se non si ha familiarità con i progetti in Visual Studio, vedere questa panoramica di [Progetti e soluzioni](solutions-and-projects-in-visual-studio.md).  Per informazioni su come creare rapidamente un progetto da un modello, vedere [Creare un progetto da un modello](create-new-project.md).
 
 I *progetti* contengono gli elementi necessari per compilare l'app in Visual Studio, ad esempio file di codice sorgente, bitmap, icone e riferimenti a componenti e servizi. Quando si crea un nuovo progetto, Visual Studio crea una *soluzione* per ospitarlo. Se necessario è quindi possibile aggiungere altri progetti nuovi o esistenti alla soluzione. È anche possibile creare [soluzioni vuote o vuote.](#create-empty-solutions) Le soluzioni possono anche contenere file non connessi ad alcun progetto specifico.
 
@@ -42,7 +43,7 @@ In ogni caso non è obbligatorio usare le soluzioni e i progetti per sviluppare 
 
 ## <a name="create-a-project-from-a-project-template"></a>Creare un progetto da un modello di progetto
 
-Per informazioni su come selezionare un modello per creare un nuovo progetto, vedere [Creare un nuovo](create-new-project.md)progetto in Visual Studio . Per un esempio di un progetto e di una soluzione creati da zero, completi di istruzioni dettagliate e codice di esempio, vedere Introduzione a progetti [e soluzioni.](../get-started/tutorial-projects-solutions.md)
+Per informazioni su come selezionare un modello per creare un nuovo progetto, vedere [Creare un nuovo progetto in Visual Studio](create-new-project.md). Per un esempio di progetto e soluzione creati da zero, con istruzioni dettagliate e codice di esempio, vedere Introduzione a progetti [e soluzioni.](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="create-a-project-from-existing-code-files"></a>Creare un progetto da file di codice esistenti
 
@@ -50,7 +51,7 @@ Se è presente una raccolta di file di origine di codice è possibile aggiungerl
 
 1. Nel menu selezionare **File**  >  **nuovo Project** da codice  >  **esistente**.
 
-1. Nella procedura **guidata** Crea Project da file di codice esistenti selezionare il tipo di progetto desiderato nella casella di riepilogo a discesa Quale tipo di progetto si vuole **creare?** e quindi selezionare il **pulsante** Avanti.
+1. Nella procedura guidata Crea **Project** da file di codice esistenti selezionare il tipo di progetto desiderato nella casella di riepilogo a discesa Quale tipo di progetto si vuole **creare?** e quindi selezionare il **pulsante** Avanti.
 
 1. Nella procedura guidata, passare al percorso dei file e immettere un nome per il nuovo progetto nella casella **Nome**. Al termine, selezionare il **pulsante** Fine.
 
@@ -72,7 +73,7 @@ Quando si crea un progetto .NET Framework è possibile indicare la versione spec
 
 Per specificare una .NET Framework, selezionare il menu a discesa **Framework** nella finestra di **dialogo Project** nuova versione.
 
-![Screenshot dell'elenco a discesa Framework nella finestra di dialogo Project finestra di dialogo.](./media/vside-newproject-framework.png)
+![Screenshot dell'elenco a discesa Framework nella finestra Project finestra di dialogo.](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > Per l'accesso alle versioni di .NET Framework precedenti a .NET Framework 4 è necessario che nel computer sia installato .NET Framework 3.5.
@@ -81,7 +82,7 @@ Per specificare una .NET Framework, selezionare il menu a discesa **Framework** 
 
 ::: moniker range=">=vs-2019"
 
-Per specificare una .NET Framework, selezionare il menu a discesa **Framework** nella **pagina Crea un nuovo** progetto.
+Per specificare una .NET Framework, selezionare il menu a discesa **Framework** nella pagina **Crea un nuovo** progetto.
 
 ![Screenshot del selettore Framework nella finestra di dialogo "Configura nuovo progetto".](media/vs-2019/configure-new-project-framework.png)
 
@@ -127,7 +128,7 @@ Come detto in precedenza, è anche possibile aprire file di codice senza usare u
 
 Se si crea un progetto basato su .NET senza specificare un percorso su disco, il progetto è temporaneo. I progetti temporanei consentono di acquisire familiarità con i progetti .NET. In qualsiasi momento mentre si lavora con il progetto temporaneo è possibile scegliere di salvarlo o rimuoverlo.
 
-Per creare un progetto temporaneo, passare prima **a** Strumenti Opzioni Progetti e soluzioni Generali e deselezionare la casella di controllo Salva nuovi  >    >    >  progetti **al momento della** creazione. Aprire la finestra di dialogo **Nuovo progetto** come di consueto.
+Per creare un progetto temporaneo, passare prima **a** Strumenti Opzioni Progetti e soluzioni generali e deselezionare la casella di controllo Salva nuovi  >    >    >  progetti **al momento della** creazione. Aprire la finestra di dialogo **Nuovo progetto** come di consueto.
 
 ::: moniker-end
 
@@ -144,7 +145,7 @@ Per eliminare definitivamente una soluzione o altri componenti dal sistema, usar
 
 È possibile accedere Esplora file in Windows usando Esplora soluzioni in Visual Studio. Ecco come.
 
-1. In **Esplora soluzioni**, nel menu di scelta rapida della soluzione che si vuole eliminare fare clic con il pulsante destro del **mouse, selezionare Apri** cartella in Esplora file .
+1. In **Esplora soluzioni**, nel menu di scelta rapida della soluzione che si vuole eliminare fare clic con il pulsante destro del mouse, **selezionare Apri** cartella Esplora file .
 
 1. In Esplora file spostarsi in alto di un livello.
 

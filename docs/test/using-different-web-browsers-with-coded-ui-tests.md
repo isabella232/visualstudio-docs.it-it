@@ -1,20 +1,21 @@
 ---
 title: Uso di Web browser diversi con test codificati dell'interfaccia utente
-description: Informazioni su come personalizzare il test e riprodurlo utilizzando browser diversi per le applicazioni Web.
+description: Informazioni su come personalizzare il test e riprodurlo usando browser diversi per le applicazioni Web.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 199b8a3852850e1bb3239ad3b70ee5a438d4bcbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22821e8dacca86a659d412ae85a04afd3f8b32911dfea59ef2b67ec66da0f264
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850048"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384678"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usare vari Web browser con test codificati dell'interfaccia utente
 
@@ -22,7 +23,7 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-Prima di tutto, installare i [componenti Selenium per il test codificato dell'interfaccia utente tra browser](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
+Prima di tutto, installare i [componenti selenium per il test codificato dell'interfaccia utente tra browser.](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Funzionalità supportate in tutti i Web browser
 
@@ -40,7 +41,7 @@ Testando l'applicazione Web con vari tipi di Web browser si emula meglio l'esper
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Come registrare e riprodurre i test codificati dell'interfaccia utente nelle applicazioni web usando i Web browser supportati
 
-**Registrazione**: è necessario usare il Generatore di test codificati dell'interfaccia utente per registrare il test di un'applicazione Web usando Internet Explorer. È possibile aggiungere la convalida e il codice personalizzato per i controlli testati usando un set predefinito di proprietà come generalmente accade per i test codificati dell'interfaccia utente. Per altre informazioni, vedere [usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).
+**Registrazione**: è necessario usare il Generatore di test codificati dell'interfaccia utente per registrare il test di un'applicazione Web usando Internet Explorer. È possibile aggiungere la convalida e il codice personalizzato per i controlli testati usando un set predefinito di proprietà come generalmente accade per i test codificati dell'interfaccia utente. Per altre informazioni, vedere Usare [l'automazione interfaccia utente per testare il codice.](../test/use-ui-automation-to-test-your-code.md)
 
 > [!NOTE]
 > Non è possibile registrare i test codificati dell'interfaccia utente usando i browser Mozilla Firefox o Google Chrome.
@@ -106,7 +107,7 @@ Altre informazioni da tenere presente:
 
 ## <a name="tips"></a>Suggerimenti
 
-È possibile configurare l'output in modo da includere le schermate nei log codificati dell'interfaccia utente. A tale scopo, è necessario impostare alcune impostazioni di configurazione nel file di *QTAgent32.exe.config* . Per impostazione predefinita, questo file è installato nel percorso seguente:
+È possibile configurare l'output in modo da includere le schermate nei log codificati dell'interfaccia utente. A tale scopo, è necessario impostare alcune impostazioni di configurazione nel file *QTAgent32.exe.config* file. Per impostazione predefinita, questo file è installato nel percorso seguente:
 
 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
@@ -122,9 +123,9 @@ Per altre informazioni, vedere [Analisi dei test codificati dell'interfaccia ute
 
 ## <a name="video-resources"></a>Risorse video
 
-[Registra su IE e riproduzione ovunque](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[Registrazione in IE e riproduzione ovunque](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
-[Creazione di test tra più browser con il generatore di test codificati dell'interfaccia utente](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[Creare test tra browser con generatore di test codificati dell'interfaccia utente](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
 [Author cross browser tests using plain hand coding without UI Map](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4) (Creazione di test eseguibili in più browser con la normale codifica manuale senza mappa dell'interfaccia utente)
 
@@ -136,4 +137,4 @@ Per altre informazioni, vedere [Analisi dei test codificati dell'interfaccia ute
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Analizzare i test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [Analizzare i test codificati dell'interfaccia utente usando i log di test codificati dell'interfaccia utente](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 792175d7d2c168f75d20bce86675a1fcd8c47899
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b68fa95d069ab55de1d81caa27697930a8f715f254a226db55a9a32ea74c2d31
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875536"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413142"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: modificare la directory dell'output compilato
 
@@ -47,7 +47,7 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
    ![Proprietà Percorso di output per un progetto Visual Studio C#](media/output-path.png)
    
    > [!NOTE]
-   > In alcuni progetti, per impostazione predefinita, il Framework e il runtime vengono inclusi nel percorso di compilazione. Per modificare questa operazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **modifica file di progetto** e aggiungere quanto segue:
+   > Alcuni progetti includeranno per impostazione predefinita framework e runtime nel percorso di compilazione. Per modificare questa impostazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere Modifica Project **file** e aggiungere quanto segue:
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -62,6 +62,6 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Pagina Compila, Progettazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Pagina delle proprietà generale (progetto)](/cpp/build/reference/general-property-page-project)
+- [Pagina Compilazione, progettazione Project (C#)](../ide/reference/build-page-project-designer-csharp.md)
+- [Pagina delle proprietà Generale (progetto)](/cpp/build/reference/general-property-page-project)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

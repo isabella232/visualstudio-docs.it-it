@@ -1,6 +1,6 @@
 ---
-title: "Procedura: definire un'istanza di metodo | Microsoft Docs"
-description: Informazioni su come definire un'istanza del metodo per un metodo nel modello di integrazione applicativa dei dati (Business Data Connectivity).
+title: "Procedura: Definire un'istanza del metodo | Microsoft Docs"
+description: Informazioni su come definire un'istanza del metodo per un metodo nel modello BDC (Business Data Connectivity).
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,35 +15,36 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 055193123f99825027238166d762ce54b288d716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c75c41a68c4c6ba2cebf0b7d16bbf5b5ff064aee8f25d4c2962c9574b5c78ef1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885664"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409618"
 ---
-# <a name="how-to-define-a-method-instance"></a>Procedura: definire un'istanza di metodo
+# <a name="how-to-define-a-method-instance"></a>Procedura: Definire un'istanza del metodo
   È necessario definire almeno un'istanza del metodo per ogni metodo nel modello.
 
- Aggiungere un'istanza del metodo utilizzando la finestra **Dettagli metodo di integrazione applicativa dei dati** . Quando si aggiunge l'istanza del metodo, Visual Studio aggiunge un `<MethodInstance>` elemento al codice XML del file del modello nel progetto. Per ulteriori informazioni sugli attributi di un `<MethodInstance>` elemento, vedere [oggetto MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
+ Aggiungere un'istanza del metodo usando la **finestra Dettagli metodo BDC.** Quando si aggiunge l'istanza del metodo, Visual Studio aggiunge un elemento al `<MethodInstance>` codice XML del file di modello nel progetto. Per altre informazioni sugli attributi di un `<MethodInstance>` elemento, vedere [MethodInstance.](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))
 
-### <a name="to-define-a-method-instance"></a>Per definire un'istanza di metodo
+### <a name="to-define-a-method-instance"></a>Per definire un'istanza del metodo
 
-1. Nella finestra **Dettagli metodo di integrazione applicativa dei dati** espandere il nodo di un metodo, quindi espandere il nodo **istanze** .
+1. Nella finestra **Dettagli metodo BDC** espandere il nodo di un metodo e quindi espandere il **nodo** Istanze .
 
-2. Nell'elenco **Aggiungi istanza metodo** scegliere **Crea istanza Finder**.
+2. **Nell'elenco Aggiungi un'istanza di metodo** scegliere Crea istanza **finder**.
 
-     Una nuova istanza del metodo viene visualizzata sotto il nodo **istanze** .
+     Sotto il nodo Istanze viene visualizzata una **nuova istanza del** metodo.
 
-3. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà**.
+3. Sulla barra dei menu scegliere **Visualizza**  >  **finestra Proprietà.**
 
-4. Nella finestra **Proprietà** impostare le proprietà dell'istanza del metodo. Per ulteriori informazioni su ogni proprietà, vedere [oggetto MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
+4. Nella finestra **Proprietà** impostare le proprietà dell'istanza del metodo. Per altre informazioni su ogni proprietà, vedere [MethodInstance.](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))
 
 ## <a name="see-also"></a>Vedi anche
-- [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Panoramica degli strumenti di progettazione del modello BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Procedura: Definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Progettare un modello di connettività dei dati aziendali](../sharepoint/designing-a-business-data-connectivity-model.md)

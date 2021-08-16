@@ -16,16 +16,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0c44bfcfe1e7f07f83ca2b7dbb8b0604f5efe5f1
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0b9203d9e6f785bd652ccbb60fcecd45c030fdbdd84b05c835cc601d85c92fe2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386163"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412569"
 ---
-# <a name="quickstart-create-your-first-nodejs-app-with-visual-studio"></a>Guida introduttiva: Creare la prima app Node.js con Visual Studio
+# <a name="quickstart-create-your-first-nodejs-app-with-visual-studio"></a>Avvio rapido: Creare la prima app Node.js con Visual Studio
 
-In questa introduzione da 5 a 10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio verrà creata una semplice app Web Node.js.
+In questa introduzione da 5 a 10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio si creerà una semplice app Node.js Web.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -34,31 +34,31 @@ Prima di iniziare, installare Visual Studio e configurare l'Node.js virtuale.
 ### <a name="install-visual-studio"></a>Installare Visual Studio
 
 ::: moniker range=">=vs-2019"
-Se non è già stato installato Visual Studio 2019, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio 2019, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 ::: moniker-end
 ::: moniker range="vs-2017"
 Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 ::: moniker-end
 
-### <a name="set-up-your-nodejs-environment"></a>Configurare l'ambiente Node.js
+### <a name="set-up-your-nodejs-environment"></a>Configurare l'ambiente Node.js locale
 
 Visual Studio consente di configurare l'ambiente, inclusa l'installazione di strumenti comuni con Node.js sviluppo.
 
 1. In Visual Studio passare a **Strumenti**  >  **Ottieni strumenti e funzionalità.**
 
-1. Nella finestra Programma di installazione di Visual Studio scegliere il carico di **Node.js** di sviluppo e selezionare **Modifica** per scaricare e installare il carico di lavoro.
+1. Nella finestra di Programma di installazione di Visual Studio scegliere il carico **Node.js** di lavoro Sviluppo di applicazioni e selezionare **Modifica** per scaricare e installare il carico di lavoro.
 
     ![Node.js carico di lavoro in Programma di installazione di Visual Studio](../ide/media/quickstart-nodejs-workload.png)
 
 1. Installare la versione LTS del [runtimeNode.js .](https://nodejs.org/en/download/) È consigliabile usare la versione LTS per una migliore compatibilità con framework e librerie esterni.
 
-    Anche Node.js è compilato per architetture a 32 bit e a 64 bit, il programma di installazione di Node.js supporta solo una versione installata alla volta.
+    Anche Node.js è compilato per architetture a 32 e a 64 bit, il programma di installazione di Node.js supporta solo una versione installata alla volta.
 
 1. Se Visual Studio non rileva il runtime installato (in genere), configurare il progetto in modo che punti al runtime installato:
 
    1. Dopo aver creato [il progetto ,](#create-your-app-project)fare clic con il pulsante destro del mouse sul nodo del progetto.
 
-   1. Selezionare **Proprietà** e impostare il **Node.exe .** È possibile usare un'installazione globale di Node.js o specificare il percorso di un interprete locale in ogni progetto Node.js progetto.
+   1. Selezionare **Proprietà** e impostare il **Node.exe percorso .** È possibile usare un'installazione globale di Node.js o specificare il percorso di un interprete locale in ogni progetto Node.js progetto.
 
 ## <a name="create-your-app-project"></a>Creare il progetto di app
 
@@ -79,9 +79,9 @@ Visual Studio consente di configurare l'ambiente, inclusa l'installazione di str
     ::: moniker-end
 
     ::: moniker range="vs-2017"
-    1. Nella barra dei menu superiore scegliere **File** New Project > **(Nuovo** > **progetto).**
+    1. Nella barra dei menu superiore scegliere **File** > **Nuovo** > **Project**.
 
-    1. Nel riquadro sinistro della finestra **di dialogo Nuovo** progetto espandere **JavaScript** e scegliere **Node.js**.
+    1. Nel riquadro sinistro della finestra di **dialogo Project** espandere **JavaScript** e scegliere **Node.js**.
 
     1. Nel riquadro centrale scegliere Blank Node.js Web application (Applicazione **Web vuota)** e selezionare **OK.**
 
@@ -97,7 +97,7 @@ Visual Studio consente di configurare l'ambiente, inclusa l'installazione di str
 
    ![Esplora soluzioni](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-   - Evidenziato in grassetto è il progetto, usando il nome specificato durante la configurazione del progetto. Su disco, questo progetto è rappresentato da un file con estensione *njsproj* nella cartella del progetto.
+   - Evidenziato in grassetto è il progetto, usando il nome specificato quando si configura il progetto. Su disco, questo progetto è rappresentato da un file con estensione *njsproj* nella cartella del progetto.
 
    - Al primo livello è presente una soluzione che, per impostazione predefinita, ha lo stesso nome del progetto. Una soluzione, rappresentata da un file *con estensione sln* su disco, è un contenitore per uno o più progetti correlati.
 
@@ -131,7 +131,7 @@ Visual Studio consente di configurare l'ambiente, inclusa l'installazione di str
 
 1. Nel browser verificare che sia visualizzato un messaggio "Hello World" e il numero di porta locale.
 
-Congratulazioni. È stata creata una semplice app Node.js con Visual Studio. Per approfondire la conoscenza, continuare con **la sezione** Esercitazioni del sommario.
+Congratulazioni! È stata creata una semplice app Node.js con Visual Studio. Per approfondire la conoscenza, continuare con **la sezione** Esercitazioni del sommario.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

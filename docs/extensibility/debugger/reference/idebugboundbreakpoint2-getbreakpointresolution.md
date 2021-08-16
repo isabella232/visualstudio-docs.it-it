@@ -1,6 +1,6 @@
 ---
-description: Ottiene la risoluzione del punto di interruzione che descrive il punto di interruzione.
-title: 'IDebugBoundBreakpoint2:: GetBreakpointResolution | Microsoft Docs'
+description: Ottiene la risoluzione del punto di interruzione che descrive questo punto di interruzione.
+title: IDebugBoundBreakpoint2::GetBreakpointResolution | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60dfff7884f30090f1eb2feaeaea8bec7dc8753e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 624a62d1fd582f10ba674ef8a3a03151e487a33960959c68c2abccd2c87e0b5f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088900"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360703"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Ottiene la risoluzione del punto di interruzione che descrive il punto di interruzione.
+Ottiene la risoluzione del punto di interruzione che descrive questo punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,20 +44,20 @@ int GetBreakpointResolution(
 
 ## <a name="parameters"></a>Parametri
 `ppBPResolution`\
-out Restituisce l'interfaccia [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) che rappresenta uno dei seguenti elementi:
+[out] Restituisce [l'interfaccia IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) che rappresenta uno degli elementi seguenti:
 
-- Oggetto risoluzione del punto di interruzione che descrive la posizione nel codice in cui è stato associato un punto di interruzione del codice.
+- Oggetto di risoluzione del punto di interruzione che descrive la posizione nel codice in cui è stato associato un punto di interruzione del codice.
 
-- Percorso dei dati a cui è associato un punto di interruzione dei dati.
+- Posizione dei dati a cui è associato un punto di interruzione dati.
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell BP_STATE enumerazione ). [](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="remarks"></a>Commenti
-Chiamare il metodo [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) per determinare se la risoluzione del punto di interruzione è per il codice o i dati.
+Chiamare il [metodo GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) per determinare se la risoluzione del punto di interruzione è per codice o dati.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CBoundBreakpoint` oggetto semplice che espone l'interfaccia [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CBoundBreakpoint` semplice che espone [l'interfaccia IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::GetBreakpointResolution(

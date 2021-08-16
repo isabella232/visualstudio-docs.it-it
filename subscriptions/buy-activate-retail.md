@@ -1,62 +1,62 @@
 ---
-title: Sottoscrizioni di Visual Studio disponibili nella Microsoft Store | Microsoft Docs
+title: Visual Studio sottoscrizioni disponibili nel Microsoft Store | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 03/21/2021
 ms.topic: how-to
-description: Informazioni su come acquistare le sottoscrizioni di Visual Studio nella Microsoft Store e attivarle nel portale delle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 4ed9a46112e6a4f976948375f797cb37c0a52c6e
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+description: Informazioni su come acquistare Visual Studio sottoscrizioni nel portale Microsoft Store e attivarle nel portale Visual Studio sottoscrizioni.
+ms.openlocfilehash: 58e22a0d0b105914c5bbd27a499ca2a7a1a68ebf5e478c049f7848550ec6d02a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776961"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121381133"
 ---
-# <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Le sottoscrizioni di Visual Studio sono disponibili tramite il Microsoft Store
-Le sottoscrizioni di Visual Studio sono disponibili tramite diversi canali. È possibile scegliere tra [contratti multilicenza](https://www.microsoft.com/licensing/default), provider di soluzioni Cloud, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)e Microsoft Store.  In questo articolo verrà illustrato come acquistare e attivare le sottoscrizioni tramite il [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
+# <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio le sottoscrizioni sono disponibili tramite il Microsoft Store
+Visual Studio sottoscrizioni sono disponibili tramite vari canali. Scegliere tra [Contratti multilicenza,](https://www.microsoft.com/licensing/default)Cloud Solution Provider, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)e Microsoft Store.  Questo articolo illustra l'acquisto e l'attivazione delle sottoscrizioni [tramite il Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
-## <a name="how-to-buy-subscriptions"></a>Come acquistare le sottoscrizioni
-Serve aiuto per decidere quale sottoscrizione è più adatta alle proprie esigenze?  Vedere la pagina relativa ai [vantaggi della sottoscrizione](https://visualstudio.microsoft.com/vs/benefits/).  
+## <a name="how-to-buy-subscriptions"></a>Come acquistare sottoscrizioni
+Serve aiuto per decidere quale sottoscrizione è più giusta per te?  Vedere la pagina [dei vantaggi della sottoscrizione](https://visualstudio.microsoft.com/vs/benefits/).  
 
-Le sottoscrizioni di Visual Studio disponibili tramite il Microsoft Store includono:
+Visual Studio sottoscrizioni disponibili tramite il Microsoft Store includono:
 - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
 - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
 - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 
-Ognuna di queste sottoscrizioni offre la possibilità di effettuare un acquisto iniziale o rinnovare una sottoscrizione esistente.  Il rinnovo dei prezzi, che riflette uno sconto significativo, è disponibile solo per le sottoscrizioni esistenti. 
+Ognuna di queste sottoscrizioni offre la possibilità di effettuare un acquisto iniziale o di rinnovare una sottoscrizione esistente.  I prezzi di rinnovo, che riflettono uno sconto significativo, sono disponibili solo per le sottoscrizioni esistenti. 
 
 > [!IMPORTANT]
 > Per poter usufruire delle tariffe speciali per il rinnovo, è necessario rinnovare le sottoscrizioni prima della scadenza.  
 
 ## <a name="how-to-activate-subscriptions"></a>Come attivare le sottoscrizioni
-Dopo aver acquistato una sottoscrizione di Visual Studio tramite il Microsoft Store, è possibile avviare il processo di attivazione dalla pagina di conferma del pagamento o dal messaggio di posta elettronica di conferma ricevuto dopo l'acquisto.
+Dopo aver acquistato una sottoscrizione Visual Studio tramite il Microsoft Store, è possibile iniziare il processo di attivazione dalla "Pagina di conferma" o dal "Messaggio di posta elettronica di conferma" ricevuto dopo l'acquisto.
 
-1. Selezionare il collegamento **fare clic qui per accedere** nel messaggio di posta elettronica di conferma o nella pagina di conferma dell'acquisto.
+1. Selezionare il **collegamento Fare clic qui per accedere nel messaggio** di posta elettronica di conferma o nella pagina di conferma dell'acquisto.
 2. Si verrà reindirizzati a [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) .
-3. Immettere l'indirizzo di posta elettronica che richiede l'accesso alla sottoscrizione di Visual Studio e selezionare **continua**.
-4. È possibile che venga reindirizzato a una delle due diverse pagine di accesso a seconda del tipo di account in uso:
+3. Immettere l'indirizzo di posta elettronica che richiede l'accesso Visual Studio sottoscrizione e selezionare **Continua.**
+4. È possibile che si venga reindirizzati a una delle due diverse pagine di accesso a seconda del tipo di account in uso:
     - I sottoscrittori che usano un account Microsoft (MSA) personale visualizzeranno la pagina della password per l'account Microsoft.
     - I sottoscrittori che usano account aziendali o dell'istituto di istruzione verranno reindirizzati alla pagina di accesso dell'organizzazione.
 5. Immettere la password o completare i requisiti di accesso dell'organizzazione.
 6. Al completamento dell'accesso verrà visualizzata la finestra "Attiva la sottoscrizione a Visual Studio".
-7. Immettere le informazioni sul codice "Product Key" disponibili nella pagina di conferma del pagamento o "messaggio di posta elettronica di conferma" e selezionare **attiva**.
-8. La sottoscrizione dovrebbe essere ora visibile nella pagina [sottoscrizioni](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) ed è necessario avere accesso a tutti i vantaggi della sottoscrizione.
+7. Immettere le informazioni sul codice Product Key disponibili nella pagina di conferma o nel messaggio di posta elettronica di conferma del pagamento e selezionare **Attiva.**
+8. La sottoscrizione dovrebbe ora essere visibile nella [pagina Sottoscrizioni](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e si dovrebbe avere accesso a tutti i vantaggi della sottoscrizione.
 
 ## <a name="support-for-microsoft-store"></a>Supporto per Microsoft Store
-Per eventuali domande sull'acquisto tramite il Microsoft Store, è disponibile la guida.  Contattare il [supporto Microsoft Store](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs).
+In caso di domande sull'acquisto tramite il Microsoft Store, è disponibile la Guida.  Contattare [Microsoft Store supporto tecnico](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs).
 
 ## <a name="resources"></a>Risorse 
-- [Supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
+- [Visual Studio sottoscrizioni](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo aver attivato la sottoscrizione, visitare la pagina relativa ai [vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) per visualizzare tutti gli strumenti, i servizi, la formazione e i vantaggi del supporto inclusi nella sottoscrizione.  Per iniziare, è consigliabile configurare questi vantaggi:
+Dopo aver attivato la sottoscrizione, [](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) visitare la pagina Vantaggi per visualizzare tutti gli strumenti, i servizi, il training e i vantaggi di supporto inclusi nella sottoscrizione.  Per iniziare, è consigliabile configurare questi vantaggi:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

@@ -9,14 +9,15 @@ ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bf584511bc2f0ee43429abe83dea3d7a45259d9
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: d974e114d9c1b1ee7680e02db8de5d23649f251266f76d86086acf2c0beb51fe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898913"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361028"
 ---
 # <a name="m_stateflags-field"></a>m_stateFlags campo
 Archivia informazioni sullo stato corrente <xref:System.Threading.Tasks.Task> dell'oggetto .
@@ -48,5 +49,5 @@ Archivia informazioni sullo stato corrente <xref:System.Threading.Tasks.Task> de
 
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)
 
-## <a name="see-also"></a>Vedere anche
-- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Vedi anche
+- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)

@@ -11,22 +11,23 @@ ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: abfa4018e763bbbac5ff788f401d0ceb76eb97a1
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: c9f484b485910b6fd10cec24863f89f0a49de92c6933ab8fcd62427f948b995b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901266"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361080"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Interfacce dell'analizzatore di espressioni chiave
 > [!IMPORTANT]
-> In Visual Studio 2015, questa modalità di implementazione degli analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
+> In Visual Studio 2015 questa modalità di implementazione degli analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
- Quando si scrive un analizzatore di espressioni (EE), insieme al contesto di valutazione, è necessario avere familiarità con le interfacce seguenti.
+ Quando si scrive un analizzatore di espressioni (edizione Enterprise), insieme al contesto di valutazione, è necessario avere familiarità con le interfacce seguenti.
 
-## <a name="interface-descriptions"></a>Descrizioni delle interfacce
+## <a name="interface-descriptions"></a>Descrizioni dell'interfaccia
 
 - [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)
 
@@ -58,5 +59,5 @@ ms.locfileid: "112901266"
 
      Questa interfaccia rappresenta un valore e il relativo tipo ed è il risultato di una valutazione dell'espressione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md)

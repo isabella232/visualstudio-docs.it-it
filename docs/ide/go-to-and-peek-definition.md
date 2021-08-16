@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 804c49c079f619a774cb1f99d54b2b2af5a3929d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0cd8fe13af8f60d90b8c4b0e29a442d5e70a498f55368d4f87cfb8d8e47caca
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869362"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413212"
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
@@ -28,15 +29,15 @@ Gli sviluppatori devono spesso visualizzare le definizioni del codice sorgente p
 
 ## <a name="go-to-definition"></a>Vai a definizione
 
-La funzionalità **Vai a definizione** consente di passare all'origine di un tipo o di un membro e di aprire il risultato in una nuova scheda. Se si è un utente della tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del nome del simbolo e premere **F12**. Se si preferisce usare il mouse, scegliere **Vai a definizione** dal menu di scelta rapida o usare la funzionalità **CTRL+clic** descritta nella sezione seguente.
+La **funzionalità Vai a definizione** consente di passare all'origine di un tipo o di un membro e apre il risultato in una nuova scheda. Se si è un utente della tastiera, posizionare il cursore del testo in un punto qualsiasi all'interno del nome del simbolo e premere **F12.** Se si preferisce usare il mouse, scegliere **Vai a definizione** dal menu di scelta rapida o usare la funzionalità **CTRL+clic** descritta nella sezione seguente.
 
 ### <a name="ctrl-click-go-to-definition"></a>Vai a definizione con Ctrl+clic
 
-**CTRL** + **fare clic su** un collegamento per consentire agli utenti del mouse di accedere rapidamente **a Vai a definizione**. Quando si preme **Ctrl** e si passa il puntatore del mouse su un tipo o su un membro, è possibile fare clic sui simboli. Per passare rapidamente alla definizione di un simbolo, premere **Ctrl** e quindi fare clic sul simbolo. È facile!
+**CTRL** + **click** è un collegamento che consente agli utenti del mouse di **accedere rapidamente a Vai a definizione**. Quando si preme **Ctrl** e si passa il puntatore del mouse su un tipo o su un membro, è possibile fare clic sui simboli. Per passare rapidamente alla definizione di un simbolo, premere **Ctrl** e quindi fare clic sul simbolo. È facile!
 
 ![Animazione di Vai a definizione con un clic del mouse](../ide/media/click_gotodef.gif)
 
-È possibile modificare il tasto di modifica per **Vai a definizione** con clic del mouse passando a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **generale** e scegliendo **ALT** o **CTRL** + **ALT** dall'elenco a discesa **Usa tasto di modifica** . È anche possibile disabilitare la funzionalità **Vai a definizione** con clic del mouse deselezionando la casella di controllo **Abilita clic del mouse per eseguire Vai a definizione**.
+È possibile modificare il tasto  di modifica per vai a definizione facendo clic con il pulsante del mouse in Strumenti Opzioni Editor di testo Generale e selezionando ALT o CTRL ALT dall'elenco a discesa Usa tasto di  >    >    >     +  modifica.  È anche possibile disabilitare la funzionalità **Vai a definizione** con clic del mouse deselezionando la casella di controllo **Abilita clic del mouse per eseguire Vai a definizione**.
 
 ![Abilitazione del clic del mouse per Vai a definizione](../ide/media/editor_options_mouse_click_gotodef.png)
 
@@ -44,7 +45,7 @@ La funzionalità **Vai a definizione** consente di passare all'origine di un tip
 
 La funzionalità **Visualizza definizione** consente di visualizzare in anteprima la definizione di un tipo senza abbandonare la posizione corrente nell'editor. Se si preferisce usare la tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo o del membro e premere **Alt+F12**. Se si preferisce usare il mouse, è possibile scegliere **Visualizza definizione** dal menu di scelta rapida.
 
-Per abilitare la funzionalità **CTRL** + **clic** , passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **generale**. Selezionare l'opzione **Apri definizione in visualizzazione rapida** e fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.
+Per abilitare la **funzionalità** + **ctrl clic,** passare a **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **Generale.** Selezionare l'opzione **Apri definizione in visualizzazione rapida** e fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.
 
 ![Impostazione dell'opzione Visualizza definizione con clic del mouse](../ide/media/editor_options_peek_view.png)
 
@@ -71,7 +72,7 @@ Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Conso
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Visualizzare le definizioni del codice sorgente decompilato invece dei metadati (C#)
 
-È possibile impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o di un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **strumenti**  >  **Opzioni** dalla barra dei menu. Espandere quindi **editor di testo**  >  **C#**  >  **Avanzate** e selezionare **Abilita spostamento a origini decompilate**.
+È possibile impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o di un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **Opzioni**  >  **strumenti** dalla barra dei menu. Espandere quindi Editor **di testo**  >  C# Advanced (Avanzate **C#)** e selezionare Enable navigation to decompiled sources (Abilita spostamento  >  a **origini decompilate).**
 
 ![Visualizzazione di una definizione decompilata](media/go-to-definition-decompiled-sources.png)
 

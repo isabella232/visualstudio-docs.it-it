@@ -1,6 +1,6 @@
 ---
 title: Classe span | Microsoft Docs
-description: Informazioni sulla classe Span e su come definisce una fase dell'applicazione. Vengono inoltre illustrati i costruttori pubblici della classe Span e la gerarchia di ereditarietà.
+description: Informazioni sulla classe span e su come definisce una fase dell'applicazione. Informazioni anche sui costruttori pubblici della classe span e sulla gerarchia di ereditarietà.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fff7f91326cac47100f5b2b1b42e22b9c0fc1d9b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1cc9c68785914f23fbb75391b2d7f6b9b9fafcf4c1da9bba4b2b38d1ac305f1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949961"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410268"
 ---
 # <a name="span-class"></a>Classe span
 Definisce una fase dell'applicazione.
@@ -47,4 +48,4 @@ class span;
  **Spazio dei nomi:** Concurrency::diagnostic
 
 ## <a name="see-also"></a>Vedi anche
-- [spazio dei nomi Diagnostic](../profiling/diagnostic-namespace.md)
+- [spazio dei nomi di diagnostica](../profiling/diagnostic-namespace.md)

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 31e38d728eb3c336b1d3160a920ef18055de1b1f
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: ed9e93eeca9f4c1fc3a5d130948a18741f99e0ec0ee58910c59268dc4002ab8a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616301"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121382310"
 ---
 # <a name="working-with-git"></a>Uso di Git
 
@@ -59,9 +59,9 @@ Queste schede consentono le azioni seguenti:
 
 ## <a name="switching-branches"></a>Cambio di rami
 
-Per impostazione predefinita, il primo ramo creato in un repository è noto come Branch **principale** . Non esiste tecnicamente alcuna differenza tra il ramo principale e qualsiasi altro, ma il ramo principale è quello che più spesso si considera nei team di sviluppo come ramo "Live" o "produzione".
+Per impostazione predefinita, il primo ramo creato in un repository è noto come **ramo** principale. Tecnicamente non c'è nulla di diverso tra il ramo principale e qualsiasi altro, ma il ramo principale è quello che viene più spesso pensato nei team di sviluppo come ramo "live" o "di produzione".
 
-Una linea di sviluppo indipendente può essere creata diramando il ramo principale (o qualsiasi altro ramo). Fornisce una nuova versione del Branch principale in un determinato momento, consentendo lo sviluppo indipendentemente da ciò che è "Live". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
+È possibile creare una linea di sviluppo indipendente diramando main (o qualsiasi altro ramo). In questo modo viene fornita una nuova versione del ramo principale in un momento nel tempo, consentendo lo sviluppo indipendentemente da ciò che è "live". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
 
 Gli utenti possono creare tutti i rami che desiderano per ogni repository, ma è consigliabile eliminare i rami quando si finisce di usarli per mantenere organizzato il repository.
 
@@ -91,7 +91,7 @@ Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Contro
 
 Ciò consente di visualizzare tutte le modifiche in ogni file di un progetto con l'opzione di annullarle, creare una patch o eseguire il commit.
 
-Per eseguire il commit di un file nel repository remoto, premere **commit**, immettere un messaggio di commit e confermare con il pulsante commit:
+Per eseguire il commit di un file nel repository remoto, premere **Commit,** immettere un messaggio di commit e confermare con il pulsante Commit:
 
 ![Commit di un file](media/version-control-gitCommit.png)
 
@@ -101,6 +101,6 @@ Dopo aver eseguito il commit delle modifiche, eseguirne il push in un repository
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017) (Condividere il codice con Visual Studio 2017 e Azure Repos Git)

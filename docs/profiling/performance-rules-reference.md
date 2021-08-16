@@ -1,21 +1,22 @@
 ---
 title: Tabella di riferimento delle regole di prestazioni | Microsoft Docs
-description: Informazioni sul modo in cui le regole sulle prestazioni del Strumenti di profilatura forniscono avvisi e informazioni aggiuntive sulle prestazioni dell'applicazione.
+description: Informazioni su come le regole per le prestazioni Strumenti di profilatura forniscono avvisi e informazioni aggiuntive sulle prestazioni dell'applicazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c23f32e2368ffa269deeb7eddb5fb05839e4af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7dd51299756ead4593afb95a374e23edce25f47f45489af573b2ba3ab924f181
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410398"
 ---
 # <a name="performance-rules-reference"></a>Tabella di riferimento delle regole di prestazioni
 Le regole di prestazioni degli strumenti di profilatura forniscono informazioni e avvisi aggiuntivi sulle prestazioni dell'applicazione. Le regole di prestazioni consentono di analizzare in un'esecuzione di profilatura i dati raccolti da origini quali i contatori delle prestazioni dei processori e di Windows. I messaggi relativi alle regole vengono visualizzati nella finestra di output degli errori dell'ambiente di sviluppo integrato di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. I messaggi sono elencati con uno dei livelli di regole seguenti:
@@ -34,7 +35,7 @@ Le regole di prestazioni degli strumenti di profilatura sono organizzate in quat
 
 |Category|Descrizione|
 |-|-|
-|[Regole prestazioni .NET Framework utilizzo](../profiling/dotnet-framework-usage-performance-rules.md)|Regole che consentono di usare .NET Framework in modo efficiente.|
-|[Regole relative alle prestazioni di paging e memoria](../profiling/memory-and-paging-performance-rules.md)|Regole che analizzano il comportamento di paging e Managed Memory dell'applicazione.|
-|[Regole di utilizzo di Strumenti di profilatura](../profiling/profiling-tools-usage-rules.md)|Regole che permettono di usare gli strumenti di profilatura in modo efficiente.|
-|[Regole sulle prestazioni di monitoraggio delle risorse](../profiling/resource-monitoring-performance-rules.md)|Messaggi di informazioni sull'uso del processore e della memoria in un'esecuzione di profilatura.|
+|[.NET Framework Regole per le prestazioni di utilizzo](../profiling/dotnet-framework-usage-performance-rules.md)|Regole che consentono di usare .NET Framework in modo efficiente.|
+|[Regole di prestazioni relative a memoria e paging](../profiling/memory-and-paging-performance-rules.md)|Regole che analizzano il comportamento di paging e Managed Memory dell'applicazione.|
+|[Strumenti di profilatura di utilizzo](../profiling/profiling-tools-usage-rules.md)|Regole che permettono di usare gli strumenti di profilatura in modo efficiente.|
+|[Regole delle prestazioni di monitoraggio delle risorse](../profiling/resource-monitoring-performance-rules.md)|Messaggi di informazioni sull'uso del processore e della memoria in un'esecuzione di profilatura.|

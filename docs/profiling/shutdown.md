@@ -1,21 +1,22 @@
 ---
 title: Shutdown | Microsoft Docs
-description: Informazioni sul modo in cui l'opzione Shutdown attende la chiusura o lo scollegamento di qualsiasi processo attualmente profilato, quindi disattiva il profiler e chiude il file di dati di profilatura.
+description: Informazioni sul modo in cui l'opzione Shutdown attende la fine o la disconnessione di qualsiasi processo attualmente profilato, quindi disattiva il profiler e chiude il file di dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 455278f7fccbc9e4f80ce4f11a167e5b433ca8ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: efc59328fbc89179a6d3d533facdccf3f92030463763a31f0670021ac2cc8771
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950039"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410385"
 ---
 # <a name="shutdown"></a>Arresta
 L'opzione **Shutdown** attende il termine o la disconnessione di qualsiasi processo in corso di profilatura, quindi disattiva il profiler e chiude il file di dati di profilatura. L'opzione **Shutdown** deve essere l'ultimo comando di un'esecuzione di profilatura.

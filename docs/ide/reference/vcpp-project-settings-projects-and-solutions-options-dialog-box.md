@@ -1,6 +1,6 @@
 ---
 title: Opzioni delle impostazioni di progetto C++
-description: Informazioni su come usare la pagina Impostazioni progetto di VC + + nella sezione progetti e soluzioni per definire le impostazioni di compilazione e progetto C++ correlate alla registrazione, alle prestazioni e ai tipi di file di supporto.
+description: Informazioni su come usare la VC++ Project Impostazioni nella sezione Progetti e soluzioni per definire le impostazioni di compilazione e progetto C++ correlate alla registrazione, alle prestazioni e ai tipi di file di supporto.
 ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16226cd66c2cf46d1dc46f1cb3f90dc3bad9658c
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 37245bdf8d73d11980951697d63ac18689c161aa8aa2af3f0bbee06f405200a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616278"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411984"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Impostazioni progetto di VC++, Progetti e soluzioni, finestra di dialogo Opzioni
 
@@ -103,7 +103,7 @@ Consente a Visual Studio di memorizzare nella cache i dati di progetto, in modo 
 
 Non si usano i dati memorizzati nella cache del progetto. Analizzare i file di progetto ogni volta che il progetto viene caricato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilazione di programmi C/C++](/cpp/build/projects-and-build-systems-cpp)
 - [Riferimenti alla compilazione in C/C++](/cpp/build/reference/c-cpp-building-reference)

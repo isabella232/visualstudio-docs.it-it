@@ -13,18 +13,19 @@ ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90fad54be26c11db31d649d0ae6b25c108a6b361
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 8bfce06cdb6e98b6090933b83f53d43bed3f9b44317c60658d8d1eba4997ddec
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905163"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413518"
 ---
 # <a name="vstextview-object"></a>Oggetto VSTextView
 
-La visualizzazione testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo. In sostanza, la visualizzazione è ciò a cui la maggior parte degli utenti fa riferimento come editor. Poiché la visualizzazione è separata dal buffer da vari livelli di testo (ritorno a capo automatico, struttura del testo e così via), non è garantito che la vista sia una rappresentazione esatta del testo nel buffer. Per altre informazioni sulla visualizzazione testo, vedere [Accesso alla visualizzazione Testo tramite l'API legacy](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
+La visualizzazione testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo. In sostanza, la visualizzazione è ciò a cui la maggior parte degli utenti fa riferimento come editor. Poiché la visualizzazione è separata dal buffer da vari livelli di testo (ritorno a capo automatico, struttura del testo e così via), non è garantito che la visualizzazione sia una rappresentazione esatta del testo nel buffer. Per altre informazioni sulla visualizzazione testo, vedere [Accesso alla visualizzazione Testo tramite l'API legacy.](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api?preserve-view=true&view=vs-2015)
 
 Nella tabella seguente vengono illustrate le interfacce <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> nell'oggetto .
 
@@ -40,7 +41,7 @@ Nella tabella seguente vengono illustrate le interfacce <xref:Microsoft.VisualSt
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Interagisce con i livelli di testo.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Esegue operazioni sulla visualizzazione da un thread diverso.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modifica delle figure](https://www.microsoft.com/download/details.aspx?id=55984)
 - [Oggetto VSTextBuffer](../extensibility/vstextbuffer-object.md)

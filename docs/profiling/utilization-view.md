@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Utilizzo | Microsoft Docs
-description: Viene illustrato come visualizzare le informazioni relative alla CPU, alla GPU e ad altre risorse di sistema usate dal processo corrente.
+description: Nella visualizzazione Utilizzo vengono visualizzate informazioni su CPU, GPU e altre risorse di sistema usate dal processo corrente.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,23 +11,24 @@ ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 52dd5611e5a05de4bdb2d765bbdd2860e54f767e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 943b1c5647be78b796e9eb386aeb54d33adadd1a3d146c39a2880024cf3e91bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885898"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410171"
 ---
 # <a name="utilization-view"></a>Visualizzazione Utilizzo
 La **visualizzazione Utilizzo** contiene informazioni relative a CPU, GPU e altre risorse di sistema usate dal processo corrente (scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Viene indicato l'utilizzo medio dei core da parte del processo analizzato, del processo inattivo, del processo di sistema e di altri processi in esecuzione nel sistema nel tempo. Non viene indicato quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene usato un solo core logico. La visualizzazione viene generata dividendo il tempo di profilatura in brevi segmenti di tempo. Per ogni segmento, nel grafico viene rappresentato il numero medio di thread di processo in esecuzione nei core logici durante l'intervallo.
 
  ![Visualizzazione Utilizzo CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
- Il grafico mostra il tempo (sull'asse x) e la media dei core logici usati dal processo di destinazione, dal processo inattivo e dal processo di sistema. Il processo inattivo mostra i core inattivi. Il processo di sistema è un processo in Windows che può eseguire operazioni per conto di altri processi. I rimanenti processi in esecuzione nell'account di sistema per l'utilizzo di tutti i core rimanenti.
+ Il grafico mostra il tempo (sull'asse x) e la media dei core logici usati dal processo di destinazione, dal processo inattivo e dal processo di sistema. Il processo inattivo mostra i core inattivi. Il processo di sistema è un processo Windows in grado di eseguire operazioni per conto di altri processi. I processi rimanenti in esecuzione nell'account di sistema per l'utilizzo di tutti i core rimanenti.
 
- Sull'asse y viene indicato il numero di core logici. Windows considera il supporto multithread simultaneo nell'hardware come core logici (ad esempio, Hyper-Threading). Di conseguenza, un sistema dotato di un processore quad core che supporta due thread hardware per ogni core viene visualizzato come un sistema con otto core logici. Questo vale anche per la visualizzazione Core. Per altre informazioni, vedere [visualizzazione Core](../profiling/cores-view.md).
+ Sull'asse y viene indicato il numero di core logici. Windows considera il supporto multithread simultaneo nell'hardware come core logici (ad esempio, Hyper-Threading). Di conseguenza, un sistema dotato di un processore quad core che supporta due thread hardware per ogni core viene visualizzato come un sistema con otto core logici. Questo vale anche per la visualizzazione Core. Per altre informazioni, vedere [Visualizzazione Core.](../profiling/cores-view.md)
 
  Il grafico Attività GPU mostra il numero di motori di DirectX in uso nel tempo.  Un motore è in uso se sta elaborando un pacchetto DMA.  Il grafico non mostra lo specifico motore di DirectX (ad esempio, motore 3D, motore video e altri).
 
@@ -47,7 +48,7 @@ La **visualizzazione Utilizzo** contiene informazioni relative a CPU, GPU e altr
  Se si usa la GPU con C++ AMP o DirectX, potrebbe essere utile identificare il numero di motori GPU in uso o le aree di inattività imprevista della GPU.
 
 ## <a name="zoom"></a>Zoom
- Per ingrandire il grafico Utilizzo CPU o il grafico Attività GPU, selezionare una sezione o usare il dispositivo di scorrimento dello zoom sopra il grafico. L'impostazione dello zoom viene mantenuta quando si passa ad altre visualizzazioni. Per eseguire lo zoom indietro, usare il dispositivo di scorrimento dello zoom. È anche possibile eseguire lo zoom usando **CTRL** + **Scroll**.
+ Per ingrandire il grafico Utilizzo CPU o il grafico Attività GPU, selezionare una sezione o usare il dispositivo di scorrimento dello zoom sopra il grafico. L'impostazione dello zoom viene mantenuta quando si passa ad altre visualizzazioni. Per eseguire lo zoom indietro, usare il dispositivo di scorrimento dello zoom. È anche possibile eseguire lo zoom usando + **CTRL+SCORRIMENTO.**
 
 ## <a name="see-also"></a>Vedi anche
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)

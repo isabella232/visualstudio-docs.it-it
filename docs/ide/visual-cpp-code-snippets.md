@@ -1,6 +1,6 @@
 ---
 title: Frammenti di codice Visual C++
-description: Informazioni su come usare i frammenti di codice per aggiungere codice comunemente usato ai file di codice C++.
+description: Informazioni su come usare frammenti di codice per aggiungere codice di uso comune ai file di codice C++.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5cde2be817c49344e02ff06030022f99790a7a2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 2e8b8f46cfd0ff2a7c7174186f32187782ed3a3d98956f333b8e592e7ff4f44e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478809"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411776"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C++
 
@@ -26,7 +26,7 @@ In Visual Studio, è possibile usare frammenti di codice per aggiungere il codic
 
 ## <a name="insert-a-code-snippet"></a>Inserire un frammento di codice
 
-Per inserire un frammento di codice, aprire un file di codice C++ (*. cpp* o *. h*), fare clic in un punto qualsiasi all'interno del file ed eseguire una delle operazioni seguenti:
+Per inserire un frammento di codice, aprire un file di codice C++ (*.cpp* o *.h*), fare clic in un punto qualsiasi all'interno del file ed eseguire una delle operazioni seguenti:
 
 - Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Inserisci frammento di codice**
 
@@ -48,11 +48,11 @@ Verrà visualizzato un elenco di opzioni che iniziano con **#if**. Quando si sel
 
 Per usare un frammento di codice per racchiudere il codice selezionato, selezionare una riga (o più righe) ed eseguire una delle operazioni seguenti:
 
-- Fare clic con il pulsante destro del mouse per ottenere il menu di scelta rapida e selezionare **Racchiudi tra**
+- Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e **scegliere Surround With (Racchiude tra)**
 
-- Dal menu **modifica**  >  **IntelliSense** selezionare **Racchiudi tra**
+- Scegliere **Racchiude**  >  tra dal menu  **Modifica IntelliSense**
 
-- Utilizzando una tastiera, premere: **CTRL** + **K** + **S**
+- Usando una tastiera, premere: **CTRL** + **K** + **S**
 
 Selezionare **#if**. L'output dovrebbe essere simile al seguente:
 
@@ -117,7 +117,7 @@ private:
 
 Sono disponibili tre diversi frammenti **for** che specificano tipi diversi di cicli `for`.
 
-Il frammento **rfor** fornisce un ciclo for [basato su intervallo](/cpp/cpp/range-based-for-statement-cpp) (collegamento). Questo costrutto è da preferire rispetto ai cicli `for` basati su indice.
+Il **frammento rfor** fornisce un [ciclo](/cpp/cpp/range-based-for-statement-cpp) for basato su intervallo (collegamento). Questo costrutto è da preferire rispetto ai cicli `for` basati su indice.
 
 ```cpp
 for (auto& i : v)
@@ -126,7 +126,7 @@ for (auto& i : v)
 }
 ```
 
-Il frammento **for** fornisce un `for` ciclo in cui la condizione è basata sulla lunghezza (in `size_t` ) di un oggetto.
+Il **frammento** for fornisce `for` un ciclo in cui la condizione è basata sulla lunghezza (in `size_t` ) di un oggetto.
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -135,7 +135,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-Il frammento **Forr** fornisce un `for` ciclo inverso in cui la condizione è basata sulla lunghezza (in numeri interi) di un oggetto.
+Il **frammento forr** fornisce un ciclo inverso in cui la condizione è basata `for` sulla lunghezza (in numeri interi) di un oggetto.
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -146,7 +146,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>Frammento distruttore (~)
 
-Il frammento distruttore ( **~** ) Mostra un comportamento diverso in contesti diversi. Se si inserisce questo frammento di codice all'interno di una classe, esso fornisce un distruttore per quella classe. Si consideri, ad esempio, il codice seguente:
+Il frammento di distruttore ( **~** ) mostra un comportamento diverso in contesti diversi. Se si inserisce questo frammento di codice all'interno di una classe, esso fornisce un distruttore per quella classe. Si consideri, ad esempio, il codice seguente:
 
 ```cpp
 class SomeClass {

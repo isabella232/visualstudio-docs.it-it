@@ -1,6 +1,6 @@
 ---
-title: Aggiungere app Azure configurazione utilizzando Servizi connessi | Microsoft Docs
-description: Aggiungere una dipendenza del servizio di configurazione di Azure all'app usando Visual Studio Servizi connessi
+title: Aggiungere Configurazione app di Azure usando Servizi connessi | Microsoft Docs
+description: Aggiungere una dipendenza del servizio Di configurazione di Azure all'app usando il Visual Studio Servizi connessi
 author: ghogen
 manager: ''
 ms.custom: vs-azure
@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: d19d65943745aabd078173d6362ba186fa312959eeaca22b974d98b6718ee09c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683297"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380975"
 ---
-# <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>Aggiunta di app Azure configurazione con Visual Studio Servizi connessi
+# <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>Aggiunta Configurazione app di Azure tramite Visual Studio Servizi connessi
 
-In questa esercitazione si apprenderà come aggiungere facilmente tutti gli elementi necessari per iniziare a usare app Azure configurazione per gestire la configurazione e i flag delle funzionalità per i progetti Web in Visual Studio. Usando la funzionalità Servizi connessi in Visual Studio, è possibile fare in modo che Visual Studio aggiunga automaticamente tutto il codice, i pacchetti NuGet e le impostazioni di configurazione necessari per connettersi alla risorsa di configurazione dell'app in Azure. Per usare questa funzionalità, è necessario usare Visual Studio 2019 versione 16,9 o successiva.
+In questa esercitazione si apprenderà come aggiungere facilmente tutto il necessario per iniziare a usare Configurazione app di Azure per gestire la configurazione e i flag di funzionalità per i progetti Web in Visual Studio. Usando la funzionalità Servizi connessi in Visual Studio, è possibile fare in modo che Visual Studio aaggi sia automaticamente tutto il codice, i pacchetti NuGet e le impostazioni di configurazione necessari per connettersi alla risorsa di Configurazione app in Azure. Per usare questa funzionalità, è necessario usare Visual Studio 2019 versione 16.9 o successiva.
 
-È possibile usare la funzionalità di configurazione delle app Servizi connessi in ASP.NET Core, nella console di .NET Core e nei progetti di .NET Framework.
+È possibile usare la funzionalità Servizi connessi app in ASP.NET Core, nella console di .NET Core e .NET Framework progetto.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Servizi connessi in Visual Studio per Mac](/visualstudio/mac/connected-services).
@@ -28,57 +28,57 @@ In questa esercitazione si apprenderà come aggiungere facilmente tutti gli elem
 ## <a name="prerequisites"></a>Prerequisiti
 
 - Visual Studio con il carico di lavoro di Azure installato.
-- Progetto di uno dei tipi supportati
+- Un progetto di uno dei tipi supportati
 
-## <a name="connect-to-azure-app-configuration-using-connected-services"></a>Connettersi alla configurazione di app Azure tramite Servizi connessi
+## <a name="connect-to-azure-app-configuration-using-connected-services"></a>Connessione per Configurazione app di Azure usando Servizi connessi
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro **del mouse sul** nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
 
     ![Aggiunta di un servizio connesso di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
-1. Nella scheda **servizi connessi** selezionare l'icona + per le **dipendenze del servizio**.
+1. Nella scheda **Servizi connessi** selezionare l'icona + per **Dipendenze servizio**.
 
-    ![Aggiungi dipendenza del servizio](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
+    ![Aggiungere una dipendenza del servizio](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. Nella pagina **Aggiungi dipendenza** selezionare **configurazione app Azure**.
+1. Nella pagina **Aggiungi dipendenza** selezionare **Configurazione app di Azure**.
 
     ![Aggiungere la configurazione dell'app](./media/vs-azure-tools-connected-services-app-configuration/add-azure-app-configuration.png)
 
-    Se non è già stato effettuato l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita](https://azure.microsoft.com/free/dotnet).
+    Se non è già stato eseguito l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/free/dotnet)
 
-1. Nella schermata **configura configurazione app Azure** selezionare la sottoscrizione e un archivio di configurazione esistente. Selezionare quindi **Avanti**.
+1. Nella schermata **Configura Configurazione app di Azure** selezionare la sottoscrizione e un archivio di configurazione esistente. Selezionare quindi **Avanti**.
 
-    Se è necessario creare un archivio di configurazione dell'app, andare al passaggio successivo. In caso contrario, andare al passaggio 6.
+    Se è necessario creare un archivio di Configurazione app, andare al passaggio successivo. In caso contrario, andare al passaggio 6.
 
-    ![Aggiungi account di configurazione esistente al progetto](./media/vs-azure-tools-connected-services-app-configuration/select-config-store.png)
+    ![Aggiungere un account di configurazione esistente al progetto](./media/vs-azure-tools-connected-services-app-configuration/select-config-store.png)
 
-1. Per creare un archivio di configurazione dell'app:
+1. Per creare un archivio di configurazione app:
 
-   1. Selezionare l'icona + a destra dell'intestazione **archivi di configurazione dell'app** . 
+   1. Selezionare l'icona + a destra dell'intestazione **store di Configurazione** app. 
 
-   1. Compilare la finestra di dialogo **configurazione app Azure: Crea nuovo** e selezionare **Crea**. Si noti che il campo del nome della risorsa deve essere univoco. 
+   1. Compilare la **Configurazione app di Azure: Crea nuovo** e selezionare **Crea.** Si noti che il campo Nome risorsa deve essere univoco. 
 
-       ![Nuovo archivio di configurazione dell'app di Azure](./media/vs-azure-tools-connected-services-app-configuration/create-new-config-store.png)
+       ![Nuovo archivio di configurazione app di Azure](./media/vs-azure-tools-connected-services-app-configuration/create-new-config-store.png)
 
-   1. Quando viene visualizzata la finestra di dialogo **app Azure Configuration** , il nuovo archivio di configurazione viene visualizzato nell'elenco. Selezionare questo nuovo negozio, quindi fare clic su **Avanti**.
+   1. Quando viene **Configurazione app di Azure** finestra di dialogo, il nuovo archivio di configurazione viene visualizzato nell'elenco. Selezionare questo nuovo archivio, quindi selezionare **Avanti.**
 
-1. Immettere un nome per la stringa di connessione e scegliere se si desidera che la stringa di connessione venga archiviata in un file di segreti locali o in [Azure Key Vault](/azure/key-vault).
+1. Immettere un nome per la stringa di connessione e scegliere se si vuole archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
 
    ![Specificare la stringa di connessione](./media/vs-azure-tools-connected-services-app-configuration/connection-string-app-config.png)
 
-1. La schermata **Riepilogo modifiche** Mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sembrano OK, scegliere **fine**.
+1. La **schermata Riepilogo delle** modifiche mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sono ok, scegliere **Fine.**
 
    ![Riepilogo delle modifiche](./media/vs-azure-tools-connected-services-app-configuration/summary-of-changes-app-config.png)
 
-1. Al termine del **processo di configurazione delle dipendenze** , app Azure configurazione viene ora visualizzata sotto il nodo **dipendenze del servizio** del progetto.
+1. Al termine **del processo di configurazione** delle dipendenze, Configurazione app di Azure nel nodo **Dipendenze** del servizio del progetto.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Informazioni sulla configurazione di app Azure in [app Azure documentazione di configurazione](/azure/azure-app-configuration/overview).
+Per altre informazioni Configurazione app di Azure, [vedere Configurazione app di Azure documentazione.](/azure/azure-app-configuration/overview)
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Esercitazione per l'uso della configurazione dinamica in una configurazione di app connessa ASP.NET Core app](/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core)
+- [Esercitazione per l'uso della configurazione dinamica in un'app ASP.NET Core app connessa](/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core)
 - [Servizi connessi (Visual Studio per Mac)](/visualstudio/mac/connected-services)

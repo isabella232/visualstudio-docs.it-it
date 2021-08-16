@@ -1,7 +1,7 @@
 ---
 title: Migliorare le prestazioni se Visual Studio è lento
 titleSuffix: ''
-description: Informazioni su come migliorare le prestazioni di Visual Studio se si ritiene che sia in esecuzione lentamente.
+description: Informazioni su come migliorare Visual Studio prestazioni se si verifica un'esecuzione lenta.
 ms.custom: SEO-VS-2020
 ms.date: 04/11/2018
 ms.topic: conceptual
@@ -10,16 +10,17 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c1be9ef034f4c11fde22e8aa811785631321f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c749ebce702af7474b1d3c39b4bb71b6cce47a73aa656915037aeaf4d2308a8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909128"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412894"
 ---
 # <a name="optimize-visual-studio-performance"></a>Ottimizzare le prestazioni di Visual Studio
 
@@ -51,9 +52,9 @@ Non eseguire la soluzione da un'unità USB. Copiarla nell'unità disco rigido o 
 
 ## <a name="help-us-improve"></a>Consigli per miglioramenti
 
-Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la funzione **Segnala un problema** per "registrare" un'analisi e inviarla a Microsoft. Selezionare l'icona del feedback accanto ad **Avvio veloce** o scegliere **Guida** > **Commenti e suggerimenti** > **Segnala un problema** dalla barra dei menu. Per ulteriori informazioni, vedere [come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la funzione **Segnala un problema** per "registrare" un'analisi e inviarla a Microsoft. Selezionare l'icona del feedback accanto ad **Avvio veloce** o scegliere **Guida** > **Commenti e suggerimenti** > **Segnala un problema** dalla barra dei menu. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Suggerimenti sulle prestazioni](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Suggerimenti e consigli sulle prestazioni](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Blog su Visual Studio - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Caricamento più rapido delle soluzioni con Visual Studio 2017 Versione 15.6)

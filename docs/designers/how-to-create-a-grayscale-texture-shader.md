@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare uno shader con trama in scala di grigi'
-description: Informazioni su come usare la finestra di progettazione shader e il linguaggio grafico shader diretto per creare uno shader con trama in scala di grigi che modifica il valore di colore RGB dell'esempio di trama.
+description: Informazioni su come usare la finestra di progettazione shader e il linguaggio Graph shader per creare uno shader con trama in scala di grigi che modifica il valore del colore RGB dell'esempio di trama.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,14 +8,15 @@ ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: f4cde65d4540840470baad332b8092b5a410e14b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6effe4d7cd54c89dc95999b0e8ac61a52d9010586606cc61c399275029fac989
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930993"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361295"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procedura: Creare uno shader con trama in scala di grigi
 
@@ -51,8 +52,8 @@ Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)
+- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)
 - [Editor di immagini](../designers/image-editor.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

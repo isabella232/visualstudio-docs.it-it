@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, Generale
-description: Informazioni su come usare la pagina generale per modificare le impostazioni globali per il codice e l'editor di testo di Visual Studio.
+description: Informazioni su come usare la pagina Generale per modificare le impostazioni globali per il Visual Studio e l'editor di testo.
 ms.custom: SEO-VS-2020
 ms.date: 01/18/2019
 ms.topic: reference
@@ -34,16 +34,17 @@ ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e39febb27a74b0a2cef54098542bba087e2e0180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4e511c2f729c4df447f08c29e2942c1f661daf7e6437d8c60dd38175433bbd5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943874"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412258"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: editor di testo \> generale
+# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: Editor di \> testo Generale
 
 Questa finestra di dialogo consente di modificare le impostazioni globali di Visual Studio Code e dell'editor di testo. Per visualizzare questa finestra di dialogo, selezionare **Opzioni** nel menu **Strumenti**, espandere la cartella **Editor di testo** e quindi selezionare **Generale**.
 
@@ -99,13 +100,13 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 
 ### <a name="show-file-health-indicator"></a>Mostra indicatore di integrità file
 
-Quando questa opzione è selezionata, nella parte inferiore sinistra dell'editor verrà visualizzata una barra di stato (errori, avvisi) di stato dell'indicatore di integrità file con le opzioni di pulizia del codice.
+Quando questa opzione è selezionata, nell'angolo inferiore sinistro dell'editor verrà visualizzata una barra di stato dell'indicatore di integrità dei file (errori, avvisi) con le opzioni di pulizia del codice.
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Opzioni, Editor di testo, Tutti i linguaggi](../../ide/reference/options-text-editor-all-languages.md)
 - [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Opzioni, Editor di testo, Estensione di file](../../ide/reference/options-text-editor-file-extension.md)
-- [Identificazione e personalizzazione delle scelte rapide da tastiera](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Personalizzazione dell'editor](../how-to-change-text-case-in-the-editor.md)
-- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)
+- [Uso di IntelliSense](../../ide/using-intellisense.md)

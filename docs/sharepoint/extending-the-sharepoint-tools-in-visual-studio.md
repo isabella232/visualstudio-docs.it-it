@@ -1,6 +1,6 @@
 ---
-title: Estensione degli strumenti di SharePoint in Visual Studio | Microsoft Docs
-description: Estendere gli strumenti di SharePoint in Visual Studio. Estendere il sistema del progetto SharePoint. Estendere il nodo connessioni di SharePoint in Esplora server.
+title: Estensione degli strumenti SharePoint in Visual Studio | Microsoft Docs
+description: Estendere gli SharePoint in Visual Studio. Estendere il SharePoint di progetto. Estendere il nodo SharePoint connessioni in Esplora server.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
@@ -14,48 +14,49 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c074e62b47b926351948e94d78621a8a41c9c3e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f58bc342eb4066bff744912bbdcd154c9dc580ecacb17f5f1117acc91a1cb62
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876849"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409644"
 ---
-# <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Estendere gli strumenti di SharePoint in Visual Studio
-  Gli strumenti di SharePoint in Visual Studio soddisfano i requisiti di molti scenari di sviluppo di applicazioni. Tuttavia, è possibile individuare i casi in cui non forniscono funzionalità richieste dall'utente o da altri sviluppatori. In questi casi, è possibile estendere gli strumenti di SharePoint per creare le funzionalità necessarie.
+# <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Estendere gli SharePoint in Visual Studio
+  Gli SharePoint in Visual Studio soddisfano i requisiti di molti scenari di sviluppo di applicazioni. Tuttavia, è possibile individuare i casi in cui non forniscono funzionalità richieste dall'utente o da altri sviluppatori. In questi casi, è possibile estendere gli SharePoint per creare le funzionalità necessarie.
 
-## <a name="how-to-extend-the-sharepoint-tools"></a>Come estendere gli strumenti di SharePoint
- È possibile estendere il sistema del progetto SharePoint e il nodo **connessioni di SharePoint** nella finestra di **Esplora server** .
+## <a name="how-to-extend-the-sharepoint-tools"></a>Come estendere gli SharePoint seguenti
+ È possibile estendere il SharePoint di progetto e il **nodo SharePoint connessioni** nella finestra Esplora server. 
 
-### <a name="extend-the-sharepoint-project-system"></a>Estendere il sistema del progetto SharePoint
- Visual Studio include un set di modelli di progetto e modelli di elementi che è possibile usare per creare soluzioni SharePoint. Ad esempio, sono disponibili modelli per i ricevitori di eventi, le definizioni di elenco, i flussi di lavoro e Web part. Tuttavia, è anche possibile definire tipi personalizzati di elementi di progetto SharePoint per la creazione di componenti di SharePoint, ad esempio campi o azioni personalizzate. È inoltre possibile creare estensioni per i tipi di elementi di progetto SharePoint già installati in Visual Studio ed è possibile creare estensioni per i progetti SharePoint.
+### <a name="extend-the-sharepoint-project-system"></a>Estendere il SharePoint di progetto
+ Visual Studio include un set di modelli di progetto e modelli di elemento che è possibile usare per creare SharePoint soluzioni. Ad esempio, sono disponibili modelli per ricevitori di eventi, definizioni di elenco, flussi di lavoro e Web part. Tuttavia, è anche possibile definire tipi personalizzati di elementi SharePoint progetto per la creazione di SharePoint, ad esempio campi o azioni personalizzate. È anche possibile creare estensioni per SharePoint tipi di elemento di progetto già installati in Visual Studio ed è possibile creare estensioni per SharePoint progetti.
 
- Per ulteriori informazioni, vedere [estensione del sistema del progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
+ Per altre informazioni, vedere [Estendere il sistema SharePoint progetto](../sharepoint/extending-the-sharepoint-project-system.md).
 
-### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estendere il nodo connessioni di SharePoint in Esplora server
- In Visual Studio è possibile usare il nodo **connessioni di SharePoint** nella finestra di **Esplora server** per visualizzare molti dei componenti di uno o più siti SharePoint locali in una visualizzazione struttura ad albero gerarchica. È inoltre possibile estendere il nodo **connessioni di SharePoint** nei modi seguenti:
+### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estendere il nodo SharePoint connessioni in Esplora server
+ In Visual Studio, è possibile usare il nodo Connessioni **SharePoint** nella finestra **Esplora server** per visualizzare molti dei componenti di uno o più siti SharePoint locali in una visualizzazione albero gerarchica. È anche possibile estendere il **nodo SharePoint connessioni nei** modi seguenti:
 
-- Aggiungendo nodi personalizzati. Questa opzione è utile se si desidera visualizzare i componenti dei siti di SharePoint che non sono visualizzati per impostazione predefinita.
+- Aggiungendo i propri nodi. Ciò è utile se si vogliono visualizzare i componenti SharePoint siti che non vengono visualizzati per impostazione predefinita.
 
-- Estendendo i nodi esistenti. Ad esempio, è possibile aggiungere un nuovo nodo figlio a un nodo esistente oppure è possibile aggiungere una voce di menu di scelta rapida a un nodo ed eseguire attività quando uno sviluppatore fa clic sulla voce di menu.
+- Estendendo i nodi esistenti. Ad esempio, è possibile aggiungere un nuovo nodo figlio a un nodo esistente oppure aggiungere una voce di menu di scelta rapida a un nodo ed eseguire attività quando uno sviluppatore fa clic sulla voce di menu.
 
-  Per ulteriori informazioni, vedere [estensione del nodo connessioni di SharePoint in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Per altre informazioni, vedere [Estendere il nodo SharePoint connessioni in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Requisiti del computer di sviluppo
- Per creare estensioni per gli strumenti di SharePoint, il computer di sviluppo deve soddisfare gli stessi requisiti per la creazione di soluzioni SharePoint in Visual Studio.
+ Per creare estensioni per gli SharePoint, il computer di sviluppo deve soddisfare gli stessi requisiti per la creazione di soluzioni SharePoint in Visual Studio.
 
- Si consiglia inoltre di installare il [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] . L'SDK include i modelli di progetto e gli strumenti che è possibile usare per estendere Visual Studio. In particolare, l'SDK include un modello di progetto che è possibile usare per creare facilmente un pacchetto di estensione di Visual Studio (VSIX). I pacchetti VSIX rappresentano il modo migliore per distribuire le estensioni di Visual Studio in Visual Studio. Tutte le estensioni degli strumenti di SharePoint devono essere distribuite usando pacchetti VSIX. Per tutte le procedure dettagliate di questa documentazione si presuppone che sia [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] installato.
+ È anche consigliabile installare [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] . L'SDK include modelli di progetto e strumenti che è possibile usare per estendere Visual Studio. In particolare, l'SDK include un modello di progetto che è possibile usare per creare facilmente un pacchetto Visual Studio Extension (VSIX). I pacchetti VSIX sono il modo preferito per distribuire Visual Studio estensioni in Visual Studio. Tutte SharePoint estensioni degli strumenti devono essere distribuite usando pacchetti VSIX. Tutte le procedure dettagliate in questa documentazione presuppongono che sia installato [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] .
 
- Per installare Visual Studio SDK, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md). Per altre informazioni sulle estensioni di Visual Studio, vedere [avvio dello sviluppo di estensioni di Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
+ Per installare l'SDK Visual Studio, vedere [Installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md). Per altre informazioni sulle Visual Studio, vedere [Starting to Develop Visual Studio Extensions](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Panoramica del modello di programmazione delle estensioni degli strumenti di SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Estendere il sistema del progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Estendere il nodo connessioni di SharePoint in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Programmazione di concetti e funzionalità per le estensioni degli strumenti di SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
-- [Riferimento &#40;estensibilità degli strumenti di SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
-- [Estensioni di debug per gli strumenti di SharePoint in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
-- [Distribuire estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Panoramica del modello di programmazione delle estensioni SharePoint tools](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Estendere il SharePoint di progetto](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Estendere il nodo SharePoint connessioni in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Concetti e funzionalità di programmazione per le estensioni SharePoint tools](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [Informazioni di &#40;SharePoint strumenti di estendibilità&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
+- [Eseguire il debug delle estensioni SharePoint strumenti di Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Distribuire estensioni per gli strumenti SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

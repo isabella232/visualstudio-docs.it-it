@@ -7,15 +7,16 @@ ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 95c82b6c00d3a3b3af2a58232ed0d65df5b5f76f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c690567092f5cd7532e4430dab8d05812e8a4ad08480e62241fd26c76e715b9c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911639"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410008"
 ---
 # <a name="vsperf"></a>VSPerf
 Usare lo strumento della riga di comando **VsPerf** per:
@@ -33,7 +34,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |-|-|
 |**/app:{AppName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|
 |**/package:{PackageFullName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|
-|**/JS**|Obbligatorio per la profilatura delle app JavaScript.<br /><br /> Raccogliere dati sulle prestazioni dalle app JavaScript.<br /><br /> Usare solo con /package o /attach.|
+|**/js**|Obbligatorio per la profilatura delle app JavaScript.<br /><br /> Raccogliere dati sulle prestazioni dalle app JavaScript.<br /><br /> Usare solo con /package o /attach.|
 |**/noclr**|facoltativo. Non raccogliere dati CLR.<br /><br /> Usare solo con /package o /attach.<br /><br /> Ottimizzazione, non verrà eseguita la risoluzione di simboli gestiti.|
 |**/listapps**|Elencare i valori Name e PackageFullName delle app installate.|
 
@@ -44,7 +45,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |-|-|
 |**/launch:{Executable}**|Avvia il file eseguibile specificato e ne esegue la profilatura.|
 |**/args:{ExecutableArguments}**|Specifica gli argomenti della riga di comando da passare alla destinazione **/launch**.|
-|**/Console**|Esegue la destinazione **/launch** in una nuova finestra di comando.|
+|**/console**|Esegue la destinazione **/launch** in una nuova finestra di comando.|
 
 ## <a name="all-applications"></a>Tutte le applicazioni
  Queste opzioni si applicano a tutte le applicazioni Windows 8 o Windows Server 2012.
@@ -54,9 +55,9 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Raccoglie dati dai processi specificati.<br /><br /> Usare Gestione attività per visualizzare l'ID processo (PID) e i nomi dei processi delle app in esecuzione.|
 |**/file:{ReportName}**|facoltativo. Specifica il file di output (sovrascrive il file esistente).<br /><br /> Usare solo con /package o /attach.|
 |**/pause**|Sospendere la raccolta dei dati.|
-|**/Resume**|Riprendere la raccolta dei dati.|
-|**/Stop**|Interrompere la raccolta dei dati e terminare i processi di destinazione.|
-|**/Detach.**|Interrompere la raccolta dei dati, senza arrestare l'esecuzione dei processi di destinazione.|
+|**/resume**|Riprendere la raccolta dei dati.|
+|**/stop**|Interrompere la raccolta dei dati e terminare i processi di destinazione.|
+|**/detach**|Interrompere la raccolta dei dati, senza arrestare l'esecuzione dei processi di destinazione.|
 |**/status**|Visualizzare lo stato del profiler.|
 
 ## <a name="see-also"></a>Vedi anche

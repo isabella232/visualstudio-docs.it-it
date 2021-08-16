@@ -1,5 +1,5 @@
 ---
-description: Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione stub del tasto di scelta rapida padre.
+description: Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione dello stub dell'acceleratore padre.
 title: IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 95fd5e7a-c637-437e-b369-c864eef733c2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1a177cd1c36a2e51f846bf60edfbef875a51df
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9fc8d82f914b77799dc4fa2c3b744b654b0e34cf117580526fe8effc318a71d5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158929"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380118"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione stub del tasto di scelta rapida padre.
+Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione dello stub dell'acceleratore padre.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,15 +35,15 @@ HRESULT findSymbolsForAcceleratorPointerTag (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in Oggetto IDiaSymbol che corrisponde alla funzione dello stub dell'acceleratore in cui eseguire la ricerca.
+[in] Oggetto IDiaSymbol che corrisponde alla funzione stub dell'acceleratore in cui eseguire la ricerca.
 
  `tagValue`
 
-in Valore del tag del puntatore.
+[in] Valore del tag del puntatore.
 
  `ppResult`
 
-out Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.
+[out] Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

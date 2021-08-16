@@ -1,6 +1,6 @@
 ---
-title: Eseguire il debug di un controllo ActiveX | Microsoft Docs
-description: Informazioni su come eseguire il debug di un controllo ActiveX. È necessario specificare un eseguibile contenente, che è possibile eseguire nelle pagine delle proprietà del progetto o quando si inizia il debug.
+title: Eseguire il debug di ActiveX controllo | Microsoft Docs
+description: Informazioni su come eseguire il debug di ActiveX controllo . È necessario specificare un eseguibile contenitore, che è possibile eseguire nelle pagine Project proprietà o quando si avvia il debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,14 +24,15 @@ ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6728b498da91f540d92182ad60f23e490d614948
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 12eec4742fb4c420e10637b212a1fa6bbc578b0d07d058296b931f4ce60a7015
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160395"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121362328"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedura: eseguire il debug di un controllo ActiveX
 
@@ -44,7 +45,7 @@ Per effettuare il debug di un controllo ActiveX, è necessario specificare un co
 
 1. In Esplora soluzioni selezionare il progetto.
 
-2. Scegliere **pagine delle proprietà** dal menu **Visualizza** .
+2. Scegliere **Pagine** delle proprietà dal menu **Visualizza**.
 
 3. Nella finestra di dialogo **Pagine delle proprietà del progetto** aprire la cartella **Proprietà di configurazione** e selezionare **Debug**.
 
@@ -60,8 +61,8 @@ Per effettuare il debug di un controllo ActiveX, è necessario specificare un co
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Controlli ActiveX](/cpp/mfc/activex-controls)
-- [Test di proprietà ed eventi con test container](/cpp/mfc/testing-properties-and-events-with-test-container)
-- [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)
+- [ActiveX Controlli](/cpp/mfc/activex-controls)
+- [Test di proprietà ed eventi con Test Container](/cpp/mfc/testing-properties-and-events-with-test-container)
+- [Debug com e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

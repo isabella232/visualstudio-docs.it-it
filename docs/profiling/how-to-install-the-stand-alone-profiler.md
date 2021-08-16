@@ -1,6 +1,6 @@
 ---
 title: Installare il profiler autonomo | Microsoft Docs
-description: Informazioni su come installare il profiler autonomo, che può essere eseguito senza installato Visual Studio. Esistono situazioni in cui Visual Studio non deve essere installato.
+description: Informazioni su come installare il profiler autonomo, che può essere eseguito senza Visual Studio installato. Esistono situazioni in cui Visual Studio non deve essere installato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,15 +11,16 @@ ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ff3fccecb785feb222eeadf653d8fd9d8c17df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4aa55e3a5137122fd73f11ed5a2acb422e6c4b128926f40d8e1dfbb9817f6935
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897694"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410723"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procedura: Installare il profiler autonomo
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre un profiler autonomo basato sulla riga di comando che può essere eseguito senza installare l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questa situazione si verifica quando un computer non ha o non può avere un ambiente di sviluppo installato. È consigliabile, ad esempio, non installare un ambiente di sviluppo in un server Web di produzione.
@@ -56,6 +57,6 @@ ms.locfileid: "99897694"
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
-- [Procedura dettagliata: profilatura dalla riga di comando tramite strumentazione](command-line-profiling-of-stand-alone-applications.md)
-- [Procedura: fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)
+- [Procedura dettagliata: Profilatura da riga di comando tramite strumentazione](command-line-profiling-of-stand-alone-applications.md)
+- [Procedura: Fare riferimento alle Windows simboli](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

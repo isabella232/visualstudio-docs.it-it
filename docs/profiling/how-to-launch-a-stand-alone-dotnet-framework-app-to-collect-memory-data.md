@@ -1,6 +1,6 @@
 ---
-title: Riga di comando del Profiler-aprire l'app client .NET Framework, ottenere i dati di memoria
-description: Informazioni su come usare gli strumenti da riga di comando di Visual Studio Strumenti di profilatura per avviare un'app autonoma .NET Framework e raccogliere i dati dell'attività di memoria.
+title: "Riga di comando del profiler: aprire l'app .NET Framework client, ottenere i dati di memoria"
+description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura da riga di comando per avviare un'app .NET Framework autonoma e raccogliere dati sull'attività di memoria.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,15 +8,16 @@ ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: acfa657552cb070fe8b98ff4dc761ab6913a6c93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae577364987be7fa4ed9a6be633b4fa0efd7c0ba301f434055730bdf15432248
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860815"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410671"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di memoria tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma .NET Framework e raccogliere dati di memoria.
@@ -43,38 +44,38 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 2. Avvia il profiler. Digitare:
 
-    **VSPerfCmd/start:/output di esempio:** `OutputFile` [`Options`]
+    **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
    - L'opzione [/start](../profiling/start.md)**:sample** inizializza il profiler.
 
-   - L'opzione [/output](../profiling/output.md)**:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).
+   - [L'opzione /output](../profiling/output.md)**:** è obbligatoria `OutputFile` con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.
 
    | Opzione | Descrizione |
    | - | - |
-   | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
-   | [/AutoMark](../profiling/automark.md) **:**`Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
+   | [/wincounter](../profiling/wincounter.md) **:**`WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
+   | [/automark](../profiling/automark.md) **:**`Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
 
 3. Avviare l'applicazione di destinazione. Digitare:
 
-    **VSPerfCmd**  [/Launch](../profiling/launch.md) **:** `appName` **/GC:**{**allocation**&#124;**Lifetime**} [ `Options` ]
+    **VSPerfCmd**[/launch:](../profiling/launch.md)  `appName` **/gc:**{**allocation**&#124;**lifetime**}[ `Options` ]  
 
-   - L'opzione [/GC](../profiling/gc-vsperfcmd.md)**:** `Keyword` è necessaria per raccogliere dati di memoria .NET Framework. Il parametro keyword specifica se raccogliere i dati sull'allocazione di memoria o se raccogliere sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.
+   - [L'opzione /gc](../profiling/gc-vsperfcmd.md)**:** è necessaria per raccogliere .NET Framework dati `Keyword` di memoria. Il parametro keyword specifica se raccogliere i dati sull'allocazione di memoria o se raccogliere sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.
 
      |Parola chiave|Descrizione|
      |-------------|-----------------|
-     |**allocazione**|Raccoglie solo i dati sull'allocazione di memoria.|
-     |**vita**|Raccoglie sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.|
+     |**Allocazione**|Raccoglie solo i dati sull'allocazione di memoria.|
+     |**Vita**|Raccoglie sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.|
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/launch**.
 
    |Opzione|Descrizione|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:**`Arguments`|Specifica una stringa che contiene gli argomenti della riga di comando da passare all'applicazione di destinazione.|
-   |[/Console](../profiling/console.md)|Avvia l'applicazione della riga di comando di destinazione in una finestra separata.|
-   |[/Events](../profiling/events-vsperfcmd.md) **:**`Config`|Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.|
-   |[/TargetCLR](../profiling/targetclr.md) **:**`Version`|Specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione.|
+   |[/console](../profiling/console.md)|Avvia l'applicazione della riga di comando di destinazione in una finestra separata.|
+   |[/events](../profiling/events-vsperfcmd.md) **:**`Config`|Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.|
+   |[/targetclr](../profiling/targetclr.md) **:**`Version`|Specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione.|
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
  Quando è in esecuzione l'applicazione di destinazione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni *VSPerfCmd.exe*. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.
@@ -85,9 +86,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     |Opzione|Descrizione|
     |------------|-----------------|
-    |[/GlobalOff/GlobalOn](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
-    |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
-    |[/Attach](../profiling/attach.md) **:** `PID` [/Detach.](../profiling/detach.md)|**/attach** inizia a raccogliere dati per il processo specificato da `PID` (ID di processo). **detach** interrompe la raccolta dei dati per tutti i processi.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
+    |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** inizia a raccogliere dati per il processo specificato da `PID` (ID di processo). **detach** interrompe la raccolta dei dati per tutti i processi.|
 
 - È anche possibile usare l'opzione **VSPerfCmd.exe**[/mark](../profiling/mark.md) per inserire un indicatore di profilatura nel file di dati. Il comando **/mark** aggiunge un identificatore, un timestamp e una stringa di testo facoltativa definita dall'utente. I contrassegni possono essere usati per filtrare i dati.
 
@@ -102,12 +103,12 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
          -oppure-
 
-    - Digitare **VSPerfCmd/detach.**
+    - Digitare **VSPerfCmd /detach**
 
 2. Arrestare il profiler. Digitare:
 
-     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+- [Viste dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

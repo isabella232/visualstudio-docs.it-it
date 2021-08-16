@@ -7,16 +7,17 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9f13128bc552ffdb31b3f4a9315a3f9aa3543b0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d014391510faa95c917cb6861c2c85d68ed6bf083fd51f47f3aea709bad51fe9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962691"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411490"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Usare la finestra interattiva Node.js
 
@@ -28,7 +29,7 @@ Per aprire la finestra interattiva, fare clic con il pulsante destro del mouse s
 
 ![Finestra interattiva Node.js nel menu di scelta rapida Progetto](../javascript/media/interactivewindow-open-from-project.png)
 
-I tasti di scelta rapida predefiniti per aprire la finestra Node.js interattiva sono **[CTRL] + K, N**. In alternativa, è possibile aprire la finestra dalla barra degli strumenti scegliendo **Visualizza**  >  **finestre**  >  **Node.js finestra interattiva**.
+I tasti di scelta rapida predefiniti per aprire la finestra Node.js interattiva sono **[CTRL] + K, N**. In caso contrario, è possibile aprire la finestra dalla barra degli strumenti scegliendo Visualizza Windows  >    >  **Node.js finestra interattiva**.
 
 ## <a name="use-the-repl"></a>Usare REPL
 

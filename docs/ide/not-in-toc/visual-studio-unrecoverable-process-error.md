@@ -1,6 +1,6 @@
 ---
 title: Un processo ha rilevato un errore irreversibile
-description: Informazioni sui processi che potrebbero rilevare errori irreversibili durante le normali operazioni di Visual Studio.
+description: Informazioni sui processi che potrebbero verificarsi errori irreversibili durante le normali operazioni di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 09/10/2020
 ms.topic: troubleshooting
@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ff53ecf1e3f3b377180fe85f972dca665b81f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47191298721ad8b5354b370a3e6b5392ce00c011457767fb86cdda7e6c092271
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909145"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412907"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Errore irreversibile del processo di Visual Studio
 
@@ -25,7 +26,7 @@ Visual Studio usa diversi processi out-of-process per svolgere le attività nece
 
 Se il processo *ServiceHub.RoslynCodeAnalysisService.exe* o *ServiceHub.RoslynCodeAnalysisService32.exe* termina per qualche motivo, viene visualizzata una barra informazioni popup con il messaggio seguente:
 
-**"Sfortunatamente, un processo utilizzato da Visual Studio ha rilevato un errore irreversibile. È consigliabile salvare il lavoro e quindi chiudere e riavviare Visual Studio.**
+**"Sfortunatamente, un processo usato Visual Studio ha rilevato un errore irreversibile. È consigliabile salvare il lavoro e quindi chiudere e riavviare Visual Studio."**
 
 Se viene visualizzato questo messaggio, salvare il lavoro, quindi chiudere e riavviare Visual Studio.
 
@@ -55,4 +56,4 @@ Di seguito è riportato un elenco di processi out-of-process usati da Visual Stu
 Se uno di questi processi termina in modo imprevisto, alcune funzionalità di Visual Studio smettono di funzionare. Per alcuni processi la perdita di funzionalità può essere irrilevante. Per altri la stabilità di Visual Studio è compromessa e viene visualizzato un messaggio di errore.
 
 > [!NOTE]
-> Se si verifica un problema a cui non si fa riferimento in questa pagina, segnalarlo a Microsoft tramite lo strumento [segnala un problema](../../ide/how-to-report-a-problem-with-visual-studio.md) visualizzato sia nella programma di installazione di Visual Studio che nell'IDE di Visual Studio.
+> Se si verifica un problema a cui non viene fatto riferimento [](../../ide/how-to-report-a-problem-with-visual-studio.md) in questa pagina, segnalarlo tramite lo strumento Segnala un problema visualizzato sia nel Programma di installazione di Visual Studio che nell'IDE Visual Studio.

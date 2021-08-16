@@ -1,5 +1,5 @@
 ---
-description: La struttura BUILT_TYPE specifica le informazioni su un tipo di campo tratto dai metadati.
+description: La BUILT_TYPE specifica informazioni su un tipo di campo derivato dai metadati.
 title: BUILT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00a031d02bba7ffcc1dca6f2cf73cfceeed04838
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 81b18a6e238b71a7c91445b551beb34dd081e53c24b5301cd58c495a04e1e733
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096577"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360963"
 ---
 # <a name="built_type"></a>BUILT_TYPE
-Questa struttura specifica le informazioni su un tipo di campo tratto dai metadati.
+Questa struttura specifica le informazioni su un tipo di campo derivato dai metadati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +47,7 @@ public struct BUILT_TYPE {
 
 ## <a name="members"></a>Members
 `ulAppDomainID`\
-ID dell'applicazione da cui è arrivato il simbolo. Viene utilizzato per identificare in modo univoco un'istanza dell'applicazione.
+ID dell'applicazione da cui deriva il simbolo. Viene usato per identificare in modo univoco un'istanza dell'applicazione.
 
 `guidModule`\
 GUID del modulo che contiene questo campo.
@@ -55,12 +56,12 @@ GUID del modulo che contiene questo campo.
 Oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che identifica il campo sottostante associato a questo campo compilato.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene visualizzata come parte dell'Unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il `dwKind` campo della `TYPE_INFO` struttura è impostato su `TYPE_KIND_BUILT` (un valore dell'enumerazione [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
+Questa struttura viene visualizzata come parte dell'unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `TYPE_INFO` `TYPE_KIND_BUILT` [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) tabella).
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: sh. h
+Intestazione: sh.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati | Microsoft Docs'
-description: Includere gli assembly personalizzati in una funzionalità di integrazione applicativa dei dati, in modo che il progetto possa fare riferimento agli assembly di altri progetti nella stessa soluzione.
+title: 'Procedura: Includere un assembly personalizzato in una funzionalità BDC | Microsoft Docs'
+description: Includere assembly personalizzati in una funzionalità BDC (Business Data Connectivity) in modo che il progetto possa fare riferimento ad assembly di altri progetti nella stessa soluzione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,41 +17,42 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 7a5bce649a0bd9411c064c463defa0946b47e81f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c45867e769f14323b10c3d42fb5bf52a9560823da1eb3b62246297e19dd69396
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913610"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409553"
 ---
-# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati
-  Il progetto può fare riferimento agli assembly di altri progetti nella stessa soluzione. Tuttavia, è necessario aggiungere questi assembly al file di funzionalità del progetto utilizzando la finestra di dialogo **Assegna assembly a cui si fa riferimento a agli LobSystem** .
+# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedura: Includere un assembly personalizzato in una funzionalità BDC
+  Il progetto può fare riferimento ad assembly da altri progetti nella stessa soluzione. Tuttavia, è necessario aggiungere questi assembly al file di funzionalità del progetto usando la finestra di dialogo Assegna assembly a cui si fa riferimento **a LobSystems** .
 
-### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Per includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati
+### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Per includere un assembly personalizzato in una funzionalità BDC (Business Data Connectivity)
 
-1. In **Esplora soluzioni** scegliere la cartella che contiene il modello di integrazione applicativa dei dati.
+1. In **Esplora soluzioni** scegliere la cartella che contiene il modello BDC.
 
 2. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-3. Nella finestra **Proprietà** scegliere la proprietà **assembly** , quindi il pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")).
+3. Nella finestra **Proprietà** scegliere la proprietà **Assembly** e quindi il pulsante con i puntini di sospensione ( ASP.NET ![puntini di sospensione di Progettazione dispositivi mobili](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")).
 
-     Verrà visualizzata la finestra **di dialogo Assegna assembly a cui si fa riferimento a agli LobSystem** .
+     Verrà **visualizzata la finestra di dialogo Assign referenced assemblies to LobSystems** (Assegna assembly a cui si fa riferimento a LobSystems).
 
-4. Nell'elenco **selezionare un assembly** scegliere l'assembly personalizzato.
-
-    > [!NOTE]
-    > Gli assembly vengono visualizzati nella finestra di dialogo **Assegna assembly a cui si fa riferimento a agli LobSystem** solo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per ulteriori informazioni, vedere [procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](/previous-versions/wkze6zky(v=vs.140)).
-
-5. Nel gruppo **proprietà riferimento** aprire l'elenco visualizzato per la proprietà **ambito LobSystem** , scegliere il sistema LOB dei metodi che utilizzano l'assembly personalizzato, quindi scegliere il pulsante **OK** .
+4. **Nell'elenco Selezionare un assembly** scegliere l'assembly personalizzato.
 
     > [!NOTE]
-    > Per eseguire il debug del codice nell'assembly personalizzato, è necessario aggiungere l'assembly al pacchetto della soluzione. Per altre informazioni, vedere [procedura: aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+    > Gli assembly vengono visualizzati nella finestra di dialogo Assegna assembly a cui si fa riferimento a **LobSystems** solo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti tramite](/previous-versions/wkze6zky(v=vs.140))la finestra di dialogo Aggiungi riferimento .
+
+5. Nel gruppo **Proprietà** riferimento aprire l'elenco visualizzato per la proprietà **Ambito lobSystem,** scegliere il sistema LOB dei metodi che usano l'assembly personalizzato e quindi scegliere **il pulsante OK.**
+
+    > [!NOTE]
+    > Per eseguire il debug del codice nell'assembly personalizzato, è necessario aggiungere l'assembly al pacchetto della soluzione. Per altre informazioni, [vedere Procedura: Aggiungere e rimuovere assembly aggiuntivi.](../sharepoint/how-to-add-and-remove-additional-assemblies.md)
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
-- [Procedura: aggiungere un file modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
-- [Creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)
-- [Integragte i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Procedura: Usare un file di risorse per specificare nomi, proprietà e autorizzazioni localizzati](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Procedura: Aggiungere un file di modello BDC esistente a un SharePoint progetto](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+- [Creare un modello di connettività dei dati aziendali](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Procedura: Creare un modello BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

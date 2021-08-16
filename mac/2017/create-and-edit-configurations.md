@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 5fafb47be3c3a5b99a2ae7d07277d0977db93fa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa1e677442b0822096febc3da51a5875e8e664cd18582fe440c01b16eb7c8d5b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950083"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121383454"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Creazione e modifica di configurazioni della build
 
@@ -66,6 +66,6 @@ Selezionare il pulsante **Rinomina**.
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Creare e modificare le configurazioni](/visualstudio/ide/how-to-create-and-edit-configurations)

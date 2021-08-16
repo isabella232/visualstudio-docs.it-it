@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 47913ee02aa1708f1c8baa4037b2ecfbcfc1b2e4
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 377c9efad036210a3101417b217727b2956f0902fe5c0f63a0217f21d7cbf6f5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719708"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121382461"
 ---
 # <a name="razor-support"></a>Supporto Razor
 
@@ -26,6 +26,6 @@ Quando si inizia a usare Razor in Visual Studio per Mac, considerare due opzioni
 - [Introduzione a pagine Razor in ASP.NET Core con macOS con Visual Studio per Mac](/aspnet/core/tutorials/razor-pages-mac/razor-pages-start?view=aspnetcore-2.1&preserve-view=true)
 - [Introduzione ad ASP.NET Core MVC e Visual Studio per Mac](/aspnet/core/tutorials/first-mvc-app-mac/start-mvc?view=aspnetcore-2.1&preserve-view=true)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Introduzione a C# e ad ASP.NET Core in Visual Studio (in Windows)](/visualstudio/ide/tutorial-csharp-aspnet-core)

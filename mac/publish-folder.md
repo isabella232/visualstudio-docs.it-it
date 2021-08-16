@@ -10,27 +10,27 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 99127416b6a488cd7e795b3c4a1888ff103c8029
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 2944fa88297cbf7b0d3fe7149b4b690f5a7f1012cebdcd25daeb9c85e68461fc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607392"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121381705"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare in una cartella usando Visual Studio per Mac
 
-È possibile usare lo strumento di pubblicazione per pubblicare la console di .NET Core o ASP.NET Core le app in una cartella.
+È possibile usare lo strumento Pubblica per pubblicare la console di .NET Core o ASP.NET Core app in una cartella.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 - [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con .NET Core abilitato.
-- Una console di .NET Core o un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](./create-new-projects.md).
+- Una console o un progetto ASP.NET Core .NET Core. Se non si ha già un progetto, è possibile [crearne uno](./create-new-projects.md).
 
 ## <a name="publish-to-folder"></a>Pubblicare in una cartella
 
-Con Visual Studio per Mac è possibile pubblicare i progetti .NET Core in una cartella usando lo strumento di pubblicazione. Dopo la pubblicazione in una cartella è possibile trasferire i file in un altro ambiente. Per eseguire la pubblicazione in una cartella attenersi alla procedura seguente.
+Usando Visual Studio per Mac è possibile pubblicare i progetti .NET Core in una cartella usando lo strumento Pubblica. Dopo la pubblicazione in una cartella è possibile trasferire i file in un ambiente diverso. Per eseguire la pubblicazione in una cartella attenersi alla procedura seguente.
 
- 1. Nella finestra della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **pubblica**.
+ 1. Nella finestra della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 
     ![Menu di scelta rapida per la pubblicazione](media/publish-context-menu.png)
 
@@ -62,4 +62,4 @@ Per modificare la configurazione di compilazione usata, modificare la proprietà
 
 ## <a name="see-also"></a>Vedi anche
  - [dotnet publish](https://docs.microsoft.com/dotnet/core/tools/dotnet-publish)
- - [Pubblicare un'app Web in un sito Web con Visual Studio ](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-a-web-site?view=vs-2019)
+ - [Pubblicare un'app Web in un sito Web usando Visual Studio](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-a-web-site?view=vs-2019)

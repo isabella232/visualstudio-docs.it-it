@@ -1,6 +1,6 @@
 ---
 title: Dati memorizzati nella cache nelle personalizzazioni a livello di documento
-description: Informazioni sul modo in cui Visual Studio separa i dati dalla vista nelle personalizzazioni a livello di documento consentendo di incorporare i dati come cache di dati.
+description: Informazioni su Visual Studio i dati dalla visualizzazione nelle personalizzazioni a livello di documento abilitando l'incorporazione dei dati come cache dei dati.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,50 +18,51 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f1c383b5367b2966b9fd082b2d47570264b4d191
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cac4ed52e82664fd5aca2fd4e924f24b3eb68e58e18cd6142db9c7c236af35be
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955775"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384587"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dati memorizzati nella cache nelle personalizzazioni a livello di documento
-  Uno degli obiettivi principali delle personalizzazioni a livello di documento consiste nel separare i dati dalla visualizzazione nei documenti di Office. I dati si riferiscono alle informazioni archiviate nel documento, inclusi i numeri e il testo. La vista fa riferimento all'interfaccia utente e al modello a oggetti di Microsoft Office Word e Microsoft Office Excel.
+  L'obiettivo principale delle personalizzazioni a livello di documento è separare i dati dalla visualizzazione Office documenti. I dati si riferiscono alle informazioni archiviate nel documento, inclusi numeri e testo. View fa riferimento all'interfaccia utente e al modello a oggetti Microsoft Office Word e Microsoft Office Excel.
 
- Visual Studio separa i dati dalla vista nelle personalizzazioni a livello di documento consentendo di incorporare i dati come *isola di dati*, detta anche *cache dei dati*. È possibile leggere o modificare i dati direttamente senza avviare Word o Excel. Questa operazione è utile quando è necessario modificare i dati nei documenti in un server in cui non è installato Microsoft Office. Word ed Excel sono destinati all'uso negli ambienti client; non sono progettate per essere eseguite in un server.
+ Visual Studio separa i dati dalla visualizzazione nelle personalizzazioni *a* livello di documento consentendo l'incorporazione dei dati come isola di dati , denominata anche cache *dei dati*. È possibile leggere o modificare i dati direttamente senza avviare Word o Excel. Ciò è utile quando è necessario modificare i dati nei documenti in un server in cui non Microsoft Office installato. Word e Excel sono destinati all'uso negli ambienti client; non sono progettati per essere eseguiti in un server.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Per altre informazioni sulle personalizzazioni a livello di documento, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md) e l' [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).
+ Per altre informazioni sulle personalizzazioni [](../vsto/office-solutions-development-overview-vsto.md) a livello di documento, vedere Office panoramica dello sviluppo di soluzioni &#40;VSTO&#41;[e Architettura delle personalizzazioni](../vsto/architecture-of-document-level-customizations.md)a livello di documento .
 
-## <a name="understand-the-cached-data-programming-model"></a>Informazioni sul modello di programmazione dei dati memorizzato nella cache
- L'isola di dati può contenere qualsiasi oggetto della soluzione che soddisfi determinati requisiti. Questi oggetti includono <xref:System.Data.DataSet> oggetti, <xref:System.Data.DataTable> oggetti e qualsiasi altro oggetto che può essere serializzato dalla <xref:System.Xml.Serialization.XmlSerializer> classe. Per altre informazioni, vedere [memorizzare i dati nella cache](../vsto/caching-data.md).
+## <a name="understand-the-cached-data-programming-model"></a>Informazioni sul modello di programmazione dei dati memorizzati nella cache
+ L'isola dati può contenere qualsiasi oggetto nella soluzione che soddisfi determinati requisiti. Questi oggetti includono oggetti , oggetti e qualsiasi altro oggetto che <xref:System.Data.DataSet> <xref:System.Data.DataTable> può essere serializzato dalla classe <xref:System.Xml.Serialization.XmlSerializer> . Per altre informazioni, vedere [Memorizzare nella cache i dati](../vsto/caching-data.md).
 
- Per fornire la visualizzazione per i dati memorizzati nella cache, è possibile associare controlli Windows Form e *host* nel documento a oggetti nell'isola di dati. Il data binding tra l'isola di dati e i controlli associati a dati mantiene le due sincronizzate. È anche possibile aggiungere codice di convalida ai dati indipendenti dai controlli. Per altre informazioni, vedere [associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+ Per fornire la visualizzazione per i dati memorizzati nella cache, è possibile associare Windows form e controlli *host* nel documento agli oggetti nell'isola di dati. Il data binding tra l'isola di dati e i controlli associati a dati mantiene sincronizzati i due elementi. È anche possibile aggiungere codice di convalida ai dati indipendenti dai controlli. Per altre informazioni, vedere [Associare dati ai controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
 
- I controlli host sono versioni estese di oggetti nativi nei modelli a oggetti di Excel e Word. Diversamente dagli oggetti nativi, i controlli host possono essere associati direttamente a oggetti dati gestiti. Per altre informazioni, vedere Cenni [preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md) e [Windows Form sui controlli nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+ I controlli host sono versioni estese degli oggetti nativi nei modelli a oggetti Excel e Word. A differenza degli oggetti nativi, i controlli host possono essere associati direttamente agli oggetti dati gestiti. Per altre informazioni, vedere Panoramica degli [elementi host](../vsto/host-items-and-host-controls-overview.md) e dei controlli host e Windows dei form Office [documenti.](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
-## <a name="access-cached-data-on-the-server"></a>Accesso ai dati memorizzati nella cache nel server
- Per accedere ai dati memorizzati nella cache in un documento, è possibile usare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Questa classe fa parte di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e può essere utilizzata in un server senza eseguire Excel o Word. Quando l'utente apre il documento dopo aver modificato i dati memorizzati nella cache, tutti i controlli associati ai dati vengono sincronizzati automaticamente con le modifiche e l'utente viene visualizzato con i dati aggiornati. Per ulteriori informazioni, vedere [accedere ai dati nei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md).
+## <a name="access-cached-data-on-the-server"></a>Accedere ai dati memorizzati nella cache nel server
+ Per accedere ai dati memorizzati nella cache in un documento, è possibile usare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe . Questa classe fa parte di e può essere usata in un server senza eseguire Excel [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] o Word. Quando l'utente apre il documento dopo aver modificato i dati memorizzati nella cache, tutti i controlli associati ai dati vengono sincronizzati automaticamente con le modifiche e all'utente vengono presentati i dati aggiornati. Per altre informazioni, vedere [Accedere ai dati nei documenti nel server](../vsto/accessing-data-in-documents-on-the-server.md).
 
- Excel e Word non sono necessari per scrivere sui dati sul server, ma solo per visualizzarli nel client. Excel e Word non devono nemmeno essere installati nel server. In questo modo è possibile migliorare la scalabilità e la possibilità di eseguire l'elaborazione batch veloce di documenti che contengono isole di dati.
+ Excel e Word non sono necessari per scrivere nei dati nel server, ma solo per visualizzarli nel client. Excel e Word non devono neanche essere installati nel server. Ciò offre una scalabilità migliorata e la possibilità di eseguire un'elaborazione batch veloce di documenti che contengono isole di dati.
 
-## <a name="data-caching-for-offline-use"></a>Memorizzazione dei dati nella cache per l'uso offline
- L'archiviazione dei dati nell'isola dati consente scenari offline. Quando un utente apre per la prima volta un documento o richiede il documento dal server, l'isola di dati viene riempita con i dati più recenti. L'isola di dati viene memorizzata nella cache del documento ed è quindi disponibile in modalità offline. L'utente (e il codice) può manipolare i dati, anche se non è disponibile alcuna connessione in tempo reale. Quando l'utente esegue la riconnessione, le modifiche ai dati possono essere propagate a un'origine dati del server.
+## <a name="data-caching-for-offline-use"></a>Memorizzazione nella cache dei dati per l'uso offline
+ L'archiviazione dei dati nell'isola di dati consente scenari offline. Quando un utente apre per la prima volta un documento o richiede il documento dal server, l'isola di dati viene riempita con i dati più recenti. L'isola di dati viene memorizzata nella cache del documento e quindi è disponibile offline. L'utente (e il codice) possono modificare i dati, anche se non è disponibile alcuna connessione attiva. Quando l'utente si riconnette, le modifiche ai dati possono essere propagate nuovamente a un'origine dati del server.
 
-## <a name="cached-data-and-custom-xml-parts-compared"></a>Confronto tra dati memorizzati nella cache e parti XML personalizzate
- Le parti XML personalizzate sono state introdotte nel sistema di Microsoft Office 2007 come modo per archiviare parti arbitrarie di XML in un documento. Sebbene le parti XML personalizzate siano utili in molti degli stessi scenari della cache dei dati, esistono alcune differenze tra l'isola di dati e le parti XML personalizzate. Per ulteriori informazioni sulle parti XML personalizzate, vedere [Cenni preliminari sulle parti XML personalizzate](../vsto/custom-xml-parts-overview.md).
+## <a name="cached-data-and-custom-xml-parts-compared"></a>Dati memorizzati nella cache e parti XML personalizzate confrontate
+ Le parti XML personalizzate sono state introdotte nel sistema Microsoft Office 2007 come modo per archiviare parti arbitrarie di XML in un documento. Sebbene le parti XML personalizzate siano utili in molti degli stessi scenari della cache dei dati, esistono alcune differenze tra l'isola di dati e le parti XML personalizzate. Per altre informazioni sulle parti XML personalizzate, vedere [Panoramica delle parti XML personalizzate](../vsto/custom-xml-parts-overview.md).
 
  Nella tabella seguente sono elencate alcune differenze e analogie.
 
 |Domanda/caratteristica|Cache dei dati|Parti XML personalizzate|
 |-|----------------|----------------------|
-|Quali applicazioni Office possono utilizzare?|Personalizzazioni a livello di documento per le applicazioni seguenti:<br /><br /> -Excel<br />-Word|Soluzioni a livello di documento e di applicazione per le applicazioni seguenti:<br /><br /> -Excel<br />-PowerPoint<br />-Word|
-|Quali tipi di dati è possibile archiviare?|Qualsiasi oggetto pubblico nell'assembly di personalizzazione che soddisfi determinati requisiti. Per altre informazioni, vedere [memorizzare i dati nella cache](../vsto/caching-data.md).|Qualsiasi dato XML.|
-|È possibile accedere ai dati senza avviare Microsoft Office applicazioni?|Sì, usando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe fornita da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Sì, usando le classi nello <xref:System.IO.Packaging> spazio dei nomi o usando Open XML Format SDK.|
+|Quali Office applicazioni possono usarle?|Personalizzazioni a livello di documento per le applicazioni seguenti:<br /><br /> - Excel<br />- Parola|Soluzioni a livello di documento e a livello di applicazione per le applicazioni seguenti:<br /><br /> - Excel<br />- PowerPoint<br />- Parola|
+|Quali tipi di dati è possibile archiviare?|Qualsiasi oggetto pubblico nell'assembly di personalizzazione che soddisfi determinati requisiti. Per altre informazioni, vedere [Memorizzare nella cache i dati](../vsto/caching-data.md).|Tutti i dati XML.|
+|È possibile accedere ai dati senza avviare Microsoft Office applicazioni?|Sì, usando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe fornita da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Sì, usando le classi nello spazio <xref:System.IO.Packaging> dei nomi o usando Open XML Format SDK.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
-- [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Dati nelle soluzioni Office dati](../vsto/data-in-office-solutions.md)
+- [Architettura delle Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

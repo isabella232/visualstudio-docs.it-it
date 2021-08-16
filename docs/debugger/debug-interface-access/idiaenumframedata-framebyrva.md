@@ -1,5 +1,5 @@
 ---
-description: Restituisce un frame in base all'indirizzo RVA (relative Virtual Address).
+description: Restituisce un frame in base all'indirizzo RVA (Relative Virtual Address).
 title: IDiaEnumFrameData::frameByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 4b8dec05-e76c-4cc4-9644-2369d583849f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a11d249722f192232a80a8951e18e927f27e9a41
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0f007c502606a0afb0f061feb37ad2b2630eed73083ab8f869be1e94451b56a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159438"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380582"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
-Restituisce un frame in base all'indirizzo RVA (relative Virtual Address).
+Restituisce un frame in base all'indirizzo RVA (Relative Virtual Address).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ HRESULT frameByRVA(
 #### <a name="parameters"></a>Parametri
  relativeVirtualAddress
 
-in RVA del frame di interesse.
+[in] RVA del frame di interesse.
 
  frame
 
-out Restituisce un oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta il frame che contiene l'indirizzo fornito.
+[out] Restituisce un [oggetto IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta il frame che contiene l'indirizzo fornito.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se nessun dato del frame corrisponde all'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.

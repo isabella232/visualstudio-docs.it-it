@@ -10,17 +10,18 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2fa91b41017512b3f38ad61b800b293e0abaa1
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a0e6aa0f19c8ae8f19fb49a1322e12cae0aa65305217d5ff8a8361132e347a37
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898344"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360053"
 ---
 # <a name="editor-imports"></a>Importazioni dell'editor
-È possibile importare diversi servizi editor, factory e broker che forniscono all'estensione diversi tipi di accesso all'editor principale. Ad esempio, è possibile importare <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> per fornire un per un determinato tipo di <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> contenuto. Questo strumento di spostamento consente di eseguire diversi tipi di ricerche in un buffer di testo.
+È possibile importare diversi servizi editor, factory e broker che forniscono all'estensione diversi tipi di accesso all'editor principale. Ad esempio, è possibile importare <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> per fornire un per un determinato tipo di <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> contenuto. Questo strumento di navigazione consente di eseguire diversi tipi di ricerche in un buffer di testo.
 
  Per usare un'importazione dell'editor, importarla come campo o proprietà di una classe che esporta una Managed Extensibility Framework componente.
 
@@ -122,5 +123,5 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|Oggetto <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>.|
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|Oggetto <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Punti di estensione del servizio di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)

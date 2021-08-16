@@ -1,6 +1,6 @@
 ---
 title: Options, Text Editor, JavaScript, Formatting
-description: Informazioni su come usare la pagina formattazione della finestra di dialogo Opzioni per impostare le opzioni per la formattazione del codice nell'editor di codice.
+description: Informazioni su come usare la pagina Formattazione della finestra di dialogo Opzioni per impostare le opzioni per la formattazione del codice nell'editor di codice.
 ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b2c5765f041252e62defd15a3c7b6d7b460b43
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bced8357242ebcfd3156234d9a9e163ec3608b738a1bf2cb95673a82a10f9e3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932462"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412205"
 ---
-# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Finestra di dialogo Opzioni: \> formattazione JavaScript editor di testo \>
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Finestra di dialogo Opzioni: \> Formattazione JavaScript dell'editor di \> testo
 
-Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere **editor di testo**  >  **JavaScript/typescript**  >  **Formatting**.
+Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Editor di  >     >  **testo JavaScript/Formattazione TypeScript**  >  .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -73,4 +73,4 @@ Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

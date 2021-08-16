@@ -11,17 +11,18 @@ ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d120353b9d6191bfcaae38151eb970ab1071b99
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 33d6d5626f8ff96e9c52a71c4edfbc17de65eb749b90aa646d4dd53cf4edb9ed
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903047"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358857"
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
-Consente a un VSPackage di accedere a un comando definito in un altro file con estensione vsct. Ad esempio, se il pacchetto VSPackage usa il comando **Copia** standard, definito dalla shell, è possibile aggiungere il comando a un menu o a una barra degli strumenti senza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] implementarlo di nuovo.
+Consente a un VSPackage di accedere a un comando definito in un altro file con estensione vsct. Ad esempio, se il pacchetto VSPackage usa il comando **Copia** standard, definito dalla shell, è possibile aggiungere il comando a un menu o a una barra degli strumenti senza implementarlo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di nuovo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +39,7 @@ Consente a un VSPackage di accedere a un comando definito in un altro file con e
 |---------------|-----------------|
 |guid|Obbligatorio. GUID della coppia ID GUID che identifica il comando.|
 |id|Obbligatorio. ID della coppia ID GUID che identifica il comando.|
-|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -53,7 +54,7 @@ Consente a un VSPackage di accedere a un comando definito in un altro file con e
 |[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.|
 
 ## <a name="remarks"></a>Commenti
- Aggiungendo un comando all'elemento `<UsedCommands>` , un pacchetto VSPackage informa l'ambiente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che il pacchetto VSPackage richiede il comando . È necessario aggiungere un elemento per qualsiasi comando richiesto dal pacchetto che potrebbe non essere incluso in tutte le versioni e le configurazioni `<UsedCommand>` di Visual Studio. Ad esempio, se il pacchetto chiama un comando specifico di Visual C++, il comando non sarà disponibile per gli utenti di Visual Web Developer, a meno che non si includa un elemento per `<UsedCommand>` il comando.
+ Aggiungendo un comando all'elemento `<UsedCommands>` , un VSPackage informa l'ambiente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che il pacchetto VSPackage richiede il comando . È necessario aggiungere un elemento per qualsiasi comando richiesto dal pacchetto che potrebbe non essere incluso in tutte le versioni e configurazioni `<UsedCommand>` di Visual Studio. Ad esempio, se il pacchetto chiama un comando specifico di Visual C++, il comando non sarà disponibile per gli utenti di Visual Web Developer a meno che non si includa un elemento per `<UsedCommand>` il comando.
 
 ## <a name="example"></a>Esempio
 

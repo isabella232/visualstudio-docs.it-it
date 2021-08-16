@@ -1,21 +1,22 @@
 ---
-title: Filtrare le visualizzazioni del rapporto di profilatura per visualizzare Just My Code
-description: Utilizzare l'opzione Just My Code di Visual Studio per limitare i rapporti di prestazioni in modo da visualizzare solo il codice implementato (scegliere Opzioni dal menu debug).
+title: Filtrare le visualizzazioni del report di profilatura per visualizzare Just My Code
+description: Usare l Just My Code'opzione Visual Studio per limitare i report sulle prestazioni in modo da visualizzare solo il codice implementato (scegliere Opzioni dal menu Debug).
 ms.custom: SEO-VS-2020
 ms.date: 02/15/2018
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2990a30295d59806d169baa71e574e5cb0eb65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87311ec2cf7ad0061c651d3c969e741fa395b44a4f3c2f47844ee74ecd79c6ee
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886119"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410736"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procedura: Filtrare le visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code
 
@@ -39,4 +40,4 @@ Visual Studio fornisce un filtro per i report di prestazioni in modo che venga v
 
 ## <a name="see-also"></a>Vedi anche
 
-[Personalizzare le visualizzazioni report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
+[Personalizzare le visualizzazioni dei report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)

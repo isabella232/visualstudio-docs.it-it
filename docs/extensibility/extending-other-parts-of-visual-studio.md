@@ -1,6 +1,6 @@
 ---
 title: Estensione di altre parti di Visual Studio | Microsoft Docs
-description: Informazioni sulle parti dell'interfaccia utente di Visual Studio che è possibile estendere. È possibile creare un pacchetto VSPackage, scrivere nel log attività ed estendere la casella degli strumenti e la barra di stato.
+description: Informazioni sulle parti dell'interfaccia Visual Studio'interfaccia utente che è possibile estendere. È possibile creare un VSPackage, scrivere nel log attività ed estendere la casella degli strumenti e la barra di stato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,43 +10,44 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 193fb335ffd2d57eab1aebedc5ea0114738f72eb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b0b3e649bba1687d89fbb3d9d5688649be143463a62525149b3148724331942b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075237"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360014"
 ---
-# <a name="extend-other-parts-of-visual-studio"></a>Estendi altre parti di Visual Studio
+# <a name="extend-other-parts-of-visual-studio"></a>Estendere altre parti di Visual Studio
 
-Sono disponibili molte altre parti dell'interfaccia utente di Visual Studio che è possibile estendere. Qui ne mostreremo alcuni.
+Esistono molte altre parti dell'interfaccia Visual Studio'interfaccia utente che è possibile estendere. Di seguito ne vengono mostrati alcuni.
 
-## <a name="create-a-vspackage"></a>Creare un pacchetto VSPackage
+## <a name="create-a-vspackage"></a>Creare un VSPackage
 
-I blocchi predefiniti di base dell'estensibilità di Visual Studio sono VSPackage.  Informazioni su come aggiungere un pacchetto VSPackage: [creare un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+I blocchi predefiniti di base dell Visual Studio estendibilità sono VSPackage.  Informazioni su come aggiungere un VSPackage: [Creare un'estensione con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-## <a name="extend-the-toolbox"></a>Estensione della casella degli strumenti
+## <a name="extend-the-toolbox"></a>Estendere la casella degli strumenti
 
 Informazioni su come aggiungere nuovi controlli e altri elementi alla casella degli strumenti e come usare la funzionalità della casella degli strumenti:
 
 - [Creare un controllo della casella degli strumenti WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 
-- [Creare un controllo della casella degli strumenti Windows Form](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Creare un controllo della casella Windows Form](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>Estendere la barra di stato
 
-Informazioni su come leggere e scrivere sulla barra di stato e sull'indicatore di stato e su come fornire animazioni e altre interfacce utente: [estendere la barra di stato](../extensibility/extending-the-status-bar.md).
+Informazioni su come leggere e scrivere sulla barra di stato e sull'indicatore di stato e su come fornire animazioni e altre interfaccia utente: [Estendere la barra di stato.](../extensibility/extending-the-status-bar.md)
 
 ::: moniker range="vs-2017"
 
-## <a name="create-custom-start-pages"></a>Crea pagine iniziali personalizzate
+## <a name="create-custom-start-pages"></a>Creare pagine iniziale personalizzate
 
-Informazioni su come creare una pagina iniziale, da zero o da un esempio scaricabile di pagina iniziale: [creare una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).
+Informazioni su come creare una pagina iniziale personalizzata, da zero o da un esempio di pagina iniziale [scaricabile: Creare una pagina iniziale personalizzata.](../extensibility/creating-a-custom-start-page.md)
 
 ::: moniker-end
 
-## <a name="write-to-the-activity-log"></a>Scrivi nel log attività
+## <a name="write-to-the-activity-log"></a>Scrivere nel log attività
 
-Informazioni su come scrivere nel log attività: [procedura: usare il log attività](../extensibility/how-to-use-the-activity-log.md).
+Informazioni su come scrivere nel log attività: [Procedura: Usare il log attività](../extensibility/how-to-use-the-activity-log.md).

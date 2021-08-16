@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Cercare un contatto specifico a livello di codice'
-description: Informazioni su come usare Visual Studio per cercare a livello di codice un contatto specifico in Microsoft Outlook.
+description: Informazioni su come usare le Visual Studio per cercare a livello di codice un contatto specifico in Microsoft Outlook.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e163bd172b16841103641befa7e08a87d5bd0cde
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 0753fd56dd4d8f720f3f8b3c34fe34778a94e13b8c3ed21b068963ddf76cb932
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828969"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384223"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Procedura: Cercare un contatto specifico a livello di codice
   Questo esempio cerca una cartella Contatti di Outlook per un contatto specifico in base al nome e al cognome. L'esempio presuppone che un contatto denominato **John Evans** esista nella cartella Contatti.
@@ -33,4 +34,4 @@ ms.locfileid: "107828969"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
-- [Introduzione alla programmazione dei componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Introduzione alla programmazione VSTO componenti aggiuntivi](../vsto/getting-started-programming-vsto-add-ins.md)

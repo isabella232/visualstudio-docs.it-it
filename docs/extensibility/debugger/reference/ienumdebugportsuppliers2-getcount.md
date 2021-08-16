@@ -1,6 +1,6 @@
 ---
-description: Restituisce il numero di elementi nell'enumerazione dei fornitori di porte.
-title: 'IEnumDebugPortSuppliers2:: GetCount | Microsoft Docs'
+description: Restituisce il numero di elementi nell'enumerazione suppliers della porta.
+title: IEnumDebugPortSuppliers2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 004f78dd-87d0-41a8-bcaa-f7fadbfeb8fc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 037c293a5efef1757a641aada01f729e848c1d18
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 105c783c9f0c0be616a905172113bb7a32e16644682f1218f2ff852ada0e8581
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061667"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360157"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
-Restituisce il numero di elementi nell'enumerazione.
+Restituisce il numero di elementi nell'enumerazione .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametri
 `pcelt`\
-out Restituisce il numero di elementi nell'enumerazione.
+[out] Restituisce il numero di elementi nell'enumerazione .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo non fa parte dell'interfaccia di enumerazione com personalizzata che specifica che `Next` `Clone` `Skip` `Reset` devono essere implementati solo i metodi,, e.
+ Questo metodo non fa parte dell'interfaccia di enumerazione COM personalizzata che specifica che devono essere implementati solo i metodi `Next` `Clone` , , e `Skip` `Reset` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

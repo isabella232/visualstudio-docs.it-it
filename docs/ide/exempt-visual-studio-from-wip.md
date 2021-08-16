@@ -1,20 +1,21 @@
 ---
 title: Esclusione da Windows Information Protection
-description: Informazioni su come esentare Visual Studio da Windows Information Protection pur continuando a consentire l'uso di dati aziendali.
+description: Informazioni sull'esenzione Visual Studio da Windows Information Protection consentendo al tempo stesso di usare i dati aziendali.
 ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff233b959b4ad691646c5e47c659b398b283b5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bd76144ba847a3ca191bb3be55d032b9bebd8c690d57ec5c95f01861fb4b469
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898008"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413245"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Configurare Visual Studio come app esclusa da WIP
 

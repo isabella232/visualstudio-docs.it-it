@@ -7,12 +7,12 @@ ms.date: 02/21/2019
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 1b015d9009dc813c50ef891a4a523ba497c254c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1de610734f38602fd8dd04e507ebe9b41e9e6adde2f441ad1f8b882c9f2800a6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950545"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121382219"
 ---
 # <a name="set-multiple-startup-projects"></a>Impostare più progetti di avvio
 

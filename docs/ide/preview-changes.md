@@ -1,22 +1,23 @@
 ---
 title: Visualizzare l'anteprima delle modifiche al codice
-description: Informazioni su come usare la finestra Anteprima modifiche per esaminare le modifiche che verranno apportate al progetto prima di accettarle.
+description: Informazioni su come usare la finestra Anteprima modifiche per passare alle modifiche che verranno apportate al progetto prima di accettarle.
 ms.custom: SEO-VS-2020
 ms.date: 12/16/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 55a53e60ffa05892531257871ede89381e7fd4e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52a87c3131e5d10863d9f6391c2d015fefc27efff903ff42ce80d5aabddbc336
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909006"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412784"
 ---
 # <a name="preview-changes-window"></a>Finestra Anteprima modifiche
 

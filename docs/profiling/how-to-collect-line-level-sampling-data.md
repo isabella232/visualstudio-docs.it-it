@@ -1,6 +1,6 @@
 ---
 title: Raccogliere i dati di campionamento a livello di riga | Microsoft Docs
-description: Informazioni sul modo in cui il campionamento a livello di riga del profiler può rivelare il codice che utilizza grandi quantità di tempo del processore. Funziona con codice gestito e nativo.
+description: Informazioni su come il campionamento a livello di riga del profiler può rivelare il codice che usa grandi quantità di tempo del processore. Funziona sia con il codice gestito che con il codice nativo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,15 +10,16 @@ ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 222ba8cd5eb8e45be368d70c204a7c7c76b1a3e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aae95396a213e546b74bd2c37db6c83536032dc99c348c6593934f81c52f8d8e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886262"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410775"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere i dati di campionamento a livello di riga
 Il campionamento a livello di riga è una capacità del profiler che consente di determinare il punto del codice di una funzione che richiede un uso intensivo del processore, ad esempio una funzione con esempi esclusivi elevati, in cui il processore impiega la maggior parte del tempo.
@@ -56,7 +57,7 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
 
      - o -
 
-- Quando si avvia un'applicazione, digitare **VSPerfCmd \<other arguments> /LineOff**.
+- Quando si avvia un'applicazione, **digitare VSPerfCmd /lineoff \<other arguments>**.
 
 ## <a name="see-also"></a>Vedi anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

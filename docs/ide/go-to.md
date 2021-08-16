@@ -1,6 +1,6 @@
 ---
 title: Passare al file, passare al simbolo, passare alla riga
-description: Informazioni sui comandi Vai a in Visual Studio e su come usarli per eseguire ricerche mirate sul codice.
+description: Informazioni sui comandi Vai a in Visual Studio e su come usarli per eseguire ricerche mirate del codice.
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 257db632c095027d9fa4be667a30e809ecb2fff4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b27e8ead53f79af584a289161236d88c35e832c7422d5b645d39731fb5060c7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946618"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413432"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
@@ -29,8 +30,8 @@ I comandi **Vai a** di Visual Studio consentono di eseguire una ricerca mirata n
 
 Input | Funzione
 ------------ | ---
-**Tastiera** | Premere **CTRL** + **T** o **CTRL** + **,**
-**Mouse** | Selezionare **modifica**  >  **Vai a**  >  **Vai a tutti**
+**Tastiera** | Premere **CTRL** + **T** o  + **CTRL,**
+**Mouse** | Selezionare **Modifica**  >  **Vai a** vai a  >  **tutti**
 
 Viene visualizzata una piccola finestra nella parte superiore destra dell'editor del codice.
 
@@ -46,7 +47,7 @@ Durante la digitazione nella casella di testo i risultati vengono visualizzati i
 
 ## <a name="filtered-searches"></a>Ricerche con filtri
 
-Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli elementi della soluzione. È però possibile limitare la ricerca nel codice a tipi di elementi specifici anteponendo determinati caratteri di prefisso ai termini di ricerca. È anche possibile modificare rapidamente il filtro di ricerca scegliendo i pulsanti nella barra degli strumenti della finestra **di dialogo Vai a** . I pulsanti per la modifica dei filtri relativi al tipo si trovano sul lato sinistro, mentre quelli per la modifica dell'ambito della ricerca sono sul lato destro.
+Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli elementi della soluzione. È però possibile limitare la ricerca nel codice a tipi di elementi specifici anteponendo determinati caratteri di prefisso ai termini di ricerca. È anche possibile modificare rapidamente il filtro di ricerca scegliendo i pulsanti nella barra **degli strumenti della** finestra di dialogo Vai a. I pulsanti per la modifica dei filtri relativi al tipo si trovano sul lato sinistro, mentre quelli per la modifica dell'ambito della ricerca sono sul lato destro.
 
 ![Passare a membri](../ide/media/vside_navigation_toolbar.png)
 
@@ -59,7 +60,7 @@ Prefisso | Icona | Tasto di scelta rapida | Descrizione
 :| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL** + **G** | Consente di passare al numero di riga specificato
 f| ![Icona File](media/gotoall-files-icon.png) | **CTRL** + **1**, **CTRL** + **F** | Consente di passare al file specificato
 r| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **CTRL** + **1**, **CTRL** + **R** | Consente di passare al file specificato, visitato di recente
-u| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL** + **1**, **CTRL** + **T** | Consente di passare al tipo specificato
+t| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL** + **1**, **CTRL** + **T** | Consente di passare al tipo specificato
 m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL** + **1**, **CTRL** + **M** | Consente di passare al membro specificato
 \#| ![Icona Simboli](media/gotoall-symbols-icon.png) | **CTRL** + **1**, **CTRL** + **S** | Consente di passare al simbolo specificato
 

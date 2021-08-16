@@ -1,6 +1,6 @@
 ---
 title: Risolvere i problemi e creare i log per problemi relativi a MSBuild
-description: Informazioni su come è possibile diagnosticare i problemi di compilazione nel progetto di Visual Studio e, se necessario, creare un log da inviare a Microsoft per l'analisi.
+description: Informazioni su come diagnosticare i problemi di compilazione nel progetto Visual Studio e, se necessario, creare un log da inviare a Microsoft per l'analisi.
 ms.custom: SEO-VS-2020
 ms.date: 02/08/2021
 ms.technology: vs-ide-compile
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: efa2ba6a298c4e3326b8a43d3fe6e8ecef0fb214beba6e1b0aaaa26643b982ba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225206"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413015"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Risolvere i problemi e creare i log per problemi relativi a MSBuild
 
@@ -46,7 +46,7 @@ L'ultima definizione di una proprietà è quella utilizzata dalla compilazione. 
 - PropertyGroups e Imports
 - ItemDefinitionGroups
 - ItemGroups
-- Server di destinazione
+- Targets
 
 Considerato l'ordine seguente, quindi:
 
@@ -115,30 +115,30 @@ Se si sta compilando nell'IDE di Visual Studio (con visualizzazione dettagliata 
    Msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
    ```
 
-Un file *MSBuild. binlog* viene creato nella directory da cui è stato eseguito MSBuild.
+Viene creato un file *msbuild.binlog* nella directory da cui è stato eseguito MSBuild file.
 
-## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>Creare un log MSBuild binario usando l'estensione strumenti di sistema del progetto
+## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>Creare un log MSBuild binario usando l'estensione Project System Tools
 
-1. Scaricare e installare l' [estensione strumenti di sistema del progetto](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools).
+1. Scaricare e installare [l'estensione Project System Tools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools).
 
-1. Una volta installata l'estensione, alcuni nuovi elementi vengono visualizzati nel menu **Visualizza**  >  **altre finestre** .
+1. Dopo aver installato l'estensione, alcuni nuovi elementi vengono visualizzati **nel**  >  menu Visualizza **Windows.**
 
-   ![Menu altre finestre](../ide/media/view-menu.png)
+   ![Altri Windows menu](../ide/media/view-menu.png)
 
-1. Selezionare **Visualizza**  >  **altre**  >  **registrazioni di compilazione** di Windows per visualizzare la finestra **registrazione compilazione** in Visual Studio. Scegliere la prima icona della barra degli strumenti per avviare la registrazione di compilazioni normali e in fase di progettazione nel sistema del progetto.
+1. Selezionare **Visualizza altri**  >  **Windows** di compilazione  >  **per** visualizzare la finestra **Registrazione** compilazione in Visual Studio. Scegliere la prima icona della barra degli strumenti per avviare la registrazione di compilazioni sia normali che in fase di progettazione nel sistema del progetto.
 
-   ![Finestra registrazione compilazione](../ide/media/build-logging-click-to-record.png)
+   ![Finestra Di registrazione compilazione](../ide/media/build-logging-click-to-record.png)
 
-1. Una volta registrata, una compilazione viene visualizzata nella finestra registrazione compilazione. Fare clic con il pulsante destro del mouse sull'elemento e scegliere **Salva registri** dal menu di scelta rapida per salvare il file con *estensione binlog* .
+1. Una volta registrata, una compilazione viene visualizzata nella finestra Registrazione compilazione. Fare clic con il pulsante destro del mouse sull'elemento e scegliere **Salva** log dal menu di scelta rapida per salvare il file *con estensione binlog.*
 
-   ![Menu di scelta rapida registrazione compilazione](../ide/media/build-logging-context-menu.png)
+   ![Menu di scelta rapida per la registrazione della compilazione](../ide/media/build-logging-context-menu.png)
 
-È possibile visualizzare e cercare i file con *estensione binlog* usando il [Visualizzatore di log strutturato di MSBuild](http://www.msbuildlog.com/).
+È possibile visualizzare ed eseguire ricerche *nei file con estensione binlog* usando MSBuild [Visualizzatore log strutturato](http://www.msbuildlog.com/).
 
 ## <a name="create-a-detailed-log"></a>Creare un log dettagliato
 
-1. Dal menu principale di Visual Studio passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  > **Compila ed Esegui**.
-1. Impostare **Livello di dettaglio output in compilazione progetto MSBuild** su **Dettagliato** in entrambe le caselle combinate. Il primo controlla il livello di dettaglio della compilazione nel **finestra di output** e il secondo controlla il livello di dettaglio della compilazione nel \<projectname\> file. log creato nella directory intermedia di ogni progetto durante la compilazione.
+1. Dal menu Visual Studio menu principale, passare **a** Strumenti  >  **Opzioni** Progetti  >  **e soluzioni**  > **Compilare ed eseguire**.
+1. Impostare **Livello di dettaglio output in compilazione progetto MSBuild** su **Dettagliato** in entrambe le caselle combinate. La prima controlla il livello di dettaglio della compilazione nel **Finestra di output** e la seconda controlla il livello di dettaglio della compilazione nel file con estensione log creato nella directory intermedia di ogni progetto durante \<projectname\> la compilazione.
 2. Da un prompt dei comandi per gli sviluppatori di Visual Studio, immettere uno di questi comandi, sostituendo i valori effettivi per percorso e configurazione:
 
     ```cmd
@@ -155,4 +155,4 @@ Un file *MSBuild. binlog* viene creato nella directory da cui è stato eseguito 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Visual Studio risoluzione dei problemi](/troubleshoot/visualstudio/welcome-visual-studio/)

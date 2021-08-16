@@ -1,5 +1,5 @@
 ---
-description: Struttura che include un elenco di GUID.
+description: Struttura che contiene un elenco di GUID.
 title: CONST_GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6bcaff422702b9c1c381c1d4e9199bb4578a0f7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c69f45ea0ef67ee388db719dc07360c51e53bfbff82af37661750cd46b966483
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059509"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360924"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-Struttura che include un elenco di oggetti `GUID` .
+Struttura che contiene un elenco di `GUID` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,14 +51,14 @@ Numero di `GUID` s nella `Members` matrice.
 Matrice di `GUID` s.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene passata al metodo [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) e viene restituita dai metodi [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .
+Questa struttura viene passata [al metodo PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) e viene restituita dai [metodi GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents.](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
-Il proprietario di un'istanza di questa struttura è responsabile della liberazione della memoria allocata.
+Il proprietario di un'istanza di questa struttura è responsabile della liberatura della memoria allocata.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

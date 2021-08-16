@@ -1,6 +1,6 @@
 ---
 description: Determina se il campo rappresenta un tipo chiuso.
-title: 'IDebugExtendedField:: IsClosedType | Microsoft Docs'
+title: IDebugExtendedField::IsClosedType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 9136fc57-74ff-4fe4-a6e2-b137cb9d5b08
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ba4c55b53ebb1f1e5ad2000f31efc8a37f81eef
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 47844555c2f900e46dd0218fe3763a877d9fa711b562b5601be8adc27a98b0a9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077200"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360365"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
 Determina se il campo rappresenta un tipo chiuso.

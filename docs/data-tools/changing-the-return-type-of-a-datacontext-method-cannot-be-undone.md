@@ -1,6 +1,6 @@
 ---
-title: Impossibile annullare la modifica del tipo restituito
-description: La modifica del tipo restituito di un metodo DataContext non può essere annullata. Visualizza le informazioni su questo messaggio di Object Relational Designer di Visual Studio (O/R Designer).
+title: Non è possibile annullare la modifica del tipo restituito
+description: La modifica del tipo restituito di un metodo DataContext non può essere annullata. Visualizzare informazioni su questo Visual Studio Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -8,14 +8,15 @@ ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71112b90f45fbc2b86aeb3f7e1935c38974a3694
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 43ef9c3e00c987bfb56e6360470b30de440c153830060eb0b85c7f5897b1f149
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867308"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380689"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>La modifica del tipo restituito di un metodo DataContext non può essere annullata
 
@@ -41,4 +42,4 @@ Il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> varia a seco
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL strumenti in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

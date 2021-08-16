@@ -11,14 +11,15 @@ ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb3fa392cd4ed31d907fe5913f8d7965a20df05b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f9085d764378c5e0743d239b3bde427befffb2d7cf1945f9ce8fa054ea780af4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900460"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359000"
 ---
 # <a name="sccrename-function"></a>Funzione SccRename
 Questa funzione rinomina un file nel sistema di controllo del codice sorgente.
@@ -52,21 +53,21 @@ SCCRTN SccRename(
 [in] Nuovo nome completo. Se il percorso della directory è diverso, il file è stato spostato da una sottodirectory a un'altra.
 
 ## <a name="return-value"></a>Valore restituito
- L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei valori seguenti:
+ È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|L'operazione di ridenominazione è stata completata.|
+|SCC_OK|L'operazione di ridenominazione è stata completata correttamente.|
 |SCC_E_PROJNOTOPEN|Il progetto non è aperto nel controllo del codice sorgente.|
 |SCC_E_FILENOTCONTROLLED|Il file non è sotto il controllo del codice sorgente.|
 |SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di problemi di connessione.|
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a completare questa operazione.|
-|SCC_E_COULDNOTCREATEPROJECT|Non è stato possibile creare il progetto come parte del processo di ridenominazione.|
+|SCC_E_COULDNOTCREATEPROJECT|Impossibile creare il progetto come parte del processo di ridenominazione.|
 |SCC_E_OPNOTPERFORMED|L'operazione non è stata eseguita.|
-|SCC_E_NONSPECIFICERROR|Si è verificato un errore generale o non specificato.|
+|SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato o generale.|
 
 ## <a name="remarks"></a>Commenti
  Questa funzione può essere usata per rinominare un file o spostarlo da una posizione a un'altra nel sistema di controllo del codice sorgente. Il plug-in del controllo del codice sorgente non deve tentare di accedere al file su disco. È responsabilità dell'IDE rinominare il file locale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

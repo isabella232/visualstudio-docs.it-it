@@ -7,22 +7,23 @@ ms.topic: conceptual
 ms.author: mikejo
 author: mikejo5000
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - uwp
-ms.openlocfilehash: e0267fb31515d842f7c9b6591d412e454c803bdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73120c008e8a98500e721099b14a648aadf7eefed0afd9f487e72d06129ae1c8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962548"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384770"
 ---
 # <a name="unit-test-c-code"></a>Unit test di codice C#
 
 Questo articolo descrive un metodo per la creazione di unit test per una classe C# in un'app per la piattaforma UWP.
 
-La classe **Rooter** , che è la classe sottoposta a test, implementa una funzione che calcola una stima della radice quadrata di un numero specificato.
+La **classe Rooter,** ovvero la classe testata, implementa una funzione che calcola una stima della radice quadrata di un determinato numero.
 
-Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene innanzitutto scritto un test che verifica un comportamento specifico nel sistema che si sta testando e quindi si scrive il codice che supera il test.
+Questo articolo illustra *lo sviluppo basato su test.* In questo approccio si scrive prima un test che verifica un comportamento specifico nel sistema che si sta testando e quindi si scrive il codice che supera il test.
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Creare la soluzione e il progetto unit test
 
@@ -30,17 +31,17 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 2. Cercare e selezionare il modello di progetto **App vuota (Windows universale)**.
 
-3. Denominare il progetto **Maths**.
+3. Assegnare al progetto il **nome Maths**.
 
-4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi**  >  **nuovo progetto**.
+4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi**  >  **nuovo Project**.
 
 5. Cercare e selezionare il modello di progetto **App unit test (Windows universale)**.
 
-6. Denominare il progetto di test **RooterTests**.
+6. Assegnare al progetto di test **il nome RooterTests**.
 
 ## <a name="verify-that-the-tests-run-in-test-explorer"></a>Verificare che i test siano eseguiti in Esplora test
 
-1. Inserire codice di test in **TestMethod1** nel file *UnitTest.cs* :
+1. Inserire codice di test in **TestMethod1** nel file *UnitTest.cs:*
 
    ```csharp
    [TestMethod]
@@ -54,25 +55,25 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 ::: moniker range="vs-2017"
 
-2. Nel menu **Test** scegliere **Esegui** > **Tutti i test**.
+2. Scegliere **Esegui** tutti i test **dal** menu > **Test**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Scegliere **Esegui tutti i test** dal menu **test** .
+2. Scegliere **Esegui** tutti i test dal menu **Test**.
 
 ::: moniker-end
 
-   Il progetto di test viene compilato ed eseguito. Essere paziente perché potrebbe richiedere un po' di tempo. Viene visualizzata la finestra **Esplora test** e il test è elencato in **test superati**. Nel riquadro **Riepilogo** nella parte inferiore della finestra sono disponibili ulteriori dettagli sul test selezionato.
+   Il progetto di test viene compilato ed eseguito. Sii paziente perché potrebbe essere necessario un po' di tempo. Viene **visualizzata la finestra** Esplora test e il test è elencato in Test **superati**. Il **riquadro** Riepilogo nella parte inferiore della finestra fornisce dettagli aggiuntivi sul test selezionato.
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Aggiungere la classe Rooter al progetto Maths
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **Maths** , quindi scegliere **Aggiungi**  >  **classe**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul **progetto Maths** e quindi scegliere **Aggiungi**  >  **classe**.
 
 2. Assegnare il nome *Rooter.cs* al file di classe.
 
-3. Aggiungere il codice seguente al file *Rooter.cs* della classe **Rooter** :
+3. Aggiungere il codice seguente al file *Rooter.cs della classe* **Rooter:**
 
    ```csharp
    public Rooter()
@@ -86,9 +87,9 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
    }
    ```
 
-   La classe **Rooter** dichiara un costruttore e il metodo Estimator **SquareRoot** . Il metodo **SquareRoot** è solo un'implementazione minima, sufficiente per testare la struttura di base della configurazione di test.
+   La **classe Rooter** dichiara un costruttore e il metodo dello estimatore **SquareRoot.** Il **metodo SquareRoot** è solo un'implementazione minima, sufficiente per testare la struttura di base della configurazione di test.
 
-4. Aggiungere la `public` parola chiave alla dichiarazione della classe **Rooter** , in modo che il codice di test possa accedervi.
+4. Aggiungere la `public` parola chiave alla dichiarazione della classe **Rooter,** in modo che il codice di test possa accedervi.
 
    ```csharp
    public class Rooter
@@ -98,15 +99,15 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 1. Aggiungere un riferimento dal progetto RooterTests all'app Maths.
 
-    1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **RooterTests** , quindi scegliere **Aggiungi**  >  **riferimento**.
+    1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul **progetto RooterTests** e quindi scegliere **Aggiungi**  >  **riferimento**.
 
-    2. Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare il progetto **Maths** .
+    2. Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare il **progetto Maths.**
 
         ![Aggiungere un riferimento al progetto Maths](../test/media/ute_cs_windows_addreference.png)
 
-2. Aggiungere un' `using` istruzione al file *UnitTest.cs* :
+2. Aggiungere `using` un'istruzione al file *UnitTest.cs:*
 
-    1. Aprire *UnitTest.cs*.
+    1. Aprire *UnitTest.cs.*
 
     2. Aggiungi questo codice sotto la riga `using Microsoft.VisualStudio.TestTools.UnitTesting;`:
 
@@ -114,7 +115,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
        using Maths;
        ```
 
-3. Aggiungere un test che utilizza la funzione **Rooter** . Aggiungere il codice seguente a *UnitTest.cs*:
+3. Aggiungere un test che usa la **funzione Rooter.** Aggiungere il codice seguente a *UnitTest.cs*:
 
    ```csharp
    [TestMethod]
@@ -128,31 +129,31 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
    }
    ```
 
-   Il nuovo test viene visualizzato in **Esplora test** nel nodo **test non eseguiti** .
+   Il nuovo test viene visualizzato in **Esplora test** nel nodo Test **non eseguiti.**
 
-4. Per evitare l'errore "il payload contiene due o più file con lo stesso percorso di destinazione", in **Esplora soluzioni** espandere il nodo **Proprietà** nel progetto **Maths** , quindi eliminare il file di *Default.rd.xml* .
+4. Per evitare un errore "Payload contains two or more files with the same  destination path" (Payload contiene due o più file con lo stesso percorso di destinazione), in **Esplora soluzioni** espandere il nodo Proprietà nel progetto **Maths** e quindi eliminare il file *Default.rd.xml.*
 
 ::: moniker range="vs-2017"
 
-6. In **Esplora test** scegliere **Esegui tutto**.
+6. In **Esplora test** scegliere Esegui **tutto**.
 
-   La soluzione viene compilata e i test vengono eseguiti e superati.
+   Le compilazioni della soluzione e i test vengono eseguiti e superati.
 
-   ![BasicTest passati in Esplora test](../test/media/ute_cpp_testexplorer_basictest.png)
+   ![BasicTest passato in Esplora test](../test/media/ute_cpp_testexplorer_basictest.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-6. In **Esplora test** scegliere **Esegui tutti i test**.
+6. In **Esplora test** scegliere Esegui tutti i **test**.
 
-   La soluzione viene compilata e i test vengono eseguiti e superati.
+   Le compilazioni della soluzione e i test vengono eseguiti e superati.
 
    ![Test di base superato in Esplora test](../test/media/vs-2019/test-explorer-uwp-app.png)
 
 ::: moniker-end
 
-Sono stati configurati i progetti di test e app e verificato che sia possibile eseguire test che chiamano funzioni nel progetto dell'app. Ora è possibile iniziare a scrivere test e codici reali.
+Sono stati impostati i progetti di test e app e si è verificato che sia possibile eseguire test che chiamano funzioni nel progetto dell'app. Ora è possibile iniziare a scrivere test e codici reali.
 
 ## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>Aumentare i test in maniera iterativa e farli superare
 
@@ -176,14 +177,14 @@ Sono stati configurati i progetti di test e app e verificato che sia possibile e
    > [!TIP]
    > È consigliabile non modificare i test che siano stati superati. Aggiungere invece un nuovo test.
 
-2. Eseguire il test **RangeTest** e verificare che abbia esito negativo.
+2. Eseguire il test **RangeTest** e verificare che non riesca.
 
    ![RangeTest non riuscito](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
    > [!TIP]
-   > Subito dopo aver scritto un test, eseguirlo per verificarne l'esito negativo. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.
+   > Subito dopo aver scritto un test, eseguirlo per verificare che non riesca. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.
 
-3. Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Modificare la funzione **SquareRoot** in *Rooter.cs* in questo modo:
+3. Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Modificare la **funzione SquareRoot** in *Rooter.cs* in questo modo:
 
    ```csharp
    public double SquareRoot(double x)
@@ -202,13 +203,13 @@ Sono stati configurati i progetti di test e app e verificato che sia possibile e
 
 ::: moniker range="vs-2017"
 
-4. In **Esplora test** scegliere **Esegui tutto**.
+4. In **Esplora test** scegliere Esegui **tutto**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. In **Esplora test** scegliere **Esegui tutti i test**.
+4. In **Esplora test** scegliere Esegui tutti i **test**.
 
 ::: moniker-end
 
@@ -219,11 +220,11 @@ Sono stati configurati i progetti di test e app e verificato che sia possibile e
 
 ## <a name="refactor-the-code"></a>Eseguire il refactoring del codice
 
-In questa sezione viene eseguito il refactoring del codice dell'app e del test, quindi vengono rieseguiti i test per assicurarsi che vengano ancora superati.
+In questa sezione si effettua il refactoring sia del codice dell'app che del codice di test, quindi si rieseguino i test per assicurarsi che siano ancora superati.
 
-### <a name="simplify-the-square-root-estimation"></a>Semplificare la stima radice quadrata
+### <a name="simplify-the-square-root-estimation"></a>Semplificare la stima della radice quadrata
 
-1. Semplificare il calcolo centrale nella funzione **SquareRoot** cambiando una riga di codice, come indicato di seguito:
+1. Semplificare il calcolo centrale nella **funzione SquareRoot** modificando una riga di codice, come indicato di seguito:
 
     ```csharp
     // Old code
@@ -233,16 +234,16 @@ In questa sezione viene eseguito il refactoring del codice dell'app e del test, 
     estimate = (estimate + x/estimate) / 2.0;
     ```
 
-2. Eseguire tutti i test per assicurarsi di non aver introdotto una regressione. Tutti devono essere superati.
+2. Eseguire tutti i test per assicurarsi di non aver introdotto una regressione. Devono essere tutti passati.
 
 > [!TIP]
 > Un set stabile di unit test corretti indica con sufficiente sicurezza che non sono stati introdotti bug in fase di modifica del codice.
 
-### <a name="eliminate-duplicated-code"></a>Elimina codice duplicato
+### <a name="eliminate-duplicated-code"></a>Eliminare il codice duplicato
 
-Il metodo **RangeTest** codifica in modo rigido il denominatore della variabile di *tolleranza* passata al <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> metodo. Se si prevede di aggiungere altri test che utilizzano lo stesso calcolo di tolleranza, l'uso di un valore hardcoded in più posizioni rende più difficile la gestione del codice.
+Il **metodo RangeTest** imposta come hard code il denominatore della variabile *di* tolleranza passata al <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> metodo . Se si prevede di aggiungere altri test che usano lo stesso calcolo della tolleranza, l'uso di un valore hard-coded in più posizioni rende il codice più difficile da gestire.
 
-1. Aggiungere un metodo helper privato alla classe **UnitTest1** per calcolare il valore di tolleranza e quindi chiamare il metodo da **RangeTest**.
+1. Aggiungere un metodo helper privato alla **classe UnitTest1** per calcolare il valore di tolleranza e quindi chiamare tale metodo **da RangeTest**.
 
     ```csharp
     private double ToleranceHelper(double expected)
@@ -265,11 +266,11 @@ Il metodo **RangeTest** codifica in modo rigido il denominatore della variabile 
     ...
     ```
 
-2. Eseguire **RangeTest** per assicurarsi che venga ancora superato.
+2. Eseguire **RangeTest** per assicurarsi che passi ancora.
 
 > [!TIP]
-> Se si aggiunge un metodo helper a una classe di test e non si vuole che venga visualizzato in **Esplora test**, non aggiungere l' <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attributo al metodo.
+> Se si aggiunge un metodo helper a una classe di test e non si vuole che venga visualizzato in **Esplora** test, non aggiungere l'attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> al metodo.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura dettagliata: sviluppo basato su test con Esplora test](quick-start-test-driven-development-with-test-explorer.md)
+- [Procedura dettagliata: Sviluppo basato su test con Esplora test](quick-start-test-driven-development-with-test-explorer.md)

@@ -1,5 +1,5 @@
 ---
-description: "IDiaSession:: findInlineFramesByVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato (VA)."
+description: IDiaSession::findInlineFramesByVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato.
 title: IDiaSession::findInlineFramesByVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: df9e68f6-e0a4-4cf6-b11d-61c40351e0cd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c87af04b166448baeda14b276f0bf0b8ab8d6f10
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ea39013ba5825f3607c743c48c04b35a66547dceb1210106ba2244f99e646b8d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158964"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380307"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
-Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato (VA).
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,15 +34,15 @@ HRESULT findInlineFramesByVA (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in `IDiaSymbol` Oggetto che rappresenta l'elemento padre.
+[in] Oggetto `IDiaSymbol` che rappresenta l'elemento padre.
 
  `va`
 
-in Specifica l'indirizzo come VA.
+[in] Specifica l'indirizzo come va.
 
  `ppResult`
 
-out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recuperati.
+[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

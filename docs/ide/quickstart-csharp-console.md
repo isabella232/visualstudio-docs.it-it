@@ -4,23 +4,22 @@ titleSuffix: ''
 description: Informazioni dettagliate su come creare un'app console Hello World semplice in Visual Studio con C#.
 ms.custom: vs-acquisition
 ms.date: 03/23/2019
-ms.technology: vs-ide-general
-ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: bf7a52b6dbf36c25590292c3272f1e63d07156b9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: b39277a6e7ff5ce98055cc5c5615360cead3c8b4fe892a2005b28949fe449af0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387619"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121412737"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app console C#
 
@@ -52,7 +51,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu superiore scegliere **File** > **nuovo** > **progetto**.
+2. Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **C#** e quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al progetto il nome *HelloWorld*.
 
@@ -101,7 +100,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
    
 ::: moniker-end
 
-## <a name="create-the-application"></a>Creazione dell'applicazione
+## <a name="create-the-application"></a>Creare l'applicazione
 
 ::: moniker range="vs-2017"
 

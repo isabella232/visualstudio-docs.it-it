@@ -1,6 +1,6 @@
 ---
 title: Salvataggio delle informazioni sui simboli con i file di dati di prestazioni | Microsoft Docs
-description: Informazioni su come è possibile impostare le impostazioni del progetto di prestazioni per salvare o serializzare i simboli nel file di report.
+description: Informazioni su come configurare le impostazioni del progetto prestazioni per salvare o serializzare i simboli nel file di report.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d93c4aa7d38e65235d4a134978a9ff3571d33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 341807e78a43b716c09fc063d0dadbc6ad1450851e1b0cb339d9b5efcc96e712
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950091"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410415"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvataggio delle informazioni sui simboli con i file di dati di prestazioni
 
@@ -64,5 +65,5 @@ VsPerfReport -packsymbols -summary:all nomefile.vsp
 ## <a name="see-also"></a>Vedi anche
 
 [Salvataggio ed esportazione dei dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md) 
- [Procedura: fare riferimento alle informazioni sui](../profiling/how-to-reference-windows-symbol-information.md) 
- simboli di Windows [VSPerfReport](../profiling/vsperfreport.md)
+ [Procedura: Fare riferimento Windows informazioni sui simboli](../profiling/how-to-reference-windows-symbol-information.md) 
+ [VSPerfReport](../profiling/vsperfreport.md)
