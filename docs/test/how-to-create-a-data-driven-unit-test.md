@@ -1,6 +1,6 @@
 ---
 title: Creare uno unit test basato sui dati
-description: Informazioni su come usare Microsoft unit test Framework per il codice gestito per configurare un metodo di unit test per recuperare i valori da un'origine dati.
+description: Informazioni su come usare microsoft unit test framework per il codice gestito per configurare un metodo unit test per recuperare valori da un'origine dati.
 ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
@@ -13,17 +13,18 @@ helpviewer_keywords:
 - data-driven unit tests
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 94dcc3aed8d41f9ece0f9b51410fc749330b01df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80ca16205a1e850ff170ee9c57987becd9b60447e579f2f627820810ee5ad9af
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966695"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384873"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: creare un unit test basato sui dati
+# <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare un'istanza guidata unit test
 
 È possibile usare il framework unit test Microsoft per il codice gestito per impostare un metodo di unit test per recuperare i valori da un'origine dati. Il metodo viene eseguito in successione per ogni riga nell'origine dati, rendendo più semplice testare una un'ampia varietà di input con un singolo metodo.
 
@@ -162,7 +163,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>Eseguire il test e visualizzare i risultati
 
-Al termine della scrittura di un metodo di test, compilare il progetto di test. Il metodo di test viene visualizzato in **Esplora test** nel gruppo **Test non eseguiti**. Quando si eseguono, si scrivono e si rieseguono i test, **Esplora test** visualizza i risultati nei gruppi **Test non superati**, **Test superati** e **Test non eseguiti**. È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per scegliere un subset di test da eseguire.
+Al termine della scrittura di un metodo di test, compilare il progetto di test. Il metodo di test viene visualizzato in **Esplora test** nel gruppo **Test non eseguiti**. Quando si eseguono, si scrivono e si rieseguono i test, **Esplora test** visualizza i risultati nei gruppi **Test non superati**, **Test superati** e **Test non eseguiti**. È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure **scegliere Esegui** per scegliere un subset di test da eseguire.
 
 La barra dei risultati dei test nella parte superiore di **Esplora test** viene animata durante l'esecuzione dei test. Al termine del test, la barra diventa verde se tutti i test sono stati superati oppure rossa se almeno uno dei test ha avuto esito negativo. Nel riquadro dei dettagli nella parte inferiore della finestra **Esplora test** appare un riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Selezionare i file da compilare | Microsoft Docs'
-description: Informazioni su come selezionare i file da compilare nel file di progetto MSBuild elencando separatamente ogni file o usando caratteri jolly.
+description: Informazioni su come selezionare i file da compilare nel file MSBuild progetto elencando ogni file separatamente o usando caratteri jolly.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f324fb3999c94d8f26e329859e095f31740c76c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ada7ffb7b5f73dc320d124b88dd4a571ba255abad55b6dc72c40feaab1b55681
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914232"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370229"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 
@@ -29,7 +30,7 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
 
 Gli elementi rappresentano gli input di una compilazione. Per altre informazioni sugli elementi, vedere [Elementi](../msbuild/msbuild-items.md).
 
-Per includere i file per una compilazione, è necessario includerli in un elenco di elementi nel file di progetto MSBuild. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
+Per includere i file per una compilazione, è necessario che siano inclusi in un elenco di elementi nel file MSBuild di progetto. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
 
 #### <a name="to-declare-items-individually"></a>Per dichiarare gli elementi uno alla volta
 
@@ -103,7 +104,7 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> È necessario utilizzare caratteri jolly con elementi per specificare gli input per una compilazione. non è possibile specificare gli input usando l' `Sources` attributo nelle attività di MSBuild, ad esempio [CSC](../msbuild/csc-task.md) o [vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
+> È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. non è possibile specificare gli input usando l'attributo `Sources` in MSBuild attività quali [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
@@ -179,5 +180,5 @@ L'esempio di codice seguente usa un carattere jolly per includere tutti i file c
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Elementi](../msbuild/msbuild-items.md)

@@ -1,6 +1,6 @@
 ---
 title: Rilevamento di file | Microsoft Docs
-description: Utilizzare le funzioni di rilevamento dei file di MSBuild per registrare le chiamate al file system Windows per un processo e i relativi processi figlio.
+description: Usare MSBuild funzioni di rilevamento file per registrare le chiamate al Windows file system per un processo e i relativi processi figlio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d61c3478515f2c8fa867666e6ff4ff72a0d4e65b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbff31884c3aa6539b286772f1517b1594462579a5992f8fa750a8e5b7b03729
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877122"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428081"
 ---
 # <a name="file-tracking"></a>Rilevamento file
 

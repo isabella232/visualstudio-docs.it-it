@@ -6,17 +6,18 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 40411f47e7deda48b04ac4efb9bb9bc18688989a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92f44305d22790efbcb76d7c5559bde1a8b2166a9a12d03f7d462cf7e04644cc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839110"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425910"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurare app Web Python per IIS
 
@@ -86,7 +87,7 @@ Modificare quindi il file *web.config* dell'app per includere i percorsi complet
     </system.webServer>
     ```
 
-1. All'interno della `<appSettings>` sezione di *web.config* aggiungere le chiavi per `WSGI_HANDLER` , `WSGI_LOG` (facoltativo) e `PYTHONPATH` :
+1. Nella sezione `<appSettings>` diweb.configaggiungere le chiavi per , ** `WSGI_HANDLER` `WSGI_LOG` (facoltativo) e `PYTHONPATH` :
 
     ```xml
     <appSettings>
@@ -139,7 +140,7 @@ Modificare quindi il file *web.config* dell'app per includere i percorsi complet
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    Se non si aggiunge l'URL alla matrice, viene restituito l'errore **DisallowedHost all'intestazione/HTTP_HOST non valida:' \<site URL\> '. Potrebbe essere necessario aggiungere ' \<site URL\> ' a ALLOWED_HOSTS.**
+    Se non si aggiunge l'URL alla matrice, viene restituito l'errore **DisallowedHost at/Invalid HTTP_HOST header: ' \<site URL\> '. Potrebbe essere necessario aggiungere ' \<site URL\> ' a ALLOWED_HOSTS.**
 
     Si noti che, quando la matrice è vuota, Django autorizza automaticamente "localhost" e "127.0.0.1", ma se si aggiunge l'URL di produzione questa funzionalità viene rimossa. Per questo motivo è consigliabile mantenere copie separate di *settings.py* per sviluppo e produzione, oppure usare le variabili di ambiente per controllare i valori della fase di esecuzione.
 

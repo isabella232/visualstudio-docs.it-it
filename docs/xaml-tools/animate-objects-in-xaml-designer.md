@@ -9,12 +9,13 @@ ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 162ed3ddb7e8f71a14c9dd8415500cc845316e82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: da206cedbe2cf14be1fc6bcd2d8f1dd1cd154524767ed9b33ddb69e392599053
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889252"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121393466"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animare oggetti in una finestra di progettazione XAML
 

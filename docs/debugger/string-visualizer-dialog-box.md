@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Visualizzatore di stringhe | Microsoft Docs
-description: Visualizzare le stringhe con la finestra di dialogo Visualizzatore di stringhe predefinita durante il debug in Visual Studio.
+description: Visualizzare le stringhe con la finestra di dialogo Del visualizzatore di stringhe predefinita durante il debug in Visual Studio.
 ms.date: 10/10/2018
 ms.custom: contperf-fy21q4
 ms.topic: reference
@@ -19,25 +19,26 @@ ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 85092f6a339fdaaa3ddaa56112cc351d8b8e9bdc
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: 274d7e2deb7d63cac702bfac2041d10b4e33193549ae242c7458e00bb0ad5559
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108640843"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361548"
 ---
 # <a name="string-visualizer-dialog-box"></a>Finestra di dialogo Visualizzatore stringhe
 
-Durante il debug in Visual Studio, è possibile visualizzare le stringhe con il visualizzatore di stringhe incorporato. Il visualizzatore di stringhe mostra stringhe troppo lunghe per un suggerimento dati o una finestra del debugger. Consente anche di identificare stringhe in formato non valido.
+Durante il debug in Visual Studio, è possibile visualizzare le stringhe con il visualizzatore di stringhe incorporato. Il visualizzatore di stringhe mostra stringhe troppo lunghe per una descrizione comando dati o una finestra del debugger. Può anche essere utile per identificare stringhe in formato non valido.
 
-I visualizzatori di stringhe predefiniti includono [le opzioni Text,](#text-string-data) [XML,](#xml-string-data) [HTML](#html-string-data) [e JSON.](#json-string-data) È anche possibile aprire visualizzatori predefiniti per alcuni altri tipi, ad esempio oggetti [DataSet, DataTable e DataView,](../debugger/dataset-visualizer-dialog-box.md) dalle finestre **Auto** o altre finestre del debugger.
+I visualizzatori di stringhe predefiniti includono [le opzioni Text](#text-string-data), [XML](#xml-string-data), [HTML](#html-string-data) [e JSON.](#json-string-data) È anche possibile aprire visualizzatori predefiniti per alcuni altri tipi, ad esempio [oggetti DataSet, DataTable e DataView,](../debugger/dataset-visualizer-dialog-box.md) dalle finestre Auto **o** altre finestre del debugger.
 
 > [!NOTE]
-> Se è necessario esaminare gli elementi dell'interfaccia utente XAML o WPF in un visualizzatore, vedere o Controllare le proprietà [XAML](../xaml-tools/inspect-xaml-properties-while-debugging.md) durante il debug o Come usare [il visualizzatore ad](../debugger/how-to-use-the-wpf-tree-visualizer.md)albero WPF.
+> Se è necessario esaminare gli elementi DELL'interfaccia utente XAML o WPF in un visualizzatore, vedere o Esaminare le proprietà [XAML](../xaml-tools/inspect-xaml-properties-while-debugging.md) durante il debug o Come usare il visualizzatore albero [WPF.](../debugger/how-to-use-the-wpf-tree-visualizer.md)
 
-Per aprire il visualizzatore di stringhe, è necessario essere sospesi durante il debug. Passare il mouse su una variabile con un valore stringa testo normale, XML, HTML o JSON e selezionare l'icona a forma di lente di ingrandimento ![VisualizzatoreIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icona del visualizzatore").
+Per aprire il visualizzatore di stringhe, è necessario essere sospesi durante il debug. Passare il puntatore del mouse su una variabile con un testo normale, un valore di stringa XML, HTML o JSON e selezionare l'icona della lente di ingrandimento ![VisualizzatoreIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icona del visualizzatore").
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 

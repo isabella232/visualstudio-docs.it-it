@@ -1,6 +1,6 @@
 ---
 description: Questo errore si verifica quando il debugger tenta di connettersi automaticamente a un'applicazione Web che utilizza un indirizzo IP
-title: Il sito usa l'indirizzo IP | Microsoft Docs
+title: Il sito usa indirizzi IP | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fa18ea975bacbda38a18c27d19d438ab5b4da0b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 07c7cfe629710a880f85a22c38eced5068edf7bad580be6fb44150f75e5c5aa4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146742"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420131"
 ---
 # <a name="error-site-uses-ip-address"></a>Errore: il sito utilizza un indirizzo IP
 Questo errore si verifica quando il debugger tenta di connettersi automaticamente a un'applicazione Web che utilizza un indirizzo IP ed è dovuto alla selezione di **Usa indirizzo IP specifico** anziché **Identificazione sito Web** in IIS.

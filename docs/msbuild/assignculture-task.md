@@ -1,6 +1,6 @@
 ---
 title: Attività AssignCulture | Microsoft Docs
-description: Usare l'attività AssignCulture di MSBuild per produrre un elemento con metadati denominati culture contenenti l'identificatore delle impostazioni cultura corrispondente.
+description: Usare l MSBuild'attività AssignCulture per produrre un elemento con un metadati denominato Culture contenente l'identificatore delle impostazioni cultura corrispondente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c837046380550f5a0a73aaba888cbf26be0c1586
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bce381e9d851764d2c7d331a247d085f829e94a06ea2750da332c7ab0997008
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923848"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428627"
 ---
 # <a name="assignculture-task"></a>AssignCulture (attività)
 
@@ -45,7 +46,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `AssignCult
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

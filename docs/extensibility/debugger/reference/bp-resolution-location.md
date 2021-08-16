@@ -11,17 +11,18 @@ ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aefbb27a7eb693ceef3bd64afb610607697ac23e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4854b04848e99e605fbb26587c8b4a1abafe4741ec74b6d84568cf2b729232a0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089121"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390443"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Specifica la struttura della posizione di risoluzione del punto di interruzione.
@@ -51,33 +52,33 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="members"></a>Members
 `bpType`\
-Valore dell'enumerazione [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) che specifica come interpretare l' `bpResLocation` Unione o i `unionmemberX` membri.
+Valore [dell'enumerazione BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) che specifica come interpretare l'unione `bpResLocation` o i `unionmemberX` membri.
 
 `bpResLocation.bpresCode`\
-[Solo C++] Contiene la struttura [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) se `bpType`  =  `BPT_CODE` .
+[Solo C++] Contiene la [struttura BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) se `bpType`  =  `BPT_CODE` .
 
 `bpResLocation.bpresData`\
-[Solo C++] Contiene la struttura [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) se `bpType`  =  `BPT_DATA` .
+[Solo C++] Contiene la [struttura BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) se `bpType`  =  `BPT_DATA` .
 
 `bpResLocation.unused`\
 [Solo C++] Segnaposto.
 
 `unionmember1`\
-[Solo C#] Vedere la sezione Osservazioni su come interpretare.
+[Solo C#] Vedere Osservazioni su come interpretare.
 
 `unionmember2`\
-[Solo C#] Vedere la sezione Osservazioni su come interpretare.
+[Solo C#] Vedere Osservazioni su come interpretare.
 
 `unionmember3`\
-[Solo C#] Vedere la sezione Osservazioni su come interpretare.
+[Solo C#] Vedere Osservazioni su come interpretare.
 
 `unionmember4`\
-[Solo C#] Vedere la sezione Osservazioni su come interpretare.
+[Solo C#] Vedere Osservazioni su come interpretare.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura è un membro delle strutture [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) .
+Questa struttura è un membro delle [strutture BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-resolution-info.md)
 
- [Solo C#] I `unionmemberX` membri vengono interpretati in base alla tabella seguente. Esaminare la colonna sinistra per il `bpType` valore, quindi, per determinare ciò che ogni `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` conseguenza. Vedere l'esempio relativo a un modo per interpretare questa struttura in C#.
+ [Solo C#] I `unionmemberX` membri vengono interpretati in base alla tabella seguente. Cercare il valore nella colonna sinistra e quindi in per `bpType` determinare ciò che ogni `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` conseguenza. Vedere l'esempio per un modo per interpretare questa struttura in C#.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
@@ -115,9 +116,9 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

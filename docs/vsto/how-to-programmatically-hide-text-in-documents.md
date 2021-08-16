@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Nascondere testo nei documenti a livello di codice'
-description: Informazioni su come nascondere il testo in un documento di Microsoft Word impostando la proprietà Hidden del tipo di carattere per un intervallo di testo specifico.
+description: Informazioni su come nascondere il testo in Microsoft Word documento impostando la proprietà Hidden del tipo di carattere per un intervallo di testo specifico.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,19 +13,20 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 04ea6b56519656782a3e408892235fa177eef755
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 72e869d585f2db5163036b4e8f024d4ca4c0c620c8aec829ffcdd6ccea1cf610
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826486"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366251"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Procedura: Nascondere testo nei documenti a livello di codice
   È possibile nascondere testo in un documento impostando la proprietà <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> di un controllo <xref:Microsoft.Office.Interop.Word.Range.Font%2A> per un intervallo di testo determinato.
 
- Ad esempio, è possibile nascondere temporaneamente il testo all'interno di (in una personalizzazione a livello di documento) o (in un componente aggiuntivo VSTO) prima di inviare un documento <xref:Microsoft.Office.Tools.Word.Bookmark> <xref:Microsoft.Office.Interop.Word.Bookmark> a una stampante.
+ Ad esempio, è possibile nascondere temporaneamente il testo all'interno di (in una personalizzazione a livello di documento) o (in un componente aggiuntivo VSTO) prima di inviare un documento a una <xref:Microsoft.Office.Tools.Word.Bookmark> <xref:Microsoft.Office.Interop.Word.Bookmark> stampante.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

@@ -11,21 +11,22 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8990ea7c4a2173a0cea0f66a0edfb67ee116c259
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 386333000a10e9a66d5789e1ceaa89e8d0af0320103969f9433d0015d0c3ba9e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592190"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121398993"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Supporto a 64 bit per l'IDE di Visual Studio
 
 Visual Studio consente di configurare le applicazioni per diverse piattaforme di destinazione, tra cui le piattaforme a 64 bit. Per altre informazioni sul supporto della piattaforma a 64 bit in Visual Studio, vedere [Applicazioni a 64 bit.](/dotnet/framework/64-bit-apps)
 
 > [!NOTE]
-> Visual Studio 2022 in Windows è ora un'applicazione a 64 bit. Per altre informazioni, vedere il post di blog [**sulla visione Visual Studio 2022.**](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)
+> Visual Studio 2022 su Windows è ora un'applicazione a 64 bit. Per altre informazioni, vedere il post di blog [**Visual Studio visione di Visual Studio 2022.**](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)
 
 ## <a name="deploy-a-64-bit-application"></a>Distribuire un'applicazione a 64 bit
 

@@ -1,51 +1,51 @@
 ---
-title: Modificare le sottoscrizioni di Visual Studio nel portale di amministrazione | Microsoft Docs
+title: Modificare Visual Studio sottoscrizioni nel portale di amministrazione | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/21/2021
 ms.topic: how-to
-description: Informazioni su come gli amministratori possono modificare le assegnazioni delle sottoscrizioni.
-ms.openlocfilehash: b1779b80cc295e680ff1856181be42a6390fe25b
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+description: Informazioni su come gli amministratori possono modificare le assegnazioni di sottoscrizione.
+ms.openlocfilehash: 0a732737e129374433754890928141b6b3c81c57aa87764b4af17e996af39726
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776870"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121364599"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modificare assegnazioni di sottoscrizioni di Visual Studio
-In qualità di amministratore della sottoscrizione, è possibile apportare modifiche alle sottoscrizioni assegnate a singoli utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
+L'amministratore della sottoscrizione può apportare modifiche alle sottoscrizioni assegnate a singoli utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
 
    > [!NOTE]
-   > Se è necessario modificare i dettagli della sottoscrizione per un Sottoscrittore assegnato tramite un gruppo di Azure Active Directory, sarà necessario rimuoverli dal gruppo e aggiungerli singolarmente nel portale di amministrazione.  
+   > Se è necessario modificare i dettagli della sottoscrizione per un sottoscrittore assegnato tramite un gruppo Azure Active Directory, è necessario rimuoverli dal gruppo e aggiungerli singolarmente nel portale di amministrazione.  
 
 ## <a name="change-subscriber-information"></a>Modificare le informazioni sul sottoscrittore
 È possibile modificare le informazioni di un sottoscrittore per correggere gli errori o aggiornare le informazioni.
 
 Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che vengono visualizzati accanto all'indirizzo di posta elettronica del sottoscrittore quando vi si passa sopra il mouse. Verrà visualizzato un elenco a discesa.  Selezionare **Modifica** per modificare i dati del sottoscrittore. 
 > [!div class="mx-imgBorder"]
-> ![Selezionare un sottoscrittore da modificare](_img/edit-license/select-subscriber.png "Fare clic sui puntini di sospensione e scegliere modifica.")
+> ![Selezionare un sottoscrittore da modificare](_img/edit-license/select-subscriber.png "Fare clic sui puntini di sospensione e scegliere Modifica.")
 
-È possibile aggiornare il nome, il cognome, il livello di sottoscrizione, l'indirizzo di posta elettronica, il paese, la lingua, i download e il campo di riferimento del Sottoscrittore Modificare le informazioni del Sottoscrittore e fare clic su **Salva**.
+È possibile aggiornare il nome, il cognome, il livello di sottoscrizione, l'indirizzo di posta elettronica, il paese, la lingua, i download e il campo di riferimento del sottoscrittore. Modificare le informazioni del sottoscrittore e fare clic su **Salva**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Modificare più sottoscrittori usando la modifica di massa
 
 È possibile modificare più sottoscrittori contemporaneamente utilizzando il processo di modifiche di massa. Questa funzionalità viene utilizzata principalmente per le organizzazioni che devono effettuare modifiche dell'indirizzo di posta elettronica aziendale o se un'organizzazione ha deciso di limitare l'accesso ai download.
 
-Guardare questo video o leggere per informazioni su come modificare più Sottoscrittori con la modifica bulk. 
+Guardare questo video o leggere per informazioni su come modificare più sottoscrittori usando la modifica in blocco. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
 > [!NOTE]
-> Non modificare i GUID della sottoscrizione nel modello. Vedere l'articolo sull' [assegnazione di GUID di sottoscrizione specifici](assign-guid.md).
+> Non modificare i GUID della sottoscrizione nel modello. Vedere l'articolo [sull'assegnazione di GUID di sottoscrizione specifici.](assign-guid.md)
 
-1. Per modificare contemporaneamente più sottoscrittori, passare alla scheda sottoscrittori. Nella parte superiore della barra multifunzione fare clic su **modifica in blocco**.
+1. Per modificare più sottoscrittori contemporaneamente, passare alla scheda Sottoscrittori. Nella barra multifunzione nella parte superiore fare clic su **Modifica in blocco**.
 
 2. La procedura di Modifiche di massa usa un modello di Excel per apportare modifiche a informazioni relative al sottoscrittore. Nella casella Modifiche di massa, fare clic su **Esporta in Excel** per scaricare l'elenco corrente di sottoscrittori, incluse tutte le relative informazioni.
    > [!div class="mx-imgBorder"]
-   > ![Modifica di una licenza - Esportazione di un elenco di modifiche in blocco](_img/edit-license/edit-license-bulk-edit-export.png "Fare clic su Esporta questo Excel per creare un elenco delle sottoscrizioni correnti.")
+   > ![Modifica di una licenza - Esportazione di un elenco di modifiche in blocco](_img/edit-license/edit-license-bulk-edit-export.png "Fare clic su Esporta excel per creare un elenco delle sottoscrizioni correnti.")
 
 3. Successivamente, salvare il file in locale in modo che sia più facile trovarlo e apportare le modifiche necessarie prima di caricarlo. 
 
@@ -59,10 +59,10 @@ Guardare questo video o leggere per informazioni su come modificare più Sottosc
 - [Supporto delle sottoscrizioni](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 - È necessario assegnare un ID sottoscrizione specifico? Vedere Assegnazione di un ID sottoscrizione. 

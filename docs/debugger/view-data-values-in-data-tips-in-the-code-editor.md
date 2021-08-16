@@ -17,14 +17,15 @@ ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a84c3379c04799aa1faea5b0e62afe0ef1aa11e9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 3ca70d8b77ff0ff0cb229207b433d402c96985c4dd0931268007930474ae26b2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386475"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121418863"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Visualizzare i valori dei dati nei suggerimenti dati nell'editor di codice
 
@@ -42,7 +43,7 @@ I suggerimenti dati vengono visualizzati solo in modalità di interruzione e sol
 
 ### <a name="make-a-datatip-transparent"></a>Rendere trasparente un suggerimento dati
 
-Per rendere trasparente un suggerimento dati per visualizzare il codice sottostante, mentre nel suggerimento dati premere **CTRL.** Il suggerimento dati rimane trasparente finché si tiene premuto **CTRL.** Questa operazione non funziona per i suggerimenti dati bloccati o mobili.
+Per rendere trasparente un suggerimento dati per visualizzare il codice sottostante, mentre nel suggerimento dati premere **CTRL**. Il suggerimento dati rimane trasparente finché si tiene premuto **CTRL.** Questa operazione non funziona per i suggerimenti dati bloccati o mobili.
 ### <a name="pin-a-datatip"></a>Aggiungere un suggerimento dati
 
 Per aggiungere un suggerimento dati in modo che rimanga aperto, selezionare l'icona a forma di puntina da disegno **Aggiungi all'origine.**
@@ -58,13 +59,13 @@ Per aggiungere un suggerimento dati in modo che rimanga aperto, selezionare l'ic
 
 Per rendere mobile un suggerimento dati aggiunto, passare il puntatore del mouse sul suggerimento dati e selezionare l'icona della puntina da disegno dal menu di scelta rapida.
 
-L'icona a forma di puntina da disegno cambia in posizione bloccata e il suggerimento dati ora mobile o può essere trascinato sopra tutte le finestre aperte. I suggerimenti dati mobili si chiudono al termine della sessione di debug.
+L'icona a forma di puntina da disegno cambia in posizione bloccata e il suggerimento dati ora mobile o trascinato sopra tutte le finestre aperte. I suggerimenti dati mobili si chiudono al termine della sessione di debug.
 
 ### <a name="repin-a-datatip"></a>Rietichette un suggerimento dati
 
-Per aggiungere nuovamente un suggerimento dati mobile all'origine, passare il puntatore del mouse su di esso nell'editor di codice e selezionare l'icona a forma di puntina da disegno. L'icona della puntina da disegno cambia in posizione bloccata e il suggerimento dati viene nuovamente aggiunto solo alla finestra del codice.
+Per aggiungere nuovamente un suggerimento dati mobile all'origine, passare il puntatore del mouse su di esso nell'editor di codice e selezionare l'icona della puntina da disegno. L'icona della puntina da disegno cambia in posizione bloccata e il suggerimento dati viene nuovamente aggiunto solo alla finestra del codice.
 
-Se un suggerimento dati è mobile su una finestra del codice non sorgente, l'icona della puntina da disegno non è disponibile e il suggerimento dati non può essere aggiunto nuovamente. Per accedere all'icona della puntina da disegno, restituire il suggerimento dati alla finestra dell'editor del codice trascinandolo o attivando la finestra del codice.
+Se un suggerimento dati è mobile su una finestra del codice non sorgente, l'icona a forma di puntina da disegno non è disponibile e il suggerimento dati non può essere aggiunto nuovamente. Per accedere all'icona della puntina da disegno, restituire il suggerimento dati alla finestra dell'editor del codice trascinandolo o attivando la finestra del codice.
 
 ### <a name="close-a-datatip"></a>Chiudere un suggerimento dati
 
@@ -106,7 +107,7 @@ Per modificare il valore di una variabile o di un elemento in un suggerimento da
 
 ![Aggiunta di una proprietà in un suggerimento dati](../debugger/media/basic-pin-datatip.gif "Aggiunta di una proprietà in un suggerimento dati")
 
-È anche possibile attivare o disattivare i nomi delle proprietà e filtrare le proprietà non bloccate quando si visualizza l'elenco delle proprietà dell'oggetto in un suggerimento dati.  È possibile accedere a entrambe le opzioni facendo  clic con il  pulsante destro del mouse su una riga contenente una proprietà e selezionando le opzioni Mostra solo membri aggiunti o Nascondi i nomi dei membri aggiunti nei valori nel menu di scelta rapida.
+È anche possibile attivare o disattivare i nomi delle proprietà e filtrare le proprietà non bloccate quando si visualizza l'elenco delle proprietà dell'oggetto in un suggerimento dati.  È possibile accedere a entrambe le opzioni facendo  clic con il  pulsante destro del mouse su una riga contenente una proprietà e selezionando le opzioni Mostra solo membri aggiunti o Nascondi nomi di membri bloccati nei valori nel menu di scelta rapida.
 
 ::: moniker-end
 
@@ -118,7 +119,7 @@ Per visualizzare l'elemento usando il visualizzatore predefinito per il tipo di 
 
 ## <a name="add-a-variable-to-a-watch-window"></a>Aggiungere una variabile a un finestra Espressioni di controllo
 
-Se si vuole continuare a controllare una variabile, è possibile aggiungerla a una finestra **Espressioni di** controllo da un suggerimento dati. Fare clic con il pulsante destro del mouse sulla variabile nel suggerimento dati e **scegliere Aggiungi espressioni di controllo.**
+Se si vuole continuare a controllare una variabile, è possibile aggiungerla a una finestra **Espressioni** di controllo da un suggerimento dati. Fare clic con il pulsante destro del mouse sulla variabile nel suggerimento dati e **scegliere Aggiungi espressioni di controllo.**
 
 La variabile viene visualizzata nella **finestra Espressioni di** controllo. Se l Visual Studio edition supporta più di una finestra **Espressioni di** controllo, la variabile viene visualizzata in Espressioni di **controllo 1.**
 
@@ -136,7 +137,7 @@ La variabile viene visualizzata nella **finestra Espressioni di** controllo. Se 
 
 1. Selezionare **Debug**  >  **Importa suggerimenti dati**.
 
-1. Nella finestra **di dialogo Importa** suggerimenti dati selezionare il file XML dei suggerimenti dati da aprire e quindi selezionare **Apri.**
+1. Nella finestra **di dialogo Importa suggerimenti** dati selezionare il file XML dei suggerimenti dati che si vuole aprire e quindi selezionare **Apri.**
 
 ## <a name="see-also"></a>Vedi anche
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)

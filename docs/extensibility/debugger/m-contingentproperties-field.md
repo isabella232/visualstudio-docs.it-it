@@ -9,14 +9,15 @@ ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ed8da2df71a71ce75b7a59d7aa287e24bda98bd
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: af6773dab502c1e75a274915154008cf9f947bcf1d0192d5fb4ad438d59333c7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901396"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361041"
 ---
 # <a name="m_contingentproperties-field"></a>m_contingentProperties campo
 Archivia proprietà aggiuntive <xref:System.Threading.Tasks.Task> dell'oggetto .
@@ -35,5 +36,5 @@ Archivia proprietà aggiuntive <xref:System.Threading.Tasks.Task> dell'oggetto .
 
 ## <a name="remarks"></a>Osservazioni
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)

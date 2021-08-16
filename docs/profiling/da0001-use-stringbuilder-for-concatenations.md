@@ -1,6 +1,6 @@
 ---
-title: DA0001-utilizzare StringBuilder per le concatenazioni | Microsoft Docs
-description: Le chiamate a System.String.Concat sono una percentuale significativa dei dati di profilatura. Prendere in considerazione l'uso della classe System. Text. StringBuilder per costruire stringhe da più segmenti.
+title: DA0001- Usare StringBuilder per le concatenazioni | Microsoft Docs
+description: Le chiamate a System.String.Concat sono una percentuale significativa dei dati di profilatura. Provare a usare la classe System.Text.StringBuilder per costruire stringhe da più segmenti.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,15 +12,16 @@ ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec65fc4131b4ad4d33fa25c616ecacc6a2fc79
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: a2c142579e8006064767a4a95a3c8abc93b8860fddfc583d262a5d6547459a99
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102470027"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368825"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizzare StringBuilder per le concatenazioni
 

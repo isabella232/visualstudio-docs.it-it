@@ -1,6 +1,6 @@
 ---
 title: Proprietà elencata due volte
-description: Impossibile creare una proprietà di associazione elencata due volte. Visualizza le informazioni su questo messaggio di Object Relational Designer di Visual Studio (O/R Designer).
+description: "Impossibile creare un'associazione: proprietà elencata due volte. Visualizzare informazioni su questo Visual Studio Object Relational Designer (O/R Designer)."
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -11,16 +11,16 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4466515f390db2ac3c03d302fd6ffb8da3a6176f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 391d24219063d2c1973361260a36b14d7a30a09e6d00a73476867d15c777130a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867347"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380728"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Impossibile creare un'associazione &lt;nome associazione&gt;. La stessa proprietà è elencata più volte
 
-Impossibile creare un'associazione \<association name> . La stessa proprietà è elencata più volte: \<property name> .
+Impossibile creare un'associazione \<association name> . La stessa proprietà è elencata più di una volta: \<property name> .
 
 Le associazioni vengono definite dalle **Proprietà associazione** selezionate nella finestra di dialogo **Editor di associazione**. Le proprietà possono essere elencate una sola volta per ogni classe nell'associazione.
 
@@ -38,5 +38,5 @@ La proprietà specificata nel messaggio viene visualizzata più volte nelle **Pr
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procedura: creare un'associazione tra classi di LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [LINQ to SQL strumenti in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Procedura: Creare un'associazione tra LINQ to SQL classi (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

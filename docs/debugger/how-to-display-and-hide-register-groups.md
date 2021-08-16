@@ -1,6 +1,6 @@
 ---
 title: Visualizzare e nascondere i gruppi di registri | Microsoft Docs
-description: La finestra registri, disponibile se il debug a livello di indirizzo è abilitato, organizza i registri nei gruppi. Informazioni su come impostare i gruppi da visualizzare.
+description: La finestra Registri, disponibile se è abilitato il debug a livello di indirizzo, organizza i registri in gruppi. Informazioni su come impostare i gruppi visualizzati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,16 +19,17 @@ ms.assetid: 6be5dfb4-4cfe-4daf-b538-60405640857d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dee270bc4c4f9417bdf412974a12d687635e312f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab7b5904093450f561d8853b9f03099fc2704aef80220ac757c81f3f213df87c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899271"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121362081"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedura: visualizzare e nascondere gruppi di registri (C#, C++, Visual Basic, F #)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedura: Visualizzare e nascondere gruppi di registri (C#, C++, Visual Basic, F#)
 
 La finestra **Registri** è disponibile solo se il debug a livello di indirizzo è stato attivato nel nodo **Debug** della categoria **Generale** nella finestra di dialogo **Opzioni**.
 

@@ -1,6 +1,6 @@
 ---
-description: Restituisce il contesto di codice che rappresenta una posizione se si è verificata un'operazione di rimozione dello stack.
-title: 'IDebugStackFrame3:: GetUnwindCodeContext | Microsoft Docs'
+description: Restituisce il contesto del codice che rappresenta una posizione se si è verificata un'operazione di rimozione dello stack.
+title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d8e6feb81533a17305181c4cdaed9dea214e010b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8a3b88da3473ca6557f2aae36b87f13f2b3fc0be3dc7bfcea6d9ce2645959535
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053269"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389501"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-Restituisce il contesto di codice che rappresenta una posizione se si è verificata un'operazione di rimozione dello stack.
+Restituisce il contesto del codice che rappresenta una posizione se si è verificata un'operazione di rimozione dello stack.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int GetUnwindCodeContext(
 
 ## <a name="parameters"></a>Parametri
 `ppCodeContext`\
-out Restituisce un oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta la posizione del contesto del codice se si è verificata una rimozione dello stack.
+[out] Restituisce un [oggetto IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta la posizione del contesto del codice se si è verificata una rimozione dello stack.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Anche se questo metodo può restituire un contesto di codice per la posizione dopo lo svuotamento dello stack, non significa necessariamente che la rimozione dello stack possa essere effettivamente eseguita nell'stack frame corrente.
+ Anche se questo metodo può restituire un contesto di codice per la posizione dopo la rimozione di uno stack, non significa necessariamente che la rimozione dello stack possa effettivamente verificarsi nella posizione stack frame.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

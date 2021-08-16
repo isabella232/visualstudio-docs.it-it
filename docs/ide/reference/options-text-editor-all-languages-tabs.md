@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, Tutti i linguaggi, Schede
-description: Informazioni su come usare la pagina schede nella sezione tutti i linguaggi per modificare il comportamento predefinito delle schede dell'editor del codice in Visual Studio.
+description: Informazioni su come usare la pagina Tabulazioni nella sezione Tutti i linguaggi per modificare il comportamento predefinito delle schede dell'editor di codice all'interno Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -41,14 +41,15 @@ ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c429b8e6dbf6931ebf68717b6d43fcf746cf13ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3d984fe1c20ae5eb036a60e6e2b2e6db23890a72a633d33946463f0bcd61034
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905562"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372335"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opzioni, Editor di testo, Tutti i linguaggi, Schede
 
@@ -61,7 +62,7 @@ Se vengono selezionate diverse impostazioni nelle pagine di opzioni delle schede
 
 ## <a name="indenting"></a>Stili rientri
 
-nessuno
+Nessuno
 
 Se l'opzione è selezionata, le nuove righe non vengono rientrate. Il punto di inserimento si trova nella prima colonna di una nuova riga.
 
@@ -91,9 +92,9 @@ Se l'opzione è selezionata, tramite le operazioni di rientro vengono inseriti s
 
 Mantieni tabulazioni
 
-Se l'opzione è selezionata, tramite le operazioni di rientro vengono inseriti tutti i caratteri di tabulazione possibili. Ogni carattere di TABULAzione riempie il numero di spazi specificato in **Dimensione tabulazione**. Se **Dimensione rientro** non è un multiplo pari di **Dimensione tabulazione**, vengono aggiunti caratteri di spazio per colmare la differenza.
+Se l'opzione è selezionata, tramite le operazioni di rientro vengono inseriti tutti i caratteri di tabulazione possibili. Ogni carattere TAB riempie il numero di spazi specificato in **Dimensioni tabulazione**. Se **Dimensione rientro** non è un multiplo pari di **Dimensione tabulazione**, vengono aggiunti caratteri di spazio per colmare la differenza.
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Opzioni, Editor di testo, Tutti i linguaggi](../../ide/reference/options-text-editor-all-languages.md)
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

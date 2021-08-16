@@ -11,14 +11,15 @@ ms.assetid: 5166e647-fde5-4efe-92bf-77f8ae3fbc9b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a39af21ebb8a409656bd8b8ae0b4323da33c60
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b3e3cd29c1cb00cfa2c01f1061487ed6a75852e4c771656efa2cf3ae94d150f7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155614"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391648"
 ---
 # <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
 Recupera una matrice di valori di identificatore di tipo specifici del compilatore per questo simbolo.
@@ -36,21 +37,21 @@ HRESULT get_typeIds (
 #### <a name="parameters"></a>Parametri
  `cTypeIds`
 
-in Dimensione del buffer in cui memorizzare i dati.
+[in] Dimensioni del buffer per contenere i dati.
 
  `pcTypeIds`
 
-out Restituisce il numero di `typeIds` scritti, o, se `typeIds` è `NULL` , il numero totale di identificatori di tipo disponibili.
+[out] Restituisce il numero di identificatori di tipo scritti `typeIds` oppure, `typeIds` se è , il numero totale di identificatori di tipo `NULL` disponibili.
 
  `typeIds[]`
 
-out Matrice da compilare con gli identificatori di tipo.
+[out] Matrice che deve essere compilata con gli identificatori di tipo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

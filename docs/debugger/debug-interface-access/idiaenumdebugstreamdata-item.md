@@ -1,6 +1,6 @@
 ---
 description: Recupera il record specificato.
-title: 'IDiaEnumDebugStreamData:: Item | Microsoft Docs'
+title: IDiaEnumDebugStreamData::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,14 +11,15 @@ ms.assetid: 761e61a5-44a6-4d5d-a98e-c2e9b89d2343
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c03beccb60d4ef5848dbc973f3a67c2b0fade9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b3bf851a1221aa2553827e015df81ea5d3b789c6fb935401a6a7e79c3a9e0f5d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159460"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420864"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Recupera il record specificato.
@@ -35,24 +36,24 @@ HRESULT Item (
 ```
 
 #### <a name="parameters"></a>Parametri
- indice
+ index
 
-in Indice del record da recuperare. L'indice è compreso nell'intervallo da 0 a `count` -1, dove `count` viene restituito da [IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
+[in] Indice del record da recuperare. L'indice è compreso nell'intervallo da 0 a `count` -1, dove viene restituito da `count` [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
 
  cbData
 
-in Dimensioni in byte del buffer di dati.
+[in] Dimensioni del buffer di dati, in byte.
 
  pcbData
 
-out Restituisce il numero di byte restituiti. Se `data` è `NULL` , `pcbData` contiene il numero totale di byte di dati disponibili nel record specificato.
+[out] Restituisce il numero di byte restituiti. Se `data` è , contiene il numero totale di byte di dati disponibili nel record `NULL` `pcbData` specificato.
 
  data[]
 
-out Buffer compilato con i dati del record del flusso di debug.
+[out] Buffer compilato con i dati del record del flusso di debug.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_INVALIDARG` per i parametri non validi e se il `index` parametro è fuori limite.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_INVALIDARG` per i parametri non validi e se il parametro non è in `index` limiti.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

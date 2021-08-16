@@ -1,6 +1,6 @@
 ---
 title: Panoramica del multitargeting di MSBuild | Microsoft Docs
-description: Informazioni su come usare MSBuild per compilare un'applicazione da eseguire in una qualsiasi delle diverse versioni del .NET Framework e in una qualsiasi delle diverse piattaforme di sistema.
+description: Informazioni su come usare MSBuild per compilare un'applicazione da eseguire in una delle diverse versioni del .NET Framework e in una qualsiasi delle diverse piattaforme di sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d448adb2ba898eabdbac304c0087176e6ed7119
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a80329cf3c6a5f86336dedfaef87c94ac8293a5c1be50319f8e0876c4f665324
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918999"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397566"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Panoramica del multitargeting di MSBuild
 
@@ -38,11 +39,11 @@ Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualun
 
 ## <a name="target-framework-and-platform"></a>Framework e piattaforma di destinazione
 
- Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  Ad esempio, è possibile scegliere come destinazione un'applicazione .NET Framework 2,0 per l'esecuzione su una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per altre informazioni, vedere [Framework e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  Ad esempio, è possibile scegliere come destinazione un'applicazione .NET Framework 2.0 per l'esecuzione in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per altre informazioni, vedere [Framework e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Set di strumenti (ToolsVersion)
 
- Un set di strumenti comprende strumenti, attività e destinazioni usati per creare l'applicazione. Un set di strumenti include compilatori come *csc.exe* e *vbc.exe*, il file di destinazioni comuni (*Microsoft. Common. targets*) e il file delle attività comuni (*Microsoft. Common. Tasks*). Il Set di strumenti 4.5 può essere usato per definire le destinazioni di .NET Framework versioni 2.0, 3.0, 3.5, 4 e 4.5. Tuttavia, il Set di strumenti 2.0 consente soltanto di scegliere come destinazione .NET Framework versione 2.0. Per altre informazioni, vedere [Set di strumenti MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Un set di strumenti comprende strumenti, attività e destinazioni usati per creare l'applicazione. Un set di strumenti include compilatori come *csc.exe* *evbc.exe*, il file di destinazioni comuni (*microsoft.common.targets*) e il file delle attività comuni (*microsoft.common.tasks*). Il Set di strumenti 4.5 può essere usato per definire le destinazioni di .NET Framework versioni 2.0, 3.0, 3.5, 4 e 4.5. Tuttavia, il Set di strumenti 2.0 consente soltanto di scegliere come destinazione .NET Framework versione 2.0. Per altre informazioni, vedere [Set di strumenti MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assembly di riferimento
 

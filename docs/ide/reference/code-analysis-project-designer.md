@@ -1,6 +1,6 @@
 ---
 title: Analisi del codice, Progettazione progetti
-description: Informazioni sull'analisi del codice, Progettazione progetti e su come contiene lo strumento di analisi del codice che è possibile scegliere di eseguire sul codice.
+description: Informazioni sul Code Analysis, Project Designer e su come contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 475e220a4c2dfc739c3055eb541ef89a6966cabb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa7305a34426faae6aa7f65c6860ab1e2cda57b196ace5ad1d287d6bfcfe382b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963276"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430837"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
 
@@ -66,6 +67,6 @@ Abilita o disabilita le regole di utilizzo. È anche possibile espandere questa 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Analisi del codice per gli avvisi del codice gestito](/dotnet/fundamentals/code-analysis/quality-rules/index)
+- [Code Analysis avvisi di codice gestito](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [Panoramica dell'analisi codice gestito](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [Procedura dettagliata: analisi del codice gestito per l'identificazione di errori del codice](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

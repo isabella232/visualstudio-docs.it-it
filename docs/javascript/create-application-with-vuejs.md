@@ -8,17 +8,18 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
 monikerRange: <= vs-2019
-ms.openlocfilehash: 24ee3dbc8a3a91eaa7176bb0e9971940203ff694
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: e9f67334dfc6f0fb586638a8f9a93148fed4bb33b134066c92a6606f9e506e3c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094199"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121371152"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Creare un'applicazione Vue.js tramite Node.js Tools for Visual Studio
 
@@ -44,7 +45,7 @@ Lo sviluppo di applicazioni Vue.js in Visual Studio è supportato dalle nuove fu
     Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
     ::: moniker-end
 
-    Se è necessario installare il carico di lavoro ma Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se è necessario installare il carico di lavoro ma è già Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
 
 * Per creare il progetto ASP.NET Core, è necessario che siano installati i carichi di lavoro Sviluppo ASP.NET e Web e il carico di lavoro di sviluppo multipiattaforma di .NET Core.
 
@@ -122,7 +123,7 @@ Per installare il modulo vue-cli npm, aprire un prompt dei comandi e digitare `n
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Indicare il progetto per la compilazione dell'app client ogni volta che viene attivata una compilazione
 
-1. In Visual Studio, passare **a** Proprietà Project  >  **eventi**  >  **di compilazione**.
+1. In Visual Studio passare a **Proprietà** Project  >    >  **eventi di compilazione.**
 
 1. In **Riga di comando eventi pre-compilazione** digitare `npm --prefix ./client-app run build`.
 

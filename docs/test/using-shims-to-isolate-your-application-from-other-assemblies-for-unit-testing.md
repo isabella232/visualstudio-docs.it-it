@@ -1,36 +1,37 @@
 ---
-title: Isolare l'app con s shims (unit test)
+title: Isolare l'app con sms (unit test)
 description: Informazioni su come usare i tipi shim per deviare le chiamate a metodi specifici al codice scritto come parte del test. Uno shim può restituire risultati coerenti a ogni chiamata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 72a976ccd487abdfa2c6501c0dcafee07dc5f4ae
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: fb91f2e037b13e73a6be0193e54f54d711dadddc1897946ca72e92609399f9b7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042860"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394966"
 ---
-# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli s shim per isolare l'app per gli unit test
+# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli sms per isolare l'app per gli unit test
 
-**I tipi shim** sono una delle due tecnologie che Microsoft Fakes Framework per consentire di isolare i componenti testati dall'ambiente. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. In questo modo è più semplice scrivere i test.
+**I tipi Shim** sono una delle due tecnologie che Microsoft Fakes Framework usa per isolare i componenti sotto test dall'ambiente. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. In questo modo è più semplice scrivere i test.
 
-Usare *gli s shim* per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare i componenti della soluzione l'uno dall'altro, usare *gli stub*.
+Usare *gli sms* per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare i componenti della soluzione l'uno dall'altro, usare *stub*.
 
-Per una panoramica e indicazioni introduttive, vedere [Isolare il codice sotto test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
+Per una panoramica e indicazioni di "avvio rapido", vedere [Isolare](../test/isolating-code-under-test-with-microsoft-fakes.md)il codice sotto test con Microsoft Fakes .
 
 **Requisiti**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
 ::: moniker range=">=vs-2019"
-- .NET Core, .NET 5.0 e il supporto di progetti in stile SDK sono stati visualizzati in anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti di tipo .NET Core e SDK.](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+- .NET Core, .NET 5.0 e il progetto di tipo SDK supportano l'anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti di tipo .NET Core e SDK.](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Esempio: il bug dell'anno 2000
@@ -66,22 +67,22 @@ using (ShimsContext.Create()) {
 
 ## <a name="how-to-use-shims"></a>Come utilizzare gli shim
 
-Aggiungere prima di tutto un assembly Fakes:
+Aggiungere prima di tutto un Fakes assembly:
 
 1. In **Esplora soluzioni**, 
-    - Per un progetto .NET Framework precedente (stile non SDK), espandere il unit test riferimenti **del** progetto.
+    - Per un modello .NET Framework Project precedente (stile non SDK), espandere il unit test riferimenti **del** progetto.
     ::: moniker range=">=vs-2019"
-    - Per un progetto di tipo SDK che ha come destinazione .NET Framework, .NET Core o .NET 5.0, espandere il nodo **Dipendenze** per trovare l'assembly da fingere in **Assembly**, **Progetti** o **Pacchetti**.
+    - Per un progetto di tipo SDK che ha come destinazione .NET Framework, .NET Core  o .NET 5.0, espandere il nodo Dipendenze per trovare l'assembly da fingere in **Assembly**, **Progetti** o **Pacchetti**.
     ::: moniker-end
-    - Se si sta lavorando in Visual Basic, selezionare **Mostra** tutti i file nella barra **degli strumenti** Esplora soluzioni per visualizzare il **nodo** Riferimenti.
+    - Se si lavora in Visual Basic, selezionare **Mostra** tutti i file nella barra degli **strumenti** Esplora soluzioni per visualizzare il **nodo** Riferimenti.
 
-2. Selezionare l'assembly che contiene le definizioni di classe per cui si desidera creare s shims. Ad esempio, se si vuole eseguire lo shim **di DateTime**, **selezionareSystem.dll**.
+2. Selezionare l'assembly che contiene le definizioni di classe per cui si desidera creare sms. Ad esempio, se si vuole eseguire lo shim **DateTime,** **selezionareSystem.dll**.
 
 3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
 ### <a name="use-shimscontext"></a>Utilizzare ShimsContext
 
-Quando si usano tipi shim in un framework unit test, eseguire il wrapping del codice di test in un oggetto per controllare `ShimsContext` la durata degli shim. In caso contrario, gli s shim durano fino all'arresto di AppDomain. Il modo più semplice per creare un oggetto `ShimsContext` consiste nell'usare il metodo statico `Create()` come mostrato nel codice seguente:
+Quando si usano tipi shim in un framework unit test, eseguire il wrapping del codice di test in un oggetto per controllare `ShimsContext` la durata degli shim. In caso contrario, gli s shims durerebbero fino all'arresto di AppDomain. Il modo più semplice per creare un oggetto `ShimsContext` consiste nell'usare il metodo statico `Create()` come mostrato nel codice seguente:
 
 ```csharp
 //unit test code
@@ -97,7 +98,7 @@ public void Y2kCheckerTest() {
 
 ### <a name="write-a-test-with-shims"></a>Scrivere un test con shim
 
-Nel codice di test inserire una *deviazione* per il metodo da simulare. Ad esempio:
+Nel codice di test inserire una *deviazione* per il metodo da simulare. Esempio:
 
 ```csharp
 [TestClass]
@@ -467,7 +468,7 @@ I tipi shim si applicano a tutti i thread in AppDomain e non presentano affinit�
 
 ## <a name="call-the-original-method-from-the-shim-method"></a>Chiamare il metodo originale dal metodo shim
 
-Si supponga di voler scrivere il testo nell'file system dopo la convalida del nome file passato al metodo . In tal caso, si chiamerà il metodo originale al centro del metodo shim.
+Imagine scrivere il testo nell'file system dopo la convalida del nome file passato al metodo . In tal caso, si chiamerà il metodo originale al centro del metodo shim.
 
 Il primo approccio per risolvere questo problema consiste nell'eseguire il wrapping di una chiamata al metodo originale usando un delegato e `ShimsContext.ExecuteWithoutShims()` , come nel codice seguente:
 
@@ -508,7 +509,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-Per shim <xref:System.Environment?displayProperty=fullName> aggiungere il contenuto seguente al file mscorlib.fakes dopo l'elemento **Assembly:**
+Per shim <xref:System.Environment?displayProperty=fullName> , aggiungere il contenuto seguente al file mscorlib.fakes dopo l'elemento **Assembly:**
 
 ```xml
 <ShimGeneration>
@@ -524,7 +525,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Limitazioni
 
-Gli s shims non possono essere usati in tutti i tipi della libreria di classi di base .NET **mscorlib** e **System** in .NET Framework e in **System.Runtime** in .NET Core o .NET 5.0.
+Gli s shims non possono essere usati in tutti i tipi della libreria di classi di base **.NET mscorlib** e **System** in .NET Framework e in **System.Runtime** in .NET Core o .NET 5.0.
 
 ## <a name="see-also"></a>Vedi anche
 

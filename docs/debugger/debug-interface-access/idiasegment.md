@@ -1,5 +1,5 @@
 ---
-description: Esegue il mapping dei dati dal numero di sezione ai segmenti dello spazio degli indirizzi.
+description: Mappe dati dal numero di sezione ai segmenti dello spazio indirizzi.
 title: IDiaSegment | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 384ae0e1-077e-4d4f-98de-ac43c32c882f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4823983519eef461e388952d5037f529f9fcdf2f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: eaa77f3779fa6bcf8708d53437e0194ec6c14a026abe57b11ca98a75e2f3d6b8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147877"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391944"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-Esegue il mapping dei dati dal numero di sezione ai segmenti dello spazio degli indirizzi.
+Mappe dati dal numero di sezione ai segmenti dello spazio indirizzi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,28 +31,28 @@ IDiaSegment : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaSegment` .
+Nella tabella seguente vengono illustrati i metodi di `IDiaSegment` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Recupera il numero di segmento.|
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera l'offset nei segmenti in cui inizia la sezione.|
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera l'offset in segmenti in cui inizia la sezione.|
 |[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Recupera il numero di byte nel segmento.|
 |[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Recupera un flag che indica se il segmento può essere letto.|
 |[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Recupera un flag che indica se il segmento può essere modificato.|
 |[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Recupera un flag che indica se il segmento è eseguibile.|
 |[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Recupera il numero di sezione mappato a questo segmento.|
-|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Recupera l'indirizzo RVA (relativo Virtual Address) dell'inizio della sezione.|
-|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Recupera l'indirizzo virtuale (VA) dell'inizio della sezione.|
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Recupera l'indirizzo RVA (Relative Virtual Address) dell'inizio della sezione.|
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Recupera l'indirizzo virtuale dell'inizio della sezione.|
 
 ## <a name="remarks"></a>Commenti
-Poiché il DIA SDK esegue già le traduzioni dalla sezione offset in indirizzi virtuali relativi, la maggior parte delle applicazioni non utilizzerà le informazioni nella mappa di segmenti.
+Poiché il DIA SDK esegue già le traduzioni dall'offset di sezione agli indirizzi virtuali relativi, la maggior parte delle applicazioni non userà le informazioni nella mappa dei segmenti.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia chiamando il metodo [IDiaEnumSegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) o [IDiaEnumSegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) . Per informazioni dettagliate, vedere l'esempio.
+Ottenere questa interfaccia chiamando i [metodi IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) o [IDiaEnumSegments::Next.](../../debugger/debug-interface-access/idiaenumsegments-next.md) Per informazioni dettagliate, vedere l'esempio.
 
 ## <a name="example"></a>Esempio
-Questa funzione consente di visualizzare l'indirizzo di tutti i segmenti di una tabella e il simbolo più vicino.
+Questa funzione visualizza l'indirizzo di tutti i segmenti in una tabella e il simbolo più vicino.
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -95,9 +96,9 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2. h
+Intestazione: Dia2.h
 
-Libreria: diaguids. lib
+Libreria: diaguids.lib
 
 DLL: msdia80.dll
 

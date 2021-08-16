@@ -1,6 +1,6 @@
 ---
-title: Test controller/requisiti dell'agente di test (test di carico)
-description: Informazioni sui requisiti di test controller e dell'agente di test per i test di carico. Visual Studio supporta diversi tipi di test.
+title: Requisiti del controller di test/agente di test (test di carico)
+description: Informazioni sui requisiti test controller e dell'agente di test per i test di carico. Visual Studio supporta diversi tipi di test.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -11,12 +11,13 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: a123a147d038a41f799c2fdf9d4fb26eaa4f3490
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: dfdc7e48c5d2b1c3064192340cf7729c4e9d728563296aeed03b0e9569595450
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894491"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424814"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisiti del controller e dell'agente di test per il test di carico
 

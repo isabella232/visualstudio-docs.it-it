@@ -1,6 +1,6 @@
 ---
 title: Canali (visualizzazione Thread) | Microsoft Docs
-description: Leggere informazioni sulla visualizzazione thread quando si usano i canali nel Visualizzatore di concorrenza di Visual Studio. Visualizzare i canali di thread, i canali del disco, i canali del marcatore e i canali GPU.
+description: Informazioni sulla visualizzazione Thread quando si usano i canali nel Visual Studio di concorrenza. Visualizzare i canali di thread, i canali del disco, i canali marcatori e i canali GPU.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 135796b09689915d81132abb4f8f36888b64f393
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5459909e99da3ecd6627d14ae464b651b7c535a4226cbf89f6a9985288987ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960286"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396994"
 ---
 # <a name="channels-threads-view"></a>Canali (visualizzazione Thread)
 Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thread, canali di disco, canali di indicatore e canali GPU.
@@ -50,4 +51,4 @@ Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thr
  I canali GPU visualizzano informazioni sull'attività di DirectX 11 nel sistema.  Ogni motore DirectX associato alla scheda grafica ha un canale separato.  I singoli segmenti rappresentano il tempo trascorso per elaborare un pacchetto DMA.
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione thread](../profiling/threads-view-parallel-performance.md)
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

@@ -1,6 +1,6 @@
 ---
-title: Panoramica degli strumenti di progettazione dei modelli BDC | Microsoft Docs
-description: Leggi una panoramica degli strumenti di progettazione da usare con un modello di integrazione applicativa dei dati. Informazioni sulla finestra di progettazione dell'integrazione applicativa dei dati, la finestra Dettagli del metodo BDC e l'esplorazione BDC.
+title: Panoramica degli strumenti di progettazione del modello BDC | Microsoft Docs
+description: Leggere una panoramica degli strumenti di progettazione da usare con un modello BDC (Business Data Connectivity). Informazioni su BDC Designer, BDC Method Details e BDC Explorer.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -23,22 +23,23 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e09344c0a95586f63bf3eca45582b0836b576030b21199341367ca59fe738cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851686"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425715"
 ---
-# <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione dei modelli BDC
-  È possibile progettare un modello di integrazione applicativa dei dati tramite la finestra di progettazione dell'integrazione applicativa dei dati, la finestra **Dettagli metodo** di integrazione applicativa dei dati e l' **esplorazione BDC**.
+# <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione del modello BDC
+  È possibile progettare un modello BDC (Business Data Connectivity) utilizzando Progettazione BDC, la finestra Dettagli metodo **BDC** e **BDC Explorer.**
 
- **Esplora integrazione applicativa** dei dati consente di esplorare il modello, eseguire ricerche nel modello e definire descrittori di tipo.
+ BDC **Explorer consente** di esplorare il modello, eseguire ricerche nel modello e definire i descrittori di tipo.
 
 ## <a name="bdc-designer"></a>Progettazione integrazione applicativa dei dati
- La finestra di progettazione dell'integrazione applicativa dei dati consente di definire le entità nel modello e di organizzare visivamente le relazioni tra loro. Utilizzare la finestra di progettazione dell'integrazione applicativa dei dati per eseguire le attività seguenti:
+ BDC Designer consente di definire le entità nel modello e di disporre visivamente le relazioni tra loro. Utilizzare Progettazione integrazione applicativa dei dati per eseguire le attività seguenti:
 
 - Aggiungere entità al modello.
 
@@ -46,45 +47,45 @@ ms.locfileid: "99851686"
 
 - Definire le relazioni tra entità.
 
-  Per aprire la finestra di progettazione dell'integrazione applicativa dei dati, fare doppio clic sul file del modello nel progetto oppure aprire il menu di scelta rapida per il file del modello, quindi scegliere **Apri**. Aggiungere un'entità al modello trascinando o copiando un' **entità** dalla **casella degli strumenti** nella finestra di progettazione. Per creare un'associazione tra due entità, scegliere il controllo **associazione** nella **casella degli strumenti**, scegliere la prima entità, quindi scegliere la seconda entità.
+  Per aprire Progettazione integrazione applicativa dei dati, fare doppio clic sul file di modello nel progetto oppure aprire il menu di scelta rapida per il file di modello e quindi scegliere **Apri.** Aggiungere un'entità al modello trascinando o copiando **un'entità** dalla casella **degli** strumenti nella finestra di progettazione. Per creare un'associazione tra due  entità, scegliere il controllo Associazione nella casella degli **strumenti,** scegliere la prima entità e quindi scegliere la seconda entità.
 
-## <a name="bdc-method-details-window"></a>Finestra Dettagli metodo di integrazione applicativa dei dati
- Utilizzare la finestra **Dettagli metodo di integrazione applicativa dei dati** per definire i parametri, le istanze e i descrittori di filtro di un metodo.
+## <a name="bdc-method-details-window"></a>Finestra Dettagli metodo BDC
+ Usare la **finestra Dettagli metodo BDC** per definire i parametri, le istanze e i descrittori di filtro di un metodo.
 
- Nella finestra **Dettagli metodo di integrazione applicativa dei dati** è possibile generare rapidamente metodi Finder, Finder specifico, creatore, aggiornamento ed eliminatori. Quando si generano questi metodi, Visual Studio aggiunge al metodo i metadati, ad esempio parametri, istanze e descrittori di tipo. È possibile modificare questi metadati per soddisfare lo scenario specifico.
+ È possibile generare rapidamente i metodi Finder, Specific Finder, Creator, Updater e Deleter nella finestra **Dettagli metodo BDC.** Quando si generano questi metodi, Visual Studio metadati, ad esempio parametri, istanze e descrittori di tipo, al metodo. È possibile modificare questi metadati per soddisfare lo scenario specifico.
 
- Per aprire la finestra **Dettagli metodo di integrazione applicativa dei dati** , sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa** Windows.
+ Per aprire la **finestra Dettagli metodo BDC,** sulla barra dei menu scegliere Visualizza altri Windows   >    >  **dettagli metodo BDC**.
 
- Per visualizzare i metodi nella finestra **Dettagli metodo BDC** , scegliere l'entità nella finestra di progettazione dell'integrazione applicativa dei dati. I metodi dell'entità selezionata vengono visualizzati nella finestra **Dettagli metodo di integrazione applicativa dei dati** . Se non si sceglie un'entità nella finestra di progettazione dell'integrazione applicativa dei dati, nella finestra **Dettagli metodo BDC** non vengono visualizzate informazioni.
+ Per visualizzare i metodi nella **finestra Dettagli metodo BDC,** scegliere l'entità in Progettazione integrazione applicativa dei dati. I metodi dell'entità selezionata vengono visualizzati nella **finestra Dettagli metodo BDC.** Se non si sceglie un'entità in Progettazione integrazione applicativa dei dati, nella finestra Dettagli metodo **BDC** non viene visualizzata alcuna informazione.
 
- Espandere o comprimere i nodi nella finestra **Dettagli metodo di integrazione applicativa dei dati** per definire parametri, istanze e descrittori di filtro. Utilizzare **Esplora integrazione applicativa** dei dati per definire i descrittori di tipo.
+ Espandere o comprimere i nodi nella finestra Dettagli metodo **BDC** per definire parametri, istanze e descrittori di filtro. Utilizzare **BDC Explorer per** definire i descrittori di tipo.
 
 ## <a name="bdc-explorer"></a>Esplora integrazione applicativa dei dati
- In **Esplora integrazione applicativa** dei dati vengono visualizzati gli elementi che costituiscono il modello. Per aprire **Esplora integrazione applicativa** dei dati, sulla barra dei menu scegliere **Visualizza**  >  **altro**  >  **Esplora BDC** di Windows. Per esplorare il modello, espandere i nodi in **Esplora integrazione applicativa** dei dati. Ogni nodo rappresenta un elemento nel codice XML del file di modello.
+ In **BDC Explorer** vengono visualizzati gli elementi che costituiscono il modello. Per aprire **BDC Explorer,** sulla barra dei menu scegliere Visualizza altro Windows  >    >  **BDC Explorer**. Per esplorare il modello, espandere i nodi in **BDC Explorer**. Ogni nodo rappresenta un elemento nel codice XML del file di modello.
 
- Quando si scelgono i nodi in **Esplora integrazione applicativa** dei dati, le proprietà di ogni nodo scelto vengono visualizzate nella finestra **Proprietà** . Molte di queste proprietà corrispondono agli attributi nel file di modello. È possibile eseguire ricerche nel modello utilizzando la casella di ricerca nella parte superiore di **Esplora integrazione applicativa** dei dati.
-
-> [!NOTE]
-> In **Esplora integrazione applicativa** dei dati non vengono visualizzati identificatori, proprietà personalizzate, stringhe localizzate, gruppi di associazioni, azioni, descrittori di filtro, elenchi di controlli delle azioni e valori di parametro predefiniti.
-
-### <a name="define-type-descriptors"></a>Definisci descrittori di tipo
- Utilizzare **Esplora integrazione applicativa** dei dati per definire i descrittori di tipo. Esplora integrazione applicativa dei dati consente di definire un descrittore di tipo una sola volta e quindi di riutilizzare il descrittore di tipo in un'altra posizione A tale scopo, copiare un descrittore di tipo e incollarlo in qualsiasi altro parametro o descrittore di tipo.
+ Quando si scelgono i nodi in **BDC Explorer,** le proprietà di ogni nodo scelto vengono visualizzate nella **finestra** Proprietà. Molte di queste proprietà corrispondono agli attributi nel file di modello. È possibile eseguire ricerche nel modello usando la casella di ricerca nella parte superiore di **BDC Explorer.**
 
 > [!NOTE]
-> Le modifiche a un descrittore di tipo originale non influiscono sulle copie del descrittore di tipo.
+> In **BDC Explorer** non vengono visualizzati identificatori, proprietà personalizzate, stringhe localizzate, gruppi di associazioni, azioni, descrittori di filtro, elenchi di controllo delle azioni e valori dei parametri predefiniti.
 
- Per altre informazioni, vedere [procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+### <a name="define-type-descriptors"></a>Definire i descrittori di tipo
+ Utilizzare **BDC Explorer per** definire i descrittori di tipo. BDC Explorer consente di definire un descrittore di tipi una volta e quindi riutilizzarlo in un'altra posizione nel modello. A tale scopo, copiare un descrittore di tipo e incollarlo in qualsiasi altro parametro o descrittore di tipo.
+
+> [!NOTE]
+> Le modifiche apportate a un descrittore di tipo originale non influiscono sulle copie di tale descrittore.
+
+ Per altre informazioni, vedere [Procedura: Definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)
-- [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Procedura: aggiungere un metodo di aggiornamento](../sharepoint/how-to-add-an-updater-method.md)
+- [Procedura: Creare un modello BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)
+- [Procedura: Aggiungere un metodo updater](../sharepoint/how-to-add-an-updater-method.md)
 - [Creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md)
-- [Procedura dettagliata: creare un elenco esterno in SharePoint usando i dati aziendali](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
+- [Procedura dettagliata: Creare un elenco esterno in SharePoint usando i dati aziendali](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
 - [Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
-- [Creazione di un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Creazione di un modello di connettività dei dati aziendali](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Progettazione di un modello di connettività dei dati aziendali](../sharepoint/designing-a-business-data-connectivity-model.md)

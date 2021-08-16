@@ -1,6 +1,6 @@
 ---
 title: Elemento UsingTask (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento UsingTask di MSBuild, che esegue il mapping dell'attività a cui si fa riferimento in un elemento Task all'assembly che contiene l'implementazione dell'attività.
+description: Informazioni sull'MSBuild UsingTask, che esegue il mapping dell'attività a cui si fa riferimento in un elemento attività all'assembly che contiene l'implementazione dell'attività.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 3adc3d648e73fc1f3596cc7a5c2cb2148a8f611b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c001d31f983084d6a430c3c19dbe3f733843230e75d8214ddf3b5a1bdf41948
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960338"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369462"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -43,7 +44,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 ```
 
 > [!NOTE]
-> A differenza di proprietà ed elementi, verrà usato il *primo* `UsingTask` elemento che si applica a un oggetto `TaskName` . per eseguire l'override delle attività è necessario definire un nuovo `UsingTask` *prima* di quello esistente.
+> A differenza delle  proprietà e degli elementi, verrà usato il primo elemento che si applica a un oggetto . Per eseguire l'override delle attività è necessario definire un nuovo prima `UsingTask` di quello `TaskName` `UsingTask`  esistente.
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
 
@@ -53,10 +54,10 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Architecture`|Attributo facoltativo.<br /><br /> Specifica che l'attività deve essere eseguita in un processo del bit specificato. Se il processo corrente non soddisfa il requisito, l'attività verrà eseguita in un processo host delle attività che lo esegue.<br /><br /> I valori supportati sono `x86` (32 bit), `x64` (64-bit), `CurrentArchitecture` e `*` (qualsiasi architettura).|  
+|`Architecture`|Attributo facoltativo.<br /><br /> Specifica che l'attività deve essere eseguita in un processo con il numero di bit specificato. Se il processo corrente non soddisfa il requisito, l'attività verrà eseguita in un processo host attività che lo soddisfa.<br /><br /> I valori supportati `x86` sono (32 bit), `x64` (64 bit), `CurrentArchitecture` e `*` (qualsiasi architettura).|  
 |`AssemblyName`|Sono obbligatori sia l'attributo `AssemblyName` che l'attributo `AssemblyFile`.<br /><br /> Nome dell'assembly da caricare. L'attributo `AssemblyName` accetta assembly con nome sicuro, anche se non è obbligatorio un nome sicuro. L'uso di questo attributo equivale a caricare un assembly usando il metodo <xref:System.Reflection.Assembly.Load%2A> in .NET.<br /><br /> Non è possibile usare questo attributo se viene usato l'attributo `AssemblyFile`.|
 |`AssemblyFile`|È obbligatorio l'attributo `AssemblyName` o l'attributo `AssemblyFile`.<br /><br /> Percorso del file dell'assembly. Questo attributo accetta percorsi completi o percorsi relativi. I percorsi relativi sono relativi alla directory del file di progetto o file di destinazioni in cui viene dichiarato l'elemento `UsingTask`. L'uso di questo attributo equivale a caricare un assembly usando il metodo <xref:System.Reflection.Assembly.LoadFrom%2A> in .NET.<br /><br /> Non è possibile usare questo attributo se viene usato l'attributo `AssemblyName`.|
-|`Runtime`|Attributo facoltativo.<br /><br /> Specifica che l'attività deve essere eseguita in un .NET Framework Runtime della versione specificata. Se il processo corrente non soddisfa il requisito, l'attività verrà eseguita in un processo host delle attività che lo esegue. Non supportato in MSBuild di .NET Core.<br /><br /> I valori supportati sono `CLR2` (.NET Framework 3,5), `CLR4` (.NET Framework 4.7.2 o versione successiva), `CurrentRuntime` e `*` (qualsiasi Runtime).|  
+|`Runtime`|Attributo facoltativo.<br /><br /> Specifica che l'attività deve essere eseguita in .NET Framework runtime della versione specificata. Se il processo corrente non soddisfa il requisito, l'attività verrà eseguita in un processo host attività che lo soddisfa. Non supportato in .NET Core MSBuild.<br /><br /> I valori supportati `CLR2` sono (.NET Framework 3.5), `CLR4` (.NET Framework 4.7.2 o versione successiva), `CurrentRuntime` e `*` (qualsiasi runtime).|  
 |`TaskFactory`|Attributo facoltativo.<br /><br /> Specifica la classe nell'assembly responsabile della generazione di istanze del nome `Task` specificato.  L'utente può specificare anche un elemento figlio `Task` che la factory delle attività riceve e usa per generare l'attività. I contenuti dell'elemento `Task` sono specifici per la factory delle attività.|
 |`TaskName`|Attributo obbligatorio.<br /><br /> Il nome dell'attività a cui fare riferimento da un assembly. In caso di ambiguità, questo attributo deve specificare sempre gli spazi dei nomi completi. In caso di ambiguità, MSBuild sceglie una corrispondenza arbitraria, con potenziali risultati imprevisti.|
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
@@ -72,7 +73,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file MSBuild progetto. |
 
 ## <a name="remarks"></a>Commenti
 
@@ -83,7 +84,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 
  In MSBuild 4.0 è possibile caricare gli elementi UsingTask dai file con estensione *overridetask*.
 
-L'assembly contenente l'attività personalizzata viene caricato quando `Task` viene utilizzato per la prima volta.
+L'assembly contenente l'attività personalizzata viene caricato al `Task` primo utilizzo di .
 
 ## <a name="example-1"></a>Esempio 1
 
@@ -114,6 +115,6 @@ L'assembly contenente l'attività personalizzata viene caricato quando `Task` vi
 ## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Procedura: configurare destinazioni e attività](../msbuild/how-to-configure-targets-and-tasks.md)   
+- [Procedura: Configurare destinazioni e attività](../msbuild/how-to-configure-targets-and-tasks.md)   
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)

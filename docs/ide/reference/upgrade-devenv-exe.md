@@ -1,6 +1,6 @@
 ---
 title: -Upgrade (devenv.exe)
-description: Informazioni su come usare l'opzione Aggiorna della riga di comando devenv per aggiornare il file della soluzione e tutti i relativi file di progetto o il file di progetto specificato nei formati di Visual Studio correnti per questi file.
+description: Informazioni su come usare l'opzione della riga di comando Upgrade devenv per aggiornare il file di soluzione e tutti i relativi file di progetto o il file di progetto specificato ai formati Visual Studio correnti per questi file.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e7dc759cefae4ae262362265daf67ee5b1cb50f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3787cccb41738050fae1fe16e03e8a8ca273f5ebb30ac3b71e9d146c1b9e2001
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960559"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387148"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -37,11 +38,11 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
   Obbligatorio se si aggiornano un'intera soluzione e i relativi progetti. Il percorso e il nome di un file di soluzione. È possibile immettere solo il nome del file di soluzione oppure il percorso completo e il nome del file di soluzione. Se la cartella o il file denominato non esiste ancora, viene creato.
 
-- *ProjectFile*
+- *Projectfile*
 
   Obbligatorio se si esegue l'aggiornamento di un singolo progetto. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere solo il nome del file di progetto oppure il percorso completo e il nome del file di progetto. Se la cartella o il file denominato non esiste ancora, viene creato.
 
-- `/Out`*OutputFileName*
+- `/Out`*OutputFilename*
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 

@@ -1,6 +1,6 @@
 ---
 title: Attività FormatVersion | Microsoft Docs
-description: Informazioni sui vari modi in cui le attività FormatVersion di MSBuild aggiungono il numero di revisione al numero di versione.
+description: Informazioni sui vari modi in cui le MSBuild FormatVersion accoda il numero di revisione al numero di versione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,24 +13,25 @@ ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b6444811750a59de5488b8ca3614f9926d472746
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f10809800a46e501224e3dc5b975312b42a003d11fe1eeaf29d9db60300cee3d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905478"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427886"
 ---
 # <a name="formatversion-task"></a>Attività FormatVersion
 
 Aggiunge il numero di revisione al numero di versione.
 
-- Case #1: input: Version = \<undefined> ;  Revisione = \<don't care> ;   Output: OutputVersion = "1.0.0.0"
+- Case #1: Input: Version= \<undefined> ;  Revision= \<don't care> ;   Output: OutputVersion="1.0.0.0"
 
 - Caso n. 2: Input: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"
 
-- Case #3: input: Version = "1.0.0.0" Revision = \<don't care> ;  Output: OutputVersion = "1.0.0.0"
+- Case #3: Input: Version="1.0.0.0" Revision= \<don't care> ;  Output: OutputVersion="1.0.0.0"
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,7 +46,7 @@ Aggiunge il numero di revisione al numero di versione.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="see-also"></a>Vedi anche
 

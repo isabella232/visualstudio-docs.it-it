@@ -11,14 +11,15 @@ ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5223c466674ba0d7d623cc33a3989d359bbabea2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1e31fdbb3b0c1f1520b11f08d065c690fa7763372e31c0cedd8ffca729598ca2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223888"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121426404"
 ---
 # <a name="marker_serieswrite_flag-method"></a>Metodo marker_series::write_flag
 Scrive un flag nel file di traccia del visualizzatore di concorrenza.
@@ -61,4 +62,4 @@ void write_flag(
  **Spazio dei nomi:** Concurrency::diagnostic
 
 ## <a name="see-also"></a>Vedi anche
-- [classe marker_series](../profiling/marker-series-class.md)
+- [marker_series classe](../profiling/marker-series-class.md)

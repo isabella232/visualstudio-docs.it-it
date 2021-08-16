@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: aggiungere e rimuovere dipendenze di funzionalità | Microsoft Docs'
-description: Vedere come aggiungere e rimuovere dipendenze di funzionalità dalla soluzione SharePoint usando progettazione funzionalità in Visual Studio.
+title: 'Procedura: Aggiungere e rimuovere dipendenze di funzionalità | Microsoft Docs'
+description: Vedere come aggiungere e rimuovere dipendenze di funzionalità alla soluzione SharePoint usando Progettazione funzionalità in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,58 +15,59 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: ebec7f6b1f6d777ce7b3b914ac5c1d5629190fcc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0e2a1ad31543e9248502e822c3905e274887c463cba5fe4c63c0b4c4acbb5c1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923577"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425297"
 ---
-# <a name="how-to-add-and-remove-feature-dependencies"></a>Procedura: aggiungere e rimuovere dipendenze di funzionalità
-  La funzionalità di SharePoint potrebbe dipendere da altre funzionalità per le funzionalità o i dati. In questi casi, è possibile contrassegnare le altre funzionalità come dipendenze per la funzionalità. In questo modo, il server SharePoint garantisce che le funzionalità dipendenti siano attivate prima che la funzionalità venga attivata.
+# <a name="how-to-add-and-remove-feature-dependencies"></a>Procedura: Aggiungere e rimuovere dipendenze di funzionalità
+  La SharePoint può dipendere da altre funzionalità per funzionalità o dati. In questi casi, è possibile contrassegnare queste altre funzionalità come dipendenze per la funzionalità. In questo modo, il server SharePoint verifica che le funzionalità dipendenti siano attivate prima dell'attivazione della funzionalità.
 
 ## <a name="add-dependencies"></a>Aggiungere le dipendenze
- È possibile aggiungere altre funzionalità nella soluzione come dipendenze. In questo modo, è possibile assicurarsi che le funzionalità richieste siano installate e attivate prima di installare la funzionalità.
+ È possibile aggiungere altre funzionalità nella soluzione come dipendenze. In questo modo, è possibile assicurarsi che le funzionalità necessarie siano installate e attivate prima dell'installazione della funzionalità.
 
-#### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>Per aggiungere una dipendenza da una funzionalità della soluzione
+#### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>Per aggiungere una dipendenza da una funzionalità nella soluzione
 
-1. Aprire Progettazione funzionalità, espandere il nodo **dipendenze attivazione funzionalità** , quindi scegliere il pulsante **Aggiungi** .
+1. Aprire Progettazione funzionalità, espandere il **nodo Dipendenze attivazione funzionalità** e quindi scegliere il **pulsante** Aggiungi.
 
-2. Nella finestra di dialogo **Aggiungi dipendenze attivazione funzionalità** , scegliere il pulsante di opzione **Aggiungi dipendenza dalle funzionalità nel campo soluzione** , scegliere il titolo della funzionalità che si desidera aggiungere come dipendenza, quindi scegliere il pulsante **Aggiungi** .
+2. Nella finestra di dialogo Aggiungi dipendenze  attivazione funzionalità scegliere il pulsante di opzione Aggiungi una dipendenza dalle funzionalità nella soluzione, scegliere  il titolo della funzionalità che si vuole aggiungere come dipendenza e quindi scegliere il pulsante Aggiungi. 
 
-     È possibile aggiungere più di una funzionalità scegliendo più titoli mentre si sceglie il tasto **CTRL** .
+     È possibile aggiungere più funzionalità scegliendo più titoli durante la scelta del **tasto CTRL.**
 
-## <a name="addi-custom-dependencies"></a>Dipendenze personalizzate
- È possibile aggiungere funzionalità che sono già state distribuite in un server SharePoint come dipendenza. In questo modo, il processo di attivazione di SharePoint verifica che tutte le funzionalità dipendenti siano attivate prima di installare la funzionalità.
+## <a name="addi-custom-dependencies"></a>Dipendenze personalizzate addi
+ È possibile aggiungere funzionalità già distribuite in un server SharePoint come dipendenza. In questo modo, il SharePoint di attivazione verifica che tutte le funzionalità dipendenti siano attivate prima dell'installazione della funzionalità.
 
 #### <a name="to-add-a-dependency-by-the-feature-id"></a>Per aggiungere una dipendenza in base all'ID funzionalità
 
-1. Aprire Progettazione funzionalità, espandere il nodo **dipendenze attivazione funzionalità** , quindi scegliere il pulsante **Aggiungi** .
+1. Aprire Progettazione funzionalità, espandere il **nodo Dipendenze attivazione funzionalità** e quindi scegliere il **pulsante** Aggiungi.
 
-2. Nella finestra di dialogo **Aggiungi dipendenze attivazione funzionalità** scegliere il pulsante di opzione **Aggiungi dipendenza personalizzata** .
+2. Nella finestra **di dialogo Aggiungi dipendenze attivazione funzionalità** scegliere il pulsante di opzione Aggiungi **dipendenza** personalizzata.
 
-3. Nella casella di testo **ID funzionalità** immettere il GUID della funzionalità che si desidera contrassegnare come dipendenza di attivazione, quindi scegliere il pulsante **Aggiungi** .
+3. Nella casella **di testo ID** funzionalità immettere il GUID per la funzionalità che si desidera contrassegnare come dipendenza di attivazione e quindi scegliere il **pulsante** Aggiungi.
 
 ## <a name="edit-custom-dependencies"></a>Modificare le dipendenze personalizzate
- È possibile modificare le dipendenze personalizzate aggiunte in precedenza. Tuttavia, le funzionalità dipendenti presenti nella soluzione possono essere rimosse solo, non modificate.
+ È possibile modificare le dipendenze personalizzate aggiunte in precedenza. Tuttavia, le funzionalità dipendenti presenti nella soluzione possono essere rimosse solo e non modificate.
 
-#### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>Per modificare una dipendenza da una funzionalità della soluzione
+#### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>Per modificare una dipendenza da una funzionalità nella soluzione
 
-1. Aprire Progettazione funzionalità, quindi espandere il nodo **dipendenze di attivazione funzionalità** .
+1. Aprire Progettazione funzionalità e quindi espandere il **nodo Dipendenze attivazione** funzionalità.
 
-2. Scegliere il nome della funzionalità che si desidera modificare, quindi scegliere il pulsante **modifica** .
+2. Scegliere il nome della funzionalità da modificare e quindi scegliere **il pulsante** Modifica.
 
-3. Nella finestra di dialogo **modifica dipendenza personalizzata attivazione funzionalità** modificare il titolo, l'ID funzionalità o la descrizione, quindi scegliere il pulsante **Invia** .
+3. Nella finestra **di dialogo Modifica dipendenza attivazione** funzionalità personalizzata modificare il titolo, l'ID funzionalità o la descrizione, quindi scegliere il pulsante **Invia.**
 
-## <a name="remove-dependencies"></a>Rimuovi dipendenze
+## <a name="remove-dependencies"></a>Rimuovere le dipendenze
 
-#### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>Per rimuovere una dipendenza da una funzionalità della soluzione
+#### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>Per rimuovere una dipendenza da una funzionalità nella soluzione
 
-1. In progettazione funzionalità espandere il nodo **dipendenze attivazione funzionalità** , scegliere il nome della funzionalità che si desidera rimuovere, quindi scegliere il pulsante **Rimuovi** .
+1. In Progettazione funzionalità espandere il nodo Dipendenze attivazione **funzionalità,** scegliere il nome della funzionalità da rimuovere e quindi scegliere **il pulsante** Rimuovi.
 
 ## <a name="see-also"></a>Vedi anche
-- [Creazione di funzionalità di SharePoint](../sharepoint/creating-sharepoint-features.md)
-- [Procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
-- [Procedura: aggiungere e rimuovere elementi nelle funzionalità di SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
+- [Creare SharePoint funzionalità](../sharepoint/creating-sharepoint-features.md)
+- [Procedura: Personalizzare una SharePoint personalizzata](../sharepoint/how-to-customize-a-sharepoint-feature.md)
+- [Procedura: Aggiungere e rimuovere elementi per SharePoint funzionalità](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

@@ -1,27 +1,28 @@
 ---
 title: Set di regole consigliate gestite per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole consigliate gestite in Visual Studio. Vedere le descrizioni delle regole che si concentrano sulla sicurezza, l'affidabilità e altri problemi critici.
+description: Informazioni sul set di regole regole consigliate gestite in Visual Studio. Vedere le descrizioni delle regole incentrate su sicurezza, affidabilità e altri problemi critici.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: e691e6dc48b33ff00f6824436b80e5f49721db98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 317584726b849069eef384bbbc0147ef158856117b57d2919f4b0038352a0579
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867906"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392731"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Set di regole consigliate gestite per codice gestito
 
-Usare il set di regole consigliate gestite da Microsoft per concentrarsi sui problemi più critici del codice gestito, inclusi i potenziali problemi di sicurezza, gli arresti anomali dell'applicazione e altri errori di logica e progettazione importanti. Questo set di regole include tutte le regole nel set di regole di [regole minime gestite](managed-minimum-rules-rule-set-for-managed-code.md) .
+Usare il set di regole microsoft managed recommended rules per concentrarsi sui problemi più critici nel codice gestito, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri errori di logica e progettazione importanti. Questo set di regole include tutte le regole nel set [di regole Regole minime](managed-minimum-rules-rule-set-for-managed-code.md) gestite.
 
-Includere questo set di regole in tutti i set di regole personalizzati creati per i progetti.
+Includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -65,7 +66,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[CA2137](../code-quality/ca2137.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare I LinkDemand|
+|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare LinkDemands|
 |[CA2146](../code-quality/ca2146.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

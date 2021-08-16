@@ -1,6 +1,6 @@
 ---
-title: Distribuire una soluzione Office
-description: È possibile distribuire le soluzioni Office utilizzando ClickOnce o Windows Installer. Con ClickOnce è possibile ridurre il numero di passaggi necessari per la distribuzione della soluzione.
+title: Distribuire una soluzione Office distribuzione
+description: È possibile distribuire le soluzioni Office utilizzando ClickOnce o Windows Installer. Usando il ClickOnce, si riduce il numero di passaggi necessari per la distribuzione della soluzione.
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -23,28 +23,29 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 07e4734916f312f40def034a78dd007310e96d9e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4040e67c52d8c05ce5f8e2c9359848fd4fd73b94eb0f2ba91b48ced61e69e4a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888901"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424372"
 ---
-# <a name="deploy-an-office-solution"></a>Distribuire una soluzione Office
+# <a name="deploy-an-office-solution"></a>Distribuire una soluzione Office distribuzione
   È possibile distribuire le soluzioni Office utilizzando ClickOnce o Windows Installer. L'utilizzo di ClickOnce consente di ridurre il numero di passaggi necessari per la distribuzione e l'aggiornamento della soluzione. Se si utilizza Windows Installer, viene mantenuto il controllo sulla modalità di installazione della soluzione e sulle pagine del programma di installazione che vengono visualizzate quando gli utenti installano la soluzione.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="deploy-a-solution-by-using-clickonce"></a>Distribuire una soluzione tramite ClickOnce
- Quando si effettua la distribuzione tramite ClickOnce, la soluzione viene pubblicata in una posizione centrale da cui gli utenti possono installarla ed eseguirla. È possibile aggiornare la soluzione senza dover distribuire un nuovo programma di installazione agli utenti.  Questa opzione di distribuzione è più semplice, ma non consente di visualizzare agli utenti eventuali pagine di configurazione personalizzate. Inoltre, le soluzioni devono essere installate più volte su qualsiasi computer con più di un utente. Vedere [distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
+## <a name="deploy-a-solution-by-using-clickonce"></a>Distribuire una soluzione usando ClickOnce
+ Quando si effettua la distribuzione tramite ClickOnce, la soluzione viene pubblicata in una posizione centrale da cui gli utenti possono installarla ed eseguirla. È possibile aggiornare la soluzione senza dover distribuire un nuovo programma di installazione agli utenti.  Questa opzione di distribuzione è più semplice, ma non consente di visualizzare agli utenti eventuali pagine di configurazione personalizzate. Inoltre, le soluzioni devono essere installate più volte su qualsiasi computer con più di un utente. Vedere [Deploy an Office solution by using ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="deploy-a-solution-by-using-windows-installer"></a>Distribuire una soluzione usando Windows Installer
- Quando una soluzione viene distribuita tramite Windows Installer, viene distribuito un programma di installazione agli utenti, il quali lo utilizzano per installare la soluzione. Con questo programma di installazione è possibile installare una soluzione per tutti gli utenti di un computer contemporaneamente, anziché solo per l'utente corrente. Questo tipo di distribuzione consente anche di avere un maggiore controllo sulle opzioni che vengono visualizzate agli utenti quando installano la soluzione. Ad esempio, è possibile mostrare un contratto di licenza oppure consentire agli utenti di installare componenti specifici di una soluzione. Tuttavia, per aggiornare la soluzione, è necessario distribuire un nuovo programma di installazione. Vedere [distribuire una soluzione Office usando Windows Installer](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md).
+## <a name="deploy-a-solution-by-using-windows-installer"></a>Distribuire una soluzione usando il programma di Windows di installazione
+ Quando una soluzione viene distribuita tramite Windows Installer, viene distribuito un programma di installazione agli utenti, il quali lo utilizzano per installare la soluzione. Con questo programma di installazione è possibile installare una soluzione per tutti gli utenti di un computer contemporaneamente, anziché solo per l'utente corrente. Questo tipo di distribuzione consente anche di avere un maggiore controllo sulle opzioni che vengono visualizzate agli utenti quando installano la soluzione. Ad esempio, è possibile mostrare un contratto di licenza oppure consentire agli utenti di installare componenti specifici di una soluzione. Tuttavia, per aggiornare la soluzione, è necessario distribuire un nuovo programma di installazione. Vedere [Deploy an Office solution by using Windows Installer](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md).
 
 ## <a name="see-also"></a>Vedi anche
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
-- [Distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Distribuire una soluzione Office usando Windows Installer](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)
-- [Risolvere i problemi di distribuzione della soluzione Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Distribuire una Office di distribuzione usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [Distribuire una soluzione Office usando il programma di Windows di installazione](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)
+- [Risolvere i Office distribuzione della soluzione](../vsto/troubleshooting-office-solution-deployment.md)

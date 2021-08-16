@@ -1,6 +1,6 @@
 ---
 title: -ProjectConfig (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando ProjectConfig devenv per specificare una configurazione di compilazione del progetto da applicare durante la compilazione, la pulizia, la ricompilazione o la distribuzione del progetto.
+description: Informazioni su come usare l'opzione della riga di comando devenv ProjectConfig per specificare una configurazione di compilazione del progetto da applicare quando si compila, pulisce, ricompila o distribuisce il progetto.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -20,14 +20,15 @@ ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1f6f0de7e7b716853ec58aa27a34fe11010da4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f949bd6f126cd544c7266bf4e554d1da142ecf728c25b70ab6931ba5c95eb15e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969594"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372036"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
@@ -41,7 +42,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="arguments"></a>Argomenti
 
-- *NomeSoluzione*
+- *Solutionname*
 
   Obbligatorio. Il percorso completo e il nome del file della soluzione.
 
@@ -61,7 +62,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da applicare al `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`).
 
-- `/Out`*OutputFileName*
+- `/Out`*OutputFilename*
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 

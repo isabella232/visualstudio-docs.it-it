@@ -14,14 +14,15 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea05e894c0bfca077f1256c35e6fbe5c58bc91ea
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 8e861539470579cc10f2dc41859237393b89fdf943b30ec0033cf2f033f862e6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899888"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359247"
 ---
 # <a name="options-and-options-pages"></a>Opzioni e pagine di opzioni
 Se **si fa** clic su Opzioni **dal** menu Strumenti, viene visualizzata la **finestra di** dialogo Opzioni . Le opzioni in questa finestra di dialogo vengono definite collettivamente pagine di opzioni. Il controllo struttura ad albero nel riquadro di spostamento include categorie di opzioni e ogni categoria include pagine di opzioni. Quando si seleziona una pagina, le relative opzioni vengono visualizzate nel riquadro di destra. Queste pagine consentono di modificare i valori delle opzioni che determinano lo stato di un VSPackage.
@@ -49,7 +50,7 @@ Se **si fa** clic su Opzioni **dal** menu Strumenti, viene visualizzata la **fin
 :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet2":::
 :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet2":::
 
- Questo dichiara che MyPackage fornisce due pagine di opzioni, OptionsPageGeneral e OptionsPageCustom. Nella finestra di **dialogo** Opzioni entrambe le pagine  delle opzioni vengono visualizzate rispettivamente nella categoria **Pagine delle** opzioni personalizzate come Generale **e** Personalizzato.
+ Viene dichiarato che MyPackage fornisce due pagine di opzioni, OptionsPageGeneral e OptionsPageCustom. Nella finestra **di** dialogo Opzioni entrambe le pagine delle opzioni vengono visualizzate rispettivamente nella categoria **Pagine** delle opzioni personalizzate come **Generale** **e** Personalizzato.
 
 ## <a name="option-attributes-and-layout"></a>Attributi e layout delle opzioni
  L'interfaccia utente fornita dalla pagina determina l'aspetto delle opzioni in una pagina di opzioni personalizzata. Il layout, l'etichettatura e la descrizione delle opzioni in una pagina di opzioni generiche sono determinati dagli attributi seguenti:
@@ -68,7 +69,7 @@ Se **si fa** clic su Opzioni **dal** menu Strumenti, viene visualizzata la **fin
   :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs" id="Snippet3":::
   :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb" id="Snippet3":::
 
-  L'opzione OptionInteger viene visualizzata nella pagina delle opzioni **come Opzione integer** nella categoria **Opzioni.** Se l'opzione è selezionata, nella casella della descrizione viene visualizzata la **descrizione, l'opzione Numero intero.**
+  L'opzione OptionInteger viene visualizzata nella pagina delle opzioni **come Opzione Integer** nella categoria **Opzioni.** Se l'opzione è selezionata, nella casella della descrizione viene visualizzata **la descrizione, l'opzione Numero intero.**
 
 ## <a name="accessing-options-pages-from-another-vspackage"></a>Accesso alle pagine delle opzioni da un altro VSPackage
  È possibile accedere a un VSPackage che ospita e gestisce una pagina di opzioni a livello di codice da un altro VSPackage usando il modello di automazione. Nel codice seguente, ad esempio, un vspackage viene registrato come pagina di hosting di un'opzione.
@@ -86,4 +87,4 @@ Se **si fa** clic su Opzioni **dal** menu Strumenti, viene visualizzata la **fin
  Il percorso del Registro di sistema della proprietà di automazione è determinato dalla combinazione di , la parola AutomationProperties e la categoria e il nome <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> della pagina delle opzioni. Ad esempio, se la pagina delle opzioni ha la categoria Categoria, il nome della pagina Griglia e , HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la proprietà di automazione ha la chiave del Registro di <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> sistema, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My Grid Page.
 
 > [!NOTE]
-> Il nome canonico, My Category.My Grid Page, è il valore della sottochiave Name di questa chiave.
+> Il nome canonico My Category.My Grid Page è il valore della sottochiave Name di questa chiave.

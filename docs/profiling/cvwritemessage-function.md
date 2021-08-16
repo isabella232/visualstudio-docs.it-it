@@ -1,6 +1,6 @@
 ---
 title: Funzione CvWriteMessage | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvWriteMessage (libreria C).
+description: Vedere le informazioni di riferimento per la funzione CVWriteMessage (libreria C) dell'SDK del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -26,14 +26,15 @@ ms.assetid: e20ae7be-bfa7-437a-b8c1-fa0f1baa7f83
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e6b3724f3633ce03474ee9915b8d1a4b43a3d46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59a5343ca9221990ce7661b843dfb221c602c32126e9d81940213b640de2c6fa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948127"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396734"
 ---
 # <a name="cvwritemessage-function"></a>Funzione CvWriteMessage
 Scrive un messaggio nel file di traccia del visualizzatore di concorrenza.
@@ -116,4 +117,4 @@ HRESULT CvWriteMessageExVA(
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)
+- [Informazioni di riferimento sulla libreria C++](../profiling/cpp-library-reference.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: personalizzare una scheda incorporata'
-description: Informazioni su come aggiungere gruppi e controlli a una scheda incorporata. Una scheda incorporata è una scheda già presente sulla barra multifunzione di un'applicazione Microsoft Office.
+title: 'Procedura: Personalizzare una scheda incorporata'
+description: Informazioni su come aggiungere gruppi e controlli a una scheda incorporata. Una scheda incorporata è una scheda già presente nella barra multifunzione di un'Microsoft Office applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 94cf4d256cafa03ee4604138f7233ff9fd3cf6c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b51c89095bd4b99fdd815198d1b6ced3b599d8e29d35c5ad2892f21c8990c8ea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953994"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424110"
 ---
-# <a name="how-to-customize-a-built-in-tab"></a>Procedura: personalizzare una scheda incorporata
-  È possibile aggiungere gruppi e controlli a una scheda incorporata. Una scheda incorporata è una scheda già presente sulla barra multifunzione di un'applicazione Microsoft Office. Ad esempio, la scheda **dati** è una scheda incorporata in Excel. Quando si crea un gruppo personalizzato, esso viene visualizzato per ultimo nella scheda, ma è possibile spostarlo in un punto qualsiasi della scheda.
+# <a name="how-to-customize-a-built-in-tab"></a>Procedura: Personalizzare una scheda incorporata
+  È possibile aggiungere gruppi e controlli a una scheda incorporata. Una scheda incorporata è una scheda già presente nella barra multifunzione di un'Microsoft Office applicazione. Ad esempio, la **scheda** Dati è una scheda predefinita in Excel. Quando si crea un gruppo personalizzato, esso viene visualizzato per ultimo nella scheda, ma è possibile spostarlo in un punto qualsiasi della scheda.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -32,49 +33,49 @@ ms.locfileid: "99953994"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Per aggiungere gruppi in una scheda incorporata
 
-1. Fare clic con il pulsante destro del mouse sul file di codice della barra multifunzione in **Esplora soluzioni**, quindi scegliere **Progettazione visualizzazioni**.
+1. Fare clic con il pulsante destro del mouse sul file di codice della **barra multifunzione Esplora soluzioni** e quindi scegliere **Progettazione visualizzazioni**.
 
     > [!NOTE]
-    > Se il file di codice della barra multifunzione non viene visualizzato in **Esplora soluzioni**, è necessario aggiungere un **elemento della barra multifunzione** al progetto. Vedere [procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Se il file di codice della barra multifunzione non viene **visualizzato** Esplora soluzioni , è necessario aggiungere **un** elemento Barra multifunzione al progetto. Vedere [Procedura: Iniziare a personalizzare la barra multifunzione.](../vsto/how-to-get-started-customizing-the-ribbon.md)
 
-2. Fare clic con il pulsante destro del mouse su una scheda nella finestra di progettazione della barra multifunzione e quindi scegliere **Proprietà**
+2. Fare clic con il pulsante destro del mouse su una scheda qualsiasi nella finestra di progettazione della barra multifunzione e quindi scegliere **Proprietà**.
 
-3. Nella finestra **Proprietà** espandere la proprietà **ControlID** , quindi impostare la proprietà **ControlIdType** su **Office**.
+3. Nella finestra **Proprietà** espandere la **proprietà ControlId** e quindi impostare la **proprietà ControlIdType** **su Office**.
 
-4. Impostare la proprietà **OfficeId** sull' *ID del controllo* della scheda incorporata che si desidera personalizzare.
+4. Impostare la **proprietà OfficeId** sull'ID controllo della scheda predefinita che si vuole personalizzare. 
 
      L'ID di controllo è il nome che identifica in modo univoco le schede, i gruppi e i controlli incorporati nelle applicazioni Microsoft Office.
 
-     Per un elenco di ID di controllo, vedere [file della Guida di office 2010: identificatori di controllo dell'interfaccia utente di Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
+     Per un elenco degli ID di controllo, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=6627).
 
-5. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti** trascinare i gruppi nella scheda.
+5. Dalla scheda **Office Controlli barra** multifunzione della Casella degli **strumenti** trascinare i gruppi nella scheda .
 
     > [!NOTE]
-    > I gruppi incorporati non sono visualizzati nella finestra di progettazione. Pertanto, l'unico modo per determinare se si sta utilizzando una scheda incorporata consiste nell'esaminare la proprietà **ControlID** della scheda.
+    > I gruppi incorporati non sono visualizzati nella finestra di progettazione. Pertanto, l'unico modo per determinare se si sta lavorando con una scheda predefinita è esaminare la **proprietà ControlId** della scheda.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>Per posizionare gruppi in una scheda incorporata
 
 1. Selezionare un gruppo personalizzato nella finestra di progettazione della barra multifunzione.
 
-2. Nella finestra **Proprietà** espandere la proprietà **position** .
+2. Nella finestra **Proprietà** espandere la **proprietà Posizione.**
 
-3. Impostare la proprietà **PositionType** sul valore appropriato:
+3. Impostare la **proprietà PositionType** sul valore appropriato:
 
     - **BeforeOfficeId** posiziona il gruppo prima di un gruppo predefinito specificato.
 
     - **AfterOfficeId** posiziona il gruppo dopo un gruppo predefinito specificato.
 
-4. Impostare la proprietà **OfficeId** sull'ID del controllo di un gruppo incorporato.
+4. Impostare la **proprietà OfficeId** sull'ID controllo di un gruppo predefinito.
 
-     Per un elenco di ID di controllo, vedere [file della Guida di office 2010: identificatori di controllo dell'interfaccia utente di Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
+     Per un elenco degli ID di controllo, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=6627).
 
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Procedura dettagliata: creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
-- [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Procedura: modificare la posizione di una scheda nella barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Procedura: aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Procedura: visualizzare gli errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Procedura dettagliata: Creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Procedura: Iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Procedura: Modificare la posizione di una scheda sulla barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Procedura: Aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Procedura: Visualizzare gli errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md)

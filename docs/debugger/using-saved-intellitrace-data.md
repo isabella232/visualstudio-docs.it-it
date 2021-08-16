@@ -1,6 +1,6 @@
 ---
-title: Utilizzo dei dati di IntelliTrace salvati | Microsoft Docs
-description: Usare un file IntelliTrace (. iTrace) per avviare il debug in un punto di esecuzione specifico. Il file contiene informazioni che IntelliTrace ha registrato da un'esecuzione dell'app.
+title: Uso dei dati IntelliTrace salvati | Microsoft Docs
+description: Usare un file IntelliTrace (.iTrace) per avviare il debug in un punto specifico dell'esecuzione. Il file contiene informazioni registrate da Intellitrace da un'esecuzione dell'app.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,22 +15,23 @@ ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c81020b7c1933075f2faee026be17dd0fec4319
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fad740b0111f909af92a3e8ccc42e10c574b321946f17d386a04ded41408c31b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884442"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435790"
 ---
-# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso dei dati di IntelliTrace salvati (C#, Visual Basic, C++)
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso dei dati IntelliTrace salvati (C#, Visual Basic, C++)
 
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.
 
  Assicurarsi di disporre degli elementi seguenti:
 
-- File di origine e file di simboli (.pdb) corrispondenti per il codice dell'applicazione. In caso contrario, Visual Studio non consente di risolvere i percorsi di origine e verrà visualizzato il messaggio "Simboli non trovati". Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
+- File di origine e file di simboli (.pdb) corrispondenti per il codice dell'applicazione. In caso contrario, Visual Studio non consente di risolvere i percorsi di origine e verrà visualizzato il messaggio "Simboli non trovati". Vedere [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e [Diagnosticare i problemi dopo la distribuzione.](../debugger/diagnose-problems-after-deployment.md)
 
 - Visual Studio Enterprise (ma non edizioni Professional o Community) in un computer di sviluppo o in un altro computer per aprire i file .iTrace
 
@@ -38,10 +39,10 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
     |**Origine**|**Vedere**|
     |----------------|-------------|
-    |Una sessione di IntelliTrace in Visual Studio Visual Studio Enterprise (ma non edizioni Professional o Community)|[Funzionalità IntelliTrace](../debugger/intellitrace-features.md)|
+    |Una sessione di IntelliTrace in Visual Studio Visual Studio Enterprise (ma non edizioni Professional o Community)|[Funzionalità di IntelliTrace](../debugger/intellitrace-features.md)|
     |Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012 R2 Operations Manager, per app Web ASP.NET e applicazioni SharePoint in esecuzione in fase di distribuzione|-   [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novità di System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
-## <a name="what-do-you-want-to-do"></a><a name="GetStarted"></a> Che cosa si vuole fare?
+## <a name="what-do-you-want-to-do"></a><a name="GetStarted"></a> Cosa si vuole fare?
 
 - [Aprire un log IntelliTrace](#Open)
 
@@ -68,17 +69,17 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 > Se si chiude il file IntelliTrace durante il debug, è possibile riaprirlo facilmente. Scegliere **IntelliTrace** dal menu **Debug**, quindi selezionare **Mostra riepilogo log**. È inoltre possibile scegliere **Mostra riepilogo log** nella finestra **IntelliTrace** . Questo comando è disponibile solo se si esegue il debug con IntelliTrace.
 
 ## <a name="understand-the-intellitrace-log"></a><a name="Understand"></a> Informazioni sul log IntelliTrace
- Alcune delle seguenti sezioni del file con estensione iTrace vengono visualizzate solo se si raccolgono dati da una determinata origine, ad esempio, dalle applicazioni di SharePoint.
+ Alcune delle sezioni seguenti del file con estensione iTrace vengono visualizzate solo se sono stati raccolti dati da una determinata origine, ad esempio da SharePoint applicazioni.
 
 |**Sezione**|**Contiene**|**Origine della raccolta**|
 |-----------------|------------------|---------------------------|
-|[Violazioni di prestazioni](#Performance)|Eventi di prestazioni con chiamate di funzione che superano la soglia configurata|Microsoft Monitoring Agent, agente di raccolta autonomo o con System Center 2012 R2 Operations Manager per app Web ASP.NET ospitate in IIS|
+|[Violazioni di prestazioni](#Performance)|Eventi di prestazioni con chiamate di funzione che superano la soglia configurata|Microsoft Monitoring Agent, agente di raccolta autonomo o con System Center 2012 R2 Operations Manager per ASP.NET web ospitate in IIS|
 |[Dati eccezione](#ExceptionData)|Eccezioni, incluso lo stack di chiamate completo per ogni eccezione|Tutte le origini|
-|[Analisi](#Analysis)|Solo per applicazioni SharePoint 2010 e SharePoint 2013. Esaminare eventi SharePoint e IntelliTrace, ad esempio eventi del debugger, eventi ULS, eccezioni non gestite e altri dati registrati da Microsoft Monitoring Agent.|Microsoft Monitoring Agent, ovvero agente di raccolta autonomo o con System Center 2012 R2 Operations Manager|
+|[Analisi](#Analysis)|Solo per applicazioni SharePoint 2010 e SharePoint 2013. Esaminare eventi SharePoint e IntelliTrace, ad esempio eventi del debugger, eventi ULS, eccezioni non gestite e altri dati registrati da Microsoft Monitoring Agent.|Microsoft Monitoring Agent, agente di raccolta autonomo o con System Center 2012 R2 Operations Manager|
 |[Informazioni di sistema](#SystemInfo)|Impostazioni e specifiche del sistema host|Tutte le origini|
 |[Elenco dei thread](#ThreadsList)|Thread eseguiti durante la raccolta|Tutte le origini|
 |[Moduli](#Modules)|Moduli caricati dal processo di destinazione nell'ordine di caricamento.|Tutte le origini|
-|[Richiesta Web](#Modules)|Dati delle richieste Web per le applicazioni Web IIS di produzione e SharePoint 2010 e SharePoint 2013|Microsoft Monitoring Agent e l'agente di raccolta autonomo|
+|[Richiesta Web](#Modules)|Dati delle richieste Web per applicazioni Web IIS di produzione e SharePoint 2010 e SharePoint 2013|Microsoft Monitoring Agent e l'agente di raccolta autonomo|
 
  Di seguito sono indicati alcuni suggerimenti per individuare informazioni in ogni sezione:
 
@@ -147,7 +148,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
     |**Conteggio** per eccezioni raggruppate|Numero di volte in cui è stata generata l'eccezione|
     |**ID thread** per eccezioni non raggruppate|ID del thread che ha generato l'eccezione|
     |**Ora evento più recente** oppure **Ora evento**|Timestamp registrato quando è stata generata l'eccezione|
-    |**Stack di chiamate**|Stack di chiamate per un'eccezione.<br /><br /> Per visualizzare lo stack di chiamate, scegliere un'eccezione dall'elenco. Lo stack di chiamate viene visualizzato sotto l'elenco di eccezioni.|
+    |**Stack**|Stack di chiamate per un'eccezione.<br /><br /> Per visualizzare lo stack di chiamate, scegliere un'eccezione dall'elenco. Lo stack di chiamate viene visualizzato sotto l'elenco di eccezioni.|
 
 ### <a name="analysis"></a><a name="Analysis"></a> Analisi
  Diagnosticare problemi con applicazioni SharePoint 2010 e SharePoint 2013 tramite un ID di correlazione SharePoint o esaminare qualsiasi eccezione non gestita individuata da Microsoft Monitoring Agent.
@@ -160,13 +161,13 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 1. Copiare l'ID di correlazione SharePoint dalla relativa origine.
 
-    Ad esempio:
+    Esempio:
 
-    ![IntelliTrace &#45; errore SharePoint &#45; ID correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![Errore di &#45; SharePoint IntelliTrace &#45; di correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
 2. Aprire il file .iTrace, quindi passare ad **Analisi** e immettere l'ID di correlazione SharePoint per esaminare eventi registrati e di richieste Web corrispondenti.
 
-    ![Log IntelliTrace &#45; immettere l'ID correlazione di SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![Log IntelliTrace &#45; immettere SharePoint ID correlazione](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
 3. In **Eventi richiesta** esaminare gli eventi. Partendo dall'alto, gli eventi vengono visualizzati nell'ordine in cui si sono verificati.
 
@@ -174,7 +175,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
    2. Scegliere **Avvia debug** per avviare il debug nel punto in cui si è verificato l'evento.
 
-      ![File di log IntelliTrace &#45; visualizzare eventi &#43; richiesta Web](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![File di log IntelliTrace &#45; eventi di richiesta Web &#43; eventi](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
    È possibile visualizzare questi tipi di eventi SharePoint insieme agli eventi IntelliTrace:
 
@@ -204,11 +205,11 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 3. Scegliere **Debug eccezione** per avviare il debug nel punto e nel momento in cui si è verificata l'eccezione.
 
-    ![Log IntelliTrace &#45; le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Eccezioni non gestite &#45; SharePoint log intelliTrace](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Per una procedura dettagliata, vedere [procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).
+   Per una procedura dettagliata, vedere [Procedura dettagliata: debug di un'SharePoint tramite IntelliTrace.](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md) Per i tipi di dati che l'agente registra, vedere [Funzionalità intelliTrace](../debugger/intellitrace-features.md).
 
-### <a name="threads-list"></a><a name="ThreadsList"></a> Elenco dei thread
+### <a name="threads-list"></a><a name="ThreadsList"></a> Elenco di thread
  Esaminare i thread registrati che sono stati eseguiti nel processo di destinazione. È possibile avviare il debug dal primo evento IntelliTrace valido in un thread selezionato.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Per avviare il debug da un thread specifico
@@ -217,7 +218,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 2. Nella parte inferiore di **Elenco dei thread** scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un thread.
 
-    Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).
+    Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Vedere [Funzionalità intelliTrace](../debugger/intellitrace-features.md).
 
    I dati dei thread creati dall'utente potrebbero essere più utili di quelli creati da un server e gestiti per applicazioni Web ospitate in IIS.
 
@@ -241,7 +242,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |**Campo**|**Mostra**|
 |---------------|-------------------|
 |**Sessione test**|Sessioni di test registrate. In genere, ne è presente solo una. Questo elenco è vuoto se sono stati creati dati di test usando un test esplorativo manuale.|
-|**Test case**|Test case della sessione di test selezionata. Questo elenco è vuoto se sono stati creati dati di test usando un test esplorativo manuale.|
+|**Test Case**|Test case della sessione di test selezionata. Questo elenco è vuoto se sono stati creati dati di test usando un test esplorativo manuale.|
 |**Griglia passaggi test**|Passaggi di test registrati con il risultato del test superato o non superato|
 
 ### <a name="system-info"></a><a name="SystemInfo"></a> Informazioni di sistema
@@ -252,14 +253,14 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 |**Colonna**|**Mostra**|
 |----------------|-------------------|
-|**Nome del modulo**|Nome del file di modulo|
+|**Nome modulo**|Nome del file di modulo|
 |**Percorso modulo**|Posizione sul disco in cui è stato caricato il modulo|
 |**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Vedere [Finding symbol (.pdb) files and source files](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).|
 
 ### <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere ulteriori informazioni?
  [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
- [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)
+ [Funzionalità di IntelliTrace](../debugger/intellitrace-features.md)
 
  [Raccogliere un maggior numero di dati di diagnostica durante i test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 
@@ -269,4 +270,4 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
  [Debugger di Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 #### <a name="guidance"></a>Indicazioni
- [Test per il recapito continuo con Visual Studio 2012-capitolo 6: casella degli strumenti di test](/previous-versions/msp-n-p/jj159337(v=pandp.10))
+ [Test per il recapito continuo con Visual Studio 2012 - Capitolo 6: Casella degli strumenti di test](/previous-versions/msp-n-p/jj159337(v=pandp.10))

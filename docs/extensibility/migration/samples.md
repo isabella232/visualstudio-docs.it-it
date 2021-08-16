@@ -1,23 +1,24 @@
 ---
-title: Esempio imageOptimizer per l'aggiornamento Visual Studio estensioni
+title: Esempio imageOptimizer per l'aggiornamento delle Visual Studio personalizzate
 description: Seguire un esempio per informazioni su come aggiornare un'estensione Visual Studio per usare Visual Studio 2022 Preview.
 ms.date: 06/08/2021
 ms.topic: sample
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 542c0340f9867815c21903090053d01a14b94d9c
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 4fbb0da22d8fc4b627a21ec3285450559be9210632949c71abe9850d638106a8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592281"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400978"
 ---
-# <a name="imageoptimizer---update-a-visual-studio-extension-step-by-step"></a>ImageOptimizer - Aggiornare un'estensione Visual Studio passaggio per passaggio
+# <a name="imageoptimizer---update-a-visual-studio-extension-step-by-step"></a>ImageOptimizer - Aggiornare un'estensione Visual Studio passaggio dopo passaggio
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
@@ -32,7 +33,7 @@ Vedere [Modernizzare il progetto](update-visual-studio-extension.md#modernize-yo
 
 [git commit e052465](https://github.com/madskristensen/ImageOptimizer/pull/46/commits/e052465f30e6bed37e6d76eac016047095e8e18b)
 
-Per prima cosa, il progetto VSIX e unit test in .NET 4.7.2 nella pagina delle proprietà dei progetti:
+Prima di tutto, il progetto VSIX e unit test a .NET 4.7.2 nella pagina delle proprietà dei progetti:
 
    ![Rilievo della versione del framework](media/samples/framework-bump.png)
 
@@ -131,7 +132,7 @@ Il supporto Visual Studio 2022 richiede l'aggiunta di un nuovo progetto condivis
 
 ## <a name="step-3---add-a-visual-studio-2022-vsix-project"></a>Passaggio 3: Aggiungere un progetto VSIX Visual Studio 2022
 
-Vedere [Aggiungere Visual Studio destinazione 2022](update-visual-studio-extension.md#add-a-visual-studio-2022-target).
+Vedere [Aggiungere Visual Studio destinazione 2022.](update-visual-studio-extension.md#add-a-visual-studio-2022-target)
 
 1. Aggiungere un nuovo progetto VSIX alla soluzione.
 1. Rimuovere qualsiasi codice sorgente aggiuntivo nel nuovo progetto, ad eccezione di `source.extension.vsixmanifest.`
@@ -172,7 +173,7 @@ Vedere [Aggiungere Visual Studio destinazione 2022](update-visual-studio-extensi
    > +<PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.63-Visual Studio 2022-g3f11f5ab" />
    > ```
 
-1. Modificare il `source.extension.vsixmanifest` file per riflettere la destinazione Visual Studio 2022.
+1. Modificare il `source.extension.vsixmanifest` file in modo che rifletta la destinazione Visual Studio 2022.
 
    [git commit 9d393c7](https://github.com/madskristensen/ImageOptimizer/pull/46/commits/9d393c708c04ac4af48d1eb9ce3da4470db5d5cc)
    1. Impostare il `<InstallationTarget>` tag in modo che rifletta Visual Studio 2022 e indicare un payload amd64:
@@ -183,7 +184,7 @@ Vedere [Aggiungere Visual Studio destinazione 2022](update-visual-studio-extensi
       </InstallationTarget>
       ```
 
-   1. Modificare prerequisito in modo da includere solo Visual Studio 2022 e successive:
+   1. Modificare prerequisito per includere solo Visual Studio 2022 e successive:
 
       ```Diff
       - <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
@@ -196,7 +197,7 @@ Con questo, la compilazione produce ora Visual Studio 2019 e Visual Studio 2022 
 
 ## <a name="other-samples"></a>Altri esempi
 
-- [ProPower Tools](https://github.com/microsoft/VS-PPT/pull/244)
+- [Strumenti ProPower](https://github.com/microsoft/VS-PPT/pull/244)
   - PeekF1
     - Consente di visualizzare in anteprima un Web browser con informazioni della Guida sulla classe o sull'oggetto selezionato.
   - FixMixedTabs

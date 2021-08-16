@@ -1,6 +1,6 @@
 ---
 title: Selezione frammento di codice
-description: Informazioni su come usare la selezione frammenti di codice per inserire blocchi di codice pronti nel documento attivo.
+description: Informazioni su come usare la selezione frammento di codice per inserire blocchi di codice già pronti nel documento attivo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fea67056c73a6e9b0b265253479fbecee63767
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2549aae94aa6fd303679f900d2e642c1ffeba40e2a20908b91ba0db5ecf98af0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956152"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430785"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
 
@@ -44,7 +45,7 @@ La procedura per visualizzare la **Selezione frammento di codice** varia in base
 
 - SQL - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.
 
-Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'elenco cartelle in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [procedura dettagliata: creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).
+Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'elenco cartelle in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 

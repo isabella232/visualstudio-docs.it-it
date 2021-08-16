@@ -6,17 +6,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac3d6b9cef8d20d85049da830dfb830321faab75
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 9cd956bf312b356b98cdefdf30a98f4b77be796ec66b0a3862d480f5727fb045
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214538"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372394"
 ---
 # <a name="make-class-abstract"></a>Impostare una classe come astratta
 
@@ -28,17 +29,17 @@ Questo refactoring si applica a:
 
 **Cosa:** Effettuare il refactoring astratto della classe.
 
-**Quando:** Si scrive un metodo astratto in una classe non astratta.
+**Quando:** Si scrive un metodo astratto in una classe che non è astratta.
 
-**Motivo:**  Una correzione del codice per rendere astratta una classe dopo la scrittura di un metodo astratto consente di risparmiare tempo.
+**Perché:**  La correzione del codice per rendere astratta una classe dopo la scrittura di un metodo astratto consente di risparmiare tempo.
 
 ## <a name="how-to"></a>Procedure
 
-1. Posizionare il cursore sul metodo astratto.
+1. Posizionare il punto di controllo sul metodo astratto.
 
-2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 
-3. Selezionare **make Class ' abstract '**.
+3. Selezionare **Make class 'abstract' (Rendi la classe 'astratta').**
 
     ![Impostare una classe come astratta](media/make-class-abstract.png)
 

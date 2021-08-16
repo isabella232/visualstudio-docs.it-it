@@ -11,14 +11,15 @@ ms.assetid: f8a067c5-3306-4fc5-bc20-8910a47ed504
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5bc125b00fa8194475c9f6101e697dbf66062a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0b81cb7f9e8dd22bbfb271bae89cda0b8e9a65456ec03fa233b8f23c7b608ccc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162166"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380014"
 ---
 # <a name="idiasymbolget_frontendmajor"></a>IDiaSymbol::get_frontEndMajor
 Recupera il numero di versione principale del front-end.
@@ -34,24 +35,24 @@ HRESULT get_frontEndMajor (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il numero di versione principale del front-end. Vedere la sezione Osservazioni.
+[out] Restituisce il numero di versione principale front-end. Vedere la sezione Osservazioni.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Un compilatore è in genere costituito da due elementi primari: il front-end (il parser), che gestisce l'analisi del codice sorgente in un form intermedio e un back-end (Generatore di codice), che converte il modulo intermedio in assembly. Non è insolito che il front-end disponga di una versione diversa da quella del back-end.
+ Un compilatore è in genere costituito da due elementi principali: il front-end (parser), che gestisce l'analisi del codice sorgente in un formato intermedio, e un back-end (generatore di codice), che converte il formato intermedio in assembly. Non è insolito che il front-end abbia una versione diversa rispetto al back-end.
 
- Un numero di versione front-end o back-end è costituito da tre parti: \<major> . \<minor> . \<build> , dove \<major> è il numero di versione principale, \<minor> è il numero di versione secondario e \<build> è il numero di Build. Ad esempio, 13.10.3077.
+ Un numero di versione front-end o back-end è costituito da tre parti: . . , dove è il numero di versione principale, è il numero di versione secondaria e \<major> è il numero di \<minor> \<build> \<major> \<minor> \<build> build. Ad esempio, 13.10.3077.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedi anche

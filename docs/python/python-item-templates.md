@@ -6,20 +6,21 @@ ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7effabe9323611685ef392820f4eb56f183a41d17245966b662ca7d1a2d3b63a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945162"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121367740"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
-I modelli di elemento sono disponibili nei progetti Python tramite il comando di menu **progetto**  >  **Aggiungi nuovo elemento** oppure il comando **Aggiungi**  >  **nuovo elemento** del menu di scelta rapida in **Esplora soluzioni**.
+I modelli di elemento sono disponibili nei progetti Python tramite il comando di menu **Project** Aggiungi nuovo elemento o il comando Aggiungi nuovo elemento nel menu di scelta  >   rapida in   >   **Esplora soluzioni**.
 
 ![Finestra di dialogo Aggiungi nuovo elemento](media/project-item-templates.png)
 
@@ -31,7 +32,7 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 | --- | --- |
 | **File Python vuoto** | File vuoto con estensione *.py*. |
 | **Classe Python** | File *.py* contenente una singola definizione di classe Python vuota. |
-| **Pacchetto python** | Una cartella che contiene un file *\_ \_ init \_ \_ . py* . |
+| **Pacchetto Python** | Cartella che contiene un file *\_ \_ con estensione \_ \_ py init.* |
 | **Unit test Python** | File *.py* con un singolo unit test basato sul framework `unittest`, insieme a una chiamata a `unittest.main()` per eseguire i test nel file. |
 | **Pagina HTML** | File *.html* con una struttura di pagina semplice composta da un elemento `<head>` e un elemento `<body>`. |
 | **JavaScript** | File *.js* vuoto. |

@@ -6,25 +6,25 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: d21b35d3c212a6cbf1982251cc2a5f33881b9f849d919b328fa7948b6393e24c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493244"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365171"
 ---
 # <a name="data-visualizations"></a>Visualizzazioni di dati
 
 Visual Studio per Mac include il supporto dell'interfaccia utente per il debugger, consentendo visualizzazioni dei valori di una variabile, un campo o una proprietà durante il debug. Questi visualizzatori dei dati mostrano una versione estesa dei dati e permettono agli sviluppatori di esaminare strutture note, ad esempio visualizzando il colore di uno struct di colore.
 
-È possibile visualizzare i visualizzatori nella finestra  **variabili locali** di debug facendo clic sull'icona di anteprima visualizzata a destra del valore quando l'utente passa sulla riga:
+I visualizzatori nella finestra  **Variabili** locali di debug possono essere visualizzati facendo clic sull'icona di anteprima visualizzata a destra del valore, quando l'utente passa il puntatore del mouse sulla riga:
 
 ![finestra Variabili locali](media/data-visualizations-image9.png)
 
 L'elenco seguente presenta molte delle nuove visualizzazioni per il debug in Visual Studio per Mac.
 
 ## <a name="point"></a>Point
-Un punto/PointF, o CGPoint in iOS e Mac, eseguirà il rendering come una tupla che mostra i valori X e Y nelle finestre di debug:
+Point/PointF o CGPoint in iOS e Mac eseguirà il rendering come tupla che mostra i valori X e Y nelle finestre di debug:
 
 ![Visualizzazione dei punti](media/data-visualizations-image10.png)
 
@@ -43,7 +43,7 @@ Le coordinate vengono tracciate su una mappa, aggiungendo la posizione al centro
 
 [Visualizzazione delle coordinate](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Colore
+## <a name="color"></a>Color
 Visualizza le proprietà UIColor, CGColor e Color, indicando l'anteprima del colore, i componenti RGBA, i valori di tonalità-luminosità-saturazione e il valore esadecimale del colore:
 
 ![Visualizzazione dei colori](media/data-visualizations-image14.png)
@@ -90,7 +90,7 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 
 * **Primitives**
   * Visualizza il valore non elaborato del tipo primitivo.
-* **Enum**
+* **Enumerazione**
   * Visualizza il valore del campo senza il qualificatore di tipo enum.
 * **Tupla**
   * Usa il formato (,) per la visualizzazione.
@@ -101,7 +101,7 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 * **IntPtr**
   * Visualizza una rappresentazione esadecimale di un oggetto IntPtr.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Esaminare le variabili nelle finestre Variabili locali e Auto](/visualstudio/debugger/autos-and-locals-windows)
 - [Visualizzare le stringhe in un visualizzatore (Visual Studio in Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

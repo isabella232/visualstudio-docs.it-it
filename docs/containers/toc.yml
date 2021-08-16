@@ -46,13 +46,3 @@
           href: docker-compose-properties.md
         - name: Impostazioni di avvio
           href: container-launch-settings.md
-- name: Sviluppare con Kubernetes
-  items:
-    - name: Bridge per Kubernetes
-      href: bridge-to-kubernetes.md
-    - name: Come funziona Bridge per Kubernetes
-      href: overview-bridge-to-kubernetes.md
-    - name: Configurare Bridge per Kubernetes
-      href: configure-bridge-to-kubernetes.md
-    - name: Usare Azure AD identità gestite con Bridge to Kubernetes
-      href: managed-identity.md

@@ -1,6 +1,6 @@
 ---
-title: Visualizzare i contatori DotNet | Microsoft Docs
-description: Informazioni su come usare lo strumento contatori .NET nel profiler delle prestazioni di Visual Studio.
+title: Visualizzare i contatori dotnet | Microsoft Docs
+description: Informazioni sull'uso dello strumento Contatori .NET nel Visual Studio Profiler prestazioni.
 ms.date: 12/7/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,69 +10,69 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a09cc073b2886ab0d374bccaf8b85f3bb729dd7
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 1eb8ce22a6271c10f7a5b0375958788a5f862bdbe51f2bc2759c67ea58399197
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97905027"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368682"
 ---
-# <a name="visualize-dotnet-counters-from-the-visual-studio-profiler"></a>Visualizzare i contatori DotNet dal profiler di Visual Studio
+# <a name="visualize-dotnet-counters-from-the-visual-studio-profiler"></a>Visualizzare i contatori dotnet dal profiler Visual Studio
 
 
-Lo strumento contatori .NET consente di visualizzare i [contatori DotNet](/dotnet/core/diagnostics/dotnet-counters) nel tempo direttamente dall'interno del profiler di Visual Studio.
+Lo strumento Contatori .NET consente di visualizzare i contatori [dotnet](/dotnet/core/diagnostics/dotnet-counters) nel tempo direttamente dall'interno Visual Studio profiler.
 
 
 > [!NOTE]
-> Lo strumento contatori .NET richiede Visual Studio 2019 versione 16,7 o successiva e ha come destinazione .NET Core 3.0 +.
+> Lo strumento Contatori .NET richiede Visual Studio 2019 versione 16.7 o successiva e ha come destinazione .NET Core 3.0+.
 
-## <a name="setup"></a>Configurazione
+## <a name="setup"></a>Eseguire la configurazione
 
-1. Aprire il Profiler prestazioni (**ALT + F2** o **debug-> Performance Profiler**) in Visual Studio.
+1. Aprire il Profiler prestazioni (**ALT + F2** o **Debug -> Profiler prestazioni**) in Visual Studio.
 
-2. Selezionare la casella di controllo **contatori .NET** .
+2. Selezionare la **casella di controllo Contatori .NET.**
 
-   :::image type="content" source="../profiling/media/dotnet-counters-tool-selected.png" alt-text="Strumento contatori selezionato.":::
+   :::image type="content" source="../profiling/media/dotnet-counters-tool-selected.png" alt-text="Strumento Contatori selezionato.":::
 
-3. Fare clic sul pulsante **Start** per eseguire lo strumento.
+3. Fare clic **sul pulsante** Start per eseguire lo strumento.
 
-Per ulteriori informazioni su come ottimizzare le prestazioni dello strumento, vedere [ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md).
+Per altre informazioni su come ottimizzare le prestazioni dello strumento, vedere [Ottimizzazione delle impostazioni del profiler.](../profiling/optimize-profiler-settings.md)
 
 
 ## <a name="understand-your-data"></a>Informazioni sui dati
 
-Mentre lo strumento raccoglie inizialmente i dati, è possibile visualizzare i valori attivi dei [contatori DotNet](/dotnet/core/diagnostics/dotnet-counters).
+Mentre lo strumento raccoglie inizialmente dati, è possibile visualizzare i valori live dei [contatori dotnet](/dotnet/core/diagnostics/dotnet-counters).
 
-:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text="Raccolta di strumenti per contatori .NET.":::
+:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text="Raccolta dello strumento contatore .NET.":::
 
-È anche possibile visualizzare i grafici dei contatori selezionando la casella di controllo accanto ai nomi dei contatori. È possibile visualizzare i grafici di più contatori alla volta.
-
-
-Al termine dell'esercizio dell'app e della raccolta dei dati, è possibile arrestare la raccolta per un report ancora più dettagliato. A tale scopo, premere il pulsante **Interrompi raccolta** .
+È anche possibile visualizzare i grafici dei contatori selezionando la casella di controllo accanto ai nomi dei contatori. È possibile visualizzare i grafici di più contatori contemporaneamente.
 
 
-Una volta caricato il report, verrà visualizzato un report finalizzato simile a quello illustrato di seguito.
+Al termine dell'esercizio dell'app e della raccolta dei dati, è possibile interrompere la raccolta per un report ancora più dettagliato. A tale scopo, premere il **pulsante Arresta** raccolta.
 
-:::image type="content" source="../profiling/media/dotnet-counters-tool-report.png" alt-text="Report dello strumento contatore .NET.":::
 
-Il report Mostra i valori seguenti:
+Dopo il caricamento del report, verrà visualizzato un report finalizzato simile a quello illustrato di seguito.
+
+:::image type="content" source="../profiling/media/dotnet-counters-tool-report.png" alt-text="Report dello strumento Contatore .NET.":::
+
+Il report mostra i valori seguenti:
 
 - Min: valore minimo per il contatore nell'intervallo di tempo selezionato.
 - Max: valore massimo per il contatore nell'intervallo di tempo selezionato.
-- Average: valore medio per il contatore nell'intervallo di tempo selezionato.
+- Average : valore medio per il contatore nell'intervallo di tempo selezionato.
 
 È possibile filtrare o aggiungere colonne nella tabella facendo clic con il pulsante destro del mouse sulle intestazioni di colonna e selezionando un'intestazione.
 
-:::image type="content" source="../profiling/media/dotnet-counters-tool-columns.png" alt-text="Colonne dello strumento contatore .NET.":::
+:::image type="content" source="../profiling/media/dotnet-counters-tool-columns.png" alt-text="Colonne dello strumento Contatore .NET.":::
 
-È anche possibile visualizzare i grafici nel report dettagliato selezionando le caselle di controllo accanto a contatori. I dati nelle tabelle rappresentano i valori dell'intera durata della traccia raccolta per impostazione predefinita. Per filtrare i dati in base a un intervallo di tempo specifico, fare clic e trascinare nei grafici.
+È anche possibile visualizzare i grafici nel report dettagliato selezionando le caselle di controllo accanto ai contatori. I dati nelle tabelle rappresentano i valori dell'intera durata della traccia raccolta per impostazione predefinita. Per filtrare i dati in base a un intervallo di tempo specifico, fare clic e trascinare i grafici.
 
-:::image type="content" source="../profiling/media/dotnet-counters-tool-time-filtering.png" alt-text="Filtri per gli strumenti dei contatori .NET.":::
+:::image type="content" source="../profiling/media/dotnet-counters-tool-time-filtering.png" alt-text="Filtro temporale dello strumento Contatori .NET.":::
 
-La tabella aggiorna i valori rilevanti per l'ora selezionata nei grafici. Utilizzare il pulsante **Cancella selezione** per reimpostare l'intervallo di tempo selezionato sull'intera traccia.
+La tabella viene aggiornata ai valori rilevanti per l'ora selezionata nei grafici. Usare il **pulsante Cancella** selezione per reimpostare l'intervallo di tempo selezionato sull'intera traccia.
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md)
-- [contatori DotNet](/dotnet/core/diagnostics/dotnet-counters)
+- [Contatori dotnet](/dotnet/core/diagnostics/dotnet-counters)

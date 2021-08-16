@@ -1,6 +1,6 @@
 ---
-title: Strumenti di tema colori | Microsoft Docs
-description: Informazioni sugli strumenti di compilazione dei colori VSIX e VSIX disponibili in Visual Studio SDK per creare e gestire i temi di colore.
+title: Strumenti per i ting dei colori | Microsoft Docs
+description: Informazioni sugli strumenti VSIX Color Editor e VSIX Color Compiler disponibili in Visual Studio SDK per la creazione e la gestione dei temi colori.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,18 +8,19 @@ ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e779a6d1fa4ccab00608d711800bd9dcc21cb78
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3f94c777382ee0b045dafde89be7ac873e57d11dbff286b8845d625d8086a2c6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078942"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359650"
 ---
-# <a name="color-theme-tools"></a>Strumenti per tema colori
-Visual Studio SDK offre diversi strumenti che consentono di creare e gestire i temi di colore.
+# <a name="color-theme-tools"></a>Strumenti per i temi colori
+L Visual Studio SDK offre diversi strumenti che consentono di creare e gestire temi colori.
 
-- Lo strumento [VSIX Color Editor](../../extensibility/internals/vsix-color-editor.md) consente di creare e modificare colori personalizzati per Visual Studio.
+- Lo [strumento Editor colori VSIX](../../extensibility/internals/vsix-color-editor.md) consente di creare e modificare colori personalizzati per Visual Studio.
 
-- Lo strumento [compilatore di colori VSIX](../../extensibility/internals/vsix-color-compiler.md) converte i file con estensione *XML* del tema di Visual Studio esistenti in file *. pkgdef* per l'estensione.
+- Lo [strumento Compilatore colori VSIX](../../extensibility/internals/vsix-color-compiler.md) converte i Visual Studio *di*.xmlesistenti in file con estensione *pkgdef* per l'estensione.

@@ -1,6 +1,6 @@
 ---
 title: Convertire il metodo Get in o da una proprietà
-description: Informazioni su come usare il menu azioni rapide e refactoring per convertire un metodo Get (e facoltativamente il metodo set) in una proprietà.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per convertire un metodo Get (e, facoltativamente, il metodo Set) in una proprietà.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -8,6 +8,7 @@ ms.devlang: csharp
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
@@ -15,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d86a9c42fbd1c54e7bef409cc6d61d9aca751436
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 151f7c8e8ca99a5de00fc6c0c8d5771585133b503955bba45357dcc338cd45ba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919653"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430031"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refactoring per convertire il metodo Get in proprietà o una proprietà in metodo Get
 
@@ -43,9 +44,9 @@ Questi refactoring si applicano a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **azioni rapide e refactoring** e selezionare **Sostituisci metodo con la proprietà** dal popup della finestra di anteprima.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare Sostituisci metodo con **proprietà** dal popup della finestra di anteprima.
    - **Mouse**
-      - Fare clic con il pulsante destro del mouse sul codice, scegliere il menu **azioni rapide e refactoring** e selezionare **Sostituisci metodo con la proprietà** dal popup della finestra di anteprima.
+      - Fare clic con il pulsante destro del mouse sul codice, scegliere il menu Azioni rapide e **refactoring** e selezionare Sostituisci metodo con **proprietà** dal popup della finestra di anteprima.
 
 1. (Facoltativo) Se si dispone di un metodo Set, è anche possibile convertire il metodo Set in questo momento selezionando **Sostituisci metodo Get e metodo Set con la proprietà**.
 
@@ -84,7 +85,7 @@ public int MyValue
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Sostituisci proprietà con metodi** dal popup della finestra di anteprima.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Sostituisci proprietà con metodi** dal popup della finestra di anteprima.
    - **Mouse**
       - fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Sostituisci proprietà con metodi** dal popup della finestra di anteprima.
 

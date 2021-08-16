@@ -13,12 +13,13 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: aa8e9af0c4ca25b29e0194e5515250ceb4cd6254
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 4184bcc959b9966f830baa08abcb5d3d769a2f2ed6daad3d252af3eb00870985
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908647"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384892"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procedura: Aggiungere una regola di soglia usando l'Editor test di carico
 

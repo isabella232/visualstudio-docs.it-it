@@ -1,6 +1,6 @@
 ---
 title: Comando Cerca nei file
-description: Informazioni sul comando trova e sul modo in cui vengono cercati i file usando alcune delle opzioni disponibili nella scheda Cerca nei file della finestra Trova e Sostituisci.
+description: Informazioni sul comando Trova e su come cerca i file usando alcune delle opzioni disponibili nella scheda Trova nei file della finestra Trova e sostituisci.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fc824a7166e3bbaba84bd49e89f1fdf30b65761
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4886cd6d62fc35cccb9a7a7df1b70c1006e135a678abe1f25bf7dfda5bbc948f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908958"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429446"
 ---
 # <a name="find-in-files-command"></a>Comando Cerca nei file
 Esegue la ricerca di testo nei file usando un subset delle opzioni disponibili nella scheda **Cerca nei file** della finestra **Trova e sostituisci**.
@@ -90,6 +91,6 @@ Nell'esempio riportato di seguito viene cercato btnCancel in tutti i file CLS pr
 
 - [Cerca nei file](../../ide/find-in-files.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

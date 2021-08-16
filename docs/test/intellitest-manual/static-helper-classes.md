@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 41d059d4346cb3a19564c539f6f427961810cd05
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62e58da2d6bf5e188231c3d46580e8202d97a6bfeaa1246c9d040dd2a2160e85
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916475"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366511"
 ---
 # <a name="static-helper-classes"></a>Classi helper statiche
 

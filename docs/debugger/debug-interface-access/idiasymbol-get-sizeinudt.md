@@ -1,5 +1,5 @@
 ---
-description: Recupera la dimensione di un membro di un tipo definito dall'utente.
+description: Recupera le dimensioni di un membro di un tipo definito dall'utente.
 title: IDiaSymbol::get_sizeInUdt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f60952220f22bcf7b67534905f8bd56da520d99
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cf8079880ee889a949595b9e7f325bce30ab0a03ca1bdc33b630e1638b8ba8de
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155754"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420542"
 ---
 # <a name="idiasymbolget_sizeinudt"></a>IDiaSymbol::get_sizeInUdt
-Recupera la dimensione di un membro di un tipo definito dall'utente.
+Recupera le dimensioni di un membro di un tipo definito dall'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,10 +32,10 @@ HRESULT get_sizeInUdt(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un oggetto `DWORD` che specifica la dimensione del membro.
+[out] Puntatore a `DWORD` un oggetto che specifica le dimensioni del membro.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

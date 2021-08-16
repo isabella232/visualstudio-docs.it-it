@@ -1,6 +1,6 @@
 ---
 title: Comando Trova
-description: Informazioni sul comando trova e sul modo in cui cerca i file usando un subset delle opzioni disponibili nella scheda Cerca nei file della finestra Trova e Sostituisci.
+description: Informazioni sul comando Trova e su come cerca i file usando un subset delle opzioni disponibili nella scheda Trova nei file della finestra Trova e sostituisci.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e28062f54426e2810acf29bdd64955998ea088cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca8096ae79885377ed2976934f181ff5ce1203f55245fab6baebe0d695430ab4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852544"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387486"
 ---
 # <a name="find-command"></a>Comando Trova
 Esegue la ricerca di testo nei file usando un subset delle opzioni disponibili nella scheda **Cerca nei file** della finestra **Trova e sostituisci**.
@@ -82,6 +83,6 @@ In questo esempio viene eseguita una ricerca con distinzione tra maiuscole e min
 ## <a name="see-also"></a>Vedi anche
 
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

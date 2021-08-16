@@ -1,6 +1,6 @@
 ---
-description: Ottiene le informazioni sulla richiesta del punto di interruzione che descrivono questa richiesta di interruzione.
-title: 'IDebugBreakpointRequest2:: GetRequestInfo | Microsoft Docs'
+description: Ottiene le informazioni sulla richiesta del punto di interruzione che descrivono questa richiesta del punto di interruzione.
+title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69fac031f12e27916bb945aa2dde88fee29939f2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2afe24d879b0bfa27f3397d08bfd5f3d85c3ae29734038181ba1dc7d1c67e51b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054465"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360599"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-Ottiene le informazioni sulla richiesta del punto di interruzione che descrivono questa richiesta di interruzione.
+Ottiene le informazioni sulla richiesta del punto di interruzione che descrivono questa richiesta del punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +45,16 @@ int GetRequestInfo(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-in Combinazione di flag dell'enumerazione [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) che determina i campi del `pBPRequestInfo` parametro da compilare.
+[in] Combinazione di flag [dell'BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) che determina quali campi del parametro `pBPRequestInfo` devono essere compilati.
 
 `pBPRequestInfo`\
-out Specifica la struttura di [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) da compilare con la descrizione della richiesta del punto di interruzione.
+[out] Specifica la struttura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) da riempire con la descrizione della richiesta del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un `CDebugBreakpointRequest` oggetto semplice che espone l'interfaccia [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) .
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CDebugBreakpointRequest` semplice che espone [l'interfaccia IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(

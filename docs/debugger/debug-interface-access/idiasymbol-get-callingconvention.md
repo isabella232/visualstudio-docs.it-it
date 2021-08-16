@@ -11,14 +11,15 @@ ms.assetid: 355d3877-b6b6-45fd-a1d8-baed428d8f96
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f075ad1758b96319293d72b34fe369d2f0ea55d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b9e4f010bede2e3c51369f4a31a30f6a1d18660ff30f7f867eee63cc2583c42d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161093"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420790"
 ---
 # <a name="idiasymbolget_callingconvention"></a>IDiaSymbol::get_callingConvention
 Restituisce un indicatore di una convenzione di chiamata dei metodi.
@@ -34,19 +35,19 @@ HRESULT get_callingConvention (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un valore dall'enumerazione [CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) enumerazione che specifica la convenzione di chiamata di un metodo.
+[out] Restituisce un valore [dall'enumerazione CV_call_e enumeration](../../debugger/debug-interface-access/cv-call-e.md) che specifica la convenzione di chiamata di un metodo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedi anche

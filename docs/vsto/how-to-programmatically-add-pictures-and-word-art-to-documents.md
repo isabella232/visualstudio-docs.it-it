@@ -1,5 +1,5 @@
 ---
-title: Aggiungere immagini e Word Art ai documenti a livello di codice
+title: Aggiungere immagini e word art ai documenti a livello di codice
 description: Informazioni su come aggiungere immagini e oggetti di disegno ai documenti in fase di progettazione o in fase di esecuzione.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
@@ -17,16 +17,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 445857200dfb269dd71f7cb3d446d025048cb3ac
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 93a64c4fe15109fbf7967d763ae5314a3b3064d4894638013a5b7cb75214159f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828436"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384366"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedura: Aggiungere immagini e Word Art ai documenti a livello di codice
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedura: Aggiungere immagini e word art ai documenti a livello di codice
   È possibile aggiungere immagini e oggetti disegno ai documenti in fase di progettazione o in fase di esecuzione. WordArt consente di aggiungere testo decorativo ai documenti di Microsoft Office Word. Questi effetti di testo speciali sono oggetti disegno che è possibile personalizzare e inserire nel documento.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -56,7 +57,7 @@ ms.locfileid: "107828436"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet108":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet108":::
 
-## <a name="add-wordart-at-design-time"></a>Aggiungere WordArt in fase di progettazione
+## <a name="add-wordart-at-design-time"></a>Aggiungere oggetti WordArt in fase di progettazione
  Se si sviluppa una personalizzazione a livello di documento, è possibile aggiungere un oggetto WordArt al documento in fase di progettazione.
 
 ### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>Per aggiungere un oggetto WordArt a un documento di Word in fase di progettazione
@@ -67,11 +68,11 @@ ms.locfileid: "107828436"
 
 3. Nel gruppo **Testo** fare clic su **WordArt** e quindi selezionare uno stile WordArt.
 
-4. Aggiungere il testo da visualizzare nel documento alla finestra di dialogo Modifica testo **WordArt** e fare clic su **OK.**
+4. Aggiungere il testo che si vuole visualizzare nel documento alla finestra di dialogo Modifica **testo WordArt** e fare clic su **OK.**
 
      Il testo verrà aggiunto al documento con lo stile WordArt selezionato applicato.
 
-## <a name="add-wordart-at-run-time"></a>Aggiungere WordArt in fase di esecuzione
+## <a name="add-wordart-at-run-time"></a>Aggiungere wordart in fase di esecuzione
  È possibile inserire un oggetto WordArt in un documento in corrispondenza della posizione corrente del cursore. La procedura è diversa per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Per aggiungere un oggetto WordArt in corrispondenza della posizione del cursore in una personalizzazione a livello di documento
@@ -100,11 +101,11 @@ ms.locfileid: "107828436"
 
 ## <a name="compile-the-code"></a>Compilare il codice
 
-- Un'immagine denominata *SamplePicture.jpg* deve esistere nell'unità C.
+- Un'immagine *denominataSamplePicture.jpg* deve esistere nell'unità C.
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Procedura: Inserire testo nei documenti di Word a livello di codice](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Procedura: Ripristinare le selezioni a livello di codice dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)
 - [Procedura: Salvare documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 927a005c00e710cec9d67d2f663b0e8acddea8d6
-ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
+ms.openlocfilehash: 8551d609fda85d94356528be645aff01a3a8cfe124884d9700bdd47a9cec44de
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114796229"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121367843"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usare IPython nella finestra interattiva
 
@@ -80,6 +81,6 @@ Per questa procedura dettagliata, è necessario avere installato IPython, numpy 
 
 IPython offre molte altre funzionalità utili, ad esempio l'escape nella shell di sistema, la sostituzione delle variabili, l'acquisizione dell'output e così via. Per altre [informazioni, vedere la documentazione di IPython.](https://ipython.org/documentation.html)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- Il [Data Science Virtual Machine Azure](/azure/machine-learning/data-science-virtual-machine/overview) è preconfigurato per l'esecuzione di jupyter notebook insieme a un'ampia gamma di altri strumenti data science.
+- Il [Data Science Virtual Machine Azure](/azure/machine-learning/data-science-virtual-machine/overview) è preconfigurato per l'esecuzione di jupyter notebook insieme a un'ampia gamma di altri strumenti data science distribuzione.

@@ -1,6 +1,6 @@
 ---
 title: Casella degli strumenti, scheda Dati
-description: Informazioni sugli oggetti dati disponibili nella scheda dati della finestra casella degli strumenti.
+description: Informazioni sugli oggetti dati che si trovano nella scheda Dati della finestra Casella degli strumenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f27f2fb082c478aecff3d64f418ed0e864e15df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c51e4ba5e75df5107ed7edd0324e581e0fc7cb6165a35eb0cf5fbb6f87f17bd2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964979"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372010"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 

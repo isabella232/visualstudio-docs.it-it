@@ -1,6 +1,6 @@
 ---
 description: Restituisce una copia dell'enumerazione dei moduli corrente come oggetto separato.
-title: 'IEnumDebugModules2:: Clone | Microsoft Docs'
+title: IEnumDebugModules2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: fd6d3abc-20d9-4f6f-9c8e-5bd29f68d47d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 803f6df911aeb3ea68a152524faf5a2e5ad9c9c5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7ad2c824122db30d12bb6226ca8dc2589ae8710c4b6920a840f95802e95bf22b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091656"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389150"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 Restituisce una copia dell'enumerazione corrente come oggetto separato.
@@ -48,7 +49,7 @@ int Clone(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata di questo metodo. Tuttavia, gli Stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
+ La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata a questo metodo. Tuttavia, gli stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

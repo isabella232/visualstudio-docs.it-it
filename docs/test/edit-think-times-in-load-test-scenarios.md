@@ -1,6 +1,6 @@
 ---
 title: Tempi di interazione utente per i test di carico
-description: Informazioni su come modificare il tempo interazione persona, che simula il comportamento umano che consente agli utenti di attendere tra le interazioni con un sito Web.
+description: Informazioni su come modificare il tempo di interazione, che simula il comportamento umano che fa attendere le interazioni con un sito Web.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -12,12 +12,13 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 0c6dc458fed9f03a4b9176817e243dca3a048b4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 3aad517c9e13c040769381039a36d44918435de1c5e283a8eed6e595515d8789
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887848"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384912"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificare i tempi di interazione utente per simulare i ritardi di interazione umana con i siti Web in scenari di test di carico
 
@@ -44,7 +45,7 @@ I tempi interazione utente vengono usati esattamente così come sono stati regis
 Il tempo interazione utente viene usato, ma variato in una curva normale. Fornisce una simulazione più realistica di utenti virtuali variando lievemente il tempo interazione utente tra le richieste.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà dello scenario del test di carico e delle relative descrizioni, vedere [proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario di test di carico](../test/load-test-scenario-properties.md).
 
 ## <a name="change-the-think-profile"></a>Modificare il profilo interazione utente
 
@@ -52,9 +53,9 @@ Il tempo interazione utente viene usato, ma variato in una curva normale. Fornis
 
 1. Dal progetto di test di carico e prestazioni Web, aprire un test di carico.
 
-2. Nell'**Editor test di carico** scegliere il nodo dello scenario in cui modificare il **profilo interazione utente**. Il **profilo interazione** oggetto viene visualizzato nella finestra **Proprietà** . Premere **F4** per visualizzare la finestra **Proprietà**.
+2. Nell'**Editor test di carico** scegliere il nodo dello scenario in cui modificare il **profilo interazione utente**. Il **profilo think** viene visualizzato nella **finestra** Proprietà. Premere **F4** per visualizzare la finestra **Proprietà**.
 
-3. Modificare la proprietà **profilo interazione** nella finestra **Proprietà** .
+3. Modificare la **proprietà Think Profile** nella **finestra** Proprietà.
 
 4. Dopo avere apportato le modifiche alle proprietà, scegliere **Salva** nel menu **File**. È quindi possibile eseguire il test di carico con il nuovo profilo interazione utente.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: eseguire il mapping di schemi a fogli di fogli di Visual Studio'
-description: Informazioni su come è possibile eseguire il mapping di un XML Schema a un foglio di lavoro di Excel Microsoft Office mentre il foglio di lavoro è aperto in Visual Studio.
+title: "Procedura: Eseguire il mapping degli schemi ai fogli di lavoro all'interno Visual Studio"
+description: Informazioni su come eseguire il mapping di uno schema XML a un Microsoft Office Excel di lavoro mentre il foglio di lavoro è aperto in Visual Studio.
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
@@ -16,56 +16,57 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0e6d868655e3f697a7f659064026929568f2e400
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fb7a8a2a3ae7a8b0f7f3898fdf5b13b105f58886f1d5586f98ad625cbaa5d0a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900846"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424124"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procedura: eseguire il mapping di schemi a fogli di fogli di Visual Studio
-  È possibile eseguire il mapping di un XML Schema a un foglio di un foglio di tempo mentre il foglio di foglio è aperto in Visual Studio Si usa lo stesso Microsoft Office strumenti di Excel usati quando la cartella di lavoro è aperta all'esterno di Visual Studio. Il progetto di Office crea gli stessi oggetti se lo schema viene mappato al foglio di lavoro prima o dopo la creazione della soluzione Excel.
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procedura: Eseguire il mapping degli schemi ai fogli di lavoro all'interno Visual Studio
+  È possibile eseguire il mapping di uno schema XML a un foglio di lavoro mentre il foglio di lavoro è aperto in Visual Studio. Usare gli stessi strumenti Microsoft Office Excel utilizzati quando la cartella di lavoro è aperta all'esterno Visual Studio. Il Office crea gli stessi oggetti, indipendentemente dal fatto che lo schema venga mappato al foglio di lavoro prima o dopo aver creato la Excel soluzione.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
-> Non è possibile utilizzare schemi XML multipart in soluzioni Excel.
+> Non è possibile usare XML Schema multipart in Excel soluzioni.
 
-## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Per eseguire il mapping di un XML Schema a un foglio di lavoro di Excel in Visual Studio
+## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Per eseguire il mapping di uno schema XML a un Excel di lavoro di Visual Studio
 
-1. Aprire la cartella di lavoro di Excel o il progetto di modello all'interno di Visual Studio.
+1. Aprire il progetto Excel cartella di lavoro o modello all'interno Visual Studio.
 
-2. Fare clic nel foglio di foglio per spostare lo stato attivo sulla finestra di progettazione.
+2. Fare clic nel foglio di lavoro per spostare lo stato attivo sulla finestra di progettazione.
 
 3. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
     > [!NOTE]
-    > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per ulteriori informazioni, vedere [procedura: visualizzare la scheda Developer sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda Sviluppatore sulla barra multifunzione.](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
 
-4. Nel gruppo **XML** fare clic su **origine**.
+4. Nel gruppo **XML** fare clic su **Origine**.
 
-     Verrà visualizzata la finestra **origine XML** .
+     Verrà **visualizzata la finestra Origine XML.**
 
-5. Nella finestra **origine XML** fare clic su **mappe XML**.
+5. Nella finestra **Origine XML fare** clic su XML **Mappe**.
 
-     Verrà visualizzata la finestra di dialogo **mapping XML** .
+     Verrà **visualizzata la Mappe** xml .
 
-6. Nella finestra di dialogo **mappe XML** fare clic su **Aggiungi**.
+6. Nella finestra **di dialogo Mappe** XML fare clic su **Aggiungi**.
 
-7. Individuare il file di schema, selezionarlo e quindi fare clic su **Apri**.
+7. Passare al file di schema, selezionarlo e quindi fare clic su **Apri.**
 
 8. Fare clic su **OK**.
 
-     Lo schema è rappresentato nella finestra di **origine XML** . Nel progetto, un oggetto tipizzato <xref:System.Data.DataSet> viene generato in base allo schema e <xref:System.Windows.Forms.BindingSource> viene creato un oggetto.
+     Lo schema è rappresentato nella **finestra Origine XML.** Nel progetto viene generato un oggetto <xref:System.Data.DataSet> tipidato in base allo schema e viene <xref:System.Windows.Forms.BindingSource> creato un oggetto .
 
-9. Trascinare gli elementi dalla finestra di **origine XML** ai punti del foglio di lavoro in cui si desidera creare i controlli corrispondenti.
+9. Trascinare elementi dalla **finestra Origine XML** nelle posizioni del foglio di lavoro in cui si desidera creare i controlli corrispondenti.
 
-     Se si trascina un elemento dello schema non ripetuto, il progetto di Office genera un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo che viene associato automaticamente a <xref:System.Windows.Forms.BindingSource> .
+     Se si trascina un elemento dello schema non ripetuto, il Office genera un controllo associato <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> automaticamente a <xref:System.Windows.Forms.BindingSource> .
 
-     Se si trascina un elemento dello schema ripetuto, il progetto di Office genera un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo che non viene associato automaticamente a un'origine dati. Per ulteriori informazioni, vedere [XML Schema e dati nelle personalizzazioni a livello di documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
+     Se si trascina un elemento dello schema ripetuto, il Office genera un controllo che non viene associato <xref:Microsoft.Office.Tools.Excel.ListObject> automaticamente a un'origine dati. Per altre informazioni, vedere [XML Schema e dati nelle personalizzazioni a livello di documento.](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: eseguire il mapping degli schemi a documenti di Word in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
-- [XML Schema e dati nelle personalizzazioni a livello di documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+- [Procedura: Eseguire il mapping di schemi a documenti di Word all'interno Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
+- [Xml Schema e dati nelle personalizzazioni a livello di documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

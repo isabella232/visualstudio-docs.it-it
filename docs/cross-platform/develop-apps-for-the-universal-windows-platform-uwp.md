@@ -1,6 +1,6 @@
 ---
 title: Sviluppare app per la piattaforma UWP (Universal Windows Platform)
-description: Informazioni sulla creazione di app usando Visual Studio e gli piattaforma UWP (Universal Windows Platform) di sviluppo.
+description: Informazioni sulla creazione di app con Visual Studio e gli strumenti di sviluppo della Windows universali.
 ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: e54fdd71d848d1edad93fe38598d71c9dbbede7f
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: ae5da20dd7eb508745621f517abf77240d32f062c6df9f3e5e27c37ab3f7db44
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308116"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420894"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Sviluppare app per la piattaforma UWP (Universal Windows Platform)
 

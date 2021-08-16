@@ -1,6 +1,6 @@
 ---
 title: Come creare e applicare una risorsa
-description: Informazioni su come creare e applicare una risorsa nel finestra di progettazione XAML in modo che sia possibile archiviare e riutilizzare stili e modelli per gli elementi.
+description: Informazioni su come creare e applicare una risorsa nel finestra di progettazione XAML in modo da poter archiviare e riutilizzare stili e modelli per gli elementi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,14 +11,15 @@ ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff5ed15a39df75d01ea2ac1be9abf03df04393c4a573ef47f28deef7251e4af0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971609"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365387"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 
@@ -56,7 +57,7 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 2. Eseguire una delle operazioni seguenti:
 
-   - Applicare una risorsa a una proprietà. Nella finestra **Proprietà** scegliere il marcatore della proprietà accanto al valore della proprietà, scegliere **risorsa locale** o **risorsa di sistema**, quindi scegliere una risorsa disponibile nell'elenco visualizzato.
+   - Applicare una risorsa a una proprietà. Nella finestra **Proprietà** scegliere l'indicatore di proprietà  accanto al valore della proprietà, scegliere Risorsa locale o Risorsa di sistema **e** quindi scegliere una risorsa disponibile nell'elenco visualizzato.
 
       Se non viene visualizzata una risorsa prevista, è possibile che il tipo della risorsa non corrisponda al tipo della proprietà.
 

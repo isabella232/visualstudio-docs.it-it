@@ -1,5 +1,5 @@
 ---
-description: "IDiaSession:: findInlineeLinesByRVA recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'indirizzo RVA (relativo Virtual Address) specificato."
+description: IDiaSession::findInlineeLinesByRVA recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e contenute nell'indirizzo virtuale relativo specificato.
 title: IDiaSession::findInlineeLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 7a74d5ee-0dbf-47c0-92b4-47ec03b13ce9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b9989ffd3c8b4cf03b82cbb0f310840572315031
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 62997b528ff7814dee765a5b3408a576419332994e5463a132f42556f183cb6f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147758"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391824"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
-Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'indirizzo RVA (relativo Virtual Address) specificato.
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni che sono inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'indirizzo virtuale relativo (RVA) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,19 +36,19 @@ HRESULT findInlineeLinesByRVA (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in `IDiaSymbol` Oggetto che rappresenta l'elemento padre.
+[in] Oggetto `IDiaSymbol` che rappresenta l'elemento padre.
 
  `rva`
 
-in Specifica l'indirizzo come RVA.
+[in] Specifica l'indirizzo come RVA.
 
  `length`
 
-in Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query.
+[in] Specifica l'intervallo di indirizzi, in numero di byte, da coprire con questa query.
 
  `ppResult`
 
-out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.
+[out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco di numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

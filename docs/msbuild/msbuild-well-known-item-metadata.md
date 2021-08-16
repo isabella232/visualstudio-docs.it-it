@@ -1,6 +1,6 @@
 ---
 title: Metadati noti degli elementi di MSBuild | Microsoft Docs
-description: Informazioni sui metadati MSBuild assegnati a ogni elemento al momento della creazione e alcuni metadati facoltativi di MSBuild che è possibile definire per controllare il comportamento della compilazione.
+description: Informazioni sui MSBuild assegnati a ogni elemento al momento della creazione e su alcuni MSBuild facoltativi che è possibile definire per controllare il comportamento di compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,20 +16,21 @@ ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d9ca2249e6119e27574791a2cbd9e8b09a9bde63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61cef1a4b6fc8d7db78cda6f034d5a897aebc3874b3e27282b6927ef2c3288e7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878183"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397345"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadati noti degli elementi di MSBuild
 
-I metadati degli elementi sono valori allegati agli elementi. Alcuni sono assegnati da MSBuild agli elementi quando vengono creati elementi, ma è anche possibile definire i metadati necessari. Alcuni valori di metadati definiti dall'utente hanno significato per MSBuild, attività specifiche delle attività o SDK come .NET SDK.
+I metadati degli elementi sono valori associati agli elementi. Alcuni vengono assegnati MSBuild agli elementi quando vengono creati elementi, ma è anche possibile definire i metadati necessari. Alcuni valori di metadati definiti dall'utente hanno un significato MSBuild, attività specifiche o SDK, ad esempio .NET SDK.
 
-La prima tabella di questo articolo descrive i metadati assegnati a ogni elemento al momento della creazione. La tabella seguente mostra alcuni metadati facoltativi che hanno un significato per MSBuild, che è possibile definire per controllare il comportamento della compilazione. In ogni esempio è stata usata la dichiarazione di elemento riportata di seguito per includere il file *C:\MyProject\Source\Program.cs* nel progetto.
+La prima tabella di questo articolo descrive i metadati assegnati a ogni elemento al momento della creazione. La tabella seguente mostra alcuni metadati facoltativi che hanno un significato per MSBuild, che è possibile definire per controllare il comportamento di compilazione. In ogni esempio è stata usata la dichiarazione di elemento riportata di seguito per includere il file *C:\MyProject\Source\Program.cs* nel progetto.
 
 ```xml
 <ItemGroup>
@@ -39,16 +40,16 @@ La prima tabella di questo articolo descrive i metadati assegnati a ogni element
 
 |Metadati degli elementi|Descrizione|
 |-------------------|-----------------|
-|%(FullPath)|Contiene il percorso completo dell'elemento. Ad esempio:<br /><br /> *C:\MyProject\Source\Program.cs*|
-|%(RootDir)|Contiene la directory radice dell'elemento. Ad esempio:<br /><br /> *C\\*|
-|%(Filename)|Contiene il nome file dell'elemento, senza estensione. Ad esempio:<br /><br /> *Programma*|
-|%(Extension)|Contiene l'estensione del nome file dell'elemento. Ad esempio:<br /><br /> *. cs*|
-|%(RelativeDir)|Contiene il percorso specificato nell'attributo `Include`, fino alla barra rovesciata (\\) finale. Ad esempio:<br /><br /> *Origine\\*<br /><br /> Se l' `Include` attributo è un percorso completo, `%(RelativeDir)` inizia con la directory radice `%(RootDir)` .  Ad esempio: <br /><br /> *C:\MyProject\Source\\*|
-|%(Directory)|Contiene la directory dell'elemento, senza la directory radice. Ad esempio:<br /><br /> *MyProject\\Source\\*|
+|%(FullPath)|Contiene il percorso completo dell'elemento. Esempio:<br /><br /> *C:\MyProject\Source\Program.cs*|
+|%(RootDir)|Contiene la directory radice dell'elemento. Esempio:<br /><br /> *C:\\*|
+|%(Filename)|Contiene il nome file dell'elemento, senza estensione. Esempio:<br /><br /> *Programma*|
+|%(Extension)|Contiene l'estensione del nome file dell'elemento. Esempio:<br /><br /> *Cs*|
+|%(RelativeDir)|Contiene il percorso specificato nell'attributo `Include`, fino alla barra rovesciata (\\) finale. Esempio:<br /><br /> *Origine\\*<br /><br /> Se `Include` l'attributo è un percorso completo, `%(RelativeDir)` inizia con la directory radice `%(RootDir)` .  Esempio: <br /><br /> *C:\MyProject\Source\\*|
+|%(Directory)|Contiene la directory dell'elemento, senza la directory radice. Esempio:<br /><br /> *MyProject\\Source\\*|
 |%(RecursiveDir)|Se l'attributo `Include` contiene il carattere jolly \*\*, questi metadati specificano la parte del percorso che sostituisce il carattere jolly. Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Se la cartella *C:\MySolution\MyProject\Source\\* contiene il file *Program.cs* e se il file di progetto contiene l'elemento seguente:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> il valore di `%(MyItem.RecursiveDir)` sarà *MySolution\MyProject\Source\\*.|
-|%(Identity)|Elemento specificato nell' `Include` attributo. Ad esempio:<br /><br /> *Source\Program.cs*|
-|%(ModifiedTime)|Contiene il timestamp relativo all'ultima modifica dell'elemento. Ad esempio:<br /><br /> `2004-07-01 00:21:31.5073316`|
-|%(CreatedTime)|Contiene il timestamp relativo alla creazione dell'elemento. Ad esempio:<br /><br /> `2004-06-25 09:26:45.8237425`|
+|%(Identity)|Elemento specificato `Include` nell'attributo. Esempio:<br /><br /> *Source\Program.cs*|
+|%(ModifiedTime)|Contiene il timestamp relativo all'ultima modifica dell'elemento. Esempio:<br /><br /> `2004-07-01 00:21:31.5073316`|
+|%(CreatedTime)|Contiene il timestamp relativo alla creazione dell'elemento. Esempio:<br /><br /> `2004-06-25 09:26:45.8237425`|
 |%(AccessedTime)|Contiene il timestamp relativo all'ora dell'ultimo accesso all'elemento.<br /><br /> `2004-08-14 16:52:36.3168743`|
 
 ## <a name="see-also"></a>Vedi anche

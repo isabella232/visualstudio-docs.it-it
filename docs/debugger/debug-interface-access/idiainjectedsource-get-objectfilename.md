@@ -11,14 +11,15 @@ ms.assetid: 7c42847a-f0df-443a-a9fe-c495c1271ea8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 576539b278b353facf5d8d946ed4aacd73678a53
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8774efa9bc1f8fe7a35883901be6d795116950e101d01f42093da692fb84d028
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148437"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392272"
 ---
 # <a name="idiainjectedsourceget_objectfilename"></a>IDiaInjectedSource::get_objectFilename
 Recupera il nome del file oggetto in cui è stata compilata l'origine.
@@ -34,7 +35,7 @@ HRESULT get_objectFilename (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il nome del file oggetto in cui è stata compilata l'origine.
+[out] Restituisce il nome del file oggetto in cui è stata compilata l'origine.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

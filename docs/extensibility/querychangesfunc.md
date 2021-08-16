@@ -13,14 +13,15 @@ ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b061fbfb6644f77348574020c0a5cb614691ae6b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e9a28e4f75187cce110280d471f0a6f830d52e96706654c91929b324da70f57d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375169"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Si tratta di una funzione di callback usata [dall'operazione SccQueryChanges](../extensibility/sccquerychanges-function.md) per enumerare una raccolta di nomi di file e determinare lo stato di ogni file.
@@ -52,7 +53,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |-----------|-----------------|
 |SCC_OK|Continuare l'elaborazione.|
 |SCC_I_OPERATIONCANCELED|Consente di arrestare l'elaborazione.|
-|SCC_E_xxx|Qualsiasi errore SCC appropriato deve interrompere l'elaborazione.|
+|SCC_E_xxx|Qualsiasi errore SCC appropriato deve arrestare l'elaborazione.|
 
 ## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a> Struttura QUERYCHANGESDATA
  La struttura passata per ogni file è simile alla seguente:
@@ -94,11 +95,11 @@ struct QUERYCHANGESDATA_W
 |`SCC_CHANGE_DATABASE_ADDED`|Il file è stato aggiunto al database ma non esiste in locale.|
 |`SCC_CHANGE_LOCAL_ADDED`|Il file non esiste nel database ed è un nuovo file locale.|
 |`SCC_CHANGE_RENAMED_TO`|File rinominato o spostato nel database come `lpLatestName` .|
-|`SCC_CHANGE_RENAMED_FROM`|File rinominato o spostato nel database da . Se è troppo costoso da `lpLatestName` rilevare, restituire un flag diverso, ad esempio `SCC_CHANGE_DATABASE_ADDED` .|
+|`SCC_CHANGE_RENAMED_FROM`|File rinominato o spostato nel database da . Se questo è troppo costoso da `lpLatestName` rilevare, restituire un flag diverso, ad esempio `SCC_CHANGE_DATABASE_ADDED` .|
 
  lpLatestName Nome del file corrente per questo elemento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [Codici di errore](../extensibility/error-codes.md)

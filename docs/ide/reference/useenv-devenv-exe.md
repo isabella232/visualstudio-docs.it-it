@@ -1,6 +1,6 @@
 ---
 title: -UseEnv (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando UseEnv devenv per avviare Visual Studio e caricare determinate variabili di ambiente per la compilazione.
+description: Informazioni su come usare l'opzione della riga di comando Devenv UseEnv per avviare Visual Studio e caricare determinate variabili di ambiente per la compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: reference
@@ -19,14 +19,15 @@ ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c37bbdf49fe1c73a3f087058256a2c58ae9602
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a8c4cd8b54ab7127fb9503cc461281bd176d15aff4320424eb5641eb4929d6ff
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889758"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400075"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -43,7 +44,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="arguments"></a>Argomenti
 
-- *NomeSoluzione*
+- *Solutionname*
 
   Percorso completo e nome del file di soluzione.
 
@@ -53,7 +54,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="remarks"></a>Commenti
 
-Questa opzione influisce sull'IDE di Visual Studio nelle proprietà del progetto per **Directory di VC++**. Se si specifica l'opzione `/UseEnv`, il nodo **Directory di VC++** mostra i valori per le variabili di ambiente PATH, INCLUDE, LIBPATH e LIB. Mostra anche i valori per le **directory di origine** e le **directory di esclusione**. In caso contrario, il nodo sostituisce le variabili di ambiente con cinque valori di directory: **directory eseguibili**, **directory di inclusione**, **directory di riferimento**, **directory di libreria** e **directory WinRT della libreria**.
+Questa opzione influisce sull'IDE di Visual Studio nelle proprietà del progetto per **Directory di VC++**. Se si specifica l'opzione `/UseEnv`, il nodo **Directory di VC++** mostra i valori per le variabili di ambiente PATH, INCLUDE, LIBPATH e LIB. Vengono visualizzati anche i valori per **Directory di origine** ed **Escludi** directory. In caso contrario, il nodo sostituisce le variabili di ambiente con cinque valori di directory: **Directory** eseguibili , **Directory** di inclusione **,** Directory di riferimento **,** Directory libreria e Directory **WinRT della libreria**.
 
 > [!TIP]
 > Per accedere alle proprietà del progetto, fare clic con il pulsante destro del mouse su un progetto C++ e scegliere **Proprietà**. Nella finestra di dialogo **Pagine delle proprietà** selezionare **Proprietà di configurazione** e quindi **Directory di VC++**.

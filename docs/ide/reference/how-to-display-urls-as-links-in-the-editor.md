@@ -12,14 +12,15 @@ ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 54db0ab6ae6614e9f1c867aa40761f09b96f0fc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e7db56002849857d6ebde7b81b380cba19ed18ee4fb47fe66d991f9ad6265fa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958336"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429225"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: visualizzare gli URL come collegamenti nell'editor
 
@@ -29,7 +30,7 @@ ms.locfileid: "99958336"
 
 - Visualizzano una **descrizione comando** quando si passa il puntatore su di essi.
 
-- Provare ad aprire il sito Web indicato quando **si** + **fa clic** sul collegamento. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
+- Provare ad aprire il sito Web indicato quando si fa clic sul collegamento **tenendo** +  premuto CTRL. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
 
 ## <a name="display-urls-as-links"></a>Visualizzare gli URL come collegamenti
 

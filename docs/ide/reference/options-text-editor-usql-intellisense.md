@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, U-SQL, IntelliSense
-description: Informazioni su come usare la pagina IntelliSense nella sezione U-SQL per modificare le impostazioni IntelliSense dell'editor di testo per U-SQL.
+description: Informazioni su come usare la pagina IntelliSense nella sezione U-SQL per modificare le impostazioni intelliSense dell'editor di testo per U-SQL.
 ms.custom: SEO-VS-2020
 ms.date: 01/17/2019
 ms.topic: reference
@@ -10,18 +10,19 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe7fc81fdc27fc2cdb126e2bf50d07dd3048ec9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09a81ae9a5dbb0392026d6e63e4b430a4f9a1bee5dcadb83843d5f2fd0b7b63c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970829"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387226"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opzioni, Editor di testo, U-SQL, IntelliSense
 
-Usare la pagina delle opzioni **IntelliSense** per modificare alcune impostazioni dell'editor di testo per U-SQL. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  IntelliSense per **U-SQL**  >  .
+Usare la pagina delle opzioni **IntelliSense** per modificare alcune impostazioni dell'editor di testo per U-SQL. Per accedere a questa pagina delle opzioni, **scegliere** Opzioni strumenti e quindi Editor di  >  testo   >  **U-SQL**  >  **IntelliSense**.
 
 ## <a name="intellisense-settings"></a>Impostazioni di IntelliSense
 
@@ -29,9 +30,9 @@ Selezionare una casella di controllo per abilitare **Informazioni rapide** oppur
 
 ## <a name="completion-lists"></a>Elenchi di completamento
 
-- **Mostra elenco di completamento dopo la digitazione di un carattere**
+- **Visualizzare l'elenco di completamento dopo la digitazione di un carattere**
 
-   Quando questa opzione è selezionata, IntelliSense visualizza automaticamente l'elenco di completamento quando si inizia a digitare. Se non si seleziona questa opzione, il completamento di IntelliSense sarà ancora disponibile dal menu IntelliSense o premendo **CTRL**  +  **barra spaziatrice**.
+   Quando questa opzione è selezionata, IntelliSense visualizza automaticamente l'elenco di completamento quando si inizia a digitare. Se non si seleziona questa opzione, il completamento intelliSense è ancora disponibile dal menu IntelliSense o premendo **CTRL**  +  **BARRA SPAZIATRICE.**
 
 - **Inserisci parole chiave in elenchi di completamento**
 
@@ -57,5 +58,5 @@ Selezionare una casella di controllo per abilitare **Informazioni rapide** oppur
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Uso di IntelliSense](../../ide/using-intellisense.md)

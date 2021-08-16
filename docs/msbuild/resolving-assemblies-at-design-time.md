@@ -1,6 +1,6 @@
 ---
 title: Risoluzione di assembly in fase di progettazione | Microsoft Docs
-description: Informazioni sul modo in cui MSBuild risolve i riferimenti agli assembly in fase di progettazione usando gli assembly di riferimento nel Targeting Pack.
+description: Informazioni su MSBuild risolvere i riferimenti agli assembly in fase di progettazione usando gli assembly di riferimento nel targeting pack.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f7927ff370ab05f4931cb0346f00f65157a411d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 832448d53b7ae6841732bc27fe345c7d02b249c48d422859fc3642c086055f66
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937927"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369813"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Risoluzione di assembly in fase di progettazione
 
@@ -25,11 +26,11 @@ Quando si aggiunge un riferimento a un assembly tramite la scheda **.NET** della
 
 ## <a name="multi-targeting"></a>Multitargeting
 
- Visual Studio consente di specificare come destinazione le versioni del .NET Framework eseguite in più versioni del .NET Framework. Quando viene rilasciata una nuova versione di .NET Framework, è possibile installare il Framework utilizzando un Targeting Pack, che verrà automaticamente visualizzato come destinazione in Visual Studio.
+ Visual Studio consente di specificare come destinazione le versioni .NET Framework che vengono eseguite in più versioni del .NET Framework. Quando viene rilasciata una nuova versione .NET Framework, Il framework può essere installato usando un Targeting Pack e verrà automaticamente visualizzato come destinazione in Visual Studio.
 
 ## <a name="how-type-resolution-works"></a>Funzionamento della risoluzione dei tipi
 
- In fase di esecuzione, CLR risolve i tipi nell'assembly cercando nella GAC, nella directory *bin* e nei percorsi di probe. Questa operazione è gestita dal caricatore Fusion. Tuttavia, come fa il caricatore Fusion a sapere cosa sta cercando? Ciò dipende da una risoluzione eseguita in fase di progettazione, quando l'applicazione viene compilata.
+ In fase di esecuzione, CLR risolve i tipi nell'assembly esaminando la GAC, la directory *bin* e tutti i percorsi di probe. Questa operazione è gestita dal caricatore Fusion. Tuttavia, come fa il caricatore Fusion a sapere cosa sta cercando? Ciò dipende da una risoluzione eseguita in fase di progettazione, quando l'applicazione viene compilata.
 
  Durante la compilazione, il compilatore risolve i tipi dell'applicazione mediante assembly di riferimento. Nel caso di .NET Framework versioni 2.0, 3.0 e 3.5, 4, 4.5 e 4.5.1, gli assembly di riferimento vengono installati contemporaneamente a .NET Framework.
 

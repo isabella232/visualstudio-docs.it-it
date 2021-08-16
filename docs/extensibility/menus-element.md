@@ -1,6 +1,6 @@
 ---
 title: Elemento Menus | Microsoft Docs
-description: L'elemento Menus definisce tutti i menu e le barre degli strumenti implementati da un VSPackage. Questo articolo contiene un esempio.
+description: L'elemento Menus definisce tutti i menu e le barre degli strumenti implementati da un vspackage. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59c8cb242322cbb52aa90b821e14698ace6d0534
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f13623fbd4d8116c86a71e22cd184749f25786e2b39b0f71af8f47c9716e1a75
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905579"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400946"
 ---
 # <a name="menus-element"></a>Elemento Menus
-Definisce tutti i menu e le barre degli strumenti implementati da un VSPackage.
+Definisce tutti i menu e le barre degli strumenti implementati da un vspackage.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +40,13 @@ Definisce tutti i menu e le barre degli strumenti implementati da un VSPackage.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu e le barre degli strumenti implementati da un VSPackage.|
+|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu e le barre degli strumenti implementati da un vspackage.|
 |[Elemento Menu](../extensibility/menu-element.md)|Rappresenta un singolo menu o barra degli strumenti.|
 
 ### <a name="parent-elements"></a>Elementi padre

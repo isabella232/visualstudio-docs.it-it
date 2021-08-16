@@ -11,14 +11,15 @@ ms.assetid: 0350df23-9a5d-4e8d-8c26-7f571d8fb1af
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b225f42d7ea8ed0d75e931b63d0ae68ce8ede897
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 14764b3836509957a4f35d42b404f6842734acf8b59dfbde8544ede7e44cfff1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158943"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380164"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 Recupera un tipo di simbolo specificato che contiene o è più vicino a un indirizzo virtuale specificato.
@@ -36,15 +37,15 @@ HRESULT findSymbolByVA (
 #### <a name="parameters"></a>Parametri
  `va`
 
-in Specifica l'indirizzo virtuale.
+[in] Specifica l'indirizzo virtuale.
 
  `symtag`
 
-in Tipo di simbolo da trovare. I valori vengono ricavati dall'enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .
+[in] Tipo di simbolo da trovare. I valori vengono presi [dall'enumerazione SymTagEnum.](../../debugger/debug-interface-access/symtagenum.md)
 
  `ppSymbol`
 
-out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo recuperato.
+[out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo recuperato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

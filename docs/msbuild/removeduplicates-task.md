@@ -1,6 +1,6 @@
 ---
 title: Attività RemoveDuplicates | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività RemoveDuplicates per rimuovere gli elementi duplicati dalla raccolta di elementi specificata.
+description: Informazioni su MSBuild'attività RemoveDuplicates per rimuovere elementi duplicati dalla raccolta di elementi specificata.
 ms.custom: SEO-VS-2020
 ms.date: 03/01/2018
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bb2a260f0b9903837b6f1bb8ce8a2e4a2fe691e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f987a524d3184bbfc6a019d4e6061f5b14f3b78fe4682cdab225f7c4a9b292e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931786"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369975"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (attività)
 
@@ -44,7 +45,7 @@ Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
 
  In questa attività non viene fatta distinzione tra maiuscole e minuscole e non vengono confrontati i metadati quando si determinano i duplicati.
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 

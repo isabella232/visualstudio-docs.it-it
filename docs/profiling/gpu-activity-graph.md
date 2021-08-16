@@ -1,6 +1,6 @@
 ---
 title: Grafico Attività GPU | Microsoft Docs
-description: Informazioni sul grafico delle attività GPU, che consente di visualizzare nel Visualizzatore di concorrenza il livello di attività DirectX nel sistema.
+description: Informazioni sul grafico attività GPU, che visualizza nel visualizzatore di concorrenza il livello di attività DirectX nel sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: d7c769af-95fb-49a3-b5ab-deafecee46fa
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f3e4ce7f155679bc3c701af90ff51e0fb20239
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a2410ddbeb365cb908c5718b3800f41f8eb28997ed3e22ccbf63589c601e0b0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907274"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368591"
 ---
 # <a name="gpu-activity-graph"></a>Grafico Attività GPU
 Il grafico Attività GPU nel visualizzatore di concorrenza visualizza il livello di attività di DirectX nel sistema, misurato in base al numero dei motori di DirectX usati nel tempo.  Il grafico non mostra gli specifici motori usati.  Un motore viene considerato in uso se sta elaborando una qualsiasi operazione GPU.

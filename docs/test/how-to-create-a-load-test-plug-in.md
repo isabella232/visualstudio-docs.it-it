@@ -1,6 +1,6 @@
 ---
 title: Creare un plug-in test di carico
-description: Informazioni su come creare un plug-in test di carico per eseguire il codice in momenti diversi durante l'esecuzione del test di carico, che può espandere o modificare la funzionalità del test di carico.
+description: Informazioni su come creare un plug-in del test di carico per eseguire codice in momenti diversi durante l'esecuzione del test di carico, che può espandere o modificare la funzionalità del test di carico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -14,19 +14,20 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: f8ba810665bce520b82777512b396a693e580a0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 9bb687a250b35a9805dd62eb8008440523d3dd2957d889f0d1a303b07eba8c4a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878006"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384893"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedura: Creare un plug-in test di carico
 
 È possibile creare un plug-in test di carico per eseguire il codice in momenti diversi durante l'esecuzione del test di carico. Si crea un plug-in per espandere o modificare le funzioni incorporate del test di carico. È ad esempio possibile scrivere codice per un plug-in test di carico per impostare o modificare il modello del test di carico durante l'esecuzione del test di carico. A tale scopo, è necessario creare una classe che erediti l'interfaccia <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Tale classe deve implementare il metodo <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> dell'interfaccia. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!TIP]
-> È anche possibile creare plug-in per i test web. Per ulteriori informazioni, vedere [procedura: creare un plug-in del test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+> È anche possibile creare plug-in per i test web. Per altre informazioni, [vedere Procedura: Creare un plug-in test prestazioni Web.](../test/how-to-create-a-web-performance-test-plug-in.md)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,9 +41,9 @@ ms.locfileid: "99878006"
 
      Per altre informazioni, vedere [Avvio rapido: Creare un progetto di test di carico](../test/quickstart-create-a-load-test-project.md).
 
-3. Aggiungere alla soluzione un nuovo progetto **Libreria di classi**. (In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi** , quindi **nuovo progetto**).
+3. Aggiungere alla soluzione un nuovo progetto **Libreria di classi**. In **Esplora soluzioni** fare clic con il pulsante destro  del mouse sulla soluzione e scegliere **Aggiungi** e quindi Project.
 
-4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
+4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse **sulla cartella Riferimenti** nella nuova libreria di classi e scegliere Aggiungi **riferimento.**
 
    Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
@@ -50,11 +51,11 @@ ms.locfileid: "99878006"
 
 6. Scegliere **OK**.
 
-   Il riferimento a **Microsoft. VisualStudio. QualityTools. LoadTestFramework** viene aggiunto alla cartella **riferimenti** in **Esplora soluzioni**.
+   Il riferimento a **Microsoft.VisualStudio.QualityTools.LoadTestFramework** viene aggiunto alla cartella **Reference** in **Esplora soluzioni**.
 
-7. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni Web contenente il test di carico al quale si desidera aggiungere il plug-in test di carico e selezionare **Aggiungi riferimento**.
+7. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni Web contenente **il** test di carico a cui si vuole aggiungere il plug-in test di carico e scegliere **Aggiungi riferimento.**
 
-   Verrà visualizzata la finestra di **dialogo Aggiungi riferimento**.
+   Verrà **visualizzata la finestra di dialogo Aggiungi riferimento**.
 
 8. Scegliere la scheda **Progetti** e selezionare il progetto di libreria di classi.
 
@@ -75,7 +76,7 @@ ms.locfileid: "99878006"
 15. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
     > [!NOTE]
-    > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È inoltre possibile modificare le proprietà del plug-in del test delle prestazioni Web in un secondo momento utilizzando la finestra **Proprietà** .
+    > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in test prestazioni Web in un secondo momento usando la **finestra** Proprietà.
 
 16. Scegliere **OK**.
 
@@ -84,7 +85,7 @@ ms.locfileid: "99878006"
     > [!WARNING]
     > Quando si esegue un test delle prestazioni Web o un test di carico in cui viene usato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
-    > **Richiesta non riuscita: eccezione nell' \<plug-in> evento: Impossibile caricare il file o l'assembly ' \<"Plug-in name".dll file> , Version = \<n.n.n.n> , Culture = neutral, PublicKeyToken = null ' o una delle relative dipendenze. Il sistema non è in grado di trovare il file specificato.**
+    > **Richiesta non riuscita: Eccezione nel caso in cui non sia stato possibile caricare il file o \<plug-in> l'assembly \<"Plug-in name".dll file> ', Version= \<n.n.n.n> , Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Impossibile trovare il file specificato.**
     >
     > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)**, ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >
@@ -163,4 +164,4 @@ A un test di carico sono associati otto eventi che possono essere gestiti nel pl
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Procedura: creazione di un plug-in del test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Procedura: Creare un plug-in test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)

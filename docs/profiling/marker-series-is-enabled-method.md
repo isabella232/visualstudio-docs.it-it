@@ -11,14 +11,15 @@ ms.assetid: 8ce4dd50-ca29-4c72-98d6-582693f7d501
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce01d71b3fac63062a3f823f1862fd199fa39be
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e5a7109d107a5ede295147174e8fc61c2c2e95fa8b92e639a22285164201a9b5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223576"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121426456"
 ---
 # <a name="marker_seriesis_enabled-method"></a>Metodo marker_series::is_enabled
 Determina se il provider è stato abilitato da una sessione.
@@ -46,4 +47,4 @@ bool is_enabled(
  **Spazio dei nomi:** Concurrency::diagnostic
 
 ## <a name="see-also"></a>Vedi anche
-- [classe marker_series](../profiling/marker-series-class.md)
+- [marker_series classe](../profiling/marker-series-class.md)

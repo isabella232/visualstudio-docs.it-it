@@ -11,17 +11,18 @@ ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c530caa530a230dc0fc0344a31e0ab7793f336f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: abdd04428695e105b7e9f3e14e740beef3a347574171296768af9a9637eaa592
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079774"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415273"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 Specifica i flag per le informazioni sul modulo di debug.
@@ -67,55 +68,55 @@ public enum enum_MODULE_INFO_FIELDS {
 
 ## <a name="fields"></a>Campi
  `MIF_NONE`\
- Inizializzare/usare nessuno dei campi nella struttura.
+ Inizializzare/usare nessuno dei campi nella struttura .
 
  `MIF_NAME`\
- Inizializza/usa il `m_bstrName` campo nella struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
+ Inizializzare/usare `m_bstrName` il campo nella [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struttura .
 
  `MIF_URL`\
- Inizializza/usa il `m_bstrUrl` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_bstrUrl` il campo nella struttura `MODULE_INFO` .
 
  `MIF_VERSION`\
- Inizializza/usa il `m_bstrVersion` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_bstrVersion` il campo nella struttura `MODULE_INFO` .
 
  `MIF_DEBUGMESSAGE`\
- Inizializza/usa il `m_bstrDebugMessage` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_bstrDebugMessage` il campo nella struttura `MODULE_INFO` .
 
  `MIF_LOADADDRESS`\
- Inizializza/usa il `m_addrLoadAddress` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_addrLoadAddress` il campo nella struttura `MODULE_INFO` .
 
  `MIF_PREFFEREDADDRESS`\
- Inizializza/usa il `m_addrPreferredLoadAddress` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_addrPreferredLoadAddress` il campo nella struttura `MODULE_INFO` .
 
  `MIF_SIZE`\
- Inizializza/usa il `m_dwSize` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_dwSize` il campo nella struttura `MODULE_INFO` .
 
  `MIF_LOADORDER`\
- Inizializza/usa il `m_dwLoadOrder` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_dwLoadOrder` il campo nella struttura `MODULE_INFO` .
 
  `MIF_TIMESTAMP`\
- Inizializza/usa il `m_TimeStamp` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_TimeStamp` il campo nella struttura `MODULE_INFO` .
 
  `MIF_URLSYMBOLLOCATION`\
- Inizializza/usa il `m_bstrUrlSymbolLocation` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_bstrUrlSymbolLocation` il campo nella struttura `MODULE_INFO` .
 
  `MIF_FLAGS`\
- Inizializza/usa il `m_dwModuleFlags` campo nella `MODULE_INFO` struttura.
+ Inizializzare/usare `m_dwModuleFlags` il campo nella struttura `MODULE_INFO` .
 
  `MIF_ALLFIELDS`\
- Inizializzare/utilizzare tutti i campi della `MODULE_INFO` struttura.
+ Inizializzare/usare tutti i campi nella `MODULE_INFO` struttura .
 
 ## <a name="remarks"></a>Commenti
- Questi valori vengono passati come argomento al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) per indicare quali campi della struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) devono essere inizializzati.
+ Questi valori vengono passati come argomento al [metodo GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) per indicare quali campi della [struttura](../../../extensibility/debugger/reference/module-info.md) MODULE_INFO devono essere inizializzati.
 
- Questi valori vengono inoltre utilizzati nella `MODULE_INFO` struttura per indicare quali campi vengono utilizzati e validi.
+ Questi valori vengono usati anche nella `MODULE_INFO` struttura per indicare quali campi vengono usati e validi.
 
- Questi flag possono essere combinati con un bit per bit `OR` .
+ Questi flag possono essere combinati con un bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

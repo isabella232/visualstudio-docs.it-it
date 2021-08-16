@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 8a75368e746a02ae0789d9f0a90bf2f8907e0d04
-ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
+ms.openlocfilehash: f32a4d8ddb851524da8c24b6890a36ed7e622e30d95bb7cd2f0a7cb9d17a8454
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114796203"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121421903"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 
@@ -21,7 +21,7 @@ Visual Studio per Mac offre due modi per aggiungere ulteriori riferimenti al pro
 
 Si tratta di:
 
-* Bibliografia
+* Riferimenti
 * NuGet pacchetti (aggiunti tramite la cartella Packages)
 
 A qualsiasi progetto è anche possibile aggiungere riferimenti Web e riferimenti nativi.
@@ -40,11 +40,11 @@ Per informazioni sugli assembly disponibili per ogni framework Xamarin, vedere l
 
 NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET. Il supporto di NuGet di Visual Studio per Mac consente di cercare i pacchetti da aggiungere al progetto.
 
-A tale scopo, fare clic con il pulsante destro del mouse sulla **cartella Pacchetto** nella finestra della soluzione e scegliere Aggiungi pacchetti.
+A tale scopo, fare clic con il pulsante destro **del mouse** sulla cartella Pacchetto nella finestra della soluzione e scegliere Aggiungi pacchetti.
 
 Per altre informazioni sull'uso di un pacchetto NuGet, vedere la procedura guidata [Inserimento di un pacchetto NuGet nel progetto](nuget-walkthrough.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire i riferimenti (Visual Studio in Windows)](/visualstudio/ide/managing-references-in-a-project)
 - [Aggiunta di riferimenti tramite NuGet o SDK di estensione (Visual Studio in Windows)](/visualstudio/extensibility/nuget-versus-sdk-references)

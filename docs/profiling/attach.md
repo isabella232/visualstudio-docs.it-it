@@ -1,6 +1,6 @@
 ---
 title: Attach | Microsoft Docs
-description: Usare l'opzione di connessione di VSPerfCmd.exe per avviare la profilatura del processo in esecuzione specificato dall'ID processo (PID).
+description: Usare l'opzione Collega VSPerfCmd.exe per avviare la profilatura del processo in esecuzione specificato dall'ID processo (PID).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,18 +8,19 @@ ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0098ec24047e6e16efd27c6aec26943671743bb4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04c21ccedcac25214c3620f0c1fc4c69be5837bcd57e40b2727e8de2403952da
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901103"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427223"
 ---
-# <a name="attach"></a>Allega
-L'opzione *Attach di* **VSPerfCmd.exe** avvia una profilatura campione del processo in esecuzione specificato dall'ID processo (PID).
+# <a name="attach"></a>Collegamento
+ **LVSPerfCmd.exe'opzione Collega** avvia la profilatura di esempio del processo in esecuzione specificato dall'ID processo (PID).
 
  Per usare l'opzione **Attach**, è necessario specificare il metodo **Sample** nell'opzione Start.
 
@@ -40,18 +41,18 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Crosssession** Consente la profilatura delle applicazioni in sessioni diverse da quella di accesso. Obbligatoria se l'opzione **Start** è stata specificata con l'opzione **Crosssession**.
 
- **Inizio:** `Method` Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.
+ **Avvio:** `Method` Inizializza la sessione del profiler della riga di comando e imposta il metodo di profilatura specificato.
 
  **TargetCLR** Specifica la versione di Common Language Runtime (CLR) di .NET Framework da sottoporre a profilatura quando in una sessione di profilatura è caricata più di una versione. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.
 
  **GlobalOn GlobalOff** Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.
 
- **ProcessOn:** `PID` **ProcessOff:** `PID` Riprende **(processon) o** sospende (**ProcessOff**) la profilatura per il processo specificato.
+ **ProcessOn:** `PID` **ProcessOff:** `PID` Riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
 
 ## <a name="interval-options"></a>Opzioni di intervallo
  È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di Attach. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
 
- **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**sys**[<strong>:</strong>Events]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ] specifica il numero e il tipo dell'intervallo di campionamento.
+ **Timer**[**:**] PF [ : ] Sys [ : Events] Counter [ : , ] Specifica il numero e il `Cycles` tipo `Events` <strong></strong> `Name` `Reload` `FriendlyName` dell'intervallo di campionamento.
 
 - **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 

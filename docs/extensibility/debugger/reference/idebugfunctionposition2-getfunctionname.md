@@ -1,6 +1,6 @@
 ---
-description: Ottiene il nome della funzione a cui fa riferimento questa posizione.
-title: 'IDebugFunctionPosition2:: getfunctionname | Microsoft Docs'
+description: Ottiene il nome della funzione a cui punta questa posizione.
+title: IDebugFunctionPosition2::GetFunctionName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24d700e1fab5c9f8ae5510cc1ff915ba60008b8b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cfdc1969ad66e79a4f0f820c1ca70fcaa6d72627aa9808e87005b8b302292704
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063500"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389761"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
-Ottiene il nome della funzione a cui fa riferimento questa posizione.
+Ottiene il nome della funzione a cui punta questa posizione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int GetFunctionName(
 
 ## <a name="parameters"></a>Parametri
 `pbstrFunctionName`\
-out Restituisce il nome della funzione.
+[out] Restituisce il nome della funzione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
