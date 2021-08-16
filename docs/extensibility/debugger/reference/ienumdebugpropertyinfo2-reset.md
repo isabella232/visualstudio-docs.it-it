@@ -1,6 +1,6 @@
 ---
-description: Reimposta l'enumerazione sul primo elemento DEBUG_PROPERTY_INFO.
-title: 'IEnumDebugPropertyInfo2:: Reset | Microsoft Docs'
+description: Reimposta l'enumerazione sul primo DEBUG_PROPERTY_INFO elemento.
+title: IEnumDebugPropertyInfo2::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: fa4201c1-4633-4596-93aa-bd415c4ed71a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c94b12242c0b57b94c9c26b9f23d9d7577de293b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fda4458dac1f315edf3963a30595fd81293779b9ded24444dbdb10085e8f8e95
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082881"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121306543"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 Reimposta l'enumerazione sul primo elemento.
@@ -42,7 +43,7 @@ int Reset();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Dopo la chiamata a questo metodo, la chiamata successiva al metodo [successivo](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) restituisce il primo elemento dell'enumerazione.
+ Dopo la chiamata a questo metodo, la chiamata successiva al [metodo Next](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) restituisce il primo elemento dell'enumerazione .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

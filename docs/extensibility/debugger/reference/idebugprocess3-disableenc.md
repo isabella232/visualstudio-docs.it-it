@@ -1,5 +1,5 @@
 ---
-description: Questo metodo Disabilita in modo esplicito modifica e continuazione in questo processo e in tutti i programmi in esso contenuti.
+description: Questo metodo disabilita in modo esplicito Modifica e continuazione in questo processo (e in tutti i programmi in esso contenuti).
 title: IDebugProcess3::D isableENC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f9c4a1e05cf7d4a98489daf0c2ee3377d54f417
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 429cacbc4ef87224459493b0815d9e5dcff7fac3f61ca510d334501226a08eef
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081620"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276737"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Questo metodo Disabilita in modo esplicito modifica e continuazione in questo processo e in tutti i programmi in esso contenuti. Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL` .
+Questo metodo disabilita in modo esplicito Modifica e continuazione in questo processo (e in tutti i programmi in esso contenuti). Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +42,7 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>Parametri
 `reason`\
-in Valore dell'enumerazione [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) .
+[in] Valore [dell'enumerazione EncUnavailableReason.](../../../extensibility/debugger/reference/encunavailablereason.md)
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
@@ -50,7 +51,7 @@ in Valore dell'enumerazione [EncUnavailableReason](../../../extensibility/debugg
 > Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL` .
 
 ## <a name="remarks"></a>Commenti
- Quando modifica e continuazione è disabilitato per un processo, può essere riabilitato solo riavviando il processo.
+ Dopo aver disabilitato Modifica e continuazione per un processo, è possibile ri enabledarlo solo riavviando il processo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

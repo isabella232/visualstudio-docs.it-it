@@ -1,6 +1,6 @@
 ---
-title: Elemento TemplateContent (modelli di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento TemplateContent e su come viene specificato il contenuto del modello.
+title: Elemento TemplateContent (modelli Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento TemplateContent e su come specifica il contenuto del modello.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -15,18 +15,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 389f8e0ab6c6c7254b34721d20da40cc2d33df59
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8eaffebca1d0b1a343050ee1bb63e6508a7ac718b37ffbcc18a4d5d6f2a4de5f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056025"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447727"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>Elemento TemplateContent (modelli di Visual Studio)
 
 Specifica il contenuto del modello.
 
-Gerarchia elementi:
+Gerarchia degli elementi:
 
 ```xml
 <VSTemplate>
@@ -56,9 +56,9 @@ Gerarchia elementi:
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica l'organizzazione e i contenuti dei modelli multiprogetto.|
 |[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i file o le directory da aggiungere al progetto.|
-|[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i riferimenti ad assembly necessari per un modello di elemento.|
+|[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i riferimenti all'assembly necessari per un modello di elemento.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Elemento facoltativo.<br /><br /> Specifica un file contenuto nel modello.|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i parametri personalizzati da usare quando un progetto o un elemento viene creato dal modello.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i parametri personalizzati da utilizzare quando un progetto o un elemento viene creato dal modello.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -70,7 +70,7 @@ Gerarchia elementi:
  `TemplateContent` è un elemento obbligatorio.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione.
+ L'esempio seguente mostra i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

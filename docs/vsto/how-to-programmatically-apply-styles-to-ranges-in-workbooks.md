@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b1ce30c9a0e21bd4b8860f7a4d17191c48cd2ad9
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 25ae70edc79c648fd908b8d357469cc1ebe2af95050cf14292eb4ebc5deaa465
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828306"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121268118"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procedura: Applicare stili agli intervalli nelle cartelle di lavoro a livello di codice
   È possibile applicare stili denominati alle aree nelle cartelle di lavoro. Excel fornisce alcuni stili predefiniti:
@@ -62,7 +63,7 @@ ms.locfileid: "107828306"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet29":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet29":::
 
-## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>Per cancellare uno stile da un intervallo denominato in un componente aggiuntivo VSTO
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>Per cancellare uno stile da un intervallo denominato in un VSTO componente aggiuntivo
 
 1. Applicare lo stile Normale all'intervallo.
 
@@ -72,5 +73,5 @@ ms.locfileid: "107828306"
 ## <a name="see-also"></a>Vedi anche
 - [Usare gli intervalli](../vsto/working-with-ranges.md)
 - [Controllo NamedRange](../vsto/namedrange-control.md)
-- [Accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Accesso globale agli oggetti nei progetti Office globali](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

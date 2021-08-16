@@ -11,17 +11,18 @@ ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a1ab410d9780078cd786b75f14d0321498eca8fd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bbe12a51af968ccc88a1a572553e6278cc12c4890042a6777f97e45fb23a427f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079540"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121306322"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
 Specifica le proprietà associate a un provider di programmi.
@@ -51,14 +52,14 @@ public enum enum_PROVIDER_FIELDS {
  Il `fIsDebuggerPresent` campo è valido.
 
 ## <a name="remarks"></a>Commenti
- Questi valori vengono restituiti nel `Fields` membro della struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) per indicare quali campi della struttura sono stati compilati in modo esplicito.
+ Questi valori vengono restituiti nel membro della struttura PROVIDER_PROCESS_DATA per indicare quali campi della struttura sono stati compilati `Fields` in modo [](../../../extensibility/debugger/reference/provider-process-data.md) esplicito.
 
- Questi valori possono essere combinati con un bit per bit `OR` .
+ Questi valori possono essere combinati con un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

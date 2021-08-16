@@ -1,6 +1,6 @@
 ---
-description: L'elemento formRegions dello spazio dei nomi vstov4 contiene le aree del modulo di Microsoft Office Outlook associate a un componente aggiuntivo VSTO.
-title: '&lt;&gt;elemento formRegions (sviluppo per Office in Visual Studio)'
+description: L'elemento formRegions dello spazio dei nomi vstov4 contiene le Microsoft Office Outlook del modulo associate a un VSTO componente aggiuntivo.
+title: '&lt;Elemento formRegions &gt; (Office sviluppo in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7c8fd7e0ced0fadcd945388a9730513b2a591ed0
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e1a4439f5c1dab78ce32c553a4bee98db6fa7da4f072152c3a046ba819222128
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223459"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440864"
 ---
-# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento formRegions (sviluppo per Office in Visual Studio)
-  L' `formRegions` elemento dello `vstov4` spazio dei nomi contiene le aree del modulo di Microsoft Office Outlook associate a un componente aggiuntivo VSTO.
+# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;Elemento formRegions &gt; (Office sviluppo in Visual Studio)
+  L'elemento dello spazio dei nomi contiene Microsoft Office Outlook del modulo associate a un `formRegions` `vstov4` VSTO componente aggiuntivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,12 +47,12 @@ ms.locfileid: "102223459"
  L'elemento `formRegions` presenta l'elemento seguente.
 
 ### <a name="formregion"></a>formRegion
- Obbligatorio per i componenti aggiuntivi VSTO di Outlook che includono aree del modulo. L' `formRegion` elemento è definito in [&#60;elemento&#62; FormRegion &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).
+ Obbligatorio per i componenti aggiuntivi VSTO di Outlook che includono aree del modulo. `formRegion`L'elemento è definito in&#60;[formRegion&#62;'elemento &#40;Office sviluppo in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).
 
-## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO
+## <a name="vsto-add-in-example"></a>VSTO Esempio di componente aggiuntivo
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra un elemento `formRegions` in un manifesto dell'applicazione per una soluzione Office a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra un elemento `formRegions` in un manifesto dell'applicazione per una soluzione Office a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito in [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -68,6 +69,6 @@ ms.locfileid: "102223459"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
-- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

@@ -1,6 +1,6 @@
 ---
 title: Attività ResolveComReference | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività ResolveComReference per ottenere un elenco di uno o più nomi di librerie dei tipi o file tlb e risolverli in posizioni su disco.
+description: Informazioni su MSBuild'attività ResolveComReference per ottenere un elenco di uno o più nomi di libreria dei tipi o file con estensione tlb e risolverli in percorsi su disco.
 ms.custom: SEO-VS-2020
 ms.date: 07/25/2019
 ms.topic: reference
@@ -18,18 +18,19 @@ ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0384ee6cbfa749589e15ab073cc31ffebb53985e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ce84c7154824a00019cf54105a09a03b207e3ff06f0bc33d5dcd2012cfcf3fd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912535"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121270354"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 
-Accetta un elenco di uno o più nomi di librerie dei tipi o file *tlb* e risolve tali librerie dei tipi in posizioni su disco.
+Accetta un elenco di uno o più nomi di librerie dei tipi o file con estensione *tlb* e risolve tali librerie dei tipi in percorsi su disco.
 
 ## <a name="parameters"></a>Parametri
 
@@ -82,19 +83,19 @@ Accetta un elenco di uno o più nomi di librerie dei tipi o file *tlb* e risolve
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base Task](../msbuild/task-base-class.md).
+Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base Task.](../msbuild/task-base-class.md)
 
 Per il corretto funzionamento di questa attività, non è necessario che la DLL COM sia registrata nel computer.
 
 ## <a name="msb4803-error"></a>Errore MSB4803
 
-Se si tenta di eseguire un progetto che usa l' `ResolveCOMReference` attività dai comandi dell'interfaccia della riga di `dotnet` comando, si ottiene l'errore:
+Se si tenta di eseguire un progetto che usa l'attività dai comandi dell'interfaccia della riga di `ResolveCOMReference` `dotnet` comando, viene visualizzato l'errore:
 
 ```output
 MSB4803: The task "ResolveComReference" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild.
 ```
 
-Questa attività non è supportata nella versione .NET Core di MSBuild, che viene usata quando si esegue il `dotnet build` comando dalla riga di comando. Provare a compilare il progetto richiamando [MSBuild.exe](msbuild-command-line-reference.md) dalla prompt dei comandi per gli sviluppatori di Visual Studio, perché usa la versione .NET Framework di MSBuild.
+Questa attività non è supportata nella versione .NET Core di MSBuild, che è ciò che viene usato quando si esegue il comando `dotnet build` dalla riga di comando. Provare a compilare il progetto richiamando [MSBuild.exe](msbuild-command-line-reference.md) dal Visual Studio Prompt dei comandi per gli sviluppatori, perché usa la .NET Framework di MSBuild.
 
 ## <a name="see-also"></a>Vedi anche
 

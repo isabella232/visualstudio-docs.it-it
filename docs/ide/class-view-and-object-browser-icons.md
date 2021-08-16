@@ -1,6 +1,6 @@
 ---
 title: Icone di Visualizzazione classi e Visualizzatore oggetti
-description: Informazioni sulle Visualizzazione classi e sulle icone di visualizzazione Visualizzatore oggetti che rappresentano le entità di codice, ad esempio spazi dei nomi, classi, funzioni e variabili.
+description: Informazioni sulle Visualizzazione classi e sul Visualizzatore oggetti che rappresentano entità di codice, ad esempio spazi dei nomi, classi, funzioni e variabili.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 551033ce7dcd7b8755124b86734243470442b6e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07a97a0566b9210c0b2de74dbd7009136663e5b2b27289e756323ca862e1d379
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939981"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121260072"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -46,9 +47,9 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |![Simbolo Inoltro dei tipi](../ide/media/ob_type_forward.gif)|Inoltro del tipo|||
 
 > [!TIP]
-> Per visualizzare al meglio le icone in questa pagina, assicurarsi che il tema del Microsoft Docs sia impostato su **chiaro**. È possibile impostare questo tema colori dal controllo situato nella parte inferiore sinistra della pagina, come illustrato nello screenshot seguente:
+> Per visualizzare al meglio le icone in questa pagina, assicurarsi che il tema Microsoft Docs sia impostato su **Chiaro**. È possibile attivare o disattivare questo tema colori dal controllo che si trova nella parte inferiore sinistra della pagina, come illustrato nello screenshot seguente:
 >
-> ![Tema docs](../ide/media/toggle-docs-color-theme.png "Imposta/Nascondi il tema colori per le pagine Microsoft Docs")
+> ![Tema Docs](../ide/media/toggle-docs-color-theme.png "Attivare o disattivare il tema dei colori Microsoft Docs pagine")
 
 ## <a name="signal-icons"></a>Icone di segnalazione
 
@@ -67,7 +68,7 @@ Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne 
 > Se il progetto è incluso in un database di controllo del codice sorgente potrebbero essere visualizzate altre icone di segnalazione per indicare lo stato di controllo del codice sorgente, ad esempio se il codice è stato archiviato o estratto.
 
 > [!TIP]
-> Per visualizzare altre immagini dell'applicazione e icone visualizzate in Visual Studio, scaricare la libreria di [**Immagini di Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
+> Per visualizzare altre immagini e icone dell'applicazione visualizzate in Visual Studio, scaricare Visual Studio [**Image Library.**](https://www.microsoft.com/download/details.aspx?id=35825)
 
 ## <a name="see-also"></a>Vedi anche
 

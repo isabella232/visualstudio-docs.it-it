@@ -1,6 +1,6 @@
 ---
-title: Strumenti di test di Visual Studio per Mac
-description: Creazione ed esecuzione di test con Visual Studio per Mac.
+title: Visual Studio per Mac strumenti di test
+description: Creazione ed esecuzione di test usando Visual Studio per Mac.
 ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,40 +8,40 @@ helpviewer_keywords:
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: e3c35eae5b3ad48dbbde3b343aaec72573f2b9f4e0aee4f99a0b930d7420bb27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493387"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121437649"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Strumenti di test in Visual Studio per Mac
 
-Visual Studio per Mac strumenti di test consentono all'utente e al team di sviluppare e sostenere elevati standard di eccellenza del codice. Gli unit test possono essere scritti ed eseguiti con Microsoft unit test Framework (MSTest), xUnit o NUnit.
+Visual Studio per Mac strumenti di test possono aiutare l'utente e il team a sviluppare e sostenere standard elevati di eccellenza del codice. Gli unit test possono essere scritti ed eseguiti usando Microsoft unit test Framework (MSTest), xUnit o NUnit.
 
 ## <a name="creating-tests"></a>Creazione di test
-Per iniziare a eseguire il test, è possibile creare un nuovo progetto di test nella soluzione facendo clic con il pulsante destro del mouse sulla soluzione e scegliendo il menu **aggiungi > nuovo progetto** . Quindi scegliere una delle categorie di test nella parte sinistra della finestra di dialogo (ad esempio, la categoria **Web e Console > test** ). Selezionare il tipo di progetto di test che si desidera creare, quindi fare clic su Avanti. Seguire le istruzioni riportate nelle finestre di dialogo visualizzate, quindi verrà aggiunto un nuovo progetto di test alla soluzione.
+Per iniziare a testare, è possibile creare un nuovo progetto di test nella soluzione facendo clic con il pulsante destro del mouse sulla soluzione e scegliendo il menu Aggiungi > **Nuovo Project...** . Scegliere quindi una delle categorie Test sul lato sinistro della finestra di dialogo, ad esempio la categoria Test **> Web e** Console. Selezionare il tipo di progetto di test da creare e fare clic su Avanti. Seguire le istruzioni nelle finestre di dialogo visualizzate e quindi verrà aggiunto un nuovo progetto di test alla soluzione.
 
-![Finestra di dialogo nuovo progetto con > di test Web e console selezionato, che mostra i progetti xUnit, MSTest e NUnit](media/create-new-test-project.PNG)
+![Finestra di dialogo Nuovo progetto con la sezione Test > web e console selezionata, che mostra i progetti xUnit, MSTest e NUnit](media/create-new-test-project.PNG)
 
 > [!NOTE]
-> Per ulteriori informazioni sull'unit test delle applicazioni .NET Core e sulla selezione di unit test Framework, vedere la pagina relativa ai [testing unità in .NET Core e .NET standard](/dotnet/core/testing/?pivots=xunit) documentazione.
+> Per altre informazioni sugli unit test delle applicazioni .NET Core e sulla selezione di framework unit test, vedere la documentazione unit [test in .NET Core e .NET Standard.](/dotnet/core/testing/?pivots=xunit)
 
 ## <a name="running-tests"></a>Esecuzione di test
-La finestra **unit test** viene utilizzata per eseguire unit test e viene aperta utilizzando il menu **Visualizza > test** . Gli unit test nella soluzione vengono individuati automaticamente e visualizzati in questa finestra, in cui è possibile eseguire tutti i test o un set di test selezionati.
+La **finestra Unit test** viene usata per eseguire unit test e viene aperta usando il menu Visualizza > **test.** Gli unit test nella soluzione vengono individuati e visualizzati automaticamente in questa finestra, in cui è possibile eseguire tutti i test o un set di test selezionati.
 
-![Finestra di test che mostra un elenco di unit test e una barra degli strumenti per l'esecuzione o l'arresto dei test.](media/test-window.PNG)
+![Finestra test che mostra un elenco di unit test e una barra degli strumenti per l'esecuzione o l'arresto dei test.](media/test-window.PNG)
 
-Quando si modifica una classe C# che contiene unit test, è possibile eseguire i test facendo clic con il pulsante destro del mouse nella classe di test o un metodo di test e scegliendo il menu **Esegui test** o **debug test (s)** . Se si sceglie la voce di menu **Esegui test** , i test vengono eseguiti nella finestra di test, scegliendo il menu **debug test (s)** e si collegherà il debugger in modo da poter risolvere i problemi del codice.
+Quando si modifica una classe C# che contiene unit test, è possibile eseguire i  test facendo clic con il pulsante destro del mouse sulla classe di test o su un metodo di test e scegliendo il **menu** Esegui test o Esegui test di debug. Se si sceglie la voce di **menu** Esegui test, i test verranno eseguiti nella finestra di test, scegliendo il **menu** Debug test e collegando il debugger in modo da risolvere i problemi relativi al codice.
 
-![Menu di scelta rapida dell'editor con le opzioni di esecuzione e debug dei test](media/run-tests-context-menu.PNG)
+![Menu di scelta rapida dell'editor con le opzioni Esegui ed esegui debug test](media/run-tests-context-menu.PNG)
 
-Quando i test sono in esecuzione, viene visualizzata una finestra di **risultati test** in cui è possibile esaminare i test riusciti o non riusciti e l'output dell'esecuzione dei test.
+Durante l'esecuzione dei test viene **visualizzata Risultati test** finestra di dialogo in modo da poter esaminare i test riusciti o non superati e l'output dell'esecuzione di tali test.
 
-![Finestra Risultati test che mostra un test non superato e un conteggio di 21 test superati e 1 test non superato.](media/test-results-window.PNG)
+![Finestra risultati test che mostra un test non superato e un conteggio di 21 test superati e 1 test non superato.](media/test-results-window.PNG)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Testing unità in .NET Core e .NET Standard](/dotnet/core/testing)
-- [Introduzione a unit test (Visual Studio in Windows)](/visualstudio/test/getting-started-with-unit-testing)
-- [Nozioni fondamentali sugli unit test (Visual Studio in Windows)](/visualstudio/test/unit-test-basics)
+- [Unit test in .NET Core e .NET Standard](/dotnet/core/testing)
+- [Informazioni di base con unit test (Visual Studio in Windows)](/visualstudio/test/getting-started-with-unit-testing)
+- [Nozioni di base sugli unit test (Visual Studio su Windows)](/visualstudio/test/unit-test-basics)

@@ -11,17 +11,18 @@ ms.assetid: c6c8c543-253e-4c23-a939-3e66f3db0ee2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be0c7f5a25459823911c27c39f80f3b6593cbbe
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 700754cad6329d16aba5e47b998a4da7810e8444d94532ce0f0ab4e1685d4cbe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161858"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121264114"
 ---
 # <a name="idiasymbolget_rvaluereference"></a>IDiaSymbol::get_RValueReference
-Recupera un flag che specifica se un tipo di puntatore è un riferimento rvalue. Utilizzare quando l' [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su un tipo di puntatore.
+Recupera un flag che specifica se un tipo di puntatore è un riferimento rvalue. Utilizzare quando [l'enumerazione SymTagEnum è](../../debugger/debug-interface-access/symtagenum.md) impostata su un tipo di puntatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,20 +35,20 @@ HRESULT get_RValueReference (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se il puntatore è un riferimento rvalue; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il puntatore è un riferimento rvalue; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Osservazioni
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: dia2. h
+ Intestazione: Dia2.h
 
- Libreria: diaguids. lib
+ Libreria: diaguids.lib
 
  DLL: msdia100.dll
 

@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d34fef6251da95b6c3ac99430b87d853d4b5ba7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: a9d8236a1448e61e451e30a7a3c77c6c327ebe03ee195bdf34acb642702dd0ec
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390711"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121273149"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: introduzione a Visual Basic in Visual Studio
 
@@ -51,7 +51,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu superiore scegliere **File** > **nuovo** > **progetto**.
+2. Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al progetto *il nome WhatIsYourName*.
 
@@ -73,7 +73,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
 
-1. Annullare dalla finestra **di dialogo** Nuovo progetto e  dalla barra dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
+1. Annullare dalla finestra **di dialogo Nuovo Project** e dalla  barra dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
@@ -90,7 +90,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
    ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** scegliere Visual Basic dall'elenco Lingua.  Scegliere quindi **Windows dall'elenco** Piattaforma e **Console dall'elenco** dei tipi di progetto.
+1. Nella finestra **Crea un nuovo progetto** scegliere Visual Basic dall'elenco Lingua.  Scegliere quindi **Windows** dall'elenco Piattaforma e **Console dall'elenco** dei tipi di progetto.
 
    Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il modello **Applicazione console** e quindi **scegliere Avanti.**
 
@@ -183,7 +183,7 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio 2017 e quindi scegliere **File** nuovo progetto dalla barra dei menu >  > **superiore.**
+1. Aprire Visual Studio 2017 e quindi nella barra dei menu superiore scegliere **File** >  > **nuovo Project**.
 
 1. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *CalculateThis*.
 
@@ -218,11 +218,11 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**. 
 
-1. Nella finestra **Crea un nuovo progetto** scegliere Visual Basic dall'elenco Lingua.  Scegliere quindi **Windows dall'elenco** Piattaforma e **Console dall'elenco** dei tipi di progetto.
+1. Nella finestra **Crea un nuovo progetto** scegliere Visual Basic dall'elenco Lingua.  Scegliere quindi **Windows** dall'elenco Piattaforma e **Console dall'elenco** dei tipi di progetto.
 
 1. Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il modello **Applicazione console** e quindi **scegliere Avanti.**
 
-   Quindi, nella **finestra Configura il nuovo progetto** digitare o immettere *CalculateThis* nella casella **Nome** progetto. Scegliere quindi **Avanti**.
+   Quindi, nella **finestra Configura il nuovo progetto** digitare o immettere *CalculateThis* nella casella Project **nome.** Scegliere quindi **Avanti**.
 
 1. Nella finestra **Informazioni aggiuntive** è necessario che **.NET Core 3.1** sia già selezionato per il framework di destinazione. In caso contrario, **selezionare .NET Core 3.1.** Scegliere quindi **Crea**.
 
@@ -267,7 +267,7 @@ Visual Studio è una suite integrata per lo sviluppo di strumenti di produttivit
 
 ### <a name="what-is-a-console-app"></a>Che cos'è un'app console?
 
-Un'app console accetta l'input e visualizza l'output in una finestra della riga di comando, nota anche come console.
+Un'app console accetta input e visualizza l'output in una finestra della riga di comando, nota anche come console.
 
 ### <a name="what-is-net-core"></a>Informazioni su .NET Core
 

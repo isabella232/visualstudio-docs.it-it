@@ -1,6 +1,6 @@
 ---
 title: Scrittura di logger compatibili con più processori | Microsoft Docs
-description: Informazioni su come MSBuild fornisce un modello di registrazione e un logger compatibile con più processori e consente di creare "logger di inoltri" personalizzati.
+description: Informazioni su MSBuild fornisce un logger e un modello di registrazione con supporto per più processori e consente di creare "logger di inoltro" personalizzati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,28 +12,29 @@ ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e7cf5998645230f038c6de12c79b53b44c09dfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c28aef36492f7df96bd6c3fcabf9696daffe8b6bdc15d1b2d45f96c033ec7f11
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847986"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121302565"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Scrivere logger compatibili con più processori
 
-La capacità di MSBuild di sfruttare i vantaggi di più processori può ridurre i tempi di compilazione del progetto, ma aggiunge anche complessità per la registrazione degli eventi di compilazione. In un ambiente a processore singolo gli eventi, i messaggi, gli avvisi e gli errori arrivano al logger in modo prevedibile e sequenziale. Tuttavia, in un ambiente a più processori gli eventi di diverse origini possono arrivare contemporaneamente o fuori sequenza. A tale fine, MSBuild fornisce un logger compatibile con più processori e un nuovo modello di registrazione e consente di creare "logger di inoltri" personalizzati.
+La possibilità MSBuild di sfruttare i vantaggi di più processori può ridurre il tempo di compilazione del progetto, ma aggiunge anche complessità alla registrazione degli eventi di compilazione. In un ambiente a processore singolo gli eventi, i messaggi, gli avvisi e gli errori arrivano al logger in modo prevedibile e sequenziale. Tuttavia, in un ambiente a più processori gli eventi di diverse origini possono arrivare contemporaneamente o fuori sequenza. A tale scopo, MSBuild fornisce un logger con supporto per più processori e un nuovo modello di registrazione e consente di creare "logger di inoltro" personalizzati.
 
 ## <a name="multi-processor-logging-challenges"></a>Sfide della registrazione con più processori
 
- Quando si compilano uno o più progetti in un sistema a più processori o multicore, gli eventi di compilazione di MSBuild per tutti i progetti vengono generati nello stesso momento. Al logger può arrivare una grande quantità di messaggi sugli eventi contemporaneamente o fuori sequenza. Poiché un logger 2,0 di MSBuild non è progettato per gestire questa situazione, può sovraccaricare il logger e causare un aumento dei tempi di compilazione, dell'output del logger errato o anche di una compilazione interrotta. Per risolvere questi problemi, il logger (a partire da MSBuild 3,5) può elaborare gli eventi fuori sequenza e correlare gli eventi e le relative origini.
+ Quando si compilano uno o più progetti in un sistema multiprocessore o multi-core, MSBuild gli eventi di compilazione per tutti i progetti vengono generati contemporaneamente. Al logger può arrivare una grande quantità di messaggi sugli eventi contemporaneamente o fuori sequenza. Poiché un logger MSBuild 2.0 non è progettato per gestire questa situazione, può sovraccaricare il logger e causare tempi di compilazione maggiori, output logger errato o anche una compilazione interrotta. Per risolvere questi problemi, il logger (a partire da MSBuild 3.5) può elaborare eventi out-of-sequence e correlare gli eventi e le relative origini.
 
  È possibile migliorare ulteriormente l'efficienza della registrazione creando un logger di inoltro personalizzato. Un logger di inoltro personalizzato funziona come un filtro e consente di scegliere, prima della compilazione, solo gli eventi da monitorare. Quando si usa un logger di inoltro personalizzato, si evita che eventi indesiderati sovraccarichino il logger, creando confusione nei log e rallentando i tempi di compilazione.
 
 ## <a name="multi-processor-logging-models"></a>Modelli di registrazione con più processori
 
- Per consentire problemi di compilazione correlati a più processori, MSBuild supporta due modelli di registrazione, centrale e distribuito.
+ Per risolvere i problemi di compilazione correlati a più processori, MSBuild supporta due modelli di registrazione, centrale e distribuito.
 
 ### <a name="central-logging-model"></a>Modello di registrazione centrale
 
@@ -89,7 +90,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 > [!NOTE]
 > I due nomi di logger nell'opzione `-dl` devono essere separati da un asterisco (*).
 
- L'uso di ConfigurableForwardingLogger è simile all'uso di qualsiasi altro logger (come descritto in [recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)), ad eccezione del fatto che il logger ConfigurableForwardingLogger viene collegato al posto del logger di MSBuild tipico e si specifica come parametri gli eventi che si desidera che il ConfigurableForwardingLogger passi al nodo centrale.
+ L'uso di ConfigurableForwardingLogger è simile all'uso di qualsiasi altro logger (come descritto in Recupero dei log di [compilazione),](../msbuild/obtaining-build-logs-with-msbuild.md)ad eccezione del fatto che si collega il logger ConfigurableForwardingLogger anziché il tipico logger di MSBuild e si specificano come parametri gli eventi che si vuole che ConfigurableForwardingLogger passi al nodo centrale.
 
  Ad esempio, per ricevere una notifica solo all'inizio e alla fine di una compilazione e quando si verifica un errore, è necessario passare `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT` come parametri. Per passare più parametri, separarli con punti e virgola. L'esempio che segue spiega come usare ConfigurableForwardingLogger per inoltrare solo gli eventi `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT`.
 

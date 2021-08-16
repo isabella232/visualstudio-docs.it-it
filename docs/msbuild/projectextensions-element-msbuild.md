@@ -1,6 +1,6 @@
 ---
 title: Elemento ProjectExtensions (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento MSBuildProjectExtensions, che consente ai file di progetto MSBuild di contenere informazioni non di MSBuild.
+description: Informazioni sull'elemento MSBuildProjectExtensions, che consente MSBuild file di progetto di contenere informazioni non MSBuild progetto.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -18,18 +18,19 @@ ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b7b186fa1d7a5ecb8297045d4b0bbb111d136d1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 850bef50c5e381c4e15aa1967ca49382362bcf027eabd5330015f06da9d95373
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905282"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121270412"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 
-Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qualsiasi elemento all'interno di un `ProjectExtensions` elemento verrà ignorato da MSBuild.
+Consente MSBuild file di progetto di contenere informazioni non MSBuild file. Qualsiasi elemento `ProjectExtensions` all'interno di un elemento verrà ignorato MSBuild.
 
  \<Project> \<ProjectExtensions>
 
@@ -47,21 +48,21 @@ Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qual
 
 ### <a name="attributes"></a>Attributi
 
- nessuno
+ Nessuno
 
 ### <a name="child-elements"></a>Elementi figlio
 
- nessuno
+ Nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file MSBuild progetto. |
 
 ## <a name="remarks"></a>Commenti
 
- `ProjectExtensions`È possibile utilizzare un solo elemento in un progetto MSBuild.
+ È possibile `ProjectExtensions` usare un solo elemento in un MSBuild progetto.
 
 ## <a name="example"></a>Esempio
 
@@ -81,5 +82,5 @@ Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qual
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

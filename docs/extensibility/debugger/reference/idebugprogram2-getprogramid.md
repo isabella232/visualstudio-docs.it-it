@@ -1,6 +1,6 @@
 ---
-description: Ottiene un GUID per il programma.
-title: 'IDebugProgram2:: GetProgramId | Microsoft Docs'
+description: Ottiene un GUID per questo programma.
+title: IDebugProgram2::GetProgramId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad0b5c8af1723414e6805e362312f167f995fbe4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 27793da2555f8bb1f61d0a9df6b616e2a551bf4813f1d416b71d7e3cd283d858
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084506"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276438"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
-Ottiene un GUID per il programma.
+Ottiene un GUID per questo programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int GetProgramId(
 
 ## <a name="parameters"></a>Parametri
 `pguidProgramId`\
-out Restituisce l'oggetto `GUID` per questo programma.
+[out] Restituisce `GUID` l'oggetto per questo programma.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Un motore di debug (de) deve restituire l'identificatore del programma passato originariamente ai metodi [alleghi](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) o [Connetti](../../../extensibility/debugger/reference/idebugengine2-attach.md) . In questo modo è possibile identificare il programma tra i componenti del debugger.
+ Un motore di debug deve restituire l'identificatore di programma originariamente passato ai [metodi OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) [o Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md) In questo modo è possibile identificare il programma tra i componenti del debugger.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,21 +1,22 @@
 ---
 title: Pacchetti di NuGet VS SDK
-description: Informazioni sul metapacchetto di VS SDK e altri pacchetti NuGet che potrebbero essere necessari durante la migrazione di un'estensione Visual Studio a Visual Studio 2022 Preview.
+description: Informazioni sul metapacchetto vs SDK e altri pacchetti NuGet che potrebbero essere necessari durante la migrazione di un'estensione Visual Studio a Visual Studio 2022 Preview.
 ms.date: 06/08/2021
 ms.topic: conceptual
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: cb30ac4aef7d4c30bfe1ba9856b05287cf9094be
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 6ad4070c4dbf6aa5e9867cf88ec7982e7281f9667d0abcc4360db41e164241e0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114591858"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121305386"
 ---
 # <a name="sdk-reference-packages"></a>Pacchetti di riferimento SDK
 
@@ -24,7 +25,7 @@ ms.locfileid: "114591858"
 Il modo più semplice per creare Visual Studio estensioni è con un riferimento al [ `Microsoft.VisualStudio.Sdk` pacchetto NuGet .](https://www.nuget.org/packages/microsoft.visualstudio.sdk)
 Questo pacchetto è disponibile per Visual Studio 2017 (15.0), Visual Studio 2019 (16.0, 16.9) e ora Visual Studio 2022.
 
-A seconda dell'estensione, potrebbe essere necessario aggiungere altri pacchetti VS SDK non inclusi nel meta-pacchetto precedente.
+A seconda dell'estensione, potrebbe essere necessaria l'aggiunta di pacchetti VS SDK aggiuntivi non inclusi nel meta-pacchetto precedente.
 Quando si fa riferimento ad altri pacchetti SDK specifici, questi pacchetti possono variare tra le versioni principali di Visual Studio.
 
 Si noti che molti assembly di interoperabilità erano incorporabili prima Visual Studio 2022. A partire Visual Studio 2022, l'incorporamento non è più necessario o supportato.

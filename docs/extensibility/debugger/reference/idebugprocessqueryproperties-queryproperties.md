@@ -1,6 +1,6 @@
 ---
 description: Questo metodo esegue una query per i valori di proprietà specificati del processo di debug.
-title: 'IDebugProcessQueryProperties:: QueryProperties | Microsoft Docs'
+title: Proprietà IDebugProcessQueryProperties::QueryProperties | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +9,18 @@ ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e2f4d36c911e3b41d86e9cc0480c97979d63897
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 811adc362612bf638eb8be411a36baff01c77406344726fd4528cd80a239f490
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081386"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276633"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Questo metodo esegue una query per i valori di proprietà specificati del processo di debug.
@@ -42,10 +43,10 @@ int QueryProperties(
 
 ## <a name="parameters"></a>Parametri
 `celt`\
-in Dimensioni delle matrici contenenti le definizioni di proprietà e i valori delle proprietà.
+[in] Dimensioni delle matrici contenenti le definizioni di proprietà e i valori delle proprietà.
 
 `dwPropType`\
-in Matrice che contiene le definizioni delle proprietà sottoposte a query. I valori possibili sono:
+[in] Matrice che contiene le definizioni delle proprietà su cui è stata eseguita una query. I valori possibili sono:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -54,7 +55,7 @@ in Matrice che contiene le definizioni delle proprietà sottoposte a query. I va
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-out Matrice contenente i valori della proprietà.
+[out] Matrice contenente i valori delle proprietà.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

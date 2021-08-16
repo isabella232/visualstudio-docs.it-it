@@ -7,14 +7,15 @@ ms.topic: reference
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8105edc57e68aa7cedcb612ec4f6bcd0ef367d2f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 24578c6bbc9bf5953dcfc4b05bc3118c22447a47e9353c1f2268b00985836790
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386111"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271030"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 
@@ -52,7 +53,7 @@ Nei Visual Studio di testo, la direttiva viene usata per definire l'estensione e
  Valori accettabili: qualsiasi estensione di file valida.
 
 ## <a name="encoding-attribute"></a>attributo di codifica
- Specifica la codifica da usare quando viene generato il file di output. Ad esempio:
+ Specifica la codifica da usare quando viene generato il file di output. Esempio:
 
  `<#@ output encoding="utf-8"#>`
 

@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, HTML (Web Form), Formattazione
-description: Informazioni su come usare la pagina formattazione nella sezione HTML per impostare le opzioni del progetto HTML per la formattazione del codice nell'editor di codice.
+description: Informazioni su come usare la pagina Formattazione nella sezione HTML per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor di codice.
 ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8d7e6bd81e32858f990c70bbcdf0bf00049867
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22e4d986204645e136709efad87e27b5b97289ec0d6042d8bc03cbfbcd9fb9ee
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943835"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271914"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opzioni, Editor di testo, HTML (Web Form), Formattazione
 
-Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere formattazione   >  **HTML (Web Form)** nell'editor di testo  >  .
+Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Html editor di testo  >     >  **(Web Forms)**  >  **Formattazione**.
 
 ## <a name="capitalization"></a>Uso delle maiuscole
 
@@ -39,8 +39,8 @@ Queste opzioni specificano la modalità di applicazione delle lettere maiuscole 
 |Opzione|Risultato|
 |---------------------------------|------------------------------|
 |**Come immesse**|Esatta combinazione di maiuscole/minuscole dell'elemento come immessa.|
-|**Maiuscole**|I nomi degli elementi vengono riformattati in maiuscolo.|
-|**Minuscole**|I nomi degli elementi vengono riformattati in minuscolo.|
+|**Maiuscolo**|I nomi degli elementi vengono riformattati in maiuscolo.|
+|**Minuscolo**|I nomi degli elementi vengono riformattati in minuscolo.|
 |**Definizione assembly**|La combinazione di maiuscole e minuscole degli elementi è determinata dalla definizione dell'elemento nella classe di tipo corrispondente.|
 
 **Tag client, Attributi client**
@@ -50,8 +50,8 @@ Tramite queste opzioni viene determinato se durante la formattazione automatica 
 |Opzione|Risultato|
 |---------------------------------|------------------------------|
 |**Come immesse**|Esatta combinazione di maiuscole/minuscole dell'attributo come immessa.|
-|**Maiuscole**|I nomi degli attributi vengono riformattati in maiuscolo.|
-|**Minuscole**|I nomi degli attributi vengono riformattati in minuscolo.|
+|**Maiuscolo**|I nomi degli attributi vengono riformattati in maiuscolo.|
+|**Minuscolo**|I nomi degli attributi vengono riformattati in minuscolo.|
 
 ## <a name="automatic-formatting-options"></a>Opzioni di formattazione automatica
 
@@ -64,21 +64,21 @@ Tramite queste opzioni viene determinata l'aggiunta o la rimozione delle interru
 
 - **Inserisci virgolette per valori attributi durante la digitazione**
 
-   Quando questa opzione è selezionata, l'editor inserisce automaticamente le virgolette per racchiudere gli attributi durante la digitazione, ad esempio: ID = "Select1". Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
+   Quando questa opzione è selezionata, l'editor inserisce automaticamente le virgolette intorno agli attributi durante la digitazione(ad esempio: ID="Select1"). Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
 
    > [!NOTE]
    > Indipendentemente dalla selezione di questa opzione, tutte le virgolette esistenti nel markup vengono mantenute: le virgolette non vengono mai rimosse.
 
 - **Inserisci valori di attributo tra virgolette durante la formattazione**
 
-   Quando questa opzione è selezionata, la formattazione automatica aggiunge le virgolette intorno ai valori degli attributi, ad esempio: ID = "Select1".
+   Quando questa opzione è selezionata, la formattazione automatica aggiunge le virgolette intorno ai valori degli attributi (ad esempio: ID="Select1").
 
    > [!NOTE]
    > Indipendentemente dalla selezione di questa opzione, tutte le virgolette esistenti nel markup vengono mantenute.
 
 - **Inserisci automaticamente tag di chiusura**
 
-   Quando questa opzione è selezionata, l'editor crea automaticamente un tag di chiusura, ad esempio, **\</b>** quando si chiude il tag di apertura.
+   Quando questa opzione è selezionata, l'editor crea automaticamente un tag di chiusura ,ad esempio , quando **\</b>** si chiude il tag di apertura.
 
 ## <a name="tag-wrapping"></a>Ritorno a capo dei tag
 
@@ -103,4 +103,4 @@ Queste opzioni determinano se i tag vengono suddivisi nell'editor in più righe 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Creare e modificare proprietà personalizzate del documento'
-description: Informazioni su come creare e modificare proprietà personalizzate del documento se sono disponibili informazioni aggiuntive da archiviare con il documento.
+title: 'Procedura: Creare e modificare proprietà di documenti personalizzati'
+description: Informazioni su come creare e modificare proprietà personalizzate del documento se sono presenti informazioni aggiuntive da archiviare con il documento.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cd89cb1e2991f48fefd9984eaa6d5894d9b506c1
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: d0a289d77ee0b7263d58c9781bc29fa27afcbaea6d395ad39cd85002c635fcec
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826577"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121268287"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Procedura: Creare e modificare proprietà personalizzate del documento
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Procedura: Creare e modificare proprietà di documenti personalizzati
   Le applicazioni di Microsoft Office elencate in precedenza forniscono proprietà incorporate che vengono archiviate con i documenti. Inoltre, è possibile creare e modificare le proprietà personalizzate del documento se si vuole archiviare informazioni aggiuntive con il documento.
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
@@ -40,6 +41,6 @@ ms.locfileid: "107826577"
  Il tentativo di accesso alla proprietà `Value` per proprietà non definite genera un'eccezione.
 
 ## <a name="see-also"></a>Vedi anche
-- [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Programmi VSTO componenti aggiuntivi](../vsto/programming-vsto-add-ins.md)
 - [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 - [Procedura: Leggere e scrivere nelle proprietà del documento](../vsto/how-to-read-from-and-write-to-document-properties.md)

@@ -1,6 +1,6 @@
 ---
 title: Eseguire il binding ai dati nella finestra di progettazione XAML
-description: Informazioni su come associare dati a un controllo nella finestra di progettazione XAMl impostando data binding proprietà usando la tavola da disegno e la Finestra Proprietà.
+description: Informazioni su come associare dati a un controllo in XAMl Designer impostando data binding proprietà usando la tavola da disegno e il Finestra Proprietà.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,13 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 6bf3bd24b4a232899c64f6c0ecd819b0fe0f83a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 9b6ad5e0286a6faedf60718fd1533d83cb3a5fcd7fdf2104b89d3bb09e69da91
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961313"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440240"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
@@ -93,7 +94,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
      ![Finestra di dialogo Crea associazione dati](../designers/media/xaml_create_data_binding.png)
 
-1. Premere **F5** per eseguire l'app.
+1. Premere **F5 per** eseguire l'app.
 
      Il controllo `TextBlock` dovrebbe visualizzare il valore predefinito 0 come testo.
 

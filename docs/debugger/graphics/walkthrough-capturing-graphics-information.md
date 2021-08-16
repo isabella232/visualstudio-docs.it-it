@@ -1,6 +1,6 @@
 ---
-title: 'Procedura dettagliata: acquisizione di informazioni grafiche | Microsoft Docs'
-description: Vedere come usare Visual Studio Diagnostica della grafica per acquisire manualmente informazioni grafiche da un'app Direct3D.
+title: 'Procedura dettagliata: Acquisizione di informazioni grafiche | Microsoft Docs'
+description: Vedere come usare Visual Studio Diagnostica della grafica acquisire manualmente informazioni grafiche da un'app Direct3D.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b964276db7dd3b8e7effb23a80aef4868ff8b8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 241ffcdb979dec0c7e39cb998479090c1e596bc18e6251ee1fe22e7b163fd0c5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861385"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435868"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: Acquisizione di informazioni grafiche
 Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per acquisire manualmente informazioni grafiche da un'app Direct3D.
@@ -53,12 +54,12 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
 
    Con lo stato attivo nell'app premere **STAMP**.
 
-  Ogni volta che si acquisiscono informazioni su un frame, Diagnostica grafica registra gli eventi di Direct3D e lo stato associato e aggiunge questi dati a un log di grafica. Per ogni sessione di Diagnostica grafica viene creato un nuovo log di grafica. Per informazioni sui log di grafica, vedere [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
+  Ogni volta che si acquisiscono informazioni su un frame, Diagnostica grafica registra gli eventi di Direct3D e lo stato associato e aggiunge questi dati a un log di grafica. Per ogni sessione di Diagnostica grafica viene creato un nuovo log di grafica. Per informazioni sui log di grafica, vedere [Panoramica](overview-of-visual-studio-graphics-diagnostics.md)di .
 
 ## <a name="next-steps"></a>Passaggi successivi
  In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche manualmente. Come passaggio successivo, prendere in considerare questa opzione:
 
-- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Vedere [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
+- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Vedere [Panoramica di](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Vedi anche
 - [Acquisizione di informazioni grafiche](capturing-graphics-information.md)

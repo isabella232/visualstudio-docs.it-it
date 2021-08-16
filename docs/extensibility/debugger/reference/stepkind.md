@@ -11,17 +11,18 @@ ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2363062ba8de362980a490133b77e374e9bc8507
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9a972617b071f3c6f45a289a5fc01647bf3adee7fd9ebfa4ba4e2712c4774816
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061498"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276178"
 ---
 # <a name="stepkind"></a>STEPKIND
 Specifica il tipo di passaggio per l'esecuzione di istruzioni.
@@ -58,15 +59,15 @@ public enum enum_STEPKIND {
  Esce da una funzione.
 
  `STEP_BACKWARDS`\
- Viene descritta la procedura indietro in una funzione.
+ Consente di tornare indietro in una funzione.
 
 ## <a name="remarks"></a>Commenti
- Passato come argomento al metodo [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
+ Passato come argomento al [metodo Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

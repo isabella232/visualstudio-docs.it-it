@@ -6,16 +6,16 @@ ms.author: dominicn
 ms.date: 11/06/2020
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.topic: how-to
-ms.openlocfilehash: 6df6fbf9d36f06c4cdeb1908b50173e2ffee136a
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: e69a57d4e3146122d64791d76f2ad9dabb1c428eb34cbca505d1faad402f1cb2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492945"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121438673"
 ---
 # <a name="adding-and-removing-project-items"></a>Aggiunta e rimozione di elementi di progetto
 
-È possibile aggiungere nuovi elementi di progetto al progetto facendo clic con il pulsante destro del mouse sul nodo del progetto nella **finestra della soluzione** e scegliendo **Aggiungi > nuovo file** :
+È possibile aggiungere nuovi elementi di progetto al progetto facendo clic  con il pulsante destro del mouse sul nodo Project nella finestra della soluzione e scegliendo **Aggiungi > nuovo file:**
 
 ![Aggiungere un nuovo elemento di progetto](media/add-and-remove-project-items-image1.png)
 
@@ -25,7 +25,7 @@ Verrà visualizzata la finestra di dialogo Nuovo file, in cui sono disponibili m
 
 ## <a name="adding-existing-files"></a>Aggiunta di file esistenti
 
-È possibile aggiungere file esistenti al progetto facendo clic con il pulsante destro del mouse sul nodo del progetto e scegliendo **aggiungi > Aggiungi file.** In alternativa, per aggiungere un'intera cartella, selezionare **aggiungi > Aggiungi cartella esistente...**. Viene visualizzato il Visualizzatore file, che consente di cercare l'elemento obbligatorio da aggiungere nel sistema.
+È possibile aggiungere file esistenti al progetto facendo clic con il pulsante destro del mouse sul nodo Project e scegliendo Aggiungi > **Aggiungi file...**. In alternativa, per aggiungere un'intera cartella, selezionare **> Aggiungi cartella esistente...**. Verrà visualizzato il browser di file, che consente di cercare nel sistema l'elemento necessario da aggiungere.
 
 ## <a name="removing-items"></a>Rimozione di elementi
 
@@ -37,9 +37,9 @@ Verrà visualizzata la finestra di dialogo di eliminazione dell'elemento. Selezi
 
 ![Finestra di dialogo di eliminazione dell'elemento](media/add-and-remove-project-items-image4.png)
 
-* **Elimina** : rimuove l'elemento dal progetto e dal disco.
-* **Rimuovi dal progetto** : rimuove l'elemento dal progetto, ma non dal disco
+* **Elimina**: rimuove l'elemento dal progetto e dal disco.
+* **Rimuovi dal progetto**: rimuove l'elemento dal progetto, ma non dal disco
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Soluzioni e progetti in Visual Studio (in Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

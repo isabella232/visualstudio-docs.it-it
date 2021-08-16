@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 11/05/2020
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 5cf5670b18aa6840eb3b36e6148cba4834aa709e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 40f783cdc498561c84b4b4d58e2cfecb19b8af95c5acdf9d6761bb9842730648
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438204"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121265700"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
 
@@ -32,7 +32,7 @@ Analisi utilizzo software di Visual Studio è attivato per impostazione predefin
 
 [!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program) (Analisi utilizzo software) (Visual Studio in Windows)
 * [Log generati dal sistema raccolti da Visual Studio (in Windows)](/visualstudio/ide/diagnostic-data-collection)

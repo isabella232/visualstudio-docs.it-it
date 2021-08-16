@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di campionamento | Microsoft Docs'
-description: Informazioni sul modo in cui la visualizzazione moduli dei dati di campionamento Visualizza i dati sulle prestazioni raggruppati in base ai moduli campionati nei dati di profilatura.
+description: Informazioni su come la visualizzazione Moduli dei dati di campionamento visualizza i dati sulle prestazioni raggruppati in base ai moduli campionati nei dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,16 @@ ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b498279b085f19cd6ea218b4300301184da8e0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e8599752b059ea760a0b0977e3ef01f91537074c2884e123935164c57c55c05
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879748"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121442190"
 ---
 # <a name="modules-view---sampling-data"></a>Visualizzazione Moduli: dati di campionamento
 Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni campionate del modulo sono elencate sotto il nodo del modulo.
@@ -33,7 +34,7 @@ Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i da
 |**Nome**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo del puntatore all'istruzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|
 |**Percorso modulo**|Percorso del modulo che contiene il modulo, la funzione, la riga o il puntatore all'istruzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|

@@ -1,6 +1,6 @@
 ---
-title: Analizzare l'utilizzo della memoria nel profiler delle prestazioni
-description: Informazioni su come usare lo strumento utilizzo memoria senza il debugger nel profiler delle prestazioni di Visual Studio per monitorare l'uso della memoria dell'app.
+title: Analizzare l'utilizzo della memoria nel Profiler prestazioni
+description: Informazioni su come usare lo strumento Utilizzo memoria senza il debugger nel Visual Studio Profiler prestazioni per monitorare l'uso della memoria dell'app.
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -12,20 +12,21 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c81bcb029499b77b2f5b25c598437f1fcbf70854
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f57c8a77872d38400bb45e0d8c9136869b8eefa714c01ea4c3b0a2f4aadb578c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886159"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121442372"
 ---
-# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analizzare l'utilizzo della memoria senza debug nel profiler delle prestazioni
+# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analizzare l'utilizzo della memoria senza eseguire il debug nel Profiler prestazioni
 
-Lo strumento **Utilizzo memoria** monitora l'utilizzo della memoria dell'app. È possibile utilizzare lo strumento per studiare gli effetti in tempo reale sulla memoria degli scenari in corso di sviluppo attivo in Visual Studio. Creare snapshot dettagliati degli stati di memoria dell'app e confrontare gli snapshot per individuare le cause principali dei problemi di memoria. Lo strumento utilizzo memoria è supportato nelle app .NET, ASP.NET, C++ o in modalità mista (.NET e native).
+Lo strumento **Utilizzo memoria** monitora l'utilizzo della memoria dell'app. È possibile utilizzare lo strumento per studiare gli effetti in tempo reale sulla memoria degli scenari in corso di sviluppo attivo in Visual Studio. Creare snapshot dettagliati degli stati di memoria dell'app e confrontare gli snapshot per individuare le cause principali dei problemi di memoria. Lo strumento Utilizzo memoria è supportato nelle app .NET, ASP.NET, C++ o in modalità mista (.NET e native).
 
-Lo strumento utilizzo memoria può essere eseguito [con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Questo articolo illustra come usare lo strumento utilizzo memoria senza il debugger nel **Profiler delle prestazioni** di Visual Studio, consigliato per le build di rilascio.
+Lo strumento Utilizzo memoria può essere [eseguito con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). In questo articolo viene illustrato come usare lo strumento Utilizzo memoria senza il debugger nel Visual Studio **Profiler prestazioni**, consigliato per le build di versione.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessioni di diagnostica con lo strumento Utilizzo memoria
 
@@ -33,21 +34,21 @@ Lo strumento utilizzo memoria può essere eseguito [con o senza il debugger](../
 
 1. Aprire un progetto in Visual Studio.
 
-   Lo strumento utilizzo memoria supporta le app .NET, ASP.NET, C++ o mista (.NET e native).
+   Lo strumento Utilizzo memoria supporta le app .NET, ASP.NET, C++ o in modalità mista (.NET e native).
 
-1. Nel menu debug impostare la configurazione della soluzione su **rilascia** e selezionare **debugger Windows locale** (o **computer locale**) come destinazione della distribuzione.
+1. Nel menu Debug impostare la configurazione della soluzione su **Release** e selezionare **Local Windows Debugger** (o Local **Machine)** come destinazione della distribuzione.
 
-1. Nella barra dei menu scegliere **debug**  >  **Profiler prestazioni**.
+1. Sulla barra dei menu scegliere **Debug**  >  **Profiler prestazioni**.
 
-1. In **strumenti disponibili** selezionare **utilizzo memoria** e quindi fare clic su **Avvia**.
+1. In **Strumenti disponibili** selezionare Utilizzo **memoria** e quindi selezionare **Avvia**.
 
    ![Avviare una sessione diagnostica di Utilizzo memoria](../profiling/media/memuse_start_diagnosticssession.png "Avviare una sessione diagnostica di Utilizzo memoria")
 
 ### <a name="monitor-memory-use"></a>Monitorare l'uso della memoria
 
-Quando si avvia una sessione di diagnostica, l'app viene avviata e nella finestra **strumenti di diagnostica** viene visualizzato un grafico della sequenza temporale dell'uso della memoria dell'app.
+Quando si avvia una sessione di diagnostica, l'app viene avviata e la finestra Strumenti di diagnostica visualizza un grafico della sequenza temporale dell'uso della memoria dell'app. 
 
-![Screenshot della finestra di Strumenti di diagnostica nel profiler delle prestazioni di Visual Studio che mostra un grafico della sequenza temporale dell'uso della memoria dell'app.](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![Screenshot della finestra Strumenti di diagnostica nel Visual Studio Profiler prestazioni che mostra un grafico della sequenza temporale dell'uso della memoria dell'app.](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
 Il grafico della sequenza temporale mostra le fluttuazioni di memoria durante l'esecuzione dell'app. Eventuali picchi nel grafico in genere indicano che alcune stringhe di codice stanno raccogliendo o creando dati, per poi rimuoverli al termine del processo. Picchi significativi indicano aree che potrebbero essere ottimizzate. Più preoccupante sarebbe un aumento del consumo di memoria che non torna ai valori normali, perché può indicare un uso della memoria non efficiente o addirittura una perdita di memoria.
 
@@ -61,13 +62,13 @@ Per raccogliere gli snapshot, scegliere **Crea snapshot** quando si vogliono acq
 
 Per arrestare una sessione di monitoraggio senza creare un report, chiudi semplicemente la finestra di diagnostica. Per generare un report al termine della raccolta o della creazione di snapshot, selezionare **Arresta raccolta**.
 
-![Interrompi raccolta](../profiling/media/memuse__stopcollection.png "Arresta raccolta")
+![Arresta raccolta](../profiling/media/memuse__stopcollection.png "Arresta raccolta")
 
 ## <a name="memory-usage-reports"></a>Report sull'utilizzo della memoria
 
 Una volta completata la raccolta dei dati, lo strumento **Utilizzo memoria** arresta l'app e visualizza la pagina di panoramica **Utilizzo memoria**.
 
-![Screenshot della pagina Overview nello strumento utilizzo memoria nel profiler delle prestazioni di Visual Studio, che mostra un grafico di utilizzo della memoria e due riquadri dello snapshot.](../profiling/media/memuse__reportoverview1.png "Pagina delle informazioni generali dello strumento Utilizzo memoria")
+![Screenshot della pagina di panoramica nello strumento Utilizzo memoria nella Visual Studio Profiler prestazioni, che mostra un grafico sull'utilizzo della memoria e due riquadri di snapshot.](../profiling/media/memuse__reportoverview1.png "Pagina delle informazioni generali dello strumento Utilizzo memoria")
 
 ### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> Snapshot di Utilizzo memoria
 
@@ -94,13 +95,13 @@ In un report snapshot è possibile espandere le voci **Tipo di oggetto** per vis
 
 Se un **Tipo di oggetto** è blu, è possibile selezionarlo per passare all'oggetto nel codice sorgente, in una finestra separata.
 
-I tipi che non è possibile identificare o il cui coinvolgimento nel codice che non si comprende sono probabilmente oggetti .NET, sistema operativo o del compilatore. Lo strumento **Utilizzo memoria** visualizza questi oggetti se sono coinvolti nelle catene di proprietà degli oggetti.
+I tipi che non è possibile identificare o il cui coinvolgimento nel codice non si comprende sono probabilmente oggetti .NET, del sistema operativo o del compilatore. Lo strumento **Utilizzo memoria** visualizza questi oggetti se sono coinvolti nelle catene di proprietà degli oggetti.
 
 Nei report snapshot:
 
 - L'albero **Heap gestito** mostra i tipi e le istanze presenti nel report. Quando si seleziona un tipo o un'istanza, vengono visualizzati gli alberi **Percorsi della radice** e **Oggetti a cui si fa riferimento** per l'elemento selezionato.
 
-- L'albero **percorsi della radice** Mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando tutti i relativi riferimenti sono stati rilasciati.
+- **L'albero Percorsi radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando sono stati rilasciati tutti i riferimenti ad esso.
 
 - L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
@@ -140,16 +141,16 @@ L'albero **Heap gestito** di un report dettagli dello snapshot include le colonn
 |**Modulo**|Il modulo che contiene il costruttore.|
 
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Albero Percorsi della radice (report dettagli dello snapshot)
-L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando tutti i relativi riferimenti sono stati rilasciati.
+L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector di .NET pulisce la memoria per un oggetto solo quando sono stati rilasciati tutti i riferimenti a esso.
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**.
 
-![Albero percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Albero percorsi della radice per i tipi")
+![Albero Percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Albero Percorsi della radice per i tipi")
 
 ### <a name="referenced-types-or-referenced-objects-tree-snapshot-details-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report dettagli dello snapshot)
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
-![Albero oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Albero oggetti a cui si fa riferimento per le istanze")
+![Albero Oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Albero Oggetti a cui si fa riferimento per le istanze")
 
 Un albero **Tipi a cui si fa riferimento** di un report dettagli dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** non comprende la colonna **Conteggio riferimenti**.
 
@@ -180,7 +181,7 @@ L'albero **Heap gestito** di un report differenze dello snapshot include le colo
 |Nome|Descrizione|
 |-|-|
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|
-|**Count**|Numero di istanze di un tipo nello snapshot principale. **Count** è sempre 1 per un'istanza.|
+|**Count**|Numero di istanze di un tipo nello snapshot principale. **Il conteggio** è sempre 1 per un'istanza.|
 |**Diff. conteggio**|Per un tipo, differenza nel numero di istanze del tipo tra lo snapshot principale e quello precedente. Il campo è vuoto per un'istanza.|
 |**Dimensioni (byte)**|La dimensione degli oggetti nello snapshot principale, meno la dimensione degli oggetti negli oggetti. Per un tipo, **Dimensione (byte)** e **Dimensione inclusiva (byte)** corrispondono ai totali delle dimensioni delle istanze di tipo.|
 |**Diff. dimensione totale (byte)**|Per un tipo, la differenza nella dimensione totale delle istanze del tipo tra lo snapshot principale e quello precedente, meno la dimensione degli oggetti nelle istanze. Il campo è vuoto per un'istanza.|
@@ -190,17 +191,17 @@ L'albero **Heap gestito** di un report differenze dello snapshot include le colo
 
 ### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Albero Percorsi della radice (report differenze degli snapshot)
 
-L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando tutti i relativi riferimenti sono stati rilasciati.
+L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector di .NET pulisce la memoria per un oggetto solo quando sono stati rilasciati tutti i riferimenti a esso.
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**. La differenza di numero rispetto allo snapshot precedente è indicata nella colonna **Diff. conteggio riferimenti**.
 
- ![Albero percorsi della radice in un rapporto diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero percorsi della radice in un rapporto diff")
+ ![Albero Percorsi della radice in un report delle diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero Percorsi della radice in un report delle diff")
 
 ### <a name="referenced-types-or-referenced-objects-tree-snapshot-diff-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report differenze degli snapshot)
 
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
-![Tipi a cui si fa riferimento in un report diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report diff")
+![Tipi a cui si fa riferimento in un report delle diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report delle diff")
 
 Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza**, **Dimensione (byte)**, **Dimensione inclusiva (byte)** e **Modulo**.
 
@@ -220,4 +221,4 @@ Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapsho
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Diagnostica dei problemi di memoria con il nuovo strumento utilizzo memoria in Visual Studio](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)
+- [Diagnosi dei problemi di memoria con il nuovo strumento Utilizzo memoria in Visual Studio](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)

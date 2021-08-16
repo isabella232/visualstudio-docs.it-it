@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.topic: overview
-ms.openlocfilehash: d5613a47785f1bb3fbb2a56f8458bba1946930e7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2fed47263740ed1f60997540eb65ce25217bc3a03984890d408a3dfac68de3f5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719801"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121439969"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilazione e creazione di build in Visual Studio per Mac
 
@@ -47,9 +47,9 @@ Per altre informazioni sull'uso di MSBuild, vedere il contenuto in [MSBuild](/vi
 
 ## <a name="building-from-azure-pipelines"></a>Compilazione da Azure Pipelines
 
-* [Compilare l'app Novell](/vsts/pipelines/apps/mobile/xamarin?view=vsts&preserve-view=true&tabs=vsts)
+* [Creare l'app Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&preserve-view=true&tabs=vsts)
 * [Continuous Integration with Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/) (Integrazione continua con Xamarin)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilazione e creazione (Visual Studio in Windows)](/visualstudio/ide/compiling-and-building-in-visual-studio)

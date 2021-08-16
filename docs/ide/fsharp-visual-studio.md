@@ -10,14 +10,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: a97bd1010a9c739c253f9b5f0a536800fd1f8b69
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff81b359c7bd9519deb6357065ad9f9e489a733ba188c70523fcb076e2b9e29c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838617"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121272525"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Sviluppare con F# in Visual Studio
 
@@ -25,7 +26,7 @@ Questo articolo offre informazioni sulle funzionalità di Visual Studio per lo s
 
 ## <a name="install-f-support"></a>Installare il supporto per F#
 
-Per sviluppare con F# in Visual Studio, installare prima di tutto il carico di lavoro **Sviluppo per desktop .NET**, se non lo si è già fatto. I carichi di lavoro di Visual Studio vengono installati tramite programma di installazione di Visual Studio, che è possibile aprire selezionando **strumenti**  >  **Ottieni strumenti e funzionalità**.
+Per sviluppare con F# in Visual Studio, installare prima di tutto il carico di lavoro **Sviluppo per desktop .NET**, se non lo si è già fatto. È possibile Visual Studio carichi di lavoro tramite Programma di installazione di Visual Studio, che è possibile aprire selezionando Strumenti  >  **Ottieni strumenti e funzionalità**.
 
 ![Carico di lavoro Sviluppo per desktop .NET in Visual Studio](media/dotnet-desktop-development-workload.png)
 
@@ -63,12 +64,12 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 |Pagina Creazione progetti|Collegamenti correlati|Descrizione|
 | - |-------------|-----------|
 |Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni e le proprietà a livello di applicazione, ad esempio se si sta creando una libreria o un file eseguibile, nonché la versione di .NET a cui è destinata l'applicazione e informazioni sulla posizione di archiviazione dei file di risorse usati dall'applicazione stessa.|
-|Compilazione|[Pagina Compila, Progettazione progetti](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
+|Compilazione|[Pagina Compilazione, Project progettazione](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
 |Eventi di compilazione|[Pagina Eventi di compilazione, Creazione progetti](reference/build-events-page-project-designer-csharp.md)|Consente di specificare i comandi da eseguire prima o dopo una compilazione.|
 |Debug|[Pagina Debug, Progettazione progetti](reference/debug-page-project-designer.md)|Consente di controllare la modalità di esecuzione dell'applicazione durante il debug, ad esempio i comandi da usare e la directory iniziale dell'applicazione, ed eventuali modalità di debug speciali da abilitare, ad esempio codice nativo e SQL.|
-|Pacchetto (solo .NET SDK)|N/D|Consente di definire i metadati del pacchetto NuGet durante la pubblicazione come pacchetto NuGet.|
+|Pacchetto (solo .NET SDK)|N/A|Consente di definire i metadati del pacchetto NuGet durante la pubblicazione come pacchetto NuGet.|
 |Percorsi riferimento|[Gestire i riferimenti in un progetto](managing-references-in-a-project.md)|Consente di specificare la posizione in cui cercare gli assembly da cui dipende il codice.|
-|Risorse (solo .NET SDK)|N/D|Consente di generare e gestire un file di risorse predefinito.|
+|Risorse (solo .NET SDK)|N/A|Consente di generare e gestire un file di risorse predefinito.|
 
 ### <a name="f-specific-settings"></a>Impostazioni specifiche di F#
 
@@ -100,9 +101,9 @@ F# supporta le funzionalità seguenti degli editor di codice e di testo di Visua
 |Inserimento di tabulazioni|Converte gli spazi in tabulazioni.|Sì|
 |Colorazione dei tipi|Visualizza i nomi dei tipi definiti con un colore particolare.|Sì|
 |Ricerca veloce. Vedere Ricerca veloce, finestra Trova e sostituisci.|Consente di eseguire ricerche all'interno di un file o di un progetto.|Sì|
-|**CTRL** + **fare clic** per passare alla definizione|Consente di richiamare Vai a definizione tenendo premuto **Ctrl** e facendo clic su un simbolo F#.|Sì|
+|**CTRL+FRECCIA DESTRA** + **fare clic** su Vai a definizione|Consente di richiamare Vai a definizione tenendo premuto **Ctrl** e facendo clic su un simbolo F#.|Sì|
 |Vai a definizione da Informazioni rapide|Simboli selezionabili all'interno delle descrizioni comando che richiamano Vai a definizione.|Sì|
-|Vai a tutti|Abilita la navigazione globale con corrispondenza fuzzy per tutti i costrutti F # tramite **CTRL** + **T**.|Sì|
+|Vai a tutti|Abilita lo spostamento globale e con corrispondenza fuzzy per tutti i costrutti F# tramite **CTRL** + **T.**|Sì|
 |Ridenominazione inline|Consente di rinominare tutte le occorrenze di un simbolo inline.|Sì|
 |Trova tutti i riferimenti|Trova tutte le occorrenze di un simbolo in una codebase.|Sì|
 |Correzione del codice Semplifica nome|Rimuove i qualificatori non necessari per i simboli F#.|Sì|
@@ -120,7 +121,7 @@ La tabella seguente riepiloga le funzionalità di IntelliSense supportate e non 
 |Implementazione automatica di interfacce|Genera stub di codice per metodi di interfaccia.|Sì|
 |Frammenti di codice|Inserisce codice da una libreria di costrutti di codifica comuni in argomenti.|No|
 |Completa parola|Salva il testo digitato completando le parole e i nomi durante la digitazione.|Sì|
-|Completamento automatico|Quando è abilitata, il completamento della parola seleziona la prima corrispondenza durante la digitazione, invece di attendere la selezione di uno o di premere **CTRL +** + **barra spaziatrice**.|Sì|
+|Completamento automatico|Se questa opzione è abilitata, il completamento della parola seleziona la prima corrispondenza durante la digitazione, invece di attendere di selezionarne una o premere + **CTRL+BARRA SPAZIATRICE.**|Sì|
 |Offerta di completamento dei simboli all'interno di spazi dei nomi non aperti|Con il completamento automatico, viene suggerito un simbolo corrispondente presente in uno spazio dei nomi non aperto, consentendo il completamento con l'istruzione `open` corrispondente, se selezionato.|Sì|
 |Generazione di elementi di codice|Consente di generare codice di stub per un'ampia gamma di costrutti.|No|
 |Elenca membri|Quando si digita l'operatore di accesso ai membri (.), visualizza i membri di un tipo.|Sì|

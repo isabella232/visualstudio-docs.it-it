@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Stampare fogli di lavoro a livello di codice'
-description: Informazioni su come usare i Visual Studio per stampare a livello di codice qualsiasi foglio di lavoro in una cartella di lavoro di Microsoft Excel.
+description: Informazioni su come usare le Visual Studio per stampare a livello di codice qualsiasi foglio di lavoro in una cartella Microsoft Excel lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 129493f726967776aa669eb92f6e912ed9c1b11b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 9671e678c28523bf3ab0aaeb443845b795f7b208b9db5db459afcd2692a08e7d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827149"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440734"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Procedura: Stampare fogli di lavoro a livello di codice
 
@@ -47,7 +48,7 @@ ms.locfileid: "107827149"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet23":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet23":::
 
-## <a name="print-a-worksheet-in-a-vsto-add-in"></a>Stampare un foglio di lavoro in un componente aggiuntivo VSTO
+## <a name="print-a-worksheet-in-a-vsto-add-in"></a>Stampare un foglio di lavoro in VSTO componente aggiuntivo
 
 ### <a name="to-print-a-worksheet"></a>Per stampare un foglio di lavoro
 
@@ -68,7 +69,7 @@ ms.locfileid: "107827149"
 ## <a name="see-also"></a>Vedi anche
 
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Eseguire il controllo ortografico nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
-- [Elemento host del foglio di lavoro](../vsto/worksheet-host-item.md)
-- [Accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Procedura: Controllare l'ortografia nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Elemento host Foglio di lavoro](../vsto/worksheet-host-item.md)
+- [Accesso globale agli oggetti nei Office progetto](../vsto/global-access-to-objects-in-office-projects.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

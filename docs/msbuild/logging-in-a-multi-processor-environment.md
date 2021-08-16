@@ -1,6 +1,6 @@
 ---
 title: Registrazione in un ambiente a più processori |Microsoft Docs
-description: Informazioni su come MSBuild fornisce un logger compatibile con più processori e consente la creazione di "logger di invio" personalizzati.
+description: Informazioni su MSBuild fornisce un logger in grado di riconoscere più processori e consente la creazione di "logger di inoltro" personalizzati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d58f9f29d88d7988b4ead3c2d96eadbbf95a8f46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf93886c65d9102e6ffe7cd2536e93405f6c6a9a67ebfb0c0fe30ecb7e0b44e3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966266"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121270523"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrazione in un ambiente a più processori
 

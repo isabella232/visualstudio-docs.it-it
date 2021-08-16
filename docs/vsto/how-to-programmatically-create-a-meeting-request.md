@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare una richiesta di riunione a livello di codice'
-description: Informazioni su come creare a livello di codice una richiesta di riunione in Microsoft Outlook e inviare la richiesta a un partecipante richiesto.
+description: Informazioni su come creare una richiesta di riunione in Microsoft Outlook a livello di codice e inviare la richiesta a un partecipante richiesto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 74479f68f763822f4f80fa6bb33cb708d4db26da
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: dfa0c7b8eb39a9bc8a64191784fab0d3788cf86d78f19a948310b6cbcf82e59d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828722"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440773"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>Procedura: Creare una richiesta di riunione a livello di codice
   In questo esempio viene creata una convocazione riunione in Microsoft Office Outlook e viene inviata la convocazione a un partecipante richiesto.
@@ -34,4 +35,4 @@ ms.locfileid: "107828722"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare gli elementi del calendario](../vsto/working-with-calendar-items.md)
-- [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Introduzione alla programmazione VSTO componenti aggiuntivi](../vsto/getting-started-programming-vsto-add-ins.md)

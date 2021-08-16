@@ -11,17 +11,18 @@ ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7f58dd088b37d3f1a404677c6c76bb09160b438
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a5593bd883b935e361623b8bc0325b3d78aea54b378db38a949ed258bad7df66
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067595"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262672"
 ---
 # <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 Seleziona tipi diversi di costruttori.
@@ -49,18 +50,18 @@ public enum ConstructorMatchOptions {
 Seleziona tutti i costruttori.
 
 `crNonStatic`\
-Seleziona i costruttori non statici.
+Seleziona costruttori non statici.
 
 `crStatic`\
-Seleziona i costruttori statici.
+Seleziona costruttori statici.
 
 ## <a name="remarks"></a>Commenti
-Passato come argomento al metodo [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) .
+Passato come argomento al [metodo EnumConstructors.](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: sh. h
+Intestazione: sh.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

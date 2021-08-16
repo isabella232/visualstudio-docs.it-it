@@ -1,6 +1,6 @@
 ---
-title: Aggiungere controlli ai documenti di Office in fase di esecuzione
-description: Informazioni su come aggiungere controlli a un documento di Microsoft Office Word e Microsoft Office cartella di lavoro di Excel in fase di esecuzione.
+title: Aggiungere controlli ai Office in fase di esecuzione
+description: Informazioni su come aggiungere controlli a un documento di Microsoft Office Word e Microsoft Office Excel cartella di lavoro in fase di esecuzione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -22,16 +22,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 64a4d4dcd2e6115a3b8093a0a9338cb126f49a28
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2b6f8fdd05bde0714abc90f8c18e6217708deb6313871e41e8600acecf40af10
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440903"
 ---
-# <a name="add-controls-to-office-documents-at-run-time"></a>Aggiungere controlli ai documenti di Office in fase di esecuzione
+# <a name="add-controls-to-office-documents-at-run-time"></a>Aggiungere controlli ai Office in fase di esecuzione
   È possibile aggiungere controlli a un documento di Microsoft Office Word e a una cartella di lavoro di Microsoft Office Excel in fase di esecuzione. È inoltre possibile rimuoverli in fase di esecuzione. I controlli aggiunti o rimossi in fase di esecuzione sono noti come *controlli dinamici*.
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
@@ -42,7 +43,7 @@ ms.locfileid: "107825134"
 
 - [Aggiungere controlli host ai documenti](#HostControls).
 
-- [Aggiungere Windows Forms controlli ai documenti](#WindowsForms).
+- [Aggiungere Windows form ai documenti](#WindowsForms).
 
 ## <a name="manage-controls-at-run-time-by-using-control-collections"></a><a name="ControlsCollection"></a> Gestire i controlli in fase di esecuzione usando raccolte di controlli
  Per aggiungere, ottenere o rimuovere i controlli in fase di esecuzione, usare i metodi di supporto degli oggetti <xref:Microsoft.Office.Tools.Excel.ControlCollection> e <xref:Microsoft.Office.Tools.Word.ControlCollection> .
@@ -53,7 +54,7 @@ ms.locfileid: "107825134"
 
 - In un progetto a livello di documento per Word, usare la proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> della classe `ThisDocument` . Per altre informazioni su questa classe, vedere Document [host item](../vsto/document-host-item.md).
 
-- In un progetto di componente aggiuntivo VSTO per Excel o Word usare la proprietà di un oggetto o generato in `Controls` <xref:Microsoft.Office.Tools.Excel.Worksheet> fase di <xref:Microsoft.Office.Tools.Word.Document> esecuzione. Per altre informazioni sulla generazione di questi oggetti in fase di esecuzione, vedere Estendere documenti di Word e cartelle di lavoro di Excel nei componenti aggiuntivi [VSTO in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- In un VSTO di componente aggiuntivo per Excel o Word, usare la proprietà di un oggetto o generato in `Controls` <xref:Microsoft.Office.Tools.Excel.Worksheet> fase di <xref:Microsoft.Office.Tools.Word.Document> esecuzione. Per altre informazioni sulla generazione di questi oggetti in fase di esecuzione, vedere Estendere documenti di Word e cartelle di lavoro [Excel in VSTO componenti aggiuntivi in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 
 ### <a name="add-controls"></a>Aggiungere controlli
  I tipi <xref:Microsoft.Office.Tools.Excel.ControlCollection> e <xref:Microsoft.Office.Tools.Word.ControlCollection> includono metodi di supporto che è possibile usare per aggiungere controlli host e controlli Windows Form comuni a documenti e fogli di lavoro. Il nome di ciascun metodo presenta il formato `Add`*classe del controllo*, dove *classe del controllo* rappresenta il nome del controllo che si desidera aggiungere. Ad esempio, per aggiungere un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> al documento, usare il metodo <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> .
@@ -98,15 +99,15 @@ Quando si aggiunge a livello di codice un controllo host a un documento, è nece
 
 Per altre informazioni sui controlli host, vedere [Cenni preliminari sugli elementi host e sui controlli host.](../vsto/host-items-and-host-controls-overview.md)
 
-Quando si salva e si chiude un documento, tutti i controlli host creati dinamicamente vengono disconnessi dai relativi eventi e perdono le proprie funzionalità di associazione dati. È possibile aggiungere codice alla soluzione per ricreare i controlli host quando il documento viene riaperto. Per altre informazioni, vedere [Rendere persistenti i controlli dinamici nei documenti di Office.](../vsto/persisting-dynamic-controls-in-office-documents.md)
+Quando si salva e si chiude un documento, tutti i controlli host creati dinamicamente vengono disconnessi dai relativi eventi e perdono le proprie funzionalità di associazione dati. È possibile aggiungere codice alla soluzione per ricreare i controlli host quando il documento viene riaperto. Per altre informazioni, vedere [Rendere persistenti i controlli dinamici nei Office documenti.](../vsto/persisting-dynamic-controls-in-office-documents.md)
 
 > [!NOTE]
 > I controlli host <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>e <xref:Microsoft.Office.Tools.Word.XMLNodes>non possono essere aggiunti a livello di codice ai documenti. Di conseguenza, per tali controlli non viene fornito alcun metodo di supporto.
 
-## <a name="add-windows-forms-controls-to-documents"></a><a name="WindowsForms"></a> Aggiungere Windows Forms controlli ai documenti
+## <a name="add-windows-forms-controls-to-documents"></a><a name="WindowsForms"></a>Aggiungere Windows form ai documenti
  Quando si aggiunge a livello di codice un controllo Windows Form a un documento, è necessario fornire il percorso del controllo e un nome che lo identifichi in modo univoco. Il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] fornisce metodi di supporto per ogni controllo. Questi metodi sono sottoposti a overload per consentire il passaggio di un intervallo o le coordinate specifiche per la posizione del controllo.
 
- Quando si salva e si chiude un documento, tutti i controlli Windows Form creati dinamicamente vengono rimossi dal documento. È possibile aggiungere codice alla soluzione per ricreare i controlli quando il documento viene riaperto. Se si creano controlli Windows Forms dinamici usando un componente aggiuntivo VSTO, i wrapper ActiveX per i controlli vengono lasciati nel documento. Per altre informazioni, vedere [Rendere persistenti i controlli dinamici nei documenti di Office.](../vsto/persisting-dynamic-controls-in-office-documents.md)
+ Quando si salva e si chiude un documento, tutti i controlli Windows Form creati dinamicamente vengono rimossi dal documento. È possibile aggiungere codice alla soluzione per ricreare i controlli quando il documento viene riaperto. Se si creano controlli Windows form dinamici usando un componente aggiuntivo VSTO, i wrapper ActiveX per i controlli vengono lasciati nel documento. Per altre informazioni, vedere [Rendere persistenti i controlli dinamici nei Office documenti.](../vsto/persisting-dynamic-controls-in-office-documents.md)
 
 > [!NOTE]
 > I controlli Windows Form non possono essere aggiunti a documenti protetti a livello di codice. Per rimuovere a livello di codice la protezione di un documento di Word o di un foglio di lavoro di Excel allo scopo di aggiungere un controllo, è necessario scrivere codice aggiuntivo per rimuovere il wrapper ActiveX del controllo alla chiusura del documento. Il wrapper ActiveX del controllo non viene eliminato automaticamente dai documenti protetti.
@@ -118,14 +119,14 @@ Quando si salva e si chiude un documento, tutti i controlli host creati dinamica
 
 - Per Word, usare uno dei metodi <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> di un oggetto <xref:Microsoft.Office.Tools.Word.ControlCollection> .
 
-  Per aggiungere il controllo, passare il controllo <xref:System.Windows.Forms.Control>, la posizione del controllo e un nome che lo identifichi in modo univoco per il metodo `AddControl`. Il metodo `AddControl` restituisce un oggetto che definisce la modalità di interazione del controllo con il foglio di lavoro o il documento. Il `AddControl` metodo restituisce un oggetto <xref:Microsoft.Office.Tools.Excel.ControlSite> (per Excel) <xref:Microsoft.Office.Tools.Word.ControlSite> o un oggetto (per Word).
+  Per aggiungere il controllo, passare il controllo <xref:System.Windows.Forms.Control>, la posizione del controllo e un nome che lo identifichi in modo univoco per il metodo `AddControl`. Il metodo `AddControl` restituisce un oggetto che definisce la modalità di interazione del controllo con il foglio di lavoro o il documento. Il `AddControl` metodo restituisce un oggetto <xref:Microsoft.Office.Tools.Excel.ControlSite> (per Excel) o <xref:Microsoft.Office.Tools.Word.ControlSite> un oggetto (per Word).
 
   Nell'esempio di codice seguente viene illustrato come usare il metodo <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> per aggiungere dinamicamente un controllo utente personalizzato a un foglio di lavoro in un progetto Excel a livello di documento. In questo esempio, il controllo utente è denominato `UserControl1`e <xref:Microsoft.Office.Interop.Excel.Range> è denominato `range1`. Per usare questo esempio, eseguirlo dalla classe `Sheet`*n* nel progetto.
 
   :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet2":::
   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet2":::
 
-### <a name="use-members-of-custom-controls"></a>Usare i membri dei controlli personalizzati
+### <a name="use-members-of-custom-controls"></a>Usare membri di controlli personalizzati
  Dopo aver usato uno dei metodi `AddControl` per aggiungere un controllo a un foglio di lavoro o a un documento, si dispone di due oggetti controllo diversi:
 
 - Il controllo <xref:System.Windows.Forms.Control> che rappresenta il controllo personalizzato.
@@ -146,12 +147,12 @@ Quando si salva e si chiude un documento, tutti i controlli host creati dinamica
   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet3":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
-- [Rendere persistenti i controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
+- [Controlli su Office documenti](../vsto/controls-on-office-documents.md)
+- [Rendere persistenti i controlli dinamici Office documenti](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Procedura: Aggiungere controlli ListObject ai fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [Procedura: Aggiungere controlli NamedRange ai fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [Procedura: Aggiungere controlli Chart ai fogli di lavoro](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [Procedura: Aggiungere controlli contenuto ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Procedura: Aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Windows Forms dei controlli nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Procedura: Aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Windows Panoramica dei controlli form Office documenti](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Procedura: Aggiungere controlli form Windows a Office documenti](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

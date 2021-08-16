@@ -1,6 +1,6 @@
 ---
 description: Ottiene il tipo di questo oggetto.
-title: 'IDebugObject2:: GetField | Microsoft Docs'
+title: IDebugObject2::GetField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 051c92b55b8fbd937abc20235d708f72f9c27078
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e3ad75a3bb1361d0b3f9625fa5fcaa989b75220ee8d8ed20892831fcb962e20c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087860"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121307271"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 Ottiene il tipo di questo oggetto.
@@ -42,13 +43,13 @@ int GetField(
 
 ## <a name="parameters"></a>Parametri
 `ppField`\
-out Restituisce un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) se non è un valore null.
+[out] Restituisce un [oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) se non è un valore Null.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Un campo descrive il tipo dell'oggetto.
+ Un campo descrive il tipo dell'oggetto .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

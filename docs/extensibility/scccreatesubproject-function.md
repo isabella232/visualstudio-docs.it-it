@@ -11,14 +11,15 @@ ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6df7a801d282113b530f24472419a9735256702
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 4f108439082152627024666e0bcd3b751e1d88d221e308de6f50767ca1d5c49c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904682"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121305178"
 ---
 # <a name="scccreatesubproject-function"></a>Funzione SccCreateSubProject
 Questa funzione crea un sottoprogetto con il nome specificato in un progetto padre esistente specificato `lpParentProjPath` dall'argomento .
@@ -88,10 +89,10 @@ SCCRTN SccCreateSubProject(
 
  Questa funzione è simile a [SccGetProjPath](../extensibility/sccgetprojpath-function.md), ad eccezione del fatto che crea automaticamente un progetto anziché chiedere all'utente di selezionarne uno. Quando la `SccCreateSubProject` funzione viene chiamata, `lpParentProjName` non sarà vuota e `lpAuxProjPath` corrisponderà a un progetto valido. Queste stringhe vengono in genere ricevute dall'IDE da una chiamata precedente alla funzione `SccGetProjPath` o [da SccGetParentProjectPath.](../extensibility/sccgetparentprojectpath-function.md)
 
- `lpUser`L'argomento è il nome utente. L'IDE passerà lo stesso nome utente ricevuto in precedenza da e il plug-in di controllo del codice sorgente deve usare `SccGetProjPath` il nome come predefinito. Se l'utente ha già una connessione aperta con il plug-in, il plug-in deve tentare di eliminare eventuali richieste per assicurarsi che la funzione funzioni in modo invisibile all'utente. Tuttavia, se l'accesso ha esito negativo, il plug-in deve richiedere all'utente un account di accesso e, quando riceve un account di accesso valido, passare nuovamente il nome in `lpUser` . Poiché il plug-in può modificare questa stringa, l'IDE alloca sempre un buffer di dimensioni (SCC_USER_LEN+1 o SCC_USER_SIZE, che include spazio per il terminatore Null). Se la stringa viene modificata, la nuova stringa deve essere un nome di accesso valido (almeno valido come la stringa precedente).
+ `lpUser`L'argomento è il nome utente. L'IDE passerà lo stesso nome utente ricevuto in precedenza da e il plug-in di controllo del codice sorgente deve usare il nome `SccGetProjPath` come predefinito. Se l'utente ha già una connessione aperta con il plug-in, il plug-in deve tentare di eliminare eventuali richieste per assicurarsi che la funzione funzioni in modo invisibile all'utente. Tuttavia, se l'accesso ha esito negativo, il plug-in deve richiedere all'utente un account di accesso e, quando riceve un account di accesso valido, passare nuovamente il nome in `lpUser` . Poiché il plug-in può modificare questa stringa, l'IDE alloca sempre un buffer di dimensioni (SCC_USER_LEN+1 o SCC_USER_SIZE, che include lo spazio per il terminatore Null). Se la stringa viene modificata, la nuova stringa deve essere un nome di accesso valido (almeno valido come la stringa precedente).
 
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Note tecniche per SccCreateSubProject e SccGetParentProjectPath
- L'aggiunta di soluzioni e progetti al controllo del codice sorgente è stata semplificata in Visual Studio per ridurre al minimo il numero di volte in cui a un utente viene richiesto di selezionare i percorsi nel sistema di controllo del codice sorgente. Queste modifiche vengono attivate Visual Studio se un plug-in del controllo del codice sorgente supporta entrambe le nuove `SccCreateSubProject` funzioni, e `SccGetParentProjectPath` . Tuttavia, la voce del Registro di sistema seguente può essere usata per disabilitare queste modifiche e ripristinare il comportamento precedente Visual Studio (API plug-in controllo del codice sorgente versione 1.1):
+ L'aggiunta di soluzioni e progetti al controllo del codice sorgente è stata semplificata in Visual Studio per ridurre al minimo il numero di volte in cui a un utente viene richiesto di selezionare i percorsi nel sistema di controllo del codice sorgente. Queste modifiche vengono attivate Visual Studio se un plug-in del controllo del codice sorgente supporta entrambe le nuove funzioni e `SccCreateSubProject` `SccGetParentProjectPath` . Tuttavia, la voce del Registro di sistema seguente può essere usata per disabilitare queste modifiche e ripristinare il comportamento precedente Visual Studio (API plug-in controllo del codice sorgente versione 1.1):
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**
 
@@ -99,7 +100,7 @@ SCCRTN SccCreateSubProject(
 
  Se la voce del Registro di sistema è impostata su dword:00000001, Visual Studio non tenta di usare queste nuove funzioni e le operazioni di aggiunta al controllo del codice sorgente funzionano come nelle versioni precedenti di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

@@ -6,20 +6,21 @@ ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 47bf978bc32c651cb90130ecc90517bfe1c29cdd
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 3b1c2da762be4f1ee9d7b903f9098e82857eec5e08cd4f7fa14315f6e7b54860
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111761108"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267104"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati della fase di progettazione con finestra di progettazione XAML in Visual Studio
 
-Alcuni layout sono difficili da visualizzare senza dati. In questo documento verrà esaminato uno degli approcci che gli sviluppatori che lavorano sui progetti desktop possono usare per schernire i dati nella finestra di progettazione XAML. Questo approccio viene eseguito usando lo spazio dei nomi "d:" ignorabile esistente. Con questo approccio è possibile aggiungere rapidamente dati in fase di progettazione alle pagine o ai controlli senza la necessità di creare un viewModel fittizio completo o semplicemente testare come una modifica di proprietà potrebbe influire sull'applicazione senza preoccuparsi che queste modifiche influiranno sulle build di versione. All d: i dati vengono usati solo dal finestra di progettazione XAML e nell'applicazione non vengono compilati valori dello spazio dei nomi ignorabili.
+Alcuni layout sono difficili da visualizzare senza dati. In questo documento verrà esaminato uno degli approcci che gli sviluppatori che lavorano su progetti desktop possono usare per mocking dei dati nella finestra di progettazione XAML. Questo approccio viene eseguito usando lo spazio dei nomi "d:" ignorabile esistente. Con questo approccio è possibile aggiungere rapidamente dati in fase di progettazione alle pagine o ai controlli senza la necessità di creare un ViewModel fittizio completo o semplicemente testare in che modo una modifica di proprietà potrebbe influire sull'applicazione senza doversi preoccupare che queste modifiche influiranno sulle build di rilascio. Tutti i dati d: vengono usati solo dal finestra di progettazione XAML e nell'applicazione non vengono compilati valori di spazio dei nomi ignorabili.
 
 > [!NOTE]
-> se si usa Xamarin.Forms, vedere [Xamarin.Forms Design Time Data](/xamarin/xamarin-forms/xaml/xaml-previewer/design-time-data)
+> Se si usa Xamarin.Forms, vedere Dati della fase di progettazione [di Xamarin.Forms](/xamarin/xamarin-forms/xaml/xaml-previewer/design-time-data)
 
 ## <a name="design-time-data-basics"></a>Nozioni di base sui dati della fase di progettazione
 
@@ -31,19 +32,19 @@ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
 ```
 
-Dopo aver aggiunto gli spazi dei nomi, è possibile inserire qualsiasi attributo o controllo per mostrarlo solo nel finestra di progettazione XAML `d:` ma non in fase di esecuzione.
+Dopo aver aggiunto gli spazi dei nomi, è possibile inserire prima di qualsiasi attributo o controllo per mostrarlo solo nel finestra di progettazione XAML ma non in `d:` fase di esecuzione.
 
-Ad esempio, è possibile aggiungere testo a un oggetto TextBlock a cui in genere sono associati dati.
+Ad esempio, puoi aggiungere testo a un controllo TextBlock a cui in genere sono associati dati.
 
 ```xml
 <TextBlock Text="{Binding Name}" d:Text="Name!" />
 ```
 
-[![Dati in fase di progettazione con testo in un controllo TextBlock](media\xaml-design-time-textblock.png "Dati in fase di progettazione con testo un'etichetta")](media\xaml-design-time-textblock.png#lightbox)
+[![Dati in fase di progettazione con testo in un controllo TextBlock](media\xaml-design-time-textblock.png "Dati in fase di progettazione con testo etichetta")](media\xaml-design-time-textblock.png#lightbox)
 
-In questo esempio, senza `d:Text` , il finestra di progettazione XAML non mostrerebbe nulla per TextBlock. Viene invece visualizzato "Name!" in cui TextBlock avrà dati reali in fase di esecuzione.
+In questo esempio, senza `d:Text` , il finestra di progettazione XAML non mostrerebbe nulla per TextBlock. Al contrario, viene visualizzato "Name!" in cui TextBlock avrà dati reali in fase di esecuzione.
 
-È possibile usare con attributi per qualsiasi controllo UWP o WPF .NET Core, ad esempio `d:` colori, dimensioni dei caratteri e spaziatura. È anche possibile aggiungerlo al controllo stesso.
+È possibile usare con gli attributi per qualsiasi controllo .NET Core UWP o WPF, ad esempio `d:` colori, dimensioni dei caratteri e spaziatura. È anche possibile aggiungerlo al controllo stesso.
 
 ```xml
 <d:Button Content="Design Time Button" />
@@ -51,9 +52,9 @@ In questo esempio, senza `d:Text` , il finestra di progettazione XAML non mostre
 
 [![Dati in fase di progettazione con un controllo Button](media\xaml-design-time-button.png "Dati in fase di progettazione con un controllo Button")](media\xaml-design-time-button.png#lightbox)
 
-In questo esempio il pulsante viene visualizzato solo in fase di progettazione. Usare questo metodo per inserire un segnaposto in per un controllo personalizzato o per provare controlli diversi. Tutti `d:` gli attributi e i controlli verranno ignorati durante il runtime.
+In questo esempio il pulsante viene visualizzato solo in fase di progettazione. Usare questo metodo per inserire un segnaposto in per un controllo personalizzato o per provare controlli diversi. Tutti `d:` gli attributi e i controlli verranno ignorati in fase di esecuzione.
 
-## <a name="preview-images-at-design-time"></a>Anteprima delle immagini in fase di progettazione
+## <a name="preview-images-at-design-time"></a>Visualizzare in anteprima le immagini in fase di progettazione
 
 È possibile impostare un'origine in fase di progettazione per le immagini associate alla pagina o caricate in modo dinamico. Aggiungere l'immagine che si vuole visualizzare nel finestra di progettazione XAML al progetto. È quindi possibile visualizzare l'immagine nel finestra di progettazione XAML in fase di progettazione:
 
@@ -66,10 +67,10 @@ In questo esempio il pulsante viene visualizzato solo in fase di progettazione. 
 
 ## <a name="design-time-data-for-listviews"></a>Dati in fase di progettazione per ListView
 
-ListViews è un modo comune per visualizzare i dati nell'app Desktop. Tuttavia, sono difficili da visualizzare senza dati. È possibile usare questa funzionalità per creare dati inline della fase di progettazione ItemSource o Items. Il finestra di progettazione XAML visualizza gli elementi della matrice in ListView in fase di progettazione.
+ListViews è un modo comune per visualizzare i dati nell'app desktop. Tuttavia, sono difficili da visualizzare senza dati. È possibile usare questa funzionalità per creare un elemento ItemSource o Items dei dati inline della fase di progettazione. L finestra di progettazione XAML mostra il valore presente in tale matrice in ListView in fase di progettazione.
 
 ### <a name="wpf-net-core-example"></a>Esempio di WPF .NET Core
-Per usare il tipo system:String, assicurarsi di includere `xmlns:system="clr-namespace:System;assembly=mscorlib` nell'intestazione XAML.
+Per usare il tipo system:String, assicurati di includere `xmlns:system="clr-namespace:System;assembly=mscorlib` nell'intestazione XAML.
 
 ```xml
 <StackPanel>
@@ -92,9 +93,9 @@ Per usare il tipo system:String, assicurarsi di includere `xmlns:system="clr-nam
 
 [![Dati in fase di progettazione con un controllo ListView](media\xaml-design-time-listview-strings.png "Dati in fase di progettazione con un controllo ListView")](media\xaml-design-time-listview-strings.png#lightbox)
 
-Questo esempio precedente mostra un controllo ListView con tre TextBlock nell'finestra di progettazione XAML.
+Questo esempio precedente mostra un controllo ListView con tre textBlock nella finestra di progettazione XAML.
 
-È anche possibile creare una matrice di oggetti dati. Ad esempio, le proprietà pubbliche di un `City` oggetto dati possono essere costruite come dati in fase di progettazione.
+È anche possibile creare una matrice di oggetti dati. Ad esempio, le proprietà pubbliche di un `City` oggetto dati possono essere costruite come dati della fase di progettazione.
 
 ```csharp
 namespace Cities.Models
@@ -135,13 +136,13 @@ xmlns:models="clr-namespace:Cities.Models"
 </StackPanel>
 ```
 
-[![Modello effettivo nei dati in fase di progettazione con un controllo ListView](media\xaml-design-time-listview-models.png "Dati effettivi della fase di progettazione del modello con un controllo ListView")](media\xaml-design-time-listview-models.png#lightbox)
+[![Modello effettivo nei dati della fase di progettazione con un controllo ListView](media\xaml-design-time-listview-models.png "Dati effettivi della fase di progettazione del modello con un controllo ListView")](media\xaml-design-time-listview-models.png#lightbox)
 
-Il vantaggio è che è possibile associare i controlli a una versione statica in fase di progettazione del modello.
+Il vantaggio è che è possibile associare i controlli a una versione statica della fase di progettazione del modello.
 
 ### <a name="uwp-example"></a>Esempio UWP
 
-x:Array non è supportato nella UWP. È quindi possibile `<d:ListView.Items>` usare . Per usare il tipo system:String, assicurarsi di includere `http://schemas.microsoft.com/winfx/2009/xaml` nell'intestazione XAML.
+x:Array non è supportato nella UWP. È quindi possibile usare `<d:ListView.Items>` . Per usare il tipo system:String, assicurati di includere `http://schemas.microsoft.com/winfx/2009/xaml` nell'intestazione XAML.
 
 ```xml
     <StackPanel>
@@ -155,11 +156,11 @@ x:Array non è supportato nella UWP. È quindi possibile `<d:ListView.Items>` us
     </StackPanel>
 ```
 
-## <a name="use-design-time-data-with-custom-types-and-properties"></a>Usare dati in fase di progettazione con proprietà e tipi personalizzati
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>Usare dati in fase di progettazione con tipi e proprietà personalizzati
 
-Questa funzionalità per impostazione predefinita funziona solo con i controlli e le proprietà della piattaforma. In questa sezione vengono descritti i passaggi necessari per consentire l'uso di controlli personalizzati come controlli in fase di progettazione, una nuova funzionalità disponibile per i clienti che usano Visual Studio 2019 [versione 16.8](/visualstudio/releases/2019/release-notes/) o successiva. Esistono tre requisiti per abilitare questa funzionalità:
+Per impostazione predefinita, questa funzionalità funziona solo con i controlli e le proprietà della piattaforma. In questa sezione vengono descritti i passaggi necessari per consentire l'uso di controlli personalizzati come controlli in fase di progettazione, una nuova funzionalità disponibile per i clienti che usano Visual Studio 2019 versione [16.8](/visualstudio/releases/2019/release-notes/) o successiva. A tale scopo, sono necessari tre requisiti:
 
-- Spazio dei nomi xmlns personalizzato
+- Uno spazio dei nomi xmlns personalizzato
 
     ```xml
     xmlns:myControls="http://MyCustomControls"
@@ -178,7 +179,7 @@ Questa funzionalità per impostazione predefinita funziona solo con i controlli 
     mc:Ignorable="d myDesignTimeControls"
     ```
 
-Dopo aver effettuato tutti questi passaggi, è possibile usare il `myDesignTimeControls` prefisso per creare i controlli in fase di progettazione.
+Dopo aver seguito tutti questi passaggi, è possibile usare il `myDesignTimeControls` prefisso per creare i controlli in fase di progettazione.
 
 ```xml
 <myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
@@ -186,7 +187,7 @@ Dopo aver effettuato tutti questi passaggi, è possibile usare il `myDesignTimeC
 
 ### <a name="creating-a-custom-xmlns-namespace"></a>Creazione di uno spazio dei nomi xmlns personalizzato
 
-Per creare uno spazio dei nomi xmlns personalizzato in WPF .NET Core, è necessario eseguire il mapping dello spazio dei nomi XML personalizzato allo spazio dei nomi CLR in cui si sono contenuti i controlli. A tale scopo, aggiungere `XmlnsDefinition` l'attributo a livello di assembly nel `AssemblyInfo.cs` file. Il file si trova nella gerarchia radice del progetto.
+Per creare uno spazio dei nomi xmlns personalizzato in WPF .NET Core, è necessario eseguire il mapping dello spazio dei nomi XML personalizzato allo spazio dei nomi CLR in cui si sono contenuti i controlli. A tale scopo, aggiungere `XmlnsDefinition` l'attributo a livello di assembly nel file `AssemblyInfo.cs` . Il file si trova nella gerarchia radice del progetto.
 
    ```C#
 [assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
@@ -194,13 +195,13 @@ Per creare uno spazio dei nomi xmlns personalizzato in WPF .NET Core, è necessa
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se si verifica un problema non elencato in questa sezione, segnalarci il problema usando lo [strumento Segnala un](../ide/how-to-report-a-problem-with-visual-studio.md) problema.
+Se si verifica un problema che non è elencato in questa sezione, segnalarci usando lo [strumento Segnala un](../ide/how-to-report-a-problem-with-visual-studio.md) problema.
 
 ### <a name="requirements"></a>Requisiti
 
-- I dati in fase di progettazione Visual Studio 2019 [versione 16.7](/visualstudio/releases/2019/release-notes-v16.7) o successiva.
+- I dati in fase di progettazione Visual Studio 2019 [versione 16.7 o](/visualstudio/releases/2019/release-notes-v16.7) successiva.
 
-- Supporta i progetti desktop di Windows che sono Windows Presentation Foundation (WPF) per .NET Core e UWP. Questa funzionalità è disponibile anche per .NET Framework nel [canale di anteprima](/visualstudio/releases/2019/release-notes-preview). Per abilitarlo, passare **a** Strumenti Opzioni Funzionalità di anteprima dell'ambiente, selezionare New WPF finestra di progettazione XAML for  >    >    >   **.NET Framework** e quindi riavviare Visual Studio.
+- Supporta Windows desktop che hanno come destinazione Windows Presentation Foundation (WPF) per .NET Core e UWP. Questa funzionalità è disponibile anche per .NET Framework nel [canale di anteprima](/visualstudio/releases/2019/release-notes-preview). Per abilitarla, passare **a** Strumenti Opzioni Funzionalità di anteprima dell'ambiente, selezionare New WPF finestra di progettazione XAML for .NET Framework (Nuovo modello WPF per .NET Framework), quindi  >    >    >  riavviare Visual Studio. 
 
 - A partire Visual Studio 2019 versione 16.7, questa funzionalità funziona con tutti i controlli in-the-box dei framework WPF e UWP. Il supporto per i controlli di terze parti è ora disponibile nella [versione 16.8.](/visualstudio/releases/2019/release-notes/)
 
@@ -210,7 +211,7 @@ Provare a chiudere e riaprire il file XAML e a pulire e ricompilare il progetto.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Dati in fase di progettazione con L'anteprima di Xamarin.Forms](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
+- [Dati della fase di progettazione con il visualizzatore anteprima di Xamarin.Forms](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [XAML in all WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML in all UWP](/windows/uwp/xaml-platform/xaml-overview)
 - [XAML in app Xamarin.Forms](/xamarin/xamarin-forms/xaml/)

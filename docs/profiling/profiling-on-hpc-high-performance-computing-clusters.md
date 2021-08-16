@@ -1,6 +1,6 @@
 ---
 title: Profilatura su cluster HPC (High Performance Computing) | Microsoft Docs
-description: Informazioni su come è possibile profilare sui nodi di calcolo di cluster Microsoft Windows HPC tramite il metodo di campionamento di Visual Studio Strumenti di profilatura.
+description: Informazioni su come eseguire la profilatura nei nodi di calcolo di microsoft Windows cluster HPC usando il metodo di campionamento del Visual Studio Strumenti di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,15 +18,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d7ce643f0684520da52a450ff40c60928808d26
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: 27e761d9a96a8ca2495e24684f9011fb6d09d7b104b75c28cda9077069698889
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884096"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121442060"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Eseguire la profilatura su cluster HPC (High Performance Computing)
 
@@ -48,13 +49,13 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:`*% Nodo head%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
 |Parametro | Descrizione |
 |------------------| - |
-| *Nodo head* | Nome del nodo head del cluster. |
+| *%HeadNode%* | Nome del nodo head del cluster. |
 | *%FxPath%* | Percorso del programma di installazione di .NET Framework 4. Nel supporto di installazione di Visual Studio il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel supporto di installazione di Visual Studio il percorso è: Standalone Profiler\x64\vs_profiler.exe |
 
