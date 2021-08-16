@@ -1,6 +1,6 @@
 ---
-description: Ignora il numero specificato di elementi nell'enumerazione dei fornitori di porte.
-title: 'IEnumDebugPortSuppliers2:: Skip | Microsoft Docs'
+description: Ignora il numero specificato di elementi nell'enumerazione suppliers della porta.
+title: IEnumDebugPortSuppliers2::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: bd95d7e9-274f-485d-8bf6-865306ae1b81
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa79f71a18cf71f6b118e74f541b432a89b60f9d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b259d768f6595db64f337de7d966d5b2a6434d7887fb3d08641b771bf02e4a37
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061615"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377327"
 ---
 # <a name="ienumdebugportsuppliers2skip"></a>IEnumDebugPortSuppliers2::Skip
 Ignora il numero di elementi specificato.
@@ -45,10 +46,10 @@ int Skip(
 [in]Numero di elementi da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è maggiore del numero di elementi `celt` rimanenti; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione viene impostata sulla fine e `S_FALSE` viene restituito.
+ Se specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione `celt` viene impostata sulla fine e viene `S_FALSE` restituito .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

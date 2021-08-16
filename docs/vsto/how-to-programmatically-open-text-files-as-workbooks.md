@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Aprire file di testo come cartelle di lavoro a livello di codice'
-description: Informazioni su come usare Visual Studio per aprire un file di testo come cartella di lavoro di Microsoft Excel a livello di codice.
+description: Informazioni su come usare Visual Studio per aprire a livello di codice un file di testo come Microsoft Excel cartella di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 14a73d7a06c3d79c15df5b823b38efc9ddceb846
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: e132cf1f729a279b13c65e9c3da3305f832dc96cdebf8c4a053264792db0e2f1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824172"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121296866"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procedura: Aprire file di testo come cartelle di lavoro a livello di codice
   È possibile aprire un file di testo come cartella di lavoro. È necessario passare il nome del file di testo che si vuole aprire. È possibile specificare diversi parametri facoltativi, ad esempio il numero di riga su cui iniziare l'analisi e il formato della colonna dei dati nel file.

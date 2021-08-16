@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Stampare documenti a livello di codice'
-description: Informazioni su come stampare un intero documento di Microsoft Word, o parte di un documento, sulla stampante predefinita.
+description: Informazioni su come stampare un intero Microsoft Word o parte di un documento nella stampante predefinita.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 47f295a6259b8d722c9c3c714b62fe648bdea1c6
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 31b6bf4e9fa4041710da1269ff239eecb3e75749e1819144fc99fed5f198efb5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827201"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408123"
 ---
 # <a name="how-to-programmatically-print-documents"></a>Procedura: Stampare documenti a livello di codice
   È possibile stampare un intero documento di Microsoft Office Word o parte di un documento sulla stampante predefinita.
@@ -43,7 +44,7 @@ ms.locfileid: "107827201"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet12":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet12":::
 
-## <a name="print-a-document-by-using-a-vsto-add-in"></a>Stampare un documento usando un componente aggiuntivo VSTO
+## <a name="print-a-document-by-using-a-vsto-add-in"></a>Stampare un documento usando un VSTO componente aggiuntivo
 
 ### <a name="to-print-an-entire-document"></a>Per stampare un intero documento
 

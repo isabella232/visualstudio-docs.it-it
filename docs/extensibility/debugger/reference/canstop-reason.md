@@ -11,17 +11,18 @@ ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 39a22a0534a464e9899e666550b31ab24503c05d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 995b197cd74612f324344c8fe9b74f9f96fc89449abfd83ba656f4102c9b52cf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096525"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378068"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
 Utilizzato per determinare se un programma può arrestare l'esecuzione dopo aver raggiunto un punto specifico dell'esecuzione.
@@ -48,15 +49,15 @@ public enum enum_CANSTOP_REASON {
 Specifica il punto di ingresso del programma specificato.
 
 `CANSTOP_STEPIN`\
-Specifica l'esecuzione di un'istruzione in una funzione.
+Specifica l'esecuzione di istruzioni in una funzione.
 
 ## <a name="remarks"></a>Commenti
-Passato come argomento al metodo [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) per confermare con la gestione del debug della sessione (SDM) se è opportuno arrestarsi dopo il raggiungimento del punto di ingresso del programma o dopo l'esecuzione di un'istruzione in una funzione o un metodo.
+Passato come argomento al metodo [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) per confermare con Gestione debug sessione (SDM) se è possibile arrestarsi dopo aver raggiunto il punto di ingresso del programma o dopo l'esecuzione di istruzioni in una funzione o in un metodo.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

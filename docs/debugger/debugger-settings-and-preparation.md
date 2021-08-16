@@ -1,6 +1,6 @@
 ---
-title: Impostazioni e preparazione del debugger | Microsoft Docs
-description: In questa sezione viene descritto come preparare l'utilizzo del debugger di Visual Studio e vengono descritte le proprietà pertinenti. Seguire i collegamenti alle informazioni necessarie.
+title: Debugger Impostazioni e preparazione | Microsoft Docs
+description: Questa sezione descrive come preparare l'uso del debugger Visual Studio e descrive le proprietà pertinenti. Seguire i collegamenti alle informazioni necessarie.
 ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: reference
@@ -18,35 +18,36 @@ ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d35b2cfac9a6b39d71359341444816fcfe56c0db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6153bd6a1657db7d780334a1a47bc443752045526a06e6067ea75f8bdb57b98a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872937"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379503"
 ---
 # <a name="debugger-settings-and-preparation"></a>Impostazioni di debug e preparazione
 In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Se si crea il programma in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.
 
- Per altre informazioni, vedere [procedura: impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md).
+ Per altre informazioni, vedere [Procedura: Impostare configurazioni di debug e versione](../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
- [Procedura: specificare le impostazioni del debugger](../debugger/how-to-specify-debugger-settings.md) Descrive le impostazioni del debugger nella finestra di dialogo **Opzioni** .
+ [Procedura: Specificare le impostazioni del debugger Impostazioni](../debugger/how-to-specify-debugger-settings.md) Descrive le impostazioni del debugger nella **finestra di dialogo** Opzioni .
  
- [Impostazioni progetto debugger](../debugger/debugger-project-settings.md) Viene illustrato come specificare le impostazioni del debugger, come impostare le configurazioni di debug e di rilascio e come gestire simboli e codice sorgente. Illustra anche le impostazioni di progetto appropriate per le configurazioni di debug C++, C#, F# e Visual Basic, nonché per i progetti Web.
+ [Debugger Project Impostazioni](../debugger/debugger-project-settings.md) Viene illustrato come specificare le impostazioni del debugger, come impostare le configurazioni di debug e versione e come gestire simboli e codice sorgente. Illustra anche le impostazioni di progetto appropriate per le configurazioni di debug C++, C#, F# e Visual Basic, nonché per i progetti Web.
 
- [Debug di progetti DLL](../debugger/debugging-dll-projects.md) Descrive le impostazioni di progetto consigliate per il debug di progetti di DLL, il debug da un progetto di DLL, il debug in modalità mista e il debug di una libreria di controlli Web gestita da codice gestito.
+ [Debug di progetti DLL](../debugger/debugging-dll-projects.md) Vengono descritte le impostazioni di progetto consigliate per il debug di progetti DLL, come eseguire il debug da un progetto DLL, come eseguire il debug in modalità mista e come eseguire il debug di una libreria di controlli Web di codice gestito.
 
- [Progetti console](../debugger/debugging-preparation-console-projects.md) Vengono fornite istruzioni su come configurare i progetti console per il debug.
+ [Progetti console](../debugger/debugging-preparation-console-projects.md) Vengono fornite istruzioni su come configurare progetti console per il debug.
 
- [Procedura: eseguire il debug di un file eseguibile che non fa parte di una soluzione di Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) Viene illustrato come eseguire il debug di un file eseguibile che non viene creato come parte di un progetto di Visual Studio.
+ [Procedura: Eseguire il debug di un eseguibile che](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) non fa parte di una Visual Studio soluzione Viene illustrato come eseguire il debug di un eseguibile che non viene creato come parte di un Visual Studio progetto.
 
  [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md) Viene descritto come eseguire il debug di applicazioni a 64 bit.
 
- [Procedura: specificare una versione precedente di .NET Framework per il debug](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Viene descritto come impostare una chiave del registro di sistema per indicare al debugger la versione da utilizzare.
+ [Procedura: Specificare una versione precedente del .NET Framework per il debug](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Viene descritto come impostare una chiave del Registro di sistema per indicare al debugger quale versione usare.
 
 ## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

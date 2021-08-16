@@ -1,6 +1,6 @@
 ---
-description: Indica che l'intero documento è stato eliminato definitivamente.
-title: 'IDebugDocumentTextEvents2:: OnDestroy | Microsoft Docs'
+description: Indica che l'intero documento è stato eliminato.
+title: IDebugDocumentTextEvents2::onDestroy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 60e4689c-c899-4c14-9d18-96393b741e1f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 011be7f08f6af124dd78e082ce5cd0d38afe982b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ffa245972961ee26e740df47fe325447d75ca634170f384e308c79b9602bdba3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066295"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377780"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
-Indica che l'intero documento è stato eliminato definitivamente.
+Indica che l'intero documento è stato eliminato.
 
 ## <a name="syntax"></a>Sintassi
 

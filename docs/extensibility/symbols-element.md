@@ -1,5 +1,5 @@
 ---
-title: Elementi Symbols | Microsoft Docs
+title: Elemento Symbols | Microsoft Docs
 description: L'elemento Symbols definisce GUID e ID usati da altri elementi VSCT. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,21 +11,22 @@ ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b593f353714f2fbb6f5b726fa2bbc0da449043ea
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 41281a9e62891fcb9cef3ab0928c5ecd447d2e87eff74ad992a73e8954bf6796
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901734"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358844"
 ---
 # <a name="symbols-element"></a>Elemento Symbols
 Definisce GUID e ID usati da altri elementi VSCT. Per il codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati [dall'elemento Extern](../extensibility/extern-element.md). Il codice gestito usa gli elementi figlio dell'elemento Symbols per definire queste informazioni.
 
- Se si crea un file vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento Symbols. Per altre informazioni, vedere [Procedura: Creare un oggetto . Vsct File da un oggetto esistente. File Cto](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+ Se si crea un file con estensione vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento Symbols. Per altre informazioni, vedere [Procedura: Creare un oggetto . File vsct da un oggetto esistente. Cto File](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
- L'elemento Symbols non deve essere confuso con [l'elemento Define ,](../extensibility/define-element.md)che definisce le coppie nome-valore per l'uso da parte del preprocessore.
+ L'elemento Symbols non deve essere confuso con [l'elemento Define,](../extensibility/define-element.md)che definisce le coppie nome-valore per l'uso da parte del preprocessore.
 
 ## <a name="syntax"></a>Sintassi
 

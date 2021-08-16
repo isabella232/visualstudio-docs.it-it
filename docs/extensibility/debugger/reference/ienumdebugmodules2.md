@@ -11,14 +11,15 @@ ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96a35f11346b769a4329b1212a8202e5e5ded006
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ef8e7e041ae63370ec285d02a720efada35aa4877b63319b4071527c2b2f94f0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058170"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377470"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 Questa interfaccia enumera un elenco di moduli.
@@ -30,13 +31,13 @@ IEnumDebugModules2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia per rappresentare un elenco di moduli caricati per un programma.
+ Il motore di debug implementa questa interfaccia per rappresentare un elenco di moduli caricati per un programma.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Visual Studio chiama [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) per ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IEnumDebugModules2` .
+ Nella tabella seguente vengono illustrati i metodi di `IEnumDebugModules2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -47,14 +48,14 @@ IEnumDebugModules2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Ottiene il numero di moduli.|
 
 ## <a name="remarks"></a>Commenti
- Visual Studio usa questa interfaccia principalmente per aggiornare la finestra **moduli** .
+ Visual Studio usa questa interfaccia principalmente per aggiornare la **finestra** Moduli.
 
- Ai fini del debug in Visual Studio, un programma è una sequenza logica di istruzioni di codice che possono superare i limiti dei moduli, quindi la necessità di un elenco di moduli per una singola interfaccia [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . Il primo modulo dell'elenco contiene in genere il punto di ingresso iniziale per il programma associato.
+ Ai fini del debug in Visual Studio, un programma è una sequenza logica di istruzioni di codice che possono attraversare i limiti dei moduli, quindi la necessità di un elenco di moduli per una singola [interfaccia IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) Il primo modulo nell'elenco contiene in genere il punto di ingresso iniziale per il programma associato.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

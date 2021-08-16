@@ -1,6 +1,6 @@
 ---
 description: L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a causa di un errore di autenticazione.
-title: Il debug non è riuscito perché l'autenticazione integrata di Windows non è abilitata | Microsoft Docs
+title: Debug non riuscito perché l'autenticazione Windows integrata non è abilitata | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f95359c7963ca7da3d59f81aa471424c23de8a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ac1922c66702ba5b0e5e3d10d7057c31239dffd492243f6d2dda37eddaaa33c6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147029"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379409"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata
 L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a causa di un errore di autenticazione. Questo errore può verificarsi quando si tenta di eseguire un'applicazione Web o un servizio Web XML. Una causa di questo errore è la mancata attivazione dell'autenticazione di Windows integrata. Per attivarla, seguire i passaggi della procedura relativa all'attivazione dell'autenticazione integrata di Windows.
@@ -36,7 +37,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 2. Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.
 
-3. Nel **Pannello di controllo** fare doppio clic su **strumenti di amministrazione**.
+3. In **Pannello di controllo** fare doppio clic su **Strumenti di amministrazione**.
 
 4. Fare doppio clic su **Internet Information Services**.
 
@@ -68,7 +69,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 2. Attivare Autenticazione di Windows e Compatibilità di gestione con IIS 6, se tale operazione non è stata già effettuata, seguendo questi passaggi:
 
-    1. Fare clic sul pulsante **Start**, scegliere **Pannello di controllo** , quindi fare clic su **programmi**.
+    1. Fare **clic sul pulsante Start**, **Pannello di controllo** e quindi su **Programmi**.
 
     2. In **Programmi e funzionalità** fare clic su **Attivazione o disattivazione delle funzionalità Windows**.
 
@@ -94,7 +95,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
     11. Per rendere effettive queste modifiche, riavviare il computer.
 
-3. Fare clic sul pulsante **Start** , quindi scegliere **Pannello di controllo**.
+3. Fare **clic su Start** e quindi su **Pannello di controllo**.
 
 4. Selezionare **Visualizzazione classica**, quindi fare doppio clic su **Strumenti di amministrazione**.
 
@@ -117,4 +118,4 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 ## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Autenticazione digest Microsoft](/windows/win32/secauthn/microsoft-digest-authentication)
-- [Esecuzione di applicazioni Web in Windows Vista con IIS 7,0 e Visual Studio](/previous-versions/aa964620(v=vs.140))
+- [Esecuzione di applicazioni Web Windows Vista con IIS 7.0 e Visual Studio](/previous-versions/aa964620(v=vs.140))

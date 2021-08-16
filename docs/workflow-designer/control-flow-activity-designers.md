@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner flusso di controllo Progettazione flussi di lavoro
-description: Informazioni sugli ActivityDesigner del flusso di controllo, che sono attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro.
+title: Progettazione flussi di lavoro - Controllo Flow ActivityDesigner
+description: Informazioni sul controllo Flow ActivityDesigner, ovvero attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,18 +8,19 @@ ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 844d80c8619abe972ef47e36587514db7251b8df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ebf1ee129c047b020028bc08de591e2e0b4dcc0343debf2d841c7bed0cabc94
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955632"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408017"
 ---
 # <a name="control-flow-activity-designers"></a>ActivityDesigner Flusso di controllo
 
-Progettazione flussi di lavoro include diverse attività fornite dal sistema che è possibile usare per la costruzione dei flussi di lavoro. Contenuto della sezione sono presentate le attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro. Negli argomenti riportati di seguito vengono illustrate queste attività e vengono fornite indicazioni sulle relative modalità di utilizzo.
+Progettazione flussi di lavoro include una serie di attività fornite dal sistema che è possibile usare durante la creazione dei flussi di lavoro. Contenuto della sezione sono presentate le attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro. Negli argomenti riportati di seguito vengono illustrate queste attività e vengono fornite indicazioni sulle relative modalità di utilizzo.
 
 ## <a name="reference"></a>Riferimento
 

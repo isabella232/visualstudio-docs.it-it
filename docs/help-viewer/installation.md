@@ -1,6 +1,6 @@
 ---
 title: Installare la Guida offline
-description: Vedere come installare Microsoft Help Viewer per leggere la Guida offline. Molti prodotti, ad esempio Visual Studio e SQL Server, usano Help Viewer per fornire contenuto della guida.
+description: Vedere come installare Microsoft Help Viewer per leggere la Guida offline. Diversi prodotti, ad esempio Visual Studio e SQL Server, usano Help Viewer per distribuire il contenuto della Guida.
 ms.date: 11/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b966ee38298f35b78722d2fe7e43b86773d5e68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e075b545f2445e024cc3e4ecd58d2676041db606498bd6298b965b2723db1184
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944147"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358497"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installazione di Microsoft Help Viewer
 
@@ -34,7 +35,7 @@ Help Viewer è un componente di installazione facoltativo di Visual Studio. Per 
 
 È possibile installare facilmente Microsoft Help Viewer anche tramite la casella di ricerca:
 
-1. Premere **CTRL** + **Q** , quindi digitare o immettere **Help Viewer** nella casella di ricerca.
+1. Premere **CTRL** + **Q** e quindi digitare o immettere **help viewer** nella casella di ricerca.
 
    ![Casella di ricerca](media/installation/quick-launch.png)
 
@@ -47,4 +48,4 @@ Help Viewer è un componente di installazione facoltativo di Visual Studio. Per 
 ## <a name="see-also"></a>Vedi anche
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
-- [Help Viewer e contenuto offline per SQL Server](/sql/sql-server/sql-server-help-installation)
+- [Visualizzatore della Guida e contenuto offline per SQL Server](/sql/sql-server/sql-server-help-installation)

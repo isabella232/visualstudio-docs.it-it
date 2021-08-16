@@ -1,5 +1,5 @@
 ---
-description: Specifica il motivo per cui è stato avviato il processo di debug.
+description: Specifica il motivo per cui il processo è stato avviato per il debug.
 title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db5d6697f222015cc4f6dbedbc6258e00c9b285f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 790dbcf8988af2751a8ce2eafda854797c89538ff3ca425b1bc11b9e53c9c795
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096252"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378042"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
-Specifica il motivo per cui è stato avviato il processo di debug.
+Specifica il motivo per cui il processo è stato avviato per il debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,27 +52,27 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>Campi
 `DEBUG_REASON_ERROR`\
-Si è verificato un errore non specifico (usato come condizione predefinita quando nessuno degli altri motivi si adatta).
+Si è verificato un errore non specifico (viene usato come condizione predefinita quando nessuno degli altri motivi è adatto).
 
 `DEBUG_REASON_USER_LAUNCHED`\
-Il processo è stato avviato in corrispondenza della richiesta dell'utente.
+Il processo è stato avviato su richiesta dell'utente.
 
 `DEBUG_REASON_USER_ATTACHED`\
-Il processo già in esecuzione è stato associato dall'utente.
+Il processo già in esecuzione è stato collegato dall'utente.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-Il processo è stato associato automaticamente al momento dell'avvio.
+Il processo è stato collegato automaticamente al momento dell'avvio.
 
 `DEBUG_REASON_CAUSALITY`\
-Il processo è stato avviato a causa di un evento di debug JIT ( *just-in-Time* ).
+Il processo è stato avviato a causa di un evento di debug JIT *(Just-In-Time).*
 
 ## <a name="remarks"></a>Commenti
-Restituito dal metodo [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .
+Restituito dal [metodo GetDebugReason.](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

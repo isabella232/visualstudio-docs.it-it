@@ -1,6 +1,6 @@
 ---
-title: Pagina in memoria | Microsoft Docs
-description: Per visualizzare il contenuto della memoria in una finestra di memoria o nella finestra Disassembly durante il debug in Visual Studio, vedere la pagina relativa alla modalità di paging in memoria.
+title: Pagina su o giù in memoria | Microsoft Docs
+description: Informazioni su come eseguire il page-down in memoria per visualizzare il contenuto della memoria in una finestra Memoria o nella finestra Disassembly durante il debug in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,14 +19,15 @@ ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fef6ebceaca742b9bda417cad4dd218f25b114b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7838f6088764939a4a93c0c723c5e06e5c9ed8f51c2d5bedc1c522b00e7238fb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885235"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379095"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Procedura: spostare verso l'alto o verso il basso una pagina di memoria
 

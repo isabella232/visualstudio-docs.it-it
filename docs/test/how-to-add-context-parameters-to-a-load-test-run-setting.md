@@ -1,6 +1,6 @@
 ---
 title: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
-description: Informazioni su come creare parametri di contesto da usare in un'impostazione di esecuzione test di carico usando il Editor test di carico, che consente di parametrizzare una stringa.
+description: Informazioni su come creare parametri di contesto da usare in un'impostazione di esecuzione del test di carico usando il Editor test di carico, che consente di parametrizzare una stringa.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +11,13 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 732f8e0cb88443533f74e843dde04ec977f24ebd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: b128d2b12447b1547237060ab6e18f899bc60eef6ab489ccd1f7f57a78f33b94
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942334"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121299825"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
 
@@ -25,7 +26,7 @@ Dopo aver creato il test di carico mediante la **Creazione guidata test di caric
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Per un elenco completo delle proprietà delle impostazioni esecuzione test e delle relative descrizioni, vedere [proprietà delle impostazioni esecuzione test di carico](../test/load-test-run-settings-properties.md).
+> Per un elenco completo delle proprietà delle impostazioni esecuzione test e delle relative descrizioni, vedere Proprietà [delle impostazioni esecuzione test di carico.](../test/load-test-run-settings-properties.md)
 
 È possibile creare parametri di contesto da utilizzare in un'impostazione di esecuzione del test di carico utilizzando l'Editor test di carico. I parametri di contesto consentono di parametrizzare una stringa.
 
@@ -66,9 +67,9 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
      Se le impostazioni esecuzione test già contengono una cartella **Parametri di contesto**, è possibile fare clic con il pulsante destro del mouse sulla cartella e scegliere **Aggiungi parametro di contesto**.
 
-4. Nella finestra **Proprietà** modificare il valore di **nome** nel modo appropriato (ad esempio, WebServer1). Nella finestra **Proprietà** modificare il **valore** del parametro che si desidera utilizzare (ad esempio, `http://CorporateStagingWebServer` ).
+4. Nella finestra **Proprietà** modificare il valore di **Nome** in base alle esigenze, ad esempio WebServer1. Nella **finestra** Proprietà modificare **Valore** nel parametro che si vuole usare, ad esempio `http://CorporateStagingWebServer` .
 
-5. Opzionale Ripetere i passaggi da 3 a 5 e utilizzare una stringa diversa per la proprietà **value** (ad esempio, `http://CorporateProductionWebServer` ).
+5. (Facoltativo) Ripetere i passaggi da 3 a 5 e usare una stringa diversa per la **proprietà Value** , ad esempio `http://CorporateProductionWebServer` .
 
 6. Scegliere quali impostazioni esecuzione test devono essere attive. Aprire il menu di scelta rapida nelle impostazioni esecuzione test e scegliere **Imposta come attivo**.
 

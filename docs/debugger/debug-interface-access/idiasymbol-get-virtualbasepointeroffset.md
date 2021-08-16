@@ -11,14 +11,15 @@ ms.assetid: a4f2649c-6702-491c-90a1-d6d669258c51
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e44c1249ce2c13236dcdf4b95b7daa1c8896c13
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c1fc4c90b232575bdb37b4e06db2b173591363ef38d9d3bfd53a88e66ced484a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161732"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379665"
 ---
 # <a name="idiasymbolget_virtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 Recupera l'offset del puntatore di base virtuale.
@@ -34,13 +35,13 @@ HRESULT get_virtualBasePointerOffset (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'offset del puntatore di base virtuale.
+[out] Restituisce l'offset del puntatore di base virtuale.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

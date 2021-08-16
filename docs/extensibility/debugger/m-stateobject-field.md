@@ -9,14 +9,15 @@ ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: df510fafbfe3ed6e71e9b5290fb1df0b02ae1d39
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0268f5a76d73f6546d2b916c9dd7e542109338d24a8ed6e5dbe0372391721ce1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903957"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378081"
 ---
 # <a name="m_stateobject-field"></a>m_stateObject campo
 Oggetto che rappresenta i dati che verranno utilizzati dall'azione.
@@ -34,7 +35,7 @@ Oggetto che rappresenta i dati che verranno utilizzati dall'azione.
 ```
 
 ## <a name="remarks"></a>Osservazioni
- Questo è il `state` parametro nel <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore. È anche il campo di supporto per la <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> proprietà .
+ Si tratta del `state` parametro nel <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore. È anche il campo di supporto per la <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> proprietà .
 
-## <a name="see-also"></a>Vedere anche
-- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Vedi anche
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,6 +1,6 @@
 ---
 title: Trovare e sostituire testo nei documenti a livello di codice
-description: Informazioni su come usare le Visual Studio per cercare e sostituire testo in un documento di Microsoft Word a livello di codice.
+description: Informazioni su come usare le Visual Studio per cercare e sostituire testo in un documento Microsoft Word a livello di codice.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0f2fc5bbfabbe2672ae59c55734a5cf57fc84318
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: de7adb47f6972d5c22330d76afbadec8a592c6821f9411fc078fd7b983cff230
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825160"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408136"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Procedura: Cercare e sostituire testo nei documenti a livello di codice
   L'oggetto <xref:Microsoft.Office.Interop.Word.Find> è un membro degli oggetti <xref:Microsoft.Office.Interop.Word.Selection> e <xref:Microsoft.Office.Interop.Word.Range>, ognuno dei quali può essere usato per cercare testo in documenti di Microsoft Office Word. Il comando di sostituzione è un'estensione del comando di ricerca.
@@ -123,4 +124,4 @@ ms.locfileid: "107825160"
 - [Procedura: Scorrere a livello di codice gli elementi trovati nei documenti](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
 - [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Procedura: Ripristinare le selezioni a livello di codice dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

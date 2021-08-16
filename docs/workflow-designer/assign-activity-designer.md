@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner di assegnazione Progettazione flussi di lavoro
-description: Informazioni su come usare l'ActivityDesigner Assign per creare e configurare un'attività Assign e il modo in cui l'attività Assign assegna un valore a una variabile o a un argomento.
+title: Progettazione flussi di lavoro - Assegnare ActivityDesigner
+description: Informazioni su come usare l'ActivityDesigner assegna per creare e configurare un'attività Assegna e come l'attività Assegna assegna un valore a una variabile o a un argomento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,18 +10,19 @@ ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6f649543cee66a1050e5724a9317b7b8806534
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b10e12302b2fd11a2e4aec9266e5ad517a1edb4ad47e8b64dde44df79847825e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888641"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408071"
 ---
 # <a name="assign-activity-designer"></a>ActivityDesigner Assign
 
-L'ActivityDesigner **assign** viene usato per creare e configurare un' <xref:System.Activities.Statements.Assign> attività.
+**L'ActivityDesigner** Assegna viene usato per creare e configurare <xref:System.Activities.Statements.Assign> un'attività.
 
 ## <a name="the-assign-activity"></a>Attività Assign
 
@@ -29,19 +30,19 @@ L'attività <xref:System.Activities.Statements.Assign> assegna un valore a una v
 
 ### <a name="using-the-assign-activity-designer"></a>Utilizzo dell'ActivityDesigner Assign
 
-L'ActivityDesigner **assign** è disponibile nella categoria **primitive** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** . in alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere CTRL + ALT + X.
+L'ActivityDesigner Assegna è disponibile nella categoria **Primitive** della Casella  degli strumenti **,** a  cui si accede facendo clic sulla scheda Casella degli strumenti .In alternativa, selezionare Casella degli strumenti dal **menu** Visualizza o CTRL+ALT+X. 
 
-È possibile trascinare l'ActivityDesigner **assign** dalla **casella degli strumenti** e rilasciarlo nell'area Progettazione flussi di lavoro in cui vengono inserite le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Se si elimina l'ActivityDesigner **assign** , viene creata un' <xref:System.Activities.Statements.Assign> attività con un **DisplayName** predefinito Assign. Il <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner **assign** o nella casella **DisplayName** della griglia delle proprietà.
+**L'ActivityDesigner** Assegna può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro in cui vengono posizionate le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione **di Assign** ActivityDesigner crea <xref:System.Activities.Statements.Assign> un'attività con **displayName predefinito** di Assign. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione di **Assegna** ActivityDesigner o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-assign-properties"></a>Proprietà di Assign
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Assign> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate in Progettazione flussi di lavoro area.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Assign> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate Progettazione flussi di lavoro superficie.
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.Assign>. L'impostazione predefinita è Assign. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
-|<xref:System.Activities.Statements.Assign.To%2A>|Vero|La variabile o l'argomento cui è assegnata la proprietà <xref:System.Activities.Statements.Assign.Value%2A>. Il valore deve essere un identificatore di Visual Basic valido. Per impostare la proprietà, digitare un'espressione Visual Basic nella casella **a** dell'ActivityDesigner **assign** o nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.Assign.Value%2A>|Vero|Valore assegnato alla variabile. Per impostare <xref:System.Activities.Statements.Assign.Value%2A> , digitare un'espressione Visual Basic nella casella **valore** dell'ActivityDesigner **assign** o nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.Assign.To%2A>|Vero|La variabile o l'argomento cui è assegnata la proprietà <xref:System.Activities.Statements.Assign.Value%2A>. Il valore deve essere un identificatore Visual Basic valido. Per impostare la proprietà, digitare un'Visual Basic nella casella **A** in **Assegna** ActivityDesigner o nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.Assign.Value%2A>|Vero|Valore assegnato alla variabile. Per impostare <xref:System.Activities.Statements.Assign.Value%2A> , digitare un'Visual Basic nella casella **Valore** in **Assegna** ActivityDesigner o nella griglia delle proprietà.|
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 653e653a0574da52c0030b06c7a8c13b436ed686
-ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
+ms.openlocfilehash: a8d1d17e78a0141530f984442eec07205e106857708744cd0e55e1ea033be4f7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106273414"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121407584"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installare Visual Studio 2019 per Mac
 
@@ -28,8 +28,8 @@ Per iniziare a sviluppare app .NET native e multipiattaforma in macOS, installar
 
 Per compilare app Xamarin per iOS o macOS, è anche necessario:
 
-- Un Mac compatibile con la versione più recente di Xcode. Vedere la [documentazione minima sui requisiti](https://developer.apple.com/support/xcode/) di Apple
-- La versione più recente di [Xcode](https://developer.apple.com/xcode). Potrebbe essere possibile [usare una versione precedente di Xcode](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode) se il Mac non è compatibile con la versione più recente.
+- Un Mac compatibile con la versione più recente di Xcode. Vedere la documentazione dei [requisiti minimi di Apple](https://developer.apple.com/support/xcode/)
+- La versione più recente di [Xcode.](https://developer.apple.com/xcode) Se il Mac non è compatibile con la versione più recente, potrebbe essere possibile usare una versione precedente di [Xcode.](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode)
 - ID Apple. Se non si ha ancora un ID Apple, è possibile crearne uno nuovo all'indirizzo https://appleid.apple.com. L'ID Apple è necessario per installare Xcode e accedervi.
 
 ## <a name="installation-instructions"></a>Istruzioni per l'installazione
@@ -37,40 +37,40 @@ Per compilare app Xamarin per iOS o macOS, è anche necessario:
 1. Scaricare il programma di installazione dalla [pagina di download di Visual Studio per Mac](https://visualstudio.microsoft.com/vs/mac/).
 2. Al termine del download, fare clic su **VisualStudioforMacInstaller.dmg** per montare il programma di installazione, quindi eseguirlo facendo doppio clic sul logo a forma di freccia:
 
-    [![Fare clic sulla freccia grande per iniziare l'installazione](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![Fare clic sulla freccia grande per avviare l'installazione](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
 3. È possibile che venga visualizzato un avviso relativo al download dell'applicazione da Internet. Fare clic su **Apri**.
 4. Attendere mentre il programma di installazione verifica il sistema:
 
-    [![Il programma di installazione controlla il sistema per i componenti installati](media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![Il programma di installazione verifica la presenza di componenti installati nel sistema](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
 5. Verrà visualizzato un avviso che chiede di accettare le condizioni di licenza e l'informativa sulla privacy. Seguire i collegamenti per leggerle e quindi premere **Continua** se si accettano:
 
-    [![Segui i collegamenti alla privacy e alle condizioni, quindi continua se accetti](media/install-privacy.png)](media/install-privacy.png#lightbox)
+    [![Seguire i collegamenti alla privacy e alle condizioni, quindi continuare se si accetta](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
 6. Verrà visualizzato l'elenco dei carichi di lavoro disponibili. Selezionare i componenti da usare:
 
-    [![Screenshot della schermata "cosa si vuole installare?" nel programma di installazione di Visual Studio Mac, che mostra un elenco dei componenti disponibili per l'installazione.](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Screenshot della schermata "Cosa si vuole installare?" nel programma di installazione di Visual Studio Mac, che mostra un elenco di componenti disponibili per l'installazione.](media/install-selection.png)](media/install-selection.png#lightbox)
 
    Se non si desidera installare tutte le piattaforme, usare la guida seguente per decidere quali piattaforme installare:
 
    |Tipo di app  |Destinazione  |Selezione  |Note  |
    |---------|---------|---------|---------|
-   |**App che usano Novell**| Xamarin.Forms|Selezionare le piattaforme **Android** e **iOS** |È necessario installare [ **Xcode**](https://developer.apple.com/xcode/) |
-   ||Solo iOS|Selezionare la piattaforma **iOS**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
-   ||Solo Android|Seleziona piattaforma **Android**|Si noti che è necessario selezionare anche le dipendenze rilevanti|
-   ||Solo Mac|Seleziona piattaforma **MacOS (Cocoa)**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
-   |**Applicazioni .NET Core**|         |Selezionare piattaforma **.NET Core** .|         |
-   |**Applicazioni Web ASP.NET Core**|         |Selezionare piattaforma **.NET Core** .|         |
-   |**Funzioni di Azure**|         |Selezionare piattaforma **.NET Core** .|         |
-   |**Sviluppo di giochi Unity multipiattaforma**|         |Non è necessario installare altre piattaforme oltre Visual Studio per Mac.| Fare riferimento alla [guida all'installazione di Unity](./setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.|
+   |**App che usano Xamarin**| Xamarin.Forms|Selezionare **le piattaforme Android** e **iOS** |È necessario installare [ **Xcode**](https://developer.apple.com/xcode/) |
+   ||Solo iOS|Selezionare **la piattaforma iOS**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
+   ||Solo Android|Selezionare **la piattaforma Android**|Si noti che è necessario selezionare anche le dipendenze pertinenti|
+   ||Solo Mac|Selezionare **la piattaforma macOS (Cocoa)**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
+   |**Applicazioni .NET Core**|         |Selezionare **Piattaforma .NET Core.**|         |
+   |**Applicazioni Web ASP.NET Core**|         |Selezionare **Piattaforma .NET Core.**|         |
+   |**Funzioni di Azure**|         |Selezionare **Piattaforma .NET Core.**|         |
+   |**Sviluppo di giochi Unity multipiattaforma**|         |Non è necessario installare piattaforme aggiuntive oltre Visual Studio per Mac.| Fare riferimento alla [guida all'installazione di Unity](./setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.|
 
 7. Dopo aver effettuato le selezioni, premere il pulsante **Installa**.
 8. Il programma di installazione visualizzerà lo stato di avanzamento del download e dell'installazione di Visual Studio per Mac e dei carichi di lavoro selezionati. Verrà richiesto di immettere la password per concedere i privilegi necessari per l'installazione:
 
-    [![Screenshot del programma di installazione di Visual Studio Mac che mostra lo stato di avanzamento dell'installazione per .NET Developer Toolkit per Mac.](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Screenshot del programma di installazione Visual Studio Mac che mostra una schermata di stato dell'installazione per .NET Developer Toolkit per Mac.](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
-9. Una volta installato, Visual Studio per Mac chiederà di personalizzare l'installazione effettuando l'accesso e selezionando i tasti di scelta rapida che si vuole usare:
+9. Dopo l'Visual Studio per Mac, verrà richiesto di personalizzare l'installazione accedendo e selezionando i tasti di scelta che si desidera usare:
 
     [![Accedere all'IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
 
@@ -109,9 +109,9 @@ L'installazione di Visual Studio per Mac consente di iniziare a scrivere codice 
 
 ### <a name="xamarinforms"></a>Xamarin.Forms
 
-Creazione di applicazioni multipiattaforma native con Novell. Forms:
+Creare applicazioni multipiattaforma native con Xamarin.Forms:
 
-1. [Guide introduttive per Novell. Forms](https://docs.microsoft.com/xamarin/get-started/quickstarts/)
+1. [Guide introduttive di Xamarin.Forms](https://docs.microsoft.com/xamarin/get-started/quickstarts/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>app .NET core, app Web ASP.NET Core, sviluppo di giochi Unity
 

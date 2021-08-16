@@ -12,17 +12,18 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa75bd1a229be147e3462845a61266a650e072e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: b3753f1bce7debe28f33f0c44059b0044d92ef2eadf11ca78215648065450907
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900239"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378283"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Aggiungere un comando alla barra degli strumenti Esplora soluzioni comandi
-Questa procedura dettagliata illustra come aggiungere un pulsante alla barra Esplora soluzioni barra **degli** strumenti.
+Questa procedura dettagliata illustra come aggiungere un pulsante alla barra Esplora soluzioni **barra** degli strumenti.
 
  Qualsiasi comando su una barra degli strumenti o un menu viene chiamato pulsante in Visual Studio. Quando si fa clic sul pulsante, viene eseguito il codice nel gestore dei comandi. In genere, i comandi correlati vengono raggruppati per formare un gruppo. I menu o le barre degli strumenti fungono da contenitori per i gruppi. La priorità determina l'ordine in cui i singoli comandi di un gruppo vengono visualizzati nel menu o sulla barra degli strumenti. È possibile impedire la visualizzazione di un pulsante sulla barra degli strumenti o sul menu controllandone la visibilità. Un comando elencato in una `<VisibilityConstraints>` sezione del file *vsct* viene visualizzato solo nel contesto associato. La visibilità non può essere applicata ai gruppi.
 
@@ -32,7 +33,7 @@ Questa procedura dettagliata illustra come aggiungere un pulsante alla barra Esp
 > Usare i file della tabella dei comandi XML *(vsct)* anziché i file di configurazione della tabella dei comandi ( con estensione *ctc*) per definire la modalità di visualizzazione di menu e comandi nei pacchetti VSPackage. Per altre informazioni, vedere Visual Studio [command table (. Vsct) file](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
- A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installazione di Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
+ A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Creare un'estensione con un comando di menu
  Creare un progetto VSIX denominato `SolutionToolbar` . Aggiungere un modello di voce di comando di menu denominato **ToolbarButton**. Per informazioni su come eseguire questa operazione, vedere [Creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
@@ -46,7 +47,7 @@ Questa procedura dettagliata illustra come aggiungere un pulsante alla barra Esp
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
     ```
 
-2. Nella sezione , dopo la voce di gruppo esistente, definire `<Groups>` il nuovo gruppo dichiarato nel passaggio precedente.
+2. Nella sezione `<Groups>` , dopo la voce di gruppo esistente, definire il nuovo gruppo dichiarato nel passaggio precedente.
 
     ```xml
     <Group guid="guidToolbarButtonPackageCmdSet"
@@ -118,5 +119,5 @@ Questa procedura dettagliata illustra come aggiungere un pulsante alla barra Esp
 
    La visibilità del pulsante viene controllata da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fino al caricamento del pacchetto VSPackage. Dopo il caricamento del pacchetto VSPackage, la visibilità del pulsante viene controllata dal pacchetto VSPackage.  Per altre informazioni, vedere [MenuCommands e OleMenuCommands.](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

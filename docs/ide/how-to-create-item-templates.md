@@ -1,6 +1,6 @@
 ---
 title: Creare modelli di elementi
-description: Informazioni su come usare l'esportazione guidata modelli per creare un modello di elemento in Visual Studio.
+description: Informazioni su come usare l'Esportazione guidata modello per creare un modello di elemento in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
@@ -9,12 +9,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 3f8dc8ddb5cc17f2ac575ea023283f60f579ccbd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 772117cd28823058abab4634e99012d19c8a10a77aa933b89a9dd4460d39160a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875393"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121319348"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 
@@ -28,7 +29,7 @@ Questo argomento spiega come creare un modello di elemento usando l'**Esportazio
 
 1. Modificare il file del codice per indicare dove verrà applicata la sostituzione dei parametri. Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1. Scegliere **Esporta modello** dal menu **progetto** .
+1. Nel menu **Project** scegliere **Esporta modello**.
 
 1. Nella pagina **Scegliere il tipo di modello** scegliere **Modello di elemento**, selezionare il progetto che contiene l'elemento e quindi scegliere **Avanti**.
 
@@ -44,7 +45,7 @@ Questo argomento spiega come creare un modello di elemento usando l'**Esportazio
 
 1. Chiudere e riaprire Visual Studio.
 
-1. Creare un nuovo progetto o aprire un progetto esistente, quindi scegliere **progetto**  >  **Aggiungi nuovo elemento** o premere **CTRL** + **MAIUSC** + **a**.
+1. Creare un nuovo progetto o aprire un progetto esistente e quindi scegliere Project Aggiungi nuovo elemento o  >   premere **CTRL** + **MAIUSC** + **A.**
 
    Il modello di elemento appare nella finestra di dialogo **Aggiungi nuovo elemento**. Se è stata aggiunta una descrizione nell'**Esportazione guidata modelli**, la descrizione viene visualizzata sul lato destro della finestra di dialogo.
 
@@ -115,13 +116,13 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 3. Modificare il file del codice per indicare dove deve avvenire la sostituzione dei parametri, se necessaria. Per altre informazioni sulla sostituzione dei parametri, vedere [Procedura: Sostituire i parametri di un modello.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-4. Creare un file XML e salvarlo con estensione *vstemplate* nella stessa directory del file dell'elemento del progetto.
+4. Creare un file XML e salvarlo con estensione *vstemplate* nella stessa directory del file dell'elemento di progetto.
 
 5. Modificare il file XML con estensione *vstemplate* in modo da specificare i metadati del modello di elemento. Per altre informazioni, vedere [Riferimento allo schema di modello (estendibilità)](../extensibility/visual-studio-template-schema-reference.md) e l'esempio nella sezione precedente.
 
 6. Salvare e chiudere il file con estensione *vstemplate*.
 
-7. In **Esplora risorse** selezionare i file che si vuole includere nel modello. Fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a**  >  **cartella compressa**. I file selezionati vengono compressi in un file con *estensione zip* .
+7. In **Esplora risorse** selezionare i file che si vuole includere nel modello. Fare clic con il pulsante destro del mouse sulla selezione e  >  **scegliere Invia alla cartella compressa**. I file selezionati vengono compressi in un *.zip* file.
 
 ::: moniker range="vs-2017"
 

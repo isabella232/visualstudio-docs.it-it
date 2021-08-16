@@ -1,5 +1,5 @@
 ---
-description: Recupera un simbolo che rappresenta il limite superiore di una dimensione della matrice FORTRAN.
+description: Recupera un simbolo che rappresenta il limite superiore di una dimensione di matrice FORTRAN.
 title: IDiaSymbol::get_upperBound | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: a77dcafa-ea3f-45da-826d-8f9b4489a03f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e07eed5400b49adc38bff878207cf4d9f38eada
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b2ccab028f5a3c152b4c5e313341fbf2ef47eb140876e5df1e45f1de0cecb84d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161781"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379694"
 ---
 # <a name="idiasymbolget_upperbound"></a>IDiaSymbol::get_upperBound
-Recupera un simbolo che rappresenta il limite superiore di una dimensione della matrice FORTRAN.
+Recupera un simbolo che rappresenta il limite superiore di una dimensione di matrice FORTRAN.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,13 +35,13 @@ HRESULT get_upperBound (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il limite superiore di una dimensione della matrice FORTRAN.
+[out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il limite superiore di una dimensione di matrice FORTRAN.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,6 +1,6 @@
 ---
-title: Metadati dell'elemento MSBuild comuni | Microsoft Docs
-description: Informazioni sui metadati facoltativi degli elementi che hanno significato per alcuni SDK o destinazioni di MSBuild, ma che non sono impostati per impostazione predefinita per ogni elemento.
+title: Metadati MSBuild elementi | Microsoft Docs
+description: Informazioni sui metadati facoltativi degli elementi che hanno un significato per alcuni SDK o destinazioni di MSBuild, ma non sono impostati per impostazione predefinita per ogni elemento.
 ms.custom: SEO-VS-2020
 ms.date: 07/13/2020
 ms.topic: reference
@@ -15,23 +15,24 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dda627f748773bc4cb5598b133ac05597ffe1d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ae8bf4b2d6b60ee4809e4ddd519692f9f457f14e03c3f52e2814a44dfe1ca1b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839309"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121303371"
 ---
 # <a name="common-msbuild-item-metadata"></a>Metadati dell'elemento MSBuild comuni
 
-La tabella seguente descrive i metadati facoltativi degli elementi che hanno un significato per alcuni SDK o destinazioni di MSBuild, ma che non sono impostati per impostazione predefinita per ogni elemento. È possibile impostarle in modo da influenzare il comportamento della compilazione, ma solo se i file SDK o di destinazione in uso lo riconoscono.
+La tabella seguente descrive i metadati facoltativi degli elementi che hanno un significato per alcuni SDK o destinazioni di MSBuild, ma che non sono impostati per impostazione predefinita per ogni elemento. È possibile impostarli per influenzare il comportamento di compilazione, ma solo se l'SDK o i file di destinazione in uso lo riconoscono.
 
 | Metadati degli elementi | SDK | Descrizione |
 |---------------| ------- | -------------|
-|% (Collegamento)| Tutti |Il sistema di progetto di Visual Studio USA i `Link` metadati (se presenti) per modificare gli elementi visualizzati nell'albero del progetto. è possibile inserire un file in una struttura di cartelle logica diversa in **Esplora soluzioni**.<br />Inoltre, l' `AssignTargetPath` attività esamina `Link` per determinare la posizione della directory di output in cui copiare un file, se si tratta di uno degli elementi che vengono copiati.|
-|% (Collegamento)| .NET Core SDK | Utilizzato per impostare la cartella da utilizzare per i `Link` metadati per i gruppi di elementi. |
+|%(Collegamento)| Tutti |Il Visual Studio del progetto usa metadati (se presenti) per modificare ciò che viene visualizzato nell'albero del progetto. È possibile inserire un file in una struttura di cartelle logica diversa `Link` **in Esplora soluzioni**.<br />L'attività esamina anche per determinare la posizione nella directory di output in cui copiare un file, se è uno degli `AssignTargetPath` `Link` elementi copiati.|
+|%(LinkBase)| .NET Core SDK | Consente di impostare la cartella da utilizzare per i `Link` metadati per i gruppi di elementi. |
 
 ## <a name="see-also"></a>Vedi anche
 

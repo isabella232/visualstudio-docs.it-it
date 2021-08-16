@@ -1,6 +1,6 @@
 ---
-title: Usare i controlli di Run-Time nativi | Microsoft Docs
-description: Usare i controlli runtime nativi in Visual Studio per rilevare errori di runtime comuni, ad esempio il danneggiamento del puntatore dello stack, il superamento delle matrici locali e il danneggiamento dello stack.
+title: Usare i controlli Run-Time native | Microsoft Docs
+description: Usare i controlli runtime nativi in Visual Studio per rilevare errori di runtime comuni, ad esempio il danneggiamento del puntatore dello stack, i sovraccarichi di matrici locali e il danneggiamento dello stack.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -37,17 +37,18 @@ ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be6684ed1801bc825bcb0db236737f33fe3901af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c74cdc63e7c72950050872135f2181002c3d4e57ca718db206f0fdf8979e88b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891800"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378736"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: utilizzare controlli runtime nativi
-In un progetto Visual Studio C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-checks) nativi per rilevare errori di runtime comuni, ad esempio:
+In un Visual Studio C++ è possibile usare [](/cpp/preprocessor/runtime-checks) le runtime_checks native per rilevare errori di runtime comuni, ad esempio:
 
 - Errori del puntatore dello stack.
 
@@ -61,7 +62,7 @@ In un progetto Visual Studio C++ è possibile usare [runtime_checks](/cpp/prepro
 
   Se si usa l'opzione **/RTC** con una build ottimizzata (**/O**), verrà restituito un errore del compilatore. Se si usa un pragma `runtime_checks` in una build ottimizzata, il pragma non avrà effetto.
 
-  Durante il debug di un programma in cui sono attivi i controlli runtime, l'azione predefinita quando si verifica un errore di runtime è l'arresto del programma e il passaggio al debugger. Tale comportamento predefinito può essere modificato per qualsiasi controllo runtime. Per ulteriori informazioni, vedere [gestione delle eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md).
+  Durante il debug di un programma in cui sono attivi i controlli runtime, l'azione predefinita quando si verifica un errore di runtime è l'arresto del programma e il passaggio al debugger. Tale comportamento predefinito può essere modificato per qualsiasi controllo runtime. Per altre informazioni, vedere [Gestione delle eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md).
 
   Nelle procedure riportate di seguito viene descritto come attivare i controlli runtime nativi in una build di debug e come modificare il comportamento di tali controlli.
 

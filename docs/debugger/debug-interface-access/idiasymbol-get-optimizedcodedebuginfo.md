@@ -11,14 +11,15 @@ ms.assetid: 57ef4170-37a9-46b0-8217-c1a674725113
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9009be3f9fc5ce8619463b9a2a0f8d8951ca3472
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 681323c2f30163662fcfc83b9175a3ef453eccb28db93cd5cc01001a5f9fdd3f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155880"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379806"
 ---
 # <a name="idiasymbolget_optimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 Recupera un flag che indica se la funzione contiene informazioni di debug specifiche per il codice ottimizzato.
@@ -34,19 +35,19 @@ HRESULT get_optimizedCodeDebugInfo(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione o l'etichetta ottimizzata contiene informazioni di debug; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se la funzione o l'etichetta ottimizzata contiene informazioni di debug; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

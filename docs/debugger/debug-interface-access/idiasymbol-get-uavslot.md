@@ -1,5 +1,5 @@
 ---
-description: Recupera lo slot UAV.
+description: Recupera lo slot uav.
 title: IDiaSymbol::get_uavSlot | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: a70648f2-3b25-439f-8099-239ac602515a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1d526952f7f09ebc1d186f8833f1d0b07ae678
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a9f44c2301c10b01461dafc654d26be087e989d0fc924224558748330dec1ae3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155607"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379710"
 ---
 # <a name="idiasymbolget_uavslot"></a>IDiaSymbol::get_uavSlot
-Recupera lo slot UAV.
+Recupera lo slot uav.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,10 +32,10 @@ HRESULT get_uavSlot(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un oggetto `DWORD` che include lo slot UAV.
+[out] Puntatore a un `DWORD` oggetto che contiene lo slot uav.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che indica se non è possibile eseguire il paging della sezione alla memoria.
+description: Recupera un flag che indica se la sezione non può essere disallocazione della memoria.
 title: IDiaSectionContrib::get_notPaged | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: bb6baa40-fece-4a4c-aba9-f4b41f418f8b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb59824f3be2e6f04e1fd49dcdc4a9ef08b8af1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 80d698af4dfa6d93ccba001c9d9c4e299771abe313bb48a446ca21ddb2e72547
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147989"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121281157"
 ---
 # <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
-Recupera un flag che indica se non è possibile eseguire il paging della sezione alla memoria.
+Recupera un flag che indica se la sezione non può essere disallocazione della memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +34,7 @@ HRESULT get_notPaged (
 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
-- [out, retval] Restituisce `TRUE` se non è possibile eseguire il paging della sezione; in caso contrario, restituisce `FALSE` .
+- [out, retval] Restituisce `TRUE` se non è possibile eseguire il paged out della sezione; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

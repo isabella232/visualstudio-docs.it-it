@@ -1,6 +1,6 @@
 ---
-description: Crea un oggetto usando un costruttore.
-title: 'IDebugFunctionObject:: CreateObject | Microsoft Docs'
+description: Crea un oggetto utilizzando un costruttore.
+title: IDebugFunctionObject::CreateObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27608634859ae96a8fb9461076397bb6df53570d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3477d95d583520db8faca131a3ad96b3fff7195f2ca5840f7a5752f3ddd685d2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073560"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377574"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
-Crea un oggetto usando un costruttore.
+Crea un oggetto utilizzando un costruttore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,24 +49,24 @@ int CreateObject(
 
 ## <a name="parameters"></a>Parametri
 `pConstructor`\
-in Oggetto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) che rappresenta il costruttore dell'oggetto da creare.
+[in] Oggetto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) che rappresenta il costruttore dell'oggetto da creare.
 
 `dwArgs`\
-in Numero di parametri nella `pArg` matrice. Rappresenta il numero di parametri passati al costruttore.
+[in] Numero di parametri nella `pArg` matrice. Rappresenta il numero di parametri passati al costruttore.
 
 `pArg`\
-in Matrice di oggetti [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta i parametri passati al costruttore.
+[in] Matrice di [oggetti IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresentano i parametri passati al costruttore.
 
 `ppObject`\
-out Restituisce un `IDebugObject` oggetto che rappresenta l'oggetto appena creato.
+[out] Restituisce un `IDebugObject` oggetto che rappresenta l'oggetto appena creato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una classe (o un altro tipo complesso che richiede un costruttore) che rappresenta un parametro per la funzione rappresentata dall'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
+ Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una classe (o di un altro tipo complesso che richiede un costruttore) che è un parametro per la funzione rappresentata [dall'interfaccia IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
- Se il parametro dell'oggetto non richiede un costruttore, chiamare il metodo [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) .
+ Se il parametro object non richiede un costruttore, chiamare il [metodo CreateObjectNoConstructor.](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

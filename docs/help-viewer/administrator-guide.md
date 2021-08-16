@@ -1,26 +1,27 @@
 ---
 title: Guida dell'amministratore di Help Viewer
-description: Leggere la guida dell'amministratore di Microsoft Help Viewer. Distribuire il contenuto della guida locale da Internet o distribuire il contenuto della guida locale preinstallato nei computer client.
+description: Leggere la guida Microsoft Help Viewer amministratore. Distribuire il contenuto della Guida locale da Internet o distribuire il contenuto della Guida locale preinstallato nei computer client.
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b7dfed5affb1d1c0c58efc46f001e4f68ea6bacc7167edff1967d64aff656ed
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944303"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358649"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 
 Il visualizzatore della Guida consente di gestire le installazioni della Guida locale per gli ambienti di rete con o senza accesso a Internet. Il contenuto della Guida locale viene configurato per ogni singolo computer. Per impostazione predefinita, gli utenti devono disporre dei diritti di amministratore per aggiornare l'installazione della Guida locale.
 
-Se l'ambiente di rete consente ai client di accedere a Internet, è possibile usare l'eseguibile di **Gestione contenuto della Guida** per distribuire il contenuto della guida locale da Internet. Per ulteriori informazioni sulla sintassi della riga di comando *HlpCtntMgr.exe* , vedere [argomenti della riga di comando per gestione contenuto della Guida](../help-viewer/command-line-arguments.md).
+Se l'ambiente di rete consente ai client di accedere a Internet, è possibile usare l'eseguibile **di Gestione** contenuto della Guida per distribuire il contenuto della Guida locale da Internet. Per altre informazioni sulla *sintassiHlpCtntMgr.exe* riga di comando, vedere Argomenti della riga di comando per Gestione contenuto [della Guida.](../help-viewer/command-line-arguments.md)
 
 Per informazioni sulla creazione del contenuto, sulla creazione di un endpoint servizio Intranet e tipi di attività simili, vedere [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md).
 
@@ -42,7 +43,7 @@ Se nell'ambiente di rete non si ha l'accesso a Internet, Help Viewer può distri
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
-Per ulteriori informazioni sulla sintassi della riga di comando *HlpCtntMgr.exe* , vedere [argomenti della riga di comando per gestione contenuto della Guida](../help-viewer/command-line-arguments.md).
+Per altre informazioni sulla *sintassiHlpCtntMgr.exe* riga di comando, vedere Argomenti della riga di comando per Gestione contenuto [della Guida.](../help-viewer/command-line-arguments.md)
 
 Requisiti:
 
@@ -79,7 +80,7 @@ Requisiti:
 - Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.
 
     > [!TIP]
-    > Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda **Gestisci contenuto** nel visualizzatore della Guida. Per ulteriori informazioni, vedere [override di gestione contenuto della Guida](../help-viewer/behavior-overrides.md).
+    > Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda **Gestisci contenuto** nel visualizzatore della Guida. Per altre informazioni, vedere [Override di Gestione contenuto della Guida.](../help-viewer/behavior-overrides.md)
 
 Avvertenze:
 
@@ -133,7 +134,7 @@ Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai c
 
      Ad esempio, copiare il contenuto in *C:\VSHelp* in *\\ \myserver\VSHelp*.
 
-2. Creare un file con estensione *bat* che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti. Ad esempio:
+2. Creare un file con estensione *bat* che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti. Esempio:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -141,11 +142,11 @@ Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai c
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3. Eseguire il file con *estensione bat* nei computer locali in cui si vuole installare il contenuto della guida.
+3. Eseguire il *.bat* file nei computer locali in cui si vuole installare il contenuto della Guida.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Argomenti della riga di comando per gestione contenuto della Guida](../help-viewer/command-line-arguments.md)
-- [Override di gestione contenuto della Guida](../help-viewer/behavior-overrides.md)
+- [Argomenti della riga di comando per Gestione contenuto della Guida](../help-viewer/command-line-arguments.md)
+- [Sostituzioni di Gestione contenuto della Guida](../help-viewer/behavior-overrides.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

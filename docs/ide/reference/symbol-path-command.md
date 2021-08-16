@@ -1,6 +1,6 @@
 ---
 title: Comando Percorso simboli
-description: Informazioni sul comando percorso simboli e su come imposta l'elenco di directory in cui il debugger deve cercare i simboli.
+description: Informazioni sul comando Percorso simboli e su come imposta l'elenco di directory per il debugger per la ricerca di simboli.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e69300e9dc621ea346c05923168c33bc7065c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67e13204ae754375d5844c04cf783e6a7fa4ebb1ae7ce739254f85686e6e08f9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967163"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121289075"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
 Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.
@@ -57,4 +58,4 @@ Debug.SymbolPath
 ## <a name="see-also"></a>Vedi anche
 
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)

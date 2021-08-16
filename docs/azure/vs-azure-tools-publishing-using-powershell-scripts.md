@@ -4,16 +4,17 @@ description: Informazioni su come utilizzare gli script di Windows PowerShell da
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e0486e3a13b1c6b6ba421c5c0a97788f514413e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5cd76dc8582ee8190268c704ffb871c756e394848a747f3cccae2949ae894f5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843956"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121406639"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
 
@@ -249,7 +250,7 @@ Per automatizzare la compilazione del progetto, aggiungere il codice che chiama 
         #Write a function to build and package your web application
     ```
 
-    Per compilare l'applicazione Web, usare MsBuild.exe. Per informazioni, vedere [MSBuild Command-Line Reference](../msbuild/msbuild-command-line-reference.md)
+    Per compilare l'applicazione Web, usare MsBuild.exe. Per informazioni, vedere informazioni [di MSBuild Command-Line riferimento](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -321,7 +322,7 @@ Per visualizzare la Guida per le funzioni è possibile utilizzare il prompt dei 
 | Trovare-AzureVM |Ottiene la macchina virtuale di Azure specificata. |
 | Formato DevTestMessageWithTime |Antepone la data e l’ora a un messaggio. Questa funzione è progettata per i messaggi scritti ai flussi di errore e dettagliati. |
 | Get-AzureSQLDatabaseConnectionString |Assembla una stringa di connessione per connettersi a un database SQL di Azure. |
-| Get-AzureVMStorage |Restituisce il nome del primo account di archiviazione con il modello di nome "devtest *" (senza distinzione tra maiuscole e minuscole) nella posizione o nel gruppo di affinità specificato. Se l'account di archiviazione "devtest*" non corrisponde alla posizione o al gruppo di affinità, la funzione lo ignora. Specificare un percorso o un gruppo di affinità. |
+| Get-AzureVMStorage |Restituisce il nome del primo account di archiviazione con il modello di nome "devtest" (senza distinzione tra maiuscole e minuscole) nel percorso o nel gruppo *di affinità specificato. Se l'account di archiviazione "devtest"* non corrisponde al percorso o al gruppo di affinità, la funzione lo ignora. Specificare un percorso o un gruppo di affinità. |
 | Get-MSDeployCmd |Restituisce un comando per eseguire lo strumento MsDeploy.exe. |
 | Nuovo AzureVMEnvironment |Trova o crea una macchina virtuale nella sottoscrizione che corrisponde ai valori nel file di configurazione JSON. |
 | Pubblicare-WebPackage |Utilizza MsDeploy.exe e un file Zip del pacchetto di pubblicazione web per distribuire le risorse a un sito Web. Questa funzione non genera alcun output. Se la chiamata a MSDeploy.exe non riesce, la funzione genera un'eccezione. Per ottenere un output più dettagliato, utilizzare l’opzione **-Verbose** . |

@@ -1,6 +1,6 @@
 ---
-description: Ottiene il campo a cui è associato l'attributo personalizzato.
-title: 'IDebugCustomAttribute:: GetParentField | Microsoft Docs'
+description: Ottiene il campo a cui è collegato l'attributo personalizzato.
+title: IDebugCustomAttribute::GetParentField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7aaa3ea38e5ed0691b8e335a3d39a8a82b7576ef
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 06b517d44c1b077674b76ce3e4d8991a851cc598398a8b0c913de478330f39c7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088055"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377808"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-Ottiene il campo a cui è associato l'attributo personalizzato.
+Ottiene il campo a cui è collegato l'attributo personalizzato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int GetParentField(
 
 ## <a name="parameters"></a>Parametri
 `ppField`\
-out Restituisce l'oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il campo a cui è associato l'attributo personalizzato.
+[out] Restituisce [l'oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il campo a cui è collegato l'attributo personalizzato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Chiamare il metodo [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) sull'oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) restituito per determinare il tipo di campo padre.
+ Chiamare il [metodo GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) sull'oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) restituito per determinare il tipo di campo padre.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

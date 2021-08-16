@@ -18,12 +18,12 @@ manager: andster
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 083095ad534aa6b9131ba103178313cb1cdc4b7c
-ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
+ms.openlocfilehash: a0931f6f8aba8dfbef705542cad889edc1441a327945d5640459e7cac4d0a2d5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107952919"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379334"
 ---
 # <a name="how-to-debug-a-managed-memory-dump-with-net-diagnostic-analyzers"></a>Come eseguire il debug di un dump managed memory con gli analizzatori di diagnostica .NET
 
@@ -43,7 +43,7 @@ Nell'esempio descritto in questo articolo, il problema è che l'app non risponde
 
 ## <a name="opening-a-memory-dump-in-visual-studio"></a>Apertura di un dump della memoria in Visual Studio
 
-1. Aprire il dump della memoria Visual Studio usando il comando di menu File **> Apri** > file e selezionare il dump della memoria.
+1. Aprire il dump della memoria Visual Studio file usando il comando di menu > Apri > **file** e selezionare il dump della memoria.
 
 1. Si noti che nella pagina Riepilogo dump memoria è presente una **nuova azione** denominata Esegui **analisi diagnostica**.
 
@@ -54,7 +54,7 @@ Nell'esempio descritto in questo articolo, il problema è che l'app non risponde
 
 ## <a name="select-and-execute-analyzers-against-the-dump"></a>Selezionare ed eseguire gli analizzatori rispetto al dump
 
-Per analizzare questi sintomi, le opzioni migliori sono disponibili in Velocità di risposta **del processo** perché corrisponde meglio al problema in questo esempio.
+Per analizzare questi sintomi, le opzioni migliori sono disponibili in **Velocità di** risposta del processo perché corrisponde meglio al problema in questo esempio.
 
    ![Selezionare gli analizzatori di diagnostica](../debugger/media/diagnostic-analyzer-diagnostics-analysis-window.png)
 
@@ -68,7 +68,7 @@ Per analizzare questi sintomi, le opzioni migliori sono disponibili in Velocità
 
    ![Risultati degli analizzatori di diagnostica](../debugger/media/diagnostic-analyzer-diagnostics-analysis-results.png)
 
-1. Il **riepilogo dell'analisi** ha dichiarato che il "pool di thread CLR sta riscontrando una carestia". Queste informazioni indicano che CLR ha attualmente usato tutti i thread del pool di thread disponibili, il che significa che il servizio non può rispondere a nuove richieste fino al rilascio di un thread.
+1. Il **riepilogo dell'analisi** ha dichiarato che il "pool di thread CLR sta riscontrando un'carezza". Queste informazioni suggeriscono che CLR ha attualmente usato tutti i thread del pool di thread disponibili, il che significa che il servizio non può rispondere ad alcuna nuova richiesta fino a quando non viene rilasciato un thread.
 
     > [!NOTE] 
     > La **correzione** in questo caso è "Non attendere in modo sincrono monitoraggi, eventi, attività o qualsiasi altro oggetto che potrebbe bloccare il thread. Verificare se è possibile aggiornare il metodo in modo che sia asincrono".
@@ -79,11 +79,11 @@ Il mio compito successivo è trovare il codice problematico.
 
 1. Facendo clic sul **collegamento Mostra stack** di chiamate Visual Studio si passa immediatamente ai thread che presentano questo comportamento.
 
-1. La **finestra Stack di** chiamate mostra i metodi che potrebbero potenzialmente distinguere rapidamente il codice (SyncOverAsyncExmple. ) dal codice framework *(System.*).
+1. La **finestra Stack di** chiamate mostrerà i metodi che potrebbero potenzialmente distinguere rapidamente tra il codice (SyncOverAsyncExmple. ) dal codice del framework *(sistema).*
 
    ![Collegamento degli analizzatori di diagnostica a uno stack di chiamate](../debugger/media/diagnostic-analyzer-call-stack.png)
 
-1. Ogni stack frame corrisponde a un metodo e facendo doppio clic sullo stack frame Visual Studio si passa al codice che ha portato direttamente a questo scenario in questo thread.
+1. Ogni stack frame corrisponde a un metodo e facendo doppio clic sugli stack frame Visual Studio si passa al codice che ha portato direttamente a questo scenario in questo thread.
 
 1. In questo esempio non sono presenti simboli o  codice, tuttavia, nella pagina Simboli non caricati è possibile selezionare l'opzione **[Decompila codice sorgente.](../debugger/decompilation.md)**
 
@@ -92,7 +92,7 @@ Il mio compito successivo è trovare il codice problematico.
 1. Nell'origine decompilata seguente è evidente che un'attività asincrona (ConsumeThreadPoolThread) chiama una funzione di blocco sincrona.
 
     > [!NOTE]  
-    > Metodo "DoSomething()" che contiene un metodo WaitHandle.WaitOne, che blocca il thread corrente del pool di thread fino a quando non riceve un segnale.
+    > Metodo "DoSomething()" che contiene un metodo WaitHandle.WaitOne, che blocca il thread del pool di thread corrente fino a quando non riceve un segnale.
 
    Per migliorare la velocità di risposta delle app, è importante rimuovere il blocco del codice sincrono da tutti i contesti asincroni.
 

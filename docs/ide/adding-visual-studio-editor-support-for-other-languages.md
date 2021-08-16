@@ -1,6 +1,6 @@
 ---
 title: Aggiungere il supporto di altri linguaggi nell'editor
-description: Informazioni sul modo in cui l'editor di Visual Studio supporta la lettura e lo spostamento in diversi linguaggi del computer e come è possibile aggiungere il supporto per altri linguaggi.
+description: Informazioni su come l'editor Visual Studio supporta la lettura e lo spostamento tra diversi linguaggi di computer e su come è possibile aggiungere il supporto per altri linguaggi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,14 +16,15 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d5e78f632cdfe3e207e7ce71530d06c2a3b3fc6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4933868248da896766d95875dc8e78b2eb56b1052456e55ca086a554cd7296cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914975"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358448"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Aggiungere il supporto di altri linguaggi all'editor di Visual Studio
 
@@ -101,17 +102,17 @@ Visual Studio offre il supporto dei linguaggi nell'editor tramite le [grammatich
 
 Aggiungere le nuove grammatiche TextMate per Visual Studio nella cartella seguente:
 
-*% UserProfile% \\ . vs\Extensions*
+*%userprofile% \\ .vs\Extensions*
 
 In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla situazione specifica:
 
 |Nome cartella|Descrizione|
 |-----------------|-----------------|
 |\\*\<language name>*|Cartella del linguaggio. Sostituire *\<language name>* con il nome della lingua. ad esempio, *\Matlab*.|
-|*\Syntaxes*|Cartella della grammatica. Contiene i file Grammar *. JSON* per il linguaggio, ad esempio *Matlab.json*.|
+|*\Syntaxes*|Cartella della grammatica. Contiene i file *json di grammatica* per il linguaggio, ad esempioMatlab.js *in*.|
 |*\Snippets*|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|
 
-In Windows *% USERPROFILE%* si risolve nel percorso: *\\ \<user name> c:\Users*. Se nel sistema non esiste la cartella *Extensions*, sarà necessario crearla. Se la cartella esiste già, verrà nascosta.
+In Windows% *userprofile%* si risolve nel percorso: *\\ \<user name> c:\Users*. Se nel sistema non esiste la cartella *Extensions*, sarà necessario crearla. Se la cartella esiste già, verrà nascosta.
 
 > [!TIP]
 > Se ci sono file aperti nell'editor, sarà necessario chiuderli e riaprirli per vedere l'evidenziazione della sintassi dopo aver aggiunto le grammatiche TextMate.
@@ -123,5 +124,5 @@ Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMa
 - [Aggiungere un'estensione del protocollo di server di linguaggio](../extensibility/adding-an-lsp-extension.md)
 - [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
 - [Procedura dettagliata: Visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)
-- [Codice di esempio: grammatica TextMate](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
-- [Esempio di codice: supporto del linguaggio personalizzato](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)
+- [Codice di esempio: Grammatica TextMate](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [Codice di esempio: supporto della lingua personalizzata](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

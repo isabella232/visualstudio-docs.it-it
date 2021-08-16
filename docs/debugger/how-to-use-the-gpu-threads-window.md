@@ -1,6 +1,6 @@
 ---
-title: Visualizzazione dei thread GPU nel debugger | Microsoft Docs
-description: Utilizzare la finestra thread GPU per esaminare e utilizzare i thread in esecuzione sulla GPU nell'applicazione di cui si esegue il debug in Visual Studio.
+title: Visualizzazione di thread GPU nel debugger | Microsoft Docs
+description: Usare la finestra Thread GPU per esaminare e usare i thread in esecuzione nella GPU nell'applicazione di cui si esegue il debug in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,23 +18,24 @@ ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a480daae7f5883cad9fa74e9d51d4df0f4485f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 971462777b2c2cf8ccf315b2764fc514b4991548542fcfe0b62144a8689e65e3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840964"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378710"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Procedura: utilizzare la finestra thread GPU (C++)
-Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per ulteriori informazioni sulle applicazioni eseguite sulla GPU, vedere [C++ amp Overview](/cpp/parallel/amp/cpp-amp-overview).
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Procedura: Usare la finestra Thread GPU (C++)
+Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per altre informazioni sulle applicazioni in esecuzione nella GPU, vedere C++ AMP [Panoramica](/cpp/parallel/amp/cpp-amp-overview)di .
 
  La finestra Thread GPU contiene una tabella in cui ogni riga rappresenta un set di thread GPU che hanno gli stessi valori in tutte le colonne. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile contrassegnare, rimuovere i flag, bloccare (sospendere) e sbloccare (riprendere) i thread dalla finestra Thread GPU. Le colonne seguenti sono visualizzate nella finestra Thread GPU:
 
 - Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.
 
-- Colonna del thread corrente, nella quale una freccia gialla indica il thread corrente.
+- Colonna del thread corrente, in cui una freccia gialla indica il thread corrente.
 
 - Colonna **Conteggio thread**, che visualizza il numero di thread nella stessa posizione.
 
@@ -54,7 +55,7 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 
 ### <a name="to-display-the-gpu-threads-window"></a>Per visualizzare la finestra Thread GPU
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e quindi scegliere **Proprietà**.
 
 2. Nella finestra **Pagine delle proprietà** per il progetto, in **Proprietà di configurazione** scegliere **Debug**.
 
@@ -105,6 +106,6 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 - Scegliere il pulsante del flag nella finestra Thread GPU.
 
 ## <a name="see-also"></a>Vedi anche
-- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Procedura: usare la finestra espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Procedura dettagliata: debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Procedura: Usare la finestra Espressioni di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Procedura dettagliata: Debug di un'C++ AMP di lavoro](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

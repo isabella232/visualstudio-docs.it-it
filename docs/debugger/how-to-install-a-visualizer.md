@@ -17,14 +17,15 @@ ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 611347acfe48e561653d644097d56d029b6a4fa6
-ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
+ms.openlocfilehash: cfbedc3c35b8c0cab1201dd3257042b56a2b9f5183e9f3a9fcdb089c72b44d62
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "113298257"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379139"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.

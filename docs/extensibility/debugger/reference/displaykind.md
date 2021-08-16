@@ -1,5 +1,5 @@
 ---
-description: Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un oggetto IDebugField e visualizzabili all'utente.
+description: Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un oggetto IDebugField e visualizzarli all'utente.
 title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,20 +9,21 @@ ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8c474c9295ceedbdffd286e99975c375ea69fc4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 11d6cd9390b115b583df5d83db102af0253bf13384d7e612af65edfc6536ccd6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096031"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378029"
 ---
 # <a name="displaykind"></a>DisplayKind
-Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e visualizzabili all'utente.
+Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e visualizzarli all'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,9 +57,9 @@ Nome del campo.
 Tipo di campo.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: EE. h
+Intestazione: Ee.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

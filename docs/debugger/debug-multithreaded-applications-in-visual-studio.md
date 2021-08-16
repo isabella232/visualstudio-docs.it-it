@@ -21,35 +21,36 @@ ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5551ffd39bfe3485d0b6e31def0b3cfff9c7e3b1
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8c40171f7675c5541c79a85feab1f4cf5d7161df54e971855ac80d8b2625f002
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389761"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379532"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
 Un thread è una sequenza di istruzioni a cui il sistema operativo concede il tempo del processore. Ogni processo in esecuzione nel sistema operativo è composto da almeno un thread. I processi composti da più di un thread sono detti multithreading.
 
-I computer con più processori, processori multi-core o processi hyperthreading possono eseguire più thread simultanei. L'elaborazione parallela che usa molti thread può migliorare notevolmente le prestazioni del programma, ma può anche rendere più difficile il debug perché si stanno verificando molti thread.
+I computer con più processori, processori multi-core o processi di hyperthreading possono eseguire più thread simultanei. L'elaborazione parallela che usa molti thread può migliorare notevolmente le prestazioni del programma, ma può anche rendere più difficile il debug perché si stanno verificando molti thread.
 
-Il multithreading può introdurre nuovi tipi di bug potenziali. Ad esempio, due o più thread potrebbero dover accedere alla stessa risorsa, ma solo un thread alla volta può accedere in modo sicuro alla risorsa. Una qualche forma di esclusione reciproca è necessaria per assicurarsi che un solo thread accedono alla risorsa in qualsiasi momento. Se l'esclusione reciproca viene implementata in modo non corretto, può creare una *condizione di deadlock* in cui non verrà eseguito alcun thread. I deadlock sono spesso un problema difficile per il debug.
+Il multithreading può introdurre nuovi tipi di bug potenziali. Ad esempio, due o più thread potrebbero dover accedere alla stessa risorsa, ma solo un thread alla volta può accedere in modo sicuro alla risorsa. È necessaria una qualche forma di esclusione reciproca per assicurarsi che un solo thread accedono alla risorsa in qualsiasi momento. Se l'esclusione reciproca viene implementata in modo non corretto, può creare una *condizione di deadlock* in cui non verrà eseguito alcun thread. I deadlock sono spesso un problema difficile per il debug.
 
 ## <a name="tools-for-debugging-multithreaded-apps"></a>Strumenti per il debug di app multithreading
 
 Visual Studio strumenti diversi per l'uso nel debug di app multithreading.
 
-- Per i thread, gli strumenti  principali per il debug dei thread sono la finestra  Thread, i marcatori di thread nelle finestre di origine, la finestra **Stack** in parallelo, la finestra Espressioni di controllo in parallelo e la barra degli strumenti **Posizione di** debug. Per informazioni sulla finestra **Thread e** sulla barra degli strumenti Percorso **di debug,** vedere [Procedura dettagliata: Eseguire il debug usando la finestra Thread](../debugger/how-to-use-the-threads-window.md). Per informazioni su come usare le finestre **Stack in** parallelo e **Controllo** parallelo, vedere Introduzione al debug di [un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md). Entrambi gli argomenti illustrano come usare i marcatori di thread.
+- Per i thread, gli strumenti  principali per il debug dei thread sono la finestra  Thread, i marcatori di thread nelle finestre di origine, la finestra **Stack** in parallelo, la finestra Espressioni di controllo in parallelo e la barra degli strumenti **Posizione di** debug. Per informazioni sulla finestra **Thread e** sulla barra degli strumenti **Percorso di** debug, vedere [Procedura dettagliata: Eseguire il debug usando la finestra Thread](../debugger/how-to-use-the-threads-window.md). Per informazioni su come usare le finestre **Stack in** parallelo e **Controllo** parallelo, vedere Introduzione al debug di [un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md). Entrambi gli argomenti illustrano come usare i marcatori di thread.
 
-- Per il codice che usa Task Parallel Library [(TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o [runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime/), gli strumenti principali per il  debug sono la  finestra **Stack** paralleli, la finestra Espressioni di controllo in parallelo e la finestra Attività , che supporta anche JavaScript. Per iniziare, vedere [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) e Procedura dettagliata: debug di [un C++ AMP app.](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- Per il codice che usa Task Parallel Library [(TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o runtime di concorrenza , gli strumenti principali per il  debug sono la  finestra **Stack** [paralleli,](/cpp/parallel/concrt/concurrency-runtime/)la finestra Espressioni di controllo in parallelo e la finestra Attività , che supporta anche JavaScript. Per iniziare, vedere [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) e Procedura dettagliata: debug di [un C++ AMP app.](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 
 - Per il debug dei thread nella GPU, lo strumento principale è la **finestra Thread GPU.** Vedere [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md).
 
 - Per i processi, gli strumenti principali sono la **finestra** di dialogo Collega a processo, la **finestra** Processi e la barra degli **strumenti Percorso di** debug.
 
-Visual Studio fornisce anche potenti punti di interruzione e punti di traccia, che possono essere utili quando si esegue il debug di applicazioni multithreading. Usare le condizioni e i filtri dei punti di interruzione per posizionare i punti di interruzione nei singoli thread. I punti di traccia consentono di tracciare l'esecuzione del programma senza interruzione, per studiare problemi come i deadlock. Per altre informazioni, vedere [Azioni dei punti di interruzione e punti di traccia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints).
+Visual Studio fornisce anche potenti punti di interruzione e punti di traccia, che possono essere utili quando si esegue il debug di applicazioni multithreading. Usare le condizioni e i filtri dei punti di interruzione per posizionare i punti di interruzione nei singoli thread. I punti di traccia consentono di tracciare l'esecuzione del programma senza interruzione, per studiare problemi come i deadlock. Per altre informazioni, vedere Azioni [dei punti di interruzione e punti di traccia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints).
 
 Il debug di un'applicazione multithreading dotata di un'interfaccia utente può essere particolarmente complesso. È possibile eseguire l'applicazione in un secondo computer e usare il debug remoto. Per altre informazioni, vedere [Debug remoto.](../debugger/remote-debugging.md)
 
@@ -57,7 +58,7 @@ Il debug di un'applicazione multithreading dotata di un'interfaccia utente può 
 
  [Introduzione al debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md)
 
-Presentazione delle funzionalità di debug dei thread, che sottolineano le funzionalità nella finestra **Stack** in parallelo e nella **finestra Espressioni di controllo** in parallelo.
+Presentazione delle funzionalità di debug dei thread, che sottolineano le funzionalità nella finestra **Stack** paralleli e nella **finestra Espressioni di controllo** in parallelo.
 
  [Strumenti per il debug di thread e processi](../debugger/debug-threads-and-processes.md)
 

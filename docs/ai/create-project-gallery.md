@@ -5,17 +5,18 @@ keywords: ai, visual studio, azure machine learning
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c5b8201b39f82e4c4645196ca543e2567b6e19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0fd77c91e64cfc9cd6c425a03d58ed663ce3e28c6ea82b8400af78fe2c87aa4d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841549"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121329188"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Creare un progetto AI dalla raccolta di Azure Machine Learning in Visual Studio
 
@@ -52,12 +53,12 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile cre
 
 5. Visual Studio crea il file di progetto (un file `.pyproj` su disco) insieme agli altri file definiti nell'esempio. Con il modello "MNIST" il progetto contiene più file.
 
-    ![Screenshot del Esplora soluzioni di Visual Studio che mostra i file per il progetto TensorFlowMNIST. Il codice per tf_mnist. py viene visualizzato nella finestra principale.](media/create-project-gallery/azml-mnist.png)
+    ![Screenshot del Visual Studio Esplora soluzioni che mostra i file per il progetto TensorFlowMNIST. Il codice per tf_mnist.py viene visualizzato nella finestra principale.](media/create-project-gallery/azml-mnist.png)
 
 6. Inviare il processo ad Azure Machine Learning.
 
-    ![Screenshot del Esplora soluzioni di Visual Studio che mostra il menu di scelta rapida per il progetto TensorFlowMNIST con "Invia processo..." selezionato.](media/create-project-gallery/submit-azml.png)
+    ![Screenshot dell'Visual Studio Esplora soluzioni che mostra il menu di scelta rapida per il progetto TensorFlowMNIST con "Invia processo..." Selezionato.](media/create-project-gallery/submit-azml.png)
 
 7. Eseguire in un contenitore Docker o nel computer locale
 
-    ![Screenshot della finestra di dialogo Invia processo con USA cluster impostato su "azureml:/local" e lo script di avvio impostato su "tf_mnist. py".](media/create-project-gallery/azml-local.png)
+    ![Screenshot della finestra di dialogo Invia processo con l'opzione Usa cluster impostata su "azureml:/local" e lo script di avvio impostato su "tf_mnist.py".](media/create-project-gallery/azml-local.png)

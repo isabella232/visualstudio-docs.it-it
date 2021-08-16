@@ -11,14 +11,15 @@ ms.assetid: f6d6ac2f-6d96-4f88-962b-29c0a66890b0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bd7e31841d61b87b8a2f2c360ef7621aedacecfb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 405e3b1a06c1dfc1bfe8756f1d990e547dc9dce65ee16448dce8ac219e909a02
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161058"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380001"
 ---
 # <a name="idiasymbolget_count"></a>IDiaSymbol::get_count
 Recupera il numero di elementi in un elenco o in una matrice.
@@ -34,19 +35,19 @@ HRESULT get_count (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il numero di elementi in un elenco o in una matrice.
+[out] Restituisce il numero di elementi in un elenco o in una matrice.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedi anche

@@ -1,6 +1,6 @@
 ---
 title: Uso del codice C++ (Progettazione classi)
-description: Informazioni su come usare i diagrammi classi per progettare e visualizzare gli elementi di codice C++, le classi e altri tipi in un progetto.
+description: Informazioni su come usare i diagrammi classi per progettare e visualizzare elementi di codice C++, classi e altri tipi in un progetto.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: conceptual
@@ -18,14 +18,15 @@ ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62993611ef7359095512f494767bbd3ea4cce5d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15026141a091b56c930628978007fa93833b80f0ded64df86d23eb091acfce06
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946579"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358285"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Usare il codice C++ in Progettazione classi
 
@@ -58,7 +59,7 @@ ms.locfileid: "99946579"
 
 ### <a name="update-and-performance-issues"></a>Problemi di aggiornamento e di prestazioni
 
-Per i progetti C++, potrebbero essere importati da 30 a 60 secondi affinché una modifica nel file di origine venga visualizzata nel diagramma classi. A causa di questo ritardo, **Progettazione classi** potrebbe anche generare l'errore **Nessun tipo trovato nella selezione**. Se viene visualizzato un messaggio di errore di questo tipo, scegliere **Annulla** nel messaggio di errore e attendere che l'elemento di codice venga visualizzato in **Visualizzazione classi**. A questo punto, **Progettazione classi** dovrebbe essere in grado di visualizzare il tipo.
+Per i progetti C++, la visualizzazione di una modifica nel file di origine nel diagramma classi potrebbe richiedere da 30 a 60 secondi. A causa di questo ritardo, **Progettazione classi** potrebbe anche generare l'errore **Nessun tipo trovato nella selezione**. Se viene visualizzato un messaggio di errore di questo tipo, scegliere **Annulla** nel messaggio di errore e attendere che l'elemento di codice venga visualizzato in **Visualizzazione classi**. A questo punto, **Progettazione classi** dovrebbe essere in grado di visualizzare il tipo.
 
 Se il diagramma classi non viene aggiornato con le modifiche apportate nel codice, può essere necessario chiuderlo e riaprirlo.
 
@@ -66,7 +67,7 @@ Se il diagramma classi non viene aggiornato con le modifiche apportate nel codic
 
 **Progettazione classi** potrebbe non essere in grado di risolvere i tipi per i motivi seguenti:
 
-- Il tipo si trova in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per ulteriori informazioni, vedere [gestione dei riferimenti in un progetto](../managing-references-in-a-project.md).
+- Il tipo si trova in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](../managing-references-in-a-project.md).
 
 - Il tipo non si trova nell'ambito corretto, di conseguenza **Progettazione classi** non è in grado di trovarlo. Verificare che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
@@ -76,11 +77,11 @@ Se il diagramma classi non viene aggiornato con le modifiche apportate nel codic
 
 - Verificare che **Progettazione classi** supporti il tipo inserito. Vedere [Limitazioni per gli elementi di codice C++](#limitations-for-c-code-elements).
 
-L'errore che si verifica più spesso per un problema di risoluzione del tipo è che **non è stato possibile trovare il codice per una o più forme nel diagramma classi ' \<element> '**. Questo messaggio di errore non indica necessariamente che il codice sia errato. Indica solo che Progettazione classi non è in grado di visualizzare il codice.  Provare a eseguire le operazioni seguenti:
+L'errore più probabile che si verifica per un problema di risoluzione del tipo è Impossibile trovare il codice per una o più forme nel diagramma **classi ' \<element> '**. Questo messaggio di errore non indica necessariamente che il codice sia errato. Indica solo che Progettazione classi non è in grado di visualizzare il codice.  Provare a eseguire le operazioni seguenti:
 
 - Verificare l'esistenza del tipo. Verificare di non aver involontariamente eliminato o impostato come codice il codice sorgente.
 
-- Provare a risolvere il tipo. Il tipo potrebbe trovarsi in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per ulteriori informazioni, vedere [gestione dei riferimenti in un progetto](../managing-references-in-a-project.md).
+- Provare a risolvere il tipo. Il tipo potrebbe trovarsi in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](../managing-references-in-a-project.md).
 
 - Verificare che il tipo si trovi nell'ambito corretto in modo che Progettazione classi possa trovarlo. Assicurarsi che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
@@ -90,11 +91,11 @@ L'errore che si verifica più spesso per un problema di risoluzione del tipo è 
 
 ## <a name="limitations-for-c-code-elements"></a>Limitazioni per gli elementi di codice C++
 
-- Quando viene caricato un progetto C++, **Progettazione classi** funzioni in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.
+- Quando viene caricato un progetto  C++, Progettazione classi funzioni in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.
 
-- **Progettazione classi** supporta solo semantica C++ nativa. Per i progetti C++ compilati in codice gestito, **Progettazione classi** visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma **Progettazione classi** non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).
+- **Progettazione classi** supporta solo semantica C++ nativa. Per i progetti C++ compilati in codice **gestito,** Progettazione classi visualizza solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma **Progettazione classi** non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).
 
-- Per i progetti C++, il **Progettazione classi** legge solo la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), **Progettazione classi** non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, **Progettazione classi** analogamente non visualizzerà niente.
+- Per i progetti C++, **Progettazione classi** legge solo la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), **Progettazione classi** non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, **Progettazione classi** analogamente non visualizzerà niente.
 
 - I file IDL (.idl), che definiscono le interfacce COM e le librerie dei tipi, non vengono visualizzati nei diagrammi a meno che non siano compilati in codice C++ nativo.
 

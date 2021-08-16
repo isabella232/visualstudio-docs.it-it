@@ -12,17 +12,18 @@ ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99898ec45f7a09dc1123a46e2e95d3dba2dbb856
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f502a9249688f9d94691342ef3b9d60254a66698b64674b77b6676e01c15c881
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058924"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377951"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 Recupera le classi con l'attributo specificato implementate nel linguaggio di programmazione specificato.
@@ -47,19 +48,19 @@ int GetAttributedClassesForLanguage (
 
 ## <a name="parameters"></a>Parametri
 `guidLanguage`\
-in Identificatore univoco per la lingua.
+[in] Identificatore univoco della lingua.
 
 `pstrAttribute`\
-in Stringa dell'attributo.
+[in] Stringa dell'attributo.
 
 `ppEnum`\
-out Restituisce un'enumerazione delle classi Attribute.
+[out] Restituisce un'enumerazione delle classi di attributi.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(

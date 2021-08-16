@@ -1,6 +1,6 @@
 ---
-description: Ottiene il contesto del documento che corrisponde a questo contesto del codice.
-title: 'IDebugCodeContext2:: GetDocumentContext | Microsoft Docs'
+description: Ottiene il contesto del documento che corrisponde a questo contesto di codice.
+title: Interfaccia IDebugCodeContext2::GetDocumentContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 80420f12369ef038c2faccb51c9b1bfc9b0073a4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4298c8406cc30e4a57aefe2a8e4ea0c7acab105955d14feab61ec6276381b30f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088419"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377991"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-Ottiene il contesto del documento che corrisponde a questo contesto del codice. Il contesto del documento rappresenta una posizione nel file di origine che corrisponde al codice sorgente che ha generato questa istruzione.
+Ottiene il contesto del documento che corrisponde a questo contesto di codice. Il contesto del documento rappresenta una posizione nel file di origine corrispondente al codice sorgente che ha generato questa istruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int GetDocumentContext(
 
 ## <a name="parameters"></a>Parametri
 `ppSrcCxt`\
-out Restituisce l'oggetto [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) che corrisponde al contesto del codice. Se `S_OK` viene restituito, THS deve essere non `null` .
+[out] Restituisce [l'oggetto IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) che corrisponde al contesto del codice. Se `S_OK` viene restituito , ths deve essere diverso da `null` .
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Un motore di debug deve restituire un codice di errore, ad esempio `E_FAIL` quando il `out` parametro è `null` , ad esempio quando al contesto del codice non è associata una posizione di origine.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Un motore di debug deve restituire un codice di errore, ad esempio quando il parametro è, ad esempio, quando al `E_FAIL` contesto del codice non è `out` `null` associata alcuna posizione di origine.
 
 ## <a name="remarks"></a>Commenti
- In genere, il contesto del documento può essere considerato come una posizione in un file di origine mentre il contesto del codice è una posizione di un'istruzione di codice in un flusso di esecuzione.
+ In genere, il contesto del documento può essere considerato come una posizione in un file di origine, mentre il contesto di codice è una posizione di un'istruzione di codice in un flusso di esecuzione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -1,26 +1,27 @@
 ---
 title: Cercare argomenti (Help Viewer)
-description: Informazioni su come cercare argomenti nel Microsoft Help Viewer. Personalizzare le ricerche mediante espressioni con caratteri jolly, operatori logici e operatori di ricerca avanzati.
+description: Informazioni su come cercare argomenti nel Microsoft Help Viewer. Personalizzare le ricerche usando espressioni jolly, operatori logici e operatori di ricerca avanzati.
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c39c27830d7e629a2a2e19c2b34a2ebff8c17f4833c897bdf681a2e0150ac678
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358532"
 ---
 # <a name="how-to-search-for-topics"></a>Procedura: Eseguire la ricerca di argomenti
 
 È possibile usare la funzionalità di ricerca full-text per individuare tutti gli argomenti che contengono una parola specifica. È anche possibile perfezionare e personalizzare la ricerca usando espressioni con caratteri jolly, operatori logici e operatori di ricerca avanzata.
 
-Per aprire la scheda **Cerca** , scegliere la scheda **Cerca** nella finestra **Help Viewer** oppure, se si è un utente della tastiera, scegliere **CTRL** + **E**.
+Per aprire la **scheda Cerca,** scegliere la **scheda** Cerca nella finestra **di Help Viewer** oppure, se si è un utente della tastiera, scegliere **CTRL** + **E.**
 
 ## <a name="to-perform-a-full-text-search"></a>Per eseguire una ricerca full-text
 
@@ -31,7 +32,7 @@ Per aprire la scheda **Cerca** , scegliere la scheda **Cerca** nella finestra **
     > [!NOTE]
     > Nella finestra di dialogo **Opzioni Help Viewer** è possibile specificare altre preferenze, ad esempio il numero massimo di risultati da visualizzare contemporaneamente e se includere i contenuti in lingua inglese quando le impostazioni locali sono diverse dall'inglese.
 
-3. Premere il tasto **invio** .
+3. Premere **INVIO.**
 
      Per impostazione predefinita, una ricerca restituisce un massimo di 200 risultati che vengono visualizzati nell'area corrispondente. È possibile che vengano visualizzate informazioni aggiuntive sulla versione per ogni risultato, a seconda del contenuto.
 
@@ -80,6 +81,6 @@ Alcune parole o numeri molto comuni, definiti a volte parole non significative, 
 ## <a name="see-also"></a>Vedi anche
 
 - [Operatori logici e avanzati](../help-viewer/logical-operators-search-expressions.md)
-- [Procedura: trovare argomenti nell'indice](../help-viewer/find-topics-index.md)
-- [Procedura: trovare argomenti nel sommario](../help-viewer/find-topics-toc.md)
+- [Procedura: Trovare argomenti nell'indice](../help-viewer/find-topics-index.md)
+- [Procedura: Trovare argomenti nel sommario](../help-viewer/find-topics-toc.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

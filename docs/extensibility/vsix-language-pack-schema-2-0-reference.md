@@ -1,6 +1,6 @@
 ---
-title: Informazioni di riferimento sullo schema del Language Pack VSIX 2,0 | Microsoft Docs
-description: Lo schema del Language Pack VSIX fornisce informazioni di installazione localizzate per i pacchetti VSIX. La versione 2,0 supporta elementi di localizzazione aggiuntivi.
+title: Informazioni di riferimento sullo schema del Language Pack VSIX 2.0 | Microsoft Docs
+description: Lo schema del Language Pack VSIX fornisce informazioni sull'installazione localizzata per i pacchetti VSIX. La versione 2.0 supporta elementi di localizzazione aggiuntivi.
 ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
@@ -13,24 +13,25 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
-ms.openlocfilehash: 0e7107cb90a79e8cd1a052cd73706d95a782781d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.technology: vs-ide-sdk
+ms.openlocfilehash: 4770e69b48571ee9c47d85956e0c47ec60fa126ed55272fdf49a1b0c33d04550
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062278"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335251"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>Informazioni di riferimento sullo schema del Language Pack VSIX 2,0
+# <a name="vsix-language-pack-schema-20-reference"></a>Informazioni di riferimento language pack schema VSIX 2.0
 
-Lo schema del Language Pack VSIX fornisce informazioni di installazione localizzate per i pacchetti VSIX. La versione 2,0 di questo schema supporta elementi di localizzazione aggiuntivi.
+Lo schema del Language Pack VSIX fornisce informazioni sull'installazione localizzata per i pacchetti VSIX. La versione 2.0 di questo schema supporta elementi di localizzazione aggiuntivi.
 
-## <a name="language-pack-schema"></a>Schema Language Pack
+## <a name="language-pack-schema"></a>Schema del Language Pack
 
-L'elemento radice del file di Language Pack è `<PackageLanguagePackManifest>` , con un attributo di `Version` , che è la versione del formato Language Pack. Questo articolo descrive la versione 2,0 del formato Language Pack, specificato nel manifesto impostando l' `Version` attributo sul valore `Version="2.0.0"` . L'elemento radice contiene esattamente un `<Metadata>` elemento figlio.
+L'elemento radice del file language pack è , con un attributo , che è la versione `<PackageLanguagePackManifest>` `Version` del formato language pack. Questo articolo descrive la versione 2.0 del formato language pack, specificato nel manifesto impostando l'attributo `Version` sul valore `Version="2.0.0"` . L'elemento radice contiene esattamente un elemento `<Metadata>` figlio.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Elemento PackageLanguagePackManifest
 
-All'interno dell' `<PackageLanguagePackManifest>` elemento deve esistere l'elemento seguente:
+`<PackageLanguagePackManifest>`All'interno dell'elemento deve esistere l'elemento seguente:
 
 |Titolo|Descrizione|
 |-----------|-----------------|
@@ -38,7 +39,7 @@ All'interno dell' `<PackageLanguagePackManifest>` elemento deve esistere l'eleme
 
 ### <a name="metadata-element"></a>Elemento Metadata
 
-All'interno dell' `<Metadata>` elemento è possibile avere gli elementi seguenti:
+`<Metadata>`All'interno dell'elemento è possibile avere gli elementi seguenti:
 
 |Titolo|Descrizione|
 |-----------|-----------------|
@@ -46,7 +47,7 @@ All'interno dell' `<Metadata>` elemento è possibile avere gli elementi seguenti
 |`<Description>`|Descrizione localizzata dell'estensione da installare|
 |`<License>`| Percorso di una versione localizzata della licenza dell'estensione|
 |`<MoreInfo>`| Collegamento alle informazioni localizzate sull'estensione|
-|`<ReleaseNotes>`| Un percorso o un collegamento a una versione localizzata delle note sulla versione|
+|`<ReleaseNotes>`| Percorso o collegamento a una versione localizzata delle note sulla versione|
 |`<Icon>`| Percorso di una versione localizzata dell'icona delle estensioni|
 
 ### <a name="sample-manifest"></a>Manifesto di esempio
@@ -69,6 +70,6 @@ All'interno dell' `<Metadata>` elemento è possibile avere gli elementi seguenti
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)|Viene illustrato come fornire supporto per l'installazione localizzata per un pacchetto VSIX.|
-|[Riferimento allo schema di estensione VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifesto VSIX descrive il contenuto di un file di distribuzione con *estensione VSIX* . Il file di distribuzione consente di installare un'estensione di Visual Studio tramite la finestra di dialogo **estensioni e aggiornamenti** .|
-|[Individuare e usare le estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Viene illustrato come utilizzare la finestra di dialogo **estensioni e aggiornamenti** per installare, rimuovere, attivare e disattivare le estensioni.|
+|[Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)|Illustra come fornire il supporto dell'installazione localizzata per un pacchetto VSIX.|
+|[Informazioni di riferimento sullo schema dell'estensione VSIX 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifesto VSIX descrive il contenuto di un file *di distribuzione vsix.* Il file di distribuzione consente di installare un'Visual Studio di distribuzione usando la **finestra di dialogo** Estensioni e aggiornamenti .|
+|[Individuare e usare le estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Illustra come usare la finestra **di dialogo** Estensioni e aggiornamenti per installare, rimuovere, attivare e disattivare le estensioni.|

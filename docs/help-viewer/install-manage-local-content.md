@@ -1,6 +1,6 @@
 ---
 title: Installare la documentazione della Guida locale
-description: Installare e gestire la documentazione della guida locale usando il Microsoft Help Viewer. Aggiungere, rimuovere, aggiornare e spostare il contenuto della Guida installato nel computer.
+description: Installare e gestire la documentazione della Guida locale usando il Microsoft Help Viewer. Aggiungere, rimuovere, aggiornare e spostare il contenuto della Guida installato nel computer.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,20 +22,21 @@ ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 14091ecd5adc76762901c02c582c845aa0dbd513
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59ec73b408337e12c8c0d2a17c2d2e3ab78e9dbedaf6da88fc3e576a635b912c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944121"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358428"
 ---
 # <a name="install-and-manage-local-content"></a>Installare e gestire il contenuto locale
 
 L'uso di Microsoft Help Viewer consente di aggiungere, rimuovere, aggiornare e spostare il contenuto della Guida installato nel computer a seconda delle esigenze di sviluppo del software.
 
-Per gestire il contenuto nel computer locale, è necessario accedere con un account che abbia autorizzazioni amministrative. È anche possibile che l'utente non possa gestire il contenuto locale se lavora in un ambiente aziendale in cui gli amministratori di sistema abbiano preso decisioni in tal senso per l'organizzazione. Per ulteriori informazioni, vedere la [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md).
+Per gestire il contenuto nel computer locale, è necessario accedere con un account che abbia autorizzazioni amministrative. È anche possibile che l'utente non possa gestire il contenuto locale se lavora in un ambiente aziendale in cui gli amministratori di sistema abbiano preso decisioni in tal senso per l'organizzazione. Per altre informazioni, vedere la Guida [dell'amministratore di Help Viewer.](../help-viewer/administrator-guide.md)
 
 ## <a name="change-the-content-installation-source"></a>Modificare l'origine di installazione del contenuto
 
@@ -46,13 +47,13 @@ Per impostazione predefinita, Help Viewer installa il contenuto tramite un servi
 1. Nella scheda **Gestisci contenuto** scegliere il pulsante di opzione **Disco**.
 
     > [!NOTE]
-    > L'opzione **Disco** non è disponibile se l'amministratore ha impedito la modifica dell'origine dell'installazione del contenuto. Per ulteriori informazioni, vedere la [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md).
+    > L'opzione **Disco** non è disponibile se l'amministratore ha impedito la modifica dell'origine dell'installazione del contenuto. Per altre informazioni, vedere la Guida [dell'amministratore di Help Viewer.](../help-viewer/administrator-guide.md)
 
 2. Effettuare uno dei passaggi indicati di seguito.
 
-    - Immettere il percorso di un file con *estensione MSHA* o l'URL di un endpoint del servizio.
+    - Immettere il percorso di un file *con estensione msha* o l'URL di un endpoint di servizio.
 
-    - Scegliere il pulsante Sfoglia (**..**.) per passare a un file con *estensione MSHA* .
+    - Scegliere il pulsante Sfoglia (**...**) per passare a un file *con estensione msha.*
 
     - Nell'elenco scegliere la voce che è stata usata più di recente.
 
@@ -105,7 +106,7 @@ Se si installa il contenuto nel computer locale, è possibile visualizzare gli a
 Nella barra di stato viene indicato quando sono disponibili aggiornamenti del contenuto installato.
 
 > [!IMPORTANT]
-> Se si vuole che **Help Viewer** controlli automaticamente la disponibilità di aggiornamenti online, è necessario aprire la finestra di dialogo **Opzioni Visualizzatore** , quindi selezionare la casella **di controllo Vai online per verificare** la disponibilità di aggiornamenti del contenuto.
+> Se si desidera che **Help Viewer** controlli automaticamente  la disponibilità di aggiornamenti online, è necessario aprire la finestra di dialogo Opzioni visualizzatore e quindi selezionare la casella di controllo Vai **online** per verificare la disponibilità di aggiornamenti del contenuto.
 
 ### <a name="to-update-local-content"></a>Per aggiornare il contenuto locale
 

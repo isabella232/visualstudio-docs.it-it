@@ -1,7 +1,7 @@
 ---
-title: Accesso VBA per creare o aprire un progetto di sistema VSTO
+title: Accesso VBA per creare/aprire un progetto VSTO di sistema
 titleSuffix: ''
-description: Informazioni che è necessario abilitare in modo esplicito l'accesso al sistema di progetto di Office VBA prima di poter creare o aprire un progetto di Strumenti di Visual Studio per Office System.
+description: Informazioni su come abilitare in modo esplicito l'accesso al Office di progetto VBA prima di poter creare o aprire un progetto Visual Studio Tools per Office di sistema.
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -17,57 +17,58 @@ dev_langs:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e76aa3b3035a3c713c07ef56f67de393b6411cbac7d69bced415581eb0e2bd3d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910520"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121314732"
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Strumenti di Visual Studio per il progetto di sistema Microsoft Office
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Strumenti di Visual Studio per il Microsoft Office di sistema
 
-È necessario abilitare in modo esplicito l'accesso al sistema del progetto Visual Basic, Applications Edition (VBA) in Microsoft Office prima di poter creare o aprire una Strumenti di Visual Studio per il progetto di sistema Microsoft Office.
+È necessario abilitare in modo esplicito l'accesso al sistema di progetto Visual Basic, Applications Edition (VBA) in Microsoft Office prima di poter creare o aprire un Strumenti di Visual Studio per il progetto Microsoft Office di sistema.
 
- Per i progetti di sviluppo Microsoft Office è necessario l'accesso al sistema del progetto Visual Basic, Applications Edition (VBA) in Microsoft Office Word e Microsoft Office Excel, anche se i progetti non utilizzano Visual Basic, Applications Edition. Il supporto in fase di progettazione dei controlli sia nei progetti di Visual Basic che in quelli di Visual C# dipende infatti dal sistema di progetto di Visual Basic, Applications Edition.
+ Microsoft Office progetti di sviluppo richiedono l'accesso al sistema di progetto Visual Basic, Applications Edition (VBA) in Microsoft Office Word e Microsoft Office Excel, anche se i progetti non usano Visual Basic, Applications Edition. Il supporto in fase di progettazione dei controlli sia nei progetti di Visual Basic che in quelli di Visual C# dipende infatti dal sistema di progetto di Visual Basic, Applications Edition.
 
  Alcuni virus macro per Microsoft Office provano ad automatizzare il sistema di progetto di Visual Basic, Applications Edition per propagarsi. Abilitando l'accesso al sistema di progetto di Visual Basic, Applications Edition, si rimuove una protezione utile contro la diffusione dei virus macro. Rimangono tuttavia attivi i normali livelli di sicurezza delle macro, che, assieme all'elenco degli autori attendibili impostati per le applicazioni di Office, determineranno l'esecuzione delle macro nel computer.
 
 > [!NOTE]
-> Tale condizione si applica solo al computer di sviluppo. Per i computer degli utenti finali non è necessario abilitare questa opzione per eseguire soluzioni Office.
+> Tale condizione si applica solo al computer di sviluppo. I computer degli utenti finali non necessitano di questa opzione abilitata per eseguire Office soluzioni.
 
  È importante notare che la disabilitazione dell'accesso al sistema di progetto di Visual Basic, Applications Edition non comporta da sola la protezione dai virus, ma consente semplicemente di interrompere la diffusione di alcuni virus ad altri documenti se il computer viene infettato da un virus macro. Per impostazione predefinita, l'opzione è disabilitata per fornire un ulteriore livello di sicurezza per il computer, ma la sua abilitazione non rende il computer maggiormente soggetto ai virus se si seguono le procedure di sicurezza consigliate.
 
- La migliore protezione contro i virus macro di Office consiste nell'eseguire Office a un livello di sicurezza elevato o molto elevato, per considerare attendibili solo le macro provenienti da origini note e verificate e per rimanere sempre aggiornati sulle patch di sicurezza e sui programmi antivirus.
+ La protezione ottimale contro i virus macro di Office è l'esecuzione di Office a livello di sicurezza alto o molto alto, per considerare attendibili solo le macro provenienti da origini verificate e note e rimanere aggiornati con le patch di sicurezza e i programmi antivirus.
 
- È possibile abilitare o disabilitare l'opzione **trust Access per Visual Basic Project** manualmente.
+ È possibile abilitare o disabilitare l'opzione **Considera attendibile l'accesso Visual Basic Project** manualmente.
 
  È possibile ripristinare l'installazione di Office se vengono visualizzati errori VBA o COM.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>Per abilitare o disabilitare l'accesso ai progetti Visual Basic
+## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>Per abilitare o disabilitare l'accesso Visual Basic progetti
 
 1. Scegliere la scheda **File** .
 
 2. Fare clic su **Opzioni**.
 
-3. Fare clic su **Centro protezione**, quindi fare clic su **Impostazioni Centro protezione**.
+3. Fare **clic su Centro protezione** e quindi su Centro protezione **Impostazioni**.
 
-4. Nel **Centro protezione** fare clic su **Impostazioni macro**.
+4. Nel Centro **protezione fare** clic su **Macro Impostazioni**.
 
-5. Selezionare o deselezionare l' **accesso attendibile al modello a oggetti del progetto VBA** per abilitare o disabilitare l'accesso ai progetti Visual Basic.
+5. Selezionare o deselezionare **Considera attendibile l'accesso** al modello a oggetti del progetto VBA per abilitare o disabilitare l'accesso Visual Basic progetti.
 
 6. Fare clic su **OK**.
 
-### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Per abilitare o disabilitare l'accesso ai progetti di Visual Basic con il sistema Microsoft Office 2007
+### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Per abilitare o disabilitare l'accesso Visual Basic progetti con il sistema Microsoft Office 2007
 
-1. Scegliere **macro** dal menu **strumenti** in Word o Excel, quindi fare clic su **sicurezza**.
+1. Scegliere **Macro** dal menu Strumenti in Word o Excel **e** quindi fare clic su **Sicurezza**.
 
-2. Nella finestra di dialogo **sicurezza** fare clic sulla scheda **autori attendibili** .
+2. Nella finestra **di dialogo** Sicurezza fare clic sulla scheda **Autori attendibili** .
 
-3. Selezionare questa selezione per abilitare o deselezionare per disabilitare il **trust Access to Visual Basic Project**.
+3. Selezionare questa opzione per abilitare o deselezionare l'opzione **Considera attendibile l'accesso Visual Basic Project**.
 
 4. Fare clic su **OK**.
 
@@ -77,53 +78,53 @@ ms.locfileid: "99910520"
 
 2. Fare clic su **Opzioni**.
 
-3. Fare clic su **Centro protezione**, quindi fare clic su **Impostazioni Centro protezione**.
+3. Fare **clic su Centro protezione** e quindi su Centro protezione **Impostazioni**.
 
-4. Nel **Centro protezione** fare clic su **Impostazioni macro**.
+4. Nel Centro **protezione fare** clic su **Macro Impostazioni**.
 
-5. Nella sezione **Impostazioni macro** selezionare l'impostazione desiderata.
+5. Nella sezione **Macro Impostazioni** selezionare l'impostazione desiderata.
 
 6. Fare clic su **OK**.
 
-### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Per impostare il livello di sicurezza delle macro di Office con il sistema di Microsoft Office 2007
+### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Per impostare il livello Office sicurezza macro con il sistema di Microsoft Office 2007
 
-1. Scegliere **macro** dal menu **strumenti** in Word o Excel, quindi fare clic su **sicurezza**.
+1. Scegliere **Macro** dal menu Strumenti in Word o Excel **e** quindi fare clic su **Sicurezza**.
 
-2. Nella scheda **livello di sicurezza** selezionare l'impostazione desiderata.
+2. Nella scheda **Livello di** sicurezza selezionare l'impostazione desiderata.
 
-    La scheda **livello di sicurezza** contiene informazioni dettagliate su ogni livello. Per altre informazioni, vedere l'argomento "Livelli di sicurezza delle macro" nella Guida di Office.
+    La **scheda Livello di** sicurezza contiene informazioni dettagliate su ogni livello. Per altre informazioni, vedere l'argomento "Livelli di sicurezza delle macro" nella Guida di Office.
 
 ### <a name="to-install-vba-with-the-2007-microsoft-office-system"></a>Per installare VBA con Microsoft Office System 2007
 
-1. Nel pannello di controllo eseguire **Installazione applicazioni** o **programmi e funzionalità**.
+1. In Pannello di controllo eseguire **Installazione applicazioni** o **Programmi e funzionalità**.
 
-2. Selezionare Office nell'elenco **Programmi attualmente installati** .
+2. Selezionare Office **nell'elenco Programmi attualmente** installati.
 
 3. Fare clic su **Cambia**.
 
-4. Selezionare **Aggiungi o Rimuovi funzionalità**, quindi fare clic su **continua**.
+4. Selezionare **Aggiungi o Rimuovi funzionalità** e quindi fare clic su **Continua.**
 
-5. Selezionare **scegliere Personalizzazione avanzata delle applicazioni**, quindi fare clic su **Avanti**.
+5. Selezionare **Scegliere la personalizzazione avanzata delle applicazioni** e quindi fare clic su **Avanti.**
 
-6. Espandere **funzionalità condivise di Office** nell'elenco **scegliere le opzioni di aggiornamento per le applicazioni e gli strumenti** .
+6. Espandere **Office funzionalità condivise nell'elenco** Scegliere le opzioni di aggiornamento per applicazioni **e** strumenti.
 
-7. Aprire il menu a discesa accanto a **Visual Basic, Applications Edition** e quindi fare clic su **Esegui da computer locale**.
+7. Aprire il menu a discesa accanto a **Visual Basic, Applications Edition** e quindi fare clic su **Esegui da** Computer locale .
 
 8. Fare clic su **Continue**.
 
-9. Fare clic su **Close**.
+9. Fare clic su **Chiudi**.
 
 ## <a name="to-repair-your-installation-of-office"></a>Per ripristinare l'installazione di Office
 
-1. Nel pannello di controllo eseguire **Installazione applicazioni** o **programmi e funzionalità**.
+1. In Pannello di controllo eseguire **Installazione applicazioni** o **Programmi e funzionalità**.
 
-2. Selezionare la versione di Office nell'elenco **Programmi attualmente installati** .
+2. Selezionare la versione di Office **nell'elenco Programmi attualmente** installati.
 
 3. Fare clic su **Cambia**.
 
-4. Selezionare **Reinstalla o Ripristina**, quindi fare clic su **Avanti**.
+4. Selezionare **Reinstalla o Ripristina** e quindi fare clic su **Avanti.**
 
-5. Selezionare **rileva e Ripristina errori nell'installazione di Office**, quindi fare clic su **Installa**.
+5. Selezionare **Rileva e ripristina errori nell'installazione Office** e quindi fare clic su **Installa**.
 
 ## <a name="see-also"></a>Vedi anche
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)

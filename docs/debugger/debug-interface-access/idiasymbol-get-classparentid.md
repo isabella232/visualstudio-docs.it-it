@@ -11,14 +11,15 @@ ms.assetid: f11e3ccb-215d-418c-b8c3-e63159234915
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 95581d74b1ebfdc837383b96398ba1efb1d21120
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4f4264e2f97ddd8c7e0016c6c3d28b4ea56212642feadd777879c270edc4b705
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156440"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379998"
 ---
 # <a name="idiasymbolget_classparentid"></a>IDiaSymbol::get_classParentId
 Recupera l'identificatore padre della classe del simbolo.
@@ -34,13 +35,13 @@ HRESULT get_classParentId (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'ID padre della classe del simbolo.
+[out] Restituisce l'ID padre della classe del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce o codice di `S_FALSE` errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.
@@ -49,7 +50,7 @@ out Restituisce l'ID padre della classe del simbolo.
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedi anche

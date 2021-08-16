@@ -3,16 +3,17 @@ title: Creazione di stringhe di filtro per Progettazione tabelle | Documentazion
 description: Creazione di stringhe di filtro per Progettazione tabelle
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dca9e8b4cd1a1fd90d67837368ca9d9530fea85c2509c12a5ab9e7d31336f86
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846205"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121282644"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Creazione di stringhe di filtro per Progettazione tabelle
 ## <a name="overview"></a>Panoramica

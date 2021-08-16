@@ -6,12 +6,12 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.topic: how-to
-ms.openlocfilehash: a0aa3de91f1a2c75d73409d89f3cbc8894faacab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0207c616069fdec1e0fdca0e9efcc1a7bf99a2e5dd60e6b13a24b1515be0cc6b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939113"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121407192"
 ---
 # <a name="comments"></a>Commenti
 
@@ -49,6 +49,6 @@ I commenti sono utili anche per la documentazione di codice per gli sviluppatori
 *)
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Codice di impostazione come commento (Visual Studio in Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)

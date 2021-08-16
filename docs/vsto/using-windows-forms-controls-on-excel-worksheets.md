@@ -1,6 +1,6 @@
 ---
-title: Usare Windows Form controlli nei fogli di lavoro di Excel
-description: Informazioni su come aggiungere controlli Windows Form alle cartelle di lavoro di Microsoft Excel nello stesso modo in cui si aggiungono controlli a Windows Form.
+title: Usare Windows Form nei fogli Excel lavoro
+description: Informazioni su come aggiungere Windows form alle cartelle di lavoro Microsoft Excel nello stesso modo in cui si aggiungono controlli Windows Form.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,35 +14,36 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f8c79e487e116741c393cef5a6f65b30cc4a8cfb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30c8bd62801dfa26cc53f4660948e2f75d44e974a7a7126fc71a66bd3dc8791c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838217"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267455"
 ---
-# <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usare Windows Form controlli nei fogli di lavoro di Excel
-  È possibile aggiungere controlli Windows Form alle cartelle di lavoro di Microsoft Office Excel nello stesso modo in cui si aggiungono controlli a Windows Form. Per informazioni generali sull'uso dei controlli sui documenti, vedere [Windows Form Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
+# <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usare Windows Form nei fogli Excel lavoro
+  È possibile aggiungere Windows form personalizzati alle cartelle di lavoro Microsoft Office Excel nello stesso modo in cui si aggiungono i controlli Windows Form. Per informazioni generali sull'uso dei controlli nei documenti, vedere [Windows Forms controls on Office documents overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="control-considerations-for-excel"></a>Considerazioni sui controlli per Excel
- Esistono alcune considerazioni specifiche di Excel.
+## <a name="control-considerations-for-excel"></a>Considerazioni sul controllo per Excel
+ Esistono alcune considerazioni specifiche per l'Excel.
 
-### <a name="match-control-size-to-cell-size"></a>Corrisponde alle dimensioni del controllo alle dimensioni della cella
- È possibile impostare il ridimensionamento automatico del controllo quando vengono modificate le dimensioni della cella padre. Per altre informazioni, vedere [procedura: ridimensionare i controlli all'interno di celle del foglio di comando](../vsto/how-to-resize-controls-within-worksheet-cells.md).
+### <a name="match-control-size-to-cell-size"></a>Adattare le dimensioni del controllo alle dimensioni delle celle
+ È possibile impostare il ridimensionamento automatico del controllo quando vengono modificate le dimensioni della cella padre. Per altre informazioni, vedere [Procedura: Ridimensionare i controlli all'interno delle celle del foglio di lavoro](../vsto/how-to-resize-controls-within-worksheet-cells.md).
 
-### <a name="add-components-that-are-shared-by-all-worksheets"></a>Aggiungere componenti condivisi da tutti i fogli di foglio
+### <a name="add-components-that-are-shared-by-all-worksheets"></a>Aggiungere componenti condivisi da tutti i fogli di lavoro
  I componenti da condividere in tutti i fogli di lavoro, ad esempio un oggetto <xref:System.Data.DataSet>, possono essere aggiunti alla finestra di progettazione delle cartelle di lavoro anziché ai fogli di lavoro. Il componente verrà visualizzato nella barra dei componenti.
 
 ### <a name="formula-for-embedding-controls"></a>Formula per l'incorporamento di controlli
  Quando si seleziona un controllo in Excel, verrà visualizzato **=EMBED("WinForms.Control.Host","")** nella **Barra della formula**. Questo testo è necessario e non deve essere eliminato.
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: ridimensionare i controlli all'interno di celle del foglio di comando](../vsto/how-to-resize-controls-within-worksheet-cells.md)
-- [Procedura: nascondere i controlli nei fogli di foglio durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [Procedura dettagliata: modificare la formattazione del foglio di controllo tramite i controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
-- [Procedura dettagliata: visualizzare il testo in una casella di testo di un foglio di testo utilizzando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
-- [Procedura dettagliata: aggiornare un grafico in un foglio di comando utilizzando pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)
+- [Procedura: Ridimensionare i controlli all'interno delle celle del foglio di lavoro](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Procedura: Nascondere i controlli nei fogli di lavoro durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Procedura dettagliata: Modificare la formattazione del foglio di lavoro usando i controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
+- [Procedura dettagliata: Visualizzare il testo in una casella di testo in un foglio di lavoro usando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
+- [Procedura dettagliata: Aggiornare un grafico in un foglio di lavoro usando i pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)

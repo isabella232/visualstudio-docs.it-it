@@ -13,14 +13,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ffc4e5cb71c78462c9dbfd18472a4fc4e57c7d
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: f21ff098132d934d94cace2f4c43dc9ad3a392bda6f7b273a1b58ef6822e05b3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466238"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121280287"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Errore: autenticazione Kerberos non riuscita
 Quando si tenta di eseguire il debug remoto, è possibile che venga visualizzato il messaggio di errore seguente:
@@ -39,7 +40,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - Kerberos è stato disabilitato sul controller di dominio.
 
-  Se l'autenticazione Kerberos non è disponibile, modificare l'account utilizzato per l'esecuzione di Visual Studio Remote Debugging Monitor. Per la procedura, vedere [errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Se l'autenticazione Kerberos non è disponibile, modificare l'account utilizzato per l'esecuzione di Visual Studio Remote Debugging Monitor. Per la procedura, vedere Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di [connettersi a questo computer.](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 
   Se il messaggio di errore viene visualizzato nonostante entrambi i computer siano connessi allo stesso dominio, verificare che il nome del computer host del debugger venga risolto correttamente dal DNS del computer di destinazione. Attenersi alla procedura indicata di seguito.
 
@@ -47,7 +48,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 1. Nel computer di destinazione, aprire il menu **Start**, scegliere **Accessori**, quindi fare clic su **Prompt dei comandi**.
 
-2. Nella finestra del **prompt dei comandi** digitare:
+2. Nella finestra **del prompt** dei comandi digitare:
 
     ```cmd
     ping <debugger_host_computer_name>
@@ -60,5 +61,5 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 5. Confrontare i valori degli indirizzi IP.
 
 ## <a name="see-also"></a>Vedi anche
-- [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Errori di debug remoto e risoluzione dei problemi](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debug remoto](../debugger/remote-debugging.md)

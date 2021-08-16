@@ -1,6 +1,6 @@
 ---
-title: Operatori logici nelle espressioni di ricerca (Visualizzatore della guida)
-description: Informazioni su come usare gli operatori logici e gli operatori di ricerca avanzati per perfezionare le espressioni di ricerca in Microsoft Help Viewer.
+title: Operatori logici nelle espressioni di ricerca (Help Viewer)
+description: Informazioni su come usare gli operatori logici e gli operatori di ricerca avanzati per perfezionare le espressioni di ricerca Microsoft Help Viewer.
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -11,14 +11,15 @@ ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5302c5a59595b98c601f98b1fbe6ca1168106f52aceb12081a4cf37875cf258e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944082"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358402"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operatori logici e avanzati nelle espressioni di ricerca
 

@@ -1,6 +1,6 @@
 ---
-description: Imposta o modifica il numero di Pass associato al punto di interruzione associato.
-title: 'IDebugBoundBreakpoint2:: SetPassCount | Microsoft Docs'
+description: Imposta o modifica il numero di passaggi associato a questo punto di interruzione associato.
+title: IDebugBoundBreakpoint2::SetPassCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8fb3ae8bf41b8cb9eafa40d9bcc98c702cf359d0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 91332f8781b81b6b087dbeae4fabd3f121018020de6c1b6e68090f65a73d56cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088835"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378002"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-Imposta o modifica il numero di Pass associato al punto di interruzione associato.
+Imposta o modifica il numero di passaggi associato a questo punto di interruzione associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,15 +44,15 @@ int SetPassCount(
 
 ## <a name="parameters"></a>Parametri
 `bpPassCount`\
-in Struttura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) che specifica il numero di passaggi.
+[in] Struttura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) che specifica il numero di passi.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su (parte dell'BP_STATE `BPS_DELETED` enumerazione). [](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="remarks"></a>Commenti
- Il numero di passaggi determina quando viene attivato il punto di interruzione. Il numero corrente di passaggi o passaggi può essere ottenuto chiamando il metodo [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) .
+ Il numero di passaggi determina quando viene attivato il punto di interruzione. Il passaggio o il numero di hit corrente può essere ottenuto chiamando il [metodo GetHitCount.](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)
 
- Il numero di pass precedentemente associato a questo punto di interruzione viene perso.
+ Qualsiasi numero di passaggi precedentemente associato a questo punto di interruzione viene perso.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

@@ -21,14 +21,15 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c8cc67b2f8136ea426eb56c25fb3c345198701f1
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 296917e01b6279c971181f79c475ab1fc590af7da3ae1bbf121a901fe91b062e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387463"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378723"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare il codice disassembly nel debugger Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -37,7 +38,7 @@ Nella finestra **Disassembly** viene visualizzato il codice assembly corrisponde
 > [!NOTE]
 > Per sfruttare al meglio la finestra **Disassembly,** comprendere o apprendere le nozioni di base della programmazione [in linguaggio assembly](https://wikipedia.org/wiki/Assembly_language).
 
-Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo. Non è disponibile per il debug di script o SQL.
+Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo. Non è disponibile per il debug di script o SQL debug.
 
 Oltre alle istruzioni in linguaggio assembly, nella finestra **Disassembly** è possibile visualizzare le informazioni facoltative seguenti:
 
@@ -53,7 +54,7 @@ Oltre alle istruzioni in linguaggio assembly, nella finestra **Disassembly** è 
 
 Le istruzioni in linguaggio assembly sono costituite da *mnemoniche*, che sono abbreviazioni per i nomi delle istruzioni e *simboli* per variabili, registri e costanti. Ogni istruzione del linguaggio macchina è rappresentata da un mnemoico del linguaggio assembly seguito facoltativamente da uno o più simboli.
 
-Il codice dell'assembly si basa in larga parte sui registri del processore o, per il codice gestito, sui registri di Common Language Runtime. È possibile usare la **finestra Disassembly** insieme alla **finestra Registri,** che consente di esaminare il contenuto del registro.
+Il codice assembly si basa in larga parte sui registri del processore o, per il codice gestito, sui registri di Common Language Runtime. È possibile usare la **finestra Disassembly** insieme alla **finestra Registri,** che consente di esaminare il contenuto del registro.
 
 Per visualizzare le istruzioni del codice macchina nel formato numerico  non elaborato, anziché come linguaggio assembly, usare la finestra Memoria o selezionare **Byte** codice dal menu di scelta rapida nella **finestra Disassembly.**
 
@@ -61,7 +62,7 @@ Per visualizzare le istruzioni del codice macchina nel formato numerico  non ela
 
 Per abilitare la **finestra Disassembly,** in **Strumenti**  >  **Opzioni**  >  **debug** selezionare **Abilita debug a livello di indirizzo**.
 
-Per aprire la **finestra Disassembly** durante il debug, selezionare **Disassembly di Windows** o premere  >    + **ALT+8.**
+Per aprire la **finestra Disassembly** durante il debug, **selezionare Windows**  >  **Disassembly** o premere **ALT** + **8**.
 
 > [!NOTE]
 > È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).

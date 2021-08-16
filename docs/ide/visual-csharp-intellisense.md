@@ -1,6 +1,6 @@
 ---
 title: IntelliSense per C#
-description: Informazioni su alcune funzionalità di IntelliSense che è possibile usare durante la codifica del progetto C#.
+description: Informazioni su alcune funzionalità di IntelliSense che è possibile usare durante la scrittura del codice del progetto C#.
 ms.custom: SEO-VS-2020
 ms.date: 06/01/2021
 ms.topic: conceptual
@@ -10,18 +10,19 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3156b1236a130478d83fe82c8fa462a1144a8e6a
-ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
+ms.openlocfilehash: 92717a55fb25c8a4d5662cb544eeb61d42fdce6b5d1356709b4b0f4d4d86b60b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "111351955"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121289231"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
-IntelliSense C# è disponibile quando si codifica nell'editor e durante il debug nella finestra [di comando in](../ide/reference/immediate-window.md) modalità immediata.
+IntelliSense per C# è disponibile durante la scrittura di codice nell'editor e durante il debug nella finestra [di comando in](../ide/reference/immediate-window.md) modalità di controllo immediato.
 
 ## <a name="completion-lists"></a>Elenchi di completamento
 
@@ -45,7 +46,7 @@ In C#, l'elenco di completamento include frammenti di codice che consentono di i
 
 ### <a name="language-keywords-in-completion-lists"></a>Parole chiave del linguaggio negli elenchi di completamento
 
-In C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere Parole [chiave C#.](/dotnet/csharp/language-reference/keywords/index)
+In C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#.](/dotnet/csharp/language-reference/keywords/index)
 
 ### <a name="extension-methods-in-completion-lists"></a>Metodi di estensione negli elenchi di completamento
 
@@ -80,7 +81,7 @@ I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense
 
 ### <a name="most-recently-used-members"></a>Membri utilizzati più di recente
 
-IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. Al successivo utilizzo di **Elenco membri,** nella parte superiore vengono visualizzati i membri usati più di recente. La cronologia dei membri usati più di recente viene cancellata tra ogni sessione di Visual Studio.
+IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. La volta successiva che si usa **Elenco membri**, i membri usati più di recente vengono visualizzati nella parte superiore. La cronologia dei membri usati più di recente viene cancellata tra ogni sessione di Visual Studio.
 
 ### <a name="override"></a>override
 
@@ -96,7 +97,7 @@ Quando si digita [override](/dotnet/csharp/language-reference/keywords/override)
 
 L'operazione **Aggiungi using** di IntelliSense aggiunge automaticamente la direttiva `using` richiesta al file di codice. Questa funzione consente di restare concentrati sul codice che si sta scrivendo anziché passare a un'altra parte del codice.
 
-Per avviare **l'operazione Aggiungi using,** posizionare il cursore su un riferimento al tipo che non può essere risolto. Ad esempio, quando si crea un'applicazione console e si aggiunge `XmlReader` al corpo del metodo `Main`, nella riga di codice appare una sottolineatura ondulata rossa per indicare che non è possibile risolvere il riferimento al tipo. È quindi possibile richiamare **Aggiungi using** con le **Azione rapide**. Le **Azioni rapide** sono visibili solo quando il cursore è posizionato sul tipo non associato.
+Per avviare **l'operazione Add using,** posizionare il cursore su un riferimento al tipo che non può essere risolto. Ad esempio, quando si crea un'applicazione console e si aggiunge `XmlReader` al corpo del metodo `Main`, nella riga di codice appare una sottolineatura ondulata rossa per indicare che non è possibile risolvere il riferimento al tipo. È quindi possibile richiamare **Aggiungi using** con le **Azione rapide**. Le **Azioni rapide** sono visibili solo quando il cursore è posizionato sul tipo non associato.
 
 ![Immagine ampliata Aggiungi using, azione rapida](../ide/media/addusing-quickaction.png)
 
@@ -104,7 +105,7 @@ Fare clic sull'icona di lampadina di errore, quindi scegliere **using System.Xml
 
 ### <a name="add-missing-using-directives-on-paste"></a>Aggiungi direttive using mancanti dopo operazione Incolla
 
-IntelliSense può aggiungere automaticamente direttive mancanti al codice `using` quando si incolla un tipo nel file di codice. Questa funzionalità consente di risparmiare tempo automatizzando l'attività di aggiunta di direttive using mancanti quando si incolla un tipo in un file. Abilitare questa funzionalità in **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#** o **Avanzate**  >   di base e selezionare Aggiungi direttive using mancanti in Incolla .
+IntelliSense può aggiungere automaticamente `using` direttive mancanti al codice quando si incolla un tipo nel file di codice. Questa funzionalità consente di risparmiare tempo automatizzando l'attività di aggiunta di direttive using mancanti quando si incolla un tipo in un file. Abilitare questa funzionalità in **Strumenti** Opzioni  >  **Editor**  >  **di testo**  >  **C#** o   >   Avanzate di base e selezionare Aggiungi direttive using mancanti in Incolla.
 
 ### <a name="remove-and-sort-usings"></a>Opzione Rimuovi e ordina using
 
@@ -120,7 +121,7 @@ Il comando Implementa interfaccia genera il numero minimo di stub di metodo nece
 
 IntelliSense offre un'opzione che consente di implementare automaticamente i membri di una classe di base astratta mentre si usa l'editor del codice. Per implementare i membri di una classe base astratta è in genere necessario creare una nuova definizione di metodo per ciascun metodo della classe base astratta nella classe derivata. Usando IntelliSense, dopo aver digitato il nome di una classe di base astratta in una dichiarazione di classe, viene visualizzata la lampadina delle **Azioni rapide**. La lampadina offre la possibilità di implementare automaticamente i metodi della classe di base.
 
-Gli stub dei metodi generati dalla funzionalità Implementa classe **di base** astratta sono modellati dal frammento di codice definito nel file *MethodStub.snippet.* I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
+Gli stub di metodo generati dalla funzionalità Implementa classe **base** astratta sono modellati dal frammento di codice definito nel file *MethodStub.snippet.* I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generazione dall'utilizzo
 
@@ -164,7 +165,7 @@ Se si preme **TAB,** IntelliSense completa automaticamente l'istruzione e visual
 Se si preme **TAB,** IntelliSense esegue lo stub di un metodo con la firma corretta e inserisce il cursore nel corpo del gestore eventi.
 
 > [!NOTE]
-> Usare il **comando Indietro** nel menu **Visualizza** (**CTRL**) per + **-** tornare all'istruzione di collegamento all'evento.
+> Usare il **comando Torna** indietro del menu **Visualizza** (**CTRL**) per + **-** tornare all'istruzione di collegamento all'evento.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -24,12 +24,13 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: a0e3ad3e5f6afbd6675f8e65c918b4a5d7c66dd8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: d7820460ed2b652b2e92ea845f83d5130717ba07684945a2f6429fbc9c2d1d22
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922771"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357934"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Aggiornare Dotfuscator Community
 

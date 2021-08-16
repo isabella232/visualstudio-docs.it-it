@@ -6,14 +6,15 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 1798b0faa1b0cf44ae490f5b27571e5466b82ca9
-ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
+ms.openlocfilehash: 949944b7bec47bf952e51ede2cb5593cb84e407ba1e7554765a5ce33edaded9f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "109682689"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240965"
 ---
 # <a name="code-metrics---cyclomatic-complexity"></a>Metriche del codice - Complessità tematica
 
@@ -37,27 +38,27 @@ Se si aggiunge una decisione, il valore di complessità tematica sale di 1:
 
 Quando si modifica l'istruzione if in un'istruzione switch con 4 decisioni da prendere, passa dalla versione originale 2 a quella 6:
 
-![Esempio di complessità ciclomatica 4](media/cyclomatic-complexity-example-4.png)
+![Esempio di complessità tematica 4](media/cyclomatic-complexity-example-4.png)
 
-Si esamini una base di codice (ipotetica) più grande.
+Si esamini ora una codebase (ipotetica) più grande.
 
-![Esempio di complessità ciclomatica 5](media/cyclomatic-complexity-example-5.png)
+![Esempio di complessità tematica 5](media/cyclomatic-complexity-example-5.png)
 
-Si noti che la maggior parte degli elementi, mentre si esegue il drill-down nella classe Products_Related, ha un valore pari a 1, ma alcuni di essi hanno una complessità pari a 5. Di per sé, questo potrebbe non essere un problema, ma dato che la maggior parte degli altri membri ha un valore 1 nella stessa classe, è consigliabile esaminare in modo più da vicino questi due elementi e vedere cosa contiene. A tale scopo, fare clic con il pulsante destro del mouse sull'elemento e scegliere Vai al codice **sorgente** dal menu di scelta rapida. Esaminare in dettaglio `Product.set(Product)` :
+Si noti che la maggior parte degli elementi, quando si esegue il drill-down nella classe Products_Related, ha un valore pari a 1, ma un paio di essi hanno una complessità pari a 5. Di per sé, questo potrebbe non essere un problema, ma dato che la maggior parte degli altri membri ha un 1 nella stessa classe, è consigliabile esaminare questi due elementi più da vicino e vedere cosa contiene. A tale scopo, fare clic con il pulsante destro del mouse sull'elemento e scegliere Vai al codice **sorgente** dal menu di scelta rapida. Diamo un'occhiata più da vicino `Product.set(Product)` a :
 
-![Esempio di complessità ciclomatica 6](media/cyclomatic-complexity-example-6.png)
+![Esempio di complessità tematica 6](media/cyclomatic-complexity-example-6.png)
 
-Date tutte le istruzioni if, è possibile vedere perché la complessità tematica è a 5. A questo punto, è possibile decidere che si tratta di un livello accettabile di complessità oppure è possibile eseguire il refactoring per ridurne la complessità.
+Date tutte le istruzioni if, è possibile vedere perché la complessità tematica è 5. A questo punto, è possibile decidere che si tratta di un livello di complessità accettabile oppure è possibile eseguire il refactoring per ridurne la complessità.
 
-## <a name="the-magic-number"></a>Il numero magico
+## <a name="the-magic-number"></a>Numero magic
 
-Come per molte metriche in questo settore, non esiste un limite esatto di complessità ciclomatica adatto a tutte le organizzazioni. Tuttavia, [NIST235](#nist235) indica che un limite di 10 è un buon punto di partenza:
+Come per molte metriche in questo settore, non esiste un limite esatto di complessità tematica adatto a tutte le organizzazioni. Tuttavia, [NIST235](#nist235) indica che un limite di 10 è un buon punto di partenza:
 
-"Il numero preciso da usare come limite, tuttavia, rimane piuttosto controverso. Il limite originale di 10, come proposto da McCabe, presenta prove di supporto significative, ma sono stati usati anche limiti fino a 15. I limiti oltre 10 devono essere riservati ai progetti che presentano diversi vantaggi operativi rispetto ai progetti tipici, ad esempio personale esperto, progettazione formale, un linguaggio di programmazione moderno, programmazione strutturata, procedure dettagliate sul codice e un piano di test completo. In altre parole, un'organizzazione può scegliere un limite di complessità superiore a 10, ma solo se è sicuro di sapere cosa sta facendo ed è disposto a dedicare il lavoro di test aggiuntivo richiesto dai moduli più complessi." [NIST235](#nist235)
+"Il numero preciso da usare come limite, tuttavia, rimane piuttosto complesso. Il limite originale di 10 come proposto da McCabe ha prove di supporto significative, ma sono stati usati correttamente anche limiti fino a 15. I limiti oltre i 10 devono essere riservati ai progetti che presentano diversi vantaggi operativi rispetto ai progetti tipici, ad esempio personale esperto, progettazione formale, un linguaggio di programmazione moderno, programmazione strutturata, procedure dettagliate per il codice e un piano di test completo. In altre parole, un'organizzazione può scegliere un limite di complessità superiore a 10, ma solo se è certo di sapere cosa sta facendo ed è disposto a dedicare l'impegno aggiuntivo di test richiesto dai moduli più complessi." [NIST235](#nist235)
 
-## <a name="cyclomatic-complexity-and-line-numbers"></a>Complessità ciclomatica e numeri di riga
+## <a name="cyclomatic-complexity-and-line-numbers"></a>Complessità tematica e numeri di riga
 
-La semplice analisi del numero di righe di codice è, nel migliore dei modi, un predittore molto ampio della qualità del codice. Esiste un'idea di base del fatto che maggiore è il numero di righe di codice in una funzione, maggiore è la probabilità che si siano verificati errori. Tuttavia, quando si combinano complessità tematiche con righe di codice, si ha un quadro molto più chiaro del potenziale di errori.
+La sola analisi del numero di righe di codice è, nel migliore dei modi, un predittore molto ampio della qualità del codice. Esiste un'idea di base del fatto che maggiore è il numero di righe di codice in una funzione, maggiore è la probabilità che si siano verificati errori. Tuttavia, quando si combinano complessità tematiche con righe di codice, si ha un quadro molto più chiaro del potenziale di errori.
 
 Come descritto dal Software Assurance Technology Center (SATC) della NASA:
 
@@ -77,18 +78,18 @@ Questa regola elava un avviso quando la complessità tematica raggiunge 25, in m
 
 ## <a name="putting-it-all-together"></a>Mettere tutto insieme
 
-In ultima istanza, un numero di complessità elevato indica una maggiore probabilità di errori con maggiore tempo per la manutenzione e la risoluzione dei problemi. Esaminare in dettaglio tutte le funzioni con un'elevata complessità e decidere se eseguire il refactoring per renderle meno complesse.
+In fondo, un numero di complessità elevato indica una maggiore probabilità di errori con maggiore tempo per la manutenzione e la risoluzione dei problemi. Esaminare in dettaglio tutte le funzioni con un'elevata complessità e decidere se eseguire il refactoring per renderle meno complesse.
 
 ## <a name="citations"></a>Citazioni
 
 ### <a name="mccabe5"></a>MCCABE5
 
-McCabe, T. e A. Watson (1994), Complessità del software (CrossTalk: The Journal of Defense Software Engineering).
+McCabe, T. e A. Watson (1994), Software Complexity (CrossTalk: The Journal of Defense Software Engineering).
 
 ### <a name="nist235"></a>NIST235
 
-Watson, A. H., & McCabe, T. J. (1996). Test strutturati: metodologia di test che usa la metrica di complessità ciclomatica (pubblicazione speciale NIST 500-235). Recuperato il 14 maggio 2011 dal sito Web McCabe Software: [http://www.mccabe.com/pdf/mccabe-nist235r.pdf](http://www.mccabe.com/pdf/mccabe-nist235r.pdf)
+Watson, A. H., & McCabe, T. J. (1996). Test strutturati: metodologia di test che usa la metrica di complessità tematica (NIST Special Publication 500-235). Recuperato il 14 maggio 2011 dal sito Web McCabe Software: [http://www.mccabe.com/pdf/mccabe-nist235r.pdf](http://www.mccabe.com/pdf/mccabe-nist235r.pdf)
 
 ### <a name="satc"></a>SATC
 
-Rosenberg, L., Hammer, T., Shaw, J. (1998). Metriche software e affidabilità (Proceedings of IEEE International Symposium on Software Reliability Engineering). Recuperato il 14 maggio 2011 dal sito Web della Penn State University: [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.4041&rep=rep1&type=pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.4041&rep=rep1&type=pdf)
+Rosenberg, L.,Enberg, T.,Sure, J. (1998). Metriche software e affidabilità (Proceedings of IEEE International Symposium on Software Reliability Engineering). Recuperata il 14 maggio 2011 dal sito Web di Penn State University: [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.4041&rep=rep1&type=pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.4041&rep=rep1&type=pdf)

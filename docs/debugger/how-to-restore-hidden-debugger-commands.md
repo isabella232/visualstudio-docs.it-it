@@ -1,6 +1,6 @@
 ---
-title: Ripristinare i comandi del debugger nascosti | Microsoft Docs
-description: Informazioni su come ripristinare i comandi nascosti del debugger in Visual Studio. Le impostazioni IDE predefinite per alcuni linguaggi possono nascondere determinati comandi del debugger.
+title: Ripristinare i comandi nascosti del debugger | Microsoft Docs
+description: Informazioni su come ripristinare i comandi nascosti del debugger Visual Studio. Le impostazioni IDE predefinite per alcuni linguaggi possono nascondere determinati comandi del debugger.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,14 +18,15 @@ ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ac0ffad60e2e637318b26d875127b01c2d140d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebe873887ab74e5709afc2da347caa084e70990d0df256f408b45f3ccc7dd0a5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99845087"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379093"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Procedura: ripristinare comandi nascosti del debugger
 Quando si installa Visual Studio, viene chiesto di scegliere una serie di impostazioni IDE predefinite per il linguaggio di programmazione principale. Le impostazioni IDE predefinite per alcuni linguaggi possono nascondere determinati comandi del debugger.
@@ -72,7 +73,7 @@ Quando si installa Visual Studio, viene chiesto di scegliere una serie di impost
 
 8. Nella pagina **Importazione completa** esaminare gli eventuali errori associati alla riconfigurazione delle impostazioni in **Dettagli**.
 
-9. Fare clic su **Close**.
+9. Fare clic su **Chiudi**.
 
 ## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

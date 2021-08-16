@@ -1,6 +1,6 @@
 ---
 title: Analizzare il consumo di energia nelle app UWP | Microsoft Docs
-description: Usa il profiler consumo di energia di Visual Studio per analizzare le richieste di energia e potenza delle app UWP in esecuzione su dispositivi a batteria.
+description: Usare il profiler Visual Studio consumo di energia per analizzare le richieste di energia e alimentazione delle app UWP in esecuzione su dispositivi a batteria.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,15 +13,16 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: af27524b9b057e1a7dc852bd10d7acd23cf8bd04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d759f13d3c6c7da554465e7a7efd5ecaf984c2c949610151145651cb3fc511b6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901238"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257615"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizzare il consumo di energia nelle app UWP
 
@@ -48,10 +49,10 @@ Nel profiler Utilizzo di energia vengono utilizzate queste definizioni di *poten
 
 Ad esempio, la batteria completamente carica di un tablet dispone di una certa quantità di energia immagazzinata. Mentre l'energia viene utilizzata per eseguire attività quali la comunicazione in rete, il calcolo dei valori o la visualizzazione di grafica, la potenza della batteria viene consumata con frequenze diverse. In qualsiasi momento, il totale della potenza utilizzata viene misurato anche in base all'energia.
 
-## <a name="identify-scenarios-with-user-marks"></a>Identificare scenari con contrassegni utente
+## <a name="identify-scenarios-with-user-marks&quot;></a>Identificare scenari con contrassegni utente
  Puoi aggiungere *contrassegni utente* ai dati di profilatura per identificare aree nel righello della sequenza temporale.
 
- ![Contrassegni utente nella sequenza temporale](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")
+ ![Contrassegni utente nella sequenza temporale](../profiling/media/profilers_usermarktimeline.png &quot;PROFILERS_UserMarkTimeline")
 
  Il contrassegno viene visualizzato come triangolo arancione nella sequenza temporale in corrispondenza del momento in cui il metodo viene eseguito. Il messaggio e l'ora vengono visualizzati come descrizione comando al passaggio del mouse sul contrassegno. Se due o più contrassegni utente sono vicini, i contrassegni vengono uniti e i dati della descrizione comando vengono combinati. Puoi eseguire lo zoom avanti nella sequenza temporale per separare i contrassegni.
 
@@ -93,7 +94,7 @@ if (performance && performance.mark) {
 
 1. Scegliere **Avvia strumenti di diagnostica senza debug** dal menu **Debug**.
 
-     ![Scegliere il consumo di energia nel profiler delle prestazioni](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Scegliere Consumo energia nel Profiler prestazioni](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Scegliere **Utilizzo di energia** , quindi **Avvia**.
 
@@ -115,7 +116,7 @@ if (performance && performance.mark) {
 
 2. Dall'elenco **Seleziona pacchetto di applicazioni installato** scegliere la destinazione.
 
-3. Scegliere **consumo di energia** nella pagina Profiler prestazioni.
+3. Scegliere **Consumo energia** nella pagina Profiler prestazioni consumo.
 
 4. Scegliere **Avvia** per iniziare la profilatura.
 
@@ -142,7 +143,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>Ottimizzare l'utilizzo di energia
  Oltre alla trasmissione di dati, le connessioni di rete comportano un costo in termini di energia per l'inizializzazione, la gestione e la chiusura della connessione. Alcune reti mantengono aperta la connessione per un certo periodo successivo all'invio o alla ricezione dei dati per consentire la trasmissione di più dati tramite una singola connessione. Puoi utilizzare il riquadro **Risorse (On/Off)** per esaminare la modalità di interazione dell'app con la connessione.
 
- ![&#40;risorse nel riquadro&#41;&#47;disattivato](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![Risorse &#40;in&#47;di&#41; di lavoro](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  Se le barre **Rete** e **Trasferimento dati** indicano che la connessione rimane aperta per lunghi periodi di tempo per trasmettere in modo intermittente una serie di pacchetti di dati di piccole dimensioni, puoi suddividere i dati in batch per inviarli in un'unica trasmissione, riducendo il tempo in cui la rete rimane aperta e risparmiando costi energetici.
 
@@ -156,7 +157,7 @@ if (performance && performance.mark) {
 
    Il simulatore di Visual Studio per le app UWP consente di simulare le proprietà di connessione dati delle API delle informazioni di rete. Vedere [Eseguire app UWP nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- Gli strumenti **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Vedere [analizzare l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md).
+- Gli strumenti **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Vedere [Analizzare l'utilizzo della CPU.](../profiling/beginners-guide-to-performance-profiling.md)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -4,16 +4,17 @@ description: Informazioni su come pubblicare un progetto Web in un sito Web di A
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 858ed37d6530900e7474748e1443badc1843e199
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ea7e231025a70eec3f54b804a58039df0dded14340ad0c4887005b908c343a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843969"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121406619"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script di Windows PowerShell)
 ## <a name="syntax"></a>Sintassi
@@ -121,4 +122,4 @@ Il file di configurazione JSON specifica i dettagli degli elementi da distribuir
 È possibile modificare il file di configurazione JSON per cambiare gli elementi da distribuire. La sezione webSite è obbligatoria, ma la sezione del database è facoltativa.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per ulteriori informazioni, vedere [Publish-WebApplicationVM (script di Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md).
+Per altre informazioni, vedere [Publish-WebApplicationVM (Windows PowerShell script).](vs-azure-tools-publish-webapplicationvm.md)

@@ -1,6 +1,6 @@
 ---
 title: Distribuzione sicura
-description: Viene illustrato come è necessario fornire l'evidenza su cui basare una decisione di attendibilità firmando la soluzione con un certificato o utilizzando la chiave di richiesta di attendibilità ClickOnce.
+description: Informazioni su come fornire l'evidenza su cui basare una decisione di attendibilità firmando la soluzione con un certificato o usando la chiave ClickOnce di richiesta di attendibilità.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,38 +15,39 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c778ed98a3f5d17007acccd2f16208ece3237037
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22efe77715cf157a7dba84cb9bd348c7e49859e1ce8e8b3ed113cca7e4a03e3e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906740"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408110"
 ---
 # <a name="secure-deployment"></a>Distribuzione sicura
-  Quando si crea una soluzione Office, il computer di sviluppo viene aggiornato automaticamente per consentire l'esecuzione del codice nel progetto. Tuttavia, quando si distribuisce la soluzione, è necessario fornire l'evidenza su quale basare una decisione di attendibilità firmando la soluzione con un certificato o usando la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiave della richiesta di attendibilità. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).
+  Quando si crea una soluzione Office, il computer di sviluppo viene aggiornato automaticamente per consentire l'esecuzione del codice nel progetto. Tuttavia, quando si distribuisce la soluzione, è necessario fornire l'evidenza su cui basare una decisione di attendibilità firmando la soluzione con un certificato o usando la chiave di richiesta [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] di attendibilità. Per altre informazioni, vedere [Concedere l'attendibilità Office soluzioni](../vsto/granting-trust-to-office-solutions.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Per le personalizzazioni a livello di documento, se si distribuisce il documento in un percorso di rete, è necessario aggiungere anche il percorso del documento all'elenco di percorsi attendibili nel centro protezione dell'applicazione di Office. Per ulteriori informazioni sull'impostazione delle autorizzazioni per i documenti nei computer degli utenti finali, vedere [Grant trust to Documents](../vsto/granting-trust-to-documents.md).
+ Per le personalizzazioni a livello di documento, se si distribuisce il documento in un percorso di rete, è necessario aggiungere anche il percorso del documento all'elenco di percorsi attendibili nel Centro protezione dell'applicazione Office documento. Per altre informazioni su come impostare le autorizzazioni per i documenti nei computer degli utenti finali, vedere [Concedere l'attendibilità ai documenti](../vsto/granting-trust-to-documents.md).
 
-## <a name="prevent-office-solutions-from-running-code"></a>Impedisci alle soluzioni Office di eseguire codice
- Gli amministratori possono usare il registro di sistema per impedire l'esecuzione di tutte le soluzioni Office in un computer. Quando viene aperta una soluzione Office con estensioni di codice gestito, il Strumenti di Visual Studio per Office Runtime controlla se esiste una voce con il nome `Disabled` in una delle seguenti chiavi del registro di sistema nel computer:
+## <a name="prevent-office-solutions-from-running-code"></a>Impedire Office soluzioni di esecuzione del codice
+ Gli amministratori possono usare il Registro di sistema per impedire Office tutte le soluzioni in esecuzione in un computer. Quando viene aperta una soluzione Office con estensioni di codice gestito, il runtime di Visual Studio Tools per Office verifica se una voce con il nome esiste in una delle chiavi del Registro di sistema `Disabled` seguenti nel computer:
 
 - **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
 
 - **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
 
-  Per impedire l'esecuzione di codice per le soluzioni Office, creare una `Disabled` voce in una o entrambe le chiavi del registro di sistema e specificare uno dei tipi di dati e i valori seguenti per `Disabled` :
+  Per impedire alle Office di eseguire codice, creare una voce in una o entrambe le chiavi del Registro di sistema e specificare uno dei tipi di dati e dei valori `Disabled` seguenti per `Disabled` :
 
-- REG_SZ o REG_EXPAND_SZ impostato su una stringa diversa da "0" (zero).
+- Oggetto REG_SZ o REG_EXPAND_SZ impostato su qualsiasi stringa diversa da "0" (zero).
 
-- REG_DWORD impostato su un valore diverso da 0 (zero).
+- Oggetto REG_DWORD impostato su qualsiasi valore diverso da 0 (zero).
 
-  Per consentire alle soluzioni Office di eseguire codice, impostare entrambe le `Disabled` voci su 0 (zero) o eliminare le voci del registro di sistema.
+  Per consentire Office di eseguire codice, impostare entrambe le voci su `Disabled` 0 (zero) o eliminare le voci del Registro di sistema.
 
 ## <a name="see-also"></a>Vedi anche
-- [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
-- [Preparare i computer per l'esecuzione o l'hosting di soluzioni Office](/previous-versions/bb772092(v=vs.110))
+- [Distribuire una soluzione Office distribuzione](../vsto/deploying-an-office-solution.md)
+- [Preparare i computer per l'esecuzione o ospitare Office soluzioni](/previous-versions/bb772092(v=vs.110))
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)

@@ -1,6 +1,6 @@
 ---
 title: Raccogliere dati ETW (Event Tracing for Windows) | Microsoft Docs
-description: Viene illustrato come utilizzare Event Tracing for Windows (ETW) per determinare la posizione in cui si verificano problemi di prestazioni nell'applicazione. È possibile visualizzare i dati con VSPerfReport.exe.
+description: Informazioni su come usare Event Tracing for Windows (ETW) per determinare dove si verificano problemi di prestazioni nell'applicazione. È possibile visualizzare i dati con VSPerfReport.exe.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,15 +13,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 77ddd22450786091c5240f26213633a7935c03dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 799ac67e5e136c479820b160e8e8f071d53f2d9c1d9db381fb3d24aa405e974b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886288"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121355074"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Procedura: Raccogliere dati ETW (Event Tracing for Windows)
 

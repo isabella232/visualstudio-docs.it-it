@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3886e20d45834f98f36b8d7e48f3b11c9ef7d5dd
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: b4099365a1c5709c6b4c74af3eb6eec0a5eb72b2d367527ce9168ce9cc1f51bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824822"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267364"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione
   Usando la finestra di progettazione della barra multifunzione è possibile creare una scheda personalizzata per aggiungervi e posizionarvi controlli.
@@ -50,12 +51,12 @@ ms.locfileid: "107824822"
 
 - Microsoft Excel
 
-## <a name="create-an-excel-workbook-project"></a>Creare un progetto cartella di lavoro di Excel
+## <a name="create-an-excel-workbook-project"></a>Creare un progetto Excel cartella di lavoro
  I passaggi per l'utilizzo della finestra di progettazione della barra multifunzione sono quasi identici per tutte le applicazioni Office. In questo esempio viene usata una cartella di lavoro di Excel.
 
 ### <a name="to-create-an-excel-workbook-project"></a>Per creare un progetto cartella di lavoro di Excel
 
-- Creare un progetto cartella di lavoro di Excel con il **nome MyExcelRibbon**. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Creare un progetto Excel cartella di lavoro con il nome **MyExcelRibbon**. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio apre la nuova cartella di lavoro nella finestra di progettazione e aggiunge il **progetto MyExcelRibbon** **a Esplora soluzioni**.
 
@@ -97,26 +98,26 @@ ms.locfileid: "107824822"
 
 7. Nella finestra di progettazione della barra multifunzione scegliere **group1.**
 
-8. Nella finestra **Proprietà** impostare **Etichetta** su Gestione **riquadri azioni**.
+8. Nella finestra **Proprietà** impostare **Etichetta** su Gestione **riquadri azioni.**
 
-9. Dalla scheda **Controlli barra multifunzione di Office** della Casella degli **strumenti** trascinare un pulsante **in group1.**
+9. Dalla scheda **Office della barra multifunzione** della casella degli **strumenti** trascinare un pulsante in **group1.**
 
 10. Selezionare **button1**.
 
-11. Nella finestra **Proprietà** impostare **Etichetta** su Mostra riquadro **azioni 1.**
+11. Nella finestra **Proprietà** impostare **Etichetta su** Mostra riquadro **azioni 1.**
 
-12. Aggiungere un secondo pulsante a **group1** e impostare la **proprietà Label** su **Show Actions Pane 2**.
+12. Aggiungere un secondo pulsante **a group1** e impostare la **proprietà Label** su Show Actions **Pane 2**.
 
-13. Dalla scheda **Controlli barra multifunzione di Office** della Casella degli **strumenti** trascinare un **controllo ToggleButton** **in group1.**
+13. Dalla scheda **Office della casella** degli strumenti trascinare un controllo **ToggleButton** in **group1.**
 
-14. Impostare la **proprietà Etichetta** su Nascondi **riquadro azioni**.
+14. Impostare la **proprietà Etichetta** su Nascondi **riquadro azioni.**
 
 ## <a name="hide-and-show-actions-panes-by-using-buttons-on-the-custom-tab"></a><a name="BKMK_HideShowActionsPane"></a> Nascondere e visualizzare i riquadri azioni usando i pulsanti nella scheda personalizzata
  L'ultimo passaggio consiste nell'aggiungere codice che risponde all'utente. Aggiungere gestori eventi per gli eventi <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> dei due pulsanti e per l'evento <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> dell'interruttore. Aggiungere codice a questi gestori eventi per abilitare e disabilitare la visualizzazione dei riquadri azioni.
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Per nascondere e mostrare i riquadri azioni mediante i pulsanti della scheda personalizzata
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida *per MyRibbon.cs* o *MyRibbon.vb* e quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per *MyRibbon.cs* o *MyRibbon.vb* e quindi scegliere **Visualizza codice.**
 
 2. Aggiungere il codice riportato di seguito all'inizio della classe `MyRibbon`. Mediante questo codice vengono creati due oggetti riquadro azioni.
 
@@ -134,21 +135,21 @@ ms.locfileid: "107824822"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="test-the-custom-tab"></a>Testare la scheda personalizzata
- Quando si esegue il progetto, viene avviato Excel e sulla barra multifunzione viene visualizzata la scheda **Scheda** personalizzata. Scegliere i pulsanti nella **scheda Personalizzata per** visualizzare e nascondere i riquadri azioni.
+ Quando si esegue il progetto, Excel viene avviata la scheda **My Custom Tab (Scheda personalizzata)** sulla barra multifunzione. Scegliere i pulsanti nella **scheda Personalizzata per** visualizzare e nascondere i riquadri azioni.
 
 ### <a name="to-test-the-custom-tab"></a>Per verificare la scheda personalizzata
 
 1. Premere **F5** per eseguire il progetto.
 
-2. Scegliere la **scheda My Custom Tab (Scheda personalizzata).**
+2. Scegliere la **scheda My Custom Tab (Scheda** personalizzata).
 
-3. Nel gruppo **Custom Actions Pane Manager (Gestione riquadri** azioni personalizzati) scegliere Show Actions Pane **1 (Mostra riquadro azioni 1).**
+3. Nel gruppo **Gestione riquadri azioni** personalizzati scegliere **Mostra riquadro azioni 1.**
 
-     Verrà visualizzato il riquadro azioni con **l'etichetta Riquadro azioni 1**.
+     Verrà visualizzato il riquadro azioni con **l'etichetta Actions Pane 1**.
 
 4. Scegliere **Mostra riquadro azioni 2.**
 
-     Verrà visualizzato il riquadro azioni con **l'etichetta Riquadro azioni 2**.
+     Verrà visualizzato il riquadro azioni con **l'etichetta Actions Pane 2**.
 
 5. Scegliere **Nascondi riquadro azioni.**
 
@@ -159,7 +160,7 @@ ms.locfileid: "107824822"
 
 - Aggiunta di un'interfaccia utente basata sul contesto a una personalizzazione a livello di documento. Per altre informazioni, vedere Panoramica [del riquadro Azioni.](../vsto/actions-pane-overview.md)
 
-- Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere Procedura [dettagliata: Progettare un'area del modulo di Outlook.](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [Procedura dettagliata: Progettare un'area Outlook modulo.](../vsto/walkthrough-designing-an-outlook-form-region.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
