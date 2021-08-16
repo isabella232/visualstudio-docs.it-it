@@ -15,14 +15,15 @@ ms.assetid: 112d3ea3-fdd2-4bce-92b4-167a76258934
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bac2f04ab77e34186a4f0ee202fa8d16f6e45e38
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: dbff97b4967b7fd614e52418316f5ea2ab06320814f1f961cb1515052e444e95
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387346"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404583"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Impossibile visualizzare il codice sorgente o il disassembly
 Il testo del messaggio di errore è il seguente:

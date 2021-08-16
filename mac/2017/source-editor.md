@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89b1843968fa6670e311e9f15426b7ab9038fc7a4cc7c8ed212599278f3023e9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985213"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121364971"
 ---
 # <a name="source-editor"></a>Editor standard
 
@@ -50,7 +50,7 @@ Questa voce di menu può anche essere usata per abilitare o disabilitare la ridu
 
 Può essere necessario visualizzare i caratteri invisibili nel codice sorgente. Questo è un modo per verificare visivamente che si stiano rispettando gli standard di codifica e che non si sprechi spazio. È anche utile quando si scrive in F#, dove la valutazione del codice dipende da righe con un rientro preciso.
 
-Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_   verranno visualizzati i caratteri invisibili: mai, in selezione o sempre:
+Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_ visualizzare i caratteri invisibili: mai, alla selezione o sempre:
 
 ![Opzioni per mostrare i caratteri invisibili](media/source-editor-image3.png)
 
@@ -80,7 +80,7 @@ Anche il colore dell'evidenziazione è utile per indicare che qualcosa è assegn
 
 ![esempio che illustra il colore dell'evidenziazione](media/source-editor-image7.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice (Visual Studio in Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Struttura (Visual Studio in Windows)](/visualstudio/ide/outlining)

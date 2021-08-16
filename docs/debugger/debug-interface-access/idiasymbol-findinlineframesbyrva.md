@@ -1,5 +1,5 @@
 ---
-description: "IDiaSymbol:: findInlineFramesByRVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (relative Virtual Address) specificato."
+description: IDiaSymbol::findInlineFramesByRVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo specificato.
 title: IDiaSymbol::findInlineFramesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: e7a6d9cb-2726-4ac7-9f38-415ad215bf9c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ecafb604f31c23f503bbfcbedcd13ee2a42e95
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 532de406a97bffd9f48671a585971e4fccb6d028648d053a1de4c823c33bfbfa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156664"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404882"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
-Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (relative Virtual Address) specificato.
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,11 +33,11 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
 #### <a name="parameters"></a>Parametri
  `rva`
 
-in Specifica l'indirizzo come RVA.
+[in] Specifica l'indirizzo come RVA.
 
  `ppResult`
 
-out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recuperati.
+[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

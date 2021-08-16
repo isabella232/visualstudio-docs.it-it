@@ -1,29 +1,30 @@
 ---
 title: Set di regole Regole estese delle linee guida di progettazione per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole delle linee guida di progettazione estese in Visual Studio, che è incentrato sull'usabilità e la gestibilità. Vedere le descrizioni delle regole.
+description: Informazioni sul set di regole delle linee guida per la progettazione estese in Visual Studio, incentrata sull'usabilità e sulla manutenibilità. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3555014113f84a5e21f21d1ab7d9a658e2c9aa6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7a52421f9d2b98af34a67b796f95fa6babf00901eb56862f747019e9b0cd702f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860334"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121405396"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 
-Il set di regole delle linee guida per la progettazione estesa Microsoft espande le regole delle linee guida di progettazione di base per massimizzare i problemi di usabilità e gestibilità segnalati. Le linee guida per la denominazione hanno un'enfasi aggiuntiva. È consigliabile includere questo set di regole se il progetto include il codice della libreria o se si desidera applicare gli standard più elevati per la scrittura di codice facile da gestire.
+Il set di regole Microsoft Extended Design Guideline Rules si espande in base alle regole delle linee guida di progettazione di base per ottimizzare i problemi di usabilità e manutenibilità segnalati. L'accento è posto sulle linee guida per la denominazione. È consigliabile includere questo set di regole se il progetto include codice di libreria o se si vogliono applicare gli standard più elevati per la scrittura di codice facile da gestire.
 
-Le regole delle linee guida di progettazione estese includono tutte le regole del set di regole di [base della Guida di progettazione](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , che include le regole nel set di regole [consigliate gestite](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
+Le regole delle linee guida per la progettazione estese includono tutte le regole nel set di regole Basic [Design Guideline Rules,](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) che include le regole nel set di regole [regole](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) consigliate gestite.
 
-Nella tabella seguente vengono descritte tutte le regole del set di regole delle linee guida di progettazione estese Microsoft.
+Nella tabella seguente vengono descritte tutte le regole nel set di regole Microsoft Extended Design Guideline Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -67,7 +68,7 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole delle
 |[CA2137](../code-quality/ca2137.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare I LinkDemand|
+|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare LinkDemands|
 |[CA2146](../code-quality/ca2146.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

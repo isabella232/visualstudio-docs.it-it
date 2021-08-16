@@ -1,6 +1,6 @@
 ---
 description: La condivisione di file di Windows è stata configurata in modo da connettersi al computer remoto utilizzando un nome utente diverso.
-title: Condivisione file di Windows configurata... | Microsoft Docs
+title: Windows la condivisione file è stata configurata... | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -13,14 +13,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cc34e269d609837d9080cd1e84787fbabf45ce76
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 19574e8b77c163c96ab63617a84703806fd145e881058e6d6037618d675642d2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146249"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121362857"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Errore: la condivisione di file di Windows è stata configurata...
 La condivisione di file di Windows è stata configurata in modo da connettersi al computer remoto utilizzando un nome utente diverso. Ciò è incompatibile con il debug remoto.

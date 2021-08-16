@@ -1,5 +1,5 @@
 ---
-title: Creare le UI con Visual Studio finestra di progettazione XAML
+title: Creare le informazioni utente con Visual Studio finestra di progettazione XAML
 description: Informazioni sull'interfaccia utente dell'area di lavoro e sulle funzionalità del finestra di progettazione XAML in Blend per Visual Studio che fornisce un'interfaccia visiva grafica che consente di progettare app basate su XAML.
 ms.date: 03/03/2020
 ms.topic: conceptual
@@ -14,12 +14,13 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: ef7d94acbb558ef2a8a3c557051e6dea16be916c
-ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 448e465c1458d3a931e5c47c0236d0d733d322970ebd9aeaa9cb5c853d6dc627
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112550688"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365777"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML
 
@@ -124,8 +125,8 @@ La finestra Struttura documento in Visual Studio è simile alla finestra [Oggett
 
 - [Crea animazioni](animate-objects-in-xaml-designer.md) (solo Blend per Visual Studio).
 
-Per visualizzare la finestra Struttura documento in Visual Studio, sulla barra dei menu selezionare **Visualizza struttura** documento di  >  **altre**  >  **finestre.**
-Per visualizzare la finestra Oggetti e sequenza temporale in Blend per Visual Studio, sulla barra dei menu selezionare **Visualizza**  >  **struttura documento**.
+Per visualizzare la finestra Struttura documento in Visual Studio, sulla barra dei menu  >  **selezionare Visualizza altro Windows** Struttura  >  **documento**.
+Per visualizzare la finestra Oggetti e sequenza temporale in Blend per Visual Studio, nella barra dei menu selezionare **Visualizza**  >  **struttura documento.**
 
 ![Finestra Struttura documento in Visual Studio](media/document-outline-window.png)
 

@@ -1,20 +1,21 @@
 ---
 title: Usare l'SDK degli indicatori del visualizzatore di concorrenza | Microsoft Docs
-description: Informazioni su come usare l'SDK dei marcatori del Visualizzatore di concorrenza in Visual Studio per creare intervalli e scrivere flag, messaggi e avvisi.
+description: Informazioni su come usare l'SDK dei marcatori del visualizzatore di concorrenza in Visual Studio per creare intervalli e scrivere flag, messaggi e avvisi.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fab15ce9d3782b2ef7e38d5cca0e2b71d77fbc46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 203200b2b5326faa9c140f4a1bb414c0b8edbd1ae27eec5dfdb5247f205075db
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920758"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368344"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procedura: Usare l'SDK degli indicatori del visualizzatore di concorrenza
 Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per creare intervalli e scrivere flag, messaggi e avvisi.
@@ -71,7 +72,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
 6. Avviare il progetto corrente per visualizzare il visualizzatore di concorrenza. Le due serie di marcatori vengono visualizzate nelle rispettive corsie nella visualizzazione Thread. La figura seguente mostra i due nuovi intervalli.
 
-     ![Screenshot della visualizzazione thread nel Visualizzatore di concorrenza, che mostra un marcatore, un flag e una serie di messaggi, con un intervallo di flag e un intervallo di messaggi.](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Screenshot della visualizzazione Thread nel visualizzatore di concorrenza, che mostra un marcatore, un flag e una serie di messaggi, con un intervallo di flag e un intervallo di messaggi.](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Per usare Visual Basic o C\#
 
@@ -165,7 +166,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
 6. Avviare il progetto corrente per visualizzare il visualizzatore di concorrenza. Le tre serie di marcatori vengono visualizzate nelle rispettive corsie nella visualizzazione Thread. La figura seguente mostra i tre nuovi intervalli.
 
-     ![Screenshot della visualizzazione thread nel Visualizzatore di concorrenza, che mostra un marcatore, un flag e una serie di messaggi, con un messaggio, un avviso e un intervallo di flag.](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![Screenshot della visualizzazione Thread nel visualizzatore di concorrenza, che mostra un marcatore, un flag e una serie di messaggi, con un messaggio, un avviso e un intervallo di flag.](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>Vedi anche
 - [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)

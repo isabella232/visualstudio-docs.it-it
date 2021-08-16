@@ -1,5 +1,5 @@
 ---
-title: WhiteSource Bolt nelle sottoscrizioni di Visual Studio | Microsoft Docs
+title: WhiteSource Bolt nelle Visual Studio di | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
 ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: def7e206fee75dcc76212df2163e41a8b1a96a83
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: e09c1a17625f2151b0a0cead8d69d06460cd4b970a65b697dc8c96222e5caae9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104671807"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121364221"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
@@ -24,11 +24,11 @@ ms.locfileid: "104671807"
 
 2. Individuare il riquadro WhiteSource Bolt nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png "Per iniziare, fare clic su' Ottieni codice ' nel riquadro Bolt WhiteSource.")
+   > ![Riquadro del vantaggio WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png "Fare clic su "Get Code" (Ottieni codice) nel riquadro WhiteSource Bolt per iniziare.")
 
 3. Si riceverà una notifica con il codice di attivazione.  **Copiare il codice negli Appunti** e quindi fare clic su **Attiva**.
    > [!div class="mx-imgBorder"]
-   > ![Codice del vantaggio WhiteSource ](_img/vs-whitesource/vs-whitesource-code.png "Copiare il codice negli Appunti, quindi fare clic su' Activate ' (attiva).")
+   > ![Codice del vantaggio WhiteSource ](_img/vs-whitesource/vs-whitesource-code.png "Copiare il codice negli Appunti e quindi fare clic su &quot;Attiva&quot;.")
 
 4. Nella pagina **Attiva l'account** fare clic sul collegamento **Installa** nel passaggio 1.
 5. Fare clic su **Scarica gratuitamente** in Visual Studio Marketplace.
@@ -42,30 +42,30 @@ ms.locfileid: "104671807"
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | 6 mesi       |  Sì       |
-| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1 selezionato</sup> | 6 mesi       |  Sì       |
+| Visual Studio Enterprise sottoscrizione con GitHub Enterprise | Vl | 6 mesi       |  Sì       |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
-| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
+| Visual Studio Professional sottoscrizione con GitHub Enterprise | Vl                                      | Non disponibile                                                           |N/D         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
-<sup>1</sup>  *include: Microsoft Partner Network (Enterprise).  Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services, NFR Basic.*
+<sup>1</sup>*Include: Microsoft Partner Network (Enterprise).  Esclude: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services, NFR Basic.*  
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con WhiteSource Bolt?  Chat con un rappresentante WhiteSource Bolt in tempo reale all'indirizzo https://www.whitesourcesoftware.com/vse_whitesource_bolt/
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contatta il supporto per le [sottoscrizioni](https://my.visualstudio.com/gethelp)di Visual Studio Visual Studio.
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [Visual Studio sottoscrizioni](https://my.visualstudio.com/gethelp).
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:

@@ -1,5 +1,5 @@
 ---
-description: "IDiaSymbol:: findInlineFramesByAddr recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo."
+description: IDiaSymbol::findInlineFramesByAddr recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo.
 title: IDiaSymbol::findInlineFramesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,14 +9,15 @@ ms.assetid: 36a122e6-f27e-40cd-9784-cdaf279e1905
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e163d57daf0818999ffcca5d96edef2deb9ef66
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a965658192224485587c949244d1bc8622702090c6141c20c3aa422555bf7423
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156685"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404914"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
 Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo.
@@ -34,15 +35,15 @@ HRESULT findInlineFramesByAddr (
 #### <a name="parameters"></a>Parametri
  `isect`
 
-in Specifica il componente della sezione dell'indirizzo.
+[in] Specifica il componente della sezione dell'indirizzo.
 
  `offset`
 
-in Specifica il componente di offset dell'indirizzo.
+[in] Specifica il componente di offset dell'indirizzo.
 
  `ppResult`
 
-out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recuperati.
+[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

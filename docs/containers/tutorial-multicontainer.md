@@ -5,14 +5,14 @@ description: Informazioni su come usare più contenitori con Docker Compose
 ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 03/15/2021
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: 78af96eaa8f340129b2b445dd92419f84cf91ab1
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 49a207b1a2234b12cebb95e9019fe15da28846ca6e4e7666fb5bf57c86ff1aff
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307817"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121363426"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: Creare un'app a più contenitori con Docker Compose
 
@@ -44,7 +44,7 @@ In questa esercitazione si apprenderà come gestire più contenitori e comunicar
 
 ## <a name="create-a-web-application-project"></a>Creare un progetto di applicazione Web
 
-In Visual Studio creare un **progetto di app Web ASP.NET Core,** denominato , per creare `WebFrontEnd` un'applicazione Web con pagine Razor.
+In Visual Studio creare un progetto **di app Web ASP.NET Core,** denominato , per creare `WebFrontEnd` un'applicazione Web con pagine Razor.
   
 ::: moniker range="vs-2017"
 
@@ -56,7 +56,7 @@ Non selezionare **Abilita supporto Docker**. Il supporto di Docker verrà aggiun
 
 ::: moniker range=">=vs-2019"
 
-![Creare ASP.NET di app Web Core](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
+![Creare ASP.NET Core progetto app Web](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
 Non selezionare **Abilita supporto Docker**. Il supporto di Docker verrà aggiunto in un secondo momento.
 
@@ -134,7 +134,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
                 //app.UseHttpsRedirection();
     ```
 
-1. Nel progetto `WebFrontEnd` scegliere Add > Container **Orchestrator Support**. Verrà visualizzata la finestra di dialogo Opzioni di supporto di **Docker.**
+1. Nel progetto `WebFrontEnd` scegliere Add > Container **Orchestrator Support**. Verrà **visualizzata la finestra di dialogo Docker Support Options (Opzioni** di supporto Docker).
 
 1. Scegliere **Docker Compose**.
 
@@ -189,7 +189,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
 
 1. Eseguire ora il sito in locale (F5 o CTRL+F5) per verificare che funzioni come previsto. Se tutti gli elementi sono configurati correttamente con la versione .NET Core 2.x, viene visualizzato il messaggio "Hello from webfrontend and webapi (with value 1)".  Con .NET Core 3 vengono visualizzati i dati delle previsioni meteo.
 
-   Il primo progetto che si usa quando si aggiunge l'orchestrazione del contenitore è configurato per l'avvio quando si esegue o si esegue il debug. È possibile configurare l'azione di avvio in **Proprietà progetto** per il progetto docker-compose.  Nel nodo del progetto docker-compose fare clic con il pulsante destro del mouse per aprire il menu di scelta rapida e quindi scegliere Proprietà **oppure** premere ALT+INVIO.  Lo screenshot seguente mostra le proprietà desiderate per la soluzione usata qui.  Ad esempio, è possibile modificare la pagina caricata personalizzando la **proprietà URL servizio.**
+   Il primo progetto utilizzato quando si aggiunge l'orchestrazione del contenitore viene configurato per l'avvio quando si esegue o si esegue il debug. È possibile configurare l'azione di avvio **Project proprietà per** il progetto docker-compose.  Nel nodo del progetto docker-compose fare clic con il pulsante destro del mouse per aprire il menu di scelta rapida e quindi scegliere Proprietà **oppure** premere ALT+INVIO.  Lo screenshot seguente mostra le proprietà desiderate per la soluzione usata qui.  Ad esempio, è possibile modificare la pagina caricata personalizzando la **proprietà URL servizio.**
 
    ![Screenshot delle proprietà del progetto docker-compose](media/tutorial-multicontainer/launch-action.png)
 
@@ -203,7 +203,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
 
 Esaminare le opzioni per la distribuzione dei [contenitori in Azure.](/azure/containers)
 
-Per un maggiore controllo sui servizi avviati durante una sessione di debug, vedere come usare i profili di avvio Docker Compose per configurare quali servizi vengono eseguiti durante il debug. Vedere [Gestire i profili di avvio per Docker Compose](launch-profiles.md)
+Per un maggiore controllo sui servizi avviati durante una sessione di debug, vedere come usare i profili di avvio Docker Compose per configurare i servizi eseguiti durante il debug. Vedere [Gestire i profili di avvio per Docker Compose](launch-profiles.md)
 
 ## <a name="see-also"></a>Vedi anche
   

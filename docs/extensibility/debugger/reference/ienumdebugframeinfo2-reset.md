@@ -1,6 +1,6 @@
 ---
 description: Reimposta l'enumerazione sul primo elemento FRAMEINFO.
-title: 'IEnumDebugFrameInfo2:: Reset | Microsoft Docs'
+title: IEnumDebugFrameInfo2::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: e149b559-f072-480b-9552-a452b147f3a8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2bccd2b0e106f1db6e9d013bb8d76cabb6970515
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f831ec32a51115dd1a7527e4b1a9ee3a41b93ea30549aba91a86f4113d54983b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091682"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415221"
 ---
 # <a name="ienumdebugframeinfo2reset"></a>IEnumDebugFrameInfo2::Reset
 Reimposta l'enumerazione sul primo elemento.
@@ -42,7 +43,7 @@ int Reset();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Dopo la chiamata a questo metodo, la chiamata successiva al metodo [successivo](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) restituisce il primo elemento dell'enumerazione.
+ Dopo la chiamata a questo metodo, la chiamata successiva al [metodo Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) restituisce il primo elemento dell'enumerazione .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

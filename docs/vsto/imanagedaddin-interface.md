@@ -1,6 +1,6 @@
 ---
 title: interfaccia IManagedAddin
-description: Implementare l'interfaccia IManagedAddin per creare un componente che carica i componenti aggiuntivi VSTO gestiti.
+description: Implementare l'interfaccia IManagedAddin per creare un componente che carica i componenti VSTO componenti aggiuntivi.
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -11,17 +11,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 614cf7e8d0e682d894328fb764c6d64b855d2834
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: a8706bedc9d56099602650120dc12146cd0b7a802bc5114d90f6953db3a14b17
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469788"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366095"
 ---
 # <a name="imanagedaddin-interface"></a>interfaccia IManagedAddin
-  Implementare l'interfaccia IManagedAddin per creare un componente che carica i componenti aggiuntivi VSTO gestiti. Questa interfaccia è stata aggiunta nel sistema di Microsoft Office 2007.
+  Implementare l'interfaccia IManagedAddin per creare un componente che carica componenti VSTO componenti aggiuntivi. Questa interfaccia è stata aggiunta nel sistema di Microsoft Office 2007.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,9 +51,9 @@ interface IManagedAddin : IUnknown
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Chiamato appena prima che un'applicazione di Microsoft Office scarichi un componente aggiuntivo VSTO gestito.|
 
 ## <a name="remarks"></a>Commenti
- Microsoft Office applicazioni, a partire dal sistema 2007 Microsoft Office, usare l'interfaccia IManagedAddin per caricare i componenti aggiuntivi VSTO di Office. È possibile implementare l'interfaccia IManagedAddin per creare il caricatore del componente aggiuntivo VSTO e il runtime per i componenti aggiuntivi VSTO gestiti, invece di usare il caricatore del componente aggiuntivo VSTO (*VSTOLoader.dll*) e [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Per altre informazioni, vedere [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
+ Microsoft Office applicazioni, a partire dal sistema Microsoft Office 2007, usare l'interfaccia IManagedAddin per consentire il caricamento Office VSTO componenti aggiuntivi. È possibile implementare l'interfaccia IManagedAddin per creare il caricatore e il runtime del componente aggiuntivo VSTO per i componenti aggiuntivi VSTO gestiti, anziché usare il caricatore del componente aggiuntivo VSTO (*VSTOLoader.dll*) e [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Per altre informazioni, vedere [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
-## <a name="how-managed-add-ins-are-loaded"></a>Come vengono caricati i componenti aggiuntivi gestiti
+## <a name="how-managed-add-ins-are-loaded"></a>Modalità di caricamento dei componenti aggiuntivi gestiti
  All'avvio di un'applicazione vengono effettuate le operazioni seguenti:
 
 1. L'applicazione individua i componenti aggiuntivi VSTO cercando le voci nella chiave seguente del Registro di sistema:
@@ -63,27 +64,27 @@ interface IManagedAddin : IUnknown
 
 2. L'applicazione cerca una voce `Manifest` nella voce per ciascun componente aggiuntivo VSTO.
 
-    I componenti aggiuntivi VSTO gestiti possono archiviare il percorso completo di un manifesto nella `Manifest` voce in **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_**. Un manifesto è un file (in genere, un file XML) che fornisce informazioni usate per consentire il caricamento del componente aggiuntivo VSTO.
+    I VSTO gestiti possono archiviare il percorso completo di un manifesto nella voce `Manifest` **inHKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_**. Un manifesto è un file (in genere, un file XML) che fornisce informazioni usate per consentire il caricamento del componente aggiuntivo VSTO.
 
-3. Se l'applicazione individua una voce `Manifest` , prova a caricare un componente caricatore per componenti aggiuntivi VSTO gestiti. L'applicazione esegue questa operazione tentando di creare un oggetto COM che implementa l'interfaccia IManagedAddin.
+3. Se l'applicazione individua una voce `Manifest` , prova a caricare un componente caricatore per componenti aggiuntivi VSTO gestiti. L'applicazione esegue questa operazione provando a creare un oggetto COM che implementa l'interfaccia IManagedAddin.
 
-    [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Include un componente caricatore del componente aggiuntivo VSTO (*VSTOLoader.dll*) oppure è possibile crearne uno personalizzato implementando l'interfaccia IManagedAddin.
+    include un componente VSTO del caricatore di componenti aggiuntivi (VSTOLoader.dll) oppure è possibile crearne uno personalizzato implementando [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] l'interfaccia ** IManagedAddin.
 
 4. L'applicazione chiama il metodo [IManagedAddin::Load](../vsto/imanagedaddin-load.md) e passa il valore della voce `Manifest` .
 
 5. Il metodo [IManagedAddin::Load](../vsto/imanagedaddin-load.md) esegue le attività necessarie per caricare il componente aggiuntivo VSTO, ad esempio la configurazione del dominio dell'applicazione e dei criteri di sicurezza per il componente aggiuntivo VSTO caricato.
 
-   Per altre informazioni sulle chiavi del registro di sistema usate dalle applicazioni Microsoft Office per individuare e caricare i componenti aggiuntivi VSTO gestiti, vedere [voci del registro di sistema per i componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
+   Per altre informazioni sulle chiavi del Registro di Microsoft Office usate dalle applicazioni per individuare e caricare componenti aggiuntivi VSTO gestiti, vedere Voci del Registro di sistema per VSTO [componenti aggiuntivi](../vsto/registry-entries-for-vsto-add-ins.md).
 
-## <a name="guidance-to-implement-imanagedaddin"></a>Linee guida per l'implementazione di IManagedAddin
- Se si implementa IManagedAddin, è necessario registrare la DLL che contiene l'implementazione di utilizzando il CLSID seguente:
+## <a name="guidance-to-implement-imanagedaddin"></a>Linee guida per implementare IManagedAddin
+ Se si implementa IManagedAddin, è necessario registrare la DLL che contiene l'implementazione usando il CLSID seguente:
 
  99D651D7-5F7C-470E-8A3B-774D5D9536AC
 
- Microsoft Office applicazioni utilizzano questo CLSID per creare l'oggetto COM che implementa IManagedAddin.
+ Microsoft Office applicazioni usano questo CLSID per creare l'oggetto COM che implementa IManagedAddin.
 
 > [!CAUTION]
-> Questo CLSID viene utilizzato anche da *VSTOLoader.dll* in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Pertanto, se si usa IManagedAddin per creare il proprio componente di runtime e caricatore del componente aggiuntivo VSTO, non è possibile distribuire il componente nei computer che eseguono componenti aggiuntivi VSTO che si basano su [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
+> Questo CLSID viene usato anche dal *VSTOLoader.dll* in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Pertanto, se si usa IManagedAddin per creare il caricatore del componente aggiuntivo VSTO e il componente di runtime, non è possibile distribuire il componente nei computer che eseguono componenti aggiuntivi di VSTO che si basano su [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
 ## <a name="see-also"></a>Vedi anche
-- [Informazioni di riferimento sulle API non gestite &#40;sviluppo per Office in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Informazioni di riferimento sulle API non &#40;Office sviluppo in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

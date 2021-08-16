@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 6e8df96c6345d84531ef04eae56f7f60dcc3eefe
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: 9918342069b6e60ca4f91df87e7e18e1b405f9870968a2a8f63c5bb580a35199
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042873"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409007"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Scrivere unit test per le DLL C++ in Visual Studio
 
@@ -66,7 +66,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
       ::: moniker range="vs-2017"
 
-      1. Scegliere **Nuovo progetto**  dal menu File per Visual C++ test del progetto >  >  >  > **di unit test C++.**
+      1. Scegliere **Nuovo** dal  menu File Project >  > **Visual C++** > **Test** > **unit test C++ Project**.
 
       ::: moniker-end
 
@@ -78,7 +78,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
   1. Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
 
-       Scegliere **Proprietà di configurazione** DIRECTORY  >  **VC++** Directory di  >  **inclusione**.
+       Scegliere **Proprietà di configurazione VC++** directory  >  **di**  >  **inclusione** directory .
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
@@ -98,7 +98,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
       ::: moniker range="vs-2017"
 
-      1. Scegliere **Nuovo progetto**  dal menu File per Visual C++ test del progetto >  >  >  > **di unit test C++.**
+      1. Scegliere **Nuovo** dal  menu File Project >  > **Visual C++** > **Test** > **unit test C++ Project**.
 
       ::: moniker-end
 
@@ -112,7 +112,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
        Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
 
-  1. Scegliere **Proprietà di configurazione** DIRECTORY  >  **VC++** Directory di  >  **inclusione**.
+  1. Scegliere **Proprietà di configurazione VC++** directory  >  **di**  >  **inclusione** directory .
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
@@ -124,7 +124,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
    1. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
-   1. Scegliere **Proprietà di configurazione** Directory  >  **VC++**.
+   1. Scegliere **Proprietà di configurazione VC++**  >  **directory**.
 
    1. Modificare le directory di inclusione e di libreria:
 
@@ -145,7 +145,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
 1. In ogni file di codice dello unit test, aggiungere un'istruzione `#include` per le intestazioni del progetto sottoposto a test.
 
-1. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Ad esempio:
+1. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Esempio:
 
     ```cpp
     #include "stdafx.h"
@@ -169,7 +169,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
 1. Nel menu **Test** scegliere **Finestre** > **Esplora test**.
 
-1. Se non tutti i test sono visibili nella finestra, compilare il progetto di test: fare clic con il pulsante destro del mouse sul nodo in Esplora soluzioni scegliere **Compila** **o** **Ricompila**.
+1. Se non tutti i test sono visibili nella finestra, compilare il progetto di test: fare clic con il pulsante destro del mouse sul nodo in Esplora soluzioni e scegliere **Compila** **o** **Ricompila**.
 
 1. In **Esplora test** scegliere Esegui **tutto** oppure selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per altre opzioni, ad esempio per eseguirlo in modalità di debug con punti di interruzione abilitati.
 

@@ -1,6 +1,6 @@
 ---
 title: Proprietà di uno scenario di test di carico
-description: Informazioni su come modificare le impostazioni delle proprietà dello scenario di test di carico in Visual Studio in una delle diverse proprietà dello scenario di test di carico in questo articolo.
+description: Informazioni su come modificare le impostazioni delle proprietà dello scenario di test di carico in Visual Studio una delle varie proprietà dello scenario di test di carico in questo articolo.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: reference
@@ -11,12 +11,13 @@ ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 36c93d11e64b01820a3a31c73beccadb24ffa08c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: f5f85269ab91390034d7ffe897e98ed47946c9721e1e11c6f60e0c8240e11182
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887666"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408942"
 ---
 # <a name="load-test-scenario-properties"></a>Proprietà di uno scenario di test di carico
 
@@ -48,7 +49,7 @@ Modificare le impostazioni delle proprietà di uno scenario di test di carico in
 |**Commutazione IP**|Valore booleano usato per specificare se viene usata la commutazione IP.<br /><br />La commutazione IP consente a un agente di test di inviare richieste a un server usando un intervallo di indirizzi IP diversi. In questo modo si simulano le chiamate provenienti da computer client diversi. La commutazione IP è importante negli scenari di test di una Web farm con bilanciamento del carico. La maggior parte dei servizi di bilanciamento del carico stabilisce un'affinità tra un client e un determinato server Web usando l'indirizzo IP del client. Se tutte le richieste sembrano provenire da un singolo client, il servizio di bilanciamento del carico non bilancia il carico. Per ottenere un buon bilanciamento del carico nella Web farm, è importante che le richieste provengano da un intervallo di indirizzi IP.<br /><br />La commutazione IP è disponibile solo con l'agente di test.|
 |**Numero massimo di iterazioni test**|Valore numerico utilizzato per specificare il numero massimo di test da eseguire nello scenario. Un valore 0 specifica che non viene impostato alcun valore massimo<br /><br />Per altre informazioni, vedere [Configurare iterazioni di test in uno scenario](../test/configure-test-iterations-in-a-load-test-scenario.md).|
 |**Percentuale di nuovi utenti**|Valore numerico che specifica la percentuale di utenti nuovi o che visitano per la prima volta lo scenario.<br /><br />Per altre informazioni, vedere [Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
-|**Profilo interazione**|Specifica se nello scenario verrà usata la **Distribuzione normale** o se il profilo interazione utente è **Attivato** o **Disattivato**.<br /><br />Per altre informazioni, vedere [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md).|
+|**Profilo think**|Specifica se nello scenario verrà usata la **Distribuzione normale** o se il profilo interazione utente è **Attivato** o **Disattivato**.<br /><br />Per altre informazioni, vedere [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Intervallo
 

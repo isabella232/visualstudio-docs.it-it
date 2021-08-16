@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare tabelle di Word a livello di codice'
-description: Informazioni su come usare il metodo Add della raccolta Tables per aggiungere una tabella in corrispondenza dell'intervallo specificato in un documento di Microsoft Word.
+description: Informazioni su come usare il metodo Add della raccolta Tables per aggiungere una tabella in corrispondenza dell'intervallo specificato in un Microsoft Word documento.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5651487e280d7fb9912734b919b00fab28a702db
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: ffa70b09b233f2f674c457999c6c7669332c100606c2be6f0c3802c967da154b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827383"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408734"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Procedura: Creare tabelle di Word a livello di codice
   La raccolta <xref:Microsoft.Office.Interop.Word.Tables> è un membro delle classi <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection> e <xref:Microsoft.Office.Interop.Word.Range>, pertanto è possibile creare una tabella in ognuno di questi contenuti. Usare il metodo <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> della raccolta <xref:Microsoft.Office.Interop.Word.Tables> per aggiungere una tabella nell'intervallo specificato.
@@ -60,7 +61,7 @@ ms.locfileid: "107827383"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet88":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet88":::
 
-## <a name="create-tables-in-vsto-add-ins"></a>Creare tabelle nei componenti aggiuntivi VSTO
+## <a name="create-tables-in-vsto-add-ins"></a>Creare tabelle in VSTO componenti aggiuntivi
 
 ### <a name="to-add-a-table-to-a-document"></a>Per aggiungere una tabella a un documento
 
@@ -96,5 +97,5 @@ ms.locfileid: "107827383"
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Aggiungere testo e formattazione alle celle nelle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [Procedura: Aggiungere righe e colonne alle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [Procedura: Popolare a livello di codice le tabelle di Word con le proprietà del documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Procedura: Popolare tabelle di Word con proprietà di documento a livello di codice](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

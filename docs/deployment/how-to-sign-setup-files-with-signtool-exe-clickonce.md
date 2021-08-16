@@ -1,6 +1,6 @@
 ---
 title: Firmare i file di installazione con SignTool.exe (ClickOnce)
-description: Informazioni su come usare SignTool.exe per firmare un programma di installazione per le applicazioni ClickOnce, che consente di garantire che i file manomessi non siano installati.
+description: Informazioni su come usare SignTool.exe un programma di installazione per ClickOnce applicazioni, in modo da garantire che i file manomissioni non siano installati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,14 +18,15 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfdabf66c48a875f3b4316ac22e1911c141275c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ac7b07a7c01a38221a1420383942b98cd772faac516c3a81cb673075d9cd045
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940527"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403854"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: Firmare i file di installazione con SignTool.exe (ClickOnce)
 È possibile usare *SignTool.exe* per firmare un programma di installazione (*setup.exe*). Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.
@@ -40,7 +41,7 @@ ms.locfileid: "99940527"
 
 2. Selezionare il progetto in **Esplora soluzioni**.
 
-3. Scegliere **Proprietà***Nome progetto dal menu* **Progetto**.
+3. Scegliere Proprietà **NomeProgetto** dal menu Project  **progetto**.
 
 4. Nella pagina **Firma** deselezionare l'opzione **Firma i manifesti ClickOnce**.
 

@@ -1,6 +1,6 @@
 ---
-title: Debug di applicazioni Mixed-Mode | Microsoft Docs
-description: Eseguire il debug di un'applicazione in modalità mista, ovvero un'app che combina codice nativo con codice gestito eseguito nel Common Language Runtime, in Visual Studio.
+title: Debug Mixed-Mode applicazioni | Microsoft Docs
+description: Eseguire il debug di un'applicazione in modalità mista, ovvero un'app che combina il codice nativo con il codice gestito eseguito in Common Language Runtime, in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,21 +21,22 @@ ms.assetid: 60e34477-ae4e-48c7-9093-3e37f72e1bc3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eff1cae9c1895e853712218d5e0ae55e3138c41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dfe0a77b9ed32be07f02abcc837af8595fcd10fb42b2effb0ccece336b57f566
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872612"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404554"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debug delle applicazioni in modalità mista
 Un'applicazione in modalità mista combina codice nativo (C++) con codice gestito, ad esempio Visual Basic, Visual C# o C++ eseguito in Common Language Runtime. Il debug di applicazioni in modalità mista è ampiamente trasparente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e non è molto diverso dal debug di un'applicazione in modalità singola. È tuttavia necessario fare alcune considerazioni specifiche.
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Abilitare la funzione di modifica e continuazione di C++ nel debug in modalità mista
 
-Per abilitare modifica e continuazione per C++, vedere [come abilitare e disabilitare modifica e continuazione](../debugger/how-to-enable-and-disable-edit-and-continue.md).
+Per abilitare Modifica e continuazione per C++, vedere Come abilitare e [disabilitare Modifica e continuazione.](../debugger/how-to-enable-and-disable-edit-and-continue.md)
 
 > [!NOTE]
 > Per utilizzare Modifica e continuazione per C++ in Visual Studio 2013, è necessario ripristinare il motore di debug legacy. Vedere [Passaggio alla modalità di compatibilità gestita in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/) nel blog Microsoft Application Lifecycle Management.

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Estendere gli intervalli nei documenti a livello di codice'
-description: Informazioni su come estendere a livello di codice gli intervalli di punto iniziale e finale in un documento di Microsoft Word a livello di documento o di applicazione.
+description: Informazioni su come estendere a livello di codice gli intervalli di punti di inizio e di fine in Microsoft Word documento a livello di documento o di applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7a539bbbc4ad8d73477e660ef9903ac51dce712f
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2098265ec257ae11353577ea7145bbe85d52d374501220f0f8c79ceb7bf04eb6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826525"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408721"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Procedura: Estendere gli intervalli nei documenti a livello di codice
   Una volta definito un oggetto <xref:Microsoft.Office.Interop.Word.Range> in un documento di Microsoft Office Word, è possibile modificare i punti iniziale e finale usando i metodi <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . I metodi <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> accettano gli stessi due argomenti, *Unit* e *Count*. I metodi *Count* rappresenta il numero di unità da spostare, mentre l'argomento *Unit* può rappresentare uno dei seguenti valori <xref:Microsoft.Office.Interop.Word.WdUnits> :
@@ -95,5 +96,5 @@ ms.locfileid: "107826525"
 - [Procedura: Reimpostare gli intervalli a livello di codice nei documenti di Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
 - [Procedura: Comprimere intervalli o selezioni nei documenti a livello di codice](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
 - [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Procedura: Recuperare a livello di codice i caratteri di inizio e fine negli intervalli](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Procedura: Recuperare a livello di codice i caratteri iniziale e finale negli intervalli](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
 - [Procedura: Escludere i segni di paragrafo a livello di codice durante la creazione di intervalli](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

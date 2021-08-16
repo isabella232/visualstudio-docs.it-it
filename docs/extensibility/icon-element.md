@@ -1,6 +1,6 @@
 ---
 title: Elemento Icon | Microsoft Docs
-description: Informazioni sull'elemento Icon, che rappresenta le icone usate nelle Visual Studio IDE, che include gli attributi per la bitmap usata e lo slot nella striscia di bitmap.
+description: Informazioni sull'elemento Icon, che rappresenta le icone usate Visual Studio estensioni IDE, che include gli attributi per la bitmap usata e lo slot nella striscia di bitmap.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,14 +11,15 @@ ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ad5bfdf000232ef92a9e9a27b12152df36a4335
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 861bca1bc4a0f43f8e5165ae4fdf172fc858dfaf575683a921f52f3428e9c0d0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900824"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414675"
 ---
 # <a name="icon-element"></a>Elemento Icon
 L'attributo guid del tag Icon è il GUID di una bitmap definita. `id`L'attributo seleziona lo slot nell'elenco di bitmap. Questo elemento è facoltativo. Se questo elemento non è incluso, verrà implicito il valore di **guidOfficeIcon:msotcidNoIcon.**
@@ -51,5 +52,5 @@ L'attributo guid del tag Icon è il GUID di una bitmap definita. `id`L'attributo
 |-------------|-----------------|
 |[Elemento Buttons](../extensibility/buttons-element.md)||
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

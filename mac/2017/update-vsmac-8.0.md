@@ -7,12 +7,12 @@ ms.date: 06/20/2018
 ms.technology: vs-ide-install
 ms.assetid: BC836802-CC65-41F7-BAEC-A42AED0371A9
 hide_comments: false
-ms.openlocfilehash: 09f4af94eb1a12780268ab47f1a06c4710f0382f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7d8951afcdcfcd6ab5babcf0a6f3842d9528fe70fc74c508f68aed135744dd99
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719149"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121364873"
 ---
 # <a name="update-visual-studio-2017-for-mac-version-7-to-visual-studio-2019-for-mac-version-80"></a>Aggiornare Visual Studio 2017 per Mac (versione 7) a Visual Studio 2019 per Mac (versione 8.0)
 

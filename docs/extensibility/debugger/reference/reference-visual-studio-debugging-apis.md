@@ -1,6 +1,6 @@
 ---
-title: Informazioni di riferimento (API di debug di Visual Studio) | Microsoft Docs
-description: I riferimenti di Visual Studio Debugging SDK delineano il modello di base per l'architettura e le funzionalità di runtime del debugger e dei relativi componenti.
+title: Informazioni di riferimento (Visual Studio le API di debug) | Microsoft Docs
+description: I Visual Studio sdk di debug illustrano il modello di base per l'architettura di run-time e le funzionalità del debugger e dei relativi componenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,30 +12,31 @@ ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d5b1cb9f7492ca19ca892f1d2e745bf6160d182
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 667806b5291413a189feec79053e8721ba3f9e814656a37b610be0289454a26b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075419"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415013"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Riferimenti (API di debug di Visual Studio)
 
-I riferimenti di Visual Studio Debugging SDK delineano il modello di base per l'architettura e le funzionalità di runtime del debugger e dei relativi componenti. La documentazione fornisce il minor numero possibile di presupposti relativi ai componenti e alle interfacce che descrive, a parte il comportamento che definisce tramite le interfacce.
+I Visual Studio sdk di debug illustrano il modello di base per l'architettura di run-time e le funzionalità del debugger e dei relativi componenti. La documentazione fa il numero di presupposti possibile sui componenti e sulle interfacce che descrive, a parte il comportamento definito tramite le interfacce.
 
-L'obiettivo della sezione di riferimento è fornire supporto a un set di lingue, tempi di esecuzione e sistemi operativi più diversi possibile.
+L'obiettivo della sezione di riferimento è fornire il supporto possibile a un set di lingue, tempi di esecuzione e sistemi operativi quanto più diversificati possibile.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 
-Contiene la documentazione per le interfacce, gli enumeratori e le strutture dell'API di debug di Visual Studio.
+Contiene la documentazione per le interfacce, gli enumeratori e le strutture dell'API di Visual Studio debug.
 
 [Glossario](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
 
-Fornisce un elenco di termini relativi al debug e le relative definizioni.
+Fornisce un elenco di termini correlati al debug e delle relative definizioni.
 
 ## <a name="see-also"></a>Vedi anche
 

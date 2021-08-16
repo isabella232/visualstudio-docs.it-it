@@ -1,20 +1,21 @@
 ---
 title: Come usare CTest per C++
-description: Informazioni su come creare ed eseguire test con CTest, integrato nell'IDE di Visual Studio per impostazione predefinita.
+description: Informazioni su come creare ed eseguire test con CTest, integrato nell'IDE Visual Studio per impostazione predefinita.
 ms.custom: SEO-VS-2020
 ms.date: 01/23/2020
 ms.topic: how-to
 ms.author: corob
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 23d235d4b18c9909868cf890e31d835b3f7ea948
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44c2d2bc225369af7293de2fe4fef5bafa95db6f5fe58d400727119065df35fe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969282"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409040"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Come usare CTest per C++ in Visual Studio 2017 e versioni successive
 
@@ -22,7 +23,7 @@ CMake, che include CTest, è integrato nell'IDE di Visual Studio per impostazion
 
 ## <a name="to-write-tests"></a>Per scrivere i test
 
-Il supporto di CMake in Visual Studio non riguarda il sistema di progetti di Visual Studio. Di conseguenza, i test di CTest vengono scritti e configurati come in qualsiasi ambiente CMake. Usare il `enable_testing()` comando per abilitare i test e il `add_test()` `gtest_discover_tests()` comando o per aggiungere un nuovo test. Per altre informazioni su CTest, vedere la [documentazione di CMake](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
+Il supporto di CMake in Visual Studio non riguarda il sistema di progetti di Visual Studio. Di conseguenza, i test di CTest vengono scritti e configurati come in qualsiasi ambiente CMake. Usare il `enable_testing()` comando per abilitare i test e il comando o per aggiungere un nuovo `add_test()` `gtest_discover_tests()` test. Per altre informazioni su CTest, vedere la [documentazione di CMake.](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest) 
 
 Per altre informazioni sull'uso di CMake in Visual Studio, vedere [Progetti CMake in Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 

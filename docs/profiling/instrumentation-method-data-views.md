@@ -10,15 +10,16 @@ ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a8842e4c9ec2a8513b42a34cb4c4a5c18ffedf31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92d73f446b3c74d491ca375d10d0ef701a104e530e9bbcd7cd7159322e9dbc42
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906732"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368253"
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.
@@ -36,7 +37,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Organizza i dati di profilatura per modulo e li elenca per le funzioni nel modulo.
 
-- [Visualizzazione chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
 
  Visualizza i dati di profilatura per le funzioni padre e figlio di una funzione selezionata.
 
@@ -51,7 +52,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
 - [Visualizzazione Processo](../profiling/process-view.md)
 
- Elenca l'inizio, la fine e la durata del processo per tutti i processi profilati.
+ Elenca i tempi di inizio, fine e durata del processo per tutti i processi profilati.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)
@@ -62,7 +63,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler che includono dati di memoria .NET.
 
-- [Visualizzazioni dei dati sui conflitti di risorse](../profiling/resource-contention-data-views.md)
+- [Visualizzazioni dei dati sui contenuti delle risorse](../profiling/resource-contention-data-views.md)
 
  Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di conflitti di thread.
 

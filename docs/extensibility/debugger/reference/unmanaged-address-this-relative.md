@@ -1,5 +1,5 @@
 ---
-description: Questa struttura rappresenta un indirizzo relativo a un puntatore this (me in Visual Basic).
+description: Questa struttura rappresenta un indirizzo relativo a un puntatore this (Me in Visual Basic).
 title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fbe63edeed68bc50aae0062f171f66c8a9203ed
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4f345b94ca9d4bfedef6601273bd74225711f9ef2582abe70eb380ac6cb0328b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070674"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414935"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Questa struttura rappresenta un indirizzo relativo a un `this` puntatore ( `Me` in Visual Basic).
@@ -46,21 +47,21 @@ public struct UNMANAGED_THIS_RELATIVE {
 
 ## <a name="members"></a>Members
  `dwOffset`\
- Offset di byte da una posizione di base (ad esempio, inizio di una classe vtable).
+ Offset di byte da una posizione di base(ad esempio, inizio di una classe vtable).
 
  `dwBitOffset`\
- Offset in bit da una posizione di base (sempre 0 a meno che non faccia riferimento a un campo di bit).
+ Offset in bit da una posizione di base (sempre 0 a meno che non si riferisca a un campo di bit).
 
  `dwBitLength`\
- Numero di bit che rappresentano l'indirizzo, sempre 0, a meno che non faccia riferimento a un campo di bit.
+ Numero di bit che rappresentano l'indirizzo (sempre 0 a meno che non si riferisca a un campo di bit).
 
 ## <a name="remarks"></a>Commenti
- Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
+ Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` struttura). [](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: sh. h
+ Intestazione: sh.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

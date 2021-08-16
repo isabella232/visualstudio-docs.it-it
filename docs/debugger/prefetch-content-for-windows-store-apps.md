@@ -1,6 +1,6 @@
 ---
-title: Eseguire il debug usando il contenuto prelettura nelle app UWP | Microsoft Docs
-description: Per aumentare la velocità di risposta dell'app UWP, usare ContentPrefetcher per richiedere la prelettura del contenuto Web da Windows.
+title: Eseguire il debug usando il contenuto preletto nelle app UWP | Microsoft Docs
+description: Per rendere l'app UWP più reattiva, usare ContentPrefetcher per richiedere Windows prelettura del contenuto Web.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,18 +12,19 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f7cffe7f1e6edc482d4fec68908449c901d4ca2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eed0c35116c41a96eba2a50da7d7f43589afa1a4860fae958c1349c865343fc1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891540"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404361"
 ---
-# <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Eseguire il debug di app UWP con contenuto prelettura in Visual Studio
+# <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Eseguire il debug di app UWP usando il contenuto preletto in Visual Studio
 
- Per aumentare la velocità di risposta dell'app UWP, è possibile richiedere a Windows di precaricare parte del contenuto Web, ad esempio immagini o pagine Web, nella cache [WinInet](/windows/desktop/WinInet/about-wininet) dell'app. Questa funzionalità, nota come "caricamento di contenuto in background", è particolarmente utile per il contenuto usato all'avvio, anche se puoi caricare in background altro contenuto usato di frequente. I metodi della classe [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) consentono di specificare gli URI del contenuto che desideri caricare in background. Per esempi relativi all'aggiunta della funzionalità ContentPrefetcher all'app, vedere Windows SDK [Content prefetch sample](https://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) (Esempio di caricamento in background di contenuto).
+ Per rendere l'app UWP più reattiva, è possibile richiedere Windows di precaricare alcuni contenuti Web, ad esempio pagine Web o immagini, nella cache [WinINet](/windows/desktop/WinInet/about-wininet) dell'app. Questa funzionalità, nota come "caricamento di contenuto in background", è particolarmente utile per il contenuto usato all'avvio, anche se puoi caricare in background altro contenuto usato di frequente. I metodi della classe [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) consentono di specificare gli URI del contenuto che desideri caricare in background. Per esempi relativi all'aggiunta della funzionalità ContentPrefetcher all'app, vedere Windows SDK [Content prefetch sample](https://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) (Esempio di caricamento in background di contenuto).
 
  Windows usa le regole euristiche per determinare quando e se caricare contenuto in background e quali risorse verranno scaricate. Le regole euristiche tengono conto delle condizioni di alimentazione e rete del sistema, della cronologia d'uso delle app utente e dei risultati dei precedenti tentativi di caricamento in background. In Visual Studio è possibile usare il comando **Trigger prelettura applicazioni Windows Store** per forzare Windows a ignorare le regole euristiche ContentPrefetcher e a precaricare tutto il contenuto Web specificato. Questo può essere utile se desideri testare le prestazioni o il comportamento dell'app con il contenuto da caricare in background in uno stato noto (caricato o meno).
 
@@ -42,4 +43,4 @@ ms.locfileid: "99891540"
 > Ripeti questi passaggi quando aggiungi o modifichi il contenuto Web specificato.
 
 ## <a name="see-also"></a>Vedi anche
-- [Post di Blog: attivazione della prelettura per le app di Windows Store in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+- [Post di blog: Triggering Prefetch for Windows Store Apps in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

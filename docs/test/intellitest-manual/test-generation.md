@@ -1,6 +1,6 @@
 ---
 title: Generazione di test | Strumento di test per sviluppatori Microsoft IntelliTest
-description: Informazioni su come IntelliTest genera i test case dai metodi dell'implementazione, quindi genera gli input per i metodi e controlla le asserzioni nei dati.
+description: Informazioni su come IntelliTest genera test case dai metodi dell'implementazione, quindi genera input per i metodi e controlla le asserzioni sui dati.
 ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 92071a3bdaf32f06a77f8502b251f1f3af019203
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccd684d00f16f81a071e3e83b87c1ed82cb62fbcd622a28435d52e53c9f992d0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899524"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408955"
 ---
 # <a name="test-generation"></a>Generazione di test
 
@@ -237,7 +238,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Ulteriori informazioni
+## <a name="further-reading"></a>Altre informazioni
 
 * [Post di blog sull'associazione test-codice](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [Post di blog su IntelliTest](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

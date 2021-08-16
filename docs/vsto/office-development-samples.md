@@ -1,6 +1,6 @@
 ---
-title: Esempi di sviluppo per Office
-description: Informazioni sulle applicazioni di esempio di Visual Studio che illustrano come usare gli strumenti di sviluppo Microsoft Office per creare soluzioni Office.
+title: Office di sviluppo
+description: Informazioni sulle applicazioni Visual Studio di esempio che illustrano come usare gli strumenti di Microsoft Office per creare Office soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,23 +12,24 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: caf3178355697b8dba997dbcb66dfa8ef5569e36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44385ed995d716854c3b5b40b1aed4b2c8e3debacc93f13a1c220df1d2bcf975
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926573"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365972"
 ---
-# <a name="office-development-samples"></a>Esempi di sviluppo per Office
+# <a name="office-development-samples"></a>Office di sviluppo
   Visual Studio include applicazioni di esempio che illustrano come usare Microsoft Office Developer Tools per creare soluzioni Office. Il codice in questi esempi illustra la sintassi, la struttura e le tecniche usate per creare soluzioni Office.
 
- Per gli esempi più recenti, vedere [esempi per sviluppatori MSDN: informazioni sul codice](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) nel sito Web Microsoft.
+ Per gli esempi più attuali, vedere [Esempi per sviluppatori MSDN: Informazioni sul codice](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) nel sito Web Microsoft.
 
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]
 
-## <a name="office-development-samples"></a>Esempi di sviluppo per Office
+## <a name="office-development-samples"></a>Office di sviluppo
 
 |Esempio|Descrizione|
 |------------|-----------------|
@@ -43,4 +44,4 @@ ms.locfileid: "99926573"
 |Esempio di interoperabilità VBA e VSTO|Illustra come chiamare un metodo in una personalizzazione a livello di documento per Excel da codice Visual Basic, Applications Edition (VBA) contenuto nella cartella di lavoro.<br /><br /> Questo esempio è disponibile solo online.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Attività comuni nella programmazione di Office](../vsto/common-tasks-in-office-programming.md)
+- [Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)

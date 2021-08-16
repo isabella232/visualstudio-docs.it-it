@@ -1,5 +1,5 @@
 ---
-title: Elemento CreateNewFolder (modelli di Visual Studio) | Microsoft Docs
+title: Elemento CreateNewFolder (modelli Visual Studio) | Microsoft Docs
 description: Informazioni sull'elemento CreateNewFolder e su come determina se verificare che la directory di destinazione in cui deve essere creato il progetto non esista.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,14 +15,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c2d8da615c350fc53b81532972cef65f6cd6ed7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dd332fe32044cb66f24418be016cdf75c9683d0ace936417cfecd8cf246a7e8c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089472"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403515"
 ---
-# <a name="createnewfolder-element-visual-studio-templates"></a>Elemento CreateNewFolder (modelli di Visual Studio)
+# <a name="createnewfolder-element-visual-studio-templates"></a>Elemento CreateNewFolder (Visual Studio modelli)
 Determina se controllare se la directory di destinazione in cui verrà creato il progetto esiste o meno. Se la directory è inesistente, è possibile crearne una nuova per il progetto. Di norma, il flag del Registro di sistema `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), usato da tutti i tipi di progetto comuni per determinare se creare un nuovo progetto in una nuova directory, esegue l'override di questa impostazione.
 
  \<VSTemplate> \<TemplateData>
@@ -43,10 +43,10 @@ Determina se controllare se la directory di destinazione in cui verrà creato il
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -93,5 +93,5 @@ Determina se controllare se la directory di destinazione in cui verrà creato il
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)

@@ -1,17 +1,17 @@
 ---
 title: Creazione di applicazioni ASP.NET Core
-description: Questo articolo illustra come creare ed esplorare ASP.NET Core applicazioni con Visual Studio per Mac.
+description: Questo articolo illustra la creazione e l'esplorazione di ASP.NET Core applicazioni con Visual Studio per Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
-ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ac3e11fd849cc26949f6286fbe91b64719a4206ec0037370962afe65d6a9b15c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189875"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408372"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Creazione di applicazioni ASP.NET Core in Visual Studio per Mac
 
@@ -34,7 +34,7 @@ In questo lab si creerà ed esplorerà un'applicazione ASP.NET Core con Visual S
 
 Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche se non è necessaria una vasta esperienza.
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>Attività 1: creazione di una nuova applicazione ASP.NET Core
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>Attività 1: Creazione di una nuova ASP.NET Core applicazione
 
 1. Avviare **Visual Studio per Mac**.
 
@@ -42,17 +42,17 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 3. Selezionare la categoria **.NET Core > App** e il modello **App Web ASP.NET Core (C#)**. Fare clic su **Avanti**.
 
-    ![Screenshot che illustra come selezionare un modello di applicazione Web per il nuovo progetto.](media/netcore-image1.png)
+    ![Screenshot che mostra come selezionare un modello di applicazione Web per il nuovo progetto.](media/netcore-image1.png)
 
 4. Immettere **"CoreLab"** come nome e fare clic su **Crea** per creare il progetto. Il completamento dell'operazione potrebbe richiedere qualche istante.
 
-    ![Screenshot della configurazione dell'applicazione Web, aggiungendo un nome di progetto.](media/netcore-image2.png)
+    ![Screenshot della configurazione dell'applicazione Web, con l'aggiunta Project nome.](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Attività 2: tour della soluzione
+## <a name="task-2-touring-the-solution"></a>Attività 2: Presentazione della soluzione
 
 1. Il modello predefinito genera una soluzione con un unico progetto ASP.NET Core denominato **CoreLab**. Espandere il nodo del progetto per esporne il contenuto.
 
-    ![Screenshot del nodo del progetto di soluzione selezionato per visualizzarne il contenuto, incluse le cartelle e i file.](media/netcore-image3.png)
+    ![Screenshot del nodo del progetto di soluzione selezionato per visualizzarne il contenuto, incluse cartelle e file.](media/netcore-image3.png)
 
 2. Questo progetto segue il paradigma MVC (Model-View-Controller) per una precisa ripartizione dei compiti tra i dati (modelli), la presentazione (viste) e le funzionalità (controller). Aprire il file **HomeController.cs** dalla cartella **Controller**.
 
@@ -62,69 +62,69 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![Screenshot di una classe C# denominata HomeController.](media/netcore-image5.png)
 
-4. Il progetto include anche una cartella **views** che contiene altre cartelle mappate a ogni controller, nonché una per le visualizzazioni **condivise** . Ad esempio, il file CSHTML (estensione del linguaggio HTML) di visualizzazione per il percorso **/Home/About** si troverebbe in **Visualizzazioni/Home/About.cshtml**. Aprire il file.
+4. Il progetto include anche una **cartella Views** che contiene altre cartelle mappate a ogni controller e una per **le visualizzazioni** condivise. Ad esempio, il file CSHTML (estensione del linguaggio HTML) di visualizzazione per il percorso **/Home/About** si troverebbe in **Visualizzazioni/Home/About.cshtml**. Aprire il file.
 
-    ![Screenshot del progetto di soluzione con il file C S H T M L denominato about selezionato.](media/netcore-image6.png)
+    ![Screenshot del progetto della soluzione con il file C S H T M L denominato About selezionato.](media/netcore-image6.png)
 
 5. Questo file CSHTML usa la sintassi Razor per eseguire il rendering HTML in base a una combinazione di tag standard e C# inline. Per altre informazioni su questo modello, vedere la [documentazione online](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
-    ![Screenshot della parte di un file C S H T M che mostra sintassi Razor.](media/netcore-image7.png)
+    ![Screenshot di parte di un file C S H T M L che mostra sintassi Razor.](media/netcore-image7.png)
 
 6. La soluzione contiene anche una cartella **wwwroot** che sarà la radice per il sito Web. È possibile inserire contenuto statico del sito, ad esempio fogli di stile CSS, immagini e librerie JavaScript, direttamente nei percorsi ad essi destinati al momento della distribuzione del sito stesso.
 
     ![Screenshot della soluzione con la cartella radice w w selezionata.](media/netcore-image8.png)
 
-7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. Annidato sotto il appsettings.jsnel file è il **appsettings.Development.jssu** file. Qui è possibile eseguire l'override di alcune o tutte queste impostazioni in base all'ambiente. Visual Studio per Mac annidare i file in questo modo utilizzando la stessa logica di Visual Studio per Windows, in modo che i file a cui è necessario accedere più spesso siano in primo piano. 
+7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. Annidati sotto la appsettings.jsnel file è il **appsettings.Development.jsnel** file. In questo caso, è possibile eseguire l'override di alcune o tutte queste impostazioni in base all'ambiente. Visual Studio per Mac anniderà i file in questo modo usando la stessa logica di Visual Studio per Windows, in modo che i file a cui è necessario accedere più spesso siano all'avanguardia. 
 
     ![Screenshot che mostra una visualizzazione dettagli con un file JSON selezionato.](media/netcore-build-nested.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: informazioni sul modo in cui è ospitata l'applicazione
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: Informazioni su come è ospitata l'applicazione
 
 1. In **Esplora soluzioni** aprire **Program.cs**. Questo è il programma di bootstrap che eseguirà l'applicazione.
 
-    ![Screenshot della soluzione con il file di origine C# denominato programma selezionato.](media/netcore-image10.png)
+    ![Screenshot della soluzione con il file di origine C# denominato Program selezionato.](media/netcore-image10.png)
 
 2. Anche se sono presenti solo due righe di codice, la loro importanza è fondamentale. Si esamineranno ora in dettaglio queste righe. Prima di tutto, viene creato un nuovo **WebHostBuilder**. Le app ASP.NET Core richiedono un host per l'esecuzione. L'host deve implementare l'interfaccia **IWebHost**, che espone raccolte di funzionalità e servizi, e un metodo **Start**. L'host viene in genere creato tramite un'istanza di **WebHostBuilder**, che crea e restituisce un'istanza di **WebHost**. L'istanza di **WebHost** fa riferimento al server che gestirà le richieste.
 
-    ![Screenshot del metodo Main C# con un'istruzione che Inizializza una variabile denominata host con il tipo WebHostBuilder.](media/netcore-image11.png)
+    ![Screenshot del metodo Main C# con un'istruzione che inizializza una variabile denominata host di tipo WebHostBuilder.](media/netcore-image11.png)
 
-3. Mentre **WebHostBuilder** è responsabile della creazione dell'host che bootstrap il server per l'app, è necessario fornire un server che implementi **`IServer`** . Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
+3. Anche se **WebHostBuilder è** responsabile della creazione dell'host che bootstraprà il server per l'app, è necessario fornire un server che implementa **`IServer`** . Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
 
-    ![Screenshot del metodo principale C# che evidenzia la variabile host che imposta il server con il metodo UseKestrel.](media/netcore-image12.png)
+    ![Screenshot del metodo Main C# che evidenzia la variabile host che imposta il server con il metodo UseKestrel.](media/netcore-image12.png)
 
 4. A questo punto viene impostata la radice del contenuto del server. Questa impostazione determina il percorso in cui cercare i file di contenuto, ad esempio i file di visualizzazione MVC. La radice predefinita del contenuto è costituita dalla cartella da cui viene eseguita l'applicazione.
 
-    ![Screenshot del metodo principale C# che evidenzia la variabile host che imposta la radice del contenuto per il server con il metodo UseContentRoot.](media/netcore-image13.png)
+    ![Screenshot del metodo Main C# che evidenzia la variabile host che imposta la radice del contenuto per il server con il metodo UseContentRoot.](media/netcore-image13.png)
 
 5. Se l'app deve interagire con il server Web IIS (Internet Information Services), come parte del codice per la compilazione dell'host deve essere chiamato il metodo **UseIISIntegration**. A differenza di **UseKestrel**, questo metodo non configura un server. Per usare IIS con ASP.NET Core, è necessario specificare sia **UseKestrel** che **UseIISIntegration**. **Kestrel** è stato progettato per essere eseguito dietro un proxy e non deve essere distribuito con accesso diretto a Internet. **UseIISIntegration** specifica IIS come server proxy inverso, ma è rilevante solo quando viene eseguito su computer in cui è installato IIS. Se si distribuisce l'applicazione in Windows, lasciarlo lì. Negli altri casi non crea comunque problemi.
 
-    ![Screenshot del metodo principale C# che evidenzia la variabile host che imposta il server proxy inverso con il metodo UseIISIntegration.](media/netcore-image14.png)
+    ![Screenshot del metodo Main C# che evidenzia la variabile host che imposta il server proxy inverso con il metodo UseIISIntegration.](media/netcore-image14.png)
 
 6. Per una procedura più lineare, è consigliabile separare il caricamento delle impostazioni dal bootstrap dell'applicazione. Per ottenere facilmente questo risultato, viene chiamato **UseStartup** per specificare che è necessario chiamare la classe **Startup** per il caricamento delle impostazioni e altre attività di avvio, come l'inserimento di middleware nella pipeline HTTP. È possibile eseguire più chiamate a **UseStartup** con la previsione che ciascuna sovrascriva le impostazioni precedenti come necessario.
 
-    ![Screenshot del metodo principale C# che evidenzia la variabile host che imposta la classe di avvio con l'opzione UseStartup.](media/netcore-image15.png)
+    ![Screenshot del metodo Main C# che evidenzia la variabile host che imposta la classe di avvio con l'opzione UseStartup.](media/netcore-image15.png)
 
 7. L'ultimo passaggio per la creazione di **IWebHost** consiste nell'esecuzione di una chiamata a **Build**.
 
-    ![Screenshot del metodo principale C# che evidenzia la variabile host con il metodo di compilazione.](media/netcore-image16.png)
+    ![Screenshot del metodo Main C# che evidenzia la variabile host con il metodo Build.](media/netcore-image16.png)
 
 8. Anche se le classi **IWebHost** sono necessarie per implementare il metodo **Start** non bloccante, i progetti ASP.NET Core dispongono di un metodo di estensione denominato **Run** che esegue il wrapping di **Start** con codice bloccante, evitando così di dover impedire manualmente la chiusura immediata del metodo.
 
-    ![Screenshot del metodo principale di C# che evidenzia l'esecuzione del punto host dell'istruzione.](media/netcore-image17.png)
+    ![Screenshot del metodo Main C# che evidenzia l'istruzione host dot Run.](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>Attività 4: esecuzione e debug dell'applicazione
+## <a name="task-4-running-and-debugging-the-application"></a>Attività 4: Esecuzione e debug dell'applicazione
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto **CoreLab** e scegliere **Opzioni**.
 
-    ![Screenshot che mostra il menu di scelta rapida per la soluzione CoreLab, evidenziando le opzioni.](media/netcore-image18.png)
+    ![Screenshot che mostra il menu di scelta rapida per la soluzione CoreLab, con le opzioni evidenziate.](media/netcore-image18.png)
 
 2. La finestra di dialogo **Opzioni progetto** include tutto il necessario per regolare la modalità di compilazione ed esecuzione dell'applicazione. Selezionare il nodo **Esegui > Configurazioni > Predefinite** nel pannello di sinistra.
 
-3. Selezionare **Esegui in console esterna** e deselezionare **Sospendi output della console**. In genere, l'applicazione self-hosted non avrà la relativa console visibile, ma registrerà invece i risultati nella finestra di **output** . Ai fini di questo lab, la console verrà visualizzata in una finestra separata, anche se questo non è necessario durante le normali attività di sviluppo.
+3. Selezionare **Esegui in console esterna** e deselezionare **Sospendi output della console**. In genere l'applicazione self-hosted non ha la console visibile, ma registra i risultati nella **finestra Output.** Ai fini di questo lab, la console verrà visualizzata in una finestra separata, anche se questo non è necessario durante le normali attività di sviluppo.
 
 4. Fare clic su **OK**.
 
-    ![Screenshot che mostra la scheda generale della configurazione di esecuzione, con Esegui su console esterna selezionata e Sospendi output della console non selezionato.](media/netcore-image19.png)
+    ![Screenshot che mostra la scheda Generale della configurazione di esecuzione, con l'opzione Esegui nella console esterna selezionata e l'opzione Sospendi output console non selezionata.](media/netcore-image19.png)
 
 5. Premere **F5** per compilare ed eseguire l'applicazione. In alternativa, è possibile selezionare **Esegui > Avvia debug**.
 
@@ -134,19 +134,19 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 7. La seconda è una normale finestra del browser per testare il sito. Dal punto di vista del browser, l'applicazione potrebbe essere ospitata ovunque. Fare clic su **About** (Informazioni) per passare a tale pagina.
 
-    ![Screenshot che mostra una finestra del browser per testare il sito, evidenziando l'opzione about.](media/netcore-image21.png)
+    ![Screenshot che mostra una finestra del browser per testare il sito, con l'opzione Informazioni su evidenziata.](media/netcore-image21.png)
 
 8. Tra le altre cose, la pagina delle informazioni visualizza il testo impostato nel controller.
 
-    ![Screenshot che mostra il risultato della selezione dell'opzione about, che è una pagina about.](media/netcore-image22.png)
+    ![Screenshot che mostra il risultato della selezione dell'opzione Informazioni su, ovvero una pagina Informazioni su.](media/netcore-image22.png)
 
 9. Tenere aperte entrambe le finestre e tornare a Visual Studio per Mac. Aprire il file **Controller/HomeController.cs** se non è già aperto.
 
-    ![Screenshot che mostra la soluzione con la classe C# HomeController selezionata nuovamente.](media/netcore-image23.png)
+    ![Screenshot che mostra la soluzione con la classe C# HomeController nuovamente selezionata.](media/netcore-image23.png)
 
 10. Impostare un punto di interruzione nella prima riga del metodo **About**. Per eseguire questa operazione, fare clic sul margine o posizionare il cursore sulla riga e premere **F9**. Questa riga imposta alcuni dati nella raccolta **ViewData** di cui viene eseguito il rendering della pagina CSHTML in **Visualizzazioni/Home/About.cshtml**.
 
-    ![Screenshot che mostra il metodo about con un punto di interruzione impostato.](media/netcore-image24.png)
+    ![Screenshot che mostra il metodo About con un punto di interruzione impostato.](media/netcore-image24.png)
 
 11. Tornare al browser e aggiornare la pagina delle informazioni. Questa operazione attiverà il punto di interruzione in Visual Studio per Mac.
 
@@ -160,19 +160,19 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 15. Modificare il testo **"additional"** in **"changed"** e salvare il file.
 
-    ![Screenshot del file C S T M L denominato about con una modifica al relativo testo.](media/netcore-image26.png)
+    ![Screenshot del file C S H T M L denominato About con una modifica al testo.](media/netcore-image26.png)
 
 16. Fare clic sul pulsante **Continua** per continuare l'esecuzione.
 
-    ![Screenshot della finestra di Visual Studio che evidenzia il pulsante continua.](media/netcore-image27.png)
+    ![Screenshot della finestra Visual Studio con il pulsante Continua evidenziato.](media/netcore-image27.png)
 
 17. Tornare alla finestra del browser per visualizzare il testo aggiornato. Questa modifica può essere eseguita in qualsiasi momento e non richiede necessariamente un punto di interruzione del debugger. Se la modifica non viene visualizzata immediatamente, aggiornare il browser.
 
-    ![Screenshot della pagina about, questa volta con il testo modificato.](media/netcore-image28.png)
+    ![Screenshot della pagina About, questa volta con il testo modificato.](media/netcore-image28.png)
 
 18. Chiudere la console dell'applicazione e la finestra del browser di test. In questo modo verrà arrestato anche il processo di debug.
 
-## <a name="task-5-application-startup-configuration"></a>Attività 5: configurazione dell'avvio dell'applicazione
+## <a name="task-5-application-startup-configuration"></a>Attività 5: Configurazione dell'avvio dell'applicazione
 
 1. In **Esplora soluzioni** aprire **Startup.cs**. È possibile notare inizialmente alcune righe rosse a zigzag mentre i pacchetti NuGet vengono ripristinati in background e il compilatore Roslyn genera un quadro completo delle dipendenze del progetto.
 
@@ -180,29 +180,29 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 2. Individuare il metodo **Startup**. Questa sezione definisce la configurazione iniziale per l'applicazione ed è densa di informazioni. Di seguito si esamineranno i vari passaggi.
 
-    ![Screenshot che illustra il metodo di avvio della classe Startup.](media/netcore-image30.png)
+    ![Screenshot che mostra il metodo Startup della classe Startup.](media/netcore-image30.png)
 
 3. Il metodo inizia con l'inizializzazione di un oggetto **ConfigurationBuilder** e l'impostazione del relativo percorso di base.
 
-    ![Screenshot del metodo di avvio, che mostra un'istruzione che Inizializza una variabile denominata Builder con il tipo ConfigurationBuilder.](media/netcore-image31.png)
+    ![Screenshot del metodo Startup, che mostra un'istruzione che inizializza una variabile denominata builder con tipo ConfigurationBuilder.](media/netcore-image31.png)
 
 4. Prosegue quindi con il caricamento di un file **appsettings.json** obbligatorio.
 
-    ![Screenshot del metodo di avvio, che mostra la variabile di generatore usando il metodo AddJsonFile per aggiungere il file JSON denominato appSettings.](media/netcore-image32.png)
+    ![Screenshot del metodo Startup, che mostra la variabile builder che usa il metodo AddJsonFile per aggiungere il file JSON denominato appsettings.](media/netcore-image32.png)
 
 5. Dopo questa operazione, prova a caricare un file **appsettings.json** specifico dell'ambiente, che eseguirà l'override delle impostazioni esistenti. Questo è ad esempio un file **appsettings.Development.json** predefinito che viene usato per l'ambiente specifico. Per altre informazioni sulla configurazione in ASP.NET Core, consultare la [documentazione](/aspnet/core/fundamentals/configuration).
 
-    ![Screenshot del metodo di avvio, che mostra la variabile di generatore usando il metodo AddJsonFile per aggiungere un file JSON appSettings specifico dell'ambiente.](media/netcore-image34.png)
+    ![Screenshot del metodo Startup, che mostra la variabile builder che usa il metodo AddJsonFile per aggiungere un file JSON appsettings specifico dell'ambiente.](media/netcore-image34.png)
 
 6. Vengono infine aggiunte le variabili di ambiente al generatore della configurazione e la configurazione viene creata e impostata per l'uso.
 
-    ![Screenshot del metodo di avvio, che mostra la variabile di generatore che aggiunge le variabili di ambiente e quindi usa il metodo di compilazione per compilare la configurazione.](media/netcore-image35.png)
+    ![Screenshot del metodo Startup, che mostra la variabile builder che aggiunge variabili di ambiente e quindi usa il metodo Build per compilare la configurazione.](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>Attività 6: inserimento del middleware dell'applicazione
+## <a name="task-6-inserting-application-middleware"></a>Attività 6: Inserimento del middleware dell'applicazione
 
 1. Individuare il metodo **Configure** nella classe **Startup**. In questa classe viene configurato tutto il middleware in modo che possa essere inserito nella pipeline HTTP e usato per elaborare ogni richiesta inviata al server. Anche se questo metodo viene chiamato una sola volta, il contenuto dei metodi, ad esempio **UseStaticFiles**, può essere eseguito per ogni richiesta.
 
-    ![Screenshot che illustra il metodo configure nella classe Startup.](media/netcore-image36.png)
+    ![Screenshot che mostra il metodo Configure nella classe Startup.](media/netcore-image36.png)
 
 2. È anche possibile aggiungere altro middleware da eseguire come parte della pipeline. Aggiungere il codice seguente dopo **app.UseStaticFiles** per aggiungere automaticamente un'intestazione **X-Test** a ogni risposta in uscita. IntelliSense aiuterà a completare il codice durante la digitazione.
 
@@ -222,7 +222,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 6. Nella scheda **Avanzate** selezionare **Mostra menu Sviluppo nella barra dei menu** e chiudere la finestra di dialogo.
 
-    ![Screenshot che mostra il riquadro Avanzate nella finestra di dialogo Preferenze Safari con il menu Mostra sviluppo nell'opzione barra dei menu selezionata.](media/netcore-image37.png)
+    ![Screenshot che mostra il riquadro Avanzate nella finestra di dialogo Preferenze di Safari con l'opzione Mostra menu Sviluppo nella barra dei menu selezionata.](media/netcore-image37.png)
 
 7. Selezionare **Sviluppo > Mostra risorse pagina**.
 
@@ -230,18 +230,18 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 9. La pagina HTML localhost eseguita dal server sarà l'elemento selezionato per impostazione predefinita.
 
-    ![Screenshot che evidenzia la pagina localhost H T M.](media/netcore-image38.png)
+    ![Screenshot che evidenzia la pagina localhost H T M L.](media/netcore-image38.png)
 
 10. Espandere la **barra laterale dei dettagli**.
 
-    ![Screenshot che evidenzia il controllo da usare per espandere la sidebar dei dettagli.](media/netcore-image39.png)
+    ![Screenshot che evidenzia il controllo da usare per espandere la barra laterale Dettagli.](media/netcore-image39.png)
 
 11. Scorrere fino alla parte inferiore della barra laterale per visualizzare l'intestazione della risposta aggiunta in precedenza nel codice.
 
-    ![Screenshot che evidenzia l'intestazione della risposta denominata XTest con un valore di test.](media/netcore-image40.png)
+    ![Screenshot che evidenzia l'intestazione della risposta denominata XTest con il valore Test value.](media/netcore-image40.png)
 
 12. Dopo aver letto le informazioni desiderate, chiudere la finestra del browser e la console.
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>Riepilogo
 
 In questo lab si è appreso come iniziare a sviluppare app ASP.NET Core con Visual Studio per Mac. Se si vogliono approfondire le conoscenze sullo sviluppo di un'applicazione di database di film più completa, vedere l'esercitazione [Introduzione ad ASP.NET Core MVC](/aspnet/core/tutorials/first-mvc-app/start-mvc).

@@ -1,5 +1,5 @@
 ---
-description: Questa struttura specifica le informazioni su un tipo di campo tratto da un simbolo PDB.
+description: Questa struttura specifica informazioni su un tipo di campo tratto da un simbolo PDB.
 title: PDB_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,21 +11,22 @@ ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b9b27024979faaebbacdfdde93e26ffddb6f312
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3b2a812fa59c8017b6a4296d0172fc2225d099470685450c50e2c618b6bd66f4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082231"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415169"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
-Questa struttura specifica le informazioni su un tipo di campo tratto da un simbolo PDB.
+Questa struttura specifica informazioni su un tipo di campo tratto da un simbolo PDB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +49,7 @@ public struct PDB_TYPE {
 ## <a name="members"></a>Members
 
 `ulAppDomainID`\
-ID dell'applicazione da cui è arrivato il simbolo. Viene utilizzato per identificare in modo univoco un'istanza dell'applicazione.
+ID dell'applicazione da cui deriva il simbolo. Viene usato per identificare in modo univoco un'istanza dell'applicazione.
 
 `guidModule`\
 GUID del modulo che contiene questo campo.
@@ -58,13 +59,13 @@ ID del simbolo che corrisponde a questo campo.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene visualizzata come parte dell'Unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il `dwKind` campo della `TYPE_INFO` struttura è impostato su `TYPE_KIND_PDB` (un valore dell'enumerazione [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
+Questa struttura viene visualizzata come parte dell'unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il campo della struttura è impostato su (un valore `dwKind` `TYPE_INFO` `TYPE_KIND_PDB` dell'enumerazione dwTYPE_KIND). [](../../../extensibility/debugger/reference/dwtype-kind.md)
 
 ## <a name="requirements"></a>Requisiti
 
-Intestazione: sh. h
+Intestazione: sh.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

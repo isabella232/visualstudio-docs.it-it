@@ -7,15 +7,15 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 05/18/2021
 ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per assistenza su domande o problemi.
-ms.openlocfilehash: 343cf2eede966e83390c6f2689d0db840507f827
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: 34354d8f46360ef3accd516b094716093a92c29abf627632c9e90c95d642de13
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973516"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121364549"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
-Se la Visual Studio viene fornita dall'istituto di istruzione o dall'istituto di istruzione, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni o da "amministratore".  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
+Se la Visual Studio viene fornita dall'istituto di istruzione o dall'istituto di istruzione, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni o "amministratore".  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
 
 Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe non conoscere l'amministratore e potrebbe quindi essere difficile capire come ottenere assistenza.  È stata aggiunta una nuova funzionalità al portale dei sottoscrittori per contattare in modo più semplice l'amministratore.   
 

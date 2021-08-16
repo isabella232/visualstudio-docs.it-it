@@ -1,6 +1,6 @@
 ---
 title: Registrare lo schermo e la voce durante i test
-description: Informazioni su come configurare l'adattatore dati di diagnostica che registra lo schermo e la voce dell'utente che esegue il test in Visual Studio.
+description: Informazioni su come configurare l'adattatore dati di diagnostica che registra la schermata e la voce dell'utente che esegue il test in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
@@ -10,12 +10,13 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 2ca477e25daa76e63e786698e7e2fa1e39c7f77f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 491980165ec7528ed111a3ec99eab79e656ecfda597c79b17dbc37e36d9fa1e7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961469"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366635"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test
 
@@ -66,7 +67,7 @@ La funzionalità di registrazione dello schermo e della voce può essere utilizz
     ::: moniker-end
     ::: moniker range=">=vs-2019"
     > [!TIP]
-    > Per reimpostare la configurazione per l'adattatore dati di diagnostica, scegliere **Reimposta configurazione predefinita** in Visual Studio.
+    > Per reimpostare la configurazione per questo adattatore dati di diagnostica, scegliere **Ripristina configurazione predefinita** in Visual Studio.
     ::: moniker-end
 
 ## <a name="see-also"></a>Vedi anche

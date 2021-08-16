@@ -11,14 +11,15 @@ ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37691714d0168594b61a1a3849f7b65264e9999e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a8c6a40cb19315c6b754ef8e81208f78f1e1996837d6ee352d84a6df25041dc4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902891"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414961"
 ---
 # <a name="task-class---internal-members"></a>Classe di attività : membri interni
 Questo articolo descrive i membri interni della classe che consentono <xref:System.Threading.Tasks.Task?displayProperty=fullName> di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere <xref:System.Threading.Tasks.Task> l'articolo di riferimento.
@@ -60,7 +61,7 @@ Questo articolo descrive i membri interni della classe che consentono <xref:Syst
 |[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Oggetto che rappresenta i dati che verranno usati dall'azione.|
 |[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Campo di supporto per la <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> proprietà.|
 |[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|Identificatore disponibile successivo per un <xref:System.Threading.Tasks.Task> oggetto .|
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Indica che l'attività è stata annullata prima di raggiungere lo stato di esecuzione oppure che l'attività ha confermato l'annullamento e completata senza eccezioni.|
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Indica che l'attività è stata annullata prima di raggiungere lo stato in esecuzione o che l'attività ha confermato l'annullamento e completata senza eccezioni.|
 |[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|Indica che l'attività è in esecuzione.|
 |[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|Indica che l'attività è stata completata a causa di un'eccezione non gestita.|
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Indica che l'esecuzione dell'attività è stata completata correttamente.|
@@ -81,6 +82,6 @@ Questo articolo descrive i membri interni della classe che consentono <xref:Syst
 
 - `InternalWait`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - [Estensioni interne parallele per l'.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

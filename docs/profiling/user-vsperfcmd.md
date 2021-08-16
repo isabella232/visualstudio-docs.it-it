@@ -1,21 +1,22 @@
 ---
 title: User (VSPerfCmd) | Microsoft Docs
-description: Informazioni su come l'opzione User specifica il dominio e il nome utente dell'account proprietario del processo profilato.
+description: Informazioni su come l'opzione Utente specifica il dominio e il nome utente dell'account proprietario del processo profilato.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b0240a4dcf0830dca6667bcbd055d677ef7bc204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1338b81d94b8c4b09d4f14fefa807781bd53fc52fa6eec91917453787369792
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886002"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368123"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
 L'opzione **User** specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna Nome utente nella scheda **Processi** di Gestione attività di Windows.
@@ -36,7 +37,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **User** può essere usata solo con l'opzione **Start**.
 
- **Inizio:** `Method` Inizializza il profiler sul metodo di profilatura specificato.
+ **Avvio:** `Method` Inizializza il profiler sul metodo di profilatura specificato.
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra l'uso dell'opzione **User**.

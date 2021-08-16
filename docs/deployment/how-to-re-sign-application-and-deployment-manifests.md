@@ -1,6 +1,6 @@
 ---
-title: Ripetere la firma dei manifesti dell'applicazione e della distribuzione | Microsoft Docs
-description: Informazioni su come ripetere la firma dei manifesti dell'applicazione e della distribuzione con un certificato dopo le modifiche apportate alle proprietà di distribuzione.
+title: Firmare nuovamente i manifesti dell'applicazione e della | Microsoft Docs
+description: Informazioni su come firmare nuovamente i manifesti dell'applicazione e di distribuzione con un certificato dopo aver apportato modifiche alle proprietà di distribuzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,36 +18,37 @@ ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63bab0edd28694b801aa7e41b9b874c537ea0eb0b6b0a68234177a8e934707b6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900433"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403919"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: Firmare nuovamente manifesti di applicazione e distribuzione
-Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto dell'applicazione per Windows Form applicazioni, applicazioni Windows Presentation Foundation (XBAP) o soluzioni Office, è necessario firmare di nuovo entrambi i manifesti dell'applicazione e della distribuzione con un certificato. Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.
+Dopo aver apportato modifiche alle proprietà di distribuzione nel manifesto dell'applicazione per le applicazioni form Windows, le applicazioni Windows Presentation Foundation (xbap) o le soluzioni Office, è necessario firmare nuovamente i manifesti dell'applicazione e di distribuzione con un certificato. Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.
 
- Un altro scenario in cui è possibile firmare di nuovo i manifesti è quando i clienti vogliono firmare i manifesti dell'applicazione e della distribuzione con il proprio certificato.
+ Un altro scenario in cui è possibile firmare nuovamente i manifesti è quando i clienti vogliono firmare i manifesti dell'applicazione e della distribuzione con il proprio certificato.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Firmare nuovamente i manifesti dell'applicazione e di distribuzione
- Questa procedura presuppone che siano già state apportate modifiche al file manifesto dell'applicazione (*. manifest*). Per altre informazioni, vedere [procedura: modificare le proprietà di distribuzione](/previous-versions/cc442869(v=vs.110)).
+ Questa procedura presuppone che siano già state apportate modifiche al file manifesto dell'applicazione (*con estensione manifest*). Per altre informazioni, vedere [Procedura: Modificare le proprietà di distribuzione](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per firmare nuovamente i manifesti dell'applicazione e della distribuzione con Mage.exe
 
-1. Aprire una finestra del **prompt dei comandi di Visual Studio** .
+1. Aprire una finestra **Visual Studio prompt dei comandi.**
 
-2. Passare alla cartella che contiene i file manifesto che si desidera firmare.
+2. Passare alla cartella contenente i file manifesto da firmare.
 
-3. Digitare il comando seguente per firmare il file manifesto dell'applicazione. Sostituire *ManifestFileName* con il nome del file manifesto più l'estensione. Sostituire il *certificato* con il percorso relativo o il percorso completo del file di certificato e sostituire *password* con la password per il certificato.
+3. Digitare il comando seguente per firmare il file manifesto dell'applicazione. Sostituire *ManifestFileName con* il nome del file manifesto e l'estensione. Sostituire *Certificato* con il percorso relativo o completo del file del certificato e sostituire *Password* con la password per il certificato.
 
     ```cmd
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password
     ```
 
-     Ad esempio, è possibile eseguire il comando seguente per firmare un manifesto dell'applicazione per un componente aggiuntivo, un'applicazione Windows Form o un'applicazione Windows Presentation Foundation browser. I certificati temporanei creati da Visual Studio non sono consigliati per la distribuzione in ambienti di produzione.
+     Ad esempio, è possibile eseguire il comando seguente per firmare un manifesto dell'applicazione per un componente aggiuntivo, un'applicazione form Windows o un'Windows Presentation Foundation applicazione browser. I certificati temporanei creati da Visual Studio sono sconsigliati per la distribuzione negli ambienti di produzione.
 
     ```cmd
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -55,13 +56,13 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-4. Digitare il comando seguente per aggiornare e firmare il file manifesto di distribuzione, sostituendo i nomi di segnaposto come nel passaggio precedente.
+4. Digitare il comando seguente per aggiornare e firmare il file manifesto della distribuzione, sostituendo i nomi segnaposto come nel passaggio precedente.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
     ```
 
-     Ad esempio, è possibile eseguire il comando seguente per aggiornare e firmare un manifesto di distribuzione per un componente aggiuntivo di Excel, un Windows Forms Application o un'applicazione Windows Presentation Foundation browser.
+     Ad esempio, è possibile eseguire il comando seguente per aggiornare e firmare un manifesto di distribuzione per un componente aggiuntivo Excel, un'applicazione Windows Forms o un'applicazione browser Windows Presentation Foundation.
 
     ```cmd
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -69,26 +70,26 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Facoltativamente, copiare il manifesto della distribuzione master (*Publish \\ \<appname> . Application*) nella directory di distribuzione della versione (*file publish\Application \\ \<appname> _ \<version>*).
+5. Facoltativamente, copiare il manifesto della distribuzione master (*publish \\ \<appname> .application*) nella directory di distribuzione della versione (*publish\Application Files \\ \<appname> \<version> _*).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Aggiornare e firmare nuovamente i manifesti dell'applicazione e della distribuzione
- Questa procedura presuppone che siano già state apportate modifiche al file manifesto dell'applicazione (*. manifest*), ma che siano presenti altri file aggiornati. Quando i file vengono aggiornati, è necessario aggiornare anche l'hash che rappresenta il file.
+ Questa procedura presuppone che siano già state apportate modifiche al file manifesto dell'applicazione (*con estensione manifest*), ma che siano presenti altri file aggiornati. Quando i file vengono aggiornati, è necessario aggiornare anche l'hash che rappresenta il file.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per aggiornare e firmare nuovamente i manifesti dell'applicazione e della distribuzione con Mage.exe
 
-1. Aprire una finestra del **prompt dei comandi di Visual Studio** .
+1. Aprire una finestra **Visual Studio prompt dei comandi.**
 
-2. Passare alla cartella che contiene i file manifesto che si desidera firmare.
+2. Passare alla cartella contenente i file manifesto da firmare.
 
-3. Rimuovere l'estensione di file *. deploy* dai file nella cartella publish output.
+3. Rimuovere *l'estensione* di file deploy dai file nella cartella di output di pubblicazione.
 
-4. Digitare il comando seguente per aggiornare il manifesto dell'applicazione con i nuovi hash per i file aggiornati e firmare il file manifesto dell'applicazione. Sostituire *ManifestFileName* con il nome del file manifesto più l'estensione. Sostituire il *certificato* con il percorso relativo o il percorso completo del file di certificato e sostituire *password* con la password per il certificato.
+4. Digitare il comando seguente per aggiornare il manifesto dell'applicazione con i nuovi hash per i file aggiornati e firmare il file manifesto dell'applicazione. Sostituire *ManifestFileName con* il nome del file manifesto e l'estensione. Sostituire *Certificato* con il percorso relativo o completo del file del certificato e sostituire *Password* con la password per il certificato.
 
     ```cmd
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password
     ```
 
-     Ad esempio, è possibile eseguire il comando seguente per firmare un manifesto dell'applicazione per un componente aggiuntivo, un'applicazione Windows Form o un'applicazione Windows Presentation Foundation browser. I certificati temporanei creati da Visual Studio non sono consigliati per la distribuzione in ambienti di produzione.
+     Ad esempio, è possibile eseguire il comando seguente per firmare un manifesto dell'applicazione per un componente aggiuntivo, un'applicazione form Windows o un'Windows Presentation Foundation applicazione browser. I certificati temporanei creati da Visual Studio sono sconsigliati per la distribuzione negli ambienti di produzione.
 
     ```cmd
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -96,13 +97,13 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Digitare il comando seguente per aggiornare e firmare il file manifesto di distribuzione, sostituendo i nomi di segnaposto come nel passaggio precedente.
+5. Digitare il comando seguente per aggiornare e firmare il file manifesto della distribuzione, sostituendo i nomi segnaposto come nel passaggio precedente.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
     ```
 
-     Ad esempio, è possibile eseguire il comando seguente per aggiornare e firmare un manifesto di distribuzione per un componente aggiuntivo di Excel, un Windows Forms Application o un'applicazione Windows Presentation Foundation browser.
+     Ad esempio, è possibile eseguire il comando seguente per aggiornare e firmare un manifesto di distribuzione per un componente aggiuntivo Excel, un'applicazione Windows Forms o un'applicazione browser Windows Presentation Foundation.
 
     ```cmd
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -110,9 +111,9 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-6. Aggiungere di nuovo l'estensione di file *. deploy* ai file, ad eccezione dei file manifesto dell'applicazione e della distribuzione.
+6. Aggiungere nuovamente *l'estensione di* file deploy ai file, ad eccezione dei file manifesto dell'applicazione e della distribuzione.
 
-7. Facoltativamente, copiare il manifesto della distribuzione master (*Publish \\ \<appname> . Application*) nella directory di distribuzione della versione (*file publish\Application \\ \<appname> _ \<version>*).
+7. Facoltativamente, copiare il manifesto della distribuzione master (*publish \\ \<appname> .application*) nella directory di distribuzione della versione (*publish\Application Files \\ \<appname> \<version> _*).
 
 ## <a name="see-also"></a>Vedi anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -6,15 +6,16 @@ ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c59a9d9055dd6a5788eec4d4904d9ec41262dae2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5374712be1fb25e91e573651869315ab830612bc6f0da1203a814573df7be429
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879501"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408982"
 ---
 # <a name="install-unit-test-frameworks"></a>Installare framework di unit test
 
@@ -23,7 +24,7 @@ Esplora test di Visual Studio può eseguire test da qualsiasi framework di unit 
 Una soluzione di Visual Studio può includere progetti unit test che usano diversi framework e fanno riferimento a diversi linguaggi.
 
 ::: moniker range=">=vs-2019"
-Per .NET, [MSTest, NUnit e xUnit](getting-started-with-unit-testing.md) sono i Framework di test forniti da Visual Studio installati per impostazione predefinita. Per C++, viene fornito un set di Framework di test diverso, ad esempio CTest.
+Per .NET, [MSTest, NUnit](getting-started-with-unit-testing.md) e xUnit sono i framework di test forniti da Visual Studio installati per impostazione predefinita. Per C++, viene fornito un set diverso di framework di test, ad esempio CTest.
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) è il framework di test offerto da Visual Studio che viene installato per impostazione predefinita.
@@ -45,7 +46,7 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Per eseguire l'aggiornamento alla versione dell'adattatore di test stabile più recente
 
-1. Aprire Gestione pacchetti NuGet per la soluzione passando a **strumenti** gestione  >  **pacchetti NuGet**  >  **Gestisci pacchetti NuGet per la soluzione**.
+1. Aprire il NuGet Gestione pacchetti per la soluzione passando a Strumenti  >  **NuGet Gestione pacchetti**  >  **Gestione NuGet pacchetti per la soluzione**.
 
 2. Fare clic sulla scheda **Aggiornamenti** e cercare gli adattatori di test MSTest, NUnit o xUnit installati.
 

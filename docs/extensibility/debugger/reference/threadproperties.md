@@ -11,17 +11,18 @@ ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0707cb5da4c63ffd686f22fa691c103c954478c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 18da5073284255da66afcc8ae0ebe65eec9f52892bab726585d8c993f58a1bac
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070856"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414994"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Descrive le proprietà di un thread.
@@ -54,33 +55,33 @@ public struct THREADPROPERTIES {
 
 ## <a name="members"></a>Members
  `dwFields`\
- Combinazione di flag dell'enumerazione [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) , che descrive i campi di questa struttura validi.
+ Combinazione di flag [dell'enumerazione THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) che descrive i campi di questa struttura validi.
 
  `dwThreadId`\
- ID del thread.
+ ID thread.
 
  `dwSuspendCount`\
  Conteggio di sospensione del thread.
 
  `dwThreadState`\
- Valore dell'enumerazione [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) che indica lo stato del thread operativo.
+ Valore [dell'enumerazione THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) che indica lo stato del thread operativo.
 
  `bstrPriority`\
- Stringa che specifica la priorità del thread. ad esempio, "sopra la normalità", "normale" o "tempo critico".
+ Stringa che specifica la priorità del thread. ad esempio "Above Normal", "Normal" o "Time Critical".
 
  `bstName`\
  Nome del thread.
 
  `bstrLocation`\
- Il percorso del thread, in genere il stack frame superiore, espresso in genere come nome del metodo in cui l'esecuzione è attualmente interrotta.
+ Posizione del thread (in genere la posizione stack frame), in genere espressa come nome del metodo in cui l'esecuzione è attualmente interrotta.
 
 ## <a name="remarks"></a>Commenti
- Questa struttura viene compilata tramite una chiamata al metodo [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) . Le informazioni restituite vengono in genere utilizzate per popolare la finestra **thread** .
+ Questa struttura viene compilata da una chiamata al [metodo GetThreadProperties.](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) Le informazioni restituite vengono in genere usate per popolare la **finestra** Thread.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

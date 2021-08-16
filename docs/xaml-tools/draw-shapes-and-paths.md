@@ -1,6 +1,6 @@
 ---
 title: Disegnare forme e tracciati
-description: Usare le funzionalità del finestra di progettazione XAML in Blend per Visual Studio per tracciare percorsi e forme, modificarli e combinarli.
+description: Usare le funzionalità del finestra di progettazione XAML in Blend per Visual Studio tracciati e forme, modificarli e combinarli.
 ms.custom: SEO-VS-2020
 titleSuffix: Blend for Visual Studio
 ms.date: 09/22/2020
@@ -9,14 +9,15 @@ ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e815b3e4959727dab282fcbe0fcd1f82890bf8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5557413cfed7512d6a429d65beae3771a0f0667c4f9c7b85af05795f1d87fe47
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847349"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365510"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
 
@@ -28,7 +29,7 @@ Le forme e i tracciati usano la grafica vettoriale per una scalabilità ottimale
 
 Trovare le forme nella finestra **Asset**.
 
-:::image type="content" source="media/blend-shapes.png" alt-text="Screenshot della categoria forme della finestra asset in Blend per Visual Studio":::
+:::image type="content" source="media/blend-shapes.png" alt-text="Screenshot della categoria Forme della finestra Asset in Blend per Visual Studio":::
 
 Trascinare la forma da usare nella tavola da disegno. Usare quindi i quadratini sulla forma per ridimensionarla, ruotarla, spostarla o inclinarla.
 
@@ -88,9 +89,9 @@ Usare lo strumento **Selezione** per selezionare il tracciato. Usare lo strument
 
 ## <a name="convert-a-shape-to-a-path"></a>Convertire una forma in un tracciato
 
-Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato. Selezionare la forma, quindi selezionare **formato**  >  **percorso**  >  **Converti in tracciato**.
+Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato. Selezionare la forma e quindi selezionare  >  **Formatta**  >  **percorso Converti in tracciato**.
 
-**Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (Uso di tracciati: convertire una forma in un tracciato).
+**Guardare un breve video:** ![ Configurare le funzionalità installate ](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei tracciati: convertire una forma in un tracciato](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 > [!NOTE]
 > **Converti in tracciato** non è attualmente disponibile per le app UWP con `TargetPlatformVersion` minima 10.0.16299.0 o successiva.
@@ -101,7 +102,7 @@ Per modificare una forma in modo analogo alla modifica di un tracciato, converti
 
 ![Combinare tracciati](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|Azione|
+|Numero|Azione|
 |-|-|
 |![Due forme prima della combinazione](../designers/media/b1_1.png)|Due forme prima della combinazione|
 |![Unisci](../designers/media/b1_2.png)|Unisci|
@@ -110,7 +111,7 @@ Per modificare una forma in modo analogo alla modifica di un tracciato, converti
 |![Escludi sovrapposizione](../designers/media/b1_5.png)|Escludi sovrapposizione|
 |![Sottrazione](../designers/media/b1_6.png)|Sottrazione|
 
-**Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (Uso di tracciati: combinare tracciati).
+**Guardare un breve video:** ![ Configurare le funzionalità installate ](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei percorsi: Combina percorsi](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ## <a name="create-a-compound-path"></a>Creare un tracciato composto
 
@@ -120,7 +121,7 @@ Quando si crea un tracciato composto, eventuali parti del tracciato che si inter
 
 ![Interrompere un tracciato composto](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (Uso di tracciati: creare un tracciato composto).
+**Guardare un breve video:** ![ Configurare le funzionalità installate ](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei percorsi: Creare un percorso composto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ## <a name="create-a-clipping-path"></a>Creare un tracciato di ritaglio
 
@@ -128,4 +129,4 @@ Un tracciato di ritaglio è un tracciato o una forma applicato a un altro oggett
 
 ![Tracciato di ritaglio](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a clipping path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) (Uso di tracciati: creare un tracciato di ritaglio).
+**Guardare un breve video:** ![ Configurare le funzionalità installate ](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei tracciati: creare un tracciato di ritaglio.](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)

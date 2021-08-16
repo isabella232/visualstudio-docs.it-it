@@ -3,22 +3,23 @@ title: Configurare un progetto di servizio cloud di Azure
 description: Informazioni su come configurare un progetto di servizio cloud di Azure in Visuali Studio, in base ai requisiti specifici per il progetto.
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: ad011e740d7bffeddf7f92bd3735fbeedc1f4020
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72a4f1db0fcd3564dda3b90fe957675e9ed60e099c7ecd56b06b6c07d928e6c9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844255"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121363954"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Configurare un progetto di servizio cloud di Azure con Visual Studio
 È possibile configurare un progetto di servizio cloud di Azure, in base ai requisiti specifici per il progetto. È possibile impostare proprietà per il progetto per le categorie seguenti:
 
 - **Pubblicare un servizio cloud in Azure** - È possibile impostare una proprietà per verificare che un servizio cloud esistente distribuito in Azure non venga eliminato inavvertitamente.
-- **Eseguire o eseguire il debug di un servizio cloud nel computer locale** : è possibile selezionare una configurazione del servizio da usare e indicare se si vuole avviare l'emulatore di archiviazione di Azure.
+- **Eseguire o eseguire il debug di** un servizio cloud nel computer locale: è possibile selezionare una configurazione del servizio da usare e indicare se si vuole avviare il Archiviazione di Azure Emulator.
 - **Convalidare un pacchetto del servizio cloud quando viene creato** - È possibile decidere di trattare tutti gli avvisi come errori in modo da assicurarsi che il pacchetto del servizio cloud venga distribuito senza problemi.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Procedura per configurare un progetto di servizio cloud di Azure
@@ -34,7 +35,7 @@ ms.locfileid: "99844255"
 
 1. Per indicare la **Configurazione del servizio** da usare durante l'esecuzione o il debug del servizio cloud in locale, nell'elenco Configurazione servizio scegliere la configurazione del servizio. Per altre informazioni su come modificare una configurazione del servizio per un ruolo, vedere [Procedura: Configurare i ruoli di un servizio cloud di Azure con Visual Studio](./vs-azure-tools-configure-roles-for-cloud-service.md).
 
-1. Impostare **Avvia emulatore di archiviazione di Azure** su **true** per avviare l'emulatore di archiviazione di Azure quando si esegue o si effettua il debug del servizio cloud in locale.
+1. Impostare **Avvia Archiviazione di Azure Emulator** su True **per** avviare il Archiviazione di Azure Emulator quando si esegue o si esegue il debug del servizio cloud in locale.
 
 1. Per assicurarsi che non sia possibile pubblicare se sono presenti errori di convalida del pacchetto, in **Considera gli avvisi come errori** scegliere **True**.
 

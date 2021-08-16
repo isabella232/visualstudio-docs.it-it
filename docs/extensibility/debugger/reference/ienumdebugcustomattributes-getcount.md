@@ -1,6 +1,6 @@
 ---
 description: Ottiene il numero di attributi personalizzati in un enumeratore.
-title: 'IEnumDebugCustomAttributes:: GetCount | Microsoft Docs'
+title: IEnumDebugCustomAttributes::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d0d61565d57b7e025d67689420dcbf82c93707a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e2db37f558aaa39444deef994a885fc424cede528588e376d1382231a7d3a13f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083115"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415442"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 Ottiene il numero di attributi personalizzati in un enumeratore.
@@ -42,13 +43,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametri
 `pcelt`\
-out Restituisce il numero di elementi nell'enumerazione.
+[out] Restituisce il numero di elementi nell'enumerazione .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo non fa parte dell'interfaccia di enumerazione com personalizzata che specifica che solo `Next` ,, `Clone` `Skip` e `Reset` devono essere implementati.
+ Questo metodo non fa parte dell'interfaccia di enumerazione COM personalizzata che specifica che devono essere implementati solo `Next` `Clone` , , e `Skip` `Reset` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

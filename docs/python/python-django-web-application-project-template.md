@@ -6,23 +6,24 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 462c66229b6f28d281bf03650e4d22d0d1dab64f
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: d9525cbf383c684326cda142c2117889ee9d911a63007308c635980110c31b45
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806043"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368086"
 ---
 # <a name="django-web-project-template"></a>Modello di progetto Web Django
 ::: moniker range="vs-2017"
-[Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Il supporto di Python in Visual Studio include vari modelli di progetto per configurare la struttura di un'applicazione Web basata su Django. Per usare un modello in Visual Studio, selezionare **file**  >  **nuovo**  >  **progetto**, cercare "Django" e selezionare il progetto Web **Django vuoto**, il **progetto Web Django** e i modelli di **progetto Web Django di polling** . Vedere l'[Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md) per una guida su tutti i modelli.
+[Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Il supporto di Python in Visual Studio include vari modelli di progetto per configurare la struttura di un'applicazione Web basata su Django. Per usare un modello in Visual Studio, selezionare **File** New Project (Nuovo file Project), cercare "Django" e selezionare uno dei modelli Blank  >    >   **Django Web Project**(Web django vuoto), **Django Web Project (Web Project Django)** e **Polls Django Web Project** templates (Modelli di Project Web Django di sondaggi). Vedere l'[Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md) per una guida su tutti i modelli.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-[Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Il supporto di Python in Visual Studio include vari modelli di progetto per configurare la struttura di un'applicazione Web basata su Django. Per usare un modello in Visual Studio, selezionare **file**  >  **nuovo**  >  **progetto**, cercare "Django" e selezionare il **progetto Web Django vuoto** e i modelli di **progetto Web Django** . Vedere l'[Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md) per una guida su tutti i modelli.
+[Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Il supporto di Python in Visual Studio include vari modelli di progetto per configurare la struttura di un'applicazione Web basata su Django. Per usare un modello in Visual Studio, selezionare **File** New Project (Nuovo file Project), cercare "Django" e selezionare uno dei modelli Blank  >    >  Django Web Project and Django Web Project (Modello web Django vuoto e **Project Web Django).**  Vedere l'[Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md) per una guida su tutti i modelli.
 ::: moniker-end
 Visual Studio offre il supporto IntelliSense completo per i progetti Django:
 

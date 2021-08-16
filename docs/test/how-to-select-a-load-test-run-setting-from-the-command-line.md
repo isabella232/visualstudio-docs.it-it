@@ -1,6 +1,6 @@
 ---
 title: Selezionare le impostazioni di esecuzione test di carico dalla riga di comando
-description: Un test di carico può includere impostazioni di esecuzione ovvero proprietà che determinano la modalità di esecuzione del test di carico. Informazioni su come caricare le impostazioni esecuzione test dalla riga di comando.
+description: Un test di carico può includere impostazioni di esecuzione ovvero proprietà che determinano la modalità di esecuzione del test di carico. Informazioni su come caricare le impostazioni di esecuzione dalla riga di comando.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,18 +11,19 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 872799a01e13ca94108f9acac655ee6541779c44
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 9cb3cb2fce990eabfd68bd3683418241be3020107de98c6aa55eca8e61011047
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971843"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366602"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Procedura: Selezionare un'impostazione di esecuzione test di carico dalla riga di comando
 
 Un test di carico può includere *impostazioni di esecuzione* ovvero proprietà che determinano la modalità di esecuzione del test di carico. Sono organizzate in categorie nella finestra **Proprietà**. Quando si esegue un test di carico, viene utilizzata l'impostazione esecuzione test impostata correntemente come attiva.
 
-Se nel test di carico è contenuta un'unica impostazione esecuzione test, si tratta sempre del nodo attivo. Se nel test di carico sono contenuti più nodi di impostazioni esecuzione test, è possibile selezionare quello da usare quando si esegue un test di carico dalla riga di comando. Vedere [procedura: aggiungere altre impostazioni esecuzione test a un test di carico](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Se nel test di carico è contenuta un'unica impostazione esecuzione test, si tratta sempre del nodo attivo. Se nel test di carico sono contenuti più nodi di impostazioni esecuzione test, è possibile selezionare quello da usare quando si esegue un test di carico dalla riga di comando. Vedere [Procedura: Aggiungere altre impostazioni esecuzione test a un test di carico.](../test/how-to-add-additional-run-settings-to-a-load-test.md)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

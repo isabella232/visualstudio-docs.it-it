@@ -1,6 +1,6 @@
 ---
 title: "Procedura: Visualizzare documenti nell'anteprima di stampa a livello di codice"
-description: Informazioni su come visualizzare documenti in Anteprima di stampa in un documento di Microsoft Word a livello di codice.
+description: Informazioni su come visualizzare documenti in Anteprima di stampa a livello di codice in Microsoft Word documento.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 90979fbc7cd0b46329b8d9e9bc142e8cf0066db0
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 855aea5fefede1e454a8f273ad1cdf402cae4b9aea6159f0ac6f86fb93d64818
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825888"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366238"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Procedura: Visualizzare documenti nell'anteprima di stampa a livello di codice
   Se la soluzione genera un report, è possibile che si voglia far visualizzare il report all'utente in modalità Anteprima di stampa.

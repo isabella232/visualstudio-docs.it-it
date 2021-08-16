@@ -1,6 +1,6 @@
 ---
 title: Escludere o includere funzioni brevi nella strumentazione
-description: Per impostazione predefinita, le funzioni brevi che non chiamano altre funzioni sono escluse dalla strumentazione per ridurre l'overhead. Informazioni su come includerle o escluderle.
+description: Per impostazione predefinita, le funzioni brevi che non chiamano altre funzioni vengono escluse dalla strumentazione per ridurre il sovraccarico. Informazioni su come includerli o escluderli.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,15 +12,16 @@ ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e4cdaf4262f136eb52b9eda7aef5aac831162c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fda0e493b35eb04c616a72b1035b742f851edc5c5c82bfea0ccb2daf02db271c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873645"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368279"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procedura: Escludere o includere funzioni brevi nella strumentazione
 Per impostazione predefinita, gli strumenti di profilatura escludono le *funzioni piccole* dalla strumentazione. Le funzioni piccole sono funzioni brevi che non effettuano alcuna chiamata di funzione. L'esclusione di queste funzioni piccole fornisce un minore sovraccarico di strumentazione e di conseguenza assicura una migliore velocità di strumentazione. L'esclusione delle funzioni piccole riduce anche la dimensione del file di dati di profilatura delle prestazioni, con estensione *vsp*, e il tempo necessario per l'analisi. Se le funzioni piccole vengono escluse, il tempo in esse impiegato viene considerato nel tempo esclusivo e inclusivo delle relative funzioni padre. Le funzioni piccole possono essere escluse o incluse nella strumentazione, come descritto nella procedura seguente.

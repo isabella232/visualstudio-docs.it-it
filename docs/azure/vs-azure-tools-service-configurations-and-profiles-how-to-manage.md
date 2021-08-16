@@ -3,16 +3,17 @@ title: Come gestire le configurazioni e i profili dei servizi |Documentazione Mi
 description: Informazioni su come usare i file di configurazione del servizio e di configurazione dei profili che archiviano le impostazioni per gli ambienti di distribuzione e le impostazioni di pubblicazione per i servizi cloud.
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: e1c97670a91f2d90a01fef24f592e6ce2d5b05fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d26d94a94316a22612002e1b98dd78313577fa46b4c0c5272adaf1242846740
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843813"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121363259"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Come gestire le configurazioni e i profili dei servizi
 ## <a name="overview"></a>Panoramica
@@ -49,7 +50,7 @@ Quando si pubblica un servizio cloud, Visual Studio archivia le informazioni di 
 1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Gestisci configurazioni**.
 
     Verrà visualizzata la finestra di dialogo **Gestisci configurazioni di servizio**.
-2. Per rinominare una configurazione del servizio, selezionarla dall'elenco **Nome**, quindi scegliere **Rinomina**. Nella casella di testo **nome** Digitare il nome che si desidera utilizzare per la configurazione del servizio, quindi selezionare **OK**.
+2. Per rinominare una configurazione del servizio, selezionarla dall'elenco **Nome**, quindi scegliere **Rinomina**. Nella casella **di** testo Nome digitare il nome da usare per la configurazione del servizio e quindi selezionare **OK.**
 
     Il nome del file di configurazione del servizio viene modificato nel progetto Azure in Esplora soluzioni.
 
@@ -94,4 +95,4 @@ Quando si esegue la procedura guidata per la prima volta, viene creato un profil
 5. (Facoltativo) Selezionare **Pubblica** per pubblicare il servizio cloud usando le nuove impostazioni. Se per il momento non si vuole pubblicare il servizio cloud e si chiude la pubblicazione guidata, Visual Studio richiede se si vogliono salvare le modifiche apportate al profilo.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per informazioni sulla configurazione di altre parti del progetto Azure da Visual Studio, vedere [configurazione di un progetto Azure](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md).
+Per altre informazioni sulla configurazione di altre parti del progetto di Azure da Visual Studio, vedere Configurazione di un'istanza di [Azure Project](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md).

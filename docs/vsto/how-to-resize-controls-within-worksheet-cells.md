@@ -1,6 +1,6 @@
 ---
 title: "Procedura: Ridimensionare i controlli all'interno delle celle del foglio di lavoro"
-description: Informazioni su come usare le Visual Studio per ridimensionare i controlli all'interno delle celle del foglio di lavoro di Microsoft Excel sia in fase di progettazione che in fase di esecuzione.
+description: Informazioni su come usare le Visual Studio per ridimensionare i controlli all'interno Microsoft Excel celle del foglio di lavoro sia in fase di progettazione che in fase di esecuzione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,29 +15,30 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7b42c10fd82ec077b295a8bc683fa138c2eb095b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 4df6ea34f13e26ef24b32169a8f3db30298895bf05fc00ef8f4e88438910c817
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825745"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366121"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Procedura: Ridimensionare i controlli all'interno delle celle del foglio di lavoro
-  Quando si ridimensionano colonne o righe in un foglio di lavoro, tutti i controlli host all'interno delle celle vengono automaticamente ridimensionati in base all'altezza o alla larghezza della cella ridimensionata. Windows Forms non vengono ridimensionati automaticamente per impostazione predefinita.
+  Quando si ridimensionano colonne o righe in un foglio di lavoro, tutti i controlli host all'interno delle celle vengono automaticamente ridimensionati in base all'altezza o alla larghezza della cella ridimensionata. Windows I controlli form non vengono ridimensionati automaticamente per impostazione predefinita.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  Se si aggiungono i controlli in fase di progettazione, è necessario impostare le opzioni di posizionamento per ogni controllo.
 
- Se si aggiunge un controllo Windows Forms a livello di codice e si specifica un argomento di intervallo, il controllo viene ridimensionato automaticamente quando viene ridimensionata una cella all'interno dell'intervallo. Per altre informazioni, vedere [Aggiungere controlli ai documenti di Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
+ Se si aggiunge un controllo Windows Form a livello di codice e si specifica un argomento di intervallo, il controllo viene ridimensionato automaticamente quando viene ridimensionata una cella all'interno dell'intervallo. Per altre informazioni, vedere [Aggiungere controlli ai documenti Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
 ## <a name="resize-controls-at-design-time"></a>Ridimensionare i controlli in fase di progettazione
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Per ridimensionare i controlli con le celle in fase di progettazione
 
-1. Dalla Casella **degli strumenti** trascinare un controllo Windows Forms in un foglio di lavoro.
+1. Dalla Casella **degli strumenti** trascinare un controllo Windows Form in un foglio di lavoro.
 
 2. Fare clic con il pulsante destro del mouse sul controllo e **quindi scegliere Formatta controllo**.
 
@@ -59,7 +60,7 @@ ms.locfileid: "107825745"
 
      Quando si ridimensiona la cella che contiene il controllo , il controllo viene ridimensionato in base alla cella.
 
-## <a name="reset-control-placement"></a>Reimpostare il posizionamento del controllo
+## <a name="reset-control-placement"></a>Reimpostare il posizionamento dei controlli
  È possibile reimpostare la posizione e il ridimensionamento del controllo impostando la `Placement` proprietà su uno dei valori <xref:Microsoft.Office.Interop.Excel.XlPlacement> seguenti:
 
 - <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
@@ -76,8 +77,8 @@ ms.locfileid: "107825745"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet6":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
-- [Procedura: Aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Controlli su Office documenti](../vsto/controls-on-office-documents.md)
+- [Procedura: Aggiungere controlli form Windows a Office documenti](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Procedura: Nascondere i controlli nei fogli di lavoro durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Aggiungere controlli ai Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Limitazioni dei controlli Windows Form nei Office documenti](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
