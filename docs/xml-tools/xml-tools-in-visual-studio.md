@@ -1,6 +1,6 @@
 ---
-title: Editor XML e progettazione schema
-description: Informazioni sugli strumenti disponibili in Visual Studio per l'utilizzo di XML, XSLT e XML Schema, tra cui l'editor XML, progettazione XML Schema e il debugger XSLT.
+title: Editor XML e Progettazione schemi
+description: Informazioni sugli strumenti in Visual Studio per l'uso di XML, XSLT e XML Schema, tra cui l'editor XML, Progettazione XML Schema e il debugger XSLT.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
@@ -32,52 +32,53 @@ ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e376980fb7c1e7f2378f23ae8230e6e45264ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed82ee7f73f9d5dd871e333275c8564d849db5b737e795faa431eece12388e54
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874769"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121350979"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Panoramica degli strumenti XML in Visual Studio
 
-*Extensible Markup Language (XML)* è un linguaggio di markup che fornisce un formato per la descrizione dei dati. XML separa i dati e la relativa presentazione usando i fogli di stile associati, ad esempio Extensible Stylesheet Language (XSL) e fogli di stile CSS. Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.
+*Extensible Markup Language (XML)* è un linguaggio di markup che fornisce un formato per la descrizione dei dati. XML separa i dati e la relativa presentazione usando fogli di stile associati, ad esempio Extensible Stylesheet Language (XSL) e CSS (Cascading Style Sheets). Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.
 
 ## <a name="xml-editor"></a>Editor XML
 
-L' [editor XML](xml-editor.md) viene utilizzato per modificare i documenti XML. Fornisce il controllo completo della sintassi XML, la convalida dello schema durante la digitazione, la codifica a colori e IntelliSense. Se viene fornita una definizione dello schema o del tipo di documento, essa verrà usata da IntelliSense per elencare gli elementi e gli attributi disponibili.
+[L'editor XML](xml-editor.md) viene usato per modificare i documenti XML. Fornisce il controllo completo della sintassi XML, la convalida dello schema durante la digitazione, la codifica a colori e IntelliSense. Se viene fornita una definizione dello schema o del tipo di documento, essa verrà usata da IntelliSense per elencare gli elementi e gli attributi disponibili.
 
 Le altre funzionalità includono:
 
-- Supporto per i frammenti di codice XML, inclusi i frammenti generati dallo schema
+- Supporto di frammenti XML, inclusi frammenti generati da schema
 
-- Struttura del documento in modo che sia possibile espandere e comprimere gli elementi
+- Struttura del documento in modo che gli elementi possano essere espansi e compressi
 
-- Possibilità di eseguire trasformazioni XSLT e visualizzare i risultati come testo, XML o HTML
+- Possibilità di eseguire trasformazioni XSLT e di visualizzare i risultati come testo, XML o HTML
 
-- Possibilità di generare schemi XSD (XML Schema Definition Language) dal documento di istanza XML
+- Possibilità di generare schemi XSD (XML Schema Definition Language) dal documento dell'istanza XML
 
-- Supporto per la modifica dei fogli di stile XSLT, incluso il supporto IntelliSense
+- Supporto per la modifica di fogli di stile XSLT, incluso il supporto intelliSense
 
 - XML Schema Explorer
 
 ## <a name="xml-schema-designer"></a>Progettazione XML Schema
 
-[Progettazione XML Schema](xml-schema-designer.md) è integrato con Visual Studio e l'editor XML per consentire l'utilizzo di schemi di XML Schema Definition Language (XSD).
+Progettazione [XML Schema è](xml-schema-designer.md) integrato con Visual Studio e l'editor XML per consentire l'utilizzo di schemi XSD (XML Schema Definition Language).
 
 ## <a name="xslt-debugging"></a>Debug XSLT
 
-Visual Studio supporta il [debug di fogli di stile XSLT](../xml-tools/debugging-xslt.md). Usando il debugger, è possibile impostare i punti di interruzione in un foglio di stile XSLT, eseguire l'istruzione del codice di un foglio di stile XSLT e così via.
+Visual Studio supporta il [debug di fogli di stile XSLT.](../xml-tools/debugging-xslt.md) Usando il debugger, è possibile impostare i punti di interruzione in un foglio di stile XSLT, eseguire l'istruzione del codice di un foglio di stile XSLT e così via.
 
 > [!NOTE]
-> Il debugger XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
+> Il debugger XSLT è disponibile solo nell'Enterprise di Visual Studio.
 
 ## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Xml?displayProperty=fullName>
 - [Trasformazioni XSLT](/dotnet/standard/data/xml/xslt-transformations)
-- [Elaborare dati XML utilizzando il modello di dati XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
+- [Elaborare dati XML usando il modello di dati XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
 - [XML DOM (Document Object Model)](/dotnet/standard/data/xml/xml-document-object-model-dom)
 - [SOM (Schema Object Model) XML](/dotnet/standard/data/xml/xml-schema-object-model-som)

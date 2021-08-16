@@ -1,6 +1,6 @@
 ---
-description: Ignora il numero specificato di elementi nell'enumerazione modules.
-title: 'IEnumDebugModules2:: Skip | Microsoft Docs'
+description: Ignora il numero specificato di elementi nell'enumerazione dei moduli.
+title: IEnumDebugModules2::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 61dc42f4-8544-45bb-8da0-fb22cccec7da
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ee6094852dc9a58d7f976d9fd58de62e9b89cea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8dcadcc4e6cc833f809254985ddb8a55815daade028a27221ded1618c9aa105d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086508"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360183"
 ---
 # <a name="ienumdebugmodules2skip"></a>IEnumDebugModules2::Skip
 Ignora il numero di elementi specificato.
@@ -45,10 +46,10 @@ int Skip(
 [in]Numero di elementi da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è maggiore del numero di elementi `celt` rimanenti; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione viene impostata sulla fine e `S_FALSE` viene restituito.
+ Se specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione `celt` viene impostata sulla fine e viene `S_FALSE` restituito .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

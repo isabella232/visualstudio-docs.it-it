@@ -1,6 +1,6 @@
 ---
-title: Tornare alla funzione che ha chiamato MFC se arrestata | Microsoft Docs
-description: Informazioni su come tornare alla funzione che ha chiamato MFC se l'esecuzione viene interrotta Visual Studio debugger.
+title: Tornare alla funzione che ha chiamato MFC se interrotta | Microsoft Docs
+description: Informazioni su come tornare alla funzione che ha chiamato MFC se l'esecuzione viene interrotta nel debugger Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -23,14 +23,15 @@ ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 31bbb064aad5a43738b2f345cf31a20767c55e69
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 14637de3d4ce7e09515310744933b74779d383288e7b5dc1e1cc396bb6c7c925
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384681"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453590"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Procedura: tornare alla funzione che ha chiamato MFC se interrotta
 
@@ -43,7 +44,7 @@ Talvolta è possibile che il codice si interrompa nel message pump. In questo ca
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Passare alla funzione da cui è stato chiamato MFC
 
-- Usare la **finestra Stack di** chiamate .
+- Usare la **finestra Stack di** chiamate.
 
 ## <a name="see-also"></a>Vedi anche
 

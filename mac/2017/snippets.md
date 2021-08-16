@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 96344b72dd27095f8b9060078112fb767b1338fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef00295663efb60c5e6ad7855a49a5c36d171e814327c72b4775c68e0c10553a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984813"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121350361"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -46,19 +46,19 @@ Premere i pulsanti **Aggiungi** o **Modifica** per creare o modificare frammenti
 
 Dopo aver inserito un frammento di codice nell'editor, tutte le parole chiave definite vengono evidenziate e possono essere modificate spostandosi tra di esse con TAB. Le parole chiave si comportano come una "variabile" nel frammento di codice e vengono definite aggiungendo un segno di dollaro `$` prima e dopo il nome della parola chiave. 
 
-La finestra **Modifica modello** è illustrata di seguito e rappresenta la modifica del frammento predefinito `prop`. Il frammento contiene due parole chiave &ndash; `$type$` e `$name$` &ndash; per le quali è possibile impostare altre proprietà, ad esempio un valore predefinito e una descrizione comando, sul lato destro della finestra:
+La finestra **Modifica modello** è illustrata di seguito e rappresenta la modifica del frammento predefinito `prop`. Il frammento contiene due parole chiave e che possono avere altre proprietà impostate (ad esempio un valore predefinito e una descrizione comando) sul &ndash; `$type$` lato destro della `$name$` &ndash; finestra:
 
 ![Finestra Modifica modello](media/source-editor-image12z.png)
 
 Per definire un frammento di codice vengono usati i campi seguenti:
 
-- **Shortcut (Scelta rapida) ** &ndash; Il testo digitato dall'utente per inserire il frammento di codice.
-- **Group (Gruppo) ** &ndash; Usando questo valore i frammenti di codice vengono raggruppati nel menu del contenuto del frammento di codice.
-- **Description (Descrizione) ** &ndash; Spiegazione dello scopo del frammento di codice.
+- **Shortcut (Scelta rapida)** &ndash; Il testo digitato dall'utente per inserire il frammento di codice.
+- **Group (Gruppo)** &ndash; Usando questo valore i frammenti di codice vengono raggruppati nel menu del contenuto del frammento di codice.
+- **Description (Descrizione)** &ndash; Spiegazione dello scopo del frammento di codice.
 - **Mime** &ndash; Controlla i tipi di file in cui è disponibile il frammento di codice.
-- **Is expandable template (Modello espandibile) ** &ndash; Assicurarsi che questa casella di controllo sia selezionata in modo che il frammento di codice possa essere inserito in corrispondenza del cursore digitando la scelta rapida.
-- **Is surround with template (Racchiudi tra con modello) ** &ndash; Selezionare questa opzione per visualizzare la scelta rapida nel menu di scelta rapida **Racchiudi tra** nell'editor.
-- **Template text (Testo del modello) ** &ndash; Il frammento di codice effettivo che verrà inserito nell'editor. I segnaposto per le parole chiave possono essere definiti racchiudendo un token tra segni di dollaro, ad esempio `$type$`.
+- **Is expandable template (Modello espandibile)** &ndash; Assicurarsi che questa casella di controllo sia selezionata in modo che il frammento di codice possa essere inserito in corrispondenza del cursore digitando la scelta rapida.
+- **Is surround with template (Racchiudi tra con modello)** &ndash; Selezionare questa opzione per visualizzare la scelta rapida nel menu di scelta rapida **Racchiudi tra** nell'editor.
+- **Template text (Testo del modello)** &ndash; Il frammento di codice effettivo che verrà inserito nell'editor. I segnaposto per le parole chiave possono essere definiti racchiudendo un token tra segni di dollaro, ad esempio `$type$`.
 - **Pannello delle proprietà delle parole chiave** &ndash; Sul lato destro della finestra, usare l'elenco a discesa in alto per scegliere una parola chiave (ad esempio `type`) e modificare proprietà come il valore predefinito e la descrizione comando.
 
 ## <a name="using-keywords-in-the-editor"></a>Uso delle parole chiave nell'editor
@@ -82,12 +82,12 @@ Quando viene usato nell'editor, il tasto **TAB** consentirà di spostarsi tra il
 Sono disponibili due parole chiave riservate che è possibile usare in un frammento di codice:
 
 - `$selected$` &ndash; Se per il frammento di codice è selezionata l'opzione **Is surround with template** (Racchiudi tra con modello), questa parola chiave verrà sostituita dal testo che era evidenziato nell'editor quando è stato scelto il frammento di codice.
-- `$end$`&ndash;Quando l'utente ha terminato di modificare le parole chiave in un frammento, il cursore verrà posizionato nella posizione della `$end$` parola chiave.
+- `$end$`Quando l'utente ha terminato di modificare le parole chiave in un frammento di codice, il cursore verrà posizionato &ndash; in corrispondenza della posizione della parola chiave `$end$` .
 
 Il frammento di codice `for` nella sezione precedente è un esempio di entrambe queste parole chiave riservate.
 
 Per altri dettagli, vedere le [informazioni di riferimento sui frammenti di codice di Visual Studio](/visualstudio/ide/code-snippets-schema-reference#keywords).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice (Visual Studio in Windows)](/visualstudio/ide/code-snippets)

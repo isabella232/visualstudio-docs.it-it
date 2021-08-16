@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e473746ce129352950a0e36ae25e44065facf5b780f45598c1366fdab9b39e9b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729379"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121350555"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
 
@@ -21,7 +21,7 @@ ms.locfileid: "97729379"
 >
 > Se è stata usata in precedenza la versione di anteprima dell'estensione TFVC per Visual Studio per Mac, non è più supportata in caso di aggiornamento a Visual Studio 2019 per Mac.
 
-Azure Repos fornisce due modelli di controllo della versione: [git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), un sistema di controllo della versione distribuito e [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), un sistema di controllo della versione centralizzato.
+Azure Repos fornisce due modelli di controllo della versione: [Git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), un sistema di controllo della versione distribuito [e controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), un sistema di controllo della versione centralizzato.
 
 Visual Studio per Mac offre il supporto completo per i repository Git, ma richiede alcune soluzioni alternative per usare il controllo della versione di Team Foundation. Se attualmente si usa il controllo della versione di Team Foundation, ecco alcune soluzioni che è possibile adottare per accedere al codice sorgente ospitato nel controllo della versione di Team Foundation:
 
@@ -125,7 +125,7 @@ Seguire i prompt per installare l'estensione. Al termine dell'installazione, ria
 
 ### <a name="updating-the-extension"></a>Aggiornamento dell'estensione
 
-Periodicamente vengono rilasciati aggiornamenti per l'estensione TFVC. Per accedere agli aggiornamenti, scegliere **Visual Studio > Extensions** dal menu e selezionare la scheda **aggiornamenti** . Selezionare l'estensione nell'elenco e premere il pulsante **Aggiorna** :
+Periodicamente vengono rilasciati aggiornamenti per l'estensione TFVC. Per accedere agli aggiornamenti, **scegliere Visual Studio > dal** menu e selezionare la **scheda** Aggiornamenti. Selezionare l'estensione nell'elenco e fare clic **sul pulsante** Aggiorna:
 
 Scegliere **Installa** nella finestra di dialogo successiva per disinstallare il pacchetto precedente e installare quello nuovo.
 
@@ -247,11 +247,11 @@ Per usare l'autenticazione di base è necessario abilitare le **credenziali di a
 
 2. Dalla barra degli strumenti dell'organizzazione selezionare l'icona a forma di ingranaggio, quindi **Policy** (Criteri):
 
-    ![Screenshot della barra degli strumenti dell'organizzazione DevOps di Azure con l'icona a forma di ingranaggio selezionata e criteri selezionati nel menu a discesa.](media/tfvc-auth2.png)
+    ![Screenshot della barra Azure DevOps dell'organizzazione con l'icona a forma di ingranaggio selezionata e criteri selezionati nel menu a discesa.](media/tfvc-auth2.png)
 
 3. Verificare le impostazioni di connessione dell'applicazione. Modificare queste impostazioni in base ai propri criteri di sicurezza:
 
-    ![Screenshot della schermata dei criteri in Azure DevOps Services, che mostra le impostazioni per i criteri di connessione dell'applicazione.](media/tfvc-auth.png)
+    ![Screenshot della schermata Criteri in Azure DevOps Services, che mostra le impostazioni per i criteri di connessione dell'applicazione.](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>Nel controllo della versione di Team Foundation non viene visualizzato nulla
 

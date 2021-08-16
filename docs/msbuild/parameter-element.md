@@ -1,6 +1,6 @@
 ---
 title: Elemento Parameter | Microsoft Docs
-description: Informazioni sull'elemento del parametro MSBuild, che contiene informazioni su un parametro specifico per un'attività generata da un oggetto UsingTask TaskFactory.
+description: Informazioni sull'MSBuild parameter, che contiene informazioni su un parametro specifico per un'attività generata da un oggetto UsingTask TaskFactory.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -17,14 +17,15 @@ ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 728618a6d9ff174d4d4bf7cdc20516433d06036b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b5e6d8a022b30b848807f1ab16a15061b83300166f34a753c903fdcef5d75e0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918859"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121288126"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
 
@@ -56,7 +57,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 
 ### <a name="child-elements"></a>Elementi figlio
 
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -85,4 +86,4 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)

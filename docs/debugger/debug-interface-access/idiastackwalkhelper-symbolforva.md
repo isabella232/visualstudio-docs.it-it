@@ -11,14 +11,15 @@ ms.assetid: 8dd9455d-d44c-4dd6-a0aa-31131cbea2aa
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f75ba05573c5c41baea3ab24ec5b7d06c916c0e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8f607d33fa516f3c1f61b4fb4c3b472c1e485321208faac70b95aeb9ea26af7b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156748"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121454831"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 Recupera il simbolo che contiene l'indirizzo virtuale specificato.
@@ -35,11 +36,11 @@ HRESULT symbolForVA(
 #### <a name="parameters"></a>Parametri
  `va`
 
-in Indirizzo virtuale contenuto nel simbolo richiesto. Il simbolo deve essere un oggetto, `SymTagFunctionType` ovvero un valore dell'enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .
+[in] Indirizzo virtuale contenuto nel simbolo richiesto. Il simbolo deve essere un `SymTagFunctionType` (valore [dell'enumerazione SymTagEnum).](../../debugger/debug-interface-access/symtagenum.md)
 
  `ppSymbol`
 
-out Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo in corrispondenza dell'indirizzo specificato.
+[out] Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo in corrispondenza dell'indirizzo specificato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

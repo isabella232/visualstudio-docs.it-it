@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Rimuovere la protezione dai fogli di lavoro a livello di codice'
-description: Informazioni su come usare Visual Studio rimuovere la protezione a livello di codice da un foglio di lavoro di Microsoft Excel.
+description: Informazioni su come usare Visual Studio per rimuovere la protezione a livello di codice da un Microsoft Excel foglio di lavoro.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c392ee3434edf9211a4a3061e7a83a8621960430
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: cf895950914226837dac853ab0841f3af8fe61859f4807b168fa33a467e34771
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824159"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351824"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Procedura: Rimuovere la protezione dai fogli di lavoro a livello di codice
   È possibile rimuovere la protezione a livello di codice da un foglio di lavoro di Microsoft Office Excel.
@@ -39,7 +40,7 @@ ms.locfileid: "107824159"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet28":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet28":::
 
-## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>Per rimuovere la protezione di un foglio di lavoro in un componente aggiuntivo VSTO
+## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>Per rimuovere la protezione di un foglio di lavoro in VSTO componente aggiuntivo
 
 1. Chiamare il <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> metodo del foglio di lavoro attivo e passare la password, se necessario.
 
@@ -51,4 +52,4 @@ ms.locfileid: "107824159"
 - [Procedura: Proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Procedura: Proteggere le cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-protect-workbooks.md)
 - [Procedura: Nascondere fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Accesso globale agli oggetti nei progetti Office globali](../vsto/global-access-to-objects-in-office-projects.md)

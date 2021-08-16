@@ -5,13 +5,13 @@ author: ghogen
 ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
-ms.technology: vs-azure
-ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.technology: vs-container-tools
+ms.openlocfilehash: 1e957efcc3a9663d01c7bc0ffde14fb44c23bc6db1a9db45d9b8968dc2753b9f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975147"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121294573"
 ---
 # <a name="container-tools-in-visual-studio"></a>Strumenti per contenitori in Visual Studio
 
@@ -56,9 +56,9 @@ Il supporto per Docker in Visual Studio è cambiato nel corso di varie versioni 
 Con Visual Studio 2019 è possibile usare Docker Compose, Kubernetes e Service Fabric come servizi di orchestrazione dei contenitori.
 
 > [!NOTE]
-> Se si usa il modello di progetto console completo .NET Framework, l'opzione supportata è **Aggiungi supporto** per l'agente di orchestrazione del contenitore dopo la creazione del progetto, con le opzioni per l'uso di Service Fabric o Docker compose. L'aggiunta del supporto alla creazione del progetto e l'aggiunta del **supporto Docker** per un singolo progetto senza orchestrazione non sono opzioni disponibili.
+> Se si usa il modello di progetto console .NET Framework completo, l'opzione supportata è Aggiungi supporto di **Container Orchestrator** dopo la creazione del progetto, con opzioni per usare Service Fabric o Docker Compose. L'aggiunta del supporto per la creazione del progetto e l'aggiunta del supporto **Docker** per un singolo progetto senza orchestrazione non sono opzioni disponibili.
 
-In Visual Studio 2019 versione 16,4 e successive la finestra **contenitori** è disponibile, che consente di visualizzare i contenitori in esecuzione, esplorare le immagini disponibili, visualizzare le variabili di ambiente, i log e i mapping delle porte, ispezionare il file System, alleghiare un debugger o aprire una finestra del terminale all'interno dell'ambiente del contenitore. Vedere [visualizzare e diagnosticare contenitori e immagini in Visual Studio](view-and-diagnose-containers.md).
+In Visual Studio 2019 versione 16.4 e  successive è disponibile la finestra Contenitori, che consente di visualizzare i contenitori in esecuzione, esplorare le immagini disponibili, visualizzare variabili di ambiente, log e mapping delle porte, esaminare il file system, collegare un debugger o aprire una finestra del terminale all'interno dell'ambiente contenitore. Vedere [Visualizzare e diagnosticare contenitori e immagini in Visual Studio](view-and-diagnose-containers.md).
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ In Visual Studio 2019 versione 16,4 e successive la finestra **contenitori** è 
 > [!NOTE]
 > Per i progetti .NET Framework (non .NET Core) sono disponibili solo i contenitori di Windows.
 
-È possibile aggiungere il supporto di Docker a un progetto esistente selezionando **Aggiungi**  >  **supporto Docker** in **Esplora soluzioni**. I comandi **Aggiungi > Supporto Docker** e **Aggiungi > Supporto per l'agente di orchestrazione del contenitore** sono disponibili nel menu di scelta rapida del nodo di progetto per un progetto ASP.NET Core in **Esplora soluzioni**, come illustrato nello screenshot seguente:
+È possibile aggiungere il supporto Docker a un progetto esistente selezionando **Aggiungi**  >  **supporto Docker** in **Esplora soluzioni**. I comandi **Aggiungi > Supporto Docker** e **Aggiungi > Supporto per l'agente di orchestrazione del contenitore** sono disponibili nel menu di scelta rapida del nodo di progetto per un progetto ASP.NET Core in **Esplora soluzioni**, come illustrato nello screenshot seguente:
 
 ![Opzione di menu Aggiungi Supporto Docker in Visual Studio](./media/overview/add-docker-support-menu.png)
 
@@ -119,9 +119,7 @@ Ripetere il processo con gli altri progetti che si vuole controllare tramite Doc
 Per aggiungere il supporto di Kubernetes, installare [Visual Studio Tools per Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Con il supporto di Kubernetes, è possibile abilitare una connessione tra il progetto locale e un cluster Kubernetes in esecuzione in [Azure Kubernetes Service (AKS)](/azure/aks), quindi modificare ed eseguire il debug dei servizi in esecuzione con Visual Studio.  Questo servizio viene fornito da [Bridge a Kubernetes](overview-bridge-to-kubernetes.md). Bridge to Kubernetes consente inoltre di configurare rami distinti dei servizi Kubernetes a scopo di sviluppo, in modo da poter isolare in modo efficiente i servizi di produzione dalle versioni di lavoro in fase di sviluppo e di rendere separate le modifiche distinte.
-
-Per aggiungere il supporto di Kubernetes ai progetti, scegliere **Kubernetes/Helm** quando si aggiunge il supporto dell'orchestrazione dei contenitori. Al progetto vengono aggiunti diversi file, inclusi i grafici Helm che descrivono la struttura dei servizi Kubernetes. Per iniziare a usare Bridge per Kubernetes, vedere [usare Bridge per Kubernetes](bridge-to-kubernetes.md).
+Con il supporto di Kubernetes, è possibile abilitare una connessione tra il progetto locale e un cluster Kubernetes in esecuzione in [servizio Azure Kubernetes (AKS)](/azure/aks)e quindi modificare ed eseguire il debug dei servizi in esecuzione usando Visual Studio.  Questo servizio viene fornito da [Bridge to Kubernetes](/visualstudio/bridge/overview-bridge-to-kubernetes).
 
 ## <a name="service-fabric-support"></a>Supporto di Service Fabric
 
@@ -134,7 +132,7 @@ Visual Studio 2017 versione 15.9 e versioni successive con il carico di lavoro S
 Visual Studio 2019 supporta lo sviluppo di microservizi in contenitori usando i contenitori Windows e l'orchestrazione di Service Fabric.
 ::: moniker-end
 
-Per un'esercitazione dettagliata, vedere [esercitazione: distribuire un'applicazione .NET in un contenitore Windows in Azure Service Fabric](/azure/service-fabric/service-fabric-host-app-in-a-container).
+Per un'esercitazione dettagliata, vedere Esercitazione: Distribuire un'applicazione [.NET in](/azure/service-fabric/service-fabric-host-app-in-a-container)un contenitore Windows in Azure Service Fabric .
 
 Per altre informazioni su Azure Service Fabric, vedere [Service Fabric](/azure/service-fabric).
 
@@ -142,7 +140,7 @@ Per altre informazioni su Azure Service Fabric, vedere [Service Fabric](/azure/s
 
 Visual Studio si integra facilmente con Azure Pipelines per l'integrazione e il recapito continui e automatizzati delle modifiche al codice e alla configurazione del servizio. Per iniziare, vedere [Creare la prima pipeline](/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2&preserve-view=true).
 
-Per Service Fabric, vedere [esercitazione: distribuire l'app ASP.NET Core in Azure Service Fabric usando Azure DevOps Projects](/azure/devops-project/azure-devops-project-service-fabric).
+Per Service Fabric, vedere [Esercitazione: Distribuire l'app ASP.NET Core in Azure Service Fabric usando Azure DevOps Projects.](/azure/devops-project/azure-devops-project-service-fabric)
 
 Per Kubernetes, vedere [Deploy a Docker container app to Azure Kubernetes Service](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&preserve-view=true) (Distribuire un'app contenitore Docker nel servizio Azure Kubernetes).
 

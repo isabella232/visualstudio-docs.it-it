@@ -1,6 +1,6 @@
 ---
-title: Esaminare l'app con il debug cronologico | Microsoft Docs
-description: Seguire un'indagine che usa il debug cronologico di IntelliTrace per tenere traccia di un bug in un'applicazione console C#.
+title: Esaminare l'app con funzionalità di debug cronologico | Microsoft Docs
+description: Seguire un'analisi che usa il debug cronologico di IntelliTrace per tenere traccia di un bug in un'applicazione console C#.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +8,19 @@ ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 87987beed3750d8eda5d680b561a46b0866473b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f11fbc23244e70c5332ddef41804ff65a6c219636a09f556a0cfa7fb759edc26
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908414"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121454011"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Esaminare l'app con il debug cronologico di IntelliTrace in Visual Studio (C#, Visual Basic, C++)
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Esaminare l'app con il debug cronologico intelliTrace in Visual Studio (C#, Visual Basic, C++)
 
-È possibile utilizzare il [debug cronologico](../debugger/historical-debugging.md) per spostarsi avanti e indietro durante l'esecuzione dell'applicazione ed esaminarne lo stato.
+È possibile usare il [debug cronologico](../debugger/historical-debugging.md) per spostarsi avanti e indietro durante l'esecuzione dell'applicazione e controllarne lo stato.
 
 È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition (ma non le edizioni Professional o Community).
 
@@ -53,9 +54,9 @@ private static int AddInt(int add)
 }
 ```
 
-Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` è pari a 20 (il risultato di incremento `testInt` 20 volte). Si presuppone anche che il bug non sia visibile in `AddInt()` . Ma il risultato è effettivamente 44. Come è possibile individuare i bug senza scorrere `AddAll()` 10 volte? È possibile utilizzare il debug cronologico per individuare l'errore in modo più semplice e rapido. Ecco come:
+Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` è pari a 20 (il risultato di incremento `testInt` 20 volte). Si presuppone anche che non sia possibile visualizzare il bug in `AddInt()` . Ma il risultato è effettivamente 44. Come è possibile individuare i bug senza scorrere `AddAll()` 10 volte? È possibile utilizzare il debug cronologico per individuare l'errore in modo più semplice e rapido. Ecco come:
 
-1. In **strumenti > opzioni > intellitrace > generale**, verificare che IntelliTrace sia abilitato e selezionare **eventi IntelliTrace e informazioni sulle chiamate**. Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).
+1. In **Strumenti > opzioni > IntelliTrace > Generale**, verificare che IntelliTrace sia abilitato e selezionare Eventi **IntelliTrace** e chiamare le informazioni . Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).
 
 2. Impostare un punto di interruzione nella riga `Console.WriteLine(resultInt);` .
 
@@ -81,5 +82,5 @@ Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` 
 
 Questa procedura è solo un breve accenno delle operazioni che si possono eseguire con il debug cronologico.
 
-- Per visualizzare gli snapshot durante il debug, vedere [esaminare gli Stati delle app precedenti con IntelliTrace](../debugger/view-historical-application-state.md).
+- Per visualizzare gli snapshot durante il debug, vedere [Esaminare gli stati delle app precedenti usando IntelliTrace.](../debugger/view-historical-application-state.md)
 - Per altre informazioni sulle diverse impostazioni e gli effetti dei diversi pulsanti nella barra di navigazione, vedere [Funzionalità IntelliTrace](../debugger/intellitrace-features.md).

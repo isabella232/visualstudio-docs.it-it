@@ -4,23 +4,24 @@ ms.custom: SEO-VS-2020
 description: Informazioni su come eseguire il debug di un servizio cloud con Visual Studio e IntelliTrace
 author: mikejo5000
 manager: jmartens
+ms.technology: vs-azure
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: d419f80dc0319fbcebe053cd063cf668fc278a38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f70fd9f67c0ac13d8754266573f05856edf04fc2e2aa2c8d05e2cfaebef7a45d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844203"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121456318"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debug di un servizio cloud di Azure pubblicato con Visual Studio e IntelliTrace
 Con IntelliTrace è possibile registrare informazioni di debug approfondite per un'istanza del ruolo quando è in esecuzione in Azure. Se è necessario individuare la causa di un problema, è possibile usare i log di IntelliTrace per esaminare il codice da Visual Studio come se fosse in esecuzione in Azure. In effetti, IntelliTrace registra i dati fondamentali dell’esecuzione del codice e dell’ambiente quando l'applicazione Azure è in esecuzione come servizio cloud in Azure e consente di riprodurre i dati registrati da Visual Studio.
 
 È possibile usare IntelliTrace se Visual Studio Enterprise è installato e l'applicazione Azure è destinata a .NET Framework 4 o versione successiva. IntelliTrace raccoglie informazioni per i ruoli Azure. Le macchine virtuali per questi ruoli eseguono sempre sistemi operativi a 64 bit.
 
-In alternativa, è possibile usare il [debug remoto](vs-azure-tools-debugging-cloud-services-overview.md) per connettersi direttamente a un servizio cloud in esecuzione in Azure.
+In alternativa, è possibile usare [il debug](vs-azure-tools-debugging-cloud-services-overview.md) remoto per connettersi direttamente a un servizio cloud in esecuzione in Azure.
 
 > [!IMPORTANT]
 > IntelliTrace è destinato esclusivamente a scenari di debug e non deve essere usato per una distribuzione di produzione.

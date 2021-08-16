@@ -11,14 +11,15 @@ ms.assetid: 8c29c91a-062d-4566-a9b7-49251036a15a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 353344b93806bdf4cb000ed5b2307969f7e74bb6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 85c392576f8b0283817bb437d9f9f1cfee1d7cadfb40cfc7261b71ab4e5a2f39
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148003"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121281117"
 ---
 # <a name="idiasectioncontribget_relocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 Recupera il controllo di ridondanza ciclico (CRC) delle informazioni di rilocazione per la sezione.
@@ -34,7 +35,7 @@ HRESULT get_relocationsCrc (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il CRC delle informazioni di rilocazione per la sezione.
+[out] Restituisce il CRC delle informazioni di rilocazione per la sezione.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

@@ -10,15 +10,16 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1405169ae7f4734463428405cf90cce631fba3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac6bb36fd6b29ce94c79e9e173c00257473c6ab2449592ae658eda47153d256c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915954"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121354040"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 
@@ -36,14 +37,14 @@ Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso 
  Per il codice nativo, le API del profiler di Visual Studio si trovano in *VSPerf.dll*. Il file di intestazione *VSPerf.h* e la libreria di importazione *VSPerf.lib* si trovano nella directory *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Per le app a 64 bit, la cartella è *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
- Per il codice gestito, le API del profiler si trovano nel *Microsoft.VisualStudio.Profiler.dll*. Questa DLL è disponibile nella directory *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Per le app a 64 bit, la cartella è *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Per altre informazioni, vedere [Profiler](/previous-versions/ms242704(v=vs.140)).
+ Per il codice gestito, le API del profiler siMicrosoft.VisualStudio.Profiler.dll *.* Questa DLL è disponibile nella directory *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Per le app a 64 bit, la cartella è *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Per altre informazioni, vedere [Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Questa procedura dettagliata presuppone che l'ambiente di sviluppo scelto sia configurato per supportare il debug e il campionamento. Gli argomenti seguenti offrono una panoramica di questi prerequisiti:
 
-- [Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
+- [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
 
-- [Procedura: fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)
+- [Procedura: Fare riferimento alle Windows simboli](../profiling/how-to-reference-windows-symbol-information.md)
 
  Per impostazione predefinita, quando viene avviato, il profiler raccoglie i dati a livello globale. Il codice seguente all'inizio del programma disabilita la profilatura globale.
 
@@ -53,7 +54,7 @@ ProfileLevel.Global,
 DataCollection.CurrentId);
 ```
 
- È possibile disabilitare la raccolta dei dati nella riga di comando senza usare una chiamata API. Questa procedura presuppone che l'ambiente di compilazione avviata tramite riga di comando sia configurato per eseguire gli strumenti di profilatura e come strumenti di sviluppo. Include le impostazioni necessarie per VSInstr e VSPerfCmd. Vedere [strumenti di profilatura da riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md).
+ È possibile disabilitare la raccolta dei dati nella riga di comando senza usare una chiamata API. Questa procedura presuppone che l'ambiente di compilazione avviata tramite riga di comando sia configurato per eseguire gli strumenti di profilatura e come strumenti di sviluppo. Include le impostazioni necessarie per VSInstr e VSPerfCmd. Vedere [Strumenti di profilatura della riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md).
 
 ## <a name="limit-data-collection-using-profiler-apis"></a>Limitare la raccolta dei dati usando le API del profiler
 
@@ -125,7 +126,7 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Per raccogliere e visualizzare i dati nell'IDE di Visual Studio
 
-1. Aprire l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Profiler** dal menu **analizza** , quindi selezionare **nuova sessione di prestazioni**.
+1. Aprire l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Profiler** dal menu **Analizza** e quindi **selezionare Nuova sessione di prestazioni.**
 
 2. Aggiungere il file binario compilato per l'elenco **Destinazioni** nella finestra **Esplora prestazioni**. Fare clic con il pulsante destro del mouse su **Destinazioni** e selezionare **Aggiungi binario di destinazione**. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il file binario e fare clic su **Apri**.
 
@@ -151,11 +152,11 @@ DataCollection.CurrentId);
 
 2. Per profilare un'applicazione gestita, digitare il comando seguente e impostare le variabili di ambiente appropriate:
 
-     **/TRACEON VsPerfCLREnv**
+     **VsPerfCLREnv /traceon**
 
-3. Digitare il comando seguente: **VSInstr \<filename> . exe**
+3. Digitare il comando seguente: **VSInstr \<filename>.exe**
 
-4. Digitare il comando seguente: **VSPerfCmd/start: trace/output: \<filename> . vsp**
+4. Digitare il comando seguente: **VSPerfCmd /start:trace /output: \<filename> .vsp**
 
 5. Digitare il comando seguente: **VSPerfCmd /globaloff**
 
@@ -163,13 +164,13 @@ DataCollection.CurrentId);
 
 7. Digitare il comando seguente: **VSPerfCmd /shutdown**
 
-8. Digitare il comando seguente: **VSPerfReport/calltrace: \<filename> . vsp**
+8. Digitare il comando seguente: **VSPerfReport /calltrace: \<filename> .vsp**
 
      Viene creato un file con estensione *csv* nella directory corrente con i dati sulle prestazioni risultanti.
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
-- [Attività iniziali](../profiling/getting-started-with-performance-tools.md)
+- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Introduzione](../profiling/getting-started-with-performance-tools.md)
 - [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

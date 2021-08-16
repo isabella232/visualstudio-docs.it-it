@@ -1,6 +1,6 @@
 ---
-description: Recupera il percorso nella memoria virtuale dell'immagine.
-title: 'IDiaImageData:: get_virtualAddress | Microsoft Docs'
+description: Recupera la posizione nella memoria virtuale dell'immagine.
+title: IDiaImageData::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: 67ecdc8c-d342-4d0b-b02a-c6b88e22fd02
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d958b8de0e7d200b4da7475cb37eb1dfa15fcf97
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5b12d7bde054096b590bbfbff851967dfc46abb512a38416dca3735ecc21b4da
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157637"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121455023"
 ---
 # <a name="idiaimagedataget_virtualaddress"></a>IDiaImageData::get_virtualAddress
-Recupera il percorso nella memoria virtuale dell'immagine.
+Recupera la posizione nella memoria virtuale dell'immagine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT get_virtualAddress (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'indirizzo virtuale dell'immagine.
+[out] Restituisce l'indirizzo virtuale dell'immagine.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,6 +1,6 @@
 ---
-title: Verificare le impostazioni delle proprietà di IIS | Microsoft Docs
-description: Informazioni su come verificare le impostazioni delle proprietà IIS impostate per un'applicazione Web utilizzando lo strumento di amministrazione di IIS.
+title: Verificare i valori delle proprietà IIS Impostazioni | Microsoft Docs
+description: Informazioni su come verificare le impostazioni delle proprietà IIS impostate per un'applicazione Web usando lo strumento di amministrazione di IIS.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,14 +19,15 @@ ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ed11efb0d493844456d2493153a41df140095cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad9b7d95e6700e7950d92282e86ca86d12d824a18f288acd10a3939b945bfb45
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853118"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453253"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procedura: verificare le impostazioni delle proprietà di IIS
 
@@ -61,7 +62,7 @@ ms.locfileid: "99853118"
 
    3. Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.
 
-5. Per un'applicazione ATL Server verificare che il verbo DEBUG sia associato all'estensione ISAPI. Per altre informazioni, vedere [procedura: associare un verbo di debug con estensione](/previous-versions/ms165022(v=vs.100)).
+5. Per un'applicazione ATL Server verificare che il verbo DEBUG sia associato all'estensione ISAPI. Per altre informazioni, vedere [Procedura: Associare il verbo DEBUG all'estensione](/previous-versions/ms165022(v=vs.100)).
 
 6. Per un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], accertarsi che per la cartella virtuale dell'applicazione sia impostato un Nome applicazione in **Gestione Internet Information Services (IIS)**, **Gestione servizi Internet** o **Internet Information Services**.
 

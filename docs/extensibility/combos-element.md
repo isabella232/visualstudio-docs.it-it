@@ -11,14 +11,15 @@ ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77c293fa827187461c5a6b84333c503a2f5cc231
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 3396a7c8587ea9a4d8a6da660df467c2d9baeaf686c42c68efbdcce754650195
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903918"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121278916"
 ---
 # <a name="combos-element"></a>Elemento Combos
 Raggruppa [gli elementi dell'elemento Combo.](../extensibility/combo-element.md)
@@ -39,7 +40,7 @@ Raggruppa [gli elementi dell'elemento Combo.](../extensibility/combo-element.md)
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

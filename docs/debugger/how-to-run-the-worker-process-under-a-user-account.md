@@ -1,6 +1,6 @@
 ---
 title: Eseguire un processo di lavoro con un account utente | Microsoft Docs
-description: Configurare il computer in modo da poter eseguire il processo di lavoro ASP.NET (aspnet_wp.exe o w3wp.exe) con un account utente in Visual Studio.
+description: Configurare il computer in modo che sia possibile eseguire il processo di lavoro di ASP.NET (aspnet_wp.exe o w3wp.exe) con un account utente in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,20 +19,21 @@ ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 752d09a0d0c6fe49e49e1298d475c90c86991836
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f3fb8c2294a15aa50900e8f22b3891aef76ed6848dffae607df72f4d23a19161
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384642"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453571"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.
 
  > [!IMPORTANT]
- > A partire da Windows Server 2008 R2, è consigliabile usare [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
+ > A partire Windows Server 2008 R2, è consigliabile usare [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
 
 ## <a name="procedure"></a>Procedura
 
@@ -89,4 +90,4 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 ## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug ASP.NET applicazioni](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [ASP.NET debug: requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)
+- [ASP.NET Debug: requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)

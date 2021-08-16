@@ -1,22 +1,23 @@
 ---
-title: Usare i dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
+title: Usare dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
 description: Informazioni su come usare i dati di esempio in fase di progettazione in XAML.
 ms.date: 06/01/2021
 ms.topic: conceptual
 author: alihamie
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 66418d351280a0c067327716766725d22488131b
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: e129875a4ac4c5d66e72e7180c58131c48cd486ddc24e24923556d2261dc094e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111760913"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121296307"
 ---
-# <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
+# <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>Usare dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
 
-Alcuni controlli che si sulla base dei dati, ad esempio ListView, ListBox o DataGrid, sono difficili da visualizzare senza dati. In questo documento verrà esaminato un nuovo approccio che consente agli sviluppatori che lavorano su progetti **WPF .NET Core** o **progetti wpf .NET Framework** con la nuova finestra di progettazione di abilitare i dati di esempio in questi controlli. 
+Alcuni controlli che si distoglieno i dati, ad esempio ListView, ListBox o DataGrid, sono difficili da visualizzare senza dati. In questo documento verrà esaminato un nuovo approccio che consente agli sviluppatori che lavorano su progetti **WPF .NET Core** o **progetti wpf .NET Framework** con la nuova finestra di progettazione di abilitare i dati di esempio in questi controlli. 
 
 ## <a name="sample-data-feature-basics"></a>Nozioni di base sulla funzionalità dei dati di esempio
 
@@ -31,7 +32,7 @@ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
 ```
 
-Dopo aver aggiunto gli spazi dei nomi, puoi usare per abilitare i dati `d:ItemsSource="{d:SampleData}"` di esempio in ListView, Listbox o DataGrid. Ad esempio:
+Dopo aver aggiunto gli spazi dei nomi, puoi usare per abilitare i dati `d:ItemsSource="{d:SampleData}"` di esempio in ListView, Listbox o DataGrid. Esempio:
 
 ```xml
 <DataGrid d:ItemsSource="{d:SampleData}"/>
@@ -46,7 +47,7 @@ Per impostazione predefinita, vengono visualizzati 5 elementi. È tuttavia possi
 ## <a name="sample-data-works-with-datatemplates"></a>I dati di esempio funzionano con i modelli di dati
 
 Dati di esempio funziona per i controlli ListBox, ListView o DataGrid quando si usano modelli di dati. La funzionalità Dati di esempio analerà il DataTemplate e tenterà di generare i dati appropriati. I dati di esempio verranno generati solo per gli elementi in DataTemplate che usano associazioni. I dati di esempio verranno generati anche se le associazioni non hanno ancora un'origine.
-Ad esempio:
+Esempio:
 
 ```xml
 <ListView d:ItemsSource="{d:SampleData ItemCount=3}">
@@ -68,7 +69,7 @@ Ad esempio:
 
 ## <a name="enable-sample-data-with-suggested-actions"></a>Abilitare i dati di esempio con le azioni suggerite
 
-Per abilitare o disabilitare facilmente i dati di esempio per un controllo dalla finestra di progettazione, è possibile usare la funzionalità Azioni suggerite. Suggested Actions (Azioni suggerite) è una lampadina nella finestra di progettazione visualizzata in alto a destra quando si seleziona un controllo. È possibile abilitare Dati di esempio selezionando il controllo, facendo clic sulla lampadina e quindi su `Show Sample Data` . Ad esempio:
+Per abilitare o disabilitare facilmente i dati di esempio per un controllo dalla finestra di progettazione, è possibile usare la funzionalità Azioni suggerite. Suggested Actions (Azioni suggerite) è una lampadina nella finestra di progettazione visualizzata in alto a destra quando si seleziona un controllo. È possibile abilitare Dati di esempio selezionando il controllo, facendo clic sulla lampadina e quindi su `Show Sample Data` . Esempio:
 
 [![Azioni suggerite per i dati di esempio](media\xaml-sample-data-suggested-actions.png "Abilitare i dati di esempio con le azioni suggerite")](media\xaml-sample-data-suggested-actions.png#lightbox)
 
@@ -89,7 +90,7 @@ Se si verifica un problema che non è elencato in questa sezione o non può esse
 
 - Dati di esempio richiede Visual Studio 2019 [versione 16.10](/visualstudio/releases/2019/release-notes-v16.10) o successiva.
 
-- Supporta i progetti desktop di Windows Windows Presentation Foundation (WPF) per .NET Core o .NET Framework quando si usa la nuova finestra di progettazione. Per abilitare la nuova finestra di progettazione per .NET Framework passare a Strumenti > Opzioni > Environment > Preview Features (Funzionalità di anteprima dell'ambiente >), selezionare New WPF finestra di progettazione XAML for .NET Framework (Nuovo finestra di progettazione XAML WPF per .NET Framework) e quindi riavviare Visual Studio.
+- Supporta Windows desktop che hanno come destinazione Windows Presentation Foundation (WPF) per .NET Core o .NET Framework quando si usa la nuova finestra di progettazione. Per abilitare la nuova finestra di progettazione per .NET Framework passare a Strumenti > Opzioni > Environment > Preview Features (Funzionalità di anteprima dell'ambiente >), selezionare New WPF finestra di progettazione XAML for .NET Framework (Nuovo finestra di progettazione XAML WPF per .NET Framework) e quindi riavviare Visual Studio.
 
 ## <a name="see-also"></a>Vedi anche
 

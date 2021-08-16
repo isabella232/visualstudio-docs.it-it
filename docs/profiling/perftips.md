@@ -1,26 +1,27 @@
 ---
 title: PerfTips | Microsoft Docs
-description: Informazioni su come usare il debugger di Visual Studio PerfTips e Strumenti di diagnostica integrato per monitorare e analizzare le prestazioni dell'app durante il debug.
+description: Informazioni su come usare il debugger Visual Studio PerfTips e le funzionalità Strumenti di diagnostica monitorare e analizzare le prestazioni dell'app durante il debug.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d6558264bb51f011d8f04b5a3096e95702c49b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 020f7fee2fca88fe8139fb9ef727f0ab9ad5b17d8e80e58e5d6c100003bf626c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892346"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121354555"
 ---
 # <a name="perftips"></a>PerfTips
 
 Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di diagnostica** consentono di monitorare e analizzare le prestazioni dell'app durante il debug.
 
-Anche se gli strumenti di diagnostica integrati debugger sono un ottimo modo per acquisire consapevolezza dei problemi di prestazioni durante lo sviluppo, il debugger può avere un impatto significativo sulle prestazioni dell'applicazione. Per raccogliere dati più accurati sulle prestazioni, è consigliabile usare gli strumenti nel profiler delle prestazioni come parte aggiuntiva delle analisi delle prestazioni. Vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Anche se gli strumenti di diagnostica integrati debugger sono un ottimo modo per acquisire consapevolezza dei problemi di prestazioni durante lo sviluppo, il debugger può avere un impatto significativo sulle prestazioni dell'applicazione. Per raccogliere dati sulle prestazioni più accurati, è consigliabile usare gli strumenti Profiler prestazioni come parte aggiuntiva delle indagini sulle prestazioni. Vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 ## <a name="perftips"></a>PerfTips
 
@@ -30,11 +31,11 @@ Quando il debugger interrompe l'esecuzione in un punto di interruzione o un'oper
 
 ## <a name="diagnostics-tools-window"></a>Finestra Strumenti di diagnostica
 
-I punti di interruzione e i dati di intervallo associati vengono registrati nella finestra **strumenti di diagnostica** .
+I punti di interruzione e i dati di intervallo associati vengono registrati nella **finestra Strumenti di diagnostica** dati.
 
-Nella figura seguente viene illustrata la finestra di **strumenti di diagnostica** .
+Nella figura seguente viene illustrata la **Strumenti di diagnostica** finestra.
 
-![Screenshot della finestra di Strumenti di diagnostica nel debugger di Visual Studio, che mostra la sequenza temporale degli eventi e i grafici per l'utilizzo della memoria e della CPU.](../profiling/media/diagnostictools-update1.png)
+![Screenshot della finestra Strumenti di diagnostica nel debugger Visual Studio, che mostra la sequenza temporale eventi e i grafici per l'utilizzo della memoria e della CPU.](../profiling/media/diagnostictools-update1.png)
 
 - La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .
 

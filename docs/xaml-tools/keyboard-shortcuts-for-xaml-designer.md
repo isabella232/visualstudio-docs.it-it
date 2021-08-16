@@ -1,6 +1,6 @@
 ---
 title: Tasti di scelta rapida per la finestra di progettazione XAML
-description: Informazioni sui tasti di scelta rapida nella finestra di progettazione XAML di accesso ai comandi per l'utilizzo degli elementi sulla tavola da disegno e nella finestra Struttura documento.
+description: Informazioni sui tasti di scelta rapida nel finestra di progettazione XAML che accedono ai comandi per l'uso di elementi nella tavola da disegno e nella finestra Struttura documento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,12 +8,13 @@ ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 0e0bdc7b10eb20b149493c8d9e05a6711eb71bb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 7aa7895288273d43c72eaabd8304a8b35b9d0b8777c0e5ab7c58e8707d491d7b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881334"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351499"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
 
@@ -36,7 +37,7 @@ Questa tabella elenca i tasti di scelta rapida disponibili per lavorare con gli 
 |Selezionare tutti gli elementi|Premere **CTRL** + **A**|
 |Annullare la selezione di tutti gli elementi|Premere **CTRL** + **MAIUSC** + **A**|
 |Mostrare o nascondere i punti di controllo degli elementi|Premere **F9**|
-|Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo sulla Finestra Proprietà, premere **Tab**. (Usare **CTRL** + **Per impostare** lo stato attivo sulla finestra Proprietà.) È possibile utilizzare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
+|Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo sul Finestra Proprietà, premere **TAB.** (Usare **CTRL** + **Premere TAB** per passare lo stato attivo Finestra Proprietà. È possibile usare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
 
 ## <a name="document-outline-window-shortcuts"></a>Tasti di scelta rapida della finestra Struttura documento
 
@@ -45,9 +46,9 @@ La tabella seguente elenca i tasti di scelta rapida disponibili quando si lavora
 |**Per eseguire questa azione**|**Procedere nel modo seguente**|
 | - |-----------------|
 |Nascondere gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL** + **H**|
-|Mostrare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**Sposta** + **CTRL** + **H**|
+|Mostrare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**MAIUSC** + **CTRL** + **H**|
 |Bloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL** + **L**|
-|Sbloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**Sposta** + **CTRL** + **L**|
+|Sbloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**MAIUSC** + **CTRL** + **L**|
 
 ## <a name="see-also"></a>Vedi anche
 

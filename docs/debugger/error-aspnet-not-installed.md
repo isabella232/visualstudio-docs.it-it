@@ -1,5 +1,5 @@
 ---
-description: Questo errore si verifica quando ASP.NET non è installato correttamente nel computer che si sta tentando di eseguire il debug.
+description: Questo errore si verifica quando ASP.NET non è installato correttamente nel computer di cui si sta tentando di eseguire il debug.
 title: ASP.NET non è installato
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 205f0fb3948414ec87b735af9b1b97917872a950
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dc6575622ac03f8404b838959428ce30190cd5091b50450645f03cac38c61aaa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147055"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121362878"
 ---
 # <a name="error-aspnet-not-installed"></a>Errore: ASP.NET non è installato
 Questo errore si verifica quando [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non è installato correttamente nel computer di cui si sta tentando di eseguire il debug. Questo errore potrebbe essere dovuto al fatto che [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non è mai stato installato o che [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] è stato installato prima di IIS.
@@ -38,7 +39,7 @@ Questo errore si verifica quando [!INCLUDE[vstecasp](../code-quality/includes/vs
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    dove *Version* rappresenta il numero di versione del .NET Framework installato nel computer, ad esempio v 1.0.370. È possibile determinare la versione del Framework eseguendo una ricerca nella `\WINDOWS\Microsoft.NET\Framework` Directory.
+    dove *version* rappresenta il numero di versione del .NET Framework installato nel computer, ad esempio v1.0.370. È possibile determinare la versione del framework cercando nella `\WINDOWS\Microsoft.NET\Framework` directory .
 
    > [!NOTE]
    > Con Windows Server 2003 è possibile installare [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dall'applicazione **Installazione applicazioni** del Pannello di controllo.

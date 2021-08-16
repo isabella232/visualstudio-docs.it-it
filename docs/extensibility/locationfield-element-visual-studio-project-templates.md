@@ -1,7 +1,7 @@
 ---
 title: Elemento LocationField (modelli di progetto Visual Studio)
 titleSuffix: ''
-description: Informazioni sull'elemento LocationField e su come specifica se la casella di testo percorso della finestra di dialogo nuovo progetto è abilitata, disabilitata o nascosta per il modello di progetto.
+description: Informazioni sull'elemento LocationField e su come specifica se la casella di testo Percorso della finestra di dialogo Nuovo Project è abilitata, disabilitata o nascosta per il modello di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1ad5263f11cd7e940b641959de1dea393eb98ab
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b0610ab1e24b4f6de2052b45d52882ff7c9e88c2a402d1b7c96e5e0f4a5e4afe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073235"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121290921"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto di Visual Studio)
-Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo progetto** è abilitata, disabilitata o nascosta per il modello di progetto.
+# <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (Visual Studio di progetto)
+Specifica se la casella **di** testo Percorso nella finestra di dialogo **Project** è abilitata, disabilitata o nascosta per il modello di progetto.
 
  \<VSTemplate> \<TemplateData>
  \<LocationField>
@@ -39,34 +39,34 @@ Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Categorizza il modello e ne definisce la modalità di visualizzazione nel **nuovo progetto**.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e ne definisce la modalità di visualizzazione nella finestra **di dialogo Project**.|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
  I valori di testo validi sono:
 
-- `Enabled`, che specifica che la casella **percorso** della finestra di dialogo **nuovo progetto** è abilitata.
+- `Enabled`, che specifica che la **casella Percorso** della finestra di **dialogo Project** predefinita è abilitata.
 
-- `Disabled`, che indica che la casella **percorso** della finestra di dialogo **nuovo progetto** è disabilitata.
+- `Disabled`, che specifica che la **casella Percorso** della finestra di **dialogo Project** predefinita è disabilitata.
 
-- `Hidden`, che indica che la casella **percorso** della finestra di dialogo **nuovo progetto** è nascosta.
+- `Hidden`, che specifica che la **casella Percorso** della finestra di **dialogo Project** proprietà è nascosta.
 
 ## <a name="remarks"></a>Commenti
  Il valore predefinito è `Enabled`.
 
- La casella di testo **percorso** nella finestra di dialogo **nuovo progetto** consente agli utenti di modificare la directory predefinita in cui vengono salvati i nuovi progetti.
+ La **casella** di testo Percorso nella **finestra di dialogo Project** nuovo progetto consente agli utenti di modificare la directory predefinita in cui vengono salvati i nuovi progetti.
 
- Il valore specificato nell' `Location` elemento viene rispettato solo dalla finestra di dialogo se il sistema del progetto sottostante lo supporta.
+ Il valore specificato nell'elemento viene rispettato dalla finestra di dialogo solo se il `Location` sistema di progetto sottostante lo supporta.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente vengono illustrati i metadati per un modello [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
@@ -97,5 +97,5 @@ Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo 
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

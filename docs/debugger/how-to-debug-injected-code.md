@@ -1,6 +1,6 @@
 ---
-title: Eseguire il debug del codice inserito | Microsoft Docs
-description: 'Informazioni su due modi forniti da Visual Studio per visualizzare il codice inserito: 1) nella finestra Disassembly; 2) in un file di origine che include sia il codice inserito che quello originale.'
+title: Eseguire il debug di codice inserito | Microsoft Docs
+description: 'Informazioni su due modi Visual Studio disponibili per visualizzare il codice inserito: 1) nella finestra Disassembly. 2) in un file di origine con codice sia inserito che originale.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,21 +24,22 @@ ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c776303d22ad7f0b48a5f7c5361750f70c1ce6b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2bbeaaf88c482b89fc9832d5b80a4df2a6425db061159fadda446a83fcd46ba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913239"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121362224"
 ---
 # <a name="how-to-debug-injected-code"></a>Procedura: eseguire il debug di codice inserito
 
 > [!NOTE]
 > È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
-Il ricorso agli attributi può semplificare notevolmente la programmazione in C++. Per ulteriori informazioni, vedere [concetti](/cpp/windows/attributed-programming-concepts). Alcuni attributi sono interpretati direttamente dal compilatore. Con altri attributi è invece possibile inserire codice nell'origine del programma, il quale verrà quindi compilato dal compilatore. Questo codice inserito rende più semplice la programmazione perché riduce la quantità di codice che è necessario scrivere. A volte, tuttavia, può accadere che un bug arresti l'applicazione mentre è in esecuzione il codice inserito. Quando ciò accade, può essere utile esaminare tale codice e Visual Studio prevede due metodi per farlo:
+Il ricorso agli attributi può semplificare notevolmente la programmazione in C++. Per altre informazioni, vedere [Concetti.](/cpp/windows/attributed-programming-concepts) Alcuni attributi sono interpretati direttamente dal compilatore. Con altri attributi è invece possibile inserire codice nell'origine del programma, il quale verrà quindi compilato dal compilatore. Questo codice inserito rende più semplice la programmazione perché riduce la quantità di codice che è necessario scrivere. A volte, tuttavia, può accadere che un bug arresti l'applicazione mentre è in esecuzione il codice inserito. Quando ciò accade, può essere utile esaminare tale codice e Visual Studio prevede due metodi per farlo:
 
 - Visualizzare il codice inserito nella finestra **Disassembly**.
 

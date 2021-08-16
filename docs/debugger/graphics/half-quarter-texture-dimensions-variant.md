@@ -1,6 +1,6 @@
 ---
-title: Half-Quarter variante dimensioni trama | Microsoft Docs
-description: Se trame più piccole mostrano miglioramenti significativi delle prestazioni, suggerisce un utilizzo inefficiente della cache delle trame GPU o una pressione della larghezza di banda della memoria. Prendere in considerazione la possibilità di ridimensionare le dimensioni delle trame.
+title: Half-Quarter delle dimensioni della trama | Microsoft Docs
+description: Se trame più piccole mostrano miglioramenti significativi delle prestazioni, suggerisce una pressione della larghezza di banda della memoria o un uso inefficiente della cache delle trame GPU. Prendere in considerazione la possibilità di ridimensionare le dimensioni delle trame.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,14 +8,15 @@ ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ddd446e588af438e1a4d950e9407392e74881f90
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 926587b5579b3bf466e6cc67f5fd354106c5d2da7af06e6c3d3a42a38ef3fb69
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232401"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121362713"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante delle dimensioni della trama ridotte a metà o un quarto
 Riduce le dimensioni della trama per trame che non sono destinazioni di rendering.

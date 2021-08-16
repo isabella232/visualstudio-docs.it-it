@@ -6,17 +6,18 @@ keywords: ai, visual studio
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f38b73163af6a249ec9b41aac3672a4ebbef0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a67e6098224615f9d6ae61b94670f25c1ad8fb1b6aff493a385b15f23f8b994
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841640"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121348981"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
