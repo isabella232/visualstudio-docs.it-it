@@ -10,14 +10,15 @@ ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fce472faf95aa77f87ab02d78a3da640b6bd3bf
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 6aa20a2329416a16fb33776ad6b20db951b58da9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073409"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Punti di interruzione (Visual Studio SDK)
 Esistono tre tipi di punti di interruzione: in sospeso, associato ed errore.
@@ -46,7 +47,7 @@ Esistono tre tipi di punti di interruzione: in sospeso, associato ed errore.
 
 - È rappresentato da [un'interfaccia IDebugErrorBreakpoint2.](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Programmi](../../extensibility/debugger/programs.md)
 - [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
 - [Contesto del codice](../../extensibility/debugger/code-context.md)

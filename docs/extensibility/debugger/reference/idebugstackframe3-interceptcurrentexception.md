@@ -1,6 +1,6 @@
 ---
-description: Chiamato dal debugger sul stack frame corrente quando vuole intercettare l'eccezione corrente.
-title: 'IDebugStackFrame3:: InterceptCurrentException | Microsoft Docs'
+description: Chiamato dal debugger sul stack frame quando vuole intercettare l'eccezione corrente.
+title: IDebugStackFrame3::InterceptCurrentException | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8aa2815eab2e78b373340ca1d4c60b4ae9929548
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b6eb4692d59d8e4bf089787ec2f8e4f2ec33bcad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053243"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087470"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
-Chiamato dal debugger sul stack frame corrente quando vuole intercettare l'eccezione corrente.
+Chiamato dal debugger sul stack frame quando vuole intercettare l'eccezione corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,15 +45,15 @@ int InterceptCurrentException(
 
 ## <a name="parameters"></a>Parametri
 `dwFlags`\
-in Specifica azioni diverse. Attualmente, è supportato solo il valore [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) `IEA_INTERCEPT` e deve essere specificato.
+[in] Specifica azioni diverse. Attualmente, solo il [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) `IEA_INTERCEPT` è supportato e deve essere specificato.
 
 `pqwCookie`\
-out Valore univoco che identifica una particolare eccezione.
+[out] Valore univoco che identifica una particolare eccezione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
- Di seguito sono riportati i ritorni degli errori più comuni.
+ Di seguito sono riportati i valori restituiti di errore più comuni.
 
 |Errore|Descrizione|
 |-----------|-----------------|
@@ -61,14 +62,14 @@ out Valore univoco che identifica una particolare eccezione.
 |`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Questo metodo non è supportato per questo frame.|
 
 ## <a name="remarks"></a>Commenti
- Quando viene generata un'eccezione, il debugger acquisisce il controllo dal runtime in corrispondenza dei punti chiave durante il processo di gestione delle eccezioni. Durante questi istanti, il debugger può richiedere la stack frame corrente se il frame vuole intercettare l'eccezione. In questo modo, un'eccezione intercettata è essenzialmente un gestore di eccezioni immediato per un stack frame, anche se tale stack frame non dispone di un gestore di eccezioni (ad esempio, un blocco try/catch nel codice del programma).
+ Quando viene generata un'eccezione, il debugger ottiene il controllo dal tempo di esecuzione nei punti chiave durante il processo di gestione delle eccezioni. Durante questi momenti chiave, il debugger può chiedere al stack frame se il frame vuole intercettare l'eccezione. In questo modo, un'eccezione intercettata è essenzialmente un gestore di eccezioni in tempo reale per un stack frame, anche se tale stack frame non ha un gestore eccezioni (ad esempio, un blocco try/catch nel codice del programma).
 
- Quando il debugger desidera conoscere se l'eccezione deve essere intercettata, chiama questo metodo sull'oggetto stack frame corrente. Questo metodo è responsabile della gestione di tutti i dettagli dell'eccezione. Se l'interfaccia [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) non è implementata o il `InterceptStackException` metodo restituisce un errore, il debugger continua a elaborare l'eccezione normalmente.
+ Quando il debugger vuole sapere se l'eccezione deve essere intercettata, chiama questo metodo sull'oggetto stack frame corrente. Questo metodo è responsabile della gestione di tutti i dettagli dell'eccezione. Se [l'interfaccia IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) non è implementata o il metodo restituisce un errore, il debugger continua a elaborare `InterceptStackException` l'eccezione normalmente.
 
 > [!NOTE]
-> Le eccezioni possono essere intercettate solo nel codice gestito, ovvero quando il programma di cui è in corso il debug è in esecuzione in fase di esecuzione in .NET. Naturalmente, gli implementatori del linguaggio di terze parti possono implementare `InterceptStackException` nei propri motori di debug, se lo scelgono.
+> Le eccezioni possono essere intercettate solo nel codice gestito, ad esempio quando il programma di cui viene eseguito il debug è in esecuzione in fase di esecuzione .NET. Naturalmente, gli implementatori di linguaggi di terze parti possono implementare nei propri motori di `InterceptStackException` debug, se lo desiderano.
 
- Una volta completata l'intercettazione, viene segnalato un [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) .
+ Al termine dell'intercettazione, viene segnalato [un oggetto IDebugInterceptExceptionCompleteEvent2.](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

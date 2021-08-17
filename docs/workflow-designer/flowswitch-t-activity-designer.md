@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa40da33fba5ae7f95e41fff6a2d905fc0585f64cab88d2d2cb0d4340cf8ccc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b5e3a400509668c7cab2310fcd4c67316f35b8ac
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121383781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025383"
 ---
 # <a name="flowswitcht-activity-designer"></a>Activity Designer\<T> FlowSwitch
 

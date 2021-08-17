@@ -7,24 +7,25 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 11baf6439062e28c7361e2fabb4dea4a3430f237
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: d26d321f93d3d70300c8bdfaa758ec87309840bd8d21db3341a5cf7e2040505d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390919"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231522"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Più soluzioni DSL in una soluzione unica
 
 È possibile creare un pacchetto di diversi linguaggi specifici di dominio come parte di un'unica soluzione, in modo che vengano installati insieme.
 
-Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per altre informazioni, vedere Integrazione di modelli tramite [Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) e [Procedura: Aggiungere](../modeling/how-to-add-a-drag-and-drop-handler.md) un gestore di trascinamento della selezione e [Personalizzazione del comportamento di copia.](../modeling/customizing-copy-behavior.md)
+Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per altre informazioni, vedere Integrazione di modelli tramite [Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) e [Procedura: Aggiungere](../modeling/how-to-add-a-drag-and-drop-handler.md) un gestore di trascinamento della selezione e Personalizzazione del [comportamento di copia.](../modeling/customizing-copy-behavior.md)
 
 ## <a name="build-more-than-one-dsl-in-the-same-solution"></a>Compilare più DSL nella stessa soluzione
 
-1. Creare un nuovo **progetto VSIX.**
+1. Creare un nuovo **progetto Project VSIX.**
 
 2. Creare due o più progetti DSL nella directory della soluzione VSIX.
 

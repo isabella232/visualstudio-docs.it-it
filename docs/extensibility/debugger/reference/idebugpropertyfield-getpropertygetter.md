@@ -1,5 +1,5 @@
 ---
-description: Ottiene il metodo che ottiene la proprietà.
+description: Ottiene il metodo che ottiene la proprietà .
 title: IDebugPropertyField::GetPropertyGetter | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 55c7594863860923014eea4c213ad8dd59a8073156cacc0a8f4565d3700371c9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 59486320cc8265efe3c8597d07bbd98f69010fc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338631"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087626"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
-Ottiene il metodo che ottiene la proprietà.
+Ottiene il metodo che ottiene la proprietà .
 
 ## <a name="syntax"></a>Sintassi
 

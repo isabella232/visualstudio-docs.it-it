@@ -1,6 +1,6 @@
 ---
 title: Confrontare i file di dati delle prestazioni | Microsoft Docs
-description: Informazioni su come confrontare i risultati di due diversi file di dati del profiler (con estensione vsp o vsps) per individuare le differenze, le regressioni delle prestazioni e i miglioramenti delle prestazioni.
+description: Informazioni su come confrontare i risultati di due diversi file di dati del profiler (con estensione vsp o vsps) per individuare differenze, regressioni delle prestazioni e miglioramenti delle prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,15 +13,16 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d47f51b5c46538bdeeb50db0627c5bd0840bcc14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59421f44a2b5d9d30285f9959ea22d090b6bddcc3d4777a29e0de1e4cf98483e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886145"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231171"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Procedura: Confrontare i file di dati delle prestazioni
 È possibile confrontare i risultati di due diversi file di dati del profiler, con estensione *vsp* o *vsps*, creando un report o una visualizzazione di confronto "Diff". Il confronto indica le differenze, le regressioni relative alle prestazioni e i miglioramenti riscontrati da una sessione di profilatura all'altra.

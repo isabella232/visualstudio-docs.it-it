@@ -1,6 +1,6 @@
 ---
 description: Ottiene la nuova proprietà.
-title: 'IDebugPropertyCreateEvent2:: GetDebugProperty | Microsoft Docs'
+title: IDebugPropertyCreateEvent2::GetDebugProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c62d68cab7d0c7141e9c645d97a866f620fe7f9f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d1b54a76dcda578503d1b851b265c22cd339a181
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083895"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087665"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Ottiene la nuova proprietà.
@@ -42,7 +43,7 @@ int GetDebugProperty (
 
 ## <a name="parameters"></a>Parametri
 `ppProperty`\
-out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta la nuova proprietà.
+[out] Restituisce un [oggetto IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta la nuova proprietà.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

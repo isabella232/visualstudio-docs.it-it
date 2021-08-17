@@ -1,6 +1,6 @@
 ---
 title: Elemento ParameterGroup | Microsoft Docs
-description: Informazioni sull'elemento ParameterGroup di MSBuild, che contiene un elenco facoltativo di parametri presenti nell'attività generata da un oggetto UsingTask TaskFactory.
+description: Informazioni sull'MSBuild elemento ParameterGroup, che contiene un elenco facoltativo di parametri presenti nell'attività generata da un elemento UsingTask TaskFactory.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -16,18 +16,19 @@ ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ff9c63de40f6a352c10f92b937a397c683fc65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5023f6533dc94e5eb4bb92a6a6f8c015d91b84578b1dc562ac3fca92f2dae12
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905297"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443123"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
 
-Contiene un elenco facoltativo di parametri che saranno presenti nell'attività generata da un oggetto `UsingTask` `TaskFactory` . Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contiene un elenco facoltativo di parametri che saranno presenti nell'attività generata da `UsingTask` `TaskFactory` un oggetto . Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask>
  \<ParameterGroup>
@@ -44,19 +45,19 @@ Contiene un elenco facoltativo di parametri che saranno presenti nell'attività 
 
 ### <a name="attributes"></a>Attributi
 
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Parametro](../msbuild/parameter-element.md)|Contiene informazioni su un parametro specifico per un'attività generata da un oggetto `UsingTask` `TaskFactory` . Il nome dell'elemento è il nome del parametro.|
+|[Parametro](../msbuild/parameter-element.md)|Contiene informazioni su un parametro specifico per un'attività generata da `UsingTask` `TaskFactory` un oggetto . Il nome dell'elemento è il nome del parametro.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fornisce un modo per registrare le attività in MSBuild. Possono esistere zero o più elementi `UsingTask` in un progetto. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Consente di registrare le attività in MSBuild. Possono esistere zero o più elementi `UsingTask` in un progetto. |
 
 ## <a name="example"></a>Esempio
 
@@ -79,4 +80,4 @@ Contiene un elenco facoltativo di parametri che saranno presenti nell'attività 
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)

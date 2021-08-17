@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 989ca9aa034103c492a141c113282c969bcd02ba29ecd4593f2f66680403f940
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 130f4603bf8a4b8448c0484e8e588eb2c9c03a19
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306777"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087457"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Questo metodo ottiene il tipo di campo della classe che rappresenta un nome di classe completo.
@@ -53,7 +53,7 @@ int GetClassTypeByName(
 [in] Seleziona il tipo di corrispondenza, ad esempio, con distinzione tra maiuscole e minuscole. Valore [dell'enumerazione NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
 
 `ppField`\
-[out] Restituisce il tipo di classe rappresentato [dall'interfaccia IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
+[out] Restituisce il tipo di classe come rappresentato [dall'interfaccia IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -11,17 +11,18 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8034e0d1df6410c842f7d93a4ee3023957904744
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 63f86f8e0b753d3f15f000a7f3846aeafec87f4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388087"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055198"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
-Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà " \<html> ..." e tutte le altre parti standard di una pagina HTML. I blocchi di controllo *inseriti nel* modello sono frammenti di codice programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
+Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà " \<html> ..." e tutte le altre parti standard di una pagina HTML. I blocchi di controllo *inseriti* nel modello sono frammenti di codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
 
  Questa struttura facilita lo sviluppo di un modello, perché consente di partire da un prototipo del file generato inserendo in modo incrementale i blocchi di controllo che variano il risultato.
 
@@ -31,9 +32,9 @@ Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad
 
 - **Blocchi di** testo: contenuto copiato direttamente nell'output.
 
-- **Blocchi di** controllo: codice programma che inserisce i valori delle variabili nel testo e controlla parti condizionali o ripetute del testo.
+- **Blocchi di controllo:** codice programma che inserisce i valori delle variabili nel testo e controlla parti condizionali o ripetute del testo.
 
-Per provare gli esempi in questo argomento, copiarli in un file modello come descritto in Generazione di codice in fase di progettazione [tramite modelli di testo T4.](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Dopo aver modificato il file modello, salvarlo e quindi esaminare il file di output **.txt** file.
+Per provare gli esempi in questo argomento, copiarli in un file modello come descritto in Generazione di codice in fase di progettazione tramite modelli [di testo T4.](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Dopo aver modificato il file modello, salvarlo e quindi esaminare il file di output **.txt** file.
 
 ## <a name="directives"></a>Direttive
  Le direttive del modello di testo forniscono al motore del modello di testo le istruzioni generali che stabiliscono come generare il codice di trasformazione e il file di output.
@@ -44,7 +45,7 @@ Per provare gli esempi in questo argomento, copiarli in un file modello come des
 <#@ output extension=".txt" #>
 ```
 
- Per altre informazioni sulle direttive , vedere [Direttive del modello di testo T4.](../modeling/t4-text-template-directives.md)
+ Per altre informazioni sulle direttive, vedere Direttive del modello di [testo T4](../modeling/t4-text-template-directives.md).
 
 ## <a name="text-blocks"></a>Blocchi di testo
  Un blocco di testo inserisce del testo direttamente nel file di output. Non esiste una formattazione speciale per i blocchi di testo. Ad esempio, il modello di testo seguente produrrà un file di testo contenente la parola "Hello":
@@ -80,7 +81,7 @@ Hello
 #> Hello!
 ```
 
- Anziché utilizzare le istruzioni `Write()` esplicite, è possibile alternare testo e codice. L'esempio seguente stampa "Hello!" quattro volte:
+ Anziché utilizzare le istruzioni `Write()` esplicite, è possibile alternare testo e codice. Nell'esempio seguente viene stampato "Hello!" quattro volte:
 
 ```
 <#
@@ -154,10 +155,10 @@ private int Square(int i)
 
  Le funzionalità di classe devono essere inserite alla fine del file nel quale vengono scritte. Tuttavia, è possibile usare un file con `<#@include#>` che contiene una funzionalità di classe anche se la direttiva `include` è seguita da testo e blocchi standard.
 
- Per altre informazioni sui blocchi di controllo, vedere [Blocchi di controllo del modello di testo.](../modeling/text-template-control-blocks.md)
+ Per altre informazioni sui blocchi di controllo, vedere [Blocchi di controllo del modello di testo](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>I blocchi della funzionalità di classe possono contenere blocchi di testo
- È possibile scrivere un metodo che generi il testo. Ad esempio:
+ È possibile scrivere un metodo che generi il testo. Esempio:
 
 ```
 List of Squares:
@@ -187,15 +188,15 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- Nel nome del percorso è consigliabile usare nomi di percorso assoluto o nomi di macro standard. Ad esempio:
+ Nel nome del percorso è consigliabile usare nomi di percorso assoluto o nomi di macro standard. Esempio:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
 ```
 
- La direttiva assembly non ha effetto in un [modello di testo pre-elaborato.](../modeling/run-time-text-generation-with-t4-text-templates.md)
+ La direttiva assembly non ha alcun effetto in un [modello di testo pre-elaborato.](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
- Per altre informazioni, vedere [Direttiva assembly T4.](../modeling/t4-assembly-directive.md)
+ Per altre informazioni, vedere [Direttiva assembly T4](../modeling/t4-assembly-directive.md).
 
 ### <a name="namespaces"></a>Spazi dei nomi
  La direttiva import è uguale alla clausola `using` in C# o alla clausola `imports` in Visual Basic. Consente di fare riferimento ai tipi nel codice senza usare un nome completo:
@@ -206,7 +207,7 @@ private void WriteSquareLine(int i)
 
  È possibile usare il numero di direttive `assembly` e `import` desiderato. È necessario posizionarle prima dei blocchi di testo e di controllo.
 
- Per altre informazioni, vedere [Direttiva Import T4.](../modeling/t4-import-directive.md)
+ Per altre informazioni, vedere [Direttiva import T4.](../modeling/t4-import-directive.md)
 
 ### <a name="including-code-and-text"></a><a name="Include"></a> Inclusione di codice e testo
  La direttiva `include` inserisce il testo da un altro file di modello. Ad esempio, questa direttiva inserisce il contenuto del file `test.txt`.
@@ -224,7 +225,7 @@ private void WriteSquareLine(int i)
 
  È anche possibile scrivere un set di metodi di utilità personalizzato.
 
- Per altre informazioni, vedere [Metodi di utilità del modello di testo.](../modeling/text-template-utility-methods.md)
+ Per altre informazioni, vedere [Metodi dell'utilità modello di testo](../modeling/text-template-utility-methods.md).
 
 ## <a name="transforming-data-and-models"></a>Trasformazioni di dati e modelli
  L'applicazione più utile per un modello di testo è generare materiale in base al contenuto di un'origine, ad esempio un modello, un database o un file di dati. Il modello estrae e riformatta i dati. Una raccolta di modelli può trasformare tale origine in più file.
@@ -240,7 +241,7 @@ private void WriteSquareLine(int i)
 
  **Caricare un file come modello esplorabile.** Un metodo più efficace è leggere i dati come un modello, in cui è possibile spostarsi con il codice del modello di testo. Ad esempio, è possibile caricare un file XML e spostarsi al suo interno con espressioni XPath. È anche possibile usare [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) per creare un set di classi con cui è possibile leggere i dati XML.
 
- **Modificare il file di modello in un diagramma o in un modulo.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre strumenti che consentono di modificare un modello come diagramma o Windows Form. In questo modo diventa più semplice illustrare il modello agli utenti dell'applicazione generata. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crea anche un set di classi fortemente tipstrate che riflettono la struttura del modello. Per altre informazioni, vedere [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Modificare il file di modello in un diagramma o in un modulo.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]fornisce strumenti che consentono di modificare un modello come diagramma o Windows modulo. In questo modo diventa più semplice illustrare il modello agli utenti dell'applicazione generata. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crea anche un set di classi fortemente tipche che riflettono la struttura del modello. Per altre informazioni, vedere [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Percorsi di file relativi in modelli della fase di progettazione
  In un [modello di testo della fase](../modeling/design-time-code-generation-by-using-t4-text-templates.md)di progettazione , se si vuole fare riferimento a un file in un percorso relativo al modello di testo, usare `this.Host.ResolvePath()` . È inoltre necessario impostare `hostspecific="true"` nella direttiva `template`:

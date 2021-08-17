@@ -1,6 +1,6 @@
 ---
 title: Attività CreateProperty | Microsoft Docs
-description: Usare l'attività CreateProperty di MSBuild per popolare le proprietà con i valori passati, consentendo la copia dei valori da una proprietà o una stringa a un'altra.
+description: Usare l MSBuild CreateProperty per popolare le proprietà con i valori passati, consentendo la copia dei valori da una proprietà o una stringa a un'altra.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea412f67629998eab035b8cca79111659ab8a0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be38b53074bb8f290cd9cd865d60513712be5505
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901373"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054834"
 ---
 # <a name="createproperty-task"></a>CreateProperty (attività)
 
@@ -38,11 +39,11 @@ Nella tabella che segue vengono descritti i parametri dell'attività `CreateProp
 | Parametro | Descrizione |
 |------------------| - |
 | `Value` | Parametro di ouput facoltativo `String`.<br /><br /> Specifica il valore da copiare nella nuova proprietà. |
-| `ValueSetByTask` | Parametro di ouput facoltativo `String`.<br /><br /> Contiene lo stesso valore del parametro `Value`. Usare questo parametro solo quando si vuole evitare che la proprietà output sia impostata da MSBuild quando ignora la destinazione di inclusione, perché gli output sono aggiornati. |
+| `ValueSetByTask` | Parametro di ouput facoltativo `String`.<br /><br /> Contiene lo stesso valore del parametro `Value`. Usare questo parametro solo quando si vuole evitare che la proprietà di output sia impostata da MSBuild quando ignora la destinazione di inclusione perché gli output sono aggiornati. |
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 

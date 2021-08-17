@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9c9b3b0759d5a1831525708b5ae4915d063ca801a9e2c998ccaa0d1655b788e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e2abfd4bd36ef8e3f278c6df610cd7bb495c36ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388890"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087366"
 ---
 # <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
 Questa struttura rappresenta un indirizzo fisico.
@@ -46,7 +46,7 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
  Offset a 64 bit in uno spazio indirizzi fisico.
 
 ## <a name="remarks"></a>Commenti
- Questa struttura fa parte dell'unione nella struttura DEBUG_ADDRESS_UNION [quando](../../../extensibility/debugger/reference/debug-address-union.md) il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` di `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_UNMANAGED_PHYSICAL` dati). [](../../../extensibility/debugger/reference/address-kind.md)
+ Questa struttura fa parte dell'unione nella [struttura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_UNMANAGED_PHYSICAL` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) tabella).
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: sh.h

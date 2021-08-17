@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Usare caratteri XML riservati nei file di progetto | Microsoft Docs'
-description: Informazioni su come sostituire i caratteri XML riservati con le entità denominate corrispondenti nei file di progetto MSBuild.
+description: Informazioni su come sostituire i caratteri XML riservati con le entità denominate corrispondenti nei MSBuild di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a45bae9665c0c39e9b709cec185f0434f3889b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 202266e37be65486a7db0de33f0713842ff8e3c755fcd4c3cba6fe6c780a39da
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914163"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443503"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedura: Usare caratteri XML riservati nei file di progetto
 

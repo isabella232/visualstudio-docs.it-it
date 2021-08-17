@@ -1,6 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
-description: Informazioni su come usare lo strumento da riga di comando VSPerfReport per creare report con Visual Studio Strumenti di profilatura i file di dati di profilatura.
+description: Informazioni su come usare lo strumento da riga di comando VSPerfReport per creare report usando Visual Studio Strumenti di profilatura di dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,15 +14,16 @@ ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 507ea5a90aa17ba252a95714f488f5ea22dff4f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f8e249601ada0304e074872dbe04b7a2653af79226faa8fb60493447174c365
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911508"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121230612"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Lo strumento da riga di comando VSPerfReport viene usato per creare report usando i file di dati di profilatura degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il formato predefinito per i report è un file con estensione *csv*.
@@ -59,7 +60,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**SymbolPath:**`path`|Specifica uno o più percorsi di ricerca o server di simboli che contengono i simboli per il file di dati del profiler.|
 |**DebugSymPath**|Elenca i percorsi in cui vengono cercati i simboli e se vengono trovati. Questa opzione è utile per risolvere i problemi di risoluzione dei simboli.|
 |**PackSymbols**|Salva i simboli nel file di dati di profilatura (con estensione vsp) in modo che i file di simboli (con estensione *pdb*) non siano necessari per l'analisi.|
-|**Output:** *percorso*&#124;*nomefile*|Specifica un percorso alternativo per i file dei report generati. Per impostazione predefinita, i report vengono creati nella directory corrente.|
+|**Output: nome** *file&#124;* *percorso*|Specifica un percorso alternativo per i file dei report generati. Per impostazione predefinita, i report vengono creati nella directory corrente.|
 |**SummaryFile**|Analizza e salva le informazioni analizzate in un file di riepilogo vsps.|
 |**PrintMarks**|Mostra il nome e il timestamp di tutti i contrassegni nel file di report specificato.|
 |**?**|Visualizza le informazioni sull'utilizzo.|
@@ -71,7 +72,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Opzioni|Descrizione|
 |-------------|-----------------|
-|**JustMyCode**[**:**[ `caller` ] [, `callee` ]]|Mostra solo le chiamate di funzioni dell'applicazione dell'utente. Le chiamate di sistema vengono nascoste.<br /><br /> - Nessun parametro: nasconde tutte le funzioni di sistema.<br />-   `caller` - Mostra un livello di funzioni di sistema che chiamano funzioni dell'applicazione.<br />-   `callee` - Mostra un livello di funzioni di sistema che vengono chiamate da funzioni dell'applicazione dell'utente.|
+|**JustMyCode**[**:**[ `caller` ][, `callee` ]]|Mostra solo le chiamate di funzioni dell'applicazione dell'utente. Le chiamate di sistema vengono nascoste.<br /><br /> - Nessun parametro: nasconde tutte le funzioni di sistema.<br />-   `caller` - Mostra un livello di funzioni di sistema che chiamano funzioni dell'applicazione.<br />-   `callee` - Mostra un livello di funzioni di sistema che vengono chiamate da funzioni dell'applicazione dell'utente.|
 |**StartTime:**[*valore*]|Mostra solo i dati raccolti dopo il valore (in millisecondi).|
 |**EndTime:**[*valore*]|Mostra solo i dati raccolti prima del valore (in millisecondi).|
 |**FilterFile:** `VSPFFile`|Specifica il percorso di un file di filtro generato dalla finestra Visual Studio Performance Report.|
@@ -87,9 +88,9 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |-------------|-----------------|
 |**Diff**  `vspfile1 vspfile2`|Confrontare due file di report (con estensione *vsp* o *vsps*). Le opzioni Summary verranno ignorate quando si usa l'opzione Diff.|
 |**Diff:**[*valore*]|Sotto questo valore di soglia la differenza tra due valori verrà ignorata. Inoltre, i nuovi dati con valori al di sotto della soglia non verranno visualizzati.|
-|**DiffTable:**[*TableName*]|Usare questa tabella specifica per confrontare i file. Per impostazione predefinita, viene usata la tabella delle funzioni.|
-|**DiffColumn:**[*ColumnName*]|Usare questa colonna specifica per confrontare i file. Per impostazione predefinita, viene usata la colonna percentuale campioni esclusivi.|
+|**DiffTable:**[*tablename*]|Usare questa tabella specifica per confrontare i file. Per impostazione predefinita, viene usata la tabella delle funzioni.|
+|**DiffColumn:**[*columnname*]|Usare questa colonna specifica per confrontare i file. Per impostazione predefinita, viene usata la colonna percentuale campioni esclusivi.|
 |**QueryDiffTables**|Elenco delle tabelle e delle colonne valide per i due file di report specificati.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazioni rapporto di prestazioni](../profiling/performance-report-views.md)
+- [Visualizzazioni dei report sulle prestazioni](../profiling/performance-report-views.md)

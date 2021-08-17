@@ -1,21 +1,22 @@
 ---
 title: Risoluzione dei problemi relativi agli strumenti per le prestazioni | Microsoft Docs
-description: Per informazioni sui problemi relativi agli strumenti per le prestazioni, ad esempio quando non vengono raccolti dati dagli strumenti di profilatura.
+description: Informazioni sui vari aspetti che possono verificarsi durante la risoluzione dei problemi degli strumenti per le prestazioni, ad esempio quando non vengono raccolti dati dagli strumenti di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d371384d70c6a6a7a57620839eca2c41c292d0b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1d2339ee7638fa6e3a4b1776abd61196cbe814cf075228b5d0eee651d89e70cc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922053"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121230976"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Risolvere i problemi relativi agli strumenti per le prestazioni
 Quando si usano gli strumenti di profilatura, potrebbe verificarsi uno dei seguenti problemi:

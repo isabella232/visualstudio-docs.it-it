@@ -1,6 +1,6 @@
 ---
 title: Novità di Live Unit Testing in Visual Studio 2017
-description: Questo articolo descrive le nuove funzionalità aggiunte a Live Unit Testing in ogni versione di Visual Studio a partire da Visual Studio 2017 versione 15.3.
+description: Questo articolo descrive le nuove funzionalità aggiunte Live Unit Testing in ogni versione di Visual Studio a partire da Visual Studio 2017 versione 15.3.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 10/11/2017
@@ -40,7 +40,7 @@ A partire da Visual Studio 2017 versione 15.4, Live Unit Testing include miglior
 
 - **Prestazioni e affidabilità**: Live Unit Testing ora assicura una migliore capacità di rilevamento da parte del sistema del caricamento completo dei progetti, evitando così che Live Unit Testing venga interrotto. I miglioramenti delle prestazioni di compilazione evitano anche che i progetti MSBuild vengano sottoposti a una nuova valutazione se il sistema rileva che non è stata apportata alcuna modifica al file di progetto.
 
-- **Miglioramenti vari dell'interfaccia utente**: l'opzione **Live Test Set-Include/Exclude** (Set Live Test-Includi/Escludi) disponibile facendo clic con il pulsante destro del mouse, è stata rinominata **Live Unit Testing Include/Exclude** (Includi/Escludi Live Unit Testing) in quanto creava confusione. L'opzione **Reset clean** (Reimposta e pulisci) nel menu **Test** > **Live Unit Testing** è stata rimossa. È ora accessibile selezionando **Strumenti** Opzioni Live Unit Testing e quindi Elimina dati  >    >   **persistenti**.
+- **Miglioramenti vari dell'interfaccia utente**: l'opzione **Live Test Set-Include/Exclude** (Set Live Test-Includi/Escludi) disponibile facendo clic con il pulsante destro del mouse, è stata rinominata **Live Unit Testing Include/Exclude** (Includi/Escludi Live Unit Testing) in quanto creava confusione. L'opzione **Reset clean** (Reimposta e pulisci) nel menu **Test** > **Live Unit Testing** è stata rimossa. È ora accessibile selezionando Strumenti **Opzioni**  >  **Live Unit Testing**  >   e quindi Elimina **dati persistenti.**
 
 ## <a name="version-153"></a>Versione 15.3
 

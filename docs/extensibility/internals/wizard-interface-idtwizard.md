@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08a1ec6e79624d3f1eb74f9b5251a73523a998c739c7ea215e3622643c5b9926
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: af87757d96097708828ebbdcb017ddf0627ed6e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359143"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041789"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interfaccia della procedura guidata (IDTWizard)
 L'ambiente di sviluppo integrato (IDE) usa <xref:EnvDTE.IDTWizard> l'interfaccia per comunicare con le procedure guidate. Le procedure guidate devono implementare questa interfaccia per poter essere installate nell'IDE.
@@ -37,25 +37,25 @@ STDMETHOD(Execute)(THIS_
    );
 ```
 
- Il meccanismo di avvio è simile per le **procedure guidate Project** e **Aggiungi nuovo** elemento. Per iniziare, chiamare <xref:EnvDTE.IDTWizard> l'interfaccia definita in Dteinternal.h. L'unica differenza è il set di parametri di contesto e personalizzati passati all'interfaccia quando viene chiamata l'interfaccia .
+ Il meccanismo di avvio è simile per le **procedure guidate Project** e Aggiungi **nuovo** elemento. Per iniziare, chiamare <xref:EnvDTE.IDTWizard> l'interfaccia definita in Dteinternal.h. L'unica differenza è il set di parametri di contesto e personalizzati passati all'interfaccia quando viene chiamata l'interfaccia .
 
- Le informazioni seguenti descrivono <xref:EnvDTE.IDTWizard> l'interfaccia che le procedure guidate devono implementare per funzionare nell'IDE. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] L'IDE chiama <xref:EnvDTE.IDTWizard.Execute%2A> il metodo nella procedura guidata, passando il codice seguente:
+ Le informazioni seguenti descrivono <xref:EnvDTE.IDTWizard> l'interfaccia che le procedure guidate devono implementare per funzionare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nell'IDE. L'IDE chiama <xref:EnvDTE.IDTWizard.Execute%2A> il metodo nella procedura guidata, passando il codice seguente:
 
 - Oggetto DTE
 
      L'oggetto DTE è la radice del modello di automazione.
 
-- Handle per la finestra di dialogo della finestra, come illustrato nel segmento di codice `hwndOwner ([in] long)` .
+- Handle per la finestra di dialogo, come illustrato nel segmento di codice , `hwndOwner ([in] long)` .
 
      La procedura guidata lo usa `hwndOwner` come elemento padre per la finestra di dialogo della procedura guidata.
 
-- Parametri di contesto passati all'interfaccia come variante per SAFEARRAY, come illustrato nel segmento di codice , `[in] SAFEARRAY (VARIANT)* ContextParams` .
+- Parametri di contesto passati all'interfaccia come variante per SAFEARRAY, come illustrato nel segmento di codice, `[in] SAFEARRAY (VARIANT)* ContextParams` .
 
-     I parametri di contesto contengono una matrice di valori specifici del tipo di procedura guidata avviata e dello stato corrente del progetto. L'IDE passa i parametri di contesto alla procedura guidata. Per altre informazioni, vedere [Parametri di contesto.](../../extensibility/internals/context-parameters.md)
+     I parametri di contesto contengono una matrice di valori specifici del tipo di procedura guidata avviata e dello stato corrente del progetto. L'IDE passa i parametri di contesto alla procedura guidata. Per altre informazioni, vedere [Parametri di contesto](../../extensibility/internals/context-parameters.md).
 
-- Parametri personalizzati passati all'interfaccia come variante per SAFEARRAY, come illustrato nel segmento di codice , `[in] SAFEARRAY (VARIANT)* CustomParams` .
+- Parametri personalizzati passati all'interfaccia come variante per SAFEARRAY, come illustrato nel segmento di codice, `[in] SAFEARRAY (VARIANT)* CustomParams` .
 
-     I parametri personalizzati contengono una matrice di parametri definiti dall'utente. Un file con estensione vsz passa parametri personalizzati all'IDE. I valori sono determinati dalle `Param=` istruzioni . Per altre informazioni, vedere [Parametri personalizzati.](../../extensibility/internals/custom-parameters.md)
+     I parametri personalizzati contengono una matrice di parametri definiti dall'utente. Un file vsz passa parametri personalizzati all'IDE. I valori sono determinati dalle `Param=` istruzioni . Per altre informazioni, vedere [Parametri personalizzati](../../extensibility/internals/custom-parameters.md).
 
 - I valori restituiti per l'interfaccia sono
 

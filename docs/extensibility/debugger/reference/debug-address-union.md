@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c80fb176dd0545b0f0e2da46864d25ada995ea8cc63ac71fa3576e12d37e9b13
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ab8f7b268f347380284662b2ef35dab03e99513f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073123"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 Descrive diversi tipi di indirizzi.

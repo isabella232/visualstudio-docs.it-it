@@ -1,6 +1,6 @@
 ---
 description: Confronta un riferimento a un altro.
-title: 'IDebugReference2:: compare | Microsoft Docs'
+title: IDebugReference2::Compare | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 3361c495-2673-4b7c-82e3-dee74e1fa58d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 017dfa60c1f854a36f1087bef87203f0b22ae4dc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e56b2d5883e1c26fbfaa8657b8fed3c5236db348
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083635"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087561"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Confronta un riferimento a un altro. Riservato per utilizzi futuri.
@@ -44,10 +45,10 @@ int Compare (
 
 ## <a name="parameters"></a>Parametri
 `dwCompare`\
-in Valore dell'enumerazione [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) che specifica l'operazione di confronto, ad esempio, uguale a, minore di o maggiore di.
+[in] Valore [dell'enumerazione REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) che specifica l'operazione di confronto, ad esempio uguale a, minore di o maggiore di.
 
 `pReference`\
-in Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che rappresenta il riferimento da confrontare con.
+[in] Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che rappresenta il riferimento da confrontare.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.

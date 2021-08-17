@@ -1,6 +1,6 @@
 ---
 title: Configurare le porte per test controller e agenti di test
-description: Informazioni su come modificare le porte in ingresso predefinite utilizzate dal test controller, dall'agente di test e dal client per evitare conflitti con altri software.
+description: Informazioni su come modificare le porte in ingresso predefinite usate dal test controller, dall'agente di test e dal client per evitare conflitti con altri software.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -15,12 +15,13 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 78c6dd0f9ffa89f7b1a2ac7ac7a2344b67a47970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 90f2ed785c0edd90ae7ad6fc9614d134f6b557f2f7af24a9e9901de88c676507
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868049"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121227817"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurare le porte per test controller e agenti di test
 

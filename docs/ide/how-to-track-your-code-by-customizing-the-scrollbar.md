@@ -1,26 +1,27 @@
 ---
 title: Modalità mappa e modalità barra della barra di scorrimento
-description: Informazioni su come tenere traccia delle modifiche nel codice tramite la personalizzazione della barra di scorrimento, oltre a informazioni su come usare la modalità barra e la modalità mappa.
+description: Informazioni su come tenere traccia delle modifiche nel codice tramite la personalizzazione della barra di scorrimento e su come usare la modalità barra e la modalità mappa.
 ms.custom: SEO-VS-2020
 ms.date: 03/20/2020
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 740a1b9385c53c87e8d52d2e80729586557f7ce0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59af487695addbed60f9e908ec425c7ce1b698ad6482cf367fd00d5d09a2c9eb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869154"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121233108"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Procedura: Personalizzare la barra di scorrimento
 
 Quando si usano file di codice di grandi dimensioni, può essere difficile tenere traccia di tutto il contenuto dei file. È possibile personalizzare la barra di scorrimento dell'editor di codice per ottenere una panoramica di cosa avviene nel codice.
 
-## <a name="annotations"></a>annotazioni
+## <a name="annotations"></a>Annotazioni
 
 È possibile specificare se la barra di scorrimento deve mostrare annotazioni, ad esempio modifiche al codice, punti di interruzione, segnalibri, errori e posizione del cursore.
 
@@ -56,7 +57,7 @@ La *modalità barra* visualizza indicatori di annotazione sulla barra di scorrim
 
 ### <a name="map-mode"></a>Modalità mappa
 
-*Modalità mappa* Visualizza le righe di codice, in miniatura, sulla barra di scorrimento. È possibile scegliere la larghezza della colonna della mappa selezionando un valore in **Panoramica origine**. Per abilitare un'anteprima di dimensioni maggiori del codice quando si posiziona il puntatore del mouse sulla mappa, selezionare l'opzione **Mostra descrizione comando anteprima**. Le aree compresse hanno un'ombreggiatura diversa e si espandono quando si fa doppio clic su di esse.
+*La modalità mappa* visualizza le righe di codice, in miniatura, sulla barra di scorrimento. È possibile scegliere la larghezza della colonna della mappa selezionando un valore in **Panoramica origine**. Per abilitare un'anteprima di dimensioni maggiori del codice quando si posiziona il puntatore del mouse sulla mappa, selezionare l'opzione **Mostra descrizione comando anteprima**. Le aree compresse hanno un'ombreggiatura diversa e si espandono quando si fa doppio clic su di esse.
 
 > [!TIP]
 > È possibile disattivare la visualizzazione del codice in miniatura in modalità mappa impostando **Panoramica origine** su **Disattivata**. Se l'opzione **Mostra descrizione comando anteprima** è selezionata, viene comunque visualizzata un'anteprima del codice in tale posizione quando si posiziona il puntatore del mouse sulla barra di scorrimento e il cursore passa comunque alla posizione nel file quando si fa clic.
@@ -70,7 +71,7 @@ La figura seguente mostra l'opzione **Mostra descrizione comando anteprima**:
 ![Barra di scorrimento di Visual Studio con una descrizione comando](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 > [!TIP]
-> Per modificare i colori visualizzati in modalità mappa, scegliere **strumenti**  >  **Opzioni**  >  **ambiente**  >  **tipi di carattere e colori**. Successivamente, in **elementi visualizzati** scegliere uno degli elementi che sono preceduti da "panoramica", apportare le modifiche ai colori desiderate, quindi scegliere **OK**.
+> Per modificare i colori visualizzati in modalità mappa, scegliere Strumenti  >  **Opzioni**  >  **Tipi di** carattere e colori  >  **dell'ambiente**. Successivamente, in **Elementi visualizzati** scegliere uno degli elementi preceduti da "Panoramica", apportare le modifiche di colore desiderate e quindi scegliere **OK.**
 
 ## <a name="see-also"></a>Vedi anche
 

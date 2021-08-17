@@ -1,6 +1,6 @@
 ---
 title: Test delle prestazioni Web codificati
-description: Informazioni sul modo in cui un test delle prestazioni Web può essere convertito in uno script basato su codice che è possibile modificare e personalizzare.
+description: Informazioni su come convertire un test delle prestazioni Web in uno script basato su codice che è possibile modificare e personalizzare.
 ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
@@ -16,12 +16,13 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 74269872992935568362a061d47f7335dbaedec8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 8aea1a2e52cb123cdd052e426d78089fc4aa97ad21c81729b82bc05a182ffa60
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936418"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121227726"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
@@ -87,14 +88,14 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 ## <a name="qa"></a>Domande e risposte
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>D: È possibile eseguire più test contemporaneamente?
-**R:** Sì, fare clic con il pulsante destro del mouse sul menu di scelta rapida in **Esplora soluzioni**.
+**A:** Sì, usare il menu di scelta rapida in **Esplora soluzioni**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>D: È necessario aggiungere un'origine dati prima o dopo avere generato un test codificato?
 **R:** È più semplice aggiungere un'[origine dati](../test/add-a-data-source-to-a-web-performance-test.md) prima di generare il test codificato, perché il codice verrà generato automaticamente.
 
 Quando si esegue un test codificato con un 'origine dati, può venire visualizzato il messaggio di errore seguente:
 
-**Non è stato possibile eseguire \<Test Name> il test sull'agente \<Computer Name> : il riferimento all'oggetto non è impostato su un'istanza di un oggetto.**
+**Impossibile eseguire il test \<Test Name> sull'agente: \<Computer Name> riferimento all'oggetto non impostato su un'istanza di un oggetto.**
 
 Questo errore può verificarsi perché per la classe di test è definito un oggetto DataSourceAttribute senza un oggetto DataBindingAttribute corrispondente. Per risolvere questo errore, aggiungere un oggetto DataBindingAttribute appropriato, eliminarlo oppure impostarlo come commento nel codice.
 

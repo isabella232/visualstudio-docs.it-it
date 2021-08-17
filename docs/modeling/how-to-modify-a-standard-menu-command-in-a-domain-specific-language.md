@@ -1,5 +1,5 @@
 ---
-title: Modificare il comando di menu standard in DSL
+title: Comando di menu Modifica standard in DSL
 description: Informazioni su come modificare il comportamento di alcuni dei comandi standard definiti automaticamente nel DSL.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 744c52dc23a7f144a42c371abc7faab520c58226f488a04540bd590c8965c2d2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cb575eb52e9a95d2ba548659ec8d265605f5e64d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428952"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055458"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio
 
-È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare **Taglia** in modo che escludi le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare **Taglia in** modo da escludere le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
 > Per creare comandi di menu personalizzati, vedere [Procedura: Aggiungere un comando al menu di scelta rapida.](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
@@ -31,7 +31,7 @@ ms.locfileid: "121428952"
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Per trovare i comandi modificabili
 
-1. Nel progetto `DslPackage` aprire `GeneratedCode\CommandSet.cs`. Questo file C# è disponibile in Esplora soluzioni come sussidiaria di `CommandSet.tt` .
+1. Nel progetto `DslPackage` aprire `GeneratedCode\CommandSet.cs`. Questo file C# è disponibile in Esplora soluzioni come filiale di `CommandSet.tt` .
 
 2. Trovare le classi in questo file i cui nomi terminano con " `CommandSet` ", ad esempio `Language1CommandSet` e `Language1ClipboardCommandSet` .
 
@@ -56,7 +56,7 @@ Creare un nuovo file contenente una dichiarazione parziale della classe di set d
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. In **DslPackage** creare una cartella denominata **Codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs` .
+2. In **DslPackage** creare una cartella denominata **Codice personalizzato.** In questa cartella creare un nuovo file di classe denominato `CommandSet.cs` .
 
 3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Esempio:
 
@@ -126,7 +126,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }
 ```
 
-Se il codice apporta modifiche all'archivio, ad esempio creando, eliminando o aggiornando elementi o collegamenti, è necessario farlo in una transazione. Per altre informazioni, vedere [Come creare e aggiornare gli elementi del modello.](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+Se il codice apporta modifiche all'archivio, ad esempio creando, eliminando o aggiornando elementi o collegamenti, è necessario farlo in una transazione. Per altre informazioni, vedere [How to Create and Update model elements](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="write-the-code-of-the-methods"></a>Scrivere il codice dei metodi
 
@@ -144,7 +144,7 @@ I frammenti seguenti sono spesso utili in questi metodi:
 
 - `shape.ModelElement as MyLanguageElement` : elemento del modello rappresentato da una forma.
 
-Per altre informazioni su come spostarsi da un elemento all'altro e su come creare oggetti e collegamenti, vedere Esplorazione e aggiornamento di un modello [nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
+Per altre informazioni su come spostarsi da un elemento all'altro e su come creare oggetti e collegamenti, vedere Esplorazione e aggiornamento di [un modello nel codice programma.](../modeling/navigating-and-updating-a-model-in-program-code.md)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -154,4 +154,4 @@ Per altre informazioni su come spostarsi da un elemento all'altro e su come crea
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Riferimenti sullo schema XML VSCT](../extensibility/vsct-xml-schema-reference.md)
-- [Esempio di VMSDK - Circuit Diagrams. Personalizzazione DSL completa](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK - Esempio di diagrammi di circuito. Personalizzazione DSL completa](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -1,6 +1,6 @@
 ---
 title: Modellare l'architettura &apos; dell'app
-description: Informazioni su come creare modelli in Visual Studio come parte della descrizione della struttura generale e del comportamento del sistema software o dell'applicazione.
+description: Informazioni su come creare modelli in Visual Studio come parte della descrizione della struttura complessiva e del comportamento del sistema software o dell'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,19 +9,20 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2be8f4da963c21d9f7f68939421dd7d2d72d0b
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0540c119cfd5b6f6a67b820c46e55539afe2e0244ee2e99db5891ba1d1f901a8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390112"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231535"
 ---
-# <a name="model-your-app39s-architecture"></a>Modellare l'architettura&#39;'app
+# <a name="model-your-app39s-architecture"></a>Modellare l'app&#39;'architettura
 Per garantire che il sistema software o l'applicazione soddisfi le esigenze degli utenti, è possibile creare modelli in Visual Studio come parte della descrizione della struttura complessiva e del comportamento del sistema software o dell'applicazione. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.
 
- Per vedere quali edizioni di Visual Studio supportano questa funzionalità, vedere Supporto dell'edizione per gli strumenti di [architettura e modellazione.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
+ Per informazioni su quali edizioni di Visual Studio questa funzionalità, vedere Supporto dell'edizione per gli strumenti di [architettura e modellazione](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
  Lo scopo di un modello è ridurre l'ambiguità che si verifica nelle descrizioni in linguaggio naturale e consentono all'utente e ai colleghi di visualizzare la progettazione e discutere le progettazioni alternative. Un modello deve essere usato insieme ad altri documenti o discussioni. Un modello di per sé non rappresenta una specifica completa dell'architettura.
 
@@ -48,7 +49,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 - Modello di dati di componenti e interfacce. È possibile creare diagrammi classi per descrivere le informazioni passate tra componenti e archiviate all'interno dei componenti.
 
 ## <a name="understanding-the-requirements"></a><a name="Requirements"></a> Informazioni sui requisiti
- La progettazione di alto livello di un'applicazione completa viene sviluppata più efficacemente con un modello requisiti o altra descrizione delle esigenze degli utenti. Per altre informazioni sui modelli di requisiti, vedere [Modellare i requisiti utente.](../modeling/model-user-requirements.md)
+ La progettazione di alto livello di un'applicazione completa viene sviluppata più efficacemente con un modello requisiti o altra descrizione delle esigenze degli utenti. Per altre informazioni sui modelli di requisiti, vedere Requisiti [utente del modello](../modeling/model-user-requirements.md).
 
  Se il sistema che si sta sviluppando è un componente in un sistema più grande, parte o tutti i requisiti potrebbero essere incorporati nelle interfacce di programmazione.
 
@@ -79,10 +80,10 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
   Le selezioni effettuate influiscono sulla modalità di utilizzo e di interpretazione del modello architettonico. Ad esempio, in un sistema che usa un database, le associazioni in un diagramma classi potrebbero rappresentare relazioni o chiavi esterne nel database, mentre in un sistema basato su file XML, le associazioni potrebbero indicare riferimenti incrociati che usano XPath. In un sistema distribuito i messaggi in un diagramma di sequenza possono rappresentare messaggi su una connessione; in un'applicazione indipendente, possono rappresentare chiamate di funzione.
 
-## <a name="design-patterns"></a><a name="Patterns"></a> Schemi progettuali
+## <a name="design-patterns"></a><a name="Patterns"></a> Modelli di progettazione
  Uno schema progettuale è una struttura sulla modalità di progettazione di un particolare aspetto del software, specialmente uno che ricorre in parti diverse del sistema. Adottando un approccio uniforme nel progetto, è possibile ridurre il costo di progettazione, garantire la coerenza nell'interfaccia utente e ridurre i costi di comprensione e modifica del codice.
 
- Alcuni schemi progettuali generali, ad esempio Observer sono ben conosciuti e ampiamente applicabili. Sono anche disponibili modelli che possono essere applicati solo al progetto. In un sistema di vendita Web, ad esempio, nel codice saranno presenti diverse operazioni in cui vengono apportate modifiche all'ordine di un cliente. Per assicurarsi che lo stato dell'ordine venga visualizzato in modo accurato in ogni fase, tutte queste operazioni devono seguire un particolare protocollo per aggiornare il database.
+ Alcuni schemi progettuali generali, ad esempio Observer sono ben conosciuti e ampiamente applicabili. Sono anche disponibili modelli che possono essere applicati solo al progetto. In un sistema di vendita Web, ad esempio, nel codice verranno eseguite diverse operazioni in cui vengono apportate modifiche all'ordine di un cliente. Per assicurarsi che lo stato dell'ordine venga visualizzato in modo accurato in ogni fase, tutte queste operazioni devono seguire un particolare protocollo per aggiornare il database.
 
  Parte del lavoro dell'architettura software consiste nel determinare quali schemi devono essere adottati nella progettazione. In genere si tratta di un'attività in corso, poiché i nuovi modelli e miglioramenti a modelli esistenti verranno individuati nel corso del progetto. È utile organizzare il piano di sviluppo in modo da esercitarsi con ognuno degli schemi progettuali principali in una fase iniziale.
 

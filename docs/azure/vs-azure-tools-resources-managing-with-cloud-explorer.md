@@ -47,7 +47,7 @@ Cloud Explorer è basato sullo stack di Azure Resource Manager, proprio come il 
 
 Per visualizzare le risorse associate a un account Azure, è innanzitutto necessario aggiungere l'account **Cloud Explorer**.
 
-1. In **Cloud Explorer** selezionare il pulsante **Gestione** account.
+1. Nella **Cloud Explorer** selezionare il pulsante **Gestione** account.
 
    ![Icona delle impostazioni account di Azure di Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 

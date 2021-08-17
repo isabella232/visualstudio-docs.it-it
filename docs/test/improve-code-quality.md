@@ -9,22 +9,23 @@ helpviewer_keywords:
 - unit tests [Visual Studio]
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e2224ffc1776a15453d1382872c2d3f5a9e86c3c
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 344418a1943f9225d5422923b044d04aa6ac4e955060fe2aefa10c27ee2dcfbe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111760952"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121227206"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Prima di tutto esaminare gli strumenti di test in Visual Studio
 
 Gli strumenti di test di Visual Studio consentono allo sviluppatore e al team di creare e gestire standard di eccellenza del codice elevati.
 
 > [!NOTE]
-> Il testing unità è disponibile in tutte le edizioni di Visual Studio. Altri strumenti di test, ad esempio Live Unit Testing e IntelliTest, sono disponibili solo in Visual Studio Enterprise edition. Per altre informazioni sulle edizioni, vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
+> Il testing unità è disponibile in tutte le edizioni di Visual Studio. Altri strumenti di test, ad esempio Live Unit Testing e IntelliTest, sono disponibili solo in Visual Studio Enterprise edizione. Per altre informazioni sulle edizioni, vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="test-explorer"></a>Esplora test
 
@@ -52,7 +53,7 @@ Visual Studio è anche estendibile e consente l'uso di adattatori di unit test d
 [Live Unit Testing](../test/live-unit-testing.md) consente di eseguire automaticamente unit test in background e di visualizzare graficamente i risultati di code coverage e test nell'editor del codice di Visual Studio.
 
 > [!NOTE]
-> Live Unit Testing è disponibile solo nell'edizione Enterprise ed è supportato solo per il codice .NET.
+> Live Unit Testing è disponibile solo Enterprise edizione ed è supportato solo per il codice .NET.
 
 ## <a name="intellitest"></a>IntelliTest
 
@@ -61,7 +62,7 @@ IntelliTest genera automaticamente unit test e dati di test per il codice gestit
 ![IntelliTest in azione](media/devtest-intellitest.png)
 
 > [!NOTE]
-> IntelliTest è disponibile solo nell'edizione Enterprise. È supportato per il codice C# destinato al .NET Framework. .NET Core e .NET Standard non sono attualmente supportati.
+> IntelliTest è disponibile solo in Enterprise edizione. È supportato per il codice C# destinato al .NET Framework. .NET Core e .NET Standard non sono attualmente supportati.
 
 * [Generare unit test per il codice con IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Post di blog su IntelliTest](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -72,7 +73,7 @@ IntelliTest genera automaticamente unit test e dati di test per il codice gestit
 [Code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) determina la percentuale di codice del progetto che viene effettivamente testata dai test codificati come ad esempio gli unit test. Per una protezione efficace dai bug, i test devono analizzare o "coprire" gran parte del codice.
 
 > [!NOTE]
-> Il code coverage è disponibile solo nell'edizione Enterprise.
+> Il code coverage è disponibile solo Enterprise edizione.
 
 L'analisi di code coverage può essere applicata sia al codice gestito che a quello non gestito (nativo).
 
@@ -87,7 +88,7 @@ Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando E
 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) consente di isolare il codice che si sta testando sostituendo altre parti dell'applicazione con stub o shim.
 
 > [!NOTE]
-> Microsoft Fakes sono disponibili solo nell'edizione Enterprise ed è supportato solo per il codice .NET.
+> Microsoft Fakes sono disponibili solo in Enterprise edition ed è supportata solo per il codice .NET.
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Test dell'interfaccia utente con interfaccia utente codificata e Selenium
 

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b2b1ea54741e4548c2f5c3385313d0736b7f93c9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a8653bdc5b16e244247c15755d3e018ecb9b6b5114b6242661648f219fb58de5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055939"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447057"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Passaggio 5: Aggiungere controlli al modulo
 
@@ -55,7 +55,7 @@ In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:Syste
 
 1. Scegliere il nuovo controllo FlowLayoutPanel aggiunto. Passare a **Controlli comuni nella** casella degli **strumenti** e fare doppio clic sull'elemento **Button** per aggiungere un controllo pulsante denominato **button1** a FlowLayoutPanel. Ripetere l'operazione per aggiungere un altro pulsante. L'IDE determina che un pulsante chiamato **button1** esiste già e denomina il successivo **button2**.
 
-1. In genere, si aggiungono gli altri pulsanti usando la casella **degli strumenti**. Questa volta, scegliere **button2** e quindi dalla barra dei menu scegliere **Modifica**  >  **copia** (o premere  + **CTRL+C).** Scegliere Quindi **Modifica**  >  **Incolla dalla** barra dei menu (o premere **CTRL** + **V)** per incollare una copia del pulsante. Ora incollarlo nuovamente. Si noti che l'IDE aggiunge **button3** **e button4** a FlowLayoutPanel.
+1. In genere, si aggiungono gli altri pulsanti usando la casella **degli strumenti**. Questa volta scegliere **button2** e quindi dalla barra dei menu scegliere **Modifica**  >  **copia** (o premere  + **CTRL+C).** Scegliere Quindi **Modifica**  >  **Incolla dalla** barra dei menu (o premere **CTRL** + **V)** per incollare una copia del pulsante. Ora incollarlo nuovamente. Si noti che l'IDE aggiunge **button3** **e button4** a FlowLayoutPanel.
 
     > [!NOTE]
     > È possibile copiare e incollare qualsiasi controllo. L'IDE denomina e posiziona i nuovi controlli in modo logico. Se si incolla un controllo in un contenitore, l'IDE sceglie lo spazio logico successivo per la posizione.

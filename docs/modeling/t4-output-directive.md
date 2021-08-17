@@ -1,6 +1,6 @@
 ---
 title: Direttiva output T4
-description: Si apprenderà Visual Studio modelli di testo, la direttiva di output viene usata per definire l'estensione e la codifica del file trasformato.
+description: Si apprenderà Visual Studio modelli di testo, la direttiva di output viene usata per definire l'estensione del nome file e la codifica del file trasformato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,24 +10,24 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 24578c6bbc9bf5953dcfc4b05bc3118c22447a47e9353c1f2268b00985836790
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b5b8bae97dbed7afbcae7611bd9787979b8ab882
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271030"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055354"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 
-Nei Visual Studio di testo, la direttiva viene usata per definire l'estensione e la codifica del `output` file trasformato.
+In Visual Studio di testo, la direttiva viene usata per definire l'estensione e la codifica del `output` nome file del file trasformato.
 
- Ad esempio, se il progetto Visual Studio include un file modello denominato **MyTemplate.tt** che contiene la direttiva seguente:
+ Ad esempio, se il Visual Studio progetto include un file modello **denominato MyTemplate.tt** che contiene la direttiva seguente:
 
  `<#@output extension=".cs"#>`
 
  quindi Visual Studio genererà un file denominato **MyTemplate.cs**
 
- La direttiva `output` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. L'applicazione otterrà la stringa generata con una chiamata a `TextTransform()`. Per altre informazioni, vedere Generazione di testo in fase [di esecuzione con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
+ La direttiva `output` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. L'applicazione otterrà la stringa generata con una chiamata a `TextTransform()`. Per altre informazioni, vedere [Generazione di testo di run-time con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
 ## <a name="using-the-output-directive"></a>Uso della direttiva output
 

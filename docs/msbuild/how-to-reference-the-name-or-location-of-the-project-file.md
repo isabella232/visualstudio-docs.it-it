@@ -1,6 +1,6 @@
 ---
 title: Fare riferimento al nome o al percorso del file di progetto
-description: Informazioni su come usare le proprietà riservate di MSBuild per fare riferimento al nome o al percorso del file di progetto senza dover creare proprietà personalizzate.
+description: Informazioni su come usare MSBuild riservate per fare riferimento al nome o al percorso del file di progetto senza dover creare proprietà personalizzate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,14 +16,15 @@ ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c6527a4f54abf147d54e73c8f887b57b70ff4243
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95d94b3fb006a717e71b5a010ad38e0b59692d6ae0ce385787f020907dd0e8bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914182"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443477"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedura: Fare riferimento al nome o al percorso del file di progetto
 
@@ -35,7 +36,7 @@ ms.locfileid: "99914182"
 
 #### <a name="to-use-the-project-properties"></a>Per usare le proprietà di progetto
 
-- Fare riferimento alla proprietà nel file di progetto con la notazione $(), come per qualsiasi altra proprietà. Ad esempio:
+- Fare riferimento alla proprietà nel file di progetto con la notazione $(), come per qualsiasi altra proprietà. Esempio:
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -45,7 +46,7 @@ ms.locfileid: "99914182"
 
   Uno dei vantaggi dell'uso di una proprietà riservata è che eventuali modifiche apportate al nome file di progetto vengono incorporate automaticamente. La volta successiva in cui si compila il progetto, il file di output assumerà il nuovo nome senza nessuna altra azione da parte dell'utente.
 
-  Per altre informazioni sull'uso di caratteri speciali nei riferimenti a file o progetti, vedere [caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md).
+  Per altre informazioni sull'uso di caratteri speciali nei riferimenti a file o progetti, [MSBuild caratteri speciali.](../msbuild/msbuild-special-characters.md)
 
 > [!NOTE]
 > Le proprietà riservate non possono essere ridefinite nel file di progetto.
@@ -93,7 +94,7 @@ ms.locfileid: "99914182"
 </Project>
 ```
 
-Nell'esempio viene utilizzata la sintassi della [funzione Property](property-functions.md) per chiamare il metodo statico .NET Framework <xref:System.IO.Path.Combine*?displayProperty=fullName> .
+Nell'esempio viene utilizzata [la sintassi](property-functions.md) della funzione Property per chiamare il .NET Framework statico <xref:System.IO.Path.Combine*?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Vedi anche
 

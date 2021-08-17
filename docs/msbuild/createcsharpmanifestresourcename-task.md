@@ -1,6 +1,6 @@
 ---
 title: Attività CreateCSharpManifestResourceName | Microsoft Docs
-description: Usare l MSBuild'attività CreateCSharpManifestResourceName per creare un nome di manifesto in stile C# da un nome di file resx specificato o da un'altra risorsa.
+description: Usare l MSBuild'attività CreateCSharpManifestResourceName per creare un nome manifesto di tipo C# da un nome di file con estensione resx specificato o da un'altra risorsa.
 ms.custom: SEO-VS-2020
 ms.date: 11/15/2020
 ms.topic: reference
@@ -19,16 +19,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 900665ce4ea91c83559aa470344c3d0b4cd60c6fd7590b3a2bbc376f6f069940
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2c8633972152cb1d8c08b21a2f6dd44bb20e77bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370346"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054912"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>attività CreateCSharpManifestResourceName
 
-Crea un nome di manifesto di tipo C# da un nome di file *resx* specificato o da un'altra risorsa.
+Crea un nome di manifesto di tipo C# da un nome di file con estensione *resx* specificato o da un'altra risorsa.
 
 ## <a name="parameters"></a>Parametri
 
@@ -44,9 +44,9 @@ Crea un nome di manifesto di tipo C# da un nome di file *resx* specificato o da 
 
 ## <a name="remarks"></a>Commenti
 
- [L'attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md) determina il nome della risorsa di manifesto appropriato da assegnare a un determinato file *resx* o a un altro file di risorse. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.
+ [L'attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md) determina il nome di risorsa del manifesto appropriato da assegnare a un determinato file con estensione *resx* o a un altro file di risorse. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedi anche
 

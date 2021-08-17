@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8eb46f324359549d7f74e8edd90d3056820e234e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21556deca0da180d145b11ed155e0d8b993301a00362e9a67a9af1d4aa02f9a6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902388"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121229702"
 ---
 # <a name="refactor-python-code"></a>Effettuare il refactoring del codice Python
 
@@ -42,7 +43,7 @@ Visual Studio offre diversi comandi per la trasformazione e la pulizia automatic
 ## <a name="extract-method"></a>Estrai metodo
 
 1. Selezionare le righe di codice o l'espressione da estrarre in un metodo separato.
-2. Selezionare il comando di menu **modifica**  >    >  **Metodo Estrai** Refactor o digitare **CTRL** + **R**  >  **M**.
+2. Selezionare il **comando di** menu Edit Refactor Extract method (Modifica  >  **refactoring)** o digitare  >   **CTRL** + **R**  >  **M**.
 3. Nella finestra di dialogo visualizzata immettere un nuovo nome di metodo, indicare la posizione in cui estrarlo e selezionare eventuali variabili di chiusura. Le variabili non selezionate per la chiusura vengono trasformate in argomenti del metodo:
 
    ![Finestra di dialogo Estrai metodo](media/code-refactor-extract-method-1.png)
@@ -71,7 +72,7 @@ Infine, Visual Studio esclude l'importazione se un elemento viene normalmente es
 
 Durante la scrittura del codice è facile ritrovarsi con istruzioni `import` per moduli che non vengono usati affatto. Dato che Visual Studio analizza il codice, può determinare automaticamente se un'istruzione `import` è necessaria verificando se il nome importato viene usato nell'ambito dell'istruzione.
 
-Fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor e scegliere **Rimuovi importazioni**, che consente di rimuovere da **tutti gli ambiti** o solo l' **ambito corrente**:
+Fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor e scegliere Rimuovi importazioni **,** che offre le opzioni da rimuovere da **Tutti** gli ambiti o solo dall'ambito **corrente:**
 
 ![Menu Rimuovi importazioni](media/code-refactor-remove-imports-1.png)
 

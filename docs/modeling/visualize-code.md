@@ -33,7 +33,7 @@ ms.locfileid: "121443971"
 
 Questi strumenti facilitano anche la comunicazione con le persone coinvolte nel progetto.
 
-Per vedere quali edizioni di Visual Studio supportano ogni funzionalità, vedere Supporto dell'edizione per gli strumenti di [architettura e modellazione](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
+Per vedere quali edizioni di Visual Studio supportano ogni funzionalità, vedere Supporto [dell'edizione](../modeling/analyze-and-model-your-architecture.md#VersionSupport) per gli strumenti di architettura e modellazione
 
 ## <a name="what-do-you-want-to-do"></a>Per saperne di più
 

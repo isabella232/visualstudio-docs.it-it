@@ -1,6 +1,6 @@
 ---
-title: Informazioni su coautore e componenti aggiuntivi
-description: Informazioni sulla coautorizzazione e sul modo in cui è una funzionalità di Excel per Windows desktop che consente di modificare una cartella di lavoro ospitata nel cloud contemporaneamente ad altri utenti.
+title: Informazioni sulla creazione condivisa e i componenti aggiuntivi
+description: Informazioni sulla creazione condivisa e su come si tratta di una funzionalità di Excel per Windows Desktop che consente di modificare una cartella di lavoro ospitata nel cloud contemporaneamente ad altri utenti.
 ms.custom: SEO-VS-2020
 ms.date: 07/20/2017
 ms.topic: conceptual
@@ -12,20 +12,21 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e7889965590865639149b79e8c6d285e333b3822
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39f490ab9f61c231a59000c4b035cd796405db96
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968788"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025667"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>Informazioni su coautore e componenti aggiuntivi
+# <a name="understand-coauthoring-and-add-ins"></a>Informazioni sulla creazione condivisa e i componenti aggiuntivi
 
-La coautorizzazione è una funzionalità di Excel per Windows desktop che consente di modificare una cartella di lavoro ospitata nel cloud, ovvero OneDrive, OneDrive for business o SharePoint Online, contemporaneamente ad altri utenti. Con l'aggiunta di questa funzionalità, potrebbe essere necessario apportare modifiche alla soluzione Excel per assicurarsi che funzioni correttamente anche quando gli utenti sono coautori. Vedere [informazioni sulla coautorizzazione in Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
+La creazione condivisa è una funzionalità di Excel per Windows Desktop che consente di modificare contemporaneamente una cartella di lavoro ospitata nel cloud (ovvero OneDrive, OneDrive for Business o SharePoint Online) con altri utenti. Con l'aggiunta di questa funzionalità, potrebbe essere necessario apportare modifiche alla soluzione Excel per assicurarsi che funzioni senza problemi anche quando gli utenti collaborano alla creazione condivisa. Vedere [Informazioni sulla creazione condivisa in Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
 
-Nota: la coautorizzazione per Windows desktop Excel è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori Office365. Gli utenti che hanno acquistato una licenza perpetua per Office 2016 o versioni precedenti non hanno attualmente accesso alla funzionalità di cocreazione. (Excel online, Excel per Android, Excel per iOS e Excel Mobile in Windows Store supportano anche la cocreazione).
+Nota: la creazione condivisa per Windows Desktop Excel è stata introdotta nel 2017 ed è attualmente disponibile per i sottoscrittori di Office 365. Gli utenti che hanno acquistato una licenza perpetua Office 2016 o versioni precedenti non hanno attualmente accesso alla funzionalità di creazione condivisa. (Excel Online, Excel per Android, Excel per iOS e Excel Mobile in Windows Store supportano anche la creazione condivisa).
 
 ## <a name="see-also"></a>Vedi anche
-- [Soluzioni Excel](./excel-solutions.md)
+- [Excel soluzioni](./excel-solutions.md)

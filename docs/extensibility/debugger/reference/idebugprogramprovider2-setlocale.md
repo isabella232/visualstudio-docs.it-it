@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04bac56536b81b48901be8327910de13a14d682122fcf4d860e0fa3c329372cd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 633ce11ac2e28dd6294c3169c86697279731f9b8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402519"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087743"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 Stabilisce le impostazioni locali da usare per tutte le risorse specifiche delle impostazioni locali.

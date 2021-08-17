@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 043251ad59cc61cd250aa0213bbda8bf7d4e1fc16d5e839d15698ff6911c5ba2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8c496e30b5d20bfad7b06e44660045e2e2394ed1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073071"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Specifica gli attributi dell'evento.
@@ -65,7 +65,7 @@ Indica che l'evento è sincrono. rispondere tramite [ContinueFromSynchronousEven
 Indica che si tratta di un evento di arresto. Deve essere combinato con o `EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS` .
 
 `EVENT_ASYNC_STOP`\
-Indica un evento di arresto asincrono. Non è attualmente presente alcun evento di questo tipo. Questo flag è solo un segnaposto.
+Indica un evento di arresto asincrono. Non esiste attualmente alcun evento di questo tipo. Questo flag è solo un segnaposto.
 
 `EVENT_SYNC_STOP`\
 Indica un evento di arresto sincrono (una combinazione `EVENT_SYNCHRONOUS` di e `EVENT_STOPPING` ). Questo valore viene usato da un motore di debug quando invia un evento di arresto. La risposta viene effettuata tramite una chiamata a [Execute,](../../../extensibility/debugger/reference/idebugprogram2-execute.md) [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)o [Continue.](../../../extensibility/debugger/reference/idebugprogram2-continue.md)
@@ -77,7 +77,7 @@ Indica un evento inviato immediatamente e in modo sincrono all'IDE. Questo flag 
 L'evento è il risultato della valutazione dell'espressione.
 
 ## <a name="remarks"></a>Commenti
-Questi valori vengono passati nel `dwAttrib` parametro del [metodo Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+Questi valori vengono passati nel `dwAttrib` parametro del [metodo](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Event.
 
 Questi valori possono essere combinati con un oggetto bit per `OR` bit.
 

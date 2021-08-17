@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d2cf06916c4dd149aa948c71d5f72eff307fcd45ea45227e91f89528e00a3fd9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bd80246dfa98c898bd46518ebfc55c49b92504aa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398021"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055185"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Scrivere codice per personalizzare un linguaggio specifico di dominio
 
@@ -73,7 +73,7 @@ Mantenere gli oggetti nello Store (anziché semplicemente come oggetti normali) 
 
 - **Regole ed eventi**. È possibile definire regole che vengono applicate ogni volta che vengono apportate modifiche specificate. Le regole vengono usate, ad esempio, per mantenere le forme nel diagramma aggiornate con gli elementi del modello che presentano. Per altre informazioni, vedere [Risposta e propagazione delle modifiche.](../modeling/responding-to-and-propagating-changes.md)
 
-- **Serializzazione** di . Store fornisce un modo standard per serializzare gli oggetti in esso contenuti in un file. È possibile personalizzare le regole per la serializzazione e la deserializzazione. Per altre informazioni, vedere [Personalizzazione di file Archiviazione serializzazione XML.](../modeling/customizing-file-storage-and-xml-serialization.md)
+- **Serializzazione** di . Store fornisce un modo standard per serializzare gli oggetti in esso contenuti in un file. È possibile personalizzare le regole per la serializzazione e la deserializzazione. Per altre informazioni, vedere [Personalizzazione di file Archiviazione e serializzazione XML.](../modeling/customizing-file-storage-and-xml-serialization.md)
 
 ## <a name="see-also"></a>Vedi anche
 

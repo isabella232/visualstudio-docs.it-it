@@ -28,34 +28,34 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c6037bd6ed3b7899ff00bce202df7707356683a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca57bf1e65852e0071f2d84c529309ac46a066fd2a9b629ec16c7f94dd44614b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971401"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121232003"
 ---
 # <a name="understand-build-configurations"></a>Informazioni sulle configurazioni della build
 
-Sono necessarie configurazioni di compilazione quando è necessario compilare i progetti con impostazioni diverse. Ad esempio, il **debug** e il **rilascio** sono configurazioni e le diverse opzioni del compilatore vengono usate di conseguenza durante la compilazione.  Una configurazione è attiva ed è indicata nella barra dei comandi nella parte superiore dell'IDE.
+Sono necessarie configurazioni di compilazione quando è necessario compilare i progetti con impostazioni diverse. Debug e **Release,** ad **esempio, sono** configurazioni e durante la compilazione vengono usate opzioni del compilatore diverse.  Una configurazione è attiva e viene indicata nella barra dei comandi nella parte superiore dell'IDE.
 
 ![Configurazione attiva](media/understanding-build-configurations/active-config.png)
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Build configurations in Visual Studio for Mac](/visualstudio/mac/configurations) (Compilazione di configurazioni in Visual Studio for Mac).
 
-La configurazione e il controllo della piattaforma in cui vengono archiviati i file di output compilati. In genere, quando Visual Studio compila il progetto, l'output viene inserito in una sottocartella del progetto denominata con la configurazione attiva (ad esempio *bin/debug/x86*), ma è possibile modificarla.
+La configurazione e il controllo della piattaforma in cui vengono archiviati i file di output compilati. In genere, quando Visual Studio compila il progetto, l'output viene inserito in una sottocartella del progetto denominata con la configurazione attiva (ad esempio, *bin/Debug/x86),* ma è possibile modificare questa impostazione.
 
-È possibile creare configurazioni di compilazione personalizzate a livello di soluzione e di progetto. La configurazione della soluzione determina i progetti inclusi nella compilazione quando tale configurazione è attiva. Verranno compilati solo i progetti specificati nella configurazione della soluzione attiva. Se sono selezionate più piattaforme di destinazione in Configuration Manager, vengono compilati tutti i progetti che si applicano a tale piattaforma. La configurazione del progetto determina le impostazioni di compilazione e le opzioni del compilatore utilizzate quando si compila il progetto.
+È possibile creare configurazioni di compilazione personalizzate a livello di soluzione e di progetto. La configurazione della soluzione determina quali progetti vengono inclusi nella compilazione quando tale configurazione è attiva. Verranno compilati solo i progetti specificati nella configurazione della soluzione attiva. Se vengono selezionate più piattaforme di destinazione Gestione configurazione, vengono compilati tutti i progetti che si applicano a tale piattaforma. La configurazione del progetto determina quali impostazioni di compilazione e opzioni del compilatore vengono usate quando si compila il progetto.
 
-Per creare, selezionare, modificare o eliminare una configurazione, è possibile usare **Gestione configurazione**. Per aprirlo, sulla barra dei menu scegliere **Compila**  >  **Configuration Manager** o digita **configurazione** nella casella di ricerca. È inoltre possibile usare l'elenco **Configurazioni soluzione** sulla barra degli strumenti **Standard** per selezionare una configurazione o aprire **Gestione configurazione**.
+Per creare, selezionare, modificare o eliminare una configurazione, è possibile usare **Gestione configurazione**. Per aprirlo, sulla barra dei menu scegliere Compila Gestione configurazione oppure digitare  >   **Configurazione** nella casella di ricerca. È inoltre possibile usare l'elenco **Configurazioni soluzione** sulla barra degli strumenti **Standard** per selezionare una configurazione o aprire **Gestione configurazione**.
 
 ![Configuration Manager](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
-> Se le impostazioni di configurazione della soluzione sulla barra degli strumenti non sono disponibili e non è possibile accedere alla **Configuration Manager**, è [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] possibile che vengano applicate le impostazioni di sviluppo. Per altre informazioni, vedere [Procedura: Gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Se non è possibile trovare le impostazioni di configurazione della soluzione sulla barra degli strumenti e non è possibile accedere al Gestione configurazione **,** è possibile che le impostazioni di sviluppo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] siano applicate. Per altre informazioni, vedere [Procedura: Gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Per impostazione predefinita, le configurazioni di **debug** e **rilascio** sono incluse nei progetti creati mediante i [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelli. Una configurazione di **debug** supporta il debug di un'app e una **configurazione di versione compila** una versione dell'app che può essere distribuita. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). È inoltre possibile creare configurazioni personalizzate per progetti e soluzioni. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
+Per impostazione predefinita, **le configurazioni** **Debug e Release** sono incluse nei progetti creati tramite [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelli. Una **configurazione** di debug supporta il debug di un'app e una configurazione **release** compila una versione dell'app che può essere distribuita. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). È inoltre possibile creare configurazioni personalizzate per progetti e soluzioni. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Configurazioni di soluzioni
 
@@ -69,21 +69,21 @@ La configurazione per la soluzione attiva fornisce anche il contesto all'IDE. Se
 
 ## <a name="project-configurations"></a>Configurazioni di progetto
 
-La configurazione e la piattaforma di destinazione di un progetto vengono utilizzate insieme per specificare le impostazioni di compilazione e le opzioni del compilatore da utilizzare durante la compilazione. Un progetto può avere impostazioni diverse per ogni combinazione di configurazione e piattaforma. Per modificare le proprietà di un progetto, aprire il menu di scelta rapida del progetto in **Esplora soluzioni**, quindi scegliere **Proprietà**.  Nella parte superiore della scheda **compilazione** di progettazione progetti scegliere una configurazione attiva per modificare le impostazioni di compilazione.
+La configurazione e la piattaforma di destinazione di un progetto vengono usate insieme per specificare le impostazioni di compilazione e le opzioni del compilatore da usare quando viene compilato. Un progetto può avere impostazioni diverse per ogni combinazione di configurazione e piattaforma. Per modificare le proprietà di un progetto, aprire il menu di scelta rapida per il progetto in **Esplora soluzioni**, quindi scegliere **Proprietà**.  Nella parte superiore della scheda **Compilazione di** Creazione progetti scegliere una configurazione attiva per modificarne le impostazioni di compilazione.
 
-![Configurazioni di progettazione progetti](media/understanding-build-configurations/project-designer-configuration.png)
+![Project della finestra di progettazione](media/understanding-build-configurations/project-designer-configuration.png)
 
 ## <a name="building-multiple-configurations"></a>Compilazione di più configurazioni
 
-Quando si compila una soluzione usando il comando **Compila**  >  **compilazione soluzione** , Visual Studio compila solo la configurazione attiva. Vengono compilati tutti i progetti specificati nella configurazione della soluzione e l'unica configurazione di progetto compilata è quella specificata nella configurazione soluzione attiva e nella piattaforma soluzione attiva, che viene visualizzata nella barra degli strumenti di Visual Studio. Ad esempio, **debug** e **x86**. Non vengono compilate altre configurazioni e piattaforme definite.
+Quando si compila una soluzione usando il **comando** Compila  >  **soluzione,** Visual Studio compila solo la configurazione attiva. Vengono compilati tutti i progetti specificati nella configurazione della soluzione e l'unica configurazione di progetto compilata è quella specificata nella configurazione della soluzione attiva e nella piattaforma della soluzione attiva, visualizzata nella barra degli strumenti di Visual Studio. Ad esempio, **Debug** e **x86**. Altre configurazioni e piattaforme definite non vengono compilate.
 
-Se si desidera compilare più configurazioni e piattaforme in un'unica azione, è possibile **utilizzare l'opzione Compila**  >  **batch** Build in Visual Studio. Per accedere a questa funzionalità, premere **CTRL** + **Q** per aprire la casella di ricerca e immettere `Batch build` . La compilazione batch non è disponibile per tutti i tipi di progetto. Vedere [procedura: compilare più configurazioni simultaneamente](how-to-build-multiple-configurations-simultaneously.md).
+Se si vogliono compilare più configurazioni e piattaforme in un'unica azione, è possibile usare **l'opzione Build** Batch  >  Build (Compila compilazione **batch)** in Visual Studio. Per accedere a questa funzionalità, **premere CTRL** + **Q** per aprire la casella di ricerca e immettere `Batch build` . La compilazione batch non è disponibile per tutti i tipi di progetto. Vedere [Procedura: Compilare più configurazioni contemporaneamente.](how-to-build-multiple-configurations-simultaneously.md)
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Modalità di assegnazione delle configurazioni di progetto in Visual Studio
 
 Quando si definisce una nuova configurazione di soluzione e non la si copia da una già esistente, in Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di progetto predefinite. I criteri vengono valutati nell'ordine indicato.
 
-1. Se un progetto ha un nome di configurazione *\<configuration name> \<platform name>*() che corrisponde esattamente al nome della nuova configurazione della soluzione, viene assegnata tale configurazione. I nomi delle configurazioni non rispettano la distinzione tra maiuscole e minuscole.
+1. Se un progetto ha *\<configuration name> \<platform name>* un nome di configurazione ( ) che corrisponde esattamente al nome della nuova configurazione della soluzione, tale configurazione viene assegnata. I nomi delle configurazioni non rispettano la distinzione tra maiuscole e minuscole.
 
 1. Se il progetto include un nome di configurazione in cui la parte del nome corrisponde alla nuova configurazione per la soluzione, tale configurazione viene assegnata, anche se le piattaforme non coincidono.
 
@@ -97,7 +97,7 @@ In Visual Studio vengono usati i criteri seguenti per assegnare configurazioni d
 
 - Se in una configurazione di progetto non è specificata una piattaforma oppure ne è specificata una sola, viene trovata o aggiunta una configurazione per la soluzione il cui nome corrisponde a quello della nuova configurazione di progetto. Il nome predefinito di questa configurazione di soluzione non include un nome di piattaforma. assume il formato *\<project configuration name>* .
 
-- Se un progetto supporta più piattaforme, verrà trovata o aggiunta una configurazione per la soluzione per ogni piattaforma supportata. Il nome di ogni configurazione di soluzione include sia il nome della configurazione del progetto sia il nome della piattaforma e *\<project configuration name> \<platform name>* ha il formato.
+- Se un progetto supporta più piattaforme, verrà trovata o aggiunta una configurazione per la soluzione per ogni piattaforma supportata. Il nome di ogni configurazione di soluzione include sia il nome *\<project configuration name> \<platform name>* della configurazione del progetto che il nome della piattaforma e ha il formato .
 
 ## <a name="see-also"></a>Vedi anche
 

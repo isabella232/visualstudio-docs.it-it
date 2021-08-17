@@ -1,6 +1,6 @@
 ---
 title: EndTrackingContext | Microsoft Docs
-description: Informazioni sulla sintassi, sul valore restituito e sui requisiti da usare MSBuild EndTrackingContext per terminare il contesto di rilevamento corrente.
+description: Informazioni sulla sintassi, sul valore restituito e sui requisiti per usare MSBuild EndTrackingContext per terminare il contesto di rilevamento corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: debfb2a287c8efe447c0c1fa299ddf15d25936f802609c4b00a55dfb91a646f6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4f4a0cd1b327f9be99b07e90bc7564a17ec13472
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397930"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054795"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 

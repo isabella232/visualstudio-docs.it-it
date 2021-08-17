@@ -25,7 +25,7 @@ Per continuare a usare Visual Studio termine di un periodo di valutazione, sbloc
 
 ## <a name="use-an-online-subscription"></a>Usare una sottoscrizione online
 
-1. Scegliere **il** pulsante Accedi nell'angolo superiore destro dell'IDE (oppure passare a **Account file** Impostazioni per aprire la finestra di dialogo Account Impostazioni e quindi scegliere il pulsante  >    Accedi). 
+1. Scegliere **il** pulsante Accedi nell'angolo superiore destro dell'IDE oppure passare a **Account file** Impostazioni per aprire la finestra di dialogo Account Impostazioni e quindi scegliere il pulsante  >    Accedi. 
 
 1. Immettere le credenziali per un account Microsoft oppure un account aziendale o dell'istituto di istruzione. Visual Studio individua una sottoscrizione di Visual Studio o un'organizzazione di Azure DevOps associata all'account.
 
@@ -43,7 +43,7 @@ Per altre informazioni sulle sottoscrizioni Visual Studio e sul loro funzionamen
 > [!TIP]
 > Le versioni preliminari di Visual Studio non includono codici Product Key. Per usare le versioni preliminari, è necessario accedere all'IDE.
 
-Per altre informazioni su Visual Studio codici Product Key per Visual Studio e su come ottenerli, vedere la pagina [Using product keys in Visual Studio subscriptions (Uso](/visualstudio/subscriptions/product-keys) dei codici Product Key nelle sottoscrizioni Visual Studio prodotto).
+Per altre informazioni su Visual Studio codici Product Key per Visual Studio e su come ottenerli, vedere la pagina Uso dei codici Product Key nelle sottoscrizioni Visual Studio [prodotto.](/visualstudio/subscriptions/product-keys)
 
 ## <a name="update-a-stale-license"></a>Aggiornare una licenza non aggiornato
 
@@ -51,21 +51,21 @@ Potrebbe essere visualizzato un messaggio Visual Studio che indica che la licenz
 
 ![Messaggio di licenza non aggiornata di Visual Studio](../ide/media/vs2017_stale-license.png)
 
-Questo messaggio indica che, anche se la sottoscrizione potrebbe essere ancora valida, il token di licenza che Visual Studio per mantenere aggiornata la sottoscrizione non è stato aggiornato. Visual Studio segnala che la licenza non è disponibile per uno dei motivi seguenti:
+Questo messaggio indica che, anche se la sottoscrizione potrebbe essere ancora valida, il token di licenza Visual Studio per mantenere aggiornata la sottoscrizione non è stato aggiornato. Visual Studio che la licenza non è disponibile per uno dei motivi seguenti:
 
 * Non è stato usato Visual Studio o non si è connessi a Internet per un periodo di tempo prolungato.
 * È stata effettuata la disconnessione da Visual Studio.
 
 Prima che il token della licenza diventi obsoleto, Visual Studio visualizza un messaggio di avviso che richiede di immettere nuovamente le credenziali.
 
-Se le credenziali non vengono nuovamente specificate, il token inizia a non essere più recente e la finestra di dialogo Account Impostazioni indica **il** numero di giorni rimasti prima della scadenza del token. Dopo la scadenza del token, è necessario immettere nuovamente le credenziali per l'account prima di continuare a usare Visual Studio.
+Se le credenziali non vengono reimerite, il token inizia a non essere più recente e la finestra di dialogo Account **Impostazioni** indica il numero di giorni rimasti prima della scadenza del token. Dopo la scadenza del token, è necessario immettere nuovamente le credenziali per l'account prima di continuare a usare Visual Studio.
 
 > [!Important]
 > Se si usa Visual Studio per lunghi periodi di tempo in ambienti con accesso a Internet assente o limitato, è consigliabile usare un codice Product Key per sbloccare Visual Studio ed evitare interruzioni.
 
 ## <a name="update-an-expired-license"></a>Aggiornare una licenza scaduta
 
-Se la sottoscrizione è scaduta e non si dispone più dei diritti di accesso Visual Studio, è necessario rinnovare la sottoscrizione o aggiungere un altro account con una sottoscrizione. Per altre informazioni sulla licenza in uso, passare a **Account** file Impostazioni e esaminare le informazioni sulla licenza sul lato  >   destro della finestra di dialogo. Se è associata un'altra sottoscrizione a un  account diverso, aggiungerlo all'elenco Tutti gli account sul lato sinistro della finestra di dialogo selezionando il collegamento Aggiungi **un account.**
+Se la sottoscrizione è scaduta e non si dispone più dei diritti di accesso Visual Studio, è necessario rinnovare la sottoscrizione o aggiungere un altro account con una sottoscrizione. Per altre informazioni sulla licenza in uso, passare a **Account** file Impostazioni e esaminare le informazioni sulla licenza sul  >   lato destro della finestra di dialogo. Se è associata un'altra sottoscrizione a un  account diverso, aggiungerlo all'elenco Tutti gli account sul lato sinistro della finestra di dialogo selezionando il collegamento Aggiungi **un account.**
 
 ## <a name="get-support"></a>Supporto
 

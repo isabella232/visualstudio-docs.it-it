@@ -26,7 +26,7 @@ Questo articolo illustra come compilare un progetto ASP.NET Core per fungere da 
 
 Attualmente, Visual Studio modelli ASP.NET Core applicazione a pagina singola che supportano Angular e React. I modelli forniscono una cartella predefinita dell'app client nei progetti ASP.NET Core che contiene i file e le cartelle di base di ogni framework.
 
-A partire Visual Studio 2022 Preview 2, è possibile usare il metodo descritto in questo articolo per creare ASP.NET Core a pagina singola che:
+A partire Visual Studio 2022 Preview 2, è possibile usare il metodo descritto in questo articolo per creare ASP.NET Core applicazioni a pagina singola che:
 
 - Inserire l'app client in un progetto separato, all'esterno del ASP.NET Core progetto
 - Creare il progetto client in base all'interfaccia della riga di comando del framework installata nel computer
@@ -35,7 +35,7 @@ A partire Visual Studio 2022 Preview 2, è possibile usare il metodo descritto i
 
 Assicurarsi di avere installato quanto segue:
 
-- Visual Studio 2022 Preview 2 o versione successiva con il carico di **lavoro ASP.NET sviluppo** Web e web installato. Passare alla pagina [Visual Studio download per](https://visualstudio.microsoft.com/downloads/) installarlo gratuitamente.
+- Visual Studio 2022 Preview 2 o versione successiva con il carico di lavoro ASP.NET **sviluppo** Web e web installato. Passare alla pagina [Visual Studio download per](https://visualstudio.microsoft.com/downloads/) installarlo gratuitamente.
   Se è necessario installare il carico di lavoro e si dispone già di Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
 - npm ( [https://www.npmjs.com/](https://www.npmjs.com/) ) 
 - npx ( [https://www.npmjs.com/package/npx](https://www.npmjs.com/package/npx) )
@@ -46,7 +46,7 @@ Assicurarsi di avere installato quanto segue:
 
    :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="Creare un nuovo progetto":::
 
-1. Cercare React nella barra di ricerca nella parte superiore e quindi selezionare **JavaScript React Modello .** Il modello di React TypeScript autonomo non è attualmente supportato in questa esercitazione.
+1. Cercare React nella barra di ricerca nella parte superiore e quindi selezionare **JavaScript React modello autonomo.** Il modello di React TypeScript autonomo non è attualmente supportato in questa esercitazione.
 
    :::image type="content" source="media/vs-2022/react-choose-template.png" alt-text="Scelta di un modello":::
 
@@ -76,11 +76,11 @@ Assicurarsi di avere installato quanto segue:
 
    Dopo aver creato il progetto, Esplora soluzioni dovrebbe essere simile al seguente:
 
-   :::image type="content" source="media/vs-2022/asp-net-core-with-react-solution-explorer.png" alt-text="Esaminare le Esplora soluzioni":::
+   :::image type="content" source="media/vs-2022/asp-net-core-with-react-solution-explorer.png" alt-text="Esaminare i Esplora soluzioni":::
 
 ## <a name="set-the-project-properties"></a>Impostare le proprietà del progetto
 
-1. Fare clic con il pulsante destro del ASP.NET Core progetto e scegliere **Proprietà**.
+1. Fare clic con il pulsante destro ASP.NET Core progetto e scegliere **Proprietà**.
 
    :::image type="content" source="media/vs-2022/asp-net-core-project-properties.png" alt-text="Aprire le proprietà del progetto"::: 
  
@@ -104,7 +104,7 @@ Assicurarsi di avere installato quanto segue:
 
 Premere **F5** o selezionare il **pulsante Avvia** nella parte superiore della finestra. Verranno visualizzati due prompt dei comandi:
 
-- Progetto api ASP.NET Core in esecuzione
+- Progetto API ASP.NET Core in esecuzione
 - npm che esegue il comando react-scripts start
 
 Verrà visualizzata un'app React, popolata tramite l'API.
@@ -117,4 +117,4 @@ Può essere visualizzato l'errore seguente:
 [HPM] Error occurred while trying to proxy request /weatherforecast from localhost:4200 to https://localhost:5001 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
 ```
 
-Se si verifica questo problema, molto probabilmente il front-end è stato avviato prima del back-end. Dopo aver visualizzato il prompt dei comandi back-end in esecuzione, è sufficiente aggiornare l'app React nel browser.
+Se viene visualizzato questo problema, molto probabilmente il front-end è stato avviato prima del back-end. Dopo aver visualizzato il prompt dei comandi back-end in esecuzione, è sufficiente aggiornare l'app React nel browser.

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26ffe65e84f8c878644e3fd4cec7fa3ad16ba544c221c8a02779870253d923df
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 31a0d1ea0d0b859402fbf8800fc10728c5c914b9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338709"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087730"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 Ottiene la [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) che descrive una proprietà.
@@ -53,13 +53,13 @@ int GetPropertyInfo (
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di valori [dell'DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica quali campi devono essere compilati nella `pPropertyInfo` struttura .
+[in] Combinazione di valori [dell'enumerazione DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica quali campi devono essere compilati nella `pPropertyInfo` struttura .
 
 `nRadix`\
-[in] Radice da utilizzare nella formattazione di qualsiasi informazione numerica.
+[in] Radice da usare per la formattazione di qualsiasi informazione numerica.
 
 `dwTimeout`\
-[in] Specifica il tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere a tempo indeterminato.
+[in] Specifica il tempo massimo di attesa, in millisecondi, prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
 
 `rgpArgs`\
 [in, out] Riservato per un uso futuro; impostato su un valore Null.

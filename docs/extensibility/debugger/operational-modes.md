@@ -10,14 +10,15 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 559df92545f4c14eb0575e7ef758e73028349b76
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0af5f083c54fbb587bcbed52bc59968ee0477e5f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899108"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073318"
 ---
 # <a name="operational-modes"></a>Modalità operative
 Esistono tre modalità in cui l'IDE può operare, come indicato di seguito:
@@ -36,7 +37,7 @@ Esistono tre modalità in cui l'IDE può operare, come indicato di seguito:
  In modalità progettazione vengono usate solo alcune funzionalità di debug. Uno sviluppatore può scegliere di impostare punti di interruzione o creare espressioni di controllo. Il de non viene mai caricato o chiamato mentre l'IDE è in modalità progettazione. L'interazione con de viene eseguita solo durante le modalità di esecuzione e interruzione.
 
 ## <a name="run-mode"></a><a name="vsconoperationalmodesanchor2"></a> Modalità di esecuzione
- La modalità di esecuzione si verifica quando un programma viene eseguito in una sessione di debug nell'IDE. L'applicazione viene eseguita fino alla chiusura, fino a quando non viene raggiunto un punto di interruzione o fino a quando non viene generata un'eccezione. Quando l'applicazione viene eseguita fino alla chiusura, il de passa alla modalità progettazione. Quando viene raggiunto un punto di interruzione o viene generata un'eccezione, il de passa alla modalità di interruzione.
+ La modalità di esecuzione si verifica quando un programma viene eseguito in una sessione di debug nell'IDE. L'applicazione viene eseguita fino alla chiusura, fino a quando non viene raggiunto un punto di interruzione o fino a quando non viene generata un'eccezione. Quando l'applicazione viene eseguita fino alla chiusura, il de passa alla modalità progettazione. Quando viene raggiunto un punto di interruzione o viene generata un'eccezione, de passa alla modalità di interruzione.
 
 ## <a name="break-mode"></a><a name="vsconoperationalmodesanchor3"></a> Modalità di interruzione
  La modalità di interruzione si verifica quando l'esecuzione del programma di debug viene sospesa. La modalità di interruzione offre allo sviluppatore uno snapshot dell'applicazione al momento dell'interruzione e consente allo sviluppatore di analizzare lo stato dell'applicazione e modificare la modalità di esecuzione dell'applicazione. Lo sviluppatore può visualizzare e modificare il codice, esaminare o modificare i dati, riavviare l'applicazione, terminare l'esecuzione o continuare l'esecuzione dallo stesso punto.
@@ -56,5 +57,5 @@ Esistono tre modalità in cui l'IDE può operare, come indicato di seguito:
 
  Quando il programma passa correttamente alla riga di codice successiva o a una funzione oppure viene eseguito fino al cursore o a un punto di interruzione impostato, la funzione de passa automaticamente alla modalità di interruzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo dell'esecuzione](../../extensibility/debugger/control-of-execution.md)

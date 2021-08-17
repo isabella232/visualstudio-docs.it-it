@@ -1,6 +1,6 @@
 ---
 description: Imposta il valore di questa proprietà e restituisce un messaggio di errore, se necessario.
-title: 'IDebugProperty3:: SetValueAsStringWithError | Microsoft Docs'
+title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 021d2fed674408e1aa9ab6a7e71be83c1c2737ce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 94b8c33fe806814e204d8718196b0e424f0738dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083921"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087717"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Imposta il valore di questa proprietà e restituisce un messaggio di errore, se necessario.
@@ -48,16 +49,16 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Parametri
 `pszValue`\
-in Valore da impostare.
+[in] Valore da impostare.
 
 `dwRadix`\
-in Radice del valore da impostare.
+[in] Radice del valore da impostare.
 
 `dwTimeout`\
-in Tempo di attesa per l'impostazione del valore (indica l'attesa per `INFINITE` sempre).
+[in] Tempo di attesa per l'impostazione del valore ( indica `INFINITE` un'attesa infinita).
 
 `errorString`\
-out Se si è verificato un errore durante l'impostazione del valore, questo contiene il motivo dell'errore.
+[out] Se si è verificato un errore durante l'impostazione del valore, questo contiene il motivo dell'errore.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
@@ -66,7 +67,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 Il valore in ingresso potrebbe essere un'espressione da valutare.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CProperty** che espone l'interfaccia [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CProperty** che espone l'interfaccia [IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(

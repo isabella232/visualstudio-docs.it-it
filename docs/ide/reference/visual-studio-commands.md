@@ -12,14 +12,15 @@ ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2032a10d24f0d5cf2488f33d83d444df8d5135bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e16e6d084a4e39f58fa18ab7becd5c2f5264e53bb1775fd99240ce427062b46
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836229"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447001"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 
@@ -33,7 +34,7 @@ A molti comandi sono associati alias. Per un elenco di alias dei comandi, vedere
 
 ## <a name="escape-character"></a>Carattere di escape
 
-Il carattere di escape per i comandi di Visual Studio è l'accento circonflesso (^). Il carattere di escape indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
+Il carattere di escape per i comandi di Visual Studio è l'accento circonflesso (^). Il carattere di escape indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Esempio:
 
 ```
 >Edit.Find ^^t /regex
@@ -58,16 +59,16 @@ I comandi seguenti accettano opzioni o argomenti:
 | [Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md) | Visualizza lo stack di chiamate corrente. |
 | [Elenca disassembly](../../ide/reference/list-disassembly-command.md) | Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori. |
 | [Elenca memoria](../../ide/reference/list-memory-command.md) | Visualizza il contenuto dell'intervallo di memoria specificato. |
-| [Elenca moduli](../../ide/reference/list-modules-command.md) | Elenca i moduli disponibili per il processo corrente. |
+| [Elencare i moduli](../../ide/reference/list-modules-command.md) | Elenca i moduli disponibili per il processo corrente. |
 | [Elenca registri](../../ide/reference/list-registers-command.md) | Visualizza un elenco di registri. |
 | [Elenca origine](../../ide/reference/list-source-command.md) | Visualizza le righe del codice sorgente specificate. |
 | [Elenca thread](../../ide/reference/list-threads-command.md) | Visualizza un elenco dei thread del programma corrente. |
 | [Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md) | Copia interamente l'input e l'output della finestra di comando in un file. |
 | [Nuovo file](../../ide/reference/new-file-command.md) | Crea un nuovo file e lo aggiunge al progetto attualmente selezionato. |
 | [Apri file](../../ide/reference/open-file-command.md) | Apre un file esistente e consente di specificare un editor. |
-| [Apri progetto](../../ide/reference/open-project-command.md) | Apre un progetto esistente e consente di aggiungerlo alla soluzione corrente. |
+| [Aprire Project](../../ide/reference/open-project-command.md) | Apre un progetto esistente e consente di aggiungerlo alla soluzione corrente. |
 | [Stampa](../../ide/reference/print-command.md) | Valuta l'espressione e visualizza i risultati o il testo specificato. |
-| [Comando controllo rapido](../../ide/reference/quick-watch-command.md) | Visualizza il testo selezionato o specificato nel campo **Espressione** della finestra di dialogo **Espressione di controllo rapida** . |
+| [Comando Controllo rapido](../../ide/reference/quick-watch-command.md) | Visualizza il testo selezionato o specificato nel campo **Espressione** della finestra di dialogo **Espressione di controllo rapida** . |
 | [Replace](../../ide/reference/replace-command.md) | Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** . |
 | [Sostituisci nei file](../../ide/reference/replace-in-files-command.md) | Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nella [Sostituisci nei file](../../ide/replace-in-files.md). |
 | [Imposta stack frame corrente](../../ide/reference/set-current-stack-frame-command.md) | Consente di visualizzare uno specifico stack frame. |
@@ -83,5 +84,5 @@ I comandi seguenti accettano opzioni o argomenti:
 ## <a name="see-also"></a>Vedi anche
 
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

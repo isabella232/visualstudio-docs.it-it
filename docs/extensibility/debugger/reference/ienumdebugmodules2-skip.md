@@ -1,5 +1,5 @@
 ---
-description: Ignora il numero specificato di elementi nell'enumerazione dei moduli.
+description: Ignora il numero specificato di elementi nell'enumerazione modules.
 title: IEnumDebugModules2::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -49,7 +49,7 @@ int Skip(
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è maggiore del numero di elementi `celt` rimanenti; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Se specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione `celt` viene impostata sulla fine e viene `S_FALSE` restituito .
+ Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione viene impostata sulla fine e viene `S_FALSE` restituito .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

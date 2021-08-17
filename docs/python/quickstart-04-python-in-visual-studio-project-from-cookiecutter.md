@@ -1,21 +1,22 @@
 ---
-title: Guida introduttiva-creare progetti python usando tagliatore
+title: Guida introduttiva- Creare progetti Python con Cookiecutter
 description: In questa guida introduttiva viene creato un progetto Visual Studio per Python tramite un modello Cookiecutter.
 ms.date: 02/25/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c8a3727faa01b69962dd3dc456ac7b704f62882
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e49df5fd41ac317a2550f0f8eea9f6d85418333f1adcd97db3f9d69a466f117b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902436"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121229585"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Guida introduttiva: Creare un progetto da un modello di Cookiecutter
 
@@ -25,7 +26,7 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 
 1. Avviare Visual Studio.
 
-1. Selezionare **file**  >  **nuovo**  >  **da tagliatore**. Questo comando apre una finestra in Visual Studio in cui è possibile esplorare i modelli.
+1. Selezionare **File**  >  **nuovo**  >  **da Cookiecutter**. Questo comando apre una finestra in Visual Studio in cui è possibile esplorare i modelli.
 
     ![Nuovo progetto da un modello di Cookiecutter](media/projects-from-cookiecutter1.png)
 
@@ -35,9 +36,9 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 
     ![Secondo passaggio usando Cookiecutter, impostazione delle proprietà del progetto](media/projects-from-cookiecutter2.png)
 
-1. Al termine del processo, viene visualizzato il messaggio **file creato con il modello...**. Il progetto viene aperto automaticamente in Esplora soluzioni.
+1. Al termine del processo, viene visualizzato il messaggio **Creazione dei file completata usando il modello...**. Il progetto viene aperto in Esplora soluzioni automaticamente.
 
-1. Premere **CTRL** + **F5** o selezionare **debug**  >  **Avvia senza eseguire debug** per eseguire il programma.
+1. Premere **CTRL** + **F5 o** selezionare Avvia **debug** senza eseguire  >  **debug** per eseguire il programma.
 
     ![Output del progetto del modello python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 

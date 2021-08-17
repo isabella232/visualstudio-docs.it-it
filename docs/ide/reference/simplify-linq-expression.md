@@ -24,16 +24,16 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Refactoring di istanze di per e dei `SomeEnumerableType.Where(<LambdaExpression>).Single()` `SomeEnumerable.Single(<LambdaExpression>)` metodi `Enumerable.Single()` enumerabili seguenti: `SingleOrDefault()` , , , , , , e `Last()` `LastOrDefault()` `Any()` `Count()` `First()` `FirstOrDefault()` .
+**Cosa:** Refactoring delle istanze di in per e dei metodi `SomeEnumerableType.Where(<LambdaExpression>).Single()` `SomeEnumerable.Single(<LambdaExpression>)` `Enumerable.Single()` enumerabili seguenti: `SingleOrDefault()` , , , , , e `Last()` `LastOrDefault()` `Any()` `Count()` `First()` `FirstOrDefault()` .
 
-**Quando:**  Tutte le istanze in cui il metodo chiama , e così via, non hanno argomenti ed è `Single()` `SingleOrDefault()` preceduta da `Where()` un'espressione. L'input per `Where()` l'espressione non può essere costruito come albero delle espressioni.
+**Quando:**  Tutte le istanze in cui il metodo chiama , e così via, non hanno argomenti ed `Single()` `SingleOrDefault()` è preceduta da `Where()` un'espressione. L'input per `Where()` l'espressione non può essere costruito come albero delle espressioni.
 
 **Perché:** La rimozione della chiamata non necessaria a Enumerable per il `.Where()` metodo migliora le prestazioni e la leggibilità.
 
 ## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore all'interno `SomeEnumerableType.Where(<LambdaExpression>).Single()` dell'istanza di in Visual Studio.
-2. Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **Semplifica espressione LINQ**
 
    ![Convertire typeof in nameof](media/simplify-linq-expression.png)

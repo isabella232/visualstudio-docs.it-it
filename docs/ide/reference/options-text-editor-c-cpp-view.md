@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, C/C++, Visualizza
-description: Informazioni su come usare la pagina Visualizza nella sezione C/C++ per modificare il comportamento predefinito del codice controllo ortografia durante, il codice inattivo, la struttura e altro ancora in Visual Studio.
+description: Informazioni su come usare la pagina Visualizza nella sezione C/C++ per modificare il comportamento predefinito delle sottolineatura a sottolineatura del codice, del codice inattivo, della struttura e altro ancora all'interno Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
@@ -13,18 +13,18 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68d08953ca3c493f3b3e42dd4ddd84bc19bdfd6e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: caa0b67c5c59474948a7abb18b391e42d18fbd3996e126175b5990bf63766a81
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041074"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447441"
 ---
 # <a name="options-text-editor-cc-view"></a>Opzioni, Editor di testo, C/C++, Visualizza
 
 Usare queste pagine delle proprietà per modificare il comportamento predefinito dell'editor di codice in fase di programmazione in C o C++.
 
-Per accedere a questa pagina delle proprietà, scegliere **strumenti**  >  **Opzioni** , espandere **editor di testo**, **C/C++**, quindi scegliere **Visualizza**.
+Per accedere a questa pagina delle proprietà, **scegliere** Opzioni strumenti ed  >   espandere Editor di **testo**, **C/C++** e quindi **scegliere Visualizza.**
 
 ## <a name="code-squiggles"></a>Controllo ortografia codice
 
@@ -56,7 +56,7 @@ Per gestire la modalità di gestione del controllo ortografia codice per C e C++
 
 - **Struttura blocchi di istruzioni**: abilita la struttura automatica dei blocchi di istruzioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Impostazione delle opzioni dell'editor Language-Specific](../../ide/reference/setting-language-specific-editor-options.md)
+- [Impostazione delle Language-Specific dell'editor](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

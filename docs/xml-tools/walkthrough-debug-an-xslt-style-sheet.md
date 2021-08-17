@@ -1,6 +1,6 @@
 ---
-title: Debug di fogli di stile XSLT
-description: Per informazioni su come usare il debugger XSLT in Visual Studio per eseguire il debug di un foglio di stile XSLT, seguire i passaggi descritti in questa procedura dettagliata.
+title: Eseguire il debug di fogli di stile XSLT
+description: Informazioni su come usare il debugger XSLT in Visual Studio eseguire il debug di un foglio di stile XSLT seguendo i passaggi di questa procedura dettagliata.
 ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
@@ -8,101 +8,102 @@ ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7935abf4bee4d7f9532ca1dfae0b7105c42067d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b591b597b2cb0930c2ee2e3c4ceb23158ac2956c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875159"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025147"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT
 
 Nei passaggi della procedura dettagliata viene illustrato come usare il debugger XSLT. I passaggi comprendono la visualizzazione delle variabili, l'impostazione dei punti di interruzione e l'esecuzione del codice un'istruzione alla volta. Il debugger consente di eseguire il codice una riga alla volta.
 
-Per preparare questa procedura dettagliata, copiare prima i due [file di esempio](#sample-files) nel computer locale. Uno è il foglio di stile e uno è il file XML che verrà usato come input per il foglio di stile. In questa procedura dettagliata, il foglio di stile usato trova tutti i libri il cui costo è inferiore al prezzo medio del libro.
+Per preparare questa procedura dettagliata, copiare prima i due [file di](#sample-files) esempio nel computer locale. Uno è il foglio di stile e uno è il file XML che verrà utilizzato come input per il foglio di stile. In questa procedura dettagliata il foglio di stile utilizzato trova tutti i libri il cui costo è inferiore al prezzo medio del libro.
 
 > [!NOTE]
-> Il debugger XSLT è disponibile solo nelle edizioni Professional ed Enterprise di Visual Studio.
+> Il debugger XSLT è disponibile solo nelle edizioni Professional e Enterprise di Visual Studio.
 
 ## <a name="start-debugging"></a>Consente di iniziare il debug
 
-1. Scegliere **Apri** file dal menu **file**  >  .
+1. Scegliere **Apri file** **dal** menu  >  **File**.
 
-2. Individuare il file *below-average. xsl* e scegliere **Apri**.
+2. Individuare il file *below-average.xsl* e scegliere **Apri**.
 
    Il foglio di stile verrà aperto nell'editor XML.
 
-3. Fare clic sul pulsante Sfoglia (**...**) nel campo di **input** della finestra proprietà del documento. Se la finestra **Proprietà** non è visibile, fare clic con il pulsante destro del mouse in un punto qualsiasi del file aperto nell'editor, quindi scegliere **Proprietà**.
+3. Fare clic sul pulsante Sfoglia (**...**) nel **campo Input** della finestra delle proprietà del documento. Se la finestra **Proprietà** non è visibile, fare clic con il pulsante destro del mouse in un punto qualsiasi del file aperto nell'editor e quindi **scegliere Proprietà.**
 
-4. Individuare il file di *books.xml* , quindi scegliere **Apri**.
+4. Individuare il *books.xml* file e quindi scegliere **Apri**.
 
-   Viene impostato il file del documento di origine utilizzato per la trasformazione XSLT.
+   In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.
 
-5. Impostare un punto di [interruzione](../debugger/using-breakpoints.md) nella riga 12 di *below-average. xsl*. Questa operazione può essere eseguita in uno dei modi seguenti:
+5. Impostare un [punto di](../debugger/using-breakpoints.md) interruzione alla riga 12 *di below-average.xsl*. È possibile eseguire questa operazione in uno dei modi seguenti:
 
-   - Fare clic sul margine dell'editor sulla riga 12.
+   - Fare clic sul margine dell'editor alla riga 12.
 
-   - Fare clic in un punto qualsiasi della riga 12, quindi premere **F9**.
+   - Fare clic in un punto qualsiasi della riga 12 e quindi premere **F9.**
 
-   - Fare clic con il pulsante destro del mouse sul `xsl:if` tag di inizio e scegliere punto di  >  **interruzione Inserisci** punto di interruzione.
+   - Fare clic con il pulsante destro del mouse sul tag di inizio e quindi scegliere Punto di `xsl:if`   >  **interruzione Inserisci punto di interruzione**.
 
-      ![Inserisci punto di interruzione nel file XSL in Visual Studio](media/insert-breakpoint.PNG)
+      ![Inserire un punto di interruzione nel file XSL in Visual Studio](media/insert-breakpoint.PNG)
 
-6. Sulla barra dei menu scegliere **XML**  >  **Avvia debug XSLT** (oppure premere **ALT** + **F5**).
+6. Sulla barra dei menu scegliere **AVVIA DEBUG** XSLT XML oppure  >   premere **ALT** + **F5.**
 
    Viene avviato il processo di debug.
 
-   Nell'editor il debugger è posizionato sull' `xsl:if` elemento del foglio di stile. Un altro file denominato *below-average.xml* verrà aperto nell'editor; si tratta del file di output che verrà popolato quando viene elaborato ogni nodo del file di input *books.xml* .
+   Nell'editor il debugger è posizionato `xsl:if` sull'elemento del foglio di stile. Nell'editor *below-average.xml* un altro file denominatobelow-average.xml; si tratta del file di output che verrà popolato durante l'elaborazione di ogni nodo nel file *books.xml* di input.
 
-   Le finestre **auto**, **variabili locali** e **espressioni di controllo 1** vengono visualizzate nella parte inferiore della finestra di Visual Studio. Nella finestra variabili **locali** vengono visualizzate tutte le variabili locali e i relativi valori correnti. incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.
+   Le **finestre Auto,** **Variabili locali** ed Espressioni di controllo **1** vengono visualizzate nella parte inferiore della Visual Studio finestra. Nella **finestra Variabili** locali vengono visualizzate tutte le variabili locali e i relativi valori correnti. incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.
 
 ## <a name="watch-window"></a>Finestra Espressioni di controllo
 
-Verranno aggiunte due variabili alla finestra espressione di **controllo 1** , in modo che sia possibile esaminarne i valori durante l'elaborazione del file di input. È anche possibile usare la finestra variabili **locali** per esaminare i valori se le variabili che si vuole controllare sono già presenti.
+Si aggiungeranno due variabili alla finestra Espressioni di controllo **1** per esaminarne i valori durante l'elaborazione del file di input. È anche possibile usare la **finestra Variabili** locali per esaminare i valori se le variabili da controllare sono già presenti.
 
-1. Dal menu **debug** scegliere **Windows**  >  **Watch**  >  **Watch 1**.
+1. Dal menu **Debug** scegliere **Windows**  >    >  **Watch Watch 1**.
 
-   La finestra espressione di **controllo 1** diventa visibile.
+   La **finestra Espressioni di controllo 1** diventa visibile.
 
-2. Digitare `$bookAverage` nel campo **nome** , quindi premere **invio**.
+2. Digitare `$bookAverage` nel campo **Nome** e quindi premere **INVIO.**
 
-   Il valore della `$bookAverage` variabile viene visualizzato nel campo **valore** .
+   Il valore della `$bookAverage` variabile viene visualizzato nel **campo** Valore.
 
-3. Nella riga successiva digitare `self::node()` nel campo **nome** , quindi premere **invio**.
+3. Nella riga successiva digitare `self::node()` nel campo **Nome** e quindi premere **INVIO.**
 
-   `self::node()` espressione XPath che restituisce il nodo di contesto corrente. Il valore dell'espressione XPath `self::node()` costituisce il primo nodo libro.  Il valore verrà modificato durante le fasi della trasformazione.
+   `self::node()` è un'espressione XPath che restituisce il nodo di contesto corrente. Il valore dell'espressione XPath `self::node()` costituisce il primo nodo libro.  Il valore verrà modificato durante le fasi della trasformazione.
 
-4. Espandere il `self::node()` nodo, quindi espandere il nodo il cui valore è `price` .
+4. Espandere il `self::node()` nodo e quindi espandere il nodo il cui valore è `price` .
 
    ![finestra Espressioni di controllo durante il debug XSLT in Visual Studio](media/xslt-debugging-watch-window.png)
 
-   È possibile visualizzare il valore del prezzo del libro per il nodo book corrente e confrontarlo con il `$bookAverage` valore. Poiché il prezzo del libro è inferiore alla media, la `xsl:if` condizione dovrebbe avere esito positivo quando si continua il processo di debug.
+   È possibile visualizzare il valore del prezzo del libro per il nodo libro corrente e confrontarlo con il `$bookAverage` valore . Poiché il prezzo del libro è inferiore alla media, la `xsl:if` condizione dovrebbe avere esito positivo quando si continua il processo di debug.
 
-## <a name="step-through-the-code"></a>Eseguire il codice un'istruzione alla volta
+## <a name="step-through-the-code"></a>Eseguire il codice un'istruzione alla pagina
 
 1. Premere **F5** per continuare.
 
-   Poiché il nodo del primo libro ha soddisfatto la `xsl:if` condizione, il nodo libro viene aggiunto al file di output *below-average.xml* . Il debugger continua l'esecuzione se non viene posizionato di nuovo sull'elemento `xsl:if` nel foglio di stile. Il debugger è ora posizionato sul secondo nodo del libro nel file di *books.xml* .
+   Poiché il primo nodo libro ha soddisfatto la condizione, il nodo book viene `xsl:if` aggiunto al file *below-average.xml* di output. Il debugger continua l'esecuzione se non viene posizionato di nuovo sull'elemento `xsl:if` nel foglio di stile. Il debugger è ora posizionato sul secondo nodo book nel file *books.xml.*
 
-   Nella finestra espressione di **controllo 1** , il `self::node()` valore diventa il secondo nodo libro. Analizzando il valore dell'elemento prezzo, è possibile determinare che il prezzo è maggiore del prezzo medio e che pertanto la condizione `xsl:if` non dovrebbe essere eseguita correttamente.
+   Nella finestra **Espressioni di controllo 1** il `self::node()` valore viene modificato nel secondo nodo libro. Analizzando il valore dell'elemento prezzo, è possibile determinare che il prezzo è maggiore del prezzo medio e che pertanto la condizione `xsl:if` non dovrebbe essere eseguita correttamente.
 
 2. Premere **F5** per continuare.
 
-   Poiché il secondo nodo libro non soddisfa la `xsl:if` condizione, il nodo libro non viene aggiunto al file di output *below-average.xml* . Il debugger continua a essere eseguito fino a quando non viene posizionato nuovamente sull' `xsl:if` elemento nel foglio di stile. Il debugger è ora posizionato sul terzo `book` nodo del file di *books.xml* .
+   Poiché il secondo nodo libro non soddisfa la condizione, il nodo libro non viene aggiunto al `xsl:if` file *below-average.xml* di output. Il debugger continua a essere eseguito fino a quando non viene posizionato nuovamente `xsl:if` sull'elemento nel foglio di stile. Il debugger è ora posizionato sul terzo `book` nodo nel file *books.xml.*
 
-   Nella finestra espressione di **controllo 1** , il `self::node()` valore viene modificato nel terzo nodo libro. Esaminando il valore dell' `price` elemento, è possibile determinare che il prezzo è inferiore alla media. La `xsl:if` condizione dovrebbe avere esito positivo.
+   Nella finestra **Espressioni di controllo 1** il `self::node()` valore viene modificato nel terzo nodo libro. Esaminando il valore `price` dell'elemento , è possibile determinare che il prezzo è inferiore alla media. La `xsl:if` condizione deve avere esito positivo.
 
 3. Premere **F5** per continuare.
 
-   Poiché la `xsl:if` condizione è stata soddisfatta, il terzo libro viene aggiunto al file di output del *below-average.xml* . Tutti i libri nel documento XML sono stati elaborati e il debugger si arresta.
+   Poiché la condizione è stata soddisfatta, il terzo libro viene aggiunto al `xsl:if` file *below-average.xml* di output. Tutti i libri nel documento XML sono stati elaborati e il debugger si arresta.
 
 ## <a name="sample-files"></a>File di esempio
 
 I due file seguenti vengono usati nella procedura dettagliata.
 
-### <a name="below-averagexsl"></a>below-average. Xsl
+### <a name="below-averagexsl"></a>below-average.xsl
 
 ```xml
 <?xml version='1.0'?>

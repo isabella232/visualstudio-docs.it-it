@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug ASP.NET eccezioni | Microsoft Docs
+title: Debug ASP.NET eccezioni | Microsoft Docs
 description: Informazioni su come configurare in modo che il debugger si arresti per le eccezioni non gestite nell ASP.NET appliata. È possibile garantire che l'interruzione si verifichi nel codice non di sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -32,7 +32,7 @@ Il debug delle eccezioni è una parte importante dello sviluppo di una potente a
 
  Per eseguire il debug di eccezioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non gestite, è necessario assicurarsi che il debugger si interrompa ogni volta che ne raggiunge una. Il runtime di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dispone di un gestore eccezioni di livello superiore. Di conseguenza, per impostazione predefinita il debugger non si interrompe mai in corrispondenza di eccezioni non gestite. Per interrompere il debugger quando viene generata un'eccezione, è necessario selezionare l'impostazione **Interrompi quando un'eccezione è: Generata** per tale eccezione nella finestra di dialogo **Eccezioni**.
 
- Se è stata abilitata Just My Code, Interrompi quando un'eccezione **è:** Generata non causa l'interruzione immediata del debugger se viene generata un'eccezione in un metodo .NET o in un altro codice di sistema. Invece l'esecuzione continua sino al raggiungimento di codice non di sistema, quindi si interrompe. Non è pertanto necessario eseguire il codice di sistema quando si verifica un'eccezione.
+ Se è stato abilitato Just My Code, Interrompi quando un'eccezione **è:** Generata non causa l'interruzione immediata del debugger se viene generata un'eccezione in un metodo .NET o in un altro codice di sistema. Invece l'esecuzione continua sino al raggiungimento di codice non di sistema, quindi si interrompe. Non è pertanto necessario eseguire il codice di sistema quando si verifica un'eccezione.
 
  Just My Code offre un'altra opzione che può rivelarsi molto utile: **Interrompi quando un'eccezione è: Non gestita dall'utente**. Se si sceglie questa impostazione per un'eccezione, il debugger interromperà l'esecuzione nel codice utente, ma solo se l'eccezione non viene intercettata e gestita dal codice utente. Questa impostazione annulla l'effetto del gestore eccezioni di primo livello di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], perché quest'ultimo si trova nel codice non utente.
 

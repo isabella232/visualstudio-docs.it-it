@@ -1,6 +1,6 @@
 ---
 title: Pacchetti di NuGet VS SDK
-description: Informazioni sul metapacchetto vs SDK e altri pacchetti NuGet che potrebbero essere necessari durante la migrazione di un'estensione Visual Studio a Visual Studio 2022 Preview.
+description: Informazioni sul metapacchetto di VS SDK e altri pacchetti NuGet che potrebbero essere necessari durante la migrazione di un'estensione Visual Studio a Visual Studio 2022 Preview.
 ms.date: 06/08/2021
 ms.topic: conceptual
 author: leslierichardson95
@@ -11,12 +11,12 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 6ad4070c4dbf6aa5e9867cf88ec7982e7281f9667d0abcc4360db41e164241e0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cf2e07cf2d222c06b36c97cf2d4faf982c4039f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305386"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041659"
 ---
 # <a name="sdk-reference-packages"></a>Pacchetti di riferimento SDK
 

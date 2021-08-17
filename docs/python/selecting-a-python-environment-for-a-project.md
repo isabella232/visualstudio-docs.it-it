@@ -11,12 +11,12 @@ ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1305aec9581cb4ae933980e022f88c878738df7d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d62b36216cdbf7f49d77b7e95c0b52949da30ed0695cb8e86368a07057e6275d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027253"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121229845"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Come selezionare un ambiente Python per un progetto
 
@@ -43,11 +43,11 @@ Il menu di scelta rapida del nodo **Ambienti Python** contiene anche altri coman
 | --- | --- |
 | **Aggiungi ambiente virtuale** | Avvia il processo di creazione di un nuovo ambiente virtuale nel progetto. Vedere [Creare un ambiente virtuale](#create-a-virtual-environment). |
 | **Aggiungi ambiente virtuale esistente** | Richiede la selezione di una cartella contenente un ambiente virtuale e aggiunge l'ambiente all'elenco sotto **Ambienti Python** senza attivarlo. Vedere [Attivare un ambiente virtuale esistente](#activate-an-existing-virtual-environment). |
-| **Crea ambiente Conda** | Passa alla finestra **Ambienti Python** *in* cui si immette un nome per l'ambiente e si specifica l'interprete di base. Vedere [Ambienti Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
+| **Crea ambiente Conda** | Passa alla finestra **Ambienti Python** *in* cui si immette un nome per l'ambiente e si specifica il relativo interprete di base. Vedere [Ambienti Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Per modificare l'ambiente per un progetto, fare clic con il pulsante destro del mouse sul **nodo Ambienti Python** e scegliere Aggiungi **ambiente**. È anche possibile selezionare **Aggiungi ambiente dall'elenco** a discesa ambiente nella barra degli strumenti di Python.
+Per modificare l'ambiente per un progetto, fare clic con il pulsante destro del mouse sul **nodo Ambienti Python** e scegliere Aggiungi **ambiente.** È anche possibile selezionare **Aggiungi ambiente dall'elenco** a discesa dell'ambiente nella barra degli strumenti di Python.
 
 Nella finestra di dialogo **Aggiungi ambiente** selezionare la scheda **Ambiente esistente** e quindi selezionare un nuovo ambiente nell'elenco a discesa **Ambiente**:
 
@@ -87,7 +87,7 @@ Dopo essere stato aggiunto al progetto, l'ambiente virtuale viene visualizzato n
 
 1. Selezionare un ambiente come interprete di base e selezionare **Crea**. Visual Studio visualizza un indicatore di stato mentre configura l'ambiente e scarica tutti i pacchetti necessari. Al termine, l'ambiente virtuale viene visualizzato nella finestra **Ambienti Python** per il progetto che lo contiene.
 
-1. L'ambiente virtuale non viene attivato per impostazione predefinita. Per attivare l'ambiente virtuale per il progetto, fare clic con il pulsante destro del mouse su di esso e **scegliere Attiva ambiente**.
+1. L'ambiente virtuale non viene attivato per impostazione predefinita. Per attivare l'ambiente virtuale per il progetto, fare clic con il pulsante destro del mouse su di esso e **scegliere Attiva ambiente.**
 
 > [!Note]
 > Se il percorso identifica un ambiente virtuale esistente, Visual Studio rileva l'interprete di base automaticamente, usando il file *orig-prefix.txt* nella directory *lib* dell'ambiente, e modifica il pulsante **Crea** in **Aggiungi**.
@@ -170,7 +170,7 @@ Tenere presente che è possibile che le voci visualizzate non siano sempre accur
 Si noti inoltre che Visual Studio non supporta attualmente l'uso di `conda` per installare i pacchetti in un ambiente Conda. Usare invece `conda` dalla riga di comando.
 
 > [!Tip]
-> Una situazione comune in cui pip non riesce a installare un pacchetto è quando il pacchetto include il codice sorgente per i componenti nativi nei *\* file con estensione pyd.* Se non è installata la versione richiesta di Visual Studio, pip non può compilare questi componenti. Il messaggio di errore visualizzato in questa situazione è **errore: Impossibile trovare vcvarsall.bat**. `easy_install` è spesso in grado di scaricare file binari precompilati ed è possibile scaricare un compilatore adatto per le versioni precedenti di Python da [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Per altre informazioni, vedere [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Come gestire l'errore "vcvarsallbat non trovato") nel blog del team degli strumenti Python.
+> Una situazione comune in cui pip non riesce a installare un pacchetto è quando il pacchetto include il codice sorgente per i componenti nativi nei *\* file con estensione pyd.* Se non è installata la versione richiesta di Visual Studio, pip non può compilare questi componenti. Il messaggio di errore visualizzato in questa situazione è **errore: Impossibile trovare vcvarsall.bat**. `easy_install` è spesso in grado di scaricare i file binari precompilati ed è possibile scaricare un compilatore appropriato per le versioni precedenti di Python da [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Per altre informazioni, vedere [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Come gestire l'errore "vcvarsallbat non trovato") nel blog del team degli strumenti Python.
 
 ## <a name="see-also"></a>Vedi anche
 

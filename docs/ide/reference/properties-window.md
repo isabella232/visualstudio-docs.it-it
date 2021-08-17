@@ -19,14 +19,15 @@ ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ddbfb4d001f73e30296a35c2cff4aae0e0c527f9
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ce71f30b6008de006ad2ab96c0388dc3e1ee507247d9c9a500304c94d5197846
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221119"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447428"
 ---
 # <a name="properties-window"></a>Finestra Proprietà
 

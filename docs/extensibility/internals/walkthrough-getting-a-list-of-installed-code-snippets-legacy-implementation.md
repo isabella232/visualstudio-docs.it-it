@@ -12,14 +12,15 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 051f356e7b6b6f1a92ba475617f48e5c6074f402
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 1d41475bef1a4da3a0eff1583a81c8e4953a3832
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898874"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042036"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy)
 Un frammento di codice è una parte di codice che può essere inserita nel buffer di origine con un comando di menu (che consente di scegliere tra un elenco di frammenti di codice installati) o selezionando un collegamento a un frammento di codice da un elenco di completamento IntelliSense.
@@ -178,5 +179,5 @@ class TestLanguageService : LanguageService
 
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Supporto per i frammenti di codice in un servizio di linguaggio legacy](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

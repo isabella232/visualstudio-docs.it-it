@@ -1,6 +1,6 @@
 ---
 title: Elemento ImportGroup | Microsoft Docs
-description: Informazioni su come MSBuild utilizza l'elemento ImportGroup per contenere una raccolta di elementi Import raggruppati in una condizione facoltativa.
+description: Informazioni su MSBuild usa l'elemento ImportGroup per contenere una raccolta di elementi Import raggruppati in una condizione facoltativa.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -16,19 +16,20 @@ ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5ece72d83dd530a855d583ce061a22554d45a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 883285c2178dce3c017ac8ea1503b402e6bbebcca3c8c62f924572dd29ba4ea0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914093"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443334"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
 
   
-Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. Per altre informazioni, vedere [elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
+Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. Per altre informazioni, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
 
 ```xml
 <Project>
@@ -64,7 +65,7 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file MSBuild progetto. |
 
 ## <a name="example"></a>Esempio
 
@@ -82,5 +83,5 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementi](../msbuild/msbuild-items.md)

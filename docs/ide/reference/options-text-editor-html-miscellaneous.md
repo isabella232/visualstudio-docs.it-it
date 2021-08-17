@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, HTML (Web Form), Varie
-description: Informazioni su come usare la pagina Varie nella sezione HTML per impostare le preferenze relative al modo in cui l'editor HTML gestisce gli elementi incollati nella pagina.
+description: Informazioni su come usare la pagina Varie nella sezione HTML per impostare le preferenze per il modo in cui l'editor HTML gestisce gli elementi incollati nella pagina.
 ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
@@ -21,7 +21,7 @@ ms.locfileid: "121232256"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opzioni, Editor di testo, HTML (Web Form), Varie
 
-Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Editor di testo  >     >  **HTML (Web Forms)**  >  **Varie**.
+Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti e quindi espandere Editor di testo  >     >  **HTML (Web Forms)**  >  **Varie**.
 
 ## <a name="miscellaneous-html-options"></a>Altre opzioni HTML
 
@@ -31,7 +31,7 @@ Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalit�
 
 - **Richiedi '<' per attivare finestra completamento tag**
 
-   Quando questa casella di controllo è selezionata, la finestra di completamento dei tag viene visualizzata quando si digita il carattere minore di ("<").
+   Quando questa casella di controllo è selezionata, la finestra di completamento tag viene visualizzata quando si digita il carattere minore di ("<").
 
 ## <a name="see-also"></a>Vedi anche
 

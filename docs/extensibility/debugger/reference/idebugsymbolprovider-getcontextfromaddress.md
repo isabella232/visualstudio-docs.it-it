@@ -1,6 +1,6 @@
 ---
 description: Questo metodo esegue il mapping di un indirizzo di debug in un contesto di documento.
-title: 'IDebugSymbolProvider:: GetContextFromAddress | Microsoft Docs'
+title: IDebugSymbolProvider::GetContextFromAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e8e4f80759986942c7cf23452924fcc5e4fea1b0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 295042af5e41ac9785ae4941465a73b6883498be
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087093"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087444"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 Questo metodo esegue il mapping di un indirizzo di debug in un contesto di documento.
@@ -44,10 +45,10 @@ int GetContextFromAddress(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-in Indirizzo di debug come rappresentato da un'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
+[in] Indirizzo di debug rappresentato da [un'interfaccia IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `ppDocContext`\
-out Restituisce un contesto del documento come rappresentato da un'interfaccia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .
+[out] Restituisce un contesto di documento come rappresentato da [un'interfaccia IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

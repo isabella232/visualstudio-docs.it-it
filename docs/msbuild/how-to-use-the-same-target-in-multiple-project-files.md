@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Usare la stessa destinazione in più file di progetto | Microsoft Docs'
-description: Informazioni su come salvare una destinazione in un file di progetto MSBuild e importarla in qualsiasi altro progetto che deve usare la destinazione.
+description: Informazioni su come salvare una destinazione in un file MSBuild progetto e importarla in qualsiasi altro progetto che deve usare la destinazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,28 +11,29 @@ ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c351b7f676dec678bd4f070a1f8fb9af97c5d28
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 710c38aa99026721f61968d241997ee8f94a5331ae4bc9b9479e3d2b1dca73a4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914113"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443438"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: Usare la stessa destinazione in più file di progetto
 
-Se sono stati creati più file di progetto MSBuild, è possibile che sia stato rilevato che è necessario usare le stesse attività e le stesse destinazioni in file di progetto diversi. Anziché includere in ogni file di progetto la descrizione completa di tali attività o destinazioni, è possibile salvare una destinazione in un file di progetto separato e importarlo in qualsiasi altro progetto in cui si intende usare la destinazione.
+Se sono stati creati diversi MSBuild di progetto, è possibile che sia necessario usare le stesse attività e le stesse destinazioni in file di progetto diversi. Anziché includere in ogni file di progetto la descrizione completa di tali attività o destinazioni, è possibile salvare una destinazione in un file di progetto separato e importarlo in qualsiasi altro progetto in cui si intende usare la destinazione.
 
 ## <a name="use-the-import-element"></a>Usare l'elemento Import
 
-L'elemento `Import` consente di inserire un file di progetto in un altro file di progetto. Il file di progetto da importare deve essere un file di progetto MSBuild valido e contenere XML ben formato. L'attributo `Project` specifica il percorso del file di progetto importato. Per ulteriori informazioni sull' `Import` elemento, vedere [elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
+L'elemento `Import` consente di inserire un file di progetto in un altro file di progetto. Il file di progetto importato deve essere un file di MSBuild file di progetto valido e contenere codice XML ben formato. L'attributo `Project` specifica il percorso del file di progetto importato. Per altre informazioni `Import` sull'elemento , vedere Elemento Import [(MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>Per importare un progetto
 
 1. Nel file di progetto di importazione definire tutte le proprietà e gli elementi usati come parametri per le proprietà e gli elementi del progetto importato.
 
-2. Usare l'elemento `Import` per importare il progetto. Ad esempio:
+2. Usare l'elemento `Import` per importare il progetto. Esempio:
 
      `<Import Project="MyCommon.targets"/>`
 
@@ -40,9 +41,9 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 
 ## <a name="order-of-evaluation"></a>Ordine di valutazione
 
- Quando MSBuild raggiunge un `Import` elemento, il progetto importato viene inserito in modo efficace nel progetto di importazione in corrispondenza della posizione dell' `Import` elemento. La posizione dell'elemento `Import` può quindi influire sui valori delle proprietà e degli elementi ed è importante conoscere sia le proprietà e gli elementi impostati dal progetto importato, sia le proprietà e gli elementi usati dal progetto.
+ Quando MSBuild raggiunge un elemento, il progetto importato viene inserito in modo efficace nel progetto di importazione `Import` nel percorso `Import` dell'elemento. La posizione dell'elemento `Import` può quindi influire sui valori delle proprietà e degli elementi ed è importante conoscere sia le proprietà e gli elementi impostati dal progetto importato, sia le proprietà e gli elementi usati dal progetto.
 
- Quando si compila il progetto, vengono valutate prima tutte le proprietà e dopo gli elementi. Il codice XML seguente, ad esempio, definisce il file di progetto importato *comune. targets*:
+ Quando si compila il progetto, vengono valutate prima tutte le proprietà e dopo gli elementi. Ad esempio, il codice XML seguente definisce il file di progetto *importato MyCommon.targets*:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -56,7 +57,7 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 </Project>
 ```
 
- Nel codice XML seguente viene definito *MyApp. proj*, che importa il *comune. targets*:
+ Il codice XML seguente definisce *MyApp.proj*, che importa *MyCommon.targets*:
 
 ```xml
 <Project
@@ -73,7 +74,7 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 
  `Name="MyCommon"`
 
- Poiché il progetto viene importato dopo che la proprietà `Name` è stata definita in *MyApp. proj*, la definizione di `Name` in *comune. targets* sostituisce la definizione in *MyApp. proj*. Se il progetto venisse importato prima di definire la proprietà Name, durante la compilazione verrebbe visualizzato il messaggio seguente:
+ Poiché il progetto viene importato dopo che la proprietà è stata definita `Name` in *MyApp.proj,* la definizione di `Name` in *MyCommon.targets* esegue l'override della definizione in *MyApp.proj*. Se il progetto venisse importato prima di definire la proprietà Name, durante la compilazione verrebbe visualizzato il messaggio seguente:
 
  `Name="MyApp"`
 
@@ -87,7 +88,7 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 
 ## <a name="example-1"></a>Esempio 1
 
- Nell'esempio di codice seguente viene illustrato il file *comune. targets* importato dal secondo esempio di codice. Il file con *estensione targets* valuta le proprietà del progetto di importazione per configurare la compilazione.
+ Nell'esempio di codice seguente viene illustrato il file *MyCommon.targets* importato dal secondo esempio di codice. Il file *con estensione targets* valuta le proprietà del progetto di importazione per configurare la compilazione.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -106,7 +107,7 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 
 ## <a name="example-2"></a>Esempio 2
 
- Nell'esempio di codice seguente viene importato il file *comune. targets* .
+ Nell'esempio di codice seguente viene importato il file *MyCommon.targets.*
 
 ```xml
 <Project DefaultTargets="Build"

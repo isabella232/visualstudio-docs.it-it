@@ -1,6 +1,6 @@
 ---
 title: Insiemi di contatori e regole di soglia per il test di carico
-description: Informazioni su come specificare insiemi di contatori e regole di soglia in un test di carico. Aggiungere i server sottoposti a test all'elenco dei computer in cui raccogliere i contatori.
+description: Informazioni su come specificare set di contatori e regole di soglia in un test di carico. Aggiungere i server sotto test all'elenco di computer in cui raccogliere i contatori.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -15,12 +15,13 @@ ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: fda390640d627a91d4ab534192cba9bd9e30f00f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 7c82f2f8ec61e84d5317746be4f6aaaf6994cf2778c95d7c48d22f39c96a34c2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962639"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121226527"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Specificare insiemi di contatori e regole di soglia per i computer in un test di carico
 
@@ -33,7 +34,7 @@ I test di carico rendono disponibili insiemi di contatori denominati, utili per 
 
 Gli insiemi di contatori vengono raggruppati sui computer specificati dall'utente. L'associazione tra un insieme di contatori e un computer usata durante un test di carico viene definita *mapping dell'insieme di contatori*. Il server Web che si sta testando potrebbe, ad esempio, avere mapping di insiemi di contatori per applicazioni ASP.NET, IIS e .NET.
 
-Per impostazione predefinita i contatori di prestazioni sono raccolti sul controller e sugli agenti. Per ulteriori informazioni, vedere [test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
+Per impostazione predefinita i contatori di prestazioni sono raccolti sul controller e sugli agenti. Per altre informazioni, vedere [Test controller e agenti di test.](configure-test-agents-and-controllers-for-load-tests.md)
 
 È importante aggiungere i server in fase di test all'elenco dei computer sui quali raccogliere i contatori. Tutti i dati importanti del sistema verranno quindi raccolti e monitorati durante il test di carico.
 
@@ -41,14 +42,14 @@ Per impostazione predefinita i contatori di prestazioni sono raccolti sul contro
 
 |Attività|Argomenti correlati|
 |-|-----------------------|
-|**Gestire gli insiemi di contatori per il test di carico:** dopo aver creato un test di carico, è possibile modificare l'insieme di contatori nell'Editor test di carico. La gestione degli insiemi di contatori implica la scelta del gruppo di computer da cui raccogliere i dati sulle prestazioni e l'assegnazione di una serie di insiemi di contatori da raccogliere da ogni singolo computer. I contatori vengono gestiti nell'Editor test di carico.|-   [Procedura: gestire insiemi di contatori](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**Gestire gli insiemi di contatori per il test di carico:** dopo aver creato un test di carico, è possibile modificare l'insieme di contatori nell'Editor test di carico. La gestione degli insiemi di contatori implica la scelta del gruppo di computer da cui raccogliere i dati sulle prestazioni e l'assegnazione di una serie di insiemi di contatori da raccogliere da ogni singolo computer. I contatori vengono gestiti nell'Editor test di carico.|-   [Procedura: Gestire gli insiemi di contatori](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Aggiungere insiemi di contatori al test di carico:** quando si crea un test di carico con la **Creazione guidata test di carico** si aggiunge un insieme di contatori iniziale. Ciò offre una serie di insiemi di contatori predefiniti per il test di carico. Dopo aver creato un test di carico, è possibile aggiungere i nuovi contatori agli insiemi di contatori esistenti utilizzando l'Editor test di carico.|-   [Procedura: Aggiungere contatori agli insiemi di contatori](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Procedura: Aggiungere insiemi di contatori personalizzati](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
-|**Specificare una regola di soglia usando i contatori per il test di carico:** una regola di soglia è una regola impostata per un singolo contatore delle prestazioni per monitorare l'uso delle risorse di sistema durante un test di carico. Le definizioni degli insiemi di contatori contengono regole di soglia predefinite per molti contatori di prestazioni principali. Le regole di soglia nei test di carico consentono di confrontare il valore di un contatore delle prestazioni con il valore di una costante o di un altro contatore delle prestazioni.|-   [Procedura: aggiungere una regola di soglia](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
+|**Specificare una regola di soglia usando i contatori per il test di carico:** una regola di soglia è una regola impostata per un singolo contatore delle prestazioni per monitorare l'uso delle risorse di sistema durante un test di carico. Le definizioni degli insiemi di contatori contengono regole di soglia predefinite per molti contatori di prestazioni principali. Le regole di soglia nei test di carico consentono di confrontare il valore di un contatore delle prestazioni con il valore di una costante o di un altro contatore delle prestazioni.|-   [Procedura: Aggiungere una regola di soglia](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
 |**Assegnare nomi descrittivi ai computer ai quali sono mappati gli insiemi di contatori:** è possibile aggiungere tag computer che consentono di applicare un nome facilmente riconoscibile a un computer. I tag vengono visualizzati nel nodo **Mapping insiemi di contatori** nella struttura ad albero dell'Editor test di carico. Inoltre, i tag vengono visualizzati nei rapporti di Excel che consentono alle parti interessate di identificare il ruolo del computer nel test di carico, ad esempio "Web Server1 in lab2" o "SQL Server2 in Phoenix office".<br /><br /> Per altre informazioni, vedere [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Usare gli insiemi di contatori
 
-Gli strumenti del test di carico consentono di raccogliere e riprodurre in un grafico i dati delle prestazioni utilizzando i contatori nel tempo. I dati dei contatori vengono raccolti a intervalli di tempo specificati dall'utente durante l'esecuzione di un test di carico. Per altre informazioni, vedere [procedura: specificare la frequenza di campionamento](../test/how-to-specify-the-sample-rate-for-a-load-test.md). È possibile visualizzare i contatori in fase di esecuzione o dopo l'esecuzione di un test di carico usando l'*Analizzatore test di carico*.
+Gli strumenti del test di carico consentono di raccogliere e riprodurre in un grafico i dati delle prestazioni utilizzando i contatori nel tempo. I dati dei contatori vengono raccolti a intervalli di tempo specificati dall'utente durante l'esecuzione di un test di carico. Per altre informazioni, vedere [Procedura: Specificare la frequenza di campionamento.](../test/how-to-specify-the-sample-rate-for-a-load-test.md) È possibile visualizzare i contatori in fase di esecuzione o dopo l'esecuzione di un test di carico usando l'*Analizzatore test di carico*.
 
 I dati del contatore vengono raccolti nel server e in tutti i computer su cui viene eseguito un test. Se è stato configurato un set di computer agenti in cui eseguire i test, i contatori vengono raccolti anche in questi computer.
 
@@ -64,7 +65,7 @@ L'analisi dei risultati delle esecuzioni di test di carico necessita spesso di c
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Considerazioni sull'intervallo di campionamento dei contatori delle prestazioni
 
-Nelle impostazioni esecuzione test di carico selezionare un valore appropriato per la proprietà **Frequenza di campionamento** in base alla durata del test di carico. Una frequenza di campionamento inferiore, ad esempio il valore predefinito di cinque secondi, richiede più spazio nel database dei risultati del test di carico. Per i test di carico più lunghi, l'aumento della frequenza di campionamento riduce la quantità di dati raccolti. Per altre informazioni, vedere [procedura: specificare la frequenza di campionamento](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Nelle impostazioni esecuzione test di carico selezionare un valore appropriato per la proprietà **Frequenza di campionamento** in base alla durata del test di carico. Una frequenza di campionamento inferiore, ad esempio il valore predefinito di cinque secondi, richiede più spazio nel database dei risultati del test di carico. Per i test di carico più lunghi, l'aumento della frequenza di campionamento riduce la quantità di dati raccolti. Per altre informazioni, vedere [Procedura: Specificare la frequenza di campionamento.](../test/how-to-specify-the-sample-rate-for-a-load-test.md)
 
 Di seguito sono riportate alcune linee guida per le frequenze di campionamento.
 

@@ -1,6 +1,6 @@
 ---
 title: Confronto di proprietà ed elementi | Microsoft Docs
-description: Informazioni su MSBuild proprietà ed elementi passano informazioni alle attività, valutano le condizioni e archiviano i valori a cui il file di progetto può fare riferimento.
+description: Informazioni su come MSBuild proprietà ed elementi passano informazioni alle attività, valutano le condizioni e archiviano i valori a cui il file di progetto può fare riferimento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 358389095e71dd52aa8dfeb211bef71c4485faef
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e1348b4bd342e42f01fe6751d8ebdf6bae900b9789e9f2ebb3df4aaae89fa741
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055042"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443789"
 ---
 # <a name="compare-properties-and-items"></a>Confrontare proprietà ed elementi
 

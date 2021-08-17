@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di codice ottimizzato | Microsoft Docs
-description: Se possibile, non compilare una destinazione della versione Win32 finché non viene eseguito il debug del programma, perché l'ottimizzazione può complicare il debug. Vedere i dettagli in questo articolo.
+description: Se possibile, non compilare una destinazione della versione Win32 fino a quando non viene eseguito il debug del programma, perché l'ottimizzazione può complicare il debug. Vedere i dettagli in questo articolo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to

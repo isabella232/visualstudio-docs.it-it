@@ -1,6 +1,6 @@
 ---
 title: Cercare e sostituire testo e selezione di più punti di inserimento
-description: Informazioni sulla funzionalità Trova e Sostituisci e su come usarla per trovare e sostituire le istanze di un modello.
+description: Informazioni sulla funzionalità Trova e sostituisci e su come usarla per trovare e sostituire istanze di un criterio.
 ms.custom: SEO-VS-2020
 ms.date: 10/17/2020
 ms.topic: conceptual
@@ -30,14 +30,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 534d25c97977d058f0b4137955e44e3d544b3878
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2baaf7bc54316a37774e1ed0a60f47196cedcf24831f2f42ee09684229ed9d6d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932605"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121233043"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
@@ -55,14 +56,14 @@ La funzionalità di ricerca e sostituzione è disponibile nell'editor, in alcune
 
 ## <a name="find-and-replace-control"></a>Controllo Trova e sostituisci
 
-- Premere **CTRL** + **F** come tasto di scelta rapida per *trovare* una stringa nel file corrente.
+- Premere **CTRL** + **F** come collegamento per *trovare* una stringa nel file corrente.
 - Premere **CTRL** + **H** come collegamento per *trovare e sostituire* una stringa nel file corrente.
 
 Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore destro della finestra dell'editor di codice. Evidenzia immediatamente tutte le occorrenze della stringa di ricerca specificata nel documento corrente. È possibile spostarsi da un'occorrenza all'altra scegliendo il pulsante **Trova successivo** o **Trova precedente** nel controllo di ricerca.
 
 ![Trova e sostituisci in Visual Studio](media/find-and-replace-box.png)
 
-È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto** .
+È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere **il pulsante Sostituisci** tutto.
 
 Per modificare il colore di evidenziazione per le corrispondenze, scegliere il menu **Strumenti**, selezionare **Opzioni**, quindi scegliere **Ambiente** e selezionare **Tipi di carattere e colori**. Nell'elenco **Show settings for** (Mostra impostazioni per), selezionare **Editor di testo**, quindi nell'elenco **Elementi visualizzati**, selezionare **Trova evidenziato (estensione)**.
 
@@ -70,12 +71,12 @@ Per modificare il colore di evidenziazione per le corrispondenze, scegliere il m
 
 È possibile usare il controllo **Trova** nelle finestre di codice o del testo, ad esempio le finestre **Output** e **Risultati ricerca**, selezionando **Modifica** > **Trova e sostituisci** o premendo **CTRL+F**.
 
-Una versione del controllo di **ricerca** è disponibile anche in alcune finestre degli strumenti. Ad esempio, è possibile filtrare l'elenco di controlli nella finestra **Casella degli strumenti** immettendo il testo nella casella di ricerca. Tra le altre finestre degli strumenti che consentono di cercare il relativo contenuto sono incluse **Esplora soluzioni**, **Proprietà** e **Team Explorer**.
+Una versione del **controllo Trova** è disponibile anche in alcune finestre degli strumenti. Ad esempio, è possibile filtrare l'elenco di controlli nella finestra **Casella degli strumenti** immettendo il testo nella casella di ricerca. Tra le altre finestre degli strumenti che consentono di cercare il relativo contenuto sono incluse **Esplora soluzioni**, **Proprietà** e **Team Explorer**.
 
 ## <a name="find-in-files-and-replace-in-files"></a>Cerca nei file e Sostituisci nei file
 
-- Premere **CTRL** + **MAIUSC** + **F** come tasto di scelta rapida per *trovare* una stringa in più file.
-- Premere **CTRL** + **MAIUSC** + **H** come collegamento per *trovare e sostituire* una stringa in più file.
+- Premere **CTRL** + **MAIUSC** + **F** come collegamento per *trovare* una stringa in più file.
+- Premere **CTRL** + **MAIUSC** + **H come** collegamento per trovare e *sostituire* una stringa in più file.
 
 **Find/Replace in Files** (Trova/Sostituisci nei file) funziona come il controllo **Trova e sostituisci**, con la differenza che è possibile definire un ambito per la ricerca. Non solo è possibile cercare il file aperto corrente nell'editor, ma anche tutti i documenti aperti, l'intera soluzione, il progetto corrente e gli insiemi di cartelle selezionati. È inoltre possibile eseguire la ricerca in base all'estensione del nome file. Per accedere alla finestra di dialogo **Find/Replace in Files** (Trova/Sostituisci nei file), selezionare **Trova e sostituisci** dal menu **Modifica** o premere **CTRL**+**MAIUSC**+**F**.
 
@@ -87,7 +88,7 @@ Quando si sceglie **Find All** (Trova tutti), si apre una finestra **Risultati r
 
 ### <a name="create-custom-search-folder-sets"></a>Creare set personalizzati di cartelle di ricerca
 
-È possibile definire un ambito di ricerca scegliendo il pulsante **Seleziona cartelle di ricerca** (simile a **...**) accanto alla casella **Cerca in** . Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca nonché salvare la specifica in modo da poterla usare di nuovo in un secondo tempo.
+È possibile definire un ambito  di ricerca scegliendo il pulsante Scegli cartelle di ricerca (simile a **...**) accanto alla casella Cerca **in.** Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca nonché salvare la specifica in modo da poterla usare di nuovo in un secondo tempo.
 
 > [!TIP]
 > Se è stato eseguito il mapping dell'unità di un computer remoto nel computer locale, è possibile specificare cartelle in cui eseguire la ricerca nel computer remoto.
@@ -120,19 +121,19 @@ Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punt
 
 |Tasto di scelta rapida|Azione|
 |-|-|
-|**CTRL** + **ALT** + clic|Aggiungere un punto di inserimento secondario|
-|**CTRL** + **ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
-|**CTRL** + **ALT** + clic + trascina|Aggiungere una selezione secondaria|
-|**Sposta** + **ALT** + **.**|Aggiungere il testo successivo corrispondente come selezione|
-|**Sposta** + **ALT** + **;**|Aggiungere tutto il testo corrispondente come selezione|
-|**Sposta** + **ALT** + **,**|Rimuovere l'ultima occorrenza selezionata|
-|**Sposta** + **ALT**+**/**|Ignorare l'occorrenza corrispondente successiva|
-|**ALT** + clic|Aggiungere una selezione di casella|
+|**CTRL+FRECCIA DESTRA** + **ALT+** clic|Aggiungere un punto di inserimento secondario|
+|**CTRL+FRECCIA DESTRA** + **ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
+|**CTRL+FRECCIA DESTRA** + **ALT** + clic + trascinamento|Aggiungere una selezione secondaria|
+|**MAIUSC** + **ALT** + **.**|Aggiungere il testo successivo corrispondente come selezione|
+|**MAIUSC** + **ALT** + **;**|Aggiungere tutto il testo corrispondente come selezione|
+|**MAIUSC** + **ALT** + **,**|Rimuovere l'ultima occorrenza selezionata|
+|**MAIUSC** + **ALT**+**/**|Ignorare l'occorrenza corrispondente successiva|
+|**ALT+** clic|Aggiungere una selezione di casella|
 |**ESC** oppure clic|Cancellare tutte le selezioni|
 
 Alcuni comandi sono disponibili anche nel menu **Modifica**, in **Più punti di inserimento**:
 
-:::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Screenshot del menu di scelta rapida per più elementi di interesse in Visual Studio":::
+:::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Screenshot del menu a comparsa Più punti di selezione in Visual Studio":::
 
 ## <a name="see-also"></a>Vedi anche
 

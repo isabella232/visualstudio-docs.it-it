@@ -1,6 +1,6 @@
 ---
 title: Attività ConvertToAbsolutePath | Microsoft Docs
-description: Usare l'attività MSBuild ConvertToAbsolutePath per convertire un percorso relativo, o un riferimento, in un percorso assoluto.
+description: Usare l MSBuild'attività ConvertToAbsolutePath per convertire un percorso relativo, o riferimento, in un percorso assoluto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: f1af2cb8-b4ef-4a72-be80-22fa526c4491
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c0529578d97ddbeaff4ec999329626fbf951094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0579586cbc1a86c13833d5eb97765b68449390c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922554"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054977"
 ---
 # <a name="converttoabsolutepath-task"></a>attività ConvertToAbsolutePath
 
@@ -42,7 +43,7 @@ Converte un percorso relativo, o un riferimento, in un percorso assoluto.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedi anche
 
