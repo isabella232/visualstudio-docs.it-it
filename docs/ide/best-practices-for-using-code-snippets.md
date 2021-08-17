@@ -1,6 +1,6 @@
 ---
 title: Procedure consigliate per l'utilizzo dei frammenti di codice
-description: Informazioni sui frammenti di codice, sullo scopo di un frammento di codice e su come usarli per adattarla all'applicazione.
+description: Informazioni sui frammenti di codice, sulle finalità di un frammento di codice e sul modo migliore per usarli in base all'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ad94fb8ea4dffcd0c3c7c10bb06046d5558baa1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5606c09063dc72181a1011b503c745ed87c0bc47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836501"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109643"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'uso dei frammenti di codice
 
@@ -25,13 +26,13 @@ Il codice in un frammento illustra solo il modo più semplice per eseguire un'op
 
 ## <a name="handling-exceptions"></a>Gestione delle eccezioni
 
-In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigenerano tutte le eccezioni. Questo comportamento potrebbe anche non essere idoneo al progetto in uso. Per ogni eccezione, esistono infatti modi diversi di rispondere. Per esempi, vedere [procedura: gestire un'eccezione usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [try... Rileva... Istruzione finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigenerano tutte le eccezioni. Questo comportamento potrebbe anche non essere idoneo al progetto in uso. Per ogni eccezione, esistono infatti modi diversi di rispondere. Per esempi, [vedere Procedura: Gestire un'eccezione usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Try... Prendere... Istruzione Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Percorsi dei file
 
 Quando i percorsi dei file vengono adattati all'applicazione, considerare quanto segue:
 
-- Ricerca di una posizione accessibile. Gli utenti potrebbero non avere accesso alla cartella *programmi* del computer, quindi l'archiviazione dei file con i file dell'applicazione potrebbe non funzionare.
+- Ricerca di una posizione accessibile. Gli utenti potrebbero non avere accesso alla *cartella Programmi* del computer, quindi l'archiviazione dei file con i file dell'applicazione potrebbe non funzionare.
 
 - Ricerca di una posizione sicura. Non è sicuro archiviare i file nella cartella radice (*C:\\*). Per i dati dell'applicazione è consigliabile scegliere la cartella *Dati applicazioni*. Per i singoli dati utente, l'applicazione può creare un file per ogni utente nella cartella *Documenti*.
 
@@ -53,7 +54,7 @@ In base a dove un frammento viene usato nel codice sorgente e a come viene modif
 
 - Passaggio dei dati a tecnologie script
 
-Per ulteriori informazioni, vedere [protezione delle applicazioni](../ide/securing-applications.md).
+Per altre informazioni, vedere [Protezione delle applicazioni.](../ide/securing-applications.md)
 
 ## <a name="downloaded-code-snippets"></a>Frammenti di codice scaricati
 
@@ -71,6 +72,6 @@ I frammenti di codice IntelliSense installati da Visual Studio non rappresentano
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Visual Basic frammenti di codice IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Visual Basic Frammenti di codice IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Protezione delle applicazioni](../ide/securing-applications.md)
 - [Frammenti di codice](../ide/code-snippets.md)

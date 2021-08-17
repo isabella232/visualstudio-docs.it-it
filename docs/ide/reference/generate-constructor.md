@@ -1,20 +1,21 @@
 ---
 title: Generare un'azione rapida costruttore
-description: Informazioni su come usare il menu azioni rapide e refactoring per generare immediatamente il codice per un nuovo costruttore in una classe.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per generare immediatamente il codice per un nuovo costruttore in una classe.
 ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 24e9324444dbeb10a86184f7c15ea8b88e118177
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a74b9d65db028646a6aca28b2c3bbb738e51ae18
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151704"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -33,8 +34,8 @@ Questa generazione di codice si applica a:
 **Procedura:** esistono diversi modi per generare un costruttore:
 
 - [Generare un costruttore e selezionare i membri](#pick)
-- [Genera costruttore con proprietà](#with)
-- [Genera il costruttore dai campi selezionati](#selection)
+- [Generare un costruttore con proprietà](#with)
+- [Genera costruttore da campi selezionati](#selection)
 - [Generare un costruttore da un nuovo utilizzo](#usage)
 - [Aggiungere un parametro a un costruttore esistente](#addparameter)
 - [Creare e inizializzare un campo/una proprietà dal parametro di un costruttore](#create)
@@ -48,12 +49,12 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sull' :::image type="icon" source="media/screwdriver.png"::: icona visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota della classe.
+      - Fare clic :::image type="icon" source="media/screwdriver.png"::: sull'icona visualizzata nel margine sinistro se il cursore di testo si trova già nella riga vuota della classe .
 
-   ![Screenshot dell'opzione generate Constructor.](media/constructor1-preview-cs.png)
+   ![Screenshot dell'opzione Genera costruttore.](media/constructor1-preview-cs.png)
 
 1. Selezionare **Genera il costruttore** dal menu a discesa.
 
@@ -70,15 +71,15 @@ Questa generazione di codice si applica a:
 
    ![Screenshot che mostra che il costruttore viene creato con i parametri specificati.](media/constructor1-result-cs.png)
 
-## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> Genera costruttore con proprietà (solo C#)
+## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> Generare un costruttore con proprietà (solo C#)
 
 1. Posizionare il cursore sull'istanza.
 
-2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 
-3. Selezionare **genera costruttore in `<QualifiedName>` (con proprietà)**.
+3. Selezionare **Genera costruttore in `<QualifiedName>` (con proprietà).**
 
-   ![Screenshot del costruttore di generazione nell'opzione chiave (con proprietà).](media/generate-constructor-with-properties.png)
+   ![Screenshot dell'opzione Genera costruttore in Chiave (con proprietà).](media/generate-constructor-with-properties.png)
 
 ## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> Generare un costruttore dai campi selezionati (solo C#)
 
@@ -89,12 +90,12 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sull' :::image type="icon" source="media/screwdriver.png"::: icona visualizzata nel margine sinistro se il cursore di testo si trova già nella riga con la selezione.
+      - Fare clic :::image type="icon" source="media/screwdriver.png"::: sull'icona visualizzata nel margine sinistro se il cursore di testo si trova già sulla riga con la selezione.
 
-      ![Screenshot dell'opzione Genera stringa di tipo stringa del costruttore.](media/constructor2-preview-cs.png)
+      ![Screenshot dell'opzione genera stringa di stringa Person del costruttore.](media/constructor2-preview-cs.png)
 
 1. Scegliere **Genera il costruttore 'NomeTipo(...)'** dal menu a discesa.
 
@@ -117,13 +118,13 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Passare il puntatore del mouse sulla zigzag rossa e fare clic sull' :::image type="icon" source="media/error-bulb.png"::: icona visualizzata.
-      - Fare clic sull' :::image type="icon" source="media/error-bulb.png"::: icona visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la zigzag rossa.
+      - Passare il puntatore del mouse sulla linea onniva rossa e fare clic :::image type="icon" source="media/error-bulb.png"::: sull'icona visualizzata.
+      - Fare clic sull'icona visualizzata nel margine sinistro se il cursore di testo si trova già sulla riga con la linea rossa on line on line on the :::image type="icon" source="media/error-bulb.png"::: red squiggle .
 
-      ![Screenshot dell'opzione genera costruttore in person.](media/constructor-preview-cs.png)
+      ![Screenshot dell'opzione Genera costruttore in Persona.](media/constructor-preview-cs.png)
 
 3. Scegliere **Genera il costruttore in '*NomeTipo*'** dal menu a discesa.
 
@@ -146,18 +147,18 @@ Questa generazione di codice si applica a:
 
 2. Posizionare il cursore nella riga in cui è presente una sottolineatura ondulata rossa che indica che è stato usato un costruttore che non esiste ancora.
 
-    ![Screenshot che mostra la riga in cui è presente una zigzag rossa.](media/constructor4-highlight-cs.png)
+    ![Screenshot che mostra la riga in cui è presente una linea a linee oncchi rosse.](media/constructor4-highlight-cs.png)
 
 3. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Passare il puntatore del mouse sulla zigzag rossa e fare clic sull' :::image type="icon" source="media/error-bulb.png"::: icona visualizzata.
-      - Fare clic sull' :::image type="icon" source="media/error-bulb.png"::: icona visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la zigzag rossa.
+      - Passare il puntatore del mouse sulla linea onniva rossa e fare clic :::image type="icon" source="media/error-bulb.png"::: sull'icona visualizzata.
+      - Fare clic sull'icona visualizzata nel margine sinistro se il cursore di testo si trova già sulla riga con la linea rossa on line on line on the :::image type="icon" source="media/error-bulb.png"::: red squiggle .
 
-      ![Screenshot dell'opzione Aggiungi parametro alla stringa stringa person.](media/constructor4-preview-cs.png)
+      ![Screenshot dell'opzione aggiungi parametro alla stringa di stringa Person.](media/constructor4-preview-cs.png)
 
 4. Scegliere **Aggiungi il parametro a 'NomeTipo(...)'** dal menu a discesa.
 
@@ -178,20 +179,20 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sull' :::image type="icon" source="media/screwdriver.png"::: icona visualizzata nel margine sinistro se il cursore di testo si trova già nella riga con il parametro aggiunto.
+      - Fare clic :::image type="icon" source="media/screwdriver.png"::: sull'icona visualizzata nel margine sinistro se il cursore di testo è già sulla riga con il parametro aggiunto.
 
-   ![Screenshot dell'opzione Crea e inizializza validità della proprietà.](media/constructor5-preview-cs.png)
+   ![Screenshot dell'opzione Crea e inizializza proprietà Age.](media/constructor5-preview-cs.png)
 
 1. Scegliere **Crea e inizializza la proprietà** o **Crea e inizializza il campo** dal menu a discesa.
 
    Il campo o la proprietà viene dichiarato e denominato automaticamente in base ai tipi. Viene anche aggiunta una riga di codice per inizializzare il campo o la proprietà nel corpo del costruttore.
 
-   ![Screenshot che mostra che il campo o la proprietà è dichiarata e automaticamente denominata in modo che corrisponda ai tipi.](media/constructor5-result-cs.png)
+   ![Screenshot che mostra che il campo o la proprietà è dichiarato e denominato automaticamente in modo che corrisponda ai tipi.](media/constructor5-result-cs.png)
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Generazione codice](../code-generation-in-visual-studio.md)
-- [Anteprima modifiche](../../ide/preview-changes.md)
+- [Anteprima delle modifiche](../../ide/preview-changes.md)

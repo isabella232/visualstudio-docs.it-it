@@ -1,6 +1,6 @@
 ---
 title: Finestra di comando
-description: Informazioni su come usare la finestra di comando per eseguire comandi o alias direttamente nell'IDE di Visual Studio.
+description: Informazioni su come usare il finestra di comando per eseguire comandi o alias direttamente nell'IDE Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fba1c12743035c397780db64939dec8195a75afd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74954be3d0506c6a87f3973da617d26a96af8e9152ef85cbb45e72ad2d54d0d4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942854"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430590"
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.
@@ -113,5 +114,5 @@ Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è nec
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: Filtrare la finestra di dialogo AddItem per i progetti annidati | Microsoft Docs
+title: Applicazione di filtri alla finestra di dialogo AddItem per i progetti annidati | Microsoft Docs
 description: Informazioni su come filtrare la finestra di dialogo AddItem per un progetto annidato in Visual Studio implementando l'interfaccia IVsFilterAddProjectItemDlg del progetto padre.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,28 +11,29 @@ ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59ae3c229ba359af0349ad93edc75e53c2cc3557
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5bb4a9a76cc4ca074051ccb7ad48ae70b0e29e92
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069582"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069938"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Filtrare la finestra di dialogo AddItem per i progetti annidati
-Quando si visualizza una finestra di dialogo **AddItem** per un progetto annidato, il progetto padre può controllare quali elementi vengono visualizzati nella finestra di dialogo.
+Quando si visualizza una **finestra di dialogo AddItem** per un progetto annidato, il progetto padre può controllare quali elementi vengono visualizzati nella finestra di dialogo.
 
- L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> interfaccia consente di filtrare i nodi che si troveranno in una finestra di dialogo **AddItem** . Quando il progetto figlio Visualizza la finestra di dialogo **AddItem** , l'elemento padre può implementare l' `IVsFilterAddProjectItemDlg` interfaccia e filtrare gli elementi che verrebbero altrimenti visualizzati nel progetto figlio.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>L'interfaccia consente di filtrare i nodi che saranno in una **finestra di dialogo AddItem.** Quando il progetto figlio visualizza la finestra di dialogo **AddItem,** il padre può implementare l'interfaccia e filtrare gli elementi che altrimenti verrebbero visualizzati nel `IVsFilterAddProjectItemDlg` progetto del figlio.
 
- Quando i progetti vengono raggruppati per funzione in progetti padre specifici, è possibile implementare `IVsFilterAddProjectItemDlg` quando l'utente seleziona **Aggiungi elemento di progetto** dal menu di scelta rapida in un progetto annidato. Implementazione `IvsFilterAddProjectItemDlg displays` solo di elementi di progetto o file specifici di tale gruppo. Gli elementi di progetto per altri gruppi vengono esclusi dalla finestra di dialogo, anche se vengono archiviati nella stessa directory.
+ Quando i progetti vengono raggruppati per funzione in progetti padre specifici, è possibile implementare quando l'utente seleziona Aggiungi elemento Project nel menu di scelta rapida `IVsFilterAddProjectItemDlg` in un progetto annidato.  Implementazione `IvsFilterAddProjectItemDlg displays` solo di elementi di progetto o file specifici di tale gruppo. Project elementi per altri gruppi vengono filtrati dalla finestra di dialogo, anche se sono archiviati nella stessa directory.
 
- Quando un utente apre la finestra di dialogo **AddItem** per l'elemento figlio, viene chiamata l'implementazione del progetto padre dell' `IVsFilterAddProjectItemDlg` interfaccia.
+ Quando un utente apre la **finestra di dialogo AddItem** per l'elemento figlio, viene chiamata l'implementazione dell'interfaccia del `IVsFilterAddProjectItemDlg` progetto padre.
 
- L' `IVsFilterAddProjectItemDlg` interfaccia può inoltre implementare il filtraggio per categoria. Per altre informazioni, vedere [aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) e [registrare i modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md).
+ `IVsFilterAddProjectItemDlg`L'interfaccia può anche implementare il filtro in base alla categoria. Per altre informazioni, vedere [Aggiungere elementi alla finestra di](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) dialogo Aggiungi nuovo elemento e [Registrare modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [Aggiungi elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [Registrare modelli di progetti e di elementi](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Annida progetti](../../extensibility/internals/nesting-projects.md)
+- [Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Registrare modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Annidare i progetti](../../extensibility/internals/nesting-projects.md)

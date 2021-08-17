@@ -10,20 +10,21 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b578c949b3b5121eb90b2c034766ea15ae6d096
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: db4e032f755337067ba208c0a8a6267c155ba4847b8259e7f5f7cd70822b9509
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386566"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231626"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: Aggiungere un comando al menu di scelta rapida
 
 È possibile aggiungere comandi di menu al linguaggio specifico di dominio (DSL) in modo che gli utenti possano effettuare attività specifiche per il DSL. I comandi sono visualizzati nel menu di scelta rapida quando gli utenti fanno clic con il pulsante destro del mouse sul diagramma. È possibile definire un comando in modo che venga visualizzato nel menu solo in situazioni specifiche, ad esempio solo quando l'utente fa clic su tipi specifici di elementi o su elementi con uno stato specifico.
 
-In breve, i passaggi vengono eseguiti nel progetto DslPackage come segue:
+In breve, i passaggi vengono eseguiti nel progetto DslPackage come indicato di seguito:
 
 1. [Dichiarare il comando in Commands.vsct](#VSCT)
 
@@ -59,7 +60,7 @@ Usare il metodo descritto in questo argomento se:
 
 ### <a name="to-add-the-command"></a>Per aggiungere il comando
 
-1. In **Esplora soluzioni**, nel **progetto DslPackage** aprire Commands.vsct.
+1. In **Esplora soluzioni** aprire Commands.vsct nel progetto **DslPackage.**
 
 2. Nell'elemento `Commands` definire uno o più pulsanti e un gruppo. Un *pulsante* è una voce del menu. Un *gruppo* è una sezione del menu. Per definire queste voci, aggiungere gli elementi seguenti:
 
@@ -137,11 +138,11 @@ Usare il metodo descritto in questo argomento se:
 
 ### <a name="to-update-the-packagett-file"></a>Per aggiornare il file Package.tt
 
-1. In **Esplora soluzioni**, nel **progetto DslPackage,** nella cartella **GeneratedCode** aprire il file Package.tt.
+1. In **Esplora soluzioni**, nel progetto **DslPackage,** nella cartella **GeneratedCode** aprire il file Package.tt.
 
 2. Trovare l'attributo `ProvideMenuResource`.
 
-3. Incrementare il parametro della `version` dell'attributo, che è il secondo parametro. Se si vuole, è possibile scrivere il nome del parametro in modo esplicito come promemoria del suo scopo. Ad esempio:
+3. Incrementare il parametro della `version` dell'attributo, che è il secondo parametro. Se si vuole, è possibile scrivere il nome del parametro in modo esplicito come promemoria del suo scopo. Esempio:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -161,7 +162,7 @@ La classe del set di comandi è derivata da <xref:Microsoft.VisualStudio.Modelin
 
 2. In **DslPackage** creare una cartella denominata **Codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs` .
 
-3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:
+3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Esempio:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -364,6 +365,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Procedura: Modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md)
-- [Codice di esempio: Diagrammi di circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Codice di esempio: diagrammi di circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

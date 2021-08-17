@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare uno shader con trama di base'
-description: Usare la finestra di progettazione shader e il linguaggio di shader del grafico diretto per creare uno shader a trama singola che imposta il colore finale sui valori RGB e alfa dalla trama.
+description: Usare Progettazione shader e Graph Linguaggio shader per creare uno shader a trama singola che imposta il colore finale su RGB e i valori alfa della trama.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,14 +8,15 @@ ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 832d8aac861163c0d1c6b56c340502e32b2f555b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e094e8bd318fce3fdb755ea482a696b25af1cdd4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915675"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127766"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procedura: Creare uno shader con trama di base
 
@@ -50,11 +51,11 @@ La figura seguente illustra il grafico shader completato e un'anteprima dello sh
 
 ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-texture-effect.png)
 
-Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per ulteriori informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [finestra di progettazione shader](../designers/shader-designer.md) .
+Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere Finestra [di progettazione shader](../designers/shader-designer.md)
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Editor di immagini](../designers/image-editor.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

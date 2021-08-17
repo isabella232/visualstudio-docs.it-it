@@ -1,6 +1,6 @@
 ---
 description: Questa interfaccia rappresenta un processo in esecuzione e i relativi programmi.
-title: Interfaccia IDebugProcess3 | Microsoft Docs
+title: IDebugProcess3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,10 +22,10 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121338943"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
-Questa interfaccia rappresenta un processo in esecuzione e i relativi programmi. Questa interfaccia è disponibile come sostituzione di diversi metodi [nell'interfaccia IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) Fornisce il controllo su tutti i programmi nel processo.
+Questa interfaccia rappresenta un processo in esecuzione e i relativi programmi. Questa interfaccia esiste come sostituzione di diversi metodi [nell'interfaccia IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) Fornisce il controllo su tutti i programmi nel processo.
 
 > [!NOTE]
-> [I](../../../extensibility/debugger/reference/idebugprogram2-continue.md)metodi [Continue, Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) [e Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) sono deprecati e non devono più essere usati. Usare invece i metodi corrispondenti `IDebugProcess3` nell'interfaccia .
+> [I](../../../extensibility/debugger/reference/idebugprogram2-continue.md)metodi Continue , [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) [e Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) sono deprecati e non devono più essere usati. Usare invece i metodi corrispondenti `IDebugProcess3` nell'interfaccia .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ IDebugProcess3 : IDebugProcess2
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[Continua](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Continua l'esecuzione o l'esecuzione istruzione per istruzione di un processo.|
+|[Continua](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Continua l'esecuzione di o l'esecuzione di un processo.|
 |[Eseguire](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Avvia l'esecuzione di un processo.|
 |[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Consente di inoltrare un'istruzione o un'istruzione nel processo.|
 |[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Ottiene il motivo per cui il processo è stato avviato per il debug.|
 |[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Imposta il linguaggio di hosting in modo che il motore di debug possa caricare l'analizzatore di espressioni appropriato.|
 |[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Recupera la lingua attualmente impostata per questo processo.|
-|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|Disabilita Modifica e continuazione (ENC) per questo processo.<br /><br /> Un fornitore di porte personalizzato non implementa questo metodo (deve sempre restituire `E_NOTIMPL` ).|
-|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Ottiene lo stato ENC per questo processo.<br /><br /> Un fornitore di porte personalizzato non implementa questo metodo (deve sempre restituire `E_NOTIMPL` ).|
+|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|Disabilita Modifica e continuazione (ENC) per questo processo.<br /><br /> Un fornitore di porte personalizzato non implementa questo metodo (deve restituire sempre `E_NOTIMPL` ).|
+|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Ottenere lo stato ENC per questo processo.<br /><br /> Un fornitore di porte personalizzato non implementa questo metodo (deve restituire sempre `E_NOTIMPL` ).|
 |[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|Recupera una matrice di identificatori univoci per i motori di debug disponibili.|
 
 ## <a name="requirements"></a>Requisiti

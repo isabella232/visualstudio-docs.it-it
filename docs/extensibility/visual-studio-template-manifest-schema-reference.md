@@ -1,5 +1,5 @@
 ---
-title: Visual Studio riferimento allo schema del manifesto del modello | Microsoft Docs
+title: Visual Studio Informazioni di riferimento sullo schema del manifesto del modello | Microsoft Docs
 description: Questo riferimento allo schema descrive il formato dei file manifesto Visual Studio modello generati per i Visual Studio di progetto o di elemento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -8,17 +8,18 @@ ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 259d2dd050f4681053f331bfd4ec39dd7b214059
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 4e0cb5372340bfd3ca624d3c9844bd34ef1e0914
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905384"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109942"
 ---
-# <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio sullo schema del manifesto del modello
-Questo schema descrive il formato dei file Visual Studio del modello di distribuzione (con estensione *vstman)* generati per i Visual Studio di progetto o di elemento. Lo schema descrive anche il percorso e altre informazioni rilevanti sul modello.
+# <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio riferimento allo schema del manifesto del modello
+Questo schema descrive il formato del manifesto del modello Visual Studio file (con estensione *vstman)* generati per i Visual Studio di progetto o di elemento. Lo schema descrive anche il percorso e altre informazioni rilevanti sul modello.
 
  : poiché sono presenti directory di modelli di elemento e di progetto separate, un manifesto non deve mai avere una combinazione di modelli di elemento e di progetto.
 
@@ -30,28 +31,28 @@ Questo schema descrive il formato dei file Visual Studio del modello di distribu
 
 ### <a name="attributes"></a>Attributi
 
-- **Version:** stringa che rappresenta la versione del manifesto del modello. Obbligatorio.
+- **Version**: stringa che rappresenta la versione del manifesto del modello. Obbligatorio.
 
-- **Locale:** stringa che rappresenta le impostazioni locali o le impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli. È necessario usare un manifesto separato per ogni impostazione locale. facoltativo.
+- **Impostazioni** locali: stringa che rappresenta le impostazioni locali o le impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli. È necessario usare un manifesto separato per ogni impostazione locale. facoltativo.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-- **VsTemplateContainer** Opzionale.
+- **VSTemplateContainer** Opzionale.
 
 - **VSTemplateDir** Opzionale.
 
 ### <a name="parent-element"></a>Elemento padre
  Nessuno.
 
-## <a name="vstemplatecontainer"></a>VsTemplateContainer
+## <a name="vstemplatecontainer"></a>VSTemplateContainer
  Contenitore degli elementi del manifesto del modello. Un manifesto ha un contenitore di modelli per ogni modello definito.
 
 ### <a name="attributes"></a>Attributi
- **VSTemplateType:** valore stringa che specifica il tipo del modello ( `"Project"` `"Item"` , o `"ProjectGroup"` ). Obbligatoria
+ **VSTemplateType:** valore stringa che specifica il tipo del modello ( `"Project"` , `"Item"` o `"ProjectGroup"` ). Necessario
 
 ### <a name="child-elements"></a>Elementi figlio
 
-- **RelativePathOnDisk:** percorso relativo del file modello su disco. Questo percorso definisce anche la posizione del modello nell'albero del modello visualizzato nella **finestra di dialogo Nuovo progetto** o **Nuovo** elemento. Per i modelli distribuiti come directory e singoli file, questo percorso fa riferimento alla directory contenente i file modello. Per i modelli distribuiti *come file.zip,* questo percorso deve essere il percorso del file *.zip.*
+- **RelativePathOnDisk:** percorso relativo del file modello su disco. Questa posizione definisce anche la posizione del modello nell'albero del modello visualizzato nella finestra di **dialogo Nuovo Project** o Nuovo **elemento.** Per i modelli distribuiti come directory e singoli file, questo percorso fa riferimento alla directory contenente i file modello. Per i modelli distribuiti *come.zip* file, questo percorso deve essere il percorso del file *.zip* file.
 
 - **VSTemplateHeader: elemento [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) che descrive l'intestazione.
 
@@ -61,7 +62,7 @@ Questo schema descrive il formato dei file Visual Studio del modello di distribu
 ## <a name="vstemplatedir"></a>VSTemplateDir
  Descrive la directory in cui si trova il modello. Un manifesto può contenere più **voci VSTemplateDir** per fornire il nome localizzato e l'ordinamento per consentire alle directory di controllarne l'aspetto nell'albero delle categorie del modello.
 
- A causa della progettazione, **le voci VSTemplateDir** dovrebbero essere visualizzate solo nei manifesti non specificati dalle impostazioni locali.
+ A causa della progettazione, le **voci VSTemplateDir** devono essere visualizzate solo nei manifesti non specificati dalle impostazioni locali.
 
 ### <a name="attributes"></a>Attributi
  Nessuno.
@@ -84,7 +85,7 @@ Questo schema descrive il formato dei file Visual Studio del modello di distribu
 
 ### <a name="attributes"></a>Attributi
 
-- **Package:** valore stringa che specifica il pacchetto. facoltativo.
+- **Pacchetto:** valore stringa che specifica il pacchetto. facoltativo.
 
 - **ID:** valore stringa che specifica l'ID. facoltativo.
 

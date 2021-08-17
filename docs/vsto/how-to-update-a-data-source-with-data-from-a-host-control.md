@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5ff36a48eb4982b4fcd0fb882ba9f6decc64f95303693b5be5dd0e61f5d424b4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d389e4f3e2b8bdf4348508760b6894c0eeaf1ec7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267780"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026005"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: Aggiornare un'origine dati con i dati di un controllo host
   È possibile associare un controllo host a un'origine dati e aggiornare l'origine dati con le modifiche apportate ai dati nel controllo. Questo processo prevede due passaggi principali:
@@ -33,7 +33,7 @@ ms.locfileid: "121267780"
 
 2. Aggiornare il database con i dati modificati nell'origine dati in memoria. Ciò è possibile solo se l'origine dati è connessa a un database back-end, ad esempio un database SQL Server o Microsoft Office Access.
 
-   Per altre informazioni sui controlli host e sui data binding, vedere Panoramica degli elementi host e dei controlli [host](../vsto/host-items-and-host-controls-overview.md) e Associare dati ai controlli [in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
+   Per altre informazioni sui controlli host e data binding, vedere Panoramica degli elementi host e dei controlli [host](../vsto/host-items-and-host-controls-overview.md) e Associare dati ai controlli [in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 

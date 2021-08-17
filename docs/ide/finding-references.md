@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac1b2af6f4f664802cecc64e1cb1bddec251d23d62bc14aa79b2c31feef87ec
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2a942755238a356032f41e7cff9e5a462196275c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121373311"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109214"
 ---
 # <a name="find-references-in-your-code"></a>Cercare riferimenti nel codice
 

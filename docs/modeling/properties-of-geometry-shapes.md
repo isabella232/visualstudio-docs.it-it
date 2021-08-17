@@ -11,17 +11,18 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 94eb9ed8050b8a95fde712db4e98bd48f40a72ee
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: aea5ebb6bfefe59bc0d761f4da095e3d64391706e5ee73e32fd3e8871216ad61
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390385"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231470"
 ---
 # <a name="properties-of-geometry-shapes"></a>Proprietà delle forme geometriche
-È possibile usare forme geometriche per specificare la modalità di visualizzazione delle istanze delle classi di dominio in un linguaggio specifico di dominio. Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
+È possibile usare forme geometriche per specificare la modalità di visualizzazione delle istanze delle classi di dominio in un linguaggio specifico di dominio. Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione [di un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
  Le forme geometriche hanno le proprietà elencate nella tabella seguente.
 
@@ -30,12 +31,12 @@ ms.locfileid: "112390385"
 |Colore riempimento|Colore di riempimento della forma.|White|
 |Modalità sfumatura di riempimento|Modalità sfumatura di riempimento di questa forma (Orizzontale, Verticale, Diagonale avanti, Diagonale all'indietro o Nessuna).|Ridimensionamento orizzontale|
 |Geometria|Geometria di questa forma (Rettangolo, Rettangolo arrotondato, Ellisse o Cerchio).|Rettangolo|
-|Dispone di punti di connessione predefiniti|Se `True` , la forma userà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
-|Colore del contorno|Colore del contorno della forma.|Nero|
-|Stile tratteggio del contorno|Stile del trattino del contorno di questa forma (Tinta unita, Trattino, Punto, DashDot, DashDotDot o Personalizzato).|Tinta unita|
+|Dispone di punti di connessione predefiniti|Se , la forma userà i punti di connessione `True` superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
+|Colore del contorno|Colore del contorno di questa forma.|Nero|
+|Stile tratteggio del contorno|Stile del tratteggio del contorno di questa forma (Tinta unita, Trattino, Punto, DashDot, DashDotDot o Personalizzato).|Tinta unita|
 |Spessore del contorno|Spessore del contorno di questa forma.|0.03125|
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Nero|
-|Modificatore di accesso|Modificatore di accesso della classe (public o internal).|Blockchain pubblica|
+|Modificatore di accesso|Modificatore di accesso della classe (public o internal).|Pubblico|
 |Attributi personalizzati|Utilizzato per aggiungere attributi alla classe del codice sorgente generata per questa forma.|\<none>|
 |Genera un valore derivato da Double|Se , verranno generate sia una classe di base che una classe `True` parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [Override ed estensione delle classi generate.](../modeling/overriding-and-extending-the-generated-classes.md)|Falso|
 |Ha un costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per altre informazioni, vedere [Override ed estensione delle classi generate.](../modeling/overriding-and-extending-the-generated-classes.md)|Falso|
@@ -47,7 +48,7 @@ ms.locfileid: "112390385"
 |Note|Note informali associate a questo elemento.|\<none>|
 |Altezza iniziale|Altezza iniziale della forma, in pollici.|1|
 |Larghezza iniziale|Larghezza iniziale della forma, in pollici.|1.5|
-|Colore di riempimento esposto come proprietà<br /><br /> Modalità sfumatura di riempimento esposta<br /><br /> Colore del contorno esposto come proprietà<br /><br /> Stile del trattino del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà specificata di una forma. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla definizione della forma e **scegliere Aggiungi esposto.**|Falso|
+|Esposizione del colore di riempimento come proprietà<br /><br /> Modalità sfumatura di riempimento esposta<br /><br /> Colore del contorno esposto come proprietà<br /><br /> Stile del trattino del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà specificata di una forma. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla definizione della forma e **scegliere Aggiungi esposto.**|Falso|
 |Descrizione|Descrizione utilizzata per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<none>|
 |Correzione del testo della descrizione comando|Testo utilizzato per una descrizione comando fissa.|\<none>|

@@ -11,14 +11,15 @@ ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1326319b483aa707b77e0d7142d816b01fc7d3b1
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 8fcd8ba5b7c3fc1759432d0b33d7b49aa3a257cd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902397"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110046"
 ---
 # <a name="sccopenproject-function"></a>Funzione SccOpenProject
 Questa funzione apre un progetto di controllo del codice sorgente esistente o ne crea uno nuovo.
@@ -82,7 +83,7 @@ SCCRTN SccOpenProject (
 |Valore|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Esito positivo nell'apertura del progetto.|
-|SCC_E_INITIALIZEFAILED|Impossibile inizializzare il progetto.|
+|SCC_E_INITIALIZEFAILED|Project impossibile inizializzare.|
 |SCC_E_INVALIDUSER|L'utente non è stato in grado di accedere al sistema di controllo del codice sorgente.|
 |SCC_E_COULDNOTCREATEPROJECT|Il progetto non esisteva prima della chiamata.  Il `SCC_OPT_CREATEIFNEW` flag è stato impostato, ma non è stato possibile creare il progetto.|
 |SCC_E_PROJSYNTAXERR|Sintassi del progetto non valida.|
@@ -93,10 +94,10 @@ SCCRTN SccOpenProject (
 |SCC_E_NONSPECFICERROR|Errore non specifico. Il sistema di controllo del codice sorgente non è stato inizializzato.|
 
 ## <a name="remarks"></a>Commenti
- L'IDE può passare un nome utente ( ) o semplicemente passare `lpUser` un puntatore a una stringa vuota. Se è presente un nome utente, il plug-in del controllo del codice sorgente deve usarlo come impostazione predefinita. Tuttavia, se non è stato passato alcun nome o se l'accesso non è riuscito con il nome specificato, il plug-in deve richiedere all'utente di accedere e restituirà il nome valido in quando riceve un account di accesso valido Poiché il plug-in può modificare la stringa del nome utente, l'IDE alloca sempre un buffer di dimensioni ( +1 o SCC_USER_SIZE, che include spazio per il `lpUser` `.` `SCC_USER_LEN` terminatore Null).
+ L'IDE può passare un nome utente ( ) o semplicemente passare `lpUser` un puntatore a una stringa vuota. Se è presente un nome utente, il plug-in del controllo del codice sorgente deve usarlo come impostazione predefinita. Tuttavia, se non è stato passato alcun nome o se l'accesso ha avuto esito negativo con il nome specificato, il plug-in deve richiedere all'utente di accedere e restituirà il nome valido in quando riceve un account di accesso valido Poiché il plug-in può modificare la stringa del nome utente, l'IDE alloca sempre un buffer di dimensioni ( +1 o SCC_USER_SIZE, che include spazio per il `lpUser` `.` `SCC_USER_LEN` terminatore Null).
 
 > [!NOTE]
-> La prima azione che l'IDE può essere necessario eseguire può essere una chiamata alla funzione `SccOpenProject` o [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Per questo motivo, entrambi hanno un parametro `lpUser` identico.
+> La prima azione che l'IDE può essere necessario eseguire può essere una chiamata alla funzione `SccOpenProject` o [SccGetProjPath.](../extensibility/sccgetprojpath-function.md) Per questo motivo, entrambi hanno un parametro `lpUser` identico.
 
  `lpAuxProjPath` e `lpProjName` vengono letti dal file di soluzione oppure vengono restituiti da una chiamata alla funzione `SccGetProjPath` . Questi parametri contengono le stringhe associate dal plug-in del controllo del codice sorgente al progetto e sono significativi solo per il plug-in. Se non sono presenti stringhe di questo tipo nel file di soluzione e all'utente non è stato richiesto di esplorare (che restituirebbe una stringa tramite la funzione), l'IDE passa stringhe vuote per e e prevede che questi valori siano aggiornati dal plug-in quando questa funzione `SccGetProjPath` `lpAuxProjPath` viene `lpProjName` restituita.
 
@@ -110,12 +111,12 @@ SCCRTN SccOpenProject (
 ## <a name="calling-order"></a>Ordine di chiamata
  Nel corso normale degli eventi, [SccInitialize](../extensibility/sccinitialize-function.md) viene chiamato per primo per aprire una sessione di controllo del codice sorgente. Una sessione può essere costituita da una chiamata a , seguita da altre chiamate di funzione api plug-in del controllo del codice sorgente e termina con una chiamata `SccOpenProject` a [SccCloseProject](../extensibility/scccloseproject-function.md). Tali sessioni possono essere ripetute più volte prima che [venga chiamato SccUninitialize.](../extensibility/sccuninitialize-function.md)
 
- Se il plug-in del controllo del codice sorgente imposta il bit in , la sequenza di sessione precedente può essere ripetuta `SCC_CAP_REENTRANT` `SccInitialize` più volte in parallelo. Strutture `pvContext` diverse tiene traccia delle diverse sessioni, in cui ognuna è `pvContext` associata a un progetto aperto alla volta. In base al `pvContext` parametro , il plug-in può determinare a quale progetto viene fatto riferimento in qualsiasi chiamata specifica. Se il bit di funzionalità non è impostato, i plug-in di controllo del codice sorgente non ascendente sono limitati nella possibilità di `SCC_CAP_REENTRANT` lavorare con più progetti.
+ Se il plug-in del controllo del codice sorgente imposta il bit in , la sequenza di sessione precedente può essere ripetuta `SCC_CAP_REENTRANT` `SccInitialize` più volte in parallelo. Strutture `pvContext` diverse tiene traccia delle diverse sessioni, in cui ognuna è `pvContext` associata a un progetto aperto alla volta. In base al `pvContext` parametro , il plug-in può determinare a quale progetto viene fatto riferimento in qualsiasi chiamata specifica. Se il bit di funzionalità non è impostato, i plug-in di controllo del codice sorgente non a tolleranza sono limitati nella possibilità di `SCC_CAP_REENTRANT` lavorare con più progetti.
 
 > [!NOTE]
-> Il `SCC_CAP_REENTRANT` bit è stato introdotto nella versione 1.1 dell'API plug-in del controllo del codice sorgente. Non è impostata o viene ignorata nella versione 1.0 e si presuppone che tutti i plug-in del controllo del codice sorgente della versione 1.0 non siano rientranti.
+> Il `SCC_CAP_REENTRANT` bit è stato introdotto nella versione 1.1 dell'API plug-in del controllo del codice sorgente. Non è impostato o viene ignorato nella versione 1.0 e si presuppone che tutti i plug-in del controllo del codice sorgente della versione 1.0 non siano rientranti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCloseProject](../extensibility/scccloseproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

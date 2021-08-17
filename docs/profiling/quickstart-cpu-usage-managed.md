@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3a030cd89d47d799fac05f290e9a8aab8eb80afaea5cf8e6b3c23dcdc2bef25
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d3902d8119b8de8eba49cf28a7730cc41d505438
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121245863"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107069"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Guida introduttiva: Analizzare i dati di utilizzo della CPU Visual Studio (C#, Visual Basic)
 
@@ -35,7 +35,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
    ::: moniker range="vs-2017"
    Nella barra dei menu superiore scegliere **File** > **Nuovo** > **Project**.
 
-   Nella finestra **di dialogo Project** nuovo nodo nel riquadro sinistro espandere **C#** o **Visual Basic** e quindi scegliere **.NET Core.** Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al progetto *il nome MyProfilerApp*.
+   Nella finestra **di dialogo Project** nel riquadro sinistro espandere **C#** o **Visual Basic** e quindi scegliere **.NET Core.** Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al progetto *il nome MyProfilerApp*.
 
    Se non viene visualizzato il modello di progetto **Applicazione console (.NET Core)**, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
    ::: moniker-end
@@ -198,7 +198,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
     Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare nuovamente la finestra, fare clic su  >  **Debug Windows** Mostra  >  **Strumenti di diagnostica**.
+3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare nuovamente la finestra, fare clic su **Debug**  >  **Windows**  >  **Mostra Strumenti di diagnostica**.
 
 4. Fare **clic su Debug**  >  **Avvia** debug (o Avvia sulla barra degli strumenti o **F5).** 
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31a7336bca97dde1d01be15a54c86d7b690a69928e4e1131064124c91871f59d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 07986620b374b82396ec2e8c46ee26620dfe6db6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121442118"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107056"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (C++)
 
@@ -36,9 +36,9 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
    ::: moniker range="vs-2017"
    Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
-   Nella finestra **di dialogo Nuovo Project** nel riquadro sinistro espandere Visual C++ e quindi scegliere Windows **Desktop**.  Nel riquadro centrale scegliere Windows **console**. Assegnare quindi al progetto *il nome Diagnostics_Get_Started_Native*.
+   Nella finestra **di dialogo Nuovo** Project nel riquadro sinistro espandere Visual C++ e quindi scegliere Windows **Desktop**.  Nel riquadro centrale scegliere Windows **console**. Assegnare quindi al progetto *il nome Diagnostics_Get_Started_Native*.
 
-   Se il modello di progetto Applicazione **console Windows** non  viene visualizzato, scegliere il collegamento Apri Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Nuovo** Project. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **carico di lavoro Sviluppo di desktop con C++** e quindi scegliere **Modifica**.
+   Se il modello di progetto Applicazione **console Windows** non  viene visualizzato, scegliere il collegamento Apri Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Nuovo Project.** Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **carico di lavoro Sviluppo di desktop con C++** e quindi scegliere **Modifica**.
    ::: moniker-end
    ::: moniker range=">=vs-2019"
    Se la finestra iniziale non è aperta, scegliere **Finestra** > **iniziale file**.
@@ -47,7 +47,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
    Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C++** dall'elenco Linguaggio e quindi **scegliere** Windows dall'elenco Piattaforma.
 
-   Dopo aver applicato i filtri della lingua e della piattaforma, scegliere il modello **App console** e quindi **scegliere Avanti.**
+   Dopo aver applicato i filtri per la lingua e la piattaforma, scegliere il modello **App console** e quindi **scegliere Avanti.**
 
    > [!NOTE]
    > Se il modello App **console** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Nella finestra di dialogo Programma di installazione di Visual Studio quindi scegliere il carico di lavoro **Sviluppo desktop con C++.**

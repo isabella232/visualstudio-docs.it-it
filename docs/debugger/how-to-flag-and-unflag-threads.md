@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b3b57e7932ac44a24a0d4946f38be6f1b5d9502dabc6a3bc8a8070414831b8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 89caed1b5721848e570a815e73d62b73608fecbd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379074"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128338"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Procedura: Contrassegnare e rimuovere i flag dei thread (C#, Visual Basic, C++)
 
@@ -66,4 +66,4 @@ I thread contrassegnati ricevono anche un trattamento speciale **nell'elenco Thr
 ## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Procedura dettagliata: Eseguire il debug di applicazioni multithreading usando la finestra Thread](../debugger/how-to-use-the-threads-window.md)
+- [Procedura dettagliata: Eseguire il debug di applicazioni multithreading tramite la finestra Thread](../debugger/how-to-use-the-threads-window.md)

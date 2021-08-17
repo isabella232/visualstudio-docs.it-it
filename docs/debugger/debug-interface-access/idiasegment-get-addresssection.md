@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e79acd791694bbcff3fcefaf8b1a6ccc612eddc23ad0b04fc1f6d2ffdfbae0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 40a96d29beea7f64a94f7b1aff0609527dab0c09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129015"
 ---
 # <a name="idiasegmentget_addresssection"></a>IDiaSegment::get_addressSection
 Recupera il numero di sezione mappato a questo segmento.

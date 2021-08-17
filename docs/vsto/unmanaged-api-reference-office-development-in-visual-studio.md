@@ -1,6 +1,6 @@
 ---
 title: Informazioni di riferimento sulle API non gestite (Office sviluppo in Visual Studio)
-description: Le informazioni di riferimento sulle API non gestite vengono usate per facilitare il caricamento VSTO componenti aggiuntivi. È anche possibile creare il proprio VSTO del caricatore del componente aggiuntivo implementando questa interfaccia.
+description: Il riferimento all'API non gestita viene usato per consentire il caricamento di componenti VSTO componenti aggiuntivi. È anche possibile creare il proprio VSTO del caricatore del componente aggiuntivo implementando questa interfaccia.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
@@ -26,7 +26,7 @@ ms.locfileid: "121226115"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Informazioni di riferimento sulle API non gestite (Office sviluppo in Visual Studio)
 
-A partire dal sistema Microsoft Office 2007, le applicazioni Office usano l'interfaccia [IManagedAddin](../vsto/imanagedaddin-interface.md) per chiamare in un componente caricatore del componente aggiuntivo VSTO incluso in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Questo componente viene usato per facilitare il caricamento VSTO componenti aggiuntivi. È possibile creare il proprio VSTO del caricatore del componente aggiuntivo implementando questa interfaccia.
+A partire dal sistema Microsoft Office 2007, le applicazioni Office usano l'interfaccia [IManagedAddin](../vsto/imanagedaddin-interface.md) per chiamare in un componente caricatore del componente aggiuntivo VSTO incluso in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Questo componente viene usato per facilitare il caricamento dei componenti VSTO componenti aggiuntivi. È possibile creare il proprio VSTO del caricatore del componente aggiuntivo implementando questa interfaccia.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 

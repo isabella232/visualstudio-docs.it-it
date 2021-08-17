@@ -1,6 +1,6 @@
 ---
 title: Metodo SetNotificationForWaitCompletion | Microsoft Docs
-description: Informazioni su come il debugger usa un bit di stato per uscire da un corpo del metodo asincrono per le attività in stile promessa.
+description: Informazioni su come il debugger usa un bit di stato per uscire dal corpo di un metodo asincrono per le attività in stile promessa.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121338098"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Metodo SetNotificationForWaitCompletion
-Imposta o cancella il bit TASK_STATE_WAIT_COMPLETION_NOTIFICATION stato.
+Imposta o cancella il bit TASK_STATE_WAIT_COMPLETION_NOTIFICATION stato corrente.
 
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
@@ -36,14 +36,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>Parametri
  `enabled`
 
- `true` per impostare il bit; `false` per annullare l'impostata del bit.
+ `true` per impostare il bit; `false` per annullare l'applicazione del bit.
 
 ## <a name="exceptions"></a>Eccezioni
 
 ## <a name="remarks"></a>Osservazioni
- Il debugger imposta questo bit per uscire da un corpo del metodo asincrono. Se `enabled` è , questo metodo deve essere chiamato solo su `true` un'attività non ancora completata. Quando `enabled` è , questo metodo può essere chiamato sulle attività `false` completate. In entrambi i eventi, deve essere usato solo per le attività in stile promessa.
+ Il debugger imposta questo bit per uscire da un corpo del metodo asincrono. Se `enabled` è , questo metodo deve essere chiamato solo su `true` un'attività che non è ancora stata completata. Quando `enabled` è , questo metodo può essere chiamato sulle attività `false` completate. In entrambi i eventi, deve essere usato solo per le attività in stile promessa.
 
 ## <a name="requirements"></a>Requisiti
 
 ## <a name="see-also"></a>Vedi anche
-- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

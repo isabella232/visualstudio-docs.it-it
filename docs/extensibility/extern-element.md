@@ -1,6 +1,6 @@
 ---
 title: Elemento Extern | Microsoft Docs
-description: L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna (con estensione h) da unire al file con estensione vsct in fase di compilazione.
+description: L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna (con estensione h) da unire al file vsct in fase di compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,19 +16,19 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22f10cb94421d891f62bc5e57769e740e25dc05089c7dd442a145ebd1077b060
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a9fa1e2979aefa533566ccc4a964c47bde3c701
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401791"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070262"
 ---
 # <a name="extern-element"></a>Elemento Extern
-L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna ( con estensione *h*) da unire al file con estensione *vsct* in fase di compilazione. I file da unire devono essere nel percorso Include fornito al compilatore VSCT o a cui fa riferimento un [elemento Include](../extensibility/include-element.md). I file possono essere altri *file con estensione vsct* o file di intestazione C++.
+L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna ( con estensione *h*) da unire al file *vsct* in fase di compilazione. I file da unire devono essere nel percorso Include fornito al compilatore VSCT o a cui fa riferimento un [elemento Include.](../extensibility/include-element.md) I file possono essere altri *file con estensione vsct* o file di intestazione C++.
 
  Le definizioni nei file di intestazione devono essere nel formato "#define [Simbolo] [Valore]" Il valore può essere un altro simbolo se è definito in precedenza. Le definizioni possono essere usate nelle istruzioni condizionali degli elementi di comando. Qualsiasi simbolo non effettivamente usato verrà eliminato.
 
- Elemento CommandTable Elemento Extern
+ Elemento CommandTable Extern
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,8 +44,8 @@ L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna ( con 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |href|Obbligatorio. Percorso del file di intestazione:<br /><br /> href="stdidcmd.h"|
-|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
-|Linguaggio|facoltativo. Lingua predefinita di tutti gli [\<Strings>](../extensibility/strings-element.md) elementi nella tabella dei comandi:<br /><br /> language="en-us"|
+|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Linguaggio|facoltativo. Lingua predefinita di tutti [\<Strings>](../extensibility/strings-element.md) gli elementi nella tabella dei comandi:<br /><br /> language="en-us"|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -57,7 +57,7 @@ L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna ( con 
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[CommandTable - elemento](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano comandi, ovvero voci di menu, menu, barre degli strumenti e caselle combinate, forniti da un vspackage all'IDE.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano comandi, ovvero voci di menu, menu, barre degli strumenti e caselle combinate, forniti da un vspackage all'IDE.|
 
 ## <a name="example"></a>Esempio
 

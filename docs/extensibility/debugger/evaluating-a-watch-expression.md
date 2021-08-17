@@ -1,6 +1,6 @@
 ---
-title: Valutazione di un'espressione Watch | Microsoft Docs
-description: Informazioni su come Visual Studio USA EvaluateSync quando è pronto per visualizzare il valore di un'espressione Watch.
+title: Valutazione di un'espressione di controllo | Microsoft Docs
+description: Informazioni su Visual Studio evaluatesync quando è pronto per visualizzare il valore di un'espressione di controllo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,31 +11,32 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21a173a8c041bbaf12cb67bf90e1c4407ac5e4a7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c5f6978e6ba45c42777533d0fdd288f3ecc55f2dd8dfd26558f1a106489bf376
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097058"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342973"
 ---
-# <a name="evaluate-a-watch-expression"></a>Valutare un'espressione Watch
+# <a name="evaluate-a-watch-expression"></a>Valutare un'espressione di controllo
 > [!IMPORTANT]
-> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 questa modalità di implementazione degli analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
-Quando Visual Studio è pronto per visualizzare il valore di un'espressione Watch, chiama [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md), che a sua volta chiama [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Questo processo produce un oggetto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) che contiene il valore e il tipo dell'espressione.
+Quando Visual Studio è pronto a visualizzare il valore di un'espressione di controllo, chiama [EvaluateSync,](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)che a sua volta [chiama EvaluateSync.](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) Questo processo produce un [oggetto IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) che contiene il valore e il tipo dell'espressione.
 
-In questa implementazione di `IDebugParsedExpression::EvaluateSync` , l'espressione viene analizzata e valutata allo stesso tempo. Questa implementazione esegue le attività seguenti:
+In questa implementazione `IDebugParsedExpression::EvaluateSync` di l'espressione viene analizzata e valutata contemporaneamente. Questa implementazione esegue le attività seguenti:
 
-1. Analizza e valuta l'espressione per produrre un oggetto generico che include il valore e il relativo tipo. In C#, questo è rappresentato come un `object` while in C++, questo viene rappresentato come `VARIANT` .
+1. Analizza e valuta l'espressione per produrre un oggetto generico che contiene il valore e il relativo tipo. In C# questo oggetto è rappresentato come `object` mentre in C++ è rappresentato come `VARIANT` .
 
-2. Crea un'istanza di una classe (denominata `CValueProperty` in questo esempio) che implementa l' `IDebugProperty2` interfaccia e archivia nella classe il valore da restituire.
+2. Crea un'istanza di una classe `CValueProperty` (chiamata in questo esempio) che implementa l'interfaccia e `IDebugProperty2` archivia nella classe il valore da restituire.
 
-3. Restituisce l' `IDebugProperty2` interfaccia dell' `CValueProperty` oggetto.
+3. Restituisce `IDebugProperty2` l'interfaccia `CValueProperty` dall'oggetto .
 
 ## <a name="managed-code"></a>Codice gestito
-Si tratta di un'implementazione di `IDebugParsedExpression::EvaluateSync` nel codice gestito. Il metodo helper `Tokenize` analizza l'espressione in un albero di analisi. La funzione helper `EvalToken` converte il token in un valore. La funzione di supporto `FindTerm` attraversa in modo ricorsivo l'albero di analisi, chiamando `EvalToken` per ogni nodo che rappresenta un valore e applicando qualsiasi operazione (addizione o sottrazione) nell'espressione.
+Si tratta di un'implementazione `IDebugParsedExpression::EvaluateSync` di nel codice gestito. Il metodo helper `Tokenize` analizza l'espressione in un albero di analisi. La funzione helper `EvalToken` converte il token in un valore . La funzione helper attraversa in modo ricorsivo l'albero di analisi, chiamando per ogni nodo che rappresenta un valore e applicando qualsiasi operazione (addizione o `FindTerm` `EvalToken` sottrazione) nell'espressione.
 
 ```csharp
 namespace EEMC
@@ -82,7 +83,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Codice non gestito
-Si tratta di un'implementazione di `IDebugParsedExpression::EvaluateSync` nel codice non gestito. La funzione helper `Evaluate` analizza e valuta l'espressione, restituendo un oggetto che `VARIANT` contiene il valore risultante. La funzione helper consente di `VariantValueToProperty` raggruppare `VARIANT` in un `CValueProperty` oggetto.
+Si tratta di un'implementazione `IDebugParsedExpression::EvaluateSync` di nel codice non gestito. La funzione helper `Evaluate` analizza e valuta l'espressione, restituisce un oggetto `VARIANT` contenente il valore risultante. La funzione helper `VariantValueToProperty` aggrega in un oggetto `VARIANT` `CValueProperty` .
 
 ```cpp
 STDMETHODIMP CParsedExpression::EvaluateSync(
@@ -174,5 +175,5 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Valutare un'espressione della finestra espressioni di controllo](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [Implementazione di esempio della valutazione dell'espressione](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+- [Valutare un'espressione della finestra Espressioni di controllo](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Implementazione di esempio della valutazione delle espressioni](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

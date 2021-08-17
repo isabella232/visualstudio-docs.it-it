@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f964625f1dfb6996d6d2577c51b1ce8807a75a3afd676915e8677b80c1521ca
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 11c59ded5e3572eb0573738414f14e2804f4f177
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121326667"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129600"
 ---
 # <a name="baseclass"></a>BaseClass
 Ogni classe di base per un simbolo di tipo definito dall'utente (UDT) viene identificata da un elemento figlio con un `SymTagBaseClass` tag . La [proprietà IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) contiene il simbolo per il tipo definito dall'utente sottostante e tutte le proprietà del tipo definito dall'utente sottostante sono disponibili come parte di questo simbolo BaseClass.

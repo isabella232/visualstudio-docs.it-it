@@ -20,7 +20,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121344820"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo specificato.
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,6 +1,6 @@
 ---
 title: Installare un visualizzatore | Microsoft Docs
-description: Informazioni su come installare un visualizzatore in modo che sia disponibile per l'uso del debug in Visual Studio.
+description: Informazioni su come installare un visualizzatore in modo che sia disponibile per il debug per l'uso in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 07/02/2021
 ms.topic: how-to
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cfbedc3c35b8c0cab1201dd3257042b56a2b9f5183e9f3a9fcdb089c72b44d62
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06ead535299bc0748489462a9c3adc04d045c08b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379139"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128299"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.
@@ -38,18 +38,18 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 
 1. Individuare la DLL che contiene il visualizzatore compilato.
 
-   In genere, è meglio se sia la DLL sul lato debugger che la DLL sul lato oggetto del debug **specificano Qualsiasi CPU** come piattaforma di destinazione. La DLL sul lato debugger deve essere **Qualsiasi CPU** o **a 32 bit.** La piattaforma di destinazione per la DLL sul lato oggetto del debug deve corrispondere al processo dell'oggetto del debug.
+   In genere, è meglio se sia la DLL sul lato debugger che la DLL sul lato oggetto del debug specificano **Qualsiasi CPU** come piattaforma di destinazione. La DLL sul lato debugger deve essere **Qualsiasi CPU** o **a 32 bit.** La piattaforma di destinazione per la DLL sul lato oggetto del debug deve corrispondere al processo dell'oggetto del debug.
 
    >[!NOTE]
-   > Il visualizzatore lato debugger viene caricato nel processo Visual Studio, quindi deve essere una DLL .NET Framework debugger. Il lato oggetto del debug può essere .NET Framework o .NET Standard a seconda del processo di cui viene Visual Studio.
+   > Il visualizzatore lato debugger viene caricato nel processo Visual Studio, quindi deve essere un .NET Framework DLL. Il lato oggetto del debug può essere .NET Framework o .NET Standard a seconda del processo di cui viene Visual Studio.
 
-2. Copiare la DLL [lato debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (ed eventuali DLL da cui dipende) in uno dei percorsi seguenti:
+2. Copiare la DLL [lato debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (e tutte le DLL da cui dipende) in uno dei percorsi seguenti:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3. Copiare la DLL [lato oggetto del](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) debug in uno dei percorsi seguenti:
+3. Copiare [la DLL lato oggetto del debug](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) in uno dei percorsi seguenti:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
@@ -60,9 +60,9 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
     - `netstandard2.0` per gli oggetti di debug che usano un runtime che supporta `netstandard 2.0` ( `.NET Framework v4.6.1+` o `.NET Core 2.0+` ).
     - `netcoreapp` per gli oggetti di debug che eseguono il `.NET Core` runtime. (supporta `.NET Core 2.0+` )
 
-   Una DLL lato oggetto del debug è necessaria se si vuole creare un visualizzatore autonomo. Questa DLL contiene il codice per l'oggetto dati, che può implementare metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+   Se si desidera creare un visualizzatore autonomo, è necessaria una DLL sul lato oggetto del debug. Questa DLL contiene il codice per l'oggetto dati, che può implementare i metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
 
-   Se si ha più destinazione del codice sul lato oggetto del debug, la DLL sul lato oggetto del debug deve essere inserita nella cartella per TFM con supporto minimo.
+   Se il codice sul lato oggetto del debug è multi-destinazione, la DLL sul lato oggetto del debug deve essere inserita nella cartella per il TFM minimo supportato.
 
 4. Riavviare la sessione di debug.
 

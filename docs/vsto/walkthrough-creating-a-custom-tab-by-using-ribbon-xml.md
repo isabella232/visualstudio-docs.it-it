@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare una scheda personalizzata usando xml della barra multifunzione'
-description: Informazioni su come aggiungere pulsanti alla scheda Add-Ins e automatizzare Microsoft Word usando la barra multifunzione (XML).
+description: Informazioni su come aggiungere pulsanti alla scheda Add-Ins e automatizzare le Microsoft Word usando la barra multifunzione (XML).
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a5d7992462ac3ece9782b0168feedd87577c2d0e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 49d93a5251c0eb45b3ea9246b0850ad57ae9b1bd2590d681ba44dd3f995025d7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826330"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121225907"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procedura dettagliata: Creare una scheda personalizzata usando xml della barra multifunzione
   Questa procedura dettagliata illustra come creare una scheda personalizzata della barra multifunzione usando **l'elemento Barra multifunzione (XML).**
@@ -54,11 +55,11 @@ ms.locfileid: "107826330"
 
 1. Creare un **progetto di componente aggiuntivo di Word** con il nome **MyRibbonAddIn**.
 
-     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Per altre informazioni, [vedere Procedura: Creare Office progetti in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice **ThisAddIn.cs** o **ThisAddIn.vb** e aggiunge il **progetto MyRibbonAddIn** **Esplora soluzioni**.
 
-## <a name="create-the-vsto-add-ins-tab"></a>Creare la scheda Componenti aggiuntivi VSTO
+## <a name="create-the-vsto-add-ins-tab"></a>Creare la VSTO dei componenti aggiuntivi
  Per creare **la scheda Componenti aggiuntivi,** aggiungere un elemento Barra multifunzione **(XML)** al progetto. Più avanti nella procedura dettagliata verranno aggiunti alcuni pulsanti a questa scheda.
 
 ### <a name="to-create-the-add-ins-tab"></a>Per creare la scheda Componenti aggiuntivi
@@ -69,7 +70,7 @@ ms.locfileid: "107826330"
 
 3. Modificare il nome della nuova barra multifunzione in **MyRibbon** e quindi scegliere **Aggiungi**.
 
-     Il file **MyRibbon.cs** **o MyRibbon.vb** viene aperto nella finestra di progettazione. Anche un file XML denominato **MyRibbon.xml** viene aggiunto al progetto.
+     Il file **MyRibbon.cs** o **MyRibbon.vb** viene aperto nella finestra di progettazione. Anche un file XML denominato **MyRibbon.xml** viene aggiunto al progetto.
 
 4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisAddin.cs** o **ThisAddin.vb** e quindi **scegliere Visualizza codice.**
 
@@ -85,9 +86,9 @@ ms.locfileid: "107826330"
 
 ### <a name="to-add-buttons-to-the-add-ins-tab"></a>Per aggiungere pulsanti alla scheda Componenti aggiuntivi
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse **MyRibbon.xml** e quindi scegliere **Apri**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse **MyRibbon.xml** quindi scegliere **Apri.**
 
-2. Sostituire il contenuto **dell'elemento tab** con il codice XML seguente. Questo codice XML modifica l'etichetta del gruppo di controlli predefinito in **Contenuto** e aggiunge due nuovi pulsanti con le etichette **Inserisci** testo **e Inserisci tabella**.
+2. Sostituire il contenuto **dell'elemento tab** con il codice XML seguente. Questo codice XML modifica l'etichetta del gruppo di controlli predefinito in **Content** e aggiunge due nuovi pulsanti con le etichette **Insert Text (Inserisci** testo) **e Insert Table (Inserisci tabella).**
 
     ```xml
     <tab idMso="TabAddIns">
@@ -103,18 +104,18 @@ ms.locfileid: "107826330"
     ```
 
 ## <a name="automate-the-document-by-using-the-buttons"></a>Automatizzare il documento usando i pulsanti
- È necessario aggiungere metodi di callback per i pulsanti Inserisci testo e Inserisci tabella per `onAction` eseguire azioni quando l'utente fa clic su di essi.   Per altre informazioni sui metodi di callback per i controlli barra multifunzione, vedere [XML della barra multifunzione.](../vsto/ribbon-xml.md)
+ È necessario aggiungere metodi di callback per i pulsanti Inserisci testo e Inserisci tabella `onAction` per eseguire azioni quando l'utente fa clic su di essi.   Per altre informazioni sui metodi di callback per i controlli della barra multifunzione, vedere [XML della barra multifunzione.](../vsto/ribbon-xml.md)
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>Per aggiungere i metodi di callback per i pulsanti
 
-1. In **Esplora soluzioni** fare clic con il pulsante **destro del mouse su MyRibbon.cs** **o MyRibbon.vb** e quindi scegliere **Apri**.
+1. In **Esplora soluzioni** fare clic con il pulsante **destro del mouse su MyRibbon.cs** **o MyRibbon.vb** e quindi scegliere **Apri.**
 
-2. Aggiungere il codice seguente all'inizio del file **MyRibbon.cs** o **MyRibbon.vb.** Tramite questo codice viene creato un alias per lo spazio dei nomi <xref:Microsoft.Office.Interop.Word>.
+2. Aggiungere il codice seguente all'inizio del file **MyRibbon.cs** **o MyRibbon.vb.** Tramite questo codice viene creato un alias per lo spazio dei nomi <xref:Microsoft.Office.Interop.Word>.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs" id="Snippet1":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb" id="Snippet1":::
 
-3. Aggiungi alla classe `MyRibbon` il metodo seguente. Si tratta di un metodo di callback per il pulsante **Inserisci** testo che aggiunge una stringa al documento attivo nella posizione corrente del cursore.
+3. Aggiungi alla classe `MyRibbon` il metodo seguente. Si tratta di un metodo di callback per il **pulsante Inserisci** testo che aggiunge una stringa al documento attivo nella posizione corrente del cursore.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs" id="Snippet2":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb" id="Snippet2":::
@@ -125,7 +126,7 @@ ms.locfileid: "107826330"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="testing-the-vsto-add-in"></a>Test del componente aggiuntivo VSTO
- Quando si esegue il progetto, viene  aperto Word e sulla barra multifunzione viene visualizzata la scheda Componenti aggiuntivi. Fare clic **sui pulsanti Inserisci** testo **e** Inserisci tabella nella scheda Componenti **aggiuntivi** per testare il codice.
+ Quando si esegue il progetto, word viene aperto e la scheda denominata Componenti **aggiuntivi viene** visualizzata sulla barra multifunzione. Fare clic **sui pulsanti** Inserisci **testo e** Inserisci tabella nella scheda **Componenti** aggiuntivi per testare il codice.
 
 ### <a name="to-test-your-vsto-add-in"></a>Per testare il componente aggiuntivo VSTO
 
@@ -148,13 +149,13 @@ ms.locfileid: "107826330"
 ## <a name="next-steps"></a>Passaggi successivi
  È possibile trovare ulteriori informazioni sulla personalizzazione dell'interfaccia utente di Office nei seguenti argomenti:
 
-- Personalizzare la barra multifunzione di un'altra applicazione di Office. Per altre informazioni sulle applicazioni che supportano la personalizzazione della barra multifunzione, vedere Panoramica [della barra multifunzione.](../vsto/ribbon-overview.md)
+- Personalizzare la barra multifunzione di un'applicazione Office diversa. Per altre informazioni sulle applicazioni che supportano la personalizzazione della barra multifunzione, vedere Panoramica [della barra multifunzione.](../vsto/ribbon-overview.md)
 
-- Personalizzare la barra multifunzione di un'applicazione di Office usando la finestra di progettazione della barra multifunzione. Per altre informazioni, vedere [Ribbon Designer](../vsto/ribbon-designer.md).
+- Personalizzare la barra multifunzione di un Office appalto usando la finestra di progettazione della barra multifunzione. Per altre informazioni, vedere [Ribbon Designer](../vsto/ribbon-designer.md).
 
 - Creare un riquadro azioni personalizzato. Per altre informazioni, vedere Panoramica [del riquadro Azioni.](../vsto/actions-pane-overview.md)
 
-- Personalizzare l'interfaccia utente di Microsoft Office Outlook usando le aree del modulo di Outlook. Per altre informazioni, vedere Procedura [dettagliata: Progettare un'area del modulo di Outlook.](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- Personalizzare l'interfaccia utente di Microsoft Office Outlook usando le aree del modulo di Outlook. Per altre informazioni, vedere [Procedura dettagliata: Progettare un'area Outlook modulo.](../vsto/walkthrough-designing-an-outlook-form-region.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)

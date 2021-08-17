@@ -11,17 +11,18 @@ ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 80ef6cce37967d61611ac48f60aaf5b2a1d184f1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8ab24503e025707b77141cafa272f4db1c9f78ac6d54bda1c486c53c5d4f24b9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082384"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338176"
 ---
 # <a name="object_type"></a>Object_Type
 Specifica il tipo di un oggetto dall'analizzatore di espressioni.
@@ -80,48 +81,48 @@ public enum enum_OBJECT_TYPE {
  Indica che l'oggetto è un intero con segno a un byte.
 
  `OBJECT_TYPE_U1`\
- Indica che l'oggetto è una Unsigned Integer a un byte.
+ Indica che l'oggetto è un intero senza segno a un byte.
 
  `OBJECT_TYPE_I2`\
- Indica che l'oggetto è un intero con segno a 2 byte.
+ Indica che l'oggetto è un intero con segno a due byte.
 
  `OBJECT_TYPE_U2`\
- Indica che l'oggetto è una Unsigned Integer a due byte.
+ Indica che l'oggetto è un intero senza segno a due byte.
 
  `OBJECT_TYPE_I4`\
- Indica che l'oggetto è un intero con segno a 4 byte.
+ Indica che l'oggetto è un intero con segno a quattro byte.
 
  `OBJECT_TYPE_U4`\
- Indica che l'oggetto è un Unsigned Integer a quattro byte.
+ Indica che l'oggetto è un intero senza segno a quattro byte.
 
  `OBJECT_TYPE_I8`\
  Indica che l'oggetto è un intero con segno a otto byte.
 
  `OBJECT_TYPE_U8`\
- Indica che l'oggetto è un Unsigned Integer a otto byte.
+ Indica che l'oggetto è un intero senza segno a otto byte.
 
  `OBJECT_TYPE_R4`\
  Indica che l'oggetto è un numero a virgola mobile a quattro byte.
 
  `OBJECT_TYPE_R8`\
- Indica che l'oggetto è un numero a virgola mobile a 8 byte.
+ Indica che l'oggetto è un numero a virgola mobile a otto byte.
 
  `OBJECT_TYPE_OBJECT`\
- Indica che l'oggetto è un oggetto.
+ Indica che l'oggetto è un oggetto .
 
  `OBJECT_TYPE_NULL`\
  Indica che l'oggetto è NULL.
 
  `OBJECT_TYPE_CLASS`\
- Indica che l'oggetto è una classe.
+ Indica che l'oggetto è una classe .
 
 ## <a name="remarks"></a>Commenti
- Passato come argomento ai metodi [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .
+ Passato come argomento ai [metodi CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) [e CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: EE. h
+ Intestazione: ee.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

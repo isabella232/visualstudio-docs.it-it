@@ -1,6 +1,6 @@
 ---
 title: Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
-description: Vengono fornite informazioni su come aggiungere la convalida dell'architettura personalizzata ai diagrammi delle dipendenze.
+description: Fornisce informazioni su come aggiungere la convalida dell'architettura personalizzata ai diagrammi delle dipendenze.
 ms.date: 11/04/2016
 ms.topic: how-to
 titleSuffix: ''
@@ -9,24 +9,25 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cc00f86bafebd14177400ffa0ee596a733e9fb28
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: c917ecacdfbe95965ae7a571b251e89c62c23eda
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384629"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069360"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
 
-In Visual Studio, gli utenti possono convalidare il codice sorgente in un progetto rispetto a un modello di livello in modo che possano verificare che il codice sorgente sia conforme alle dipendenze in un diagramma delle dipendenze. Benché sia disponibile un algoritmo di convalida standard, è possibile definire estensioni di convalida personalizzate.
+In Visual Studio gli utenti possono convalidare il codice sorgente in un progetto rispetto a un modello di livello in modo che possano verificare che il codice sorgente sia conforme alle dipendenze in un diagramma delle dipendenze. Benché sia disponibile un algoritmo di convalida standard, è possibile definire estensioni di convalida personalizzate.
 
-Quando l'utente seleziona il comando **Convalida** architettura in un diagramma delle dipendenze, viene richiamato il metodo di convalida standard, seguito da eventuali estensioni di convalida installate.
+Quando l'utente seleziona il **comando Convalida** architettura in un diagramma delle dipendenze, viene richiamato il metodo di convalida standard, seguito da eventuali estensioni di convalida installate.
 
 > [!NOTE]
-> In un diagramma delle dipendenze lo scopo principale della convalida è confrontare il diagramma con il codice del programma in altre parti della soluzione.
+> In un diagramma delle dipendenze lo scopo principale della convalida è confrontare il diagramma con il codice programma in altre parti della soluzione.
 
 È possibile creare un pacchetto dell'estensione di convalida dei livelli in un progetto VSIX (Visual Studio Integration Extension), che è possibile distribuire ad altri utenti di Visual Studio. È possibile inserire solo il validator in un progetto VSIX oppure combinarlo con altre estensioni nello stesso progetto VSIX. È consigliabile scrivere il codice del validator in un progetto di Visual Studio a se stante anziché nello stesso progetto di altre estensioni.
 
@@ -35,7 +36,7 @@ Quando l'utente seleziona il comando **Convalida** architettura in un diagramma 
 
 ## <a name="requirements"></a>Requisiti
 
-Vedere [Requisiti](../modeling/extend-layer-diagrams.md#requirements).
+Vedere [Requisiti.](../modeling/extend-layer-diagrams.md#requirements)
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Definizione di un validator dei livelli in un nuovo progetto VSIX
 
@@ -51,7 +52,7 @@ Il modo più rapido per creare un validator è usare il modello di progetto. In 
    > Per fare in modo che il modello funzioni correttamente:
    >
    > - Modificare le chiamate a `LogValidationError` in modo da rimuovere gli argomenti facoltativi `errorSourceNodes` e `errorTargetNodes`.
-   > - Se si usano proprietà personalizzate, applicare l'aggiornamento indicato in [Aggiungere proprietà personalizzate ai diagrammi delle dipendenze](../modeling/add-custom-properties-to-layer-diagrams.md).
+   > - Se si usano proprietà personalizzate, applicare l'aggiornamento indicato in [Aggiungere proprietà personalizzate ai diagrammi delle dipendenze.](../modeling/add-custom-properties-to-layer-diagrams.md)
 
 2. Modificare il codice per definire la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).
 
@@ -62,13 +63,13 @@ Il modo più rapido per creare un validator è usare il modello di progetto. In 
 
 ::: moniker range="vs-2017"
 
-4. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il file *vsix* nella directory *bin.* Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallarlo, scegliere **Estensioni e aggiornamenti** dal menu Strumenti. 
+4. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il file con estensione *vsix* nella directory *bin.* Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallarlo, scegliere **Estensioni e aggiornamenti** dal menu Strumenti. 
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il file *vsix* nella directory *bin.* Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallarlo, scegliere **Gestisci estensioni** **dal** menu Estensioni.
+4. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il file con estensione *vsix* nella directory *bin.* Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallarlo, scegliere **Gestisci estensioni** **dal** menu Estensioni.
 
 ::: moniker-end
 
@@ -80,9 +81,9 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 1. Creare un nuovo progetto **Libreria di classi**. Questo progetto conterrà la classe di convalida dei livelli.
 
-2. Trovare o creare un **progetto VSIX** nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**.
+2. Trovare o creare un **Project VSIX** nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**.
 
-3. In **Esplora soluzioni** scegliere Imposta come progetto di avvio dal menu di scelta rapida del progetto **VSIX.**
+3. In **Esplora soluzioni** scegliere Imposta come avvio dal menu di scelta rapida del progetto VSIX **Project**.
 
 4. In **source.extension.vsixmanifest** aggiungere il progetto di convalida dei livelli come componente MEF in **Asset**.
 
@@ -94,7 +95,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
          **Origine**  =  **Un progetto nella soluzione corrente**
 
-         **Progetto**  =  *progetto di convalida*
+         **Project**  =  *progetto di convalida*
 
 5. È anche necessario aggiungere il progetto come convalida dei livelli:
 
@@ -106,7 +107,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
          **Origine**  =  **Un progetto nella soluzione corrente**
 
-         **Progetto**  =  *progetto di convalida*
+         **Project**  =  *progetto di convalida*
 
 6. Tornare al progetto di convalida dei livelli e aggiungere i riferimenti al progetto seguenti:
 
@@ -126,7 +127,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
     > [!NOTE]
     > Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).
 
-9. Per installare VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il file **vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
+9. Per installare VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il file con estensione **vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
 
 ## <a name="programming-validation"></a><a name="programming"></a> Programmazione della convalida
 
@@ -158,7 +159,7 @@ Per definire un'estensione di convalida dei livelli, è necessario definire una 
 
 Quando l'utente richiama il comando di menu **Convalida architettura** , il sistema di runtime dei livelli analizza i livelli e i rispettivi elementi per generare un grafico. Il grafico è costituito da quattro parti:
 
-- I modelli di livello della Visual Studio che sono rappresentati come nodi e collegamenti nel grafico.
+- I modelli di livello della Visual Studio soluzione che sono rappresentati come nodi e collegamenti nel grafo.
 
 - Il codice, gli elementi di progetto e altri elementi definiti nella soluzione e rappresentati come nodi, insieme ai collegamenti che rappresentano le dipendenze individuate dal processo di analisi.
 
@@ -169,7 +170,7 @@ Quando l'utente richiama il comando di menu **Convalida architettura** , il sist
 Una volta creato il grafico, viene chiamato il metodo di convalida standard. Al termine, tutti i metodi di convalida delle eventuali estensioni installate vengono chiamati in base a un ordine non specificato. Il grafico viene passato a ogni metodo `ValidateArchitecture` , che può analizzarlo e segnalare gli eventuali errori trovati.
 
 > [!NOTE]
-> Non corrisponde al processo di convalida che può essere usato nei linguaggi specifici del dominio.
+> Non corrisponde al processo di convalida che può essere usato in linguaggi specifici del dominio.
 
 I metodi di convalida non devono modificare il modello di livello o il codice convalidato.
 

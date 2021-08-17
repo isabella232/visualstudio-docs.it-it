@@ -1,6 +1,6 @@
 ---
 title: Modificare l'esperienza di avvio
-description: Scopri come personalizzare l'esperienza di avvio in modo che Visual Studio si apra con gli strumenti più utili per te.
+description: Informazioni su come personalizzare l'esperienza di avvio Visual Studio con gli strumenti più utili.
 ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 855218fb6ff2e90cb06e0f48695b64c75e7036b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0814d4f7c9be48ef881d80d835a28c93921317e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886587"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109396"
 ---
 # <a name="customize-startup"></a>Personalizzare l'avvio
 
@@ -34,7 +35,7 @@ ms.locfileid: "99886587"
 
 ## <a name="to-change-the-startup-item"></a>Per modificare l'elemento di avvio
 
-1. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni**.
+1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti**.
 
 2. Espandere **Ambiente**, quindi scegliere **Avvio**.
 
@@ -60,7 +61,7 @@ Per installare una pagina iniziale personalizzata, aprire il file con estensione
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Per selezionare la pagina iniziale personalizzata da visualizzare
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Sulla barra dei menu scegliere **Opzioni** > **strumenti**.
 
 1. Espandere **Ambiente**, quindi scegliere **Avvio**.
 

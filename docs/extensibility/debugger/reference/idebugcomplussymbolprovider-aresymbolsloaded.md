@@ -1,6 +1,6 @@
 ---
-description: Determina se i simboli di debug vengono caricati per il modulo specificato in base all'identificatore del dominio dell'applicazione.
-title: 'IDebugComPlusSymbolProvider:: AreSymbolsLoaded | Microsoft Docs'
+description: Determina se i simboli di debug vengono caricati per il modulo specificato in base all'identificatore di dominio dell'applicazione.
+title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 567a0906544a28c2f145e8b4361045b56b6f9278
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ac784a7f6de528e773219a1aa65da333e8e09832044c25b2106ba72840fb037a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088302"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342466"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-Determina se i simboli di debug vengono caricati per il modulo specificato in base all'identificatore del dominio dell'applicazione.
+Determina se i simboli di debug vengono caricati per il modulo specificato in base all'identificatore di dominio dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +44,16 @@ int AreSymbolsLoaded (
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-in Identificatore del dominio dell'applicazione.
+[in] Identificatore per il dominio applicazione.
 
 `guidModule`\
-in Identificatore univoco per il modulo.
+[in] Identificatore univoco del modulo.
 
 ## <a name="return-value"></a>Valore restituito
-Se i simboli di debug vengono caricati, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .
+Se vengono caricati i simboli di debug, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(

@@ -54,7 +54,7 @@ Se il progetto viene archiviato nel controllo del codice sorgente, ogni elemento
 
 ### <a name="class-view-toolbar"></a>Visualizzazione classi - Barra degli strumenti
 
-La **barra Visualizzazione classi** contiene i comandi seguenti:
+La **Visualizzazione classi** barra degli strumenti contiene i comandi seguenti:
 
 |Nome|Descrizione|
 |-|-|
@@ -151,7 +151,7 @@ Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è pos
 
 ### <a name="object-browser-settings"></a>Impostazioni di Visualizzatore oggetti
 
-Usando il pulsante **Visualizzatore Impostazioni** sulla barra degli strumenti, è possibile specificare una delle visualizzazioni seguenti:
+Usando il **visualizzatore oggetti Impostazioni** sulla barra degli strumenti, è possibile specificare una delle visualizzazioni seguenti:
 
 |Nome|Descrizione|
 |-|-|

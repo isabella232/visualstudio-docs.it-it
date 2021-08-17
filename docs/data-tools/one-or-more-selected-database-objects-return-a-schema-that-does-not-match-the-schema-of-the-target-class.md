@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0f8be1ffcfa63d2b4b5ac8dfe9f8b7d4e793a00a6d5dfa0d3f68d4a4c3a58596
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bf2bab7f5e1d859ba4e706614ac6f7ac11852860
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347051"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067100"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione
 
@@ -28,7 +28,7 @@ Quando si trascinano oggetti di database in classi di entità esistenti, i dati 
 
 1. Fare clic su **OK** per chiudere la finestra di dialogo.
 
-2. Selezionare un oggetto di database che restituisce dati corrispondenti allo schema della classe di destinazione (la classe in cui viene rilasciato l'oggetto di database in **Object Object Designer).**
+2. Selezionare un oggetto di database che restituisce dati che corrispondono allo schema della classe di destinazione (classe in cui viene rilasciato l'oggetto di database in **Progettazione relazionale oggetti).**
 
 ## <a name="see-also"></a>Vedi anche
 

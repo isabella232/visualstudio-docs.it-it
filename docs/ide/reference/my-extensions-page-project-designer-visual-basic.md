@@ -1,6 +1,6 @@
 ---
 title: Pagina Estensioni My, Progettazione progetti (Visual Basic)
-description: Informazioni su come usare la pagina Estensioni My di progettazione progetti per gestire le estensioni dello spazio dei nomi nel progetto.
+description: Informazioni su come usare la pagina Estensioni my di Progettazione Project per gestire le estensioni dello spazio dei nomi My nel progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4548f254106457d4b15de2a4fdf2822518bce8d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27b1243f748be6c2987ce401df710feda6ab874c1a1c3d8395fdb9fe671071ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967241"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121232562"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Pagina Estensioni My, Progettazione progetti (Visual Basic)
 Usare la pagina **Estensioni My** di **Progettazione progetti** per gestire le estensioni dello spazio dei nomi `My` nel progetto. Le estensioni dello spazio dei nomi `My` consentono di personalizzare lo spazio dei nomi `My` per aggiungere i propri membri personalizzati. Per informazioni sulla creazione di estensioni personalizzate dello spazio dei nomi `My`, vedere [Estensione dello spazio dei nomi My in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

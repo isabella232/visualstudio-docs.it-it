@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: creare un documento XML in base allo schema XSD'
-description: Informazioni su come utilizzare la funzionalità genera XML di esempio per creare un documento XML basato su uno schema XSD.
+description: Informazioni su come usare la funzionalità Genera XML di esempio per creare un documento XML basato su uno schema XSD.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +8,19 @@ ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc802d48bc76bc5f0c6a4c272bf994e87bb8443
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b057b4fa8670e1b7ed4c1f320a2e32b488fca172
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970309"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025108"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: creare un documento XML in base a uno schema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: Creare un documento XML basato su uno schema XSD
 
-La funzionalità **genera XML di esempio** genera un file XML di esempio basato sul file XML Schema (XSD).
+La **funzionalità Genera XML** di esempio genera un file XML di esempio basato sul file XML Schema (XSD).
 
 È possibile usare questa opzione per gli scenari seguenti:
 
@@ -27,27 +28,27 @@ La funzionalità **genera XML di esempio** genera un file XML di esempio basato 
 
 - Per confermare che lo schema funziona come previsto.
 
-La funzionalità **genera XML di esempio** è disponibile solo sugli elementi globali e richiede un set di XML schema valido.
+La **funzionalità Genera XML di** esempio è disponibile solo per gli elementi globali e richiede un set di XML Schema valido.
 
 Questa funzionalità genera di norma documenti XML validi. Tuttavia, se lo schema contiene uno o più degli elementi seguenti, l'esempio potrebbe non essere valido:
 
 - I vincoli di identità `xs:key`, `xs:keyref` e `xs:unique`.
 
-- `xs:pattern` facet.
+- `xs:pattern` Sfaccettature.
 
 - Enumerazioni di tipo `xs:QName`.
 
-- `xs:ENTITY``xs:ENTITIES`tipi, e `xs:NOTATION` .
+- `xs:ENTITY`Tipi `xs:ENTITIES` , `xs:NOTATION` e .
 
 Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enumerazioni si verificano nello schema per il tipo specificato.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Per generare un documento di istanza XML basato sul file XSD
 
-1. Seguire i passaggi in [procedura: creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Seguire la procedura descritta in [Procedura: Creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. In [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)fare clic con il pulsante destro del mouse sull' `PurchaseOrder` elemento globale e quindi selezionare **genera XML di esempio**.
+2. In XML [Schema Explorer fare](../xml-tools/xml-schema-explorer.md)clic con il pulsante destro del mouse `PurchaseOrder` sull'elemento globale e **quindi scegliere Genera XML di esempio.**
 
-     Quando si seleziona questa opzione, PurchaseOrder. il file *XML* con il contenuto XML di esempio seguente verrà generato e aperto nell'editor XML:
+     Quando si seleziona questa opzione, PurchaseOrder. *Il* file xml con il contenuto XML di esempio seguente verrà generato e aperto nell'editor XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

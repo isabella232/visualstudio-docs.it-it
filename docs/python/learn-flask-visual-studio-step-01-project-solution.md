@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 89a84198256657ae7f94d0a923780163bee73e48
-ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
+ms.openlocfilehash: b9b8e13846c423d73bbb58bd41deae20345c63c5862bb2ec54005f1acfbf519b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106110610"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121230534"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -43,7 +44,7 @@ In questa esercitazione verranno illustrate le procedure per:
 - Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli (passaggio 3)
 - Usare il modello Progetto Web Flask per creare un'app con più pagine e una progettazione reattiva (passaggio 4)
 
-Nel corso di questa procedura viene creata una singola soluzione di Visual Studio che contiene due progetti distinti. Il progetto viene creato usando diversi modelli di progetto Flask inclusi in Visual Studio. Mantenendo i progetti nella stessa soluzione, è possibile spostarsi facilmente tra i diversi file per confrontarli.
+Nel corso di questi passaggi viene creata una singola soluzione Visual Studio che contiene due progetti separati. Il progetto viene creato usando diversi modelli di progetto Flask inclusi in Visual Studio. Mantenendo i progetti nella stessa soluzione, è possibile spostarsi facilmente tra i diversi file per confrontarli.
 ::: moniker-end
 
 > [!Note]
@@ -61,19 +62,19 @@ Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Passaggio 1-1: Creare un progetto e una soluzione di Visual Studio
 
-1. In Visual Studio selezionare **file**  >  **nuovo**  >  **progetto**, cercare "Flask" e selezionare il modello di **progetto Web vuoto Flask** . (Il modello è disponibile anche in **Python**  >  **Web** nell'elenco a sinistra.
+1. In Visual Studio selezionare **File**  >  **nuovo**  >  **Project,** cercare "Flask" e selezionare il modello di Project **Web Flask** vuoto. Il modello si trova anche in **Python**  >  **Web** nell'elenco a sinistra.
 
     ![Finestra di dialogo Nuovo progetto in Visual Studio per il modello Progetto Web Flask vuoto](media/flask/step01-new-blank-project.png)
 
 1. Nei campi nella parte inferiore della finestra di dialogo immettere le informazioni seguenti, come mostrato nella figura precedente, e quindi selezionare **OK**:
 
-    - **Nome**: impostare il nome del progetto di Visual Studio su **Basic**. Questo nome verrà usato anche per il progetto Flask.
+    - **Nome**: impostare il nome del progetto Visual Studio su **BasicProject.** Questo nome verrà usato anche per il progetto Flask.
     - **Percorso**: specificare un percorso in cui creare la soluzione e il progetto di Visual Studio.
     - **Nome della soluzione**: impostare su **LearningFlask**, un nome appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
     - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
     - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
-1. Dopo un breve periodo di tempo, in Visual Studio viene visualizzata una finestra di dialogo che informa che **questo progetto richiede pacchetti esterni** (mostrati di seguito). Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
+1. Dopo un po', Visual Studio viene visualizzata una finestra di dialogo che indica che questo **progetto richiede pacchetti esterni** (illustrato di seguito). Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 
     ![Messaggio che indica che il progetto richiede pacchetti esterni](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
@@ -96,7 +97,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
     ![Finestra di Team Explorer, pagina Modifiche](media/flask/step01-team-explorer-changes.png)
 
-1. Sulla barra di stato di Visual Studio, selezionare il pulsante di commit non push (freccia su con **2**) per aprire la pagina di **sincronizzazione** in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
+1. Nella barra Visual Studio stato selezionare il pulsante commit non associati (freccia su **con 2)** per aprire la pagina Sincronizzazione in  **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
 
     ![Finestra di Team Explorer che mostra le opzioni relative ai repository Git per il controllo del codice sorgente](media/flask/step01-team-explorer.png)
 
@@ -111,7 +112,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 1. Durante lo svolgimento di questa esercitazione, abituarsi a usare periodicamente i controlli in Visual Studio per il commit e il push delle modifiche. Questa esercitazione ricorda di eseguire queste operazioni nei momenti appropriati.
 
 > [!Tip]
-> Per spostarsi rapidamente all'interno di **Team Explorer**, selezionare l'intestazione (che legge le **modifiche** o eseguire il **push** nelle immagini precedenti) per visualizzare un menu di scelta rapida delle pagine disponibili.
+> Per spostarsi rapidamente **all'interno Team Explorer**, selezionare  l'intestazione (che legge Modifiche o **Push** nelle immagini precedenti) per visualizzare un menu a comparsa delle pagine disponibili.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Domanda: Quali sono alcuni dei vantaggi dell'uso del controllo del codice sorgente sin dall'inizio di un progetto?
 
@@ -131,7 +132,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
     ![Comando Aggiungi ambiente virtuale in Esplora soluzioni](media/flask/step01-add-virtual-environment-command.png)
 
-1. Viene visualizzata una finestra di dialogo **Aggiungi ambiente virtuale** con un messaggio **che informa che è stato trovato un file di requirements.txt.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
+1. Viene **visualizzata una finestra di dialogo** Aggiungi ambiente virtuale con un messaggio che indica che è stato trovato un file requirements.txt **virtuale.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
 
     ![Finestra di dialogo Aggiungi ambiente virtuale con il messaggio sul file requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
@@ -221,7 +222,7 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Domanda: Come funziona Flask con route di URL e parametri di query variabili?
 
-Risposta: in una route contrassegnare qualsiasi variabile con `<variable_name>` e Flask passa la variabile alla funzione usando un argomento denominato nel percorso URL. Ad esempio, una route nel formato `/hello/<name>` genera un argomento di stringa chiamato `name` alla funzione. I parametri di query sono disponibili tramite la `request.args` proprietà, in particolare tramite il `request.args.get` metodo. Per altre informazioni, vedere l'[oggetto Request](https://flask.palletsprojects.com/en/1.1.x/quickstart/#the-request-object) nella documentazione di Flask.
+Risposta: In una route si contrassegna qualsiasi variabile con e Flask passa la variabile alla funzione usando un argomento `<variable_name>` denominato nel percorso URL. Ad esempio, una route nel formato genera `/hello/<name>` un argomento stringa denominato alla funzione `name` . I parametri di query sono disponibili tramite `request.args` la proprietà , in particolare tramite il metodo `request.args.get` . Per altre informazioni, vedere l'[oggetto Request](https://flask.palletsprojects.com/en/1.1.x/quickstart/#the-request-object) nella documentazione di Flask.
 
 ```python
 # URL: /hello/<name>?message=Have%20a%20nice%20day
@@ -239,7 +240,7 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
 ## <a name="step-1-5-run-the-project"></a>Passaggio 1-5: Eseguire il progetto
 
-1. In Visual Studio selezionare **debug**  >  **Avvia debug** (**F5**) o usare il pulsante **server Web** sulla barra degli strumenti (il browser visualizzato potrebbe variare):
+1. In Visual Studio Debug Avvia debug (  >   **F5**) o usare il pulsante Server **Web** sulla barra degli strumenti (il browser visualizzato può variare):
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
@@ -249,11 +250,11 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
     ![Visualizzazione predefinita del progetto Flask](media/flask/step01-first-run-success.png)
 
-1. Al termine, arrestare il server chiudendo la finestra della console o usando il comando **debug**  >  **Interrompi debug** in Visual Studio.
+1. Al termine, arrestare il server chiudendo la finestra della console o usando il comando **Debug** Arresta  >   debug in Visual Studio.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Domanda: Qual è la differenza tra l'uso dei comandi del menu Debug e dei comandi del server nel sottomenu Python del progetto?
 
-Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Avvia server** o **Python** > **Avvia il server di debug** del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile aggiungere un debugger al processo in esecuzione in un secondo momento, se si vuole, usando il comando **debug**  >  **Connetti a processo** .
+Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Avvia server** o **Python** > **Avvia il server di debug** del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile collegare un debugger al processo in esecuzione in un secondo momento, se necessario, usando il **comando Esegui debug** connessione  >  **a** processo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

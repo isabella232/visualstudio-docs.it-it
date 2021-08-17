@@ -1,6 +1,6 @@
 ---
-description: Questo metodo determina se il fornitore della porta può salvare in modo permanente le porte (scrivendole su disco) tra le chiamate del debugger.
-title: 'IDebugPortSupplier3:: CanPersistPorts | Microsoft Docs'
+description: Questo metodo determina se il fornitore di porte può rendere persistenti le porte (scrivendole su disco) tra le chiamate del debugger.
+title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 570409a114acbf19697b0eb3ef3e5496fdfde93a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bcf82a1866e26dd3e680b2fd430d2daa0c96311ba6509dde77fc8dc065773b65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071974"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416734"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Questo metodo determina se il fornitore della porta può salvare in modo permanente le porte (scrivendole su disco) tra le chiamate del debugger.
+Questo metodo determina se il fornitore di porte può rendere persistenti le porte (scrivendole su disco) tra le chiamate del debugger.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +41,10 @@ int CanPersistPorts();
  No.
 
 ## <a name="return-value"></a>Valore restituito
- `S_OK` Se le porte possono essere rese permanente oppure `S_FALSE` per indicare che le porte non possono essere rese permanente.
+ `S_OK` se le porte possono essere rese persistenti o `S_FALSE` per indicare che non è possibile rendere persistenti le porte.
 
 ## <a name="remarks"></a>Commenti
- Se il fornitore della porta può rendere permanente le porte, questa operazione viene eseguita quando viene distrutta e quindi ricaricata quando ne viene creata un'istanza ancora una volta.
+ Se il fornitore della porta può rendere persistenti le porte, è consigliabile farlo quando viene eliminato e quindi ricaricarle quando ne viene creata di nuovo un'istanza.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

@@ -9,16 +9,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 4edef0815b6923ea204c1a0d1890837ec9bead6c
-ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
+ms.openlocfilehash: 61e061c656e94a7aae6b6cbaeabc7614284cd8483a7120993fe87f951caadb8f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114703328"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121227752"
 ---
-# <a name="create-unit-test-method-stubs-from-code"></a>Creare unit test stub di metodo dal codice
+# <a name="create-unit-test-method-stubs-from-code"></a>Creare unit test stub del metodo dal codice
 
 Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test all'interno di essa.
 
@@ -28,7 +29,7 @@ Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Il comando di menu **Crea unit** test è disponibile solo per il codice C#.
+> Il comando di menu **Crea unit test** è disponibile solo per il codice C#.
 ::: moniker-end
 
 Il comando di menu **Crea unit test** è estendibile e può essere usato per generare test per MSTest, MSTest V2, NUnit e xUnit.
@@ -39,7 +40,7 @@ Per iniziare, selezionare un metodo, un tipo o uno spazio dei nomi nell'editor d
 
 ![Uso del comando Crea unit test](media/createunittestcommand.png)
 
-Se le opzioni del framework di test per NUnit o xUnit non sono disponibili, vedere Usare framework unit test [di terze parti.](#use-third-party-unit-test-frameworks)
+Se le opzioni del framework di test per NUnit o xUnit non sono disponibili, vedere Usare framework di unit test [di terze parti.](#use-third-party-unit-test-frameworks)
 
 ## <a name="set-unit-test-traits"></a>Impostare tratti di unit test
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc5e6f9bc8a04fea6e6deb9656e64c374c4df17d982bc2ae5661c9fd80f5e06
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fef912cc248b02ad9787977760837e1b45f45088
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128991"
 ---
 # <a name="idiasegmentget_length"></a>IDiaSegment::get_length
 Recupera il numero di byte nel segmento.

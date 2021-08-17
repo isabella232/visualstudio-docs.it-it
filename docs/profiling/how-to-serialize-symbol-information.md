@@ -1,6 +1,6 @@
 ---
 title: Serializzare le informazioni sui simboli | Microsoft Docs
-description: Informazioni su come è possibile serializzare i simboli necessari per analizzare l'applicazione e il modo in cui la serializzazione dei simboli aggiunge simboli al file con estensione vsp.
+description: Informazioni su come serializzare i simboli necessari per analizzare l'applicazione e su come la serializzazione dei simboli aggiunge simboli al file con estensione vsp.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,15 +12,16 @@ ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9e965fb1b863d7e5837fe45a5d832fadcbc5c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ebb19f1bbd2c157f3814be3d52809c5f4edb4440f494b4575ec1289c0b3cc7f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907040"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231107"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Procedura: Serializzare le informazioni sui simboli
 È possibile serializzare i simboli necessari per analizzare l'applicazione. Con la serializzazione dei simboli vengono aggiunti simboli al file con estensione *vsp*. L'aggiunta di informazioni sui simboli nel file con estensione *vsp* consente ad altri utenti di analizzare un rapporto di prestazioni senza dover accedere ai simboli originali. Se i simboli non vengono serializzati, sarà necessario disporre dei file *exe* e *pdb* originali instrumentati per analizzare il file *vsp*.
@@ -37,5 +38,5 @@ ms.locfileid: "99907040"
 
 ## <a name="see-also"></a>Vedi anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-- [Procedura: fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)
+- [Procedura: Fare riferimento Windows informazioni sui simboli](../profiling/how-to-reference-windows-symbol-information.md)
 - [Procedura: Salvare file di rapporto analizzati](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

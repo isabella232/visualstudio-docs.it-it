@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 32299dfd1ca4644310da2f55eb957c9e19452c2eb94adb84c2177dd71b50bea7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8f885922e5b383d81d1d7c31faff43e569dc6732
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121373611"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109539"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Creare un nuovo progetto in Visual Studio
 

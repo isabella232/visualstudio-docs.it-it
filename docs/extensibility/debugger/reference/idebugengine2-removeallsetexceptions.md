@@ -1,6 +1,6 @@
 ---
-description: Rimuove l'elenco di eccezioni impostate dall'IDE per un'architettura o una lingua di runtime particolare.
-title: 'IDebugEngine2:: RemoveAllSetExceptions | Microsoft Docs'
+description: Rimuove l'elenco di eccezioni impostate dall'IDE per una particolare architettura o linguaggio di runtime.
+title: IDebugEngine2::RemoveAllSetExceptions | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b40da7391fc360b68da70f02f4d32afb92e83a58
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e8a11b47421f95e4527095f0e696795e8f3785d4c95679faebd05563d59a3bb8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087938"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342258"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
-Rimuove l'elenco di eccezioni impostate dall'IDE per un'architettura o una lingua di runtime particolare.
+Rimuove l'elenco di eccezioni impostate dall'IDE per una particolare architettura o linguaggio di runtime.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +43,15 @@ int RemoveAllSetExceptions(
 
 ## <a name="parameters"></a>Parametri
 `guidType`\
-in Il GUID per il linguaggio o il GUID del motore di debug specifico di un'architettura in fase di esecuzione.
+[in] GUID per il linguaggio o GUID per il motore di debug specifico di un'architettura di runtime.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Le eccezioni rimosse da questo metodo sono state impostate dalle chiamate precedenti al metodo [seexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
+ Le eccezioni rimosse da questo metodo sono state impostate da chiamate precedenti al [metodo SetException.](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 
- Per rimuovere un'eccezione specifica, chiamare il metodo [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) .
+ Per rimuovere un'eccezione specifica, chiamare il [metodo RemoveSetException.](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

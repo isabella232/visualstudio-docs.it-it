@@ -1,6 +1,6 @@
 ---
 title: -Command (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando devenv del comando per eseguire un comando specificato dopo l'avvio dell'IDE di Visual Studio.
+description: Informazioni su come usare l'opzione della riga di comando devenv del comando per eseguire un comando specificato dopo l'avvio dell Visual Studio IDE.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 38738dad275b38fe0c5a6a70104e80f6a794bab1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 028ff8263be0a160b1dd7e46c9cbb464350427fc5d920aa1c2ae86fd8f59ce32
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882186"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430616"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -47,7 +48,7 @@ Se si usa questa opzione la pagina iniziale non viene visualizzata nell'IDE all'
 
 ::: moniker-end
 
-Se un componente aggiuntivo visualizza un comando, è possibile usare questa opzione per avviare il componente aggiuntivo dalla riga di comando. Per altre informazioni, vedere [procedura: controllare i componenti aggiuntivi tramite Gestione componenti](/previous-versions/xwdatdwh(v=vs.140))aggiuntivi.
+Se un componente aggiuntivo visualizza un comando, è possibile usare questa opzione per avviare il componente aggiuntivo dalla riga di comando. Per altre informazioni, [vedere Procedura: Controllare i componenti aggiuntivi usando gestione componenti aggiuntivi.](/previous-versions/xwdatdwh(v=vs.140))
 
 ## <a name="example"></a>Esempio
 
@@ -68,5 +69,5 @@ devenv /command "nf some_file.cs"
 ## <a name="see-also"></a>Vedi anche
 
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)
 - [Finestra di comando](command-window.md)

@@ -1,6 +1,6 @@
 ---
 title: Attività VerifyFileHash | Microsoft Docs
-description: Informazioni sul modo in cui MSBuild usa l'attività VerifyFileHash per verificare che un file corrisponda all'hash del file previsto e non riesce se non corrisponde.
+description: Informazioni su MSBuild'attività VerifyFileHash per verificare che un file corrisponda all'hash di file previsto e ha esito negativo se non corrisponde.
 ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd6bb88a5bfbbffb7c99f7f43036cf9fee4d6ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ffdea3c624e451492b9cf970c89982adb1c571c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108226"
 ---
 # <a name="verifyfilehash-task"></a>Attività VerifyFileHash
 
@@ -63,7 +64,7 @@ Nell'esempio seguente l'attività `VerifyFileHash` viene usata per verificare il
 </Project>
 ```
 
-In MSBuild 16,5 e versioni successive, se non si vuole che la compilazione abbia esito negativo quando l'hash non corrisponde, ad esempio se si usa il confronto hash come condizione per il flusso di controllo, è possibile effettuare il downgrade dell'avviso a un messaggio usando il codice seguente:
+In MSBuild 16.5 e versioni successive, se non si vuole che la compilazione non riesca quando l'hash non corrisponde, ad esempio se si usa il confronto hash come condizione per il flusso di controllo, è possibile eseguire il downgrade dell'avviso a un messaggio usando il codice seguente:
 
 ```xml
   <PropertyGroup>

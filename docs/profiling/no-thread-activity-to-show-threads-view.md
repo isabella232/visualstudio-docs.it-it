@@ -1,6 +1,6 @@
 ---
 title: Nessuna attività di thread da mostrare (visualizzazione dei thread) | Microsoft Docs
-description: Informazioni sulla visualizzazione thread in cui non è presente alcuna attività da visualizzare nell'intervallo di tempo attualmente visibile.
+description: Informazioni sulla visualizzazione Thread in cui non è presente alcuna attività da visualizzare nell'intervallo di tempo attualmente visibile.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: aa5ae9d0-561d-4ef8-b36b-258ce553d50a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc4cd3241c4d2fffdf2637790869dfc5ac524f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8bfb26f6f632d62eceea3f897297ff338f3fe978
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922443"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107186"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Nessuna attività di thread da mostrare (Visualizzazione thread)
 Quest'area mostra i dati sui thread non nascosti nell'intervallo di tempo attualmente visibile.

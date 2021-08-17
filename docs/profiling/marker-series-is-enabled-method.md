@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a7109d107a5ede295147174e8fc61c2c2e95fa8b92e639a22285164201a9b5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b36a76b8d404606b97672a78d8fb467fc998bbf4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121426456"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107407"
 ---
 # <a name="marker_seriesis_enabled-method"></a>Metodo marker_series::is_enabled
 Determina se il provider è stato abilitato da una sessione.

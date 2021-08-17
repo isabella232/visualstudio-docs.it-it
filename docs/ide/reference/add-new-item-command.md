@@ -1,6 +1,6 @@
 ---
 title: Comando Aggiungi nuovo elemento
-description: Informazioni su come usare il comando Aggiungi nuovo elemento per aggiungere un nuovo elemento o un frame della soluzione alla soluzione corrente.
+description: Informazioni su come usare il comando Aggiungi nuovo elemento per aggiungere un nuovo elemento o set di frame alla soluzione corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,14 +11,15 @@ ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 37742f1a9adda219e359d734b80f44679509ee03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63798e7871d7dd2addde41ee3b208d748d30703510602affcf9850a51de988c4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846335"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431006"
 ---
 # <a name="add-new-item-command"></a>Comando Aggiungi nuovo elemento
 Aggiunge un nuovo elemento, ad esempio un file con estensione htm, css o txt o una pagina con frame, alla soluzione corrente e lo apre.
@@ -65,7 +66,7 @@ In questo esempio un nuovo elemento di soluzione, denominato MyHTMLpg, viene agg
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

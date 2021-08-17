@@ -46,7 +46,7 @@ Per cambiare visualizzazioni, usare uno degli elementi seguenti:
 
 - Barra degli strumenti di Progettazione XSD.
 
-- Menu di scelta rapida (clic con il pulsante destro del mouse) della visualizzazione modello di contenuto e della Graph contenuto.
+- Menu di scelta rapida (clic con il pulsante destro del mouse) della visualizzazione modello di contenuto e Graph visualizzazione.
 
 - Le filigrane sulla pagina della visualizzazione iniziale o la filigrana sulla visualizzazione modello di contenuto vuota o sulla visualizzazione grafico.
 

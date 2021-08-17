@@ -24,7 +24,7 @@ ms.locfileid: "121418447"
 
 La creazione di pacchetti di applicazioni come msi viene spesso eseguita usando l'Programma di installazione di Visual Studio projects.
 
-È possibile scaricare l'estensione qui: [Programma di installazione di Visual Studio Progetti](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)
+È possibile scaricare l'estensione qui: [Programma di installazione di Visual Studio Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)
 
 ## <a name="update-for-net-core"></a>Aggiornamento per .NET Core
 .NET Core ha due modelli diversi per la pubblicazione.
@@ -37,9 +37,9 @@ Per altre informazioni su queste strategie di distribuzione, vedere [Panoramica 
 
 ### <a name="workflow-changes-for-net-core-31"></a>Modifiche del flusso di lavoro per .NET Core 3.1
 
-1. Selezionare **Pubblica elementi** anziché Output **primario** per ottenere l'output corretto per i progetti .NET Core 3.1.  Per visualizzare questa finestra di dialogo,  >  **selezionare Add Project Output...** (Aggiungi output del progetto) dal menu di scelta rapida del progetto.
+1. Selezionare **Pubblica elementi** anziché Output **primario** per ottenere l'output corretto per i progetti .NET Core 3.1.  Per visualizzare questa finestra di dialogo,  >  **selezionare Aggiungi Project output...** dal menu di scelta rapida del progetto.
 
-    ![Gruppo di output Pubblica elementi nella finestra di dialogo Project gruppo di output](../deployment/media/installer-projects-net-core-publish-items-output.png "Selezionare Pubblica elementi")
+    ![Gruppo di output Pubblica elementi nella finestra di dialogo Project output di pubblicazione](../deployment/media/installer-projects-net-core-publish-items-output.png "Selezionare Pubblica elementi")
 
 2. Per creare un programma di installazione autonomo, impostare  la proprietà **PublishProfilePath** nel nodo Pubblica elementi nel progetto di installazione, usando il percorso relativo di un profilo di pubblicazione con le proprietà corrette impostate.
 

@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: <=vs-2019
-ms.openlocfilehash: b45399f7a4115ce5946a67caca22ca92148e7434
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 1a5191febfa4913316e120ef5d4c0d3fdf2f48bc3d44b68594580800b730d4a7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308246"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121233927"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Connettersi a progetti in Team Explorer
 
@@ -40,17 +40,17 @@ La modalità Team Explorer per connettersi a un progetto dipende dalla versione 
 
 1. Nella finestra iniziale selezionare **Clona un repository.**
 
-   ![Screenshot della finestra di dialogo Clona un repository in Visual Studio 2019 versione 16.8 e successive, per Azure DevOps](../ide/media/vs-2019/clone-repository.png)
+   ![Screenshot della finestra di dialogo Clona un repository Visual Studio 2019 versione 16.8 e successive, per Azure DevOps](../ide/media/vs-2019/clone-repository.png)
 
 1. Nella sezione **Esplora un repository** selezionare **Azure DevOps**.
 
-    ![Screenshot della sezione "Esplora un repository" della finestra di dialogo "Connetti a un progetto" in Visual Studio 2019 versione 16.8 e successive](../ide/media/vs-2019/browse-repository-azure-devops.png)
+    ![Screenshot della sezione "Esplora un repository" della finestra di dialogo "Connessione a un Project" in Visual Studio 2019 versione 16.8 e successive](../ide/media/vs-2019/browse-repository-azure-devops.png)
 
 1. Se viene visualizzata una finestra di accesso, accedere al proprio account.
 
-1. Nella finestra **di dialogo Connetti a un** progetto scegliere il repo a cui connettersi e quindi selezionare **Clona.**
+1. Nella finestra **Connessione a un Project** scegliere il repo a cui connettersi e quindi selezionare **Clona.**
 
-      ![Screenshot della finestra di dialogo "Connetti a un progetto" generata da Visual Studio 2019 versione 16.8 e successive](../ide/media/vs-2019/connect-project-azure-devops.png)
+      ![Screenshot della finestra di dialogo Connessione a un Project' generata da Visual Studio 2019 versione 16.8 e successive](../ide/media/vs-2019/connect-project-azure-devops.png)
 
       > [!TIP]
       > Se non viene visualizzato un elenco precompilato di repository a cui connettersi, selezionare **Aggiungi** Azure DevOps Server per immettere un URL del server. In alternativa, potrebbe essere visualizzato un prompt "Nessun server trovato" che include collegamenti per aggiungere un Azure DevOps Server esistente o per creare un account Azure DevOps.
@@ -75,20 +75,20 @@ La modalità Team Explorer per connettersi a un progetto dipende dalla versione 
 
    Se viene visualizzata una finestra di accesso, accedere al proprio account.
 
-1. Nella finestra **di dialogo Connetti a un** progetto scegliere il repo a cui connettersi e quindi selezionare **Clona.**
+1. Nella finestra **Connessione a un Project** scegliere il repo a cui connettersi e quindi selezionare **Clona.**
 
-      ![Screenshot della finestra di dialogo "Connetti a un progetto" generata da Visual Studio 2019 versione 16.7 e precedenti](../get-started/media/open-proj-azure-devops-connect-cloud-clone.png)
+      ![Screenshot della finestra di Connessione a un Project' generata da Visual Studio 2019 versione 16.7 e precedenti](../get-started/media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
     > Ciò che compare nella casella di riepilogo dipende dai repository Azure DevOps ai quali si ha accesso.
 
    Visual Studio apre **Team Explorer** e viene visualizzata una notifica quando il clone è stato completato.
 
-     ![Screenshot della finestra di Team Explorer in Visual Studio 2019 versione 16.7 e precedenti, dopo il completamento della clonazione](../get-started/media/vs-2019/clone-complete-azure-devops.png)
+     ![Screenshot della finestra Team Explorer in Visual Studio 2019 versione 16.7 e precedenti, dopo il completamento della clonazione](../get-started/media/vs-2019/clone-complete-azure-devops.png)
 
 1. Per visualizzare le cartelle e i file, selezionare il **collegamento Mostra visualizzazione** cartelle.
 
-     ![Screenshot della sezione Soluzioni della finestra Team Explorer in Visual Studio 2019 versione 16.7 e precedenti, dopo il completamento della clonazione](../get-started/media/vs-2019/show-folder-view-azure-devops.png)
+     ![Screenshot della sezione Soluzioni della finestra Team Explorer in Visual Studio 2019 versione 16.7 e precedenti, al termine della clonazione](../get-started/media/vs-2019/show-folder-view-azure-devops.png)
 
      Visual Studio apre **Esplora soluzioni**.
 
@@ -111,7 +111,7 @@ La modalità Team Explorer per connettersi a un progetto dipende dalla versione 
 
 Connettersi a un progetto o a un repository nella pagina **Connessione**.
 
-![Pagina Connessione di Team Explorer](media/team-explorer/connect.png "Pagina Team Explorer - Connetti in Visual Studio")
+![Pagina Connessione di Team Explorer](media/team-explorer/connect.png "Pagina Team Explorer - Connessione in Visual Studio")
 
 Per connettersi a un progetto:
 
@@ -119,9 +119,9 @@ Per connettersi a un progetto:
 
    ![Pulsante Gestione connessioni in Team Explorer](media/team-explorer/manage-connections.png "Pulsante Team Explorer - Gestisci connessioni nella Visual Studio.")
 
-1. Nella pagina **Connetti** scegliere Gestisci connessioni **Connetti** > **a un progetto**.
+1. Nella pagina **Connessione** scegliere **Gestisci connessioni Connessione** a un > **progetto**.
 
-   ![Connettersi a un progetto in Team Explorer](media/team-explorer/connect-project.png "Opzione Team Explorer - Connetti a un progetto in Visual Studio.")
+   ![Connettersi a un progetto in Team Explorer](media/team-explorer/connect-project.png "L Team Explorer- Connessione a un'Project in Visual Studio.")
 
 > [!TIP]
 > Se si vuole aprire un progetto da un repo, vedere [Aprire un progetto da un repo.](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) Se si vuole creare un nuovo progetto o aggiungere utenti a un progetto, vedere Creare un progetto [(Azure DevOps)](/azure/devops/organizations/projects/create-project) e Aggiungere utenti a un progetto o a [un team (Azure DevOps).](/azure/devops/organizations/security/add-users-team-project)

@@ -34,7 +34,7 @@ IDebugProcessDestroyEvent2 : IUnknown
  Il motore di debug (DE) o il fornitore di porte personalizzato implementano questa interfaccia per segnalare che un processo è stato terminato. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM usa [QueryInterface per](/cpp/atl/queryinterface) accedere all'interfaccia. `IDebugEvent2`
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il de o il fornitore di porte personalizzato crea e invia questo oggetto evento per segnalare la terminazione di un processo. Il de invia questo evento usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug. Il fornitore di porte personalizzato invia questo evento usando [l'interfaccia IDebugPortEvents2.](../../../extensibility/debugger/reference/idebugportevents2.md)
+ Il de o il fornitore di porte personalizzato crea e invia questo oggetto evento per segnalare la terminazione di un processo. Il de invia questo evento usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug. Il fornitore della porta personalizzata invia questo evento usando [l'interfaccia IDebugPortEvents2.](../../../extensibility/debugger/reference/idebugportevents2.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

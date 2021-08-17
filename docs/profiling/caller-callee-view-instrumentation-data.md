@@ -96,5 +96,5 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
-- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Visualizzazione chiamante/chiamato : dati di campionamento della memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione chiamante/chiamato : dati di strumentazione della memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

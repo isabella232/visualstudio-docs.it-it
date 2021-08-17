@@ -1,5 +1,5 @@
 ---
-description: Specifica la quantità di stato di un programma, ad esempio l'esecuzione di thread, stack frame e indirizzo di istruzione corrente, per eseguire il dump.
+description: Specifica la quantità di stato di un programma (ad esempio thread in esecuzione, stack frame e indirizzo di istruzione corrente) di cui eseguire il dump.
 title: DUMPTYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc27474b0012e60cccadda44665dc368178a02da
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3054d86c1d516f79cbf259eaaf4add7ae1befc51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095966"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104625"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Specifica la quantità di stato di un programma, ad esempio l'esecuzione di thread, stack frame e indirizzo di istruzione corrente, per eseguire il dump.
+Specifica la quantità di stato di un programma (ad esempio thread in esecuzione, stack frame e indirizzo di istruzione corrente) di cui eseguire il dump.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,18 +46,18 @@ public enum enum_DUMPTYPE {
 
 ## <a name="fields"></a>Campi
 `DUMP_MINIDUMP`\
-Specifica un piccolo dump compattato.
+Specifica un dump compatto di piccole dimensioni.
 
 `DUMP_FULLDUMP`\
 Specifica un dump completo di grandi dimensioni.
 
 ## <a name="remarks"></a>Commenti
-Passato come argomento al metodo [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .
+Passato come argomento al [metodo WriteDump.](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

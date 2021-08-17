@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di applicazioni a 64 bit | Microsoft Docs
-description: Informazioni su come eseguire il debug di un'applicazione a 64 bit con Visual Studio. Sono disponibili suggerimenti per la risoluzione dei ritardi di debug imprevisti.
+description: Informazioni su come eseguire il debug di un'applicazione a 64 bit con Visual Studio. Sono disponibili suggerimenti per la risoluzione dei ritardi imprevisti del debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,14 +16,15 @@ ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ea2ade8ed87bfc58280bf5b2dc45c633eb2055
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc3a841d97b3479eb30d26d66608827e1a771d20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857597"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066824"
 ---
 # <a name="debug-64-bit-applications"></a>Eseguire il debug di applicazioni a 64 bit
 È possibile eseguire il debug di un'applicazione a 64 bit in esecuzione nel computer locale o in un computer remoto.
@@ -52,12 +53,12 @@ ms.locfileid: "99857597"
 
 - Nel computer è installato software di sicurezza di rete che ha reso non affidabile lo stack di rete e ha eliminato alcuni pacchetti trasmessi tramite localhost. Provare a disabilitare tutto il software di sicurezza di rete e determinare se questo consente di risolvere il problema. In questo caso, segnalare al fornitore del software di sicurezza di rete che il software interferisce con traffico di localhost.
 
-- Si è riscontrato un problema a causa del quale Visual Studio smette di rispondere o di un altro problema di prestazioni. Se il problema si verifica regolarmente, è possibile raccogliere dump di Visual Studio (devenv.exe) e del processo di lavoro (msvsmon.exe) e inviarli a Microsoft. Per informazioni sulla segnalazione di un problema, vedere [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+- Si verifica un problema a causa del quale Visual Studio non risponde o un altro problema di prestazioni. Se il problema si verifica regolarmente, è possibile raccogliere dump di Visual Studio (devenv.exe) e del processo di lavoro (msvsmon.exe) e inviarli a Microsoft. Per informazioni sulla segnalazione di un problema, vedere [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps)
 - [Configurazione di programmi per processori a 64 bit](/cpp/build/configuring-programs-for-64-bit-visual-cpp)
-- [Supporto di Visual Studio IDE a 64 bit](../ide/visual-studio-ide-64-bit-support.md)
+- [Visual Studio Supporto IDE a 64 bit](../ide/visual-studio-ide-64-bit-support.md)
 - [Uso di file dump](../debugger/using-dump-files.md)
 - [Debug remoto](../debugger/remote-debugging.md)

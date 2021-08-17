@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: de258e2b1ca7f57573a1e79d33c6a80960325d3662c8af9ce9e8111a330b6f12
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ccfd2a84c1ba35f351fca23c3f3605f22a435b8d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359312"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069868"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: Implementare progetti annidati
 
@@ -42,7 +42,7 @@ Quando si crea un tipo di progetto annidato, è necessario eseguire diversi pass
 
      Passare al metodo per indicare che il progetto virtuale (annidato) deve essere aggiunto alla finestra del progetto, escluso dalla compilazione, aggiunto al controllo del codice sorgente <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> `AddVirtualProject` e così via. `VSADDVPFLAGS` consente di controllare la visibilità del progetto annidato e indicare la funzionalità associata.
 
-     Se si ricarica un progetto figlio esistente in precedenza con un GUID di progetto archiviato nel file di progetto del progetto padre, il progetto padre chiama `AddVirtualProjectEx` . L'unica differenza tra e è che dispone di un parametro per consentire al progetto padre di specificare una per ogni istanza del progetto figlio per abilitare e `AddVirtualProject` `AddVirtualProjectEX` funzionare `AddVirtualProjectEX` `guidProjectID` <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> correttamente.
+     Se si ricarica un progetto figlio esistente in precedenza con un GUID di progetto archiviato nel file di progetto del progetto padre, il progetto padre chiama `AddVirtualProjectEx` . L'unica differenza tra e è che dispone di un parametro per consentire al progetto padre di specificare un'istanza per il progetto figlio per abilitare e `AddVirtualProject` `AddVirtualProjectEX` funzionare `AddVirtualProjectEX` `guidProjectID` <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> correttamente.
 
      Se non è disponibile alcun GUID, ad esempio quando si aggiunge un nuovo progetto annidato, la soluzione ne crea uno per il progetto al momento dell'aggiunta all'elemento padre. È responsabilità del progetto padre rendere persistente il GUID del progetto nel file di progetto. Se si elimina un progetto annidato, è possibile eliminare anche il GUID per tale progetto.
 
@@ -72,7 +72,7 @@ Quando si crea un tipo di progetto annidato, è necessario eseguire diversi pass
 
 10. La gerarchia viene compilata per **la Esplora soluzioni** con una chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metodo .
 
-     La gerarchia viene passata all'ambiente tramite `GetNestedHierarchy` per compilare la gerarchia per la visualizzazione in Esplora soluzioni. In questo modo, la soluzione sa che il progetto esiste e può essere gestito per la compilazione da parte della gestione compilazione oppure può consentire l'applicazione di file nel progetto al controllo del codice sorgente.
+     La gerarchia viene passata all'ambiente tramite `GetNestedHierarchy` per creare la gerarchia per la visualizzazione in Esplora soluzioni. In questo modo, la soluzione sa che il progetto esiste e può essere gestito per la compilazione da parte della gestione compilazione oppure può consentire l'applicazione di file nel progetto al controllo del codice sorgente.
 
 11. Dopo aver creato tutti i progetti annidati per Project1, il controllo viene passato nuovamente alla soluzione e il processo viene ripetuto per Project2.
 

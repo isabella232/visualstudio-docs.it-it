@@ -1,6 +1,6 @@
 ---
 title: Riformattazione del codice in un servizio di linguaggio legacy | Microsoft Docs
-description: Informazioni su come abilitare il supporto per la riformattazione del codice sorgente per un servizio di linguaggio legacy di Visual Studio.
+description: Informazioni sull'abilitazione del supporto per la riformattazione del codice sorgente per Visual Studio servizio di linguaggio legacy.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,37 +11,38 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8dc10e4def3e4725bb4f64041cdb17146b9d84d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0af9dc7bf25e448a1e5a128276f55016a1049db49f55e14689fce9a6e8376972
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060861"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414493"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Riformattazione del codice in un servizio di linguaggio legacy
 
-Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] codice sorgente può essere riformattato normalizzando l'uso dei rientri e degli spazi vuoti. Ciò può includere l'inserimento o la rimozione di spazi o tabulazioni all'inizio di ogni riga, l'aggiunta di nuove righe tra le linee o la sostituzione di spazi con tabulazioni o tabulazioni con spazi.
+Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] codice sorgente è possibile riformattare normalizzando l'uso di rientri e spazi vuoti. Ciò può includere l'inserimento o la rimozione di spazi o tabulazioni all'inizio di ogni riga, l'aggiunta di nuove righe tra le righe o la sostituzione di spazi con tabulazioni o tabulazioni con spazi.
 
 > [!NOTE]
-> L'inserimento o l'eliminazione di caratteri di nuova riga può influire su marcatori quali punti di interruzione e segnalibri, ma l'aggiunta o la rimozione di spazi o tabulazioni non influisce sui marcatori
+> L'inserimento o l'eliminazione di caratteri di nuova riga può influire sui marcatori, ad esempio punti di interruzione e segnalibri, ma l'aggiunta o la rimozione di spazi o tabulazioni non influisce sui marcatori.
 
-Gli utenti possono avviare un'operazione di riformattazione selezionando **Formatta selezione** o **Formatta documento** dal menu **Avanzate** del menu **modifica** . Un'operazione di riformattazione può essere attivata anche quando viene inserito un frammento di codice o un particolare carattere. Ad esempio, quando si digita una parentesi graffa di chiusura in C#, tutto ciò che intercorre tra la parentesi graffa di apertura corrispondente e la parentesi graffa di chiusura viene automaticamente rientrato nel livello appropriato.
+Gli utenti possono avviare un'operazione di riformattazione selezionando **Formatta** selezione o **Formatta** documento dal **menu** **Avanzate** del menu Modifica. Un'operazione di riformattazione può essere attivata anche quando viene inserito un frammento di codice o un particolare carattere. Ad esempio, quando si digita una parentesi graffa di chiusura in C#, tutti gli elementi compresi tra la parentesi graffa aperta corrispondente e la parentesi graffa di chiusura vengono automaticamente rientrati al livello appropriato.
 
-Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Invia il comando **Format Selection** o **Format Document** al servizio di linguaggio, la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe chiama il <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodo nella <xref:Microsoft.VisualStudio.Package.Source> classe. Per supportare la formattazione, è necessario eseguire l'override del <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodo e fornire il proprio codice di formattazione.
+Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] invia il comando **Formatta selezione** o **Formatta** documento al servizio di linguaggio, la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe chiama il metodo nella classe <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> . Per supportare la formattazione, è necessario eseguire <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> l'override del metodo e fornire il proprio codice di formattazione.
 
 ## <a name="enabling-support-for-reformatting"></a>Abilitazione del supporto per la riformattazione
 
-Per supportare la formattazione, il `EnableFormatSelection` parametro di <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> deve essere impostato su `true` quando si registra il pacchetto VSPackage. <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A>In questo modo, la proprietà viene impostata su `true` . Il <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> metodo restituisce il valore di questa proprietà. Se restituisce true, la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe chiama <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> .
+Per supportare la `EnableFormatSelection` formattazione, il parametro di <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> deve essere impostato su quando si registra il pacchetto `true` VSPackage. In questo modo la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> proprietà viene impostata su `true` . Il <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> metodo restituisce il valore di questa proprietà. Se restituisce true, la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe chiama <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> .
 
 ## <a name="implementing-reformatting"></a>Implementazione della riformattazione
 
-Per implementare la riformattazione, è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.Source> classe ed eseguire l'override del <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodo. L' <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> oggetto descrive l'intervallo da formattare e l' <xref:Microsoft.VisualStudio.Package.EditArray> oggetto contiene le modifiche apportate sull'intervallo. Si noti che questo intervallo può essere l'intero documento. Tuttavia, poiché è probabile che siano state apportate più modifiche all'intervallo, tutte le modifiche devono essere reversibili in un'unica azione. A tale scopo, eseguire il wrapping di tutte le modifiche in un <xref:Microsoft.VisualStudio.Package.CompoundAction> oggetto. vedere la sezione "utilizzo della classe CompoundAction" in questo argomento.
+Per implementare la riformattazione, è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.Source> classe ed eseguire l'override del <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodo . <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>L'oggetto descrive l'intervallo da formattare e <xref:Microsoft.VisualStudio.Package.EditArray> l'oggetto contiene le modifiche apportate all'intervallo. Si noti che questo intervallo può essere l'intero documento. Tuttavia, poiché è probabile che siano state apportate più modifiche all'intervallo, tutte le modifiche devono essere reversibili in una singola azione. A tale scopo, eseguire il wrapping di tutte le modifiche in un <xref:Microsoft.VisualStudio.Package.CompoundAction> oggetto (vedere la sezione "Uso della classe CompoundAction" in questo argomento).
 
 ### <a name="example"></a>Esempio
 
-Nell'esempio seguente viene verificato che sia presente un solo spazio dopo ogni virgola nella selezione, a meno che la virgola non sia seguita da una scheda o si trovi alla fine della riga. Gli spazi finali dopo l'ultima virgola in una riga vengono eliminati. Vedere la sezione "uso della classe CompoundAction" in questo argomento per vedere come viene chiamato questo metodo dal <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodo.
+Nell'esempio seguente viene garantito che sia presente uno spazio singolo dopo ogni virgola nella selezione, a meno che la virgola non sia seguita da una tabulazione o non sia alla fine della riga. Gli spazi finali dopo l'ultima virgola in una riga vengono eliminati. Vedere la sezione "Uso della classe CompoundAction" in questo argomento per vedere come questo metodo viene chiamato dal <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodo .
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -157,11 +158,11 @@ namespace MyLanguagePackage
 
 ## <a name="using-the-compoundaction-class"></a>Uso della classe CompoundAction
 
-Tutte le riformattazioni eseguite in una sezione di codice devono essere reversibili in un'unica azione. Questa operazione può essere eseguita usando una <xref:Microsoft.VisualStudio.Package.CompoundAction> classe. Questa classe esegue il wrapping di un set di operazioni di modifica nel buffer di testo in una singola operazione di modifica.
+Tutte le riformattazioni eseguite in una sezione di codice devono essere reversibili in una singola azione. Questa operazione può essere eseguita usando una <xref:Microsoft.VisualStudio.Package.CompoundAction> classe . Questa classe esegue il wrapping di un set di operazioni di modifica nel buffer di testo in una singola operazione di modifica.
 
 ### <a name="example"></a>Esempio
 
-Di seguito è riportato un esempio di come usare la <xref:Microsoft.VisualStudio.Package.CompoundAction> classe. Vedere l'esempio nella sezione "implementazione del supporto per la formattazione" in questo argomento per un esempio del `DoFormatting` metodo.
+Di seguito è riportato un esempio di come usare la <xref:Microsoft.VisualStudio.Package.CompoundAction> classe . Vedere l'esempio nella sezione "Implementazione del supporto per la formattazione" in questo argomento per un esempio del `DoFormatting` metodo .
 
 ```csharp
 using Microsoft.VisualStudio.Package;

@@ -1,6 +1,6 @@
 ---
 title: Comando Registra output finestra di comando
-description: Informazioni sul comando log output della finestra di comando e sul modo in cui vengono copiati tutti i dati di input e output dal finestra di comando in un file.
+description: Informazioni sul comando Log Command Window Output (Output finestra di comando log) e su come copia tutto l'input e l'output dal finestra di comando in un file.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,18 +13,19 @@ ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 36f0ece9ed1e29c414fbb6bf6e5f7ab2fa514734
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30baf6cb3ed9a66d6c9d5696909f215e5721fcbd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919404"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151392"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 
-Copia tutti i dati di input e output dalla finestra di **comando** in un file.
+Copia tutti gli input e gli output dalla **finestra di** comando in un file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -79,5 +80,5 @@ Questo esempio consente di riprendere la registrazione dei comandi nel file di l
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -36,7 +36,7 @@ R Tools per Visual Studio (RTVS) offre un modello di elemento R Markdown, il sup
 
     ```
 
-1. Creare un nuovo R Markdown file usando il **comando** di menu File Nuovo file e selezionando  >    >   **R**  >  **R Markdown** dall'elenco. Nel contesto di un progetto fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Aggiungi R Markdown** oppure scegliere **Aggiungi** > **Nuovo elemento** e selezionare **R Markdown** nell'elenco.
+1. Creare un nuovo file R Markdown file usando il **comando di** menu File Nuovo file e selezionando  >    >   **R**  >  **R Markdown'elenco.** Nel contesto di un progetto fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Aggiungi R Markdown** oppure scegliere **Aggiungi** > **Nuovo elemento** e selezionare **R Markdown** nell'elenco.
 
 1. Il contenuto predefinito del nuovo file è il seguente:
 
@@ -68,7 +68,7 @@ R Tools per Visual Studio (RTVS) offre un modello di elemento R Markdown, il sup
 
 ## <a name="previews"></a>Anteprime
 
-Visual Studio 2017 versione 15.5 e versioni successive forniscono automaticamente l'anteprima dinamica per R Markdown. Per attivare la sincronizzazione automatica tra l'editor e l'anteprima, selezionare **R Tools**  >  **Markdown Automatic**  >  **Sync** **(CTRL** + **MAIUSC** + **Y).** Se non si usa la sincronizzazione automatica, è possibile aggiornare l'anteprima usando **R Tools**  >  **Markdown**  >  **Reload R Markdown Preview**.
+Visual Studio 2017 versione 15.5 e versioni successive forniscono automaticamente l'anteprima dinamica per R Markdown. Per attivare la sincronizzazione automatica tra l'editor e l'anteprima, selezionare **R Tools**  >  **Markdown Automatic**  >  **Sync** (**CTRL** + **MAIUSC** + **Y).** Se non si usa la sincronizzazione automatica, è possibile aggiornare l'anteprima usando **R Tools**  >  **Markdown**  >  **Reload R Markdown Preview**.
 
 È anche possibile visualizzare in anteprima il file in formato HTML, PDF e Microsoft Word. A tale scopo, fare clic con il pulsante destro del mouse nell'editor e scegliere uno dei comandi **Anteprima**. Gli stessi comandi sono disponibili anche nel menu **Markdown di R Tools.**  >   Nelle versioni precedenti di Visual Studio questi comandi sono disponibili in **R Tools**  >  **Menu** Pubblica.
 

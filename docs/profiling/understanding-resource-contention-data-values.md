@@ -1,6 +1,6 @@
 ---
 title: Informazioni sui valori dei dati su conflitti di risorse | Microsoft Docs
-description: Informazioni su come la profilatura dei conflitti di risorse raccoglie informazioni dettagliate quando i thread in competizione in un'applicazione sono costretti ad attendere l'accesso a una risorsa condivisa.
+description: Informazioni sul modo in cui la profilatura dei contenuti delle risorse raccoglie informazioni dettagliate quando i thread concorrenti in un'applicazione sono costretti ad attendere l'accesso a una risorsa condivisa.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e050879fc9a1bd74f95ae5d24a92dc7a59a73c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b397a3171cc03822271224679e2792da6d5e3f5a821f58cb5ec19707288bc202
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886067"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121230950"
 ---
 # <a name="understand-resource-contention-data-values"></a>Informazioni sui valori dei dati su conflitti di risorse
 
@@ -31,7 +32,7 @@ I report sui conflitti di risorse visualizzano il numero totale di conflitti e i
 
 Le visualizzazioni dei report sui conflitti di risorse includono anche grafici della sequenza temporale che mostrano i singoli eventi di conflitto nel tempo e gli stack di chiamate che hanno creato l'evento specifico. Per ulteriori informazioni, vedere uno degli argomenti seguenti:
 
-- [Visualizzazione Dettagli thread](../profiling/thread-details-view-contention-data.md)
+- [Visualizzazione dettagli thread](../profiling/thread-details-view-contention-data.md)
 
 - [Visualizzazione dettagli risorsa](../profiling/resource-details-view-contention-data.md)
 

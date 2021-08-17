@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 099d6c99806e75b8348e13156eeba652021fd86a8d7e95eaa3a09df3f91fed66
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5618d0f551c76721997f89ae328571308eb32104
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121430487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101531"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>Conversione di tipi anonimi in tupla
 

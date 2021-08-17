@@ -1,6 +1,6 @@
 ---
 title: ActivityDesigner TerminateWorkflow
-description: In Progettazione flussi di lavoro, informazioni su come usare l'ActivityDesigner TerminateWorkflow per creare e configurare un'attività TerminateWorkflow.
+description: In Progettazione flussi di lavoro informazioni su come usare l'ActivityDesigner TerminateWorkflow per creare e configurare un'attività TerminateWorkflow.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,18 +10,19 @@ ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f37c862768dd0d72ba66d435478faed9bee8ef3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d4fe0b77c91b36440cbb760b3e192af453c4f58
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025407"
 ---
 # <a name="terminateworkflow-activity-designer"></a>ActivityDesigner TerminateWorkflow
 
-L'ActivityDesigner **TerminateWorkflow** viene usato per creare e configurare un' <xref:System.Activities.Statements.TerminateWorkflow> attività.
+**L'ActivityDesigner TerminateWorkflow** viene usato per creare e configurare <xref:System.Activities.Statements.TerminateWorkflow> un'attività.
 
 ## <a name="the-terminateworkflow-activity"></a>Attività TerminateWorkflow
 
@@ -29,13 +30,13 @@ L'attività <xref:System.Activities.Statements.TerminateWorkflow> termina l'esec
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Utilizzo dell'ActivityDesigner TerminateWorkflow
 
-L'ActivityDesigner **TerminateWorkflow** è disponibile nella categoria **Runtime** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** . in alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere CTRL + ALT + X.
+L'ActivityDesigner **TerminateWorkflow** è disponibile nella categoria **Runtime** della Casella  degli strumenti **,** a  cui si accede facendo clic sulla scheda Casella degli strumenti .In alternativa, selezionare Casella degli strumenti dal **menu** Visualizza o CTRL+ALT+X.
 
-È possibile trascinare l'ActivityDesigner **TerminateWorkflow** dalla **casella degli strumenti** e rilasciarlo nell'area Progettazione flussi di lavoro quando vengono in genere posizionate le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Verrà creata un' <xref:System.Activities.Statements.TerminateWorkflow> attività con un valore **DisplayName** predefinito di TerminateWorkflow. Il <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner **TerminateWorkflow** o nella casella **DisplayName** della griglia delle proprietà.
+L'ActivityDesigner **TerminateWorkflow** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di <xref:System.Activities.Statements.Sequence> un oggetto . Verrà creata <xref:System.Activities.Statements.TerminateWorkflow> un'attività con **displayName predefinito** di TerminateWorkflow. Può <xref:System.Activities.Activity.DisplayName%2A> essere modificato nell'intestazione dell'ActivityDesigner **TerminateWorkflow** o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-terminateworkflow-properties"></a>Proprietà di TerminateWorkflow
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.TerminateWorkflow> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate in Progettazione flussi di lavoro area.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.TerminateWorkflow> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate Progettazione flussi di lavoro superficie.
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|

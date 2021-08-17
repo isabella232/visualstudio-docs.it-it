@@ -1,6 +1,6 @@
 ---
-title: Aggiunta di Project e Project di elementi | Microsoft Docs
-description: Informazioni sull'aggiunta di modelli di progetto e di elemento di progetto alle finestre di dialogo nell Visual Studio ide (Integrated Development Environment).
+title: Aggiunta Project e Project modelli di elemento | Microsoft Docs
+description: Informazioni sull'aggiunta di modelli di progetto e di elemento di progetto alle finestre di dialogo nell'ambiente Visual Studio di sviluppo integrato (IDE).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae29f7d2d2e15cacc56d7c3fb42e7b86ee31be903032dc55dd5a61276360449d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 703c8db7dcc8245719ca9c8abba98653254260ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029138"
 ---
 # <a name="add-project-and-project-item-templates"></a>Aggiungere modelli di progetto e di elemento di progetto
-Quando si creano tipi di progetto personalizzati, è necessario fornire il supporto per l'aggiunta di nuovi progetti ed elementi di progetto tramite le finestre di dialogo dell'ambiente di sviluppo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrato (IDE) standard. Negli argomenti seguenti vengono illustrate diverse tecniche per l'aggiunta di progetti ed elementi di progetto.
+Quando si creano tipi di progetto personalizzati, è necessario fornire il supporto per l'aggiunta di nuovi progetti ed elementi di progetto tramite le finestre di dialogo dell'ambiente di sviluppo integrato [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) standard. Negli argomenti seguenti vengono illustrate diverse tecniche per l'aggiunta di progetti ed elementi di progetto.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Project contesto](../../extensibility/internals/project-context.md)
@@ -31,40 +31,40 @@ Quando si creano tipi di progetto personalizzati, è necessario fornire il suppo
 
 - [Project priorità](../../extensibility/internals/project-priority.md)
 
- Spiega che un elemento di progetto è in genere un membro di un progetto per evitare ambiguità su quale progetto viene usato per aprire l'elemento.
+ Spiega che un elemento di progetto è in genere membro di un progetto per evitare ambiguità sul progetto usato per aprire l'elemento.
 
 - [Progetto File esterni](../../extensibility/internals/miscellaneous-files-project.md)
 
- Fornisce informazioni sui due tipi di editor che possono essere utilizzati per aprire file in un progetto e sul ruolo del progetto nella determinazione dell'editor da usare quando viene aperto un elemento di progetto.
+ Fornisce informazioni sui due tipi di editor che è possibile usare per aprire i file in un progetto e sul ruolo del progetto per determinare quale editor usare quando viene aperto un elemento di progetto.
 
-- [Registrare modelli di progetto ed elemento](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Registrare modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md)
 
  Spiega cosa accade quando viene [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] creato un progetto.
 
 - [Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 
- Viene illustrato il processo di aggiunta di elementi alla **finestra di dialogo Aggiungi** nuovo elemento .
+ Viene illustrato il processo per l'aggiunta di elementi alla **finestra di dialogo Aggiungi** nuovo elemento .
 
-- [Aggiungere directory alla finestra di dialogo Project nuova directory](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+- [Aggiungere directory alla finestra di dialogo Project nuova cartella](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
 
- Viene fornito un esempio di registrazione di una nuova directory che contiene modelli personalizzati resi disponibili da un VSPackage.
+ Fornisce un esempio di registrazione di una nuova directory che contiene modelli personalizzati resi disponibili da un VSPackage.
 
 - [Aggiungere directory alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
 
- Viene fornito un esempio di registrazione di un nuovo set di directory per la **finestra di dialogo** Aggiungi nuovo elemento .
+ Viene fornito un esempio di registrazione di un nuovo set di directory per la **finestra di** dialogo Aggiungi nuovo elemento .
 
-- [Comandi definiti dall'IDE per l'estensione dei sistemi di progetto](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Comandi definiti dall'IDE per l'estensione di sistemi di progetto](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 
- Elenca i diversi tipi di elementi di comando usati per estendere i sistemi di progetto.
+ Elenca i diversi tipi di elementi di comando usati per l'estensione dei sistemi di progetto.
 
-- [CATID per oggetti usati in genere per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [CATID per gli oggetti in genere usati per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
 
  Elenca i CATID per gli oggetti utilizzati per estendere [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] i sistemi di progetto , e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] .
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Procedura: Aprire editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)
 
- Fornisce istruzioni dettagliate per l'apertura di un elemento intrinsecamente associato a un editor specifico per un progetto.
+ Fornisce istruzioni dettagliate per l'apertura intrinseca di un elemento associato a un editor specifico per un progetto.
 
 - [Procedura: Aprire editor standard](../../extensibility/how-to-open-standard-editors.md)
 
@@ -72,7 +72,7 @@ Quando si creano tipi di progetto personalizzati, è necessario fornire il suppo
 
 - [Project sottotipi](../../extensibility/internals/project-subtypes.md)
 
- Vengono forniti collegamenti ad argomenti concettuali relativi al sottotipo di progetto. Project sottotipi estendono i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] progetti [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e esistenti.
+ Vengono forniti collegamenti ad argomenti concettuali relativi al sottotipo di progetto. Project sottotipi estendono i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] progetti e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] esistenti.
 
 - [Project tipi](../../extensibility/internals/project-types.md)
 
