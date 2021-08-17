@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b99471317dd54c4a088af9a9f7d25d9b889a1b2a4a6c2e491d31cbf0e65c79ad
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c7617d0b54c2fe2532eb92b54810e7e9d8a28d7c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306257"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042634"
 ---
 # <a name="task_state_executed-field"></a>TASK_STATE_EXECUTED campo
 L'attività è in esecuzione ma non è ancora stata completata.

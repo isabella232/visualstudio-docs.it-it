@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fbad29417b7c53284c0a00281f9c702c8bb5e342e44bcd84b6106799e9d7560f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e8da72cb7dd087bc798aa3e998bb672d7f1b736c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261632"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029996"
 ---
 # <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
@@ -65,7 +65,7 @@ Un'implementazione deve sempre restituire `E_NOTIMPL` .
 ## <a name="remarks"></a>Commenti
 
 > [!WARNING]
-> A Visual Studio 2005, questo metodo non viene più usato e deve restituire sempre `E_NOTIMPL` . Vedere [l'interfaccia IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) per un approccio alternativo se il nodo del programma deve indicare che non può essere collegato a o se il nodo del programma sta semplicemente impostando il programma `GUID` . In caso contrario, [implementare il metodo Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+> A Visual Studio 2005, questo metodo non viene più usato e deve restituire sempre `E_NOTIMPL` . Vedere [l'interfaccia IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) per un approccio alternativo se il nodo del programma deve indicare che non può essere collegato a o se il nodo del programma sta semplicemente impostando il programma `GUID` . In caso contrario, implementare [il metodo Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="prior-to-visual-studio-2005"></a>Prima di Visual Studio 2005
 

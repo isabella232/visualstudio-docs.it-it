@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 00f04a99d98cc4fefc3223b97f8e1e4614314215
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: b940ac63a47425a1a1cb3887c3785700f572192b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680232"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075970"
 ---
 # <a name="work-with-sql-server-and-r"></a>Usare SQL Server ed R
 
@@ -38,7 +39,7 @@ L'ottimo supporto di Visual Studio per SQL Server consente agli esperti di dati 
 
 RTVS supporta l'aggiunta di query SQL all'interno di progetti R, consentendo di sviluppare in modo iterativo query SQL in un contesto separato fino a quando non si ottengono i risultati voluti.
 
-Per aggiungere un file di query SQL, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, scegliere Aggiungi nuovo elemento e selezionare il tipo di file query SQL  >  seguente: 
+Per aggiungere un file SQL query, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, scegliere Aggiungi nuovo elemento e selezionare il tipo di file query SQL  >  query: 
 
 ![Aggiungere un elemento Query SQL a un progetto](media/sql-add-item.png)
 
@@ -84,7 +85,7 @@ Come descritto nelle sezioni seguenti, RTVS semplifica il processo di combinazio
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Scrivere e testare una stored procedure SQL
 
-Per aggiungere una nuova stored procedure SQL, fare clic con il pulsante destro del mouse sul progetto, scegliere Aggiungi nuovo elemento, selezionare SQL Stored procedure con R dall'elenco di modelli, assegnare un nome al file e selezionare  >   **OK.**  Il nome file predefinito è *SqlSProc.R*; per facilitare la lettura, in questa sezione viene usato il nome file *StoredProcedure.R*. Se sono presenti più stored procedure, ogni file deve avere un nome file univoco.
+Per aggiungere una nuova stored procedure SQL, fare clic con il pulsante destro del mouse sul progetto, scegliere Aggiungi nuovo elemento, selezionare SQL Stored procedure con R nell'elenco di modelli, assegnare un nome al file e selezionare  >   **OK**.  Il nome file predefinito è *SqlSProc.R*; per facilitare la lettura, in questa sezione viene usato il nome file *StoredProcedure.R*. Se sono presenti più stored procedure, ogni file deve avere un nome file univoco.
 
 RTVS crea tre file per la stored procedure: un file *.R* per il codice R, un file *.Query.sql* per il codice SQL e un file *.Template.sql* che combina i due file precedenti. Gli ultimi due sono visualizzati in Esplora soluzioni come elementi figlio del file *.R*:
 
@@ -159,7 +160,7 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
     ![Finestra di dialogo di pubblicazione di una stored procedure](media/sql-publish-with-options.png)
 
-1. Per pubblicare tutte le stored procedure in un progetto, è possibile usare il comando R **Tools**  >  **Data**  >  **Publish Stored Procedures,** disponibile anche quando si fa clic con il pulsante destro del mouse sul progetto Esplora soluzioni.
+1. Per pubblicare tutte le stored procedure in un progetto, è possibile usare il comando **R Tools**  >  **Data**  >  **Publish Stored Procedures,** disponibile anche quando si fa clic con il pulsante destro del mouse sul progetto Esplora soluzioni.
 
 > [!Tip]
 > Se il SQL Server Esplora oggetti è aperto in Visual Studio, il stored procedure pubblicato viene visualizzato nella cartella **Stored** procedure di  >   programmabilità del database. È anche possibile eseguirla da Esplora oggetti facendo clic con il pulsante destro del mouse e selezionando **Esegui procedura** o chiamandola in modo interattivo da una finestra di query *.sql*.

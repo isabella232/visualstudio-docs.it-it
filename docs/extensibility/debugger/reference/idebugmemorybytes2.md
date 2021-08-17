@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: add2f353b432d5a7a935a7206ece2113382182ca06aa0755c084fe8123fd7298
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6cd9fe2bee5bfd7dc609cc8c99bdaa4981e29504
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417093"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043427"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 Questa interfaccia rappresenta i byte di memoria.
@@ -46,9 +46,9 @@ IDebugMemoryBytes2 : IUnknown
 |[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Ottiene le dimensioni, in byte, della memoria rappresentata da questa interfaccia.|
 
 ## <a name="remarks"></a>Commenti
- Per le proprietà, [un'interfaccia IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta una matrice fornisce un'interfaccia `IDebugMemoryBytes2` per accedere ai valori in tale matrice.
+ Per le proprietà, [un'interfaccia IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta una matrice fornisce `IDebugMemoryBytes2` un'interfaccia per accedere ai valori in tale matrice.
 
- Visual Studio memory **view** chiama [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) per recuperare un'interfaccia `IDebugMemoryBytes2` per l'accesso alla memoria di sistema. L'indirizzo a cui accedere viene ottenuto analizzando l'espressione immessa come indirizzo nella visualizzazione memoria e quindi valutando l'espressione analizzata usando [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) per ottenere `IDebugProperty2` un'interfaccia. Una chiamata a [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) restituisce [LDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che descrive l'indirizzo di memoria. Questo contesto di memoria viene quindi passato [a ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) e [WriteAt.](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)
+ Visual Studio visualizzazione **memoria** chiama [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) per recuperare un'interfaccia `IDebugMemoryBytes2` per l'accesso alla memoria di sistema. L'indirizzo a cui accedere viene ottenuto analizzando l'espressione immessa come indirizzo nella visualizzazione memoria e quindi valutando l'espressione analizzata usando [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) per ottenere `IDebugProperty2` un'interfaccia. Una chiamata a [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) restituisce [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che descrive l'indirizzo di memoria. Questo contesto di memoria viene quindi passato a [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) e [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md).
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

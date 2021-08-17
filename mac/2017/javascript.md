@@ -27,7 +27,7 @@ I file JavaScript vengono quasi sempre aggiunti ai progetti ASP.NET Core tramite
 
 ![Aggiunta di nuovi file al progetto](media/javascript-image1.png)
 
-Nella finestra **di dialogo Nuovo file** selezionare Web > file JS vuoto o **File** **TypeScript > Web.** Assegnare un nome e quindi scegliere **Nuovo**:
+Nella finestra **di dialogo New File** (Nuovo file) selezionare Web > Empty JS file (File JS **vuoto)** o **Web > File TypeScript**. Assegnare un nome e quindi scegliere **Nuovo**:
 
 ![Creazione di un nuovo file Typescript dal modello](media/javascript-image2.png)
 
@@ -38,7 +38,7 @@ Visual Studio per Mac usa il [JavaScript Language Service](/visualstudio/ide/jav
 JavaScript Intellisense in Visual Studio per Mac può essere basato sull'inferenza del tipo, su JSDoc o sulla dichiarazione TypeScript.
 
 - **Inferenza del tipo**: il tipo di un oggetto viene dedotto dal contesto del codice circostante. Per altre informazioni, vedere la sezione relativa a Visual Studio in [IntelliSense basato sull'inferenza del tipo](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference).
-- **JSDoc**: a volte l'inferenza del tipo non offre le informazioni sul tipo corrette. In questi casi, le informazioni sul tipo possono essere fornite in modo esplicito dalle annotazioni [JSDoc](https://jsdoc.app/about-getting-started.html). Per altre informazioni, vedere Visual Studio'articolo su [IntelliSense basato su JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
+- **JSDoc**: a volte l'inferenza del tipo non offre le informazioni sul tipo corrette. In questi casi, le informazioni sul tipo possono essere fornite in modo esplicito dalle annotazioni [JSDoc](https://jsdoc.app/about-getting-started.html). Per altre informazioni, vedere Visual Studio su [IntelliSense basato su JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
 - **File di dichiarazione TypeScript:** `.d.ts` i file vengono usati per fornire valori per JavaScript IntelliSense. I tipi dichiarati in questo file possono essere usati come tipi nei commenti JSDoc. Per altre informazioni, vedere la sezione relativa a Visual Studio su [IntelliSense basato su file dichiarazione TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
 
     ![aggiunta di un file di definizione typescript](media/javascript-image3.png)

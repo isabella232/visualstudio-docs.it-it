@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 419fc1552af65ba4d2fc80f0c1767e48919ebf5cf29be9bffd8d3fbd063f1208
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3fdbf8b097c2e71341abc43ccb3e975392e1f810
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056641"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Procedura dettagliata: Creare un SDK usando JavaScript
 Questa procedura dettagliata illustra come usare JavaScript per creare un SDK matematico semplice come estensione Visual Studio (VSIX).  La procedura dettagliata è suddivisa in queste parti:
@@ -25,14 +25,14 @@ Questa procedura dettagliata illustra come usare JavaScript per creare un SDK ma
 
 - [Per creare un'app di esempio che usa l'SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)
 
-  Per JavaScript, non esiste alcun tipo di progetto libreria di classi. In questa procedura dettagliata il file *diarithmetic.js* di esempio viene creato direttamente nel progetto VSIX. In pratica, è consigliabile compilare e testare i file JavaScript e CSS come app  di Windows Store, ad esempio usando il modello App vuota, prima di metterli in un progetto VSIX.
+  Per JavaScript, non esiste alcun tipo di progetto libreria di classi. In questa procedura dettagliata il file *diarithmetic.js* di esempio viene creato direttamente nel progetto VSIX. In pratica, è consigliabile compilare e testare i file JavaScript e CSS come app di Windows Store, ad esempio usando il modello **App** vuota, prima di metterli in un progetto VSIX.
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK.](../extensibility/visual-studio-sdk.md)
 
 ## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> Per creare il progetto SDK dell'estensione SimpleMathVSIX
 
-1. Nella barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
+1. Sulla barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
 
 2. Nell'elenco delle categorie di modelli, in **Visual C#** selezionare **Extensibility** e quindi selezionare il modello di Project **VSIX.**
 
@@ -66,7 +66,7 @@ Questa procedura dettagliata illustra come usare JavaScript per creare un SDK ma
 
 6. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto SimpleMathVSIX** e quindi scegliere **Aggiungi**  >  **nuovo elemento**.
 
-7. Nella categoria **Dati** selezionare **File XML,** assegnare un nome al file `SDKManifest.xml` e scegliere il **pulsante** Aggiungi.
+7. Nella categoria **Dati** selezionare **File XML,** assegnare al file il nome `SDKManifest.xml` e scegliere il **pulsante** Aggiungi.
 
 8. In **Esplora soluzioni** aprire il menu di scelta rapida per il file  **SDKManifest.xml** e quindi scegliere Apri per visualizzare il file nell'editor **XML.**
 
@@ -143,7 +143,7 @@ Questa procedura dettagliata illustra come usare JavaScript per creare un SDK ma
 
 ## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> Per creare un'app di esempio che usa l'SDK
 
-1. Nella barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
+1. Sulla barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
 
 2. Nell'elenco delle categorie di modelli, in **JavaScript** selezionare **Windows Store** e quindi selezionare il **modello App** vuota.
 
@@ -155,7 +155,7 @@ Questa procedura dettagliata illustra come usare JavaScript per creare un SDK ma
 
 6. Selezionare la **casella di controllo Simple Math** (Matematica semplice) e quindi fare clic sul pulsante **OK.**
 
-7. In **Esplora soluzioni**, in **Riferimenti**, si noti che viene visualizzato il **riferimento matematico** semplice. Espanderlo e notare che è presente una **cartella \js \\** che **include** arithmetic.js. È possibile **aprire** arithmetic.jsverificare che il codice sorgente sia stato installato.
+7. In **Esplora soluzioni**, in **Riferimenti**, si noti che viene visualizzato il **riferimento matematico** semplice. Espanderlo e notare che è presente una **cartella \js \\** che **include** arithmetic.js. È possibile **aprire** arithmetic.jsper verificare che il codice sorgente sia stato installato.
 
 8. Usare il codice seguente per sostituire il contenuto di *default.htm*.
 

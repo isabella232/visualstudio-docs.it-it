@@ -1,6 +1,6 @@
 ---
 title: WriteAllTLogs | Microsoft Docs
-description: Informazioni su sintassi, requisiti e valore restituito per WriteAllTLogs, che scrive log di rilevamento per tutti i thread e contesti.
+description: Informazioni su sintassi, requisiti e valore restituito per WriteAllTLogs, che scrive i log di rilevamento per tutti i thread e i contesti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: db57baaa0a31b8882d7a2fe7a72c051dae748b59
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: b16bee2f334425abedcea26f7a308da935f17b4fbae97a14326706e611b2eb69
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108135"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443100"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 
@@ -47,7 +47,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 
 ## <a name="return-value"></a>Valore restituito
 
- HRESULT **con** il bit **SUCCEEDED** impostato se è stato creato il contesto di rilevamento.
+ HRESULT **con** il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato creato.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -30,7 +30,7 @@ ms.locfileid: "121352861"
 ## <a name="module-items-and-elements"></a>Elementi ed elementi del modulo
  Per creare un modulo, aggiungerlo a un progetto scegliendolo nella finestra **di** dialogo Aggiungi nuovo elemento. Modificare quindi il file *Elements.xml* in modo da includere i nomi dei file da distribuire, la posizione in cui si trovano nel sistema e la posizione in cui devono essere copiati nel server SharePoint.
 
- Ecco un esempio del file *Elements.xml* per un modulo:
+ Di seguito è riportato un esempio del file *Elements.xml* per un modulo:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -49,15 +49,15 @@ ms.locfileid: "121352861"
 |*Elements.xml*|File di definizione per il modulo.|
 |*Sample.txt*|Un file segnaposto che funge da esempio di file nel modulo.|
 
- Il *fileElements.xml* contiene gli elementi seguenti:
+ Il *Elements.xml* file contiene gli elementi seguenti:
 
 |Nome dell'elemento|Descrizione|
 |------------------|-----------------|
 |Elementi|Contiene tutti gli elementi definiti nel modulo.|
 |Modulo|L'elemento module ha un singolo attributo, *Name,* che specifica il nome del modulo nel formato `<Module Name="Module1">` .<br /><br /> Si noti che se si modifica il nome del modulo (o la relativa proprietà *Folder Name),* è necessario aggiornare manualmente il nome nell'elemento Module.<br /><br /> Se si specifica una sottodirectory per i file nell'elemento Module, (WSS) creerà automaticamente una struttura di [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] directory corrispondente.|
-|File|L'elemento File ha due parametri, *Path* e *Url.*<br /><br /> - Percorso: il nome e il percorso del file nella SharePoint soluzione. Il formato è `Path="Module1\Sample.txt"` .<br /><br /> - URL: percorso in cui verrà distribuito il file nel server SharePoint server. Il formato è `Url="Module1/Sample.txt"` .<br /><br /> - Tipo: attributo facoltativo con due impostazioni: *GhostableInLibrary* e *Ghostable.* Il formato è `Type="GhostableInLibrary"` . Se si *specifica GhostableInLibrary,* il file verrà aggiunto a una raccolta documenti in SharePoint insieme a un elemento elenco associato al file quando viene aggiunto alla raccolta. Se si *specifica Ghostable,* il file viene aggiunto SharePoint all'esterno della raccolta documenti.|
+|File|L'elemento File ha due parametri, *Path* e *Url.*<br /><br /> - Percorso: il nome e il percorso del file nella SharePoint soluzione. Il formato è `Path="Module1\Sample.txt"` .<br /><br /> - URL: percorso in cui verrà distribuito il file nel server SharePoint. Il formato è `Url="Module1/Sample.txt"` .<br /><br /> - Tipo: attributo facoltativo con due impostazioni: *GhostableInLibrary* e *Ghostable.* Il formato è `Type="GhostableInLibrary"` . Se si *specifica GhostableInLibrary,* il file verrà aggiunto a una raccolta documenti in SharePoint insieme a un elemento elenco associato al file quando viene aggiunto alla raccolta. Se si *specifica Ghostable,* il file viene aggiunto SharePoint all'esterno della raccolta documenti.|
 
- Ogni file che si vuole distribuire richiede una voce di `<File>` elemento separata in *Elements.xml*.
+ Ogni file che si vuole distribuire richiede una voce `<File>` di elemento separata in *Elements.xml*.
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Includere file usando un modulo](../sharepoint/how-to-include-files-by-using-a-module.md)

@@ -1,6 +1,6 @@
 ---
 description: Questo metodo esegue una query per un valore di proprietà specificato del processo di debug.
-title: 'IDebugProcessQueryProperties:: QueryProperty | Microsoft Docs'
+title: Proprietà IDebugProcessQueryProperties::QueryProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +9,18 @@ ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9814ff2dd377d1a10895f6ec5ba0818f480bfcf3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a749bc4f86d773c2f052733a570bc70c1f0fd696bc01acf00c8fd262b94d5a9d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081399"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433398"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 Questo metodo esegue una query per un valore di proprietà specificato del processo di debug.
@@ -40,7 +41,7 @@ int QueryProperty(
 
 ## <a name="parameters"></a>Parametri
 `dwPropType`\
-in Definizione della proprietà sottoposta a query. I valori possibili sono:
+[in] Definizione della proprietà su cui viene eseguita la query. I valori possibili sono:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera il numero di versione principale del front-end.
+description: Recupera il numero di versione principale front-end.
 title: IDiaSymbol::get_frontEndMajor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b81cb7f9e8dd22bbfb271bae89cda0b8e9a65456ec03fa233b8f23c7b608ccc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 37ee1848531ff2544078b6b562f6024815a2c515
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044238"
 ---
 # <a name="idiasymbolget_frontendmajor"></a>IDiaSymbol::get_frontEndMajor
-Recupera il numero di versione principale del front-end.
+Recupera il numero di versione principale front-end.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ HRESULT get_frontEndMajor (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Un compilatore è in genere costituito da due elementi principali: il front-end (parser), che gestisce l'analisi del codice sorgente in un formato intermedio, e un back-end (generatore di codice), che converte il formato intermedio in assembly. Non è insolito che il front-end abbia una versione diversa rispetto al back-end.
+ Un compilatore è in genere costituito da due elementi primari: il front-end (parser), che gestisce l'analisi del codice sorgente in una forma intermedia, e un back-end (generatore di codice), che converte il modulo intermedio in assembly. Non è insolito che il front-end abbia una versione diversa rispetto al back-end.
 
  Un numero di versione front-end o back-end è costituito da tre parti: . . , dove è il numero di versione principale, è il numero di versione secondaria e \<major> è il numero di \<minor> \<build> \<major> \<minor> \<build> build. Ad esempio, 13.10.3077.
 

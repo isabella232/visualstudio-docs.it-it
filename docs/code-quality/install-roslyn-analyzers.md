@@ -1,7 +1,7 @@
 ---
 title: Installare analizzatori di terze parti
 ms.date: 08/27/2020
-description: Informazioni su come installare analizzatori di terze parti in Visual Studio. Vedere come installare gli analizzatori nei file con estensione vsix e nei NuGet analyzer.
+description: Informazioni su come installare analizzatori di terze parti in Visual Studio. Informazioni su come installare gli analizzatori nei file con estensione vsix e nei NuGet analyzer.
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,51 +14,51 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: fbbeffb8d0ec0ffb8d7532ca117e32afd5d24d9c77aefa3ed4f5b1407fa20aa8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a31fbbc8a0e655418425416ffdcae3aa16810788
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420985"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075320"
 ---
 # <a name="install-third-party-analyzers"></a>Installare analizzatori di terze parti
 
-Visual Studio include un set di .NET Compiler Platform (*Roslyn*) analizzatori. Questi analizzatori sono sempre disponibili. È possibile installare analizzatori aggiuntivi come NuGet pacchetti o come Visual Studio nei *file VSIX.*
+Visual Studio include un set di base di .NET Compiler Platform (*Roslyn*) analizzatori. Questi analizzatori sono sempre on. È possibile installare analizzatori aggiuntivi come NuGet pacchetti o come estensioni Visual Studio nei *file VSIX.*
 
-## <a name="to-install-nuget-analyzer-packages"></a>Per installare i NuGet analyzer
+## <a name="to-install-nuget-analyzer-packages"></a>Per installare i pacchetti NuGet Analyzer
 
 1. Trovare il pacchetto dell'analizzatore che si vuole installare www.nuget.org.
 
    Ad esempio, è possibile installare [StyleCop.Analyzers](https://www.nuget.org/packages/stylecop.analyzers/) per cercare i problemi di stile nella codebase.
 
-2. Installare il pacchetto in Visual Studio, usando la [console Gestione pacchetti o](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) l'interfaccia Gestione pacchetti interfaccia [utente](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+2. Installare il pacchetto in Visual Studio, usando la [console di Gestione pacchetti o](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) l'interfaccia Gestione pacchetti interfaccia [utente.](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)
 
    > [!NOTE]
-   > La www.nuget.org per ogni pacchetto dell'analizzatore mostra il comando da incollare nella **console Gestione pacchetti .** È anche presente un pratico pulsante per copiare il testo negli Appunti.
+   > La www.nuget.org per ogni pacchetto dell'analizzatore mostra il comando da **incollare** nella console Gestione pacchetti . È anche presente un pulsante utile per copiare il testo negli Appunti.
 
-   Gli assembly dell'analizzatore vengono installati e visualizzati **in** Esplora soluzioni in   >  **Analizzatori riferimenti**.
+   Gli assembly dell'analizzatore vengono installati e visualizzati in **Esplora soluzioni** in   >  **Analizzatori riferimenti**.
 
 ## <a name="to-install-vsix-analyzers"></a>Per installare gli analizzatori VSIX
 
 ::: moniker range="vs-2017"
 
-1. In Visual Studio selezionare **Estensioni** > **e aggiornamenti degli strumenti**.
+1. In Visual Studio selezionare **Strumenti** > **Estensioni e aggiornamenti**.
 
    Verrà visualizzata la finestra di dialogo **Estensioni e aggiornamenti**.
 
    > [!NOTE]
-   > In alternativa, è possibile trovare e scaricare l'estensione dell'analizzatore direttamente [da Visual Studio Marketplace.](https://marketplace.visualstudio.com)
+   > In alternativa, è possibile trovare e scaricare l'estensione dell'analizzatore [direttamente da Visual Studio Marketplace.](https://marketplace.visualstudio.com)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. In Visual Studio selezionare **Estensioni** > **Gestisci estensioni**.
+1. In Visual Studio selezionare **Estensioni Gestisci** > **estensioni.**
 
    Verrà **visualizzata la finestra di** dialogo Gestisci estensioni .
 
    > [!NOTE]
-   > In alternativa, è possibile trovare e scaricare l'estensione dell'analizzatore direttamente [da Visual Studio Marketplace.](https://marketplace.visualstudio.com)
+   > In alternativa, è possibile trovare e scaricare l'estensione dell'analizzatore [direttamente da Visual Studio Marketplace.](https://marketplace.visualstudio.com)
 
 ::: moniker-end
 
@@ -80,17 +80,17 @@ Visual Studio include un set di .NET Compiler Platform (*Roslyn*) analizzatori. 
 
 7. Dopo uno o due minuti, l'installazione viene completata. Selezionare **Chiudi**.
 
-8. Aprire Visual Studio di nuovo.
+8. Aprire Visual Studio di nuovo .
 
 ::: moniker range="vs-2017"
 
-Per verificare se l'estensione è installata, selezionare **Estensioni**  >  **e aggiornamenti degli strumenti**. Nella finestra **di dialogo Estensioni e** aggiornamenti selezionare la categoria **Installato** a sinistra e quindi cercare l'estensione in base al nome.
+Per verificare se l'estensione è installata, selezionare **Strumenti**  >  **Estensioni e aggiornamenti**. Nella finestra **di dialogo Estensioni** e aggiornamenti selezionare la categoria **Installato** a sinistra e quindi cercare l'estensione in base al nome.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Per verificare se l'estensione è installata, selezionare **Estensioni**  >  **Gestisci estensioni**. Nella finestra **di dialogo Gestisci** estensioni selezionare la categoria **Installato** a sinistra e quindi cercare l'estensione in base al nome.
+Per verificare se l'estensione è installata, selezionare **Estensioni**  >  **Gestisci estensioni**. Nella finestra **di dialogo Gestisci** estensioni selezionare la categoria **Installati** a sinistra e quindi cercare l'estensione in base al nome.
 
 ::: moniker-end
 

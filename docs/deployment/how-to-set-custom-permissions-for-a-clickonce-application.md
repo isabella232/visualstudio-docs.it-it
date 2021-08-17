@@ -1,6 +1,6 @@
 ---
-title: Impostare autorizzazioni personalizzate (app ClickOnce)
-description: Informazioni su come distribuire un'applicazione ClickOnce che usa le autorizzazioni predefinite o creare un'area personalizzata per le autorizzazioni specifiche necessarie per l'applicazione.
+title: Impostare autorizzazioni personalizzate (ClickOnce app)
+description: Informazioni su come distribuire un'ClickOnce che usa le autorizzazioni predefinite o creare un'area personalizzata per le autorizzazioni specifiche necessarie per l'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,14 +15,15 @@ ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050f3534caba8aba12fa8550eb6e573a3d0db08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 240903c1f3335752986972131b17a27ed40bb3a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885040"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073812"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce
 È possibile distribuire un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] che usa le autorizzazioni predefinite per le aree Internet o Intranet locale. In alternativa, è possibile creare un'area personalizzata per le autorizzazioni specifiche necessarie all'applicazione. È possibile eseguire questa operazione personalizzando le autorizzazioni di sicurezza nella pagina **Sicurezza** di **Creazione progetti**.
@@ -51,5 +52,5 @@ ms.locfileid: "99885040"
     > È possibile usare il metodo `ToXml` di un set di autorizzazioni per generare il codice XML per il manifesto dell'applicazione. Ad esempio, per generare il codice XML per il set di autorizzazioni <xref:System.Security.Permissions.EnvironmentPermission> , chiamare il metodo <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .
 
 ## <a name="see-also"></a>Vedi anche
-- [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
+- [Proteggere ClickOnce applicazioni](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

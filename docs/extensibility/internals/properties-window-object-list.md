@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ce39d335d48335408eea192c23bd5a091900a48055dcad0d65671b158b7b6e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ed4b3fc37d4110d6cd6dfd02c2dea503cbee194
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275398"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042127"
 ---
 # <a name="properties-window-object-list"></a>Elenco di oggetti della finestra Proprietà
 L'elenco di oggetti nella finestra **Proprietà** è un elenco a discesa che consente di modificare la selezione in altri oggetti disponibili all'interno di una o più finestre selezionate. La selezione di un oggetto diverso da questo elenco attiva una chiamata a per informare l'ambiente che è stato selezionato <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> un nuovo oggetto. Le informazioni visualizzate nella finestra **Proprietà** vengono quindi modificate per visualizzare le proprietà associate all'oggetto appena selezionato.

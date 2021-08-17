@@ -1,5 +1,5 @@
 ---
-description: Rappresenta l'oggetto inizializzato in modalità lazily utilizzato dal debugger per identificare in modo univoco questo generatore.
+description: Rappresenta l'oggetto inizializzato in modo lazily utilizzato dal debugger per identificare in modo univoco questo generatore.
 title: AsyncVoidMethodBuilder.m_objectIdForDebugger campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aec69280dee010356df9a525104fe84a16363bc8ff92d37bf968085b29d129
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dce1f28bcce0fbd961c9380c1922dafb114fad01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089589"
 ---
 # <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger campo
-Rappresenta l'oggetto inizializzato in modalità lazily utilizzato dal debugger per identificare in modo univoco questo generatore.
+Rappresenta l'oggetto inizializzato in modo lazily utilizzato dal debugger per identificare in modo univoco questo generatore.
 
  **Spazio dei nomi:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 

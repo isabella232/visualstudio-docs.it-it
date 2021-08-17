@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af4b0a0278ccd447e19ae5f946551165304d12bdac9e7e024c6a7e92329c532
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a91b3ff44a81b5f991f20ea79bff273b080e4bc0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435699"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104937"
 ---
 # <a name="clickonce-reference"></a>Riferimenti di ClickOnce
 Le pagine seguenti descrivono la struttura dei file XML usati per rappresentare ClickOnce applicazioni.

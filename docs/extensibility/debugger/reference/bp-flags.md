@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1bc858ee22b388d5a782a572f2267f78450c1048d4bb8a7c6718656d4d049b5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f0d79bd6e3c1495f85ed6f8436a781445173810
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104651"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 Fornisce flag facoltativi che possono essere utilizzati per specificare informazioni aggiuntive quando si imposta un punto di interruzione.
@@ -51,7 +51,7 @@ public enum enum_BP_FLAGS {
 Non specifica alcun flag del punto di interruzione.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Specifica che il motore di debug deve eseguire il mapping del punto di interruzione usando la posizione del documento. Ciò è applicabile solo ai punti di interruzione impostati nei file di origine orientati agli script, ad esempio Active Server Pages (ASP).
+Specifica che il motore di debug deve eseguire il mapping del punto di interruzione usando la posizione del documento. Questa opzione è applicabile solo ai punti di interruzione impostati nei file di origine orientati agli script, ad esempio Active Server Pages (ASP).
 
 `BP_FLAG_DONT_STOP`\
 Specifica che il punto di interruzione deve essere elaborato dal motore di debug, ma che in definitiva il motore di debug non deve arrestarsi in questo punto, ovvero non deve essere inviato un oggetto evento [IDebugBreakpointEvent2.](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Questo flag è progettato per essere usato principalmente con punti di traccia.

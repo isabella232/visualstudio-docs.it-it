@@ -1,6 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
-description: Informazioni su come usare lo strumento VSPerfCmd.exe per avviare e arrestare la raccolta dei dati sulle prestazioni. Vengono inoltre fornite informazioni sulle varie opzioni dello strumento VSPerfCmd.
+description: Informazioni su come usare lo VSPerfCmd.exe per avviare e arrestare la raccolta dei dati sulle prestazioni. Informazioni anche sulle varie opzioni dello strumento VSPerfCmd.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,15 +13,16 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a501a3f815d48630afe1a849e91c1fdb52c979fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90345169af67118a9184f91afc3984ca9b915c0ebe104feecf9455523d27bde0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911453"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121353975"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Lo strumento *VSPerfCmd.exe* viene usato per avviare e arrestare la raccolta di dati sulle prestazioni. Viene usata la sintassi seguente:
@@ -35,36 +36,36 @@ VSPerfCmd [/U] [/options]
 |Opzione|Descrizione|
 |------------|-----------------|
 |**U**|L'output di console reindirizzato viene scritto come Unicode. Deve essere la prima opzione specificata.|
-|[Inizio](../profiling/start.md) **:**`mode`|Avvia il servizio di profilatura nella modalità specificata.|
+|[Avviare](../profiling/start.md) **:**`mode`|Avvia il servizio di profilatura nella modalità specificata.|
 |[Output](../profiling/output.md) **:**`filename`|Specifica il nome del file di output. Usare solo con **Start**.|
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Abilita la profilatura tra sessioni di Windows. Usare solo con **Start**, **Attach** o **Launch**.|
 |[Utente](../profiling/user-vsperfcmd.md) **:**[ `domain\` ]`username`|Consente l'accesso al servizio profiler all'account specificato. Usare solo con **Start**.|
 |[WaitStart](../profiling/waitstart.md)[**:** `n` ]|Attende l'inizializzazione del logger di raccolta dei dati. Se si specifica `n`, **VSPerfCmd** attende al massimo `n` secondi. Se non si specifica `n`, **VSPerfCmd** attenderà un tempo illimitato. Ciò semplifica l'uso di **VSPerfCmd** come parte di un processo batch.|
-|[Contatore](../profiling/counter.md) **:**`cfg`|Quando viene usato il metodi di campionamento per la profilatura, specifica un contatore di CPU e il numero di eventi da usare come intervallo di campionamento. È possibile campionare solo un valore di contatore.<br /><br /> Quando viene usato il metodo di profilatura tramite strumentazione, specifica un contatore di CPU da raccogliere a ogni punto di strumentazione. Usare solo con **Start:** `Trace` , **Connetti** o **Launch**.|
+|[Contatore](../profiling/counter.md) **:**`cfg`|Quando viene usato il metodi di campionamento per la profilatura, specifica un contatore di CPU e il numero di eventi da usare come intervallo di campionamento. È possibile campionare solo un valore di contatore.<br /><br /> Quando viene usato il metodo di profilatura tramite strumentazione, specifica un contatore di CPU da raccogliere a ogni punto di strumentazione. Usare solo con **Start:** `Trace` , **Attach** o **Launch.**|
 |[QueryCounters](../profiling/querycounters.md)|Visualizza un elenco di contatori CPU validi per il computer corrente.|
-|[WinCounter](../profiling/wincounter.md) **:** *percorso*|Specifica un evento contatore delle prestazioni di Windows da includere con i dati contrassegnati di profilatura. Usare solo con **Start**.|
-|[Contrassegno automark](../profiling/automark.md) **:** *n*|Specifica l'intervallo di tempo (in millisecondi) tra gli eventi di raccolta di dati dei contatori delle prestazioni di Windows. Usare con **WinCounter**.|
+|[WinCounter:](../profiling/wincounter.md)  *path*|Specifica un evento contatore delle prestazioni di Windows da includere con i dati contrassegnati di profilatura. Usare solo con **Start**.|
+|[AutoMark](../profiling/automark.md) **:** *n*|Specifica l'intervallo di tempo (in millisecondi) tra gli eventi di raccolta di dati dei contatori delle prestazioni di Windows. Usare con **WinCounter**.|
 |[Eventi](../profiling/events-vsperfcmd.md) **:**`option`|Controlla la raccolta degli eventi ETW (Event Tracing for Windows) specificati. I dati ETW vengono raccolti in un file con estensione *itl* diverso dal file di dati di profilatura (con estensione *vsp*).|
 |[Status](../profiling/status.md)|Visualizza lo stato del profiler, informazioni sui processi attualmente in corso di profilatura e gli account che dispongono dell'autorità per controllare il profiler.|
-|[Arresto](../profiling/shutdown.md)[**:** `n` ]|Chiude il file di dati di profilatura e disattiva il profiler.|
+|[Shutdown](../profiling/shutdown.md)[**:** `n` ]|Chiude il file di dati di profilatura e disattiva il profiler.|
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Riprende la raccolta di dati dopo una chiamata a **VSPerfCmdGlobalOff**.|
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|Arresta la raccolta di tutti i dati, ma non termina la sessione di profilatura.|
 |[ProcessOn](../profiling/processon-and-processoff.md) **:**`pid`|Riprende la raccolta di dati per il processo specificato dopo la sospensione della profilatura tramite una chiamata a **VSPerfCmdProcessOff**.|
 |[ProcessOff](../profiling/processon-and-processoff.md) **:**`pid`|Arresta la raccolta di dati per il processo specificato.|
-|[ThreadOn e ThreadOff](../profiling/threadon-and-threadoff.md) **:** *TID*|Riprende la profilatura per il processo specificato dopo la sospensione della profilatura tramite una chiamata a **VSPerfCmdThreadOff**. Usare **ThreadOn** solo durante la profilatura con il metodo di strumentazione.|
-|[ThreadOn e ThreadOff](../profiling/threadon-and-threadoff.md) **:** *TID*|Sospende la profilatura per il thread specificato. Usare **ThreadOff** solo durante la profilatura con il metodo di strumentazione.|
-|[Contrassegno](../profiling/mark.md) **:** _numcontrassegno_[**,**_testocontrassegno_**]**|Inserisce un contrassegno nel file dati di profilatura, con testo facoltativo.|
+|[ThreadOn e ThreadOff:](../profiling/threadon-and-threadoff.md)  *tid*|Riprende la profilatura per il processo specificato dopo la sospensione della profilatura tramite una chiamata a **VSPerfCmdThreadOff**. Usare **ThreadOn** solo durante la profilatura con il metodo di strumentazione.|
+|[ThreadOn e ThreadOff:](../profiling/threadon-and-threadoff.md)  *tid*|Sospende la profilatura per il thread specificato. Usare **ThreadOff** solo durante la profilatura con il metodo di strumentazione.|
+|[Mark:](../profiling/mark.md)  _MarkNum_[**,**_MarkText_**]**|Inserisce un contrassegno nel file dati di profilatura, con testo facoltativo.|
 
 ## <a name="sample-method-options"></a>Opzioni del metodo di campionamento
  Le opzioni seguenti sono disponibili solo quando si usa il metodo di campionamento per la profilatura.
 
 |Opzione|Descrizione|
 |------------|-----------------|
-|[Launch](../profiling/launch.md) **:** *eseguibile*|Avvia l'applicazione specificata e inizia la profilatura.|
-|[Args](../profiling/args.md) **:** *argomenti*|Specifica gli argomenti della riga di comando da passare all'applicazione avviata.|
+|[Launch:](../profiling/launch.md) **Eseguibile** |Avvia l'applicazione specificata e inizia la profilatura.|
+|[Args:](../profiling/args.md)  *Argomenti*|Specifica gli argomenti della riga di comando da passare all'applicazione avviata.|
 |[Console](../profiling/console.md)|Avvia il comando specificato in una nuova finestra del prompt dei comandi.|
-|[Connetti](../profiling/attach.md) **:** *PID*[**,**_PID_]|Avvia la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo.|
-|[Scollega](../profiling/detach.md)[**:**_PID_[,_PID_]]|Arresta la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo. Se non viene specificato alcun processo, la profilatura viene interrotta per tutti i processi.|
+|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Avvia la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo.|
+|[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Arresta la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo. Se non viene specificato alcun processo, la profilatura viene interrotta per tutti i processi.|
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Raccoglie dati sull'allocazione di memoria .NET e sulla durata degli oggetti. Usare solo con l'opzione **VSPerfCmdLaunch**.|
 
 ### <a name="sample-interval-options"></a>Opzioni per l'intervallo di campionamento
@@ -83,7 +84,7 @@ VSPerfCmd [/U] [/options]
 
 |Opzione|Descrizione|
 |------------|-----------------|
-|**Admin: Security**, \<**ALLOW&#124;DENY**> , *right*[ *right*], \<*User*&#124;*Group*>|Consente o nega l'accesso ai servizi di profilatura all'utente o al gruppo specificato.<br /><br /> `Right` può essere:<br /><br /> CrossSession: consente all'utente l'accesso al servizio per la profilatura tra sessioni.<br /><br /> SampleProfiling: consente all'utente di accedere al driver per abilitare la profilatura di campionamento. Usato anche per accedere alle informazioni di transizione del kernel durante la profilatura di traccia.<br /><br /> FullAccess: consente all'utente sia l'accesso CrossSession che l'accesso SampleProfiling.|
+|**Admin:Security**, \<**ALLOW&#124;DENY**> , *Right*[ *Right*], \<*User*&#124;*Group*>|Consente o nega l'accesso ai servizi di profilatura all'utente o al gruppo specificato.<br /><br /> `Right` può essere:<br /><br /> CrossSession: consente all'utente l'accesso al servizio per la profilatura tra sessioni.<br /><br /> SampleProfiling: consente all'utente di accedere al driver per abilitare la profilatura di campionamento. Usato anche per accedere alle informazioni di transizione del kernel durante la profilatura di traccia.<br /><br /> FullAccess: consente all'utente sia l'accesso CrossSession che l'accesso SampleProfiling.|
 |**Admin:Security, List**|Elenca lo stato corrente dei servizi di profilatura e le autorizzazioni utente.|
 |**Amministratore:**\<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Avvia, arresta, installa o disinstalla il componente del servizio di profilatura (Servizio) o il driver del dispositivo in modalità kernel (Driver).|
 |**Amministratore:** \<*Service*&#124;*Driver*> **Avvio automatico**\<**ON**&#124;**OFF**>|Abilita o disabilita l'avvio automatico del servizio di profilatura (Servizio) o del driver del dispositivo in modalità kernel (Driver) dopo un riavvio.|

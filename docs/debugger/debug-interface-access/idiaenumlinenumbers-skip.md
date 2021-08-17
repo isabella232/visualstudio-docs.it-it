@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 564fc9ff55e7162851ad834873fa8f49fd7fb76c34ab146dfe5d77af4f44e69c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d6785472988543d1d439e08801170f94f4744d0d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380460"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074927"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
 Ignora un numero specificato di numeri di riga in una sequenza di enumerazione.
@@ -38,7 +38,7 @@ HRESULT Skip (
 [in] Numero di numeri di riga nella sequenza di enumerazione da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce se non `S_FALSE` sono presenti altri numeri di riga da ignorare.
+ Se ha esito positivo, restituisce ; in caso contrario, restituisce se non sono `S_OK` presenti altri numeri di riga da `S_FALSE` ignorare.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

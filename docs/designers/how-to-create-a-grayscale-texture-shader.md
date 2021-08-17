@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare uno shader con trama in scala di grigi'
-description: Informazioni su come usare la finestra di progettazione shader e il linguaggio Graph shader per creare uno shader con trama in scala di grigi che modifica il valore del colore RGB dell'esempio di trama.
+description: Informazioni su come usare La finestra di progettazione shader e Il linguaggio Graph shader per creare uno shader con trama in scala di grigi che modifica il valore del colore RGB dell'esempio di trama.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 6effe4d7cd54c89dc95999b0e8ac61a52d9010586606cc61c399275029fac989
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 99eaab8bc8d248ae36d8ec6c2b475b2e09d4c2ca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361295"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104846"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procedura: Creare uno shader con trama in scala di grigi
 

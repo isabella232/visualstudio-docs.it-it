@@ -1,5 +1,5 @@
 ---
-description: Imposta il valore di una proprietà da una determinata stringa.
+description: Imposta il valore di una proprietà da una stringa specificata.
 title: IDebugProperty2::SetValueAsString | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121449014"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-Imposta il valore di una proprietà da una determinata stringa.
+Imposta il valore di una proprietà da una stringa specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,14 +53,14 @@ int SetValueAsString (
 [in] Radice da utilizzare nell'interpretazione di qualsiasi informazione numerica. Può essere 0 per tentare di determinare automaticamente la radice.
 
 `dwTimeout`\
-[in] Specifica il tempo massimo di attesa, in millisecondi, prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
+[in] Specifica il tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere a tempo indeterminato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore. Nella tabella seguente vengono illustrati altri valori possibili.
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Non è stato possibile convertire la stringa in un valore della proprietà oppure non è stato possibile impostare il valore della proprietà.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Non è stato possibile convertire la stringa in un valore di proprietà oppure non è stato possibile impostarlo.|
 |`E_SETVALUE_VALUE_IS_READONLY`|la proprietà è di sola lettura.|
 
 ## <a name="see-also"></a>Vedi anche

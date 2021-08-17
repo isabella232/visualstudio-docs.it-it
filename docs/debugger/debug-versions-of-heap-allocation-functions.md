@@ -1,6 +1,6 @@
 ---
 title: Versioni di debug delle funzioni di allocazione heap | Microsoft Docs
-description: Usare le versioni di debug delle funzioni di allocazione heap nella libreria di runtime del linguaggio C. Queste funzioni hanno gli stessi nomi delle versioni di rilascio _dbg aggiunte.
+description: Usare le versioni di debug delle funzioni di allocazione heap nella libreria di runtime del linguaggio C. Queste funzioni hanno gli stessi nomi delle versioni di rilascio con _dbg aggiunte.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a5ccc1e0a45c924c00027e2b9032151409a8b39db7b80bcc50ae25286b05cbe4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 47a704d69fb0a3487deaf14962a65d0b04fe00ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121344125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105388"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versioni di debug di funzioni di allocazione heap
 La libreria di runtime del linguaggio C contiene speciali versioni di debug delle funzioni di allocazione heap. Queste funzioni presentano lo stesso nome delle corrispondenti versioni di rilascio, con l'unica differenza del suffisso _dbg. Questo argomento illustra le differenze tra la versione di rilascio di una funzione CRT e la versione _dbg, utilizzando `malloc` e `_malloc_dbg` come esempi.
@@ -44,7 +44,7 @@ La libreria di runtime del linguaggio C contiene speciali versioni di debug dell
 
 - Memorizzazione del file sorgente e del numero di riga nel punto in cui ha avuto luogo la richiesta di allocazione.
 
-  Se non si desidera convertire le chiamate a , è possibile ottenere le informazioni sul file di origine definendo _CRTDBG_MAP_ALLOC , che determina il mapping diretto di tutte le chiamate a da parte del `malloc` `_malloc_dbg` preprocessore [](/cpp/c-runtime-library/crtdbg-map-alloc)anziché basarsi su un wrapper intorno `malloc` a `_malloc_dbg` `malloc` .
+  Se non si desidera convertire le chiamate a , è possibile ottenere le informazioni sul file di origine definendo _CRTDBG_MAP_ALLOC , che determina il mapping diretto di tutte le chiamate a da parte del `malloc` `_malloc_dbg` preprocessore [](/cpp/c-runtime-library/crtdbg-map-alloc)anziché basarsi su un wrapper intorno a `malloc` `_malloc_dbg` `malloc` .
 
   Per registrare i tipi separati di allocazioni in blocchi client, è necessario chiamare `_malloc_dbg` direttamente e impostare il parametro `blockType` su `_CLIENT_BLOCK`.
 

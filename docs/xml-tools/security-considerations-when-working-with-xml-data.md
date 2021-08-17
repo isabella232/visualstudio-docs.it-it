@@ -1,6 +1,6 @@
 ---
 title: Considerazioni sulla sicurezza durante l'utilizzo di dati XML
-description: Informazioni sulle considerazioni relative alla sicurezza quando si utilizzano dati XML nell'editor XML o nel debugger XSLT.
+description: Informazioni sulle considerazioni sulla sicurezza quando si lavora con i dati XML nell'editor XML o nel debugger XSLT.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,30 +8,31 @@ ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb4a293e4879838d53093b41cacf004b57de7e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cddb1ecab1a2600d347aebeb245f2faf693a7db5ae7f2aa2467acf3ae69f1ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968606"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440097"
 ---
-# <a name="security-considerations-when-working-with-xml-data"></a>Considerazioni sulla sicurezza quando si utilizzano dati XML
+# <a name="security-considerations-when-working-with-xml-data"></a>Considerazioni sulla sicurezza quando si lavora con i dati XML
 
 In questo argomento vengono illustrati i problemi di sicurezza che è necessario conoscere quando si utilizza l'editor XML o il debugger XSLT.
 
 ## <a name="xml-editor"></a>Editor XML
 
-L'editor XML è basato sull'editor di testo di Visual Studio. e si basa sulle classi <xref:System.Xml> e <xref:System.Xml.Xsl> per gestire gran parte dei processi XML.
+L'editor XML si basa sull'Visual Studio editor di testo. e si basa sulle classi <xref:System.Xml> e <xref:System.Xml.Xsl> per gestire gran parte dei processi XML.
 
-- Le trasformazioni XSLT vengono eseguite in un nuovo dominio applicazione. Le trasformazioni XSLT sono *create mediante sandbox*. ovvero, i criteri di sicurezza per l'accesso di codice del computer vengono utilizzati per determinare le autorizzazioni limitate in base alla posizione in cui si trova il foglio di stile XSLT. Ad esempio, per i fogli di stile provenienti da un'area Internet vengono applicate autorizzazioni con la limitazione massima, mentre per i fogli di stile copiati sull'unità disco rigido del computer vengono eseguiti con un livello di Attendibilità totale.
+- Le trasformazioni XSLT vengono eseguite in un nuovo dominio applicazione. Le trasformazioni XSLT sono in *modalità sandbox.* in altri casi, i criteri di sicurezza dall'accesso di codice del computer vengono usati per determinare le autorizzazioni limitate in base alla posizione del foglio di stile XSLT. Ad esempio, per i fogli di stile provenienti da un'area Internet vengono applicate autorizzazioni con la limitazione massima, mentre per i fogli di stile copiati sull'unità disco rigido del computer vengono eseguiti con un livello di Attendibilità totale.
 
 - La classe <xref:System.Xml.Xsl.XslCompiledTransform> viene usata per compilare il codice XSLT in Microsoft Intermediate Language per ottenere prestazioni più veloci durante l'esecuzione.
 
-- Gli schemi che puntano a un percorso esterno nel file di catalogo vengono scaricati automaticamente al primo caricamento dell'editor XML. La classe <xref:System.Xml.Schema.XmlSchemaSet> è usata per compilare gli schemi. Il file di catalogo fornito con l'editor XML non include collegamenti ad alcuno schema esterno. L'utente deve aggiungere in modo esplicito un riferimento allo schema esterno prima che l'editor XML scarichi il file di schema. Il download HTTP può essere disabilitato tramite la pagina **Opzioni strumenti varie** per l'editor XML.
+- Gli schemi che puntano a un percorso esterno nel file di catalogo vengono scaricati automaticamente al primo caricamento dell'editor XML. La classe <xref:System.Xml.Schema.XmlSchemaSet> è usata per compilare gli schemi. Il file di catalogo fornito con l'editor XML non include collegamenti ad schemi esterni. L'utente deve aggiungere in modo esplicito un riferimento allo schema esterno prima che l'editor XML scarica il file di schema. Il download HTTP può essere disabilitato tramite la pagina Opzioni varie **degli** strumenti per l'editor XML.
 
-- L'editor XML utilizza le <xref:System.Net> classi per scaricare gli schemi
+- L'editor XML usa <xref:System.Net> le classi per scaricare gli schemi
 
 ## <a name="xslt-debugger"></a>debugger XSLT
 

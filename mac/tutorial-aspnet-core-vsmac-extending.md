@@ -44,7 +44,7 @@ Si apprenderà come aggiungere contenitori Docker all'applicazione eShopOnWeb e 
 
 ## <a name="step-4-deploying-to-azure-app-services"></a>Passaggio 4: Distribuzione in app Azure Services
 
-Si apprenderà come distribuire l'applicazione eShopOnWeb [in app Azure Services.](https://azure.microsoft.com/services/app-service/)
+Si apprenderà come distribuire l'applicazione eShopOnWeb [app Azure Services](https://azure.microsoft.com/services/app-service/).
 
 [Procedura dettagliata](https://github.com/dotnet-architecture/eShopOnWeb/wiki/01b.-Deploying-to-Azure-App-Service-from-Visual-Studio-for-Mac)
 

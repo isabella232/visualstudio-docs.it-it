@@ -1,5 +1,5 @@
 ---
-description: Reimposta l'inizio di una sequenza di enumerazione di origini inserite.
+description: Reimposta una sequenza di enumerazione delle origini inserite all'inizio.
 title: IDiaEnumInjectedSources::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,14 +11,15 @@ ms.assetid: c28e8820-1c67-4658-821d-b5879f90cce5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2676eafff75677804c39e7d1058b6c4274e1ab9a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c5dafd06c93866f59a125da0503823a6ef6a1b46
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159356"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074930"
 ---
 # <a name="idiaenuminjectedsourcesreset"></a>IDiaEnumInjectedSources::Reset
 Riporta all'inizio la sequenza di enumerazione.

@@ -1,6 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
-description: Informazioni sul modo in cui il metodo SuspendProfile incrementa il contatore Suspend/Resume per il livello di profilatura specificato.
+description: Informazioni su come il metodo SuspendProfile incrementa il contatore Suspend/Resume per il livello di profilatura specificato.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be94fafb1e41390236977a7a06b59cf7ac71a84
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05b3ed78dc22a713c5d567e9b29f8616ceee63c2366e170d008d6e7d0a9716f7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868205"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121441696"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 Il metodo `SuspendProfile` incrementa il contatore Suspend/Resume per il livello di profilatura specificato.
@@ -69,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="function-information"></a>Informazioni sulla funzione
  *Intestazione: dichiarata in VSPerf.h*
 
- Libreria di importazione: *VSPerf. lib*
+ Libreria di importazione: *VSPerf.lib*
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra il metodo SuspendProfile. Questo esempio presuppone l'esecuzione di una chiamata precedente a StartProfile per il processo o thread identificato da [PROFILE_CURRENTID](../profiling/profile-currentid.md).
@@ -107,4 +108,4 @@ void ExerciseSuspendProfile()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

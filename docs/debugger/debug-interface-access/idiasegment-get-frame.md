@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4383f8879b1746062f9b9d26c2f169d90037d93102eef5e1c8a33028db6d33e0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ab6ee447fb26e3155bc0129617e28f336d314bb1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392024"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044398"
 ---
 # <a name="idiasegmentget_frame"></a>IDiaSegment::get_frame
 Recupera il numero di segmento.

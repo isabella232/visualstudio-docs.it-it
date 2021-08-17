@@ -1,5 +1,5 @@
 ---
-description: Ottiene l'indirizzo di debug che segue un determinato indirizzo di debug in un metodo .
+description: Ottiene l'indirizzo di debug che segue un indirizzo di debug specificato in un metodo.
 title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35016b6b332e1ed4fe81ca784242f1081cb885d3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9b1e8e1d954fddae1887e9a2aa488f5ecacbe503547c3b026d4da0294f4aba6d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029632"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448767"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Ottiene l'indirizzo di debug che segue un determinato indirizzo di debug in un metodo .
+Ottiene l'indirizzo di debug che segue un indirizzo di debug specificato in un metodo.
 
 ## <a name="syntax"></a>Sintassi
 

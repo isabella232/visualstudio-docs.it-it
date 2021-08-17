@@ -41,7 +41,7 @@ Attività iniziali
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio supporta Python versione 2.7, nonché dalla versione 3.5 alla 3.7. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare. Il supporto per Python versione 3.8 è ancora in fase di sviluppo. Dettagli specifici sul supporto sono visibili in questo problema di rilevamento [in GitHub](https://github.com/microsoft/PTVS/issues/5822).
+> Visual Studio supporta Python versione 2.7, nonché dalla versione 3.5 alla 3.7. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare. Il supporto per Python versione 3.8 è ancora in fase di [sviluppo.](https://github.com/microsoft/PTVS/issues/5822)Dettagli specifici sul supporto sono visibili in questo problema di rilevamento GitHub .
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Supporto di più interpreti
@@ -64,7 +64,7 @@ Per altre informazioni:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Modifica avanzata, IntelliSense e comprensione del codice
 
-Visual Studio mette a disposizione un editor Python di prima classe, con funzionalità di colorazione della sintassi, completamento automatico in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, refactoring, rilevamento di errori con Lint e suggerimenti relativi al tipo. Visual Studio offre anche funzionalità univoche come visualizzazione classi, **Vai a definizione,** Trova tutti **i riferimenti** e frammenti di codice. L'integrazione diretta [finestra interattiva](#interactive-window) consente di sviluppare rapidamente codice Python già salvato in un file.
+Visual Studio mette a disposizione un editor Python di prima classe, con funzionalità di colorazione della sintassi, completamento automatico in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, refactoring, rilevamento di errori con Lint e suggerimenti relativi al tipo. Visual Studio offre anche funzionalità univoche come visualizzazione classi, **Vai a definizione,** Trova tutti **i** riferimenti e frammenti di codice. L'integrazione diretta [finestra interattiva](#interactive-window) consente di sviluppare rapidamente codice Python già salvato in un file.
 
 ![Completamento di codice Python in Visual Studio](media/code-editing-completions-simple.png)
 
@@ -113,7 +113,7 @@ Per altre informazioni:
 - Documenti: [Modelli di progetto Python](managing-python-projects-in-visual-studio.md#project-templates)
 - Documenti: [Usare C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
 - Documenti generali sulle funzionalità di Visual Studio: [Modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Documentazione generale Visual Studio funzionalità: [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Documentazione Visual Studio funzionalità generali: [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Debug con funzionalità complete
 
@@ -162,7 +162,7 @@ Per altre informazioni, vedere [Azure SDK per Python](/azure/python/) e [Libreri
 
 ## <a name="questions-and-answers"></a>Domande e risposte
 
-**D. Il supporto python è disponibile con Visual Studio per Mac?**
+**D. Il supporto di Python è disponibile con Visual Studio per Mac?**
 
 A. Non in questo momento, ma è possibile votare a favore della richiesta nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentazione di [Visual Studio per Mac](/visualstudio/mac/) identifica gli attuali tipi di sviluppo che supporta. Nel frattempo, Visual Studio Code su Windows, Mac e Linux [funziona bene con Python mediante le estensioni disponibili](https://code.visualstudio.com/docs/languages/python).
 
@@ -172,7 +172,7 @@ A. La proposta migliore in questo campo è il [progetto Qt](https://www.qt.io/qt
 
 **D. Un progetto Python può produrre un eseguibile autonomo?**
 
-A. Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, la community di Python offre diversi modi di creare file eseguibili, come descritto in [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython supporta anche l'incorporamento all'interno di un'applicazione nativa, come descritto nel post di blog [Using CPython's embeddable zip file](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
+A. Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, la community di Python offre diversi modi di creare file eseguibili, come descritto in [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython supporta anche l'incorporamento all'interno di un'applicazione nativa, come descritto nel post di blog [Using CPython's embeddable zip file](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)(Uso del file ZIP incorporabile di CPython).
 
 ::: moniker range="<=vs-2017"
 
@@ -316,7 +316,7 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 
 1. Richiede Windows 8 o versione successiva. La finestra **Collega a processo** non è disponibile in Visual Studio 2013 Express per il Web, ma è comunque possibile eseguire il debug remoto del sito Web di Azure usando il comando **Collega debugger (Python)** in **Esplora server**. Il debug remoto richiede [Azure SDK per .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) o versione successiva.
 
-1. Richiede Windows 8 o versione successiva. **Il comando Collega debugger (Python)** in **Esplora server** [richiede Azure SDK per .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) versione successiva.
+1. Richiede Windows 8 o versione successiva. **Il comando Collega debugger (Python)** in **Esplora server** richiede [Azure SDK per .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) versione successiva.
 
 1. Richiede Windows 8 o versione successiva.
 ::: moniker-end

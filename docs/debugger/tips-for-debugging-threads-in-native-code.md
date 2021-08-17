@@ -1,6 +1,6 @@
 ---
-title: Suggerimenti per il debug di thread in code | Microsoft Docs
-description: Leggere un elenco di suggerimenti per il debug dei thread nel codice nativo se si esegue il debug di app multithreading in Visual Studio.
+title: Suggerimenti per il debug di thread in codice nativo | Microsoft Docs
+description: Leggere un elenco di suggerimenti per il debug di thread nel codice nativo se si esegue il debug di app multithreading in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2dffe0a53383343c6990b2b19eeead2bb200893e1c97662d8afb4cb44c3812f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c621d35554095eb676a478ed78887fe41c4fed31
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121310888"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090291"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Suggerimenti per il debug dei thread in codice nativo
 Di seguito sono riportati alcuni suggerimenti che è possibile utilizzare durante il debug dei thread in codice nativo:

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ddae675861d3f276f47fc4bd36741b992272c40a38544652419bea7686a1ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ee745674ebd5292c1c3d6b4a314ecd6684a55368
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392557"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044744"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Recupera un numero specificato di flussi di debug nella sequenza di enumerazione.

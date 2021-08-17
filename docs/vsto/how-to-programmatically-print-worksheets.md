@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Stampare fogli di lavoro a livello di codice'
-description: Informazioni su come usare le Visual Studio per stampare a livello di codice qualsiasi foglio di lavoro in una cartella Microsoft Excel lavoro.
+description: Informazioni su come usare Visual Studio per stampare a livello di codice qualsiasi foglio di lavoro in una Microsoft Excel cartella di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -69,7 +69,7 @@ ms.locfileid: "121440734"
 ## <a name="see-also"></a>Vedi anche
 
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Controllare l'ortografia nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
-- [Elemento host Foglio di lavoro](../vsto/worksheet-host-item.md)
-- [Accesso globale agli oggetti nei Office progetto](../vsto/global-access-to-objects-in-office-projects.md)
-- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
+- [Procedura: Eseguire il controllo ortografico nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Elemento host foglio di lavoro](../vsto/worksheet-host-item.md)
+- [Accesso globale agli oggetti nei progetti Office globali](../vsto/global-access-to-objects-in-office-projects.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

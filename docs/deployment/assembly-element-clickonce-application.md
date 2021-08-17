@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;elemento assembly (applicazione ClickOnce) | Microsoft Docs'
-description: L'elemento assembly è l'elemento radice ed è obbligatorio nell'applicazione ClickOnce. Il primo elemento contenuto deve essere un elemento assemblyIdentity.
+title: '&lt;Elemento assembly &gt; (ClickOnce Application) | Microsoft Docs'
+description: L'elemento assembly è l'elemento radice ed è obbligatorio in ClickOnce Application. Il primo elemento contenuto deve essere un elemento assemblyIdentity.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,16 +16,17 @@ ms.assetid: 51410569-10f9-4c0a-96b5-d39185edbefc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: f86ed604ae6b893f02da1d4f65a816bd05f34f94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc8fb424c3a6232f27737521604247cf55ebc20e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837788"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090060"
 ---
-# <a name="ltassemblygt-element-clickonce-application"></a>&lt;&gt;elemento assembly (applicazione ClickOnce)
+# <a name="ltassemblygt-element-clickonce-application"></a>&lt;Elemento assembly &gt; (ClickOnce Application)
 Elemento di primo livello per il manifesto dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
@@ -38,7 +39,7 @@ Elemento di primo livello per il manifesto dell'applicazione.
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- L' `assembly` elemento è l'elemento radice ed è obbligatorio. Il primo elemento contenuto deve essere un `assemblyIdentity` elemento. Gli elementi del manifesto devono trovarsi in uno degli spazi dei nomi seguenti:
+ `assembly`L'elemento è l'elemento radice ed è obbligatorio. Il primo elemento contenuto deve essere un `assemblyIdentity` elemento . Gli elementi manifesto devono essere in uno degli spazi dei nomi seguenti:
 
  `urn:schemas-microsoft-com:asm.v1`
 
@@ -46,16 +47,16 @@ Elemento di primo livello per il manifesto dell'applicazione.
 
  `http://www.w3.org/2000/09/xmldsig#`
 
- Gli elementi figlio dell'assembly devono essere presenti anche in questi spazi dei nomi, per ereditarietà o per contrassegno.
+ Anche gli elementi figlio dell'assembly devono essere presenti in questi spazi dei nomi, tramite ereditarietà o mediante l'assegnazione di tag.
 
  L'elemento `assembly` presenta l'attributo seguente:
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`manifestVersion`|Obbligatorio. L' `manifestVersion` attributo deve essere impostato su `1.0` .|
+|`manifestVersion`|Obbligatorio. `manifestVersion`L'attributo deve essere impostato su `1.0` .|
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice seguente viene illustrato un `assembly` elemento in un manifesto dell'applicazione per un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione. Questo esempio di codice fa parte di un esempio più ampio fornito nel [manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md).
+ Nell'esempio di codice seguente viene illustrato un `assembly` elemento in un manifesto dell'applicazione per un'applicazione. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Questo esempio di codice fa parte di un esempio più ampio fornito in ClickOnce [dell'applicazione](../deployment/clickonce-application-manifest.md).
 
 ```xml
 <asmv1:assembly
@@ -72,5 +73,5 @@ Elemento di primo livello per il manifesto dell'applicazione.
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
-- [\<assembly> elemento](../deployment/assembly-element-clickonce-deployment.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)
+- [\<assembly> Elemento](../deployment/assembly-element-clickonce-deployment.md)

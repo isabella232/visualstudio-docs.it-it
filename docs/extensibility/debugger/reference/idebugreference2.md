@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e2b1ee845f45591a892d14caa0d126e981fb4b2ce71e70524580370ce4ce2c1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cb94ceba197e0006dee98392df01f836c45692c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029749"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Questa interfaccia rappresenta un riferimento a una stack frame o a un'altra proprietà.

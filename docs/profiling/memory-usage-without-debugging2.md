@@ -46,9 +46,9 @@ Lo strumento Utilizzo memoria può essere [eseguito con o senza il debugger](../
 
 ### <a name="monitor-memory-use"></a>Monitorare l'uso della memoria
 
-Quando si avvia una sessione di diagnostica, l'app viene avviata e la finestra Strumenti di diagnostica visualizza un grafico della sequenza temporale dell'uso della memoria dell'app. 
+Quando si avvia una sessione di diagnostica, l'app viene avviata **e** la finestra Strumenti di diagnostica visualizza un grafico della sequenza temporale dell'uso della memoria dell'app.
 
-![Screenshot della finestra Strumenti di diagnostica nel Visual Studio Profiler prestazioni che mostra un grafico della sequenza temporale dell'uso della memoria dell'app.](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![Screenshot della finestra Strumenti di diagnostica nella finestra Visual Studio Profiler prestazioni che mostra un grafico della sequenza temporale dell'uso della memoria dell'app.](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
 Il grafico della sequenza temporale mostra le fluttuazioni di memoria durante l'esecuzione dell'app. Eventuali picchi nel grafico in genere indicano che alcune stringhe di codice stanno raccogliendo o creando dati, per poi rimuoverli al termine del processo. Picchi significativi indicano aree che potrebbero essere ottimizzate. Più preoccupante sarebbe un aumento del consumo di memoria che non torna ai valori normali, perché può indicare un uso della memoria non efficiente o addirittura una perdita di memoria.
 
@@ -145,7 +145,7 @@ L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferim
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**.
 
-![Albero Percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Albero Percorsi della radice per i tipi")
+![Albero Percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Percorsi dell'albero radice per i tipi")
 
 ### <a name="referenced-types-or-referenced-objects-tree-snapshot-details-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report dettagli dello snapshot)
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
@@ -195,13 +195,13 @@ L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferim
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**. La differenza di numero rispetto allo snapshot precedente è indicata nella colonna **Diff. conteggio riferimenti**.
 
- ![Albero Percorsi della radice in un report delle diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero Percorsi della radice in un report delle diff")
+ ![Albero Percorsi della radice in un report delle diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero Percorsi alla radice in un report diff")
 
 ### <a name="referenced-types-or-referenced-objects-tree-snapshot-diff-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report differenze degli snapshot)
 
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
-![Tipi a cui si fa riferimento in un report delle diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report delle diff")
+![Tipi a cui si fa riferimento in un report delle diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report diff")
 
 Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza**, **Dimensione (byte)**, **Dimensione inclusiva (byte)** e **Modulo**.
 

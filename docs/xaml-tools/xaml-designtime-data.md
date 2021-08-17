@@ -8,23 +8,23 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 3b1c2da762be4f1ee9d7b903f9098e82857eec5e08cd4f7fa14315f6e7b54860
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3867c12dddd57403bc744711a75f31866f0aec90
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267104"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045619"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati della fase di progettazione con finestra di progettazione XAML in Visual Studio
 
-Alcuni layout sono difficili da visualizzare senza dati. In questo documento verrà esaminato uno degli approcci che gli sviluppatori che lavorano su progetti desktop possono usare per mocking dei dati nella finestra di progettazione XAML. Questo approccio viene eseguito usando lo spazio dei nomi "d:" ignorabile esistente. Con questo approccio è possibile aggiungere rapidamente dati in fase di progettazione alle pagine o ai controlli senza la necessità di creare un ViewModel fittizio completo o semplicemente testare in che modo una modifica di proprietà potrebbe influire sull'applicazione senza doversi preoccupare che queste modifiche influiranno sulle build di rilascio. Tutti i dati d: vengono usati solo dal finestra di progettazione XAML e nell'applicazione non vengono compilati valori di spazio dei nomi ignorabili.
+Alcuni layout sono difficili da visualizzare senza dati. In questo documento verrà esaminato uno degli approcci che gli sviluppatori che lavorano su progetti desktop possono usare per mocking dei dati nella finestra di progettazione XAML. Questo approccio viene eseguito usando lo spazio dei nomi "d:" ignorabile esistente. Con questo approccio è possibile aggiungere rapidamente dati in fase di progettazione alle pagine o ai controlli senza la necessità di creare un ViewModel fittizio completo o semplicemente testare in che modo una modifica di proprietà potrebbe influire sull'applicazione senza doversi preoccupare che queste modifiche influiranno sulle build di rilascio. Tutti i dati d: vengono usati solo dal finestra di progettazione XAML e nell'applicazione non vengono compilati valori dello spazio dei nomi ignorabili.
 
 > [!NOTE]
 > Se si usa Xamarin.Forms, vedere Dati della fase di progettazione [di Xamarin.Forms](/xamarin/xamarin-forms/xaml/xaml-previewer/design-time-data)
 
 ## <a name="design-time-data-basics"></a>Nozioni di base sui dati della fase di progettazione
 
-I dati in fase di progettazione sono dati fittizi impostati per semplificare la visualizzazione dei controlli nell'finestra di progettazione XAML. Per iniziare, aggiungere le righe di codice seguenti all'intestazione del documento XAML, se non sono già presenti:
+I dati in fase di progettazione sono dati fittizi impostati per semplificare la visualizzazione dei controlli nel finestra di progettazione XAML. Per iniziare, aggiungere le righe di codice seguenti all'intestazione del documento XAML, se non sono già presenti:
 
 ```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -67,7 +67,7 @@ In questo esempio il pulsante viene visualizzato solo in fase di progettazione. 
 
 ## <a name="design-time-data-for-listviews"></a>Dati in fase di progettazione per ListView
 
-ListViews è un modo comune per visualizzare i dati nell'app desktop. Tuttavia, sono difficili da visualizzare senza dati. È possibile usare questa funzionalità per creare un elemento ItemSource o Items dei dati inline della fase di progettazione. L finestra di progettazione XAML mostra il valore presente in tale matrice in ListView in fase di progettazione.
+ListViews è un modo comune per visualizzare i dati nell'app desktop. Tuttavia, sono difficili da visualizzare senza dati. È possibile usare questa funzionalità per creare un elemento ItemSource o Items dei dati inline della fase di progettazione. Il finestra di progettazione XAML visualizza il valore presente in tale matrice in ListView in fase di progettazione.
 
 ### <a name="wpf-net-core-example"></a>Esempio di WPF .NET Core
 Per usare il tipo system:String, assicurati di includere `xmlns:system="clr-namespace:System;assembly=mscorlib` nell'intestazione XAML.

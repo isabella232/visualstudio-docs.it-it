@@ -1,5 +1,5 @@
 ---
-title: ActivityDesigner Progettazione flussi di lavoro-Delay
+title: Progettazione flussi di lavoro - ActivityDesigner Delay
 description: Informazioni sulle attività Delay e su come usare l'ActivityDesigner Delay per creare e configurare un'attività Delay.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,18 +10,19 @@ ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b661dddf6c07bca34e5ea044fd1338da68f4e19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d59f0db70804049a0392350942000d4331715021fb30f7ab43183d7326d02f4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894309"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440539"
 ---
 # <a name="delay-activity-designer"></a>ActivityDesigner Delay
 
-La finestra di progettazione dell'attività **delay** viene utilizzata per creare e configurare un' <xref:System.Activities.Statements.Delay> attività.
+L'ActivityDesigner **Delay** viene usato per creare e configurare <xref:System.Activities.Statements.Delay> un'attività.
 
 ## <a name="the-delay-activity"></a>Attività Delay
 
@@ -29,17 +30,17 @@ L'attività <xref:System.Activities.Statements.Delay> ritarda l'esecuzione di un
 
 ### <a name="use-the-delay-activity-designer"></a>Usare l'ActivityDesigner Delay
 
-L'ActivityDesigner **delay** è disponibile nella categoria **primitive** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** della progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
+L'ActivityDesigner **Delay** è disponibile nella categoria **Primitive** della Casella degli strumenti **,** a cui si accede facendo clic sulla scheda **Casella** degli strumenti del Progettazione flussi di lavoro. In alternativa, scegliere **Casella degli** strumenti **dal** menu Visualizza o premere **CTRL** + **ALT** + **X.**
 
-È possibile trascinare l'ActivityDesigner **delay** dalla **casella degli strumenti** e rilasciarlo nell'area Progettazione flussi di lavoro quando vengono in genere posizionate le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Se si elimina l'ActivityDesigner, viene creata un' <xref:System.Activities.Statements.Delay> attività con il valore predefinito <xref:System.Activities.Activity.DisplayName%2A> delay. Il <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner **delay** o nella casella **DisplayName** della griglia delle proprietà.
+L'ActivityDesigner **Delay** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che in genere vengono inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione dell'ActivityDesigner crea <xref:System.Activities.Statements.Delay> un'attività con <xref:System.Activities.Activity.DisplayName%2A> l'impostazione predefinita Delay. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione dell'ActivityDesigner **Delay** o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-delay-properties"></a>Proprietà Delay
 
-Nella tabella seguente sono illustrate le <xref:System.Activities.Statements.Delay> proprietà e viene descritto come vengono utilizzate nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate nell'area di Progettazione flussi di lavoro.
+La tabella seguente illustra le <xref:System.Activities.Statements.Delay> proprietà e ne descrive l'uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate nella Progettazione flussi di lavoro proprietà.
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.Delay>. Il valore predefinito è Delay. Sebbene il <xref:System.Activities.Activity.DisplayName%2A> valore non sia strettamente obbligatorio, è consigliabile utilizzarne uno.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.Delay>. Il valore predefinito è Delay. Anche se <xref:System.Activities.Activity.DisplayName%2A> il valore non è strettamente necessario, è consigliabile usarne uno.|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|Vero|Durata del ritardo del flusso di lavoro. Questa proprietà viene impostata nella griglia delle proprietà. Per specificare tale durata, digitare un valore <xref:System.TimeSpan> letterale nel formato 00:00:00 o un'espressione Visual Basic.|
 
 ## <a name="see-also"></a>Vedi anche

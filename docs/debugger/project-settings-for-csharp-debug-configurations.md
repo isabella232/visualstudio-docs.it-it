@@ -1,6 +1,6 @@
 ---
 title: Project Impostazioni per una configurazione di debug C# | Microsoft Docs
-description: Informazioni su come modificare le impostazioni di progetto per una configurazione di debug C# in Visual Studio, usando la scheda Debug e la scheda Compilazione delle pagine delle proprietà del progetto.
+description: Informazioni su come modificare le impostazioni del progetto per una configurazione di debug C# in Visual Studio, usando la scheda Debug e la scheda Compila delle pagine delle proprietà del progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: reference
@@ -23,18 +23,18 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c6bbbe67de734fec2e90f33195732b7e69da40b71727602cbfbaf0d76b554c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 002d95684ffa7167ff0ff5bb10158f3e23622314
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121310972"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105106"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Impostazioni di progetto per configurazioni di debug C#
 
-È possibile modificare le impostazioni di debug del progetto C# nella [scheda Debug e](#debug-tab) nella scheda [Compilazione](#build-tab) delle pagine delle proprietà del progetto.
+È possibile modificare le impostazioni di debug del progetto C# nella [scheda Debug](#debug-tab) e nella [scheda Compilazione](#build-tab) delle pagine delle proprietà del progetto.
 
-Per aprire le pagine delle proprietà, selezionare il progetto  in **Esplora soluzioni** e quindi selezionare l'icona Proprietà oppure fare clic con il pulsante destro del mouse sul progetto e **scegliere Proprietà**.
+Per aprire le pagine delle proprietà, selezionare il progetto  in **Esplora soluzioni** e quindi selezionare l'icona Proprietà oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà**.
 
 Per altre informazioni, vedere [Configurazioni di debug e rilascio](how-to-set-debug-and-release-configurations.md).
 
@@ -45,11 +45,11 @@ Per altre informazioni, vedere [Configurazioni di debug e rilascio](how-to-set-d
 
 |Impostazione|Descrizione|
 |-------------------------------------| - |
-| **Configuration** | Imposta la modalità per la compilazione dell'app. Selezionare **Active (Debug) (Attivo (Debug)**, **Debug**, **Release (Rilascio)** o All Configurations (Tutte le **configurazioni)** dall'elenco a discesa. |
-| **Azione di avvio** | Specifica l'azione quando si seleziona **Avvia** in una configurazione di debug.<br />- **Avvia progetto** è l'azione predefinita e avvia il progetto di avvio per il debug. Per altre informazioni, vedere [Scegliere il progetto di avvio.](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100))<br />- **Avvia programma esterno** avvia e si collega a un'app che non fa parte di un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto. Per altre informazioni, vedere [Connettersi a processi in esecuzione con il debugger.](attach-to-running-processes-with-the-visual-studio-debugger.md)<br />- **Avvia browser con URL consente** di eseguire il debug di un'app Web. |
-| **Opzioni di avvio**  >  **Argomenti della riga di comando** | Specifica gli argomenti della riga di comando per l'app di cui è in corso il debug. Il nome del comando è il nome dell'app specificato in **Avviare il programma esterno.** |
-| **Opzioni di avvio**  >  **Directory di lavoro** | Specifica la directory di lavoro dell'app di cui è in corso il debug. In C# la directory di lavoro è *\bin\debug* per impostazione predefinita.
-| **Opzioni di avvio**  >  **Usa computer remoto**|Per il debug remoto, selezionare questa opzione e immettere il nome della destinazione di debug remoto o il nome del [server Msvsmon](../debugger/remote-debugging.md). <br />Il percorso di un'app nel computer remoto viene specificato dalla **proprietà Percorso** di output nella **scheda** Compila. Il percorso deve essere una directory condivisibile nel computer remoto.
+| **Configuration** | Imposta la modalità per la compilazione dell'app. Selezionare **Attivo (Debug),** **Debug,** **Rilascio** o Tutte **le configurazioni** nell'elenco a discesa. |
+| **Avviare l'azione** | Specifica l'azione quando si seleziona **Avvia** in una configurazione di debug.<br />- **Avvia progetto** è l'azione predefinita e avvia il progetto di avvio per il debug. Per altre informazioni, vedere [Scegliere il progetto di avvio.](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100))<br />- **Avvia programma esterno** avvia e si collega a un'app che non fa parte di un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto. Per altre informazioni, vedere [Connettersi ai processi in esecuzione con il debugger](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Avvia browser con URL consente** di eseguire il debug di un'app Web. |
+| **Opzioni di avvio**  >  **Argomenti della riga di comando** | Specifica gli argomenti della riga di comando per l'app di cui viene eseguito il debug. Il nome del comando è il nome dell'app specificato in **Avvia programma esterno.** |
+| **Opzioni di avvio**  >  **Directory di lavoro** | Specifica la directory di lavoro dell'app in fase di debug. In C# la directory di lavoro è *\bin\debug* per impostazione predefinita.
+| **Opzioni di avvio**  >  **Usare un computer remoto**|Per il debug remoto, selezionare questa opzione e immettere il nome della destinazione di debug remoto o il nome [del server Msvsmon](../debugger/remote-debugging.md). <br />Il percorso di un'app nel computer remoto viene specificato dalla **proprietà Percorso** di output nella **scheda** Compilazione. Il percorso deve essere una directory condivisibile nel computer remoto.
 | **Motore del debugger**  >  **Abilitare il debug del codice non gestito** | Esegue il debug delle chiamate al codice Win32 nativo (non gestito) dall'app gestita. |
 | **Motore del debugger**  >  **Abilitare SQL Server debug** | Esegue il debug SQL Server oggetti di database. |
 
@@ -57,10 +57,10 @@ Per altre informazioni, vedere [Configurazioni di debug e rilascio](how-to-set-d
 
 |Impostazione|Descrizione|
 |-------------|-----------------|
-|**Generale**  >  **Simboli di compilazione condizionale**|Definire le costanti DEBUG e TRACE, se selezionate.<br /><br /> Esse attivano la compilazione condizionale della [Classe Debug](/dotnet/api/system.diagnostics.debug) e della [Classe Trace](/dotnet/api/system.diagnostics.trace). Quando sono definite, i metodi delle classi Debug e Trace generano l'output per la [finestra di output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output.<br /><br />In genere, DEBUG è definito nella versione di debug di una build e non è definito nella versione di rilascio. TRACE è definito sia nelle versioni di debug che di rilascio.|
-|**Generale**  >  **Ottimizzare il codice**|A meno che non venga visualizzato un bug solo nel codice ottimizzato, lasciare deselezionata questa impostazione per Compilazioni di debug. Il debug del codice ottimizzato è più difficile, perché le istruzioni non corrispondono direttamente alle istruzioni nel codice sorgente.|
-|**Output**  >  **Percorso di output**|In genere è impostato *su bin\Debug per* il debug.|
-|**Pulsante** Avanzate|Per informazioni sulle opzioni di debug avanzate, vedere [Finestra di dialogo Impostazioni di compilazione avanzate (C#).](../ide/reference/advanced-build-settings-dialog-box-csharp.md) Il formato portabile per i file di simboli *(con estensione pdb)* è un formato multipiattaforma recente per le app .NET Core.
+|**Generale**  >  **Simboli di compilazione condizionale**|Definire le costanti DEBUG e TRACE, se selezionate.<br /><br /> Esse attivano la compilazione condizionale della [Classe Debug](/dotnet/api/system.diagnostics.debug) e della [Classe Trace](/dotnet/api/system.diagnostics.trace). Quando sono definite, i metodi delle classi Debug e Trace generano l'output per la [finestra di output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output.<br /><br />In genere, DEBUG è definito nella versione debug di una build e non definito nella versione di rilascio. TRACE è definito in entrambe le versioni di debug e versione.|
+|**Generale**  >  **Ottimizzare il codice**|A meno che un bug non venga visualizzato solo nel codice ottimizzato, lasciare deselezionata questa impostazione per Le compilazioni di debug. Il debug del codice ottimizzato è più difficile, perché le istruzioni non corrispondono direttamente alle istruzioni nel codice sorgente.|
+|**Output**  >  **Percorso di output**|In genere impostata *su bin\Debug per* il debug.|
+|**Pulsante** Avanzate|Per informazioni sulle opzioni di debug avanzate, vedere Finestra di [dialogo Impostazioni di compilazione avanzate (C#).](../ide/reference/advanced-build-settings-dialog-box-csharp.md) Il formato portabile per i file di simboli (*con estensione pdb*) è un formato multipiattaforma recente per le app .NET Core.
 
 ## <a name="see-also"></a>Vedi anche
 - [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)

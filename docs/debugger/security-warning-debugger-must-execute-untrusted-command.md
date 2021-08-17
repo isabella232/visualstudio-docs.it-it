@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 792e4b82e35bd23addd4424989862c97e9903d5dadf0d0ac3a60d52e8bd800a4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dce19c368cc1130a2f06da6b9c656fad529b3728
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121419130"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090460"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Avviso di sicurezza: il debugger deve eseguire un comando non attendibile
-Questa finestra di dialogo di avviso viene visualizzata quando si usa il server di origine. Indica che il comando che deve essere eseguito dal debugger per ottenere il codice sorgente non è incluso nell'elenco dei comandi attendibili per il server di origine contenuto nel file srcsvr.ini. Se il comando è valido, è possibile aggiungerlo al file srcsvr.ini. In caso contrario, è opportuno non eseguirlo. Per altre informazioni, vedere [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Questa finestra di dialogo di avviso viene visualizzata quando si usa il server di origine. Indica che il comando che deve essere eseguito dal debugger per ottenere il codice sorgente non è incluso nell'elenco dei comandi attendibili per il server di origine contenuto nel file srcsvr.ini. Se il comando è valido, è possibile aggiungerlo al file srcsvr.ini. In caso contrario, è opportuno non eseguirlo. Per altre informazioni, vedere [Specificare il simbolo (con estensione pdb) e File di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="message-text"></a>Testo del messaggio
  **Il debugger deve eseguire il seguente comando non attendibile per ottenere il codice sorgente dal server di origine.**
@@ -35,11 +35,11 @@ Questa finestra di dialogo di avviso viene visualizzata quando si usa il server 
  **Eseguire il comando?**
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
- Comando Casella di testo dal file con estensione pdb da eseguire.
+ Comando casella di testo dal file con estensione pdb da eseguire.
 
  Eseguire Consenti l'esecuzione del comando.
 
- Non eseguire Arresta l'esecuzione del comando e il download del file dal server di origine.
+ Non eseguire Arrestare l'esecuzione del comando e scaricare il file dal server di origine.
 
 ## <a name="see-also"></a>Vedi anche
 - [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

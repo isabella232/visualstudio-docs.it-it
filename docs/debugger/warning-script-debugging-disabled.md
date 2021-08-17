@@ -1,6 +1,6 @@
 ---
 title: 'Avviso: debug degli script disabilitato | Microsoft Docs'
-description: Quando si tenta di eseguire il debug dello script senza abilitare il debug degli script in Internet Explorer, viene visualizzato un avviso di tipo "Debug script disabilitato". Vedere i passaggi per abilitarlo.
+description: Quando si tenta di eseguire il debug dello script senza abilitare il debug degli script in Internet Explorer, viene visualizzato un avviso "Debug script disabilitato". Vedere la procedura per abilitarla.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f5b52bedf589be3e21ed5880c4d90f204ad68c04d4af09b4076a3be440ef4d9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d23d6eaf21375095c04284981b9178a02decec96
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378463"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090148"
 ---
 # <a name="warning-script-debugging-disabled"></a>Avviso: debug degli script disabilitato
 Il debug degli script è attualmente disabilitato in Internet Explorer
