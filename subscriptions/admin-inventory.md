@@ -1,23 +1,23 @@
 ---
-title: Inventario pre-produzione nella sottoscrizione di Visual Studio | Visual Studio Marketplace
+title: Inventario pre-produzione in Visual Studio sottoscrizione | Visual Studio Mercato
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 03/19/2021
 ms.topic: conceptual
-description: Informazioni sulle responsabilità degli amministratori per condurre gli inventari di pre-produzione
-ms.openlocfilehash: f6b1e1ebc02a986be86fb48578a4be47ccc3dfaa
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+description: Informazioni sulla responsabilità degli amministratori di eseguire gli inventari di pre-produzione
+ms.openlocfilehash: 73c48bab862ba866bf61999ff3caeeaa361685411946e9a9f6486f40b0a78b90
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757672"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121393023"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario dell'ambiente di preproduzione
 Le sottoscrizioni di Visual Studio semplificano la gestione degli asset basandosi sul conteggio degli utenti piuttosto che dei dispositivi.
 
-Gli amministratori di Visual Studio devono assegnare le sottoscrizioni di Visual Studio a **utenti specifici, denominati**. **Non sono consentite** le convenzioni di denominazione come Dev1, Dev2 o l'uso di nomi di team come "FeatureTeam".
+Visual Studio amministratori devono assegnare Sottoscrizioni di Visual Studio a **utenti specifici denominati.** **Non sono consentite** le convenzioni di denominazione come Dev1, Dev2 o l'uso di nomi di team come "FeatureTeam".
 
 Ecco alcuni modi per semplificare la creazione dell'inventario dell'ambiente di preproduzione:
 - Verificare le assegnazioni degli utenti. Microsoft offre un sito Web denominato [portale di amministrazione di Visual Studio](https://manage.visualstudio.com/) per tenere traccia delle assegnazioni delle sottoscrizioni di Visual Studio.
@@ -30,14 +30,14 @@ Ecco alcuni modi per semplificare la creazione dell'inventario dell'ambiente di 
 
 ## <a name="resources"></a>Risorse
 - [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vsadminhelp)
-- [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+- [Visual Studio sottoscrizioni](https://aka.ms/vsadminhelp)
+- [Condizioni per i contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità per gli amministratori:

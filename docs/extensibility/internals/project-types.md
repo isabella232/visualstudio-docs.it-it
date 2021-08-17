@@ -1,5 +1,5 @@
 ---
-title: Tipi di progetto | Microsoft Docs
+title: Project Tipi | Microsoft Docs
 description: Visual Studio include diversi tipi di progetto per linguaggi come Visual C# e Visual Basic. Visual Studio consente anche di creare tipi di progetto personalizzati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,14 +11,15 @@ ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7ecf54a9a5aa4b19d5ecc079e0bf5a448561f98
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: b3a4b440b5b9fd446eba226431e5dd88e8074591d6bad12815020cb6cba04edd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903567"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401363"
 ---
 # <a name="project-types"></a>Tipi di progetto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] include diversi tipi di progetto per linguaggi quali [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente anche di creare tipi di progetto personalizzati.
@@ -34,7 +35,7 @@ ms.locfileid: "112903567"
 
 - [Aggiunta di un comando alla barra degli strumenti di Esplora soluzioni](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- Illustra in dettaglio i passaggi da seguire per aggiungere un pulsante alla barra Esplora soluzioni barra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **degli strumenti.**
+ Illustra in dettaglio i passaggi da seguire per aggiungere un pulsante alla barra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Esplora soluzioni** barra degli strumenti.
 
 - [Aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
@@ -46,7 +47,7 @@ ms.locfileid: "112903567"
 
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)
 
- Viene illustrato come i tipi di progetto possono supportare opzioni di configurazione come Debug e Rilascio che controllano la modalità di creazione, debug e così via dei progetti.
+ Viene illustrato come i tipi di progetto possono supportare opzioni di configurazione come Debug e Versione che controllano la modalità di creazione, debug e così via dei progetti.
 
 - [Supporto del controllo del codice sorgente](../../extensibility/internals/supporting-source-control.md)
 
@@ -71,7 +72,7 @@ ms.locfileid: "112903567"
 
 - [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)
 
- Vengono forniti collegamenti agli argomenti relativi ai sottotipi di progetto. I sottotipi di progetto consentono l'estensione della maggior parte dei tipi di progetto, incluso il proprio.
+ Vengono forniti collegamenti agli argomenti relativi ai sottotipi di progetto. Project sottotipi consentono l'estensione della maggior parte dei tipi di progetto, incluso il proprio.
 
 - [Progetti](../../extensibility/internals/projects.md)
 

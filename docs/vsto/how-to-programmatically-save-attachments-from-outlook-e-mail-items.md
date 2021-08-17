@@ -1,6 +1,6 @@
 ---
-title: Salvare allegati da elementi di posta elettronica di Outlook a livello di codice
-description: Informazioni su come usare i Visual Studio salvare allegati da elementi di posta elettronica di Microsoft Outlook a livello di codice.
+title: Salvare allegati da elementi Outlook posta elettronica a livello di codice
+description: Informazioni su come usare i Visual Studio per salvare allegati da elementi di posta elettronica di Microsoft Outlook a livello di codice.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,16 +16,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ad64593f91e14bcfd993929420764869a8359e3e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 0099f06210dc7164df28a3e3b3f3e3e3ef7cb54865a7ead0585fdccf21d1cf0d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826694"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394264"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedura: Salvare allegati da elementi di posta elettronica di Outlook a livello di codice
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedura: Salvare allegati da elementi di posta elettronica Outlook a livello di codice
 
 In questo esempio gli allegati di posta elettronica vengono salvati in una cartella specificata quando si riceve posta nella posta in arrivo.
 

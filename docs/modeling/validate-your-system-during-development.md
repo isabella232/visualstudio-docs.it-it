@@ -1,6 +1,6 @@
 ---
 title: Convalidare il sistema durante lo sviluppo
-description: Informazioni su Visual Studio per mantenere il software coerente con i requisiti dell'utente e con l'architettura del sistema.
+description: Informazioni su Visual Studio per mantenere il software coerente con i requisiti degli utenti e con l'architettura del sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: ae85c7f98aab3e852a810976cc1cecbd83b65307
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f33e24c9284a785eeef2ba87d9f63855fc4d9c8259f6adc6ac44d1090a85dc34
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388373"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121398073"
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
 
@@ -37,7 +38,7 @@ Usare le attività seguenti per convalidare il software:
 
 |**Categoria**|**Collegamenti**|
 |-|-|
-|**Video**|![collegamento al video ](../data-tools/media/playvideo.gif) [Channel 9: Doug Seven: Code Understanding and Systems Design with Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [Channel 9: Architecting an Application ( Progettazione di un'applicazione)](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)|
+|**Video**|![collegamento al video ](../data-tools/media/playvideo.gif) [Channel 9: Doug Seven: Code Understanding and Systems Design with Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [Channel 9: Architecting an Application ( Channel 9: Progettazione di un'applicazione)](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)|
 |**Forum**|- [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio estendibilità](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
 ## <a name="see-also"></a>Vedi anche

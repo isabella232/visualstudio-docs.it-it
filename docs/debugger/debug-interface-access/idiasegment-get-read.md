@@ -11,14 +11,15 @@ ms.assetid: aafbc86d-352c-4e1a-911a-1472d2d59212
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1ed49889432d29b8058dcf269549dd31d6f9cf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f46ed208997dca9d45d89dcb00b567ce15a756e288bd35b44c16f4c2ec846199
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157175"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391984"
 ---
 # <a name="idiasegmentget_read"></a>IDiaSegment::get_read
 Recupera un flag che indica se il segmento può essere letto.
@@ -34,7 +35,7 @@ HRESULT get_read (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se è possibile leggere il segmento. in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il segmento può essere letto; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

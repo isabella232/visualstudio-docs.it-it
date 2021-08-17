@@ -1,5 +1,5 @@
 ---
-title: Informazioni di riferimento (acquisizione a livello di | Microsoft Docs
+title: Informazioni di riferimento (acquisizione a livello di codice) | Microsoft Docs
 description: Usare l'API di acquisizione a livello di codice per esercitare il controllo a livello di codice sulle funzionalità di acquisizione Diagnostica della grafica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -8,14 +8,15 @@ ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 572629235e3b64028b70ff59090f9c4f7991d323
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 5655e5493a69628de4b188d78de415c1f02b816716d406bf0e10279698c0ad77
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232700"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121419806"
 ---
 # <a name="reference-programmatic-capture"></a>Riferimento (acquisizione a livello di codice)
 Diagnostica della grafica supporta il controllo a livello di programmazione sulle funzionalità di acquisizione, tramite l'API di acquisizione a livello di programmazione. È possibile utilizzare questa API per attivare o disattivare e aggiungere messaggi alla diagnostica grafica HUD (Head-Up Display), inizializzare e creare file di log di grafica e acquisire informazioni grafiche.
@@ -41,4 +42,4 @@ Diagnostica della grafica supporta il controllo a livello di programmazione sull
 | Titolo | Descrizione |
 | - | - |
 | [Acquisizione di informazioni grafiche](capturing-graphics-information.md) | Viene indicato come acquisire informazioni grafiche dall'app basata su DirectX per poter usare gli strumenti di diagnostica della grafica [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per diagnosticare problemi di rendering. |
-| [Panoramica](overview-of-visual-studio-graphics-diagnostics.md) | Viene indicato come la diagnostica grafica consente di eseguire il debug degli errori di rendering nei giochi e nelle app DirectX. |
+| [Overview](overview-of-visual-studio-graphics-diagnostics.md) | Viene indicato come la diagnostica grafica consente di eseguire il debug degli errori di rendering nei giochi e nelle app DirectX. |

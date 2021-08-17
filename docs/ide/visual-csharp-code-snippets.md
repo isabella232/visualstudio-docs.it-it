@@ -1,6 +1,6 @@
 ---
 title: Frammenti di codice C#
-description: Informazioni su come usare i frammenti di codice per aggiungere codice comunemente usato ai file di codice C#.
+description: Informazioni su come usare frammenti di codice per aggiungere codice di uso comune ai file di codice C#.
 ms.custom: SEO-VS-2020
 ms.date: 06/05/2017
 ms.topic: reference
@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: e4656e0769075be26db5bd06108093a49fb5e2af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d6fef099eb827f2d618a91642fc88316611edf874bff14a2dae5a6cb27610f2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941541"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121399054"
 ---
 # <a name="c-code-snippets"></a>Frammenti di codice C#
 
@@ -27,7 +28,7 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 
 È possibile inserire un frammento di codice nella posizione del cursore o un frammento di codice racchiuso intorno al codice attualmente selezionato. Lo strumento per l'inserimento dei frammenti di codice viene richiamato usando i comandi **Inserisci frammento di codice** o **Racchiudi tra** del menu **IntelliSense** o usando rispettivamente i tasti di scelta rapida **CTRL**+**K**,**X** o **CTRL**+**K**,**S**.
 
-L' **Accodatore dei frammenti di codice** Visualizza il nome del frammento di codice per tutti i frammenti di codice disponibili. Lo strumento include anche una finestra di dialogo di input in cui è possibile digitare il nome del frammento di codice o parte del nome del frammento di codice. Lo strumento per l'inserimento dei frammenti di codice evidenzia la corrispondenza più prossima al nome di un frammento di codice. Quando si preme **TAB** in qualsiasi momento, lo strumento per l'inserimento dei frammenti di codice viene chiuso e viene inserito il frammento di codice attualmente selezionato. Se si preme **ESC** o si fa clic con il mouse nell'editor del codice, lo strumento per l'inserimento di frammenti di codice viene chiuso senza inserire un frammento di codice.
+**L'inserimento di frammenti di codice** visualizza il nome del frammento di codice per tutti i frammenti di codice disponibili. Lo strumento include anche una finestra di dialogo di input in cui è possibile digitare il nome del frammento di codice o parte del nome del frammento di codice. Lo strumento per l'inserimento dei frammenti di codice evidenzia la corrispondenza più prossima al nome di un frammento di codice. Quando si preme **TAB** in qualsiasi momento, lo strumento per l'inserimento dei frammenti di codice viene chiuso e viene inserito il frammento di codice attualmente selezionato. Se si preme **ESC** o si fa clic con il mouse nell'editor del codice, lo strumento per l'inserimento di frammenti di codice viene chiuso senza inserire un frammento di codice.
 
 ## <a name="default-code-snippets"></a>Frammenti di codice predefiniti
 
@@ -63,9 +64,9 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |prop|Crea una dichiarazione di [proprietà implementata automaticamente](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|All'interno di una classe o uno struct.|
 |propfull|Crea una dichiarazione di proprietà con le funzioni di accesso `get` e `set`.|All'interno di una classe o uno struct.|
 |propg|Crea una [proprietà implementata automaticamente](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) di sola lettura con una funzione di accesso `set` privata.|All'interno di una classe o uno struct.|
-|sim|Crea una dichiarazione [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) del metodo Main.|All'interno di una classe o uno struct.|
+|sim|Crea una [dichiarazione di](/dotnet/csharp/language-reference/keywords/static) [metodo main int](/dotnet/csharp/language-reference/keywords/int) statico.|All'interno di una classe o uno struct.|
 |struct|Crea una dichiarazione [struct](/dotnet/csharp/language-reference/keywords/struct).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
-|svm|Crea una dichiarazione [static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void) del metodo Main.|All'interno di una classe o uno struct.|
+|svm|Crea una [dichiarazione di](/dotnet/csharp/language-reference/keywords/static) [metodo Main void](/dotnet/csharp/language-reference/keywords/void) statico.|All'interno di una classe o uno struct.|
 |switch|Crea un blocco [switch](/dotnet/csharp/language-reference/keywords/switch).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |provare|Crea un blocco [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |tryf|Crea un blocco [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
@@ -79,4 +80,4 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 - [Funzioni dei frammenti di codice](../ide/code-snippet-functions.md)
 - [Frammenti di codice](../ide/code-snippets.md)
 - [Parametri di modelli](../ide/template-parameters.md)
-- [Procedura: usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md)
+- [Procedura: Usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md)

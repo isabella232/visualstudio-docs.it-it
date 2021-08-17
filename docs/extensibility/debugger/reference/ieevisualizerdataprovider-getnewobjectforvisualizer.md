@@ -1,6 +1,6 @@
 ---
 description: Questo metodo ottiene un nuovo oggetto per il visualizzatore.
-title: 'IEEVisualizerDataProvider:: GetNewObjectForVisualizer | Microsoft Docs'
+title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af26455e37d0ecf881cd0bed898e1997f00a82ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e073afadb97d4b0f33e70d2ffce86f10828360d2581728e277d7723e843b17c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083349"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401986"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Questo metodo ottiene un nuovo oggetto per il visualizzatore. Questo metodo creerà sempre un nuovo oggetto dall'oggetto esistente.
@@ -42,13 +43,13 @@ int GetNewObjectForVisualizer(
 
 ## <a name="parameters"></a>Parametri
 `ppObject`\
-out Nuovo oggetto.
+[out] Nuovo oggetto .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- `This method` valuta nuovamente l'oggetto attualmente rappresentato e restituisce il risultato come un nuovo oggetto. L'oggetto esistente verrà aggiornato in seguito alla valutazione.
+ `This method` valuta nuovamente l'oggetto attualmente rappresentato e restituisce il risultato come nuovo oggetto. L'oggetto esistente verrà aggiornato come risultato della valutazione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

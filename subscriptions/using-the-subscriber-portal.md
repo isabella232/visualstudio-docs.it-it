@@ -1,5 +1,5 @@
 ---
-title: Uso del portale per i sottoscrittori nelle sottoscrizioni di Visual Studio | Microsoft Docs
+title: Uso del portale sottoscrittore nelle Visual Studio sottoscrizione| Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,18 +7,18 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 02/19/2021
 ms.topic: overview
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: e5e3033c6fbc30627086f1ab04aa702d26b69f4deb24a97b1f3e9ef47ee8234c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607144"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121421473"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del portale per i sottoscrittori - my.visualstudio.com
 
-Il portale delle sottoscrizioni di Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) , è la risorsa all-in-One per sfruttare la gamma completa di vantaggi offerti tramite la sottoscrizione di Visual Studio.
+Il Sottoscrizioni di Visual Studio, , è la risorsa all-in-one per sfruttare l'intera gamma di vantaggi offerti tramite la sottoscrizione [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) Visual Studio sottoscrizione.
 
-Per usare il portale, è necessario accedere con l'identità associata alla sottoscrizione.  Potrebbe trattarsi dell'account Microsoft (MSA) o di un indirizzo di posta elettronica fornito da un'organizzazione, ad esempio il datore di lavoro o l'Istituto di istruzione.  Informazioni sull'[accesso](./index.yml).
+Per usare il portale, è necessario accedere con l'identità associata alla sottoscrizione.  Può trattarsi dell'account Microsoft o di un indirizzo di posta elettronica fornito da un'organizzazione, ad esempio il datore di lavoro o l'istituto di istruzione.  Informazioni sull'[accesso](./index.yml).
 
 Il portale è organizzato in sei pagine.  Ogni pagina consente di accedere a diversi prodotti o servizi inclusi nella sottoscrizione.  Le sei pagine sono Vantaggi, Download, Codici Product Key, Abbonamenti, Supporto e Marketplace.
 
@@ -54,10 +54,10 @@ Oltre ai singoli vantaggi disponibili nella categoria Supporto nella pagina Vant
 Se è necessario rinnovare una sottoscrizione cloud di Visual Studio  o si vogliono scaricare le estensioni più recenti per la famiglia di prodotti Visual Studio,  Nel Marketplace è possibile trovare estensioni, strumenti e servizi per migliorare ulteriormente Azure DevOps, Azure DevOps Server e Visual Studio Code. È anche possibile diventare un editore e pubblicare estensioni personalizzate in Marketplace.
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Accedi al portale [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) e Scopri i vantaggi.  È anche possibile ottenere altre informazioni sull'accesso al portale con l'[account Microsoft](sign-in-msa.md) (account del servizio gestito), con l'[account aziendale o dell'istituto di istruzione](sign-in-work.md) e persino con l'[account GitHub](sign-in-github.md).
+Accedere al portale [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) all'indirizzo e verificare i vantaggi.  È anche possibile ottenere altre informazioni sull'accesso al portale con l'[account Microsoft](sign-in-msa.md) (account del servizio gestito), con l'[account aziendale o dell'istituto di istruzione](sign-in-work.md) e persino con l'[account GitHub](sign-in-github.md).

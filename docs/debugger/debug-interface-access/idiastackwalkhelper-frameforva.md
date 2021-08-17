@@ -1,5 +1,5 @@
 ---
-description: Recupera la stack frame che contiene l'indirizzo virtuale specificato.
+description: Recupera l'stack frame contenente l'indirizzo virtuale specificato.
 title: IDiaStackWalkHelper::frameForVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: f35fc61b-f8dd-473a-b583-82c304059422
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e4771f899615eb308163c1bc560212a2b4e3cd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c1f1162dc9c305138c84aa5c6d7981a13f41f7e00d903fe65e0be758bb561f95
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158901"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391712"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-Recupera la stack frame che contiene l'indirizzo virtuale specificato.
+Recupera l'stack frame contenente l'indirizzo virtuale specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ HRESULT frameForVA(
 #### <a name="parameters"></a>Parametri
  `va`
 
-in Indirizzo virtuale per i dati del frame.
+[in] Indirizzo virtuale per i dati del frame.
 
  `ppFrame`
 
-out Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'stack frame in corrispondenza dell'indirizzo specificato.
+[out] Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'stack frame all'indirizzo specificato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

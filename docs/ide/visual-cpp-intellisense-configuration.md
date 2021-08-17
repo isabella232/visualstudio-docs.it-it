@@ -1,6 +1,6 @@
 ---
 title: Configurare un progetto C++ per IntelliSense
-description: Informazioni su come configurare manualmente il progetto C++ per ottenere il corretto funzionamento di IntelliSense utilizzando l'IDE di Visual Studio per identificare e correggere i problemi di IntelliSense.
+description: Informazioni su come configurare manualmente il progetto C++ per ottenere il corretto funzionamento di IntelliSense usando l'IDE di Visual Studio per identificare e risolvere i problemi di IntelliSense.
 ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34be73203f5c1d01e4674e7892e0f89d4aae4816
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 5de1e8e3faff8370343c5145e0ddbd107f0b3b82f7f2e48b901afa7e2c4377c3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478796"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121399641"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurare un progetto C++ per IntelliSense
 
@@ -40,7 +40,7 @@ Se le compilazioni vengono eseguite all'esterno dell'IDE di Visual Studio e ries
 
 ![Directory di inclusione di VC++](media/vcpp-intellisense-include-paths.png)
 
-Per visualizzare i valori correnti per compilare macro come **VC_IncludePath**, selezionare la riga Directory di inclusione e fare clic sull'elenco a discesa a destra. Quindi scegliere **\<Edit>** e fare clic sul pulsante **macro** .
+Per visualizzare i valori correnti per compilare macro come **VC_IncludePath**, selezionare la riga Directory di inclusione e fare clic sull'elenco a discesa a destra. Scegliere quindi **\<Edit>** e fare clic sul **pulsante** Macro.
 
 ### <a name="makefile-projects"></a>progetti Makefile
 

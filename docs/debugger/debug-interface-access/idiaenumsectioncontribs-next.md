@@ -11,14 +11,15 @@ ms.assetid: a6bb2adb-ee6d-4f3c-ab5b-e89361c8880e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d6e33d1c56b1dd2501af2a84af8fbeef5a2831e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 66771f984a5ba0ed7e6061dc133768e7fbd959a7c273cd273bb299a424900063
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159321"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392480"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Recupera un numero specificato di contributi di sezione nella sequenza di enumerazione.
@@ -36,18 +37,18 @@ HRESULT Next(
 #### <a name="parameters"></a>Parametri
  celt
 
-in Numero di contributi di sezione nell'enumeratore da recuperare.
+[in] Numero di contributi di sezione nell'enumeratore da recuperare.
 
- rgelt
+ Rgelt
 
-out Matrice che deve essere riempita con gli oggetti [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) che rappresentano i contributi della sezione desiderata.
+[out] Matrice che deve essere riempita con gli oggetti [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) che rappresentano i contributi di sezione desiderati.
 
  pceltFetched
 
-out Restituisce il numero di contributi di sezione nell'enumeratore recuperato.
+[out] Restituisce il numero di contributi di sezione nell'enumeratore recuperato.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori contributi alla sezione. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri contributi di sezione. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

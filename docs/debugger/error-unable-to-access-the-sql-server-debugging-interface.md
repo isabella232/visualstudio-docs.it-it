@@ -1,6 +1,6 @@
 ---
 description: Questo messaggio viene visualizzato quando si tenta di eseguire il debug di SQL su un computer in cui non è attivato questo tipo di debug.
-title: Non è possibile accedere all'interfaccia di debug di SQL Server | Microsoft Docs
+title: Impossibile accedere all'interfaccia SQL Server debug | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,21 +14,22 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f73ca5586b80cd72c952c8ab511061d877ed7b37
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1fb24314c97bd8f8a9f545657421ea33f2d0410f1083cb4e0e30c3435ff24224
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146469"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121419871"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Errore: impossibile accedere all'interfaccia di debug di SQL Server
 Questo messaggio viene visualizzato quando si tenta di eseguire il debug di SQL su un computer in cui non è attivato questo tipo di debug.
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 
-- Vedere [configurazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Vedere [Configurazione del SQL debug](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Vedi anche
 - [Debug di SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

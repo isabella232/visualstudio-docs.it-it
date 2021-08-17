@@ -11,17 +11,18 @@ ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e35e0b219bb77ce722f2e06a260de7ecc837dfb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c1bc858ee22b388d5a782a572f2267f78450c1048d4bb8a7c6718656d4d049b5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085325"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390485"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 Fornisce flag facoltativi che possono essere utilizzati per specificare informazioni aggiuntive quando si imposta un punto di interruzione.
@@ -50,20 +51,20 @@ public enum enum_BP_FLAGS {
 Non specifica alcun flag del punto di interruzione.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Specifica che il motore di debug (DE) deve eseguire il mapping del punto di interruzione utilizzando la posizione del documento. Questa operazione è applicabile solo ai punti di interruzione impostati nei file di origine orientati agli script, ad esempio pagine ASP (Active Server).
+Specifica che il motore di debug deve eseguire il mapping del punto di interruzione usando la posizione del documento. Ciò è applicabile solo ai punti di interruzione impostati nei file di origine orientati agli script, ad esempio Active Server Pages (ASP).
 
 `BP_FLAG_DONT_STOP`\
-Specifica che il punto di interruzione deve essere elaborato dal motore di debug, ma che in definitiva il motore di debug non dovrebbe arrestarsi, ovvero un oggetto evento [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) non deve essere inviato. Questo flag è progettato per essere utilizzato principalmente con punti.
+Specifica che il punto di interruzione deve essere elaborato dal motore di debug, ma che in definitiva il motore di debug non deve arrestarsi in questo punto, ovvero non deve essere inviato un oggetto evento [IDebugBreakpointEvent2.](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Questo flag è progettato per essere usato principalmente con punti di traccia.
 
 ## <a name="remarks"></a>Commenti
-Utilizzato per il `dwFlags` membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
+Usato per `dwFlags` il membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-Questi valori possono essere combinati con un bit per bit `OR` .
+Questi valori possono essere combinati con un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Creare una regola di convalida personalizzata per un test delle prestazioni Web
+title: Creare una regola di convalida personalizzata per un test web perf
 description: Informazioni su come creare regole di convalida personalizzate, derivate da una classe di regole di convalida, ValidationRule.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
@@ -17,12 +17,13 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: ae5228c4da9abef9b5bee417d5d3d71bb28d416d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: fce100dff65ce4a900affd270cc9779e5e208feadb382763192a53a2b83d4927
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964589"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395434"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificare una regola di convalida personalizzata per un test delle prestazioni Web
 
@@ -50,9 +51,9 @@ ms.locfileid: "99964589"
 
 6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di convalida personalizzata.
 
-7. Nel progetto di test aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
+7. Nella finestra test Project aprire un test delle prestazioni **Web** nel Editor test prestazioni Web .
 
-8. Per aggiungere la regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse su una richiesta e scegliere **Aggiungi regola di convalida**.
+8. Per aggiungere la regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse su una richiesta e **scegliere Aggiungi regola di convalida**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di convalida**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di convalida personalizzata, quindi scegliere **OK**.
 

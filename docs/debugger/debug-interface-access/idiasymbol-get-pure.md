@@ -1,6 +1,6 @@
 ---
-description: Recupera un flag che specifica se la funzione è virtuale pura.
-title: 'IDiaSymbol:: get_pure | Microsoft Docs'
+description: Recupera un flag che specifica se la funzione è pura virtuale.
+title: IDiaSymbol::get_pure | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: b61107e9-9144-4981-b7ef-58a339b80c58
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c51066fe1e1bbc8d165e07bd2b2653d0e2912ebe
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0c570580b65a908ff73e5f884299cb187738b23df7b6aa71143b458b7c1d386d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161921"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420574"
 ---
 # <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
-Recupera un flag che specifica se la funzione è virtuale pura.
+Recupera un flag che specifica se la funzione è pura virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,13 +35,13 @@ HRESULT get_pure (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se la funzione è virtuale pura; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se la funzione è pura virtuale; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

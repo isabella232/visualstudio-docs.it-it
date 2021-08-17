@@ -9,14 +9,15 @@ ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf87999768ae12b9ae10702bc0e8ae8efe16e000
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 639d6fa7ff60404cc4946f60432271701ad3946226d2d13357eada44ed24c0c3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072754"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402687"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Rappresenta un'istanza di un campo per un tipo generico di codice gestito.
@@ -36,8 +37,8 @@ IDebugGenericFieldInstance : IUnknown
 |[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Restituisce il numero di argomenti del parametro di tipo per questa istanza.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: sh. h
+ Intestazione: Sh.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

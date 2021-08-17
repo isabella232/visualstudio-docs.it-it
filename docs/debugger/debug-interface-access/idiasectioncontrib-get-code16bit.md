@@ -11,14 +11,15 @@ ms.assetid: 8cde8fc5-9546-4f82-b4a8-afd0d835039e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ee13c8a67498cf8aadb0f498d1b392112ece9c5c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bd490f190cc35bb98f560d54d3f5f589d7dfc0a15eba8a33e0fb3bceba7bb7da
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157315"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392128"
 ---
 # <a name="idiasectioncontribget_code16bit"></a>IDiaSectionContrib::get_code16bit
 Recupera un flag che indica se la sezione contiene codice a 16 bit.
@@ -34,7 +35,7 @@ HRESULT get_code16bit(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se il codice nella sezione è a 16 bit. in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il codice nella sezione è a 16 bit; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

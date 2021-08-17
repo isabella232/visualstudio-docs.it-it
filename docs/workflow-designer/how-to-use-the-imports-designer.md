@@ -1,6 +1,6 @@
 ---
-title: 'Progettazione flussi di lavoro-procedura: usare la finestra di progettazione importazioni'
-description: Informazioni su come la finestra di progettazione importazioni consente di immettere gli spazi dei nomi per i tipi che si utilizzeranno nelle espressioni.
+title: 'Progettazione flussi di lavoro - Procedura: Usare la finestra di progettazione Importazioni'
+description: Informazioni su come la finestra di progettazione importazioni consente di immettere spazi dei nomi per i tipi che verranno utilizzati nelle espressioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,18 +10,19 @@ ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: fd736c01843d746ee43a82e6bb6f5239da1c660e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b1b83b73a02d283450d161f69353e8a72aa159b5987a393327ac4432d6fb729
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894049"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121393978"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procedura: utilizzare la finestra di progettazione importazioni
 
-La finestra di progettazione importazioni consente di immettere gli spazi dei nomi per i tipi usati nelle espressioni. Analogamente alle **importazioni** o all' **uso** delle parole chiave in Visual Basic e C#, specificando gli spazi dei nomi nella finestra di progettazione importazioni è possibile immettere semplicemente un nome di tipo nell'espressione anziché un nome di tipo di versione completo.
+La finestra di progettazione importazioni consente di immettere gli spazi dei nomi per i tipi usati nelle espressioni. Analogamente alle parole chiave **Imports** o **using** in Visual Basic e C#, la specifica di spazi dei nomi nella finestra di progettazione delle importazioni consente di immettere semplicemente un nome di tipo nell'espressione anziché un nome completo del tipo di versione.
 
 Sulla finestra di progettazione importazioni influiscono sia le modifiche all'interfaccia utente che quelle eseguite quando viene salvato il flusso di lavoro. Quando viene salvato il flusso di lavoro, alla finestra di progettazione importazioni è possibile aggiungere automaticamente spazi dei nomi, tra cui:
 
@@ -35,14 +36,14 @@ Sulla finestra di progettazione importazioni influiscono sia le modifiche all'in
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Per aggiungere uno spazio dei nomi all'elenco degli spazi dei nomi importati
 
-1. Aprire un'applicazione del servizio flusso di lavoro WCF, un'applicazione console flusso di lavoro o un progetto di libreria attività in Visual Studio o in un'applicazione flusso di lavoro riallocata.
+1. Aprire un'applicazione del servizio flusso di lavoro WCF, un'applicazione console del flusso di lavoro o un progetto di libreria di attività in Visual Studio o in un'applicazione flusso di lavoro rihosted.
 
-2. Fare clic su **importazioni** nella parte inferiore dell'area di disegno principale. Verrà visualizzata la finestra di progettazione importazioni.
+2. Fare **clic su** Importazioni nella parte inferiore dell'area di disegno principale. Verrà visualizzata la finestra di progettazione importazioni.
 
 3. Immettere o selezionare uno spazio dei nomi dal controllo dell'elenco a discesa nella parte superiore della finestra di progettazione importazioni.
 
      Mentre si digita, viene visualizzato un elenco degli spazi dei nomi validi che corrispondono ai caratteri tipizzati.
 
-4. Premere **invio** per aggiungere lo spazio dei nomi all'elenco.
+4. Premere **INVIO per** aggiungere lo spazio dei nomi all'elenco.
 
-5. Se si desidera rimuovere uno spazio dei nomi dall'elenco, selezionare lo spazio dei nomi e quindi premere il tasto **Canc** sulla tastiera. Si noti che è possibile eliminare uno spazio dei nomi solo se non è valido per qualsiasi motivo, ad esempio se il progetto non fa più riferimento all'assembly che lo contiene.
+5. Se si vuole rimuovere uno spazio dei nomi dall'elenco, selezionare lo spazio dei nomi e quindi premere **CANC** sulla tastiera. Si noti che è possibile eliminare uno spazio dei nomi solo se non è valido per qualsiasi motivo, ad esempio se il progetto non fa più riferimento all'assembly che lo contiene.

@@ -1,56 +1,56 @@
 ---
 title: Navigazione da tastiera in Visual Studio per Mac
-description: Uso di Visual Studio per Mac con i comandi della tastiera
+description: Uso di Visual Studio per Mac con i comandi da tastiera
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
-ms.openlocfilehash: f5fe827566d9949f5dca2a1a3e1dcfb1bf191c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bae327bb65834eb9e33320d09e4124d28cc95febc0d8a6455be203b4059b8b7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801789"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121422116"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Navigazione da tastiera in Visual Studio per Mac
 
-Visual Studio per Mac è accessibile dagli utenti della tastiera usando i tasti di scelta rapida più comuni di macOS, oltre a molte specifiche per Visual Studio per Mac. Di seguito vengono illustrati alcuni comandi di base della tastiera per entrambi e come configurare Visual Studio per Mac tasti di scelta rapida.
+Visual Studio per Mac è accessibile dagli utenti della tastiera che usano i tasti di scelta rapida macOS più comuni, nonché da molti specifici per Visual Studio per Mac. In questa unità si apprenderanno informazioni su alcuni comandi della tastiera di base per entrambi e su come configurare Visual Studio per Mac tasti di scelta rapida.
 
-## <a name="use-keyboard-navigation"></a>Usare la navigazione da tastiera
+## <a name="use-keyboard-navigation"></a>Usare la navigazione tramite tastiera
 
-Il supporto per la navigazione da tastiera è integrato direttamente in macOS. Per ottenere un'esperienza più completa, impostare macOS per spostare lo stato attivo tra **tutti i controlli**. In questo modo è possibile spostarsi tra tutti i controlli in una finestra o in una finestra di dialogo.
+Il supporto per la navigazione tramite tastiera è integrato direttamente in macOS. Per un'esperienza più completa, impostare macOS per spostare lo stato attivo della tastiera tra **tutti i controlli**. In questo modo è possibile spostarsi tra tutti i controlli in una finestra o in una finestra di dialogo.
 
 ![Screenshot delle opzioni della tastiera, con tutti i controlli selezionati](media/accessibility-preferences-keyboard.png)
 
 ## <a name="customize-keyboard-shortcuts"></a>Personalizzare i tasti di scelta rapida
 
-Visual Studio per Mac dispone di una gamma di tasti di scelta rapida per varie attività. È possibile visualizzare e modificare questi tasti di scelta rapida, come indicato di seguito:
+Visual Studio per Mac dispone di una gamma di tasti di scelta rapida per varie attività. È possibile visualizzare e modificare questi tasti di scelta rapida come indicato di seguito:
 
-1. Selezionare Preferenze di **Visual Studio (menu)**  >  **(&#8984;,)**.
+1. Selezionare **Visual Studio (menu)**  >  **Preferences (Preferenze) (&#8984;, ).**
 
-1. Passare a **Environment**  >  **Binding chiavi**ambiente.
+1. Passare a **Tasti di**  >  **scelta dell'ambiente.**
 
 1. Scorrere l'elenco o cercare il collegamento o il comando.
 
-1. Selezionare il comando.
+1. Selezionare il comando .
 
-1. Selezionare **chiave binding**e digitare una combinazione di tasti.
+1. Selezionare **Tasto di scelta** rapida e digitare una combinazione di tasti.
 
 1. Selezionare **Applica**.
 
 > [!TIP]
-> È possibile scegliere da un elenco di schemi di associazione chiave per soddisfare al meglio le proprie esigenze se si ha familiarità con altri tasti di scelta rapida comuni (ad esempio, Visual Studio in Windows).
+> È possibile scegliere da un elenco di schemi di tasti di scelta rapida più adatti alle proprie esigenze se si ha familiarità con altri tasti di scelta rapida comuni, ad esempio Visual Studio in Windows.
 
 ## <a name="useful-keyboard-shortcuts"></a>Tasti di scelta rapida
 
-|Feature         |Descrizione                                   |Tasto di scelta rapida         |
+|Funzionalità         |Descrizione                                   |Tasto di scelta rapida         |
 |----------------|----------------------------------------------|-----------------|
-|Esplorazione dell'interfaccia utente   |Spostarsi tra tutti gli elementi dell'interfaccia utente.               |**⇥**, **⇧ ⇥**    |
+|Esplorazione dell'interfaccia utente   |Spostarsi tra tutti gli elementi dell'interfaccia utente.               |**⇥**, **⇧⇥**    |
 |Interagire        |Selezionare il controllo attualmente attivo.         |**␣**            |
 |Interagire        |Selezionare il controllo predefinito nella schermata o nella finestra di dialogo. |**⏎**            |
-|Schede switch     |Scorrere i file aperti.                      |**⌘ ⇧ [**, **⌘ ⇧]** |
-|Debug           |Avviare il debug.                               |**⏎ ⌘**           |
+|Passare da una scheda all'altra     |Scorrere i file aperti.                      |**⌘⇧[**, **⌘⇧]** |
+|Debug           |Avviare il debug.                               |**⌘⏎**           |
 
 > [!TIP]
-> Vedere un elenco completo dei comandi da tastiera sui [tasti di scelta rapida](keyboard-shortcuts.md).
+> Per un elenco completo dei comandi da tastiera, vedere Tasti [di scelta rapida.](keyboard-shortcuts.md)

@@ -1,6 +1,6 @@
 ---
 title: Web Browser, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come utilizzare la pagina Web browser nella sezione ambiente per impostare le opzioni per la Web browser interna e per Internet Explorer.
+description: Informazioni su come usare la pagina Web browser nella sezione Ambiente per impostare le opzioni sia per il Web browser interno che per Internet Explorer.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,16 +21,17 @@ ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c87077005ae2ebbcc8fba92c9f1dc09f17bb3157
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 397951791116066820be0c423fd4556d4fbbf89a7ff7cc1d38e19c62d32f0de0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836215"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121399945"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: \> Web browser ambiente
+# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: \> Web browser dell'ambiente
 
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.
 
@@ -67,5 +68,5 @@ Selezionare questa opzione per modificare le opzioni di Internet Explorer nella 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Finestra di progettazione HTML](/previous-versions/ex0hkwbx(v=vs.140))

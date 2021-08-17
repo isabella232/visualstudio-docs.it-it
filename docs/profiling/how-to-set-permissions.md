@@ -1,6 +1,6 @@
 ---
 title: Impostare le autorizzazioni | Microsoft Docs
-description: Informazioni su come un amministratore di un computer concede le autorizzazioni di sicurezza necessarie per la profilatura a un utente o a un gruppo che non dispone di autorizzazioni di amministratore.
+description: Informazioni su come un amministratore di un computer concede le autorizzazioni di sicurezza necessarie per la profilatura a un utente o a un gruppo che non dispone delle autorizzazioni di amministratore.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 550c8c3f7a436fa2321d42ced1744650d4de679f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76d6f06582c5a9b596a3084e519041982e0a9de3d07eee7e10330b6bdb86a882
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906982"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396461"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 
@@ -37,7 +38,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>Per creare un account utente con autorizzazioni utente
 
-1. Fare clic con il pulsante destro del mouse su **computer locale** e quindi scegliere **Gestisci**.
+1. Fare clic con il **pulsante destro Computer locale** e quindi scegliere **Gestisci.**
 
      Verrà aperta la finestra **Gestione computer**.
 
@@ -49,7 +50,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 4. Completare i campi di questa finestra di dialogo con le informazioni relative all'account utente che si sta creando. Consente di specificare una password. Facoltativamente, selezionare la casella di controllo che richiede all'utente di cambiare la password al successivo accesso.
 
-5. Fare clic su **Crea** e quindi su **Chiudi**.
+5. Fare **clic su** Crea e quindi su **Chiudi.**
 
      Il nuovo utente verrà visualizzato nel gruppo Users, ovvero un gruppo di utenti che non dispone di autorizzazioni di amministratore.
 
@@ -65,13 +66,13 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 2. Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.
 
-     Verrà visualizzata la finestra di dialogo **\<folder name> Proprietà** .
+     Verrà **\<folder name> visualizzata la** finestra di dialogo Proprietà .
 
 3. Fare clic sulla scheda **Security** (Sicurezza).
 
 4. Fare clic sul nome dell'account utente nella casella **Utenti e gruppi**.
 
-5. Nella casella **autorizzazioni per \<user name>** Selezionare la casella di controllo **controllo completo**.
+5. Nella casella **Autorizzazioni per \<user name>** selezionare la casella di controllo Controllo **completo**.
 
 6. Fare clic su **OK**.
 
@@ -105,7 +106,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     Questo comando concede all' \<user name> account o l' \<group name> accesso agli strumenti di profilatura. L' \<right> opzione determina la funzionalità di profilatura a cui l'utente può accedere. L' \<right> opzione può essere costituita da uno o più dei valori seguenti:
+     Questo comando concede \<user name> all'account o \<group name> l'accesso agli strumenti di profilatura. \<right>L'opzione determina la funzionalità di profilatura a cui l'utente può accedere. \<right>L'opzione può essere uno o più dei valori seguenti:
 
     - FullAccess: consente l'accesso a tutti i metodi di profilatura, inclusa la raccolta dei dati sulle prestazioni della profilatura dei servizi, tra sessioni e mediante campionamento.
 
@@ -123,6 +124,6 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 ## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
- di prestazioni [VSPerfCmd](../profiling/vsperfcmd.md) 
- [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md) 
+ [VSPerfCmd](../profiling/vsperfcmd.md) 
+ [Profilatura e Windows vista](../profiling/profiling-and-windows-vista-security.md)

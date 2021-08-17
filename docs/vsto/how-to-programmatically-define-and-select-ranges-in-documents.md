@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Definire e selezionare intervalli nei documenti a livello di codice'
-description: Informazioni su come definire e selezionare intervalli nei documenti di Microsoft Word a livello di codice usando l'oggetto Range.
+description: Informazioni su come definire e selezionare intervalli a livello di Microsoft Word documenti usando l'oggetto Range.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3a5dc0c7fb9f3e9a2b4a15447f81239db973c215
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 98b7e6aa0d95322fb3a69263d487ba0ce21e5d9f5c7c8b4606c12cbdd489655d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825953"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394462"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procedura: Definire e selezionare intervalli nei documenti a livello di codice
   È possibile definire un intervallo in un documento di Microsoft Office Word usando un oggetto <xref:Microsoft.Office.Interop.Word.Range>. È possibile selezionare l'intero documento in diversi modi, ad esempio usando il metodo dell'oggetto o la proprietà Content della classe (in una personalizzazione a livello di documento) o della classe (in un componente aggiuntivo <xref:Microsoft.Office.Interop.Word.Range.Select%2A> <xref:Microsoft.Office.Interop.Word.Range> <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Interop.Word.Document> VSTO).
@@ -87,7 +88,7 @@ ms.locfileid: "107825953"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet24":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet24":::
 
-## <a name="select-a-range-by-using-a-vsto-add-in"></a>Selezionare un intervallo usando un componente aggiuntivo VSTO
+## <a name="select-a-range-by-using-a-vsto-add-in"></a>Selezionare un intervallo usando un VSTO componente aggiuntivo
  Gli esempi seguenti illustrano come selezionare l'intero documento usando il metodo <xref:Microsoft.Office.Interop.Word.Range.Select%2A> di un oggetto <xref:Microsoft.Office.Interop.Word.Range> oppure usando la proprietà <xref:Microsoft.Office.Interop.Word._Document.Content%2A> della classe <xref:Microsoft.Office.Interop.Word.Document>.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Per selezionare l'intero documento come un intervallo mediante il metodo Select

@@ -1,6 +1,6 @@
 ---
 title: SuspendTracking | Microsoft Docs
-description: Informazioni sulla sintassi, i requisiti e il valore restituito per MSBuild SuspendTracking, che sospende il rilevamento nel contesto corrente.
+description: Informazioni su sintassi, requisiti e valore restituito per MSBuild SuspendTracking, che sospende il rilevamento nel contesto corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,14 +15,15 @@ ms.assetid: f5e06e5a-8083-444c-99c1-07ba834226b5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e8be768bc48c1815fc00069640e5bf3f4370f434
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 420ba1fd7cc4285d638cf4d82b4e9d1d7f0ad23bfc6d5c23331ebe1ba3964dbd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945279"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397260"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 
@@ -36,7 +37,7 @@ HRESULT WINAPI SuspendTracking(void);
 
 ## <a name="return-value"></a>Valore restituito
 
- **HRESULT** con il bit **succeeded** impostato se la verifica è stata sospesa.
+ HRESULT **con** il bit **SUCCEEDED** impostato se il rilevamento è stato sospeso.
 
 ## <a name="requirements"></a>Requisiti
 

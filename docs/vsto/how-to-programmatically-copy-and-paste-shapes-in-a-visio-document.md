@@ -1,6 +1,6 @@
 ---
-title: Copiare e incollare forme nel documento di Visio a livello di codice
-description: Informazioni su come copiare forme in una pagina di un documento a livello di codice e incollarle in una nuova pagina dello stesso documento.
+title: Copiare e incollare forme nel Visio a livello di codice
+description: Informazioni su come copiare forme in una pagina di un documento a livello di codice e incollarle in una nuova pagina nello stesso documento.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b7cda46330967ef2b2b08db2109a030bbef8cace
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 25614ebc43e57f3bf21e922d6e4dd6d325dde11b4e62642f77c21ac8082a356d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828553"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423891"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Procedura: Copiare e incollare forme in un documento di Visio a livello di codice
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Procedura: Copiare e incollare forme in un documento Visio codice
   È possibile copiare a livello di codice forme contenute in una pagina di un documento e quindi incollarle in una nuova pagina dello stesso documento. Le forme possono essere incollate nella posizione predefinita (ovvero il centro della finestra attiva) o nelle stesse coordinate occupate nella pagina originale.
 
 ## <a name="copy-and-paste-shapes"></a>Copiare e incollare forme
@@ -49,7 +50,7 @@ ms.locfileid: "107828553"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet15":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Soluzioni Visio](../vsto/visio-solutions.md)
-- [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)
-- [Usare le forme di Visio](../vsto/working-with-visio-shapes.md)
-- [Procedura: Aggiungere forme a un documento di Visio a livello di codice](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)
+- [Visio soluzioni](../vsto/visio-solutions.md)
+- [Visio panoramica del modello a oggetti](../vsto/visio-object-model-overview.md)
+- [Usare le Visio personalizzate](../vsto/working-with-visio-shapes.md)
+- [Procedura: Aggiungere forme a un documento Visio codice](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)

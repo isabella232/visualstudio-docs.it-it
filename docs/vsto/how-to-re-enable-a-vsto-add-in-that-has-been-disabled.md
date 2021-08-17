@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: riabilitare un componente aggiuntivo VSTO disabilitato'
-description: Informazioni su come usare Visual Studio per riabilitare un componente aggiuntivo VSTO disabilitato in un'applicazione Microsoft Office.
+title: 'Procedura: Abilitare nuovamente un componente VSTO componente aggiuntivo disabilitato'
+description: Informazioni su come usare Visual Studio per abilitare nuovamente un componente aggiuntivo VSTO che è stato disabilitato in un'Microsoft Office applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,28 +16,29 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: de3e251c15699ce29b7986e4f0cc19a3f5c5798d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02ba44eebff487c602acd3faaf6b65a89225a8a2547813ce055f66a2105883e3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942189"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394212"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procedura: riabilitare un componente aggiuntivo VSTO disabilitato
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procedura: Abilitare nuovamente un componente VSTO componente aggiuntivo disabilitato
   Le applicazioni di Microsoft Office possono disabilitare i componenti aggiuntivi VSTO che si comportano in modo imprevisto. Se un'applicazione non carica un componente aggiuntivo VSTO quando si tenta di eseguirne il debug, il componente aggiuntivo VSTO potrebbe essere stato disabilitato dall'applicazione in seguito alla chiusura dell'applicazione (disabilitazione di tipo "hard") o a un errore del componente (disabilitazione di tipo "soft").
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
-## <a name="hard-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO con disabilitazione del disco rigido
- La disabilitazione hardware può verificarsi quando un componente aggiuntivo VSTO causa la chiusura imprevista dell'applicazione. Si potrebbe verificare anche nel computer di sviluppo se si arresta il debugger durante l'esecuzione del gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> nel componente aggiuntivo VSTO.
+## <a name="hard-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO disabilitati
+ La disabilitazione rigida può verificarsi quando VSTO componente aggiuntivo causa la chiusura imprevista dell'applicazione. Si potrebbe verificare anche nel computer di sviluppo se si arresta il debugger durante l'esecuzione del gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> nel componente aggiuntivo VSTO.
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>Per riabilitare un componente aggiuntivo VSTO
 
 1. Nell'applicazione fare clic sulla scheda **File** .
 
-2. Fare clic sul pulsante delle **Opzioni** *ApplicationName* .
+2. Fare clic *sul pulsante ApplicationName* **Options (Opzioni nome** applicazione).
 
 3. Nel riquadro delle categorie fare clic su **Componenti aggiuntivi**.
 
@@ -49,9 +50,9 @@ ms.locfileid: "99942189"
 
 6. Selezionare il componente aggiuntivo VSTO e fare clic su **Attiva**.
 
-7. Fare clic su **Close**.
+7. Fare clic su **Chiudi**.
 
-## <a name="soft-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO con disabilitazione soft
+## <a name="soft-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO disabilitati
  La disabilitazione di tipo "soft" può verificarsi quando un componente aggiuntivo VSTO genera un errore che non causa la chiusura imprevista dell'applicazione. Ad esempio, un'applicazione potrebbe eseguire la disabilitazione di tipo "soft" di un componente aggiuntivo VSTO se viene generata un'eccezione non gestita durante l'esecuzione del gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> .
 
 > [!NOTE]
@@ -61,7 +62,7 @@ ms.locfileid: "99942189"
 
 1. Nell'applicazione fare clic sulla scheda **File** .
 
-2. Fare clic sul pulsante delle **Opzioni** *ApplicationName* .
+2. Fare clic *sul pulsante ApplicationName* **Options (Opzioni nome** applicazione).
 
 3. Nel riquadro delle categorie fare clic su **Componenti aggiuntivi**.
 
@@ -76,6 +77,6 @@ ms.locfileid: "99942189"
 7. Fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedi anche
-- [Compilazione di soluzioni Office](../vsto/building-office-solutions.md)
-- [Debug di progetti di Office](../vsto/debugging-office-projects.md)
-- [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
+- [Compilare Office soluzioni](../vsto/building-office-solutions.md)
+- [Eseguire il debug Office progetti](../vsto/debugging-office-projects.md)
+- [Componenti aggiuntivi VSTO programma](../vsto/programming-vsto-add-ins.md)

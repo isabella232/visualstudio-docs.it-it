@@ -1,21 +1,22 @@
 ---
 title: TargetCLR | Microsoft Docs
-description: Informazioni su come l'opzione TargetCLR specifica la versione di Common Language Runtime da profilare quando più di una versione di CLR viene caricata in un'applicazione.
+description: Informazioni su come l'opzione TargetCLR specifica la versione del runtime di Common Language da profilare quando più di una versione di CLR viene caricata in un'applicazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 76454a77a895a44d4c6871ad5061ee4b6079e604
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2101d6702c4a493ba720ca1107d74c9fdeb7b2fc8e99e188c8400dd867109c0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868192"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396383"
 ---
 # <a name="targetclr"></a>TargetCLR
 L'opzione **TargetCLR** specifica la versione di Common Language Runtime (CLR) da sottoporre a profilatura quando in un'applicazione è caricata più di una versione di CLR.
@@ -34,9 +35,9 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **TargetCLR** può essere usata solo con le opzioni **Launch** o **Attach**.
 
- **Avvia:** `AppName` Avvia l'applicazione specificata e inizia a eseguire la profilatura.
+ **Avvia:** `AppName` Avvia l'applicazione specificata e inizia a profilare.
 
- **Connetti:** `PID` Inizia a profilare il processo specificato.
+ **Collega:** `PID` Inizia a profilare il processo specificato.
 
 ## <a name="example"></a>Esempio
  In questo esempio, l'opzione TargetCLR viene usata per assicurarsi che venga sottoposta a profilatura la versione di CLR 4.0.11003.

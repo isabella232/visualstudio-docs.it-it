@@ -1,6 +1,6 @@
 ---
 description: Notifica al pacchetto di debug che il testo è stato sostituito nel documento.
-title: 'IDebugDocumentTextEvents2:: onReplaceText | Microsoft Docs'
+title: IDebugDocumentTextEvents2::onReplaceText | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: cb39f025-66d8-4dc0-bef6-1bdc8e07db92
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f57c0a48e523a57582130107a0d8b1012b1232e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2553c26ecbe229bcaab4989b22349a0644a2b869a5ad7e6fb3629f62d195a636
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054348"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402831"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 Notifica al pacchetto di debug che il testo è stato sostituito nel documento.
@@ -44,10 +45,10 @@ int onReplaceText(
 
 ## <a name="parameters"></a>Parametri
 `pos`\
-in Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) indica dove è stato sostituito il testo.
+[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) indica dove è stato sostituito il testo.
 
 `dwNumToReplace`\
-in Specifica il numero di caratteri del testo sostituito.
+[in] Specifica il numero di caratteri di testo che sono stati sostituiti.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

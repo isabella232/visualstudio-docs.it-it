@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia rappresenta un tipo di una variabile.
+description: Questa interfaccia rappresenta un tipo di variabile.
 title: IDebugDynamicField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf1d72bfa38e6af0419e696b267699d10340cc68
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: feb2cf82f9ede13d179763f6ab02721ad6a616566cc7aae4f9a076c7bf3aad33
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094081"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390138"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
-Questa interfaccia rappresenta un tipo di una variabile.
+Questa interfaccia rappresenta un tipo di variabile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,13 +36,13 @@ IDebugDynamicField : IDebugField
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Questa interfaccia rappresenta una classe di base da cui è possibile derivare interfacce più specializzate.
 
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
+## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
  Questa interfaccia non fornisce metodi diversi da quelli ereditati da `IDebugField` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: sh. h
+ Intestazione: sh.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

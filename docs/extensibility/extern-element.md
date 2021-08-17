@@ -13,17 +13,18 @@ ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 502b93f18aacfed26d3ea440c017e6de5281a35d
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 22f10cb94421d891f62bc5e57769e740e25dc05089c7dd442a145ebd1077b060
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900187"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401791"
 ---
 # <a name="extern-element"></a>Elemento Extern
-L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna ( con estensione *h*) da unire al file con estensione *vsct* in fase di compilazione. I file da unire devono essere nel percorso Include fornito al compilatore VSCT o a cui fa riferimento un [elemento Include.](../extensibility/include-element.md) I file possono essere altri *file con estensione vsct* o file di intestazione C++.
+L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna ( con estensione *h*) da unire al file con estensione *vsct* in fase di compilazione. I file da unire devono essere nel percorso Include fornito al compilatore VSCT o a cui fa riferimento un [elemento Include](../extensibility/include-element.md). I file possono essere altri *file con estensione vsct* o file di intestazione C++.
 
  Le definizioni nei file di intestazione devono essere nel formato "#define [Simbolo] [Valore]" Il valore può essere un altro simbolo se è definito in precedenza. Le definizioni possono essere usate nelle istruzioni condizionali degli elementi di comando. Qualsiasi simbolo non effettivamente usato verrà eliminato.
 
@@ -43,7 +44,7 @@ L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna ( con 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |href|Obbligatorio. Percorso del file di intestazione:<br /><br /> href="stdidcmd.h"|
-|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 |Linguaggio|facoltativo. Lingua predefinita di tutti gli [\<Strings>](../extensibility/strings-element.md) elementi nella tabella dei comandi:<br /><br /> language="en-us"|
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -56,7 +57,7 @@ L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna ( con 
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano comandi, ovvero voci di menu, menu, barre degli strumenti e caselle combinate, forniti da un VSPackage all'IDE.|
+|[CommandTable - elemento](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano comandi, ovvero voci di menu, menu, barre degli strumenti e caselle combinate, forniti da un vspackage all'IDE.|
 
 ## <a name="example"></a>Esempio
 

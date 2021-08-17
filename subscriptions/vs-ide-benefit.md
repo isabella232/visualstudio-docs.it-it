@@ -7,12 +7,12 @@ ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
 ms.date: 07/30/2021
 ms.topic: how-to
 description: Informazioni su come scaricare e installare l'IDE Visual Studio incluso nella sottoscrizione Visual Studio
-ms.openlocfilehash: 6f9a420c06374f5b152dc119d2eb76af560a4b35
-ms.sourcegitcommit: 24dd8fbdf88eca005e9f01328ab57150de37d432
+ms.openlocfilehash: e9a79018f0d8fc1889c82b306e807b4fee2443c348cfdbac842edbaa83a2de95
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2021
-ms.locfileid: "115014818"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121421346"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
 
@@ -26,7 +26,7 @@ Per scaricare l'ambiente IDE:
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Individuare il Visual Studio IDE nella sezione Strumenti e fare clic sul **collegamento Scarica** nella parte inferiore del riquadro del vantaggio.  È anche possibile eseguire il download dalla pagina [Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
-   > ! [Visual Studio Enterprise riquadro] (_img/vs-ide-experience/vs-ide-tile.png "Fare clic su "Scarica" nel riquadro Visual Studio per installare Visual Studio.")
+   > ! [Visual Studio Enterprise riquadro] (_img/vs-ide-experience/vs-ide-tile.png "Fare clic su "Download" nel riquadro Visual Studio per installare Visual Studio.")
 
 3. Verrà effettuato il reindirizzamento alla pagina Scarica i risultati di Visual Studio. Qui è possibile scaricare l'ambiente IDE e ottenere un codice Product Key per attivarlo. È anche possibile richiedere un codice Product Key facendo clic sul pulsante azzurro **Ottieni chiave**. In alternativa, è possibile richiedere un codice Product Key in seguito nella pagina [Product keys](https://my.visualstudio.com/productkeys) (Codici Product Key).
 4. Nella scheda Dettagli della pagina Scarica i risultati:
@@ -66,13 +66,13 @@ Per scaricare l'ambiente IDE:
 | Visual Studio Enterprise sottoscrizione con GitHub Enterprise   | Vl | Disponibile       |  Sì          |
 | Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Disponibile                                                            |  Sì          |
 | Visual Studio Professional sottoscrizione con GitHub Enterprise | Vl   | Disponibile              |  Sì          |
-| Visual Studio Test Professional (Standard)                         | Tutti                                            | Non disponibile                                             |  N/D         |
-| MSDN Platforms (Standard)                                          | Tutti                                              | Non disponibile                                              |  N/D          |
+| Visual Studio Test Professional (Standard)                         | Tutti                                            | Non disponibile                                             |  N/A         |
+| MSDN Platforms (Standard)                                          | Tutti                                              | Non disponibile                                              |  N/A          |
 
 <sup>1</sup>*Include: Not for Resale (NFR), NFR Basic, Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Esclude: MCT Software & Services.*  
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare le diverse opzioni per l'acquisto Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
 
 Non si è certi della sottoscrizione in uso?  Connessione a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
@@ -80,9 +80,9 @@ Non si è certi della sottoscrizione in uso?  Connessione a per [https://my.visu
 - Se serve assistenza per l'IDE di Visual Studio, vedere queste risorse:
   - Supporto tecnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Documentazione](/visualstudio/)
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://my.visualstudio.com/gethelp)
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni.](https://my.visualstudio.com/gethelp)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

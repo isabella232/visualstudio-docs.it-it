@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6902aa352e17956251c606ffd2a4b198948270eed4f948d83aa92463d1a7ccd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985284"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121422994"
 ---
 # <a name="managing-app-resources"></a>Gestione delle risorse delle app
 
@@ -37,6 +37,6 @@ Il codice Xamarin.Forms viene eseguito su più piattaforme, ognuna con un file s
 
 * [Working with Images (Uso delle immagini)](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire le risorse dell'applicazione (Visual Studio in Windows)](/visualstudio/ide/managing-application-resources-dotnet)

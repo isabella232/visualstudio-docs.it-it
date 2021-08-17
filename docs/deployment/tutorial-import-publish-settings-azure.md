@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a65d681693bd9c1421767d2cac47f65b685e6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18231d36d5aef25917dccde045cad739848ef3f19bc840cac76753636c4bfc03
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945045"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390940"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione nel servizio app di Azure importando le impostazioni di pubblicazione in Visual Studio
 
@@ -30,10 +31,10 @@ In questa esercitazione si apprenderà come:
 > * Importare il file delle impostazioni di pubblicazione in Visual Studio
 > * Distribuire l'app nel servizio app di Azure
 
-Un file di impostazioni di pubblicazione (con *\* estensione publishsettings*) è diverso rispetto a un profilo di pubblicazione (con *\* estensione pubxml*) creato in Visual Studio. Il file delle impostazioni di pubblicazione viene creato dal servizio app di Azure e quindi importato in Visual Studio.
+Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da un profilo di pubblicazione (*\* pubxml*) creato in Visual Studio. Il file delle impostazioni di pubblicazione viene creato dal servizio app di Azure e quindi importato in Visual Studio.
 
 > [!NOTE]
-> Se è sufficiente copiare un profilo di pubblicazione di Visual Studio (file con *\* estensione pubxml* ) da un'installazione di Visual Studio a un'altra, è possibile trovare il profilo di pubblicazione, *\<profilename\> . pubxml*, nella cartella *\\<NomeProgetto \> \Properties\PublishProfiles* per i tipi di progetto gestiti. Per i siti Web, cercare nella cartella *\App_Data*. I profili di pubblicazione sono file XML di MSBuild.
+> Se è sufficiente copiare un profilo di pubblicazione Visual Studio (file con estensione *\* pubxml)* da un'installazione di Visual Studio a un'altra, è possibile trovare il profilo di pubblicazione, *\<profilename\> .pubxml*, nella cartella nomeprogetto *\\ di<\> \Properties\PublishProfiles* per i tipi di progetto gestiti. Per i siti Web, cercare nella cartella *\App_Data*. I profili di pubblicazione sono file XML di MSBuild.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -41,14 +42,14 @@ Un file di impostazioni di pubblicazione (con *\* estensione publishsettings*) �
 
 * È necessario aver installato Visual Studio 2019 e il carico di lavoro **Sviluppo ASP.NET e Web**.
 
-    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * È necessario aver installato Visual Studio 2017 e il carico di lavoro **Sviluppo ASP.NET e Web**.
 
-    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 ::: moniker-end
 
 * Creare un servizio app di Azure. Per istruzioni dettagliate, vedere [Distribuire un'app Web ASP.NET Core in Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
@@ -57,25 +58,25 @@ Un file di impostazioni di pubblicazione (con *\* estensione publishsettings*) �
 
 1. Creare un nuovo progetto nel computer che esegue Visual Studio.
 
-    Scegliere il modello corretto. In questo esempio scegliere **ASP.NET Web Application (.NET Framework)** o (solo per C#) **ASP.NET Core applicazione Web** e quindi fare clic su **OK**.
+    Scegliere il modello corretto. In questo esempio scegliere **ASP.NET App web (.NET Framework)** o (solo per C#) ASP.NET Core **Applicazione Web** e quindi selezionare **OK.**
 
-    Se non vengono visualizzati i modelli di progetto specificati, passare al collegamento **apri programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **nuovo progetto** . Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro di sviluppo ASP.NET e Web** .
+    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra di dialogo Nuovo **Project** progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro ASP.NET sviluppo Web e** web.
 
     Il modello di progetto selezionato (ASP.NET o ASP.NET Core) deve corrispondere alla versione di ASP.NET installata nel server Web.
 
-1. Scegliere **MVC** (.NET Framework) o **applicazione Web (Model-View-Controller)** (per .NET Core) e assicurarsi che non sia selezionata **l'opzione autenticazione** , quindi selezionare **OK**.
+1. Scegliere **MVC** (.NET Framework) o Applicazione **Web (Model-View-Controller) (per** .NET Core) e assicurarsi che l'opzione Nessuna autenticazione sia selezionata e quindi selezionare **OK**. 
 
-1. Digitare un nome come **MyWebApp** e fare clic su **OK**.
+1. Digitare un nome come **MyWebApp** e selezionare **OK.**
 
     Visual Studio crea il progetto.
 
-1. Scegliere **Compila**  >  **Compila soluzione** per compilare il progetto.
+1. Scegliere **Compila**  >  **soluzione per** compilare il progetto.
 
 ## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Creare il file delle impostazioni di pubblicazione nel servizio app di Azure
 
 1. Nel portale di Azure aprire il servizio app di Azure.
 
-1. Passare a **Ottieni profilo di pubblicazione** e salvare il profilo localmente.
+1. Passare a **Get publish profile** (Ottieni profilo di pubblicazione) e salvare il profilo in locale.
 
     ![Recuperare il profilo di pubblicazione](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 

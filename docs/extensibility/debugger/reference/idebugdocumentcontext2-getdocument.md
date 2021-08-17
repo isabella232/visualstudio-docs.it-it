@@ -1,6 +1,6 @@
 ---
 description: Ottiene il documento che contiene questo contesto del documento.
-title: 'IDebugDocumentContext2:: GetDocument | Microsoft Docs'
+title: Interfaccia IDebugDocumentContext2::GetDocument | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: c6d46c5d-ade8-4dc8-9862-8fc7876658c4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c554f43b596d9114153c3806340434e12206a80a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a244f08c4c455edce778732d1f93bbe023e3112379480c535e0471eed0c8a4d3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066659"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402857"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 Ottiene il documento che contiene questo contesto del documento.
@@ -42,7 +43,7 @@ int GetDocument(
 
 ## <a name="parameters"></a>Parametri
 `ppDocument`\
-out Restituisce un oggetto [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) che rappresenta il documento che contiene questo contesto del documento.
+[out] Restituisce un [oggetto IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) che rappresenta il documento che contiene questo contesto del documento.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

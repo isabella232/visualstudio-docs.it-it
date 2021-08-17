@@ -1,6 +1,6 @@
 ---
-description: Recupera un file di origine per mezzo di un indice.
-title: 'IDiaEnumSourceFiles:: Item | Microsoft Docs'
+description: Recupera un file di origine tramite un indice.
+title: IDiaEnumSourceFiles::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: 3c19d7ed-0232-4b0e-9b10-f33ed9e0c93b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a592c715e066059a2f1d3840ae6959e2fe2751c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 798aa0aafc17e03ea56eecc7de46c273c3346396bca57990bc0c56e8f4eb67d8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148836"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392472"
 ---
 # <a name="idiaenumsourcefilesitem"></a>IDiaEnumSourceFiles::Item
-Recupera un file di origine per mezzo di un indice.
+Recupera un file di origine tramite un indice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +34,13 @@ HRESULT Item (
 ```
 
 #### <a name="parameters"></a>Parametri
- indice
+ index
 
-in Indice dell'oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) da recuperare. L'indice è compreso nell'intervallo tra 0 e `count` -1, dove `count` viene restituito dal metodo [IDiaEnumSourceFiles:: get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md) .
+[in] Indice [dell'oggetto IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) da recuperare. L'indice è compreso nell'intervallo da 0 a -1, dove viene restituito dal `count` `count` metodo [IDiaEnumSourceFiles::get_Count.](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)
 
  sourceFile
 
-out Restituisce un oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine desiderato.
+[out] Restituisce un [oggetto IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine desiderato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

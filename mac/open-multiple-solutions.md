@@ -7,12 +7,12 @@ ms.date: 11/09/2020
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: e54f002141379d93a40df69ea070d5a64eba2f7d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 0674cd136ecb23805ba4580d9eacbb373cf331ae8ba46a5e294eef589a1b49fd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493439"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121421819"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Aprire più soluzioni o istanze di Visual Studio per Mac
 
@@ -30,13 +30,13 @@ Per aprire una seconda istanza dell'ambiente di sviluppo integrato (IDE), fare c
 
 Per aprire una seconda soluzione insieme alla prima, procedere come segue:
 
-1. Con la prima soluzione già aperta, selezionare **file**  >  **Apri**.
+1. Con la prima soluzione già aperta, selezionare **Apri**  >  **file**.
 2. Sfogliare il file system per individuare la soluzione esistente.
-3. Selezionare il file con estensione **sln** e quindi **Opzioni** :
+3. Selezionare il file con estensione **sln** e quindi **Opzioni**:
 
     ![Screenshot di Visual Studio per Mac, con il file con estensione sln e il comando Opzioni evidenziati](media/open-multiple-solutions-image3.png)
 
-4. Deselezionare la casella **Chiudi l'area di lavoro corrente** :
+4. Deselezionare la casella **Chiudi l'area di lavoro corrente**:
 
     ![Screenshot della finestra di dialogo Opzioni con la casella Chiudi l'area di lavoro corrente deselezionata](media/open-multiple-solutions-image1.png)
 
@@ -44,7 +44,7 @@ Per aprire una seconda soluzione insieme alla prima, procedere come segue:
 
 In alternativa, se la soluzione è stata aperta di recente, è possibile usare la procedura seguente:
 
-1. Passare a **file**  >  **soluzioni recenti**.
+1. Passare a File Recent Solutions **(Soluzioni**  >  **recenti file).**
 
     ![Screenshot del menu Soluzioni recenti](media/open-multiple-solutions-image2.png)
 

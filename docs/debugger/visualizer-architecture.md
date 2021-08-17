@@ -1,6 +1,6 @@
 ---
-title: Architettura del Visualizzatore | Microsoft Docs
-description: Un visualizzatore Visualizza un tipo specifico di elemento dati e può consentire anche la modifica. Informazioni sull'architettura di un visualizzatore.
+title: Architettura del visualizzatore | Microsoft Docs
+description: Un visualizzatore visualizza un tipo specifico di elemento dati e può consentire anche la modifica. Informazioni sull'architettura di un visualizzatore.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,14 +13,15 @@ ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9df1dfa1912c54d30c5c428ec59de9432fe68051
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e73f1746bf4a5b5ee597ad905392cd1f95dc2135379e89b102cce4381c70aa7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884247"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121418584"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 L'architettura di un visualizzatore del debugger è definita da due parti:
@@ -92,4 +93,4 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 - [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Considerazioni sulla sicurezza del Visualizzatore](../debugger/visualizer-security-considerations.md)
+- [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)

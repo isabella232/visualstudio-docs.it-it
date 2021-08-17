@@ -1,6 +1,6 @@
 ---
 title: EndTrackingContext | Microsoft Docs
-description: Informazioni su sintassi, valore restituito e requisiti per utilizzare MSBuild EndTrackingContext per terminare il contesto di rilevamento corrente.
+description: Informazioni sulla sintassi, sul valore restituito e sui requisiti da usare MSBuild EndTrackingContext per terminare il contesto di rilevamento corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,14 +15,15 @@ ms.assetid: c2c5d794-8dc8-4594-8717-70dc79a0e75d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 90f4c8c4a83a496dba537e74dddfde4ae3f2f21a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: debfb2a287c8efe447c0c1fa299ddf15d25936f802609c4b00a55dfb91a646f6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877226"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397930"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 
@@ -36,7 +37,7 @@ HRESULT WINAPI EndTrackingContext();
 
 ## <a name="return-value"></a>Valore restituito
 
-**HRESULT** con il bit **succeeded** impostato se il contesto di rilevamento è terminato.
+HRESULT **con** il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato terminato.
 
 ## <a name="requirements"></a>Requisiti
 

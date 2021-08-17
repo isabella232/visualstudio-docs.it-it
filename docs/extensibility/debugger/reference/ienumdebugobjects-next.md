@@ -1,6 +1,6 @@
 ---
-description: Questo metodo restituisce il set successivo di elementi IDebugObject dall'enumerazione.
-title: 'IEnumDebugObjects:: Next | Microsoft Docs'
+description: Questo metodo restituisce il set successivo di elementi IDebugObject dall'enumerazione .
+title: IEnumDebugObjects::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: e54c3055-6030-4dc9-9f7a-5e3ce75f252f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 661d95f2196787502ab0ce144f6a7490c9911eca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e7c95876f51fe33224a246a530cb02f0b36a7cdbee2ee61201bc74aa6b08ce6d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064570"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401908"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
-Questo metodo restituisce il set successivo di elementi dall'enumerazione.
+Questo metodo restituisce il set successivo di elementi dall'enumerazione .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,16 +47,16 @@ int Next(
 
 ## <a name="parameters"></a>Parametri
 `celt`\
-[in] Numero di elementi da recuperare. Specifica inoltre la dimensione massima della `rgelt` matrice.
+[in] Numero di elementi da recuperare. Specifica anche le dimensioni massime della `rgelt` matrice.
 
 `rgelt`\
-[in, out] Matrice di elementi [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) da compilare.
+[in, out] Matrice di [elementi IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) da riempire.
 
 `pceltFetched`\
-out Restituisce il numero di elementi effettivamente restituiti in `rgelt` .
+[out] Restituisce il numero di elementi effettivamente restituiti in `rgelt` .
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è possibile che venga restituito un numero di elementi inferiore al numero richiesto; in caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di `S_FALSE` elementi richiesto. In caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

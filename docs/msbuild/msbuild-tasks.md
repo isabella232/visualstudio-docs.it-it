@@ -1,6 +1,6 @@
 ---
 title: Attività di MSBuild | Microsoft Docs
-description: Informazioni su come MSBuild usa le attività o unità di codice eseguibile che eseguono operazioni di compilazione atomiche durante il processo di compilazione.
+description: Informazioni su MSBuild le attività, o unità di codice eseguibile che eseguono operazioni di compilazione atomiche, durante il processo di compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,36 +11,37 @@ ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b3bb4c1a17cd5d1481be2fa942686bce3861bb2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c32c693e7bbcede9764a7d186607c98a3951668918dc9e2063ecd208f78ca74
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918916"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397397"
 ---
 # <a name="msbuild-tasks"></a>MSBuild (attività)
 
-Una piattaforma di compilazione deve poter eseguire un numero illimitato di azioni durante il processo di compilazione. MSBuild usa le *attività* per eseguire queste azioni. Un'attività è un'unità di codice eseguibile utilizzata da MSBuild per eseguire operazioni di compilazione atomiche.
+Una piattaforma di compilazione deve poter eseguire un numero illimitato di azioni durante il processo di compilazione. MSBuild usa *le attività* per eseguire queste azioni. Un'attività è un'unità di codice eseguibile usato MSBuild per eseguire operazioni di compilazione atomiche.
 
 ## <a name="task-logic"></a>Logica delle attività
 
- Il formato del file di progetto XML di MSBuild non è in grado di eseguire completamente le operazioni di compilazione, pertanto la logica dell'attività deve essere implementata all'esterno del file di progetto.
+ Il MSBuild file di progetto XML non può eseguire completamente le operazioni di compilazione, pertanto la logica dell'attività deve essere implementata all'esterno del file di progetto.
 
  La logica di esecuzione di un'attività viene implementata come classe .NET che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>, definita nello spazio dei nomi <xref:Microsoft.Build.Framework>.
 
- La classe dell'attività definisce anche i parametri di input e di output disponibili per l'attività nel file di progetto. A tutte le proprietà non statiche impostabili pubbliche esposte dalla classe di attività è possibile assegnare valori nel file di progetto inserendo un attributo corrispondente con lo stesso nome nell'elemento [Task](../msbuild/task-element-msbuild.md) e impostandone il valore come illustrato negli esempi più avanti in questo articolo.
+ La classe dell'attività definisce anche i parametri di input e di output disponibili per l'attività nel file di progetto. A tutte le proprietà non astratte non statiche impostabili pubbliche esposte dalla classe di attività è possibile assegnare valori nel file di progetto inserendo un attributo corrispondente con lo stesso nome nell'elemento [Task](../msbuild/task-element-msbuild.md) e impostandone il valore come illustrato negli esempi più avanti in questo articolo.
 
- Per scrivere un'attività personalizzata, è sufficiente creare una classe gestita che implementi l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per ulteriori informazioni, vedere la pagina relativa alla [scrittura di attività](../msbuild/task-writing.md).
+ Per scrivere un'attività personalizzata, è sufficiente creare una classe gestita che implementi l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Scrittura di attività.](../msbuild/task-writing.md)
 
 ## <a name="execute-a-task-from-a-project-file"></a>Esecuzione di un'attività da un file di progetto
 
- Prima di eseguire un'attività nel file di progetto, è necessario eseguire il mapping del tipo nell'assembly che implementa l'attività al nome dell'attività con l'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). In questo modo, MSBuild sa dove cercare la logica di esecuzione dell'attività quando viene trovata nel file di progetto.
+ Prima di eseguire un'attività nel file di progetto, è necessario eseguire il mapping del tipo nell'assembly che implementa l'attività al nome dell'attività con l'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Ciò consente MSBuild sapere dove cercare la logica di esecuzione dell'attività quando la trova nel file di progetto.
 
- Per eseguire un'attività in un file di progetto MSBuild, creare un elemento con il nome dell'attività come figlio di un `Target` elemento. Se un'attività accetta i parametri, questi vengono passati come attributi dell'elemento.
+ Per eseguire un'attività in MSBuild file di progetto, creare un elemento con il nome dell'attività come figlio di un `Target` elemento . Se un'attività accetta i parametri, questi vengono passati come attributi dell'elemento.
 
- Gli elenchi di elementi e le proprietà di MSBuild possono essere utilizzati come parametri. Il codice seguente, ad esempio, chiama l' `MakeDir` attività e imposta il valore della `Directories` proprietà dell' `MakeDir` oggetto su un valore uguale al valore della `BuildDir` proprietà:
+ MSBuild gli elenchi di elementi e le proprietà possono essere usati come parametri. Ad esempio, il codice seguente chiama l'attività e imposta il valore della proprietà `MakeDir` `Directories` dell'oggetto `MakeDir` uguale al valore della proprietà `BuildDir` :
 
 ```xml
 <Target Name="MakeBuildDirectory">
@@ -65,11 +66,11 @@ Una piattaforma di compilazione deve poter eseguire un numero illimitato di azio
 
 ## <a name="included-tasks"></a>Attività incluse
 
- MSBuild viene fornito con molte attività, ad esempio [Copy](../msbuild/copy-task.md), che copia i file, [MakeDir](../msbuild/makedir-task.md), che creano le directory e [CSC](../msbuild/csc-task.md), che compila i file di codice sorgente C#. Per un elenco completo delle attività e delle informazioni sull'utilizzo disponibili, vedere [riferimento alle attività](../msbuild/msbuild-task-reference.md).
+ MSBuild viene fornito con molte attività, ad esempio [Copia](../msbuild/copy-task.md), che copia i file, [MakeDir](../msbuild/makedir-task.md), che crea directory, e [Csc](../msbuild/csc-task.md), che compila i file di codice sorgente C#. Per un elenco completo delle attività disponibili e delle informazioni sull'utilizzo, vedere [Informazioni di riferimento sulle attività.](../msbuild/msbuild-task-reference.md)
 
 ## <a name="overridden-tasks"></a>Attività sottoposte a override
 
- MSBuild cerca le attività in diverse posizioni. Il primo percorso è nei file con estensione *. OverrideTasks* archiviato nelle directory .NET Framework. Le attività in questi file eseguono l'override delle altre attività con gli stessi nomi, incluse le attività nel file di progetto. La seconda posizione è nei file con estensione *. Attività* nelle directory .NET Framework. Se l'attività non è presente in nessuna di queste posizioni, viene usata l'attività nel file di progetto.
+ MSBuild cerca le attività in diverse posizioni. Il primo percorso è in file con estensione *. OverrideTasks* archiviato nelle directory .NET Framework. Le attività in questi file eseguono l'override delle altre attività con gli stessi nomi, incluse le attività nel file di progetto. Il secondo percorso si trova nei file con estensione *. Attività* nelle .NET Framework directory. Se l'attività non è presente in nessuna di queste posizioni, viene usata l'attività nel file di progetto.
 
 ## <a name="see-also"></a>Vedi anche
 

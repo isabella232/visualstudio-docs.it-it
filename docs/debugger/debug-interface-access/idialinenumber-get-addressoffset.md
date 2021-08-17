@@ -1,5 +1,5 @@
 ---
-description: Recupera la parte di offset dell'indirizzo di memoria in cui inizia un blocco.
+description: Recupera la parte dell'offset dell'indirizzo di memoria in cui inizia un blocco.
 title: IDiaLineNumber::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 3bcb5500-b26c-4d3c-9d81-0a389a3715c3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ec25e04e3d2bb6cbf5b34fedefa6eec20a1a3792
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 293b7d2655727405c2070a79d213611f3a1f1a1abedd52a7ee83161359aadce6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148318"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392232"
 ---
 # <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
-Recupera la parte di offset dell'indirizzo di memoria in cui inizia un blocco.
+Recupera la parte dell'offset dell'indirizzo di memoria in cui inizia un blocco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT get_addressOffset (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce la parte di offset dell'indirizzo di memoria in cui inizia un blocco.
+[out] Restituisce la parte dell'offset dell'indirizzo di memoria in cui inizia un blocco.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

@@ -1,6 +1,6 @@
 ---
 description: Questo metodo ottiene informazioni visualizzabili sul campo.
-title: 'IDebugField:: GetInfo | Microsoft Docs'
+title: IDebugField::GetInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: deebf0c8dafe64c8eb78ba5a1af0b8f96c70a18a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c41d00a8f8a42e3c92e88dec911b6d0fd638ecedd77665a240475b417da52072
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077057"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389852"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 Questo metodo ottiene informazioni visualizzabili sul campo.
@@ -44,10 +45,10 @@ int GetInfo(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-in Combinazione di [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) costanti che seleziona le informazioni da visualizzare. Se il campo rappresenta un simbolo, si tratta in genere del nome e del tipo del simbolo.
+[in] Combinazione [di FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) costanti che selezionano le informazioni da visualizzare. Se il campo rappresenta un simbolo, si tratta in genere del nome e del tipo del simbolo.
 
 `pFieldInfo`\
-out Restituisce le informazioni nella struttura [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) fornita.
+[out] Restituisce le informazioni nella struttura [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) specificata.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,6 +1,6 @@
 ---
-description: Crea un oggetto String.
-title: 'IDebugFunctionObject:: CreateStringObject | Microsoft Docs'
+description: Crea un oggetto stringa.
+title: IDebugFunctionObject::CreateStringObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15ad52d990492d7f78f3f8246e786dc0b037e23f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bde58276a04508f3e402a813a1b3414c3f06617868e0e8dc6670f0abfd357cea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072897"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402740"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
-Crea un oggetto String.
+Crea un oggetto stringa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +45,16 @@ int CreateStringObject(
 
 ## <a name="parameters"></a>Parametri
 `pcstrString`\
-in Valore stringa per l'oggetto stringa.
+[in] Valore stringa per l'oggetto stringa.
 
 `ppObject`\
-out Restituisce un oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto stringa appena creato.
+[out] Restituisce un [oggetto IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto stringa appena creato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Chiamare questo metodo per creare un oggetto che rappresenta una stringa che rappresenta un parametro per la funzione rappresentata dall'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
+ Chiamare questo metodo per creare un oggetto che rappresenta una stringa che è un parametro della funzione rappresentata [dall'interfaccia IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

@@ -1,6 +1,6 @@
 ---
 title: Rapporto profilo di esecuzione| Microsoft Docs
-description: Informazioni sul rapporto del profilo di esecuzione, ovvero un profilo di campionamento tradizionale nell'estensione del Visualizzatore di concorrenza per Visual Studio.
+description: Informazioni sul report del profilo di esecuzione, un profilo di campionamento tradizionale nell'estensione Visualizzatore di concorrenza per Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a61e3a9ba159977d4a835126b2a584be1597c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e08c84437bc8b24b0e7bd16d11bbe7bdee3852753ad93f2b4f84a32b7377585
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955255"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396656"
 ---
 # <a name="execution-profile-report"></a>Report del profilo di esecuzione
 Il rapporto del profilo di esecuzione è un profilo di campionamento tradizionale. I campioni vengono presi ogni millisecondo circa durante i periodi in cui un thread è in esecuzione su un core logico e il visualizzatore di concorrenza compila un albero delle chiamate tipico collazionando il set di stack di campioni accumulato. I dati della tabella possono essere influenzati dall'intervallo di tempo corrente e dai thread nascosti e dai filtri seguenti che possono essere applicati:
@@ -39,7 +40,7 @@ Il rapporto del profilo di esecuzione è un profilo di campionamento tradizional
 |% esclusivi|La percentuale di campioni totali visualizzata nella colonna dei campioni esclusivi. Le percentuali vengono arrotondate a due cifre decimali.|
 |Dettagli|Nome completo della funzione. Include il conteggio delle righe, se disponibile.|
 
- Questa tabella report può essere visualizzata nella visualizzazione [tempo di esecuzione (visualizzazione thread)](../profiling/execution-time-threads-view.md) .
+ Questa tabella del report è visibile nella visualizzazione Tempo di esecuzione [(visualizzazione Thread).](../profiling/execution-time-threads-view.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

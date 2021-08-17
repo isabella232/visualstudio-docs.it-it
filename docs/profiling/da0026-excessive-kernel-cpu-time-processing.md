@@ -1,5 +1,5 @@
 ---
-title: DA0026-elaborazione tempo CPU kernel eccessiva | Microsoft Docs
+title: DA0026 - Tempo di elaborazione CPU kernel eccessivo | Microsoft Docs
 description: Il tempo CPU proporzionale eseguito in modalità kernel ha superato la quantità di tempo trascorso in modalità utente.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,15 +11,16 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d39318433194693ee2b2cbbc8a94753cf2acd75d
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 2c0c15ef033b6e27dd047992e3c50cdbb25cf53a14e1bf6092f527ee2a298da1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465868"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396721"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Tempo di elaborazione CPU kernel eccessivo
 

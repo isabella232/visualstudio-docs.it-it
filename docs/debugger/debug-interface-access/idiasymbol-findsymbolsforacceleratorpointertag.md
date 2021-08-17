@@ -1,6 +1,6 @@
 ---
-description: Restituisce il numero di tag del puntatore acceleratore in una funzione stub C++ AMP.
-title: 'IDiaSymbol:: findSymbolsForAcceleratorPointerTag | Microsoft Docs'
+description: Restituisce il numero di tag del puntatore del tasto di scelta rapida in una C++ AMP stub.
+title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -9,17 +9,18 @@ ms.assetid: fb66852c-c5f7-4140-b9fe-20cb4e51a9fe
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a8dcdae4c430a07114f37e39bef2ce685c19ba15
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3327fda8b16e12a8f8c336e7a14cf41ce55115c598461ad5bf05e794ce4f0488
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156615"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391704"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Restituisce il numero di tag del puntatore acceleratore in una funzione stub C++ AMP.
+Restituisce il numero di tag del puntatore del tasto di scelta rapida in una C++ AMP stub.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,14 +33,14 @@ HRESULT findSymbolsForAccleratorPointerTag (
 #### <a name="parameters"></a>Parametri
  `tagValue`
 
-in Valore del tag del puntatore per il quale vengono trovati i record dei simboli puntati.
+[in] Valore del tag del puntatore per il quale vengono trovati i record del simbolo del puntato.
 
  `ppResult`
 
-out Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.
+[out] Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

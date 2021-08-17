@@ -1,6 +1,6 @@
 ---
 title: Visualizzazioni dei dati comuni | Microsoft Docs
-description: Per informazioni di riferimento sulle visualizzazioni e sui report dei file di dati del profiler comuni a tutti i metodi di profilatura, vedere questa sezione.
+description: Consultare questa sezione per informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,15 +11,16 @@ ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: acb27aa2d5a1a0dd032612635f4b6549fa6671e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fd392884396917dbf20cc45e8960d258333ae9fea9874a6f9a38376e38cea85
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941281"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396825"
 ---
 # <a name="common-data-views"></a>Visualizzazioni dei dati comuni
 Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.
@@ -29,7 +30,7 @@ Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i re
 
  Descrive la visualizzazione e il report di riepilogo. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione chiamante/chiamato](../profiling/caller-callee-view.md)
+- [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)
 
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.
 
@@ -37,15 +38,15 @@ Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i re
 
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione moduli](../profiling/modules-view.md)
+- [Visualizzazione Moduli](../profiling/modules-view.md)
 
  Descrive la visualizzazione e il report Moduli. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione funzioni](../profiling/functions-view.md)
+- [Visualizzazione Funzioni](../profiling/functions-view.md)
 
  Descrive la visualizzazione e il report Funzioni. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione righe](../profiling/lines-view.md)
+- [Visualizzazione Righe](../profiling/lines-view.md)
 
  Descrive la visualizzazione e il report Righe. Le colonne di dati dipendono dal metodo di profilatura.
 
@@ -53,7 +54,7 @@ Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i re
 
  Descrive la visualizzazione e il report Puntatori all'istruzione. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione processo](../profiling/process-view.md)
+- [Visualizzazione Processo](../profiling/process-view.md)
 
  Elenca l'ora di inizio e di fine di processi e thread.
 

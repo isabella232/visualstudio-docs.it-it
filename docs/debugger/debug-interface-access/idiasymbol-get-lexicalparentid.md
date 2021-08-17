@@ -11,14 +11,15 @@ ms.assetid: 6c0c2874-cc47-4e4f-ad9c-02a18a108d9d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef91c63332399c170ba5cd7a296c56b7d93b425
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bb24fba428635c9ad97b1cb947fd3802b42a5ec83b517e7d5ca32fe44fcad09b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161998"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391696"
 ---
 # <a name="idiasymbolget_lexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 Recupera l'identificatore padre lessicale del simbolo.
@@ -34,13 +35,13 @@ HRESULT get_lexicalParentId (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'ID padre lessicale del simbolo.
+[out] Restituisce l'ID padre lessicale del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.

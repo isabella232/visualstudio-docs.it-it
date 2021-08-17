@@ -6,16 +6,17 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9de3caf4bd0c9401628bb050168f3a7045f902f0
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: cd021ab15e7318a36fb7e41dd6f4f24ccaeebf0226b9a9ac76d0394d09a5349d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592177"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395896"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -39,13 +40,13 @@ In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per
 >
 > Creare un progetto di Visual Studio da codice esistente è davvero semplicissimo, come descritto in [Creare un progetto da file esistenti](#create-project-from-existing-files).
 
-![Icona della fotocamera del film per il video](../install/media/video-icon.png "Guardare un video") Deep [Dive: Usare il controllo](https://youtu.be/Aq8eqApnugM) del codice sorgente con progetti Python (youtube.com, 8m 55s).
+![Icona della fotocamera del film per il video](../install/media/video-icon.png "Guardare un video") Deep [Dive: Usare il](https://youtu.be/Aq8eqApnugM) controllo del codice sorgente con progetti Python (youtube.com, 8m 55s).
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Aggiungere file, assegnare un file di avvio e impostare gli ambienti
 
 Durante lo sviluppo dell'applicazione è in genere necessario aggiungere al progetto nuovi file di tipi diversi. Per aggiungere tali file, fare clic con il pulsante destro del mouse sul progetto e scegliere Aggiungi elemento esistente con cui cercare un file da aggiungere oppure Aggiungi nuovo elemento , che visualizza una finestra di dialogo con diversi modelli di  >     >  elemento. Come descritto nel riferimento ai [modelli di elemento](python-item-templates.md), le opzioni includono file Python vuoti, una classe Python, uno unit test e diversi file correlati ad applicazioni Web. È possibile esaminare queste opzioni usando un progetto di test per scoprire quali elementi sono inclusi nella propria versione di Visual Studio.
 
-A ogni progetto Python è assegnato un file di avvio, evidenziato in grassetto in **Esplora soluzioni**. Il file di avvio è il file che viene eseguito quando si avvia il debug (**F5** o Debug Avvia debug ) o quando si esegue il progetto nella finestra interattiva  >  (**MAIUSC**  + **ALT** + **F5**   >  o Esegui Project debug in Python Interactive ). Per modificare il valore, fare clic con il pulsante destro del mouse sul nuovo file e scegliere **Imposta come elemento di avvio** (o **Imposta come file di avvio** nelle versioni precedenti di Visual Studio).
+A ogni progetto Python è assegnato un file di avvio, evidenziato in grassetto in **Esplora soluzioni**. Il file di avvio è il file che viene eseguito quando si avvia il debug (**F5** o Avvia debug debug ) o quando si esegue il progetto nella finestra interattiva  >  (**MAIUSC**  + **ALT** + **F5**   >  o Esegui Project debug in Python Interactive ). Per modificare il valore, fare clic con il pulsante destro del mouse sul nuovo file e scegliere **Imposta come elemento di avvio** (o **Imposta come file di avvio** nelle versioni precedenti di Visual Studio).
 
 > [!Tip]
 > Se si rimuove il file di avvio selezionato da un progetto e non se ne seleziona uno nuovo, Visual Studio non sa quale file di Python usare per l'avvio quando si tenta di eseguire il progetto. In questo caso, Visual Studio 2017 versione 15.6 e versioni successive visualizzano un errore. Le versioni precedenti aprono una finestra di output con l'interprete Python in esecuzione oppure la finestra di output viene visualizzata ma scompare quasi immediatamente. In presenza di questi comportamenti, verificare che sia stato assegnato un file di avvio.
@@ -142,7 +143,7 @@ In presenza delle condizioni seguenti i file collegati vengono ignorati:
 
 Per aggiungere un elemento esistente come collegamento, fare clic con il pulsante destro del mouse sulla cartella nel progetto in cui si vuole aggiungere il file, quindi scegliere **Aggiungi**  >  **elemento esistente**. Nella finestra di dialogo visualizzata, selezionare un file e scegliere **Aggiungi come collegamento** nell'elenco a discesa del pulsante **Aggiungi**. Questo comando crea un collegamento nella cartella selezionata, purché non siano presenti file in conflitto. Il collegamento non verrà aggiunto se però è già presente un file con lo stesso nome o nel progetto esiste già un collegamento a tale file.
 
-Se si prova a collegare un file già esistente nelle cartelle di progetto, questo viene aggiunto come un file normale e non come collegamento. Per convertire un file in un collegamento, selezionare **Salva** con nome per salvare il file in un percorso esterno  >   alla gerarchia del progetto. Visual Studio lo converte automaticamente in un collegamento. Analogamente, un collegamento può essere convertito nuovamente usando Salva con nome **per** salvare il file in un punto qualsiasi  >   all'interno della gerarchia del progetto.
+Se si prova a collegare un file già esistente nelle cartelle di progetto, questo viene aggiunto come un file normale e non come collegamento. Per convertire un file in un collegamento, selezionare **Salva** con nome per salvare il file in un percorso esterno  >   alla gerarchia del progetto. Visual Studio lo converte automaticamente in un collegamento. Analogamente, un collegamento può essere convertito nuovamente usando Salva con nome **per** salvare il file in un punto  >   qualsiasi all'interno della gerarchia del progetto.
 
 Se si sposta un file collegato in **Esplora soluzioni**, viene spostato solo il collegamento, mentre il file effettivo rimane nella posizione originale. Analogamente, l'eliminazione di un collegamento implica solo la rimozione del collegamento e non del file.
 
@@ -160,7 +161,7 @@ I riferimenti alle estensioni indicano in genere le dipendenze tra progetti e ve
 
 Un riferimento a un file con estensione *pyd* consente di abilitare la funzionalità IntelliSense per il modulo generato. Visual Studio carica il file con estensione *pyd* nell'interprete Python e ne esamina tipi e funzioni. Prova inoltre ad analizzare le stringhe di documento relative alle funzioni per offrire il supporto per la firma.
 
-Se in qualsiasi momento il modulo di estensione viene aggiornato sul disco, Visual Studio analizza nuovamente il modulo in background. Questa azione non ha effetto sul comportamento in fase di esecuzione, ma alcuni completamenti non sono disponibili fino al completamento dell'analisi.
+Se in qualsiasi momento il modulo di estensione viene aggiornato sul disco, Visual Studio analizza nuovamente il modulo in background. Questa azione non ha alcun effetto sul comportamento in fase di esecuzione, ma alcuni completamenti non sono disponibili fino al completamento dell'analisi.
 
 Potrebbe anche essere necessario aggiungere un [percorso di ricerca](search-paths.md) per la cartella che contiene il modulo.
 

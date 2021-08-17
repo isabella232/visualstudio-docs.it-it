@@ -1,6 +1,6 @@
 ---
-title: Associare una pagina Web a una cartella di Outlook
-description: Informazioni su come associare una pagina Web alla Microsoft Office Outlook. In questo esempio viene verificata la presenza di una cartella denominata HtmlView in Outlook.
+title: Associare una pagina Web a una Outlook cartella
+description: Informazioni su come associare una pagina Web a Microsoft Office Outlook cartella. In questo esempio viene verificata la presenza di una cartella denominata HtmlView in Outlook.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,18 +14,19 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3f022deca9b8cd1b8f00bf847ab0bfdc7882a45f
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 6fce0a1a6fbe4537e87d88120550bd7a1f7788c07ab84a02f70cb9514c3fac7e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828267"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394587"
 ---
-# <a name="associate-a-web-page-with-an-outlook-folder"></a>Associare una pagina Web a una cartella di Outlook
+# <a name="associate-a-web-page-with-an-outlook-folder"></a>Associare una pagina Web a una Outlook cartella
 
-  In questo esempio viene verificata la presenza di una `HtmlView` cartella denominata in Microsoft Office Outlook. Se la cartella non esiste, il codice crea la cartella e vi assegna una pagina Web. Se la cartella esiste, il codice visualizza il contenuto della cartella.
+  In questo esempio viene verificata la presenza di una cartella `HtmlView` denominata in Microsoft Office Outlook. Se la cartella non esiste, il codice crea la cartella e vi assegna una pagina Web. Se la cartella esiste, il codice visualizza il contenuto della cartella.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

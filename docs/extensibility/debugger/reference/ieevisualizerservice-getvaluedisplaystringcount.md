@@ -1,6 +1,6 @@
 ---
-description: Recupera il numero di stringhe di valore da visualizzare per la proprietà o il campo specificati.
-title: 'IEEVisualizerService:: GetValueDisplayStringCount | Microsoft Docs'
+description: Recupera il numero di stringhe valore da visualizzare per la proprietà o il campo specificato.
+title: IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f48ff7d513b211396c0eec28f5670bbe648f01b4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: aaabad975a57e18c9257df178b29b594d892441482db30fcd00836c322fb0169
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080242"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389423"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-Recupera il numero di stringhe di valore da visualizzare per la proprietà o il campo specificati.
+Recupera il numero di stringhe valore da visualizzare per la proprietà o il campo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +46,13 @@ int GetValueDisplayStringCount (
 
 ## <a name="parameters"></a>Parametri
 `displayKind`\
-in Valore dell'enumerazione [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) .
+[in] Valore [dell'enumerazione DisplayKind.](../../../extensibility/debugger/reference/displaykind.md)
 
 `propertyOrField`\
-in Interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta una proprietà o un campo.
+[in] Interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta una proprietà o un campo.
 
 `pcelt`\
-out Restituisce il numero di stringhe di valore da visualizzare.
+[out] Restituisce il numero di stringhe di valori da visualizzare.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

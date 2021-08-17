@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se la funzione dispone di una convenzione di chiamata personalizzata.
+description: Recupera un flag che specifica se la funzione ha una convenzione di chiamata personalizzata.
 title: IDiaSymbol::get_customCallingConvention | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 07254544c4f86bae494e16f5fa1914b7dee345c0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 09421e68e727378be4a9bce20652b9aab9e5706544f84c103967192b59a9061b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161023"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420747"
 ---
 # <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
-Recupera un flag che specifica se la funzione dispone di una convenzione di chiamata personalizzata.
+Recupera un flag che specifica se la funzione ha una convenzione di chiamata personalizzata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +35,19 @@ HRESULT get_customCallingConvention(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione dispone di una convenzione di chiamata personalizzata; in caso contrario, restituisce `FALSE` , la funzione dispone di una convenzione di chiamata nota.
+[out] Restituisce `TRUE` se la funzione ha una convenzione di chiamata personalizzata; in caso contrario, restituisce , la funzione ha una `FALSE` convenzione di chiamata nota.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedi anche

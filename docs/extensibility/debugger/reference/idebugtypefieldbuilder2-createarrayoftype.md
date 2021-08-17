@@ -1,6 +1,6 @@
 ---
 description: Crea una matrice del tipo e delle dimensioni specificati.
-title: 'IDebugTypeFieldBuilder2:: CreateArrayOfType | Microsoft Docs'
+title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 954e30fc79ea6e581bc9f39dd17433f976b422ab
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3d64de27d36e73f860345393f687d72b3af28d934ee2d9a662ec7ba5ead5bc3c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083504"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389475"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 Crea una matrice del tipo e delle dimensioni specificati.
@@ -45,13 +46,13 @@ int CreateArrayOfType (
 
 ## <a name="parameters"></a>Parametri
 `pTypeField`\
-in Tipo di elementi che la matrice conterrà.
+[in] Tipo di elementi che la matrice conterà.
 
 `rank`\
-in Numero di elementi nella matrice.
+[in] Numero di elementi nella matrice.
 
 `pArrayOfTypeField`\
-out Restituisce gli oggetti [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresentano la nuova matrice.
+[out] Restituisce gli [oggetti IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresentano la nuova matrice.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

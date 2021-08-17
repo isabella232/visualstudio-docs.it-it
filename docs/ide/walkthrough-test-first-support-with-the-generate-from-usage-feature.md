@@ -1,6 +1,6 @@
 ---
-title: Sviluppo di test per primo con generazione dall'utilizzo
-description: Informazioni su come incorporare l'approccio di sviluppo di test prima tramite l'utilizzo della funzionalità di generazione dall'utilizzo.
+title: Sviluppo di test first con Generate From Usage (Genera dall'utilizzo)
+description: Informazioni su come incorporare l'approccio di sviluppo Test-first tramite l'uso della funzionalità Genera dall'utilizzo.
 ms.custom: SEO-VS-2020
 ms.date: 10/09/2017
 dev_langs:
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a1f115dfff92b1c5e5979e62af257cde6a92360
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 4cd2dd9610167197a8deaa1bdc88d4e5689636e75263785d92618eceee37f3bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216592"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121398484"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procedura dettagliata: Sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo
 
@@ -62,7 +63,7 @@ La funzionalità di **generazione dall'uso** può essere usata con framework di 
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Generare una nuova classe da uno unit test
 
-1. Il progetto di test contiene un file denominato *UnitTest1*. Fare doppio clic su questo file in **Esplora soluzioni** per aprirlo nell'editor di codice. Vengono generati una classe di test e un metodo di test.
+1. Il progetto di test contiene un file denominato *UnitTest1*. Fare doppio clic su questo file **Esplora soluzioni** per aprirlo nell'editor di codice. Vengono generati una classe di test e un metodo di test.
 
 2. Individuare la dichiarazione della classe `UnitTest1` e rinominarla in `AutomobileTest`.
 
@@ -85,7 +86,7 @@ La funzionalità di **generazione dall'uso** può essere usata con framework di 
 
 7. Fare clic su **OK** per chiudere la finestra di dialogo e creare il nuovo file.
 
-8. In **Esplora soluzioni** esaminare il nodo del progetto **GFUDemo_VB** o **GFUDemo_CS** per verificare che il nuovo file *automobile. vb* o *automobile. cs* sia presente. Nell'editor del codice lo stato attivo è ancora in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. È quindi possibile continuare a scrivere il test con un'interruzione minima.
+8. In **Esplora soluzioni**, esaminare il nodo del progetto **GFUDemo_VB** o **GFUDemo_CS** per verificare che il nuovo file *Automobile.vb* o *Automobile.cs* sia presente. Nell'editor del codice lo stato attivo è ancora in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. È quindi possibile continuare a scrivere il test con un'interruzione minima.
 
 ### <a name="generate-a-property-stub"></a>Generare uno stub per una proprietà
 Si supponga che la specifica del prodotto indichi che la classe `Automobile` ha due proprietà pubbliche denominate `Model` e `TopSpeed`. Queste proprietà devono essere inizializzate con i valori predefiniti `"Not specified"` e `-1` dal costruttore predefinito. Lo unit test seguente verificherà che il costruttore predefinito imposti le proprietà sui valori predefiniti corretti.
@@ -133,7 +134,7 @@ Si supponga che la specifica indichi che un nuovo oggetto `Automobile` può esse
 
 1. Nel menu **Test** scegliere **Esegui** > **Tutti i test**.
 
-     Il comando **Esegui**  >  **tutti i test** esegue tutti i test in tutti i Framework di test scritti per la soluzione corrente. In questo caso ci sono due test e hanno entrambi esito negativo, come previsto. Il test `DefaultAutomobileIsInitializedCorrectly` ha esito negativo perché la condizione `Assert.IsTrue` restituisce `False`. Il test `AutomobileWithModelNameCanStart` ha esito negativo perché il metodo `Start` nella classe `Automobile` genera un'eccezione.
+     Il **comando** Esegui tutti i test esegue tutti i test in tutti i framework di test scritti per la soluzione  >   corrente. In questo caso ci sono due test e hanno entrambi esito negativo, come previsto. Il test `DefaultAutomobileIsInitializedCorrectly` ha esito negativo perché la condizione `Assert.IsTrue` restituisce `False`. Il test `AutomobileWithModelNameCanStart` ha esito negativo perché il metodo `Start` nella classe `Automobile` genera un'eccezione.
 
      La finestra **Risultati test** è illustrata nella figura seguente.
 
@@ -163,7 +164,7 @@ Si supponga che la specifica indichi che un nuovo oggetto `Automobile` può esse
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generazione dall'utilizzo](../ide/visual-csharp-intellisense.md#generate-from-usage)
+- [Generare dall'utilizzo](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Usare IntelliSense](../ide/using-intellisense.md)
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

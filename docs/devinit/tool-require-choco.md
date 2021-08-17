@@ -1,6 +1,6 @@
 ---
 title: require-choco
-description: lo strumento devinit richiede-Choco.
+description: devinit tool require-choco.
 ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
@@ -11,29 +11,29 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 5ffd726133128e551ba9bec8c9288d43b7c9a5b6
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: fdd0df32661b573cc07d6fc76d488e769cc22bfda158f5b22ee86e6d949c7593
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672098"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390549"
 ---
 # <a name="require-choco"></a>require-choco
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo `require-choco` strumento può essere utilizzato per installare [cioccolato](https://chocolatey.org/).
+Lo `require-choco` strumento può essere usato per installare [chocolatey.](https://chocolatey.org/)
 
 ## <a name="usage"></a>Utilizzo
 
-Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
+Se entrambe `input` le proprietà e vengono omesse o vuote, lo strumento seguirà `additionalOptions` il [comportamento](#default-behavior) predefinito descritto di seguito.
 
 | Nome                                             | Tipo   | Obbligatoria | valore                                                                      |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------|
-| **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                      |
-| [**input**](#input)                              | stringa | No       | Non usato. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                           |
-| [**additionalOptions**](#additional-options)     | stringa | No       | Non usato. Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti. |
+| **Commenti**                                     | stringa | No       | Proprietà comments facoltativa. Non usato.                                      |
+| [**Input**](#input)                              | stringa | No       | Non usato. Per informazioni [dettagliate,](#input) vedere Input di seguito.                           |
+| [**additionalOptions**](#additional-options)     | stringa | No       | Non usato. Per [informazioni dettagliate, vedere](#additional-options) Opzioni aggiuntive di seguito. |
 
 ### <a name="input"></a>Input
 
@@ -45,12 +45,12 @@ Non usato.
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello `require-choco` strumento prevede l'installazione di Chocolate e la relativa aggiunta al `PATH` .
+Il comportamento predefinito dello `require-choco` strumento è installare chocolatey e aggiungerlo a `PATH` .
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito è riportato un esempio di come eseguire `require-choco` usando un `.devinit.json` .
+Di seguito è riportato un esempio di come eseguire `require-choco` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-chocolatey"></a>.devinit.jssu che installerà Chocolay:
+#### <a name="devinitjson-that-will-install-chocolatey"></a>.devinit.jsin verrà installato chocolatey:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

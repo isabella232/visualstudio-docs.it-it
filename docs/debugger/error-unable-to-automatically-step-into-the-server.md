@@ -1,6 +1,6 @@
 ---
-title: Non è possibile eseguire automaticamente l'istruzione nel server | Microsoft Docs
-description: Impossibile eseguire automaticamente l'istruzione sul server. Il debugger non ha ricevuto alcuna notifica prima dell'esecuzione della procedura remota.
+title: Impossibile eseguire automaticamente l'istruzione nel server | Microsoft Docs
+description: Impossibile eseguire automaticamente l'istruzione sul server. Il debugger non è stato informato prima dell'esecuzione della procedura remota.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a374afef2dea92fbad72c45e35ca06904d75cbbe
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a4f2f2dfc0e4b9a9cb6bc723e64c0172ab4be532d4128a5255d38b49e4a9452f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146483"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121419884"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Errore: impossibile eseguire automaticamente l'istruzione sul server
 Il testo dell'errore è simile al seguente:
@@ -39,5 +40,5 @@ Il testo dell'errore è simile al seguente:
 - Una versione di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] è stata installata dopo l'installazione di Visual Studio. Installare[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] prima di Visual Studio. Per risolvere il problema, usare **Pannello di controllo > Programmi e funzionalità** di Windows per ripristinare l'installazione di Visual Studio.
 
 ## <a name="see-also"></a>Vedi anche
-- [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Errori di debug remoto e risoluzione dei problemi](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debug remoto](../debugger/remote-debugging.md)

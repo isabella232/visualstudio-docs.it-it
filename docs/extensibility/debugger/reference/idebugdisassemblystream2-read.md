@@ -1,6 +1,6 @@
 ---
-description: Legge le istruzioni a partire dalla posizione corrente nel flusso di Disassembly.
-title: 'IDebugDisassemblyStream2:: Read | Microsoft Docs'
+description: Legge le istruzioni a partire dalla posizione corrente nel flusso disassembly.
+title: IDebugDisassemblyStream2::Read | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcabd0cc42f013b579ee32deeb33d68cd9d45f5d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: baa00f49844a4cdfa05905610f3e2ff6e6f6c4a1af7f124be5d55eb036606edc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066919"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402844"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Legge le istruzioni a partire dalla posizione corrente nel flusso di Disassembly.
+Legge le istruzioni a partire dalla posizione corrente nel flusso disassembly.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,26 +49,26 @@ int Read(
 
 ## <a name="parameters"></a>Parametri
 `dwInstructions`\
-in Numero di istruzioni da disassemblare. Questo valore è anche la lunghezza massima della `prgDisassembly` matrice.
+[in] Numero di istruzioni da disassemblare. Questo valore è anche la lunghezza massima della `prgDisassembly` matrice.
 
 `dwFields`\
-in Combinazione di flag dell'enumerazione [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) che indicano i campi da `prgDisassembly` compilare.
+[in] Combinazione di flag [dell'enumerazione DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) che indicano quali `prgDisassembly` campi di devono essere compilati.
 
 `pdwInstructionsRead`\
-out Restituisce il numero di istruzioni effettivamente disassemblate.
+[out] Restituisce il numero di istruzioni effettivamente disassemblate.
 
 `prgDisassembly`\
-out Matrice di strutture [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) compilata con il codice disassemblato, una struttura per istruzione disassemblata. La lunghezza di questa matrice è determinata dal `dwInstructions` parametro.
+[out] Matrice di [strutture DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) compilata con il codice disassemblato, una struttura per ogni istruzione disassemblata. La lunghezza di questa matrice è determinata dal `dwInstructions` parametro .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Il numero massimo di istruzioni disponibili nell'ambito corrente può essere ottenuto chiamando il metodo [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) .
+ È possibile ottenere il numero massimo di istruzioni disponibili nell'ambito corrente chiamando il [metodo GetSize.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
 
- La posizione corrente da cui viene letta l'istruzione successiva può essere modificata chiamando il metodo [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .
+ La posizione corrente da cui viene letta l'istruzione successiva può essere modificata chiamando il [metodo Seek.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 
- Il `DSF_OPERANDS_SYMBOLS` flag può essere aggiunto al `DSF_OPERANDS` flag nel `dwFields` parametro per indicare che i nomi dei simboli devono essere utilizzati per le istruzioni di disassemblaggio.
+ Il flag può essere aggiunto al flag nel parametro per indicare che i nomi dei simboli devono essere usati `DSF_OPERANDS_SYMBOLS` durante le istruzioni di `DSF_OPERANDS` `dwFields` disassemblamento.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
