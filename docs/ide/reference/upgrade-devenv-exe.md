@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3787cccb41738050fae1fe16e03e8a8ca273f5ebb30ac3b71e9d146c1b9e2001
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b82eb2d9be21464b0f160a114972ab6ae7df4d0b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387148"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048622"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 

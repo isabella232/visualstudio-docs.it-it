@@ -1,6 +1,6 @@
 ---
 title: Rapporto marcatori | Microsoft Docs
-description: Informazioni su come il rapporto marcatori elenca i marcatori nell'intervallo di tempo visualizzato e il modo in cui la panoramica o lo zoom potrebbe comportare la visualizzazione o la scomparsa dei marcatori.
+description: Informazioni su come il report marcatori elenca i marcatori nell'intervallo di tempo visualizzato e su come la panoramica o lo zoom potrebbe causare la visualizzazione o la scomparsa dei marcatori.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,14 +9,15 @@ ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b674a2051a0b8b7b96a9c9bf0fb114f0fef46e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 127193c854942836993ccdfe26ffb6e3642684746a7309551fcb188fc98cfdfd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876927"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121426378"
 ---
 # <a name="markers-report"></a>Rapporto marcatori
 Il rapporto Marcatori elenca i marcatori nell'intervallo di tempo visualizzato.  La panoramica o lo zoom così come le corsie nascoste potrebbero far comparire o scomparire i marcatori. Il rapporto contiene le informazioni seguenti per ogni marcatore:

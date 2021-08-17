@@ -1,6 +1,6 @@
 ---
 description: Carica i simboli di debug specificati in memoria.
-title: 'IDebugComPlusSymbolProvider:: LoadSymbols | Microsoft Docs'
+title: IDebugComPlusSymbolProvider::LoadSymbols | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30d127e57539e8dc14fc145f47fdad1c8a985d50
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 041b6fde00efaae5934d793738fe85584511a372
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095446"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079753"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Carica i simboli di debug specificati in memoria.
@@ -51,28 +52,28 @@ int LoadSymbols(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-in Identificatore del dominio dell'applicazione.
+[in] Identificatore del dominio applicazione.
 
 `guidModule`\
-in Identificatore univoco del mondule.
+[in] Identificatore univoco del mondulo.
 
 `baseAddress`\
-in Indirizzo di memoria di base.
+[in] Indirizzo di memoria di base.
 
 `pUnkMetadataImport`\
-in Oggetto che contiene i metadati del simbolo.
+[in] Oggetto che contiene i metadati del simbolo.
 
 `bstrModuleName`\
-in Nome del modulo.
+[in] Nome del modulo.
 
 `bstrSymSearchPath`\
-in Percorso in cui cercare il file di simboli.
+[in] Percorso in cui cercare il file di simboli.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbols(

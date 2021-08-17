@@ -4,18 +4,19 @@ description: Un'esperienza connessa si connette a Internet da un computer client
 ms.date: 05/20/2021
 ms.topic: conceptual
 helpviewer_keywords: ''
-author: SayyedaM
-ms.author: sayyedamussa
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
-ms.openlocfilehash: 689fc40be8aee959023777a3fac6d9134ee979ea
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 23c8107f8a11f7947f5e03c6512cf12321b87ece565ce52c94add4545373181e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222890"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430512"
 ---
 # <a name="connected-experiences-in-visual-studio"></a>**Esperienze connesse in Visual Studio** #
 
@@ -23,23 +24,23 @@ Visual Studio è costituito da applicazioni software client ed esperienze connes
 
 ## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Scegliere se queste esperienze connesse sono disponibili per l'uso ##
 
-È possibile scegliere le esperienze connesse da usare. L'uso di determinate esperienze connesse richiede l'accordo per termini diversi e aggiuntivi Visual Studio contratto di licenza. Queste esperienze possono essere servizi Servizi online e/o di proprietà di terze parti. Ad esempio, quando si usano GitHub esperienze connesse, verranno applicate l'informativa sulla privacy di [GitHub](https://docs.github.com/github/site-policy/github-privacy-statement) e le Condizioni per [](https://docs.github.com/github/site-policy/github-additional-product-terms) il servizio [GitHub](https://docs.github.com/github/site-policy/github-terms-of-service), [GitHub Condizioni](https://docs.github.com/github/site-policy/github-corporate-terms-of-service)per il servizio aziendale e/o Condizioni aggiuntive del prodotto. Se si [segnala un problema,](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)si accettano le [Condizioni per](https://www.microsoft.com/legal/terms-of-use) l'utilizzo e l'Informativa sulla [privacy Microsoft.](https://privacy.microsoft.com/en-us/privacystatement) Se si usa il servizio NuGet, si accettano le condizioni NuGet [per](https://www.nuget.org/policies/Terms) l'utilizzo e l'Informativa [sulla privacy Microsoft.](https://privacy.microsoft.com/en-us/privacystatement) 
+È possibile scegliere le esperienze connesse da usare. L'uso di determinate esperienze connesse richiede l'accordo per termini diversi e aggiuntivi per il contratto Visual Studio contratto di licenza. Queste esperienze possono essere servizi Servizi online e/o di proprietà di terze parti. Ad esempio, quando si usano GitHub esperienze connesse, verranno applicate l'informativa sulla privacy di [GitHub](https://docs.github.com/github/site-policy/github-privacy-statement) e le Condizioni per il servizio [GitHub](https://docs.github.com/github/site-policy/github-terms-of-service), [GitHub Condizioni](https://docs.github.com/github/site-policy/github-corporate-terms-of-service)per il servizio aziendale e/o Condizioni aggiuntive del prodotto. [](https://docs.github.com/github/site-policy/github-additional-product-terms) Se si [segnala un problema,](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)si accettano le [Condizioni per l'utilizzo e](https://www.microsoft.com/legal/terms-of-use) l'Informativa sulla privacy [Microsoft.](https://privacy.microsoft.com/en-us/privacystatement) Se si usa il servizio NuGet, si accettano le condizioni NuGet [per](https://www.nuget.org/policies/Terms) l'utilizzo e l'Informativa [sulla privacy Microsoft.](https://privacy.microsoft.com/en-us/privacystatement) 
 
 Quando si installa Visual Studio, è possibile selezionare facoltativamente carichi di lavoro [e componenti per installare](/visualstudio/install/install-visual-studio). I carichi di lavoro e i componenti possono sfruttare software di terze parti e possono abilitare esperienze connesse, a seconda delle funzionalità. Ad esempio, [il download del carico di lavoro sviluppo di Azure consente di pubblicare le app cloud in Azure.](https://visualstudio.microsoft.com/vs/features/azure/) In base alle selezioni di installazione, è anche possibile usare il menu Strumenti e opzioni per connettersi, configurare e usare esperienze connesse. Ad esempio, è possibile connettersi a un server, aggiungere l'autenticazione di Servizi di Azure o modificare le impostazioni di IntelliCode o LiveShare.  
 
 È anche possibile usare le impostazioni del [firewall dell'organizzazione](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server) per abilitare o disabilitare la connessione ai servizi. Si noti che la disabilitazione della connessione a un endpoint può influire negativamente sulle prestazioni delle funzionalità Visual Studio correlate. 
 
-Infine, il Visual Studio Marketplace offre estensioni che possono abilitare esperienze connesse di prima o di terze parti. Visual Studio Marketplace è soggetto alle condizioni per [Visual Studio per l'utilizzo](https://cdn.vsassets.io/v/M146_20190123.39/_content/Microsoft-Visual-Studio-Marketplace-Terms-of-Use.pdf) del Marketplace e all'Informativa sulla privacy [Microsoft.](https://privacy.microsoft.com/en-us/privacystatement) Ogni estensione richiede l'accordo per determinate condizioni per l'utilizzo e l'informativa sulla privacy associata a tale offerta.  
+Infine, il Visual Studio Marketplace offre estensioni che possono abilitare esperienze connesse di prima o di terze parti. Visual Studio Marketplace è soggetto alle condizioni per [Visual Studio per l'utilizzo del Marketplace](https://cdn.vsassets.io/v/M146_20190123.39/_content/Microsoft-Visual-Studio-Marketplace-Terms-of-Use.pdf) e all'Informativa sulla privacy [Microsoft.](https://privacy.microsoft.com/en-us/privacystatement) Ogni estensione richiede l'accordo per determinate condizioni per l'utilizzo e l'informativa sulla privacy associata a tale offerta.  
 
 
 ## <a name="required-service-data"></a>Dati del servizio necessari ##
 
-I dati del servizio necessari possono includere informazioni correlate al funzionamento dell'esperienza connessa necessaria per mantenere il servizio sottostante sicuro, aggiornato e le prestazioni previste. Se si sceglie di usare un'esperienza connessa che analizza il contenuto, ad esempio IntelliCode, anche il codice selezionato per il modello viene inviato ed elaborato per fornire l'esperienza di connessione. I dati del servizio necessari possono includere anche le informazioni necessarie a un'esperienza connessa per eseguire la propria attività, ad esempio l'aggiornamento di NuGet pacchetto. È possibile gestire i dati del servizio necessari scegliendo se usare o meno un servizio specifico. Se non si usa un servizio, non vengono raccolti dati del servizio necessari. 
+I dati del servizio necessari possono includere informazioni correlate al funzionamento dell'esperienza connessa necessarie per mantenere il servizio sottostante sicuro, aggiornato e con prestazioni come previsto. Se si sceglie di usare un'esperienza connessa che analizza il contenuto, ad esempio IntelliCode, anche il codice selezionato per il modello viene inviato ed elaborato per fornire l'esperienza di connessione. I dati del servizio necessari possono includere anche le informazioni necessarie a un'esperienza connessa per eseguire la propria attività, ad esempio l'aggiornamento di NuGet pacchetto. È possibile gestire i dati del servizio necessari scegliendo se usare o meno un servizio specifico. Se non si usa un servizio, non vengono raccolti dati del servizio necessari. 
 
 I dati del servizio necessari sono diversi dai dati di diagnostica perché i dati di diagnostica sono correlati al software in esecuzione nel dispositivo. La scelta di partecipare al Visual Studio Analisi utilizzo software [(VSCEIP)](/visualstudio/ide/visual-studio-experience-improvement-program)controlla le impostazioni di privacy per i dati di diagnostica, ma questa impostazione non influisce sull'invio dei dati del servizio necessari. 
 
 ## <a name="diagnostic-data-collection"></a>Raccolta dati di diagnostica ##
 
-I dati di diagnostica vengono usati per mantenere Visual Studio e aggiornati, rilevare, diagnosticare e correggere i problemi e apportare miglioramenti al prodotto. I dati di diagnostica vengono raccolti e inviati a Microsoft Visual Studio software client in esecuzione nel dispositivo dell'utente.
+I dati di diagnostica vengono usati per mantenere Visual Studio e aggiornati, rilevare, diagnosticare e risolvere i problemi e apportare miglioramenti al prodotto. I dati di diagnostica vengono raccolti e inviati a Microsoft Visual Studio software client in esecuzione nel dispositivo dell'utente.
 
-Quando si rifiuta esplicitamente, si rifiuta esplicitamente la raccolta dei dati di diagnostica facoltativa. È necessaria una raccolta di dati di diagnostica per assicurarsi che Visual Studio sia sicuro, aggiornato e funzioni come previsto. La raccolta dei dati di diagnostica necessari non sarà interessata dalla scelta di rifiutare esplicitamente [VSCEIP.](/visualstudio/ide/visual-studio-experience-improvement-program) 
+Quando si rifiuta esplicitamente, si rifiuta esplicitamente la raccolta dei dati di diagnostica facoltativa. È necessaria una raccolta di dati di diagnostica per assicurarsi che Visual Studio sia sicuro, aggiornato e funzioni come previsto. La scelta di rifiutare esplicitamente [VSCEIP](/visualstudio/ide/visual-studio-experience-improvement-program)non inciderà sulla raccolta dei dati di diagnostica necessari. 

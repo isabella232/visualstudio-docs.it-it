@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bdc33159915f4079c12cf0f282c4b1154cd9ec070acb56948870bb2497c7d276
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3af7bb3f8a52029c0b9e11df802b8f4788711af0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121318434"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034305"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -51,7 +51,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
@@ -93,5 +93,5 @@ Vengono creati la classe o lo struct. Per C# viene creato anche un costruttore.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Generazione del codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

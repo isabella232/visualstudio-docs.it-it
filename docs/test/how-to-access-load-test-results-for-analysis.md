@@ -1,6 +1,6 @@
 ---
 title: Analizzare i risultati dei test di carico
-description: Informazioni su come accedere ai risultati dei test di carico per l'analisi, automaticamente tramite l'analizzatore test di carico o manualmente per i test dalla riga di comando.
+description: Informazioni su come accedere ai risultati dei test di carico per l'analisi, automaticamente tramite l'Analizzatore test di carico o manualmente per i test dalla riga di comando.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -16,18 +16,19 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 5d3d52266bf94c0badefb71d5109ad393e071db5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: c3212f7a4ffd7616962f02ce9d9c400651c72773
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970452"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033252"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Procedura: Accedere ai risultati dei test di carico per l'analisi
 
 Quando si esegue un test di carico dall'Editor test di carico, i risultati del test vengono aperti automaticamente e il test di carico in esecuzione viene visualizzato nell'**Analizzatore test di carico**. Quando si esegue un test di carico dalla riga di comando, è necessario accedere manualmente ai risultati del test di carico.
 
-I risultati relativi al test di carico completato contengono gli esempi di contatori delle prestazioni e le informazioni sugli errori raccolti periodicamente dai computer sottoposti a test. Nel corso dell'esecuzione di un test di carico può essere raccolto un numero elevato di esempi di contatori delle prestazioni. La quantità di dati sulle prestazioni raccolti durante un test di carico dipende dalla durata dell'esecuzione del test, dall'intervallo di campionamento, dal numero di computer sottoposti a test, dal numero di contatori raccolti, dagli agenti di raccolta dati configurati e dai livelli di registrazione. Per un test di carico di grandi dimensioni, la quantità di dati sulle prestazioni raccolti può facilmente raggiungere diversi gigabyte. Per ulteriori informazioni, vedere [test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
+I risultati relativi al test di carico completato contengono gli esempi di contatori delle prestazioni e le informazioni sugli errori raccolti periodicamente dai computer sottoposti a test. Nel corso dell'esecuzione di un test di carico può essere raccolto un numero elevato di esempi di contatori delle prestazioni. La quantità di dati sulle prestazioni raccolti durante un test di carico dipende dalla durata dell'esecuzione del test, dall'intervallo di campionamento, dal numero di computer sottoposti a test, dal numero di contatori raccolti, dagli agenti di raccolta dati configurati e dai livelli di registrazione. Per un test di carico di grandi dimensioni, la quantità di dati sulle prestazioni raccolti può facilmente raggiungere diversi gigabyte. Per altre informazioni, vedere [Test controller e agenti di test.](configure-test-agents-and-controllers-for-load-tests.md)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -39,9 +40,9 @@ I risultati relativi al test di carico completato contengono gli esempi di conta
 
      Viene visualizzata la finestra di dialogo **Apri e gestisci risultati**.
 
-3. In **Immettere un nome del controller per trovare i risultati del test di carico** selezionare un controller. Selezionare **\<local> -Nessun controller** per accedere ai risultati archiviati localmente.
+3. In **Immettere un nome del controller per trovare i risultati del test di carico** selezionare un controller. Selezionare **\<local> - Nessun controller per accedere** ai risultati archiviati in locale.
 
-4. In **Mostra risultati per test di carico seguente** selezionare il test di carico di cui si vuole visualizzare i risultati. Selezionare questa selezione **\<Show results for all tests>** per visualizzare tutti i risultati per tutti i test.
+4. In **Mostra risultati per test di carico seguente** selezionare il test di carico di cui si vuole visualizzare i risultati. Selezionare **\<Show results for all tests>** questa opzione per visualizzare tutti i risultati per tutti i test.
 
      Se disponibili, i risultati del test di carico sono visualizzati nell'elenco **Risultati test di carico**. L'elenco contiene le colonne **Ora**, **Durata**, **Utente**, **Risultato**, **Test** e **Descrizione**. In **Test** è indicato il nome del test, mentre in **Descrizione** è riportata la descrizione facoltativa aggiunta prima dell'esecuzione del test.
 

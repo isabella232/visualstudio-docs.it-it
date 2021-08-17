@@ -58,7 +58,7 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte del carico **di** lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
+    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte del carico **di** lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -72,7 +72,7 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
+2. Espandere **Visual C#** **o Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
 
 3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
 

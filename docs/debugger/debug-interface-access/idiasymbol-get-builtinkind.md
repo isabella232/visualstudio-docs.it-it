@@ -1,5 +1,5 @@
 ---
-description: Recupera un tipo incorporato del tipo HLSL.
+description: Recupera un tipo predefinito del tipo HLSL.
 title: IDiaSymbol::get_builtInKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 953e6dba-582e-4b76-b736-898b92e5693e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d71ad1c8986bb60238e8fce6a5f3c7c201cb4954
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b6614104d9d806f837a317ab8f4956d254d924819203c5bd9c3901f459264cad
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162221"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436565"
 ---
 # <a name="idiasymbolget_builtinkind"></a>IDiaSymbol::get_builtInKind
-Recupera un tipo incorporato del tipo HLSL.
+Recupera un tipo predefinito del tipo HLSL.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,10 +32,10 @@ HRESULT get_buildInKind(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un oggetto `DWORD` che include un tipo incorporato del tipo HLSL.
+[out] Puntatore a `DWORD` un oggetto che contiene un tipo predefinito del tipo HLSL.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,6 +1,6 @@
 ---
 description: Ottiene le dimensioni della matrice.
-title: 'IDebugArrayObject:: GetDimensions | Microsoft Docs'
+title: IDebugArrayObject::GetDimensions | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ba82b8a921a7295b6521622ff45efc84a9b6742
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e637f1139de8ee6caebea92cc5ca1fe494c206e6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058885"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080013"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Ottiene le dimensioni della matrice.
@@ -41,16 +42,16 @@ int GetDimensions(
 
 ## <a name="parameters"></a>Parametri
 `dwCount`\
-in Numero di dimensioni da recuperare.
+[in] Numero di dimensioni da recuperare.
 
 `dwDimensions`\
-[in, out] Matrice compilata con le dimensioni di ogni dimensione. `dwCount` Specifica la dimensione massima della `dwDimensions` matrice.
+[in, out] Matrice compilata con le dimensioni di ogni dimensione. `dwCount` specifica le dimensioni massime della `dwDimensions` matrice.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Una matrice multidimensionale può avere dimensioni diverse per ogni dimensione. Ad esempio, in base alla matrice tridimensionale `myarray[3][2][6]` , questo metodo restituisce 3, 2 e 6 nel `dwDimensions` parametro in tale ordine.
+ Una matrice multidimensionale può avere dimensioni diverse per ogni dimensione. Ad esempio, dato la matrice tridimensionale , questo metodo restituirebbe `myarray[3][2][6]` 3, 2 e 6 nel `dwDimensions` parametro nell'ordine specificato.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

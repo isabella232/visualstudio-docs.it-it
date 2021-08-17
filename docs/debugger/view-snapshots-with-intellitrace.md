@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6452daa79f592187d24ef70a52205d932cdfccdb9ba1b000b460b97445cd033f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8a568861b7e9f6dd29317a321398854bee8cf51a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121418792"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030451"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>Visualizzare snapshot con la funzionalità per tornare indietro di IntelliTrace (Visual Studio Enterprise) (C#, Visual Basic, C++)
 

@@ -27,7 +27,7 @@ ms.locfileid: "121378983"
 
 1. Disporre le finestre in modo che Spy++ e una finestra [di visualizzazione thread](../debugger/threads-view.md) attiva siano visibili.
 
-2. Scegliere **Trova** thread dal menu **Cerca.**
+2. Scegliere **Trova** thread dal menu **Cerca**.
 
     Verrà [visualizzata la finestra di dialogo Ricerca](../debugger/thread-search-dialog-box.md) thread .
 

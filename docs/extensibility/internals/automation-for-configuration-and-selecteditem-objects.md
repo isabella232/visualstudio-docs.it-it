@@ -1,6 +1,6 @@
 ---
 title: Automazione per gli oggetti Configuration e SelectedItem | Microsoft Docs
-description: Informazioni su come automatizzare i processi Visual Studio compilazione e degli elementi selezionati usando gli oggetti Configuration e SelectedItem nell'interoperabilità della shell.
+description: Informazioni su come automatizzare i processi Visual Studio compilazione e degli elementi selezionati usando gli oggetti Configuration e SelectedItem in Interoperabilità shell.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: eac3740444d1c48a196d717e073da035f5920aec468ff216ad22ebdc6cb65918
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6764e074bf061f3b6426e2b1577bb5b16c85043e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359754"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095049"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Automazione per gli oggetti Configuration e SelectedItem
 

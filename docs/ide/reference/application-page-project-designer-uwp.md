@@ -1,6 +1,6 @@
 ---
 title: Pagina delle proprietà dell'applicazione per app UWP
-description: Informazioni su come usare la pagina applicazione per specificare l'assembly e le informazioni sul pacchetto del progetto piattaforma UWP (Universal Windows Platform) (UWP) e la versione di destinazione di Windows 10.
+description: Informazioni su come usare la pagina Applicazione per specificare le informazioni sull'assembly e sul pacchetto del progetto UWP (Universal Windows Platform) e specificare come destinazione Windows 10 versione.
 ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: reference
@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - uwp
-ms.openlocfilehash: 21dd08f81802661cae9d77ee3449f4e9369ca768
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d63e1a0d7493b4d6f56f826db72c2c328defbaac970d2d6bc18ca8b42b339c92
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965083"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430948"
 ---
 # <a name="application-property-page-uwp-projects"></a>Pagina delle proprietà dell'applicazione (progetti UWP)
 
@@ -26,11 +27,11 @@ Usare la pagina delle proprietà **Applicazione** per specificare l'assembly e l
 
 ![Pagina delle proprietà dell'applicazione](media/application-page-uwp.png)
 
-Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto in **Esplora soluzioni**. Quindi scegliere   >  **proprietà** progetto dalla barra dei menu. Le pagine delle proprietà vengono aperte nella scheda **Applicazione**.
+Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto in **Esplora soluzioni**. Scegliere quindi **Project**  >  **proprietà** nella barra dei menu. Le pagine delle proprietà vengono aperte nella scheda **Applicazione**.
 
 ## <a name="general-section"></a>Sezione Generale
 
-**Nome assembly** &mdash; Specifica il nome del file di output che conterrà il manifesto dell'assembly.
+**Nome assembly** &mdash; Specifica il nome del file di output che contenerà il manifesto dell'assembly.
 
 Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
@@ -38,9 +39,9 @@ Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLan
 
 Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Informazioni assembly** &mdash; Se si sceglie questo pulsante, verrà visualizzata la finestra di [dialogo informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
+**Informazioni sull'assembly** &mdash; Se si sceglie questo pulsante, viene visualizzata [la finestra di dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifesto** &mdash; del pacchetto Se si sceglie questo pulsante, verrà visualizzata la finestra Progettazione manifesto. Per accedere alla finestra di progettazione del manifesto, è anche possibile scegliere il file _Package.appxmanifest_ in **Esplora soluzioni**. Per altre informazioni, vedere [Configurare un pacchetto con Progettazione manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
+**Manifesto del pacchetto** &mdash; Se si sceglie questo pulsante, viene aperta la finestra di progettazione del manifesto. Per accedere alla finestra di progettazione del manifesto, è anche possibile scegliere il file _Package.appxmanifest_ in **Esplora soluzioni**. Per altre informazioni, vedere [Configurare un pacchetto con Progettazione manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Sezione Destinazione
 

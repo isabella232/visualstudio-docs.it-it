@@ -1,6 +1,6 @@
 ---
 title: Elemento PreviewImage (modelli Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento PreviewImage e su come specifica il nome file per l'immagine di anteprima che verrà visualizzata nella finestra di dialogo Nuovo Project o Aggiungi nuovo elemento.
+description: Informazioni sull'elemento PreviewImage e su come specifica il nome file per l'immagine di anteprima che verrà visualizzata nella finestra di dialogo Project o Aggiungi nuovo elemento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -21,8 +21,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121431591"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>Elemento PreviewImage (Visual Studio modelli)
-Specifica l'immagine di anteprima, come nome file, per l'immagine di anteprima che verrà visualizzata nella finestra di dialogo **Nuovo Project** **o** Aggiungi nuovo elemento.
+# <a name="previewimage-element-visual-studio-templates"></a>Elemento PreviewImage (Visual Studio personalizzati)
+Specifica l'immagine di anteprima, come nome file, per l'immagine di anteprima che verrà visualizzata nella finestra di **dialogo Project** o Aggiungi **nuovo** elemento .
 
  \<VSTemplate> \<TemplateData>
  \<PreviewImage>
@@ -46,7 +46,7 @@ Specifica l'immagine di anteprima, come nome file, per l'immagine di anteprima c
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Categorizza il modello e definisce come viene visualizzato nella finestra di dialogo Nuovo **Project** o Aggiungi **nuovo** elemento.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e ne definisce la modalità di visualizzazione nella finestra di **dialogo Project** o Aggiungi **nuovo** elemento .|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
@@ -57,5 +57,5 @@ Specifica l'immagine di anteprima, come nome file, per l'immagine di anteprima c
  `PreviewImage` è un elemento facoltativo.
 
 ## <a name="see-also"></a>Vedi anche
-- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)
+- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

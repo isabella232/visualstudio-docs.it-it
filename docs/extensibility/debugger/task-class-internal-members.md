@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c6a40cb19315c6b754ef8e81208f78f1e1996837d6ee352d84a6df25041dc4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c552a4069af343ea45721edc9abb841526124163
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414961"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095166"
 ---
 # <a name="task-class---internal-members"></a>Classe di attività : membri interni
 Questo articolo descrive i membri interni della classe che consentono <xref:System.Threading.Tasks.Task?displayProperty=fullName> di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere <xref:System.Threading.Tasks.Task> l'articolo di riferimento.
@@ -58,10 +58,10 @@ Questo articolo descrive i membri interni della classe che consentono <xref:Syst
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Archivia proprietà aggiuntive <xref:System.Threading.Tasks.Task> dell'oggetto .|
 |[m_parent](../../extensibility/debugger/m-parent-field.md)|Campo di supporto per la <xref:System.Threading.Tasks.Task?displayProperty=fullName> proprietà padre.|
 |[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Archivia informazioni sullo stato corrente <xref:System.Threading.Tasks.Task> dell'oggetto .|
-|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Oggetto che rappresenta i dati che verranno usati dall'azione.|
+|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Oggetto che rappresenta i dati che verranno utilizzati dall'azione.|
 |[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Campo di supporto per la <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> proprietà.|
 |[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|Identificatore disponibile successivo per un <xref:System.Threading.Tasks.Task> oggetto .|
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Indica che l'attività è stata annullata prima di raggiungere lo stato in esecuzione o che l'attività ha confermato l'annullamento e completata senza eccezioni.|
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Indica che l'attività è stata annullata prima di raggiungere lo stato di esecuzione oppure che l'attività ha confermato l'annullamento e completata senza eccezioni.|
 |[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|Indica che l'attività è in esecuzione.|
 |[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|Indica che l'attività è stata completata a causa di un'eccezione non gestita.|
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Indica che l'esecuzione dell'attività è stata completata correttamente.|

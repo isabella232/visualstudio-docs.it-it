@@ -1,5 +1,5 @@
 ---
-description: Questo metodo reimposta l'enumerazione addresses sul primo elemento.
+description: Questo metodo reimposta l'enumerazione degli indirizzi sul primo elemento.
 title: IEnumDebugAddresses::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42d53d2d3af1853c42c51f5d990102d0db951ba81fa0c7ad6dd6d1f6e0b8981d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df9bd243af1b50ef6b1fcfaed277da82b8dcca95
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415494"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095686"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 Questo metodo reimposta l'enumerazione sul primo elemento.

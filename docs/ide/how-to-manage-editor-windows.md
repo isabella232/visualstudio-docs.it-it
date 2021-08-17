@@ -1,6 +1,6 @@
 ---
 title: "Procedura: Gestire le finestre dell'editor"
-description: Scopri come dividere Windows e aprire più finestre contemporaneamente per poter visualizzare il codice nel modo più adatto alle tue esigenze.
+description: Informazioni su come dividere le finestre e aprire più finestre contemporaneamente in modo da poter visualizzare il codice nel modo più adatto alle proprie funzionalità.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,14 +13,15 @@ ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: be8bb4ec135b94e1efa92a3121d6ad74644cefd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 374b5417b7c19cd9e748dd1dc0e41a60eae60530
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924736"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048921"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedura: Gestire le finestre dell'editor
 

@@ -8,15 +8,16 @@ ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1c215359f6b891239cd7b39f33d412bbf40dd5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 512f9703da7a5a37e103c4732824d6cf40cb172994762bac2c81482117d86e05
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907340"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333106"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 L'opzione **GC** abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti di .NET Framework. L'opzione **GC** può essere usata solo con il metodo di profilatura del campionamento e solo con l'opzione **Launch**.
@@ -39,7 +40,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **GC** può essere usata solo con l'opzione **Launch**.
 
- **Avvia:** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+ **Launch (Avvia):** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene avviata un'applicazione e vengono raccolti i dati di allocazione della memoria di .NET Framework.

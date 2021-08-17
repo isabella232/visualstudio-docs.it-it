@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bfd9ede5f26c2e872f3339f15b17b4835b40312de17de2a5316f6448a01e61c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d05ffcc5140edcf04dd03b591df100831304fc6b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121259370"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049025"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizzare le attività di compilazione e debug per lo sviluppo con "Apri cartella"
 
@@ -222,13 +222,13 @@ Questa sezione descrive alcune delle proprietà che è possibile specificare in 
 |`${workspaceRoot}`| Percorso completo della cartella dell'area di lavoro, ad esempio *C:\sources\hello*|
 |`${file}`| Percorso completo del file o della cartella selezionata per eseguire questa attività, ad esempio *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| Percorso relativo del file o della cartella ( ad esempio, *src\hello.js*)|
-|`${fileBasename}`| Nome del file senza percorso o estensione (ad esempio, *hello*)|
-|`${fileDirname}`| Percorso completo del file, escluso il nome file (ad esempio, *C:\sources\hello\src*)|
-|`${fileExtname}`| L'estensione del file selezionato (ad esempio,  *.js*)|
+|`${fileBasename}`| Nome del file senza percorso o estensione ( ad esempio, *hello*)|
+|`${fileDirname}`| Percorso completo del file, escluso il nome file ( ad *esempio, C:\sources\hello\src*)|
+|`${fileExtname}`| Estensione del file selezionato, ad esempio.js *)*|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configurare il debug con launch.vs.json
 
-Per configurare i progetti CMake per il debug, vedere [Configurare le sessioni di debug di CMake.](/cpp/build/configure-cmake-debugging-sessions)
+Per configurare i progetti CMake per il debug, vedere [Configurare le sessioni di debug CMake](/cpp/build/configure-cmake-debugging-sessions).
 
 1. Per configurare la codebase per il debug, in **Esplora soluzioni** scegliere il comando **Impostazioni per debug e avvio** dal menu di scelta rapida del file eseguibile.
 
@@ -263,7 +263,7 @@ Per configurare i progetti CMake per il debug, vedere [Configurare le sessioni d
    Quando si sceglie **F5**, il debugger viene avviato e si interrompe in corrispondenza di qualsiasi punto di interruzione già impostato. Tutte le finestre di debug già note sono disponibili e funzionanti.
 
    > [!IMPORTANT]
-   > Per altri dettagli sulle attività di compilazione e debug personalizzate nei progetti di apri cartella C++, vedere Supporto di Apri cartella per i sistemi di compilazione [C++ in Visual Studio](/cpp/build/open-folder-projects-cpp).
+   > Per altri dettagli sulle attività di compilazione e debug personalizzate nei progetti di cartelle aperte C++, vedere Supporto open folder per sistemi di compilazione [C++ in Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Specificare gli argomenti per il debug
 
@@ -294,7 +294,7 @@ Quando si salva questo file, il nome della nuova configurazione viene visualizza
 ![Elenco a discesa delle configurazioni di debug](media/customize-debug-configurations.png)
 
 > [!NOTE]
-> La proprietà array inlaunch.vs.jsviene letta da due percorsi di file, la directory radice per la `configurations`  &mdash; codebase e la directory *vs.* In caso di conflitto viene data priorità al valore in *.vs\launch.vs.json*.
+> La proprietà array inlaunch.vs.jsviene letta da due percorsi di file la directory radice per `configurations`  la &mdash; codebase e la directory con estensione *vs.* In caso di conflitto viene data priorità al valore in *.vs\launch.vs.json*.
 
 ## <a name="additional-settings-files"></a>File di impostazioni aggiuntivi
 

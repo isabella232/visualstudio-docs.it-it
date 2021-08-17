@@ -1,6 +1,6 @@
 ---
 title: Opzioni della riga di comando devenv
-description: Informazioni sulle opzioni della riga di comando devenv e su come usarle per impostare le opzioni dell'IDE e anche compilare, eseguire il debug e distribuire i progetti dalla riga di comando.
+description: Informazioni sulle opzioni della riga di comando devenv e su come usarle per impostare le opzioni IDE e anche compilare, eseguire il debug e distribuire progetti, il tutto dalla riga di comando.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: bef72e8889026f8202c7acdf3ea7c6b97c780b75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbad39c210c5cefd45dfbdfa9bec8f6cafe432cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882173"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034318"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 
@@ -54,7 +55,7 @@ Le regole di sintassi per le opzioni `devenv` sono simili alle regole per altre 
   > [!NOTE]
   > Nella cartella padre deve trovarsi un solo e unico file che faccia riferimento a questo progetto. Se la cartella padre non contiene alcun file di soluzione che fa riferimento a questo progetto, o se la cartella padre contiene due o più file di soluzione che vi fanno riferimento, viene creato un file di soluzione temporaneo.
 
-- Quando i percorsi e i nomi dei file contengono spazi, è necessario racchiuderli tra virgolette (""). Ad esempio: `"c:\project a\"`.
+- Quando i percorsi e i nomi dei file contengono spazi, è necessario racchiuderli tra virgolette (""). Ad esempio, `"c:\project a\"`.
 
 - Inserire uno spazio tra le opzioni e gli argomenti sulla stessa riga. Ad esempio, il comando `devenv /log output.txt` apre l'IDE e restituisce tutte le informazioni di log per la sessione in output.txt.
 
@@ -96,5 +97,5 @@ Le opzioni della riga di comando seguenti non visualizzano l'IDE.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](general-environment-options-dialog-box.md)
 - [Opzioni della riga di comando devenv per lo sviluppo di pacchetti VSPackage](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

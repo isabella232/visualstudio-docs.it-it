@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 490c15afea7e7034cad00398c02026ae2460d294be686f874d23e0105798091e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8b52be981dbda8bb3b73fc2596dc8988e021765d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121238801"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095621"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 Questa interfaccia enumera i contesti di codice associati alla sessione di debug o a un programma o documento specifico.
@@ -34,9 +34,9 @@ IEnumDebugCodeContexts2 : IUnknown
  Il motore di debug implementa questa interfaccia per rappresentare un elenco di contesti di codice per una particolare posizione di testo in un programma o un elenco di contesti di codice per un contesto di documento specifico.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) per ottenere questa interfaccia che rappresenta un elenco di contesti di codice per una posizione di testo specifica nel documento di origine di un programma.
+ Chiamare [EnumCodeContexts per](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) ottenere questa interfaccia che rappresenta un elenco di contesti di codice per una posizione di testo specifica nel documento di origine di un programma.
 
- Chiamare [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) per ottenere questa interfaccia che rappresenta un elenco di tutti i contesti di codice in un documento di origine specifico.
+ Chiamare [EnumCodeContexts per](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) ottenere questa interfaccia che rappresenta un elenco di tutti i contesti di codice in un documento di origine specifico.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Nella tabella seguente vengono illustrati i metodi di `IEnumDebugCodeContexts2` .

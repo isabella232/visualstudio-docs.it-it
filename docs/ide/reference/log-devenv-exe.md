@@ -1,6 +1,6 @@
 ---
 title: -Log (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando di devenv per registrare tutte le attività nel file di log per la risoluzione dei problemi.
+description: Informazioni su come usare l'opzione della riga di comando devenv log per registrare tutte le attività nel file di log per la risoluzione dei problemi.
 ms.custom: SEO-VS-2020
 ms.date: 12/12/2018
 ms.topic: reference
@@ -12,22 +12,23 @@ ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a4f8f3fc7fe0e0f8b7ff6bd460ea2efd8192d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20972061208021ceea189c46e8e299a488748532e40eeed2544f28db13887efd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919392"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357141"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
 Registra tutte le attività nel file di log per la risoluzione dei problemi. Il file verrà visualizzato dopo aver chiamato `devenv /log` almeno una volta. Per impostazione predefinita, il file di log è disponibile qui:
 
-**% AppData% \\ActivityLog.xml\\ Microsoft \\ VisualStudio** \<Version\> **\\**
+**%APPDATA% \\ Microsoft \\ VisualStudio \\** \<Version\> **\\ActivityLog.xml**
 
-dove \<Version\> è la versione di Visual Studio. È tuttavia possibile specificare un percorso e un nome di file diversi.
+dove \<Version\> è la Visual Studio precedente. È tuttavia possibile specificare un percorso e un nome di file diversi.
 
 ## <a name="syntax"></a>Sintassi
 

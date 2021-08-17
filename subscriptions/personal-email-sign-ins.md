@@ -25,7 +25,7 @@ Questa situazione si verifica a causa dei processi di accesso associati all'espe
 Durante il processo di attivazione del sottoscrittore, veniva richiesto un account Microsoft per eseguire l'accesso. Se il sottoscrittore non tentava di convertire l'account aziendale o dell'istituto di istruzione (ad esempio tasha@contoso.com) in un account Microsoft, poteva creare un nuovo account Microsoft o sfruttarne uno esistente. A causa di tutto ciò, l'indirizzo di posta elettronica di accesso può risultare diverso dall'indirizzo di posta elettronica di assegnazione.
 
 > [!NOTE]
-> L'esperienza moderna dei sottoscrittori in supporta sia i tipi di identità Work/School che i tipi di identità account [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) Microsoft (MSA).
+> L'esperienza di sottoscrittore moderna in supporta sia i tipi di identità [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) work/school che microsoft account (MSA).
 
 ## <a name="solution"></a>Soluzione
 Per risolvere il problema, è sufficiente selezionare il pulsante Connessione Emails (Messaggi di posta elettronica di **Connessione)** e il sistema tenterà di associare gli account con gli amministratori di sistema agli utenti esistenti nel Azure Active Directory (Azure AD) dell'organizzazione in base alla corrispondenza del nome e del cognome. Se si verifica un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della corrispondenza.  
@@ -35,7 +35,7 @@ Guardare questo video o continuare a leggere per informazioni su come risolvere 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
 
 > [!div class="mx-imgBorder"]
-> ![Connessione Pulsante Messaggi di posta elettronica](_img/connect-emails/connect-emails-button.png "Fare clic Connessione messaggi di posta elettronica per associare gli utenti con gli account Microsoft al Azure Active Directory")
+> ![Connessione Pulsante Messaggi di posta elettronica](_img/connect-emails/connect-emails-button.png "Fare clic Connessione di posta elettronica per associare gli utenti con gli account Microsoft al Azure Active Directory")
 
 È anche possibile usare la **directory di** ricerca per correggere gli errori o compilare le informazioni mancanti dal Azure AD. Se tutte le corrispondenze sono corrette, è possibile scegliere il pulsante Identità **corrente** per selezionare tutte le voci corrispondenti anziché selezionarle una alla volta.  
 

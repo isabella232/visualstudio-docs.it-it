@@ -1,6 +1,6 @@
 ---
 title: Trova e sostituisci, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come utilizzare la pagina trova e Sostituisci nella sezione ambiente per controllare le finestre di messaggio e altri aspetti di un'operazione di ricerca e sostituzione.
+description: Informazioni su come usare la pagina Trova e sostituisci nella sezione Ambiente per controllare le finestre di messaggio e altri aspetti di un'operazione di ricerca e sostituzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c0fab4fd10d985ad1cee01fbea4269934c01d243
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1ca8cfcd59bca8f2f7eaa7091824c0426a2411129c577ad6572023033a0ee41
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860919"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357492"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Trova e sostituisci, Ambiente, finestra di dialogo Opzioni
 

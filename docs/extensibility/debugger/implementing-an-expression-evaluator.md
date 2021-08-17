@@ -14,26 +14,26 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d4c5ab78d8a7d125bf78b32317bfeba673d7ef99852d69aab5e99bd6a59ee96
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 19c07363ee9e9662700ca7488a9d9ff43597fbb0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361119"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080299"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implementare un analizzatore di espressioni
 > [!IMPORTANT]
 > In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- La valutazione di un'espressione è un'interazione complessa tra il motore di debug (DE), il provider di simboli (SP), l'oggetto binder e l'analizzatore di espressioni (edizione Enterprise). Questi quattro componenti sono connessi da interfacce implementate da un componente e utilizzate da un altro.
+ La valutazione di un'espressione è un'interazione complessa tra il motore di debug (DE), il provider di simboli (SP), l'oggetto binder e l'analizzatore di espressioni (EE). Questi quattro componenti sono connessi da interfacce implementate da un componente e utilizzate da un altro.
 
- Il edizione Enterprise accetta un'espressione dal de sotto forma di stringa e la analizza o la valuta. Il edizione Enterprise esegue le interfacce seguenti, che vengono utilizzate dal de:
+ L'EE accetta un'espressione dal de sotto forma di stringa e la analizza o la valuta. EE esegue le interfacce seguenti, che vengono utilizzate dal de:
 
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)
 
-  Il edizione Enterprise chiama l'oggetto binder, fornito dal de, per ottenere il valore di simboli e oggetti. Il edizione Enterprise utilizza le interfacce seguenti, implementate dal de:
+  L'EE chiama l'oggetto binder, fornito dal de, per ottenere il valore di simboli e oggetti. L'EE usa le interfacce seguenti, implementate dal de:
 
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)
 
@@ -49,9 +49,9 @@ ms.locfileid: "121361119"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  Il edizione Enterprise esegue [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2`fornisce il meccanismo per descrivere il risultato di una valutazione dell'espressione, ad esempio una variabile locale, una primitiva o un oggetto da Visual Studio, che visualizza quindi le informazioni appropriate nella finestra Variabili locali **,** **Espressione** di controllo o Controllo **immediato.**
+  EE esegue [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2`fornisce il meccanismo per descrivere il risultato di una valutazione dell'espressione, ad esempio una variabile locale, una primitiva o un oggetto da Visual Studio, che visualizza quindi le informazioni appropriate nella finestra Variabili locali **,** **Espressione** di controllo o Controllo **immediato.**
 
-  L'SP viene assegnato al edizione Enterprise dal de quando chiede informazioni. Sp esegue interfacce che descrivono indirizzi e campi, ad esempio le interfacce seguenti e i relativi derivati:
+  L'SP viene fornito all'EE dal de quando chiede informazioni. Sp esegue interfacce che descrivono indirizzi e campi, ad esempio le interfacce seguenti e i relativi derivati:
 
 - [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
@@ -59,10 +59,10 @@ ms.locfileid: "121361119"
 
 - [IDebugField](../../extensibility/debugger/reference/idebugfield.md)
 
-  Il edizione Enterprise utilizza tutte queste interfacce.
+  L'EE usa tutte queste interfacce.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Strategia di implementazione dell'analizzatore di espressioni](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) Definisce un processo in tre passaggi per la strategia di implementazione dell'analizzatore di espressioni (edizione Enterprise).
+ [Strategia di implementazione dell'analizzatore di espressioni](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) Definisce un processo in tre passaggi per la strategia di implementazione dell'analizzatore di espressioni (EE).
 
 ## <a name="see-also"></a>Vedi anche
 - [Scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

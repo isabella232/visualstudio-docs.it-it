@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 93a64c4fe15109fbf7967d763ae5314a3b3064d4894638013a5b7cb75214159f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3f0e284b8307aa60f15f55d2ac5fc5cb5aed5e9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384366"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046724"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedura: Aggiungere immagini e word art ai documenti a livello di codice
   È possibile aggiungere immagini e oggetti disegno ai documenti in fase di progettazione o in fase di esecuzione. WordArt consente di aggiungere testo decorativo ai documenti di Microsoft Office Word. Questi effetti di testo speciali sono oggetti disegno che è possibile personalizzare e inserire nel documento.
@@ -72,7 +72,7 @@ ms.locfileid: "121384366"
 
      Il testo verrà aggiunto al documento con lo stile WordArt selezionato applicato.
 
-## <a name="add-wordart-at-run-time"></a>Aggiungere wordart in fase di esecuzione
+## <a name="add-wordart-at-run-time"></a>Aggiungere oggetti WordArt in fase di esecuzione
  È possibile inserire un oggetto WordArt in un documento in corrispondenza della posizione corrente del cursore. La procedura è diversa per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Per aggiungere un oggetto WordArt in corrispondenza della posizione del cursore in una personalizzazione a livello di documento

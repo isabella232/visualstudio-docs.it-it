@@ -1,6 +1,6 @@
 ---
-description: Restituisce l'inizio dell'immagine di un eseguibile in memoria, dato un indirizzo virtuale in un punto qualsiasi dello spazio di memoria dell'eseguibile.
-title: 'IDiaStackWalkHelper:: imageForVA | Microsoft Docs'
+description: Restituisce l'inizio dell'immagine di un eseguibile in memoria dato un indirizzo virtuale da qualche parte nello spazio di memoria del file eseguibile.
+title: IDiaStackWalkHelper::imageForVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2459ed59f4b34befd893d25848de9482b39f9d70
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8ad55d62007c139f1a14e6c93b34797110b47557
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156846"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081309"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-Restituisce l'inizio dell'immagine di un eseguibile in memoria, dato un indirizzo virtuale in un punto qualsiasi dello spazio di memoria dell'eseguibile.
+Restituisce l'inizio dell'immagine di un eseguibile in memoria dato un indirizzo virtuale da qualche parte nello spazio di memoria del file eseguibile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ HRESULT imageForVA(
 #### <a name="parameters"></a>Parametri
  `vaContext`
 
-in Indirizzo virtuale situato in un punto qualsiasi dello spazio dell'eseguibile.
+[in] Indirizzo virtuale che si trova in un punto qualsiasi dello spazio del file eseguibile.
 
  `pvaImageStart`
 
-out Restituisce l'indirizzo virtuale iniziale dell'immagine dell'eseguibile.
+[out] Restituisce l'indirizzo virtuale iniziale dell'immagine del file eseguibile.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

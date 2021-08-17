@@ -1,6 +1,6 @@
 ---
 title: Creazione ed esecuzione di unit test per app UWP
-description: Informazioni sul supporto Visual Studio per unit test delle app universal Windows Platform. Visual Studio fornisce unit test modelli per C#, Visual Basic e C++.
+description: Informazioni sul supporto Visual Studio per gli unit test delle app della Windows universali. Visual Studio fornisce unit test modelli per C#, Visual Basic e C++.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 91efcd80f1f805e4b841d5abf68082c718ef93cacc2bfb21ed323513b4044a7e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5db95d6125a923a8990af6cf9586f95de19c409d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424725"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032797"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procedura dettagliata: Creare ed eseguire unit test per app della piattaforma UWP
 
@@ -35,19 +35,19 @@ Le procedure seguenti descrivono i passaggi per creare, eseguire ed eseguire il 
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+1. Aprire Visual Studio. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
 
-2. Nella casella di ricerca della pagina **Crea un nuovo progetto** immettere **unit test**.
+2. Nella casella di ricerca della **pagina Crea un nuovo progetto** immettere **unit test**.
 
    L'elenco di modelli filtra quelli per gli unit test.
 
-3. Selezionare il **modello App unit test (universal Windows)** per C# o Visual Basic e quindi selezionare **Avanti.**
+3. Selezionare il modello App unit **test (Universal Windows)** per C# o Visual Basic e quindi selezionare **Avanti.**
 
    ![Creare una nuova app unit test UWP in Visual Studio](media/vs-2019/new-uwp-unit-test-app.png)
 
-4. Facoltativamente, modificare il nome e il percorso del progetto o della soluzione e quindi selezionare **Crea**.
+4. Facoltativamente, modificare il nome e il percorso del progetto o della soluzione e quindi selezionare **Crea.**
 
-5. Facoltativamente, modificare le versioni di piattaforma di destinazione e minima e quindi selezionare **OK.**
+5. Facoltativamente, modificare le versioni minima e di destinazione della piattaforma e quindi selezionare **OK.**
 
 Dopo aver completato questi passaggi, il unit test viene creato e visualizzato in Esplora soluzioni.
 
@@ -73,7 +73,7 @@ Dopo aver completato questi passaggi, il unit test viene creato e visualizzato i
 
    ![Libreria unit test personalizzata](../test/media/unit_test_win8_1.png)
 
-   **Esplora soluzioni** viene popolato con il progetto unit test UWP e l'editor di codice visualizza il unit test con il titolo UnitTest1.
+   **Esplora soluzioni** viene popolato con il progetto unit test UWP e l'editor di codice visualizza il unit test unittest1.
 
    ![Nuovo progetto di unit test personalizzato](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
@@ -81,7 +81,7 @@ Dopo aver completato questi passaggi, il unit test viene creato e visualizzato i
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Modificare il file manifesto dell'applicazione UWP del progetto di unit test
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file *Package.appxmanifest* e scegliere **Apri**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file *Package.appxmanifest* e scegliere **Apri.**
 
 2. In **Progettazione manifesto** scegliere la scheda **Funzionalità**.
 
@@ -116,11 +116,11 @@ Per compilare la soluzione ed eseguire il unit test usando Esplora test:
    ![Esplora unit test &#45; esegui unit test](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 
    > [!TIP]
-   > È possibile selezionare uno o più unit test elencati in Esplora test, quindi fare clic con il pulsante destro del mouse e **scegliere Esegui test selezionati**.
+   > È possibile selezionare uno o più unit test elencati in Esplora test, quindi fare clic con il pulsante destro del mouse **e scegliere Esegui test selezionati**.
    >
    > Inoltre, è possibile scegliere di **eseguire il debug dei test selezionati**, di **aprire il test** e di usare l'opzione **Proprietà** .
    >
-   > ![Menu di scelta rapida &#45; unit test Esplora unit test](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
+   > ![Esplora unit test &#45; unit test di scelta rapida](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
    Lo unit test viene eseguito. Al termine, Esplora test visualizza lo stato del test e il tempo trascorso e fornisce un collegamento all'origine.
 

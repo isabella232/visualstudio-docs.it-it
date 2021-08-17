@@ -1,6 +1,6 @@
 ---
 title: Comando Elenca moduli
-description: Informazioni sul comando list modules e sul modo in cui elenca i moduli per il processo corrente.
+description: Informazioni sul comando Elenca moduli e su come elencare i moduli per il processo corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a38a5423568528d267fd92894b8b06b4e5667c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90a76b448fa4670e87baee821102734391f120415a29ec66f1d021aeb70f0f78
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852063"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429186"
 ---
 # <a name="list-modules-command"></a>Comando Elenca moduli
 Elenca i moduli disponibili per il processo corrente.
@@ -80,6 +81,6 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Procedura: utilizzare la finestra Moduli](../../debugger/how-to-use-the-modules-window.md)

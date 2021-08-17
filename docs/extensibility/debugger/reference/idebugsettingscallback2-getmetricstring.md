@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 97e22fe5521db7bf8c0331339c253041ce2e309d37ca7503368e38df725c3ae2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 691734eb4db21d7a77ff4f8fd3c38a31a04f70b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306881"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029710"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Recupera la stringa del valore della metrica in base al nome.

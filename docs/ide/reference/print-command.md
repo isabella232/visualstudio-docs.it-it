@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 02cc2625c4c9bc04ccbfb5f6a5ab6854453be99b43edd341bb6f2a5750cd0249
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 157f8cfe3847aadebc34edb763fdda726f7cd1eb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048778"
 ---
 # <a name="print-command"></a>Stampa (comando)
 
@@ -64,8 +64,8 @@ Entrambe le versioni di questo comando restituiscono il valore corrente dell'esp
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comando Valuta istruzione](../../ide/reference/evaluate-statement-command.md)
+- [Comando Evaluate Statement](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

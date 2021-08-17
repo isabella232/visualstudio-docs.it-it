@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b970e9e502542da0452c1ed4f1ebb4585f00559b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87f03dbbcf4e6c38d55d2a3c7deb5cbc9f0bb8b5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048895"
 ---
 # <a name="manage-application-resources-net"></a>Gestire le risorse dell'applicazione (.NET)
 
@@ -33,17 +34,17 @@ I file di risorse sono file che fanno parte di un'applicazione ma non vengono co
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Gestione delle risorse delle app (Visual Studio per Mac)](/visualstudio/mac/managing-app-resources).
 
-Per altre informazioni sulle risorse nelle app .NET, vedere [risorse nelle app .NET](/dotnet/framework/resources/index).
+Per altre informazioni sulle risorse nelle app .NET, vedere [Risorse nelle app .NET.](/dotnet/framework/resources/index)
 
 ## <a name="work-with-resources"></a>Uso delle risorse
 
 In un progetto di codice gestito aprire la finestra delle proprietà del progetto. È possibile aprire la finestra delle proprietà in uno dei modi seguenti:
 
-- Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** .
+- Fare clic con il pulsante destro del mouse sul **nodo Esplora soluzioni** progetto e scegliere **Proprietà**
 - Digitazione di **proprietà progetto** nella casella di ricerca **CTRL**+**Q**
-- Scelta di **ALT** + **invio** in **Esplora soluzioni**
+- Scelta **di ALT** + **INVIO** in **Esplora soluzioni**
 
-Selezionare la scheda **risorse** . È possibile aggiungere un file con *estensione resx* se il progetto non ne contiene già uno, aggiungere ed eliminare diversi tipi di risorse e modificare le risorse esistenti.
+Selezionare la **scheda** Risorse. È possibile aggiungere un file con estensione *resx* se il progetto non ne contiene già uno, aggiungere ed eliminare diversi tipi di risorse e modificare le risorse esistenti.
 
 ## <a name="resources-in-other-project-types"></a>Risorse in altri tipi di progetto
 

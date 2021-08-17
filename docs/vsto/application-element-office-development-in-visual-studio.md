@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 111d993082464409f7a6689779292b1b27dbf349e20f373baec3290f68566b44
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8389cc3ed162c4d1717810fa6d95037ce4db1595
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440877"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047244"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Elemento &gt; application (Office sviluppo in Visual Studio)
   L'elemento `application` dello spazio dei nomi `vstav3` esegue il wrapping della descrizione delle soluzioni Office. Gli elementi figlio sono diversi per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.
@@ -64,7 +64,7 @@ ms.locfileid: "121440877"
  L'elemento `application` presenta l'elemento seguente.
 
 ### <a name="customization"></a>Personalizzazione
- Il ruolo dell'elemento nello spazio dei nomi è definito nella&#60;personalizzazione&#62; elemento &#40;Office `customization` `vstov3` sviluppo in [Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Il ruolo dell'elemento nello spazio dei nomi è definito nella&#60;personalizzazione&#62; `customization` elemento &#40;Office sviluppo in `vstov3` [Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento
 

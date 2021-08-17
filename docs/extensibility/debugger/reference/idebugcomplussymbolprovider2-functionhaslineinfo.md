@@ -1,6 +1,6 @@
 ---
-description: Determina se il metodo specificato dispone di informazioni sulla riga.
-title: 'IDebugComPlusSymbolProvider2:: FunctionHasLineInfo | Microsoft Docs'
+description: Determina se il metodo specificato contiene informazioni sulla riga.
+title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0dbd06be472288db41a4e20bfa85fdbe23621efc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: edbd89219be3d5ef56e37f98475282d51f2eafa1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067192"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079662"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
-Determina se il metodo specificato dispone di informazioni sulla riga.
+Determina se il metodo specificato contiene informazioni sulla riga.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +42,13 @@ int FunctionHasLineInfo(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-in Indirizzo di debug rappresentato da un'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Questo indirizzo deve essere un METHOD_ADDRESS.
+[in] Indirizzo di debug rappresentato da [un'interfaccia IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Questo indirizzo deve essere un METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(

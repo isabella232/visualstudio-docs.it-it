@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 2422261a8eea07eff963d9bf94fa9db26ba7415618b7bdc2cac9b9e80f130298
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f2c5f5daed884d009ecf13a69222e58f3a654b6d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424986"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047400"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usare test codificati dell'interfaccia utente per il testing del codice
 
@@ -137,7 +137,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
      ![Editor test codificati dell'interfaccia utente](../test/media/cuit_editor_edit.png)
 
-     Per altre informazioni, vedere Modificare [test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente.](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+     Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 8. Eseguire il test.
 
@@ -214,7 +214,7 @@ Per generare codice per le asserzioni e aggiungere il controllo alla mappa dell'
 
 ### <a name="select-a-hidden-control-using-the-keyboard"></a>Selezionare un controllo nascosto tramite tastiera
 
-Se il controllo da selezionare perde lo stato attivo  e scompare quando si seleziona lo strumento Aggiungi asserzioni dal Generatore di test codificati dell'interfaccia **utente:**
+Se il controllo da selezionare perde lo stato attivo  e scompare quando si seleziona lo strumento Aggiungi asserzioni dal Generatore di test codificati **dell'interfaccia utente:**
 
 A volte, durante l'aggiunta di controlli e la verifica delle relative proprietà, può essere necessario usare la tastiera. Ad esempio, quando si prova a registrare un test codificato dell'interfaccia utente che usa un controllo del menu di scelta rapida, l'elenco delle voci di menu nel controllo perderà lo stato attivo e non sarà visualizzato quando si cercherà di selezionare lo strumento **Aggiungi asserzioni** dal **Generatore di test codificati dell'interfaccia utente**. Questa situazione è illustrata nella figura seguente in cui il menu di scelta rapida in Internet Explorer perde lo stato attivo e scompare quando si cerca di selezionarlo con lo strumento **Aggiungi asserzioni**.
 
@@ -230,7 +230,7 @@ In alcuni casi un particolare controllo usato in un test codificato dell'interfa
 
 Quando si esegue il test codificato dell'interfaccia utente, passare il puntatore sul controllo. Quindi, tenere contemporaneamente premuti **CTRL**, **MAIUSC** e **R**. Rilasciare i tasti. Il **Generatore di test codificati dell'interfaccia utente** registrerà un evento di passaggio del mouse.
 
-![Screenshot della barra dei comandi del Generatore di test codificati dell'interfaccia utente con l'icona Sospendi selezionata. Una finestra della descrizione comando mostra la posizione di un evento di passaggio del mouse.](../test/media/codedui_hover.png)
+![Screenshot della barra dei comandi generatore di test codificati dell'interfaccia utente con l'icona Sospendi selezionata. Una finestra della descrizione comando mostra la posizione di un evento di passaggio del mouse.](../test/media/codedui_hover.png)
 
 Dopo aver generato il metodo di test, al file *UIMap.Designer.cs* verrà aggiunto codice simile a quello riportato nell'esempio seguente:
 
@@ -243,7 +243,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 Se la scelta rapida da tastiera assegnata all'acquisizione degli eventi di passaggio del mouse è già in uso nell'ambiente:
 
-Se necessario, l'assegnazione da tastiera predefinita di **CTRL** MAIUSC R usata per applicare gli eventi del passaggio del mouse nei test codificati dell'interfaccia utente può essere configurata per +  +  l'uso di tasti diversi.
+Se necessario, l'assegnazione della tastiera predefinita di + **CTRL+MAIUSC** R usata per applicare gli eventi di passaggio del mouse nei test codificati dell'interfaccia utente può essere configurata in modo da +  usare tasti diversi.
 
 > [!WARNING]
 > In circostanze normali, non è necessario modificare la scelta rapida da tastiera per gli eventi di passaggio del mouse. Prestare attenzione nella riassegnazione dei tasti. La scelta rapida da tastiera potrebbe essere già in uso in Visual Studio o nell'applicazione sottoposta a test.
@@ -292,9 +292,9 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
   - Dopo aver creato un test codificato dell'interfaccia utente, è possibile modificarlo in modo che sia basato sui dati. Per altre informazioni, vedere [Creare un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md).
 
-  - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata una finestra, che venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente che attende che un controllo sia abilitato usando il metodo WaitForControlEnabled, vedere [Procedura dettagliata: Creazione,](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)modifica e gestione di un test codificato dell'interfaccia utente .
+  - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata una finestra, che venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente che attende che un controllo sia abilitato usando il metodo WaitForControlEnabled, vedere [Procedura dettagliata: Creazione,](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)modifica e gestione di un test codificato dell'interfaccia utente.
 
-  - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per altre informazioni, vedere Uso [di controlli HTML5 nei test codificati dell'interfaccia utente.](../test/using-html5-controls-in-coded-ui-tests.md)
+  - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per altre informazioni, vedere [Uso di controlli HTML5 nei test codificati dell'interfaccia utente.](../test/using-html5-controls-in-coded-ui-tests.md)
 
   - Informazioni aggiuntive sui test codificati dell'interfaccia utente:
 
@@ -302,7 +302,7 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
     - [Procedure consigliate per i test codificati dell'interfaccia utente](../test/best-practices-for-coded-ui-tests.md)
 
-    - [Testare un'applicazione di grandi dimensioni con più Mappe](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Testare un'applicazione di grandi dimensioni con più tipi di interfaccia Mappe](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
     - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
@@ -329,7 +329,7 @@ Quando si sceglie **Genera codice**, vengono create diverse parti di codice:
 
      È anche possibile aggiungere nuovi metodi di test e aggiungere codice nello stesso modo. Tutti i metodi di test devono disporre dell'attributo `[TestMethod]`.
 
-- Metodo in *UIMap.uitest*.
+- Metodo in *UIMap.uitest.*
 
      Questo metodo include i dettagli delle azioni registrate o il valore verificato. Per modificare questo codice, aprire *UIMap.uitest*. Il file verrà aperto in un editor specializzato, in cui è possibile eliminare o effettuare il refactoring delle azioni registrate.
 

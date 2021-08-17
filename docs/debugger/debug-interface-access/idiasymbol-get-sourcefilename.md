@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bffb8e9a947bf39a393b485697dca73cfb939f76bdfc5ffa8850f5a70c900434
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72be035d9a56a1ff7a837a9bff98ce358ba49773
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420550"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081125"
 ---
 # <a name="idiasymbolget_sourcefilename"></a>IDiaSymbol::get_sourceFileName
 Recupera il nome file del file di origine del compilatore.
@@ -41,7 +41,7 @@ HRESULT get_sourceFileName (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

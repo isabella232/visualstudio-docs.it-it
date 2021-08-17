@@ -1,6 +1,6 @@
 ---
 title: Direttiva assembly T4
-description: Si apprenderà che Visual Studio modello di testo della fase di progettazione la direttiva assembly carica un assembly in modo che il codice del modello possa usare i relativi tipi.
+description: Si apprenderà che Visual Studio modello di testo in fase di progettazione, la direttiva assembly carica un assembly in modo che il codice del modello possa usare i relativi tipi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.locfileid: "121428679"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 
-In un Visual Studio di testo della fase di progettazione, la direttiva carica un assembly in modo che il codice del modello `assembly` possa usare i relativi tipi. L'effetto è simile all'aggiunta di un riferimento all'assembly in un Visual Studio progetto.
+In un Visual Studio di testo in fase di progettazione, la direttiva carica un assembly in modo che il codice `assembly` del modello possa usare i relativi tipi. L'effetto è simile all'aggiunta di un riferimento ad assembly in un Visual Studio progetto.
 
- Per una panoramica generale della scrittura di modelli di testo, vedere [Scrittura di un modello di testo T4.](../modeling/writing-a-t4-text-template.md)
+ Per una panoramica generale della scrittura di modelli di testo, vedere [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> La direttiva `assembly` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. Aggiungere invece gli assembly necessari ai **riferimenti** del progetto Visual Studio progetto.
+> La direttiva `assembly` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. Aggiungere invece gli assembly necessari ai **riferimenti** del Visual Studio progetto.
 
 ## <a name="using-the-assembly-directive"></a>Utilizzo della direttiva Assembly
  La sintassi della direttiva è la seguente:
@@ -39,13 +39,13 @@ In un Visual Studio di testo della fase di progettazione, la direttiva carica un
 
 - Il percorso assoluto dell'assembly
 
-  È possibile usare la `$(variableName)` sintassi per fare riferimento Visual Studio variabili, ad esempio `$(SolutionDir)` , e per fare riferimento a variabili di `%VariableName%` ambiente. Esempio:
+  È possibile usare la sintassi per fare riferimento Visual Studio variabili di ambiente, ad esempio `$(variableName)` `$(SolutionDir)` e `%VariableName%` . Esempio:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- La direttiva dell'assembly non ha alcun effetto in un modello di testo pre-elaborato. Includere invece i riferimenti necessari nella **sezione Riferimenti** del Visual Studio progetto. Per altre informazioni, vedere [Generazione di testo di run-time con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
+ La direttiva dell'assembly non ha alcun effetto in un modello di testo pre-elaborato. Includere invece i riferimenti necessari nella **sezione Riferimenti** del Visual Studio progetto. Per altre informazioni, vedere Generazione di testo in fase [di esecuzione con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
 ## <a name="standard-assemblies"></a>Assembly standard
  Gli assembly seguenti vengono caricati automaticamente, in modo che non sia necessario scrivere per essi direttive dell'assembly:

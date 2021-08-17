@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2cd3ac4771da6d5cc5beb925e717a49b25912d22cc72e66210e34f13f46512
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0617021a5184b3812a88c26dce2c142b1d769544
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121386095"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027747"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 

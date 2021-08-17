@@ -46,7 +46,7 @@ Per impostare un repository Git, seguire questa procedura:
 Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di controllo della versione, usare i passaggi seguenti per impostarlo in Git:
 
 > [!TIP]
-> Usare un file con estensione gitignore per controllare quali cartelle e file vengono monitorati e pubblicati con Git. È possibile escludere directory di compilazione, file binari o file generati. Per altre informazioni, [vedere GitHub docs su come ignorare i file](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
+> Usare un file con estensione gitignore per controllare quali cartelle e file vengono monitorati e pubblicati con Git. È possibile escludere directory di compilazione, file binari o file generati. Per altre informazioni, [vedere la documentazione GitHub informazioni su come ignorare i file](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
 
 1. Selezionare il nome della soluzione nella finestra della soluzione Visual Studio per Mac.
 
@@ -145,7 +145,7 @@ Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHu
 
     ![URL di GitHub visualizzato](media/version-control-git14.png)
 
-4. Sostituire tutto il testo nel campo **di immissione dell'URL** nel **Connessione con la scheda** URL. La maggior parte degli altri campi di questa scheda verrà popolata automaticamente, come illustrato nell'immagine nel passaggio #2.
+4. Sostituire tutto il testo nel campo **di immissione dell'URL** nel **Connessione con la scheda** URL. La maggior parte degli altri campi in questa scheda verrà popolata automaticamente, come illustrato nell'immagine nel passaggio #2.
 
 5. Immettere la directory in cui si vuole clonare il repo e premere **Clone (Clona).**
 

@@ -1,6 +1,6 @@
 ---
 title: Pattern di controllo comuni per Visual Studio | Microsoft Docs
-description: Informazioni su come Visual Studio controlli comuni seguano le linee guida per l'interazione con Windows Desktop e sulle situazioni speciali che aumentano tali linee guida.
+description: Informazioni su come Visual Studio comuni seguono le linee guida per l'interazione Windows Desktop e sulle situazioni speciali che aumentano tali linee guida.
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: reference
@@ -8,20 +8,21 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12d514bdc0aa37598ad57e0466bf57ba75ed2601
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 937fac1eb2360cc27a01c40fc1058fdf9f710be5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899303"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062706"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modelli dei controlli comuni per Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Controlli comuni
 
 ### <a name="overview"></a>Panoramica
-I controlli comuni costituiscono la maggior parte dell'interfaccia utente in Visual Studio. I controlli più comuni usati nell'interfaccia Visual Studio devono seguire le linee guida per [l'interazione con Desktop di Windows.](/windows/desktop/uxguide/controls) Questo argomento è specifico per l'Visual Studio e illustra situazioni speciali o dettagli che aumentano le linee guida di Windows.
+I controlli comuni costituiscono la maggior parte dell'interfaccia utente in Visual Studio. I controlli più comuni usati nell'interfaccia Visual Studio devono seguire le linee guida Windows [di interazione desktop.](/windows/desktop/uxguide/controls) Questo argomento è specifico per la Visual Studio e illustra situazioni speciali o dettagli che aumentano Windows linee guida.
 
 #### <a name="common-controls-in-this-topic"></a>Controlli comuni in questo argomento
 
@@ -35,7 +36,7 @@ I controlli comuni costituiscono la maggior parte dell'interfaccia utente in Vis
 
 - [Pulsanti di opzione](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
 
-- [Raggruppare frame](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
+- [Raggruppare i frame](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
 
 - [Controlli di testo](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
@@ -44,109 +45,109 @@ I controlli comuni costituiscono la maggior parte dell'interfaccia utente in Vis
 - [Visualizzazioni albero](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
 #### <a name="visual-style"></a>Stile visivo
-La prima cosa da considerare quando si stilino i controlli è se i controlli verranno usati nell'interfaccia utente con testo. I controlli nell'interfaccia utente standard sono un'interfaccia utente senza titolo e devono seguire lo stile normale di Desktop di [Windows,](/windows/desktop/uxguide/controls)vale a dire che non sono ri-modelli e devono essere visualizzati nell'aspetto predefinito del controllo.
+La prima cosa da prendere in considerazione quando si stilizzano i controlli è se i controlli verranno usati nell'interfaccia utente a tate. I controlli nell'interfaccia utente standard sono un'interfaccia utente non Windows tato e devono seguire il normale stile desktop, [ovvero](/windows/desktop/uxguide/controls)non sono ri-modelli e devono essere visualizzati nell'aspetto predefinito del controllo.
 
-- **Finestre di dialogo standard (utilità):** non con i tipi di dati. Non ridefinire il modello. Usare i valori predefiniti dello stile di controllo di base.
+- **Finestre di dialogo standard (utilità):** non a base di testo. Non ridefinire il modello. Usare le impostazioni predefinite dello stile di controllo di base.
 
-- **Finestre degli strumenti, editor di documenti, superfici di progettazione e finestre di dialogo con testo:** Usare l'aspetto specifico con i colori usando il servizio colori.
+- **Finestre degli strumenti, editor di documenti, superfici di progettazione e finestre di dialogo a base di testo:** Usare un aspetto a sfondo specializzato usando il servizio colori.
 
 ### <a name="scroll-bars"></a><a name="BKMK_Scrollbars"></a> Barre di scorrimento
- Le barre di scorrimento devono seguire modelli di interazione comuni per le barre di scorrimento di [Windows,](/windows/desktop/Controls/about-scroll-bars) a meno che non siano aumentate con informazioni sul contenuto, ad esempio nell'editor di codice.
+ Le barre di scorrimento devono seguire i modelli di interazione comuni [Windows](/windows/desktop/Controls/about-scroll-bars) a meno che non siano aumentate con informazioni sul contenuto, ad esempio nell'editor di codice.
 
 ### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Campi di input
- Per un comportamento di interazione tipico, segui le linee [guida di Desktop di Windows per le caselle di testo.](/windows/desktop/uxguide/ctrl-text-boxes)
+ Per un comportamento di interazione tipico, seguire le linee [guida Windows Desktop per le caselle di testo.](/windows/desktop/uxguide/ctrl-text-boxes)
 
 #### <a name="visual-style"></a>Stile visivo
 
-- Lo stile dei campi di input non deve essere applicato nelle finestre di dialogo dell'utilità. Usare lo stile di base intrinseco per il controllo.
+- I campi di input non devono essere con stile nelle finestre di dialogo dell'utilità. Usare lo stile di base intrinseco per il controllo.
 
-- I campi di input con testo con testo devono essere usati solo nelle finestre degli strumenti e nelle finestre degli strumenti con testo con testo.
+- I campi di input con testo a ted devono essere usati solo nelle finestre di dialogo e nelle finestre degli strumenti.
 
 #### <a name="specialized-interactions"></a>Interazioni specializzate
 
-- I campi di sola lettura avranno uno sfondo grigio (disabilitato), ma in primo piano predefinito (attivo).
+- I campi di sola lettura avranno uno sfondo grigio (disabilitato), ma il primo piano predefinito (attivo).
 
-- I campi obbligatori devono **\<Required>** avere come filigrane al loro interno. È consigliabile non modificare il colore dello sfondo se non in rare situazioni.
+- I campi obbligatori devono **\<Required>** avere come filigrane al loro interno. Non è consigliabile modificare il colore dello sfondo, ad eccezione di situazioni rare.
 
-- Convalida degli errori: vedere [Notifiche e stato di avanzamento per Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+- Convalida degli errori: vedere [Notifiche e stato per Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
-- I campi di input devono essere ridimensionati per adattarsi al contenuto, non per adattarsi alla larghezza della finestra in cui vengono visualizzati, né per corrispondere arbitrariamente alla lunghezza di un campo lungo, ad esempio un percorso. La lunghezza può indicare all'utente le limitazioni relative al numero di caratteri consentiti nel campo.
+- I campi di input devono essere ridimensionati in base al contenuto, non per adattarsi alla larghezza della finestra in cui vengono visualizzati, né per corrispondere in modo arbitrario alla lunghezza di un campo lungo, ad esempio un percorso. La lunghezza può essere un'indicazione per l'utente di limitazioni relative al numero di caratteri consentiti nel campo.
 
      ![Lunghezza del campo di input non corretta: è improbabile che il nome sia così lungo.](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Lunghezza del campo di input non corretta: è improbabile che il nome sia così lungo.
 
-     ![Lunghezza corretta del campo di input: la larghezza del campo di input è ragionevole per il contenuto previsto.](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Lunghezza corretta del campo di input: la larghezza del campo di input è ragionevole per il contenuto previsto.
+     ![Lunghezza corretta del campo di input: il campo di input è una larghezza ragionevole per il contenuto previsto.](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Lunghezza corretta del campo di input: il campo di input è una larghezza ragionevole per il contenuto previsto.
 
 ### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Caselle combinate ed elenchi a discesa
-Per un comportamento di interazione tipico, segui le linee guida di Windows Desktop per gli elenchi a discesa e [le caselle combinate.](/windows/desktop/uxguide/ctrl-drop)
+Per un comportamento di interazione tipico, seguire le linee guida Windows Desktop per elenchi a discesa [e caselle combinate.](/windows/desktop/uxguide/ctrl-drop)
 
 #### <a name="visual-style"></a>Stile visivo
 
-- Nelle finestre di dialogo dell'utilità non ridefinire il modello del controllo. Usare lo stile di base intrinseco per il controllo.
+- Nelle finestre di dialogo dell'utilità, non ridefinire il modello del controllo. Usare lo stile di base intrinseco per il controllo.
 
-- Nell'interfaccia utente a base di testo, le caselle combinate e gli elenchi a discesa seguono il testo standard per i controlli.
+- Nell'interfaccia utente a tingere, le caselle combinate e gli elenchi a discesa seguono il testo standard per i controlli.
 
 #### <a name="layout"></a>Layout
-Le caselle combinate e gli elenchi a discesa devono essere ridimensionati per adattarsi al contenuto, non per adattarsi alla larghezza della finestra in cui vengono visualizzate, né per corrispondere arbitrariamente alla lunghezza di un campo lungo, ad esempio un tracciato.
+Le caselle combinate e gli elenchi a discesa devono essere ridimensionati in modo da adattarsi al contenuto, non per adattarsi alla larghezza della finestra in cui vengono visualizzate, né per corrispondere in modo arbitrario alla lunghezza di un campo lungo, ad esempio un percorso.
 
-![Risposta errata: la larghezza dell'elenco a discesa è troppo lunga per il contenuto che verrà visualizzato.](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Risposta errata: la larghezza dell'elenco a discesa è troppo lunga per il contenuto che verrà visualizzato.
+![Non corretto: la larghezza dell'elenco a discesa è troppo lunga per il contenuto che verrà visualizzato.](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Non corretto: la larghezza dell'elenco a discesa è troppo lunga per il contenuto che verrà visualizzato.
 
-![Risposta corretta: l'elenco a discesa viene ridimensionato per consentire la crescita della traduzione, ma non inutilmente lungo.](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Risposta corretta: l'elenco a discesa viene ridimensionato per consentire la crescita della traduzione, ma non inutilmente lungo.
+![Corretto: l'elenco a discesa viene ridimensionato per consentire la crescita della traduzione, ma non inutilmente lungo.](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Corretto: l'elenco a discesa viene ridimensionato per consentire la crescita della traduzione, ma non inutilmente lungo.
 
 ### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Caselle
-Per un comportamento di interazione tipico, seguire le linee guida [di Desktop di Windows per le caselle di controllo](/windows/desktop/uxguide/ctrl-check-boxes).
+Per un comportamento di interazione tipico, seguire le linee [guida Windows Desktop per le caselle di controllo](/windows/desktop/uxguide/ctrl-check-boxes).
 
 #### <a name="visual-style"></a>Stile visivo
 
-- Nelle finestre di dialogo dell'utilità non ridefinire il modello del controllo. Usare lo stile di base intrinseco per il controllo.
+- Nelle finestre di dialogo dell'utilità, non ridefinire il modello del controllo. Usare lo stile di base intrinseco per il controllo.
 
-- Nell'interfaccia utente con testo a tinge, le caselle di controllo seguono il testo standard per i controlli.
+- Nell'interfaccia utente a tingere le caselle di controllo seguono il testo standard per i controlli.
 
 #### <a name="specialized-interactions"></a>Interazioni specializzate
 
-- L'interazione con una casella di controllo non deve mai visualizzare una finestra di dialogo o passare a un'altra area.
+- L'interazione con una casella di controllo non deve mai aprire una finestra di dialogo o passare a un'altra area.
 
 - Allineare le caselle di controllo alla linea di base della prima riga di testo.
 
-     ![Risposta errata: la casella di controllo è centrata sul testo.](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Risposta errata: la casella di controllo è centrata sul testo.
+     ![Non corretto: la casella di controllo è centrata sul testo.](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Non corretto: la casella di controllo è centrata sul testo.
 
-     ![Risposta corretta: la casella di controllo è allineata alla prima riga del testo.](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Risposta corretta: la casella di controllo è allineata alla prima riga del testo.
+     ![Corretto: la casella di controllo è allineata alla prima riga del testo.](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Corretto: la casella di controllo è allineata alla prima riga del testo.
 
 ### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Pulsanti
-Per un comportamento di interazione tipico, segui le linee [guida di Desktop di Windows per i pulsanti di opzione](/windows/desktop/uxguide/ctrl-radio-buttons).
+Per un comportamento di interazione tipico, seguire le linee [guida Windows Desktop per i pulsanti di opzione.](/windows/desktop/uxguide/ctrl-radio-buttons)
 
 #### <a name="visual-style"></a>Stile visivo
-Nelle finestre di dialogo dell'utilità non creare uno stile per i pulsanti di opzione. Usare lo stile di base intrinseco per il controllo.
+Nelle finestre di dialogo dell'utilità non è necessario stile per i pulsanti di opzione. Usare lo stile di base intrinseco per il controllo.
 
 #### <a name="specialized-interactions"></a>Interazioni specializzate
-Non è necessario usare un frame di gruppo per racchiudere le opzioni di opzione, a meno che non sia necessario mantenere la distinzione dei gruppi in un layout stretto.
+Non è necessario usare un frame di gruppo per racchiudere le scelte radio, a meno che non sia necessario mantenere la distinzione di gruppo in un layout stretto.
 
-### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Raggruppare frame
-Per un comportamento di interazione tipico, segui le linee [guida di Desktop di Windows per raggruppare i frame.](/windows/desktop/uxguide/ctrl-group-boxes)
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Raggruppare i frame
+Per un comportamento di interazione tipico, seguire le linee [guida Windows Desktop per i frame di gruppo.](/windows/desktop/uxguide/ctrl-group-boxes)
 
 #### <a name="visual-style"></a>Stile visivo
-Nelle finestre di dialogo dell'utilità, non creare stili per i frame del gruppo. Usare lo stile di base intrinseco per il controllo.
+Nelle finestre di dialogo dell'utilità, non stili i frame del gruppo. Usare lo stile di base intrinseco per il controllo.
 
 #### <a name="layout"></a>Layout
 
-- Non è necessario usare un frame di gruppo per racchiudere le opzioni di opzione, a meno che non sia necessario mantenere la distinzione dei gruppi in un layout stretto.
+- Non è necessario usare un frame di gruppo per racchiudere le scelte radio, a meno che non sia necessario mantenere la distinzione di gruppo in un layout stretto.
 
-- Non usare mai un frame di gruppo per un singolo controllo.
+- Non usare mai una cornice di gruppo per un singolo controllo.
 
 - A volte è accettabile usare una regola orizzontale anziché un contenitore frame di gruppo.
 
 ## <a name="text-controls"></a><a name="BKMK_TextControls"></a> Controlli di testo
 
-### <a name="static-text-fields"></a>Campi di testo statico
+### <a name="static-text-fields"></a>Campi di testo statici
 
-Un campo di testo statico presenta informazioni di sola lettura e non può essere selezionato dall'utente. Evitare di usarlo per qualsiasi testo che l'utente potrebbe voler copiare negli Appunti. Tuttavia, il testo statico di sola lettura può cambiare per riflettere una modifica dello stato. Nell'esempio seguente il testo statico Nome output nel gruppo Informazioni cambia in modo da riflettere tutte le modifiche apportate alla casella di testo Spazio dei nomi radice sopra di esso.
+Un campo di testo statico presenta informazioni di sola lettura e non può essere selezionato dall'utente. Evitare di usarlo per qualsiasi testo che l'utente potrebbe voler copiare negli Appunti. Tuttavia, il testo statico di sola lettura può cambiare per riflettere una modifica dello stato. Nell'esempio seguente il testo statico Nome output nel gruppo Informazioni cambia per riflettere le modifiche apportate alla casella di testo Spazio dei nomi radice sopra di esso.
 
 Esistono due modi per visualizzare informazioni di testo statico.
 
-Il testo statico può essere di per sé in una finestra di dialogo senza contenimento in assenza di conflitti di raggruppamento. Decidere se le righe aggiuntive di una casella sono effettivamente necessarie. Un esempio è la visualizzazione di un percorso di directory in una sezione creata da una riga di gruppo, come illustrato di seguito:
+Il testo statico può essere di per sé in un dialogo senza contenimento quando non è presente alcun conflitto di raggruppamento. Decidere se le righe aggiuntive di una casella sono realmente necessarie. Un esempio è la visualizzazione di un percorso di directory in una sezione creata da una riga di gruppo, come illustrato di seguito:
 
 ![Informazioni di testo statico nei controlli di testo](../../extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Informazioni di testo statico nei controlli di testo
 
-In una finestra di dialogo in cui sono presenti altre aree raggruppate e il contenimento delle informazioni può essere utile per migliorare la leggibilità e quando una sezione può essere nascosta o visualizzata (come nel riquadro di descrizione **di Finestra Proprietà)** o si vuole essere coerente con un'interfaccia utente simile, posizionare il testo statico all'interno di una casella. Questa casella di gruppo deve essere una singola regola e colorata con `ButtonShadow` :
+In una finestra di dialogo in cui sono presenti altre aree raggruppate e il contenimento delle informazioni può essere utile per la leggibilità e quando una sezione può essere nascosta o visualizzata (come nel riquadro di descrizione **Finestra Proprietà)** o si vuole essere coerenti con un'interfaccia utente simile, inserire il testo statico all'interno di una casella. Questa casella di gruppo deve essere una singola regola e colorata con `ButtonShadow` :
 
 ![Testo statico nel Finestra Proprietà](../../extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Testo statico nel Finestra Proprietà
 
@@ -154,7 +155,7 @@ In una finestra di dialogo in cui sono presenti altre aree raggruppate e il cont
 
 In questo modo l'utente può selezionare il testo all'interno del campo, ma non modificarlo. Queste caselle di testo sono bordi del consueto chisel 3D con un `ButtonShadow` riempimento.
 
-Una casella di testo può diventare attiva (modificabile) quando un utente modifica un controllo associato, ad esempio selezionando/deselezionando una casella di controllo o selezionando o deselezionando un pulsante di opzione. Ad esempio, nella **pagina &gt; Opzioni** degli strumenti illustrata di seguito la casella di testo **Home page** diventa attiva quando la **casella** di controllo Usa impostazioni predefinite è deselezionata.
+Una casella di testo può diventare attiva (modificabile) quando un utente modifica un controllo associato, ad esempio selezionando/deselezionando una casella di controllo o selezionando o deselezionando un pulsante di opzione. Ad esempio, nella **pagina &gt; Opzioni** degli strumenti illustrata di  seguito la casella di testo **Home page** diventa attiva quando la casella di controllo Usa impostazioni predefinite è deselezionata.
 
 ![Casella di testo di sola lettura, che mostra gli stati inattivi e attivi](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Casella di testo di sola lettura, che mostra gli stati inattivi e attivi
 
@@ -164,13 +165,13 @@ Linee guida principali per il testo nei dialoghe:
 
 - Le etichette per caselle di testo, caselle di riepilogo e frame nelle finestre di dialogo non inteme iniziano con un verbo, hanno una maiuscola iniziale solo per la prima parola e terminano con i due punti.
 
-    > I controlli di testo nelle finestre di dialogo a sfondo seguono le linee guida dell'esperienza utente di [Windows Desktop](/windows/desktop/uxguide/top-violations) e non accettano la punteggiatura finale, ad eccezione dei punti interrogativi nei collegamenti della Guida.
+    > I controlli di testo nelle finestre di dialogo a Windows dell'esperienza utente [desktop](/windows/desktop/uxguide/top-violations) e non accettano la punteggiatura finale, ad eccezione dei punti interrogativi nei collegamenti della Guida.
 
 - Le etichette per le caselle di controllo e i pulsanti di opzione iniziano con un verbo, una maiuscola iniziale solo per la prima parola e non hanno punteggiatura finale.
 
 - Le etichette per pulsanti, menu, voci di menu e tabulazioni hanno iniziali maiuscole per ogni parola (maiuscole/minuscole).
 
-- La terminologia delle etichette deve essere coerente con etichette simili in altri dialoghe.
+- La terminologia delle etichette deve essere coerente con etichette simili in altre finestre di dialogo.
 
 - Se possibile, fare in modo che un writer/editor scrivo o approvi il testo prima che venga passato allo sviluppatore per l'implementazione.
 
@@ -218,10 +219,10 @@ Se si vuole che gli utenti siano in grado di copiare le informazioni, il testo d
 ## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a> Pulsanti e collegamenti ipertestuali
 
 ### <a name="overview"></a>Panoramica
-I pulsanti e i controlli collegamento (collegamenti ipertestuali) devono seguire le linee guida di base di [Windows Desktop](/windows/desktop/uxguide/ctrl-links) sui collegamenti ipertestuali per l'utilizzo, la formulazione, il ridimensionamento e la spaziatura.
+I pulsanti e i controlli collegamento (collegamenti ipertestuali) devono seguire le linee guida di base Windows [desktop](/windows/desktop/uxguide/ctrl-links) sui collegamenti ipertestuali per l'utilizzo, la formulazione, il ridimensionamento e la spaziatura.
 
 ### <a name="choosing-between-buttons-and-links"></a>Scelta tra pulsanti e collegamenti
-In genere, i pulsanti sono stati usati per le azioni e i collegamenti ipertestuali sono stati riservati per la navigazione. I pulsanti possono essere usati in tutti i casi, ma il ruolo dei collegamenti è stato espanso in Visual Studio in modo che pulsanti e collegamenti siano più intercambiabili in alcune condizioni.
+Tradizionalmente, i pulsanti sono stati usati per le azioni e i collegamenti ipertestuali sono stati riservati per la navigazione. I pulsanti possono essere usati in tutti i casi, ma il ruolo dei collegamenti è stato espanso in Visual Studio in modo che i pulsanti e i collegamenti siano più intercambiabili in alcune condizioni.
 
 Quando usare i pulsanti di comando:
 
@@ -250,7 +251,7 @@ Evitare i pulsanti di comando nelle finestre degli strumenti o se sono necessari
 
 ![Collegamenti usati nel popup CodeLens](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703-02_LinksInCodeLens")<br />Collegamenti usati nel popup CodeLens
 
-![Collegamenti usati per i comandi secondari in cui i pulsanti attirerebbero troppo attenzione](../../extensibility/ux-guidelines/media/070703-03_linksassecondarycommands.png "070703-03_LinksAsSecondaryCommands")<br />Collegamenti usati per i comandi secondari in cui i pulsanti attirano troppo attenzione
+![Collegamenti usati per i comandi secondari in cui i pulsanti attirerebbero troppo attenzione](../../extensibility/ux-guidelines/media/070703-03_linksassecondarycommands.png "070703-03_LinksAsSecondaryCommands")<br />Collegamenti usati per i comandi secondari in cui i pulsanti attirerebbero troppo attenzione
 
 ### <a name="common-buttons"></a>Pulsanti comuni
 
@@ -263,12 +264,12 @@ Seguire le linee guida per la scrittura nel testo [dell'interfaccia utente e nel
 La maggior parte dei pulsanti Visual Studio verrà visualizzata nelle finestre di dialogo dell'utilità e non deve essere applicato uno stile. Devono riflettere l'aspetto standard dei pulsanti come determinato dal sistema operativo.
 
 ##### <a name="themed"></a>Tema
-In alcuni casi, i pulsanti possono essere usati all'interno dell'interfaccia utente con stile e questi pulsanti devono essere con stile appropriato. Vedere [Dialogs (Dialogs)](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs) per informazioni sui controlli con testo a testo.
+In alcuni casi, i pulsanti possono essere usati all'interno dell'interfaccia utente con stile e questi pulsanti devono essere stili appropriati. Vedere [Dialogs (Dialogs)](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs) per informazioni sui controlli con testo a testo.
 
 ### <a name="special-buttons"></a>Pulsanti speciali
 
 #### <a name="browse-buttons"></a>Sfoglia... Pulsanti
-**[Sfoglia...]** I pulsanti vengono usati nelle griglie, nelle finestre di dialogo e nelle finestre degli strumenti e in altri elementi non modali dell'interfaccia utente. Visualizza un controllo di selezione che consente all'utente di compilare un valore in un controllo . Esistono due varianti di questo pulsante, long e short.
+**[Sfoglia...]** I pulsanti vengono usati nelle griglie, nelle finestre di dialogo e nelle finestre degli strumenti e in altri elementi dell'interfaccia utente non modali. Visualizza un controllo di selezione che consente all'utente di compilare un valore in un controllo . Esistono due varianti di questo pulsante, long e short.
 
 ![Pulsante lungo [Sfoglia...]](../../extensibility/ux-guidelines/media/070703-04_browselong.gif "070703-04_BrowseLong")<br />Pulsante lungo [Sfoglia...]
 
@@ -286,7 +287,7 @@ Linee guida per l'uso del pulsante:
 
 - Non usare una chiave di accesso. Per accedervi tramite la tastiera, l'utente deve premere TAB dal controllo adiacente. Assicurarsi che l'ordine di tabulazione sia tale che qualsiasi pulsante Sfoglia cada immediatamente dopo il campo che verrà riempito. Non usare mai un carattere di sottolineatura sotto il primo punto.
 
-- Impostare la proprietà Microsoft Active Accessibility (MSAA) **Name** su **Browse...** (inclusi i puntini di sospensione) in modo che le utilità per la lettura dello schermo lo leggono come "Sfoglia" e non come "dot-dot-dot" o "period-period-period". Per i controlli gestiti, questo significa impostare la **proprietà AccessibleName.**
+- Impostare la proprietà Microsoft Active Accessibility (MSAA) **Name** su **Browse...** (inclusi i puntini di sospensione) in modo che le utilità per la lettura dello schermo lo leggono come "Sfoglia" e non "dot-dot-dot" o "period-period-period". Per i controlli gestiti, ciò significa impostare la **proprietà AccessibleName.**
 
 - Non usare mai un pulsante con i puntini **di sospensione [...]** per qualsiasi elemento, ad eccezione di un'azione di esplorazione. Ad esempio, se è necessario un **pulsante [Nuovo...]** ma non si ha spazio sufficiente per il testo, la finestra di dialogo deve essere riprogettata.
 
@@ -301,7 +302,7 @@ Alcuni pulsanti devono sempre usare un'immagine grafica e non includere mai test
 > [!NOTE]
 > Gli utenti devono premere TAB per questi pulsanti (non sono presenti tasti di scelta), quindi posizionarli in un ordine ragionevole. Eseguire il mapping della proprietà del pulsante all'azione eseguita in modo che le utilità per la lettura `name` dello schermo interpretino correttamente l'azione del pulsante.
 
-| Funzione | Pulsante |
+| Funzione | Button |
 | --- | --- |
 | Add | ![Pulsante grafico "Aggiungi"](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
 | Rimuovi | ![Pulsante grafico "Rimuovi"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
@@ -309,7 +310,7 @@ Alcuni pulsanti devono sempre usare un'immagine grafica e non includere mai test
 | Rimuovi tutto | ![Pulsante grafico "Rimuovi tutto"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Sposta su | ![Pulsante grafico "Sposta su"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
 | Sposta giù | ![Pulsante grafico "Sposta giù"](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
-| Delete | ![Pulsante grafico "Elimina"](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
+| Elimina | ![Pulsante grafico "Elimina"](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
 
 ##### <a name="sizing-and-spacing"></a>Ridimensionamento e spaziatura
 Il ridimensionamento per i pulsanti grafici è identico a quello della versione breve del pulsante **[Sfoglia...]** (26 x 23 pixel):
@@ -320,13 +321,13 @@ Il ridimensionamento per i pulsanti grafici è identico a quello della versione 
 I collegamenti ipertestuali sono particolarmente adatti per le azioni basate sulla navigazione, ad esempio l'apertura di un argomento della Guida, di una finestra di dialogo modale o di una procedura guidata. Se un collegamento ipertestuale viene usato per un comando, deve sempre visualizzare una modifica visibile e evidente all'interfaccia utente. In generale, le azioni di cui viene eseguito il commit in un'azione (ad esempio Salva, Annulla ed Elimina) vengono comunicate meglio tramite un pulsante.
 
 #### <a name="writing-style"></a>Stile di scrittura
-Seguire le linee [guida di Windows Desktop per il testo dell'interfaccia utente.](/windows/desktop/uxguide/text-ui) Non usare la formulazione "Altre informazioni su", "Altre informazioni su" o "Ottieni assistenza con questa". Al contrario, la frase Guida collega il testo in termini della domanda principale a cui risponde il contenuto della Guida. Ad esempio, "**Ricerca per categorie aggiungere un server al Esplora server?**"
+Seguire le linee [guida Windows desktop per il testo dell'interfaccia utente](/windows/desktop/uxguide/text-ui). Non usare la formulazione "Altre informazioni su", "Altre informazioni su" o "Ottieni assistenza con questa". Al contrario, la frase Guida collega il testo in termini della domanda principale a cui risponde il contenuto della Guida. Ad esempio, "**Ricerca per categorie aggiungere un server al Esplora server?**"
 
 #### <a name="visual-style"></a>Stile visivo
 
 - I collegamenti ipertestuali devono sempre [usare il servizio VSColor.](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService) Se lo stile di un collegamento ipertestuale non è corretto, lampeggia in rosso quando è attivo o mostra un colore diverso dopo la visita.
 
-- Non includere sottolineature nello stato di pausa del controllo, a meno che il collegamento non sia un frammento di frase all'interno di una frase completa, ad esempio in una filigrana.
+- Non includere sottolineature nello stato di inserzione del controllo, a meno che il collegamento non sia un frammento di frase all'interno di una frase completa, ad esempio in una filigrana.
 
 - Le sottolineature non dovrebbero essere visualizzate al passaggio del mouse. Al contrario, il feedback per l'utente che il collegamento è attivo è una lieve modifica del colore e il cursore di collegamento appropriato.
 
@@ -337,7 +338,7 @@ Le visualizzazioni albero consentono di organizzare elenchi complessi in gruppi 
 ### <a name="tree-view-visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a> Stile di visualizzazione della visualizzazione struttura ad albero
 
 #### <a name="expanders"></a>Espansori
-I controlli visualizzazione albero devono essere conformi alla progettazione dell'espansore usata da Windows e Visual Studio. Ogni nodo usa un controllo expander per visualizzare o nascondere gli elementi sottostanti. L'uso di un controllo expander garantisce coerenza per gli utenti che potrebbero riscontrare visualizzazioni albero diverse all'interno di Windows e Visual Studio.
+I controlli visualizzazione albero devono essere conformi alla progettazione dell'espansore usata Windows e Visual Studio. Ogni nodo usa un controllo expander per visualizzare o nascondere gli elementi sottostanti. L'uso di un controllo expander garantisce la coerenza per gli utenti che potrebbero riscontrare visualizzazioni albero diverse all'interno Windows e Visual Studio.
 
 ![Risposta corretta: stile appropriato del nodo della visualizzazione struttura ad albero tramite un controllo expander](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Risposta corretta: stile appropriato del nodo della visualizzazione struttura ad albero tramite un controllo expander
 
@@ -361,7 +362,7 @@ Le barre di scorrimento devono essere sempre nascoste se il contenuto rientra ne
 ### <a name="tree-view-interactions"></a><a name="BKMK_TreeViewInteractions"></a> Interazioni con la visualizzazione albero
 
 #### <a name="context-menus"></a>Menu di scelta rapida
-Un nodo della visualizzazione albero può visualizzare le opzioni di sottomenu in un menu di scelta rapida. In genere, ciò si verifica quando un utente ha fatto clic con il pulsante destro del mouse su un elemento o ha premuto il tasto Menu su una tastiera di Windows con l'elemento selezionato. È importante che il nodo acquisisca lo stato attivo ed sia selezionato. Ciò consente all'utente di identificare l'elemento a cui appartiene il sottomenu.
+Un nodo della visualizzazione albero può visualizzare le opzioni di sottomenu in un menu di scelta rapida. In genere, ciò si verifica quando un utente ha fatto clic con il pulsante destro del mouse su un elemento o ha premuto il tasto Menu Windows tastiera con l'elemento selezionato. È importante che il nodo acquisisca lo stato attivo ed sia selezionato. Ciò consente all'utente di identificare l'elemento a cui appartiene il sottomenu.
 
 ![L'elemento che ha generato il menu di scelta rapida ottiene lo stato attivo per notificare all'utente quale elemento è stato selezionato.](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />L'elemento che ha generato il menu di scelta rapida ottiene lo stato attivo per notificare all'utente quale elemento è stato selezionato.
 
@@ -384,7 +385,7 @@ Visual Studio controlli struttura ad albero devono seguire gli spostamenti comun
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (visualizzazione albero e visualizzazione griglia)
 Un controllo trid è un controllo complesso che contiene una visualizzazione albero all'interno di una griglia. L'espansione, la compressione e l'esplorazione dell'albero devono rispettare gli stessi comandi della tastiera di una visualizzazione albero, con le aggiunte seguenti:
 
-- **Freccia DESTRA:** Espandere un nodo. Dopo che il nodo è stato espanso, dovrebbe continuare a passare alla colonna più vicina a destra. La navigazione deve essere interrotta alla fine della riga.
+- **Freccia DESTRA:** Espandere un nodo. Dopo che il nodo è stato espanso, dovrebbe continuare a passare alla colonna più vicina a destra. La navigazione deve interrompersi alla fine della riga.
 
 - **Scheda:** Passa alla cella più vicina a destra.  Alla fine della riga, lo spostamento continua alla riga successiva.
 

@@ -1,6 +1,6 @@
 ---
 title: Impostazioni di registrazione dei test di carico
-description: Informazioni su come modificare le impostazioni di registrazione dei test di carico per controllare la quantità di dati sulle prestazioni raccolti, che può generare file di risultati molto grandi.
+description: Informazioni su come modificare le impostazioni di registrazione dei test di carico per controllare la quantità di dati sulle prestazioni raccolti, che possono causare file di risultati molto grandi.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -10,12 +10,13 @@ ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: db84e5be44d70934331d9e7d9c47e78bc669bedb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 6a5ecba31faca0594ec1705054222b17f366263c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838295"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032914"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificare le impostazioni di registrazione dei test di carico
 
@@ -27,7 +28,7 @@ Durante l'esecuzione del test di carico, il *test controller* effettua lo spooli
 
 |Attività|Argomenti correlati|
 |-|-----------------------|
-|**Salvare i log se un test di carico non riesce:** è possibile specificare se si vuole salvare il log di test quando un test di carico non riesce.|-   [Procedura: specificare se i test non superati vengono salvati in log di test](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Salvare i log se un test di carico non riesce:** è possibile specificare se si vuole salvare il log di test quando un test di carico non riesce.|-   [Procedura: Specificare se gli errori di test vengono salvati nei log di test](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Impostare le dimensioni massime per il file di log:** è possibile modificare il file di configurazione XML associato al servizio del test controller per specificare le dimensioni massime da usare per il file di log.|Modificare `<add key="LogSizeLimitInMegs" value="20"/>` nel file di configurazione XML *QTCcontroller.exe.config*.|
 
 ## <a name="see-also"></a>Vedi anche

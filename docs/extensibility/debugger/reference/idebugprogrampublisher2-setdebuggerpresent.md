@@ -1,5 +1,5 @@
 ---
-description: Indica all'autore del programma che un debugger è presente ed in esecuzione.
+description: Indica all'autore del programma che un debugger è presente ed è in esecuzione.
 title: IDebugProgramPublisher2::SetDebuggerPresent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9208f2d6bb2ead37f44bf1c265d214216a9d120b964215a10473992dba288d73
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 23c5c59e738eb49c148a873248cd6eae08f04f14
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402506"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063993"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-Indica all'autore del programma che un debugger è presente ed in esecuzione.
+Indica all'autore del programma che un debugger è presente ed è in esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ int SetDebuggerPresent(
 
 ## <a name="parameters"></a>Parametri
 `fDebuggerPresent`\
-[in] Diverso da zero ( ) se è presente `TRUE` un debugger, zero ( `FALSE` ) in caso contrario.
+[in] Diverso da zero ( `TRUE` ) se è presente un debugger, zero ( ) in caso `FALSE` contrario.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

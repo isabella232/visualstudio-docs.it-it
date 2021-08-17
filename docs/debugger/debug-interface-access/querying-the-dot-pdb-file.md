@@ -1,6 +1,6 @@
 ---
-description: Un file di database di programma (estensione pdb) è un file binario che contiene informazioni di debug simbolico e di tipo raccolte durante la compilazione e il collegamento del progetto.
-title: Esecuzione di query su . File PDB | Microsoft Docs
+description: Un file di database di programma (estensione pdb) è un file binario che contiene informazioni di debug di tipo e simboliche raccolte nel corso della compilazione e del collegamento del progetto.
+title: Esecuzione di query su . File Pdb | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -23,9 +23,9 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121379680"
 ---
 # <a name="querying-the-pdb-file"></a>Ricerche nel file PDB
-Un file di database di programma (estensione pdb) è un file binario che contiene informazioni di debug simbolico e di tipo raccolte durante la compilazione e il collegamento del progetto. Un file PDB viene creato quando si compila un programma C/C++ con **/ZI** o **/Zi** o un programma , o con [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] **l'opzione /debug.** I file oggetto contengono riferimenti al file con estensione pdb per le informazioni di debug. Per altre informazioni sui file pdb, vedere [File PDB.](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)) Un'applicazione DIA può usare i passaggi generali seguenti per ottenere informazioni dettagliate sui vari simboli, oggetti ed elementi di dati all'interno di un'immagine eseguibile.
+Un file di database di programma (estensione pdb) è un file binario che contiene informazioni di debug di tipo e simboliche raccolte nel corso della compilazione e del collegamento del progetto. Un file PDB viene creato quando si compila un programma C/C++ con **/ZI** o **/Zi** o un programma , o con l'opzione [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] **/debug.** I file oggetto contengono riferimenti al file con estensione pdb per le informazioni di debug. Per altre informazioni sui file pdb, vedere [File PDB](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Un'applicazione DIA può usare i passaggi generali seguenti per ottenere informazioni dettagliate sui vari simboli, oggetti ed elementi di dati all'interno di un'immagine eseguibile.
 
-### <a name="to-query-the-pdb-file"></a>Per eseguire una query sul file con estensione pdb
+### <a name="to-query-the-pdb-file"></a>Per eseguire query sul file con estensione pdb
 
 1. Acquisire un'origine dati creando [un'interfaccia IDiaDataSource.](../../debugger/debug-interface-access/idiadatasource.md)
 
@@ -57,7 +57,7 @@ Un file di database di programma (estensione pdb) è un file binario che contien
     }
     ```
 
-3. Chiamare [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) per aprire una [sessione IDiaSession](../../debugger/debug-interface-access/idiasession.md) per ottenere l'accesso alle informazioni di debug.
+3. Chiamare [IDiaDataSource::openSession per](../../debugger/debug-interface-access/idiadatasource-opensession.md) aprire [una sessione IDiaSession](../../debugger/debug-interface-access/idiasession.md) per ottenere l'accesso alle informazioni di debug.
 
     ```C++
     CComPtr<IDiaSession> psession;
@@ -77,7 +77,7 @@ Un file di database di programma (estensione pdb) è un file binario che contien
     }
     ```
 
-5. Utilizzare le `IDiaEnum*` interfacce per enumerare ed esaminare i simboli o altri elementi delle informazioni di debug.
+5. Usare le `IDiaEnum*` interfacce per enumerare ed analizzare i simboli o altri elementi delle informazioni di debug.
 
     ```C++
     CComPtr<IDiaEnumTables> pTables;

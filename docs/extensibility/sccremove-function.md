@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3555d53ccd845d878fe91f8802e4f8b02f3087475dbd8cb85800aee5b23d961
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6c15323e98f0427016c0d6fa7353cb38d5a301b9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121413934"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062667"
 ---
 # <a name="sccremove-function"></a>Funzione SccRemove
 Questa funzione elimina i file dal sistema di controllo del codice sorgente.

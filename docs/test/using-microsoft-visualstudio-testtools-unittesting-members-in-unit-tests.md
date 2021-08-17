@@ -1,20 +1,21 @@
 ---
 title: Usare MSTest negli unit test
-description: Informazioni sul framework MSTest, che supporta il testing unità in Visual Studio. Usare queste classi e i membri per codificare unit test.
+description: Informazioni sul framework MSTest, che supporta gli unit test in Visual Studio. Usare queste classi e membri per codificare unit test.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2018
 ms.topic: reference
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4eef06bb48730fba9ba1df145857d41323cbfdd7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d69660fddc4947e85a49616285d546a30d91bb1262a4c6ed4820d3516faaf7dc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946319"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121352331"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usare il framework MSTest negli unit test
 
@@ -79,7 +80,7 @@ Ogni classe di test deve avere l'attributo `TestClass` e ogni metodo di test dev
 
 ## <a name="assert-classes-and-related-exceptions"></a>Classi Assert ed eccezioni correlate
 
-Gli unit test possono verificare il comportamento specifico dell'applicazione in base all'uso di vari tipi di asserzioni, eccezioni e attributi. Per ulteriori informazioni, vedere [utilizzo delle classi Assert](../test/using-the-assert-classes.md).
+Gli unit test possono verificare il comportamento specifico dell'applicazione in base all'uso di vari tipi di asserzioni, eccezioni e attributi. Per altre informazioni, vedere Uso [delle classi assert.](../test/using-the-assert-classes.md)
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

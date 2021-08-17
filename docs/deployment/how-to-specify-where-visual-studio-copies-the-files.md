@@ -1,6 +1,6 @@
 ---
 title: Specificare dove copiare i file | Microsoft Docs
-description: Informazioni su come impostare la proprietà percorso di pubblicazione per un'applicazione ClickOnce, che specifica il percorso in cui vengono inseriti i file dell'applicazione e il manifesto.
+description: Informazioni su come impostare la proprietà Percorso di pubblicazione per un'ClickOnce, che specifica il percorso in cui vengono inseriti i file e il manifesto dell'applicazione.
 ms.custom:
 - SEO-VS-2020
 - seodec18
@@ -17,19 +17,20 @@ ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 50f3e5d8500e57dd336919a5da58af094db97169
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2425f428f5252c574eacb17c1c404bf06f80279e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887419"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080442"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Procedura: Specificare il percorso in cui vengono copiati i file in Visual Studio
 Quando si pubblica un'applicazione tramite ClickOnce, la proprietà `Publish Location` specifica il percorso in cui vengono inseriti i file dell'applicazione e il manifesto. Può trattarsi di un percorso di file o del percorso di un server FTP.
 
- È possibile specificare la proprietà `Publish Location` nella pagina **Pubblica** di **Progettazione progetti** oppure mediante la Pubblicazione guidata. Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ È possibile specificare la proprietà `Publish Location` nella pagina **Pubblica** di **Progettazione progetti** oppure mediante la Pubblicazione guidata. Per altre informazioni, vedere [Procedura: Pubblicare un'ClickOnce usando la Pubblicazione guidata.](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 
 > [!NOTE]
 > Quando si installa più di una versione di un'applicazione tramite ClickOnce, l'installazione sposta le versioni precedenti dell'applicazione in una cartella denominata Archivio, nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.
@@ -42,12 +43,12 @@ Quando si pubblica un'applicazione tramite ClickOnce, la proprietà `Publish Loc
 
 3. Nel campo **Percorso pubblicazione** immettere il percorso di pubblicazione usando uno dei formati seguenti:
 
-   - Per pubblicare in una condivisione file o un percorso su disco, immettere il percorso usando un percorso UNC (*\\ \Server\ApplicationName*) o un percorso file (*c:\Deploy\NomeApplicazione*).
+   - Per pubblicare in una condivisione file o in un percorso su disco, immettere il percorso usando un percorso UNC (*\\ \Server\ApplicationName*) o un percorso di file (*C:\Deploy\ApplicationName*).
 
-   - Per pubblicare in un server FTP, immettere il percorso usando il formato <em>FTP://FTP.Microsoft.com/ \<ApplicationName> </em>.
+   - Per pubblicare in un server FTP, immettere il percorso usando il <em>formato ftp://ftp.microsoft.com/ \<ApplicationName> </em>.
 
-     Si noti che il testo deve essere presente nella casella **percorso di pubblicazione** affinché il pulsante Sfoglia (**..**.) funzioni.
+     Si noti che il testo deve essere presente nella casella **Posizione** di pubblicazione per consentire il funzionamento del pulsante Sfoglia **(**... ).
 
 ## <a name="see-also"></a>Vedi anche
-- [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Pubblicazione ClickOnce applicazioni](../deployment/publishing-clickonce-applications.md)
+- [Procedura: Pubblicare un'ClickOnce di pubblicazione usando la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

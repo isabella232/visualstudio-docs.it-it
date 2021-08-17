@@ -3,10 +3,10 @@ title: ID dei carichi di lavoro e dei componenti di Visual Studio Test Controlle
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio per distribuire testi automatizzati su più computer
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 08/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a1b07cd355d820253e5dd6f9fada832261037eb4
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: 796e87d0e9c575b2514576bc675eff171cd6fbed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565206"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028128"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Elenco dei componenti di Visual Studio Test Controller
 

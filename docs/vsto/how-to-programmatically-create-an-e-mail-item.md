@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: bf0ed43b3c27a14c8d746d6bb0851b36180f523d29f139ae10df27383e21f1d8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3c2a763957004b622250514535a9ebe1c80b0cf8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423917"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046584"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>Procedura: Creare un elemento di posta elettronica a livello di codice
-  In questo esempio viene creato un messaggio di posta elettronica Microsoft Office Outlook.
+  Questo esempio crea un messaggio di posta elettronica in Microsoft Office Outlook.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

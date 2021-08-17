@@ -1,6 +1,6 @@
 ---
 description: Ottiene un elenco di elementi figlio selezionati di un riferimento.
-title: Interfaccia IDebugReference2::EnumChildren | Microsoft Docs
+title: IDebugReference2::EnumChildren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27541d1a9f238acbe626a67520868bfd882833717487ea253c37a64fdf8a1f21
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bab404519695b71c84c82216606b59529b1d4386
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338618"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029840"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 Ottiene un elenco di elementi figlio selezionati di un riferimento. Riservato per utilizzi futuri.
@@ -53,7 +53,7 @@ int EnumChildren (
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag [dell'enumerazione DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica quali campi [](../../../extensibility/debugger/reference/debug-reference-info.md) nelle strutture DEBUG_REFERENCE_INFO enumerate devono essere compilati.
+[in] Combinazione di flag dell'enumerazione [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica i [](../../../extensibility/debugger/reference/debug-reference-info.md) campi nelle strutture DEBUG_REFERENCE_INFO valori enumerati.
 
 `dwRadix`\
 [in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
@@ -65,7 +65,7 @@ int EnumChildren (
 [in] Stringa che specifica un filtro, ad esempio "MyX", usata in combinazione con il parametro per selezionare `dwAttribFilter` le strutture da enumerare.
 
 `dwTimeout`\
-[in] Tempo massimo di attesa, in millisecondi, prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
+[in] Tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo indefinito.
 
 `ppEnum`\
 [out] Restituisce un [oggetto IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) che contiene un elenco delle proprietà figlio richieste.

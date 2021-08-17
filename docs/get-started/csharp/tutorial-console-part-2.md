@@ -1,14 +1,14 @@
 ---
 title: "Esercitazione 2: Estendere l'app console C#"
-description: Informazioni dettagliate su come sviluppare un Visual Studio app console C#.
+description: Informazioni su come sviluppare un'app console C# in Visual Studio, procedura dettagliata.
 ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
@@ -16,16 +16,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f7d1ae7d0d5f045c0772243c7fc4011a9f31088e
-ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
+ms.openlocfilehash: 2c8e0108a58e6502de9f8a52b7738ea055f6862f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113649156"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049090"
 ---
 # <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>Esercitazione: Estendere l'app console C# ed eseguire il debug in Visual Studio (parte 2 di 2)
 
-Nella parte 2 di questa serie di esercitazioni si approfondiranno le funzionalità di compilazione e debug di Visual Studio necessarie per lo sviluppo giornaliero, ad esempio la gestione di più progetti, il debug e il riferimento a pacchetti di terze parti. Si eseguirà l'app console C# creata nella [parte 1 di questa esercitazione(tutorial-console.md) e si esplorerà alcune funzionalità dell'ambiente di sviluppo integrato (IDE) di Visual Studio mentre si esegue questa operazione. Questa esercitazione è la parte 2 di una serie di esercitazioni in due parti.
+Nella parte 2 di questa serie di esercitazioni verranno approfondite le funzionalità di compilazione e debug di Visual Studio necessarie per lo sviluppo giornaliero, ad esempio la gestione di più progetti, il debug e il riferimento a pacchetti di terze parti. Si eseguirà l'app console C# creata in [Parte 1 di questa esercitazione(tutorial-console.md) ed esplorerà alcune funzionalità dell'ambiente di sviluppo integrato (IDE) di Visual Studio durante questa operazione. Questa esercitazione è la parte 2 di una serie di esercitazioni in due parti.
 
 In questa esercitazione si apprenderà come:
 
@@ -40,39 +40,39 @@ In questa esercitazione si apprenderà come:
 
 È necessario:
 + Usare [l'app console Calculator della parte 1 di questa serie di esercitazioni](tutorial-console.md) 
-+ Usare l'app Calcolatrice C# nel [repo vs-tutorial-samples](https://github.com/MicrosoftDocs/vs-tutorial-samples) che è possibile aprire da un [repo](../tutorial-open-project-from-repo.md) per iniziare.
++ Usare l'app Calcolatrice C# [nel repo vs-tutorial-samples](https://github.com/MicrosoftDocs/vs-tutorial-samples) che è possibile aprire da un [repo](../tutorial-open-project-from-repo.md) per iniziare.
 
 ## <a name="add-another-project"></a>Aggiungere un altro progetto
 
-Il codice reale implica la collaborazione di molti progetti in una soluzione. Aggiungere ora un altro progetto all'app Calculator. Si tratta di una libreria di classi che fornisce alcune delle funzioni della calcolatrice.
+Il codice reale implica molti progetti che lavorano insieme in una soluzione. Ora si aggiunge un altro progetto all'app Calculator. Si tratta di una libreria di classi che fornisce alcune delle funzioni della calcolatrice.
 
-1. In Visual Studio è possibile usare il comando di menu di primo livello **File** Aggiungi nuovo Project per aggiungere un nuovo progetto, ma è anche possibile fare clic con il pulsante destro del mouse sul nome del progetto esistente  >    >   (denominato "nodo del progetto") e aprire il menu di scelta rapida (o il menu di scelta rapida) del progetto. Questo menu di scelta rapida contiene molti modi per aggiungere funzionalità ai progetti. Fare quindi clic con il pulsante destro del mouse sul nodo del **progetto Esplora soluzioni** e scegliere Aggiungi  >  **nuovo Project**.
+1. In Visual Studio è possibile usare il comando di menu di primo livello **File** Aggiungi nuovo Project per aggiungere un nuovo progetto, ma è anche possibile fare clic con il pulsante destro del mouse sul nome del progetto esistente  >    >   (denominato "nodo del progetto") e aprire il menu di scelta rapida del progetto (o menu di scelta rapida). Questo menu di scelta rapida contiene molti modi per aggiungere funzionalità ai progetti. Fare quindi clic con il pulsante destro del mouse sul nodo **del progetto Esplora soluzioni** e scegliere Aggiungi  >  **nuovo Project**.
 
-1. Scegliere il modello di progetto C# **Libreria di classi (.NET Standard)**.
+1. Scegliere il modello di progetto C# Libreria di **classi (.NET Standard)**.
 
-   ![Screenshot della selezione del modello di progetto Libreria di classi](media/vs-2019/calculator2-add-project-dark.png)
+   ![Screenshot della selezione del modello di progetto libreria di classi](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Digitare il nome del **progetto CalculatorLibrary** e scegliere **Crea.** Anche in questo caso, scegliere .NET 3.1 quando richiesto. Visual Studio crea il nuovo progetto e lo aggiunge alla soluzione.
+1. Digitare il nome del progetto **CalculatorLibrary** e scegliere **Crea**. Quando richiesto, scegliere di nuovo .NET 3.1. Visual Studio crea il nuovo progetto e lo aggiunge alla soluzione.
 
-   ![Screenshot della Esplora soluzioni con il progetto libreria di classi CalculatorLibrary aggiunto](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
+   ![Screenshot dell'Esplora soluzioni con il progetto libreria di classi CalculatorLibrary aggiunto](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. Invece di avere *Class1.cs*, rinominare il file **CalculatorLibrary.cs**. È possibile fare clic sul nome nel **Esplora soluzioni** rinominarlo oppure fare clic con il pulsante destro del mouse e scegliere **Rinomina** oppure **premere F2.**
+1. Invece di avere *Class1.cs,* rinominare il file **CalculatorLibrary.cs**. È possibile fare clic sul nome **in** Esplora soluzioni rinominarlo oppure fare clic con il pulsante destro del mouse e scegliere **Rinomina** oppure premere **F2.**
 
-   Potrebbe essere richiesto se si desidera rinominare i riferimenti `Class1` a nel file . Non è importante come rispondere, perché il codice verrà sostituito in un passaggio futuro.
+   È possibile che venga chiesto se si vuole rinominare i riferimenti `Class1` a nel file. Non è importante come rispondere, poiché il codice verrà sostituito in un passaggio futuro.
 
-1. È ora necessario aggiungere un riferimento al progetto, in modo che il primo progetto possa usare le API esposte dalla nuova libreria di classi.  Fare clic con il pulsante destro **del mouse sul** nodo Dipendenze nel primo progetto e scegliere Project Riferimento **.**
+1. È ora necessario aggiungere un riferimento al progetto, in modo che il primo progetto possa usare le API esposte dalla nuova libreria di classi.  Fare clic con il pulsante destro **del mouse** sul nodo Dipendenze nel primo progetto e scegliere Aggiungi Project **riferimento**.
 
-   ![Screenshot della voce di menu Project riferimenti](media/vs-2019/calculator2-add-project-reference-dark.png)
+   ![Screenshot della voce di menu Aggiungi Project riferimento](media/vs-2019/calculator2-add-project-reference-dark.png)
 
-   Verrà visualizzata la finestra di dialogo **Gestione riferimenti**. Questa finestra di dialogo consente di aggiungere riferimenti ad altri progetti, nonché ad assembly e DLL COM necessari per i progetti.
+   Verrà visualizzata la finestra di dialogo **Gestione riferimenti**. Questa finestra di dialogo consente di aggiungere riferimenti ad altri progetti, nonché assembly e DLL COM necessari per i progetti.
 
    ![Screenshot della finestra di dialogo Gestione riferimenti](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. Nella finestra **di dialogo Gestione** riferimenti selezionare la casella di controllo per il progetto **CalculatorLibrary** e scegliere **OK.**  Il riferimento al progetto viene visualizzato sotto un **nodo Progetti** in **Esplora soluzioni**.
+1. Nella finestra **di dialogo Gestione** riferimenti selezionare la casella di controllo per il progetto **CalculatorLibrary** e scegliere **OK.**  Il riferimento al progetto viene visualizzato in **un nodo Progetti** in **Esplora soluzioni**.
 
-   ![Screenshot dell'Esplora soluzioni con riferimento al progetto](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
+   ![Screenshot dell'Esplora soluzioni riferimento al progetto](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. In *Program.cs* selezionare la classe e tutto il relativo `Calculator` codice e premere **CTRL+X** per tagliarla da Program.cs. Quindi in **CalculatorLibrary** in *CalculatorLibrary.cs incollare* il codice nello spazio dei `CalculatorLibrary` nomi . Impostare quindi la classe Calculator per `public` esporla all'esterno della libreria. Il codice in *CalculatorLibrary.cs* dovrebbe ora essere simile al codice seguente:
+1. In *Program.cs* selezionare la classe e tutto il relativo codice `Calculator` e premere **CTRL+X** per tagliarla da Program.cs. In **CalculatorLibrary** in *CalculatorLibrary.cs* incollare quindi il codice nello spazio dei `CalculatorLibrary` nomi . Creare quindi la classe Calculator `public` per esporla all'esterno della libreria. Il codice in *CalculatorLibrary.cs* dovrebbe ora essere simile al codice seguente:
 
    ```csharp
    using System;
@@ -114,7 +114,7 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
     }
    ```
 
-1. Il primo progetto contiene un riferimento, ma verrà visualizzato un errore che la chiamata a Calculator.DoOperation non viene risolta. Questo perché CalculatorLibrary si trova in uno spazio dei nomi diverso, quindi aggiungere `CalculatorLibrary` lo spazio dei nomi per un riferimento completo.
+1. Il primo progetto ha un riferimento, ma verrà visualizzato un errore che la chiamata Calculator.DoOperation non risolve. Questo perché CalculatorLibrary si trova in uno spazio dei nomi diverso, quindi aggiungere lo spazio dei `CalculatorLibrary` nomi per un riferimento completo.
 
    ```csharp
    result = CalculatorLibrary.Calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -126,7 +126,7 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
    using CalculatorLibrary;
    ```
 
-   Questa modifica dovrebbe consentire di rimuovere lo spazio dei nomi CalculatorLibrary dal sito di chiamata, ma ora esiste un'ambiguità. La `Calculator` classe in CalculatorLibrary o Calculator è lo spazio dei nomi ?  Per risolvere l'ambiguità, rinominare lo spazio dei nomi `CalculatorProgram` .
+   Questa modifica dovrebbe consentire di rimuovere lo spazio dei nomi CalculatorLibrary dal sito di chiamata, ma ora si verifica un'ambiguità. La classe in CalculatorLibrary o `Calculator` Calculator è lo spazio dei nomi ?  Per risolvere l'ambiguità, rinominare lo spazio dei nomi `CalculatorProgram` .
 
    ```csharp
    namespace CalculatorProgram
@@ -134,7 +134,7 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Fare riferimento alle librerie .NET: scrivere in un log
 
-1. Si supponga di voler aggiungere un log di tutte le operazioni e scriverlo in un file di testo. La classe .NET `Trace` fornisce questa funzionalità. È utile anche per le tecniche di debug di stampa di base.  La classe Trace si trova in System.Diagnostics e saranno necessarie System.IO classi come , quindi iniziare aggiungendo le direttive using all'inizio `StreamWriter` di *CalculatorLibrary.cs:*
+1. Si supponga ora di voler aggiungere un log di tutte le operazioni e di scriverlo in un file di testo. La classe .NET `Trace` fornisce questa funzionalità. È utile anche per tecniche di debug di stampa di base.  La classe Trace si trova in System.Diagnostics ed è necessario System.IO classi come , quindi iniziare aggiungendo le direttive using all'inizio `StreamWriter` di *CalculatorLibrary.cs:*
 
    ```csharp
    using System.IO;
@@ -157,7 +157,7 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
         {
    ```
 
-1. Ed è necessario modificare il metodo statico `DoOperation` in un metodo membro, quindi rimuovere la parola `static` chiave .  Aggiungere anche l'output a ogni calcolo per il log, in modo che DoOperation sia simile al codice seguente:
+1. Ed è necessario modificare il metodo statico `DoOperation` in un metodo membro, quindi rimuovere la parola `static` chiave .  Si aggiunge anche l'output a ogni calcolo per il log, in modo che DoOperation sia simile al codice seguente:
 
    ```csharp
    public double DoOperation(double num1, double num2, string op)
@@ -195,13 +195,13 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
     }
    ```
 
-1. Ora di nuovo in *Program.cs,* la chiamata statica è contrassegnata con un rosso ondulato. Per risolvere il problema, creare `calculator` una variabile aggiungendo la riga seguente subito prima del ciclo `while (!endApp)` :
+1. Ora di nuovo in *Program.cs,* la chiamata statica viene contrassegnata con un rosso ondulato. Per risolvere il problema, creare `calculator` una variabile aggiungendo la riga seguente subito prima del `while (!endApp)` ciclo:
 
    ```csharp
    Calculator calculator = new Calculator();
    ```
 
-   Modificare il sito di chiamata per come indicato di seguito, in modo che faccia riferimento all'oggetto denominato in minuscolo, rendendo in tal modo la chiamata a un membro anziché una chiamata `DoOperation` `calculator` a un metodo statico:
+   Modificare il sito di chiamata per come indicato di seguito, in modo che faccia riferimento all'oggetto denominato in lettere minuscole, rendendo così questa chiamata a un membro anziché a una chiamata `DoOperation` `calculator` a un metodo statico:
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -216,7 +216,7 @@ Il codice reale implica la collaborazione di molti progetti in una soluzione. Ag
     3 * 3 = 9
     ```
 
-A questo punto, *CalculatorLibrary.cs* dovrebbe essere simile al seguente:
+A questo punto, *CalculatorLibrary.cs* dovrebbe avere un aspetto simile al seguente:
 
 ```csharp
 using System;
@@ -361,9 +361,9 @@ namespace CalculatorProgram
 }
 ```
 
-## <a name="add-a-nuget-package-write-to-a-json-file"></a>Aggiungere un pacchetto NuGet: scrivere in un file JSON
+## <a name="add-a-nuget-package-write-to-a-json-file"></a>Aggiungere un NuGet pacchetto: scrivere in un file JSON
 
-1. Si supponga ora di voler eseguire l'output delle operazioni in un formato JSON, un formato comune e portabile per l'archiviazione dei dati degli oggetti. Per implementare questa funzionalità, è necessario fare riferimento al NuGet di Newtonsoft.Jssu. NuGet pacchetti sono il veicolo principale per la distribuzione delle librerie di classi .NET. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Dipendenze** per il progetto CalculatorLibrary e scegliere Gestisci NuGet **progetto.**
+1. Si supponga ora di voler eseguire l'output delle operazioni in un formato JSON, un formato comune e portabile per l'archiviazione dei dati degli oggetti. Per implementare questa funzionalità, è necessario fare riferimento al NuGet pacchetto Newtonsoft.Jssu . NuGet pacchetti sono il veicolo principale per la distribuzione delle librerie di classi .NET. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Dipendenze** per il progetto CalculatorLibrary e scegliere Gestisci NuGet **pacchetti**.
 
    ![Screenshot di Gestisci NuGet pacchetti nel menu di scelta rapida](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -371,13 +371,13 @@ namespace CalculatorProgram
 
    ![Screenshot di Gestione pacchetti NuGet](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. Cercare Newtonsoft.Jsnel pacchetto e scegliere **Installa.**
+1. Cercare Newtonsoft.Jsnel pacchetto e scegliere **Installa**.
 
    ![Screenshot delle informazioni sul pacchetto NuGet Newtonsoft](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
    Il pacchetto viene scaricato e aggiunto al progetto e viene visualizzata una nuova voce nel nodo Riferimenti in **Esplora soluzioni**.
 
-1. Aggiungere una direttiva using per il System.IO e Newtonsoft.Jsnel pacchetto all'inizio di *CalculatorLibrary.cs.*
+1. Aggiungere una direttiva using per System.IO e Newtonsoft.Jspacchetto all'inizio di *CalculatorLibrary.cs.*
 
    ```csharp
    using Newtonsoft.Json;
@@ -467,7 +467,7 @@ namespace CalculatorProgram
         }
    ```
 
-1. Compilare ed eseguire l'app e, dopo aver immesso alcune operazioni, chiudere correttamente l'app usando il comando "n".  A questo punto, aprire calculatorlog.jsnel file . Verrà visualizzato un messaggio simile al seguente:
+1. Compilare ed eseguire l'app e, dopo aver immesso alcune operazioni, chiudere correttamente l'app usando il comando 'n'.  A questo punto, aprire calculatorlog.jsfile e verrà visualizzato un messaggio simile al seguente:
 
    ```json
    {
@@ -488,17 +488,17 @@ namespace CalculatorProgram
    }
    ```
 
-## <a name="debug-set-and-hit-a-breakpoint"></a>Debug: impostare e raggiunto un punto di interruzione
+## <a name="debug-set-and-hit-a-breakpoint"></a>Debug: impostare e premere un punto di interruzione
 
-Il debugger Visual Studio è un potente strumento che consente di eseguire il codice un'istruzione alla volta, per trovare il punto esatto in cui si è fatto un errore di programmazione. È quindi possibile comprendere quali correzioni è necessario apportare nel codice. Visual Studio consente di apportare modifiche temporanee per poter continuare a eseguire il programma.
+Il debugger Visual Studio è uno strumento potente che consente di eseguire il codice passo dopo passo, per trovare il punto esatto in cui si è commesso un errore di programmazione. È quindi possibile comprendere quali correzioni è necessario apportare nel codice. Visual Studio consente di apportare modifiche temporanee in modo da poter continuare a eseguire il programma.
 
-1. In *Program.cs* fare clic sul margine a sinistra del codice seguente oppure aprire il menu di scelta rapida e scegliere Punto di interruzione Inserisci punto di interruzione oppure  >  premere **F9**:
+1. In *Program.cs* fare clic sul margine a sinistra del codice seguente oppure aprire il menu di scelta rapida e scegliere **Punto** di interruzione Inserisci punto di interruzione  >  oppure **premere F9**:
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-   Il cerchio rosso visualizzato indica un punto di interruzione. È possibile usare i punti di interruzione per sospendere l'app ed esaminare il codice. È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile.
+   Il cerchio rosso visualizzato indica un punto di interruzione. È possibile usare punti di interruzione per sospendere l'app ed esaminare il codice. È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile.
 
    ![Screenshot dell'impostazione di un punto di interruzione](media/vs-2019/calculator-2-debug-set-breakpoint.png)
 
@@ -508,7 +508,7 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
    - Per il primo numero digitare **8** e immetterlo.
    - Per il secondo numero digitare **0** e immetterlo.
-   - Per l'operatore , diamo un po' di tempo. digitare **d** e immetterlo.
+   - Per l'operatore, si diverte; digitare **d** e immetterlo.
 
    L'app sospende la posizione in cui è stato creato il punto di interruzione, indicato dal puntatore giallo a sinistra e dal codice evidenziato. Il codice evidenziato non è ancora stato eseguito.
 
@@ -518,11 +518,11 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
 ## <a name="debug-view-variables"></a>Debug: visualizzare le variabili
 
-1. Nel codice evidenziato passare il mouse sulle variabili, ad `cleanNum1` esempio e `op` . I valori correnti per queste variabili ( `8` e , rispettivamente) vengono visualizzati nei suggerimenti `d` dati.
+1. Nel codice evidenziato passare il mouse su variabili come `cleanNum1` e `op` . I valori correnti per queste variabili ( `8` e , rispettivamente) vengono visualizzati nei suggerimenti `d` dati.
 
    ![Screenshot della visualizzazione di un suggerimento dati](media/vs-2019/calculator-2-debug-view-datatip.png)
 
-   Quando si esegue il debug, verificare se le variabili contengono i valori previsti è spesso fondamentale per risolvere i problemi.
+   Durante il debug, verificare se le variabili contengono i valori previsti è spesso fondamentale per la correzione dei problemi.
 
 2. Nel riquadro inferiore esaminare la **finestra** Variabili locali. Se è chiuso, scegliere **Debug**  >  **Windows**  >  **Variabili locali** per aprirlo.
 
@@ -552,7 +552,7 @@ Il debugger Visual Studio è un potente strumento che consente di eseguire il co
 
    Questa visualizzazione mostra il metodo corrente, indicato dal puntatore giallo, e la seconda riga mostra la funzione che lo ha chiamato, dal metodo `Calculator.DoOperation` `Main` in *Program.cs*. La finestra **Stack di chiamate** visualizza l'ordine in cui vengono chiamati metodi e funzioni. Fornisce inoltre l'accesso a molte funzionalità del debugger, ad esempio Vai al codice **sorgente**, dal menu di scelta rapida.
 
-1. Premere **F10** (o **Esegui debug** istruzione) più volte fino a quando  >  l'app non viene sospesa sull'istruzione `switch` .
+1. Premere **F10** (o **Esegui debug** istruzione) più volte fino a quando  >  l'app non viene sospesa `switch` sull'istruzione.
 
    ```csharp
    switch (op)

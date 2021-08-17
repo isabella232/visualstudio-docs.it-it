@@ -11,14 +11,15 @@ ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97cb6f4d0425fb75ebaa9375e53e3ba6d5075e00
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e2f291d02a9420b465681a0e75278d022e14b3cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082647"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034786"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 Questa interfaccia enumera i thread in esecuzione nella sessione di debug corrente.
@@ -30,13 +31,13 @@ IEnumDebugThreads2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia per rappresentare un elenco di thread in un programma.
+ Il motore di debug implementa questa interfaccia per rappresentare un elenco di thread in un programma.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) per ottenere questa interfaccia che rappresenta un elenco di tutti i thread in tutti i programmi in esecuzione in un processo. Chiamare [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) per ottenere questa interfaccia che rappresenta un elenco di thread in esecuzione in un programma.
+ Chiamare [EnumThreads per](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) ottenere questa interfaccia che rappresenta un elenco di tutti i thread in tutti i programmi in esecuzione in un processo. Chiamare [EnumThreads per](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) ottenere questa interfaccia che rappresenta un elenco di thread in esecuzione in un programma.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IEnumDebugThreads2` .
+ Nella tabella seguente vengono illustrati i metodi di `IEnumDebugThreads2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -47,12 +48,12 @@ IEnumDebugThreads2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Ottiene il numero di thread in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- Visual Studio in genere ottiene questa interfaccia per aggiornare la finestra **thread** e per ottenere il primo thread dell'elenco, in modo da chiamare [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)e [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md).
+ Visual Studio in genere ottiene questa interfaccia  per aggiornare la finestra Thread e per ottenere il primo thread dell'elenco, per chiamare [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)e [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md).
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

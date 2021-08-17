@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65456c5d351bda47663b93e450c938b030a68bf9086e137540c632c67599ffab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8d45e2f547d907e6bd1e75d51b08852f40b6c7a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275281"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062947"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrazione dei gestori dei comandi negli assembly di interoperabilità
 Un VSPackage deve registrarsi con in modo che l'ambiente di sviluppo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrato (IDE) instrada correttamente i comandi.
@@ -34,7 +34,7 @@ Un VSPackage deve registrarsi con in modo che l'ambiente di sviluppo [!INCLUDE[v
  Un VSPackage che funge da gestore per i comandi basati sull'interfaccia utente richiede una voce del Registro di sistema denominata in base a VSPackage `GUID` . Questa voce del Registro di sistema specifica il percorso del file di risorse dell'interfaccia utente del pacchetto VSPackage e la risorsa di menu all'interno di tale file. La voce del Registro di sistema si trova in HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\Menus, dove è la versione di \\ *\<Version>* , ad esempio *\<Version>* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 9.0.
 
 > [!NOTE]
-> Il percorso radice del HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudiopuò essere sostituito con una radice alternativa \\ *\<Version>* quando la shell viene [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] inizializzata. Per altre informazioni sul percorso radice, vedere [Installing VSPackages With Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudiopuò essere sostituito con una radice alternativa \\ *\<Version>* quando la shell viene [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] inizializzata. Per altre informazioni sul percorso radice, vedere [Installing VSPackages With Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>Voce del Registro di sistema delle risorse CTMENU
  La struttura della voce del Registro di sistema è:
@@ -55,8 +55,8 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 
 | Elemento | Descrizione |
 |---------------------------| - |
-| \<*Path to Resource DLL*> | Si tratta del percorso completo della DLL di risorse che contiene la risorsa di menu o viene lasciato vuoto, a indicare che deve essere usata la DLL di risorse del VSPackage (come specificato nella sottochiave Packages in cui è registrato il pacchetto VSPackage stesso).<br /><br /> È insoddizionato lasciare vuoto questo campo. |
-| \<*Menu Resource ID*> | Si tratta dell'ID risorsa della risorsa che contiene tutti gli elementi dell'interfaccia utente per il pacchetto VSPackage compilati `CTMENU` da un file con estensione [vsct.](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) |
+| \<*Path to Resource DLL*> | Si tratta del percorso completo della DLL della risorsa che contiene la risorsa di menu o viene lasciato vuoto, a indicare che deve essere usata la DLL di risorse del VSPackage (come specificato nella sottochiave Packages in cui è registrato il pacchetto VSPackage stesso).<br /><br /> È insoddizionato lasciare vuoto questo campo. |
+| \<*Menu Resource ID*> | Si tratta dell'ID risorsa della risorsa che contiene tutti gli elementi dell'interfaccia utente per vsPackage compilati `CTMENU` da un file con estensione [vsct.](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) |
 | \<*Menu Version*> | Si tratta di un numero usato come versione per la `CTMENU` risorsa. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa questo valore per determinare se è necessario rimergerne il contenuto con `CTMENU` la cache di tutte le `CTMENU` risorse. Un rimerge viene attivato eseguendo il comando devenv setup.<br /><br /> Questo valore deve essere inizialmente impostato su 1 e incrementato dopo ogni modifica nella risorsa e prima che si verifichi `CTMENU` il rimerge. |
 
 ### <a name="example"></a>Esempio

@@ -1,6 +1,6 @@
 ---
 title: Scegliere un metodo di raccolta | Microsoft Docs
-description: Visual Studio Strumenti di profilatura supporta tre metodi di raccolta dei dati sulle prestazioni. Scopri come scegliere quello che ti serve per l'applicazione.
+description: Il Visual Studio Strumenti di profilatura tre metodi per la raccolta dei dati sulle prestazioni. Informazioni su come scegliere quella necessaria per l'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,15 +11,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a304006a778dc4766e6b4be9ceb133450c0dfb52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c6d3ae4fcca7ebfa902478e037212ec815c3ed2b91942134d8fde3595af2d01
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876914"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333093"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
 
@@ -94,6 +95,6 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 ## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
- di prestazioni [Informazioni sui valori](../profiling/understanding-sampling-data-values.md) 
- dei dati di campionamento [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md) 
+ [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md) 
+ [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)

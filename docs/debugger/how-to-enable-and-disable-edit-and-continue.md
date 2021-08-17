@@ -28,12 +28,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 38e04715f7ab58085bbda601fb25e5bd30b5dfbe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8e01926f5ec245fe611e72f9f15b8da780d9423e38e568e2992869ebd9a55db1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128403"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379282"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedura: Abilitare e disabilitare Modifica e continuazione (C#, VB, C++)
 
@@ -45,7 +45,7 @@ Per C++ nativo, **Modifica e continuazione** richiede l'uso dell'opzione `/INCRE
 
 1. Se si è in una sessione di debug, arrestare il debug (**Debug**  >  **Arresta debug** o **MAIUSC** + **F5**).
 
-1. In **Opzioni**> (o Opzioni di  >   **debug)**> Debug generale selezionare Modifica e  >  continuazione nel riquadro di   >  destra. 
+1. In **Strumenti** Opzioni > (o Opzioni di debug ) > Debug generale selezionare Modifica e  >   continuazione nel riquadro   >     >  di destra. 
 
     > [!NOTE]
     > Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [IntelliTrace.](../debugger/intellitrace.md)
@@ -57,6 +57,6 @@ Per C++ nativo, **Modifica e continuazione** richiede l'uso dell'opzione `/INCRE
 
     - **Avvisa del codice non obsoleto (solo nativo)**
 
-      Se l'opzione è selezionata, genera avvisi relativi al codice non obsoleto.
+      Se l'opzione è selezionata, genera avvisi sul codice non obsoleto.
 
 1. Fare clic su **OK**.

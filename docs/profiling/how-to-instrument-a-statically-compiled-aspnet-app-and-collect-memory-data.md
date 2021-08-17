@@ -1,6 +1,6 @@
 ---
-title: Riga di comando del profiler - Instrumentare l'app ASP.NET statica, ottenere i dati di memoria
-description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura riga di comando per raccogliere dati di memoria e temporizzazione per un componente Web o un sito Web ASP.NET precompilato.
+title: "Riga di comando del profiler: instrumentare l'app ASP.NET statica, ottenere i dati di memoria"
+description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura da riga di comando per raccogliere dati di memoria e temporizzazione per un componente Web o un sito Web ASP.NET precompilato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: feae93bd802dc40640494a5725d0c9f6f0ce8d0c036b8c12daa2c14c039064e0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 12f132503164c6b9e3e2da9ce5eeaed8a83ac36b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410684"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033499"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di memoria tramite la riga di comando del profiler
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un componente Web o un sito Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato e raccogliere dati di allocazione di memoria, di durata degli oggetti e di intervallo dettagliati .NET.
@@ -93,7 +93,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:**`TID`|Avvia (**/threadon**) o arresta (**/threadoff**) la raccolta dei dati per il thread specificato dall'ID thread (`TID`).|
 
 ## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
- Per terminare una sessione di profilatura, chiudere l'applicazione Web e quindi usare il comando [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] **IISReset** di Internet Information Services (IIS) per chiudere il processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] di lavoro. Chiamare **l'opzione VSPerfCmd** [/shutdown](../profiling/shutdown.md) per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura. È necessario riavviare il computer per applicare le nuove impostazioni di ambiente.
+ Per terminare una sessione di profilatura, chiudere l'applicazione Web e quindi usare il comando [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] **IISReset** Internet Information Services (IIS) per chiudere il [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo di lavoro. Chiamare **l'opzione VSPerfCmd** [/shutdown](../profiling/shutdown.md) per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura. È necessario riavviare il computer per applicare le nuove impostazioni di ambiente.
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura
 
@@ -117,4 +117,4 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 ## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+- [Viste dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

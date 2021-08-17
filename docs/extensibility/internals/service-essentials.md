@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 926b2003153e736972ccf6de7efd0bb544f70c6648a22feab7c89e20d779b198
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 66b5689c2212104608361ccc07a799051e4627eb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414480"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062810"
 ---
 # <a name="service-essentials"></a>Nozioni fondamentali sui servizi
 Un servizio è un contratto tra due VSPackage. Un VSPackage fornisce un set specifico di interfacce che un altro VSPackage può usare. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è di per sé una raccolta di VSPackage che fornisce servizi ad altri VSPackage.

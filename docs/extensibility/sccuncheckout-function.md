@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f98cbcab81570b78a1455a47b67bb9da873222acec9c81be590eaaccb1cfdab4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2282cb845dfb10bf2e0f216ae4203e9b617597c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400556"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062641"
 ---
 # <a name="sccuncheckout-function"></a>Funzione SccUncheckout
 Questa funzione annulla un'operazione di estrazione precedente, ripristinando così il contenuto del file o dei file selezionati allo stato precedente all'estrazione. Tutte le modifiche apportate al file dopo l'estrazione vengono perse.

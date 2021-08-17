@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b2a812fa59c8017b6a4296d0172fc2225d099470685450c50e2c618b6bd66f4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 115d327411cb3d04f26e44ede6fee0f17ff3d9b6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415169"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034630"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 

@@ -10,14 +10,15 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0b775cbc96303f53bcd795b2121d10af83714e6
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 2377ee69458f3becb94ee79b8cd580fdbb92823d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899667"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028943"
 ---
 # <a name="properties-window-overview"></a>Panoramica della finestra Proprietà
 La **finestra** Proprietà consente di visualizzare le proprietà per gli oggetti selezionati nei due tipi principali di finestre disponibili nell'ambiente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sviluppo integrato (IDE). Questi due tipi di finestre sono:
@@ -31,7 +32,7 @@ La **finestra** Proprietà consente di visualizzare le proprietà per gli oggett
 
  Gli eventi correlati a un oggetto selezionato all'interno di una finestra di progettazione del modulo o di un editor HTML che usano metadati COM+ vengono visualizzati nella **finestra** Proprietà. Ad esempio, è possibile selezionare un pulsante e visualizzare gli eventi associati, ad esempio un evento, che `OnClick` può essere collegato a tale pulsante.
 
- Gli eventi visualizzati nella **finestra Proprietà** vengono usati principalmente con oggetti associati al codice. Se si modifica un formato di file che non ha nulla a che fare con il codice, non verranno generati eventi. Gli eventi vengono visualizzati nella **finestra** Proprietà solo quando è presente un'associazione tra l'esecuzione del codice e determinati eventi associati a oggetti specifici. Un esempio è il code-behind di un oggetto selezionato che viene eseguito quando l'oggetto viene attivato.
+ Gli eventi visualizzati nella **finestra Proprietà** vengono usati principalmente con oggetti associati al codice. Se si modifica un formato di file che non ha nulla a che fare con il codice, non verranno generati eventi. Gli eventi vengono visualizzati nella **finestra** Proprietà solo quando è presente un'associazione tra l'esecuzione del codice e determinati eventi associati a oggetti specifici. Un esempio è il code-behind di un oggetto selezionato che viene eseguito quando tale oggetto viene attivato.
 
  Nella tabella seguente sono elencate le interfacce principali usate dalla **finestra** Proprietà.
 
@@ -50,6 +51,6 @@ La **finestra** Proprietà consente di visualizzare le proprietà per gli oggett
 
  Per altre informazioni su `IDispatch` , vedere MSDN Library.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensione delle proprietà](../../extensibility/internals/extending-properties.md)
 - [Campi e interfacce della finestra Proprietà](../../extensibility/internals/properties-window-fields-and-interfaces.md)

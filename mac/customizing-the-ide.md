@@ -110,7 +110,7 @@ Lo stato delle finestre degli strumenti aperte è rappresentato da un *layout*. 
 
 ![Selezione di nuovi layout](media/customizing-the-ide-image6b.png)
 
-È possibile creare un nuovo layout usando la voce di menu **> layout** > Salva layout corrente. Questo comando aggiungerà il layout corrente al menu in modo che sia possibile selezionarlo in qualsiasi momento:
+È possibile creare un nuovo layout usando la voce di menu **> Layout** > Salva layout corrente. Questo comando aggiungerà il layout corrente al menu in modo che sia possibile selezionarlo in qualsiasi momento:
 
 ![Salva layout corrente](media/customizing-the-ide-image6a.png)
 

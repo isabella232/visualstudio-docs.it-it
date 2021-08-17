@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Thread | Microsoft Docs
-description: Informazioni sulla visualizzazione Thread nello strumento di debug di Spy++. La visualizzazione Thread è un elenco semplice di tutti i thread associati alle finestre nel sistema.
+description: Informazioni sulla visualizzazione Thread nello strumento di debug Di Spy++. La visualizzazione Thread è un elenco semplice di tutti i thread associati alle finestre nel sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a6728cbc375918d4fcc2b4aa4f22baea2cd2c6a490ae1088d624fa59e7bb90c2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2ab9f6b91c7c57ff185981bc3a3ac4b3fc6abdd9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453058"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030503"
 ---
 # <a name="threads-view"></a>Visualizzazione Thread
 La visualizzazione Thread è un elenco semplice di tutti i thread associati alle finestre nel sistema. Vengono visualizzati l'ID thread e il nome del modulo per ogni thread. I processi non sono inclusi, ma è possibile trovare facilmente il processo proprietario di un thread selezionato.
@@ -29,9 +29,9 @@ La visualizzazione Thread è un elenco semplice di tutti i thread associati alle
 
 #### <a name="to-open-the-threads-view"></a>Per aprire la visualizzazione Thread
 
-1. Scegliere **Thread** dal menu **Spy.**
+1. Scegliere **Thread dal** menu **Spy.**
 
-   ![Visualizzazione thread&#43;&#43; Spy](../debugger/media/spy--_threads.png "Spy++_Threads") Visualizzazione Thread di Spy++
+   ![Visualizzazione Thread&#43;&#43; Spy](../debugger/media/spy--_threads.png "Spy++_Threads") Visualizzazione Thread di Spy++
 
    La figura precedente mostra la visualizzazione Thread.
 

@@ -1,21 +1,22 @@
 ---
 title: Set di regole di sicurezza per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole di sicurezza per l'analisi del codice legacy di Visual Studio. Vedere le descrizioni delle regole che si concentrano sui potenziali problemi di sicurezza.
+description: Informazioni sul set di regole di sicurezza per l'Visual Studio di codice legacy. Vedere le descrizioni delle regole incentrate sui potenziali problemi di sicurezza.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2568137d5724613b0f5ddf801df6302c85e430f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a7b5ac5dd30b5f1930707c295d81b3c65a896fa329d9d5513dd6794e158635c1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859684"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436734"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Set di regole di sicurezza per codice gestito
 
@@ -57,7 +58,7 @@ Usare il set di regole di sicurezza Microsoft per l'analisi del codice legacy pe
 |[CA2138](../code-quality/ca2138.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2139](../code-quality/ca2139.md)|I metodi Transparent non possono usare l'attributo HandleProcessCorruptingExceptions|
 |[CA2140](../code-quality/ca2140.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare I LinkDemand|
+|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare LinkDemands|
 |[CA2142](../code-quality/ca2142.md)|Il codice Transparent non deve essere protetto con LinkDemand|
 |[CA2143](../code-quality/ca2143.md)|I metodi Transparent non devono usare SecurityDemand|
 |[CA2144](../code-quality/ca2144.md)|Il codice Transparent non deve caricare assembly da matrici di byte|

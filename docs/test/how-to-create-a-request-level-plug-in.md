@@ -12,12 +12,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: fe929ad55bd4915cc030b7f9f008013149a3c874b4dc4fbe38e120b6f7d0f707
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a50d16a98f6a504e845fcc54ae750ba65e58fc6a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121299734"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047478"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procedura: Creare un plug-in a livello di richiesta
 
@@ -33,7 +33,7 @@ Ogni plug-in delle richieste test prestazioni web dispone di un metodo PreReques
 
 ## <a name="to-create-a-request-level-plug-in"></a>Per creare un plug-in a livello di richiesta
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere Aggiungi **e** quindi nuovo **Project**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi nuovo **Project**.
 
 2. Creare un nuovo progetto **Libreria di classi**.
 
