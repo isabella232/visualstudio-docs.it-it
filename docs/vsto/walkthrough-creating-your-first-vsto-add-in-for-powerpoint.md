@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per PowerPoint'
+title: 'Procedura dettagliata: Creare il primo VSTO componente aggiuntivo per PowerPoint'
 description: Creare un componente aggiuntivo a livello di applicazione per Microsoft PowerPoint. Questa funzionalità è disponibile per l'applicazione stessa, indipendentemente dalle presentazioni aperte.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
@@ -16,17 +16,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a5adf37c6d55d4704ee370052646e620cbe716c3
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 39998bb7d60b55405be13493900ef936c05c3032
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025485"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per PowerPoint
-  Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office PowerPoint. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali presentazioni siano aperte. Per altre informazioni, vedere Panoramica [dello sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Procedura dettagliata: Creare il primo VSTO componente aggiuntivo per PowerPoint
+  Questa procedura dettagliata illustra come creare un componente VSTO componente aggiuntivo per Microsoft Office PowerPoint. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali presentazioni siano aperte. Per altre informazioni, vedere panoramica [Office sviluppo di soluzioni &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
@@ -67,25 +68,25 @@ ms.locfileid: "107824250"
 
 7. Fare clic su **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea il **progetto FirstPowerPointAddIn** e apre il file **di codice ThisAddIn** nell'editor.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea il **progetto FirstPowerPointAddIn** e apre il file di codice **ThisAddIn** nell'editor.
 
 ## <a name="write-code-that-adds-text-to-each-new-slide"></a>Scrivere codice che aggiunge testo a ogni nuova diapositiva
  Aggiungere quindi codice al file di codice ThisAddIn. Il nuovo codice usa il modello a oggetti di PowerPoint per aggiungere una casella di testo a ogni nuova diapositiva. Per impostazione predefinita, il file di codice ThisAddIn contiene il seguente codice generato:
 
-- Una definizione parziale della classe `ThisAddIn` . Questa classe fornisce un punto di ingresso per il codice e fornisce l'accesso al modello a oggetti di PowerPoint. Per altre informazioni, vedere [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md). Il resto della `ThisAddIn` classe è definito in un file di codice nascosto che non è necessario modificare.
+- Una definizione parziale della classe `ThisAddIn` . Questa classe fornisce un punto di ingresso per il codice e fornisce l'accesso al modello a oggetti di PowerPoint. Per altre informazioni, vedere [Programmi VSTO componenti aggiuntivi](../vsto/programming-vsto-add-ins.md). Il resto della `ThisAddIn` classe è definito in un file di codice nascosto che non è necessario modificare.
 
-- I gestori eventi `ThisAddIn_Startup` e `ThisAddIn_Shutdown` . Questi gestori eventi vengono chiamati quando PowerPoint carica e scarica il componente aggiuntivo VSTO. Usare questi gestori eventi per inizializzare il componente aggiuntivo VSTO al momento del caricamento e per eseguire la pulizia delle risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Per altre informazioni, vedere [Eventi nei progetti di Office.](../vsto/events-in-office-projects.md)
+- I gestori eventi `ThisAddIn_Startup` e `ThisAddIn_Shutdown` . Questi gestori eventi vengono chiamati quando PowerPoint carica e scarica il componente aggiuntivo VSTO. Usare questi gestori eventi per inizializzare il componente aggiuntivo VSTO al momento del caricamento e per eseguire la pulizia delle risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Per altre informazioni, vedere [Eventi nei Office .](../vsto/events-in-office-projects.md)
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Per aggiungere una casella di testo a ogni nuova diapositiva
 
-1. Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice definisce un gestore eventi per [l'evento Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) dell'oggetto Application. [](/previous-versions/office/developer/office-2010/ff764034(v=office.14))
+1. Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice definisce un gestore eventi per [microsoft.Office. Interoperabilità. PowerPoint. EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) [dell'oggetto](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) Application.
 
     Quando l'utente aggiunge una nuova diapositiva alla presentazione attiva, il gestore eventi aggiunge una casella di testo nella parte superiore della nuova diapositiva, quindi aggiunge il testo nella casella di testo.
 
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb" id="Snippet1":::
     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
-2. Se si usa C#, aggiungere il seguente codice al gestore eventi `ThisAddIn_Startup` . Questo codice è necessario per connettere il gestore `Application_PresentationNewSlide` eventi [all'evento Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide.](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))
+2. Se si usa C#, aggiungere il seguente codice al gestore eventi `ThisAddIn_Startup` . Questo codice è necessario per connettere il `Application_PresentationNewSlide` gestore eventi a [Microsoft.Office. Interoperabilità. PowerPoint. EApplication_Event.PresentationNewSlide.](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))
 
     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
@@ -93,7 +94,7 @@ ms.locfileid: "107824250"
 
 - Il campo `Application` della classe `ThisAddIn` . Il `Application` campo restituisce un oggetto [Application,](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) che rappresenta l'istanza corrente di PowerPoint.
 
-- Parametro `Sld` del gestore eventi per l'evento [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide.](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) Il `Sld` parametro è un oggetto [Slide](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) che rappresenta la nuova diapositiva. Per altre informazioni, vedere [Soluzioni PowerPoint.](../vsto/powerpoint-solutions.md)
+- Parametro `Sld` del gestore eventi per [microsoft.Office. Interoperabilità. PowerPoint. EApplication_Event.PresentationNewSlide.](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) Il `Sld` parametro è un oggetto [Slide](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) che rappresenta la nuova diapositiva. Per altre informazioni, vedere PowerPoint [soluzioni](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Testare il progetto
  Quando si compila e si esegue il progetto, verificare che la casella di testo venga visualizzata nelle nuove diapositive aggiunte a una presentazione.
@@ -102,7 +103,7 @@ ms.locfileid: "107824250"
 
 1. Premere **F5** per compilare ed eseguire il progetto.
 
-     Quando si compila il progetto, il codice viene compilato in un assembly incluso nella cartella di output di compilazione relativa al progetto. Inoltre, Visual Studio crea un set di voci del Registro di sistema che consentono a PowerPoint di individuare e caricare il componente aggiuntivo VSTO e di configurare le impostazioni di sicurezza nel computer di sviluppo per attivare l'esecuzione del componente aggiuntivo VSTO. Per altre informazioni, vedere [Compilare soluzioni Office.](../vsto/building-office-solutions.md)
+     Quando si compila il progetto, il codice viene compilato in un assembly incluso nella cartella di output di compilazione relativa al progetto. Inoltre, Visual Studio crea un set di voci del Registro di sistema che consentono a PowerPoint di individuare e caricare il componente aggiuntivo VSTO e di configurare le impostazioni di sicurezza nel computer di sviluppo per attivare l'esecuzione del componente aggiuntivo VSTO. Per altre informazioni, vedere [Compilare Office soluzioni](../vsto/building-office-solutions.md).
 
 2. In PowerPoint, aggiungere una nuova diapositiva alla presentazione attiva.
 
@@ -122,20 +123,20 @@ ms.locfileid: "107824250"
 ## <a name="next-steps"></a>Passaggi successivi
  Ora che è stato creato un componente aggiuntivo VSTO di base per PowerPoint, è possibile ottenere altre informazioni sullo sviluppo di componenti aggiuntivi VSTO in questi argomenti:
 
-- Attività di programmazione generali che è possibile eseguire usando i componenti aggiuntivi VSTO per PowerPoint. Per altre informazioni, vedere [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md).
+- Attività di programmazione generali che è possibile eseguire usando i componenti aggiuntivi VSTO per PowerPoint. Per altre informazioni, vedere [Programmi VSTO componenti aggiuntivi](../vsto/programming-vsto-add-ins.md).
 
-- Uso del modello a oggetti di PowerPoint. Per altre informazioni, vedere [Soluzioni PowerPoint.](../vsto/powerpoint-solutions.md)
+- Uso del modello a oggetti di PowerPoint. Per altre informazioni, vedere PowerPoint [soluzioni](../vsto/powerpoint-solutions.md).
 
-- Personalizzazione dell'interfaccia utente di PowerPoint, ad esempio tramite l'aggiunta di una scheda personalizzata alla barra multifunzione o la creazione di un riquadro attività personalizzato. Per altre informazioni, vedere Personalizzazione [dell'interfaccia utente di Office.](../vsto/office-ui-customization.md)
+- Personalizzazione dell'interfaccia utente di PowerPoint, ad esempio tramite l'aggiunta di una scheda personalizzata alla barra multifunzione o la creazione di un riquadro attività personalizzato. Per altre informazioni, vedere Personalizzare [l'Office dell'interfaccia utente.](../vsto/office-ui-customization.md)
 
-- Compilazione e debug di componenti aggiuntivi VSTO per PowerPoint. Per altre informazioni, vedere [Creare soluzioni Office.](../vsto/building-office-solutions.md)
+- Compilazione e debug di componenti aggiuntivi VSTO per PowerPoint. Per altre informazioni, vedere [Compilare Office soluzioni](../vsto/building-office-solutions.md).
 
-- Distribuzione di componenti aggiuntivi VSTO per PowerPoint. Per altre informazioni, vedere [Distribuire una soluzione Office.](../vsto/deploying-an-office-solution.md)
+- Distribuzione di componenti aggiuntivi VSTO per PowerPoint. Per altre informazioni, vedere [Deploy an Office solution](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
-- [Soluzioni PowerPoint](../vsto/powerpoint-solutions.md)
-- [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
-- [Creare soluzioni Office](../vsto/building-office-solutions.md)
-- [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
-- [Panoramica dei modelli di progetto di Office](../vsto/office-project-templates-overview.md)
+- [Componenti aggiuntivi VSTO programma](../vsto/programming-vsto-add-ins.md)
+- [PowerPoint soluzioni](../vsto/powerpoint-solutions.md)
+- [Office Personalizzazione dell'interfaccia utente](../vsto/office-ui-customization.md)
+- [Compilare Office soluzioni](../vsto/building-office-solutions.md)
+- [Distribuire una soluzione Office distribuzione](../vsto/deploying-an-office-solution.md)
+- [Office dei modelli di progetto](../vsto/office-project-templates-overview.md)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 909f85f64dd9eb87329e1871993aa5935a0b9ed83c96b322efa21898a160a95e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a25cac3fa40eb125a840f5a53afe4a8ab833430a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415663"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125790"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 Reimposta l'enumerazione sul primo elemento.

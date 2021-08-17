@@ -13,15 +13,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15e9877c8458d7c7188fb1d466335090de7c10ed1f73b78ba0f12f9a7780ad6e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 960e87e629caca705d8dc8e8fd54de3731b9604e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343222"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096700"
 ---
 # <a name="debug-tasks"></a>Attività di debug
-Per eseguire il debug di un programma, è necessario avviarlo e associare un motore di debug(DE), altrimenti de deve essere collegato a un programma avviato in precedenza. Una volta collegato, de deve generare determinati eventi di avvio. In risposta, il pacchetto di debug tenta di associare i punti di interruzione impostati nell'IDE. Quando il programma raggiunge un punto di interruzione associato, si interrompe e attende l'input dell'utente.
+Per eseguire il debug di un programma, è necessario avviarlo e associare un motore di debug (DE). In caso contrario, de deve essere collegato a un programma avviato in precedenza. Una volta collegato, de deve generare determinati eventi di avvio. In risposta, il pacchetto di debug tenta di associare i punti di interruzione impostati nell'IDE. Quando il programma raggiunge un punto di interruzione associato, si interrompe e attende l'input dell'utente.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Problemi di sicurezza](../../extensibility/debugger/security-issues.md) Vengono illustrati i passaggi di sicurezza necessari per eseguire il debug di un programma.

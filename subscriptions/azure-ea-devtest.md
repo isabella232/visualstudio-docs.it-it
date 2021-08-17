@@ -6,7 +6,7 @@ manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 03/21/2021
 ms.topic: how-to
-description: Informazioni su come sfruttare i prezzi speciali di Azure DevTest disponibili per i clienti con Enterprise contratti
+description: Informazioni su come sfruttare i prezzi speciali di Azure DevTest disponibili per i clienti Enterprise contratti
 ms.openlocfilehash: e9306a3de7572a9c957a31735152af14bee2281342047c78f1c69bc8be6bb10a
 ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "121392924"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Offerta DevTest Enterprise Agreement Azure
 
-Questa offerta, che fa parte del Enterprise Agreement, consente ai team di sottoscrittori di Visual Studio attivi di eseguire carichi di lavoro di sviluppo/test in Microsoft Azure, offrendo tariffe scontate per le macchine virtuali Windows e l'accesso alle immagini esclusive nella raccolta di Azure. Questa offerta è limitata solo all'uso di sviluppo e test e non può essere usata nell'ambiente di produzione.  
+Questa offerta, che fa parte del Enterprise Agreement, consente ai team di sottoscrittori Visual Studio attivi di eseguire carichi di lavoro di sviluppo/test in Microsoft Azure, offrendo tariffe scontate per le macchine virtuali Windows e l'accesso alle immagini esclusive nella raccolta di Azure. Questa offerta è limitata solo all'uso di sviluppo e test e non può essere usata nell'ambiente di produzione.  
 
 L'uso delle offerte è un processo in due passaggi:
 1. Le offerte devono essere abilitate da un amministratore nel EA Portal.
@@ -34,7 +34,7 @@ Per abilitare le offerte:
 0. Fare clic sulla **casella di controllo Sviluppo/test.**
 0. Fare clic su **Salva**.
 
-## <a name="create-individual-subscriptions-within-the-account"></a>Creare singole sottoscrizioni all'interno dell'account
+## <a name="create-individual-subscriptions-within-the-account"></a>Creare sottoscrizioni singole all'interno dell'account
 Ogni sottoscrittore nell'account può creare una sottoscrizione seguendo questa procedura:
 1. Accedere a [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Scegliere **l'Enterprise di sviluppo/test.**

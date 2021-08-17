@@ -1,6 +1,6 @@
 ---
 title: Preparare il debug di progetti C#, F# e VB | Microsoft Docs
-description: Informazioni sulla preparazione al debug dei tipi di progetto C#, F# e Visual Basic creati dai modelli Visual Studio progetto.
+description: Ottenere informazioni sulla preparazione per il debug dei tipi di progetto C#, F# e Visual Basic creati dai modelli Visual Studio progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -38,13 +38,13 @@ Negli argomenti di questa sezione viene descritto come eseguire il debug dei tip
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
- [Proprietà consigliate Impostazioni](../debugger/managed-debugging-recommended-property-settings.md) In questa sezione vengono descritte le impostazioni consigliate per le proprietà relative al debug per i progetti C#, F# Visual Basic debug.
+ [Proprietà consigliate Impostazioni](../debugger/managed-debugging-recommended-property-settings.md) In questa sezione vengono descritte le impostazioni consigliate per le proprietà correlate al debug per i progetti C#, F# e Visual Basic progetto.
 
- [Windows applicazioni Form](../debugger/debugging-preparation-windows-forms-applications.md) Descrive un progetto Windows'app Forms e fornisce istruzioni per il debug, la modifica della configurazione di debug predefinita e l'avvio dell'applicazione all'esterno di e [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la connessione.
+ [Windows applicazioni Forms](../debugger/debugging-preparation-windows-forms-applications.md) Viene descritto un progetto Windows'app Forms e vengono fornite istruzioni per il debug, la modifica della configurazione di debug predefinita e l'avvio dell'applicazione all'esterno di e [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la connessione ad esso.
 
- [Progetti console](../debugger/debugging-preparation-console-projects.md) Fornisce considerazioni aggiuntive per il debug di applicazioni console o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] C#. tra cui: la specifica degli argomenti della riga di comando, l'avvio dell'applicazione dal prompt dei comandi, la scrittura nella finestra di output e la risoluzione dei problemi della finestra Console.
+ [Progetti console](../debugger/debugging-preparation-console-projects.md) Vengono fornite considerazioni aggiuntive per il debug di applicazioni C# [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o console. tra cui: la specifica degli argomenti della riga di comando, l'avvio dell'applicazione dal prompt dei comandi, la scrittura nella finestra di output e la risoluzione dei problemi della finestra Console.
 
- [Windows Services](../debugger/debugging-preparation-windows-services.md) Descrive un servizio Windows e fornisce un collegamento a Debug Windows applicazioni di servizio.
+ [Windows Services](../debugger/debugging-preparation-windows-services.md) Descrive un servizio Windows e fornisce un collegamento al debug Windows applicazioni di servizio.
 
 ## <a name="related-sections"></a>Sezioni correlate
 

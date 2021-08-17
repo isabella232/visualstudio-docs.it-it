@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: bf812a6c6bb77c2a831fce932dd0b36832d3d66b101f60c27e765d371841a1fd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1bd4574167d84cd5a36cc6f5fbf1c935d9d51fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121257693"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068806"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Recuperare log di compilazione con MSBuild
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se la funzione contiene un valore restituito dall'istruzione interrupt (ad esempio, il codice assembly x86 IRET ').
+description: Recupera un flag che specifica se la funzione contiene un valore restituito dall'istruzione di interrupt, ad esempio il codice assembly X86 iret'.
 title: IDiaSymbol::get_interruptReturn | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 9665da6c-4cc0-41d7-b2e2-0d9e50174cf8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 91e88b4348e5bc778b71c0737a57effcf70ecac6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6f7077326e5b510462a880ea0e4e488794bb7b2d9bfbcbdaa76c6b5e2811a8df
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147324"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404834"
 ---
 # <a name="idiasymbolget_interruptreturn"></a>IDiaSymbol::get_interruptReturn
-Recupera un flag che specifica se la funzione contiene un valore restituito dall'istruzione interrupt, ad esempio il codice assembly x86 `iret` .
+Recupera un flag che specifica se la funzione contiene un valore restituito dall'istruzione interrupt, ad esempio il codice assembly `iret` X86.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +35,19 @@ HRESULT get_interruptReturn(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione ha restituito dall'istruzione interrupt; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se la funzione restituisce un'istruzione di interrupt; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedi anche

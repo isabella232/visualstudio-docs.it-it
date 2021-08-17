@@ -1,6 +1,6 @@
 ---
 title: dotnet-toolinstall
-description: strumento devinit DotNet-toolinstall.
+description: devinit tool dotnet-toolinstall.
 ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
@@ -11,48 +11,48 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4daa3722abd169c03656adec39aafc29d5e7e435
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 609add9096932296e657f7b065f4fae33d470bc9c67a2e3ab4394246c6d0e74d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104671637"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343199"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è incentrata sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di Visual Studio di lavoro. Come parte di questo `devinit` e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community per sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo `dotnet-toolinstall` strumento viene usato per installare gli [strumenti di .NET Core](https://dotnet.microsoft.com/) tramite il `dotnet tool update` comando.
+Lo `dotnet-toolinstall` strumento viene usato per installare [.NET Core Tools](https://dotnet.microsoft.com/) tramite il comando `dotnet tool update` .
 
 ## <a name="usage"></a>Utilizzo
 
-Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
+Se `input` entrambe le proprietà e vengono omesse o vuote, lo strumento seguirà `additionalOptions` il [comportamento](#default-behavior) predefinito descritto di seguito.
 
 | Nome                                             | Tipo   | Obbligatoria | valore                                                                 |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------|
-| **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                 |
-| [**input**](#input)                              | string | Sì      | Strumento .NET Core da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
-| [**additionalOptions**](#additional-options)     | stringa | No       | Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti.      |
+| **Commenti**                                     | stringa | No       | Proprietà comments facoltativa. Non usato.                                 |
+| [**Input**](#input)                              | string | Sì      | Strumento .NET Core da installare. Per [informazioni dettagliate,](#input) vedere Input di seguito. |
+| [**additionalOptions**](#additional-options)     | stringa | No       | Per [informazioni dettagliate, vedere](#additional-options) Opzioni aggiuntive di seguito.      |
 
 ### <a name="input"></a>Input
 
-La `input` proprietà viene usata per specificare lo strumento .NET Core da installare. In è disponibile un elenco di strumenti non ufficiale [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) .
+La `input` proprietà viene usata per specificare lo strumento .NET Core da installare. È disponibile un elenco non ufficiale di strumenti in [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) .
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Altre opzioni di configurazione possono essere passate come valore di `additionalOptions` . Questi argomenti sono un passthrough diretto per gli argomenti usati dal [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) comando.
+È possibile passare opzioni di configurazione aggiuntive come valore di `additionalOptions` . Questi argomenti sono un pass-through diretto agli argomenti usati dal [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) comando.
 
-Il `dotnet tool update` comando viene usato per gestire in modo sicuro il caso in cui è già installato uno strumento.
+Il `dotnet tool update` comando viene usato per gestire in modo sicuro il caso in cui uno strumento è già installato.
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello `dotnet-toolinstall` strumento è l'errore, come `input` richiesto.
+Il comportamento predefinito dello `dotnet-toolinstall` strumento è l'errore come `input` richiesto.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito sono riportati alcuni esempi di come eseguire `dotnet-toolinstall` usando un `.devinit.json` .
+Di seguito sono riportati esempi di come eseguire `dotnet-toolinstall` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.jssu che installerà lo strumento DotNet-Trace:
+#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.jsin verrà installato lo strumento dotnet-trace:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -65,7 +65,7 @@ Di seguito sono riportati alcuni esempi di come eseguire `dotnet-toolinstall` us
 }
 ```
 
-#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool-as-a-global-tool"></a>.devinit.jssu che installerà lo strumento DotNet-Trace come strumento globale:
+#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool-as-a-global-tool"></a>.devinit.jsin verrà installato lo strumento dotnet-trace come strumento globale:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

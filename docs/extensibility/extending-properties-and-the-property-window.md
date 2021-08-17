@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72c8c3c91d9b06681c05cc834db60cc89b7692788f3f0a08e246c9658cb8fea0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d8035a1e2019398f79cbf3f842d373c7373f127d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414909"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125166"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Estendere le proprietà e la finestra Proprietà
 La **finestra** Proprietà consente di visualizzare e modificare le proprietà e gli eventi in fase di progettazione degli oggetti selezionati.

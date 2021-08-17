@@ -40,7 +40,7 @@ ms.locfileid: "121453611"
 
 1. Annotare l'indirizzo in cui si è verificato l'arresto.
 
-    Se l'indirizzo non viene visualizzato nel messaggio di errore, potrebbe essere necessario usare metodi alternativi per identificare la DLL. Se si sospetta una DLL di sistema, è possibile [caricare i simboli](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) dai server di simboli Microsoft durante il debug. In caso contrario, potrebbe essere necessario [creare un file di dump](../debugger/using-dump-files.md) con informazioni sull'heap. Sono [disponibili diversi](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) strumenti per creare file di dump.
+    Se l'indirizzo non viene visualizzato nel messaggio di errore, potrebbe essere necessario usare metodi alternativi per identificare la DLL. Se si sospetta una DLL di sistema, è possibile [caricare i simboli](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) dai server di simboli Microsoft durante il debug. In caso contrario, potrebbe essere necessario [creare un file di dump con](../debugger/using-dump-files.md) informazioni sull'heap. Sono [disponibili diversi](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) strumenti per creare file di dump.
 
 2. Scegliere **Finestre** dal menu **Debug**, quindi **Moduli**.
 

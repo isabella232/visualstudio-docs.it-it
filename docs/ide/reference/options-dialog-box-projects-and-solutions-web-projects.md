@@ -1,6 +1,6 @@
 ---
 title: Progetti Web nella finestra di dialogo Opzioni
-description: Informazioni su come utilizzare le opzioni dei progetti Web per impostare il server Web che i progetti Web utilizzeranno per lo sviluppo in Visual Studio.
+description: Informazioni su come usare le opzioni progetti Web per impostare il server Web che i progetti Web useranno per lo sviluppo all'interno Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
@@ -10,14 +10,15 @@ ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ca34a1576543c360809346a69ffa3208790bb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85fafda592e032288e7b40d240d8c99c138cbdc7abaf733fbe4e147d91d81246
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971089"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334536"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web
 

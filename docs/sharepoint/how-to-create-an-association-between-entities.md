@@ -50,13 +50,13 @@ ms.locfileid: "121409592"
 
          Ad esempio, nella **colonna ID origine** selezionare accanto al descrittore di tipo e al `ContactID` `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` `ReadItem.salesOrder.SalesOrder.ContactID` descrittore di tipo.
 
-4. Se si desidera creare un'associazione senza chiave esterna, deselezionare la **casella di** controllo Associazione di chiave esterna .
+4. Se si desidera creare un'associazione senza chiave esterna, deselezionare la casella di controllo **Associazione di chiave** esterna .
 
 5. Fare clic su **OK** .
 
 6. In Progettazione integrazione applicativa dei dati viene visualizzata una riga che rappresenta l'associazione tra l'entità di origine e l'entità di destinazione.
 
-     Visual Studio aggiunge un metodo Association Navigator alla classe del servizio dell'entità di destinazione e alla classe di servizio dell'entità di origine. Per altre informazioni sui metodi di spostamento delle associazioni, vedere [Operazioni supportate](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14)).
+     Visual Studio aggiunge un metodo Association Navigator alla classe di servizio dell'entità di destinazione e alla classe di servizio dell'entità di origine. Per altre informazioni sui metodi di spostamento delle associazioni, vedere [Operazioni supportate](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14)).
 
 7. Nel metodo Association Navigator dell'entità di origine aggiungere il codice che restituisce una raccolta di entità di destinazione.
 

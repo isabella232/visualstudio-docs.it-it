@@ -1,6 +1,6 @@
 ---
 title: Impostare l'area di sicurezza (ClickOnce app)
-description: Informazioni sull'impostazione delle autorizzazioni di sicurezza dall'accesso di codice per un'applicazione ClickOnce, che inizia con un set di autorizzazioni di base in Project Designer.
+description: Informazioni sull'impostazione delle autorizzazioni di sicurezza dall'accesso di codice per un'applicazione ClickOnce, che inizia con un set di base di autorizzazioni in progettazione Project.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to

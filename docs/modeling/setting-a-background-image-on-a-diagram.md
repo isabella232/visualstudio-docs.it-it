@@ -26,7 +26,7 @@ In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagin
 
 1. Copiare il file di immagine da usare come sfondo per il diagramma nella directory Dsl\Resources del progetto corrente.
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella Dsl\Resources, scegliere Aggiungi **e** quindi fare clic su **Elemento esistente.**
+2. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella Dsl\Resources, scegliere **Aggiungi** **e** quindi fare clic su **Elemento esistente.**
 
 3. Nella finestra **di dialogo Aggiungi** elemento esistente passare alla cartella Dsl\Resources.
 
@@ -54,7 +54,7 @@ In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagin
 
 15. Fare clic con il pulsante destro del mouse sulla cartella Custom , **scegliere Aggiungi** e fare clic su **Nuovo elemento**.
 
-16. **Nell'elenco Modelli** della finestra di dialogo Aggiungi nuovo **elemento** fare clic su File **di codice**.
+16. **Nell'elenco Modelli** della finestra di dialogo Aggiungi nuovo elemento **fare** clic su File **di codice**.
 
 17. Nella casella **Nome** digitare e `BackgroundImage.cs` fare clic su **Aggiungi**.
 

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b9ad2233cf6520d3686e8e9c5a5c9ffc7dc853b387bd3e0fa9b5ea44e948f5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 26d5c3f4095dec633b853e6cb6cd141975b9cc11
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270705"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069193"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procedura: Specificare quale destinazione compilare per prima
 
@@ -45,7 +45,7 @@ L'attributo `InitialTargets` dell'elemento `Project` specifica una destinazione 
 
 ## <a name="use-the-defaulttargets-attribute"></a>Usare l'attributo DefaultTargets
 
- L'attributo `DefaultTargets` dell'elemento `Project` specifica la destinazione o le destinazioni che vengono compilate se non viene specificata una destinazione in modo esplicito nella riga di comando. Se le destinazioni vengono specificate in entrambi gli attributi e e non viene specificata alcuna destinazione nella riga di comando, MSBuild esegue le destinazioni specificate nell'attributo seguito dalle destinazioni specificate `InitialTargets` `DefaultTargets` `InitialTargets` `DefaultTargets` nell'attributo .
+ L'attributo `DefaultTargets` dell'elemento `Project` specifica la destinazione o le destinazioni che vengono compilate se non viene specificata una destinazione in modo esplicito nella riga di comando. Se le destinazioni vengono specificate in entrambi gli attributi e e non viene specificata alcuna destinazione nella riga di comando, MSBuild esegue le destinazioni specificate nell'attributo seguito dalle destinazioni specificate `InitialTargets` `DefaultTargets` `InitialTargets` nell'attributo `DefaultTargets` .
 
 #### <a name="to-specify-one-default-target"></a>Per specificare una destinazione predefinita
 
@@ -63,7 +63,7 @@ L'attributo `InitialTargets` dell'elemento `Project` specifica una destinazione 
 
 ## <a name="use-the--target-switch"></a>Usare l'opzione -target
 
- Se nel file di progetto non è definita una destinazione predefinita o se non si vuole usare tale destinazione predefinita, è possibile usare l'opzione della riga di comando **-target** per specificare una destinazione diversa. La destinazione o le destinazioni specificate con l'opzione **-target** vengono eseguite anziché le destinazioni specificate `DefaultTargets` dall'attributo . Le destinazioni specificate nell'attributo `InitialTargets` vengono eseguite sempre per prime.
+ Se nel file di progetto non è definita una destinazione predefinita o se non si vuole usare tale destinazione predefinita, è possibile usare l'opzione della riga di comando **-target** per specificare una destinazione diversa. La destinazione o le destinazioni specificate con **l'opzione -target** vengono eseguite anziché le destinazioni specificate `DefaultTargets` dall'attributo . Le destinazioni specificate nell'attributo `InitialTargets` vengono eseguite sempre per prime.
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Per usare per prima una destinazione diversa da quella predefinita
 

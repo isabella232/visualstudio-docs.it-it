@@ -1,6 +1,6 @@
 ---
 title: Uso dell'agente di raccolta autonomo IntelliTrace | Microsoft Docs
-description: Usare l'agente di raccolta autonomo IntelliTrace per raccogliere dati senza Visual Studio e senza modificare l'ambiente del sistema di destinazione.
+description: Usare l'agente di raccolta autonomo IntelliTrace per raccogliere dati senza installare Visual Studio e senza modificare l'ambiente del sistema di destinazione.
 ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: conceptual

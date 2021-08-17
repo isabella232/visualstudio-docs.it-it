@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 73ccfe2ec8562e27f284082c8cd0f577427b01c937ad32b77e0c6cea16787f47
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b41e4e62d5691ffa6bd1caa4bfb87ac9ace16d9d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121315096"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068517"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli UWP per il test
 
@@ -59,11 +59,11 @@ Impostare **AutomationProperties.Name** su **ButtonY** in modo esplicito nel fil
 
 In Blend per Visual Studio è possibile selezionare un'opzione per assegnare nomi univoci a elementi interattivi quali pulsanti, caselle di riepilogo, caselle combinate e caselle di testo. In questo modo, ai controlli vengono assegnati valori univoci di **AutomationProperties.Name**.
 
-Per assegnare nomi univoci ai controlli esistenti, selezionare **Strumenti**  >  **Assegna nome a elementi interattivi.**
+Per assegnare nomi univoci ai controlli esistenti, selezionare **Strumenti**  >  **Nome elementi interattivi**.
 
 ![Denominare elementi interattivi in Blend per Visual Studio](../test/media/cuit_windowsstoreproperty_blend_1.png)
 
-Per assegnare automaticamente nomi univoci ai nuovi controlli aggiunti, selezionare **Opzioni**  >  **strumenti** per aprire la finestra **di dialogo** Opzioni. Selezionare **Finestra di progettazione XAML** e **Assegna automaticamente un nome agli elementi interattivi durante la creazione**. Selezionare **OK** per chiudere la finestra di dialogo.
+Per assegnare automaticamente nomi univoci ai nuovi controlli aggiunti, selezionare **Opzioni** strumenti  >   per aprire la finestra **di dialogo** Opzioni. Selezionare **Finestra di progettazione XAML** e **Assegna automaticamente un nome agli elementi interattivi durante la creazione**. Selezionare **OK** per chiudere la finestra di dialogo.
 
 ## <a name="use-a-data-template"></a>Usare un modello di dati
 

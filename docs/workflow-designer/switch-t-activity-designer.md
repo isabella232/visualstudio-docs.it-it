@@ -14,18 +14,18 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: ce958e5cd4b5cbc6374e065b14be9d2c35b8709b1fe79484ab2bb5fb89524eeb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1fc06eaaa7bd54ff42a087016dae30e674de4023
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440396"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025355"
 ---
 # <a name="switcht-activity-designer"></a>Activity Designer\<T> Switch
 
 L'attività <xref:System.Activities.Statements.Switch%601> valuta un'espressione specificata e viene eseguita da una raccolta di attività la cui chiave associata corrisponde al valore ottenuto dalla valutazione.
 
-Switch **<ActivityDesigner \> T** viene usato per creare e configurare un'attività <xref:System.Activities.Statements.Switch%601> nel Progettazione flussi di lavoro.
+Switch **<ActivityDesigner \> viene** usato per creare e configurare un'attività <xref:System.Activities.Statements.Switch%601> nel Progettazione flussi di lavoro.
 
 ## <a name="the-switchtactivity"></a>Attività \<T> Switch
 
@@ -44,7 +44,7 @@ La tabella seguente mostra le proprietà <xref:System.Activities.Statements.Swit
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Switch%601>. Il valore predefinito è Switch<Int32 \> . Il valore può essere modificato nella **finestra** Proprietà o direttamente nell'intestazione della finestra di progettazione.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|Vero|Specifica l'espressione usata per confrontare le chiavi presenti nella raccolta di case al fine da identificare il case da eseguire.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Se non vengono rilevate corrispondenze, specifica l'attività eseguita. Fare clic **sul pulsante Aggiungi un'attività** nella finestra di progettazione per aprire la **casella Predefinita** in cui è possibile eliminare l'attività.|
-|<xref:System.Activities.Statements.Switch%601.Cases%2A>||Specifica i case da valutare. Per aggiungere un caso, fare clic **sul pulsante Aggiungi nuovo caso** nella parte inferiore di **Progettazione \<T>** switch. Il pulsante viene modificato in una casella di testo (casella combinata se il tipo generico selezionato quando si aggiunge Switch \<T> è String o Enum). Dopo aver aggiunto una chiave nella casella **Valore** case, l'area del case si espande e un'attività può essere eliminata in cui il testo del suggerimento "Drop activity here" (Rilascia attività qui) per definire la logica di esecuzione per il case.|
+|<xref:System.Activities.Statements.Switch%601.Cases%2A>||Specifica i case da valutare. Per aggiungere un caso, fare clic **sul pulsante Aggiungi nuovo caso** nella parte inferiore di **Progettazione \<T>** switch. Il pulsante viene modificato in una casella di testo (casella combinata se il tipo generico selezionato durante l'aggiunta dell'opzione è \<T> String o Enum). Dopo aver aggiunto una chiave nella casella **Valore** case, l'area del case si espande e un'attività può essere eliminata in cui il testo del suggerimento "Drop activity here" (Rilascia attività qui) per definire la logica di esecuzione per il case.|
 
 È possibile aggiungere più case, purché le relative chiavi non siano duplicate. In caso contrario, viene visualizzata una finestra di dialogo di errore in cui viene segnalato che la chiave del case specificata esiste già e che è necessario sceglierne un'altra. Nella finestra **di \<T>** progettazione switch è possibile visualizzare una sola area del case alla volta. Se l'area di un case si trova in modalità compressa, fare clic su di essa per espanderla. Si noti che, per un case compresso, nella finestra di progettazione viene mostrato l'eventuale nome visualizzato dell'attività a destra all'interno del case. In caso contrario, viene visualizzato **il pulsante Aggiungi** un'attività che espande il caso se si fa clic su di esso e consente di aggiungere un'attività.
 

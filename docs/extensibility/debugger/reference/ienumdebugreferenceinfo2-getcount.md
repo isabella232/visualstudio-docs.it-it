@@ -1,5 +1,5 @@
 ---
-description: Restituisce il numero di DEBUG_REFERENCE_INFO nell'enumerazione.
+description: Restituisce il numero di DEBUG_REFERENCE_INFO nell'enumerazione .
 title: IEnumDebugReferenceInfo2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f22197625989a3fbc74852729fc2166778da0d92decc17c70c8b81746e5183df
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 045bdf53bd131a970dd17811dbf43b7d1b5589a8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377242"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125439"
 ---
 # <a name="ienumdebugreferenceinfo2getcount"></a>IEnumDebugReferenceInfo2::GetCount
 Restituisce il numero di elementi nell'enumerazione .

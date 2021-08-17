@@ -17,35 +17,36 @@ ms.assetid: 2859067d-7fcc-46b0-a4df-8c2101500977
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1144fa2f775427a3a46feda46d8bba015e960f2a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e476090748bb789b6b877981cc1e8bc1616fcc5f8ee5dd9cba29f8d76f7bf00
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913251"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453794"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Procedura: eseguire il debug in modalità mista (C#, C++, Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Procedura: Eseguire il debug in modalità mista (C#, C++, Visual Basic)
 
-Nelle procedure seguenti viene descritto come abilitare il debug per il codice gestito e il codice nativo insieme, noto anche come debug in modalità mista. Esistono due scenari di debug in modalità mista:
+Le procedure seguenti descrivono come abilitare il debug per il codice gestito e nativo insieme, noto anche come debug in modalità mista. Esistono due scenari di debug in modalità mista:
 
-- L'app che chiama una DLL viene scritta in codice nativo e la DLL è gestita.
+- L'app che chiama una DLL viene scritta in codice nativo e la DLL viene gestita.
 
-- L'app che chiama una DLL viene scritta in codice gestito e la DLL si trova nel codice nativo. Per un'esercitazione che illustra in modo dettagliato questo scenario, vedere eseguire il [debug di codice nativo e gestito](../debugger/how-to-debug-managed-and-native-code.md).
+- L'app che chiama una DLL viene scritta in codice gestito e la DLL è in codice nativo. Per un'esercitazione che illustra in modo più dettagliato questo scenario, vedere [Eseguire il debug di codice gestito e nativo.](../debugger/how-to-debug-managed-and-native-code.md)
 
-È possibile abilitare sia i debugger gestiti sia quelli nativi nelle pagine delle **Proprietà** del progetto di applicazione chiamante. Le impostazioni sono diverse tra le app native e quelle gestite.
+È possibile abilitare debugger sia gestiti che nativi nelle pagine delle proprietà del progetto di app **chiamante.** Le impostazioni differiscono tra le app native e le app gestite.
 
-Se non si ha accesso a un progetto di app chiamante, è possibile eseguire il debug della DLL dal progetto DLL. Non è necessaria la modalità mista per eseguire il debug solo del progetto di DLL. Per altre informazioni, vedere [procedura: eseguire il debug da un progetto di dll](../debugger/how-to-debug-from-a-dll-project.md).
+Se non si ha accesso al progetto di un'app chiamante, è possibile eseguire il debug della DLL dal progetto DLL. Non è necessaria la modalità mista per eseguire il debug solo del progetto DLL. Per altre informazioni, vedere [Procedura: Eseguire il debug da un progetto DLL.](../debugger/how-to-debug-from-a-dll-project.md)
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi visualizzati potrebbero non corrispondere a quelli di questo articolo, a seconda delle impostazioni o dell'edizione di Visual Studio. Per modificare le impostazioni, scegliere **strumenti**  >  **Importa/Esporta impostazioni**. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi visualizzati potrebbero essere diversi da quelli di questo articolo, a seconda delle impostazioni Visual Studio o dell'edizione. Per modificare le impostazioni, scegliere **Strumenti**  >  **Importa ed esporta Impostazioni**. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>Abilitare il debug in modalità mista per un'app chiamante nativa
 
-1. Selezionare il progetto C++ in **Esplora soluzioni** e fare clic sull'icona delle **Proprietà** , premere **ALT** + **invio** oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
+1. Selezionare il progetto C++ **in** Esplora soluzioni  fare clic sull'icona Proprietà, premere **ALT** INVIO oppure fare clic con il pulsante destro del mouse + e scegliere **Proprietà**.
 
-1. Nella finestra di dialogo **\<Project> pagine delle proprietà** espandere **proprietà di configurazione**, quindi selezionare **debug**.
+1. Nella finestra **\<Project> di dialogo Pagine** delle proprietà espandere Proprietà di **configurazione** e quindi selezionare **Debug**.
 
 1. Impostare **Tipo debugger** su **Misto** o **Automatico**.
 
@@ -55,16 +56,16 @@ Se non si ha accesso a un progetto di app chiamante, è possibile eseguire il de
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Abilitare il debug in modalità mista per un'app chiamante gestita
 
-1. Selezionare il progetto C# o Visual Basic in **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio** oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
+1. Selezionare il progetto C# o Visual Basic **in** Esplora soluzioni  e selezionare l'icona Proprietà, premere **ALT** INVIO oppure fare clic con il pulsante destro del mouse + e scegliere **Proprietà**.
 
-1. Selezionare la scheda **debug** e quindi selezionare **Abilita il debug del codice nativo**.
+1. Selezionare la **scheda Debug** e quindi selezionare Abilita debug del **codice nativo**.
 
 1. Chiudere la pagina delle proprietà per salvare le modifiche.
 
    ![Abilita debug del codice nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "Abilita debug del codice nativo")
 
 > [!NOTE]
-> Nella maggior parte delle versioni di Visual Studio a partire da Visual Studio 2017 è necessario usare il file *launchSettings.json*, anziché le proprietà del progetto, per abilitare il debug in modalità mista per il codice nativo in un'app .NET Core. Per informazioni dettagliate, vedere [eseguire il debug di codice nativo e gestito](../debugger/how-to-debug-managed-and-native-code.md).
+> Nella maggior parte delle versioni di Visual Studio a partire da Visual Studio 2017 è necessario usare il file *launchSettings.json*, anziché le proprietà del progetto, per abilitare il debug in modalità mista per il codice nativo in un'app .NET Core. Per informazioni dettagliate, vedere [Eseguire il debug di codice gestito e nativo.](../debugger/how-to-debug-managed-and-native-code.md)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -95,9 +95,9 @@ namespace ExampleNamespace
 
     ```
 
-- Il tipo di oggetto nel primo parametro può essere una classe di dominio, una relazione di dominio, una forma, un connettore o un diagramma. In genere, le regole vengono applicate alle classi di dominio e alle relazioni.
+- Il tipo di oggetto nel primo parametro può essere una classe di dominio, una relazione di dominio, una forma, un connettore o un diagramma. In genere, si applicano regole alle classi di dominio e alle relazioni.
 
-     È `FireTime` in genere `TopLevelCommit` . In questo modo la regola viene eseguita solo dopo che sono state apportate tutte le modifiche principali della transazione. Le alternative sono Inline, che esegue la regola subito dopo la modifica. e LocalCommit, che esegue la regola alla fine della transazione corrente (che potrebbe non essere la più esterna). È anche possibile impostare la priorità di una regola per influenzarne l'ordinamento nella coda, ma si tratta di un metodo inaffidabile per ottenere il risultato necessario.
+     È `FireTime` in genere `TopLevelCommit` . In questo modo la regola viene eseguita solo dopo che sono state apportate tutte le modifiche principali della transazione. Le alternative sono Inline, che esegue la regola subito dopo la modifica. e LocalCommit, che esegue la regola alla fine della transazione corrente (che potrebbe non essere la più esterna). È anche possibile impostare la priorità di una regola per influenzarne l'ordinamento nella coda, ma si tratta di un metodo inaffidabile per ottenere il risultato richiesto.
 
 - È possibile specificare una classe astratta come tipo di soggetto.
 
@@ -134,7 +134,7 @@ namespace ExampleNamespace
   | Classe base | Trigger |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Viene aggiunto un elemento, un collegamento o una forma.<br /><br /> Usare questa opzione per rilevare nuove relazioni, oltre ai nuovi elementi. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Il valore di una proprietà di dominio viene modificato. L'argomento del metodo fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando la proprietà `AbsoluteBounds` predefinita cambia, se la forma viene spostata.<br /><br /> In molti casi, è più comodo eseguire l'override `OnValueChanged` o nel gestore della `OnValueChanging` proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguita alla fine della transazione. Per altre informazioni, vedere [Gestori delle modifiche del valore della proprietà di dominio](../modeling/domain-property-value-change-handlers.md). **Nota:**  Questa regola non viene attivata quando viene creato o eliminato un collegamento. Scrivere invece un e `AddRule` un per la relazione di `DeleteRule` dominio. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Il valore di una proprietà di dominio viene modificato. L'argomento del metodo fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando la proprietà `AbsoluteBounds` predefinita cambia, se la forma viene spostata.<br /><br /> In molti casi, è più comodo eseguire l'override `OnValueChanged` o nel gestore delle `OnValueChanging` proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguita alla fine della transazione. Per altre informazioni, vedere [Gestori delle modifiche del valore della proprietà di dominio](../modeling/domain-property-value-change-handlers.md). **Nota:**  Questa regola non viene attivata quando viene creato o eliminato un collegamento. Scrivere invece un e `AddRule` un per la relazione di `DeleteRule` dominio. |
   | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Attivato quando un elemento o un collegamento sta per essere eliminato. La proprietà ModelElement.IsDeleting è true fino alla fine della transazione. |
   | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Viene eseguita quando un elemento o un collegamento è stato eliminato. La regola viene eseguita dopo l'esecuzione di tutte le altre regole, tra cui DeletingRules. ModelElement.IsDeleting è false e ModelElement.IsDeleted è true. Per consentire un annullamento successivo, l'elemento non viene effettivamente rimosso dalla memoria, ma viene rimosso da Store.ElementDirectory. |
   | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un elemento viene spostato da una partizione dell'archivio a un'altra.<br /><br /> Si noti che questo non è correlato alla posizione grafica di una forma. |
@@ -156,18 +156,18 @@ namespace ExampleNamespace
 
 4. Alcune regole vengono eseguite quando un modello viene caricato da un file. Per determinare se è in corso il caricamento o il salvataggio, usare `store.TransactionManager.CurrentTransaction.IsSerializing` .
 
-5. Se il codice della regola crea altri trigger di regola, verranno aggiunti alla fine dell'elenco di attivazione e verranno eseguiti prima del completamento della transazione. Le regole deletedRules vengono eseguite dopo tutte le altre regole. Una regola può essere eseguita più volte in una transazione, una volta per ogni modifica.
+5. Se il codice della regola crea più trigger di regola, verranno aggiunti alla fine dell'elenco di attivazione e verranno eseguiti prima del completamento della transazione. Le regole deletedRules vengono eseguite dopo tutte le altre regole. Una regola può essere eseguita più volte in una transazione, una volta per ogni modifica.
 
-6. Per passare informazioni a e da regole, è possibile archiviare le informazioni in `TransactionContext` . Si tratta solo di un dizionario gestito durante la transazione. Viene eliminato al termine della transazione. Gli argomenti dell'evento in ogni regola forniscono l'accesso ad esso. Tenere presente che le regole non vengono eseguite in un ordine stimabile.
+6. Per passare informazioni a e da regole, è possibile archiviare le informazioni in `TransactionContext` . Si tratta solo di un dizionario gestito durante la transazione. Viene eliminato al termine della transazione. Gli argomenti dell'evento in ogni regola forniscono l'accesso ad esso. Tenere presente che le regole non vengono eseguite in un ordine prevedibile.
 
-7. Usare le regole dopo aver considerato altre alternative. Ad esempio, se si vuole aggiornare una proprietà quando un valore cambia, è consigliabile usare una proprietà calcolata. Se si desidera vincolare le dimensioni o la posizione di una forma, usare un oggetto `BoundsRule` . Se si vuole rispondere a una modifica nel valore di una proprietà, aggiungere `OnValueChanged` un gestore alla proprietà . Per altre informazioni, vedere [Risposta e propagazione delle modifiche.](../modeling/responding-to-and-propagating-changes.md)
+7. Usare le regole dopo aver considerato altre alternative. Ad esempio, se si vuole aggiornare una proprietà quando un valore cambia, è consigliabile usare una proprietà calcolata. Se si desidera vincolare le dimensioni o la posizione di una forma, usare `BoundsRule` . Se si vuole rispondere a una modifica nel valore di una proprietà, aggiungere un `OnValueChanged` gestore alla proprietà . Per altre informazioni, vedere [Risposta e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene aggiornata una proprietà quando viene creata un'istanza di una relazione di dominio per collegare due elementi. La regola verrà attivata non solo quando l'utente crea un collegamento in un diagramma, ma anche se il codice programma crea un collegamento.
+ Nell'esempio seguente viene aggiornata una proprietà quando viene creata un'istanza di una relazione di dominio per collegare due elementi. La regola verrà attivata non solo quando l'utente crea un collegamento in un diagramma, ma anche se il codice del programma crea un collegamento.
 
- Per testare questo esempio, creare un DSL usando il modello di soluzione Task Flow e inserire il codice seguente in un file nel progetto Dsl. Compilare ed eseguire la soluzione e aprire il file di esempio nel progetto debug. Disegnare un collegamento di commento tra una forma Commento e un elemento di flusso. Il testo nel commento viene modificato per segnalare l'elemento più recente a cui è stato connesso.
+ Per testare questo esempio, creare un DSL usando il modello di soluzione Task Flow e inserire il codice seguente in un file nel progetto Dsl. Compilare ed eseguire la soluzione e aprire il file di esempio nel progetto Debug. Disegnare un collegamento di commento tra una forma Commento e un elemento di flusso. Il testo nel commento viene modificato per segnalare l'elemento più recente a cui è stato connesso.
 
- In pratica, in genere si scrive una regola DeleteRule per ogni AddRule.
+ In pratica, in genere si scrive un elemento DeleteRule per ogni addRule.
 
 ```csharp
 using System;

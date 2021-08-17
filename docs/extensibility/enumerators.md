@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13442c34536382708de5531533afbd795a52b243ac3b5a264d7270e9ca0ccf2b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4451735a5fa5127614a385be3010f1ea4bf9ad01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070342"
 ---
 # <a name="enumerators"></a>Enumerators
 Questa sezione elenca i tipi di dati dell'enumeratore nell'API plug-in del controllo del codice sorgente che il plug-in del controllo del codice sorgente deve conoscere.
@@ -37,7 +37,7 @@ Questa sezione elenca i tipi di dati dell'enumeratore nell'API plug-in del contr
 
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) Richiede all'utente le opzioni avanzate per il comando specificato.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Esamina l'elenco dei file per il relativo stato corrente. Usa inoltre la funzione per inviare una notifica al chiamante quando un file non corrisponde `pfnPopulate` ai criteri per `nCommand` .
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Esamina l'elenco dei file per il relativo stato corrente. Usa inoltre la funzione per inviare una notifica al chiamante quando `pfnPopulate` un file non corrisponde ai criteri per `nCommand` .
 
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Descrive la funzione di callback utilizzata da [SccOpenProject](../extensibility/sccopenproject-function.md) per visualizzare i messaggi dal plug-in del controllo del codice sorgente tramite l'IDE.
 

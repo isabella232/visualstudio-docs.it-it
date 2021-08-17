@@ -29,7 +29,7 @@ L'attributo `ContinueOnError` dell'elemento `Task` controlla se una compilazione
 
 L'attributo `ContinueOnError` può contenere uno dei valori seguenti:
 
-- **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, le attività successive [nell'elemento Target](../msbuild/target-element-msbuild.md) e la compilazione continuano a essere eseguite e tutti gli errori dell'attività vengono considerati avvisi.
+- **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, le attività successive [nell'elemento Target](../msbuild/target-element-msbuild.md) e nella compilazione continuano a essere eseguite e tutti gli errori dell'attività vengono considerati avvisi.
 
 - **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.
 

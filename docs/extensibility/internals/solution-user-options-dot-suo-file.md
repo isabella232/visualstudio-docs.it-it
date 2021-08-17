@@ -14,14 +14,15 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a38eb865cf003f7a2f9bafde7b6e527ce24f2bd
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: cacbd9d9b8348e4404b035906d047229fb52839b9bed2178149cb90a0e0d93a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899615"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337760"
 ---
 # <a name="solution-user-options-suo-file"></a>File delle opzioni utente della soluzione (con estensione suo)
 Il file delle opzioni utente della soluzione (con estensione suo) contiene le opzioni della soluzione per utente. Questo file non deve essere archiviato nel controllo del codice sorgente.
@@ -38,6 +39,6 @@ Il file delle opzioni utente della soluzione (con estensione suo) contiene le op
 
  Questi due metodi, e , vengono chiamati in modo ricorsivo per ogni flusso di informazioni da salvare nel file con estensione suo, passando il `SaveUserOptions` `WriteUserOptions` puntatore a `IVsSolutionPersistence` . Vengono chiamati in modo ricorsivo per consentire la scrittura di più flussi nel file con estensione suo. In questo modo, le informazioni utente vengono mantenute con la soluzione ed è garantito che saranno presenti alla successiva apertura della soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [Soluzioni](../../extensibility/internals/solutions-overview.md)

@@ -1,20 +1,21 @@
 ---
 title: Gestire le proprietà di progetti e soluzioni
-description: Informazioni su come gestire le proprietà del progetto e le proprietà della soluzione in Visual Studio.
+description: Informazioni su come gestire sia le proprietà del progetto che le proprietà della soluzione in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cef610da1bcbfe7cb9c6c7ab5a806b74e07e177
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e67a0bde42854e39b21670e612ebf4b42015cf54
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959415"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069457"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gestire le proprietà di progetti e soluzioni
 
@@ -35,14 +36,14 @@ Le proprietà del progetto sono organizzate in gruppi e ogni gruppo ha una propr
 
 ### <a name="c-visual-basic-and-f-projects"></a>Progetti C#, Visual Basic e F#
 
-Nei progetti C#, Visual Basic e F # le proprietà sono esposte in **Progettazione progetti**. Nella figura seguente viene illustrata la pagina delle proprietà di **compilazione** per un progetto WPF in C#:
+Nei progetti C#, Visual Basic e F#, le proprietà vengono esposte in **progettazione Project .** La figura seguente mostra la **pagina delle** proprietà Compila per un progetto WPF in C#:
 
 ![Progettazione progetti di Visual Studio](../ide/media/vs2015_proppage_build.png)
 
-Per informazioni su ognuna delle pagine delle proprietà in **Progettazione progetti**, vedere [riferimento alle proprietà del progetto](../ide/reference/project-properties-reference.md).
+Per informazioni su ognuna delle pagine delle proprietà in **progettazione Project**, Project informazioni di riferimento [sulle proprietà](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
-> Le soluzioni hanno alcune proprietà, quindi gli elementi del progetto; è possibile accedere a queste proprietà nel [finestra Proprietà](../ide/reference/properties-window.md), non in **Progettazione progetti**.
+> Le soluzioni hanno alcune proprietà, così come gli elementi di progetto. Queste proprietà sono accessibili nella finestra [Finestra Proprietà](../ide/reference/properties-window.md), non **Project Progettazione**.
 
 ### <a name="c-and-javascript-projects"></a>Progetti C++ e JavaScript
 
@@ -50,11 +51,11 @@ I progetti C++ e JavaScript hanno un'interfaccia utente differente per la gestio
 
 ![Proprietà dei progetti Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
-Per informazioni sulle proprietà di progetto C++, vedere [Utilizzo di proprietà di progetto (C++)](/cpp/build/working-with-project-properties). Per ulteriori informazioni sulle proprietà JavaScript, vedere [pagine delle proprietà, JavaScript](../ide/reference/property-pages-javascript.md).
+Per informazioni sulle proprietà di progetto C++, vedere [Utilizzo di proprietà di progetto (C++)](/cpp/build/working-with-project-properties). Per altre informazioni sulle proprietà JavaScript, vedere [Pagine delle proprietà, JavaScript.](../ide/reference/property-pages-javascript.md)
 
 ## <a name="solution-properties"></a>Proprietà della soluzione
 
-Per accedere alle proprietà della soluzione, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Proprietà**. Nella finestra di dialogo è possibile impostare le configurazioni di progetto per le compilazioni di **debug** o di **rilascio** , scegliere i progetti che devono essere il progetto di avvio quando si preme **F5** e impostare le opzioni di analisi del codice.
+Per accedere alle proprietà della soluzione, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Proprietà**. Nella finestra di dialogo è  possibile impostare le configurazioni di progetto per le **build** di debug o di rilascio, scegliere quali progetti devono essere il progetto di avvio quando si preme **F5** e impostare le opzioni di analisi del codice.
 
 ## <a name="see-also"></a>Vedi anche
 

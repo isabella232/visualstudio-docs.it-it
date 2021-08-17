@@ -1,6 +1,6 @@
 ---
 title: File esterni
-description: Informazioni su come usare i file non inclusi in un progetto o in una soluzione di Visual Studio.
+description: Informazioni su come usare i file non inclusi in un progetto Visual Studio soluzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8257dad083378c9e4454f0c048fea7ed06e2dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6e70decea2458c621e1bb1f304902ea7cd299e703b5ae7071761e989c185e4d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902757"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334614"
 ---
 # <a name="miscellaneous-files"></a>File esterni
 
@@ -35,12 +36,12 @@ L'apertura di file in modo indipendente da un progetto o una soluzione è utile 
 
 ![Progetti di soluzioni](../../ide/reference/media/projects_solutions_misc.gif)
 
-Esplora soluzioni possibile visualizzare una cartella di **file esterni** per i file se sono abilitate le opzioni per la cartella. È possibile impostare le opzioni da [Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md). Dopo la chiusura di un file esterno, esso non è associato ad alcuna soluzione o progetto particolare a meno che non sia stata abilitata un'opzione a tale scopo.
+Esplora soluzioni possibile visualizzare **una cartella** File esterni per i file se le opzioni per la cartella sono abilitate. È possibile impostare le opzioni da [Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md). Dopo la chiusura di un file esterno, esso non è associato ad alcuna soluzione o progetto particolare a meno che non sia stata abilitata un'opzione a tale scopo.
 
-La cartella **file esterni** rappresenta i file come collegamenti. Sebbene questa cartella non faccia parte di una soluzione, all'apertura di una soluzione vengono aperti di nuovo alcuni o tutti i file esterni aperti quando la soluzione è stata chiusa l'ultima volta, in base alle impostazioni per la cartella.
+La **cartella File** esterni rappresenta i file come collegamenti. Sebbene questa cartella non faccia parte di una soluzione, all'apertura di una soluzione vengono aperti di nuovo alcuni o tutti i file esterni aperti quando la soluzione è stata chiusa l'ultima volta, in base alle impostazioni per la cartella.
 
 > [!NOTE]
-> Alcuni dei file che non vengono visualizzati nella cartella **file esterni** sono file che non è possibile modificare all'interno dell'IDE, ad esempio i file con estensione zip e doc. L'IDE non rileva i file che possono essere modificati solo tramite un editor esterno.
+> Alcuni dei file che non  vengono visualizzati nella cartella File esterni sono file che non è possibile modificare all'interno dell'IDE, ad esempio .zip file e .doc file. L'IDE non rileva i file che possono essere modificati solo tramite un editor esterno.
 
 ## <a name="commands-available-in-the-ide"></a>Comandi disponibili nell'IDE
 
@@ -54,4 +55,4 @@ I menu, le barre degli strumenti e i comandi in essi contenuti cambiano a second
 
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Soluzioni e progetti](../../ide/solutions-and-projects-in-visual-studio.md)
-- [Documenti, ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)
+- [Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)

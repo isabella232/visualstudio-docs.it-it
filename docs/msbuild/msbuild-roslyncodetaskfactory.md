@@ -10,21 +10,22 @@ ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c033c4d0ee36b9cb01618dd3ac3183e8782c70d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a926dbfd746978d1e37e772ddee3eb2ec07d08ae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878422"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068865"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Attività inline di MSBuild con RoslynCodeTaskFactory
 
 Analogamente all'attività [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), l'attività RoslynCodeTaskFactory usa i compilatori Roslyn multipiattaforma per generare assembly di attività in memoria da usare come attività inline.  Le attività RoslynCodeTaskFactory, destinate a .NET Standard, possono funzionare nei runtime di .NET Framework e .NET Core, nonché in altre piattaforme quali Linux e Mac OS.
 
 >[!NOTE]
->RoslynCodeTaskFactory è disponibile solo in MSBuild 15.8 e versioni successive. Le versioni di MSBuild seguono le versioni di Visual Studio, quindi RoslynCodeTaskFactory è disponibile in Visual Studio 2017 versione 15,8 e successive.
+>RoslynCodeTaskFactory è disponibile solo in MSBuild 15.8 e versioni successive. MSBuild versioni successive Visual Studio, quindi RoslynCodeTaskFactory è disponibile in Visual Studio 2017 versione 15.8 e successive.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struttura di un'attività inline con RoslynCodeTaskFactory
 
@@ -58,7 +59,7 @@ Analogamente all'attività [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)
 
 Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.
 
-- L'elemento `ParameterGroup` è facoltativo. Se specificato, consente di dichiarare i parametri per l'attività. Per ulteriori informazioni sui parametri di input e output, vedere [parametri di input e output](#input-and-output-parameters) più avanti in questo argomento.
+- L'elemento `ParameterGroup` è facoltativo. Se specificato, consente di dichiarare i parametri per l'attività. Per altre informazioni sui parametri di input e output, vedere [Parametri di input e output](#input-and-output-parameters) più avanti in questo argomento.
 
 - L'elemento `Task` descrive e contiene il codice sorgente dell'attività.
 
@@ -85,7 +86,7 @@ L'attributo `Type` specifica il tipo di codice rilevato nell'elemento `Code`.
 
 - Se il valore di `Type` è `Fragment`, il codice definisce il contenuto del metodo `Execute` ma non la firma o l'istruzione `return`.
 
-Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice si trova in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape dei caratteri riservati, ad esempio " \<" or "> ".
+Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice si trova in una sezione CDATA, non è necessario preoccuparsi dell'escape dei caratteri riservati, ad esempio " \<" or "> ".
 
 In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.
 
@@ -166,7 +167,7 @@ definisce questi tre parametri:
 
 - `Tally` è un parametro di output del tipo System.Int32.
 
-Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro.  In RoslynCodeTaskFactory, se l' `Code` elemento ha l' `Type` attributo di `Class` , non è necessario specificare `ParameterGroup` , poiché viene dedotto dal codice sorgente (si tratta di una differenza rispetto a `CodeTaskFactory` ). In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
+Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro.  In RoslynCodeTaskFactory, se l'elemento ha l'attributo , non è necessario specificare , perché viene dedotto dal codice sorgente (si tratta di una differenza rispetto `Code` `Type` a `Class` `ParameterGroup` `CodeTaskFactory` ). In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
 
 ## <a name="example"></a>Esempio
 
@@ -261,9 +262,9 @@ Queste attività inline possono combinare i percorsi e ottenere il nome del file
 </Project>
 ```
 
-## <a name="provide-backward-compatibility"></a>Fornire compatibilità con le versioni precedenti
+## <a name="provide-backward-compatibility"></a>Garantire la compatibilità con le versioni precedenti
 
-`RoslynCodeTaskFactory` per prima cosa è stato reso disponibile nella versione 15,8 di MSBuild. Si supponga di avere una situazione in cui si vogliono supportare le versioni precedenti di Visual Studio e MSBuild, quando `RoslynCodeTaskFactory` non era disponibile, ma `CodeTaskFactory` era, ma si vuole usare lo stesso script di compilazione. È possibile usare un `Choose` costrutto che usa la `$(MSBuildVersion)` proprietà per decidere in fase di compilazione se usare `RoslynCodeTaskFactory` o eseguire il fallback a `CodeTaskFactory` , come nell'esempio seguente:
+`RoslynCodeTaskFactory`è diventato disponibile per la MSBuild versione 15.8. Si supponga di voler supportare le versioni precedenti di Visual Studio e MSBuild, quando non era disponibile, ma lo era, ma si vuole usare lo stesso `RoslynCodeTaskFactory` `CodeTaskFactory` script di compilazione. È possibile usare un costrutto che usa la proprietà per decidere in fase di compilazione se usare o eseguire il `Choose` fall back a , come `$(MSBuildVersion)` `RoslynCodeTaskFactory` `CodeTaskFactory` nell'esempio seguente:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -35,7 +35,7 @@ HRESULT Clone (
 #### <a name="parameters"></a>Parametri
  `ppenum`
 
-[out] Restituisce un [oggetto IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) che contiene un duplicato dell'enumeratore. Le origini iniettate non vengono duplicate, ma solo l'enumeratore.
+[out] Restituisce un [oggetto IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) che contiene un duplicato dell'enumeratore. Le origini inserite non vengono duplicate, ma solo l'enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,6 +1,6 @@
 ---
-description: Questo metodo restituisce un proxy per un oggetto Property.
-title: 'IEEVisualizerService:: GetPropertyProxy | Microsoft Docs'
+description: Questo metodo restituisce un proxy per un oggetto proprietà.
+title: Interfaccia IEEVisualizerService::GetPropertyProxy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0be668c369143509c000cee767d302b83ba6287
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 02c5299d2168282ba2e008b087db8f097b3b5988
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086846"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125920"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
-Questo metodo restituisce un proxy per un oggetto Property.
+Questo metodo restituisce un proxy per un oggetto proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +45,10 @@ int GetPropertyProxy(
 
 ## <a name="parameters"></a>Parametri
 `dwID`\
-in ID del proxy di proprietà da recuperare.
+[in] ID del proxy di proprietà da recuperare.
 
 `proxy`\
-out Proxy desiderato implementato in un'interfaccia [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .
+[out] Proxy desiderato implementato in [un'interfaccia IPropertyProxyEESide.](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

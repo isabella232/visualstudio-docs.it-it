@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cad0c103b61c8b50e5b10f7a63c13f6bda015ade0cb11903c0e730db9ca2e5a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dc09fa2761b6048219afc9af4ac2e1ce917a2601
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392192"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066617"
 ---
 # <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
 Recupera il numero di colonna in cui inizia l'espressione o l'istruzione.

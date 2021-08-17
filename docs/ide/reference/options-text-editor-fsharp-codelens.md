@@ -21,7 +21,7 @@ ms.locfileid: "121232257"
 ---
 # <a name="options-text-editor-f-codelens"></a>Opzioni, Editor di testo - F#, CodeLens
 
-Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di CodeLens dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **Opzioni** strumenti e quindi scegliere Editor di  >     >  **testo F#**  >  **CodeLens.**
+Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di CodeLens dell'editor di testo per F#. Per accedere a questa pagina delle opzioni, scegliere **Opzioni** strumenti e quindi Editor  >   **di**  >  **testo F#**  >  **CodeLens**.
 
 ## <a name="codelens"></a>CodeLens
 

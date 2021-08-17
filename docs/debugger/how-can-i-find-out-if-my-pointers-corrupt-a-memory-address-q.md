@@ -20,14 +20,15 @@ ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 836cc0363da0e20c45d83e1b2c13081e480fa919
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 761b6cf4f60dc09b6e4ef4274e5a61ebe636b4e7c07847c709dbd4c9afa6fd85
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386969"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453932"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Come è possibile stabilire se i puntatori danneggino un indirizzo di memoria?
 ## <a name="problem-description"></a>Descrizione del problema

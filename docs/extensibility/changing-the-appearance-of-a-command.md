@@ -12,14 +12,15 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddeed08d7bc33b9a9ae5405876f3b28459d4eaf2
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 6344d5d58856c420807e80020d80f0067d0f973c566b3e613782e5fa0b85ef11
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905033"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452628"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Modificare l'aspetto di un comando
 È possibile inviare commenti e suggerimenti all'utente modificando l'aspetto di un comando. Ad esempio, è possibile che un comando sia diverso quando non è disponibile. È possibile rendere i comandi disponibili o non disponibili, nasconderli o mostrarli oppure selezionare o deselezionarli nel menu.
@@ -82,11 +83,11 @@ Per modificare l'aspetto di un comando, eseguire una di queste azioni:
 
 6. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza Visual Studio sperimentale.
 
-7. Scegliere **Richiama** **ChangeMenuText** dal menu Strumenti. A questo punto il nome del comando **è Invoke ChangeMenuText**, quindi il gestore del comando non chiama **ChangeMyCommand().**
+7. Scegliere **Richiama** **ChangeMenuText** dal menu Strumenti. A questo punto il nome del comando **è Invoke ChangeMenuText,** quindi il gestore del comando non chiama **ChangeMyCommand().**
 
 8. Nel menu **Strumenti** dovrebbe essere visualizzato Nuovo **testo.** Fare clic **su Nuovo testo**. Il comando dovrebbe ora essere disattivato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md)

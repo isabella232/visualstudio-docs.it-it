@@ -1,7 +1,7 @@
 ---
-title: "Procedura: aggiungere una proprietà a un'estensione di elemento di progetto SharePoint | Microsoft Docs"
+title: "Procedura: Aggiungere una proprietà a un'estensione SharePoint Project elemento | Microsoft Docs"
 titleSuffix: ''
-description: Utilizzare un'estensione di elemento di progetto SharePoint per aggiungere una proprietà a qualsiasi elemento del progetto SharePoint già installato in Visual Studio.
+description: Usare un SharePoint'estensione dell'elemento di progetto per aggiungere una proprietà a qualsiasi SharePoint di progetto già installato in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,64 +15,65 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 2634035435679bd5ab2627f803ff9d2c1dc5a863
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: cb8d4889930ce15823f8b850402acfc7d5db9cecfd2c56d364a8af2a497cbce5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215448"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121228753"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Procedura: aggiungere una proprietà a un'estensione di elemento di progetto SharePoint
-  È possibile utilizzare un'estensione di elemento di progetto per aggiungere una proprietà a qualsiasi elemento del progetto SharePoint già installato in Visual Studio. La proprietà viene visualizzata nella finestra **Proprietà** quando l'elemento del progetto è selezionato in **Esplora soluzioni**.
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Procedura: Aggiungere una proprietà a un'estensione SharePoint elemento di progetto
+  È possibile usare un'estensione dell'elemento di progetto per aggiungere una proprietà SharePoint elemento di progetto già installato in Visual Studio. La proprietà viene visualizzata nella **finestra Proprietà** quando l'elemento di progetto viene selezionato in **Esplora soluzioni**.
 
- Nei passaggi seguenti si presuppone che sia già stata creata un'estensione di elemento di progetto. Per altre informazioni, vedere [procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
+ I passaggi seguenti presuppongono che sia già stata creata un'estensione dell'elemento di progetto. Per altre informazioni, vedere [How to: Create a SharePoint Project Item Extension](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
 
-### <a name="to-add-a-property-to-a-project-item-extension"></a>Per aggiungere una proprietà a un'estensione di elemento di progetto
+### <a name="to-add-a-property-to-a-project-item-extension"></a>Per aggiungere una proprietà a un'estensione dell'elemento di progetto
 
 1. Definire una classe con una proprietà pubblica che rappresenta la proprietà da aggiungere a un tipo di elemento di progetto. Se si desidera aggiungere più proprietà a un tipo di elemento di progetto, è possibile definire tutte le proprietà nella stessa classe o in classi diverse.
 
-2. Nel <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metodo dell' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementazione, gestire l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> evento del parametro *projectItemType* .
+2. Nel metodo <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> dell'implementazione <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> gestire <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> l'evento del *parametro projectItemType.*
 
-3. Nel gestore eventi per l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> evento, aggiungere un'istanza della classe Properties alla <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> raccolta del parametro degli argomenti dell'evento.
+3. Nel gestore eventi per <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> l'evento aggiungere un'istanza della classe properties alla <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> raccolta del parametro degli argomenti dell'evento.
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice riportato di seguito viene illustrato come aggiungere una proprietà denominata **example** all'elemento del progetto ricevitore di eventi.
+ Nell'esempio di codice seguente viene illustrato come aggiungere una proprietà denominata **Example Property** all'elemento di progetto Event Receiver.
 
 :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs" id="Snippet8":::
 :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb" id="Snippet8":::
 
 ### <a name="understand-the-code"></a>Informazioni sul codice
- Per assicurarsi che venga utilizzata la stessa istanza della `CustomProperties` classe ogni volta che <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> si verifica l'evento, l'esempio di codice aggiunge l'oggetto Properties alla <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'elemento del progetto la prima volta che si verifica questo evento. Il codice recupera questo oggetto ogni volta che l'evento si verifica di nuovo. Per ulteriori informazioni sull'utilizzo della <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà per associare i dati agli elementi del progetto, vedere [associare dati personalizzati con le estensioni degli strumenti di SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
+ Per assicurarsi che la stessa istanza della classe sia utilizzata ogni volta che si verifica l'evento, l'esempio di codice aggiunge l'oggetto proprietà alla proprietà dell'elemento di progetto la prima volta che si verifica `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> questo <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> evento. Il codice recupera questo oggetto ogni volta che si verifica nuovamente questo evento. Per altre informazioni sull'uso della proprietà per associare i dati agli elementi di <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> progetto, vedere Associare dati personalizzati alle estensioni SharePoint strumenti di [sviluppo.](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
 
- Per salvare in modo permanente le modifiche apportate al valore della proprietà, la funzione di accesso **set** per `ExampleProperty` Salva il nuovo valore nella <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> proprietà dell' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> oggetto a cui è associata la proprietà. Per ulteriori informazioni sull'utilizzo della <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> proprietà per salvare in modo permanente i dati con gli elementi del progetto, vedere [salvare i dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+ Per rendere persistenti le modifiche al valore della proprietà, la funzione di accesso **set** per salva il nuovo valore nella proprietà dell'oggetto a cui `ExampleProperty` è <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> associata la proprietà. Per altre informazioni sull'uso della proprietà per rendere persistenti i dati con gli elementi di progetto, vedere Salvare i dati nelle estensioni <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> del sistema SharePoint progetto [.](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>Specificare il comportamento delle proprietà personalizzate
- È possibile definire il modo in cui una proprietà personalizzata viene visualizzata e si comporta nella finestra **Proprietà** applicando gli attributi dello <xref:System.ComponentModel> spazio dei nomi alla definizione della proprietà. Gli attributi seguenti sono utili in molti scenari:
+ È possibile definire l'aspetto e il  comportamento di una proprietà personalizzata nella finestra Proprietà applicando gli attributi dello spazio dei <xref:System.ComponentModel> nomi alla definizione della proprietà. Gli attributi seguenti sono utili in molti scenari:
 
-- <xref:System.ComponentModel.DisplayNameAttribute>: Specifica il nome della proprietà che viene visualizzata nella finestra **Proprietà** .
+- <xref:System.ComponentModel.DisplayNameAttribute>: specifica il nome della proprietà visualizzata nella **finestra** Proprietà.
 
-- <xref:System.ComponentModel.DescriptionAttribute>: Specifica la stringa di descrizione visualizzata nella parte inferiore della finestra **Proprietà** quando la proprietà è selezionata.
+- <xref:System.ComponentModel.DescriptionAttribute>: specifica la stringa di descrizione visualizzata nella parte inferiore **della** finestra Proprietà quando la proprietà è selezionata.
 
-- <xref:System.ComponentModel.DefaultValueAttribute>: Specifica il valore predefinito della proprietà.
+- <xref:System.ComponentModel.DefaultValueAttribute>: specifica il valore predefinito della proprietà.
 
-- <xref:System.ComponentModel.TypeConverterAttribute>: Specifica una conversione personalizzata tra la stringa visualizzata nella finestra **Proprietà** e un valore di proprietà non stringa.
+- <xref:System.ComponentModel.TypeConverterAttribute>: specifica una conversione personalizzata tra la  stringa visualizzata nella finestra Proprietà e un valore della proprietà non stringa.
 
-- <xref:System.ComponentModel.EditorAttribute>: Specifica un editor personalizzato da usare per modificare la proprietà.
+- <xref:System.ComponentModel.EditorAttribute>: specifica un editor personalizzato da usare per modificare la proprietà.
 
 ## <a name="compile-the-code"></a>Compilare il codice
- Questi esempi richiedono un progetto di libreria di classi con riferimenti agli assembly seguenti:
+ Questi esempi richiedono un progetto libreria di classi con riferimenti agli assembly seguenti:
 
-- Microsoft. VisualStudio. SharePoint
+- Microsoft.VisualStudio. SharePoint
 
 - System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Distribuzione dell'estensione
- Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto di estensione (VSIX) per l'assembly e qualsiasi altro file che si vuole distribuire con l'estensione. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Per distribuire l'estensione, creare un pacchetto di estensione (VSIX) per l'assembly e qualsiasi altro file che [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] si vuole distribuire con l'estensione. Per altre informazioni, vedere [Deploy extensions for the SharePoint tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
-- [Procedura: aggiungere una voce di menu di scelta rapida a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
-- [Estendi elementi di progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md)
-- [Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [Procedura: Creare un'estensione SharePoint elemento di progetto](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+- [Procedura: Aggiungere una voce di menu di scelta rapida a un'SharePoint dell'elemento di progetto](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
+- [Estendere SharePoint di progetto](../sharepoint/extending-sharepoint-project-items.md)
+- [Procedura dettagliata: Estendere un tipo SharePoint di elemento di progetto](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)

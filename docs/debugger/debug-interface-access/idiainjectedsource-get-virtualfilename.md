@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2fb0caef8ff226abf4d927809340bf3049e3aff02e05ccb54f66a8bb1d4895
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 162303b563e5808d12728f624a76e189135aff6c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392256"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066606"
 ---
 # <a name="idiainjectedsourceget_virtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 Recupera il nome assegnato al codice sorgente non file. ad esempio il codice inserito.

@@ -1,6 +1,6 @@
 ---
-title: Modifica della notazione di associazione & membro
-description: Informazioni su come modificare il modo in cui il diagramma classi rappresenta una relazione di associazione in Progettazione classi tra due tipi dalla notazione membro alla notazione associazione e viceversa.
+title: Modifica tra la notazione di associazione & membro
+description: Informazioni su come modificare il modo in cui il diagramma classi rappresenta una relazione di associazione Progettazione classi tra due tipi, dalla notazione membro alla notazione di associazione e viceversa.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,21 +13,22 @@ ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc2e6c51903c46636d8de72bd6c1ac5b63aa876
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b97ff04abdbed42b9adb1a5fd2b41d4feca9931
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880554"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124217"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedura: Passare dalla notazione membro alla notazione associazione in Progettazione classi
 
-In **Progettazione classi**, è possibile modificare il modo in cui il diagramma classi rappresenta una relazione di associazione tra due tipi dalla notazione membro alla notazione associazione e viceversa. I membri visualizzati come linee di associazione spesso offrono una visualizzazione utile della correlazione tra tipi.
+In Progettazione classi è possibile modificare il modo in cui il diagramma classi rappresenta una relazione di associazione tra **due** tipi, dalla notazione membro alla notazione di associazione e viceversa. I membri visualizzati come linee di associazione spesso offrono una visualizzazione utile della correlazione tra tipi.
 
 > [!NOTE]
-> Le relazioni di associazione possono essere rappresentate come proprietà del membro o campo. Per passare dalla notazione membro alla notazione associazione, un tipo deve avere un membro di un altro tipo. Per passare dalla notazione associazione alla notazione membro, i due tipi devono essere collegati da una linea di associazione. Per altre informazioni, vedere [procedura: creare associazioni tra tipi](how-to-create-associations-between-types.md). Se il progetto contiene più diagrammi di classi, le modifiche apportate al modo in cui un diagramma visualizza le relazioni di associazione influiscono solo tale diagramma. Per modificare il modo in cui un altro diagramma visualizza le relazioni di associazione, aprire o visualizzare tale diagramma ed seguire questi passaggi.
+> Le relazioni di associazione possono essere rappresentate come proprietà del membro o campo. Per passare dalla notazione membro alla notazione associazione, un tipo deve avere un membro di un altro tipo. Per passare dalla notazione associazione alla notazione membro, i due tipi devono essere collegati da una linea di associazione. Per altre informazioni, vedere [Procedura: Creare associazioni tra tipi](how-to-create-associations-between-types.md). Se il progetto contiene più diagrammi di classi, le modifiche apportate al modo in cui un diagramma visualizza le relazioni di associazione influiscono solo tale diagramma. Per modificare il modo in cui un altro diagramma visualizza le relazioni di associazione, aprire o visualizzare tale diagramma ed seguire questi passaggi.
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Per passare dalla notazione membro alla notazione associazione
 

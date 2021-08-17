@@ -1,6 +1,6 @@
 ---
 description: Recupera i byte di memoria occupati dal programma.
-title: 'IDebugProgram2:: GetMemoryBytes | Microsoft Docs'
+title: IDebugProgram2::GetMemoryBytes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27b3ce2dda13e45bb4d82f68eb02a8930de55764
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 17f6c106a387c5a53a78e8488929f9a54389d58971854f925b3f9f9550c3548b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053685"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338852"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 Recupera i byte di memoria occupati dal programma.
@@ -42,7 +43,7 @@ int GetMemoryBytes(
 
 ## <a name="parameters"></a>Parametri
 `ppMemoryBytes`\
-out Restituisce un oggetto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) che rappresenta i byte di memoria del programma.
+[out] Restituisce un [oggetto IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) che rappresenta i byte di memoria del programma.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

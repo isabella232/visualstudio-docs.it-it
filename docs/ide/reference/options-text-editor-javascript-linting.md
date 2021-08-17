@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, Linting
-description: Informazioni su come usare la pagina di indicizzazione della finestra di dialogo Opzioni per impostare le opzioni per l'analisi del codice nell'editor di codice.
+description: Informazioni su come usare la pagina Linting della finestra di dialogo Opzioni per impostare le opzioni per l'analisi del codice nell'editor di codice.
 ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-javascript
@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0458495920b603ebbfc2befb733bd8618cea5310
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8270d73f031e44e3c458cf8956b4bf6aa924e430ad3950214455f78275b640e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932345"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334380"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Finestra di dialogo Opzioni: text editor \> JavaScript/typescript \>
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Finestra di dialogo Opzioni: Editor \> di testo JavaScript/TypeScript \> Linting
 
-Usare la pagina **Linting** della finestra di dialogo **Opzioni** per impostare le opzioni per l'analisi del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**, quindi espandere **Text Editor**  >  **JavaScript/typescript**  >  .
+Usare la pagina **Linting** della finestra di dialogo **Opzioni** per impostare le opzioni per l'analisi del codice nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Editor di  >     >  **testo JavaScript/TypeScript**  >  **Linting**.
 
 ## <a name="eslint-settings"></a>Impostazioni ESLint
 
@@ -43,4 +43,4 @@ Questa opzione consente di copiare il percorso del file di configurazione global
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

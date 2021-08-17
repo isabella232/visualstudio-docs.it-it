@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e615f5a5fb2bc01cf9383e5d57b378fcc0bf6c8cf824c38fd24095cb8ff89cf2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e312844fa2f5c25492deb4de20b327da42089f81
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121429199"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101336"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Come usare esclusivamente la tastiera
 
@@ -44,7 +44,7 @@ Per un elenco completo delle combinazioni di tasti di scelta rapida dei comandi 
 
 Per aggiungere un controllo della casella degli strumenti a un modulo o a una finestra di progettazione senza usare il mouse:
 
-1. Sulla barra dei menu selezionare **Visualizza casella degli**  >  **strumenti**.
+1. Sulla barra dei menu selezionare Visualizza **casella**  >  **degli strumenti.**
 
 2. Usare ctrl **freccia** SU o CTRL FRECCIA GIÙ per spostarsi +  tra le sezioni della scheda  +  **Casella degli** strumenti.
 
@@ -64,17 +64,17 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 
    - Per selezionare o deselezionare una casella di controllo, premere la **Barra spaziatrice**.
 
-   - Per gli elenchi a discesa, usare **ALT** freccia GIÙ per visualizzare gli elementi e quindi usare i tasti freccia SU e FRECCIA GIÙ +  per modificare l'elemento selezionato.  
+   - Per gli elenchi a discesa, usare **ALT** freccia GIÙ per visualizzare gli elementi e quindi usare i tasti freccia SU e freccia +  GIÙ per modificare l'elemento  selezionato. 
 
    - Per azionare un pulsante, selezionare **Invio**.
 
-   - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per gli elenchi a discesa nelle griglie, usare **MAIUSC** ALT freccia GIÙ per visualizzare gli elementi e quindi usare i tasti freccia SU e FRECCIA GIÙ per modificare +  +  l'elemento selezionato.  
+   - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per gli elenchi a discesa nelle griglie, usare **MAIUSC** ALT freccia GIÙ per visualizzare gli elementi, quindi usare i tasti freccia SU e freccia GIÙ per modificare +  +  l'elemento selezionato.  
 
 ## <a name="navigate-between-windows-and-files"></a>Spostarsi tra finestre e file
 
-- Per spostarsi tra i file in un editor o in una finestra di progettazione, usare il tasto di scelta rapida **CTRL** TAB per visualizzare lo strumento di navigazione IDE con +  **l'opzione File** attivi selezionata. Scegliere **Invio** per passare alla finestra evidenziata.
+- Per spostarsi tra i file in un editor o in una finestra di progettazione, usare la scelta rapida da tastiera **CTRL** TAB per visualizzare lo strumento di navigazione dell'IDE con +  **l'opzione File** attivi selezionata. Scegliere **Invio** per passare alla finestra evidenziata.
 
-- Per spostarsi tra le finestre degli strumenti ancorate, usare il tasto di scelta rapida **ALT** + **F7** per visualizzare lo strumento di navigazione IDE con lo strumento **Windows** selezionato. Premere **INVIO** per passare alla finestra evidenziata.
+- Per spostarsi tra le finestre degli strumenti ancorate, usare i tasti di scelta rapida **ALT** F7 per visualizzare lo strumento di spostamento +  dell'IDE **Windows** selezionato. Premere **INVIO** per passare alla finestra evidenziata.
 
 ## <a name="move-and-dock-tool-windows"></a>Spostare e ancorare finestre degli strumenti
 
@@ -82,7 +82,7 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 
 2. Nel menu **Finestra** selezionare l'opzione **Finestra ancorata**.
 
-3. Premere **ALT** + **BARRA SPAZIATRICE** e quindi selezionare **Sposta**.
+3. Premere **ALT** + **BARRA SPAZIATRICE** e quindi selezionare **Sposta.**
 
    Verrà visualizzata la guida a forma di rombo per l'ancoraggio.
 

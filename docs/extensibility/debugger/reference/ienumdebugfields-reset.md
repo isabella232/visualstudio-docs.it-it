@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34448e389b545a3fe1d4ba7d86cbbe753567876606a4cae25118a573dfca3263
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cbedf6f73d8a7b914d9614ebe6cca669a0c190c5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360248"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029424"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Questo metodo reimposta l'enumerazione sul primo elemento.

@@ -15,15 +15,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd3f5dbe8c213dc5b579254846e360ee55ab7687e0bf84791cd26fbc50e4bf3c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9dd200879fb8a91eec5c63838d90f72dcad98b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069757"
 ---
 # <a name="implementing-single-file-generators"></a>Implementazione di generatori di file singoli
-Uno strumento personalizzato, talvolta definito generatore di file singolo, può essere usato per estendere i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] sistemi di progetto e in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Uno strumento personalizzato è un componente COM che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> l'interfaccia . Usando questa interfaccia, uno strumento personalizzato trasforma un singolo file di input in un singolo file di output. Il risultato della trasformazione può essere il codice sorgente o qualsiasi altro output utile. Due esempi di file di codice personalizzati generati dagli strumenti sono il codice generato in risposta alle modifiche in una finestra di progettazione visiva e i file generati tramite Web Services Description Language (WSDL).
+Uno strumento personalizzato, talvolta definito generatore di file singolo, può essere usato per estendere i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] sistemi di progetto e in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Uno strumento personalizzato è un componente COM che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> l'interfaccia . Usando questa interfaccia, uno strumento personalizzato trasforma un singolo file di input in un singolo file di output. Il risultato della trasformazione può essere il codice sorgente o qualsiasi altro output utile. Due esempi di file di codice personalizzati generati dagli strumenti sono il codice generato in risposta alle modifiche in una finestra di progettazione visiva e i file generati usando Web Services Description Language (WSDL).
 
  Quando viene caricato uno strumento personalizzato o viene salvato il file di input, il sistema del progetto chiama il metodo e passa un riferimento a un'interfaccia di callback, in cui lo strumento può segnalare lo stato di avanzamento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> all'utente.
 

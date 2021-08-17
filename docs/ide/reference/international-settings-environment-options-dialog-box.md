@@ -1,6 +1,6 @@
 ---
-title: Impostazioni internazionali nella finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina impostazioni internazionali nella sezione ambiente per modificare la lingua predefinita quando è installata più di una versione in lingua dell'IDE.
+title: Impostazioni Impostazioni nella finestra di dialogo Opzioni
+description: Informazioni su come usare la pagina Impostazioni internazionale nella sezione Ambiente per modificare la lingua predefinita quando sono installate più versioni linguistiche dell'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,16 +17,17 @@ ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d9dc19c69bf99ba6f66648f396468ff36444eb3f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b0efa5a6afa002e935e67fe56586195c41979a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852271"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101167"
 ---
-# <a name="options-dialog-box-environment--international-settings"></a>Finestra di dialogo Opzioni: \> impostazioni internazionali dell'ambiente
+# <a name="options-dialog-box-environment--international-settings"></a>Finestra di dialogo Opzioni: Ambiente \> internazionale Impostazioni
 
 La pagina Impostazioni internazionali consente di modificare la lingua predefinita quando nel computer in uso sono installate più versioni in lingue diverse dell'IDE (Integrated Development Environment). È possibile accedere a questa finestra di dialogo selezionando **Opzioni** dal menu **Strumenti** e scegliendo **Impostazioni internazionali** dalla cartella **Ambiente**.
 

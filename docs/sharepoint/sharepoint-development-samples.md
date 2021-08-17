@@ -1,6 +1,6 @@
 ---
-title: Esempi di sviluppo di SharePoint | Microsoft Docs
-description: Ottenere informazioni su come scaricare e installare singoli esempi o raccolte di esempi di applicazioni SharePoint.
+title: SharePoint Esempi di sviluppo | Microsoft Docs
+description: Informazioni su come scaricare e installare singoli esempi o raccolte di esempi di SharePoint applicazioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,21 +12,22 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d9625e845f73496946b463d2dc3f1a13c47f94c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9fbe526c1c7ec14e85f312c60736ba924f32cf7735e51dd13ce979149d0689a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881516"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409319"
 ---
-# <a name="sharepoint-development-samples"></a>Esempi di sviluppo di SharePoint
-  È possibile utilizzare Visual Studio per scaricare e installare esempi di applicazioni SharePoint da [MSDN Code Gallery](https://code.msdn.microsoft.com/).
+# <a name="sharepoint-development-samples"></a>SharePoint di sviluppo
+  È possibile usare Visual Studio per scaricare e installare esempi di SharePoint applicazioni da [MSDN Code Gallery.](https://code.msdn.microsoft.com/)
 
- Ogni esempio può essere scaricato singolarmente. È anche possibile scaricare un pacchetto di esempio, con esempi correlati che condividono una tecnologia o un articolo. Si riceverà una notifica al momento della pubblicazione delle modifiche apportate al codice sorgente per ogni esempio scaricato.
+ È possibile scaricare ogni esempio singolarmente. È anche possibile scaricare un Pacchetto di esempi, che include esempi correlati che condividono una tecnologia o un articolo. Si riceverà una notifica al momento della pubblicazione delle modifiche apportate al codice sorgente per ogni esempio scaricato.
 
 ## <a name="see-also"></a>Vedi anche
-- [Creazione di soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Creare SharePoint soluzioni](../sharepoint/create-sharepoint-solutions.md)
 - [Visual Studio Samples](https://code.msdn.microsoft.com/vstudio)
 - [Attività comuni nella programmazione con Office](../vsto/common-tasks-in-office-programming.md)

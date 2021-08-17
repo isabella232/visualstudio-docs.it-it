@@ -1,6 +1,6 @@
 ---
 title: Attività ReadLinesFromFile | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività ReadLinesFromFile per leggere un elenco di elementi da un file di testo. Il file deve contenere un elemento in ogni riga.
+description: Informazioni su MSBuild'attività ReadLinesFromFile per leggere un elenco di elementi da un file di testo. Il file deve contenere un elemento in ogni riga.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: a18af929-b53a-4d9e-b7bf-e3d3737ee85f
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0361d0103afbe662a37b50358e125018a7378f39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1634aa8a669fa03f217fedf04b5dd8620b95829c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931968"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068774"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (attività)
 
@@ -42,7 +43,7 @@ Legge un elenco di elementi da un file di testo.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

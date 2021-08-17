@@ -6,7 +6,7 @@ manager: cabuschl
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
 ms.date: 03/17/2021
 ms.topic: conceptual
-description: Informazioni sul vantaggio di supporto del forum Microsoft Tech Community incluso nelle sottoscrizioni Visual Studio selezionate.
+description: Informazioni sul vantaggio di supporto del forum microsoft tech Community incluso nelle sottoscrizioni Visual Studio selezionate.
 ms.openlocfilehash: d2c77501d6b27e9b8fbefbda00a9f3edf38e4220b79fb967c09a29ec11dbdebe
 ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT

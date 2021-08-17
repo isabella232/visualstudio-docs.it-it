@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 06023311d8ae52ccfccaddbfcdd8a0cc1aeec14ad937ef70c667ae441b05443a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d426948d658895214ecaab1d80f2a3121d11267
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121314680"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068243"
 ---
 # <a name="work-with-workbooks"></a>Usare le cartelle di lavoro
   La classe <xref:Microsoft.Office.Tools.Excel.Workbook> e <xref:Microsoft.Office.Interop.Excel.Workbooks> contiene i metodi e le proprietà usati per eseguire attività con le cartelle di lavoro.
@@ -37,7 +37,7 @@ ms.locfileid: "121314680"
 |Ottenere una raccolta di file di una cartella di lavoro di usati di recente.|[Procedura: Elencare a livello di codice i file delle cartelle di lavoro usati di recente](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
 |Aprire file di testo come cartelle di lavoro.|[Procedura: Aprire file di testo come cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
 
- Per altre informazioni sulle attività Excel e sul modello Excel a oggetti, vedere Excel [panoramica del modello a oggetti](../vsto/excel-object-model-overview.md).
+ Per altre informazioni sulle attività Excel e sul modello Excel a oggetti, vedere Excel [panoramica del modello a oggetti.](../vsto/excel-object-model-overview.md)
 
  In alcuni casi, le modalità con le quali si eseguono queste attività nei componenti aggiuntivi VSTO sono diverse da quelle usate nelle personalizzazioni a livello di documento.
 

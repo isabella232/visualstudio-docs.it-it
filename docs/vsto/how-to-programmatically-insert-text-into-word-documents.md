@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Inserire testo nei documenti di Word a livello di codice'
-description: Informazioni su come inserire testo in un documento di Microsoft Word a livello di codice usando Visual Studio.
+description: Informazioni su come inserire testo in un documento Microsoft Word a livello di codice usando Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f17828b4617f84cb104761918787b4bbb79f7afc
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: c2acc09b04ba08543faa449788f61f7fa72c8c72
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827357"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026187"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procedura: Inserire testo nei documenti di Word a livello di codice
   Esistono tre modi principali per inserire il testo nei documenti di Microsoft Office Word:

@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cdec9bea2883e67bf9ff2383319b966b4b73d8caeab7f6c92b1faaf3878fb8d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ad1d6e159ac1e008112a97bdec76fe2f791433ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359858"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070191"
 ---
 # <a name="ide-constants"></a>Costanti IDE
 
@@ -34,7 +34,7 @@ La classe fornisce costanti specifiche dell'ambiente di sviluppo integrato (IDE)
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori devono passare questo valore al metodo per ottenere la finestra di dialogo Apri `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> con, in questo caso nelle possibili visualizzazioni codice. |
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori devono passare questo valore al metodo per ottenere la finestra di dialogo Apri `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> con, in questo caso nelle possibili visualizzazioni del codice. |
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri con, in questo caso popolata con le possibili visualizzazioni di debug mappate alla `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> stessa visualizzazione di  <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> .|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> con, in questo caso **alle visualizzazioni della** finestra di progettazione Form. |
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>I gestori passano questo valore al metodo per ottenere la finestra di dialogo Apri con, in questo caso la visualizzazione `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> predefinita/primaria  della factory dell'editor.|
@@ -55,11 +55,11 @@ La classe fornisce costanti specifiche dell'ambiente di sviluppo integrato (IDE)
 |Valore|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Costante restituita dalle interfacce al comportamento asincrono quando l'oggetto in questione è già occupato|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|HRESULT di errore specifico per l'Visual Studio "Dati di documento incompatibili".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|HRESULT di errore specifico di Visual Studio che indica che il pacchetto non è caricato.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|HRESULT di errore specifico dell'errore Visual Studio "Dati di documento incompatibili".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|HRESULT di errore specifico di Visual Studio e che indica che il pacchetto non è stato caricato.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|HRESULT di errore specifico di Visual Studio e che indica che il Project esiste già.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|HRESULT di errore specifico di Visual Studio e che indica che la Project configurazione non è riuscita.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|HRESULT di errore specifico di Visual Studio e che indica che Project non caricato.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|HRESULT di errore specifico per Visual Studio e che indica che Project non caricato.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|HRESULT di errore specifico di Visual Studio che indica che la soluzione è già aperta.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|HRESULT di errore specifico di Visual Studio che indica che la soluzione non è aperta.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Restituito dalle interfacce di compilazione che dispongono di parametri per specificare una matrice dall'interfaccia , ma l'implementazione può applicare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> metodo solo a tutti gli output.|

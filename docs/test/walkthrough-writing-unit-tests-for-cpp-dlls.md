@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Scrivere unit test per DLL C/C++'
-description: Informazioni su come sviluppare una DLL C++ nativa usando la metodologia test-first. Per iniziare, creare un progetto di test nativo.
+description: Informazioni su come sviluppare una DLL C++ nativa usando la metodologia test-first. Iniziare creando un progetto di test nativo.
 ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: how-to
@@ -40,7 +40,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
 
-     **Visual Studio 2017 e versioni precedenti:** espandere **Modelli**  >    >  **installati Visual C++**  >  **Test**.
+     **Visual Studio 2017 e versioni precedenti:** espandere **Modelli**  >  **installati**  >  **Visual C++**  >  **Test**.
      **Visual Studio 2019:** impostare **Linguaggio** su C++ e digitare "test" nella casella di ricerca.
 
      Scegliere il modello **Progetto unit test nativo** o scegliere un qualsiasi altro framework installato. Se si sceglie un altro modello, ad esempio Google Test o Boost.Test, i principi di base sono gli stessi, cambiano però alcuni dettagli.
@@ -90,7 +90,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 La procedura seguente illustra come creare un progetto DLL in Visual Studio 2019.
 
-1. Creare un progetto C++ usando la creazione guidata Windows **Desktop:** fare clic con il pulsante destro del mouse sul nome della soluzione in **Esplora soluzioni** e scegliere  >  **Aggiungi nuovo Project**. Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati.
+1. Creare un progetto C++ usando la Creazione guidata Windows **Desktop:** fare clic con il pulsante destro del mouse sul nome della **soluzione** in Esplora soluzioni scegliere Aggiungi  >  **nuovo Project**. Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati.
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
@@ -190,13 +190,13 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
     Il nuovo test viene visualizzato in **Esplora test**.
 
-5. In **Esplora test** scegliere Esegui **tutto**.
+5. In **Esplora test** scegliere Esegui **tutto.**
 
     ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png)
 
    È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentare in modo iterativo i test e renderli superati
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentare i test in modo iterativo e renderli superati
 
 1. Aggiungere un nuovo test:
 
@@ -245,7 +245,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
     }
     ```
 
-4. Compilare la soluzione e quindi in **Esplora test** scegliere **Esegui tutto.**
+4. Compilare la soluzione e quindi in **Esplora test** scegliere **Esegui tutto**.
 
      Entrambi i test vengono superati.
 
@@ -328,7 +328,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore Screenshot dell'interruttore Esecuzione dei test in parallelo sulla barra degli ![ strumenti di Esplora test. Quando questo pulsante è selezionato, i test verranno eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione di test paralleli con lo screenshot del pulsante di attivazione/disattivazione dell'esecuzione dei test in parallelo sulla barra ![ degli strumenti di Esplora test. Quando questo pulsante è selezionato, i test verranno eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 ::: moniker-end
 

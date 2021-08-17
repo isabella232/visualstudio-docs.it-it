@@ -6,17 +6,18 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b2848a54ddbce41b538bf58f82db42ede76026d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0abf1334a976b095225b05ee0c5db8ea2295c519c65cfed9d5e39f839529ca8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912411"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121230014"
 ---
 # <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 

@@ -1,21 +1,22 @@
 ---
 title: Creare un progetto AI da un modello
-description: Informazioni su come usare Visual Studio Tools for AI per creare un progetto di intelligenza artificiale da un'ampia gamma di modelli.
+description: Informazioni su come usare Strumenti di Visual Studio per l'intelligenza artificiale per creare un progetto di intelligenza artificiale da un'ampia gamma di modelli.
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: dbef3f71678f899a41e7b4db7e1d8123952d4f75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1a9cbdd4449282076703134862178f3a866851f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841484"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067725"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Creare un progetto AI da un modello in Visual Studio
 
@@ -37,10 +38,10 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile cre
 
 6. Per il progetto sono anche state create alcune proprietà che semplificano il debug dell'applicazione passando automaticamente gli argomenti della riga di comando a questi parametri di input. **Fare clic con il pulsante destro del mouse** sul progetto e selezionare **Proprietà**
 
-    ![Screenshot del Esplora soluzioni di Visual Studio che mostra il menu di scelta rapida per TensorFlowApplication1 con le proprietà selezionate.](media/create-project/project-properties.png)
+    ![Screenshot dell'Visual Studio Esplora soluzioni che mostra il menu di scelta rapida per TensorFlowApplication1 con proprietà selezionate.](media/create-project/project-properties.png)
 
 7. Fare clic sulla scheda **Debug** per vedere gli argomenti di script aggiunti automaticamente. È possibile modificarli in base alle proprie esigenze a seconda della posizione dei dati di input e della posizione di archiviazione preferita per i dati di output.
 
-    ![Screenshot della scheda debug nelle impostazioni delle proprietà per TensorFlowApplication1 che Mostra gli argomenti dello script per il progetto.](media/create-project//project-properties_1.png)
+    ![Screenshot della scheda Debug nelle impostazioni proprietà per TensorFlowApplication1 che mostra gli argomenti script per il progetto.](media/create-project//project-properties_1.png)
 
 8. Eseguire il programma premendo Ctrl+F5 o selezionando **Debug > Avvia senza eseguire debug** del menu. I risultati vengono visualizzati nella finestra della console.

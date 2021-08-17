@@ -11,14 +11,15 @@ ms.assetid: a5cb8927-23c6-469e-8f78-f2787d85dba4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ac87279d5774b68d6983b83de400ad6afec690a2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f005187f4256f773b43dc0ae88a5bf586e4206266476ca9efc4efc7f0008e4c1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156923"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121454903"
 ---
 # <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
 Recupera il nome del file di origine.
@@ -34,7 +35,7 @@ HRESULT get_fileName (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il nome del file di origine.
+[out] Restituisce il nome del file di origine.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

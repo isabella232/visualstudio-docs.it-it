@@ -1,6 +1,6 @@
 ---
-description: Ottiene un elenco di tutti i punti di interruzione di errore derivanti da questo punto di interruzione in sospeso.
-title: 'IDebugPendingBreakpoint2:: EnumErrorBreakpoints | Microsoft Docs'
+description: Ottiene un elenco di tutti i punti di interruzione di errore risultanti da questo punto di interruzione in sospeso.
+title: IDebugPendingBreakpoint2::EnumErrorBreakpoints | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68776819e985262ed62aea28d1849ad57c778779
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e7ff4b581f00e344437bc90d8c3998d004bb4fe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072689"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126882"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
-Ottiene un elenco di tutti i punti di interruzione di errore derivanti da questo punto di interruzione in sospeso.
+Ottiene un elenco di tutti i punti di interruzione di errore risultanti da questo punto di interruzione in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +46,16 @@ int EnumErrorBreakpoints(
 
 ## <a name="parameters"></a>Parametri
 `bpErrorType`\
-in Combinazione di valori dell'enumerazione [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) che consente di selezionare il tipo di errori da enumerare.
+[in] Combinazione di valori [dell'enumerazione BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) che seleziona il tipo di errori da enumerare.
 
 `ppEnum`\
-out Restituisce un oggetto [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) che contiene un elenco di oggetti [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .
+[out] Restituisce un [oggetto IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) che contiene un elenco di [oggetti IDebugErrorBreakpoint2.](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un `CPendingBreakpoint` oggetto semplice che espone l'interfaccia [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto semplice che `CPendingBreakpoint` espone [l'interfaccia IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(

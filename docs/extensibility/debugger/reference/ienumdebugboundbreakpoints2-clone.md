@@ -1,6 +1,6 @@
 ---
 description: Restituisce una copia dell'enumerazione dei punti di interruzione associati corrente come oggetto separato.
-title: 'IEnumDebugBoundBreakpoints2:: Clone | Microsoft Docs'
+title: IEnumDebugBoundBreakpoints2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: c6ce01a2-7da3-46ec-9837-855042fa7244
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 41bee16879e8c01cc71a6b0eb45f28fd34558a09
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f33ce74eb5fc71e518dd0d9e1f15b399f94db3b1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061732"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070633"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
 Restituisce una copia dell'enumerazione corrente come oggetto separato.
@@ -48,7 +49,7 @@ int Clone(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata di questo metodo. Tuttavia, gli Stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
+ La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata a questo metodo. Tuttavia, gli stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

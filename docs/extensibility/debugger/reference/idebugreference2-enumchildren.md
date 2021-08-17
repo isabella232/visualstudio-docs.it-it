@@ -1,6 +1,6 @@
 ---
 description: Ottiene un elenco di elementi figlio selezionati di un riferimento.
-title: 'IDebugReference2:: EnumChildren | Microsoft Docs'
+title: Interfaccia IDebugReference2::EnumChildren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92f55f511a68cca6685579eeb6d686108bf70799
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 27541d1a9f238acbe626a67520868bfd882833717487ea253c37a64fdf8a1f21
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071454"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338618"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 Ottiene un elenco di elementi figlio selezionati di un riferimento. Riservato per utilizzi futuri.
@@ -52,22 +53,22 @@ int EnumChildren (
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-in Combinazione di flag dell'enumerazione [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica i campi nelle strutture [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) enumerate da compilare.
+[in] Combinazione di flag [dell'enumerazione DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica quali campi [](../../../extensibility/debugger/reference/debug-reference-info.md) nelle strutture DEBUG_REFERENCE_INFO enumerate devono essere compilati.
 
 `dwRadix`\
-in La radice da usare per la formattazione di qualsiasi informazione numerica.
+[in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
 
 `dwAttribFilter`\
-in Combinazione di flag dell'enumerazione [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) utilizzata come filtro in combinazione con il `pszNameFilter` parametro per selezionare le strutture da enumerare.
+[in] Combinazione di flag [dell'enumerazione DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) utilizzata come filtro in combinazione con il parametro per selezionare le strutture `pszNameFilter` da enumerare.
 
 `pszNameFilter`\
-in Stringa che specifica un filtro, ad esempio "MyX", usato in combinazione con il `dwAttribFilter` parametro per selezionare le strutture da enumerare.
+[in] Stringa che specifica un filtro, ad esempio "MyX", usata in combinazione con il parametro per selezionare `dwAttribFilter` le strutture da enumerare.
 
 `dwTimeout`\
-in Tempo massimo, in millisecondi, di attesa prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
+[in] Tempo massimo di attesa, in millisecondi, prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
 
 `ppEnum`\
-out Restituisce un oggetto [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) che contiene un elenco delle proprietà figlio richieste.
+[out] Restituisce un [oggetto IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) che contiene un elenco delle proprietà figlio richieste.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.

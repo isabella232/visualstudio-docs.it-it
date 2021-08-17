@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fcad04eb19c7ba42a0148078af6685b7dc69406ecb46e802f4e3206235fb317
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 52f7d9bb06d60782e67664cf648ce03a2f7437fa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121383768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099061"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Procedura: utilizzare la finestra di progettazione argomenti
 

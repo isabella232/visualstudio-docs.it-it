@@ -15,24 +15,24 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc4f300e6da070a150903281c6ff3a623576cf836b5fdd05ecb8c2b366a6ff35
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7ea0e5e3402d87b50fc5ebb5ba6d52e6f4972141
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375989"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069718"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 
 In questa sezione vengono fornite informazioni dettagliate sulle estensioni Visual Studio, tra cui Visual Studio, componenti, servizi, schemi, utilità e altro ancora.
 
 ## <a name="extensibility-architecture"></a>Architettura di estendibilità
- La figura seguente illustra l'Visual Studio di estendibilità. I pacchetti VSPackage forniscono funzionalità dell'applicazione, condivise nell'IDE come servizi. L'IDE standard offre anche un'ampia gamma di servizi, ad esempio , che consentono <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> l'accesso alla funzionalità di windowing dell'IDE.
+ La figura seguente illustra l'Visual Studio di estendibilità. I pacchetti VSPackage forniscono funzionalità dell'applicazione, condivise nell'IDE come servizi. L'IDE standard offre anche un'ampia gamma di servizi, ad esempio , che forniscono <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> l'accesso alla funzionalità di windowing dell'IDE.
 
  ![Immagine dell'architettura dell'ambiente](../../extensibility/internals/media/environment.gif "ambiente") Visualizzazione generalizzata dell'architettura Visual Studio dati
 
 ## <a name="vspackages"></a>VSPackages
- I VSPackage sono moduli software che compongono ed estendono Visual Studio con elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione. I pacchetti VSPackage sono l'unità centrale dell'architettura Visual Studio. Per altre informazioni, vedere [VSPackages](../../extensibility/internals/vspackages.md).
+ I VSPackage sono moduli software che compongono ed estendono Visual Studio con elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione. I vspackage sono l'unità centrale dell'architettura Visual Studio. Per altre informazioni, vedere [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
  La Visual Studio shell fornisce funzionalità di base e supporta la comunicazione incrociata tra i pacchetti VSPackage e le estensioni MEF dei componenti. Per altre informazioni, vedere [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
@@ -59,18 +59,18 @@ In questa sezione vengono fornite informazioni dettagliate sulle estensioni Visu
 
  Le finestre degli strumenti offrono in genere vari controlli con cui l'utente può interagire. Ad esempio, la **finestra Proprietà** consente all'utente di impostare le proprietà degli oggetti che servono a uno scopo specifico. La **finestra** Proprietà è specializzata in questo senso, ma anche generale perché può essere usata in molte situazioni diverse. Analogamente, la finestra **Output** è specializzata perché fornisce output basato su testo, ma generale perché molti sottosistemi in Visual Studio possono usarlo per fornire l'output all'utente Visual Studio.
 
- Si consideri l'immagine Visual Studio, che contiene diverse finestre degli strumenti:
+ Si consideri l'immagine seguente Visual Studio, che contiene diverse finestre degli strumenti:
 
  ![Screenshot](../../extensibility/internals/media/t1gui.png "T1gui")
 
- Alcune delle finestre degli strumenti sono ancorate insieme in un singolo riquadro che visualizza la finestra degli strumenti Esplora soluzioni e nasconde le altre finestre degli strumenti, ma le rende disponibili facendo clic sulle schede. L'immagine mostra altre due finestre degli strumenti, **Elenco** errori e **Output,** ancorate insieme in un singolo riquadro.
+ Alcune delle finestre degli strumenti sono ancorate insieme in un singolo riquadro che visualizza la finestra degli strumenti Esplora soluzioni e nasconde le altre finestre degli strumenti, ma le rende disponibili facendo clic sulle schede. L'immagine mostra altre due finestre degli strumenti, **La finestra Elenco** errori e **Output,** ancorate insieme in un singolo riquadro.
 
  Viene anche visualizzato il riquadro principale del documento, che mostra diverse finestre dell'editor. Anche se le finestre degli strumenti hanno in genere una sola istanza (ad esempio, è possibile aprire una sola **Esplora soluzioni),** le finestre dell'editor possono avere più istanze, ognuna delle quali viene usata per modificare un documento separato, ma tutte ancorate nello stesso riquadro. L'immagine mostra un riquadro del documento con due finestre dell'editor, una finestra di progettazione form. Tutte le finestre nel riquadro del documento sono disponibili facendo clic sulle schede, ma la finestra dell'editor che contiene il file EditorPane.cs è visibile e attiva.
 
- Quando si estendono Visual Studio, è possibile creare finestre degli strumenti che consentono agli Visual Studio utenti di interagire con l'estensione. È anche possibile creare editor personalizzati che consentono agli utenti Visual Studio modificare i documenti. Poiché le finestre degli strumenti e gli editor verranno integrati in Visual Studio, non è necessario programmarli per ancorarli o essere visualizzati correttamente in una scheda. Quando vengono registrati correttamente in Visual Studio, avranno automaticamente le funzionalità tipiche delle finestre degli strumenti e delle finestre dei documenti in Visual Studio. Per altre informazioni, vedere [Estensione e personalizzazione degli strumenti Windows](../../extensibility/extending-and-customizing-tool-windows.md).
+ Quando si estendono Visual Studio, è possibile creare finestre degli strumenti che consentono agli Visual Studio utenti di interagire con l'estensione. È anche possibile creare editor personalizzati che consentono agli utenti Visual Studio modificare i documenti. Poiché le finestre degli strumenti e gli editor verranno integrati in Visual Studio, non è necessario programmarli per ancorarli o essere visualizzati correttamente in una scheda. Quando vengono registrate correttamente in Visual Studio, avranno automaticamente le funzionalità tipiche delle finestre degli strumenti e delle finestre dei documenti in Visual Studio. Per altre informazioni, vedere [Estensione e personalizzazione degli strumenti Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 
 ## <a name="document-windows"></a>Finestre dei documenti
- Una finestra del documento è una finestra figlio incorniciata di una finestra dell'interfaccia a documenti multipli. Le finestre dei documenti vengono in genere usate per ospitare editor di testo, editor di form (noti anche come finestre di progettazione) o controlli di modifica, ma possono anche ospitare altri tipi funzionali. La **finestra di dialogo** Nuovo file include esempi di finestre di documento Visual Studio disponibili.
+ Una finestra del documento è una finestra figlio incorniciata di una finestra dell'interfaccia a documenti multipli ( MDI). Le finestre dei documenti vengono in genere usate per ospitare editor di testo, editor di form (noti anche come finestre di progettazione) o controlli di modifica, ma possono anche ospitare altri tipi funzionali. La **finestra di dialogo** Nuovo file include esempi di finestre di documento Visual Studio disponibili.
 
  La maggior parte degli editor è specifica di un linguaggio di programmazione o di un tipo di file, ad esempio pagine HTML, set di frame, file C++ o file di intestazione. Selezionando un modello nella finestra di dialogo Nuovo **file,** un utente crea dinamicamente una finestra del documento per l'editor per il tipo di file associato al modello. Quando un utente apre un file esistente, viene creata anche una finestra del documento.
 
@@ -108,7 +108,7 @@ Per altre informazioni, vedere [Progetti](../../extensibility/internals/projects
  Nella  finestra Proprietà vengono visualizzate le proprietà di uno o più elementi [selezionati:](../../extensibility/internals/extending-properties.md) le pagine Opzioni estensione proprietà contengono set di opzioni relative a un componente specifico, ad esempio un linguaggio di programmazione o un VSPackage: opzioni e pagine delle [opzioni](../../extensibility/internals/options-and-options-pages.md). Impostazioni sono in genere funzionalità correlate all'interfaccia utente che possono essere importate ed esportate: [supporto per l'Impostazioni](../../extensibility/internals/support-for-user-settings.md).
 
 ## <a name="visual-studio-services"></a>Visual Studio Servizi
- Un servizio fornisce un set specifico di interfacce da utilizzare per i componenti. Visual Studio fornisce un set di servizi che possono essere usati da qualsiasi componente, incluse le estensioni. Ad esempio, i Visual Studio consentono di visualizzare o nascondere dinamicamente le finestre degli strumenti, abilitare l'accesso alla Guida, alla barra di stato o agli eventi dell'interfaccia utente. L Visual Studio editor fornisce anche servizi che possono essere importati dalle estensioni dell'editor. Per altre informazioni, vedere [Uso e fornitura di servizi](../../extensibility/using-and-providing-services.md).
+ Un servizio fornisce un set specifico di interfacce da utilizzare per i componenti. Visual Studio fornisce un set di servizi che possono essere usati da qualsiasi componente, incluse le estensioni. Ad esempio, i Visual Studio consentono di visualizzare o nascondere le finestre degli strumenti in modo dinamico, abilitare l'accesso alla Guida, alla barra di stato o agli eventi dell'interfaccia utente. L Visual Studio editor fornisce anche servizi che possono essere importati dalle estensioni dell'editor. Per altre informazioni, vedere [Uso e fornitura di servizi](../../extensibility/using-and-providing-services.md).
 
 ## <a name="debugger"></a>Debugger
  Il debugger è l'interfaccia utente per i componenti di debug specifici del linguaggio. Se è stato creato un nuovo servizio di linguaggio, sarà necessario creare un motore di debug specifico per eseguire l'hook al debugger. Per altre informazioni, vedere [estendibilità Visual Studio debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -129,4 +129,4 @@ Per altre informazioni, vedere [Progetti](../../extensibility/internals/projects
  In alcuni casi potrebbe essere necessario usare il programma di installazione Windows anziché il programma di installazione VSIX: ad esempio, potrebbe essere necessario scrivere nel Registro di sistema. Per informazioni sull'uso Windows installer con le estensioni, vedere Installazione di [VSPackage con](../../extensibility/internals/installing-vspackages-with-windows-installer.md)Windows Installer .
 
 ## <a name="help-viewer"></a>Visualizzatore della Guida
- È possibile integrare le proprie pagine della Guida e F1 in Help Viewer. Per altre informazioni, vedere [Microsoft Help Viewer SDK.](../../extensibility/internals/microsoft-help-viewer-sdk.md)
+ È possibile integrare le proprie pagine della Guida e F1 in Help Viewer. Per altre informazioni, vedere [Microsoft Help Viewer SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).

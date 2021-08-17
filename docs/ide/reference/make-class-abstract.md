@@ -1,6 +1,6 @@
 ---
 title: Impostare una classe come astratta
-description: Informazioni su come rendere astratta la classe dopo aver scritto un metodo astratto.
+description: Informazioni su come rendere la classe astratta dopo la scrittura di un metodo astratto.
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9cd956bf312b356b98cdefdf30a98f4b77be796ec66b0a3862d480f5727fb045
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 767a81ae1957a7a3c2865bef060f5f0016e7a7c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372394"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101089"
 ---
 # <a name="make-class-abstract"></a>Impostare una classe come astratta
 
@@ -27,19 +27,19 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Effettuare il refactoring astratto della classe.
+**Cosa:** Rendere il refactoring astratto della classe.
 
 **Quando:** Si scrive un metodo astratto in una classe che non è astratta.
 
-**Perché:**  La correzione del codice per rendere astratta una classe dopo la scrittura di un metodo astratto consente di risparmiare tempo.
+**Perché:**  La correzione di codice per rendere astratta una classe dopo la scrittura di un metodo astratto consente di risparmiare tempo.
 
 ## <a name="how-to"></a>Procedure
 
-1. Posizionare il punto di controllo sul metodo astratto.
+1. Posizionare il punto di caret sul metodo astratto.
 
-2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
 
-3. Selezionare **Make class 'abstract' (Rendi la classe 'astratta').**
+3. Selezionare **Rendi classe 'astratta'.**
 
     ![Impostare una classe come astratta](media/make-class-abstract.png)
 
