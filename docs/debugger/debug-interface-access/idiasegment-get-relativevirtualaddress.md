@@ -1,5 +1,5 @@
 ---
-description: Recupera l'indirizzo RVA (relativo Virtual Address) dell'inizio della sezione.
+description: Recupera l'indirizzo RVA (Relative Virtual Address) dell'inizio della sezione.
 title: IDiaSegment::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: b6a573a1-3671-4c1c-a5c2-2ab8f07fd510
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 52cd342270325e539cffc76ac34a7e4fc479d532
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 80a59d7afc56843636e576d29ab4d999431798a2140118eb99fa231a09d65931
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157154"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391976"
 ---
 # <a name="idiasegmentget_relativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
-Recupera l'indirizzo RVA (relativo Virtual Address) dell'inizio della sezione.
+Recupera l'indirizzo RVA (Relative Virtual Address) dell'inizio della sezione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT get_relativeVirtualAddress (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'RVA dell'inizio della sezione.
+[out] Restituisce l'RVA dell'inizio della sezione.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

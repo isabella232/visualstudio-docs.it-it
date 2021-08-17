@@ -1,6 +1,6 @@
 ---
 description: Recupera il nodo del programma per un programma specifico.
-title: 'IDebugProgramProvider2:: GetProviderProgramNode | Microsoft Docs'
+title: IDebugProgramProvider2::GetProviderProgramNode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07e7184c189d501b2fcb604590eeb121bae8ccdc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bf520d68a47b8a7e8f4ed7b71c7544ffdf0a947fcdc2c140c68f0ce7ef328bf1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065281"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402571"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Recupera il nodo del programma per un programma specifico.
@@ -52,28 +53,28 @@ int GetProviderProgramNode(
 
 ## <a name="parameters"></a>Parametri
 `Flags`\
-in Combinazione di flag dell'enumerazione [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Per questa chiamata sono tipici i flag seguenti:
+[in] Combinazione di flag [dell'enumerazione PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) I flag seguenti sono tipici di questa chiamata:
 
 |Flag|Descrizione|
 |----------|-----------------|
 |`PFLAG_REMOTE_PORT`|Il chiamante è in esecuzione nel computer remoto.|
-|`PFLAG_DEBUGGEE`|Il chiamante è attualmente in fase di debug. verranno restituite informazioni aggiuntive sul marshalling per ogni nodo.|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Il chiamante è stato associato a ma non avviato dal debugger.|
+|`PFLAG_DEBUGGEE`|È in corso il debug del chiamante. Verranno restituite informazioni aggiuntive sul marshalling per ogni nodo.|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Il chiamante è stato collegato a ma non avviato dal debugger.|
 
 `pPort`\
-in Porta su cui è in esecuzione il processo chiamante.
+[in] Porta su cui è in esecuzione il processo chiamante.
 
 `processId`\
-in Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) che contiene l'ID del processo che contiene il programma in questione.
+[in] Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) contenente l'ID del processo che contiene il programma in questione.
 
 `guidEngine`\
-in GUID del motore di debug a cui è associato il programma (se presente).
+[in] GUID del motore di debug a cui è collegato il programma (se presente).
 
 `programId`\
-in ID del programma per il quale ottenere il nodo del programma.
+[in] ID del programma per il quale ottenere il nodo del programma.
 
 `ppProgramNode`\
-out Oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il nodo del programma richiesto.
+[out] Oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il nodo di programma richiesto.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

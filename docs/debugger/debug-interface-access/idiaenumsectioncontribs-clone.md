@@ -1,6 +1,6 @@
 ---
-description: Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore dei contributi della sezione corrente.
-title: 'IDiaEnumSectionContribs:: Clone | Microsoft Docs'
+description: Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore contributi della sezione corrente.
+title: IDiaEnumSectionContribs::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,14 +11,15 @@ ms.assetid: 81d3f3a7-3684-4e5c-b028-29b268684a2c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f91814a054fb704801d3000c768203b191956d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 699cae74d7a6c426a4afc490bae749d21e23ad6e1d93b4fe0157f4ed51f2bc37
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148913"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392464"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -34,7 +35,7 @@ HRESULT Clone(
 #### <a name="parameters"></a>Parametri
  ppenum
 
-out Restituisce un oggetto [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) che contiene un duplicato dell'enumeratore. I contributi della sezione non vengono duplicati, ma solo l'enumeratore.
+[out] Restituisce un [oggetto IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) che contiene un duplicato dell'enumeratore. I contributi della sezione non vengono duplicati, ma solo l'enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

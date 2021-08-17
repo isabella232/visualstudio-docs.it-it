@@ -4,12 +4,12 @@ description: Informazioni sull'uso di IntelliSense in Visual Studio per Mac
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1499c270f8153279d93a8f3a3bfc039949c5c5836c697cc7429703295a518d0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75405813"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121422869"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -23,13 +23,13 @@ Quando si digita in un file supportato, ad esempio un file di codice C#, i compl
 
 La finestra di completamento offre anche il supporto per filtrare i completamenti inclusi in base al tipo. Ad esempio, è possibile limitare i membri dell'elenco per rappresentare solo i tipi come classi o delegati. Questo processo di filtro può essere abilitato facendo clic su un'icona specifica che rappresenta il tipo che verrà filtrato o tramite scelte rapide da tastiera corrispondenti a un tipo specificato. Le icone, disponibili nella parte inferiore della finestra di completamento, sono le seguenti:
 
-| Icona                         | Nome          | Parola chiave    | Tasto di scelta rapida |
+| Icona                         | NOME          | Parola chiave    | Tasto di scelta rapida |
 | -----------------------------|---------------| -----------|--------|
 | ![Icona di classe](media/classes-icon.png)  | classe         | `class`    |  ⌥C
 | ![Icona Costante](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![Icona di delegato](media/delegate-icon.png) | delegato      | `delegate` |  ⌥D
 | ![Icona di enumerazione](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![Icona di evento](media/event-icon.png)    | event         |            |  ⌥V
+| ![Icona di evento](media/event-icon.png)    | evento         |            |  ⌥V
 | ![Icona Campo](media/fields-icon.png)   | campo         |            |  ⌥F
 | ![Icona di interfaccia](media/interface-icon.png)| interfaccia     | `interface`|  ⌥I
 | ![Icona di parola chiave](media/keyword-icon.png)  | parola chiave       |            |  ⌥K
@@ -58,7 +58,7 @@ La finestra di completamento verrà attivata automaticamente durante la digitazi
 
 È anche possibile attivare manualmente l'aspetto della finestra dei parametri digitando `control-shift-space`. Quando il punto di inserimento si trova nella posizione valida per un elenco di parametri, l'elenco di parametri verrà visualizzato vicino alla posizione del punto di inserimento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Azioni rapide (Visual Studio in Windows)](/visualstudio/ide/quick-actions)
 - [Effettuare il refactoring del codice (Visual Studio in Windows)](/visualstudio/ide/refactoring-in-visual-studio)

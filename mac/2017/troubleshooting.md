@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6073e0bf2a601bf5183798a1df4fd835d0b93427
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2eb30bb0789de78d534a420c398faaa6a3c0d2dce672bcd231b41c2d85481eca
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985159"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121422166"
 ---
 # <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -47,6 +47,6 @@ Le sezioni importanti della finestra di dialogo numerate sopra sono descritte in
 
 Notare che alcune sezioni sono visibili solo quando l'eccezione ha un'eccezione interna.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risorse per la risoluzione dei problemi relativi a errori IDE (Visual Studio in Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

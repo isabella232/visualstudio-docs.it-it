@@ -1,6 +1,6 @@
 ---
 title: Attività GetOutputFileName | Microsoft Docs
-description: Utilizzare l'attività Helper MSBuild GetOutputFileName per specificare le opzioni relative al nome del file di output per cl.exe e altri strumenti.
+description: Usare l MSBuild'attività helper GetOutputFileName per specificare le opzioni del nome file di output per cl.exe e altri strumenti.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
@@ -19,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4670bb84b151332951608f7b20ef5ea44e59a3
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 5de0fab9f6aa3b6a57248b4f236e816fe60bdd44c76a55cd466ea287fd9c38d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436782"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397631"
 ---
 # <a name="getoutputfilename-task"></a>Attività GetOutputFileName
 
@@ -36,11 +36,11 @@ Nella tabella seguente vengono descritti i parametri dell'attività **GetOutputF
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|**OutputExtension**|Parametro di **stringa** obbligatorio.|
-|**OutputFile**|Parametro di output **string** facoltativo.|
-|**Percorso output**|Parametro **stringa** facoltativo.|
-|**SourceFile**|Parametro di **stringa** obbligatorio.|
+|**OutputExtension**|Parametro **di stringa** obbligatorio.|
+|**Outputfile**|Parametro di output **string** facoltativo.|
+|**Percorso output**|Parametro **di stringa** facoltativo.|
+|**SourceFile**|Parametro **di stringa** obbligatorio.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

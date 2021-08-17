@@ -14,17 +14,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 10ff3648dfceaa62be0dd86a05a21432aa2f6118
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: bf0ed43b3c27a14c8d746d6bb0851b36180f523d29f139ae10df27383e21f1d8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826031"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423917"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>Procedura: Creare un elemento di posta elettronica a livello di codice
-  Questo esempio crea un messaggio di posta elettronica in Microsoft Office Outlook.
+  In questo esempio viene creato un messaggio di posta elettronica Microsoft Office Outlook.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,5 +33,5 @@ ms.locfileid: "107826031"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Vedere anche
-- [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
-- [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Usare elementi di posta elettronica](../vsto/working-with-mail-items.md)
+- [Introduzione alla programmazione VSTO componenti aggiuntivi](../vsto/getting-started-programming-vsto-add-ins.md)

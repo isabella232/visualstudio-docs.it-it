@@ -9,15 +9,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed42b4013d4edda1043cfc725e339f798f4064ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45a02deb51774a46c7d7618d912b87c49e187c852e0048108bf502fbf02f1e1a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922004"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395981"
 ---
 # <a name="understand-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
 
@@ -99,5 +100,5 @@ Percentuale dei valori di tempo inclusivo applicazione totali della sessione di 
 
 ## <a name="see-also"></a>Vedi anche
 
-[Analizzare i dati](../profiling/analyzing-performance-tools-data.md) 
- degli strumenti per le prestazioni [Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
+[Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md) 
+ [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)

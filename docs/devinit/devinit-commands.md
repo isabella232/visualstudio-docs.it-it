@@ -11,17 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d6c8f487fcb35fc210db57f0c8a49a2a86f909e9
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: e93e9c84b4f9448f212d7c55146a1e2eddc584e201c47e35d8388b3421f592ff
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672214"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390748"
 ---
 # <a name="devinit-commands"></a>comandi devinit
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è incentrata sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di Visual Studio di lavoro. Come parte di questo `devinit` e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community per sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
 ## <a name="init"></a>Init
 
@@ -29,46 +29,46 @@ ms.locfileid: "104672214"
 devinit init
 ```
 
-Inizializzare l'ambiente eseguendo gli strumenti specificati in un [.devinit.jssu](devinit-json.md) file.
+Inizializzare l'ambiente eseguendo gli strumenti specificati in un.devinit.js[ su](devinit-json.md) file.
 
 ### <a name="options-for-init"></a>Opzioni per init
 
-Opzioni facoltative per il `devinit init` comando.
+Opzioni facoltative per il `devinit init` comando .
 
 | Argomento             | Obbligatoria | Descrizione                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
 | -f,--file            | No       | Percorso del `.devinit.json` file.                                         |
-| --Error-Action       | No       | Specifica la modalità di gestione degli errori. Opzioni: arresta, ignora, continua (impostazione predefinita).|
-| -v,--verbose         | No       | Genera output dettagliato.                                                      |
-| -n,--esecuzione a secco         | No       | Esecuzione a secco.                                                                  |
+| --error-action       | No       | Specifica come gestire gli errori. Opzioni: Arresta, Ignora, Continua (impostazione predefinita).|
+| -v,--verbose         | No       | Generare un output dettagliato.                                                      |
+| -n,--dry-run         | No       | Esecuzione a secco.                                                                  |
 
-#### <a name="--file-argument"></a>--argomento del file
+#### <a name="--file-argument"></a>Argomento --file
 
-Specifica il percorso del _devinit.jssul_ file. Se--file non è specificato, si cerca un file predefinito nei percorsi seguenti:
+Specifica il percorso _dell'devinit.jsnel_ file. Se --file non viene specificato, viene cercato un file predefinito nei percorsi seguenti:
 
-* {Current-directory} \\.devinit.js
-* {Current-directory} \\devinit.js
-* {Current-directory} \\ ..devinit.jsdi devinit \\
-* {Current-directory} \\ .devinit.jsdi devinit \\
-* {Current-directory} \\.devinit.jsdi devinit \\
-* {Current-directory} \\devinit.jsdi devinit \\
-* {Current-directory} \\ . devcontainer \\.devinit.json
-* {Current-directory} \\ . devcontainer \\devinit.json
+* {current-directory} \\.devinit.jssu
+* {current-directory} \\devinit.jssu
+* {current-directory} \\ . devinit \\.devinit.jssu
+* {current-directory} \\ . devinit \\devinit.jssu
+* {current-directory} \\ devinit \\.devinit.jssu
+* {current-directory} \\ devinit \\devinit.jssu
+* {current-directory} \\ . devcontainer \\.devinit.jssu
+* {current-directory} \\ . devcontainer \\devinit.jssu
 
 > [!NOTE]
-> Se vengono trovati più file predefiniti, il file verrà usato per primo nell'elenco precedente.
+> Se vengono trovati più file predefiniti, devinit userà il file visualizzato per primo nell'elenco precedente.
 
-#### <a name="--error-action-argument"></a>--Error-argomento azione
+#### <a name="--error-action-argument"></a>Argomento --error-action
 
-Vedere di [seguito](#options-for-run).
+Vedere [di seguito](#options-for-run).
 
-#### <a name="--verbose-switch"></a>opzione--verbose
+#### <a name="--verbose-switch"></a>Opzione --verbose
 
-Vedere di [seguito](#options-for-run).
+Vedere [di seguito](#options-for-run).
 
-#### <a name="--dry-run-switch"></a>--opzione di esecuzione a secco
+#### <a name="--dry-run-switch"></a>Opzione --dry-run
 
-Vedere di [seguito](#options-for-run).
+Vedere [di seguito](#options-for-run).
 
 ## <a name="run"></a>Esegui
 
@@ -76,52 +76,52 @@ Vedere di [seguito](#options-for-run).
 devinit run -t <toolname>
 ```
 
-Esegue lo strumento specifico. i parametri sono elencati di seguito. Vedere la [documentazione](devinit-tool-list.md) per ogni strumento per un utilizzo specifico.
+Esegue lo strumento specifico. I parametri sono elencati di seguito. Per [un utilizzo](devinit-tool-list.md) specifico, vedere la documentazione relativa a ogni strumento.
 
 ### <a name="options-for-run"></a>Opzioni per l'esecuzione
 
-Opzioni per il `devinit run` comando.
+Opzioni per il `devinit run` comando .
 
 | Argomento                                      | Obbligatoria | Descrizione                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--strumento                                     | Sì      | Obbligatorio. Nome dello strumento.                                                             |
+| -t,--tool                                     | Sì      | Obbligatorio. Nome dello strumento.                                                             |
 | -i,--input                                    | No       | Valore di input dello strumento. Ad esempio, un nome file, un pacchetto o un nome.                     |
-| --Error-Action                                | No       | Specifica come gestire gli errori dello strumento: arresta, ignora, continua. Il valore predefinito è stop. |
-| -v,--verbose                                  | No       | Genera output dettagliato.                                                                 |
-| -n,--esecuzione a secco                                  | No       | Esecuzione a secco.                                                                             |
+| --error-action                                | No       | Specifica come gestire gli errori dello strumento: Arresta, Ignora, Continua. L'impostazione predefinita è l'arresto. |
+| -v,--verbose                                  | No       | Generare un output dettagliato.                                                                 |
+| -n,--dry-run                                  | No       | Esecuzione a secco.                                                                             |
 | --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt; argN&gt;  | No       | Argomenti aggiuntivi della riga di comando per lo strumento.                                       |
 
-#### <a name="--error-action-argument"></a>--Error-argomento azione
+#### <a name="--error-action-argument"></a>Argomento --error-action
 
-Specifica l'azione da intraprendere se uno strumento restituisce un codice di uscita diverso da zero. I valori validi sono:
+Specifica l'azione da eseguire se uno strumento restituisce un codice di uscita diverso da zero. I valori validi sono:
 
 | Argomento | Descrizione                                                                                                                                                                                                                                                                           |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| continue | Continua l'elaborazione di altri strumenti dopo l'emissione di un errore in errore standard. Il codice di uscita del devinit.exe è diverso da zero (esito negativo). Questo comportamento è simile all'azione arresta errore, ma l'elaborazione continua. `continue` è l'azione di errore predefinita per il comando init.              |
-| ignore   | Continuare l'elaborazione di altri strumenti dopo l'emissione di un avviso nell'output standard. Il codice di uscita del processo devinilt deve essere sempre zero (esito positivo). L' `ignore` impostazione Ignora tutti gli errori.                                                                                                      |
-| stop     | Genera un errore nell'errore standard e interrompe l'elaborazione degli strumenti. Il codice di uscita del devinit.exe è diverso da zero (esito negativo). È simile all'azione continua errore, ma l'elaborazione viene interrotta al primo errore rilevato. `stop` è l'azione di errore predefinita per tutti i comandi ad eccezione di init. |
+| continue | Continuare a elaborare altri strumenti dopo aver generato un errore in un errore standard. Il devinit.exe di uscita è diverso da zero (errore). Questo comportamento è simile all'azione Arresta errore, ma l'elaborazione continua. `continue` è l'azione di errore predefinita per il comando init.              |
+| ignore   | Continuare a elaborare altri strumenti dopo aver generato un avviso nell'output standard. Il codice di uscita del processo DevInit deve essere sempre zero (operazione riuscita). `ignore`L'impostazione ignora tutti gli errori.                                                                                                      |
+| stop     | Genera un errore per gli errori standard e arresta gli strumenti di elaborazione. Il devinit.exe di uscita è diverso da zero (errore). Questa operazione è simile all'azione continue error, ma l'elaborazione viene interrotta al primo errore rilevato. `stop` è l'azione di errore predefinita per tutti i comandi ad eccezione di init. |
 
-#### <a name="--dry-run-switch"></a>--opzione di esecuzione a secco
+#### <a name="--dry-run-switch"></a>Opzione --dry-run
 
-Comandi echo Tool che verrebbero eseguiti. Alcuni strumenti potrebbero richiedere ulteriori azioni, come documentato per tale strumento. 
+Comandi dello strumento Echo che verranno eseguiti. Alcuni strumenti possono intraprendere altre azioni, come documentato per tale strumento. 
 
-#### <a name="--verbose-switch"></a>opzione--verbose
+#### <a name="--verbose-switch"></a>Opzione --verbose
 
-Genera output dettagliato nell'output standard. Se lo strumento da eseguire supporta un'opzione verbose, propagare l'opzione verbose allo strumento.
+Generare output dettagliato nell'output standard. Se lo strumento da eseguire supporta un'opzione dettagliata, propagare l'opzione dettagliata per lo strumento.
 
-#### <a name="--dry-run-switch"></a>--opzione di esecuzione a secco
+#### <a name="--dry-run-switch"></a>Opzione --dry-run
 
-Comandi echo Tool che verrebbero eseguiti, ma non eseguono alcun strumento.
+Comandi dello strumento Echo che vengono eseguiti, ma non eseguono strumenti.
 
 #### <a name="additional-command-line-arguments"></a>Argomenti aggiuntivi della riga di comando
 
-L'utilizzo di un oggetto `<arg>` che include uno spazio nel suo valore deve includere una coppia aggiuntiva di virgolette precedute.
+`<arg>`L'uso di un oggetto che include uno spazio nel relativo valore deve includere una coppia aggiuntiva di virgolette precedute da un carattere di escape.
 
 ```console
 devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
-Per l'installazione di DotNet in una directory specifica `C:\Program Files\dotnet` :
+Per installare dotnet in una directory `C:\Program Files\dotnet` specifica:
 
 ```console
 devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
@@ -143,9 +143,9 @@ devinit show -t <toolname>
 
 | Argomento       | Obbligatoria | Descrizione                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--strumento      | Sì      | Obbligatorio. Nome dello strumento.                                                             |
+| -t,--tool      | Sì      | Obbligatorio. Nome dello strumento.                                                             |
 
-Stampa le informazioni della Guida per uno strumento specifico.
+Stampa le informazioni della Guida per un determinato strumento.
 
 ## <a name="version"></a>Versione
 
@@ -153,7 +153,7 @@ Stampa le informazioni della Guida per uno strumento specifico.
 devinit version
 ```
 
-Stampa le informazioni sulla versione corrente per devinilt.
+Stampa le informazioni sulla versione corrente per devinit.
 
 ## <a name="help"></a>Help
 
@@ -162,5 +162,5 @@ devinit help
 devinit help list
 ```
 
-Stampa il testo della Guida per il comando devinilt o per un comando specifico `devinit <command>` .
+Stampa il testo della Guida per devinit o per un comando `devinit <command>` specifico.
  

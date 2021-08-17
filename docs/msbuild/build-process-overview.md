@@ -1,6 +1,6 @@
 ---
 title: Come vengono compilati i progetti in MSBuild
-description: Informazioni sul modo in cui MSBuild elabora i file di progetto, se richiamati da Visual Studio o da una riga di comando o uno script.
+description: Informazioni su MSBuild i file di progetto, sia che siano richiamati da Visual Studio o da una riga di comando o da uno script.
 ms.custom: SEO-VS-2020
 ms.date: 05/18/2020
 ms.topic: conceptual
@@ -9,137 +9,138 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 2c5d8a602ffaaefb17480b9f64de9c49a992db500ed5a0cebc00098f6ac34c04
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082539"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397956"
 ---
 # <a name="how-msbuild-builds-projects"></a>Come vengono compilati i progetti in MSBuild
 
-In che modo MSBuild funziona effettivamente? In questo articolo si apprenderà come MSBuild elabora i file di progetto, se richiamati da Visual Studio o da una riga di comando o uno script. Sapere come funziona MSBuild può aiutarti a diagnosticare meglio i problemi e a personalizzare meglio il processo di compilazione. Questo articolo descrive il processo di compilazione ed è ampiamente applicabile a tutti i tipi di progetto.
+Come funziona MSBuild? In questo articolo si apprenderà come MSBuild i file di progetto, sia richiamati da Visual Studio o da una riga di comando o uno script. Conoscere il MSBuild può aiutare a diagnosticare meglio i problemi e a personalizzare meglio il processo di compilazione. Questo articolo descrive il processo di compilazione ed è in gran parte applicabile a tutti i tipi di progetto.
 
-Il processo di compilazione completo è costituito dall' [avvio iniziale](#startup), dalla [valutazione](#evaluation-phase)e dall' [esecuzione](#execution-phase) delle destinazioni e delle attività che compilano il progetto. Oltre a questi input, le importazioni esterne definiscono i dettagli del processo di compilazione, incluse le [importazioni standard](#standard-imports) , ad esempio *Microsoft. Common. targets* e le [importazioni configurabili dall'utente](#user-configurable-imports) a livello di soluzione o di progetto.
+Il processo di compilazione completo è costituito [dall'avvio](#startup) [iniziale,](#evaluation-phase)dalla valutazione [e](#execution-phase) dall'esecuzione delle destinazioni e delle attività che compilano il progetto. Oltre a questi input, le importazioni esterne definiscono i dettagli del processo di compilazione, [](#user-configurable-imports) incluse le importazioni [standard,](#standard-imports) ad esempio *Microsoft.Common.targets* e le importazioni configurabili dall'utente a livello di soluzione o di progetto.
 
 ## <a name="startup"></a>Avvio
 
-MSBuild può essere richiamato da Visual Studio tramite il modello a oggetti MSBuild in *Microsoft.Build.dll* oppure richiamando il file eseguibile direttamente nella riga di comando o in uno script, ad esempio nei sistemi ci. In entrambi i casi, gli input che interessano il processo di compilazione includono il file di progetto (o l'oggetto di progetto interno a Visual Studio), possibilmente un file di soluzione, le variabili di ambiente e le opzioni della riga di comando o gli equivalenti del modello a oggetti. Durante la fase di avvio, le opzioni della riga di comando o gli equivalenti del modello a oggetti vengono usati per configurare le impostazioni di MSBuild, ad esempio la configurazione dei logger. Le proprietà impostate nella riga di comando usando `-property` l' `-p` opzione o sono impostate come proprietà globali, che eseguono l'override di tutti i valori che verrebbero impostati nei file di progetto, anche se i file di progetto vengono letti in un secondo momento.
+MSBuild può essere richiamato da Visual Studio tramite il modello a oggetti MSBuild in *Microsoft.Build.dll* o richiamando l'eseguibile direttamente dalla riga di comando o in uno script, ad esempio nei sistemi ci. In entrambi i casi, gli input che influiscono sul processo di compilazione includono il file di progetto (o l'oggetto di progetto interno a Visual Studio), possibilmente un file di soluzione, variabili di ambiente e opzioni della riga di comando o gli equivalenti del modello a oggetti. Durante la fase di avvio, le opzioni della riga di comando o gli equivalenti del modello a oggetti vengono usati per configurare MSBuild, ad esempio la configurazione dei logger. Le proprietà impostate nella riga di comando usando l'opzione o vengono impostate come proprietà globali, che eseguono l'override di tutti i valori che verrebbero impostati nei file di progetto, anche se i file di progetto vengono letti in un `-property` `-p` secondo momento.
 
-Le sezioni successive sono relative ai file di input, ad esempio i file di soluzione o di progetto.
+Le sezioni successive riguardano i file di input, ad esempio i file di soluzione o i file di progetto.
 
 ### <a name="solutions-and-projects"></a>Soluzioni e progetti
 
-Le istanze di MSBuild possono essere costituite da un progetto o da molti progetti come parte di una soluzione. Il file di soluzione non è un file XML di MSBuild, ma viene interpretato da MSBuild per conoscerli tutti i progetti che devono essere compilati per le impostazioni di configurazione e piattaforma specificate. Quando MSBuild elabora questo input XML, viene definito compilazione della soluzione. Dispone di alcuni punti estensibili che consentono di eseguire un elemento a ogni compilazione della soluzione, ma poiché questa build è un'esecuzione separata dalle compilazioni di singoli progetti, nessuna impostazione delle proprietà o delle definizioni di destinazione della compilazione della soluzione è pertinente per ogni compilazione di progetto.
+MSBuild istanze possono essere costituite da un progetto o da più progetti come parte di una soluzione. Il file della soluzione non è un file XML MSBuild, ma MSBuild lo interpreta per conoscere tutti i progetti che devono essere compilati per la configurazione e le impostazioni della piattaforma fornite. Quando MSBuild elabora questo input XML, viene definito compilazione della soluzione. Include alcuni punti estendibili che consentono di eseguire qualcosa a ogni compilazione della soluzione, ma poiché questa compilazione è un'esecuzione separata dalle singole compilazioni di progetto, nessuna impostazione delle proprietà o delle definizioni di destinazione dalla compilazione della soluzione è rilevante per ogni compilazione del progetto.
 
-Per informazioni su come estendere la compilazione della soluzione, vedere [personalizzare la compilazione della soluzione](customize-your-build.md#customize-the-solution-build).
+Per informazioni su come estendere la compilazione della soluzione, vedere [Personalizzare la compilazione della soluzione.](customize-your-build.md#customize-the-solution-build)
 
-### <a name="visual-studio-builds-vs-msbuildexe-builds"></a>Compilazioni di Visual Studio e MSBuild.exe compilazioni
+### <a name="visual-studio-builds-vs-msbuildexe-builds"></a>Visual Studio compilazioni e MSBuild.exe compilazioni
 
-Esistono differenze significative tra il momento in cui i progetti vengono compilati in Visual Studio e quando si richiama direttamente MSBuild, tramite il file eseguibile di MSBuild o quando si usa il modello a oggetti MSBuild per avviare una compilazione. Visual Studio gestisce l'ordine di compilazione del progetto per le compilazioni di Visual Studio. chiama solo MSBuild a livello di singolo progetto e, in questo caso, vengono impostate due proprietà booleane ( `BuildingInsideVisualStudio` , `BuildProjectReferences` ) che influiscono in modo significativo sulle operazioni eseguite da MSBuild. All'interno di ogni progetto, l'esecuzione viene eseguita allo stesso modo di quando viene richiamata tramite MSBuild, ma la differenza si verifica con i progetti a cui si fa riferimento. In MSBuild, quando i progetti a cui si fa riferimento sono obbligatori, viene effettivamente eseguita una compilazione. ovvero esegue attività e strumenti e genera l'output. Quando una compilazione di Visual Studio trova un progetto a cui si fa riferimento, MSBuild restituisce solo gli output previsti dal progetto a cui si fa riferimento. consente a Visual Studio di controllare la compilazione degli altri progetti. In Visual Studio viene determinato l'ordine di compilazione e le chiamate a MSBuild separatamente (in base alle esigenze), completamente sotto il controllo di Visual Studio.
+Esistono alcune differenze significative tra quando i progetti vengono compilati in Visual Studio e quando si richiama direttamente MSBuild, tramite l'eseguibile MSBuild o quando si usa il modello a oggetti MSBuild per avviare una compilazione. Visual Studio gestisce l'ordine di compilazione del progetto per Visual Studio compilazioni; chiama solo MSBuild a livello di singolo progetto e, quando lo fa, vengono impostate due proprietà booleane ( , ) che influiscono in modo significativo sulle `BuildingInsideVisualStudio` `BuildProjectReferences` MSBuild. All'interno di ogni progetto, l'esecuzione avviene come quando viene richiamata tramite MSBuild, ma la differenza si verifica con i progetti a cui si fa riferimento. In MSBuild, quando sono necessari progetti a cui si fa riferimento, viene effettivamente eseguita una compilazione. in altre parti, esegue attività e strumenti e genera l'output. Quando una Visual Studio compilazione trova un progetto a cui si fa riferimento, MSBuild solo gli output previsti dal progetto a cui si fa riferimento; consente Visual Studio la compilazione di questi altri progetti. Visual Studio determina l'ordine di compilazione e chiama in MSBuild separatamente (in base alle esigenze), il tutto completamente sotto Visual Studio controllo dell'utente.
 
-Un'altra differenza si verifica quando MSBuild viene richiamato con un file di soluzione, MSBuild analizza il file di soluzione, crea un file di input XML standard, lo valuta e lo esegue come progetto. La compilazione della soluzione viene eseguita prima di qualsiasi progetto. Quando si esegue la compilazione da Visual Studio, non si verifica alcuna situazione. MSBuild non visualizza mai il file della soluzione. Di conseguenza, la personalizzazione della compilazione della soluzione (usando *before). SolutionName. sln. targets* e *after. SolutionName. sln. targets*) si applica solo ai MSBuild.exe o basati sul modello a oggetti, non sulle compilazioni di Visual Studio.
+Un'altra differenza si verifica quando MSBuild viene richiamato con un file di soluzione, MSBuild analizza il file della soluzione, crea un file di input XML standard, lo valuta ed esegue come progetto. La compilazione della soluzione viene eseguita prima di qualsiasi progetto. Quando si compila da Visual Studio, non si verifica nulla. MSBuild il file di soluzione non viene mai visualizzato. Di conseguenza, la personalizzazione della compilazione della soluzione (usando *in precedenza. SolutionName.sln.targets e* *dopo. SolutionName.sln.targets*) si applica solo MSBuild.exe o al modello a oggetti, non Visual Studio compilazioni.
 
 ### <a name="project-sdks"></a>SDK per i progetti
 
-La funzionalità SDK per i file di progetto MSBuild è relativamente nuova. Prima di questa modifica, i file di progetto importavano in modo esplicito i file *. targets* e *. props* che definiscono il processo di compilazione per un determinato tipo di progetto.
+La funzionalità SDK per i MSBuild di progetto è relativamente nuova. Prima di questa modifica, i file di progetto importavano in modo esplicito i file con estensione *targets* e *props* che hanno definito il processo di compilazione per un particolare tipo di progetto.
 
-I progetti .NET Core importano la versione di .NET SDK appropriata. Vedere Panoramica, [SDK del progetto .NET Core](/dotnet/core/project-sdk/overview)e riferimento alle [Proprietà](/dotnet/core/project-sdk/msbuild-props).
+I progetti .NET Core importano la versione di .NET SDK appropriata. Vedere la panoramica, [GLI SDK del progetto .NET Core](/dotnet/core/project-sdk/overview)e il riferimento alle [proprietà](/dotnet/core/project-sdk/msbuild-props).
 
 ## <a name="evaluation-phase"></a>Fase di valutazione
 
-In questa sezione viene illustrato il modo in cui questi file di input vengono elaborati e analizzati per produrre oggetti in memoria che determinano gli elementi che verranno compilati.
+Questa sezione illustra come questi file di input vengono elaborati e analizzati per produrre oggetti in memoria che determinano cosa verrà compilato.
 
-Lo scopo della fase di valutazione è creare le strutture degli oggetti in memoria in base ai file XML di input e all'ambiente locale. La fase di valutazione è costituita da sei passaggi che elaborano i file di input, ad esempio i file XML del progetto o, e i file XML importati, in genere denominati file con *estensione Props* o *targets* , a seconda che impostino principalmente proprietà o definiscano le destinazioni di compilazione. Ogni passaggio compila una parte degli oggetti in memoria che vengono successivamente utilizzati nella fase di esecuzione per compilare i progetti, ma durante la fase di valutazione non si verificano azioni di compilazione effettive. All'interno di ogni passaggio, gli elementi vengono elaborati nell'ordine in cui vengono visualizzati.
+Lo scopo della fase di valutazione è creare le strutture degli oggetti in memoria in base ai file XML di input e all'ambiente locale. La fase di valutazione è costituita da sei passaggi che elaborano i file di input, ad esempio i file XML del progetto o , e i file XML importati, denominati in genere come file con estensione *props* o *targets,* a seconda che si osezionino principalmente proprietà o definino destinazioni di compilazione. Ogni passaggio compila una parte degli oggetti in memoria usati successivamente nella fase di esecuzione per compilare i progetti, ma non vengono eseguite azioni di compilazione effettive durante la fase di valutazione. All'interno di ogni passaggio, gli elementi vengono elaborati nell'ordine in cui vengono visualizzati.
 
-I passaggi della fase di valutazione sono i seguenti:
+I passaggi nella fase di valutazione sono i seguenti:
 
-- Valutazione delle variabili di ambiente
+- Valutare le variabili di ambiente
 - Valutare le importazioni e le proprietà
 - Valutare le definizioni degli elementi
-- Valuta elementi
-- Valuta elementi [UsingTask](usingtask-element-msbuild.md)
-- Valuta destinazioni
+- Valutare gli elementi
+- Valutare [gli elementi UsingTask](usingtask-element-msbuild.md)
+- Valutare le destinazioni
 
-L'ordine di questi passaggi presenta implicazioni significative ed è importante da tenere presente quando si Personalizza il file di progetto. Vedere l' [ordine di valutazione delle proprietà e degli elementi](comparing-properties-and-items.md#property-and-item-evaluation-order).
+L'ordine di questi passaggi ha implicazioni significative ed è importante sapere quando si personalizza il file di progetto. Vedere [Ordine di valutazione delle proprietà e degli elementi](comparing-properties-and-items.md#property-and-item-evaluation-order).
 
-### <a name="evaluate-environment-variables"></a>Valutazione delle variabili di ambiente
+### <a name="evaluate-environment-variables"></a>Valutare le variabili di ambiente
 
-In questa fase, le variabili di ambiente vengono usate per impostare proprietà equivalenti. La variabile di ambiente PATH, ad esempio, viene resa disponibile come proprietà `$(PATH)` . Quando viene eseguito dalla riga di comando o da uno script, l'ambiente di comando viene usato come di consueto e, quando viene eseguito da Visual Studio, viene usato l'ambiente attivo quando viene avviato Visual Studio.
+In questa fase, le variabili di ambiente vengono usate per impostare proprietà equivalenti. Ad esempio, la variabile di ambiente PATH viene resa disponibile come proprietà `$(PATH)` . Quando viene eseguito dalla riga di comando o da uno script, l'ambiente dei comandi viene usato come di consueto e, quando viene eseguito da Visual Studio, viene usato l'ambiente attivo all'avvio Visual Studio comando.
 
 ### <a name="evaluate-imports-and-properties"></a>Valutare le importazioni e le proprietà
 
-In questa fase viene letto l'intero codice XML di input, inclusi i file di progetto e l'intera catena di importazioni. MSBuild crea una struttura XML in memoria che rappresenta l'XML del progetto e tutti i file importati. Al momento, le proprietà non incluse nelle destinazioni vengono valutate e impostate.
+In questa fase viene letto l'intero codice XML di input, inclusi i file di progetto e l'intera catena di importazioni. MSBuild crea una struttura XML in memoria che rappresenta il codice XML del progetto e tutti i file importati. Al momento, le proprietà non presenti nelle destinazioni vengono valutate e impostate.
 
-Come conseguenza di MSBuild che legge tutti i file di input XML all'inizio del processo, qualsiasi modifica apportata a tali input durante il processo di compilazione non influisce sulla compilazione corrente.
+Come conseguenza della MSBuild tutti i file di input XML nelle prime fasi del processo, eventuali modifiche a tali input durante il processo di compilazione non influiscono sulla compilazione corrente.
 
-Le proprietà esterne a qualsiasi destinazione sono gestite in modo diverso rispetto alle proprietà all'interno di destinazioni. In questa fase vengono valutate solo le proprietà definite all'esterno di qualsiasi destinazione.
+Le proprietà all'esterno di qualsiasi destinazione vengono gestite in modo diverso dalle proprietà all'interno delle destinazioni. In questa fase vengono valutate solo le proprietà definite all'esterno di qualsiasi destinazione.
 
-Poiché le proprietà vengono elaborate in ordine nel passaggio delle proprietà, una proprietà in un punto qualsiasi dell'input può accedere ai valori delle proprietà visualizzati in precedenza nell'input, ma non alle proprietà visualizzate in un secondo momento.
+Poiché le proprietà vengono elaborate in ordine nel passaggio delle proprietà, una proprietà in qualsiasi punto dell'input può accedere ai valori delle proprietà visualizzati in precedenza nell'input, ma non alle proprietà visualizzate in un secondo momento.
 
-Poiché le proprietà vengono elaborate prima della valutazione degli elementi, non è possibile accedere al valore di qualsiasi elemento durante una parte del passaggio delle proprietà. 
+Poiché le proprietà vengono elaborate prima della valutazione degli elementi, non è possibile accedere al valore di alcun elemento durante il passaggio delle proprietà. 
 
 ### <a name="evaluate-item-definitions"></a>Valutare le definizioni degli elementi
 
-In questa fase, le [definizioni degli elementi](item-definitions.md) vengono interpretate e viene creata una rappresentazione in memoria di queste definizioni.
+In questa fase vengono [interpretate le](item-definitions.md) definizioni degli elementi e viene creata una rappresentazione in memoria di queste definizioni.
 
-### <a name="evaluate-items"></a>Valuta elementi
+### <a name="evaluate-items"></a>Valutare gli elementi
 
-Gli elementi definiti all'interno di una destinazione vengono gestiti in modo diverso dagli elementi esterni a qualsiasi destinazione. In questa fase vengono elaborati gli elementi esterni a qualsiasi destinazione e i relativi metadati associati.  I metadati impostati per definizione di elemento vengono sottoposti a override dall'impostazione dei metadati per gli elementi. Poiché gli elementi vengono elaborati nell'ordine in cui sono visualizzati, è possibile fare riferimento a elementi definiti in precedenza, ma non a quelli visualizzati in un secondo momento. Poiché gli elementi passano dopo il passaggio delle proprietà, gli elementi possono accedere a qualsiasi proprietà se definito al di fuori di tutte le destinazioni, indipendentemente dal fatto che la definizione di proprietà venga visualizzata in un secondo momento.
+Gli elementi definiti all'interno di una destinazione vengono gestiti in modo diverso dagli elementi esterni a qualsiasi destinazione. In questa fase vengono elaborati gli elementi esterni a qualsiasi destinazione e i relativi metadati associati.  I metadati impostati dalle definizioni di elemento vengono sostituiti dall'impostazione dei metadati sugli elementi. Poiché gli elementi vengono elaborati nell'ordine in cui vengono visualizzati, è possibile fare riferimento agli elementi definiti in precedenza, ma non a quelli visualizzati in un secondo momento. Poiché gli elementi vengono passati dopo il passaggio delle proprietà, gli elementi possono accedere a qualsiasi proprietà, se definita all'esterno di qualsiasi destinazione, indipendentemente dal fatto che la definizione della proprietà venga visualizzata in un secondo momento.
 
-### <a name="evaluate-usingtask-elements"></a>Valuta `UsingTask` elementi
+### <a name="evaluate-usingtask-elements"></a>Valutare `UsingTask` gli elementi
 
-In questa fase vengono letti gli elementi [UsingTask](usingtask-element-msbuild.md) e le attività vengono dichiarate per un uso successivo durante la fase di esecuzione.
+In questa fase vengono letti [gli elementi UsingTask](usingtask-element-msbuild.md) e le attività vengono dichiarate per un uso successivo durante la fase di esecuzione.
 
-### <a name="evaluate-targets"></a>Valuta destinazioni
+### <a name="evaluate-targets"></a>Valutare le destinazioni
 
-In questa fase, tutte le strutture degli oggetti di destinazione vengono create in memoria, in preparazione per l'esecuzione. Non si verifica alcuna esecuzione effettiva. 
+In questa fase, tutte le strutture di oggetti di destinazione vengono create in memoria, in preparazione dell'esecuzione. Non viene esere alcuna esecuzione effettiva. 
 
 ## <a name="execution-phase"></a>Fase di esecuzione
 
-Nella fase di esecuzione, le destinazioni vengono ordinate ed eseguite e tutte le attività vengono eseguite. Prima di tutto, le proprietà e gli elementi definiti all'interno di destinazioni vengono valutati insieme in una singola fase nell'ordine in cui sono visualizzati. L'ordine di elaborazione è in particolare diverso da quello in cui vengono elaborate le proprietà e gli elementi che non sono in una destinazione: tutte le proprietà e quindi tutti gli elementi, in sessioni separate. Le modifiche apportate alle proprietà e agli elementi all'interno di una destinazione possono essere osservate dopo la destinazione in cui sono state modificate.
+Nella fase di esecuzione, le destinazioni vengono ordinate ed eseguite e vengono eseguite tutte le attività. Ma prima di tutto, le proprietà e gli elementi definiti all'interno delle destinazioni vengono valutati insieme in una singola fase nell'ordine in cui appaiono. L'ordine di elaborazione è notevolmente diverso dal modo in cui vengono elaborate le proprietà e gli elementi non presenti in una destinazione: prima tutte le proprietà e quindi tutti gli elementi, in passaggi separati. Le modifiche alle proprietà e agli elementi all'interno di una destinazione possono essere osservate dopo la destinazione in cui sono state modificate.
 
 ### <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 
-In un singolo progetto le destinazioni vengono eseguite in modo seriale. Il problema centrale è la modalità di determinazione dell'ordine di compilazione di tutti gli elementi in, in modo che le dipendenze vengano utilizzate per compilare le destinazioni nell'ordine corretto.  
+In un singolo progetto, le destinazioni vengono eseguite in modo seriale. Il problema centrale è come determinare l'ordine in cui compilare tutti gli elementi in modo che le dipendenze siano usate per compilare le destinazioni nell'ordine corretto.  
 
-L'ordine di compilazione di destinazione è determinato dall'utilizzo degli `BeforeTargets` `DependsOnTargets` attributi, e `AfterTargets` in ogni destinazione. L'ordine delle destinazioni successive può essere influenzato durante l'esecuzione di una destinazione precedente se la destinazione precedente modifica una proprietà a cui si fa riferimento in questi attributi.
+L'ordine di compilazione di destinazione è determinato dall'uso degli attributi `BeforeTargets` , e in ogni `DependsOnTargets` `AfterTargets` destinazione. L'ordine delle destinazioni successive può essere influenzato durante l'esecuzione di una destinazione precedente se la destinazione precedente modifica una proprietà a cui viene fatto riferimento in questi attributi.
 
-Le regole per l'ordinamento sono descritte in [determinare l'ordine di compilazione di destinazione](target-build-order.md#determine-the-target-build-order). Il processo è determinato da una struttura dello stack contenente le destinazioni da compilare. La destinazione all'inizio di questa attività avvia l'esecuzione e, se dipende da qualsiasi altra, le destinazioni vengono inserite nella parte superiore dello stack e avviano l'esecuzione.  Quando è presente una destinazione senza dipendenze, viene eseguita fino al completamento e la destinazione padre riprende.
+Le regole per l'ordinamento sono descritte in [Determinare l'ordine di compilazione di destinazione.](target-build-order.md#determine-the-target-build-order) Il processo è determinato da una struttura dello stack contenente le destinazioni da compilare. La destinazione all'inizio di questa attività avvia l'esecuzione e, se dipende da qualsiasi altra operazione, tali destinazioni vengono inserite nella parte superiore dello stack e iniziano l'esecuzione.  Quando è presente una destinazione senza dipendenze, viene eseguita fino al completamento e la destinazione padre riprende.
 
 ### <a name="project-references"></a>Riferimenti al progetto
 
-MSBuild può assumere due percorsi di codice, quello normale, qui descritto e l'opzione Graph descritta nella sezione successiva.
+Esistono due percorsi di codice che MSBuild, quello normale, descritto qui, e l'opzione graph descritta nella sezione successiva.
 
-I singoli progetti specificano la dipendenza da altri progetti tramite `ProjectReference` gli elementi. Quando inizia la compilazione di un progetto nella parte superiore dello stack, raggiunge il punto in cui `ResolveProjectReferences` viene eseguita la destinazione, una destinazione standard definita nei file di destinazione comuni.
+I singoli progetti specificano la dipendenza da altri progetti tramite `ProjectReference` elementi. Quando un progetto nella parte superiore dello stack inizia a compilare, raggiunge il punto in cui viene eseguita la destinazione, una destinazione standard definita nei `ResolveProjectReferences` file di destinazione comuni.
 
-`ResolveProjectReferences` richiama l'attività MSBuild con gli input degli `ProjectReference` elementi per ottenere gli output. Gli `ProjectReference` elementi vengono trasformati in elementi locali, ad esempio `Reference` . La fase di esecuzione di MSBuild per il progetto corrente viene sospesa mentre la fase di esecuzione inizia a elaborare il progetto a cui si fa riferimento (la fase di valutazione viene eseguita prima in base alle esigenze). Il progetto a cui si fa riferimento viene compilato solo dopo aver iniziato a compilare il progetto dipendente, quindi viene creato un albero di progetti che compilano.
+`ResolveProjectReferences`richiama l'MSBuild attività con gli input degli `ProjectReference` elementi per ottenere gli output. Gli `ProjectReference` elementi vengono trasformati in elementi locali, ad esempio `Reference` . La MSBuild di esecuzione per il progetto corrente viene sospesa mentre la fase di esecuzione inizia a elaborare il progetto a cui si fa riferimento (la fase di valutazione viene eseguita per prima in base alle esigenze). Il progetto a cui si fa riferimento viene compilato solo dopo aver avviato la compilazione del progetto dipendente, quindi viene creato un albero di progetti di compilazione.
 
-Visual Studio consente di creare dipendenze del progetto nei file di soluzione (con estensione sln). Le dipendenze vengono specificate nel file della soluzione e vengono rispettate solo quando si compila una soluzione o quando si compila in Visual Studio. Se si compila un singolo progetto, questo tipo di dipendenza viene ignorato. I riferimenti alla soluzione vengono trasformati da MSBuild in `ProjectReference` elementi e successivamente vengono trattati nello stesso modo.
+Visual Studio consente di creare dipendenze di progetto nei file di soluzione (con estensione sln). Le dipendenze vengono specificate nel file di soluzione e vengono rispettate solo durante la compilazione di una soluzione o durante la compilazione all'interno Visual Studio. Se si compila un singolo progetto, questo tipo di dipendenza viene ignorato. I riferimenti alla soluzione vengono trasformati MSBuild in elementi e successivamente `ProjectReference` vengono trattati nello stesso modo.
 
-### <a name="graph-option"></a>Opzione Graph
+### <a name="graph-option"></a>Graph opzione
 
-Se si specifica l'opzione di compilazione Graph ( `-graphBuild` o `-graph` ), `ProjectReference` diventa un concetto di prima classe utilizzato da MSBuild. MSBuild analizzerà tutti i progetti e creerà il grafico dell'ordine di compilazione, un grafico delle dipendenze effettivo dei progetti, che viene quindi attraversato per determinare l'ordine di compilazione. Come per le destinazioni nei singoli progetti, MSBuild assicura che i progetti a cui si fa riferimento vengano compilati dopo i progetti da cui dipendono.
+Se si specifica l'opzione di compilazione del grafo ( o ), diventa un concetto di prima classe `-graphBuild` `-graph` usato `ProjectReference` MSBuild. MSBuild analizza tutti i progetti e costruisce il grafico dell'ordine di compilazione, un grafico delle dipendenze effettivo dei progetti, che viene quindi attraversato per determinare l'ordine di compilazione. Come per le destinazioni nei singoli progetti, MSBuild che i progetti di riferimento siano compilati dopo i progetti da cui dipendono.
 
 ## <a name="parallel-execution"></a>Esecuzione parallela
 
-Se si usa il supporto multiprocessore ( `-maxCpuCount` o `-m` Switch), MSBuild crea nodi, ovvero processi MSBuild che usano i core CPU disponibili. Ogni progetto viene inviato a un nodo disponibile. All'interno di un nodo, le compilazioni di singoli progetti vengono eseguite in modo seriale
+Se si usa il supporto multiprocessore (o switch), MSBuild crea nodi, che MSBuild processi che usano `-maxCpuCount` `-m` i core CPU disponibili. Ogni progetto viene inviato a un nodo disponibile. All'interno di un nodo, le singole compilazioni di progetto vengono eseguite in modo seriale.
 
-Le attività possono essere abilitate per l'esecuzione parallela impostando una variabile booleana <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> , che viene impostata in base al valore della `$(BuildInParallel)` Proprietà in MSBuild. Per le attività abilitate per l'esecuzione parallela, un'utilità di pianificazione del lavoro gestisce i nodi e assegna il lavoro ai nodi.
+Le attività possono essere abilitate per l'esecuzione parallela impostando una variabile booleana , che viene impostata in base al valore <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> `$(BuildInParallel)` della proprietà in MSBuild. Per le attività abilitate per l'esecuzione parallela, un'utilità di pianificazione del lavoro gestisce i nodi e assegna il lavoro ai nodi.
 
-Vedere [compilazione di più progetti in parallelo con MSBuild](building-multiple-projects-in-parallel-with-msbuild.md)
+Vedere [Compilazione di più progetti in parallelo con MSBuild](building-multiple-projects-in-parallel-with-msbuild.md)
 
 ## <a name="standard-imports"></a>Importazioni standard
 
-*Microsoft. Common. props* e *Microsoft. Common. targets* sono entrambi importati dai file di progetto .NET (in modo esplicito o implicito nei progetti in stile SDK) e si trovano nella cartella *MSBuild\Current\bin* in un'installazione di Visual Studio. I progetti C++ hanno una propria gerarchia di importazioni. vedere elementi [interni MSBuild per progetti C++](/cpp/build/reference/msbuild-visual-cpp-overview).
+*Microsoft.Common.props* e *Microsoft.Common.targets* vengono entrambi importati dai file di progetto .NET (in modo esplicito o implicito nei progetti di tipo SDK) e si trovano nella cartella *MSBuild\Current\bin* in un'installazione Visual Studio. I progetti C++ hanno una propria gerarchia di importazioni. Vedere [MSBuild internals per i progetti C++.](/cpp/build/reference/msbuild-visual-cpp-overview)
 
-Il file *Microsoft. Common. props* imposta le impostazioni predefinite di cui è possibile eseguire l'override. Viene importato (in modo esplicito o implicito) all'inizio di un file di progetto. In questo modo, le impostazioni del progetto vengono visualizzate dopo le impostazioni predefinite, in modo da eseguirne l'override.
+Il file *Microsoft.Common.props* imposta le impostazioni predefinite di cui è possibile eseguire l'override. Viene importato (in modo esplicito o implicito) all'inizio di un file di progetto. In questo modo, le impostazioni del progetto vengono visualizzate dopo le impostazioni predefinite, in modo da eseguirne l'override.
 
-Il file *Microsoft. Common. targets* e i file di destinazione importati definiscono il processo di compilazione standard per i progetti .NET. Fornisce anche punti di estensione che è possibile usare per personalizzare la compilazione.
+Il file *Microsoft.Common.targets* e i file di destinazione importati definiscono il processo di compilazione standard per i progetti .NET. Fornisce anche punti di estensione che è possibile usare per personalizzare la compilazione.
 
-Nell'implementazione *Microsoft. Common. targets* è un thin wrapper che importa *Microsoft. Common. CurrentVersion. targets*. Questo file contiene le impostazioni per le proprietà standard e definisce le destinazioni effettive che definiscono il processo di compilazione. La `Build` destinazione è definita qui, ma in realtà è vuota. Tuttavia, la `Build` destinazione contiene l' `DependsOnTargets` attributo che specifica le singole destinazioni che costituiscono i passaggi di compilazione effettivi, ovvero `BeforeBuild` , `CoreBuild` e `AfterBuild` . La `Build` destinazione è definita come segue:
+Nell'implementazione *Microsoft.Common.targets è* un thin wrapper che importa *Microsoft.Common.CurrentVersion.targets.* Questo file contiene le impostazioni per le proprietà standard e definisce le destinazioni effettive che definiscono il processo di compilazione. La `Build` destinazione è definita qui, ma è effettivamente vuota. Tuttavia, `Build` la destinazione contiene l'attributo che specifica le singole destinazioni che costituiscono le istruzioni di compilazione effettive, ovvero `DependsOnTargets` `BeforeBuild` , e `CoreBuild` `AfterBuild` . La `Build` destinazione è definita come segue:
 
 ```xml
   <PropertyGroup>
@@ -157,7 +158,7 @@ Nell'implementazione *Microsoft. Common. targets* è un thin wrapper che importa
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` e `AfterBuild` sono punti di estensione. Sono vuoti nel file *Microsoft. Common. CurrentVersion. targets* , ma i progetti possono fornire le proprie `BeforeBuild` destinazioni e le proprie `AfterBuild` destinazioni con le attività che devono essere eseguite prima o dopo il processo di compilazione principale. `AfterBuild` viene eseguito prima della destinazione no-op, `Build` , perché `AfterBuild` viene visualizzato nell' `DependsOnTargets` attributo nella `Build` destinazione, ma si verifica dopo `CoreBuild` .
+`BeforeBuild` e `AfterBuild` sono punti di estensione. Sono vuoti nel file *Microsoft.Common.CurrentVersion.targets,* ma i progetti possono fornire le proprie destinazioni e con attività che devono essere eseguite prima o dopo il processo di `BeforeBuild` `AfterBuild` compilazione principale. `AfterBuild` viene eseguito prima della destinazione no-op, , perché viene visualizzato nell'attributo nella `Build` `AfterBuild` `DependsOnTargets` `Build` destinazione, ma si verifica dopo `CoreBuild` .
 
 La `CoreBuild` destinazione contiene le chiamate agli strumenti di compilazione, come indicato di seguito:
 
@@ -197,48 +198,48 @@ Nella tabella seguente vengono descritte queste destinazioni. alcune destinazion
 
 | Destinazione | Descrizione |
 |--------|-------------|
-| BuildOnlySettings | Impostazioni solo per le compilazioni reali, non per quando MSBuild viene richiamato durante il caricamento del progetto da Visual Studio. |
+| BuildOnlySettings | Impostazioni solo per le compilazioni reali, non per quando MSBuild viene richiamato al caricamento del progetto da Visual Studio. |
 | PrepareForBuild | Preparare i prerequisiti per la compilazione |
-| PreBuildEvent | Punto di estensione per i progetti che definiscono le attività da eseguire prima della compilazione |
-| ResolveProjectReferences | Analizzare le dipendenze del progetto e creare progetti a cui si fa riferimento |
+| PreBuildEvent | Punto di estensione per i progetti per definire le attività da eseguire prima della compilazione |
+| ResolveProjectReferences | Analizzare le dipendenze del progetto e compilare i progetti a cui si fa riferimento |
 | ResolveAssemblyReferences| Individuare gli assembly a cui si fa riferimento. |
-| ResolveReferences | È costituito da `ResolveProjectReferences` e `ResolveAssemblyReferences` per individuare tutte le dipendenze |
-| PrepareResources | Elabora file di risorse |
-| ResolveKeySource| Risolvere la chiave con nome sicuro usata per firmare l'assembly e il certificato usato per firmare i manifesti [ClickOnce](../deployment/clickonce-security-and-deployment.md) . |
+| ResolveReferences | È costituito `ResolveProjectReferences` da e per trovare tutte le `ResolveAssemblyReferences` dipendenze |
+| PrepareResources | Elaborare i file di risorse |
+| Resolvekeysource| Risolvere la chiave con nome sicuro usata per firmare [](../deployment/clickonce-security-and-deployment.md) l'assembly e il certificato usato per firmare ClickOnce manifesti. |
 | Compilazione | Richiama il compilatore |
-| ExportWindowsMDFile | Genera un file [WinMD](/uwp/winrt-cref/winmd-files) dai file WinMDModule generati dal compilatore. |
-| UnmanagedUnregistration | Rimuovere/pulire le voci del registro di sistema di [interoperabilità COM](/dotnet/standard/native-interop/cominterop) da una compilazione precedente |
-| GenerateSerializationAssemblies | Generare un assembly di serializzazione XML utilizzando [sgen.exe](/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe).|
+| ExportWindowsMDFile | Generare un file [WinMD](/uwp/winrt-cref/winmd-files) dai file WinMDModule generati dal compilatore. |
+| UnmanagedUnregistration | Rimuovere/pulire le voci [del Registro di](/dotnet/standard/native-interop/cominterop) sistema dell'interoperabilità COM da una build precedente |
+| GenerateSerializationAssemblies | Generare un assembly di serializzazione XML [ usandosgen.exe](/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe).|
 | CreateSatelliteAssemblies | Creare un assembly satellite per ogni lingua univoca nelle risorse. |
-| Genera manifesti | Genera manifesti di applicazione e distribuzione [ClickOnce](../deployment/clickonce-security-and-deployment.md) o un manifesto nativo. |
-| GetTargetPath | Restituisce un elemento contenente il prodotto di compilazione (eseguibile o assembly) per il progetto, con i metadati. |
-| PrepareForRun | Copiare gli output di compilazione nella directory finale se sono stati modificati. |
-| UnmanagedRegistration | Imposta voci del registro di sistema per l' [interoperabilità COM](/dotnet/standard/native-interop/cominterop) |
-| IncrementalClean | Rimuovere i file che sono stati generati in una compilazione precedente ma che non sono stati generati nella compilazione corrente. Questa operazione è necessaria per eseguire `Clean` operazioni nelle compilazioni incrementali. |
-| PostBuildEvent | Punto di estensione per i progetti che definiscono le attività da eseguire dopo la compilazione |
+| Generare manifesti | Genera [ClickOnce](../deployment/clickonce-security-and-deployment.md) manifesti di applicazione e distribuzione o un manifesto nativo. |
+| GetTargetPath | Restituisce un elemento contenente il prodotto di compilazione (eseguibile o assembly) per questo progetto, con metadati. |
+| PrepareForRun | Copiare gli output di compilazione nella directory finale, se sono stati modificati. |
+| UnmanagedRegistration | Impostare le voci del Registro di sistema per [l'interoperabilità COM](/dotnet/standard/native-interop/cominterop) |
+| IncrementalClean | Rimuovere i file prodotti in una build precedente ma che non sono stati prodotti nella build corrente. Questa operazione è necessaria per `Clean` eseguire operazioni nelle compilazioni incrementali. |
+| PostBuildEvent | Punto di estensione per i progetti per definire le attività da eseguire dopo la compilazione |
 
-Molte delle destinazioni della tabella precedente si trovano in importazioni specifiche del linguaggio, ad esempio *Microsoft. CSharp. targets*. Questo file definisce i passaggi nel processo di compilazione standard specifico per i progetti C# .NET. Ad esempio, contiene la `Compile` destinazione che chiama effettivamente il compilatore C#.
+Molte delle destinazioni nella tabella precedente si trovano nelle importazioni specifiche del linguaggio, ad esempio *Microsoft.CSharp.targets.* Questo file definisce i passaggi del processo di compilazione standard specifico per i progetti .NET C#. Ad esempio, contiene la destinazione `Compile` che chiama effettivamente il compilatore C#.
 
 ## <a name="user-configurable-imports"></a>Importazioni configurabili dall'utente
 
 Oltre alle importazioni standard, è possibile aggiungere diverse importazioni per personalizzare il processo di compilazione.
 
-- *Directory. Build. props*
+- *Directory.Build.props*
 - *Directory.Build.targets*
 
-Questi file vengono letti dalle importazioni standard per tutti i progetti in qualsiasi sottocartella. Questo è in genere a livello di soluzione per le impostazioni per controllare tutti i progetti nella soluzione, ma potrebbe anche essere più alto nel file System, fino alla radice dell'unità.
+Questi file vengono letti dalle importazioni standard per tutti i progetti in qualsiasi sottocartella in essi contenuti. Questo è in genere a livello di soluzione per le impostazioni per controllare tutti i progetti nella soluzione, ma potrebbe anche essere più in alto nel file system, fino alla radice dell'unità.
 
-Il file *Directory. Build. props* viene importato da *Microsoft. Common. props*, quindi le proprietà definite in essi sono disponibili nel file di progetto. Possono essere ridefiniti nel file di progetto per personalizzare i valori in base al progetto. Il file *Directory. Build. targets* viene letto dopo il file di progetto. Contiene in genere le destinazioni, ma qui è anche possibile definire le proprietà che non si vuole ridefinire i singoli progetti.
+Il file *Directory.Build.props* viene importato da *Microsoft.Common.props,* quindi le proprietà definite in tale file sono disponibili nel file di progetto. Possono essere ridefiniti nel file di progetto per personalizzare i valori in base al progetto. Il file *Directory.Build.targets* viene letto dopo il file di progetto. In genere contiene destinazioni, ma qui è anche possibile definire proprietà che non si vuole ridefinire per i singoli progetti.
 
 ## <a name="customizations-in-a-project-file"></a>Personalizzazioni in un file di progetto
 
-Visual Studio aggiorna i file di progetto quando si apportano modifiche in **Esplora soluzioni**, nella finestra **Proprietà** o nelle **proprietà del progetto**, ma è anche possibile apportare modifiche personalizzate modificando direttamente il file di progetto.
+Visual Studio i file di progetto quando si apportano modifiche  **in Esplora soluzioni**, nella finestra Proprietà o in Proprietà di Project , ma è anche possibile **apportare** modifiche personalizzate modificando direttamente il file di progetto.
 
-Molti comportamenti di compilazione possono essere configurati impostando le proprietà MSBuild nel file di progetto per le impostazioni locali di un progetto o come indicato nella sezione precedente, creando un file *Directory. Build. props* per impostare le proprietà a livello globale per intere cartelle di progetti e soluzioni. Per le compilazioni ad hoc nella riga di comando o negli script, è anche possibile usare l' `/p` opzione nella riga di comando per impostare le proprietà di una chiamata specifica di MSBuild. Per informazioni sulle proprietà che è possibile impostare, vedere [Proprietà comuni del progetto MSBuild](common-msbuild-project-properties.md) .
+Molti comportamenti di compilazione possono essere configurati impostando le proprietà di MSBuild nel file di progetto per le impostazioni locali di un progetto oppure, come indicato nella sezione precedente, creando un file *Directory.Build.props* per impostare le proprietà a livello globale per intere cartelle di progetti e soluzioni. Per le compilazioni ad hoc nella riga di comando o negli script, è anche possibile usare l'opzione nella riga di comando per impostare le proprietà per una particolare chiamata `/p` di MSBuild. Per [informazioni sulle proprietà che è possibile impostare,](common-msbuild-project-properties.md) vedere Common MSBuild project properties (Proprietà del progetto common MSBuild).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Il processo MSBuild presenta diversi altri punti di estensione diversi da quelli descritti qui. Vedere [personalizzare la compilazione](customize-your-build.md). e [come estendere il processo di compilazione di Visual Studio](how-to-extend-the-visual-studio-build-process.md).
+Il MSBuild ha diversi altri punti di estensione diversi da quelli descritti qui. Vedere [Personalizzare la compilazione.](customize-your-build.md) e [Come estendere il processo Visual Studio compilazione .](how-to-extend-the-visual-studio-build-process.md)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,20 +1,21 @@
 ---
-title: 'Microsoft Fakes: genera codice di compilazione &; convenzioni di denominazione'
-description: Informazioni sulle opzioni e sui problemi di generazione e compilazione di codice Fakes, incluse le convenzioni di denominazione per tipi, membri e parametri generati da Fakes.
+title: 'Microsoft Fakes: generare & codice di compilazione; convenzioni di denominazione'
+description: Informazioni sulle opzioni e sui problemi Fakes generazione e compilazione del codice, incluse le convenzioni di denominazione Fakes tipi, membri e parametri generati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ecba59e633bf6d456f16e6098f47719e052ac0de
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 10469a19000000720d2a11dc9b48e4f849e30f81f8952429d39beefbfb74f396
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006356"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395408"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 
@@ -25,7 +26,7 @@ Questo articolo illustra problemi e opzioni di generazione e compilazione di cod
 - Visual Studio Enterprise
 - Un progetto .NET Framework
 ::: moniker range=">=vs-2019"
-- .NET Core, .NET 5,0 e il progetto in stile SDK supportano l'anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti .NET Core e in stile SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- .NET Core, .NET 5.0 e i progetti di tipo SDK supportano l'anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti di tipo .NET Core e SDK.](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 ::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Generazione e compilazione di codice
@@ -46,7 +47,7 @@ L'esempio seguente illustra i tipi stub definiti in *FileSystem.dll*:
 
 Per limitare i tipi per i quali è necessario generare stub, è possibile impostare filtri nel file *FAKES*. È possibile aggiungere un numero illimitato di elementi Clear, Add e Remove nell'elemento StubGeneration per creare l'elenco dei tipi selezionati.
 
-Il file con *estensione Fakes* seguente, ad esempio, genera stub per i tipi negli spazi dei nomi System e System.io, ma esclude qualsiasi tipo che contiene "handle" nel sistema:
+Ad esempio, il file con estensione *fakes* seguente genera stub per i tipi negli spazi dei nomi System e System.IO, ma esclude qualsiasi tipo contenente "Handle" in System:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -128,7 +129,7 @@ Se l'assembly sottoposto a shim ha un nome sicuro e si vuole accedere ai tipi in
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Se l'assembly sottoposto a shim ha un nome sicuro, il framework Fakes firma automaticamente in modo sicuro l'assembly Fakes generato. È necessario firmare in modo sicuro l'assembly di test. Vedere [assembly con nome sicuro](/dotnet/framework/app-domains/strong-named-assemblies).
+Se l'assembly sottoposto a shim ha un nome sicuro, il framework Fakes firma automaticamente in modo sicuro l'assembly Fakes generato. È necessario firmare in modo sicuro l'assembly di test. Vedere [Assembly con nome sicuro](/dotnet/framework/app-domains/strong-named-assemblies).
 
 Il framework Fakes usa la stessa chiave per firmare tutti gli assembly generati. È pertanto possibile usare questo frammento di codice come punto di partenza per aggiungere l'attributo **InternalsVisibleTo** per l'assembly Fakes al codice dell'assembly sottoposto a shim.
 
@@ -136,7 +137,7 @@ Il framework Fakes usa la stessa chiave per firmare tutti gli assembly generati.
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-È possibile specificare una chiave pubblica diversa per l'assembly Fakes, ad esempio una chiave creata per l'assembly sottoposto a shim, specificando il percorso completo del file con *estensione snk* che contiene la chiave alternativa come valore dell' `KeyFile` attributo nell' `Fakes` \\ `Compilation` elemento del file *. Fakes* . Ad esempio:
+È possibile specificare una chiave pubblica diversa per l'assembly Fakes, ad esempio una chiave creata per l'assembly con s shimming, specificando il percorso completo del file con estensione *snk* che contiene la chiave alternativa come valore dell'attributo nell'elemento del file con estensione `KeyFile` `Fakes` \\ `Compilation` *fakes.* Esempio:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -163,7 +164,7 @@ La compilazione di assembly Fakes può comportare un aumento significativo del t
 
 Dai progetti di unit test aggiungere un riferimento agli assembly Fakes compilati che si trovano in FakesAssemblies nella cartella del progetto.
 
-1. Creare una nuova libreria di classi con la versione del runtime .NET corrispondente ai progetti di test. Verrà usato il nome Fakes.Prebuild. Rimuovere il file *Class1.cs* dal progetto, non necessario.
+1. Creare una nuova libreria di classi con la versione del runtime .NET corrispondente ai progetti di test. Verrà usato il nome Fakes.Prebuild. Rimuovere il file *class1.cs* dal progetto, non necessario.
 
 2. Aggiungere un riferimento a tutti gli assembly di sistema e di terze parti per i quali è necessario Fakes.
 
@@ -237,7 +238,7 @@ attribute of the Assembly element in the .fakes:
 
 |Se il metodo è un/una…|Esempio|Nome del metodo aggiunto|
 |-|-|-|
-|Un **Costruttore**|`.ctor`|`Constructor`|
+|Costruttore |`.ctor`|`Constructor`|
 |**Costruttore** statico|`.cctor`|`StaticConstructor`|
 |**Funzione di accesso** con nome di metodo composto da due parti separate da "_" (ad esempio getter proprietà)|*kind_name* (caso comune, ma non applicato da ECMA)|*NameKind*, dove entrambe le parti iniziano con una maiuscola e la loro posizione è stata scambiata|
 ||Getter della proprietà `Prop`|`PropGet`|
@@ -251,22 +252,22 @@ attribute of the Assembly element in the .fakes:
 > [!NOTE]
 > - **Getter e setter di indicizzatori** vengono trattati in modo analogo a quelli di proprietà. Il nome predefinito per un indicizzatore è `Item`.
 > - I nomi dei **tipi di parametro** vengono trasformati e concatenati.
-> - Il **tipo restituito** viene ignorato a meno che non esista un'ambiguità di overload. Se esiste un'ambiguità di overload, il tipo restituito viene aggiunto alla fine del nome.
+> - **Il tipo restituito** viene ignorato a meno che non sia presente un'ambiguità di overload. Se esiste un'ambiguità di overload, il tipo restituito viene aggiunto alla fine del nome.
 
 ### <a name="parameter-type-naming-conventions"></a>Convenzioni di denominazione dei tipi di parametro
 
 |Dato un|La stringa aggiunta è...|
 |-|-|
-|**Tipo**`T`|T<br /><br /> Lo spazio dei nomi, la struttura annidata e i tipi generici vengono eliminati.|
+|Tipo `T`|T<br /><br /> Lo spazio dei nomi, la struttura annidata e i tipi generici vengono eliminati.|
 |Un **parametro out**`out T`|`TOut`|
 |**Parametro Ref** `ref T`|`TRef`|
-|**Tipo di matrice**`T[]`|`TArray`|
+|Tipo **di matrice**`T[]`|`TArray`|
 |Tipo di **matrice multidimensionale**`T[ , , ]`|`T3`|
 |Tipo di **puntatore**`T*`|`TPtr`|
-|Un **tipo generico**`T<R1, ...>`|`TOfR1`|
-|**Argomento di tipo generico** `!i` di tipo`C<TType>`|`Ti`|
-|Argomento di metodo **generico** `!!i` del metodo`M<MMethod>`|`Mi`|
-|**Tipo annidato**`N.T`|Vengono aggiunti `N` e quindi `T`.|
+|Tipo **generico**`T<R1, ...>`|`TOfR1`|
+|Argomento **di tipo generico di** `!i` tipo`C<TType>`|`Ti`|
+|Argomento **di metodo generico** del `!!i` metodo`M<MMethod>`|`Mi`|
+|Tipo **annidato**`N.T`|Vengono aggiunti `N` e quindi `T`.|
 
 ### <a name="recursive-rules"></a>Regole ricorsive
 
@@ -278,4 +279,4 @@ Le regole seguenti vengono applicate in modo ricorsivo:
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [Isolamento del codice sotto test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

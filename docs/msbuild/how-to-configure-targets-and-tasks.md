@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Configurare destinazioni e attività | Microsoft Docs'
-description: Informazioni su come impostare le attività MSBuild selezionate per l'esecuzione nell'ambiente di destinazione, indipendentemente dall'ambiente del computer di sviluppo.
+description: Informazioni su come impostare le MSBuild da eseguire nell'ambiente di destinazione, indipendentemente dall'ambiente del computer di sviluppo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,18 +8,18 @@ ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 22dcb7a209b8a62aaeb3c036b1013e7ad3d21597
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f485f101876dd15122bbecb8589471df9fe7f5d7498694ece68858453dc0e864
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914436"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397644"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procedura: Configurare destinazioni e attività
 
-Alcune attività MSBuild possono essere impostate in modo da essere eseguite nell'ambiente a cui sono destinate, indipendentemente dall'ambiente del computer di sviluppo. Se ad esempio si usa un computer a 64 bit per creare un'applicazione destinata a un'architettura a 32 bit, le attività selezionate vengono eseguite in un processo a 32 bit.
 Alcune attività MSBuild possono essere impostate in modo da essere eseguite nell'ambiente a cui sono destinate, indipendentemente dall'ambiente del computer di sviluppo. Se ad esempio si usa un computer a 64 bit per creare un'applicazione destinata a un'architettura a 32 bit, le attività selezionate vengono eseguite in un processo a 32 bit.
 
 > [!NOTE]

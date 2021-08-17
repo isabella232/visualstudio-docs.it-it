@@ -1,20 +1,21 @@
 ---
 title: Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
-description: Informazioni sui log dei test codificati dell'interfaccia utente, che filtrano e registrano informazioni importanti sulle esecuzioni dei test codificati dell'interfaccia utente.
+description: Informazioni sui log di test codificati dell'interfaccia utente, che filtrano e registrano informazioni importanti sulle esecuzioni di test codificati dell'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 41863ccc845b0f74c300e927708e238193f223ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed58771c45061c180e5ff506babb78bac92416c41362eb8f9a873084df03444c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934858"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395531"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
 
@@ -30,7 +31,7 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
 
    1. Determinare quale processo *QTAgent\*.exe* viene avviato quando si esegue il test. Un modo per farlo è osservare la scheda **Dettagli** in **Gestione attività** di Windows.
 
-   2. Aprire il file con *estensione config* corrispondente dalla cartella *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE* . Ad esempio, se il processo eseguito è *QTAgent_40.exe* aprire *QTAgent_40.exe.config*.
+   2. Aprire il file *.config* corrispondente dalla cartella *%ProgramFiles(x86)%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE.* Ad esempio, se il processo eseguito è *QTAgent_40.exe* aprire *QTAgent_40.exe.config*.
 
    2. Modificare il valore di **EqtTraceLevel** e impostarlo sul livello di log desiderato.
 
@@ -73,7 +74,7 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
      I test automatizzati vengono eseguiti e segnalano se sono stati superati o se hanno avuto esito negativo.
 
     > [!TIP]
-    > Per visualizzare **Esplora test**, scegliere   >  **finestre** di test, quindi scegliere **Esplora test**.
+    > Per visualizzare **Esplora test,** scegliere **Test**  >  **Windows** e quindi Scegliere **Esplora test**.
 
 4. Scegliere il collegamento **Output** nei risultati di **Esplora test**.
 

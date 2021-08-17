@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 325b93ccbd420b0140fc89ed6869f6bd50064424
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 2afcb305d235f8648f56e8a4a83c566b513bb841cbd94bb64672829ce03efba9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679865"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395723"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -26,22 +27,22 @@ Durante la digitazione di una funzione o di un'altra istruzione, IntelliSense of
 
 ![Menu di completamento automatico di IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Premendo **TAB** (o **INVIO** o **SPAZIO),** a seconda della modalità di impostazione delle opzioni, viene inserito l'elemento selezionato nell'elenco a discesa. È possibile modificare la selezione con i tasti di direzione.
+Premendo **TAB** (o **INVIO** o **BARRA SPAZIATRICE,** a seconda della modalità di impostazione delle opzioni), viene inserito l'elemento selezionato nell'elenco a discesa. È possibile modificare la selezione con i tasti di direzione.
 
 IntelliSense offre anche suggerimenti per i membri di oggetti R:
 
 ![Suggerimenti di IntelliSense per i membri di un oggetto](media/intellisense-auto-complete-r-objects.png)
 
-Se **si preme ESC,** il menu viene chiuso completamente. È possibile riportarlo con + **CTRL+BARRA SPAZIATRICE.**
+Se si **preme ESC,** il menu viene chiuso completamente. È possibile riportarlo con + **CTRL+BARRA SPAZIATRICE.**
 
 Se si digita il segno di `(` aperta per una chiamata di funzione viene inserito il segno di `)` chiusa e viene ripristinato il supporto per la firma come illustrato in precedenza:
 
 ![Supporto per la firma per una funzione di IntelliSense](media/intellisense-function-signature.png)
 
-Anche in questo **caso, ESC** chiude il popup. per le firme di funzione, è possibile visualizzare nuovamente l'oggetto con + **CTRL+MAIUSC+BARRA** + **SPAZIATRICE.**
+Anche in questo **caso, ESC** chiude il popup. Per le firme di funzione, è possibile visualizzare nuovamente il file con + **CTRL+MAIUSC+BARRA** + **SPAZIATRICE.**
 
 > [!Tip]
-> Se il parametro consente di nascondere il testo sottostante, tenere premuto **CTRL** per rendere traslucido il testo della Guida del parametro.
+> Se il parametro help nasconde il testo sottostante, tenere premuto **CTRL** per rendere traslucido il testo della Guida del parametro.
 
 ## <a name="intellisense-for-user-defined-functions-and-variables"></a>IntelliSense per variabili e funzioni definite dall'utente
 

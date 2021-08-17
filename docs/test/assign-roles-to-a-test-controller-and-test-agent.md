@@ -1,6 +1,6 @@
 ---
-title: Ruoli test controller e agente di test
-description: Informazioni su come creare e configurare un'impostazione di test che usa un test controller e un agente di test per distribuire i test in più computer con Visual Studio.
+title: Ruoli del controller di test e dell'agente di test
+description: Informazioni su come creare e configurare un'impostazione test che usa un test controller e un agente di test per distribuire i test tra più computer usando Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: conceptual
@@ -14,12 +14,13 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 163cb3d541b054d22dc46df0b8e1e4735ac3fd50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 8a0aa35e34e95f4b9737034fa7e5b7ea2fff0b2b1aa6abf9cfb6a6688ee2bd32
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964667"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395447"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
@@ -99,13 +100,13 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 ::: moniker range="vs-2017"
 
-8. Nel menu **test** selezionare **impostazioni test** > **selezionare file di impostazioni test** , quindi scegliere il file *TestSettingDistributedTestWalkthrough. testsettings* .
+8. Nel menu **Test** selezionare **Test Impostazioni** Selezionare il file Impostazioni test e quindi scegliere il >  file *TestSettingDistributedTestWalkthrough.testsettings.*
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Scegliere **Seleziona file di impostazioni** dal menu **test** . Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
+8. Nel menu **Test** scegliere **Seleziona Impostazioni file**. Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
-title: Manifesti della distribuzione per le soluzioni Office
-description: Informazioni su come un manifesto di distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione corrente dell'applicazione.
+title: Manifesti di distribuzione per Office soluzioni
+description: Si apprenderà che un manifesto della distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione corrente dell'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
@@ -15,28 +15,29 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0a6c8cf672c4799a53c9df947f15bca38cb02589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fe9e7d0fdd02956d2979912cb658ea4781599c3a36e264b1965d934119791d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887601"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394732"
 ---
-# <a name="deployment-manifests-for-office-solutions"></a>Manifesti della distribuzione per le soluzioni Office
-  Un manifesto di distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione corrente dell'applicazione.
+# <a name="deployment-manifests-for-office-solutions"></a>Manifesti di distribuzione per Office soluzioni
+  Un manifesto della distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione corrente dell'applicazione.
 
- Lo sviluppo per Office in Visual Studio usa lo [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schema del manifesto di distribuzione definito nel riferimento del [manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) .
+ Il Office sviluppo in Visual Studio usa lo schema del manifesto della distribuzione definito nel riferimento al manifesto [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce distribuzione.](../deployment/clickonce-deployment-manifest.md)
 
 ## <a name="remarks"></a>Commenti
- Il file manifesto di distribuzione per le soluzioni Office identifica la versione corrente e altre impostazioni di distribuzione. Fa riferimento al manifesto dell'applicazione e descrive la versione corrente della soluzione e tutti i file all'interno della soluzione.
+ Il file manifesto della distribuzione per Office soluzioni, identifica la versione corrente e altre impostazioni di distribuzione. Fa riferimento al manifesto dell'applicazione e descrive la versione corrente della soluzione e tutti i file all'interno della soluzione.
 
 ## <a name="file-name-syntax"></a>Sintassi del nome file
- Il nome di un file manifesto di distribuzione deve terminare con l'estensione *VSTO* . Sebbene si tratti di un [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifesto di distribuzione standard, l'estensione differisce per consentire al strumenti di Visual Studio per Office Runtime di gestire il file.
+ Il nome di un file manifesto della distribuzione deve terminare con *l'estensione vsto.* Anche se si tratta di un manifesto di distribuzione standard, l'estensione è diversa per consentire [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] al runtime Visual Studio Tools per Office di gestire il file.
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice seguente viene illustrato un manifesto di distribuzione per una soluzione Strumenti di Visual Studio per Office.
+ L'esempio di codice seguente illustra un manifesto della distribuzione per una Visual Studio Tools per Office soluzione.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -187,4 +188,4 @@ ms.locfileid: "99887601"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)

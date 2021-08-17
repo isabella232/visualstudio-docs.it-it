@@ -6,15 +6,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 931db4db8b6dd5b076ab720c866bb2b5b97aa15c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dbe1588789dbf7f8384a658a600864ae6cbb8c10b59fd0c93d8b07225e000d80
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946358"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395010"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 
@@ -40,18 +41,18 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 
 |Azione|Registrazione|Codice generato|
 |-|---------------|-|
-|**Riproduzione audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riprodurre l' \<name> audio da 00:00:00|HtmlAudio.Play(TimeSpan)|
-|**Ricercare un punto specifico dell'audio**|Cerca \<name> audio su 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Sospendere la riproduzione dell'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Sospendere l' \<name> audio alle 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Disattivare il volume dell'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Disattiva \<name> audio|HtmlAudio.Mute()|
-|**Riattivare il volume dell'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Disattiva \<name> audio|HtmlAudio.Unmute()|
-|**Modificare il volume dell'audio**|Imposta volume dell' \<name> audio su 79%|HtmlAudio.SetVolume(float)|
+|**Riprodurre l'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riproduci \<name> audio da 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Ricercare un punto specifico dell'audio**|Cercare \<name> l'audio in 00:01:48|HtmlAudio.Seek(TimeSpan)|
+|**Sospendere la riproduzione dell'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|\<name>Sospendi audio alle 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Disattivare il volume dell'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Disattivare \<name> l'audio|HtmlAudio.Mute()|
+|**Riattivare il volume dell'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riattivare \<name> l'audio|HtmlAudio.Unmute()|
+|**Modificare il volume dell'audio**|Impostare il volume \<name> dell'audio al 79%|HtmlAudio.SetVolume(float)|
 
 Vedere [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) per un elenco delle proprietà in cui è possibile aggiungere un'asserzione.
 
-**Proprietà di ricerca:** Le proprietà di ricerca per `HtmlAudio` sono `Id` , `Name` e `Title` .
+**Proprietà di ricerca:** Le proprietà di ricerca `HtmlAudio` per sono , e `Id` `Name` `Title` .
 
-**Proprietà filtro:** Le proprietà di filtro `HtmlAudio` per `Src` sono `Class` , `ControlDefinition` e `TagInstance` .
+**Proprietà filtro:** Le proprietà del filtro `HtmlAudio` per sono , e `Src` `Class` `ControlDefinition` `TagInstance` .
 
 > [!NOTE]
 > L'intervallo di tempo per la ricerca e la sospensione può essere significativo. Durante la riproduzione, il test codificato dell'interfaccia utente attenderà fino all'ora specificata in `(TimeSpan)` prima di sospendere l'audio. Se, in alcune circostanze speciali, l'ora specificata passa prima di fare clic sul comando Sospendi, verrà generata un'eccezione.
@@ -63,18 +64,18 @@ Vedere [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
 
 |Azione|Registrazione|Codice generato|
 |-|---------------|-|
-|**PlayVideo**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riprodurre \<name> video da 00:00:00|HtmlVideo.Play(TimeSpan)|
-|**Ricercare un punto specifico nel video**|Cerca il \<name> video a 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Sospendere la riproduzione del video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Sospendere il \<name> video a 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Disattivare il volume del video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Disattiva \<name> video|HtmlVideo.Mute()|
-|**Riattivare il volume del video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Disattiva \<name> video|HtmlVideo.Unmute()|
-|**Modificare il volume del video**|Imposta volume del \<name> video su 79%||
+|**PlayVideo**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riproduci \<name> video da 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Ricercare un punto specifico nel video**|Cercare \<name> video in 00:01:48|HtmlVideo.Seek(TimeSpan)|
+|**Sospendere la riproduzione del video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Sospendere \<name> il video alle 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Disattivare il volume del video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Disattivare \<name> l'audio del video|HtmlVideo.Mute()|
+|**Riattivare il volume del video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riattivare \<name> l'audio del video|HtmlVideo.Unmute()|
+|**Modificare il volume del video**|Impostare il volume \<name> del video sul 79%||
 
 Vedere [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) per un elenco delle proprietà in cui è possibile aggiungere un'asserzione.
 
-**Proprietà di ricerca:** Le proprietà di ricerca per `HtmlVideo` sono `Id` , `Name` e `Title` .
+**Proprietà di ricerca:** Le proprietà di ricerca `HtmlVideo` per sono , e `Id` `Name` `Title` .
 
-**Proprietà filtro:** Le proprietà di filtro `HtmlVideo` per `Src` sono `Poster` , `Class` , `ControlDefinition` e `TagInstance` .
+**Proprietà filtro:** Le proprietà del filtro `HtmlVideo` per sono , , e `Src` `Poster` `Class` `ControlDefinition` `TagInstance` .
 
 > [!NOTE]
 > Se si riavvolge o si fa avanzare rapidamente il video usando le etichette -30s o +30s, il video verrà aggregato in modo da passare all'ora appropriata.

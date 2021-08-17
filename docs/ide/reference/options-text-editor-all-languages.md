@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, Tutti i linguaggi
-description: Informazioni su come usare la pagina generale nella sezione tutti i linguaggi per modificare il comportamento predefinito dell'editor di codice in Visual Studio.
+description: Informazioni su come usare la pagina Generale nella sezione Tutti i linguaggi per modificare il comportamento predefinito dell'editor di codice all'interno Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -42,16 +42,17 @@ ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b507f79aa4afb1bd5d2f56893d2e32aae0db4c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a7caa9f6c547c8e06fbb76d4b3d2372b9662c5330aa08e96e9ce7eb24c7d2d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905576"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400212"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>Finestra di dialogo Opzioni: editor di testo \> tutti i linguaggi
+# <a name="options-dialog-box-text-editor--all-languages"></a>Finestra di dialogo Opzioni: Editor di testo \> Tutti i linguaggi
 
 Questa finestra di dialogo consente di modificare il comportamento predefinito dell'editor del codice. Queste impostazioni si applicano anche agli altri editor basati sull'editor del codice, come ad esempio la visualizzazione dell'origine della finestra di progettazione HTML. Per aprire questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella dell'**Editor di testo** espandere la sottocartella **All Languages** (Tutti i linguaggi), quindi scegliere **Generale**.
 
@@ -80,7 +81,7 @@ Quando questa opzione è selezionata, la sintassi completa della dichiarazione o
 
 Quando questa opzione è selezionata e l'opzione **A capo automatico** è deselezionata, è possibile fare clic in qualsiasi punto oltre la fine della riga nell'editor di codice e digitare. È possibile utilizzare questa funzionalità per inserire commenti sempre nello stesso punto accanto al codice.
 
-**A capo automatico**
+**Ritorno a capo automatico**
 
 Se questa opzione è selezionata, la parte di una riga che si estende in senso orizzontale oltre la parte visibile dell'editor viene automaticamente visualizzata nella riga successiva. Se si seleziona questa opzione, l'opzione **Mostra icone per ritorno a capo automatico** viene attivata.
 
@@ -129,5 +130,5 @@ Questa impostazione non ha alcun effetto sul comando Copia o Taglia se una riga 
 ## <a name="see-also"></a>Vedi anche
 
 - [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Uso di IntelliSense](../../ide/using-intellisense.md)

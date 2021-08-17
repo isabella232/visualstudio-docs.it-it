@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: d55ab6aea15dbad7f1cbd718136fba261dfa1c69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a75b98a5623dd37447b5018b3a0d1c73b123fa5baf4631aa79bfbf403f3458a5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983256"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423053"
 ---
 # <a name="build-actions"></a>Azioni di compilazione
 
@@ -29,6 +29,6 @@ Ecco alcune azioni di compilazione comuni per progetti C#:
 
 Sono anche disponibili azioni di compilazione per progetti specifici. Per i progetti Xamarin.iOS esiste l'azione di compilazione **BundleResource**, che aggiunge il file al bundle dell'app. Per informazioni sulle azioni di compilazione specifiche per Xamarin.Android, vedere la guida al [processo di compilazione](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Azioni di compilazione (Visual Studio in Windows)](/visualstudio/ide/build-actions)

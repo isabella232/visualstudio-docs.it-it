@@ -1,6 +1,6 @@
 ---
-title: Comandi che devono essere eseguiti dopo l'installazione | Microsoft Docs
-description: Informazioni sui comandi che devono essere eseguiti come parte dell'installazione di un'estensione distribuita tramite un file con estensione msi in Visual Studio.
+title: Comandi che devono essere eseguiti dopo l'| Microsoft Docs
+description: Informazioni sui comandi che devono essere eseguiti come parte dell'installazione di un'estensione distribuita tramite un file .msi in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,25 +10,26 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef557c0c679fad0dff25a51a8529270e4bd7ced2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9038fafaccef8d73b15684fef8d425645ab55dcf6296487fa4993685dc5a17ea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057143"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401498"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandi che devono essere eseguiti dopo l'installazione
-Se si distribuisce l'estensione tramite un file con estensione *MSI* , è necessario eseguire **devenv/setup** come parte dell'installazione per consentire a Visual Studio di individuare le estensioni.
+Se si distribuisce l'estensione tramite un file *.msi,* è necessario eseguire **devenv /setup** come parte dell'installazione per consentire Visual Studio individuare le estensioni.
 
 > [!NOTE]
-> Le informazioni contenute in questo argomento si applicano alla ricerca di *devenv.exe* con Visual Studio 2008 e versioni precedenti. Per informazioni su come individuare *devenv.exe* con versioni successive di Visual Studio, vedere [rilevare i requisiti di sistema](../../extensibility/internals/detecting-system-requirements.md).
+> Le informazioni contenute in questo argomento si applicano alla *ricercadevenv.exe* con Visual Studio 2008 e versioni precedenti. Per informazioni su come individuare *devenv.exe* con le versioni successive di Visual Studio, vedere [Rilevare i requisiti di sistema](../../extensibility/internals/detecting-system-requirements.md).
 
-## <a name="find-devenvexe"></a>Trova devenv.exe
- È possibile individuare *devenv.exe* di ogni versione dai valori del registro di sistema [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] scritti dai programmi di installazione, usando la tabella RegLocator e le tabelle AppSearch per archiviare i valori del registro di sistema come proprietà. Per altre informazioni, vedere [rilevare i requisiti di sistema](../../extensibility/internals/detecting-system-requirements.md).
+## <a name="find-devenvexe"></a>Trovare devenv.exe
+ È possibile individuare i  valoridevenv.exedi ogni versione dai valori del Registro di sistema che i programmi di installazione scrivono usando la tabella RegLocator e le tabelle AppSearch per archiviare i valori del Registro di sistema [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] come proprietà. Per altre informazioni, vedere [Rilevare i requisiti di sistema.](../../extensibility/internals/detecting-system-requirements.md)
 
-### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator righe della tabella per individuare devenv.exe da versioni diverse di Visual Studio
+### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Righe della tabella RegLocator per individuare devenv.exe da versioni diverse di Visual Studio
 
 |Firma|Radice|Codice|Nome|Tipo|
 |-----------------|----------|---------|----------|----------|
@@ -46,37 +47,37 @@ Se si distribuisce l'estensione tramite un file con estensione *MSI* , è necess
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Ad esempio, il programma di installazione di Visual Studio scrive il valore del registro di sistema di **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** come *C:\VS2008\Common7\IDE\devenv.exe*, un percorso completo dell'eseguibile che deve essere eseguito dal programma di installazione.
+ Ad esempio, il programma di Visual Studio scrive il valore del Registro di sistema **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** come *C:\VS2008\Common7\IDE\devenv.exe*, un percorso completo del file eseguibile che deve essere eseguito dal programma di installazione.
 
 > [!NOTE]
-> Poiché la colonna di tipo della tabella RegLocator è 2, non è necessario specificare ulteriori informazioni sulla versione nella tabella della firma.
+> Poiché la colonna Type della tabella RegLocator è 2, non è necessario specificare informazioni aggiuntive sulla versione nella tabella Signature.
 
-## <a name="run-devenvexe"></a>Esegui devenv.exe
- Dopo l'esecuzione dell'azione standard AppSearch nel programma di installazione, ogni proprietà nella tabella AppSearch ha un valore che punta al file *devenv.exe* per la versione corrispondente di Visual Studio. Se uno dei valori del registro di sistema specificato non è presente, perché la versione di Visual Studio non è installata, la proprietà specificata è impostata su null.
+## <a name="run-devenvexe"></a>Eseguire devenv.exe
+ Dopo l'esecuzione dell'azione standard AppSearch nel programma di installazione, ogni proprietà nella tabella AppSearch ha un valore che punta al file *devenv.exe* per la versione corrispondente di Visual Studio. Se uno dei valori del Registro di sistema specificati non è presente, perché la versione di Visual Studio non è installata, la proprietà specificata viene impostata su Null.
 
- Windows Installer supporta l'esecuzione di un eseguibile a cui fa riferimento una proprietà con tipo di azione personalizzata 50. L'azione personalizzata deve includere le opzioni di esecuzione nello script, `msidbCustomActionTypeInScript` (1024) e `msidbCustomActionTypeCommit` (512), per assicurarsi che il pacchetto VSPackage sia stato installato correttamente prima di integrarlo in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Per ulteriori informazioni, vedere la [tabella CustomAction](/windows/desktop/msi/customaction-table) e le [Opzioni di esecuzione in-script dell'azione personalizzata](/windows/desktop/msi/custom-action-in-script-execution-options).
+ Windows Il programma di installazione supporta l'esecuzione di un eseguibile a cui una proprietà punta tramite il tipo di azione personalizzata 50. L'azione personalizzata deve includere le opzioni di esecuzione nello script `msidbCustomActionTypeInScript` (1024) e `msidbCustomActionTypeCommit` (512) per assicurarsi che il pacchetto VSPackage sia stato installato correttamente prima di integrarlo in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Per altre informazioni, vedere [Tabella CustomAction](/windows/desktop/msi/customaction-table) e [Opzioni di esecuzione in script dell'azione personalizzata](/windows/desktop/msi/custom-action-in-script-execution-options).
 
- Le azioni personalizzate di tipo 50 specificano la proprietà che contiene il file eseguibile come valore della colonna di origine e gli argomenti della riga di comando nella colonna di destinazione.
+ Le azioni personalizzate di tipo 50 specificano la proprietà contenente l'eseguibile come valore della colonna Source e degli argomenti della riga di comando nella colonna Target.
 
-### <a name="customaction-table-rows-to-run-devenvexe"></a>CustomAction righe della tabella da eseguire devenv.exe
+### <a name="customaction-table-rows-to-run-devenvexe"></a>Righe della tabella CustomAction da eseguire devenv.exe
 
 |Azione|Tipo|Source (Sorgente)|Destinazione|
 |------------|----------|------------|------------|
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/Setup|
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/Setup|
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|
 
- Le azioni personalizzate devono essere create nella tabella InstallExecuteSequence per pianificarne l'esecuzione durante l'installazione. Utilizzare la proprietà corrispondente in ogni riga della colonna Condition per impedire l'esecuzione dell'azione personalizzata se tale versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è installata nel sistema.
+ Le azioni personalizzate devono essere scritte nella tabella InstallExecuteSequence per pianificarle per l'esecuzione durante l'installazione. Usare la proprietà corrispondente in ogni riga della colonna Condizione per impedire l'esecuzione dell'azione personalizzata se tale versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è installata nel sistema.
 
 > [!NOTE]
-> Le proprietà con valori Null restituiscono `False` quando vengono usate in condizioni.
+> Le proprietà con valori Null restituiscono se `False` usate nelle condizioni.
 
- Il valore della colonna sequenza per ogni azione personalizzata dipende da altri valori di sequenza nel pacchetto di Windows Installer. I valori della sequenza devono essere in modo che le azioni personalizzate *devenv.exe* vengano eseguite il più vicino possibile a immediatamente prima dell'azione standard InstallFinalize.
+ Il valore della colonna Sequenza per ogni azione personalizzata dipende da altri valori di sequenza nel pacchetto Windows installer. I valori di sequenza devono essere tali *che* devenv.exeazioni personalizzate vengono eseguite il più vicino possibile a immediatamente prima dell'azione standard InstallFinalize.
 
-### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Tabella InstallExecuteSequence per pianificare le azioni personalizzate devenv.exe
+### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Tabella InstallExecuteSequence per pianificare le devenv.exe personalizzate
 
-|Azione|Condizione|Sequenza|
+|Azione|Condition|Sequenza|
 |------------|---------------|--------------|
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|
@@ -84,4 +85,4 @@ Se si distribuisce l'estensione tramite un file con estensione *MSI* , è necess
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|
 
 ## <a name="see-also"></a>Vedi anche
-- [Installare VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Installare i pacchetti VSPackage con il Windows di installazione](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

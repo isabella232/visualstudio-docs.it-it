@@ -1,6 +1,6 @@
 ---
-description: Recupera un elenco degli stack frame per il thread.
-title: 'IDebugThread2:: EnumFrameInfo | Microsoft Docs'
+description: Recupera un elenco degli stack frame per questo thread.
+title: IDebugThread2::EnumFrameInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7a47371bf9af89ef3f185698ca25a9df99cad4c6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 07ede35a1014d9c192740af58e5a5bdcc4ff93851c8204905384955a77da2b00
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053074"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389514"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
-Recupera un elenco degli stack frame per il thread.
+Recupera un elenco degli stack frame per questo thread.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,13 +47,13 @@ int EnumFrameInfo (
 
 ## <a name="parameters"></a>Parametri
 `dwFieldSpec`\
-in Combinazione di flag dell'enumerazione [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica i campi delle strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) da compilare. Specificare il `FIF_FUNCNAME_FORMAT` flag per formattare il nome della funzione in una singola stringa.
+[in] Combinazione di flag [dell'FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica quali campi delle strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) devono essere compilati. Specificare il `FIF_FUNCNAME_FORMAT` flag per formattare il nome della funzione in un'unica stringa.
 
 `nRadix`\
-in Radice utilizzata per la formattazione di informazioni numeriche nell'enumeratore.
+[in] Radice utilizzata nella formattazione delle informazioni numeriche nell'enumeratore.
 
 `ppEnum`\
-out Restituisce un oggetto [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) che contiene un elenco di strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) che descrivono la stack frame.
+[out] Restituisce un [oggetto IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) che contiene un elenco di [strutture FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) che descrivono la stack frame.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/03/2021
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: a24c57907afedb4f02068a071d2c9f81eb8962bb
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: 39a1388b9aedbf9bc0253d292133010c1926ce369d72347206b4a9350f223983
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108640974"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121422218"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilazione e creazione di build in Visual Studio per Mac
 
@@ -19,7 +19,7 @@ Visual Studio per Mac consente di compilare applicazioni e creare assembly duran
 
 Una compilazione riuscita conferma che la sintassi del codice sorgente è corretta e che tutti i riferimenti statici a librerie, assembly e altri componenti possono essere risolti. Il processo di compilazione genera un eseguibile dell'applicazione. Questo eseguibile può quindi essere testato tramite debug e diversi tipi di test manuali e automatizzati per convalidare la qualità del codice. Dopo aver testato completamente l'applicazione, è possibile compilare una versione finale da distribuire ai clienti.
 
-Nel Mac è possibile usare uno dei metodi seguenti per compilare l'applicazione: Visual Studio per Mac, strumenti da riga di comando di MSBuild o Azure Pipelines.
+Nel Mac è possibile usare uno dei metodi seguenti per compilare l'applicazione: Visual Studio per Mac, MSBuild strumenti da riga di comando o Azure Pipelines.
 
 | Metodo di compilazione | Vantaggi |
 | --- |--- | --- |
@@ -27,7 +27,7 @@ Nel Mac è possibile usare uno dei metodi seguenti per compilare l'applicazione:
 | Riga di comando MSBuild| - Compilazione di progetti senza l'installazione di Visual Studio per Mac.<br />- Esecuzione di compilazioni multiprocessore per tutti i tipi di progetto.<br />- Personalizzazione della maggior parte delle aree del sistema di compilazione.|
 | Azure Pipelines | - Automazione della compilazione come parte di un processo di integrazione continua/recapito continuo.<br />- Implementazione di test automatizzati con ogni compilazione.<br />- Uso di risorse di codice praticamente illimitate per i processi di compilazione.<br />- Modifica del flusso di lavoro di compilazione e creazione di attività di compilazione per eseguire attività personalizzate specifiche.|
 
-La documentazione di questa sezione approfondisce i dettagli del processo di compilazione basato su IDE. Per compilare applicazioni dalla riga di comando senza installare Visual Studio per Mac, è possibile installare la versione [più recente .NET Core SDK](https://dotnet.microsoft.com/download). Per altre informazioni sulla compilazione di applicazioni tramite la riga di comando, vedere [MSBuild](/visualstudio/msbuild/msbuild). Per informazioni dettagliate sulla compilazione di applicazioni con Azure Pipelines, vedere [Azure Pipelines](/azure/devops/pipelines).
+La documentazione di questa sezione approfondisce i dettagli del processo di compilazione basato su IDE. Per compilare applicazioni dalla riga di comando senza installare Visual Studio per Mac, è possibile installare la versione più [recente .NET Core SDK](https://dotnet.microsoft.com/download). Per altre informazioni sulla compilazione di applicazioni tramite la riga di comando, vedere [MSBuild](/visualstudio/msbuild/msbuild). Per informazioni dettagliate sulla compilazione di applicazioni con Azure Pipelines, vedere [Azure Pipelines](/azure/devops/pipelines).
 
 
 > [!NOTE]

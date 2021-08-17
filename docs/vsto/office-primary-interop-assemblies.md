@@ -1,6 +1,6 @@
 ---
 title: assembly di interoperabilità primari di Office
-description: Informazioni su come usare l'assembly di interoperabilità primario (PIA) per ottenere l'accesso alle funzionalità di un'applicazione Microsoft Office da un progetto di Office.
+description: Informazioni su come usare l'assembly di interoperabilità primario (PIA) per ottenere l'accesso alle funzionalità di un'applicazione Microsoft Office da un Office progetto.
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 2041c1d8b39f88f611cee09f17c498ea54130122
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6f610e9cd1667b84f382f7b1f48c231a69ec44797bafc343f11a7c508636df1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892060"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394167"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -35,11 +36,11 @@ Questo argomento descrive i seguenti aspetti dell'uso degli assembly di interope
 
 - [Separare gli assembly di interoperabilità primari per compilare ed eseguire progetti](#separateassemblies)
 
-- [Usare le funzionalità di più applicazioni di Microsoft Office in un singolo progetto](#usingfeatures)
+- [Usare le funzionalità di più Microsoft Office applicazioni in un singolo progetto](#usingfeatures)
 
 - [Elenco completo di assembly di interoperabilità primari per applicazioni di Microsoft Office](#pialist)
 
-Per altre informazioni sugli assembly di interoperabilità primari, vedere [assembly di interoperabilità primari](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+Per altre informazioni sugli assembly di interoperabilità primari, vedere [Assembly di interoperabilità primari](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
 
 <a name="separateassemblies"></a>
 
@@ -61,38 +62,38 @@ Quando si installa Visual Studio, gli assembly di interoperabilità primari veng
 
 Queste copie degli assembly di interoperabilità primari contribuiscono a evitare diversi problemi di sviluppo che possono verificarsi in Visual Studio quando si registrano versioni differenti degli assembly nella Global Assembly Cache.
 
-A partire da Visual Studio 2017, queste copie degli assembly di interoperabilità primari vengono installate nei percorsi condivisi seguenti nel computer di sviluppo:
+A partire Visual Studio 2017, queste copie degli pias vengono installate nei percorsi condivisi seguenti nel computer di sviluppo:
 
 - `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
 - (o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` nei sistemi operativi a 64 bit)
 
 > [!NOTE]
-> Per le versioni precedenti di Visual Studio, questi assembly di interoperabilità primari vengono installati nella cartella Strumenti di Visual Studio per Office\PIA nella `%ProgramFiles%` cartella per la versione di Visual Studio.
+> Per le versioni precedenti di Visual Studio, questi PIA verranno installati nella cartella Visual Studio Tools per Office\PIA nella cartella per tale versione di `%ProgramFiles%` Visual Studio.
 > Per esempio: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
-### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assembly di interoperabilità primari nel Global Assembly Cache
+### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assembly di interoperabilità primari nella Global Assembly Cache
 
-Per eseguire determinate attività di sviluppo, gli assembly di interoperabilità primari devono essere installati e registrati nella Global Assembly Cache sul computer di sviluppo. Di solito, gli assembly di interoperabilità primari vengono installati automaticamente quando si installa Office sul computer di sviluppo. Per altre informazioni, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+Per eseguire determinate attività di sviluppo, gli assembly di interoperabilità primari devono essere installati e registrati nella Global Assembly Cache sul computer di sviluppo. Di solito, gli assembly di interoperabilità primari vengono installati automaticamente quando si installa Office sul computer di sviluppo. Per altre informazioni, vedere [Configurare un computer per sviluppare Office soluzioni](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-Gli assembly di interoperabilità primari di Office non sono richiesti per l'esecuzione di soluzioni Office sui computer degli utenti finali. Per ulteriori informazioni, vedere [progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md).
+Gli assembly di interoperabilità primari di Office non sono richiesti per l'esecuzione di soluzioni Office sui computer degli utenti finali. Per altre informazioni, vedere [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md).
 
 <a name="usingfeatures"></a>
 
-## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>Usare le funzionalità di più applicazioni di Microsoft Office in un singolo progetto
+## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>Usare le funzionalità di più Microsoft Office applicazioni in un singolo progetto
 
 Ogni modello di progetto di Office in Visual Studio è progettato per funzionare con una singola applicazione di Microsoft Office. Per usare le funzionalità in più applicazioni di Microsoft Office oppure per usare funzionalità in un'applicazione o un componente che non ha un progetto in Visual Studio, è necessario aggiungere un riferimento agli assembly di interoperabilità primari richiesti.
 
-Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly di interoperabilità primari installati da Visual Studio nella `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` Directory. Queste versioni degli assembly vengono visualizzate nella scheda **Framework** della finestra di dialogo **Gestione riferimenti** . Per altre informazioni, vedere [procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly di interoperabilità personali installati da Visual Studio nella `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directory . Queste versioni degli assembly vengono visualizzate nella **scheda Framework** della finestra di **dialogo Gestione** riferimenti . Per altre informazioni, vedere Procedura: Impostare come destinazione [Office applicazioni tramite assembly di interoperabilità primari.](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 
 Se sono stati installati e registrati gli assembly di interoperabilità primari nella Global Assembly Cache, queste versioni appariranno nella scheda **COM** della finestra di dialogo **Gestione riferimenti** . Evitare di aggiungere riferimenti a queste versioni degli assembly, perché possono verificarsi alcuni problemi di sviluppo durante il loro uso. Ad esempio, se sono state registrate versioni differenti degli assembly di interoperabilità primari nella Global Assembly Cache, il progetto verrà automaticamente associato all'ultima versione registrata dell'assembly, anche se è stata specificata una versione differente nella scheda **COM** della finestra di dialogo **Gestione riferimenti** .
 
 > [!NOTE]
-> Alcuni assembly vengono aggiunti automaticamente a un progetto quando si aggiunge un assembly che vi fa riferimento. Ad esempio, i riferimenti agli `Office.dll` `Microsoft.Vbe.Interop.dll` assembly e vengono aggiunti automaticamente quando si aggiunge un riferimento agli assembly di Word, Excel, Outlook, Microsoft Forms o Graph.
+> Alcuni assembly vengono aggiunti automaticamente a un progetto quando si aggiunge un assembly che vi fa riferimento. Ad esempio, i riferimenti agli assembly e vengono aggiunti automaticamente quando si aggiunge un riferimento agli assembly `Office.dll` `Microsoft.Vbe.Interop.dll` Word, Excel, Outlook, Microsoft Forms o Graph.
 
 <a name="pialist"></a>
 
-## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Assembly di interoperabilità primari per applicazioni Microsoft Office
+## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Assembly di interoperabilità primari per Microsoft Office applicazioni
 
 Nella tabella seguente sono elencati gli assembly di interoperabilità primari disponibili per [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)] , [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] .
 
@@ -114,29 +115,29 @@ Nella tabella seguente sono elencati gli assembly di interoperabilità primari d
 |Libreria oggetti di Microsoft Publisher 14.0<br /><br /> Libreria oggetti di Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|
 |Libreria riferimenti a oggetti Web di Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Libreria riferimenti a oggetti pagina di Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Microsoft Smart Tag 2,0 Type Library **Nota:**  gli smart tag sono deprecati in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)] .|Microsoft.Office.Interop.SmartTag.dll|
+|Microsoft Smart Tags 2.0 Type Library **Nota: gli**  smart tag sono deprecati in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)] .|Microsoft.Office.Interop.SmartTag.dll|
 |Libreria dei tipi Microsoft Visio 14.0<br /><br /> Libreria dei tipi Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|
 |Libreria dei tipi Salva come pagina Web Microsoft Visio 14.0<br /><br /> Libreria dei tipi Salva come pagina Web Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Libreria dei tipi controlli disegno di Microsoft Visio 14.0<br /><br /> Libreria dei tipi controlli disegno di Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|
 |Libreria oggetti di Microsoft Word 14.0<br /><br /> Libreria oggetti di Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia&preserve-view=true)|
 |Microsoft Visual Basic, Applications Edition Extensibility 5.3|Microsoft.Vbe.Interop.dll|
 
-### <a name="binding-redirect-assemblies"></a>Assembly di reindirizzamento di associazione
+### <a name="binding-redirect-assemblies"></a>Associazione di assembly di reindirizzamento
 
-Quando si installano e registrano gli assembly di interoperabilità primari di Office nella Global Assembly Cache (tramite Office o installando il pacchetto ridistribuibile per gli assembly di interoperabilità primari), gli assembly di reindirizzamento delle associazioni sono anche installati solo nella Global Assembly Cache. Questi assembly consentono di verificare che in fase di esecuzione venga caricata la versione corretta degli assembly di interoperabilità primari.
+Quando si installano e registrano gli assembly di interoperabilità primari di Office nella Global Assembly Cache (tramite Office o installando il pacchetto ridistribuibile per gli assembly di interoperabilità primari), gli assembly di reindirizzamento delle associazioni sono anche installati solo nella Global Assembly Cache. Questi assembly consentono di assicurarsi che la versione corretta degli assembly di interoperabilità primari sia caricata in fase di esecuzione.
 
 Quando ad esempio una soluzione che fa riferimento a un assembly di interoperabilità primario di [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] viene eseguita in un computer in cui è installata la versione [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dello stesso assembly, l'assembly di reindirizzamento delle associazioni indica al runtime di [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] i caricare la versione [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dell'assembly di interoperabilità primario.
 
-Per altre informazioni, vedere [procedura: abilitare e disabilitare il reindirizzamento di associazione automatico](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
+Per altre informazioni, vedere [Procedura: Abilitare e disabilitare il reindirizzamento automatico delle associazioni.](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
-- [Panoramica del modello a oggetti di Excel](../vsto/excel-object-model-overview.md)
+- [Procedura: Impostare come destinazione Office applicazioni tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Excel panoramica del modello a oggetti](../vsto/excel-object-model-overview.md)
 - [Soluzioni InfoPath](../vsto/infopath-solutions.md)
-- [Panoramica del modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
-- [Soluzioni PowerPoint](../vsto/powerpoint-solutions.md)
-- [Soluzioni di progetto](../vsto/project-solutions.md)
-- [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)
+- [Outlook panoramica del modello a oggetti](../vsto/outlook-object-model-overview.md)
+- [PowerPoint soluzioni](../vsto/powerpoint-solutions.md)
+- [Project soluzioni](../vsto/project-solutions.md)
+- [Visio panoramica del modello a oggetti](../vsto/visio-object-model-overview.md)
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
-- [Guida di riferimento generale &#40;sviluppo per Office in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [Informazioni di riferimento &#40;Office sviluppo in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)

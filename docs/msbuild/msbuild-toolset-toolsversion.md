@@ -1,6 +1,6 @@
 ---
 title: Set di strumenti di MSBuild (ToolsVersion) | Microsoft Docs
-description: Informazioni su come usare l'attributo ToolsVersion nel file di progetto MSBuild per specificare un set di strumenti di attività, destinazioni e strumenti per la compilazione di un'applicazione.
+description: Informazioni su come usare l'attributo ToolsVersion nel file di progetto MSBuild per specificare un set di strumenti di attività, destinazioni e strumenti per compilare un'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
@@ -13,18 +13,19 @@ ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b146913365583d49f1d70ebd5ca316f54ca89049
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cbe0b0e60ef7d8fa1e80f56ba4757bbca678cd2bf9b4b7813a2bf95ae599d09
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878227"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121397384"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 
-Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file *Microsoft. Common. Tasks* , un file *Microsoft. Common. targets* e compilatori come *csc.exe* e *vbc.exe*. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.
+Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set MSBuild strumenti include un file *microsoft.common.tasks,* un file *microsoft.common.targets* e compilatori come *csc.exe* e *vbc.exe*. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Attributo ToolsVersion
 
@@ -47,7 +48,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 ::: moniker-end
 
 > [!NOTE]
-> Alcuni tipi di progetto usano l'attributo `sdk` invece di `ToolsVersion`. Per altre informazioni, vedere [aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj).
+> Alcuni tipi di progetto usano l'attributo `sdk` invece di `ToolsVersion`. Per altre informazioni, vedere [Aggiunte al formato csproj per .NET Core.](/dotnet/core/tools/csproj)
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Funzionamento dell'attributo ToolsVersion
 
@@ -63,7 +64,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- È possibile modificare il valore di `MSBuildToolsPath` definendo un set di strumenti personalizzato. Per altre informazioni, vedere [configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md).
+ È possibile modificare il valore di `MSBuildToolsPath` definendo un set di strumenti personalizzato. Per altre informazioni, vedere [Configurazioni standard e personalizzate del set di strumenti.](../msbuild/standard-and-custom-toolset-configurations.md)
 
  Quando si compila una soluzione dalla riga di comando e si specifica un attributo `ToolsVersion` per *msbuild.exe*, tutti i progetti e le dipendenze tra progetti vengono compilati secondo tale attributo `ToolsVersion`, anche se ogni progetto della soluzione contiene un attributo `ToolsVersion` specifico. Per definire il valore `ToolsVersion` in base al progetto, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 

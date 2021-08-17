@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia consente di accedere a un metodo che può creare un servizio del visualizzatore, che viene usato per gestire le attività del Visualizzatore di tipi per l'IDE.
+description: Questa interfaccia consente di accedere a un metodo in grado di creare un servizio visualizzatore, usato per gestire le attività del visualizzatore di tipi per l'IDE.
 title: IEEVisualizerServiceProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973135865b0b1c460f4c9000036f2af04a9ae3ce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bbc67be1904c785f10ea1e3ee3144d2d40380730749247f58be639bbd0cbb8f4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086690"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389410"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
-> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione di analizzatori di espressioni CLR, vedere [Clr Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Questa interfaccia consente di accedere a un metodo che può creare un servizio del visualizzatore, che viene usato per gestire le attività del Visualizzatore di tipi per l'IDE.
+ Questa interfaccia consente di accedere a un metodo in grado di creare un servizio visualizzatore, usato per gestire le attività del visualizzatore di tipi per l'IDE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,26 +34,26 @@ IEEVisualizerServiceProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Visual Studio implementa questa interfaccia per creare un oggetto del servizio del visualizzatore, che a sua volta viene usato per fornire `CLSID` gli ID di classe dei visualizzatori di tipo all'IDE di Visual Studio.
+ Visual Studio questa interfaccia per creare un oggetto servizio del visualizzatore, che a sua volta viene usato per fornire gli ID di classe (s) dei visualizzatori di tipo `CLSID` all'IDE Visual Studio.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- L'analizzatore di espressioni (EE) chiama [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) per ottenere questa interfaccia.
+ L'analizzatore di espressioni (edizione Enterprise) chiama [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) per ottenere questa interfaccia.
 
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
+## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Crea il servizio del Visualizzatore|
+|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Crea il servizio visualizzatore|
 
 ## <a name="remarks"></a>Commenti
- L' `IEEVisualizerServiceProvider` interfaccia viene ottenuta durante l'implementazione di [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Il servizio del visualizzatore creato da questa interfaccia viene usato per fornire funzionalità a un'interfaccia [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , che è responsabile dell'implementazione di EE. EE è anche responsabile dell'implementazione di un'interfaccia [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) che consente ai visualizzatori di tipi di visualizzare e modificare il valore di una proprietà.
+ `IEEVisualizerServiceProvider`L'interfaccia viene ottenuta durante l'implementazione [di EvaluateSync.](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) Il servizio visualizzatore creato da questa interfaccia viene usato per fornire funzionalità a un'interfaccia [IDebugProperty3,](../../../extensibility/debugger/reference/idebugproperty3.md) che il edizione Enterprise è responsabile dell'implementazione. Il edizione Enterprise è anche responsabile dell'implementazione di [un'interfaccia IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) che consente ai visualizzatori di tipi di visualizzare e modificare il valore di una proprietà.
 
- Per informazioni dettagliate sul modo in cui queste interfacce interagiscono, vedere [visualizzazione e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
+ Per [informazioni dettagliate sull'interazione](../../../extensibility/debugger/visualizing-and-viewing-data.md) di queste interfacce, vedere Visualizzazione e visualizzazione dei dati.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: EE. h
+ Intestazione: ee.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

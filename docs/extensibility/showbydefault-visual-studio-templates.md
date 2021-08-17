@@ -1,6 +1,6 @@
 ---
-title: Elemento ShowByDefault (modelli di Visual Studio)
-description: Informazioni sull'elemento ShowByDefault e su come, quando è impostato su false, specifica che il modello verrà visualizzato solo nel TemplateGroupID specificato.
+title: Elemento ShowByDefault (Visual Studio personalizzati)
+description: Informazioni sull'elemento ShowByDefault e su come, se impostato su false, specifica che il modello verrà visualizzato solo con il TemplateGroupID specificato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25ba91a6276615929fed9494000abbfde07ef2b8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ceef636c722d950a96e522286714a50ddfd7e7422335c8934affd928357c234a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056428"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400569"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (modelli di Visual Studio)
-Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)specificato.
+# <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (Visual Studio personalizzati)
+Se `false` , specifica che il modello verrà visualizzato solo nel [templateGroupID specificato.](../extensibility/templategroupid-element-visual-studio-templates.md)
 
  \<VSTemplate> \<TemplateData>
  \<ShowByDefault>
@@ -39,10 +39,10 @@ Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGrou
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 

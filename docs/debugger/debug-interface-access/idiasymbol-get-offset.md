@@ -11,17 +11,18 @@ ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5c3e59596fdfc1e769710f8459620303e72d6a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9aa71ecc2a2c2691702d0a56e3f90eb5c83bd99fcc19d9bf3e7d465952338fba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155901"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420606"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
-Recupera l'offset della posizione del simbolo. Utilizzare quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsRegRel` o `LocIsBitField` .
+Recupera l'offset della posizione del simbolo. Usare quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsRegRel` o `LocIsBitField` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,22 +35,22 @@ HRESULT get_offset (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'offset in byte della posizione del simbolo.
+[out] Restituisce l'offset in byte della posizione del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- L'offset è da un punto noto precedentemente determinato. Ad esempio, l'offset per un `LocIsBitField` tipo di posizione è in genere dall'inizio della classe che lo contiene.
+ L'offset è da un punto noto determinato in precedenza. Ad esempio, l'offset per un `LocIsBitField` tipo di posizione è in genere dall'inizio della classe contenitore.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedi anche

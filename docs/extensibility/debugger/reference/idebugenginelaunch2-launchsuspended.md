@@ -1,6 +1,6 @@
 ---
-description: Questo metodo avvia un processo per mezzo del motore di debug (DE).
-title: 'IDebugEngineLaunch2:: LaunchSuspended | Microsoft Docs'
+description: Questo metodo avvia un processo tramite il motore di debug.
+title: IDebugEngineLaunch2::LaunchSuspended | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2db2ce2a35cd8be6599fca3e01bc69a6680012b2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 27d4ae71dfa2c5a1c0f1d7806e1fa83c511a1bfd7131667880dce3dc5b3db54a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066022"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390086"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
-Questo metodo avvia un processo per mezzo del motore di debug (DE).
+Questo metodo avvia un processo tramite il motore di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,51 +67,51 @@ int LaunchSuspended(
 
 ## <a name="parameters"></a>Parametri
 `pszMachine`\
-in Nome del computer in cui avviare il processo. Usare un valore null per specificare il computer locale.
+[in] Nome del computer in cui avviare il processo. Usare un valore Null per specificare il computer locale.
 
 `pPort`\
-in Interfaccia [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta in cui il programma viene eseguito.
+[in] Interfaccia [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta in cui verrà eseguito il programma.
 
 `pszExe`\
-in Nome del file eseguibile da avviare.
+[in] Nome dell'eseguibile da avviare.
 
 `pszArgs`\
-in Argomenti da passare al file eseguibile. Può essere un valore null se non sono presenti argomenti.
+[in] Argomenti da passare all'eseguibile. Può essere un valore Null se non sono presenti argomenti.
 
 `pszDir`\
-in Nome della directory di lavoro utilizzata dal file eseguibile. Può essere un valore null se non è richiesta alcuna directory di lavoro.
+[in] Nome della directory di lavoro utilizzata dall'eseguibile. Può essere un valore Null se non è necessaria alcuna directory di lavoro.
 
 `bstrEnv`\
-in Blocco dell'ambiente di stringhe con terminazione NULL, seguito da un carattere di terminazione NULL aggiuntivo.
+[in] Blocco di ambiente di stringhe con terminazione NULL, seguito da un carattere di terminazione NULL aggiuntivo.
 
 `pszOptions`\
-in Opzioni per l'eseguibile.
+[in] Opzioni per l'eseguibile.
 
 `dwLaunchFlags`\
-in Specifica il [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) per una sessione.
+[in] Specifica [l'LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) per una sessione.
 
 `hStdInput`\
-in Handle per un flusso di input alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
+[in] Handle a un flusso di input alternativo. Può essere 0 se il reindirizzamento non è necessario.
 
 `hStdOutput`\
-in Handle per un flusso di output alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
+[in] Handle per un flusso di output alternativo. Può essere 0 se il reindirizzamento non è necessario.
 
 `hStdError`\
-in Handle per un flusso di output degli errori alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
+[in] Handle a un flusso di output degli errori alternativo. Può essere 0 se il reindirizzamento non è necessario.
 
 `pCallback`\
-in Oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) che riceve gli eventi del debugger.
+[in] Oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) che riceve gli eventi del debugger.
 
 `ppDebugProcess`\
-out Restituisce l'oggetto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) risultante che rappresenta il processo avviato.
+[out] Restituisce [l'oggetto IDebugProcess2 risultante](../../../extensibility/debugger/reference/idebugprocess2.md) che rappresenta il processo avviato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- In genere, [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] avvia un programma usando il metodo [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) e quindi connette il debugger al programma sospeso. In alcune circostanze, tuttavia, il motore di debug potrebbe dover avviare un programma (ad esempio, se il motore di debug fa parte di un interprete e il programma di cui è in corso il debug è un linguaggio interpretato), nel qual caso [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Usa il `IDebugEngineLaunch2::LaunchSuspended` metodo.
+ In [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] genere, avvia un programma usando il [metodo LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) e quindi collega il debugger al programma sospeso. Esistono tuttavia circostanze in cui il motore di debug potrebbe dover avviare un programma (ad esempio, se il motore di debug fa parte di un interprete e il programma in fase di debug è un linguaggio interpretato), nel qual caso usa il metodo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] `IDebugEngineLaunch2::LaunchSuspended` .
 
- Il metodo [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) viene chiamato per avviare il processo dopo che il processo è stato avviato correttamente in stato Suspended.
+ Il [metodo ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) viene chiamato per avviare il processo dopo che il processo è stato avviato correttamente in uno stato sospeso.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

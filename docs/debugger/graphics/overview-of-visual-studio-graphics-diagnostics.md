@@ -1,5 +1,5 @@
 ---
-title: Panoramica della diagnostica grafica | Microsoft Docs
+title: Panoramica delle funzionalità di diagnostica della | Microsoft Docs
 description: Visual Studio Diagnostica della grafica è un set di strumenti per registrare l'attività Direct3D e analizzare i log per risolvere i problemi di rendering e prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
@@ -7,34 +7,35 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b67b9585db973e6cbef3b1c28c6068e7c37034
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8c9ebb8ae3a0aba5a4059a01b5f2ba31359963eea058b519effbc28c40479630
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386189"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391318"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica grafica di Visual Studio
 *Diagnostica della grafica* di Visual Studio è un set di strumenti per la registrazione e l'analisi dei problemi di prestazioni e di rendering nelle app Direct3D. Diagnostica della grafica può essere usato nelle app in esecuzione in locale nel PC Windows o in un PC o un dispositivo remoto.
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Uso della diagnostica grafica per eseguire il debug dei problemi di rendering
- Il debug dei problemi di rendering in un'app graficamente ricca non è semplice come l'avvio di un debugger e l'esecuzione di codice. In ogni frame vengono prodotte centinaia di migliaia di pixel univoci, ciascuno in base a un set complesso di stati, dati, parametri e codice. Di questi, probabilmente solo pochi presenteranno il problema che si tenta di diagnosticare. Come se non bastasse, il codice che genera ciascun pixel viene eseguito in hardware specializzato che elabora centinaia di pixel in parallelo. Gli strumenti e le tecniche tradizionali di debug, difficili da sfruttare anche in codice con pochi thread, sono inefficaci di fronte a una quantità eccessiva di dati.
+ Il debug dei problemi di rendering in un'app graficamente ricca non è semplice come l'avvio di un debugger e l'esecuzione di codice un'istruzione alla pagina. In ogni frame vengono prodotte centinaia di migliaia di pixel univoci, ciascuno in base a un set complesso di stati, dati, parametri e codice. Di questi, probabilmente solo pochi presenteranno il problema che si tenta di diagnosticare. Come se non bastasse, il codice che genera ciascun pixel viene eseguito in hardware specializzato che elabora centinaia di pixel in parallelo. Gli strumenti e le tecniche tradizionali di debug, difficili da sfruttare anche in codice con pochi thread, sono inefficaci di fronte a una quantità eccessiva di dati.
 
  Gli strumenti di diagnostica grafica in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sono progettati per individuare i problemi di rendering a partire dagli artefatti visivi che indicano il problema e quindi risalendo all'origine concentrandosi solo sul codice di shader pertinente, le fasi della pipeline, le chiamate di disegno, le risorse e lo stato del dispositivo nel codice sorgente dell'app.
 
 ## <a name="directx-version-compatibility"></a>Compatibilità tra versioni DirectX
- Diagnostica della grafica supporta le app che usano Direct3D 10 o versione successiva e offre un supporto limitato per le app che usano Direct2D. Non supporta le app che usano versioni precedenti di Direct3D, DirectDraw o altre API grafiche.
+ Diagnostica della grafica supporta le app che usano Direct3D 10 o versione successiva e offre supporto limitato per le app che usano Direct2D. Non supporta le app che usano versioni precedenti di Direct3D, DirectDraw o altre API grafiche.
 
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 e Direct3D 12
 > [!NOTE]
-> Visual Studio consiglia PIX in Windows per i giochi DirectX 12. [PIX in Windows è](https://aka.ms/PIXonWindows) uno strumento di ottimizzazione e debug delle prestazioni che supporta completamente DirectX 12. [Per altre informazioni o](visual-studio-graphics-diagnostics-directx-12.md) per [il download, vedere .](https://aka.ms/downloadPIX)
+> Visual Studio consiglia PIX su Windows per i giochi DirectX 12. [PIX in Windows](https://aka.ms/PIXonWindows) è uno strumento di ottimizzazione e debug delle prestazioni che supporta completamente DirectX 12. [Altre informazioni o](visual-studio-graphics-diagnostics-directx-12.md) download [sono disponibili qui.](https://aka.ms/downloadPIX)
 
 
- Windows 10 introdotto *Direct3D 12,* che è sostanzialmente diverso da Direct3D 10 e Direct3D 11. Queste differenze riportano DirectX in allineamento con l'hardware grafico moderno, consentendo di sfruttarne appieno il potenziale. Introducono inoltre notevoli modifiche alle API e comportano maggiori responsabilità per i programmatori in merito alla gestione dei conflitti e della durata delle risorse. Nonostante le differenze, Diagnostica della grafica direct3D 12 mantiene la parità di funzionalità con Diagnostica della grafica direct3D 11.2.
+ Windows 10 ha *introdotto Direct3D 12,* che è sostanzialmente diverso da Direct3D 10 e Direct3D 11. Queste differenze riportano DirectX in allineamento con l'hardware grafico moderno, consentendo di sfruttarne appieno il potenziale. Introducono inoltre notevoli modifiche alle API e comportano maggiori responsabilità per i programmatori in merito alla gestione dei conflitti e della durata delle risorse. Nonostante le differenze, Diagnostica della grafica direct3D 12 mantiene la parità delle funzionalità con Diagnostica della grafica con Direct3D 11.2.
 
- Windows 10 mantiene inoltre il supporto per le versioni precedenti di Direct3D, oltre che per i giochi e le applicazioni che si basano su di esse. Diagnostica della grafica in Visual Studio continua a supportare Direct3D 10 e Direct3D 11 Windows 10.
+ Windows 10 mantiene inoltre il supporto per le versioni precedenti di Direct3D, oltre che per i giochi e le applicazioni che si basano su di esse. Diagnostica della grafica in Visual Studio continua a supportare Direct3D 10 e Direct3D 11 in Windows 10.
 
 ### <a name="limited-direct2d-support"></a>Supporto Direct2D limitato
  Poiché Direct2D è un'API modalità utente basata su Direct3D, è possibile usare Diagnostica della grafica per agevolare il debug dei problemi di rendering nelle app che usano Direct2D. Tuttavia, poiché vengono registrati solo gli eventi Direct3D, anziché gli eventi Direct2D di livello superiore, gli eventi Direct2D non verranno visualizzati nell'elenco eventi grafici. Inoltre, poiché la relazione tra gli eventi Direct2D e gli eventi Direct3D risultanti non è sempre chiara, usare la diagnostica grafica per eseguire il debug dei problemi di rendering nelle app che usano Direct2D non è semplice. È comunque possibile usare la diagnostica della grafica per ottenere informazioni sui problemi di rendering di livello inferiore nelle app che usano Direct2D.
@@ -86,14 +87,14 @@ ms.locfileid: "112386189"
 ### <a name="event-list"></a>Elenco eventi
  Gli eventi di grafica contrassegnano ogni chiamata API Direct3D e ogni evento definito dall'utente.
 
- [L'Elenco](graphics-event-list.md) eventi mostra tutti gli eventi grafici registrati durante il frame esaminato. Per individuare più facilmente gli elementi più importanti, è possibile visualizzare l'elenco eventi in due modi: in ordine gerarchico, con le modifiche dello stato recenti sotto la chiamata di disegno successiva, oppure come sequenza temporale. Inoltre, gli eventi sono contraddistinti da colori diversi in base alla coda di appartenenza ed è possibile filtrare l'elenco per includere solo gli eventi a cui si è interessati.
+ [L'Elenco](graphics-event-list.md) eventi mostra tutti gli eventi grafici registrati durante il frame che si sta esaminando. Per individuare più facilmente gli elementi più importanti, è possibile visualizzare l'elenco eventi in due modi: in ordine gerarchico, con le modifiche dello stato recenti sotto la chiamata di disegno successiva, oppure come sequenza temporale. Inoltre, gli eventi sono contraddistinti da colori diversi in base alla coda di appartenenza ed è possibile filtrare l'elenco per includere solo gli eventi a cui si è interessati.
 
  Quando si seleziona un evento nell'elenco, gli altri strumenti di Analisi grafica riflettono lo stato del frame al momento dell'evento. In questo modo è possibile vedere l'effetto di qualsiasi evento nella GPU. Ad esempio, si può vedere l'effetto immediato di qualsiasi chiamata di disegno sul buffer frame, anche se viene nascosto dalle chiamate di disegno successive. Alcuni eventi dispongono anche di collegamenti ipertestuali, che è possibile seguire per accedere a maggiori dettagli sui parametri o sugli oggetti risorsa correlati.
 
 ### <a name="pipeline-stages"></a>Fasi pipeline
  Ogni chiamata di disegno dell'app passa attraverso la pipeline grafica fornita da Direct3D. In ogni fase della pipeline, l'output della fase precedente viene trasformato da un piccolo programma denominato shader e passato alla fase successiva fino al rendering finale sullo schermo. Molti errori di rendering si verificano al confine tra una fase della pipeline e l'altra, quando il formato di output è diverso rispetto a quanto previsto dalla fase successiva o semplicemente quando una qualsiasi fase genera risultati non corretti. In genere si ottengono solo i risultati finali così come verrebbero visualizzati sullo schermo e non è facile individuare il punto della pipeline in cui si è verificato l'errore.
 
- La [finestra Fasi pipeline](graphics-pipeline-stages.md) visualizza il risultato di ogni fase in modo indipendente, in modo da poter determinare più facilmente in quale fase viene visualizzato per la prima volta un problema di rendering. Dopo aver individuato la fase, si può possibile avviare il debug del relativo shader direttamente dalla finestra Fasi pipeline.
+ La [finestra Fasi pipeline](graphics-pipeline-stages.md) visualizza il risultato di ogni fase in modo indipendente, in modo da poter determinare più facilmente in quale fase viene visualizzato un problema di rendering per la prima volta. Dopo aver individuato la fase, si può possibile avviare il debug del relativo shader direttamente dalla finestra Fasi pipeline.
 
 ### <a name="graphics-state"></a>Stato grafica
  Le operazioni di rendering dipendono da una serie di stati, in genere condivisi tra più oggetti. Molti tipi di problemi di rendering sono causati da uno stato non configurato correttamente.
@@ -113,7 +114,7 @@ ms.locfileid: "112386189"
 ### <a name="object-table"></a>Tabella oggetti
  Ogni frame di cui l'app esegue il rendering è probabilmente supportato da centinaia o persino migliaia di oggetti risorsa. Questo include buffer e destinazioni di rendering, trame, buffer dei vertici, buffer degli indici, buffer generali e quasi tutto ciò che Direct3D considera un oggetto.
 
- Nella [tabella oggetti](graphics-object-table.md) vengono visualizzati tutti gli oggetti esistenti al momento dell'evento grafico selezionato nell'elenco eventi. Poiché in un'app tipica gli oggetti sono per lo più trame, l'elenco eventi è ottimizzato per visualizzare immediatamente i dettagli pertinenti alle immagini. La colonna Tipo indica il tipo di oggetto presente in ogni riga, mentre la colonna Formato mostra il sottotipo o la versione dell'oggetto. Sono disponibili anche altri dettagli. Alcuni oggetti dispongono anche di collegamenti ipertestuali, che è possibile seguire per esaminare l'oggetto con un visualizzatore più specializzato, ad esempio di trame (si può visualizzare la trama come immagine) o di buffer (si può scegliere come il visualizzatore buffer analizza e mostra i byte non elaborati definendo il formato del buffer).
+ La [tabella oggetti](graphics-object-table.md) visualizza tutti gli oggetti esistenti al momento dell'evento grafico selezionato nell'elenco eventi. Poiché in un'app tipica gli oggetti sono per lo più trame, l'elenco eventi è ottimizzato per visualizzare immediatamente i dettagli pertinenti alle immagini. La colonna Tipo indica il tipo di oggetto presente in ogni riga, mentre la colonna Formato mostra il sottotipo o la versione dell'oggetto. Sono disponibili anche altri dettagli. Alcuni oggetti dispongono anche di collegamenti ipertestuali, che è possibile seguire per esaminare l'oggetto con un visualizzatore più specializzato, ad esempio di trame (si può visualizzare la trama come immagine) o di buffer (si può scegliere come il visualizzatore buffer analizza e mostra i byte non elaborati definendo il formato del buffer).
 
 ### <a name="frame-analysis"></a>Analisi dei frame
  La grafica dell'app deve essere corretta e veloce, anche in dispositivi meno potenti come computer portatili con grafica integrata o telefoni cellulari. In più, deve essere di qualità elevata.

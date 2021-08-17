@@ -1,5 +1,5 @@
 ---
-description: Descrive la varietà di tipi definiti dall'utente (UDT).
+description: Viene descritta l'ampia gamma di tipi definiti dall'utente (UDT).
 title: UdtKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 400b59b9-373c-42cb-aae1-570494214328
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dbda75e668309318c4c4fe61c5c72f27629ea2cc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a4b3ae98b911b7e5a7026740afe574044a49fdf5d8b8b96be05f2e4546cbdb4e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155278"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391568"
 ---
 # <a name="udtkind"></a>UdtKind
-Descrive la varietà di tipi definiti dall'utente (UDT).
+Viene descritta l'ampia gamma di tipi definiti dall'utente (UDT).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,19 +36,19 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Elementi
-Il tipo definito dall'utente UdtStruct è una struttura.
+UdtStruct UDT è una struttura.
 
-Il tipo definito dall'utente UdtClass è una classe.
+UdtClass UDT è una classe.
 
-Il tipo definito dall'utente UdtUnion è un'Unione.
+UdtUnion UDT è un'unione.
 
-Il tipo definito dall'utente UdtInterface è un'interfaccia.
+UdtInterface UDT è un'interfaccia.
 
 ## <a name="remarks"></a>Commenti
-I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .
+I valori di questa enumerazione vengono restituiti dal [metodo IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst. h
+Intestazione: cvconst.h
 
 ## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

@@ -9,14 +9,15 @@ ms.assetid: 21793872-4879-4e4d-b527-dcf70aa7fb31
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 643a1fe69f2dedc693df9be027c5e1cd51d36243
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a1cd1e92b117c9d1e239d032820e30e2375f1ffbf424334050178703b10b50e2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160729"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391672"
 ---
 # <a name="idiasymbolget_objectfilename"></a>IDiaSymbol::get_objectFileName
 Recupera il nome del file oggetto.
@@ -31,10 +32,10 @@ HRESULT get_objectFilename(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un `BSTR` oggetto che include il nome del file oggetto.
+[out] Puntatore a un oggetto `BSTR` che contiene il nome del file oggetto.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

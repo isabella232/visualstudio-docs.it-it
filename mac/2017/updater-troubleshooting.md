@@ -7,12 +7,12 @@ ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
 ms.topic: troubleshooting
-ms.openlocfilehash: c631bae40d06a000e2e90c26ae5a9862c1e09aaa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef25ffe564c268b131164abd5125dc48dee4729f9311baa7a3578ca9add627be
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950575"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121393185"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Risoluzione dei problemi: Errori durante il recupero di informazioni sugli aggiornamenti
 

@@ -1,6 +1,6 @@
 ---
 title: Esaminare i dati usando le finestre del debugger | Microsoft Docs
-description: Esistono molti tipi di finestre del debugger che forniscono informazioni. Questo articolo fornisce un elenco dei tipi. Per ogni è disponibile un collegamento ad altre informazioni.
+description: Esistono molti tipi di finestre del debugger che forniscono informazioni. Questo articolo fornisce un elenco dei tipi. Per ogni è disponibile un collegamento a altre informazioni.
 ms.custom: SEO-VS-2020
 ms.date: 04/25/2018
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9959c73802e15ca25dcce62631e4faa81391d47a
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 059acd0e797b4edd7f22de20560e2bb4a348228ab000f9053439949006f1b324
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389891"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420393"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Esaminare i dati usando le finestre del debugger in Visual Studio
 
@@ -23,7 +24,7 @@ ms.locfileid: "112389891"
 
 |Finestra|Tasto di scelta rapida|Vedere l'argomento|
 |-|-|-|
-|Punti di interruzione|CTRL+ALT+B|[Usare i punti di interruzione](../debugger/using-breakpoints.md)|
+|Punti di interruzione|CTRL+ALT+B|[Usare punti di interruzione](../debugger/using-breakpoints.md)|
 |Impostazioni eccezioni|CTRL+ALT+E|[Gestire le eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md)|
 |Output|CTRL+ALT+O|[Finestra di output](../ide/reference/output-window.md)|
 |Video|CTRL+ALT+W, (1, 2, 3, 4)|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|
@@ -43,7 +44,7 @@ ms.locfileid: "112389891"
 |DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](quickstart-debug-html-and-css.md)|
 |Albero elementi visivi attivi|-|[Analizzare le proprietà XAML durante il debug](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Esplora proprietà attive|-|[Analizzare le proprietà XAML durante il debug](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
-|Processi|CTRL+ALT+Z|[Eseguire il debug di thread e processi](../debugger/debug-threads-and-processes.md)|
+|Processi|CTRL+ALT+Z|[Debug di thread e processi](../debugger/debug-threads-and-processes.md)|
 |Memoria|CTRL+ALT+M, (1, 2, 3, 4)|[Finestra Memoria](../debugger/memory-windows.md)|
 |Disassembly|CTRL+ALT+D|[Procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
 |Registri|CTRL+ALT+G|[Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)|

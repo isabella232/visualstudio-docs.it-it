@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug o disabilitare il codice del progetto nella finestra di progettazione XAML
-description: Informazioni su come eseguire il debug o disabilitare il codice del progetto nella finestra di progettazione XAML, incluso il debug del codice del progetto in un'altra istanza di Visual Studio.
+description: Informazioni su come eseguire il debug o disabilitare il codice del progetto nel finestra di progettazione XAML, incluso come eseguire il debug del codice del progetto in esecuzione in un'altra istanza di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,12 +8,13 @@ ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: e03c33de81727c333db8f662232e669e37e78f59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 8e0563318600c30d595d6fd193aff48f4171d31ae95e39c48c8bb5dd02c154ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921759"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121393269"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Eseguire il debug o disabilitare il codice del progetto nella finestra di progettazione XAML
 
@@ -37,7 +38,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
 1. Nella finestra di dialogo dell'eccezione non gestita fare clic sul collegamento **Fare clic qui per ricaricare la finestra di progettazione** .
 
-2. Sulla barra dei menu scegliere **debug**  >  **Avvia debug** per compilare ed eseguire l'applicazione.
+2. Sulla barra dei menu scegliere **Debug**  >  **Avvia debug** per compilare ed eseguire l'applicazione.
 
      Se l'applicazione viene compilata ed eseguita correttamente, l'eccezione in fase di progettazione potrebbe essere causata dal codice del progetto in esecuzione nella finestra di progettazione.
 
@@ -55,7 +56,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
 5. Impostare un punto di interruzione nel codice del progetto.
 
-6. Nella barra dei menu della nuova istanza di Visual Studio scegliere **debug**  >  **Connetti a processo**.
+6. Nella nuova istanza di Visual Studio, sulla barra dei menu scegliere **Debug**  >  **Associa a processo**.
 
 7. Nella finestra di dialogo **Connetti a processo** scegliere **XDesProc.exe** nell'elenco **Processi disponibili** e quindi fare clic sul pulsante **Connetti** .
 
@@ -63,7 +64,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
      Questo è il processo per la finestra di progettazione XAML nella prima istanza di Visual Studio.
 
-8. Nella prima istanza di Visual Studio fare clic su **debug**  >  **Avvia debug** sulla barra dei menu.
+8. Nella prima istanza di Visual Studio, sulla barra dei menu scegliere **Debug**  >  **Avvia debug.**
 
      È ora possibile eseguire le istruzioni del codice in esecuzione nella finestra di progettazione.
 

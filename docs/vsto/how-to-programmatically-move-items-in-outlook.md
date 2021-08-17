@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Spostare elementi in Outlook a livello di codice'
+title: "Procedura: Spostare elementi in un'Outlook"
 description: Informazioni su come spostare elementi in Microsoft Outlook a livello di codice. Questo esempio sposta i messaggi di posta elettronica non letti dalla posta in arrivo in una cartella denominata Test.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -12,17 +12,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b8e951ab393d09506ad4f2d593962ea1826eff09
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 38804ef26d96dc7db8c69742632187c097c89553f7bb314333953f052f93e558
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826733"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394407"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Procedura: Spostare elementi in Outlook a livello di codice
-  Questo esempio sposta i messaggi di posta elettronica non letti **dalla** posta in arrivo in una cartella denominata **Test**. L'esempio sposta solo i messaggi con la **parola Test** nel `Subject` campo .
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Procedura: Spostare elementi in un'Outlook
+  Questo esempio sposta i messaggi di posta elettronica non letti **dalla** posta in arrivo in una cartella denominata **Test**. L'esempio sposta solo i messaggi con la parola **Test** nel `Subject` campo .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,9 +33,9 @@ ms.locfileid: "107826733"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
-- Una cartella di posta di Outlook denominata **Test**.
+- Una Outlook di posta elettronica denominata **Test**.
 
-- Messaggio di posta elettronica che arriva con la **parola Test** nel `Subject` campo .
+- Messaggio di posta elettronica che arriva con la parola **Test** nel `Subject` campo .
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare le cartelle](../vsto/working-with-folders.md)

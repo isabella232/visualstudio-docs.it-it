@@ -1,6 +1,6 @@
 ---
 title: Specificare il file binario da avviare | Microsoft Docs
-description: Informazioni su come immettere le informazioni nella finestra <Target> di dialogo Pagine delle proprietà per profilare file binari, ad esempio dll.
+description: Informazioni su come immettere informazioni nella finestra di dialogo Pagine <Target> delle proprietà per profilare i file binari, ad esempio DLL.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,19 +12,20 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 575a55ae654ada9774abed510d66b94e4ce9d271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec3a2355f6539472a2079bb0988bed1508c858303d9aee2c40e86b0f49e6531b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899532"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396474"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Procedura: Specificare l'avvio del file binario
 
-Per profilare i file binari, ad esempio le dll, è necessario immettere le informazioni nella finestra di dialogo **\<Target> pagine delle proprietà** . Queste informazioni indicano dove il progetto DLL può trovare l'applicazione chiamante.
+Per profilare i file binari, ad esempio le DLL, è necessario immettere informazioni nella **\<Target> finestra di dialogo Pagine delle** proprietà. Queste informazioni indicano dove il progetto DLL può trovare l'applicazione chiamante.
 
 1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul file binario di destinazione e quindi scegliere **Proprietà**.
 

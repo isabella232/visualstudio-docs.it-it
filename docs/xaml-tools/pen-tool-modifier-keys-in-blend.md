@@ -1,7 +1,7 @@
 ---
 title: Tasti di modifica strumento Penna
 titleSuffix: Blend for Visual Studio
-description: Informazioni sui tasti di modifica dello strumento penna in Blend per Visual Studio di accesso ai comandi per la modifica di un tracciato durante la creazione con lo strumento penna.
+description: Informazioni sui tasti di modifica dello strumento Penna Blend per Visual Studio comandi per la modifica di un tracciato durante la creazione con lo strumento Penna.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,14 +9,15 @@ ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 233ee9e4583e893d38700088d54e4b0e5eacffb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23639240b7331983392902985676ceff322ec14b82059b93d221abb98c0d956d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846270"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121393363"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Penna in Blend per Visual Studio
 
@@ -28,7 +29,7 @@ Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile u
 |Creare un punto iniziale di un segmento di linea curva|Fai clic per creare il nuovo punto e quindi trascina per regolare i punti di controllo della tangente prima di rilasciare il pulsante del mouse|![Creare un punto iniziale di un segmento di linea curva](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Puntatore penna|
 |Modificare l'ultima tangente senza arrotondare il tracciato, in modo da ottenere un angolo acuto|Fare clic per creare il nuovo punto e quindi premere **ALT** prima di rilasciare il pulsante del mouse|![Modificare l'ultima tangente senza arrotondare il tracciato](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
 |Suddividere l'ultima tangente in modo che i punti finali della tangente funzionino indipendentemente, ottenendo un angolo acuto|Fare clic per creare il nuovo punto e quindi tenere premuto **ALT** prima di rilasciare il pulsante del mouse|![Suddividere l'ultima tangente in modo che i punti finali della tangente funzionino indipendentemente](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
-|Spostare il punto finale della tangente intorno al nuovo punto con incrementi di 15 gradi|Fare clic per creare il nuovo punto e quindi tenere premuto **MAIUSC** + **ALT** e trascinare prima di rilasciare il pulsante del mouse.|![Spostare il punto finale della tangente intorno al nuovo punto con incrementi di 15 gradi](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
+|Spostare il punto finale della tangente intorno al nuovo punto con incrementi di 15 gradi|Fare clic per creare il nuovo punto, quindi tenere premuto + **MAIUSC ALT** e trascinare prima di rilasciare il pulsante del mouse|![Spostare il punto finale della tangente intorno al nuovo punto con incrementi di 15 gradi](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
 |Ridurre la tangente sul punto finale a lunghezza zero|Fai clic sul punto finale|![Ridurre la tangente sul punto finale a lunghezza zero](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
 |Aggiungere un nuovo punto a un tracciato esistente|Fai clic sul tracciato nella posizione in cui vuoi inserire il nuovo punto|![Aggiungere un nuovo punto a un tracciato esistente](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Puntatore penna di inserimento|
 |Rimuovere un punto da un tracciato|Passa il puntatore del mouse su un punto esistente e fai clic|![Rimuovere il punto dal tracciato](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Puntatore penna di eliminazione|

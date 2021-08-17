@@ -7,14 +7,15 @@ ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bbf7fa453f36c861d632fc17e46e003e568008db
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: e2413e38408405bc3b3677a2e8f691abca063676bec41e6a4bfa31cc93fdbce6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232687"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436082"
 ---
 # <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 Quando presente, definisce se il file di log di grafica viene salvato nella directory dei file temporanei dell'utente.

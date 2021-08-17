@@ -1,5 +1,5 @@
 ---
-description: "IDiaSession:: findInlineeLinesByAddr recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'intervallo di indirizzi specificato."
+description: IDiaSession::findInlineeLinesByAddr recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e contenute nell'intervallo di indirizzi specificato.
 title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: bb70e408-eed1-4c9c-b5b1-44323125f48b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 917da4855990844fb6bc0c3fc995174b519b129e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 26d293f9b56e80064297753414a234f1636fae1b8e10fe7a36eac64bf981c699
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147772"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121391848"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
-Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'intervallo di indirizzi specificato.
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e contenute nell'intervallo di indirizzi specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,23 +34,23 @@ HRESULT findInlineeLinesByAddr (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in `IDiaSymbol` Oggetto che rappresenta l'elemento padre.
+[in] Oggetto `IDiaSymbol` che rappresenta l'elemento padre.
 
  `isect`
 
-in Specifica il componente della sezione dell'indirizzo.
+[in] Specifica il componente della sezione dell'indirizzo.
 
  `offset`
 
-in Specifica il componente di offset dell'indirizzo.
+[in] Specifica il componente di offset dell'indirizzo.
 
  `length`
 
-in Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query.
+[in] Specifica l'intervallo di indirizzi, in numero di byte, da coprire con questa query.
 
  `ppResult`
 
-out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.
+[out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco di numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

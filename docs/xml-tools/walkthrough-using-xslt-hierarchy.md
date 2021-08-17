@@ -1,20 +1,21 @@
 ---
 title: 'Procedura dettagliata: utilizzo della gerarchia XSLT'
-description: Per informazioni su come eseguire il debug in un foglio di stile a cui si fa riferimento, usare lo strumento gerarchia XSLT in Visual Studio attenendosi alla procedura descritta in questa procedura dettagliata.
+description: Informazioni su come eseguire il debug in un foglio di stile di riferimento usando lo strumento Xslt Hierarchy Visual Studio seguendo i passaggi di questa procedura dettagliata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 94c8a26d75b92f9b8d51e3ca61f761985a5b4959
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xml-tools
+ms.openlocfilehash: 514331475913d6fc368f744379a6ddf21703b0ea22a394e660bce328fda6c68b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875042"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423540"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Procedura dettagliata: usare la gerarchia XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Procedura dettagliata: Usare la gerarchia XSLT
 
 Lo strumento di gerarchia XSLT semplifica molte attività di sviluppo XML. Un foglio di stile XSLT spesso usa istruzioni `includes` e `imports`. La compilazione viene avviata dal foglio di stile principale, ma quando viene visualizzato un errore come risultato della compilazione di un foglio di stile XSLT, è possibile che l'errore provenga da un'origine diversa dal foglio di stile principale. È possibile che la correzione dell'errore o la modifica del foglio di stile richieda accesso ai fogli di stile inclusi o importati. Scorrendo il foglio di stile nel debugger è possibile che vengano visualizzati i fogli di stile inclusi e importati ed è necessario aggiungere un punto di interruzione in una determinata posizione di uno o più fogli di stile inclusi.
 
@@ -22,9 +23,9 @@ Un altro scenario in cui può essere utile lo strumento di gerarchia XSLT è l'i
 
 Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del debug in un foglio di stile a cui si fa riferimento.
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>Per eseguire il debug in un foglio di stile a cui si fa riferimento
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Per eseguire il debug in un foglio di stile di riferimento
 
-1. Aprire un documento XML in Visual Studio. Questo esempio usa il documento seguente:
+1. Aprire un documento XML in Visual Studio. In questo esempio viene utilizzato il documento seguente:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -48,7 +49,7 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </COLLECTION>
     ```
 
-1. Aggiungere il seguente *xslinclude. xsl*:
+1. Aggiungere il file *xslincludefile.xsl seguente:*
 
     ```xml
     <?xml version='1.0'?>
@@ -71,7 +72,7 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </xsl:stylesheet>
     ```
 
-3. Aggiungere il file *xslinclude. xsl* seguente:
+3. Aggiungere il file *xslinclude.xsl* seguente:
 
     ```xml
     <?xml version='1.0'?>
@@ -109,7 +110,7 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
 
 5. Avviare il debug.
 
-6. Quando il debugger si interrompe in corrispondenza dell'istruzione `<xsl:include href="xslincludefile.xsl" />` , fare clic sul pulsante **Esegui istruzione** . Il debug può essere continuato nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.
+6. Quando il debugger si arresta in corrispondenza `<xsl:include href="xslincludefile.xsl" />` dell'istruzione , premere il pulsante **Entra.** Il debug può essere continuato nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.
 
 ## <a name="see-also"></a>Vedi anche
 

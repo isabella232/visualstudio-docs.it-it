@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e9d55d9c1c22edea1ff826b23beb6d0ec6b392c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82c15d8da2aa2deebb3150c984bf77ca8b9dc4ec00891313e0b6841d04f75394
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942412"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395824"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 
@@ -36,7 +37,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
 1. Nella cartella del progetto creare una cartella dell'app denominata `HelloFlask` facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionando **Aggiungi** > **Nuova cartella**.
 
-2. Nella cartella *HelloFlask* creare un file denominato *\_ \_ init \_ \_ . py* con il contenuto seguente che crea l' `Flask` istanza e carica le visualizzazioni dell'app (create nel passaggio successivo):
+2. Nella cartella *HelloFlask* creare un file denominato *\_ \_ init \_ \_ .py* con il contenuto seguente che crea l'istanza e carica le visualizzazioni `Flask` dell'app (create nel passaggio successivo):
 
     ```python
     from flask import Flask
@@ -45,7 +46,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
     import HelloFlask.views
     ```
 
-3. Nella cartella *HelloFlask* creare un file denominato *views.py* con il contenuto seguente. Il nome *views.py* è importante perché è stato usato `import HelloFlask.views` in *\_ \_ init \_ \_ . py*. verrà visualizzato un errore in fase di esecuzione se i nomi non corrispondono.
+3. Nella cartella *HelloFlask* creare un file denominato *views.py* con il contenuto seguente. Il nome *views.py* è importante perché è stato usato `import HelloFlask.views` all'interno *\_ \_ di init \_ \_ .py.* Verrà visualizzato un errore in fase di esecuzione se i nomi non corrispondono.
 
     ```python
     from flask import Flask
@@ -57,7 +58,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
         return "Hello Flask!"
     ```
 
-    Oltre a rinominare la funzione e la route in `home` , questo codice contiene il codice di rendering della pagina da *app.py* e importa l' `app` oggetto dichiarato in *\_ \_ init \_ \_ . py*.
+    Oltre a rinominare la funzione e la route in , questo codice contiene il codice di rendering della pagina da app.py e importa `home` l'oggetto dichiarato in  `app` *\_ \_ init \_ \_ .py*.
 
 4. In *HelloFlask* creare la sottocartella *templates*, che per il momento rimane vuota.
 
@@ -82,9 +83,9 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
     ![Struttura del progetto dopo il refactoring del codice](media/flask/step02-project-structure.png)
 
-7. Selezionare **debug**  >  **Avvia debug** (**F5**) o usare il pulsante **server Web** sulla barra degli strumenti (il browser visualizzato potrebbe variare) per avviare l'app e aprire un browser. Provare entrambe le route dell'URL / e /home.
+7. Selezionare **Debug**  >  **Avvia debug** (**F5**) o usare il pulsante **Server Web** sulla barra degli strumenti (il browser visualizzato può variare) per avviare l'app e aprire un browser. Provare entrambe le route dell'URL / e /home.
 
-8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione sulle prime righe di *runserver.py* e *HelloFlask \_* init_ *. py* e sulla `return "Hello Flask!"` riga in *views.py*. Riavviare quindi l'app (  >  **riavvio** del debug, **CTRL** + **MAIUSC** + **F5** o il pulsante della barra degli strumenti mostrato di seguito) e scorrere il codice (**F10**) o eseguire da ogni punto di interruzione con **F5**.
+8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione nelle prime righe di *runserver.py* *e \_ HelloFlask* init_ *.py* e sulla riga `return "Hello Flask!"` in *views.py*. Riavviare quindi l'app (**Riavvio** del debug, CTRL MAIUSC F5 o il pulsante della barra degli strumenti illustrato di seguito) ed eseguire il codice  >    +  + (**F10)** o eseguire da ogni punto di interruzione **usando F5**.
 
     ![Pulsante di riavvio sulla barra degli strumenti per il debug in Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -98,7 +99,7 @@ Poiché sono state apportate modifiche al codice e il test delle modifiche è ri
 
     ![Pulsante Modifiche per il controllo del codice sorgente sulla barra di stato di Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. In **Team Explorer** immettere un messaggio per il commit, ad esempio "Refactoring del codice" e selezionare **Esegui commit di tutto**. Al termine del commit, viene visualizzato un commit del **messaggio \<hash> creato localmente. Sincronizzare per condividere le modifiche con il server.** Se si vuole eseguire il push delle modifiche nel repository remoto, selezionare **Sync** e quindi **Push** in **Commit in uscita**. È anche possibile accumulare più commit locali prima di eseguire il push in remoto.
+1. In **Team Explorer** immettere un messaggio per il commit, ad esempio "Refactoring del codice" e selezionare **Esegui commit di tutto**. Al termine del commit, viene visualizzato un messaggio **Commit \<hash> creato in locale. Eseguire la sincronizzazione per condividere le modifiche con il server.** Se si vuole eseguire il push delle modifiche nel repository remoto, selezionare **Sync** e quindi **Push** in **Commit in uscita**. È anche possibile accumulare più commit locali prima di eseguire il push in remoto.
 
     ![Eseguire il push dei commit in remoto in Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 

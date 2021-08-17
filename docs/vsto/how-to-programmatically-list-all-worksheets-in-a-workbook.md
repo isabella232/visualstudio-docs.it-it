@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Elencare tutti i fogli di lavoro in una cartella di lavoro a livello di codice'
-description: Informazioni su come elencare a livello di codice tutti i fogli di lavoro in una cartella di lavoro di Microsoft Excel usando Visual Studio.
+description: Informazioni su come elencare a livello di codice tutti i fogli di lavoro in Microsoft Excel cartella di lavoro usando Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c0cdd57c801617d8b3c37df28b91faae378bc4cc
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: b9f61ffce4223166b805a43f8096a5f86bf077f9305b664df92e6d28c153988c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824900"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394433"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Procedura: Elencare tutti i fogli di lavoro in una cartella di lavoro a livello di codice
   La classe <xref:Microsoft.Office.Interop.Excel.Workbook> fornisce un oggetto <xref:Microsoft.Office.Interop.Excel.Worksheets>. Questo oggetto contiene una raccolta di tutti gli oggetti <xref:Microsoft.Office.Interop.Excel.Worksheet> presenti nella cartella di lavoro.
@@ -46,4 +47,4 @@ ms.locfileid: "107824900"
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
 - [Procedura: Aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [Procedura: Spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
-- [Accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Accesso globale agli oggetti nei Office progetto](../vsto/global-access-to-objects-in-office-projects.md)

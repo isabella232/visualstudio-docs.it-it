@@ -9,23 +9,24 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: be19b34c51744c6bab1c6021a006f7ec9b4da0f4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: cfe92dbaab0e952f6e46f3ca5fd6d877717dfa44d6eaa20a821275f338a17be4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390971"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121398313"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Esplorare e aggiornare i modelli nel codice del programma
 
-È possibile scrivere codice per creare ed eliminare elementi del modello, impostarne le proprietà e creare ed eliminare collegamenti tra gli elementi. Tutte le modifiche devono essere apportate all'interno di una transazione. Se gli elementi vengono visualizzati in un diagramma, il diagramma verrà "corretto" automaticamente alla fine della transazione.
+È possibile scrivere codice per creare ed eliminare elementi del modello, impostarne le proprietà e creare ed eliminare collegamenti tra gli elementi. Tutte le modifiche devono essere apportate all'interno di una transazione. Se gli elementi vengono visualizzati in un diagramma, il diagramma verrà "risolto" automaticamente alla fine della transazione.
 
 ## <a name="an-example-dsl-definition"></a><a name="example"></a> Definizione DSL di esempio
  Questa è la parte principale di DslDefinition.dsl per gli esempi in questo argomento:
 
- ![Diagramma delle definizioni DSL &#45; modello ad albero di famiglia](../modeling/media/familyt_person.png)
+ ![Diagramma di definizione DSL &#45; albero genealogico](../modeling/media/familyt_person.png)
 
  Questo modello è un'istanza di questo DSL:
 
@@ -45,7 +46,7 @@ ms.locfileid: "112390971"
 ## <a name="navigating-the-model"></a><a name="navigation"></a> Esplorazione del modello
 
 ### <a name="properties"></a>Proprietà
- Le proprietà di dominio definite nella definizione DSL diventano proprietà a cui è possibile accedere nel codice programma:
+ Le proprietà di dominio definite nella definizione DSL diventano proprietà a cui è possibile accedere nel codice del programma:
 
  `Person henry = ...;`
 
@@ -57,10 +58,10 @@ ms.locfileid: "112390971"
 
  `henry.Name = "Henry VIII";`
 
- Se nella definizione DSL il tipo di una proprietà **è** **Calculated,** non è possibile impostarlo. Per altre informazioni, vedere [Proprietà di archiviazione calcolate e personalizzate.](../modeling/calculated-and-custom-storage-properties.md)
+ Se nella definizione DSL il  tipo di una proprietà è **Calculated**, non è possibile impostarlo. Per altre informazioni, vedere [Calculated and Custom Archiviazione Properties](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relazioni
- Le relazioni di dominio definite nella definizione DSL diventano coppie di proprietà, una per la classe a ogni estremità della relazione. I nomi delle proprietà vengono visualizzati nel diagramma DslDefinition come etichette sui ruoli in ogni lato della relazione. A seconda della molteplicità del ruolo, il tipo della proprietà è la classe all'altra estremità della relazione o una raccolta di tale classe.
+ Le relazioni di dominio definite nella definizione DSL diventano coppie di proprietà, una nella classe a ogni estremità della relazione. I nomi delle proprietà vengono visualizzati nel diagramma DslDefinition come etichette sui ruoli su ogni lato della relazione. A seconda della molteplicità del ruolo, il tipo della proprietà è la classe all'altra estremità della relazione o una raccolta di tale classe.
 
  `foreach (Person child in henry.Children) { ... }`
 
@@ -72,7 +73,7 @@ ms.locfileid: "112390971"
 
  `&& p.Parents.All(parent => parent.Children.Contains(p));`
 
- **ElementLinks**. Una relazione è rappresentata anche da un elemento del modello denominato *collegamento*, che è un'istanza del tipo di relazione di dominio. Un collegamento ha sempre un elemento di origine e un elemento di destinazione. L'elemento di origine e l'elemento di destinazione possono essere gli stessi.
+ **ElementLinks**. Una relazione è rappresentata anche da un elemento del modello denominato *collegamento*, che è un'istanza del tipo di relazione di dominio. Un collegamento ha sempre un elemento di origine e un elemento di destinazione. L'elemento di origine e l'elemento di destinazione possono essere uguali.
 
  È possibile accedere a un collegamento e alle relative proprietà:
 
@@ -82,11 +83,11 @@ ms.locfileid: "112390971"
 
  `link == null || link.Parent == henry && link.Child == edward`
 
- Per impostazione predefinita, non è consentito collegare più di un'istanza di una relazione a qualsiasi coppia di elementi del modello. Tuttavia, se nella definizione DSL il flag è true per la relazione, potrebbero essere presenti più collegamenti ed è `Allow Duplicates` necessario usare `GetLinks` :
+ Per impostazione predefinita, non è consentito collegare più di un'istanza di una relazione a una coppia di elementi del modello. Se tuttavia nella definizione DSL il flag è true per la relazione, potrebbero essere presenti più collegamenti ed è necessario `Allow Duplicates` usare `GetLinks` :
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Sono disponibili anche altri metodi per l'accesso ai collegamenti. Ad esempio:
+ Esistono anche altri metodi per accedere ai collegamenti. Esempio:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -94,23 +95,23 @@ ms.locfileid: "112390971"
 
  `foreach (Person p in ParentsHaveChildren.GetChildren(henry)) { ... }`
 
- L'esempio usato più di frequente è la relazione , che collega un elemento del <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> modello alla forma che lo visualizza in un diagramma:
+ L'esempio usato più di frequente è la relazione, che collega un elemento del <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> modello alla forma che lo visualizza in un diagramma:
 
  `PresentationViewsSubject.GetPresentation(henry)[0] as PersonShape`
 
-### <a name="the-element-directory"></a>Directory dell'elemento
+### <a name="the-element-directory"></a>Directory degli elementi
  È possibile accedere a tutti gli elementi nell'archivio usando la directory degli elementi:
 
  `store.ElementDirectory.AllElements`
 
- Sono disponibili anche metodi per la ricerca di elementi, ad esempio:
+ Esistono anche metodi per la ricerca di elementi, ad esempio:
 
  `store.ElementDirectory.FindElements(Person.DomainClassId);`
 
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> Accesso alle informazioni sulle classi
- È possibile ottenere informazioni su classi, relazioni e altri aspetti della definizione DSL. Ad esempio:
+ È possibile ottenere informazioni sulle classi, le relazioni e altri aspetti della definizione DSL. Esempio:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -124,16 +125,16 @@ ms.locfileid: "112390971"
 
  `DomainRoleInfo sourceRole = relationship.DomainRole[0];`
 
- Le classi predecessore degli elementi del modello sono le seguenti:
+ Le classi predecessori degli elementi del modello sono le seguenti:
 
 - ModelElement: tutti gli elementi e le relazioni sono ModelElement
 
 - ElementLink: tutte le relazioni sono ElementLinks
 
 ## <a name="perform-changes-inside-a-transaction"></a><a name="transaction"></a> Eseguire modifiche all'interno di una transazione
- Ogni volta che il codice del programma modifica qualsiasi elemento nell'archivio, deve eseguire questa operazione all'interno di una transazione. Questo vale per tutti gli elementi del modello, le relazioni, le forme, i diagrammi e le relative proprietà. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Modeling.Transaction>.
+ Ogni volta che il codice del programma cambia qualsiasi elemento nello Store, deve farlo all'interno di una transazione. Questo vale per tutti gli elementi del modello, le relazioni, le forme, i diagrammi e le relative proprietà. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Modeling.Transaction>.
 
- Il metodo più pratico per gestire una transazione è con `using` un'istruzione racchiusa in `try...catch` un'istruzione :
+ Il metodo più pratico per gestire una transazione è con `using` un'istruzione racchiusa in un'istruzione `try...catch` :
 
 ```
 Store store; ...
@@ -161,7 +162,7 @@ catch (Exception ex)
 
  È possibile apportare un numero qualsiasi di modifiche all'interno di una transazione. È possibile aprire nuove transazioni all'interno di una transazione attiva.
 
- Per rendere permanenti le modifiche, è `Commit` necessario che la transazione venga eliminata. Se si verifica un'eccezione che non viene rilevata all'interno della transazione, l'archivio verrà reimpostato sullo stato precedente alle modifiche.
+ Per rendere permanenti le modifiche, è necessario `Commit` che la transazione venga eliminata. Se si verifica un'eccezione che non viene rilevata all'interno della transazione, l'archivio verrà reimpostato sullo stato prima delle modifiche.
 
 ## <a name="creating-model-elements"></a><a name="elements"></a> Creazione di elementi del modello
  Questo esempio aggiunge un elemento a un modello esistente:
@@ -186,28 +187,28 @@ using (Transaction t =
 
  Questo esempio illustra questi punti essenziali sulla creazione di un elemento:
 
-- Creare il nuovo elemento in una partizione specifica dell'archivio. Per gli elementi del modello e le relazioni, ma non le forme, questa è in genere la partizione predefinita.
+- Creare il nuovo elemento in una partizione specifica dello Store. Per gli elementi e le relazioni del modello, ma non per le forme, questa è in genere la partizione predefinita.
 
-- Renderla la destinazione di una relazione di incorporamento. In DslDefinition di questo esempio ogni persona deve essere la destinazione della relazione di incorporamento FamilyTreeHasPeople. A tale scopo, è possibile impostare la proprietà del ruolo FamilyTreeModel dell'oggetto Person o aggiungere person alla proprietà del ruolo People dell'oggetto FamilyTreeModel.
+- Impostare questa proprietà come destinazione di una relazione di incorporamento. In DslDefinition di questo esempio ogni persona deve essere la destinazione dell'incorporamento della relazione FamilyTreeHasPeople. A tale scopo, è possibile impostare la proprietà del ruolo FamilyTreeModel dell'oggetto Person o aggiungere person alla proprietà del ruolo People dell'oggetto FamilyTreeModel.
 
-- Impostare le proprietà di un nuovo elemento, in particolare la proprietà per la quale `IsName` è true in DslDefinition. Questo flag contrassegna la proprietà che serve a identificare l'elemento in modo univoco all'interno del proprietario. In questo caso, la proprietà Name ha tale flag.
+- Impostare le proprietà di un nuovo elemento, in particolare la proprietà per cui è `IsName` true in DslDefinition. Questo flag contrassegna la proprietà che serve per identificare l'elemento in modo univoco all'interno del relativo proprietario. In questo caso, la proprietà Name include tale flag.
 
-- La definizione DSL di questo DSL deve essere stata caricata nell'archivio. Se si scrive un'estensione, ad esempio un comando di menu, questa operazione in genere è già vera. In altri casi, è possibile caricare in modo esplicito il modello nello Store o usare [ModelBus](/previous-versions/ee904639(v=vs.140)) per caricarlo. Per altre informazioni, vedere [Procedura: Aprire un modello da file nel codice programma.](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- La definizione DSL di questo DSL deve essere stata caricata nell'archivio. Se si scrive un'estensione, ad esempio un comando di menu, questo sarà in genere già true. In altri casi, è possibile caricare in modo esplicito il modello nello Store o usare [ModelBus](/previous-versions/ee904639(v=vs.140)) per caricarlo. Per altre informazioni, vedere [Procedura: Aprire un modello da file nel codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
-  Quando si crea un elemento in questo modo, viene creata automaticamente una forma (se il DSL ha un diagramma). Viene visualizzato in una posizione assegnata automaticamente, con forma, colore e altre caratteristiche predefinite. Per controllare dove e come viene visualizzata la forma associata, vedere [Creazione di un elemento e della relativa forma.](#merge)
+  Quando si crea un elemento in questo modo, viene creata automaticamente una forma (se il DSL ha un diagramma). Viene visualizzato in una posizione assegnata automaticamente, con forma, colore e altre caratteristiche predefinite. Per controllare dove e come viene visualizzata la forma associata, vedere [Creazione di un elemento e della relativa forma](#merge).
 
 ## <a name="creating-relationship-links"></a><a name="links"></a> Creazione di collegamenti di relazione
- Nella definizione DSL di esempio sono definite due relazioni. Ogni relazione definisce una *proprietà role* nella classe a ogni estremità della relazione.
+ Nella definizione DSL di esempio sono definite due relazioni. Ogni relazione definisce una *proprietà del* ruolo nella classe a ogni estremità della relazione.
 
- Esistono tre modi per creare un'istanza di una relazione. Ognuno di questi tre metodi ha lo stesso effetto:
+ Esistono tre modi in cui è possibile creare un'istanza di una relazione. Ognuno di questi tre metodi ha lo stesso effetto:
 
-- Impostare la proprietà del lettore del ruolo di origine. Ad esempio:
+- Impostare la proprietà del lettore del ruolo di origine. Esempio:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Impostare la proprietà del ruolo lettore di destinazione. Ad esempio:
+- Impostare la proprietà del ruolo di destinazione. Esempio:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,15 +216,15 @@ using (Transaction t =
 
   - `henry.Children.Add(edward);`
 
-       La molteplicità di questo ruolo è `0..*` , quindi si aggiunge alla raccolta .
+       La molteplicità di questo ruolo è `0..*` , quindi si aggiunge all'insieme.
 
-- Costruire un'istanza della relazione in modo esplicito. Ad esempio:
+- Costruire un'istanza della relazione in modo esplicito. Esempio:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
   - `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
-  L'ultimo metodo è utile se si desidera impostare proprietà sulla relazione stessa.
+  L'ultimo metodo è utile se si desidera impostare le proprietà nella relazione stessa.
 
   Quando si crea un elemento in questo modo, viene creato automaticamente un connettore nel diagramma, ma ha una forma, un colore e altre caratteristiche predefinite. Per controllare la modalità di creazione del connettore associato, vedere [Creazione di un elemento e della relativa forma.](#merge)
 
@@ -237,19 +238,19 @@ Questa operazione eliminerà anche:
 
 - La relazione si collega a e dall'elemento . Ad esempio, `edward.Parents` non conterrà più `henry` .
 
-- Elementi nei ruoli per i quali il `PropagatesDelete` flag è true. Ad esempio, la forma che visualizza l'elemento verrà eliminata.
+- Elementi nei ruoli per cui il `PropagatesDelete` flag è true. Ad esempio, la forma che visualizza l'elemento verrà eliminata.
 
 Per impostazione predefinita, ogni relazione di incorporamento `PropagatesDelete` ha true nel ruolo di destinazione. `henry`L'eliminazione non elimina , ma elimina tutti gli oggetti `familyTree` `familyTree.Delete()` `Persons` .
 
 Per impostazione predefinita, `PropagatesDelete` non è true per i ruoli delle relazioni di riferimento.
 
-È possibile fare in modo che le regole di eliminazione omettono propagazioni specifiche quando si elimina un oggetto. Ciò è utile se si sostituisce un elemento per un altro. Specificare il GUID di uno o più ruoli per i quali l'eliminazione non deve essere propagata. Il GUID può essere ottenuto dalla classe di relazione:
+È possibile fare in modo che le regole di eliminazione omettono propagazioni specifiche quando si elimina un oggetto. Ciò è utile se si sostituisce un elemento per un altro. Specificare il GUID di uno o più ruoli per cui l'eliminazione non deve essere propagata. Il GUID può essere ottenuto dalla classe di relazione:
 
 `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
 Questo particolare esempio non avrebbe alcun effetto, perché `PropagatesDelete` è per i ruoli della `false` `ParentsHaveChildren` relazione.
 
-In alcuni casi, l'eliminazione viene impedita dall'esistenza di un blocco, nell'elemento o in un elemento che verrebbe eliminato dalla propagazione. È possibile usare `element.CanDelete()` per verificare se l'elemento può essere eliminato.
+In alcuni casi, l'eliminazione viene impedita dall'esistenza di un blocco, sull'elemento o su un elemento che verrebbe eliminato dalla propagazione. È possibile usare `element.CanDelete()` per verificare se l'elemento può essere eliminato.
 
 ## <a name="deleting-relationship-links"></a><a name="deletelinks"></a> Eliminazione di collegamenti di relazione
  È possibile eliminare un collegamento di relazione rimuovendo un elemento da una proprietà del ruolo:
@@ -271,7 +272,7 @@ In alcuni casi, l'eliminazione viene impedita dall'esistenza di un blocco, nell'
  `edward.FamilyTreeModel = anotherFamilyTree;`
 
 ## <a name="re-ordering-the-links-of-a-relationship"></a><a name="reorder"></a> Riordino dei collegamenti di una relazione
- I collegamenti di una relazione specifica di origine o di destinazione di un particolare elemento del modello hanno una sequenza specifica. Vengono visualizzati nell'ordine in cui sono stati aggiunti. Ad esempio, questa istruzione restituisce sempre gli elementi figlio nello stesso ordine:
+ I collegamenti di una relazione specifica di origine o destinazione di un particolare elemento del modello hanno una sequenza specifica. Vengono visualizzati nell'ordine in cui sono stati aggiunti. Ad esempio, questa istruzione restituisce sempre gli elementi figlio nello stesso ordine:
 
  `foreach (Person child in henry.Children) ...`
 
@@ -329,13 +330,13 @@ using (Transaction t = targetDiagram.Store.
 |-|-|
 |Classe di dominio|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Relazione di dominio|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
-|Con forme|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
+|Forma|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
 |Connettore|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |Diagramma|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 
- Un elemento in un diagramma rappresenta in genere un elemento del modello. In genere (ma non sempre), un rappresenta <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> un'istanza della classe di dominio e un oggetto rappresenta <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> un'istanza di relazione di dominio. La <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relazione collega un nodo o una forma di collegamento all'elemento del modello che rappresenta.
+ Un elemento in un diagramma rappresenta in genere un elemento del modello. In genere (ma non sempre), un rappresenta <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> un'istanza della classe di dominio e un rappresenta <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> un'istanza di relazione di dominio. La <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relazione collega una forma di nodo o collegamento all'elemento del modello che rappresenta.
 
- Ogni forma nodo o collegamento appartiene a un diagramma. Una forma di collegamento binario connette due forme nodo.
+ Ogni forma nodo o collegamento appartiene a un diagramma. Una forma collegamento binario connette due forme nodo.
 
  Le forme possono avere forme figlio in due set. Una forma nel `NestedChildShapes` set è limitata al rettangolo di selezione del relativo elemento padre. Una forma nell'elenco può essere visualizzata all'esterno o in parte all'esterno dei limiti dell'elemento padre, ad esempio `RelativeChildShapes` un'etichetta o una porta. Un diagramma non dispone `RelativeChildShapes` di e `Parent` .
 
@@ -428,7 +429,7 @@ FamilyTreeDiagram diagram =
 
 ### <a name="creating-an-element-and-its-shape"></a><a name="merge"></a> Creazione di un elemento e della relativa forma
 
-Quando si crea un elemento e lo si collega all'albero delle relazioni di incorporamento, viene creata e associata automaticamente una forma. Questa operazione viene eseguita dalle regole di "correzione" che vengono eseguite alla fine della transazione. Tuttavia, la forma verrà visualizzata in una posizione assegnata automaticamente e la forma, il colore e altre caratteristiche avranno valori predefiniti. Per controllare la modalità di creazione della forma, è possibile usare la funzione di unione. È innanzitutto necessario aggiungere gli elementi da aggiungere a un elemento ElementGroup e quindi unire il gruppo nel diagramma.
+Quando si crea un elemento e lo si collega all'albero delle relazioni di incorporamento, viene creata e associata automaticamente una forma. Questa operazione viene eseguita dalle regole di "correzione" che vengono eseguite alla fine della transazione. Tuttavia, la forma verrà visualizzata in una posizione assegnata automaticamente e la forma, il colore e altre caratteristiche avranno valori predefiniti. Per controllare la modalità di creazione della forma, è possibile usare la funzione di unione. È prima necessario aggiungere gli elementi da aggiungere a un elemento ElementGroup e quindi unire il gruppo nel diagramma.
 
 Questo metodo:
 

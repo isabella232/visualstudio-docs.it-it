@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia enumera i punti di interruzione associati associati a un punto di interruzione o un evento associato a un punto di interruzione in sospeso.
+description: Questa interfaccia enumera i punti di interruzione associati associati a un punto di interruzione in sospeso o a un evento associato al punto di interruzione.
 title: IEnumDebugBoundBreakpoints2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6942bb8388afd596221325f86c3934b684af6f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 60a02bb50d51304cfef1be95ab375e7e0ef4c428e85820f78c2077e8752db508
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080190"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389397"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
-Questa interfaccia enumera i punti di interruzione associati associati a un punto di interruzione o un evento associato a un punto di interruzione in sospeso.
+Questa interfaccia enumera i punti di interruzione associati associati a un punto di interruzione in sospeso o a un evento associato al punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,19 +31,19 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia come parte del supporto per i punti di interruzione. Questa interfaccia deve essere implementata se sono supportati punti di interruzione.
+ Il motore di debug implementa questa interfaccia come parte del supporto per i punti di interruzione. Questa interfaccia deve essere implementata se sono supportati punti di interruzione.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamate di Visual Studio:
+ Visual Studio chiamate:
 
-- [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) per ottenere questa interfaccia che rappresenta un elenco di tutti i punti di interruzione attivati.
+- [EnumBreakpoints per](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) ottenere questa interfaccia che rappresenta un elenco di tutti i punti di interruzione attivati.
 
-- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) per ottenere questa interfaccia che rappresenta un elenco di tutti i punti di interruzione associati.
+- [EnumBoundBreakpoints per](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) ottenere questa interfaccia che rappresenta un elenco di tutti i punti di interruzione associati.
 
-- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) per ottenere questa interfaccia che rappresenta un elenco di tutti i punti di interruzione associati al punto di interruzione in sospeso.
+- [EnumBoundBreakpoints per](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) ottenere questa interfaccia che rappresenta un elenco di tutti i punti di interruzione associati a tale punto di interruzione in sospeso.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IEnumDebugBoundBreakpoints2` .
+ Nella tabella seguente vengono illustrati i metodi di `IEnumDebugBoundBreakpoints2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -53,12 +54,12 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Ottiene il numero di punti di interruzione associati in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- Visual Studio USA i punti di interruzione associati rappresentati da questa interfaccia per aggiornare la visualizzazione dei punti di interruzione nell'IDE.
+ Visual Studio i punti di interruzione associati rappresentati da questa interfaccia per aggiornare la visualizzazione dei punti di interruzione nell'IDE.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

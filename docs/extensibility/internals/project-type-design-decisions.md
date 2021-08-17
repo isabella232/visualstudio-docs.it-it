@@ -1,6 +1,6 @@
 ---
-title: Decisioni di progettazione del tipo di progetto | Microsoft Docs
-description: Per informazioni sull'elemento, sulla persistenza dei file di progetto e sulle decisioni di progettazione del meccanico di impegno, vedere prima di estendere Visual Studio creando un nuovo tipo di progetto.
+title: Project Decisioni di progettazione dei tipi | Microsoft Docs
+description: Informazioni sull'elemento, sulla persistenza del file di progetto e sulle decisioni di progettazione del meccanismo di impegno da prendere prima di estendere Visual Studio creando un nuovo tipo di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,50 +13,51 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f1a90082b0ba9d18336463b26cf72acea39851b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 07559518e0873d2392b35594cc5fbff6f7de0c32d1a8810895a8e348da83f4f5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064309"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401414"
 ---
 # <a name="project-type-design-decisions"></a>Decisioni di progettazione relative al tipo di progetto
-Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisioni di progettazione per il tipo di progetto. È necessario decidere quali tipi di elementi saranno contenuti nei progetti, come verranno salvati in modo permanente i file di progetto e il modello di impegno che verrà usato.
+Prima di creare un nuovo tipo di progetto, è necessario prendere diverse decisioni di progettazione relative al tipo di progetto. È necessario decidere quali tipi di elementi saranno contenuti nei progetti, come verranno resi persistenti i file di progetto e quale modello di impegno verrà utilizzato.
 
 ## <a name="project-items"></a>Elementi del progetto
- Il progetto utilizzerà file o oggetti astratti? Se si usano i file, saranno file basati su riferimenti o basati su directory? I file o gli oggetti astratti saranno locali o remoti?
+ Il progetto userà file o oggetti astratti? Se si usano file, saranno file basati su riferimento o basati su directory? I file o gli oggetti astratti saranno locali o remoti?
 
- Gli elementi di un progetto possono essere file oppure possono essere più oggetti astratti, ad esempio oggetti in un repository di database o connessioni dati su Internet. Se gli elementi sono file, il progetto può essere basato su riferimenti o su un progetto basato su directory.
+ Gli elementi in un progetto possono essere file o essere oggetti più astratti, ad esempio oggetti in un repository di database o connessioni dati in Internet. Se gli elementi sono file, il progetto può essere un progetto basato su riferimento o basato su directory.
 
- Nei progetti basati su riferimenti, gli elementi possono essere visualizzati in più di un progetto. Tuttavia, il file effettivo rappresentato da un elemento si trova in una sola directory. Nei progetti basati su directory tutti gli elementi del progetto sono presenti nella struttura di directory.
+ Nei progetti basati su riferimenti, gli elementi possono essere visualizzati in più di un progetto. Tuttavia, il file effettivo rappresentato da un elemento si trova in una sola directory. Nei progetti basati su directory tutti gli elementi di progetto sono presenti nella struttura di directory.
 
  Gli elementi locali vengono archiviati nello stesso computer in cui è installata l'applicazione. Gli elementi remoti possono essere archiviati in un server separato in una rete locale o in un'altra posizione su Internet.
 
-## <a name="project-file-persistence"></a>Persistenza file di progetto
- I dati verranno archiviati in file System Flat comuni o nell'archiviazione strutturata? I file verranno aperti usando un editor standard o un editor specifico del progetto?
+## <a name="project-file-persistence"></a>Project Persistenza dei file
+ I dati verranno archiviati in file system flat comuni o in un archivio strutturato? I file verranno aperti usando un editor standard o un editor specifico del progetto?
 
- Per salvare in modo permanente i dati, la maggior parte delle applicazioni Salva i dati in un file e quindi li legge quando un utente deve rivedere o modificare le informazioni.
+ Per rendere persistenti i dati, la maggior parte delle applicazioni salva i dati in un file e quindi la legge quando un utente deve rivedere o modificare le informazioni.
 
- L'archiviazione strutturata, nota anche come file composti, viene in genere usata quando più oggetti Component Object Model (COM) devono archiviare i dati salvati in modo permanente in un unico file. Con l'archiviazione strutturata, diversi componenti software possono condividere un singolo file su disco.
+ L'archiviazione strutturata, detta anche file composti, viene in genere usata quando diversi oggetti Component Object Model (COM) devono archiviare i dati persistenti in un singolo file. Con l'archiviazione strutturata, diversi componenti software possono condividere un singolo file su disco.
 
- Sono disponibili diverse opzioni da considerare per quanto riguarda la persistenza per gli elementi del progetto. È possibile eseguire una delle opzioni seguenti:
+ Sono disponibili diverse opzioni da prendere in considerazione per la persistenza per gli elementi nel progetto. È possibile eseguire una delle opzioni seguenti:
 
-- Salvare ogni file singolarmente quando è stato modificato.
+- Salvare ogni file singolarmente dopo che è stato modificato.
 
-- Acquisire molte transazioni in un'unica operazione di **salvataggio** .
+- Acquisire molte transazioni in una singola operazione **di** salvataggio.
 
-- Salvare i file localmente, quindi pubblicarli in un server o usare un altro approccio per salvare gli elementi di progetto quando l'elemento rappresenta una connessione dati a un oggetto remoto.
+- Salvare i file in locale e quindi pubblicare in un server o usare un altro approccio per salvare gli elementi di progetto quando l'elemento rappresenta una connessione dati a un oggetto remoto.
 
-  Per ulteriori informazioni sulla persistenza, vedere [persistenza del progetto](../../extensibility/internals/project-persistence.md) e [apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md).
+  Per altre informazioni sulla persistenza, vedere [Salvataggio Project salvataggio permanente](../../extensibility/internals/project-persistence.md) e Apertura e salvataggio Project [elementi](../../extensibility/internals/opening-and-saving-project-items.md).
 
-## <a name="project-commitment-model"></a>Modello di impegno del progetto
- Gli oggetti dati salvati in modo permanente verranno aperti in modalità diretta o in modalità transazionale?
+## <a name="project-commitment-model"></a>Project Modello di impegno
+ Gli oggetti dati persistenti verranno aperti in modalità diretta o in modalità transazione?
 
  Quando gli oggetti dati vengono aperti in modalità diretta, le modifiche apportate ai dati vengono incorporate immediatamente o quando l'utente salva manualmente il file.
 
- Quando gli oggetti dati vengono aperti usando la modalità transazionale, le modifiche vengono salvate in un percorso temporaneo in memoria e non vengono salvate fino a quando l'utente sceglie di salvare il file manualmente. A questo punto, tutte le modifiche devono essere eseguite insieme o non verrà apportata alcuna modifica.
+ Quando gli oggetti dati vengono aperti in modalità transazione, le modifiche vengono salvate in un percorso temporaneo in memoria e non ne viene eseguito il commit fino a quando l'utente non sceglie manualmente di salvare il file. In quel momento, tutte le modifiche devono essere eseguite insieme o non verranno apportate modifiche.
 
 ## <a name="see-also"></a>Vedi anche
 - [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)

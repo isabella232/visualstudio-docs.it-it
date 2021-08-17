@@ -8,14 +8,15 @@ ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0cb43e75f626f82a0b47bb76bc8be64615ccc333e40e3f22c94e90ff223e239d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933102"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121418930"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Controllare gli stati precedenti delle app usando la funzionalità per tornare indietro di IntelliTrace in Visual Studio (Visual Studio Enterprise)
 
@@ -34,13 +35,13 @@ In questa esercitazione si apprenderà come:
 
 1. Aprire il progetto in Visual Studio Enterprise.
 
-1. Aprire **strumenti**  >  **Opzioni**  >  impostazioni **IntelliTrace** e selezionare l'opzione **eventi e snapshot IntelliTrace**.
+1. Aprire **le impostazioni** di IntelliTrace opzioni strumenti e selezionare  >    >   **l'opzione Eventi e snapshot intelliTrace**.
 
     A partire da Visual Studio 2017 Enterprise versione 15.9 Preview 2 questa opzione è **IntelliTrace snapshots (managed and native)** (Snapshot IntelliTrace (gestiti e nativi)).
 
-    ![Abilitare la modalità eventi e snapshot IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Abilitare la modalità eventi e snapshot IntelliTrace")
+    ![Abilitare la modalità Snapshot e eventi di IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Abilitare la modalità Snapshot e eventi IntelliTrace")
 
-1. Se si desidera configurare le opzioni per la visualizzazione degli snapshot in caso di eccezioni, scegliere **IntelliTrace**  >  **Avanzate** dalla finestra di dialogo **Opzioni** .
+1. Se si desidera configurare le opzioni per la visualizzazione degli snapshot in caso di eccezioni, scegliere **IntelliTrace**  >  **Avanzato** nella **finestra di dialogo** Opzioni.
 
     Queste opzioni sono disponibili a partire da Visual Studio 2017 Enterprise versione 15.7.
 
@@ -49,15 +50,15 @@ In questa esercitazione si apprenderà come:
     Quando si abilitano snapshot ed eventi, per impostazione predefinita viene abilitata anche la creazione di snapshot in caso di eccezioni. È possibile disabilitare gli snapshot in caso di eccezioni deselezionando l'opzione che consente di **raccogliere gli snapshot per gli eventi di eccezione**. Quando questa funzionalità è abilitata, vengono creati snapshot per le eccezioni non gestite. Per le eccezioni gestite, vengono creati snapshot solo se viene generata l'eccezione e se non si tratta di una rigenerazione di un'eccezione generata in precedenza. È possibile impostare un numero massimo di snapshot in caso di eccezioni selezionando un valore dall'elenco a discesa. Viene applicato il valore massimo ogni volta che l'app passa alla modalità di interruzione, ad esempio, quando l'app raggiunge un punto di interruzione.
 
     > [!NOTE]
-    > Gli snapshot vengono creati solo per gli eventi di eccezione registrati da IntelliTrace. Per il codice gestito, è possibile specificare quali eventi sono i record IntelliTrace selezionando **strumenti**  >  **Opzioni**  >  **eventi IntelliTrace**.
+    > Gli snapshot vengono creati solo per gli eventi di eccezione registrati da IntelliTrace. Per il codice gestito, è possibile specificare gli eventi registrati da IntelliTrace **selezionando** Opzioni strumenti  >    >  **Eventi IntelliTrace**.
 
 1. Impostare nel progetto uno o più punti di interruzione e avviare il debug (premere **F5**) o iniziare il debug eseguendo le istruzioni del codice (**F10** o **F11**).
 
-    IntelliTrace crea uno snapshot del processo dell'applicazione per ogni passaggio del debugger, evento punto di interruzione ed evento di eccezione non gestita. Questi eventi vengono registrati nella scheda **Eventi** nella finestra **Strumenti di diagnostica** insieme ad altri eventi IntelliTrace. Per aprire questa finestra, scegliere **debug**  >  **Windows**  >  **Mostra strumenti di diagnostica**.
+    IntelliTrace crea uno snapshot del processo dell'applicazione per ogni passaggio del debugger, evento punto di interruzione ed evento di eccezione non gestita. Questi eventi vengono registrati nella scheda **Eventi** nella finestra **Strumenti di diagnostica** insieme ad altri eventi IntelliTrace. Per aprire questa finestra, scegliere **Debug**  >  **Windows**  >  **Mostra Strumenti di diagnostica**.
 
     Per indicare gli snapshot disponibili, viene visualizzata un'icona a forma di fotocamera accanto ai relativi eventi.
 
-    ![Scheda eventi con snapshot](../debugger/media/intellitrace-events-tab-with-snapshots.png "Scheda eventi con snapshot su punti di interruzione e passaggi")
+    ![Scheda Eventi con snapshot](../debugger/media/intellitrace-events-tab-with-snapshots.png "Scheda Eventi con snapshot su punti di interruzione e passaggi")
 
     Per motivi di prestazioni gli snapshot non vengono acquisiti quando le istruzioni vengono eseguite molto rapidamente. Se non appare l'icona della fotocamera accanto al passaggio, provare a eseguire l'istruzione più lentamente.
 
@@ -65,9 +66,9 @@ In questa esercitazione si apprenderà come:
 
 1. Per spostarsi tra gli eventi, usare i pulsanti **Passo indietro (Alt + [)** e **Passo avanti (Alt + ])** sulla barra degli strumenti di Debug.
 
-    Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **eventi** della **finestra di strumenti di diagnostica**. L'esecuzione di un'istruzione avanti o indietro di un evento attiva automaticamente il [debug cronologico](../debugger/historical-debugging.md) nell'evento selezionato.
+    Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella **scheda** Eventi nella **finestra Strumenti di diagnostica .** L'esecuzione di istruzioni indietro o avanti in un evento attiva automaticamente [il debug cronologico](../debugger/historical-debugging.md) sull'evento selezionato.
 
-    ![Pulsanti avanti e indietro passaggio](../debugger/media/intellitrace-step-back-icons-description.png "Pulsanti avanti e indietro passaggio")
+    ![Pulsanti Indietro e Avanti](../debugger/media/intellitrace-step-back-icons-description.png "Pulsanti Indietro e Avanti")
 
     Quando si torna indietro o si va avanti, Visual Studio passa alla modalità di debug cronologico. In questa modalità il contesto del debugger passa al momento in cui è stato registrato l'evento selezionato. Visual Studio, inoltre, sposta il puntatore sulla riga di codice corrispondente nella finestra di origine.
 
@@ -75,17 +76,17 @@ In questa esercitazione si apprenderà come:
 
     Quindi, ad esempio, se è stato raggiunto un punto di interruzione ed è stato acquisito un passaggio (**F10**), il pulsante **Passo indietro** mette Visual Studio in modalità cronologica alla riga di codice corrispondente al punto di interruzione.
 
-    ![Attivazione della modalità cronologica di un evento con uno snapshot](../debugger/media/intellitrace-historical-mode-with-snapshot.png "Attivazione della modalità cronologica di un evento con uno snapshot")
+    ![Attivazione della modalità cronologica in un evento con uno snapshot](../debugger/media/intellitrace-historical-mode-with-snapshot.png "Attivazione della modalità cronologica in un evento con uno snapshot")
 
 2. Per tornare all'esecuzione in diretta, scegliere **Continua (F5)** o fare clic sul collegamento **Torna al debug attivo** nella barra informazioni.
 
-3. È anche possibile visualizzare uno snapshot dalla scheda **eventi** . A tale scopo, selezionare un evento con uno snapshot e fare clic su **Attiva debug cronologico**.
+3. È anche possibile visualizzare uno snapshot dalla **scheda** Eventi. A tale scopo, selezionare un evento con uno snapshot e fare clic **su Attiva debug cronologico**.
 
-    ![Attivare il debug cronologico su un evento](../debugger/media/intellitrace-activate-historical-debugging.png "Attivare il debug cronologico su un evento")
+    ![Attivare il debug cronologico in un evento](../debugger/media/intellitrace-activate-historical-debugging.png "Attivare il debug cronologico per un evento")
 
     A differenza del comando **Imposta istruzione successiva**, la visualizzazione di uno snapshot non esegue di nuovo il codice, ma offre una vista statica dello stato dell'applicazione in un punto nel tempo che si è verificato in passato.
 
-    ![Cenni preliminari sul passaggio di IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Cenni preliminari sul passaggio di IntelliTrace")
+    ![Panoramica del passaggio indietro di IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Panoramica della funzionalità Per tornare indietro di IntelliTrace")
 
     Per altre informazioni su come controllare le variabili in Visual Studio, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 

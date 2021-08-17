@@ -1,6 +1,6 @@
 ---
 title: -Rebuild (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando Ricompila devenv per pulire e quindi compilare la configurazione della soluzione specificata.
+description: Informazioni su come usare l'opzione della riga di comando Rebuild devenv per pulire e quindi compilare la configurazione della soluzione specificata.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 975e93fb2bb9f09810c8b6c6c1877bec983ca0a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a3ef4a0394f62e214865e89f08d6d65771954e8724686db27a76ded978d7b46
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958167"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400114"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -35,7 +36,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 ## <a name="arguments"></a>Argomenti
 
-- *NomeSoluzione*
+- *Solutionname*
 
   Obbligatorio. Il percorso completo e il nome del file della soluzione.
 
@@ -51,7 +52,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
   facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la ricompilazione del `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *SolnConfigName*.
 
-- `/Out`*OutputFileName*
+- `/Out`*OutputFilename*
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 

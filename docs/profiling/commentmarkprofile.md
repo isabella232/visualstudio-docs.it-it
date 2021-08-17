@@ -1,6 +1,6 @@
 ---
 title: CommentMarkProfile | Microsoft Docs
-description: Utilizzare la funzione CommentMarkProfile per inserire un marcatore numerico e una stringa di testo nel file con *estensione VSP* .
+description: Usare la funzione CommentMarkProfile per inserire un marcatore numerico e una stringa di testo nel file *con estensione vsp.*
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,18 +11,19 @@ ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2518a7dbd97643b1eaa49daa8dd3e6007dcdbb93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f407609ec060fb141a1a4c6b6d2e6a2ab07d812662cf765e89d1d1527f62adcb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941294"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121396923"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-La `CommentMarkProfile` funzione inserisce un marcatore numerico e una stringa di testo nel file con *estensione VSP* . Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione `CommentMarkProfile`.
+La `CommentMarkProfile` funzione inserisce un marcatore numerico e una stringa di testo nel file *con estensione vsp.* Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione `CommentMarkProfile`.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +58,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Commenti
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno di VSInstr o con le funzioni CommentMarkAtProfile, CommentMarkProfile o MarkProfile.
 
- I contrassegni del profilo hanno ambito globale. Ad esempio, è possibile usare un contrassegno del profilo inserito in un thread per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread nel file con estensione *VSP* .
+ I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno di profilo inserito in un thread può essere usato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread nel file *con estensione vsp.*
 
 > [!IMPORTANT]
 > Il metodo CommentMarkProfile può essere usato solo con la strumentazione.
@@ -113,4 +114,4 @@ void ExerciseCommentMarkProfile()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

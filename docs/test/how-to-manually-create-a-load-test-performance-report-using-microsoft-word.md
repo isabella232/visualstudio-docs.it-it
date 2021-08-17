@@ -1,6 +1,6 @@
 ---
-title: Creare un report delle prestazioni del test di carico usando MS Word
-description: Informazioni su come creare manualmente i report di test di carico di Microsoft Word copiando e incollando i dati dalla visualizzazione di riepilogo di Load Risultati test e grafici.
+title: Creare un report di prestazioni del test di carico con MS Word
+description: Informazioni su come creare manualmente Microsoft Word report di test di carico copiando e incollando i dati dalla visualizzazione Riepilogo Risultati test caricamento e dalla visualizzazione grafici.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +11,13 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: a7b5246e75b226c04f7dfa2e0e649bcdb85afe8a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: dd31dde1e484f7223e50ab552c0eeebfa28a963b6a66122963e04e3a2bdc0b8e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971882"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121395201"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word
 
@@ -32,7 +33,7 @@ ms.locfileid: "99971882"
 
 ## <a name="copy-summary-view-data"></a>Copiare i dati della visualizzazione Riepilogo
 
-1. Nel **risultati test di carico**, se la visualizzazione riepilogo non è attualmente visualizzata, fare clic su **Riepilogo** sulla barra degli strumenti.
+1. In **Carica Risultati test**, se la visualizzazione riepilogo non è attualmente visualizzata, fare clic **su Riepilogo** sulla barra degli strumenti.
 
 2. Nella visualizzazione Riepilogo fare clic con il pulsante destro del mouse e scegliere **Seleziona tutto**.
 
@@ -44,7 +45,7 @@ ms.locfileid: "99971882"
 
 ## <a name="copy-graph-view-data"></a>Copiare i dati della visualizzazione Grafici
 
-1. Nel **risultati test di carico**, se la visualizzazione grafici non è attualmente visualizzata, scegliere **grafici** nella barra degli strumenti.
+1. In **Carica Risultati test**, se la visualizzazione grafici non è attualmente visualizzata, scegliere **Grafici sulla** barra degli strumenti.
 
 2. (Facoltativo) Ingrandire il grafico specifico che si vuole copiare nel documento di Microsoft Word, come illustrato nella figura seguente. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 

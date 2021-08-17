@@ -1,23 +1,22 @@
 ---
 title: 'Passaggio 1: Creare un progetto e aggiungere etichette al modulo'
-description: Informazioni su come creare il progetto, aggiungere etichette, un pulsante e altri controlli a un modulo e impostare le proprietà per ogni controllo aggiunto.
+description: Informazioni su come creare il progetto, aggiungere etichette, un pulsante e altri controlli a un form e impostare le proprietà per ogni controllo aggiunto.
 ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0400c29e53c45ad9a98e7edca78fd2cf9741fcf0
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 80af3a97a70a176db0257055185240690c5f27691eb29cb75eefa8809d16614f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307752"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400016"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
 
@@ -30,7 +29,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ::: moniker range="vs-2017"
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **progetto**.
+1. Sulla barra dei menu scegliere **File** > **nuovo** > **Project**.
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
@@ -45,13 +44,13 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ::: moniker range=">=vs-2019"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop dall'elenco** **Tipo di** progetto.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop nell'elenco** **Project tipo di** dati.
 
-   Dopo aver applicato il filtro **Tipo** di progetto, scegliere il **modello App Windows Forms (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
+   Dopo aver applicato il filtro **Project** tipo, scegliere il modello Windows **Forms App (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
 
    ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
@@ -66,7 +65,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *QuizMatematico* nella casella **Nome del progetto**. Scegliere quindi **Crea.**
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *QuizMatematico* nella casella **Nome del progetto**. Scegliere quindi **Crea**.
 
 ::: moniker-end
 
@@ -102,7 +101,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 6. Nella finestra **Proprietà** scegliere la **proprietà Text** e quindi premere **BACKSPACE** per cancellarne il valore.
 
-7. Scegliere il segno più ( ) accanto alla proprietà Font e quindi modificare il valore della proprietà **+** **Size** in **15,75.** 
+7. Scegliere il segno più ( ) accanto alla proprietà Font e quindi impostare il valore della proprietà **+** **Size** su **15,75.** 
 
      È possibile modificare diverse proprietà del tipo di carattere, come illustrato nella schermata seguente.
 
@@ -116,7 +115,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>Per aggiungere controlli per i problemi di addizione
 
-1. Aggiungere un controllo Etichetta dalla Casella **degli strumenti** e quindi impostarne la **proprietà Text** su **?** (punto interrogativo).
+1. Aggiungere un controllo Label dalla Casella **degli strumenti** e quindi impostarne la **proprietà Text** su **?** (punto interrogativo).
 
 2. Impostare la proprietà **AutoSize** su **False**.
 
@@ -198,7 +197,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 6. Impostare il valore della proprietà **TabIndex** per il controllo **startButton** su **1**.
 
     > [!NOTE]
-    > La **proprietà TabIndex** imposta l'ordine dei controlli quando l'emittente del quiz sceglie **tab.** Per verificare il funzionamento, aprire una finestra di dialogo qualsiasi, ad esempio sulla barra dei menu, scegliere **Apri** file e quindi premere  >   **TAB** alcune volte. Osservare come il cursore si sposta dal controllo per controllare ogni volta che si sceglie **il tasto TAB.** Un programmatore ha deciso l'ordine quando ha creato il modulo.
+    > La **proprietà TabIndex** imposta l'ordine dei controlli quando l'emittente del quiz sceglie **tab.** Per visualizzare il funzionamento, aprire una qualsiasi finestra di dialogo( ad esempio, sulla barra dei menu scegliere **Apri** file ), quindi premere  >   **TAB** più volte. Osservare come il cursore si sposta dal controllo per controllare ogni volta che si sceglie **tab.** Un programmatore ha deciso l'ordine quando ha creato il modulo.
 
 7. Impostare il valore della proprietà **TabIndex** per il controllo somma NumericUpDown su **2**, per il controllo differenza su **3**, per il controllo prodotto su **4** e per il controllo quoziente su **5**.
 
@@ -212,4 +211,4 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 - Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 2: Creare un problema di addizione casuale.](../ide/step-2-create-a-random-addition-problem.md)**
 
-- Per tornare all'argomento di panoramica, vedere [Esercitazione 2: Creare un quiz matematico](../ide/tutorial-2-create-a-timed-math-quiz.md)a tempo.
+- Per tornare all'argomento di panoramica, vedere [Esercitazione 2: Creare un quiz matematico a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)

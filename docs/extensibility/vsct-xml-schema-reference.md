@@ -11,22 +11,23 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d82cda9c91642b094deea50eda02676f9bb73f3
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f3c1a09a7000b19980c14cd71fa02b600a2de9aea9fd514c1caa8e28a02307c1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905228"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400504"
 ---
 # <a name="vsct-xml-schema-reference"></a>Informazioni di riferimento sullo schema XML VSCT
 Fornisce una tabella di elementi dello schema del compilatore di tabelle comandi, con gli elementi figlio e gli attributi consentiti per ognuno.
 
- Un file di configurazione della tabella dei comandi basato su XML (con estensione vsct) definisce gli elementi di comando forniti da un vspackage all'ambiente di sviluppo integrato (IDE). Questi elementi includono voci di menu, menu, barre degli strumenti e caselle combinate.
+ Un file di configurazione della tabella dei comandi basato su XML (con estensione vsct) definisce gli elementi di comando forniti da un pacchetto VSPackage all'ambiente di sviluppo integrato (IDE). Questi elementi includono voci di menu, menu, barre degli strumenti e caselle combinate.
 
 > [!NOTE]
-> Il compilatore VSCT può eseguire un preprocessore nel file con estensione vsct. Poiché si tratta in genere del preprocessore C++, è possibile definire macro include e con la stessa sintassi usata nei file C++. Esempi sono disponibili nel file con estensione vsct creato dalla **Creazione** guidata nuovo progetto per un progetto VSPackage.
+> Il compilatore VSCT può eseguire un preprocessore nel file con estensione vsct. Poiché si tratta in genere del preprocessore C++, è possibile definire le macro includes e con la stessa sintassi usata nei file C++. Esempi di questo tipo vengono forniti nel file con estensione vsct creato dalla procedura guidata **Project** per un progetto VSPackage.
 
 ## <a name="optional-elements"></a>Elementi facoltativi
  Alcuni elementi VSCT sono facoltativi. Se non `Parent` viene specificato un argomento, Group_Undefined:0 sarà implicito. Se non `Icon` viene specificato un argomento, guidOfficeIcon:msotcidNoIcon verrà implicito. Quando viene definito un tasto di scelta rapida, l'emulazione, in genere inutilizzata, è facoltativa.
@@ -39,7 +40,7 @@ Fornisce una tabella di elementi dello schema del compilatore di tabelle comandi
 
 - { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }
 
-  È possibile usare commenti XML, ma gli strumenti dell'interfaccia utente grafica (GUI) di round trip potrebbero eliminarli. Il contenuto degli \<Annotation> elementi viene mantenuto indipendentemente dal formato.
+  È possibile usare commenti XML, ma è possibile che gli strumenti dell'interfaccia utente grafica (GUI) di round trip li scartino. Il contenuto degli \<Annotation> elementi viene mantenuto indipendentemente dal formato.
 
 ## <a name="schema-hierarchy"></a>Gerarchia dello schema
  Un file con estensione vsct include gli elementi principali seguenti.
@@ -74,6 +75,6 @@ Fornisce una tabella di elementi dello schema del compilatore di tabelle comandi
 
 - [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Routing dei comandi in VSPackage](../extensibility/internals/command-routing-in-vspackages.md)
