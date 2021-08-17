@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d4d2d1d30c21bcfd7b6ee47eba9a4ed97f26e67f768779f474c9e2f33dbfa8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dc5d96f7fd4381b129b88b388ec6ecfeb8a8198b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121386135"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055510"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e per altre parti interessate e di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
@@ -131,7 +131,7 @@ Assert (countAfter == countBefore = 1);
 
  Da un punto di vista del test, un modello di requisiti può essere considerato un metodo abbreviato per i test. È quindi importante gestire la relazione tra i test e il modello in tutto il progetto.
 
-## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Collegamento di test case agli elementi del modello
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Collegamento di test case a elementi del modello
  Se il progetto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.
 
  È possibile collegare i test a tutti i tipi di elemento. Di seguito sono riportati alcuni esempi:
@@ -150,7 +150,7 @@ Assert (countAfter == countBefore = 1);
 
 1. In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Può trattarsi di un elemento di lavoro Storia utente, Requisito o Caso d'uso, a seconda del modello di processo utilizzato dal progetto con Team Foundation. Per altre informazioni, vedere [Informazioni sugli strumenti Agile e Sulla gestione dei progetti Agile.](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
+    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Può trattarsi di un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo utilizzato dal progetto con Team Foundation. Per altre informazioni, vedere [About Agile tools (Informazioni sugli strumenti Agile) e Agile project management (Gestione dei progetti Agile).](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
 2. Collegare l'elemento di lavoro requisito a uno o più elementi del modello.
 

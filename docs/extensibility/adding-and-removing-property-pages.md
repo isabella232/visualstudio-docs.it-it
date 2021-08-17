@@ -1,6 +1,6 @@
 ---
 title: Aggiunta e rimozione di pagine delle proprietà | Microsoft Docs
-description: Informazioni su come aggiungere e rimuovere pagine delle proprietà in Progettazione progetti che forniscono una posizione centralizzata per la gestione delle proprietà del progetto in Visual Studio.
+description: Informazioni su come aggiungere e rimuovere pagine delle proprietà in Progettazione Project che forniscono una posizione centralizzata per la gestione delle proprietà del progetto in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,29 +12,30 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8323225074a1644621f9856fdb20a219e2c8e5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f4b79377258084cafd41b031504a983f6a23d109
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059990"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073617"
 ---
 # <a name="add-and-remove-property-pages"></a>Aggiungere e rimuovere pagine delle proprietà
 
-Progettazione progetti fornisce una posizione centralizzata per la gestione delle proprietà, delle impostazioni e delle risorse del progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Viene visualizzato come una singola finestra nella [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) e contiene un numero di riquadri a destra a cui si accede tramite le schede a sinistra. I riquadri (spesso denominati pagine delle proprietà) in Progettazione progetti variano in base al tipo di progetto e alla lingua. È possibile accedere a Progettazione progetti con il comando **Proprietà** nel menu **progetto** .
+Progettazione Project offre una posizione centralizzata per la gestione di proprietà, impostazioni e risorse del progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Viene visualizzata come una singola finestra nell'ambiente di sviluppo integrato (IDE) e contiene una serie di riquadri a destra a cui si accede tramite le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] schede a sinistra. I riquadri (spesso definiti pagine delle proprietà) in Progettazione Project variano in base al tipo di progetto e al linguaggio. È Project è possibile accedere a Progettazione modelli **con** il comando Proprietà **Project** menu.
 
-Un sottotipo di progetto deve spesso visualizzare pagine delle proprietà aggiuntive in Progettazione progetti. Analogamente, alcuni sottotipi di progetto potrebbero richiedere la rimozione delle pagine delle proprietà predefinite. Per eseguire questa operazione, è necessario che il sottotipo di progetto implementi l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaccia ed esegua l'override del <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metodo. Eseguendo l'override di questo metodo e utilizzando `propId` il parametro contenente uno dei valori dell' <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumerazione, è possibile filtrare, aggiungere o rimuovere le proprietà del progetto. Ad esempio, potrebbe essere necessario aggiungere una pagina alle pagine delle proprietà dipendenti dalla configurazione. A tale scopo, è necessario filtrare le pagine delle proprietà dipendenti dalla configurazione e quindi aggiungere una nuova pagina all'elenco esistente.
+Un sottotipo di progetto deve spesso visualizzare pagine delle proprietà aggiuntive in Project progetti. Analogamente, alcuni sottotipi di progetto potrebbero richiedere la rimozione delle pagine delle proprietà incorporate. A tale scopo, il sottotipo di progetto deve implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> l'interfaccia ed eseguire l'override del <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metodo . Eseguendo l'override di questo metodo e usando il parametro contenente uno dei valori dell'enumerazione , è possibile `propId` filtrare, aggiungere o rimuovere le proprietà del <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> progetto. Ad esempio, potrebbe essere necessario aggiungere una pagina alle pagine delle proprietà dipendenti dalla configurazione. A tale scopo, è necessario filtrare le pagine delle proprietà dipendenti dalla configurazione e quindi aggiungere una nuova pagina all'elenco esistente.
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>Aggiungere e rimuovere pagine delle proprietà in Progettazione progetti
+## <a name="add-and-remove-property-pages-in-project-designer"></a>Aggiungere e rimuovere pagine delle proprietà in Project progettazione
 
 ### <a name="remove-a-property-page"></a>Rimuovere una pagina delle proprietà
 
-1. Eseguire l'override del `GetProperty(uint itemId, int propId, out object property)` metodo per filtrare le pagine delle proprietà e ottenere un `clsids` elenco.
+1. Eseguire `GetProperty(uint itemId, int propId, out object property)` l'override del metodo per filtrare le pagine delle proprietà e ottenere un `clsids` elenco.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -79,7 +80,7 @@ Un sottotipo di progetto deve spesso visualizzare pagine delle proprietà aggiun
     }
     ```
 
-2. Rimuovere la pagina **eventi di compilazione** dall' `clsids` elenco ottenuto.
+2. Rimuovere la **pagina Eventi di** compilazione dall'elenco `clsids` ottenuto.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,9 +114,9 @@ Un sottotipo di progetto deve spesso visualizzare pagine delle proprietà aggiun
     property = propertyPagesList;
     ```
 
-### <a name="add-a-property-page"></a>Aggiungi una pagina delle proprietà
+### <a name="add-a-property-page"></a>Aggiungere una pagina delle proprietà
 
-1. Creare una pagina delle proprietà che si desidera aggiungere.
+1. Creare una pagina delle proprietà da aggiungere.
 
     ```vb
     Class DeployPropertyPage
@@ -170,7 +171,7 @@ Un sottotipo di progetto deve spesso visualizzare pagine delle proprietà aggiun
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. Eseguire l'override del `GetProperty(uint itemId, int propId, out object property)` metodo per filtrare le pagine delle proprietà, ottenere un `clsids` elenco e aggiungere una nuova pagina delle proprietà.
+3. Eseguire `GetProperty(uint itemId, int propId, out object property)` l'override del metodo per filtrare le pagine delle proprietà, `clsids` ottenere un elenco e aggiungere una nuova pagina delle proprietà.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer
@@ -210,4 +211,4 @@ Un sottotipo di progetto deve spesso visualizzare pagine delle proprietà aggiun
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Sottotipi di progetto](../extensibility/internals/project-subtypes.md)
+- [Project sottotipi](../extensibility/internals/project-subtypes.md)

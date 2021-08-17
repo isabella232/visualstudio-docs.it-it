@@ -1,6 +1,6 @@
 ---
 title: Uso di risorse 3D per giochi e app
-description: Informazioni sugli strumenti di Visual Studio che è possibile usare per creare o modificare modelli 3D, trame e shader per app e giochi basati su DirectX.
+description: Informazioni sugli strumenti Visual Studio che è possibile usare per creare o modificare modelli, trame e shader 3D per giochi e app basati su DirectX.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b622200832e42aa3900061125fe08271f5f3458
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f4332e8eefb4c1d8c2ea5ce8d1b25eab840fcdd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896351"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073604"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Usare risorse 3D per giochi e app
 
@@ -48,17 +49,17 @@ Gli shader sono piccoli programmi specifici di dominio che vengono eseguiti nell
 È possibile usare la progettazione shader di Visual Studio, ovvero uno strumento di progettazione shader basato su grafico, per creare effetti visivi personalizzati senza conoscere la programmazione HLSL.
 
 > [!NOTE]
-> Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](/windows/win32/directx). Per altre informazioni su come eseguire il debug di un'app basata su DirectX, vedere [diagnostica della grafica (debug della grafica DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
+> Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](/windows/win32/directx). Per altre informazioni su come eseguire il debug di un'app basata su DirectX, vedere Diagnostica della grafica [(debug della grafica DirectX).](../debugger/graphics/visual-studio-graphics-diagnostics.md)
 
 ## <a name="directx-version-compatibility"></a>Compatibilità tra versioni DirectX
 
-Visual Studio usa DirectX per eseguire il rendering degli asset 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per ulteriori informazioni su WARP, vedere la [Guida di Windows Advanced rasterizzation Platform (Warp)](/windows/win32/direct3darticles/directx-warp).
+Visual Studio usa DirectX per eseguire il rendering degli asset 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per altre informazioni su WARP, vedere la [guida Windows Advanced Rasterization Platform (WARP)](/windows/win32/direct3darticles/directx-warp).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di trame e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare Visual Studio per lavorare con immagini e trame.|
-|[Utilizzo di modelli 3D](../designers/working-with-3-d-models.md)|Viene descritto come usare Visual Studio per lavorare con i modelli 3D.|
-|[Utilizzo degli shader](../designers/working-with-shaders.md)|Viene descritto come usare la progettazione shader di Visual Studio per creare e modificare gli effetti di shader personalizzati.|
+|[Uso dei modelli 3D](../designers/working-with-3-d-models.md)|Viene descritto come usare Visual Studio per lavorare con i modelli 3D.|
+|[Uso degli shader](../designers/working-with-shaders.md)|Viene descritto come usare la progettazione shader di Visual Studio per creare e modificare gli effetti di shader personalizzati.|
 |[Uso di asset 3D nel gioco o nell'app](../designers/using-3-d-assets-in-your-game-or-app.md)|Viene descritto come usare le risorse, quali risorse sono state create con l'Editor immagini, l'Editor modello o la finestra di progettazione shader nel gioco o nell'app.|

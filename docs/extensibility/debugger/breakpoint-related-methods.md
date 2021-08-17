@@ -11,14 +11,15 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec218cea05dffc1c558cabdef47895da9ad7ba9c
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: ad634ddce8f42c8bf5e183ebdf8f75389553dba5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901500"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073435"
 ---
 # <a name="breakpoint-related-methods"></a>Metodi correlati ai punti di interruzione
 Un motore di debug deve supportare l'impostazione dei punti di interruzione. Visual Studio debug supporta i tipi di punti di interruzione seguenti:
@@ -49,7 +50,7 @@ Un motore di debug deve supportare l'impostazione dei punti di interruzione. Vis
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Enumera tutti i punti di interruzione di errore risultanti da un punto di interruzione in sospeso.|
 |[Elimina](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Elimina un punto di interruzione in sospeso e tutti i punti di interruzione associati.|
 
- Per enumerare i punti di interruzione associati e i punti di interruzione di errore, è necessario implementare tutti i metodi di [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) e [di IEnumDebugErrorBreakpoints2.](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
+ Per enumerare i punti di interruzione associati e i punti di interruzione di errore, è necessario implementare tutti i metodi di [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) e [di IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).
 
  I punti di interruzione in sospeso associati a una posizione del codice richiedono l'implementazione dei metodi [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) seguenti.
 
@@ -80,9 +81,9 @@ Un motore di debug deve supportare l'impostazione dei punti di interruzione. Vis
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Ottiene il tipo di un punto di interruzione.|
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Ottiene le informazioni di risoluzione di un punto di interruzione.|
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Ottiene le informazioni sulla risoluzione di un punto di interruzione.|
 
  Per visualizzare il codice sorgente in corrispondenza di un punto di interruzione, è necessario implementare i metodi di [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) e/o i metodi di [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo dell'esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)

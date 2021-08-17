@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ad9551e15d3d64b899e2c7e70bf80597193973f0cecc04f2145cf0ecdc4d1c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c64630126bfb671f9f71f78a51c524c2767164f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452641"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073578"
 ---
 # <a name="button-element"></a>Elemento Button
 Definisce un elemento con cui l'utente può interagire. I pulsanti possono essere di tipi diversi: Button, MenuButton e SplitDropDown.
