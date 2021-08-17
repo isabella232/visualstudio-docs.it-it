@@ -6,16 +6,17 @@ ms.topic: reference
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: d6375fb428eab6647854fe165aeb208ef8121e73
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 4501fdb465452eff1623e39c50e8c97f3bb5ca5b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041646"
 ---
 # <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK ha rimosso le API
 
@@ -48,7 +49,7 @@ Se si usa `IVsImageService` , sostituire le chiamate ai relativi metodi con chia
 | GetIconForFile             | GetImageMonikerForFile                 |
 | GetIconForFileEx           | GetImageMonikerForFile                 |
 
-`IVsImageService`i metodi Add e Get a cui si fa riferimento alle immagini personalizzate in base al nome (una stringa), anziché a un moniker.  È preferibile cambiare il codice in modo che usi solo moniker per fare riferimento a immagini personalizzate, ma se ciò risulta poco pratico ha un paio di metodi che consentono di associare un nome a un `IVsImageService2` moniker:
+`IVsImageService`i metodi Add e Get si riferivano alle immagini personalizzate in base al nome (una stringa), anziché a un moniker.  È preferibile cambiare il codice in modo che usi solo moniker per fare riferimento a immagini personalizzate, ma se ciò risulta poco pratico ha un paio di metodi che consentono di associare un nome a un `IVsImageService2` moniker:
 
 * `TryAssociateNameWithMoniker`
 * `GetImageMonikerForName`
@@ -133,7 +134,7 @@ Nessuno.
 
 ## <a name="new-wpf-xaml-designer-for-net-framework"></a>Nuovo finestra di progettazione XAML WPF per .NET Framework
 
-L'finestra di progettazione XAML WPF corrente per .NET Framework è stato deprecato e verrà sostituito con un nuovo finestra di progettazione XAML WPF per .NET Framework, basato sulla stessa architettura usata per WPF finestra di progettazione XAML per .NET (.NET Core). Ciò significa anche che il modello .NET Framework di estendibilità dei controlli WPF basato su .design.dll e Microsoft. Windows. Design.Extensibility non è più supportato. Il nuovo finestra di progettazione XAML WPF .NET Framework lo stesso modello di estendibilità di WPF finestra di progettazione XAML per .NET (.NET Core). Se è già stata creata un'estensione .designtools.dll per .NET (.NET Core), tale estensione funzionerà per il nuovo finestra di progettazione XAML WPF per .NET Framework. Fare riferimento al collegamento alla migrazione seguente per altre informazioni su come eseguire la migrazione al nuovo modello di estendibilità per le piattaforme WPF (.NET Framework e .NET Core) e le piattaforme UWP in futuro. 
+L'finestra di progettazione XAML WPF corrente per .NET Framework è stato deprecato e verrà sostituito con un nuovo finestra di progettazione XAML WPF per .NET Framework, basato sulla stessa architettura usata per WPF finestra di progettazione XAML per .NET (.NET Core). Ciò significa anche che wpf .NET Framework modello di estendibilità dei controlli basato su .design.dll e Microsoft. Windows. Design.Extensibility non è più supportato. Il nuovo finestra di progettazione XAML WPF .NET Framework fornirà lo stesso modello di estendibilità di WPF finestra di progettazione XAML per .NET (.NET Core). Se è già stata creata un'estensione .designtools.dll per .NET (.NET Core), tale estensione funzionerà per il nuovo finestra di progettazione XAML WPF per .NET Framework. Fare riferimento al collegamento alla migrazione seguente per altre informazioni su come eseguire la migrazione al nuovo modello di estendibilità per le piattaforme WPF (.NET Framework e .NET Core) e le piattaforme UWP in futuro. 
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 

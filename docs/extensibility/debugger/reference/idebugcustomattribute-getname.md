@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 807922628249a38400c86001a27498f3c26fafd30c2b2907e8faa2cb09fd2454
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 53345ce6c7cc7a261b15367d926a68701a087ef3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307960"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089355"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Ottiene il nome dell'attributo personalizzato.

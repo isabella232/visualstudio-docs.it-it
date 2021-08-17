@@ -1,21 +1,22 @@
 ---
 title: Convertire un ciclo foreach in LINQ
-description: Converte qualsiasi ciclo foreach che utilizza IEnumerable in una query LINQ o un modulo di chiamata LINQ (noto anche come metodo LINQ).
+description: Convertire qualsiasi ciclo foreach che usa un elemento IEnumerable in una query LINQ o in un modulo di chiamata LINQ (noto anche come metodo LINQ).
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ff489e11cc5c61c5e840b4b12d05ba5da46ce41
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: af9d538ca2f6fd0a7610fef4548c51723cd4f75b120e59e11bedba27435f283a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466290"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430252"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Convertire un ciclo foreach in LINQ
 
@@ -23,11 +24,11 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Consente di convertire facilmente il ciclo *foreach* che usa IEnumerable in una query LINQ o un modulo di chiamata LINQ (noto anche come metodo LINQ).
+**Cosa:** Consente di convertire facilmente *il ciclo foreach* che usa un elemento IEnumerable in una query LINQ o in un form di chiamata LINQ (noto anche come metodo LINQ).
 
-**Quando:** Si dispone di un ciclo foreach che utilizza IEnumerable e si desidera che il ciclo legga come query LINQ.
+**Quando:** Si dispone di un ciclo foreach che usa un elemento IEnumerable e si vuole che il ciclo sia letto come query LINQ.
 
-**Motivo:** Si preferisce utilizzare la sintassi LINQ anziché un ciclo foreach. [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) fa di una query un costrutto di linguaggio di prima classe in C#. LINQ può ridurre la quantità di codice in un file, rende il codice più semplice da leggere e consente l'uso di modelli di espressione di query simili in origini dati diverse.
+**Perché:** Si preferisce usare la sintassi LINQ anziché un ciclo foreach. [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) fa di una query un costrutto di linguaggio di prima classe in C#. LINQ può ridurre la quantità di codice in un file, rende il codice più semplice da leggere e consente l'uso di modelli di espressione di query simili in origini dati diverse.
 
 > [!NOTE]
 > La sintassi LINQ è in genere meno efficiente rispetto a un ciclo foreach. Considerare il compromesso in termini di prestazioni in caso di uso di LINQ per migliorare la leggibilità del codice.
@@ -38,7 +39,7 @@ Questo refactoring si applica a:
 
     ![Esempio di foreach con IEnumerable](media/convert-foreach-to-LINQ.png)
 
-2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 
    ![Esempio di menu Converti in LINQ](media/convert-foreach-to-LINQ-codefix.png)
 

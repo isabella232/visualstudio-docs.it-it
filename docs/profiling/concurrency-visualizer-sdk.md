@@ -1,6 +1,6 @@
 ---
 title: SDK del visualizzatore di concorrenza | Microsoft Docs
-description: Informazioni su come usare l'SDK del Visualizzatore di concorrenza per instrumentare il codice per visualizzare i marcatori. I marcatori sono icone visualizzate nel Visualizzatore di concorrenza per contrassegnare gli eventi.
+description: Informazioni su come usare Concurrency Visualizer SDK per instrumentare il codice per visualizzare i marcatori. I marcatori sono icone visualizzate nel visualizzatore di concorrenza per contrassegnare gli eventi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7cf8883e1a0c94756f7dcd9cc3a0a99744c9c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 648d9375dc71d611e3d5162a7bf39b6af26c2439914f399a01d11da815023d3a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941099"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121355581"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).(Introduzione all'SDK del visualizzatore di concorrenza).
@@ -125,7 +126,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|
-|[Riferimenti alla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|
+|[Informazioni di riferimento sulla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|
+|[Informazioni di riferimento sulla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|
 |[Strumentazione](/previous-versions/hh694104(v=vs.140))|Viene descritta l'API del visualizzatore di concorrenza per il codice gestito.|
 |[Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)|Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati di profilatura generati tramite il metodo di concorrenza che includono dati di esecuzione di thread.|

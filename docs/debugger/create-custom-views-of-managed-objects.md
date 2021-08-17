@@ -1,6 +1,6 @@
 ---
 title: Creare visualizzazioni personalizzate di oggetti gestiti | Microsoft Docs
-description: Il debugger di Visual Studio Visualizza i dati nelle finestre delle variabili. Informazioni su come personalizzare il modo in cui vengono visualizzati i tipi di dati, inclusi i tipi personalizzati.
+description: Visual Studio debugger visualizza i dati nelle finestre delle variabili. Informazioni su come personalizzare la modalità di visualizzazione dei tipi di dati, inclusi quelli personalizzati.
 ms.custom: SEO-VS-2020
 ms.date: 01/08/2019
 ms.topic: conceptual
@@ -23,34 +23,35 @@ ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: c054d3bcfbb06d0093f04190ab8b4825b5cbf20f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a45b905e085a703056fe88f7513a9ed299324de699a9695eaffab97e7dc586e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865800"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121345842"
 ---
-# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Creazione di visualizzazioni personalizzate di oggetti gestiti (C#, Visual Basic, F #, C++/CLI)
+# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Creare visualizzazioni personalizzate di oggetti gestiti (C#, Visual Basic, F#, C++/CLI)
 È possibile personalizzare la modalità di visualizzazione dei tipi di dati nelle finestre delle variabili del debugger in Visual Studio.
 
 ## <a name="attributes"></a>Attributi
 
-In C#, Visual Basic, F # e C++ (solo codice C++/CLI), è possibile aggiungere espansioni per i dati personalizzati usando <xref:System.Diagnostics.DebuggerTypeProxyAttribute> , <xref:System.Diagnostics.DebuggerDisplayAttribute> e <xref:System.Diagnostics.DebuggerBrowsableAttribute> .
+In C#, Visual Basic, F# e C++ (solo codice C++/CLI), è possibile aggiungere espansioni per i dati personalizzati usando <xref:System.Diagnostics.DebuggerTypeProxyAttribute> , <xref:System.Diagnostics.DebuggerDisplayAttribute> e <xref:System.Diagnostics.DebuggerBrowsableAttribute> .
 
-Nel codice .NET Framework 2,0 Visual Basic non supporta l'attributo l'DebuggerBrowsable. Questa limitazione è stata rimossa nelle versioni più recenti di .NET.
+Nel .NET Framework 2.0, Visual Basic non supporta l'attributo DebuggerBrowsable. Questa limitazione viene rimossa nelle versioni più recenti di .NET.
 
 ## <a name="visualizers"></a>Visualizzatori
 
-È possibile scrivere un visualizzatore per visualizzare qualsiasi tipo di dati gestito. Per altre informazioni, vedere [procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md).
+È possibile scrivere un visualizzatore per visualizzare qualsiasi tipo di dati gestito. Per altre informazioni, vedere [Procedura: Scrivere un visualizzatore](create-custom-visualizers-of-data.md).
 
 > [!NOTE]
-> Per il codice C++, è possibile aggiungere espansioni di tipi di dati personalizzati usando natvis Framework, come descritto in [creare visualizzazioni personalizzate di oggetti C++ nel debugger](create-custom-views-of-native-objects.md).
+> Per il codice C++, è possibile aggiungere espansioni del tipo di dati personalizzate usando il framework Natvis, come descritto in Creare visualizzazioni personalizzate di oggetti [C++ nel debugger](create-custom-views-of-native-objects.md).
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Indicare al debugger cosa visualizzare usando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
-- [Indicare al debugger quale tipo visualizzare usando l'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Indicare al debugger il tipo da visualizzare usando l'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)
 - [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

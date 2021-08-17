@@ -1,31 +1,32 @@
 ---
 title: Aggiungere spazio di archiviazione di Azure usando Servizi connessi | Microsoft Docs
-description: Aggiungere una dipendenza del servizio di archiviazione di Azure all'app usando Visual Studio Servizi connessi
+description: Aggiungere una Archiviazione di Azure di servizio all'app usando il Visual Studio Servizi connessi
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: a2aa5a0453b6a05c261d3cac853ab8265fb4e453
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76a886002bb8b8d7aaeca60690e83847087bf42cb5d54e9cee7922c714e61a29
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844346"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121348896"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
 
-Con Visual Studio, è possibile connettere uno dei seguenti ad archiviazione di Azure usando la funzionalità **servizi connessi** :
+Con Visual Studio, è possibile connettere uno degli elementi seguenti a Archiviazione di Azure usando la **Servizi connessi** funzionalità:
 
-- App console .NET Framework
-- MVC ASP.NET (.NET Framework)
+- .NET Framework app console
+- ASP.NET MVC (.NET Framework)
 - ASP.NET Core
-- .NET Core (incluse app console, WPF, Windows Form, libreria di classi)
+- .NET Core (tra cui app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App piattaforma UWP (Universal Windows Platform)
+- App Windows universali
 - Xamarin
 - Cordova
 
@@ -38,13 +39,13 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 - Visual Studio con il carico di lavoro di Azure installato.
 - Progetto di uno dei tipi supportati
 
-## <a name="connect-to-azure-storage-using-connected-services"></a>Connettersi ad archiviazione di Azure usando Servizi connessi
+## <a name="connect-to-azure-storage-using-connected-services"></a>Connessione usare Archiviazione di Azure Servizi connessi
 
 ::: moniker range="vs-2017"
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con  il pulsante destro del mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu **di scelta rapida.**
 
     ![Aggiunta di un servizio connesso di Azure](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
@@ -75,21 +76,21 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro **del** mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
 
     ![Aggiunta di un servizio connesso di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
-1. Nella scheda **servizi connessi** selezionare l'icona + per le **dipendenze del servizio**.
+1. Nella scheda **Servizi connessi** selezionare l'icona + per **Dipendenze servizio**.
 
-    ![Aggiungi dipendenza del servizio](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
+    ![Aggiungere una dipendenza del servizio](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. Nella pagina **Aggiungi dipendenza** selezionare archiviazione di **Azure**.
+1. Nella pagina **Aggiungi dipendenza** selezionare **Archiviazione di Azure**.
 
     ![Aggiungi Archiviazione di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
 
-    Se non è già stato effettuato l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita](https://azure.microsoft.com/account/free).
+    Se non è già stato eseguito l'accesso, accedere all'account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/account/free)
 
-1. Nella schermata **Configura archiviazione di Azure** selezionare un account di archiviazione esistente e fare clic su **Avanti**.
+1. Nella schermata **Configura Archiviazione di Azure** selezionare un account di archiviazione esistente e selezionare **Avanti.**
 
     Se è necessario creare un account di archiviazione, andare al passaggio successivo. In caso contrario, andare al passaggio 6.
 
@@ -99,17 +100,17 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
    1. Selezionare **Crea un account di archiviazione** nella parte inferiore della finestra di dialogo.
 
-   1. Compilare la finestra di dialogo **archiviazione di Azure: Crea nuovo** e selezionare **Crea**.
+   1. Compilare la finestra **Archiviazione di Azure: Crea nuovo** e selezionare **Crea**.
 
        ![Nuovo account di archiviazione di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
 
-   1. Quando viene visualizzata la finestra di dialogo **Archiviazione di Azure**, la nuova risorsa di archiviazione viene visualizzata nell'elenco. Selezionare il nuovo account di archiviazione nell'elenco e fare clic su **Avanti**.
+   1. Quando viene visualizzata la finestra di dialogo **Archiviazione di Azure**, la nuova risorsa di archiviazione viene visualizzata nell'elenco. Selezionare il nuovo account di archiviazione nell'elenco e selezionare **Avanti.**
 
-1. Immettere un nome per la stringa di connessione e scegliere se si desidera che la stringa di connessione venga archiviata in un file di segreti locali o in [Azure Key Vault](/azure/key-vault).
+1. Immettere un nome di stringa di connessione e scegliere se archiviare la stringa di connessione in un file di segreti locale [o](/azure/key-vault)in Azure Key Vault .
 
    ![Specificare la stringa di connessione](./media/vs-azure-tools-connected-services-storage/vs-2019/connection-string.png)
 
-1. La schermata **Riepilogo modifiche** Mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sembrano OK, scegliere **fine**.
+1. La **schermata Riepilogo delle** modifiche mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sono ok, scegliere **Fine.**
 
    ![Riepilogo delle modifiche](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
 

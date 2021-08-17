@@ -1,5 +1,5 @@
 ---
-description: Recupera il checksum del documento e l'identificatore dell'algoritmo in base al numero massimo di byte da utilizzare.
+description: Recupera il checksum del documento e l'identificatore dell'algoritmo in base al numero massimo di byte da usare.
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -24,7 +24,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121433983"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Recupera il checksum del documento e l'identificatore dell'algoritmo in base al numero massimo di byte da utilizzare.
+Recupera il checksum del documento e l'identificatore dell'algoritmo in base al numero massimo di byte da usare.
 
 ## <a name="syntax"></a>Sintassi
 

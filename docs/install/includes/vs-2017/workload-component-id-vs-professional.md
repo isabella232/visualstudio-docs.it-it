@@ -3,19 +3,19 @@ title: ID dei carichi di lavoro e dei componenti di Visual Studio Professional 2
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti per installare Visual Studio tramite la riga di comando o per specificarli come dipendenza in un manifesto VSIX
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c6e0b2106f7f7e7b718efebeea1781f43594b00a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: cb4ba06f0993c246a81874932a963a1446b3b98d580e3821fda240fa7f998c57
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "110449708"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122055782"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2017"></a>Editor principale di Visual Studio (incluso in Visual Studio Professional 2017)
 

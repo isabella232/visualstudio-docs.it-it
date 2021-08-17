@@ -1,6 +1,6 @@
 ---
-title: EnsureVSTOComponent (funzione)
-description: Informazioni sul modo in cui l'API EnsureVSTOComponent supporta l'infrastruttura Office e non è destinata all'uso diretto dal codice.
+title: Funzione EnsureVSTOComponent
+description: Informazioni su come l'API EnsureVSTOComponent supporta l'infrastruttura Office e non deve essere usata direttamente dal codice.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
@@ -10,17 +10,18 @@ dev_langs:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 17f52a469d93a843ef776c125e15a37db22277e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7de049c7388d71078dae1d4a14a1427b78c4cc5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910476"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026447"
 ---
-# <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent (funzione)
-  Questa API supporta l'infrastruttura Office e non è destinata all'uso diretto dal codice.
+# <a name="ensurevstocomponent-function"></a>Funzione EnsureVSTOComponent
+  Questa API supporta l'Office e non deve essere usata direttamente dal codice.
 
 ## <a name="syntax"></a>Sintassi
 

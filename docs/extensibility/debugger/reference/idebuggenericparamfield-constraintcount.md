@@ -1,6 +1,6 @@
 ---
 description: Restituisce il numero di vincoli associati a questo parametro generico.
-title: 'IDebugGenericParamField:: ConstraintCount | Microsoft Docs'
+title: IDebugGenericParamField::ConstraintCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58eb671c7019d3de4d206f41759ef3968205a2b2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2f49b98fe463977790230201a146a79375f005321aa353d9a2a59e9ac6dd7296
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072715"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292442"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 Restituisce il numero di vincoli associati a questo parametro generico.
@@ -47,7 +48,7 @@ int ConstraintCount(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugGenericParamFieldType** che espone l'interfaccia [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugGenericParamFieldType** che espone [l'interfaccia IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)

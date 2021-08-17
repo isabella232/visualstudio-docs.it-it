@@ -12,14 +12,15 @@ ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b503afcc38ab9427e5268097655433007de5d9
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: dc6c10f00f12d1ee8df9918530a3b04d6ba5ef4e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898552"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102857"
 ---
 # <a name="stack-frames"></a>Stack frame
 Nell'architettura del debugger, un *stack frame*:
@@ -32,7 +33,7 @@ Nell'architettura del debugger, un *stack frame*:
 
 - È rappresentato da [un'interfaccia IDebugStackFrame2,](../../extensibility/debugger/reference/idebugstackframe2.md) in genere creata da un motore di debug (DE) o da una macchina virtuale come conseguenza dell'esecuzione di un thread.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)
 - [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
 - [Motore di debug](../../extensibility/debugger/debug-engine.md)

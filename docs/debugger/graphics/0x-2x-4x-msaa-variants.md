@@ -1,6 +1,6 @@
 ---
 title: Varianti MSAA 0x-2x-4x | Microsoft Docs
-description: Informazioni su come eseguire l'override delle impostazioni di anti-aliasing multi-campione in tutte le destinazioni di rendering e le catene di scambio usando varianti MSAA 0x, 2x o 4x.
+description: Informazioni su come eseguire l'override delle impostazioni dell'anti-aliasing multi-campione (MSAA) in tutte le destinazioni di rendering e le catene di scambio usando varianti MSAA 0x, 2x o 4x.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9af0d6921b20c08784d0e9d1723aa822faf0421fc6ebc54ed531ab69358ce867
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 60133b32d65adc3f58dc430b1fe2d4ae9e5f91e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391382"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074364"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Varianti di MSAA 0x/2x/4x
 Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering e catene di scambio.

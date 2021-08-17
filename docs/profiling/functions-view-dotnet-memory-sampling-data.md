@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Funzioni: dati di campionamento di memoria .NET | Microsoft Docs'
-description: Ottenere informazioni sulla visualizzazione funzioni dei dati di profilatura dell'allocazione di memoria .NET raccolti tramite il metodo di campionamento.
+description: Ottenere informazioni sulla visualizzazione Funzioni dei dati di profilatura dell'allocazione di memoria .NET raccolti tramite il metodo di campionamento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0bfd4c3355e6e4371fbec443ee38d7ba6e1da7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b922d5d1ef7de90224be6edad34fa7c514dd660d3758a5c6f8c1b689f8bedfd2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907325"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333119"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Visualizzazione Funzioni: dati di campionamento di memoria .NET
 La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le funzioni che hanno allocato memoria durante l'esecuzione della profilatura e indica le dimensione e il numero delle allocazioni.
@@ -27,10 +28,10 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 |------------|-----------------|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome funzione**|Nome completo della funzione.|
+|**Nome della funzione**|Nome completo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Allocazioni inclusive**|Numero totale di oggetti allocati in questa funzione e funzioni figlio corrispondenti.|

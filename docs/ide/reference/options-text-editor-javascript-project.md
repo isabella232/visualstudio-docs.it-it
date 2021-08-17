@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, Progetto
-description: Informazioni su come usare la pagina progetto della finestra di dialogo Opzioni per specificare le opzioni del progetto JavaScript e TypeScript nell'editor di codice.
+description: Informazioni su come usare la Project della finestra di dialogo Opzioni per specificare le opzioni di progetto JavaScript e TypeScript nell'editor di codice.
 ms.custom: SEO-VS-2020
 ms.date: 06/19/2020
 ms.technology: vs-javascript
@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b30aaec3087cece63e392cf7170ac85f6be0ad7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bfd3f621a0d969c7d5ee684a4277ecbf89e633fe2beba34209f07687d002d1e5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932332"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334354"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opzioni, Editor di testo, JavaScript, Progetto
 
-Usare la pagina **Progetto** della finestra di dialogo **Opzioni** per specificare le opzioni di progetto JavaScript e TypeScript nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere **editor di testo**  >  **JavaScript/typescript**  >  **progetto**.
+Usare la pagina **Progetto** della finestra di dialogo **Opzioni** per specificare le opzioni di progetto JavaScript e TypeScript nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Editor di testo  >     >  **JavaScript/TypeScript**  >  **Project**.
 
 ## <a name="project-analysis-options"></a>Opzioni di analisi progetti
 
@@ -42,7 +42,7 @@ Queste opzioni consentono di scegliere se visualizzare progetti virtuali quando 
 
 ## <a name="compile-on-save"></a>Compila al salvataggio
 
-Queste opzioni determinano se i file TypeScript che non fanno parte del progetto vengono compilati automaticamente. Visual Studio compila con la versione più recente di TypeScript installata in *c:\Programmi (x86) \Microsoft SDKs\TypeScript*.
+Queste opzioni determinano se i file TypeScript che non fanno parte del progetto vengono compilati automaticamente. Visual Studio compila usando la versione più recente di TypeScript installata in *C:\Programmi (x86)\Microsoft SDKs\TypeScript*.
 
 Selezionare la casella di controllo e quindi scegliere il tipo di generazione del codice da usare.
 
@@ -67,8 +67,8 @@ Queste opzioni determinano il modo in cui l'editor gestisce i file TypeScript ch
 |Opzione|Descrizione|
 |------------|-----------------|
 |**Framework React**|Quando questa opzione è selezionata, l'editor del codice genera un file con estensione *js*.|
-|**Mantenere**|Quando questa opzione è selezionata, l'editor del codice mantiene JSX come parte dell'output e genera un file con estensione *jsx*.|
+|**Preservare**|Quando questa opzione è selezionata, l'editor del codice mantiene JSX come parte dell'output e genera un file con estensione *jsx*.|
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

@@ -1,5 +1,5 @@
 ---
-title: QueryCHANGESFUNC | Microsoft Docs
+title: QUERYCHANGESFUNC | Microsoft Docs
 description: La funzione di callback QUERYCHANGESFUNC viene usata per enumerare una raccolta di nomi di file e determinare lo stato di ogni file.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,17 +16,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9a28e4f75187cce110280d471f0a6f830d52e96706654c91929b324da70f57d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3d0db2c6c8b42594135a49fb62421134966e0e22
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375169"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028709"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Si tratta di una funzione di callback usata [dall'operazione SccQueryChanges](../extensibility/sccquerychanges-function.md) per enumerare una raccolta di nomi di file e determinare lo stato di ogni file.
 
- Alla `SccQueryChanges` funzione viene fornito un elenco di file e un puntatore al `QUERYCHANGESFUNC` callback. Il plug-in del controllo del codice sorgente enumera l'elenco specificato e fornisce lo stato (tramite questo callback) per ogni file nell'elenco.
+ Alla `SccQueryChanges` funzione viene assegnato un elenco di file e un puntatore al `QUERYCHANGESFUNC` callback. Il plug-in del controllo del codice sorgente esegue l'enumerazione sull'elenco specificato e fornisce lo stato (tramite questo callback) per ogni file nell'elenco.
 
 ## <a name="signature"></a>Firma
 
@@ -44,7 +44,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 
  pChangesData
 
-[in] Puntatore a una [struttura QUERYCHANGESDATA](#LinkQUERYCHANGESDATA) che descrive le modifiche apportate a un file.
+[in] Puntatore a una [struttura QUERYCHANGESDATA che](#LinkQUERYCHANGESDATA) descrive le modifiche apportate a un file.
 
 ## <a name="return-value"></a>Valore restituito
  L'IDE restituisce un codice di errore appropriato:
@@ -78,7 +78,7 @@ struct QUERYCHANGESDATA_W
 };
 ```
 
- dwSize Dimensione della struttura (in byte).
+ dwSize Size di questa struttura (in byte).
 
  lpFileName Nome del file originale per questo elemento.
 
@@ -86,13 +86,13 @@ struct QUERYCHANGESDATA_W
 
 |Codice|Descrizione|
 |----------|-----------------|
-|`SCC_CHANGE_UNKNOWN`|Non è possibile indicare cosa è stato modificato.|
+|`SCC_CHANGE_UNKNOWN`|Non è possibile indicare cosa è cambiato.|
 |`SCC_CHANGE_UNCHANGED`|Nessun nome modificato per questo file.|
 |`SCC_CHANGE_DIFFERENT`|File con un'identità diversa, ma lo stesso nome esiste nel database.|
 |`SCC_CHANGE_NONEXISTENT`|Il file non esiste nel database o in locale.|
 |`SCC_CHANGE_DATABASE_DELETED`|File eliminato nel database.|
-|`SCC_CHANGE_LOCAL_DELETED`|Il file è stato eliminato in locale, ma il file esiste ancora nel database. Se non è possibile determinare questo valore, restituire `SCC_CHANGE_DATABASE_ADDED` .|
-|`SCC_CHANGE_DATABASE_ADDED`|Il file è stato aggiunto al database ma non esiste in locale.|
+|`SCC_CHANGE_LOCAL_DELETED`|File eliminato in locale, ma il file esiste ancora nel database. Se non è possibile determinare questo valore, restituire `SCC_CHANGE_DATABASE_ADDED` .|
+|`SCC_CHANGE_DATABASE_ADDED`|File aggiunto al database ma non esiste in locale.|
 |`SCC_CHANGE_LOCAL_ADDED`|Il file non esiste nel database ed è un nuovo file locale.|
 |`SCC_CHANGE_RENAMED_TO`|File rinominato o spostato nel database come `lpLatestName` .|
 |`SCC_CHANGE_RENAMED_FROM`|File rinominato o spostato nel database da . Se questo è troppo costoso da `lpLatestName` rilevare, restituire un flag diverso, ad esempio `SCC_CHANGE_DATABASE_ADDED` .|

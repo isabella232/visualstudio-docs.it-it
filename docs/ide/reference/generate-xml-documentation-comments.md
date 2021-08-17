@@ -56,7 +56,7 @@ Il file XML generato dal compilatore può essere distribuito insieme agli assemb
    ![Screenshot che mostra il commento completato con tag di stile per corsivo, grassetto, punti elenco e un collegamento selezionabile.](media/doc-style-cs.png) 
 
 > [!NOTE]
-> È disponibile un'[opzione](../../ide/reference/options-text-editor-csharp-advanced.md) per attivare/disattivare i commenti in formato documentazione XML dopo aver digitato `///` in C# o `'''` in Visual Basic. Dalla barra dei menu scegliere **Opzioni**  >  **strumenti per** aprire la **finestra di dialogo** Opzioni. Passare quindi a Editor **di testo**  >  **C#** o Avanzate **di**  >  **base.** Nella sezione **Guida editor** cercare l'opzione **Genera commenti relativi alla documentazione XML**.
+> È disponibile un'[opzione](../../ide/reference/options-text-editor-csharp-advanced.md) per attivare/disattivare i commenti in formato documentazione XML dopo aver digitato `///` in C# o `'''` in Visual Basic. Dalla barra dei menu scegliere Opzioni  >  **strumenti per** aprire la finestra di **dialogo** Opzioni. Passare quindi a Editor **di testo**  >  **C#** o Avanzate **di**  >  **base.** Nella sezione **Guida editor** cercare l'opzione **Genera commenti relativi alla documentazione XML**.
 
 ## <a name="see-also"></a>Vedi anche
 

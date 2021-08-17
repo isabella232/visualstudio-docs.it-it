@@ -12,17 +12,17 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 244af855dd63942fd2df586a128a1b53c71649e1a518ac516e43dc2afe9cddd5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ac51ded5f99fc2d73d09e563bdf05ee0ac40469f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073201"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Riferimenti API (debug di Visual Studio)
 La sezione di riferimento include una panoramica concettuale dell'API, una guida che illustra la sintassi e l'utilizzo di tutti gli elementi dell'API e un'ampia gamma di esempi di codice. Tutti i riferimenti sono elencati in ordine alfabetico in base alla categoria.
 
- Nella tabella seguente vengono illustrati i valori `HRESULT` comuni restituiti dai metodi.
+ La tabella seguente illustra i valori `HRESULT` comuni restituiti dai metodi.
 
 |Nome|Descrizione|Valore|
 |----------|-----------------|-----------|

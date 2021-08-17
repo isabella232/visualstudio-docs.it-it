@@ -1,6 +1,6 @@
 ---
 title: Personalizzare menu e barre degli strumenti
-description: Informazioni su come personalizzare i menu e le barre degli strumenti di Visual Studio, oltre a informazioni su come personalizzare i comandi inclusi nei menu e nelle barre degli strumenti.
+description: Informazioni su come personalizzare Visual Studio menu e barre degli strumenti e su come personalizzare i comandi inclusi nei menu e nelle barre degli strumenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -27,14 +27,15 @@ ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0741a85be90f35e887a40f6ca1c957af8ef3c611
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ecd720eac25f6f3cc7baedc3119e38d2fe9953a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930317"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028163"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: personalizzare menu e barre degli strumenti in Visual Studio
 
@@ -45,7 +46,7 @@ ms.locfileid: "99930317"
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Aggiungere, rimuovere o spostare un menu nella barra dei menu
 
-1. Sulla barra dei menu scegliere **strumenti**  >  **Personalizza**.
+1. Sulla barra dei menu scegliere Strumenti  >  **Personalizza.**
 
      Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -61,7 +62,7 @@ ms.locfileid: "99930317"
 
 ## <a name="add-remove-or-move-a-toolbar"></a>Aggiungere, rimuovere o spostare una barra degli strumenti
 
-1. Sulla barra dei menu scegliere **strumenti**  >  **Personalizza**.
+1. Sulla barra dei menu scegliere Strumenti  >  **Personalizza.**
 
      Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -85,7 +86,7 @@ ms.locfileid: "99930317"
 
 ## <a name=""></a><a name="customizing_menu">Personalizzare un menu o di una barra degli strumenti</a>
 
-1. Sulla barra dei menu scegliere **strumenti**  >  **Personalizza**.
+1. Sulla barra dei menu scegliere Strumenti  >  **Personalizza.**
 
     Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -107,7 +108,7 @@ ms.locfileid: "99930317"
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>Reimpostare un menu o una barra degli strumenti
 
-1. Sulla barra dei menu scegliere **strumenti**  >  **Personalizza**.
+1. Sulla barra dei menu scegliere Strumenti  >  **Personalizza.**
 
     Viene visualizzata la finestra di dialogo **Personalizza**.
 

@@ -36,7 +36,7 @@ Gli oggetti TableAdapter vengono creati automaticamente quando si esegue una del
 
    ![Configurazione guidata origine dati in Visual Studio](media/data-source-configuration-wizard.png)
 
-È anche possibile creare un nuovo TableAdapter e configurarlo con  un'origine dati trascinando un oggetto TableAdapter dalla Casella degli **strumenti** in un'area vuota nella Progettazione DataSet dati.
+È anche possibile creare un nuovo TableAdapter e configurarlo con  un'origine dati trascinando un oggetto TableAdapter dalla casella degli **strumenti** in un'area vuota nella Progettazione DataSet dati.
 
 Per un'introduzione ai TableAdapter, vedere [Riempire set di dati tramite TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -48,13 +48,13 @@ Eseguire la **Configurazione guidata TableAdapter** per creare o modificare ogge
 
 ![Configurazione guidata adattatore tabella raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
-Se si trascina un nuovo oggetto TableAdapter dalla casella degli strumenti quando il **Progettazione DataSet** è attivo, viene avviata la procedura guidata e viene richiesto di specificare l'origine dati a cui deve connettersi l'oggetto TableAdapter. Nella pagina successiva, la procedura guidata chiede quale tipo di comandi deve usare per comunicare con il database, SQL istruzioni o stored procedure. Questa operazione non verrà visualizzata se si configura un oggetto TableAdapter già associato a un'origine dati.
+Se si trascina un nuovo oggetto TableAdapter dalla casella degli strumenti quando il **Progettazione DataSet** è attivo, la procedura guidata viene avviata e viene richiesto di specificare l'origine dati a cui deve connettersi l'oggetto TableAdapter. Nella pagina successiva, la procedura guidata chiede quale tipo di comandi deve usare per comunicare con il database, SQL istruzioni o stored procedure. Questa operazione non verrà visualizzata se si configura un oggetto TableAdapter già associato a un'origine dati.
 
 - È possibile creare un nuovo stored procedure nel database sottostante se si dispone delle autorizzazioni corrette per il database. Se non si dispone di queste autorizzazioni, questa non sarà un'opzione.
 
 - È anche possibile scegliere di eseguire stored procedure esistenti per i **comandi SELECT**, **INSERT**, **UPDATE** e **DELETE** del TableAdapter. Il stored procedure assegnato al comando **Update,** ad esempio, viene eseguito quando viene `TableAdapter.Update()` chiamato il metodo .
 
-Mappare i parametri dalla stored procedure selezionata alle colonne corrispondenti nella tabella dati. Ad esempio, se il stored procedure accetta un parametro denominato che viene passato alla colonna della tabella, impostare la colonna `@CompanyName` di origine del parametro su `CompanyName`  `@CompanyName` `CompanyName` .
+Mappare i parametri dalla stored procedure selezionata alle colonne corrispondenti nella tabella dati. Ad esempio, se il stored procedure accetta un parametro denominato che passa alla colonna nella tabella, impostare la colonna `@CompanyName` di origine del parametro su `CompanyName`  `@CompanyName` `CompanyName` .
 
 > [!NOTE]
 > Il stored procedure assegnato al comando SELECT viene eseguito chiamando il metodo dell'oggetto TableAdapter assegnato nel passaggio successivo della procedura guidata. Il metodo predefinito è , quindi il codice usato in genere per `Fill` eseguire la routine SELECT è `TableAdapter.Fill(tableName)` . Se si modifica il nome predefinito da , sostituire con il nome assegnato e sostituire "TableAdapter" con il nome effettivo del `Fill` `Fill` TableAdapter (ad esempio, `CustomersTableAdapter` ).
@@ -73,7 +73,7 @@ In alcuni casi può essere necessario modificare lo schema della tabella del Tab
 
 ![TableAdapter con più query](../data-tools/media/tableadapter.gif)
 
-Tutte le modifiche apportate al metodo main del TableAdapter vengono riflesse nello `Fill` schema della tabella dati associata. Ad esempio, la rimozione di una colonna dalla query nel metodo main comporta anche la rimozione della `Fill` colonna dalla tabella dati associata. Inoltre, la rimozione della colonna dal metodo main rimuove la colonna da `Fill` eventuali query aggiuntive per tale TableAdapter.
+Tutte le modifiche apportate al metodo main del TableAdapter vengono riflesse nello `Fill` schema della tabella dati associata. Ad esempio, la rimozione di una colonna dalla query nel metodo main rimuove anche la `Fill` colonna dalla tabella di dati associata. Inoltre, la rimozione della colonna dal metodo main rimuove la colonna da `Fill` eventuali query aggiuntive per tale TableAdapter.
 
 È possibile usare la Configurazione guidata query TableAdapter per creare e modificare query aggiuntive per il TableAdapter. Queste query aggiuntive devono essere conformi allo schema della tabella, a meno che non restituiranno un valore scalare.  Ogni query aggiuntiva ha un nome specificato.
 
@@ -85,14 +85,14 @@ L'esempio seguente illustra come chiamare una query aggiuntiva denominata `FillB
 
 1. Aprire il set di dati in **Progettazione DataSet**.
 
-2. Se si crea una nuova query, trascinare un oggetto  **Query** dalla scheda **DataSet** della Casella degli strumenti in un oggetto oppure selezionare Aggiungi query dal menu di scelta rapida <xref:System.Data.DataTable> del TableAdapter.  È anche possibile trascinare un **oggetto Query** in un'area vuota del **Progettazione DataSet**, che crea un oggetto TableAdapter senza un oggetto <xref:System.Data.DataTable> associato. Queste query possono restituire solo valori singoli (scalari) o eseguire comandi UPDATE, INSERT o DELETE nel database.
+2. Se si crea una nuova query, trascinare un oggetto  **Query** dalla scheda **DataSet** della Casella degli strumenti in un oggetto o selezionare Aggiungi query dal menu di scelta rapida <xref:System.Data.DataTable> del TableAdapter.  È anche possibile trascinare un **oggetto Query** in un'area vuota del **Progettazione DataSet**, che crea un oggetto TableAdapter senza un oggetto <xref:System.Data.DataTable> associato. Queste query possono restituire solo valori singoli (scalari) o eseguire comandi UPDATE, INSERT o DELETE nel database.
 
 3. Nella schermata **Scegli connessione dati** selezionare o creare la connessione che verrà utilizzata dalla query.
 
     > [!NOTE]
     > Questa schermata viene visualizzata solo quando la finestra di progettazione non è in grado di determinare la connessione appropriata da usare o quando non sono disponibili connessioni.
 
-4. Nella schermata **Scegliere un tipo di comando** selezionare uno dei metodi seguenti per recuperare i dati dal database:
+4. Nella schermata **Scegliere un tipo di** comando selezionare uno dei metodi seguenti per recuperare i dati dal database:
 
     - **Usare SQL istruzioni** consente di digitare un'SQL per selezionare i dati dal database.
 

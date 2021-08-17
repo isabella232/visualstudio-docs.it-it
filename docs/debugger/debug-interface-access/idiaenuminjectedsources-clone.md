@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c3ed200614dbbf0a0860cd898478a7c7929f1f98bafe22f9a2ccb6f4b4df96c8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 605a3cbd6e3721ad08b319521b8081c557fce2c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455223"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074995"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.

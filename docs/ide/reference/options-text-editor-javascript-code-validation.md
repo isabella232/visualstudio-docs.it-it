@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, Convalida codice
-description: Informazioni su come utilizzare la pagina convalida codice della finestra di dialogo Opzioni per modificare le impostazioni che influiscono sul modo in cui JavaScript gestisce gli errori.
+description: Informazioni su come usare la pagina Convalida codice della finestra di dialogo Opzioni per modificare le impostazioni che influiscono sul modo in cui JavaScript gestisce gli errori.
 ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc6fbde896a2f043040c93710ca48bc95193127
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aab9a249a9f17fdb93a0ca832b03254bab7cf2c101579e344bef2d45e13d066d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932553"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357089"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Finestra di dialogo Opzioni: \> convalida codice JavaScript/typescript editor di testo \>
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Finestra di dialogo Opzioni: Convalida \> del codice JavaScript/TypeScript dell'editor \> di testo
 
 Usare la pagina **Convalida codice** della finestra di dialogo **Opzioni** per modificare le impostazioni che influiscono sulla gestione degli errori da parte di JavaScript. Per accedere alla pagina **Convalida codice**, scegliere **Strumenti** > **Opzioni** sulla barra dei menu e quindi espandere **Editor di testo** > **JavaScript/TypeScript** > **Convalida codice**.
 

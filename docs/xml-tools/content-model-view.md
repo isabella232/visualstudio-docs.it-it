@@ -28,7 +28,7 @@ Nell'immagine seguente il pannello **Area di lavoro** contiene sei nodi dello sc
 
 ## <a name="workspace-panel"></a>Pannello Area di lavoro
 
-Dopo aver aggiunto nodi all'area di lavoro, l'elenco dei nodi verrà visualizzato nel pannello **Area di** lavoro della visualizzazione modello di contenuto. Quando si selezionano nodi nel pannello **Area di** lavoro, questi vengono visualizzati nell'area di progettazione Visualizzazione modello di contenuto. Per eliminare nodi dall'area di lavoro,  usare la barra degli strumenti progettazione XSD, il menu di scelta rapida del pannello Area di lavoro o **il tasto CANC.**
+Dopo aver aggiunto nodi all'area di lavoro, l'elenco di nodi verrà visualizzato nel pannello **Area di** lavoro della visualizzazione modello di contenuto. Quando si selezionano nodi nel pannello **Area di** lavoro, questi vengono visualizzati nell'area di progettazione Visualizzazione modello di contenuto. Per eliminare nodi dall'area di lavoro,  usare la barra degli strumenti progettazione XSD, il menu di scelta rapida del pannello Area di lavoro o **il tasto CANC.**
 
 Per informazioni sull'aggiunta di nodi, vedere la sezione "Aggiunta di nodi all'area di lavoro" nell'area di lavoro Progettazione [XML Schema](../xml-tools/xml-schema-designer-workspace.md).
 
@@ -74,7 +74,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per il pannello 
 
 ## <a name="properties-window"></a>Finestra Proprietà
 
-Usare il menu di scelta rapida per aprire inizialmente la **finestra** Proprietà. Per impostazione predefinita, la **finestra** Proprietà viene visualizzata nell'angolo inferiore destro Visual Studio. Quando si fa clic su un nodo di cui viene eseguito il rendering nella visualizzazione modello di contenuto, le proprietà di tale nodo vengono visualizzate nella **finestra** Proprietà.
+Usare il menu di scelta rapida per aprire inizialmente la **finestra** Proprietà. Per impostazione predefinita, la **finestra** Proprietà viene visualizzata nell'angolo inferiore destro Visual Studio. Quando si fa clic su un nodo di cui viene eseguito il rendering nella visualizzazione modello di contenuto, le proprietà del nodo vengono visualizzate nella **finestra** Proprietà.
 
 ## <a name="xsd-designer-toolbar"></a>Barra degli strumenti della finestra di progettazione XSD
 
@@ -94,7 +94,7 @@ I seguenti pulsanti della barra degli strumenti di Progettazione XSD sono abilit
 
 ## <a name="panscroll"></a>Panoramica/scorrimento
 
-È possibile eseguire la panoramica dell'area di progettazione usando le barre di scorrimento o tenendo premuto **CTRL** mentre si fa clic e si trascina il mouse. Quando si esegue la panoramica dell'area di progettazione tramite clic e trascinamento, il cursore assume la forma di quattro frecce incrociate che puntano in quattro direzioni.
+È possibile eseguire una panoramica dell'area di progettazione usando le barre di scorrimento o tenendo premuto **CTRL** mentre si fa clic e si trascina il mouse. Quando si esegue una panoramica dell'area di progettazione tramite clic e trascinamento, il cursore assume quattro frecce incrociate che puntano in quattro direzioni.
 
 ## <a name="undoredo"></a>Annullamento/ripristino
 
@@ -114,18 +114,18 @@ Lo zoom è disponibile nell'angolo inferiore destro della visualizzazione modell
 
 È possibile controllare lo zoom nei seguenti modi:
 
-- Tenendo premuto **CTRL e** ruotando la rotellina del mouse quando il puntatore del mouse viene posizionato sull'area di visualizzazione del modello di contenuto.
+- Tenendo premuto CTRL **e** ruotando la rotellina del mouse quando si passa il mouse sull'area di visualizzazione del modello di contenuto.
 
 - Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.
 
-Il dispositivo di scorrimento Zoom è opaco quando lo si seleziona, si passa il puntatore del mouse su di esso o si usa **CTRL** con la rotellina del mouse per eseguire lo zoom. in tutti gli altri momenti, è trasparente.
+Il dispositivo di scorrimento Zoom è opaco quando lo si seleziona, si passa il mouse su di esso o si usa **CTRL** con la rotellina del mouse per eseguire lo zoom; in tutti gli altri casi, è trasparente.
 
 ## <a name="xml-editor-integration"></a>Integrazione dell'editor XML
 
-È possibile passare da Progettazione **XSD** all'editor XML usando il menu di scelta rapida.
+È possibile spostarsi tra Progettazione **XSD** e l'editor XML usando il menu di scelta rapida.
 
-Se si apportano modifiche al set di schemi nell'editor XML, le modifiche vengono sincronizzate nella visualizzazione modello di contenuto. Per altre informazioni, vedere [Integrazione con l'editor XML.](../xml-tools/integration-with-xml-editor.md)
+Se si apportano modifiche al set di schemi nell'editor XML, le modifiche vengono sincronizzate nella visualizzazione modello di contenuto. Per altre informazioni, vedere Integrazione [con l'editor XML.](../xml-tools/integration-with-xml-editor.md)
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Area di lavoro progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md)
+- [Area di lavoro di Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md)

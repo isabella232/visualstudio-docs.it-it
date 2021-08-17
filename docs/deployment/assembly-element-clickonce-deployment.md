@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;elemento assembly (distribuzione ClickOnce) | Microsoft Docs'
-description: L'elemento assembly è l'elemento radice ed è necessario nella distribuzione ClickOnce. Il primo elemento contenuto deve essere un elemento assemblyIdentity.
+title: '&lt;Elemento assembly &gt; (ClickOnce Deployment) | Microsoft Docs'
+description: L'elemento assembly è l'elemento radice ed è necessario nella ClickOnce distribuzione. Il primo elemento contenuto deve essere un elemento assemblyIdentity.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,16 +16,17 @@ ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: b7838e0a212bbc1e743783255106bb44561fbe62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54affc5f75a17fe93beac0ee62207f6c25a1c448
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837762"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074033"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;&gt;elemento assembly (distribuzione ClickOnce)
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Elemento assembly &gt; (distribuzione ClickOnce assembly)
 Elemento di primo livello per il manifesto della distribuzione.
 
 ## <a name="syntax"></a>Sintassi
@@ -38,7 +39,7 @@ Elemento di primo livello per il manifesto della distribuzione.
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- L' `assembly` elemento è l'elemento radice ed è obbligatorio. Il primo elemento contenuto deve essere un `assemblyIdentity` elemento. Gli elementi del manifesto devono trovarsi negli spazi dei nomi seguenti: `urn:schemas-microsoft-com:asm.v1` , `urn:schemas-microsoft-com:asm.v2` e `http://www.w3.org/2000/09/xmldsig#` . Gli elementi figlio dell'assembly devono essere presenti anche in questi spazi dei nomi, per ereditarietà o per contrassegno.
+ `assembly`L'elemento è l'elemento radice ed è obbligatorio. Il primo elemento contenuto deve essere un `assemblyIdentity` elemento . Gli elementi del manifesto devono essere negli spazi dei nomi seguenti: `urn:schemas-microsoft-com:asm.v1` `urn:schemas-microsoft-com:asm.v2` , e `http://www.w3.org/2000/09/xmldsig#` . Anche gli elementi figlio dell'assembly devono essere presenti in questi spazi dei nomi, tramite ereditarietà o mediante l'assegnazione di tag.
 
  L'elemento `assembly` presenta l'attributo seguente:
 
@@ -47,7 +48,7 @@ Elemento di primo livello per il manifesto della distribuzione.
 |`manifestVersion`|Obbligatorio. Questo attributo deve essere impostato su `1.0` .|
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice seguente viene illustrato un `assembly` elemento in un manifesto di distribuzione per un'applicazione distribuita tramite [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Questo esempio di codice fa parte di un esempio più ampio fornito per l'argomento [manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) .
+ Nell'esempio di codice seguente viene illustrato un `assembly` elemento in un manifesto della distribuzione per un'applicazione distribuita tramite [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Questo esempio di codice fa parte di un esempio più ampio fornito per [l'ClickOnce manifesto della](../deployment/clickonce-deployment-manifest.md) distribuzione.
 
 ```xml
 <asmv1:assembly
@@ -65,5 +66,5 @@ Elemento di primo livello per il manifesto della distribuzione.
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
-- [\<assembly> elemento](../deployment/assembly-element-clickonce-application.md)
+- [ClickOnce di distribuzione](../deployment/clickonce-deployment-manifest.md)
+- [\<assembly> Elemento](../deployment/assembly-element-clickonce-application.md)

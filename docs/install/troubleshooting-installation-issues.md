@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 070ef1d1d990d5cc8e44c173db096d0a107bf238
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 75952c2fc827b5a4e37339e99615ae0447b916c9ac64d21718c59c147456197b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094859"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356661"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio
 
@@ -55,7 +55,7 @@ La correzione corregge molti problemi comuni relativi all'aggiornamento. Per alt
 
 Cercare il messaggio di errore nella [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8). È possibile che altri membri della community abbiano documentato una soluzione per il problema.
 
-### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Passaggio 4- Eliminare la directory Programma di installazione di Visual Studio per risolvere i problemi di aggiornamento
+### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Passaggio 4 - Eliminare la directory Programma di installazione di Visual Studio per risolvere i problemi di aggiornamento
 
 Il programma di bootstrap dell'installazione di Visual Studio è un file eseguibile di piccole dimensioni che consente di installare gli elementi restanti del programma di installazione di Visual Studio. Eliminando i file del programma di installazione di Visual Studio ed eseguendo nuovamente il programma di bootstrap, è possibile risolvere alcuni problemi di aggiornamento.
 
@@ -104,7 +104,7 @@ In alcune situazioni, ad esempio quando sono presenti file danneggiati, può ess
 
 ::: moniker-end
 
-### <a name="step-6---run-installcleanupexe-to-remove-installation-files"></a>Passaggio 6: Eseguire InstallCleanup.exe per rimuovere i file di installazione
+### <a name="step-6---run-installcleanupexe-to-remove-installation-files"></a>Passaggio 6- Eseguire InstallCleanup.exe per rimuovere i file di installazione
 
 Come ultima risorsa, è possibile [rimuovere Visual Studio](remove-visual-studio.md) per eliminare tutti i file di installazione e le informazioni sul prodotto.
 
@@ -118,7 +118,7 @@ Se le procedure indicate sopra non consentono di installare o aggiornare corrett
 
 ## <a name="offline-installations"></a>Installazioni offline
 
-Di seguito è riportata una tabella di problemi noti e alcune soluzioni alternative che possono risultare utili quando si crea un'installazione [offline](create-an-offline-installation-of-visual-studio.md) e quindi si esegue l'installazione da un layout locale.
+Di seguito è riportata una tabella di problemi noti e alcune soluzioni alternative che possono risultare utili quando si crea [un'installazione offline](create-an-offline-installation-of-visual-studio.md) e quindi si esegue l'installazione da un layout locale.
 
 | Problema       | Elemento                   | Soluzione |
 | ----------- | ---------------------- | -------- |

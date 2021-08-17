@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, C/C++, Formattazione
-description: Informazioni su come usare la pagina Opzioni di formattazione e le relative sottopagine per impostare le opzioni per la formattazione del codice nell'editor di codice quando si programma in C e C++.
+description: Informazioni su come usare la pagina Opzioni di formattazione e le relative pagine secondarie per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in C e C++.
 ms.custom: SEO-VS-2020
 ms.date: 04/30/2018
 ms.topic: reference
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264485fd8f20ee31046035dba7b208795d0d91b0
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: d5b342ac7533928c979b8346f4d2155b9c5de85b0509c4d86aa5261dae5bb338
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041087"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357070"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opzioni, Editor di testo, C/C++, Formattazione
 
@@ -34,7 +34,7 @@ Usare queste pagine delle proprietà per modificare il comportamento predefinito
 Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++**, quindi fare clic su **Formattazione**.
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE Visual Studio .](../../ide/personalizing-the-visual-studio-ide.md)
 
 ## <a name="general-page"></a>Pagina Generale
 
@@ -42,7 +42,7 @@ Questa pagina include opzioni di formattazione di istruzioni e blocchi durante l
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 versione 15,7 e successive**:
+**Visual Studio 2017 versione 15.7 e successive:**
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ la pagina include anche opzioni per la configurazione del supporto di [ClangForm
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 versione 15,7 e successive**:
+**Visual Studio 2017 versione 15.7 e successive:**
 
 ::: moniker-end
 
@@ -64,7 +64,7 @@ Per impostazione predefinita, Visual Studio esegue clangformat.exe in background
 
 Queste pagine consentono di personalizzare la formattazione in vari modi, ma vengono ignorate se ClangFormat è abilitato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Uso di IntelliSense](../../ide/using-intellisense.md)

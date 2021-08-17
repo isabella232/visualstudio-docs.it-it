@@ -1,6 +1,6 @@
 ---
 title: Confronto di proprietà ed elementi | Microsoft Docs
-description: Informazioni su come le proprietà e gli elementi di MSBuild passano informazioni alle attività, valutano le condizioni e archiviano i valori a cui il file di progetto può fare riferimento.
+description: Informazioni su MSBuild proprietà ed elementi passano informazioni alle attività, valutano le condizioni e archiviano i valori a cui il file di progetto può fare riferimento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,20 +10,21 @@ ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 226b86d621de2faee5a71d9fdb3fea39f20b984e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 358389095e71dd52aa8dfeb211bef71c4485faef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888121"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055042"
 ---
 # <a name="compare-properties-and-items"></a>Confrontare proprietà ed elementi
 
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.
 
-- Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
+- Le proprietà sono coppie nome-valore. Per altre informazioni, vedere MSBuild [proprietà .](../msbuild/msbuild-properties.md)
 
 - Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 

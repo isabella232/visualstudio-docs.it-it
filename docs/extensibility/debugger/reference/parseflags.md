@@ -1,5 +1,5 @@
 ---
-description: Specifica la modalità di analisi di un'espressione.
+description: Specifica come analizzare un'espressione.
 title: PARSEFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7dabef93e8160a2319bc5cefeb189fa335f4b9f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d4c279bdadb692007a66eed38ccd595d94be3c05f5c2777a3a30eae6af33666c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082335"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433086"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-Specifica la modalità di analisi di un'espressione.
+Specifica come analizzare un'espressione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,21 +48,21 @@ public enum enum_PARSEFLAGS {
 
 ## <a name="fields"></a>Campi
  `PARSE_EXPRESSION`\
- Indica che l'espressione non è un'istruzione.
+ Indica che l'espressione non è un'istruzione .
 
  `PARSE_FUNCTION_AS_ADDRESS`\
- Indica che l'espressione deve essere analizzata (e successivamente valutata) come indirizzo.
+ Indica che l'espressione deve essere analizzata (e valutata successivamente) come indirizzo.
 
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
- Indica che l'espressione viene analizzata in fase di progettazione, ovvero quando è aperta una finestra di progettazione.
+ Indica che l'espressione viene analizzata durante la fase di progettazione, ovvero quando è aperta una finestra di progettazione.
 
 ## <a name="remarks"></a>Commenti
- Passato come parametro ai metodi [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) e [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) .
+ Passato come parametro ai [metodi ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) [e Parse.](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

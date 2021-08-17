@@ -1,6 +1,6 @@
 ---
-title: Esaminare l'app con funzionalità di debug cronologico | Microsoft Docs
-description: Seguire un'analisi che usa il debug cronologico di IntelliTrace per tenere traccia di un bug in un'applicazione console C#.
+title: Esaminare l'app con il debug cronologico | Microsoft Docs
+description: Seguire un'indagine che usa il debug cronologico di IntelliTrace per rilevare un bug in un'applicazione console C#.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f11fbc23244e70c5332ddef41804ff65a6c219636a09f556a0cfa7fb759edc26
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2958f799b8b7b3540fc8c1c08089b5b8340eabe8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454011"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074163"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Esaminare l'app con il debug cronologico intelliTrace in Visual Studio (C#, Visual Basic, C++)
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Esaminare l'app con il debug cronologico di IntelliTrace in Visual Studio (C#, Visual Basic, C++)
 
-È possibile usare il [debug cronologico](../debugger/historical-debugging.md) per spostarsi avanti e indietro durante l'esecuzione dell'applicazione e controllarne lo stato.
+È possibile usare [il debug cronologico](../debugger/historical-debugging.md) per spostarsi avanti e indietro nell'esecuzione dell'applicazione e controllarne lo stato.
 
 È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition (ma non le edizioni Professional o Community).
 
@@ -56,7 +56,7 @@ private static int AddInt(int add)
 
 Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` è pari a 20 (il risultato di incremento `testInt` 20 volte). Si presuppone anche che non sia possibile visualizzare il bug in `AddInt()` . Ma il risultato è effettivamente 44. Come è possibile individuare i bug senza scorrere `AddAll()` 10 volte? È possibile utilizzare il debug cronologico per individuare l'errore in modo più semplice e rapido. Ecco come:
 
-1. In **Strumenti > opzioni > IntelliTrace > Generale**, verificare che IntelliTrace sia abilitato e selezionare Eventi **IntelliTrace** e chiamare le informazioni . Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).
+1. In **Strumenti > opzioni > IntelliTrace > Generale**, assicurarsi che IntelliTrace sia abilitato e selezionare Eventi **IntelliTrace e** chiamare le informazioni . Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).
 
 2. Impostare un punto di interruzione nella riga `Console.WriteLine(resultInt);` .
 

@@ -1,6 +1,6 @@
 ---
 title: 'Excel: Introduzione alla programmazione delle personalizzazioni a livello di documento'
-description: Informazioni su cosa è necessario sapere per iniziare a creare personalizzazioni a livello di documento Microsoft Office Excel usando Visual Studio.
+description: Informazioni su ciò che è necessario sapere per iniziare a creare personalizzazioni a livello di documento per Microsoft Office Excel usando Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fc808765dc4691ea35c8d3fdf91f4af04b4e8efd9221e8b02a98449ab63751d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b00dba4ef6204b37fe5641da02038236e54d7dd4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424333"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026460"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Introduzione alla programmazione delle personalizzazioni a livello di documento per Excel
-  Se si è appena iniziato a creare personalizzazioni a livello di documento Microsoft Office Excel usando Visual Studio, ecco cosa è necessario sapere.
+  Se si sta appena iniziare a creare personalizzazioni a livello di documento Microsoft Office Excel usando Visual Studio, ecco cosa è necessario sapere.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "121424333"
 
  Gli elementi host forniscono un punto di ingresso per il codice e possono anche fungere da contenitori per i controlli host e Windows Form. Nei progetti a livello di documento Excel, questi elementi host sono rappresentati dalle `ThisWorkbook` classi , , e `Sheet1` `Sheet2` `Sheet3` .
 
- I controlli host sono basati su oggetti Excel nativi, ad esempio oggetti elenco e intervalli. I controlli host offrono funzionalità simili agli oggetti Excel nativi, ma hanno anche nuovi eventi, supporto della finestra di progettazione e data binding funzionalità. Vengono visualizzati come oggetti di prima classe nel codice del progetto e in IntelliSense, semplificando così il riferimento a oggetti specifici direttamente nel codice senza dover esplorare il modello Excel a oggetti.
+ I controlli host sono basati su oggetti Excel nativi, ad esempio oggetti elenco e intervalli. I controlli host offrono funzionalità simili agli oggetti Excel nativi, ma hanno anche nuovi eventi, supporto della finestra di progettazione e data binding funzionalità. Vengono visualizzati come oggetti di prima classe nel codice del progetto e in IntelliSense, il che rende più semplice fare riferimento a oggetti specifici direttamente nel codice senza dover esplorare il modello Excel a oggetti.
 
  Per altre informazioni, vedere i seguenti argomenti:
 
@@ -55,7 +55,7 @@ ms.locfileid: "121424333"
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Personalizzare l'interfaccia utente di Excel
- La maggior Microsoft Office modifica l'interfaccia utente dell'applicazione Office per consentire agli utenti di interagire con la soluzione. Esistono molti modi in cui è possibile modificare l'interfaccia utente di Excel usando una personalizzazione a livello di documento. È ad esempio possibile aggiungere controlli alla barra multifunzione oppure visualizzare un riquadro azioni. Per altre informazioni, vedere Personalizzare [l'Office dell'interfaccia utente.](../vsto/office-ui-customization.md)
+ La maggior Microsoft Office soluzioni modificano l'interfaccia utente dell'applicazione Office per consentire agli utenti di interagire con la soluzione. Esistono molti modi in cui è possibile modificare l'interfaccia utente di Excel usando una personalizzazione a livello di documento. È ad esempio possibile aggiungere controlli alla barra multifunzione oppure visualizzare un riquadro azioni. Per altre informazioni, vedere personalizzazione [Office'interfaccia utente.](../vsto/office-ui-customization.md)
 
  È anche possibile aprire la cartella di lavoro associata al progetto direttamente in Visual Studio. Quando la cartella di lavoro è aperta in Visual Studio, è possibile modificare la cartella di lavoro usando l Excel'interfaccia utente. È anche possibile usare la cartella di lavoro come area di progettazione, che consente di trascinare i controlli nei fogli di lavoro. Per altre informazioni, vedere [Office progetti nell'ambiente Visual Studio .](../vsto/office-projects-in-the-visual-studio-environment.md)
 
@@ -63,7 +63,7 @@ ms.locfileid: "121424333"
  I controlli host sono anche nell'elenco dei controlli che è possibile trascinare dalla **finestra Origini** dati . L'aggiunta di controlli host in questo modo li associa automaticamente all'origine dati impostata tramite la finestra . Senza scrivere codice, è possibile visualizzare i dati di database, servizi Web e oggetti business. Per altre informazioni, vedere [Associare dati ai controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
- Per informazioni su come creare una personalizzazione a livello di documento per Excel, vedere Procedura [dettagliata:](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)Creare la prima personalizzazione a livello di documento per Excel . Questa procedura dettagliata illustra gli strumenti Office di sviluppo in Visual Studio e il modello di programmazione per Excel personalizzazioni a livello di documento.
+ Per informazioni su come creare una personalizzazione a livello di documento per Excel, vedere Procedura [dettagliata:](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)Creare la prima personalizzazione a livello di documento per Excel . Questa procedura dettagliata illustra gli strumenti di Office di sviluppo in Visual Studio e il modello di programmazione per Excel personalizzazioni a livello di documento.
 
  Per un elenco di argomenti che illustrano alcune delle attività comuni nei progetti Excel, vedere [Attività comuni nella](../vsto/common-tasks-in-office-programming.md)programmazione Office .
 

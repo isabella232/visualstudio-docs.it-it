@@ -6,22 +6,23 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 96e5689c0108231be26ddf7d598227137f7bc1f7
-ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
+ms.openlocfilehash: 98e87e402613e73dd9a5ab8a08f3c2bdae1ab1d2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111433779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055757"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compilare codice TypeScript (Node.js)
 
 È possibile aggiungere il supporto TypeScript ai progetti usando il TypeScript SDK, disponibile per impostazione predefinita nel programma di installazione di Visual Studio o tramite npm. Per i progetti sviluppati Visual Studio 2019, si consiglia di usare il pacchetto npm TypeScript per una maggiore portabilità tra piattaforme e ambienti diversi.
 
-Per ASP.NET Core, è consigliabile usare invece il [pacchetto NuGet.](../javascript/compile-typescript-code-nuget.md)
+Per ASP.NET Core, è consigliabile usare il [pacchetto NuGet.](../javascript/compile-typescript-code-nuget.md)
 
 ## <a name="add-typescript-support-using-npm"></a>Aggiungere il supporto di TypeScript usando npm
 
@@ -29,15 +30,15 @@ Il [pacchetto npm TypeScript aggiunge](https://www.npmjs.com/package/typescript)
 
 1. [Seguire le istruzioni](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json) per installare il carico Node.js di sviluppo e il runtime Node.js distribuzione.
 
-   Per l'integrazione più semplice con Visual Studio, creare il progetto usando uno dei modelli TypeScript Node.js, ad esempio il modello Applicazione Web Node.js vuota. In caso contrario, usare un Node.js JavaScript incluso in Visual Studio e seguire le istruzioni riportate qui oppure usare un [progetto Apri](../javascript/develop-javascript-code-without-solutions-projects.md) cartella.
+   Per l'integrazione più semplice con Visual Studio, creare il progetto usando uno dei modelli TypeScript Node.js, ad esempio il modello Applicazione Web Node.js vuota. In caso contrario, usare Node.js modello JavaScript incluso in Visual Studio e seguire le istruzioni riportate qui oppure usare un [progetto Apri](../javascript/develop-javascript-code-without-solutions-projects.md) cartella.
 
 1. Se il progetto non lo include già, installare il pacchetto [npm TypeScript](https://www.npmjs.com/package/typescript).
 
    Nel Esplora soluzioni destro aprire ilpackage.js *nella* radice del progetto. I pacchetti elencati corrispondono ai pacchetti nel nodo npm in Esplora soluzioni. Per altre informazioni, vedere [Gestire i pacchetti npm.](../javascript/npm-package-management.md)
 
-   Per un Node.js, è possibile installare il pacchetto npm TypeScript usando la riga di comando o l'IDE. Per eseguire l'installazione usando l'IDE, fare clic con il pulsante destro del mouse sul nodo npm in Esplora soluzioni, scegliere Installa nuovo **pacchetto npm,** cercare **TypeScript** e installare il pacchetto.
+   Per un Node.js, è possibile installare il pacchetto npm TypeScript tramite la riga di comando o l'IDE. Per eseguire l'installazione usando l'IDE, fare clic con il pulsante destro del mouse sul nodo npm in Esplora soluzioni, scegliere Install New npm package (Installa nuovo **pacchetto npm),** cercare **TypeScript** e installare il pacchetto.
 
-   Selezionare **l'opzione npm** nella finestra **Output** per visualizzare lo stato di avanzamento dell'installazione del pacchetto. Il pacchetto installato viene visualizzato nel **nodo npm** in Esplora soluzioni.
+   Selezionare **l'opzione npm** nella finestra **Output** per visualizzare lo stato di avanzamento dell'installazione del pacchetto. Il pacchetto installato viene visualizzato sotto il **nodo npm** in Esplora soluzioni.
 
 1. Se il progetto non lo include già, aggiungere un file con estensione *tsconfig* alla radice del progetto. Per aggiungere il file, fare clic con il pulsante destro del mouse sul nodo del progetto **e scegliere > Nuovo elemento**. Scegliere il **file di configurazione JSON TypeScript** e quindi fare clic su **Aggiungi.**
 
@@ -63,7 +64,7 @@ Il [pacchetto npm TypeScript aggiunge](https://www.npmjs.com/package/typescript)
    }
    ```
 
-   In questo esempio:
+   Esempio:
    - *include* indica al compilatore dove trovare i file TypeScript (*.ts).
    - *L'opzione outDir* specifica la cartella di output per i file JavaScript semplici che vengono transpiled dal compilatore TypeScript.
    - *L'opzione sourceMap* indica se il compilatore genera *file sourceMap.*
@@ -79,7 +80,7 @@ Il [pacchetto npm TypeScript aggiunge](https://www.npmjs.com/package/typescript)
    console.log(message);
    ```
 
-1. In *package.jssu*, aggiungere il supporto per Visual Studio comandi di compilazione e pulizia usando gli script seguenti.
+1. In *package.jsin*, aggiungere il supporto per Visual Studio comandi di compilazione e pulizia usando gli script seguenti.
 
    ```json
    "scripts": {
@@ -96,14 +97,14 @@ Il [pacchetto npm TypeScript aggiunge](https://www.npmjs.com/package/typescript)
    }
    ```
 
-   Per un esempio dell'uso di webpack con React e un file di configurazione webpack, vedere Creare un'app Web con Node.js [e React.](../javascript/tutorial-nodejs-with-react-and-jsx.md)
+   Per un esempio dell'uso di webpack con React e un file di configurazione webpack, vedere Creare un'app Web con Node.js [e React](../javascript/tutorial-nodejs-with-react-and-jsx.md).
 
-   Per un esempio dell'uso Vue.js con TypeScript, vedere [Creare un'Vue.js applicazione](/javascript/create-application-with-vuejs).
+   Per un esempio dell'uso di Vue.js con TypeScript, vedere [Creare un'Vue.js applicazione](/javascript/create-application-with-vuejs).
 
-1. Se è necessario configurare opzioni come la pagina di avvio, il percorso del runtime di Node.js, la porta dell'applicazione o gli argomenti di runtime, fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere **Proprietà**.
+1. Se è necessario configurare opzioni quali la pagina di avvio, il percorso del runtime di Node.js, la porta dell'applicazione o gli argomenti di runtime, fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere **Proprietà**.
 
    >[!NOTE]
-   > Quando si configurano strumenti di terze parti, i progetti Node.js non usano i percorsi configurati in Strumenti Opzioni Progetti e soluzioni Web Gestione pacchetti  >    >    >    >  **Web esterni.** Queste impostazioni vengono usate per altri tipi di progetto.
+   > Quando si configurano strumenti di terze parti, i progetti Node.js non usano i percorsi configurati in Strumenti Opzioni Progetti e soluzioni  >    >    >  **Web Gestione pacchetti**  >  **Strumenti Web esterni**. Queste impostazioni vengono usate per altri tipi di progetto.
 
 1. Scegliere **Compila > Compila soluzione**.
 

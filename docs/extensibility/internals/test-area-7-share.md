@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41c826350254939c4f848bd19addca136224e817
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 23b5564470551b1732e57e4cf07cbd191c069d21afd6ac1f0b563f596c852fcd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124542"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431773"
 ---
 # <a name="test-area-7-share"></a>Area di test 7: Condividi
 Questa area di test illustra la condivisione di elementi tra percorsi tramite **il comando** Condividi.

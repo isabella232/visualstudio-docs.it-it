@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7af2cadaa7747478a1609251d14fe1af6a518a2c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8bc5fcca187603ab4001e38df67eacf0df5b1be80353aa161bc921a3a3fd1b22
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096414"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434009"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Questa interfaccia rappresenta un documento di origine.
@@ -31,7 +31,7 @@ IDebugDocument2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] in genere implementa questa interfaccia. Un motore di debug può implementare questa interfaccia anche quando deve fornire il codice sorgente e l'origine non esiste su disco.  In questi casi, DE implementerebbe anche le interfacce [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) e [IDebugActivateDocumentEvent2,](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) nonché alcuni metodi aggiuntivi sulle [interfacce IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) e [IDebugDocumentPosition2.](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] in genere implementa questa interfaccia. Un motore di debug può implementare questa interfaccia anche quando deve fornire il codice sorgente e l'origine non esiste su disco.  In questi casi, dedi implementerebbe anche le interfacce [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) e [IDebugActivateDocumentEvent2,](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) nonché alcuni metodi aggiuntivi nelle [interfacce IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) e [IDebugDocumentPosition2.](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  I metodi nelle `IDebugDocumentContext2` interfacce , , e `IDebugDisassemblyStream2` `IDebugDocumentPosition2` `IDebugActivateDocumentEvent2` restituiscono questa interfaccia.
@@ -45,7 +45,7 @@ IDebugDocument2 : IUnknown
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Ottiene l'identificatore di classe del documento.|
 
 ## <a name="remarks"></a>Commenti
- Questa interfaccia viene implementata solo quando de fornisce il codice sorgente. Ad esempio, quando si esegue il debug di script in una pagina HTML, de fornisce il codice sorgente perché l'origine viene scaricata o generata dinamicamente e non esiste come file su disco. Quando si esegue il debug di linguaggi tradizionali, ad esempio C++, questa interfaccia non deve essere implementata.
+ Questa interfaccia viene implementata solo quando il DE fornisce il codice sorgente. Ad esempio, quando si esegue il debug di script in una pagina HTML, il de fornisce il codice sorgente perché l'origine viene scaricata o generata dinamicamente e non esiste come file su disco. Quando si esegue il debug di linguaggi tradizionali, ad esempio C++, questa interfaccia non deve essere implementata.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

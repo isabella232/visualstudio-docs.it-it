@@ -1,5 +1,5 @@
 ---
-description: Recupera i file di origine in base al nome e al compilando.
+description: Recupera i file di origine tramite compilazione e nome.
 title: IDiaSession::findFile | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: eddff6e842bdf29bfe07d7219e5cca5861be16ed4634d26f7ccdb02bdbdb0ec9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d1d8d9b32e850214d45703107dcdc5e22a1b9a8d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391864"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074716"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-Recupera i file di origine in base al nome e al compilando.
+Recupera i file di origine tramite compilazione e nome.
 
 ## <a name="syntax"></a>Sintassi
 

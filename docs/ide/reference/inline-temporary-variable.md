@@ -1,23 +1,24 @@
 ---
 title: Sostituire una variabile temporanea con il valore corrispondente
-description: Informazioni su come usare il menu azioni rapide e refactoring per rimuovere una variabile temporanea e sostituirla con il relativo valore.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per rimuovere una variabile temporanea e sostituirla con il relativo valore.
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebe062d5dd569ae1d2162ea7334f91d8b82decdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d9a498cb8c6b6f8a52b590e6f080ff9e0d0dbcd742b916abc035648d921ce65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852375"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357284"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refactoring con variabile temporanea inline
 
@@ -48,7 +49,7 @@ Questo refactoring si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**.
 

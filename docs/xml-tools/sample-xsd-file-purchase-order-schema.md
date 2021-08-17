@@ -1,6 +1,6 @@
 ---
 title: 'File XSD di esempio: schema di ordine di acquisto'
-description: Visualizzare il file XSD di esempio per uno schema dell'ordine di acquisto usato in vari esempi nella documentazione di Progettazione schemi XSD.
+description: Visualizzare il file XSD di esempio per uno schema dell'ordine di acquisto utilizzato in vari esempi nella documentazione di Progettazione schemi XSD.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a3e5e678edd5d616ea3ffc132dce0b8e28e3ef170242ba7c9611cb9f6920201
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a27606abf4b33acfb812d55cad83a801f05d3f2f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306023"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042608"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizzatore di tipi e visualizzatore personalizzato
 Un visualizzatore di tipi è un componente che visualizza una parte di dati in un formato specifico. Il formato dipende interamente da chi implementa il visualizzatore, che si tratta dell'utente finale o di un fornitore di visualizzatori di terze parti.

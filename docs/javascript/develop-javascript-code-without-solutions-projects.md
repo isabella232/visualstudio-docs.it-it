@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 42c3b9f4cc688dd5f2df1fde3f678060a7997bcfc4814760568a95f92c56b01f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1cad687f73af5eb59f23a2d176e5b8facd3da40
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121258161"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028020"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Sviluppare il codice JavaScript e TypeScript in Visual Studio senza soluzioni o progetti
 
@@ -80,7 +80,7 @@ Se non viene riconosciuto nessun framework supportato, il test runner usa *Expor
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 
-Dopo aver aperto Esplora test (scegliere  >  **Test Windows** Esplora  >  **test),** Visual Studio individua e visualizza i test.
+Dopo aver aperto Esplora test (scegliere  >  **Test Windows**  >  **Esplora test),** Visual Studio individua e visualizza i test.
 
 > [!NOTE]
 > Se l'applicazione è scritta in TypeScript, il test runner enumererà solo i file JavaScript che sono da compilare per primi.

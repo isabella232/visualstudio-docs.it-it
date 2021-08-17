@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di strumentazione | Microsoft Docs'
-description: Informazioni sul modo in cui nella visualizzazione albero delle chiamate vengono visualizzate le informazioni di strumentazione nell'albero delle chiamate in Esplora prestazioni.
+description: Informazioni su come la visualizzazione Albero delle chiamate visualizza le informazioni di strumentazione nell'albero delle chiamate in Esplora prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 815c6c0fc3eec3678f878e081d76c95cb7e8fc78
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbab3e863feba8ed2490a38f21923dcdce0531b19ee5d55b181d8b4ed38c447e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860841"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333782"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione
 I valori di una funzione nell'albero delle chiamate indicano il tempo per le istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore delle istanze della funzione con il tempo inclusivo trascorso totale di tutte le funzioni nell'esecuzione della profilatura.
@@ -28,12 +29,12 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome funzione**|Nome della funzione.|
+|**Nome della funzione**|Nome della funzione.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome assegnato al processo.|
@@ -86,7 +87,7 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione in questo contesto.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
-- [Visualizzazione albero delle chiamate-Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
+- [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

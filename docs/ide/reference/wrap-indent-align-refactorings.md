@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 54e0fccbc4ff1994b6c7c1e3469232eaf7a64ece75e575d203a8d6e845afccc7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 951bc8fa65991daaad2661744efd6bcbd17bdcd4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121371808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056069"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Impostare il ritorno a capo automatico, il rientro e l'allineamento dei refactoring
 
@@ -29,11 +29,11 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Consente di eseguire il wrapping e l'allineamento di catene di chiamate al metodo.
+**Cosa:** Consente di eseguire il wrapping e allineare le catene di chiamate al metodo.
 
-**Quando:** Si dispone di una catena lunga costituita da diverse chiamate al metodo in un'unica istruzione.
+**Quando:** Si dispone di una lunga catena costituita da diverse chiamate al metodo in un'unica istruzione.
 
-**Perché:** La lettura di un elenco lungo è più semplice quando viene eseguito il wrapping o il rientro in base alle preferenze dell'utente.
+**Perché:** La lettura di un lungo elenco è più semplice quando viene eseguito il wrapping o il rientro in base alle preferenze dell'utente.
 
 ### <a name="how-to"></a>Procedure
 
@@ -41,7 +41,7 @@ Questo refactoring si applica a:
 2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **Esegui il wrapping della catena di chiamate** o **Esegui il wrapping e allinea la catena di chiamate** per accettare il refactoring.
 
-   ![Screeenshot del menu Azioni rapide e refactoring in Visual Studio con la catena di chiamate Warap selezionata e le modifiche al codice C# visualizzate.](media/wrap-call-chain.png)
+   ![Immagine del menu Azioni rapide e refactoring in Visual Studio con la catena di chiamate Warap selezionata e le modifiche al codice C# visualizzate.](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>Ritorno a capo automatico, rientro e allineamento dei parametri o degli argomenti
 
@@ -51,11 +51,11 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Consente di eseguire il wrapping, il rientro e l'allineamento di parametri o argomenti.
+**Cosa:** Consente di eseguire il wrapping, impostare un rientro e allineare parametri o argomenti.
 
 **Quando:** Si dispone di una dichiarazione di metodo o di una chiamata con più parametri o argomenti.
 
-**Perché:** La lettura di un lungo elenco di parametri o argomenti è più semplice quando ne viene eseguito il wrapping o il rientro in base alle preferenze dell'utente.
+**Perché:** La lettura di un lungo elenco di parametri o argomenti è più semplice quando viene eseguito il wrapping o il rientro in base alle preferenze dell'utente.
 
 ### <a name="how-to"></a>Procedure
 
@@ -64,7 +64,7 @@ Questo refactoring si applica a:
 
    ![Impostare il ritorno a capo automatico, il rientro e l'allineamento dei parametri](media/wrap-parameters.png)
 
-3. Selezionare **Wrap every parameter (Esegue** il wrapping di ogni parametro) per accettare il refactoring.
+3. Selezionare **Wrap every parameter (Eseguire** il wrapping di ogni parametro) per accettare il refactoring.
 
 ## <a name="wrap-binary-expressions"></a>Wrapping delle espressioni binarie
 
@@ -84,9 +84,9 @@ Questo refactoring si applica a:
 
 1. Posizionare il cursore nell'espressione binaria.
 2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
-3. Selezionare **Wrap expression (Espressione di** wrapping) per accettare il refactoring.
+3. Selezionare **Wrap expression (Incapsula** espressione) per accettare il refactoring.
 
-   ![Screeenshot del menu Azioni rapide e refactoring in Visual Studio con l'espressione Warap selezionata e le modifiche al codice C# visualizzate.](media/wrap-binary-expression.png)
+   ![Immagine del menu Azioni rapide e refactoring in Visual Studio con l'espressione Warap selezionata e le modifiche al codice C# visualizzate.](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>Vedi anche
 

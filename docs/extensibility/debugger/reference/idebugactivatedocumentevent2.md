@@ -1,5 +1,5 @@
 ---
-description: Il motore di debug (DE) usa questa interfaccia per richiedere il caricamento di un documento.
+description: Il motore di debug usa questa interfaccia per richiedere il caricamento di un documento.
 title: IDebugActivateDocumentEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbf24620b3dfa508a52463598219be4b2d7439a8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5eeae3a29c4e0fdfaad3808228ce6bed9cfe3d7ff2f6e56f0699ed4e051d64df
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094401"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434230"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
-Il motore di debug (DE) usa questa interfaccia per richiedere il caricamento di un documento.
+Il motore di debug usa questa interfaccia per richiedere il caricamento di un documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,13 +31,13 @@ IDebugActivateDocumentEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il DE implementa questa interfaccia quando è necessario che venga aperto un file di origine. Questa interfaccia viene implementata solo dai motori di debug che funzionano con o fanno parte di interpreti di script. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (il SDM USA [QueryInterface](/cpp/atl/queryinterface) per accedere all' `IDebugEvent2` interfaccia).
+ Il de implementa questa interfaccia quando è necessario aprire un file di origine. Questa interfaccia viene implementata solo dai motori di debug che funzionano con o fanno parte di interpreti di script. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (SDM usa [QueryInterface](/cpp/atl/queryinterface) per accedere all'interfaccia). `IDebugEvent2`
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il DE crea e invia questo oggetto evento quando è necessario aprire un file di origine. L'evento viene inviato utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug.
+ Il de crea e invia questo oggetto evento quando deve avere aperto un file di origine. L'evento viene inviato usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugActivateDocumentEvent2` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugActivateDocumentEvent2` .
 
 |Metodi|Descrizione|
 |-------------|-----------------|
@@ -44,12 +45,12 @@ IDebugActivateDocumentEvent2 : IUnknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Ottiene il contesto del documento che descrive la posizione all'interno del documento.|
 
 ## <a name="remarks"></a>Commenti
- Uno scenario tipico in cui viene utilizzata questa interfaccia è se si verifica un errore di analisi nel codice di script in una pagina HTML, lo script DE Invia questa interfaccia a SDM, in modo che sia possibile visualizzare il documento con l'errore di analisi.
+ Uno scenario tipico in cui questa interfaccia viene usata è se si verifica un errore di analisi nel codice di script in una pagina HTML, lo script DE invia questa interfaccia a SDM in modo che il documento con l'errore di analisi possa essere visualizzato.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

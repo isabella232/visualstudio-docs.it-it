@@ -1,5 +1,5 @@
 ---
-description: 'IDiaStackWalkHelper:: get_registerValue Recupera il valore di un registro.'
+description: IDiaStackWalkHelper::get_registerValue recupera il valore di un registro.
 title: IDiaStackWalkHelper::get_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,14 +11,15 @@ ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fa87529f90b20d7d9099dd76e294e406ae0c7a08
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5f5edbbe7e01e1b15f308687d58be0623521b1ce
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161180"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074580"
 ---
 # <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 Recupera il valore di un registro.
@@ -35,17 +36,17 @@ HRESULT get_registerValue (
 #### <a name="parameters"></a>Parametri
  `index`
 
-in Valore dell'enumerazione [CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) enumerazione che specifica il registro da cui ottenere il valore.
+[in] Valore dell'enumerazione [CV_HREG_e che](../../debugger/debug-interface-access/cv-hreg-e.md) specifica il registro da cui ottenere il valore.
 
  `pRetVal`
 
-out Restituisce il valore corrente del registro.
+[out] Restituisce il valore corrente del registro.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Nonostante le dimensioni del `pRetVal` parametro, un'implementazione deve archiviare solo ciò che il registro include normalmente. Un registro a 8 bit, ad esempio, include solo gli 8 bit più bassi del valore specificato. Questo valore a 8 bit viene espanso a 64 bit quando viene restituito da questo metodo.
+ Nonostante le dimensioni del `pRetVal` parametro , un'implementazione deve archiviare solo ciò che normalmente contiene il registro. Ad esempio, un registro a 8 bit contiene solo gli 8 bit più bassi del valore specificato. Questo valore a 8 bit viene espanso a 64 bit quando viene restituito da questo metodo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

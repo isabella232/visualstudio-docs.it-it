@@ -18,12 +18,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 283e3a8474c9d7b301dd00fa7dcc0443a4a15e0c5c0a453c0c90709507c022cd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1449e4acc3c7b2c9ef438d85fe9640406b9b3867
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121245785"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027266"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
@@ -158,22 +158,22 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda Avanzate 
 | --- | --- | --- |
 | **Commit alla digitazione dei caratteri seguenti** | **{}\[\]().,:;+-*/%&&#124;^~=<> #@\\** | Questi caratteri seguono in genere un identificatore che può essere selezionato da un elenco di completamento, pertanto è consigliabile eseguire il commit del completamento semplicemente digitando un carattere. È possibile rimuovere o aggiungere caratteri specifici all'elenco in base alle esigenze.  |
 | **Immetti completamento corrente dei commit** | On | Se impostato,  il tasto INVIO sceglie e applica il completamento attualmente selezionato come con i caratteri precedenti (ma naturalmente non è presente un carattere per **INVIO,** quindi non è stato possibile accedere direttamente all'elenco). |
-| **Aggiungi nuova riga quando si preme Invio alla fine della parola digitata** | Off | Per impostazione predefinita, se si digita l'intera parola visualizzata nel popup di completamento e si preme **INVIO,** si esegue il commit del completamento. Impostando questa opzione, si esegue effettivamente il commit dei completamenti al termine della digitazione dell'identificatore, in modo che **invio** inserisca una nuova riga. |
+| **Aggiungi nuova riga quando si preme Invio alla fine della parola digitata** | Off | Per impostazione predefinita, se si digita l'intera parola visualizzata nel popup di completamento e si preme **INVIO,** si esegue il commit del completamento. Impostando questa opzione, è possibile eseguire il commit dei completamenti al termine della digitazione dell'identificatore, in modo che **Invio** inserisca una nuova riga. |
 
 ### <a name="miscellaneous-options"></a>Opzioni varie
 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
 | **Attiva modalità struttura all'apertura dei file** | On | Attiva automaticamente la funzionalità di struttura nell'editor di Visual Studio all'apertura di un file di codice Python. |
-| **Paste removed REPL prompts (Incolla prompt REPL rimossi)** | On | Rimuove **>>>** e ... **dal** testo incollato, consentendo un facile trasferimento del codice dalla **finestra** Interattiva all'editor. Deselezionare questa opzione se è necessario conservare tali caratteri provenienti da altre origini. |
+| **Paste removed REPL prompts (Incolla prompt REPL rimossi)** | On | Rimuove **>>>** e **...** dal testo incollato, consentendo di trasferire facilmente il codice dalla **finestra** interattiva all'editor. Deselezionare questa opzione se è necessario conservare tali caratteri provenienti da altre origini. |
 | **Nomi dei colori in base ai tipi** | On | Abilita la colorazione della sintassi nel codice Python. |
 
 ![Finestra di dialogo delle opzioni dell'editor di Python, scheda avanzate](media/options-editor-advanced.png)
 
 ## <a name="fonts-and-colors-options"></a>Opzioni Tipi di carattere e colori
 
-(**Ambiente**  >  **Scheda Tipi di carattere e** colori nel gruppo Editor **di** testo.
+(**Ambiente**  >  **Scheda Tipi di carattere e** colori all'interno del gruppo Editor **di** testo.
 
-I nomi delle opzioni di Python sono preceduti tutti dal prefisso **Python** e sono autoesplicativi. Il tipo di carattere predefinito per tutti Visual Studio colori è 10 pt Consolas normale (non in grassetto). I colori predefiniti variano a seconda del tema. In genere, si modifica un tipo di carattere o un colore se la leggibilità del testo non è adeguata con le impostazioni predefinite.
+I nomi delle opzioni di Python sono preceduti tutti dal prefisso **Python** e sono autoesplicativi. Il tipo di carattere predefinito per Visual Studio colori predefiniti è 10 pt Consolas normale (non in grassetto). I colori predefiniti variano a seconda del tema. In genere, si modifica un tipo di carattere o un colore se la leggibilità del testo non è adeguata con le impostazioni predefinite.
 
 ![Opzioni per tipo di carattere e colori di Python](media/options-fonts-and-colors.png)

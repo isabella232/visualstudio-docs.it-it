@@ -1,6 +1,6 @@
 ---
 title: Contatori CPU e Windows | Microsoft Docs
-description: I contatori cpu (hardware) Windows (software) forniscono dati sulle prestazioni. Informazioni su come visualizzarli e come raccogliere dati da essi.
+description: I contatori CPU (hardware) Windows (software) forniscono dati sulle prestazioni. Informazioni su come visualizzarli e come raccogliere dati da essi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual

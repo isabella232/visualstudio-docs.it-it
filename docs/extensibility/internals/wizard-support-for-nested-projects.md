@@ -1,5 +1,5 @@
 ---
-title: Supporto della procedura guidata per i progetti annidati | Microsoft Docs
+title: Supporto della procedura guidata per progetti annidati | Microsoft Docs
 description: Informazioni sulle due procedure guidate che un progetto padre può implementare per i progetti annidati nel pacchetto VSPackage in Visual Studio SDK.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -12,23 +12,24 @@ ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f52b42462fdc4b7878f97c01bdc65322f32eb5b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c0fdc97b8ef15b4fdfd8fee13affb52b1935b80f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074145"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041711"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Supporto di procedure guidate per i progetti annidati
-L'IDE esegue due procedure guidate che il progetto padre per i progetti annidati può implementare: creazione guidata **nuovo progetto** e **Aggiunta guidata elemento** .
+L'IDE esegue due procedure guidate che il progetto padre per **i progetti annidati** può implementare: la procedura guidata Project e la procedura **guidata Aggiungi** elemento.
 
- Se un utente avvia la creazione guidata **nuovo progetto** selezionando **Aggiungi progetto** e scegliendo **nuovo progetto** dal menu file oppure selezionando **Aggiungi** e facendo clic con il pulsante destro del mouse su **nuovo progetto** in Esplora soluzioni, l'IDE esegue il comando **AddProject** e l'implementazione del progetto padre del comando **AddProject** restituisce un file di progetto di modello o un file con estensione vsz con un set di parametri di contesto.
+ Se un utente avvia la procedura guidata Nuovo **Project** selezionando Aggiungi **Project** e scegliendo Nuovo **Project** dal menu File o scegliendo Aggiungi e facendo clic con il pulsante destro del mouse su Nuovo **Project** in Esplora soluzioni, l'IDE esegue il comando **AggiungiProgetto** e l'implementazione del progetto padre del comando **AggiungiProgetto** restituisce un file di progetto modello o un file della procedura guidata (vsz) con un set di parametri di contesto. 
 
- Analogamente, l'implementazione delle procedure guidate di un progetto padre restituisce un file con estensione vsz che **dispone di un** set diverso di parametri di contesto.
+ Analogamente, l'implementazione delle procedure guidate **AddItem** di un progetto padre restituisce un file con estensione vsz con un set diverso di parametri di contesto.
 
- Per ulteriori informazioni sulle procedure guidate, vedere [procedura guidata (. File VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md), [parametri di contesto](../../extensibility/internals/context-parameters.md) e [registrazione dei modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md).
+ Per altre informazioni sulle procedure guidate, vedere [Procedura guidata (. Vsz) File](../../extensibility/internals/wizard-dot-vsz-file.md), [Parametri di contesto](../../extensibility/internals/context-parameters.md) e Registrazione Project modelli di [elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

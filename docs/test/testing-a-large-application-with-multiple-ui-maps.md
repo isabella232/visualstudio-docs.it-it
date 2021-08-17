@@ -1,6 +1,6 @@
 ---
 title: Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
-description: Informazioni su come usare i test codificati dell'interfaccia utente quando si testa un'applicazione di grandi dimensioni usando più test dell'interfaccia Mappe. Questa funzionalità richiede Visual Studio Enterprise.
+description: Informazioni su come usare test codificati dell'interfaccia utente quando si esegue il test di un'applicazione di grandi dimensioni usando più test dell'interfaccia Mappe. Questa funzionalità richiede Visual Studio Enterprise.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 49655aa1aa33f962f3cbaa13ed0d991376f7c700
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5bd5762c72b3ef99d7e58a7ea8b99621f555212393d9b7fa87a877b068c6dc34
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038409"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121352357"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 

@@ -17,14 +17,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 099bd2c6cc47895c913b3f852835d2fd09d0f9c3
-ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
+ms.openlocfilehash: c8ce30c5dded0c247467d47296429412d1a561eb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073890"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Distribuire l'app in una cartella, IIS, Azure o in un'altra destinazione
 
@@ -47,7 +48,7 @@ Dall'interno di Visual Studio è possibile pubblicare le applicazioni direttamen
 
 ::: moniker range=">=vs-2019"
 - [Azure](#azure)
-- [Registro contenitori Docker](#docker-container-registry)
+- [Registro Contenitori Docker](#docker-container-registry)
 - [Cartella](#folder)
 - [Server FTP/FTPS](#ftpftps-server)
 - [Server Web (IIS)](#web-server-iis)
@@ -217,7 +218,7 @@ Quando si sceglie un server Web IIS, Visual Studio richiede un nome di  profilo 
 - Si vuole eseguire la distribuzione usando credenziali diverse da quelle usate in Visual Studio o quelle associate direttamente all'account Azure.
 - Si vuole eliminare i file dalla destinazione ogni volta che si esegue la distribuzione.
 
-Per altre informazioni, vedere [Avvio rapido - Distribuzione in un sito Web.](quickstart-deploy-to-a-web-site.md)
+Per altre informazioni, vedere [Avvio rapido - Distribuire in un sito Web.](quickstart-deploy-to-a-web-site.md)
 
 Per informazioni sulla risoluzione dei ASP.NET Core in IIS, vedere Risolvere i ASP.NET Core [in Servizio app di Azure e IIS.](/aspnet/core/test/troubleshoot-azure-iis)
 
@@ -225,7 +226,7 @@ Per informazioni sulla risoluzione dei ASP.NET Core in IIS, vedere Risolvere i A
 
 È possibile importare un profilo durante la pubblicazione in IIS o Servizio app di Azure. È possibile configurare la distribuzione usando un *file di impostazioni di pubblicazione* (*\* .publishsettings*). Il file delle impostazioni di pubblicazione viene creato da IIS o dal servizio app di Azure oppure può essere creato manualmente e quindi importato in Visual Studio.
 
-L'uso di un file di impostazioni di pubblicazione può semplificare la configurazione della distribuzione e funziona meglio in un ambiente del team anziché configurare manualmente ogni profilo di distribuzione.
+L'uso di un file di impostazioni di pubblicazione può semplificare la configurazione della distribuzione e funziona meglio in un ambiente di team anziché configurare manualmente ogni profilo di distribuzione.
 
 ### <a name="when-to-choose-import-profile"></a>Quando scegliere il profilo di importazione
 

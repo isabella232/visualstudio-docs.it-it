@@ -1,5 +1,5 @@
 ---
-title: Configurare Visual Studio Container Tools
+title: Configurare Visual Studio contenitore
 description: Configurare gli strumenti disponibili in Visual Studio per l'uso dei contenitori Docker.
 author: ghogen
 ms.author: ghogen
@@ -32,7 +32,7 @@ Impostazioni generali di Strumenti **contenitore:**
 
 ![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Installare Docker Desktop se necessario e considerare attendibile ASP.NET Core certificato SSL.](./media/configure-container-tools/tools-options-1.png)
 
-Impostazioni **Project** contenitore e **Docker Compose** contenitori:
+Impostazioni **Project** **contenitore** Docker Compose contenitori:
 
 ![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Uccidi contenitori alla chiusura del progetto, Esegui il pull delle immagini Docker necessarie all'apertura del progetto e Esegui contenitori all'apertura del progetto.](./media/configure-container-tools/tools-options-2.png)
 ::: moniker-end

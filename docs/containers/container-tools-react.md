@@ -79,7 +79,7 @@ Il passaggio successivo è diverso a seconda che si utilizzino contenitori Linux
 
 Nel progetto viene creato un *Dockerfile*, il file recipe per la creazione di un'immagine Docker finale. Per informazioni sui comandi al suo interno, fare riferimento a [Dockerfile](https://docs.docker.com/engine/reference/builder/) reference (Informazioni di riferimento su Dockerfile).
 
-Aprire il *Dockerfile* nel progetto e aggiungere le righe seguenti per installare Node.js 10.x nel contenitore. Assicurarsi di aggiungere queste righe sia nella prima sezione, per aggiungere l'installazione di Node Package Manager *npm.exe* all'immagine di base, nonché nella `build` sezione .
+Aprire il *Dockerfile* nel progetto e aggiungere le righe seguenti per installare Node.js 10.x nel contenitore. Assicurarsi di aggiungere queste righe sia nella prima sezione, per aggiungere l'installazione di Node Package Manager *npm.exe* all'immagine di base, sia nella `build` sezione .
 
 ```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
@@ -264,8 +264,8 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
    ![Scegliere Registro Azure Container](media/container-tools-react/vs-2019/publish-dialog-acr.png)
 
-1. Scegliere **Crea una nuova Registro Azure Container**.
-1. Immettere i valori desiderati nella schermata **Create new Registro Azure Container (Crea Registro Azure Container** pagina).
+1. Scegliere **Crea un nuovo Registro Azure Container**.
+1. Compilare i valori desiderati nella **schermata Create new Registro Azure Container (Crea Registro Azure Container** dati).
 
     | Impostazione      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |

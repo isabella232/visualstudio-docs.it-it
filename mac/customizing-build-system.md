@@ -14,7 +14,7 @@ ms.locfileid: "121349821"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
 
-Il Microsoft Build Engine è una piattaforma per la compilazione di applicazioni. Il motore, noto anche come MSBuild, è stato sviluppato da Microsoft e consente la creazione di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. In questo momento, tuttavia, xbuild è stato gradualmente sfasato a favore dell'MSBuild in tutti i sistemi operativi.
+Il Microsoft Build Engine è una piattaforma per la compilazione di applicazioni. Il motore, noto anche come MSBuild, è stato sviluppato da Microsoft e consente la creazione di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. In questo momento, tuttavia, xbuild è stato gradualmente sfasato a favore dell'uso di MSBuild in tutti i sistemi operativi.
 
 **MSBuild** viene usato come sistema di compilazione per i progetti in Visual Studio per Mac e funziona prendendo un set di input, ad esempio i file di origine, e li trasforma in output, ad esempio file eseguibili. tramite la chiamata a strumenti quali il compilatore.
 

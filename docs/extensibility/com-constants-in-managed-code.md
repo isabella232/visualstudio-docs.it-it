@@ -10,14 +10,15 @@ ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb259d754befa3596e1dff1e49931c8ee81c665b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a55d9e934f85c6be2dc3822dc8373d8cbcacf40f1abe2eff5536fbabfb5aed0e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904321"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121293612"
 ---
 # <a name="com-constants-in-managed-code"></a>Costanti COM nel codice gestito
 Managed Package Framework (MPF) rende disponibili alcune costanti COM standard per il codice gestito. Queste costanti sono elencate di seguito per riferimento.
@@ -128,5 +129,5 @@ Managed Package Framework (MPF) rende disponibili alcune costanti COM standard p
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione degli errori e valori restituiti](../extensibility/error-handling-and-return-values.md)

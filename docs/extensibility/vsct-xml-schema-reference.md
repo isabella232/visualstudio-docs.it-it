@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c1a09a7000b19980c14cd71fa02b600a2de9aea9fd514c1caa8e28a02307c1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f6564d563894dfb48d0fea1a008ffffb65ba280
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400504"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028410"
 ---
 # <a name="vsct-xml-schema-reference"></a>Informazioni di riferimento sullo schema XML VSCT
 Fornisce una tabella di elementi dello schema del compilatore di tabelle comandi, con gli elementi figlio e gli attributi consentiti per ognuno.

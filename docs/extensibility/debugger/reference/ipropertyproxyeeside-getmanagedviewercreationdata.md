@@ -1,5 +1,5 @@
 ---
-description: Recupera informazioni sul visualizzatore per questo tipo di proprietà per creare un'istanza del visualizzatore.
+description: Recupera informazioni sul visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.
 title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3044abff780c0b7798c7c311cf32199166230c0315a12dfc6caf47ca23cc9da4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e264d80bc940d4091f380d401ba24719a46e36fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321389"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042855"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Recupera informazioni sul visualizzatore per questo tipo di proprietà per creare un'istanza del visualizzatore.
+Recupera informazioni sul visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,10 +56,10 @@ int GetManagedViewerCreationData(
 [out] Restituisce il nome dell'assembly che contiene questo oggetto.
 
 `assemBytes`\
-[out] Restituisce un [oggetto IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenente i byte dell'assembly di questo oggetto (si tratta di un valore Null se non sono disponibili byte).
+[out] Restituisce un [oggetto IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenente i byte dell'assembly di questo oggetto (valore Null se non sono disponibili byte).
 
 `assemPdb`\
-[out] Restituisce un `IEEDataStorage` oggetto contenente le informazioni sull'archivio dei simboli per questo oggetto (si tratta di un valore Null se non è disponibile alcun archivio simboli).
+[out] Restituisce un `IEEDataStorage` oggetto contenente le informazioni sull'archivio simboli per questo oggetto (si tratta di un valore Null se non è disponibile alcun archivio simboli).
 
 `className`\
 [out] Restituisce il nome della classe contenente questo oggetto.
@@ -68,7 +68,7 @@ int GetManagedViewerCreationData(
 [out] Restituisce un valore [dall'enumerazione ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) che indica il percorso dell'assembly.
 
 `replacementOk`\
-[out] Restituisce un valore diverso da zero ( ) se il valore di questo oggetto può `TRUE` essere modificato; zero ( ) se l'oggetto `FALSE` è di sola lettura.
+[out] Restituisce un valore diverso da zero ( ) se il valore di questo oggetto può essere `TRUE` modificato; zero ( ) se l'oggetto `FALSE` è di sola lettura.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

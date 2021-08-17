@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 716ac3ce08b51695219b5c8cd33f49134f33d3626943e02c939c7427920f6e87
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cf6d381ff163711eb1026071a91660d74d835c71
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041763"
 ---
 # <a name="wizard-vsz-file"></a>File (con estensione vsz) della procedura guidata
 

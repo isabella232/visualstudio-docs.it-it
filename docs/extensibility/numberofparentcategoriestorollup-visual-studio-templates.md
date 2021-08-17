@@ -1,6 +1,6 @@
 ---
 title: Elemento NumberOfParentCategoriesToRollUp (modelli)
-description: Informazioni sull'elemento NumberOfParentCategoriesToRollUp e su come viene specificato il numero di categorie padre che visualizzeranno il modello nella finestra di dialogo nuovo progetto.
+description: Informazioni sull'elemento NumberOfParentCategoriesToRollUp e su come specifica il numero di categorie padre che visualizzano il modello nella finestra di dialogo Project nuovo elemento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02c6f0e22429b268fb643c622ebd1f237a4721d3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 899e5e991c998f26c46749875f3c10a7555136f89b95dc8d9c0351a734c0d722
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090473"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431669"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Elemento NumberOfParentCategoriesToRollUp (modelli di Visual Studio)
-Specifica il numero di categorie padre che visualizzeranno il modello nella finestra di dialogo **nuovo progetto** .
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Elemento NumberOfParentCategoriesToRollUp (Visual Studio personalizzati)
+Specifica il numero di categorie padre che visualizzano il modello nella finestra **di dialogo Project** nuovo elemento.
 
  \<VSTemplate> \<TemplateData>
  \<NumberOfParentCategoriesToRollUp>
@@ -41,10 +41,10 @@ Specifica il numero di categorie padre che visualizzeranno il modello nella fine
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -53,15 +53,15 @@ Specifica il numero di categorie padre che visualizzeranno il modello nella fine
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|
 
 ## <a name="text-value"></a>Valore di testo
- `integer`È necessario specificare un valore.
+ È `integer` necessario un valore.
 
- Questo valore specifica il numero di categorie padre che visualizzeranno il modello nella finestra di dialogo **nuovo progetto** .
+ Questo valore specifica il numero di categorie padre che visualizzano il modello nella finestra **di dialogo Project** nuovo elemento.
 
 ## <a name="remarks"></a>Commenti
  `NumberOfParentCategoriesToRollUp` è un elemento facoltativo.
 
 ## <a name="example"></a>Esempio
- In questo esempio vengono illustrati i metadati per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows. Se un modello con questi metadati viene inserito a due livelli di cartella al di sotto del nodo di primo livello [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] , il modello verrà visualizzato nel nodo di primo livello della finestra di dialogo **nuovo progetto** . Se `NumberOfParentCategoriesToRollUp` non è impostato, il modello viene visualizzato solo nel nodo in cui si trova fisicamente.
+ Questo esempio illustra i metadati per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'Windows applicazione. Se un modello con questi metadati viene posizionato due livelli di cartella sotto il nodo di primo livello, il modello verrà visualizzato nel nodo di primo livello nella finestra [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] **di dialogo Project** nuovo nodo. Se non `NumberOfParentCategoriesToRollUp` è impostato, il modello viene visualizzato solo nel nodo in cui si trova fisicamente.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -89,5 +89,5 @@ Specifica il numero di categorie padre che visualizzeranno il modello nella fine
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

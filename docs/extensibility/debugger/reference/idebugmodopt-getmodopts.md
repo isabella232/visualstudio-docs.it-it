@@ -1,6 +1,6 @@
 ---
 description: Recupera un elenco di modificatori facoltativi.
-title: 'IDebugModOpt:: GetModOpts | Microsoft Docs'
+title: IDebugModOpt::GetModOpts | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 614ecb456b6f644dfd389020bbffb23691cfbf43
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c13c664e80fe0ea2d479911d75fbd62b5d51e97b143fcd1cd89144718a5ede86
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081906"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433632"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 Recupera un elenco di modificatori facoltativi.
@@ -45,10 +46,10 @@ int GetModOpts(
 
 ## <a name="parameters"></a>Parametri
 `celt`\
-in Numero di elementi da restituire.
+[in] Numero di elementi da restituire.
 
 `rgelt`\
-out Restituisce una matrice che contiene le opzioni.
+[out] Restituisce una matrice che contiene le opzioni.
 
 `pceltFetched`\
 [in, out] Numero di elementi restituiti nella `rgelt` matrice.

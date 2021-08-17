@@ -110,14 +110,14 @@ I seguenti pulsanti della barra degli strumenti XSD sono abilitati quando la vis
 |**Cancella area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione. Questa opzione è abilitata nella visualizzazione modello di contenuto e nella visualizzazione grafico.|
-|**Da sinistra a destra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. È possibile accedere a questa opzione usando il tasto di scelta rapida + **ALT+freccia DESTRA.**|
-|**Da destra a sinistra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. È possibile accedere a questa opzione usando il tasto di scelta rapida + **ALT+freccia SINISTRA.**|
-|**Dall'alto in basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. È possibile accedere a questa opzione usando il tasto di scelta rapida + **ALT+freccia GIÙ.**|
-|**Dal basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. È possibile accedere a questa opzione usando il tasto di scelta rapida + **ALT+FRECCIA SU.**|
+|**Da sinistra a destra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. È possibile accedere a questa opzione usando i tasti di scelta rapida alt + **freccia destra.**|
+|**Da destra a sinistra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. È possibile accedere a questa opzione usando i tasti di scelta rapida + **ALT+FRECCIA SINISTRA.**|
+|**Dall'alto in basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. È possibile accedere a questa opzione usando i tasti di scelta rapida + **ALT+ freccia GIÙ.**|
+|**Dal basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. È possibile accedere a questa opzione usando i tasti di scelta rapida + **ALT+FRECCIA SU.**|
 
 ## <a name="panscroll"></a>Panoramica/scorrimento
 
-È possibile eseguire la panoramica dell'area di progettazione usando le barre di scorrimento o tenendo premuto **CTRL** mentre si fa clic e si trascina il mouse. Quando si esegue una panoramica dell'area di progettazione tramite selezione e trascinamento, il cursore sarà modificato in quattro frecce incrociate che puntano in quattro direzioni.
+È possibile eseguire una panoramica dell'area di progettazione usando le barre di scorrimento o tenendo premuto **CTRL** mentre si fa clic e si trascina il mouse. Quando si esegue una panoramica dell'area di progettazione tramite selezione e trascinamento, il cursore sarà modificato in quattro frecce incrociate che puntano in quattro direzioni.
 
 ## <a name="undoredo"></a>Annullamento/ripristino
 
@@ -135,17 +135,17 @@ Lo zoom è disponibile nell'angolo inferiore destro della visualizzazione grafic
 
 È possibile controllare lo zoom nei seguenti modi:
 
-- Tenendo premuto **IL TASTO CTRL** e ruotando la rotellina del mouse quando il puntatore del mouse viene posizionato sulla Graph visualizza.
+- Tenendo premuto **CTRL e** ruotando la rotellina del mouse quando si passa il mouse sull Graph visualizza.
 
 - Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.
 
-Il dispositivo di scorrimento Zoom è opaco quando lo si seleziona, si passa il puntatore del mouse su di esso o si usa **CTRL** con la rotellina del mouse per eseguire lo zoom. in tutti gli altri momenti, è trasparente.
+Il dispositivo di scorrimento Zoom è opaco quando lo si seleziona, si passa il mouse su di esso o si usa **CTRL** con la rotellina del mouse per eseguire lo zoom; in tutti gli altri casi, è trasparente.
 
 ## <a name="xml-editor-integration"></a>Integrazione dell'editor XML
 
-È possibile passare dalla visualizzazione Graph all'editor XML facendo clic su un nodo e usando il menu di scelta rapida Visualizza codice (clic con il pulsante destro del mouse).
+È possibile spostarsi tra la visualizzazione Graph e l'editor XML facendo clic su un nodo e usando il menu di scelta rapida Visualizza codice (clic con il pulsante destro del mouse).
 
-Se si apportano modifiche al set di schemi nell'editor XML, le modifiche verranno sincronizzate nella Graph visualizzazione. Per altre informazioni, vedere Integrazione [con l'editor XML.](../xml-tools/integration-with-xml-editor.md)
+Se si apportano modifiche al set di schemi nell'editor XML, le modifiche verranno sincronizzate nella Graph dati. Per altre informazioni, vedere Integrazione [con l'editor XML.](../xml-tools/integration-with-xml-editor.md)
 
 ## <a name="see-also"></a>Vedi anche
 

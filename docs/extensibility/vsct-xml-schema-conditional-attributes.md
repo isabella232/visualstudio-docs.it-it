@@ -11,21 +11,22 @@ ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91207016ed6e1baab80b323680d10a40e0331d8
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: c56f3cd8929d9ca17b01df2e78ab6a1b8354558445450137bd2e68aa1a8785d1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905254"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335277"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>Attributi condizionali dello schema XML VSCT
-È possibile applicare attributi condizionali a tutti gli elenchi ed elementi. Gli operatori logici e le espressioni di espansione dei simboli restituiscono true o false. Se true, l'elenco o l'elemento associato viene incluso nell'output risultante.
+# <a name="vsct-xml-schema-conditional-attributes"></a>Attributi condizionali di XML Schema VSCT
+È possibile applicare attributi condizionali a tutti gli elenchi e gli elementi. Gli operatori logici e le espressioni di espansione dei simboli restituiscono true o false. Se true, l'elenco o l'elemento associato viene incluso nell'output risultante.
 
- È possibile testare le espansioni di token rispetto ad altre espansioni di token o costanti. La funzione verifica se è stato definito un `Defined()` nome specifico, anche se non ha alcun valore.
+ È possibile testare le espansioni dei token rispetto ad altre espansioni o costanti del token. La funzione `Defined()` verifica se è stato definito un nome specifico, anche se non ha alcun valore.
 
- Quando un attributo Condition viene applicato a un elenco, la condizione viene applicata a ogni elemento figlio nell'elenco. Se un elemento figlio contiene un attributo Condition, la condizione viene combinata con l'espressione padre tramite un'operazione AND.
+ Quando un attributo Condition viene applicato a un elenco, la condizione viene applicata a ogni elemento figlio nell'elenco. Se un elemento figlio stesso contiene un attributo Condition, la condizione viene combinata con l'espressione padre tramite un'operazione AND.
 
  I valori 1, '1' e 'true' vengono valutati come true e 0, '0' e 'false' vengono valutati come false.
 

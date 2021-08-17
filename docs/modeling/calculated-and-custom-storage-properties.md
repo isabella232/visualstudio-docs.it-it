@@ -9,37 +9,38 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: f98dca6759b9e4a77e71139b6d9ec9b394d99b04
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 5a112d515b66262b5981bec8560a83207c5dd38a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385422"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055601"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e in Esplora linguaggi ed è possibile accedervi tramite codice programma. Tuttavia, le proprietà differiscono per il modo in cui vengono archiviati i relativi valori.
 
 ## <a name="kinds-of-domain-properties"></a>Tipi di proprietà di dominio
- Nella definizione DSL è possibile impostare la **proprietà Tipo** di un dominio, come indicato nella tabella seguente:
+ Nella definizione DSL è possibile impostare la **proprietà Kind** di un dominio, come indicato nella tabella seguente:
 
 |Tipo di proprietà di dominio|Descrizione|
 |-|-|
 |**Standard** (impostazione predefinita)|Proprietà di dominio salvata nell'archivio *e* serializzata in un file.|
 |**Calcolate**|Proprietà di dominio di sola lettura che non viene salvata nell'archivio, ma viene calcolata da altri valori.<br /><br /> Ad esempio, `Person.Age` può essere calcolato da `Person.BirthDate` .<br /><br /> È necessario fornire il codice che esegue il calcolo. In genere, il valore viene calcolato da altre proprietà di dominio. Tuttavia, è anche possibile usare risorse esterne.|
-|**Archiviazione personalizzata**|Proprietà di dominio che non viene salvata direttamente nell'archivio, ma che può essere sia get che set.<br /><br /> È necessario fornire i metodi che ottengono e impostano il valore.<br /><br /> Ad esempio, `Person.FullAddress` può essere archiviato in , e `Person.StreetAddress` `Person.City` `Person.PostalCode` .<br /><br /> È anche possibile accedere a risorse esterne, ad esempio per ottenere e impostare valori da un database.<br /><br /> Il codice non deve impostare valori nell'archivio quando `Store.InUndoRedoOrRollback` è true. Vedere [Transazioni e setter personalizzati.](#setters)|
+|**Modello Archiviazione**|Proprietà di dominio che non viene salvata direttamente nell'archivio, ma può essere sia get che set.<br /><br /> È necessario fornire i metodi che ottengono e impostano il valore.<br /><br /> Ad esempio, `Person.FullAddress` può essere archiviato in , e `Person.StreetAddress` `Person.City` `Person.PostalCode` .<br /><br /> È anche possibile accedere a risorse esterne, ad esempio per ottenere e impostare valori da un database.<br /><br /> Il codice non deve impostare valori nell'archivio quando `Store.InUndoRedoOrRollback` è true. Vedere [Transazioni e setter personalizzati.](#setters)|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Specifica del codice per una proprietà di archiviazione calcolata o personalizzata
- Se si imposta la proprietà Kind of a domain su Calculated o Custom Storage, è necessario fornire metodi di accesso. Quando si compila la soluzione, viene visualizzato un report degli errori che segnala ciò che è necessario.
+ Se si imposta la proprietà Kind di un dominio su Calculated o Custom Archiviazione, è necessario fornire metodi di accesso. Quando si compila la soluzione, viene visualizzato un report degli errori che segnala ciò che è necessario.
 
-#### <a name="to-define-a-calculated-or-custom-storage-property"></a>Per definire una proprietà di archiviazione calcolata o personalizzata
+#### <a name="to-define-a-calculated-or-custom-storage-property"></a>Per definire una proprietà calcolata o Archiviazione personalizzata
 
 1. In DslDefinition.dsl selezionare la proprietà domain nel diagramma o in **DSL Explorer.**
 
-2. Nella finestra **Proprietà** impostare il campo **Kind** su **Calculated** o **Custom Storage.**
+2. Nella finestra **Proprietà** impostare il campo **Kind** su **Calculated** o **Custom Archiviazione**.
 
-     Assicurarsi di aver impostato anche il **tipo** su quello desiderato.
+     Assicurarsi di aver impostato anche il **tipo** sul valore desiderato.
 
 3. Fare **clic su Trasforma tutti i** modelli sulla barra degli strumenti **Esplora soluzioni**.
 
@@ -68,7 +69,7 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
     }  }
     ```
 
-8. Se si imposta **Kind** **su Custom Storage**, sarà necessario fornire anche un metodo `Set` . Ad esempio:
+8. Se si imposta **Kind** **su Custom Archiviazione**, sarà necessario fornire anche un metodo `Set` . Esempio:
 
     ```
     void SetAgeValue(int value)
@@ -84,7 +85,7 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
 10. Testare la proprietà . Assicurarsi di provare Annulla **e** **Ripeti**.
 
 ## <a name="transactions-and-custom-setters"></a><a name="setters"></a> Transazioni e setter personalizzati
- Nel metodo Set della proprietà di archiviazione personalizzata non è necessario aprire una transazione, perché il metodo viene in genere chiamato all'interno di una transazione attiva.
+ Nel metodo Set della proprietà Archiviazione personalizzata non è necessario aprire una transazione, perché il metodo viene in genere chiamato all'interno di una transazione attiva.
 
  Tuttavia, il metodo Set può essere chiamato anche se l'utente richiama Undo o Redo o se viene eseguito il rollback di una transazione. Quando <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> è true, il metodo Set dovrebbe comportarsi come segue:
 
@@ -92,7 +93,7 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
 
 - Tuttavia, deve aggiornare tutte le risorse esterne, ad esempio il contenuto del database o del file, o gli oggetti all'esterno dell'archivio. In questo modo si avrà la certezza che siano mantenuti sincronizzati con i valori nell'archivio.
 
-  Ad esempio:
+  Esempio:
 
 ```
 void SetAgeValue(int value)

@@ -1,5 +1,5 @@
 ---
-description: Recupera i metadati di descrizione e descrizione per il fornitore della porta.
+description: Recupera la descrizione e i metadati della descrizione per il fornitore della porta.
 title: IDebugPortSupplierDescription2::GetDescription | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e83c0232087edf417435cfaf03f9a832d5d0b4d0f4f5f1193aa56c3bda963d6e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d1c4daa1b25dea4d85f2ce81bf7911e16e7a99dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416716"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088042"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
-Recupera i metadati di descrizione e descrizione per il fornitore della porta.
+Recupera la descrizione e i metadati della descrizione per il fornitore della porta.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,6 +1,6 @@
 ---
-title: "Procedura: aggiungere un riferimento all'output del progetto | Microsoft Docs"
-description: Informazioni su come aggiungere un riferimento all'output del progetto in modo da poter distribuire assembly di progetto non SharePoint (o file con estensione xap nei progetti Silverlight) a SharePoint.
+title: 'Procedura: Aggiungere un riferimento Project output | Microsoft Docs'
+description: Informazioni su come aggiungere un riferimento all'output del progetto in modo da poter distribuire assembly di progetto non SharePoint (o file con estensione xap nei progetti Silverlight) in SharePoint.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,35 +14,36 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c79c3d19dbd4b72bab9facdd81542fdc0620e1a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f3b97019003d2cad0109dbbd08b5471f98704abe6614e1ee4d50c77c8fa9cee
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965863"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332326"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>Procedura: aggiungere un riferimento all'output del progetto
-  Per distribuire gli assembly di progetto non SharePoint (o i file con estensione xap nei progetti Silverlight) in SharePoint, aggiungerli come riferimento all'output del progetto.
+# <a name="how-to-add-a-project-output-reference"></a>Procedura: Aggiungere un riferimento all'output del progetto
+  Per distribuire assembly di progetto non SharePoint (o file con estensione xap nei progetti Silverlight) in SharePoint, aggiungerli come riferimento all'output del progetto.
 
- Questo processo crea una dipendenza di compilazione della soluzione tra i due progetti. I progetti associati ai riferimenti di output del progetto vengono compilati prima della compilazione e della distribuzione del progetto SharePoint.
+ Questo processo crea una dipendenza di compilazione della soluzione tra i due progetti. I progetti associati ai riferimenti all'output del progetto vengono compilati prima SharePoint progetto viene compilato e distribuito.
 
 ### <a name="to-add-a-project-output-reference"></a>Per aggiungere un riferimento all'output del progetto
 
-1. Caricare una soluzione che contenga almeno un progetto SharePoint e un progetto non SharePoint.
+1. Caricare una soluzione che contiene almeno un SharePoint progetto e un progetto non SharePoint progetto.
 
-2. In **Esplora soluzioni** scegliere un elemento nel nodo del progetto SharePoint.
+2. In **Esplora soluzioni** scegliere un elemento nel nodo SharePoint progetto.
 
-3. Nella finestra **Proprietà** scegliere la proprietà **riferimenti output progetto** , quindi scegliere il pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) accanto a esso.
+3. Nella finestra **Proprietà** scegliere la proprietà Riferimenti di **output** Project e quindi fare clic sui puntini di sospensione (![ASP.NET mobile Designer](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) accanto.
 
-4. Nella finestra di dialogo **riferimenti output progetto** scegliere il pulsante **Aggiungi** .
+4. Nella finestra **Project riferimenti di output** scegliere il **pulsante** Aggiungi.
 
-5. Nel riquadro Proprietà scegliere la freccia accanto alla proprietà tipo di **distribuzione** , quindi scegliere un valore appropriato per l'elemento non SharePoint a cui si fa riferimento, ad esempio **ElementFile**.
+5. Nel riquadro delle proprietà scegliere la  freccia accanto alla proprietà Tipo di distribuzione e quindi scegliere un valore appropriato per l'elemento non SharePoint cui si fa riferimento, ad esempio **ElementFile**.
 
-6. Scegliere la freccia accanto a **nome progetto**, scegliere il nome dell'elemento di progetto non SharePoint, quindi scegliere il pulsante **OK** .
+6. Fare clic sulla freccia **accanto Project Nome**, scegliere il nome dell'elemento di progetto non SharePoint e quindi scegliere **OK.**
 
 ## <a name="see-also"></a>Vedi anche
-- [Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
-- [Procedura: contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md)
-- [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi del progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Procedura: Contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md)
+- [Creare pacchetti e distribuire SharePoint soluzioni](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

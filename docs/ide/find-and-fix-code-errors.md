@@ -7,14 +7,15 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af76de5dbcc7a70722acf0ee01cfed93dbad761
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: f44d005e9e2170e643c7e27e0b24db4bd822b510c6e8dfe7ef508031d24e662a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308259"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121233680"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -74,7 +75,7 @@ Gli analizzatori di codice cercano i problemi di codice comuni che possono causa
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Analisi del codice C# e Visual Basic
 
-Visual Studio include un set predefinito di [analizzatori .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) che esaminano il codice C# e Visual Basic durante la digitazione. È possibile installare analizzatori aggiuntivi come estensione di Visual Studio o pacchetto NuGet. Se vengono trovate violazioni delle regole, vengono segnalate sia nell'elenco errori che nell'editor di codice come a forma di antescrizione sotto il codice in errore.
+Visual Studio include un set predefinito di [analizzatori .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) che esaminano il codice C# e Visual Basic durante la digitazione. È possibile installare analizzatori aggiuntivi come estensione di Visual Studio o pacchetto NuGet. Se vengono trovate violazioni delle regole, vengono segnalate sia nell'elenco errori che nell'editor di codice come una disincisa sotto il codice in errore.
 
 ### <a name="c-code-analysis"></a>Analisi del codice C++
 
@@ -104,7 +105,7 @@ Con esperienza, è possibile usare rapidamente i tasti di direzione e + **CTRL.*
 
 ## <a name="run-code-cleanup"></a>Eseguire la pulizia del codice
 
-Visual Studio la formattazione su richiesta del file di codice [C#,](code-styles-and-code-cleanup.md#apply-code-styles)incluse le preferenze di stile del codice, tramite il pulsante Pulizia codice nella parte inferiore dell'editor. 
+Visual Studio la formattazione su richiesta del file di codice [C#,](code-styles-and-code-cleanup.md#apply-code-styles)  incluse le preferenze di stile del codice, tramite il pulsante Pulizia codice nella parte inferiore dell'editor.
 
 ![Pulsante Pulizia del codice in Visual Studio 2019](media/execute-code-cleanup.png)
 
@@ -132,7 +133,7 @@ Impostare un punto di interruzione facendo clic sul margine più esterno della r
 
 Di seguito sono riportati alcuni usi comuni dei punti di interruzione:
 
-- Per restringere l'origine di un arresto anomalo o di un programma che non risponde, disaffedere i punti di interruzione in tutto il codice della chiamata al metodo che si pensa sia la causa dell'errore. Durante l'esecuzione del codice nel debugger, rimuovere e reimpostare i punti di interruzione fino a individuare la riga di codice interessata. Vedere la sezione successiva per informazioni su come eseguire il codice nel debugger.
+- Per limitare l'origine di un arresto anomalo o un programma che non risponde, i punti di interruzione a dispersione in tutto e intorno al codice della chiamata al metodo che si pensa sia la causa dell'errore. Durante l'esecuzione del codice nel debugger, rimuovere e reimpostare i punti di interruzione fino a individuare la riga di codice interessata. Vedere la sezione successiva per informazioni su come eseguire il codice nel debugger.
 
 - Quando si introduce un nuovo codice, impostare un punto di interruzione all'inizio del codice ed eseguire il codice per verificare che funzioni come previsto.
 
@@ -144,9 +145,9 @@ Per altre informazioni sull'uso dei punti di interruzione, vedere [Uso di punti 
 
 ### <a name="inspect-your-code-at-run-time"></a>Esaminare il codice in fase di esecuzione
 
-Quando il codice in esecuzione incontra un punto di interruzione e viene sospeso, la riga di codice contrassegnata in giallo, ovvero l'istruzione corrente, non è ancora stata eseguita. A questo punto, è possibile eseguire l'istruzione corrente ed esaminare i valori modificati. È possibile usare diversi comandi di *esecuzione* per eseguire il codice nel debugger. Se il codice contrassegnato è una chiamata a un metodo, è possibile eseguire le istruzioni premendo **F11**. È anche possibile *eseguire un'istruzione* alla volta la riga di codice premendo **F10.** Per informazioni su altri comandi e informazioni dettagliate su come esaminare il codice, leggere [Spostarsi nel codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md).
+Quando il codice in esecuzione incontra un punto di interruzione e viene sospeso, la riga di codice contrassegnata in giallo, ovvero l'istruzione corrente, non è ancora stata eseguita. A questo punto, è possibile eseguire l'istruzione corrente ed esaminare i valori modificati. È possibile usare diversi comandi di *esecuzione* per eseguire il codice nel debugger. Se il codice contrassegnato è una chiamata a un metodo, è possibile eseguire le istruzioni premendo **F11**. È anche possibile *eseguire un'istruzione* alla riga di codice premendo **F10.** Per informazioni su altri comandi e informazioni dettagliate su come esaminare il codice, leggere [Spostarsi nel codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Screenshot della finestra Visual Studio codice. Un punto rosso nella barra di spostamento a sinistra indica un punto di interruzione nella riga di codice contrassegnata in giallo.](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Screenshot della finestra Visual Studio codice. Un punto rosso nel margine sinistro indica un punto di interruzione nella riga di codice contrassegnata in giallo.](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
 Nell'illustrazione precedente, è possibile spostarsi in un'istruzione con il debugger premendo **F10** o **F11**. In questo caso non si verifica una chiamata al metodo e pertanto il risultato dei due comandi è lo stesso.
 

@@ -1,42 +1,43 @@
 ---
 title: Semplificare l'espressione condizionale
-description: Informazioni su come usare il menu azioni rapide e refactoring per semplificare un'espressione condizionale.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per semplificare un'espressione condizionale.
 ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc05aa1026560f91f9a31080ace0b2c9c9319357
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3784e6ac94440c433220432cd0b14c45254e8f14
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957569"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056212"
 ---
-# <a name="simplify-conditional-expression-refactoring"></a>Refactoring semplificato dell'espressione condizionale
+# <a name="simplify-conditional-expression-refactoring"></a>Semplificare il refactoring delle espressioni condizionali
 
 Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Consente di semplificare un' [espressione condizionale](/dotnet/csharp/language-reference/operators/conditional-operator).
+**Cosa:** Consente di semplificare [un'espressione condizionale](/dotnet/csharp/language-reference/operators/conditional-operator).
 
-**Quando:** Si vuole rimuovere il codice non necessario per fornire maggiore chiarezza.
+**Quando:** Si vuole rimuovere il codice non necessario per ottenere maggiore chiarezza.
 
-**Motivo:** La semplificazione di un'espressione condizionale può fornire maggiore chiarezza e sintassi concisa. Questo strumento di refactoring eseguirà automaticamente l'attività invece di eseguirla manualmente.
+**Perché:** La semplificazione di un'espressione condizionale può offrire maggiore chiarezza e sintassi concisa. Questo strumento di refactoring eseguirà l'attività automaticamente invece di doverla eseguire manualmente.
 
 ## <a name="how-to"></a>Procedure
 
-1. Posizionare il cursore sull'espressione condizionale:
+1. Posizionare il punto di caret sull'espressione condizionale:
 
-2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
 
-3. Selezionare **semplifica espressione condizionale**
+3. Selezionare **Semplifica espressione condizionale**
 
     ![Semplificare l'espressione condizionale](media/simplify-conditional-expression.png)
 

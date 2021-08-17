@@ -1,5 +1,5 @@
 ---
-title: DA0504-working set massimo in byte per il processo sottoposto a profilatura | Microsoft Docs
+title: 'DA0504 : working set massimo in byte per il processo profilato | Microsoft Docs'
 description: Questo messaggio indica la quantità massima di memoria fisica, in byte, usata attualmente dal processo.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,15 +11,16 @@ ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7810646f14c61683fc3fc5e3e70eee33ba01dde1
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 4a8cd34b817dc2c9206c84150c5995ac8d401d4ad1f0c9a8613061932887fb97
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465790"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333314"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Working set massimo in byte del processo sottoposto a profilatura
 
