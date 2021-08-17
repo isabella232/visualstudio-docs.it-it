@@ -1,5 +1,5 @@
 ---
-title: Creare un pacchetto localizzato del programma di | Microsoft Docs
+title: Creare un pacchetto del programma di avvio automatico localizzato | Microsoft Docs
 description: Informazioni su come creare versioni localizzate del pacchetto del programma di avvio automatico in ClickOnce creando altri due file per ogni impostazione locale.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 460a9cccef237de8632b080140c1e792c19faeac6ab8db177237247a02580b5a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 95b1d4e68f6508751d79fab2970d79cb74577e55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121324496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090005"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto localizzato del programma di avvio automatico
 Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare versioni localizzate del pacchetto creando altri due file per ogni impostazione locale: un file delle condizioni di licenza software (ad esempio *eula.rtf)* e un manifesto del pacchetto *(package.xml*).
@@ -94,7 +94,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 6. Salvare il file *package.xml.*
 
 >[!NOTE]
-> A partire dalla versione Visual Studio 2019 Update 7, i pacchetti del programma di avvio automatico verranno individuati anche nel percorso *<VS Install Path> \MSBuild\Microsoft\VisualStudio\BootstrapperPackages*.
+> A partire dalla versione Visual Studio 2019 Update 7, i pacchetti del programma di avvio automatico verranno individuati anche nel percorso *<VS Install Path> \MSBuild\Microsoft\VisualStudio\BootstrapperPackages.*
 
 ## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti del programma di avvio automatico personalizzati](../deployment/creating-bootstrapper-packages.md)

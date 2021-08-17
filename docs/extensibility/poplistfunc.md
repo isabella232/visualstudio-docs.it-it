@@ -12,14 +12,15 @@ ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b52ed40397793b44f8a9c7ed9c36aa5996ae0176
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: bdd7a8fea7725d9152036bbf0b23d351d62596692118c2ef7f904c5ec886e35b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900382"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336720"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Questo callback viene fornito a [SccPopulateList](../extensibility/sccpopulatelist-function.md) dall'IDE e viene usato dal plug-in del controllo del codice sorgente per aggiornare un elenco di file o directory (fornito anche alla `SccPopulateList` funzione ).
@@ -60,7 +61,7 @@ typedef BOOL (*POPLISTFUNC) (
 > [!NOTE]
 > Il `SCC_CAP_POPULATELIST` bit di funzionalità è necessario per Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

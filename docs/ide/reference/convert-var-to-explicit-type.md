@@ -1,6 +1,6 @@
 ---
 title: Eseguire il refactoring del codice per sostituire var con un tipo esplicito
-description: Informazioni su come usare azioni rapide per sostituire var in un'espressione di variabile locale con un tipo esplicito.
+description: Informazioni su come usare Azioni rapide per sostituire var in un'espressione di variabile locale con un tipo esplicito.
 ms.custom: SEO-VS-2020
 ms.date: 05/15/2018
 ms.topic: reference

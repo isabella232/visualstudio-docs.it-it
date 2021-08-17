@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia consente di accedere all'ID del processo a cui appartiene l'oggetto il cui indirizzo è rappresentato da questa interfaccia.
+description: Questa interfaccia fornisce l'accesso all'ID del processo proprietario dell'oggetto il cui indirizzo è rappresentato da questa interfaccia.
 title: IDebugAddress2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e74833768ed1a287c0dcf3b641b858261c2d661
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: be12b088771484f1202fbb4cc806ae041d6d23778aa2e7efcb2ceee2cf1d1dd0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059183"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403182"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
-Questa interfaccia consente di accedere all'ID del processo a cui appartiene l'oggetto il cui indirizzo è rappresentato da questa interfaccia.
+Questa interfaccia fornisce l'accesso all'ID del processo proprietario dell'oggetto il cui indirizzo è rappresentato da questa interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,22 +31,22 @@ IDebugAddress2 : IDebugAddress
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Un provider di simboli implementa questa interfaccia sullo stesso oggetto che implementa l'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Questa interfaccia consente di accedere all'ID del processo a cui appartiene l'oggetto correlato a questo indirizzo.
+ Un provider di simboli implementa questa interfaccia sullo stesso oggetto che implementa [l'interfaccia IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Questa interfaccia fornisce l'accesso all'ID del processo proprietario dell'oggetto correlato a questo indirizzo.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Usare [QueryInterface](/cpp/atl/queryinterface) per ottenere questa interfaccia dall'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
+ Usare [QueryInterface](/cpp/atl/queryinterface) per ottenere questa interfaccia [dall'interfaccia IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
- Oltre ai metodi ereditati dall'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) , questa interfaccia implementa il metodo seguente:
+ Oltre ai metodi ereditati [dall'interfaccia IDebugAddress,](../../../extensibility/debugger/reference/idebugaddress.md) questa interfaccia implementa il metodo seguente:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Recupera l'ID del processo a cui appartiene l'oggetto rappresentato da questa interfaccia.|
+|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Recupera l'ID del processo proprietario dell'oggetto rappresentato da questa interfaccia.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: sh. h
+ Intestazione: sh.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

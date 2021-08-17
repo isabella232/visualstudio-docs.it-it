@@ -4,18 +4,17 @@ metadata:
   title: Documentazione sugli strumenti di sviluppo contenitori Docker
   description: Informazioni su come compilare e gestire app e servizi basati su contenitori. Ottenere la documentazione, il codice di esempio, le esercitazioni e altro ancora.
   author: ghogen
-  manager: jillfra
-  ms.prod: visual-studio-windows
-  ms.technology: vs-azure
+  manager: jmartens
+  ms.technology: vs-container-tools
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: 7dd543b176ac5c95bf084658583bf34db1294c82
-  ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
-  ms.translationtype: HT
+  ms.openlocfilehash: c18b3dc5d645ad264952a23192e89be55613d1fc
+  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+  ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91211063"
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "122105631"
 landingContent:
 - title: Strumenti per contenitori
   linkLists:
@@ -78,8 +77,8 @@ landingContent:
   - linkListType: quickstart
     links:
     - text: Usare Bridge per Kubernetes con Visual Studio
-      url: bridge-to-kubernetes.md
+      url: /visualstudio/bridge/bridge-to-kubernetes
   - linkListType: overview
     links:
     - text: Come funziona Bridge per Kubernetes
-      url: overview-bridge-to-kubernetes.md
+      url: /visualstudio/bridge/overview-bridge-to-kubernetes

@@ -1,5 +1,5 @@
 ---
-description: Indica il protocollo utilizzato per la comunicazione tra un server di debug e il pacchetto di debug (DE).
+description: Indica il protocollo utilizzato per comunicare tra un server di debug e il pacchetto di debug .
 title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d514b9aa0e37e90e99f21b5b4906cff9d32472db
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3a16c1f5ae1065e47b53cd3565c6fc18398bf5e05693dd43344abdc51486fd27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059496"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434412"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
-Indica il protocollo utilizzato per la comunicazione tra un server di debug e il pacchetto di debug (DE).
+Indica il protocollo utilizzato per comunicare tra un server di debug e il pacchetto di debug .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,33 +55,33 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>Campi
 `CONNECTION_NONE`\
-Non è stata effettuata alcuna connessione a un server.
+Non è stata stabilita alcuna connessione a un server.
 
 `CONNECTION_UNKNOWN`\
-È stata effettuata una connessione, ma è di tipo sconosciuto.
+È stata stabilita una connessione, ma è di tipo sconosciuto.
 
 `CONNECTION_LOCAL`\
-Connessione a un server locale.
+La connessione è a un server locale.
 
 `CONNECTION_PIPE`\
-La connessione viene stnamed pipe.
+La connessione viene stabilita tramite un named pipe.
 
 `CONNECTION_TCPIP`\
-La connessione utilizza TCP/IP.
+La connessione usa TCP/IP.
 
 `CONNECTION_HTTP`\
-La connessione Usa HTTP (tramite un server Web).
+La connessione usa HTTP (tramite un server Web).
 
 `CONNECTION_OTHER`\
 È stato stabilito un altro tipo di connessione (questo valore non è attualmente in uso).
 
 ## <a name="remarks"></a>Commenti
-Questi valori vengono restituiti dal metodo [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .
+Questi valori vengono restituiti dal [metodo GetConnectionProtocol.](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

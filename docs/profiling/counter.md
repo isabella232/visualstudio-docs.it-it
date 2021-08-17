@@ -1,6 +1,6 @@
 ---
 title: Counter | Microsoft Docs
-description: Informazioni sull'opzione contatore di VSPerfCmd.exe. Specifica un intervallo di campionamento o è una misura degli intervalli di eventi nella profilatura della strumentazione.
+description: Informazioni sull'opzione Contatore di VSPerfCmd.exe. Specifica un intervallo di campionamento o è una misura degli intervalli di eventi nella profilatura della strumentazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,15 +8,16 @@ ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c465e85337be017679d1a4994d84f911564cb66e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 278201edbd96d3c45c89f6cbb0de506bc4e6196a1041184b921419091b885cb7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958986"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121355539"
 ---
 # <a name="counter"></a>Contatore
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).
@@ -47,11 +48,11 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione Counter può essere usata solo con una delle opzioni seguenti:
 
- **Inizio:** `Trace` Inizializza il profiler per l'uso del metodo di strumentazione.
+ **Avvio:** `Trace` Inizializza il profiler per usare il metodo di strumentazione.
 
- **Avvia:** `AppName` Avvia l'applicazione specificata e il profiler. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
+ **Avviare:** `AppName` Avvia l'applicazione e il profiler specificati. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
 
- **Connetti:** `PID` Avvia il profiler e lo connette al processo specificato dall'ID del processo. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
+ **Collega:** `PID` Avvia il profiler e lo collega al processo specificato dall'ID processo. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
 
 ## <a name="example"></a>Esempio
  Nell'esempio del metodo basato sul campionamento viene illustrato come campionare un'applicazione ogni 1000 occorrenze del contatore del profiler generico NonHaltedCycles.

@@ -33,9 +33,9 @@ La funzionalità Extension Pack è disponibile a partire da Visual Studio 15.8 P
 
 Il modello di elemento Extension Pack crea un pacchetto di estensioni con un set di estensioni che possono essere installate insieme.
 
-1. Nella finestra **di dialogo Project** nuovo progetto cercare "vsix" e selezionare **VSIX Project**. Per **Project ,** digitare "Test Extension Pack". Selezionare **Crea**.
+1. Nella finestra **di Project** nuova applicazione cercare "vsix" e selezionare **VSIX Project**. Per **Project ,** digitare "Test Extension Pack". Selezionare **Crea**.
 
-2. Nella finestra di **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Passare al nodo **Estendibilità** di Visual C# e selezionare **Extension Pack (Pacchetto estensione).** Lasciare il nome file predefinito (ExtensionPack1.cs).
+2. Nella finestra **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Passare al nodo **Estendibilità** di Visual C# e selezionare **Extension Pack (Pacchetto estensione).** Lasciare il nome file predefinito (ExtensionPack1.cs).
 
 3. Viene aggiunto il file ExtensionPack1.vsext che contiene il codice seguente
 

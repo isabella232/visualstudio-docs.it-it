@@ -194,7 +194,7 @@
           href: ide/create-new-project.md
         - name: Usare soluzioni e progetti
           href: ide/creating-solutions-and-projects.md
-        - name: Aprire un progetto da un Visual Studio 2017
+        - name: Aprire un progetto da un repo in Visual Studio 2017
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
         - name: Aprire un progetto da un Visual Studio 2019
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
@@ -1456,7 +1456,7 @@
           href: ide/diagnostic-data-collection.md
     - name: Esperienze connesse in Visual Studio
       href: ide/reference/connected-experiences.md
-    - name: Risoluzione dei problemi relativi agli errori IDE
+    - name: Risoluzione degli errori dell'IDE
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: Invia commenti
   items:

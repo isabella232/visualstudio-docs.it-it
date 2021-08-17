@@ -1,25 +1,26 @@
 ---
 title: Valutare un'espressione XPath durante il debug
 ms.date: 03/05/2019
-description: Informazioni su come valutare le espressioni XPath usando la finestra controllo immediato durante il debug.
+description: Informazioni su come valutare le espressioni XPath usando la finestra Controllo immediato durante il debug.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 894263883cbb34c8d41ec67a5e595e801f723390
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5d229bc035edcb3460ca57050ddfd1988d94587
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873424"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091903"
 ---
 # <a name="evaluate-xpath-expressions"></a>Valutare le espressioni XPath
 
-È possibile valutare le espressioni XPath usando la finestra controllo **immediato** durante il debug. L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente, ovvero il `self::node()` nodo nella finestra **variabili locali** , fornisce il contesto di valutazione per l'espressione XPath.
+È possibile valutare le espressioni XPath usando la **finestra Controllo** immediato durante il debug. L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente, ovvero il nodo nella finestra Variabili locali, fornisce il contesto di valutazione `self::node()` per l'espressione  XPath.
 
 Quando si valuta un'espressione XPath:
 
@@ -28,31 +29,31 @@ Quando si valuta un'espressione XPath:
 - Le funzioni XSLT predefinite e le funzioni definite dall'utente non sono supportate.
 
 > [!NOTE]
-> Il debug XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
+> Il debug XSLT è disponibile solo nell'Enterprise di Visual Studio.
 
 ## <a name="evaluate-an-xpath-expression"></a>Valutare un'espressione XPath
 
-La procedura seguente usa i file *below-average. xsl* e *books.xml* della pagina [procedura dettagliata: eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) .
+La procedura seguente usa i file *below-average.xsl* *ebooks.xml* dalla pagina Procedura dettagliata: Eseguire il debug di un foglio di [stile XSLT.](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files)
 
 1. Inserire un punto di interruzione in corrispondenza del tag di inizio `xsl:if`.
 
-2. Per avviare il debug, scegliere **XML**  >  **Avvia debug XSLT** sulla barra dei menu (oppure premere **ALT** + **F5**).
+2. Per avviare il debug, scegliere **AVVIA** DEBUG XSLT XML sulla barra  >   dei menu oppure premere **ALT** + **F5.**
 
    Il debugger viene avviato e interrotto sul tag `xsl:if`.
 
-3. Fare clic con il pulsante destro del mouse e scegliere **immediato**.
+3. Fare clic con il pulsante destro del mouse e **scegliere Controllo immediato**.
 
-   Verrà visualizzata la finestra controllo **immediato** .
+   Verrà **visualizzata la finestra** Controllo immediato.
 
-4. Immettere `./price/text()` nel campo **espressione** della finestra di dialogo controllo **immediato** , quindi scegliere **Rivaluta**.
+4. Immettere nel campo Espressione della finestra di dialogo `./price/text()` **Controllo** immediato e quindi scegliere **Rivaluta**. 
 
-   Il prezzo del nodo libro corrente viene visualizzato nella casella **valore** .
+   Il prezzo del nodo libro corrente viene visualizzato nella **casella** Valore.
 
-   ![Valutare un'espressione XPath nella finestra controllo immediato](media/quickwatch-price.png)
+   ![Valutare un'espressione XPath nella finestra Controllo immediato](media/quickwatch-price.png)
 
 5. Modificare l'espressione XPath in `./price/text() < $bookAverage` e fare clic su **Rivaluta**.
 
-   Nella casella **valore** viene indicato che l'espressione XPath restituisce `true` .
+   La **casella Valore** indica che l'espressione XPath restituisce `true` .
 
 ## <a name="see-also"></a>Vedi anche
 

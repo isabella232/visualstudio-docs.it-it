@@ -1,6 +1,6 @@
 ---
 description: Enumera tutti i punti di interruzione associati da questo punto di interruzione in sospeso.
-title: 'IDebugPendingBreakpoint2:: EnumBoundBreakpoints | Microsoft Docs'
+title: IDebugPendingBreakpoint2::EnumBoundBreakpoints | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,17 +12,18 @@ ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a25a335ea373a6086b5a57829330e4c84566fe9c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bf5715983a64ea361f60978251981b1ea7325c0cec9f815f7d28a1f2a725df27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072702"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121339216"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 Enumera tutti i punti di interruzione associati da questo punto di interruzione in sospeso.
@@ -43,13 +44,13 @@ int EnumBoundBreakpoints(
 
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
-out Restituisce un oggetto [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) che enumera i punti di interruzione associati.
+[out] Restituisce un [oggetto IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) che enumera i punti di interruzione associati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un `CPendingBreakpoint` oggetto semplice che espone l'interfaccia [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto semplice che `CPendingBreakpoint` espone [l'interfaccia IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)

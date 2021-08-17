@@ -1,6 +1,6 @@
 ---
 title: Elemento Choose (MSBuild) | Microsoft Docs
-description: Usare l MSBuild'elemento Choose per valutare gli elementi figlio e selezionare un set di elementi ItemGroup o PropertyGroup da valutare.
+description: Usare l MSBuild Choose per valutare gli elementi figlio e selezionare un set di elementi ItemGroup o PropertyGroup da valutare.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 86370841d06bb2efbd5de5af635e2858d607e8c8969aade244aae45430d6744a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8248ad385d3c1af5dde264a9c04c58acbf4f32b7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077725"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 
@@ -69,7 +69,7 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 | Elemento | Descrizione |
 | - | - |
 | [Altrimenti](../msbuild/otherwise-element-msbuild.md) | Specifica il blocco di codice da eseguire se le condizioni di tutti gli elementi `When` restituiscono `false`. |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un MSBuild di progetto. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file MSBuild progetto. |
 | [Quando](../msbuild/when-element-msbuild.md) | Specifica un blocco di codice selezionabile dall'elemento `Choose`. |
 
 ## <a name="remarks"></a>Commenti
@@ -128,4 +128,4 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 ## <a name="see-also"></a>Vedi anche
 
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
-- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project sullo schema del file](../msbuild/msbuild-project-file-schema-reference.md)

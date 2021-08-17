@@ -11,14 +11,15 @@ ms.assetid: 528a50cf-e13d-46ec-a98c-323d5d047de9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 72d07b0609fd9d66507c898854810043f2911e0c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e054a1fbea6e8517798ee2e18322d60591d4f3b17214c2c918efe867606500e0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161606"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404666"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Specifica il tipo di simbolo.
@@ -68,15 +69,15 @@ enum SymTagEnum {
 ```
 
 ## <a name="elements"></a>Elementi
-`SymTagNull` Indica che il simbolo non è di tipo.
+`SymTagNull` Indica che il simbolo non ha alcun tipo.
 
-`SymTagExe` Indica che il simbolo è un file con estensione exe. È presente un solo `SymTagExe` simbolo per archivio simboli. Funge da ambito globale e non dispone di un elemento padre lessicale.
+`SymTagExe` Indica che il simbolo è un .exe file. È presente un solo `SymTagExe` simbolo per ogni archivio simboli. Funge da ambito globale e non ha un elemento padre lessicale.
 
-`SymTagCompiland` Indica il simbolo modulo per ogni componente modulo dell'archivio dei simboli. Per le applicazioni native, `SymTagCompiland` i simboli corrispondono ai file oggetto collegati all'immagine. Per alcuni tipi di immagini Microsoft Intermediate Language (MSIL), esiste un modulo per ogni classe.
+`SymTagCompiland` Indica il simbolo di compilazione per ogni componente di compilazione dell'archivio simboli. Per le applicazioni native, `SymTagCompiland` i simboli corrispondono ai file oggetto collegati all'immagine. Per alcuni tipi di immagini MSIL (Microsoft Intermediate Language), è disponibile un solo compilando per ogni classe.
 
-`SymTagCompilandDetails` Indica che il simbolo contiene attributi estesi di modulo. Il recupero di queste proprietà potrebbe richiedere il caricamento di simboli modulo.
+`SymTagCompilandDetails` Indica che il simbolo contiene attributi estesi del compilatore. Il recupero di queste proprietà può richiedere il caricamento dei simboli di compilazione.
 
-`SymTagCompilandEnv` Indica che il simbolo è una stringa di ambiente definita per modulo.
+`SymTagCompilandEnv` Indica che il simbolo è una stringa di ambiente definita per il compilazione.
 
 `SymTagFunction` Indica che il simbolo è una funzione.
 
@@ -84,51 +85,51 @@ enum SymTagEnum {
 
 `SymTagData` Indica che il simbolo è dati.
 
-`SymTagAnnotation` Indica che il simbolo è relativo a un'annotazione di codice. Gli elementi figlio di questo simbolo sono stringhe di dati costanti ( `SymTagData` , `LocIsConstant` , `DataIsConstant` ). La maggior parte dei client ignora questo simbolo.
+`SymTagAnnotation` Indica che il simbolo è per un'annotazione di codice. Gli elementi figlio di questo simbolo sono stringhe di dati costanti ( `SymTagData` , `LocIsConstant` , `DataIsConstant` ). La maggior parte dei client ignora questo simbolo.
 
 `SymTagLabel` Indica che il simbolo è un'etichetta.
 
 `SymTagPublicSymbol` Indica che il simbolo è un simbolo pubblico. Per le applicazioni native, questo simbolo è il simbolo esterno COFF rilevato durante il collegamento dell'immagine.
 
-`SymTagUDT` Indica che il simbolo è un tipo definito dall'utente (struttura, classe o Unione).
+`SymTagUDT` Indica che il simbolo è un tipo definito dall'utente (struttura, classe o unione).
 
 `SymTagEnum` Indica che il simbolo è un'enumerazione.
 
 `SymTagFunctionType` Indica che il simbolo è un tipo di firma della funzione.
 
-`SymTagPointerType` Indica che il simbolo è un tipo di puntatore.
+`SymTagPointerType` Indica che il simbolo è un tipo puntatore.
 
 `SymTagArrayType` Indica che il simbolo è un tipo di matrice.
 
 `SymTagBaseType` Indica che il simbolo è un tipo di base.
 
-`SymTagTypedef` Indica che il simbolo è, `typedef` ovvero un alias per un altro tipo.
+`SymTagTypedef` Indica che il simbolo è un `typedef` oggetto , che è un alias per un altro tipo.
 
 `SymTagBaseClass` Indica che il simbolo è una classe di base di un tipo definito dall'utente.
 
-`SymTagFriend` Indica che il simbolo è un elemento Friend di un tipo definito dall'utente.
+`SymTagFriend` Indica che il simbolo è un elemento friend di un tipo definito dall'utente.
 
 `SymTagFunctionArgType` Indica che il simbolo è un argomento della funzione.
 
-`SymTagFuncDebugStart` Indica che il simbolo è la posizione finale del codice di prologo della funzione.
+`SymTagFuncDebugStart` Indica che il simbolo è la posizione finale del codice del prologo della funzione.
 
 `SymTagFuncDebugEnd` Indica che il simbolo è la posizione iniziale del codice dell'epilogo della funzione.
 
 `SymTagUsingNamespace` Indica che il simbolo è un nome di spazio dei nomi, attivo nell'ambito corrente.
 
-`SymTagVTableShape` Indica che il simbolo è una descrizione della tabella virtuale.
+`SymTagVTableShape` Indica che il simbolo è una descrizione di tabella virtuale.
 
-`SymTagVTable` Indica che il simbolo è un puntatore a tabella virtuale.
+`SymTagVTable` Indica che il simbolo è un puntatore di tabella virtuale.
 
-`SymTagCustom` Indica che il simbolo è un simbolo personalizzato e non è interpretato da DIA.
+`SymTagCustom` Indica che il simbolo è un simbolo personalizzato e non viene interpretato da DIA.
 
-`SymTagThunk` Indica che il simbolo è un thunk utilizzato per la condivisione di dati tra 16 e 32 di codice di bit.
+`SymTagThunk` Indica che il simbolo è un thunk usato per la condivisione di dati tra codice a 16 e 32 bit.
 
 `SymTagCustomType` Indica che il simbolo è un simbolo del compilatore personalizzato.
 
 `SymTagManagedType` Indica che il simbolo è nei metadati.
 
-`SymTagDimension` Indica che il simbolo è una matrice multidimensionali FORTRAN.
+`SymTagDimension` Indica che il simbolo è una matrice multidimensionale FORTRAN.
 
 `SymTagCallSite` Indica che il simbolo rappresenta il sito di chiamata.
 
@@ -136,16 +137,16 @@ enum SymTagEnum {
 
 `SymTagBaseInterface` Indica che il simbolo è un'interfaccia di base.
 
-`SymTagVectorType` Indica che il simbolo è un tipo di vettore.
+`SymTagVectorType` Indica che il simbolo è un tipo vettore.
 
-`SymTagMatrixType` Indica che il simbolo è un tipo di matrice.
+`SymTagMatrixType` Indica che il simbolo è un tipo matrice.
 
 `SymTagHLSLType` Indica che il simbolo è un tipo di linguaggio shader di alto livello.
 
 ## <a name="remarks"></a>Commenti
-Tutti i simboli in un file di debug hanno un tag di identificazione che specifica il tipo del simbolo.
+Tutti i simboli all'interno di un file di debug hanno un tag di identificazione che specifica il tipo del simbolo.
 
-I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) .
+I valori in questa enumerazione vengono restituiti da una chiamata al [metodo IDiaSymbol::get_symTag.](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
 
 I valori di questa enumerazione vengono passati ai metodi seguenti per limitare l'ambito della ricerca a un tipo di simbolo specifico:
 
@@ -166,7 +167,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti per limitare 
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst. h
+Intestazione: cvconst.h
 
 ## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

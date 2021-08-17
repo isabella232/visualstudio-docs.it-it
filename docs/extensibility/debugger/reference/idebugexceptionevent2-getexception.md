@@ -1,6 +1,6 @@
 ---
-description: Ottiene una descrizione dettagliata dell'eccezione che ha generato l'evento.
-title: 'IDebugExceptionEvent2:: GetException | Microsoft Docs'
+description: Ottiene una descrizione dettagliata dell'eccezione che ha generato questo evento.
+title: IDebugExceptionEvent2::GetException | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72457b1b8931d028f555e7f9354f34b133fa79bb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d7da0fc91cd32ffedbf36f98f736c99db21c7a2e1904fe8af6aec2dec323e309
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084779"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292533"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-Ottiene una descrizione dettagliata dell'eccezione che ha generato l'evento.
+Ottiene una descrizione dettagliata dell'eccezione che ha generato questo evento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +43,14 @@ int GetException(
 
 ## <a name="parameters"></a>Parametri
 `pExceptionInfo`\
-[in, out] Struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) compilata con la descrizione dell'eccezione.
+[in, out] Struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) che viene compilata con la descrizione dell'eccezione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
 
- [Solo C++] Il chiamante è responsabile di liberare tutte le stringhe nella struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) e di rilasciare l'oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) nella struttura.
+ [Solo C++] Il chiamante è responsabile del rilascio delle stringhe nella [struttura EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) e del rilascio dell'oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) nella struttura .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

@@ -19,7 +19,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121347090"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedura: Configurare l'ereditarietà usando Object Relational Designer
-La **Object Relational Designer** (**Progettazione relazionale** oggetti ) supporta il concetto di ereditarietà a tabella singola, in quanto viene spesso implementata nei sistemi relazionali. Nell'ereditarietà a tabella singola, è presente una singola tabella di database che contiene campi per le informazioni padre e le informazioni figlio. Insieme ai dati relazionali, una colonna discriminatore contiene il valore che determina la classe a cui appartiene un record.
+La **Object Relational Designer** (**Progettazione relazionale** oggetti ) supporta il concetto di ereditarietà a tabella singola, perché viene spesso implementata nei sistemi relazionali. Nell'ereditarietà a tabella singola, è presente una singola tabella di database che contiene campi per le informazioni padre e le informazioni figlio. Insieme ai dati relazionali, una colonna discriminatore contiene il valore che determina la classe a cui appartiene un record.
 
 Si consideri ad esempio `Persons` una tabella che contiene tutti gli dipendenti di una società. alcune delle quali sono dipendenti mentre altre sono manager. La tabella contiene una colonna denominata con valore 1 per i responsabili e un valore 2 per i dipendenti. Si tratta `Persons` `EmployeeType` della colonna discriminatore. In questo scenario è possibile creare una sottoclasse di dipendenti e popolarla solo con i record che hanno un valore 2 in `EmployeeType`. È anche possibile rimuovere le colonne non appropriate da ognuna delle classi.
 

@@ -1,6 +1,6 @@
 ---
 description: Imposta il valore dell'istanza dell'oggetto classe valore dall'istanza della classe di valori fornita come parametro.
-title: 'IDebugManagedObject:: SetFromManagedObject | Microsoft Docs'
+title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c00e61de35e0cc9c33845236d8103bcd16cebfa
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58b902732a0dcbfd30c7dd57b5c22a63fbc930ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076849"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078895"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 Imposta il valore dell'istanza dell'oggetto classe valore dall'istanza della classe di valori fornita come parametro.
@@ -42,13 +43,13 @@ int SetFromManagedObject(
 
 ## <a name="parameters"></a>Parametri
 `pManagedObject`\
-in Interfaccia che rappresenta l'oggetto gestito che contiene il nuovo valore.
+[in] Interfaccia che rappresenta l'oggetto gestito contenente il nuovo valore.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo viene usato per modificare l'oggetto gestito come rappresentato dall'oggetto [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) .
+ Questo metodo viene usato per modificare l'oggetto gestito come rappresentato [dall'oggetto IDebugManagedObject.](../../../extensibility/debugger/reference/idebugmanagedobject.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

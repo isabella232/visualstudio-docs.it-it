@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se il simbolo di dati fa parte di un'aggregazione o di una raccolta di simboli; Il compilatore considera i simboli aggregati come entità separate, ma fanno effettivamente parte di un singolo simbolo più grande.
+description: Recupera un flag che specifica se il simbolo di dati fa parte di un'aggregazione o di una raccolta di simboli. il compilatore considera i simboli aggregati come entità separate, ma fanno parte di un singolo simbolo più grande.
 title: IDiaSymbol::get_isAggregated | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a870a6e868848f0d2c5b4c597440bc5214df31cb951fe8259cec633afc5306b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ebf6035fcec95fff5849d7aa472ed97f9d9cc0b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420678"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044182"
 ---
 # <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
-Recupera un flag che specifica se il simbolo di dati fa parte di un'aggregazione o di una raccolta di simboli; Il compilatore considera i simboli aggregati come entità separate, ma fanno effettivamente parte di un singolo simbolo più grande.
+Recupera un flag che specifica se il simbolo di dati fa parte di un'aggregazione o di una raccolta di simboli. il compilatore considera i simboli aggregati come entità separate, ma fanno parte di un singolo simbolo più grande.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT get_isAggregated(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  Il [metodo IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) è per il simbolo padre `TRUE` dei simboli aggregati.

@@ -11,17 +11,18 @@ ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 40047dbdb35ad5958e923bb9a3ec18faa0d69be6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21acc912a391f7fcc46a568df95be23a3e44c7d7e54ab8d5f77af7aecda5d283
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075471"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338254"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 Questa struttura rappresenta l'indirizzo di un metodo di una classe.
@@ -48,21 +49,21 @@ public struct METADATA_ADDRESS_METHOD {
  `tokMethod`\
  ID del metodo.
 
- [C++] `_mdToken` è un oggetto `typedef` per un oggetto a 32 bit `int` .
+ [C++] `_mdToken` è un `typedef` oggetto per un oggetto a 32 `int` bit.
 
  `dwOffset`\
- L'offset dalla classe inizia con questo metodo (può rappresentare l'offset in vtable).
+ Offset dall'inizio della classe a questo metodo (può rappresentare l'offset nella tabella vtable).
 
  `dwVersion`\
  Versione del metodo (questo valore è univoco per il provider di simboli).
 
 ## <a name="remarks"></a>Commenti
- Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_METHOD` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
+ Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` di `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_METHOD` dati). [](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: sh. h
+ Intestazione: sh.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

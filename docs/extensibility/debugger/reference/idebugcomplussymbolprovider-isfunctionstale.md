@@ -1,6 +1,6 @@
 ---
-description: Determina se la funzione in corrispondenza dell'indirizzo di debug specificato è considerata obsoleta.
-title: 'IDebugComPlusSymbolProvider:: IsFunctionStale | Microsoft Docs'
+description: Determina se la funzione all'indirizzo di debug specificato viene considerata non obsoleta.
+title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,20 +9,21 @@ ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93a6bd0eb2a6715587c2d845cf161dba8c756aa2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bf0cb10662512f4c5428e6774b3e72ef5a9fce276411afb76387fbad4098492e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095498"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434061"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
-Determina se la funzione in corrispondenza dell'indirizzo di debug specificato è considerata obsoleta.
+Determina se la funzione all'indirizzo di debug specificato viene considerata non obsoleta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +41,13 @@ int IsFunctionStale(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-in Indirizzo di debug rappresentato da un'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Questo indirizzo deve essere un METHOD_ADDRESS.
+[in] Indirizzo di debug rappresentato da [un'interfaccia IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Questo indirizzo deve essere un METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Valore restituito
-Se la funzione è considerata obsoleta, restituisce `S_OK` . Se la funzione non è obsoleta, restituisce `S_FALSE` .
+Se la funzione viene considerata non obsoleta, restituisce `S_OK` . Se la funzione non è obsoleta, restituisce `S_FALSE` .
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionStale(

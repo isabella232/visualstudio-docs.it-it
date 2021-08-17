@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Applicare il colore agli intervalli Excel a livello di codice'
+title: 'Procedura: Applicare il colore agli intervalli Excel livello di codice'
 description: Informazioni su come applicare un colore al testo all'interno di un intervallo di celle, usare un controllo NamedRange o un oggetto Excel intervallo nativo.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -17,14 +17,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3de687879a74c92c39331ca6668e29d7a3c77014a19cd3c7138eb396f2b52c78
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2a2a66db404501048a3eeaffafaf4ab0b51ac813
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384353"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106276"
 ---
-# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedura: Applicare il colore agli intervalli Excel a livello di codice
+# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedura: Applicare il colore agli intervalli Excel livello di codice
   Per applicare un colore al testo all'interno di un intervallo di celle, usare un controllo o un oggetto Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> intervallo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]

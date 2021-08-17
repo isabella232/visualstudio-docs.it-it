@@ -1,6 +1,6 @@
 ---
 title: Aggiungere controlli Null per tutti i parametri
-description: Informazioni su come creare e aggiungere istruzioni if al codice che controllano la nullità di tutti i parametri nullable e non controllati.
+description: Informazioni su come creare e aggiungere al codice istruzioni if che controllano la nullità di tutti i parametri nullable non verificati.
 ms.custom: SEO-VS-2020
 ms.date: 09/17/2019
 ms.topic: reference
@@ -26,7 +26,7 @@ Questo refactoring si applica a:
 
 **Cosa:** Crea e aggiunge `if` istruzioni che verificano la nullità di tutti i parametri nullable non verificati. 
 
-**Quando:** Si vuole aggiungere rapidamente controlli Null per tutti i parametri di metodo applicabili.
+**Quando:** Si vogliono aggiungere rapidamente controlli Null per tutti i parametri di metodo applicabili.
 
 **Perché:** La scrittura di controlli Null per molti parametri può richiedere molto tempo e essere ripetitiva. L'uso di questo refactoring è rapido e rende il programma più stabile.  
 
@@ -34,7 +34,7 @@ Questo refactoring si applica a:
 
 1. Posizionare il cursore su qualsiasi parametro all'interno del metodo.
 
-2. Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 
    ![Azioni rapide e refactoring](media/add-null-checks-for-all-parameters.png)
    

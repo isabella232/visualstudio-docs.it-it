@@ -10,14 +10,15 @@ ms.assetid: 639e430b-6d2d-46bd-b738-8c60dfb384f1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8735ecd409eca2801b42b11bd3928a00e5191bf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0292e73f952a05652142b8e146d21915af73bde2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105028"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Guida introduttiva: eseguire il debug con C++ usando il debugger di Visual Studio
 
@@ -31,7 +32,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **c++**, scegliere **Modelli** e quindi scegliere **Create new Console App project** (Crea nuovo progetto app console). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C++** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **Applicazione console di Windows**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
+    Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C++** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **Applicazione console di Windows**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
     ::: moniker-end
 
     Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, aprendo così il programma di installazione Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
@@ -82,7 +83,7 @@ Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual S
 
 1. Per impostare il punto di interruzione, fare clic nella barra di navigazione a sinistra della chiamata di funzione `doWork` o selezionare la riga di codice e premere **F9**.
 
-    ![Imposta un punto di interruzione](../debugger/media/dbg-qs-set-breakpoint.png "Imposta punto di interruzione")
+    ![Impostare un punto di interruzione](../debugger/media/dbg-qs-set-breakpoint.png "Imposta punto di interruzione")
 
 2. Premere **F5** o scegliere **Debug > Avvia debug**.
 
@@ -101,7 +102,7 @@ Sono disponibili diversi comandi per indicare al debugger di continuare. Viene i
 
 Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra l'istruzione `c1.push_back(20)` finché appare il pulsante verde **Esegui fino alla riga selezionata**![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click.png "RunToClick") quindi premere il pulsante **Esegui fino alla riga selezionata**.
 
-![Esegui fino al clic](../debugger/media/dbg-qs-run-to-click.png "Esegui fino alla riga selezionata")
+![Esegui per fare clic su](../debugger/media/dbg-qs-run-to-click.png "Esegui fino alla riga selezionata")
 
 L'app riprende l'esecuzione, esegue la chiamata a `doWork` e si blocca sulla riga di codice in cui si è fatto clic.
 

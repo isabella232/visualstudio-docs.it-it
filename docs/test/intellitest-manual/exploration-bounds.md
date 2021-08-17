@@ -1,6 +1,6 @@
 ---
 title: Limiti di esplorazione | Strumento di test per sviluppatori Microsoft IntelliTest
-description: PexSettingsAttributeBase è la classe di base astratta per l'impostazione dei limiti come attributi. Informazioni su come modificare le impostazioni usando proprietà denominate.
+description: PexSettingsAttributeBase è la classe di base astratta per l'impostazione dei limiti come attributi. Informazioni su come modificare le impostazioni usando le proprietà denominate.
 ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 44af9fc50e81727d534e7c5a79dba0ccf2edde75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be5e90949089f92289c5f6b32ebafd9e81e658c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910671"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059985"
 ---
 # <a name="exploration-bounds"></a>Limiti di esplorazione
 

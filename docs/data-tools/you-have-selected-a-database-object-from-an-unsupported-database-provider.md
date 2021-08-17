@@ -1,5 +1,5 @@
 ---
-title: Oggetto dal provider non supportato
+title: Oggetto da un provider non supportato
 description: È stato selezionato un oggetto di database da un provider di database non supportato. Visualizzare informazioni su questo Visual Studio (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -20,7 +20,7 @@ ms.locfileid: "121346427"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>È stato selezionato un oggetto di database da un provider di database non supportato
 
-**O/R Designer** supporta solo il .NET Framework provider di dati per SQL Server ( <xref:System.Data.SqlClient> ). Anche se è possibile fare clic su **OK** e continuare a usare gli oggetti di provider del database non supportati, potrebbe verificarsi un comportamento imprevisto in fase di esecuzione.
+**O/R Designer supporta** solo le .NET Framework provider di dati per SQL Server ( <xref:System.Data.SqlClient> ). Anche se è possibile fare clic su **OK** e continuare a usare gli oggetti di provider del database non supportati, potrebbe verificarsi un comportamento imprevisto in fase di esecuzione.
 
 > [!NOTE]
 > Sono supportate solo connessioni dati che usano il provider di dati .NET Framework per SQL Server.

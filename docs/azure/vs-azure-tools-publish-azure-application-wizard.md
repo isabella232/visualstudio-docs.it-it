@@ -3,16 +3,17 @@ title: Pubblicare un servizio cloud di Azure
 description: Informazioni su come configurare le varie impostazioni della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e1dcaf760eada7d67eaab445361d6aa8c0219de
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844060"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091721"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 
@@ -61,7 +62,7 @@ Un'applicazione Web sviluppata in Visual Studio può essere pubblicata in un ser
 
 **Abilita Desktop remoto per tutti i ruoli** - Selezionare questa opzione per consentire la connessione remota al servizio. Questa opzione viene usata principalmente per la risoluzione dei problemi. Per altre informazioni, vedere [Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio) (Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio).
 
-**Abilita Distribuzione Web per tutti i ruoli Web** - Selezionare questa opzione per abilitare la distribuzione Web per il servizio. È necessario selezionare anche l'opzione **Abilita Desktop remoto per tutti i ruoli** per usare questa funzionalità. Per altre informazioni, vedere [pubblicazione di un servizio cloud con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
+**Abilita Distribuzione Web per tutti i ruoli Web** - Selezionare questa opzione per abilitare la distribuzione Web per il servizio. È necessario selezionare anche l'opzione **Abilita Desktop remoto per tutti i ruoli** per usare questa funzionalità. Per altre informazioni, vedere [Pubblicazione di un servizio cloud Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 ## <a name="settings-page---advanced-settings-tab"></a>Pagina Impostazioni - Scheda Impostazioni avanzate
 
@@ -116,6 +117,6 @@ Dopo avere configurato tutte le impostazioni per la distribuzione del progetto, 
 
 - [Test delle prestazioni di un servizio cloud di Azure](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
+- [Configurazione della diagnostica per Servizi cloud di Azure e macchine virtuali](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
 - [Informazioni su Azure Application Insights](/azure/application-insights/app-insights-overview)

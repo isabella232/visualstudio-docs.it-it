@@ -158,12 +158,12 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Trova precedente|**⇧⌘G**, **⇧F3**|
 |Trova stringa precedente simile alla selezione|**⇧⌘F3**|
 |Find|**⌘F**|
-|Vai al file|**⇧;D**|
+|Vai al file|**⇧⌘D**|
 |Vai alla riga|**⌘L**|
-|Vai al tipo|**⇧-T**|
+|Vai al tipo|**⇧⌘T**|
 |Passa a|**⌘.**|
-|Sostituisci nei file|**⌥⇧-F**|
-|Sostituisci|**⌥-F**|
+|Sostituisci nei file|**⌥⇧⌘F**|
+|Sostituisci|**⌥⌘F**|
 
 ## <a name="text-editor"></a>Editor di testo
 
@@ -180,10 +180,10 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Abbreviazione dinamica|**⌃/**|
 |Espandere la selezione|**⌥⇧↓**|
 |Espandere la selezione|**⌥⇧↑**|
-|Espandi selezione alla fine del documento|**⇧↓**, **⇧↘**|
-|Espandi selezione all'inizio del documento|**⇧↑**, **⇧↖**|
-|Espandi selezione alla fine della riga|**⇧↘**, **⇧→**|
-|Espandi selezione all'inizio della riga|**⇧↖**, **⇧←**|
+|Espandi selezione alla fine del documento|**⇧⌘↓**, **⇧⌘↘**|
+|Espandi selezione all'inizio del documento|**⇧⌘↑**, **⇧⌘↖**|
+|Espandi selezione alla fine della riga|**⇧↘**, **⇧⌘→**|
+|Espandi selezione all'inizio della riga|**⇧↖**, **⇧⌘←**|
 |Espandi selezione alla riga successiva|**⇧↓**|
 |Espandi selezione alla parola successiva|**⌥⇧→**|
 |Espandi selezione a pagina verso l'alto|**⇧⇟**|
@@ -196,9 +196,9 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Vai a sinistra di un carattere|**⌃B**|
 |Vai a destra di un carattere|**⌃F**|
 |Vai all'inizio del documento|**⌘↑**|
-|Vai all'inizio della riga|**←**, **⌃A**|
+|Vai all'inizio della riga|**⌘←**, **⌃A**|
 |Vai alla fine del documento|**⌘↓**|
-|Vai alla fine della riga|**→**, **⌃E**|
+|Vai alla fine della riga|**⌘→**, **⌃E**|
 |Vai alla parentesi graffa corrispondente|**⇧⌘\\**|
 |Vai a riga successiva|**⌃N**|
 |Vai a parola successiva|**⌥→**|
@@ -212,7 +212,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Torna a utilizzo precedente|**⌃⌥⌘↑**|
 |Mostra elenco parametri|**⌃⇧␣**|
 |Visualizza le informazioni rapide|**⌘F1**|
-|Mostra ambiti|**⌥⇧;P**|
+|Mostra ambiti|**⌥⇧⌘P**|
 |Trasponi caratteri|**⌃T**|
 |Wrapping con &lt;div&gt;|**⌥⇧W**|
 
@@ -222,18 +222,18 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |-|-|
 |Centra documento e imposta stato attivo|**⌃L**|
 |Imposta stato attivo per il documento|**F7**|
-|Schermo intero|**⌃-F**|
+|Schermo intero|**⌃⌘F**|
 |Passa al blocco appunti successivo|**⌥⌘→**|
 |Torna al blocco appunti precedente|**⌥⌘←**|
 |Esplora indietro|**⌃⌘←**|
 |Posizione successiva|**⌃⌘→**|
 |Dimensioni normali|**⌘0**|
-|Una colonna editor|**⌥,1**|
+|Una colonna editor|**⌥⌘1**|
 |Mostra successivo|**⌥⌘↓**, **F8**|
-|Mostra precedente|**⌥↑**, **⇧F8**|
-|Due colonne editor|**⌥,...2**|
+|Mostra precedente|**⌥⌘↑**, **⇧F8**|
+|Due colonne editor|**⌥⌘2**|
 |Zoom avanti|**⌘+**, **⌘=**|
-|Zoom indietro|**⌘-**, **|_**|
+|Zoom indietro|**⌘-**, **⌘_**|
 
 ## <a name="window"></a>Finestra
 
@@ -248,10 +248,10 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Attiva 7|**⌘7**|
 |Attiva 8|**⌘8**|
 |Attiva 9|**⌘9**|
-|Nascondi altri|**⌥-H**|
+|Nascondi altri|**⌥⌘H**|
 |Nascondi Visual Studio|**⌘H**|
 |Riduci|**⌘M**|
-|Documento successivo|**}}**, **⌘F6**|
+|Documento successivo|**⌘}**, **⌘F6**|
 |Documento precedente|**⌘{**, **⇧⌘F6**|
 |Passa al documento successivo|**⌃⇥**|
 |Passare alla finestra degli strumenti successiva|**⌃⌥⇥**|

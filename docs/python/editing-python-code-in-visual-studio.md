@@ -6,16 +6,17 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa0caa8184f3c52a010df1dd1f82718d44be700b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ffead98afcd3b6fedc587ca6c6b61cd7acdccd5881c1ed32561d79164d07308
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888056"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121354237"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
@@ -31,13 +32,13 @@ Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Fu
 
 IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Visual Studio 2017 versione 15.7 e versioni successive supporta anche i [suggerimenti relativi al tipo](#type-hints).
 
-Per migliorare le prestazioni, IntelliSense in Visual Studio 2017 versione 15.5 e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato del database viene visualizzato nella finestra **ambienti Python** (un elemento di pari livello di **Esplora soluzioni**) nella scheda **IntelliSense** (vedere informazioni di [riferimento sulla finestra ambienti](python-environments-window-tab-reference.md)).
+Per migliorare le prestazioni, IntelliSense in Visual Studio 2017 versione 15.5 e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato del database viene visualizzato nella finestra **Ambienti Python** (un elemento di pari livello **di Esplora soluzioni**) nella scheda **IntelliSense** (vedere Informazioni di riferimento sulla [finestra Ambienti](python-environments-window-tab-reference.md)).
 
 Visual Studio 2017 versione 15.6 e versioni successive usano modi diversi per rendere disponibili i completamenti IntelliSense non dipendenti dal database.
 
 ### <a name="completions"></a>Completamenti
 
-I completamenti vengono visualizzati come istruzioni, identificatori e altre parole che possono essere immessi in modo corretto nella posizione corrente nell'editor. Il contenuto dell'elenco dipende dal contesto e viene filtrato per omettere opzioni non corrette o fonte di distrazione. I completamenti vengono spesso attivati digitando istruzioni diverse (ad esempio `import` ) e operatori (incluso un punto), ma è possibile visualizzarli in qualsiasi momento digitando **CTRL** + **J**  >  **spazio**.
+I completamenti vengono visualizzati come istruzioni, identificatori e altre parole che possono essere immessi in modo corretto nella posizione corrente nell'editor. Il contenuto dell'elenco dipende dal contesto e viene filtrato per omettere opzioni non corrette o fonte di distrazione. I completamenti vengono spesso attivati digitando istruzioni diverse (ad esempio ) e operatori (incluso un punto), ma è possibile fare in modo che vengano visualizzati in qualsiasi momento digitando `import`  + **CTRL+J.**  >  
 
 ![Completamento dei membri nell'editor di Visual Studio](media/code-editing-completions-simple.png)
 
@@ -72,11 +73,11 @@ Per le istruzioni `raise` e `except` vengono visualizzati gli elenchi di classi 
 ![Completamento di elementi Decorator nell'editor di Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> È possibile configurare il comportamento dei completamenti tramite **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **Python**  >  **Avanzate**. Tra questi, l' **elenco di filtri basato sulla stringa di ricerca applica il** filtro dei suggerimenti di completamento durante la digitazione (il valore predefinito è selezionato) e il **completamento del membro Visualizza l'intersezione dei membri** che mostra solo i completamenti supportati da tutti i tipi possibili (l'impostazione predefinita è deselezionata). Vedere [Opzioni - Risultati del completamento](python-support-options-and-settings-in-visual-studio.md#completion-results).
+> È possibile configurare il comportamento dei completamenti **tramite** Strumenti  >  **Opzioni** Editor  >  **di testo**  >  **Python**  >  **Advanced**. Tra **questi,** l'elenco filtri basato sulla stringa di ricerca applica  il filtro dei suggerimenti di completamento durante la digitazione (l'impostazione predefinita è selezionata) e Completamento membri visualizza l'intersezione dei membri che mostra solo i completamenti supportati da tutti i tipi possibili (l'impostazione predefinita è deselezionata). Vedere [Opzioni - Risultati del completamento](python-support-options-and-settings-in-visual-studio.md#completion-results).
 
 ### <a name="type-hints"></a>Suggerimenti relativi al tipo
 
-*Visual Studio 2017 versione 15,7 e successive.*
+*Visual Studio 2017 versione 15.7 e successive.*
 
 I "suggerimenti relativi al tipo" in Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) rappresentano una sintassi di annotazione per le funzioni e le classi che indicano i tipi di argomenti, valori restituiti e attributi di classi. IntelliSense visualizza i suggerimenti relativi al tipo quando si passa il mouse su chiamate di funzioni, argomenti e variabili che presentano tali annotazioni.
 
@@ -88,7 +89,7 @@ Nell'esempio seguente è possibile visualizzare il modo in cui gli attributi con
 
 ![Suggerimenti relativi al tipo visualizzati nel completamento di IntelliSense](media/code-editing-type-hints2.png)
 
-È inoltre utile convalidare i suggerimenti relativi al tipo in tutto il progetto, poiché gli errori in genere non vengono visualizzati prima dell'esecuzione. A questo scopo, Visual Studio integra lo strumento MyPy standard del settore tramite il comando del menu di scelta rapida **Python**  >  **Run MyPy** in **Esplora soluzioni**:
+È inoltre utile convalidare i suggerimenti relativi al tipo in tutto il progetto, poiché gli errori in genere non vengono visualizzati prima dell'esecuzione. A questo scopo, Visual Studio lo strumento MyPy standard del settore tramite il comando del menu di scelta rapida **Python**  >  **Run Mypy** in **Esplora soluzioni**:
 
 ![Eseguire il comando MyPy del menu di scelta rapida in Esplora soluzioni](media/code-editing-type-hints-run-mypy.png)
 
@@ -111,27 +112,27 @@ Se si usa il comando **Esegui Mypy** su questo codice, viene generato l'errore s
 
 ::: moniker range="vs-2017"
 > [!Tip]
-> Per le versioni di Python precedenti alla 3.5, Visual Studio visualizza anche i suggerimenti relativi al tipo specificati nei *file stub* (con estensione *pyi*) di Typeshed. I file stub possono essere usati quando non si vuole includere i suggerimenti relativi al tipo direttamente nel codice o quando si vogliono creare suggerimenti relativi al tipo per una libreria che non li usa direttamente. Per altre informazioni, vedere [creare stub per i moduli Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) nel wiki del progetto mypy.
+> Per le versioni di Python precedenti alla 3.5, Visual Studio visualizza anche i suggerimenti relativi al tipo specificati nei *file stub* (con estensione *pyi*) di Typeshed. I file stub possono essere usati quando non si vuole includere i suggerimenti relativi al tipo direttamente nel codice o quando si vogliono creare suggerimenti relativi al tipo per una libreria che non li usa direttamente. Per altre informazioni, vedere [Creare stub per i moduli Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) nel wiki del progetto mypy.
 >
 > Al momento Visual Studio non supporta i suggerimenti relativi al tipo nei commenti.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Per le versioni di Python precedenti alla 3.5, Visual Studio visualizza anche i suggerimenti relativi al tipo specificati nei *file stub* (con estensione *pyi*) di Typeshed. I file stub possono essere usati quando non si vuole includere i suggerimenti relativi al tipo direttamente nel codice o quando si vogliono creare suggerimenti relativi al tipo per una libreria che non li usa direttamente. Per altre informazioni, vedere [creare stub per i moduli Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) nel wiki del progetto mypy.
+> Per le versioni di Python precedenti alla 3.5, Visual Studio visualizza anche i suggerimenti relativi al tipo specificati nei *file stub* (con estensione *pyi*) di Typeshed. I file stub possono essere usati quando non si vuole includere i suggerimenti relativi al tipo direttamente nel codice o quando si vogliono creare suggerimenti relativi al tipo per una libreria che non li usa direttamente. Per altre informazioni, vedere [Creare stub per i moduli Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) nel wiki del progetto mypy.
 >
-> Visual Studio include un set di file Typeshed in bundle per Python 2 e 3, in modo che non siano necessari ulteriori download. Tuttavia, se si vuole usare un set di file diverso, è possibile specificare il percorso nelle opzioni opzioni   >  **del**  >  server del  >  **linguaggio** Python di strumenti. Vedere [Opzioni - Server di linguaggio](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+> Visual Studio include un set di file Typeshed in bundle per Python 2 e 3, in modo che non siano necessari ulteriori download. Tuttavia, se si vuole usare un set diverso di file, è possibile specificare il percorso nelle opzioni di Strumenti Opzioni del server di  >    >  **linguaggio Python.**  >   Vedere [Opzioni - Server di linguaggio](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
 > Al momento Visual Studio non supporta i suggerimenti relativi al tipo nei commenti.
 ::: moniker-end
 
 ### <a name="signature-help"></a>Supporto per la firma
 
-Se si scrive codice che chiama una funzione, la guida per la firma digitale appare quando si digita la parentesi di apertura (`(`) e visualizza le informazioni della documentazione e sui parametri disponibili. È anche possibile fare in modo che venga visualizzato con +  + **lo spazio** di spostamento CTRL all'interno di una chiamata di funzione. Le informazioni visualizzate dipendono dalle stringhe di documentazione nel codice sorgente della funzione, ma includono eventuali valori predefiniti.
+Se si scrive codice che chiama una funzione, la guida per la firma digitale appare quando si digita la parentesi di apertura (`(`) e visualizza le informazioni della documentazione e sui parametri disponibili. È anche possibile farlo apparire con **CTRL** +  + **MAIUSC+BARRA SPAZIATRICE all'interno** di una chiamata di funzione. Le informazioni visualizzate dipendono dalle stringhe di documentazione nel codice sorgente della funzione, ma includono eventuali valori predefiniti.
 
 ![Guida per la firma nell'editor di Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Per disabilitare la guida alla firma, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **Python**  >  **generale** e deselezionare istruzioni parametri di **completamento istruzioni**  >  .
+> Per disabilitare la Guida per la firma, passare **a** Strumenti Opzioni Editor di  >    >  **testo**  >  **Generale Python**  >   e deselezionare Informazioni sui parametri **di completamento** delle  >  **istruzioni**.
 
 ### <a name="quick-info"></a>Informazioni rapide
 
@@ -145,12 +146,12 @@ La funzionalità di colorazione del codice usa le informazioni dall'analisi del 
 
 ![Colorazione del codice e della sintassi nell'editor di Visual Studio](media/code-editing-code-coloring.png)
 
-Per personalizzare i colori, passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **tipi di carattere e colori** e modificare le voci di **Python** nell'elenco **elementi visualizzati** :
+Per personalizzare i colori, passare **a** Opzioni strumenti Tipi di carattere e colori dell'ambiente e modificare le  >    >    >   **voci Python** nell'elenco **Elementi** visualizzati:
 
 ![Opzioni di Tipi di carattere e colori in Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> Per disabilitare la colorazione del codice, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **Python**  >  **Avanzate** e deselezionare **varie opzioni**  >  **nomi di colore in base al tipo**. Vedere [Opzioni-Opzioni varie](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Per disabilitare la colorazione del codice, passare a Strumenti Opzioni Editor di testo Python Advanced e  >    >    >    >   **deselezionare Opzioni**  >  varie Nomi dei colori in base al tipo . Vedere [Opzioni - Opzioni varie](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 ## <a name="code-snippets"></a>Frammenti di codice
 
@@ -160,17 +161,17 @@ Ad esempio, `class` è una scelta rapida per un frammento di codice che inserisc
 
 ![Frammento di codice per la scelta rapida per la classe](media/code-editing-code-snippet-class.png)
 
-Premendo **Tab** viene generato il resto della classe. È quindi possibile digitare sull'elenco nome e basi, passare tra i campi evidenziati con **Tab**, quindi premere **invio** per iniziare a digitare il corpo.
+Premendo **TAB** viene generato il resto della classe. È quindi possibile digitare sull'elenco di nomi e basi, spostandosi tra i campi evidenziati con **TAB,** quindi premere **INVIO** per iniziare a digitare il corpo.
 
 ![Evidenziazioni nelle aree di un frammento di codice da completare](media/code-editing-code-snippets.png)
 
 ### <a name="menu-commands"></a>Comandi di menu
 
-Quando si usa il comando di menu **modifica**  >  **IntelliSense**  >  **Inserisci frammento di codice** , selezionare prima **Python**, quindi selezionare un frammento:
+Quando si usa il **comando di** menu Modifica frammento di codice  >  **IntelliSense,** selezionare prima  >   **Python** e quindi selezionare un frammento di codice:
 
 ![Selezione di un frammento di codice tramite il comando Inserisci frammento di codice](media/code-editing-code-snippet-insert.png)
 
-Il comando **modifica**  >  **IntelliSense**  >  **Racchiudi tra con** , in modo analogo, posiziona la selezione corrente nell'editor di testo all'interno di un elemento strutturale scelto. Ad esempio, si supponga di avere a disposizione un blocco di codice simile al seguente:
+In **modo** analogo, il comando Modifica  >  **intelliSense** Surround With inserisce la selezione corrente nell'editor di testo all'interno  >   di un elemento strutturale scelto. Ad esempio, si supponga di avere a disposizione un blocco di codice simile al seguente:
 
 ```python
 sum = 0
@@ -194,7 +195,7 @@ Se si scrive un frammento di codice particolarmente utile e si vuole condividerl
 
 ## <a name="navigate-your-code"></a>Esplorare il codice
 
-Il supporto di Python in Visual Studio offre diversi strumenti per spostarsi rapidamente all'interno del codice, incluse le librerie per cui è disponibile il codice sorgente: la [barra di spostamento](#navigation-bar), [**Vai a definizione**](#go-to-definition), [**passa a**](#navigate-to)e [**Trova tutti i riferimenti**](#find-all-references). È anche possibile usare Visual Studio [**Visualizzatore oggetti**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser).
+Il supporto di Python in Visual Studio offre diversi mezzi per spostarsi rapidamente all'interno del codice, incluse [](#navigate-to)le librerie per cui è disponibile codice sorgente: la barra di [spostamento,](#navigation-bar)Vai a [**definizione,**](#go-to-definition)Passa a e Trova tutti i [**riferimenti.**](#find-all-references) È anche possibile usare il Visual Studio [**visualizzatore oggetti**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser).
 
 ### <a name="navigation-bar"></a>Barra di navigazione
 
@@ -203,25 +204,25 @@ La barra di spostamento viene visualizzata nella parte superiore di ogni finestr
 ![Barra di spostamento nell'editor di Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> Per nascondere la barra di spostamento, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **Python**  >  **generale** e deselezionare **Impostazioni**  >  **barra di spostamento**.
+> Per nascondere la barra di spostamento, passare **a** Strumenti Opzioni Editor di testo Python Generale e  >    >    >    >   deselezionare Impostazioni Barra   >  **di spostamento.**
 
 ### <a name="go-to-definition"></a>Vai a definizione
 
-Il comando **Vai a definizione** consente di passare velocemente dall'uso di un identificatore (ad esempio, un nome di funzione, una classe o una variabile) al codice sorgente in cui è definito. Per richiamarlo, fare clic con il pulsante destro del mouse su un identificatore e scegliere **Vai a definizione** oppure posizionare il punto di inserimento nell'identificatore e premere **F12**. Il comando viene applicato a tutto il codice e alle librerie esterne, a condizione che sia disponibile il codice sorgente. Se il codice sorgente della libreria non è disponibile, il comando **Vai a definizione** passa all'istruzione `import` pertinente per un riferimento al modulo o visualizza un errore.
+Il comando **Vai a definizione** consente di passare velocemente dall'uso di un identificatore (ad esempio, un nome di funzione, una classe o una variabile) al codice sorgente in cui è definito. Per richiamarlo, fare clic con il pulsante destro del mouse su un identificatore e scegliere **Vai** a definizione oppure posizionare il caret nell'identificatore e premere **F12.** Il comando viene applicato a tutto il codice e alle librerie esterne, a condizione che sia disponibile il codice sorgente. Se il codice sorgente della libreria non è disponibile, il comando **Vai a definizione** passa all'istruzione `import` pertinente per un riferimento al modulo o visualizza un errore.
 
 ![Comando Vai a definizione in Visual Studio](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Passa a
 
-Il comando **modifica**  >  **passa a** (**CTRL** + **,**) consente di visualizzare una casella di ricerca nell'editor in cui è possibile digitare qualsiasi stringa e visualizzare le possibili corrispondenze nel codice che definisce una funzione, una classe o una variabile contenente tale stringa. La funzionalità di questo comando è simile a **Vai a definizione**, ma non richiede l'individuazione di un uso di un identificatore.
+Il **comando** Modifica Passa a ( CTRL , ) visualizza una casella di ricerca nell'editor in cui è possibile digitare qualsiasi stringa e visualizzare le possibili corrispondenze nel codice che definisce una funzione, una classe o una variabile contenente  >    + tale stringa. La funzionalità di questo comando è simile a **Vai a definizione**, ma non richiede l'individuazione di un uso di un identificatore.
 
-Facendo doppio clic su qualsiasi nome o selezionando con i tasti di direzione e **invio**, viene visualizzata la definizione di tale identificatore.
+Facendo doppio clic su un nome o selezionando con i tasti di direzione **e invio,** si passa alla definizione dell'identificatore.
 
 ![Comando Passa a in Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Trova tutti i riferimenti
 
-**Trova tutti i riferimenti** è un modo utile per individuare le posizioni in cui un qualsiasi identificatore specificato viene sia definito che usato, incluse importazioni e assegnazioni. Per richiamarlo, fare clic con il pulsante destro del mouse su un identificatore e scegliere **Trova tutti i riferimenti** o posizionare il punto di inserimento nell'identificatore e premere **MAIUSC** + **F12**. È possibile fare doppio clic su un elemento nell'elenco per passare alla relativa posizione.
+**Trova tutti i riferimenti** è un modo utile per individuare le posizioni in cui un qualsiasi identificatore specificato viene sia definito che usato, incluse importazioni e assegnazioni. Per richiamarlo, fare clic con il pulsante destro del mouse su un identificatore e scegliere Trova tutti i riferimenti oppure posizionare il caret nell'identificatore e **premere** + **MAIUSC F12.** È possibile fare doppio clic su un elemento nell'elenco per passare alla relativa posizione.
 
 ![Risultati di Trova tutti i riferimenti](media/code-editing-find-all-references.png)
 

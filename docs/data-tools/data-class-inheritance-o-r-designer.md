@@ -20,9 +20,9 @@ ms.locfileid: "121347402"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Ereditarietà delle classi di dati (Object Relational Designer)
 
-Analogamente ad altri oggetti, LINQ to SQL classi possono usare l'ereditarietà ed essere derivate da altre classi. Nel codice è possibile specificare le relazioni di ereditarietà tra oggetti dichiarando che una classe eredita da un'altra. In un database le relazioni di ereditarietà vengono create in diversi modi. La **Object Relational Designer** (**Progettazione relazionale** oggetti ) supporta il concetto di ereditarietà a tabella singola, in quanto viene spesso implementata nei sistemi relazionali.
+Analogamente ad altri oggetti, LINQ to SQL classi possono usare l'ereditarietà ed essere derivate da altre classi. Nel codice è possibile specificare le relazioni di ereditarietà tra oggetti dichiarando che una classe eredita da un'altra. In un database le relazioni di ereditarietà vengono create in diversi modi. La **Object Relational Designer** (**O/R Designer**) supporta il concetto di ereditarietà a tabella singola, in quanto viene spesso implementata nei sistemi relazionali.
 
-Nell'ereditarietà a tabella singola è presente una singola tabella di database che contiene colonne per le classi base e derivate. Insieme ai dati relazionali, una colonna discriminante contiene il valore che determina la classe a cui appartiene uno specifico record. Si consideri ad esempio `Persons` una tabella che contiene tutti gli dipendenti di una società. alcune delle quali sono dipendenti mentre altre sono manager. La tabella contiene una colonna denominata con valore 1 per i responsabili e `Persons` `Type` un valore 2 per i dipendenti. La `Type` colonna è la colonna discriminatore. In questo scenario è possibile creare una sottoclasse di dipendenti e popolare la classe con solo i record con `Type` valore 2.
+Nell'ereditarietà a tabella singola è presente una singola tabella di database che contiene colonne per le classi base e derivate. Insieme ai dati relazionali, una colonna discriminante contiene il valore che determina la classe a cui appartiene uno specifico record. Si consideri ad esempio una `Persons` tabella che contiene tutti gli utenti dipendenti da una società. alcune delle quali sono dipendenti mentre altre sono manager. La tabella contiene una colonna denominata con valore 1 per i manager e `Persons` `Type` un valore 2 per i dipendenti. La `Type` colonna è la colonna discriminatore. In questo scenario è possibile creare una sottoclasse di dipendenti e popolare la classe con solo record il cui `Type` valore è 2.
 
 Quando si configura l'ereditarietà nelle classi dell'entità usando [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], trascinare due volte la singola tabella che contiene i dati di ereditarietà sulla finestra di progettazione: una volta per ogni classe nella gerarchia di ereditarietà. Dopo avere aggiunto le tabelle alla finestra di progettazione, connetterle con un elemento di ereditarietà dalla casella degli strumenti **Object Relational Designer** e quindi impostare le quattro proprietà nella finestra **Proprietà**.
 
@@ -33,16 +33,16 @@ Nella tabella seguente sono elencate le proprietà di ereditarietà e le rispett
 |Proprietà|Descrizione|
 |--------------|-----------------|
 |**Proprietà Discriminator**|Proprietà (mappata alla colonna) che determina a quale classe appartiene il record corrente.|
-|**Valore discriminante classe base**|Valore (nella colonna designata come proprietà **discriminatore)** che determina che un record è della classe di base.|
-|**Valore discriminante classe derivata**|Valore (nella proprietà designata come proprietà **discriminatore)** che determina che un record è della classe derivata.|
-|**Valore predefinito di ereditarietà**|Classe popolata quando il valore nella proprietà designata come Proprietà **discriminatore** non corrisponde al valore discriminatore della classe **base** o al valore del **discriminatore** della classe derivata .|
+|**Valore discriminante classe base**|Valore (nella colonna designata come proprietà **Discriminator**) che determina che un record è della classe di base.|
+|**Valore discriminante classe derivata**|Valore (nella proprietà designata come proprietà **Discriminator**) che determina che un record è della classe derivata.|
+|**Valore predefinito di ereditarietà**|Classe popolata quando il valore nella proprietà designata come Proprietà **discriminatore** non corrisponde al valore discriminatore della classe **base** o al valore di discriminante della **classe derivata.**|
 
 La creazione di un modello a oggetti che usa l'ereditarietà e corrisponde ai dati relazionali può generare una certa confusione. Questo argomento fornisce informazioni sui concetti di base e sulle proprietà singole richieste per la configurazione dell'ereditarietà. Negli argomenti seguenti viene fornita una spiegazione più chiara di come configurare l'ereditarietà con **O/R Designer.**
 
 |Argomento|Descrizione|
 |-----------|-----------------|
 |[Procedura: Configurare l'ereditarietà usando O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Viene descritto come configurare classi di entità che usano l'ereditarietà a tabella singola tramite **O/R Designer.**|
-|[Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a una sola tabella (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Fornisce istruzioni dettagliate su come configurare le classi di entità che usano l'ereditarietà a tabella singola tramite **O/R Designer.**|
+|[Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a una sola tabella (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Vengono fornite istruzioni dettagliate su come configurare le classi di entità che usano l'ereditarietà a tabella singola tramite **O/R Designer.**|
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,6 +1,6 @@
 ---
 title: Specificare agenti di test da usare negli scenari di test di carico
-description: Informazioni su come specificare gli agenti da usare in uno scenario impostando la proprietà agents to use nel Finestra Proprietà del Editor test di carico.
+description: Informazioni su come specificare gli agenti da usare in uno scenario impostando la proprietà Agents to Use nel Finestra Proprietà del Editor test di carico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -14,12 +14,13 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 0fc1aeb6eed9bf3697d1658a98d00bdfdab42660
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: a0a32ade4170bcc2763a019bdf1532af01221393
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936210"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075814"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedura: Specificare agenti di test da usare negli scenari di test di carico
 
@@ -28,9 +29,9 @@ Dopo aver creato il test di carico mediante la **Creazione guidata test di caric
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Per un elenco completo delle proprietà dello scenario del test di carico e delle relative descrizioni, vedere [proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario di test di carico.](../test/load-test-scenario-properties.md)
 
-Gli agenti vengono specificati utilizzando la **Editor test di carico** per modificare la proprietà **agenti da utilizzare** nella finestra **proprietà** .
+Gli agenti vengono specificati usando il **Editor test di carico** per modificare la proprietà **Agents to Use** nella **finestra** Proprietà.
 
 È possibile specificare gli agenti che si desidera vengano utilizzati nello scenario se si utilizzano controller e agenti per eseguire il test di carico in modalità remota. È, ad esempio, possibile specificare un determinato set di agenti, in modo da garantire la coerenza quando si analizzano le tendenze delle prestazioni. Gli agenti possono inoltre essere distribuiti geograficamente, in modo che vi sia affinità tra gli script eseguiti e la posizione dell'agente.
 
@@ -41,7 +42,7 @@ Per altre informazioni, vedere [Test controller e agenti di test](configure-test
 
 Un altro motivo è legato al fatto che in alcuni agenti, ma non in tutti, potrebbe essere installato software necessario per uno scenario specifico.
 
-È possibile controllare la selezione degli agenti per un'esecuzione del test specifica utilizzando i ruoli nelle impostazioni di test. Per altre informazioni, vedere  [raccogliere informazioni di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+È possibile controllare la selezione degli agenti per un'esecuzione del test specifica utilizzando i ruoli nelle impostazioni di test. Per altre informazioni, vedere [Raccogliere informazioni di diagnostica usando le impostazioni test.](../test/collect-diagnostic-information-using-test-settings.md)
 
 Se nel computer di un agente di test l'utilizzo della CPU è oltre il 75% o se la quantità di memoria fisica disponibile è inferiore al 10%, aggiungere più agenti al test di carico per assicurarsi che il computer dell'agente non diventi il collo di bottiglia nel test di carico.
 

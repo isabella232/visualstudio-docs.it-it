@@ -1,6 +1,6 @@
 ---
-title: Creare un controllo utente Windows Form con data binding
-description: Informazioni su come creare un Windows utente form che supporta i data binding, implementando la classe ComplexBindingPropertiesAttribute.
+title: Creare un controllo utente Windows Forms con data binding
+description: Informazioni su come creare un controllo utente Windows Form che supporta la data binding, implementando la classe ComplexBindingPropertiesAttribute.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,13 +26,13 @@ ms.locfileid: "121347571"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding complesso
 
-Quando si visualizzano dati nei form in Windows applicazioni, è possibile scegliere i controlli esistenti dalla casella degli **strumenti**. In caso contrario, è possibile creare controlli personalizzati se l'applicazione richiede funzionalità non disponibili nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. I controlli che implementano <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contengono `DataSource` e la proprietà `DataMember` che può essere associata ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.DataGridView> o <xref:System.Windows.Forms.ListBox>.
+Quando si visualizzano i dati nei moduli Windows applicazioni, è possibile scegliere i controlli esistenti dalla Casella **degli strumenti**. In caso contrario, è possibile creare controlli personalizzati se l'applicazione richiede funzionalità non disponibili nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. I controlli che implementano <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contengono `DataSource` e la proprietà `DataMember` che può essere associata ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.DataGridView> o <xref:System.Windows.Forms.ListBox>.
 
-Per altre informazioni sulla creazione di controlli, vedere [Sviluppo di Windows form in fase di progettazione.](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)
+Per altre informazioni sulla creazione di controlli, vedere [Sviluppo di Windows Form in fase di progettazione.](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)
 
 Quando si creano controlli da usare negli scenari di data binding, è necessario implementare uno degli attributi di data binding seguenti:
 
-|Utilizzo degli attributi di associazione dati|
+|Utilizzo dell'attributo di associazione dati|
 | - |
 |Implementare <xref:System.ComponentModel.DefaultBindingPropertyAttribute> su controlli semplici, ad esempio <xref:System.Windows.Forms.TextBox>, che visualizzano una singola colonna, o proprietà, di dati. Per altre informazioni, vedere [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
 |Implementare <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.DataGridView>, che visualizzano elenchi, o tabelle, di dati. Il processo è descritto in questa pagina di procedura dettagliata.|
@@ -58,27 +58,27 @@ Durante questa procedura dettagliata si apprenderà come:
 
 Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** **Nell'Programma di installazione di Visual Studio** è possibile installare SQL Server Express Local DB come parte del  carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina di [download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nel **Programma di installazione di Visual Studio**, è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Archiviazione ed elaborazione dati o come singolo componente.
 
 1. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la **finestra SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
+    1. In Visual Studio aprire la **finestra** SQL Server Esplora oggetti. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Archiviazione ed elaborazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server.** Fare clic con il pulsante destro del mouse Local DB'istanza di query e **scegliere Nuova query**.
 
        Verrà visualizzata una finestra dell'editor di query.
 
-    1. Copiare [lo script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
+    1. Copiare [lo script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con dati.
 
     1. Incollare lo script T-SQL nell'editor di query e quindi scegliere **il pulsante** Esegui.
 
-       Dopo un breve periodo di tempo, l'esecuzione della query termina e viene creato il database Northwind.
+       Dopo un breve periodo di tempo, l'esecuzione della query viene completata e viene creato il database Northwind.
 
-## <a name="create-a-windows-forms-app-project"></a>Creare un progetto Windows'app Forms
+## <a name="create-a-windows-forms-app-project"></a>Creare un progetto di app Windows Forms
 
-Il primo passaggio consiste nel creare un **progetto Windows'app Forms** per C# o Visual Basic. Assegnare al progetto il nome **ComplexControlWalkthrough**.
+Il primo passaggio consiste nel creare un **progetto Windows Forms App** per C# o Visual Basic. Assegnare al progetto il nome **ComplexControlWalkthrough**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto
 
-Poiché questa procedura dettagliata crea un controllo associabile a dati complesso da **un controllo utente**, aggiungere un elemento **Controllo** utente al progetto:
+Poiché questa procedura dettagliata crea un controllo associabile a dati complesso da un **controllo** utente , aggiungere un **elemento Controllo** utente al progetto:
 
 1. Scegliere **Aggiungi controllo utente** dal menu **Progetto**.
 
@@ -88,7 +88,7 @@ Poiché questa procedura dettagliata crea un controllo associabile a dati comple
 
 ## <a name="design-the-complexdatagridview-control"></a>Progettare il controllo ComplexDataGridView
 
-Per aggiungere un <xref:System.Windows.Forms.DataGridView> oggetto al controllo utente, trascinare un oggetto dalla casella degli strumenti <xref:System.Windows.Forms.DataGridView> all'area di progettazione del controllo utente. 
+Per aggiungere un oggetto al controllo utente, trascinare un oggetto dalla Casella degli strumenti nell'area di progettazione <xref:System.Windows.Forms.DataGridView> <xref:System.Windows.Forms.DataGridView> del controllo utente. 
 
 ## <a name="add-the-required-data-binding-attribute"></a>Aggiungere l'attributo di data binding obbligatorio
 
@@ -107,7 +107,7 @@ Per controlli semplici che supportano il data binding, è possibile implementare
 
 Usare la **Configurazione guidata origine** dati per creare un'origine dati basata sulla tabella nel database di esempio `Customers` Northwind:
 
-1. Per aprire la **finestra Origini** dati , **scegliere** Mostra origini dati dal menu **Dati**.
+1. Per aprire la **finestra Origini** dati, **scegliere** Mostra origini dati dal menu **Dati**.
 
 2. Nella finestra **Origini dati** selezionare Aggiungi nuova **origine dati** per avviare la Configurazione **guidata origine** dati.
 
@@ -127,11 +127,11 @@ Usare la **Configurazione guidata origine** dati per creare un'origine dati basa
 
 8. Selezionare la tabella `Customers`, quindi fare clic su **Fine**.
 
-   **NorthwindDataSet** viene aggiunto al progetto e la `Customers` tabella viene visualizzata nella finestra **Origini** dati.
+   **NorthwindDataSet** viene aggiunto al progetto e la `Customers` tabella viene visualizzata nella finestra **Origini** dati .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Impostare la tabella Customers per l'uso del controllo ComplexDataGridView
 
-**All'interno della finestra** Origini dati è possibile impostare il controllo da creare prima di trascinare elementi nel form:
+Nella finestra **Origini dati** è possibile impostare il controllo da creare prima di trascinare gli elementi nel form:
 
 1. Aprire **Form1** nella finestra di progettazione.
 
@@ -145,7 +145,7 @@ Usare la **Configurazione guidata origine** dati per creare un'origine dati basa
 
 ## <a name="add-controls-to-the-form"></a>Aggiungere controlli al form
 
-È possibile creare i controlli associati a dati trascinando elementi dalla **finestra Origini** dati nel form. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** al form. Verificare che il **controllo ComplexDataGridView** sia usato per visualizzare i dati della tabella.
+È possibile creare i controlli associati a dati trascinando gli elementi dalla **finestra Origini** dati nel form. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** al form. Verificare che il **controllo ComplexDataGridView** sia usato per visualizzare i dati della tabella.
 
 ## <a name="run-the-application"></a>Eseguire l'applicazione
 

@@ -11,17 +11,18 @@ ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2b9d5910b3a86b322a7589b285ba242dec4add2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c479f67850af2701f68324e2270cb26e73b84458e0da5f399df0b1b26430b234
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070921"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432982"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 Descrive gli attributi di un documento.
@@ -44,14 +45,14 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Commenti
 
 > [!NOTE]
-> Questo valore non è effettivamente definito nell'assembly per C#. Al contrario, è necessario copiare la definizione nel file di origine.
+> Questo valore non è effettivamente definito nell'assembly per C#. È invece necessario copiare la definizione nel file di origine.
 
- Passato come argomento al metodo [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .
+ Passato come argomento al [metodo onUpdateDocumentAttributes.](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

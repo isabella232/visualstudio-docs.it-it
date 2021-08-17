@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 185cec33a3ea8d6538ae6d820f0690bc68b5270daa74161d46f4788137b234e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d47b655767815d8d15292f9fc5591a5ddd97808
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434490"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057824"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
 Specifica il motivo per cui il motore di debug (DE) deve connettersi a un nodo del programma.

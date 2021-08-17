@@ -1,6 +1,6 @@
 ---
 title: Aggiungere parametri dei nomi ai modelli di progetto e di elemento
-description: Informazioni su come modificare i parametri del modello per sostituire gli identificatori, ad esempio i nomi delle classi e gli spazi dei nomi.
+description: Informazioni su come modificare i parametri del modello per sostituire identificatori come nomi di classe e spazi dei nomi.
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
@@ -11,12 +11,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 6d7d0a6f45468759dc3ec2349764cf2677aa5d9e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 5642f12f72cdc24bb6a2ef6db921d30482f4ca0e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869232"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078310"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Procedura: Sostituire i parametri di un modello
 
@@ -28,13 +29,13 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
 
 ## <a name="example---namespace-name"></a>Esempio - nome dello spazio dei nomi
 
-1. Inserire il parametro in uno o più dei file di codice nel modello. Ad esempio:
+1. Inserire il parametro in uno o più dei file di codice nel modello. Esempio:
 
     ```csharp
     namespace $safeprojectname$
     ```
 
-1. Nel file *vstemplate* del modello individuare l' `ProjectItem` elemento che include il file.
+1. Nel file *vstemplate* per il modello individuare `ProjectItem` l'elemento che include questo file.
 
 1. Impostare l'attributo `ReplaceParameters` su `true` per l'elemento `ProjectItem`:
 
@@ -46,5 +47,5 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
 
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Parametri di modelli](../ide/template-parameters.md)
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento ProjectItem (modelli di elemento di Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

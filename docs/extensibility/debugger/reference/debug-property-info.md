@@ -55,7 +55,7 @@ public struct DEBUG_PROPERTY_INFO {
 
 ## <a name="members"></a>Members
 `dwValidFields`\
-Combinazione di flag [dell'DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi compilati.
+Combinazione di flag [dell'enumerazione DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica quali campi vengono compilati.
 
 `bstrFullName`\
 Nome completo della proprietà.
@@ -73,12 +73,12 @@ Valore della proprietà come stringa formattata.
 Oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) descritto da questa struttura.
 
 `dwAttrib`\
-Combinazione di flag [dell'DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) che descrivono gli attributi di questa proprietà.
+Combinazione di flag [dell'enumerazione DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) che descrivono gli attributi di questa proprietà.
 
 ## <a name="remarks"></a>Commenti
-Una proprietà è un oggetto di natura gerarchica con un nome, un tipo e un valore. Ad esempio, una proprietà può descrivere variabili locali, parametri, variabili watch ed espressioni e registri.
+Una proprietà è un oggetto di natura gerarchica con un nome, un tipo e un valore. Ad esempio, una proprietà può descrivere variabili locali, parametri, variabili di espressione di controllo ed espressioni e registri.
 
-Questa struttura viene passata al [metodo GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) in cui viene compilata. Questa struttura viene restituita anche come parte di un elenco di questa struttura dall'interfaccia [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) che, a sua volta, viene restituita da una chiamata ai metodi [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) ed [EnumProperties.](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+Questa struttura viene passata [al metodo GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) dove viene compilata. Questa struttura viene restituita anche come parte di un elenco di questa struttura dall'interfaccia [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) che, a sua volta, viene restituita da una chiamata ai [metodi EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) ed [EnumProperties.](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

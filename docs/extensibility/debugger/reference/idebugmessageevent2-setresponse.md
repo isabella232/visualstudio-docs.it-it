@@ -1,6 +1,6 @@
 ---
 description: Imposta la risposta, se presente, dalla finestra di messaggio.
-title: 'IDebugMessageEvent2:: seresponse | Microsoft Docs'
+title: IDebugMessageEvent2::SetResponse | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,17 +12,18 @@ ms.assetid: 2a5e318d-3225-4abd-83f1-28323baff6c0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ddba44f807d8b5f54008a8a67c9c5571cf316a32
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0db4be02717712aa06997d980822e74456d78a7f34c9f1d0c9c207e4be104c6a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058443"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433736"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 Imposta la risposta, se presente, dalla finestra di messaggio.
@@ -43,7 +44,7 @@ int SetResponse(
 
 ## <a name="parameters"></a>Parametri
 `dwResponse`\
-in Specifica la risposta, usando le convenzioni della `MessageBox` funzione Win32. Per informazioni dettagliate, vedere la funzione [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) .
+[in] Specifica la risposta, usando le convenzioni della funzione `MessageBox` Win32. Per informazioni dettagliate, vedere la funzione [AfxMessageBox.](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,6 +1,6 @@
 ---
 description: Recupera una struttura CONTEXT_INFO che descrive il contesto.
-title: 'IDebugMemoryContext2:: GetInfo | Microsoft Docs'
+title: IDebugMemoryContext2::GetInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe87f5dbf14d714f4915e99c23a56b8c9490dd23
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 799d161c82a0d84b524256c00788e1664e1a0d7a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058625"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043388"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
-Recupera una struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) che descrive il contesto.
+Recupera una [struttura CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) che descrive il contesto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +46,10 @@ int GetInfo(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-in Combinazione di flag dell'enumerazione [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) che indicano i campi della struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) da compilare.
+[in] Combinazione di flag [dell'CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) che indicano i campi della struttura CONTEXT_INFO [da](../../../extensibility/debugger/reference/context-info.md) compilare.
 
 `pInfo`\
-[in, out] `CONTEXT_INFO` Struttura compilata.
+[in, out] Struttura `CONTEXT_INFO` compilata.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

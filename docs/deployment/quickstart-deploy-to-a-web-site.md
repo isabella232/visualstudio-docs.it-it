@@ -49,7 +49,7 @@ ms.locfileid: "121453027"
 
     ![Distribuzione Web dettagli della connessione](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-1. Per pubblicare, **selezionare Pubblica** nella pagina di riepilogo. La finestra Output mostra i risultati e lo stato della distribuzione.
+1. Per pubblicare, selezionare **Pubblica** nella pagina di riepilogo. La finestra Output mostra i risultati e lo stato della distribuzione.
 
    Per informazioni sulla risoluzione dei ASP.NET Core in IIS, vedere Risolvere i ASP.NET Core [in Servizio app di Azure e IIS.](/aspnet/core/test/troubleshoot-azure-iis)
 

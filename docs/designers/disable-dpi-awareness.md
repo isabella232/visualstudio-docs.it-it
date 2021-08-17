@@ -5,13 +5,14 @@ ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.topic: conceptual
-ms.openlocfilehash: f63d831127951815f28955e72ae29b1a4d7f5a3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b4ae4cd215546744172ab64890254c488823e92
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917092"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089784"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Disabilitare la compatibilità con DPI in Visual Studio
 
@@ -29,12 +30,12 @@ Quando si apre un modulo in **Progettazione Windows Form** in Visual Studio con 
 
 ![Barra informativa in Visual Studio per il riavvio in modalità incompatibile con DPI](./media/scaling-gold-bar.png)
 
-La scalabilità delle letture del messaggio **sullo schermo principale è impostata su 200% (192 DPI). Questo potrebbe causare problemi di rendering nella finestra di progettazione.**
+Il messaggio **ridimensionamento sullo schermo principale è impostato su 200% (192 dpi). Ciò potrebbe causare problemi di rendering nella finestra di progettazione.**
 
 > [!NOTE]
 > Questa barra informativa è stata introdotta in Visual Studio 2017 versione 15.8.
 
-Se non si lavora nella finestra di progettazione e non è necessario modificare il layout del modulo, è possibile ignorare la barra informativa e continuare a lavorare nell'editor di codice o in altri tipi di finestre di progettazione. È anche possibile [disabilitare le notifiche](#disable-notifications) in modo che la barra informativa non continui a essere visualizzata. Sono interessate solo le **Progettazione Windows Form** . Se è necessario lavorare in **Progettazione Windows Form**, la sezione successiva include informazioni utili per [risolvere il problema](#to-resolve-the-display-problem).
+Se non si lavora nella finestra di progettazione e non è necessario modificare il layout del modulo, è possibile ignorare la barra informativa e continuare a lavorare nell'editor di codice o in altri tipi di finestre di progettazione. È anche possibile [disabilitare le notifiche](#disable-notifications) in modo che la barra informazioni non continui a essere visualizzata. Solo **l'Windows progettazione Form** è interessata. Se è necessario lavorare in **Progettazione Windows Form**, la sezione successiva include informazioni utili per [risolvere il problema](#to-resolve-the-display-problem).
 
 ## <a name="to-resolve-the-display-problem"></a>Per risolvere il problema di visualizzazione
 
@@ -45,25 +46,25 @@ Per risolvere il problema di visualizzazione sono disponibili tre opzioni:
 - [Impostare il ridimensionamento dello schermo su 100%](#set-your-display-scaling-setting-to-100)
 
 > [!TIP]
-> Se si preferisce gestire le impostazioni dalla riga di comando, [`devenv.exe`](../ide/reference/devenv-command-line-switches.md) accetta `/noscale` come parametro della riga di comando per l'esecuzione in modalità di ridimensionamento del 100%.
+> Se si preferisce gestire le impostazioni dalla riga di comando, accetta come parametro della riga di comando per l'esecuzione in modalità di ridimensionamento [`devenv.exe`](../ide/reference/devenv-command-line-switches.md) `/noscale` al 100%.
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>Riavviare Visual Studio come processo incompatibile con DPI
 
 È possibile riavviare Visual Studio come processo incompatibile con DPI selezionando l'opzione sulla barra informativa gialla. Questo è il modo migliore per risolvere il problema.
 
-Quando Visual Studio viene eseguito come processo incompatibile con DPI, i problemi di layout della finestra di progettazione vengono risolti, ma i caratteri potrebbero apparire sfocati. In Visual Studio viene visualizzato un messaggio informativo giallo diverso quando viene eseguito come processo non basato su DPI che indica che **Visual Studio è in esecuzione come processo non basato su dpi. Le finestre di progettazione WPF e XAML potrebbero non essere visualizzate correttamente.** La barra informativa offre anche l'opzione **Riavvia Visual Studio come processo compatibile con DPI**.
+Quando Visual Studio viene eseguito come processo incompatibile con DPI, i problemi di layout della finestra di progettazione vengono risolti, ma i caratteri potrebbero apparire sfocati. Visual Studio viene visualizzato un messaggio informativo giallo diverso quando viene eseguito come processo inconsapevole di DPI che indica che Visual Studio è in esecuzione come processo inconsapevole **di DPI. Le finestre di progettazione WPF e XAML potrebbero non essere visualizzate correttamente.** La barra informativa offre anche l'opzione **Riavvia Visual Studio come processo compatibile con DPI**.
 
 > [!NOTE]
 > - In presenza di finestre degli strumenti non ancorate in Visual Studio quando viene selezionata l'opzione per il riavvio come processo incompatibile con DPI, la posizione di tali finestre degli strumenti potrebbe cambiare.
-> - Se si usa il profilo di Visual Basic predefinito o se è stata deselezionata l'opzione **Salva nuovi progetti alla creazione** in **Strumenti** > **Opzioni** > **Progetti e soluzioni**, Visual Studio non è in grado di riaprire il progetto quando viene riavviato come processo incompatibile con DPI. Tuttavia, è possibile aprire il progetto selezionandola in **file**  >  **progetti e soluzioni recenti**.
+> - Se si usa il profilo di Visual Basic predefinito o se è stata deselezionata l'opzione **Salva nuovi progetti alla creazione** in **Strumenti** > **Opzioni** > **Progetti e soluzioni**, Visual Studio non è in grado di riaprire il progetto quando viene riavviato come processo incompatibile con DPI. È tuttavia possibile aprire il progetto selezionandolo in **File**  >  **Progetti e soluzioni recenti**.
 
-È importante riavviare Visual Studio come processo compatibile con DPI quando non è più necessario lavorare in **Progettazione Windows Form**. Durante l'esecuzione come processo incompatibile con DPI, i caratteri possono essere sfocati e si potrebbero riscontrare problemi in altre finestre di progettazione, ad esempio la **finestra di progettazione XAML**. Se si chiude e si riapre Visual Studio mentre è in esecuzione in modalità incompatibile con DPI, diventa di nuovo compatibile con DPI. È anche possibile selezionare l'opzione **riavvia Visual Studio come processo compatibile con DPI** nella barra informativa.
+È importante riavviare Visual Studio come processo compatibile con DPI quando non è più necessario lavorare in **Progettazione Windows Form**. Durante l'esecuzione come processo incompatibile con DPI, i caratteri possono essere sfocati e si potrebbero riscontrare problemi in altre finestre di progettazione, ad esempio la **finestra di progettazione XAML**. Se si chiude e si riapre Visual Studio mentre è in esecuzione in modalità incompatibile con DPI, diventa di nuovo compatibile con DPI. È anche possibile selezionare **l'opzione Riavvia Visual Studio come** processo in grado di riconoscere DPI nella barra informazioni.
 
 ### <a name="add-a-registry-entry"></a>Aggiungere una voce del Registro di sistema
 
 È possibile contrassegnare Visual Studio come incompatibile con DPI modificando il Registro di sistema. Aprire l'**editor del Registro di sistema** e aggiungere una voce nella sottochiave **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers**:
 
-**Voce**: a seconda che si stia usando Visual Studio 2017 o 2019, usare uno di questi valori:
+**Voce:** a seconda che si usi Visual Studio 2017 o 2019, usare uno di questi valori:
 
 - C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
 - C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
@@ -71,9 +72,9 @@ Quando Visual Studio viene eseguito come processo incompatibile con DPI, i probl
 > [!NOTE]
 > Se si usa l'edizione Professional o Enterprise di Visual Studio, sostituire **Community** con **Professional** o **Enterprise** nella voce. Sostituire anche la lettera di unità come necessario.
 
-**Tipo**: REG_SZ
+**Digitare**: REG_SZ
 
-**Valore**: DPIUNAWARE
+**Valore:** DPIUNAWARE
 
 > [!NOTE]
 > Visual Studio rimane in modalità incompatibile con DPI fino a quando non viene rimossa la voce del Registro di sistema.
@@ -88,7 +89,7 @@ L'impostazione del ridimensionamento dello schermo su 100% potrebbe non essere a
 
 È possibile scegliere di non ricevere notifiche per i problemi di ridimensionamento DPI in Visual Studio. Ad esempio, potrebbe essere utile disabilitare le notifiche se non si lavora nella finestra di progettazione.
 
-Per disabilitare le notifiche, scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** . Quindi, scegliere **Progettazione Windows Form**  >  **generale** e impostare le **notifiche di ridimensionamento DPI** su **false**.
+Per disabilitare le notifiche, scegliere  >  **Opzioni strumenti** per aprire la finestra di **dialogo** Opzioni. Scegliere quindi Windows **Generale di Progettazione** Form e impostare Notifiche di  >   **ridimensionamento DPI** su **False.**
 
 ![Opzione per le notifiche di ridimensionamento DPI in Visual Studio](./media/notifications-option.png)
 
@@ -100,4 +101,4 @@ Se la transizione per la compatibilità con DPI non funziona come previsto in Vi
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Scalabilità automatica in Windows Form](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)
+- [Ridimensionamento automatico in Windows Form](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)

@@ -13,14 +13,15 @@ ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21e0feb3913b148b4320e69461bc5035655a392d
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 7293f1c1e6524284e11116167729f4a965d036fb12239794c97721a4302cd0d0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901890"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452615"
 ---
 # <a name="commandplacements-element"></a>Elemento CommandPlacements
 L'elemento CommandPlacements raggruppa gli elementi CommandPlacement e altri raggruppamenti CommandPlacements.
@@ -43,7 +44,7 @@ L'elemento CommandPlacements raggruppa gli elementi CommandPlacement e altri rag
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4e601258e14783c808652c6dd249e9709be554
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a5659e96896687f39a77c67e15e14b3bba8cc607737bba42013ac1be034aa486
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122087704"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292247"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Questa interfaccia fornisce il supporto per:
@@ -58,7 +58,7 @@ IDebugProperty3 : IDebugProperty2
 |[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Imposta il valore di questa proprietà, restituisce un messaggio di errore in caso di errore.|
 
 ## <a name="remarks"></a>Commenti
-- [SetValueAsStringWithError è](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) il modo preferito per la gestione del debug di sessione (SDM) per impostare il valore di una proprietà.
+- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) è il modo preferito per la gestione del debug di sessione (SDM) per impostare il valore di una proprietà.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

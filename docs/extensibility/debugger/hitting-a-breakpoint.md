@@ -14,19 +14,19 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04c9c5a3526b1e1c42034d606d2a2cc588a748533e65a99a2907328be16ac8e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f06559ff92fb448e81a1075a1cbe518c7b2a1e80
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089446"
 ---
 # <a name="hit-a-breakpoint"></a>Raggiungere un punto di interruzione
 La sezione seguente descrive il processo quando il motore di debug raggiunge un punto di interruzione durante l'esecuzione o l'esecuzione di istruzioni:
 
 ## <a name="troubleshoot-a-hit-breakpoint"></a>Risolvere i problemi relativi a un punto di interruzione raggiunto
 
-1. Il de invia [un'interfaccia IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) **come EVENT_SYNC_STOP**.
+1. De invia [un'interfaccia IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) come **EVENT_SYNC_STOP**.
 
 2. Gestione debug sessione chiama [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) per ottenere il punto di interruzione raggiunto.
 

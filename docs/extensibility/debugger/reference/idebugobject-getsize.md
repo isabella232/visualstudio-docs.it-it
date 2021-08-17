@@ -1,6 +1,6 @@
 ---
-description: Ottiene le dimensioni in byte dell'oggetto.
-title: 'IDebugObject:: GetSize | Microsoft Docs'
+description: Ottiene le dimensioni dell'oggetto in byte.
+title: IDebugObject::GetSize | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f37176d039ede66152f1255dc5a2459525bfe4be
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: df7b64065f331165e33c443f385fc79566fbb131
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054153"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043232"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
-Ottiene le dimensioni in byte dell'oggetto.
+Ottiene le dimensioni dell'oggetto in byte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +43,14 @@ int GetSize(
 
 ## <a name="parameters"></a>Parametri
 `pnSize`\
-out Restituisce le dimensioni in byte.
+[out] Restituisce le dimensioni in byte.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Usare il metodo [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) per recuperare il valore come sequenza di byte.
+ Usare il [metodo GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) per recuperare il valore come sequenza di byte.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
-- [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)
+- [Getvalue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

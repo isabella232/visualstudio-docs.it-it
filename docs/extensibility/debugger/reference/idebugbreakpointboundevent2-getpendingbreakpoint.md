@@ -1,6 +1,6 @@
 ---
-description: Ottiene il punto di interruzione in sospeso da associare.
-title: 'IDebugBreakpointBoundEvent2:: GetPendingBreakpoint | Microsoft Docs'
+description: Ottiene il punto di interruzione in sospeso associato.
+title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 6da7ed86-b412-4964-b6a3-0687a66f63fe
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42a26ec71bbf48e27843b43d4f4a5580110b07b7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 765ff47746ab150f8d2f8946bb13a42d30aada4fff75a6e25bbec134f97dc70d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067283"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121293027"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-Ottiene il punto di interruzione in sospeso da associare.
+Ottiene il punto di interruzione in sospeso associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int GetPendingBreakpoint(
 
 ## <a name="parameters"></a>Parametri
 `ppPendingBP`\
-out Restituisce l'oggetto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il punto di interruzione in sospeso da associare.
+[out] Restituisce [l'oggetto IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il punto di interruzione in sospeso associato.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CBreakpointSetDebugEventBase** che espone l'interfaccia [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CBreakpointSetDebugEventBase** che espone l'interfaccia [IDebugBreakpointBoundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(

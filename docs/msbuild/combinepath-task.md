@@ -1,6 +1,6 @@
 ---
 title: Attività CombinePath | Microsoft Docs
-description: Informazioni su come usare l'MSBuild CombinePath per combinare i percorsi specificati in un unico percorso.
+description: Informazioni su come usare l'attività MSBuild CombinePath per combinare i percorsi specificati in un singolo percorso.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 203b91147418a6e05325d7442fc6e7d59b84df8e169aed5048b7edf68e9743d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2461186e9ebe79cbdc1a5677f5fbf85baad11b6a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270991"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077660"
 ---
 # <a name="combinepath-task"></a>attività CombinePath
 
@@ -42,7 +42,7 @@ Combina i percorsi specificati in un singolo percorso.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
  Nell'esempio seguente viene illustrato come creare una struttura di cartelle di output usando per costruire la proprietà combinando un percorso `CombinePath` `$(OutputDirectory)` radice `$(PublishRoot)` concatenato con e un elenco di `$(ReleaseDirectory)` sottocartelle `$(LangDirectories)` .
 
@@ -65,7 +65,7 @@ Combina i percorsi specificati in un singolo percorso.
   </Target>
 ```
 
-L'unica proprietà che consente di essere un elenco è , nel qual caso `CombinePath` `Paths` anche l'output è un elenco. Pertanto, se `$(PublishRoot)` è *\\ C:\Site1* e è `$(ReleaseDirectory)` *Release \\* e è `@(LangDirectories)` *en-us \; \\ fr-fr,* questo esempio crea le cartelle:
+L'unica proprietà che consente di essere un elenco è , nel qual `CombinePath` `Paths` caso anche l'output è un elenco. Quindi, se `$(PublishRoot)` è *\\ C:\Site1* e `$(ReleaseDirectory)` è *Release \\* e è `@(LangDirectories)` *en-us \; fr-fr, \\* in questo esempio vengono create le cartelle:
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f2572c6011113c9c23bfd18b6ccbcce13f8dd7c64d6e068dab27b25a8410aa5d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 89ca0e736cddf33f72fcc08ea23bcafcbdd6fd0f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091004"
 ---
 # <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
 Recupera un flag che specifica se per il tipo di dati definito dall'utente sono definiti operatori cast.

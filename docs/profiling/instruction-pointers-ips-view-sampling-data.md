@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfc6a196d69da4fa5f5837265340b05a503d71370bb721a3f049890a991477c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 10eb11ccd2263ab0d66040137067ef2baad56f87
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121354996"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107589"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Visualizzazione dei puntatori all'istruzione: dati di campionamento
 Nella visualizzazione Puntatore all'istruzione dei dati di campionamento sono elencati i dati sulle prestazioni per le istruzioni dell'assembly eseguite direttamente durante la raccolta dei campioni nell'esecuzione della profilatura.
@@ -45,4 +45,4 @@ Nella visualizzazione Puntatore all'istruzione dei dati di campionamento sono el
 |**% esempi esclusivi**|Percentuale di tutti i campioni nell'esecuzione della profilatura che sono stati raccolti durante l'esecuzione dell'istruzione.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione puntatori all'istruzione (IP) - campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Puntatori all'istruzione -campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

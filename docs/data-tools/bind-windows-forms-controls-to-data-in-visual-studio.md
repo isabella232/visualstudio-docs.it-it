@@ -20,25 +20,25 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d891cc83008c844ddc694b958be6314c9f2de63a7c8383a541fc3ccd265d00bc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 311bdc7d0bf236f29d09804257aaaa8ce991f32f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240640"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075346"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
 
-È possibile visualizzare i dati agli utenti dell'applicazione associando i dati Windows Form. Per creare questi controlli associati a  dati, trascinare gli elementi dalla finestra Origini dati Windows Progettazione form in Visual Studio.
+È possibile visualizzare i dati agli utenti dell'applicazione associando i dati Windows Form. Per creare questi controlli associati a dati, trascinare gli **elementi** dalla finestra Origini dati Windows Progettazione Form in Visual Studio.
 
 ![Operazione di trascinamento dell'origine dati](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Se la **finestra Origini** dati non è visibile, è possibile aprirla scegliendo Visualizza Windows origini dati oppure premendo   >    >    + **MAIUSC ALT** + **D.** È necessario avere un progetto aperto in Visual Studio per visualizzare la **finestra Origini** dati.
+> Se la **finestra Origini** dati non è visibile, è possibile aprirla scegliendo Visualizza altre Windows dati oppure premendo  >    >   **MAIUSC** + **ALT** + **D.** Per visualizzare la finestra Origini dati, è Visual Studio un **progetto** aperto.
 
-Prima di trascinare gli elementi, è possibile impostare il tipo di controllo a cui si vuole eseguire l'associazione. Vengono visualizzati valori diversi a seconda che si scegli la tabella stessa o una singola colonna.  È anche possibile impostare valori personalizzati. Per una tabella, **Details** indica che ogni colonna è associata a un controllo separato.
+Prima di trascinare gli elementi, è possibile impostare il tipo di controllo a cui si vuole eseguire l'associazione. Vengono visualizzati valori diversi a seconda che si sceeni la tabella stessa o una singola colonna.  È anche possibile impostare valori personalizzati. Per una tabella, **Details** indica che ogni colonna è associata a un controllo separato.
 
-![Associare l'origine dati a DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
+![Associare un'origine dati a DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>Controlli BindingSource e BindingNavigator
 
@@ -52,32 +52,32 @@ Per altre informazioni sul <xref:System.Windows.Forms.BindingSource> componente,
 
 - [Architettura del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-architecture)
 
-Il [controllo BindingNavigator fornisce](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) un'interfaccia utente per lo spostamento tra i dati visualizzati da un Windows app.
+Il [controllo BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) fornisce un'interfaccia utente per spostarsi tra i dati visualizzati da un'Windows applicazione.
 
-## <a name="bind-to-data-in-a-datagridview-control"></a>Eseguire l'associazione ai dati in un controllo DataGridView
+## <a name="bind-to-data-in-a-datagridview-control"></a>Eseguire il binding ai dati in un controllo DataGridView
 
-Per un [controllo DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), l'intera tabella è associata a tale singolo controllo. Quando si trascina un **controllo DataGridView** nel form, viene visualizzata anche una barra degli strumenti per lo spostamento tra record ( <xref:System.Windows.Forms.BindingNavigator> ). Un [Oggetto DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md) <xref:System.Windows.Forms.BindingSource> , e vengono visualizzati nella barra dei <xref:System.Windows.Forms.BindingNavigator> componenti. Nella figura seguente viene aggiunto anche [un oggetto TableAdapterManager](/previous-versions/bb384426(v=vs.140)) perché la tabella Customers ha una relazione con la tabella Orders. Queste variabili vengono tutte dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per il riempimento di **DataGridView** si trova nel `Form_Load` gestore eventi. Il codice per salvare i dati per aggiornare il database si trova nel gestore `Save` eventi per **BindingNavigator**. È possibile spostare o modificare questo codice in base alle esigenze.
+Per un [controllo DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), l'intera tabella è associata a tale singolo controllo. Quando si trascina un **controllo DataGridView** nel form, viene visualizzata anche una barra degli strumenti per lo spostamento tra record ( <xref:System.Windows.Forms.BindingNavigator> ). Nella barra dei componenti vengono visualizzati un [oggetto DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md) <xref:System.Windows.Forms.BindingSource> , e <xref:System.Windows.Forms.BindingNavigator> . Nella figura seguente viene aggiunto [anche un TableAdapterManager](/previous-versions/bb384426(v=vs.140)) perché la tabella Customers ha una relazione con la tabella Orders. Queste variabili vengono tutte dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per il riempimento di **DataGridView** si trova nel `Form_Load` gestore eventi . Il codice per salvare i dati per aggiornare il database si trova nel gestore `Save` eventi per **BindingNavigator.** È possibile spostare o modificare questo codice in base alle esigenze.
 
 ![GridView con BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
 È possibile personalizzare il comportamento di **DataGridView** e **BindingNavigator** facendo clic sullo smart tag nell'angolo superiore destro di ognuno:
 
-![Smart tag DataGridView e Binding Navigator](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
+![Smart tag DataGridView e Strumento di navigazione dell'associazione](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
 
-Se i controlli dell'applicazione non sono disponibili all'interno della **finestra Origini** dati, è possibile aggiungere controlli. Per altre informazioni, vedere [Aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+Se i controlli per l'applicazione non sono disponibili all'interno della **finestra Origini** dati, è possibile aggiungere controlli. Per altre informazioni, vedere [Aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-È anche possibile trascinare elementi dalla finestra **Origini** dati nei controlli già presenti in un form per associare il controllo ai dati. Per un controllo già associato ai dati, le associazioni dati vengono reimpostate sull'elemento trascinato più di recente. Per essere destinazioni di rilascio valide, i controlli devono essere in grado di visualizzare il tipo di dati sottostante dell'elemento trascinato nella finestra **Origini** dati. Ad esempio, non è valido trascinare un elemento con un tipo di dati di in , perché non è in grado di <xref:System.DateTime> <xref:System.Windows.Forms.CheckBox> visualizzare una <xref:System.Windows.Forms.CheckBox> data.
+È anche possibile trascinare elementi dalla **finestra Origini** dati nei controlli già presenti in un form per associare il controllo ai dati. I data binding di un controllo già associato ai dati vengono reimpostati sull'elemento trascinato più di recente. Per essere destinazioni di rilascio valide, i controlli devono essere in grado di visualizzare il tipo di dati sottostante dell'elemento trascinato su di esso dalla **finestra Origini** dati. Ad esempio, non è valido trascinare un elemento con tipo di dati in , perché non è in grado di <xref:System.DateTime> <xref:System.Windows.Forms.CheckBox> visualizzare una <xref:System.Windows.Forms.CheckBox> data.
 
-## <a name="bind-to-data-in-individual-controls"></a>Eseguire l'associazione ai dati nei singoli controlli
+## <a name="bind-to-data-in-individual-controls"></a>Eseguire il binding ai dati nei singoli controlli
 
 Quando si associa un'origine dati **a Details**, ogni colonna del set di dati viene associata a un controllo separato.
 
 ![Associare l'origine dati ai dettagli](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
-> Si noti che nella figura precedente si trascina dalla proprietà Orders della tabella Customers, non dalla tabella Orders. Tramite l'associazione alla proprietà , i comandi di navigazione `Customer.Orders` esettuati in **DataGridView** si riflettono immediatamente nei controlli dei dettagli. Se si trascina dalla tabella Orders, i controlli verrebbero comunque associati al set di dati, ma non verrebbero sincronizzati con **DataGridView**.
+> Si noti che nell'illustrazione precedente si trascina dalla proprietà Orders della tabella Customers, non dalla tabella Orders. Tramite l'associazione alla proprietà , i comandi di navigazione `Customer.Orders` evasi in **DataGridView** si riflettono immediatamente nei controlli dei dettagli. Se si trascina dalla tabella Orders, i controlli vengono comunque associati al set di dati, ma non vengono sincronizzati con **DataGridView.**
 
-La figura seguente mostra i controlli con associazione a dati predefiniti aggiunti al form dopo che la proprietà Orders nella tabella Customers è associata a **Details** nella **finestra Origini** dati.
+Nella figura seguente vengono illustrati i controlli associati a dati predefiniti aggiunti al form dopo che la proprietà Orders della tabella Customers è stata associata a **Details** nella **finestra Origini** dati.
 
 ![Tabella Orders associata ai dettagli](../data-tools/media/raddata-orders-table-bound-to-details.png)
 

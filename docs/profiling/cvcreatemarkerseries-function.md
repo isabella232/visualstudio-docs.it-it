@@ -1,6 +1,6 @@
 ---
 title: Funzione CvCreateMarkerSeries | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvCreateMarkerSeries (libreria C).
+description: Vedere le informazioni di riferimento per la funzione SDK del visualizzatore di concorrenza CvCreateMarkerSeries (libreria C).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915724c39a656917d6565c60ddc7dfbb0737564
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ace7287bfbb12d078e8dcbc846042f8394215f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941034"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076763"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Funzione CvCreateMarkerSeries
 Crea una serie di marcatori per un determinato provider.
@@ -58,4 +59,4 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
  **ANSI:** CvCreateMarkerSeriesA
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)
+- [Informazioni di riferimento sulla libreria C++](../profiling/cpp-library-reference.md)

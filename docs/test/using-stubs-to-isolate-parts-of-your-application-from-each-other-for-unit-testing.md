@@ -1,23 +1,24 @@
 ---
 title: Uso di stub per isolare parti dell'app per i test
-description: Informazioni su uno stub, ovvero una piccola parte di codice che prende il posto di un altro componente durante i test. L'utilizzo di uno stub restituisce risultati coerenti.
+description: Informazioni su uno stub, ovvero una piccola parte di codice che prende il posto di un altro componente durante il test. L'uso di uno stub restituisce risultati coerenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 091789ea55ce323072a64c7564431af7f7a6f89c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006429"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059946"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usare stub per isolare parti dell'applicazione l'una dall'altra per il testing unità
 
@@ -37,7 +38,7 @@ Poiché gli stub si basano sulla possibilità di strutturare il codice in questo
 
 ### <a name="design-for-dependency-injection"></a>Progettare l'inserimento di dipendenza
 
-Per usare gli stub, è necessario progettare l'applicazione in modo che i diversi componenti non dipendano l'uno dall'altro, ma siano dipendenti solo dalle definizioni di interfaccia. Anziché essere accoppiati in fase di compilazione, i componenti vengono connessi in fase di esecuzione. Questo modello consente di progettare software affidabile e facile da aggiornare perché le modifiche non tendono a propagarsi oltre i limiti dei componenti. È consigliabile usarlo anche in assenza di stub. Se si sta scrivendo nuovo codice, è facile seguire il modello di [inserimento delle dipendenze](https://en.wikipedia.org/wiki/Dependency_injection) . Se si scrivono test per un software esistente, potrebbe essere necessario eseguire il refactoring. Se l'operazione è poco pratica, prendere in considerazione l'utilizzo degli shim.
+Per usare gli stub, è necessario progettare l'applicazione in modo che i diversi componenti non dipendano l'uno dall'altro, ma siano dipendenti solo dalle definizioni di interfaccia. Anziché essere accoppiati in fase di compilazione, i componenti vengono connessi in fase di esecuzione. Questo modello consente di progettare software affidabile e facile da aggiornare perché le modifiche non tendono a propagarsi oltre i limiti dei componenti. È consigliabile usarlo anche in assenza di stub. Se si scrive nuovo codice, è facile seguire il modello [di inserimento delle](https://en.wikipedia.org/wiki/Dependency_injection) dipendenze. Se si scrivono test per un software esistente, potrebbe essere necessario eseguire il refactoring. Se l'operazione è poco pratica, prendere in considerazione l'utilizzo degli shim.
 
 Questa discussione si apre con un esempio di motivazione, riportato nel diagramma. La classe StockAnalyzer legge i prezzi delle azioni e genera alcuni risultati significativi. Dispone di alcuni metodi pubblici che si desidera vengano testati. Per semplificare le operazioni, verrà esaminato un solo metodo, molto semplice, che restituisce il prezzo corrente di un'azione particolare. Si desidera scrivere uno unit test del metodo. Ecco la prima bozza di un test:
 
@@ -150,13 +151,13 @@ Per usare gli stub, è innanzitutto necessario generare i tipi stub dalle defini
 #### <a name="add-a-fakes-assembly"></a>Aggiungere un assembly Fakes
 
 1. In **Esplora soluzioni**, 
-    - Per un progetto di .NET Framework precedente (stile non SDK), espandere il nodo **riferimenti** del progetto unit test.
+    - Per un modello .NET Framework Project precedente (stile non SDK), espandere il unit test riferimenti **del** progetto.
     ::: moniker range=">=vs-2019"
-    - Per un progetto di tipo SDK destinato .NET Framework, .NET Core o .NET 5,0, espandere il nodo **dipendenze** per trovare l'assembly che si desidera falsificare in **assembly**, **progetti** o **pacchetti**.
+    - Per un progetto di tipo SDK che ha come destinazione .NET Framework, .NET Core  o .NET 5.0, espandere il nodo Dipendenze per trovare l'assembly da fingere in **Assembly**, **Progetti** o **Pacchetti**.
     ::: moniker-end
-    - Se si sta lavorando in Visual Basic, selezionare **Mostra tutti i file** nella barra degli strumenti **Esplora soluzioni** per visualizzare il nodo **riferimenti** .
+    - Se si lavora in Visual Basic, selezionare **Mostra** tutti i file nella barra degli **strumenti** Esplora soluzioni per visualizzare il **nodo** Riferimenti.
 
-2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Se ad esempio si desidera eseguire lo shim di **DateTime**, selezionare **System.dll**.
+2. Selezionare l'assembly che contiene le definizioni di classe per cui si desidera creare sms. Ad esempio, se si vuole eseguire lo shim **DateTime,** **selezionareSystem.dll**.
 
 3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
@@ -223,7 +224,7 @@ Gli stub vengono generati per i metodi GET e SET di proprietà, per gli eventi e
 
 ### <a name="verify-parameter-values"></a>Verificare i valori dei parametri
 
-È possibile verificare che quando il componente effettua una chiamata a un altro componente vengano passati i valori corretti. È possibile inserire un'asserzione nello stub oppure memorizzare il valore e verificarlo nella parte principale del test. Ad esempio:
+È possibile verificare che quando il componente effettua una chiamata a un altro componente vengano passati i valori corretti. È possibile inserire un'asserzione nello stub oppure memorizzare il valore e verificarlo nella parte principale del test. Esempio:
 
 ```csharp
 [TestClass]
@@ -395,7 +396,7 @@ Se il codice deve chiamare `GetValue<T>` con qualsiasi altra creazione dell'ista
 
 ### <a name="stubs-of-virtual-classes"></a>Stub di classi virtuali
 
-Negli esempi precedenti gli stub sono stati generati dalle interfacce. È anche possibile generare gli stub da una classe che contiene membri virtuali o astratti. Ad esempio:
+Negli esempi precedenti gli stub sono stati generati dalle interfacce. È anche possibile generare gli stub da una classe che contiene membri virtuali o astratti. Esempio:
 
 ```csharp
 // Base class in application under test

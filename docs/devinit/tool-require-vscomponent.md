@@ -1,6 +1,6 @@
 ---
 title: require-vscomponent
-description: per lo strumento devinit è necessario vscomponent.
+description: Devinit tool require-vscomponent.
 ms.date: 02/08/2021
 ms.topic: reference
 author: andysterland
@@ -11,52 +11,52 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7d6609c49efb9f77c9823ca3f703b8843ddb753e
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 5ba58bfde22ad5d6d9a7a3a2c64d95326a5e33c43adb327285ac6ba73da8390b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672673"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121418014"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo `require-vscomponent` strumento viene usato per importare le configurazioni di Visual Studio in Visual Studio esistente. Per altre informazioni `.vsconfig` , vedere [qui](../install/import-export-installation-configurations.md).
+Lo `require-vscomponent` strumento viene usato per importare Visual Studio configurazioni in Visual Studio. Per altre informazioni, `.vsconfig` [vedere qui](../install/import-export-installation-configurations.md).
 
 ## <a name="usage"></a>Utilizzo
 
-Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
+Se entrambe `input` le proprietà e vengono omesse o vuote, lo strumento seguirà `additionalOptions` il [comportamento](#default-behavior) predefinito descritto di seguito.
 
 | Nome                                     | Tipo   | Obbligatoria | valore                                                                |
 |------------------------------------------|--------|----------|----------------------------------------------------------------------|
-| **Commenti**                             | stringa | No       | Proprietà commenti facoltativi. Non usato.                                |
-| [**input**](#input)                      | stringa | No       | Percorso completo dell'oggetto `.vsconfig` . Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
-| [additionalOptions](#additional-options) | stringa | No       | Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti.     |
+| **Commenti**                             | stringa | No       | Proprietà comments facoltativa. Non usato.                                |
+| [**Input**](#input)                      | stringa | No       | Percorso completo di `.vsconfig` . Per informazioni [dettagliate,](#input) vedere l'input seguente. |
+| [additionalOptions](#additional-options) | stringa | No       | Per [informazioni dettagliate, vedere](#additional-options) Opzioni aggiuntive di seguito.     |
 
 ### <a name="input"></a>Input
 
-La `input` proprietà viene utilizzata per specificare il percorso completo del `.vsconfig` file. Se non è indicato, lo strumento cercherà un `.vsconfig` nella directory corrente e passerà il valore al programma di installazione di Visual Studio.
+La `input` proprietà viene utilizzata per specificare il percorso completo del `.vsconfig` file. Se non indicato, lo strumento cerca un `.vsconfig` oggetto nella directory corrente e passa il valore al Programma di installazione di Visual Studio.
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Altre opzioni di configurazione possono essere passate come valore di `additionalOptions` . 
+È possibile passare opzioni di configurazione aggiuntive come valore di `additionalOptions` . 
 
 | Nome                      | Tipo      | Obbligatoria | valore                                                                                                                                                                                    |
 |---------------------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| --installPath             | stringa    | No       | Percorso di installazione dell'istanza di Visual Studio che si desidera modificare.                                                                                                                       |
+| --installPath             | stringa    | No       | Percorso di installazione dell'Visual Studio che si vuole modificare.                                                                                                                       |
 
-Se non viene specificato alcun percorso di installazione, lo strumento modificherà il meno recente installato in Visual Studio nel computer se sono presenti più istanze nel computer. 
+Se non viene specificato alcun percorso di installazione, lo strumento modificherà il primo Visual Studio installato nel computer se sono presenti più istanze nel computer. 
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello `require-vscomponent` strumento consiste nel cercare un `.vsconfig` file nella directory corrente ed eseguire il programma di installazione di Visual Studio con questi dettagli in modalità non interattiva. `require-vscomponent` supporta solo la modifica di un'installazione esistente di Visual Studio. 
+Il comportamento predefinito dello strumento è cercare un file nella directory corrente ed eseguire il Programma di installazione di Visual Studio con questi `require-vscomponent` dettagli in modalità non `.vsconfig` interattiva. `require-vscomponent`supporta solo la modifica di un'installazione Visual Studio esistente. 
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito è riportato un esempio di come eseguire `require-vscomponent` usando un `.devinit.json` .
+Di seguito è riportato un esempio di come eseguire `require-vscomponent` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path"></a>.devinit.json che importerà le configurazioni di un percorso di file con estensione vsconfig specificato:
+#### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path"></a>.devinit.jsche importerà le configurazioni di un determinato percorso di file con estensione vsconfig:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -70,7 +70,7 @@ Di seguito è riportato un esempio di come eseguire `require-vscomponent` usando
 }
 ```
 
-#### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path-to-the-visual-studio-instance-specified-via-an-install-path"></a>.devinit.json che importerà le configurazioni di un determinato percorso del file con estensione vsconfig nell'istanza di Visual Studio specificata tramite un percorso di installazione:
+#### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path-to-the-visual-studio-instance-specified-via-an-install-path"></a>.devinit.jsin che importerà le configurazioni di un determinato percorso di file con estensione vsconfig nell'istanza Visual Studio specificata tramite un percorso di installazione:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
