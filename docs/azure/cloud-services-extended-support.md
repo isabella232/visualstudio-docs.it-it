@@ -10,16 +10,16 @@ ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: e4b858a8f13ba3cd1ea75fc4c9334677f2dbb1ddfaeb94f4569163843f908b53
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 547c3b6e81ad1df0f0beffec54a25ad7c0b32ed7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121312678"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082439"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio"></a>Creare e distribuire in Servizi cloud (supporto esteso) in Visual Studio
 
-A partire da [Visual Studio 2019 versione 16.9,](https://visualstudio.microsoft.com/vs/)è possibile usare i servizi cloud usando Azure Resource Manager, che semplifica notevolmente e modernizza la manutenzione e la gestione delle risorse di Azure. Questa funzionalità è abilitata da un nuovo servizio di Azure denominato *Servizi cloud (supporto esteso).* È possibile pubblicare un servizio cloud esistente in Servizi cloud (supporto esteso). Per informazioni su questo servizio di Azure, vedere [la documentazione di Servizi cloud (supporto esteso).](/azure/cloud-services-extended-support/overview)
+A partire [da Visual Studio 2019 versione 16.9,](https://visualstudio.microsoft.com/vs/)è possibile usare i servizi cloud usando Azure Resource Manager, che semplifica notevolmente e modernizza la manutenzione e la gestione delle risorse di Azure. Questa funzionalità è abilitata da un nuovo servizio di Azure denominato *Servizi cloud (supporto esteso).* È possibile pubblicare un servizio cloud esistente in Servizi cloud (supporto esteso). Per informazioni su questo servizio di Azure, vedere [la documentazione di Servizi cloud (supporto esteso).](/azure/cloud-services-extended-support/overview)
 
 ## <a name="publish-to-cloud-services-extended-support"></a>Pubblicare in Servizi cloud (supporto esteso)
 
@@ -47,7 +47,7 @@ Prima di pubblicare un servizio cloud di Azure classico in Servizi cloud (suppor
 
    ![Impostazioni comuni](./media/cloud-services-extended-support/publish-settings.png)
 
-1. **Servizio cloud (supporto esteso):** nell'elenco a discesa selezionare un servizio cloud esistente (supporto esteso) oppure selezionare **Crea nuovo** e crearne uno. Il data center visualizzato tra parentesi per ogni servizio cloud (supporto esteso). È consigliabile che la data center locale per il servizio cloud (supporto esteso) sia uguale a quella data center per l'account di archiviazione.
+1. **Servizio cloud (supporto esteso):** nell'elenco a discesa selezionare un servizio cloud esistente (supporto esteso) oppure selezionare **Crea nuovo** e crearne uno. Il data center viene visualizzato tra parentesi per ogni servizio cloud (supporto esteso). È consigliabile che la data center locale per il servizio cloud (supporto esteso) sia uguale alla posizione data center per l'account di archiviazione.
 
    Se si sceglie di creare un nuovo servizio, verrà visualizzata la finestra **di dialogo Crea servizio cloud (supporto esteso).** Specificare la località e il gruppo di risorse da usare per il servizio cloud (supporto esteso).
 

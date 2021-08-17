@@ -64,7 +64,7 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati **nel Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
+    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati **nel Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -80,7 +80,7 @@ Il primo passaggio consiste nel creare **un'Windows forms:**
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** **o Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
 
 3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
 
@@ -123,7 +123,7 @@ Per controlli semplici che supportano il data binding, implementare l'attributo 
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
-In questo passaggio viene **utilizzata la Configurazione guidata origine** dati per creare un'origine dati basata sulla tabella del database di esempio `Customers` Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, [vedere Procedura: Installare database di esempio.](../data-tools/installing-database-systems-tools-and-samples.md)
+In questo passaggio viene **utilizzata la Configurazione guidata origine** dati per creare un'origine dati basata sulla tabella del database di esempio `Customers` Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [Procedura: Installare database di esempio.](../data-tools/installing-database-systems-tools-and-samples.md)
 
 1. Per aprire la **finestra Origini** dati , **scegliere** Mostra origini dati dal menu **Dati**.
 
@@ -181,7 +181,7 @@ A seconda dei requisiti dell'applicazione, dopo la creazione di un controllo che
 
 - Posizionamento dei controlli personalizzati in una libreria di controlli in modo da poterli usare di nuovo in altre applicazioni.
 
-- Creazione di controlli che supportano scenari di associazioni di dati più complessi. Per altre informazioni, vedere Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) che supporti i controlli data binding complessi e Creare un controllo utente Windows Forms che supporti la [ricerca data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
+- Creazione di controlli che supportano scenari di associazioni di dati più complessi. Per altre informazioni, vedere Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) che supporta i controlli data binding complessi e Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)che supporta la ricerca data binding .
 
 ## <a name="see-also"></a>Vedi anche
 

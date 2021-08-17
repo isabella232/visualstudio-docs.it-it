@@ -1,5 +1,5 @@
 ---
-title: Impostare un nome di thread in Codice gestito | Microsoft Docs
+title: Impostare il nome di un thread in Codice gestito | Microsoft Docs
 description: Impostare un nome di thread nel codice gestito durante il debug di app multithreading in Visual Studio. La denominazione dei thread viene usata per tenere traccia dei thread nella finestra Thread.
 ms.custom: SEO-VS-2020
 ms.date: 04/27/2017
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d0ce2bdadd7ea325ef63aa3f561fa949945207295fce0ef69adabad474be6cb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 49bdd28be11057e05eb3157369d637ba5deb782f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379009"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065488"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>Procedura: impostare il nome di un thread in codice gestito
 La denominazione dei thread è possibile in tutte le edizioni di Visual Studio. Tale denominazione è utile per tenere traccia dei thread nella finestra **Thread**.
@@ -80,4 +80,4 @@ End Sub
 
 ## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Procedura: Impostare un nome di thread nel codice nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)
+- [Procedura: Impostare il nome di un thread nel codice nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)

@@ -44,11 +44,11 @@ ms.locfileid: "121350979"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Panoramica degli strumenti XML in Visual Studio
 
-*Extensible Markup Language (XML)* è un linguaggio di markup che fornisce un formato per la descrizione dei dati. XML separa i dati e la relativa presentazione usando fogli di stile associati, ad esempio Extensible Stylesheet Language (XSL) e CSS (Cascading Style Sheets). Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.
+*Extensible Markup Language (XML) è un linguaggio* di markup che fornisce un formato per la descrizione dei dati. XML separa i dati e la relativa presentazione usando fogli di stile associati, ad esempio Extensible Stylesheet Language (XSL) e CSS (Cascading Style Sheets). Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.
 
 ## <a name="xml-editor"></a>Editor XML
 
-[L'editor XML](xml-editor.md) viene usato per modificare i documenti XML. Fornisce il controllo completo della sintassi XML, la convalida dello schema durante la digitazione, la codifica a colori e IntelliSense. Se viene fornita una definizione dello schema o del tipo di documento, essa verrà usata da IntelliSense per elencare gli elementi e gli attributi disponibili.
+[L'editor XML](xml-editor.md) viene utilizzato per modificare i documenti XML. Fornisce il controllo completo della sintassi XML, la convalida dello schema durante la digitazione, la codifica a colori e IntelliSense. Se viene fornita una definizione dello schema o del tipo di documento, essa verrà usata da IntelliSense per elencare gli elementi e gli attributi disponibili.
 
 Le altre funzionalità includono:
 

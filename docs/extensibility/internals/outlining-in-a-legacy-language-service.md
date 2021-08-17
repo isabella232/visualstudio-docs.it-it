@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73b2adbc6dbaab22d5d1888b42db3c0256e31846dcd1633241c6faae7b74a3ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c9a4906b500d7c073f3f17d06e04b656f27be1fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414636"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049792"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Struttura in un servizio di linguaggio legacy
 La struttura consente di comprimere un programma complesso in una panoramica o in una struttura. In C#, ad esempio, tutti i metodi possono essere compressi in una singola riga, visualizzando solo la firma del metodo. Inoltre, le strutture e le classi possono essere compresse per visualizzare solo i nomi delle strutture e delle classi. All'interno di un singolo metodo è possibile comprimere la logica complessa per visualizzare il flusso complessivo visualizzando solo la prima riga di istruzioni, ad esempio `foreach` `if` , e `while` .

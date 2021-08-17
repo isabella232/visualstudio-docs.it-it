@@ -1,6 +1,6 @@
 ---
 description: Questo metodo ottiene un'interfaccia per il server su cui si trova la porta.
-title: 'IDebugDefaultPort2:: GetServer | Microsoft Docs'
+title: Interfaccia IDebugDefaultPort2::GetServer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: cacb4b74-0f39-471c-af38-54b73f5b2868
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e26356b01a04d736f9131c2762c897b6ce258997
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f841379db4154c424b59ce9223f374243d53288c9d3e3a5cb3d35e5cbba05415
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077460"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417535"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 Questo metodo ottiene un'interfaccia per il server su cui si trova la porta.
@@ -42,7 +43,7 @@ int GetServer(
 
 ## <a name="parameters"></a>Parametri
 `ppServer`\
-out Restituisce un oggetto che implementa l'interfaccia [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) .
+[out] Restituisce un oggetto che implementa [l'interfaccia IDebugCoreServer3.](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

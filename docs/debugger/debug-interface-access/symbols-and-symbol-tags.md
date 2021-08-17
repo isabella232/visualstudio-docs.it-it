@@ -14,19 +14,19 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cbb8592a9597c81c6ef83c952e4f0572a776339eaa1c039574beb34209e7dc7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f3b6e176a2a3fec7bb3e6a98e80cf23e4de353c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379625"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065868"
 ---
 # <a name="symbols-and-symbol-tags"></a>Simboli e relativi tag
 Le informazioni di debug su un programma compilato vengono archiviate nel file di database di programma (con estensione pdb) come simboli accessibili tramite le API DIA (Debug Interface Access) SDK. Tutti i simboli hanno [una proprietà IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) [e una proprietà IDiaSymbol::get_symIndexId.](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) La `symTag` proprietà indica il tipo di simbolo definito dall'enumerazione [SymTagEnum.](../../debugger/debug-interface-access/symtagenum.md) La `symIndexId` proprietà è un valore che contiene `DWORD` l'identificatore univoco per ogni istanza di un simbolo.
 
- I simboli hanno anche proprietà che possono specificare informazioni aggiuntive sul simbolo, nonché riferimenti ad altri simboli, in genere un [oggetto IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) o [IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Quando si esegue una query su una proprietà che contiene un riferimento, il riferimento viene restituito come [oggetto IDiaSymbol.](../../debugger/debug-interface-access/idiasymbol.md) Tali proprietà vengono sempre associate a un'altra proprietà con lo stesso nome ma con suffisso "Id", ad esempio [IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) e [IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Le tabelle in [Posizioni simboli](../../debugger/debug-interface-access/symbol-locations.md), [Gerarchia lessicale](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)dei tipi di simboli e Gerarchia di classi dei tipi di simboli delineano le proprietà per ognuno dei diversi tipi di simboli. [](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) Queste proprietà possono contenere informazioni rilevanti su o riferimenti ad altri simboli. Poiché le proprietà sono semplicemente identificatori ordinali numerici delle relative proprietà `*Id` correlate, vengono omesse da altre discussioni. Vengono indicati solo dove necessario per il chiarimento dei parametri.
+ I simboli hanno anche proprietà che possono specificare informazioni aggiuntive sul simbolo, nonché riferimenti ad altri simboli, in genere [IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) o [IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Quando si esegue una query su una proprietà che contiene un riferimento, il riferimento viene restituito come [oggetto IDiaSymbol.](../../debugger/debug-interface-access/idiasymbol.md) Tali proprietà vengono sempre associate a un'altra proprietà con lo stesso nome, ma con suffisso "Id", ad esempio [IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) e [IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Le tabelle in [Posizioni simboli](../../debugger/debug-interface-access/symbol-locations.md), [Gerarchia lessicale](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)dei tipi di simboli e Gerarchia di classi dei tipi di [simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) delineano le proprietà per ognuno dei diversi tipi di simboli. Queste proprietà possono contenere informazioni rilevanti su o riferimenti ad altri simboli. Poiché le proprietà sono semplicemente identificatori ordinali numerici delle relative proprietà `*Id` correlate, vengono omesse da altre discussioni. Vengono indicati solo dove necessario per il chiarimento dei parametri.
 
- Quando si tenta di accedere alla proprietà , se non si verifica alcun errore e alla proprietà del simbolo è stato assegnato un valore, il metodo "get" della proprietà restituisce `S_OK` . Il valore restituito `S_FALSE` indica che la proprietà non è valida per il simbolo corrente.
+ Quando si tenta di accedere alla proprietà, se non si verifica alcun errore e alla proprietà del simbolo è stato assegnato un valore, il metodo "get" della proprietà restituisce `S_OK` . Il valore restituito `S_FALSE` di indica che la proprietà non è valida per il simbolo corrente.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -40,7 +40,7 @@ Descrive i tipi di simboli che formano gerarchie lessicali, ad esempio file, mod
 
 [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 
-Descrive i tipi di simboli che corrispondono a diversi elementi del linguaggio, ad esempio classi, matrici e tipi restituiti di funzione.
+Descrive i tipi di simboli che corrispondono a diversi elementi del linguaggio, ad esempio classi, matrici e tipi restituiti di funzioni.
 
 ## <a name="see-also"></a>Vedi anche
 

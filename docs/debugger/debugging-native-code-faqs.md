@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a352245343de4124a78193f005c3bd9fbe12a456dc7f8e55517eab9a42fd99a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d195a89936254706f3a9b3bd065a1916cce23cf6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097441"
 ---
 # <a name="debugging-native-code-faqs"></a>Domande frequenti sul debug del codice nativo
 Nei seguenti argomenti sono disponibili le risposte ad alcune domande frequenti:

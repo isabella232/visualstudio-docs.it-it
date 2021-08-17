@@ -1,5 +1,5 @@
 ---
-description: Recupera una matrice di valori di identificatore di tipo specifici del compilatore per questo simbolo.
+description: Recupera una matrice di valori di identificatori di tipo specifici del compilatore per questo simbolo.
 title: IDiaSymbol::get_typeIds | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b3e3cd29c1cb00cfa2c01f1061487ed6a75852e4c771656efa2cf3ae94d150f7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0324891d5819ea850d1a4cd21464778a93ea78ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391648"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036047"
 ---
 # <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
-Recupera una matrice di valori di identificatore di tipo specifici del compilatore per questo simbolo.
+Recupera una matrice di valori di identificatori di tipo specifici del compilatore per questo simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,11 +37,11 @@ HRESULT get_typeIds (
 #### <a name="parameters"></a>Parametri
  `cTypeIds`
 
-[in] Dimensioni del buffer per contenere i dati.
+[in] Dimensione del buffer in cui contenere i dati.
 
  `pcTypeIds`
 
-[out] Restituisce il numero di identificatori di tipo scritti `typeIds` oppure, `typeIds` se è , il numero totale di identificatori di tipo `NULL` disponibili.
+[out] Restituisce il numero di identificatori di tipo scritti oppure, se `typeIds` è , il numero totale di identificatori di tipo `typeIds` `NULL` disponibili.
 
  `typeIds[]`
 
@@ -51,7 +51,7 @@ HRESULT get_typeIds (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

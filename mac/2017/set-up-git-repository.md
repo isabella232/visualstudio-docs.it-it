@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef846c09d609d4a7df2663f1077ba45087154ae4f98521cacd87948639e4fc87
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238556"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121350813"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -55,7 +55,7 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 
 3. Scegliere la scheda **Repository registrati** e premere i pulsante **Aggiungi**:
 
-    ![La scheda repository registrati della finestra di dialogo Seleziona repository contiene i pulsanti Aggiungi, Rimuovi e modifica e le caselle per il nome e il messaggio del modulo.](media/version-control-git5.png)
+    ![La scheda Repository registrati della finestra di dialogo Seleziona repository contiene i pulsanti Aggiungi, Rimuovi e Modifica e le caselle Nome modulo e Messaggio.](media/version-control-git5.png)
 
 4. Inserire il nome del repository che si desidera visualizzare localmente e incollare l'URL del passaggio 3. La finestra di dialogo Configurazione repository sarà analoga alla seguente. Premere OK:
 
@@ -132,7 +132,7 @@ Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHu
 
 È probabile che sarà necessario usare un repository di GitHub che esiste solo in remoto e non nel computer locale. Visual Studio per Mac consente di estrarre rapidamente il repository. Seguire questa procedura per clonarlo nel computer in uso:
 
-1. Nella barra dei menu selezionare **controllo della versione > Estrai**:
+1. Nella barra dei menu selezionare Controllo **della versione > estrazione:**
 
 2. Verrà visualizzata la scheda **Connetti al repository**:
 
@@ -142,7 +142,7 @@ Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHu
 
     ![URL di GitHub visualizzato](media/version-control-git14.png)
 
-4. Sostituire tutto il testo nel campo immissione **URL** nella scheda **Connetti al repository** . In questo modo, la maggior parte degli altri campi in questa scheda viene popolata, come illustrato nell'immagine nel passaggio #2.
+4. Sostituire tutto il testo nel campo **di immissione dell'URL** nella **Connessione alla scheda** Repository. La maggior parte degli altri campi in questa scheda verrà popolata automaticamente, come illustrato nell'immagine nel passaggio #2.
 
 5. Immettere la directory in cui si vuole clonare il repository e premere **Estrai**.
 
@@ -163,6 +163,6 @@ Se si verificano problemi con l'inizializzazione del progetto con un repository 
 1. Andare al menu Controllo della versione e scegliere **Pubblica nel Controllo della versione**.
 1. Seguire la procedura dell'esercitazione precedente partendo dal passaggio 6.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Controllo della versione in Visual Studio (in Windows)](/visualstudio/version-control/)

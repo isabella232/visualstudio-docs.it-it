@@ -1,6 +1,6 @@
 ---
 title: Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
-description: Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto per il debug in modalità mista di processi x64. Per le soluzioni alternative, vedere questo articolo.
+description: Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto per il debug in modalità mista di processi x64. Vedere questo articolo per le soluzioni alternative.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 01299107e9260272044548323e84cab1f78e6867438293bde9e315458a2bd369
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5a4d09ea1850d825fd24d1af395a4b4d2a7d7e0f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343689"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065267"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
 Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto per il debug in modalità mista di processi x64. Ciò significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.
@@ -58,7 +58,7 @@ Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto pe
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 
-- Vedere [Configurazione del SQL debug.](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
+- Vedere [Configurazione del SQL debug](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)

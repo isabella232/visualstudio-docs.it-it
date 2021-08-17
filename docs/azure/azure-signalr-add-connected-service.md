@@ -9,24 +9,24 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b97e97063c32e2cb97a1ef65c7d631f7a93200d774a6936f10dfdbd3627a6c96
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d2f90c7b1a5b389243bf91ff46aa6892689bf17c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121312821"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082465"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Aggiungere Azure SignalR usando Visual Studio Servizi connessi
 
-Con Visual Studio, è possibile connettere uno degli elementi seguenti al servizio Azure SignalR usando la Servizi connessi **funzionalità:**
+Con Visual Studio, è possibile connettere uno degli elementi seguenti al servizio Azure SignalR usando la **Servizi connessi** seguente:
 
 - .NET Framework app console
 - ASP.NET MVC (.NET Framework) 
 - ASP.NET Core
-- .NET Core (tra cui app console, WPF, Windows Form, libreria di classi)
+- .NET Core (inclusi app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App Windows Universal Platform
+- App della Windows universali
 - Xamarin
 - Cordova
 
@@ -37,23 +37,23 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 ## <a name="prerequisites"></a>Prerequisiti
 
 - Visual Studio con il carico di lavoro di Azure installato.
-- Progetto di uno dei tipi supportati
+- Un progetto di uno dei tipi supportati
 
 ## <a name="connect-to-azure-signalr-using-connected-services"></a>Connessione ad Azure SignalR usando Servizi connessi
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro **del** mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro **del mouse sul** nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
 
 1. Nella scheda **Servizi connessi** selezionare l'icona + per **Dipendenze servizio**.
 
     ![Aggiungere una dipendenza del servizio](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. Nella pagina **Aggiungi dipendenza** selezionare Servizio Azure SignalR **.**
+1. Nella pagina **Aggiungi dipendenza** selezionare **Servizio Azure SignalR**.
 
     ![Aggiungere Servizio Azure SignalR](./media/azure-signalr-add-connected-service/add-signalr-service.png)
 
-    Se non è già stato eseguito l'accesso, accedere all'account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/account/free)
+    Se non è già stato eseguito l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/account/free)
 
 1. Nella schermata **Configura Azure SignalR** selezionare un componente Azure SignalR esistente e selezionare **Avanti.**
 
@@ -63,23 +63,23 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Per creare un'istanza del servizio Azure SignalR:
 
-   1. Selezionare **Crea una nuova Servizio Azure SignalR istanza nella** parte inferiore della schermata.
+   1. Selezionare **Crea una nuova Servizio Azure SignalR istanza** nella parte inferiore della schermata.
 
-   1. Compilare la **Servizio Azure SignalR: Crea nuova** schermata e selezionare **Crea**.
+   1. Compilare la **Servizio Azure SignalR: Crea nuova** schermata e selezionare **Crea.**
 
        ![Nuova Servizio Azure SignalR istanza](./media/azure-signalr-add-connected-service/create-new-signalr.png)
 
-   1. Quando viene **visualizzata la schermata Configura** Servizio Azure SignalR, la nuova istanza viene visualizzata nell'elenco. Selezionare la nuova istanza nell'elenco e selezionare **Avanti.**
+   1. Quando viene **visualizzata la Servizio Azure SignalR** configurazione, la nuova istanza viene visualizzata nell'elenco. Selezionare la nuova istanza nell'elenco e selezionare **Avanti.**
 
-1. Immettere un nome di stringa di connessione o scegliere l'impostazione predefinita e scegliere se archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
+1. Immettere un nome per la stringa di connessione o scegliere il valore predefinito e scegliere se archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
 
    ![Specificare la stringa di connessione](./media/azure-signalr-add-connected-service/connection-string.png)
 
-1. La **schermata Riepilogo delle** modifiche mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sembrano OK, scegliere **Fine**.
+1. La **schermata Riepilogo delle** modifiche mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sono ok, scegliere **Fine.**
 
    ![Riepilogo delle modifiche](./media/azure-signalr-add-connected-service/summary-of-changes.png)
 
-1. La connessione viene visualizzata nella **sezione Dipendenze** servizio della **scheda** Servizi connessi connessione.
+1. La connessione viene visualizzata nella **sezione Dipendenze servizio** della **scheda Servizi connessi** servizio.
 
    ![Dipendenze dei servizi](./media/azure-signalr-add-connected-service/service-dependencies-after.png)
 

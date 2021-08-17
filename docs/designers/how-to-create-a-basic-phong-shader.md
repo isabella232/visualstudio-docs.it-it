@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare uno shader con phong di base'
-description: Informazioni su come usare La finestra di progettazione shader e il linguaggio Graph shader per creare uno shader di illuminazione che implementa il modello di illuminazione Phong classico.
+description: Informazioni su come usare la finestra di progettazione shader e il Graph shader diretto per creare uno shader di illuminazione che implementa il modello di illuminazione Phong classico.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: b04f8b9188d982f12f6de2be13751644116a77eff5a72a1170f3808b2e8250eb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a14e3739e7f869222bd16a1a5764c562ad07c977
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435206"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035553"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 
@@ -49,7 +49,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
 ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-lighting-graph.png)
 
-Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione Anteprima degli shader in [Progettazione shader](../designers/shader-designer.md)
+Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione Anteprima degli shader nella finestra [di progettazione shader](../designers/shader-designer.md)
 
 La figura seguente illustra lo shader descritto in questo documento applicato a un modello 3D. La proprietà **MaterialSpecular** è impostata su (1.00, 0.50, 0.20, 0.00) e la proprietà **MaterialSpecularPower** è impostata su 16.
 

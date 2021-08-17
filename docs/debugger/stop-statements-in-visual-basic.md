@@ -1,6 +1,6 @@
 ---
 title: Istruzioni Stop in Visual Basic | Microsoft Docs
-description: Esaminare l Visual Basic'istruzione Stop, che offre un'alternativa a livello di codice all'impostazione di un punto di interruzione Visual Studio.
+description: Esaminare l'Visual Basic Stop, che offre un'alternativa a livello di codice all'impostazione di un punto di interruzione in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f572626fd64359dd16e95fefc1d282af9e81a5e183e3e85c62ac41a62510fd0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 624f7f586e9051edfee4d16d8706df22de64fda4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096895"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Istruzioni Stop in Visual Basic
 
@@ -35,7 +35,7 @@ Per impostare o rimuovere un'istruzione Stop, è necessario modificare il codice
 
 A differenza di un'istruzione End, l'istruzione Stop non reimposta le variabili né consente di tornare alla modalità di progettazione. Per continuare l'esecuzione dell'applicazione, scegliere Continua dal menu Debug.
 
-Quando si esegue un'applicazione Visual Basic al di fuori del debugger, un'istruzione Stop avvia il debugger se è abilitato il debug JIT. Se il debug JIT non è abilitato, l'istruzione Stop si comporta come se fosse un'istruzione End e termina l'esecuzione. Poiché non si verificherà alcun evento QueryUnload o Unload, sarà necessario rimuovere tutte le istruzioni Stop dalla versione di rilascio dell'applicazione Visual Basic. Per altre informazioni, vedere [Debug JIT](just-in-time-debugging-in-visual-studio.md).
+Quando si esegue un'Visual Basic all'esterno del debugger, un'istruzione Stop avvia il debugger se è abilitato il debug JIT. Se il debug JIT non è abilitato, l'istruzione Stop si comporta come se fosse un'istruzione End e termina l'esecuzione. Poiché non si verificherà alcun evento QueryUnload o Unload, sarà necessario rimuovere tutte le istruzioni Stop dalla versione di rilascio dell'applicazione Visual Basic. Per altre informazioni, vedere [Debug JIT](just-in-time-debugging-in-visual-studio.md).
 
  Per evitare di dover rimuovere le istruzioni Stop, è possibile utilizzare la compilazione condizionale:
 
@@ -47,7 +47,7 @@ Quando si esegue un'applicazione Visual Basic al di fuori del debugger, un'istru
 #End If
 ```
 
-Un'altra alternativa consiste nell'usare <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> un'istruzione anziché l'istruzione Stop. <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>Un'istruzione interrompe l'esecuzione solo quando non viene soddisfatta una condizione specificata. <xref:System.Diagnostics.Debug.Assert%2A> Le istruzioni vengono rimosse automaticamente quando si compila una versione di versione. Per altre informazioni, vedere [Asserzioni nel codice gestito](assertions-in-managed-code.md). Se si vuole <xref:System.Diagnostics.Debug.Assert%2A> un'istruzione che interrompe sempre l'esecuzione nella versione di debug, è possibile eseguire questa operazione:
+Un'altra alternativa consiste nell'usare <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> un'istruzione anziché l'istruzione Stop. <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>Un'istruzione interrompe l'esecuzione solo quando non viene soddisfatta una condizione specificata. <xref:System.Diagnostics.Debug.Assert%2A> Le istruzioni vengono rimosse automaticamente quando si compila una versione di rilascio. Per altre informazioni, vedere [Asserzioni nel codice gestito.](assertions-in-managed-code.md) Se si vuole <xref:System.Diagnostics.Debug.Assert%2A> un'istruzione che interrompe sempre l'esecuzione nella versione di debug, è possibile eseguire questa operazione:
 
 ```csharp
 Debug.Assert(false);

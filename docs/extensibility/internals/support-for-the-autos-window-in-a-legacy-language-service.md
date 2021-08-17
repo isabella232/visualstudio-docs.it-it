@@ -1,6 +1,6 @@
 ---
-title: Supportare la finestra auto in un servizio di linguaggio legacy
-description: Informazioni su come implementare il supporto per la finestra auto, che visualizza le espressioni che si trovano nell'ambito quando il programma di cui è in corso il debug è in pausa.
+title: Supportare la finestra Auto in un servizio di linguaggio legacy
+description: Informazioni su come implementare il supporto per la finestra Auto, che visualizza le espressioni che sono nell'ambito quando il programma in fase di debug viene sospeso.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,31 +11,32 @@ ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70a8697027cde07ca2b30d01a73a80d771155c5c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6806f4ce6cbdc02ac716c5567af4ce2e6829e69dadd17cd7ff2c1631aee6b00a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080632"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432021"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Supporto per la finestra auto in un servizio di linguaggio legacy
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Supporto per la finestra Auto in un servizio di linguaggio legacy
 
-Nella finestra **auto** vengono visualizzate espressioni come variabili e parametri nell'ambito quando il programma di cui è in corso il debug viene sospeso (a causa di un punto di interruzione o di un'eccezione). Le espressioni possono includere variabili, locali o globali e parametri modificati nell'ambito locale. La finestra **auto** può includere anche le creazioni di istanze di una classe, di una struttura o di un altro tipo. Qualsiasi elemento che può essere valutato da un analizzatore di espressioni può essere potenzialmente visualizzato nella finestra **auto** .
+Nella **finestra Auto vengono** visualizzate espressioni quali variabili e parametri che sono nell'ambito quando il programma in fase di debug viene sospeso (a causa di un punto di interruzione o di un'eccezione). Le espressioni possono includere variabili, locali o globali e parametri che sono stati modificati nell'ambito locale. La **finestra Auto può** includere anche istanze di una classe, di una struttura o di un altro tipo. Tutto ciò che un analizzatore di espressioni può valutare può essere visualizzato potenzialmente nella **finestra Auto.**
 
- Il Framework di pacchetto gestito (MPF) non fornisce il supporto diretto per la finestra **auto** . Tuttavia, se si esegue l'override del <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodo, è possibile restituire un elenco di espressioni da presentare nella finestra **auto** .
+ Il framework del pacchetto gestito (MPF) non fornisce supporto diretto per la **finestra Auto.** Tuttavia, se si esegue l'override del metodo , è possibile restituire un elenco di espressioni <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> da presentare nella finestra **Auto.**
 
-## <a name="implementing-support-for-the-autos-window"></a>Implementazione del supporto per la finestra auto
+## <a name="implementing-support-for-the-autos-window"></a>Implementazione del supporto per la finestra Auto
 
- Per supportare la finestra **auto** è sufficiente implementare il <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodo nella <xref:Microsoft.VisualStudio.Package.LanguageService> classe. L'implementazione deve decidere, data una posizione nel file di origine, in cui le espressioni devono essere visualizzate nella finestra **auto** . Il metodo restituisce un elenco di stringhe in cui ogni stringa rappresenta una singola espressione. Un valore restituito di <xref:Microsoft.VisualStudio.VSConstants.S_OK> indica che l'elenco contiene espressioni, mentre <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> indica che non sono presenti espressioni da visualizzare.
+ Per supportare la finestra **Auto è** necessario solo implementare il metodo nella classe <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> . L'implementazione deve decidere, dato un percorso nel file di origine, quali espressioni devono essere visualizzate **nella finestra Auto.** Il metodo restituisce un elenco di stringhe in cui ogni stringa rappresenta una singola espressione. Il valore restituito indica che l'elenco contiene espressioni, mentre indica che <xref:Microsoft.VisualStudio.VSConstants.S_OK> non sono presenti espressioni da <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> visualizzare.
 
- Le espressioni effettive restituite sono i nomi delle variabili o dei parametri visualizzati in tale posizione nel codice. Questi nomi vengono passati all'analizzatore di espressioni per ottenere i valori e i tipi che vengono quindi visualizzati nella finestra **auto** .
+ Le espressioni effettive restituite sono i nomi delle variabili o dei parametri visualizzati in tale posizione nel codice. Questi nomi vengono passati all'analizzatore di espressioni per ottenere i valori e i tipi che vengono quindi visualizzati nella **finestra Auto.**
 
 ### <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrata un'implementazione del <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodo che ottiene un elenco di espressioni dal <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo utilizzando il motivo dell'analisi <xref:Microsoft.VisualStudio.Package.ParseReason> . Ogni espressione viene racchiusa come oggetto `TestVsEnumBSTR` che implementa l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> interfaccia.
+ Nell'esempio seguente viene illustrata un'implementazione del <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodo che ottiene un elenco di espressioni dal metodo usando il motivo di analisi <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.ParseReason> . Per ogni espressione viene eseguito il wrapping come oggetto `TestVsEnumBSTR` che implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> l'interfaccia .
 
- Si noti che `GetAutoExpressionsCount` i `GetAutoExpression` metodi e sono metodi personalizzati per l' `TestAuthoringSink` oggetto e sono stati aggiunti per supportare questo esempio. Rappresentano un modo in cui è possibile accedere alle espressioni aggiunte all' `TestAuthoringSink` oggetto dal parser (chiamando il <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> metodo) all'esterno del parser.
+ Si noti che `GetAutoExpressionsCount` i metodi e sono metodi personalizzati `GetAutoExpression` `TestAuthoringSink` nell'oggetto e sono stati aggiunti per supportare questo esempio. Rappresentano un modo in cui le espressioni aggiunte all'oggetto dal parser (chiamando il metodo ) possono essere accessibili `TestAuthoringSink` <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> all'esterno del parser.
 
 ```csharp
 using Microsoft.VisualStudio;

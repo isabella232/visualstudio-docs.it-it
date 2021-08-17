@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3753f1bce7debe28f33f0c44059b0044d92ef2eadf11ca78215648065450907
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c110bf1f5dade488a0e657ce55d2240a65033085
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378283"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035371"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Aggiungere un comando alla barra degli strumenti Esplora soluzioni comandi
 Questa procedura dettagliata illustra come aggiungere un pulsante alla barra Esplora soluzioni **barra** degli strumenti.

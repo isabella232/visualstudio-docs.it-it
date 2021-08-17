@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5c3f2c7baf51c4d8db70c9e7707bc3abba593ae4642536aab863b4da377e3e3e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d982a6d1430728f38377e1e43c4d7ff396493693
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366030"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082868"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office non è installato nel computer
   Visual Studio non riesce a trovare l'applicazione Microsoft Office che corrisponde al tipo di progetto. Se si sviluppa un progetto VSTO componente aggiuntivo, significa che non è possibile eseguire il debug o l'esecuzione del progetto. Se si sta provando a creare un progetto a livello di documento, non è possibile creare il progetto.

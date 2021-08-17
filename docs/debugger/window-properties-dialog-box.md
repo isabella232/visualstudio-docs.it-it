@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Proprietà finestra | Microsoft Docs
-description: Informazioni su come visualizzare le proprietà per una finestra elencata in Windows visualizzazione. Questo articolo contiene collegamenti ad altri articoli che documentano le proprietà.
+description: Informazioni su come visualizzare le proprietà per una finestra elencata Windows visualizzazione. Questo articolo contiene collegamenti ad altri articoli che documentano le proprietà.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,15 +13,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e4f448d7e98cbf8fd9594f9273c3907807b4e939985a6e962353ea7bdbc508
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 234b46288d32689ae868af78cf3a72b183516818
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239532"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035865"
 ---
 # <a name="window-properties-dialog-box"></a>Proprietà finestra (finestra di dialogo)
-Usare questa finestra di dialogo per altre informazioni su una finestra specifica. Per visualizzare questa finestra di dialogo, spostare lo stato attivo [Windows finestra Visualizza.](../debugger/windows-view.md) Selezionare qualsiasi nodo della finestra nell'albero, quindi **scegliere Proprietà** **dal** menu Visualizza.
+Usare questa finestra di dialogo per altre informazioni su una finestra specifica. Per visualizzare questa finestra di dialogo, spostare lo stato attivo [sulla Windows visualizza.](../debugger/windows-view.md) Selezionare qualsiasi nodo della finestra nell'albero, **quindi scegliere Proprietà** dal menu Visualizza. 
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Scheda Generale. Finestra di dialogo Proprietà finestra](../debugger/general-tab-window-properties-dialog-box.md) Visualizza informazioni sulla finestra selezionata.
@@ -35,15 +35,15 @@ Usare questa finestra di dialogo per altre informazioni su una finestra specific
  [Scheda Processo. Finestra di dialogo Proprietà finestra](../debugger/process-tab-window-properties-dialog-box.md) Identifica il processo della finestra selezionata.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Finestra di dialogo Cerca](../debugger/window-search-dialog-box.md) Usato per trovare il nodo per una finestra specifica nella Windows visualizzazione.
+ [Finestra di dialogo Ricerca finestre](../debugger/window-search-dialog-box.md) Usato per trovare il nodo per una finestra specifica in Windows visualizzazione.
 
  [Informazioni di riferimento su Spy++](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy++.
 
- [Uso dello strumento Di ricerca](../debugger/how-to-use-the-finder-tool.md) Mostra come questo strumento analizza le finestre per le proprietà o i messaggi.
+ [Uso dello strumento Finder](../debugger/how-to-use-the-finder-tool.md) Mostra in che modo questo strumento analizza le finestre per cercare proprietà o messaggi.
 
- [Ricerca di una finestra nella Windows predefinita](../debugger/how-to-search-for-a-window-in-windows-view.md) Viene illustrato come trovare una finestra specifica nella Windows visualizzazione.
+ [Ricerca di una finestra nella Windows predefinita](../debugger/how-to-search-for-a-window-in-windows-view.md) Viene illustrato come trovare una finestra specifica in Windows visualizzazione.
 
- [Windows visualizzazione](../debugger/windows-view.md) Visualizza una visualizzazione albero delle finestre e dei controlli disponibili.
+ [Windows dati](../debugger/windows-view.md) Visualizza una visualizzazione albero delle finestre e dei controlli disponibili.
 
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md) Illustra le visualizzazioni albero di Spy++ di finestre, messaggi, processi e thread.
 

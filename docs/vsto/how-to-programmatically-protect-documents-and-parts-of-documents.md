@@ -61,7 +61,7 @@ ms.locfileid: "121366225"
 ### <a name="compile-the-code"></a>Compilare il codice
  Per usare questi esempi di codice, eseguirli dalla classe `ThisDocument` nel progetto. Questi esempi di codice presuppongono che nel documento in cui appare questo codice sia disponibile il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> esistente denominato `Bookmark1` .
 
-## <a name="protect-a-document-by-using-a-vsto-add-in"></a>Proteggere un documento usando un VSTO componente aggiuntivo
+## <a name="protect-a-document-by-using-a-vsto-add-in"></a>Proteggere un documento usando un VSTO aggiuntivo
 
 ### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>Per proteggere un documento usando un componente aggiuntivo VSTO a livello di applicazione
 
@@ -74,7 +74,7 @@ ms.locfileid: "121366225"
 
 ## <a name="see-also"></a>Vedi anche
 - [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
-- [Protezione con password per Office documenti](../vsto/password-protection-on-office-documents.md)
+- [Protezione con password Office documenti](../vsto/password-protection-on-office-documents.md)
 - [Procedura: Consentire l'esecuzione di codice dietro documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [Procedura: Aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)

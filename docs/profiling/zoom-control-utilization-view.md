@@ -1,6 +1,6 @@
 ---
 title: Controllo zoom (visualizzazione Utilizzo) | Microsoft Docs
-description: Informazioni sul modo in cui il controllo zoom consente di ingrandire il grafico di utilizzo della CPU per concentrarsi sulle aree di particolare interesse.
+description: Informazioni su come il controllo dello zoom consente di ingrandire il grafico di utilizzo della CPU per concentrarsi sulle aree di particolare interesse.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 8aeff804-0183-4588-8218-52e107a5382e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b3e2bda0a6ed746c5e518b046b2165f0aff2e38b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de198380ece1244d92cfe93f5ad859826b8a0eba2bcf7683a79d40b0f41b604
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915906"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121426183"
 ---
 # <a name="zoom-control-utilization-view"></a>Controllo zoom (visualizzazione Utilizzo)
 Il controllo zoom consente di ingrandire il grafico Utilizzo CPU, in modo da potersi concentrare sulle aree di particolare interesse. Questo controllo esegue uno zoom avanti al centro della visualizzazione. È pertanto consigliabile centrare l'area di interesse prima di procedere.
@@ -26,4 +27,4 @@ Il controllo zoom consente di ingrandire il grafico Utilizzo CPU, in modo da pot
  È possibile trascinare il puntatore del mouse nel grafico Utilizzo CPU o nel grafico Attività GPU per creare un'area evidenziata. Quando si rilascia il pulsante del mouse, la visualizzazione viene ingrandita sull'intervallo selezionato.
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione utilizzo](../profiling/utilization-view.md)
+- [Visualizzazione Utilizzo](../profiling/utilization-view.md)

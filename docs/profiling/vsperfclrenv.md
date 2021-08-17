@@ -1,6 +1,6 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
-description: Informazioni sul modo in cui lo strumento VSPerfCLREnv viene usato per impostare le variabili di ambiente necessarie per la profilatura di un'applicazione .NET Framework.
+description: Informazioni su come viene usato lo strumento VSPerfCLREnv per impostare le variabili di ambiente necessarie per profilare un'.NET Framework applicazione.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db8e45efbe732c69dedcce8b3c1b14463a0a0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7c9edcb96b8fa1383abc6e00bc1573cf0dc112afc14abb8465c469d2c7153db
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911491"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121353955"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 

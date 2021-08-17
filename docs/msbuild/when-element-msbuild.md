@@ -1,6 +1,6 @@
 ---
 title: Elemento When (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento MSBuild when, che specifica un possibile blocco di codice per l'elemento Choose da selezionare.
+description: Informazioni sull'MSBuild elemento When, che specifica un possibile blocco di codice per l'elemento Choose da selezionare.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d96eacc0fbc88a3fcf082493e064a77c5c403a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18ef6ce51e0518412067d2e8171a3f86c9f6927a959164ef3d197babc7e4fdff
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933817"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427470"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 
@@ -56,7 +57,7 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Attributo obbligatorio.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
+|Condition|Attributo obbligatorio.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -70,7 +71,7 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|
+|[Scegliere l'elemento (MSBuild)](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|
 
 ## <a name="remarks"></a>Commenti
 
@@ -130,4 +131,4 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 ## <a name="see-also"></a>Vedi anche
 
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)

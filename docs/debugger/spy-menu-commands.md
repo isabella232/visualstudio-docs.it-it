@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a1ee554206904c5f432fb6cc44a5496776a666baabcc7339fa63ad32e6033b15
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5786ac9ad94de46c9dfebffc862730f8fb63c646
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404270"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096869"
 ---
 # <a name="spy-menu-commands"></a>Spy (comandi di menu)
 Il menu **Spy** fornisce comandi per lavorare con le visualizzazioni e Windows Spy++.

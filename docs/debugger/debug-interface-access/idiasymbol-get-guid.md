@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f08b0b6128a014f59c42ed8146b96912c2e7da0eb27a4cbb6e35e2e3655b241b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c06ed62ad6820ea44bd1259edcac738020361129
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097692"
 ---
 # <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
 Recupera l'identificatore univoco globale (GUID) del simbolo.
@@ -38,10 +38,10 @@ HRESULT get_guid (
 [out] Restituisce il GUID del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o codice `S_FALSE` di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 

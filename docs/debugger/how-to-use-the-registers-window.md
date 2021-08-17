@@ -23,21 +23,22 @@ ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e2648f74453f51cd8d655ccb0c2344eb1030c1ed
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9ab893453cb0f0603ded5220c45268dc5f0ad058
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385396"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097103"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizzare i valori dei registri nella finestra Registri (C#, C++, Visual Basic, F#)
 
 La **finestra Registri visualizza** il contenuto del registro durante Visual Studio debug. Per un'introduzione generale ai concetti alla base di registri e i **registra** finestra, vedere [nozioni fondamentali di debug: Finestra Registri](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
-> Le informazioni di registrazione non sono disponibili per le app script o SQL.
+> Le informazioni di registrazione non sono disponibili per le app SQL script.
 
 Durante il debug, i valori di registrazione cambiano quando il codice viene eseguito nell'app. I valori modificati di recente vengono visualizzati in rosso nella **finestra** Registri.
 
@@ -49,12 +50,12 @@ Per informazioni sui flag visualizzati nella finestra **Registri,** vedere [Info
 
 **Per aprire la finestra Registri**
 
-1. Abilitare il debug a livello di indirizzo selezionando Abilita debug a livello di indirizzo **in** Strumenti **(o** Debug **)**> **Opzioni**  >  **di debug**.
+1. Abilitare il debug a livello di indirizzo selezionando Abilita debug **a** livello di indirizzo **in** Strumenti (o **Debug**) > **Opzioni**  >  **debug**.
 
-1. Durante l'esecuzione del debug o in corrispondenza di un punto di interruzione, selezionare **Debug**  >  **registri Windows** oppure premere  >   **ALT** + **5.**
+1. Durante l'esecuzione del debug o in corrispondenza di un punto di interruzione,  >  **selezionare Debug Windows**  >  **Registra** oppure premere **ALT** + **5.**
 
 >[!NOTE]
->Le finestre di dialogo e i comandi di menu possono variare a seconda dell Visual Studio o delle impostazioni. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal **menu** Visual Studio Strumenti. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+>Le finestre di dialogo e i comandi di menu possono variare a seconda dell Visual Studio o delle impostazioni. Per modificare le impostazioni, scegliere **Importa/Esporta Impostazioni** dal **menu** Visual Studio Strumenti. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ### <a name="see-also"></a>Vedi anche
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aprire Project-Specific editor | Microsoft Docs'
+title: 'Procedura: Aprire Project-Specific Editor | Microsoft Docs'
 description: Informazioni su come implementare il metodo OpenItem con un editor specifico del progetto in modo che un progetto possa aprire un file associato a un editor per tale progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,17 +15,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b87074f6f1401f4e81bd457ae2d3c29169c1801b17ac60a1d0e8f9d032ddcfc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7f28ce796b38c0d0ce51c67b7c5a36a573dae771
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376443"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050312"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Procedura: Aprire editor specifici del progetto
-Se un file di elemento aperto da un progetto è intrinsecamente associato all'editor specifico per tale progetto, il progetto deve aprire il file usando un editor specifico del progetto. Il file non può essere delegato al meccanismo dell'IDE per la selezione di un editor. Ad esempio, anziché usare un editor bitmap standard, è possibile usare questa opzione dell'editor specifica del progetto per specificare un editor di bitmap specifico che riconosce le informazioni nel file univoche per il progetto.
+Se un file di elemento aperto da un progetto è intrinsecamente associato all'editor specifico per tale progetto, il progetto deve aprire il file usando un editor specifico del progetto. Il file non può essere delegato al meccanismo dell'IDE per la selezione di un editor. Ad esempio, invece di usare un editor bitmap standard, è possibile usare questa opzione dell'editor specifica del progetto per specificare un editor di bitmap specifico che riconosce le informazioni nel file univoche per il progetto.
 
- L'IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> chiama il metodo quando determina che un file deve essere aperto da un progetto specifico. Per altre informazioni, vedere [Visualizzare i file usando il comando Apri file](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Usare le linee guida seguenti per implementare il metodo per fare in modo che il progetto a aperti `OpenItem` un file usando un editor specifico del progetto.
+ L'IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> chiama il metodo quando determina che un file deve essere aperto da un progetto specifico. Per altre informazioni, vedere [Visualizzare i file usando il comando Apri file](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Usare le linee guida seguenti per implementare il metodo per fare in modo che il progetto a open `OpenItem` un file usando un editor specifico del progetto.
 
 ## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Per implementare il metodo OpenItem con un editor specifico del progetto
 

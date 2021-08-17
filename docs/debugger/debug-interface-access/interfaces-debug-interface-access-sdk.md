@@ -1,5 +1,5 @@
 ---
-description: I metodi vengono elencati in ordine alfabetico sotto ogni interfaccia nel sommario e nella pagina di interfaccia in ordine vtable.
+description: I metodi sono elencati in ordine alfabetico sotto ogni interfaccia nel sommario e nella pagina dell'interfaccia in ordine Vtable.
 title: Interfacce (Debug Interface Access SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,23 +12,24 @@ ms.assetid: 62aee7c3-d314-4272-a32b-b2818f32fab8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d827e688e7618ebf66842eb4e633acdb483aa4f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a225edc9d357f93b76cff7eb4c8c2daef4b4bdda
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155425"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065924"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfacce (Debug Interface Access SDK)
-I metodi vengono elencati in ordine alfabetico sotto ogni interfaccia nel sommario e nella pagina di interfaccia in ordine vtable.
+I metodi sono elencati in ordine alfabetico sotto ogni interfaccia nel sommario e nella pagina dell'interfaccia in ordine Vtable.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 
-Consente di controllare il modo in cui il DIA SDK calcola gli indirizzi virtuali virtuali e relativi per gli oggetti di debug.
+Fornisce il controllo sul modo in cui il DIA SDK calcola gli indirizzi virtuali virtuali e relativi per gli oggetti di debug.
 
 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 
@@ -56,7 +57,7 @@ Enumera i vari numeri di riga contenuti nell'origine dati.
 
 [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 
-Enumera i diversi contributi di sezione contenuti nell'origine dati.
+Enumera i vari contributi di sezione contenuti nell'origine dati.
 
 [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 
@@ -76,7 +77,7 @@ Enumera i vari simboli contenuti nell'origine dati.
 
 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 
-Enumera per indirizzo i vari simboli contenuti nell'origine dati.
+Enumera in base all'indirizzo dei vari simboli contenuti nell'origine dati.
 
 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 
@@ -88,7 +89,7 @@ Espone i dettagli di un stack frame.
 
 [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
 
-Espone i dettagli della posizione di base e degli offset della memoria del modulo o dell'immagine.
+Espone i dettagli della posizione di base e degli offset di memoria del modulo o dell'immagine.
 
 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
 
@@ -96,19 +97,19 @@ Accede al codice sorgente del programma archiviato nell'origine dati DIA.
 
 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 
-Accede a informazioni che descrivono il processo di mapping da un blocco di byte di testo immagine a un numero di riga del file di origine.
+Accede alle informazioni che descrivono il processo di mapping da un blocco di byte di testo dell'immagine a un numero di riga del file di origine.
 
 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
 
-Riceve i callback dalla procedura di individuazione dei simboli DIA, consentendo in tal modo a un'interfaccia utente di segnalare lo stato di avanzamento del tentativo del percorso.
+Riceve callback dalla procedura di individuazione dei simboli DIA, consentendo in tal modo a un'interfaccia utente di segnalare lo stato di avanzamento del tentativo di posizione.
 
 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
 
-Riceve i callback dalla procedura di individuazione dei simboli DIA, consentendo di imporre restrizioni al processo di individuazione.
+Riceve i callback dalla procedura di individuazione dei simboli DIA, consentendo l'imposizione di restrizioni al processo di individuazione.
 
 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
 
-Consente di leggere le proprietà permanenti di un set di proprietà DIA.
+Consente di leggere le proprietà persistenti di un set di proprietà DIA.
 
 [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
 
@@ -120,11 +121,11 @@ Consente a un'applicazione client di fornire byte di un file eseguibile come spe
 
 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 
-Recupera i dati che descrivono il contributo di una sezione, ovvero un blocco di memoria contiguo fornito all'immagine da un modulo.
+Recupera i dati che descrivono un contributo di sezione, ad esempio un blocco contiguo di memoria contributo all'immagine da un compilando.
 
 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
 
-Esegue il mapping dei dati dal numero di sezione ai segmenti dello spazio degli indirizzi.
+Mappe dati dal numero di sezione ai segmenti dello spazio indirizzi.
 
 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 
@@ -136,23 +137,23 @@ Rappresenta un file di origine.
 
 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 
-Espone le proprietà di un stack frame.
+Espone le proprietà di un oggetto stack frame.
 
 [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
 
-Fornisce metodi per eseguire un percorso stack utilizzando il file PDB.
+Fornisce metodi per eseguire una procedura di analisi dello stack usando il file PDB.
 
 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 
-Mantiene il contesto dello stack tra le chiamate del metodo [IDiaFrameData:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) .
+Mantiene il contesto dello stack tra le chiamate del [metodo IDiaFrameData::execute.](../../debugger/debug-interface-access/idiaframedata-execute.md)
 
 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 
-Facilita l'analisi dello stack utilizzando il file del database di debug del programma (PDB).
+Facilita l'analisi dello stack usando il file di database di debug del programma (PDB).
 
 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 
-Descrive le proprietà di un'istanza del simbolo.
+Descrive le proprietà di un'istanza di simbolo.
 
 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 
@@ -161,11 +162,11 @@ Enumera una tabella di origine dati DIA.
 ## <a name="related-sections"></a>Sezioni correlate
 [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 
-Descrive le enumerazioni e le strutture utilizzate dalle diverse interfacce del DIA SDK.
+Vengono descritte le enumerazioni e le strutture utilizzate dalle varie interfacce del DIA SDK.
 
 [Costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-Descrive le costanti disponibili nell'DIA SDK.
+Descrive le costanti disponibili nel DIA SDK.
 
 ## <a name="see-also"></a>Vedi anche
 

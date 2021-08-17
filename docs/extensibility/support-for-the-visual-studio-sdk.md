@@ -17,20 +17,20 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cba61b086a52de4211333d5e2963b30ae02fe6800b55fb3931446b5c029a7d6f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 396325196a4989d89d179fb92f5bffff7419d3ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388214"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049402"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
-Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su come estendere il Visual Studio ide (Integrated Development Environment).
+Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su come estendere l Visual Studio ide (Integrated Development Environment).
 
 ## <a name="free-support"></a>Supporto gratuito
 
 ### <a name="microsoft-newsgroups"></a>Microsoft Newsgroups
- I membri del team Visual Studio e altri sviluppatori che estendono Visual Studio partecipano spesso al newsgroup microsoft.public.vstudio.extensibility. Questo newsgroup è un newsgroup gestito. Se si è un sottoscrittore UNIVERSALE MSDN, assicurarsi di registrare un alias senza posta indesiderata per fare in modo che Microsoft risponda.
+ I membri del team Visual Studio e altri sviluppatori che estendono Visual Studio spesso partecipano al newsgroup microsoft.public.vstudio.extensibility. Questo newsgroup è un newsgroup gestito. Se si è un sottoscrittore UNIVERSALE MSDN, assicurarsi di registrare un alias senza posta indesiderata per fare in modo che Microsoft risponda.
 
 ### <a name="msdn-forums"></a>Forum MSDN
  I [forum MSDN offrono](https://social.msdn.microsoft.com/Forums/en-US/home) un altro modo per chattare con colleghi ed esperti. L'interfaccia utente grafica dei forum è progettata per semplificarne l'uso rispetto ai newsgroup. Il [Visual Studio forum sull'estendibilità](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) è un buon punto di partenza per cercare le risposte alle domande di estendibilità. Cercare sempre prima di porre una domanda perché un altro utente potrebbe aver già posto la stessa domanda.
@@ -54,9 +54,9 @@ Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su 
 
 ### <a name="developer-tools-support"></a>Strumenti di sviluppo supporto
 
-È anche possibile acquistare il supporto. Un'ampia gamma di offerte di supporto è disponibile nella categoria Strumenti di sviluppo in [Microsoft Help and Support Centers](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
+È anche possibile acquistare il supporto. Un'ampia gamma di offerte di supporto è disponibile nella categoria Strumenti di sviluppo disponibile in [Microsoft Help and Support Centers](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-I clienti che vogliono usare per sviluppare pacchetti complessi possono prendere in considerazione l'acquisto [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] di un contratto supporto tecnico Premier con Microsoft. Per altre informazioni, vedere [Microsoft supporto tecnico Premier](https://support.microsoft.com/premier). Per le piccole aziende, [il supporto avanzato per i partner](https://partner.microsoft.com/support/advanced-cloud-support) può essere un'alternativa interessante a un'offerta supporto tecnico Premier tradizionale.
+I clienti che vogliono usare per sviluppare pacchetti complessi possono prendere in considerazione l'acquisto [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] di supporto tecnico Premier contratto con Microsoft. Per altre informazioni, vedere [Microsoft supporto tecnico Premier](https://support.microsoft.com/premier). Per le piccole aziende, [il supporto avanzato per i partner](https://partner.microsoft.com/support/advanced-cloud-support) può essere un'alternativa interessante a un'offerta supporto tecnico Premier tradizionale.
 
 > [!NOTE]
 > Il supporto standard non può essere usato per consulenza o per ottenere consigli.

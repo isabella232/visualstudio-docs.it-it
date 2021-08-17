@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 536a14065a86541e7748858f64229c5c5a0ab04f63c3d4f10025e68747ffec49
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 19452ba0473afa55c8ffaef6d852a7a4e08e12f6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346325"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081906"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Esaminare le variabili nelle finestre Auto e Variabili locali
 
@@ -33,7 +33,7 @@ Le **finestre Auto e** Variabili locali mostrano **i** valori delle variabili du
 
  La **finestra Auto è** disponibile per il codice C#, Visual Basic, C++ e Python, ma non per JavaScript o F#.
 
-Per aprire la **finestra Auto durante** il debug, selezionare Debug   >  **Windows**  >  **Auto o** premere **CTRL** +  +   >  **ALT+A.**
+Per aprire la **finestra Auto** durante il debug, selezionare  >  **Debug Windows** Auto  >  **o** premere **CTRL** +  +   >  **ALT+A.**
 
 Per aprire la **finestra Variabili** locali durante il debug, selezionare Debug Windows Variabili locali  >    >  oppure **premere** + **ALT+4.**
 

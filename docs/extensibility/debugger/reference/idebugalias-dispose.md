@@ -1,6 +1,6 @@
 ---
 description: Contrassegna questo alias per la rimozione.
-title: IDebugAlias::D di pose | Microsoft Docs
+title: IDebugAlias::D ispose | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7428b1a8d0dcb95d14274270542d4bba8c50bde9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e15d2c6f74c4872c5e55c9ce76293a1ab097d3176be33843a4deea89a692664c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059171"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434217"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 Contrassegna questo alias per la rimozione.
@@ -40,10 +41,10 @@ int Dispose();
  No.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Quando viene chiamato questo metodo, l'alias non è più disponibile.
+ Una volta chiamato questo metodo, l'alias non è più disponibile.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

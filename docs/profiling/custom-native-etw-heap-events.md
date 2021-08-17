@@ -1,6 +1,6 @@
 ---
 title: Personalizzare gli eventi dell'heap ETW nativo | Microsoft Docs
-description: Informazioni su come usare un heap personalizzato per ridurre l'overhead di allocazione, ma fornire le informazioni di allocazione al profiler di memoria per l'analisi di allocazione.
+description: Informazioni su come usare un heap personalizzato per ridurre il sovraccarico di allocazione, ma fornire comunque informazioni sull'allocazione al profiler di memoria per l'analisi dell'allocazione.
 ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
@@ -8,16 +8,17 @@ ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93d5783620c11d6de80e3ad381c456afd1fcd99a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51f6f5bc5d01b48f73f66c3f9697fcd8270ee374b9dc61585448a761b52f26bf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964849"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427281"
 ---
 # <a name="custom-native-etw-heap-events"></a>Personalizzare gli eventi dell'heap ETW nativo
 
@@ -51,7 +52,7 @@ Uno snapshot dello strumento [Utilizzo memoria](../profiling/memory-usage.md) se
 
 ![Allocazione di heap di Windows](media/heap-example-windows-heap.png)
 
-Eseguendo i passaggi seguenti, è possibile usare lo stesso strumento per tenere traccia dell'utilizzo della memoria nell'heap personalizzato.
+Eseguendo i passaggi seguenti, è possibile usare questo stesso strumento per tenere traccia dell'utilizzo della memoria nell'heap personalizzato.
 
 ## <a name="how-to-use"></a>Uso
 
@@ -63,7 +64,7 @@ Questa libreria può essere usata facilmente in C e C++.
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Aggiungere l'elemento Decorator `__declspec(allocator)` a qualsiasi funzione di gestione dell'heap personalizzato che restituisca un puntatore alla memoria heap appena allocata.  Questo elemento Decorator consente allo strumento di identificare correttamente il tipo di memoria da restituire.  Ad esempio:
+1. Aggiungere l'elemento Decorator `__declspec(allocator)` a qualsiasi funzione di gestione dell'heap personalizzato che restituisca un puntatore alla memoria heap appena allocata.  Questo elemento Decorator consente allo strumento di identificare correttamente il tipo di memoria da restituire.  Esempio:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -158,5 +159,5 @@ Come con l'heap standard di Windows, è possibile usare questo strumento per con
 > Visual Studio contiene anche uno strumento **Utilizzo memoria** nel set di strumenti di **profilatura delle prestazioni**, che viene abilitato dall'opzione di menu **Debug** > **Profiler prestazioni** o dalla combinazione di tasti **ALT**+**F2**.  Questa funzionalità non include la verifica dell'heap e non visualizza l'heap personalizzato come descritto in questo documento.  Solo la finestra **Strumenti di diagnostica**, che può essere abilitata con il menu **Debug** > **Windows** > **Mostra strumenti di diagnostica** o la combinazione di tasti **CTRL**+**ALT**+**F2**, contiene questa funzionalità.
 
 ## <a name="see-also"></a>Vedi anche
-[Esaminare prima di tutto gli strumenti](../profiling/profiling-feature-tour.md) 
- di profilatura [Utilizzo memoria](../profiling/memory-usage.md)
+[Prima di tutto esaminare gli strumenti di profilatura](../profiling/profiling-feature-tour.md) 
+ [Utilizzo memoria](../profiling/memory-usage.md)

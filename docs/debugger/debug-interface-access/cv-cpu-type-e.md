@@ -1,6 +1,6 @@
 ---
 title: CV_CPU_TYPE_e | Microsoft Docs
-description: Ottenere informazioni di riferimento sul tipo di enumerazione CV_CPU_TYPE_e, che specifica il processore di destinazione in Debug Interface Access SDK.
+description: Ottenere informazioni di riferimento sul tipo CV_CPU_TYPE_e di enumerazione, che specifica il processore di destinazione nell'SDK di accesso all'interfaccia di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,20 +12,21 @@ ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e0574814d15f981647283afa0d42320088652532
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 497d3c29ad49fe3995245f2bd19e1cf2860dfb830682f56231e5a09b8b24581d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865447"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121345738"
 ---
 # <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 Specifica il processore di destinazione.
 
 > [!NOTE]
-> Il processore viene identificato nell'elemento Enumeration dopo il `CV_CFL_*` prefisso.
+> Il processore viene identificato nell'elemento di enumerazione dopo il `CV_CFL_*` prefisso .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -98,10 +99,10 @@ typedef enum CV_CPU_TYPE_e {
 ```
 
 ## <a name="remarks"></a>Osservazioni
-I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_Platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) .
+I valori in questa enumerazione vengono restituiti da una chiamata al [metodo IDiaSymbol::get_platform.](../../debugger/debug-interface-access/idiasymbol-get-platform.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst. h
+Intestazione: cvconst.h
 
 ## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

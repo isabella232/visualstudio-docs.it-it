@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia viene utilizzata dai nodi del programma per specificare tutti i possibili motori di debug (DE) in grado di eseguire il debug del programma.
+description: Questa interfaccia viene usata dai nodi di programma per specificare tutti i possibili motori di debug che possono eseguire il debug di questo programma.
 title: IDebugProgramEngines2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0202185d760a1e3334996906807e5922fe61e0a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ed842651af84991233a5e1f61eadb16d01074972eae896ffaa178748447aebc4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084220"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433229"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
-Questa interfaccia viene utilizzata dai nodi del programma per specificare tutti i possibili motori di debug (DE) in grado di eseguire il debug del programma.
+Questa interfaccia viene usata dai nodi di programma per specificare tutti i possibili motori di debug che possono eseguire il debug di questo programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,26 +31,26 @@ IDebugProgramEngines2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Un fornitore della porta DE o personalizzato implementa questa interfaccia sullo stesso oggetto che implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) per supportare la definizione di una specifica de da usare per un programma specifico.
+ Un de o un fornitore di porte personalizzato implementa questa interfaccia sullo stesso oggetto che implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) per supportare la definizione di un DE specifico da usare per un programma specifico.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [QueryInterface](/cpp/atl/queryinterface) su un' `IDebugProgramNode2` interfaccia per ottenere questa interfaccia.
+ Chiamare [QueryInterface](/cpp/atl/queryinterface) su `IDebugProgramNode2` un'interfaccia per ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugProgramEngines2` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugProgramEngines2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Indica tutte le DEs possibili che possono eseguire il debug del programma.|
-|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Consente di selezionare il DE da usare per il debug del programma.|
+|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Indica tutti i possibili DE che possono eseguire il debug di questo programma.|
+|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Seleziona il de da usare per il debug di questo programma.|
 
 ## <a name="remarks"></a>Commenti
- Una volta scelto dall'utente, tale scelta viene registrata nel nodo del programma chiamando il [motore](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Il motore selezionato diventa il motore restituito da [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
+ Dopo aver scelto un DE dall'utente, tale scelta viene registrata con il nodo del programma chiamando [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Il motore selezionato diventa il motore restituito da [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

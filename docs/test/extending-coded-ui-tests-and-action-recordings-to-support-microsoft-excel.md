@@ -1,20 +1,21 @@
 ---
 title: Estendere test codificati dell'interfaccia utente e registrazioni delle azioni
-description: Informazioni su come creare un'estensione per il Framework di test codificato dell'interfaccia utente per l'interfaccia utente specifica sfruttando l'estendibilità del Framework di test codificato dell'interfaccia utente.
+description: Informazioni su come creare un'estensione al framework di test codificati dell'interfaccia utente per l'interfaccia utente specifica sfruttando l'estendibilità del framework di test codificati dell'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8c4a846fe9425af7dc62ef93276c0272f480b7f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71ab67e5457d4616d9abbba0570443e6a1b2a817
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949870"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026759"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Estendere test codificati dell'interfaccia utente e registrazioni delle azioni
 

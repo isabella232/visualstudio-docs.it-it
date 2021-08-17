@@ -1,6 +1,6 @@
 ---
-description: Recupera l'oggetto che rappresenta il motore di debug appena creato.
-title: 'IDebugEngineCreateEvent2:: GetEngine | Microsoft Docs'
+description: Recupera l'oggetto che rappresenta il motore di debug (DE) appena creato.
+title: IDebugEngineCreateEvent2::GetEngine | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66e58c94f21eb29b7cb85066001e5c4472730f76
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a1639949b963e9d6d5545070d76a1ea2ffc7c843
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066087"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096355"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
-Recupera l'oggetto che rappresenta il motore di debug appena creato.
+Recupera l'oggetto che rappresenta il motore di debug (DE) appena creato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int GetEngine(
 
 ## <a name="parameters"></a>Parametri
 `pEngine`\
-out Restituisce un oggetto [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) che rappresenta l'oggetto de appena creato.
+[out] Restituisce un [oggetto IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) che rappresenta l'istanza di DE appena creata.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

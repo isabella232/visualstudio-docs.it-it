@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Ricerca thread | Microsoft Docs
-description: Informazioni sulla finestra di dialogo Ricerca thread nello strumento di debug di Spy + +. Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico nella visualizzazione thread.
+description: Informazioni sulla finestra di dialogo Ricerca thread nello strumento di debug di Spy++. Usare questa finestra di dialogo per trovare e selezionare il nodo per un thread specifico nella visualizzazione Thread.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,35 +10,36 @@ ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: afcbbcb1990f27a09ec74814b67dbdd77bc28ec9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dcb569c930a5bc2e801f5731799b6ecc3caff1d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940618"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096856"
 ---
 # <a name="thread-search-dialog-box"></a>Finestra di dialogo Ricerca thread
-Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico nella [visualizzazione thread](../debugger/threads-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una finestra di visualizzazione **thread** . Quindi scegliere **Trova thread** dal menu **Cerca** .
+Usare questa finestra di dialogo per trovare e selezionare il nodo per un thread specifico nella [visualizzazione Thread](../debugger/threads-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su una **finestra di visualizzazione** Thread. Scegliere quindi **Trova thread** **dal** menu Cerca.
 
  Sono disponibili le impostazioni seguenti:
 
- **Thread** di ID del thread da cercare.
+ **Thread** ID thread da cercare.
 
- **Modulo** di Stringa del modulo da cercare.
+ **Modulo** Stringa del modulo da cercare.
 
- **Direzione di ricerca verso l'alto o verso il basso** Direzione iniziale della ricerca.
+ **Direzione della ricerca verso l'alto o verso il basso** Direzione iniziale della ricerca.
 
 ## <a name="related-sections"></a>Sezioni correlate
- Finestra di [dialogo Proprietà thread](../debugger/thread-properties-dialog-box.md) Utilizzato per visualizzare le proprietà di un thread selezionato nella visualizzazione thread.
+ [Finestra di dialogo Proprietà thread](../debugger/thread-properties-dialog-box.md) Consente di visualizzare le proprietà di un thread selezionato nella visualizzazione Thread.
 
- [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.
+ [Informazioni di riferimento su Spy++](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy++.
 
- [Ricerca di un thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md) Viene illustrato come trovare un thread specifico nella visualizzazione thread.
+ [Ricerca di un thread nella visualizzazione Thread](../debugger/how-to-search-for-a-thread-in-threads-view.md) Viene illustrato come trovare un thread specifico nella visualizzazione Thread.
 
- [Visualizzazione thread](../debugger/threads-view.md) Visualizza una visualizzazione albero dei thread attivi
+ [Visualizzazione Thread](../debugger/threads-view.md) Visualizza una visualizzazione albero dei thread attivi
 
- [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.
+ [Visualizzazioni di Spy++](../debugger/spy-increment-views.md) Illustra le visualizzazioni albero di Spy++ di finestre, messaggi, processi e thread.
 
- [Uso di Spy + +](../debugger/using-spy-increment.md) Introduce lo strumento Spy + + e spiega come può essere usato.
+ [Uso di Spy++](../debugger/using-spy-increment.md) Introduce lo strumento Spy++ e spiega come può essere usato.

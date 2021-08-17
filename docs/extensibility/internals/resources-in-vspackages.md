@@ -1,6 +1,6 @@
 ---
 title: Risorse nei pacchetti VSPackage | Microsoft Docs
-description: Informazioni sui tipi di risorse localizzate che possono essere incorporati nei pacchetti VSPackage. È anche possibile incorporare risorse in DLL dell'interfaccia utente satellite native o dll satellite gestite.
+description: Informazioni sui tipi di risorse localizzate che possono essere incorporati nei pacchetti VSPackage. È anche possibile incorporare le risorse nelle DLL native dell'interfaccia utente satellite o nelle DLL satellite gestite.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,27 +12,28 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a80fc4fbfaf9a308492345ba897363d31d4669ca
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 069ceef0275ce802a9f6bc717baee48a82a5df30e08dba1122f75ea429c2cac8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216540"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337812"
 ---
 # <a name="resources-in-vspackages"></a>Risorse nei pacchetti VSPackage
-È possibile incorporare le risorse localizzate in DLL dell'interfaccia utente satellite nativa, dll satellite gestite o in un VSPackage gestito.
+È possibile incorporare le risorse localizzate in DLL dell'interfaccia utente satellite native, DLL satellite gestite o in un VSPackage gestito.
 
- Non è possibile incorporare alcune risorse nei pacchetti VSPackage. È possibile incorporare i tipi gestiti seguenti:
+ Alcune risorse non possono essere incorporate nei pacchetti VSPackage. È possibile incorporare i tipi gestiti seguenti:
 
 - Stringhe
 
-- Chiavi di caricamento del pacchetto (stringhe anche)
+- Chiavi di caricamento del pacchetto (che sono anche stringhe)
 
-- Icone della finestra degli strumenti
+- Icone delle finestre degli strumenti
 
-- File di output della tabella dei comandi (CTO) compilati
+- File CTO (Command Table Output) compilati
 
 - Bitmap CTO
 
@@ -40,17 +41,17 @@ ms.locfileid: "106216540"
 
 - Informazioni sui dati della finestra di dialogo
 
-  Le risorse in un pacchetto gestito sono selezionate in base all'ID risorsa. Un'eccezione è il file CTO, che deve essere denominato CTMENU. Il file CTO deve essere visualizzato nella tabella Resource come `byte[]` . Tutti gli altri elementi di risorsa sono identificati dal tipo.
+  Le risorse in un pacchetto gestito vengono selezionate in base all'ID risorsa. Un'eccezione è il file CTO, che deve essere denominato CTMENU. Il file CTO deve essere visualizzato nella tabella delle risorse come `byte[]` . Tutti gli altri elementi della risorsa sono identificati in base al tipo.
 
-  È possibile utilizzare l' <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> attributo per indicare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che sono disponibili risorse gestite.
+  È possibile usare <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> l'attributo per indicare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che le risorse gestite sono disponibili.
 
   :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs" id="Snippet1":::
   :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb" id="Snippet1":::
 
-  <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>L'impostazione in questo modo indica che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve ignorare le DLL satellite non gestite durante la ricerca di risorse, ad esempio tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Se rileva [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] due o più risorse con lo stesso ID di risorsa, viene usata la prima risorsa trovata.
+  L'impostazione di in questo modo indica che deve ignorare le DLL satellite non gestite durante la ricerca di risorse, ad esempio <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rileva due o più risorse con lo stesso ID risorsa, usa la prima risorsa trovata.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene rappresentata una rappresentazione gestita di un'icona della finestra degli strumenti.
+ L'esempio seguente è una rappresentazione gestita di un'icona della finestra degli strumenti.
 
 ```
 <data name="1001"
@@ -83,10 +84,10 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>Note sull'implementazione
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ritarda il caricamento dei pacchetti VSPackage laddove possibile. Una conseguenza dell'incorporamento di un file CTO in un pacchetto VSPackage è che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve caricare tutti i pacchetti VSPackage in memoria durante l'installazione, ovvero quando viene compilata una tabella dei comandi unita. Le risorse possono essere estratte da un pacchetto VSPackage esaminando i metadati senza eseguire codice nel pacchetto VSPackage. Il pacchetto VSPackage non è inizializzato in questo momento, quindi la perdita di prestazioni è minima.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ritarda il caricamento dei pacchetti VSPackage quando possibile. Una conseguenza dell'incorporamento di un file CTO in un VSPackage è che deve caricare tutti questi VSPackage in memoria durante l'installazione, ovvero quando compila una tabella dei comandi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unita. Le risorse possono essere estratte da un pacchetto VSPackage esaminando i metadati senza eseguire codice nel pacchetto VSPackage. Il pacchetto VSPackage non è inizializzato in questo momento, quindi la perdita di prestazioni è minima.
 
- Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] richiede una risorsa da un VSPackage dopo l'installazione, è probabile che il pacchetto sia già caricato e inizializzato, quindi la perdita di prestazioni è minima.
+ Quando richiede una risorsa da un pacchetto VSPackage dopo l'installazione, è probabile che il pacchetto sia già caricato e inizializzato, quindi la perdita di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prestazioni è minima.
 
 ## <a name="see-also"></a>Vedi anche
 - [Gestione dei pacchetti VSPackage](../../extensibility/managing-vspackages.md)
-- [Risorse localizzate in applicazioni MFC: dll satellite](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
+- [Risorse localizzate nelle applicazioni MFC: DLL satellite](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

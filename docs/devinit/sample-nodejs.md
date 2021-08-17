@@ -1,6 +1,6 @@
 ---
 title: App Node.js
-description: Repository di esempio che usa devinit per installare i pacchetti NPM per un progetto Node.js Express.
+description: Repository di esempio che usa devinit per installare pacchetti npm per un Node.js Express.
 ms.date: 11/04/2020
 ms.topic: reference
 author: andysterland
@@ -11,23 +11,23 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 61e58109d98417e7b8b57a6c0fd23c64106413d7
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 76800cc5bd9ec3fccc59bce28311e820a508ffde43f273741ea96fa4f21f3c87
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104671757"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452819"
 ---
 # <a name="nodejs-app"></a>App Node.js
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Per un esempio completo dell'uso di devinit per installare i pacchetti NPM per un progetto Node.js Express, vedere il repository [devinit-example-NodeJS](https://github.com/microsoft/devinit-example-nodejs) .
+Vedere il repository [devinit-example-nodejs](https://github.com/microsoft/devinit-example-nodejs) per un esempio completo dell'uso di devinit per installare pacchetti npm per un Node.js Express.
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Contenuto del _.devinit.js_ nel file nella radice del repository.
+Contenuto del _.devinit.jsnel_ file nella radice del repo.
 
 ```json
 {
@@ -68,9 +68,9 @@ Contenuto del _.devinit.js_ nel file nella radice del repository.
 
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.js
+## <a name="devcontainerjson"></a>.devcontainer.jssu
 
-Contenuto del _.devcontainer.js_ nel file nella radice del repository.
+Contenuto del _.devcontainer.jsnel_ file nella radice del repo.
 
 ```json
 {

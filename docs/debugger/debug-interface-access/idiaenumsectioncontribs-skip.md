@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab53955f5342dd0bce902c73ba568f3f6a00aa22b062ba5fa1394ba0bb8a2c8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cd60e86df46a77941c3aa9b58fa93d2f7e4531c8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380350"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036463"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 Ignora un numero specificato di contributi di sezione in una sequenza di enumerazione.
@@ -38,7 +38,7 @@ HRESULT Skip(
 [in] Numero di contributi di sezione nella sequenza di enumerazione da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce ; in caso contrario, restituisce se non sono presenti `S_OK` altri contributi di sezione da `S_FALSE` ignorare.
+ Se ha esito positivo, restituisce ; in caso contrario, restituisce se non sono `S_OK` presenti altri contributi di sezione da `S_FALSE` ignorare.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

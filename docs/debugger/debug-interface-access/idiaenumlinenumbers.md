@@ -11,14 +11,15 @@ ms.assetid: cdf07b4f-19e4-4dcd-8af8-c2dbca586a7c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f7daca5951ba543e69d74c664cddb863ec703e9f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 64fea0497f1cc8d8767a71eb4e06d77ae4b56e58
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159335"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081674"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Enumera i vari numeri di riga contenuti nell'origine dati.
@@ -30,13 +31,13 @@ IDiaEnumLineNumbers : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaEnumLineNumbers` .
+Nella tabella seguente vengono illustrati i metodi di `IDiaEnumLineNumbers` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Recupera la versione dell' [interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) dell'enumeratore.|
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Recupera la versione [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) di questo enumeratore.|
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Recupera il numero di numeri di riga.|
-|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Recupera un numero di riga per mezzo di un indice.|
+|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Recupera un numero di riga tramite un indice.|
 |[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Recupera un numero specificato di numeri di riga nella sequenza di enumerazione.|
 |[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Ignora un numero specificato di numeri di riga in una sequenza di enumerazione.|
 |[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
@@ -45,7 +46,7 @@ La tabella seguente illustra i metodi di `IDiaEnumLineNumbers` .
 ## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Questa interfaccia viene ottenuta chiamando uno dei metodi seguenti nell'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) :
+Questa interfaccia viene ottenuta chiamando uno dei metodi seguenti [nell'interfaccia IDiaSession:](../../debugger/debug-interface-access/idiasession.md)
 
 - [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)
 
@@ -58,7 +59,7 @@ Questa interfaccia viene ottenuta chiamando uno dei metodi seguenti nell'interfa
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come ottenere l' `IDiaEnumLineNumbers` interfaccia da una sessione. In questo caso, l'esempio Mostra come ottenere l'enumerazione del numero di riga per una funzione (rappresentata da `pSymbol` ). Per un esempio più completo dell'uso dei numeri di riga, vedere l'interfaccia [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
+In questo esempio viene illustrato come ottenere `IDiaEnumLineNumbers` l'interfaccia da una sessione. In questo caso, l'esempio mostra come ottenere l'enumerazione dei numeri di riga per una funzione (rappresentata da `pSymbol` ). Per un esempio più completo dell'uso dei numeri di riga, vedere [l'interfaccia IDiaLineNumber.](../../debugger/debug-interface-access/idialinenumber.md)
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -87,9 +88,9 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2. h
+Intestazione: Dia2.h
 
-Libreria: diaguids. lib
+Libreria: diaguids.lib
 
 DLL: msdia80.dll
 

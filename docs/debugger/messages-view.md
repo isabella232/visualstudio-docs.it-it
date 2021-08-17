@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 064ddc1bf410f6b64025c9d2045ca6cd86f05282b5d94a52fefbcabeb5399549
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 858620450452080dbbdf6c9aa5da8ed7c44c13e2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453139"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065410"
 ---
 # <a name="messages-view"></a>Visualizzazione messaggi
 A ogni finestra è associato un flusso di messaggi. Questo flusso di messaggi viene visualizzato in una finestra di visualizzazione Messaggi. Vengono visualizzati l'handle della finestra, il codice del messaggio e il messaggio. È anche possibile creare una visualizzazione Messaggi per un thread o un processo. In questo modo è possibile visualizzare i messaggi inviati a tutte le finestre di proprietà di un processo o thread specifico, particolarmente utile per l'acquisizione dei messaggi di inizializzazione della finestra.

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2db37f558aaa39444deef994a885fc424cede528588e376d1382231a7d3a13f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bdc240af5e2f075d3c107ac719097e0b57a3bb44
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415442"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029476"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 Ottiene il numero di attributi personalizzati in un enumeratore.
@@ -49,7 +49,7 @@ int GetCount(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo non fa parte dell'interfaccia di enumerazione COM personalizzata che specifica che devono essere implementati solo `Next` `Clone` , , e `Skip` `Reset` .
+ Questo metodo non fa parte dell'interfaccia di enumerazione COM personalizzata che specifica che devono essere implementati solo `Next` , `Clone` , e `Skip` `Reset` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

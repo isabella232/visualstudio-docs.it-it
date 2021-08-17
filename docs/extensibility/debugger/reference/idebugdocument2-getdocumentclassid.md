@@ -1,6 +1,6 @@
 ---
 description: Ottiene l'identificatore di classe del documento.
-title: 'IDebugDocument2:: GetDocumentClassID | Microsoft Docs'
+title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 829f0002a79f2fd5ec69f31ef4b59068bc5b5c05
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 57b1d5dfad34df36251fc2ebf863bd8a1447c89c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066854"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096453"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Ottiene l'identificatore di classe del documento.
@@ -41,13 +42,13 @@ int GetDocumentClassID(
 ```
 
 ## <a name="parameters"></a>Parametri
-`pclsid` out Restituisce un GUID che rappresenta l'ID di classe del documento.
+`pclsid` [out] Restituisce un GUID che rappresenta l'ID classe del documento.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Il GUID della classe può essere utilizzato per creare un'istanza di singole classi, ciascuna delle quali rappresenta un documento.
+ Il GUID della classe può essere usato per creare istanze di singole classi, ognuna delle quali rappresenta un documento.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

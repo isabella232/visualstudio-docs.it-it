@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-container-tools
-ms.openlocfilehash: 1e957efcc3a9663d01c7bc0ffde14fb44c23bc6db1a9db45d9b8968dc2753b9f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 29f3c4aa7b1cc72a5404b91227248e8a5739edc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121294573"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098021"
 ---
 # <a name="container-tools-in-visual-studio"></a>Strumenti per contenitori in Visual Studio
 

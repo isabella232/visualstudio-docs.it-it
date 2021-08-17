@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2aa32e5bf04e4f5c931ec3e8de3d156f7c8bcebb993749d8e348075523a7be4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 683164a2a3c6e6e63d4a783d55ea481d3eb8547f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390359"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065098"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 Struttura che identifica un visualizzatore personalizzato o un visualizzatore di tipi.
@@ -53,13 +53,13 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 ## <a name="members"></a>Members
 `dwID`\
-ID per distinguere più visualizzatori o visualizzatori implementati da un oggetto `GUID` .
+ID per distinguere più visualizzatori o visualizzatori implementati da un `GUID` oggetto .
 
 `bstrMenuName`\
 Testo che verrà visualizzato nel menu a discesa.
 
 `bstrDescription`\
-Descrizione del visualizzatore personalizzato o del visualizzatore di tipi (deve essere un valore Null se non viene usato).
+Descrizione del visualizzatore personalizzato o del visualizzatore di tipi (se non usato deve essere un valore Null).
 
 `guidLang`\
 Linguaggio dell'analizzatore di espressioni fornito.
@@ -71,7 +71,7 @@ Fornitore dell'analizzatore di espressioni fornito.
 Metrica in cui è archiviato il visualizzatore personalizzato o il `CLSID` visualizzatore di tipi.
 
 ## <a name="remarks"></a>Commenti
-Un elenco di questa struttura viene restituito da una chiamata al metodo [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) (e, per estensione, dal [metodo GetCustomViewerList).](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+Un elenco di questa struttura viene restituito da una chiamata al [metodo GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) (e, per estensione, al [metodo GetCustomViewerList).](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

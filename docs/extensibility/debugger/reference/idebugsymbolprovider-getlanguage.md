@@ -1,6 +1,6 @@
 ---
-description: Questo metodo ottiene il linguaggio utilizzato per compilare il codice in corrispondenza dell'indirizzo di debug.
-title: 'IDebugSymbolProvider:: GetLanguage | Microsoft Docs'
+description: Questo metodo ottiene il linguaggio usato per compilare il codice all'indirizzo di debug.
+title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7bcf2bd16212767fc8eff6106cdb3602bc293c9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d3df12a86aef556c450c9861fa98eb2659ac070a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086989"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029658"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Questo metodo ottiene il linguaggio utilizzato per compilare il codice in corrispondenza dell'indirizzo di debug.
+Questo metodo ottiene il linguaggio usato per compilare il codice all'indirizzo di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,13 +47,13 @@ int GetLanguage(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-in Oggetto Address rappresentato da un'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
+[in] Oggetto indirizzo rappresentato da [un'interfaccia IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pguidLanguage`\
-out Restituisce un oggetto `GUID` che specifica la lingua.
+[out] Restituisce un `GUID` oggetto che specifica la lingua.
 
 `pguidLanguageVendor`\
-out Restituisce un oggetto `GUID` che specifica il fornitore del linguaggio.
+[out] Restituisce un `GUID` oggetto che specifica il fornitore della lingua.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e30e1d204a56e7c2428c7f7b1701ded5f8fa226964266772fdef3883a39bbbf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ce7b5bba10ec8fb5816bea177694c9e0226b82ae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392312"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036391"
 ---
 # <a name="idiaframedataget_relativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
 Recupera l'indirizzo RVA (Relative Virtual Address) del codice per il frame.

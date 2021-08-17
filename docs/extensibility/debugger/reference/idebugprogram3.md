@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende l'esecuzione fornendo informazioni sul thread.
+description: Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende Execute fornendo informazioni sul thread.
 title: IDebugProgram3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 339aff9bdd41a27f48ef1a7ef1e01d9529835403
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8e1de2b61e7a942853cd0bae0d5526820030a4701921482a4aeb979cbfe96a2d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084337"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338826"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende l' [esecuzione](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornendo informazioni sul thread.
+Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornendo informazioni sul thread.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -28,27 +29,27 @@ IDebugProgram3 : IDebugProgram3
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) e un fornitore di porta personalizzato implementano questa interfaccia per rappresentare un programma in un processo. Il gestore di debug della sessione implementa anche questa interfaccia per fornire informazioni da [collegare](../../../extensibility/debugger/reference/idebugprogram2-attach.md).
+ Il motore di debug (DE) e un fornitore di porte personalizzato implementano questa interfaccia per rappresentare un programma in un processo. La gestione del debug di sessione (SDM) implementa anche questa interfaccia per fornire informazioni per [associare](../../../extensibility/debugger/reference/idebugprogram2-attach.md).
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- L'evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) restituisce questa interfaccia per un nuovo programma. Questa interfaccia viene usata anche come parametro per molti metodi su più interfacce.
+ [L'evento IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) restituisce questa interfaccia per un nuovo programma. Questa interfaccia viene usata anche come parametro per molti metodi in più interfacce.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugProgram3` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugProgram3` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Esegue il programma. Il thread viene restituito per fornire al debugger le informazioni sul thread visualizzato dall'utente durante l'esecuzione.|
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Esegue il programma. Il thread viene restituito per fornire al debugger informazioni sul thread visualizzato dall'utente durante l'esecuzione.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="remarks"></a>Commenti
- Un programma è un contenitore di thread in esecuzione in un'architettura di runtime particolare, mentre un processo è costituito da uno o più programmi.
+ Un programma è un contenitore di thread in esecuzione in una particolare architettura di run-time, mentre un processo è costituito da uno o più programmi.
 
 ## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)

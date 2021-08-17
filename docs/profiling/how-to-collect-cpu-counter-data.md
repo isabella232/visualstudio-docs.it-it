@@ -1,6 +1,6 @@
 ---
 title: Raccogliere i dati dei contatori CPU | Microsoft Docs
-description: Informazioni su come usare i contatori di eventi CPU (hardware) per raccogliere dati sulle prestazioni specifici dell'hardware. Questo articolo elenca i vari tipi di eventi.
+description: Informazioni su come usare i contatori degli eventi della CPU (hardware) per raccogliere dati sulle prestazioni specifici dell'hardware. Questo articolo elenca i vari tipi di eventi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a085f732263e0d2eb3d7e1f211c54fac46fbc6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 850a3ab4f238c0a95c5b01059eddee3f16b6b36034e382d9542bdaa5a243e359
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876901"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333028"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedura: Raccogliere i dati dei contatori CPU
 
@@ -46,7 +47,7 @@ Nel profiler è possibile raccogliere i dati del contatore di prestazioni in due
 
 - Raccogliere i dati da uno o più contatori quando si esegue la profilatura tramite strumentazione.
 
-- Specificare un evento di contatore come intervallo di campionamento quando si esegue la profilatura mediante campionamento. Per altre informazioni, vedere [procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).
+- Specificare un evento di contatore come intervallo di campionamento quando si esegue la profilatura mediante campionamento. Per altre informazioni, vedere [Procedura: Scegliere gli eventi di campionamento.](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Per raccogliere i dati dei contatori di prestazioni CPU quando si esegue la profilatura tramite strumentazione
 
@@ -63,7 +64,7 @@ Nel profiler è possibile raccogliere i dati del contatore di prestazioni in due
 
 ## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
- di prestazioni Proprietà della sessione di [prestazioni](../profiling/performance-session-properties.md) 
- Contatori CPU e [Windows](../profiling/cpu-and-windows-counters.md) 
- [Procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md) 
+ [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md) 
+ [Contatori cpu e Windows](../profiling/cpu-and-windows-counters.md) 
+ [Procedura: Scegliere gli eventi di campionamento](../profiling/how-to-choose-sampling-events.md)

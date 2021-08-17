@@ -1,6 +1,6 @@
 ---
-description: "IDiaStackWalkHelper:: Searchforreturnaddress (Cerca l'indirizzo restituito della funzione più vicino all'stack frame specificato."
-title: 'IDiaStackWalkHelper:: Searchforreturnaddress (| Microsoft Docs'
+description: IDiaStackWalkHelper::searchForReturnAddress cerca l'indirizzo mittente della funzione stack frame specificato.
+title: IDiaStackWalkHelper::searchForReturnAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: 904223b1-6e26-4980-b310-d0b222cdbbbd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 887737ac28204d9abdbf3b7002233af6d0b2e465
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fe47a750625698f2fc930ed51ca9d8cedcec103b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156811"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036335"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
-Cerca nell'stack frame specificato l'indirizzo restituito della funzione più vicino.
+Cerca l'indirizzo stack frame specificato per l'indirizzo restituito della funzione più vicino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ HRESULT searchForReturnAddress(
 #### <a name="parameters"></a>Parametri
  `frame`
 
-in Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'stack frame corrente.
+[in] Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'oggetto stack frame.
 
  `returnAddress`
 
-out Restituisce l'indirizzo restituito della funzione più vicino.
+[out] Restituisce l'indirizzo restituito della funzione più vicina.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

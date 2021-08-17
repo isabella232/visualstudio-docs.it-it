@@ -3,16 +3,17 @@ title: Preparare la pubblicazione o la distribuzione di un servizio cloud
 description: Informazioni sulle procedure per la configurazione di servizi cloud e dell'account di archiviazione e per la configurazione dell'applicazione Azure.
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 06157f1476762af5bfe24ce950e29e80ac60e6b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 83ee497950383be1ba284f379985d748eac4ea50
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844424"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082374"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Preparare la pubblicazione o la distribuzione di un servizio cloud in Visual Studio
 
