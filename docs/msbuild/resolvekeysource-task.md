@@ -1,6 +1,6 @@
 ---
 title: Attività ResolveKeySource | Microsoft Docs
-description: Informazioni sui parametri dell'attività ResolveKeySource di MSBuild, che determina l'origine della chiave con nome sicuro.
+description: Informazioni sui parametri dell'attività ResolveKeySource MSBuild, che determina l'origine della chiave con nome sicuro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 449f06c2-e9aa-4236-ab1e-c45c25452b2e
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e012f84f1f18805ca458289c023679d0593d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 897e4482d45c5f191df8e60b091782bce467e1ba10d6d2c595856d77ad8d470e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912546"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427587"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource (attività)
 
@@ -50,7 +51,7 @@ Determina l'origine delle chiavi con nome sicuro.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="see-also"></a>Vedi anche
 

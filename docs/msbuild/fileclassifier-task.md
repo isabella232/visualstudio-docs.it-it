@@ -1,6 +1,6 @@
 ---
 title: Attività FileClassifier | Microsoft Docs
-description: Utilizzare l'attività fileclassificator di MSBuild per classificare un set di risorse di origine che verranno incorporate in un assembly.
+description: Usare l MSBuild'attività FileClassifier per classificare un set di risorse di origine che verranno incorporate in un assembly.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,14 +17,15 @@ ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f030a240bf02b3261ce903803095b83555a4531
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df4d07364f0f1b707ed4f4f95aca9a90de484f0da40eab9a369fc28cde398090
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957361"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428068"
 ---
 # <a name="fileclassifier-task"></a>Attività FileClassifier
 
@@ -37,7 +38,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica un in
 |`CLREmbeddedResource`|Non utilizzato.|
 |`CLRResourceFiles`|Non utilizzato.|
 |`CLRSatelliteEmbeddedResource`|Non utilizzato.|
-|`Culture`|Parametro **stringa** facoltativo.<br /><br /> Specifica le impostazioni cultura per la compilazione. Questo valore può essere **null** se la compilazione non è localizzabile. Se **null**, il valore predefinito corrisponde al valore minuscolo restituito da **CultureInfo.InvariantCulture**.|
+|`Culture`|Parametro **String** facoltativo.<br /><br /> Specifica le impostazioni cultura per la compilazione. Questo valore può essere **null** se la compilazione non è localizzabile. Se **null**, il valore predefinito corrisponde al valore minuscolo restituito da **CultureInfo.InvariantCulture**.|
 |`MainEmbeddedFiles`|Parametro di output facoltativo **ITaskItem[]**.<br /><br /> Specifica le risorse non localizzabili incorporate nell'assembly principale.|
 |`OutputType`|Parametro **String** obbligatorio.<br /><br /> Specifica il tipo di file in cui incorporare i file di origine specificati. I valori validi sono **exe**, **winexe** e **library**.|
 |`SatelliteEmbeddedFiles`|Parametro di output facoltativo **ITaskItem[]**.<br /><br /> Specifica i file localizzabili incorporati nell'assembly satellite per le impostazioni cultura specificate dal parametro **Culture**.|

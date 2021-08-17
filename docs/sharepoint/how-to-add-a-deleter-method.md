@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: aggiungere un metodo Deleter | Microsoft Docs'
-description: Informazioni su come aggiungere un metodo Deleter nella finestra di progettazione dell'integrazione applicativa dei dati di Visual Studio, in modo che un utente finale possa eliminare un record di dati da un elenco esterno in un sito di SharePoint.
+title: 'Procedura: Aggiungere un metodo deleter | Microsoft Docs'
+description: Informazioni su come aggiungere un metodo Deleter in BDC Designer di Visual Studio, in modo che un utente finale possa eliminare un record di dati da un elenco esterno in un SharePoint sito.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,45 +19,46 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: f5c9dc0a5ca6b7651b4ddc1f4b58a8b72305a1a5
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 2ecdb9a9dde1ac10e1d4037078fe272f7e3229952830bc6fca3308e8f7bf4105
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217996"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121385315"
 ---
-# <a name="how-to-add-a-deleter-method"></a>Procedura: aggiungere un metodo Deleter
-  È possibile consentire a un utente finale di eliminare un record di dati da un elenco esterno in un sito di SharePoint aggiungendo un metodo Deleter al modello. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-deleter-method"></a>Procedura: Aggiungere un metodo Deleter
+  È possibile abilitare un utente finale per eliminare un record di dati da un elenco esterno in un sito SharePoint aggiungendo un metodo Deleter al modello. Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)
 
 ### <a name="to-create-a-deleter-method"></a>Per creare un metodo Deleter
 
-1. Nella **finestra di progettazione dell'integrazione applicativa** dei dati scegliere un'entità.
+1. In Progettazione **integrazione applicativa dei dati** scegliere un'entità.
 
-2. Sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa dei dati** di Windows.
+2. Sulla barra dei menu scegliere **Visualizza altri**  >  **Windows**  >  **dettagli del metodo BDC.**
 
-    Verrà visualizzata la finestra **Dettagli metodo BDC** . Per altre informazioni su questa finestra, vedere [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md).
+    Verrà **visualizzata la finestra Dettagli metodo BDC.** Per altre informazioni su questa finestra, vedere Panoramica degli strumenti di progettazione del modello [BDC.](../sharepoint/bdc-model-design-tools-overview.md)
 
-3. Nell'elenco **Aggiungi metodo** scegliere **Crea un metodo Deleter**.
+3. **Nell'elenco Aggiungi metodo** scegliere Crea un metodo **deleter**.
 
-    Visual Studio aggiunge al modello gli elementi seguenti. Questi elementi vengono visualizzati nella finestra **Dettagli metodo di integrazione applicativa dei dati** .
+    Visual Studio aggiunge gli elementi seguenti al modello. Questi elementi vengono visualizzati nella finestra **Dettagli metodo BDC.**
 
-   - Metodo denominato **Delete**.
+   - Metodo denominato **Delete.**
 
    - Parametro di input per il metodo.
 
    - Descrittore di tipo per il parametro.
 
-   - Istanza di metodo per il metodo.
+   - Istanza del metodo per il metodo .
 
-     Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)
 
-4. In **Esplora soluzioni** aprire il menu di scelta rapida del file di codice del servizio generato per l'entità, quindi scegliere **Visualizza codice**.
+4. In **Esplora soluzioni** aprire il menu di scelta rapida del file di codice del servizio generato per l'entità e quindi scegliere **Visualizza codice**.
 
-    Il file di codice di Entity Service verrà aperto nell'editor di codice. Per altre informazioni sul file di codice di Entity Service, vedere [creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md).
+    Il file di codice del servizio entità viene aperto nell'editor di codice. Per altre informazioni sul file di codice del servizio entità, vedere [Creare un modello di connettività dati business](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-5. Aggiungere il codice al metodo Deleter per eliminare un record. Nell'esempio seguente viene eliminata una voce da un ordine di vendita utilizzando il database di esempio AdventureWorks per SQL Server.
+5. Aggiungere codice al metodo Deleter per eliminare un record. L'esempio seguente elimina una voce da un ordine di vendita usando il database di esempio AdventureWorks per SQL Server.
 
    > [!NOTE]
    > Il metodo in questo esempio usa due parametri di input.
@@ -69,11 +70,11 @@ ms.locfileid: "106217996"
     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb" id="Snippet6":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Procedura: aggiungere un metodo di aggiornamento](../sharepoint/how-to-add-an-updater-method.md)
-- [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Procedura: definire un'istanza di metodo](../sharepoint/how-to-define-a-method-instance.md)
+- [Progettare un modello di connettività dei dati aziendali](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)
+- [Panoramica degli strumenti di progettazione del modello BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)

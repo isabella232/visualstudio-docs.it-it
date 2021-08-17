@@ -1,20 +1,21 @@
 ---
 title: Impostazioni dell'ambiente
-description: Informazioni sulle impostazioni dell'ambiente di Visual Studio e su come modificarle in modo che siano ottimali per il tipo di sviluppo.
+description: Informazioni sulle Visual Studio dell'ambiente e su come adattarle in modo che siano ottimali per il tipo di sviluppo in uso.
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 11696d095623d27811b1fb02ef295350d9e33e1b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b44dfa90c56b4d4c0ee62e84f7fa68739ff515b1c75c8a051ceb18063d46356
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898011"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121373376"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Impostazioni dell'ambiente per Visual Studio
 
@@ -34,7 +35,7 @@ Sono disponibili le raccolte di impostazioni seguenti:
 
 Per modificare le impostazioni di sviluppo quando si apre Visual Studio in seguito, eseguire questa procedura:
 
-1. Selezionare **strumenti**  >  **Importa/Esporta impostazioni** dalla barra dei menu per aprire **importazione/esportazione guidata delle impostazioni**.
+1. Selezionare **Strumenti**  >  **Importa/Esporta Impostazioni** dalla barra dei menu per aprire l'Importazione/Esportazione **Impostazioni guidata**.
 
 1. Nell'**Importazione/Esportazione guidata delle impostazioni** selezionare **Reimposta tutte le impostazioni** e quindi selezionare **Avanti**.
 

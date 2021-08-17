@@ -11,14 +11,15 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75697e1d212b24b743fed62284b384985749fe7b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: eba3644d0717d20df3f5b5ab1195f4a4fca443041fdd085788422cb1aea48d47
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898604"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375728"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfacce dei servizi di linguaggio legacy
 Per qualsiasi linguaggio di programmazione specifico, può essere presente una sola istanza di un servizio di linguaggio alla volta. Tuttavia, un singolo servizio di linguaggio può gestire più di un editor.
@@ -50,8 +51,8 @@ Per qualsiasi linguaggio di programmazione specifico, può essere presente una s
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Fornisce descrizioni comando dei parametri IntelliSense. Quando il servizio di linguaggio riconosce un carattere che indica che i dati del metodo devono essere visualizzati, ad esempio una parentesi aperta, chiama il metodo per notificare alla visualizzazione di testo che il servizio di linguaggio è pronto per visualizzare una descrizione comando informazioni <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> parametro. La visualizzazione di testo richiama quindi il servizio di linguaggio usando i metodi dell'interfaccia per ottenere le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> informazioni necessarie per visualizzare la descrizione comando.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Fornisce il completamento dell'istruzione IntelliSense. Quando il servizio di linguaggio è pronto per visualizzare un elenco di completamento, chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo nella visualizzazione testo. La visualizzazione di testo chiama quindi di nuovo nel servizio di linguaggio usando i metodi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> sull'oggetto .|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Consente la modifica della visualizzazione di testo usando il gestore dei comandi. Anche la classe in cui si implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> l'interfaccia deve implementare <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia . La visualizzazione testo recupera <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> l'oggetto tramite query <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> sull'oggetto passato al metodo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> . Deve essere presente un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> oggetto per ogni vista.|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Intercetta i comandi che l'utente ha inserito nella finestra del codice. Monitorare l'output <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> dell'implementazione per fornire informazioni di completamento personalizzate e visualizzare la modifica<br /><br /> Per passare <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'oggetto alla visualizzazione testo, chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> .|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Intercetta i comandi che l'utente tipo nella finestra del codice. Monitorare l'output <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> dell'implementazione per fornire informazioni di completamento personalizzate e visualizzare la modifica<br /><br /> Per passare <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'oggetto alla visualizzazione testo, chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppo di un servizio di linguaggio legacy](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Elenco di controllo: Creazione di un servizio di linguaggio legacy](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

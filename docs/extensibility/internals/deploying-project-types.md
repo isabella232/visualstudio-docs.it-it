@@ -1,6 +1,6 @@
 ---
-title: Distribuzione di tipi di progetto | Microsoft Docs
-description: Informazioni su come distribuire i tipi di progetto di codice gestito usando un nuovo aggregatore di tipi di progetto e Windows Installer pacchetto per la ridistribuzione in Visual Studio SDK.
+title: Distribuzione di Project tipi | Microsoft Docs
+description: Informazioni su come distribuire tipi di progetto di codice gestito usando un nuovo aggregatore di tipo progetto e un pacchetto del programma di installazione di Windows per la ridistribuzione, in Visual Studio SDK.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,20 +11,21 @@ ms.assetid: 7f132f67-8589-464c-90dc-0d57ae02aa8f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 121dda58b8e01c5b0029d8b3c93ef66d2657446e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ad2684b15f4e3a388193b71d9bfdb32bf37a316f3dc177fb892a7bd61578f727
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090993"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376287"
 ---
-# <a name="deploy-project-types"></a>Distribuire i tipi di progetto
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] consente di installare un nuovo aggregatore di tipi di progetto (*ProjectAggregator2.dll*) e anche un pacchetto di Windows Installer per la ridistribuzione (*ProjectAggregator2.msi*). È necessario usare il nuovo aggregatore per i tipi di progetto di codice gestito. ProjectAggregator2 funziona in base alle limitazioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Project aggregator che impedisce il corretto funzionamento dei tipi di progetto di codice gestito. I passaggi seguenti descrivono come modificare il pacchetto VSPackage per usare il nuovo aggregatore.
+# <a name="deploy-project-types"></a>Distribuire tipi di progetto
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]installa un nuovo aggregatore di tipo progetto (*ProjectAggregator2.dll*) e un pacchetto Windows Installer per la ridistribuzione (*ProjectAggregator2.msi*). È necessario usare il nuovo aggregatore per i tipi di progetto di codice gestito. ProjectAggregator2 aggira le limitazioni dell'aggregatore di progetti che impediscono il corretto funzionamento dei tipi di progetto di codice [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestito. La procedura seguente descrive come modificare il pacchetto VSPackage per usare il nuovo aggregatore.
 
 1. Rimuovere il progetto NativeHierarchyWrapper dalla soluzione.
 
-2. Rimuovere tutti i file binari NativeHierarchyWrapper dalla configurazione.
+2. Rimuovere tutti i file binari NativeHierarchyWrapper dal programma di installazione.
 
-3. Aggiungere *ProjectAggregator2.msi* alla configurazione.
+3. Aggiungere *ProjectAggregator2.msi* configurazione.

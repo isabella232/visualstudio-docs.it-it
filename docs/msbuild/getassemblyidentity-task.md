@@ -1,6 +1,6 @@
 ---
 title: Attività GetAssemblyIdentity | Microsoft Docs
-description: Usare l'attività GetAssemblyIdentity di MSBuild per recuperare le identità degli assembly dai file specificati e restituire le informazioni sull'identità.
+description: Usare l MSBuild'attività GetAssemblyIdentity per recuperare le identità dell'assembly dai file specificati e ottenere le informazioni sull'identità.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a155e340f9ab246935f7b8cd6da46f3f364010
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b016d39453e79aea045c61a84202cad71d4164c32bc5d0aa566dd27f49870b77
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914710"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427814"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (attività)
 
@@ -44,7 +45,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GetAssembl
 
 Gli elementi estratti dal parametro `Assemblies` contengono voci di metadati degli elementi denominati `Version`, `PublicKeyToken` e `Culture`.
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 

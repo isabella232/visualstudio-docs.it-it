@@ -1,6 +1,6 @@
 ---
-title: Elemento DefaultName (modelli di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento DefaultName e su come viene specificato il nome che verrà generato dal sistema di progetto di Visual Studio per il progetto o l'elemento al momento della creazione.
+title: Elemento DefaultName (modelli Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento DefaultName e su come specifica il nome che verrà generato dal sistema del progetto Visual Studio per il progetto o l'elemento al momento della creazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8b11655424086b65a1b4e2089e245f1e389b611
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b26eced0849ebd4551c0f91f3ba2b7040022312c0e8007dc0a2cf54decc24788
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091383"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377028"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>Elemento DefaultName (modelli di Visual Studio)
-Specifica il nome che verrà generato dal sistema di progetto di Visual Studio per il progetto o l'elemento al momento della creazione.
+# <a name="defaultname-element-visual-studio-templates"></a>Elemento DefaultName (Visual Studio personalizzati)
+Specifica il nome che verrà generato dal Visual Studio progetto per il progetto o l'elemento al momento della creazione.
 
  \<VSTemplate> \<TemplateData>
  \<DefaultName>
@@ -40,10 +40,10 @@ Specifica il nome che verrà generato dal sistema di progetto di Visual Studio p
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -59,14 +59,14 @@ Specifica il nome che verrà generato dal sistema di progetto di Visual Studio p
 ## <a name="remarks"></a>Commenti
  `DefaultName` è un elemento facoltativo.
 
- Per i progetti, questo elemento specifica il nome della directory in cui è archiviato il progetto su disco. Per gli elementi, specifica il nome file del file di origine.
+ Per i progetti, questo elemento specifica il nome della directory in cui è archiviato il progetto su disco. Per gli elementi, specifica il nome del file di origine.
 
- Quando si crea un progetto o un elemento, è possibile modificare il nome predefinito utilizzando l'opzione **nome** , disponibile nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .
+ Quando si crea un progetto o un elemento,  è possibile modificare il nome predefinito usando l'opzione Nome , disponibile nella finestra di dialogo Nuovo **Project** o Aggiungi nuovo elemento . 
 
- Se non si desidera che il sistema del progetto generi il nome predefinito per il progetto o l'elemento, impostare l'elemento [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) su `False` .
+ Se non si vuole che il sistema del progetto generi il nome predefinito per il progetto o l'elemento, impostare [l'elemento ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) su `False` .
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per il modello di elemento standard per una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] classe.
+ Nell'esempio seguente vengono illustrati i metadati per il modello di elemento standard per una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] classe .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -85,5 +85,5 @@ Specifica il nome che verrà generato dal sistema di progetto di Visual Studio p
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

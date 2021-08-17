@@ -29,14 +29,15 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 897001a5ac10e8a8e1eef96feca4113afa5e1ebf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8626486389be4a0d5fbc7cf1a5696cec6bfa798854e8d78e796e6e5f475f2bc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880567"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121373466"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
 
@@ -59,8 +60,8 @@ ms.locfileid: "99880567"
 
 |Attività|Contenuto di supporto|
 |----------| - |
-|**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|- [Aprire la finestra Dettagli classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Note sull'utilizzo di dettagli classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Visualizzazione di informazioni di sola lettura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Creare e modificare membri di tipi:** è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|- [Creazione di membri](creating-and-configuring-type-members.md#create-members)<br />- [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />- [Aggiungere parametri ai metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|- [Aprire la finestra Dettagli classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Note sull'utilizzo di Dettagli classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Visualizzazione di informazioni di sola lettura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Tasti di scelta rapida e mouse nella finestra Diagramma classi e Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Creare e modificare membri di tipi:** è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|- [Creare membri](creating-and-configuring-type-members.md#create-members)<br />- [Modificare i membri del tipo](creating-and-configuring-type-members.md#modify-type-members)<br />- [Aggiungere parametri ai metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Aprire la finestra Dettagli classe
 
@@ -68,7 +69,7 @@ Per impostazione predefinita, la finestra **Dettagli classe** viene visualizzata
 
 - Fare clic con il pulsante destro del mouse su qualsiasi classe nel diagramma per visualizzare un menu di scelta rapida e quindi scegliere **Dettagli classe**.
 
-- Selezionare **Visualizza**  >  **altri**  >  **Dettagli della classe** Windows dalla barra dei menu.
+- Selezionare **Visualizza altri** dettagli  >  **Windows**  >  **classe** dalla barra dei menu.
 
 ## <a name="create-members"></a>Creare membri
 
@@ -100,7 +101,7 @@ Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
 
      Il tipo otterrà lo stato attivo e i relativi contenuti verranno visualizzati nella finestra **Dettagli classe**.
 
-2. Nella barra degli strumenti della finestra **Dettagli classe** fare clic sull'icona superiore e scegliere **nuovo \<member>** dall'elenco a discesa.
+2. Nella barra **degli strumenti della finestra Dettagli** classe fare clic sull'icona superiore e selezionare **Nuovo \<member>** nell'elenco a discesa.
 
      Il cursore si sposta nel campo **Nome** in una riga per il tipo di membro che si vuole aggiungere. Se, ad esempio, è stata selezionata l'opzione **Nuova proprietà**, il cursore si sposta in una nuova riga nella sezione **Proprietà** della finestra **Dettagli classe**.
 
@@ -116,7 +117,7 @@ Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
 
      Il tipo otterrà lo stato attivo e i relativi contenuti verranno visualizzati nella finestra **Dettagli classe**.
 
-2. Nella sezione che contiene il tipo di membro che si desidera aggiungere nella finestra **Dettagli classe** fare clic su **\<add member>** . Se ad esempio si desidera aggiungere un campo, fare clic su **\<add field>** .
+2. Nella sezione **contenente il** tipo di membro da aggiungere della finestra Dettagli classe fare clic su **\<add member>** . Ad esempio, se si vuole aggiungere un campo, fare clic su **\<add field>** .
 
 3. Digitare il nome del membro da creare e premere Invio.
 
@@ -141,7 +142,7 @@ Ciascuna riga di membri visualizza i seguenti elementi:
 
      Ciascun tipo di membro è rappresentato dalla rispettiva icona. Posizionare il cursore del mouse sull'icona del membro per visualizzarne la firma. Fare clic sull'icona del membro o sullo spazio vuoto a sinistra per selezionare la riga.
 
-- **Nome del membro**
+- **Nome membro**
 
      Nella colonna **Nome** della riga di un membro è visualizzato il nome del membro. Questo nome viene visualizzato anche nella proprietà **Nome** nella finestra Proprietà. È possibile utilizzare questa cella per modificare il nome di qualsiasi membro con autorizzazioni di lettura-scrittura.
 
@@ -157,7 +158,7 @@ Ciascuna riga di membri visualizza i seguenti elementi:
 
 - **\<add member>**
 
-     L'ultima riga della finestra **Dettagli classe** contiene il testo **\<add member>** nella cella del **nome** . Facendo clic su questa cella, è possibile creare un nuovo membro. Per altre informazioni, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).
+     L'ultima riga nella **finestra Dettagli** classe contiene il testo **\<add member>** nella **cella** Nome. Facendo clic su questa cella, è possibile creare un nuovo membro. Per altre informazioni, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).
 
 - **Proprietà dei membri nella finestra Proprietà**
 
@@ -210,7 +211,7 @@ Le righe dei parametri contengono i seguenti elementi:
 
      Nell'ultima riga di parametri di un membro la cella **Nome** contiene la stringa **<aggiungi parametro\>**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-Nella **finestra Proprietà** vengono visualizzate le stesse proprietà dei parametri visualizzate nella finestra **Dettagli classe** : **nome**, **tipo**, **modificatore**, **Riepilogo**, nonché la proprietà **predefinita facoltativa** . Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
+Nella **finestra** Proprietà vengono visualizzate le stesse proprietà dei parametri visualizzate nella finestra **Dettagli** classe: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la **proprietà Valore predefinito** facoltativo. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
 
 > [!NOTE]
 > Per aggiungere un parametro a un delegato, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).
@@ -226,9 +227,9 @@ Nella **finestra Proprietà** vengono visualizzate le stesse proprietà dei para
 
 2. Nella finestra **Dettagli classe** espandere la riga del metodo a cui si vuole aggiungere un parametro.
 
-     Viene visualizzata una riga di parametri con rientri, contenente solo una coppia di parentesi e le parole **\<add parameter> .**
+     Viene visualizzata una riga di parametri rientrata contenente solo una coppia di parentesi e le parole **\<add parameter> .**
 
-3. Fare clic su **\<add parameter>** , digitare il nome del nuovo parametro e premere **invio**.
+3. Fare **\<add parameter>** clic su , digitare il nome del nuovo parametro e premere **INVIO.**
 
      Il nuovo parametro verrà aggiunto al metodo e al codice del metodo. Verrà visualizzato nelle finestre **Dettagli classe** e Proprietà.
 
@@ -242,9 +243,9 @@ Nella **finestra Proprietà** vengono visualizzate le stesse proprietà dei para
 
 2. Nella finestra **Dettagli classe** espandere la riga del metodo a cui si vuole aggiungere un parametro facoltativo.
 
-     Viene visualizzata una riga di parametri con rientri, contenente solo una coppia di parentesi e le parole **\<add parameter> .**
+     Viene visualizzata una riga di parametri rientrata contenente solo una coppia di parentesi e le parole **\<add parameter> .**
 
-3. Fare clic su **\<add parameter>** , digitare il nome del nuovo parametro e premere **invio**.
+3. Fare **\<add parameter>** clic su , digitare il nome del nuovo parametro e premere **INVIO.**
 
      Il nuovo parametro verrà aggiunto al metodo e al codice del metodo. Verrà visualizzato nelle finestre **Dettagli classe** e Proprietà.
 

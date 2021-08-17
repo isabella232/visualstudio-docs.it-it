@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9b7ca189ced11eea57e175a06b81161090070b
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: e58522d19cd8cfd37096741238ed2ee0ac9f61bb2bcc0790381324b5558ab18b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388737"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121385627"
 ---
 # <a name="t4-text-template-directives"></a>Direttive di modello di testo T4
 

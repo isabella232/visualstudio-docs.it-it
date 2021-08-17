@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)
-description: Informazioni su come usare la finestra di dialogo impostazioni del compilatore avanzate per specificare le proprietà di configurazione avanzate della compilazione del progetto.
+description: Informazioni su come usare la finestra di dialogo Impostazioni compilazione avanzata per specificare le proprietà avanzate di configurazione della compilazione del progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0335ee8ef1c385da13c2043ffcfa94c264a5934a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 92eceec6d7c7c5194b3cf0322c8e6b1253e1cee82a77dce84976e8500d936376
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92137038"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387629"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)
 
@@ -30,7 +30,7 @@ Per specificare le proprietà di configurazione avanzate della build del progett
 
 1. In **Esplora soluzioni** scegliere un nodo progetto, non il nodo **Soluzione**.
 
-2. Scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la **finestra Creazione progetti** , fare clic sulla scheda **Compila** .
+2. Scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata **Project,** fare clic sulla **scheda** Compila .
 
 3. Nella [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) selezionare la **configurazione** e la **piattaforma**. Nelle configurazioni della build semplificate gli elenchi **Configurazione** e **Piattaforma** non vengono visualizzati. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
@@ -80,8 +80,8 @@ Immettere le costanti personalizzate per l'applicazione in questa casella di tes
 
 **Genera assembly di serializzazione**
 
-Questa impostazione specifica se il compilatore creerà assembly di serializzazione XML. Gli assembly di serializzazione possono migliorare le prestazioni di avvio della classe <xref:System.Xml.Serialization.XmlSerializer>, se è stata usata per serializzare i tipi nel codice. Il valore predefinito per questa opzione è **auto**. **Auto** specifica che gli assembly di serializzazione devono essere generati solo se si è usato <xref:System.Xml.Serialization.XmlSerializer> per codificare i tipi nel codice in XML. **Off** specifica che non saranno mai generati assembly di serializzazione, indipendentemente dal fatto che il codice usi o meno la classe <xref:System.Xml.Serialization.XmlSerializer>. **On** specifica che saranno sempre generati assembly di serializzazione. Gli assembly di serializzazione sono denominati `TypeName`.XmlSerializers.dll.
+Questa impostazione specifica se il compilatore creerà assembly di serializzazione XML. Gli assembly di serializzazione possono migliorare le prestazioni di avvio della classe <xref:System.Xml.Serialization.XmlSerializer>, se è stata usata per serializzare i tipi nel codice. Il valore predefinito per questa opzione è **Auto.** **Auto** specifica che gli assembly di serializzazione devono essere generati solo se si è usato per codificare <xref:System.Xml.Serialization.XmlSerializer> i tipi nel codice in XML. **Off** specifica che non saranno mai generati assembly di serializzazione, indipendentemente dal fatto che il codice usi o meno la classe <xref:System.Xml.Serialization.XmlSerializer>. **On** specifica che saranno sempre generati assembly di serializzazione. Gli assembly di serializzazione sono denominati `TypeName`.XmlSerializers.dll.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

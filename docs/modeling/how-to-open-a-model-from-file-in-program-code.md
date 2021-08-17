@@ -7,14 +7,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 97de2d7e79dc44ff785663c4d04dc65851430472
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: fd9f937f20b9bbb00d1b69692320b676a5a5ca4688b6720bc798053e673cfdd0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387060"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370736"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: aprire un modello da file nel codice del programma
 
@@ -26,24 +27,24 @@ Da un'Visual Studio, è possibile usare ModelBus a questo scopo. ModelBus fornis
 
 Impostare framework **di destinazione** del progetto di applicazione su .NET Framework 4 o versione successiva.
 
-1. Aprire il Visual Studio progetto per l'applicazione in cui si vuole leggere un modello DSL.
+1. Aprire il Visual Studio per l'applicazione in cui si vuole leggere un modello DSL.
 
 2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e quindi scegliere **Proprietà**.
 
-3. Nella finestra delle proprietà del progetto,  nella **scheda Applicazione,** impostare il campo Framework di destinazione **su .NET Framework 4** (o versione successiva).
+3. Nella scheda Applicazione della  finestra delle proprietà  del progetto impostare il campo Framework di destinazione **.NET Framework 4** (o versione successiva).
 
 > [!NOTE]
 > Il framework di destinazione non deve essere **.NET Framework 4 Profilo client**.
 
 ## <a name="references"></a>Riferimenti
 
-Aggiungere questi riferimenti al progetto dell Visual Studio appalto:
+Aggiungere questi riferimenti al progetto di Visual Studio'applicazione:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
   - Se non viene visualizzato nella scheda **.NET** della finestra di dialogo Aggiungi riferimenti , fare clic sulla **scheda** Sfoglia e passare a  `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
 
-- L'assembly DSL, che si trova nella cartella bin del progetto DSL. Il nome è in genere nel formato: *YourCompany*. *YourProject* `.Dsl.dll` .
+- L'assembly DSL, che si trova nella cartella bin del progetto DSL. Il nome è in genere nel formato: *YourCompany.* *YourProject* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>Classi importanti nel DSL
 

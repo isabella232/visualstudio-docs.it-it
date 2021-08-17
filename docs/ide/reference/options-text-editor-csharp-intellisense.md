@@ -16,18 +16,19 @@ ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9181961c1f30a96e5b03434f4ab686024992e29a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33dc002147ab07994dd3d64d64a595b896e9bcf41c594891ca4cf60e4bcb9061
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944017"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372153"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opzioni, Editor di testo, C#, IntelliSense
 
-Usare la pagina delle opzioni **IntelliSense** per modificare le impostazioni che hanno effetto sul comportamento di IntelliSense per C#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  **C#**  >  **IntelliSense**.
+Usare la pagina delle opzioni **IntelliSense** per modificare le impostazioni che hanno effetto sul comportamento di IntelliSense per C#. Per accedere a questa pagina delle opzioni, **scegliere** Opzioni strumenti e quindi Editor di testo  >     >  **C#**  >  **IntelliSense**.
 
 La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
@@ -55,7 +56,7 @@ La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
 - Includi i frammenti quando si digita ?+TAB dopo un identificatore
 
-   Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per i frammenti di codice C# all'elenco di completamento quando **?** + Viene premuto **Tab** dopo un identificatore
+   Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per i frammenti di codice C# all'elenco di completamento quando **?** + **La tabulazione** viene premuta dopo un identificatore
 
 ## <a name="enter-key-behavior"></a>Comportamento del tasto INVIO
 
@@ -87,5 +88,5 @@ Esegue il completamento automatico dei nomi degli oggetti per i membri seleziona
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Uso di IntelliSense](../../ide/using-intellisense.md)

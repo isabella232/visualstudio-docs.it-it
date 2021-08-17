@@ -3,22 +3,21 @@ title: Creare un'app Windows Forms con Visual Basic
 description: Informazioni dettagliate su come creare un'app Windows Forms in Visual Studio con Visual Basic.
 ms.date: 09/27/2019
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 ms.devlang: vb
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3c1aac5bb06ba29b1c70c39db900e704b2f3ec
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: cc70ff9887866f0109edb6fbc41b50be5a292f043723319805cd3674f7e1ce59
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308324"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121373881"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creare un'app Windows Forms in Visual Studio con Visual Basic
 
@@ -26,13 +25,13 @@ In questa breve introduzione all'ambiente di sviluppo integrato (IDE) di Visual 
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 > [!NOTE]
 > Alcune delle schermate contenute in questa esercitazione usano il tema scuro. Per passare al tema scuro, qualora questo non fosse già in uso, vedere le informazioni disponibili nella pagina [Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md).
@@ -41,7 +40,7 @@ Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Stu
 
 ::: moniker range="vs-2022"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina dei download [di Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 > [!NOTE]
 > Alcune delle schermate contenute in questa esercitazione usano il tema scuro. Per passare al tema scuro, qualora questo non fosse già in uso, vedere le informazioni disponibili nella pagina [Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md).
@@ -56,7 +55,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu superiore scegliere **File** > **Nuovo** > **progetto.**
+1. Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
 1. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **Desktop di Windows**. Nel riquadro centrale scegliere il modello **App Windows Forms (.NET Framework)**. Assegnare al file il nome `HelloWorld`.
 
@@ -70,13 +69,13 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Aprire Visual Studio.
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** scegliere il modello App Windows Forms **(.NET Framework)** per Visual Basic.
+1. Nella finestra **Crea un nuovo progetto** scegliere il modello Windows Forms App **(.NET Framework)** per Visual Basic.
 
-   Se si preferisce, è possibile perfezionare la ricerca per ottenere rapidamente il modello desiderato. Ad esempio, immettere o digitare *Windows Forms app* nella casella di ricerca. Scegliere quindi **Visual Basic** dall'elenco Lingua e quindi **scegliere Windows** dall'elenco Piattaforma.  
+   Se si preferisce, è possibile perfezionare la ricerca per ottenere rapidamente il modello desiderato. Ad esempio, immettere o digitare *Windows Forms App* nella casella di ricerca. Scegliere quindi **Visual Basic** dall'elenco Lingua e quindi **scegliere** Windows dall'elenco Piattaforma.  
 
    ![Scegliere il modello Visual Basic per l'app Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
@@ -91,7 +90,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *HelloWorld* nella casella **Nome del progetto**. Scegliere quindi **Crea.**
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *HelloWorld* nella casella **Nome del progetto**. Scegliere quindi **Crea**.
 
    ![Nella finestra Configura il nuovo progetto assegnare al progetto il nome "HelloWorld"](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
 
@@ -99,9 +98,9 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Creazione dell'applicazione
+## <a name="create-the-application"></a>Creare l'applicazione
 
-Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al file, in Visual studio viene aperto un modulo. Un modulo è un'interfaccia utente di Windows. Si creerà un'applicazione "Hello World" aggiungendo controlli al modulo e quindi si eseguirà l'app.
+Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al file, in Visual studio viene aperto un modulo. Un modulo è un'interfaccia utente di Windows. Si creerà un'applicazione "Hello World" aggiungendo controlli al form e quindi si eseguirà l'app.
 
 ### <a name="add-a-button-to-the-form"></a>Aggiungere un pulsante al modulo
 
@@ -109,7 +108,7 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 
      ![Fare clic su Casella degli strumenti per aprire la finestra della casella degli strumenti](../ide/media/vb-toolbox-toolwindow.png)
 
-     Se l'opzione a comparsa Casella degli strumenti **non** è visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, visualizzare **casella**  >  **degli strumenti**. In caso contrario, **premere** + **CTRL ALT** + **X.**
+     Se l'opzione a  comparsa Casella degli strumenti non è visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, visualizzare **la casella degli**  >  **strumenti**. In caso contrario, **premere** + **CTRL** + **ALT+X.**
 
 1. Fare clic sull'icona **Blocca** per ancorare la **Casella degli strumenti**.
 
@@ -130,13 +129,13 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
      ![Aggiungere una funzione al pulsante nel modulo](../ide/media/vb-button-control-function.png)
 
    > [!NOTE]
-   > Se l'elenco è stato in ordine alfabetico nella finestra **Proprietà,** **Button1** viene invece visualizzato nella sezione **(DataBindings).**
+   > Se l'elenco è stato  alfabetico nella finestra Proprietà, **Button1** viene invece visualizzato nella sezione **(DataBindings).**
 
 ### <a name="add-a-label-to-the-form"></a>Aggiungere un'etichetta al modulo
 
 È stato aggiunto un controllo pulsante per creare un'azione. Ora si aggiungerà un controllo etichetta al quale inviare del testo.
 
-1. Selezionare il **controllo Etichetta** dalla finestra **Casella degli** strumenti, quindi trascinarlo nel form e rilasciarlo sotto il pulsante Fare **clic su** questo.
+1. Selezionare il **controllo Etichetta** dalla finestra **Casella degli** strumenti e trascinarlo nel form e rilasciarlo sotto il pulsante Fare clic su **questo** pulsante.
 
 1. Nella sezione **Progettazione** o **(DataBindings)** della  finestra Proprietà modificare il nome di **Label1** in `lblHelloWorld` e quindi premere **INVIO.**
 
@@ -146,7 +145,7 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 
       In alternativa è possibile espandere **Form1.vb** in **Esplora soluzioni** e quindi fare clic su **Form1**.
 
-1. Nella finestra **Form1.vb,** tra le righe **Private Sub** e **End Sub,** digitare o immettere `lblHelloWorld.Text = "Hello World!"` come illustrato nello screenshot seguente:
+1. Nella finestra **Form1.vb,** tra le righe **Private Sub** ed **End Sub,** digitare o immettere `lblHelloWorld.Text = "Hello World!"` come illustrato nello screenshot seguente:
 
      ![Aggiungere codice al modulo](../ide/media/vb-add-code-to-the-form.png)
 

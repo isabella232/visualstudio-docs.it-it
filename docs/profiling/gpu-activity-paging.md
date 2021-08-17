@@ -1,6 +1,6 @@
 ---
 title: Attività GPU (paging) | Microsoft Docs
-description: Esaminare i segmenti attività GPU (paging) nella scheda thread del Visualizzatore di concorrenza. I segmenti rappresentano i tempi di elaborazione delle richieste di paging da parte della GPU.
+description: Esaminare i segmenti Attività GPU (paging) nella scheda Thread del visualizzatore di concorrenza. I segmenti rappresentano i momenti in cui la GPU stava elaborando le richieste di paging.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: 95284ac5-3492-4f7b-a79f-7d2840a07679
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4467d2a885f4076461110fe288b4e80169158ede
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e114f77612f9e1f4a086e6852a55247c4769cbe75e164220a2250b7a316ebae5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877096"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368617"
 ---
 # <a name="gpu-activity-paging"></a>Attività GPU (paging)
 I segmenti **Attività GPU (paging)** nella scheda **Thread** rappresentano i casi in cui la GPU stava eseguendo l'elaborazione delle richieste di paging.  La lunghezza di un segmento rappresenta l'intervallo di tempo per cui la GPU ha elaborato un pacchetto di paging di accesso diretto alla memoria (DMA). In genere, i pacchetti di paging vengono associati al trasferimento di memoria tra la CPU e la GPU.

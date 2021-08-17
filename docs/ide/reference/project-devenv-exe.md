@@ -1,6 +1,6 @@
 ---
 title: -Project (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando devenv del progetto per identificare un singolo progetto all'interno della configurazione della soluzione specificata per compilare, pulire, ricompilare o distribuire il progetto.
+description: Informazioni su come usare l'opzione Project della riga di comando devenv per identificare un singolo progetto all'interno della configurazione di soluzione specificata per compilare, pulire, ricompilare o distribuire il progetto.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61125c743cb33ccaccbb15c1345aa01fbc57bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41915f0fc2c7e981438c9799d1a26031ddda9af162a939d228307288016a5d63
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952902"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372173"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -37,7 +38,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="arguments"></a>Argomenti
 
-- *NomeSoluzione*
+- *Solutionname*
 
   Obbligatorio. Il percorso completo e il nome del file della soluzione.
 
@@ -57,13 +58,13 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da applicare al `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`).
 
-- `/Out`*OutputFileName*
+- `/Out`*OutputFilename*
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
 ## <a name="remarks"></a>Commenti
 
-- Deve essere usato come parte di un `devenv` `/Build` `/Clean` comando,, `/Rebuild` o `/Deploy` .
+- Deve essere usato parte di un `devenv` `/Build` comando , , o `/Clean` `/Rebuild` `/Deploy` .
 
 - Racchiudere le stringhe che includono spazi tra virgolette doppie.
 

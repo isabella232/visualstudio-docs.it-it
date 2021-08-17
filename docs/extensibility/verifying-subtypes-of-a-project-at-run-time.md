@@ -1,5 +1,5 @@
 ---
-title: Verifica dei sottotipi di un progetto in fase di | Microsoft Docs
+title: Verifica dei sottotipi di un Project in fase di esecuzione | Microsoft Docs
 description: Informazioni su come fare in modo che il pacchetto VSPackage verifichi la presenza di un sottotipo di progetto personalizzato specificato da cui dipende.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,17 +11,18 @@ ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 621a40e1857d7c78ec4c5be08a3b7c3808a0d48b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: fca9d6b7a85de4e9c63f459d1ace0e832143f182a664cad7b6186007dd703a27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905473"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387798"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>Verificare i sottotipi di un progetto in fase di esecuzione
-Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzato deve includere la logica per cercare tale sottotipo in modo che possa avere esito negativo correttamente se il sottotipo non è presente. La procedura seguente illustra come verificare la presenza di un sottotipo specificato.
+Un VSPackage che dipende da un sottotipo di progetto personalizzato deve includere la logica per cercare il sottotipo in modo che possa non riuscire correttamente se il sottotipo non è presente. Nella procedura seguente viene illustrato come verificare la presenza di un sottotipo specificato.
 
 ### <a name="to-verify-the-presence-of-a-subtype"></a>Per verificare la presenza di un sottotipo
 
@@ -68,7 +69,7 @@ Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzato de
     }
     ```
 
-## <a name="see-also"></a>Vedere anche
-- [Sottotipi di progetto](../extensibility/internals/project-subtypes.md)
-- [Progettazione di sottotipi di progetto](../extensibility/internals/project-subtypes-design.md)
+## <a name="see-also"></a>Vedi anche
+- [Project sottotipi](../extensibility/internals/project-subtypes.md)
+- [progettazione Project sottotipi](../extensibility/internals/project-subtypes-design.md)
 - [Proprietà e metodi estesi dai sottotipi di progetto](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

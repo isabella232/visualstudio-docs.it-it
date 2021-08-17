@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae0e5f2516dd1f78aea880289f549ca3a44f3bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6dcdf6b1b916a5f5f38137967d3d2a33072bca8f72d3ceb42b0b2ca27f7d6fc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881958"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386537"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creare un ambiente di compilazione con più computer
 
@@ -104,9 +104,9 @@ Si noti che il nome della cartella *Programmi* dipende dal sistema operativo ins
 
     - %Programmi%\Common Files\Merge Modules\
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\Tools\ProjectComponents\
 
     - %Programmi%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
@@ -116,23 +116,23 @@ Si noti che il nome della cartella *Programmi* dipende dal sistema operativo ins
 
 3. Copiare questi file dal computer host nel computer di compilazione:
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msobj110.dll
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdb110.dll
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbcore.dll
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbsrv.exe
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msvcdis110.dll
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\makehm.exe
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\vsvars32.bat
 
-4. Le librerie di runtime di Visual C++ seguenti sono necessarie solo se si eseguono output di compilazione nel computer di compilazione, ad esempio come parte di un test automatizzato. I file si trovano in genere nelle sottocartelle della cartella *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x86* o *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x64* , a seconda dell'architettura del sistema. Nei sistemi x86 copiare i file binari x86 nella cartella *\Windows\System32*. Nei sistemi x64 copiare i file binari x86 nella cartella *Windows\SysWOW64* e i file binari x64 nella cartella *Windows\System32*.
+4. Le librerie di runtime di Visual C++ seguenti sono necessarie solo se si eseguono output di compilazione nel computer di compilazione, ad esempio come parte di un test automatizzato. I file si trovano in genere in sottocartelle nella cartella *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x86* o *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x64,* a seconda dell'architettura di sistema. Nei sistemi x86 copiare i file binari x86 nella cartella *\Windows\System32*. Nei sistemi x64 copiare i file binari x86 nella cartella *Windows\SysWOW64* e i file binari x64 nella cartella *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -257,7 +257,7 @@ Per usare MSBuild nel computer di compilazione, è necessario impostare le varia
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Usare vcvarsall.bat per impostare le variabili di ambiente
 
-Aprire una finestra del **prompt dei comandi** nel computer di compilazione ed eseguire *%Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\VC\vcvarsall.bat*. È possibile utilizzare un argomento della riga di comando per specificare il set di strumenti che si desidera utilizzare, ad esempio x86, x64 nativo o compilatore incrociato x64. Se non si specifica un argomento della riga di comando, viene utilizzato il set di strumenti x86.
+Aprire una **finestra del prompt** dei comandi nel computer di compilazione ed eseguire *%Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\VC\vcvarsall.bat*. È possibile utilizzare un argomento della riga di comando per specificare il set di strumenti che si desidera utilizzare, ad esempio x86, x64 nativo o compilatore incrociato x64. Se non si specifica un argomento della riga di comando, viene utilizzato il set di strumenti x86.
 
 Nella tabella seguente vengono descritti gli argomenti supportati di *vcvarsall.bat*:
 
@@ -305,7 +305,7 @@ MSBuild richiede che siano installati assembly aggiuntivi nella GAC del computer
 
      Aprire una finestra del **prompt dei comandi** con diritti amministrativi ed eseguire questo comando per ogni file:
 
-     **gacutil-i \<file>**
+     **gacutil -i \<file>**
 
     > [!NOTE]
     > Affinché un assembly venga installato completamente nella GAC, potrebbe essere necessario riavviare il computer.
@@ -316,7 +316,7 @@ MSBuild richiede che siano installati assembly aggiuntivi nella GAC del computer
 
 Per usare *msbuild.exe* al prompt dei comandi, eseguire il comando seguente, dove *soluzione.sln* è un segnaposto per il nome della soluzione.
 
-**msbuild** *soluzione.sln*
+**msbuild** *solution.sln*
 
 Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
 
@@ -327,7 +327,7 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 > [!NOTE]
 > È necessario disabilitare la compilazione incrementale in modo che *tracker.exe* non generi un errore durante la compilazione. Per disabilitare la compilazione incrementale, impostare il seguente parametro di compilazione:
 >
-> **msbuild** *soluzione.sln* **/p:TrackFileAccess=false**
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**
 
 1. Creare una directory *Depot* sul computer host.
 

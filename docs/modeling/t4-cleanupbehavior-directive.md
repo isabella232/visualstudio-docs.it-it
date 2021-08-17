@@ -7,14 +7,15 @@ ms.topic: reference
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 078b688c238bea47e4ab38b3302708bf5e5189cf
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 454522337d57f5f480aecdc30ef69efd39d6a11ab181f6a0324a84109e9c09db
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386345"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370489"
 ---
 # <a name="t4-cleanupbehavior-directive"></a>Direttiva T4 CleanUpBehavior
 

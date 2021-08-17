@@ -1,20 +1,21 @@
 ---
 title: Suggerimenti per migliorare le prestazioni
-description: Informazioni su come ottimizzare determinate funzionalità di Visual Studio che potrebbero non essere usate per migliorare le prestazioni.
+description: Informazioni su come ottimizzare Visual Studio funzionalità che potrebbero non essere in uso per migliorare le prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ef6452ffcf86875946a1d5092f61f53ef6257eee53146617e28b34ff4ce27f18
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683764"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386550"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -35,23 +36,23 @@ Visual Studio riaprire automaticamente i documenti lasciati aperti nella session
 
 Tramite una barra gialla, Visual Studio indica se il ripristino automatico dei documenti sta rallentando considerevolmente il caricamento di una soluzione. È possibile disabilitare la riapertura automatica dei file seguendo questa procedura:
 
-1. Selezionare **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** .
+1. Selezionare **Opzioni**  >  **strumenti** per aprire la **finestra di** dialogo Opzioni.
 
-1. Nella pagina **progetti e soluzioni**  >  **generale** deselezionare **Riapri documenti al caricamento della soluzione**.
+1. Nella pagina **Progetti e soluzioni** Generale  >  **deselezionare** Riapri documenti al caricamento della **soluzione.**
 
 Se si disabilita il ripristino automatico dei file, è possibile accedere velocemente ai file da aprire usando il comando [Vai a](../ide/go-to.md):
 
 - Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere **CTRL**+**T**.
 
-- Passare all'ultimo percorso di modifica in una soluzione usando **modifica**  >  **Vai a**  >  **Vai a percorso Ultima modifica** o premendo **CTRL** + **MAIUSC** indietro + .
+- Passare all'ultima posizione di modifica in una soluzione usando Modifica Vai a vai alla posizione dell'ultima modifica oppure  >    >  premendo **CTRL** +  + **MAIUSC+BACKSPACE.**
 
-- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **modifica**  >  **Vai a**  >  **Vai a file recente** oppure premere **CTRL** + **1**, **CTRL** + **R**.
+- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Modifica**  >  **Vai a** vai al file  >  **recente** oppure premere **CTRL** + **1**,  + **CTRL+R.**
 
 ## <a name="configure-debugging-options"></a>Configurare le opzioni di debug
 
 Se in genere si verificano problemi di memoria insufficiente durante le sessioni di debug, è possibile ottimizzare le prestazioni apportando una o più modifiche alla configurazione.
 
-- **Abilita Just My Code**
+- **Abilitare Just My Code**
 
     L'ottimizzazione più semplice consiste nell'abilitazione della funzionalità **Just My Code** che carica solo i simboli per il proprio progetto. L'abilitazione di questa funzionalità può offrire un notevole risparmio di memoria per il debug delle applicazioni gestite (.NET). Questa opzione è già abilitata per impostazione predefinita in alcuni tipi di progetto.
 
@@ -61,9 +62,9 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     Per il debug nativo, il caricamento dei file di simboli (con estensione *pdb*) è dispendioso in termini di risorse di memoria. È possibile configurare le impostazioni dei simboli del debugger per risparmiare memoria. In genere, si configura la soluzione per caricare solo i moduli del proprio progetto.
 
-    Per specificare il caricamento dei simboli, scegliere **strumenti**  >  **Opzioni**  >  **debug**  >  **simboli**.
+    Per specificare il caricamento dei simboli, scegliere **Strumenti**  >  **Opzioni Simboli**  >  **di**  >  **debug**.
 
-    Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli Per aprire la finestra durante il debug, scegliere **debug**  >  . **Windows**  >  **Moduli**.)
+    Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli Per aprire la finestra durante il debug, scegliere **Debug**  >  **Windows**  >  **Moduli**.)
 
     Per altre informazioni, vedere [Understand symbol files](?view=vs-2019&preserve-view=true) (Informazioni sui file dei simboli).
 
@@ -71,7 +72,7 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     È consigliabile disabilitare la profilatura della CPU dopo l'uso. Questa funzionalità può utilizzare grandi quantità di risorse. Dopo aver abilitato la profilatura della CPU, questo stato viene mantenuto per le sessioni di debug successive, perciò è preferibile disattivarla al termine. È possibile risparmiare risorse disabilitando gli strumenti di diagnostica durante il debug se la funzionalità offerte non sono necessarie.
 
-    Per disabilitare il **strumenti di diagnostica**, avviare una sessione di debug, selezionare **strumenti**  >  **Opzioni**  >  **debug**  >  **generale**, quindi deselezionare l'opzione **Abilita strumenti di diagnostica durante il debug** .
+    Per disabilitare la **Strumenti di diagnostica**, avviare una sessione di debug, selezionare Strumenti  >  **Opzioni**  >  **Debug**  >  **Generale**,  quindi deselezionare l'opzione Strumenti di diagnostica durante il debug .
 
     Per altre informazioni, vedere [Strumenti di profilatura](../profiling/profiling-feature-tour.md).
 
@@ -109,49 +110,49 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
    ::: moniker range="vs-2017"
 
-    Per disabilitare le estensioni, andare a **Strumenti** > **Estensioni e aggiornamenti** e disabilitare l'estensione specifica.
+    Per disabilitare le estensioni, passare **a Strumenti** Estensioni > **e aggiornamenti** e disabilitare un'estensione specifica.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    Per disabilitare le estensioni, andare a **Estensioni** > **Gestisci estensioni** e disabilitare l'estensione specifica.
+    Per disabilitare le estensioni, passare **a Estensioni** > **Gestisci estensioni** e disabilitare una determinata estensione.
 
    ::: moniker-end
 
 - **Disabilitare la modalità mappa**
 
-    [**Modalità mappa**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) Visualizza le righe di codice, in miniatura, sulla barra di scorrimento. La modalità mappa è abilitata per impostazione predefinita.
+    [**La modalità mappa**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) visualizza le righe di codice, in miniatura, sulla barra di scorrimento. La modalità mappa è abilitata per impostazione predefinita.
 
-    Per disabilitare la modalità mappa, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **tutti i linguaggi**  >  **barre di scorrimento** e nella sezione **comportamento** deselezionare l'opzione **Usa modalità mappa per barra di scorrimento verticale** .
+    Per disabilitare la modalità mappa, passare a Strumenti Opzioni Editor di testo Barre di scorrimento Tutti i linguaggi e nella sezione Comportamento deselezionare l'opzione Usa modalità mappa per barra  >    >    >    >   **di scorrimento** verticale. 
 
 - **Disabilitare il ritorno a capo automatico**
 
-    A [**capo automatico**](./reference/how-to-manage-word-wrap-in-the-editor.md) viene visualizzata la parte di una lunga riga di codice che si estende oltre la larghezza corrente della finestra dell'editor di codice. Il ritorno a capo automatico è on per impostazione predefinita.
+    [**A capo automatico**](./reference/how-to-manage-word-wrap-in-the-editor.md) visualizza la parte di una lunga riga di codice che si estende oltre la larghezza corrente della finestra dell'editor di codice. Il ritorno a capo automatico è on per impostazione predefinita.
 
-    Per disabilitare il ritorno a capo automatico per un progetto su cui si sta lavorando, vedere **modificare**  >  **Advanced**  >  **Word Wrap**. È possibile abilitare o disabilitare questa impostazione usando gli stessi comandi di menu.
+    Per disabilitare il ritorno a capo automatico per un progetto su cui si sta lavorando, passare a **Modifica ritorno a**  >  **capo**  >  **automatico avanzato.** È possibile attivare o disattivare questa impostazione usando gli stessi comandi di menu.
 
-    Per disabilitare il ritorno a capo automatico per tutti i progetti, passare a **strumenti**  >  **Opzioni**  >  **generale**  >  **editor di testo**  >  **tutti i linguaggi**  >  **generale** e nella sezione **Impostazioni** deselezionare l'opzione a **capo automatico** .
+    Per disabilitare il ritorno a capo automatico per tutti i progetti, passare a Strumenti Opzioni Editor di testo Generale Tutti i linguaggi Generale e nella sezione Impostazioni deselezionare l'opzione A capo  >    >    >    >    >  automatico.  
 
 - **Disabilitare la finestra di progettazione XAML**
 
     La finestra di progettazione XAML è abilitata per impostazione predefinita, ma usa risorse solo se si apre un file con estensione *xaml*. Se si utilizzano file XAML ma non si intende usare la funzionalità della finestra di progettazione, disabilitare questa funzionalità per liberare memoria.
 
-    Per disabilitare finestra di progettazione XAML, passare a **strumenti**  >  **Opzioni**  >  **finestra di progettazione XAML**  >  **Abilita finestra di progettazione XAML** e deselezionare l'opzione.
+    Per disabilitare finestra di progettazione XAML, passare **a** Strumenti  >  **Opzioni**  >  **finestra di progettazione XAML**  >  **Abilita finestra di progettazione XAML** e deselezionare l'opzione.
 
 - **Rimuovere i carichi di lavoro**
 
     È possibile utilizzare il programma di installazione di Visual Studio per rimuovere i carichi di lavoro che non vengono più utilizzati. Questa azione può ridurre le esigenze di memoria di avvio ed esecuzione escludendo i pacchetti e gli assembly non più necessari.
 
-- **Aggiungere i file non rilevati a local. gitignore**
+- **Aggiungere file non tracciati al file con estensione gitignore locale**
 
-    Visual Studio esegue il comando git `git status` con file non tracciati per offrire un'esperienza uniforme quando si aggiungono nuovi file a un repository. Quando è presente un numero elevato di file non tracciati, `git status` può utilizzare memoria aggiuntiva. Per ignorare questi file e migliorare le prestazioni di `git status` , è possibile aggiungere questi file o cartelle al file con estensione gitignore locale. Per accedere al file, passare a **git**  >  **Settings**  >  **git Settings Settings (impostazioni del repository git**). Quindi, nella sezione **file git** fare clic su **Aggiungi** per creare un file con estensione gitignore oppure fare clic su **modifica** se ne è già presente uno.
+    Visual Studio esegue il comando Git con file non tracciati per offrire un'esperienza uniforme quando `git status` si aggiungono nuovi file a un repository. Quando è presente un numero elevato di file non tracciati, può `git status` utilizzare memoria aggiuntiva. Per ignorare questi file e migliorare le prestazioni di , è possibile aggiungere questi file o cartelle `git status` al file con estensione gitignore locale. Per accedere al file, passare a **Git**  >  **Impostazioni**  >  **Git Repository Impostazioni**. Quindi, nella **sezione File Git** fare clic su Aggiungi per creare  un file con estensione gitignore oppure fare clic su Modifica se ne è già presente uno. 
 
 ## <a name="force-a-garbage-collection"></a>Imporre una Garbage Collection
 
 CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se in presenza di una quantità elevata di garbage in attesa di raccolta si forza una Garbage Collection, si noterà una riduzione nel consumo di memoria da parte del processo *devenv.exe* in **Gestione attività**. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
 
-Per forzare un Garbage Collection, usare il tasto di scelta rapida: **CTRL** + **ALT** + **MAIUSC** + **F12**, **CTRL** + **ALT** + **MAIUSC** + **F12** (premere due volte).
+Per forzare un'operazione di Garbage Collection, usare il tasto di scelta rapida **CTRL** + **ALT** + **MAIUSC** + **F12,** **CTRL** + **ALT** + **MAIUSC** + **F12** (premere due volte).
 
 Se l'imposizione della Garbage Collection risulta particolarmente efficiente nel proprio scenario, compilare un report tramite lo strumento per il feedback di Visual Studio poiché questo comportamento è in genere sintomo di un bug.
 

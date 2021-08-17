@@ -1,22 +1,22 @@
 ---
 title: 'Esercitazione 2: Creare un quiz matematico a tempo'
-description: Informazioni su come creare un quiz in cui l'esecutore del quiz deve rispondere a quattro problemi aritmetici casuali entro un determinato periodo di tempo.
+description: Informazioni su come creare un quiz in cui il quiz deve rispondere a quattro problemi aritmetici casuali entro un tempo specificato.
 ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
-ms.technology: vs-ide-general
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6529146f279eddfe010af60df864fe64f5550fb1
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: fc4a86e7201497b035cae62944cdaeaa3b7264461b82d79b9bd1ae59706794f7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296742"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121371315"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: Creare un quiz matematico a tempo
 
@@ -35,7 +35,7 @@ Questa esercitazione illustra le attività seguenti:
 
 - Eseguire operazioni aritmetiche di base nel codice.
 
-Al termine, il quiz sarà simile allo screenshot seguente, ad eccezione dei numeri diversi:
+Al termine, il quiz sarà simile allo screenshot seguente, ad eccezione di numeri diversi:
 
 ![Quiz matematico con quattro problemi](../ide/media/express_finishedquiz.png)
 
@@ -52,14 +52,14 @@ Al termine, il quiz sarà simile allo screenshot seguente, ad eccezione dei nume
 |[Passaggio 7: Aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md)|Aggiungere problemi di moltiplicazione e divisione che generano numeri casuali, utilizzano il timer e controllano le risposte corrette.|
 |[Passaggio 8: Personalizzare il quiz](../ide/step-8-customize-the-quiz.md)|Provare altre funzionalità, ad esempio la modifica dei colori e l'aggiunta di un suggerimento.|
 
-Sono disponibili anche eccezionali risorse di formazione video gratuite. Per altre informazioni sulla programmazione in C#, vedere [nozioni fondamentali su c#: sviluppo per principianti assoluti](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
+Sono disponibili anche risorse di video learning gratuite. Per altre informazioni sulla programmazione in C#, vedere [Nozioni fondamentali su C#: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto e aggiungere etichette al form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)**.
+Per iniziare l'esercitazione, iniziare **[con Passaggio 1: Creare un progetto e aggiungere etichette al modulo](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
-* [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)
+* [Visual Basic esercitazioni](../get-started/visual-basic/index.yml)
 * [Esercitazioni su C++](/cpp/get-started/tutorial-console-cpp)

@@ -3,23 +3,22 @@ title: Funzionalità di accessibilità di Visual Studio
 description: Altre informazioni sulle funzionalità di accessibilità e utilità che consentono di rendere più accessibile sia il sistema operativo Windows sia il gruppo sviluppatore Visual Studio a tutti gli utenti, anche agli utenti disabili.
 ms.date: 08/23/2019
 ms.topic: conceptual
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a2db3f3585dbfa68bf217cc29fb7b73cc35485
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c71c28cde3a24aa1cc97a2ffeb7f1fa84eb16ffc1b857f36492cb0facff6f59b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939799"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372855"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
 
@@ -40,15 +39,15 @@ Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disp
 
 Per altre informazioni, vedere i seguenti argomenti:
 
-- [Procedura: impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Procedura: Impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Procedura: utilizzare esclusivamente la tastiera](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Procedura: Usare la tastiera in modo esclusivo](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 - [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [Procedura: modificare i tipi di carattere e i colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
 > Le informazioni contenute in questa pagina potrebbero essere applicabili solo agli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, visitare il sito Web [Accessibilità in Microsoft](https://www.microsoft.com/accessibility/) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa pagina sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili anche in altre lingue.

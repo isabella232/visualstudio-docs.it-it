@@ -11,17 +11,18 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48560f135d73c4e53ba132845f4c768cdf4ac982
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 888a0e0647fe84861f430c31449e86944a7193bfe7cc56583a35f273849d431d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904877"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388153"
 ---
 # <a name="sccaddfromscc-function"></a>Funzione SccAddFromScc
-Questa funzione consente all'utente di cercare i file già presenti nel sistema di controllo del codice sorgente e successivamente di renderli parte del progetto corrente. Ad esempio, questa funzione può ottenere un file di intestazione comune nel progetto corrente senza copiare il file. La matrice di file restituita, , contiene l'elenco di file che `lplpFileNames` l'utente vuole aggiungere al progetto IDE.
+Questa funzione consente all'utente di cercare i file già presenti nel sistema di controllo del codice sorgente e successivamente di renderli parte del progetto corrente. Ad esempio, questa funzione può ottenere un file di intestazione comune nel progetto corrente senza copiare il file. La matrice restituita di `lplpFileNames` file, , contiene l'elenco di file che l'utente vuole aggiungere al progetto IDE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +46,7 @@ SCCRTN SccAddFromScc (
 
  lpnFiles
 
-[in, out] Buffer per il numero di file da aggiungere. Questo valore è `NULL` se la memoria a cui punta deve essere `lplpFileNames` rilasciata. Per informazioni dettagliate, vedere La sezione Osservazioni.
+[in, out] Buffer per il numero di file da aggiungere. Si tratta di `NULL` se la memoria a cui punta deve essere `lplpFileNames` rilasciata. Per informazioni dettagliate, vedere La sezione Osservazioni.
 
  lplpFileNames
 
@@ -70,8 +71,8 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` è un `char ***` puntatore . Il plug-in del controllo del codice sorgente inserisce un puntatore a una matrice di puntatori ai nomi di file, passando l'elenco in modo standard per questa API.
 
 > [!NOTE]
-> Le versioni iniziali dell'API VSSCI non hanno fornito un modo per indicare il progetto di destinazione per i file aggiunti. A tale scopo, la semantica del parametro è stata migliorata in modo da renderlo un parametro `lplpFIleNames` in/out anziché un parametro di output. Se viene specificato un solo file, ad esempio il valore a cui punta = 1, il primo `lpnFiles` elemento di contiene la cartella di `lplpFileNames` destinazione. Per usare questa nuova semantica, l'IDE chiama `SccSetOption` la funzione con il parametro impostato su `nOption` `SCC_OPT_SHARESUBPROJ` . Se un plug-in del controllo del codice sorgente non supporta la semantica, restituisce `SCC_E_OPTNOTSUPPORTED` . In questo modo si disabilita l'uso della **funzionalità Aggiungi dal controllo del codice sorgente.** Se un plug-in supporta la funzionalità Aggiungi **dal** controllo del codice sorgente ( ), deve `SCC_CAP_ADDFROMSCC` supportare la nuova semantica e restituire `SCC_I_SHARESUBPROJOK` .
+> Le versioni iniziali dell'API VSSCI non hanno fornito un modo per indicare il progetto di destinazione per i file aggiunti. A tale scopo, la semantica del parametro è stata migliorata in modo da renderlo un parametro `lplpFIleNames` in/out anziché un parametro di output. Se viene specificato un solo file, ad esempio il valore a cui punta = 1, il primo `lpnFiles` elemento di contiene la cartella di `lplpFileNames` destinazione. Per usare questa nuova semantica, l'IDE chiama la `SccSetOption` funzione con il parametro impostato su `nOption` `SCC_OPT_SHARESUBPROJ` . Se un plug-in del controllo del codice sorgente non supporta la semantica, restituisce `SCC_E_OPTNOTSUPPORTED` . In questo modo si disabilita l'uso della **funzionalità Aggiungi dal controllo del** codice sorgente. Se un plug-in supporta la funzionalità Aggiungi **dal** controllo del codice sorgente ( ), deve `SCC_CAP_ADDFROMSCC` supportare la nuova semantica e restituire `SCC_I_SHARESUBPROJOK` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

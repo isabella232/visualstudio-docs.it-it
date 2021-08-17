@@ -1,6 +1,6 @@
 ---
 title: Attività XSD | Microsoft Docs
-description: Informazioni su come MSBuild utilizza l'attività XSD per eseguire il wrapping dello strumento XML Schema Definition xsd.exe, che genera file di schema o di classe da un'origine.
+description: Informazioni su MSBuild'attività XSD per eseguire il wrapping dello strumento XML Schema Definition xsd.exe, che genera file di schema o di classe da un'origine.
 ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
@@ -20,14 +20,15 @@ ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5885add3c772bf3b2e42b556199fda3deb83426c55dccb3b5eb908a217e9efca
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960325"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369384"
 ---
 # <a name="xsd-task"></a>XSD (attività)
 
@@ -42,25 +43,25 @@ Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera
 
 - **AdditionalOptions**
 
-     Parametro **stringa** facoltativo.
+     Parametro **String** facoltativo.
 
-     Un elenco di opzioni come specificato sulla riga di comando. Ad esempio,/ \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD**.
+     Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, / \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD**.
 
 - **GenerateFromSchema**
 
-  Parametro **stringa** facoltativo.
+  Parametro **String** facoltativo.
 
   Specifica i tipi generati dallo schema specificato.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione XSD.
 
-  - **classi**  -  **/Classes**
+  - **classi**  -  **/classes**
 
-  - **set di dati**  -  **/DataSet**
+  - **set di dati**  -  **/dataset**
 
 - **Lingua**
 
-     Parametro **stringa** facoltativo.
+     Parametro **String** facoltativo.
 
      Specifica il linguaggio di programmazione da usare per il codice generato.
 
@@ -68,7 +69,7 @@ Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera
 
 - **Namespace**
 
-     Parametro **stringa** facoltativo.
+     Parametro **String** facoltativo.
 
      Specifica lo spazio dei nomi del runtime per i tipi generati.
 
@@ -86,7 +87,7 @@ Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera
 
 - **TrackerLogDirectory**
 
-     Parametro **stringa** facoltativo.
+     Parametro **String** facoltativo.
 
      Specifica la directory per il log di Tracker.
 

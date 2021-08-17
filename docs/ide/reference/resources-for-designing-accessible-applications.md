@@ -3,8 +3,6 @@ title: Risorse per la progettazione di applicazioni accessibili
 description: Informazioni su come creare applicazioni accessibili semplici da usare da parte di persone affette da disabilità.
 ms.date: 08/27/2019
 ms.topic: conceptual
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,14 +12,15 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6fb030f1f8377ac6e2f7a458f68d6ababf9a6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f361a2e6a14b6a40a9efa6faf8f104716c60255f093a8d0bee1d2d234b11f6c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957946"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387093"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
 

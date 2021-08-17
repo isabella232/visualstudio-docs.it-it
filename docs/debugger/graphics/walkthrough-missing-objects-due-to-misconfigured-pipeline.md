@@ -1,6 +1,6 @@
 ---
 title: Oggetti mancanti a causa di una pipeline non configurata correttamente
-description: Seguire un'indagine che trova una pipeline non configurata correttamente. Mostra l'elenco di eventi di grafica, le fasi della pipeline grafica e lo stack di chiamate eventi di grafica.
+description: Seguire un'indagine che trova una pipeline non configurata correttamente. Mostra l'uso dell'elenco eventi di grafica, delle fasi della pipeline grafica e dello stack di chiamate degli eventi di grafica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b2ce885969ec8b9e382f453eddf388a850e8ac7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a88882828cdab20e5492dfebceee90fbc8b576ebe1d5f2f6fda4170a1731e667
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906503"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435966"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto
 Questa procedura dettagliata descrive come usare gli strumenti della barra degli strumenti Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per individuare un problema dovuto a un oggetto mancante a causa di un pixel shader non impostato.
@@ -73,7 +74,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
 
 #### <a name="to-examine-device-context"></a>Per esaminare il contesto di dispositivo
 
-1. Aprire il **contesto di dispositivo d3d11**. Nella finestra **fasi pipeline grafica** scegliere il collegamento **sul ID3D11DeviceContext** che fa parte della `DrawIndexed` chiamata visualizzata nella parte superiore della finestra.
+1. Aprire il **contesto di dispositivo d3d11**. Nella finestra **Fasi pipeline** grafica scegliere il collegamento **ID3D11DeviceContext** che fa parte della chiamata visualizzata nella parte superiore `DrawIndexed` della finestra.
 
 2. Esaminare lo stato del dispositivo visualizzato nella scheda del **contesto di dispositivo d3d11** per verificare che nessun pixel shader era attivo durante la chiamata di disegno. In questo scenario la voce **Informazioni generali shader**, visualizzata sotto **Stato pixel shader**, indica che lo shader è **NULL**:
 
@@ -99,7 +100,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
 
    Per correggere il problema, assegnare il pixel shader corretto usando il primo parametro della chiamata API `ID3D11DeviceContext::PSSetShader` .
 
-   ![Codice sorgente&#43;&#43; C corretto](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")
+   ![Codice sorgente C&#43;&#43; corretto](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")
 
    Dopo aver corretto il codice, è possibile ricompilare ed eseguire l'app per verificare che il problema di rendering sia stato risolto:
 

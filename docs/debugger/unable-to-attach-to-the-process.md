@@ -1,6 +1,6 @@
 ---
-title: Non è possibile connettersi al processo | Microsoft Docs
-description: Informazioni sul significato di "Impossibile connettersi al processo", dei due scenari che lo provocano e delle soluzioni.
+title: Impossibile connettersi al processo | Microsoft Docs
+description: Informazioni sul significato di "Impossibile connettersi al processo", sui due scenari che lo causano e sulle soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f83a4f262e394222d420c2fec187e67ddfbfaf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1509e5a24bf1f61f164c9dae6864072ce415b57e14314dfdb0f16971d9315456
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870415"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435725"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossibile connettersi al processo
 Impossibile connettersi al processo. Accesso negato per il componente del debugger che si trova sul server durante la connessione a questo computer.
@@ -34,9 +35,9 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 
  L'utente 1 avvia una sessione Terminal Server (sessione 1) sul computer B e avvia un'applicazione gestita da tale sessione.
 
- L'utente 2, che è l'amministratore di entrambi i computer, viene registrato sul computer A. Da qui, tenta di connettersi a un'applicazione in esecuzione nella sessione 1 nel computer B.
+ L'utente 2, che è amministratore in entrambi i computer, è connesso al computer A. Da qui, tenta di connettersi a un'applicazione in esecuzione nella sessione 1 nel computer B.
 
- **Scenario 2:** un utente è connesso a due computer, A e B, appartenenti allo stesso gruppo di lavoro e usa la stessa password per entrambi i computer. Il debugger è in esecuzione nel computer A e tenta di connettersi a un'applicazione gestita in esecuzione nel computer B. il computer A dispone di **accesso alla rete: modello di condivisione e sicurezza per gli account locali** impostati su **Guest**.
+ **Scenario 2:** un utente è connesso a due computer, A e B, appartenenti allo stesso gruppo di lavoro e usa la stessa password per entrambi i computer. Il debugger è in esecuzione nel computer A e tenta di connettersi a un'applicazione gestita in esecuzione nel computer B. Il computer A ha accesso alla **rete:** Modello di condivisione e sicurezza per gli account locali impostato su **Guest.**
 
 ### <a name="to-solve-scenario-1"></a>Per risolvere lo scenario 1
 
@@ -48,7 +49,7 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 
 2. Nel Pannello di controllo fare doppio clic sull'icona **Strumenti di amministrazione**.
 
-3. Nella finestra strumenti di amministrazione fare doppio clic su **criteri di sicurezza locali**.
+3. Nella finestra Strumenti di amministrazione fare doppio clic su **Criteri di sicurezza locali**.
 
 4. Nella finestra Criteri di sicurezza locali selezionare **Criteri locali**.
 
@@ -57,9 +58,9 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 6. Nella finestra di dialogo **Accesso di rete: modello di condivisione e sicurezza per gli account locali** impostare la sicurezza locale su **Classico**, quindi scegliere **OK**.
 
     > [!CAUTION]
-    >   L'impostazione del modello di sicurezza su Classico può determinare l'accesso imprevisto a file condivisi e componenti DCOM. In questo caso, un utente remoto può eseguire l'autenticazione con l'account utente locale anziché come Guest. Se un utente remoto corrisponde al nome utente e alla password, l'utente potrà accedere a qualsiasi cartella o oggetto DCOM che è stato condiviso. Se si usa questo modello di sicurezza, assicurarsi che tutti gli account utente nel computer dispongano di password complesse oppure configurare un'isola di rete isolata per il debug e i computer sottoposti a debug per impedire l'accesso non autorizzato.
+    >   L'impostazione del modello di sicurezza su Classico può determinare l'accesso imprevisto a file condivisi e componenti DCOM. In questo caso, un utente remoto può eseguire l'autenticazione con l'account utente locale anziché come Guest. Se un utente remoto corrisponde al nome utente e alla password, potrà accedere a qualsiasi cartella o oggetto DCOM condiviso. Se si usa questo modello di sicurezza, assicurarsi che tutti gli account utente nel computer abbiano password complesse o configurare un'isola di rete isolata per i computer di debug e di debug per impedire accessi non autorizzati.
 
 7. Chiudere tutte le finestre.
 
 ## <a name="see-also"></a>Vedi anche
-- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
+- [Attività Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)

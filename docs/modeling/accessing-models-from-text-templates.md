@@ -9,18 +9,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e21dacfe56f41f1d2c0da51659ab55203db1a0
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 3a07f6c9ad1059b9630bd578338d1c96df3875010edf29018674c71ed597f681
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389163"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386108"
 ---
 # <a name="access-models-from-text-templates"></a>Accedere ai modelli da modelli di testo
 
-Usando i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo basati su modelli linguistici specifici del dominio. Per informazioni di base sui modelli di testo, vedere [Generazione di codice e Modelli di testo T4.](../modeling/code-generation-and-t4-text-templates.md) I modelli di testo funzionano in modalità sperimentale durante il debug del DSL e funzionano anche in un computer in cui è stato distribuito il DSL.
+Usando modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo basati su modelli linguistici specifici del dominio. Per informazioni di base sui modelli di testo, vedere [Generazione di codice e modelli di testo T4.](../modeling/code-generation-and-t4-text-templates.md) I modelli di testo funzionano in modalità sperimentale durante il debug del DSL e funzionano anche in un computer in cui è stato distribuito il DSL.
 
 > [!NOTE]
 > Quando si crea una soluzione DSL, nel progetto di debug vengono generati file con estensione **\* tt** del modello di testo di esempio. Quando si modificano i nomi delle classi di dominio, questi modelli non funzionano più. Tuttavia, includono le direttive di base necessarie e forniscono esempi che è possibile aggiornare in modo che corrispondano al linguaggio DSL.
@@ -59,11 +60,11 @@ Here is a list of elements in the model:
 
 - Il modello carica il file di modello specificato nella `requires` proprietà .
 
-- Una proprietà in `this` contiene l'elemento radice. Da qui, il codice può passare ad altri elementi del modello. Il nome della proprietà è in genere lo stesso della classe di dominio radice del DSL. In questo esempio si tratta di `this.ExampleModel`.
+- Una proprietà in `this` contiene l'elemento radice. Da qui, il codice può passare ad altri elementi del modello. Il nome della proprietà è in genere uguale alla classe di dominio radice del DSL. In questo esempio si tratta di `this.ExampleModel`.
 
 - Anche se il linguaggio in cui vengono scritti i frammenti di codice è C#, è possibile generare testo di qualsiasi tipo. In alternativa, è possibile scrivere il codice in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aggiungendo la proprietà alla direttiva `language="VB"` `template` .
 
-- Per eseguire il debug del modello, `debug="true"` aggiungere alla `template` direttiva . Il modello verrà aperto in un'altra istanza di Visual Studio si verifica un'eccezione. Se si vuole interrompere il debugger in un punto specifico del codice, inserire l'istruzione `System.Diagnostics.Debugger.Break();`
+- Per eseguire il debug del modello, `debug="true"` aggiungere alla `template` direttiva . Il modello verrà aperto in un'altra istanza Visual Studio se si verifica un'eccezione. Se si vuole interrompere l'esecuzione nel debugger in un punto specifico del codice, inserire l'istruzione `System.Diagnostics.Debugger.Break();`
 
    Per altre informazioni, vedere [Debug di un modello di testo T4.](../modeling/debugging-a-t4-text-template.md)
 
@@ -100,7 +101,7 @@ Here is a list of elements in the model:
 ## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> Accesso a più modelli da un modello di testo
 
 > [!NOTE]
-> Questo metodo consente di leggere più modelli nello stesso modello, ma non supporta i riferimenti ModelBus. Per leggere i modelli collegati dai riferimenti ModelBus, vedere Uso di Visual Studio ModelBus [in un modello di testo.](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+> Questo metodo consente di leggere più modelli nello stesso modello, ma non supporta i riferimenti ModelBus. Per leggere i modelli collegati dai riferimenti ModelBus, vedere Uso di [Visual Studio ModelBus in un modello di testo.](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
 
  Se si desidera accedere a più di un modello dallo stesso modello di testo, è necessario chiamare il processore di direttiva generato una volta per ogni modello. È necessario specificare il nome file di ogni modello nel `requires` parametro . È necessario specificare i nomi da usare per la classe di dominio radice nel `provides` parametro . È necessario specificare valori diversi per i `provides` parametri in ognuna delle chiamate di direttiva. Si supponga, ad esempio, di avere tre file di modello denominati Library.xyz, School.xyz e Work.xyz. Per accedervi dallo stesso modello di testo, è necessario scrivere tre chiamate di direttiva simili alle seguenti.
 
@@ -140,9 +141,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Caricamento dinamico dei modelli
  Se si desidera determinare in fase di esecuzione quali modelli caricare, è possibile caricare dinamicamente un file di modello nel codice del programma, anziché usare la direttiva specifica del DSL.
 
- Tuttavia, una delle funzioni della direttiva specifica di DSL è l'importazione dello spazio dei nomi DSL, in modo che il codice del modello possa usare le classi di dominio definite in tale DSL. Poiché non si usa la direttiva , è necessario aggiungere le direttive **\<assembly>** e per tutti i modelli che è possibile **\<import>** caricare. Questo è semplice se i diversi modelli che è possibile caricare sono tutte istanze dello stesso DSL.
+ Tuttavia, una delle funzioni della direttiva specifica di DSL è importare lo spazio dei nomi DSL, in modo che il codice del modello possa usare le classi di dominio definite in tale DSL. Poiché non si usa la direttiva , è necessario aggiungere le direttive **\<assembly>** e per tutti i modelli che è possibile **\<import>** caricare. Questo è semplice se i diversi modelli che è possibile caricare sono tutte istanze dello stesso DSL.
 
- Per caricare il file, il metodo più efficace è l'uso di Visual Studio ModelBus. In uno scenario tipico, il modello di testo userà una direttiva specifica di DSL per caricare il primo modello nel modo consueto. Tale modello conterrà riferimenti ModelBus a un altro modello. È possibile usare ModelBus per aprire il modello a cui si fa riferimento e accedere a un particolare elemento. Per altre informazioni, vedere [Uso di Visual Studio ModelBus in un modello di testo.](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ Per caricare il file, il metodo più efficace è usare Visual Studio ModelBus. In uno scenario tipico, il modello di testo userà una direttiva specifica di DSL per caricare il primo modello nel modo consueto. Tale modello conterrà riferimenti ModelBus a un altro modello. È possibile usare ModelBus per aprire il modello a cui si fa riferimento e accedere a un particolare elemento. Per altre informazioni, vedere [Uso Visual Studio ModelBus in un modello di testo.](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
 
  In uno scenario meno comune, potrebbe essere necessario aprire un file di modello per il quale si dispone solo di un nome file e che potrebbe non essere presente nel progetto Visual Studio corrente. In questo caso, è possibile aprire il file usando la tecnica descritta in [Procedura: Aprire un](../modeling/how-to-open-a-model-from-file-in-program-code.md)modello da file nel codice programma .
 

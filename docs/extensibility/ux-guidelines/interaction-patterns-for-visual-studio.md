@@ -8,22 +8,23 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13a2ec4332cf8010dc5d214dfd61936725ac2063
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 7e47879db77ebe5888291e9c5b3b622ab66f85461d1993df670c5c2b22c567d3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900551"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375130"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Modelli di interazione per Visual Studio
 ## <a name="overview"></a>Panoramica
  Uno schema progettuale, in generale, è il nucleo di una progettazione che può essere applicata in situazioni specifiche per risolvere i problemi con set di vincoli simili. I progettisti di funzionalità e sistemi usano questi schemi progettuali come punti di partenza, che possono quindi essere adattati alla situazione specifica.
 
- Visual Studio ha una libreria di modelli di interazione comuni che devono essere considerati quando si compilano nuove funzionalità. Esistono due contesti di base per i modelli di progettazione: Visual Studio Client (devenv) e GitHub Codespaces (in precedenza Visual Studio Online). Per alcuni problemi di progettazione, esiste un modello comune che funziona bene in tutte le situazioni. In molti casi, tuttavia, la soluzione potrebbe essere diversa per l'interfaccia utente presentata all'interno di un browser e quella ospitata in un'applicazione client.
+ Visual Studio ha una libreria di modelli di interazione comuni che devono essere considerati durante la creazione di nuove funzionalità. Esistono due contesti di base per i modelli di progettazione: Visual Studio Client (devenv) e GitHub Codespaces (in precedenza Visual Studio Online). Per alcuni problemi di progettazione, esiste un modello comune che funziona bene in tutte le situazioni. In molti casi, tuttavia, la soluzione potrebbe essere diversa per l'interfaccia utente presentata all'interno di un browser e quella ospitata in un'applicazione client.
 
-### <a name="visual-studio-client-pattern-types"></a>Visual Studio di modelli client
+### <a name="visual-studio-client-pattern-types"></a>Visual Studio Tipi di modelli client
 
 |Tipo di criterio|Descrizione|Esempi|
 |------------------|-----------------|--------------|
@@ -32,7 +33,7 @@ ms.locfileid: "112900551"
 |**Pattern di controllo**|Specifiche sul comportamento previsto dei controlli di basso livello|- Visualizzazioni albero<br />- Modifica all'interno di un controllo griglia|
 
 ## <a name="application-patterns"></a>Modelli di applicazione
- A livello elevato, l'interfaccia Visual Studio è costituita da più finestre, finestre di dialogo, comandi e barre degli strumenti all'interno di un singolo IDE. La gerarchia Visual Studio determina il contesto e i menu delle unità. I punti di integrazione principali nell'interfaccia utente dell'IDE sono le finestre dei documenti, le finestre degli strumenti, i progetti, la struttura dei comandi, l'editor di testo, la casella degli strumenti, il Finestra Proprietà e strumenti > opzioni.
+ A livello elevato, l'interfaccia Visual Studio è costituita da più finestre, finestre di dialogo, comandi e barre degli strumenti all'interno di un singolo IDE. La gerarchia Visual Studio determina il contesto e i menu delle unità. I punti di integrazione principali nell'interfaccia utente dell'IDE sono finestre dei documenti, finestre degli strumenti, progetti, struttura dei comandi, editor di testo, casella degli strumenti, Finestra Proprietà e Strumenti > opzioni.
 
  Esistono modelli di utilizzo di base per ognuno dei punti di integrazione principali nell'interfaccia utente dell'IDE:
 
@@ -53,7 +54,7 @@ ms.locfileid: "112900551"
 ## <a name="common-control-patterns"></a>Pattern di controllo comuni
  I pattern di controllo riguardano principalmente il comportamento previsto dei singoli controlli. Si tratta di un'area in cui la coerenza è più critica.
 
- I controlli più comuni in Visual Studio devono seguire le linee guida di Windows desktop. Le linee guida includono solo aree in cui è necessario aumentare le convenzioni comuni con interazioni specifiche di Visual Studio o posizioni in cui le linee guida vengono sostituite interamente per personalizzare Visual Studio per soddisfare le esigenze degli utenti sofisticati.
+ I controlli più comuni in Visual Studio devono seguire le linee guida per l'Windows desktop. Le linee guida includono solo aree in cui è necessario ampliare le convenzioni comuni con interazioni specifiche di Visual Studio o posizioni in cui vengono sostituite interamente le linee guida per personalizzare Visual Studio per soddisfare le esigenze degli utenti sofisticati.
 
 - [Modelli dei controlli comuni per Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)
 

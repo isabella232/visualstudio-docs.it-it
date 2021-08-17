@@ -7,20 +7,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 20732b0d7fb09de6079b0c1b7b06d2ae89802a5b
-ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
+ms.openlocfilehash: 1db1b5f9d0a88e1587e0ffc1215e01c3f26423e579d909e995eac0ce369a9c6d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113649185"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121374778"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>Esercitazione: Creare una semplice app console C# in Visual Studio (parte 1 di 2)
 
@@ -90,7 +90,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
 
-1. Annullare dalla finestra **di dialogo Nuovo Project** e dalla  barra dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
+1. Annullare dalla finestra **di dialogo Nuovo Project** e dalla barra  dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
@@ -266,7 +266,7 @@ Come illustrato nello screenshot seguente, se si esegue l'app e si divide il num
 
 È necessario correggere il codice in modo che gestisca i numeri decimali.
 
-1. Premere **CTRL**  +  **H** per aprire il **controllo Trova e** sostituisci.
+1. Premere **CTRL**  +  **H** per aprire il controllo Trova **e** sostituisci.
 
 1. Sostituire ogni istanza della variabile `int` con `float`.
 
@@ -282,7 +282,7 @@ Come illustrato nello screenshot seguente, se si esegue l'app e si divide il num
 
 Tuttavia, l'app genera solo un risultato decimale. Modificando ancora il codice, è possibile fare in modo che l'app esegua anche calcoli con numeri decimali.
 
-1. Usare il **controllo Trova e** sostituisci (**CTRL** H ) per modificare ogni istanza della variabile in e per modificare ogni istanza  +  del metodo in `float` `double` `Convert.ToInt32` `Convert.ToDouble` .
+1. Usare il **controllo Trova e** sostituisci (**CTRL** H ) per modificare ogni istanza della variabile in e per impostare ogni  +  istanza del metodo su `float` `double` `Convert.ToInt32` `Convert.ToDouble` .
 
 1. Eseguire nuovamente l'app Calculator e dividere il numero **42,5** per il numero **119,75**.
 
@@ -296,21 +296,21 @@ Tuttavia, l'app genera solo un risultato decimale. Modificando ancora il codice,
 
 L'app Calculator di base è stata migliorata, ma non comprende ancora funzioni di sicurezza che consentono di gestire le eccezioni, ad esempio gli errori di input dell'utente.
 
-Ad esempio, se si tenta di dividere un numero per zero o di immettere un carattere alfa quando l'app prevede un carattere numerico (o viceversa), l'app potrebbe smettere di funzionare, restituire un errore o restituire un risultato non numerico imprevisto.
+Ad esempio, se si prova a dividere un numero per zero o si immette un carattere alfa quando l'app prevede un carattere numerico (o viceversa), l'app potrebbe smettere di funzionare, restituire un errore o restituire un risultato non numerico imprevisto.
 
-Si esaminino ora alcuni errori comuni di input dell'utente, li si individua nel debugger se vengono visualizzati e li si corregge nel codice.
+Verranno ora visualizzati alcuni errori di input utente comuni, individuarli nel debugger, se presenti, e correggerli nel codice.
 
 > [!TIP]
 > Per altre informazioni sul debugger e sul suo funzionamento, vedere la pagina [Presentazione del debugger di Visual Studio](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Correggere l'errore di divisione per zero
 
-Quando si prova a dividere un numero per zero, l'app console potrebbe bloccarsi e quindi mostrare il problema nell'editor di codice.
+Quando si tenta di dividere un numero per zero, l'app console potrebbe bloccarsi e quindi mostrare il problema nell'editor di codice.
 
-   ![Screenshot dell'editor Visual Studio codice che mostra una riga evidenziata in giallo e un errore Eccezione non gestita per 'Tentativo di divisione per zero'.](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Screenshot dell'editor Visual Studio codice che mostra una riga evidenziata in giallo e un errore eccezione non gestita per 'Tentativo di divisione per zero'.](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
-> In alcuni casi, l'app non si blocca e il debugger non visualizza un errore di divisione per zero. Al contrario, l'app potrebbe restituire un risultato non numerico imprevisto, ad esempio un simbolo infinito. La correzione del codice seguente è ancora applicabile.
+> In alcuni casi, l'app non si blocca e il debugger non visualizza un errore di divisione per zero. L'app potrebbe invece restituire un risultato non numerico imprevisto, ad esempio un simbolo di infinito. La correzione di codice seguente si applica ancora.
 
 Ora il codice verrà modificato per gestire questo errore.
 
@@ -336,7 +336,7 @@ Ora il codice verrà modificato per gestire questo errore.
 
 Ora, quando si divide un numero qualsiasi per zero, l'app richiederà un altro numero. Ancora meglio: non smetterà di chiedere fino a quando non si specifica un numero diverso da zero.
 
-   ![Screenshot dell'editor Visual Studio codice che mostra il codice per l'istruzione switch con la voce check for di un divisore diverso da zero aggiunta.](./media/csharp-console-calculator-dividebyzero.png)
+   ![Screenshot dell'editor Visual Studio codice che mostra il codice per l'istruzione switch con il controllo della voce di un divisore diverso da zero aggiunto.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Correggere l'errore di formato
 
@@ -642,13 +642,13 @@ Continuare con altre esercitazioni:
 Continuare con la seconda parte di questa esercitazione:
 
 > [!div class="nextstepaction"]
-> [Parte 2 dell'esercitazione: Uso di più progetti e pacchetti di terze parti](tutorial-console-part-2.md)
+> [Esercitazione Parte 2: Uso di più progetti e pacchetti di terze parti](tutorial-console-part-2.md)
 :::moniker-end
 
 Anche di interesse:
 
 - [Altre esercitazioni su C#](/dotnet/csharp/tutorials/)
-- [Guida introduttiva: Creare un ASP.NET Core app Web](../../ide/quickstart-aspnet-core.md)
+- [Guida introduttiva: Creare un'app ASP.NET Core Web](../../ide/quickstart-aspnet-core.md)
 - [Informazioni sul debug del codice C# in Visual Studio](tutorial-debugger.md)
 - Procedura dettagliata su come [creare ed eseguire unit test](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 - [Eseguire un programma C#](run-program.md)

@@ -1,6 +1,6 @@
 ---
 title: Attività WriteCodeFragment | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività WriteCodeFragment per generare un file di codice temporaneo dal frammento di codice generato specificato.
+description: Informazioni su MSBuild'attività WriteCodeFragment per generare un file di codice temporaneo dal frammento di codice generato specificato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: 1d2514b4-5bef-43bb-bebe-496da8ef063c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdab6066ce93475a2f6bb193c67da87c4fcaddd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e664e8af4d65ec0e629d2a26a307aaf71a6ca12bd411855032b2ca394a160f93
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888082"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369436"
 ---
 # <a name="writecodefragment-task"></a>Attività WriteCodeFragment
 
@@ -42,7 +43,7 @@ Genera un file di codice temporaneo usando il frammento di codice generato speci
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24a1e3ffeab11b8e1fd88800e854febe10d93da6ce6c30ce55512fddb3efaff0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873827"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121371495"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Creare un'applicazione
 
@@ -37,15 +37,15 @@ Quando si crea una soluzione, le configurazioni della build di versione e di deb
 
    ![Menu Compila, comando Gestione configurazione](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Nell'elenco **Configurazione soluzione attiva** scegliere **\<New...\>** .
+1. **Nell'elenco Configurazione soluzione** attiva scegliere **\<New...\>** .
 
 1. Nella finestra di dialogo **Nuova configurazione soluzione** assegnare il nome `Test` alla nuova configurazione, copiare le impostazioni dalla configurazione **Debug** esistente e quindi scegliere **OK**.
 
    ![Finestra di dialogo Nuova configurazione soluzione](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Nell'elenco **piattaforma soluzione attiva** scegliere **\<New...\>** .
+1. **Nell'elenco Piattaforma soluzione** attiva scegliere **\<New...\>** .
 
-1. Nella finestra di dialogo **nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.
+1. Nella finestra **di dialogo** Nuova piattaforma soluzione scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.
 
    ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -67,7 +67,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 ### <a name="build-the-solution"></a>Compilare la soluzione
 
-- Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione** oppure premere **CTRL** + **MAIUSC** + **B**.
+- Sulla barra dei menu scegliere **Compila**  >  **soluzione o** premere **CTRL** + **MAIUSC** + **B.**
 
     Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata.
 
@@ -95,7 +95,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-1. Sulla barra dei menu scegliere **Visualizza**  >  **pagine delle proprietà**.
+1. Sulla barra dei menu scegliere **Visualizza pagine**  >  **delle proprietà.**
 
      Si apre la finestra **Creazione progetti**.
 
@@ -115,7 +115,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-2. Sulla barra dei menu scegliere **Visualizza**  >  **pagine delle proprietà**.
+2. Sulla barra dei menu scegliere **Visualizza pagine**  >  **delle proprietà.**
 
      Si apre la finestra **Creazione progetti**.
 
@@ -150,15 +150,15 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere **Normale** e quindi **OK**.
 
-1. Sulla barra dei menu scegliere **Compila**  >  **soluzione pulita**.
+1. Nella barra dei menu scegliere **Compila**  >  **soluzione pulita.**
 
 1. Compilare la soluzione e quindi esaminare le informazioni nella finestra **Output**.
 
      Le informazioni sulla compilazione includono l'ora di inizio della compilazione (indicata all'inizio) e l'ordine in cui i file sono stati elaborati. Queste informazioni includono anche la sintassi del compilatore effettiva che Visual Studio esegue durante la compilazione.
 
-     Ad esempio, nella compilazione C#, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso, **0168**, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
+     Nella compilazione C#, ad esempio, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso **0168** specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
 
-     In Visual Basic Build [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, pertanto non viene visualizzato alcun avviso.
+     Nella compilazione Visual Basic, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, quindi non viene visualizzato alcun avviso.
 
     > [!TIP]
     > È possibile cercare il contenuto della finestra **Output** se si visualizza la finestra di dialogo **Trova** scegliendo i tasti **CTRL**+**F**.
@@ -188,7 +188,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
      Ad esempio, è possibile specificare `\\myserver\builds`.
 
     > [!IMPORTANT]
-    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere il pulsante **OK** nella finestra di messaggio.
+    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere **il pulsante OK** nella finestra di messaggio.
 
 1. Compilare l'applicazione.
 
@@ -211,7 +211,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
      Ad esempio è possibile specificare `\\myserver\builds`.
 
     > [!IMPORTANT]
-    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere il pulsante **OK** nella finestra di messaggio.
+    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere **il pulsante OK** nella finestra di messaggio.
 
 1. Nella **barra degli strumenti Standard** impostare le opzioni Configurazioni soluzione su **Release** e Piattaforme soluzione su **x86**.
 
@@ -225,6 +225,6 @@ Congratulazioni! Questa procedura dettagliata è stata completata correttamente.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura dettagliata: compilare un progetto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Procedura dettagliata: Compilare un progetto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Panoramica della precompilazione del progetto di applicazione Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Procedura dettagliata: Usare MSBuild](../msbuild/walkthrough-using-msbuild.md)

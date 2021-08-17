@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 03338da39eb9be3d080839c4c0cd567e3162da7e871bb449f08242c49eed6f5a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607249"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386615"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 
@@ -27,11 +28,11 @@ Per motivi di sicurezza, è consigliabile eseguire Visual Studio come utente tip
 > [!WARNING]
 > Accertarsi inoltre di non compilare, avviare o eseguire il debug di una soluzione di Visual Studio che non provenga da una persona o un percorso attendibile.
 
-È possibile eseguire praticamente tutte le operazioni nell'IDE di Visual Studio come utente tipico. Sono necessarie autorizzazioni di amministratore per completare le attività seguenti:
+È possibile eseguire quasi tutte le attività nell'IDE Visual Studio come utente tipico. Sono necessarie autorizzazioni di amministratore per completare le attività seguenti:
 
 |Area|Attività|Per ulteriori informazioni|
 |----------|----------| - |
-|Installazione|Installare o modificare Visual Studio.|[Installare Visual Studio](../install/install-visual-studio.md), [modificare Visual Studio](../install/modify-visual-studio.md)|
+|Installazione|Installare o modificare Visual Studio.|[Installare Visual Studio](../install/install-visual-studio.md), [Modificare Visual Studio](../install/modify-visual-studio.md)|
 ||Installare, aggiornare o rimuovere contenuto della Guida locale.|[Installare e gestire il contenuto della Guida locale](../help-viewer/install-manage-local-content.md)|
 |Casella degli strumenti|Aggiungere controlli COM classici alla **casella degli strumenti**.|[Casella degli strumenti](../ide/reference/toolbox.md)|
 |Compilazione|Usare eventi di post-compilazione che registrano un componente.|[Informazioni sulle istruzioni di compilazione personalizzate e sugli eventi di compilazione](/cpp/build/understanding-custom-build-steps-and-build-events)|
@@ -56,7 +57,7 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 
 1. Aprire il menu **Start** e scorrere fino Visual Studio 2017.
 
-1. Dal menu di scelta rapida o contestuale di **Visual Studio 2017** scegliere **Altro** > **Esegui come amministratore**.
+1. Dal menu di scelta rapida o dal menu di scelta rapida Visual Studio **2017,** selezionare **Altro** > **Esegui come amministratore**.
 
    All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
 
@@ -66,21 +67,21 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 
 1. Aprire il menu **Start** e scorrere fino Visual Studio 2019.
 
-1. Dal menu di scelta rapida o contestuale di **Visual Studio 2019** scegliere **Altro** > **Esegui come amministratore**.
+1. Dal menu di scelta rapida o dal menu di scelta rapida Visual Studio **2019,** selezionare **Altro** > **Esegui come amministratore**.
 
    All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
 
 ::: moniker-end
 
-È anche possibile modificare il collegamento dell'applicazione in modo che venga sempre eseguito con le autorizzazioni amministrative:
+È anche possibile modificare il collegamento all'applicazione in modo che sia sempre eseguito con autorizzazioni amministrative:
 
-1. Aprire il menu **Start** , scorrere fino alla versione di Visual Studio in uso e quindi **fare clic su**  >  **Apri percorso file**.
+1. Aprire il menu **Start,** scorrere fino alla versione del Visual Studio in uso e quindi selezionare **Altro**  >  **percorso file aperto**.
 
-1. In **Esplora file** individuare il collegamento di **Visual Studio** per la versione in uso. Quindi, fare clic con il pulsante destro del mouse sul collegamento e selezionare **Invia al**  >  **Desktop (Crea collegamento)**.
+1. In **Esplora file** individuare il **Visual Studio** collegamento per la versione in uso. Fare quindi clic con il pulsante destro del mouse sul collegamento e scegliere **Invia al**  >  **desktop (crea collegamento)**.
 
-1. Sul desktop di **Windows** fare clic con il pulsante destro del mouse sul collegamento di **Visual Studio** , quindi scegliere **proprietà**.
+1. Nel desktop **Windows** fare clic con  il pulsante destro del mouse sul collegamento Visual Studio e quindi scegliere **Proprietà**.
 
-1. Selezionare il pulsante **Avanzate** , quindi selezionare la casella di controllo **Esegui come amministratore** .
+1. Selezionare il **pulsante** Avanzate e quindi selezionare la **casella di controllo Esegui** come amministratore.
 
 1. Selezionare **OK** e quindi di nuovo **OK**.
 

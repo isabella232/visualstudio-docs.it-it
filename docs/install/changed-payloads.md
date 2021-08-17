@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 935b593a0f7989e9cfbe07a4543793cb40eccd70
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 22201f48f05e2ba6a40ea538ed9795b04fda7e54f755cb241f8570520a4b4068
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094534"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386459"
 ---
 # <a name="package-payload-changes"></a>Modifiche al payload del pacchetto
 

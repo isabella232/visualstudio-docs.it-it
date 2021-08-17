@@ -12,24 +12,25 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a4947562eb49501e60711111d8765716cbae5c6
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 068cfa548f2421791e79e9a79f56eb530b9b06aa9cdb3a7951433c2cc3b36e89
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925215"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121371894"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
-Nella finestra **Casella degli strumenti** sono visualizzati i controlli che è possibile aggiungere ai progetti di Visual Studio. Per aprire **La casella degli** strumenti, **scegliere**  >  **Visualizza** casella degli strumenti dalla barra dei menu o premere **CTRL** + **ALT** + **X.**
+Nella finestra **Casella degli strumenti** sono visualizzati i controlli che è possibile aggiungere ai progetti di Visual Studio. Per aprire **la Casella degli** strumenti , **scegliere**  >  **Visualizza** casella degli strumenti dalla barra dei menu o premere **CTRL** + **ALT** + **X.**
 
 ![Screenshot della finestra Casella degli strumenti che mostra le opzioni nella sezione Contenitori.](media/vs-2019/toolbox.png "Screenshot della finestra Casella degli strumenti")
 
 È possibile trascinare diversi controlli sulla superficie della finestra di progettazione in uso nonché ridimensionare e posizionare tali controlli.
 
-La casella degli strumenti viene visualizzata insieme alle visualizzazioni della finestra di progettazione, ad esempio la visualizzazione della finestra di progettazione di un file XAML o un progetto Windows Forms app. La **casella degli strumenti** visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente. È possibile eseguire una ricerca all'interno della **casella degli strumenti** per restringere ulteriormente gli elementi visualizzati.
+La casella degli strumenti viene visualizzata insieme alle visualizzazioni della finestra di progettazione, ad esempio la visualizzazione della finestra di progettazione di un file XAML o di Windows di app Form. La **casella degli strumenti** visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente. È possibile eseguire una ricerca all'interno della **casella degli strumenti** per restringere ulteriormente gli elementi visualizzati.
 
 > [!NOTE]
 > Per alcuni tipi di progetto, nella **casella degli strumenti** potrebbe non essere visualizzato alcun elemento.
@@ -81,6 +82,6 @@ Per altre informazioni su alcune delle schede della casella degli strumenti disp
 - [Casella degli strumenti, Scheda Componenti](../../ide/reference/toolbox-components-tab.md)
 - [Casella degli strumenti, Scheda HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Scegli elementi della Casella degli strumenti, Componenti WPF](choose-toolbox-items-wpf-components.md)

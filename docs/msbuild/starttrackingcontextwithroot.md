@@ -15,14 +15,15 @@ ms.assetid: f6ef2b76-8035-4a14-8195-aa221c46ef48
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b52541c99fa81f31eddde8e6c12ad2eee04f3c20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec1f9b55f0a77aa1b8397820a82c78cc15d73f870e2e9144873722530fbca975
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967046"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369767"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 
@@ -50,7 +51,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 
 ## <a name="return-value"></a>Valore restituito
 
- **HRESULT** con il bit **succeeded** impostato se il contesto di rilevamento è stato creato.
+ HRESULT **con** il bit **SUCCEEDED** impostato se è stato creato il contesto di rilevamento.
 
 ## <a name="requirements"></a>Requisiti
 

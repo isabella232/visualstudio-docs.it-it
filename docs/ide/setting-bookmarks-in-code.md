@@ -1,6 +1,6 @@
 ---
 title: Impostare segnalibri nel codice
-description: Informazioni su come usare i segnalibri per contrassegnare le righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi tra le posizioni.
+description: Informazioni su come usare i segnalibri per contrassegnare le righe nel codice in modo da poter tornare rapidamente a una posizione specifica o passare da una posizione all'altra.
 ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
@@ -10,18 +10,19 @@ ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7158e9cf6e25463dd16cf15886b499cd9e6a3f1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98ba7716a5b76a996437167c78ac066b2f43d9420430a69a62179fbb17b73a6b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878513"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121371738"
 ---
 # <a name="set-bookmarks-in-code"></a>Impostare segnalibri nel codice
 
-È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni:la **finestra segnalibro** (  >  **finestra segnalibro** visualizzazione) e la barra degli strumenti Editor di testo.
+È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni: la finestra **Segnalibro** (**Visualizza** finestra  >  **segnalibro**) e la barra degli strumenti dell'editor di testo.
 
 ![Barra degli strumenti segnalibro](media/bookmark-toolbar.png)
 
@@ -36,7 +37,7 @@ Per capire a colpo d'occhio a cosa si riferisce un segnalibro, è possibile rino
 > [!IMPORTANT]
 > Il segnalibro viene impostato sul numero di righe, non sul codice. Se si modifica il codice, il segnalibro viene mantenuto sul numero di riga e non si sposta con il codice.
 
-È possibile spostarsi tra i segnalibri utilizzando i pulsanti **segnalibro successivo** e **segnalibro precedente** nella finestra segnalibro.
+È possibile spostarsi tra i segnalibri usando i **pulsanti Segnalibro successivo** e **Segnalibro** precedente nella finestra segnalibro.
 
 È possibile organizzare i segnalibri in cartelle virtuali scegliendo **Nuova cartella** nella finestra Segnalibri e trascinando i segnalibri selezionati nella nuova cartella.
 

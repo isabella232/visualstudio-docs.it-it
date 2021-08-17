@@ -1,6 +1,6 @@
 ---
-title: Configurare agenti di test/test controller per i test di carico
-description: Informazioni su come Visual Studio è in grado di creare un carico simulato utilizzando macchine fisiche o virtuali per generare un carico maggiore rispetto a quello che può essere generato da un singolo computer.
+title: Configurare agenti di test/controller di test per i test di carico
+description: Informazioni su Visual Studio possibile creare un carico simulato usando macchine virtuali o fisiche per generare un carico maggiore di quello che un singolo computer può generare da solo.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,19 +9,20 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 50356044b4463353f99ddf93ac41e08a572f3879
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 1f789b8e5816b072b815cb59bae6c1cd377e0d055db53b8a663f6b4d5c2f7266
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957244"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425049"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Panoramica di agenti di test e test controller per i test di carico
 
 Visual Studio è in grado di generare un carico simulato per l'app usando macchine virtuali o fisiche. Questi computer devono essere configurati in modo da avere un solo controller di test e uno o più agenti di test. È possibile usare il controller di test e gli agenti di test per generare un carico maggiore rispetto a quello che può essere generato da un singolo computer.
 
 > [!NOTE]
-> È anche possibile usare il test di carico basato su cloud per specificare le macchine virtuali che generano il caricamento di molti utenti che accedono al sito Web contemporaneamente. Tuttavia, l'uso del programma di installazione dell'agente di test controller/test nelle macchine virtuali ospitate nel cloud non è supportato. Altre informazioni sui test di carico basati su cloud sono disponibili nell'articolo relativo all'[esecuzione di test di carico con Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
+> È anche possibile usare il test di carico basato su cloud per specificare le macchine virtuali che generano il caricamento di molti utenti che accedono al sito Web contemporaneamente. Tuttavia, l'uso test controller/installazione dell'agente di test nelle macchine virtuali ospitate nel cloud non è supportato. Altre informazioni sui test di carico basati su cloud sono disponibili nell'articolo relativo all'[esecuzione di test di carico con Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -39,7 +40,7 @@ Questa architettura offre i vantaggi seguenti:
 
 - La possibilità di scalare in orizzontale la generazione del carico aggiungendo altri agenti di test a un controller di test.
 
-- La flessibilità di installare il software del client, del controller di test e degli agenti di test nello stesso computer o in computer diversi. Ad esempio:
+- La flessibilità di installare il software del client, del controller di test e degli agenti di test nello stesso computer o in computer diversi. Esempio:
 
    **Configurazione locale:**
 

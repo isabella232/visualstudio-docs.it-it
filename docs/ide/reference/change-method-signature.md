@@ -6,6 +6,7 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01acbab7725effff5b2edbf8a80ab4f115fd2eff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e759d3d255b9b5d87608736e825276a0e05a3aca622dbfe3d886c0b486cc1a73
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935846"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372699"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
 
@@ -51,7 +52,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+V**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring > Rimuovi parametri**.
       - Selezionare **Modifica > Refactoring > Riordina parametri**.
@@ -66,16 +67,16 @@ Questo refactoring si applica a:
    | **Su/Giù** | Consente di spostare il parametro selezionato verso l'alto e verso il basso nell'elenco
    | **Aggiungere** | Consente di aggiungere un nuovo parametro all'elenco
    | **Rimuovi** | Consente di rimuovere il parametro selezionato dall'elenco
-   | **Recupera** | Consente di ripristinare il parametro selezionato e barrato nell'elenco
+   | **Restore** | Consente di ripristinare il parametro selezionato e barrato nell'elenco
 
    > [!TIP]
-   > Utilizzare la casella di controllo **Anteprima modifiche riferimento** per [verificare il risultato che verrà](../../ide/preview-changes.md) eseguito prima del commit.
+   > Usare la **casella di controllo Anteprima modifiche di** riferimento per visualizzare il risultato [prima](../../ide/preview-changes.md) di eseguire il commit.
 
-4. Selezionando **Aggiungi** nella finestra di dialogo **cambia firma** viene visualizzata la finestra di dialogo **Aggiungi parametro** . La finestra di dialogo **Aggiungi parametro** consente di aggiungere un nome di tipo e un nome di parametro. È possibile scegliere di rendere il parametro obbligatorio o facoltativo con un valore predefinito. È quindi possibile aggiungere un valore nel sito di chiamata e scegliere un argomento denominato per tale valore oppure è possibile introdurre una variabile TODO. La variabile TODO inserisce un valore TODO nel codice in modo che sia possibile visualizzare ogni errore, esaminare ogni sito di chiamata in modo indipendente e decidere cosa passare. Per i parametri facoltativi è possibile omettere completamente il sito di chiamata.
+4. Selezionando **Aggiungi** nella finestra **di dialogo Cambia** firma verrà aperta la finestra di dialogo **Aggiungi** parametro. La finestra di dialogo **Aggiungi parametro** consente di aggiungere un nome di tipo e un nome di parametro. È possibile scegliere di rendere il parametro obbligatorio o facoltativo con un valore predefinito. È quindi possibile aggiungere un valore nel sito di chiamata e scegliere un argomento denominato per tale valore oppure è possibile introdurre una variabile TODO. La variabile TODO inserisce un valore TODO nel codice in modo che sia possibile visualizzare ogni errore, esaminare ogni sito di chiamata in modo indipendente e decidere cosa passare. Per i parametri facoltativi è possibile omettere completamente il sito di chiamata.
 
-    ![Finestra di dialogo Aggiungi parametro-C #](media/add-parameter-dialog.png)
+    ![Finestra di dialogo Aggiungi parametro - C #](media/add-parameter-dialog.png)
 
-5. Al termine dell'aggiunta di un parametro, fare clic su **OK** per visualizzare l'anteprima delle modifiche.
+5. Al termine dell'aggiunta di un parametro, premere **OK per** visualizzare in anteprima le modifiche.
 
     ![Finestra di dialogo Cambia firma](media/change-signature.png)
 

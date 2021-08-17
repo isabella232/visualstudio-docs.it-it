@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Pulire una compilazione | Microsoft Docs'
-description: Informazioni su come usare MSBuild per pulire una compilazione, eliminare tutti i file intermedi e di output e lasciare solo i file di progetto e componente.
+description: Informazioni su come usare MSBuild per pulire una compilazione, eliminando tutti i file intermedi e di output e lasciando solo i file di progetto e componente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,14 +13,15 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c0beb70379d8b79a3e1826ba74f34202eea19f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7bce5eab808fbc4a4283212dc440e19a95a31fe94fb6c5aa5fd799fba7e2f92c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914460"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427795"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
 
@@ -36,7 +37,7 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Ad esempio:
+2. Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Esempio:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -49,7 +50,7 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Per rimuovere una directory e tutti i file contenuti nella directory
 
-- Usare l'attività `RemoveDir` per rimuovere la directory. Ad esempio:
+- Usare l'attività `RemoveDir` per rimuovere la directory. Esempio:
 
      `<RemoveDir Directories="$(builtdir)" />`
 
@@ -57,7 +58,7 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
  Il progetto di esempio di codice seguente contiene una nuova destinazione, `Clean`, che usa l'attività `RemoveDir` per eliminare una directory e tutti i file e le directory in essa contenute. Anche in questo esempio, la destinazione `Compile` crea una directory distinta per gli elementi di output che vengono eliminati durante la pulizia della compilazione.
 
- `Compile` è definito come destinazione predefinita che viene usata automaticamente se non vengono specificate una o più destinazioni diverse. Usare l'opzione della riga di comando **-target** per specificare una destinazione diversa. Ad esempio:
+ `Compile` è definito come destinazione predefinita che viene usata automaticamente se non vengono specificate una o più destinazioni diverse. Usare l'opzione della riga di comando **-target** per specificare una destinazione diversa. Esempio:
 
  `msbuild <file name>.proj -target:Clean`
 

@@ -1,6 +1,6 @@
 ---
 title: Attività Unzip | Microsoft Docs
-description: Informazioni sui parametri e sull'utilizzo dell'attività decomprimere MSBuild, che consente di decomprimere un archivio zip in un percorso specificato.
+description: Informazioni sui parametri e sull'utilizzo MSBuild'attività Decomprime, che decomprime un archivio .zip in un percorso specificato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
@@ -22,14 +22,15 @@ caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 213d37108e37b9002b2241e6c0806d6d7db7caf6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc0fe999e6a86f405208c0da3b0b9008a3214db2afb70e5307375d998e7f6b3e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902493"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369553"
 ---
 # <a name="unzip-task"></a>Attività Unzip
 
@@ -51,7 +52,7 @@ Decomprime un archivio con estensione *zip* nella posizione specificata.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 

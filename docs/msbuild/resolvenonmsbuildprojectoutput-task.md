@@ -1,6 +1,6 @@
 ---
 title: Attività ResolveNonMSBuildProjectOutput | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività ResolveNonMSBuildProjectOutput per determinare i file di output per i riferimenti al progetto non MSBuild.
+description: Informazioni su MSBuild usa l'attività ResolveNonMSBuildProjectOutput per determinare i file di output per i riferimenti MSBuild progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 98d8e483b8ad03f02283620f65ec0351d9d64051
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68451c13f3bdf24c7ddb454b43c87cf6fc003adf04c3a209c66acc3ddac2c1a6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912461"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369904"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput (attività)
 
@@ -42,7 +43,7 @@ Determina i file di output per riferimenti a progetti non MSBuild.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedi anche
 

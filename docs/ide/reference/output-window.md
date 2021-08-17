@@ -15,14 +15,15 @@ ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc6f33c439a812d7153f48d7f20d7e1d9dd3cb1
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 6ff6f19139d8874d252bcaa540062c0d230ed2d10221bb5371c2180b23edfe75
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925163"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387239"
 ---
 # <a name="output-window"></a>Output (finestra)
 
@@ -74,7 +75,7 @@ In C++ è possibile creare istruzioni ed eventi di compilazione personalizzati i
 
 Se si usa lo scorrimento automatico nella finestra **Output** e quindi si naviga usando il mouse o i tasti di direzione, lo scorrimento automatico viene arrestato. Per riprendere lo scorrimento automatico, premere  + **CTRL+FINE.**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Messaggi di diagnostica nella finestra Output](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Procedura: Controllare la finestra di output](/previous-versions/ht6z4e28(v=vs.140))

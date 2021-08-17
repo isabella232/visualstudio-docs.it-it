@@ -1,6 +1,6 @@
 ---
 title: Estendibilità del servizio di linguaggio legacy | Microsoft Docs
-description: Informazioni sulla struttura, l'implementazione e l'estensibilità dei servizi di linguaggio legacy in Visual Studio.
+description: Informazioni sulla struttura, l'implementazione e l'estendibilità dei servizi di linguaggio legacy in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,21 +11,22 @@ ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f22d6997d932884e5aeb8d794b7884b40a8d5dab
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e492dbae044b5051fc4de9178da981003735d24b3b0e37ba944a99aa6dd4a125
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074496"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375871"
 ---
 # <a name="legacy-language-service-extensibility"></a>Estendibilità dei servizi di linguaggio legacy
-Un servizio di linguaggio fornisce supporto specifico della lingua per la modifica del codice sorgente nell'IDE.
+Un servizio di linguaggio fornisce supporto specifico del linguaggio per la modifica del codice sorgente nell'IDE.
 
- I servizi di linguaggio legacy sono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per ulteriori informazioni sul nuovo modo per implementare un servizio di linguaggio, vedere [Editor e le estensioni del servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).
+ I servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio è usare le estensioni MEF. Per altre informazioni sul nuovo modo di implementare un servizio di linguaggio, vedere [Editor e estensioni del servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).
 
- In questa sezione viene illustrata la struttura e l'implementazione di un servizio di linguaggio legacy.
+ Questa sezione illustra la struttura e l'implementazione di un servizio di linguaggio legacy.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Migrazione di un servizio di linguaggio legacy](../../extensibility/internals/migrating-a-legacy-language-service.md)
@@ -34,7 +35,7 @@ Un servizio di linguaggio fornisce supporto specifico della lingua per la modifi
 
 - [Nozioni fondamentali sui servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-essentials.md)
 
- Vengono fornite informazioni importanti su come sviluppare servizi di linguaggio per integrare un linguaggio di programmazione in Visual Studio.
+ Fornisce informazioni importanti su come sviluppare servizi di linguaggio per integrare un linguaggio di programmazione Visual Studio.
 
 - [Sviluppo di un servizio di linguaggio legacy](../../extensibility/internals/developing-a-legacy-language-service.md)
 
@@ -46,17 +47,17 @@ Un servizio di linguaggio fornisce supporto specifico della lingua per la modifi
 
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 
- Vengono fornite informazioni su come utilizzare il Framework di pacchetto gestito (MPF) per implementare un servizio di linguaggio completo nel codice gestito.
+ Fornisce informazioni su come usare il framework del pacchetto gestito (MPF) per implementare un servizio di linguaggio completo nel codice gestito.
 
 - [Supporto degli strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- Vengono descritte le librerie e gli strumenti che consentono di esplorare le visualizzazioni ad albero dei simboli nell'IDE.
+ Vengono descritte le librerie e gli strumenti che consentono di esplorare le visualizzazioni albero dei simboli nell'IDE.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Estensioni dell'editor e dei servizi di linguaggio](../../extensibility/editor-and-language-service-extensions.md)
 
- Viene fornita una panoramica degli editor di Visual Studio.
+ Fornisce una panoramica degli Visual Studio editor.
 
 - [Supporto dei servizi di linguaggio per il debug](../../extensibility/internals/language-service-support-for-debugging.md)
 
- Vengono fornite informazioni su e un collegamento a Visual Studio Debugging SDK, che contiene le informazioni necessarie per creare e personalizzare i componenti del debugger utilizzati per eseguire il debug dei programmi.
+ Fornisce informazioni su e un collegamento a Visual Studio Debugging SDK, che contiene le informazioni necessarie per creare e personalizzare i componenti del debugger usati per il debug dei programmi.

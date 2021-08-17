@@ -1,6 +1,6 @@
 ---
 title: Attività FindInList | Microsoft Docs
-description: Informazioni su come usare l'attività FindInList di MSBuild per trovare un elemento con il itemspec corrispondente in un elenco specificato.
+description: Informazioni su come usare MSBuild'attività FindInList per trovare un elemento con itemspec corrispondente in un elenco specificato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 45ad1cc57412161e2510f93cacb5a043be59802e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7682929efd7be1d3ee99e71fa0ace598aa8ee00d7007a391bdf0cb541f3465f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967553"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428042"
 ---
 # <a name="findinlist-task"></a>FindInList (attività)
 
@@ -44,7 +45,7 @@ Trova in un elenco specificato un elemento con un itemspec corrispondente.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedi anche
 

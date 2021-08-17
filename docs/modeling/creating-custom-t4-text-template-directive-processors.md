@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 59644275f17eac197074351a777959bb1826a5de
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: bad843cf2cf90cfc591f32c9c6bfda8e350bd4a6c17c67ac9a220b296f75ac58
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389501"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386030"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Creare processori di direttiva di modelli di testo T4 personalizzati
 
@@ -24,7 +25,7 @@ Il *processo di trasformazione del modello di testo* accetta un file modello *di
 
 Per creare un processore di direttiva personalizzato, si crea una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
 
-La differenza tra questi due elementi è che implementa l'interfaccia minima necessaria per ottenere i parametri dall'utente e per generare il codice che <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> produce il file di output del modello. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementa il modello di progettazione requires/provides. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> gestisce due parametri speciali, `requires` e `provides` .  Ad esempio, un processore di direttiva personalizzato potrebbe accettare un nome di file dall'utente, aprire e leggere il file e quindi archiviare il testo del file in una variabile denominata `fileText` . Una sottoclasse della classe può prendere un nome file dall'utente come valore del parametro e il nome della variabile in cui archiviare il testo come valore <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> `requires` del `provides` parametro. Questo processore apre e legge il file e quindi archivia il testo del file nella variabile specificata.
+La differenza tra questi due è che implementa l'interfaccia minima necessaria per ottenere i parametri dall'utente e per generare il codice che <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> produce il file di output del modello. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementa il modello di progettazione requires/provides. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> gestisce due parametri speciali, `requires` e `provides` .  Ad esempio, un processore di direttiva personalizzato potrebbe accettare un nome di file dall'utente, aprire e leggere il file e quindi archiviare il testo del file in una variabile denominata `fileText` . Una sottoclasse della classe può prendere un nome file dall'utente come valore del parametro e il nome della variabile in cui archiviare il testo come valore <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> `requires` del parametro `provides` . Questo processore apre e legge il file e quindi archivia il testo del file nella variabile specificata.
 
 Prima di chiamare un processore di direttiva personalizzato da un modello di testo in Visual Studio, è necessario registrarlo.
 
@@ -38,7 +39,7 @@ Una direttiva personalizzata è simile alla seguente:
 
 È possibile usare un processore di direttiva personalizzato quando si vuole accedere a dati o risorse esterni da un modello di testo.
 
-Modelli di testo diversi possono condividere le funzionalità fornite da un singolo processore di direttiva, quindi i processori di direttiva consentono di fattorinare il codice per il riutilizzo. La direttiva predefinita è simile, perché è possibile usarla per creare un fattore di codice `include` e condividerlo tra modelli di testo diversi. La differenza è che qualsiasi funzionalità fornita `include` dalla direttiva è fissa e non accetta parametri. Se si desidera fornire funzionalità comuni a un modello di testo e consentire al modello di passare parametri, è necessario creare un processore di direttiva personalizzato.
+Modelli di testo diversi possono condividere le funzionalità fornite da un singolo processore di direttiva, quindi i processori di direttiva forniscono un modo per fattorinare il codice per il riutilizzo. La direttiva predefinita è simile, perché è possibile usarla per creare un fattore di codice `include` e condividerlo tra modelli di testo diversi. La differenza è che qualsiasi funzionalità fornita `include` dalla direttiva è fissa e non accetta parametri. Se si desidera fornire funzionalità comuni a un modello di testo e consentire al modello di passare parametri, è necessario creare un processore di direttiva personalizzato.
 
 Alcuni esempi di processori di direttiva personalizzati possono essere:
 
@@ -62,7 +63,7 @@ Dopo tutte le chiamate a ProcessDirective() il motore di creazione modelli chiam
 
 - `string[] GetImportsForProcessingRun()` - Restituisce gli spazi dei nomi che possono essere usati nel codice del modello.
 
-- `string GetClassCodeForProcessingRun()` : restituisce il codice di metodi, proprietà e altre dichiarazioni che il codice del modello può usare. Il modo più semplice per eseguire questa operazione è compilare una stringa contenente il codice C# o Visual Basic codice. Per rendere il processore di direttiva in grado di essere chiamato da un modello che usa qualsiasi linguaggio CLR, è possibile costruire le istruzioni come albero CodeDom e quindi restituire il risultato della serializzazione dell'albero nel linguaggio usato dal modello.
+- `string GetClassCodeForProcessingRun()` - Restituisce il codice di metodi, proprietà e altre dichiarazioni che il codice del modello può usare. Il modo più semplice per eseguire questa operazione è compilare una stringa contenente il codice C# o Visual Basic codice. Per rendere il processore di direttiva in grado di essere chiamato da un modello che usa qualsiasi linguaggio CLR, è possibile costruire le istruzioni come albero CodeDom e quindi restituire il risultato della serializzazione dell'albero nel linguaggio usato dal modello.
 
 - Per altre informazioni, vedere [Procedura dettagliata: Creazione di un processore di direttiva personalizzato.](../modeling/walkthrough-creating-a-custom-directive-processor.md)
 

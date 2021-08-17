@@ -12,15 +12,16 @@ helpviewer_keywords:
 - unit tests, authoring
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 62772187c076b7891a0159b73cae2ca819ac6bc3
-ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
+ms.openlocfilehash: b1f368973d274ae4000da60bbb98af4fcf6340bb568258f7ac61f9b00048143f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114703340"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424652"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -62,7 +63,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 4. Assegnare al progetto **il nome Bank** e quindi fare clic su **Avanti.**
 
-   Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
+   Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
 
    Il progetto Bank viene creato e visualizzato in **Esplora soluzioni** con il file *Program.cs* aperto nell'editor del codice.
 
@@ -175,7 +176,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 3. Assegnare al progetto **il nome BankTests** e fare clic su **Avanti.**
 
-4. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
+4. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
 
    Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.
 
@@ -195,7 +196,7 @@ Creare una classe di test per verificare la classe `BankAccount`. È possibile u
 
 ### <a name="rename-a-file-and-class"></a>Rinominare un file e una classe
 
-1. Per rinominare un file, in **Esplora soluzioni** selezionare il file *UnitTest1.cs* nel progetto BankTests. Dal menu di scelta rapida scegliere **Rinomina** (o premere **F2)** e quindi rinominare il file *in BankAccountTests.cs*.
+1. Per rinominare un file, in **Esplora soluzioni** selezionare il file *UnitTest1.cs* nel progetto BankTests. Dal menu di scelta rapida scegliere Rinomina **(o** premere **F2)** e quindi rinominare il file *in BankAccountTests.cs*.
 
 ::: moniker range="vs-2017"
 

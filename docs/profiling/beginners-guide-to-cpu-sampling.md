@@ -14,15 +14,16 @@ ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a0593e5139479c1b2d82f7b2f4cd78fde8a884
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 78907673a1175542cb1384e3a0bfffa5639f4a9d5f455cdd50d57fab42693f87
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387983"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369176"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.
@@ -100,7 +101,7 @@ ms.locfileid: "112387983"
 
      Per continuare l'analisi dell'esecuzione della profilatura, è possibile analizzare di nuovo un segmento di dati di profilatura usando la sequenza temporale nella visualizzazione **Riepilogo** per vedere il **Percorso critico** e le **Funzioni che svolgono più lavoro individuale** da un segmento selezionato. Ad esempio, con particolare attenzione ad un picco più piccolo nella sequenza temporale potrebbe rivelare costosi alberi delle chiamate e funzioni che non sono stati visualizzati durante l'analisi dell'intera esecuzione della profilatura.
 
-     Per rianalyizzare un segmento, selezionare un segmento all'interno della casella Sequenza **temporale di** riepilogo e quindi fare clic su Filtra **per selezione**.
+     Per rianalyizzare un segmento, selezionare un segmento all'interno della casella Sequenza temporale di **riepilogo** e quindi fare clic su Filtra **per selezione.**
 
      ![Sequenza temporale della visualizzazione Riepilogo prestazioni](../profiling/media/performancesummary.png "PerformanceSummary")
 
@@ -127,7 +128,7 @@ ms.locfileid: "112387983"
 
 ## <a name="see-also"></a>Vedi anche
 - [Esplora prestazioni](../profiling/performance-explorer.md)
-- [Attività iniziali](../profiling/getting-started-with-performance-tools.md)
+- [Introduzione](../profiling/getting-started-with-performance-tools.md)
 - [Cenni preliminari](../profiling/overviews-performance-tools.md)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

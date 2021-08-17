@@ -1,6 +1,6 @@
 ---
 title: Rapporto profili del tempo di blocco | Microsoft Docs
-description: 'I report del profilo temporale di blocco forniscono dati del tempo di blocco aggregati. Sono disponibili sei tipi di report: sincronizzazione, sospensione, I/O, memoria, precedenza e interfaccia utente.'
+description: "I report del profilo temporale di blocco forniscono dati aggregati sull'ora di blocco. Sono disponibili sei tipi di report: Sincronizzazione, Sospensione, I/O, Memoria, Preemption e Interfaccia utente."
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f5bdf15b220560562ccc2ae5c99100b5285b025
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd695f67e79fab7ac9f67c077fbf616f51d9f75a2be9f4269977c8293b1b43fe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925608"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369059"
 ---
 # <a name="blocking-time-profile-report"></a>Rapporto profili del tempo di blocco
 I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli stack di chiamate specifici di ogni categoria di blocco, ad esempio "I/O" o "Sincronizzazione". Il rapporto Precedenza elenca i processi che precedevano il processo corrente con il numero di istanze di precedenza. Per compilare il rapporto profili di blocco, lo strumento raccoglie chiamate API di blocco e le accumula in un albero degli stack di chiamate. I dati visualizzati in questi rapporti variano in base all'intervallo di tempo corrente, ai thread nascosti e ai seguenti due filtri che possono essere applicati:
@@ -49,7 +50,7 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
  Il rapporto Sospensione specifica le chiamate responsabili del tempo di blocco attribuito al tempo trascorso in modalità di sospensione e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di sospensione](../profiling/sleep-time.md).
 
 ### <a name="io"></a>I/O
- Il rapporto I/O specifica le chiamate responsabili dei segmenti di blocco nel tempo di I/O e i tempi di blocco aggregati di ogni stack di chiamate. Per ulteriori informazioni, vedere [tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md).
+ Il rapporto I/O specifica le chiamate responsabili dei segmenti di blocco nel tempo di I/O e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md).
 
 ### <a name="memory-management"></a>Gestione della memoria
  Il rapporto Gestione della memoria specifica le chiamate responsabili dei segmenti di blocco nelle operazioni di gestione della memoria e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di gestione della memoria](../profiling/memory-management-time.md).
@@ -61,4 +62,4 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
  Il rapporto relativo all'elaborazione dell'interfaccia utente indica le chiamate responsabili dei segmenti di blocco nei blocchi di elaborazione dell'interfaccia utente, oltre ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione thread](../profiling/threads-view-parallel-performance.md)
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

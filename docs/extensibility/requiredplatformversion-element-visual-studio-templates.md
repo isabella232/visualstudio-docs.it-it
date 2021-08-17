@@ -12,22 +12,22 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b1d7e3b8cc67f839977eb1e53d80731e59c064e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9f5f72045fdfca073fbc740698c2eefe57a1a932f32751f9fe278e17c280fad9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068427"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388531"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (modelli di Visual Studio)
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (Visual Studio modelli)
 
-Specifica la versione minima del sistema operativo necessaria per il corretto funzionamento del modello di progetto. Questo elemento viene usato per i modelli di progetto per la creazione di [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app.
+Specifica la versione minima del sistema operativo necessaria per il corretto funzionamento del modello di progetto. Questo elemento viene usato per i modelli di progetto che creano [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app.
 
- Il `RequiredPlatformVersion` valore viene confrontato direttamente con la versione del sistema operativo. Se `RequiredPlatformVersion` è superiore alla versione del sistema operativo, il modello non viene visualizzato nella finestra di dialogo **nuovo progetto** . Per specificare un modello per [!INCLUDE[win8](../debugger/includes/win8_md.md)] o versione successiva, impostare `RequiredPlatformVersion` su 6.2.0. Per specificare un modello per [!INCLUDE[win81](../debugger/includes/win81_md.md)] o versione successiva, impostare `RequiredPlatformVersion` su 6.3.0.
+ Il `RequiredPlatformVersion` valore viene confrontato direttamente con la versione del sistema operativo. Se è superiore alla versione del sistema operativo, il modello non viene visualizzato nella finestra di `RequiredPlatformVersion` **dialogo Project** nuova versione. Per specificare un modello per [!INCLUDE[win8](../debugger/includes/win8_md.md)] o versione successiva, `RequiredPlatformVersion` impostare su 6.2.0. Per specificare un modello per [!INCLUDE[win81](../debugger/includes/win81_md.md)] o versione successiva, `RequiredPlatformVersion` impostare su 6.3.0.
 
- I modelli che specificano `RequiredPlatformVersion` = 8 sono compatibili con i modelli di cliente precedenti [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .
+ I modelli che `RequiredPlatformVersion` specificano =8 sono compatibili con i modelli dei clienti [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] precedenti.
 
- TemplateData VSTemplate.... RequiredPlatformVersion TargetPlatformName
+ VsTemplate TemplateData ..... TargetPlatformName RequiredPlatformVersion
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,15 +37,15 @@ Specifica la versione minima del sistema operativo necessaria per il corretto fu
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
 
- Nessuna.
+ Nessuno.
 
 ### <a name="attributes"></a>Attributi
 
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -80,6 +80,6 @@ Specifica la versione minima del sistema operativo necessaria per il corretto fu
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Elemento TargetPlatformName (modelli di Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
+- [Elemento TargetPlatformName (Visual Studio modelli)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)

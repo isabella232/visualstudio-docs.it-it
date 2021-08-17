@@ -8,14 +8,15 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e8e61e5decea326fcb7f670ed2ab58f0137530
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 933856cffcf7a012be7d9774b3d703aa92e335fb5d7939d804ef49043875f1a7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902787"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388396"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 ## <a name="animation-fundamentals"></a>Nozioni fondamentali sulle animazioni
@@ -29,9 +30,9 @@ Seguire queste regole per garantire stili di animazione coerenti e descrittivi n
 
   - Completare le transizioni animate entro mezzo secondo (500 millisecondi).
 
-  - Le animazioni che si verificano di frequente devono essere sufficientemente rapide da non interrompere il flusso di lavoro dell'utente. Osservare l'animazione in un ciclo e regolare l'intervallo fino a quando non sembra adatta.
+  - Le animazioni che si verificano di frequente devono essere sufficientemente rapide da non interrompere il flusso di lavoro dell'utente. Osservare l'animazione in un ciclo e regolare l'intervallo fino a quando non sembra a destra.
 
-  - Le animazioni non devono essere così veloci o insoddisfacenti da risultare difficili da comprendere, ma non così lente da rendere la transizione insoddisfacente.
+  - Le animazioni non devono essere così veloci o insoddisfacenti da risultare difficili da comprendere, ma non così lente da rendere l'utente insoddisfacente per il completamento della transizione.
 
   - Usare la temporizzazione variabile per evidenziare l'importanza. Ad esempio, quando si esplora una sequenza di elementi in un diagramma classi, velocizzare le transizioni tra gli elementi e quindi rallentare per concentrarsi sugli elementi importanti.
 
@@ -39,7 +40,7 @@ Seguire queste regole per garantire stili di animazione coerenti e descrittivi n
 
 - Quando possibile, **usare un'animazione sottile al passaggio del** mouse per indicare elementi interattivi sotto il mouse.
 
-- Se si fa affidamento sulle animazioni  nelle funzionalità, specificare un modo per disattivarle in locale (per tutte le funzionalità) come opzione nella finestra di **dialogo Strumenti > opzioni.**
+- Se si fa affidamento sulle animazioni  nelle funzionalità, specificare un modo per disattivarle in locale (per tutte le funzionalità) come opzione nella finestra di dialogo Strumenti **> opzioni.**
 
 - **Deve verificarsi una sola animazione alla volta** e comunicare solo un'informazione. Più di un oggetto che si sposta o tenta di comunicare più elementi può generare confusione.
 
@@ -55,7 +56,7 @@ Seguire queste regole per garantire stili di animazione coerenti e descrittivi n
 
   - Assicurarsi che un'animazione abbia stati di completamento e di errore identificabili.
 
-  - Ridurre al minimo l'uso delle animazioni degli effetti che mostrano lo stato e assicurarsi che siano di valore reale fornendo informazioni aggiuntive sull'uso effettivo. Gli esempi includono le modifiche dello stato temporaneo e le emergenze
+  - Ridurre al minimo l'uso delle animazioni degli effetti che mostrano lo stato e assicurarsi che siano di valore reale fornendo informazioni aggiuntive sull'uso effettivo. Alcuni esempi includono le modifiche dello stato temporaneo e le emergenze
 
 #### <a name="animation-donts"></a>L'animazione non ha effetto:
 
@@ -106,7 +107,7 @@ Illustrare informazioni complesse e variabili:
 
 - Morphing da una rappresentazione strutturale o organizzativa a un'altra
 
-- Rappresentazione delle modifiche nel tempo tramite dispositivi di scorrimento del tempo, rotelle a rotelle e controlli di trasporto (riproduzione, arresto e pausa)
+- Rappresentazione delle modifiche nel tempo tramite dispositivi di scorrimento del tempo, rotelle di scorrimento e rotelle e controlli di trasporto (riproduzione, arresto e pausa)
 
 ##### <a name="relationships"></a>Relazioni
 
@@ -116,11 +117,11 @@ Illustrare informazioni complesse e variabili:
 
 - Un elemento genera un altro elemento
 
-- Un elemento viene ridotto a icona in un altro elemento
+- Un elemento viene ridotto a icona a un altro elemento
 
 - Un elemento con tethering a un altro
 
-##### <a name="state"></a>Stato
+##### <a name="state"></a>State
 
 - Aggiornamenti del contenuto
 
@@ -153,7 +154,7 @@ Illustrare informazioni complesse e variabili:
 - Ripristinare lo stato cronologico
 
 #### <a name="attract-attention"></a>Attirare l'attenzione
-Se l'obiettivo è quello di attirare l'attenzione dell'utente su un singolo elemento da diversi elementi o di avvisare l'utente di informazioni aggiornate, potrebbe essere appropriata un'animazione. Ad esempio, la pagina iniziale dell'applicazione potrebbe usare un Attività iniziali che scorre sul posto dopo il caricamento della pagina.
+Se l'obiettivo è quello di attirare l'attenzione dell'utente su un singolo elemento da diversi elementi o di avvisare l'utente di informazioni aggiornate, potrebbe essere appropriata un'animazione. Ad esempio, la pagina iniziale dell'applicazione potrebbe usare un pulsante Attività iniziali che scorre sul posto dopo il caricamento della pagina.
 
 Di norma, l'ultimo elemento in movimento sullo schermo attrae l'attenzione dell'utente.  In una serie di elementi animati, l'attenzione dell'utente seguirà l'ultimo oggetto in movimento.
 
@@ -169,14 +170,14 @@ Di norma, l'ultimo elemento in movimento sullo schermo attrae l'attenzione dell'
 
 - Avvisare l'utente di una condizione di errore
 
-- Interrompere l'utente per verificare se vuole partecipare a un'altra attività
+- Interrompi l'utente per verificare se vuole partecipare a un'altra attività
 
-- Informare l'utente che un processo è stato completato o modificato, ad esempio al termine di un download.
+- Gli utenti che hanno eseguito un processo sono stati completati o modificati, ad esempio al termine di un download.
 
 #### <a name="simulate"></a>Simulate
 Questa categoria copre la fisicità e la dimensionalità.
 
-- Illustrare da dove provengono gli oggetti o da dove vengono
+- Illustrare da dove provengono gli oggetti o da dove vengono visitati
 
 - Espandere e comprimere o aprire e chiudere
 
@@ -184,16 +185,16 @@ Questa categoria copre la fisicità e la dimensionalità.
 
 - Impilamento e ordinamento z
 
-- Giostra e accordion
+- Carousel e accordion
 
 - Capovolgimento e rotazione dell'interfaccia utente
 
-#### <a name="response-and-progress-indicators"></a>Indicatori di risposta e stato
-Gli indicatori di stato presentano un paio di vantaggi importanti:
+#### <a name="response-and-progress-indicators"></a>Indicatori di risposta e di stato
+Gli indicatori di stato presentano due vantaggi importanti:
 
-- Sia gli indicatori di stato determinati che indeterminati rassicurano l'utente che il sistema non si è arrestato in modo anomalo e sta lavorando al problema.
+- Sia gli indicatori di stato determinati che indeterminati assicurano all'utente che il sistema non si è arrestato in modo anomalo e sta lavorando al problema.
 
-- Gli indicatori determinati offrono all'utente un'idea di quanto procede l'azione, nonché di avvicinarsi alla fine.
+- Gli indicatori determinati offrono all'utente un'idea dell'avanzamento dell'azione, nonché la impressione di avvicinarsi al completamento.
 
 ## <a name="animation-patterns"></a><a name="BKMK_AnimationPatterns"></a> Modelli di animazione
 
@@ -204,44 +205,44 @@ Le animazioni in Visual Studio servono a una funzione specifica senza ostacolare
 
 - Naturale e realistico
 
-- Sottile e sottomesso
+- Sottile e sottodominio
 
 - Veloce ed efficiente
 
-- Rilassato, non frettolato
+- Relaxed, not hurried
 
-Questa figura mostra gli stili di animazione consigliati per Visual Studio. Nessuna animazione o animazioni sottili come dissolvenza in entrata/dissolvenza in uscita sono le più usate. È disponibile un'applicazione limitata di animazioni di spostamento, ad esempio espansione e contratto, modifica della posizione X e Y e rotazione.
+Questa illustrazione mostra gli stili di animazione consigliati per Visual Studio. Nessuna animazione o animazioni sottiglie, ad esempio dissolvenza in entrata/uscita, sono le più usate. È disponibile un'applicazione limitata di animazioni di spostamento, ad esempio espansione e contratto, modifica della posizione X e Y e rotazione.
 
 ![Stili di animazione consigliati per Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202-a_VSAnimStyles")<br />Stili di animazione consigliati per Visual Studio
 
 #### <a name="appear-and-disappear"></a>Apparire e scomparire
-Con questo modello, un elemento passa da visibile a non visibile e torna indietro senza un'animazione di transizione.
+Con questo modello, un elemento passa da visibile a non visibile e indietro senza un'animazione di transizione.
 
-![Animazione di visualizzazione e scomparsa](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202-b_AppearAndDisappear")<br />Animazione di visualizzazione e scomparsa
+![Animazione di visualizzazione e sparire](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202-b_AppearAndDisappear")<br />Animazione di visualizzazione e sparire
 
-##### <a name="correct-usage"></a>Utilizzo corretto
-Nuovi elementi dell'interfaccia utente che devono apparire o scomparire immediatamente in modo che l'utente non sia distratto né ostacolato. Inoltre, le animazioni lente potrebbero essere percepite come un trascinamento delle prestazioni, che non si verificherà con lo stile di visualizzazione e di scomparsa.
+##### <a name="correct-usage"></a>Uso corretto
+Nuovi elementi dell'interfaccia utente che devono apparire o scomparire immediatamente in modo che l'utente non sia distratto né ostruito. Inoltre, le animazioni lente potrebbero essere percepite come un trascinamento delle prestazioni, che non si verifica con lo stile di visualizzazione e di scomparsa.
 
 ##### <a name="incorrect-usage"></a>Utilizzo non corretto
-Nei casi in cui l'interfaccia utente viene visualizzata in modo improvviso, l'utente non ha idea di cosa sia successo e l'aggiunta di un'animazione può essere utile per la comprensione contestuale.
+Nei casi in cui l'interfaccia utente viene visualizzata così improvvisamente, l'utente non ha idea di cosa sia successo e l'aggiunta di un'animazione può essere utile per comprendere il contesto.
 
 ##### <a name="animation-properties"></a>Proprietà dell'animazione
 Il ritardo è in genere pari a zero secondi.
 
 ##### <a name="examples"></a>Esempio
-- Nascondere automaticamente le finestre degli strumenti
+- Nascondi automaticamente le finestre degli strumenti
 
-- Interfaccia utente dell'editor attivata dalla tastiera, ad esempio IntelliSense e guida ai parametri
+- Interfaccia utente dell'editor attivata tramite tastiera, ad esempio IntelliSense e guida per i parametri
 
-- Espandere e comprimere le aree del codice
+- Espandere e comprimere aree di codice
 
 #### <a name="fade-in-and-fade-out"></a>Dissolvenza in entrata e in uscita
-Con questo modello, un elemento dell'interfaccia utente passa da non visibile (0% opacità) a visibile (100% opacità) o viceversa.
+Con questo modello, un elemento dell'interfaccia utente passa da non visibile (opacità 0%) a visibile (opacità del 100%) o viceversa.
 
 ![Animazione con dissolvenza in entrata e in uscita](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202-c_FadeInFadeOut")<br />Animazione con dissolvenza in entrata e in uscita
 
-##### <a name="correct-usage"></a>Utilizzo corretto
-Si tratta dell'animazione dell'interfaccia utente più comunemente consigliata. Si tratta di un effetto sottile che aggiunge interesse senza interrompere il flusso. In alcuni casi, l'utente potrebbe anche non rendersi conto che è presente un'animazione, che percepisce un sistema di interfaccia utente uniforme e scorrevole.
+##### <a name="correct-usage"></a>Uso corretto
+Questa è l'animazione dell'interfaccia utente più comunemente consigliata. Si tratta di un effetto sottile che aggiunge interesse senza interrompere il flusso. In alcuni casi, l'utente potrebbe non rendersi nemmeno conto che è presente un'animazione, percependo un sistema di interfaccia utente uniforme e scorrevole.
 
 ##### <a name="animation-properties"></a>Proprietà dell'animazione
 
@@ -251,22 +252,22 @@ Si tratta dell'animazione dell'interfaccia utente più comunemente consigliata. 
 
 - Durata: 200 millisecondi autonomi, 100 millisecondi se usati come parte di una sequenza di animazione combinata
 
-- Stile di easing: Sine InOut
+- Stile di semplificazione: Sine InOut
 
 ##### <a name="examples"></a>Esempio
 
-- Nascondere automaticamente le finestre degli strumenti
+- Nascondi automaticamente le finestre degli strumenti
 
 - Menu aperto e chiuso
 
-- Transizioni di schede in background e in primo piano
+- Transizioni di schede in primo piano e di sfondo
 
-#### <a name="color-blend-from-a-to-b"></a>Fusione di colori da A a B
+#### <a name="color-blend-from-a-to-b"></a>Combinazione di colori da A a B
 Con questo modello, un elemento dell'interfaccia utente cambia dal colore A al colore B.
 
 ![Animazione della combinazione di colori](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202-d_ColorBlend")<br />Animazione della combinazione di colori
 
-##### <a name="correct-usage"></a>Utilizzo corretto
+##### <a name="correct-usage"></a>Uso corretto
 Come transizione animata quando un elemento dell'interfaccia utente cambia colore da un contesto o uno stato a un altro.
 
 ##### <a name="animation-properties"></a>Proprietà dell'animazione
@@ -277,21 +278,21 @@ Come transizione animata quando un elemento dell'interfaccia utente cambia color
 
 - Durata: 200 millisecondi autonomi, 100 millisecondi se usati come parte di una sequenza di animazione combinata
 
-- Stile di easing: Sine InOut
+- Stile di semplificazione: Sine InOut
 
 ##### <a name="examples"></a>Esempio
 
-- Transizioni dello stato della finestra del documento (attive, ultime attive e inattive)
+- Transizioni di stato della finestra del documento (attive, ultime attive e inattive)
 
-- Transizioni dello stato della finestra degli strumenti (con stato attivo e non attivo)
+- Transizioni di stato della finestra degli strumenti (con stato attivo e con stato non attivo)
 
 #### <a name="expand-and-contract"></a>Espandere e contrarsi
 Con questo modello, un elemento dell'interfaccia utente si espande in X, Y o in entrambe le direzioni.
 
-![Espandere e contrarre l'animazione](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202-e_ExpandContract")<br />Espandere e contrarre l'animazione
+![Espandere e comprimere l'animazione](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202-e_ExpandContract")<br />Espandere e comprimere l'animazione
 
-##### <a name="correct-usage"></a>Utilizzo corretto
-Come transizione animata quando un elemento dell'interfaccia utente cambia le dimensioni da un contesto a un altro.
+##### <a name="correct-usage"></a>Uso corretto
+Come transizione animata quando le dimensioni di un elemento dell'interfaccia utente cambiano da un contesto a un altro.
 
 ##### <a name="animation-properties"></a>Proprietà dell'animazione
 
@@ -307,27 +308,27 @@ Come transizione animata quando un elemento dell'interfaccia utente cambia le di
 
 - Espandere e comprimere il pannello Esplora architetture
 
-- Visual Studio elemento della pagina iniziale di 2017 espandere e comprimere
+- Visual Studio pagina iniziale di 2017 espandere e comprimere
 
 #### <a name="x-y-position-change"></a>Modifica della posizione X-Y
 Con questo modello, un elemento dell'interfaccia utente modifica la posizione X o Y o entrambi.
 
 ![Animazione di modifica della posizione X-Y](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />Animazione di modifica della posizione X-Y
 
-##### <a name="correct-usage"></a>Utilizzo corretto
-Transizione animata quando un elemento dell'interfaccia utente cambia posizione da un contesto a un altro.
+##### <a name="correct-usage"></a>Uso corretto
+Come transizione animata quando un elemento dell'interfaccia utente cambia posizione da un contesto a un altro.
 
 ##### <a name="animation-properties"></a>Proprietà dell'animazione
 
 - Posizione X e Y iniziale: specifica dell'interfaccia utente
 
-- Posizione X e Y finale: specifica dell'interfaccia utente
+- Posizione X e Y finali: specifica dell'interfaccia utente
 
 - Percorso di movimento: nessuno
 
 - Durata: 200 millisecondi autonomi, 100 millisecondi se usati come parte di una sequenza di animazione combinata
 
-- Stile di easing: Sine InOut
+- Stile di semplificazione: Sine InOut
 
 ##### <a name="example"></a>Esempio
 Riordinamento delle schede

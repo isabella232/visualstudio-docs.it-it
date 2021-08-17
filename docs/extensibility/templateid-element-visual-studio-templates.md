@@ -1,6 +1,6 @@
 ---
-title: Elemento TemplateID (modelli di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento TemplateID e su come specifica un identificatore per un modello di elemento categorizzato in un gruppo di modelli di elemento tramite l'elemento TemplateGroupID.
+title: Elemento TemplateID (modelli Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento TemplateID e su come specifica un identificatore per un modello di elemento categorizzato in un gruppo di modelli di elemento in base all'elemento TemplateGroupID.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e33f2d5c424e5d48cff212dc736bbc13e58801d5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: aa94da28cf02916b0961da722785c4f51d14d171ca61b69630f1a6c027491468
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056012"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388175"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Elemento TemplateID (modelli di Visual Studio)
-Specifica un identificatore per un modello di elemento categorizzato in un gruppo di modelli di elemento dall'elemento [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
+Specifica un identificatore per un modello di elemento categorizzato in un gruppo di modelli di elemento [dall'elemento TemplateGroupID.](../extensibility/templategroupid-element-visual-studio-templates.md)
 
  \<VSTemplate> \<TemplateData>
  \<TemplateID>
@@ -39,10 +39,10 @@ Specifica un identificatore per un modello di elemento categorizzato in un grupp
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -51,14 +51,14 @@ Specifica un identificatore per un modello di elemento categorizzato in un grupp
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|
 
 ## <a name="text-value"></a>Valore di testo
- Oggetto `string` che rappresenta un identificatore per un modello di elemento categorizzato in un gruppo di modelli di elemento dall' `TemplateGroupID` elemento.
+ Oggetto `string` che rappresenta un identificatore per un modello di elemento categorizzato in un gruppo di modelli di elemento in base all'elemento. `TemplateGroupID`
 
 ## <a name="remarks"></a>Commenti
  `TemplateID` è un elemento facoltativo.
 
- Se un file con estensione vstemplate omette l' `TemplateID` elemento, l'elemento [Name](../extensibility/name-element-visual-studio-templates.md) viene utilizzato come identificatore per il modello.
+ Se un file con estensione vstemplate omette `TemplateID` l'elemento , [l'elemento Name](../extensibility/name-element-visual-studio-templates.md) viene usato come identificatore per il modello.
 
- Il valore dell' `TemplateID` elemento viene utilizzato insieme alla registrazione del sistema del progetto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\ ) per filtrare i modelli visualizzati nella finestra di dialogo **Aggiungi nuovo elemento** .
+ Il valore dell'elemento viene usato insieme alla registrazione del sistema del progetto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects) per filtrare i modelli visualizzati nella finestra di dialogo `TemplateID` \\ Aggiungi nuovo elemento. 
 
 ## <a name="see-also"></a>Vedi anche
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: DA0010-GetHashCode costoso | Microsoft Docs
+title: DA0010 - GetHashCode | Microsoft Docs
 description: Le chiamate al metodo GetHashCode del tipo rappresentano una percentuale significativa dei dati di profilatura o il metodo alloca memoria.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,16 @@ ms.assetid: 3987e21a-5b4f-45e4-8a33-6b3f0a472c08
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44c998cabd3611e2ed393be0ad7df20e1ac49c
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 3b32dba46e496e80c12b2fd351cc5dde0984d95b95ddd98492adb51ee9c52f1b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469924"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121368799"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Funzione GetHashCode dispendiosa
 

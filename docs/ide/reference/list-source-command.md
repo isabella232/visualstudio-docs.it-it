@@ -1,6 +1,6 @@
 ---
 title: Comando Elenca origine
-description: Informazioni sul comando list source e su come vengono visualizzate le righe specificate del codice sorgente.
+description: Informazioni sul comando List Source e su come visualizza le righe di codice sorgente specificate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd5ab0ddd94b17fa6a683366707d635f844bb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 467abd21c80036b1b16edbb1b64ee818ca726e5e3218eb77d002408c49843e1c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919434"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387421"
 ---
 # <a name="list-source-command"></a>Comando Elenca origine
 Visualizza le righe del codice sorgente specificate.
@@ -63,5 +64,5 @@ Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNum
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

@@ -1,6 +1,6 @@
 ---
-title: Distribuzione dei prerequisiti per le applicazioni a 64 bit | Microsoft Docs
-description: Informazioni sui ridistribuibili che è possibile usare come prerequisiti per la distribuzione ClickOnce di applicazioni su piattaforme a 64 bit.
+title: Prerequisiti per la distribuzione di applicazioni a 64 bit | Microsoft Docs
+description: Informazioni sui componenti ridistribuibili che è possibile usare come prerequisiti per ClickOnce distribuzione di applicazioni in piattaforme a 64 bit.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,14 +18,15 @@ ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: abc44c679e65cc49f6a491e9435fdaeffed5e9c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91209a76acc754a900bfc88d5d488f0b4729703121d1125abc9f25990ca1c9c9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893945"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435563"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
 La distribuzione ClickOnce supporta l'installazione di applicazioni su piattaforme a 64 bit. Le piattaforme di destinazione sono **x86** per le piattaforme a 32 bit, **x64** per i computer che supportano i set di istruzioni AMD64 ed EM64T e **Itanium** per il processore Itanium a 64 bit.

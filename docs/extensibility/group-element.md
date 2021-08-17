@@ -11,14 +11,15 @@ ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 422ff5d3d962198953a24210eaa3ffa30c7fc8a1
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 781004b69925e7c2cec1e1b7f9a4754e279832de78102d6d1ad85a54c6263b6e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898591"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376508"
 ---
 # <a name="group-element"></a>Group - elemento
 Definisce un gruppo di comandi VSPackage.
@@ -41,7 +42,7 @@ Definisce un gruppo di comandi VSPackage.
 |guid|Obbligatorio. GUID dell'identificatore del comando GUID/ID.|
 |id|Obbligatorio. ID dell'identificatore del comando GUID/ID.|
 |priority|facoltativo. Valore numerico che specifica la priorità.|
-|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -54,7 +55,7 @@ Definisce un gruppo di comandi VSPackage.
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi di un vspackage.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi di un VSPackage.|
 
 ## <a name="example"></a>Esempio
 

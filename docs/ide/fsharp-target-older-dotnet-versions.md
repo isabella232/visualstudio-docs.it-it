@@ -6,15 +6,16 @@ ms.topic: troubleshooting
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: fe9d87a5cdea04251d7ab30b6e9e0fed6b0c4b31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a275a9f24ba3c3cbbfa2eb52a1166c46c1992421b2fee584c0fb628529b31c5c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945526"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372933"
 ---
 # <a name="target-older-versions-of-net-f"></a>Usare come destinazione versioni precedenti di .NET (F#)
 

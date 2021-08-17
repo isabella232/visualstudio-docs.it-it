@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c6cdb027bafdf4d1fe7689d7dd30d697b539370
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: bfd2a8d12d61f795afb07dd250fef312b1720b627ac2888bc390a73a071985c4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388997"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370749"
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestori delle modifiche del valore della proprietà di dominio
 
@@ -99,7 +100,7 @@ if (newValue > 10)
 
 Nell'esempio precedente viene illustrato come usare OnValueChanged() per propagare valori da una proprietà di dominio a un'altra. Ogni proprietà presenta il proprio valore archiviato.
 
-In alternativa, si potrebbe definire la proprietà derivata come proprietà calcolata. In questo caso la proprietà non dispone di archiviazione propria e la sua funzione di definizione viene valutata ogni volta che è necessario il relativo valore. Per altre informazioni, vedere [Proprietà di archiviazione calcolate e personalizzate.](../modeling/calculated-and-custom-storage-properties.md)
+In alternativa, si potrebbe definire la proprietà derivata come proprietà calcolata. In questo caso la proprietà non dispone di archiviazione propria e la sua funzione di definizione viene valutata ogni volta che è necessario il relativo valore. Per altre informazioni, vedere [Calculated and Custom Archiviazione Properties](../modeling/calculated-and-custom-storage-properties.md).
 
 Anziché l'esempio precedente, è possibile impostare il **campo Kind** di su `TextLengthCount` **Calculated** nella definizione DSL. È necessario fornire un metodo **Get** personalizzato per questa proprietà di dominio. Il **metodo Get** restituisce la lunghezza corrente della `Text` stringa.
 

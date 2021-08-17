@@ -4,6 +4,8 @@ description: Informazioni su come usare la finestra di dialogo Gestione riferime
 ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
 - C# projects, references
 - references [Visual Studio], adding
@@ -19,14 +21,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 552ec8364bb58b72199bacecca99283303eb174c
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 553e116bf7592534e993f5c400b813abbc62ffe5bb2a3e727c8ca0699da74481
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924916"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387720"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -75,7 +78,7 @@ La scheda **Assembly** è costituita da due sottoschede:
 
    Per i progetti che non usano .NET Core o la piattaforma UWP (Universal Windows Platform) come destinazione, la scheda **Framework** enumera gli assembly del framework di destinazione. L'utente dovrà aggiungere i riferimenti necessari all'applicazione.
 
-   Per impostazione predefinita, i progetti di Windows universale contengono riferimenti a tutti gli assembly nel framework di destinazione. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** **in** Esplora soluzioni indica il riferimento all'intero framework. Di conseguenza, la scheda **Framework** non enumera gli assembly del framework e visualizza invece il messaggio seguente: "Tutti gli assembly framework sono già a cui viene fatto riferimento. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework."
+   Per impostazione predefinita, i progetti di Windows universale contengono riferimenti a tutti gli assembly nel framework di destinazione. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** **in** Esplora soluzioni indica il riferimento all'intero framework. Di conseguenza, la scheda **Framework** non enumera nessuno degli assembly del framework e visualizza invece il messaggio seguente: "Tutti gli assembly framework sono già a cui viene fatto riferimento. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework."
 
 2. **Le** estensioni elencano tutti gli assembly sviluppati da fornitori esterni di componenti e controlli per estendere il framework di destinazione. A seconda dello scopo dell'applicazione utente, potrebbero essere necessari questi assembly.
 
@@ -132,7 +135,7 @@ Evitare di aggiungere riferimenti a file agli output di altri progetti della ste
 
   *\<VersionMinimum\>* è la versione del framework più bassa applicabile. Se è v3.0, le cartelle specificate in AssemblyFoldersEx si applicano ai progetti che hanno come destinazione .NET Framework *\<VersionMinimum\>* 3.0 e versioni successive. 
 
-  *\<AssemblyLocation\>* è la directory degli assembly che si  desidera visualizzare nella finestra di dialogo Aggiungi riferimento, ad esempio *C:\Assembly*.
+  *\<AssemblyLocation\>* è la directory degli assembly che si  desidera visualizzare nella finestra di dialogo Aggiungi riferimento, ad esempio *C:\MyAssemblies*.
 
   Se la chiave del Registro di sistema viene creata nel nodo `HKEY_LOCAL_MACHINE`, tutti gli utenti possono visualizzare gli assembly nel percorso specificato nella finestra di dialogo **Aggiungi riferimento**. Se la chiave del Registro di sistema viene creata nel nodo `HKEY_CURRENT_USER`, ha effetto solo sull'impostazione dell'utente corrente.
 
@@ -162,7 +165,7 @@ I progetti di app di Windows universale hanno un riferimento all'SDK di Windows 
 
 ### <a name="extensions-subgroup"></a>Sottogruppo Estensioni
 
-**Estensioni** elenca gli SDK utente che estendono la piattaforma Windows di destinazione.
+**Estensioni** elenca gli SDK utente che estendono la piattaforma Windows destinazione.
 
 Un SDK è una raccolta di file che in Visual Studio vengono trattati come un singolo componente. Nella scheda **Estensioni** gli SDK applicabili al progetto da cui è stata richiamata la finestra di dialogo Gestione riferimenti sono elencati come singole voci. Una volta aggiunto a un progetto, tutto il contenuto dell'SDK viene utilizzato da Visual Studio in modo tale che l'utente non deve eseguire nuove azioni per sfruttare il contenuto dell'SDK in IntelliSense, nella casella degli strumenti, nelle finestre di progettazione, nel Visualizzatore oggetti, nella compilazione, nella distribuzione, nel debug e nella creazione del pacchetto.
 
@@ -193,7 +196,7 @@ Quando si esegue un riferimento a un file WinMD, il layout previsto è che i fil
 
 - **Componente nativo**: un progetto nativo crea un WinMD per ogni set di spazi dei nomi disgiunto e una sola DLL costituita dall'implementazione. I file WinMD avranno nomi diversi. Durante la creazione del riferimento a questo file di componente nativo, MSBuild non sarà in grado di riconoscere che WinMD con nome diverso sono in realtà un unico componente. Di conseguenza, verranno copiati solo i file *\<FileName>.dll* e *\<FileName> winmd* con lo stesso nome e si verificheranno errori di runtime. Per risolvere questo problema, creare un SDK di estensione. Per altre informazioni, vedere [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Utilizzo di controlli**: un controllo XAML consiste come minimo nei file con estensione *\<FileName>winmd*, *\<FileName>dll*, *\<FileName>pri*, *\<XamlName>xaml* e *\<ImageName>jpg*. Quando il progetto viene compilato, i file di risorse associati al riferimento al file non verranno copiati nella directory di output del progetto e verranno copiati solo i file con estensione *\<FileName> winmd*, *\<FileName>.dll* e *\<FileName> pri.* Viene registrato un errore di compilazione per informare l'utente che le risorse *\<XamlName> .xaml* *\<ImageName> e.jpg* mancanti. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md) o modificare il file di progetto per aggiungere la proprietà seguente:
+- **Utilizzo di controlli**: un controllo XAML consiste come minimo nei file con estensione *\<FileName>winmd*, *\<FileName>dll*, *\<FileName>pri*, *\<XamlName>xaml* e *\<ImageName>jpg*. Quando il progetto viene compilato, i file di risorse associati al riferimento al file non verranno copiati nella directory di output del progetto e verranno copiati solo i file con estensione *\<FileName> winmd*, *\<FileName>.dll* e *\<FileName> pri.* Viene registrato un errore di compilazione per informare l'utente che le risorse con estensione *\<XamlName> xaml* *\<ImageName> e.jpg* mancanti. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md) o modificare il file di progetto per aggiungere la proprietà seguente:
 
     ```xml
     <PropertyGroup>
@@ -206,12 +209,12 @@ Quando si esegue un riferimento a un file WinMD, il layout previsto è che i fil
 
 ## <a name="recent"></a>Recenti
 
-**Gli assembly**, **COM,** **Windows** e **Sfoglia** supportano ognuno una scheda **Recenti,** che enumera l'elenco dei componenti aggiunti di recente ai progetti.
+**Gli assembly**, **COM**,  **Windows** e Sfoglia supportano una scheda **Recenti** , che enumera l'elenco dei componenti aggiunti di recente ai progetti.
 
-## <a name="search"></a>Ricerca
+## <a name="search"></a>Cerca
 
 La barra di ricerca della finestra di dialogo Gestione riferimenti viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, verranno restituiti risultati solo se la soluzione è costituita da un nome di progetto contenente il termine "sistema".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)

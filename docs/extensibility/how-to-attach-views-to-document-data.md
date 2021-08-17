@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: aggiungere visualizzazioni ai dati del documento | Microsoft Docs'
-description: Potrebbe essere possibile aggiungere una nuova visualizzazione documento a un oggetto dati documento esistente. Utilizzare questa procedura per determinare se è possibile alleghi la visualizzazione.
+title: 'Procedura: Associare visualizzazioni a document data | Microsoft Docs'
+description: Potrebbe essere possibile allegare una nuova visualizzazione documento a un oggetto dati del documento esistente. Utilizzare questa procedura per determinare se è possibile collegare la vista.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,40 +10,41 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a034fc1c7cded7de4ead38cfba5d3410341c95d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 16b014141d2f4f396d35b2e163b7c191ab0115325988d7484a544066a077ce98
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057416"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376599"
 ---
-# <a name="how-to-attach-views-to-document-data"></a>Procedura: aggiungere visualizzazioni ai dati del documento
-Se si dispone di una nuova visualizzazione del documento, potrebbe essere possibile collegarla a un oggetto dati del documento esistente.
+# <a name="how-to-attach-views-to-document-data"></a>Procedura: Associare visualizzazioni ai dati del documento
+Se si dispone di una nuova visualizzazione documento, è possibile collegarla a un oggetto dati del documento esistente.
 
-## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Per determinare se è possibile aggiungere una vista a un oggetto dati del documento esistente
+## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Per determinare se è possibile collegare una vista a un oggetto dati del documento esistente
 
 1. Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.
 
-2. Nell'implementazione di `IVsEditorFactory::CreateEditorInstance` , chiamare `QueryInterface` sull'oggetto dati del documento esistente quando l'IDE chiama l' `CreateEditorInstance` implementazione.
+2. Nell'implementazione di `IVsEditorFactory::CreateEditorInstance` chiamare `QueryInterface` sull'oggetto dati del documento esistente quando l'IDE chiama l'implementazione `CreateEditorInstance` di .
 
-    `QueryInterface`La chiamata a consente di esaminare l'oggetto dati del documento esistente, specificato nel `punkDocDataExisting` parametro.
+    La `QueryInterface` chiamata di consente di esaminare l'oggetto dati del documento esistente, specificato nel `punkDocDataExisting` parametro .
 
-    Le interfacce esatte su cui è necessario eseguire query, tuttavia, dipendono dall'editor che sta aprendo il documento, come descritto nel passaggio 4.
+    Le interfacce esatte su cui è necessario eseguire una query, tuttavia, dipendono dall'editor che apre il documento, come descritto nel passaggio 4.
 
-3. Se non si trovano le interfacce appropriate nell'oggetto dati del documento esistente, restituire un codice di errore all'editor che indica che l'oggetto dati del documento non è compatibile con l'editor.
+3. Se non si trovano le interfacce appropriate nell'oggetto dati del documento esistente, restituire all'editor un codice di errore che indica che l'oggetto dati del documento non è compatibile con l'editor.
 
-    Nell'implementazione dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> una finestra di messaggio informa che il documento è aperto in un altro editor e chiede se si desidera chiuderlo.
+    Nell'implementazione dell'IDE di , una finestra di messaggio notifica che il documento è aperto in un altro editor e chiede se <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> si vuole chiuderlo.
 
-4. Se si chiude il documento, Visual Studio chiama la factory dell'editor per la seconda volta. In questa chiamata il `DocDataExisting` parametro è uguale a null. L'implementazione della factory dell'editor può quindi aprire l'oggetto dati del documento nell'editor personalizzato.
+4. Se si chiude questo documento, Visual Studio chiama la factory dell'editor per la seconda volta. In questa chiamata, il `DocDataExisting` parametro è uguale a NULL. L'implementazione della factory dell'editor può quindi aprire l'oggetto dati del documento nel proprio editor.
 
    > [!NOTE]
-   > Per determinare se è possibile utilizzare un oggetto dati documento esistente, è anche possibile utilizzare la conoscenza privata dell'implementazione dell'interfaccia eseguendo il cast di un puntatore alla [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] classe effettiva dell'implementazione privata. Ad esempio, tutti gli editor standard implementano `IVsPersistFileFormat` , che eredita da <xref:Microsoft.VisualStudio.OLE.Interop.IPersist> . Pertanto, è possibile chiamare `QueryInterface` per <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A> e se l'ID di classe nell'oggetto dati del documento esistente corrisponde all'ID di classe dell'implementazione, è possibile utilizzare l'oggetto dati del documento.
+   > Per determinare se è possibile usare un oggetto dati del documento esistente, è anche possibile usare una conoscenza privata dell'implementazione dell'interfaccia eseguendo il cast di un puntatore alla classe effettiva [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] dell'implementazione privata. Ad esempio, tutti gli editor standard implementano `IVsPersistFileFormat` , che eredita da <xref:Microsoft.VisualStudio.OLE.Interop.IPersist> . Di conseguenza, è possibile chiamare per e, se l'ID classe nell'oggetto dati del documento esistente corrisponde all'ID classe dell'implementazione, è possibile usare `QueryInterface` <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A> l'oggetto dati del documento.
 
 ## <a name="robust-programming"></a>Programmazione efficiente
- Quando Visual Studio chiama l'implementazione del <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metodo, restituisce un puntatore all'oggetto dati del documento esistente nel `punkDocDataExisting` parametro, se esistente. Esaminare l'oggetto dati del documento restituito in `punkDocDataExisting` per determinare se l'oggetto dati del documento è appropriato per l'editor, come descritto nella nota nel passaggio 4 della procedura descritta in questo argomento. Se è appropriato, la factory dell'editor deve fornire una seconda visualizzazione dei dati, come descritto in [supportare più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md). In caso contrario, verrà visualizzato un messaggio di errore appropriato.
+ Quando Visual Studio chiama l'implementazione del metodo , passa un puntatore all'oggetto dati del documento esistente nel parametro <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> `punkDocDataExisting` , se presente. Esaminare l'oggetto dati del documento restituito in per determinare se l'oggetto dati del documento è appropriato per l'editor, come descritto nella nota del passaggio 4 della `punkDocDataExisting` procedura di questo argomento. Se è appropriato, la factory dell'editor deve fornire una seconda visualizzazione per i dati, come descritto in [Supportare più visualizzazioni documento.](../extensibility/supporting-multiple-document-views.md) In caso contrario, verrà visualizzato un messaggio di errore appropriato.
 
 ## <a name="see-also"></a>Vedi anche
-- [Supportare più visualizzazioni di documenti](../extensibility/supporting-multiple-document-views.md)
-- [Documenti e visualizzazione dei documenti negli editor personalizzati](../extensibility/document-data-and-document-view-in-custom-editors.md)
+- [Supportare più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md)
+- [Dati del documento e visualizzazione dei documenti negli editor personalizzati](../extensibility/document-data-and-document-view-in-custom-editors.md)

@@ -8,14 +8,15 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e26b18c838fc240d7fab398f8626890eed0d31
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 9ef5e643002840f37824050460659c25d5512a5c630210fb89266234cb8663cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901682"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375405"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Tipo di carattere dell'ambiente
@@ -25,7 +26,7 @@ ms.locfileid: "112901682"
 
 - **Editor di** testo: gli elementi presenti nel codice e in altri editor basati su testo possono essere personalizzati nella pagina Editor di testo in Strumenti > **Opzioni**.
 
-- **Raccolte specifiche:** le finestre di progettazione che offrono la **personalizzazione** degli elementi dell'interfaccia utente possono esporre tipi di carattere specifici dell'area di progettazione nella propria pagina delle impostazioni in Strumenti > opzioni .
+- **Raccolte specifiche:** le finestre di progettazione che offrono la personalizzazione degli elementi dell'interfaccia utente possono esporre tipi di carattere specifici dell'area di progettazione nella propria pagina delle impostazioni in **Strumenti > Opzioni**.
 
 ### <a name="editor-font-customization-and-resizing"></a>Personalizzazione e ridimensionamento dei caratteri dell'editor
  Gli utenti spesso ingrandiranno o ingrandiranno le dimensioni e/o il colore del testo nell'editor in base alle proprie preferenze, indipendentemente dall'interfaccia utente generale. Poiché il tipo di carattere dell'ambiente viene usato su elementi che potrebbero essere visualizzati all'interno o come parte di un editor o di una finestra di progettazione, è importante notare il comportamento previsto quando viene modificata una di queste classificazioni dei tipi di carattere.
@@ -82,7 +83,7 @@ window.ShowModal()
 
  `ShowModal` restituisce un valore bool? (booleano nullable) con `DialogResult` , che può essere usato se necessario. Il valore restituito è true se la finestra di dialogo è stata chiusa con **OK.**
 
- Se è necessario visualizzare un'interfaccia utente WPF che non è una finestra di dialogo ed è ospitata nel proprio , ad esempio una finestra popup o una finestra figlio WPF di una finestra padre `HwndSource` Win32/WinForms, sarà necessario impostare e sull'elemento radice dell'elemento `FontFamily` `FontSize` WPF. La shell imposta le proprietà nella finestra principale, ma non verranno ereditate oltre un `HWND` oggetto . La shell fornisce risorse a cui è possibile eseguire l'associazione delle proprietà, come nell'esempio seguente:
+ Se è necessario visualizzare un'interfaccia utente WPF che non è una finestra di dialogo ed è ospitata nel proprio , ad esempio una finestra popup o una finestra figlio WPF di una finestra padre `HwndSource` Win32/WinForms, è necessario impostare e sull'elemento radice dell'elemento `FontFamily` `FontSize` WPF. La shell imposta le proprietà nella finestra principale, ma non verranno ereditate oltre un `HWND` oggetto . La shell fornisce risorse a cui è possibile eseguire l'associazione delle proprietà, come nell'esempio seguente:
 
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />
@@ -105,7 +106,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 
 #### <a name="375-environment-font--light"></a>375% Carattere ambiente + Chiaro
 
-**Viene visualizzato come:** 34 pt Segoe UI Light
+**Viene visualizzato come:** 34 pt Segoe UI Luce
 
 ::: moniker range="vs-2017"
 
@@ -192,8 +193,8 @@ label.SetResourceReference(Label.StyleProperty,
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>
 ```
 
-#### <a name="133-environment-font"></a>133% Tipo di carattere ambiente
- **Viene visualizzato come:** 12 pt Segoe UI **usare per:** sottotitoli più piccoli nelle finestre di dialogo di firma e nell'interfaccia utente dell'area del documento
+#### <a name="133-environment-font"></a>Tipo di carattere 133% Ambiente
+ **Viene visualizzato come:** 12 pt Segoe UI **usare per:** sottotitoli più piccoli nei dialoghe di firma e nell'interfaccia utente dell'area del documento
 
  **Codice procedurale:** Dove `textBlock` è un textblock definito in precedenza ed `label` è un oggetto Label definito in precedenza:
 
@@ -212,7 +213,7 @@ label.SetResourceReference(Label.StyleProperty,
 ```
 
 #### <a name="122-environment-font"></a>Tipo di carattere 122% Ambiente
- **Viene visualizzato come:** 11 pt Segoe UI **usare per:** intestazioni di sezione nelle finestre di dialogo della firma, nodi principali nella visualizzazione albero, navigazione verticale delle schede
+ **Viene visualizzato come:** 11 pt Segoe UI **usare per:** intestazioni di sezione nelle finestre di dialogo di firma, nodi principali nella visualizzazione albero, navigazione verticale delle schede
 
  **Codice procedurale:** Dove `textBlock` è un textblock definito in precedenza ed `label` è un oggetto Label definito in precedenza:
 
@@ -230,8 +231,8 @@ label.SetResourceReference(Label.StyleProperty,
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>
 ```
 
-#### <a name="environment-font--bold"></a>Carattere dell'ambiente + grassetto
- **Viene visualizzato come:** grassetto 9 pt Segoe UI **usare per:** etichette e sottotitoli nei dialoghe di firma, nei report e nell'interfaccia utente dell'well document
+#### <a name="environment-font--bold"></a>Tipo di carattere dell'ambiente + grassetto
+ **Viene visualizzato come:** grassetto 9 pt Segoe UI **usare per:** etichette e sottotitoli nelle finestre di dialogo di firma, nei report e nell'interfaccia utente dell'well document
 
  **Codice procedurale:** Dove `textBlock` è un textblock definito in precedenza ed `label` è un oggetto Label definito in precedenza:
 
@@ -250,7 +251,7 @@ label.SetResourceReference(Label.StyleProperty,
 ```
 
 ### <a name="localizable-styles"></a>Stili localizzabili
- In alcuni casi, i localizzatori dovranno modificare gli stili dei caratteri per impostazioni locali diverse, ad esempio rimuovendo il grassetto dal testo per le lingue dell'Asia orientale. Per rendere possibile la localizzazione degli stili dei caratteri, tali stili devono essere all'interno del file con estensione resx. Il modo migliore per eseguire questa operazione e modificare comunque gli stili dei caratteri nella finestra di progettazione Visual Studio form è impostare in modo esplicito gli stili dei caratteri in fase di progettazione. Anche se questo crea un oggetto carattere completo e può sembrare che interrompa l'ereditarietà dei tipi di carattere padre, per impostare il tipo di carattere viene usata solo la proprietà FontStyle.
+ In alcuni casi, i localizzatori dovranno modificare gli stili dei caratteri per impostazioni locali diverse, ad esempio rimuovendo il grassetto dal testo per le lingue dell'Asia orientale. Per rendere possibile la localizzazione degli stili dei caratteri, tali stili devono essere all'interno del file con estensione resx. Il modo migliore per eseguire questa operazione e modificare comunque gli stili dei caratteri nella finestra di progettazione Visual Studio form è impostare in modo esplicito gli stili dei caratteri in fase di progettazione. Anche se questo crea un oggetto carattere completo e potrebbe sembrare che interrompa l'ereditarietà dei tipi di carattere padre, per impostare il tipo di carattere viene usata solo la proprietà FontStyle.
 
  La soluzione consiste nell'associare l'evento del form della `FontChanged` finestra di dialogo. `FontChanged`Nell'evento , eseguire la procedura per tutti i controlli e verificare se il tipo di carattere è impostato. Se è impostato, impostarlo su un nuovo tipo di carattere in base al tipo di carattere del form e allo stile del carattere precedente del controllo. Di seguito è riportato un esempio nel codice:
 
@@ -347,7 +348,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Tutti gli aggettivi|Inclusione di "This" e "That"|
 |Tutti i pronomi|Includere il possessivo "Its" e "It's", una contrazione del pronome "it" e del verbo "is"|
 |Prima e ultima parola, indipendentemente dalle parti del discorso||
-|Preposizioni che fanno parte di una frase verbale|"Chiusura di tutte le finestre" o "Arresto del sistema"|
+|Preposizioni che fanno parte di una frase verbale|"Closing Out All Windows" o "Shutting Down the System"|
 |Tutte le lettere di un acronimo|HTML, XML, URL, IDE, RGB|
 |La seconda parola in una parola composta se è un sostantivo o un aggettivo appropriato o se le parole hanno lo stesso peso|Cross-Reference, Pre-Microsoft Software, Read/Write Access, Run-Time|
 
@@ -360,16 +361,16 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |"To" se usato in una frase infinitiva|"Come formattare il disco rigido"|
 
 ##### <a name="sentence-case"></a>Maiuscole/minuscole delle frasi
- La distinzione tra maiuscole e minuscole è il metodo standard per la scrittura in cui solo la prima parola della frase viene scritta in maiuscolo, insieme a qualsiasi sostantivo appropriato e al pronome "I". In generale, la lettura della distinzione tra maiuscole e minuscole è più semplice per un pubblico mondiale, soprattutto quando il contenuto verrà tradotto da un computer. Usare la distinzione tra maiuscole e minuscole per:
+ La distinzione tra maiuscole e minuscole è il metodo di scrittura con maiuscole standard in cui solo la prima parola della frase viene scritta in maiuscolo, insieme a qualsiasi sostantivo appropriato e al pronome "I". In generale, la lettura della distinzione tra maiuscole e minuscole è più semplice per un pubblico mondiale, soprattutto quando il contenuto verrà tradotto da un computer. Usare la distinzione tra maiuscole e minuscole per:
 
 1. **Messaggi della barra di stato.** Si tratta di informazioni semplici, brevi e che forniscono solo informazioni sullo stato. Esempio: "Caricamento del file di progetto"
 
 2. **Tutti gli altri elementi dell'interfaccia** utente, inclusi etichette, caselle di controllo, pulsanti di opzione ed elementi della casella di riepilogo. Esempio: "Selezionare tutti gli elementi nell'elenco"
 
 ### <a name="text-formatting"></a>Formattazione del testo
- La formattazione del testo predefinita Visual Studio 2013 è controllata dal tipo [di carattere dell'ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Questo servizio garantisce un aspetto coerente dei caratteri in tutto l'IDE (ambiente di sviluppo integrato) ed è necessario usarlo per garantire un'esperienza coerente per gli utenti.
+ La formattazione del testo predefinita in Visual Studio 2013 è controllata dal tipo [di carattere dell'ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Questo servizio garantisce un aspetto coerente dei caratteri in tutto l'IDE (ambiente di sviluppo integrato) ed è necessario usarlo per garantire un'esperienza coerente per gli utenti.
 
- Le dimensioni predefinite usate dal servizio Visual Studio tipo di carattere provengono da Windows e vengono visualizzate come 9 pt.
+ Le dimensioni predefinite usate dal servizio Visual Studio tipo di carattere derivano Windows e vengono visualizzate come 9 pt.
 
  È possibile applicare la formattazione al tipo di carattere dell'ambiente. Questo argomento illustra come e dove usare gli stili. Per informazioni sull'implementazione, vedere Il [tipo di carattere dell'ambiente.](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)
 
@@ -397,7 +398,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Le intestazioni più grandi (tipo di carattere dell'ambiente x 155% o superiore) possono essere colorate per questi scopi:
 
-  - Per offrire un'interessante rappresentazione visiva dell'interfaccia utente Visual Studio firma
+  - Per offrire un'interessante visuale all'interfaccia utente Visual Studio firma
 
   - Per richiamare l'attenzione su un'area specifica
 
@@ -405,20 +406,20 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Il colore nelle intestazioni deve sfruttare i colori Visual Studio del marchio, principalmente il viola principale, #FF68217A.
 
-- Quando si usa il colore nelle intestazioni, è necessario rispettare le linee guida per i colori di [Windows,](/windows/desktop/uxguide/vis-color)inclusi il rapporto di contrasto e altre considerazioni sull'accessibilità.
+- Quando si usa il colore nelle intestazioni, è necessario rispettare le linee [guida](/windows/desktop/uxguide/vis-color)Windows colore, inclusi il rapporto di contrasto e altre considerazioni sull'accessibilità.
 
 ### <a name="font-size"></a>Dimensioni del carattere
- Visual Studio progettazione dell'interfaccia utente ha un aspetto più chiaro con più spazi vuoti. Dove possibile, le barre del titolo e del chrome sono state ridotte o rimosse. Anche se la densità delle informazioni è un requisito in Visual Studio, la tipografia continua a essere importante, con particolare attenzione all'interlinea più aperta e a una variazione delle dimensioni e dei pesi dei caratteri.
+ Visual Studio La progettazione dell'interfaccia utente offre un aspetto più leggero con più spazi vuoti. Laddove possibile, le barre del titolo e del colore sono state ridotte o rimosse. Anche se la densità delle informazioni è un requisito Visual Studio, la tipografia continua ad essere importante, con un'enfasi sulla spaziatura di riga più aperta e su una variazione delle dimensioni e dei pesi dei caratteri.
 
- Le tabelle seguenti includono dettagli di progettazione ed esempi visivi per i tipi di carattere di visualizzazione usati in Visual Studio. Alcune varianti del carattere di visualizzazione hanno sia le dimensioni che lo spessore, ad esempio Semilight o Light, codificate nell'aspetto.
+ Le tabelle seguenti includono dettagli di progettazione ed esempi visivi per i tipi di carattere di visualizzazione usati in Visual Studio. Alcune varianti del tipo di carattere di visualizzazione hanno dimensioni e spessore, ad esempio Semilight o Light, codificate nel loro aspetto.
 
- I frammenti di codice di implementazione per tutti i tipi di carattere visualizzati sono disponibili in Informazioni di riferimento sulla formattazione [(ridimensionamento/grassetto).](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)
+ I frammenti di codice di implementazione per tutti i tipi di carattere visualizzati sono disponibili in Informazioni di riferimento sulla [formattazione (ridimensionamento/grassetto).](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)
 
 #### <a name="375-environment-font--light"></a>375% Carattere ambiente + Chiaro
 
 |Utilizzo|Aspetto|
 |-|-|
-|**Utilizzo:** Raro. Solo interfaccia utente personalizzata univoca.<br /><br /> **fare:**<br /><br /> - Usa maiuscole/minuscole per le frasi<br />- Usare sempre Il peso leggero<br /><br /> **Non:**<br /><br /> - Usare per l'interfaccia utente diversa dall'interfaccia utente della firma, ad esempio la pagina iniziale<br />- Grassetto, corsivo o corsivo grassetto<br />- Usare per il testo del corpo<br />- Da usare nelle finestre degli strumenti|**Viene visualizzato come:** 34 pt Segoe UI Chiaro<br /><br /> **Esempio di oggetto visivo:**<br /><br /> *Attualmente non usato. Può essere usato nella pagina iniziale Visual Studio 2017.*|
+|**Utilizzo:** Raro. Solo interfaccia utente personalizzata univoca.<br /><br /> **fare:**<br /><br /> - Usare la distinzione tra maiuscole e minuscole<br />- Usare sempre Il peso leggero<br /><br /> **Non:**<br /><br /> - Usare per l'interfaccia utente diversa dall'interfaccia utente della firma, ad esempio la pagina iniziale<br />- Grassetto, corsivo o corsivo grassetto<br />- Usare per il corpo del testo<br />- Usare nelle finestre degli strumenti|**Viene visualizzato come:** 34 pt Segoe UI Light<br /><br /> **Esempio visivo:**<br /><br /> *Attualmente non usato. Può essere usato nella pagina iniziale Visual Studio 2017.*|
 
 #### <a name="310-environment-font--light"></a>310% Carattere ambiente + Chiaro
 
@@ -426,7 +427,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Utilizzo|Aspetto|
 |-|-|
-|**Utilizzo:**<br /><br /> - Intestazione più grande nelle finestre di dialogo della firma<br />- Intestazione del report principale<br /><br /> **fare:**<br /><br /> - Usa maiuscole/minuscole per le frasi<br />- Usare sempre Il peso leggero<br /><br /> **Non:**<br /><br /> - Usare per l'interfaccia utente diversa dall'interfaccia utente della firma, ad esempio la pagina iniziale<br />- Grassetto, corsivo o corsivo grassetto<br />- Usare per il testo del corpo<br />- Da usare nelle finestre degli strumenti|**Viene visualizzato come:** 28 pt Segoe UI Chiaro<br /><br /> **Esempio di oggetto visivo:**<br /><br /> ![Esempio di tipo di carattere Environment al 310% &#43;'intestazione Light](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Utilizzo:**<br /><br /> - Intestazione più grande nelle finestre di dialogo di firma<br />- Intestazione del report principale<br /><br /> **fare:**<br /><br /> - Usare la distinzione tra maiuscole e minuscole<br />- Usare sempre Il peso leggero<br /><br /> **Non:**<br /><br /> - Usare per l'interfaccia utente diversa dall'interfaccia utente della firma, ad esempio la pagina iniziale<br />- Grassetto, corsivo o corsivo grassetto<br />- Usare per il corpo del testo<br />- Usare nelle finestre degli strumenti|**Viene visualizzato come:** 28 pt Segoe UI Luce<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di carattere 310% Ambiente &#43;'intestazione Light](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -434,7 +435,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Utilizzo|Aspetto|
 |-|-|
-|**Utilizzo:**<br /><br /> - Intestazione più grande nelle finestre di dialogo della firma<br />- Intestazione del report principale<br /><br /> **fare:**<br /><br /> - Usa maiuscole/minuscole per le frasi<br />- Usare sempre Il peso leggero<br /><br /> **Non:**<br /><br /> - Da usare per l'interfaccia utente diversa dall'interfaccia utente della firma<br />- Grassetto, corsivo o corsivo grassetto<br />- Usare per il testo del corpo<br />- Da usare nelle finestre degli strumenti|**Viene visualizzato come:** 28 pt Segoe UI Chiaro<br /><br /> **Esempio di oggetto visivo:**<br /><br /> ![Esempio di tipo di carattere Environment al 310% &#43;'intestazione Light](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Utilizzo:**<br /><br /> - Intestazione più grande nelle finestre di dialogo di firma<br />- Intestazione del report principale<br /><br /> **fare:**<br /><br /> - Usare la distinzione tra maiuscole e minuscole<br />- Usare sempre Il peso leggero<br /><br /> **Non:**<br /><br /> - Usare per l'interfaccia utente diversa dall'interfaccia utente della firma<br />- Grassetto, corsivo o corsivo grassetto<br />- Usare per il corpo del testo<br />- Usare nelle finestre degli strumenti|**Viene visualizzato come:** 28 pt Segoe UI Luce<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di carattere 310% Ambiente &#43;'intestazione Light](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -442,48 +443,48 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Utilizzo|Aspetto|
 |-|-|
-|**Utilizzo:**<br /><br /> - Sottotitoli<br />- Titoli in finestre di dialogo piccole e medie<br /><br /> **fare:**<br /><br /> - Usa maiuscole/minuscole per le frasi<br />- Usa sempre semilight weight<br /><br /> **Non:**<br /><br /> - Grassetto, corsivo o corsivo grassetto<br />- Usare per il testo del corpo<br />- Da usare nelle finestre degli strumenti|**Viene visualizzato come:** 18 pt Segoe UI Semillight<br /><br /> **Esempio di oggetto visivo:**<br /><br /> ![Esempio di tipo di carattere Environment 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
+|**Utilizzo:**<br /><br /> - Sottotitoli<br />- Titoli in dialoghe di piccole e medie dimensioni<br /><br /> **fare:**<br /><br /> - Usare la distinzione tra maiuscole e minuscole<br />- Usare sempre semilight weight<br /><br /> **Non:**<br /><br /> - Grassetto, corsivo o corsivo grassetto<br />- Usare per il corpo del testo<br />- Usare nelle finestre degli strumenti|**Viene visualizzato come:** 18 pt Segoe UI Semillight<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere 200% Ambiente &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
-#### <a name="155-environment-font"></a>Tipo di carattere 155% ambiente
-
-|Utilizzo|Aspetto|
-|-|-|
-|**Utilizzo:**<br /><br /> - Intestazioni di sezione nell'interfaccia utente dell'well document<br />- Report<br /><br /> **Cosa fare:** Usa maiuscole/minuscole per le frasi<br /><br /> **Non:**<br /><br /> - Grassetto, corsivo o corsivo grassetto<br />- Usare per il testo del corpo<br />- Da usare nei controlli Visual Studio standard<br />- Da usare nelle finestre degli strumenti|**Viene visualizzato come:** 14 pt Segoe UI<br /><br /> **Esempio di oggetto visivo:**<br /><br /> ![Esempio di intestazione con tipo di carattere ambiente 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
-
-#### <a name="133-environment-font"></a>Tipo di carattere Ambiente 133%
+#### <a name="155-environment-font"></a>Tipo di carattere 155% Ambiente
 
 |Utilizzo|Aspetto|
 |-|-|
-|**Utilizzo:**<br /><br /> - Sottotitoli più piccoli nelle finestre di dialogo della firma<br />- Sottotitoli più piccoli nell'interfaccia utente dell'area documenti<br /><br /> **Cosa fare:** Usa maiuscole/minuscole per le frasi<br /><br /> **Non:**<br /><br /> - Grassetto, corsivo o corsivo grassetto<br />- Usare per il testo del corpo<br />- Da usare nei controlli Visual Studio standard<br />- Da usare nelle finestre degli strumenti|**Viene visualizzato come:** 12 pt Segoe UI<br /><br /> **Esempio di oggetto visivo:**<br /><br /> ![Esempio di intestazione con tipo di carattere ambiente 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
+|**Utilizzo:**<br /><br /> - Intestazioni di sezione nell'interfaccia utente dell'well document<br />- Report<br /><br /> **Eseguire le seguenti operazione:** Usare la distinzione tra maiuscole e minuscole<br /><br /> **Non:**<br /><br /> - Grassetto, corsivo o corsivo grassetto<br />- Usare per il corpo del testo<br />- Usare nei controlli Visual Studio standard<br />- Usare nelle finestre degli strumenti|**Viene visualizzato come:** 14 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione con tipo di carattere ambiente 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
+
+#### <a name="133-environment-font"></a>Tipo di carattere 133% Ambiente
+
+|Utilizzo|Aspetto|
+|-|-|
+|**Utilizzo:**<br /><br /> - Sottotitoli più piccoli nelle finestre di dialogo di firma<br />- Sottotitoli più piccoli nell'interfaccia utente dell'area del documento<br /><br /> **Eseguire le seguenti operazione:** Usare la distinzione tra maiuscole e minuscole<br /><br /> **Non:**<br /><br /> - Grassetto, corsivo o corsivo grassetto<br />- Usare per il corpo del testo<br />- Usare nei controlli Visual Studio standard<br />- Usare nelle finestre degli strumenti|**Viene visualizzato come:** 12 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione con tipo di carattere ambiente 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>Tipo di carattere 122% Ambiente
 
 |Utilizzo|Aspetto|
 |-|-|
-|**Utilizzo:**<br /><br /> - Intestazioni di sezione nelle finestre di dialogo di firma<br />- Nodi principali nella visualizzazione albero<br />- Navigazione con tabulazione verticale<br /><br /> **Eseguire le seguenti operazione:** Usare la distinzione tra maiuscole e minuscole<br /><br /> **Non:**<br /><br /> - Grassetto, corsivo o corsivo grassetto<br />- Usare per il corpo del testo<br />- Usare nei controlli Visual Studio standard<br />- Usare nelle finestre degli strumenti|**Viene visualizzato come:** 11 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione con tipo di carattere ambiente 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
+|**Utilizzo:**<br /><br /> - Intestazioni di sezione nelle finestre di dialogo della firma<br />- Nodi principali nella visualizzazione albero<br />- Spostamento verticale tra schede<br /><br /> **Cosa fare:** Usa maiuscole/minuscole per le frasi<br /><br /> **Non:**<br /><br /> - Grassetto, corsivo o corsivo grassetto<br />- Usare per il testo del corpo<br />- Da usare nei controlli Visual Studio standard<br />- Da usare nelle finestre degli strumenti|**Viene visualizzato come:** 11 pt Segoe UI<br /><br /> **Esempio di oggetto visivo:**<br /><br /> ![Esempio di intestazione con tipo di carattere ambiente 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
-#### <a name="environment-font--bold"></a>Carattere dell'ambiente + grassetto
-
-|Utilizzo|Aspetto|
-|-|-|
-|**Utilizzo:**<br /><br /> - Etichette e sottotitoli nelle finestre di dialogo della firma<br />- Etichette e sottotitoli nei report<br />- Etichette e sottotitoli nell'interfaccia utente dell'well document<br /><br /> **fare:**<br /><br /> - Usare la distinzione tra maiuscole e minuscole<br />- Usare il grassetto<br /><br /> **Non:**<br /><br /> - Corsivo o corsivo grassetto<br />- Usare per il corpo del testo<br />- Usare nei controlli Visual Studio standard<br />- Usare nelle finestre degli strumenti|**Viene visualizzato come:** grassetto 9 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di carattere Ambiente &#43;'intestazione Grassetto](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
-
-#### <a name="environment-font"></a>Tipo di carattere dell'ambiente
+#### <a name="environment-font--bold"></a>Tipo di carattere ambiente + grassetto
 
 |Utilizzo|Aspetto|
 |-|-|
-|**Utilizzo:** Tutto il testo<br /><br /> **Eseguire le seguenti operazione:** Usare la distinzione tra maiuscole e minuscole<br /><br /> **Non:** Corsivo o corsivo grassetto|**Viene visualizzato come:** 9 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
+|**Utilizzo:**<br /><br /> - Etichette e sottotitoli nelle finestre di dialogo della firma<br />- Etichette e sottotitoli nei report<br />- Etichette e sottotitoli nell'interfaccia utente dell'well document<br /><br /> **fare:**<br /><br /> - Usa maiuscole/minuscole per le frasi<br />- Usa spessore grassetto<br /><br /> **Non:**<br /><br /> - Corsivo o corsivo grassetto<br />- Usare per il testo del corpo<br />- Da usare nei controlli Visual Studio standard<br />- Da usare nelle finestre degli strumenti|**Viene visualizzato come:** grassetto 9 pt Segoe UI<br /><br /> **Esempio di oggetto visivo:**<br /><br /> ![Esempio di tipo di carattere Ambiente &#43;'intestazione Grassetto](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
+
+#### <a name="environment-font"></a>Tipo di carattere ambiente
+
+|Utilizzo|Aspetto|
+|-|-|
+|**Utilizzo:** Tutto il testo<br /><br /> **Cosa fare:** Usa maiuscole/minuscole per le frasi<br /><br /> **Non:** Corsivo o corsivo grassetto|**Viene visualizzato come:** 9 pt Segoe UI<br /><br /> **Esempio di oggetto visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
 
 ### <a name="padding-and-spacing"></a>Spaziatura interna e spaziatura
- Le intestazioni richiedono spazio intorno a esse per dare loro l'enfasi appropriata. Questo spazio varia a seconda delle dimensioni del punto e di ciò che si trova vicino all'intestazione, ad esempio una regola orizzontale o una riga di testo nel tipo di carattere dell'ambiente.
+ Le intestazioni richiedono uno spazio intorno a esse per dare loro l'enfasi appropriata. Questo spazio varia a seconda delle dimensioni del punto e degli altri elementi vicini all'intestazione, ad esempio una regola orizzontale o una riga di testo nel tipo di carattere dell'ambiente.
 
-- La spaziatura interna ideale per un'intestazione deve essere il 90% dello spazio di altezza del carattere maiuscolo. Ad esempio, un'intestazione 28 pt Segoe UI Light ha un'altezza massima di 26 pt e la spaziatura interna deve essere di circa 23 pt o di circa 31 pixel.
+- La spaziatura interna ideale per un'intestazione deve essere il 90% dello spazio di altezza dei caratteri maiuscoli. Ad esempio, un'intestazione 28 pt Segoe UI Light ha un'altezza limite di 26 pt e la spaziatura interna deve essere di circa 23 pt o circa 31 pixel.
 
 - Lo spazio minimo intorno a un'intestazione deve essere il 50% dell'altezza del carattere maiuscolo. È possibile usare meno spazio quando un'intestazione è accompagnata da una regola o da un altro elemento aderente.
 
-- Il testo del carattere dell'ambiente in grassetto deve seguire la spaziatura e la spaziatura interna predefinite dell'altezza della riga.
+- Il testo del carattere dell'ambiente in grassetto deve seguire la spaziatura e la spaziatura interna predefinite per l'altezza della riga.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tipi di carattere (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [Interfaccia utente testo (Windows)](/windows/desktop/uxguide/text-ui)

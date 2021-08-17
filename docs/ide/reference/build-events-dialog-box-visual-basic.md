@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Eventi di compilazione (Visual Basic)
-description: Informazioni su come usare la finestra di dialogo eventi di compilazione per specificare le istruzioni di configurazione della compilazione e le condizioni in cui vengono eseguiti gli eventi di pre-compilazione o post-compilazione.
+description: Informazioni su come usare la finestra di dialogo Eventi di compilazione per specificare le istruzioni di configurazione della compilazione e le condizioni in cui vengono eseguiti gli eventi di pre-compilazione o post-compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ce6bb21e00470203c5a47dbb0f102c43d0ac0bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89526efde0424cecaf8808b0a869e664fec7d2c55d3aa893b9e76c8deec25863
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836410"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372634"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Finestra di dialogo Eventi di compilazione (Visual Basic)
 
@@ -39,7 +39,7 @@ Specifica i comandi da eseguire prima dell'avvio della compilazione. Per immette
 
 **Riga di comando eventi post-compilazione**
 
-Specifica i comandi da eseguire dopo il completamento della compilazione. Per digitare i comandi lunghi, fare clic su **modifica post-compilazione** per visualizzare la finestra di dialogo **riga di comando eventi pre-compilazione/post-compilazione** .
+Specifica i comandi da eseguire dopo il completamento della compilazione. Per digitare comandi lunghi, fare clic **su Modifica post-compilazione** per visualizzare la finestra di dialogo Riga di comando eventi **pre-compilazione/post-compilazione.**
 
 > [!NOTE]
 > Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -57,5 +57,5 @@ Specifica le condizioni per l'evento che la post-compilazione deve eseguire, com
 ## <a name="see-also"></a>Vedi anche
 
 - [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Finestra di dialogo riga di comando eventi pre-compilazione/post-compilazione](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Procedura: Specificare eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

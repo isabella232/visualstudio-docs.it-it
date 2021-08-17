@@ -20,14 +20,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb138164cfab44778c932a4bcb93572a3053a70
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: aeffcc63f841b2a01b613173e0df87a841af7b1c0e993da468c157af0b24b686
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112391036"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370548"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammi delle dipendenze: informazioni di riferimento
 
@@ -58,7 +59,7 @@ In questo argomento vengono descritti gli elementi che è possibile usare in un 
 
 Nella tabella seguente vengono descritti gli elementi che è possibile usare in un diagramma delle dipendenze.
 
-|**Con forme**|**elemento**|**Descrizione**|
+|**Forma**|**elemento**|**Descrizione**|
 |-|-|-|
 |1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli artefatti collegati a un livello, aprire il menu di scelta rapida per il livello e quindi scegliere Visualizza collegamenti **per** aprire **Esplora livelli.**<br /><br /> Per altre informazioni, vedere [Esplora livelli.](#Explorer)<br /><br /> -   **Dipendenze spazio dei nomi non** consentite: specifica che gli artefatti associati a questo livello non possono dipendere dagli spazi dei nomi specificati.<br />-   **Spazi dei nomi non consentiti:** specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificati.<br />-   **Spazi dei nomi obbligatori:** specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
 |2|**Dipendenza**|Indica che un livello può usare la funzionalità di un altro livello, ma non viceversa.<br /><br /> -   **Direction** : specifica la direzione della dipendenza.|
@@ -86,7 +87,7 @@ Per altre informazioni sul collegamento di livelli ed elementi, vedere:
 
 Nel diagramma delle dipendenze aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti.**
 
-**Verrà aperto Esplora** livelli con gli artefatti collegati ai livelli selezionati. **Esplora livelli** include una colonna che mostra ognuna delle proprietà dei collegamenti degli artefatti.
+**Si apre** Esplora livelli e vengono visualizzati gli artefatti collegati ai livelli selezionati. **Esplora livelli** include una colonna che mostra ognuna delle proprietà dei collegamenti degli artefatti.
 
 > [!NOTE]
 > Se non è possibile visualizzare tutte queste proprietà, espandere la **finestra Esplora** livelli.
@@ -95,7 +96,7 @@ Nel diagramma delle dipendenze aprire il menu di scelta rapida per uno o più li
 |-|-|
 |**Categorie**|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
 |**Livello**|Livello collegato all'elemento|
-|**Convalida supporti**|Se **True,** il processo di convalida dei livelli può verificare che il progetto sia conforme alle dipendenze da o verso questo elemento.<br /><br /> Se **False,** il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [Diagrammi delle dipendenze: linee guida.](../modeling/layer-diagrams-guidelines.md)|
+|**Convalida supporti**|Se **True,** il processo di convalida del livello può verificare che il progetto sia conforme alle dipendenze da o verso questo elemento.<br /><br /> Se **False,** il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [Diagrammi delle dipendenze: linee guida.](../modeling/layer-diagrams-guidelines.md)|
 |**Identificatore**|Riferimento all'elemento collegato|
 
 ## <a name="see-also"></a>Vedi anche

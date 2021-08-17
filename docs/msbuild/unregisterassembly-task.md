@@ -1,6 +1,6 @@
 ---
 title: Attività UnregisterAssembly | Microsoft Docs
-description: Informazioni su come MSBuild utilizza l'attività UnregisterAssembly per annullare la registrazione degli assembly specificati per scopi di interoperabilità COM.
+description: Informazioni su MSBuild'attività UnregisterAssembly per annullare la registrazione di assembly specificati ai fini dell'interoperabilità COM.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 23fe04834ebd66bae2bce50a63f7db9cb8281f2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7111c6628193f1574597e20b00fef63746de3174e24cafa29f4f6cfb930c1cd5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902521"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369644"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly (attività)
 

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare uno shader con phong di base'
-description: Informazioni su come usare la finestra di progettazione shader e il linguaggio di Graph shader diretto per creare uno shader di illuminazione che implementa il modello di illuminazione Phong classico.
+description: Informazioni su come usare La finestra di progettazione shader e il linguaggio Graph shader per creare uno shader di illuminazione che implementa il modello di illuminazione Phong classico.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,14 +8,15 @@ ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: b5319526da9aa59951729389749e53f3df65b643
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b04f8b9188d982f12f6de2be13751644116a77eff5a72a1170f3808b2e8250eb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915712"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435206"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 
@@ -48,7 +49,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
 ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-lighting-graph.png)
 
-Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per ulteriori informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione anteprima degli shader nella [finestra di progettazione shader](../designers/shader-designer.md) .
+Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione Anteprima degli shader in [Progettazione shader](../designers/shader-designer.md)
 
 La figura seguente illustra lo shader descritto in questo documento applicato a un modello 3D. La proprietà **MaterialSpecular** è impostata su (1.00, 0.50, 0.20, 0.00) e la proprietà **MaterialSpecularPower** è impostata su 16.
 
@@ -59,12 +60,12 @@ La figura seguente illustra lo shader descritto in questo documento applicato a 
 
 ![Illuminazione Phong applicata a un modello](../designers/media/digit-lighting-model.png)
 
-Per altre informazioni su come applicare uno shader a un modello 3D, vedere [procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Per altre informazioni su come applicare uno shader a un modello 3D, vedere Procedura: Applicare uno [shader a un modello 3D.](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)
-- [Procedura: creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md)
+- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)
+- [Procedura: Creare uno shader Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

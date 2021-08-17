@@ -1,6 +1,6 @@
 ---
-title: Cenni preliminari sul servizio di linguaggio legacy | Microsoft Docs
-description: Informazioni sui servizi di linguaggio legacy in Visual Studio e sulle funzionalità supportate dalle classi del servizio di linguaggio MPF (Managed Package Framework).
+title: Panoramica del servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni sui servizi di linguaggio legacy Visual Studio e sulle funzionalità supportate dalle classi del servizio di linguaggio MPF (Managed Package Framework).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,20 +10,21 @@ ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 236fc2a2923ffd0829f74ab56a119ff81b29cd7f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2f6125cdbf95eec8fd329830d3465915d39b8caf0ce99fb23d3618657293592e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061173"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375705"
 ---
 # <a name="legacy-language-service-overview"></a>Panoramica dei servizi di linguaggio legacy
-Un servizio di linguaggio fornisce supporto per l'editor che consente di implementare determinate [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio di linguaggio MPF (Managed Package Framework) forniscono supporto completo per le funzionalità di uso frequente e il supporto parziale per altre funzionalità.
+Un servizio di linguaggio fornisce il supporto dell'editor che consente di implementare determinate [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio di linguaggio Managed Package Framework (MPF) forniscono il supporto completo per le funzionalità usate di frequente e il supporto parziale per altre funzionalità.
 
 ## <a name="fully-supported-features-in-the-mpf"></a>Funzionalità completamente supportate in MPF
- Le classi del servizio di linguaggio MPF supportano le funzionalità seguenti:
+ Le classi di servizio del linguaggio MPF supportano le funzionalità seguenti:
 
 - Evidenziazione della sintassi
 
@@ -37,27 +38,27 @@ Un servizio di linguaggio fornisce supporto per l'editor che consente di impleme
 
 - Proprietà personalizzate del documento
 
-- Informazioni sui parametri IntelliSense
+- Informazioni sui parametri di IntelliSense
 
-- Informazioni rapide di IntelliSense
+- Informazioni rapide su IntelliSense
 
-- Completamento del membro IntelliSense
+- Completamento dei membri IntelliSense
 
-- Completamento parole IntelliSense
+- Completamento di parole IntelliSense
 
 ## <a name="partially-supported-features-in-the-mpf"></a>Funzionalità parzialmente supportate in MPF
  MPF fornisce solo il supporto parziale per le funzionalità seguenti. Ciò significa che è necessario implementare i metodi chiamati da MPF.
 
-- Riformattazione del codice. Fornire il codice che implementa la riformattazione.
+- Riformattazione del codice. Specificare il codice che implementa la riformattazione.
 
-- Convalida dei punti di interruzione mediante l'identificazione di intervalli di codice validi. Fornire il codice che identifica gli intervalli di codice.
+- Convalida dei punti di interruzione identificando intervalli di codice validi. Specificare il codice che identifica gli intervalli di codice.
 
-- Supporto della finestra **auto** del debugger per la visualizzazione di variabili. Fornire il codice che determina gli elementi da visualizzare nella finestra.
+- Supporto della finestra **Auto del** debugger per la visualizzazione delle variabili. Specificare il codice che determina cosa visualizzare nella finestra.
 
-- Supporto della **barra di navigazione** per la navigazione rapida tra tipi e membri. Implementare e restituire una classe helper che popola gli elenchi nelle caselle combinate della **barra di spostamento** .
+- Supporto della barra **di spostamento per** lo spostamento rapido tra tipi e membri. Implementare e restituire una classe helper che popola gli elenchi nelle caselle combinate della **barra** di spostamento.
 
 ## <a name="implementation"></a>Implementazione
- È necessario completare diversi passaggi per implementare il servizio di linguaggio e le funzionalità del servizio di linguaggio che si desidera supportare per la lingua in uso. Questi passaggi sono descritti negli argomenti seguenti:
+ È necessario completare diversi passaggi per implementare il servizio di linguaggio stesso e le funzionalità del servizio di linguaggio che si desidera supportare per il linguaggio. Questi passaggi sono descritti negli argomenti seguenti:
 
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 

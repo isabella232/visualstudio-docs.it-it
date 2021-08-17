@@ -9,22 +9,23 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e2ae6e406b8967cb7de49573ce5b26377806e
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2c969a16ada27211b7997ea190f996dd1dd6c31ce327bad60371114545efb54f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388633"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370476"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
-Questo argomento descrive la struttura del file DslDefinition.dsl nel progetto Dsl di una soluzione, che definisce un linguaggio [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *specifico di dominio.* Il file DslDefinition.dsl descrive le classi e le relazioni di un linguaggio specifico di dominio, insieme al diagramma, alle forme, ai connettori, al formato di serializzazione e alla casella degli strumenti del linguaggio specifico di dominio e dei relativi strumenti di modifica.  In una soluzione di linguaggio specifico di dominio, il codice che definisce tali strumenti viene generato in base alle informazioni presenti nel file DslDefinition.dsl.
+Questo argomento descrive la struttura del file DslDefinition.dsl nel progetto Dsl di una soluzione, che definisce un linguaggio [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *specifico di dominio.* Il file DslDefinition.dsl descrive le classi e le relazioni di un linguaggio specifico di dominio, insieme al diagramma, alle forme, ai connettori, al formato di serializzazione e alla casella degli strumenti del linguaggio specifico di dominio e ai relativi strumenti di modifica.  In una soluzione di linguaggio specifico di dominio, il codice che definisce tali strumenti viene generato in base alle informazioni presenti nel file DslDefinition.dsl.
 
 In genere, si usa *Finestra di progettazione Domain-Specific Language* per modificare il file DslDefinition.dsl. Poiché il formato del file DslDefinition.dsl non elaborato è XML, è possibile aprirlo in un editor XML. Può risultare utile comprendere quali informazioni sono contenute nel file e come sono organizzate per eseguire il debug ed estendere le funzionalità.
 
-Gli esempi riportati in questo argomento provengono dal modello di soluzione Diagramma componente. Per un esempio, creare una soluzione di linguaggio specifico di dominio basata sul modello di soluzione Modelli componente. Dopo aver creato la soluzione, il file DslDefinition.dsl è presente nella finestra di progettazione del linguaggio specifico di dominio. Chiudere il file, fare clic con il pulsante destro del mouse Esplora soluzioni, scegliere **Apri** con **,** fare clic su **Editor XML** e quindi su **OK.**
+Gli esempi riportati in questo argomento provengono dal modello di soluzione Diagramma componente. Per un esempio, creare una soluzione di linguaggio specifico di dominio basata sul modello di soluzione Modelli componente. Dopo aver creato la soluzione, il file DslDefinition.dsl è presente nella finestra di progettazione del linguaggio specifico di dominio. Chiudere il file, fare clic con il pulsante destro del mouse **Esplora soluzioni,** scegliere Apri con **,** fare clic su **Editor XML** e quindi fare clic su **OK.**
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sezioni del file DslDefinition.dsl
 
@@ -58,7 +59,7 @@ Questa sezione definisce uno schema di serializzazione e include altre informazi
 
 ### <a name="explorerbehavior"></a>ExplorerBehavior
 
-Questa sezione definisce come viene visualizzata **la finestra DSL Explorer** quando l'utente modifica un modello.
+Questa sezione definisce la modalità di visualizzazione **della finestra Esplora DSL** quando l'utente modifica un modello.
 
 ### <a name="connectionbuilders"></a>ConnectionBuilders
 
@@ -70,7 +71,7 @@ Questa sezione definisce un diagramma e viene usata per specificare proprietà c
 
 ### <a name="designer"></a>Designer
 
-In questa sezione viene definita una finestra di progettazione (editor), che riunisce una casella **degli** strumenti, le impostazioni di convalida, un diagramma e uno schema di serializzazione. La sezione Designer definisce anche la classe radice del modello, che di solito corrisponde alla classe radice del diagramma.
+Questa sezione definisce una finestra di progettazione (editor), che riunisce **una** casella degli strumenti, le impostazioni di convalida, un diagramma e uno schema di serializzazione. La sezione Designer definisce anche la classe radice del modello, che di solito corrisponde alla classe radice del diagramma.
 
 ### <a name="explorer"></a>Explorer
 
@@ -150,7 +151,7 @@ Ogni classe ha un set di proprietà e può avere una classe base. Nell'esempio D
 </DomainClass>
 ```
 
-`NamedElement` è la base di molte delle altre classi, ad esempio , che ha proprietà proprie oltre alla proprietà `Component` `Name` ereditata da `NamedElement` . Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
+`NamedElement` è la base di diverse altre classi, ad esempio , che ha proprietà proprie oltre alla proprietà `Component` `Name` ereditata da `NamedElement` . Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -208,7 +209,7 @@ Ogni proprietà di dominio può anche avere i seguenti attributi:
 
 - **IsBrowsable**. Questo attributo determina se la proprietà viene visualizzata nella **finestra Proprietà** quando l'utente fa clic su un oggetto della classe padre.
 
-- **IsUIReadOnly**. Questo attributo determina se l'utente può modificare la proprietà nella **finestra** Proprietà o tramite un elemento Decorator in cui viene visualizzata la proprietà.
+- **IsUIReadOnly**. Questo attributo determina se l'utente  può modificare la proprietà nella finestra Proprietà o tramite un elemento Decorator in cui viene visualizzata la proprietà.
 
 - **Tipo**. È possibile impostare questo attributo su Normal, Calculated o CustomStorage. Se si imposta su Calculated, è necessario specificare codice personalizzato che determina il valore. La proprietà sarà di sola lettura. Se si imposta su CustomStorage, è necessario specificare codice che recupera e imposta i valori.
 
@@ -380,7 +381,7 @@ Ogni nodo `XmlClassData` include i nodi e gli attributi figlio seguenti:
 
 - **MonikerElementName nei** file di modello serializzati dell'utente. Questo attributo introduce un moniker che fa riferimento a questa classe.
 
-- **MonikerAttributeName**, che identifica il nome dell'attributo XML all'interno di un moniker. In questo frammento del file serializzato di un utente, l'autore del linguaggio specifico di dominio ha definito **MonikerElementName** come "inPortMoniker" e **MonikerAttributeName** come "path":
+- **MonikerAttributeName**, che identifica il nome dell'attributo XML all'interno di un moniker. In questo frammento di file serializzato di un utente, l'autore del linguaggio specifico di dominio ha definito **MonikerElementName** come "inPortMoniker" e **MonikerAttributeName** come "path":
 
     ```xml
     <inPortMoniker path="//Component2/InPort1" />
@@ -396,7 +397,7 @@ Un **attributo DomainPropertyMoniker** identifica la proprietà a cui fanno rife
 
 **L'attributo XmlName** assegna il nome dell'attributo corrispondente come dovrebbe essere visualizzato nel codice XML. Per convenzione, questa stringa corrisponde al nome della proprietà con l'iniziale minuscola.
 
-Per impostazione predefinita, **l'attributo Representation** è impostato su Attribute. Se **La rappresentazione** è impostata su Element, nel codice XML viene creato un nodo figlio. Se **Representation** è impostato su Ignore, la proprietà non viene serializzata.
+Per impostazione predefinita, **l'attributo Representation** è impostato su Attribute. Se **La rappresentazione** è impostata su Element, nel codice XML viene creato un nodo figlio. Se **La rappresentazione** è impostata su Ignora, la proprietà non viene serializzata.
 
 Gli **attributi IsMonikerKey** e **IsMonikerQualifier** assegnano a una proprietà un ruolo nell'identificazione delle istanze della classe padre. È possibile impostare **IsMonikerKey** su true per una proprietà definita in o ereditata da una classe. Questo attributo identifica una singola istanza della classe padre. La proprietà impostata su `IsMonikerKey` è in genere un nome o un altro identificatore chiave. La proprietà di stringa `Name` è ad esempio la chiave moniker per NamedElement e le relative classi derivate. Quando l'utente salva un modello in un file, questo attributo deve contenere valori univoci per ogni istanza, tra i propri elementi di pari livello nell'albero delle relazioni di incorporamento.
 
@@ -467,7 +468,7 @@ Il file serializzato contiene:
 
 La relazione di connessione include dati della classe XML propri che forniscono i nomi degli elementi e degli attributi della classe.
 
-Se l'attributo **OmitElement** è impostato su true, il nome del ruolo relazione viene omesso, che abbrevia il file serializzato e non è ambiguo se le due classi non hanno più di una relazione. Ad esempio:
+Se l'attributo **OmitElement** è impostato su true, il nome del ruolo relazione viene omesso, che abbrevia il file serializzato e non è ambiguo se le due classi non hanno più di una relazione. Esempio:
 
 ```xml
 <component name="Component3">
@@ -490,7 +491,7 @@ Il file DslDefinition.dsl è un file serializzato e risulta conforme a una defin
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
-- **L'attributo XmlSerializationBehavior** è incorporato nell'attributo `Dsl` , ma l'attributo **OmitElement** è stato impostato nella relazione di incorporamento. Quindi, nessun attributo `RoleElementName` interviene. Al contrario, un **attributo ClassData** è l'attributo della relazione di incorporamento tra un `RoleElementName` attributo **XmlSerializationBehavior** e **un attributo XmlClassData.**
+- **L'attributo XmlSerializationBehavior** è incorporato nell'attributo , ma l'attributo `Dsl` **OmitElement** è stato impostato nella relazione di incorporamento. Quindi, nessun attributo `RoleElementName` interviene. Al contrario, un **attributo ClassData** è l'attributo della relazione di incorporamento tra un `RoleElementName` attributo **XmlSerializationBehavior** e **un attributo XmlClassData.**
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...

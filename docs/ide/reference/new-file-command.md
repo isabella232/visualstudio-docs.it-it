@@ -1,6 +1,6 @@
 ---
 title: Comando Nuovo file
-description: Informazioni sul comando nuovo file e su come crea un nuovo file e lo apre.
+description: Informazioni sul comando Nuovo file e su come crea un nuovo file e lo apre.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a75678e8f29a282deef6f3d443a6e1c96d3edd7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2605d64b9f39c90b36c467a3c8883f17af0fadc09f6e132f3cbb04fd68ee67d0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967267"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372413"
 ---
 # <a name="new-file-command"></a>Comando Nuovo file
 Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File esterni.
@@ -70,8 +71,8 @@ In questo esempio viene creata una nuova pagina Web "test1.htm" e la pagina vien
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Finestra di controllo immediato](../../ide/reference/immediate-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

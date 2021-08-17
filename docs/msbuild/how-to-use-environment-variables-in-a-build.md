@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Usare le variabili di ambiente in una compilazione | Microsoft Docs'
-description: Informazioni su come accedere alle variabili di ambiente nei file di progetto MSBuild e usare le variabili di ambiente per impostare le opzioni di compilazione senza modificare il file di progetto.
+description: Informazioni su come accedere alle variabili di ambiente MSBuild file di progetto e usare le variabili di ambiente per impostare le opzioni di compilazione senza modificare il file di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 7f9e4469-8865-4b59-aab3-3ff26bd36e77
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c81f36d37d071593a013067f661451b8916caa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11d17abbf327a0c826c459e52f93c4c38f37037271535b10ee1d890e541ee372
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914197"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370164"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: Usare le variabili di ambiente in una compilazione
 
@@ -27,7 +28,7 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
 
 ## <a name="reference-environment-variables"></a>Fare riferimento alle variabili di ambiente
 
- Tutte le variabili di ambiente sono disponibili per il file di progetto Microsoft Build Engine (MSBuild) come proprietà.
+ Tutte le variabili di ambiente sono disponibili per il file Microsoft Build Engine (MSBuild) come proprietà.
 
 > [!NOTE]
 > Se il file di progetto contiene una definizione esplicita di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel file di progetto esegue l'override del valore della variabile di ambiente.
@@ -71,4 +72,4 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
 
 - [MSBuild](../msbuild/msbuild.md)
 - [proprietà di MSBuild](../msbuild/msbuild-properties.md)
-- [Procedura: compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [Procedura: Compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

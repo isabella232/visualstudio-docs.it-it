@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: da79f8e2fc40a0a64cc41d8571410c2a135a154a
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: b8fa94094ee6fac5fca501470450b8faeafabf4c8f0f2a4206eca52a71b2858f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679743"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425813"
 ---
 # <a name="variable-explorer"></a>Esplora variabili
 

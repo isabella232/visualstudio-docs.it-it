@@ -1,23 +1,24 @@
 ---
 title: Pull di membri
-description: Informazioni su come usare il menu azioni rapide e refactoring per estrarre i membri fino al tipo di base.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per eseguire il pull dei membri nel tipo di base.
 ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ee5776e9fc39b77f8059146848d847e0976a5664
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04bcc54702b81ebf4516598eca3dab9e1e258cd3efc9a5c52145ea6812119990
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958284"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387192"
 ---
 # <a name="pull-members-up"></a>Pull di membri
 
@@ -29,14 +30,14 @@ Questo refactoring si applica a:
 
 **Cosa:** Consente di eseguire il pull dei membri fino al tipo di base.
 
-**Quando:** È stata implementata un'interfaccia e si desidera spostare un membro nel tipo di base.
+**Quando:** È stata implementata un'interfaccia e si vuole spostare un membro nel tipo di base.
 
-**Motivo:** Il pull dei membri consente ad altre implementazioni dell'interfaccia di ereditare anche tali membri.
+**Perché:** Il pull dei membri consente anche ad altre implementazioni dell'interfaccia di ereditare tali membri.
 
 ## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore in qualsiasi membro di un'interfaccia implementata.
-2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 
    ![Pull di membri](media/pull-members-up.png)
 

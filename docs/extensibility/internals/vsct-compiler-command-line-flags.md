@@ -11,14 +11,15 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce83df56e1bcfad50fe71da31291b5c43b26c47a
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: de48995abe6547b9f73c27a3c749609e8f99cfd8c8f17aa74f5200106238d205
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898893"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375440"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flag della riga di comando del compilatore VSCT
 Il compilatore Visual Studio command table (VSCT) fornisce opzioni della riga di comando per garantire la corretta compilazione dei file con estensione vsct.
@@ -72,11 +73,11 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  L'opzione -E può essere usata per generare un file di intestazione di tipo C contenente i simboli usati dalla tabella dei comandi o per generare un file C# contenente oggetti per i simboli di comando.
 
- Le opzioni -D e -I hanno la sintassi Cl.exe flag del preprocessore C con lo stesso nome. Le definizioni -D con il formato X=Y vengono usate per l'espansione dei test basati su XML \<Defined> negli `Condition` attributi. -I percorsi di inclusione vengono usati per risolvere \<Include> i riferimenti ai file e \<Extern> \<Bitmap> . Per altre informazioni, vedere Informazioni di [riferimento su VSCT XML Schema.](../../extensibility/vsct-xml-schema-reference.md)
+ Le opzioni -D e -I hanno la sintassi dei flag Cl.exe del preprocessore C con lo stesso nome. Le definizioni -D con il formato X=Y vengono usate per l'espansione dei test basati su XML \<Defined> negli `Condition` attributi. -I percorsi di inclusione vengono usati per risolvere \<Include> i riferimenti ai file e \<Extern> \<Bitmap> . Per altre informazioni, vedere Informazioni di [riferimento su VSCT XML Schema.](../../extensibility/vsct-xml-schema-reference.md)
 
  Il compilatore VSCT può anche decompilare un file binario compilato in precedenza. A tale scopo, specificare un file binario per \<infile> .   Se il file binario è stato prodotto dal compilatore VSCT, avrà i simboli già incorporati e produrrà l'output con i nomi simbolici in una sezione \<Symbols> dell'output. Se il file binario è stato prodotto dal compilatore CTC, l'output conterrà i GUID e gli ID effettivi. Se il file *.ctsym prodotto dalle versioni correnti di Ctc.exe si trova nella stessa cartella del file di input binario, i simboli verranno caricati da tale file e usati per l'output.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [File Visual Studio Command Table (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Riferimenti sullo schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

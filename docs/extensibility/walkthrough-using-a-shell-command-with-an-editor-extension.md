@@ -1,6 +1,6 @@
 ---
 title: Usare un comando della shell con un'estensione dell'editor
-description: Informazioni su come aggiungere un'area di controllo a una visualizzazione di testo nell'editor richiamando un comando di menu. Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu all'editor.
+description: Informazioni su come aggiungere un'area di controllo a una visualizzazione testo nell'editor richiamando un comando di menu. Da un VSPackage è possibile aggiungere funzionalità come i comandi di menu all'editor.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,88 +10,89 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c6d60d9d6a0eb83f8b5d357f202a4f2f29ac509
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: c925ae23b03c418defbd90a8083730f98cdaf5a90fe1d6a7e0264e07cb1c556c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217203"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121374611"
 ---
-# <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procedura dettagliata: usare un comando della shell con un'estensione dell'editor
-Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu all'editor. In questa procedura dettagliata viene illustrato come aggiungere un'area di controllo a una visualizzazione di testo nell'editor richiamando un comando di menu.
+# <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procedura dettagliata: Usare un comando della shell con un'estensione dell'editor
+Da un VSPackage è possibile aggiungere funzionalità come i comandi di menu all'editor. Questa procedura dettagliata illustra come aggiungere un'area di controllo a una visualizzazione testo nell'editor richiamando un comando di menu.
 
- Questa procedura dettagliata illustra l'uso di un pacchetto VSPackage insieme a una parte del componente Managed Extensibility Framework (MEF). È necessario usare un pacchetto VSPackage per registrare il comando di menu con la shell di Visual Studio. È possibile utilizzare il comando per accedere alla parte del componente MEF.
+ Questa procedura dettagliata illustra l'uso di un VSPackage insieme a una parte Managed Extensibility Framework (MEF). È necessario usare un VSPackage per registrare il comando di menu con la Visual Studio shell. È anche possibile usare il comando per accedere alla parte del componente MEF.
 
 ## <a name="prerequisites"></a>Prerequisiti
- A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Creare un'estensione con un comando di menu
- Creare un pacchetto VSPackage che inserisce un comando di menu denominato **Aggiungi** area di controllo dal menu **strumenti** .
+ Creare un VSPackage che inserisce un comando di menu denominato **Aggiungi** area di controllo **nel** menu Strumenti.
 
-1. Creare un progetto VSIX C# denominato `MenuCommandTest` e aggiungere un nome del modello di elemento di comando personalizzato **AddAdornment**. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Creare un progetto VSIX C# denominato e aggiungere un nome di modello di elemento comando `MenuCommandTest` personalizzato **AddAdornment**. Per altre informazioni, vedere [Creare un'estensione con un comando di menu.](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. Viene aperta una soluzione denominata MenuCommandTest. Il file MenuCommandTestPackage contiene il codice che crea il comando di menu e lo inserisce nel menu **strumenti** . A questo punto, il comando causa solo la visualizzazione di una finestra di messaggio. Nei passaggi successivi verrà illustrato come modificare questa operazione per visualizzare l'area di visualizzazione dei commenti.
+2. Verrà visualizzata una soluzione denominata MenuCommandTest. Il file MenuCommandTestPackage contiene il codice che crea il comando di menu e lo inserisce **nel** menu Strumenti. A questo punto, il comando determina solo la visualizzazione di una finestra di messaggio. I passaggi successivi illustrano come modificare questa impostazione per visualizzare l'area di controllo del commento.
 
-3. Aprire il file *source. Extension. vsixmanifest* nell'editor del manifesto VSIX. La `Assets` scheda deve contenere una riga per Microsoft. VisualStudio. VSPackage denominata MenuCommandTest.
+3. Aprire il file *source.extension.vsixmanifest* nell'Editor manifesto VSIX. La `Assets` scheda deve contenere una riga per un oggetto Microsoft.VisualStudio.VsPackage denominato MenuCommandTest.
 
-4. Salvare e chiudere il file *source. Extension. vsixmanifest* .
+4. Salvare e chiudere il file *source.extension.vsixmanifest.*
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>Aggiungere un'estensione MEF all'estensione del comando
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo soluzione, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**. Nella finestra di dialogo **Aggiungi nuovo progetto** fare clic su **estendibilità** in **Visual C#**, quindi **progetto VSIX**. Assegnare al progetto il nome `CommentAdornmentTest`.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi **e** quindi fare clic su **Project**. Nella finestra **di dialogo Aggiungi Project** nuova applicazione fare clic su **Estendibilità** in Visual **C#**, quindi su **VSIX Project**. Assegnare al progetto il nome `CommentAdornmentTest`.
 
-2. Poiché questo progetto interagirà con l'assembly VSPackage con nome sicuro, sarà necessario firmare l'assembly. È possibile riutilizzare il file di chiave già creato per l'assembly VSPackage.
+2. Poiché questo progetto interagirà con l'assembly VSPackage con nome sicuro, è necessario firmare l'assembly. È possibile riutilizzare il file di chiave già creato per l'assembly VSPackage.
 
-    1. Aprire le proprietà del progetto e selezionare la scheda **firma** .
+    1. Aprire le proprietà del progetto e selezionare la **scheda** Firma.
 
-    2. Selezionare **Firma assembly**.
+    2. Selezionare **Firma l'assembly.**
 
-    3. In **scegliere un file di chiave con nome sicuro** selezionare il file *Key. snk* generato per l'assembly MenuCommandTest.
+    3. In **Scegliere un file di chiave con nome** sicuro selezionare il file *Key.snk* generato per l'assembly MenuCommandTest.
 
-## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>Vedere l'estensione MEF nel progetto VSPackage
- Poiché si sta aggiungendo un componente MEF al pacchetto VSPackage, è necessario specificare entrambi i tipi di asset nel manifesto.
+## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>Fare riferimento all'estensione MEF nel progetto VSPackage
+ Poiché si aggiunge un componente MEF al pacchetto VSPackage, è necessario specificare entrambi i tipi di asset nel manifesto.
 
 > [!NOTE]
-> Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF).](/dotnet/framework/mef/index)
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Per fare riferimento al componente MEF nel progetto VSPackage
 
-1. Nel progetto MenuCommandTest aprire il file *source. Extension. vsixmanifest* nell'editor del manifesto VSIX.
+1. Nel progetto MenuCommandTest aprire il file *source.extension.vsixmanifest* nell'editor manifesto VSIX.
 
-2. Nella scheda **Asset** fare clic su **nuovo**.
+2. Nella scheda **Asset fare** clic su **Nuovo**.
 
-3. Nell'elenco **tipo** scegliere **Microsoft. VisualStudio. MefComponent**.
+3. **Nell'elenco Tipo** scegliere **Microsoft.VisualStudio.MefComponent**.
 
-4. Nell'elenco **origine** scegliere **un progetto nella soluzione corrente**.
+4. **Nell'elenco** Origine scegliere **Un progetto nella soluzione corrente.**
 
-5. Nell'elenco **progetto** scegliere **CommentAdornmentTest**.
+5. **Nell'Project,** scegliere **CommentAdornmentTest**.
 
-6. Salvare e chiudere il file *source. Extension. vsixmanifest* .
+6. Salvare e chiudere il file *source.extension.vsixmanifest.*
 
-7. Verificare che il progetto MenuCommandTest includa un riferimento al progetto CommentAdornmentTest.
+7. Assicurarsi che il progetto MenuCommandTest abbia un riferimento al progetto CommentAdornmentTest.
 
-8. Nel progetto CommentAdornmentTest impostare il progetto in modo da produrre un assembly. Nella **Esplora soluzioni** selezionare il progetto e cercare nella proprietà **Copia output di compilazione in OutputDirectory** nella finestra **Proprietà** e impostarla su **true**.
+8. Nel progetto CommentAdornmentTest impostare il progetto per produrre un assembly. Nella finestra **Esplora soluzioni** selezionare il progetto, cercare  nella finestra Proprietà la proprietà Copia output di compilazione in **OutputDirectory** e impostarla su **true.**
 
-## <a name="define-a-comment-adornment"></a>Definire un'area di osservazione del commento
- L'adorning dei commenti è costituito da un oggetto <xref:Microsoft.VisualStudio.Text.ITrackingSpan> che tiene traccia del testo selezionato e da alcune stringhe che rappresentano l'autore e la descrizione del testo.
+## <a name="define-a-comment-adornment"></a>Definire un'area di controllo del commento
+ L'area di controllo del commento è costituita da un oggetto che tiene traccia del testo selezionato e da alcune stringhe che rappresentano l'autore <xref:Microsoft.VisualStudio.Text.ITrackingSpan> e la descrizione del testo.
 
-#### <a name="to-define-a-comment-adornment"></a>Per definire un'area di osservazione del commento
+#### <a name="to-define-a-comment-adornment"></a>Per definire un'area di controllo del commento
 
-1. Nel progetto CommentAdornmentTest aggiungere un nuovo file di classe e denominarlo `CommentAdornment` .
+1. Nel progetto CommentAdornmentTest aggiungere un nuovo file di classe e assegnare al progetto il nome `CommentAdornment` .
 
 2. Aggiungere i riferimenti seguenti:
 
-    1. Microsoft. VisualStudio. CoreUtility
+    1. Microsoft.VisualStudio.CoreUtility
 
-    2. Microsoft. VisualStudio. Text. Data
+    2. Microsoft.VisualStudio.Text.Data
 
-    3. Microsoft. VisualStudio. Text. Logic
+    3. Microsoft.VisualStudio.Text.Logic
 
-    4. Microsoft. VisualStudio. Text. UI
+    4. Microsoft.VisualStudio.Text.UI
 
-    5. Microsoft. VisualStudio. Text. UI. WPF
+    5. Microsoft.VisualStudio.Text.UI.Wpf
 
     6. System.ComponentModel.Composition
 
@@ -101,7 +102,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
 
     9. WindowsBase
 
-3. Aggiungere la `using` direttiva seguente.
+3. Aggiungere la direttiva `using` seguente.
 
     ```csharp
     using Microsoft.VisualStudio.Text;
@@ -113,7 +114,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     internal class CommentAdornment
     ```
 
-5. Aggiungere tre campi alla `CommentAdornment` classe per <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , l'autore e la descrizione.
+5. Aggiungere tre campi alla classe `CommentAdornment` per <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , l'autore e la descrizione.
 
     ```csharp
     public readonly ITrackingSpan Span;
@@ -121,7 +122,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     public readonly string Text;
     ```
 
-6. Aggiungere un costruttore che Inizializza i campi.
+6. Aggiungere un costruttore che inizializza i campi.
 
     ```csharp
     public CommentAdornment(SnapshotSpan span, string author, string text)
@@ -132,10 +133,10 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-## <a name="create-a-visual-element-for-the-adornment"></a>Creare un elemento visivo per l'area di visualizzazione
- Definire un elemento visivo per l'area di lavoro. Per questa procedura dettagliata, definire un controllo che erediti dalla classe Windows Presentation Foundation (WPF) <xref:System.Windows.Controls.Canvas> .
+## <a name="create-a-visual-element-for-the-adornment"></a>Creare un elemento visivo per l'area di controllo
+ Definire un elemento visivo per l'area di controllo. Per questa procedura dettagliata, definire un controllo che eredita dalla classe Windows Presentation Foundation <xref:System.Windows.Controls.Canvas> (WPF).
 
-1. Creare una classe nel progetto CommentAdornmentTest e denominarla `CommentBlock` .
+1. Creare una classe nel progetto CommentAdornmentTest e assegnarle il nome `CommentBlock` .
 
 2. Aggiungere le `using` direttive seguenti.
 
@@ -151,14 +152,14 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     using Microsoft.VisualStudio.Utilities;
     ```
 
-3. Fare in modo che la `CommentBlock` classe erediti da <xref:System.Windows.Controls.Canvas> .
+3. Fare in `CommentBlock` modo che la classe erediti da <xref:System.Windows.Controls.Canvas> .
 
     ```csharp
     internal class CommentBlock : Canvas
     { }
     ```
 
-4. Aggiungere alcuni campi privati per definire gli aspetti visivi dell'area di visualizzazione.
+4. Aggiungere alcuni campi privati per definire gli aspetti visivi dell'area di controllo.
 
     ```csharp
     private Geometry textGeometry;
@@ -168,7 +169,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     private static Pen dashPen;
     ```
 
-5. Aggiungere un costruttore che definisce l'area di interesse del commento e aggiunge il testo pertinente.
+5. Aggiungere un costruttore che definisce l'area di controllo del commento e aggiunge il testo pertinente.
 
     ```csharp
     public CommentBlock(double textRightEdge, double viewRightEdge,
@@ -237,7 +238,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-6. Implementare anche un <xref:System.Windows.Controls.Panel.OnRender%2A> gestore eventi che disegna l'area di disegno.
+6. Implementare anche un <xref:System.Windows.Controls.Panel.OnRender%2A> gestore eventi che disegna l'area di controllo.
 
     ```csharp
     protected override void OnRender(DrawingContext dc)
@@ -256,10 +257,10 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-## <a name="add-an-iwpftextviewcreationlistener"></a>Aggiungere un IWpfTextViewCreationListener
- <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>È una parte del componente MEF che è possibile usare per ascoltare la visualizzazione degli eventi di creazione.
+## <a name="add-an-iwpftextviewcreationlistener"></a>Aggiungere un oggetto IWpfTextViewCreationListener
+ è <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> una parte del componente MEF che è possibile usare per ascoltare la visualizzazione degli eventi di creazione.
 
-1. Aggiungere un file di classe al progetto CommentAdornmentTest e denominarlo `Connector` .
+1. Aggiungere un file di classe al progetto CommentAdornmentTest e assegnare al progetto il nome `Connector` .
 
 2. Aggiungere le `using` direttive seguenti.
 
@@ -269,12 +270,12 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     using Microsoft.VisualStudio.Utilities;
     ```
 
-3. Dichiarare una classe che implementa <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> ed esportarla con un valore <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> di "Text" e <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> . L'attributo Content Type specifica il tipo di contenuto a cui si applica il componente. Il tipo di testo è il tipo base per tutti i tipi di file non binari. Pertanto, quasi tutte le visualizzazioni di testo create saranno di questo tipo. L'attributo del ruolo Visualizzazione testo specifica il tipo di visualizzazione di testo a cui si applica il componente. Nei ruoli della visualizzazione di testo del documento viene in genere visualizzato testo composto da righe e archiviato in un file.
+3. Dichiarare una classe che implementa <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> ed esportarla con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> di "text" e un <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> . L'attributo del tipo di contenuto specifica il tipo di contenuto a cui si applica il componente. Il tipo text è il tipo di base per tutti i tipi di file non binari. Pertanto, quasi tutte le visualizzazione di testo creata saranno di questo tipo. L'attributo del ruolo di visualizzazione testo specifica il tipo di visualizzazione testo a cui si applica il componente. I ruoli di visualizzazione del testo del documento in genere mostrano testo composto da righe e archiviato in un file.
 
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/connector.vb" id="Snippet11":::
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/connector.cs" id="Snippet11":::
 
-4. Implementare il <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodo in modo che chiami l' `Create()` evento statico di `CommentAdornmentManager` .
+4. Implementare <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> il metodo in modo che chiami l'evento statico di `Create()` `CommentAdornmentManager` .
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -305,12 +306,12 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-## <a name="define-an-adornment-layer"></a>Definire un livello di area di strumenti
- Per aggiungere una nuova area di strumenti, è necessario definire un livello di area di strumenti.
+## <a name="define-an-adornment-layer"></a>Definire un livello di area di controllo
+ Per aggiungere una nuova area di controllo, è necessario definire un livello di area di controllo.
 
-### <a name="to-define-an-adornment-layer"></a>Per definire un livello di area di strumenti
+### <a name="to-define-an-adornment-layer"></a>Per definire un livello di area di controllo
 
-1. Nella `Connector` classe dichiarare un campo pubblico di tipo <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition> ed esportarlo con un oggetto <xref:Microsoft.VisualStudio.Utilities.NameAttribute> che specifica un nome univoco per il livello di area di visualizzazione e un oggetto <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> che definisce la relazione dell'ordine Z di questo livello di area di visualizzazione agli altri livelli di visualizzazione di testo (testo, punto di inserimento e selezione).
+1. Nella classe dichiarare un campo pubblico di tipo ed esportarlo con un oggetto che specifica un nome univoco per il livello dell'area di controllo e un oggetto che definisce la relazione di ordine Z di questo livello di area di controllo con gli altri livelli di visualizzazione del testo `Connector` (testo, punto di interesse e <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition> <xref:Microsoft.VisualStudio.Utilities.NameAttribute> <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> selezione).
 
     ```csharp
     [Export(typeof(AdornmentLayerDefinition))]
@@ -320,10 +321,10 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
 
     ```
 
-## <a name="provide-comment-adornments"></a>Fornire le aree di osservazione del commento
- Quando si definisce un'area di utilizzo, implementare anche un provider di aree di osservazione e un gestore dell'area di gestione del commento. Il provider dell'area di visualizzazione dei commenti mantiene un elenco di aree di visualizzazione dei commenti, resta in attesa <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> degli eventi nel buffer di testo sottostante ed Elimina le aree di visualizzazione dei commenti quando il testo sottostante viene eliminato.
+## <a name="provide-comment-adornments"></a>Specificare le aree di controllo dei commenti
+ Quando si definisce un'area di controllo, implementare anche un provider di aree di controllo dei commenti e un gestore dell'area di controllo dei commenti. Il provider dell'area di controllo dei commenti mantiene un elenco di aree di controllo dei commenti, resta in ascolto degli eventi nel buffer di testo sottostante ed elimina le aree di controllo dei commenti quando viene eliminato il testo <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> sottostante.
 
-1. Aggiungere un nuovo file di classe al progetto CommentAdornmentTest e denominarlo `CommentAdornmentProvider` .
+1. Aggiungere un nuovo file di classe al progetto CommentAdornmentTest e assegnare al progetto il nome `CommentAdornmentProvider` .
 
 2. Aggiungere le `using` direttive seguenti.
 
@@ -343,7 +344,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-4. Aggiungere campi privati per il buffer di testo e l'elenco di aree di visualizzazione dei commenti correlati al buffer.
+4. Aggiungere campi privati per il buffer di testo e l'elenco di aree di controllo dei commenti correlate al buffer.
 
     ```csharp
     private ITextBuffer buffer;
@@ -351,7 +352,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
 
     ```
 
-5. Aggiungere un costruttore per `CommentAdornmentProvider` . Questo costruttore deve avere accesso privato perché il metodo crea un'istanza del provider `Create()` . Il costruttore aggiunge il `OnBufferChanged` gestore eventi all' <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> evento.
+5. Aggiungere un costruttore per `CommentAdornmentProvider` . Questo costruttore deve avere accesso privato perché viene creata un'istanza del provider dal `Create()` metodo . Il costruttore aggiunge il `OnBufferChanged` gestore eventi <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> all'evento .
 
     ```csharp
     private CommentAdornmentProvider(ITextBuffer buffer)
@@ -387,7 +388,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-8. Aggiungere il `OnBufferChanged` gestore eventi.
+8. Aggiungere il `OnBufferChanged` gestore eventi .
 
     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentprovider.cs" id="Snippet21":::
     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentprovider.vb" id="Snippet21":::
@@ -398,7 +399,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     public event EventHandler<CommentsChangedEventArgs> CommentsChanged;
     ```
 
-10. Creare un `Add()` metodo per aggiungere l'area di strumenti.
+10. Creare un `Add()` metodo per aggiungere l'area di controllo.
 
     ```csharp
     public void Add(SnapshotSpan span, string author, string text)
@@ -424,7 +425,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
 
     ```
 
-11. Aggiungere un `RemoveComments()` metodo.
+11. Aggiungere un `RemoveComments()` metodo .
 
     ```csharp
     public void RemoveComments(SnapshotSpan span)
@@ -451,7 +452,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-12. Aggiungere un `GetComments()` metodo che restituisca tutti i commenti in un intervallo di snapshot specificato.
+12. Aggiungere un `GetComments()` metodo che restituisce tutti i commenti in un intervallo di snapshot specificato.
 
     ```csharp
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)
@@ -484,10 +485,10 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-## <a name="manage-comment-adornments"></a>Gestisci aree di osservazione Commenti
- Il gestore dell'area di gestione dei commenti crea l'area di modifica e la aggiunge al livello dell'area di strumenti. Ascolta gli <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> eventi e per <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> poter spostare o eliminare l'area di modifica. Ascolta anche l' `CommentsChanged` evento che viene generato dal provider di adorning dei commenti quando vengono aggiunti o rimossi commenti.
+## <a name="manage-comment-adornments"></a>Gestire le aree di controllo dei commenti
+ Il gestore dell'area di controllo dei commenti crea l'area di controllo e la aggiunge al livello dell'area di controllo. È in ascolto degli <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> eventi e in modo da poter spostare o eliminare <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> l'area di controllo. È inoltre in ascolto dell'evento generato dal provider dell'area di controllo dei commenti `CommentsChanged` quando vengono aggiunti o rimossi commenti.
 
-1. Aggiungere un file di classe al progetto CommentAdornmentTest e denominarlo `CommentAdornmentManager` .
+1. Aggiungere un file di classe al progetto CommentAdornmentTest e assegnare al progetto il nome `CommentAdornmentManager` .
 
 2. Aggiungere le `using` direttive seguenti.
 
@@ -516,7 +517,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     private readonly CommentAdornmentProvider provider;
     ```
 
-5. Aggiungere un costruttore che sottoscrive il gestore agli <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> eventi e e anche all' `CommentsChanged` evento. Il costruttore è privato perché viene creata un'istanza del gestore tramite il `Create()` metodo statico.
+5. Aggiungere un costruttore che sottoscrive il gestore per gli <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> eventi e e anche per <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> `CommentsChanged` l'evento . Il costruttore è privato perché viene creata un'istanza del gestore dal metodo `Create()` statico.
 
     ```csharp
     private CommentAdornmentManager(IWpfTextView view)
@@ -532,7 +533,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-6. Aggiungere il `Create()` metodo che ottiene un provider o ne crea uno se necessario.
+6. Aggiungere il `Create()` metodo che ottiene un provider o ne crea uno, se necessario.
 
     ```csharp
     public static CommentAdornmentManager Create(IWpfTextView view)
@@ -541,7 +542,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-7. Aggiungere il `CommentsChanged` gestore.
+7. Aggiungere il `CommentsChanged` gestore .
 
     ```csharp
     private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
@@ -556,7 +557,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-8. Aggiungere il <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> gestore.
+8. Aggiungere il <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> gestore .
 
     ```csharp
     private void OnClosed(object sender, EventArgs e)
@@ -567,7 +568,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-9. Aggiungere il <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> gestore.
+9. Aggiungere il <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> gestore .
 
     ```csharp
     private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
@@ -604,17 +605,17 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentmanager.vb" id="Snippet35":::
 
 ## <a name="use-the-menu-command-to-add-the-comment-adornment"></a>Usare il comando di menu per aggiungere l'area di controllo del commento
- È possibile usare il comando di menu per creare un'area di controllo dei commenti implementando il `MenuItemCallback` metodo del pacchetto VSPackage.
+ È possibile usare il comando di menu per creare un'area di controllo dei commenti implementando `MenuItemCallback` il metodo del pacchetto VSPackage.
 
 1. Aggiungere i riferimenti seguenti al progetto MenuCommandTest:
 
-    - Microsoft. VisualStudio. TextManager. Interop
+    - Microsoft.VisualStudio.TextManager.Interop
 
-    - Microsoft. VisualStudio. Editor
+    - Microsoft.VisualStudio.Editor
 
-    - Microsoft. VisualStudio. Text. UI. WPF
+    - Microsoft.VisualStudio.Text.UI.Wpf
 
-2. Aprire il file *AddAdornment. cs* e aggiungere le `using` direttive seguenti.
+2. Aprire il file *AddAdornment.cs* e aggiungere le `using` direttive seguenti.
 
     ```csharp
     using Microsoft.VisualStudio.TextManager.Interop;
@@ -623,7 +624,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     using CommentAdornmentTest;
     ```
 
-3. Eliminare il `Execute()` metodo e aggiungere il gestore di comandi seguente.
+3. Eliminare il `Execute()` metodo e aggiungere il gestore comandi seguente.
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -631,7 +632,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-4. Aggiungere il codice per ottenere la visualizzazione attiva. È necessario ottenere la `SVsTextManager` della shell di Visual Studio per ottenere l'oggetto attivo `IVsTextView` .
+4. Aggiungere il codice per ottenere la visualizzazione attiva. È necessario ottenere `SVsTextManager` l'oggetto della shell Visual Studio per ottenere l'oggetto `IVsTextView` attivo.
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -643,7 +644,7 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
     }
     ```
 
-5. Se questa visualizzazione di testo è un'istanza di una visualizzazione di testo dell'editor, è possibile eseguirne il cast all' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> interfaccia e quindi ottenere l'oggetto <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> e il relativo oggetto associato <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> . Usare <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> per chiamare il `Connector.Execute()` metodo, che ottiene il provider dell'area di visualizzazione dei commenti e aggiunge l'area di visualizzazione. Il gestore di comandi dovrebbe ora essere simile a questo codice:
+5. Se questa visualizzazione di testo è un'istanza di una visualizzazione di testo dell'editor, è possibile eseguire il cast sull'interfaccia e quindi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> ottenere <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> e l'oggetto <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> associato. Usare per <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> chiamare il metodo , che ottiene il provider dell'area di controllo del commento e aggiunge `Connector.Execute()` l'area di controllo. Il gestore dei comandi dovrebbe ora essere simile al codice seguente:
 
     ```csharp
     private async void AddAdornmentHandler(object sender, EventArgs e)
@@ -685,13 +686,13 @@ Da un VSPackage, è possibile aggiungere funzionalità come i comandi di menu al
 
 1. Compilare la soluzione e avviare il debug. Verrà visualizzata l'istanza sperimentale.
 
-2. Creare un file di testo. Digitare il testo e selezionarlo.
+2. Creare un file di testo. Digitare un testo e quindi selezionarlo.
 
-3. Scegliere **richiama Aggiungi** area di strumenti dal menu **strumenti** . Un fumetto dovrebbe essere visualizzato sul lato destro della finestra di testo e deve contenere testo simile al testo seguente.
+3. Scegliere **Richiama Aggiungi** area di **controllo dal** menu Strumenti . Sul lato destro della finestra di testo dovrebbe essere visualizzato un fumetto che dovrebbe contenere testo simile al testo seguente.
 
-     Nomeutente
+     YourUserName
 
-     Ottanta...
+     Fourscore...
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+- [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

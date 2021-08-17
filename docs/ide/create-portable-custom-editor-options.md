@@ -9,31 +9,32 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jmartens
-ms.openlocfilehash: 8ab90fda1f14521d59982ef7b5d20998cf61e505
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 067ea55b61984212456f038e57673a07437793096c7a937b73400a9166d334ed
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956841"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121373683"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
-È possibile aggiungere un file EditorConfig al progetto o alla codebase per applicare stili di codifica coerenti per tutti gli utenti che operano nella codebase. Le impostazioni di EditorConfig hanno la precedenza sulle impostazioni dell'editor di testo di Visual Studio globali. Ciò significa che è possibile personalizzare ogni codebase in modo che vengano usate le impostazioni dell'editor di testo specifiche del progetto. È comunque possibile impostare preferenze personali per l'editor nella finestra di dialogo **Opzioni** di Visual Studio. Queste impostazioni si applicano ogni volta che si usa una codebase priva di file con estensione *editorconfig* o quando il file con estensione *editorconfig* non esegue l'override di un'impostazione specifica. Un esempio di tale preferenza è lo stile del rientro&mdash;caratteri di tabulazione o spazi.
+È possibile aggiungere un file EditorConfig al progetto o alla codebase per applicare stili di codifica coerenti per tutti gli utenti che lavorano nella codebase. Le impostazioni di EditorConfig hanno la precedenza sulle impostazioni dell'editor di testo di Visual Studio globali. Ciò significa che è possibile personalizzare ogni codebase in modo che vengano usate le impostazioni dell'editor di testo specifiche del progetto. È comunque possibile impostare preferenze personali per l'editor nella finestra di dialogo **Opzioni** di Visual Studio. Queste impostazioni si applicano ogni volta che si usa una codebase priva di file con estensione *editorconfig* o quando il file con estensione *editorconfig* non esegue l'override di un'impostazione specifica. Un esempio di tale preferenza è lo stile del rientro&mdash;caratteri di tabulazione o spazi.
 
 Le impostazioni di EditorConfig sono supportate da numerosi editor di codice e molti ambienti IDE, tra cui Visual Studio. Si tratta di un componente portatile che viene trasferito con il codice ed è in grado di imporre stili di codice anche all'esterno di Visual Studio.
 
 ::: moniker range=">=vs-2019"
 
-Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non si esegua uno dei comandi seguenti:
+Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non venga eseguito uno dei comandi seguenti:
 
- - [Pulizia del codice](../ide/code-styles-and-code-cleanup.md) (**CTRL** + **K**, **CTRL** + **E**), che applica le impostazioni dello spazio vuoto, ad esempio lo stile di rientro e le impostazioni di stile del codice selezionate, ad esempio la modalità di ordinamento delle `using` direttive.
- - **Modifica** > **Funzionalità avanzate** > **Formattare il documento** (o **CTRL** + **K**, **CTRL** + **D** nel profilo predefinito), che applica solo le impostazioni dello spazio vuoto, ad esempio lo stile di rientro.
+ - [Pulizia del](../ide/code-styles-and-code-cleanup.md) codice (**CTRL** + **K**, **CTRL** E ), che applica le impostazioni degli spazi vuoti, ad esempio lo stile del rientro e le impostazioni di stile del codice + selezionate, ad esempio come ordinare `using` le direttive .
+ - **Modifica** > **Avanzate** > **Formatta documento** (o **CTRL** K , CTRL D nel profilo predefinito), che applica solo le impostazioni degli spazi vuoti, ad esempio lo stile +   +  di rientro.
 
  ::: moniker-end
 
 ::: moniker range="=vs-2017"
 
-Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non si formatti il documento (**modificare** il  >    >  **documento con formato** avanzato o **CTRL** + **K**, **CTRL** + **D** nel profilo predefinito). La formattazione del documento influiscono solo sulle impostazioni dello spazio vuoto, ad esempio lo stile di rientro, a meno che non sia stato configurato il formato documento per [eseguire la pulizia del codice](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non si formatti il documento **(** Modifica documento in formato avanzato o  >    >   **CTRL** + **K**, **CTRL** + **D** nel profilo predefinito). La formattazione del documento influisce solo sulle impostazioni degli spazi vuoti, ad esempio lo stile del rientro, a meno che non sia stato configurato Formatta documento per eseguire [la pulizia aggiuntiva del codice.](../ide/code-styles-and-code-cleanup.md#apply-code-styles)
 
  ::: moniker-end
 
@@ -74,7 +75,7 @@ Le impostazioni dell'editor EditorConfig sono supportate in tutti i linguaggi su
 
 ## <a name="add-and-remove-editorconfig-files"></a>Aggiungere e rimuovere i file EditorConfig
 
-Quando si aggiunge un file EditorConfig al progetto o alla codebase, le nuove righe di codice scritte vengono formattate in base al file EditorConfig. Tuttavia, l'aggiunta di un file EditorConfig non converte gli stili esistenti in quelli nuovi fino a quando non si formatta il documento o si esegue la [pulizia del codice](../ide/code-styles-and-code-cleanup.md). Se, ad esempio, il file contiene rientri formattati con tabulazioni e si aggiunge un file EditorConfig che imposta rientri con spazi, i caratteri di rientro non vengono convertiti automaticamente in spazi. Quando si formatta il documento (**modifica**  >    >  **documento formato** avanzato o **CTRL** + **K**, **CTRL** + **D**), le impostazioni dello spazio vuoto nel file EditorConfig vengono applicate alle righe di codice esistenti.
+Quando si aggiunge un file EditorConfig al progetto o alla codebase, le nuove righe di codice scritte vengono formattate in base al file EditorConfig. Tuttavia, l'aggiunta di un file EditorConfig non converte gli stili esistenti in quelli nuovi fino a quando non si formatta il documento o si esegue [La pulizia del codice.](../ide/code-styles-and-code-cleanup.md) Se, ad esempio, il file contiene rientri formattati con tabulazioni e si aggiunge un file EditorConfig che imposta rientri con spazi, i caratteri di rientro non vengono convertiti automaticamente in spazi. Quando si formatta il documento **(** Modifica documento in formato avanzato o CTRL K , CTRL D ), le impostazioni degli spazi vuoti nel file EditorConfig vengono applicate alle  >    >   righe di  +   + codice esistenti.
 
 Se il file EditorConfig viene rimosso dal progetto o dalla codebase e si vuole che le nuove righe di codice siano formattate in base alle impostazioni globali dell'editor, sarà necessario chiudere e riaprire i file di codice aperti.
 
@@ -82,9 +83,9 @@ Se il file EditorConfig viene rimosso dal progetto o dalla codebase e si vuole c
 
 1. Aprire un progetto o una soluzione in Visual Studio. Selezionare il progetto o il nodo della soluzione, a seconda che le impostazioni del file con estensione *editorconfig* siano da applicare a tutti i progetti nella soluzione o soltanto a uno. È anche possibile selezionare una cartella del progetto o della soluzione alla quale aggiungere il file con estensione *editorconfig*.
 
-1. Dalla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento** o premere **CTRL** + **MAIUSC** + **A**.
+1. Dalla barra dei menu scegliere **Project**  >  **Aggiungi nuovo elemento** oppure premere CTRL  + **MAIUSC** + **A.**
 
-   Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
+   Verrà **visualizzata la finestra di dialogo** Aggiungi nuovo elemento .
 
 1. Nella casella di ricerca cercare **editorconfig**.
 
@@ -110,7 +111,7 @@ Sono disponibili alcuni altri modi per aggiungere un file EditorConfig a un prog
 
 ## <a name="file-hierarchy-and-precedence"></a>Precedenza e gerarchia dei file
 
-Quando si aggiunge un file con *estensione EditorConfig* in una cartella della gerarchia di file, le impostazioni vengono applicate a tutti i file applicabili in tale livello e sotto. È anche possibile eseguire l'override delle impostazioni di EditorConfig per un particolare progetto, codebase o parte di una codebase, in modo da usare convenzioni diverse rispetto ad altre parti della codebase. Questo approccio può essere utile quando si incorpora codice proveniente da altre origini e non si vuole modificarne la convenzioni.
+Quando si aggiunge un file *con estensione editorconfig* a una cartella nella gerarchia di file, le relative impostazioni si applicano a tutti i file applicabili a tale livello e sotto. È anche possibile eseguire l'override delle impostazioni di EditorConfig per un particolare progetto, codebase o parte di una codebase, in modo da usare convenzioni diverse rispetto ad altre parti della codebase. Questo approccio può essere utile quando si incorpora codice proveniente da altre origini e non si vuole modificarne la convenzioni.
 
 Per eseguire l'override di alcune o di tutte le impostazioni di EditorConfig, aggiungere un file con estensione *editorconfig* a livello della gerarchia di file in cui si vuole applicare l'override delle impostazioni. Le impostazioni del nuovo file EditorConfig vengono applicate ai file presenti allo stesso livello e in tutte le sottodirectory.
 
@@ -158,7 +159,7 @@ root = true
 indent_style = tab
 ```
 
-A questo punto, quando si preme il tasto **Tab** , si ottengono caratteri di tabulazione anziché spazi.
+A questo punto, quando si preme **TAB,** si ottengono caratteri di tabulazione anziché spazi.
 
 ![TAB aggiunge caratteri di tabulazione](../ide/media/vside_editorconfig_tab.png)
 
@@ -168,11 +169,11 @@ Se è presente un file con estensione editorconfig nella struttura di directory 
 
    **"Le convenzioni di scrittura codice di questo progetto sostituiscono le preferenze utente per questo tipo di file."**
 
-Ciò significa che se le impostazioni dell'editor in **strumenti**  >  **Opzioni**  >  **editor di testo** (ad esempio le dimensioni del rientro e lo stile, le dimensioni delle tabulazioni o le convenzioni di codifica) vengono specificate in un file EditorConfig al progetto nella struttura di directory, le convenzioni nel file EditorConfig sostituiscono le impostazioni in **Opzioni**. È possibile controllare questo comportamento attivando o disattivando l'opzione **Segui convenzioni di scrittura codice del progetto** in **Strumenti** > **Opzioni** > **Editor di testo**. Se si deseleziona l'opzione, si disattiva il supporto di EditorConfig per Visual Studio.
+Ciò significa che se in un file EditorConfig o sopra il progetto nella struttura di directory le impostazioni dell'editor, ad esempio le dimensioni e lo stile dei rientri, le dimensioni delle tabulazioni o le convenzioni di scrittura del codice, vengono specificate in un file EditorConfig in corrispondenza o al di sopra del progetto nella struttura di directory, le convenzioni nel  >    >   file EditorConfig sostituiscono le impostazioni in **Opzioni**. È possibile controllare questo comportamento attivando o disattivando l'opzione **Segui convenzioni di scrittura codice del progetto** in **Strumenti** > **Opzioni** > **Editor di testo**. Se si deseleziona l'opzione, si disattiva il supporto di EditorConfig per Visual Studio.
 
 ![Strumenti - Opzioni - Segui convenzioni di scrittura codice del progetto](media/coding_conventions_option.png)
 
-È possibile trovare tutti i file con *estensione EditorConfig* nelle directory padre aprendo un prompt dei comandi ed eseguendo il comando seguente dalla radice del disco che contiene il progetto:
+È possibile trovare qualsiasi file con estensione *editorconfig* nelle directory padre aprendo un prompt dei comandi ed eseguendo il comando seguente dalla radice del disco che contiene il progetto:
 
 ```Shell
 dir .editorconfig /s

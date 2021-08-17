@@ -1,6 +1,6 @@
 ---
 title: Configurare progetti per più piattaforme di destinazione
-description: Scopri in che modo Visual Studio fornisce una soluzione per la destinazione di diverse architetture di CPU, o piattaforme, in una sola volta.
+description: Informazioni su Visual Studio modo che una soluzione sia in grado di avere come destinazione diverse architetture della CPU, o piattaforme, contemporaneamente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3255af161bd37d16eefeb6d41115cf0114059e81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 151097f9482edb69eb6486e31d1eb9a5cd0740e03586af656ebc1bb01cb83937
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875432"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387532"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedura: Configurare progetti per più piattaforme di destinazione
 
@@ -31,7 +31,7 @@ La finestra di dialogo **Gestione configurazione** consente di creare e impostar
 
 1. Scegliere **Configuration Manager** dal menu **Compila**.
 
-2. Nella **casella Piattaforma soluzione attiva** selezionare la piattaforma di destinazione della soluzione oppure selezionare **\<New>** per creare una nuova piattaforma. Visual Studio compila l'applicazione impostando come destinazione la piattaforma specificata come piattaforma attiva nella finestra di dialogo **Gestione configurazione**.
+2. Nella casella **Piattaforma soluzione attiva** selezionare la piattaforma di destinazione della soluzione oppure selezionare per creare una nuova **\<New>** piattaforma. Visual Studio compila l'applicazione impostando come destinazione la piattaforma specificata come piattaforma attiva nella finestra di dialogo **Gestione configurazione**.
 
 ## <a name="remove-a-platform"></a>Rimuovere una piattaforma
 
@@ -39,7 +39,7 @@ Se una piattaforma non è più necessaria, è possibile rimuoverla usando la fin
 
 1. Scegliere **Configuration Manager** dal menu **Compila**.
 
-2. Nella **casella Piattaforma soluzione attiva** selezionare **\<Edit>** . Viene visualizzata la finestra di dialogo **Modifica piattaforme soluzione**.
+2. Nella casella **Piattaforma soluzione attiva** selezionare **\<Edit>** . Viene visualizzata la finestra di dialogo **Modifica piattaforme soluzione**.
 
 3. Fare clic sulla piattaforma da rimuovere e quindi su **Rimuovi**.
 
@@ -65,6 +65,6 @@ Poiché è possibile modificare le impostazioni in base alla combinazione di con
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)
+- [Procedura: Creare e modificare configurazioni](../ide/how-to-create-and-edit-configurations.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

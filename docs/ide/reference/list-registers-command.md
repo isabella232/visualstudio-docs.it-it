@@ -1,6 +1,6 @@
 ---
 title: Comando Elenca registri
-description: Informazioni sul comando list Registers e su come viene visualizzato il valore dei registri selezionati e consente di modificare l'elenco dei registri da visualizzare.
+description: Informazioni sul comando List Registers e su come visualizza il valore dei registri selezionati e consente di modificare l'elenco di registri da visualizzare.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0168f8e4b6c04ea0d6b675ce6c280bd8140971b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 37ec0e5211cebda7c2497c069bcb72a7e56ae2bb1987b5dbec71c67ff6274526
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919565"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121387512"
 ---
 # <a name="list-registers-command"></a>Comando Elenca registri
 Consente di visualizzare il valore dei registri selezionati e di modificare l'elenco dei registri da visualizzare.
@@ -37,7 +38,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Commutatori
 /Display [{`register`&#124;`registerGroup`}...]
 
-Consente di visualizzare i valori dell'oggetto `register` o `registerGroup` specificato. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Ad esempio:
+Consente di visualizzare i valori dell'oggetto `register` o `registerGroup` specificato. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Esempio:
 
 `Debug.ListRegisters /Display eax`
 
@@ -69,6 +70,6 @@ r /Display Flags
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Nozioni fondamentali di debug: finestra Registri](../../debugger/debugging-basics-registers-window.md)
 - [Procedura: utilizzare la finestra Registri](../../debugger/how-to-use-the-registers-window.md)

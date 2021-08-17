@@ -14,12 +14,13 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 7783c8f90f1e289f8e13ed2bd85e8263edec3408
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: c2830b7bc78dd3b900692ca99b5fcc83b724e774736d7d2e2bdd8fee9a7cdbfc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894556"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424801"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Specificare i tipi di rete virtuale in uno scenario di test di carico
 
@@ -97,9 +98,9 @@ Il pulsante **Distribuisci** viene usato per allocare uniformemente i valori per
 > [!WARNING]
 > Il pulsante **Distribuisci** esegue l'override degli eventuali elementi bloccati.
 
-È anche possibile digitare i valori percentuali direttamente nella **%** colonna anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
+È anche possibile digitare i valori percentuali direttamente nella colonna **%** anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
 
 > [!NOTE]
-> I dispositivi di scorrimento sono disabilitati se il totale non è pari al 100% oppure quando i valori percentuali immessi nella **%** colonna sono decimali.
+> I dispositivi di scorrimento sono disabilitati quando il totale non viene sommato fino al 100% o quando i valori percentuali immessi nella colonna **%** sono decimali.
 
 Quando si immettono manualmente le percentuali, assicurarsi che la somma di tutti gli elementi sia 100%. Quando si salva una combinazione, se la somma non è pari al 100%, verrà richiesto di accettare i valori percentuali così come sono o di tornare indietro e regolarli. Se si sceglie di accettarle così come sono, le percentuali verranno ripartite proporzionalmente al 100%.  Se ad esempio si dispone di due elementi che sono stati impostati manualmente su 80% e 40%, il primo elemento verrà impostato su 66,67% (80 diviso 120) mentre il secondo su 33,33% (40 diviso 120).

@@ -1,6 +1,6 @@
 ---
 title: Gerarchie e selezione | Microsoft Docs
-description: Informazioni sul modo in cui Visual Studio gestisce le gerarchie, ad esempio i progetti, e il modo in cui usa il contesto di selezione per determinare gli elementi visualizzati dall'utente.
+description: Informazioni su Visual Studio le gerarchie, ad esempio i progetti, e su come usa il contesto di selezione per determinare ciò che viene visualizzato all'utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,36 +12,37 @@ ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 927d55a5217699222aadcbcb7a3526f22e010e8f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77ca0dbfd8476aae3b7dc8a12a0a449eb074da4480aa2f2546bc12c7282690ce
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074730"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376183"
 ---
 # <a name="hierarchies-and-selection"></a>Gerarchie e selezione
-Quando si Personalizza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , è necessario comprendere il modo in cui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce le gerarchie, ad esempio i progetti e il modo in cui usa il contesto di selezione per determinare gli elementi visualizzati dall'utente. In questa sezione vengono illustrati i concetti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerarchie e selezione.
+Quando si personalizza , è necessario comprendere in che modo gestisce le gerarchie, ad esempio i progetti, e come usa il contesto di selezione per determinare ciò che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] viene visualizzato all'utente. In questa sezione vengono illustrati i concetti relativi alle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerarchie e alla selezione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- Descrive le gerarchie di progetto e il concetto generale di gerarchie.
+ Vengono descritte le gerarchie di progetto e il concetto generale di gerarchie.
 
 - [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 
- Viene descritto il modo in cui il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) mantiene le informazioni sugli oggetti attualmente attivi dell'utente e consente ai VSPackage di tenere traccia della valuta.
+ Descrive il modo in cui l'ambiente di sviluppo integrato (IDE) gestisce le informazioni sugli oggetti attualmente attivi dell'utente e consente ai pacchetti VSPackage di tenere traccia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] della valuta.
 
-- [Oggetti contesto selezione](../../extensibility/internals/selection-context-objects.md)
+- [Oggetti del contesto di selezione](../../extensibility/internals/selection-context-objects.md)
 
  Viene illustrato il modello per determinare lo stato attivo del contesto di selezione dell'utente in una finestra.
 
 - [Commenti e suggerimenti per l'utente](../../extensibility/internals/feedback-to-the-user.md)
 
- Viene illustrato il modo in cui la funzionalità disponibile in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] si basa sul contesto di selezione corrente dell'utente e sul contesto dell'IDE generale.
+ Viene illustrato in che modo la funzionalità disponibile in si basa sul contesto di selezione corrente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dell'utente e sul contesto IDE complessivo.
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Architettura di tipi di progetto](../../extensibility/internals/project-types-architecture.md)
+- [Project tipi di dati](../../extensibility/internals/project-types-architecture.md)
 
  Fornisce informazioni tecniche dettagliate sui tipi di progetto.

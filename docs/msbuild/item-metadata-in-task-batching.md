@@ -1,6 +1,6 @@
 ---
 title: Metadati degli elementi nella suddivisione in batch delle attività | Microsoft Docs
-description: Informazioni su come MSBuild usa i metadati degli elementi nell'invio in batch delle attività per dividere gli elenchi di elementi in categorie o batch diversi ed eseguire un'attività una volta con ogni batch.
+description: Informazioni su MSBuild metadati degli elementi nell'invio in batch delle attività per dividere gli elenchi di elementi in categorie o batch diversi ed eseguire un'attività una volta con ogni batch.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,14 +13,15 @@ ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1675cf43cb9632d4480265f00a377c1f5c530b51
-ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
+ms.openlocfilehash: 9f80e4742b400120f6187619e9a8c6ada17a1d45b0b7d2f0dadc9910f078872d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111395358"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370086"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadati degli elementi nella suddivisione in batch delle attività
 
@@ -40,7 +41,7 @@ Per altre informazioni sull'invio in batch con MSBuild, vedere [Invio in batch.]
 
 La suddivisione in batch consente di dividere un elenco di elementi in vari batch in base ai metadati degli elementi e di passare separatamente ogni batch a un'attività. Questa procedura è utile per compilare assembly satellite.
 
-L'esempio seguente illustra come dividere in batch un elenco di elementi in base ai metadati degli elementi. L'elenco di elementi `ExampColl` viene diviso in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(ExampColl.Number)` `Text` nell'attributo notifica a MSBuild che è necessario eseguire l'invio in batch. L'elenco di elementi `ExampColl` viene diviso in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.
+L'esempio seguente illustra come dividere in batch un elenco di elementi in base ai metadati degli elementi. L'elenco di elementi `ExampColl` viene diviso in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(ExampColl.Number)` `Text` nell'attributo notifica MSBuild l'invio in batch. L'elenco di elementi `ExampColl` viene diviso in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.
 
 ```xml
 <Project
@@ -85,12 +86,12 @@ L'[attività Message](../msbuild/message-task.md) visualizza le informazioni seg
 
 ## <a name="divide-several-item-lists-into-batches"></a>Suddividere in batch più elenchi di elementi
 
-MSBuild può dividere più elenchi di elementi in batch basati sugli stessi metadati. Risulta quindi più semplice dividere in batch diversi elenchi di elementi per compilare più assembly. Ad esempio, è possibile avere un elenco di elementi di file con estensione *cs* suddivisi in un batch di applicazioni e un batch di assembly e un elenco di elementi di file di risorse suddivisi in un batch di applicazioni e un batch di assembly. Sarà quindi possibile usare la suddivisione in batch per passare questi elenchi di elementi a un'attività e compilare sia l'applicazione che l'assembly.
+MSBuild possibile dividere più elenchi di elementi in batch basati sugli stessi metadati. Risulta quindi più semplice dividere in batch diversi elenchi di elementi per compilare più assembly. Ad esempio, è possibile avere un elenco di elementi di file con estensione *cs* suddivisi in un batch di applicazioni e un batch di assembly e un elenco di elementi di file di risorse suddivisi in un batch di applicazioni e un batch di assembly. Sarà quindi possibile usare la suddivisione in batch per passare questi elenchi di elementi a un'attività e compilare sia l'applicazione che l'assembly.
 
 > [!NOTE]
 > Se un elenco di elementi passato a un'attività non contiene elementi con i metadati di riferimento, ogni elemento incluso nell'elenco viene passato a ogni batch.
 
-Nell'esempio seguente viene illustrato come dividere più elenchi di elementi in batch in base ai metadati degli elementi. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi ognuno in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(Number)` `Text` nell'attributo notifica a MSBuild che è necessario eseguire l'invio in batch. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.
+Nell'esempio seguente viene illustrato come dividere più elenchi di elementi in batch in base ai metadati degli elementi. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi ognuno in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(Number)` `Text` nell'attributo notifica MSBuild l'invio in batch. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.
 
 ```xml
 <Project
@@ -140,7 +141,7 @@ L'[attività Message](../msbuild/message-task.md) visualizza le informazioni seg
 
 È possibile eseguire la suddivisione in batch anche su metadati noti assegnati a ogni elemento al momento della creazione. In questo modo ogni elemento di una raccolta avrà alcuni metadati da usare per la suddivisione in batch. Il `Identity` valore dei metadati è utile per dividere ogni elemento di un elenco di elementi in un batch separato. Per un elenco completo dei metadati noti degli elementi, vedere [Metadati noti degli elementi.](../msbuild/msbuild-well-known-item-metadata.md)
 
-L'esempio seguente illustra come eseguire in batch un elemento di un elenco per volta. `ExampColl`L'elenco di elementi è suddiviso in sei batch, ognuno dei quali contiene un elemento dell'elenco di elementi. La presenza di `%(Identity)` `Text` nell'attributo notifica a MSBuild che è necessario eseguire l'invio in batch.
+L'esempio seguente illustra come eseguire in batch un elemento di un elenco per volta. `ExampColl`L'elenco di elementi è suddiviso in sei batch, ognuno dei quali contiene un elemento dell'elenco di elementi. La presenza di `%(Identity)` `Text` nell'attributo notifica MSBuild l'invio in batch.
 
 ```xml
 <Project
@@ -176,7 +177,7 @@ Identity: 'Item5' -- Items in ExampColl: Item5
 Identity: 'Item6' -- Items in ExampColl: Item6
 ```
 
-Non è `Identity` tuttavia garantito che sia univoco. Il relativo valore è il valore finale valutato dell'attributo. `Include` Pertanto, se gli `Include` attributi vengono usati più volte, vengono uniti in batch. Come illustrato nell'esempio seguente, questa tecnica richiede che gli `Include` attributi siano univoci per ogni elemento del gruppo. Per illustrare questo punto, si consideri il codice seguente:
+Tuttavia, `Identity` non è garantito che sia univoco. Il relativo valore è il valore finale valutato dell'attributo. `Include` Pertanto, se gli `Include` attributi vengono usati più volte, vengono uniti in batch. Come illustrato nell'esempio seguente, questa tecnica richiede che gli `Include` attributi siano univoci per ogni elemento del gruppo. Per illustrare questo punto, si consideri il codice seguente:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

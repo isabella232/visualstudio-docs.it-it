@@ -1,6 +1,6 @@
 ---
 title: Usare MSBuild.exe per compilare destinazioni specifiche all'interno di soluzioni
-description: Informazioni su come usare MSBuild.exe riga di comando per compilare destinazioni specifiche di progetti specifici nelle soluzioni.
+description: Informazioni su come usare MSBuild.exe comando per compilare destinazioni specifiche di progetti specifici nelle soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: ede73e06575a91cf9bdf8115942c27b1ce4e2841
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 723a122d3cee53af6327c06ee4034164e7e66a4c21481639d5c5052e9f4abd0b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914463"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427815"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Procedura: Compilare destinazioni specifiche in soluzioni tramite MSBuild.exe
 
@@ -29,7 +30,7 @@ ms.locfileid: "99914463"
 
 1. Nella riga di comando digitare `MSBuild.exe <SolutionName>.sln`, dove `<SolutionName>` corrisponde al nome file della soluzione che contiene la destinazione che si vuole eseguire.
 
-2. Specificare la destinazione dopo l' `-target:` opzione nel formato \<ProjectName> : \<TargetName> . Se il nome del progetto contiene i caratteri `%`, `$`, `@`, `;`, `.`, `(`, `)` o `'`, sostituirli con `_` nel nome di destinazione specificato.
+2. Specificare la destinazione dopo `-target:` l'opzione nel formato \<ProjectName> : \<TargetName> . Se il nome del progetto contiene i caratteri `%`, `$`, `@`, `;`, `.`, `(`, `)` o `'`, sostituirli con `_` nel nome di destinazione specificato.
 
 ## <a name="example"></a>Esempio
 
@@ -41,9 +42,9 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se si desidera esaminare le opzioni disponibili, è possibile usare un'opzione di debug fornita da MSBuild a questo scopo. Impostare la variabile di ambiente `MSBUILDEMITSOLUTION=1` e compilare la soluzione. Verrà generato un file MSBuild denominato *\<SolutionName> . sln. metaproj* che mostra la visualizzazione interna di MSBuild della soluzione in fase di compilazione. È possibile esaminare questa visualizzazione per determinare le destinazioni disponibili per la compilazione.
+Se si desidera esaminare le opzioni disponibili, è possibile usare un'opzione di debug fornita da MSBuild a questo scopo. Impostare la variabile di ambiente `MSBUILDEMITSOLUTION=1` e compilare la soluzione. Verrà generato un file MSBuild denominato *\<SolutionName> sln.metaproj* che mostra MSBuild della soluzione in fase di compilazione. È possibile esaminare questa visualizzazione per determinare le destinazioni disponibili per la compilazione.
 
-Non compilare con questa variabile di ambiente impostata a meno che non sia necessaria questa visualizzazione interna. Questa impostazione può causare problemi durante la compilazione dei progetti nella soluzione. In alternativa, cercare nel [log binario](obtaining-build-logs-with-msbuild.md#save-a-binary-log) .
+Non compilare con questa variabile di ambiente impostata a meno che non sia necessaria questa visualizzazione interna. Questa impostazione può causare problemi durante la compilazione dei progetti nella soluzione. Cercare invece nel [log](obtaining-build-logs-with-msbuild.md#save-a-binary-log) binario.
 
 ## <a name="see-also"></a>Vedi anche
 

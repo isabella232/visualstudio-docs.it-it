@@ -1,6 +1,6 @@
 ---
 title: Registrazione del programma | Microsoft Docs
-description: Informazioni su come un programma di cui eseguire il debug viene registrato con una porta dopo che il motore di debug acquisisce una porta.
+description: Informazioni su come registrare un programma di cui eseguire il debug con una porta dopo che il motore di debug ha acquisito una porta.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,36 +11,37 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fda27bd0572713e16311e6feae8ff74870cb006
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 01566034b0cfece39367afdc1f86101c5ec553f8612bd469b90615ffc5b99fd9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070635"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377041"
 ---
 # <a name="register-the-program"></a>Registrare il programma
-Dopo che il motore di debug ha acquisito una porta, rappresentata da un'interfaccia [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , il passaggio successivo per abilitare il programma di cui eseguire il debug consiste nel registrarla con la porta. Una volta registrato, il programma è disponibile per il debug in uno dei modi seguenti:
+Dopo che il motore di debug ha acquisito una porta, rappresentata da [un'interfaccia IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) il passaggio successivo per abilitare il debug del programma consiste nel registrarlo con la porta. Una volta registrato, il programma è disponibile per il debug in uno dei modi seguenti:
 
-- Processo di associazione, che consente al debugger di ottenere il controllo completo del debug di un'applicazione in esecuzione.
+- Processo di connessione, che consente al debugger di ottenere il controllo completo del debug di un'applicazione in esecuzione.
 
-- Debug JIT (just-in-Time), che consente il debug dopo il fatto di un programma che viene eseguito in modo indipendente da un debugger. Quando l'architettura di runtime rileva un errore, il debugger riceve una notifica prima che il sistema operativo o l'ambiente di runtime rilasci la memoria e le risorse del programma che ha generato l'errore.
+- Debug JIT( Just-In-Time), che consente il debug dopo il fatto di un programma eseguito indipendentemente da un debugger. Quando l'architettura di runtime rileva un errore, il debugger viene avvisato prima che il sistema operativo o l'ambiente di runtime rilasci la memoria e le risorse del programma in errore.
 
 ## <a name="registering-procedure"></a>Procedura di registrazione
 
 ### <a name="to-register-your-program"></a>Per registrare il programma
 
-1. Chiamare il metodo [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) implementato dalla porta.
+1. Chiamare il [metodo AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) implementato dalla porta.
 
-     `IDebugPortNotify2::AddProgramNode` richiede un puntatore a un'interfaccia [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .
+     `IDebugPortNotify2::AddProgramNode`richiede un puntatore a [un'interfaccia IDebugProgramNode2.](../../extensibility/debugger/reference/idebugprogramnode2.md)
 
-     In genere, quando il sistema operativo o l'ambiente di runtime carica un programma, viene creato il nodo del programma. Se al motore di debug (DE) viene richiesto di caricare il programma, il DE crea e registra il nodo del programma.
+     In genere, quando il sistema operativo o l'ambiente di run-time carica un programma, viene creato il nodo del programma. Se viene richiesto al motore di debug (DE) di caricare il programma, de crea e registra il nodo del programma.
 
      Nell'esempio seguente viene illustrato il motore di debug che avvia il programma e lo registra con una porta.
 
     > [!NOTE]
-    > Questo esempio di codice non è l'unico modo per avviare e riprendere un processo; Questo codice è principalmente un esempio di registrazione di un programma con una porta.
+    > Questo esempio di codice non è l'unico modo per avviare e riprendere un processo. Questo codice è principalmente un esempio di registrazione di un programma con una porta.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -108,4 +109,4 @@ Dopo che il motore di debug ha acquisito una porta, rappresentata da un'interfac
 
 ## <a name="see-also"></a>Vedi anche
 - [Recupero di una porta](../../extensibility/debugger/getting-a-port.md)
-- [Abilitazione di un programma di cui eseguire il debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Abilitazione del debug di un programma](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

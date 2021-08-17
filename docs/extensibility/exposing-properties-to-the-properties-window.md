@@ -12,14 +12,15 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f932772b031332d7df2a2487c70576f49407ba1
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 957a6445934d9d3af7cb0f9d61b72171d48521755a1ff9ff4410b31fbe9893a4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898737"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388695"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Esporre le proprietà al Finestra Proprietà
 
@@ -35,9 +36,9 @@ In questa sezione viene creata una finestra degli strumenti personalizzata e ven
 
 ### <a name="to-expose-properties-to-the-properties-window"></a>Per esporre le proprietà al Finestra Proprietà
 
-1. Ogni Visual Studio'estensione inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyObjectPropertiesExtension` . È possibile trovare il modello di progetto VSIX nella **finestra di dialogo Nuovo** progetto cercando "vsix".
+1. Ogni Visual Studio'estensione inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyObjectPropertiesExtension` . È possibile trovare il modello di progetto VSIX nella finestra **di dialogo Project** ricerca di "vsix".
 
-2. Aggiungere una finestra degli strumenti aggiungendo un modello di elemento della finestra degli strumenti personalizzato denominato `MyToolWindow` . Nella finestra **di Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Nella finestra **di dialogo Aggiungi nuovo elemento** passare a Estendibilità degli elementi di **Visual C#** e selezionare Finestra degli strumenti  >   **personalizzata.** Nel campo **Nome** nella parte inferiore della finestra di dialogo modificare il nome del file in *MyToolWindow.cs.* Per altre informazioni su come creare una finestra degli strumenti personalizzata, vedere [Creare un'estensione con una finestra degli strumenti.](../extensibility/creating-an-extension-with-a-tool-window.md)
+2. Aggiungere una finestra degli strumenti aggiungendo un modello di elemento della finestra degli strumenti personalizzato denominato `MyToolWindow` . Nella finestra di **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Nella finestra **di dialogo Aggiungi nuovo elemento** passare a Estendibilità degli elementi di **Visual C#** e selezionare Finestra degli strumenti  >   **personalizzata.** Nel campo **Nome** nella parte inferiore della finestra di dialogo modificare il nome del file in *MyToolWindow.cs*. Per altre informazioni su come creare una finestra degli strumenti personalizzata, vedere [Creare un'estensione con una finestra degli strumenti.](../extensibility/creating-an-extension-with-a-tool-window.md)
 
 3. Aprire *MyToolWindow.cs e* aggiungere l'istruzione using seguente:
 
@@ -98,7 +99,7 @@ In questa sezione viene creata una finestra degli strumenti personalizzata e ven
 
 7. Se la **finestra** Proprietà non è visibile, aprirla premendo **F4.**
 
-8. Aprire la **finestra MyToolWindow.** È possibile trovarlo in **Visualizza**  >  **altre finestre.**
+8. Aprire la **finestra MyToolWindow.** È possibile trovarlo in **Visualizza**  >  **altro Windows**.
 
     La finestra si apre e le proprietà pubbliche del riquadro della finestra vengono visualizzate nella **finestra** Proprietà.
 
@@ -155,7 +156,7 @@ In questa sezione si aggiunge una finestra degli strumenti e si espongono le rel
 
 5. Eliminare il pulsante e aggiungere una casella di controllo dalla Casella **degli strumenti** nell'angolo superiore sinistro.
 
-6. Aggiungere gli eventi Checked e Unchecked. Selezionare la casella di controllo nella visualizzazione Progettazione. Nella finestra **Proprietà** fare clic sul pulsante gestori eventi nella parte superiore destra della **finestra** Proprietà. Trovare **Selezionato** e digitare **checkbox_Checked** nella casella di  testo, quindi trovare Deselezionato **e** digitare checkbox_Unchecked nella casella di testo.
+6. Aggiungere gli eventi Checked e Unchecked. Selezionare la casella di controllo nella visualizzazione Progettazione. Nella finestra **Proprietà** fare clic sul pulsante gestori eventi in alto a destra nella **finestra** Proprietà. Trovare **Selezionato** e digitare **checkbox_Checked** nella casella di  testo, quindi trovare Deselezionato **e** digitare checkbox_Unchecked nella casella di testo.
 
 7. Aggiungere i gestori eventi della casella di controllo:
 
@@ -181,7 +182,7 @@ In questa sezione si aggiunge una finestra degli strumenti e si espongono le rel
 10. Selezionare la casella di controllo nella **finestra MyToolWindow.** **IsChecked** nella **finestra Proprietà** viene modificato in **True.** Deselezionare la casella di controllo **nella finestra MyToolWindow.** **IsChecked** nella finestra **Proprietà** viene modificato in **False.** Modificare il valore **di IsChecked** nella **finestra** Proprietà. La casella di controllo nella **finestra MyToolWindow** cambia in modo da corrispondere al nuovo valore.
 
     > [!NOTE]
-    > Se è necessario eliminare un oggetto visualizzato  nella finestra Proprietà, chiamare prima con `OnSelectChange` un `null` contenitore di selezione. Dopo aver esposto la proprietà o l'oggetto, è possibile passare a un contenitore di selezione con elenchi <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> aggiornati.
+    > Se è necessario eliminare un oggetto visualizzato  nella finestra Proprietà, chiamare prima con `OnSelectChange` un `null` contenitore di selezione. Dopo aver esposto la proprietà o l'oggetto , è possibile passare a un contenitore di selezione con elenchi <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> aggiornati.
 
 ## <a name="change-selection-lists"></a>Modificare gli elenchi di selezione
 
@@ -274,6 +275,6 @@ In questa procedura dettagliata viene implementato in modo che la raccolta di og
 
 Visual Studio le finestre degli strumenti vengono mantenute tra Visual Studio sessioni. Per altre informazioni sulla persistenza dello stato della finestra degli strumenti, vedere <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Estendere le proprietà e la finestra Proprietà](../extensibility/extending-properties-and-the-property-window.md)

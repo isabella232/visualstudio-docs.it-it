@@ -1,6 +1,6 @@
 ---
 title: Pagina Progetti e soluzioni della finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina generale nella sezione progetti e soluzioni per definire il comportamento di Visual Studio correlato a progetti e soluzioni.
+description: Informazioni su come usare la pagina Generale nella sezione Progetti e soluzioni per definire il comportamento Visual Studio a progetti e soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
@@ -13,18 +13,19 @@ ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fab59a590b59452362a47d48bcdfa7dd8661f57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8b686b13fcd4289c70d6b6b89c7d7c96affaf92cbec2623805604cbc3e93998
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907515"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121372056"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> generale
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo Opzioni: Progetti e \> soluzioni Generali
 
-Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni, selezionare **strumenti**  >  **Opzioni**, espandere **progetti e soluzioni** e quindi selezionare **generale**.
+Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni, selezionare  >  **Opzioni strumenti,** espandere **Progetti e soluzioni** e quindi selezionare **Generale.**
 
 Le opzioni seguenti sono disponibili nella pagina **Generale**.
 
@@ -100,6 +101,6 @@ Se questa opzione non è selezionata e si vuole modificare un file di progetto i
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Finestra di dialogo Opzioni: percorsi di progetti e soluzioni \>](projects-solutions-locations-options.md)
+- [Finestra di dialogo Opzioni: Percorsi di progetti e \> soluzioni](projects-solutions-locations-options.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

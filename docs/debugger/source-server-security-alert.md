@@ -1,6 +1,6 @@
 ---
-title: Avviso di sicurezza del server di origine | Microsoft Docs
-description: Leggere l'avviso sull'avviso di sicurezza del server di origine nel debugger di Visual Studio. Quando si utilizza il server di origine, tenere presenti le potenziali minacce per la sicurezza.
+title: Avvisi di sicurezza del server di origine | Microsoft Docs
+description: Leggere l'avviso di avviso di sicurezza del server di origine nel debugger Visual Studio origine. Quando si usa il server di origine, tenere presente le potenziali minacce alla sicurezza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,19 +15,20 @@ ms.assetid: 8451c281-6914-469c-b80c-6271cc3f3d17
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 947274f88658d44ab8e4f7de54ac001b93e270aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1f0cf08d06d269b2c03cebd63cbd1618c303896b016c470321d1f4aea9f6c35
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903518"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435803"
 ---
 # <a name="source-server-security-alert"></a>Avviso di sicurezza del server di origine
 Quando viene utilizzato il server di origine, utilizzare unicamente file di simboli provenienti da un percorso conosciuto o attendibile.
 
- Questo avviso viene visualizzato quando si attiva il supporto del server di origine. I comandi del server di origine sono incorporati nei file di simboli di debug (file con **\* estensione PDB** ). Assicurarsi di verificare l'origine dei file PDB.
+ Questo avviso viene visualizzato quando si attiva il supporto del server di origine. I comandi del server di origine sono incorporati nei file di simboli di debug **\* (file con estensione pdb).** Assicurarsi di verificare l'origine dei file PDB.
 
 > [!IMPORTANT]
 > Quando viene utilizzato il server di origine, è necessario considerare i potenziali pericoli per la sicurezza indicati di seguito. Nel file pdb dell'applicazione possono essere incorporati comandi arbitrari, pertanto assicurarsi di inserire solo i comandi da eseguire nel file srcsrv.ini. Eventuali tentativi di eseguire un comando non presente nel file srcsvr.ini causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Se ad esempio si considera attendibile il file cmd.exe, un utente malintenzionato potrebbe specificare parametri in grado di rendere dannoso il comando.

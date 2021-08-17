@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 622ff598ac2471814e51b0e268c12d40e726fb98
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 1f98ff6ff7899708ed7d0df089c5e375dd3c3a251662bd22ac528e8cc6783bb6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385747"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386081"
 ---
 # <a name="define-shapes-and-connectors"></a>Definire forme e connettori
 
@@ -22,7 +23,7 @@ Per visualizzare le informazioni su un diagramma in un linguaggio specifico di d
 
 ## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> Tipi di base di forme e connettori
 
-Un diagramma DSL mostra una raccolta di *forme* collegate da linee *o connettori.* In genere, ma non sempre:
+Un diagramma DSL mostra una raccolta di *forme* collegate da linee o *connettori.* In genere, ma non sempre:
 
 - Le forme sono la rappresentazione visibile di elementi modello.
 

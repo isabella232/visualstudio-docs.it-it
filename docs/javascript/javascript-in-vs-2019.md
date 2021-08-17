@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 267bd8567b60a66bcf9d78c3aef8f02bbc942e0d
-ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
+ms.openlocfilehash: 4a826460ade1a771fd8361bb91345dd7bbf19455d8046dfe0fe520e07cdcca6d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "108025878"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370931"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript e TypeScript in Visual Studio 2019
 
@@ -37,12 +37,12 @@ L'opzione per ripristinare il servizio di linguaggio JavaScript legacy non è pi
 
 Visual Studio 2019 offre diverse opzioni per l'integrazione della compilazione TypeScript nel progetto:
 
-* Pacchetto [NuGet TypeScript](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Quando si installa il pacchetto NuGet per TypeScript 3.2 o versione successiva nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
+* TypeScript [NuGet pacchetto](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Quando si installa il pacchetto NuGet per TypeScript 3.2 o versione successiva nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
 * Pacchetto [npm TypeScript](https://www.npmjs.com/package/typescript). Quando il pacchetto npm per TypeScript 2.1 o versione successiva è installato nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
 * TypeScript SDK, disponibile per impostazione predefinita nel programma di installazione di Visual Studio, nonché come download dell'SDK autonomo da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-395).
 
 > [!TIP]
-> Per i progetti sviluppati Visual Studio 2019, si consiglia di usare il pacchetto NuGet TypeScript o npm TypeScript per una maggiore portabilità tra piattaforme e ambienti diversi. Per altre informazioni, vedere [Compilare codice TypeScript con NuGet](../javascript/compile-typescript-code-nuget.md) e [Compilare codice TypeScript con tsc.](../javascript/compile-typescript-code-npm.md)
+> Per i progetti sviluppati Visual Studio 2019, si consiglia di usare typeScript NuGet o il pacchetto npm TypeScript per una maggiore portabilità tra piattaforme e ambienti diversi. Per altre informazioni, vedere [Compilare codice TypeScript usando NuGet](../javascript/compile-typescript-code-nuget.md) [e Compilare codice TypeScript con tsc.](../javascript/compile-typescript-code-npm.md)
 
 ## <a name="projects"></a>Progetti
 

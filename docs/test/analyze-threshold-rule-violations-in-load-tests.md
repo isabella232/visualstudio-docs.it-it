@@ -17,12 +17,13 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 519a908b85c6cdf3dbecc38e032d72ac223a8bdc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: e17ae725b51308ed71b606c4118b56830d723d6cd0db2fe96869c89a47a559cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948049"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425147"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
@@ -38,7 +39,7 @@ Nella tabella vengono visualizzate le prime 1.000 violazioni di soglia. La tabel
 
 |Colonna|Descrizione|Visibile per impostazione predefinita|
 |-|-|-|
-|Tempo|L'ora durante il test di carico in cui si è verificata la violazione.|Sì|
+|Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Sì|
 |Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:** questo nome è importante quando i test di carico vengono eseguiti in rig.|Sì|
 |Category|La categoria del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
 |Contatore|Il nome del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
@@ -48,7 +49,7 @@ Nella tabella vengono visualizzate le prime 1.000 violazioni di soglia. La tabel
 > [!NOTE]
 > È possibile ordinare la tabella scegliendo le intestazioni delle colonne.
 
-Per ulteriori informazioni, vedere [analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Per altre informazioni, vedere Analizzare i risultati e gli errori [del test di carico nella vista Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Visualizzare le violazioni di soglia nel pannello dei contatori
 
@@ -74,10 +75,10 @@ Nell'albero dei contatori l'icona relativa a una violazione di soglia viene prop
 
 È possibile visualizzare le violazioni di soglia sul grafico. In modo analogo a quanto avviene nel pannello dei **contatori**, le icone comunicano le violazioni di soglia sul grafico. Vengono visualizzate accanto al punto dati in cui si è verificata la violazione di soglia. Se si verifica una violazione di soglia in un contatore non presente sul grafico, è possibile aggiungerlo trascinandolo dal pannello dei **contatori**.
 
-Per altre informazioni, vedere [analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
+Per altre informazioni, vedere [Analizzare i risultati del test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizzare i risultati del test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

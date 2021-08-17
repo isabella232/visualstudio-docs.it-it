@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: dadffd0a2950d55145b24d3172564eb572f98d70
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: b1d4d2d1d30c21bcfd7b6ee47eba9a4ed97f26e67f768779f474c9e2f33dbfa8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389150"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386135"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e per altre parti interessate e di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
@@ -24,7 +25,7 @@ ms.locfileid: "112389150"
  Per vedere quali versioni di Visual Studio supportano queste funzionalità, vedere Supporto delle versioni per l'architettura [e gli strumenti di modellazione.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 ## <a name="system-and-subsystem-testing"></a>Test di sistema e di sottosistema
- *Il test di sistema,* noto anche come *test di accettazione,* significa verificare se vengono soddisfatte le esigenze degli utenti. Questi test riguardano il comportamento del sistema visibile esternamente piuttosto che la progettazione interna.
+ *Test di sistema,* noto anche come *test di accettazione,* significa verificare se vengono soddisfatte le esigenze degli utenti. Questi test riguardano il comportamento del sistema visibile esternamente piuttosto che la progettazione interna.
 
  I test di sistema sono molto utili quando è necessario estendere o riprogettare un sistema e permettono di evitare di introdurre bug quando si modifica il codice.
 
@@ -133,7 +134,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Collegamento di test case agli elementi del modello
  Se il progetto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.
 
- È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:
+ È possibile collegare i test a tutti i tipi di elemento. Di seguito sono riportati alcuni esempi:
 
 - Collegare un caso di utilizzo ai test che ne eseguono la verifica.
 

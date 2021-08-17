@@ -1,6 +1,6 @@
 ---
 title: Elemento PropertyGroup (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento PropertyGroup di MSBuild, che contiene un set di elementi della proprietà definiti dall'utente.
+description: Informazioni sull'MSBuild PropertyGroup, che contiene un set di elementi Property definiti dall'utente.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -18,18 +18,19 @@ ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5182708e848587439795f5d6c04d87382b36f84a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45c1700525b77011ee2a05b70ec2e0f73076e24a2891072d35c13994ed281eb6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931994"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369995"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 
-Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni `Property` elemento usato in un progetto MSBuild deve essere figlio di un `PropertyGroup` elemento.
+Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni `Property` elemento usato in un progetto MSBuild deve essere figlio di un elemento `PropertyGroup` .
 
  \<Project> \<PropertyGroup>
 
@@ -50,7 +51,7 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
+|Condition|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -62,7 +63,7 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file MSBuild progetto. |
 
 ## <a name="example"></a>Esempio
 
@@ -78,5 +79,5 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project sullo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
 - [proprietà di MSBuild](../msbuild/msbuild-properties.md)

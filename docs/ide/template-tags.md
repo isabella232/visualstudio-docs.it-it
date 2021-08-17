@@ -5,6 +5,7 @@ ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
 manager: jmartens
+ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - item templates, updating
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: ac4757464d720ca50632833b3911f0d594e1becb
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 515d6ff5e489ce7d586eb29682b817d63008fd0bf90e2f3eda7a7138e7dd0240
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222981"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386967"
 ---
 # <a name="add-tags-to-project-templates"></a>Aggiungere tag ai modelli di progetto
 
 A partire da [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) versione 16.1 Preview 2, è possibile aggiungere tag per il linguaggio, la piattaforma e il tipo di progetto ai modelli di progetto. 
 
-I tag vengono usati in due posizioni nella **finestra di dialogo Project** nuovo elemento:
+I tag vengono usati in due posizioni nella **finestra di dialogo Project** nuova finestra di dialogo:
 
 - I tag vengono visualizzati sotto la descrizione del modello.
 
@@ -145,7 +146,7 @@ L'esempio seguente mostra i metadati per un modello di progetto per un'applicazi
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](creating-project-and-item-templates.md)

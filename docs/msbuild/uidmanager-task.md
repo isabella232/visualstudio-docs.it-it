@@ -1,6 +1,6 @@
 ---
 title: Attività UidManager | Microsoft Docs
-description: Informazioni sul modo in cui l'attività UidManager MSBuild controlla, aggiorna o rimuove gli identificatori univoci (UID) per localizzare tutti gli elementi XAML nei file XAML di origine.
+description: Informazioni su come MSBuild'attività UidManager controlla, aggiorna o rimuove identificatori univoci (UID) per localizzare tutti gli elementi XAML nei file XAML di origine.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,30 +19,31 @@ ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6287abee811d406ef7aafa5ce3cc3dc62624b0d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90df39308965b8ac7fd9513a44f4c136dcfc14cd71abd8b5973f33851830d2fe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902617"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121369696"
 ---
 # <a name="uidmanager-task"></a>Attività UidManager
 
-L' <xref:Microsoft.Build.Tasks.Windows.UidManager> attività controlla, aggiorna o rimuove gli identificatori univoci (UID) per localizzare tutti gli elementi XAML inclusi nei file XAML di origine.
+L'attività controlla, aggiorna o rimuove gli identificatori univoci (UID) per localizzare tutti gli elementi XAML inclusi nei <xref:Microsoft.Build.Tasks.Windows.UidManager> file XAML di origine.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
 | Parametro | Descrizione |
 |-------------------------| - |
-| `IntermediateDirectory` | Parametro **stringa** facoltativo.<br /><br /> Specifica la directory utilizzata per eseguire il backup dei file XAML di origine specificati dal parametro **MarkupFiles** . |
-| `MarkupFiles` | Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica i file XAML di origine da includere per il controllo, l'aggiornamento o la rimozione degli UID. |
+| `IntermediateDirectory` | Parametro **String** facoltativo.<br /><br /> Specifica la directory usata per eseguire il backup dei file XAML di origine specificati dal **parametro MarkupFiles.** |
+| `MarkupFiles` | Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica i file XAML di origine da includere per il controllo, l'aggiornamento o la rimozione dell'UID. |
 | `Task` | Parametro **String** obbligatorio.<br /><br /> Specifica l'attività di gestione degli UID da eseguire. Le opzioni valide sono **Check**, **Update** o **Remove**. |
 
 ## <a name="example"></a>Esempio
 
- Nell'esempio seguente viene usata l' <xref:Microsoft.Build.Tasks.Windows.UidManager> attività per verificare che i file XAML di origine specificati contengano elementi XAML con UID appropriati.
+ L'esempio seguente usa l'attività per verificare che i file XAML di origine specificati <xref:Microsoft.Build.Tasks.Windows.UidManager> contengano elementi XAML con UID appropriati.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -65,4 +66,4 @@ L' <xref:Microsoft.Build.Tasks.Windows.UidManager> attività controlla, aggiorna
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
-- [Procedura: localizzare un'applicazione](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+- [Procedura: Localizzare un'applicazione](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

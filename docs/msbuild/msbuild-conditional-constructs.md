@@ -1,6 +1,6 @@
 ---
 title: Costrutti condizionali di MSBuild | Microsoft Docs
-description: Informazioni su come MSBuild fornisce un meccanismo per l'elaborazione condizionale con gli elementi Choose, when e in caso contrario.
+description: Informazioni su MSBuild un meccanismo per l'elaborazione condizionale con gli elementi Choose, When e Otherwise.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,18 +22,19 @@ ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b26e9bdc0c632f924a29cd2ad09c21f8048d31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0cef675b46b32e6465f7f0256b0e60407742215852dc13ce27ff7354db0044bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919138"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427574"
 ---
 # <a name="msbuild-conditional-constructs"></a>Costrutti condizionali di MSBuild
 
-MSBuild fornisce un meccanismo per l'elaborazione/o con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [in caso contrario](../msbuild/otherwise-element-msbuild.md) .
+MSBuild fornisce un meccanismo per l'elaborazione di uno o con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [Otherwise.](../msbuild/otherwise-element-msbuild.md)
 
 ## <a name="use-the-choose-element"></a>Usare l'elemento Choose
 
@@ -81,7 +82,7 @@ MSBuild fornisce un meccanismo per l'elaborazione/o con gli elementi [Choose](..
 </Project>
 ```
 
-In questo esempio viene usata una condizione su una costante del compilatore `DEFINED_CONSTANT` . Questi sono inclusi nella `DefinedConstants` Proprietà. L'espressione regolare viene utilizzata per trovare la corrispondenza con la costante esatta in un elenco delimitato da punti e virgola.
+In questo esempio viene usata una condizione su una costante `DEFINED_CONSTANT` del compilatore. Questi elementi sono inclusi nella `DefinedConstants` proprietà . L'espressione regolare viene usata per trovare la corrispondenza con la costante esatta in un elenco delimitato da punto e virgola.
 
 ```xml
 <Choose>
@@ -97,5 +98,5 @@ In questo esempio viene usata una condizione su una costante del compilatore `DE
 
 - [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)
-- [Elemento in caso contrario (MSBuild)](../msbuild/otherwise-element-msbuild.md)
+- [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

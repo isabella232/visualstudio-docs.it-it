@@ -11,17 +11,18 @@ ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e38d23c855af098f2c32e60c1e3fa7d8fece5502
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 10348f1b5913fb8d01f0b45f30e66854325af72b271aa39546c22ca752a15f0c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079449"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377210"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
 Specifica il tipo di riferimento.
@@ -51,14 +52,14 @@ public enum enum_REFERENCE_TYPE {
  Specifica un riferimento sicuro. Non può essere combinato con `REF_TYPE_WEAK` .
 
 ## <a name="remarks"></a>Commenti
- Utilizzato come `dwRefType` membro della struttura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .
+ Utilizzato come `dwRefType` membro della struttura [DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
 
- Passato come parametro al metodo [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) .
+ Passato come parametro al [metodo SetReferenceType.](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
