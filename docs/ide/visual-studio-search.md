@@ -20,16 +20,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f16c11b79b117fcd796f1836f7a231632c8f18d23d25fb0f29c58f5c197e6c38
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1299810fa015f9e54d418209e13d366ff47bfb33
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398357"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048388"
 ---
 # <a name="use-visual-studio-search"></a>Usare Visual Studio ricerca
 
-L Visual Studio ide (Integrated Development Environment) include molti menu, opzioni e funzionalità, che possono essere difficili da ricordare. La Visual Studio di ricerca è un'unica casella di ricerca che consente agli sviluppatori di trovare menu e opzioni IDE, eseguendo anche ricerche nel codice. Se non si ha esperienza con Visual Studio o uno sviluppatore esperto, questa funzionalità offre un modo rapido per eseguire ricerche tra le funzionalità dell'IDE e il codice.
+L Visual Studio ide (Integrated Development Environment) include molti menu, opzioni e funzionalità, che possono essere difficili da ricordare. La Visual Studio di ricerca è un'unica casella di ricerca che consente agli sviluppatori di trovare menu e opzioni IDE, eseguendo anche ricerche nel codice. Se non si ha esperienza con Visual Studio o uno sviluppatore esperto, questa funzionalità offre un modo rapido per eseguire ricerche tra le funzionalità ide e il codice.
 
 Usare il **tasto di** scelta rapida CTRL Q per accedere alla casella di ricerca o fare clic sulla casella di input Visual Studio Cerca, che si trova accanto alla +  barra dei menu per impostazione predefinita:
 
@@ -51,7 +51,7 @@ A differenza di altre funzionalità di ricerca, ad esempio Trova nei file o Cerc
 
 È possibile usare la casella Visual Studio ricerca per trovare voci di menu e comandi. Ad esempio, cercare *sol pulito per* trovare ed eseguire rapidamente il comando Pulisci soluzione. I risultati della ricerca offrono anche un promemoria della posizione in cui trovare questo comando nei menu, come illustrato nello screenshot seguente:
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Cercare Visual Studio comandi e voci di menu":::
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Cercare Visual Studio di menu e comandi":::
 
 Infine, è possibile cercare finestre o pannelli che potrebbero essere stati chiusi accidentalmente. Ad esempio, cercare *test per* trovare e aprire la finestra Esplora test:
 
@@ -61,7 +61,7 @@ Infine, è possibile cercare finestre o pannelli che potrebbero essere stati chi
 
 Visual Studio ricerca anche nome file, codice, metodo e altre corrispondenze degli elementi della soluzione. Nello screenshot seguente, una ricerca di *markdown* ha trovato il file MarkdownMetaExtractor.cs, la classe e due metodi `MarkdownMetaExtractor` all'interno della soluzione:
 
-:::image type="content" source="media/visual-studio-search-files.png" alt-text="Eseguire ricerche nei file con Visual Studio ricerca":::
+:::image type="content" source="media/visual-studio-search-files.png" alt-text="Eseguire ricerche nei file Visual Studio ricerca":::
 
 È anche possibile eseguire una ricerca "camel case". Nello screenshot seguente, una ricerca di *FSS* ha trovato un file, una classe e un metodo S **ize****S** meno recenti di **F:**
 

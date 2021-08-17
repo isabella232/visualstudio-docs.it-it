@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93345f96c1fa32cd01a53a77162c2042aac5b8729b8f5967e662737e0eaecbf6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8a2027ba902c68ed8487de965e88eccec8e40fd9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095322"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 Restituisce il successivo set di elementi dall'enumerazione.

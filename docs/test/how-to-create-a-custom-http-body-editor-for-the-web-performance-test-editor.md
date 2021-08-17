@@ -1,6 +1,6 @@
 ---
 title: Creare un editor del corpo HTTP per un test delle prestazioni Web
-description: Informazioni su come creare un editor di contenuto personalizzato che consente di modificare il contenuto del corpo della stringa o il contenuto binario di una richiesta di servizio Web.
+description: Informazioni su come creare un editor di contenuto personalizzato che consente di modificare il contenuto del corpo della stringa o il contenuto del corpo binario di una richiesta di servizio Web.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +10,13 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: e096333d66fffd233bfb4b9de7f40e18f1277846
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 96b26f60fdc283baf90645e81453cb52fba17303
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966734"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033265"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedura: Creare un editor del corpo HTTP personalizzato per l'Editor test prestazioni Web
 
@@ -129,7 +130,7 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
    La finestra di dialogo **Aggiungi nuovo elemento** viene visualizzata.
 
-2. Selezionare **classe**.
+2. Selezionare **Classe**.
 
 3. Nella casella di testo **Nome** digitare un nome significativo per la classe, ad esempio `MessageEditorPlugins`.
 
@@ -266,14 +267,14 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilare e distribuire i plug-in
 
-1. Scegliere **Compila \<Windows Form Control Library project name>** dal menu **Compila** .
+1. Scegliere **Compila** dal menu **Compila. \<Windows Form Control Library project name>**
 
 2. Chiudere tutte le istanze di Visual Studio.
 
    > [!NOTE]
    > La chiusura di Visual Studio consente di assicurarsi che il file con estensione *dll* non sia bloccato prima di provare a copiarlo.
 
-3. Copiare il file con *estensione dll* risultante dalla cartella *bin\Debug* del progetto (ad esempio, *MessageEditors.dll*) a *%ProgramFiles%\Microsoft Visual Studio\2017 \\ \<edition> \Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+3. Copiare il file *.dll* risultante dalla cartella *bin\debug* del progetto (ad *esempio,MessageEditors.dll*) in *%ProgramFiles%\Microsoft Visual Studio\2017 \\ \<edition> \Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4. Aprire Visual Studio.
 
@@ -285,9 +286,9 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 2. Creare un test delle prestazioni Web e immettere un URL di servizio Web nel browser.
 
-3. Al termine della registrazione, nella Editor test prestazioni Web espandere la richiesta per il servizio Web e selezionare un corpo **stringa** o un **corpo binario**.
+3. Al termine della registrazione, nel Editor test prestazioni Web espandere la richiesta per il servizio  Web e selezionare un corpo stringa o un **corpo binario.**
 
-4. Nella finestra **Proprietà** selezionare corpo stringa o corpo binario e scegliere i puntini di sospensione **(...)**.
+4. Nella finestra **Proprietà** selezionare Corpo stringa o Corpo binario e scegliere i puntini di **sospensione (...)**.
 
    Viene visualizzata la finestra di dialogo **Modifica dati del corpo HTTP**.
 
@@ -307,9 +308,9 @@ Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (C#)](..
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Procedura: creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md)
+- [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md)
 - [Codificare una regola di estrazione personalizzata per un test delle prestazioni Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificare una regola di convalida personalizzata per un test delle prestazioni Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Procedura: creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md)
+- [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md)
 - [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Procedura: creare un componente aggiuntivo di Visual Studio per il Visualizzatore Risultati test prestazioni Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Procedura: Creare un componente Visual Studio per il Visualizzatore prestazioni Web Risultati test](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

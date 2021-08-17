@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di una violazione di accesso C++ | Microsoft Docs
-description: Vedere i suggerimenti per la risoluzione di una violazione di accesso quando più puntatori sono candidati. Le versioni recenti di Visual Studio il puntatore errant.
+description: Vedere i suggerimenti sulla risoluzione dei problemi relativi a una violazione di accesso quando più puntatori sono candidati. Le versioni recenti di Visual Studio il nome del puntatore errant.
 ms.custom: SEO-VS-2020
 ms.date: 02/05/2019
 ms.topic: how-to
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 814810d6a7145648044ada1a772e4febc2d37a29a922d332dd9af87907753929
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ae42f11fa04f3f4fa2121756a382f7a8676778ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362465"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080806"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Come è possibile eseguire il debug di una violazione di accesso C++?
 
@@ -77,7 +77,7 @@ int main() {
 
 Se si esegue questo codice in Visual Studio 2015 Update 1, dovrebbe comparire la finestra di dialogo di eccezione seguente:
 
-![Screenshot di una finestra Microsoft Visual Studio di eccezione, che mostra una violazione di accesso in lettura per 'A->B era nullptr'. Il pulsante Interrompi è selezionato.](../debugger/media/accessviolationcplus.png)
+![Screenshot di una finestra Microsoft Visual Studio di eccezione, che mostra una violazione di accesso in lettura per "A->B era nullptr". Il pulsante Interrompi è selezionato.](../debugger/media/accessviolationcplus.png)
 
 Se non è possibile determinare perché il puntatore ha causato una violazione di accesso, tracciare il codice per assicurarsi che il puntatore che provoca il problema sia stato assegnato correttamente.  Se viene passato come parametro, assicurarsi che venga passato correttamente e che non si crei accidentalmente una [copia superficiale.](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) Verificare quindi che i valori non vengano involontariamente modificati in qualche punto del programma creando un punto di interruzione dei dati per il puntatore in questione per assicurarsi che non venga modificato altrove nel programma. Per ulteriori informazioni sui punti di interruzione dei dati, vedere la relativa sezione in [Using Breakpoints](../debugger/using-breakpoints.md).
 

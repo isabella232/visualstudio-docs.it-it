@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7c95876f51fe33224a246a530cb02f0b36a7cdbee2ee61201bc74aa6b08ce6d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2e126941a3519891a69692fd218ebefc7238be30
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401908"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095348"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 Questo metodo restituisce il set successivo di elementi dall'enumerazione .
@@ -56,7 +56,7 @@ int Next(
 [out] Restituisce il numero di elementi effettivamente restituiti in `rgelt` .
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di `S_FALSE` elementi richiesto. In caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di elementi richiesto. In `S_FALSE` caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

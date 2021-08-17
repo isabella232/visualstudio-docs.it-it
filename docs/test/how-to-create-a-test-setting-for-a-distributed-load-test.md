@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4dca95365bb93f8129d513be19708862b393854d90f46a3cc6bb23002f566743
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7e08163be95d2249b091ce40072d54111e35ef2b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121441106"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033278"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedura: Creare un file di impostazioni test per un test di carico distribuito
 
@@ -54,7 +54,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 4. Scegliere **Aggiungi**.
 
-     Il nuovo file delle impostazioni di **test viene visualizzato Esplora soluzioni**, nella cartella Elementi **di** soluzione.
+     Il nuovo file delle impostazioni di test **viene visualizzato Esplora soluzioni**, nella cartella Elementi **di** soluzione.
 
 5. Verrà visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
 
@@ -179,7 +179,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 ## <a name="remove-a-test-settings-file-from-your-solution"></a>Rimuovere un file di impostazioni test dalla soluzione
 
-Nella cartella **Elementi di soluzione** in **Esplora soluzioni** fare clic con il pulsante destro del mouse su impostazioni test da rimuovere e quindi scegliere **Rimuovi.**
+Nella cartella **Elementi di soluzione** in **Esplora soluzioni** fare clic con il pulsante destro del mouse su impostazioni test da rimuovere e quindi **scegliere Rimuovi.**
 
 Il file delle impostazioni di test verrà rimosso dalla soluzione.
 

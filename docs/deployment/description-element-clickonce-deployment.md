@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;elemento Description (distribuzione ClickOnce) | Microsoft Docs'
-description: L'elemento Description identifica le informazioni sull'applicazione utilizzate per creare una presenza della shell e un elemento Installazione applicazioni nel pannello di controllo.
+title: '&lt;Elemento description &gt; (ClickOnce Deployment) | Microsoft Docs'
+description: L'elemento description identifica le informazioni sull'applicazione usate per creare una presenza della shell e un elemento Installazione applicazioni in Pannello di controllo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,17 +16,18 @@ ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dee33fca027ce47ede8315f7956479ee2394382
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fabce5e8d6f7b6bf59f1a62346c8d9b5927e2cae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893087"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080650"
 ---
-# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;&gt;elemento Description (distribuzione ClickOnce)
-Identifica le informazioni sull'applicazione utilizzate per creare una presenza Shell e un elemento **Installazione applicazioni** nel pannello di controllo.
+# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;elemento &gt; description (distribuzione ClickOnce)
+Identifica le informazioni sull'applicazione utilizzate per creare una presenza della shell **e** un elemento Installazione applicazioni in Pannello di controllo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +46,16 @@ Identifica le informazioni sull'applicazione utilizzate per creare una presenza 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`publisher`|Obbligatorio. Identifica il nome della società usato per il posizionamento delle icone nel menu **Start** di Windows e l'elemento installazione **applicazioni** nel pannello di controllo, quando la distribuzione è configurata per l'installazione.|
-|`product`|Obbligatorio. Identifica il nome completo del prodotto. Utilizzato come titolo per l'icona installata nel menu **Start** di Windows.|
-|`suiteName`|facoltativo. Identifica una sottocartella all'interno della `publisher` cartella nel menu **Start** di Windows.|
-|`supportUrl`|facoltativo. Specifica un URL di supporto visualizzato nell'elemento **Installazione applicazioni** nel pannello di controllo. Viene inoltre creato un collegamento a questo URL per il supporto dell'applicazione nel menu **Start** di Windows, quando la distribuzione è configurata per l'installazione.|
+|`publisher`|Obbligatorio. Identifica il nome della società usato per il posizionamento  delle icone nel menu **Start** di Windows e nell'elemento Installazione applicazioni in Pannello di controllo, quando la distribuzione è configurata per l'installazione.|
+|`product`|Obbligatorio. Identifica il nome completo del prodotto. Usato come titolo per l'icona installata nel **menu** Windows Start.|
+|`suiteName`|facoltativo. Identifica una sottocartella `publisher` all'interno della cartella Windows menu **Start.**|
+|`supportUrl`|facoltativo. Specifica un URL di supporto visualizzato **nell'elemento** Installazione applicazioni in Pannello di controllo. Un collegamento a questo URL viene creato anche per il supporto dell'applicazione nel menu **Start** di Windows, quando la distribuzione è configurata per l'installazione.|
 
 ## <a name="remarks"></a>Commenti
- L'elemento Description è obbligatorio in tutte le configurazioni di distribuzione.
+ L'elemento description è obbligatorio in tutte le configurazioni di distribuzione.
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice riportato di seguito viene illustrato un `description` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto di distribuzione. Questo esempio di codice fa parte di un esempio più ampio fornito per l'argomento [manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) .
+ Nell'esempio di codice seguente viene illustrato un `description` elemento in un manifesto della [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Questo esempio di codice fa parte di un esempio più ampio fornito per [l'ClickOnce manifesto della](../deployment/clickonce-deployment-manifest.md) distribuzione.
 
 ```xml
 <description
@@ -64,4 +65,4 @@ Identifica le informazioni sull'applicazione utilizzate per creare una presenza 
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [ClickOnce di distribuzione](../deployment/clickonce-deployment-manifest.md)

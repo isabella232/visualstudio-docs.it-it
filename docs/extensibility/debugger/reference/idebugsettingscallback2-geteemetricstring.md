@@ -1,5 +1,5 @@
 ---
-description: Recupera la stringa di valore di una metrica dell'analizzatore di espressioni in base al nome.
+description: Recupera la stringa del valore di una metrica dell'analizzatore di espressioni in base al nome.
 title: IDebugSettingsCallback2::GetEEMetricString | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121389540"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-Recupera la stringa di valore di una metrica dell'analizzatore di espressioni in base al nome.
+Recupera la stringa del valore di una metrica dell'analizzatore di espressioni in base al nome.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27793da2555f8bb1f61d0a9df6b616e2a551bf4813f1d416b71d7e3cd283d858
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: affe65f21cc9e9899349c87e237b49b1051210fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276438"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030100"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 Ottiene un GUID per questo programma.
@@ -49,7 +49,7 @@ int GetProgramId(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Un motore di debug deve restituire l'identificatore di programma originariamente passato ai [metodi OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) [o Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md) In questo modo è possibile identificare il programma tra i componenti del debugger.
+ Un motore di debug deve restituire l'identificatore di programma originariamente passato ai [metodi OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) [o Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md) Ciò consente l'identificazione del programma tra i componenti del debugger.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c84e07fa5ac2d3fc3afafd1579c8012ad14b06c82eb8a566ecaa28f5904b158
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8b3cd5951b0ffe8a933c2920dfc1a7e107c5bf6f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305828"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063590"
 ---
 # <a name="contribute-to-the-automation-model"></a>Contribuire al modello di automazione
 Visual Studio fornisce un set di interfacce di automazione per la personalizzazione dell'ambiente. Il modello di automazione è il modello a oggetti che consente agli utenti finali di creare Visual Studio componenti aggiuntivi ed estensioni.
@@ -40,7 +40,7 @@ Visual Studio fornisce un set di interfacce di automazione per la personalizzazi
 
  Fornisce istruzioni dettagliate per la creazione di oggetti specifici di VSPackage.
 
-- [Project di modelli](../../extensibility/internals/project-modeling.md)
+- [Project modellazione](../../extensibility/internals/project-modeling.md)
 
  Illustra gli oggetti di progetto standard necessari per creare l'automazione per il nuovo tipo di progetto e illustra il percorso seguito dall'automazione del progetto. Questo argomento fornisce anche elenchi di dichiarazioni e implementazione per le classi.
 
@@ -48,7 +48,7 @@ Visual Studio fornisce un set di interfacce di automazione per la personalizzazi
 
  Fornisce istruzioni dettagliate per la creazione di eventi per il modello di automazione.
 
-- [Supporto dell'automazione per le pagine di opzioni](../../extensibility/internals/automation-support-for-options-pages.md)
+- [Supporto dell'automazione per le pagine delle opzioni](../../extensibility/internals/automation-support-for-options-pages.md)
 
  Viene descritto come restituire un oggetto di automazione per  supportare le proprietà della finestra di dialogo Opzioni personalizzate di un pacchetto VSPackage nel **menu** Strumenti estendendo l'oggetto `DTE.Properties` .
 
@@ -58,7 +58,7 @@ Visual Studio fornisce un set di interfacce di automazione per la personalizzazi
 
 - [Procedura: Fornire automazione per Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)
 
- Spiega che fornire automazione è una buona idea ogni volta che si vogliono rendere disponibili gli oggetti di automazione in una finestra e l'ambiente non fornisce già un oggetto di automazione già pronto. Viene illustrata l'automazione per le finestre degli strumenti e le finestre dei documenti.
+ Spiega che fornire automazione è una buona idea ogni volta che si vogliono rendere disponibili gli oggetti di automazione in una finestra e che l'ambiente non fornisce già un oggetto di automazione già pronto. Viene illustrata l'automazione per le finestre degli strumenti e le finestre dei documenti.
 
 - [Usare il modello di automazione](../../extensibility/internals/using-the-automation-model.md)
 
@@ -69,4 +69,4 @@ Visual Studio fornisce un set di interfacce di automazione per la personalizzazi
  Fornisce informazioni sull'automazione per gli oggetti Configuration e SelectedItems.
 
 ## <a name="reference"></a>Riferimento
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Fornisce un esempio di codice che illustra come un vspackage fa parte del modello a oggetti di automazione DTE. Elenca i parametri, i valori restituiti e le osservazioni selezionate.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Fornisce un esempio di codice che illustra come un VSPackage partecipa al modello a oggetti di automazione DTE. Elenca i parametri, i valori restituiti e le osservazioni selezionate.

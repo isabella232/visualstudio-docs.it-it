@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fde2dd02ffb0e8a314fb8c0c71c43fdc529fca587f64a7d05ca7641f42e40480
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ea5d2bbfdec859b82ffbe49adff18d0d60b8cc5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306894"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095894"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Questo metodo esegue il mapping di una posizione del documento in una matrice di indirizzi di debug.

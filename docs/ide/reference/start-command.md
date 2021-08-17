@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb226ae59e38e12488fe0fed790307df462f34f962cef6302eb21e3ca77604a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f5eb9036b12d066e03eb6e4de346d99f78b04c79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121446934"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048700"
 ---
 # <a name="start-command"></a>Comando Avvia
 Inizia il debug del progetto di avvio.
@@ -51,5 +51,5 @@ In questo esempio viene avviato il debugger e le eccezioni vengono ignorate.
 
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

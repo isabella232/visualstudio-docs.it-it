@@ -1,6 +1,6 @@
 ---
 title: Modellare i requisiti utente
-description: Informazioni su Visual Studio aiuta a comprendere, discutere e comunicare le esigenze degli utenti disegnando diagrammi sulle loro attività.
+description: Informazioni su Visual Studio per comprendere, discutere e comunicare le esigenze degli utenti disegnando diagrammi sulle proprie attività.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 860b63f5ae01d74df27b4a15f5f5769b2deffffa6bd258c147e4ce63d0abc0aa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 29970ff3c50a0e28e35751e1c9807f201f48f51f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410990"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047868"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 
@@ -63,7 +63,7 @@ La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per un
 
 Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
 
-Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle classi pertinenti in un diagramma classi concettuali. Esempio:
+Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole business statiche* come commenti associati alle classi pertinenti in un diagramma classi concettuale. Esempio:
 
 ![Regola nel commento associato alla classe Order.](../modeling/media/uml_reqmcd2.png)
 

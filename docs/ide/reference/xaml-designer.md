@@ -1,6 +1,6 @@
 ---
 title: Pagina delle opzioni della finestra di progettazione XAML
-description: Informazioni su come usare la pagina generale nella sezione finestra di progettazione XAML per specificare la modalità di formattazione di elementi e attributi nei documenti XAML.
+description: Informazioni su come usare la pagina Generale nella sezione finestra di progettazione XAML per specificare la formattazione di elementi e attributi nei documenti XAML.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: reference
@@ -10,14 +10,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - uwp
-ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 01832b96a9505a9883896cc60027e2029d6b3b45
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082526"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048635"
 ---
 # <a name="xaml-designer-options-page"></a>Pagina delle opzioni della finestra di progettazione XAML
 
@@ -38,9 +39,9 @@ Usare questa impostazione per verificare se la visualizzazione Progettazione app
 
 |Nome|Descrizione|
 |-|-|
-|**Visualizzazione origine**|Specifica se viene visualizzata solo l'origine XAML nella visualizzazione XAML. L'impostazione è utile quando si caricano documenti di grandi dimensioni.|
-|**Visualizzazione progettazione**|Specifica se deve apparire solo una finestra di progettazione XAML visiva nella visualizzazione XAML.|
-|**Visualizzazione divisa**|Specifica se sia la finestra di progettazione XAML visiva che l'origine XAML devono apparire l'una accanto all'altra nella visualizzazione XAML (percorso basato sull'impostazione **Orientamento divisione**).|
+|**Vista origine**|Specifica se viene visualizzata solo l'origine XAML nella visualizzazione XAML. L'impostazione è utile quando si caricano documenti di grandi dimensioni.|
+|**Visualizzazione Progettazione**|Specifica se deve apparire solo una finestra di progettazione XAML visiva nella visualizzazione XAML.|
+|**Doppia visualizzazione**|Specifica se sia la finestra di progettazione XAML visiva che l'origine XAML devono apparire l'una accanto all'altra nella visualizzazione XAML (percorso basato sull'impostazione **Orientamento divisione**).|
 
 ## <a name="split-orientation"></a>Orientamento divisione
 
@@ -59,19 +60,19 @@ Usare questa impostazione per determinare il funzionamento dello zoom quando si 
 |Nome|Descrizione|
 |-|-|
 |**Rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML usando lo scorrimento della rotellina del mouse.|
-|**CTRL + rotellina del mouse**|Eseguire lo zoom avanti del finestra di progettazione XAML premendo il tasto **CTRL** mentre si scorre la rotellina del mouse.|
-|**ALT + rotellina del mouse**|Ingrandire il finestra di progettazione XAML premendo **ALT** mentre si scorre la rotellina del mouse.|
+|**CTRL + rotellina del mouse**|Fare zoom avanti finestra di progettazione XAML clic premendo **CTRL** mentre si scorre la rotellina del mouse.|
+|**ALT + rotellina del mouse**|Fare zoom avanti finestra di progettazione XAML clic premendo **ALT** mentre si scorre la rotellina del mouse.|
 
 Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.
 
-## <a name="default-zoom-setting"></a>Impostazione zoom predefinita
+## <a name="default-zoom-setting"></a>Impostazione predefinita dello zoom
 
 Usare questa impostazione per determinare il valore di zoom predefinito per la visualizzazione del documento XAML.
 
 |Nome|Descrizione|
 |-|-|
-|**Ultimo utilizzo**|Per impostazione predefinita, utilizzare l'ultimo valore di zoom utilizzato per tutti i documenti XAML. Quando un documento XAML viene aperto per la prima volta, utilizzerà l'impostazione "adatta tutto" per la prima volta.|
-|**Adatta tutto**|Usare questa opzione per impostare il valore di zoom su "adatta tutto" per la finestra di progettazione XAML. Quando un documento XAML viene chiuso e riaperto, il valore dell'ultimo set verrà mantenuto per tale sessione, ma per impostazione predefinita verranno usate le diverse sessioni "Fit All".|
+|**Ultimo utilizzo**|Per impostazione predefinita, usa l'ultimo valore di zoom usato per tutti i documenti XAML. Quando un documento XAML viene aperto per la prima volta, userà l'impostazione "Adatta tutto" solo per la prima volta.|
+|**Adatta tutto**|Usare questa opzione per impostare il valore di zoom su "Adatta tutto" per la finestra di progettazione XAML. Quando un documento XAML viene chiuso e riaperto, l'ultimo valore impostato verrà mantenuto per la sessione, ma per le diverse sessioni verrà usato "Adatta tutto" per impostazione predefinita.|
 
 Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.
 

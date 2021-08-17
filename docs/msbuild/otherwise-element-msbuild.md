@@ -1,6 +1,6 @@
 ---
 title: Elemento Otherwise (MSBuild) | Microsoft Docs
-description: Informazioni su come MSBuild utilizza l'elemento altrimenti per specificare il blocco di codice da eseguire se e solo se le condizioni di All quando gli elementi sono false.
+description: Informazioni su MSBuild usa l'elemento Otherwise per specificare il blocco di codice da eseguire se e solo se le condizioni di tutti gli elementi When sono false.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: de3997e9-1595-4263-a886-95530b56a319
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e78723ee6cc0f8ed1da0d5e913be0d84eb1050
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a11331b751a491c3c39562b0b3cd509a5e3d1d9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905331"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027708"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 
@@ -54,7 +55,7 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 
 ### <a name="attributes"></a>Attributi
 
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -128,4 +129,4 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 ## <a name="see-also"></a>Vedi anche
 
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)

@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9ffa6ecfbc676ee51bd66ee10f80398c98573a8b996860f13e9761bb0433314a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e610f58fad678f297afffa5796f33e76de6b2224
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121233238"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062485"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
@@ -113,7 +113,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
 
     :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png" alt-text="nella finestra &quot;Configura il nuovo progetto&quot;, denominare il progetto &quot;MyCoreApp&quot;":::
 
-1. Nella finestra **Informazioni** aggiuntive verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa superiore. Si noti che è possibile scegliere di abilitare il supporto di Docker selezionando la casella . È anche possibile aggiungere il supporto per l'autenticazione facendo clic sul pulsante Cambia autenticazione. Da qui è possibile scegliere tra:
+1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa superiore. Si noti che è possibile scegliere di abilitare il supporto di Docker selezionando la casella . È anche possibile aggiungere il supporto per l'autenticazione facendo clic sul pulsante Cambia autenticazione. Da qui è possibile scegliere tra:
     - Nessuna: nessuna autenticazione.
     - Account singoli: vengono archiviati in un database locale o basato su Azure.
     - Microsoft Identity Platform: questa opzione usa Active Directory, Azure AD o Microsoft 365 per l'autenticazione.
@@ -194,11 +194,11 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
    Nell'editor verrà visualizzato il codice HTML per il testo visualizzato nella **home** page.
 
-   ![Codice HTML nel file Index.cshtml per la home page nell'editor Visual Studio codice](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+   ![Codice HTML nel file Index.cshtml per la home page nell Visual Studio editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
 1. Modificare il testo "Welcome" (Benvenuto) in "**Hello World!**".
 
-   ![Nell'editor Visual Studio modificare il codice HTML predefinito che indica benvenuto per Hello World invece](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+   ![Nell'editor Visual Studio modificare il codice HTML predefinito che indica il Hello World invece](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
 1. Scegliere **IIS Express** o premere **CTRL**+**F5** per eseguire l'app e aprirla in un Web browser.
 

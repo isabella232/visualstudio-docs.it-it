@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 71bf8d8c9d211fea35ee4f9d603c439ebaf911ed89da292d2ef40a7b83b7ac7f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bbce7034434051690dad7ee3c54d83498f200ab4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385224"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047608"
 ---
 # <a name="how-to-localize-a-feature"></a>Procedura: Localizzare una funzionalità
   Per impostazione predefinita, i titoli e le descrizioni delle funzionalità usano valori stringa hard-coded. Per localizzare il titolo e la descrizione della funzionalità, sostituire le stringhe con espressioni che fanno riferimento alle risorse localizzate.
@@ -42,19 +42,19 @@ ms.locfileid: "121385224"
 
      Ad esempio, nel file di risorse della  funzionalità predefinito immettere un ID stringa title con valore **My Feature Title** e un secondo ID stringa **Descrizione** con il valore **My Feature Description**. Per ogni file di risorse localizzato, utilizzare gli stessi ID di stringa utilizzati nella risorsa della funzionalità predefinita, ma immettere stringhe localizzate per i valori.
 
-5. Dopo aver immesso tutti i valori delle risorse, aprire il menu di scelta  rapida per la funzionalità, ad esempio *Feature1.feature,* e quindi scegliere Progettazione visualizzazioni per aprire la funzionalità in Progettazione funzionalità.
+5. Dopo aver immesso tutti i valori delle risorse, aprire il menu di scelta  rapida per la funzionalità , ad esempio *Feature1.feature*, e quindi scegliere Progettazione visualizzazioni per aprire la funzionalità in Progettazione funzionalità.
 
 6. Per localizzare i **campi Titolo** **e** Descrizione nella funzionalità, usare il formato seguente per immettere i valori nelle rispettive caselle:
 
      `$Resources:` *ID stringa*
 
-     Ad esempio, immettere $Resources:**Titolo** nella casella **Titolo** funzionalità e $Resources:**Descrizione** nella **casella Descrizione** funzionalità.
+     Ad esempio, immettere $Resources:**Titolo** nella casella **Titolo** della funzionalità e $Resources:**Descrizione** nella **casella Descrizione** funzionalità.
 
      Gli ID di stringa devono corrispondere a quelli utilizzati nei file di risorse.
 
 7. Scegliere il **tasto F5** per compilare ed eseguire l'applicazione.
 
-8. In SharePoint aprire il menu **Azioni** sito, scegliere Impostazioni sito **e** quindi nella sezione **Azioni** sito scegliere il collegamento **Gestisci funzionalità** sito.
+8. In SharePoint aprire il **menu** Azioni sito, scegliere Impostazioni sito e quindi nella sezione **Azioni** sito scegliere il **collegamento Gestisci funzionalità** sito. 
 
 9. In SharePoint modificare la lingua di visualizzazione rispetto all'impostazione predefinita.
 

@@ -1,6 +1,6 @@
 ---
 title: Proprietà di uno scenario di test di carico
-description: Informazioni su come modificare le impostazioni delle proprietà dello scenario di test di carico in Visual Studio una delle varie proprietà dello scenario di test di carico in questo articolo.
+description: Informazioni su come modificare le impostazioni delle proprietà dello scenario di test di carico in Visual Studio a una delle varie proprietà dello scenario di test di carico in questo articolo.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5f85269ab91390034d7ffe897e98ed47946c9721e1e11c6f60e0c8240e11182
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9d27790915c545b7e3cd83538f8e0b41041244bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408942"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047374"
 ---
 # <a name="load-test-scenario-properties"></a>Proprietà di uno scenario di test di carico
 

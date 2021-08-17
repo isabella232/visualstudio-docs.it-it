@@ -21,51 +21,51 @@ ms.locfileid: "121378341"
 # <a name="require-psmodule"></a>require-psmodule
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
+> A partire dal 12 aprile 2021, la connessione GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è incentrata sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di Visual Studio di lavoro. Come parte di questo `devinit` e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community per sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
 
 Lo strumento viene usato per installare un modulo `require-psmodule` [di PowerShell](/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) dal [PowerShell Gallery](https://www.powershellgallery.com/) tramite [Install-Module](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true), in modo che possa essere usato negli script di PowerShell.
 
 > [!TIP]
-> Dopo aver installato un modulo, sarà comunque necessario importarlo in uno script usando [Import-Module.](/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true)
+> Dopo aver installato un modulo, sarà comunque necessario importarlo in uno script usando [Import-Module](/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true).
 
 ## <a name="usage"></a>Utilizzo
 
-Se entrambe `input` le proprietà e vengono omesse o vuote, lo strumento seguirà `additionalOptions` il [comportamento](#default-behavior) predefinito descritto di seguito.
+Se `input` entrambe le proprietà e vengono omesse o vuote, lo strumento seguirà `additionalOptions` il [comportamento](#default-behavior) predefinito descritto di seguito.
 
 | Nome                                             | Tipo   | Obbligatoria | valore                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà comments facoltativa. Non usato.                                                   |
-| [**Input**](#input)                              | string | Sì      | Pacchetti da installare. Per informazioni [dettagliate,](#input) vedere Input di seguito.                       |
+| [**Input**](#input)                              | string | Sì      | Pacchetti da installare. Per [informazioni dettagliate,](#input) vedere Input di seguito.                       |
 | [**additionalOptions**](#additional-options)     | stringa | No       | Non usato. Per [informazioni dettagliate, vedere](#additional-options) Opzioni aggiuntive di seguito.              |
 
 ### <a name="input"></a>Input
 
-La `input` proprietà deve essere del modulo di `Name` PowerShell da installare. È possibile trovare un elenco dei moduli di PowerShell disponibili eseguendo una [PowerShell Gallery](https://www.powershellgallery.com/).
+La `input` proprietà deve essere del modulo di `Name` PowerShell da installare. È possibile trovare un elenco dei moduli di PowerShell disponibili eseguendo una PowerShell Gallery [.](https://www.powershellgallery.com/)
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Le opzioni aggiuntive vengono passate direttamente [al comando Install-Module](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7) e sono documentate in [Microsoft Docs](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7).
+Le opzioni aggiuntive vengono passate direttamente al [comando Install-Module](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7) e sono documentate in [Microsoft Docs](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7).
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello strumento `require-psmodule` è l'errore `input` necessario.
+Il comportamento predefinito dello `require-psmodule` strumento è l'errore come `input` richiesto.
 
 ### <a name="built-in-options"></a>Opzioni predefinite
 
-Lo `require-psmodule` strumento imposta una serie di argomenti della riga di comando per garantire `Install-Module` `Install-Module` l'esecuzione headless. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile in [Install-Module](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
+Lo `require-psmodule` strumento imposta una serie di argomenti della riga di comando per garantire che possa essere eseguito `Install-Module` `Install-Module` headless. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile in [Install-Module](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
 
 | Nome         | Descrizione                                                                                                                                                                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **-Force**   | Installa un modulo ed esegue l'override dei messaggi di avviso relativi ai conflitti di installazione del modulo. Se nel computer esiste già un modulo con lo stesso nome, Force consente l'installazione di più versioni. Sovrascriverà il modulo se esiste un modulo esistente con lo stesso nome e la stessa versione. Force e AllowClobber possono essere usati insieme in un Install-Module comando. |
-| **-WhatIf**  | Il flag -WhatIf viene aggiunto quando viene passata l'esecuzione di tipo dry per il `devinit` comando .                                                                                                                                                                                                                                                                                                       |
-| **-Verbose** | Il flag -Verbose viene aggiunto quando viene passato verbose per il `devinit` comando .                                                                                                                                                                                                                                                                                                      |
+| **-WhatIf**  | Il flag -WhatIf viene aggiunto quando viene passata l'esecuzione asciutta per il `devinit` comando.                                                                                                                                                                                                                                                                                                       |
+| **-Verbose** | Il flag -Verbose viene aggiunto quando viene passato verbose per `devinit` il comando.                                                                                                                                                                                                                                                                                                      |
 
 
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito sono riportati esempi di come eseguire `require-psmodule` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-the-powershellget-module"></a>.devinit.jsin verrà installato il modulo PowerShellGet:
+#### <a name="devinitjson-that-will-install-the-powershellget-module"></a>.devinit.jsin che installerà il modulo PowerShellGet:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -78,7 +78,7 @@ Di seguito sono riportati esempi di come eseguire `require-psmodule` usando `.de
 }
 ```
 
-#### <a name="devinitjson-that-will-install-the-powershellget-module-from-a-specific-repository"></a>.devinit.jsin verrà installato il modulo PowerShellGet da un repository specifico:
+#### <a name="devinitjson-that-will-install-the-powershellget-module-from-a-specific-repository"></a>.devinit.jssu che installerà il modulo PowerShellGet da un repository specifico:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

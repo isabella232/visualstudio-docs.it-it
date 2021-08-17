@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: e445e59fc91fc97cf85b28ee339c604c1e4c6261333d9e15ac66d746a0422aa0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c10fc92d222ebda2ad7e81549c91413d95825f2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121316877"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047946"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 L'API di immutabilità di Visual Studio Visualization and Modeling SDK consente a un programma di bloccare parte o tutto un modello di linguaggio specifico di dominio (DSL) in modo che possa essere letto ma non modificato. Questa opzione di sola lettura può essere usata, ad esempio, in modo che un utente possa chiedere ai colleghi di annotare ed esaminare un modello DSL, ma può non consentire loro di modificare l'originale.
@@ -25,7 +25,7 @@ L'API di immutabilità di Visual Studio Visualization and Modeling SDK consente 
 > [!NOTE]
 > I criteri di blocco possono essere aggirati tramite reflection. Fornisce un limite chiaro per gli sviluppatori di terze parti, ma non offre una sicurezza avanzata.
 
- Altre informazioni ed esempi sono disponibili nel sito Visual Studio [Visualization and Modeling SDK.](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
+ Altre informazioni ed esempi sono disponibili nel sito Web Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) .
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

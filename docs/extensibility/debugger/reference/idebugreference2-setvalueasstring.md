@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad19f6e2f27f09128986c5b99d743061921b95eb7824ad816396860535eaecb1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f582cc79b3feb2eb8a5be431431c405774d1409
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338514"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063824"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Imposta il valore di un riferimento da una stringa. Riservato per utilizzi futuri.
@@ -53,7 +53,7 @@ int SetValueAsString (
 [in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
 
 `dwTimeout`\
-[in] Tempo massimo di attesa, in millisecondi, prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
+[in] Tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo indefinito.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cef6c400009a7e90a16acc58679166961767d6d97f32f75a23b73b98f557f07
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b02056d29e0caeb77bc045a2c6ca391808410f6d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380300"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081341"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 Recupera le righe in un compilando specificato che contengono un indirizzo specificato.
@@ -56,7 +56,7 @@ HRESULT findLinesByAddr (
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Questo esempio mostra una funzione che ottiene tutti i numeri di riga contenuti in una funzione usando l'indirizzo e la lunghezza della funzione.
+Questo esempio illustra una funzione che ottiene tutti i numeri di riga contenuti in una funzione usando l'indirizzo e la lunghezza della funzione.
 
 ```C++
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,

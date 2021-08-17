@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78454cc7f92648be75c5d00862fdf8d7382e77b64a84d612e3c3662c21e358e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1c0f47e57d4c3820f158c833649dc15f9f3c0e54
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389371"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029502"
 ---
 # <a name="ienumdebugcodecontexts2skip"></a>IEnumDebugCodeContexts2::Skip
 Ignora il numero di elementi specificato.

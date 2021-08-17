@@ -12,12 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: 928e6abedb53ed387b37aa9f90a232a15233bc94b09301af13598f0f56c4c298
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dbe68e27772df3a25cdef7c5bc62211b12f77a9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048947"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 

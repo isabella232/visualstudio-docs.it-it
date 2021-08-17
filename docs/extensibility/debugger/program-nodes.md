@@ -16,21 +16,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0066f6b8ee17591620af896c753dbd9b29a5948790d024c5b505be76f34cb75
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: da57e9379d46bfbb5194b59d91baa7a2ef342f74
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417769"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080169"
 ---
 # <a name="program-nodes"></a>Nodi di programma
 Nell'architettura del debugger, un *nodo di programma*:
 
-- Descrizione semplice di un programma.
+- Descrizione leggera di un programma.
 
-- È in grado di identificare se stesso e il processo in cui è in esecuzione. Un nodo di programma può essere collegato, scollegato e descritto il motore di debug che lo ha creato, se presente.
+- Può identificare se stesso e il processo in cui è in esecuzione. Un nodo di programma può essere collegato, scollegato e descritto il motore di debug (DE) che lo ha creato, se presente.
 
-- È rappresentato da [un'interfaccia IDebugProgramNode2,](../../extensibility/debugger/reference/idebugprogramnode2.md) in genere creata da un DE o da una porta. I nodi di programma vengono aggiunti a una porta chiamando [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Quando un nodo di programma viene aggiunto a una porta, viene aggiunto al processo contenente il programma rappresentato da questo nodo di programma.
+- È rappresentato da [un'interfaccia IDebugProgramNode2,](../../extensibility/debugger/reference/idebugprogramnode2.md) in genere creata da un de o da una porta. I nodi del programma vengono aggiunti a una porta chiamando [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Quando un nodo di programma viene aggiunto a una porta, viene aggiunto al processo contenente il programma rappresentato da questo nodo di programma.
 
   A volte dopo l'avvio di una sessione di debug, a seconda dell'implementazione del pacchetto di debug, i nodi di programma vengono usati per creare programmi corrispondenti. Quando viene eseguita una query su un processo per i relativi programmi, i programmi vengono enumerati, uno per ogni nodo del programma.
 

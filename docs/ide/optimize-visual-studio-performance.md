@@ -15,12 +15,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c749ebce702af7474b1d3c39b4bb71b6cce47a73aa656915037aeaf4d2308a8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d8842764d81aa40c13865975e2d5dd28ae55eefa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412894"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062472"
 ---
 # <a name="optimize-visual-studio-performance"></a>Ottimizzare le prestazioni di Visual Studio
 
@@ -56,5 +56,5 @@ Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la f
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Suggerimenti e consigli sulle prestazioni](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Suggerimenti sulle prestazioni](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Blog su Visual Studio - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Caricamento più rapido delle soluzioni con Visual Studio 2017 Versione 15.6)

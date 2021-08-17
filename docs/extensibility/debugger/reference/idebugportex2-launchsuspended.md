@@ -1,6 +1,6 @@
 ---
 description: Avvia un file eseguibile.
-title: 'IDebugPortEx2:: LaunchSuspended | Microsoft Docs'
+title: IDebugPortEx2::LaunchSuspended | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fdffb6f87285e9f33d6abaf864b4d45345a304ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0c6db6cc7f67cc8cb4106215d33eb791c551a66b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072494"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030282"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Avvia un file eseguibile.
@@ -56,36 +57,36 @@ int LaunchSuspended(
 
 ## <a name="parameters"></a>Parametri
 `pszExe`\
-in Nome del file eseguibile da avviare. Può trattarsi di un percorso completo o relativo alla directory di lavoro specificata nel `pszDir` parametro.
+[in] Nome dell'eseguibile da avviare. Può trattarsi di un percorso completo o relativo alla directory di lavoro specificata nel `pszDir` parametro .
 
 `pszArgs`\
-in Argomenti da passare al file eseguibile. Può essere un valore null se non sono presenti argomenti.
+[in] Argomenti da passare all'eseguibile. Può essere un valore Null se non sono presenti argomenti.
 
 `pszDir`\
-in Nome della directory di lavoro utilizzata dal file eseguibile. Può essere un valore null se non è richiesta alcuna directory di lavoro.
+[in] Nome della directory di lavoro utilizzata dall'eseguibile. Può essere un valore Null se non è necessaria alcuna directory di lavoro.
 
 `bstrEnv`\
-in Blocco dell'ambiente di stringhe con terminazione null, seguito da un carattere di terminazione NULL aggiuntivo.
+[in] Blocco di ambiente di stringhe con terminazione Null, seguito da un carattere di terminazione NULL aggiuntivo.
 
 `hStdInput`\
-in Handle per un flusso di input alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
+[in] Handle a un flusso di input alternativo. Può essere 0 se il reindirizzamento non è necessario.
 
 `hStdOutput`\
-in Handle per un flusso di output alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
+[in] Handle per un flusso di output alternativo. Può essere 0 se il reindirizzamento non è necessario.
 
 `hStdError`\
-in Handle per un flusso di output degli errori alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
+[in] Handle a un flusso di output degli errori alternativo. Può essere 0 se il reindirizzamento non è necessario.
 
 `ppPortProcess`\
-out Restituisce un oggetto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il processo avviato.
+[out] Restituisce un [oggetto IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il processo avviato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo deve avviare il processo in modo che venga sospeso e non esegua alcun codice. Per riprendere il processo, viene chiamato il metodo [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) .
+ Questo metodo deve avviare il processo in modo che sia sospeso e non ese in esecuzione alcun codice. Il [metodo ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) viene chiamato per riprendere il processo.
 
- Un programma può essere avviato anche da un motore di debug. Per informazioni dettagliate, vedere [avvio di un programma](../../../extensibility/debugger/launching-a-program.md).
+ Un programma può essere avviato anche da un motore di debug. Per informazioni dettagliate, vedere [Avvio di un programma.](../../../extensibility/debugger/launching-a-program.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

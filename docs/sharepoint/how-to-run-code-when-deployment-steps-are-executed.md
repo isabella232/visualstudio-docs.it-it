@@ -15,32 +15,32 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 7d23b6d2bfdc3cbf619dcad4e96fc4a577bf8f90ec864292cb7aac2b3a2ebf26
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72e104e25bdb17433e76ee1f52bdf56570afdacf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352890"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047634"
 ---
-# <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Procedura: Eseguire codice quando vengono eseguiti i passaggi di distribuzione
-  Se si desidera eseguire attività aggiuntive per un passaggio di distribuzione in un progetto SharePoint, è possibile gestire gli eventi generati dagli elementi del progetto SharePoint prima e dopo che Visual Studio esegue ogni passaggio di distribuzione. Per altre informazioni, vedere [Estensione SharePoint creazione di pacchetti e distribuzione](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
+# <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Procedura: Eseguire il codice quando vengono eseguiti i passaggi di distribuzione
+  Se si desidera eseguire attività aggiuntive per un passaggio di distribuzione in un progetto SharePoint, è possibile gestire gli eventi generati dagli elementi del progetto SharePoint prima e dopo che Visual Studio esegue ogni passaggio di distribuzione. Per altre informazioni, vedere [Estensione SharePoint creazione di pacchetti e distribuzione.](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 
-### <a name="to-run-code-when-deployment-steps-are-executed"></a>Per eseguire il codice quando vengono eseguiti i passaggi di distribuzione
+### <a name="to-run-code-when-deployment-steps-are-executed"></a>Per eseguire il codice durante l'esecuzione dei passaggi di distribuzione
 
-1. Creare un'estensione di elemento di progetto, un'estensione di progetto o una definizione di un nuovo tipo di elemento di progetto. Per altre informazioni, vedere i seguenti argomenti:
+1. Creare un'estensione dell'elemento di progetto, un'estensione di progetto o una definizione di un nuovo tipo di elemento di progetto. Per altre informazioni, vedere i seguenti argomenti:
 
     - [Procedura: Creare un'estensione SharePoint elemento di progetto](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
     - [Procedura: Creare un'estensione SharePoint progetto](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-    - [Procedura: Definire un tipo di SharePoint di progetto](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+    - [Procedura: Definire un tipo SharePoint di elemento di progetto](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2. Nell'estensione gestire gli eventi e di un oggetto (in un'estensione di elemento di progetto o di progetto) o di un oggetto (in una definizione di <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> un nuovo tipo di elemento di <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> progetto).
+2. Nell'estensione gestire gli eventi e di un oggetto (in un'estensione dell'elemento di progetto o di un'estensione di progetto) o di un oggetto (in una definizione di un nuovo <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> tipo di elemento di <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> progetto).
 
 3. Nei gestori eventi usare i parametri <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs> e per ottenere informazioni sul passaggio di <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs> distribuzione. Ad esempio, è possibile determinare quale passaggio di distribuzione è in esecuzione e se la soluzione viene distribuita o ritirata.
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice seguente viene illustrato come gestire gli <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> eventi e <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> in un'estensione per l'elemento di progetto List Instance. Questa estensione scrive un messaggio aggiuntivo nella finestra **Output** quando Visual Studio ricicla il pool di applicazioni durante la distribuzione e la ritrazione della soluzione.
+ Nell'esempio di codice seguente viene illustrato come gestire gli <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> eventi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> e in un'estensione per l'elemento di progetto List Instance. Questa estensione scrive un messaggio aggiuntivo nella finestra **Output** quando Visual Studio ricicla il pool di applicazioni durante la distribuzione e il ritiro della soluzione.
 
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb" id="Snippet4":::
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs" id="Snippet4":::
@@ -53,9 +53,9 @@ ms.locfileid: "121352890"
 - System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Distribuzione dell'estensione
- Per distribuire l'estensione, creare un pacchetto di estensione (VSIX) per l'assembly e tutti gli altri file che [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] si desidera distribuire con l'estensione. Per altre informazioni, vedere [Deploy extensions for the SharePoint tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Per distribuire l'estensione, creare un pacchetto di estensione (VSIX) per l'assembly e qualsiasi altro file che [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] si vuole distribuire con l'estensione. Per altre informazioni, vedere [Deploy extensions for the SharePoint tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Estendere SharePoint creazione di pacchetti e distribuzione](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [Procedura dettagliata: Creare un passaggio di distribuzione personalizzato per SharePoint progetto](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
-- [Procedura: Eseguire codice quando un SharePoint viene distribuito o ritirato](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)
+- [Estendere la SharePoint creazione di pacchetti e la distribuzione](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [Procedura dettagliata: Creare un passaggio di distribuzione personalizzato per SharePoint progetti](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+- [Procedura: Eseguire codice quando un progetto SharePoint viene distribuito o ritirato](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)

@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Funzioni: dati di strumentazione | Microsoft Docs'
-description: Leggere le descrizioni delle colonne di dati di profilatura nella visualizzazione report funzioni, che elenca i dati di profilatura in base al nome della funzione.
+description: Leggere le descrizioni delle colonne di dati di profilatura nella visualizzazione report Funzioni, in cui sono elencati i dati di profilatura in base al nome della funzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ ms.assetid: 595d91c8-a42b-4644-85b8-39e8140a5dfe
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c5f5fd61abbdb251b3f46bb267debad2cecde72b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 574673dce3a1d11b0741625d56ccdca37360fd52
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942724"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033759"
 ---
 # <a name="functions-view---instrumentation-data"></a>Visualizzazione Funzioni: dati di strumentazione
 La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al nome della funzione.
@@ -28,12 +29,12 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome funzione**|Nome della funzione.|
+|**Nome della funzione**|Nome della funzione.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
@@ -85,7 +86,7 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)
 - [Visualizzazione Funzioni: campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Funzioni: strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

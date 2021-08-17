@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2107c9523b3d9d5c96db273e1f39a8feb687d59aa917752e2875d8be4a223bfe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5a6db057075b57f07a733af146915db92446a077
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414454"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062836"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Rimozione delle informazioni sul controllo del codice sorgente dai file con estensione proj e sln
 
@@ -26,7 +26,7 @@ Nella versione 1.2 dell'API plug-in del controllo del codice sorgente le informa
 
 ## <a name="version-12-changes"></a>Modifiche della versione 1.2
 
- Nei plug-in del controllo del codice sorgente basati sull'API plug-in del controllo del codice sorgente versione 1.1, le informazioni sul controllo del codice sorgente vengono archiviate nei file di progetto (con estensione proj) e di soluzione (sln). Il percorso del database delle informazioni sul controllo del codice sorgente viene specificato da AuxPath e il percorso specifico all'interno del database viene specificato da ProjName. Questo comportamento può causare problemi dopo operazioni di ramo, fork o copia perché ProjName non sarebbe in genere valido dopo una di queste operazioni.
+ Nei plug-in del controllo del codice sorgente basati sull'API plug-in del controllo del codice sorgente versione 1.1, le informazioni sul controllo del codice sorgente vengono archiviate nei file di progetto (con estensione proj) e di soluzione (sln). Il percorso del database delle informazioni sul controllo del codice sorgente viene specificato da AuxPath e il percorso specifico all'interno del database viene specificato da ProjName. Questo comportamento può causare problemi dopo operazioni di diramazione, fork o copia perché ProjName non sarebbe in genere valido dopo una di queste operazioni.
 
  Nell'API plug-in del controllo del codice sorgente versione 1.1, l'IDE usava ~file SAK per rilevare se un plug-in supportava MSSCCPRJ. Metodo SCC per l'archiviazione delle informazioni sul controllo del codice sorgente. L'API plug-in del controllo del codice sorgente versione 1.2 offre una nuova funzionalità per rilevare il supporto per MSSCCPRJ. SCC senza usare un file ~SAK. Per altre informazioni, vedere [Eliminazione di ~file SAK.](../../extensibility/internals/elimination-of-tilde-sak-files.md)
 

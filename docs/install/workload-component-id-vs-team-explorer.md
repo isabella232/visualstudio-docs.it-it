@@ -3,10 +3,10 @@ title: ID dei carichi di lavoro e dei componenti di Visual Studio Team Explorer
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio per fornire strumenti di test integrati per tester non specializzati
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 08/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 072711323bf46576bcfb6b0b2183e4d34aba269c
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: c4d9adad715394414b321ebe9408d843a5d638a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565270"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048272"
 ---
 # <a name="visual-studio-team-explorer-component-directory"></a>Elenco dei componenti di Visual Studio Team Explorer
 

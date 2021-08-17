@@ -1,5 +1,5 @@
 ---
-title: Comandi, gruppi e posizionamento predefiniti della barra degli strumenti | Microsoft Docs
+title: Posizionamento predefinito di comandi, gruppi e barre degli strumenti | Microsoft Docs
 description: Informazioni sui comandi IDE, i comandi del prodotto e i comandi dell'editor, visualizzati per impostazione Visual Studio'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86b58d33f07eaae8ef93ddb82a77516a6eb182c467d77cc5857336bab6756844
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e431441d4a0ea8a447554b96bc9bf9d5f290110a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359611"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063460"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posizionamento predefinito di comandi, gruppi e barre degli strumenti
 Per l'uniformità e la stabilità del prodotto, l'interfaccia utente visualizza determinati gruppi di comandi per impostazione predefinita e fornisce le definizioni [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per i comandi e i gruppi di comandi. I pacchetti VSPackage possono anche usare i comandi standard e i gruppi di comandi.

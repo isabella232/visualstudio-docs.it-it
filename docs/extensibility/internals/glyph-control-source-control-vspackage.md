@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a692473176843730f8cb9c1acfeb90ed164e4ad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 840ea85abfa995d9fc8df9e417ab13e78b25423e29d12684b3628760b5a61228
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124594"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337968"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Controllo glifo (VSPackage del controllo del codice sorgente)
 Parte della completa integrazione disponibile per i pacchetti VSPackage del controllo del codice sorgente è la possibilità di visualizzare i propri glifi per indicare lo stato degli elementi nel controllo del codice sorgente.

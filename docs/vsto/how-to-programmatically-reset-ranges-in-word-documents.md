@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Reimpostare gli intervalli nei documenti di Word a livello di codice'
-description: Informazioni su come usare le Visual Studio ridimensionare a livello di codice un intervallo esistente in un documento di Microsoft Word.
+title: 'Procedura: Reimpostare gli intervalli a livello di codice nei documenti di Word'
+description: Informazioni su come usare Visual Studio ridimensionare a livello di codice un intervallo esistente in un Microsoft Word documento.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ae3b8f92231b77d81c1ef68e0929ccd000653b14
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 5aba88ca36443d039487444204de6d437db8300d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824146"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032745"
 ---
-# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Procedura: Reimpostare gli intervalli nei documenti di Word a livello di codice
+# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Procedura: Reimpostare gli intervalli a livello di codice nei documenti di Word
   Usare il metodo <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> per ridimensionare un intervallo esistente in un documento di Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -56,11 +57,11 @@ ms.locfileid: "107824146"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet42":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet42":::
 
-## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO
+## <a name="vsto-add-in-example"></a>VSTO Esempio di componente aggiuntivo
 
-### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>Per reimpostare un intervallo esistente in un componente aggiuntivo VSTO
+### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>Per reimpostare un intervallo esistente in un VSTO componente aggiuntivo
 
-1. L'esempio seguente illustra l'esempio completo per un componente aggiuntivo VSTO. Per usare questo codice, eseguirlo dalla classe `ThisAddIn` nel progetto.
+1. L'esempio seguente illustra l'esempio completo per un VSTO componente aggiuntivo. Per usare questo codice, eseguirlo dalla classe `ThisAddIn` nel progetto.
 
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet42":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet42":::

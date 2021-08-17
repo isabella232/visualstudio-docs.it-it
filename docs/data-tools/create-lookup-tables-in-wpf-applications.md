@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c14b4fd8369db5df57579ea20b3ff9e17c898f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: b5c1ee368bca523be99074cd3df2ad20dadc99877ea6673fd4bba45ec961f99f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052941"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347415"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 
@@ -54,7 +54,7 @@ Si consideri, ad esempio, una tabella `Orders` di in un database di vendita. Ogn
 4. Espandere i nodi nella **finestra Origini dati** fino a visualizzare la tabella o l'oggetto padre e la tabella o l'oggetto figlio correlato.
 
     > [!NOTE]
-    > La tabella o l'oggetto figlio correlato è il nodo visualizzato come nodo figlio espandibile nella tabella o nell'oggetto padre.
+    > La tabella o l'oggetto figlio correlato è il nodo visualizzato come nodo figlio espandibile sotto la tabella o l'oggetto padre.
 
 5. Fare clic sul menu a discesa per il nodo figlio e selezionare **Dettagli**.
 

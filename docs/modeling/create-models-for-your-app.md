@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b9dd7f96304707f00d5301f33c5c390626009bf50b0108f0127a76dc3eb68bfc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d520665e2310b009cc717869edf43ff36f2e3b0e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271602"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048011"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 

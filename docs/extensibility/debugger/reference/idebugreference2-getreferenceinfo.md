@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26445a6599e7e4b74b81de44cf891f95542d9c564a25a40944ed87eee6a46a2e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 88dc8d4bdbc0e354ccc327aa0c5b6968091c19c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338553"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029762"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-Ottiene la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) che descrive un riferimento. Riservato per utilizzi futuri.
+Ottiene la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura che descrive un riferimento. Riservato per utilizzi futuri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,13 +53,13 @@ int GetReferenceInfo (
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag [dell'enumerazione DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che determinano i campi da completare nella [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura .
+[in] Combinazione di flag [dell'enumerazione DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che determinano i campi da determinare nella [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura .
 
 `nRadix`\
 [in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
 
 `dwTimeout`\
-[in] Tempo massimo di attesa, in millisecondi, prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
+[in] Tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere a tempo indeterminato.
 
 `rgpArgs`\
 [in] Matrice di [oggetti IDebugReference2.](../../../extensibility/debugger/reference/idebugreference2.md) Riservato per un uso futuro; impostato su un valore Null.

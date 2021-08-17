@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a3e7af8dda3c18395e5afdb15419a29728a910
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 93c4ec0d67609db905bc3e389920a772ebe2e52c1c950792029aaf82c30c3a7c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128831"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121344543"
 ---
 # <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
 Recupera le dimensioni del stack frame in byte.

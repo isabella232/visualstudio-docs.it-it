@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ccc16c6367d6e177d523e0480479d447cfc940937593a2b04829d03d94f758
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a7d1fac23124eb0807cb98429b38d7907d787f7d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443971"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033941"
 ---
 # <a name="visualize-code"></a>Visualizzare il codice
 
@@ -33,7 +33,7 @@ ms.locfileid: "121443971"
 
 Questi strumenti facilitano anche la comunicazione con le persone coinvolte nel progetto.
 
-Per vedere quali edizioni di Visual Studio supportano ogni funzionalità, vedere Supporto [dell'edizione](../modeling/analyze-and-model-your-architecture.md#VersionSupport) per gli strumenti di architettura e modellazione
+Per vedere quali edizioni di Visual Studio supportano ogni funzionalità, vedere Supporto dell'edizione per gli strumenti di [architettura e modellazione](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 ## <a name="what-do-you-want-to-do"></a>Per saperne di più
 

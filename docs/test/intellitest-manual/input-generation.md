@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1ae12d6b7465e7b0542c987aae9fb849f232fce3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16d0c045d9f0085a462e3d7f7f55f8af6326cde6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916535"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033044"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generazione di input con l'esecuzione simbolica dinamica
 
@@ -36,7 +37,7 @@ Le fasi del ciclo sono:
 
 Il [risolutore di vincoli](#constraint-solver) di IntelliTest può gestire valori di tutti i tipi presenti nelle applicazioni .NET:
 
-* [Numeri interi](#integers-and-floats) e [float](#integers-and-floats)
+* [Numeri interi](#integers-and-floats) [e float](#integers-and-floats)
 * [Oggetti](#objects)
 * [Struct](#structs)
 * [Matrici](#arrays-and-strings) e [stringhe](#arrays-and-strings)
@@ -79,7 +80,7 @@ Se tutti i campi della classe sono [visible](#visibility), IntelliTest può impo
 
 Se il tipo non è visibile o i campi non sono [visible](#visibility), IntelliTest richiede un apporto esterno per creare oggetti e impostare stati interessanti al fine di ottenere il massimo code coverage. Sebbene IntelliTest possa usare la reflection per creare e inizializzare istanze in modo arbitrario, questo approccio non è solitamente consigliabile poiché può impostare l'oggetto in uno stato che non può mai verificarsi durante la normale esecuzione del programma. IntelliTest si basa invece sui suggerimenti specificati dall'utente.
 
-## <a name="visibility"></a>Visibilità
+## <a name="visibility"></a>Visibility
 
 .NET offre un modello di visibilità elaborato: i tipi, i metodi, i campi e gli altri membri possono essere **private**, **public**, **internal** e altro ancora.
 
@@ -135,6 +136,6 @@ La classe statica [PexChoose](static-helper-classes.md#pexchoose) può essere us
 
 Pubblicare idee e richieste di funzionalità nella [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8).
 
-## <a name="further-reading"></a>Ulteriori informazioni
+## <a name="further-reading"></a>Altre informazioni
 
 * [Come funziona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

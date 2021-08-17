@@ -1,7 +1,7 @@
 ---
 title: Elemento Assembly (estensione della Creazione guidata modelli di Visual Studio)
 titleSuffix: ''
-description: Vengono fornite informazioni sull'elemento assembly e su come viene specificato il nome o il nome sicuro dell'assembly che implementa l'interfaccia IWizard.
+description: Informazioni sull'elemento Assembly e su come specifica il nome o il nome sicuro dell'assembly che implementa l'interfaccia IWizard.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -17,15 +17,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1be9c72c01746b716b0202843b86ed2d5d52d44b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1e469eb19e9b1a48ca9ef0cf5348360dc0171d01f9315515665b176cbb038fa4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097487"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417988"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento assembly (estensione della creazione guidata modelli di Visual Studio)
-Specifica il nome o il nome sicuro dell'assembly che implementa l' `IWizard` interfaccia.
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (estensione Visual Studio modello)
+Specifica il nome o il nome sicuro dell'assembly che implementa `IWizard` l'interfaccia .
 
  \<VSTemplate>
 \<WizardExtension>
@@ -41,27 +41,27 @@ Specifica il nome o il nome sicuro dell'assembly che implementa l' `IWizard` int
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per personalizzare la creazione guidata modello.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per la personalizzazione della procedura guidata del modello.|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Questo testo specifica l'assembly che implementa l' `IWizard` interfaccia. Il nome dell'assembly deve essere specificato come nome di assembly completo. Ad esempio: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
+ Questo testo specifica l'assembly che implementa `IWizard` l'interfaccia . Questo nome di assembly deve essere specificato come nome completo dell'assembly. Ad esempio: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
 
 ## <a name="remarks"></a>Osservazioni
  `Assembly` è un elemento figlio obbligatorio di `WizardExtension`.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.
+ L'esempio seguente illustra i metadati per il modello di progetto standard per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un Windows applizione.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -93,6 +93,6 @@ Specifica il nome o il nome sicuro dell'assembly che implementa l' `IWizard` int
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-- [Procedura: utilizzare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)
+- [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

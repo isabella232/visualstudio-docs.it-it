@@ -1,6 +1,6 @@
 ---
 title: Comando Imposta radice
-description: Informazioni sul comando Imposta radice e sul modo in cui imposta o restituisce la base numerica utilizzata per visualizzare i valori integer.
+description: Informazioni sul comando Set Radix e su come imposta o restituisce la base numerica usata per visualizzare valori interi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 50d0097debbd7e91906202b85e8e9e6dab36a27d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f693391cea9ccb17a5e5427d7508424c05c3d457
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957686"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048739"
 ---
 # <a name="set-radix-command"></a>Comando Imposta radice
 Imposta o restituisce la base numerica usata per visualizzare i valori integer.
@@ -45,7 +46,7 @@ Nell'esempio che segue, l'ambiente viene impostato per la visualizzazione dei va
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

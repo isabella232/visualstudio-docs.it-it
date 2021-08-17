@@ -3,19 +3,19 @@ title: ID dei carichi di lavoro e dei componenti di Visual Studio Team Explorer 
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio per fornire strumenti di test integrati per tester non specializzati
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.date: 05/24/2021
+ms.date: 08/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: a7de745bc5396a2289095c76fbd5c92c2952cf73
-ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
+ms.openlocfilehash: c4052ac217ecbe82674117dc3f258d0d1cd9fd8c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110449859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048271"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Editor principale di Visual Studio (incluso in Visual Studio Team Explorer 2019)
 

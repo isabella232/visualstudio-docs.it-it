@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 765ff47746ab150f8d2f8946bb13a42d30aada4fff75a6e25bbec134f97dc70d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 568e7ae9b0eb5521c9be931bbe96eb3b070b9998
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293027"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079909"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 Ottiene il punto di interruzione in sospeso associato.
@@ -49,7 +49,7 @@ int GetPendingBreakpoint(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CBreakpointSetDebugEventBase** che espone l'interfaccia [IDebugBreakpointBoundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CBreakpointSetDebugEventBase** che espone [l'interfaccia IDebugBreakpointBoundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(

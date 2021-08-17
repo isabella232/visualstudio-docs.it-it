@@ -1,5 +1,5 @@
 ---
-description: Descrive la posizione di un punto di interruzione associato direttamente a un indirizzo nel programma di cui è in corso il debug.
+description: Descrive la posizione di un punto di interruzione associato direttamente a un indirizzo nel programma in fase di debug.
 title: BP_LOCATION_CODE_CONTEXT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,19 +11,20 @@ ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: a792f19162cdcf41f86d52782dad31c21062cd55
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 83d816d540ead51260f731a044eb6d764eafb79d3816aa48ba454512ba4e9e27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078214"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403274"
 ---
 # <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
-Descrive la posizione di un punto di interruzione associato direttamente a un indirizzo nel programma di cui è in corso il debug.
+Descrive la posizione di un punto di interruzione associato direttamente a un indirizzo nel programma in fase di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,12 +39,12 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del punto di interruzione nel codice.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.
+Questa struttura è un membro della [struttura](../../../extensibility/debugger/reference/bp-location.md) BP_LOCATION come parte di un'unione.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,6 +1,6 @@
 ---
 title: Creare un oggetto DataTable nel Progettazione DataSet
-description: In questa procedura dettagliata viene creato un oggetto DataTable (senza TableAdapter) usando il Progettazione DataSet. Creare una nuova Windows'applicazione Forms e aggiungerne uno nuovo.
+description: In questa procedura dettagliata viene creato un oggetto DataTable (senza tableAdapter) usando il Progettazione DataSet. Creare una nuova Windows'applicazione Forms e aggiungerne uno nuovo.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.locfileid: "121346570"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procedura dettagliata: Creare un oggetto DataTable nel Progettazione DataSet
 
-In questa procedura dettagliata viene illustrato come creare <xref:System.Data.DataTable> un oggetto (senza un TableAdapter) **usando** Progettazione DataSet . Per informazioni sulla creazione di tabelle di dati che includono TableAdapter, vedere [Creare e configurare oggetti TableAdapter.](../data-tools/create-and-configure-tableadapters.md)
+Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable> oggetto (senza un TableAdapter) usando il **Progettazione DataSet**. Per informazioni sulla creazione di tabelle di dati che includono TableAdapter, vedere [Creare e configurare oggetti TableAdapter.](../data-tools/create-and-configure-tableadapters.md)
 
 ## <a name="create-a-new-windows-forms-application"></a>Creare una nuova applicazione Windows Forms Application
 

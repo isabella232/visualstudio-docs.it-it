@@ -10,20 +10,21 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c45d6cf0f271683c3c708bd71ef46377a5c5ca
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 25cea6a321fe7cf7365f179fd699553bd32b23e3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094581"
 ---
 # <a name="properties-window-buttons"></a>Pulsanti della finestra Proprietà
-A seconda del linguaggio di sviluppo e del tipo di prodotto, alcuni pulsanti vengono visualizzati per impostazione predefinita sulla barra degli strumenti della **finestra** Proprietà. In tutti i casi, vengono visualizzati i pulsanti **Categorized**, **Alphabetized**, **Properties** e **Property Pages.** In Visual C# e Visual Basic viene **visualizzato anche** il pulsante Eventi. In alcuni Visual C++ vengono visualizzati i **messaggi di VC++** e i pulsanti Override di **VC.** Per altri tipi di progetto possono essere visualizzati pulsanti aggiuntivi. Per altre informazioni sui pulsanti nella **finestra** Proprietà, vedere [Finestra Proprietà.](../../ide/reference/properties-window.md)
+A seconda del linguaggio di sviluppo e del tipo di prodotto, alcuni pulsanti vengono visualizzati per impostazione predefinita sulla barra degli strumenti della **finestra** Proprietà. In tutti i casi, vengono visualizzati i pulsanti **Categorized**, **Alphabetized**, **Properties** e **Property Pages.** In Visual C# e Visual Basic viene **visualizzato anche il** pulsante Eventi. In alcuni Visual C++ vengono visualizzati **i VC++ e** le sostituzioni di **VC.** Per altri tipi di progetto possono essere visualizzati pulsanti aggiuntivi. Per altre informazioni sui pulsanti nella **finestra** Proprietà, vedere [Finestra Proprietà.](../../ide/reference/properties-window.md)
 
 ## <a name="implementation-of-properties-window-buttons"></a>Implementazione dei pulsanti della finestra Proprietà
- Quando si fa clic sul **pulsante Categorized** Visual Studio chiama l'interfaccia sull'oggetto con lo stato attivo per ordinare le proprietà <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> in base alla categoria. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> viene implementato `IDispatch` nell'oggetto presentato alla **finestra** Proprietà.
+ Quando si fa clic sul **pulsante Categorizzato,** Visual Studio chiama l'interfaccia sull'oggetto con lo stato attivo per ordinare <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> le proprietà in base alla categoria. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> viene implementato `IDispatch` nell'oggetto presentato alla **finestra** Proprietà.
 
  Sono presenti 11 categorie di proprietà predefinite, che hanno valori negativi. È possibile definire categorie personalizzate, ma è consigliabile assegnare loro valori positivi per distinguerle dalle categorie predefinite.
 
@@ -38,5 +39,5 @@ A seconda del linguaggio di sviluppo e del tipo di prodotto, alcuni pulsanti ven
 > [!NOTE]
 > Non è possibile aggiungere pulsanti della barra **degli strumenti alla** finestra Proprietà usando codice non gestito. Per aggiungere un pulsante della barra degli strumenti, è necessario creare un oggetto gestito che deriva da <xref:System.Windows.Forms.Design.PropertyTab> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensione delle proprietà](../../extensibility/internals/extending-properties.md)

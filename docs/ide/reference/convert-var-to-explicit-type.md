@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01eb6dbe8308520235e03f5c10662fdea7933a0912c708b9030b4b7a28c9bb15
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de79490c0dd343cf1bd0e9b120def07aa548799a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121429973"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048882"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refactoring per sostituire var con un tipo esplicito
 
@@ -41,7 +41,7 @@ Tuttavia, [var](/dotnet/csharp/language-reference/keywords/var) deve essere usat
 
 1. Posizionare il cursore sulla parola chiave `var`.
 
-1. Premere  + **CTRL.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
+1. Premere  + **CTRL+ .** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
 
    ![Menu delle azioni rapide Usare un tipo esplicito](media/use-explicit-type.png)
 

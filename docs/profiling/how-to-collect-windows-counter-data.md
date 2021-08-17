@@ -18,12 +18,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 965068fd07bd43029c9f6c1e9e74ac5c97f2259bdac59a1496b24527da9b2f04
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bf19e1ac15867069aeec19151cd00258564a3865
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368396"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033512"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Procedura: Raccogliere i dati dei contatori Windows
 

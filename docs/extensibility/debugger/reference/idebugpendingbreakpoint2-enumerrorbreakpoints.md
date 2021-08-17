@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e7ff4b581f00e344437bc90d8c3998d004bb4fe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ff9e1bedee435d3b4cd56311886b9748fcfdff5dc4e3744622976d7e4785e489
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122126882"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121339190"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 Ottiene un elenco di tutti i punti di interruzione di errore risultanti da questo punto di interruzione in sospeso.
@@ -49,13 +49,13 @@ int EnumErrorBreakpoints(
 [in] Combinazione di valori [dell'enumerazione BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) che seleziona il tipo di errori da enumerare.
 
 `ppEnum`\
-[out] Restituisce un [oggetto IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) che contiene un elenco di [oggetti IDebugErrorBreakpoint2.](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
+[out] Restituisce un [oggetto IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) che contiene un elenco [di oggetti IDebugErrorBreakpoint2.](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto semplice che `CPendingBreakpoint` espone [l'interfaccia IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CPendingBreakpoint` semplice che espone [l'interfaccia IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(

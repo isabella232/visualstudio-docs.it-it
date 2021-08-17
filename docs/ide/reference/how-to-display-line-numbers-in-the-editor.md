@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: dd91c105f43eabeef48d7e29c2a0f67b4b3a9513
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: db27e2ab1b3abdd67abb8330b45dd872dc35558052e8fb7741c763ee9f8ec352
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056303"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429362"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: Visualizzare i numeri di riga nell'editor
 
@@ -29,7 +29,7 @@ ms.locfileid: "122056303"
 
 ## <a name="display-line-numbers-in-code"></a>Visualizzare i numeri di riga nel codice
 
-1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti**. Espandere il nodo **Editor di testo** e selezionare il linguaggio in uso o **Tutti i linguaggi** per attivare i numeri di riga in tutti i linguaggi. (In alternativa, digitare **numero di riga** nella casella di ricerca e selezionare **Abilita o disabilita numeri di riga** nei risultati.)
+1. Sulla barra dei menu scegliere **Strumenti**  >  **Opzioni**. Espandere il nodo **Editor di testo** e selezionare il linguaggio in uso o **Tutti i linguaggi** per attivare i numeri di riga in tutti i linguaggi. (In alternativa, digitare **numero di riga** nella casella di ricerca e selezionare **Abilita o disabilita numeri di riga** nei risultati.)
 
 2. Selezionare la casella di controllo **Numeri di riga**.
 

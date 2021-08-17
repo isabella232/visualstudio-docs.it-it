@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 685e00f32343edc64f1ff72deffd38ea15d7aa7502fe7d57b793439d3128f8b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dacf3ffff56580e445f2eeda851d30082ba90f45
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121374961"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049142"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Procedura dettagliata: Visualizzare le parentesi graffe corrispondenti
 Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza delle parentesi graffe definendo le parentesi graffe di cui si vuole trovare la corrispondenza e aggiungendo un tag marcatore di testo alle parentesi graffe corrispondenti quando il punto di inserimento si trova su una delle parentesi graffe. È possibile definire parentesi graffe nel contesto di un linguaggio, definire l'estensione e il tipo di contenuto del nome file e applicare i tag solo a tale tipo o applicare i tag a un tipo di contenuto esistente, ad esempio "text". La procedura dettagliata seguente illustra come applicare tag corrispondenti alle parentesi graffe al tipo di contenuto "text".
@@ -73,12 +73,12 @@ Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza d
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs" id="Snippet6":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb" id="Snippet6":::
 
-8. Implementare il metodo per trovare la corrispondenza con le parentesi graffe quando il carattere corrente è una parentesi graffa aperta o quando il carattere precedente è una parentesi graffa chiusa, come <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> in Visual Studio. Quando viene trovata la corrispondenza, questo metodo crea un'istanza di due tag, uno per la parentesi graffa aperta e uno per la parentesi graffa di chiusura.
+8. Implementare il metodo in modo che corrisponda alle parentesi graffe quando il carattere corrente è una parentesi graffa aperta o quando il carattere precedente è una parentesi graffa chiusa, come <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> in Visual Studio. Quando viene trovata la corrispondenza, questo metodo crea un'istanza di due tag, uno per la parentesi graffa aperta e uno per la parentesi graffa di chiusura.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs" id="Snippet7":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb" id="Snippet7":::
 
-9. I metodi privati seguenti trovano la parentesi graffa corrispondente a qualsiasi livello di annidamento. Il primo metodo trova il carattere di chiusura corrispondente al carattere aperto:
+9. I metodi privati seguenti trovano la parentesi graffa corrispondente a qualsiasi livello di annidamento. Il primo metodo trova il carattere di chiusura che corrisponde al carattere aperto:
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs" id="Snippet8":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb" id="Snippet8":::

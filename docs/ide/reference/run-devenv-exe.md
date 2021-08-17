@@ -1,6 +1,6 @@
 ---
 title: -Run (devenv.exe)
-description: Informazioni su come usare l'opzione Esegui la riga di comando devenv per compilare ed eseguire il progetto o la soluzione specificata.
+description: Informazioni su come usare l'opzione della riga di comando Devenv per compilare ed eseguire il progetto o la soluzione specificata.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -15,14 +15,15 @@ ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 34e9f50f864f8f2908a3822befda0652df6a3340
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9dabe5c8569d18cf76f8c5c7f9d8ec16c7d1859f7b3609b72de4b78dd0854e6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957920"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429160"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -36,7 +37,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 ## <a name="arguments"></a>Argomenti
 
-- *NomeSoluzione*
+- *Solutionname*
 
   Percorso completo e nome del file di soluzione.
 
@@ -44,7 +45,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
   Percorso completo e nome del file di progetto.
 
-- `/Out`*OutputFileName*
+- `/Out`*OutputFilename*
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 

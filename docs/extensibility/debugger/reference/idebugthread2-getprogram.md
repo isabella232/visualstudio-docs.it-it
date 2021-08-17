@@ -1,6 +1,6 @@
 ---
 description: Ottiene il programma in cui è in esecuzione un thread.
-title: Interfaccia IDebugThread2::GetProgram | Microsoft Docs
+title: IDebugThread2::GetProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a1756d4278cd2d4886f4d95c7f56134a9520a93fec943b4358fe0dee44340f9d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 91016a0fa3613706449ec602fbe310825a07e9b8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402077"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095868"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 Ottiene il programma in cui è in esecuzione un thread.

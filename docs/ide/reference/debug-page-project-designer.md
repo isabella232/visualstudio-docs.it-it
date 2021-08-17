@@ -1,6 +1,6 @@
 ---
 title: Pagina Debug, Progettazione progetti
-description: Usare la pagina debug di progettazione progetti per impostare le proprietà di debug in un progetto Visual Basic o C#. Vedere questo articolo per le descrizioni delle impostazioni.
+description: Usare la pagina Debug di Progettazione Project per impostare le proprietà di debug in un progetto Visual Basic o C#. Vedere questo articolo per le descrizioni delle impostazioni.
 ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-debug
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 643fd4c68be4059b2c5ca558d777c34bb4add500
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5a79f12eda3d166b2154e71faefcc60e2457049ada19b5b3cd0d558e6c40e012
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894634"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429511"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 
 Usare la pagina **Debug** di **Creazione progetti** per impostare le proprietà per il comportamento di debug in un progetto Visual Basic o C#.
 
-Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora soluzioni**. Scegliere **\<ProjectName> Proprietà** dal menu **progetto** . Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Debug**.
+Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora soluzioni**. Nel menu **Project** scegliere **\<ProjectName> Proprietà**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Debug**.
 
 > [!NOTE]
 > Questo argomento non si applica alle app UWP. Per le app UWP, vedere [Avviare una sessione di debug (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
@@ -87,7 +87,7 @@ Selezionare o deselezionare questa casella di controllo per abilitare o disabili
 ## <a name="see-also"></a>Vedi anche
 
 - [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
-- [Impostazioni di progetto per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Impostazioni di progetto per una configurazione di debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Proteggere le app ClickOnce](../../deployment/securing-clickonce-applications.md)
+- [Project Impostazioni per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Project Impostazioni per una configurazione Visual Basic debug](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Proteggere ClickOnce app](../../deployment/securing-clickonce-applications.md)
 - [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)

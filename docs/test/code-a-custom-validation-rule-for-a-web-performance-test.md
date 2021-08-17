@@ -18,12 +18,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: fce100dff65ce4a900affd270cc9779e5e208feadb382763192a53a2b83d4927
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5eb34377ab17bec9a1e8bb51e213eb24b7415e48
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395434"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026902"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificare una regola di convalida personalizzata per un test delle prestazioni Web
 
@@ -51,7 +51,7 @@ ms.locfileid: "121395434"
 
 6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di convalida personalizzata.
 
-7. Nella finestra test Project aprire un test delle prestazioni **Web** nel Editor test prestazioni Web .
+7. Nella finestra test Project aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
 
 8. Per aggiungere la regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse su una richiesta e **scegliere Aggiungi regola di convalida**.
 

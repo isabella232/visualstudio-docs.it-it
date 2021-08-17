@@ -14,25 +14,25 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8b8da73935d4d170416c2717f5d64ebfe949640d5f9d6b4b2bc4bf113438966
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a504db1716eaad4fbf66c34985067310fada1fa1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262945"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080208"
 ---
 # <a name="ports"></a>Porte
 Nell'architettura del debugger, una *porta*:
 
-- Contenitore per un set di processi in esecuzione in un server. Ad esempio, una porta potrebbe rappresentare una connessione a un dispositivo basato su Windows CE tramite un cavo seriale o a un computer non DCOM in rete. Una porta speciale, denominata porta locale, contiene tutti i processi in esecuzione nel computer locale.
+- Contenitore per un set di processi in esecuzione in un server. Ad esempio, una porta può rappresentare una connessione a un dispositivo basato su Windows CE tramite un cavo seriale o a un computer non DCOM in rete. Una porta speciale, denominata porta locale, contiene tutti i processi in esecuzione nel computer locale.
 
 - Può identificarsi in base al nome o all'identificatore.
 
 - Può enumerare tutti i processi in esecuzione sulla porta e avviare e terminare questi processi.
 
-- È rappresentato da [un'interfaccia IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) creata passando un [argomento IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) ad [AddPort.](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+- È rappresentato da [un'interfaccia IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) creata passando un [argomento IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) ad [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).
 
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce una porta predefinita che gestisce tutti Windows processi basati su , sia nativi che gestiti. È necessario configurare una porta personalizzata per le connessioni con dispositivi esterni che non Windows basati su dispositivi. Per fornire tali porte personalizzate, è necessario configurare anche un fornitore di porte personalizzato.
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce una porta predefinita che gestisce tutti i processi Windows, sia nativi che gestiti. È necessario configurare una porta personalizzata per le connessioni con dispositivi esterni che non Windows basati su dispositivi. Per fornire tali porte personalizzate, è necessario configurare anche un fornitore di porte personalizzato.
 
 ## <a name="see-also"></a>Vedi anche
 - [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)

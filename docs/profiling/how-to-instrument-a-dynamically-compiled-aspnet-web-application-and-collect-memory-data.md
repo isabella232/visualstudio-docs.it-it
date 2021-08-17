@@ -1,6 +1,6 @@
 ---
-title: Riga di comando del profiler - Instrumentare l'app ASP.NET dinamica, ottenere i dati di memoria
-description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura riga di comando per raccogliere dati dettagliati sulle attività di memoria per un'applicazione ASP.NET dinamica.
+title: "Riga di comando del profiler : instrumentare l'app ASP.NET dinamica, ottenere i dati di memoria"
+description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura da riga di comando per raccogliere dati dettagliati sull'attività di memoria per un'applicazione ASP.NET dinamica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 711f30b9dd93af7da03319a837e7990c437da6e5fd9efd5c0506cab1be247a3c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 879b77bdc782c17f3969797890c1e0ce24d0d470
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355100"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033538"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler
 Questo argomento descrive come usare gli strumenti della riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati dettagliati dell'allocazione di memoria .NET e della durata degli oggetti per un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico tramite il metodo di profilatura della strumentazione.
@@ -63,7 +63,7 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
    - L'opzione **/start:trace** inizializza il profiler.
 
-   - **L'opzione /output:** `OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e la posizione dei dati di profilatura (.*vsp*) file.
+   - **L'opzione /output:** `OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso dei dati di profilatura (.*vsp*) file.
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:trace**.
 
@@ -72,7 +72,7 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
    | Opzione | Descrizione |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio facoltativo e il nome utente dell'account proprietario del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il nome è elencato **nella colonna Nome** utente della **scheda** Processi di Windows Gestione attività. |
+   | [/user](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio facoltativo e il nome utente dell'account proprietario del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il nome è elencato nella **colonna Nome** utente della **scheda** Processi Windows Gestione attività. |
    | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID sessione è elencato nella **colonna ID** sessione della **scheda** Processi Windows Gestione attività. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Avvia il profiler con la raccolta dei dati sospesa. Usare [/globalon](../profiling/globalon-and-globaloff.md) per riprendere la profilatura. |
    | [/counter](../profiling/counter.md) **:**`Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in Config`Config`. Le informazioni del contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
@@ -131,4 +131,4 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 ## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+- [Viste dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

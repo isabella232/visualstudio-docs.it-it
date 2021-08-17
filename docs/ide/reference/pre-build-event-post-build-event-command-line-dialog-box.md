@@ -1,6 +1,6 @@
 ---
-title: Finestra di dialogo riga di comando eventi pre-compilazione-post-compilazione
-description: Informazioni su come è possibile pre-o post-compilazione di eventi direttamente nella casella di modifica o su come è possibile selezionare le macro pre-compilazione e post-compilazione da un elenco di macro disponibili.
+title: Finestra di dialogo della riga di comando eventi pre-compilazione post-compilazione
+description: Informazioni su come è possibile pre-compilazione o post-compilazione eventi direttamente nella casella di modifica o come è possibile selezionare macro di pre-compilazione e post-compilazione da un elenco di macro disponibili.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -36,12 +36,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f8afa9dc9946644b935c34b98616d96a5fa875
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1cb0081c084549692b335edd414caa1eabba1225137030ecea04a1030004a468
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918316"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334302"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 
@@ -101,5 +101,5 @@ Inserisce nella casella di modifica della riga di comando la macro selezionata n
 
 - [Specifica di eventi di compilazione personalizzati in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Pagina Eventi di compilazione, Progettazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Procedura: specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Procedura: Specificare eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Procedura: Specificare eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)

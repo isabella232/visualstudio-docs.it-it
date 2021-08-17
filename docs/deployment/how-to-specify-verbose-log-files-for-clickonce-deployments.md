@@ -1,6 +1,6 @@
 ---
-title: Specificare i file di log dettagliati (distribuzioni ClickOnce)
-description: Informazioni su come specificare il livello di dettaglio per i log attività gestiti da ClickOnce per l'installazione, l'inizializzazione, l'aggiornamento e la disinstallazione di una distribuzione ClickOnce.
+title: Specificare i file di log dettagliati (ClickOnce distribuzione)
+description: Informazioni su come specificare il livello di dettaglio per i log attività ClickOnce per l'installazione, l'inizializzazione, l'aggiornamento e la disinstallazione di una ClickOnce distribuzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,24 +15,25 @@ ms.assetid: 0807a28d-2e40-4a51-ab10-308d808ded6b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 7adb711c77f4bb2dead3190d40065e148760b034
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b7760aa8f7916d14b7d3f5ee03978f1e2d2193a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080481"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procedura: Specificare i file di log dettagliati per le distribuzioni ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gestisce i file di log attività per tutte le distribuzioni. Vengono registrati i dettagli del documento riguardanti l'installazione, l'inizializzazione, l'aggiornamento e la disinstallazione di una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per aumentare il dettaglio che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scrive in questi file di log, usare l'editor del registro di sistema (*regedit.exe*) per specificare il livello di dettaglio.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gestisce i file di log attività per tutte le distribuzioni. Questi log documentano i dettagli relativi all'installazione, all'inizializzazione, all'aggiornamento e alla disinstallazione di una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per aumentare i dettagli di scrittura in questi file di log, usare l'editor del Registro di sistema (regedit.exe) per specificare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] il livello di dettaglio.**
 
 > [!CAUTION]
-> Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. L'uso dell'editor del Registro di sistema è a rischio e pericolo dell'utente.
+> Se si usa l'editor del Registro di sistema in modo errato, potrebbero verificarsi gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. L'uso dell'editor del Registro di sistema è a rischio e pericolo dell'utente.
 
- Nella procedura seguente viene descritto come specificare il livello di dettaglio per i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file di log per l'utente corrente. Per ridurre il livello di dettaglio, rimuovere il valore del registro di sistema.
+ Nella procedura seguente viene descritto come specificare il livello di dettaglio per i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file di log per l'utente corrente. Per ridurre il livello di dettaglio, rimuovere questo valore del Registro di sistema.
 
-### <a name="to-specify-verbose-log-files"></a>Per specificare i file di log dettagliati
+### <a name="to-specify-verbose-log-files"></a>Per specificare file di log dettagliati
 
 1. Aprire *Regedit.exe*.
 

@@ -1,6 +1,6 @@
 ---
 description: Ottiene il nome del processo che ospita il programma.
-title: 'IDebugProgramNode2:: GetHostName | Microsoft Docs'
+title: IDebugProgramNode2::GetHostName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9e8958adf8072715ccc3f51ceb28ef44904d768
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a1ee06aa58004dd08ec70f42f68c0267a9f567dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087301"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029944"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Ottiene il nome del processo che ospita il programma.
@@ -44,16 +45,16 @@ int GetHostName (
 
 ## <a name="parameters"></a>Parametri
 `dwHostNameType`\
-in Valore dell'enumerazione [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) che specifica il tipo di nome da restituire.
+[in] Valore [dell'enumerazione GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) che specifica il tipo di nome da restituire.
 
 `pbstrHostName`\
-out Restituisce il nome del processo di hosting.
+[out] Restituisce il nome del processo di hosting.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CProgram` oggetto semplice che espone l'interfaccia [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) . Questo esempio ignora il `dwHostNameType` parametro e restituisce solo il nome del programma come tratto dal nome di base del percorso del file del modulo.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CProgram` semplice che espone [l'interfaccia IDebugProgramNode2.](../../../extensibility/debugger/reference/idebugprogramnode2.md) In questo esempio il parametro viene ignorato e viene restituito solo il nome del programma derivato dal nome di base del percorso `dwHostNameType` del file del modulo.
 
 ```cpp
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {

@@ -1,5 +1,5 @@
 ---
-description: Recupera l'stack frame contenente l'indirizzo virtuale specificato.
+description: Recupera l'stack frame che contiene l'indirizzo virtuale specificato.
 title: IDiaStackWalkHelper::frameForVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f1162dc9c305138c84aa5c6d7981a13f41f7e00d903fe65e0be758bb561f95
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0043500ee5ea1222c6d316a3266c060c8d5f8edc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391712"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081317"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-Recupera l'stack frame contenente l'indirizzo virtuale specificato.
+Recupera l'stack frame che contiene l'indirizzo virtuale specificato.
 
 ## <a name="syntax"></a>Sintassi
 

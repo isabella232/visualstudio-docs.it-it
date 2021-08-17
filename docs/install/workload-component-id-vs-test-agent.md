@@ -3,10 +3,10 @@ title: ID dei carichi di lavoro e dei componenti di Visual Studio Test Agent
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio per eseguire test automatizzati e test di carico da postazione remota
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 08/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: b2251ef7efc670908c2d4a608f885fb2365dbc65
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: e7810fb7642f3102a956f2998680fc09ae5aba4d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565219"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048220"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Elenco dei componenti di Visual Studio Test Agent
 

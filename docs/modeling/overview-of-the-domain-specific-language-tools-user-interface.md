@@ -10,18 +10,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe826b373ba2ee468bfe511392eb5564234dc68
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 7e5eadf964f8809c10a4a7b6654397b7ebb9b4f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390958"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047738"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
-Quando si apre per la prima volta una soluzione Domain-Specific Language Tools (strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
+Quando si apre per la prima volta una soluzione Domain-Specific Language Tools (Strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
 
  ![Progettazione DSL](../modeling/media/dsl_designer.png)
 
