@@ -1,6 +1,6 @@
 ---
 title: Testare un'app UWP con un test codificato dell'interfaccia utente
-description: Informazioni su come creare un test codificato dell'interfaccia utente per un'app UWP (Universal Windows Platform) creando un'app UWP per testare e creare un test codificato dell'interfaccia utente.
+description: Informazioni su come creare un test codificato dell'interfaccia utente per un'app universal Windows Platform creando un'app UWP per testare e creare un test codificato dell'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 7ba7ad4bb74d67f6ffd3c3c83c43c6c7fe5da2bddca7dde3e82df66f5190b0f1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 31de252002b8fc4dd3f23d253ac259fcb1000d15
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352596"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092332"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Creare un test codificato dell'interfaccia utente per testare un'app UWP
 

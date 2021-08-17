@@ -1,27 +1,28 @@
 ---
 title: Set di regole base di correttezza per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole di base di correttezza in Visual Studio, che è incentrato sugli errori logici e sugli errori comuni dell'API del Framework. Vedere le descrizioni delle regole.
+description: Informazioni sulla regola Regole di correttezza di base impostata in Visual Studio, incentrata sugli errori logici e sugli errori comuni delle API del framework. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 491226cf9c9c708804bca1bd4e075c8e5ff160be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0c8d23c6370f1869c514875119ddb6504b9a9a02eca2694af6405e002a3fbcf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843709"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121456219"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
 
-Il set di regole di base di correttezza è incentrato sugli errori logici e sugli errori comuni nell'utilizzo delle API del Framework. Le regole di correttezza di base includono le regole del set di regole [consigliate gestite](managed-recommended-rules-rule-set-for-managed-code.md) .
+Il set di regole Regole di correttezza di base si concentra sugli errori logici e sugli errori comuni nell'utilizzo delle API del framework. Le regole di correttezza di base includono le regole nel set di regole [regole consigliate](managed-recommended-rules-rule-set-for-managed-code.md) gestite.
 
-Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Basic Correctity Rules.
+Nella tabella seguente vengono descritte tutte le regole nel set di regole Microsoft Basic Correctness Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -65,7 +66,7 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA2137](../code-quality/ca2137.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare I LinkDemand|
+|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare LinkDemands|
 |[CA2146](../code-quality/ca2146.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

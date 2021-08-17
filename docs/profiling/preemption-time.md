@@ -1,6 +1,6 @@
 ---
 title: Periodo di precedenza | Microsoft Docs
-description: Informazioni sul tempo di Premption e che questi segmenti nella sequenza temporale sono associati al tempo di blocco categorizzato come prelazione.
+description: Informazioni sul tempo di premption e sul fatto che questi segmenti nella sequenza temporale sono associati al tempo di blocco categorizzato come pre-svuotamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b8515043b228deb4fbcbf43c0e75b9826912f059
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02398447da41c1cb1442c7fb6a10b57625c2ecef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957322"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027448"
 ---
 # <a name="preemption-time"></a>Periodo di precedenza
 Questi segmenti nella sequenza temporale sono associati al periodo di blocco categorizzato come Precedenza. Questa categoria implica che un thread viene disattivato per uno dei motivi seguenti:

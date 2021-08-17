@@ -1,6 +1,6 @@
 ---
-title: Finestra di dialogo Configura firewall per debug remoto | Microsoft Docs
-description: Vedere la finestra di dialogo Configura firewall per debug remoto, che viene visualizzata quando il Windows Firewall interrompe la ricezione dei dati tramite la rete da parte del debugger.
+title: Finestra di dialogo Configura firewall per il debug remoto | Microsoft Docs
+description: Informazioni sulla finestra di dialogo Configura firewall per il debug remoto, che viene visualizzata quando il firewall Windows impedisce al debugger di ricevere dati in rete.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,27 +20,28 @@ ms.assetid: 5dff3393-fdeb-4129-a2f6-31f653107a82
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb1d704e2a06ed6c31d6b401b592436c86e4318
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afcb30eb31b1a6e7c09bb282600506fe0b8d7d09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857727"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121752"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Configura firewall per debug remoto (finestra di dialogo)
 Questa finestra di dialogo viene visualizzata quando Windows Firewall impedisce al debugger di ricevere informazioni attraverso la rete. Per continuare il debug remoto, è necessario configurare un'apertura nel firewall per consentire al debugger di ricevere informazioni.
 
 > [!CAUTION]
-> Se si configura un'apertura in Windows Firewall, il computer risulterà esposto a rischi per la sicurezza che normalmente verrebbero evitati grazie alla presenza del firewall. La configurazione di un'apertura per il debug remoto sblocca le porte 4020 e 4021 in Visual Studio 2015. In altre versioni di Visual Studio vengono usati altri numeri di porta. Per ulteriori informazioni, vedere [remote debugger Port assegnazioni](../debugger/remote-debugger-port-assignments.md). Il debugger ha inoltre la possibilità di aprire altre porte. Per altre informazioni, vedere [configurare la Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
+> Se si configura un'apertura in Windows Firewall, il computer risulterà esposto a rischi per la sicurezza che normalmente verrebbero evitati grazie alla presenza del firewall. La configurazione di un'apertura per il debug remoto sblocca le porte 4020 e 4021 in Visual Studio 2015. In altre versioni di Visual Studio vengono usati altri numeri di porta. Per altre informazioni, vedere [Assegnazioni di porte del debugger remoto](../debugger/remote-debugger-port-assignments.md). Il debugger ha inoltre la possibilità di aprire altre porte. Per altre informazioni, vedere [Configurare il firewall Windows per il debug remoto.](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
- **Annulla debug remoto** Annulla il tentativo di debug remoto. Le impostazioni di sicurezza del computer rimangono invariate.
+ **Annullare il debug remoto** Annulla il tentativo di debug remoto. Le impostazioni di sicurezza del computer rimangono invariate.
 
- **Sbloccare il debug remoto dai computer nella rete locale (subnet)** Consente il debug remoto dei computer nella subnet locale. Questa impostazione può comportare rischi di sicurezza per i computer nella subnet locale, tuttavia il firewall continuerà a bloccare le informazioni provenienti dall'esterno della subnet.
+ **Sbloccare il debug remoto dai computer nella rete locale (subnet)** Abilita il debug remoto dei computer nella subnet locale. Questa impostazione può comportare rischi di sicurezza per i computer nella subnet locale, tuttavia il firewall continuerà a bloccare le informazioni provenienti dall'esterno della subnet.
 
- **Sblocca debug remoto da qualsiasi computer** Consente il debug remoto di computer in qualsiasi punto della rete. Questa impostazione comporta il maggior rischio di sicurezza.
+ **Sbloccare il debug remoto da qualsiasi computer** Abilita il debug remoto dei computer in qualsiasi punto della rete. Questa impostazione comporta il maggior rischio di sicurezza.
 
 ## <a name="see-also"></a>Vedi anche
 

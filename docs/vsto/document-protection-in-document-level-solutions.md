@@ -1,5 +1,5 @@
 ---
-title: Protezione di documenti nelle soluzioni a livello di documento
+title: Protezione dei documenti nelle soluzioni a livello di documento
 description: Informazioni su come usare le funzionalità di protezione di Microsoft Office Word e Microsoft Office Excel nei progetti a livello di documento.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -16,48 +16,49 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ddfe9d70cafc6acf7526c8819cb9ae3f46ea8022
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc11241057a32d24746eb9eabbc6a7b6526c9eaa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910560"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026473"
 ---
-# <a name="document-protection-in-document-level-solutions"></a>Protezione di documenti nelle soluzioni a livello di documento
-  È possibile utilizzare le funzionalità di protezione di Microsoft Office Word e Microsoft Office Excel nei progetti a livello di documento. Queste funzionalità impediscono a utenti non autorizzati di apportare modifiche alle parti protette di un documento.
+# <a name="document-protection-in-document-level-solutions"></a>Protezione dei documenti nelle soluzioni a livello di documento
+  È possibile usare le funzionalità di protezione di Microsoft Office Word e Microsoft Office Excel nei progetti a livello di documento. Queste funzionalità bloccano agli utenti non autorizzati di apportare modifiche alle parti protette di un documento.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Utilizzando Excel, è possibile attivare e disattivare la protezione mentre la cartella di lavoro è aperta nella finestra di progettazione. Con Word è possibile attivare la protezione solo all'esterno della finestra di progettazione. In fase di esecuzione, è possibile abilitare o disabilitare la protezione a livello di codice per Word ed Excel.
+ Usando Excel, è possibile attivare e disattivare la protezione mentre la cartella di lavoro è aperta nella finestra di progettazione. Con Word è possibile attivare la protezione solo all'esterno della finestra di progettazione. In fase di esecuzione è possibile abilitare o disabilitare la protezione a livello di codice sia per Word che per Excel.
 
- Quando la protezione dei documenti è abilitata in un documento aperto nella finestra di progettazione, tutti i controlli vengono rimossi dalla **casella degli strumenti** o resi non disponibili e non è possibile trascinare elementi dalla finestra **origini dati** al documento.
+ Quando la protezione dei documenti è abilitata in un documento  aperto nella finestra di progettazione, tutti  i controlli vengono rimossi dalla casella degli strumenti o non sono disponibili e non è possibile trascinare alcun elemento dalla finestra Origini dati al documento.
 
 ## <a name="serverdocument-and-protected-documents"></a>ServerDocument e documenti protetti
- Se un documento è protetto, non è possibile accedere alla cache dei dati dall'esterno del documento. Non è possibile utilizzare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe per recuperare o modificare i dati memorizzati nella cache in un documento protetto oppure utilizzare altri metodi della <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
+ Se un documento è protetto, non è possibile accedere alla cache dei dati dall'esterno del documento. Non è possibile usare la classe per recuperare o modificare i dati memorizzati nella cache in un documento protetto o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> usare altri metodi della classe <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> .
 
 ## <a name="word-document-protection-in-the-designer"></a>Protezione dei documenti di Word nella finestra di progettazione
  Se si aggiunge la protezione a un documento o a un modello di Word mentre è aperto in Visual Studio, non è possibile avviare l'applicazione della protezione nella finestra di progettazione. Il documento è in modalità progettazione mentre è aperto in Visual Studio e deve essere in modalità di esecuzione prima di poter avviare l'applicazione della protezione.
 
- Tuttavia, se si crea un progetto che usa un documento di Word esistente in cui è abilitata la protezione, il documento viene protetto mentre è aperto nella finestra di progettazione. Non è possibile modificare le parti protette del documento, ma è comunque possibile scrivere codice nell'editor del codice per automatizzare il documento. Non è inoltre possibile compilare il progetto se la protezione è abilitata mentre il documento è aperto in Visual Studio.
+ Tuttavia, se si crea un progetto che usa un documento di Word esistente con la protezione abilitata, il documento viene protetto durante l'apertura nella finestra di progettazione. Non è possibile modificare le parti protette del documento, ma è comunque possibile scrivere codice nell'editor di codice per automatizzare il documento. Non è inoltre possibile compilare il progetto se la protezione è abilitata mentre il documento è aperto Visual Studio.
 
- È possibile disattivare la protezione mentre il documento è aperto nella finestra di progettazione in modo che sia possibile modificare il documento e compilare il progetto. Non è possibile disattivare la protezione per la copia nella finestra di progettazione durante il debug; il documento che viene aperto durante il debug è una copia separata da quella aperta nella finestra di progettazione (la copia di output viene archiviata nella directory *\bin* per Visual Basic e la directory *\bin\Debug* per C#).
+ È possibile disattivare la protezione mentre il documento è aperto nella finestra di progettazione in modo da poter modificare il documento e compilare il progetto. Non è possibile disattivare la protezione per la copia nella finestra di progettazione durante il debug. Il documento aperto durante il debug è una copia separata da quella aperta nella finestra di progettazione (la copia di output viene archiviata nella directory *\bin* per Visual Basic e nella directory *\bin\debug* per C#).
 
- È possibile abilitare la protezione per la copia del documento che viene aperta nella finestra di progettazione chiudendo il progetto in Visual Studio, aprendo la copia del documento che si trova nella directory del progetto e attivando la protezione.
+ È possibile abilitare la protezione nella copia del documento aperta nella finestra di progettazione chiudendo il progetto in Visual Studio, aprendo la copia del documento presente nella directory del progetto e attivando la protezione.
 
-## <a name="enforce-word-document-protection-on-build"></a>Applicare la protezione documenti di Word per la compilazione
- Visual Studio avvia l'applicazione della protezione per i documenti e i modelli di Word durante il processo di compilazione, in modo che la protezione sia abilitata quando il documento viene aperto per il debug. Il documento è protetto con una password vuota.
+## <a name="enforce-word-document-protection-on-build"></a>Applicare la protezione dei documenti di Word alla compilazione
+ Visual Studio la protezione per i documenti e i modelli di Word durante il processo di compilazione, in modo che la protezione sia abilitata all'apertura del documento per il debug. Il documento è protetto con una password vuota.
 
- La protezione viene abilitata durante la compilazione in modo che, se è presente codice nell'evento del documento <xref:Microsoft.Office.Tools.Word.Document.Startup> che potrebbe causare eccezioni o modificare il comportamento dell'applicazione, è possibile eseguire correttamente il debug di questo codice. Se si Abilita la protezione dopo l'apertura del documento, non è possibile eseguire il debug o il test del codice di inizializzazione.
+ La protezione viene abilitata durante la compilazione in modo che se nell'evento del documento è presente codice che potrebbe causare eccezioni o modificare il comportamento dell'applicazione, è possibile eseguire correttamente il <xref:Microsoft.Office.Tools.Word.Document.Startup> debug di questo codice. Se si abilita la protezione dopo l'apertura del documento, non è possibile eseguire il debug o il test del codice di inizializzazione.
 
 ## <a name="setting-the-password"></a>Impostazione della password
- Visual Studio Abilita automaticamente la protezione, ma non fornisce alcuna password per impostazione predefinita. Se si vuole che la protezione dei documenti disponga di una password, è necessario aggiungerla prima di distribuire la soluzione. L'aggiunta di una password consente di consentire agli utenti autorizzati di rimuovere la protezione dal documento; senza una password, non è possibile rimuovere facilmente la protezione. Per informazioni dettagliate sull'impostazione di una password, vedere la guida nell'applicazione di Office specifica.
+ Visual Studio automaticamente la protezione, ma non fornisce alcuna password per impostazione predefinita. Se si vuole che la protezione del documento abbia una password, è necessario aggiungerla prima di distribuire la soluzione. L'aggiunta di una password consente agli utenti autorizzati di rimuovere la protezione dal documento. senza una password, la protezione non può essere rimossa facilmente. Per informazioni dettagliate sull'impostazione di una password, vedere la Guida nell'applicazione Office specifica.
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: proteggere documenti e parti di documenti a livello di codice](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
-- [Procedure dettagliate e esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Procedura: Proteggere documenti e parti di documenti a livello di codice](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
+- [Office esempi di sviluppo e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md)
 - [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [Protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md)
-- [Procedura: consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
-- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
+- [Protezione con password Office documenti](../vsto/password-protection-on-office-documents.md)
+- [Procedura: Consentire l'esecuzione di codice dietro documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)

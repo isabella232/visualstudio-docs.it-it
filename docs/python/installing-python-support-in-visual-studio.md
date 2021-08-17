@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5a357cf2a2da1fee747d777d02aae146d97bd7b
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 51c6224b0987443f73c353761588b6450a0a067e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114591917"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060778"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Come installare il supporto di Python in Visual Studio in Windows
 
@@ -25,7 +26,7 @@ Per installare il supporto Python per Visual Studio (noto anche come Python Tool
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e versioni precedenti](#visual-studio-2013-and-earlier)
 
-Per testare rapidamente il supporto di Python dopo aver seguito i passaggi di installazione, aprire la **finestra Interattiva** di Python premendo **ALT** + **I** e immettendo `2+2` . Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
+Per testare rapidamente il supporto di Python dopo aver seguito i passaggi di installazione, aprire la **finestra Interattiva di Python** premendo **ALT** + **I** e immettendo `2+2` . Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
 
 > [!Tip]
 > Il carico di lavoro Python include l'utile estensione Cookiecutter, che offre un'interfaccia utente grafica per individuare modelli, inserire opzioni del modello e creare progetti e file. Per informazioni dettagliate, vedere [Usare l'estensione Cookiecutter](using-python-cookiecutter-templates.md).
@@ -73,7 +74,7 @@ Per testare rapidamente il supporto di Python dopo aver seguito i passaggi di in
     ::: moniker range="<=vs-2017"
     | Opzione | Descrizione |
     | --- | --- |
-    | Distribuzioni di Python | Scegliere qualsiasi combinazione delle opzioni disponibili, ad esempio le varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Miniconda, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di data science che include una vasta gamma di pacchetti pre-installati. È possibile tornare al programma di Visual Studio in qualsiasi momento per aggiungere o rimuovere distribuzioni.  **Nota:** se è stata installata una distribuzione all'esterno del programma di Visual Studio, non è necessario selezionare l'opzione equivalente qui. Visual Studio rileva automaticamente le installazioni esistenti di Python. Vedere [Finestra Ambienti Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Inoltre, se è disponibile una versione di Python più recente rispetto a quella indicata nel programma di installazione, è possibile installare tale versione separatamente e Visual Studio la rileverà. |
+    | Distribuzioni di Python | Scegliere qualsiasi combinazione delle opzioni disponibili, ad esempio le varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Miniconda, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di data science che include una vasta gamma di pacchetti pre-installati. È possibile tornare al programma di Visual Studio in qualsiasi momento per aggiungere o rimuovere distribuzioni.  **Nota:** se è stata installata una distribuzione all'esterno del programma di installazione Visual Studio, non è necessario selezionare l'opzione equivalente qui. Visual Studio rileva automaticamente le installazioni esistenti di Python. Vedere [Finestra Ambienti Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Inoltre, se è disponibile una versione di Python più recente rispetto a quella indicata nel programma di installazione, è possibile installare tale versione separatamente e Visual Studio la rileverà. |
     | **Supporto modello Cookiecutter** | Installa l'interfaccia utente di Cookiecutter per individuare modelli, inserire opzioni di modello e creare progetti e file. Vedere [Usare l'estensione Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Supporto Web Python** | Installa gli strumenti per lo sviluppo Web, tra cui il supporto per HTML, CSS e JavaScript, oltre ai modelli per i progetti usando i framework Bottle, Flask e Django. Vedere [Modelli di progetti Web Python](python-web-application-project-templates.md). |
     | **Supporto Python IoT** | Supporta lo sviluppo di Windows IoT Core usando Python. |
@@ -84,7 +85,7 @@ Per testare rapidamente il supporto di Python dopo aver seguito i passaggi di in
     ::: moniker range=">=vs-2019"
     | Opzione | Descrizione |
     | --- | --- |
-    | Distribuzioni di Python | Scegliere qualsiasi combinazione delle opzioni disponibili, ad esempio le varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Miniconda, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di data science che include una vasta gamma di pacchetti pre-installati. È possibile tornare al programma di Visual Studio in qualsiasi momento per aggiungere o rimuovere distribuzioni.  **Nota:** se è stata installata una distribuzione all'esterno del programma di Visual Studio, non è necessario selezionare l'opzione equivalente qui. Visual Studio rileva automaticamente le installazioni esistenti di Python. Vedere [Finestra Ambienti Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Inoltre, se è disponibile una versione di Python più recente rispetto a quella indicata nel programma di installazione, è possibile installare tale versione separatamente e Visual Studio la rileverà. |
+    | Distribuzioni di Python | Scegliere qualsiasi combinazione delle opzioni disponibili, ad esempio le varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Miniconda, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di data science che include una vasta gamma di pacchetti pre-installati. È possibile tornare al programma di Visual Studio in qualsiasi momento per aggiungere o rimuovere distribuzioni.  **Nota:** se è stata installata una distribuzione all'esterno del programma di installazione Visual Studio, non è necessario selezionare l'opzione equivalente qui. Visual Studio rileva automaticamente le installazioni esistenti di Python. Vedere [Finestra Ambienti Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Inoltre, se è disponibile una versione di Python più recente rispetto a quella indicata nel programma di installazione, è possibile installare tale versione separatamente e Visual Studio la rileverà. |
     | **Supporto modello Cookiecutter** | Installa l'interfaccia utente di Cookiecutter per individuare modelli, inserire opzioni di modello e creare progetti e file. Vedere [Usare l'estensione Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Supporto Web Python** | Installa gli strumenti per lo sviluppo Web, tra cui il supporto per HTML, CSS e JavaScript, oltre ai modelli per i progetti usando i framework Bottle, Flask e Django. Vedere [Modelli di progetti Web Python](python-web-application-project-templates.md). |
     | **Strumenti di sviluppo nativo Python** | Installa il compilatore C++ e altri componenti necessari per sviluppare estensioni native per Python. Vedere [Creare un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md). Installare anche il carico di lavoro **Sviluppo di applicazioni desktop con C++** per il supporto completo di C++. |

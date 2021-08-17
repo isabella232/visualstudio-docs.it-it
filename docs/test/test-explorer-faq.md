@@ -17,12 +17,12 @@ ms.workload:
 author: kendrahavens
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e5cd80c4523d74b2cf26887362e9bbffaa82d0f5369aa0f4666b02edc894a05
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6b14f78fa1e7e51cc2ea93f30eab8ee29e644949
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352456"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060050"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
@@ -36,7 +36,7 @@ Compilare il progetto per eseguire l'individuazione basata su assembly.
 ::: moniker range="vs-2017"
 Compilare il progetto e assicurarsi che l'individuazione basata su assembly sia attivata in **Strumenti** > **Opzioni** > **Test**.
 ::: moniker-end
-L'[individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) è l'individuazione dei test in base all'origine. Non è in grado di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni e altro ancora perché sono definiti `#ifdef` in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
+L'[individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) è l'individuazione dei test in base all'origine. Non è in grado di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni e altro ancora perché sono `#ifdef` definiti in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
 
 ## <a name="test-explorer--plus-symbol"></a>'+' (segno più) di Esplora test
 

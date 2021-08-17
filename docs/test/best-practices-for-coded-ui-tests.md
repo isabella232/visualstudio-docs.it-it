@@ -1,6 +1,6 @@
 ---
 title: Procedure consigliate per i test codificati dell'interfaccia utente
-description: Informazioni sui consigli per lo sviluppo di test codificati dell'interfaccia utente. Queste linee guida consentono di creare un test codificato dell'interfaccia utente flessibile.
+description: Informazioni sulle raccomandazioni per lo sviluppo di test codificati dell'interfaccia utente. Queste linee guida consentono di creare un test codificato dell'interfaccia utente flessibile.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b959f693e2deb6fd1ee4bdbe2e4158ee6ac13e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89c72a92c623b64ff075ae36dfd1b2bc7b7da913
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964641"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123164"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedure consigliate per i test codificati dell'interfaccia utente
 

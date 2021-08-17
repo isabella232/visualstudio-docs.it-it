@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 909bb9952ce788418a5372955e1df56ec719ce633685728fc7951188dac6ba87
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ca3341b252f94a4415904744840f24cb05b56b56
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352929"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026953"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procedura: Personalizzare un pacchetto SharePoint soluzione
   È possibile usare Progettazione pacchetti per creare e personalizzare un pacchetto (*.wsp*). Ad esempio, è possibile aggiungere SharePoint di progetto e funzionalità, specificare se il server Web viene reimpostato quando viene distribuita la soluzione e impostare il tipo di server di distribuzione.
@@ -47,13 +47,13 @@ ms.locfileid: "121352929"
 
 1. In **Esplora soluzioni** scegliere **Mostra tutti i file**.
 
-2. Espandere Pacchetto, espandere Package.package e quindi aprire il file *Package.Template.xml* file.
+2. Espandere Pacchetto, espandere Package.package e quindi aprire il file *Package.Template.xml.*
 
     > [!NOTE]
     > Quando si apre il file XML del manifesto per il modello di pacchetto, i file vengono convalidati automaticamente ed è possibile ignorare gli avvisi visualizzati nella finestra Elenco errori .
 
 ## <a name="change-the-manifest-template"></a>Modificare il modello di manifesto
- È possibile modificare il codice XML per il file manifesto in pacchetto nell'editor XML Visual Studio o nel riquadro Modello manifesto . Tutte le modifiche apportate al codice XML vengono unite nel file manifesto del pacchetto.
+ È possibile modificare il codice XML per il file manifesto in pacchetto nell'editor XML Visual Studio o nel riquadro Modello di manifesto. Tutte le modifiche apportate al codice XML vengono unite nel file manifesto del pacchetto.
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Per modificare il modello di manifesto tramite l'editor XML
 
@@ -82,7 +82,7 @@ ms.locfileid: "121352929"
      Il modello viene aggiornato con il file manifesto in pacchetto corrente.
 
 ## <a name="enable-the-package-designer"></a>Abilitare Progettazione pacchetti
- È possibile ri abilitare Progettazione pacchetti per personalizzare il file *manifest.xml* pacchetto.
+ È possibile ri abilitare Progettazione pacchetti per personalizzare il *manifest.xml* file.
 
 #### <a name="to-re-enable-the-designer"></a>Per abilitare nuovamente la finestra di progettazione
 

@@ -1,6 +1,6 @@
 ---
 title: Finestra Esplora prestazioni | Microsoft Docs
-description: Informazioni su come la finestra Esplora prestazioni nell'IDE di Visual Studio consente di configurare le sessioni di prestazioni usando il Strumenti di profilatura di Visual Studio.
+description: Informazioni su come la Esplora prestazioni nell'IDE Visual Studio consente di configurare le sessioni di prestazioni usando il Visual Studio Strumenti di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,15 +11,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4533bcb59ebbd36f47ddf73f9b78429f041c357c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bfd7c11540cd481925c8701b3e24447616db2ee2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922317"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027526"
 ---
 # <a name="performance-explorer-window"></a>Finestra Esplora prestazioni
 
@@ -53,6 +54,6 @@ La finestra **Esplora prestazioni** contiene un controllo albero che visualizza 
 
 ## <a name="see-also"></a>Vedi anche
 
-[Panoramica](../profiling/overviews-performance-tools.md) 
- [Configurazione di sessioni](../profiling/configuring-performance-sessions.md) 
- di prestazioni [Controllo della raccolta dati](../profiling/controlling-data-collection.md)
+[Panoramiche](../profiling/overviews-performance-tools.md) 
+ [Configurazione delle sessioni di prestazioni](../profiling/configuring-performance-sessions.md) 
+ [Controllo della raccolta dati](../profiling/controlling-data-collection.md)

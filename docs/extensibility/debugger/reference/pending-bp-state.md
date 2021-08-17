@@ -1,5 +1,5 @@
 ---
-description: Specifica lo stato di un punto di interruzione in sospeso, ovvero un punto di interruzione che non è ancora stato associato.
+description: Specifica lo stato di un punto di interruzione in sospeso (un punto di interruzione che non è ancora stato associato).
 title: PENDING_BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d041042be92fe68dd6f0ea35bbdb4f6dd6d9ac7e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f6079a227be831f44476a233849b735fadfc9e82564ea39af52637343caaa28e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086378"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448585"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
-Specifica lo stato di un punto di interruzione in sospeso, ovvero un punto di interruzione che non è ancora stato associato.
+Specifica lo stato di un punto di interruzione in sospeso (un punto di interruzione che non è ancora stato associato).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,12 +62,12 @@ public enum enum_PENDING_BP_STATE {
  Indica che il punto di interruzione in sospeso è abilitato.
 
 ## <a name="remarks"></a>Commenti
- Utilizzare come `state` membro della struttura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
+ Usare come `state` membro [](../../../extensibility/debugger/reference/pending-bp-state-info.md) della struttura PENDING_BP_STATE_INFO.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

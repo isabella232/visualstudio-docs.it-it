@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b9e4f010bede2e3c51369f4a31a30f6a1d18660ff30f7f867eee63cc2583c42d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2084a2cc135de453fd364b39512ca85455b6f128
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420790"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058802"
 ---
 # <a name="idiasymbolget_callingconvention"></a>IDiaSymbol::get_callingConvention
 Restituisce un indicatore di una convenzione di chiamata dei metodi.
@@ -35,13 +35,13 @@ HRESULT get_callingConvention (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un valore [dall'enumerazione CV_call_e enumeration](../../debugger/debug-interface-access/cv-call-e.md) che specifica la convenzione di chiamata di un metodo.
+[out] Restituisce un valore [dall'enumerazione CV_call_e che](../../debugger/debug-interface-access/cv-call-e.md) specifica la convenzione di chiamata di un metodo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 

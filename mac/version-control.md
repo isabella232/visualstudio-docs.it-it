@@ -6,12 +6,12 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 9206ab892ef125706ab16f9a739fe88a52f5c242
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4d5b64e6deeb7952e0d38fce836084399fa2df47153bc3db020db87efa820af
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70108104"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121437449"
 ---
 # <a name="version-control"></a>Controllo della versione
 
@@ -34,6 +34,6 @@ Visual Studio per Mac offre supporto per entrambi i sistemi di controllo della v
 * [Impostazione di un repository Subversion](set-up-subversion-repository.md)
 * [Uso di Subversion](working-with-subversion.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Controllo della versione in Visual Studio (in Windows)](/visualstudio/version-control/)

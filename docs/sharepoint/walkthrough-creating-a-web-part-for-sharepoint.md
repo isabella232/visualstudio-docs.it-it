@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: bdf9b3ebd8512cdec8558e66401f520cab6e3d778f99ce73139aa89e7adbebfe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9bdeb3397c3c958912010af9f822b48a66add8e6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352819"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123281"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procedura dettagliata: Creare una web part per SharePoint
 
@@ -71,7 +71,7 @@ Creare prima di tutto un progetto SharePoint vuoto. Successivamente, si aggiunge
 
 Aggiungere un **elemento web part** al progetto. **L'elemento Web part** aggiunge il file di codice della web part. Successivamente, si aggiungerà codice al file di codice della web part per eseguire il rendering del contenuto della web part.
 
-1. Sulla barra dei menu scegliere **Project**  >  **Aggiungi nuovo elemento**.
+1. Sulla barra dei menu **scegliere** Project Aggiungi nuovo  >  **elemento**.
 
 2. Nel **riquadro** Modelli installati della  finestra di dialogo **Aggiungi** nuovo elemento espandere il nodo SharePoint e quindi scegliere il **nodo 2010.**
 
@@ -132,7 +132,7 @@ Aggiungere un **elemento web part** al progetto. **L'elemento Web part** aggiung
 
 Quando si esegue il progetto, viene aperto SharePoint sito web. La web part viene aggiunta automaticamente alla raccolta di web part in SharePoint. È possibile aggiungere la web part a qualsiasi pagina web part.
 
-1. Incollare il codice XML seguente in un file Blocco note. Questo file XML contiene i dati di esempio che verranno visualizzati nella web part.
+1. Incollare il codice XML seguente in un Blocco note file. Questo file XML contiene i dati di esempio che verranno visualizzati nella web part.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -165,7 +165,7 @@ Quando si esegue il progetto, viene aperto SharePoint sito web. La web part vien
         </employees>
     ```
 
-2. Nella Blocco note menu scegliere **Salva** con nome dal menu  >  .
+2. Nella Blocco note menu scegliere **Salva** con nome dalla barra  >  **dei** menu.
 
 3. **Nell'elenco Tipo** file della finestra di dialogo Salva **con** nome scegliere Tutti **i file**.
 
@@ -179,7 +179,7 @@ Quando si esegue il progetto, viene aperto SharePoint sito web. La web part vien
 
 7. Scegliere **Altre** opzioni dal menu Azioni **sito**.
 
-8. Nella pagina **Crea** scegliere il **tipo di pagina web part,** quindi scegliere il **pulsante** Crea.
+8. Nella pagina **Crea** scegliere il **tipo di pagina web part,** quindi scegliere **il pulsante** Crea.
 
 9. Nella pagina **Nuova pagina web part** assegnare alla pagina il nome **SampleWebPartPage.aspx** e quindi scegliere **il pulsante** Crea.
 
@@ -187,15 +187,15 @@ Quando si esegue il progetto, viene aperto SharePoint sito web. La web part vien
 
 10. Selezionare qualsiasi area nella pagina web part.
 
-11. Nella parte superiore della pagina scegliere la **scheda** Inserisci e quindi scegliere **il pulsante Web** part.
+11. Nella parte superiore della pagina scegliere la **scheda** Inserisci e quindi scegliere il **pulsante Web** part.
 
-12. Nel riquadro **Categorie** scegliere la **cartella Personalizzata,** scegliere la **web part WebPart1** e quindi scegliere il **pulsante** Aggiungi.
+12. Nel riquadro **Categorie** scegliere la **cartella Personalizzata,** scegliere la **web part WebPart1** e quindi scegliere **il pulsante** Aggiungi.
 
      La web part viene visualizzata nella pagina.
 
 ## <a name="test-the-custom-property"></a>Testare la proprietà personalizzata
 
-Per popolare la griglia dei dati visualizzata nella web part, specificare il percorso del file XML che contiene i dati relativi a ogni dipendente.
+Per popolare la griglia dei dati visualizzata nella web part, specificare il percorso del file XML contenente i dati relativi a ogni dipendente.
 
 1. Scegliere la freccia visualizzata sul lato destro della web part e quindi scegliere Modifica **web part** dal menu visualizzato.
 
@@ -211,7 +211,7 @@ Visualizzare e nascondere i dipendenti che non sono responsabili selezionando un
 
 1. Scegliere la freccia visualizzata sul lato destro della web part e quindi scegliere **Mostra** solo manager dal menu visualizzato.
 
-     Nella web part vengono visualizzati solo i dipendenti che sono responsabili.
+     Nella web part vengono visualizzati solo i dipendenti responsabili.
 
 2. Scegliere di nuovo la freccia e quindi **scegliere Mostra** tutti i dipendenti dal menu visualizzato.
 

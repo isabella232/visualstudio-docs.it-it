@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 412f8dcae25b0cefda9a96695f418306c1d66bb8741963a4215d0f27a4d3a0c7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5db5b43efbaf50b6a35425ff110afa5534be96e7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454255"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058610"
 ---
 # <a name="graphics-diagnostics-examples"></a>Esempi di diagnostica grafica
 Questi esempi mostrano come eseguire il debug dei problemi di rendering nelle app basate su DirectX usando la diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

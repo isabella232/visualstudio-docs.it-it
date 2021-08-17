@@ -1,6 +1,6 @@
 ---
-title: "Procedura: Controllare l'ortografia nei fogli di lavoro a livello di codice"
-description: Informazioni su come controllare a livello di codice l'ortografia delle parole in un foglio Microsoft Excel lavoro.
+title: 'Procedura: Eseguire il controllo ortografico nei fogli di lavoro a livello di codice'
+description: Informazioni su come controllare a livello di codice l'ortografia delle parole in un foglio Microsoft Excel foglio di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,14 +18,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a91c038b53e7d28c962c7fe8cede1d2f63e99bbbdd0d2984ff8e029b1644adf7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d45cafb20c1d021a893b5b650dff938f9ff5927e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394469"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026213"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedura: Controllare l'ortografia nei fogli di lavoro a livello di codice
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedura: Eseguire il controllo ortografico nei fogli di lavoro a livello di codice
   A livello di codice è possibile eseguire il controllo ortografico delle parole in un foglio di lavoro. La finestra di dialogo **Controllo ortografia** viene visualizzata automaticamente se si sono parole formulate in modo non corretto nel foglio di lavoro.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -46,6 +46,6 @@ ms.locfileid: "121394469"
 
 ## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Eseguire calcoli di Excel a livello di codice](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Procedura: Eseguire calcoli Excel a livello di codice](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
 - [Controllo NamedRange](../vsto/namedrange-control.md)
-- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: dfa45ffc37ffdbdabbb35d043b43e5005098d0d8b30554e110a724dfba5922fe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9ac6edf5bbd05ee2f2b94c79208c7f72de270e7f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026629"
 ---
 # <a name="custom-xml-parts-overview"></a>Panoramica delle parti XML personalizzate
   È possibile incorporare i dati XML nei documenti per alcune applicazioni di Microsoft Office. Quando si incorporano dati XML in un documento, i dati vengono denominati parte *XML personalizzata*.

@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca6e1fcdaa644ff1486d245ff0025077ed691ff48cdc2d2e6883c986553ab208
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d9c77cb9a29ba134c8cd7115c7f37b0bcb3cea1d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377587"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078921"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 Recupera il numero di parametri di tipo associati al campo generico.

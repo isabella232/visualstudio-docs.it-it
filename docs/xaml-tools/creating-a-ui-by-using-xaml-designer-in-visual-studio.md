@@ -1,6 +1,6 @@
 ---
 title: Creare le informazioni utente con Visual Studio finestra di progettazione XAML
-description: Informazioni sull'interfaccia utente dell'area di lavoro e sulle funzionalità del finestra di progettazione XAML in Blend per Visual Studio che fornisce un'interfaccia visiva grafica che consente di progettare app basate su XAML.
+description: Informazioni sull'interfaccia utente dell'area di lavoro e sulle funzionalità del finestra di progettazione XAML in Blend per Visual Studio che fornisce un'interfaccia visiva che consente di progettare app basate su XAML.
 ms.date: 03/03/2020
 ms.topic: conceptual
 ms.custom: contperf-fy21q4, SEO-VS-2020
@@ -15,16 +15,16 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 448e465c1458d3a931e5c47c0236d0d733d322970ebd9aeaa9cb5c853d6dc627
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2c0ba2234cedbc4de9ebf71475c226dbdf838e8d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121365777"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045723"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML
 
-Il finestra di progettazione XAML in Visual Studio e Blend per Visual Studio un'interfaccia visiva grafica che consente di progettare app basate su XAML, ad esempio WPF e UWP. È possibile creare interfacce utente per le app trascinando i controlli dalla finestra della casella degli strumenti (finestra Asset in Blend per Visual Studio) e impostando le proprietà nella finestra Proprietà. È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
+Il finestra di progettazione XAML in Visual Studio e Blend per Visual Studio un'interfaccia visiva che consente di progettare app basate su XAML, ad esempio WPF e UWP. È possibile creare interfacce utente per le app trascinando i controlli dalla finestra della casella degli strumenti (finestra Asset in Blend per Visual Studio) e impostando le proprietà nella finestra Proprietà. È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
 
 Per gli utenti avanzati è anche possibile [personalizzare la finestra di progettazione XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
@@ -93,7 +93,7 @@ Visualizza o nasconde la griglia di allineamento che mostra le griglie. Le grigl
 
 **Attiva/Disattiva allineamento alla griglia**
 
-Se **l'allineamento alla griglia** è abilitato, un elemento tende ad allinearsi alle linee della griglia orizzontale e verticale più vicine quando lo si trascina sulla tavola da disegno.
+Se **lo snap alla griglia** è abilitato, un elemento tende a allinearsi alle linee orizzontali e verticali più vicine quando lo si trascina sulla tavola da disegno.
 
 **Attiva/Disattiva sfondo tavola da disegno**
 
@@ -119,14 +119,14 @@ La finestra Struttura documento in Visual Studio è simile alla finestra [Oggett
 
 - Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.
 
-- Selezionare gli elementi in modo che sia possibile modificarli. Ad esempio, è possibile spostarli nella gerarchia o impostarne le proprietà nella Finestra Proprietà. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Selezionare gli elementi in modo da poterli modificare. Ad esempio, è possibile spostarli nella gerarchia o impostarne le proprietà nel Finestra Proprietà. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Creare e modificare modelli per gli elementi che sono controlli.
 
 - [Crea animazioni](animate-objects-in-xaml-designer.md) (solo Blend per Visual Studio).
 
-Per visualizzare la finestra Struttura documento in Visual Studio, sulla barra dei menu  >  **selezionare Visualizza altro Windows** Struttura  >  **documento**.
-Per visualizzare la finestra Oggetti e sequenza temporale in Blend per Visual Studio, nella barra dei menu selezionare **Visualizza**  >  **struttura documento.**
+Per visualizzare la finestra Struttura documento in Visual Studio, sulla barra dei menu **selezionare**  >  **Visualizza Windows**  >  **Struttura documento**.
+Per visualizzare la finestra Oggetti e sequenza temporale in Blend per Visual Studio, sulla barra dei menu selezionare **Visualizza**  >  **struttura documento**.
 
 ![Finestra Struttura documento in Visual Studio](media/document-outline-window.png)
 

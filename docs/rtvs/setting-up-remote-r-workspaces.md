@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 2bd4dd7f18ced67d1b6b1505859131d088709d2e
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 03065c6cc2b7c9bf65bde4c4d55250b28fe9213c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679711"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060518"
 ---
 # <a name="set-up-remote-workspaces"></a>Impostare aree di lavoro remote
 
@@ -204,7 +205,7 @@ Per l'esecuzione dei servizi R nel computer remoto è anche necessario creare ac
 
 Provare a eseguire il ping del computer remoto dalla riga di comando: `ping remote-machine-name`. Se il ping non riesce verificare che il computer sia in esecuzione.
 
-**D. La finestra interattiva di R indica che il computer remoto è in esecuzione, ma perché il servizio non è in esecuzione?**
+**D. La finestra interattiva R indica che il computer remoto è in esecuzione, ma perché il servizio non è in esecuzione?**
 
 Esistono tre possibili motivi:
 
@@ -214,21 +215,21 @@ Esistono tre possibili motivi:
 
 Riavviare il computer dopo aver modificato le condizioni precedenti. Quindi verificare che `RHostBrokerService` e `RUserProfileService` siano in esecuzione tramite Gestione attività (scheda Servizi) o tramite *services.msc*.
 
-**D. Perché la finestra interattiva di R pronuncia "401 Accesso negato" durante la connessione al server R?**
+**D. Perché la finestra interattiva di R dice "401 Accesso negato" durante la connessione al server R?**
 
 Le ragioni possono essere due:
 
 - È molto probabile che l'account `NETWORK SERVICE` non disponga dell'accesso alla chiave privata del certificato SSL. Seguire le istruzioni specificate in precedenza per concedere a `NETWORK SERVICE` l'accesso alla chiave privata.
 - Verificare che il servizio `seclogon` sia in esecuzione. Usare *services.msc* per configurare l'avvio automatico di `seclogon`.
 
-**D. Perché la finestra interattiva di R pronuncia "404 Non trovato" durante la connessione al server R?**
+**D. Perché la finestra interattiva di R dice "404 Non trovato" durante la connessione al server R?**
 
 Questo errore è probabilmente dovuto al fatto che mancano una o più librerie ridistribuibili di Visual C++. Verificare se nella finestra interattiva di R è presente un messaggio relativo a una libreria (DLL) mancante. Quindi verificare che sia installato il componente ridistribuibile VS 2015 e che sia installato R.
 
-**D. Non è possibile accedere a Internet o alle risorse dalla finestra interattiva di R. Cosa fare?**
+**D. Non è possibile accedere a Internet/risorsa dalla finestra interattiva di R, cosa si fa?**
 
 Verificare che le regole firewall per `Microsoft.R.Host.Broker` e `Microsoft.R.Host` consentano l'accesso in uscita sulla porta 5444. Riavviare il computer dopo aver applicato le modifiche.
 
-**D. Ho provato tutte queste soluzioni e non funziona ancora. A questo punto?**
+**D. Ho provato tutte queste soluzioni e non funziona ancora. Ora cosa?**
 
-Esaminare i file di log in *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Questa cartella contiene file di log separati per ogni istanza del servizio R Broker eseguita. Ogni volta che il servizio viene riavviato, viene creato un nuovo file di log. Verificare se il file di log più recente contiene indicazioni sulla possibile causa dell'errore.
+Cercare nei file di log in *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Questa cartella contiene file di log separati per ogni istanza del servizio R Broker eseguita. Ogni volta che il servizio viene riavviato, viene creato un nuovo file di log. Verificare se il file di log più recente contiene indicazioni sulla possibile causa dell'errore.

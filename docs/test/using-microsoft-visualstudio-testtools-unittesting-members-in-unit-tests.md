@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d69660fddc4947e85a49616285d546a30d91bb1262a4c6ed4820d3516faaf7dc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8c73edda39e77b0744eec6abb494ee93ba592f5e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352331"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092228"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usare il framework MSTest negli unit test
 
@@ -80,7 +80,7 @@ Ogni classe di test deve avere l'attributo `TestClass` e ogni metodo di test dev
 
 ## <a name="assert-classes-and-related-exceptions"></a>Classi Assert ed eccezioni correlate
 
-Gli unit test possono verificare il comportamento specifico dell'applicazione in base all'uso di vari tipi di asserzioni, eccezioni e attributi. Per altre informazioni, vedere Uso [delle classi assert.](../test/using-the-assert-classes.md)
+Gli unit test possono verificare il comportamento specifico dell'applicazione in base all'uso di vari tipi di asserzioni, eccezioni e attributi. Per altre informazioni, vedere [Uso delle classi di asserzione](../test/using-the-assert-classes.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

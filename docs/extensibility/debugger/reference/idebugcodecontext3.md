@@ -1,6 +1,6 @@
 ---
-description: Estende l'interfaccia IDebugCodeContext2 per abilitare il recupero delle interfacce del modulo e del processo.
-title: IDebugCodeContext3 | Microsoft Docs
+description: Estende l'interfaccia IDebugCodeContext2 per consentire il recupero delle interfacce del modulo e del processo.
+title: Interfaccia IDebugCodeContext3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,20 +9,21 @@ ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4dd0ffb94f25ae8ac9566571a645d706fa224cd8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 502867256f90574c2a75791b447b76b56af3a638
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088315"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079779"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
-Estende l'interfaccia [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) per abilitare il recupero delle interfacce del modulo e del processo.
+Estende [l'interfaccia IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) per consentire il recupero delle interfacce del modulo e del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,10 +32,10 @@ IDebugCodeContext3 : IDebugCodeContext2
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Implementato dai motori di debug e utilizzato dal [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pacchetto di debug.
+ Implementato dai motori di debug e utilizzato dal pacchetto [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] di debug.
 
 ## <a name="methods"></a>Metodi
- Oltre ai metodi sull' `IDebugCodeContext2` interfaccia, questa interfaccia implementa i metodi seguenti:
+ Oltre ai metodi sull'interfaccia `IDebugCodeContext2` , questa interfaccia implementa i metodi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -42,11 +43,11 @@ IDebugCodeContext3 : IDebugCodeContext2
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Recupera un riferimento all'interfaccia del processo di debug.|
 
 ## <a name="remarks"></a>Commenti
- Si tratta di un'interfaccia facoltativa che in genere non è necessario implementare.
+ Si tratta di un'interfaccia facoltativa che in genere non deve essere implementata.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: Msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

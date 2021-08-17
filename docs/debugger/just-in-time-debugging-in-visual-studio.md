@@ -14,24 +14,24 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6988c8e36bd3393f38c388504ade7b8b29fdf585d214c6af9296dc3d6207f3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b9d0c820877d30d0228c996538e320508dad2661
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453174"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080780"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Disabilitare il debugger JIT
 
 La finestra di dialogo Debugger JUST-In-Time può essere visualizzata quando si verifica un errore in un'app in esecuzione e impedire all'app di continuare.
 
-Il debugger JUST-In-Time offre la possibilità di avviare Visual Studio per eseguire il debug dell'errore. È necessario aver Visual Studio o un altro debugger selezionato per visualizzare informazioni dettagliate sull'errore o provare a eseguirne il debug.
+Il debugger JUST-In-Time offre la possibilità di avviare Visual Studio per eseguire il debug dell'errore. È necessario aver installato Visual Studio un altro debugger selezionato per visualizzare informazioni dettagliate sull'errore o provare a eseguirne il debug.
 
 Se si è già un utente Visual Studio e si vuole provare a eseguire il debug dell'errore, vedere Eseguire il debug con il [debugger JUST-In-Time.](../debugger/debug-using-the-just-in-time-debugger.md) Se non è possibile correggere l'errore o si vuole evitare l'apertura del debugger JIT, è possibile disabilitare il debug JIT [da Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
-Se è stato Visual Studio installato ma non lo è più, potrebbe essere necessario disabilitare il debug JIT dal Registro [di Windows .](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)
+Se l'Visual Studio è stata installata ma non è più installata, potrebbe essere necessario disabilitare il debug JIT dal Registro [di Windows .](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)
 
-Se non è installato un Visual Studio, è possibile impedire il debug JIT disabilitando il debug degli script o il debug sul lato server.
+Se non è installato Visual Studio, è possibile impedire il debug JIT disabilitando il debug degli script o il debug sul lato server.
 
 - Se si sta tentando di eseguire un'app Web, disabilitare il debug degli script:
 
@@ -41,7 +41,7 @@ Se non è installato un Visual Studio, è possibile impedire il debug JIT disabi
 
 - Se si ospita un'app Web ASP.NET in IIS, disabilitare il debug lato server:
 
-  1. Nella visualizzazione delle **funzionalità di** Gestione IIS, nella sezione **ASP.NET,** fare doppio clic  su **Compilazione .NET** oppure selezionarla e quindi selezionare Apri funzionalità nel **riquadro** Azioni.
+  1. Nella visualizzazione Delle **funzionalità di** Gestione IIS, nella sezione **ASP.NET** fare doppio clic  su **Compilazione .NET** oppure selezionarla e quindi selezionare Apri funzionalità nel **riquadro** Azioni.
   1. In **Debug**  >  **del** comportamento selezionare **False.** I passaggi sono diversi nelle versioni precedenti di IIS.
 
 Dopo aver disabilitato il debug JIT, l'app potrebbe essere in grado di gestire l'errore ed essere eseguita normalmente.

@@ -9,14 +9,15 @@ ms.assetid: 4264742a-3d91-44b9-9d14-87adbc77f0f0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 331949c4b37c6e4f472bc2d1f5d805d7a9f7426a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 89597f27ee15014a8c2a5d7a999de297a3228a4e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147149"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081117"
 ---
 # <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 Recupera lo stride della matrice o della matrice con stride.
@@ -31,10 +32,10 @@ HRESULT get_stride(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un oggetto `DWORD` che include lo stride.
+[out] Puntatore a un `DWORD` oggetto che contiene lo stride.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

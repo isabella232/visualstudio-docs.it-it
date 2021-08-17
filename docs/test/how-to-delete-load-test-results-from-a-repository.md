@@ -16,12 +16,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: e5baef422a9dac6ec2eefef3b8e0f7f491a627422c2d1c0e9ba20c606b9e2e4b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 02e737137488cd41ff8c48e9124736a97dcdf79d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366680"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122969"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedura: Eliminare i risultati di un test di carico da un repository
 

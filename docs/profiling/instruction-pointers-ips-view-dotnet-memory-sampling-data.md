@@ -1,6 +1,6 @@
 ---
-title: "Visualizzazione Puntatori all'istruzione : dati di campionamento di memoria .NET"
-description: La visualizzazione IP per i dati di profilatura dell'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le istruzioni dell'assembly che hanno allocato memoria.
+title: Visualizzazione Puntatori all'istruzione - Dati di campionamento della memoria .NET
+description: Nella visualizzazione INDIRIZZI IP per i dati di profilatura dell'allocazione di memoria .NET raccolti tramite il metodo di campionamento sono elencate le istruzioni dell'assembly che hanno allocato memoria.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f567db434b75561238ecb84119b16295ecbae6bb3ab32454c3a0b7aabc359820
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2a6909ca4364922532d3c3c6dd3d326c55d70e00
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121300654"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060934"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Visualizzazione dei puntatori all'istruzione: dati di campionamento di memoria .NET
 La visualizzazione IP dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le istruzioni dell'assembly che hanno allocato memoria durante l'esecuzione della profilatura. Le colonne della visualizzazione elencano inoltre le dimensioni e il numero delle allocazioni.

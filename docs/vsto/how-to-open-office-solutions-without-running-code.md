@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c20ddd8fbf05422bfbc948449c2cf3265c7e89c4212add41e220e6f04c77304b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b7816072d0cb5ee55c753eea4e1d0bdf2e8bafe1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394641"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026238"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Procedura: Aprire soluzioni Office senza eseguire codice
   Una Microsoft Office creata con estensioni di codice gestito viene eseguita anche se l'impostazione Sicurezza nell'applicazione Office dell'utente finale è impostata su Alta. Ciò è dovuto al fatto che la sicurezza del codice assembly .NET è gestita da Microsoft .NET Framework, non da Microsoft Office.
@@ -42,7 +42,7 @@ ms.locfileid: "121394641"
 - Aprire documenti e cartelle di lavoro dal  menu **File** tenendo premuto MAIUSC per impedire a Word e Excel di generare eventi di inizializzazione durante l'apertura del documento.
 
     > [!NOTE]
-    > Se si apre un documento o una cartella di lavoro **Attività iniziali** riquadro attività, tenendo premuto **MAIUSC** non viene ignorato il codice. Inoltre, tenendo premuto MAIUSC, gli eventi non vengono generati dopo l'apertura del documento.
+    > Se si apre un documento o una cartella di lavoro **dal** riquadro Attività iniziali attività, tenendo premuto **MAIUSC** non viene ignorato il codice. Inoltre, tenendo premuto MAIUSC, gli eventi non vengono generati dopo l'apertura del documento.
 
      Questo metodo è utile se si vuole aprire un documento per apportare modifiche senza prima eseguire il codice e modificare il documento.
 

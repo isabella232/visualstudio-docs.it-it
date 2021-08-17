@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3784e6ac94440c433220432cd0b14c45254e8f14
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3f49b5cd37e5e52ee6eb7ec0d435ccf5d76d11985b4797fd42a3fe89bea668b2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056212"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356861"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>Semplificare il refactoring delle espressioni condizionali
 

@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 2e3a21d1ed1c64d80b8a8c91e5b7c1cab5573025513cf6f3bfbe6159c792be2e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4fd62b1641a9da10484d31e5f2eb212a09cbce12
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385589"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060648"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -27,7 +27,7 @@ I progetti vengono sempre gestiti all'interno di una *soluzione* di Visual Studi
 
 1. Aprire Visual Studio.
 1. Scegliere **File > Nuovo > Progetto** (**CTRL**+**MAIUSC**+**N**)
-1. Selezionare "R Project" in **Modelli** R , assegnare un nome e un percorso al progetto  >  e selezionare **OK**:
+1. Selezionare "R Project" in **Modelli** R, assegnare un nome e un percorso al progetto  >  e selezionare **OK:**
 
     ![Finestra di dialogo Nuovo progetto per R in Visual Studio (RTVS in VS2017)](media/getting-started-01-new-project.png)
 
@@ -35,7 +35,7 @@ Questo comando crea un progetto con un file *script.R* vuoto aperto nell'editor.
 
 ![Contenuto di un progetto R creato dal modello](media/projects-template-results.png)
 
-Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente nella finestra [R interattivo](interactive-repl-for-r-in-visual-studio.md). È possibile aprire una finestra cronologia dedicata con il **comando R Tools**  >  **Windows**  >  **Cronologia.** Tale finestra ha un pulsante della barra degli strumenti e voci di menu contestuale per cancellare il contenuto della cronologia.
+Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente nella finestra [R interattivo](interactive-repl-for-r-in-visual-studio.md). È possibile aprire una finestra della cronologia dedicata con il **comando R Tools**  >  **Windows**  >  **Cronologia.** Tale finestra ha un pulsante della barra degli strumenti e voci di menu contestuale per cancellare il contenuto della cronologia.
 
 Il file *rproject.rproj* consente di gestire alcune impostazioni di progetto specifiche di R non altrimenti gestite da Visual Studio:
 
@@ -50,7 +50,7 @@ Il file *rproject.rproj* consente di gestire alcune impostazioni di progetto spe
 | NumSpacesForTab | 2 | Il numero di spazi da inserire se UseSpacesForTab è impostato su Sì. |
 | Codifica | UTF-8 | La codifica predefinita per i file `.R`. |
 | RnwWeave | Sweave | Pacchetto da usare per la composizione di un file Rnw. |
-| LaTeX | pdfLaTeX | Libreria da usare per la conversione di RMarkdown in PDF. |
+| LaTeX | pdfLaTeX | Libreria da usare durante la conversione di RMarkdown in PDF. |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>Conversione di una cartella di file in un progetto R
 
@@ -58,8 +58,8 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 
 1. Creare un nuovo progetto in Visual Studio come descritto nella sezione precedente.
 1. Copiare i file nella cartella del progetto.
-1. Nella finestra Visual Studio Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** elemento esistente e individuare i  >  file da aggiungere. Quando si seleziona **OK**, questi compaiono nell'albero del progetto.
-1. Per organizzare il codice in sottocartelle, fare clic con il pulsante destro del mouse sul progetto, selezionare Prima aggiungi nuova cartella, quindi copiare i file in tale cartella e aggiungere gli  >   elementi esistenti nel passaggio 3.
+1. Nella finestra Visual Studio Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere Aggiungi elemento esistente e selezionare i  >  file da aggiungere. Quando si seleziona **OK**, questi compaiono nell'albero del progetto.
+1. Per organizzare il codice in sottocartelle, fare clic con il pulsante destro del mouse sul progetto, selezionare prima Aggiungi nuova cartella, quindi copiare i file in tale cartella e aggiungere gli  >   elementi esistenti nel passaggio 3.
 
 ## <a name="project-properties"></a>Proprietà progetto
 
@@ -72,7 +72,7 @@ Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante de
 | | Percorso progetto remoto | Percorso di un'area di lavoro remota. |
 | | Trasferisci file durante l'esecuzione | Indica se i file di progetto, soggetti al filtro in **File da trasferire**, devono essere copiati in un'area di lavoro remota a ogni esecuzione. |
 | | File da trasferire | Nomi di file e caratteri jolly che indicano i file specifici da copiare un'area di lavoro remota se l'opzione **Trasferisci file durante l'esecuzione** è selezionata. |
-| Impostazioni | (File Settings.R) | Le impostazioni dei progetti R vengono ereditate dai file *Settings.R* o **.Settings.R* che si trovano all'interno del progetto. Se non esistono file di impostazioni, è possibile aggiungere variabili, salvare la pagina. Un file *Settings.R* predefinito verrà automaticamente creato. È anche possibile aggiungere un file di impostazioni al progetto tramite il **comando di** menu File  >  **Aggiungi nuovo** elemento. <br/> Le impostazioni vengono memorizzate come codice R e il file può essere originato prima di eseguire altri moduli, pre-popolando in questo modo l'ambiente con le impostazioni predefinite. |
+| Impostazioni | (File Settings.R) | Le impostazioni dei progetti R vengono ereditate dai file *Settings.R* o **.Settings.R* che si trovano all'interno del progetto. Se non esistono file di impostazioni, è possibile aggiungere variabili, salvare la pagina. Un file *Settings.R* predefinito verrà automaticamente creato. È anche possibile aggiungere il file di impostazioni al progetto tramite il **comando di** menu File  >  **Aggiungi nuovo** elemento. <br/> Le impostazioni vengono memorizzate come codice R e il file può essere originato prima di eseguire altri moduli, pre-popolando in questo modo l'ambiente con le impostazioni predefinite. |
 
 ## <a name="r-specific-project-commands"></a>Comandi di progetto specifici di R
 
@@ -82,7 +82,7 @@ I progetti di Visual Studio supportano diversi comandi generali sia tramite il m
 | --- | --- |
 | Imposta directory di lavoro qui | Imposta la directory di lavoro della finestra interattiva R sulla cartella del progetto, che può essere usata anche in qualsiasi sottocartella all'interno di un progetto. |
 | Apri cartella superiore | Apre Esplora risorse in corrispondenza del percorso del file selezionato. |
-| Aggiungi script R | Crea e apre un nuovo file *.R* con nome predefinito. È anche possibile usare il **comando Aggiungi**  >  **nuovo elemento** per creare *. file R* e diversi altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates). |
+| Aggiungi script R | Crea e apre un nuovo file *.R* con nome predefinito. È anche possibile usare il **comando Aggiungi**  >  **nuovo elemento** per creare *. File R* e diversi altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates). |
 | Aggiungi R Markdown | Crea e apre un nuovo documento *.rmd* con nome predefinito. È anche possibile usare il **comando Aggiungi** nuovo elemento per creare file con estensione  >   *rmd* e diversi altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates).  |
 | Pubblica stored procedure | Avvia il processo di pubblicazione di eventuali stored procedure presenti all'interno di script R. Vedere [Usare stored procedure di SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 

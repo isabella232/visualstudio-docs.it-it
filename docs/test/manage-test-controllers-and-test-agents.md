@@ -1,6 +1,6 @@
 ---
 title: Gestire i test controller e gli agenti di test
-description: Informazioni su come gestire i test controller e gli agenti di test dopo averli installati e configurati per la prima volta.
+description: Informazioni su come gestire i test controller e gli agenti di test dopo l'installazione e la configurazione per la prima volta.
 ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da4dd43094b5e16f5ebdbee54771296ceb15ad69d5fca5e356f86e682a4042d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dfbd12f9e4f18da356ed69c10a8e913f492f2c2f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366498"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092273"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -39,7 +39,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
 
 ### <a name="to-add-a-test-agent-to-a-test-controller"></a>Per aggiungere un agente di test a un controller di test
 
-1. Scegliere **Avvia strumento** di configurazione  >  **dell'agente di test.**
+1. Scegliere **Avvia strumento** di configurazione agente di  >  **test**.
 
      Viene visualizzata la finestra di dialogo **Configura agente di test**.
 
@@ -63,7 +63,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
         |-   Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul test controller.|
         |-   È necessario che l'utente che sta tentando di usare il test controller  disponga di un account utente per tale test controller, diversamente non sarà in grado di eseguite i test.|
 
-   - **Processo interattivo:** per eseguire test automatizzati che devono interagire con il desktop, ad esempio test codificati dell'interfaccia utente o creazione di una registrazione video durante l'esecuzione del test, selezionare **Processo interattivo.** L'agente di test verrà avviato come processo interattivo anziché come servizio.
+   - **Processo interattivo:** per eseguire test automatizzati che devono interagire con il desktop, ad esempio test codificati dell'interfaccia utente o creazione di una registrazione video durante l'esecuzione del test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
 
       Nella pagina successiva immettere i dettagli relativi all'utente quando l'agente di test viene avviato come processo e specificare le altre opzioni.
 
@@ -86,7 +86,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
     > [!NOTE]
     > Il numero di porta predefinito è 6901.
 
-4. Per salvare le modifiche, scegliere **Applica impostazioni**. Chiudere la **finestra di dialogo** Riepilogo configurazione , quindi chiudere lo strumento di configurazione **dell'agente di test**.
+4. Per salvare le modifiche, scegliere **Applica impostazioni**. Chiudere la **finestra di dialogo Riepilogo** configurazione e quindi lo strumento di configurazione **dell'agente di test**.
 
 > [!WARNING]
 > Se l'agente è attualmente configurato per essere eseguito in un altro controller di test, è necessario rimuoverlo da quest'ultimo.
@@ -182,7 +182,7 @@ Se si vuole registrare il test controller con la raccolta di progetti Team Found
 
 ### <a name="to-configure-a-test-controller"></a>Per configurare un controller di test
 
-1. Per eseguire lo strumento per riconfigurare il test controller in qualsiasi momento, scegliere **Avvia strumento di** configurazione del test  >  **controller.**
+1. Per eseguire lo strumento per riconfigurare il test controller in qualsiasi momento, scegliere **Avvia strumento di** configurazione del controller di  >  **test**.
 
      Verrà visualizzata la finestra di dialogo **Configura controller di test**.
 

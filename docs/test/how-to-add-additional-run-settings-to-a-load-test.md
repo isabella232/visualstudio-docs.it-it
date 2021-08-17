@@ -11,12 +11,13 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 5a7077442b3b823423edc09284c59979cc98a6d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: f52eb09c35d54c37303147ea9698ce5fd2b9b744
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908626"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092631"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Procedura: Aggiungere altre impostazioni esecuzione test a un test di carico
 
@@ -40,14 +41,14 @@ Le impostazioni esecuzione test di un test di carico determinano una varietà di
 
      Verrà visualizzata la **Finestra Proprietà** con le proprietà relative all'impostazione di esecuzione selezionata.
 
-5. Nella finestra **Proprietà** utilizzare la casella di testo relativa alla proprietà **nome** per assegnare alla nuova impostazione di esecuzione un nome che descriva lo scopo dell'impostazione di esecuzione (ad esempio, l' **impostazione esecuzione test: esecuzione di cinque minuti**).
+5. Nella finestra **Proprietà** usare la casella di testo per la proprietà **Nome** per assegnare alla nuova impostazione di esecuzione un nome che descriva la finalità dell'impostazione di esecuzione , ad esempio **Run Setting: Five minute run**.
 
-6. Utilizzare la finestra **Proprietà** per modificare le impostazioni di esecuzione. Modificare, ad esempio, la durata dell'esecuzione in **00:05:00** per eseguire il test per cinque minuti.
+6. Usare la **finestra Proprietà** per modificare le impostazioni di esecuzione. Modificare, ad esempio, la durata dell'esecuzione in **00:05:00** per eseguire il test per cinque minuti.
 
     > [!NOTE]
-    > Per un elenco completo delle proprietà delle impostazioni esecuzione test e delle relative descrizioni, vedere [proprietà delle impostazioni esecuzione test di carico](../test/load-test-run-settings-properties.md).
+    > Per un elenco completo delle proprietà delle impostazioni di esecuzione e delle relative descrizioni, vedere [Proprietà delle impostazioni esecuzione test di carico](../test/load-test-run-settings-properties.md).
 
-     A questo punto è possibile specificare che si desidera utilizzare l'impostazione esecuzione test aggiunta impostandola su attiva. Per altre informazioni, vedere [procedura: selezionare l'impostazione di esecuzione test attiva per un test di carico](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     A questo punto è possibile specificare che si desidera utilizzare l'impostazione esecuzione test aggiunta impostandola su attiva. Per altre informazioni, vedere [Procedura: Selezionare l'impostazione di esecuzione attiva per un test di carico.](../test/how-to-select-the-active-run-setting-for-a-load-test.md)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: b8fa94094ee6fac5fca501470450b8faeafabf4c8f0f2a4206eca52a71b2858f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: be6f619fc23db19b2342402a8b14fb190cbdc801
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425813"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060479"
 ---
 # <a name="variable-explorer"></a>Esplora variabili
 
@@ -47,7 +47,7 @@ Poiché i dati sono spesso tabulari, è possibile visualizzare qualsiasi tipo di
 
 Se si fa clic sull'intestazione di una colonna, i dati vengono ordinati in base a tale colonna, alternatamente in ordine crescente e decrescente. Se si fa clic su altre colonne tenendo premuto **MAIUSC**, anche queste colonne vengono prese in considerazione per l'ordinamento. Se si fa clic su una colonna senza tenere premuto **MAIUSC** si torna all'ordinamento in base a una sola colonna.
 
-La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **maiusc** fare clic sulla colonna cil, quindi maiusc fare clic sulla colonna mpg due volte per ordinare l'elenco per i cilindri crescente e decrescente +    +  miles-per-gallon: 
+La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **MAIUSC** fa clic sulla colonna +  **cyl,** quindi MAIUSC fa clic due volte sulla colonna  +  **mpg** per ordinare l'elenco per i cilindri in ordine crescente e decrescente per miglia per minuto:
 
 ![Vista tabulare dell'ordinamento dei dati in base a due colonne.](media/variable-explorer-table-view-sorting.png)
 

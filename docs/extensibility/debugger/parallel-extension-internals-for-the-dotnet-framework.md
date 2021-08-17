@@ -1,6 +1,6 @@
 ---
 title: Estensioni interne parallele per .NET Framework | Microsoft Docs
-description: Queste risorse descrivono i tipi interni, i metodi e i campi delle classi usati per implementare un debugger personalizzato per le estensioni parallele al .NET Framework.
+description: Queste risorse descrivono i tipi, i metodi e i campi interni delle classi usate per implementare un debugger personalizzato per le estensioni parallele al .NET Framework.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,14 +10,15 @@ ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 858bf85e65cd761e7f881856286578495db6143a
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 12588d5c9fb3957ce83202afa856a08436facb48
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080260"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Estensioni interne parallele per l'.NET Framework
 In questa sezione vengono descritti i tipi interni, i metodi e i campi delle classi che consentono di implementare un debugger personalizzato per le estensioni parallele al .NET Framework.
@@ -35,7 +36,7 @@ In questa sezione vengono descritti i tipi interni, i metodi e i campi delle cla
 
  [Struttura AsyncVoidMethodBuilder](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md) Descrive i membri interni della <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> struttura .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
 - [Visual Studio estensibilità del debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

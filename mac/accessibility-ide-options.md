@@ -24,11 +24,11 @@ Oltre alle funzionalità integrate direttamente in macOS, Visual Studio per Mac 
 1. Scegliere **Visualizza (menu)** e quindi selezionare Zoom **avanti (&#8984;+)** o Zoom indietro **(&#8984;-).**
 
 > [!TIP]
-> Per ripristinare le dimensioni predefinite del contenuto, è possibile scegliere Visualizza **(menu)**  >  **Dimensioni normali (&#8984;0).**
+> Per ripristinare le dimensioni predefinite del contenuto, è possibile scegliere Visualizza **(menu)** Dimensioni normali  >  **(&#8984;0).**
 
 ## <a name="change-the-content-font-and-size"></a>Modificare il tipo di carattere e le dimensioni del contenuto
 
-È possibile personalizzare il tipo di carattere e le dimensioni del contenuto nella maggior parte delle finestre degli strumenti in Visual Studio per Mac. Ecco come:
+È possibile personalizzare il tipo di carattere e le dimensioni del contenuto nella maggior parte delle finestre degli strumenti Visual Studio per Mac. Ecco come:
 
 1. Passare a **Visual Studio (menu)**  >  **Preferenze... (&#8984;,)**.
 

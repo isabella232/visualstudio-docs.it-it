@@ -1,6 +1,6 @@
 ---
 title: Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
-description: Informazioni sui log di test codificati dell'interfaccia utente, che filtrano e registrano informazioni importanti sulle esecuzioni di test codificati dell'interfaccia utente.
+description: Informazioni sui log dei test codificati dell'interfaccia utente, che filtrano e registrano informazioni importanti sulle esecuzioni dei test codificati dell'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ed58771c45061c180e5ff506babb78bac92416c41362eb8f9a873084df03444c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6459b6d5d91980f8963d45368695b0e6e2f5c0a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395531"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092696"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
 
@@ -74,7 +74,7 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
      I test automatizzati vengono eseguiti e segnalano se sono stati superati o se hanno avuto esito negativo.
 
     > [!TIP]
-    > Per visualizzare **Esplora test,** scegliere **Test**  >  **Windows** e quindi Scegliere **Esplora test**.
+    > Per visualizzare **Esplora test,** scegliere   >  **Test Windows**, quindi scegliere **Esplora test.**
 
 4. Scegliere il collegamento **Output** nei risultati di **Esplora test**.
 

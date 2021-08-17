@@ -24,12 +24,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d95b85aaffe7af6e674ab2e049c594b9db570a24e0fb85f6bfcbe47b3be5fee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1b378eef2c5bb6d18d60f7680a3a4fbdf64c69fd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425079"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123229"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
@@ -154,7 +154,7 @@ La tabella degli errori contiene le seguenti colonne:
 |Conteggio|Il numero di errori di questo tipo che si sono verificati durante il test di carico. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile fare clic su qualsiasi collegamento ipertestuale per visualizzare un elenco dei singoli errori.|Sì|
 |Ultimo messaggio|Messaggio in cui viene descritto l'errore, ad esempio 404 - NotFound.|Sì|
 
-Per altre informazioni, vedere [Utilizzo di tabelle di test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Per altre informazioni, vedere [Uso delle tabelle dei test di carico.](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
 ### <a name="drill-down-to-the-error-list"></a>Drill-down nell'elenco degli errori
 

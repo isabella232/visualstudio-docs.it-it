@@ -15,25 +15,25 @@ ms.locfileid: "121439144"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installare e gestire NuGet pacchetti in Visual Studio per Mac
 
-L NuGet Gestione pacchetti'interfaccia utente in Visual Studio per Mac consente di installare, disinstallare e aggiornare facilmente NuGet pacchetti in progetti e soluzioni. È possibile cercare e aggiungere pacchetti ai progetti .NET Core, ASP.NET Core e Xamarin.
+L NuGet Gestione pacchetti'interfaccia utente di Visual Studio per Mac consente di installare, disinstallare e aggiornare facilmente i NuGet in progetti e soluzioni. È possibile cercare e aggiungere pacchetti ai progetti .NET Core, ASP.NET Core e Xamarin.
 
 Questo articolo descrive come includere un pacchetto NuGet in un progetto e illustra la catena di strumenti che rende facile il processo.
 
-Per un'introduzione all'NuGet in Visual Studio per Mac, vedere Avvio [rapido: Installare](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac) e usare un pacchetto in Visual Studio per Mac
+Per un'introduzione all'NuGet in Visual Studio per Mac, vedere [Guida introduttiva: Installare](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac) e usare un pacchetto in Visual Studio per Mac
 
 ## <a name="find-and-install-a-package"></a>Trovare e installare un pacchetto
 
-1. Con un progetto aperto in Visual Studio per Mac, fare  clic con il pulsante destro del mouse sulla  cartella Dipendenze **(cartella** Pacchetti se si usa un progetto Xamarin) nella finestra della soluzione e scegliere Gestisci NuGet **pacchetti...**.
+1. Con un progetto aperto in Visual Studio per Mac, fare  clic con il pulsante destro del mouse sulla  cartella Dipendenze **(cartella** Pacchetti se si usa un progetto Xamarin) nella finestra della soluzione e scegliere Gestisci pacchetti **NuGet...**.
 
     ![Azione di contesto di aggiunta di un nuovo pacchetto NuGet](media/nuget-walkthrough-packages-menu.png)
 
-2. Verrà avviata la **finestra Gestisci NuGet** pacchetti. Assicurarsi che l'elenco a discesa Origine nell'angolo superiore sinistro della finestra di dialogo sia impostato su , in modo che si eserciti la ricerca nel repository centrale `nuget.org` NuGet pacchetto.
+2. Verrà visualizzata la **finestra Gestisci NuGet pacchetti.** Assicurarsi che l'elenco a discesa Origine nell'angolo superiore sinistro della finestra di dialogo sia impostato su , in modo da eseguire la ricerca nel repository centrale `nuget.org` NuGet pacchetti.
 
     ![Elenco di pacchetti NuGet](media/nuget-walkthrough-add-packages1.png)
 
 3. Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio `EntityFramework`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante **Aggiungi pacchetto** per avviare l'installazione.
 
-    ![Aggiungere un pacchetto di NuGet EntityFramework](media/nuget-walkthrough-add-packages2.png)
+    ![Aggiungere il pacchetto di NuGet EntityFramework](media/nuget-walkthrough-add-packages2.png)
 
 4. Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzione cambierà a seconda del tipo di progetto che si sta modificando:
 
@@ -43,7 +43,7 @@ Per un'introduzione all'NuGet in Visual Studio per Mac, vedere Avvio [rapido: In
     
     **Progetti .NET Core**
 
-    * Il **nodo > NuGet** dipendenze visualizza ogni NuGet pacchetto scaricato. È possibile aggiornare o rimuovere un pacchetto dall'elenco.
+    * Il **nodo > NuGet** dipendenze visualizza NuGet pacchetto scaricato. È possibile aggiornare o rimuovere un pacchetto dall'elenco.
 
 ## <a name="using-nuget-packages"></a>Uso di pacchetti NuGet
 
@@ -59,9 +59,9 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Aggiornamento dei pacchetti
 
-Gli aggiornamenti dei pacchetti possono essere eserciti tutti contemporaneamente, facendo clic con il pulsante destro del mouse sul nodo **Dipendenze** **(nodo** Pacchetti per i progetti Xamarin) o singolarmente in ogni pacchetto. Quando è disponibile una nuova versione di NuGet pacchetto, viene visualizzata un'icona di aggiornamento freccia ![ su con cerchio ](media/nuget-walkthrough-update-icon.png) .
+È possibile eseguire tutti gli aggiornamenti dei pacchetti  contemporaneamente facendo clic con il pulsante destro del mouse sul nodo Dipendenze **(nodo** Pacchetti per i progetti Xamarin) o singolarmente in ogni pacchetto. Quando è disponibile una nuova versione di NuGet pacchetto, viene visualizzata un'icona di aggiornamento freccia ![ su con cerchio ](media/nuget-walkthrough-update-icon.png) .
 
-Fare clic con il pulsante **destro del mouse su Dipendenze** per accedere al menu di scelta rapida e scegliere **Aggiorna** per aggiornare tutti i pacchetti:
+Fare clic con il pulsante destro **del mouse su Dipendenze** per accedere al menu di scelta rapida **e scegliere Aggiorna** per aggiornare tutti i pacchetti:
 
 ![Menu di scelta rapida Dipendenze con il menu Aggiorna evidenziato](media/nuget-walkthrough-packages-menu-update.png)
 
@@ -72,24 +72,24 @@ Fare clic con il pulsante **destro del mouse su Dipendenze** per accedere al men
 Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e influiscono su tutti i progetti nella soluzione.
 
 ### <a name="updating-to-pre-release-versions-of-packages"></a>Aggiornamento alle versioni non definitiva dei pacchetti
-Per eseguire l'aggiornamento a una versione non definitiva più  recente di un pacchetto, è possibile fare clic con il pulsante destro del mouse su Dipendenze per aprire il menu di scelta rapida e scegliere il menu **Gestisci** NuGet pacchetti.
+Per eseguire l'aggiornamento a una versione **non definitiva** più  recente di un pacchetto, è possibile fare clic con il pulsante destro del mouse su Dipendenze per aprire il menu di scelta rapida e scegliere il menu Gestisci NuGet pacchetti.
 
-![Menu di scelta rapida Dipendenze con Gestisci NuGet pacchetti... menu evidenziato](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+![Menu di scelta rapida Dipendenze con Gestisci NuGet distribuzione... menu evidenziato](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
 
-Selezionare la **casella di controllo Mostra pacchetti non** definitiva nella parte inferiore della finestra di dialogo.
+Selezionare la **casella di controllo Mostra pacchetti di versioni non** definitiva nella parte inferiore della finestra di dialogo.
 
-![Finestra NuGet di dialogo Gestisci pacchetti con l'opzione "Mostra pacchetti in versione non definitiva" selezionata](media/nuget-walkthrough-show-pre-release-packages.png)
+![Finestra NuGet gestione pacchetti aperta con l'opzione "Mostra pacchetti in versione non definitiva" selezionata](media/nuget-walkthrough-show-pre-release-packages.png)
 
-Infine, nella scheda **Aggiornamenti** della finestra di dialogo selezionare il pacchetto da aggiornare  e scegliere la nuova versione non definitiva dall'elenco a discesa Nuova versione e fare clic su **Aggiorna pacchetto**.
+Infine, nella scheda **Aggiornamenti** della finestra di dialogo selezionare il pacchetto che si  vuole aggiornare e scegliere la nuova versione non definitiva dall'elenco a discesa Nuova versione e fare clic su **Aggiorna pacchetto**.
 
-![Finestra NuGet di dialogo Gestisci pacchetti aperta nella scheda Installato, con un pacchetto selezionato e l'elenco a discesa Nuova versione aperto.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
+![Finestra NuGet gestione pacchetti aperta nella scheda Installati, con un pacchetto selezionato e l'elenco a discesa Nuova versione aperto.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Individuazione di pacchetti obsoleti
 Nella finestra della soluzione è possibile visualizzare la versione di un pacchetto attualmente installata e fare clic con il pulsante destro del mouse sul pacchetto da aggiornare.
 
 ![Menu Pacchetti con le opzioni Aggiorna, Rimuovi, Aggiorna](media/nuget-walkthrough-PackageMenu.png)
 
-Verrà visualizzata anche una notifica accanto al nome del pacchetto quando è disponibile una nuova versione di un pacchetto, quindi è possibile decidere se aggiornarlo.
+Verrà visualizzata anche una notifica accanto al nome del pacchetto quando è disponibile una nuova versione di un pacchetto, pertanto è possibile decidere se è possibile aggiornarlo.
 
 ![Notifica visualizzata quando è disponibile una nuova versione del pacchetto](media/nuget-walkthrough-package-update-available.png)
 
@@ -126,7 +126,7 @@ Gestione pacchetti installa la versione del pacchetto selezionata in tutti i pro
 
 ## <a name="adding-package-sources"></a>Aggiunta di origini dei pacchetti
 
-I pacchetti disponibili per l'installazione vengono recuperati inizialmente da nuget.org. Tuttavia, è possibile aggiungere altri percorsi dei pacchetti Visual Studio per Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
+I pacchetti disponibili per l'installazione vengono inizialmente recuperati da nuget.org. Tuttavia, è possibile aggiungere altri percorsi dei pacchetti Visual Studio per Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
 
 In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origini** per visualizzare e modificare l'elenco di origini dei pacchetti. Si noti che le origini possono essere un server remoto (specificato da un URL) o una directory locale.
 
@@ -138,7 +138,7 @@ Fare clic su **Aggiungi** per configurare una nuova origine. Immettere un nome d
 
 Quando si cercano i pacchetti è quindi possibile selezionare origini diverse:
 
-![Finestra di dialogo Aggiungi origine pacchetto che mostra un elenco a discesa con un elenco di origini pacchetto.](media/nuget-walkthrough-PackageSource3.png)
+![Finestra di dialogo Aggiungi origine pacchetto che mostra un elenco a discesa con un elenco di origini dei pacchetti.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Controllo della versione
 

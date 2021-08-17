@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 933856cffcf7a012be7d9774b3d703aa92e335fb5d7939d804ef49043875f1a7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ded908acf84f4d932c95fe70d8dab209caa2b44
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388396"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028683"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 ## <a name="animation-fundamentals"></a>Nozioni fondamentali sulle animazioni
@@ -154,7 +154,7 @@ Illustrare informazioni complesse e variabili:
 - Ripristinare lo stato cronologico
 
 #### <a name="attract-attention"></a>Attirare l'attenzione
-Se l'obiettivo è quello di attirare l'attenzione dell'utente su un singolo elemento da diversi elementi o di avvisare l'utente di informazioni aggiornate, potrebbe essere appropriata un'animazione. Ad esempio, la pagina iniziale dell'applicazione potrebbe usare un pulsante Attività iniziali che scorre sul posto dopo il caricamento della pagina.
+Se l'obiettivo è quello di attirare l'attenzione dell'utente su un singolo elemento da diversi elementi o di avvisare l'utente di informazioni aggiornate, potrebbe essere appropriata un'animazione. Ad esempio, la pagina iniziale dell'applicazione potrebbe usare un Attività iniziali che scorre sul posto dopo il caricamento della pagina.
 
 Di norma, l'ultimo elemento in movimento sullo schermo attrae l'attenzione dell'utente.  In una serie di elementi animati, l'attenzione dell'utente seguirà l'ultimo oggetto in movimento.
 
@@ -338,7 +338,7 @@ Con questo modello, l'elemento dell'interfaccia utente ruota.
 
 ![Animazione di rotazione degli elementi dell'interfaccia utente](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animazione di rotazione degli elementi dell'interfaccia utente
 
-##### <a name="correct-usage"></a>Uso corretto
+##### <a name="correct-usage"></a>Utilizzo corretto
 Solo per l'indicatore di stato di rotazione indeterminato.
 
 ##### <a name="animation-properties"></a>Proprietà dell'animazione
@@ -355,9 +355,9 @@ Indicatore di stato indeterminato (rotazione)
 ### <a name="common-shell-ui-actions-and-recommended-animations"></a>Azioni comuni dell'interfaccia utente della shell e animazioni consigliate
 
 #### <a name="tab-open"></a>Scheda aperta
-![Animazione per l'apertura di schede](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202-h_TabOpen")<br />Animazione per l'apertura di schede
+![Animazione con apertura a schede](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202-h_TabOpen")<br />Animazione con apertura a schede
 
-- Stile: vengono visualizzati
+- Stile: viene visualizzato
 
 - Durata: zero secondi
 
@@ -375,17 +375,17 @@ Indicatore di stato indeterminato (rotazione)
 
 - Durata: 200 millisecondi
 
-#### <a name="close-floating-document"></a>Chiudere il documento mobile
-![Animazione chiudi documento mobile](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202-k_CloseFloatingDocument")<br />Animazione chiudi documento mobile
+#### <a name="close-floating-document"></a>Chiudere un documento mobile
+![Chiudere l'animazione del documento mobile](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202-k_CloseFloatingDocument")<br />Chiudere l'animazione del documento mobile
 
-- Stile: vengono visualizzati
+- Stile: viene visualizzato
 
 - Durata: 200 millisecondi
 
 #### <a name="window-state-transition"></a>Transizione dello stato della finestra
 ![Animazione della transizione dello stato della finestra](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202-l_WindowStateTransition")<br />Animazione della transizione dello stato della finestra
 
-- Stile: per coerenza con altre finestre, consentire al sistema operativo corrente di definire l'animazione di chiusura del documento.
+- Stile: per essere coerenti con altre finestre, consentire al sistema operativo corrente di definire l'animazione di chiusura del documento.
 
 - Durata: 200 millisecondi
 
@@ -397,15 +397,15 @@ Indicatore di stato indeterminato (rotazione)
 - Durata: 200 millisecondi
 
 #### <a name="menu-close"></a>Chiusura del menu
-![Animazione di chiusura menu](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202-n_MenuClose")<br />Animazione di chiusura menu
+![Animazione di chiusura del menu](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202-n_MenuClose")<br />Animazione di chiusura del menu
 
 - Stile: dissolvenza in uscita
 
 - Durata: 200 millisecondi
 
 #### <a name="auto-hide-tool-window-reveal"></a>Visualizzazione della finestra degli strumenti nascondi automaticamente
-![Animazione di visualizzazione della finestra degli strumenti Nascondi automaticamente](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")<br />Animazione di visualizzazione della finestra degli strumenti Nascondi automaticamente
+![Nascondere automaticamente l'animazione della finestra degli strumenti](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")<br />Nascondere automaticamente l'animazione della finestra degli strumenti
 
-- Stile: vengono visualizzati
+- Stile: viene visualizzato
 
 - Durata: zero secondi

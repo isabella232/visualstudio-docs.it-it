@@ -9,26 +9,27 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: fc92bbc32a454208f3d455734b7697a2e69037b4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8972722c0f65f4d007db7173ef41b7a40dba1208
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061155"
 ---
 # <a name="properties-of-domain-relationships"></a>Proprietà delle relazioni di dominio
-Le proprietà nella tabella seguente sono associate a una relazione di dominio. Per informazioni sulle relazioni di dominio, vedere [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Le proprietà nella tabella seguente sono associate a una relazione di dominio. Per informazioni sulle relazioni di dominio, vedere [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per altre informazioni su come usare queste proprietà, vedere [Personalizzazione](../modeling/customizing-and-extending-a-domain-specific-language.md)ed estensione di un Domain-Specific language .
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
 |Modificatore di accesso|Livello di accesso della relazione di dominio ( `public` o `internal` ).|`public`|
 |Attributi personalizzati|Usato per aggiungere attributi alla classe del codice sorgente generata dalla relazione di dominio.|\<none>|
-|Genera una derivazione doppia|Se , vengono generate sia una classe di base che una classe `True` parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [Override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
+|Genera una derivazione doppia|Se , vengono generate sia una classe di base che una `True` classe parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [Override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Ha un costruttore personalizzato|Se `True` , indica che nel codice sorgente viene fornito un costruttore personalizzato. Per altre informazioni, vedere [Override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dalla relazione di dominio ( `none` o `abstract` `sealed` ).|\<none>|
-|Consente duplicati|Se `True` , è possibile creare collegamenti duplicati della relazione di dominio tra gli stessi due elementi.|`False`|
+|Consente duplicati|Se , è possibile creare collegamenti duplicati della relazione di dominio `True` tra gli stessi due elementi.|`False`|
 |Relazioni di base|Se la relazione di dominio è derivata, la relazione di base della relazione di dominio.|\<none>|
 |È in esecuzione l'incorporamento|Se `True` , la relazione di dominio è una relazione di incorporamento. Se `False` , la relazione è una relazione di riferimento.|\<both>|
 |Nome|Nome della relazione di dominio.|Nome corrente|

@@ -1,6 +1,6 @@
 ---
-title: Eseguire il debug di un'applicazione SharePoint con IntelliTrace
-description: Usare IntelliTrace per eseguire più facilmente il debug e correggere le applicazioni di SharePoint. Creare e aggiungere codice a un ricevitore di funzionalità. Testare il progetto. Raccogliere dati IntelliTrace.
+title: Eseguire il SharePoint'applicazione con IntelliTrace
+description: Usare IntelliTrace per eseguire più facilmente il debug e correggere SharePoint applicazioni. Creare e aggiungere codice a un ricevitore di funzionalità. Testare il progetto. Raccogliere dati IntelliTrace.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,22 +16,23 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: cf7fa6c7255e05c465d6c209db5e9581a49aee64
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 60a177fec8edf3b2e201eaff63ee0ff0ed4c8d72
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112833"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123242"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: Eseguire il debug di un'applicazione SharePoint tramite IntelliTrace
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: Eseguire il debug SharePoint'applicazione usando IntelliTrace
 
-Con IntelliTrace è possibile eseguire più facilmente il debug di soluzioni SharePoint. I debugger tradizionali offrono solo uno snapshot di una soluzione al momento. È tuttavia possibile usare IntelliTrace per esaminare gli eventi passati che si sono verificati nella soluzione e il contesto in cui si sono verificati e passare al codice.
+Con IntelliTrace è possibile eseguire più facilmente il debug SharePoint soluzioni. I debugger tradizionali offrono solo uno snapshot di una soluzione al momento. È tuttavia possibile usare IntelliTrace per esaminare gli eventi precedenti che si sono verificati nella soluzione e il contesto in cui si sono verificati e passare al codice.
 
  Questa procedura dettagliata illustra come eseguire il debug di un progetto SharePoint in Visual Studio usando Microsoft Monitoring Agent per raccogliere dati IntelliTrace dalle applicazioni distribuite. Per analizzare i dati, è necessario usare Visual Studio Enterprise. Questo progetto incorpora un ricevitore di funzionalità che, quando la funzionalità viene attivata, aggiunge un'attività all'elenco Attività e un annuncio all'elenco Annunci. Quando la funzionalità viene disattivata, l'attività viene contrassegnata come completata e viene aggiunto un secondo annuncio all'elenco Annunci. Tuttavia, la procedura contiene un errore logico che impedisce la corretta esecuzione del progetto. IntelliTrace consente di individuare e correggere l'errore.
 
- **Si applica a:** Le informazioni contenute in questo argomento si applicano alle soluzioni SharePoint create in Visual Studio.
+ **Si applica a:** Le informazioni contenute in questo argomento si applicano SharePoint soluzioni create in Visual Studio.
 
  Vengono illustrate le attività seguenti:
 
@@ -39,9 +40,9 @@ Con IntelliTrace è possibile eseguire più facilmente il debug di soluzioni Sha
 
 - [Aggiungere codice al ricevitore di funzionalità](#add-code-to-the-feature-receiver)
 
-- [Testare il progetto](#test-the-project)
+- [Testare il Project](#test-the-project)
 
-- [Raccogliere dati IntelliTrace usando Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
+- [Raccogliere dati IntelliTrace tramite Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
 - [Eseguire il debug e correggere la soluzione SharePoint](#debug-and-fix-the-sharepoint-solution)
 
@@ -59,15 +60,15 @@ Per completare questa procedura dettagliata, è necessario disporre dei componen
 
 In primo luogo, si crea un progetto SharePoint vuoto con un ricevitore di funzionalità.
 
-1. Creare un progetto di soluzione SharePoint per la versione di SharePoint installata e assegnare al progetto il nome **IntelliTraceTest.**
+1. Creare un SharePoint di soluzione con destinazione la versione di SharePoint installata e deno assegnare al progetto il nome **IntelliTraceTest.**
 
-     Verrà **visualizzata la Personalizzazione guidata SharePoint,** in cui è possibile specificare sia il sito di SharePoint per il progetto che il livello di attendibilità della soluzione.
+     Verrà **SharePoint personalizzazione** guidata funzionalità, in cui è possibile specificare sia il sito SharePoint per il progetto che il livello di attendibilità della soluzione.
 
 2. Scegliere il **pulsante di opzione Distribuisci** come soluzione farm e quindi scegliere **il pulsante** Fine.
 
-     IntelliTrace funziona solo in soluzioni farm.
+     IntelliTrace funziona solo su soluzioni farm.
 
-3. In **Esplora soluzioni** aprire il menu di scelta rapida per il **nodo Funzionalità** e quindi scegliere Aggiungi **funzionalità.**
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per il **nodo** Funzionalità e quindi scegliere **Aggiungi funzionalità.**
 
      *Viene visualizzato Feature1.feature.*
 
@@ -75,9 +76,9 @@ In primo luogo, si crea un progetto SharePoint vuoto con un ricevitore di funzio
 
 ## <a name="add-code-to-the-feature-receiver"></a>Aggiungere codice al ricevitore di funzionalità
 
-Aggiungere quindi il codice a due metodi nel ricevitore di funzionalità: `FeatureActivated` e `FeatureDeactivating` . Questi metodi vengono attivati rispettivamente ogni volta che una funzionalità viene attivata o disattivata in SharePoint.
+Aggiungere quindi il codice a due metodi nel ricevitore di funzionalità: `FeatureActivated` e `FeatureDeactivating` . Questi metodi vengono attivati ogni volta che una funzionalità viene attivata o disattivata SharePoint, rispettivamente.
 
-1. Nella parte superiore della classe aggiungere il codice seguente, che dichiara le variabili che specificano il sito `Feature1EventReceiver` e il sito secondario di SharePoint:
+1. Nella parte superiore della classe aggiungere il codice seguente, che dichiara le variabili che specificano il SharePoint `Feature1EventReceiver` sito e il sito secondario:
 
     ```vb
     ' SharePoint site and subsite.
@@ -254,7 +255,7 @@ Ora che il codice viene aggiunto al ricevitore di funzionalità e l'agente di ra
 > [!IMPORTANT]
 > Per questo esempio, viene generato un errore nel gestore dell'evento FeatureDeactivating. Più avanti in questa procedura dettagliata si individua questo errore usando il file con estensione iTrace creato dall'agente di raccolta dati.
 
-1. Distribuire la soluzione in SharePoint e quindi aprire il sito di SharePoint in un browser.
+1. Distribuire la soluzione in SharePoint e quindi aprire il SharePoint in un browser.
 
      La funzionalità viene attivata automaticamente, causando l'aggiunta di un annuncio e di un'attività da parte del ricevitore di funzionalità.
 
@@ -264,7 +265,7 @@ Ora che il codice viene aggiunto al ricevitore di funzionalità e l'agente di ra
 
 3. Disattivare la funzionalità seguendo questa procedura:
 
-   1. Scegliere **Impostazioni sito** dal menu Azioni sito in SharePoint.
+   1. Nel menu **Azioni sito** in SharePoint scegliere **Sito Impostazioni**.
 
    2. In **Azioni sito** scegliere il collegamento Gestisci funzionalità **del** sito.
 
@@ -276,16 +277,16 @@ Ora che il codice viene aggiunto al ricevitore di funzionalità e l'agente di ra
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Raccogliere dati IntelliTrace usando Microsoft Monitoring Agent
 
-Se si installa Microsoft Monitoring Agent nel sistema che esegue SharePoint, è possibile eseguire il debug di soluzioni SharePoint usando dati più specifici delle informazioni generiche restituite da IntelliTrace. L'agente funziona al di fuori Visual Studio usando i cmdlet di PowerShell per acquisire informazioni di debug durante l'esecuzione della soluzione SharePoint.
+Se si installa Microsoft Monitoring Agent nel sistema che esegue SharePoint, è possibile eseguire il debug di soluzioni SharePoint usando dati più specifici delle informazioni generiche restituite da IntelliTrace. L'agente funziona al di Visual Studio usando i cmdlet di PowerShell per acquisire informazioni di debug durante l'SharePoint della soluzione.
 
 > [!NOTE]
 > Le informazioni di configurazione contenute in questa sezione sono specifiche di questo esempio. Per altre informazioni sulle altre opzioni di configurazione, vedere [Uso dell'agente di raccolta autonomo IntelliTrace.](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-1. Nel computer che esegue SharePoint, [configurare Microsoft Monitoring Agent e iniziare a monitorare la soluzione](../debugger/using-the-intellitrace-stand-alone-collector.md).
+1. Nel computer che esegue [SharePoint, configurare Microsoft Monitoring Agent e iniziare a monitorare la soluzione](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 2. Disattivare la funzionalità:
 
-   1. Scegliere **Impostazioni sito** dal menu Azioni sito in SharePoint.
+   1. Nel menu **Azioni sito** in SharePoint scegliere **Sito Impostazioni**.
 
    2. In **Azioni sito** scegliere il collegamento Gestisci funzionalità **del** sito.
 
@@ -295,17 +296,17 @@ Se si installa Microsoft Monitoring Agent nel sistema che esegue SharePoint, è 
 
       Si verifica un errore (in questo caso, a causa dell'errore generato nel gestore dell'evento FeatureDeactivating().
 
-3. Nella finestra di PowerShell eseguire il comando [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) per creare il file con estensione iTrace, arrestare il monitoraggio e riavviare la soluzione SharePoint.
+3. Nella finestra di PowerShell eseguire il comando [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) per creare il file con estensione iTrace, arrestare il monitoraggio e riavviare la SharePoint soluzione.
 
      **Stop-WebApplicationMonitoring***"<\<SharePointSite> \\ SharePointAppName \> "*  
 
-## <a name="debug-and-fix-the-sharepoint-solution"></a>Eseguire il debug e correggere la soluzione SharePoint
+## <a name="debug-and-fix-the-sharepoint-solution"></a>Eseguire il debug e correggere la SharePoint soluzione
 
-È ora possibile visualizzare il file di log IntelliTrace in Visual Studio trovare e correggere l'errore nella soluzione SharePoint.
+È ora possibile visualizzare il file di log IntelliTrace in Visual Studio per trovare e correggere l'errore nella SharePoint soluzione.
 
 1. Nella cartella \IntelliTraceLogs aprire il file con estensione iTrace in Visual Studio.
 
-     Verrà **visualizzata la pagina Riepilogo IntelliTrace.** Poiché l'errore non è stato gestito, nell'area delle eccezioni non gestite della sezione **Analisi** viene visualizzato un ID di correlazione di SharePoint (GUID). Scegliere il **pulsante Stack di** chiamate per visualizzare lo stack di chiamate in cui si è verificato l'errore.
+     Verrà **visualizzata la pagina Riepilogo IntelliTrace.** Poiché l'errore non è stato gestito, nell'area delle eccezioni non gestite della  sezione SharePoint viene visualizzato un ID di correlazione (GUID). Scegliere il **pulsante Stack di** chiamate per visualizzare lo stack di chiamate in cui si è verificato l'errore.
 
 2. Scegliere il **pulsante Debug eccezione.**
 
@@ -319,7 +320,7 @@ Se si installa Microsoft Monitoring Agent nel sistema che esegue SharePoint, è 
 
 5. Disattivare la funzionalità seguendo questa procedura:
 
-    1. Scegliere **Impostazioni sito** dal menu Azioni sito in SharePoint.
+    1. Nel menu **Azioni sito** in SharePoint scegliere **Sito Impostazioni**.
 
     2. In **Azioni sito** scegliere il collegamento Gestisci funzionalità **del** sito.
 
@@ -333,6 +334,6 @@ Se si installa Microsoft Monitoring Agent nel sistema che esegue SharePoint, è 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Verificare ed eseguire il debug del codice di SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [Verificare ed eseguire il debug SharePoint codice](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)
-- [Procedura dettagliata: Verificare il codice di SharePoint tramite unit test](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [Procedura dettagliata: Verificare SharePoint codice usando unit test](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

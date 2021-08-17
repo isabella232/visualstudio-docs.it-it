@@ -15,20 +15,20 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 360055d8ee6b1c373313ed674f241f4c3262ddeddecc2a9ba823dae873487baf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a115c87e42f62244687038ab20302b26cbd2a7ee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027461"
 ---
 # <a name="performance-report-overview"></a>Panoramica del rapporto di prestazioni
 È possibile visualizzare i dati di profilatura di una sessione di prestazioni nella finestra **Rapporto di prestazioni** dell'ambiente di sviluppo integrato (IDE) di Visual Studio Team System Development Edition. I dati di profilatura vengono salvati in file con estensione vsp e vsps. Le finestre delle visualizzazioni dei rapporti consentono di visualizzare e analizzare i problemi relativi alle prestazioni delle applicazioni.
 
 > [!CAUTION]
-> Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario mantenere un controllo rigoroso sulla distribuzione dei dati, entrambi nel relativo nativo. *formato vsp* e quando viene esportato in un . *csv* o . *File xml.*
+> Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È consigliabile mantenere un controllo rigoroso sulla distribuzione dei dati, sia nella versione nativa di . *formato vsp* e quando viene esportato in un oggetto . *csv* o . *file xml.*
 >
-> Se i dati di traccia eventi vengono raccolti come parte della sessione di prestazioni, potrebbero essere visualizzate informazioni aggiuntive nel registro di traccia eventi (.*etl*) file. come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.
+> Se i dati di traccia degli eventi vengono raccolti come parte della sessione di prestazioni, è possibile che nel log di traccia eventi vengano visualizzate informazioni aggiuntive (.*etl*) file. come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.
 
 ## <a name="performance-report-window"></a>Finestra Report prestazioni
  La finestra Rapporto di prestazioni fornisce gli strumenti per visualizzare, gestire e filtrare i dati sulle prestazioni e include un controllo query personalizzabile.
@@ -98,4 +98,4 @@ ms.locfileid: "121410437"
 
 ## <a name="see-also"></a>Vedi anche
 - [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)
-- [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)
+- [Visualizzazioni dei report sulle prestazioni](../profiling/performance-report-views.md)

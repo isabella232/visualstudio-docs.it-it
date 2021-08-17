@@ -1,6 +1,6 @@
 ---
 title: Informazioni rapide in un servizio di linguaggio legacy | Microsoft Docs
-description: Informazioni sul supporto per l'operazione di informazioni rapide di IntelliSense per la visualizzazione di informazioni su un identificatore.
+description: Informazioni sul supporto per l'operazione informazioni rapide di IntelliSense per la visualizzazione di informazioni su un identificatore.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,35 +12,36 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90cab5683c7a13aec25b15d75da0117beee34721
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d375672fa25949f85da7551a55c606d21e5c266e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060887"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028878"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Informazioni rapide in un servizio di linguaggio legacy
-Informazioni rapide di IntelliSense mostra informazioni su un identificatore nell'origine quando l'utente posiziona il punto di inserimento nell'identificatore e seleziona **informazioni rapide** dal menu di **IntelliSense** o posiziona il cursore del mouse sull'identificatore. In questo modo viene visualizzata una descrizione comando con informazioni sull'identificatore. Queste informazioni sono in genere costituite dal tipo di identificatore. Quando il motore di debug è attivo, queste informazioni possono includere il valore corrente. Il motore di debug fornisce valori di espressione, mentre il servizio di linguaggio gestisce solo gli identificatori.
+Informazioni rapide di IntelliSense visualizza informazioni su un identificatore nell'origine quando l'utente posiziona il cursore nell'identificatore e seleziona Informazioni rapide dal menu **IntelliSense** o posiziona il cursore del mouse sull'identificatore.  In questo modo viene visualizzata una descrizione comando con informazioni sull'identificatore. Queste informazioni sono in genere costituite dal tipo di identificatore. Quando il motore di debug è attivo, queste informazioni potrebbero includere il valore corrente. Il motore di debug fornisce valori di espressione , mentre il servizio di linguaggio gestisce solo gli identificatori.
 
- I servizi di linguaggio legacy sono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per ulteriori informazioni, vedere [procedura dettagliata: visualizzazione di descrizioni comandi di informazioni rapide](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).
+ I servizi di linguaggio legacy vengono implementati come parte di un PACCHETTO VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio è usare le estensioni MEF. Per altre informazioni, vedere [Procedura dettagliata: visualizzazione delle descrizioni comando di Informazioni rapide.](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
 
 > [!NOTE]
-> Si consiglia di iniziare a usare la nuova API editor appena possibile. Ciò consente di migliorare le prestazioni del servizio di linguaggio e di sfruttare i vantaggi delle nuove funzionalità dell'editor.
+> È consigliabile iniziare a usare la nuova API dell'editor appena possibile. Ciò consente di migliorare le prestazioni del servizio di linguaggio e di sfruttare le nuove funzionalità dell'editor.
 
- Le classi del servizio di linguaggio MPF (Managed Package Framework) forniscono supporto completo per la visualizzazione della descrizione comandi di informazioni rapide di IntelliSense. È sufficiente fornire il testo da visualizzare e abilitare la funzionalità informazioni rapide.
+ Le classi del servizio di linguaggio MPF (Managed Package Framework) offrono supporto completo per la visualizzazione della descrizione comando Informazioni rapide di IntelliSense. È necessario solo specificare il testo da visualizzare e abilitare la funzionalità informazioni rapide.
 
- Il testo da visualizzare viene ottenuto chiamando il parser del <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo con un valore dell'analisi motivo <xref:Microsoft.VisualStudio.Package.ParseReason> . Questo motivo indica al parser di ottenere le informazioni sul tipo (o qualsiasi altro oggetto appropriato da visualizzare nella descrizione comando informazioni rapide) per l'identificatore in corrispondenza della posizione specificata nell' <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto. L' <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto è quello passato al <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo.
+ Il testo da visualizzare viene ottenuto chiamando il parser del <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo con il valore del motivo di analisi <xref:Microsoft.VisualStudio.Package.ParseReason> . Questo motivo indica al parser di ottenere le informazioni sul tipo (o qualsiasi elemento appropriato da visualizzare nella descrizione comando Informazioni rapide) per l'identificatore nella posizione specificata <xref:Microsoft.VisualStudio.Package.ParseRequest> nell'oggetto . <xref:Microsoft.VisualStudio.Package.ParseRequest>L'oggetto è ciò che è stato passato al metodo <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> .
 
- Il parser deve analizzare tutti gli elementi fino alla posizione nell' <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto per determinare i tipi di tutti gli identificatori. Il parser deve quindi ottenere l'identificatore in corrispondenza della posizione della richiesta di analisi. Infine, il parser deve passare i dati delle descrizioni comandi associati a tale identificatore all' <xref:Microsoft.VisualStudio.Package.AuthoringScope> oggetto in modo che l'oggetto possa restituire il testo dal <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> metodo.
+ Il parser deve analizzare tutti gli elementi fino alla posizione nell'oggetto per <xref:Microsoft.VisualStudio.Package.ParseRequest> determinare i tipi di tutti gli identificatori. Il parser deve quindi ottenere l'identificatore nel percorso della richiesta di analisi. Infine, il parser deve passare i dati della descrizione comando associati a tale identificatore all'oggetto in modo che l'oggetto possa restituire <xref:Microsoft.VisualStudio.Package.AuthoringScope> il testo dal metodo <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> .
 
-## <a name="enabling-the-quick-info-feature"></a>Abilitazione della funzionalità informazioni rapide
- Per abilitare la funzionalità informazioni rapide, è necessario impostare `CodeSense` i `QuickInfo` parametri denominati e di <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Questi attributi impostano le <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> proprietà e.
+## <a name="enabling-the-quick-info-feature"></a>Abilitazione della funzionalità Informazioni rapide
+ Per abilitare la funzionalità Informazioni rapide, è necessario impostare `CodeSense` i parametri denominati e di `QuickInfo` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Questi attributi impostano <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> le proprietà <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> e .
 
-## <a name="implementing-the-quick-info-feature"></a>Implementazione della funzionalità informazioni rapide
- La <xref:Microsoft.VisualStudio.Package.ViewFilter> classe gestisce l'operazione di informazioni rapide di IntelliSense. Quando la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe riceve il <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando, la classe chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo con il motivo dell'analisi <xref:Microsoft.VisualStudio.Package.ParseReason> e la posizione del punto di inserimento al momento dell' <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> invio del comando. Il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> parser del metodo deve quindi analizzare l'origine fino al percorso specificato e quindi analizzare l'identificatore nella posizione specificata per determinare gli elementi da visualizzare nella descrizione comando informazioni rapide.
+## <a name="implementing-the-quick-info-feature"></a>Implementazione della funzionalità Informazioni rapide
+ La <xref:Microsoft.VisualStudio.Package.ViewFilter> classe gestisce l'operazione informazioni rapide di IntelliSense. Quando la classe riceve il comando, la classe chiama il metodo con il motivo di analisi e la posizione del punto di ingresso al momento dell'invio <xref:Microsoft.VisualStudio.Package.ViewFilter> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> del <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.ParseReason> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando. Il parser del metodo deve quindi analizzare l'origine fino alla posizione specificata e quindi analizzare l'identificatore nella posizione specificata per determinare cosa visualizzare nella descrizione comando <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Informazioni rapide.
 
- La maggior parte dei parser esegue un'analisi iniziale dell'intero file di origine e archivia i risultati in un albero di analisi. L'analisi completa viene eseguita quando <xref:Microsoft.VisualStudio.Package.ParseReason> viene passato al <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo. Altri tipi di analisi possono quindi utilizzare l'albero di analisi per ottenere le informazioni desiderate.
+ La maggior parte dei parser esegue un'analisi iniziale dell'intero file di origine e archivia i risultati in un albero di analisi. L'analisi completa viene eseguita quando <xref:Microsoft.VisualStudio.Package.ParseReason> viene passato al metodo <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> . Altri tipi di analisi possono quindi usare l'albero di analisi per ottenere le informazioni desiderate.
 
- Ad esempio, il valore del motivo dell'analisi di <xref:Microsoft.VisualStudio.Package.ParseReason> può trovare l'identificatore nella posizione di origine e cercarlo nell'albero di analisi per ottenere le informazioni sul tipo. Queste informazioni sul tipo vengono quindi passate alla <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe e vengono restituite dal <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> metodo.
+ Ad esempio, il valore del motivo di analisi di può trovare l'identificatore nel percorso di origine e cercarlo nell'albero di analisi <xref:Microsoft.VisualStudio.Package.ParseReason> per ottenere le informazioni sul tipo. Queste informazioni sul tipo vengono quindi passate alla <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe e restituite dal <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> metodo .

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a606358b708b49f866063eeefc25b4e0c3fec44cab9fa8689492a475faeb3749
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aee136be82e6037a7a860735f6b262c1e6286ca7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079324"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Questa interfaccia fornisce diversi metodi per accedere al server e alle funzionalità di notifica di una porta.

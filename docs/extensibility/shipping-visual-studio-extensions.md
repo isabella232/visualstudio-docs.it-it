@@ -15,18 +15,18 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55362ac1aa8aa5c04eb2631b689f70cc2ef98e1100b65ef0fcc63da1bf5b8e5b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a57cb6732c1b1cb5fa74381ab7c8bdf8208be08d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305126"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028631"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Distribuzione delle estensioni di Visual Studio
-Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in altri computer, condividerla con amici e colleghi o pubblicarla in Visual Studio Marketplace. In questa sezione vengono illustrate tutte le operazioni necessarie per pubblicare e gestire l'estensione: uso dei file vsix, pubblicazione, localizzazione e aggiornamento.
+Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in altri computer, condividerla con amici e colleghi o pubblicarla in Visual Studio Marketplace. In questa sezione vengono illustrate tutte le operazioni da eseguire per pubblicare e gestire l'estensione: uso di file vsix, pubblicazione, localizzazione e aggiornamento.
 
 ## <a name="working-with-vsix-extensions"></a>Uso delle estensioni VSIX
- È possibile creare estensioni VSIX creando un Project VSIX vuoto e quindi aggiungendo modelli di elemento diversi. Per altre informazioni, vedere [Modello di Project VSIX.](../extensibility/vsix-project-template.md)
+ È possibile creare estensioni VSIX creando un Project VSIX vuoto e quindi aggiungendo modelli di elemento diversi. Per altre informazioni, vedere [VsIX Project Template](../extensibility/vsix-project-template.md).
 
  È possibile usare il formato VSIX per creare un pacchetto di modelli di progetto,  modelli di elemento, VSPackage, componenti di Managed Extensibility Framework (MEF), controlli della casella degli strumenti, assembly e tipi personalizzati (incluse le pagine iniziale personalizzate per Visual Studio 2017). Il formato VSIX usa la distribuzione basata su file. Per altre informazioni sui pacchetti VSIX, vedere [Anatomia di un pacchetto VSIX.](../extensibility/anatomy-of-a-vsix-package.md)
 
