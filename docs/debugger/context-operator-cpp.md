@@ -22,16 +22,17 @@ ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 619162bc4237c71c44f960f7ca1e4337a54f3dd5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b59c4dfca1f56bdd08a2dc810524a698a869dc9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857714"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031393"
 ---
-# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operatore di contesto nel debugger di Visual Studio (C++)
+# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operatore context nel debugger Visual Studio (C++)
 L'operatore di contesto in C++ può essere usato per qualificare la posizione di un punto di interruzione, il nome di una variabile o un'espressione. L'operatore di contesto è utile per specificare un nome da un ambito esterno che altrimenti sarebbe nascosto da un nome locale.
 
 ## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintassi

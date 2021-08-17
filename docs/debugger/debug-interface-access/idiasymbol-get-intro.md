@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 787e153c7047fd6d48edcd4634ca01c772f00808ea16aedd4eb7cf2465ee35aa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9d0db207315cf2bc8dafda9dedd533cacdef261e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404818"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031268"
 ---
 # <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
 Recupera un flag che specifica se la funzione è una funzione virtuale di introduzione.

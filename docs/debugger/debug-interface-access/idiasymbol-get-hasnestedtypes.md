@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di definizioni di tipo annidate.
+description: Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di definizioni di tipi annidati.
 title: IDiaSymbol::get_hasNestedTypes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f1dc89f7aee8c2943914a5616573041cae82a1ae15667c90f5177bfb1b97214e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ef1e8d77e177f7ec0163c7240642abec42c124b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379958"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031328"
 ---
 # <a name="idiasymbolget_hasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
-Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di definizioni di tipo annidate.
+Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di definizioni di tipi annidati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,13 +35,13 @@ HRESULT get_hasNestedTypes (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se il tipo di dati definito dall'utente ha definizioni di tipo annidato; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il tipo di dati definito dall'utente dispone di definizioni di tipo annidato; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 

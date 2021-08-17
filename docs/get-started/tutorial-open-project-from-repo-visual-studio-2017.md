@@ -1,13 +1,13 @@
 ---
-title: 'Esercitazione: Aprire un progetto da un repo in Visual Studio 2017'
+title: 'Esercitazione: Aprire un progetto da un Visual Studio 2017'
 description: Informazioni su come aprire un progetto in un repository Git o Azure DevOps usando Visual Studio 2017.
 ms.custom: vs-acquisition, get-started
 ms.date: 02/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
@@ -15,35 +15,35 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 5543a568f7246d9600ba375d9a1cf19af4cbd2d4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 6b69a138689c7351b51e5674b587911a41eb61c7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389202"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078583"
 ---
-# <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Esercitazione: Aprire un progetto da un repo in Visual Studio 2017
+# <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Esercitazione: Aprire un progetto da un Visual Studio 2017
 
 In questa esercitazione si userà Visual Studio 2017 per connettersi a un repository per la prima volta e quindi aprire un progetto da esso.
 
 > [!TIP]
-> Esiste un nuovo modo completamente integrato per connettersi a un repository GitHub in [Visual Studio 2019.](https://visualstudio.microsoft.com/downloads) Per altre informazioni, vedere la pagina Nuova esperienza [**Git in Visual Studio 2019.**](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+> Esiste un nuovo modo completamente integrato per connettersi a un GitHub di lavoro in [Visual Studio 2019.](https://visualstudio.microsoft.com/downloads) Per altre informazioni, vedere la [**pagina Nuova esperienza Git Visual Studio 2019.**](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
 
-## <a name="open-a-project-from-a-github-repo-by-using-visual-studio-2017"></a>Aprire un progetto da un repository GitHub usando Visual Studio 2017
+## <a name="open-a-project-from-a-github-repo-by-using-visual-studio-2017"></a>Aprire un progetto da un GitHub 2017 usando Visual Studio 2017
 
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu superiore selezionare **Apri file**  >    >  **da Controllo del codice sorgente**.
+1. Nella barra dei menu superiore selezionare **Apri file** dal controllo del  >    >  **codice sorgente.**
 
    Si apre il riquadro **Team Explorer - Connetti**.
 
     ![Finestra Team Explorer nell'IDE di Visual Studio](./media/open-proj-repo-team-explorer.png)
 
-1. Nella sezione **Repository Git** locali selezionare **Clona**.
+1. Nella sezione **Repository Git locali** selezionare **Clona.**
 
     ![Scegliere Clona dalla sezione Repository Git locali](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. Nella casella * Immettere l'URL di un **repository Git** per clonare _, digitare o incollare l'URL per il repository e quindi premere _*Invio**. Se viene visualizzata la richiesta di accedere a GitHub, eseguire questa operazione.
+1. Nella casella * Immettere **l'URL** di un repository Git per clonare _, digitare o incollare l'URL del repository e quindi premere _*Invio**. Se viene visualizzata la richiesta di accedere a GitHub, eseguire questa operazione.
 
    Quando Visual Studio ha clonato il repository, Team Explorer si chiude e si apre Esplora soluzioni. Viene visualizzato il messaggio *Fare clic sopra su "Soluzioni e cartelle" per visualizzare un elenco di soluzioni*. Scegliere **Soluzioni e cartelle**.
 
@@ -68,7 +68,7 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
 
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu superiore selezionare **Apri file**  >    >  **da Controllo del codice sorgente**.
+1. Nella barra dei menu superiore selezionare **Apri file** dal controllo del  >    >  **codice sorgente.**
 
    Si apre il riquadro **Team Explorer - Connetti**.
 
@@ -76,17 +76,17 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
 
 1. Esistono due modi per connettersi al repository Azure DevOps:
 
-      - Nella sezione **Provider di servizi ospitati** selezionare **Connetti...**.
+      - Nella sezione **Provider di servizi ospitati** selezionare **Connessione...**.
 
         ![La sezione Provider di servizi ospitati della finestra Team Explorer nell'IDE di Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - **Nell'elenco a** discesa Gestisci connessioni selezionare Connetti a **un progetto...**.
+      - **Nell'elenco a** discesa Gestisci connessioni selezionare Connessione **a un Project...**.
 
         ![La sezione Gestione connessioni della finestra Team Explorer nell'IDE di Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
-1. Nella finestra **di dialogo Connetti a un** progetto scegliere il repo a cui connettersi e quindi selezionare **Clona**.
+1. Nella finestra **Connessione a un Project** scegliere il repo a cui connettersi e quindi selezionare **Clona.**
 
-      ![Finestra di dialogo "Connetti a un progetto" generata dall'Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+      ![Finestra di Connessione a un Project' generata da Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
     > Ciò che compare nella casella di riepilogo dipende dai repository Azure DevOps ai quali si ha accesso.
@@ -101,7 +101,7 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Se si è pronti per creare codice con Visual Studio 2017, vedere una delle esercitazioni specifiche del linguaggio seguenti:
+Se si è pronti a creare codice con Visual Studio 2017, approfondire una delle esercitazioni seguenti specifiche del linguaggio:
 
 - [Visual Studio esercitazioni | **C#**](./csharp/index.yml)
 - [Esercitazioni di Visual Studio | **Visual Basic**](./visual-basic/index.yml)
@@ -111,7 +111,7 @@ Se si è pronti per creare codice con Visual Studio 2017, vedere una delle eserc
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Aprire un progetto da un repo in Visual Studio 2019](tutorial-open-project-from-repo-visual-studio-2019.md)
+- [Aprire un progetto da un Visual Studio 2019](tutorial-open-project-from-repo-visual-studio-2019.md)
 - [Nuova esperienza Git in Visual Studio 2019](../ide/git-with-visual-studio.md)
 - [Azure DevOps Services: Introduzione a Azure Repos e Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn: Introduzione a Azure DevOps](/learn/modules/get-started-with-devops/)

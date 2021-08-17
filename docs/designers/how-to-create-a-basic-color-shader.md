@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare uno shader con colore di base'
-description: Informazioni su come usare la finestra di progettazione shader e il linguaggio di Graph shader diretto per creare uno shader con colore flat che imposta il colore finale su un valore di colore RGB costante.
+description: Informazioni su come usare Progettazione shader e Graph Linguaggio shader per creare uno shader con colore flat che imposta il colore finale su un valore di colore RGB costante.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,14 +8,15 @@ ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3c90496050754cc79c8bd774c0faa246e21512
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ecb8cbec45632ea01f5334ce4e6d0a2edbb9a1a3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917046"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030477"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedura: Creare uno shader con colore di base
 
@@ -48,7 +49,7 @@ Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)
+- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

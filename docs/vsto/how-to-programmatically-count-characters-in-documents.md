@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 68ddc86183eacd7f76e39bb06e47968c0129849c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 6afe6cf9623cfb2594a1d7ce93f9fda890166612590c00662effdf55e8b03061
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824004"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440786"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Procedura: Contare i caratteri nei documenti a livello di codice
   Il primo carattere in un documento è nella posizione del carattere 0, che rappresenta il punto di inserimento. La posizione dell'ultimo carattere è uguale al numero totale di caratteri nel documento. È possibile determinare il numero di caratteri in un documento usando la proprietà <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> della raccolta <xref:Microsoft.Office.Interop.Word.Characters> .
@@ -42,7 +43,7 @@ ms.locfileid: "107824004"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet99":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet99":::
 
-## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Per visualizzare il numero di caratteri in un componente aggiuntivo VSTO
+## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Per visualizzare il numero di caratteri in un VSTO componente aggiuntivo
 
 1. Selezionare l'intero documento. L'esempio di codice seguente seleziona il documento attivo.
 

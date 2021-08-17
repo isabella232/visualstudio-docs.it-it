@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Usare elementi Built-In colorabili | Microsoft Docs'
+title: 'Procedura: Usare Built-In elementi colorabili | Microsoft Docs'
 description: Informazioni su come usare gli elementi colorabili predefiniti nel Visual Studio di sviluppo integrato (IDE) per il servizio di linguaggio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -26,7 +26,7 @@ Prima di usare gli elementi colorabili predefiniti, è necessario segnalare all'
 
 ## <a name="to-use-built-in-colorable-items"></a>Per usare elementi colorabili predefiniti
 
-1. In **HKEY_LOCAL_MACHINE\VisualStudio\\<X.Y>\Languages\Language Services \\<Language Name \>**, dove è una versione di e è il nome della lingua, creare un valore di voce del Registro di sistema \<X.Y> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \<Language Name> DWORD denominato **RequestStockColors**.
+1. In **HKEY_LOCAL_MACHINE\VisualStudio\\<X.Y>\Languages\Language Services \\<Language Name \>**, dove è una versione di e è il nome della lingua, creare un valore di voce del Registro di sistema DWORD denominato \<X.Y> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \<Language Name> **RequestStockColors**.
 
 2. Impostare il valore della voce del Registro di sistema **RequestStockColors** su *1.*
 

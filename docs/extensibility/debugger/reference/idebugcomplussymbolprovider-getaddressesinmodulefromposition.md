@@ -1,5 +1,5 @@
 ---
-description: Mappe una posizione del documento nel modulo specificato in una matrice di indirizzi di debug.
+description: Mappe posizione del documento nel modulo specificato in una matrice di indirizzi di debug.
 title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121452225"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-Mappe una posizione del documento nel modulo specificato in una matrice di indirizzi di debug.
+Mappe posizione del documento nel modulo specificato in una matrice di indirizzi di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-[in] Identificatore del dominio applicazione.
+[in] Identificatore di dominio dell'applicazione.
 
 `guidModule`\
 [in] Identificatore univoco del modulo.
@@ -75,7 +75,7 @@ int GetAddressesInModuleFromPosition(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+ L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

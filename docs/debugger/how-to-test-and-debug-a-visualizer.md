@@ -17,14 +17,15 @@ ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fa97453d08650b78a02eda873a01afe9e376caec
-ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
+ms.openlocfilehash: 139c0c0b2cce08d211e3d318d8ab90d0dd5a368f08004133f1ef31b3f58a257a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "113298244"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453386"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Procedura: testare un visualizzatore ed eseguirne il debug
 Dopo avere scritto un visualizzatore, è necessario testarlo ed eseguirne il debug.

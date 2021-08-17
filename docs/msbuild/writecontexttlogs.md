@@ -1,6 +1,6 @@
 ---
 title: WriteContextTLogs | Microsoft Docs
-description: Informazioni sulla sintassi, i requisiti e il valore restituito per WriteContextTLogs, che consente di scrivere i file di log per il contesto corrente.
+description: Informazioni su sintassi, requisiti e valore restituito per WriteContextTLogs, che scrive i file di log per il contesto corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,14 +15,15 @@ ms.assetid: ffc6c7be-3f22-4624-9ffc-0122fe72b6ec
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b44777f41c4fac3d36cb79222d48a93c5c1cf0b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32f692012c5a60caf4988142b03b5610a0ebf717
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888004"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076970"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 
@@ -46,7 +47,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 
 ## <a name="return-value"></a>Valore restituito
 
- **HRESULT** con il bit **succeeded** impostato se il contesto di rilevamento è stato creato.
+ HRESULT **con** il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato creato.
 
 ## <a name="requirements"></a>Requisiti
 

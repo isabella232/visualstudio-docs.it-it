@@ -13,12 +13,12 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: fe2927a7a863b3825a680096da44afa6d68f1cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd7b9ac5959cdd03b2e2bef576ddc10b402ae12b6dc8aad3ded9fe49ed3bd019
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298678"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122058323"
 ---
 ### <a name="supported-operating-systems"></a>Sistemi operativi supportati  
 
@@ -26,7 +26,7 @@ Nel computer remoto deve essere in esecuzione uno dei seguenti sistemi operativi
   
 - Windows 10 (non telefono)
   
-- Windows 8 o 8,1 (non telefono)
+- Windows 8 o 8.1 (non telefono)
   
 - Windows 7 Service Pack 1  
 
@@ -37,7 +37,7 @@ Nel computer remoto deve essere in esecuzione uno dei seguenti sistemi operativi
 - Windows Server 2008 Service Pack 2 o Windows Server 2008 R2 Service Pack 1
 
 > [!NOTE]
-> Windows Phone richiede una connessione USB per il debug (non richiede Remote Tools).
+> Windows Phone richiede una connessione USB per il debug (non richiede gli strumenti remoti).
   
 ### <a name="supported-hardware-configurations"></a>Configurazioni Hardware supportate  
   
@@ -53,4 +53,4 @@ Nel computer remoto deve essere in esecuzione uno dei seguenti sistemi operativi
   
 ### <a name="network-configuration"></a>Configurazione di rete  
 
-Il computer remoto e quello che esegue Visual Studio devono essere connessi tramite una rete, un gruppo di lavoro o un gruppo home o collegati direttamente con un cavo Ethernet. Il debug tra due computer connessi tramite un proxy non è supportato. Non è consigliabile eseguire il debug su una connessione a larghezza di banda elevata o a bassa latenza, ad esempio Internet remoto, o su Internet tra paesi, e potrebbe avere esito negativo o essere inaccettabile.
+Il computer remoto e quello che esegue Visual Studio devono essere connessi tramite una rete, un gruppo di lavoro o un gruppo home o collegati direttamente con un cavo Ethernet. Il debug tra due computer connessi tramite un proxy non è supportato. Non è consigliabile eseguire il debug su una connessione a latenza elevata o a larghezza di banda ridotta, ad esempio una connessione remota a Internet o su Internet tra paesi diversi, che potrebbe avere esito negativo o essere inaccettabilmente lenta.

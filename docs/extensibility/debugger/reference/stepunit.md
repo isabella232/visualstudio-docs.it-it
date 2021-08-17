@@ -1,6 +1,6 @@
 ---
 description: Specifica l'unità di passaggio per l'esecuzione di istruzioni.
-title: STEPUNIT | Microsoft Docs
+title: Istruzione STEPUNIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -48,7 +48,7 @@ enum enum_STEPUNIT {
 
 ## <a name="fields"></a>Campi
  `STEP_STATEMENT`\
- Passaggi per istruzione.
+ Istruzione per istruzione.
 
  `STEP_LINE`\
  Passaggi per riga.

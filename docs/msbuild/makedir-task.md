@@ -1,6 +1,6 @@
 ---
 title: Attività MakeDir | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività MakeDir per creare directory e, se necessario, tutte le directory padre.
+description: Informazioni su MSBuild'attività MakeDir per creare directory e, se necessario, tutte le directory padre.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: fa7b853ea6706c4958635c399bbc6134e823223c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60f50e6e6ce41c87bae812dcda47534426181eb9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966227"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077244"
 ---
 # <a name="makedir-task"></a>MakeDir (attività)
 
@@ -42,7 +43,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `MakeDir` .
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

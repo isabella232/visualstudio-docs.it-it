@@ -21,16 +21,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 850bef50c5e381c4e15aa1967ca49382362bcf027eabd5330015f06da9d95373
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0fbf7760af7275172bc57ce0aac097e70182b4f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270412"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077101"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 
-Consente MSBuild file di progetto di contenere informazioni non MSBuild file. Qualsiasi elemento `ProjectExtensions` all'interno di un elemento verrà ignorato MSBuild.
+Consente MSBuild file di progetto di contenere informazioni non MSBuild progetto. Qualsiasi elemento all'interno `ProjectExtensions` di un elemento verrà ignorato MSBuild.
 
  \<Project> \<ProjectExtensions>
 
@@ -58,7 +58,7 @@ Consente MSBuild file di progetto di contenere informazioni non MSBuild file. Qu
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file MSBuild progetto. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un MSBuild di progetto. |
 
 ## <a name="remarks"></a>Commenti
 
@@ -82,5 +82,5 @@ Consente MSBuild file di progetto di contenere informazioni non MSBuild file. Qu
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca9d6b7a85de4e9c63f459d1ace0e832143f182a664cad7b6186007dd703a27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b797d8b13ec9f4c8a2d968fa0e363e74b5fa465c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056719"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>Verificare i sottotipi di un progetto in fase di esecuzione
 Un VSPackage che dipende da un sottotipo di progetto personalizzato deve includere la logica per cercare il sottotipo in modo che possa non riuscire correttamente se il sottotipo non è presente. Nella procedura seguente viene illustrato come verificare la presenza di un sottotipo specificato.
@@ -71,5 +71,5 @@ Un VSPackage che dipende da un sottotipo di progetto personalizzato deve include
 
 ## <a name="see-also"></a>Vedi anche
 - [Project sottotipi](../extensibility/internals/project-subtypes.md)
-- [progettazione Project sottotipi](../extensibility/internals/project-subtypes-design.md)
+- [Project di sottotipi](../extensibility/internals/project-subtypes-design.md)
 - [Proprietà e metodi estesi dai sottotipi di progetto](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

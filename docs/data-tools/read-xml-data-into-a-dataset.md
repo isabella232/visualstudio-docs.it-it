@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b188bb7bc7727c84f517e21d45650078817757067604ee2020933c6ac2c7e524
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9fe6058713abf66ab173f4ddf77e9ff71a03bb74
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346986"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075073"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 
@@ -182,7 +182,7 @@ Il **pulsante Leggi XML** legge il file XML nel set di dati. Imposta quindi le p
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Creare il gestore eventi per visualizzare lo schema nella casella di testo
 
-Il **pulsante Mostra** schema crea un oggetto che viene <xref:System.IO.StringWriter> riempito con lo schema e viene visualizzato nel <xref:System.Windows.Forms.TextBox> controllo .
+Il **pulsante Mostra** schema crea un oggetto riempito con lo schema e visualizzato nel controllo <xref:System.IO.StringWriter> <xref:System.Windows.Forms.TextBox> .
 
 1. In **Esplora soluzioni** selezionare **Form1** e quindi selezionare il pulsante **Progettazione visualizzazioni.**
 
@@ -211,7 +211,7 @@ Il **pulsante Mostra** schema crea un oggetto che viene <xref:System.IO.StringWr
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Questa procedura dettagliata illustra le nozioni di base sulla lettura di un file XML in un set di dati, nonché sulla creazione di uno schema in base al contenuto del file XML. Ecco alcune attività che è possibile eseguire successivamente:
+Questa procedura dettagliata illustra le nozioni di base sulla lettura di un file XML in un set di dati, nonché sulla creazione di uno schema basato sul contenuto del file XML. Ecco alcune attività che è possibile eseguire successivamente:
 
 - Modificare i dati nel set di dati e scriverne di nuovo come XML. Per altre informazioni, vedere <xref:System.Data.DataSet.WriteXml%2A>.
 

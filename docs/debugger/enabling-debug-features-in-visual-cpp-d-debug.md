@@ -1,6 +1,6 @@
 ---
 title: Abilitazione delle funzionalità di debug nei progetti C++ (-D_DEBUG) | Microsoft Docs
-description: In Visual C++ le funzionalità di debug vengono abilitate definendo _DEBUG. Informazioni su come eseguire questa operazione e su come collegare un programma MFC per eseguirne il debug.
+description: In Visual C++ abilitare le funzionalità di debug definendo _DEBUG. Informazioni su come eseguire questa operazione e su come collegare un programma MFC per eseguirne il debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -27,12 +27,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ca25cfef098f87f3e752577389e65108692c9eeae31b078b3b4657b7df15f1b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7d8760b4b95f7a68ab1a1b2b89204c5f1e6b2c96
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121263910"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105330"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>Abilitazione delle funzionalità di debug nei progetti C++ (/D_DEBUG)
 In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] le funzionalità di debug, ad esempio le asserzioni, vengono attivate quando si compila il programma definendo il simbolo **_DEBUG**. Il simbolo **_DEBUG** può essere definito in uno dei due modi seguenti:

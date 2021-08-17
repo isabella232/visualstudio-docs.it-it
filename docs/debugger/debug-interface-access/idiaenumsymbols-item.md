@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: edeccffd92749ac7f00ea6f866a37e933eb499c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: db097b023bacfb6719355b246622f9bccda1e595457dd24386803e5fe00f7e9e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129335"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121455087"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 Recupera un simbolo tramite un indice.
@@ -36,7 +36,7 @@ HRESULT Item (
 #### <a name="parameters"></a>Parametri
  index
 
-[in] Indice [dell'oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) da recuperare. L'indice è compreso nell'intervallo da 0 a -1, dove viene restituito dal `count` `count` metodo [IDiaEnumSymbols::get_Count.](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)
+[in] Indice [dell'oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) da recuperare. L'indice è compreso nell'intervallo da 0 a -1, dove viene restituito dal metodo `count` `count` [IDiaEnumSymbols::get_Count.](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)
 
  simbolo
 

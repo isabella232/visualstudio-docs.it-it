@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3aa4089a22988bc6a64ca8928dfd7a2b24e300438337ee8646634a4d34b2ae4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 688e16b038959e0b1005afcab212687e80047d6e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307258"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078817"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 Crea una copia dell'oggetto gestito nello spazio degli indirizzi del motore di debug.

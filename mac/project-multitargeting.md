@@ -14,16 +14,16 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121438599"
 ---
 # <a name="projects-with-multiple-target-frameworks"></a>Progetti con più framework di destinazione
-In Visual Studio per Mac è possibile configurare un progetto Xamarin o .NET Core per l'esecuzione in una delle diverse versioni del .NET Framework e in una delle diverse piattaforme di sistema. Ad esempio, è possibile impostare come destinazione un progetto per l'esecuzione in .NET Framework 4.6 e .NET Core 3.1. 
+In Visual Studio per Mac è possibile configurare un progetto Xamarin o .NET Core per l'esecuzione in una delle diverse versioni del .NET Framework e in una qualsiasi delle diverse piattaforme di sistema. Ad esempio, è possibile impostare come destinazione un progetto per l'esecuzione in .NET Framework 4.6 e .NET Core 3.1. 
 
 Per altre informazioni sui framework di destinazione, vedere [Framework di destinazione](/dotnet/standard/frameworks).
 
 > [!NOTE] 
-> Questo argomento si applica a Visual Studio per Mac. Per Visual Studio sulla Windows, vedere [Panoramica della destinazione del framework.](/visualstudio/ide/visual-studio-multi-targeting-overview)
+> Questo argomento si applica a Visual Studio per Mac. Per Visual Studio su Windows, vedere Panoramica [della destinazione del framework.](/visualstudio/ide/visual-studio-multi-targeting-overview)
 
 ## <a name="targeting-multiple-frameworks"></a>Selezione di più framework come destinazione
 
-I framework di destinazione vengono specificati nel file di progetto, che è possibile modificare facendo clic con il pulsante destro del mouse sul progetto e scegliendo Strumenti > **Comando Modifica** file. Quando viene specificato un singolo framework di destinazione, usare l'elemento TargetFramework. Il file di progetto dell'app console seguente illustra come impostare .NET Core 3.0 come destinazione:
+I framework di destinazione vengono specificati nel file di progetto, che è possibile modificare facendo clic con il pulsante destro del mouse sul progetto e scegliendo Strumenti **> Modifica** file. Quando viene specificato un singolo framework di destinazione, usare l'elemento TargetFramework. Il file di progetto dell'app console seguente illustra come impostare .NET Core 3.0 come destinazione:
 
 ```XML
 <Project Sdk="Microsoft.NET.Sdk">

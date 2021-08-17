@@ -11,17 +11,18 @@ ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 611df036ff876e10096013070cac097bc51a8986
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 66be01a2a6de30aa0a4b8d59cb0e3575890d0a8a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085416"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104677"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
 Specifica lo stile della condizione del punto di interruzione per i punti di interruzione in sospeso e associati.
@@ -47,21 +48,21 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>Campi
 `BP_COND_NONE`\
-Genera il punto di interruzione quando viene raggiunta la posizione del punto di interruzione. Non è stata specificata alcuna condizione del punto di interruzione.
+Genera il punto di interruzione quando viene raggiunta la posizione del punto di interruzione. Nessuna condizione del punto di interruzione specificata.
 
 `BP_COND_WHEN_TRUE`\
 Genera il punto di interruzione solo quando l'espressione condizionale associata al punto di interruzione restituisce `true` .
 
 `BP_COND_WHEN_CHANGED`\
-Genera il punto di interruzione solo quando il valore dell'espressione condizionale associato al punto di interruzione è stato modificato rispetto alla valutazione precedente.
+Genera il punto di interruzione solo quando il valore dell'espressione condizionale associata al punto di interruzione è stato modificato rispetto alla valutazione precedente.
 
 ## <a name="remarks"></a>Commenti
-Utilizzato per il `styleCondition` membro della struttura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .
+Usato per `styleCondition` il membro della [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struttura .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

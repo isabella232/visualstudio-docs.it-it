@@ -1,6 +1,6 @@
 ---
-description: 'IDebugFunctionObject:: Evaluate chiama la funzione e restituisce il valore risultante come un oggetto.'
-title: 'IDebugFunctionObject:: Evaluate | Microsoft Docs'
+description: IDebugFunctionObject::Evaluate chiama la funzione e restituisce il valore risultante come oggetto.
+title: IDebugFunctionObject::Evaluate | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9770878040422d96c31fab8d57df468af614e8e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4bd3d7cae43ce8f49bdae121aca156490d5a197ebdb46c068c6167e79c2e6137
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063591"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451991"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Chiama la funzione e restituisce il valore risultante come un oggetto.
+Chiama la funzione e restituisce il valore risultante come oggetto .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,22 +49,22 @@ int Evaluate(
 
 ## <a name="parameters"></a>Parametri
 `ppParams`\
-in Matrice di oggetti [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta i parametri di input. Ognuno di questi parametri è stato creato con uno dei `Create` metodi dell'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
+[in] Matrice di [oggetti IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresentano i parametri di input. Ognuno di questi parametri è stato creato con uno dei `Create` metodi [nell'interfaccia IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
 `dwParams`\
-in Numero di parametri nella `ppParams` matrice.
+[in] Numero di parametri nella `ppParams` matrice.
 
 `dwTimeout`\
-in Specifica il tempo massimo di attesa, in millisecondi, prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
+[in] Specifica il tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere a tempo indeterminato.
 
 `ppResult`\
-out Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta il valore della funzione come un oggetto.
+[out] Restituisce un [oggetto IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta il valore della funzione come oggetto .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo imposta ed esegue una chiamata alla funzione rappresentata dall'oggetto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
+ Questo metodo configura ed esegue una chiamata alla funzione rappresentata [dall'oggetto IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

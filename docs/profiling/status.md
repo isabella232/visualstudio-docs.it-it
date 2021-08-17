@@ -1,26 +1,27 @@
 ---
 title: Status | Microsoft Docs
-description: Informazioni sul modo in cui l'opzione stato VSPerfCmd.exe Visualizza informazioni sullo stato del profiler e sui processi attualmente in corso di profilatura.
+description: Informazioni su come lVSPerfCmd.exe'opzione Stato visualizza informazioni sullo stato del profiler e su tutti i processi attualmente profilati.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 894afcbf8827fe0b5d5662a4c20e302f8224263f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eda9a164157326e1663e281cb85f11769b331487222386777b22a6c9aefec75b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960039"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121441683"
 ---
 # <a name="status"></a>Stato
-L'opzione *Status di* **VSPerfCmd.exe** visualizza informazioni sullo stato del profiler e di eventuali processi in corso di profilatura.
+ **LVSPerfCmd.exe'opzione Stato** visualizza informazioni sullo stato del profiler e su tutti i processi attualmente profilati.
 
- L'opzione **Status** deve essere l'unica opzione specificata nella riga di comando. Prima di poter visualizzare qualsiasi stato è necessario inizializzare il profiler con l'opzione *Start di* **VSPerfCmd.exe**.
+ L'opzione **Status** deve essere l'unica opzione specificata nella riga di comando. Il profiler deve essere  inizializzato con **lVSPerfCmd.exe'opzione Start** prima di poter visualizzare qualsiasi stato.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3de958589480821c4a0682c94a7f54333e2e473d80c9d718b6586792fddfe72d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5b8b5cb12d287e1f63ff4fa9a766a49de1ab9454
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338956"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030191"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Questo metodo imposta la lingua in cui verrà ospitato il processo. Questo linguaggio può quindi essere usato dal motore di debug (DE) per caricare l'analizzatore di espressioni appropriato.

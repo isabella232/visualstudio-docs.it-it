@@ -11,14 +11,15 @@ ms.assetid: 2ca7fd5a-b2fa-4b3a-9492-0263eafc435b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd1ca95e2f7377c00548658634cbf1e2993e3d8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 67715b3f0c1b7284c40a20f05cb48fd23a57e81c4044d9792a24e5847f0c6177
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158008"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121455239"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Enumera i vari elementi dati del frame contenuti nell'origine dati.
@@ -30,27 +31,27 @@ IDiaEnumFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaEnumFrameData` .
+Nella tabella seguente vengono illustrati i metodi di `IDiaEnumFrameData` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Recupera la `IEnumVARIANT Interface` versione dell'enumeratore.|
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Recupera la versione `IEnumVARIANT Interface` di questo enumeratore.|
 |[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Recupera il numero di elementi dati del frame.|
-|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Recupera un elemento dati di frame per mezzo di un indice.|
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Recupera un elemento dati frame tramite un indice.|
 |[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Recupera un numero specificato di elementi dati del frame nella sequenza di enumerazione.|
 |[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Ignora un numero specificato di elementi dati del frame in una sequenza di enumerazione.|
 |[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
 |[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
-|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Restituisce un frame in base all'indirizzo RVA (relative Virtual Address).|
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Restituisce un frame in base all'indirizzo virtuale relativo ( RVA).|
 |[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Restituisce un frame in base all'indirizzo virtuale (VA).|
 
 ## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia dal metodo [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Per informazioni dettagliate, vedere l'esempio.
+Ottenere questa interfaccia dal [metodo IDiaSession::getEnumTables.](../../debugger/debug-interface-access/idiasession-getenumtables.md) Per informazioni dettagliate, vedere l'esempio.
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come ottenere (la `GetEnumFrameData` funzione) e usare (la `ShowFrameData` funzione) l' `IDiaEnumFrameData` interfaccia. Per un esempio della funzione, vedere l'interfaccia [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) `PrintFrameData` .
+In questo esempio viene illustrato come ottenere (la `GetEnumFrameData` funzione ) e usare (la funzione ) `ShowFrameData` `IDiaEnumFrameData` l'interfaccia . Vedere [l'interfaccia IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) per un esempio della `PrintFrameData` funzione .
 
 ```C++
 
@@ -102,11 +103,11 @@ void ShowFrameData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisiti
-**Intestazione:** Dia2. h
+**Intestazione:** Dia2.h
 
-**Libreria:** diaguids. lib
+**Libreria:** diaguids.lib
 
-**Dll:** msdia80.dll
+**DLL:** msdia80.dll
 
 ## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

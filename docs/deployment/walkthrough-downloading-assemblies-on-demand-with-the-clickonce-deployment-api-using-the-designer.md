@@ -1,6 +1,6 @@
 ---
-title: Scaricare assembly su richiesta mediante progettazione (API ClickOnce)
-description: Informazioni su come contrassegnare determinati assembly nell'applicazione ClickOnce come facoltativi usando la finestra di progettazione e scaricarli quando i Common Language Runtime li richiedono.
+title: Scaricare assembly su richiesta tramite la finestra di progettazione (API ClickOnce)
+description: Informazioni su come contrassegnare alcuni assembly nell'applicazione ClickOnce come facoltativi usando Progettazione e scaricarli quando common language runtime ne ha bisogno.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,16 +17,17 @@ ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bb30b26e859708d295a31bd45b310897e4bcaac
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 1b55cb3ce52864d8649008cd5f4f187c170c5813
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216995"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104963"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: scaricare assembly su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: Scaricare assembly su richiesta con l'API ClickOnce di distribuzione tramite la finestra di progettazione
 Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vengono scaricati alla prima esecuzione dell'applicazione. Alcune parti dell'applicazione possono tuttavia essere usate da un set limitato di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime.
 
 > [!NOTE]
@@ -81,11 +82,11 @@ Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!IN
 
 4. Espandere la casella di riepilogo a discesa **Gruppo** e selezionare **Nuovo**. Immettere il nome `ClickOnceLibrary` come nome del nuovo gruppo.
 
-5. Continuare la pubblicazione dell'applicazione come descritto in [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Continuare a pubblicare l'applicazione come descritto in [Procedura: Pubblicare un'ClickOnce usando la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Per contrassegnare gli assembly come facoltativi nell'applicazione ClickOnce mediante lo Strumento per la generazione e la modifica di manifesti - Client grafico (MageUI.exe)
 
-1. Creare i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti come descritto in [procedura dettagliata: distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Creare i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti come descritto in [Procedura dettagliata: Distribuire manualmente un ClickOnce app.](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 
 2. Prima di chiudere MageUI.exe, selezionare la scheda contenente il manifesto dell'applicazione di distribuzione e all'interno della scheda selezionare la scheda **File** .
 

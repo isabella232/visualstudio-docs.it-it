@@ -1,5 +1,5 @@
 ---
-title: Elementi bitmap | Microsoft Docs
+title: Elemento Bitmap | Microsoft Docs
 description: L'elemento Bitmap definisce una bitmap. La bitmap viene caricata da una risorsa o da un file. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 260a771157b9463ad0b0484e8fc3464f1b23b84396c3a86d1cb693bf5ea22a74
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1fcf2b2eb60bfb99708d78424eaf4f084aca1c6d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308444"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089771"
 ---
 # <a name="bitmap-element"></a>Elemento Bitmap
 Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.

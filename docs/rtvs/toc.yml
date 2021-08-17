@@ -8,7 +8,7 @@
   items:
     - name: Installazione
       href: installing-r-tools-for-visual-studio.md
-    - name: Risorse della Guida
+    - name: Guida
       href: getting-started-help.md
 - name: Esercitazioni
   items:
@@ -56,7 +56,7 @@
       href: variable-explorer.md
     - name: Debug
       href: debugging-r-in-visual-studio.md
-- name: Informazioni di riferimento
+- name: Riferimento
   items:
     - name: Opzioni
       href: options-for-r-tools-in-visual-studio.md

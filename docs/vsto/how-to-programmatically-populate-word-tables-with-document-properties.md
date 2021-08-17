@@ -1,6 +1,6 @@
 ---
 title: Popolare le tabelle di Word con le proprietà del documento a livello di codice
-description: Informazioni su come usare le Visual Studio per popolare a livello di codice una tabella con le proprietà del documento in un documento di Microsoft Word.
+description: Informazioni su come usare Visual Studio per popolare a livello di codice una tabella con le proprietà del documento in un Microsoft Word documento.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a5cb9303e7891ec6657d0fa599921d37a184073f
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 90a41bd7013ad7c28579712e80b1c7553f3838c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122644"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procedura: Popolare tabelle di Word con proprietà di documento a livello di codice
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procedura: Popolare a livello di codice le tabelle di Word con le proprietà del documento
   L'esempio seguente crea una tabella di Microsoft Office Word nella parte superiore del documento e la popola con le proprietà del documento host.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -62,7 +63,7 @@ ms.locfileid: "107827252"
    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet89":::
    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet89":::
 
-## <a name="populate-tables-in-a-vsto-add-in"></a>Popolare tabelle in un componente aggiuntivo VSTO
+## <a name="populate-tables-in-a-vsto-add-in"></a>Popolare le tabelle in un VSTO componente aggiuntivo
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Per creare una tabella e popolarla con le proprietà del documento
 

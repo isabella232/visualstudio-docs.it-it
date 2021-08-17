@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e55a1f6ab92d5d410438e7e8a1823bad85be8e8d0b905c26670619ea54b7b19
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6fb5d2490c7ffdcfcdb9ce40a2614beb4c972544
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404794"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121529"
 ---
 # <a name="idiasymbolget_ismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Recupera un flag che indica se il modulo è un modulo .netmodule (microsoft intermediate language) che contiene solo metadati e nessun simbolo nativo.

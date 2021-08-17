@@ -17,14 +17,15 @@ ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 532850f8bb4ac6198481188c2a57a8db15a13873
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4ceb436ddb6a82308e2d380a1d4bddcafa638438
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389280"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090239"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicare al debugger il tipo da visualizzare usando l'attributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
@@ -61,7 +62,7 @@ La sintassi per un tipo aperto è simile alla seguente:
 
 Se si utilizza un tipo generico come destinazione in `DebuggerTypeProxy`, è necessario adottare questa sintassi. Il meccanismo di `DebuggerTypeProxy` deduce automaticamente i parametri di tipo.
 
-Per altre informazioni sui tipi aperti e chiusi in C#, vedere la sezione 20.5.2 Open and closed types (Specifica del linguaggio [C#),](/dotnet/csharp/language-reference/language-specification)sezione 20.5.2 Tipi aperti e chiusi.
+Per altre informazioni sui tipi aperti e chiusi in C#, vedere la specifica del linguaggio [C#,](/dotnet/csharp/language-reference/language-specification)sezione 20.5.2 Tipi aperti e chiusi.
 
 In Visual Basic non è disponibile la sintassi dei tipi aperti, pertanto non è possibile eseguire la stessa operazione in questo linguaggio, ma è necessario utilizzare una rappresentazione del nome del tipo aperto in formato stringa.
 

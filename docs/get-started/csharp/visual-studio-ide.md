@@ -8,19 +8,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: overview
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e3625e272f6279fa06a863c4feb12adab8c016f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: d4d3d853709a9b818429350728927e57190d15ae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390581"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056947"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>IDE di Visual Studio | C\#
 
@@ -30,7 +30,7 @@ ms.locfileid: "112390581"
 
 È possibile configurare Visual Studio per usare impostazioni di ambiente su misura per gli sviluppatori C#.
 
-1. Sulla barra dei menu scegliere **Strumenti**  >  **Importa ed esporta impostazioni**.
+1. Nella barra dei menu scegliere **Strumenti**  >  **Importa/Esporta** Impostazioni .
 
 2. Nell'**Importazione/Esportazione guidata delle impostazioni** selezionare **Reimposta tutte le impostazioni** nella prima pagina e quindi scegliere **Avanti**.
 

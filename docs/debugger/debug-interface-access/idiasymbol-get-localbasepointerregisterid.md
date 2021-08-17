@@ -1,5 +1,5 @@
 ---
-description: Recupera l'ID del registro che include un puntatore di base alle variabili locali nello stack.
+description: Recupera l'ID del registro che contiene un puntatore di base alle variabili locali nello stack.
 title: IDiaSymbol::get_localBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 9cbcaf00-9ace-45e1-b164-7a9439e08083
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 779f88d2199819d9854d9678b9704e90782e3e32
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: acc288ef526269700fbcdf6c699cdbcf06c10147
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031178"
 ---
 # <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
-Recupera l'ID del registro che include un puntatore di base alle variabili locali nello stack. Utilizzare quando l' [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction` .
+Recupera l'ID del registro che contiene un puntatore di base alle variabili locali nello stack. Usare quando [l'enumerazione SymTagEnum è](../../debugger/debug-interface-access/symtagenum.md) impostata su `SymTagFunction` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,20 +35,20 @@ HRESULT get_localBasePointerRegisterId (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'ID del registro che include un puntatore di base alle variabili locali nello stack.
+[out] Restituisce l'ID del registro che contiene un puntatore di base alle variabili locali nello stack.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Osservazioni
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: dia2. h
+ Intestazione: Dia2.h
 
- Libreria: diaguids. lib
+ Libreria: diaguids.lib
 
  DLL: msdia100.dll
 

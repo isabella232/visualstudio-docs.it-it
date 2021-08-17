@@ -136,4 +136,4 @@ void ExerciseNameProfile()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio informazioni di riferimento sulle API del profiler (native)](../profiling/visual-studio-profiler-api-reference-native.md)

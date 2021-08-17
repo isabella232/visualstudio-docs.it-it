@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23d2b0af61df6b84a9ba7b02d0bb73dcd51f8cbfc07dce816383d67eda9bf531
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d5f04a988b7afae1b4b86c38e6fedba4c5d6d896
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292364"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057473"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 Recupera un elenco di percorsi di codice per una determinata posizione in un file di origine.
@@ -59,7 +59,7 @@ int EnumCodePaths(
 [in] Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta il contesto del codice corrente.
 
 `pFrame`\
-[in] Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta il stack frame associato al punto di interruzione corrente.
+[in] Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta la stack frame associata al punto di interruzione corrente.
 
 `fSource`\
 [in] Diverso da zero ( `TRUE` ) se nella vista **Origine** oppure zero ( ) se nella `FALSE` vista **Disassembly.**

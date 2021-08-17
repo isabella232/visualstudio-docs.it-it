@@ -1,7 +1,7 @@
 ---
-title: Attributo ed elemento di BuildOnLoad (modelli di Visual Studio)
+title: Attributo ed elemento BuildOnLoad (Visual Studio modelli)
 titleSuffix: ''
-description: Informazioni sull'elemento e sull'attributo BuildOnLoad e su come viene specificato se compilare il progetto immediatamente dopo la creazione.
+description: Informazioni sull'attributo e sull'elemento BuildOnLoad e su come specifica se compilare il progetto immediatamente dopo la creazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -17,18 +17,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb563e765c3d50950f61a0ca49e5349a0e7249a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 912616d180d732d987a2ff5aa16fbd522458cafc5b4250ca89fd53bd36867977
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068180"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452654"
 ---
-# <a name="buildonload-attribute-and-element"></a>Attributo ed elemento di BuildOnLoad
+# <a name="buildonload-attribute-and-element"></a>Attributo ed elemento BuildOnLoad
 
-Specifica se compilare il progetto immediatamente dopo la creazione. **BuildOnLoad** è un attributo e un elemento.
+Specifica se compilare il progetto immediatamente dopo la creazione. **BuildOnLoad** è sia un attributo che un elemento.
 
-Gerarchia elementi:
+Gerarchia degli elementi:
 
 ```xml
 <VSTemplate>
@@ -50,7 +50,7 @@ Gerarchia elementi:
 
 ## <a name="text-value"></a>Valore di testo
 
-Per l'elemento **BuildOnLoad** è necessario un valore di testo. Il testo deve essere `true` o `false` , che indica se compilare il progetto immediatamente dopo che è stato creato.
+Per l'elemento **BuildOnLoad** è necessario un valore di testo. Il testo deve essere `true` o , che indica se `false` compilare il progetto immediatamente dopo la creazione.
 
 ## <a name="remarks"></a>Commenti
 
@@ -89,5 +89,5 @@ L'esempio seguente illustra i metadati per un modello C# quando **BuildOnLoad** 
 
 - [Elemento BuildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
 - [Elemento TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)

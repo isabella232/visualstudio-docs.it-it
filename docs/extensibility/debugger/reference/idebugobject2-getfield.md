@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3ad75a3bb1361d0b3f9625fa5fcaa989b75220ee8d8ed20892831fcb962e20c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0377f644a6d1eebdd03f5edd93a524320d7fad7e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307271"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043102"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 Ottiene il tipo di questo oggetto.

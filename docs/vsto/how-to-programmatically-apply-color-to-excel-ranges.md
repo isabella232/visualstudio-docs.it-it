@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121384353"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedura: Applicare il colore agli intervalli Excel a livello di codice
-  Per applicare un colore al testo all'interno di un intervallo di celle, usare un controllo o un oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> Excel intervallo.
+  Per applicare un colore al testo all'interno di un intervallo di celle, usare un controllo o un oggetto Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> intervallo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 

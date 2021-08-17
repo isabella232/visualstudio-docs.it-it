@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86998a5af95a8c8460bfe70c09bc456bde37701d06d1a382663c0c7d83f139ab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0ad7c895dd163cc3576ae6a26b06e679afd58712
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321324"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057226"
 ---
 # <a name="nesting-projects"></a>Annidamento dei progetti
 Enterprise sviluppatori di applicazioni che usano il pacchetto VS possono raggruppare facilmente tipi simili di progetti in usando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *l'annidamento del progetto*. Ad esempio, il progetto Enterprise modello usa progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti di interfaccia utente Web e così via sono raggruppati in un'unica categoria.

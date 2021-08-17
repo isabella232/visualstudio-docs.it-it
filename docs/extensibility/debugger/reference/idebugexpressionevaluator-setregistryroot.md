@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 562965afecd65f2c5af5c26727f2e2c5c3a48139c34dbff9c53be466073b4902
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 42864fa7d4a1250f03a797adf768472db5ae2c02
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360456"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138705"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Questo metodo imposta la radice del Registro di sistema. Usato per il debug side-by-side.

@@ -34,7 +34,7 @@ IEnumCodePaths2 : IUnknown
  Il motore di debug implementa questa interfaccia per rappresentare un elenco di percorsi di codice.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) per ottenere questa interfaccia.
+ Chiamare [EnumCodePaths per](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Nella tabella seguente vengono illustrati i metodi di `IEnumCodePaths2` .
@@ -48,7 +48,7 @@ IEnumCodePaths2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Ottiene il numero di percorsi di codice in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- Un percorso di codice rappresenta un punto di diramazione o una chiamata di funzione in un programma. Un elenco di percorsi di codice rappresenta il percorso attraverso il quale è stata eseguita l'esecuzione del codice.
+ Un percorso di codice rappresenta un punto di ramo o una chiamata di funzione in un programma. Un elenco di percorsi di codice rappresenta il percorso attraverso il quale è stata eseguita l'esecuzione del codice.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

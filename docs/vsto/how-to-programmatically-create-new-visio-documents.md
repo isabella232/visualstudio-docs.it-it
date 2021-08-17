@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare nuovi documenti di Visio a livello di codice'
+title: 'Procedura: Creare nuovi documenti Visio codice'
 description: Informazioni su come creare un nuovo documento di disegno di Microsoft Visio a livello di codice e aggiungerlo alla raccolta Documenti di documenti Visio aperti.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -16,14 +16,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a195996684334cbc658d75f82a5f81f1d69109af45174b3ce6b2f6c996c38ae8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 090ae76b96e4bf108a020474e7b21d6eeabcbc34
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384327"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106081"
 ---
-# <a name="how-to-programmatically-create-new-visio-documents"></a>Procedura: Creare nuovi documenti di Visio a livello di codice
+# <a name="how-to-programmatically-create-new-visio-documents"></a>Procedura: Creare nuovi documenti Visio codice
   Quando si crea un nuovo disegno di Microsoft Office Visio, viene aggiunto alla raccolta `Microsoft.Office.Interop.Visio.Documents` di documenti di Visio aperti. Il metodo `Microsoft.Office.Interop.Visio.Documents.Add` crea quindi un nuovo documento di disegno di Visio. Per altre informazioni, vedere la documentazione di riferimento di VBA relativa al metodo [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .
 
 ## <a name="create-new-blank-documents"></a>Creare nuovi documenti vuoti
@@ -77,7 +77,7 @@ ms.locfileid: "121384327"
 ## <a name="see-also"></a>Vedi anche
 - [Visio soluzioni](../vsto/visio-solutions.md)
 - [Visio panoramica del modello a oggetti](../vsto/visio-object-model-overview.md)
-- [Procedura: Aprire documenti di Visio a livello di codice](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Procedura: Chiudere documenti di Visio a livello di codice](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Procedura: Salvare documenti di Visio a livello di codice](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Procedura: Stampare documenti di Visio a livello di codice](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Procedura: Aprire documenti Visio a livello di codice](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Procedura: Chiudere documenti Visio a livello di codice](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Procedura: Salvare documenti Visio codice](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Procedura: Stampare documenti Visio codice](../vsto/how-to-programmatically-print-visio-documents.md)

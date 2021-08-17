@@ -13,22 +13,23 @@ ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ea63aac7bfa522c7a60492bf50b91be8a6bdd1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd91c105f43eabeef48d7e29c2a0f67b4b3a9513
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056303"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: visualizzare i numeri di riga nell'editor
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: Visualizzare i numeri di riga nell'editor
 
 È possibile visualizzare o nascondere la numerazione delle righe nel codice.
 
 ## <a name="display-line-numbers-in-code"></a>Visualizzare i numeri di riga nel codice
 
-1. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni**. Espandere il nodo **Editor di testo** e selezionare il linguaggio in uso o **Tutti i linguaggi** per attivare i numeri di riga in tutti i linguaggi. (In alternativa, digitare **numero di riga** nella casella di ricerca e selezionare **Abilita o disabilita numeri di riga** nei risultati.)
+1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti**. Espandere il nodo **Editor di testo** e selezionare il linguaggio in uso o **Tutti i linguaggi** per attivare i numeri di riga in tutti i linguaggi. (In alternativa, digitare **numero di riga** nella casella di ricerca e selezionare **Abilita o disabilita numeri di riga** nei risultati.)
 
 2. Selezionare la casella di controllo **Numeri di riga**.
 

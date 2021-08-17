@@ -2,16 +2,16 @@
 ms.date: 07/01/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: tglee
-author: TerryGLee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 007327dc525f515523f98323bc95e133209e1531
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: e2caa881ca2d27cc149e2a364d45ca8d6886dc51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113280078"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056954"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -85,7 +85,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Effettuare il refactoring in Visual Studio](../media/refactoring-menu.png)
 
-- [Intellisense](../../ide/using-intellisense.md)
+- [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense è un termine che indica diverse funzionalità che visualizzano le informazioni sul codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor senza dover cercare le informazioni sul tipo altrove. Le funzionalità di IntelliSense variano a seconda del linguaggio. Per altre informazioni, vedere [IntelliSense per C#](../../ide/visual-csharp-intellisense.md), [IntelliSense per Visual C++](../../ide/visual-cpp-intellisense.md), [IntelliSense per JavaScript](../../ide/javascript-intellisense.md) e [IntelliSense per Visual Basic](../../ide/visual-basic-specific-intellisense.md). La figura seguente mostra come IntelliSense visualizza un elenco di membri per un tipo:
 
@@ -93,7 +93,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
 - [Ricerca di Visual Studio](../../ide/visual-studio-search.md)
 
-   La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. Visual Studio ricerca (**CTRL** Q ) è un ottimo modo per trovare rapidamente le funzionalità IDE e il codice in + un'unica posizione.
+   La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. Visual Studio ricerca rapida (**CTRL** Q ) è un ottimo modo per trovare rapidamente le funzionalità IDE e + il codice in un'unica posizione.
 
    ::: moniker range="vs-2017"
 
@@ -107,7 +107,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Casella di ricerca in Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
 
-    Per informazioni e suggerimenti sulla produttività, [vedere Come usare Visual Studio ricerca.](../../ide/visual-studio-search.md)
+    Per informazioni e suggerimenti sulla produttività, vedere [Come usare Visual Studio ricerca.](../../ide/visual-studio-search.md)
 
    ::: moniker-end
 
@@ -167,11 +167,11 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Aprire Visual Studio.
 
-1. Sulla barra dei menu scegliere **File** > **Nuovo** > **Project**.
+1. Sulla barra dei menu scegliere **File** > **nuovo** > **Project**.
 
    ![File > Nuovo progetto sulla barra dei menu](../media/file-new-project-menu.png)
 
-   La **finestra di Project** nuovo progetto mostra diversi modelli di *progetto.* Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   La **finestra di dialogo Project** mostra diversi modelli di *progetto.* Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
 1. Scegliere la categoria di modello **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
@@ -217,7 +217,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire di nuovo l'app selezionando **Avvia debug** > **senza eseguire** debug o premendo **CTRL** + **F5.**
+1. Eseguire di nuovo l'app selezionando **Avvia** > **debug senza eseguire** debug o premendo **CTRL** + **F5.**
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -292,7 +292,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire di nuovo l'app selezionando **Avvia debug** > **senza eseguire** debug o premendo **CTRL** + **F5.**
+1. Eseguire di nuovo l'app selezionando **Avvia** > **debug senza eseguire** debug o premendo **CTRL** + **F5.**
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -372,7 +372,7 @@ In primo luogo, rinominare la variabile `name`:
 
 10. Eseguire di nuovo il programma premendo **CTRL** + **F5.** L'output è simile al seguente:
 
-    ! Screenshot della finestra cmd.exe console che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette! Giorno dell'anno: 151'.] (.. /media/overview-console-final.png)
+    ! Screenshot della finestra cmd.exe console che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello! Giorno dell'anno: 151'.] (.. /media/overview-console-final.png)
 
 ::: moniker-end
 
@@ -380,7 +380,7 @@ In primo luogo, rinominare la variabile `name`:
 
 10. Eseguire di nuovo il programma premendo **CTRL** + **F5.** L'output è simile al seguente:
 
-    ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
+    ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 
@@ -414,11 +414,11 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 È possibile personalizzare l'interfaccia utente di Visual Studio, ad esempio modificare il tema colori predefinito. Per modificare il tema **Scuro**:
 
-1. Nella barra dei menu scegliere **Opzioni** strumenti  >  **per** aprire la finestra **di dialogo** Opzioni.
+1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti per aprire** la finestra di **dialogo** Opzioni.
 
 ::: moniker range="vs-2017"
 
-2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
+2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 
@@ -428,7 +428,7 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 ::: moniker range=">=vs-2019"
 
-2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
+2. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 

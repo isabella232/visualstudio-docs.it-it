@@ -25,7 +25,7 @@ ms.locfileid: "121384925"
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Questo adattatore dati di diagnostica non può essere usato per i test eseguiti Microsoft Test Manager (deprecato in Visual Studio 2017). È possibile usare l'adattatore di diagnostica del profiler ASP.NET con test di carico usando solo siti Web, che richiedono Visual Studio Enterprise.
+> Questo adattatore dati di diagnostica non può essere usato per i test eseguiti usando Microsoft Test Manager (deprecato in Visual Studio 2017). È possibile usare l'adattatore di diagnostica del profiler ASP.NET con test di carico usando solo siti Web, che richiedono Visual Studio Enterprise.
 
 L'adattatore dati di diagnostica del profiler ASP.NET consente di raccogliere i dati del profiler ASP.NET dal livello applicazione quando si esegue un test di carico. Non è consigliabile eseguire il profiler per test di carico lunghi, ad esempio test di carico eseguiti per più di un'ora, in quanto le dimensioni del file del profiler possono aumentare anche fino a raggiungere centinaia di megabyte. Eseguire, al contrario, i test di carico più brevi tramite il profiler ASP.NET che offrirà comunque il vantaggio di ottenere una diagnosi approfondita dei problemi di prestazioni.
 

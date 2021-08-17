@@ -1,6 +1,6 @@
 ---
 title: Typedef C++ in Progettazione classi
-description: Informazioni su come Progettazione classi supporta i tipi typedef di C++ dichiarati con la parola chiave typedef.
+description: Informazioni su come Progettazione classi tipi typedef C++ dichiarati con la parola chiave typedef.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,14 +13,15 @@ ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b50b4be5552b3c6a0ba965b97aa2e1668a7369d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e00588b8ba0367be6f28873ec0f8940f92f04a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954462"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078401"
 ---
 # <a name="c-typedefs-in-class-designer"></a>Typedef C++ in Progettazione classi
 
@@ -70,7 +71,7 @@ typedef struct mystructtag
 
 ## <a name="unnamed-typedefs"></a>Typedef senza nome
 
-Sebbene sia possibile dichiarare un typedef senza nome, **Progettazione classi** non usa il nome del tag specificato. **Progettazione classi** usa il nome generato da **Visualizzazione classi**. La dichiarazione seguente, ad esempio, è valida, ma viene visualizzata in **Visualizzazione classi** e **Progettazione classi** come oggetto denominato **__unnamed**:
+Sebbene sia possibile dichiarare un typedef senza nome, **Progettazione classi** non usa il nome del tag specificato. **Progettazione classi** usa il nome generato da **Visualizzazione classi**. Ad esempio, la dichiarazione seguente è valida, ma viene visualizzata **in** Visualizzazione classi e **Progettazione classi** come oggetto **denominato __unnamed**:
 
 ```cpp
 typedef class coord

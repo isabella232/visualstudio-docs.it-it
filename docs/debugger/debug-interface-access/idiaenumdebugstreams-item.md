@@ -1,5 +1,5 @@
 ---
-description: Recupera un flusso di debug per mezzo di un indice o un nome.
+description: Recupera un flusso di debug tramite un indice o un nome.
 title: IDiaEnumDebugStreams::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 6b388fe1-eabc-4720-9d59-dc09b0ceaeac
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8b1dc19cec15b414c92c0aa13aaae3f6a7c49c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 122e1f83542e276a931390e5155dcaed4692e0eb47311d996c59eaebd7a920ee
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158143"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121455231"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
-Recupera un flusso di debug per mezzo di un indice o un nome.
+Recupera un flusso di debug tramite un indice o un nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +34,13 @@ HRESULT Item (
 ```
 
 #### <a name="parameters"></a>Parametri
-indice
+index
 
-in Indice o nome del flusso di debug da recuperare. Se viene usata una variante Integer, deve essere compresa nell'intervallo da 0 a `count` -1, dove `count` viene restituito dal metodo [IDiaEnumDebugStreams:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) .
+[in] Indice o nome del flusso di debug da recuperare. Se viene usata una variante integer, deve essere compreso nell'intervallo da 0 a -1, dove viene restituito dal metodo `count` `count` [IDiaEnumDebugStreams::get_Count.](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)
 
 flusso
 
-out Restituisce un oggetto [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) che rappresenta il flusso di debug specificato.
+[out] Restituisce un [oggetto IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) che rappresenta il flusso di debug specificato.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

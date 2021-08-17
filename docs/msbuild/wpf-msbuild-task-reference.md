@@ -1,6 +1,6 @@
 ---
 title: Informazioni di riferimento sulle attività MSBuild WPF | Microsoft Docs
-description: Vedere un riferimento a un'attività per il processo di compilazione Windows Presentation Foundation (WPF), che estende MSBuild con attività aggiuntive.
+description: Vedere le informazioni di riferimento sull'attività per il processo di compilazione Windows Presentation Foundation (WPF), che estende MSBuild con attività aggiuntive.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 94050565e6c5619781434c7a18307bfbf80b51f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 19a5fbd6da07648be784b155e3fb6b4dc4e78824
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933674"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076958"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informazioni di riferimento sulle attività MSBuild WPF
 
@@ -43,7 +44,7 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [GetWinFXPath](../msbuild/getwinfxpath-task.md)
 
- Restituisce la directory del runtime di .NET Framework corrente.
+ Restituisce la directory del runtime .NET Framework corrente.
 
 - [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)
 
@@ -51,15 +52,15 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)
 
- Esegue la compilazione del markup del secondo passaggio sui file XAML che fanno riferimento ai tipi nello stesso progetto.
+ Esegue la compilazione del markup del secondo passaggio su file XAML che fanno riferimento a tipi nello stesso progetto.
 
 - [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
 
- Unisce gli attributi di localizzazione e i commenti di uno o più file in formato binario XAML in un singolo file per l'intero assembly.
+ Unisce gli attributi di localizzazione e i commenti di uno o più file di formato binario XAML in un unico file per l'intero assembly.
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Incorpora una o più risorse (*jpg*, *ico*, *BMP*, XAML in formato binario e altri tipi di estensione) in un file con estensione *Resources* .
+ Incorpora una o più risorse (*.jpg*, *.ico*, *.bmp*, XAML in formato binario e altri tipi di estensione) in un file con *estensione resources.*
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -67,7 +68,7 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Aggiunge l' **\<hostInBrowser />** elemento al manifesto dell'applicazione (*\<projectname> . exe. manifest*) quando viene compilato un progetto di applicazione browser XAML (XBAP).
+ Aggiunge **\<hostInBrowser />** l'elemento al manifesto dell'applicazione (*\<projectname>.exe.manifest*) quando viene compilato un progetto di applicazione browser XAML (XBAP).
 
 ## <a name="see-also"></a>Vedi anche
 

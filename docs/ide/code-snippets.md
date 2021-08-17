@@ -20,12 +20,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2fbfda14beb513d6b38a3569c6cad6ba8e489a57479faa74228dcdfcb236a9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: feb6da780d14404599254e6dafc021e3ce4e431f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358325"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056342"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -34,15 +34,15 @@ I frammenti di codice sono piccoli blocchi di codice riutilizzabili che possono 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Frammenti di codice (Visual Studio per Mac)](/visualstudio/mac/snippets).
 
-Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti di codice  installati disponibili per  un linguaggio, aprire Gestione frammenti di codice dal menu Strumenti (oppure premere **CTRL** K , CTRL B ) e scegliere il linguaggio dal menu a discesa nella parte +   + superiore.
+Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti di codice  installati disponibili per  un linguaggio, aprire Gestione frammenti di codice dal menu Strumenti oppure premere **CTRL** K , CTRL B e scegliere il linguaggio dal menu a discesa nella parte +   + superiore.
 
 ![Finestra di dialogo Gestione frammenti di codice](media/code-snippets-manager.png)
 
 I frammenti di codice sono accessibili nei modi generali seguenti:
 
-- Sulla barra dei menu scegliere Modifica **frammento**  >  **di codice IntelliSense**  >  
+- Sulla barra dei menu scegliere **Modifica**  >  **frammento di codice IntelliSense**  >  **Inserisci**
 
-- Dal menu di scelta rapida o dal menu di scelta rapida nell'editor di codice scegliere **Frammento**  >  **di codice Inserisci frammento** di codice
+- Dal menu di scelta rapida o dal menu di scelta rapida nell'editor di codice scegliere **Inserisci**  >  **frammento di codice**
 
 - Dalla tastiera premere **CTRL** + **K**,**CTRL** + **X**
 
@@ -63,9 +63,9 @@ finally
 }
 ```
 
-È possibile inserire questo  frammento di codice facendo clic su Inserisci frammento nel menu di scelta rapida della finestra del codice, quindi **in Visual C#** digitare e quindi `tryf` premere **TAB.** In caso contrario, è possibile `tryf` digitare e premere TAB **due** volte.
+È possibile inserire questo  frammento di codice facendo clic su Inserisci frammento di codice nel menu di scelta rapida della finestra del codice, quindi **in Visual C#** digitare e quindi `tryf` premere **TAB.** In caso contrario, è possibile `tryf` digitare e premere TAB **due** volte.
 
-Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio ) e quindi si sceglie Racchiude tra se , il frammento di codice `return FALSE;`   >  viene espanso intorno alla riga:
+Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio ), quindi si sceglie Surround With se , il frammento di codice `return FALSE;`   >  viene espanso intorno alla riga:
 
 ```cpp
 if (true)
@@ -78,7 +78,7 @@ if (true)
 
 I frammenti di codice possono contenere parametri di sostituzione, cioè segnaposto che è necessario sostituire per adattare il codice preciso che si scrive. Nell'esempio precedente `true` è un parametro di sostituzione, che è possibile sostituire con la condizione appropriata. La sostituzione effettuata viene ripetuta per ogni istanza dello stesso parametro di sostituzione nel frammento.
 
-Ad esempio, in Visual Basic è presente un frammento di codice che inserisce una proprietà. Per inserire il frammento, **scegliere** Inserisci frammento di codice dal menu di scelta rapida o dal menu di scelta rapida in un file Visual Basic  >   di codice. Scegliere quindi Proprietà **modelli di**  >  **codice, Routine, Eventi Per** definire una  >  **proprietà.**
+Ad esempio, in Visual Basic è presente un frammento di codice che inserisce una proprietà. Per inserire il frammento di codice, **scegliere** Inserisci frammento di codice dal menu di scelta rapida o fare clic con il pulsante destro del mouse in un file  >   Visual Basic codice. Scegliere quindi Proprietà **modelli di**  >  **codice, Procedure, Eventi**  >  **Definire una proprietà**.
 
 ![Menu del frammento di codice per Definisci una proprietà](media/code-snippets-vb-property.png)
 

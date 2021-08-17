@@ -1,6 +1,6 @@
 ---
 title: Attività Warning | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività di avviso per registrare un avviso durante una compilazione in base a un'istruzione condizionale valutata.
+description: Informazioni su MSBuild'attività Avviso per registrare un avviso durante una compilazione in base a un'istruzione condizionale valutata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f31ad26b6efffa540ecae6a61f0f7ff12115cef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: faf53415b62550cb2091ffc9741ed2eeef60bbcc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933804"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076932"
 ---
 # <a name="warning-task"></a>attività Warning
 
@@ -40,15 +41,15 @@ Registra un avviso durante una compilazione in base a un'istruzione condizionale
 | `Code` | Parametro `String` facoltativo.<br /><br /> Il codice di avviso da associare all'avviso. |
 | `File` | Parametro `String` facoltativo.<br /><br /> Specifica il file pertinente, se presente. Se non viene indicato alcun file, verrà usato il file contenente l'attività Warning. |
 | `HelpKeyword` | Parametro `String` facoltativo.<br /><br /> Parola chiave della Guida da associare all'avviso. |
-| `Text` | Parametro `String` facoltativo.<br /><br /> Testo di avviso che viene registrato da MSBuild se il `Condition` parametro restituisce `true` . |
+| `Text` | Parametro `String` facoltativo.<br /><br /> Testo dell'avviso MSBuild registra se `Condition` il parametro restituisce `true` . |
 
 ## <a name="remarks"></a>Commenti
 
- L' `Warning` attività consente ai progetti MSBuild di verificare la presenza di una proprietà o una configurazione richiesta prima di procedere con l'istruzione di compilazione successiva.
+ L'attività MSBuild progetti di verificare la presenza di una configurazione o di una proprietà richiesta `Warning` prima di procedere con il passaggio di compilazione successivo.
 
  Se il parametro `Condition` dell'attività `Warning` restituisce `true`, verrà registrato il valore del parametro `Text` e l'esecuzione della compilazione continua. Se non esiste un parametro `Condition`, viene registrato il testo dell'avviso. Per altre informazioni sulla registrazione, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 
@@ -71,4 +72,4 @@ Registra un avviso durante una compilazione in base a un'istruzione condizionale
 ## <a name="see-also"></a>Vedi anche
 
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)

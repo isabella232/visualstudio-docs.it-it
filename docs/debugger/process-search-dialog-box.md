@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Elabora ricerca | Microsoft Docs
-description: Usare Ricerca processi per trovare e selezionare il nodo per un processo specifico nella visualizzazione Processi. È possibile specificare l'ID processo, la stringa del modulo e la direzione di ricerca.
+description: Usare La ricerca processi per trovare e selezionare il nodo per un processo specifico nella visualizzazione Processi. È possibile specificare l'ID processo, la stringa del modulo e la direzione di ricerca.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,28 +13,28 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bff1c484326762ac14025dcddf5f35cb5d64ee204fafd2ef6f13ac9387c16f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e93a7c249b67d326d70815e64fbf25377f814ed0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121263491"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105145"
 ---
 # <a name="process-search-dialog-box"></a>Finestra di dialogo Ricerca processi
-Utilizzare questa finestra di dialogo per trovare e selezionare il nodo per un processo specifico in [Visualizzazione processi](../debugger/processes-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo in **una finestra di visualizzazione** Processi. Scegliere quindi **Trova processo** **dal** menu Cerca.
+Usare questa finestra di dialogo per trovare e selezionare il nodo per un processo specifico nella [visualizzazione Processi](../debugger/processes-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su una **finestra di visualizzazione** Processi. Scegliere quindi **Trova processo** **dal** menu Cerca.
 
  Sono disponibili le impostazioni seguenti:
 
- **Processo** ID processo da cercare.
+ **Processo** ID del processo da cercare.
 
  **Modulo** Stringa del modulo da cercare.
 
- **Direzione di ricerca verso l'alto o verso il basso** Direzione iniziale della ricerca.
+ **Direzione della ricerca verso l'alto o verso il basso** Direzione iniziale della ricerca.
 
 ## <a name="related-sections"></a>Sezioni correlate
  [Ricerca di un processo nella visualizzazione Processi](../debugger/how-to-search-for-a-process-in-processes-view.md) Viene illustrato come trovare un processo specifico nella visualizzazione Processi.
 
- [Visualizzazione processi](../debugger/processes-view.md) Visualizza una visualizzazione albero dei processi attivi.
+ [Visualizzazione Processi](../debugger/processes-view.md) Visualizza una visualizzazione albero dei processi attivi.
 
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md) Illustra le visualizzazioni albero di Spy++ di finestre, messaggi, processi e thread.
 

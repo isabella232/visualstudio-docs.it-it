@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bde6407304114c7e5fb70388e43c9eabe6d53c31
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: dc071f765756007ceb2c3e50c424bd758a9111437d3218f0da20db7d2fd50c65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049753"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388572"
 ---
 # <a name="project-configuration-for-output"></a>Configurazione del progetto per l'output
 Ogni configurazione può supportare un set di processi di compilazione che generano elementi di output, ad esempio file eseguibili o di risorse. Questi elementi di output sono privati per l'utente e possono essere inseriti in gruppi che collegano tipi correlati di output, ad esempio file eseguibili (.exe, .dll, lib) e file di origine (file con estensione idl, h).
@@ -40,11 +40,11 @@ Ogni configurazione può supportare un set di processi di compilazione che gener
 
  L'uso principale dell'interfaccia è fornire l'accesso per compilare, distribuire ed eseguire il debug di oggetti di gestione e consentire ai progetti la libertà <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> di raggruppare gli output. Per altre informazioni sull'uso di questa interfaccia, vedere Project [Configuration Object](../../extensibility/internals/project-configuration-object.md).
 
- Nel diagramma precedente, Group Built ha un output chiave tra le configurazioni (bD.exe o b.exe) in modo che l'utente possa creare un collegamento a Compilato e sapere che il collegamento funzionerà indipendentemente dalla configurazione distribuita. L'origine gruppo non ha un output chiave, quindi l'utente non può creare un collegamento. Se debug Group Built ha un output chiave, ma retail Group Built no, si tratta di un'implementazione non corretta. Ne consegue quindi che se una configurazione ha un gruppo che non contiene output e, di conseguenza, nessun file di chiave, le altre configurazioni con tale gruppo che contengono output non possono avere file di chiave. Gli editor del programma di installazione presuppongono che i nomi canonici e i nomi visualizzati dei gruppi, oltre all'esistenza di un file di chiave, non cambino in base alle configurazioni.
+ Nel diagramma precedente, group built ha un output chiave tra le configurazioni (bD.exe o b.exe) in modo che l'utente possa creare un collegamento a Compilato e sapere che il collegamento funzionerà indipendentemente dalla configurazione distribuita. L'origine gruppo non ha un output chiave, quindi l'utente non può creare un collegamento. Se debug Group Built ha un output chiave, ma retail Group Built no, si tratta di un'implementazione non corretta. Ne consegue quindi che se una configurazione ha un gruppo che non contiene output e, di conseguenza, nessun file di chiave, le altre configurazioni con tale gruppo che contengono output non possono avere file di chiave. Gli editor del programma di installazione presuppongono che i nomi canonici e i nomi visualizzati dei gruppi, oltre all'esistenza di un file di chiave, non cambino in base alle configurazioni.
 
  Si noti che se un progetto dispone di un che non vuole creare un pacchetto o distribuire, è sufficiente non inserire `IVsOutputGroup` l'output in un gruppo. L'output può comunque essere enumerato normalmente implementando il metodo che restituisce tutti gli output di una configurazione indipendentemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> dal raggruppamento.
 
- Per altre informazioni, vedere l'implementazione di `IVsOutputGroup` nell'esempio Project in [MPF for Projects.](https://github.com/tunnelvisionlabs/MPFProj10)
+ Per altre informazioni, vedere l'implementazione di `IVsOutputGroup` nell'esempio Project personalizzato in [MPF for Projects.](https://github.com/tunnelvisionlabs/MPFProj10)
 
 ## <a name="see-also"></a>Vedi anche
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)

@@ -1,6 +1,6 @@
 ---
-title: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata
-description: Informazioni sull'utilizzo della pubblicazione guidata per rendere disponibile l'applicazione ClickOnce agli utenti, incluse le proprietà di pubblicazione da utilizzare.
+title: Pubblicare ClickOnce'applicazione usando la Pubblicazione guidata
+description: Informazioni sull'uso della Pubblicazione guidata per rendere l'applicazione ClickOnce disponibile agli utenti, incluse le proprietà di pubblicazione da usare.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,22 +17,23 @@ ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 7591513bc52807b87e9df2f0fb65364d5aff2db8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 195dc94991def92e1612e7f1752d348e1eb8d578
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900533"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089966"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. Per pubblicare l'applicazione, usare la Pubblicazione guidata. Altre proprietà relative alla pubblicazione sono disponibili nella pagina **Pubblica** di **Creazione progetti**. Per altre informazioni, vedere [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).
 
-Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni di pubblicazione. Ad esempio, se si vuole designare una chiave per la firma dell'applicazione ClickOnce, accedere alla pagina **Firma** di **Creazione progetti**. Per altre informazioni, vedere [proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).
+Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni di pubblicazione. Ad esempio, se si vuole designare una chiave per la firma dell'applicazione ClickOnce, accedere alla pagina **Firma** di **Creazione progetti**. Per altre informazioni, vedere [Proteggere ClickOnce applicazioni](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
-> Quando si installa più di una versione di un'applicazione tramite ClickOnce, l'installazione Sposta le versioni precedenti dell'applicazione in una cartella denominata *Archive*, nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.
+> Quando si installa più di una versione di un'applicazione usando ClickOnce, l'installazione sposta le versioni precedenti dell'applicazione in una cartella denominata *Archive* nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
@@ -41,7 +42,7 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 
 1. In **Esplora soluzioni** selezionare il progetto di applicazione.
 
-2. Scegliere **pubblica** *NomeProgetto* dal menu **Compila** .
+2. Scegliere **Pubblica** **nomeprogetto** dal menu *Compila*.
 
     Verrà visualizzata la Pubblicazione guidata.
 
@@ -71,7 +72,7 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di applicazione e scegliere **Proprietà**.
 
-    Verrà visualizzato **Progettazione progetti** .
+    Verrà **Project finestra di progettazione.**
 
 2. Fare clic sulla scheda **Pubblica** per aprire la pagina **Pubblica** in **Creazione progetti** e quindi fare clic sul pulsante **Pubblicazione guidata**.
 
@@ -103,4 +104,4 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
-- [Distribuzione di una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [Distribuzione di una Office di distribuzione tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

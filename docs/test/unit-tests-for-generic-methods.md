@@ -1,6 +1,6 @@
 ---
 title: Unit test per metodi generici
-description: Informazioni su come generare unit test per metodi generici usando queste informazioni ed esempi di creazione di unit test per i metodi generici.
+description: Informazioni su come generare unit test per metodi generici usando queste informazioni ed esempi di creazione di unit test per metodi generici.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual

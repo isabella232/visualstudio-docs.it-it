@@ -1,6 +1,6 @@
 ---
-description: 'IDebugComPlusSymbolProvider2:: GetTypeFromToken recupera un tipo in base al relativo token.'
-title: 'IDebugComPlusSymbolProvider2:: GetTypeFromToken | Microsoft Docs'
+description: IDebugComPlusSymbolProvider2::GetTypeFromToken recupera un tipo dato il relativo token.
+title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: 4452bc5d-0225-40e0-a467-c472a5c7c4ee
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f4bcc8d92cc58a719e9b450ec79e8376de554ab
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d1654838576ef9270e6ad0c632db4c8528e8f1920791100d8b57ee3ac47d9f54
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077980"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452212"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-Recupera un tipo in base al relativo token.
+Recupera un tipo dato il relativo token.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,22 +48,22 @@ int GetTypeFromToken(
 
 ## <a name="parameters"></a>Parametri
 `appDomain`\
-in Identificatore del dominio dell'applicazione.
+[in] Identificatore del dominio applicazione.
 
 `guidModule`\
-in Identificatore univoco del modulo.
+[in] Identificatore univoco del modulo.
 
 `tdToken`\
-in Token del tipo da recuperare.
+[in] Token del tipo da recuperare.
 
 `ppField`\
-out Restituisce il tipo rappresentato da [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+[out] Restituisce il tipo rappresentato da [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromToken(

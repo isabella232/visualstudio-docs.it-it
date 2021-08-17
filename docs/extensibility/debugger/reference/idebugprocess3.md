@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16292416d3d915bb5093de292a491ba91a172d42522fdd78a02f9377182480b9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a2e1b2961911a44e1eb23a3929146ddfe0a09bb1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338943"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057603"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
-Questa interfaccia rappresenta un processo in esecuzione e i relativi programmi. Questa interfaccia esiste come sostituzione di diversi metodi [nell'interfaccia IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) Fornisce il controllo su tutti i programmi nel processo.
+Questa interfaccia rappresenta un processo in esecuzione e i relativi programmi. Questa interfaccia è disponibile come sostituzione di diversi metodi [nell'interfaccia IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) Fornisce il controllo su tutti i programmi nel processo.
 
 > [!NOTE]
 > [I](../../../extensibility/debugger/reference/idebugprogram2-continue.md)metodi Continue , [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) [e Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) sono deprecati e non devono più essere usati. Usare invece i metodi corrispondenti `IDebugProcess3` nell'interfaccia .

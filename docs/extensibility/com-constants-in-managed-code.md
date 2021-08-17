@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55d9e934f85c6be2dc3822dc8373d8cbcacf40f1abe2eff5536fbabfb5aed0e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ab3857e9a668169345c780bb7481cbcccb66a7e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293612"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043778"
 ---
 # <a name="com-constants-in-managed-code"></a>Costanti COM nel codice gestito
 Managed Package Framework (MPF) rende disponibili alcune costanti COM standard per il codice gestito. Queste costanti sono elencate di seguito per riferimento.

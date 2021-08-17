@@ -1,6 +1,6 @@
 ---
 title: MSBuild Attività specifiche di C++ | Microsoft Docs
-description: Vedere MSBuild attività disponibili quando viene installato C++, che MSBuild quando si compila codice C++.
+description: Vedere MSBuild attività disponibili quando viene installato C++, che MSBuild durante la compilazione di codice C++.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d88d5a04126d06ad420f1af37abe3343ad23d74fd55c882f8580fd649f5e2da
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2a630842092f18d81257877742f872d3a01fe862
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397449"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077140"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>MSBuild attività specifiche di C++
 

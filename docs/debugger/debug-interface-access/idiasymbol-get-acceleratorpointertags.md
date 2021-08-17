@@ -34,21 +34,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Parametri
  `cnt`
 
-[in] Dimensioni della matrice di output `pPointerTags` .
+[in] Dimensione della matrice di output `pPointerTags` .
 
  `pcnt`
 
-[out] Numero di tag puntatore del tasto di scelta rapida nella C++ AMP stub dell'acceleratore.
+[out] Numero di tag del puntatore del tasto di scelta rapida nella C++ AMP stub dell'acceleratore.
 
  `pPointerTags`
 
-[out] Puntatore a matrice compilato con i valori del tag del puntatore del tasto di scelta rapida nella C++ AMP `DWORD` stub dell'acceleratore.
+[out] Puntatore a matrice riempito con i valori dei tag del puntatore del tasto di scelta rapida `DWORD` nella C++ AMP stub dell'acceleratore.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo viene chiamato su `IDiaSymbol` un'interfaccia che corrisponde a una funzione C++ AMP stub dell'acceleratore.
+ Questo metodo viene chiamato su `IDiaSymbol` un'interfaccia che corrisponde a una C++ AMP stub dell'acceleratore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

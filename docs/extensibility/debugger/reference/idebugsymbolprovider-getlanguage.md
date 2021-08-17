@@ -1,6 +1,6 @@
 ---
 description: Questo metodo ottiene il linguaggio usato per compilare il codice all'indirizzo di debug.
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: Interfaccia IDebugSymbolProvider::GetLanguage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3df12a86aef556c450c9861fa98eb2659ac070a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f0f5f71ddc3989a6aa3c3904d8f759c9d83a4bb7eb42587a39f7b23841fb1d4a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029658"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448793"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Questo metodo ottiene il linguaggio usato per compilare il codice all'indirizzo di debug.

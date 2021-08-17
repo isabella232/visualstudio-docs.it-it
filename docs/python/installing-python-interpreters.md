@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 239a8f40aa669aa60853405621a0b335aabdcb3c
-ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
+ms.openlocfilehash: 4ab809ea4aced244ecccd2ba04e7e3f0dbbda162
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114796164"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106874"
 ---
 # <a name="install-python-interpreters"></a>Installare interpreti Python
 
@@ -35,7 +36,7 @@ In alternativa, è possibile installare gli interpreti Python standard dalla fin
 Per **Visual Studio 2015 e versioni precedenti** è necessario installare manualmente uno degli interpreti.
 
 > [!Note]
-> Anche Visual Studio offre di installare la distribuzione Anaconda, l'uso della distribuzione e dei pacchetti aggiuntivi dal repository Anaconda è vincolato dalle Condizioni per l'utilizzo [del servizio Anaconda.](https://www.anaconda.com/terms-of-service) Queste condizioni possono richiedere ad alcune organizzazioni di pagare Anaconda per una licenza commerciale oppure configurare gli strumenti per accedere a un repository alternativo. Per altre informazioni, vedere la documentazione sui canali [Conda.](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)
+> Anche Visual Studio per installare la distribuzione Anaconda, l'uso della distribuzione e dei pacchetti aggiuntivi da Anaconda Repository è vincolato dalle Condizioni per il servizio [Anaconda.](https://www.anaconda.com/terms-of-service) Queste condizioni possono richiedere ad alcune organizzazioni di pagare Anaconda per una licenza commerciale oppure configurare gli strumenti per accedere a un repository alternativo. Per altre informazioni, vedere la documentazione sui [canali Conda.](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)
 
 Visual Studio, in tutte le versioni, rileva automaticamente ogni interprete Python installato e il relativo ambiente controllando il Registro di sistema secondo quanto descritto in [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514 - Registrazione di Python nel Registro di sistema di Windows). Le installazioni di Python in genere si trovano in **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32 bit) e **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64 bit) e quindi all'interno di nodi per la distribuzione, ad esempio **PythonCore** (CPython) e **ContinuumAnalytics** (Anaconda).
 
@@ -68,7 +69,7 @@ Se si sposta un interprete esistente in una nuova posizione nel file system, Vis
 
 Seguendo questa procedura si assicura il corretto aggiornamento delle voci del Registro di sistema che identificano il percorso dell'interprete, usato da Visual Studio. L'uso di un programma di installazione consente anche di gestire eventuali altri effetti collaterali.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire gli ambienti Python](managing-python-environments-in-visual-studio.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29b7dd4a3cd6da6a13d999419bfef5a7eafa839adc53df115860e0785d534f75
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5791dc2b8ac6714fa5595ba9e5336c4d0f99cc85
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293521"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089680"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Creare un'estensione con un vspackage
 
@@ -28,15 +28,15 @@ A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area downlo
 
 ## <a name="create-a-vspackage"></a>Creare un VSPackage
 
-1. Creare un progetto VSIX denominato **FirstPackage**. È possibile trovare il modello di progetto VSIX nella **finestra di dialogo Nuovo Project** ricerca di "vsix".
+1. Creare un progetto VSIX denominato **FirstPackage**. È possibile trovare il modello di progetto VSIX nella finestra **di dialogo Nuovo Project** cercando "vsix".
 
-2. Quando si apre il progetto, aggiungere un modello di Visual Studio pacchetto denominato **FirstPackage**. Nella finestra **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento**. Nella finestra **di dialogo Aggiungi nuovo elemento** passare a Estendibilità di Visual **C#** e  >   selezionare Visual Studio **pacchetto**. Nel campo **Nome** nella parte inferiore della finestra modificare il nome del file di comando in *FirstPackage.cs*.
+2. Quando si apre il progetto, aggiungere un modello di Visual Studio pacchetto denominato **FirstPackage**. Nella finestra **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento**. Nella finestra **di dialogo Aggiungi nuovo elemento** passare a **Estendibilità di Visual C#** e selezionare Visual Studio  >   **pacchetto**. Nel campo **Nome** nella parte inferiore della finestra modificare il nome del file di comando in *FirstPackage.cs*.
 
 3. Compilare il progetto e avviare il debug.
 
-    Viene visualizzata l'Visual Studio sperimentale di . Per altre informazioni sull'istanza sperimentale, vedere [Istanza sperimentale](../extensibility/the-experimental-instance.md).
+    Viene visualizzata l'istanza sperimentale Visual Studio. Per altre informazioni sull'istanza sperimentale, vedere [Istanza sperimentale](../extensibility/the-experimental-instance.md).
 
-4. Nell'istanza sperimentale aprire la **finestra Estensioni** e  >  **aggiornamenti degli** strumenti. Verrà visualizzata **l'estensione FirstPackage** qui. Se si aprono **estensioni e aggiornamenti nell'istanza** funzionante di Visual Studio, non verrà visualizzato **FirstPackage**.
+4. Nell'istanza sperimentale aprire la **finestra Estensioni** e  >  **aggiornamenti degli** strumenti. Verrà visualizzata **l'estensione FirstPackage** qui. Se si aprono **estensioni e aggiornamenti nell'istanza** funzionante di Visual Studio, FirstPackage non verrà **visualizzato.**
 
 ## <a name="load-the-vspackage"></a>Caricare il pacchetto VSPackage
 

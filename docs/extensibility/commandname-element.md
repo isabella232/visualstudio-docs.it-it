@@ -11,14 +11,15 @@ ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 193e97880fbc543568636e1979a847877e42db14
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: c76a96c86a9c6e83ca6b787286ce22ed881161bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058084"
 ---
 # <a name="commandname-element"></a>Elemento CommandName
 L'elemento specifica il testo visualizzato nella categoria tastiera nella finestra di dialogo Opzioni e nell'elenco Comandi `CommandName` della finestra **di** dialogo Personalizza .  
@@ -44,5 +45,5 @@ L'elemento specifica il testo visualizzato nella categoria tastiera nella finest
 |-------------|-----------------|
 |[Elemento Strings](../extensibility/strings-element.md)|Raggruppa gli elementi di testo, ad `ButtonText` esempio e `CommandName` .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

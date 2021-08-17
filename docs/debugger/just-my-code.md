@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cdf4e14f61e051b282336fbeec2a53fffb89c8ff3316de1242b5f2c7ff8921f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9f3c65d76fd76eaf8391bd3757f9fbe112eed8fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121325094"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090746"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Eseguire il debug solo del codice utente con Just My Code
 
@@ -26,7 +26,7 @@ Just My Code funziona in modo diverso nei progetti .NET, C++ e JavaScript.
 
 ## <a name="enable-or-disable-just-my-code"></a><a name="BKMK_Enable_or_disable_Just_My_Code"></a> Abilitare o disabilitare Just My Code
 
-Per la maggior parte dei linguaggi di programmazione, Just My Code è abilitato per impostazione predefinita.
+Per la maggior parte dei linguaggi di programmazione, Just My Code è abilitata per impostazione predefinita.
 
 - Per abilitare o disabilitare Just My Code in Visual Studio, in Opzioni strumenti (o Opzioni di debug  >   )   >  > **Debug**  >  **generale** selezionare o deselezionare Abilita Just My Code .
 
@@ -41,7 +41,7 @@ Durante una sessione  di debug, la finestra Moduli mostra i moduli di codice che
 
 ![Codice utente nella finestra Moduli](../debugger/media/dbg_justmycode_module.png "Codice utente nella finestra Moduli")
 
-Nella finestra Stack  **di** chiamate o Attività Just My Code comprime il codice non utente in una cornice di codice con annotazioni disattivata con etichetta `[External Code]` .
+Nella finestra **Stack di** **chiamate** o Attività Just My Code comprime il codice non utente in una cornice di codice con annotazioni disattivata con etichetta `[External Code]` .
 
 ![Frame di codice esterno nella finestra Stack di chiamate](../debugger/media/dbg_justmycode_externalcode.png "Frame del codice esterno")
 
@@ -65,13 +65,13 @@ Tre attributi del compilatore influiscono anche su ciò che il debugger .NET con
 
 - <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> indica al debugger che il codice a cui viene applicato non è codice utente.
 - <xref:System.Diagnostics.DebuggerHiddenAttribute> nasconde il codice al debugger, anche se Just My Code è disattivato.
-- <xref:System.Diagnostics.DebuggerStepThroughAttribute> indica al debugger di eseguire il codice a cui è applicato, anziché eseguire un'istruzione nel codice.
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> indica al debugger di scorrere il codice a cui è applicato, anziché eseguire un'istruzione nel codice.
 
 Il debugger .NET considera tutto il codice come codice utente.
 
 Durante il debug di .NET:
 
-- **Eseguire il debug**  >  **Eseguire un'istruzione** **(o F11)** per eseguire i passaggi del codice non utente sul codice alla riga di codice utente successiva.
+- **Eseguire il debug**  >  **Eseguire un'istruzione** **(o F11)** per eseguire passaggi del codice non utente sul codice alla riga di codice utente successiva.
 - **Eseguire il debug**  >  **L'istruzione/uscita** **(o** + **MAIUSC F11)** nel codice non utente viene eseguita alla riga successiva del codice utente.
 
 Se il codice utente non è più presente, il debug continua fino al termine, raggiunge un altro punto di interruzione o genera un errore.
@@ -84,7 +84,7 @@ Se per l'eccezione sono abilitate eccezioni first chance, la riga del codice ute
 
 ## <a name="c-just-my-code"></a><a name="BKMK_C___Just_My_Code"></a> Just My Code in C++
 
-A partire da Visual Studio 2017 versione 15.8, è supportata anche la Just My Code per l'esecuzione di istruzioni del codice. Questa funzionalità richiede anche l'uso dell'opzione del compilatore [/JMC (Just my code debugging).](/cpp/build/reference/jmc) L'opzione è abilitata per impostazione predefinita nei progetti C++. Per **il supporto della finestra** Stack di chiamate e dello stack di chiamate Just My Code, l'opzione /JMC non è necessaria.
+A partire da Visual Studio 2017 versione 15.8, è supportata Just My Code per l'esecuzione di istruzioni del codice. Questa funzionalità richiede anche l'uso dell'opzione del compilatore [/JMC (Just my code debugging).](/cpp/build/reference/jmc) L'opzione è abilitata per impostazione predefinita nei progetti C++. Per **il supporto della finestra Stack** di chiamate e dello stack di chiamate Just My Code, l'opzione /JMC non è necessaria.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Per essere classificato come codice utente, il file PDB per il file binario contenente il codice utente deve essere caricato dal debugger (usare la finestra **Moduli** per verificare questa operazione).
 
@@ -100,11 +100,11 @@ Per il comportamento di esecuzione di istruzioni del codice, Just My Code in C++
 - Funzioni specificate nei *\* file natjmc* nella cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers.*
 
 > [!NOTE]
-> Per il supporto dell'esecuzione di istruzioni del codice in Just My Code, il codice C++ deve essere compilato usando i compilatori MSVC in Visual Studio 15.8 Preview 3 o versioni successive e l'opzione del compilatore /JMC deve essere abilitata (abilitata per impostazione predefinita). Per altri dettagli, vedere [Personalizzare lo stack di chiamate C++ e il](#BKMK_CPP_Customize_call_stack_behavior)comportamento di esecuzione delle istruzioni del codice ) e questo post di [blog.](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/) Per il codice compilato usando un compilatore precedente, i file *natstepfilter* sono l'unico modo per personalizzare l'esecuzione delle istruzioni del codice, che è indipendente dal Just My Code. Vedere [Personalizzare il comportamento di esecuzione di istruzioni C++.](#BKMK_CPP_Customize_stepping_behavior)
+> Per il supporto dell'esecuzione di istruzioni del codice in Just My Code, il codice C++ deve essere compilato usando i compilatori MSVC in Visual Studio 15.8 Preview 3 o versioni successive e l'opzione del compilatore /JMC deve essere abilitata (abilitata per impostazione predefinita). Per altri dettagli, vedere [Personalizzare lo stack di chiamate C++ e il](#BKMK_CPP_Customize_call_stack_behavior)comportamento di esecuzione delle istruzioni del codice ) e questo post di [blog.](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/) Per il codice compilato usando un compilatore precedente, i file *natstepfilter* sono l'unico modo per personalizzare l'esecuzione di istruzioni del codice, che è indipendente Just My Code. Vedere [Personalizzare il comportamento di esecuzione di istruzioni C++.](#BKMK_CPP_Customize_stepping_behavior)
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Durante il debug di C++:
 
-- **Eseguire il debug**  >  **Eseguire un'istruzione** **(o F11)** per eseguire i passaggi del codice non utente sul codice alla riga di codice utente successiva.
+- **Eseguire il debug**  >  **Eseguire un'istruzione** **(o F11)** per eseguire passaggi del codice non utente sul codice alla riga di codice utente successiva.
 - **Eseguire il debug**  >  **L'istruzione/uscita** **(o** + **MAIUSC F11)** nel codice non utente viene eseguita alla riga successiva del codice utente.
 
 Se il codice utente non è più presente, il debug continua fino al termine, raggiunge un altro punto di interruzione o genera un errore.
@@ -168,7 +168,7 @@ Un file *natjmc* è un file XML con la sintassi seguente:
 Nei progetti C++ è possibile specificare le funzioni di cui eseguire l'istruzione/esecuzione elencandole come codice non utente nei *\* file natstepfilter.* Le funzioni elencate *\* nei file natstepfilter* non dipendono dalle Just My Code predefinite.
 
 - Per specificare codice non utente per tutti gli utenti Visual Studio locali, aggiungere il file *natstepfilter* alla cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers.*
-- Per specificare codice non utente per un singolo utente, aggiungere il file *natstepfilter* alla cartella *%USERPROFILE%\Documenti \\<Visual Studio versione \> \Visualizers.*
+- Per specificare codice non utente per un singolo utente, aggiungere il file *natstepfilter* alla cartella *%USERPROFILE%\Documenti<Visual Studio versione \\ \> \Visualizers.*
 
 Un file *natstepfilter è* un file XML con la sintassi seguente:
 
@@ -211,9 +211,9 @@ Il debugger JavaScript classifica il codice come utente o non utente in questo o
    - Lo script eseguito passando una stringa alla funzione fornita dall'host `eval` è **MyCode.**
    - Lo script eseguito passando una stringa al `Function` costruttore è **LibraryCode.**
    - Lo script in un riferimento al framework, ad esempio WinJS o Azure SDK, è **LibraryCode.**
-   - Lo script eseguito passando una stringa alle `setTimeout` funzioni , o è `setImmediate` `setInterval` **UnrelatedCode.**
+   - Lo script eseguito passando una stringa alle funzioni `setTimeout` `setImmediate` , o è `setInterval` **UnrelatedCode.**
 
-2. Classificazioni specificate per tutti Visual Studio progetti JavaScript nel file *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.jsnel* file .
+2. Le classificazioni specificate per Visual Studio progetti JavaScript nel file *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.jsnel* file .
 
 3. Le classificazioni nella *mycode.jsnel* file del progetto corrente.
 
@@ -221,14 +221,14 @@ Ogni passaggio di classificazione esegue l'override dei passaggi precedenti.
 
 Tutto il resto del codice viene classificato come **MyCode**.
 
-È possibile modificare le classificazioni predefinite e classificare URL e file specifici come codice utente o non utente, aggiungendo un *file* json denominato *mycode.jsnella* cartella radice di un progetto JavaScript. Vedere [Personalizzare javascript Just My Code](#BKMK_JS_Customize_Just_My_Code).
+È possibile modificare le classificazioni predefinite e classificare url e file specifici come codice utente o non utente, aggiungendo un *file* JSON denominato *mycode.js* nella cartella radice di un progetto JavaScript. Vedere [Personalizzare javascript Just My Code](#BKMK_JS_Customize_Just_My_Code).
 
 <a name="BKMK_JS_Stepping_behavior"></a> Durante il debug di JavaScript:
 
-- Se una funzione è codice non utente, esegui il **debug** istruzione (o F11 ) si comporta come Esegui istruzione/istruzione di  >   **debug**   >   **(o F10).**
-- Se un passaggio inizia nel codice non utente **(LibraryCode** o **UnrelatedCode),** l'esecuzione di istruzioni si comporta temporaneamente come se Just My Code non fosse abilitata. Quando si torna al codice utente, l'Just My Code viene ri abilitata.
+- Se una funzione è codice non utente, esegui il **debug** istruzione (o F11 ) si comporta come Esegui  >      >  **istruzione/istruzione** di debug **(o F10).**
+- Se un passaggio inizia nel codice non utente **(LibraryCode** o **UnrelatedCode),** l'esecuzione di istruzioni si comporta temporaneamente come se Just My Code non fosse abilitata. Quando si torna al codice utente, Just My Code'esecuzione di istruzioni viene ri abilitata.
 - Quando un passaggio del codice utente comporta l'uscita dal contesto di esecuzione corrente, il debugger si arresta alla successiva riga di codice utente eseguita. Se ad esempio un callback viene eseguito nel codice **LibraryCode**, il debugger continua finché la riga di codice utente successiva non viene eseguita.
-- **L'uscita** (o **MAIUSC** + **F11)** si interrompe alla riga di codice utente successiva.
+- **L'uscita** (o **MAIUSC** + **F11)** si interrompe alla riga successiva del codice utente.
 
 Se il codice utente non è più presente, il debug continua fino al termine, raggiunge un altro punto di interruzione o genera un errore.
 
@@ -248,7 +248,7 @@ Se le eccezioni first-chance sono abilitate per l'eccezione e l'eccezione si ver
 
 ### <a name="customize-javascript-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizzare le Just My Code JavaScript
 
-Per classificare il codice utente e non utente per un singolo progetto JavaScript, è possibile aggiungere un file *con estensione* *json* denominatomycode.jsnella cartella radice del progetto.
+Per classificare il codice utente e non utente per un singolo progetto JavaScript, è possibile aggiungere un file con estensione *json* denominato *mycode.js* alla cartella radice del progetto.
 
 Le specifiche in questo file sostituiscono le classificazioni predefinite e le *mycode.default.wwa.jsnel* file. Il *mycode.jsnel* file non deve elencare tutte le coppie chiave-valore. I **valori MyCode**, **Libraries** e **Unrelated** possono essere matrici vuote.
 

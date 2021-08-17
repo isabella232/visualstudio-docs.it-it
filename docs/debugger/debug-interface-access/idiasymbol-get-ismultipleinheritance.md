@@ -1,5 +1,5 @@
 ---
-description: Specifica se il puntatore punta a un membro dati con ereditarietà multipla.
+description: Specifica se il puntatore this punta a un membro dati con più ereditarietà.
 title: IDiaSymbol::get_isMultipleInheritance | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 0aa356a1-5c5c-4ee4-8b48-bae0a2610013
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d197810c61ca50a98cc47c5c3e2ecaca5be548d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bda3d9f66cf327e59f2bd18536d5eda884dd10faf44d4c3392668834b8ca7942
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156174"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436427"
 ---
 # <a name="idiasymbolget_ismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-Specifica se il `this` puntatore punta a un membro dati con ereditarietà multipla.
+Specifica se il `this` puntatore punta a un membro dati con più ereditarietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,10 +32,10 @@ HRESULT get_isMultipleInheritance(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un oggetto `BOOL` che specifica se il `this` puntatore punta a un membro dati con ereditarietà multipla.
+[out] Puntatore a un oggetto `BOOL` che specifica se il `this` puntatore punta a un membro dati con più ereditarietà.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

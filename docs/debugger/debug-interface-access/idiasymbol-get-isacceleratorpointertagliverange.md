@@ -12,15 +12,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b42f2837113596b133dae93569645503bea91f2facc3200f15f5751716b8998
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b65e31e2e6d86711b576023ff0f70877e29cdd03
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454743"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031210"
 ---
 # <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-Recupera un flag che indica se il  simbolo corrisponde al simbolo dell'intervallo di definizione per il componente tag di una variabile puntatore nel codice compilato per un C++ AMP acceleratore. Il simbolo dell'intervallo di definizioni è la posizione di una variabile per un intervallo di indirizzi.
+Recupera un flag che indica se il  simbolo corrisponde al simbolo dell'intervallo di definizione per il componente tag di una variabile puntatore nel codice compilato per un C++ AMP Acceleratore. Il simbolo dell'intervallo di definizioni è la posizione di una variabile per un intervallo di indirizzi.
 
 ## <a name="syntax"></a>Sintassi
 

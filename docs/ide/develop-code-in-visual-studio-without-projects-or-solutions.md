@@ -1,6 +1,6 @@
 ---
 title: Sviluppare codice senza progetti o soluzioni
-description: Scopri come sviluppare codice direttamente in Visual Studio senza la necessità di progetti o soluzioni.
+description: Informazioni su come sviluppare codice direttamente in Visual Studio senza la necessità di progetti o soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 06/22/2020
 ms.topic: how-to
@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fcff44b64045e85a06fdc7a8f15f8780c8453713
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e23ffa2cef27dc2607e238aa8674e91ff71efbd1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894751"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078427"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 
@@ -30,15 +31,15 @@ Dopo aver aperto i file di codice in Visual Studio, **Esplora soluzioni** consen
 
 È possibile aprire il codice in Visual Studio nei modi seguenti:
 
-- Sulla barra dei menu di Visual Studio scegliere **file**  >  **Apri**  >  **cartella**, quindi selezionare la posizione del codice.
+- Nella barra Visual Studio menu scegliere **Apri** cartella file e quindi  >    >  passare al percorso del codice.
 
 - Nel menu di scelta rapida (pulsante destro del mouse) di una cartella contenente codice scegliere il comando **Apri in Visual Studio**.
 
 ::: moniker range="vs-2017"
-- Scegliere il collegamento **Apri cartella** nella **pagina iniziale** di Visual Studio.
+- Scegliere il **collegamento Apri cartella** nella pagina Visual Studio **iniziale**.
 
     > [!IMPORTANT]
-    > Non tutto il codice può essere aperto tramite il collegamento **Apri cartella** della **pagina iniziale** di Visual Studio. Se, ad esempio, il file di codice è stato salvato come parte di una soluzione &mdash; in altre parole, in un file sln &mdash; è necessario usare una delle altre opzioni elencate qui per aprire il codice.
+    > Non tutto il codice può essere aperto usando il **collegamento** Apri cartella Visual Studio **pagina iniziale**. Ad esempio, se il file di codice è stato salvato come parte di una soluzione in altre parole, in un file sln è necessario usare una delle altre opzioni elencate di seguito per aprire &mdash; &mdash; il codice.
 
 ::: moniker-end
 
@@ -46,11 +47,11 @@ Dopo aver aperto i file di codice in Visual Studio, **Esplora soluzioni** consen
 - Scegliere il collegamento **Apri cartella** nella finestra iniziale.
 
     > [!IMPORTANT]
-    > Non tutto il codice può essere aperto tramite il collegamento **Apri cartella** della finestra di avvio di Visual Studio. Se, ad esempio, il file di codice è stato salvato come parte di una soluzione &mdash; in altre parole, in un file sln &mdash; è necessario usare una delle altre opzioni elencate qui per aprire il codice.
+    > Non tutto il codice può essere aperto usando il **collegamento** Apri cartella dalla Visual Studio di avvio. Ad esempio, se il file di codice è stato salvato come parte di una soluzione in altre parole, in un file sln è necessario usare una delle altre opzioni elencate di seguito per aprire &mdash; &mdash; il codice.
 
 ::: moniker-end
 
-- Se si è un utente della tastiera, premere **CTRL** + **MAIUSC** + **ALT** + **O** in Visual Studio.
+- Se si è un utente della tastiera, premere **CTRL** +  + **MAIUSC ALT** + **O** Visual Studio.
 
 - Aprire codice da un repository GitHub clonato.
 
@@ -64,7 +65,7 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 
    ![Pulsante per clonare in GitHub](./media/VSIDE_Code_Clone.png)
 
-1. In Visual Studio scegliere la scheda **Team Explorer** per aprire **Team Explorer**. Se la scheda non viene visualizzata, aprirla da **Visualizza**  >  **Team Explorer**.
+1. In Visual Studio scegliere la **scheda** Team Explorer per **aprire** Team Explorer . Se la scheda non è visualizzata, aprirla da  >  **Visualizza Team Explorer**.
 
 1. In Team Explorer, nella sezione **Repository Git locali**, scegliere il comando **Clona** e quindi incollare l'URL della pagina GitHub nella casella di testo.
 
@@ -72,11 +73,11 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 
 1. Scegliere il pulsante **Clona** per clonare i file del progetto in un repository Git locale. L'operazione potrebbe richiedere diversi minuti a seconda delle dimensioni del repository.
 
-1. Dopo aver clonato il repository nel sistema, in **Team Explorer** scegliere il comando **Apri** nel menu di scelta rapida (clic con il pulsante destro del mouse) del repository appena clonato.
+1. Dopo che il repo è stato clonato nel sistema,  **in** Team Explorer scegliere il comando Apri nel menu di scelta rapida (clic con il pulsante destro del mouse) del nuovo repo clonato.
 
    ![Repository clonato](./media/VSIDE_Code_Clone3.png)
 
-1. Scegliere il comando Mostra **visualizzazione cartelle** per visualizzare i file in **Esplora soluzioni**.
+1. Scegliere il **comando Mostra visualizzazione cartelle** per visualizzare i file in **Esplora soluzioni**.
 
    ![Mostra visualizzazione cartelle](./media/VSIDE_Code_Clone3_show.png)
 

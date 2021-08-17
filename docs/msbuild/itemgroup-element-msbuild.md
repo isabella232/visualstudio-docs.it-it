@@ -1,6 +1,6 @@
 ---
 title: Elemento ItemGroup (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento ItemGroup di MSBuild, che contiene un set di elementi elemento definiti dall'utente. Ogni elemento deve essere un elemento figlio di un ItemGroup.
+description: Informazioni sull'MSBuild elemento ItemGroup, che contiene un set di elementi Item definiti dall'utente. Ogni elemento deve essere figlio di un elemento ItemGroup.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,18 +18,19 @@ ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: eff27467aeea5068f3ec086b490ca9c735861549
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69fc6afd5a6dc7c5c9d51ae5c57afdbfd2c6847f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913839"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077257"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
-Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento usato in un progetto MSBuild deve essere specificato come figlio di un `ItemGroup` elemento.
+Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento usato in un MSBuild deve essere specificato come figlio di un `ItemGroup` elemento.
 
 \<Project>
 \<ItemGroup>
@@ -65,7 +66,7 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un MSBuild di progetto. |
 | [Destinazione](../msbuild/target-element-msbuild.md) | A partire da .NET Framework 3.5, l'elemento `ItemGroup` può essere visualizzato in un elemento `Target`. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Esempio
@@ -89,14 +90,14 @@ L'esempio di codice seguente illustra le raccolte di elementi definite dall'uten
 </Project>
 ```
 
-In un file di progetto semplice, in genere si usa un singolo `ItemGroup` elemento, ma è anche possibile usare più `ItemGroup` elementi. Quando `ItemGroup` vengono usati più elementi, gli elementi vengono combinati in un unico oggetto `ItemGroup` . Alcuni elementi, ad esempio, possono essere inclusi in un `ItemGroup` elemento separato definito in un file importato.
+In un semplice file di progetto si usa in genere un singolo `ItemGroup` elemento, ma è anche possibile usare più `ItemGroup` elementi. Quando vengono `ItemGroup` usati più elementi, gli elementi vengono combinati in un singolo `ItemGroup` oggetto . Ad esempio, alcuni elementi potrebbero essere inclusi da un elemento `ItemGroup` separato definito in un file importato.
 
-Per ItemGroup è possibile applicare condizioni usando l' `Condition` attributo. In tal caso, gli elementi vengono aggiunti all'elenco di elementi solo se la condizione è soddisfatta. Vedere [le condizioni di MSBuild](msbuild-conditions.md)
+ItemGroups può avere condizioni applicate usando `Condition` l'attributo . In tal caso, gli elementi vengono aggiunti all'elenco di elementi solo se la condizione viene soddisfatta. Vedere [MSBuild condizioni](msbuild-conditions.md)
 
-L' `Label` attributo viene usato in alcuni sistemi di compilazione come metodo per controllare i comportamenti di compilazione. È possibile usarlo solo nelle dichiarazioni, in modo da creare script MSBuild più comprensibili o come impostazioni di controllo per influire sulle azioni di compilazione.
+`Label`L'attributo viene usato in alcuni sistemi di compilazione per controllare i comportamenti di compilazione. È possibile usarlo solo nelle dichiarazioni, come modo per creare script MSBuild più comprensibili o come impostazione di controllo per influire sulle azioni di compilazione.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementi](../msbuild/msbuild-items.md)
 - [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)

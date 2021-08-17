@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d98dff8c17da5dcf612938fa2e85ec85957810f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1acb73b3b24555193b02128a7ed557469f82fd219ba288029346e300d561dcc5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029931"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402454"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 Ottiene i byte di memoria che costituiscono il valore di una proprietà.

@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Durata oggetti | Microsoft Docs
-description: Informazioni sul modo in cui la visualizzazione Durata oggetti è disponibile quando vengono raccolti anche i dati di durata degli oggetti .NET nelle pagine delle proprietà della sessione di prestazioni.
+description: Informazioni su come la visualizzazione Durata oggetti è disponibile quando è selezionata l'opzione Raccogliere anche i dati sulla durata degli oggetti .NET nelle pagine delle proprietà sessione di prestazioni.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,18 +15,19 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 124782a832d818cb405fd980f9d224f9e0b62fbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8adebbbcbf3bbafab6d3b2a53ceae140bc085802
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922446"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107121"
 ---
 # <a name="object-lifetime-view"></a>Visualizzazione Durata oggetti
-La visualizzazione Durata oggetti è disponibile quando vengono **raccolti anche i dati di durata degli oggetti .NET** nelle pagine delle proprietà della **sessione di prestazioni** .
+La visualizzazione Durata oggetti è disponibile quando è selezionata l'opzione Raccogliere anche i dati sulla durata degli oggetti **.NET** nelle **pagine delle proprietà Sessione** di prestazioni.
 
  Il Garbage Collector di .NET Framework gestisce l'allocazione e il rilascio di memoria per l'applicazione. Per ottimizzare le prestazioni del Garbage Collector, l'heap gestito è diviso in tre generazioni: 0, 1 e 2. Il Garbage Collector del runtime archivia i nuovi oggetti nella generazione 0. Gli oggetti non raccolti vengono promossi e archiviati nelle generazioni 1 e 2.
 
@@ -39,7 +40,7 @@ La visualizzazione Durata oggetti è disponibile quando vengono **raccolti anche
 |**Nome della classe**|Nome della classe del tipo allocato.|
 |**ID processo**|ID di processo dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 
 ## <a name="instance-data"></a>Dati dell'istanza

@@ -13,15 +13,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5016b33f15c3132c4c250db0cf262db8c630c80a3e76e51d4d48a3e21f2385b0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 57d399f7c36b1a7fb00941b140f2492c5a0c6038
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121311219"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105158"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Scheda Processo, finestra di dialogo Proprietà finestra
-Usare la **scheda** Processo per identificare il processo della finestra selezionata. Per visualizzare la [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo Windows finestra [Visualizza.](../debugger/windows-view.md) Selezionare qualsiasi nodo della finestra nell'albero, **quindi scegliere Proprietà** dal menu Visualizza. 
+Usare la **scheda** Processo per identificare il processo della finestra selezionata. Per visualizzare la [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo Windows finestra [Visualizza.](../debugger/windows-view.md) Selezionare qualsiasi nodo della finestra nell'albero, quindi **scegliere Proprietà** **dal** menu Visualizza.
 
  Nella scheda Processo sono disponibili **le impostazioni** seguenti:
 

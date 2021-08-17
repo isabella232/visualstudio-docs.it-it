@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2da3b76ee7a22e58431eafafa8600158a0ae9b18b12f3f4fc054f0aa0171ffea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6553ffcc80dbe650b3b1775292599bc20d67cbfd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121245252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076139"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Guida introduttiva: Aprire ed eseguire codice Python in una cartella
 
