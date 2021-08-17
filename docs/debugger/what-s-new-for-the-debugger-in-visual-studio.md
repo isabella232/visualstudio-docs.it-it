@@ -1,7 +1,7 @@
 ---
 title: Novità del debugger in Visual Studio 2017 | Microsoft Docs
 titleSuffix: ''
-description: Vedere le nuove funzionalità della versione 15,5 del debugger. Sono inclusi gli snapshot del codice selezionato delle app in produzione e il postback di IntelliTrace.
+description: 'Vedere le nuove funzionalità nel debugger versione 15.5. Sono inclusi: snapshot del codice selezionato di app in produzione e intellitrace per tornare indietro.'
 ms.custom: SEO-VS-2020
 ms.date: 01/22/2018
 ms.topic: conceptual
@@ -19,21 +19,22 @@ ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: bac5c7021146a0b9bc66e98e7de334bdbf05a7b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d31f08475389bc68191b0b6b4a5348d25cae2aee632bc1adf76d0d1887e0ece
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883948"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404115"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novità relative al debugger di Visual Studio 2017
 
 Il debugger include le nuove funzionalità seguenti:
 
-- Novità della versione 15,5, il **snapshot debugger** crea uno snapshot delle app in produzione quando viene eseguito il codice a cui si è interessati. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
+- Novità della versione 15.5, il Snapshot Debugger crea uno snapshot delle app in produzione quando viene eseguito il codice a cui si è interessati.  Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
 
     La raccolta di snapshot è disponibile per le seguenti app Web in esecuzione in Servizio app di Azure:
 
@@ -42,35 +43,35 @@ Il debugger include le nuove funzionalità seguenti:
 
     Per altre informazioni, vedere [Debug live ASP.NET apps using the Snapshot Debugger](../debugger/debug-live-azure-applications.md) (Eseguire il debug di app ASP.NET attive usando Snapshot Debugger).
 
-- Novità della versione 15,5 solo in Visual Studio Enterprise, **IntelliTrace** esegue automaticamente uno snapshot dell'applicazione a ogni punto di interruzione e evento del debugger. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
+- Novità della versione 15.5 in Visual Studio Enterprise, **intelliTrace** esegue automaticamente uno snapshot dell'applicazione a ogni punto di interruzione e a ogni evento del passaggio del debugger. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
 
     È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
-    ![Pulsanti avanti e indietro passaggio](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti avanti e indietro passaggio")
+    ![Pulsanti Indietro e Avanti](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Indietro e Avanti")
 
     Per altre informazioni, vedere la pagina [Visualizzare lo stato precedente dell'applicazione con IntelliTrace](view-historical-application-state.md).
 
-- L' **Helper eccezioni** sostituisce le informazioni sulle eccezioni e viene visualizzato in una finestra di dialogo non modale in cui si è verificato l'errore. L' **Helper eccezioni** fornisce un accesso più rapido a eventuali eccezioni interne, ulteriori analisi da parte del debugger (se disponibili) e accesso immediato alle **impostazioni delle eccezioni** per l'eccezione. L'helper eccezioni può essere trascinato anche in una visualizzazione a virgola mobile se blocca qualcosa che è necessario visualizzare.
+- **L'helper eccezioni** sostituisce l'Assistente eccezioni e viene visualizzato in una finestra di dialogo non modale in cui si è verificato l'errore. **L'helper** eccezioni fornisce un accesso più rapido a tutte le eccezioni interne, un'analisi aggiuntiva da parte del debugger (se disponibile) e l'accesso immediato al Impostazioni eccezioni per l'eccezione.  L'helper eccezioni può anche essere trascinato in una visualizzazione mobile se blocca un elemento che è necessario visualizzare.
 
-    Ad esempio, un' **eccezione NullReferenceException** Mostra ora la variabile con il riferimento null (informazioni aggiuntive).
+    Ad esempio, **nullReferenceException ora** mostra la variabile con il riferimento Null (informazioni aggiuntive).
 
     ![Helper eccezioni del debugger](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
     Per altre informazioni, vedere il post del blog relativo all'[uso del nuovo supporto eccezione in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
-- È ora possibile eseguire fino a una riga di codice mentre viene sospesa nel debugger selezionando l'icona della freccia **su Esegui esecuzione fino a qui** (l'icona viene visualizzata al passaggio del mouse su una riga di codice). In questo modo si elimina la necessità di impostare punti di interruzione temporanei.
+- È ora possibile eseguire fino a una riga di  codice mentre è in pausa nel debugger selezionando l'icona a forma di freccia verde Esegui l'esecuzione fino a qui (l'icona viene visualizzata quando si passa il mouse su una riga di codice). In questo modo si elimina la necessità di impostare punti di interruzione temporanei.
 
-    ![Esecuzione del debugger fino al clic](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
+    ![Esecuzione fino al clic del debugger](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
 
-- È possibile impostare le condizioni per le eccezioni nella finestra di dialogo **Impostazioni eccezioni** . a tale scopo, è possibile utilizzare l'icona **Modifica condizione** nella finestra di dialogo Impostazioni eccezioni oppure utilizzare il menu di scelta rapida per l'eccezione. Le condizioni attualmente supportate includono i nomi di modulo da includere o escludere per l'eccezione.
+- È possibile impostare condizioni per le eccezioni nella finestra di dialogo Impostazioni  eccezioni . A tale **scopo,** è possibile usare l'icona Modifica condizione nella finestra di dialogo Impostazioni eccezioni o il menu di scelta rapida dell'eccezione. Le condizioni attualmente supportate includono i nomi dei moduli da includere o escludere per l'eccezione.
 
-    ![Condizioni in un'eccezione](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
+    ![Condizioni per un'eccezione](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
 
-- La finestra di dialogo Connetti a processo include una nuova funzionalità di ricerca che consente di identificare più rapidamente il processo a cui è necessario connettersi.
+- La finestra di dialogo Associa a processo include una nuova funzionalità di ricerca che consente di identificare più rapidamente il processo a cui è necessario connettersi.
 
-    ![Cerca in Connetti a processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
+    ![Ricerca in Associa a processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Per ulteriori informazioni su queste nuove funzionalità, vedere le [Note sulla versione [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] di ](/visualstudio/releasenotes/vs2017-relnotes).
+Per altre informazioni su queste nuove funzionalità, vedere le note [sulla versione per [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Vedi anche
 

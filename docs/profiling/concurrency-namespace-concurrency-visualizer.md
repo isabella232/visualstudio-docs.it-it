@@ -1,6 +1,6 @@
 ---
 title: Spazio dei nomi Concurrency (visualizzatore di concorrenza) | Microsoft Docs
-description: Per scrivere programmi simultanei in C++, usare lo spazio dei nomi Concurrency, che fornisce l'accesso alla runtime di concorrenza, un Framework di concorrenza per C++.
+description: Per scrivere programmi simultanei in C++, usare lo spazio dei nomi Concurrency, che fornisce l'accesso al runtime di concorrenza, un framework di concorrenza per C++.
 custom.ms: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 001fbfce-a278-4502-aa27-26d65dd61453
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 884af287ced5a13cf4483e01617ffaf594d03e66
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3305b42dd2acc2684c5bb1a9d6c538d3f254c573
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941203"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039618"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Spazio dei nomi Concurrency (visualizzatore di concorrenza)
 Lo spazio dei nomi `Concurrency` fornisce classi e funzioni che consentono l'accesso al runtime di concorrenza, un framework di programmazione simultanea per C++. Per altre informazioni, vedere [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).
@@ -36,10 +37,10 @@ namespace Concurrency;
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[Spazio dei nomi Diagnostic](../profiling/diagnostic-namespace.md)|Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.|
+|[Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)|Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.|
 
 ## <a name="requirements"></a>Requisiti
  **Intestazione:** cvmarkersobj.h
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimenti alla libreria C](../profiling/c-library-reference.md)
+- [Informazioni di riferimento sulla libreria C](../profiling/c-library-reference.md)

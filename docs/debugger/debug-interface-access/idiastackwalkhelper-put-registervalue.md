@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b4730b2998bbf2cdf6627ef7d749cd87d1eabe7281f3eb5e5892fc4af597ccd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a93a21b10f6793cd75c6999998bc21b923ce69d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121325913"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052322"
 ---
 # <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
 Imposta il valore di un registro.
@@ -36,7 +36,7 @@ HRESULT put_registerValue (
 #### <a name="parameters"></a>Parametri
  `index`
 
-[in] Valore dell'enumerazione [CV_HREG_e che](../../debugger/debug-interface-access/cv-hreg-e.md) specifica il registro in cui scrivere.
+[in] Valore [dell'enumerazione CV_HREG_e che](../../debugger/debug-interface-access/cv-hreg-e.md) specifica il registro in cui scrivere.
 
  `NewVal`
 

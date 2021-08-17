@@ -1,5 +1,5 @@
 ---
-description: Enumera i diversi contributi di sezione contenuti nell'origine dati.
+description: Enumera i vari contributi di sezione contenuti nell'origine dati.
 title: IDiaEnumSectionContribs | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 0d6c0632-310f-4a99-8921-58149a1817e3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a17419e34623669bfbec6a1630867e65de18ca6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 48dddc4563087f242f88ff55191dcc47c0b1dba92f253820bde56b329642f361
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159272"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121455111"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
-Enumera i diversi contributi di sezione contenuti nell'origine dati.
+Enumera i vari contributi di sezione contenuti nell'origine dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,13 +31,13 @@ IDiaEnumSectionContribs : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaEnumSectionContribs` .
+Nella tabella seguente vengono illustrati i metodi di `IDiaEnumSectionContribs` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Recupera la versione dell' [interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) dell'enumeratore.|
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Recupera il numero di contributi alla sezione.|
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Recupera i contributi della sezione per mezzo di un indice.|
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Recupera la versione [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) di questo enumeratore.|
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Recupera il numero di contributi di sezione.|
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Recupera i contributi di sezione per mezzo di un indice.|
 |[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Recupera un numero specificato di contributi di sezione nella sequenza di enumerazione.|
 |[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Ignora un numero specificato di contributi di sezione in una sequenza di enumerazione.|
 |[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
@@ -45,10 +46,10 @@ La tabella seguente illustra i metodi di `IDiaEnumSectionContribs` .
 ## <a name="remarks"></a>Commenti
 
 ## <a name="note-for-callers"></a>Nota per i chiamanti
-Ottenere questa interfaccia dal metodo [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Per informazioni dettagliate, vedere l'esempio.
+Ottenere questa interfaccia dal [metodo IDiaSession::getEnumTables.](../../debugger/debug-interface-access/idiasession-getenumtables.md) Per informazioni dettagliate, vedere l'esempio.
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come ottenere (la `GetEnumSectionContribs` funzione) e usare (la `ShowSectionContribs` funzione) l' `IDiaEnumSectionContribs` interfaccia. Per un esempio più completo dell'uso dei contributi della sezione, vedere l'interfaccia [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) .
+In questo esempio viene illustrato come ottenere (la `GetEnumSectionContribs` funzione ) e usare `ShowSectionContribs` (la funzione ) `IDiaEnumSectionContribs` l'interfaccia . Per un esempio più completo dell'uso dei contributi della sezione, vedere [l'interfaccia IDiaSectionContrib.](../../debugger/debug-interface-access/idiasectioncontrib.md)
 
 ```C++
 
@@ -101,9 +102,9 @@ void ShowSectionContribs(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2. h
+Intestazione: Dia2.h
 
-Libreria: diaguids. lib
+Libreria: diaguids.lib
 
 DLL: msdia80.dll
 

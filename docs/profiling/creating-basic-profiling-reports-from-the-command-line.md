@@ -1,6 +1,6 @@
 ---
-title: Riga di comando per la profilatura-creazione di report di base
-description: Informazioni sulle opzioni di riepilogo e CallTrace di VSPerfReport.exe, che creano report con estensione CSV (valori delimitati da virgole) da un file di dati di profilatura con estensione vsp o vsps.
+title: Riga di comando di profilatura - Creare report di base
+description: Informazioni sulle opzioni Summary e CallTrace di VSPerfReport.exe, che creano report .csv (valori delimitati da virgole) da un file di dati di profilatura con estensione vsp o vsps.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,15 +8,16 @@ ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d5e263d68ff2fbfbd963e9e3ee3833bd266aaba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a7855d943463320b7ace6d7fb43542a4be81be5bf992234e16df477f6efb15e4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955996"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333418"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Creare report di profilatura di base tramite la riga di comando
 Questo articolo descrive i comandi VSPerfReport di base che generano report di valori separati da virgole (file con estensione *csv*) da un file di dati di profilatura con estensione *vsp* o *vsps*. Per la descrizione di tutte le opzioni del report, vedere [VSPerfReport](../profiling/vsperfreport.md).
@@ -24,7 +25,7 @@ Questo articolo descrive i comandi VSPerfReport di base che generano report di v
 ## <a name="report-commands"></a>Comandi del report
  Usare uno dei comandi seguenti per creare un report per il file di dati di profilatura specificato.
 
- **VSPerfReport** `VSPFile` **/Summary:All** Genera tutti i report disponibili per il file con estensione *vsp* o *vsps*.
+ **VSPerfReport** `VSPFile` **/Summary:All** Genera tutti i report disponibili per . *vsp* o . *File vsps.*
 
  **VSPerfReport** `VSPFile` **/Summary:** `ReportType` [,`ReportType`...] Genera i tipi di report specificati.
 
@@ -35,19 +36,19 @@ Questo articolo descrive i comandi VSPerfReport di base che generano report di v
 
 |Parametro di riepilogo|Descrizione report|Riferimenti per il report|
 |-----------------------|------------------------|----------------------|
-|**CallerCallee**|Rappresenta le relazioni padre-figlio tra le funzioni.|-   [Campionamento dei dati](../profiling/caller-callee-view-sampling-data.md)<br />-   [Dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/caller-callee-view-contention-data.md)|
-|**Funzione**|Elenca i dati di profilatura per funzione.|-   [Campionamento dei dati](../profiling/functions-view-sampling-data.md)<br />-   [Dati di strumentazione](../profiling/functions-view-instrumentation-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione di memoria .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/functions-view-contention-data.md)|
-|**CallTree**|Rappresenta i percorsi di esecuzione e i dati di profilatura delle funzioni nell'esecuzione della profilatura.|-   [Dati di strumentazione](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Campionamento dei dati](../profiling/call-tree-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione di memoria .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/call-tree-view-contention-data.md)|
+|**CallerCallee**|Rappresenta le relazioni padre-figlio tra le funzioni.|-   [Dati di campionamento](../profiling/caller-callee-view-sampling-data.md)<br />-   [Dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione della memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/caller-callee-view-contention-data.md)|
+|**Funzione**|Elenca i dati di profilatura per funzione.|-   [Dati di campionamento](../profiling/functions-view-sampling-data.md)<br />-   [Dati di strumentazione](../profiling/functions-view-instrumentation-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione della memoria .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/functions-view-contention-data.md)|
+|**CallTree**|Rappresenta i percorsi di esecuzione e i dati di profilatura delle funzioni nell'esecuzione della profilatura.|-   [Dati di strumentazione](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Dati di campionamento](../profiling/call-tree-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione della memoria .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/call-tree-view-contention-data.md)|
 |**Contatore**|Elenca i contrassegni di profilo e valori del contatore delle prestazioni di Windows raccolti durante l'esecuzione della profilatura.|-   [Visualizzazione Contrassegni](../profiling/marks-view.md)|
-|**IP**|Elenca i dati di profilatura per istruzione.|-   [Campionamento dei dati](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dati su conflitti](../profiling/instruction-pointers-ips-view-contention-data.md)|
+|**Ip**|Elenca i dati di profilatura per istruzione.|-   [Dati di campionamento](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dati su conflitti](../profiling/instruction-pointers-ips-view-contention-data.md)|
 |**Vita**|Visualizza la durata degli oggetti allocati.|-   [Visualizzazione Durata oggetti](../profiling/object-lifetime-view.md)|
-|**Linea**|Elenca i dati di profilatura per riga di codice sorgente.|-   [Campionamento dei dati](../profiling/lines-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dati sui conflitti](../profiling/lines-view-contention-data.md)|
+|**Linea**|Elenca i dati di profilatura per riga di codice sorgente.|-   [Dati di campionamento](../profiling/lines-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dati sui contenuti](../profiling/lines-view-contention-data.md)|
 |**Intestazione**|Informazioni di intestazione per il file di dati di profilatura.|Specifico per il file.|
 |**Contrassegno**|Contrassegni di profilatura raccolti nell'esecuzione della profilatura.|-   [Visualizzazione Contrassegni](../profiling/marks-view.md)|
-|**Modulo**|Elenca i dati di profilatura per i moduli.|-   [Campionamento dei dati](../profiling/modules-view-sampling-data.md)<br />-   [Dati di strumentazione](../profiling/modules-view-instrumentation-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione di memoria .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/modules-view-contention-data.md)|
-|**Processo**|Elenca i dati di profilatura per i processi.|-   [Visualizzazione processo](../profiling/process-view.md)<br />-   [Dati su conflitti](../profiling/process-view-contention-data.md)|
-|**Thread**|Elenca i dati di profilatura per i thread.|-   [Visualizzazione processo](../profiling/process-view.md)|
-|**Tipo**|Elenca i dati di profilatura dell'allocazione in base al tipo.|-   [Visualizzazione allocazioni](../profiling/dotnet-memory-allocations-view.md)|
+|**Modulo**|Elenca i dati di profilatura per i moduli.|-   [Dati di campionamento](../profiling/modules-view-sampling-data.md)<br />-   [Dati di strumentazione](../profiling/modules-view-instrumentation-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione di memoria .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/modules-view-contention-data.md)|
+|**Processo**|Elenca i dati di profilatura per i processi.|-   [Visualizzazione Processo](../profiling/process-view.md)<br />-   [Dati su conflitti](../profiling/process-view-contention-data.md)|
+|**Thread**|Elenca i dati di profilatura per i thread.|-   [Visualizzazione Processo](../profiling/process-view.md)|
+|**Tipo**|Elenca i dati di profilatura dell'allocazione in base al tipo.|-   [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md)|
 |**Contesa**|Conflitti tra risorse.|-   [Conflitti tra risorse](../profiling/resource-contentions-view-contention-data.md)|
 |**RuleWarnings**|Elenca i problemi relativi alle regole di prestazioni.|Elenca il valore CheckId, la descrizione e il percorso del codice sorgente del problema relativo alla regola.|
 |**ETW**|Elenca gli eventi ETW (Event Tracing for Windows) raccolti durante l'esecuzione della profilatura.|-   [Report ETW](../profiling/event-tracing-for-windows-etw-report.md)|

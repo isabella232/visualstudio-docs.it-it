@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ffdea3c624e451492b9cf970c89982adb1c571c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e2680b9617f157aab3a3b96486e887842adc94a004994383f22d54751e2e55b2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108226"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334068"
 ---
 # <a name="verifyfilehash-task"></a>Attività VerifyFileHash
 

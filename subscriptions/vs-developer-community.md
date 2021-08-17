@@ -1,5 +1,5 @@
 ---
-title: Vantaggio Community per gli sviluppatori nelle sottoscrizioni Visual Studio | Microsoft Docs
+title: Vantaggio Community per gli sviluppatori Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -14,16 +14,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121406803"
 ---
-# <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Forum di Community per sviluppatori Visual Studio sottoscrizioni
+# <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Forum di Community per sviluppatori nelle sottoscrizioni Visual Studio per gli sviluppatori
 Pubblicare domande, trovare risposte e condividere le proprie conoscenze nei forum Community per sviluppatori.
 
-## <a name="access-the-developer-community"></a>Accedere alla pagina developer Community
+## <a name="access-the-developer-community"></a>Accedere all'Community
 La connessione al Community developer è semplice.
 1. Accedere al portale Visual Studio sottoscrizioni all'indirizzo<https://my.visualstudio.com/benefits>
 0. Trovare **l'Community** developer nella sezione Supporto e fare clic su **Ottenere assistenza.**
 
    > [!div class="mx-imgBorder"]
-   > ![Riquadro Community per sviluppatori](_img/vs-developer-community/vs-developer-community-tile.png "Fare clic su &quot;Ottieni assistenza&quot; per connettersi all'Community")
+   > ![Riquadro Community per sviluppatori](_img/vs-developer-community/vs-developer-community-tile.png "Fare clic su &quot;Ottieni assistenza&quot; per connettersi alla pagina developer Community")
 
 È possibile cercare risposte o visualizzare il contenuto nelle aree del prodotto, ad esempio:
 - Visual Studio
@@ -57,7 +57,7 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  Contattare [il supporto Visual Studio sottoscrizioni.](https://my.visualstudio.com/gethelp)
+- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  Contattare [il supporto Visual Studio sottoscrizioni .](https://my.visualstudio.com/gethelp)
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche

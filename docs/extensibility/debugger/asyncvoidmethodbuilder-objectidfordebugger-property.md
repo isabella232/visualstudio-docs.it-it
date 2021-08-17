@@ -9,14 +9,15 @@ ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 782277cec64f27419d078a8493c7eb45d43d5b0f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: aac5f5c511b738907f5671ea70cb8d8d5285d486e5a9fdcf53dbeeecd0423175
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903697"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121293417"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Proprietà AsyncVoidMethodBuilder.ObjectIdForDebugger
 Ottiene un oggetto che può essere utilizzato per identificare in modo univoco questo generatore nel debugger.

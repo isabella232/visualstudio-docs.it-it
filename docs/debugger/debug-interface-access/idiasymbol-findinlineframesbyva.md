@@ -34,7 +34,7 @@ HRESULT findInlineFramesByVA (
 #### <a name="parameters"></a>Parametri
  `va`
 
-[in] Specifica l'indirizzo come va.
+[in] Specifica l'indirizzo come va va.
 
  `ppResult`
 

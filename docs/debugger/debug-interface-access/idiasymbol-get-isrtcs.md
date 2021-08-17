@@ -10,18 +10,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a297abe6326af6f04058e6095f59f880f526adb
-ms.sourcegitcommit: 30c404655fb83ea28f96ab1edb1c09b4d8d7eec4
+ms.openlocfilehash: be3833af7ea6dc26e51ef24077f762b3c2a001bc74459820b56f73e868849099
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "108217233"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404714"
 ---
 # <a name="idiasymbolget_isrtcs"></a>IDiaSymbol::get_isRTCs
 
-Restituisce un valore che indica se la funzione è stata compilata con il stack frame degli errori di run-time. Si tratta del flag /RTCs.
+Restituisce un valore che indica se la funzione è stata compilata con stack frame controllo degli errori di run-time. Si tratta del flag /RTCs.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +40,7 @@ HRESULT get_isRTCs (
 
 ## <a name="return-value"></a>Valore restituito
 
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
+ In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce o codice di `S_FALSE` errore.
 
 > [!NOTE]
 > Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.

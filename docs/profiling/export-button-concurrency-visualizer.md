@@ -1,6 +1,6 @@
 ---
 title: Pulsante Esporta (visualizzatore di concorrenza) | Microsoft Docs
-description: Esaminare il pulsante Esporta nel visualizzatore di concorrenza. Il pulsante Esporta consente di esportare lo stack di chiamate come file .csv per i propri record.
+description: Esaminare il pulsante Esporta nel visualizzatore di concorrenza. Il pulsante Esporta consente di esportare lo stack di chiamate come .csv file per i propri record.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual

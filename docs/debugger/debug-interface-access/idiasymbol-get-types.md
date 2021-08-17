@@ -37,7 +37,7 @@ HRESULT get_types (
 #### <a name="parameters"></a>Parametri
  `cTypes`
 
-[in] Dimensione del buffer in cui contenere i dati.
+[in] Dimensioni del buffer per contenere i dati.
 
  `pcTypes`
 
@@ -51,7 +51,7 @@ HRESULT get_types (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

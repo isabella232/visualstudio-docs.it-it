@@ -55,7 +55,7 @@ ID della matrice di cui fa parte questo elemento.
 Indice di questo elemento all'interno della matrice.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` di `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_ARRAYELEM` dati). [](../../../extensibility/debugger/reference/address-kind.md)
+Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_ARRAYELEM` struttura). [](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: sh.h

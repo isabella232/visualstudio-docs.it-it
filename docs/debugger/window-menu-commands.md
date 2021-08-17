@@ -1,5 +1,5 @@
 ---
-title: Comandi di menu finestra | Microsoft Docs
+title: Comandi del menu Finestra | Microsoft Docs
 description: Il menu Finestra fornisce comandi per gestire le finestre di Spy++. Vedere un elenco dei comandi, con una breve descrizione di ognuno.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -27,7 +27,7 @@ Il menu **Finestra** fornisce comandi per gestire le finestre di Spy++.
 
  **Affianca orizzontalmente** Ridisporre tutte le finestre in un motivo a riquadri orizzontali.
 
- **Affianca verticalmente** Ridispone tutte le finestre in un motivo a riquadri verticali.
+ **Affianca verticalmente** Ridisporre tutte le finestre in un motivo a riquadri verticale.
 
  **Disponi icone** Ridispone le icone di visualizzazione, se le finestre sono state ridotte a icona.
 

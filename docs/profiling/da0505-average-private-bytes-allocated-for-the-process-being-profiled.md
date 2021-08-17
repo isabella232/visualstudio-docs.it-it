@@ -1,5 +1,5 @@
 ---
-title: DA0505-byte privati medi allocati per il processo sottofilato | Microsoft Docs
+title: DA0505 - Byte privati medi allocati per il processo profilato | Microsoft Docs
 description: Questo messaggio indica la quantità media di memoria virtuale che il processo ha attualmente allocato in byte (byte privati).
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,15 +11,16 @@ ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f141ce40c22fbd6ee9445dc676b49f0d601f2a74
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 5ff9af2c9bf9d1eb285056bbfebf16daefe1ac627377c537df502ab74812473c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465816"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333210"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Byte privati medi allocati per il processo sottoposto a profilatura
 

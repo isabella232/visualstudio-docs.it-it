@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b9cbf1bb383e12995804c3cb67f5bc144312f736901704f049ea81f34e8d8952
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0d2ab67236d33b2f298f4542931010970c901775
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453650"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052010"
 ---
 # <a name="how-to-display-thread-properties"></a>Procedura: visualizzare le proprietà thread
 Per altre informazioni su un thread elencato nella [visualizzazione Thread](../debugger/threads-view.md), usare la finestra di dialogo [Proprietà thread](../debugger/thread-properties-dialog-box.md).

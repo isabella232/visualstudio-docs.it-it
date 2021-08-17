@@ -34,7 +34,7 @@ ms.locfileid: "121346635"
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 La convalida dei dati è il processo di verifica che i valori immessi negli oggetti dati siano conformi ai vincoli all'interno dello schema di un set di dati. Il processo di convalida conferma anche che questi valori stanno seguendo le regole stabilite per l'applicazione. È consigliabile convalidare i dati prima di inviare aggiornamenti al database sottostante. In questo modo si riducono gli errori e il numero potenziale di round trip tra un'applicazione e il database.
 
-È possibile verificare che i dati scritti in un set di dati siano validi compilando i controlli di convalida nel set di dati stesso. Il set di dati può controllare i dati indipendentemente dalla modalità di esecuzione dell'aggiornamento, sia direttamente dai controlli in un form, all'interno di un componente o in un altro modo. Poiché il set di dati fa parte dell'applicazione (a differenza del back-end del database), è una posizione logica per compilare la convalida specifica dell'applicazione.
+È possibile verificare che i dati scritti in un set di dati siano validi compilando i controlli di convalida nel set di dati stesso. Il set di dati può controllare i dati indipendentemente dal modo in cui viene eseguito l'aggiornamento, sia direttamente dai controlli in un form, all'interno di un componente o in un altro modo. Poiché il set di dati fa parte dell'applicazione (a differenza del back-end del database), è una posizione logica per compilare la convalida specifica dell'applicazione.
 
 La posizione migliore per aggiungere la convalida all'applicazione è nel file di classe parziale del set di dati. In o aprire il Progettazione DataSet e fare doppio clic sulla colonna o sulla tabella per cui [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] si vuole creare la [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] convalida.  Questa azione crea automaticamente un <xref:System.Data.DataTable.ColumnChanging> gestore <xref:System.Data.DataTable.RowChanging> eventi o .
 
@@ -45,7 +45,7 @@ La convalida all'interno di un set di dati viene eseguita nei modi seguenti:
 
 - Creando una convalida specifica dell'applicazione in grado di controllare i dati in valori durante la modifica di un'intera riga di dati. Per altre informazioni, vedere [Procedura: Convalidare i dati durante le modifiche alle righe.](validate-data-in-datasets.md)
 
-- Creando chiavi, vincoli univoci e così via come parte della definizione dello schema effettivo del set di dati.
+- Creando chiavi, vincoli univoci e così via come parte della definizione dello schema effettiva del set di dati.
 
 - Impostando le proprietà <xref:System.Data.DataColumn> dell'oggetto , ad esempio <xref:System.Data.DataColumn.MaxLength%2A> , <xref:System.Data.DataColumn.AllowDBNull%2A> e <xref:System.Data.DataColumn.Unique%2A> .
 
@@ -71,8 +71,8 @@ Se l'applicazione usa un set di dati tipizzato, è possibile creare gestori even
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Il valore in una colonna viene modificato. L'evento passa la riga e la colonna all'utente, insieme al nuovo valore proposto.|
 |<xref:System.Data.DataTable.ColumnChanged>|Il valore in una colonna è stato modificato. L'evento passa la riga e la colonna all'utente, insieme al valore proposto.|
-|<xref:System.Data.DataTable.RowChanging>|Il commit delle modifiche apportate a un oggetto sta per essere <xref:System.Data.DataRow> eseguito di nuovo nel set di dati. Se non è stato chiamato il metodo , l'evento viene generato per ogni modifica a una colonna immediatamente dopo la generazione <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataTable.RowChanging> <xref:System.Data.DataTable.ColumnChanging> dell'evento . Se è stato chiamato <xref:System.Data.DataRow.BeginEdit%2A> prima di apportare modifiche, <xref:System.Data.DataTable.RowChanging> l'evento viene generato solo quando si chiama il <xref:System.Data.DataRow.EndEdit%2A> metodo .<br /><br /> L'evento passa la riga all'utente, insieme a un valore che indica il tipo di azione (modifica, inserimento e così via) in corso.|
-|<xref:System.Data.DataTable.RowChanged>|Una riga è stata modificata. L'evento passa la riga all'utente, insieme a un valore che indica il tipo di azione (modifica, inserimento e così via) in corso.|
+|<xref:System.Data.DataTable.RowChanging>|Il commit delle modifiche apportate a un oggetto sta per essere <xref:System.Data.DataRow> eseguito di nuovo nel set di dati. Se non è stato chiamato il metodo , l'evento viene generato per ogni modifica a una colonna immediatamente dopo la generazione <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataTable.RowChanging> <xref:System.Data.DataTable.ColumnChanging> dell'evento . Se è stato chiamato <xref:System.Data.DataRow.BeginEdit%2A> prima di apportare modifiche, <xref:System.Data.DataTable.RowChanging> l'evento viene generato solo quando si chiama il <xref:System.Data.DataRow.EndEdit%2A> metodo .<br /><br /> L'evento passa la riga all'utente, insieme a un valore che indica quale tipo di azione (modifica, inserimento e così via) viene eseguita.|
+|<xref:System.Data.DataTable.RowChanged>|Una riga è stata modificata. L'evento passa la riga all'utente, insieme a un valore che indica quale tipo di azione (modifica, inserimento e così via) viene eseguita.|
 |<xref:System.Data.DataTable.RowDeleting>|È in corso l'eliminazione di una riga. L'evento passa la riga all'utente, insieme a un valore che indica il tipo di azione (eliminazione) eseguita.|
 |<xref:System.Data.DataTable.RowDeleted>|Una riga è stata eliminata. L'evento passa la riga all'utente, insieme a un valore che indica il tipo di azione (eliminazione) eseguita.|
 
@@ -102,7 +102,7 @@ La convalida può essere eseguita anche durante <xref:System.Data.DataTable.RowC
 
 1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati nel Progettazione DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2. Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea automaticamente <xref:System.Data.DataTable.RowChanging> il gestore eventi di nel file di classe parziale del set di <xref:System.Data.DataTable> dati.
+2. Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea automaticamente il gestore eventi di nel file di <xref:System.Data.DataTable.RowChanging> classe parziale del set di <xref:System.Data.DataTable> dati.
 
     > [!TIP]
     > Fare doppio clic a sinistra del nome della tabella per creare il gestore eventi di modifica delle righe. Se si fa doppio clic sul nome della tabella, è possibile modificarlo.

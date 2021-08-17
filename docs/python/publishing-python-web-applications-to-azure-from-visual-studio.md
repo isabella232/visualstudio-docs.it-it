@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a0abf1334a976b095225b05ee0c5db8ea2295c519c65cfed9d5e39f839529ca8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f8338ea3810c45758029694fd3725e0ecf924b01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121230014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027305"
 ---
 # <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 

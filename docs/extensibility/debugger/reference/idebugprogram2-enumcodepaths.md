@@ -1,5 +1,5 @@
 ---
-description: Recupera un elenco dei percorsi di codice per una determinata posizione in un file di origine.
+description: Recupera un elenco di percorsi di codice per una determinata posizione in un file di origine.
 title: IDebugProgram2::EnumCodePaths | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121292364"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-Recupera un elenco dei percorsi di codice per una determinata posizione in un file di origine.
+Recupera un elenco di percorsi di codice per una determinata posizione in un file di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ int EnumCodePaths(
 [in] Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta il contesto del codice corrente.
 
 `pFrame`\
-[in] Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta la stack frame associata al punto di interruzione corrente.
+[in] Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta il stack frame associato al punto di interruzione corrente.
 
 `fSource`\
 [in] Diverso da zero ( `TRUE` ) se nella vista **Origine** oppure zero ( ) se nella `FALSE` vista **Disassembly.**

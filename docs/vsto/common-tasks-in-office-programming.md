@@ -1,5 +1,5 @@
 ---
-title: Attività comuni nella programmazione Office
+title: Attività comuni nella programmazione Office dati
 description: Informazioni su come programmare in base ai dati in una personalizzazione a livello di documento senza dover usare il modello a oggetti di Microsoft Office Word o Office Excel.
 ms.custom: SEO-VS-2020SS
 ms.date: 02/02/2017
@@ -17,21 +17,21 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e7282fbd105491edb0aac45e116d10da5abf3d1ca77f16a75ae63d6b8c863f04
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 152af5d3be5385e6f5c91fb510d62ea7bc336218
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424463"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053924"
 ---
-# <a name="common-tasks-in-office-programming"></a>Attività comuni nella programmazione Office
+# <a name="common-tasks-in-office-programming"></a>Attività comuni nella programmazione Office dati
   Questo argomento descrive come usare Visual Studio per trovare le risposte alle seguenti categorie di domande frequenti relative alla programmazione delle soluzioni Office.
 
-- [Configurazione e attività generali](#projects).
+- [Installazione e attività generali](#projects).
 
 - [Attività di personalizzazione dell'interfaccia utente](#ui).
 
-- [Excel di automazione di .](#excel)
+- [Excel attività di automazione .](#excel)
 
 - [Attività di automazione di Word](#word).
 
@@ -45,21 +45,21 @@ ms.locfileid: "121424463"
 
 ## <a name="setup-and-general-tasks"></a><a name="projects"></a> Configurazione e attività generali
 
-- [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- [Procedura: Creare Office progetti in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-- [Procedura: Aggiornare le Office .](/previous-versions/4bez6837(v=vs.140))
+- [Procedura: Aggiornare Office soluzioni](/previous-versions/4bez6837(v=vs.140)).
 
 - [Procedura: Installare Office assembly di interoperabilità primari.](../vsto/how-to-install-office-primary-interop-assemblies.md)
 
 - [Procedura: Impostare come destinazione Office applicazioni tramite assembly di interoperabilità primari.](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 
-- [Procedura: Creare gestori eventi in Office progetti](../vsto/how-to-create-event-handlers-in-office-projects.md).
+- [Procedura: Creare gestori eventi nei progetti Office .](../vsto/how-to-create-event-handlers-in-office-projects.md)
 
 - [Procedura: Aprire soluzioni Office senza eseguire codice](../vsto/how-to-open-office-solutions-without-running-code.md).
 
 - [Procedura: Configurare le informazioni di configurazione per una Office soluzione](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).
 
-- [Procedura: Visualizzare la scheda Sviluppatore nella barra multifunzione.](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
+- [Procedura: Visualizzare la scheda Sviluppatore sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 - [Procedura: Visualizzare gli errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md).
 
@@ -67,23 +67,23 @@ ms.locfileid: "121424463"
 
 ### <a name="controls-on-documents-and-worksheets"></a>Controlli su documenti e fogli di lavoro
 
-- [Procedura: Aggiungere controlli form Windows ai Office documenti](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
+- [Procedura: Aggiungere controlli Windows Form per Office documenti](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
 
 - [Procedura: Aggiungere controlli NamedRange ai fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 - [Procedura: Aggiungere controlli ListObject ai fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
-- [Procedura: Aggiungere controlli form Windows ai Office documenti](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
+- [Procedura: Aggiungere controlli Windows Form per Office documenti](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
 
-- [Procedura: Aggiungere controlli contenuto ai documenti di Word.](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Procedura: Aggiungere controlli contenuto ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).
 
-- [Procedura: Aggiungere controlli Bookmark ai documenti di Word.](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Procedura: Aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
 ### <a name="task-panes-in-document-level-customizations"></a>Riquadri attività nelle personalizzazioni a livello di documento
 
-- [Procedura: Aggiungere un riquadro azioni a documenti di Word o Excel cartelle di lavoro](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)di .
+- [Procedura: Aggiungere un riquadro azioni a documenti di Word o Excel cartelle di lavoro](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-### <a name="task-panes-in-vsto-add-ins"></a>Riquadri attività VSTO componenti aggiuntivi
+### <a name="task-panes-in-vsto-add-ins"></a>Riquadri attività in VSTO componenti aggiuntivi
 
 - [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
@@ -91,9 +91,9 @@ ms.locfileid: "121424463"
 
 - [Procedura: Iniziare a personalizzare la barra multifunzione.](../vsto/how-to-get-started-customizing-the-ribbon.md)
 
-- [Procedura: Modificare la posizione di una scheda nella barra multifunzione.](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Procedura: Modificare la posizione di una scheda sulla barra multifunzione.](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 
-- [Procedura: Personalizzare una scheda incorporata.](../vsto/how-to-customize-a-built-in-tab.md)
+- [Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md).
 
 - [Procedura: Aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
@@ -101,9 +101,9 @@ ms.locfileid: "121424463"
 
 ### <a name="outlook-form-regions"></a>Aree del modulo di Outlook
 
-- [Procedura: Aggiungere un'area del modulo a Outlook progetto di componente aggiuntivo .](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Procedura: Aggiungere un'area del modulo a un progetto Outlook componente aggiuntivo](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-- [Procedura: Impedire Outlook visualizzare un'area del modulo](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).
+- [Procedura: Impedire Outlook di visualizzare un'area del modulo.](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
 
 ### <a name="custom-menus"></a>Menu personalizzati
 
@@ -111,7 +111,7 @@ ms.locfileid: "121424463"
 
 ## <a name="excel-automation-tasks"></a><a name="excel"></a>Excel di automazione
 
-- [Procedura: Visualizzare una stringa in una cella del foglio](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)di lavoro a livello di codice.
+- [Procedura: Visualizzare una stringa a livello di codice in una cella del foglio di lavoro.](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)
 
 - [Procedura: Creare nuove cartelle di lavoro a livello di codice.](../vsto/how-to-programmatically-create-new-workbooks.md)
 
@@ -121,9 +121,9 @@ ms.locfileid: "121424463"
 
 - [Procedura: Chiudere cartelle di lavoro a livello di codice.](../vsto/how-to-programmatically-close-workbooks.md)
 
-- [Procedura: Aggiungere nuovi fogli di lavoro alle cartelle di lavoro](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)a livello di codice.
+- [Procedura: Aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice.](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 
-- [Procedura: Nascondere i fogli di lavoro a livello di codice.](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Procedura: Nascondere fogli di lavoro a livello di codice.](../vsto/how-to-programmatically-hide-worksheets.md)
 
 - [Procedura: Spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice.](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
 
@@ -131,15 +131,15 @@ ms.locfileid: "121424463"
 
 - [Procedura: Fare riferimento a intervalli di fogli di lavoro nel codice a livello di codice.](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 
-- [Procedura: Applicare stili agli intervalli nelle cartelle](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)di lavoro a livello di codice.
+- [Procedura: Applicare stili agli intervalli nelle](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)cartelle di lavoro a livello di codice.
 
 - [Procedura: Modificare la formattazione a livello di codice nelle righe del foglio di lavoro contenenti celle selezionate.](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
 
-- [Procedura: Cercare testo negli intervalli dei fogli](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)di lavoro a livello di codice.
+- [Procedura: Cercare testo negli intervalli di](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)fogli di lavoro a livello di codice.
 
 - [Procedura: Stampare fogli di lavoro a livello di codice.](../vsto/how-to-programmatically-print-worksheets.md)
 
-- [Procedura: Eseguire calcoli di Excel a livello di codice.](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Procedura: Eseguire calcoli Excel a livello di codice.](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
 
 - [Procedura: Ordinare i dati nei fogli di lavoro a livello di codice.](../vsto/how-to-programmatically-sort-data-in-worksheets.md)
 
@@ -153,65 +153,65 @@ ms.locfileid: "121424463"
 
 - [Procedura: Chiudere documenti a livello di codice.](../vsto/how-to-programmatically-close-documents.md)
 
-- [Procedura: Inserire testo nei documenti di Word a livello di codice.](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Procedura: Inserire testo a livello di codice nei documenti di Word.](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 
-- [Procedura: Definire e selezionare intervalli nei documenti](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)a livello di codice.
+- [Procedura: Definire e selezionare intervalli nei documenti a livello di codice.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 
-- [Procedura: Reimpostare gli intervalli nei documenti di Word a livello di codice.](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Procedura: Reimpostare gli intervalli a livello di codice nei documenti di Word.](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
 
 - [Procedura: Formattare il testo nei documenti a livello di codice.](../vsto/how-to-programmatically-format-text-in-documents.md)
 
-- [Procedura: Aggiungere controlli XMLNode ai documenti di Word.](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
+- [Procedura: Aggiungere controlli XMLNode ai documenti di Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).
 
 - [Procedura: Aggiornare il testo del segnalibro a livello di codice.](../vsto/how-to-programmatically-update-bookmark-text.md)
 
-- [Procedura: Cercare e sostituire testo nei documenti a livello di codice.](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Procedura: Cercare e sostituire testo nei](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)documenti a livello di codice.
 
 - [Procedura: Stampare documenti a livello di codice.](../vsto/how-to-programmatically-print-documents.md)
 
 - [Procedura: Creare tabelle di Word a livello di codice.](../vsto/how-to-programmatically-create-word-tables.md)
 
-- [Procedura: Aggiungere righe e colonne alle tabelle di Word a livello di codice.](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Procedura: Aggiungere righe e colonne alle](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)tabelle di Word a livello di codice.
 
 - [Procedura: Contare i caratteri nei documenti a livello di codice.](../vsto/how-to-programmatically-count-characters-in-documents.md)
 
-## <a name="data-tasks"></a><a name="data"></a> Attività relative ai dati
+## <a name="data-tasks"></a><a name="data"></a> Attività sui dati
 
 ### <a name="data-bound-controls"></a>Controlli associati a dati
 
-- [Procedura: Popolare i fogli di lavoro con i dati di un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md).
+- [Procedura: Popolare fogli di lavoro con dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md).
 
 - [Procedura: Popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md).
 
-- [Procedura: Popolare i documenti con i dati dei servizi](../vsto/how-to-populate-documents-with-data-from-services.md).
+- [Procedura: Popolare documenti con dati dai servizi](../vsto/how-to-populate-documents-with-data-from-services.md).
 
 - [Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 - [Procedura: Popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md).
 
-- [Procedura: Popolare i documenti con i dati dei servizi](../vsto/how-to-populate-documents-with-data-from-services.md).
+- [Procedura: Popolare documenti con dati dai servizi](../vsto/how-to-populate-documents-with-data-from-services.md).
 
 - [Procedura: Aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ### <a name="cached-data-in-document-level-solutions"></a>Dati memorizzati nella cache nelle soluzioni a livello di documento
 
-- [Procedura: Memorizzare nella cache i dati da usare offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
-- [Procedura: Memorizzare nella cache a livello di codice un'origine dati in Office documento](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).
+- [Procedura: Memorizzare nella cache a livello di codice un'origine](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)dati in un Office documento .
 
 - [Procedura: Memorizzare nella cache i dati in un documento protetto da password.](../vsto/how-to-cache-data-in-a-password-protected-document.md)
 
 ### <a name="custom-xml-data"></a>Dati XML personalizzati
 
-- [Procedura: Aggiungere parti XML personalizzate alle personalizzazioni a livello di documento.](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [Procedura: Aggiungere parti XML personalizzate alle personalizzazioni a livello di documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).
 
 - [Procedura: Aggiungere parti XML personalizzate ai documenti usando VSTO componenti aggiuntivi](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).
 
-## <a name="server-side-document-management-tasks"></a><a name="server"></a> Attività di gestione dei documenti lato server
+## <a name="server-side-document-management-tasks"></a><a name="server"></a> Attività di gestione dei documenti sul lato server
 
 - [Procedura: Rimuovere estensioni di codice gestito dai documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md).
 
-- [Procedura: Associare estensioni di codice gestito a documenti](../vsto/how-to-attach-managed-code-extensions-to-documents.md).
+- [Procedura: Collegare estensioni di codice gestito ai documenti](../vsto/how-to-attach-managed-code-extensions-to-documents.md).
 
 ## <a name="security-tasks"></a><a name="security"></a> Attività di sicurezza
 

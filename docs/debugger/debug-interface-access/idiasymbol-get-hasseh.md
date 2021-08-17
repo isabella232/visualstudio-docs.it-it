@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fda21a6bf167434c5dfd674f8a6be1d1b1efc531da5930a6077ca6c2539a53d7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 821336057b3530ad2b46c9f14c6b04669b7db983
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379950"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052261"
 ---
 # <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
 Recupera un flag che specifica se la funzione contiene una gestione delle eccezioni strutturata [(C/C++),](/cpp/cpp/structured-exception-handling-c-cpp) ad esempio blocchi \_ __try/_except strutturati.

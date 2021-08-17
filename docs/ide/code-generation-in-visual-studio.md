@@ -1,20 +1,21 @@
 ---
 title: Funzionalità di generazione del codice
-description: Scopri come Visual Studio può aiutarti a generare, correggere ed effettuare il refactoring del codice.
+description: Informazioni su Visual Studio possibile generare, correggere ed eseguire il refactoring del codice.
 ms.custom: SEO-VS-2020
 ms.date: 01/11/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 63845d6dbfd8cffda9258690481253827b29754b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e8d82e1bab12c3393f6b5781c86219422727c0a2d163ab6aecdfdf86c6763599
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950458"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121233524"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funzionalità di generazione del codice in Visual Studio
 
@@ -36,4 +37,4 @@ Visual Studio offre supporto in numerosi modi per generare e correggere il codic
 - [Frammenti di codice](../ide/code-snippets.md)
 - [Azioni rapide](../ide/quick-actions.md)
 - [Refactoring](../ide/refactoring-in-visual-studio.md)
-- [Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)
+- [Generazione del codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)

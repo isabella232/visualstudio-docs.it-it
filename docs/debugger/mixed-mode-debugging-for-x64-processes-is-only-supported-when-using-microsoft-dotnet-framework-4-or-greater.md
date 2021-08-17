@@ -1,6 +1,6 @@
 ---
 title: Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
-description: Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto per il debug in modalità mista di processi x64. Vedere questo articolo per le soluzioni alternative.
+description: Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto per il debug in modalità mista di processi x64. Per le soluzioni alternative, vedere questo articolo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,14 +15,15 @@ ms.assetid: b7495655-54c0-4315-8422-43bf63b8c22e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 92ec1022842e44f9f87069c48d4de3259dcf8e99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01299107e9260272044548323e84cab1f78e6867438293bde9e315458a2bd369
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913192"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343689"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
 Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto per il debug in modalità mista di processi x64. Ciò significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.
@@ -57,7 +58,7 @@ Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto pe
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 
-- Vedere [configurazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Vedere [Configurazione del SQL debug.](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
 
 ## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)

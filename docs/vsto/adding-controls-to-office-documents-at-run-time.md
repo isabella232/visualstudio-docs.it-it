@@ -25,12 +25,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 2b6f8fdd05bde0714abc90f8c18e6217708deb6313871e41e8600acecf40af10
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: af944f700895856e33b66224afa55da897686f56
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440903"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038344"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>Aggiungere controlli ai Office in fase di esecuzione
   È possibile aggiungere controlli a un documento di Microsoft Office Word e a una cartella di lavoro di Microsoft Office Excel in fase di esecuzione. È inoltre possibile rimuoverli in fase di esecuzione. I controlli aggiunti o rimossi in fase di esecuzione sono noti come *controlli dinamici*.
@@ -54,7 +54,7 @@ ms.locfileid: "121440903"
 
 - In un progetto a livello di documento per Word, usare la proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> della classe `ThisDocument` . Per altre informazioni su questa classe, vedere Document [host item](../vsto/document-host-item.md).
 
-- In un VSTO di componente aggiuntivo per Excel o Word, usare la proprietà di un oggetto o generato in `Controls` <xref:Microsoft.Office.Tools.Excel.Worksheet> fase di <xref:Microsoft.Office.Tools.Word.Document> esecuzione. Per altre informazioni sulla generazione di questi oggetti in fase di esecuzione, vedere Estendere documenti di Word e cartelle di lavoro [Excel in VSTO componenti aggiuntivi in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- In un VSTO di componente aggiuntivo per Excel o Word, usare la proprietà di un oggetto o generato in `Controls` <xref:Microsoft.Office.Tools.Excel.Worksheet> fase di <xref:Microsoft.Office.Tools.Word.Document> esecuzione. Per altre informazioni sulla generazione di questi oggetti in fase di esecuzione, vedere Estendere documenti di Word e cartelle di lavoro Excel in VSTO [componenti aggiuntivi in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 
 ### <a name="add-controls"></a>Aggiungere controlli
  I tipi <xref:Microsoft.Office.Tools.Excel.ControlCollection> e <xref:Microsoft.Office.Tools.Word.ControlCollection> includono metodi di supporto che è possibile usare per aggiungere controlli host e controlli Windows Form comuni a documenti e fogli di lavoro. Il nome di ciascun metodo presenta il formato `Add`*classe del controllo*, dove *classe del controllo* rappresenta il nome del controllo che si desidera aggiungere. Ad esempio, per aggiungere un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> al documento, usare il metodo <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> .

@@ -1,5 +1,5 @@
 ---
-title: Cast Highlight benefit in to Visual Studio subscriptions | Microsoft Docs
+title: Vantaggio CAST Highlight in per Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
@@ -15,9 +15,9 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121406824"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio
-Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software durante la migrazione al cloud. Con CAST Highlight, i sottoscrittori di Visual Studio possono analizzare rapidamente il codice sorgente dell'applicazione per identificare l'idoneità per il cloud delle applicazioni per la migrazione ad Azure e monitorare lo stato di avanzamento dell'app durante e dopo una migrazione.
+Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software durante la migrazione al cloud. Con CAST Highlight, i sottoscrittori Visual Studio possono analizzare rapidamente il codice sorgente dell'applicazione per identificare la conformità cloud delle applicazioni per la migrazione ad Azure e monitorare lo stato di avanzamento dell'app sia durante che dopo una migrazione.
 
-- Visual Studio Enterprise sottoscrittori possono ottenere una sottoscrizione gratuita e completa di tre mesi a CAST Highlight che consente agli utenti di valutare fino a cinque app.
+- Visual Studio Enterprise sottoscrittori possono ottenere una sottoscrizione gratuita completa di tre mesi a CAST Highlight che consente agli utenti di valutare fino a cinque app.
 - Visual Studio Professional sottoscrittori possono ottenere una sottoscrizione simile che consente di valutare un'app per tre mesi.
 
 ## <a name="activation-steps"></a>Passaggi di attivazione
@@ -26,7 +26,7 @@ Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software
 2. Individuare il riquadro del vantaggio CAST Highlight nella categoria "Strumenti" e fare clic su **Ottieni il codice**.
 
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Fare clic su &quot;Ottieni codice&quot; nel riquadro del vantaggio CAST Highlight per iniziare.")
+   > ![Riquadro del vantaggio CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Fare clic su "Get Code" (Ottieni codice) nel riquadro del vantaggio CAST Highlight per iniziare.")
 
 0. Verrà visualizzato un messaggio che informa che il codice è stato recuperato correttamente.  Fare clic su **Attiva**. Se non si sceglie di attivare subito il vantaggio, si può sempre tornare al riquadro di CAST Highlight nel portale delle sottoscrizioni.  Il collegamento "Ottieni il codice" verrà modificato in "Attiva" e facendo clic su di esso si riprenderà il processo di attivazione.
 
@@ -46,22 +46,22 @@ Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software
 
    > *Grazie per aver richiesto di attivare l'accesso di 30 giorni a CAST Highlight, un'offerta esclusiva riservata ai clienti di Microsoft Visual Studio Enterprise!*
    >
-   > *La richiesta di attivazione e accesso a CAST Highlight è attualmente in fase di revisione. L'utente riceverà un'emotica in non più di 48 ore.*
+   > *È in corso la revisione della richiesta di attivazione e accesso a CAST Highlight. Non più di 48 ore.*
    >
    > *Migliore,* 
    >  *Greg*
 
 Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di posta elettronica a conferma della corretta creazione dell'account e verrà chiesto di fare clic sul collegamento per l'attivazione per completare il processo di attivazione.
 
-   > *La richiesta di accesso a CAST Highlight è stata verificata e convalidata. Benvenuti a bordo!*
+   > *La richiesta di accesso a CAST Highlight è stata verificata e convalidata. Benvenuti a bordo.*
    >
-   > *Per completare l'attivazione, è necessario un ultimo passaggio. Si riceverà un messaggio di posta elettronica noreply@casthighlight.com da con un collegamento di attivazione. Selezionare la casella di posta indesiderata se non viene visualizzato il messaggio di posta elettronica.*
+   > *Per completare l'attivazione, è necessario un ultimo passaggio. Si riceverà un messaggio di posta elettronica noreply@casthighlight.com da con un collegamento di attivazione. Selezionare la casella spam se non viene visualizzato il messaggio di posta elettronica.*
    >
    > *Fai clic sul collegamento per l'attivazione specificato nel messaggio di posta elettronica per completare il processo di attivazione.*
    >
-   > *Dopo l'attivazione, si avrà un accesso di 30 giorni alla piattaforma CAST Highlight ed è possibile eseguire l'onboard di un massimo di 5 applicazioni. Si noti che si tratta di un'offerta esclusiva disponibile Microsoft Visual Studio Enterprise solo ai clienti.*
+   > *Dopo l'attivazione, si avrà un accesso di 30 giorni alla piattaforma CAST Highlight e sarà possibile eseguire l'onboard di un massimo di 5 applicazioni. Si noti che si tratta di un'offerta esclusiva disponibile solo per Microsoft Visual Studio Enterprise clienti.*
    >
-   > *Si verrà a contatto per assicurarsi che tutto si svolga senza problemi. Nel frattempo, ecco alcuni contenuti utili per iniziare:*
+   > *I will be in touch to ensure that everything moves smoothly for you. Nel frattempo, ecco alcuni contenuti utili per iniziare:*
    >
    > - [CAST Highlight - Demo sull'idoneità per il cloud](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
    > - [Guida introduttiva (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
@@ -89,9 +89,9 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
 <sup>1</sup>*Include: Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine, NFR Basic*  
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per acquistare Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connessione a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con CAST Highlight?  vedere le risorse seguenti:
@@ -108,6 +108,6 @@ Non si è certi della sottoscrizione in uso?  Connessione a per [https://my.visu
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Se il vantaggio di credito singolo Azure DevTest fornito con la sottoscrizione non è ancora stato attivato, visitare e fare clic sul riquadro di Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) di Azure DevTest.
+Se il vantaggio di credito singolo Azure DevTest fornito con la sottoscrizione non è ancora stato attivato, visitare e fare clic sul riquadro Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) di Azure DevTest.
 
 Non dimenticare di seguire la demo, il manuale dell'utente e le esercitazioni video indicati nel messaggio di posta elettronica ricevuto.

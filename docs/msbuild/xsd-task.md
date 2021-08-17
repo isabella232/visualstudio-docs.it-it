@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5885add3c772bf3b2e42b556199fda3deb83426c55dccb3b5eb908a217e9efca
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9af55b62782a8d10b2e193b29bb9d8fade5b9aad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369384"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039891"
 ---
 # <a name="xsd-task"></a>XSD (attività)
 

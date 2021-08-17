@@ -1,11 +1,9 @@
 ---
 title: 'Passaggio 3: Aggiungere un timer per il conto alla rovescia'
-description: Informazioni su come aggiungere un timer per il conto alla rovescia per tenere traccia del numero di secondi rimanenti per il completamento del quiz.
+description: Informazioni su come aggiungere un timer per il conto alla rovescia per tenere traccia del numero di secondi che rimangono per il completamento dell'emittente del quiz.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
@@ -13,21 +11,22 @@ ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd3ca99df01262d5a27f9f6ac22cd5f2e25836c
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 40716f502366d93fd48760173c29db1bf69bee4e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296482"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040834"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: Aggiungere un timer per il conto alla rovescia
 
 Nella terza parte di questa esercitazione si aggiungerà un timer per il conto alla rovescia per tenere traccia del numero di secondi che rimangono all'esecutore del quiz per completare l'operazione.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
 ## <a name="to-add-a-countdown-timer"></a>Per aggiungere un timer per il conto alla rovescia
 
@@ -64,7 +63,7 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
      Si è appena aggiunta un'istruzione `if else`, che rappresenta il modo in cui si comunica ai programmi di prendere decisioni. Di seguito è riportato un esempio di istruzione `if else`.
 
     > [!NOTE]
-    > L'esempio seguente è solo a scopo dimostrativo. non aggiungerlo al progetto.
+    > L'esempio seguente è solo a scopo dimostrativo: non aggiungerlo al progetto.
 
     ```vb
     If (something that your program will check) Then
@@ -114,6 +113,6 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 4: aggiungere il metodo metodo CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)**.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 4: Aggiungere il metodo CheckTheAnswer().](../ide/step-4-add-the-checktheanswer-parens-method.md)**
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).

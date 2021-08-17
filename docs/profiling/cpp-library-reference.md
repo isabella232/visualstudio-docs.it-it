@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a183a94e90a5b69c64b3a0bc709a20e478aaac711075c4881abc0039ad6e9e8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 430d392d4f483a131251636f0b12876259887fcb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368994"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039267"
 ---
 # <a name="c-library-reference"></a>Riferimento alla libreria C++
 
@@ -29,7 +29,7 @@ In questa sezione sono contenute informazioni di riferimento per l'SDK del visua
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-[Spazio dei nomi Concurrency (visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+[Spazio dei nomi Concorrenza (visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
 ## <a name="see-also"></a>Vedi anche
 

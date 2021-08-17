@@ -1,6 +1,6 @@
 ---
-title: Usare stored procedure in LINQ to SQL aggiornare i dati
-description: Usare stored procedure in LINQ to SQL Object Relational Designer (O/R Designer) per eseguire aggiornamenti, inserimenti ed eliminazioni di dati.
+title: Usare stored procedure in LINQ to SQL per aggiornare i dati
+description: Usare le stored procedure in LINQ to SQL Object Relational Designer (O/R Designer) per eseguire aggiornamenti, inserimenti ed eliminazioni di dati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,10 +20,10 @@ ms.locfileid: "121347168"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)
 
-È possibile aggiungere stored procedure a **Object Relational Designer** ed eseguirle come metodi <xref:System.Data.Linq.DataContext> tipici. Possono anche essere usati per eseguire l'override del comportamento predefinito LINQ to SQL fase di esecuzione che esegue inserimenti, aggiornamenti ed eliminazioni quando le modifiche vengono salvate dalle classi di entità in un database (ad esempio, quando si chiama il metodo <xref:System.Data.Linq.DataContext.SubmitChanges%2A> ).
+È possibile aggiungere stored procedure a **Object Relational Designer** ed eseguirle come metodi <xref:System.Data.Linq.DataContext> tipici. Possono anche essere usati per eseguire l'override del comportamento di LINQ to SQL run-time predefinito che esegue inserimenti, aggiornamenti ed eliminazioni quando le modifiche vengono salvate dalle classi di entità in un database , ad esempio quando si chiama il <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metodo .
 
 > [!NOTE]
-> Se le stored procedure restituiscono valori che devono essere inviati al client, ad esempio valori calcolati nelle stesse stored procedure, creare parametri di output all'interno di esse. Se non è possibile usare parametri di output, è preferibile scrivere l'implementazione di un metodo parziale anziché basarsi sugli override generati da Progettazione relazionale oggetti. I membri con mapping ai valori generati dal database devono essere impostati su valori appropriati dopo il completamento delle operazioni INSERT o UPDATE. Per altre informazioni, vedere [Responsabilità dello sviluppatore in Override del comportamento predefinito.](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior)
+> Se le stored procedure restituiscono valori che devono essere inviati al client, ad esempio valori calcolati nelle stesse stored procedure, creare parametri di output all'interno di esse. Se non è possibile usare parametri di output, è preferibile scrivere l'implementazione di un metodo parziale anziché basarsi sugli override generati da Progettazione relazionale oggetti. I membri con mapping ai valori generati dal database devono essere impostati su valori appropriati dopo il completamento delle operazioni INSERT o UPDATE. Per altre informazioni, vedere [Responsabilità dello sviluppatore in Override del comportamento predefinito](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
 
 > [!NOTE]
 > LINQ to SQL gestisce automaticamente i valori generati dal database per le colonne identity (incremento automatico), rowguidcol (GUID generato dal database) e timestamp. I valori degli altri tipi di colonne sono costituiti da valori null non previsti. Per restituire i valori generati dal database, è necessario impostare manualmente su true e su uno dei valori <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>  <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> seguenti: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)o [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
@@ -42,7 +42,7 @@ Per impostazione predefinita, la logica per aggiornare un database (inserimenti,
 
 3. Trascinare la stored procedure in **Object Relational Designer**.
 
-     La stored procedure viene aggiunta al riquadro dei metodi come metodo <xref:System.Data.Linq.DataContext>. Per altre informazioni, vedere [Metodi DataContext (O/R Designer).](../data-tools/datacontext-methods-o-r-designer.md)
+     La stored procedure viene aggiunta al riquadro dei metodi come metodo <xref:System.Data.Linq.DataContext>. Per altre informazioni, vedere [Metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 4. Selezionare la classe di entità per cui si desidera usare la stored procedure per eseguire gli aggiornamenti.
 
@@ -62,7 +62,7 @@ Per impostazione predefinita, la logica per aggiornare un database (inserimenti,
 10. Fare clic su **OK** o su **Applica**.
 
     > [!NOTE]
-    > È possibile continuare a configurare il comportamento per ogni combinazione di classe e comportamento, purché si fa clic **su** Applica dopo ogni modifica. Se si modifica la classe o il comportamento prima di fare clic **su Applica**, viene visualizzata una finestra di dialogo di avviso che offre la possibilità di applicare le modifiche.
+    > È possibile continuare a configurare il comportamento per ogni combinazione di classe e comportamento, purché si fa clic su Applica **dopo** aver apportato ogni modifica. Se si modifica la classe o il comportamento prima di fare clic **su Applica**, viene visualizzata una finestra di dialogo di avviso che offre la possibilità di applicare le modifiche.
 
 Per ripristinare l'uso della logica di runtime predefinita per gli aggiornamenti, fare clic sui puntini di sospensione accanto al comando **Insert**, **Update** o **Delete** nella finestra **Proprietà** e quindi selezionare **Usa fase di esecuzione** nella finestra di dialogo **Configura comportamento**.
 

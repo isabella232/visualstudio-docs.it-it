@@ -1,11 +1,9 @@
 ---
 title: 'Passaggio 2: Creare un problema di addizione casuale'
-description: Informazioni su come rendere complesso il quiz aggiungendo problemi matematici basati su numeri casuali.
+description: Informazioni su come rendere il quiz complesso aggiungendo problemi matematici basati su numeri casuali.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
@@ -13,27 +11,28 @@ ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 13508845e2d1592715530c2961af3d1c114aea84
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 91d747e856d162b25db7fee059a3922f5f1ad5a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296534"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040867"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: Creare un problema di addizione casuale
 
 Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di matematica basati su numeri casuali. Viene inoltre creato un metodo denominato `StartTheQuiz()` che completa i problemi e avvia il timer del conto alla rovescia. Più avanti nell'esercitazione si aggiungeranno problemi di sottrazione, moltiplicazione e divisione.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
 ## <a name="to-create-a-random-addition-problem"></a>Per creare un problema di addizione casuale
 
 1. Nella finestra di progettazione moduli scegliere il modulo (**Form1**).
 
-2. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
+2. Sulla barra dei menu scegliere **Visualizza**  >  **codice.**
 
      Viene visualizzato il file *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione in uso, per consentire di visualizzare il code-behind per il modulo.
 
@@ -73,7 +72,7 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
      Quando si inserisce un punto dopo un oggetto, IntelliSense mostra un elenco dei membri dell'oggetto, ad esempio proprietà, metodi ed eventi.
 
     > [!NOTE]
-    > Quando si utilizza il metodo `Next()` con l'oggetto `Random`, ad esempio quando si chiama `randomizer.Next(50)`, si ottiene un numero casuale minore di 50 (compreso tra 0 e 49). In questo esempio, è stato chiamato `randomizer.Next(51)`. Viene utilizzato 51 e non 50 di modo che la somma dei due numeri casuali corrisponda a una risposta compresa tra 0 e 100. Se si passa 50 al metodo `Next()`, viene scelto un numero compreso tra 0 e 49, pertanto la risposta più alta possibile è 98, non 100. Dopo l'esecuzione delle prime due istruzioni nel metodo, ciascuna delle due variabili Integer, **addend1** e **addend2**, contiene un numero casuale compreso tra 0 e 50. Questa schermata mostra il codice C#, ma IntelliSense funziona allo stesso modo per Visual Basic.
+    > Quando si utilizza il metodo `Next()` con l'oggetto `Random`, ad esempio quando si chiama `randomizer.Next(50)`, si ottiene un numero casuale minore di 50 (compreso tra 0 e 49). In questo esempio, è stato chiamato `randomizer.Next(51)`. Viene utilizzato 51 e non 50 di modo che la somma dei due numeri casuali corrisponda a una risposta compresa tra 0 e 100. Se si passa 50 al metodo `Next()`, viene scelto un numero compreso tra 0 e 49, pertanto la risposta più alta possibile è 98, non 100. Dopo l'esecuzione delle prime due istruzioni nel metodo, ciascuna delle due variabili Integer, **addend1** e **addend2**, contiene un numero casuale compreso tra 0 e 50. Questo screenshot mostra il codice C#, ma IntelliSense funziona allo stesso modo per Visual Basic.
 
      Esaminare attentamente queste istruzioni.
 
@@ -95,7 +94,7 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
 8. Salvare il codice, eseguirlo e scegliere il pulsante **Avvio**.
 
-     Viene visualizzato un problema di addizione casuale, come illustrato nella schermata seguente.
+     Viene visualizzato un problema di addizione casuale, come illustrato nello screenshot seguente.
 
      ![Problema con addizione casuale](../ide/media/express_additionproblem.png)<br/>
 *Problema con addizione casuale*
@@ -104,6 +103,6 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 3: aggiungere un timer per il conto alla rovescia](../ide/step-3-add-a-countdown-timer.md)**.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 3: Aggiungere un timer per il conto alla rovescia.](../ide/step-3-add-a-countdown-timer.md)**
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto e aggiungere etichette al modulo](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

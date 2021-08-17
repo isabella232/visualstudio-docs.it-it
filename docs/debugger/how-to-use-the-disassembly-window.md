@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 296917e01b6279c971181f79c475ab1fc590af7da3ae1bbf121a901fe91b062e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cc563c6ffc7a97af684edb49b9bb7466ed7bd24a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051846"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare il codice disassembly nel debugger Visual Studio (C#, C++, Visual Basic, F#)
 

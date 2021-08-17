@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a3d94919b22233193d2f4b94dfd580e72f654557cd266ab9539547855a50c85
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c578007a79991c165ab6a88848c5428fe4e6e5e3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121266935"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025121"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: Eseguire una trasformazione XSLT dall'editor XML
 
@@ -24,7 +24,7 @@ L'editor XML consente di associare un foglio di stile XSLT a un documento XML, e
 
 La **proprietà Output** specifica il nome file per l'output. Se la **proprietà Output** è vuota, viene generato un nome file nella directory temporanea. L'estensione del file è basata `xsl:output` sull'elemento nel foglio di stile e può essere .*xml*, . *txt* o . *htm*.
 
-Se la **proprietà Output** specifica un nome file con un oggetto . *htm* o . *estensione html,* l'output XSLT viene visualizzato in anteprima usando un Web browser. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto da Visual Studio. Ad esempio, se l'estensione di file è . *xml*, Visual Studio l'editor XML.
+Se la **proprietà Output** specifica un nome file con un oggetto . *htm* o . *estensione HTML,* l'output XSLT viene visualizzato in anteprima usando un Web browser. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto Visual Studio. Ad esempio, se l'estensione del file è . *xml*, Visual Studio l'editor XML.
 
 ## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>Eseguire una trasformazione XSLT da un file XML
 
@@ -36,7 +36,7 @@ Se la **proprietà Output** specifica un nome file con un oggetto . *htm* o . *e
 
        -oppure-
 
-    - Aggiungere il foglio di stile XSLT usando la **finestra** Proprietà. Con il file XML aperto nell'editor, fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor e scegliere **Proprietà**. Nella finestra **Proprietà** fare clic nel campo **Foglio di** stile e scegliere il pulsante Sfoglia (...). Selezionare il foglio di stile XSLT e quindi scegliere **Apri**.
+    - Aggiungere il foglio di stile XSLT usando la **finestra** Proprietà. Con il file XML aperto nell'editor, fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor e scegliere **Proprietà**. Nella finestra **Proprietà** fare clic nel campo **Foglio di** stile e scegliere il pulsante Sfoglia (...). Selezionare il foglio di stile XSLT e quindi scegliere **Apri.**
 
 3. Sulla barra dei menu scegliere **XML**  >  **Avvia XSLT senza eseguire debug.** In caso contrario, **premere** + **CTRL ALT** + **F5.**
 
@@ -49,10 +49,10 @@ Se la **proprietà Output** specifica un nome file con un oggetto . *htm* o . *e
 
 1. Aprire un foglio di stile XSLT nell'editor XML.
 
-2. Specificare un documento XML nel **campo Input** della finestra **Proprietà** documento.
+2. Specificare un documento XML nel **campo Input** della finestra **Proprietà del** documento.
 
    > [!NOTE]
-   > Il documento XML è il documento di input usato per la trasformazione. Se non viene specificato un documento all'avvio della trasformazione XSLT, viene visualizzata la finestra di dialogo **Apri** file ed è possibile specificare un documento in quel momento.
+   > Il documento XML è il documento di input usato per la trasformazione. Se all'avvio della trasformazione XSLT non viene specificato un documento, viene visualizzata la finestra di dialogo **Apri** file in cui è possibile specificare un documento.
 
 3. Sulla barra dei menu scegliere **XML**  >  **Avvia XSLT senza eseguire debug.** In caso contrario, **premere** + **CTRL ALT** + **F5.**
 
@@ -60,7 +60,7 @@ Se la **proprietà Output** specifica un nome file con un oggetto . *htm* o . *e
 
 ## <a name="specify-an-output-file-name"></a>Specificare un nome di file di output
 
-È possibile specificare un nome di file di output sia per i file XML che per i file XSL. Aprire la **finestra** Proprietà e specificare un nome di file nel **campo Output.**
+È possibile specificare un nome di file di output per i file XML e XSL. Aprire la **finestra** Proprietà e specificare un nome file nel **campo Output.**
 
 ## <a name="see-also"></a>Vedi anche
 

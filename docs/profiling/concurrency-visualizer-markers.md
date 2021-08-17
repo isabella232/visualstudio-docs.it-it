@@ -1,6 +1,6 @@
 ---
 title: Marcatori del visualizzatore di concorrenza.| Microsoft Docs
-description: "Informazioni sui marcatori nel Visualizzatore di concorrenza. I marcatori sono icone che rappresentano gli eventi generati da un'app. Sono disponibili tre tipi: Flag, messaggi e intervalli."
+description: "Informazioni sui marcatori nel visualizzatore di concorrenza. I marcatori sono icone che rappresentano gli eventi generati da un'app. Esistono tre tipi: flag, messaggi ed intervalli."
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c3ff013f546393447b8303575489164a3a7be00a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12ed8b9b71fe8d0a8a5260069709ca1f8a2bad15c65869020d735f42f5af3447
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941138"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333535"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcatori del visualizzatore di concorrenza
 I marcatori del visualizzatore di concorrenza sono icone che rappresentano eventi in un'app.  In genere, l'applicazione genera questi eventi per definire fasi o occorrenze di un'applicazione.  Gli eventi possono essere generati dall'app o da librerie e runtime usati dall'app.
@@ -47,7 +48,7 @@ I marcatori del visualizzatore di concorrenza sono icone che rappresentano event
 
 - [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
 
-- [Flusso di dati](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
+- [Flusso](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
 
 - [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 
@@ -64,6 +65,6 @@ I marcatori del visualizzatore di concorrenza sono icone che rappresentano event
 
 ## <a name="see-also"></a>Vedi anche
 - [Marcatori di flag](../profiling/flag-markers.md)
-- [Marcatori dei messaggi](../profiling/message-markers.md)
+- [Marcatori di messaggio](../profiling/message-markers.md)
 - [Marcatori span](../profiling/span-markers.md)
 - [Visualizzare eventi EventSource come marcatori](../profiling/visualizing-eventsource-events-as-markers.md)

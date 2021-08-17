@@ -1,6 +1,6 @@
 ---
-title: Riga di comando del profiler - Instrumentare il servizio .NET e ottenere dati di memoria
-description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura riga di comando per raccogliere dati sull'allocazione di memoria e sulla durata degli oggetti per .NET Framework servizio.
+title: Riga di comando del profiler - Instrumentare il servizio .NET, ottenere i dati di memoria
+description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura da riga di comando per raccogliere i dati di allocazione di memoria e durata degli oggetti per un .NET Framework servizio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 60ad31c91123f3226227920e08c5194136cfe09ff774a045e1721b2091c527a1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bee906058e9ab8072723d02a170dee21a4eb0c6f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038864"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del profiler
 
@@ -100,7 +100,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
-- Le coppie di opzioni **vsPerfCmd seguenti** avviano e arrestano la raccolta dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le coppie seguenti di **opzioni VSPerfCmd** avviano e arrestano la raccolta dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Descrizione|
     |------------|-----------------|

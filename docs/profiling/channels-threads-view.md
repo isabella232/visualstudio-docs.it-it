@@ -1,6 +1,6 @@
 ---
 title: Canali (visualizzazione Thread) | Microsoft Docs
-description: Informazioni sulla visualizzazione Thread quando si usano i canali nel Visual Studio di concorrenza. Visualizzare i canali di thread, i canali del disco, i canali marcatori e i canali GPU.
+description: Informazioni sulla visualizzazione Thread quando si usano i canali nel visualizzatore Visual Studio concorrenza. Visualizzare i canali di thread, i canali del disco, i canali marcatori e i canali GPU.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d5459909e99da3ecd6627d14ae464b651b7c535a4226cbf89f6a9985288987ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f3c04112ff216ecbf2fc683206a30d9be6b44971
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396994"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084597"
 ---
 # <a name="channels-threads-view"></a>Canali (visualizzazione Thread)
 Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thread, canali di disco, canali di indicatore e canali GPU.

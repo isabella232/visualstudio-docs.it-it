@@ -1,6 +1,6 @@
 ---
-title: Elemento WizardData (modelli di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento WizardData e su come viene specificato un codice XML personalizzato.
+title: Elemento WizardData (modelli Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento WizardData e su come specifica un xml personalizzato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7b85433b4e02491852589d32eea9a4f223da14
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7d51d9827c5edcbcf522eb206add4769a8583f34ac7aa72732b472523e197bb6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061888"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400439"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>Elemento WizardData (modelli di Visual Studio)
 
-Specifica il codice XML personalizzato
+Specifica xml personalizzato
 
 ```xml
 \<VSTemplate>
@@ -47,11 +47,11 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 ### <a name="attributes"></a>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -63,17 +63,17 @@ Nessuna.
 
 Il valore di testo è facoltativo.
 
-Questo testo specifica il codice XML personalizzato da passare all'estensione personalizzata della procedura guidata specificata nell'elemento [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) .
+Questo testo specifica il codice XML personalizzato da passare all'estensione personalizzata della procedura guidata specificata [nell'elemento WizardExtension.](../extensibility/wizardextension-element-visual-studio-templates.md)
 
 ## <a name="remarks"></a>Commenti
 
-È possibile specificare qualsiasi XML in questo elemento. Il codice XML verrà passato come parametro all'estensione personalizzata della procedura guidata, consentendo all'estensione di utilizzare il contenuto di questo elemento. Per questi dati non viene eseguita alcuna convalida.
+In questo elemento è possibile specificare qualsiasi codice XML. Il codice XML verrà passato come parametro all'estensione personalizzata della procedura guidata, consentendo all'estensione di utilizzare il contenuto di questo elemento. Non viene eseguita alcuna convalida su questi dati.
 
-Il contenuto dell'elemento **WizardData** viene passato, senza modifiche, come parametro all'interno del dizionario di stringhe di parametri nel `IWizard.RunStarted` metodo. La chiave del dizionario è denominata `$wizarddata$` .
+Il contenuto **dell'elemento WizardData** viene passato, senza modifiche, come parametro all'interno del dizionario di stringhe dei parametri nel `IWizard.RunStarted` metodo . La chiave del dizionario è denominata `$wizarddata$` .
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un'applicazione Windows C#.
+L'esempio seguente illustra i metadati per il modello di progetto standard per un'applicazione Windows C#.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"

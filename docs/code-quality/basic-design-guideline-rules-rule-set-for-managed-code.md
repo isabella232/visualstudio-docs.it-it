@@ -1,29 +1,30 @@
 ---
 title: Set di regole Regole base delle linee guida di progettazione per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole delle linee guida di progettazione di base in Visual Studio, che consente di semplificare la comprensione e l'utilizzo del codice. Vedere le descrizioni delle regole.
+description: Informazioni sul set di regole Basic Design Guideline Rules in Visual Studio, che può semplificare la comprensione e l'uso del codice. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: bde7081f69a4f92092ac6f3c5b0e8b8059e17a1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea01858239cff0c189149598abf96fd5024ca2f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849749"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053266"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Set di regole Regole base delle linee guida di progettazione per codice gestito
 
-È possibile utilizzare il set di regole delle linee guida di progettazione di base Microsoft per concentrarsi sulla semplificazione della comprensione e dell'utilizzo del codice. È necessario includere questo set di regole se il progetto include codice della libreria o se si desidera applicare procedure consigliate per il codice di facile manutenzione.
+È possibile usare il set di regole Microsoft Basic Design Guideline Rules per semplificare la comprensione e l'uso del codice. È necessario includere questo set di regole se il progetto include il codice della libreria o se si vogliono applicare procedure consigliate per il codice facile da gestire.
 
-Le regole delle linee guida di progettazione di base includono tutte le regole del set di regole [consigliate gestite](managed-recommended-rules-rule-set-for-managed-code.md) .
+Le regole delle linee guida di progettazione di base includono tutte le regole nel set di regole [regole consigliate](managed-recommended-rules-rule-set-for-managed-code.md) gestite.
 
-Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Basic Design Guideline Rules.
+Nella tabella seguente vengono descritte tutte le regole nel set di regole Microsoft Basic Design Guideline Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -131,7 +132,7 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA2137](../code-quality/ca2137.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare I LinkDemand|
+|[CA2141](../code-quality/ca2141.md)|I metodi Transparent non devono soddisfare LinkDemands|
 |[CA2146](../code-quality/ca2146.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

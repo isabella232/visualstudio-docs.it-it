@@ -1,5 +1,5 @@
 ---
-description: Recupera l'indirizzo virtuale del blocco.
+description: Recupera l'indirizzo virtuale (VA) del blocco.
 title: IDiaLineNumber::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121392160"
 ---
 # <a name="idialinenumberget_virtualaddress"></a>IDiaLineNumber::get_virtualAddress
-Recupera l'indirizzo virtuale del blocco.
+Recupera l'indirizzo virtuale (VA) del blocco.
 
 ## <a name="syntax"></a>Sintassi
 

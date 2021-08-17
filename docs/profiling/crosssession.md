@@ -1,6 +1,6 @@
 ---
 title: CrossSession | Microsoft Docs
-description: Informazioni su come usare l'opzione VSPerfCmd.exe CrossSession per consentire al profiler di raccogliere dati da qualsiasi sessione della console. È necessario specificare anche l'opzione Start.
+description: Informazioni su come usare l'VSPerfCmd.exe CrossSession per consentire al profiler di raccogliere dati da qualsiasi sessione della console. È necessario specificare anche l'opzione Start.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,18 +8,19 @@ ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a52acb80bac511706086c56074eb5bfe450b7674
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4dffc4946f0476bb9b93f39392d310ced5c8e824
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955905"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039059"
 ---
 # <a name="crosssession"></a>CrossSession
-L'opzione *CrossSession di* **VSPerfCmd.exe** consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.
+LVSPerfCmd.exe **CrossSession** consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.
 
  È possibile usare l'abbreviazione **CS** al posto di **CrossSession**.
 
@@ -35,9 +36,9 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ## <a name="valid-options"></a>Opzioni valide
  Per abilitare la profilatura in un'altra sessione, l'opzione **CrossSession** deve essere specificata con l'opzione **Start**. **CrossSession** deve essere specificata anche in tutti i comandi **Attach e Detach** di **VSPerfCmd**.
 
- **Inizio:** `Method` L'opzione **Start** Inizializza il profiler sul metodo di profilatura specificato.
+ **Avvio:** `Method` **L'opzione Start** inizializza il profiler sul metodo di profilatura specificato.
 
- **Connetti:** _PID_[**,**_PID_] avvia la profilatura dei processi specificati.
+ **Attach:** _PID_[**,**_PID_] Avvia la profilatura dei processi specificati.
 
  **Detach**[**:**_PID_[,_PID_]] Arresta la profilatura dei processi specificati.
 

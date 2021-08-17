@@ -1,6 +1,6 @@
 ---
 title: Usare i controlli Run-Time native | Microsoft Docs
-description: Usare i controlli runtime nativi in Visual Studio per rilevare errori di runtime comuni, ad esempio il danneggiamento del puntatore dello stack, i sovraccarichi di matrici locali e il danneggiamento dello stack.
+description: Usare i controlli di runtime nativi nel Visual Studio per rilevare errori di runtime comuni, ad esempio il danneggiamento del puntatore dello stack, i sovraccarichi di matrici locali e il danneggiamento dello stack.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -40,15 +40,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c74cdc63e7c72950050872135f2181002c3d4e57ca718db206f0fdf8979e88b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5189712cbaff2abd2fb814ee23dc6a87ae086fc7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378736"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051872"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: utilizzare controlli runtime nativi
-In un Visual Studio C++ è possibile usare [](/cpp/preprocessor/runtime-checks) le runtime_checks native per rilevare errori di runtime comuni, ad esempio:
+In un Visual Studio C++ è possibile usare [](/cpp/preprocessor/runtime-checks) il runtime_checks nativo per rilevare errori di runtime comuni, ad esempio:
 
 - Errori del puntatore dello stack.
 

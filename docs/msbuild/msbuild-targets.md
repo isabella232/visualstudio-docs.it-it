@@ -47,7 +47,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 
 Se `AfterBuild` viene eseguito, visualizza solo "Seconda occorrenza", perché la seconda definizione di `AfterBuild` nasconde la prima.
 
-MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione diventa l'ultima definizione usata. Se si prova a ridefinire una destinazione, questa non avrà effetto se la destinazione predefinita viene definita in un secondo momento. Nel caso di progetti che usano un SDK, l'ordine di definizione non è necessariamente ovvio, perché le importazioni per le destinazioni vengono aggiunte in modo implicito dopo la fine del file di progetto.
+MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione diventa l'ultima definizione usata. Se si tenta di ridefinire una destinazione, questa non avrà effetto se la destinazione predefinita viene definita in un secondo momento. Nel caso di progetti che usano un SDK, l'ordine di definizione non è necessariamente ovvio, perché le importazioni per le destinazioni vengono aggiunte in modo implicito dopo la fine del file di progetto.
 
 Pertanto, per estendere il comportamento di una destinazione esistente, creare una nuova destinazione e specificare (o in base `BeforeTargets` `AfterTargets` alle esigenze) come indicato di seguito:
 

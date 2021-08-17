@@ -11,14 +11,15 @@ ms.assetid: 114171dd-38fd-4bd7-a702-8ff887ffc99b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e854a4bbcd7c1429ef14a90f705f80afc92e75bc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cf76783b9a9dbe642d1a641505539ccee208e2c588210e6d1102ea32fda4b7e9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159453"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121455247"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Recupera un numero specificato di record nella sequenza enumerata.
@@ -38,19 +39,19 @@ HRESULT Next (
 #### <a name="parameters"></a>Parametri
  celt
 
-in Numero di record da recuperare.
+[in] Numero di record da recuperare.
 
  cbData
 
-in Dimensioni in byte del buffer di dati.
+[in] Dimensioni del buffer di dati, in byte.
 
  pcbData
 
-out Restituisce il numero di byte restituiti. Se `data` è null, `pcbData` contiene il numero totale di byte dei dati disponibili per tutti i record richiesti.
+[out] Restituisce il numero di byte restituiti. Se `data` è NULL, contiene `pcbData` il numero totale di byte di dati disponibili per tutti i record richiesti.
 
  data[]
 
-out Buffer che deve essere compilato con i dati del record del flusso di debug.
+[out] Buffer da riempire con i dati del record del flusso di debug.
 
  pceltFetched
 

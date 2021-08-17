@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 265c9d4eaa2f4f0cc95746bd5747f50c18d77fed
-  ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+  ms.openlocfilehash: 59307a58a3e6618d78ec76d3489a4e61ed6b3282
+  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 03/26/2021
-  ms.locfileid: "105617039"
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "122040489"
 landingContent:
 - title: Introduzione
   linkLists:
@@ -33,14 +33,26 @@ landingContent:
       url: quickstart-ide-orientation-js.md
 - title: Creare app JavaScript e TypeScript
   linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Creare un'Angular app
+      url: tutorial-create-angular-app.md?view=vs-2022
+    - text: Creare un'React app
+      url: tutorial-create-react-app.md
+    - text: Creare un'app Vue
+      url: tutorial-create-vue-app.md
+    - text: Creare un'app Web con Node.js e Vue.js
+      url: quickstart-vuejs-with-nodejs.md
   - linkListType: tutorial
     links:
+    - text: Creare un'app Web con Angular e ASP.NET Core
+      url: tutorial-asp-net-core-with-angular.md?view=vs-2022
+    - text: Creare un'app Web con React e ASP.NET Core
+      url: tutorial-asp-net-core-with-react.md?view=vs-2022
     - text: Creare un'app Web con Node.js ed Express
       url: tutorial-nodejs.md
     - text: Creare un'app Web con Node.js e React
       url: tutorial-nodejs-with-react-and-jsx.md
-    - text: Creare un'app Web con Node.js e Vue.js
-      url: quickstart-vuejs-with-nodejs.md
     - text: Creare un'app ASP.NET Core con TypeScript
       url: tutorial-aspnet-with-typescript.md
 - title: Informazioni su Visual Studio

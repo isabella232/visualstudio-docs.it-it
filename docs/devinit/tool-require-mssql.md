@@ -23,7 +23,7 @@ ms.locfileid: "121390540"
 > [!IMPORTANT]
 > A partire dal 12 aprile 2021, la connessione GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è incentrata sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di Visual Studio di lavoro. Come parte di questo `devinit` e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community per sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo `require-mssql` strumento viene usato per installare Microsoft SQL Server [2019 Developer Edition](https://www.microsoft.com/sql-server/application-development) da tramite l'ISO SQL server MS. Il SQL server sarà disponibile per l'uso dell'autenticazione integrata Windows il server SQL sarà accessibile `localhost` con la stringa di connessione `"Server=localhost;Integrated Security=true;"` .
+Lo `require-mssql` strumento viene usato per installare Microsoft SQL Server [2019 Developer Edition](https://www.microsoft.com/sql-server/application-development) da tramite MS SQL server ISO. Il SQL server sarà disponibile per l'uso dell'autenticazione integrata Windows il server SQL sarà accessibile `localhost` con la stringa di connessione `"Server=localhost;Integrated Security=true;"` .
 
 ## <a name="usage"></a>Utilizzo
 
@@ -54,7 +54,7 @@ Il comportamento predefinito dello `require-mssql` strumento è l'installazione 
 
 ### <a name="built-in-options"></a>Opzioni predefinite
 
-Lo strumento imposta diversi argomenti della riga di comando del programma di installazione per garantire che il programma `require-mssql` di installazione possa essere eseguito senza testa. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile nella documentazione SQL [di installazione .](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true)
+Lo strumento imposta diversi argomenti della riga di comando del programma di installazione per garantire che il `require-mssql` programma di installazione possa essere eseguito senza testa. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile nella documentazione SQL [di installazione .](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true)
 
 | Nome                                                               | Descrizione |
 |--------------------------------------------------------------------|-------------|

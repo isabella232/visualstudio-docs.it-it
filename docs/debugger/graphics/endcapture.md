@@ -8,14 +8,15 @@ ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b0820950980860465e5129211c77e48ff641bdf
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: bbcd047552671fa5b6767a78b82c08038968a18d038ab3d767e6a86f6bcf23f6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232674"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343664"
 ---
 # <a name="endcapture"></a>EndCapture
 Termina un intervallo di acquisizione avviato con `BeginCapture`.

@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Eliminare contatti di Outlook a livello di codice'
-description: Informazioni su come eliminare i contatti in Microsoft Outlook a livello di codice. In questo esempio viene eliminato un contatto.
+title: 'Procedura: Eliminare a livello di codice Outlook contatti'
+description: Informazioni su come eliminare i contatti a livello di codice in Microsoft Outlook. In questo esempio viene eliminato un contatto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121394446"
 ---
-# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedura: Eliminare contatti di Outlook a livello di codice
+# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedura: Eliminare a livello di codice Outlook contatti
   In questo esempio viene eliminato un contatto. L'esempio presuppone che un contatto denominato "Armando Pinto" esista nella cartella **Contatti** .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

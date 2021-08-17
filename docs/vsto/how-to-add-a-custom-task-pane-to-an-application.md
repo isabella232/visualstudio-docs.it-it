@@ -1,6 +1,6 @@
 ---
 title: "Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione"
-description: Informazioni su come aggiungere un riquadro attività personalizzato alle applicazioni usando il componente aggiuntivo Strumenti di Visual Studio per Office (VSTO).
+description: Informazioni su come aggiungere un riquadro attività personalizzato alle applicazioni usando il componente aggiuntivo Visual Studio Tools per Office (VSTO).
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d85edb9773783abe6282918c432fc1a4eff83944
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 3477930ba181f4a0f33d8711e882cda8ba63af17
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826720"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026369"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione
-  È possibile aggiungere un riquadro attività personalizzato alle applicazioni elencate sopra usando un componente aggiuntivo VSTO. Per altre informazioni, vedere [Riquadri attività personalizzati.](../vsto/custom-task-panes.md)
+  È possibile aggiungere un riquadro attività personalizzato alle applicazioni elencate sopra usando un componente aggiuntivo VSTO. Per altre informazioni, vedere [Riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -34,7 +35,7 @@ ms.locfileid: "107826720"
 
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>Per aggiungere un riquadro attività personalizzato a un'applicazione
 
-1. Aprire o creare un progetto di componente aggiuntivo VSTO per una delle applicazioni elencate sopra. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Aprire o creare un progetto di componente aggiuntivo VSTO per una delle applicazioni elencate sopra. Per altre informazioni, vedere [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. Nel menu **Progetto** fare clic su **Aggiungi controllo utente**.
 
@@ -42,7 +43,7 @@ ms.locfileid: "107826720"
 
      Il controllo utente viene visualizzato nella finestra di progettazione.
 
-4. Aggiungere uno o più controlli Windows Forms dalla casella **degli** strumenti al controllo utente.
+4. Aggiungere uno o più Windows Form dalla casella **degli** strumenti al controllo utente.
 
 5. Aprire il file **di codice ThisAddIn.cs** **o ThisAddIn.vb.**
 
@@ -57,9 +58,9 @@ ms.locfileid: "107826720"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs" id="Snippet2":::
 
     > [!NOTE]
-    > Questo codice associa il riquadro attività alla finestra attiva nell'applicazione. Per alcune applicazioni, si potrebbe voler modificare il codice perché il riquadro attività venga visualizzato con altri documenti o elementi nell'applicazione. Per altre informazioni, vedere [Riquadri attività personalizzati.](../vsto/custom-task-panes.md)
+    > Questo codice associa il riquadro attività alla finestra attiva nell'applicazione. Per alcune applicazioni, si potrebbe voler modificare il codice perché il riquadro attività venga visualizzato con altri documenti o elementi nell'applicazione. Per altre informazioni, vedere [Riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
+- [Office Personalizzazione dell'interfaccia utente](../vsto/office-ui-customization.md)
 - [Riquadri attività personalizzati](../vsto/custom-task-panes.md)
 - [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

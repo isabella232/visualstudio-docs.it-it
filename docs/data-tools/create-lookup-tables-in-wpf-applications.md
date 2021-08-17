@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5c1ee368bca523be99074cd3df2ad20dadc99877ea6673fd4bba45ec961f99f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 52c14b4fd8369db5df57579ea20b3ff9e17c898f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347415"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052941"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 
@@ -47,7 +47,7 @@ Si consideri, ad esempio, una tabella `Orders` di in un database di vendita. Ogn
 
 2. Aprire **WPF Designer e** assicurarsi che la finestra di progettazione contenga un contenitore che sia un obiettivo di rilascio valido per gli elementi nella **finestra Origini** dati .
 
-     Per altre informazioni sulle destinazioni di rilascio valide, vedere [Associare i controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Per altre informazioni sulle destinazioni di rilascio valide, vedere [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 3. Scegliere **Mostra origini dati** dal menu **Dati** per aprire la finestra **Origini dati**.
 

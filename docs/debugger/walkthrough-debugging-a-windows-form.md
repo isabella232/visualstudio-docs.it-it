@@ -25,12 +25,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dfdc291097c0b54d82f8c78b06e73f7e7bd19b2b292b91784a8ac43ddf63e4ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6790cd24bb6b4f927029ab7749e35acd1d756c24
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308902"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051794"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
 Un Windows form è una delle applicazioni gestite più comuni. Un form Windows crea un'applicazione Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, C# o C++.
@@ -140,7 +140,7 @@ Un Windows form è una delle applicazioni gestite più comuni. Un form Windows c
 
 7. Scegliere **Continua dal** menu Debug **per** riprendere il debug del programma.
 
-8. Nel modulo Windows fare di nuovo clic sul pulsante .
+8. Nel modulo Windows fare di nuovo clic sul pulsante.
 
      Visual Studio interrompe nuovamente l'esecuzione.
 

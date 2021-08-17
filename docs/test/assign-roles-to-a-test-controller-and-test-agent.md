@@ -15,12 +15,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a0aa35e34e95f4b9737034fa7e5b7ea2fff0b2b1aa6abf9cfb6a6688ee2bd32
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1caf441e0dab8ef1216380dbc5d7bc8c1ec1b461
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395447"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038487"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 

@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 196b15dff25681a23c05118a02f19109e09e3959
-ms.sourcegitcommit: 5fe2462ffc33c7ece9cf3a179fb598354c916e1f
+ms.openlocfilehash: 306e560c0f27b7ae17f71ddb82cb651fa46a1c97
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "110320472"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038552"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Django con visualizzazioni e modelli di pagina
 
@@ -52,8 +53,8 @@ Usando uno dei due metodi, creare un'app denominata "HelloDjangoApp". Il risulta
 | Elemento | Descrizione |
 | --- | --- |
 | **\_\_init \_ \_ .py** | File che identifica l'app come pacchetto. |
-| **Migrazioni** | Cartella in cui Django archivia gli script che aggiornano il database per l'allineamento alle modifiche apportate ai modelli. Gli strumenti di migrazione di Django applicano quindi le modifiche necessarie a qualsiasi versione precedente del database in modo che corrisponda ai modelli correnti. Usando le migrazioni, è possibile concentrarsi sui modelli e lasciare a Django la gestione dello schema di database sottostante. Le migrazioni sono descritte nel passaggio 6. per il momento, la cartella contiene semplicemente un file con estensione *\_ \_ \_ \_ py init* (che indica che la cartella definisce il proprio pacchetto Python). |
-| **templates** | Cartella per i modelli di pagina Django contenente un unico file, *index.html* all'interno di una cartella che corrisponde al nome dell'app. In Visual Studio 2017 15.7 e versioni precedenti, il  file è contenuto direttamente nei modelli e il passaggio 2-4 indica di creare la sottocartella. I modelli sono blocchi di codice HTML in cui le visualizzazioni possono aggiungere informazioni per il rendering dinamico di una pagina. Le "variabili" del modello di pagina, ad esempio `{{ content }}` in *index.html*, sono segnaposto per i valori dinamici, come descritto più avanti in questo articolo (passaggio 2). In genere le app Django creano uno spazio dei nomi per i rispettivi modelli inserendoli in una sottocartella corrispondente al nome dell'app. |
+| **Migrazioni** | Cartella in cui Django archivia gli script che aggiornano il database per l'allineamento alle modifiche apportate ai modelli. Gli strumenti di migrazione di Django applicano quindi le modifiche necessarie a qualsiasi versione precedente del database in modo che corrisponda ai modelli correnti. Usando le migrazioni, è possibile concentrarsi sui modelli e lasciare a Django la gestione dello schema di database sottostante. Le migrazioni sono descritte nel passaggio 6. per il momento, la cartella contiene semplicemente un file *\_ \_ init \_ \_ con* estensione py (che indica che la cartella definisce il proprio pacchetto Python). |
+| **templates** | Cartella per i modelli di pagina Django contenente un unico file, *index.html* all'interno di una cartella che corrisponde al nome dell'app. Nel Visual Studio 2017 15.7 e versioni precedenti, il  file è contenuto direttamente nei modelli e il passaggio 2-4 indica di creare la sottocartella. I modelli sono blocchi di CODICE HTML in cui le visualizzazioni possono aggiungere informazioni per il rendering dinamico di una pagina. Le "variabili" del modello di pagina, ad esempio `{{ content }}` in *index.html*, sono segnaposto per i valori dinamici, come descritto più avanti in questo articolo (passaggio 2). In genere le app Django creano uno spazio dei nomi per i rispettivi modelli inserendoli in una sottocartella corrispondente al nome dell'app. |
 | **admin.py** | File Python in cui viene estesa l'interfaccia amministrativa dell'app (vedere il passaggio 6) usato per distribuire e modificare i dati in un database. Inizialmente, questo file contiene solo l'istruzione `from django.contrib import admin`. Per impostazione predefinita, Django include un'interfaccia amministrativa standard tramite le voci presenti nel file *settings.py* del progetto Django, che è possibile attivare rimuovendo i commenti dalle voci esistenti in *urls.py*. |
 | **apps.py** | File Python che definisce una classe di configurazione per l'app. Vedere di seguito, dopo questa tabella. |
 | **models.py** | I modelli sono oggetti dati, identificati da funzioni, attraverso i quali le visualizzazioni interagiscono con il database sottostante dell'app (vedere il passaggio 6). Django fornisce il livello di connessione di database in modo che le app non debbano gestire questi dettagli. Il file *models.py* è una posizione predefinita in cui creare i modelli e contiene inizialmente solo l'istruzione `from django.db import models`. |
@@ -66,10 +67,10 @@ Usando uno dei due metodi, creare un'app denominata "HelloDjangoApp". Il risulta
 | --- | --- |
 | **\_\_init \_ \_ .py** | File che identifica l'app come pacchetto. |
 | **Migrazioni** | Cartella in cui Django archivia gli script che aggiornano il database per l'allineamento alle modifiche apportate ai modelli. Gli strumenti di migrazione di Django applicano quindi le modifiche necessarie a qualsiasi versione precedente del database in modo che corrisponda ai modelli correnti. Usando le migrazioni, è possibile concentrarsi sui modelli e lasciare a Django la gestione dello schema di database sottostante. Le migrazioni sono descritte nella documentazione [di Django.](https://docs.djangoproject.com/en/3.2/topics/migrations/) per il momento, la cartella contiene semplicemente un file con estensione *\_ \_ \_ \_ py init* (che indica che la cartella definisce il proprio pacchetto Python). |
-| **templates** | Cartella per i modelli di pagina Django contenente un unico file, *index.html* all'interno di una cartella che corrisponde al nome dell'app. In Visual Studio 2017 15.7 e versioni precedenti, il  file è contenuto direttamente nei modelli e il passaggio 2-4 indica di creare la sottocartella. I modelli sono blocchi di codice HTML in cui le visualizzazioni possono aggiungere informazioni per il rendering dinamico di una pagina. Le "variabili" del modello di pagina, ad esempio `{{ content }}` in *index.html*, sono segnaposto per i valori dinamici, come descritto più avanti in questo articolo (passaggio 2). In genere le app Django creano uno spazio dei nomi per i rispettivi modelli inserendoli in una sottocartella corrispondente al nome dell'app. |
+| **templates** | Cartella per i modelli di pagina Django contenente un unico file, *index.html* all'interno di una cartella che corrisponde al nome dell'app. Nel Visual Studio 2017 15.7 e versioni precedenti, il  file è contenuto direttamente nei modelli e il passaggio 2-4 indica di creare la sottocartella. I modelli sono blocchi di CODICE HTML in cui le visualizzazioni possono aggiungere informazioni per il rendering dinamico di una pagina. Le "variabili" del modello di pagina, ad esempio `{{ content }}` in *index.html*, sono segnaposto per i valori dinamici, come descritto più avanti in questo articolo (passaggio 2). In genere le app Django creano uno spazio dei nomi per i rispettivi modelli inserendoli in una sottocartella corrispondente al nome dell'app. |
 | **admin.py** | File Python in cui si estende l'interfaccia amministrativa dell'app, usata per eseguire il seed e modificare i dati in un database. Inizialmente, questo file contiene solo l'istruzione `from django.contrib import admin`. Per impostazione predefinita, Django include un'interfaccia amministrativa standard tramite le voci presenti nel file *settings.py* del progetto Django, che è possibile attivare rimuovendo i commenti dalle voci esistenti in *urls.py*. |
 | **apps.py** | File Python che definisce una classe di configurazione per l'app. Vedere di seguito, dopo questa tabella. |
-| **models.py** | I modelli sono oggetti dati, identificati dalle funzioni, tramite cui le viste interagiscono con il database sottostante dell'app. Django fornisce il livello di connessione di database in modo che le app non debbano gestire questi dettagli. Il file *models.py* è una posizione predefinita in cui creare i modelli e contiene inizialmente solo l'istruzione `from django.db import models`. |
+| **models.py** | I modelli sono oggetti dati, identificati dalle funzioni, tramite cui le visualizzazioni interagiscono con il database sottostante dell'app. Django fornisce il livello di connessione di database in modo che le app non debbano gestire questi dettagli. Il file *models.py* è una posizione predefinita in cui creare i modelli e contiene inizialmente solo l'istruzione `from django.db import models`. |
 | **tests.py** | File Python che contiene la struttura di base degli unit test. |
 | **views.py** | In genere le visualizzazioni vengono considerate pagine Web, che accettano una richiesta HTTP e restituiscono una risposta HTTP. Il rendering delle visualizzazioni viene eseguito in genere come HTML, che i Web browser sanno come visualizzare, ma una visualizzazione non deve necessariamente essere visibile, ad esempio se si tratta di un modulo intermedio. Una visualizzazione viene definita da una funzione Python, il cui compito consiste nell'eseguire il rendering del codice HTML da inviare al browser. Il file *views.py* è una posizione predefinita in cui creare le visualizzazioni e contiene inizialmente solo l'istruzione `from django.shortcuts import render`. |
 ::: moniker-end
@@ -89,7 +90,7 @@ Risposta: l'esecuzione **del** comando  >  **Aggiungi app Django** o l'uso di Ag
 
 ## <a name="step-2-2-run-the-app-from-the-django-project"></a>Passaggio 2-2: Eseguire l'app dal progetto Django
 
-A questo punto, se si esegue di nuovo il progetto in Visual Studio (usando il pulsante della barra degli strumenti o Debug Avvia debug ), viene comunque visualizzata  >  la pagina predefinita. Non viene visualizzato alcun contenuto dell'app perché è necessario definire una pagina specifica dell'app e aggiungere l'app al progetto Django:
+A questo punto, se si esegue di nuovo il progetto in Visual Studio (usando il pulsante della barra degli strumenti o Avvia debug debug ), verrà comunque visualizzata  >  la pagina predefinita. Non viene visualizzato alcun contenuto dell'app perché è necessario definire una pagina specifica dell'app e aggiungere l'app al progetto Django:
 
 1. Nella cartella *HelloDjangoApp* modificare *views.py* in modo che corrisponda al codice riportato di seguito, che definisce una visualizzazione denominata "index":
 
@@ -164,7 +165,7 @@ def index(request):
 Eseguire di nuovo il progetto per visualizzare un messaggio simile a "**Hello, Django!** lunedì 16 aprile 2018 alle 16:28:10". Aggiornare la pagina per aggiornare l'ora e verificare che il contenuto venga generato con ogni richiesta. Al termine, arrestare il server.
 
 > [!Tip]
-> Un collegamento per arrestare e riavviare il progetto è usare il comando di menu Riavvia debug  >   (**CTRL** + **MAIUSC** + **F5**)  o il pulsante Riavvia sulla barra degli strumenti di debug:
+> Un collegamento per arrestare e riavviare il progetto è usare il comando di menu Riavvia debug ( CTRL MAIUSC F5 ) o il pulsante  >    +  + Riavvia sulla barra degli strumenti di debug: 
 >
 > ![Pulsante di riavvio sulla barra degli strumenti per il debug in Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -262,7 +263,7 @@ I passaggi seguenti descrivono l'uso dei modelli di pagina:
 
     ![Esecuzione dell'app tramite il modello](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 versione 15.7 e versioni precedenti: come passaggio finale, spostare i modelli in una sottocartella con lo stesso nome dell'app, operazione che crea uno spazio dei nomi ed evita i potenziali conflitti con altre app eventualmente aggiunte al progetto. I modelli in VISUAL Studio 2017 15.8+ ese cosa fare automaticamente. In altre informazioni,  creare una sottocartella nei modelli denominata *HelloDjangoApp,* spostare *index.html in* tale sottocartella e modificare la funzione di visualizzazione in modo che faccia riferimento al nuovo percorso del `index` modello, *HelloDjangoApp/index.html*. Eseguire quindi il progetto, verificare che il rendering della pagina avvenga correttamente e arrestare il server.
+1. <a name="template-namespacing"></a>Visual Studio 2017 versione 15.7 e versioni precedenti: come passaggio finale, spostare i modelli in una sottocartella con lo stesso nome dell'app, operazione che crea uno spazio dei nomi ed evita i potenziali conflitti con altre app eventualmente aggiunte al progetto. I modelli in VISUAL Studio 2017 15.8+ eseere automaticamente. In altre informazioni,  creare una sottocartella nei modelli denominata *HelloDjangoApp,* spostare *index.html in* tale sottocartella e modificare la funzione di visualizzazione in modo che faccia riferimento al nuovo percorso del `index` modello, *HelloDjangoApp/index.html*. Eseguire quindi il progetto, verificare che il rendering della pagina avvenga correttamente e arrestare il server.
 
 1. Eseguire il commit delle modifiche nel controllo del codice sorgente e aggiornare il repository remoto, se si vuole, come descritto nel [passaggio 2-2](#commit-to-source-control).
 

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf4c73dc75f24e88dcc1327c3fd0ad71ec950d0e113892e30b88270c8e8b984
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0599c7739388b44bcbb0c6413a0ee4213ecd3797
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271108"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040086"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 
@@ -50,7 +50,7 @@ This report is Company Confidential.
 
 Si noti che il modello è una pagina HTML in cui le parti delle variabili sono state sostituite con il codice del programma. È possibile iniziare la progettazione di una pagina di questo tipo scrivendo un prototipo statico della pagina HTML. È quindi possibile sostituire la tabella e altre parti variabili con codice programma che genera il contenuto che varia da un'occasione all'altra.
 
-L'uso di un modello nell'applicazione semplifica la visualizzazione della forma finale dell'output rispetto a quanto sia possibile in, ad esempio, in una lunga serie di istruzioni di scrittura. Apportare modifiche alla forma dell'output è più semplice e affidabile.
+L'uso di un modello nell'applicazione semplifica la visualizzazione della forma finale dell'output rispetto a quanto è possibile in, ad esempio, in una lunga serie di istruzioni di scrittura. Apportare modifiche alla forma dell'output è più semplice e affidabile.
 
 ## <a name="creating-a-run-time-text-template-in-any-application"></a>Creazione di un Run-Time di testo in qualsiasi applicazione
 
@@ -77,7 +77,7 @@ L'uso di un modello nell'applicazione semplifica la visualizzazione della forma 
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Conversione di un file esistente in un Run-Time modello
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Conversione di un file esistente in un modello Run-Time dati
 
 Un buon modo per creare un modello è convertire un esempio esistente dell'output. Ad esempio, se l'applicazione genererà file HTML, è possibile iniziare creando un file HTML normale. Assicurarsi che funzioni correttamente e che il relativo aspetto sia corretto. Includerlo quindi nel progetto Visual Studio e convertirlo in un modello.
 
@@ -92,13 +92,13 @@ Un buon modo per creare un modello è convertire un esempio esistente dell'outpu
 
 3. Modificare l'estensione del nome file **in .tt**. Anche se questo passaggio è facoltativo, consente di evitare di aprire il file in un editor non corretto.
 
-4. Rimuovere gli spazi o la punteggiatura dalla parte principale del nome file. Ad esempio, "My Web Page.tt" non è corretto, ma "MyWebPage.tt" è corretto. Il nome file verrà usato come nome di classe nel codice generato.
+4. Rimuovere eventuali spazi o punteggiatura dalla parte principale del nome file. Ad esempio, "My Web Page.tt" non sarebbe corretto, ma "MyWebPage.tt" è corretto. Il nome file verrà usato come nome di classe nel codice generato.
 
 5. Inserire la riga seguente all'inizio del file. Se si lavora in un progetto Visual Basic, sostituire "C#" con "VB".
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>Contenuto del modello Run-Time
+## <a name="the-content-of-the-run-time-template"></a>Contenuto del modello Run-Time dati
 
 ### <a name="template-directive"></a>Direttiva del modello
 
@@ -106,7 +106,7 @@ Mantenere la prima riga del modello così come era al momento della creazione de
 
 `<#@ template language="C#" #>`
 
-Il parametro language dipenderà dal linguaggio del progetto.
+Il parametro language dipende dal linguaggio del progetto.
 
 ### <a name="plain-content"></a>Contenuto normale
 
@@ -194,7 +194,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-Nel file modello **MyWebPage.tt,** è possibile scrivere:
+Nel file modello **MyWebPage.tt** scrivere:
 
 ```html
 <h2>Sales figures</h2>

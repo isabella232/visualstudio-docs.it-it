@@ -47,7 +47,7 @@ I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzio
 
 ## <a name="to-examine-the-activity-log"></a>Per esaminare il log attività
 
-1. Eseguire Visual Studio con l'opzione della riga [di comando /Log](../ide/reference/log-devenv-exe.md) per scrivere ActivityLog.xml su disco durante la sessione.
+1. Eseguire Visual Studio con l'opzione della riga [di comando /Log](../ide/reference/log-devenv-exe.md) per ActivityLog.xml su disco durante la sessione.
 
 2. Dopo aver Visual Studio, trovare il log attività nella sottocartella per Visual Studio dati:
 

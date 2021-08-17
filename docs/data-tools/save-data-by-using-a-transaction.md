@@ -44,7 +44,7 @@ Per eseguire il rollback della transazione, generare un'eccezione prima di chiam
 
 2. Nella scheda **.NET** **(SQL Server** per i progetti SQL Server), selezionare **System.Transactions** e quindi **selezionare OK.**
 
-     Un riferimento *System.Transactions.dll* viene aggiunto al progetto.
+     Un riferimento *aSystem.Transactions.dll* viene aggiunto al progetto.
 
 ## <a name="to-save-data-in-a-transaction"></a>Per salvare i dati in una transazione
 

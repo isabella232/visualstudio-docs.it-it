@@ -1,6 +1,6 @@
 ---
 title: Riga di comando di profilatura - Creare file di dati portabili
-description: Per semplificare la condivisione dei dati di profilatura, usare lo strumento da riga di comando VSPerfReport.exe per incorporare i simboli per un'esecuzione della profilatura nel file con estensione vsp.
+description: Per semplificare la condivisione dei dati di profilatura, usare lo strumento VSPerfReport.exe da riga di comando per incorporare i simboli per un'esecuzione della profilatura nel file con estensione vsp.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3d79a447ee382091f51e8f5487025f7c78ba7e9961770f3e3cdfd4c20f85e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7eadad8efebfa673a7e6c12e7dc67fb8b601f884
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396799"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039085"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Creare file dei dati di profilatura portabili dalla riga di comando
 Per semplificare la condivisione dei dati di profilatura, è possibile usare lo strumento da riga di comando [VSPerfReport](../profiling/vsperfreport.md) per incorporare i simboli di un'esecuzione della profilatura nel file con estensione *vsp*.
@@ -35,7 +35,7 @@ Per semplificare la condivisione dei dati di profilatura, è possibile usare lo 
 
 - In una finestra del prompt dei comandi, digitare il comando seguente:
 
-   \<Path><strong>File VSPerfReport \<</strong>> **/PackSymbols**
+   \<Path><strong>VsPerfReport \<</strong> VsP File> **/PackSymbols**
 
    Per impostazione predefinita, il file con estensione *vsps* è denominato con il nome base del file con estensione *vsp*. È possibile specificare un nome alternativo con l'opzione **Output**.
 
@@ -43,6 +43,6 @@ Per semplificare la condivisione dei dati di profilatura, è possibile usare lo 
 
 - In una finestra del prompt dei comandi, digitare il comando seguente:
 
-   \<Path><strong>VsPerfReport \<</strong> VSP File> **/SummaryFile** [**/Output:** \<File Name> ]
+   \<Path><strong>VSPerfReport \<</strong> VSP File> **/SummaryFile** [**/Output:** \<File Name> ]
 
    Per impostazione predefinita, il file con estensione *vsps* è denominato con il nome base del file con estensione *vsp*. È possibile specificare un nome alternativo con l'opzione **Output**.

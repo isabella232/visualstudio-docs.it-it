@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia specifica un messaggio di errore da segnalare all'utente.
+description: Questa interfaccia specifica un messaggio di errore da inviare all'utente.
 title: IDebugErrorEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d531180ca2fad9a6605837105c4ec5d626584a19
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9753bfa50bba639a2eba5931131be8212e0e96d3ed5024801e6e019f7ef711df
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054231"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292624"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
-Questa interfaccia specifica un messaggio di errore da segnalare all'utente.
+Questa interfaccia specifica un messaggio di errore da inviare all'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,25 +31,25 @@ IDebugErrorEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia per segnalare gli errori come messaggi leggibili. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM utilizza [QueryInterface](/cpp/atl/queryinterface) per accedere all' `IDebugEvent2` interfaccia.
+ Il motore di debug implementa questa interfaccia per segnalare gli errori come messaggi leggibili dall'utente. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM usa [QueryInterface per](/cpp/atl/queryinterface) accedere all'interfaccia. `IDebugEvent2`
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il DE crea e invia questo oggetto evento per segnalare un errore. L'evento viene inviato tramite la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug.
+ Il de crea e invia questo oggetto evento per segnalare un errore. L'evento viene inviato usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug.
 
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
+## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
  Questa interfaccia implementa il metodo seguente:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|`GetErrorMessage`|Restituisce un errore come stringa leggibile.|
+|`GetErrorMessage`|Restituisce un errore come stringa leggibile dall'utente.|
 
 ## <a name="remarks"></a>Commenti
  Se il motore di debug rileva un errore, può usare questa interfaccia per segnalare il messaggio tramite Visual Studio all'utente.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

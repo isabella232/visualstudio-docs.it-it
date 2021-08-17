@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le informazioni del server di origine contenute in un file PDB.
+description: Rappresenta le informazioni sul server di origine contenute in un file PDB.
 title: IDebugSourceServerModule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b12e93d52fe841b66baae341a6854e0217dcb00
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d8271fe7d639ab937f3b3a51ff66b86649b90693
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071168"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070897"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
-Rappresenta le informazioni del server di origine contenute in un file PDB.
+Rappresenta le informazioni sul server di origine contenute in un file PDB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,15 +32,15 @@ IDebugSourceServerModule : IUnknown
  Questa interfaccia viene implementata dai motori del debugger e utilizzata dall'interfaccia utente del debugger.
 
 ## <a name="methods"></a>Metodi
- La tabella seguente illustra i metodi di `IDebugSourceServerModule` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugSourceServerModule` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Recupera una matrice di informazioni sul server di origine.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: Msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

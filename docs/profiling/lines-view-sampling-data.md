@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Righe: dati di campionamento | Microsoft Docs'
-description: Informazioni su come la visualizzazione righe dei dati di campionamento elenca i dati sulle prestazioni per le istruzioni eseguite durante la raccolta degli esempi nell'esecuzione della profilatura.
+description: Informazioni su come la visualizzazione Righe dei dati di campionamento elenca i dati sulle prestazioni per le istruzioni in esecuzione quando i campioni sono stati raccolti nell'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28dd2c6132905e4c5610d2a7a0f598650ce06692
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc344c640a2b075b3795fb694ab076555a8b4083
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038643"
 ---
 # <a name="lines-view---sampling-data"></a>Visualizzazione Righe: dati di campionamento
 Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura.
@@ -47,19 +48,19 @@ Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle
 |------------|-----------------|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo che contiene la riga della funzione.|
+|**Nome modulo**|Nome del modulo che contiene la riga della funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la riga della funzione.|
 |**File di origine**|File di origine che contiene la riga della funzione.|
-|**Nome funzione**|Nome della funzione.|
+|**Nome della funzione**|Nome della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo iniziale della funzione.|
 |**Inizio riga di origine**|Numero di riga iniziale nel file di origine in corrispondenza del quale è stato raccolto il campione.|
 |**Fine riga di origine**|Numero di riga finale nel file di origine in corrispondenza del quale è stato raccolto il campione.|
 |**Inizio carattere di origine**|Offset del carattere iniziale nel file di origine in corrispondenza del quale è stato raccolto il campione.|
 |**Fine carattere di origine**|Offset del carattere finale nel file di origine in corrispondenza del quale è stato raccolto il campione.|
-|**Nome riga**|Identificatore generato dal profiler della riga con la sintassi seguente: `Source File` **; [** `Line Number Start` **,**`Character Start` **]->; [**`Line Number End`**,**`Character End`**]**|
+|**Nome riga**|Identificatore generato dal profiler della riga con la sintassi seguente: `Source File` **;[** `Line Number Start` **,**`Character Start` **]->; [**`Line Number End`**,**`Character End`**]**|
 |**Campioni esclusivi**|Numero totale di campioni raccolti durante l'esecuzione della riga della funzione.|
 |**% esempi esclusivi**|Percentuale di tutti i campioni nell'esecuzione della profilatura che sono stati raccolti durante l'esecuzione della riga della funzione.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione righe-campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Righe: campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)

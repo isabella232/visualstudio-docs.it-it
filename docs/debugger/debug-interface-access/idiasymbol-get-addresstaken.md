@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo del simbolo.
+description: Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo di questo simbolo.
 title: IDiaSymbol::get_addressTaken | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1def00630f3ee3495d4a4e9c6e2fba3e5fc5ab954089b9ce8741cfa22ee655f6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 132fa45ef2ab2adb4a79283742bf9a566aa7a59e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052314"
 ---
 # <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
-Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo del simbolo.
+Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo di questo simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT get_addressTaken (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente fa `B` riferimento a `A` . Di conseguenza, il `A` metodo del simbolo restituisce `get_addressTaken` `TRUE` .
