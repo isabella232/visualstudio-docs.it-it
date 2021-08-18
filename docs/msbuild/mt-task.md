@@ -27,12 +27,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6463108b2cad5c015752e48c8c3616300479efb176288c2784e49a43901b839c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 71466d1b74d371d409a0be26bf56ce7c5824ce52
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397319"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108447"
 ---
 # <a name="mt-task"></a>attività MT
 
@@ -68,7 +68,7 @@ Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre info
 |**SuppressDependencyElement**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, genera un manifesto senza elementi di dipendenza. Se questo parametro è `true`, specificare anche il parametro **ManifestFromManagedAssemblyMT** dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/nodependency** in [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**SuppressStartupBanner**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/nologo** in [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**TrackerLogDirectory**|Parametro `String` facoltativo.<br /><br /> Specifica la directory intermedia in cui sono archiviati i log di rilevamento per questa attività.|
-|**TypeLibraryFile**|Parametro **String** facoltativo.<br /><br /> Specifica il nome del file della libreria dei tipi (*con estensione tlb).* Se si specifica questo parametro, specificare anche il parametro **ComponentFileNameMT** dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/tlb** in [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
+|**TypeLibraryFile**|Parametro **String** facoltativo.<br /><br /> Specifica il nome del file della libreria dei tipi *(con estensione tlb).* Se si specifica questo parametro, specificare anche il parametro **ComponentFileNameMT** dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/tlb** in [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**UpdateFileHashes**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, calcola il valore hash dei file nel percorso specificato dal parametro **UpdateFileHashesSearchPathMT** dell'attività e quindi aggiorna il valore dell'attributo **hash** dell'elemento **file** del manifesto usando il valore calcolato.<br /><br /> Per altre informazioni, vedere l'opzione **/hashupdate** in [Mt.exe](/windows/desktop/SbsCs/mt-exe). Vedere anche il parametro **UpdateFileHashesSearchPath** in questa tabella.|
 |**UpdateFileHashesSearchPath**|Parametro `String` facoltativo.<br /><br /> Specifica il percorso di ricerca da usare quando si aggiornano gli hash dei file. Usare questo parametro con il parametro **UpdateFileHashesMT** dell'attività.<br /><br /> Per altre informazioni, vedere il parametro **UpdateFileHashes** in questa tabella.|
 |**VerboseOutput**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, visualizza informazioni dettagliate sul debug.<br /><br /> Per altre informazioni, vedere l'opzione **/verbose** in [Mt.exe](/windows/desktop/SbsCs/mt-exe).|

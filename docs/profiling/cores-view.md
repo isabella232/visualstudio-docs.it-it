@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Core | Microsoft Docs
-description: Informazioni sulle informazioni fornite dalla visualizzazione Core. Può essere utile usare l'affinità dei thread o la gestione del pool di thread per ottimizzare le prestazioni della cache.
+description: Informazioni sulle informazioni fornite dalla visualizzazione Core. Consente di usare l'affinità di thread o la gestione del pool di thread per ottimizzare le prestazioni della cache.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 910108951ab1e3d0680d8d6d42a042629f250e8e733ac8bd3770388774fa3560
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3caa4401e706aa72e99a82fcb244538f51d5d7b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355533"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039319"
 ---
 # <a name="cores-view"></a>Visualizzazione Core
 La **visualizzazione Core** mostra il mapping dell'esecuzione dei thread ai core del processore logico (scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Se si scrivono applicazioni server, questa visualizzazione consente di ottimizzare le prestazioni della cache tramite l'affinità di thread o la gestione dei pool di thread. Consente anche di esaminare i casi in cui l'uso di affinità di thread potrebbe aver peggiorato il problema della migrazione tra core. La visualizzazione Core include due parti, un grafico e una legenda.

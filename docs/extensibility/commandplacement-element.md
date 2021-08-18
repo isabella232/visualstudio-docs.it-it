@@ -11,19 +11,20 @@ ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69be89fb2773be9de632b8059cf217303daaede7
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 95a690ce394e088e3e490aa7e279725ff69bbdd1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901994"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058032"
 ---
-# <a name="commandplacement-element"></a>CommandPlacement - elemento
+# <a name="commandplacement-element"></a>Elemento CommandPlacement
 L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in pi√π gruppi o menu. Usando l'elemento CommandPlacement, non √® necessario ridefinire completamente questi elementi per modificare l'aspetto di un'interfaccia utente.
 
- Per altre informazioni, vedere [Creare gruppi riutilizzabili di pulsanti.](../extensibility/creating-reusable-groups-of-buttons.md)
+ Per altre informazioni, vedere [Creare gruppi riutilizzabili di pulsanti](../extensibility/creating-reusable-groups-of-buttons.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +44,7 @@ L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in pi√
 |guid|Obbligatorio. GUID del set di comandi, come definito [nell'elemento Symbols](../extensibility/symbols-element.md).|
 |id|Obbligatorio. ID del menu, del gruppo o del comando da inserire, come definito in `Symbols Element` .|
 |priority|Obbligatorio. Determina la posizione visiva dell'elemento nel relativo elemento padre.|
-|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Condition|facoltativo. Vedere [Attributi Aattributes condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -55,7 +56,7 @@ L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in pi√
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[CommandPlacements - elemento](../extensibility/commandplacements-element.md)|Specifica i gruppi di elementi CommandPlacements e CommandPlacement.|
+|[Elemento CommandPlacements](../extensibility/commandplacements-element.md)|Specifica gruppi di elementi CommandPlacements e CommandPlacement.|
 
 ## <a name="example"></a>Esempio
 
@@ -69,5 +70,5 @@ L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in pi√
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [CommandPlacements - elemento](../extensibility/commandplacements-element.md)
+- [Elemento CommandPlacements](../extensibility/commandplacements-element.md)
 - [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

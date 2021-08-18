@@ -1,6 +1,6 @@
 ---
 title: Informazioni generali sugli strumenti di linguaggio specifico di dominio
-description: Informazioni su come gli strumenti DSL consentono di progettare un linguaggio specifico di dominio e quindi generare tutto ciò che gli utenti devono avere per creare modelli basati sul linguaggio.
+description: Informazioni su come gli strumenti DSL consentono di progettare un linguaggio specifico di dominio e quindi di generare tutto ciò che gli utenti devono avere per creare modelli basati sul linguaggio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
@@ -12,15 +12,15 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: fa76c545019dd1b2faca45d25ba7dfdafc267fc74dcee0f7e3ba826b6ebab5e1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 697c3ee97562cff0a91984cbcfe467a82574a508
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410970"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040138"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
-Domain-Specific Language Tools (strumenti DSL), ospitati in Visual Studio, consente di progettare un linguaggio specifico di dominio e quindi generare tutto ciò che gli utenti devono avere per creare modelli basati sul linguaggio.
+Domain-Specific Language Tools (strumenti DSL), ospitati in Visual Studio, consentono di progettare un linguaggio specifico di dominio e quindi generare tutto ciò che gli utenti devono avere per creare modelli basati sul linguaggio.
 
  In Strumenti DSL sono inclusi gli strumenti seguenti:
 
@@ -67,7 +67,7 @@ Domain-Specific Language Tools (strumenti DSL), ospitati in Visual Studio, conse
 ## <a name="validation-in-dsl-tools"></a>Convalida in Strumenti DSL
  DSL è dotato di un livello di convalida che verifica che il modello di dominio soddisfi i requisiti di base per la generazione di codice. Quando si crea un linguaggio specifico di dominio personalizzato, in genere si aggiunge una convalida personalizzata che esprima le regole della logica di business. Per altre informazioni sulla convalida personalizzata, vedere [Convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md).
 
- È consigliabile convalidare spesso il linguaggio specifico di dominio durante la progettazione. Se il linguaggio specifico di dominio presenta errori di convalida, non è possibile generare codice sorgente. È possibile eseguire il processo di generazione di codice sorgente dai modelli facendo clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni. Ogni volta che si modifica la definizione del linguaggio, assicurarsi anche di **trasformare tutti i modelli**. Per altre informazioni, vedere [Procedura: Creare una soluzione Domain-Specific linguaggio.](../modeling/how-to-create-a-domain-specific-language-solution.md)
+ È consigliabile convalidare spesso il linguaggio specifico di dominio durante la progettazione. Se il linguaggio specifico di dominio presenta errori di convalida, non è possibile generare codice sorgente. È possibile eseguire il processo di generazione di codice sorgente dai modelli facendo clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni. Ogni volta che si modifica la definizione del linguaggio, assicurarsi anche di **trasformare tutti i modelli**. Per altre informazioni, vedere [Procedura: Creare una soluzione Domain-Specific language](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personalizzazione di Strumenti DSL
  È possibile offrire codice aggiuntivo per perfezionare il comportamento del modello e definire vincoli per il linguaggio. Se necessario, è possibile apportare modifiche significative modificando i modelli di testo.
@@ -75,7 +75,7 @@ Domain-Specific Language Tools (strumenti DSL), ospitati in Visual Studio, conse
 ## <a name="distributing-your-dsl-solution"></a>Distribuzione della soluzione DSL
  Gli strumenti DSL generano un pacchetto ospitato in Visual Studio. Il pacchetto visualizza una casella degli strumenti, la finestra di esplorazione DSL e altri elementi dell'interfaccia utente che consentono agli utenti di creare modelli usando il linguaggio specifico di dominio creato.
 
- Quando si compila ed esegue la soluzione Strumenti DSL in Visual Studio, una seconda istanza di Visual Studio mostra l'aspetto del linguaggio specifico di dominio all'utente del linguaggio. Dopo aver verificato che tutto funzioni correttamente, è possibile distribuire il file `.vsix` disponibile nella cartella di compilazione del progetto DslPackage. Questo file può essere usato per installare il DSL come estensione Visual Studio in altri computer.  Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
+ Quando si compila ed esegue la soluzione Strumenti DSL in Visual Studio, una seconda istanza di Visual Studio mostra l'aspetto del linguaggio specifico di dominio all'utente del linguaggio. Dopo aver verificato che tutto funzioni correttamente, è possibile distribuire il file `.vsix` disponibile nella cartella di compilazione del progetto DslPackage. Questo file può essere usato per installare DSL come estensione Visual Studio in altri computer.  Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,6 +1,6 @@
 ---
 title: Esposizione di Project oggetti | Microsoft Docs
-description: Informazioni su come esporre oggetti per tipi di progetto personalizzati in Visual Studio fornendo oggetti di automazione che consentono l'accesso al progetto tramite interfacce di automazione.
+description: Informazioni su come esporre oggetti per i tipi di progetto personalizzati in Visual Studio fornendo oggetti di automazione che consentono l'accesso al progetto usando le interfacce di automazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,26 +14,26 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb7703ddcf7200c8a4f28eda1decbf78880b216ae5a02fcb9fa47246075069fb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6fd2a7f85569bcaa63b4efef80deb564ee1e2ecb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448080"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094828"
 ---
 # <a name="expose-project-objects"></a>Esporre oggetti di progetto
 
-I tipi di progetto personalizzati possono fornire oggetti di automazione per consentire l'accesso al progetto usando le interfacce di automazione. Ogni tipo di progetto deve fornire l'oggetto di automazione standard a cui si accede da , che contiene una raccolta di tutti i progetti <xref:EnvDTE.Project> <xref:EnvDTE.Solution> aperti nell'IDE. Ogni elemento del progetto deve essere esposto da un oggetto a <xref:EnvDTE.ProjectItem> cui si accede con `Project.ProjectItems` . Oltre a questi oggetti di automazione standard, i progetti possono scegliere di offrire oggetti di automazione specifici del progetto.
+I tipi di progetto personalizzati possono fornire oggetti di automazione per consentire l'accesso al progetto tramite le interfacce di automazione. Ogni tipo di progetto deve fornire l'oggetto di automazione standard a cui si accede da , che contiene una raccolta di tutti i progetti <xref:EnvDTE.Project> <xref:EnvDTE.Solution> aperti nell'IDE. Ogni elemento del progetto deve essere esposto da un oggetto a cui <xref:EnvDTE.ProjectItem> si accede con `Project.ProjectItems` . Oltre a questi oggetti di automazione standard, i progetti possono scegliere di offrire oggetti di automazione specifici del progetto.
 
-È possibile creare oggetti di automazione a livello di radice personalizzati a cui è possibile accedere ad associazione tardiva dall'oggetto DTE radice usando `DTE.<customObjectName>` o `DTE.GetObject("<customObjectName>")` . Ad esempio, Visual C++ crea una raccolta di progetti C++ specifica del progetto denominata *VCProjects* a cui è possibile accedere usando `DTE.VCProjects` o `DTE.GetObject("VCProjects")` . È anche possibile creare un oggetto , univoco per il tipo di progetto, un oggetto , su cui è possibile eseguire query per il relativo oggetto più derivato, e un oggetto che espone `Project.Object` `Project.CodeModel` e un oggetto `ProjectItem` `ProjectItem.Object` `ProjectItem.FileCodeModel` .
+È possibile creare oggetti di automazione a livello di radice personalizzati a cui è possibile accedere ad associazione tardiva dall'oggetto DTE radice usando `DTE.<customObjectName>` o `DTE.GetObject("<customObjectName>")` . Ad esempio, Visual C++ crea una raccolta di progetti specifici del progetto C++ denominata *VCProjects* a cui è possibile accedere usando `DTE.VCProjects` o `DTE.GetObject("VCProjects")` . È anche possibile creare un oggetto , univoco per il tipo di progetto, un oggetto , su cui è possibile eseguire query per l'oggetto derivato più di uno, e un oggetto , che espone `Project.Object` `Project.CodeModel` e `ProjectItem` `ProjectItem.Object` `ProjectItem.FileCodeModel` .
 
-È una convenzione comune per i progetti esporre una raccolta di progetti personalizzata specifica del progetto. Ad esempio, crea una raccolta di progetti specifica [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] di C++ a cui è possibile accedere usando `DTE.VCProjects` o `DTE.GetObject("VCProjects")` . È anche possibile creare un oggetto , univoco per il tipo di progetto, un oggetto , su cui è possibile eseguire query per il relativo oggetto più derivato, un oggetto che espone `Project.Object` `Project.CodeModel` e un oggetto `ProjectItem` `ProjectItem.Object` `ProjectItem.FileCodeModel` .
+È una convenzione comune per i progetti esporre una raccolta di progetti personalizzata e specifica del progetto. Ad esempio, crea una raccolta di [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] progetti specifica C++ a cui è possibile accedere usando `DTE.VCProjects` o `DTE.GetObject("VCProjects")` . È anche possibile creare un oggetto , univoco per il tipo di progetto, un oggetto , su cui è possibile eseguire query per il relativo oggetto derivato più, un oggetto , che espone `Project.Object` `Project.CodeModel` e `ProjectItem` `ProjectItem.Object` `ProjectItem.FileCodeModel` .
 
-## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Per contribuire a un oggetto specifico del vspackage per un progetto
+## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Per contribuire a un oggetto specifico di VSPackage per un progetto
 
 1. Aggiungere le chiavi appropriate al file *con estensione pkgdef* del pacchetto VSPackage.
 
-     Di seguito sono ad esempio disponibili le *impostazioni PKGDEF* per il progetto di linguaggio C++:
+     Ad esempio, ecco le impostazioni *PKGDEF* per il progetto di linguaggio C++:
 
     ```
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]
@@ -72,7 +72,7 @@ I tipi di progetto personalizzati possono fornire oggetti di automazione per con
     }
     ```
 
-     Nel codice è `g_wszAutomationProjects` il nome della raccolta di progetti. Il metodo crea un oggetto che implementa l'interfaccia e restituisce un puntatore all'oggetto `GetAutomationProjects` chiamante, `Projects` come illustrato `IDispatch` nell'esempio di codice seguente.
+     Nel codice è `g_wszAutomationProjects` il nome della raccolta di progetti. Il metodo crea un oggetto che implementa l'interfaccia e restituisce un puntatore all'oggetto `GetAutomationProjects` `Projects` `IDispatch` chiamante, come illustrato nell'esempio di codice seguente.
 
     ```cpp
     HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)
@@ -90,9 +90,9 @@ I tipi di progetto personalizzati possono fornire oggetti di automazione per con
     }
     ```
 
-     Scegliere un nome univoco per l'oggetto di automazione. I conflitti di nome sono imprevedibili e i conflitti causano la rimozione arbitraria di un nome di oggetto in conflitto se più tipi di progetto usano lo stesso nome. È necessario includere il nome aziendale o un aspetto univoco del nome del prodotto nel nome dell'oggetto di automazione.
+     Scegliere un nome univoco per l'oggetto di automazione. I conflitti di nomi sono imprevedibili e le collisioni causano l'arbitraria rimozione arbitraria di un nome di oggetto in conflitto se più tipi di progetto usano lo stesso nome. È necessario includere il nome aziendale o alcuni aspetti univoci del nome del prodotto nel nome dell'oggetto di automazione.
 
-     `Projects`L'oggetto raccolta personalizzato è un punto di ingresso comodo per la parte rimanente del modello di automazione del progetto. L'oggetto del progetto è accessibile anche dalla raccolta <xref:EnvDTE.Solution> di progetti. Dopo aver creato il codice appropriato e le voci del Registro di sistema che forniscono ai consumer oggetti raccolta, l'implementazione deve fornire gli oggetti `Projects` standard rimanenti per il modello di progetto. Per altre informazioni, vedere [modellazione Project.](../../extensibility/internals/project-modeling.md)
+     `Projects`L'oggetto raccolta personalizzato è un punto di ingresso comodo per la parte rimanente del modello di automazione del progetto. L'oggetto del progetto è accessibile anche dalla <xref:EnvDTE.Solution> raccolta di progetti. Dopo aver creato il codice e le voci del Registro di sistema appropriate che forniscono ai consumer oggetti raccolta, l'implementazione deve fornire gli oggetti `Projects` standard rimanenti per il modello di progetto. Per altre informazioni, vedere [modellazione Project .](../../extensibility/internals/project-modeling.md)
 
 ## <a name="see-also"></a>Vedere anche
 

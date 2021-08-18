@@ -9,12 +9,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 7aa7895288273d43c72eaabd8304a8b35b9d0b8777c0e5ab7c58e8707d491d7b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fa5890c56895d9bb818935253222bc04fb9bf01d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037889"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
 
@@ -46,7 +46,7 @@ La tabella seguente elenca i tasti di scelta rapida disponibili quando si lavora
 |**Per eseguire questa azione**|**Procedere nel modo seguente**|
 | - |-----------------|
 |Nascondere gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL+FRECCIA DESTRA** + **H**|
-|Mostrare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**MAIUSC** + **CTRL** + **H**|
+|Mostrare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**MAIUSC** + **CTRL+FRECCIA DESTRA** + **H**|
 |Bloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL+FRECCIA DESTRA** + **L**|
 |Sbloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**MAIUSC** + **CTRL+FRECCIA DESTRA** + **L**|
 

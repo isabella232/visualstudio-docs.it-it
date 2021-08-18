@@ -1,5 +1,5 @@
 ---
-title: Debug session | Microsoft Docs
+title: Eseguire il debug delle | Microsoft Docs
 description: Informazioni su una sessione di debug, ovvero tutti i processi avviati o collegati a da una singola istanza dell'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,19 +13,19 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24919aea1751ef9ab7f867d5bc59c70a00a5f66e5386bdc4d8cce042d5bb70bc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b407c3ec25cda1d66fa44582cb3b10cd5476b0f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417867"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089498"
 ---
 # <a name="debug-session"></a>Sessione di debug
 In termini di architettura del debugger, una *sessione*:
 
 - Set di tutti i processi, correlati o non correlati, avviati o collegati a da una singola istanza dell'IDE.
 
-- Viene implementato da un gestore di debug di sessione (SDM). Per altre informazioni, vedere [Session Debug Manager](../../extensibility/debugger/session-debug-manager.md).
+- Viene implementato da un gestore di debug di sessione (SDM). Per altre informazioni, vedere [Gestione debug sessione](../../extensibility/debugger/session-debug-manager.md).
 
 ## <a name="see-also"></a>Vedi anche
 - [Gestione debug sessione](../../extensibility/debugger/session-debug-manager.md)

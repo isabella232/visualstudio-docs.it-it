@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cfbb3faef7fa097114f66eafe8ea224c04d431b5019516f67e03bfa3947ad5c0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f4a804c88f48274f67debee492c3452fa4086004
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121419260"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030490"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Uso della finestra Attività (C#, Visual Basic, C++)
 
@@ -85,15 +85,15 @@ Nelle colonne della finestra **Attività** vengono visualizzate le informazioni 
  È possibile contrassegnare il thread sull'attività in cui è in  esecuzione un'attività selezionando la voce dell'elenco attività e quindi scegliendo Contrassegna thread assegnato dal menu di scelta rapida oppure facendo clic sull'icona del flag nella prima colonna. Se si contrassegnano diverse attività, sarà successivamente possibile ordinare in base alla colonna del contrassegno in modo da portare tutte le attività contrassegnate in cima e potersi concentrare su di esse. È inoltre possibile usare la finestra **Stack in parallelo** per visualizzare solo le attività con contrassegno. In questo modo si possono filtrare le attività di poco interesse per il debug. I contrassegni non vengono salvati in modo permanente tra una sessione di debug e l'altra.
 
 ## <a name="freezing-and-thawing-tasks"></a>Blocco e sblocco delle attività
- Per bloccare il thread nel quale viene eseguita un'attività, fare clic con il pulsante destro del mouse sull'elemento dell'elenco di attività e scegliere **Blocca thread assegnato**. Se un'attività è già bloccata, il comando è **Thaw Assigned Thread**. Quando si blocca un thread, tale thread non verrà eseguito quando si esegue il codice un'istruzione alla volta dopo il punto di interruzione corrente. Il **comando Blocca tutti i thread ma questo comando** blocca tutti i thread tranne quello che esegue l'elemento dell'elenco attività.
+ Per bloccare il thread nel quale viene eseguita un'attività, fare clic con il pulsante destro del mouse sull'elemento dell'elenco di attività e scegliere **Blocca thread assegnato**. Se un'attività è già bloccata, il comando è **Thaw Assigned Thread**. Quando si blocca un thread, tale thread non verrà eseguito quando si esegue il codice un'istruzione alla volta dopo il punto di interruzione corrente. Il **comando Blocca tutti i thread ma questo consente** di bloccare tutti i thread ad eccezione di quello che esegue l'elemento dell'elenco attività.
 
  Nell'illustrazione seguente vengono mostrate le altre voci di menu per ogni attività.
 
- ![Menu thread di scelta rapida nella finestra Attività](../debugger/media/parallel_tasks_contextmenu2.png "Parallel_Tasks_ContextMenu2")
+ ![Menu del thread di collegamento nella finestra Attività](../debugger/media/parallel_tasks_contextmenu2.png "Parallel_Tasks_ContextMenu2")
 
 ## <a name="switching-the-active-task-or-frame"></a>Passaggio all'attività o al frame attivo
 
-Il **comando Passa ad attività** rende l'attività corrente l'attività attiva. Il **comando Passa al** frame rende attiva la stack frame selezionata stack frame. Il contesto del debugger passa all'attività corrente o all'attività stack frame.
+Il **comando Passa all'attività** rende l'attività corrente l'attività attiva. Il **comando Passa a** fotogramma rende il stack frame selezionato stack frame. Il contesto del debugger passa all'attività corrente o al contesto stack frame.
 
 ## <a name="see-also"></a>Vedi anche
 

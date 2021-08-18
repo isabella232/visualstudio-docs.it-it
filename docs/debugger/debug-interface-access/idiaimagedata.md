@@ -1,5 +1,5 @@
 ---
-description: Espone i dettagli della posizione di base e degli offset della memoria del modulo o dell'immagine.
+description: Espone i dettagli della posizione di base e degli offset di memoria del modulo o dell'immagine.
 title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: b696f350-fc08-4352-9287-a15e87512c1e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c8cee712f393c3b006484eeda4a0ec1033c1f26b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: da217ac40830700bf48968a9ed29821f88f190ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157616"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074820"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-Espone i dettagli della posizione di base e degli offset della memoria del modulo o dell'immagine.
+Espone i dettagli della posizione di base e degli offset di memoria del modulo o dell'immagine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,22 +31,22 @@ IDiaImageData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaImageData` .
+Nella tabella seguente vengono illustrati i metodi di `IDiaImageData` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera il percorso nella memoria virtuale del modulo rispetto all'applicazione.|
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera il percorso nella memoria virtuale dell'immagine.|
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera il percorso nella memoria virtuale del modulo relativo all'applicazione.|
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera la posizione nella memoria virtuale dell'immagine.|
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Recupera la posizione di memoria in cui deve essere basata l'immagine.|
 
 ## <a name="remarks"></a>Commenti
-Alcuni flussi di debug (XDATA, PDATA) contengono copie dei dati archiviati anche nell'immagine. È possibile eseguire query su questi oggetti dati di flusso per l' `IDiaImageData` interfaccia. Per informazioni dettagliate, vedere la sezione "note per i chiamanti" in questo argomento.
+Alcuni flussi di debug (XDATA, PDATA) contengono copie dei dati archiviati anche nell'immagine. È possibile eseguire query su questi oggetti dati di flusso per `IDiaImageData` l'interfaccia . Per informazioni dettagliate, vedere la sezione "Note per i chiamanti" in questo argomento.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia chiamando `QueryInterface` su un oggetto [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Si noti che non tutti i flussi di debug supportano l' `IDiaImageData` interfaccia. Attualmente, ad esempio, solo i flussi XDATA e PDATA supportano l' `IDiaImageData` interfaccia.
+Ottenere questa interfaccia chiamando `QueryInterface` su un [oggetto IDiaEnumDebugStreamData.](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Si noti che non tutti i flussi di debug supportano `IDiaImageData` l'interfaccia . Ad esempio, attualmente solo i flussi XDATA e PDATA supportano `IDiaImageData` l'interfaccia .
 
 ## <a name="example"></a>Esempio
-In questo esempio vengono cercati tutti i flussi di debug per qualsiasi flusso che supporta l' `IDiaImageData` interfaccia. Se viene trovato un flusso di questo tipo, vengono visualizzate alcune informazioni su tale flusso.
+Questo esempio cerca in tutti i flussi di debug qualsiasi flusso che supporta `IDiaImageData` l'interfaccia . Se viene trovato un flusso di questo tipo, vengono visualizzate alcune informazioni su tale flusso.
 
 ```C++
 void ShowImageData(IDiaSession *pSession)
@@ -112,9 +113,9 @@ void ShowImageData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2. h
+Intestazione: Dia2.h
 
-Libreria: diaguids. lib
+Libreria: diaguids.lib
 
 DLL: msdia80.dll
 

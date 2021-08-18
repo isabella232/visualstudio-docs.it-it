@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 10ed316107fa99ce00c42387501277c369d4b1f4a08ac5140d09ba43f6b23594
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a0b477f4dcb5d7c2148b40f648c41b9fea5a1578
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380793"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059372"
 ---
 # <a name="overview-of-source-code-analysis"></a>Panoramica dell'analisi del codice sorgente
 
@@ -40,9 +40,9 @@ Ogni analizzatore ha uno dei livelli di gravità seguenti:
 
 | Gravità (Esplora soluzioni) | Gravità (file EditorConfig) | Comportamento in fase di compilazione | Comportamento dell'editor |
 |-|-|-|
-| Errore | `error` | Le violazioni vengono visualizzate *come errori* nell'elenco errori e nell'output di compilazione della riga di comando e causano errori nelle compilazioni.| Il codice offensivo viene sottolineato con una sottolineatura a sottolineatura rossa e contrassegnato da una piccola casella rossa nella barra di scorrimento. |
+| Errore | `error` | Le violazioni vengono visualizzate *come errori* nell'elenco errori e nell'output di compilazione della riga di comando e causano errori nelle compilazioni.| Il codice offensivo è sottolineato con una sottolineatura a sottolineatura rossa e contrassegnato da una piccola casella rossa nella barra di scorrimento. |
 | Avviso | `warning` | Le violazioni vengono visualizzate *come avvisi* nell'elenco errori e nell'output di compilazione della riga di comando, ma non causano errori nelle compilazioni. | Il codice che ha commesso l'offesa è sottolineato con una sottolineatura a scorrimento verde e contrassegnato da una piccola casella verde nella barra di scorrimento. |
-| Info | `suggestion` | Le violazioni vengono visualizzate *come Messaggi* nell'elenco errori e non nell'output di compilazione della riga di comando. | Il codice che ha commesso l'offesa è sottolineato con una sottolineatura a sottolineatura grigia e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
+| Info | `suggestion` | Le violazioni vengono visualizzate *come Messaggi* nell'elenco errori e non nell'output di compilazione della riga di comando. | Il codice offensivo è sottolineato con una sottolineatura a sottolineatura a scorrimento grigia e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. La diagnostica viene tuttavia segnalata al motore di diagnostica IDE. |
 | Nessuno | `none` | Eliminato completamente. | Eliminato completamente. |
 | Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare qual è il valore predefinito per una regola, cercare nella Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
@@ -51,7 +51,7 @@ Se le violazioni delle regole vengono trovate da un analizzatore,  vengono segna
 
 ![Violazione dell'analizzatore nella finestra Elenco errori](../code-quality/media/code-analysis-error-list.png)
 
-Le violazioni dell'analizzatore segnalate nell'elenco errori corrispondono [all'impostazione del livello di gravità](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) della regola. Le violazioni dell'analizzatore vengono inoltre mostrate nell'editor di codice sotto il codice in errore. L'immagine seguente mostra tre violazioni: un errore &mdash; (arrotolamento), un avviso (arrotola verde) e un suggerimento (tre punti grigi):
+Le violazioni dell'analizzatore segnalate nell'elenco errori corrispondono all'impostazione del livello [di gravità](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) della regola. Le violazioni dell'analizzatore vengono inoltre mostrate nell'editor di codice sotto il codice in errore. L'immagine seguente mostra tre violazioni: un errore &mdash; (arrotolamento), un avviso (arrotola verde) e un suggerimento (tre punti grigi):
 
 ![Aquiggles nell'editor di codice in Visual Studio](media/diagnostics-severity-colors.png)
 

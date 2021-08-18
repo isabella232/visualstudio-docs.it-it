@@ -11,19 +11,20 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b5994d2629a49757980695ca99a6d12ae21160a6
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 3aff5311231069b2fa51feebd1124f2b20e8b707
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386527"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040125"
 ---
 # <a name="properties-of-port-shapes"></a>Proprietà delle forme delle porte
 È possibile usare forme porta per rappresentare classi di dominio nella finestra di progettazione generata.
 
- Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione [di un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
  Le forme porta hanno le proprietà elencate nella tabella seguente.
 
@@ -32,12 +33,12 @@ ms.locfileid: "112386527"
 |Colore riempimento|Colore di riempimento della forma.|White|
 |Modalità sfumatura di riempimento|Modalità sfumatura di riempimento di questa forma.|Ridimensionamento orizzontale|
 |Geometria|Geometria di questa forma (Rettangolo, Rettangolo arrotondato, Ellisse o Cerchio).|Rettangolo|
-|Dispone di punti di connessione predefiniti|Se `True` , la forma userà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
-|Colore del contorno|Colore del contorno della forma.|Nero|
-|Stile tratteggio del contorno|Stile del trattino del contorno di questa forma (Tinta unita, Trattino, Punto, DashDot, DashDotDot o Personalizzato).|Tinta unita|
+|Dispone di punti di connessione predefiniti|Se , la forma userà i punti di connessione `True` superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
+|Colore del contorno|Colore del contorno di questa forma.|Nero|
+|Stile tratteggio del contorno|Stile del tratteggio del contorno di questa forma (Tinta unita, Trattino, Punto, DashDot, DashDotDot o Personalizzato).|Tinta unita|
 |Spessore del contorno|Spessore del contorno di questa forma.|0.03125|
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Nero|
-|Modificatore di accesso|Livello di accesso della classe ( `public` o `internal` ).|Blockchain pubblica|
+|Modificatore di accesso|Livello di accesso della classe ( `public` o `internal` ).|Pubblico|
 |Attributi personalizzati|Utilizzato per aggiungere attributi alla classe del codice sorgente generata da questa forma.|\<none>|
 |Genera un valore derivato da Double|Se , verranno generate sia una classe di base che una classe `True` parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [Override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md)|Falso|
 |Ha un costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per altre informazioni, vedere [Override ed estensione delle classi generate.](../modeling/overriding-and-extending-the-generated-classes.md)|Falso|
@@ -49,7 +50,7 @@ ms.locfileid: "112386527"
 |Note|Note informali associate a questa forma.|\<none>|
 |Altezza iniziale|Altezza iniziale della forma, in pollici.|1|
 |Larghezza iniziale|Larghezza iniziale della forma, espressa in pollici.|1.5|
-|Colore di riempimento esposto come proprietà<br /><br /> Modalità sfumatura di riempimento esposta<br /><br /> Colore del contorno esposto come proprietà<br /><br /> Stile del trattino del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà specificata di una forma. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla definizione della forma e **scegliere Aggiungi esposto.**|Falso|
+|Esposizione del colore di riempimento come proprietà<br /><br /> Modalità sfumatura di riempimento esposta<br /><br /> Colore del contorno esposto come proprietà<br /><br /> Stile del trattino del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà specificata di una forma. Per impostare questa proprietà, fare clic con il pulsante destro del mouse sulla definizione della forma e **scegliere Aggiungi esposto.**|Falso|
 |Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<none>|
 |Correzione del testo della descrizione comando|Testo utilizzato per una descrizione comando fissa.|\<none>|

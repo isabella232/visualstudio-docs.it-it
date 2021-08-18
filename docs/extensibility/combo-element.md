@@ -1,5 +1,5 @@
 ---
-title: Elemento Combo | Microsoft Docs
+title: Elemento combo | Microsoft Docs
 description: "L'elemento Combo definisce i comandi visualizzati in una casella combinata. Sono disponibili quattro tipi: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo."
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,14 +11,15 @@ ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431d68b6e545506f5fc90cc5a98a52dd4f1c33ad
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 39f30058329172ea542b17e37eee0f8645b0bb18
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058123"
 ---
 # <a name="combo-element"></a>Elemento combinato
 Definisce i comandi visualizzati in una casella combinata. Esistono quattro tipi di caselle combinate, come indicato di seguito: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.
@@ -46,7 +47,7 @@ Definisce i comandi visualizzati in una casella combinata. Esistono quattro tipi
 |idCommandList|Obbligatorio. ID inviato alla destinazione del comando attivo per recuperare l'elenco di elementi da visualizzare nella casella combinata. L'ID sarà nello stesso ambito GUID del controllo.|
 |priority|facoltativo. Valore numerico che specifica la priorità.|
 |tipo|facoltativo. Valore enumerato che specifica il tipo di pulsante.<br /><br /> Se non specificato, usa Button.<br /><br /> DropDownCombo<br /> Il pacchetto VSPackage è responsabile della compilazione del contenuto di questa casella combinata. L'utente non può digitare alcun elemento nella casella di testo di questo elenco a discesa.<br /><br /> DynamicCombo<br /> Il pacchetto VSPackage è responsabile della compilazione del contenuto di questa casella combinata. L'utente può modificare questa casella combinata e selezionare anche gli elementi in essa presenti.<br /><br /> IndexCombo<br /> Uguale a DynamicCombo, ad eccezione del fatto che genera l'indice dell'elemento anziché il relativo testo.<br /><br /> MRUCombo<br /> Compilato dall'ambiente di sviluppo integrato (IDE) per conto del pacchetto VSPackage.  L'utente può modificare in questa casella combinata. L'IDE memorizza fino alle ultime 16 voci per casella combinata.<br /><br /> Quando l'utente seleziona un elemento nella casella combinata o immette qualcosa di nuovo, l'IDE invia una notifica al pacchetto VSPackage appropriato.|
-|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 

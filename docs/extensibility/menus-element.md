@@ -1,6 +1,6 @@
 ---
 title: Elemento Menus | Microsoft Docs
-description: L'elemento Menus definisce tutti i menu e le barre degli strumenti implementati da un vspackage. Questo articolo contiene un esempio.
+description: L'elemento Menus definisce tutti i menu e le barre degli strumenti implementati da un VSPackage. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13623fbd4d8116c86a71e22cd184749f25786e2b39b0f71af8f47c9716e1a75
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7fd8f65c0994ceb500ab389b3437cca85d8030a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400946"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152133"
 ---
 # <a name="menus-element"></a>Elemento Menus
-Definisce tutti i menu e le barre degli strumenti implementati da un vspackage.
+Definisce tutti i menu e le barre degli strumenti implementati da un VSPackage.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ Definisce tutti i menu e le barre degli strumenti implementati da un vspackage.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu e le barre degli strumenti implementati da un vspackage.|
+|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu e le barre degli strumenti implementati da un VSPackage.|
 |[Elemento Menu](../extensibility/menu-element.md)|Rappresenta un singolo menu o barra degli strumenti.|
 
 ### <a name="parent-elements"></a>Elementi padre

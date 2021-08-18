@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b31c956fa5cc94c8c595b5cf92f10498ea40a1ddb7fc5d4f2e830c3ea946d9d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 199ae11fc5d0b7fc3e0fd307de5328308552fadb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307310"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043375"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Crea un enumeratore per tutte le variabili locali del metodo, incluse quelle generate internamente da un compilatore.
@@ -51,7 +51,7 @@ int EnumAllLocals(
 [out] Restituisce un [oggetto IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) che rappresenta l'elenco di tutte le variabili locali nell'ambito specificato. In caso contrario, restituisce un valore Null che indica che non sono presenti variabili locali.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, S_OK restituisce S_FALSE se non sono presenti variabili locali. In caso contrario, verrà restituito un codice di errore.
+ Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non sono presenti variabili locali. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Commenti
  Vengono enumerate solo le variabili definite all'interno del blocco che contiene l'indirizzo di debug specificato. Questo metodo include tutte le variabili locali generate dal compilatore. Se sono necessarie solo le variabili locali definite in modo esplicito nell'origine, chiamare il [metodo EnumLocals.](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)

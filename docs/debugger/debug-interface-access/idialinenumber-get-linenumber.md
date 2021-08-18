@@ -11,14 +11,15 @@ ms.assetid: 2dff3fd9-097d-4645-bc1b-cb65ecbc42a6
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: db9a07b0fd636df9cd09c5bd22dceee9144678a6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 01e4d087b810cb4d21b2881a57bd594f4804e6fd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157567"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074804"
 ---
 # <a name="idialinenumberget_linenumber"></a>IDiaLineNumber::get_lineNumber
 Recupera il numero di riga nel file di origine.
@@ -34,7 +35,7 @@ HRESULT get_lineNumber (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il numero di riga nel file di origine.
+[out] Restituisce il numero di riga nel file di origine.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

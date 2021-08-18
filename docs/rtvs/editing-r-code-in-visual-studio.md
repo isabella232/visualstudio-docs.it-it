@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: d5431bbf51eea22a976fca9966ba18ad1fb4ee56
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 27db2b3b5edfe5fbaed9899927f7e9e866bd7d7a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680097"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076100"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modificare il codice R in Visual Studio
 
@@ -28,7 +29,7 @@ Oltre ad applicare un colore alle diverse parti del codice, ad esempio stringhe,
 
 ![Colorazione della sintassi per il codice R](media/editing-syntax-colors.png)
 
-Per personalizzare i tipi di carattere e determinati colori di evidenziazione, selezionare il comando Opzioni strumenti, passare a Tipi di carattere e colori dell'ambiente e quindi modificare le impostazioni per gli elementi correlati a R nella casella Elementi  >     >  visualizzati : 
+Per personalizzare i tipi di carattere e alcuni colori di evidenziazione, selezionare il comando Opzioni strumenti, passare a Tipi di carattere e colori dell'ambiente e quindi modificare le impostazioni per gli elementi correlati a R nella  >     >   **casella Elementi** visualizzati:
 
 ![Tipi di carattere e opzioni di colore per il codice R](media/editing-syntax-colors-options.png)
 
@@ -36,7 +37,7 @@ Visual Studio sottolinea anche gli errori di sintassi nell'editor:
 
 ![Evidenziazione degli errori di sintassi nel codice R](media/editing-syntax-error.png)
 
-Per modificare questo comportamento, vedere l'impostazione **Controllo**  >  **sintassi avanzata** in Opzioni [dell'editor](#editor-options).
+Per modificare questo comportamento, vedere l'impostazione **Controllo**  >  **sintassi avanzata** in Opzioni [dell'editor.](#editor-options)
 
 ## <a name="edit-and-organize-code"></a>Modificare e organizzare il codice
 
@@ -44,7 +45,7 @@ Durante la digitazione del codice, RTVS offre il completamento automatico come d
 
 ![Animazione della formattazione inline](media/editing-inline-formatting.gif)
 
-Durante la digitazione di chiamate a funzioni con molti parametri, è spesso utile poter allineare i parametri per rendere il codice più leggibile. RTVS ricorda il rientro impostato per i parametri e lo applica automaticamente alle righe successive:
+Quando si digitano chiamate a funzioni con molti parametri, spesso si vuole allineare i parametri per semplificare la lettura del codice. RTVS ricorda il rientro impostato per i parametri e lo applica automaticamente alle righe successive:
 
 ![Animazione del rientro automatico](media/editing-auto-indentation.gif)
 
@@ -56,29 +57,29 @@ Per creare un'area personalizzata, racchiudere il codice interessato con comment
 
 ![Creazione di un'area comprimibile con commenti](media/editing-collapsible-regions.gif)
 
-Per impostazione predefinita, Visual Studio gli spazi quando si preme **TAB.** Anche in questo caso è possibile modificare tale comportamento, seguendo le istruzioni descritte in [Opzioni, Editor di testo, Tutti i linguaggi](../ide/reference/options-text-editor-all-languages.md).
+Per impostazione predefinita, Visual Studio inserisce spazi quando si preme **TAB.** Anche in questo caso è possibile modificare tale comportamento, seguendo le istruzioni descritte in [Opzioni, Editor di testo, Tutti i linguaggi](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Esplorazione del codice
 
 Grazie all'esplorazione del codice è possibile accedere rapidamente al codice sorgente del programma R e alle sue librerie. Queste funzionalità consentono di restare nel flusso di lavoro senza dover eseguire manualmente ricerche nel codice.
 
-**Vai a definizione** consente di passare rapidamente a una definizione di funzione o di visualizzare un editor inline ridotto per leggere il codice sorgente di una funzione di libreria. È sufficiente fare clic con il pulsante destro del mouse sulla funzione di interesse e scegliere Vai a **definizione** oppure posizionare il cursore nella funzione e premere **F12.**
+**Vai a definizione** consente di passare rapidamente a una definizione di funzione o di visualizzare un editor inline ridotto per leggere il codice sorgente di una funzione di libreria. È sufficiente fare clic con il pulsante destro del mouse sulla funzione di interesse e scegliere **Vai a** definizione oppure posizionare il cursore nella funzione e premere **F12.**
 
 Questo comando apre una nuova finestra dell'editor contenente il codice sorgente per la funzione. Per praticità, il cursore viene posizionato all'inizio della definizione della funzione.
 
-**Visualizza definizione,** richiamato dal menu di scelta rapida o **ALT** + **F12,** inserisce un'area scorrevole di sola lettura contenente il codice sorgente della funzione sotto la chiamata di funzione:
+**Visualizza definizione**, richiamato dal menu di scelta rapida o **alt** + **F12,** inserisce un'area scorrevole di sola lettura contenente il codice sorgente della funzione sotto la chiamata di funzione:
 
 ![Animazione per Visualizza definizione](media/editing-peek-definition.gif)
 
 ## <a name="send-code-to-the-interactive-window"></a>Inviare codice alla finestra interattiva
 
-Molti sviluppatori preferiscono scrivere il codice nell'editor e inviarlo alla [finestra interattiva](interactive-repl-for-r-in-visual-studio.md) per eseguire immediatamente il test, noto anche come ciclo Read–Eval–Print o REPL. Premendo **CTRL** + **INVIO nell'editor** R, la riga di codice corrente viene inviata alla finestra interattiva, quindi il cursore viene posizionato sulla riga successiva. Con **CTRL INVIO** è quindi possibile eseguire in modo efficace il codice + dall'editor.
+Molti sviluppatori preferiscono scrivere il codice nell'editor e inviarlo alla [finestra interattiva](interactive-repl-for-r-in-visual-studio.md) per eseguire immediatamente il test, noto anche come ciclo Read–Eval–Print o REPL. Premendo **CTRL** + **INVIO** nell'editor R, la riga di codice corrente viene inviata alla finestra interattiva, quindi il cursore viene posizionato sulla riga successiva. Con **CTRL** INVIO è quindi possibile eseguire il codice un'istruzione alla volta + dall'editor.
 
 È anche possibile selezionare il codice e premere **CTRL** + **INVIO** per applicare l'intera selezione. In alternativa, fare clic con il pulsante destro del mouse sul codice selezionato e scegliere **Esegui in interattivo**.
 
 ## <a name="format-code"></a>Codice formato
 
-La formattazione automatica di Visual Studio consente di usare la formattazione definita nelle preferenze per il codice che si sta scrivendo e per il codice incollato nell'editor. È anche possibile effettuare una selezione, fare clic con il pulsante destro del mouse e selezionare **Formatta** selezione (**CTRL** + **K**,**F**) per applicare queste preferenze. Ad esempio, se la definizione di funzione era interamente su una singola riga:
+La formattazione automatica di Visual Studio consente di usare la formattazione definita nelle preferenze per il codice che si sta scrivendo e per il codice incollato nell'editor. È anche possibile effettuare una selezione, fare clic con il pulsante destro del mouse e selezionare **Formatta** selezione (**CTRL** + **K**,**F**) per applicare tali preferenze. Ad esempio, se la definizione di funzione era interamente su una singola riga:
 
 ```R
 f<-function  (a){  return(a + 1) }
@@ -90,11 +91,11 @@ Applicando la formattazione, il codice viene pulito:
 f <- function(a) { return(a + 1) }
 ```
 
-Per riformattare l'intero file di codice, selezionare **Modifica**  >  **documento**  >  **in formato avanzato** (**CTRL** + **E**,**D**).
+Per riformattare l'intero file di codice, selezionare **Modifica**  >  **documento**  >  **di formato avanzato** (**CTRL** + **E**,**D**).
 
-La formattazione automatica è un'operazione distinta che può essere annullata. Ad esempio, se si incolla codice nell'editor e si applica la formattazione, selezionando Modifica Annulla o premendo CTRL Z una volta inverte la formattazione. Un secondo comando Annulla inverte l'operazione  >    +  incollata. 
+La formattazione automatica è un'operazione distinta che può essere annullata. Ad esempio, se si incolla il codice nell'editor e si applica la formattazione, selezionando Modifica annulla o premendo CTRL Z una volta inverte la formattazione. Un secondo comando Annulla inverte l'operazione  >    +  incollata. 
 
-Le opzioni di formattazione (inclusa la disattivazione della formattazione) vengono impostate tramite Opzioni degli strumenti nella scheda   >   **Editor di**  >  **testo R**  >  **Avanzate.** È possibile passare direttamente a questa pagina usando il **comando R Tools** Editor options oppure facendo clic con il pulsante destro del mouse nell'editor e scegliendo Opzioni di  >   **formattazione**. Vedere la sezione relativa alle [opzioni dell'editor](#editor-options) per informazioni dettagliate.
+Le opzioni di formattazione(inclusa la disattivazione della formattazione) vengono impostate tramite **Opzioni** strumenti nella scheda  >   R Avanzate **dell'editor**  >    >  **di** testo. È possibile passare direttamente a questa pagina usando il comando opzioni editor di **R Tools** oppure facendo clic con il pulsante destro del mouse nell'editor e selezionando Opzioni  >   di **formattazione**. Vedere la sezione relativa alle [opzioni dell'editor](#editor-options) per informazioni dettagliate.
 
 ## <a name="inserting-roxygen-comments"></a>Inserimento di commenti Roxygen
 
@@ -104,7 +105,7 @@ RTVS offre un collegamento per la generazione di commenti [Roxygen](https://cran
 
 ## <a name="editor-options"></a>Opzioni dell'editor
 
-Le opzioni specifiche dell'editor vengono impostate tramite il **comando** Opzioni degli strumenti, passando all'editor di testo R o tramite il comando di scelta rapida  >     >   **R Tools**  >  **Editor Options**.
+Le opzioni specifiche dell'editor vengono impostate tramite il comando Opzioni degli strumenti, passando all'Editor di testo R oppure usare il comando di scelta rapida Opzioni editor  >   di R   >     >  **Tools.**
 
 Le opzioni contenute nelle schede **Generale**, **Barre di scorrimento** e **Tabulazioni** non sono specifiche di R, ma piuttosto sono impostazioni generali di Visual Studio disponibili per tutti i linguaggi, ma che vengono applicate a seconda del linguaggio. Per informazioni dettagliate, vedere gli articoli seguenti:
 
@@ -112,7 +113,7 @@ Le opzioni contenute nelle schede **Generale**, **Barre di scorrimento** e **Tab
 - [Procedura: Tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
 - [Opzioni, Editor di testo, Tutti i linguaggi, Tabulazioni](../ide/reference/options-text-editor-all-languages-tabs.md)
 
-Le opzioni nella **scheda R**  >  **Avanzate** sono specifiche di RTVS:
+Le opzioni nella **scheda**  >  **R Avanzate** sono specifiche di RTVS:
 
 | Group | Opzione | Predefinito | Descrizione |
 | --- | --- | --- | --- |
@@ -124,11 +125,11 @@ Le opzioni nella **scheda R**  >  **Avanzate** sono specifiche di RTVS:
 | | Spazio dopo parola chiave | On | Inserisce uno spazio dopo parole chiave come `if`, `while` e `repeat`. |
 | | Spazio prima di { | On | Inserisce uno spazio prima di una { aperta. |
 | | Spazio prima e dopo = | On | Inserisce spazi prima e dopo un segno di uguale. |
-| IntelliSense | Esegui il commit quando si preme INVIO | Off | Esegue il commit della selezione di completamento automatico quando **si preme** INVIO. |
-| | Esegui il commit quando si preme la BARRA SPAZIATRICE | Off | Esegue il commit della selezione di completamento automatico quando **viene premuto** spazio.|
-| | Elenco di completamento dopo la digitazione del primo carattere | On | Visualizza l'elenco di completamento dopo aver digitato i primi caratteri. Se disattivata, viene visualizzato un elenco di completamento con **Modifica**  >  **membri elenco IntelliSense**(  >   **CTRL** + **J**). |
+| IntelliSense | Esegui il commit quando si preme INVIO | Off | Esegue il commit della selezione di completamento automatico **quando si preme** INVIO. |
+| | Esegui il commit quando si preme la BARRA SPAZIATRICE | Off | Esegue il commit della selezione di completamento automatico quando **viene premuto** Spazio.|
+| | Elenco di completamento dopo la digitazione del primo carattere | On | Visualizza l'elenco di completamento dopo aver digitato i primi caratteri. Quando è disattivata, viene visualizzato un elenco di completamento con **Modifica**  >  **membri elenco IntelliSense**(  >   **CTRL** + **J**). |
 | | Elenco di completamento sul **tasto** TAB | Off | Richiama l'elenco di completamento digitando uno o più caratteri e premendo **TAB.** |
-| | Corrispondenza con nomi di argomento parzialmente digitati | Off | Durante la digitazione dei nomi di un argomento in una chiamata di funzione, la firma visualizza una descrizione che meglio corrisponde all'argomento. |
+| | Corrispondenza con nomi di argomento parzialmente digitati | Off | Quando si digitano i nomi degli argomenti in una chiamata di funzione, la Guida per la firma mostra una descrizione dell'argomento che rappresenta la corrispondenza migliore. |
 | Finestra interattiva | Controllo della sintassi nella console R | Off | Applica il controllo della sintassi nella finestra interattiva. Il controllo della sintassi non funziona correttamente se viene applicato a istruzioni su più righe. |
 | struttura | Struttura del codice | On | Crea automaticamente aree comprimibili in caso di istruzioni su più righe. |
 | Controllo della sintassi | Mostra errori di sintassi | On | Abilita il controllo automatico della sintassi del codice. |

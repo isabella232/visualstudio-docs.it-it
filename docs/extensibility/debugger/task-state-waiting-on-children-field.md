@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e63ef2032b4d3ac2bd874276c690b84a36b4abaf598b9eb44a37fca810ad1b1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 161e482a791cbf9189d864bdf45c3934803fbf2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306231"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095101"
 ---
 # <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN campo
 L'attività ha terminato l'esecuzione del delegato ed è in attesa implicita del completamento delle attività figlio associate.
@@ -38,4 +38,4 @@ L'attività ha terminato l'esecuzione del delegato ed è in attesa implicita del
  Se il [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene questo valore, la <xref:System.Threading.Tasks.Task.Status%2A> proprietà restituisce <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Vedi anche
-- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)

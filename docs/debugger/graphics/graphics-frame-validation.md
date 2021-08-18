@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f7c23daaa333e71f332f67fa9d34d9d3aba361139dbd3ca1fc1bc3fe623c91b2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1573b19318e86f5c7cdff796756b476728ce42ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362749"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058597"
 ---
 # <a name="graphics-frame-validation"></a>Convalida dei frame di grafica
 <!-- VERSIONLESS -->
@@ -34,7 +34,7 @@ Fare clic **sul pulsante Esegui** convalida nell'angolo superiore sinistro per a
 | Gravità | Danneggiamento, Errore, Avviso, Informazioni o Messaggio. |
 | Category | Definito dall'applicazione, Varie, Inizializzazione, Pulizia, Compilazione, Creazione stato, Impostazione stato, Recupero stato, Esecuzione, Manipolazione delle risorse, Shader, Ridondante e Inutilizzato. |
 | Message | Messaggio associato all'evento. |
-| Evento | Evento associato all'errore o all'avviso. |
+| Event | Evento associato all'errore o all'avviso. |
 
 ## <a name="see-also"></a>Vedi anche
 [Diagnostica della grafica (Debug grafica DirectX)](visual-studio-graphics-diagnostics.md)

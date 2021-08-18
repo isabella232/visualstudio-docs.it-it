@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di campionamento di memoria .NET | Microsoft Docs'
-description: Informazioni sulla visualizzazione moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di campionamento.
+description: Informazioni sulla visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di campionamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9c00fd7647d6ba3da62d913e0371dc8cf300ca7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f1fcb71e16daa3cb483f281d2af4130fc676acb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879826"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107339"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Visualizzazione Moduli: dati di campionamento di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di campionamento raggruppa i dati di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo sono elencate sotto il nodo del modulo.
@@ -29,7 +30,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 |**Nome**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo dell'istruzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
@@ -43,7 +44,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 |**% byte esclusivi**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che rappresenta i byte esclusivi del modulo, della funzione, della riga o dell'istruzione.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
 - [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)

@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: e13cc2460ba5fa413ff17536a800a3ff125bbbcf9d46f296f853608d5eb82498
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dab41bd2bbe83a648c72c64c413e8a9d5d8cf4ce
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345894"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059072"
 ---
 # <a name="debug-net-apps-in-wsl-with-visual-studio"></a>Eseguire il debug di app .NET in WSL con Visual Studio
 

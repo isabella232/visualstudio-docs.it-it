@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di strumentazione di memoria .NET | Microsoft Docs'
-description: Informazioni su come la visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti usando il metodo di strumentazione raggruppa i dati di memoria e di intervallo per modulo.
+description: Informazioni su come la visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati di memoria e intervallo in base al modulo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f76990695b2ebbfb53bf6afda69870cd39e69f0b51681847424be3174672245
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4da8a05a9db7d10f149969ced9d1adcaf9a49c4e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107318"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Visualizzazione Moduli: dati di strumentazione di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati temporali e di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. I dati di profilatura per le funzioni del modulo sono elencati sotto il nodo del modulo.

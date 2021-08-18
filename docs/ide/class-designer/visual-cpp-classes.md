@@ -12,21 +12,22 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1a1e075d2ac8d06320c46f8d2bb86992814ae24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bad6d017bfe58af9a514f632b4bf1fc3047cb054
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963367"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094490"
 ---
 # <a name="c-classes-in-class-designer"></a>Classi C++ in Progettazione classi
 
 **Progettazione classi** supporta le classi C++ e visualizza classi C++ native in modo analogo alle forme di classe di Visual Basic e C#, con la differenza che le classi C++ possono avere più relazioni di ereditarietà. È possibile espandere la forma classe in modo da visualizzare più campi e metodi nella classe o comprimerla per risparmiare spazio.
 
 > [!NOTE]
-> **Progettazione classi** non supporta unioni (un tipo speciale di classe in cui la memoria allocata è solo la quantità necessaria per il membro dati più grande dell'Unione).
+> **Progettazione classi** non supporta le unioni (un tipo speciale di classe in cui la memoria allocata è solo la quantità necessaria per il membro dati più grande dell'unione).
 
 ## <a name="simple-inheritance"></a>Ereditarietà semplice
 
@@ -41,7 +42,7 @@ class B : A {};
 
 ## <a name="multiple-inheritance"></a>Ereditarietà multipla
 
-**Progettazione classi** supporta la visualizzazione di relazioni di ereditarietà di più classi. L'*ereditarietà multipla* viene usata quando una classe derivata presenta attributi di più di una classe di base. Di seguito è riportato un esempio di ereditarietà multipla:
+**Progettazione classi** supporta la visualizzazione di relazioni di ereditarietà a più classi. L'*ereditarietà multipla* viene usata quando una classe derivata presenta attributi di più di una classe di base. Di seguito è riportato un esempio di ereditarietà multipla:
 
 ```cpp
 class Bird {};
@@ -109,7 +110,7 @@ int main()
 }
 ```
 
-Quando si visualizza questo codice in un diagramma classi, **Progettazione classi** disegna una linea di ereditarietà da `Fish` a `Swimmer` .
+Quando si visualizza questo codice in un diagramma **classi,** Progettazione classi traccia una linea di ereditarietà da `Fish` a `Swimmer` .
 
 ## <a name="anonymous-classes"></a>Classi anonime
 
@@ -123,7 +124,7 @@ typedef struct
 } POINT;
 ```
 
-Anche le strutture possono essere anonime. **Progettazione classi** Visualizza le strutture e le classi anonime allo stesso modo in cui viene visualizzato il rispettivo tipo. Sebbene sia possibile dichiarare e visualizzare classi e strutture anonime, **Progettazione classi** non utilizzerà il nome del tag specificato. ma usa il nome generato da Visualizzazione classi. La classe o la struttura viene visualizzata in Visualizzazione classi e **Progettazione classi** come elemento denominato **__unnamed**.
+Anche le strutture possono essere anonime. **Progettazione classi** visualizza le classi e le strutture anonime nello stesso modo in cui visualizza il rispettivo tipo. Sebbene sia possibile dichiarare e visualizzare classi e strutture anonime, **Progettazione classi** non userà il nome del tag specificato. ma usa il nome generato da Visualizzazione classi. La classe o la struttura viene visualizzata Visualizzazione classi e **Progettazione classi** come elemento denominato **__unnamed**.
 
 Per altre informazioni sulle classi anonime, vedere [Tipi di classe anonimi](/cpp/cpp/anonymous-class-types).
 
@@ -157,7 +158,7 @@ La tabella seguente illustra alcuni esempi di funzioni del modello di specializz
 
 |Elemento del codice|Visualizzazione di Progettazione classi|
 |------------------| - |
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> Func \<T, U> (overload + 1)|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func \<T, U> (+ 1 overload)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Classe modello<br /><br /> `B<T2>`<br /><br /> Classe modello<br /><br /> (B è contenuto all'interno della classe A in **Tipi annidati**)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Classe<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Classe modello|
 
@@ -172,7 +173,7 @@ La tabella seguente illustra alcuni esempi di tipica connessione di classe speci
 |Elemento del codice|Visualizzazione di Progettazione classi|
 |------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Classe<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Classe<br /><br /> `C<T>`<br /><br /> Classe modello<br /><br /> `D`<br /><br /> Classe<br /><br /> ->C\<float>|
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> Minimo \<T>|
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -180,5 +181,5 @@ La tabella seguente illustra alcuni esempi di tipica connessione di classe speci
 - [Classi e struct](/cpp/cpp/classes-and-structs-cpp)
 - [Tipi di classe anonimi](/cpp/cpp/anonymous-class-types)
 - [Ereditarietà multipla](/previous-versions/6td5yws2(v=vs.140))
-- [Più classi base](/cpp/cpp/multiple-base-classes)
+- [Più classi di base](/cpp/cpp/multiple-base-classes)
 - [Modelli](/cpp/cpp/templates-cpp)

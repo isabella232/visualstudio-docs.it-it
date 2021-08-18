@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Chiamare codice da VBA in un progetto Visual C#'
-description: Informazioni su come chiamare un metodo in una personalizzazione a livello di documento per Microsoft Excel dal codice Visual Basic, Applications Edition (VBA) nella cartella di lavoro.
+description: Informazioni su come chiamare un metodo in una personalizzazione a livello di documento Microsoft Excel codice Visual Basic, Applications Edition (VBA) nella cartella di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,14 +19,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 260872096f36f91a2618f636e297d3c48b3fe51b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 1556eab077a56bc3b6880cc9a0a413e782f98c2d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046165"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procedura dettagliata: Chiamare codice da VBA in un progetto Visual C#
   Questa procedura dettagliata illustra come chiamare un metodo in una personalizzazione a livello di documento di Microsoft Office Excel da codice Visual Basic, Applications Edition (VBA) contenuto nella cartella di lavoro. La procedura comporta tre passaggi di base: aggiungere un metodo alla classe dell'elemento host `Sheet1` , esporre il metodo al codice VBA nella cartella di lavoro e quindi chiamare il metodo dal codice VBA contenuto nella cartella di lavoro.
@@ -68,7 +69,7 @@ ms.locfileid: "107824471"
 
 1. Avviare Excel.
 
-2. Salvare il documento attivo come cartella di **Macro-Enabled excel \* (xlsm)** con il nome **WorkbookWithVBA**. Salvarla in un percorso a propria scelta, ad esempio, il desktop.
+2. Salvare il documento attivo come cartella **Excel Macro-Enabled cartella di lavoro \* (xlsm)** con il nome **WorkbookWithVBA**. Salvarla in un percorso a propria scelta, ad esempio, il desktop.
 
 3. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
@@ -148,7 +149,7 @@ ms.locfileid: "107824471"
 
 12. Scegliere **OK** nella finestra di dialogo **Opzioni di Excel**.
 
-13. Uscire **da Excel**.
+13. Chiudere **Excel**.
 
 ## <a name="add-a-method-to-the-sheet1-class"></a>Aggiungere un metodo alla classe Sheet1
  Ora che il progetto VBA è configurato, aggiungere un metodo pubblico alla classe dell'elemento host `Sheet1` che è possibile chiamare dal codice VBA.
@@ -246,11 +247,11 @@ ms.locfileid: "107824471"
 
 - Chiamare il codice in un elemento host in una personalizzazione di Visual Basic da VBA. Questo processo è diverso dal processo usato per Visual C#. Per altre informazioni, vedere [Procedura dettagliata: Chiamare codice da VBA in un Visual Basic progetto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).
 
-- Chiamare codice in un componente aggiuntivo VSTO da VBA. Per altre informazioni, vedere Procedura dettagliata: Chiamare codice in un componente aggiuntivo [VSTO da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+- Chiamare codice in un componente aggiuntivo VSTO da VBA. Per altre informazioni, vedere [Procedura dettagliata: Chiamare codice in un VSTO componente aggiuntivo da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Combinare le personalizzazioni VBA e a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
-- [Procedura: Esporre codice a VBA in un Visual Basic progetto](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
-- [Procedura: Esporre codice a VBA in un progetto visual c&#35; visual c](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
-- [Procedura dettagliata: Chiamare codice da VBA in un Visual Basic progetto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)
+- [Procedura: Esporre codice a VBA in un progetto Visual Basic codice](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [Procedura: Esporre codice a VBA in un progetto Visual C&#35; codice](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
+- [Procedura dettagliata: Chiamare codice da VBA in un progetto Visual Basic codice](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

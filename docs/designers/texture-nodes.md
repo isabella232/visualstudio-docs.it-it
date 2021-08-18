@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 7de72c166ed7cb834a6675265364bf9bdfe5dbbff60ffc5d2095683de30040d2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b10df636d87cb8fcb2ea88a3422998a4773adc56
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293651"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058175"
 ---
 # <a name="texture-nodes"></a>Nodi di trama
 

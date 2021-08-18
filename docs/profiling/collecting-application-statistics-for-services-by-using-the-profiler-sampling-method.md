@@ -1,5 +1,5 @@
 ---
-title: Raccogliere statistiche per i servizi Windows - metodo di campionamento del profiler
+title: Raccogliere statistiche per i servizi Windows - Metodo di campionamento del profiler
 description: Esaminare le procedure e le opzioni per raccogliere statistiche sulle prestazioni per Windows usando il metodo di campionamento di profilatura dalla riga di comando.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb825bc851238ce2b0be98cc30921ca4a389bfe17d42e090566e8bd4997ddbf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5012303345e02d3070e868f23f706fe785f3078a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121333756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107979"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Raccogliere le statistiche dell'applicazione per i servizi tramite il metodo di campionamento del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche sulle prestazioni per i servizi Windows tramite il metodo di campionamento dalla riga di comando.
@@ -30,7 +30,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
 |Attività|Contenuto correlato|
 |----------|---------------------|
 |**Connettere il profiler a un servizio .NET**|-   [Procedura: Connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
-|**Aggiungere dati di interazione tra livelli**|-   [Raccogliere i dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Aggiungere dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 |**Connettere il profiler a un servizio C/C++**|-   [Procedura: Connettere il profiler a un servizio nativo per raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Attività correlate

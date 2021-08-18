@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 22de4f1ef153ba2d4cda8b2663b3bfbf83ea4dd2db4db1f91b7b3679a6e6905c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d8fce93b1bd55930b518d21921557b4ac58e8576
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121263764"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074338"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: il processo di lavoro del sito Web è stato terminato da IIS
 L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseguenza, Internet Information Services (IIS) presuppone che il processo di lavoro non risponda e lo termina.
@@ -40,7 +40,7 @@ L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseg
 
     Gestione IIS verrà aperto.
 
-3. Nel riquadro **Connessioni** espandere il \<computer name> nodo, se necessario.
+3. Se **necessario,** espandere il \<computer name> nodo nel riquadro Connessioni .
 
 4. Nel nodo \<computer name> fare clic su Pool di **applicazioni**.
 

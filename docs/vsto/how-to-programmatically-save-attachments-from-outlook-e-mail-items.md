@@ -1,6 +1,6 @@
 ---
-title: Salvare allegati da elementi Outlook posta elettronica a livello di codice
-description: Informazioni su come usare i Visual Studio per salvare allegati da elementi di posta elettronica di Microsoft Outlook a livello di codice.
+title: Salvare allegati da Outlook di posta elettronica a livello di codice
+description: Informazioni su come usare i Visual Studio per salvare allegati da microsoft Outlook di posta elettronica.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -19,14 +19,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0099f06210dc7164df28a3e3b3f3e3e3ef7cb54865a7ead0585fdccf21d1cf0d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e635d1ddba2d7032820fee6e5979b402b2d38360
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394264"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092163"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedura: Salvare allegati da elementi di posta elettronica Outlook a livello di codice
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedura: Salvare allegati a livello di codice da Outlook di posta elettronica
 
 In questo esempio gli allegati di posta elettronica vengono salvati in una cartella specificata quando si riceve posta nella posta in arrivo.
 
@@ -41,7 +41,7 @@ In questo esempio gli allegati di posta elettronica vengono salvati in una carte
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
+- [Usare elementi di posta elettronica](../vsto/working-with-mail-items.md)
 - [Procedura: Recuperare una cartella in base al nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Procedura: Eseguire azioni a livello di codice quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
 - [Procedura: Eseguire ricerche a livello di codice all'interno di una cartella specifica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

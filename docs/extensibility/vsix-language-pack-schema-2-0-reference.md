@@ -1,6 +1,6 @@
 ---
 title: Informazioni di riferimento sullo schema del Language Pack VSIX 2.0 | Microsoft Docs
-description: Lo schema del Language Pack VSIX fornisce informazioni sull'installazione localizzata per i pacchetti VSIX. La versione 2.0 supporta elementi di localizzazione aggiuntivi.
+description: Lo schema del Language Pack VSIX fornisce informazioni di installazione localizzate per i pacchetti VSIX. La versione 2.0 supporta elementi di localizzazione aggiuntivi.
 ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
@@ -14,20 +14,20 @@ author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.technology: vs-ide-sdk
-ms.openlocfilehash: 4770e69b48571ee9c47d85956e0c47ec60fa126ed55272fdf49a1b0c33d04550
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ade27ac47c25a3170c5c7c6048aa1c6c21181e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109890"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>Informazioni di riferimento language pack schema VSIX 2.0
+# <a name="vsix-language-pack-schema-20-reference"></a>Informazioni di riferimento sullo schema language pack VSIX 2.0
 
-Lo schema del Language Pack VSIX fornisce informazioni sull'installazione localizzata per i pacchetti VSIX. La versione 2.0 di questo schema supporta elementi di localizzazione aggiuntivi.
+Lo schema del Language Pack VSIX fornisce informazioni di installazione localizzate per i pacchetti VSIX. La versione 2.0 di questo schema supporta elementi di localizzazione aggiuntivi.
 
 ## <a name="language-pack-schema"></a>Schema del Language Pack
 
-L'elemento radice del file language pack è , con un attributo , che è la versione `<PackageLanguagePackManifest>` `Version` del formato language pack. Questo articolo descrive la versione 2.0 del formato language pack, specificato nel manifesto impostando l'attributo `Version` sul valore `Version="2.0.0"` . L'elemento radice contiene esattamente un elemento `<Metadata>` figlio.
+L'elemento radice del file language pack è , con un attributo , che è la versione del language pack `<PackageLanguagePackManifest>` `Version` file. Questo articolo descrive la versione 2.0 del formato language pack, specificato nel manifesto impostando l'attributo `Version` sul valore `Version="2.0.0"` . L'elemento radice contiene esattamente un elemento `<Metadata>` figlio.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Elemento PackageLanguagePackManifest
 
@@ -70,6 +70,6 @@ L'elemento radice del file language pack è , con un attributo , che è la versi
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)|Illustra come fornire il supporto dell'installazione localizzata per un pacchetto VSIX.|
-|[Informazioni di riferimento sullo schema dell'estensione VSIX 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifesto VSIX descrive il contenuto di un file *di distribuzione vsix.* Il file di distribuzione consente di installare un'Visual Studio di distribuzione usando la **finestra di dialogo** Estensioni e aggiornamenti .|
+|[Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)|Viene illustrato come fornire supporto di installazione localizzato per un pacchetto VSIX.|
+|[Informazioni di riferimento sullo schema dell'estensione VSIX 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifesto VSIX descrive il contenuto di un file *di distribuzione vsix.* Il file di distribuzione consente di installare un'estensione Visual Studio usando la finestra **di dialogo** Estensioni e aggiornamenti .|
 |[Individuare e usare le estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Illustra come usare la finestra **di dialogo** Estensioni e aggiornamenti per installare, rimuovere, attivare e disattivare le estensioni.|

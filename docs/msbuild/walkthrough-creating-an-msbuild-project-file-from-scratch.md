@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e56633e11aa9d9e9287bb27145db2c636ecd67a8cea2af5af931ea058428a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6824260c3bffad8e6d3000d8eb5d3e4405dafc1f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121257472"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093710"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creare un nuovo file di progetto MSBuild
 
@@ -52,13 +52,13 @@ Per completare la procedura dettagliata, è necessario Visual Studio installato 
 
 ## <a name="extend-the-path"></a>Estendere il percorso
 
-Prima di poter usare MSBuild, è necessario estendere la variabile di ambiente PATH per includere tutti gli strumenti necessari. È possibile usare il **Prompt dei comandi per gli sviluppatori per Visual Studio**. Cercarlo nella Windows 10 nella casella di ricerca nella barra Windows attività. Per configurare l'ambiente in un normale prompt dei  comandi o in un ambiente di scripting, eseguireVSDevCmd.batnella sottocartella *Common7/Tools* di un Visual Studio installazione.
+Prima di poter usare MSBuild, è necessario estendere la variabile di ambiente PATH per includere tutti gli strumenti necessari. È possibile usare il **Prompt dei comandi per gli sviluppatori per Visual Studio**. Cercarlo nella Windows 10 nella casella di ricerca nella barra Windows attività. Per configurare l'ambiente in un normale prompt dei comandi o in un ambiente di scripting, eseguire *VSDevCmd.bat* nella sottocartella *Common7/Tools* di un Visual Studio installazione.
 
 ## <a name="create-a-minimal-application"></a>Creare un'applicazione minima
 
  Questa sezione illustra come creare un file di origine applicazione C# minimo usando un editor di testo.
 
-1. Al prompt dei comandi passare alla cartella in cui si vuole creare l'applicazione, ad esempio *\Documenti \\* *o \Desktop \\*.
+1. Al prompt dei comandi passare alla cartella in cui si vuole creare l'applicazione, ad esempio *\Documenti \\* o *\Desktop \\*.
 
 2. Digitare **md HelloWorld per** creare una sottocartella denominata *\HelloWorld \\*.
 
@@ -332,9 +332,9 @@ Il file di progetto sarà ora simile al codice seguente:
 
 1. Al prompt dei comandi digitare **msbuild helloworld.csproj -p:AssemblyName=Greetings**.
 
-     Poiché non è stata utilizzata **l'opzione -t** per impostare in modo esplicito la destinazione, MSBuild esegue la destinazione di compilazione predefinita. **L'opzione -p** esegue l'override `AssemblyName` della proprietà e le assegna il nuovo valore , `Greetings` . In questo modo viene creata *Greetings.exe* nuova applicazione,Greetings.exe, nella *cartella \\ \Bin.*
+     Poiché non è stata utilizzata l'opzione **-t** per impostare in modo esplicito la destinazione, MSBuild la destinazione di compilazione predefinita. **L'opzione -p** esegue l'override `AssemblyName` della proprietà e assegna il nuovo valore, `Greetings` . Verrà creata una nuova *applicazione,Greetings.exe*, nella *cartella \\ \Bin.*
 
-2. Per verificare che la *cartella \\ \Bin* contenga sia *l'applicazione MSBuildSample* che la nuova *applicazione Greetings,* digitare **dir Bin**.
+2. Per verificare che la *cartella \\ \Bin* contenga sia l'applicazione *MSBuildSample* che la nuova *applicazione Greetings,* digitare **dir Bin**.
 
 3. Testare l'applicazione Greetings digitando **Bin\Greetings**.
 
@@ -344,15 +344,15 @@ Il file di progetto sarà ora simile al codice seguente:
 
      Viene eseguita l'attività Clean per rimuovere l'applicazione avente il valore predefinito della proprietà `AssemblyName`, ovvero `MSBuildSample`.
 
-5. Eliminare l'applicazione Greetings **digitando msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.
+5. Eliminare l'applicazione Greetings digitando **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.
 
      Viene eseguita l'attività Clean per rimuovere l'applicazione avente il valore specificato della proprietà **AssemblyName**, `Greetings`.
 
-6. Per verificare che la *cartella \Bin \\* sia ora vuota, digitare **dir Bin**.
+6. Per verificare che la *cartella \Bin \\* sia vuota, digitare **dir Bin**.
 
 7. Digitare **msbuild**.
 
-     Anche se non viene specificato un file di progetto, MSBuild compila il file *helloworld.csproj* perché nella cartella corrente è presente un solo file di progetto. In questo modo *l'applicazione MSBuildSample* viene creata nella *\\ cartella \Bin.*
+     Anche se non viene specificato un file di progetto, MSBuild compila il file *helloworld.csproj* perché nella cartella corrente è presente un solo file di progetto. In questo modo *l'applicazione MSBuildSample* viene creata nella *cartella \Bin. \\*
 
      Per verificare che la *cartella \Bin \\* contenga l'applicazione *MSBuildSample,* digitare **dir Bin**.
 
@@ -379,7 +379,7 @@ Il file di progetto sarà ora simile al codice seguente:
     </Target>
     ```
 
-2. Testare la destinazione build **digitando msbuild -v:d** al prompt dei comandi.
+2. Testare la destinazione di compilazione digitando **msbuild -v:d** al prompt dei comandi.
 
      Tenere presente *che helloworld.csproj è* il file di progetto predefinito e che Build è la destinazione predefinita.
 

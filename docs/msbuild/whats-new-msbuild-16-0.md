@@ -1,6 +1,6 @@
 ---
 title: Novità di MSBuild 16.0 | Microsoft Docs
-description: Informazioni sulle funzionalità e sulle proprietà modificate e aggiornate per MSBuild 16.0 e collegamento alle note sulla versione.
+description: Informazioni sulle funzionalità e le proprietà modificate e aggiornate per MSBuild 16.0 e collegamento alle note sulla versione.
 ms.custom: SEO-VS-2020
 ms.date: 03/11/2019
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 8cd358fddcc5f7ff0b6fbc27c5b046c2e2ee6ccad2a1c5b5deb693a5e1414066
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8c0d085acc2d392c6db156be2bc16743774b60d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397098"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093658"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novità di MSBuild 16.0
 
@@ -24,7 +24,7 @@ Questo articolo descrive le funzionalità e le proprietà aggiornate in MSBuild 
 
 ## <a name="changed-path"></a>Percorso modificato
 
- MSBuild viene installato nella *cartella \Current* in ogni versione di Visual Studio e i file eseguibili si trovano nella *sottocartella \Bin.* Ad esempio, il percorso di *MSBuild.exe* installato con Visual Studio 2019 Community è *C:\Programmi (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* È anche possibile usare il modulo powershell seguente per individuare MSBuild: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
+ MSBuild viene installato nella *cartella \Current* in ogni versione di Visual Studio e i file eseguibili si trovano nella *sottocartella \Bin.* Ad esempio, il percorso di *MSBuild.exe* installato con Visual Studio 2019 Community è *C:\Programmi (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* È anche possibile usare il modulo PowerShell seguente per individuare MSBuild: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
 ## <a name="changed-properties"></a>Proprietà modificate
 
